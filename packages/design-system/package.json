@@ -1,0 +1,27 @@
+{
+  "name": "@gympass/design-system",
+  "version": "0.0.0",
+  "description": "Gympass component library",
+  "keywords": [
+    "Gympass",
+    "components",
+    "styled-components",
+    "react",
+    "design-system"
+  ],
+  "homepage": "https://github.com/Gympass/design-system#readme",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gympass/design-system.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Gympass/design-system/issues"
+  }
+}
