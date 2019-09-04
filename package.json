@@ -1,9 +1,16 @@
 {
   "private": true,
   "devDependencies": {
+    "babel-eslint": "10.0.3",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
-    "lerna": "^3.16.4"
+    "eslint": "6.3.0",
+    "eslint-config-prettier": "6.2.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "husky": "3.0.5",
+    "lerna": "^3.16.4",
+    "lint-staged": "9.2.5",
+    "prettier": "1.18.2"
   },
   "workspaces": [
     "packages/*"
@@ -15,5 +22,16 @@
   },
   "scripts": {
     "commit": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
