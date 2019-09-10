@@ -2,6 +2,7 @@
   "name": "@gympass/design-system",
   "version": "0.0.0",
   "description": "Gympass component library",
+  "main": "./src/index.js",
   "keywords": [
     "Gympass",
     "components",
