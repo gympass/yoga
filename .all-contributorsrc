@@ -28,6 +28,18 @@
         "doc",
         "review"
       ]
+    },
+    {
+      "login": "victormath12",
+      "name": "Victor Caetano",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/11219999?v=4",
+      "profile": "https://br.linkedin.com/in/victor-matheus-jesus-caetano-9633b5118",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
