@@ -1,4 +1,16 @@
 {
+  "scripts": {
+    "commit": "git-cz",
+    "test": "lerna run test --stream",
+    "prettier": "prettier",
+    "dev:web": "cd packages/doc && yarn start",
+    "dev:native:android": "",
+    "dev:native:ios": "",
+    "lint": "eslint",
+    "lint:design-system": "yarn lint packages/design-system",
+    "lint:labnative": "yarn lint packages/labnative",
+    "lint:all": "yarn lint:design-system && yarn lint:labnative"
+  },
   "private": true,
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -9,7 +21,10 @@
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "6.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "3.1.0",
     "husky": "3.0.5",
     "jest": "^24.9.0",
@@ -32,10 +47,6 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "scripts": {
-    "commit": "git-cz",
-    "test": "lerna run test --stream"
   },
   "husky": {
     "hooks": {
