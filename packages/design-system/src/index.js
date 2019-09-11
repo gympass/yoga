@@ -1,3 +1,2 @@
-import Button from "./Button";
-
-export { Button };
+/* eslint-disable */
+export { default as Button } from './Button';
