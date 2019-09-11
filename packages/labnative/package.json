@@ -1,5 +1,5 @@
 {
-  "name": "labnative",
+  "name": "@gympass/labnative",
   "version": "0.0.1",
   "private": true,
   "scripts": {
