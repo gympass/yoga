@@ -1,5 +1,5 @@
 # design-system
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -10,6 +10,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://twitter.com/ggdaltoso"><img src="https://avatars0.githubusercontent.com/u/6536985?v=4" width="100px;" alt="Gabriel Daltoso"/><br /><sub><b>Gabriel Daltoso</b></sub></a><br /><a href="https://github.com/Gympass/design-system/commits?author=ggdaltoso" title="Code">💻</a> <a href="#ideas-ggdaltoso" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/Gympass/design-system/commits?author=ggdaltoso" title="Documentation">📖</a> <a href="#review-ggdaltoso" title="Reviewed Pull Requests">👀</a></td>
     <td align="center"><a href="https://twitter.com/_allyssonsantos"><img src="https://avatars1.githubusercontent.com/u/13424727?v=4" width="100px;" alt="Allysson dos Santos"/><br /><sub><b>Allysson dos Santos</b></sub></a><br /><a href="https://github.com/Gympass/design-system/commits?author=allyssonsantos" title="Code">💻</a> <a href="#ideas-allyssonsantos" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/Gympass/design-system/commits?author=allyssonsantos" title="Documentation">📖</a> <a href="#review-allyssonsantos" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://br.linkedin.com/in/victor-matheus-jesus-caetano-9633b5118"><img src="https://avatars0.githubusercontent.com/u/11219999?v=4" width="100px;" alt="Victor Caetano"/><br /><sub><b>Victor Caetano</b></sub></a><br /><a href="https://github.com/Gympass/design-system/commits?author=victormath12" title="Code">💻</a> <a href="#ideas-victormath12" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/Gympass/design-system/commits?author=victormath12" title="Documentation">📖</a> <a href="#review-victormath12" title="Reviewed Pull Requests">👀</a></td>
   </tr>
 </table>
 
