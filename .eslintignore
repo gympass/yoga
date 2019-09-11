@@ -1,0 +1,5 @@
+/packages/doc/**
+/packages/labnative/node_modules/**
+/packages/labnative/android/**
+/packages/labnative/ios/**
+/packages/labnative/metro.config.js
