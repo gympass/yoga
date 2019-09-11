@@ -8,7 +8,7 @@ const Pre = system(
     m: 0
   },
   {
-    overflow: "auto",
+    overflow: "auto"
   },
   "fontFamily",
   "space",

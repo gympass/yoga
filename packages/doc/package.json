@@ -50,7 +50,8 @@
     "react-live": "^2.1.2",
     "styled-components": "^4.3.2",
     "styled-icons": "^8.3.0",
-    "system-components": "^3.0.3"
+    "system-components": "^3.0.3",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.1.2",

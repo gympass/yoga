@@ -1,5 +1,5 @@
-import React from "react"
-import { connectSearchBox } from "react-instantsearch-dom"
+import React from "react";
+import { connectSearchBox } from "react-instantsearch-dom";
 
 import styled, { css } from "styled-components";
 import { Search } from "styled-icons/fa-solid/Search";
@@ -7,8 +7,8 @@ import { Search } from "styled-icons/fa-solid/Search";
 const SearchIcon = styled(Search)`
   width: 1em;
   pointer-events: none;
-  margin-right: 10px
-`
+  margin-right: 10px;
+`;
 const focus = css`
   background: white;
   color: ${props => props.theme.darkBlue};
@@ -18,7 +18,7 @@ const focus = css`
     color: ${props => props.theme.darkBlue};
     margin: 0.3em;
   }
-`
+`;
 const collapse = css`
   width: 0;
   cursor: pointer;
@@ -32,7 +32,7 @@ const collapse = css`
   ::placeholder {
     color: ${props => props.theme.gray};
   }
-`
+`;
 const expand = css`
   background: ${props => props.theme.veryLightGray};
   width: 6em;
@@ -41,7 +41,7 @@ const expand = css`
   + ${SearchIcon} {
     margin: 0.3em;
   }
-`
+`;
 const Input = styled.input`
   outline: none;
   border: none;
@@ -51,23 +51,23 @@ const Input = styled.input`
   border-radius: ${props => props.theme.smallBorderRadius};
   {hightlight-next-line}
   ${props => (props.collapse ? collapse : expand)};
-`
+`;
 const Form = styled.form`
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-`
+`;
 
 export default connectSearchBox(({ refine, ...rest }) => {
-  const searchCustom = '';
-  const preventSubmit = (e) => {
+  const searchCustom = "";
+  const preventSubmit = e => {
     e.preventDefault();
-  }
+  };
   return (
-    <Form className={'formElement'} onSubmit={preventSubmit}>
+    <Form className="formElement" onSubmit={preventSubmit}>
       <SearchIcon />
       <Input
-        className={'searchInput ' + searchCustom}
+        className={`searchInput ${searchCustom}`}
         type="text"
         placeholder="Search"
         aria-label="Search"
@@ -75,5 +75,5 @@ export default connectSearchBox(({ refine, ...rest }) => {
         {...rest}
       />
     </Form>
-  )}
-);
+  );
+});

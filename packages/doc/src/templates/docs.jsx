@@ -4,11 +4,11 @@ import { graphql } from "gatsby";
 import MDXRenderer from "gatsby-plugin-mdx/mdx-renderer";
 import styled, { injectGlobal } from "react-emotion";
 import { Layout, Link } from "$components";
-import NextPrevious from '../components/NextPrevious';
-import '../components/styles.css';
-import config from '../../config';
+import NextPrevious from "../components/NextPrevious";
+import "../components/styles.css";
+import config from "../../config";
 
-const forcedNavOrder = config.sidebar.forcedNavOrder;
+const { forcedNavOrder } = config.sidebar;
 
 injectGlobal`
   * {
@@ -43,7 +43,7 @@ injectGlobal`
   }
 `;
 
-const Edit = styled('div')`
+const Edit = styled("div")`
   padding: 1rem 1.5rem;
   text-align: right;
 
@@ -79,7 +79,7 @@ export default class MDXRuntimeTest extends Component {
         siteMetadata: { docsLocation, title }
       }
     } = data;
-    const gitHub = require('../components/images/github.svg');
+    const gitHub = require("../components/images/github.svg");
 
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)
@@ -95,9 +95,8 @@ export default class MDXRuntimeTest extends Component {
 
           if (prefix && forcedNavOrder.find(url => url === `/${prefix}`)) {
             return { ...acc, [`/${prefix}`]: [...acc[`/${prefix}`], cur] };
-          } else {
-            return { ...acc, items: [...acc.items, cur] };
           }
+          return { ...acc, items: [...acc.items, cur] };
         },
         { items: [] }
       );
@@ -108,7 +107,7 @@ export default class MDXRuntimeTest extends Component {
       }, [])
       .concat(navItems.items)
       .map(slug => {
-        if(slug) {
+        if (slug) {
           const { node } = allMdx.edges.find(
             ({ node }) => node.fields.slug === slug
           );
@@ -118,38 +117,50 @@ export default class MDXRuntimeTest extends Component {
       });
 
     // meta tags
-    const metaTitle = mdx.frontmatter.metaTitle;
-    const metaDescription = mdx.frontmatter.metaDescription;
+    const { metaTitle } = mdx.frontmatter;
+    const { metaDescription } = mdx.frontmatter;
     let canonicalUrl = config.gatsby.siteUrl;
-    canonicalUrl = config.gatsby.pathPrefix !== '/' ? canonicalUrl + config.gatsby.pathPrefix : canonicalUrl;
-    canonicalUrl = canonicalUrl + mdx.fields.slug;
+    canonicalUrl =
+      config.gatsby.pathPrefix !== "/"
+        ? canonicalUrl + config.gatsby.pathPrefix
+        : canonicalUrl;
+    canonicalUrl += mdx.fields.slug;
 
     return (
       <Layout {...this.props}>
         <Helmet>
-          {metaTitle ? <title>{metaTitle}</title> : null }
+          {metaTitle ? <title>{metaTitle}</title> : null}
           {metaTitle ? <meta name="title" content={metaTitle} /> : null}
-          {metaDescription ? <meta name="description" content={metaDescription} /> : null}
+          {metaDescription ? (
+            <meta name="description" content={metaDescription} />
+          ) : null}
           {metaTitle ? <meta property="og:title" content={metaTitle} /> : null}
-          {metaDescription ? <meta property="og:description" content={metaDescription} /> : null}
-          {metaTitle ? <meta property="twitter:title" content={metaTitle} /> : null}
-          {metaDescription ? <meta property="twitter:description" content={metaDescription} /> : null}
+          {metaDescription ? (
+            <meta property="og:description" content={metaDescription} />
+          ) : null}
+          {metaTitle ? (
+            <meta property="twitter:title" content={metaTitle} />
+          ) : null}
+          {metaDescription ? (
+            <meta property="twitter:description" content={metaDescription} />
+          ) : null}
           <link rel="canonical" href={canonicalUrl} />
         </Helmet>
-        <div className={'titleWrapper'}>
-          <h1 className={'title'}>
-            {mdx.fields.title}
-          </h1>
-          <Edit className={'mobileView'}>
-            <Link className={'gitBtn'} to={`${docsLocation}/${mdx.parent.relativePath}`}>
-              <img src={gitHub} alt={'Github logo'} /> Edit on GitHub
+        <div className="titleWrapper">
+          <h1 className="title">{mdx.fields.title}</h1>
+          <Edit className="mobileView">
+            <Link
+              className="gitBtn"
+              to={`${docsLocation}/${mdx.parent.relativePath}`}
+            >
+              <img src={gitHub} alt="Github logo" /> Edit on GitHub
             </Link>
           </Edit>
         </div>
-        <div className={'mainWrapper'}>
+        <div className="mainWrapper">
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </div>
-        <div className={'addPaddTopBottom'}>
+        <div className="addPaddTopBottom">
           <NextPrevious mdx={mdx} nav={nav} />
         </div>
       </Layout>

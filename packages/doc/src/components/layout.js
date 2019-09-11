@@ -6,7 +6,7 @@ import mdxComponents from "./mdxComponents";
 import Sidebar from "./sidebar";
 import RightSidebar from "./rightSidebar";
 
-const Wrapper = styled('div')`
+const Wrapper = styled("div")`
   display: flex;
   justify-content: space-between;
 
@@ -15,7 +15,7 @@ const Wrapper = styled('div')`
   }
 `;
 
-const Content = styled('main')`
+const Content = styled("main")`
   display: flex;
   flex-grow: 1;
   margin: 0px 88px;
@@ -28,30 +28,29 @@ const Content = styled('main')`
   }
 `;
 
-const MaxWidth = styled('div')`
-
+const MaxWidth = styled("div")`
   @media only screen and (max-width: 50rem) {
     width: 100%;
     position: relative;
   }
 `;
-const LeftSideBarWidth = styled('div')`
+const LeftSideBarWidth = styled("div")`
   width: 298px;
 `;
-const RightSideBarWidth = styled('div')`
+const RightSideBarWidth = styled("div")`
   width: 224px;
 `;
 const Layout = ({ children, location }) => (
   <ThemeProvider location={location}>
     <MDXProvider components={mdxComponents}>
       <Wrapper>
-        <LeftSideBarWidth className={'hidden-xs'}>
+        <LeftSideBarWidth className="hidden-xs">
           <Sidebar location={location} />
         </LeftSideBarWidth>
         <Content>
           <MaxWidth>{children}</MaxWidth>
         </Content>
-        <RightSideBarWidth className={'hidden-xs'}>
+        <RightSideBarWidth className="hidden-xs">
           <RightSidebar location={location} />
         </RightSideBarWidth>
       </Wrapper>
