@@ -1,5 +1,7 @@
 import React from 'react';
 
-const Button = props => <button {...props}>Hello World</button>;
+const Button = props => (
+  <button style={{ backgroundColor: 'red' }} {...props} />
+);
 
 export default Button;
