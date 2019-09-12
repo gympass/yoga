@@ -1,10 +1,12 @@
-import * as React from "react";
-import Highlight, { defaultProps } from "prism-react-renderer";
-import prismTheme from "prism-react-renderer/themes/vsDark";
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
+import * as React from 'react';
+import Highlight, { defaultProps } from 'prism-react-renderer';
+import prismTheme from 'prism-react-renderer/themes/vsDark';
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
+import { MDXContext } from '@mdx-js/react';
+
 import '../styles.css';
 
-import Pre from "./pre";
+import Pre from './pre';
 
 /** Removes the last token from a code example if it's empty. */
 function cleanTokens(tokens) {
@@ -21,13 +23,17 @@ function cleanTokens(tokens) {
 
 /* eslint-disable react/jsx-key */
 const CodeBlock = ({ children: exampleCode, ...props }) => {
-  if (props["react-live"]) {
+  if (props['react-live']) {
     return (
-      <LiveProvider code={exampleCode}>
-        <LiveEditor />
-        <LiveError />
-        <LivePreview />
-      </LiveProvider>
+      <MDXContext.Consumer>
+        {scope => (
+          <LiveProvider code={exampleCode} scope={scope}>
+            <LiveEditor />
+            <LiveError />
+            <LivePreview />
+          </LiveProvider>
+        )}
+      </MDXContext.Consumer>
     );
   } else {
     return (
@@ -42,51 +48,89 @@ const CodeBlock = ({ children: exampleCode, ...props }) => {
             {cleanTokens(tokens).map((line, i) => {
               let lineClass = {};
               let isDiff = false;
-              if (line[0] && line[0].content.length && line[0].content[0] === '+') {
-                lineClass = {'backgroundColor': 'rgba(76, 175, 80, 0.2)'};
+              if (
+                line[0] &&
+                line[0].content.length &&
+                line[0].content[0] === '+'
+              ) {
+                lineClass = { backgroundColor: 'rgba(76, 175, 80, 0.2)' };
+                isDiff = true;
+              } else if (
+                line[0] &&
+                line[0].content.length &&
+                line[0].content[0] === '-'
+              ) {
+                lineClass = { backgroundColor: 'rgba(244, 67, 54, 0.2)' };
+                isDiff = true;
+              } else if (
+                line[0] &&
+                line[0].content === '' &&
+                line[1] &&
+                line[1].content === '+'
+              ) {
+                lineClass = { backgroundColor: 'rgba(76, 175, 80, 0.2)' };
+                isDiff = true;
+              } else if (
+                line[0] &&
+                line[0].content === '' &&
+                line[1] &&
+                line[1].content === '-'
+              ) {
+                lineClass = { backgroundColor: 'rgba(244, 67, 54, 0.2)' };
                 isDiff = true;
               }
-              else if (line[0] && line[0].content.length && line[0].content[0] === '-') {
-                lineClass = {'backgroundColor': 'rgba(244, 67, 54, 0.2)'};
-                isDiff = true;
-              }
-              else if(line[0] && line[0].content === '' && line[1] && line[1].content === '+') {
-                lineClass = {'backgroundColor': 'rgba(76, 175, 80, 0.2)'};
-                isDiff = true;
-              } else if(line[0] && line[0].content === ''&& line[1] && line[1].content === '-') {
-                lineClass = {'backgroundColor': 'rgba(244, 67, 54, 0.2)'};
-                isDiff = true;
-              }
-              const lineProps = getLineProps({line, key: i});
+              const lineProps = getLineProps({ line, key: i });
               lineProps.style = lineClass;
-              const diffStyle = {'userSelect': 'none', 'MozUserSelect': '-moz-none', 'WebkitUserSelect': 'none'};
+              const diffStyle = {
+                userSelect: 'none',
+                MozUserSelect: '-moz-none',
+                WebkitUserSelect: 'none',
+              };
               let splitToken;
               return (
                 <div {...lineProps}>
                   {line.map((token, key) => {
-                    if(isDiff) {
-                      if ((key === 0 || key === 1) & (token.content.charAt(0) === '+' || token.content.charAt(0) === '-')) {
-                        if(token.content.length > 1) {
-                          splitToken = { 'types': ['template-string','string'], 'content': token.content.slice(1)};
-                          const firstChar = { 'types': ['operator'], 'content': token.content.charAt(0)};
+                    if (isDiff) {
+                      if (
+                        (key === 0 || key === 1) &
+                        (token.content.charAt(0) === '+' ||
+                          token.content.charAt(0) === '-')
+                      ) {
+                        if (token.content.length > 1) {
+                          splitToken = {
+                            types: ['template-string', 'string'],
+                            content: token.content.slice(1),
+                          };
+                          const firstChar = {
+                            types: ['operator'],
+                            content: token.content.charAt(0),
+                          };
                           return (
                             <React.Fragment>
-                              <span {...getTokenProps({ token: firstChar, key })} style={diffStyle} />
-                              <span {...getTokenProps({ token: splitToken, key })} />
+                              <span
+                                {...getTokenProps({ token: firstChar, key })}
+                                style={diffStyle}
+                              />
+                              <span
+                                {...getTokenProps({ token: splitToken, key })}
+                              />
                             </React.Fragment>
-                          )
+                          );
                         } else {
                           return (
-                              <span {...getTokenProps({ token, key })} style={diffStyle} />
-                          )
-
+                            <span
+                              {...getTokenProps({ token, key })}
+                              style={diffStyle}
+                            />
+                          );
                         }
                       }
                     }
-                    return (<span {...getTokenProps({ token, key })} />)
-                   } )}
+                    return <span {...getTokenProps({ token, key })} />;
+                  })}
                 </div>
-            )})}
+              );
+            })}
           </Pre>
         )}
       </Highlight>
