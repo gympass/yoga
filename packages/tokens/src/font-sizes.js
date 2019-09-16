@@ -1,12 +1,12 @@
 /** Font sizes values follows the golden ratio typhography
  * https://grtcalculator.com/math/
  */
+import goldenRatio from './utils';
 
-const goldenRatio = (1 + Math.sqrt(5)) / 2;
 const baseFontSize = 16;
 
 function grtCalc(ratio) {
-  return Math.round(baseFontSize * Math.pow(goldenRatio, ratio));
+  return Math.round(baseFontSize * goldenRatio ** ratio);
 }
 
 const fontSizes = [
