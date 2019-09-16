@@ -19,18 +19,7 @@ const typography = {
     },
   },
 };
-const border = {
-  radius: {
-    sharp: 0,
-    rounded: 0,
-    circle: 0,
-  },
-  size: {
-    small: 0,
-    medium: 0,
-    large: 0,
-  },
-};
+
 const colors = {
   madrid: {
     crossfit: null,
@@ -93,27 +82,9 @@ const colors = {
     vilaOlimpia10: null,
   },
 };
-const spacing = {
-  xtiny: 0,
-  tiny: 0,
-  xsmall: 0,
-  small: 0,
-  base: 0,
-  medium: 0,
-  large: 0,
-  xlarge: 0,
-  xxlarge: 0,
-};
+
 const breakpoints = {
   small: {},
   medium: {},
   large: {},
-};
-const elevation = {
-  levels: {
-    1: '0px 1px 2px rgba(0, 0, 0, 0.20)',
-    2: '0px 2px 4px rgba(0, 0, 0, 0.20)',
-    3: '0px 4px 8px rgba(0, 0, 0, 0.20)',
-    4: '0px 8px 16px rgba(0, 0, 0, 0.20)',
-  },
 };
