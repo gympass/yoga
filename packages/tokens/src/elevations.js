@@ -15,22 +15,26 @@ function elevate(color = '#000', level) {
   const normalizedColor = hexToRgba(color);
 
   const all = [
-    `0px 0px 8px rgba(${normalizedColor}, 0.60), 0px 2px 8px rgba(${normalizedColor}, 0.60)`,
-    `0px 4px 16px rgba(${normalizedColor}, 0.60), 0px 0px 16px rgba(${normalizedColor}, 0.60)`,
-    `0px 6px 24px rgba(${normalizedColor}, 0.60), 0px 0px 24px rgba(${normalizedColor}, 0.60)`,
-    `0px 8px 32px rgba(${normalizedColor}, 0.60), 0px 0px 32px rgba(${normalizedColor}, 0.60)`,
+    'none',
+    `0 0 8px rgba(${normalizedColor}, 0.60), 0 2px 8px rgba(${normalizedColor}, 0.60)`,
+    `0 4px 16px rgba(${normalizedColor}, 0.60), 0 0 16px rgba(${normalizedColor}, 0.60)`,
+    `0 6px 24px rgba(${normalizedColor}, 0.60), 0 0 24px rgba(${normalizedColor}, 0.60)`,
+    `0 8px 32px rgba(${normalizedColor}, 0.60), 0 0 32px rgba(${normalizedColor}, 0.60)`,
   ];
 
-  return level ? all[level + 1] : all;
+  return level ? all[level] : all;
 }
 
-const defaultElevation = elevate();
+const elevation = elevate();
 
-elevation.level1 = defaultElevation[0];
-elevation.level2 = defaultElevation[1];
-elevation.level3 = defaultElevation[2];
-elevation.level4 = defaultElevation[3];
+elevation.level = {};
+[
+  elevation.level[1],
+  elevation.level[2],
+  elevation.level[3],
+  elevation.level[4],
+] = elevation;
 
-elevation = elevate;
+elevation.elevate = elevate;
 
 export default elevation;
