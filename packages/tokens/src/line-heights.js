@@ -6,14 +6,25 @@ import fontSizes from './font-sizes';
 
 const lineHeight = fontSizes.map(f => Math.round(f * goldenRatio));
 
-lineHeight.h6 = lineHeight[1];
-lineHeight.h5 = lineHeight[2];
-lineHeight.h4 = lineHeight[3];
-lineHeight.h3 = lineHeight[4];
-lineHeight.h2 = lineHeight[5];
-lineHeight.h1 = lineHeight[6];
+const header = {
+  level: {},
+};
+[
+  ,
+  header.level[6],
+  header.level[5],
+  header.level[4],
+  header.level[3],
+  header.level[2],
+  header.level[1],
+] = lineHeight;
 
-lineHeight.body = lineHeight[2];
-lineHeight.bodysmall = lineHeight[1];
+const body = {
+  level: {},
+};
+[body.level[1], body.level[2]] = [lineHeight[2], lineHeight[1]];
+
+lineHeight.header = header;
+lineHeight.body = body;
 
 export default lineHeight;

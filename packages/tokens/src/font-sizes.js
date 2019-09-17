@@ -9,24 +9,30 @@ function grtCalc(ratio) {
   return Math.round(baseFontSize * goldenRatio ** ratio);
 }
 
-const fontSizes = [
-  grtCalc(-1),
-  grtCalc(-1 / 2),
-  baseFontSize,
-  grtCalc(1 / 2),
-  grtCalc(1),
-  grtCalc(3 / 2),
-  grtCalc(2),
-];
+const ratios = [-1, -1 / 2, 0, 1 / 2, 1, 3 / 2, 2];
 
-fontSizes.h6 = fontSizes[1];
-fontSizes.h5 = fontSizes[2];
-fontSizes.h4 = fontSizes[3];
-fontSizes.h3 = fontSizes[4];
-fontSizes.h2 = fontSizes[5];
-fontSizes.h1 = fontSizes[6];
+// [10, 13, 16, 20, 26, 33, 42]
+const fontSizes = ratios.map(grtCalc);
 
-fontSizes.body = baseFontSize;
-fontSizes.bodysmall = fontSizes[1];
+const header = {
+  level: {},
+};
+[
+  ,
+  header.level[6],
+  header.level[5],
+  header.level[4],
+  header.level[3],
+  header.level[2],
+  header.level[1],
+] = fontSizes;
+
+const body = {
+  level: {},
+};
+[body.level[1], body.level[2]] = [fontSizes[2], fontSizes[1]];
+
+fontSizes.header = header;
+fontSizes.body = body;
 
 export default fontSizes;

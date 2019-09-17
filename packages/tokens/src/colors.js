@@ -20,67 +20,75 @@ const gray = [
   '#F5F5FA',
 ];
 
+const madrid = {};
+[madrid.crossfit, madrid.climbing, madrid.swimming, madrid.meditation] = red;
+
+const munich = {};
+[munich.crossfit, munich.climbing, munich.swimming, munich.meditation] = orange;
+
+const milan = {};
+[milan.crossfit, milan.climbing, milan.swimming, milan.meditation] = yellow;
+
+const amsterda = {};
+[
+  amsterda.crossfit,
+  amsterda.climbing,
+  amsterda.swimming,
+  amsterda.meditation,
+] = green;
+
+const saoPaulo = {};
+[
+  saoPaulo.crossfit,
+  saoPaulo.climbing,
+  saoPaulo.swimming,
+  saoPaulo.meditation,
+] = turquoise;
+
+const buenosAires = {};
+[
+  buenosAires.crossfit,
+  buenosAires.climbing,
+  buenosAires.swimming,
+  buenosAires.meditation,
+] = sky;
+
+const newYork = {};
+[
+  newYork.crossfit,
+  newYork.climbing,
+  newYork.swimming,
+  newYork.meditation,
+] = ocean;
+
+const paris = {};
+[paris.crossfit, paris.climbing, paris.swimming, paris.meditation] = purple;
+
+const vilaOlimpia = {};
+[
+  vilaOlimpia[100],
+  vilaOlimpia[90],
+  vilaOlimpia[80],
+  vilaOlimpia[70],
+  vilaOlimpia[60],
+  vilaOlimpia[50],
+  vilaOlimpia[40],
+  vilaOlimpia[30],
+  vilaOlimpia[20],
+  vilaOlimpia[10],
+  vilaOlimpia[0],
+] = [black, ...gray, white];
+
 const colors = {
-  madrid: {
-    crossfit: red[0],
-    climbing: red[1],
-    swimming: red[2],
-    meditation: red[3],
-  },
-  munich: {
-    crossfit: orange[0],
-    climbing: orange[1],
-    swimming: orange[2],
-    meditation: orange[3],
-  },
-  milan: {
-    crossfit: yellow[0],
-    climbing: yellow[1],
-    swimming: yellow[2],
-    meditation: yellow[3],
-  },
-  amsterdam: {
-    crossfit: green[0],
-    climbing: green[1],
-    swimming: green[2],
-    meditation: green[3],
-  },
-  saoPaulo: {
-    crossfit: turquoise[0],
-    climbing: turquoise[1],
-    swimming: turquoise[2],
-    meditation: turquoise[3],
-  },
-  buenosAires: {
-    crossfit: sky[0],
-    climbing: sky[1],
-    swimming: sky[2],
-    meditation: sky[3],
-  },
-  newYork: {
-    crossfit: ocean[0],
-    climbing: ocean[1],
-    swimming: ocean[2],
-    meditation: ocean[3],
-  },
-  paris: {
-    crossfit: purple[0],
-    climbing: purple[1],
-    swimming: purple[2],
-    meditation: purple[3],
-  },
-  vilaOlimpia: {
-    100: gray[0],
-    90: gray[1],
-    80: gray[2],
-    70: gray[3],
-    60: gray[4],
-    50: gray[5],
-    40: gray[6],
-    30: gray[7],
-    20: gray[8],
-    10: white,
-  },
+  madrid,
+  munich,
+  milan,
+  amsterda,
+  saoPaulo,
+  buenosAires,
+  newYork,
+  paris,
+  vilaOlimpia,
   white,
   black,
 };
