@@ -9,7 +9,8 @@
     "lint": "eslint",
     "lint:design-system": "yarn lint packages/design-system",
     "lint:labnative": "yarn lint packages/labnative",
-    "lint:all": "yarn lint:design-system && yarn lint:labnative"
+    "lint:tokens": "yarn lint packages/tokens",
+    "lint:all": "yarn lint:design-system && yarn lint:labnative && yarn lint:tokens"
   },
   "private": true,
   "devDependencies": {
