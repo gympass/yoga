@@ -1,8 +1,14 @@
 import merge from 'deepmerge';
-import tokens, { colors } from '../global';
+import * as tokens from '../global';
 
-const button = {
-  success: colors.madrid.crossfit,
+const components = {
+  button: {
+    success: tokens.colors.madrid.crossfit,
+    error: tokens.colors.munich.crossfit,
+    new: tokens.colors.white,
+  },
 };
 
-export default merge(tokens, button);
+const fonts = ['Daltoso'];
+
+export default merge(tokens, { components, fonts });

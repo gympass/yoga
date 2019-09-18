@@ -1,7 +1,10 @@
-import { amsterda } from './colors';
+import colors from './colors';
 
 const button = {
-  success: amsterda.crossfit,
+  success: colors.amsterda.crossfit,
+  error: colors.saoPaulo.crossfit,
 };
 
-export default button;
+const components = { button };
+
+export default components;
