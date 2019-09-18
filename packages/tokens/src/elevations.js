@@ -27,14 +27,10 @@ function elevate(color = '#000', level) {
 
 const elevation = elevate();
 
-elevation.level = {};
-[
-  elevation.level[1],
-  elevation.level[2],
-  elevation.level[3],
-  elevation.level[4],
-] = elevation;
+const level = {};
+[level[1], level[2], level[3], level[4]] = elevation;
 
 elevation.elevate = elevate;
+elevation.level = level;
 
 export default elevation;
