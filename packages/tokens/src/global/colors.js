@@ -1,3 +1,12 @@
+/**
+ * A color
+ * @typedef {Object} Color
+ * @property {string=} crossfit
+ * @property {string=} climbing
+ * @property {string=} swimming
+ * @property {string=} meditation
+ */
+
 const red = ['#CB3530', '#F46152', '#F48170', '#FFE4E1'];
 const orange = ['#F69755', '#FFAC6F', '#FCBE94', '#FDECE0'];
 const yellow = ['#DFAF26', '#F3D04A', '#FFE461', '#FBFBBE'];
@@ -20,15 +29,27 @@ const gray = [
   '#F5F5FA',
 ];
 
+/**
+ * @type {Color}
+ */
 const madrid = {};
 [madrid.crossfit, madrid.climbing, madrid.swimming, madrid.meditation] = red;
 
+/**
+ * @const {Color}
+ */
 const munich = {};
 [munich.crossfit, munich.climbing, munich.swimming, munich.meditation] = orange;
 
+/**
+ * @const {Color}
+ */
 const milan = {};
 [milan.crossfit, milan.climbing, milan.swimming, milan.meditation] = yellow;
 
+/**
+ * @const {Color}
+ */
 const amsterda = {};
 [
   amsterda.crossfit,
@@ -37,6 +58,9 @@ const amsterda = {};
   amsterda.meditation,
 ] = green;
 
+/**
+ * @const {Color}
+ */
 const saoPaulo = {};
 [
   saoPaulo.crossfit,
@@ -45,6 +69,9 @@ const saoPaulo = {};
   saoPaulo.meditation,
 ] = turquoise;
 
+/**
+ * @const {Color}
+ */
 const buenosAires = {};
 [
   buenosAires.crossfit,
@@ -53,6 +80,9 @@ const buenosAires = {};
   buenosAires.meditation,
 ] = sky;
 
+/**
+ * @const {Color}
+ */
 const newYork = {};
 [
   newYork.crossfit,
@@ -61,9 +91,15 @@ const newYork = {};
   newYork.meditation,
 ] = ocean;
 
+/**
+ * @const {Color}
+ */
 const paris = {};
 [paris.crossfit, paris.climbing, paris.swimming, paris.meditation] = purple;
 
+/**
+ * @const {Color}
+ */
 const vilaOlimpia = {};
 [
   vilaOlimpia[100],
@@ -79,6 +115,11 @@ const vilaOlimpia = {};
   vilaOlimpia[0],
 ] = [black, ...gray, white];
 
+/**
+ * All Colors
+ * @constant
+ * @type {Object<string, Color | string>}
+ */
 const colors = {
   madrid,
   munich,
