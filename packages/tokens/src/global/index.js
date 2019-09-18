@@ -1,6 +1,7 @@
 export { default as borders } from './borders';
 export { default as breakpoints } from './breakpoints';
 export { default as colors } from './colors';
+export { default as components } from './components';
 export { default as fonts } from './fonts';
 export { default as fontSizes } from './font-sizes';
 export { default as fontWeights } from './font-weights';

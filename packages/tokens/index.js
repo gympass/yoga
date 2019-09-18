@@ -1,3 +1,4 @@
-import * as tokens from './src';
+import * as tokens from './src/global';
+import * as locale from './src/locale';
 
-export default tokens;
+export { tokens, locale };
