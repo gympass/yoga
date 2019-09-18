@@ -1,1 +1,1 @@
-export { zn_cn as default } from './zn-cn';
+export { default as zn_cn } from './zn-cn';

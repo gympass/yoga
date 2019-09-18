@@ -115,11 +115,6 @@ const vilaOlimpia = {};
   vilaOlimpia[0],
 ] = [black, ...gray, white];
 
-/**
- * All Colors
- * @constant
- * @type {Object<string, Color | string>}
- */
 const colors = {
   madrid,
   munich,
