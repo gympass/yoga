@@ -1,3 +1,3 @@
-import tokens from './src';
+import * as tokens from './src';
 
 export default tokens;
