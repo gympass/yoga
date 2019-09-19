@@ -1,10 +1,16 @@
 /**
+ * Colors module.
+ * @module colors
+ * @see module:colors
+ */
+
+/**
  * A color
  * @typedef {Object} Color
- * @property {string=} crossfit
- * @property {string=} climbing
- * @property {string=} swimming
- * @property {string=} meditation
+ * @property {string} crossfit
+ * @property {string} climbing
+ * @property {string} swimming
+ * @property {string} meditation
  */
 
 const red = ['#CB3530', '#F46152', '#F48170', '#FFE4E1'];

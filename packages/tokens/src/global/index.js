@@ -1,11 +1,41 @@
-export { default as borders } from './borders';
-export { default as breakpoints } from './breakpoints';
-export { default as colors } from './colors';
-export { default as components } from './components';
-export { default as fonts } from './fonts';
-export { default as fontSizes } from './font-sizes';
-export { default as fontWeights } from './font-weights';
-export { default as lineHeights } from './line-heights';
-export { default as radii } from './radii';
-export { default as elevations } from './elevations';
-export { default as spacing } from './spacing';
+import borders from './borders';
+import breakpoints from './breakpoints';
+import colors from './colors';
+import components from './components';
+import fonts from './fonts';
+import fontSizes from './font-sizes';
+import fontWeights from './font-weights';
+import lineHeights from './line-heights';
+import radii from './radii';
+import elevations from './elevations';
+import spacing from './spacing';
+
+const tokens = {
+  borders,
+  breakpoints,
+  colors,
+  components,
+  fonts,
+  fontSizes,
+  fontWeights,
+  lineHeights,
+  radii,
+  elevations,
+  spacing,
+};
+
+// export * from tokens;
+export {
+  tokens as default,
+  borders,
+  breakpoints,
+  colors,
+  components,
+  fonts,
+  fontSizes,
+  fontWeights,
+  lineHeights,
+  radii,
+  elevations,
+  spacing,
+};

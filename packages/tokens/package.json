@@ -26,7 +26,5 @@
   "bugs": {
     "url": "https://github.com/Gympass/design-system/issues"
   },
-  "dependencies": {
-    "deepmerge": "^4.0.0"
-  }
+  "dependencies": {}
 }
