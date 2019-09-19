@@ -1,5 +1,5 @@
-import merge from 'deepmerge';
-import * as tokens from '../global';
+import { merge } from '../utils';
+import tokens, { colors } from '../global';
 
 const button = {
   success: tokens.colors.madrid.crossfit,
