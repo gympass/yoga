@@ -1,6 +1,8 @@
+const goldenRatio = (1 + Math.sqrt(5)) / 2;
+
 const merge = (target, source) => {
-  let newTarget = { ...target };
-  for (let key in source) {
+  const newTarget = { ...target };
+  for (const key in source) {
     newTarget[key] = source[key];
     if (source[key] !== null && typeof source[key] === 'object') {
       newTarget[key] = merge(target[key] || {}, newTarget[key]);
@@ -9,4 +11,4 @@ const merge = (target, source) => {
   return newTarget;
 };
 
-export { merge };
+export { merge, goldenRatio };

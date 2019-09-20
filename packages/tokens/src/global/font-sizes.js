@@ -1,7 +1,7 @@
 /** Font sizes values follows the golden ratio typhography
  * https://grtcalculator.com/math/
  */
-import goldenRatio from './utils';
+import goldenRatio from '../utils';
 
 const baseFontSize = 16;
 
