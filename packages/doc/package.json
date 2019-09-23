@@ -5,14 +5,23 @@
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
+    "@mdx-js/loader": "^1.4.5",
+    "@mdx-js/mdx": "^1.4.5",
+    "@mdx-js/react": "^1.4.5",
     "gatsby": "^2.15.21",
     "gatsby-image": "^2.2.20",
+    "gatsby-plugin-layout": "^1.1.8",
     "gatsby-plugin-manifest": "^2.2.18",
+    "gatsby-plugin-mdx": "^1.0.43",
     "gatsby-plugin-offline": "^3.0.8",
     "gatsby-plugin-react-helmet": "^3.1.8",
     "gatsby-plugin-sharp": "^2.2.25",
+    "gatsby-plugin-styled-components": "^3.1.6",
+    "gatsby-remark-copy-linked-files": "^2.1.20",
+    "gatsby-remark-images": "^3.1.23",
     "gatsby-source-filesystem": "^2.1.26",
     "gatsby-transformer-sharp": "^2.2.16",
+    "lodash.startcase": "^4.4.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -20,6 +29,7 @@
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
+    "gatsby-plugin-remove-trailing-slashes": "^2.1.7",
     "prettier": "^1.18.2"
   },
   "scripts": {

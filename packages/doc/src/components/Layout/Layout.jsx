@@ -1,15 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
+
 import { Navigation, Doc } from '../';
 
-const Grid = styled.div``;
+const GlobalStyle = createGlobalStyle`
+  #gatsby-focus-wrapper, #___gatsby {
+    height: 100%;
+  }
 
-const Layout = ({ children }) => (
-  <Grid>
-    <Navigation></Navigation>
-    <Doc>{children}</Doc>
-  </Grid>
+  html, body  {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+`;
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'Navigation Doc';
+  height: 100%;
+`;
+
+const Layout = ({ nav, doc }) => (
+  <>
+    <GlobalStyle />
+    <Grid>
+      <Navigation items={nav} />
+      <Doc mdx={doc} />
+    </Grid>
+  </>
 );
 
 Layout.propTypes = {
