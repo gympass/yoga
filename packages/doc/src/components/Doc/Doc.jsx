@@ -1,8 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 
-const Doc = ({ children }) => <div>{children}</div>;
+const Doc = ({ mdx }) => (
+  <div>
+    <MDXRenderer>{mdx}</MDXRenderer>
+  </div>
+);
 
 Doc.propTypes = {
   children: PropTypes.node,
