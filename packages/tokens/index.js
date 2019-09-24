@@ -1,4 +1,3 @@
-import * as tokens from './src/global';
-import zn from './src/locale/zn-cn';
+import tokens from './src/global';
 
-export { tokens as default, zn };
+export default tokens;

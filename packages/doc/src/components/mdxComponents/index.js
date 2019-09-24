@@ -7,9 +7,6 @@ import CodeBlock from './codeBlock';
 import Pre from './pre';
 import AnchorTag from './anchor';
 
-const locale = 'zn-cn';
-import( `@gympass/tokens/src/locale/${locale}`).then(v => console.log(v));
-
 /* eslint-disable react/display-name */
 export default {
   h1: props => (
