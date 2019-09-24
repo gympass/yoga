@@ -51,7 +51,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === `Mdx`) {
     const parent = getNode(node.parent);
     let value = parent.relativePath.replace(parent.ext, '');
-
     if (value === 'index') {
       value = '';
     }
