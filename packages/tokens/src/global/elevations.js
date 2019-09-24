@@ -1,3 +1,10 @@
+/**
+ * @module elevation
+ * @desc Elevation (z-index) tokens module.
+ *
+ * @memberof @gympass/tokens
+ */
+
 function hexToRgba(hex) {
   const h = hex.replace('#', '');
 
@@ -11,6 +18,13 @@ function hexToRgba(hex) {
   return `${parse(0)}, ${parse(step)}, ${parse(bIndex)}`;
 }
 
+/**
+ * Elevation function
+ *
+ * @param {String} color=#000 - Color to elevate
+ * @param {Number} level - Elevation level. It must be between 0 and 4
+ * @returns {String}
+ */
 function elevate(color = '#000', level) {
   const normalizedColor = hexToRgba(color);
 
@@ -25,12 +39,23 @@ function elevate(color = '#000', level) {
   return level ? all[level] : all;
 }
 
+/**
+ * An Elevation
+ * @typedef Elevation
+ *
+ * @type {Object}
+ *
+ * @property {Object<Number, Number>} level Elevation level (1, 2, 3 and 4)
+ */
+
+/**
+ * @type Elevation
+ */
 const elevation = elevate();
 
 const level = {};
 [level[1], level[2], level[3], level[4]] = elevation;
 
-elevation.elevate = elevate;
 elevation.level = level;
 
-export default elevation;
+export { elevation, elevate };
