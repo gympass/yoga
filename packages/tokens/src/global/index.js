@@ -7,7 +7,7 @@ import fontSizes from './font-sizes';
 import fontWeights from './font-weights';
 import lineHeights from './line-heights';
 import radii from './radii';
-import elevations from './elevations';
+import * as elevations from './elevations';
 import spacing from './spacing';
 
 const tokens = {
@@ -24,7 +24,9 @@ const tokens = {
   spacing,
 };
 
-// export * from tokens;
+/**
+ * @namespace @gympass/tokens
+ */
 export {
   tokens as default,
   borders,
