@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import createTree from './tree';
 
 const Wrapper = styled.div`
   background-color: #f4f4f4;
@@ -15,33 +16,9 @@ const Wrapper = styled.div`
   }
 `;
 
-const createObjectNesting = routes => {
-  const newObj = {};
-  let temp = newObj;
-
-  routes.forEach((item, index) => {
-    const current = routes[index];
-    temp = temp[current] = {};
-  });
-
-  return newObj;
-};
-
-const createTree = items => {
-  const filteredItems = items.filter(item => item);
-  const allRoutes = {};
-
-  filteredItems.forEach(({ title, url }) => {
-    const explodedUrl = url.split('/').filter(item => item);
-    const routeObj = createObjectNesting(explodedUrl);
-  });
-
-  return allRoutes;
-};
-
 const Navigation = ({ items }) => {
   const tree = createTree(items);
-
+  console.log(tree);
   return (
     <Wrapper>
       <ul>
