@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+
 import createTree from './tree';
-import { element } from 'prop-types';
+import Logo from '../../images/gympass.svg';
 
 const Wrapper = styled.div`
-  background-color: #f4f4f4;
   height: 100%;
-  width: 500px;
+  padding: 50px;
+  width: 200px;
 
   ul {
     padding: 10px;
@@ -17,14 +18,28 @@ const Wrapper = styled.div`
   }
 `;
 
-const getHtml = tree => {
-  console.log(tree);
-};
+const getHtml = tree =>
+  Object.values(tree).map(({ title, url, ...childs }) =>
+    Object.keys(childs).length ? (
+      <li>
+        <Link to={url}>{title}</Link>
+        <ul>{getHtml(childs)}</ul>
+      </li>
+    ) : (
+      <li>
+        <Link to={url}>{title}</Link>
+      </li>
+    ),
+  );
 
 const Navigation = ({ items }) => {
   const tree = createTree(items);
-
-  return <Wrapper>{getHtml(tree)}</Wrapper>;
+  return (
+    <Wrapper>
+      <Logo />
+      <ul>{getHtml(tree)}</ul>
+    </Wrapper>
+  );
 };
 
 export default Navigation;

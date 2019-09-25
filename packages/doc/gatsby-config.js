@@ -1,5 +1,13 @@
 const config = require('./config');
 const plugins = [
+  {
+    resolve: 'gatsby-plugin-react-svg',
+    options: {
+      rule: {
+        include: /images/, // See below to configure properly
+      },
+    },
+  },
   'gatsby-transformer-sharp',
   'gatsby-plugin-sharp',
   {
@@ -34,6 +42,17 @@ const plugins = [
     options: {
       name: 'docs',
       path: `${__dirname}/content/`,
+    },
+  },
+  {
+    resolve: `gatsby-plugin-prefetch-google-fonts`,
+    options: {
+      fonts: [
+        {
+          family: `Open Sans`,
+          variants: [`400`, `700`],
+        },
+      ],
     },
   },
 ];
