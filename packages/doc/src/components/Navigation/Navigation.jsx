@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import createTree from './tree';
+import { element } from 'prop-types';
 
 const Wrapper = styled.div`
   background-color: #f4f4f4;
@@ -16,23 +17,14 @@ const Wrapper = styled.div`
   }
 `;
 
+const getHtml = tree => {
+  console.log(tree);
+};
+
 const Navigation = ({ items }) => {
   const tree = createTree(items);
-  console.log(tree);
-  return (
-    <Wrapper>
-      <ul>
-        {items.map(
-          item =>
-            item && (
-              <li key={item.url}>
-                <Link to={item.url}>{item.title}</Link>
-              </li>
-            ),
-        )}
-      </ul>
-    </Wrapper>
-  );
+
+  return <Wrapper>{getHtml(tree)}</Wrapper>;
 };
 
 export default Navigation;

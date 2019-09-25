@@ -14,13 +14,10 @@ const createObjectNesting = (routes, { title, url }) => {
   let temp = newObj;
 
   routes.forEach((item, index) => {
-    temp = temp[item] =
-      index === 0
-        ? {}
-        : {
-            title,
-            url,
-          };
+    temp = temp[item] = {
+      title,
+      url,
+    };
   });
 
   return newObj;
