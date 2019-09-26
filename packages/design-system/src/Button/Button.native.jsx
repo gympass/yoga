@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { View, Button } from 'react-native';
-import tokens from '@gympass/tokens';
+import { ThemeContext } from '../ThemeProvider';
 
-const NativeButton = ({ text = 'Foo' }) => (
-  <View>
-    <Button title={`Press me, ${text}`} color={tokens.colors.madrid.crossfit} />
-  </View>
-);
+const NativeButton = ({ text = 'Foo' }) => {
+  const theme = useContext(ThemeContext);
+  return (
+    <View>
+      <Button title={`Press me, ${text}`} color={theme.colors.primary} />
+    </View>
+  );
+};
 
 export default NativeButton;

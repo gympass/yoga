@@ -26,9 +26,10 @@
     "url": "https://github.com/Gympass/design-system/issues"
   },
   "dependencies": {
+    "@gympass/tokens": "*",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "@gympass/tokens": "*"
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
     "@testing-library/react": "^9.1.4"
