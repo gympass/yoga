@@ -11,9 +11,10 @@ const Wrapper = styled.div`
   width: 200px;
 
   ul {
-    padding: 10px;
+    padding: 5px 0px;
+    list-style-type: none;
     li {
-      padding: 10px;
+      padding-left: 10px;
     }
   }
 `;
