@@ -1,5 +1,6 @@
 const config = require('./config');
 const plugins = [
+  'gatsby-transformer-react-docgen',
   {
     resolve: 'gatsby-plugin-react-svg',
     options: {
@@ -42,6 +43,13 @@ const plugins = [
     options: {
       name: 'docs',
       path: `${__dirname}/content/`,
+    },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'design-system',
+      path: `../design-system`,
     },
   },
   {

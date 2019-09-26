@@ -7,6 +7,8 @@ import Highlight, { defaultProps } from 'prism-react-renderer';
 import * as components from '@gympass/design-system';
 import CodeBlock from '../CodeBlock/CodeBlock';
 
+console.log(<components.Button />);
+
 const customComponents = {
   code: CodeBlock,
   ...components,
