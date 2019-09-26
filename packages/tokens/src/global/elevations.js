@@ -5,7 +5,7 @@
  * @memberof @gympass/tokens
  */
 
-function hexToRgba(hex) {
+function hexToRgb(hex) {
   const h = hex.replace('#', '');
 
   const shortened = h.length === 3;
@@ -26,7 +26,7 @@ function hexToRgba(hex) {
  * @returns {String}
  */
 function elevate(color = '#000', level) {
-  const normalizedColor = hexToRgba(color);
+  const normalizedColor = hexToRgb(color);
 
   const all = [
     'none',
