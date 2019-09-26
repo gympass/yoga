@@ -1,7 +1,7 @@
 /** Line Height values follows the golden ratio typhography
  * https://grtcalculator.com/math/
  */
-import goldenRatio from './utils';
+import goldenRatio from '../utils';
 import fontSizes from './font-sizes';
 
 const lineHeight = fontSizes.map(f => Math.round(f * goldenRatio));
