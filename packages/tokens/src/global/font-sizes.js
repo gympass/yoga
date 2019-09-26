@@ -1,6 +1,12 @@
-/** Font sizes values follows the golden ratio typhography
- * https://grtcalculator.com/math/
+/**
+ * @module fontsizes
+ * @desc Font sizes tokens module.
+ *  The font-size values follows the golden ratio typhography
+ *
+ * @see https://grtcalculator.com/math/
+ * @memberof @gympass/tokens
  */
+
 import goldenRatio from '../utils';
 
 const baseFontSize = 16;
@@ -11,9 +17,33 @@ function grtCalc(ratio) {
 
 const ratios = [-1, -1 / 2, 0, 1 / 2, 1, 3 / 2, 2];
 
-// [10, 13, 16, 20, 26, 33, 42]
+/**
+ * A Font Size
+ * @typedef FontSize
+ *
+ * @type {Object}
+ *
+ * @property {FontSizeLevel} header Headings font sizes
+ * @property {FontSizeLevel} body Body font sizes
+ */
+
+/**
+ * @type {FontSize}
+ */
 const fontSizes = ratios.map(grtCalc);
 
+/**
+ * A Font Size
+ * @typedef FontSizeLevel
+ *
+ * @type {Object}
+ *
+ * @property {Object<Number, Number>} level Font size level
+ */
+
+/**
+ * @type {FontSizeLevel}
+ */
 const header = {
   level: {},
 };
@@ -27,6 +57,9 @@ const header = {
   header.level[1],
 ] = fontSizes;
 
+/**
+ * @type {FontSizeLevel}
+ */
 const body = {
   level: {},
 };
