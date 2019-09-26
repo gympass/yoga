@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
-import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
-import styled from 'styled-components';
 
 import { Layout } from '../components';
 import config from '../../config';

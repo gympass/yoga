@@ -14,12 +14,13 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     height: 100%;
     font-family: 'Open Sans';
+    color: #666;
   }
 `;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-columns: 330px 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 'Navigation Doc';
   height: 100%;
