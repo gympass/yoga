@@ -1,4 +1,4 @@
 import corp from './corp';
 import endUser from './end-user';
 
-export { endUser as default, endUser, corp };
+export { endUser as default, corp };
