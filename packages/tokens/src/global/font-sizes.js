@@ -18,7 +18,7 @@ function grtCalc(ratio) {
 const ratios = [-1, -1 / 2, 0, 1 / 2, 1, 3 / 2, 2];
 
 /**
- * A Font Size
+ * A font size
  * @typedef FontSize
  *
  * @type {Object}
@@ -29,11 +29,12 @@ const ratios = [-1, -1 / 2, 0, 1 / 2, 1, 3 / 2, 2];
 
 /**
  * @type {FontSize}
+ * @default
  */
 const fontSizes = ratios.map(grtCalc);
 
 /**
- * A Font Size
+ * The font size level
  * @typedef FontSizeLevel
  *
  * @type {Object}

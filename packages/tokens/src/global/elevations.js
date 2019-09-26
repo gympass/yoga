@@ -40,7 +40,7 @@ function elevate(color = '#000', level) {
 }
 
 /**
- * An Elevation
+ * An elevation
  * @typedef Elevation
  *
  * @type {Object}
@@ -50,6 +50,7 @@ function elevate(color = '#000', level) {
 
 /**
  * @type Elevation
+ * @default
  */
 const elevation = elevate();
 

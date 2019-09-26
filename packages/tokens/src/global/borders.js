@@ -18,6 +18,7 @@
 
 /**
  * @type {Border}
+ * @default
  */
 const border = [0, 2, 4, 8];
 

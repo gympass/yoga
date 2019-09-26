@@ -6,7 +6,7 @@
  */
 
 /**
- * A font Weight
+ * A font weight
  * @typedef FontWeight
  *
  * @type {Object}
@@ -17,6 +17,7 @@
 
 /**
  * @type {FontWeight}
+ * @default
  */
 const fontWeights = [400, 600, 700];
 
