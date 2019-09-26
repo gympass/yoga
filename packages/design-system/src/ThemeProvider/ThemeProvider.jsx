@@ -8,13 +8,9 @@ const ThemeContext = React.createContext({
 
 const ThemeConsumer = ThemeContext.Consumer;
 
-function ThemeProvider({ children, theme, locale }) {
-  return (
-    <ThemeContext.Provider value={(theme, locale)}>
-      {children}
-    </ThemeContext.Provider>
-  );
-}
+const ThemeProvider = ({ children, theme }) => (
+  <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
+);
 
 ThemeProvider.propTypes = {
   theme: PropTypes.objectOf(PropTypes.any),
