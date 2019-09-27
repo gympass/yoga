@@ -1,6 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import Logo from '../../images/gympass.svg';
 
 const Wrapper = styled.div`
@@ -13,7 +13,9 @@ const Wrapper = styled.div`
 
 const Header = () => (
   <Wrapper>
-    <Logo />
+    <Link to="/">
+      <Logo />
+    </Link>
   </Wrapper>
 );
 

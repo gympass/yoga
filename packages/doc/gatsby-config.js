@@ -57,8 +57,8 @@ const plugins = [
     options: {
       fonts: [
         {
-          family: `Open Sans`,
-          variants: [`400`, `700`],
+          family: 'Open Sans',
+          variants: ['400', '500', '700'],
         },
       ],
     },

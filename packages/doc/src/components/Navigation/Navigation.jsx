@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import tokens from '@gympass/tokens';
 
 import createTree from './tree';
 
 const Wrapper = styled.div`
-  border-right: 1px solid #f6f6f6;
   height: 100%;
   grid-area: Navigation;
+  box-shadow: inset -1px 0px 0px #f6f6f6;
 `;
 
 const List = styled.ul`
@@ -34,7 +35,10 @@ const ListItem = styled.li`
     ${({ active }) =>
       active &&
       `
-      border-right: 1px solid red;
+      border-right: 1px solid #F46152;
+      background-color: rgba(244, 97, 82, 0.05);
+      color: #F46152;
+      font-weight: 500;
   `}
   }
 `;
