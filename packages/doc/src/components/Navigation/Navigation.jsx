@@ -16,68 +16,40 @@ const List = styled.ul`
   list-style-type: none;
   font-size: 14px;
   width: 100%;
+`;
 
-
-  a {
-    color: inherit;
-    padding-bottom: 2px;
-    text-decoration: none;
-    transition: all 0.3s;
-  }
-
-  ${({ level }) =>
-    level === 0 &&
-    `
-    padding-top: 20px;
-    ${ListItem} {
-      font-weight: 700;
-    }
-  `}
-
-  ${({ level }) =>
-    level > 0 &&
-    `
-      ${ListItem} {
-        font-weight: normal;
-        padding-left: 15px;
-        padding-top: 15px;
-      }
-
-      a {
-        border-bottom: none;
-        display: block;
-        padding: 5px 10px;
-
-        &:hover {
-          color: #14ccc5;
-        }
-      }
-    `}
-
-  ${({ level }) =>
-    level === 1 &&
-    `
-    padding-bottom: 20px;
-  `}
+const AnchorLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: block;
+  text-indent: ${({ level }) => `calc(15px * ${level})`};
+  margin: 10px 0;
+  border-right: 1px solid transparent;
+  padding: 10px 100px 10px 45px;
 `;
 
 const ListItem = styled.li`
-  padding-left: 20px;
+  & > ${AnchorLink} {
+    ${({ active }) =>
+      active &&
+      `
+      border-right: 1px solid red;
+  `}
+  }
 `;
 
-const getHtml = (tree, level = 1) =>
-  Object.values(tree).map(({ title, url, ...childs }) =>
-    Object.keys(childs).length ? (
-      <ListItem key={url} active={window.location.pathname === url}>
-        <Link to={url}>{title}</Link>
+const getHtml = (tree, level = 0) =>
+  Object.values(tree).map(({ title, url, ...childs }) => (
+    <ListItem key={url} active={window.location.pathname === url}>
+      <AnchorLink to={url} level={level}>
+        {title}
+      </AnchorLink>
+      {Boolean(Object.keys(childs).length) && (
         <List level={level}>{getHtml(childs, level + 1)}</List>
-      </ListItem>
-    ) : (
-      <ListItem active={window.location.pathname === url} key={url}>
-        <Link to={url}>{title}</Link>
-      </ListItem>
-    ),
-  );
+      )}
+    </ListItem>
+  ));
 
 const Navigation = ({ items }) => {
   const tree = createTree(items);

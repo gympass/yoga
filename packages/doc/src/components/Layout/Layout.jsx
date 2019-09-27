@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 192px 1fr;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas:
     'Header Header'
