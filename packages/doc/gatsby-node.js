@@ -9,7 +9,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMdx {
+            allMdx(filter: { fields: { slug: { regex: "/^//" } } }) {
               edges {
                 node {
                   fields {
@@ -50,12 +50,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
   if (node.internal.type === `Mdx`) {
     const parent = getNode(node.parent);
-    let value = parent.relativePath.replace(parent.ext, '');
+    let value =
+      parent.relativePath && parent.relativePath.replace(parent.ext, '');
 
     createNodeField({
       name: `slug`,
       node,
-      value: `/${value.replace('index', '')}`,
+      value: `/${value && value.replace('index', '')}`,
     });
 
     createNodeField({
