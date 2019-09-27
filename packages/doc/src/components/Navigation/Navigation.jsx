@@ -62,12 +62,12 @@ const List = styled.ul`
 const getHtml = (tree, level = 1) =>
   Object.values(tree).map(({ title, url, ...childs }) =>
     Object.keys(childs).length ? (
-      <li>
+      <li key={url}>
         <Link to={url}>{title}</Link>
         <List level={level}>{getHtml(childs, level + 1)}</List>
       </li>
     ) : (
-      <li>
+      <li key={url}>
         <Link to={url}>{title}</Link>
       </li>
     ),
