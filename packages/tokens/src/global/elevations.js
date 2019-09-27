@@ -51,11 +51,11 @@ function elevate(color = '#000', level) {
 /**
  * @type Elevation
  */
-const elevation = elevate();
+const elevations = elevate();
 
 const level = {};
-[level[1], level[2], level[3], level[4]] = elevation;
+[level[1], level[2], level[3], level[4]] = elevations;
 
-elevation.level = level;
+elevations.level = level;
 
-export { elevation, elevate };
+export { elevations, elevate };

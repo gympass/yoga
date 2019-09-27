@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
+
+import { ThemeProvider } from '@gympass/design-system';
 
 import { Navigation, Doc } from '../';
 
@@ -26,15 +28,28 @@ const Grid = styled.div`
   height: 100%;
 `;
 
-const Layout = ({ nav, doc }) => (
-  <>
-    <GlobalStyle />
-    <Grid>
-      <Navigation items={nav} />
-      <Doc mdx={doc} />
-    </Grid>
-  </>
-);
+const Layout = ({ nav, doc }) => {
+  const [theme, setTheme] = useState('endUser');
+  const [locale, setLocale] = useState('pt-BR');
+
+  return (
+    <>
+      <ThemeProvider theme={theme} locale={locale}>
+        <button onClick={() => setTheme(theme === 'corp' ? 'endUser' : 'corp')}>
+          Change Theme - {theme}
+        </button>
+        <button onClick={() => setLocale(locale === 'znCn' ? 'pr-BR' : 'znCn')}>
+          Change Locale - {locale}
+        </button>
+        <GlobalStyle />
+        <Grid>
+          <Navigation items={nav} />
+          <Doc mdx={doc} />
+        </Grid>
+      </ThemeProvider>
+    </>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node,

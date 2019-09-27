@@ -1,24 +1,30 @@
 import React from 'react';
+import { ThemeProvider as SCThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
-import { corp } from './themes';
+import * as tokens from '@gympass/tokens';
+import * as themes from './themes';
 
-const ThemeContext = React.createContext({
-  theme: corp,
-});
+const getTheme = ({ theme, locale }) => {
+  const token = tokens[locale] || tokens.default;
+  const appTheme = themes[theme] || themes.default;
 
-const ThemeConsumer = ThemeContext.Consumer;
+  console.log('TCL: getTheme -> appTheme(token)', appTheme(token));
+  return appTheme(token);
+};
 
-const ThemeProvider = ({ children, theme }) => (
-  <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
+const ThemeProvider = ({ children, ...theme }) => (
+  <SCThemeProvider theme={getTheme(theme)}>{children}</SCThemeProvider>
 );
 
 ThemeProvider.propTypes = {
-  theme: PropTypes.objectOf(PropTypes.any),
+  theme: PropTypes.string,
+  locale: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
 ThemeProvider.defaultProps = {
-  theme: corp,
+  theme: 'endUser',
+  locale: 'pt-BR',
 };
 
-export { ThemeProvider as default, ThemeContext, ThemeConsumer };
+export default ThemeProvider;
