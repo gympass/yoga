@@ -47,7 +47,6 @@ export default class MDXRuntimeTest extends Component {
         }
         return null;
       });
-
     return <Layout nav={nav} doc={mdx.body} />;
   }
 }
