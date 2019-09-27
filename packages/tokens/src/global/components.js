@@ -16,7 +16,7 @@ import colors from './colors';
  * @property {Object} error
  */
 const button = {
-  success: colors.amsterda.crossfit,
+  backgroundColor: colors.madrid.crossfit,
   error: colors.madrid.crossfit,
 };
 

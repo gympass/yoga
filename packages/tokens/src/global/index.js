@@ -7,7 +7,7 @@ import fontSizes from './font-sizes';
 import fontWeights from './font-weights';
 import lineHeights from './line-heights';
 import radii from './radii';
-import * as elevations from './elevations';
+import { elevations, elevate } from './elevations';
 import spacing from './spacing';
 
 const tokens = {
@@ -21,6 +21,7 @@ const tokens = {
   lineHeights,
   radii,
   elevations,
+  elevate,
   spacing,
 };
 

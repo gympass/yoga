@@ -1,3 +1,4 @@
 import tokens from './src/global';
+import znCn from './src/locale/zn-cn';
 
-export default tokens;
+export { tokens as default, znCn };

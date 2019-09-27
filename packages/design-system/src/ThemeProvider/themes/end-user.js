@@ -1,12 +1,26 @@
-import tokens from '@gympass/tokens';
+const endUser = tokens => {
+  console.log('TCL: tokens', tokens);
 
-const colors = {
-  primary: tokens.colors.madrid.climbing,
-  secondary: tokens.colors.madrid.crossfit,
+  const colors = {
+    primary: tokens.colors.madrid.climbing,
+    secondary: tokens.colors.madrid.crossfit,
+  };
+
+  const components = {
+    button: {
+      backgroundColor: tokens.components.button.backgroundColor,
+      hover: {
+        shadow: tokens.elevate(colors.secondary, 2),
+      },
+      active: {
+        shadow: tokens.elevate(colors.secondary, 1),
+      },
+    },
+  };
+
+  return {
+    colors,
+    components,
+  };
 };
-
-const endUser = {
-  colors,
-};
-
 export default endUser;
