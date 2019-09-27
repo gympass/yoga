@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
-import Highlight, { defaultProps } from 'prism-react-renderer';
 import * as components from '@gympass/design-system';
 import CodeBlock from '../CodeBlock/CodeBlock';
-
-console.log(<components.Button />);
+import PropsTable from '../PropsTable';
 
 const customComponents = {
   code: CodeBlock,
+  PropsTable,
   ...components,
 };
 
