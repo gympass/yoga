@@ -7,6 +7,7 @@ import createTree from './tree';
 const Wrapper = styled.div`
   border-right: 1px solid #f6f6f6;
   height: 100%;
+  grid-area: Navigation;
 `;
 
 const List = styled.ul`
