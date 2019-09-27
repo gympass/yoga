@@ -15,6 +15,7 @@ const customComponents = {
 
 const Wrapper = styled.div`
   padding: 115px 50px;
+  grid-area: Documentation;
 `;
 
 const Doc = ({ mdx }) => (
