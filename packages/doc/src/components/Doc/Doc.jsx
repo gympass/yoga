@@ -8,14 +8,17 @@ import CodeBlock from '../CodeBlock/CodeBlock';
 import PropsTable from '../PropsTable';
 
 const customComponents = {
+  h2: props => (
+    <h2 id={props.children.replace(/\s+/g, '-').toLowerCase()} {...props} />
+  ),
   code: CodeBlock,
   PropsTable,
   ...components,
 };
 
 const Wrapper = styled.div`
-  padding: 115px 50px;
   grid-area: Documentation;
+  padding-left: 50px;
 `;
 
 const Doc = ({ mdx }) => (
