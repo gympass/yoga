@@ -3,24 +3,21 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 import createTree from './tree';
-import Logo from '../../images/gympass.svg';
 
 const Wrapper = styled.div`
-  height: 100%;
   border-right: 1px solid #f6f6f6;
-  padding: 50px;
+  height: 100%;
 `;
 
 const List = styled.ul`
+  margin: 0;
   padding: 0px;
   list-style-type: none;
+  font-size: 14px;
+  width: 100%;
 
-  li {
-    font-size: 22px;
-  }
 
   a {
-    border-bottom: 1px solid #f46152;
     color: inherit;
     padding-bottom: 2px;
     text-decoration: none;
@@ -31,14 +28,17 @@ const List = styled.ul`
     level === 0 &&
     `
     padding-top: 20px;
+    ${ListItem} {
+      font-weight: 700;
+    }
   `}
 
   ${({ level }) =>
     level > 0 &&
     `
-      li {
-        font-size: 14px;
-        padding-left: 10px;
+      ${ListItem} {
+        font-weight: normal;
+        padding-left: 15px;
         padding-top: 15px;
       }
 
@@ -46,8 +46,9 @@ const List = styled.ul`
         border-bottom: none;
         display: block;
         padding: 5px 10px;
-        &: hover {
-          background-color: #fff6f5;
+
+        &:hover {
+          color: #14ccc5;
         }
       }
     `}
@@ -59,17 +60,21 @@ const List = styled.ul`
   `}
 `;
 
+const ListItem = styled.li`
+  padding-left: 20px;
+`;
+
 const getHtml = (tree, level = 1) =>
   Object.values(tree).map(({ title, url, ...childs }) =>
     Object.keys(childs).length ? (
-      <li key={url}>
+      <ListItem key={url} active={window.location.pathname === url}>
         <Link to={url}>{title}</Link>
         <List level={level}>{getHtml(childs, level + 1)}</List>
-      </li>
+      </ListItem>
     ) : (
-      <li key={url}>
+      <ListItem active={window.location.pathname === url} key={url}>
         <Link to={url}>{title}</Link>
-      </li>
+      </ListItem>
     ),
   );
 
@@ -77,9 +82,6 @@ const Navigation = ({ items }) => {
   const tree = createTree(items);
   return (
     <Wrapper>
-      <Link to="/">
-        <Logo />
-      </Link>
       <List level={0}>{getHtml(tree)}</List>
     </Wrapper>
   );

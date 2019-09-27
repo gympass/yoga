@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: 330px 1fr;
+  grid-template-columns: 192px 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 'Navigation Doc';
   height: 100%;
