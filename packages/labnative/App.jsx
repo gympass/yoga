@@ -14,7 +14,7 @@ const App = () => {
           height: '100%',
         }}
       >
-        <Button />
+        <Button>Gympass</Button>
       </View>
     </ThemeProvider>
   );
