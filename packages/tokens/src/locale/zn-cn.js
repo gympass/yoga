@@ -2,7 +2,7 @@ import { merge } from '../utils';
 import tokens from '../global';
 
 const button = {
-  backgroundColor: tokens.colors.buenosAires.crossfit,
+  backgroundColor: tokens.colors.amsterda.crossfit,
 };
 
 const components = { button };

@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+
+import styled, { withTheme } from 'styled-components';
 
 const Label = styled.Text`
   color: #fff;
@@ -9,20 +10,19 @@ const Label = styled.Text`
 `;
 
 const ButtonContainer = styled.TouchableHighlight`
-  background-color: ${({ outline, theme }) =>
-    !outline ? theme.colors.primary : theme.colors.secondary};
+  background-color: ${({ theme }) => theme.components.button.backgroundColor};
   width: 80%;
   margin-top: 5px;
-  border-color: ${({ theme }) => theme.colors.primary};
+  border-color: ${({ theme }) => theme.components.button.backgroundColor};
   border-width: 2px;
 `;
 
 const Button = props => {
   return (
     <ButtonContainer onPress={props.onPress}>
-      <Label>{props.children}</Label>
+      <Label>{props.theme.components.button.backgroundColor}</Label>
     </ButtonContainer>
   );
 };
 
-export default Button;
+export default withTheme(Button);
