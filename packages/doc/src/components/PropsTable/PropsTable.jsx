@@ -1,6 +1,6 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
+import MetaDataQuery from './MetaDataQuery';
 
 const StyledTable = styled.table`
   border: 1px solid #f2f2f2;
@@ -54,7 +54,6 @@ const Table = ({
   },
 }) => (
   <>
-    <h3>PropTypes</h3>
     {description && <p>{description.text}</p>}
     <StyledTable>
       <thead>
@@ -91,42 +90,15 @@ const Table = ({
   </>
 );
 
-const PropsTable = ({ component }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allComponentMetadata {
-          edges {
-            node {
-              displayName
-              props {
-                name
-                type {
-                  name
-                }
-                required
-                defaultValue {
-                  value
-                }
-                description {
-                  text
-                }
-              }
-              description {
-                text
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={({ allComponentMetadata: { edges } }) => {
-      const componentProps = edges.filter(
-        ({ node }) => node.displayName === component,
-      )[0];
-      return <Table data={componentProps} />;
-    }}
-  />
-);
+const PropsTable = ({ component }) => {
+  const {
+    allComponentMetadata: { edges },
+  } = MetaDataQuery();
+
+  const componentProps = edges.filter(
+    ({ node }) => node.displayName === component,
+  )[0];
+  return <Table data={componentProps} />;
+};
 
 export default PropsTable;

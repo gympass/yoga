@@ -8,8 +8,10 @@ import CodeBlock from '../CodeBlock/CodeBlock';
 import PropsTable from '../PropsTable';
 
 const customComponents = {
-  h2: props => (
-    <h2 id={props.children.replace(/\s+/g, '-').toLowerCase()} {...props} />
+  h2: ({ children, ...props }) => (
+    <h2 id={children.replace(/\s+/g, '-').toLowerCase()} {...props}>
+      {children}
+    </h2>
   ),
   code: CodeBlock,
   PropsTable,
