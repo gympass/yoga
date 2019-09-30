@@ -4,15 +4,16 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator \"iPhone 11\"",
     "android": "react-native run-android",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
+    "@gympass/design-system": "*",
     "react": "^16.9.0",
     "react-native": "0.60.5",
-    "@gympass/design-system": "*"
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "@babel/core": "7.6.0",
