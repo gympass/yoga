@@ -1,14 +1,28 @@
-import React, { useContext } from 'react';
-import { View, Button } from 'react-native';
-import { ThemeContext } from '../ThemeProvider';
+import React from 'react';
+import styled from 'styled-components';
 
-const NativeButton = ({ text = 'Foo' }) => {
-  const theme = useContext(ThemeContext);
+const Label = styled.Text`
+  color: #fff;
+  font-weight: 700;
+  align-self: center;
+  padding: 10px;
+`;
+
+const ButtonContainer = styled.TouchableHighlight`
+  background-color: ${({ outline, theme }) =>
+    !outline ? theme.colors.primary : theme.colors.secondary};
+  width: 80%;
+  margin-top: 5px;
+  border-color: ${({ theme }) => theme.colors.primary};
+  border-width: 2px;
+`;
+
+const Button = props => {
   return (
-    <View>
-      <Button title={`Press me, ${text}`} color={theme.colors.primary} />
-    </View>
+    <ButtonContainer onPress={props.onPress}>
+      <Label>{props.children}</Label>
+    </ButtonContainer>
   );
 };
 
-export default NativeButton;
+export default Button;
