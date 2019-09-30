@@ -4,10 +4,11 @@ import styled from 'styled-components';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import * as components from '@gympass/design-system';
-import CodeBlock from '../CodeBlock/CodeBlock';
-import PropsTable from '../PropsTable';
+
+import { CodeBlock, PropsTable, GithubTitle } from '../';
 
 const customComponents = {
+  h1: GithubTitle,
   h2: ({ children, ...props }) => (
     <h2 id={children.replace(/\s+/g, '-').toLowerCase()} {...props}>
       {children}
@@ -23,7 +24,7 @@ const Wrapper = styled.div`
   padding-left: 50px;
 `;
 
-const Doc = ({ mdx }) => (
+const Documentation = ({ mdx }) => (
   <Wrapper>
     <MDXProvider components={customComponents}>
       <MDXRenderer>{mdx}</MDXRenderer>
@@ -31,8 +32,8 @@ const Doc = ({ mdx }) => (
   </Wrapper>
 );
 
-Doc.propTypes = {
+Documentation.propTypes = {
   children: PropTypes.node,
 };
 
-export default Doc;
+export default Documentation;
