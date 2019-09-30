@@ -20,11 +20,17 @@ const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr 150px;
+  grid-template-columns: auto 1fr 166px;
   grid-template-rows: auto 1fr;
   grid-template-areas:
     'Header Header Header'
