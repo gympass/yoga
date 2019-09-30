@@ -1,6 +1,4 @@
 const endUser = tokens => {
-  console.log('TCL: tokens', tokens);
-
   const colors = {
     primary: tokens.colors.madrid.climbing,
     secondary: tokens.colors.madrid.crossfit,
@@ -23,4 +21,5 @@ const endUser = tokens => {
     components,
   };
 };
+
 export default endUser;
