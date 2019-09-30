@@ -8,7 +8,6 @@ const getTheme = ({ theme, locale }) => {
   const token = tokens[locale] || tokens.default;
   const appTheme = themes[theme] || themes.default;
 
-  console.log('TCL: getTheme -> appTheme(token)', appTheme(token));
   return appTheme(token);
 };
 
