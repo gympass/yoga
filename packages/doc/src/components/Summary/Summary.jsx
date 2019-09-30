@@ -1,12 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useRef, Fragment } from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql, Link } from 'gatsby';
+import { Link } from 'gatsby';
+import HeadingsQuery from './HeadingsQuery';
 
 const Wrapper = styled.div`
   grid-area: Summary;
   position: relative;
   margin-left: 20px;
   margin-right: 20px;
+
+  ${({ fixed }) =>
+    fixed &&
+    `
+    position: fixed;
+    right: 7px;
+    top: 16px;
+  `}
 `;
 
 const AnchorList = styled.ul`
@@ -35,7 +44,7 @@ const AnchorItem = styled.li`
 `;
 
 const getLinks = ({ url, title }) => (
-  <AnchorItem>
+  <AnchorItem key={url}>
     <Link to={window.location.pathname + url}>{title}</Link>
   </AnchorItem>
 );
@@ -62,38 +71,35 @@ const getSummary = edges => {
   return (
     <AnchorList>
       {headings.map(heading => (
-        <>
+        <Fragment key={heading.url}>
           {getLinks(heading)}
           {headings.length === 1 &&
             heading.items.map(subHeading => getLinks(subHeading))}
-        </>
+        </Fragment>
       ))}
     </AnchorList>
   );
 };
 
-const Summary = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allMdx {
-          edges {
-            node {
-              fields {
-                slug
-              }
-              tableOfContents
-            }
-          }
-        }
-      }
-    `}
-    render={({ allMdx: { edges } }) => {
-      const summary = getSummary(edges);
+const Summary = () => {
+  const {
+    allMdx: { edges },
+  } = HeadingsQuery();
+  const [fixed, setFixed] = useState(false);
+  const wrapperRef = useRef(null);
+  const handleScroll = () => setFixed(window.scrollY > 88);
 
-      return <Wrapper>{summary}</Wrapper>;
-    }}
-  />
-);
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  return (
+    <Wrapper fixed={fixed} ref={wrapperRef}>
+      {getSummary(edges)}
+    </Wrapper>
+  );
+};
 
 export default Summary;
