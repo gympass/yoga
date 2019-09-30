@@ -8,7 +8,6 @@ const Wrapper = styled.div`
   grid-area: Header;
   margin-bottom: 40px;
   padding: 24px 45px 15px;
-  width: 100vw;
 `;
 
 const Header = () => (
