@@ -74,6 +74,7 @@ const getSummary = edges => {
         <Fragment key={heading.url}>
           {getLinks(heading)}
           {headings.length === 1 &&
+            heading.items &&
             heading.items.map(subHeading => getLinks(subHeading))}
         </Fragment>
       ))}

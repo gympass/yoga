@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 
-import { Navigation, Doc, Header, Summary } from '../';
+import { Navigation, Documentation, Header, Summary } from '../';
 
 const GlobalStyle = createGlobalStyle`
   #gatsby-focus-wrapper, #___gatsby {
@@ -44,7 +44,7 @@ const Layout = ({ nav, doc }) => (
     <Grid>
       <Header />
       <Navigation items={nav} />
-      <Doc mdx={doc} />
+      <Documentation mdx={doc} />
       <Summary>Alou</Summary>
     </Grid>
   </>
