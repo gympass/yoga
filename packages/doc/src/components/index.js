@@ -1,5 +1,19 @@
+import CodeBlock from './CodeBlock';
+import PropsTable from './PropsTable';
+import GithubTitle from './GithubTitle';
+import Header from './Header';
 import Layout from './Layout';
 import Navigation from './Navigation';
-import Doc from './Doc';
+import Summary from './Summary';
+import Documentation from './Documentation';
 
-export { Layout, Navigation, Doc };
+export {
+  CodeBlock,
+  GithubTitle,
+  Header,
+  Layout,
+  Navigation,
+  Summary,
+  PropsTable,
+  Documentation,
+};

@@ -4,7 +4,7 @@ import { Button, ThemeProvider } from '@gympass/design-system';
 
 const App = () => {
   return (
-    <ThemeProvider theme="end-user">
+    <ThemeProvider theme="corp" locale="znCn">
       <View
         style={{
           display: 'flex',

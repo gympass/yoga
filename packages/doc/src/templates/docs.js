@@ -9,13 +9,7 @@ const forcedNavOrder = config.sidebar.forcedNavOrder;
 export default class MDXRuntimeTest extends Component {
   render() {
     const { data } = this.props;
-    const {
-      allMdx,
-      mdx,
-      site: {
-        siteMetadata: { title },
-      },
-    } = data;
+    const { allMdx, mdx } = data;
 
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)
@@ -51,18 +45,8 @@ export default class MDXRuntimeTest extends Component {
 
           return { title: node.fields.title, url: node.fields.slug };
         }
+        return null;
       });
-
-    // meta tags
-    const metaTitle = mdx.frontmatter.metaTitle;
-    const metaDescription = mdx.frontmatter.metaDescription;
-    let canonicalUrl = config.gatsby.siteUrl;
-    canonicalUrl =
-      config.gatsby.pathPrefix !== '/'
-        ? canonicalUrl + config.gatsby.pathPrefix
-        : canonicalUrl;
-    canonicalUrl = canonicalUrl + mdx.fields.slug;
-
     return <Layout nav={nav} doc={mdx.body} />;
   }
 }
@@ -93,7 +77,7 @@ export const pageQuery = graphql`
         metaDescription
       }
     }
-    allMdx {
+    allMdx(filter: { frontmatter: { metaDescription: { ne: null } } }) {
       edges {
         node {
           fields {

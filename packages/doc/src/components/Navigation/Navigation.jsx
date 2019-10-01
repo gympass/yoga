@@ -3,83 +3,61 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 import createTree from './tree';
-import Logo from '../../images/gympass.svg';
 
 const Wrapper = styled.div`
   height: 100%;
-  border-right: 1px solid #f6f6f6;
-  padding: 50px;
+  grid-area: Navigation;
+  box-shadow: inset -1px 0px 0px #f6f6f6;
 `;
 
 const List = styled.ul`
+  margin: 0;
   padding: 0px;
   list-style-type: none;
-
-  li {
-    font-size: 22px;
-  }
-
-  a {
-    border-bottom: 1px solid #f46152;
-    color: inherit;
-    padding-bottom: 2px;
-    text-decoration: none;
-    transition: all 0.3s;
-  }
-
-  ${({ level }) =>
-    level === 0 &&
-    `
-    padding-top: 20px;
-  `}
-
-  ${({ level }) =>
-    level > 0 &&
-    `
-      li {
-        font-size: 14px;
-        padding-left: 10px;
-        padding-top: 15px;
-      }
-
-      a {
-        border-bottom: none;
-        display: block;
-        padding: 5px 10px;
-        &: hover {
-          background-color: #fff6f5;
-        }
-      }
-    `}
-
-  ${({ level }) =>
-    level === 1 &&
-    `
-    padding-bottom: 20px;
-  `}
+  font-size: 14px;
+  width: 100%;
 `;
 
-const getHtml = (tree, level = 1) =>
-  Object.values(tree).map(({ title, url, ...childs }) =>
-    Object.keys(childs).length ? (
-      <li>
-        <Link to={url}>{title}</Link>
+const AnchorLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: block;
+  text-indent: ${({ level }) => `calc(15px * ${level})`};
+  margin: 10px 0;
+  border-right: 1px solid transparent;
+  padding: 10px 100px 10px 45px;
+`;
+
+const ListItem = styled.li`
+  & > ${AnchorLink} {
+    ${({ active }) =>
+      active &&
+      `
+      border-right: 1px solid #F46152;
+      background-color: rgba(244, 97, 82, 0.05);
+      color: #F46152;
+      font-weight: 500;
+  `}
+  }
+`;
+
+const getHtml = (tree, level = 0) =>
+  Object.values(tree).map(({ title, url, ...childs }) => (
+    <ListItem key={url} active={window.location.pathname === url}>
+      <AnchorLink to={url} level={level}>
+        {title}
+      </AnchorLink>
+      {Boolean(Object.keys(childs).length) && (
         <List level={level}>{getHtml(childs, level + 1)}</List>
-      </li>
-    ) : (
-      <li>
-        <Link to={url}>{title}</Link>
-      </li>
-    ),
-  );
+      )}
+    </ListItem>
+  ));
 
 const Navigation = ({ items }) => {
   const tree = createTree(items);
   return (
     <Wrapper>
-      <Link to="/">
-        <Logo />
-      </Link>
       <List level={0}>{getHtml(tree)}</List>
     </Wrapper>
   );
