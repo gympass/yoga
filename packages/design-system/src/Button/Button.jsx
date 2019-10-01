@@ -9,7 +9,9 @@ const Button = ({ text, children }) => (
 );
 
 Button.propTypes = {
+  /** A text */
   text: PropTypes.string,
+  /** Component children */
   children: PropTypes.node,
 };
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import GithubLogo from '../../images/github-logo.svg';
+import DescriptionQuery from './DescriptionQuery';
 
 const Heading = styled.h1`
   display: flex;
@@ -21,22 +22,41 @@ const ScaledGithubLogo = styled(GithubLogo)`
   }
 `;
 
+const getDescription = component => {
+  const {
+    allComponentMetadata: { edges },
+  } = DescriptionQuery();
+
+  const {
+    node: {
+      description: { text: description },
+    },
+  } = edges.filter(
+    ({ node }) => node.displayName.toLowerCase() === component.toLowerCase(),
+  )[0];
+
+  return description;
+};
+
 const GithubTitle = ({ children }) => {
   const isComponent = window.location.href.search(/components\/.+/) > -1;
 
   return (
-    <Heading>
-      {children}
-      {isComponent && (
-        <a
-          href={`https://github.com/Gympass/design-system/blob/master/packages/design-system/src/${children}/${children}.jsx`}
-          target="_blank"
-          rel="noopener noreferer"
-        >
-          <ScaledGithubLogo />
-        </a>
-      )}
-    </Heading>
+    <>
+      <Heading>
+        {children}
+        {isComponent && (
+          <a
+            href={`https://github.com/Gympass/design-system/blob/master/packages/design-system/src/${children}/${children}.jsx`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ScaledGithubLogo />
+          </a>
+        )}
+      </Heading>
+      {isComponent && <p>{getDescription(children)}</p>}
+    </>
   );
 };
 
