@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { MDXContext } from '@mdx-js/react';
 import Highlight, { defaultProps } from 'prism-react-renderer';
-import duotoneLight from 'prism-react-renderer/themes/github';
+import githubTheme from 'prism-react-renderer/themes/github';
 
 const BORDER_COLOR = '#e2dddd';
 
 const defaultPropsWithTheme = {
   ...defaultProps,
-  theme: duotoneLight,
+  theme: githubTheme,
 };
 
 const StyledLiveError = styled(LiveError)`
@@ -61,7 +61,7 @@ const CodeBlock = ({ children, reactLive }) => {
         <LiveProvider
           code={normalizedCodeExample}
           scope={scope}
-          theme={duotoneLight}
+          theme={githubTheme}
         >
           <Preview>
             <Component>
