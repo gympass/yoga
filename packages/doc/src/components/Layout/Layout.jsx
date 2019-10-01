@@ -17,6 +17,39 @@ const GlobalStyle = createGlobalStyle`
     color: #666;
   }
 
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 45px 0 20px;
+    color: #333;
+  }
+
+  p {
+    margin: 0 0 14px
+  }
+
+  a {
+    color: #1890ff;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin: 0;
+
+    + p {
+      margin: 10px 0 50px;
+      font-style: italic;
+    }
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
   * {
     box-sizing: border-box;
   }
