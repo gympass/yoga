@@ -27,6 +27,14 @@ const AnchorLink = styled(Link)`
   margin: 10px 0;
   border-right: 1px solid transparent;
   padding: 10px 100px 10px 45px;
+
+  ${({ as }) =>
+    !as &&
+    `
+    &:hover {
+      color: #f46152;
+    }
+  `}
 `;
 
 const ListItem = styled.li`
