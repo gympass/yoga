@@ -48,14 +48,9 @@ const getHtml = (tree, level = 0) =>
 
     return (
       <ListItem key={url} active={window.location.pathname === url}>
-        {hasChild ? (
-          title
-        ) : (
-          <AnchorLink to={url} level={level}>
-            {title}
-          </AnchorLink>
-        )}
-
+        <AnchorLink to={url} level={level} as={hasChild && 'span'}>
+          {title}
+        </AnchorLink>
         {hasChild && <List level={level}>{getHtml(childs, level + 1)}</List>}
       </ListItem>
     );
