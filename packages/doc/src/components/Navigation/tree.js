@@ -1,13 +1,4 @@
-const merge = (target, source) => {
-  const newTarget = { ...target };
-  for (const key in source) {
-    newTarget[key] = source[key];
-    if (source[key] !== null && typeof source[key] === 'object') {
-      newTarget[key] = merge(target[key] || {}, newTarget[key]);
-    }
-  }
-  return newTarget;
-};
+import merge from '@gympass/common';
 
 const createObjectNesting = (routes, { title, url }) => {
   const newObj = {};
