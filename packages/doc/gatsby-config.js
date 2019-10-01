@@ -1,5 +1,6 @@
 const config = require('./config');
 const plugins = [
+  'gatsby-transformer-react-docgen',
   {
     resolve: 'gatsby-plugin-react-svg',
     options: {
@@ -45,12 +46,19 @@ const plugins = [
     },
   },
   {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'design-system',
+      path: `../design-system`,
+    },
+  },
+  {
     resolve: `gatsby-plugin-prefetch-google-fonts`,
     options: {
       fonts: [
         {
-          family: `Open Sans`,
-          variants: [`400`, `700`],
+          family: 'Open Sans',
+          variants: ['400', '500', '700'],
         },
       ],
     },

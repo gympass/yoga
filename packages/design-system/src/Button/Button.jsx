@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Button = styled.button`
@@ -31,5 +32,15 @@ const Button = styled.button`
     box-shadow: none;
   }
 `;
+
+Button.propTypes = {
+  text: PropTypes.string,
+  children: PropTypes.node,
+};
+
+Button.defaultProps = {
+  text: 'Gympass',
+  children: undefined,
+};
 
 export default Button;
