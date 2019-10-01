@@ -43,16 +43,23 @@ const ListItem = styled.li`
 `;
 
 const getHtml = (tree, level = 0) =>
-  Object.values(tree).map(({ title, url, ...childs }) => (
-    <ListItem key={url} active={window.location.pathname === url}>
-      <AnchorLink to={url} level={level}>
-        {title}
-      </AnchorLink>
-      {Boolean(Object.keys(childs).length) && (
-        <List level={level}>{getHtml(childs, level + 1)}</List>
-      )}
-    </ListItem>
-  ));
+  Object.values(tree).map(({ title, url, ...childs }) => {
+    const hasChild = Boolean(Object.keys(childs).length);
+
+    return (
+      <ListItem key={url} active={window.location.pathname === url}>
+        {hasChild ? (
+          title
+        ) : (
+          <AnchorLink to={url} level={level}>
+            {title}
+          </AnchorLink>
+        )}
+
+        {hasChild && <List level={level}>{getHtml(childs, level + 1)}</List>}
+      </ListItem>
+    );
+  });
 
 const Navigation = ({ items }) => {
   const tree = createTree(items);
