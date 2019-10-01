@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/** This is a Buttton description */
 const Button = ({ text, children }) => (
   <button style={{ backgroundColor: 'red' }} text={text}>
     {children}
