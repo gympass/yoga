@@ -57,46 +57,43 @@ const StyledTable = styled.table`
 
 const Table = ({
   data: {
-    node: { description, props },
+    node: { props },
   },
 }) => (
-  <>
-    {description && <p>{description.text}</p>}
-    <TableWrapper>
-      <StyledTable>
-        <thead>
-          <tr>
-            <th>Prop</th>
-            <th>Description</th>
-            <th>Type</th>
-            <th>Default</th>
-            <th>Required</th>
-          </tr>
-        </thead>
-        <tbody>
-          {props.map(
-            ({
-              name,
-              description: { text: description },
-              type: { name: type },
-              defaultValue: { value: defaultValue },
-              required: isRequired,
-            }) => (
-              <tr key={name}>
-                <td>{name}</td>
-                <td>{description}</td>
-                <td>{type}</td>
-                <td>
-                  <code>{defaultValue.replace(/'/g, '')}</code>
-                </td>
-                <td>{String(isRequired)}</td>
-              </tr>
-            ),
-          )}
-        </tbody>
-      </StyledTable>
-    </TableWrapper>
-  </>
+  <TableWrapper>
+    <StyledTable>
+      <thead>
+        <tr>
+          <th>Prop</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Default</th>
+          <th>Required</th>
+        </tr>
+      </thead>
+      <tbody>
+        {props.map(
+          ({
+            name,
+            description: { text: description },
+            type: { name: type },
+            defaultValue: { value: defaultValue },
+            required: isRequired,
+          }) => (
+            <tr key={name}>
+              <td>{name}</td>
+              <td>{description}</td>
+              <td>{type}</td>
+              <td>
+                <code>{defaultValue.replace(/'/g, '')}</code>
+              </td>
+              <td>{String(isRequired)}</td>
+            </tr>
+          ),
+        )}
+      </tbody>
+    </StyledTable>
+  </TableWrapper>
 );
 
 const PropsTable = ({ component }) => {

@@ -20,9 +20,6 @@ const MetaDataQuery = () =>
                 text
               }
             }
-            description {
-              text
-            }
           }
         }
       }
