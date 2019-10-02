@@ -33,7 +33,7 @@ const getDescription = component => {
       description: { text: description },
     },
   } = edges.filter(
-    ({ node: { parentNode } }) =>
+    ({ node: parentNode }) =>
       parentNode.displayName.toLowerCase() === component.toLowerCase(),
   )[0];
 
