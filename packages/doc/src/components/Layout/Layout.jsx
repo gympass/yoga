@@ -1,8 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 
-import { Navigation, Documentation, Header, Summary } from "..";
+import { Navigation, Documentation, Header, Summary } from '..';
 
 const GlobalStyle = createGlobalStyle`
   #gatsby-focus-wrapper, #___gatsby {
@@ -84,7 +84,8 @@ const Layout = ({ nav, doc }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.node,
+  nav: string.isRequired,
+  doc: string.isRequired,
 };
 
 export default Layout;

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { MDXContext } from '@mdx-js/react';
+import { node, bool } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import githubTheme from 'prism-react-renderer/themes/github';
 
@@ -55,6 +56,7 @@ const Usage = styled.div`
 
 const CodeBlock = ({ children, reactLive }) => {
   const normalizedCodeExample = children.trim();
+
   return reactLive ? (
     <MDXContext.Consumer>
       {scope => (
@@ -106,6 +108,11 @@ const CodeBlock = ({ children, reactLive }) => {
       )}
     </Highlight>
   );
+};
+
+CodeBlock.propTypes = {
+  children: node.isRequired,
+  reactLive: bool.isRequired,
 };
 
 export default CodeBlock;

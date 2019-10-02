@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { node } from 'prop-types';
 import GithubLogo from '../../images/github-logo.svg';
 import DescriptionQuery from './DescriptionQuery';
 
@@ -32,7 +33,8 @@ const getDescription = component => {
       description: { text: description },
     },
   } = edges.filter(
-    ({ node }) => node.displayName.toLowerCase() === component.toLowerCase(),
+    ({ node: { parentNode } }) =>
+      parentNode.displayName.toLowerCase() === component.toLowerCase(),
   )[0];
 
   return description;
@@ -58,6 +60,10 @@ const GithubTitle = ({ children }) => {
       {isComponent && <p>{getDescription(children)}</p>}
     </>
   );
+};
+
+GithubTitle.propTypes = {
+  children: node.isRequired,
 };
 
 export default GithubTitle;

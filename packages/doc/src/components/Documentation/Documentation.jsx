@@ -1,11 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string, node } from 'prop-types';
 import styled from 'styled-components';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import * as components from '@gympass/design-system';
 
-import { CodeBlock, PropsTable, GithubTitle, InlineCode } from '../';
+import { CodeBlock, PropsTable, GithubTitle, InlineCode } from '..';
 
 const customComponents = {
   h1: GithubTitle,
@@ -27,6 +27,10 @@ const Wrapper = styled.div`
   padding-right: 50px;
 `;
 
+customComponents.h2.propTypes = {
+  children: node.isRequired,
+};
+
 const Documentation = ({ mdx }) => (
   <Wrapper>
     <MDXProvider components={customComponents}>
@@ -36,7 +40,7 @@ const Documentation = ({ mdx }) => (
 );
 
 Documentation.propTypes = {
-  children: PropTypes.node,
+  mdx: string.isRequired,
 };
 
 export default Documentation;

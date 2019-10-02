@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import { arrayOf, object } from 'prop-types';
 
 import createTree from './tree';
 
@@ -66,11 +67,16 @@ const getHtml = (tree, level = 0) =>
 
 const Navigation = ({ items }) => {
   const tree = createTree(items);
+
   return (
     <Wrapper>
       <List level={0}>{getHtml(tree)}</List>
     </Wrapper>
   );
+};
+
+Navigation.propTypes = {
+  items: arrayOf(object).isRequired,
 };
 
 export default Navigation;

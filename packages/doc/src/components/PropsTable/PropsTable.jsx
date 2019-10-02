@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { string, shape } from 'prop-types';
 import MetaDataQuery from './MetaDataQuery';
 import { InlineCode } from '..';
 
@@ -49,7 +50,7 @@ const StyledTable = styled.table`
 
 const Table = ({
   data: {
-    node: { props },
+    node: { props: properties },
   },
 }) => (
   <TableWrapper>
@@ -64,7 +65,7 @@ const Table = ({
         </tr>
       </thead>
       <tbody>
-        {props.map(
+        {properties.map(
           ({
             name,
             description: { text: description },
@@ -88,6 +89,10 @@ const Table = ({
   </TableWrapper>
 );
 
+Table.propTypes = {
+  data: shape({}).isRequired,
+};
+
 const PropsTable = ({ component }) => {
   const {
     allComponentMetadata: { edges },
@@ -97,6 +102,10 @@ const PropsTable = ({ component }) => {
     ({ node }) => node.displayName === component,
   )[0];
   return <Table data={componentProps} />;
+};
+
+PropsTable.propTypes = {
+  component: string.isRequired,
 };
 
 export default PropsTable;
