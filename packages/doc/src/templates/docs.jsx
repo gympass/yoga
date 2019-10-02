@@ -1,6 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string, shape } from 'prop-types';
 import { graphql } from 'gatsby';
+import { handleItems, handleNavigation } from './nav';
 
 import { Layout } from '../components';
 import config from '../../config';
@@ -11,47 +12,16 @@ const {
 
 const MDXRuntimeTest = props => {
   const { data } = props;
-  const { allMdx, mdx } = data;
-  const navItems = allMdx.edges
-    .map(({ node }) => node.fields.slug)
-    .filter(slug => slug !== '/')
-    .sort()
-    .reduce(
-      (acc, cur) => {
-        if (forcedNavOrder.find(url => url === cur)) {
-          return { ...acc, [cur]: [cur] };
-        }
+  const {
+    allMdx: { edges },
+    mdx: { body },
+  } = data;
 
-        const prefix = cur.split('/')[1];
+  const navItems = handleItems(edges, forcedNavOrder);
+  const nav = handleNavigation(edges, forcedNavOrder, navItems);
 
-        if (prefix && forcedNavOrder.find(url => url === `/${prefix}`)) {
-          return { ...acc, [`/${prefix}`]: [...acc[`/${prefix}`], cur] };
-        }
-        return { ...acc, items: [...acc.items, cur] };
-      },
-      { items: [] },
-    );
-
-  const nav = forcedNavOrder
-    .reduce((acc, cur) => {
-      return acc.concat(navItems[cur]);
-    }, [])
-    .concat(navItems.items)
-    .map(slug => {
-      if (slug) {
-        const { node } = allMdx.edges.find(
-          ({ node }) => node.fields.slug === slug,
-        );
-
-        return { title: node.fields.title, url: node.fields.slug };
-      }
-      return null;
-    });
-
-  return <Layout nav={nav} doc={mdx.body} />;
+  return <Layout nav={nav} doc={body} />;
 };
-
-export default MDXRuntimeTest;
 
 export const pageQuery = graphql`
   query($id: String!) {
@@ -92,6 +62,9 @@ export const pageQuery = graphql`
   }
 `;
 
-// MDXRuntimeTest.propTypes = {
+MDXRuntimeTest.propTypes = {
+  data: shape({}).isRequired,
+  edges: string.isRequired,
+};
 
-// };
+export default MDXRuntimeTest;
