@@ -34,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
         result.data.allMdx.edges.forEach(({ node }) => {
           createPage({
             path: node.fields.slug ? node.fields.slug : '/',
-            component: path.resolve('./src/templates/docs.js'),
+            component: path.resolve('./src/templates/Docs.jsx'),
             context: {
               id: node.fields.id,
             },
@@ -50,7 +50,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
   if (node.internal.type === `Mdx`) {
     const parent = getNode(node.parent);
-    let value =
+    const value =
       parent.relativePath && parent.relativePath.replace(parent.ext, '');
 
     createNodeField({

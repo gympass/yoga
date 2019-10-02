@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import MetaDataQuery from './MetaDataQuery';
-import { InlineCode } from '../';
+import { InlineCode } from '..';
 
 const BORDER_COLOR = '#e2dddd';
 

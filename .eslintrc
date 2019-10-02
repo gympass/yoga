@@ -8,6 +8,7 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "import/no-cycle": 0
   }
 }

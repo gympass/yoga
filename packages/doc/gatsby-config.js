@@ -1,4 +1,5 @@
 const config = require('./config');
+
 const plugins = [
   'gatsby-transformer-react-docgen',
   {
@@ -14,7 +15,7 @@ const plugins = [
   {
     resolve: `gatsby-plugin-layout`,
     options: {
-      component: require.resolve(`./src/templates/docs.js`),
+      component: require.resolve(`./src/templates/Docs.jsx`),
     },
   },
   'gatsby-plugin-styled-components',
@@ -84,5 +85,5 @@ module.exports = {
     headerLinks: config.header.links,
     siteUrl: config.gatsby.siteUrl,
   },
-  plugins: plugins,
+  plugins,
 };

@@ -4,7 +4,8 @@ const createObjectNesting = (routes, { title, url }) => {
   const newObj = {};
   let temp = newObj;
 
-  routes.forEach((item, index) => {
+  routes.forEach(item => {
+    /* eslint-disable-next-line */
     temp = temp[item] = {
       title,
       url,
