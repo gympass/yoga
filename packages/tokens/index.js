@@ -1,3 +1,3 @@
-import * as tokens from './src';
+import tokens from './src/global';
 
 export default tokens;

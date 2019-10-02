@@ -1,3 +1,10 @@
+/**
+ * @module colors
+ * @desc Color tokens module.
+ *
+ * @memberof @gympass/tokens
+ */
+
 const red = ['#CB3530', '#F46152', '#F48170', '#FFE4E1'];
 const orange = ['#F69755', '#FFAC6F', '#FCBE94', '#FDECE0'];
 const yellow = ['#DFAF26', '#F3D04A', '#FFE461', '#FBFBBE'];
@@ -20,15 +27,38 @@ const gray = [
   '#F5F5FA',
 ];
 
+/**
+ * A color
+ * @typedef Color
+ *
+ * @type {Object}
+ * @property {string} crossfit - intensity 3
+ * @property {string} climbing - intensity 2
+ * @property {string} swimming - intensity 1
+ * @property {string} meditation - intensity 0
+ */
+
+/**
+ * @type {Color}
+ */
 const madrid = {};
 [madrid.crossfit, madrid.climbing, madrid.swimming, madrid.meditation] = red;
 
+/**
+ * @type {Color}
+ */
 const munich = {};
 [munich.crossfit, munich.climbing, munich.swimming, munich.meditation] = orange;
 
+/**
+ * @type {Color}
+ */
 const milan = {};
 [milan.crossfit, milan.climbing, milan.swimming, milan.meditation] = yellow;
 
+/**
+ * @type {Color}
+ */
 const amsterda = {};
 [
   amsterda.crossfit,
@@ -37,6 +67,9 @@ const amsterda = {};
   amsterda.meditation,
 ] = green;
 
+/**
+ * @type {Color}
+ */
 const saoPaulo = {};
 [
   saoPaulo.crossfit,
@@ -45,6 +78,9 @@ const saoPaulo = {};
   saoPaulo.meditation,
 ] = turquoise;
 
+/**
+ * @type {Color}
+ */
 const buenosAires = {};
 [
   buenosAires.crossfit,
@@ -53,6 +89,9 @@ const buenosAires = {};
   buenosAires.meditation,
 ] = sky;
 
+/**
+ * @type {Color}
+ */
 const newYork = {};
 [
   newYork.crossfit,
@@ -61,9 +100,15 @@ const newYork = {};
   newYork.meditation,
 ] = ocean;
 
+/**
+ * @type {Color}
+ */
 const paris = {};
 [paris.crossfit, paris.climbing, paris.swimming, paris.meditation] = purple;
 
+/**
+ * @type {Object<number, string>}
+ */
 const vilaOlimpia = {};
 [
   vilaOlimpia[100],

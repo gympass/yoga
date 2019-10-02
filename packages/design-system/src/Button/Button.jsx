@@ -1,11 +1,12 @@
+import tokens from '@gympass/tokens';
 import React from 'react';
 import PropTypes from 'prop-types';
 
-/** This is a Buttton description, é nada. */
-const Button = ({ text, children }) => (
-  <button style={{ backgroundColor: 'red' }} text={text}>
-    {children}
-  </button>
+const Button = props => (
+  <button
+    style={{ backgroundColor: tokens.colors.madrid.crossfit }}
+    {...props}
+  />
 );
 
 Button.propTypes = {
