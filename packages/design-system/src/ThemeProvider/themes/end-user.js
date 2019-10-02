@@ -1,24 +1,14 @@
+import baseTheme from './baseTheme';
+
 const endUser = tokens => {
   const colors = {
-    primary: tokens.colors.madrid.climbing,
-    secondary: tokens.colors.madrid.crossfit,
-  };
-
-  const components = {
-    button: {
-      backgroundColor: tokens.components.button.backgroundColor,
-      hover: {
-        shadow: tokens.elevate(colors.secondary, 2),
-      },
-      active: {
-        shadow: tokens.elevate(colors.secondary, 1),
-      },
-    },
+    primary: tokens.colors.madrid[1],
+    secondary: tokens.colors.madrid[0],
   };
 
   return {
     colors,
-    components,
+    ...baseTheme(colors),
   };
 };
 
