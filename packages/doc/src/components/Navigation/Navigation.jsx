@@ -9,6 +9,10 @@ const Wrapper = styled.div`
   height: 100%;
   grid-area: Navigation;
   box-shadow: inset -1px 0px 0px #f6f6f6;
+
+  span {
+    color: #999;
+  }
 `;
 
 const List = styled.ul`
