@@ -4,11 +4,6 @@ import { graphql } from 'gatsby';
 import { handleItems, handleNavigation } from './nav';
 
 import { Layout } from '../components';
-import config from '../../config';
-
-const {
-  sidebar: { forcedNavOrder },
-} = config;
 
 const MDXRuntimeTest = props => {
   const { data } = props;
@@ -17,8 +12,8 @@ const MDXRuntimeTest = props => {
     mdx: { body },
   } = data;
 
-  const navItems = handleItems(edges, forcedNavOrder);
-  const nav = handleNavigation(edges, forcedNavOrder, navItems);
+  const { items } = handleItems(edges);
+  const nav = handleNavigation(edges, items);
 
   return <Layout nav={nav} doc={body} />;
 };
@@ -28,7 +23,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        docsLocation
       }
     }
     mdx(fields: { id: { eq: $id } }) {
