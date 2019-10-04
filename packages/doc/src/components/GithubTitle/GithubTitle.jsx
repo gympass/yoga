@@ -23,9 +23,17 @@ const ScaledGithubLogo = styled(GithubLogo)`
   }
 `;
 
-const getDescription = component => {
+const getMetaData = (isComponent, component) => {
+  if (!isComponent) {
+    return {};
+  }
   const {
     allComponentMetadata: { edges },
+    site: {
+      siteMetadata: {
+        github: { componentsPath },
+      },
+    },
   } = DescriptionQuery();
 
   const {
@@ -37,11 +45,12 @@ const getDescription = component => {
       parentNode.displayName.toLowerCase() === component.toLowerCase(),
   )[0];
 
-  return description;
+  return { description, componentsPath };
 };
 
 const GithubTitle = ({ children }) => {
   const isComponent = window.location.href.search(/components\/.+/) > -1;
+  const { description, componentsPath } = getMetaData(isComponent, children);
 
   return (
     <>
@@ -49,7 +58,7 @@ const GithubTitle = ({ children }) => {
         {children}
         {isComponent && (
           <a
-            href={`https://github.com/Gympass/design-system/blob/master/packages/design-system/src/${children}/${children}.jsx`}
+            href={`${componentsPath}${children}/${children}.jsx`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -57,7 +66,7 @@ const GithubTitle = ({ children }) => {
           </a>
         )}
       </Heading>
-      {isComponent && <p>{getDescription(children)}</p>}
+      {isComponent && <p>{description}</p>}
     </>
   );
 };
