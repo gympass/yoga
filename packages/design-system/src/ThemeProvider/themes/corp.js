@@ -6,12 +6,13 @@ const corp = tokens => {
 
   const components = {
     button: {
-      backgroundColor: tokens.components.button.backgroundColor,
+      backgroundColor: colors.primary,
+      shadow: tokens.elevate(colors.secondary, 0),
       hover: {
-        shadow: tokens.elevate(colors.secondary, 2),
+        shadow: tokens.elevate(colors.secondary, 1),
       },
       active: {
-        shadow: tokens.elevate(colors.secondary, 1),
+        shadow: tokens.elevate(colors.secondary, 0),
       },
     },
   };

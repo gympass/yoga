@@ -1,7 +1,7 @@
-const endUser = tokens => {
+const gyms = tokens => {
   const colors = {
-    primary: tokens.colors.madrid.climbing,
-    secondary: tokens.colors.madrid.crossfit,
+    primary: tokens.colors.milan.climbing,
+    secondary: tokens.colors.milan.crossfit,
   };
 
   const components = {
@@ -23,4 +23,4 @@ const endUser = tokens => {
   };
 };
 
-export default endUser;
+export default gyms;

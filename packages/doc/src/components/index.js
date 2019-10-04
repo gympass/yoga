@@ -6,6 +6,7 @@ import Layout from './Layout';
 import Navigation from './Navigation';
 import Summary from './Summary';
 import Documentation from './Documentation';
+import Dropdown from './Dropdown';
 
 export {
   CodeBlock,
@@ -16,4 +17,5 @@ export {
   Summary,
   PropsTable,
   Documentation,
+  Dropdown,
 };

@@ -21,7 +21,9 @@ const customComponents = {
 
 const Wrapper = styled.div`
   grid-area: Documentation;
+  padding-bottom: 40px;
   padding-left: 50px;
+  padding-right: 50px;
 `;
 
 const Documentation = ({ mdx }) => (

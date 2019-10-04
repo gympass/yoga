@@ -1,22 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 
-const Button = styled.button`
+/** This is a Buttton description */
+const ButtonStyle = styled.button`
   display: inline-flex;
   align-items: center;
   height: 48px;
-  margin-top: 24px;
   padding: 0 40px;
   border-radius: 24px;
   border: none;
-  background-color: ${({ theme }) => theme.components.button.backgroundColor};
   color: #fff;
   font-size: 0.875rem;
   font-weight: bold;
   cursor: pointer;
   transition: all 100ms linear;
   outline: none;
+
+  background-color: ${({ theme }) => theme.components.button.backgroundColor};
+  box-shadow: ${({ theme }) => theme.components.button.shadow};
 
   &:hover {
     box-shadow: ${({ theme }) => theme.components.button.hover.shadow};
@@ -33,14 +35,22 @@ const Button = styled.button`
   }
 `;
 
+/** This is a Buttton description */
+const Button = ({ text, children, theme }) => {
+  console.log(theme.components.button.backgroundColor);
+  return <ButtonStyle text={text}> {children} </ButtonStyle>;
+};
+
 Button.propTypes = {
+  /** A text */
   text: PropTypes.string,
+  /** Component children */
   children: PropTypes.node,
 };
 
 Button.defaultProps = {
-  text: 'Gympass',
+  text: 'alo',
   children: undefined,
 };
 
-export default Button;
+export default withTheme(Button);
