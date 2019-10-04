@@ -13,14 +13,12 @@
  * @property {String} zero
  * @property {String} small
  * @property {String} medium
- * @property {String} large
  */
 
 /**
  * @type {Border}
  */
-const border = [0, 2, 4, 8];
-
-[border.zero, border.small, border.medium, border.large] = border;
+const border = [0, 1, 2];
+[border.zero, border.small, border.medium] = border;
 
 export default border;
