@@ -30,10 +30,9 @@ function elevate(color = '#000', level) {
 
   const all = [
     'none',
-    `0 0 8px rgba(${normalizedColor}, 0.60), 0 2px 8px rgba(${normalizedColor}, 0.60)`,
-    `0 4px 16px rgba(${normalizedColor}, 0.60), 0 0 16px rgba(${normalizedColor}, 0.60)`,
-    `0 6px 24px rgba(${normalizedColor}, 0.60), 0 0 24px rgba(${normalizedColor}, 0.60)`,
-    `0 8px 32px rgba(${normalizedColor}, 0.60), 0 0 32px rgba(${normalizedColor}, 0.60)`,
+    `0 2px 8px rgba(${normalizedColor}, 0.25)`,
+    `0 4px 10px rgba(${normalizedColor}, 0.25)`,
+    `0 6px 16px rgba(${normalizedColor}, 0.25)`,
   ];
 
   return level ? all[level] : all;
@@ -44,18 +43,21 @@ function elevate(color = '#000', level) {
  * @typedef Elevation
  *
  * @type {Object}
- *
- * @property {Object<Number, Number>} level Elevation level (1, 2, 3 and 4)
+ * @property {String} zero
+ * @property {String} small
+ * @property {String} medium
+ * @property {String} large
  */
 
 /**
  * @type Elevation
  */
 const elevations = elevate();
-
-const level = {};
-[level[1], level[2], level[3], level[4]] = elevations;
-
-elevations.level = level;
+[
+  elevations.zero,
+  elevations.small,
+  elevations.medium,
+  elevations.large,
+] = elevations;
 
 export { elevations, elevate };
