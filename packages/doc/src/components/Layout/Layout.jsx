@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, arrayOf, object } from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 
 import { Navigation, Documentation, Header, Summary } from '..';
@@ -84,7 +84,7 @@ const Layout = ({ nav, doc }) => (
 );
 
 Layout.propTypes = {
-  nav: string.isRequired,
+  nav: arrayOf(object).isRequired,
   doc: string.isRequired,
 };
 
