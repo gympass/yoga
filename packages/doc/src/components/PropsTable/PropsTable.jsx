@@ -2,15 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import MetaDataQuery from './MetaDataQuery';
 
+const BORDER_COLOR = '#e2dddd';
+
+const TableWrapper = styled.div`
+  border: 1px solid ${BORDER_COLOR};
+  border-radius: 5px;
+  overflow: hidden;
+`;
+
 const StyledTable = styled.table`
-  border: 1px solid #f2f2f2;
   border-collapse: collapse;
   font-family: monospace;
-  margin: 10px 0;
+  margin: 0px 0;
   width: 100%;
 
   thead {
-    background-color: #fbfbfb;
+    background-color: #f6f8fa;
 
     th {
       font-size: 14px;
@@ -23,7 +30,7 @@ const StyledTable = styled.table`
   tbody {
     tr {
       td {
-        border-top: 1px solid #f2f2f2;
+        border-top: 1px solid ${BORDER_COLOR};
         padding: 14px 12px 12px;
 
         &:first-child {
@@ -32,12 +39,12 @@ const StyledTable = styled.table`
 
         &:nth-child(3),
         &:last-child {
-          color: #c41d7f;
+          color: #e3116c;
         }
 
         &:nth-child(4) {
           code {
-            background-color: #fbfbfb;
+            background-color: #f6f8fa;
             border: 1px solid #f2f2f2;
             border-radius: 3px;
             padding: 5px;
@@ -50,11 +57,10 @@ const StyledTable = styled.table`
 
 const Table = ({
   data: {
-    node: { description, props },
+    node: { props },
   },
 }) => (
-  <>
-    {description && <p>{description.text}</p>}
+  <TableWrapper>
     <StyledTable>
       <thead>
         <tr>
@@ -87,7 +93,7 @@ const Table = ({
         )}
       </tbody>
     </StyledTable>
-  </>
+  </TableWrapper>
 );
 
 const PropsTable = ({ component }) => {
