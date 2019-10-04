@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { MDXContext } from '@mdx-js/react';
-import { node, bool } from 'prop-types';
+import { node, string } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import githubTheme from 'prism-react-renderer/themes/github';
 
@@ -112,7 +112,11 @@ const CodeBlock = ({ children, reactLive }) => {
 
 CodeBlock.propTypes = {
   children: node.isRequired,
-  reactLive: bool.isRequired,
+  reactLive: string,
+};
+
+CodeBlock.defaultProps = {
+  reactLive: undefined,
 };
 
 export default CodeBlock;
