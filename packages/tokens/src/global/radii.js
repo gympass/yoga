@@ -18,7 +18,7 @@
 /**
  * @type {Radii}
  */
-const radii = [0, 8, '100%'];
+const radii = [0, 8, 9999];
 [radii.sharp, radii.rounded, radii.circle] = radii;
 
 export default radii;

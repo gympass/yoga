@@ -14,6 +14,7 @@
 
 /**
  * @type {Font}
+ * @default
  */
 const fonts = ['Open Sans'];
 
