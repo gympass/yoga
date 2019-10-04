@@ -1,7 +1,6 @@
 import borders from './borders';
 import breakpoints from './breakpoints';
 import colors from './colors';
-import components from './components';
 import fonts from './fonts';
 import fontSizes from './font-sizes';
 import fontWeights from './font-weights';
@@ -14,7 +13,6 @@ const tokens = {
   borders,
   breakpoints,
   colors,
-  components,
   fonts,
   fontSizes,
   fontWeights,
@@ -33,7 +31,6 @@ export {
   borders,
   breakpoints,
   colors,
-  components,
   fonts,
   fontSizes,
   fontWeights,

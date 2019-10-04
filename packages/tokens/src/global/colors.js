@@ -5,137 +5,86 @@
  * @memberof @gympass/tokens
  */
 
-const red = ['#CB3530', '#F46152', '#F48170', '#FFE4E1'];
-const orange = ['#F69755', '#FFAC6F', '#FCBE94', '#FDECE0'];
-const yellow = ['#DFAF26', '#F3D04A', '#FFE461', '#FBFBBE'];
-const green = ['#52E272', '#83FC8B', '#AAFDB6', '#D4FADC'];
-const turquoise = ['#3FA99B', '#58C2B4', '#6FDCCB', '#D8F5F5'];
-const sky = ['#4C9FE4', '#6EBCEA', '#95D4EF', '#CAE5F5'];
-const ocean = ['#001027', '#21364F', '#3C6493', '#D6E1EE'];
-const purple = ['#B3A1F2', '#C5BAF4', '#D8D0FC', '#EBE6FF'];
-const white = '#FFFFFF';
-const black = '#000000';
-const gray = [
-  '#41414A',
-  '#6B6B78',
-  '#9898A7',
-  '#A9A9B8',
-  '#C5C5D6',
-  '#D3D3E2',
-  '#DBDBE8',
-  '#E6E6F0',
-  '#F5F5FA',
-];
-
 /**
  * A color
  * @typedef Color
  *
- * @type {Object}
- * @property {string} crossfit - intensity 3
- * @property {string} climbing - intensity 2
- * @property {string} swimming - intensity 1
- * @property {string} meditation - intensity 0
+ * @type {String | String[]}
  */
 
 /**
  * @type {Color}
  */
-const madrid = {};
-[madrid.crossfit, madrid.climbing, madrid.swimming, madrid.meditation] = red;
+const madrid = ['#FDE5E2', '#FAB9B2', '#F78E82', '#F46152'];
 
 /**
  * @type {Color}
  */
-const munich = {};
-[munich.crossfit, munich.climbing, munich.swimming, munich.meditation] = orange;
+const milan = ['#FFF6E6', '#FFE5B3', '#FFD380', '#FFC24C'];
 
 /**
  * @type {Color}
  */
-const milan = {};
-[milan.crossfit, milan.climbing, milan.swimming, milan.meditation] = yellow;
+const saoPaulo = ['#D3F3F2', '#ABE8E6', '#83DDDB', '#35C3BF'];
 
 /**
  * @type {Color}
  */
-const amsterda = {};
-[
-  amsterda.crossfit,
-  amsterda.climbing,
-  amsterda.swimming,
-  amsterda.meditation,
-] = green;
+const newYork = ['#606CD2', '#3847C7', '#2D399F', '#232C7B'];
 
 /**
  * @type {Color}
  */
-const saoPaulo = {};
-[
-  saoPaulo.crossfit,
-  saoPaulo.climbing,
-  saoPaulo.swimming,
-  saoPaulo.meditation,
-] = turquoise;
+const paris = ['#BFA8F0', '#A07CE9', '#8051E1', '#652CDB'];
 
 /**
  * @type {Color}
  */
-const buenosAires = {};
-[
-  buenosAires.crossfit,
-  buenosAires.climbing,
-  buenosAires.swimming,
-  buenosAires.meditation,
-] = sky;
+const white = '#FFFFFF';
 
 /**
  * @type {Color}
  */
-const newYork = {};
-[
-  newYork.crossfit,
-  newYork.climbing,
-  newYork.swimming,
-  newYork.meditation,
-] = ocean;
+const dark = '#3F414B';
 
 /**
  * @type {Color}
  */
-const paris = {};
-[paris.crossfit, paris.climbing, paris.swimming, paris.meditation] = purple;
+const gray = [white, '#F5F5FA', '#D7D7E5', '#A2A2B3', '#71717F', dark];
 
 /**
- * @type {Object<number, string>}
+ * @type {Color}
  */
-const vilaOlimpia = {};
-[
-  vilaOlimpia[100],
-  vilaOlimpia[90],
-  vilaOlimpia[80],
-  vilaOlimpia[70],
-  vilaOlimpia[60],
-  vilaOlimpia[50],
-  vilaOlimpia[40],
-  vilaOlimpia[30],
-  vilaOlimpia[20],
-  vilaOlimpia[10],
-  vilaOlimpia[0],
-] = [black, ...gray, white];
+const positive = ['#DEF8E9', '#1E854A'];
+
+/**
+ * @type {Color}
+ */
+const negative = ['#FCEAE9', '#CB3530'];
+
+/**
+ * @type {Color}
+ */
+const informative = ['#E9F3FC', '#2186D9'];
+
+/**
+ * @type {Color}
+ */
+const attentive = ['#FBFBBE', '#997108'];
 
 const colors = {
   madrid,
-  munich,
   milan,
-  amsterda,
   saoPaulo,
-  buenosAires,
   newYork,
   paris,
-  vilaOlimpia,
   white,
-  black,
+  dark,
+  gray,
+  positive,
+  negative,
+  informative,
+  attentive,
 };
 
 export default colors;

@@ -1,23 +1,12 @@
+import baseTheme from './baseTheme';
+
 const corp = tokens => {
   const colors = {
-    primary: tokens.colors.newYork.climbing,
-    secondary: tokens.colors.newYork.crossfit,
+    primary: tokens.colors.newYork[1],
+    secondary: tokens.colors.newYork[0],
   };
 
-  const components = {
-    button: {
-      backgroundColor: colors.primary,
-      shadow: tokens.elevate(colors.secondary, 0),
-      hover: {
-        shadow: tokens.elevate(colors.secondary, 1),
-      },
-      active: {
-        shadow: tokens.elevate(colors.secondary, 0),
-      },
-    },
-  };
-
-  return { colors, components };
+  return { colors, ...baseTheme(colors) };
 };
 
 export default corp;
