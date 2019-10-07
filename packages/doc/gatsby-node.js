@@ -1,6 +1,5 @@
-const componentWithMDXScope = require("gatsby-plugin-mdx/component-with-mdx-scope");
-const path = require("path");
-const startCase = require("lodash.startcase");
+const path = require('path');
+const startCase = require('lodash.startcase');
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
@@ -9,7 +8,7 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allMdx {
+            allMdx(filter: { fields: { slug: { regex: "/^//" } } }) {
               edges {
                 node {
                   fields {
@@ -23,7 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
               }
             }
           }
-        `
+        `,
       ).then(result => {
         if (result.errors) {
           console.log(result.errors); // eslint-disable-line no-console
@@ -33,30 +32,15 @@ exports.createPages = ({ graphql, actions }) => {
         // Create blog posts pages.
         result.data.allMdx.edges.forEach(({ node }) => {
           createPage({
-            path: node.fields.slug ? node.fields.slug : "/",
-            component: path.resolve("./src/templates/docs.js"),
+            path: node.fields.slug ? node.fields.slug : '/',
+            component: path.resolve('./src/templates/docs.jsx'),
             context: {
-              id: node.fields.id
-            }
+              id: node.fields.id,
+            },
           });
         });
-      })
+      }),
     );
-  });
-};
-
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-    resolve: {
-      modules: [path.resolve(__dirname, "src"), "node_modules"],
-      alias: { $components: path.resolve(__dirname, "src/components") }
-    }
-  });
-};
-
-exports.onCreateBabelConfig = ({ actions }) => {
-  actions.setBabelPlugin({
-    name: "@babel/plugin-proposal-export-default-from"
   });
 };
 
@@ -65,28 +49,25 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
   if (node.internal.type === `Mdx`) {
     const parent = getNode(node.parent);
-    let value = parent.relativePath.replace(parent.ext, "");
-
-    if (value === "index") {
-      value = "";
-    }
+    const value =
+      parent.relativePath && parent.relativePath.replace(parent.ext, '');
 
     createNodeField({
       name: `slug`,
       node,
-      value: `/${value}`
+      value: `/${value && value.replace('index', '')}`,
     });
 
     createNodeField({
-      name: "id",
+      name: 'id',
       node,
-      value: node.id
+      value: node.id,
     });
 
     createNodeField({
-      name: "title",
+      name: 'title',
       node,
-      value: node.frontmatter.title || startCase(parent.name)
+      value: node.frontmatter.title || startCase(parent.name),
     });
   }
 };
