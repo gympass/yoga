@@ -10,12 +10,12 @@ const MDXRuntimeTest = props => {
   const {
     allMdx: { edges },
     mdx,
+    site,
   } = data;
-
   const { items } = handleItems(edges);
   const nav = handleNavigation(edges, items);
 
-  return <Layout nav={nav} doc={mdx} />;
+  return <Layout data={site} nav={nav} doc={mdx} />;
 };
 
 export const pageQuery = graphql`
@@ -23,6 +23,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        favicon
       }
     }
     mdx(fields: { id: { eq: $id } }) {

@@ -6,7 +6,7 @@ const plugins = [
     resolve: 'gatsby-plugin-react-svg',
     options: {
       rule: {
-        include: /images/, // See below to configure properly
+        include: /images/,
       },
     },
   },
@@ -15,7 +15,7 @@ const plugins = [
   {
     resolve: `gatsby-plugin-layout`,
     options: {
-      component: require.resolve(`./src/templates/Docs.jsx`),
+      component: require.resolve(`./src/templates/docs.jsx`),
     },
   },
   'gatsby-plugin-styled-components',
@@ -74,6 +74,7 @@ module.exports = {
     github: {
       componentsPath: config.siteMetadata.github.componentsPath,
     },
+    favicon: config.siteMetadata.favicon,
   },
   plugins,
 };
