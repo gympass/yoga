@@ -1,7 +1,7 @@
 {
   "name": "@gympass/doc",
   "private": true,
-  "description": "",
+  "description": "Gympass Design System components documentation",
   "version": "0.0.1",
   "license": "MIT",
   "dependencies": {
