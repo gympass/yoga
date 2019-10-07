@@ -6,7 +6,7 @@
  */
 
 /**
- * A font Weight
+ * A font weight
  * @typedef FontWeight
  *
  * @type {Object}

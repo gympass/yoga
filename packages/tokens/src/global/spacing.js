@@ -24,6 +24,7 @@
 
 /**
  * @type {Spacing}
+ * @default
  */
 const spacing = [0, 4, 8, 12, 16, 20, 24, 40, 56, 72];
 [

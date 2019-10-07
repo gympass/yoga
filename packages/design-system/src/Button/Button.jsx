@@ -48,7 +48,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  text: 'alo',
+  text: 'Gympass',
   children: undefined,
 };
 

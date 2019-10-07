@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef, Fragment } from 'react';
+import { string } from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import HeadingsQuery from './HeadingsQuery';
@@ -48,6 +49,11 @@ const getLinks = ({ url, title }) => (
     <Link to={window.location.pathname + url}>{title}</Link>
   </AnchorItem>
 );
+
+getLinks.propTypes = {
+  url: string.isRequired,
+  title: string.isRequired,
+};
 
 const getHeadings = edges => {
   const [

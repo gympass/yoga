@@ -6,10 +6,21 @@ const DescriptionQuery = () =>
       allComponentMetadata {
         edges {
           node {
+            id
             displayName
             description {
               text
             }
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          title
+          description
+          siteUrl
+          github {
+            componentsPath
           }
         }
       }
