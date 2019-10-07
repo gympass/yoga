@@ -1,10 +1,8 @@
 import { merge } from '../utils';
 import tokens from '../global';
 
-const button = {
-  backgroundColor: tokens.colors.milan[1],
-};
+const negative = ['#DEF8E9', '#1E854A'];
+const positive = ['#FCEAE9', '#CB3530'];
+const colors = { positive, negative };
 
-const components = { button };
-
-export default merge(tokens, { components });
+export default merge(tokens, { colors });

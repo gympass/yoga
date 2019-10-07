@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 
@@ -36,7 +37,6 @@ const ButtonStyle = styled.button`
 
 /** This is a Buttton description */
 const Button = ({ text, children, theme }) => {
-  console.log(theme.components.button.backgroundColor);
   return <ButtonStyle text={text}> {children} </ButtonStyle>;
 };
 
