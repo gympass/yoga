@@ -9,13 +9,13 @@ const MDXRuntimeTest = props => {
   const { data } = props;
   const {
     allMdx: { edges },
-    mdx: { body },
+    mdx,
   } = data;
 
   const { items } = handleItems(edges);
   const nav = handleNavigation(edges, items);
 
-  return <Layout nav={nav} doc={body} />;
+  return <Layout nav={nav} doc={mdx} />;
 };
 
 export const pageQuery = graphql`
@@ -58,7 +58,11 @@ export const pageQuery = graphql`
 
 MDXRuntimeTest.propTypes = {
   data: shape({}).isRequired,
-  edges: string.isRequired,
+  edges: string,
+};
+
+MDXRuntimeTest.defaultProps = {
+  edges: undefined,
 };
 
 export default MDXRuntimeTest;
