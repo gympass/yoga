@@ -72,12 +72,19 @@ const Grid = styled.div`
   height: 100%;
 `;
 
-const Layout = ({ nav, doc: { body, frontmatter } }) => {
+const Layout = ({
+  data: {
+    siteMetadata: { title, favicon },
+  },
+  nav,
+  doc: { body, frontmatter },
+}) => {
   const { metaTitle, metaDescription } = frontmatter;
   return (
     <>
       <Helmet>
-        {metaTitle ? <title>{metaTitle}</title> : null}
+        <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
+        {metaTitle ? <title>{metaTitle}</title> : <title>{title}</title>}
         {metaTitle ? <meta name="title" content={metaTitle} /> : null}
         {metaDescription ? (
           <meta name="description" content={metaDescription} />
