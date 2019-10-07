@@ -82,7 +82,7 @@ const Dropdown = ({ label, value, options, onSelect }) => {
     <Wrapper>
       <Selector onClick={() => toggleOptions()}>
         <Label>{label}</Label>
-        <span>{value}</span>
+        <Label>{value}</Label>
         <ArrowDropdown open={isOpen} />
       </Selector>
       {isOpen && (
@@ -100,14 +100,13 @@ const Dropdown = ({ label, value, options, onSelect }) => {
 };
 
 Dropdown.propTypes = {
+  label: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   options: PropTypes.arrayOf(PropTypes.any).isRequired,
   onSelect: PropTypes.func,
 };
 
 Dropdown.defaultProps = {
-  value: '',
-  options: [],
   onSelect: () => {},
 };
 
