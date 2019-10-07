@@ -40,6 +40,18 @@
         "doc",
         "review"
       ]
+    },
+    {
+      "login": "alan-oliv",
+      "name": "Alan Oliveira",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4368481?v=4",
+      "profile": "https://twitter.com/oalanoliv",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
