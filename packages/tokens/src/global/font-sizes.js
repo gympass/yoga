@@ -6,7 +6,7 @@
  */
 
 /**
- * A Font Size
+ * A font size
  * @typedef FontSize
  *
  * @type {Number[]}

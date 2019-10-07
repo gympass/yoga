@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import { arrayOf, object, shape } from 'prop-types';
+
 import styled, { createGlobalStyle } from 'styled-components';
+import Helmet from 'react-helmet';
 
 import { ThemeProvider, themes } from '@gympass/design-system';
 import * as tokens from '@gympass/tokens';
 
-import { Navigation, Documentation, Header, Summary, Dropdown } from '../';
+import { Navigation, Documentation, Header, Summary, Dropdown } from '..';
 
 const GlobalStyle = createGlobalStyle`
   #gatsby-focus-wrapper, #___gatsby {
@@ -74,7 +76,9 @@ const Grid = styled.div`
   height: 100%;
 `;
 
-const Layout = ({ nav, doc }) => {
+const Layout = ({ nav, doc: { body, frontmatter } }) => {
+  const { metaTitle, metaDescription } = frontmatter;
+
   const allThemes = Object.keys(themes);
   const allLocales = Object.keys(tokens);
 
@@ -83,6 +87,23 @@ const Layout = ({ nav, doc }) => {
 
   return (
     <ThemeProvider theme={theme} locale={locale}>
+      <Helmet>
+        {metaTitle ? <title>{metaTitle}</title> : null}
+        {metaTitle ? <meta name="title" content={metaTitle} /> : null}
+        {metaDescription ? (
+          <meta name="description" content={metaDescription} />
+        ) : null}
+        {metaTitle ? <meta property="og:title" content={metaTitle} /> : null}
+        {metaDescription ? (
+          <meta property="og:description" content={metaDescription} />
+        ) : null}
+        {metaTitle ? (
+          <meta property="twitter:title" content={metaTitle} />
+        ) : null}
+        {metaDescription ? (
+          <meta property="twitter:description" content={metaDescription} />
+        ) : null}
+      </Helmet>
       <GlobalStyle />
       <Grid>
         <Header>
@@ -90,17 +111,17 @@ const Layout = ({ nav, doc }) => {
             label="Theme:"
             value={theme}
             options={allThemes}
-            onSelect={theme => setTheme(theme)}
+            onSelect={tm => setTheme(tm)}
           />
           <Dropdown
             label="Locale:"
             value={locale}
             options={allLocales}
-            onSelect={locale => setLocale(locale)}
+            onSelect={lc => setLocale(lc)}
           />
         </Header>
         <Navigation items={nav} />
-        <Documentation mdx={doc} />
+        <Documentation mdx={body} />
         <Summary>Alou</Summary>
       </Grid>
     </ThemeProvider>
@@ -108,7 +129,8 @@ const Layout = ({ nav, doc }) => {
 };
 
 Layout.propTypes = {
-  children: PropTypes.node,
+  nav: arrayOf(object).isRequired,
+  doc: shape({}).isRequired,
 };
 
 export default Layout;

@@ -17,6 +17,7 @@
 
 /**
  * @type {Border}
+ * @default
  */
 const border = [0, 1, 2];
 [border.zero, border.small, border.medium] = border;

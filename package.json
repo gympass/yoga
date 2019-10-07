@@ -6,11 +6,12 @@
     "dev:web": "lerna run dev --scope=@gympass/doc --stream",
     "dev:native:android": "lerna run android --scope=@gympass/labnative --stream",
     "dev:native:ios": "lerna run ios --scope=@gympass/labnative --stream",
-    "lint": "eslint",
+    "lint": "eslint --ext js,jsx",
     "lint:design-system": "yarn lint packages/design-system",
+    "lint:doc": "yarn lint packages/doc",
     "lint:labnative": "yarn lint packages/labnative",
     "lint:tokens": "yarn lint packages/tokens",
-    "lint:all": "yarn lint:design-system && yarn lint:labnative && yarn lint:tokens"
+    "lint:all": "yarn lint:design-system && yarn lint:doc && yarn lint:labnative && yarn lint:tokens"
   },
   "private": true,
   "devDependencies": {

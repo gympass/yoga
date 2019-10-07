@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import { arrayOf, object } from 'prop-types';
 
 import createTree from './tree';
 
@@ -8,6 +9,10 @@ const Wrapper = styled.div`
   height: 100%;
   grid-area: Navigation;
   box-shadow: inset -1px 0px 0px #f6f6f6;
+
+  span {
+    color: #999;
+  }
 `;
 
 const List = styled.ul`
@@ -27,6 +32,14 @@ const AnchorLink = styled(Link)`
   margin: 10px 0;
   border-right: 1px solid transparent;
   padding: 10px 100px 10px 45px;
+
+  ${({ as }) =>
+    !as &&
+    `
+    &:hover {
+      color: #f46152;
+    }
+  `}
 `;
 
 const ListItem = styled.li`
@@ -43,24 +56,31 @@ const ListItem = styled.li`
 `;
 
 const getHtml = (tree, level = 0) =>
-  Object.values(tree).map(({ title, url, ...childs }) => (
-    <ListItem key={url} active={window.location.pathname === url}>
-      <AnchorLink to={url} level={level}>
-        {title}
-      </AnchorLink>
-      {Boolean(Object.keys(childs).length) && (
-        <List level={level}>{getHtml(childs, level + 1)}</List>
-      )}
-    </ListItem>
-  ));
+  Object.values(tree).map(({ title, url, ...childs }) => {
+    const hasChild = Boolean(Object.keys(childs).length);
+
+    return (
+      <ListItem key={url} active={window.location.pathname === url}>
+        <AnchorLink to={url} level={level} as={hasChild && 'span'}>
+          {title}
+        </AnchorLink>
+        {hasChild && <List level={level}>{getHtml(childs, level + 1)}</List>}
+      </ListItem>
+    );
+  });
 
 const Navigation = ({ items }) => {
   const tree = createTree(items);
+
   return (
     <Wrapper>
       <List level={0}>{getHtml(tree)}</List>
     </Wrapper>
   );
+};
+
+Navigation.propTypes = {
+  items: arrayOf(object).isRequired,
 };
 
 export default Navigation;

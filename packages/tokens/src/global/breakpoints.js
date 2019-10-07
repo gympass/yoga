@@ -6,7 +6,7 @@
  */
 
 /**
- * A Breakpoint
+ * A breakpoint
  * @typedef Breakpoint
  *
  * @type {Object}

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { string, shape } from 'prop-types';
 import MetaDataQuery from './MetaDataQuery';
+import { InlineCode } from '..';
 
 const BORDER_COLOR = '#e2dddd';
 
@@ -41,15 +43,6 @@ const StyledTable = styled.table`
         &:last-child {
           color: #e3116c;
         }
-
-        &:nth-child(4) {
-          code {
-            background-color: #f6f8fa;
-            border: 1px solid #f2f2f2;
-            border-radius: 3px;
-            padding: 5px;
-          }
-        }
       }
     }
   }
@@ -57,7 +50,7 @@ const StyledTable = styled.table`
 
 const Table = ({
   data: {
-    node: { props },
+    node: { props: properties },
   },
 }) => (
   <TableWrapper>
@@ -72,7 +65,7 @@ const Table = ({
         </tr>
       </thead>
       <tbody>
-        {props.map(
+        {properties.map(
           ({
             name,
             description: { text: description },
@@ -85,7 +78,7 @@ const Table = ({
               <td>{description}</td>
               <td>{type}</td>
               <td>
-                <code>{defaultValue.replace(/'/g, '')}</code>
+                <InlineCode>{defaultValue.replace(/'/g, '')}</InlineCode>
               </td>
               <td>{String(isRequired)}</td>
             </tr>
@@ -96,6 +89,10 @@ const Table = ({
   </TableWrapper>
 );
 
+Table.propTypes = {
+  data: shape({}).isRequired,
+};
+
 const PropsTable = ({ component }) => {
   const {
     allComponentMetadata: { edges },
@@ -105,6 +102,10 @@ const PropsTable = ({ component }) => {
     ({ node }) => node.displayName === component,
   )[0];
   return <Table data={componentProps} />;
+};
+
+PropsTable.propTypes = {
+  component: string.isRequired,
 };
 
 export default PropsTable;

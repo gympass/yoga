@@ -2,14 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { MDXContext } from '@mdx-js/react';
+import { node, string } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
-import duotoneLight from 'prism-react-renderer/themes/github';
+import githubTheme from 'prism-react-renderer/themes/github';
 
 const BORDER_COLOR = '#e2dddd';
 
 const defaultPropsWithTheme = {
   ...defaultProps,
-  theme: duotoneLight,
+  theme: githubTheme,
 };
 
 const StyledLiveError = styled(LiveError)`
@@ -55,13 +56,14 @@ const Usage = styled.div`
 
 const CodeBlock = ({ children, reactLive }) => {
   const normalizedCodeExample = children.trim();
+
   return reactLive ? (
     <MDXContext.Consumer>
       {scope => (
         <LiveProvider
           code={normalizedCodeExample}
           scope={scope}
-          theme={duotoneLight}
+          theme={githubTheme}
         >
           <Preview>
             <Component>
@@ -106,6 +108,15 @@ const CodeBlock = ({ children, reactLive }) => {
       )}
     </Highlight>
   );
+};
+
+CodeBlock.propTypes = {
+  children: node.isRequired,
+  reactLive: string,
+};
+
+CodeBlock.defaultProps = {
+  reactLive: undefined,
 };
 
 export default CodeBlock;

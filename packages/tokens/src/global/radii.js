@@ -17,6 +17,7 @@
 
 /**
  * @type {Radii}
+ * @default
  */
 const radii = [0, 8, 9999];
 [radii.sharp, radii.rounded, radii.circle] = radii;
