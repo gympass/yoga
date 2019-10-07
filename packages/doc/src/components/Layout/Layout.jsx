@@ -1,6 +1,7 @@
 import React from 'react';
-import { string, arrayOf, object } from 'prop-types';
+import { arrayOf, object, shape } from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
+import Helmet from 'react-helmet';
 
 import { Navigation, Documentation, Header, Summary } from '..';
 
@@ -71,21 +72,41 @@ const Grid = styled.div`
   height: 100%;
 `;
 
-const Layout = ({ nav, doc }) => (
-  <>
-    <GlobalStyle />
-    <Grid>
-      <Header />
-      <Navigation items={nav} />
-      <Documentation mdx={doc} />
-      <Summary>Alou</Summary>
-    </Grid>
-  </>
-);
+const Layout = ({ nav, doc: { body, frontmatter } }) => {
+  const { metaTitle, metaDescription } = frontmatter;
+  return (
+    <>
+      <Helmet>
+        {metaTitle ? <title>{metaTitle}</title> : null}
+        {metaTitle ? <meta name="title" content={metaTitle} /> : null}
+        {metaDescription ? (
+          <meta name="description" content={metaDescription} />
+        ) : null}
+        {metaTitle ? <meta property="og:title" content={metaTitle} /> : null}
+        {metaDescription ? (
+          <meta property="og:description" content={metaDescription} />
+        ) : null}
+        {metaTitle ? (
+          <meta property="twitter:title" content={metaTitle} />
+        ) : null}
+        {metaDescription ? (
+          <meta property="twitter:description" content={metaDescription} />
+        ) : null}
+      </Helmet>
+      <GlobalStyle />
+      <Grid>
+        <Header />
+        <Navigation items={nav} />
+        <Documentation mdx={body} />
+        <Summary>Alou</Summary>
+      </Grid>
+    </>
+  );
+};
 
 Layout.propTypes = {
   nav: arrayOf(object).isRequired,
-  doc: string.isRequired,
+  doc: shape({}).isRequired,
 };
 
 export default Layout;
