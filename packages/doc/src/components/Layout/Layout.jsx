@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 
-import { ThemeProvider } from '@gympass/design-system';
+import { ThemeProvider, themes } from '@gympass/design-system';
 import * as tokens from '@gympass/tokens';
 
 import { Navigation, Documentation, Header, Summary, Dropdown } from '../';
@@ -75,15 +75,11 @@ const Grid = styled.div`
 `;
 
 const Layout = ({ nav, doc }) => {
-  const themes = ['gyms'];
-
   const allThemes = Object.keys(themes);
   const allLocales = Object.keys(tokens);
 
-  const [theme, setTheme] = useState(allThemes[0]);
-  const [locale, setLocale] = useState(allLocales[0]);
-
-  console.log(ThemeProvider);
+  const [theme, setTheme] = useState(allThemes.find(tm => tm === 'default'));
+  const [locale, setLocale] = useState(allLocales.find(lc => lc === 'default'));
 
   return (
     <ThemeProvider theme={theme} locale={locale}>

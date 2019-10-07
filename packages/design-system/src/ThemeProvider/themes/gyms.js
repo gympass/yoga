@@ -1,26 +1,12 @@
+import baseTheme from './baseTheme';
+
 const gyms = tokens => {
   const colors = {
-    primary: tokens.colors.milan.climbing,
-    secondary: tokens.colors.milan.crossfit,
+    primary: tokens.colors.milan[3],
+    secondary: tokens.colors.milan[2],
   };
 
-  const components = {
-    button: {
-      backgroundColor: colors.primary,
-      shadow: tokens.elevate(colors.secondary, 0),
-      hover: {
-        shadow: tokens.elevate(colors.secondary, 1),
-      },
-      active: {
-        shadow: tokens.elevate(colors.secondary, 0),
-      },
-    },
-  };
-
-  return {
-    colors,
-    components,
-  };
+  return { colors, ...baseTheme(colors) };
 };
 
 export default gyms;

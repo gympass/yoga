@@ -23,7 +23,7 @@ const Selector = styled.div`
 const ArrowDropdown = styled(Arrow)`
   width: 10px;
   transition: 200ms all ease-out;
-  ${({ isOpen }) => isOpen && `transform: rotate(180deg);`}
+  ${({ open }) => open && `transform: rotate(180deg);`}
 `;
 
 const Label = styled.span`
@@ -82,8 +82,8 @@ const Dropdown = ({ label, value, options, onSelect }) => {
     <Wrapper>
       <Selector onClick={() => toggleOptions()}>
         <Label>{label}</Label>
-        <Label>{value}</Label>
-        <ArrowDropdown isOpen={isOpen} />
+        <span>{value}</span>
+        <ArrowDropdown open={isOpen} />
       </Selector>
       {isOpen && (
         <OptionsList>

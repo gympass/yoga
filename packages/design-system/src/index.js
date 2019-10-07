@@ -1,4 +1,4 @@
-import ThemeProvider from './ThemeProvider';
+import ThemeProvider, { themes } from './ThemeProvider';
 import Button from './Button';
 
-export { ThemeProvider, Button };
+export { ThemeProvider, themes, Button };
