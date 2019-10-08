@@ -1,6 +1,8 @@
 import React from 'react';
+import { node } from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+
 import GympassLogo from '../../images/gympass-logo.svg';
 
 const Wrapper = styled.div`
@@ -8,14 +10,32 @@ const Wrapper = styled.div`
   grid-area: Header;
   margin-bottom: 40px;
   padding: 24px 45px 15px;
+  display: flex;
+  justify-content: space-between;
 `;
 
-const Header = () => (
+const Actions = styled.div`
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+`;
+
+const Header = ({ children }) => (
   <Wrapper>
     <Link to="/">
       <GympassLogo />
     </Link>
+    <Actions>{children}</Actions>
   </Wrapper>
 );
+
+Header.protoTypes = {
+  children: node,
+};
+
+Header.defaultProps = {
+  children: undefined,
+};
 
 export default Header;
