@@ -6,7 +6,6 @@
     "start": "react-native start",
     "ios": "react-native run-ios --simulator \"iPhone X\"",
     "android": "react-native run-android",
-    "storybook": "(adb reverse tcp:7007 tcp:7007 || true) && start-storybook",
     "test": "jest",
     "lint": "eslint ."
   },
