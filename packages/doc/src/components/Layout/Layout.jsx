@@ -76,7 +76,13 @@ const Grid = styled.div`
   height: 100%;
 `;
 
-const Layout = ({ nav, doc: { body, frontmatter } }) => {
+const Layout = ({
+  data: {
+    siteMetadata: { title, favicon },
+  },
+  nav,
+  doc: { body, frontmatter },
+}) => {
   const { metaTitle, metaDescription } = frontmatter;
 
   const allThemes = Object.keys(themes);
@@ -88,7 +94,8 @@ const Layout = ({ nav, doc: { body, frontmatter } }) => {
   return (
     <ThemeProvider theme={theme} locale={locale}>
       <Helmet>
-        {metaTitle ? <title>{metaTitle}</title> : null}
+        <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
+        {metaTitle ? <title>{metaTitle}</title> : <title>{title}</title>}
         {metaTitle ? <meta name="title" content={metaTitle} /> : null}
         {metaDescription ? (
           <meta name="description" content={metaDescription} />
