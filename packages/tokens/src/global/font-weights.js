@@ -10,17 +10,17 @@
  * @typedef FontWeight
  *
  * @type {Object}
- * @property {number} regular regular font weight
- * @property {number} semibold semibold font weight
- * @property {number} bold bold font weight
+ * @property {number} light font weight 300
+ * @property {number} regular font weight 400
+ * @property {number} bold font weight 700
  */
 
 /**
  * @type {FontWeight}
  * @default
  */
-const fontWeights = [400, 600, 700];
+const fontWeights = [300, 400, 700];
 
-[fontWeights.regular, fontWeights.semibold, fontWeights.bold] = fontWeights;
+[fontWeights.light, fontWeights.regular, fontWeights.bold] = fontWeights;
 
 export default fontWeights;

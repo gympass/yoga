@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { arrayOf, object, shape } from 'prop-types';
+
 import styled, { createGlobalStyle } from 'styled-components';
 import Helmet from 'react-helmet';
 
-import { Navigation, Documentation, Header, Summary } from '..';
+import { ThemeProvider, themes } from '@gympass/design-system';
+import * as tokens from '@gympass/tokens';
+
+import { Navigation, Documentation, Header, Summary, Dropdown } from '..';
 
 const GlobalStyle = createGlobalStyle`
   #gatsby-focus-wrapper, #___gatsby {
@@ -80,8 +84,15 @@ const Layout = ({
   doc: { body, frontmatter },
 }) => {
   const { metaTitle, metaDescription } = frontmatter;
+
+  const allThemes = Object.keys(themes);
+  const allLocales = Object.keys(tokens);
+
+  const [theme, setTheme] = useState(allThemes.find(tm => tm === 'default'));
+  const [locale, setLocale] = useState(allLocales.find(lc => lc === 'default'));
+
   return (
-    <>
+    <ThemeProvider theme={theme} locale={locale}>
       <Helmet>
         <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
         {metaTitle ? <title>{metaTitle}</title> : <title>{title}</title>}
@@ -102,12 +113,25 @@ const Layout = ({
       </Helmet>
       <GlobalStyle />
       <Grid>
-        <Header />
+        <Header>
+          <Dropdown
+            label="Theme:"
+            value={theme}
+            options={allThemes}
+            onSelect={tm => setTheme(tm)}
+          />
+          <Dropdown
+            label="Locale:"
+            value={locale}
+            options={allLocales}
+            onSelect={lc => setLocale(lc)}
+          />
+        </Header>
         <Navigation items={nav} />
         <Documentation mdx={body} />
         <Summary>Alou</Summary>
       </Grid>
-    </>
+    </ThemeProvider>
   );
 };
 

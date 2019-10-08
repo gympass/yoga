@@ -1,2 +1,4 @@
-/* eslint-disable */
-export { default as Button } from './Button';
+import ThemeProvider, { themes } from './ThemeProvider';
+import Button from './Button';
+
+export { ThemeProvider, themes, Button };

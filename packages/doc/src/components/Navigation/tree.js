@@ -1,4 +1,4 @@
-import merge from '@gympass/common';
+import { merge } from '@gympass/common';
 
 const createObjectNesting = (routes, { title, url }) => {
   const newObj = {};
