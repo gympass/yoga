@@ -1,6 +1,8 @@
 import React from 'react';
+import { node } from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+
 import GympassLogo from '../../images/gympass-logo.svg';
 
 const Wrapper = styled.div`
@@ -27,5 +29,13 @@ const Header = ({ children }) => (
     <Actions>{children}</Actions>
   </Wrapper>
 );
+
+Header.protoTypes = {
+  children: node,
+};
+
+Header.defaultProps = {
+  children: undefined,
+};
 
 export default Header;
