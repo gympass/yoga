@@ -10,10 +10,9 @@ const Wrapper = styled.div`
 
 const Selector = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
