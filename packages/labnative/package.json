@@ -6,11 +6,13 @@
     "start": "react-native start",
     "ios": "react-native run-ios --simulator \"iPhone X\"",
     "android": "react-native run-android",
+    "storybook": "(adb reverse tcp:7007 tcp:7007 || true) && start-storybook",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
     "@gympass/design-system": "*",
+    "@storybook/react-native": "^5.2.3",
     "react": "^16.9.0",
     "react-native": "0.60.5",
     "styled-components": "^4.4.0"
