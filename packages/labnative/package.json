@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@gympass/design-system": "*",
+    "@storybook/react-native": "^5.2.3",
     "react": "^16.9.0",
     "react-native": "0.60.5",
     "styled-components": "^4.4.0"
