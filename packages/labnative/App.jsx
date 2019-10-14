@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Picker, ScrollView } from 'react-native';
+import { StyleSheet, View, Picker, Platform } from 'react-native';
 import { createAppContainer } from 'react-navigation';
-import {
-  createDrawerNavigator,
-  DrawerNavigatorItems,
-} from 'react-navigation-drawer';
-
+import { createDrawerNavigator } from 'react-navigation-drawer';
 import { createStackNavigator } from 'react-navigation-stack';
-
-import * as Pages from './pages';
 import { ThemeProvider } from '@gympass/design-system';
-import NavigationDrawer from './components/NavigationDrawer';
 
-import { ThemeConsumer } from 'styled-components';
+import NavigationDrawer from './components/NavigationDrawer';
+import * as Pages from './pages';
 
 const styles = StyleSheet.create({
   MainContainer: {
@@ -26,15 +20,21 @@ const CenteredView = props => {
   const [themed, setThemed] = useState('endUser');
   return (
     <ThemeProvider theme={themed}>
-      <Picker
-        selectedValue={themed}
-        style={{ height: 50, width: '100%' }}
-        onValueChange={theme => setThemed(theme)}
+      <View
+        style={{
+          height: Platform.OS === 'ios' ? 200 : 20,
+        }}
       >
-        <Picker.Item label="End User" value="endUser" />
-        <Picker.Item label="Corp" value="corp" />
-        <Picker.Item label="Gyms" value="gyms" />
-      </Picker>
+        <Picker
+          selectedValue={themed}
+          style={{ width: '100%' }}
+          onValueChange={theme => setThemed(theme)}
+        >
+          <Picker.Item label="End User" value="endUser" />
+          <Picker.Item label="Corp" value="corp" />
+          <Picker.Item label="Gyms" value="gyms" />
+        </Picker>
+      </View>
       <View style={styles.MainContainer} {...props} />
     </ThemeProvider>
   );
@@ -45,8 +45,8 @@ const drawerOptions = {};
 Object.entries(Pages).map(([name, Page]) => {
   const navigator = createStackNavigator({
     [name]: {
-      screen: () => (
-        <CenteredView>
+      screen: props => (
+        <CenteredView {...props}>
           <Page />
         </CenteredView>
       ),
@@ -66,18 +66,9 @@ Object.entries(Pages).map(([name, Page]) => {
 });
 
 const AppPages = createDrawerNavigator(drawerOptions, {
-  contentComponent: props => (
-    <ThemeProvider>
-      <ThemeConsumer>
-        {theme => (
-          <DrawerNavigatorItems
-            {...props}
-            activeTintColor={theme.colors.primary}
-          />
-        )}
-      </ThemeConsumer>
-    </ThemeProvider>
-  ),
+  contentOptions: {
+    activeTintColor: 'black',
+  },
 });
 
 export default createAppContainer(AppPages);
