@@ -1,28 +1,69 @@
-import React from 'react';
-
-import styled, { withTheme } from 'styled-components';
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { node, func } from 'prop-types';
 
 const Label = styled.Text`
-  color: #fff;
-  font-weight: 700;
-  align-self: center;
-  padding: 10px;
+  text-align: center;
+  ${({
+    theme: {
+      components: {
+        button: {
+          font: { size, weight, color },
+        },
+      },
+    },
+  }) => `
+    font-size: ${size};
+    font-weight: ${weight};
+    color: ${color};
+  `}
 `;
 
 const ButtonContainer = styled.TouchableHighlight`
-  background-color: ${({ theme }) => theme.components.button.backgroundColor};
-  width: 80%;
-  margin-top: 5px;
-  border-color: ${({ theme }) => theme.components.button.backgroundColor};
-  border-width: 2px;
+  ${({
+    pressed,
+    theme: {
+      components: {
+        button: {
+          backgroundColor,
+          border: { width, radius },
+          padding: { top, right, bottom, left },
+        },
+      },
+    },
+  }) => `
+    background-color: ${pressed ? 'green' : backgroundColor};
+    padding: ${top}px ${right}px ${bottom}px ${left}px;
+    border: ${width};
+    border-radius: ${radius}px;
+  `}
 `;
 
-const Button = props => {
+function Button({ children, onPress, ...rest }) {
+  const [pressed, setPressed] = useState(false);
+
   return (
-    <ButtonContainer onPress={props.onPress}>
-      <Label>{props.theme.components.button.backgroundColor}</Label>
+    <ButtonContainer
+      {...rest}
+      pressed={pressed}
+      onPress={e => {
+        setPressed(p => !p);
+        onPress(e);
+      }}
+    >
+      <Label>{children}</Label>
     </ButtonContainer>
   );
+}
+
+Button.propTypes = {
+  children: node,
+  onPress: func,
 };
 
-export default withTheme(Button);
+Button.defaultProps = {
+  children: 'Gympass',
+  onPress: () => {},
+};
+
+export default Button;
