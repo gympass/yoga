@@ -1,69 +1,140 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { node, func } from 'prop-types';
+import { node, func, bool } from 'prop-types';
+import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 const Label = styled.Text`
   text-align: center;
   ${({
+    disabled,
+    pressed,
+    outline,
+    text,
     theme: {
       components: {
         button: {
-          font: { size, weight, color },
+          font: { size, weight },
+          types,
         },
       },
     },
-  }) => `
-    font-size: ${size};
-    font-weight: ${weight};
-    color: ${color};
-  `}
+  }) => {
+    const currentType = outline ? 'outline' : text ? 'text' : 'contained';
+    const currentState = disabled
+      ? 'disabled'
+      : pressed
+      ? 'pressed'
+      : 'enabled';
+    const { textColor } = types[currentType];
+
+    return `
+      font-size: ${size};
+      font-weight: ${weight};
+      color: ${textColor[currentState]};
+    `;
+  }}
 `;
 
-const ButtonContainer = styled.TouchableHighlight`
+const ButtonContainer = styled.View`
   ${({
     pressed,
+    disabled,
+    full,
+    small,
+    text,
+    outline,
     theme: {
       components: {
         button: {
-          backgroundColor,
-          border: { width, radius },
-          padding: { top, right, bottom, left },
+          padding: { left: paddingLeft, right: paddingRight },
+          height: { normal: normalHeight, small: smallHeight },
+          types,
         },
       },
     },
-  }) => `
-    background-color: ${pressed ? 'green' : backgroundColor};
-    padding: ${top}px ${right}px ${bottom}px ${left}px;
-    border: ${width};
-    border-radius: ${radius}px;
-  `}
+  }) => {
+    const currentType = outline ? 'outline' : text ? 'text' : 'contained';
+    const currentState = disabled
+      ? 'disabled'
+      : pressed
+      ? 'pressed'
+      : 'enabled';
+    const {
+      border: { width: borderWidth, radius },
+      backgroundColor,
+      textColor,
+    } = types[currentType];
+
+    return `
+      align-self: center;
+      background-color: ${backgroundColor[currentState]};
+      border: ${
+        borderWidth === 'none'
+          ? 'none'
+          : `${borderWidth}px solid ${textColor[currentState]}`
+      };
+      border-radius: ${radius}px;
+      padding-left: ${paddingLeft}px;
+      padding-right: ${paddingRight}px;
+      height: ${small ? smallHeight : normalHeight};
+      justify-content: center;
+      ${full ? 'width: 100%;' : ''}
+    `;
+  }}
 `;
 
-function Button({ children, onPress, ...rest }) {
+function Button({
+  children,
+  onPress,
+  full,
+  disabled,
+  small,
+  outline,
+  text,
+  ...rest
+}) {
   const [pressed, setPressed] = useState(false);
 
   return (
-    <ButtonContainer
-      {...rest}
-      pressed={pressed}
-      onPress={e => {
-        setPressed(p => !p);
-        onPress(e);
-      }}
+    <TouchableWithoutFeedback
+      onPressIn={() => setPressed(true)}
+      onPressOut={() => setPressed(false)}
+      onPress={onPress}
     >
-      <Label>{children}</Label>
-    </ButtonContainer>
+      <ButtonContainer
+        {...rest}
+        full={full}
+        pressed={pressed}
+        disabled={disabled}
+        small={small}
+        outline={outline}
+        text={text}
+      >
+        <Label
+          disabled={disabled}
+          pressed={pressed}
+          outline={outline}
+          text={text}
+        >
+          {children}
+        </Label>
+      </ButtonContainer>
+    </TouchableWithoutFeedback>
   );
 }
 
 Button.propTypes = {
   children: node,
   onPress: func,
+  full: bool,
+  disabled: bool,
 };
 
 Button.defaultProps = {
   children: 'Gympass',
   onPress: () => {},
+  full: false,
+  disabled: false,
 };
 
 export default Button;
