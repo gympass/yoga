@@ -1,55 +1,116 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled, { withTheme } from 'styled-components';
+import { node, func, bool } from 'prop-types';
+import styled from 'styled-components';
 
-/** This is a Buttton description */
-const ButtonStyle = styled.button`
-  display: inline-flex;
-  align-items: center;
-  height: 48px;
-  padding: 0 40px;
-  border-radius: 24px;
-  border: none;
-  color: #fff;
-  font-size: 0.875rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 100ms linear;
-  outline: none;
+const StyledButton = styled.button`
+  ${({
+    full,
+    small,
+    disabled,
+    outline,
+    text,
+    theme: {
+      components: {
+        button: {
+          padding: { left: paddingLeft, right: paddingRight },
+          height: { small: smallHeight, normal: normalHeight },
+          font: { size, weight },
+          hover: { shadow },
+          border: { width: borderWidth, radius },
+          types,
+        },
+      },
+    },
+  }) => {
+    const currentType = outline ? 'outline' : text ? 'text' : 'contained';
+    const { backgroundColor, textColor } = types[currentType];
+    const hasHover = currentType === 'outline' || 'text';
+    const hasBoxShadow = currentType === 'contained' && !disabled;
 
-  background-color: ${({ theme }) => theme.components.button.backgroundColor};
-  box-shadow: ${({ theme }) => theme.components.button.shadow};
+    return `
+      background-color: ${backgroundColor.enabled};
+      border: ${borderWidth}px solid ${
+      outline ? textColor.enabled : backgroundColor.enabled
+    };
+      border-radius: ${radius}px;
+      box-sizing: border-box;
+      color: ${textColor.enabled};
+      font-size: ${size}px;
+      font-weight: ${weight};
+      height: ${small ? smallHeight : normalHeight}px;
+      padding-left: ${paddingLeft}px;
+      padding-right: ${paddingRight}px;
+      outline: none;
+      transition: all 0.2s;
+      width: ${full ? '100%' : 'auto'};
 
-  &:hover {
-    box-shadow: ${({ theme }) => theme.components.button.hover.shadow};
-    transform: translateY(-3px);
-  }
-  &:active {
-    box-shadow: ${({ theme }) => theme.components.button.active.shadow};
-    transform: translateY(-1px);
-    transition: all 30ms linear;
-  }
-  &:disabled {
-    background-color: #ccc;
-    box-shadow: none;
-  }
+      &:hover, &:focus {
+        box-shadow: ${hasBoxShadow ? shadow : 'none'};
+        ${hasHover ? `background-color: ${backgroundColor.hover};` : ''}
+      }
+
+      &:active {
+        background-color: ${backgroundColor.pressed};
+        color: ${textColor.pressed};
+        border-color: ${outline ? textColor.pressed : backgroundColor.pressed};
+      }
+
+      &:disabled {
+        background-color ${backgroundColor.disabled};
+        color: ${textColor.disabled};
+        cursor: not-allowed;
+        border-color: ${
+          outline ? textColor.disabled : backgroundColor.disabled
+        };
+      }
+    `;
+  }}
 `;
 
 /** This is a Buttton description */
-const Button = ({ text, children, theme }) => {
-  return <ButtonStyle text={text}> {children} </ButtonStyle>;
-};
+const Button = ({
+  children,
+  onClick,
+  full,
+  disabled,
+  small,
+  outline,
+  text,
+  theme,
+  ...props
+}) => (
+  <StyledButton
+    onClick={onClick}
+    full={full}
+    disabled={disabled}
+    small={small}
+    outline={outline}
+    text={text}
+    theme={theme}
+    {...props}
+  >
+    {children}
+  </StyledButton>
+);
 
 Button.propTypes = {
-  /** A text */
-  text: PropTypes.string,
-  /** Component children */
-  children: PropTypes.node,
+  children: node,
+  onClick: func,
+  full: bool,
+  disabled: bool,
+  small: bool,
+  outline: bool,
+  text: bool,
 };
 
 Button.defaultProps = {
-  text: 'Gympass',
-  children: undefined,
+  children: 'Gympass',
+  onClick: () => {},
+  full: false,
+  disabled: false,
+  small: false,
+  outline: false,
+  text: false,
 };
 
-export default withTheme(Button);
+export default Button;
