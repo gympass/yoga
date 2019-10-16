@@ -1,4 +1,5 @@
 import tokens from '@gympass/tokens';
+import { hexToRgb } from '@gympass/common';
 
 const { spacing, elevate, radii, fontSizes, fontWeights, colors } = tokens;
 
@@ -12,15 +13,22 @@ const baseTheme = ({ primary, secondary }) => {
         left: spacing.large,
       },
       height: {
-        normal: 46,
+        normal: 48,
         small: 32,
+      },
+      font: {
+        size: fontSizes[2],
+        weight: fontWeights.bold,
+      },
+      hover: {
+        shadow: elevate(primary[3], 2),
+      },
+      border: {
+        width: 2,
+        radius: radii.circle,
       },
       types: {
         contained: {
-          border: {
-            width: 'none',
-            radius: radii.circle,
-          },
           backgroundColor: {
             disabled: colors.gray[2],
             enabled: primary[3],
@@ -33,30 +41,11 @@ const baseTheme = ({ primary, secondary }) => {
           },
         },
         outline: {
-          border: {
-            width: 2,
-            radius: radii.circle,
-          },
-          backgroundColor: {
-            disabled: 'transparent',
-            enabled: 'transparent',
-            pressed: primary[0],
-          },
-          textColor: {
-            disabled: colors.gray[3],
-            enabled: primary[3],
-            pressed: primary[3],
-          },
-        },
-        text: {
-          border: {
-            width: 'none',
-            radius: radii.circle,
-          },
           backgroundColor: {
             disabled: 'transparent',
             enabled: 'transparent',
             pressed: 'transparent',
+            hover: `rgba(${hexToRgb(primary[3])}, 0.3)`,
           },
           textColor: {
             disabled: colors.gray[3],
@@ -64,13 +53,18 @@ const baseTheme = ({ primary, secondary }) => {
             pressed: primary[2],
           },
         },
-      },
-      font: {
-        size: fontSizes[2],
-        weight: fontWeights.bold,
-        color: {
-          disabled: colors.gray[3],
-          enabled: colors.white,
+        text: {
+          backgroundColor: {
+            disabled: 'transparent',
+            enabled: 'transparent',
+            pressed: 'transparent',
+            hover: `rgba(${hexToRgb(primary[3])}, 0.3)`,
+          },
+          textColor: {
+            disabled: colors.gray[3],
+            enabled: primary[3],
+            pressed: primary[2],
+          },
         },
       },
     },
