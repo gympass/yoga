@@ -48,6 +48,7 @@ const ButtonContainer = styled.View`
         button: {
           padding: { left: paddingLeft, right: paddingRight },
           height: { normal: normalHeight, small: smallHeight },
+          border: { width: borderWidth, radius },
           types,
         },
       },
@@ -59,20 +60,14 @@ const ButtonContainer = styled.View`
       : pressed
       ? 'pressed'
       : 'enabled';
-    const {
-      border: { width: borderWidth, radius },
-      backgroundColor,
-      textColor,
-    } = types[currentType];
+    const { backgroundColor, textColor } = types[currentType];
 
     return `
       align-self: center;
       background-color: ${backgroundColor[currentState]};
-      border: ${
-        borderWidth === 'none'
-          ? 'none'
-          : `${borderWidth}px solid ${textColor[currentState]}`
-      };
+      border: ${borderWidth}px solid ${
+      disabled && !outline ? backgroundColor.disabled : textColor[currentState]
+    };
       border-radius: ${radius}px;
       padding-left: ${paddingLeft}px;
       padding-right: ${paddingRight}px;
