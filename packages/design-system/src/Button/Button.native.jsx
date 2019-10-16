@@ -128,6 +128,9 @@ Button.propTypes = {
   onPress: func,
   full: bool,
   disabled: bool,
+  small: bool,
+  outline: bool,
+  text: bool,
 };
 
 Button.defaultProps = {
@@ -135,6 +138,9 @@ Button.defaultProps = {
   onPress: () => {},
   full: false,
   disabled: false,
+  small: false,
+  outline: false,
+  text: false,
 };
 
 export default Button;
