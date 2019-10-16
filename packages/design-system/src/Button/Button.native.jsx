@@ -66,7 +66,9 @@ const ButtonContainer = styled.View`
       align-self: center;
       background-color: ${backgroundColor[currentState]};
       border: ${borderWidth}px solid ${
-      disabled && !outline ? backgroundColor.disabled : textColor[currentState]
+      currentType === 'outline'
+        ? textColor[currentState]
+        : backgroundColor[currentState]
     };
       border-radius: ${radius}px;
       padding-left: ${paddingLeft}px;
