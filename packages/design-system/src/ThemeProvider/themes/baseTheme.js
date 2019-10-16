@@ -8,26 +8,70 @@ const baseTheme = ({ primary, secondary }) => {
   const components = {
     button: {
       padding: {
-        top: spacing.small,
         right: spacing.large,
-        bottom: spacing.small,
         left: spacing.large,
       },
-      border: {
-        width: 'none',
-        radius: radii.circle,
+      height: {
+        normal: 46,
+        small: 32,
       },
-      backgroundColor: primary,
-      hover: {
-        shadow: elevate(secondary, 2),
-      },
-      active: {
-        shadow: elevate(secondary, 1),
+      types: {
+        contained: {
+          border: {
+            width: 'none',
+            radius: radii.circle,
+          },
+          backgroundColor: {
+            disabled: colors.gray[2],
+            enabled: primary[3],
+            pressed: primary[2],
+          },
+          textColor: {
+            disabled: colors.gray[3],
+            enabled: colors.white,
+            pressed: colors.white,
+          },
+        },
+        outline: {
+          border: {
+            width: 2,
+            radius: radii.circle,
+          },
+          backgroundColor: {
+            disabled: 'transparent',
+            enabled: 'transparent',
+            pressed: primary[0],
+          },
+          textColor: {
+            disabled: colors.gray[3],
+            enabled: primary[3],
+            pressed: primary[3],
+          },
+        },
+        text: {
+          border: {
+            width: 'none',
+            radius: radii.circle,
+          },
+          backgroundColor: {
+            disabled: 'transparent',
+            enabled: 'transparent',
+            pressed: 'transparent',
+          },
+          textColor: {
+            disabled: colors.gray[3],
+            enabled: primary[3],
+            pressed: primary[2],
+          },
+        },
       },
       font: {
         size: fontSizes[2],
         weight: fontWeights.bold,
-        color: colors.white,
+        color: {
+          disabled: colors.gray[3],
+          enabled: colors.white,
+        },
       },
     },
   };
