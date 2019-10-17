@@ -1,0 +1,59 @@
+---
+title: 'Switch'
+metaTitle: 'Switch Component'
+metaDescription: 'Switch Component'
+---
+
+# Switch
+
+## Import the Switch
+
+```javascript
+import { Switch } from '@gympass/design-system';
+```
+
+<label>
+  hello
+  <Switch
+    id="switch-unchecked"
+    a11yLabel="This is an example of unchecked switch toggle"
+    onChange={action => alert('Switch Toggled!')}
+  />
+</label>
+
+## Usage
+
+```javascript reactLive=true
+<section>
+  <Switch
+    id="switch-unchecked"
+    a11yLabel="This is an example of unchecked switch toggle"
+    onChange={action => alert('Switch Toggled!')}
+  />
+
+  <Switch
+    checked
+    id="switch-checked"
+    a11yLabel="This is an example of checked switch toggle"
+    onChange={action => alert('Switch Toggled!')}
+  />
+
+  <Switch
+    secondary
+    checked
+    id="switch-secondary"
+    a11yLabel="This is an example of secondary-color switch toggle"
+    onChange={action => alert('Switch Toggled!')}
+  />
+
+  <Switch
+    disabled
+    id="switch-disabled"
+    a11yLabel="This is an example of disabled switch toggle"
+  />
+</section>
+```
+
+## Properties
+
+<PropsTable component="Switch" />
