@@ -62,8 +62,8 @@ const Option = styled.li`
   ${({ isSelected }) =>
     isSelected &&
     `
-    background-color: #CAEFEA;
-    font-weight: bold;
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
   `}
 `;
 
