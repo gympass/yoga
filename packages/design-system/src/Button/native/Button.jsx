@@ -16,7 +16,6 @@ const Label = styled.Text`
           types: {
             contained: {
               backgroundColor: {
-                disabled: disabledBackgroundColor,
                 enabled: enabledBackgroundColor,
                 pressed: pressedBackgroundColor,
               },
