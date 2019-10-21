@@ -94,19 +94,17 @@ const Button = ({
   onClick,
   full,
   disabled,
+  inverted,
   small,
-  outline,
-  text,
   theme,
   ...props
 }) => (
   <StyledButton
-    onClick={onClick}
-    full={full}
     disabled={disabled}
+    full={full}
+    inverted={inverted}
+    onClick={onClick}
     small={small}
-    outline={outline}
-    text={text}
     theme={theme}
     {...props}
   >
@@ -116,22 +114,20 @@ const Button = ({
 
 Button.propTypes = {
   children: node,
-  onClick: func,
-  full: bool,
   disabled: bool,
+  full: bool,
+  inverted: bool,
+  onClick: func,
   small: bool,
-  outline: bool,
-  text: bool,
 };
 
 Button.defaultProps = {
   children: 'Gympass',
-  onClick: () => {},
-  full: false,
   disabled: false,
+  full: false,
+  inverted: false,
+  onClick: () => {},
   small: false,
-  outline: false,
-  text: false,
 };
 
 export default Button;

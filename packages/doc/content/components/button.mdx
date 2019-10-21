@@ -15,7 +15,13 @@ import { Button } from '@gympass/design-system';
 ## Usage
 
 ```javascript reactLive=true
-<Button>Gympass</Button>
+<>
+  <Button>Gympass</Button>
+  <Button.Outline>Gympass</Button.Outline>
+  <div style={{ backgroundColor: '#e0e0e0', padding: 10, marginTop: 10 }}>
+    <Button.Outline inverted>Gympass</Button.Outline>
+  </div>
+</>
 ```
 
 ## Properties
