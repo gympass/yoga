@@ -6,9 +6,7 @@ const StyledButton = styled.button`
   ${({
     full,
     small,
-    disabled,
-    outline,
-    text,
+    inverted,
     theme: {
       components: {
         button: {
@@ -16,25 +14,36 @@ const StyledButton = styled.button`
           height: { small: smallHeight, normal: normalHeight },
           font: { size, weight },
           hover: { shadow },
-          border: { width: borderWidth, radius },
-          types,
+          border: {
+            small: { width: smallWidth },
+            default: { width: defaultWidth },
+            radius,
+          },
+          types: {
+            contained: {
+              backgroundColor: {
+                disabled: disabledBackgroundColor,
+                enabled: enabledBackgroundColor,
+                pressed: pressedBackgroundColor,
+              },
+              textColor: {
+                disabled: disabledTextColor,
+                enabled: enabledTextColor,
+                pressed: pressedTextColor,
+              },
+            },
+          },
         },
       },
     },
-  }) => {
-    const currentType = outline ? 'outline' : text ? 'text' : 'contained';
-    const { backgroundColor, textColor } = types[currentType];
-    const hasHover = currentType === 'outline' || 'text';
-    const hasBoxShadow = currentType === 'contained' && !disabled;
-
-    return `
-      background-color: ${backgroundColor.enabled};
-      border: ${borderWidth}px solid ${
-      outline ? textColor.enabled : backgroundColor.enabled
-    };
+  }) => `
+      background-color: ${enabledBackgroundColor};
+      border: ${
+        small ? smallWidth : defaultWidth
+      }px solid ${enabledBackgroundColor};
       border-radius: ${radius}px;
       box-sizing: border-box;
-      color: ${textColor.enabled};
+      color: ${enabledTextColor};
       cursor: pointer;
       font-size: ${size}px;
       font-weight: ${weight};
@@ -45,27 +54,39 @@ const StyledButton = styled.button`
       transition: all 0.2s;
       width: ${full ? '100%' : 'auto'};
 
-      &:hover, &:focus {
-        box-shadow: ${hasBoxShadow ? shadow : 'none'};
-        ${hasHover ? `background-color: ${backgroundColor.hover};` : ''}
+      &:not([disabled]):hover, &:not([disabled]):focus {
+        box-shadow: ${shadow};
       }
 
       &:active {
-        background-color: ${backgroundColor.pressed};
-        color: ${textColor.pressed};
-        border-color: ${outline ? textColor.pressed : backgroundColor.pressed};
+        background-color: ${pressedBackgroundColor};
+        color: ${pressedTextColor};
+        border-color: ${pressedBackgroundColor};
       }
 
       &:disabled {
-        background-color ${backgroundColor.disabled};
-        color: ${textColor.disabled};
+        background-color ${disabledBackgroundColor};
+        color: ${disabledTextColor};
         cursor: not-allowed;
-        border-color: ${
-          outline ? textColor.disabled : backgroundColor.disabled
-        };
+        border-color: ${disabledBackgroundColor};
       }
-    `;
-  }}
+
+      ${
+        inverted
+          ? `
+        background-color: ${enabledTextColor};
+        color: ${enabledBackgroundColor};
+        border-color: ${enabledTextColor};
+
+        &:active {
+          background-color: ${enabledTextColor};
+          border-color: ${enabledTextColor};
+          color: ${pressedBackgroundColor};
+        }
+      `
+          : ''
+      }
+    `}
 `;
 
 const Button = ({
