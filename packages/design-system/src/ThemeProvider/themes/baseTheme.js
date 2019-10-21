@@ -1,6 +1,16 @@
 import tokens from '@gympass/tokens';
+import { hexToRgb } from '@gympass/common';
 
-const { spacing, elevate, radii, fontSizes, fontWeights, colors } = tokens;
+const {
+  spacing,
+  elevate,
+  radii,
+  fontSizes,
+  fontWeights,
+  colors,
+  transitions,
+  elevations,
+} = tokens;
 
 const baseTheme = ({ primary, secondary }) => {
   const baseFontSize = fontSizes[3]; // 16
@@ -34,41 +44,47 @@ const baseTheme = ({ primary, secondary }) => {
       track: {
         width: '48px',
         height: '24px',
-        background: colors.gray[2],
-        shadow: '0px 2px 8px rgba(7, 18, 37, 0.10);',
-        radii: '64px',
-        transition: '0.3s',
-        cursor: 'pointer',
+        backgroundColor: colors.gray[2],
+        radii: `${radii.circle}px`,
+        transition: {
+          duration: transitions.duration,
+        },
         checked: {
-          background: {
-            default: primary[3],
-            secondary: secondary[3],
-          },
+          backgroundColor: primary[3],
         },
         disabled: {
-          background: colors.gray[1],
-          cursor: 'default',
+          backgroundColor: colors.gray[1],
         },
       },
       thumb: {
-        width: '16px',
-        height: '16px',
+        width: `${spacing.medium}px`,
+        height: `${spacing.medium}px`,
         left: `${spacing.xxsmall}px`,
         radii: `${radii.circle}px`,
-        background: colors.white,
-        shadow: '0px 1px 2px rgba(206, 206, 232, 0.6)',
-        transition: '0.3s',
+        backgroundColor: colors.white,
+        shadow: elevations.small,
+        transition: {
+          duration: transitions.duration,
+        },
         checked: {
-          background: primary[3],
+          backgroundColor: primary[3],
         },
         disabled: {
-          background: colors.gray[2],
+          backgroundColor: colors.gray[2],
+        },
+      },
+      focus: {
+        checked: {
+          backgroundColor: hexToRgb(primary[3], 0.2),
+        },
+        disabled: {
+          backgroundColor: hexToRgb(colors.gray[3], 0.2),
         },
       },
     },
   };
 
-  return { components, baseFontSize };
+  return { components, baseFontSize, spacing };
 };
 
 export default baseTheme;
