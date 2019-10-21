@@ -45,12 +45,20 @@ const white = '#FFFFFF';
 /**
  * @type {Color}
  */
-const dark = '#3F414B';
+const dark = '#41414A';
 
 /**
  * @type {Color}
  */
-const gray = [white, '#F5F5FA', '#D7D7E5', '#A2A2B3', '#71717F', dark];
+const gray = [
+  white,
+  '#F5F5FA',
+  '#DBDBE8',
+  '#9898A6',
+  '#9898A6',
+  '#6B6B78',
+  dark,
+];
 
 /**
  * @type {Color}

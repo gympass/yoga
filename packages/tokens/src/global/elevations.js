@@ -30,9 +30,9 @@ function elevate(color = '#000', level) {
 
   const all = [
     'none',
-    `0 2px 8px rgba(${normalizedColor}, 0.25)`,
-    `0 4px 10px rgba(${normalizedColor}, 0.25)`,
-    `0 6px 16px rgba(${normalizedColor}, 0.25)`,
+    `0 2px 6px rgba(${normalizedColor}, 0.25)`,
+    `0 4px 12px rgba(${normalizedColor}, 0.25)`,
+    `0 8px 20px rgba(${normalizedColor}, 0.25)`,
   ];
 
   return level ? all[level] : all;
