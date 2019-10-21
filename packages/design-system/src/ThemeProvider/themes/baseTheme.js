@@ -1,10 +1,25 @@
 import tokens from '@gympass/tokens';
 import { hexToRgb } from '@gympass/common';
 
-const { spacing, elevate, radii, fontSizes, fontWeights, colors } = tokens;
+const {
+  spacing,
+  elevate,
+  radii,
+  fontSizes,
+  fontWeights,
+  colors: tokenColors,
+  borders,
+} = tokens;
 
 const baseTheme = ({ primary, secondary }) => {
-  const baseFontSize = fontSizes[3]; // 16
+  const baseFontSize = fontSizes[3];
+  const colors = {
+    primary,
+    secondary,
+    gray: tokenColors.gray,
+    white: tokenColors.white,
+    black: tokenColors.black,
+  };
 
   const components = {
     button: {
@@ -24,7 +39,12 @@ const baseTheme = ({ primary, secondary }) => {
         shadow: elevate(primary[3], 2),
       },
       border: {
-        width: 2,
+        small: {
+          width: borders.small,
+        },
+        default: {
+          width: borders.medium,
+        },
         radius: radii.circle,
       },
       types: {
@@ -70,7 +90,7 @@ const baseTheme = ({ primary, secondary }) => {
     },
   };
 
-  return { components, baseFontSize };
+  return { components, baseFontSize, colors };
 };
 
 export default baseTheme;
