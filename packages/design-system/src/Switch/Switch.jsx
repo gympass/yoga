@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 
 /** This is a Switch description */
 const SwitchInput = styled.input`
-  width: 0;
-  height: 0;
-  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  cursor: inherit;
 `;
 
 const SwitchTrack = styled.label`
@@ -14,87 +16,128 @@ const SwitchTrack = styled.label`
   align-items: center;
   justify-content: space-between;
   position: relative;
+  cursor: pointer;
+  margin-bottom: 8px;
 
-  ${({ theme }) =>
-    theme &&
+  ${({
+    theme: {
+      components: {
+        switch: {
+          track: {
+            width: trackWidth,
+            height: trackHeight,
+            radii: trackRadii,
+            backgroundColor: trackBackgroundColor,
+            transition: { duration: trackTransitionAnimation },
+            checked: { backgroundColor: checkedBackgroundColor },
+            disabled: { backgroundColor: disabledBackgroundColor },
+          },
+        },
+      },
+    },
+    checked,
+    disabled,
+  }) =>
     `
-    width: ${theme.components.switch.track.width};
-    height: ${theme.components.switch.track.height};
-    box-shadow: ${theme.components.switch.track.shadow};
-    border-radius: ${theme.components.switch.track.radii};
-    background: ${theme.components.switch.track.background};
-    transition: background-color ${theme.components.switch.track.animation};
-    cursor: ${theme.components.switch.track.cursor};
+    width: ${trackWidth};
+    height: ${trackHeight};
+    border-radius: ${trackRadii};
+    transition: background-color ${trackTransitionAnimation};
+    background-color: ${
+      checked ? checkedBackgroundColor : trackBackgroundColor
+    };
+
+    ${
+      disabled
+        ? `
+        background-color: ${disabledBackgroundColor};
+        cursor: not-allowed;`
+        : ''
+    }
   `};
-
-  ${({ checked, theme }) =>
-    checked &&
-    `background-color: ${theme.components.switch.track.checked.background.default};`}
-
-  ${({ checked, secondary, theme }) =>
-    checked &&
-    secondary &&
-    `background-color: ${theme.components.switch.track.checked.background.secondary};`}
-
-  ${({ disabled, theme }) =>
-    disabled &&
-    `background-color: ${theme.components.switch.track.disabled.background};
-    cursor: ${theme.components.switch.track.disabled.cursor};`}
 `;
 
 const SwitchThumb = styled.span`
-  content: '';
   position: relative;
 
-  ${({ theme }) =>
-    theme &&
+  ${({
+    theme: {
+      components: {
+        switch: {
+          thumb: {
+            width: thumbWidth,
+            height: thumbHeight,
+            shadow: thumbShadow,
+            left: thumbLeft,
+            radii: thumbRadii,
+            backgroundColor: thumbBackgroundColor,
+            transition: { duration: thumbTransitionAnimation },
+            disabled: { backgroundColor: disabledBackgroundColor },
+          },
+          focus: {
+            checked: { backgroundColor: focusCheckedBackgroundColor },
+            disabled: { backgroundColor: focusDisabledBackgroundColor },
+          },
+        },
+      },
+      spacing,
+    },
+    checked,
+    disabled,
+  }) =>
     `
-    width: ${theme.components.switch.thumb.width};
-    height: ${theme.components.switch.thumb.height};
-    left: ${theme.components.switch.thumb.left};
-    border-radius: ${theme.components.switch.thumb.radii};
-    background: ${theme.components.switch.thumb.background};
-    box-shadow: ${theme.components.switch.thumb.shadow};
-    transition: ${theme.components.switch.thumb.transition};
+    width: ${thumbWidth};
+    height: ${thumbHeight};
+    left: ${thumbLeft};
+    border-radius: ${thumbRadii};
+    background-color: ${thumbBackgroundColor};
+    box-shadow: ${thumbShadow};
+    transition: ${thumbTransitionAnimation};
+
+    ${
+      checked
+        ? `
+        left: calc(100% - ${thumbLeft}); 
+        transform: translateX(-100%);`
+        : ''
+    }
+    ${
+      disabled
+        ? `
+        background-color: ${disabledBackgroundColor};
+        cursor: not-allowed;`
+        : `
+        ${SwitchInput}:focus + &, 
+        ${SwitchInput}:hover + &{
+          box-shadow: 0 0 0 ${spacing.xsmall}px ${
+            checked ? focusCheckedBackgroundColor : focusDisabledBackgroundColor
+          };
+        }
+        `
+    }
   `};
-
-  ${({ checked, theme }) =>
-    checked &&
-    `left: calc(100% - ${theme.components.switch.thumb.left}); 
-    transform: translateX(-100%);`}
-
-  ${({ disabled, theme }) =>
-    disabled &&
-    `background-color: ${theme.components.switch.thumb.disabled.background};`}
 `;
 
 /** This is a Switch description */
-const Switch = ({ checked, disabled, secondary, onChange, ...rest }) => {
-  const [check, setCheck] = useState(checked);
-  return (
-    <SwitchTrack
-      secondary={secondary}
-      checked={check}
+const Switch = ({ checked, disabled, secondary, onChange, ...rest }) => (
+  <SwitchTrack
+    secondary={secondary}
+    checked={checked}
+    disabled={disabled}
+    {...rest}
+  >
+    <SwitchInput
+      type="checkbox"
+      role="switch"
       disabled={disabled}
-      {...rest}
-    >
-      <SwitchThumb role="button" checked={check} disabled={disabled} />
-
-      <SwitchInput
-        type="checkbox"
-        role="switch"
-        disabled={disabled}
-        aria-hidden
-        aria-checked={checked}
-        aria-readonly={disabled}
-        onChange={event => {
-          setCheck(!check);
-          onChange(event);
-        }}
-      />
-    </SwitchTrack>
-  );
-};
+      aria-hidden
+      aria-checked={checked}
+      aria-readonly={disabled}
+      onChange={onChange}
+    />
+    <SwitchThumb role="button" checked={checked} disabled={disabled} />
+  </SwitchTrack>
+);
 
 Switch.propTypes = {
   /** Use the secondary color in the element */
@@ -111,7 +154,7 @@ Switch.defaultProps = {
   secondary: false,
   checked: false,
   disabled: false,
-  onChange: null,
+  onChange: () => {},
 };
 
-export default withTheme(Switch);
+export default Switch;
