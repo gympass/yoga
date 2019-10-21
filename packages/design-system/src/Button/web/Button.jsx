@@ -35,6 +35,7 @@ const StyledButton = styled.button`
       border-radius: ${radius}px;
       box-sizing: border-box;
       color: ${textColor.enabled};
+      cursor: pointer;
       font-size: ${size}px;
       font-weight: ${weight};
       height: ${small ? smallHeight : normalHeight}px;
@@ -67,7 +68,6 @@ const StyledButton = styled.button`
   }}
 `;
 
-/** This is a Buttton description */
 const Button = ({
   children,
   onClick,
