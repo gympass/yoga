@@ -3,28 +3,44 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const StyledList = styled.ul`
-  display: flex;
-  flex-direction: ${({ direction }) =>
-    direction === 'horizontal' ? 'row' : 'column'};
-
-  > * {
-    ${({ divided }) =>
-      divided &&
-      `
-      border-bottom: 1px solid red;
-    `}
-  }
+  ${({
+    divided,
+    direction,
+    theme: {
+      components: {
+        list: {
+          padding: {
+            top: paddingTop,
+            right: paddingRight,
+            bottom: paddingBottom,
+            left: paddingLeft,
+          },
+          border: {
+            width: borderWidth,
+            style: borderStyle,
+            color: borderColor,
+          },
+        },
+      },
+    },
+  }) => `
+    display: flex;
+    border-top: ${borderWidth} ${borderStyle} ${borderColor};
+    flex-direction: ${direction === 'horizontal' ? 'row' : 'column'};
+    > * {
+        ${divided &&
+          `border-bottom: ${borderWidth} ${borderStyle} ${borderColor}`}
+        padding: ${paddingTop}px ${paddingRight}px ${paddingBottom}px ${paddingLeft}px;
+      }
+    }
+  `}
 `;
 
-const List = ({ children, as, direction, divided, theme }) => {
-  console.log(theme);
-
-  return (
-    <StyledList as={as} direction={direction} divided={divided}>
-      {children}
-    </StyledList>
-  );
-};
+const List = ({ children, as, direction, divided, theme }) => (
+  <StyledList as={as} direction={direction} divided={divided} theme={theme}>
+    {children}
+  </StyledList>
+);
 
 List.propTypes = {
   children: PropTypes.oneOfType([
