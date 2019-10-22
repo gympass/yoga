@@ -42,10 +42,10 @@ const baseTheme = ({ primary, secondary }) => {
     },
     switch: {
       track: {
-        width: '48px',
-        height: '24px',
+        width: 48,
+        height: 24,
         backgroundColor: colors.gray[2],
-        radii: `${radii.circle}px`,
+        radii: radii.circle,
         transition: {
           duration: transitions.duration,
         },
@@ -57,10 +57,10 @@ const baseTheme = ({ primary, secondary }) => {
         },
       },
       thumb: {
-        width: `${spacing.medium}px`,
-        height: `${spacing.medium}px`,
-        left: `${spacing.xxsmall}px`,
-        radii: `${radii.circle}px`,
+        width: spacing.medium,
+        height: spacing.medium,
+        left: spacing.xxsmall,
+        radii: radii.circle,
         backgroundColor: colors.white,
         shadow: elevations.small,
         transition: {
