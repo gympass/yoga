@@ -1,7 +1,9 @@
 {
   "scripts": {
     "commit": "git-cz",
-    "test": "lerna run test --stream",
+    "test": "jest",
+    "test:native": "NODE_ENV=native jest ./tests/native/Button.test.jsx",
+    "test:web": "NODE_ENV=web jest ./tests/web/Button.test.jsx",
     "prettier": "prettier",
     "dev:web": "lerna run dev --scope=@gympass/doc --stream",
     "dev:native:android": "lerna run android --scope=@gympass/labnative --stream",
@@ -32,17 +34,19 @@
     "jest": "^24.9.0",
     "lerna": "^3.16.4",
     "lint-staged": "9.2.5",
-    "prettier": "1.18.2"
+    "metro-react-native-babel-preset": "^0.56.0",
+    "prettier": "1.18.2",
+    "react-native": "^0.61.2"
   },
   "workspaces": {
     "packages": [
       "packages/*"
     ],
     "nohoist": [
-      "**/react-native",
-      "**/react-native/**",
-      "**/@react-native-community",
-      "**/@react-native-community/**"
+      "@gympass/labnative/react-native",
+      "@gympass/labnative/react-native/**",
+      "@gympass/labnative/@react-native-community",
+      "@gympass/labnative/@react-native-community/**"
     ]
   },
   "config": {

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> Snapshots Without props should match snapshot with default Button 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    accessible={true}
+    disabled={false}
+    focusable={true}
+    full={false}
+    inverted={false}
+    pressed={false}
+    small={false}
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "#F46152",
+          "borderColor": "#F46152",
+          "borderRadius": 9999,
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "height": 48,
+          "justifyContent": "center",
+          "paddingLeft": 20,
+          "paddingRight": 20,
+        },
+      ]
+    }
+  >
+    <Text
+      disabled={false}
+      inverted={false}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Foo
+    </Text>
+  </View>
+</View>
+`;

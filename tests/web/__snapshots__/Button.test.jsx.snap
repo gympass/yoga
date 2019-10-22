@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> Snapshots With disabled prop should match snapshot with default Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa dfvlBs"
+    disabled=""
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With disabled prop should match snapshot with outline Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa dfvlBs sc-bwzfXH hQOJvr"
+    disabled=""
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With disabled prop should match snapshot with text Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa dfvlBs sc-htpNat kwwcTu"
+    disabled=""
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With full prop should match snapshot with default Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa bxpWqs"
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With full prop should match snapshot with outline Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa bxpWqs sc-bwzfXH hQOJvr"
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With full prop should match snapshot with text Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa bxpWqs sc-htpNat kwwcTu"
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With inverted prop should match snapshot with default Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa eionBj"
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With inverted prop should match snapshot with outline Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa eionBj sc-bwzfXH hXQpvH"
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With inverted prop should match snapshot with text Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa eionBj sc-htpNat kwwcTu"
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With small prop should match snapshot with default Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa deRoBI"
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With small prop should match snapshot with outline Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa deRoBI sc-bwzfXH hQOJvr"
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With small prop should match snapshot with text Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa deRoBI sc-htpNat kwwcTu"
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots Without props should match snapshot with default Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa dfvlBs"
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots Without props should match snapshot with outline Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa dfvlBs sc-bwzfXH hQOJvr"
+  >
+    Gympass
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots Without props should match snapshot with text Button 1`] = `
+<div>
+  <button
+    class="sc-bdVaJa dfvlBs sc-htpNat kwwcTu"
+  >
+    Gympass
+  </button>
+</div>
+`;
