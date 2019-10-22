@@ -4,7 +4,7 @@ const config = {
 };
 
 if (process.env.NODE_ENV === 'native') {
-  config.preset = 'react-native';
+  config.preset = '@testing-library/react-native';
 }
 
 module.exports = config;
