@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { bool, func } from 'prop-types';
 import styled from 'styled-components';
 
 /** This is a Switch description */
@@ -17,7 +17,6 @@ const SwitchTrack = styled.label`
   justify-content: space-between;
   position: relative;
   cursor: pointer;
-  margin-bottom: 8px;
 
   ${({
     theme: {
@@ -39,9 +38,9 @@ const SwitchTrack = styled.label`
     disabled,
   }) =>
     `
-    width: ${trackWidth};
-    height: ${trackHeight};
-    border-radius: ${trackRadii};
+    width: ${trackWidth}px;
+    height: ${trackHeight}px;
+    border-radius: ${trackRadii}px;
     transition: background-color ${trackTransitionAnimation};
     background-color: ${
       checked ? checkedBackgroundColor : trackBackgroundColor
@@ -86,18 +85,17 @@ const SwitchThumb = styled.span`
     disabled,
   }) =>
     `
-    width: ${thumbWidth};
-    height: ${thumbHeight};
-    left: ${thumbLeft};
-    border-radius: ${thumbRadii};
+    width: ${thumbWidth}px;
+    height: ${thumbHeight}px;
+    left: ${thumbLeft}px;
+    border-radius: ${thumbRadii}px;
     background-color: ${thumbBackgroundColor};
-    box-shadow: ${thumbShadow};
     transition: ${thumbTransitionAnimation};
 
     ${
       checked
         ? `
-        left: calc(100% - ${thumbLeft}); 
+        left: calc(100% - ${thumbLeft}px); 
         transform: translateX(-100%);`
         : ''
     }
@@ -118,7 +116,7 @@ const SwitchThumb = styled.span`
   `};
 `;
 
-/** This is a Switch description */
+/** The Switch is a kind of Checkbox  */
 const Switch = ({ checked, disabled, secondary, onChange, ...rest }) => (
   <SwitchTrack
     secondary={secondary}
@@ -140,18 +138,12 @@ const Switch = ({ checked, disabled, secondary, onChange, ...rest }) => (
 );
 
 Switch.propTypes = {
-  /** Use the secondary color in the element */
-  secondary: PropTypes.bool,
-  /** If `true`, the component is checked */
-  checked: PropTypes.bool,
-  /** If true, the switch will be disabled */
-  disabled: PropTypes.bool,
-  /** Callback fired when the input is changed. */
-  onChange: PropTypes.func,
+  checked: bool,
+  disabled: bool,
+  onChange: func,
 };
 
 Switch.defaultProps = {
-  secondary: false,
   checked: false,
   disabled: false,
   onChange: () => {},

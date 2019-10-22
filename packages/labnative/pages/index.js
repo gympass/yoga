@@ -1,4 +1,4 @@
 import Button from './Button';
-import Switch from './Switch';
+import Checkbox from './Checkbox';
 
-export { Button, Switch };
+export { Button, Checkbox };
