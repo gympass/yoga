@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Item = ({ children }) => {
-  return <div>sdzfsd {children}</div>;
+  return <div>{children}</div>;
 };
 
 Item.propTypes = {

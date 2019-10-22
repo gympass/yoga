@@ -1,11 +1,38 @@
 import tokens from '@gympass/tokens';
 
-const { spacing, elevate, radii, fontSizes, fontWeights, colors } = tokens;
+const {
+  spacing,
+  elevate,
+  radii,
+  fontSizes,
+  fontWeights,
+  colors: tokenColors,
+} = tokens;
 
 const baseTheme = ({ primary, secondary }) => {
   const baseFontSize = fontSizes[3]; // 16
+  const colors = {
+    primary,
+    secondary,
+    gray: tokenColors.gray,
+    white: tokenColors.white,
+    black: tokenColors.black,
+  };
 
   const components = {
+    list: {
+      padding: {
+        top: spacing.large,
+        right: spacing.xlarge,
+        bottom: spacing.large,
+        left: spacing.xlarge,
+      },
+      border: {
+        width: '1px',
+        style: 'solid',
+        color: colors.gray[2],
+      },
+    },
     button: {
       padding: {
         top: spacing.small,
@@ -32,7 +59,7 @@ const baseTheme = ({ primary, secondary }) => {
     },
   };
 
-  return { components, baseFontSize };
+  return { components, baseFontSize, colors };
 };
 
 export default baseTheme;
