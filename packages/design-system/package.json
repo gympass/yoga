@@ -19,25 +19,23 @@
     "type": "git",
     "url": "git+https://github.com/Gympass/design-system.git"
   },
-  "scripts": {
-    "test": "jest"
-  },
   "bugs": {
     "url": "https://github.com/Gympass/design-system/issues"
   },
   "dependencies": {
-    "@gympass/tokens": "*",
     "@gympass/common": "*",
+    "@gympass/tokens": "*",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@testing-library/react": "^9.1.4",
+    "@testing-library/react-native": "^4.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
   "peerDependencies": {
-    "styled-components": "^4.4.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.4.0"
   }
 }
