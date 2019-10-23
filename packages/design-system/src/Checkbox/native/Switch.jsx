@@ -51,8 +51,6 @@ const SwitchThumb = styled.View`
           thumb: {
             width: thumbWidth,
             height: thumbHeight,
-            shadow: thumbShadow,
-            left: thumbLeft,
             radii: thumbRadii,
             backgroundColor: thumbBackgroundColor,
             disabled: { backgroundColor: disabledBackgroundColor },

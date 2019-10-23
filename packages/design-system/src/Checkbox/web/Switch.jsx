@@ -117,7 +117,13 @@ const SwitchThumb = styled.span`
 `;
 
 /** The Switch is a kind of Checkbox  */
-const Switch = ({ checked, disabled, secondary, onChange, ...rest }) => (
+const CheckboxSwitch = ({
+  checked,
+  disabled,
+  secondary,
+  onChange,
+  ...rest
+}) => (
   <SwitchTrack
     secondary={secondary}
     checked={checked}
@@ -137,16 +143,16 @@ const Switch = ({ checked, disabled, secondary, onChange, ...rest }) => (
   </SwitchTrack>
 );
 
-Switch.propTypes = {
+CheckboxSwitch.propTypes = {
   checked: bool,
   disabled: bool,
   onChange: func,
 };
 
-Switch.defaultProps = {
+CheckboxSwitch.defaultProps = {
   checked: false,
   disabled: false,
   onChange: () => {},
 };
 
-export default Switch;
+export default CheckboxSwitch;
