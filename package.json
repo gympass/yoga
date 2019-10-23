@@ -2,8 +2,9 @@
   "scripts": {
     "commit": "git-cz",
     "test": "jest",
-    "test:native": "NODE_ENV=native jest ./tests/native/Button.test.jsx",
-    "test:web": "NODE_ENV=web jest ./tests/web/Button.test.jsx",
+    "test:all": "yarn test:web && yarn test:native",
+    "test:native": "NODE_ENV=native jest ./packages/design-system/src/**/native",
+    "test:web": "NODE_ENV=web jest ./packages/design-system/src/**/web",
     "prettier": "prettier",
     "dev:web": "lerna run dev --scope=@gympass/doc --stream",
     "dev:native:android": "lerna run android --scope=@gympass/labnative --stream",
