@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import Button from './Button';
 
-const Text = styled(Button)`
+const ButtonText = styled(Button)`
   ${({
     theme: {
       components: {
@@ -49,4 +49,4 @@ const Text = styled(Button)`
   `}
 `;
 
-export default Text;
+export default ButtonText;

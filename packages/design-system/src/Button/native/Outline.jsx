@@ -41,7 +41,7 @@ const LabelOutline = styled(Label)`
         : ''
     }
 
-    ${inverted && pressed ? `color: ${gray[2]}` : ''}
+    ${inverted && pressed ? `color: ${gray[2]};` : ''}
   `}
 `;
 
@@ -106,7 +106,7 @@ const ButtonContainerOutline = styled(ButtonContainer)`
   `}
 `;
 
-const Outline = ({
+const ButtonOutline = ({
   children,
   full,
   disabled,
@@ -129,4 +129,4 @@ const Outline = ({
   </ButtonContainerOutline>
 );
 
-export default withTouchable(Outline);
+export default withTouchable(ButtonOutline);

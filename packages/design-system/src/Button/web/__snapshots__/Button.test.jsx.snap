@@ -3,7 +3,7 @@
 exports[`<Button /> Snapshots With disabled prop should match snapshot with default Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa dfvlBs"
+    class="sc-bdVaJa bfzJHY"
     disabled=""
   >
     Gympass
@@ -14,7 +14,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
 exports[`<Button /> Snapshots With disabled prop should match snapshot with outline Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa dfvlBs sc-bwzfXH hQOJvr"
+    class="sc-bdVaJa bfzJHY sc-bwzfXH hQOJvr"
     disabled=""
   >
     Gympass
@@ -25,7 +25,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
 exports[`<Button /> Snapshots With disabled prop should match snapshot with text Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa dfvlBs sc-htpNat kwwcTu"
+    class="sc-bdVaJa bfzJHY sc-htpNat kwwcTu"
     disabled=""
   >
     Gympass
@@ -36,7 +36,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
 exports[`<Button /> Snapshots With full prop should match snapshot with default Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa bxpWqs"
+    class="sc-bdVaJa kiricd"
   >
     Gympass
   </button>
@@ -46,7 +46,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
 exports[`<Button /> Snapshots With full prop should match snapshot with outline Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa bxpWqs sc-bwzfXH hQOJvr"
+    class="sc-bdVaJa kiricd sc-bwzfXH hQOJvr"
   >
     Gympass
   </button>
@@ -56,7 +56,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
 exports[`<Button /> Snapshots With full prop should match snapshot with text Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa bxpWqs sc-htpNat kwwcTu"
+    class="sc-bdVaJa kiricd sc-htpNat kwwcTu"
   >
     Gympass
   </button>
@@ -66,7 +66,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
 exports[`<Button /> Snapshots With inverted prop should match snapshot with default Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa eionBj"
+    class="sc-bdVaJa fItaTW"
   >
     Gympass
   </button>
@@ -76,7 +76,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
 exports[`<Button /> Snapshots With inverted prop should match snapshot with outline Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa eionBj sc-bwzfXH hXQpvH"
+    class="sc-bdVaJa fItaTW sc-bwzfXH hXQpvH"
   >
     Gympass
   </button>
@@ -86,7 +86,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
 exports[`<Button /> Snapshots With inverted prop should match snapshot with text Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa eionBj sc-htpNat kwwcTu"
+    class="sc-bdVaJa fItaTW sc-htpNat kwwcTu"
   >
     Gympass
   </button>
@@ -96,7 +96,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
 exports[`<Button /> Snapshots With small prop should match snapshot with default Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa deRoBI"
+    class="sc-bdVaJa itQekA"
   >
     Gympass
   </button>
@@ -106,7 +106,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
 exports[`<Button /> Snapshots With small prop should match snapshot with outline Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa deRoBI sc-bwzfXH hQOJvr"
+    class="sc-bdVaJa itQekA sc-bwzfXH hQOJvr"
   >
     Gympass
   </button>
@@ -116,7 +116,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
 exports[`<Button /> Snapshots With small prop should match snapshot with text Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa deRoBI sc-htpNat kwwcTu"
+    class="sc-bdVaJa itQekA sc-htpNat kwwcTu"
   >
     Gympass
   </button>
@@ -126,7 +126,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
 exports[`<Button /> Snapshots Without props should match snapshot with default Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa dfvlBs"
+    class="sc-bdVaJa bfzJHY"
   >
     Gympass
   </button>
@@ -136,7 +136,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
 exports[`<Button /> Snapshots Without props should match snapshot with outline Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa dfvlBs sc-bwzfXH hQOJvr"
+    class="sc-bdVaJa bfzJHY sc-bwzfXH hQOJvr"
   >
     Gympass
   </button>
@@ -146,7 +146,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
 exports[`<Button /> Snapshots Without props should match snapshot with text Button 1`] = `
 <div>
   <button
-    class="sc-bdVaJa dfvlBs sc-htpNat kwwcTu"
+    class="sc-bdVaJa bfzJHY sc-htpNat kwwcTu"
   >
     Gympass
   </button>
