@@ -117,19 +117,8 @@ const SwitchThumb = styled.span`
 `;
 
 /** The Switch is a kind of Checkbox  */
-const CheckboxSwitch = ({
-  checked,
-  disabled,
-  secondary,
-  onChange,
-  ...rest
-}) => (
-  <SwitchTrack
-    secondary={secondary}
-    checked={checked}
-    disabled={disabled}
-    {...rest}
-  >
+const CheckboxSwitch = ({ checked, disabled, onChange, ...rest }) => (
+  <SwitchTrack checked={checked} disabled={disabled} {...rest}>
     <SwitchInput
       type="checkbox"
       role="switch"
