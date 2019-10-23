@@ -10,9 +10,9 @@
  * @typedef FontWeight
  *
  * @type {Object}
- * @property {number} light font weight 300
- * @property {number} regular font weight 400
- * @property {number} bold font weight 700
+ * @property {number} light - 300
+ * @property {number} regular - 400
+ * @property {number} bold - 700
  */
 
 /**

@@ -10,8 +10,8 @@
  * @typedef Transition
  *
  * @type {Object}
- * @property {String} duration
- * @property {String} timing
+ * @property {String} duration - 300ms
+ * @property {String} timing - ease
  */
 
 const duration = '300ms';
