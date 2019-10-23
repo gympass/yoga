@@ -15,7 +15,7 @@
 /**
  * @type {Color}
  */
-const madrid = ['#FDE5E2', '#FAB9B2', '#F78E82', '#F46152'];
+const madrid = ['#FDE5E2', '#FAB9B2', '#F78D82', '#F46152'];
 
 /**
  * @type {Color}
@@ -50,15 +50,7 @@ const dark = '#41414A';
 /**
  * @type {Color}
  */
-const gray = [
-  white,
-  '#F5F5FA',
-  '#DBDBE8',
-  '#9898A6',
-  '#9898A6',
-  '#6B6B78',
-  dark,
-];
+const gray = [white, '#F5F5FA', '#DBDBE8', '#9898A6', '#6B6B78', dark];
 
 /**
  * @type {Color}
