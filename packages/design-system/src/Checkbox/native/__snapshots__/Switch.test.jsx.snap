@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with checked switch 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableOpacity
+    accessibilityRole="switch"
+    activeOpacity={1}
+    checked={true}
+    disabled={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#F46152",
+          "borderRadius": 9999,
+          "display": "flex",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 48,
+        },
+      ]
+    }
+  >
+    <View
+      checked={true}
+      disabled={false}
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 9999,
+          "height": 16,
+          "transform": Array [
+            Object {
+              "translateX": 4,
+            },
+          ],
+          "width": 16,
+        }
+      }
+    />
+  </TouchableOpacity>
+</View>
+`;
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with default switch 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableOpacity
+    accessibilityRole="switch"
+    activeOpacity={1}
+    checked={false}
+    disabled={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#DBDBE8",
+          "borderRadius": 9999,
+          "display": "flex",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 48,
+        },
+      ]
+    }
+  >
+    <View
+      checked={false}
+      disabled={false}
+      style={
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 9999,
+          "height": 16,
+          "transform": Array [
+            Object {
+              "translateX": 28,
+            },
+          ],
+          "width": 16,
+        }
+      }
+    />
+  </TouchableOpacity>
+</View>
+`;
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with disabled and checked switch 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableOpacity
+    accessibilityRole="switch"
+    activeOpacity={1}
+    checked={true}
+    disabled={true}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#F5F5FA",
+          "borderRadius": 9999,
+          "display": "flex",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 48,
+        },
+      ]
+    }
+  >
+    <View
+      checked={true}
+      disabled={true}
+      style={
+        Object {
+          "backgroundColor": "#DBDBE8",
+          "borderRadius": 9999,
+          "height": 16,
+          "transform": Array [
+            Object {
+              "translateX": 4,
+            },
+          ],
+          "width": 16,
+        }
+      }
+    />
+  </TouchableOpacity>
+</View>
+`;
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with disabled switch 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableOpacity
+    accessibilityRole="switch"
+    activeOpacity={1}
+    checked={false}
+    disabled={true}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#F5F5FA",
+          "borderRadius": 9999,
+          "display": "flex",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 48,
+        },
+      ]
+    }
+  >
+    <View
+      checked={false}
+      disabled={true}
+      style={
+        Object {
+          "backgroundColor": "#DBDBE8",
+          "borderRadius": 9999,
+          "height": 16,
+          "transform": Array [
+            Object {
+              "translateX": 28,
+            },
+          ],
+          "width": 16,
+        }
+      }
+    />
+  </TouchableOpacity>
+</View>
+`;
