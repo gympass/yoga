@@ -3,7 +3,7 @@ import { hexToRgb } from '@gympass/common';
 
 import Button from './Button';
 
-const Outline = styled(Button)`
+const ButtonOutline = styled(Button)`
   ${({
     inverted,
     theme: {
@@ -70,4 +70,4 @@ const Outline = styled(Button)`
   `}
 `;
 
-export default Outline;
+export default ButtonOutline;

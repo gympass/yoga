@@ -74,7 +74,7 @@ const ButtonContainerText = styled(ButtonContainer)`
   `}
 `;
 
-const Text = ({ children, full, disabled, small, pressed, ...rest }) => (
+const ButtonText = ({ children, full, disabled, small, pressed, ...rest }) => (
   <ButtonContainerText
     {...rest}
     full={full}
@@ -88,4 +88,4 @@ const Text = ({ children, full, disabled, small, pressed, ...rest }) => (
   </ButtonContainerText>
 );
 
-export default withTouchable(Text);
+export default withTouchable(ButtonText);

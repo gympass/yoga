@@ -30,8 +30,8 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
@@ -73,10 +73,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
   >
     <View
       disabled={true}
-      full={false}
-      inverted={false}
       pressed={false}
-      small={false}
       style={
         Array [
           Object {
@@ -88,15 +85,14 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
     >
       <Text
         disabled={true}
-        inverted={false}
         pressed={false}
         style={
           Array [
@@ -108,9 +104,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
             },
           ]
         }
-      >
-        Gympass
-      </Text>
+      />
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -131,9 +125,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
   >
     <View
       disabled={true}
-      full={false}
       pressed={false}
-      small={false}
       style={
         Array [
           Object {
@@ -145,8 +137,8 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
@@ -164,9 +156,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
             },
           ]
         }
-      >
-        Gympass
-      </Text>
+      />
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -202,8 +192,8 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
             "width": "100%",
           },
         ]
@@ -245,11 +235,8 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
     full={true}
   >
     <View
-      disabled={false}
       full={true}
-      inverted={false}
       pressed={false}
-      small={false}
       style={
         Array [
           Object {
@@ -261,16 +248,14 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
             "width": "100%",
           },
         ]
       }
     >
       <Text
-        disabled={false}
-        inverted={false}
         pressed={false}
         style={
           Array [
@@ -282,9 +267,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
             },
           ]
         }
-      >
-        Gympass
-      </Text>
+      />
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -304,10 +287,8 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
     full={true}
   >
     <View
-      disabled={false}
       full={true}
       pressed={false}
-      small={false}
       style={
         Array [
           Object {
@@ -319,15 +300,14 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
             "width": "100%",
           },
         ]
       }
     >
       <Text
-        disabled={false}
         pressed={false}
         style={
           Array [
@@ -339,9 +319,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
             },
           ]
         }
-      >
-        Gympass
-      </Text>
+      />
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -377,8 +355,8 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
@@ -419,11 +397,8 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
     inverted={true}
   >
     <View
-      disabled={false}
-      full={false}
       inverted={true}
       pressed={false}
-      small={false}
       style={
         Array [
           Object {
@@ -435,14 +410,13 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
     >
       <Text
-        disabled={false}
         inverted={true}
         pressed={false}
         style={
@@ -455,9 +429,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
             },
           ]
         }
-      >
-        Gympass
-      </Text>
+      />
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -477,11 +449,8 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
     inverted={true}
   >
     <View
-      disabled={false}
-      full={false}
       inverted={true}
       pressed={false}
-      small={false}
       style={
         Array [
           Object {
@@ -493,14 +462,13 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
     >
       <Text
-        disabled={false}
         pressed={false}
         style={
           Array [
@@ -512,9 +480,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
             },
           ]
         }
-      >
-        Gympass
-      </Text>
+      />
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -550,8 +516,8 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
             "borderWidth": 1,
             "height": 32,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
@@ -592,9 +558,6 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
     small={true}
   >
     <View
-      disabled={false}
-      full={false}
-      inverted={false}
       pressed={false}
       small={true}
       style={
@@ -608,15 +571,13 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
             "borderWidth": 1,
             "height": 32,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
     >
       <Text
-        disabled={false}
-        inverted={false}
         pressed={false}
         style={
           Array [
@@ -628,9 +589,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
             },
           ]
         }
-      >
-        Gympass
-      </Text>
+      />
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -650,8 +609,6 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
     small={true}
   >
     <View
-      disabled={false}
-      full={false}
       pressed={false}
       small={true}
       style={
@@ -665,14 +622,13 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
             "borderWidth": 1,
             "height": 32,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
     >
       <Text
-        disabled={false}
         pressed={false}
         style={
           Array [
@@ -684,9 +640,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
             },
           ]
         }
-      >
-        Gympass
-      </Text>
+      />
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -720,8 +674,8 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
@@ -760,11 +714,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
 >
   <TouchableWithoutFeedback>
     <View
-      disabled={false}
-      full={false}
-      inverted={false}
       pressed={false}
-      small={false}
       style={
         Array [
           Object {
@@ -776,15 +726,13 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
     >
       <Text
-        disabled={false}
-        inverted={false}
         pressed={false}
         style={
           Array [
@@ -796,9 +744,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
             },
           ]
         }
-      >
-        Gympass
-      </Text>
+      />
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -816,10 +762,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
 >
   <TouchableWithoutFeedback>
     <View
-      disabled={false}
-      full={false}
       pressed={false}
-      small={false}
       style={
         Array [
           Object {
@@ -831,14 +774,13 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
             "borderWidth": 2,
             "height": 48,
             "justifyContent": "center",
-            "paddingLeft": 20,
-            "paddingRight": 20,
+            "paddingLeft": 24,
+            "paddingRight": 24,
           },
         ]
       }
     >
       <Text
-        disabled={false}
         pressed={false}
         style={
           Array [
@@ -850,9 +792,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
             },
           ]
         }
-      >
-        Gympass
-      </Text>
+      />
     </View>
   </TouchableWithoutFeedback>
 </View>

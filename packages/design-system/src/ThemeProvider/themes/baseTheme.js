@@ -24,8 +24,8 @@ const baseTheme = ({ primary, secondary }) => {
   const components = {
     button: {
       padding: {
-        right: spacing.large,
-        left: spacing.large,
+        right: spacing.xlarge,
+        left: spacing.xlarge,
       },
       height: {
         normal: 48,

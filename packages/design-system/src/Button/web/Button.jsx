@@ -89,7 +89,6 @@ const StyledButton = styled.button`
     `}
 `;
 
-/** This is a Button component, it has 3 types: Default, Outline and Text. */
 const Button = ({
   children,
   onClick,

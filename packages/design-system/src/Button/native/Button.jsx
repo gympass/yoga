@@ -73,11 +73,7 @@ const ButtonContainer = styled.View`
                 enabled: enabledBackgroundColor,
                 pressed: pressedBackgroundColor,
               },
-              textColor: {
-                disabled: disabledTextColor,
-                enabled: enabledTextColor,
-                pressed: pressedTextColor,
-              },
+              textColor: { enabled: enabledTextColor },
             },
           },
         },
@@ -125,7 +121,6 @@ const ButtonContainer = styled.View`
     `}
 `;
 
-/** This is a Button component, it has 3 types: Default, Outline and Text. */
 const Button = ({
   children,
   full,
