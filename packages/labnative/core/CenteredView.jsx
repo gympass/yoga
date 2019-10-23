@@ -8,7 +8,8 @@ const CenteredView = props => {
     <ThemeProvider theme={themed}>
       <View
         style={{
-          height: Platform.OS === 'ios' ? 200 : 20,
+          height: Platform.OS === 'ios' ? 200 : 50,
+          backgroundColor: '#f0f0f0',
         }}
       >
         <Picker
@@ -28,8 +29,9 @@ const CenteredView = props => {
 
 const styles = StyleSheet.create({
   MainContainer: {
-    flex: 1,
     alignItems: 'center',
+    backgroundColor: '#f0f0f0',
+    flex: 1,
     justifyContent: 'center',
   },
 });
