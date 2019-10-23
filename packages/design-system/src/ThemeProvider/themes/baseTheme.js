@@ -3,7 +3,6 @@ import { hexToRgb } from '@gympass/common';
 
 const {
   spacing,
-  elevate,
   radii,
   fontSizes,
   fontWeights,
@@ -37,9 +36,6 @@ const baseTheme = ({ primary, secondary }) => {
         size: fontSizes[2],
         weight: fontWeights.bold,
       },
-      hover: {
-        shadow: elevate(primary[3], 2),
-      },
       border: {
         small: {
           width: borders.small,
@@ -67,7 +63,7 @@ const baseTheme = ({ primary, secondary }) => {
             disabled: 'transparent',
             enabled: 'transparent',
             pressed: 'transparent',
-            hover: `rgba(${hexToRgb(primary[3])}, 0.3)`,
+            hover: hexToRgb(primary[3], 0.3),
           },
           textColor: {
             disabled: colors.gray[3],
@@ -80,7 +76,7 @@ const baseTheme = ({ primary, secondary }) => {
             disabled: 'transparent',
             enabled: 'transparent',
             pressed: 'transparent',
-            hover: `rgba(${hexToRgb(primary[3])}, 0.3)`,
+            hover: hexToRgb(primary[3], 0.3),
           },
           textColor: {
             disabled: colors.gray[3],
@@ -134,7 +130,7 @@ const baseTheme = ({ primary, secondary }) => {
     },
   };
 
-  return { components, baseFontSize, colors };
+  return { components, baseFontSize, colors, spacing };
 };
 
 export default baseTheme;
