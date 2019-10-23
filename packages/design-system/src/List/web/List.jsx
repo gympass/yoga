@@ -9,7 +9,12 @@ const StyledList = styled.ul`
     theme: {
       components: {
         list: {
-          padding: { top: paddingTop, right: paddingRight },
+          padding: {
+            top: paddingTop,
+            right: paddingRight,
+            bottom: paddingBottom,
+            left: paddingLeft,
+          },
           border: {
             width: borderWidth,
             style: borderStyle,
@@ -23,7 +28,7 @@ const StyledList = styled.ul`
     flex-direction: ${horizontal ? 'row' : 'column'};
 
     > * {
-        padding: ${paddingTop}px ${paddingRight}px;
+        padding: ${paddingTop}px ${paddingRight}px ${paddingBottom}px ${paddingLeft}px;
 
         ${divided &&
           `border-${
