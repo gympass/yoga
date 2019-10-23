@@ -24,8 +24,6 @@ const baseTheme = ({ primary, secondary }) => {
       padding: {
         top: spacing.large,
         right: spacing.xlarge,
-        bottom: spacing.large,
-        left: spacing.xlarge,
       },
       border: {
         width: '1px',
