@@ -7,18 +7,20 @@ const StyledFlatList = styled.FlatList`
   width: 100%;
 `;
 
-const List = ({ data, renderItem, theme }) => (
-  <StyledFlatList data={data} renderItem={renderItem} />
+const List = ({ data, renderItem, theme, horizontal }) => (
+  <StyledFlatList data={data} renderItem={renderItem} horizontal={horizontal} />
 );
 
 List.propTypes = {
   data: PropTypes.arrayOf({}),
   renderItem: PropTypes.func,
+  horizontal: PropTypes.bool,
 };
 
 List.defaultProps = {
   data: {},
   renderItem: () => {},
+  horizontal: false,
 };
 
 List.displayName = 'List';

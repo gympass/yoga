@@ -19,7 +19,6 @@ const StyledView = styled.View`
       },
     },
   }) => `
-    width: 100%;
     border-bottom-width: ${borderWidth};
     border-bottom-color: ${borderColor};
     padding: ${paddingTop}px ${paddingRight}px ${paddingBottom}px ${paddingLeft}px;
