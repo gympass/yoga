@@ -5,16 +5,11 @@ import styled from 'styled-components';
 const StyledList = styled.ul`
   ${({
     divided,
-    direction,
+    horizontal,
     theme: {
       components: {
         list: {
-          padding: {
-            top: paddingTop,
-            right: paddingRight,
-            bottom: paddingBottom,
-            left: paddingLeft,
-          },
+          padding: { top: paddingTop, right: paddingRight },
           border: {
             width: borderWidth,
             style: borderStyle,
@@ -25,19 +20,22 @@ const StyledList = styled.ul`
     },
   }) => `
     display: flex;
-    border-top: ${borderWidth} ${borderStyle} ${borderColor};
-    flex-direction: ${direction === 'horizontal' ? 'row' : 'column'};
+    flex-direction: ${horizontal ? 'row' : 'column'};
+
     > * {
+        padding: ${paddingTop}px ${paddingRight}px;
+
         ${divided &&
-          `border-bottom: ${borderWidth} ${borderStyle} ${borderColor}`}
-        padding: ${paddingTop}px ${paddingRight}px ${paddingBottom}px ${paddingLeft}px;
+          `border-${
+            horizontal ? 'right' : 'bottom'
+          }: ${borderWidth} ${borderStyle} ${borderColor}`};
       }
     }
   `}
 `;
 
-const List = ({ children, as, direction, divided, theme }) => (
-  <StyledList as={as} direction={direction} divided={divided} theme={theme}>
+const List = ({ children, as, horizontal, divided, theme }) => (
+  <StyledList as={as} horizontal={horizontal} divided={divided} theme={theme}>
     {children}
   </StyledList>
 );
@@ -48,15 +46,17 @@ List.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
   ]),
   as: PropTypes.string,
-  direction: PropTypes.oneOf(['vertical', 'horizontal']),
+  horizontal: PropTypes.bool,
   divided: PropTypes.bool,
 };
 
 List.defaultProps = {
   children: undefined,
   as: 'ul',
-  direction: 'vertical',
+  horizontal: false,
   divided: true,
 };
+
+List.displayName = 'List';
 
 export default List;
