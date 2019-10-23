@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components/native';
+import styled from 'styled-components';
 import { node, bool } from 'prop-types';
 import withTouchable from './withTouchable';
 

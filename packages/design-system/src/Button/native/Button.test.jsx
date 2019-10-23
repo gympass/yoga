@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, fireEvent, toJSON } from '@testing-library/react-native';
-import { ThemeProvider, Button } from '@gympass/design-system';
+import ThemeProvider from '../../ThemeProvider';
+import Button from '../';
 
 describe('<Button />', () => {
   describe('Snapshots', () => {
