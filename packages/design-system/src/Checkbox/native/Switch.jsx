@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { bool } from 'prop-types';
+import { bool, func } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { Animated } from 'react-native';
 
@@ -89,6 +89,7 @@ const Switch = ({
       },
     },
   },
+  onChange,
   ...rest
 }) => {
   const [thumbPosition] = useState(new Animated.Value(checked));
@@ -109,7 +110,13 @@ const Switch = ({
   }, [checked]);
 
   return (
-    <SwitchTrack checked={checked} disabled={disabled} {...rest}>
+    <SwitchTrack
+      checked={checked}
+      disabled={disabled}
+      onPress={onChange}
+      accessibilityRole="switch"
+      {...rest}
+    >
       <SwitchThumb
         checked={checked}
         disabled={disabled}
@@ -132,11 +139,13 @@ const Switch = ({
 Switch.propTypes = {
   checked: bool,
   disabled: bool,
+  onChange: func,
 };
 
 Switch.defaultProps = {
   checked: false,
   disabled: false,
+  onChange: () => {},
 };
 
 export default withTheme(Switch);
