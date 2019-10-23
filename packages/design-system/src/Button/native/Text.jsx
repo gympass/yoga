@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { node, bool } from 'prop-types';
 
 import withTouchable from './withTouchable';
 import { Label, ButtonContainer } from './Button';
@@ -75,14 +74,7 @@ const ButtonContainerText = styled(ButtonContainer)`
   `}
 `;
 
-const ButtonOutline = ({
-  children,
-  full,
-  disabled,
-  small,
-  pressed,
-  ...rest
-}) => (
+const Text = ({ children, full, disabled, small, pressed, ...rest }) => (
   <ButtonContainerText
     {...rest}
     full={full}
@@ -96,18 +88,4 @@ const ButtonOutline = ({
   </ButtonContainerText>
 );
 
-ButtonOutline.propTypes = {
-  children: node,
-  full: bool,
-  disabled: bool,
-  small: bool,
-};
-
-ButtonOutline.defaultProps = {
-  children: 'Gympass',
-  full: false,
-  disabled: false,
-  small: false,
-};
-
-export default withTouchable(ButtonOutline);
+export default withTouchable(Text);

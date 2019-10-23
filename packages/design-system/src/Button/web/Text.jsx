@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import Button from './Button';
 
-const Outline = styled(Button)`
+const Text = styled(Button)`
   ${({
     theme: {
       components: {
@@ -49,4 +49,4 @@ const Outline = styled(Button)`
   `}
 `;
 
-export default Outline;
+export default Text;
