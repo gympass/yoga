@@ -30,6 +30,7 @@ Object.entries(Pages).map(([name, Page]) => {
 });
 
 const Drawer = createDrawerNavigator(drawerOptions, {
+  initialRouteName: '', // add your working component here
   contentOptions: {
     activeTintColor: 'black',
   },

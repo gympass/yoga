@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { bool } from 'prop-types';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import { Animated } from 'react-native';
 
 const SwitchTrack = styled.TouchableOpacity.attrs({
@@ -65,7 +65,6 @@ const SwitchThumb = styled.View`
     `
   width: ${thumbWidth}px;
   height: ${thumbHeight}px;
-  left: ${thumbLeft}px;
   border-radius: ${thumbRadii};
   background-color: ${thumbBackgroundColor};
   
@@ -79,10 +78,22 @@ const SwitchThumb = styled.View`
 `;
 
 /** The Switch is a kind of Checkbox  */
-const Switch = ({ checked, disabled, ...rest }) => {
+const Switch = ({
+  checked,
+  disabled,
+  theme: {
+    components: {
+      switch: {
+        track: { width: trackWidth },
+        thumb: { width: thumbWidth, left: thumbLeft },
+      },
+    },
+  },
+  ...rest
+}) => {
   const [thumbPosition] = useState(new Animated.Value(checked));
-  const thumbStart = 24;
-  const thumbEnd = 0;
+  const thumbTo = trackWidth - thumbWidth - thumbLeft;
+  const thumbFrom = thumbLeft;
 
   useEffect(() => {
     const toggle = (checked, position) => {
@@ -108,7 +119,7 @@ const Switch = ({ checked, disabled, ...rest }) => {
             {
               translateX: thumbPosition.interpolate({
                 inputRange: [0, 1],
-                outputRange: [thumbStart, thumbEnd],
+                outputRange: [thumbTo, thumbFrom],
               }),
             },
           ],
@@ -128,4 +139,4 @@ Switch.defaultProps = {
   disabled: false,
 };
 
-export default Switch;
+export default withTheme(Switch);
