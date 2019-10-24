@@ -28,12 +28,15 @@ const StyledList = styled.ul`
     flex-direction: ${horizontal ? 'row' : 'column'};
 
     > * {
-        padding: ${paddingTop}px ${paddingRight}px ${paddingBottom}px ${paddingLeft}px;
+        ${
+          divided
+            ? `border-${
+                horizontal ? 'right' : 'bottom'
+              }: ${borderWidth} ${borderStyle} ${borderColor}`
+            : ''
+        };
 
-        ${divided &&
-          `border-${
-            horizontal ? 'right' : 'bottom'
-          }: ${borderWidth} ${borderStyle} ${borderColor}`};
+        padding: ${paddingTop}px ${paddingRight}px ${paddingBottom}px ${paddingLeft}px;
       }
     }
   `}
