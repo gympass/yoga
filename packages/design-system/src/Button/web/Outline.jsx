@@ -57,7 +57,7 @@ const ButtonOutline = styled(Button)`
         color: ${white};
 
         &:not([disabled]):hover, &:not([disabled]):focus {
-          background-color: rgba(${hexToRgb(white)}, 0.3);
+          background-color: ${hexToRgb(white, 0.3)};
         }
 
         &:not([disabled]):active {
