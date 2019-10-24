@@ -1,9 +1,9 @@
 {
   "scripts": {
     "commit": "git-cz",
-    "test": "jest",
-    "test:native": "jest --config=jest.config.native.js",
-    "test:web": "jest --config=jest.config.web.js",
+    "test": "NODE_ENV=test jest",
+    "test:native": "NODE_ENV=native jest --config=jest.config.native.js",
+    "test:web": "NODE_ENV=web jest --config=jest.config.web.js",
     "prettier": "prettier",
     "dev:web": "lerna run dev --scope=@gympass/doc --stream",
     "dev:native:android": "lerna run android --scope=@gympass/labnative --stream",
@@ -13,10 +13,12 @@
     "lint:doc": "yarn lint packages/doc",
     "lint:labnative": "yarn lint packages/labnative",
     "lint:tokens": "yarn lint packages/tokens",
-    "lint:all": "yarn lint:design-system && yarn lint:doc && yarn lint:labnative && yarn lint:tokens"
+    "lint:all": "yarn lint:design-system && yarn lint:doc && yarn lint:labnative && yarn lint:tokens",
+    "build:native": "lerna run build:native --scope=@gympass/design-system --stream"
   },
   "private": true,
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
