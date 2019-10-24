@@ -10,16 +10,16 @@
  * @typedef Spacing
  *
  * @type {Object}
- * @property {number} zero
- * @property {number} xxsmall
- * @property {number} xsmall
- * @property {number} small
- * @property {number} medium
- * @property {number} large
- * @property {number} xlarge
- * @property {number} xxlarge
- * @property {number} xxxlarge
- * @property {number} huge
+ * @property {number} zero - 0
+ * @property {number} xxsmall - 4
+ * @property {number} xsmall - 8
+ * @property {number} small - 12
+ * @property {number} medium - 16
+ * @property {number} large - 20
+ * @property {number} xlarge - 24
+ * @property {number} xxlarge - 40
+ * @property {number} xxxlarge - 56
+ * @property {number} huge - 72
  */
 
 /**
