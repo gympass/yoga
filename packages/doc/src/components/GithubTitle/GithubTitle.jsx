@@ -50,15 +50,17 @@ const getMetaData = (isComponent, component) => {
 
 const GithubTitle = ({ children }) => {
   const isComponent = window.location.href.search(/components\/.+/) > -1;
-  const { description, componentsPath } = getMetaData(isComponent, children);
-
+  const { description, componentsPath } = getMetaData(
+    isComponent,
+    children.replace('.', ''),
+  );
   return (
     <>
       <Heading>
         {children}
         {isComponent && (
           <a
-            href={`${componentsPath}${children}/${children}.jsx`}
+            href={`${componentsPath}${children.split('.')[0]}/`}
             target="_blank"
             rel="noopener noreferrer"
           >

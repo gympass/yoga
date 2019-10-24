@@ -7,7 +7,7 @@ const StyledFlatList = styled.FlatList`
   width: 100%;
 `;
 
-const List = ({ data, renderItem, theme, horizontal }) => (
+const List = ({ data, renderItem, horizontal }) => (
   <StyledFlatList data={data} renderItem={renderItem} horizontal={horizontal} />
 );
 

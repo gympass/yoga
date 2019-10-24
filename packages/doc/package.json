@@ -42,7 +42,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "dev": "gatsby develop -o",
     "serve": "gatsby serve"
   }
 }

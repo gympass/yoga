@@ -6,8 +6,9 @@ import fontSizes from './font-sizes';
 import fontWeights from './font-weights';
 import lineHeights from './line-heights';
 import radii from './radii';
-import { elevations, elevate } from './elevations';
+import elevations from './elevations';
 import spacing from './spacing';
+import transitions from './transitions';
 
 const tokens = {
   borders,
@@ -19,8 +20,8 @@ const tokens = {
   lineHeights,
   radii,
   elevations,
-  elevate,
   spacing,
+  transitions,
 };
 
 /**
@@ -38,4 +39,5 @@ export {
   radii,
   elevations,
   spacing,
+  transitions,
 };
