@@ -12,7 +12,7 @@ const List = ({ data, renderItem, horizontal }) => (
 );
 
 List.propTypes = {
-  data: PropTypes.arrayOf({}),
+  data: PropTypes.arrayOf(PropTypes.object),
   renderItem: PropTypes.func,
   horizontal: PropTypes.bool,
 };
