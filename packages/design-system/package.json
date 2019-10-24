@@ -2,7 +2,14 @@
   "name": "@gympass/design-system",
   "version": "0.0.0",
   "description": "Gympass component library",
-  "main": "./src/index.js",
+  "main": "./dist",
+  "scripts": {
+    "build": "",
+    "prebuild": "rm -rf ./dist",
+    "build:native": "NODE_ENV=native babel ./src --out-dir dist",
+    "prebuild:native": "yarn run prebuild",
+    "build:web": "NODE_ENV=web babel ./src --out-dir dist"
+  },
   "keywords": [
     "Gympass",
     "components",
