@@ -36,6 +36,10 @@ const StyledList = styled.ul`
             : ''
         };
 
+        &:last-child {
+          border: none;
+        }
+
         padding: ${paddingTop}px ${paddingRight}px ${paddingBottom}px ${paddingLeft}px;
       }
     }
