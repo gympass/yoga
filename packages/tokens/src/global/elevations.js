@@ -1,31 +1,10 @@
-import { hexToRgb } from '@gympass/common';
-
+import { elevate } from '@gympass/common';
 /**
  * @module elevation
  * @desc Elevation (z-index) tokens module.
  *
  * @memberof @gympass/tokens
  */
-
-/**
- * Elevation function
- *
- * @param {String} color=#000 - Color to elevate
- * @param {Number} level - Elevation level. It must be between 0 and 4
- * @returns {String}
- */
-function elevate(color = '#000', level) {
-  const normalizedColor = hexToRgb(color);
-
-  const all = [
-    'none',
-    `0 2px 8px rgba(${normalizedColor}, 0.25)`,
-    `0 4px 10px rgba(${normalizedColor}, 0.25)`,
-    `0 6px 16px rgba(${normalizedColor}, 0.25)`,
-  ];
-
-  return level ? all[level] : all;
-}
 
 /**
  * An elevation
@@ -50,4 +29,4 @@ const elevations = elevate();
   elevations.large,
 ] = elevations;
 
-export { elevations, elevate };
+export default elevations;

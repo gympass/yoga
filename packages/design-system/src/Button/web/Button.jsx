@@ -1,6 +1,7 @@
 import React from 'react';
 import { node, func, bool } from 'prop-types';
 import styled from 'styled-components';
+import { hexToRgb } from '@gympass/common';
 
 const StyledButton = styled.button`
   ${({
@@ -13,7 +14,6 @@ const StyledButton = styled.button`
           padding: { left: paddingLeft, right: paddingRight },
           height: { small: smallHeight, normal: normalHeight },
           font: { size, weight },
-          hover: { shadow },
           border: {
             small: { width: smallWidth },
             default: { width: defaultWidth },
@@ -55,7 +55,7 @@ const StyledButton = styled.button`
       width: ${full ? '100%' : 'auto'};
 
       &:not([disabled]):hover, &:not([disabled]):focus {
-        box-shadow: ${shadow};
+        box-shadow: 0 4px 8px ${hexToRgb(enabledBackgroundColor, 0.45)};
       }
 
       &:active {
@@ -82,6 +82,10 @@ const StyledButton = styled.button`
           background-color: ${enabledTextColor};
           border-color: ${enabledTextColor};
           color: ${pressedBackgroundColor};
+        }
+
+        &:not([disabled]):hover, &:not([disabled]):focus {
+          box-shadow: 0 4px 8px ${hexToRgb(enabledTextColor, 0.45)};
         }
       `
           : ''
