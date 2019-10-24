@@ -1,9 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> Snapshots With disabled prop should match snapshot with default Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa bfzJHY"
+    class="c0"
     disabled=""
   >
     Gympass
@@ -12,9 +48,69 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
 `;
 
 exports[`<Button /> Snapshots With disabled prop should match snapshot with outline Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: #F46152;
+  color: #F46152;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: rgba(244,97,82,0.3);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: #F78D82;
+  color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: #9898A6;
+  color: #9898A6;
+}
+
 <div>
   <button
-    class="sc-bdVaJa bfzJHY sc-bwzfXH hQOJvr"
+    class="c0 c1"
     disabled=""
   >
     Gympass
@@ -23,9 +119,69 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
 `;
 
 exports[`<Button /> Snapshots With disabled prop should match snapshot with text Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: transparent;
+  color: #F46152;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: rgba(244,97,82,0.3);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #9898A6;
+}
+
 <div>
   <button
-    class="sc-bdVaJa bfzJHY sc-htpNat kwwcTu"
+    class="c0 c1"
     disabled=""
   >
     Gympass
@@ -34,9 +190,45 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
 `;
 
 exports[`<Button /> Snapshots With full prop should match snapshot with default Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa kiricd"
+    class="c0"
   >
     Gympass
   </button>
@@ -44,9 +236,69 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
 `;
 
 exports[`<Button /> Snapshots With full prop should match snapshot with outline Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: #F46152;
+  color: #F46152;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: rgba(244,97,82,0.3);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: #F78D82;
+  color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: #9898A6;
+  color: #9898A6;
+}
+
 <div>
   <button
-    class="sc-bdVaJa kiricd sc-bwzfXH hQOJvr"
+    class="c0 c1"
   >
     Gympass
   </button>
@@ -54,9 +306,69 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
 `;
 
 exports[`<Button /> Snapshots With full prop should match snapshot with text Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: transparent;
+  color: #F46152;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: rgba(244,97,82,0.3);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #9898A6;
+}
+
 <div>
   <button
-    class="sc-bdVaJa kiricd sc-htpNat kwwcTu"
+    class="c0 c1"
   >
     Gympass
   </button>
@@ -64,9 +376,59 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
 `;
 
 exports[`<Button /> Snapshots With inverted prop should match snapshot with default Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+  background-color: #FFFFFF;
+  color: #F46152;
+  border-color: #FFFFFF;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c0:active {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  color: #F78D82;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
 <div>
   <button
-    class="sc-bdVaJa fItaTW"
+    class="c0"
   >
     Gympass
   </button>
@@ -74,9 +436,95 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
 `;
 
 exports[`<Button /> Snapshots With inverted prop should match snapshot with outline Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+  background-color: #FFFFFF;
+  color: #F46152;
+  border-color: #FFFFFF;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c0:active {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  color: #F78D82;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: #F46152;
+  color: #F46152;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: rgba(244,97,82,0.3);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: #F78D82;
+  color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: #9898A6;
+  color: #9898A6;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.c1:not([disabled]):active {
+  border-color: #DBDBE8;
+  color: #DBDBE8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa fItaTW sc-bwzfXH hXQpvH"
+    class="c0 c1"
   >
     Gympass
   </button>
@@ -84,9 +532,83 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
 `;
 
 exports[`<Button /> Snapshots With inverted prop should match snapshot with text Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+  background-color: #FFFFFF;
+  color: #F46152;
+  border-color: #FFFFFF;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c0:active {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  color: #F78D82;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: transparent;
+  color: #F46152;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: rgba(244,97,82,0.3);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #9898A6;
+}
+
 <div>
   <button
-    class="sc-bdVaJa fItaTW sc-htpNat kwwcTu"
+    class="c0 c1"
   >
     Gympass
   </button>
@@ -94,9 +616,45 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
 `;
 
 exports[`<Button /> Snapshots With small prop should match snapshot with default Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 1px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa itQekA"
+    class="c0"
   >
     Gympass
   </button>
@@ -104,9 +662,69 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
 `;
 
 exports[`<Button /> Snapshots With small prop should match snapshot with outline Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 1px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: #F46152;
+  color: #F46152;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: rgba(244,97,82,0.3);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: #F78D82;
+  color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: #9898A6;
+  color: #9898A6;
+}
+
 <div>
   <button
-    class="sc-bdVaJa itQekA sc-bwzfXH hQOJvr"
+    class="c0 c1"
   >
     Gympass
   </button>
@@ -114,9 +732,69 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
 `;
 
 exports[`<Button /> Snapshots With small prop should match snapshot with text Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 1px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: transparent;
+  color: #F46152;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: rgba(244,97,82,0.3);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #9898A6;
+}
+
 <div>
   <button
-    class="sc-bdVaJa itQekA sc-htpNat kwwcTu"
+    class="c0 c1"
   >
     Gympass
   </button>
@@ -124,9 +802,45 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
 `;
 
 exports[`<Button /> Snapshots Without props should match snapshot with default Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
 <div>
   <button
-    class="sc-bdVaJa bfzJHY"
+    class="c0"
   >
     Gympass
   </button>
@@ -134,9 +848,69 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
 `;
 
 exports[`<Button /> Snapshots Without props should match snapshot with outline Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: #F46152;
+  color: #F46152;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: rgba(244,97,82,0.3);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: #F78D82;
+  color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: #9898A6;
+  color: #9898A6;
+}
+
 <div>
   <button
-    class="sc-bdVaJa bfzJHY sc-bwzfXH hQOJvr"
+    class="c0 c1"
   >
     Gympass
   </button>
@@ -144,9 +918,69 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
 `;
 
 exports[`<Button /> Snapshots Without props should match snapshot with text Button 1`] = `
+.c0 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c0:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c0:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: transparent;
+  color: #F46152;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: rgba(244,97,82,0.3);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #9898A6;
+}
+
 <div>
   <button
-    class="sc-bdVaJa bfzJHY sc-htpNat kwwcTu"
+    class="c0 c1"
   >
     Gympass
   </button>
