@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { bool, func } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
-import { Animated } from 'react-native';
+import { Animated, TouchableWithoutFeedback } from 'react-native';
 
-const SwitchTrack = styled.TouchableOpacity.attrs({
-  activeOpacity: 1,
-})`
+const SwitchTrack = styled.View`
   ${({
     theme: {
       components: {
@@ -82,7 +80,11 @@ const Switch = ({
   theme: {
     components: {
       switch: {
-        track: { width: trackWidth },
+        track: {
+          width: trackWidth,
+          backgroundColor: trackBackgroundColor,
+          checked: { backgroundColor: checkedBackgroundColor },
+        },
         thumb: { width: thumbWidth, left: thumbLeft },
       },
     },
@@ -108,29 +110,39 @@ const Switch = ({
   }, [checked]);
 
   return (
-    <SwitchTrack
-      checked={checked}
-      disabled={disabled}
-      onPress={onChange}
-      accessibilityRole="switch"
-      {...rest}
-    >
-      <SwitchThumb
+    <TouchableWithoutFeedback onPress={onChange}>
+      <SwitchTrack
         checked={checked}
         disabled={disabled}
+        accessibilityRole="switch"
         as={Animated.View}
         style={{
-          transform: [
-            {
-              translateX: thumbPosition.interpolate({
-                inputRange: [0, 1],
-                outputRange: [thumbTo, thumbFrom],
-              }),
-            },
-          ],
+          backgroundColor:
+            !disabled &&
+            thumbPosition.interpolate({
+              inputRange: [0, 1],
+              outputRange: [checkedBackgroundColor, trackBackgroundColor],
+            }),
         }}
-      />
-    </SwitchTrack>
+        {...rest}
+      >
+        <SwitchThumb
+          checked={checked}
+          disabled={disabled}
+          as={Animated.View}
+          style={{
+            transform: [
+              {
+                translateX: thumbPosition.interpolate({
+                  inputRange: [0, 1],
+                  outputRange: [thumbTo, thumbFrom],
+                }),
+              },
+            ],
+          }}
+        />
+      </SwitchTrack>
+    </TouchableWithoutFeedback>
   );
 };
 
