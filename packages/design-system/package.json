@@ -2,13 +2,15 @@
   "name": "@gympass/design-system",
   "version": "0.0.0",
   "description": "Gympass component library",
-  "main": "./dist",
+  "main": "./src",
+  "sideEffects": false,
   "scripts": {
-    "build": "",
+    "build": "yarn build:web && yarn build:native && yarn build:esm",
+    "build:web": "NODE_ENV=web babel ./src --out-dir dist/cjs",
+    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
     "prebuild": "rm -rf ./dist",
-    "build:native": "NODE_ENV=native babel ./src --out-dir dist",
-    "prebuild:native": "yarn run prebuild",
-    "build:web": "NODE_ENV=web babel ./src --out-dir dist"
+    "prepublishOnly": "NODE_ENV=test babel-node ./prepublish.js"
   },
   "keywords": [
     "Gympass",
@@ -20,7 +22,8 @@
   "homepage": "https://github.com/Gympass/design-system#readme",
   "license": "MIT",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "dist"
   },
   "repository": {
     "type": "git",
