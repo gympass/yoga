@@ -9,15 +9,17 @@
   ],
   "homepage": "https://github.com/Gympass/design-system",
   "license": "MIT",
-  "main": "index.js",
-  "directories": {
-    "src": "src"
+  "main": "src/index.js",
+  "scripts": {
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "NODE_ENV=cjs babel ./src --out-dir dist/cjs",
+    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "prebuild": "rm -rf ./dist",
+    "prepublishOnly": "node ../../prepublish.js"
   },
-  "files": [
-    "src"
-  ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "dist"
   },
   "repository": {
     "type": "git",
