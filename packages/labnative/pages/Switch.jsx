@@ -40,7 +40,7 @@ const CheckboxPage = () => {
       <SwitchWrapper>
         <Checkbox.Switch
           checked={checked}
-          onPress={() => setChecked(!checked)}
+          onChange={() => setChecked(!checked)}
         />
       </SwitchWrapper>
     </View>
