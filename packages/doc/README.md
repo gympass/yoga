@@ -1,1 +1,0 @@
-# Gympass Design System Documentation
