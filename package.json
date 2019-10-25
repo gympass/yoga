@@ -2,6 +2,7 @@
   "scripts": {
     "commit": "git-cz",
     "test": "NODE_ENV=test jest",
+    "pretest": "lerna run prebuild",
     "test:native": "NODE_ENV=test jest --config=jest.config.native.js",
     "test:web": "NODE_ENV=test jest --config=jest.config.web.js",
     "prettier": "prettier",
@@ -14,8 +15,11 @@
     "lint:labnative": "yarn lint packages/labnative",
     "lint:tokens": "yarn lint packages/tokens",
     "lint:all": "yarn lint:design-system && yarn lint:doc && yarn lint:labnative && yarn lint:tokens",
-    "build:design-system": "yarn build --scope=@gympass/design-system",
-    "build": "lerna run build --stream"
+    "build:design-system": "lerna run build --scope=@gympass/design-system",
+    "build:common": "lerna run build --scope=@gympass/common --stream",
+    "build:tokens": "lerna run build --scope=@gympass/tokens --stream",
+    "build": "lerna run build --stream --ignore=@gympass/doc",
+    "prepublishOnly": "lerna run prepublishOnly --stream"
   },
   "private": true,
   "devDependencies": {
