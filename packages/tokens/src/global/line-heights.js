@@ -2,7 +2,7 @@
  * @module lineheight
  * @desc Line height tokens module.
  *
- * @memberof @gympass/tokens
+ * @memberof @gympass/yoga-tokens
  */
 
 /**

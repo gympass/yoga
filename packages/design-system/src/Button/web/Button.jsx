@@ -1,7 +1,7 @@
 import React from 'react';
 import { node, func, bool } from 'prop-types';
 import styled from 'styled-components';
-import { hexToRgb } from '@gympass/common';
+import { hexToRgb } from '@gympass/yoga-common';
 
 const StyledButton = styled.button`
   ${({

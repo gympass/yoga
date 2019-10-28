@@ -1,9 +1,9 @@
-import { elevate } from '@gympass/common';
+import { elevate } from '@gympass/yoga-common';
 /**
  * @module elevation
  * @desc Elevation (z-index) tokens module.
  *
- * @memberof @gympass/tokens
+ * @memberof @gympass/yoga-tokens
  */
 
 /**

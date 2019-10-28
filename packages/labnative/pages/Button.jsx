@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from '@gympass/design-system';
+import { Button } from '@gympass/yoga';
 
 const ScrollView = styled.ScrollView`
   margin-bottom: 50px;
