@@ -2,7 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const StyledList = styled.ul`
+const StyledList = styled.ul.attrs(() => ({
+  as: 'ul',
+}))`
   ${({
     divided,
     horizontal,
@@ -46,8 +48,8 @@ const StyledList = styled.ul`
   `}
 `;
 
-const List = ({ children, as, horizontal, divided, theme }) => (
-  <StyledList as={as} horizontal={horizontal} divided={divided} theme={theme}>
+const List = ({ children, horizontal, divided, theme, ...rest }) => (
+  <StyledList horizontal={horizontal} divided={divided} theme={theme} {...rest}>
     {children}
   </StyledList>
 );
@@ -57,14 +59,12 @@ List.propTypes = {
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
   ]),
-  as: PropTypes.string,
   horizontal: PropTypes.bool,
   divided: PropTypes.bool,
 };
 
 List.defaultProps = {
   children: undefined,
-  as: 'ul',
   horizontal: false,
   divided: true,
 };

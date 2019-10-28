@@ -3,12 +3,19 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FlatList } from 'react-native';
 
-const StyledFlatList = styled.FlatList`
+const StyledFlatList = styled.FlatList.attrs(() => ({
+  as: FlatList,
+}))`
   width: 100%;
 `;
 
-const List = ({ data, renderItem, horizontal }) => (
-  <StyledFlatList data={data} renderItem={renderItem} horizontal={horizontal} />
+const List = ({ data, renderItem, horizontal, ...rest }) => (
+  <StyledFlatList
+    data={data}
+    renderItem={renderItem}
+    horizontal={horizontal}
+    {...rest}
+  />
 );
 
 List.propTypes = {
