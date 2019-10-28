@@ -1,12 +1,12 @@
 {
   "name": "@gympass/yoga-doc",
   "description": "Gympass Design System components documentation",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "dependencies": {
-    "@gympass/yoga-common": "*",
-    "@gympass/yoga": "*",
-    "@gympass/yoga-tokens": "*",
+    "@gympass/yoga": "^0.0.1",
+    "@gympass/yoga-common": "^0.1.0",
+    "@gympass/yoga-tokens": "^0.1.0",
     "@mdx-js/loader": "^1.4.5",
     "@mdx-js/mdx": "^1.4.5",
     "@mdx-js/react": "^1.4.5",
