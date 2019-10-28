@@ -1,6 +1,5 @@
 {
   "name": "@gympass/yoga-doc",
-  "private": true,
   "description": "Gympass Design System components documentation",
   "version": "0.0.0",
   "license": "MIT",
@@ -45,6 +44,6 @@
     "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop -o",
     "serve": "gatsby serve",
-    "deploy": "gh-pages -d public"
+    "publish": "gh-pages -d public"
   }
 }
