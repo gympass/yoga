@@ -18,6 +18,7 @@ const data = [
 const ListPage = () => {
   return (
     <List
+      horizontal
       data={data}
       renderItem={({ item }) => (
         <List.Item>
