@@ -60,7 +60,12 @@ const getHtml = (tree, level = 0) =>
     const hasChild = Boolean(Object.keys(childs).length);
 
     return (
-      <ListItem key={url} active={window.location.pathname === url}>
+      <ListItem
+        key={url}
+        active={
+          typeof window !== 'undefined' && window.location.pathname === url
+        }
+      >
         <AnchorLink to={url} level={level} as={hasChild && 'span'}>
           {title}
         </AnchorLink>

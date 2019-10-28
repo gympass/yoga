@@ -77,4 +77,5 @@ module.exports = {
     favicon: config.siteMetadata.favicon,
   },
   plugins,
+  pathPrefix: '/design-system',
 };
