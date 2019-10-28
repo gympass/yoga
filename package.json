@@ -18,7 +18,7 @@
     "build:design-system": "lerna run build --scope=@gympass/design-system",
     "build:common": "lerna run build --scope=@gympass/common --stream",
     "build:tokens": "lerna run build --scope=@gympass/tokens --stream",
-    "build": "lerna run build --stream --ignore=@gympass/doc",
+    "build": "lerna run build --stream",
     "prepublishOnly": "lerna run prepublishOnly --stream"
   },
   "private": true,

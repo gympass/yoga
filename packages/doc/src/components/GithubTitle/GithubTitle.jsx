@@ -48,11 +48,15 @@ const getMetaData = (isComponent, component) => {
   return { description, componentsPath };
 };
 
-const GithubTitle = ({ children }) => {
-  const isComponent = window.location.href.search(/components\/.+/) > -1;
-  const { description, componentsPath } = getMetaData(
+const GithubTitle = ({ children = '' }) => {
+  const childrenString = typeof children === 'string' ? children : '';
+  const isComponent =
+    typeof window !== 'undefined' &&
+    window.location.href.search(/components\/.+/) > -1;
+
+  const { description = '', componentsPath = '' } = getMetaData(
     isComponent,
-    children.replace('.', ''),
+    childrenString.replace('.', ''),
   );
   return (
     <>
