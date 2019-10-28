@@ -19,4 +19,4 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: yarn
       - run: yarn test
-      - run: lerna publish -y
+      - run: yarn lerna publish -y
