@@ -1,4 +1,4 @@
-import { merge } from '@gympass/common';
+import { merge } from '@gympass/yoga-common';
 import tokens from '../global';
 
 const negative = ['#DEF8E9', '#1E854A'];

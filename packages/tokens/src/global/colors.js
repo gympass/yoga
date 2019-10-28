@@ -2,7 +2,7 @@
  * @module colors
  * @desc Color tokens module.
  *
- * @memberof @gympass/tokens
+ * @memberof @gympass/yoga-tokens
  */
 
 /**
