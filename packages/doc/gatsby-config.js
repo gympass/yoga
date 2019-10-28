@@ -49,8 +49,8 @@ const plugins = [
   {
     resolve: 'gatsby-source-filesystem',
     options: {
-      name: 'design-system',
-      path: `../design-system`,
+      name: 'yoga',
+      path: `../yoga`,
     },
   },
   {
@@ -77,5 +77,5 @@ module.exports = {
     favicon: config.siteMetadata.favicon,
   },
   plugins,
-  pathPrefix: '/design-system',
+  pathPrefix: '/yoga',
 };
