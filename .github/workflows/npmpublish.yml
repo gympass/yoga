@@ -8,8 +8,11 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout repo
       - uses: actions/checkout@v1
+      - name: Node setup
       - uses: actions/setup-node@v1
       - name: Prepare repository
         run: git checkout "${GITHUB_REF:11}"
