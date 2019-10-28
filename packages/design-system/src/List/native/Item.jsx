@@ -23,7 +23,7 @@ const StyledView = styled.View`
     ${
       divider
         ? `
-      border-bottom-width: ${borderWidth};
+      border-bottom-width: ${borderWidth}px;
       border-bottom-color: ${borderColor};
     `
         : ''
