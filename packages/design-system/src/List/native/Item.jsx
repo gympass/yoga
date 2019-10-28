@@ -9,12 +9,15 @@ const StyledView = styled.View`
     theme: {
       components: {
         list: {
-          padding: {
-            top: paddingTop,
-            right: paddingRight,
-            bottom: paddingBottom,
-            left: paddingLeft,
+          listItem: {
+            padding: {
+              top: paddingTop,
+              right: paddingRight,
+              bottom: paddingBottom,
+              left: paddingLeft,
+            },
           },
+
           border: { width: borderWidth, color: borderColor },
         },
       },

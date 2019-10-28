@@ -11,12 +11,6 @@ const StyledList = styled.ul.attrs(() => ({
     theme: {
       components: {
         list: {
-          padding: {
-            top: paddingTop,
-            right: paddingRight,
-            bottom: paddingBottom,
-            left: paddingLeft,
-          },
           border: { width: borderWidth, color: borderColor },
         },
       },
@@ -37,8 +31,6 @@ const StyledList = styled.ul.attrs(() => ({
         &:last-child {
           border: none;
         }
-
-        padding: ${paddingTop}px ${paddingRight}px ${paddingBottom}px ${paddingLeft}px;
       }
     }
   `}
