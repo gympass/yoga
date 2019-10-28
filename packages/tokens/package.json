@@ -7,7 +7,7 @@
     "design",
     "tokens"
   ],
-  "homepage": "https://github.com/Gympass/design-system",
+  "homepage": "https://github.com/Gympass/yoga",
   "license": "MIT",
   "main": "src/index.js",
   "scripts": {
@@ -23,9 +23,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gympass/design-system.git"
+    "url": "git+https://github.com/Gympass/yoga.git"
   },
   "bugs": {
-    "url": "https://github.com/Gympass/design-system/issues"
+    "url": "https://github.com/Gympass/yoga/issues"
   }
 }
