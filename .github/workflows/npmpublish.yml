@@ -11,12 +11,18 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
+
+      - name: Prepare repository
+        run: git checkout "${GITHUB_REF:11}"
+
+      - name: Install dependencies
+      - run: yarn
+
+      - name: Run tests
+      - run: yarn test
+
+      - name: Publish
+      - run: yarn lerna publish --yes --registry https://registry.npmjs.org/:_authToken=${NPM_TOKEN}
         env:
           GH_TOKEN: ${{secrets.GH_TOKEN}}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
-        with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org/
-      - run: yarn
-      - run: yarn test
-      - run: yarn lerna publish --yes --registry https://registry.npmjs.org/:_authToken=${NPM_TOKEN}
