@@ -24,11 +24,13 @@ const baseTheme = ({ primary, secondary }) => {
 
   const components = {
     list: {
-      padding: {
-        top: spacing.large,
-        right: spacing.xlarge,
-        bottom: spacing.large,
-        left: spacing.xlarge,
+      listItem: {
+        padding: {
+          top: spacing.large,
+          right: spacing.xlarge,
+          bottom: spacing.large,
+          left: spacing.xlarge,
+        },
       },
       border: {
         width: borders.small,
