@@ -2,7 +2,7 @@
  * @module fontweight
  * @desc Font Weights tokens module.
  *
- * @memberof @gympass/tokens
+ * @memberof @gympass/yoga-tokens
  */
 
 /**

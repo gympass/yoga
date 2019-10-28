@@ -3,7 +3,7 @@ import { string, node } from 'prop-types';
 import styled from 'styled-components';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
-import * as components from '@gympass/design-system';
+import * as components from '@gympass/yoga';
 
 import { CodeBlock, PropsTable, GithubTitle, InlineCode } from '..';
 

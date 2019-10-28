@@ -4,8 +4,8 @@ import { arrayOf, object, shape } from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 import Helmet from 'react-helmet';
 
-import { ThemeProvider, themes } from '@gympass/design-system';
-import * as tokens from '@gympass/tokens';
+import { ThemeProvider, themes } from '@gympass/yoga';
+import * as tokens from '@gympass/yoga-tokens';
 
 import { Navigation, Documentation, Header, Summary, Dropdown } from '..';
 

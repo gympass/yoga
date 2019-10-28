@@ -1,11 +1,11 @@
-# `@gympass/design-system`
+# `@gympass/yoga`
 
 > TODO: description
 
 ## Usage
 
 ```
-const designSystem = require('@gympass/design-system');
+const designSystem = require('@gympass/yoga');
 
 // TODO: DEMONSTRATE API
 ```

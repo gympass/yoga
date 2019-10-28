@@ -1,5 +1,5 @@
 {
-  "name": "@gympass/design-system",
+  "name": "@gympass/yoga",
   "version": "0.0.0",
   "description": "Gympass component library",
   "main": "./src",
@@ -33,8 +33,8 @@
     "url": "https://github.com/Gympass/design-system/issues"
   },
   "dependencies": {
-    "@gympass/common": "*",
-    "@gympass/tokens": "*",
+    "@gympass/yoga-common": "*",
+    "@gympass/yoga-tokens": "*",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {

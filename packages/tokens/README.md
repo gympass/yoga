@@ -1,11 +1,11 @@
-# `@gympass/tokens`
+# `@gympass/yoga-tokens`
 
 > TODO: description
 
 ## Usage
 
 ```
-const tokens = require('@gympass/tokens');
+const tokens = require('@gympass/yoga-tokens');
 
 // TODO: DEMONSTRATE API
 ```

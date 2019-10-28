@@ -6,18 +6,18 @@
     "test:native": "NODE_ENV=test jest --config=jest.config.native.js",
     "test:web": "NODE_ENV=test jest --config=jest.config.web.js",
     "prettier": "prettier",
-    "dev:web": "lerna run dev --scope=@gympass/doc --stream",
-    "dev:native:android": "lerna run android --scope=@gympass/labnative --stream",
-    "dev:native:ios": "lerna run ios --scope=@gympass/labnative --stream",
+    "dev:web": "lerna run dev --scope=@gympass/yoga-doc --stream",
+    "dev:native:android": "lerna run android --scope=@gympass/yoga-labnative --stream",
+    "dev:native:ios": "lerna run ios --scope=@gympass/yoga-labnative --stream",
     "lint": "eslint --ext js,jsx",
     "lint:design-system": "yarn lint packages/design-system",
     "lint:doc": "yarn lint packages/doc",
     "lint:labnative": "yarn lint packages/labnative",
     "lint:tokens": "yarn lint packages/tokens",
     "lint:all": "yarn lint:design-system && yarn lint:doc && yarn lint:labnative && yarn lint:tokens",
-    "build:design-system": "lerna run build --scope=@gympass/design-system",
-    "build:common": "lerna run build --scope=@gympass/common --stream",
-    "build:tokens": "lerna run build --scope=@gympass/tokens --stream",
+    "build:design-system": "lerna run build --scope=@gympass/yoga",
+    "build:common": "lerna run build --scope=@gympass/yoga-common --stream",
+    "build:tokens": "lerna run build --scope=@gympass/yoga-tokens --stream",
     "build": "lerna run build --stream",
     "prepublishOnly": "lerna run prepublishOnly --stream"
   },
@@ -53,10 +53,10 @@
       "packages/*"
     ],
     "nohoist": [
-      "@gympass/labnative/react-native",
-      "@gympass/labnative/react-native/**",
-      "@gympass/labnative/@react-native-community",
-      "@gympass/labnative/@react-native-community/**"
+      "@gympass/yoga-labnative/react-native",
+      "@gympass/yoga-labnative/react-native/**",
+      "@gympass/yoga-labnative/@react-native-community",
+      "@gympass/yoga-labnative/@react-native-community/**"
     ]
   },
   "config": {
