@@ -25,7 +25,7 @@ const tokens = {
 };
 
 /**
- * @namespace @gympass/tokens
+ * @namespace @gympass/yoga-tokens
  */
 export {
   tokens as default,

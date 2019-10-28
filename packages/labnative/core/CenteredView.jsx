@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, Picker, Platform, StyleSheet } from 'react-native';
-import { ThemeProvider } from '@gympass/design-system';
+import { ThemeProvider } from '@gympass/yoga';
 import { ThemeConsumer } from 'styled-components';
-import { hexToRgb } from '@gympass/common';
+import { hexToRgb } from '@gympass/yoga-common';
 
 const CenteredView = props => {
   const [themed, setThemed] = useState('endUser');

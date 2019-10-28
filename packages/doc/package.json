@@ -1,13 +1,12 @@
 {
-  "name": "@gympass/doc",
-  "private": true,
+  "name": "@gympass/yoga-doc",
   "description": "Gympass Design System components documentation",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "license": "MIT",
   "dependencies": {
-    "@gympass/common": "*",
-    "@gympass/design-system": "*",
-    "@gympass/tokens": "*",
+    "@gympass/yoga-common": "*",
+    "@gympass/yoga": "*",
+    "@gympass/yoga-tokens": "*",
     "@mdx-js/loader": "^1.4.5",
     "@mdx-js/mdx": "^1.4.5",
     "@mdx-js/react": "^1.4.5",
@@ -38,11 +37,13 @@
   },
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.1.7",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop -o",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "publish": "gh-pages -d public"
   }
 }

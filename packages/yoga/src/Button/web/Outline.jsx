@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { hexToRgb } from '@gympass/common';
+import { hexToRgb } from '@gympass/yoga-common';
 
 import Button from './Button';
 
