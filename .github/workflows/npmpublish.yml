@@ -17,7 +17,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: yarn
       - run: yarn test
-      - run: lerna publish --yes --registry https://registry.npmjs.org/:_authToken=${NPM_TOKEN}
+      - run: yarn lerna publish --yes --registry https://registry.npmjs.org/:_authToken=${NPM_TOKEN}
         env:
           GH_TOKEN: ${{secrets.GH_TOKEN}}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
