@@ -17,11 +17,7 @@ const StyledList = styled.ul.attrs(() => ({
             bottom: paddingBottom,
             left: paddingLeft,
           },
-          border: {
-            width: borderWidth,
-            style: borderStyle,
-            color: borderColor,
-          },
+          border: { width: borderWidth, color: borderColor },
         },
       },
     },
@@ -34,7 +30,7 @@ const StyledList = styled.ul.attrs(() => ({
           divided
             ? `border-${
                 horizontal ? 'right' : 'bottom'
-              }: ${borderWidth} ${borderStyle} ${borderColor}`
+              }: ${borderWidth}px solid ${borderColor}`
             : ''
         };
 

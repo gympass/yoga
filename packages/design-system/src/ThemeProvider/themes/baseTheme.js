@@ -31,8 +31,7 @@ const baseTheme = ({ primary, secondary }) => {
         left: spacing.xlarge,
       },
       border: {
-        width: '1px',
-        style: 'solid',
+        width: borders.small,
         color: colors.gray[2],
       },
     },
