@@ -98,32 +98,6 @@ describe('<List />', () => {
         );
         expect(container).toMatchSnapshot();
       });
-
-      it('should match snapshot with a default list using divs as wrappers', () => {
-        const { container } = render(
-          <ThemeProvider>
-            <List as="div">
-              <List.Item as="div">
-                <div>List test</div>
-              </List.Item>
-            </List>
-          </ThemeProvider>,
-        );
-        expect(container).toMatchSnapshot();
-      });
-
-      it('should match snapshot with a horizontal list using divs as wrappers', () => {
-        const { container } = render(
-          <ThemeProvider>
-            <List horizontal as="div">
-              <List.Item as="div">
-                <div>List test</div>
-              </List.Item>
-            </List>
-          </ThemeProvider>,
-        );
-        expect(container).toMatchSnapshot();
-      });
     });
   });
 });

@@ -44,23 +44,16 @@ const StyledList = styled.ul.attrs(() => ({
   `}
 `;
 
-const List = ({ children, horizontal, divided, theme, ...rest }) => (
-  <StyledList horizontal={horizontal} divided={divided} theme={theme} {...rest}>
-    {children}
-  </StyledList>
+const List = ({ horizontal, divided, ...rest }) => (
+  <StyledList horizontal={horizontal} divided={divided} {...rest} />
 );
 
 List.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node),
-  ]),
   horizontal: PropTypes.bool,
   divided: PropTypes.bool,
 };
 
 List.defaultProps = {
-  children: undefined,
   horizontal: false,
   divided: true,
 };

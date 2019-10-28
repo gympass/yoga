@@ -5,7 +5,7 @@ import { View } from 'react-native';
 
 const StyledView = styled.View`
   ${({
-    divider,
+    divided,
     theme: {
       components: {
         list: {
@@ -21,7 +21,7 @@ const StyledView = styled.View`
     },
   }) => `
     ${
-      divider
+      divided
         ? `
       border-bottom-width: ${borderWidth}px;
       border-bottom-color: ${borderColor};
@@ -32,20 +32,16 @@ const StyledView = styled.View`
   `}
 `;
 
-const ListItem = ({ children, theme, divider }) => (
-  <StyledView theme={theme} divider={divider}>
-    {children}
-  </StyledView>
+const ListItem = ({ divided, ...rest }) => (
+  <StyledView divided={divided} {...rest} />
 );
 
 ListItem.propTypes = {
-  children: PropTypes.node,
-  divider: PropTypes.bool,
+  divided: PropTypes.bool,
 };
 
 ListItem.defaultProps = {
-  children: undefined,
-  divider: true,
+  divided: true,
 };
 
 ListItem.displayName = 'Item';
