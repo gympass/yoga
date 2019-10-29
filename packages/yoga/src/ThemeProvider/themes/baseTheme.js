@@ -23,6 +23,20 @@ const baseTheme = ({ primary, secondary }) => {
   };
 
   const components = {
+    list: {
+      listItem: {
+        padding: {
+          top: spacing.large,
+          right: spacing.xlarge,
+          bottom: spacing.large,
+          left: spacing.xlarge,
+        },
+      },
+      border: {
+        width: borders.small,
+        color: colors.gray[2],
+      },
+    },
     button: {
       padding: {
         right: spacing.xlarge,
