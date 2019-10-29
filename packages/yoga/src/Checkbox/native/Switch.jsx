@@ -114,7 +114,6 @@ const Switch = ({
       <SwitchTrack
         checked={checked}
         disabled={disabled}
-        accessibilityRole="switch"
         as={Animated.View}
         style={{
           backgroundColor:
