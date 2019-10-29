@@ -126,7 +126,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  children: 'Gympass',
+  children: 'Button',
   disabled: false,
   full: false,
   inverted: false,
