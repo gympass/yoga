@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.1.2...@gympass/yoga-doc@0.2.0) (2019-10-29)
+
+### Features
+
+- **list:** component structure ([fa6070d](https://github.com/Gympass/yoga/commit/fa6070d))
+- **list:** merge with master branch ([bafdbe7](https://github.com/Gympass/yoga/commit/bafdbe7))
+
 ## [0.1.3](https://github.com/Gympass/design-system/compare/@gympass/yoga-doc@0.2.0...@gympass/yoga-doc@0.1.3) (2019-10-29)
 
 **Note:** Version bump only for package @gympass/yoga-doc
