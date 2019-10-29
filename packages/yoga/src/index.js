@@ -1,5 +1,6 @@
 import ThemeProvider, { themes } from './ThemeProvider';
 import Button from './Button';
+import List from './List';
 import Checkbox from './Checkbox';
 
-export { ThemeProvider, themes, Button, Checkbox };
+export { ThemeProvider, themes, Button, List, Checkbox };

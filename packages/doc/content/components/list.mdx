@@ -1,0 +1,46 @@
+---
+title: 'List'
+metaTitle: 'List Component'
+metaDescription: 'List Component'
+---
+
+import { Checkbox } from '@gympass/design-system';
+
+# List
+
+## Import the List
+
+```javascript
+import { List } from '@gympass/design-system';
+```
+
+## Usage
+
+```javascript reactLive=true
+<List>
+  <List.Item>
+    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <span>Lockers</span>
+      <Checkbox.Switch />
+    </div>
+  </List.Item>
+
+  <List.Item>
+    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <span>Wi-fi</span>
+      <Checkbox.Switch />
+    </div>
+  </List.Item>
+
+  <List.Item>
+    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <span>Parking</span>
+      <Checkbox.Switch />
+    </div>
+  </List.Item>
+</List>
+```
+
+## Properties
+
+<PropsTable component="List" />
