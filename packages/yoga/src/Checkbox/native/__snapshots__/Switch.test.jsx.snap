@@ -12,7 +12,6 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
 >
   <TouchableWithoutFeedback>
     <View
-      accessibilityRole="switch"
       checked={true}
       disabled={false}
       style={
@@ -60,7 +59,6 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 >
   <TouchableWithoutFeedback>
     <View
-      accessibilityRole="switch"
       checked={false}
       disabled={false}
       style={
@@ -108,7 +106,6 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 >
   <TouchableWithoutFeedback>
     <View
-      accessibilityRole="switch"
       checked={true}
       disabled={true}
       style={
@@ -156,7 +153,6 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 >
   <TouchableWithoutFeedback>
     <View
-      accessibilityRole="switch"
       checked={false}
       disabled={true}
       style={
