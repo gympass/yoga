@@ -3,14 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [0.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.1.2...@gympass/yoga-labnative@0.2.0) (2019-10-29)
-
-### Features
-
-- **list:** component structure ([fa6070d](https://github.com/Gympass/yoga/commit/fa6070d))
-- **list:** merge with master branch ([bafdbe7](https://github.com/Gympass/yoga/commit/bafdbe7))
-- **list:** native component ([cdad0b1](https://github.com/Gympass/yoga/commit/cdad0b1))
-
 ## [0.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.1.1...@gympass/yoga-labnative@0.1.2) (2019-10-29)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
