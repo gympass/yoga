@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.0.4...@gympass/yoga@0.0.5) (2019-10-29)
+
+### Bug Fixes
+
+- **switch:** remove accessibility role from native ([6bb5984](https://github.com/Gympass/yoga/commit/6bb5984))
+
 ## [0.0.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.0.3...@gympass/yoga@0.0.4) (2019-10-29)
 
 **Note:** Version bump only for package @gympass/yoga
