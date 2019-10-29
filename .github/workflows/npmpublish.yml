@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Configure CI Git User
-         run: |
+        run: |
           git checkout "${GITHUB_REF:11}"
           git config --global user.email octobot@github.com
           git config --global user.name GitHub Actions
