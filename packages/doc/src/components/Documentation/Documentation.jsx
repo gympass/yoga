@@ -10,7 +10,12 @@ import { CodeBlock, PropsTable, GithubTitle, InlineCode } from '..';
 const customComponents = {
   h1: GithubTitle,
   h2: ({ children, ...props }) => (
-    <h2 id={children.replace(/\s+/g, '-').toLowerCase()} {...props}>
+    <h2
+      id={(typeof children === 'string' ? children : '')
+        .replace(/\s+/g, '-')
+        .toLowerCase()}
+      {...props}
+    >
       {children}
     </h2>
   ),
