@@ -94,6 +94,7 @@ const Layout = ({
   return (
     <ThemeProvider theme={theme} locale={locale}>
       <Helmet>
+        <script async src="https://snack.expo.io/embed.js" />
         <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
         {metaTitle ? <title>{metaTitle}</title> : <title>{title}</title>}
         {metaTitle ? <meta name="title" content={metaTitle} /> : null}
