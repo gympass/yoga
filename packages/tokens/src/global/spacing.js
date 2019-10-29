@@ -2,7 +2,7 @@
  * @module spacing
  * @desc Spacing tokens module.
  *
- * @memberof @gympass/tokens
+ * @memberof @gympass/yoga-tokens
  */
 
 /**

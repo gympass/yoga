@@ -1,23 +1,31 @@
 {
   "scripts": {
     "commit": "git-cz",
-    "test": "jest",
-    "test:native": "jest --config=jest.config.native.js",
-    "test:web": "jest --config=jest.config.web.js",
+    "test": "NODE_ENV=test jest",
+    "pretest": "lerna run prebuild",
+    "test:native": "NODE_ENV=test jest --config=jest.config.native.js",
+    "test:web": "NODE_ENV=test jest --config=jest.config.web.js",
     "prettier": "prettier",
-    "dev:web": "lerna run dev --scope=@gympass/doc --stream",
-    "dev:native:android": "lerna run android --scope=@gympass/labnative --stream",
-    "dev:native:ios": "lerna run ios --scope=@gympass/labnative --stream",
+    "dev:web": "lerna run dev --scope=@gympass/yoga-doc --stream",
+    "dev:native:android": "lerna run android --scope=@gympass/yoga-labnative --stream",
+    "dev:native:ios": "lerna run ios --scope=@gympass/yoga-labnative --stream",
     "lint": "eslint --ext js,jsx",
-    "lint:design-system": "yarn lint packages/design-system",
+    "lint:yoga": "yarn lint packages/yoga",
     "lint:doc": "yarn lint packages/doc",
     "lint:labnative": "yarn lint packages/labnative",
     "lint:tokens": "yarn lint packages/tokens",
-    "lint:all": "yarn lint:design-system && yarn lint:doc && yarn lint:labnative && yarn lint:tokens"
+    "lint:all": "yarn lint:yoga && yarn lint:doc && yarn lint:labnative && yarn lint:tokens",
+    "build:yoga": "lerna run build --scope=@gympass/yoga",
+    "build:common": "lerna run build --scope=@gympass/yoga-common --stream",
+    "build:tokens": "lerna run build --scope=@gympass/yoga-tokens --stream",
+    "build": "lerna run build --stream --parallel",
+    "prepublishOnly": "lerna run prepublishOnly --stream"
   },
   "private": true,
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
     "@babel/core": "^7.5.5",
+    "@babel/node": "^7.6.3",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "10.0.3",
@@ -30,10 +38,11 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "3.1.0",
+    "fs-extra": "^8.1.0",
     "husky": "3.0.5",
     "jest": "^24.9.0",
     "jest-styled-components": "^6.3.3",
-    "lerna": "^3.16.4",
+    "lerna": "^3.18.3",
     "lint-staged": "9.2.5",
     "metro-react-native-babel-preset": "^0.56.0",
     "prettier": "1.18.2",
@@ -44,10 +53,10 @@
       "packages/*"
     ],
     "nohoist": [
-      "@gympass/labnative/react-native",
-      "@gympass/labnative/react-native/**",
-      "@gympass/labnative/@react-native-community",
-      "@gympass/labnative/@react-native-community/**"
+      "@gympass/yoga-labnative/react-native",
+      "@gympass/yoga-labnative/react-native/**",
+      "@gympass/yoga-labnative/@react-native-community",
+      "@gympass/yoga-labnative/@react-native-community/**"
     ]
   },
   "config": {

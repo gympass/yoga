@@ -5,7 +5,7 @@ import {
   configure,
   addDecorator,
 } from '@storybook/react-native';
-import { ThemeProvider } from '@gympass/design-system';
+import { ThemeProvider } from '@gympass/yoga';
 
 const style = {
   flex: 1,

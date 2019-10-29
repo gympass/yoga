@@ -46,7 +46,11 @@ const AnchorItem = styled.li`
 
 const getLinks = ({ url, title }) => (
   <AnchorItem key={url}>
-    <Link to={window.location.pathname + url}>{title}</Link>
+    <Link
+      to={typeof window !== 'undefined' ? window.location.pathname + url : url}
+    >
+      {title}
+    </Link>
   </AnchorItem>
 );
 
@@ -55,14 +59,17 @@ getLinks.propTypes = {
   title: string.isRequired,
 };
 
-const getHeadings = edges => {
+const getHeadings = (edges = []) => {
+  const pathname = typeof window !== 'undefined' && window.location.pathname;
+  const paths = edges.filter(
+    ({ node }) => node.fields && node.fields.slug === pathname,
+  );
+
   const [
     {
-      node: { tableOfContents },
+      node: { tableOfContents = {} },
     },
-  ] = edges.filter(
-    ({ node }) => node.fields && node.fields.slug === window.location.pathname,
-  );
+  ] = paths.length ? paths : [{ node: {} }];
 
   if (!Object.keys(tableOfContents).length) {
     return [];
@@ -89,17 +96,18 @@ const getSummary = edges => {
 };
 
 const Summary = () => {
+  const ssr = typeof window !== 'undefined';
   const {
     allMdx: { edges },
   } = HeadingsQuery();
   const [fixed, setFixed] = useState(false);
   const wrapperRef = useRef(null);
-  const handleScroll = () => setFixed(window.scrollY > 88);
+  const handleScroll = () => ssr && setFixed(window.scrollY > 88);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    ssr && window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => ssr && window.removeEventListener('scroll', handleScroll);
   });
 
   return (
