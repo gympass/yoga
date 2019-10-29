@@ -30,9 +30,7 @@ jobs:
         run: yarn build
       - name: Publish
         run: |
-          GH_TOKEN=${GH_TOKEN}
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-          yarn lerna publish --yes --registry https://registry.npmjs.org/:_authToken=${NPM_TOKEN}
+          GH_TOKEN=${GH_TOKEN} && NPM_TOKEN=${NPM_TOKEN} && echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc && yarn lerna publish --yes
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
