@@ -10,13 +10,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - run: git checkout "${GITHUB_REF:11}"
+      - name: Configure CI Git User
+      - run: |
+          git checkout "${GITHUB_REF:11}"
+          git config --global user.email octobot@github.com
+          git config --global user.name GitHub Actions
       - uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+      - name: Build
       - run: yarn
+      - name: Test
       - run: yarn test
+      - name: Publish
       - run: yarn lerna publish --yes --registry https://registry.npmjs.org/:_authToken=${NPM_TOKEN}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
