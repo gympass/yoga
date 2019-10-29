@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.6](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.0.5...@gympass/yoga@0.0.6) (2019-10-29)
+
+### Bug Fixes
+
+- **button:** change default props from Gympass to Button ([8cd5b52](https://github.com/Gympass/yoga/commit/8cd5b52))
+
 ## [0.0.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.0.4...@gympass/yoga@0.0.5) (2019-10-29)
 
 ### Bug Fixes
