@@ -58,6 +58,7 @@ const SwitchTrack = styled.label`
 
 const SwitchThumb = styled.span`
   position: relative;
+  pointer-events: none;
 
   ${({
     theme: {
