@@ -39,6 +39,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
 
 .c3 {
   position: relative;
+  pointer-events: none;
   width: 16px;
   height: 16px;
   left: 4px;
@@ -111,6 +112,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 
 .c3 {
   position: relative;
+  pointer-events: none;
   width: 16px;
   height: 16px;
   left: 4px;
@@ -191,6 +193,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 
 .c3 {
   position: relative;
+  pointer-events: none;
   width: 16px;
   height: 16px;
   left: 4px;
@@ -270,6 +273,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 
 .c3 {
   position: relative;
+  pointer-events: none;
   width: 16px;
   height: 16px;
   left: 4px;
