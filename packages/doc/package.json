@@ -1,10 +1,11 @@
 {
   "name": "@gympass/yoga-doc",
   "description": "Gympass Design System components documentation",
-  "version": "0.2.2",
+  "version": "0.2.1",
+  "private": true,
   "license": "MIT",
   "dependencies": {
-    "@gympass/yoga": "^0.0.6",
+    "@gympass/yoga": "^0.0.5",
     "@gympass/yoga-common": "^0.1.0",
     "@gympass/yoga-tokens": "^0.1.0",
     "@mdx-js/loader": "^1.4.5",
@@ -45,6 +46,7 @@
     "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop -o",
     "serve": "gatsby serve",
-    "publish": "gh-pages -d public"
-  }
+    "deploy": "gh-pages -d public"
+  },
+  "gitHead": "14873124d2c36e250c9fe2a5e9601b0f2c5efda1"
 }
