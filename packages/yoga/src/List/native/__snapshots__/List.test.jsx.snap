@@ -69,7 +69,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       style={null}
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -92,7 +92,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       style={null}
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -115,7 +115,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       style={null}
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -138,7 +138,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       style={null}
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -161,7 +161,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       style={null}
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -184,7 +184,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       style={null}
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -207,7 +207,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       style={null}
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -230,7 +230,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       style={null}
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -253,7 +253,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       style={null}
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -276,7 +276,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       style={null}
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -375,7 +375,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       }
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -405,7 +405,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       }
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -435,7 +435,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       }
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -465,7 +465,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       }
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -495,7 +495,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       }
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -525,7 +525,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       }
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -555,7 +555,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       }
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -585,7 +585,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       }
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -615,7 +615,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       }
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
@@ -645,7 +645,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       }
     >
       <View
-        divider={true}
+        divided={true}
         style={
           Array [
             Object {
