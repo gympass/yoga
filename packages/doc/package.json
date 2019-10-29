@@ -41,6 +41,7 @@
     "prettier": "^1.18.2"
   },
   "scripts": {
+    "prebuild": "gatsby clean",
     "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop -o",
     "serve": "gatsby serve",
