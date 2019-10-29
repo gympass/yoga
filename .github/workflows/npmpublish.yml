@@ -13,8 +13,11 @@ jobs:
       - name: Configure CI Git User
         run: |
           git checkout "${GITHUB_REF:11}"
+          git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git config --global user.email octobot@github.com
           git config --global user.name GitHub Actions
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - uses: actions/setup-node@v1
         with:
           node-version: 12
