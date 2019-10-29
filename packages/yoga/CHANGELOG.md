@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.7](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.0.6...@gympass/yoga@0.0.7) (2019-10-29)
+
+### Bug Fixes
+
+- **button:** change default text from Gympass to Button (native) ([aef0cbb](https://github.com/Gympass/yoga/commit/aef0cbb))
+
 ## [0.0.6](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.0.5...@gympass/yoga@0.0.6) (2019-10-29)
 
 ### Bug Fixes
