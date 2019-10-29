@@ -19,7 +19,8 @@
     "build:common": "lerna run build --scope=@gympass/yoga-common --stream",
     "build:tokens": "lerna run build --scope=@gympass/yoga-tokens --stream",
     "build": "lerna run build --stream --parallel",
-    "prepublishOnly": "lerna run prepublishOnly --stream"
+    "prepublishOnly": "lerna run prepublishOnly --stream",
+    "postpublish": "lerna run deploy --stream"
   },
   "private": true,
   "devDependencies": {
