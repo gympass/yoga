@@ -22,8 +22,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - name: Build
+      - name: Install dependencies
         run: yarn
+      - name: Build
+        run: yarn build
       - name: Test
         run: yarn test
       - name: Publish
