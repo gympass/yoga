@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider as SCThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
-import * as tokens from '@gympass/tokens';
+import * as tokens from '@gympass/yoga-tokens';
 import * as themes from './themes';
 
 const getTheme = ({ theme, locale }) => {

@@ -2,7 +2,7 @@
  * @module transition
  * @desc Transitions tokens module.
  *
- * @memberof @gympass/tokens
+ * @memberof @gympass/yoga-tokens
  */
 
 /**

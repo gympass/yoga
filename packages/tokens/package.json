@@ -1,29 +1,31 @@
 {
-  "name": "@gympass/tokens",
-  "version": "0.0.0",
+  "name": "@gympass/yoga-tokens",
+  "version": "0.1.0",
   "description": "Gympass design tokens definitions",
   "keywords": [
     "gympass",
     "design",
     "tokens"
   ],
-  "homepage": "https://github.com/Gympass/design-system",
+  "homepage": "https://github.com/Gympass/yoga",
   "license": "MIT",
-  "main": "index.js",
-  "directories": {
-    "src": "src"
+  "main": "src/index.js",
+  "scripts": {
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "NODE_ENV=cjs babel ./src --out-dir dist/cjs",
+    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "prebuild": "rm -rf ./dist",
+    "prepublishOnly": "node ../../prepublish.js"
   },
-  "files": [
-    "src"
-  ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "directory": "dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gympass/design-system.git"
+    "url": "git+https://github.com/Gympass/yoga.git"
   },
   "bugs": {
-    "url": "https://github.com/Gympass/design-system/issues"
+    "url": "https://github.com/Gympass/yoga/issues"
   }
 }

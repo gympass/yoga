@@ -1,5 +1,5 @@
-import tokens from '@gympass/tokens';
-import { hexToRgb } from '@gympass/common';
+import tokens from '@gympass/yoga-tokens';
+import { hexToRgb } from '@gympass/yoga-common';
 
 const {
   spacing,

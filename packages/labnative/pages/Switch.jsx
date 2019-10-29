@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import { Checkbox } from '@gympass/design-system';
+import { Checkbox } from '@gympass/yoga';
 import styled from 'styled-components';
 
 const StyledText = styled.Text`
@@ -40,7 +40,7 @@ const CheckboxPage = () => {
       <SwitchWrapper>
         <Checkbox.Switch
           checked={checked}
-          onPress={() => setChecked(!checked)}
+          onChange={() => setChecked(!checked)}
         />
       </SwitchWrapper>
     </View>

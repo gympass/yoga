@@ -1,0 +1,37 @@
+name: Yoga - Gympass Design System
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Configure CI Git User
+        run: |
+          git checkout "${GITHUB_REF:11}"
+          git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git config --global user.email octobot@github.com
+          git config --global user.name GitHub Actions
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - name: Install dependencies
+        run: yarn
+      - name: Test
+        run: yarn test
+      - name: Build
+        run: yarn build
+      - name: Publish
+        run: |
+          GH_TOKEN=${GH_TOKEN}
+          yarn lerna publish --yes --registry https://registry.npmjs.org/:_authToken=${NPM_TOKEN}
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
