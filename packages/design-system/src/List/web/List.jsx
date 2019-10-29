@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const StyledList = styled.ul.attrs(() => ({
-  as: 'ul',
-}))`
+const StyledList = styled.ul`
   ${({
     divided,
     horizontal,
