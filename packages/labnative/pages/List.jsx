@@ -1,5 +1,5 @@
 import React from 'react';
-import { List } from '@gympass/design-system';
+import { List } from '@gympass/yoga';
 import { Text } from 'react-native';
 
 const data = [
