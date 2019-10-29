@@ -5,11 +5,12 @@
   "command": {
     "publish": {
       "conventionalCommits": true,
-      "message": "chore(release): :tada: :rocket:"
+      "ignoreChanges": ["**/*.test.jsx", "**/*.md"]
     },
     "version": {
       "conventionalCommits": true,
-      "createRelease": "github"
+      "createRelease": "github",
+      "message": "chore(release): :tada: :rocket:"
     }
   }
 }
