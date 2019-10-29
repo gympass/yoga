@@ -42,7 +42,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
     class="c0"
     disabled=""
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -113,7 +113,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
     class="c0 c1"
     disabled=""
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -184,7 +184,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
     class="c0 c1"
     disabled=""
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -230,7 +230,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
   <button
     class="c0"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -300,7 +300,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
   <button
     class="c0 c1"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -370,7 +370,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
   <button
     class="c0 c1"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -430,7 +430,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
   <button
     class="c0"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -526,7 +526,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
   <button
     class="c0 c1"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -610,7 +610,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
   <button
     class="c0 c1"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -656,7 +656,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
   <button
     class="c0"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -726,7 +726,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
   <button
     class="c0 c1"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -796,7 +796,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
   <button
     class="c0 c1"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -842,7 +842,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
   <button
     class="c0"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -912,7 +912,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
   <button
     class="c0 c1"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
@@ -982,7 +982,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
   <button
     class="c0 c1"
   >
-    Gympass
+    Button
   </button>
 </div>
 `;
