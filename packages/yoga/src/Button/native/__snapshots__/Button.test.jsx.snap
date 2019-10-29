@@ -51,7 +51,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
           ]
         }
       >
-        Gympass
+        Button
       </Text>
     </View>
   </TouchableWithoutFeedback>
@@ -214,7 +214,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
           ]
         }
       >
-        Gympass
+        Button
       </Text>
     </View>
   </TouchableWithoutFeedback>
@@ -376,7 +376,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
           ]
         }
       >
-        Gympass
+        Button
       </Text>
     </View>
   </TouchableWithoutFeedback>
@@ -537,7 +537,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
           ]
         }
       >
-        Gympass
+        Button
       </Text>
     </View>
   </TouchableWithoutFeedback>
@@ -695,7 +695,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
           ]
         }
       >
-        Gympass
+        Button
       </Text>
     </View>
   </TouchableWithoutFeedback>
