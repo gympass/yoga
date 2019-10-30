@@ -5,7 +5,14 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import * as components from '@gympass/yoga';
 
-import { CodeBlock, PropsTable, GithubTitle, InlineCode } from '..';
+import {
+  CodeBlock,
+  PropsTable,
+  GithubTitle,
+  InlineCode,
+  TabbedView,
+  Tab,
+} from '..';
 
 const customComponents = {
   h1: GithubTitle,
@@ -21,6 +28,10 @@ const customComponents = {
   ),
   code: CodeBlock,
   inlineCode: InlineCode,
+  TabbedView: ({ children, ...rest }) => (
+    <TabbedView {...rest}>{children}</TabbedView>
+  ),
+  Tab: ({ children, ...rest }) => <Tab {...rest}>{children}</Tab>,
   PropsTable,
   ...components,
 };
