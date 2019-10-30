@@ -16,6 +16,12 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
   }
 
+  code {
+    color: ${colors.madrid[3]};
+    font-family: monospace;
+    font-size: 14px;
+  }
+
   html, body  {
     padding: 0;
     margin: 0;
@@ -31,11 +37,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    margin: 0 0 14px
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
   }
 
   a {
-    color: #1890ff;
+    color: ${colors.madrid[3]};
     text-decoration: none;
   }
 
