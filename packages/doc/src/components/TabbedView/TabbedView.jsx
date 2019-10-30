@@ -43,7 +43,12 @@ const NavItem = styled.li`
     color: red;
   }
 
-  ${props => props.active && `color: red;`};
+  ${props =>
+    props.active &&
+    `
+    color: ${colors.madrid[3]};
+    border-bottom: 2px solid ${colors.madrid[3]};
+  `};
 `;
 
 NavItem.displayName = 'NavItem';

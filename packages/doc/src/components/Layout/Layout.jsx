@@ -40,7 +40,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 38px;
+    font-size: 48px;
     margin: 0;
     font-weight: 700;
 
