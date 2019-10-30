@@ -12,6 +12,7 @@ const Navbar = styled.ul`
   list-style: none;
   margin: 0 0 25px 0;
   padding: 0;
+  border-bottom: 1px dotted ${colors.gray[2]};
 `;
 
 Navbar.displayName = 'Navbar';
