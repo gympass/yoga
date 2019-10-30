@@ -5,10 +5,19 @@ import { arrayOf, object } from 'prop-types';
 import tokens from '@gympass/yoga-tokens';
 
 import createTree from './tree';
+import GympassLogo from '../../images/gympass-logo.svg';
 
 const { colors } = tokens;
 
+const Logo = styled(GympassLogo)`
+  width: 120px;
+  align-self: center;
+  margin: 20px 0 40px 0;
+`;
+
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   height: 100%;
   grid-area: Navigation;
   box-shadow: inset -1px 0px 0px #f6f6f6;
@@ -18,6 +27,10 @@ const Wrapper = styled.div`
   span {
     color: #999;
   }
+`;
+
+const Nav = styled.div`
+  margin: 0 70px;
 `;
 
 const List = styled.ul`
@@ -35,7 +48,7 @@ const AnchorLink = styled(Link)`
   text-indent: ${({ level }) => `calc(15px * ${level})`};
   margin: 10px 0;
   border-right: 1px solid transparent;
-  padding: 10px 100px 10px 45px;
+  padding: 10px 0px 10px 0px;
 
   ${({ as }) =>
     !as &&
@@ -51,10 +64,7 @@ const ListItem = styled.li`
     ${({ active }) =>
       active &&
       `
-      border-right: 1px solid #F46152;
-      background-color: rgba(244, 97, 82, 0.05);
       color: #F46152;
-      font-weight: 500;
   `}
   }
 `;
@@ -83,7 +93,10 @@ const Navigation = ({ items }) => {
 
   return (
     <Wrapper>
-      <List level={0}>{getHtml(tree)}</List>
+      <Logo />
+      <Nav>
+        <List level={0}>{getHtml(tree)}</List>
+      </Nav>
     </Wrapper>
   );
 };

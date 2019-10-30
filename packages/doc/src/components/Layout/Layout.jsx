@@ -72,11 +72,8 @@ const GlobalStyle = createGlobalStyle`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr 166px;
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
-    'Header Header Header'
-    'Navigation Documentation Summary';
+  grid-template-columns: auto 1fr;
+  grid-template-areas: 'Navigation Documentation';
   height: 100%;
   background-color: ${colors.gray[1]};
 `;
@@ -119,23 +116,8 @@ const Layout = ({
       </Helmet>
       <GlobalStyle />
       <Grid>
-        <Header>
-          <Dropdown
-            label="Theme:"
-            value={theme}
-            options={allThemes}
-            onSelect={tm => setTheme(tm)}
-          />
-          <Dropdown
-            label="Locale:"
-            value={locale}
-            options={allLocales}
-            onSelect={lc => setLocale(lc)}
-          />
-        </Header>
         <Navigation items={nav} />
         <Documentation mdx={body} />
-        <Summary>Alou</Summary>
       </Grid>
     </ThemeProvider>
   );
