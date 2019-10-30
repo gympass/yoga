@@ -29,11 +29,6 @@ const getMetaData = (isComponent, component) => {
   }
   const {
     allComponentMetadata: { edges },
-    site: {
-      siteMetadata: {
-        github: { componentsPath },
-      },
-    },
   } = DescriptionQuery();
 
   const {
@@ -45,40 +40,29 @@ const getMetaData = (isComponent, component) => {
       parentNode.displayName.toLowerCase() === component.toLowerCase(),
   )[0];
 
-  return { description, componentsPath };
+  return { description };
 };
 
-const GithubTitle = ({ children = '' }) => {
+const ComponentTitle = ({ children = '' }) => {
   const childrenString = typeof children === 'string' ? children : '';
   const isComponent =
     typeof window !== 'undefined' &&
     window.location.href.search(/components\/.+/) > -1;
 
-  const { description = '', componentsPath = '' } = getMetaData(
+  const { description = '' } = getMetaData(
     isComponent,
     childrenString.replace('.', ''),
   );
   return (
     <>
-      <Heading>
-        {children}
-        {isComponent && (
-          <a
-            href={`${componentsPath}${children.split('.')[0]}/`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <ScaledGithubLogo />
-          </a>
-        )}
-      </Heading>
+      <Heading>{children}</Heading>
       {isComponent && <p>{description}</p>}
     </>
   );
 };
 
-GithubTitle.propTypes = {
+ComponentTitle.propTypes = {
   children: node.isRequired,
 };
 
-export default GithubTitle;
+export default ComponentTitle;

@@ -1,6 +1,6 @@
 import CodeBlock from './CodeBlock';
 import PropsTable from './PropsTable';
-import GithubTitle from './GithubTitle';
+import ComponentTitle from './ComponentTitle';
 import Header from './Header';
 import InlineCode from './InlineCode';
 import Layout from './Layout';
@@ -12,7 +12,7 @@ import { TabbedView, Tab } from './TabbedView';
 
 export {
   CodeBlock,
-  GithubTitle,
+  ComponentTitle,
   Header,
   InlineCode,
   Layout,
