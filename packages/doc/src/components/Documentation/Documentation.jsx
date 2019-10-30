@@ -8,14 +8,14 @@ import * as components from '@gympass/yoga';
 import {
   CodeBlock,
   PropsTable,
-  GithubTitle,
+  ComponentTitle,
   InlineCode,
   TabbedView,
   Tab,
 } from '..';
 
 const customComponents = {
-  h1: GithubTitle,
+  h1: ComponentTitle,
   h2: ({ children, ...props }) => (
     <h2
       id={(typeof children === 'string' ? children : '')
