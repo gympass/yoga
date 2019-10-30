@@ -36,7 +36,7 @@ const customComponents = {
 
 const Wrapper = styled.div`
   grid-area: Documentation;
-  padding: 30px 40px;
+  padding: 40px 70px;
 `;
 
 customComponents.h2.propTypes = {

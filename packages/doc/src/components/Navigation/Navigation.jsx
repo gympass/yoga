@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { arrayOf, object } from 'prop-types';
 import tokens from '@gympass/yoga-tokens';
+
+import Arrow from '../../images/arrow-dropdown.svg';
 
 import createTree from './tree';
 import GympassLogo from '../../images/gympass-logo.svg';
@@ -69,9 +71,43 @@ const ListItem = styled.li`
   }
 `;
 
+const Colapsible = styled.div`
+  cursor: pointer;
+  color: ${colors.gray[3]};
+
+  + ul {
+    display: ${({ visible }) => (visible ? 'block' : 'none')};
+  }
+
+  svg {
+    width: 10px;
+    margin-left: 5px;
+  }
+`;
+
 const getHtml = (tree, level = 0) =>
   Object.values(tree).map(({ title, url, ...childs }) => {
     const hasChild = Boolean(Object.keys(childs).length);
+    const [opened, setOpened] = useState([]);
+
+    const toSlug = string =>
+      string
+        .replace(/([a-z])([A-Z])/g, '$1-$2')
+        .replace(/[\s_]+/g, '-')
+        .toLowerCase();
+
+    const toggleLevel = name => {
+      const kebabStr = toSlug(name);
+      const exists = opened.includes(kebabStr);
+      let newState = [];
+
+      if (exists) {
+        newState = opened.filter(e => e !== kebabStr);
+      } else {
+        newState = [...opened, kebabStr];
+      }
+      setOpened(newState);
+    };
 
     return (
       <ListItem
@@ -80,8 +116,14 @@ const getHtml = (tree, level = 0) =>
           typeof window !== 'undefined' && window.location.pathname === url
         }
       >
-        <AnchorLink to={url} level={level} as={hasChild && 'span'}>
-          {title}
+        <AnchorLink
+          to={url}
+          level={level}
+          as={hasChild && Colapsible}
+          visible={opened.includes(toSlug(title))}
+          onClick={hasChild ? () => toggleLevel(title) : ''}
+        >
+          {title} {hasChild ? <Arrow /> : ''}
         </AnchorLink>
         {hasChild && <List level={level}>{getHtml(childs, level + 1)}</List>}
       </ListItem>
@@ -94,6 +136,7 @@ const Navigation = ({ items }) => {
   return (
     <Wrapper>
       <Logo />
+
       <Nav>
         <List level={0}>{getHtml(tree)}</List>
       </Nav>
