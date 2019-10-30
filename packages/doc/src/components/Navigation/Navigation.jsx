@@ -2,13 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { arrayOf, object } from 'prop-types';
+import tokens from '@gympass/yoga-tokens';
 
 import createTree from './tree';
+
+const { colors } = tokens;
 
 const Wrapper = styled.div`
   height: 100%;
   grid-area: Navigation;
   box-shadow: inset -1px 0px 0px #f6f6f6;
+  background-color: ${colors.gray[0]};
+  padding-top: 30px;
 
   span {
     color: #999;
@@ -16,10 +21,9 @@ const Wrapper = styled.div`
 `;
 
 const List = styled.ul`
-  margin: 0;
   padding: 0px;
   list-style-type: none;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
 `;
 

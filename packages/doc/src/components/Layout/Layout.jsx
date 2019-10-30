@@ -5,9 +5,11 @@ import styled, { createGlobalStyle } from 'styled-components';
 import Helmet from 'react-helmet';
 
 import { ThemeProvider, themes } from '@gympass/yoga';
-import * as tokens from '@gympass/yoga-tokens';
+import tokens from '@gympass/yoga-tokens';
 
 import { Navigation, Documentation, Header, Summary, Dropdown } from '..';
+
+const { colors } = tokens;
 
 const GlobalStyle = createGlobalStyle`
   #gatsby-focus-wrapper, #___gatsby {
@@ -18,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     height: 100%;
-    font-family: 'Open Sans';
+    font-family: 'Open sans';
     color: #666;
   }
 
@@ -38,12 +40,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 38px;
     margin: 0;
+    font-weight: 700;
 
     + p {
+      font-size: 18px;
       margin: 10px 0 50px;
-      font-style: italic;
+      font-weight: 300;
     }
   }
 
@@ -74,6 +78,7 @@ const Grid = styled.div`
     'Header Header Header'
     'Navigation Documentation Summary';
   height: 100%;
+  background-color: ${colors.gray[1]};
 `;
 
 const Layout = ({

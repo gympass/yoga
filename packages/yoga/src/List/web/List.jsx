@@ -34,6 +34,7 @@ const StyledList = styled.ul`
   `}
 `;
 
+/** Lists are a continuous group of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text. */
 const List = ({ horizontal, divided, ...rest }) => (
   <StyledList horizontal={horizontal} divided={divided} {...rest} />
 );
