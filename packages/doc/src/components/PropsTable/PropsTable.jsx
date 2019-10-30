@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { string, shape } from 'prop-types';
+import tokens from '@gympass/yoga-tokens';
 import MetaDataQuery from './MetaDataQuery';
 import { InlineCode } from '..';
+
+const { colors } = tokens;
 
 const BORDER_COLOR = '#e2dddd';
 
@@ -31,6 +34,8 @@ const StyledTable = styled.table`
 
   tbody {
     tr {
+      background-color: ${colors.gray[0]};
+
       td {
         border-top: 1px solid ${BORDER_COLOR};
         padding: 14px 12px 12px;

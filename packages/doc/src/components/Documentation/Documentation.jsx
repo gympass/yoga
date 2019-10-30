@@ -28,19 +28,15 @@ const customComponents = {
   ),
   code: CodeBlock,
   inlineCode: InlineCode,
-  TabbedView: ({ children, ...rest }) => (
-    <TabbedView {...rest}>{children}</TabbedView>
-  ),
-  Tab: ({ children, ...rest }) => <Tab {...rest}>{children}</Tab>,
+  TabbedView: ({ ...props }) => <TabbedView {...props} />,
+  Tab: ({ ...props }) => <Tab {...props} />,
   PropsTable,
   ...components,
 };
 
 const Wrapper = styled.div`
   grid-area: Documentation;
-  padding-bottom: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 30px 40px;
 `;
 
 customComponents.h2.propTypes = {
