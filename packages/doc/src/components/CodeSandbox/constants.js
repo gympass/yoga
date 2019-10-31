@@ -2,24 +2,14 @@ const HTML = '<div id="root"></div>';
 
 const CODE = `import React from 'react';
 import ReactDOM from 'react-dom';
+import {ThemeProvider, Button} from '@gympass/yoga';
 
-function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
-}
-
-const user = {
-  firstName: 'Harper',
-  lastName: 'Meck',
-};
-
-const element = (
-  <h1>
-    Hello, {formatName(user)}!
-  </h1>
-);
+const App = () => <ThemeProvider>
+<Button>Gympass</Button>
+</ThemeProvider>
 
 ReactDOM.render(
-  element,
+  <App />,
   document.getElementById('root')
 );`;
 
@@ -30,6 +20,8 @@ const PACKAGE = {
         dependencies: {
           react: 'latest',
           'react-dom': 'latest',
+          '@gympass/yoga': 'latest',
+          'styled-components': 'latest',
         },
       },
     },
