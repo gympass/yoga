@@ -14,7 +14,7 @@ const CodeSandbox = ({ children }) => {
 
   return (
     <iframe
-      src={`https://codesandbox.io/embed/${sandboxId}?fontsize=14`}
+      src={`https://codesandbox.io/embed/${sandboxId}?fontsize=14&hidenavigation=1`}
       style={{
         width: '100%',
         height: 500,
