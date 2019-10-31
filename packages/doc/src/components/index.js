@@ -9,6 +9,7 @@ import Summary from './Summary';
 import Documentation from './Documentation';
 import Dropdown from './Dropdown';
 import { TabbedView, Tab } from './TabbedView';
+import CodeSandbox from './CodeSandbox';
 
 export {
   CodeBlock,
@@ -23,4 +24,5 @@ export {
   Dropdown,
   TabbedView,
   Tab,
+  CodeSandbox,
 };

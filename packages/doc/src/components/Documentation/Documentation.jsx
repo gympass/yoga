@@ -13,6 +13,7 @@ import {
   InlineCode,
   TabbedView,
   Tab,
+  CodeSandbox,
 } from '..';
 
 const { colors } = tokens;
@@ -33,6 +34,7 @@ const customComponents = {
   inlineCode: InlineCode,
   TabbedView: ({ ...props }) => <TabbedView {...props} />,
   Tab: ({ ...props }) => <Tab {...props} />,
+  CodeSandbox: ({ ...props }) => <CodeSandbox {...props} />,
   PropsTable,
   ...components,
 };
