@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { URL, setOptions } from './constants';
+import { URL, setOptions } from './code';
 
 const CodeSandbox = ({ children }) => {
   const [sandboxId, setSandboxId] = useState(null);
