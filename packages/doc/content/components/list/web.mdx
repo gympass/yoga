@@ -13,6 +13,22 @@ Gympass `<List />` component implements all our design guidelines, be sure to wr
     `import React from 'react';
   import ReactDOM from 'react-dom';
   import {ThemeProvider, Button, List, Checkbox} from '@gympass/yoga';`,
-    `<Button>haha</Button>`,
+    `<List>
+      <List.Item>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Lockers</span> <Checkbox.Switch />
+        </div>
+      </List.Item>
+      <List.Item>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Wi-fi</span> <Checkbox.Switch />
+        </div>
+      </List.Item>
+      <List.Item>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>Parking</span> <Checkbox.Switch />
+        </div>
+      </List.Item>
+    </List>`,
   ]}
 />
