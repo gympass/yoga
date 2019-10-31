@@ -1,20 +1,22 @@
 const HTML = '<div id="root"></div>';
 const URL = 'https://codesandbox.io/api/v1/sandboxes/define?json=1';
 
-const getCode = component => `import React from 'react';
-import ReactDOM from 'react-dom';
-import {ThemeProvider, Button} from '@gympass/yoga';
+const getCode = children => {
+  const [imports, component] = children;
 
-const App = () => <ThemeProvider>
-${component}
-</ThemeProvider>
+  return `${imports}
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);`;
+  const App = () => <ThemeProvider>
+  ${component}
+  </ThemeProvider>
 
-const getPackage = component =>
+  ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+  );`;
+};
+
+const getPackage = code =>
   JSON.stringify({
     files: {
       'package.json': {
@@ -28,7 +30,7 @@ const getPackage = component =>
         },
       },
       'index.js': {
-        content: getCode(component),
+        content: getCode(code),
       },
       'index.html': {
         content: HTML,
@@ -36,13 +38,13 @@ const getPackage = component =>
     },
   });
 
-const setOptions = component => ({
+const setOptions = code => ({
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json',
   },
-  body: getPackage(component),
+  body: getPackage(code),
 });
 
 export { URL, setOptions };
