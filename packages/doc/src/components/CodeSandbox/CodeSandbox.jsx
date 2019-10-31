@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { URL, METHOD } from './constants';
+import { URL, setOptions } from './constants';
 
-const CodeSandbox = () => {
+const CodeSandbox = ({ children }) => {
   const [sandboxId, setSandboxId] = useState(null);
 
   useEffect(() => {
     if (!sandboxId) {
-      fetch(URL, METHOD)
+      fetch(URL, setOptions(children))
         .then(x => x.json())
         .then(data => setSandboxId(data.sandbox_id));
     }
