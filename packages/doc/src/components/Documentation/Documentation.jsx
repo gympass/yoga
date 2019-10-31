@@ -6,6 +6,7 @@ import { MDXProvider } from '@mdx-js/react';
 import * as components from '@gympass/yoga';
 import tokens from '@gympass/yoga-tokens';
 
+import { hexToRgb } from '@gympass/yoga-common';
 import {
   CodeBlock,
   PropsTable,
@@ -41,8 +42,8 @@ const customComponents = {
 
 const Wrapper = styled.div`
   grid-area: Documentation;
-  padding: 40px 70px;
-  background-color: ${colors.gray[1]};
+  padding: 40px 100px;
+  background-color: ${hexToRgb(colors.gray[1], 0.7)};
 `;
 
 customComponents.h2.propTypes = {

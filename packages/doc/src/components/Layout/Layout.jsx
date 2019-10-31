@@ -7,7 +7,7 @@ import Helmet from 'react-helmet';
 import { ThemeProvider, themes } from '@gympass/yoga';
 import tokens from '@gympass/yoga-tokens';
 
-import { Navigation, Documentation, Header, Summary, Dropdown } from '..';
+import { Navigation, Documentation } from '..';
 
 const { colors } = tokens;
 
@@ -83,7 +83,6 @@ const Grid = styled.div`
   grid-template-columns: auto 1fr;
   grid-template-areas: 'Navigation Documentation';
   height: 100%;
-  background-color: ${colors.gray[1]};
 `;
 
 const Layout = ({
