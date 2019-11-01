@@ -23,6 +23,78 @@ const baseTheme = ({ primary, secondary }) => {
   };
 
   const components = {
+    slider: {
+      track: {
+        backgroundColor: {
+          active: colors.primary[3],
+          inactive: colors.gray[2],
+        },
+        height: 4,
+        border: {
+          radius: radii.circle,
+        },
+      },
+      snapDot: {
+        backgroundColor: {
+          active: primary[3],
+          inactive: colors.gray[2],
+        },
+        border: {
+          radius: radii.circle,
+        },
+        height: 10,
+        width: 10,
+        position: -30,
+      },
+      marker: {
+        backgroundColor: primary[3],
+        width: 24,
+        height: 24,
+        border: {
+          width: 6,
+          color: colors.white,
+          radius: radii.circle,
+        },
+        shadow: elevations.small,
+      },
+      tooltip: {
+        shadow: elevations.small,
+        radius: radii.rounded,
+        backgroundColor: colors.gray[1],
+        padding: {
+          top: spacing.xxsmall,
+          right: spacing.xxsmall,
+          bottom: spacing.xxsmall,
+          left: spacing.xxsmall,
+        },
+        height: 56,
+        width: 95,
+        font: {
+          title: {
+            size: fontSizes[2],
+            weight: fontWeights.bold,
+          },
+          description: {
+            size: fontSizes[2],
+            weight: fontWeights.regular,
+          },
+        },
+        arrow: {
+          height: 16,
+          width: 16,
+        },
+        ribbon: {
+          backgroundColor: secondary[3],
+          radius: radii.rounded,
+          width: 95,
+          font: {
+            color: colors.white,
+            size: fontSizes[1],
+            weight: fontWeights.bold,
+          },
+        },
+      },
+    },
     list: {
       listItem: {
         padding: {
