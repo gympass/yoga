@@ -59,7 +59,11 @@ const plugins = [
       fonts: [
         {
           family: 'Open Sans',
-          variants: ['300', '400', '500', '700'],
+          variants: ['300', '500', '700'],
+        },
+        {
+          family: 'Muli',
+          variants: ['100', '300', '400', '500', '700', '900'],
         },
       ],
     },

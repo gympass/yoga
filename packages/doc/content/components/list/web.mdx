@@ -2,33 +2,33 @@
 
 Gympass `<List />` component implements all our design guidelines, be sure to wrap your items with `<List.Item/>` that uses default spacing, border and color pallete tokens.
 
+### Usage
+
+```javascript reactLive=true
+<List>
+  <List.Item>
+    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <span>Allysso</span>
+      <Checkbox.Switch />
+    </div>
+  </List.Item>
+
+  <List.Item>
+    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <span>Wi-fi</span>
+      <Checkbox.Switch />
+    </div>
+  </List.Item>
+
+  <List.Item>
+    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <span>Parking</span>
+      <Checkbox.Switch />
+    </div>
+  </List.Item>
+</List>
+```
+
 ### Props
 
 <PropsTable component="List" />
-
-### Usage
-
-<CodeSandbox
-  code={[
-    `import React from 'react';
-  import ReactDOM from 'react-dom';
-  import {ThemeProvider, Button, List, Checkbox} from '@gympass/yoga';`,
-    `<List>
-      <List.Item>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Lockers</span> <Checkbox.Switch />
-        </div>
-      </List.Item>
-      <List.Item>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Wi-fi</span> <Checkbox.Switch />
-        </div>
-      </List.Item>
-      <List.Item>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <span>Parking</span> <Checkbox.Switch />
-        </div>
-      </List.Item>
-    </List>`,
-  ]}
-/>

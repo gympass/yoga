@@ -9,7 +9,6 @@ const Wrapper = styled.div`
   position: relative;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: #f5f5fa;
 
   ${({ fixed }) =>
     fixed &&
