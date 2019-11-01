@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { string, oneOfType, number, node } from 'prop-types';
+import { TouchableWithoutFeedback } from 'react-native';
 import styled from 'styled-components';
 
 import RadioGroupContext from '../RadioGroupContext';
-import { TouchableWithoutFeedback } from 'react-native';
 
 const RadioMark = styled.View`
   align-items: center;
