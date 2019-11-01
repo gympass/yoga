@@ -4,9 +4,6 @@ import styled from 'styled-components';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import * as components from '@gympass/yoga';
-import tokens from '@gympass/yoga-tokens';
-
-import { hexToRgb } from '@gympass/yoga-common';
 import {
   CodeBlock,
   PropsTable,
@@ -14,10 +11,7 @@ import {
   InlineCode,
   TabbedView,
   Tab,
-  CodeSandbox,
 } from '..';
-
-const { colors } = tokens;
 
 const customComponents = {
   h1: ComponentTitle,
@@ -35,15 +29,13 @@ const customComponents = {
   inlineCode: InlineCode,
   TabbedView: ({ ...props }) => <TabbedView {...props} />,
   Tab: ({ ...props }) => <Tab {...props} />,
-  CodeSandbox: ({ ...props }) => <CodeSandbox {...props} />,
   PropsTable,
   ...components,
 };
 
 const Wrapper = styled.div`
   grid-area: Documentation;
-  padding: 40px 100px;
-  background-color: ${hexToRgb(colors.gray[1], 0.7)};
+  padding: 30px 100px;
 `;
 
 customComponents.h2.propTypes = {

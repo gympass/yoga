@@ -7,7 +7,7 @@ import Helmet from 'react-helmet';
 import { ThemeProvider, themes } from '@gympass/yoga';
 import tokens from '@gympass/yoga-tokens';
 
-import { Navigation, Documentation } from '..';
+import { Navigation, Documentation, Header } from '..';
 
 const { colors } = tokens;
 
@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     height: 100%;
-    font-family: 'Open sans';
+    font-family: 'Muli';
     color: #666;
   }
 
@@ -50,9 +50,10 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     font-size: 48px;
     margin: 0;
-    font-weight: 700;
+    font-weight: 300;
 
     + p {
+      color: #6b6b78;
       font-size: 18px;
       margin: 10px 0 50px;
       font-weight: 300;
@@ -81,8 +82,11 @@ const GlobalStyle = createGlobalStyle`
 const Grid = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-areas: 'Navigation Documentation';
-  height: 100%;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'Header Header Header'
+    'Navigation Documentation Summary';
+  background-color: ${colors.gray[1]};
 `;
 
 const Layout = ({
@@ -123,6 +127,7 @@ const Layout = ({
       </Helmet>
       <GlobalStyle />
       <Grid>
+        <Header />
         <Navigation items={nav} />
         <Documentation mdx={body} />
       </Grid>

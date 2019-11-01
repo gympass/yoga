@@ -7,24 +7,18 @@ import tokens from '@gympass/yoga-tokens';
 import Arrow from '../../images/arrow-dropdown.svg';
 
 import createTree from './tree';
-import GympassLogo from '../../images/gympass-logo.svg';
 
 const { colors } = tokens;
 
-const Logo = styled(GympassLogo)`
-  width: 120px;
-  align-self: center;
-  margin: 20px 0 40px 0;
-`;
-
 const Wrapper = styled.div`
+  align-items: center;
+  background-color: ${colors.gray[0]};
+  box-shadow: inset -1px 0px 0px #f6f6f6;
   display: flex;
   flex-direction: column;
-  height: 100%;
   grid-area: Navigation;
-  box-shadow: inset -1px 0px 0px #f6f6f6;
-  background-color: ${colors.gray[0]};
-  padding-top: 30px;
+  height: 100%;
+  width: 320px;
 
   span {
     color: #999;
@@ -32,7 +26,8 @@ const Wrapper = styled.div`
 `;
 
 const Nav = styled.div`
-  margin: 0 70px;
+  width: 100%;
+  padding: 30px;
 `;
 
 const List = styled.ul`
@@ -43,14 +38,16 @@ const List = styled.ul`
 `;
 
 const AnchorLink = styled(Link)`
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s;
-  display: block;
-  text-indent: ${({ level }) => `calc(15px * ${level})`};
-  margin: 10px 0;
   border-right: 1px solid transparent;
+  color: inherit;
+  display: block;
+  display: flex;
+  justify-content: space-between;
   padding: 10px 0px 10px 0px;
+  text-decoration: none;
+  text-indent: ${({ level }) => `calc(15px * ${level})`};
+  transition: all 0.3s;
+  width: 100%;
 
   ${({ as }) =>
     !as &&
@@ -135,8 +132,6 @@ const Navigation = ({ items }) => {
 
   return (
     <Wrapper>
-      <Logo />
-
       <Nav>
         <List level={0}>{getHtml(tree)}</List>
       </Nav>

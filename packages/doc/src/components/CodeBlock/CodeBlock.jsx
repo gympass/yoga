@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { MDXContext } from '@mdx-js/react';
 import { node, string } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import githubTheme from 'prism-react-renderer/themes/github';
+import { hexToRgb } from '@gympass/yoga-common';
 
-const BORDER_COLOR = '#e2dddd';
+import CodeIcon from '../../images/code.svg';
+import { CodeSandboxButton } from '..';
 
 const defaultPropsWithTheme = {
   ...defaultProps,
@@ -30,32 +32,79 @@ const Pre = styled.pre`
 `;
 
 const Preview = styled.div`
-  border: 1px solid ${BORDER_COLOR};
   border-radius: 5px;
-
+  border: 1px solid #e2dddd;
+  overflow: hidden;
   textarea {
     outline: none;
   }
+  background-color: white;
 `;
 
 const Component = styled.div`
+  font-family: 'Open Sans';
   padding: 20px;
 `;
 
 const Usage = styled.div`
   background-color: rgb(246, 248, 250);
-  border-top: 1px solid ${BORDER_COLOR};
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 1px;
+  display: ${({ visible }) => (visible ? 'block' : 'none')};
 
   pre {
     border: 0;
   }
 `;
 
+const Toolbar = styled.div`
+  height: 50px;
+  background-color: ${hexToRgb('#f5f5fa', 0.5)};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ToolbarIconButton = styled.button`
+  outline: none;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background-color: transparent;
+  margin-right: 10px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    path {
+      fill: #999;
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: #f78d82;
+      }
+    }
+  }
+`;
 const CodeBlock = ({ children, reactLive }) => {
+  const [codeVisible, setCodeVisible] = useState(false);
+
   const normalizedCodeExample = children.trim();
+  const importsRegex = /(?<=\<)([A-Z][A-Za-z]+)\s*\/?(?=\>?)/g;
+  const imports = [...new Set(normalizedCodeExample.match(importsRegex))].join(
+    ', ',
+  );
+
+  const toggleCode = () => {
+    setCodeVisible(!codeVisible);
+  };
+
+  const code = [imports, normalizedCodeExample];
 
   return reactLive ? (
     <MDXContext.Consumer>
@@ -66,11 +115,21 @@ const CodeBlock = ({ children, reactLive }) => {
           theme={githubTheme}
         >
           <Preview>
+            <Toolbar>
+              <ToolbarIconButton title="Open in CodeSandbox">
+                <CodeSandboxButton code={code} />
+              </ToolbarIconButton>
+
+              <ToolbarIconButton title="Show code" onClick={() => toggleCode()}>
+                <CodeIcon />
+              </ToolbarIconButton>
+            </Toolbar>
+
             <Component>
               <LivePreview />
             </Component>
 
-            <Usage>
+            <Usage visible={codeVisible}>
               <Highlight
                 {...defaultPropsWithTheme}
                 code={children}
