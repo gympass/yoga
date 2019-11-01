@@ -151,7 +151,7 @@ const baseTheme = ({ primary, secondary }) => {
           backgroundColor: colors.gray[1],
         },
         backgroundColor: {
-          enabled: colors.white,
+          enabled: 'transparent',
         },
         checked: {
           backgroundColor: {
