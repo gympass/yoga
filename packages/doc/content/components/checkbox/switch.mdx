@@ -1,21 +1,20 @@
 ---
-title: 'Switch'
-metaTitle: 'Switch Component'
-metaDescription: 'Switch Component'
+title: 'Checkbox'
+metaTitle: 'Checkbox.Switch component'
+metaDescription: 'Checbox with swicth looks and behavior aka toggle'
 ---
 
-# CheckBox.Switch
+import SwitchWeb from './switch-web.mdx';
+import SwitchNative from './switch-native.mdx';
 
-## Import the CheckBox
+# Checkbox.Switch
 
-```javascript
-import { Checkbox } from '@gympass/yoga';
-```
+<TabbedView>
+  <Tab title={'Web'}>
+    <SwitchWeb />
+  </Tab>
 
-## Usage
-
-```javascript reactLive=true
-<Checkbox.Switch />
-```
-
-## Properties
+  <Tab title={'Native'}>
+    <SwitchNative />
+  </Tab>
+</TabbedView>
