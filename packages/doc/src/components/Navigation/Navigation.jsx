@@ -28,6 +28,7 @@ const Wrapper = styled.div`
 const Nav = styled.div`
   width: 100%;
   padding: 30px;
+  height: 100vh;
 `;
 
 const List = styled.ul`
