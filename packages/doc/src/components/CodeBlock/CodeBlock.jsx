@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { MDXContext } from '@mdx-js/react';
-import { node, string } from 'prop-types';
+import { node, string, bool } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import githubTheme from 'prism-react-renderer/themes/github';
 import { hexToRgb } from '@gympass/yoga-common';
@@ -44,10 +44,16 @@ const Preview = styled.div`
 const Component = styled.div`
   font-family: 'Open Sans';
   padding: 20px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+
   padding: 50px 20px;
+
+  ${({ center }) =>
+    center === 'true' &&
+    `
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  `}
 `;
 
 const Usage = styled.div`
@@ -95,7 +101,7 @@ const ToolbarIconButton = styled.button`
     }
   }
 `;
-const CodeBlock = ({ children, reactLive }) => {
+const CodeBlock = ({ children, reactLive, center }) => {
   const [codeVisible, setCodeVisible] = useState(false);
 
   const normalizedCodeExample = children.trim();
@@ -129,7 +135,7 @@ const CodeBlock = ({ children, reactLive }) => {
               </ToolbarIconButton>
             </Toolbar>
 
-            <Component>
+            <Component center={center}>
               <LivePreview />
             </Component>
 
@@ -176,10 +182,12 @@ const CodeBlock = ({ children, reactLive }) => {
 CodeBlock.propTypes = {
   children: node.isRequired,
   reactLive: string,
+  center: string,
 };
 
 CodeBlock.defaultProps = {
   reactLive: undefined,
+  center: 'false',
 };
 
 export default CodeBlock;
