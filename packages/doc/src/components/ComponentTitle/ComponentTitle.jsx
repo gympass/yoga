@@ -9,7 +9,7 @@ const Heading = styled.h1`
   justify-content: space-between;
 `;
 
-const getMetaData = (isComponent, component) => {
+const getMetaData = isComponent => {
   if (!isComponent) {
     return {};
   }
@@ -21,24 +21,22 @@ const getMetaData = (isComponent, component) => {
     node: {
       description: { text: description },
     },
-  } = edges.filter(
-    ({ node: parentNode }) =>
-      parentNode.displayName.toLowerCase() === component.toLowerCase(),
-  )[0];
+  } = edges.filter(({ node: parentNode }) => {
+    const path = window.location.pathname.split('/');
+    const { length: len, [len - 2]: comp } = path;
+
+    return parentNode.displayName.toLowerCase() === comp.toLowerCase();
+  })[0];
 
   return { description };
 };
 
 const ComponentTitle = ({ children = '' }) => {
-  const childrenString = typeof children === 'string' ? children : '';
   const isComponent =
     typeof window !== 'undefined' &&
     window.location.href.search(/components\/.+/) > -1;
 
-  const { description = '' } = getMetaData(
-    isComponent,
-    childrenString.replace('.', ''),
-  );
+  const { description = '' } = getMetaData(isComponent);
   return (
     <>
       <Heading>{`<${children} />`}</Heading>
