@@ -117,8 +117,8 @@ const getHtml = (tree, level = 0) =>
           to={url}
           level={level}
           as={hasChild && Colapsible}
-          visible={opened.includes(toSlug(title))}
-          onClick={hasChild ? () => toggleLevel(title) : ''}
+          visible={opened.includes(toSlug(title)) ? true : undefined}
+          onClick={hasChild ? () => toggleLevel(title) : null}
         >
           {title} {hasChild ? <Arrow /> : ''}
         </AnchorLink>
