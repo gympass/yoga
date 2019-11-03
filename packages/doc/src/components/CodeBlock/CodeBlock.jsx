@@ -44,6 +44,10 @@ const Preview = styled.div`
 const Component = styled.div`
   font-family: 'Open Sans';
   padding: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 50px 20px;
 `;
 
 const Usage = styled.div`
