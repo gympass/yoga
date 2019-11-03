@@ -98,19 +98,23 @@ Table.propTypes = {
   data: shape({}).isRequired,
 };
 
-const PropsTable = ({ component }) => {
+const PropsTable = ({ component, platform }) => {
   const {
     allComponentMetadata: { edges },
   } = MetaDataQuery();
 
   const componentProps = edges.filter(
-    ({ node }) => node.displayName === component,
+    ({ node }) =>
+      node.parent.absolutePath.includes(platform) &&
+      node.displayName === component,
   )[0];
+
   return <Table data={componentProps} />;
 };
 
 PropsTable.propTypes = {
   component: string.isRequired,
+  platform: string.isRequired,
 };
 
 export default PropsTable;
