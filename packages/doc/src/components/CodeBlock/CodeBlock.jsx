@@ -101,9 +101,9 @@ const ToolbarIconButton = styled.button`
     }
   }
 `;
+
 const CodeBlock = ({ children, reactLive, center }) => {
   const [codeVisible, setCodeVisible] = useState(false);
-
   const normalizedCodeExample = children.trim();
   const importsRegex = /(?<=\<)([A-Z][A-Za-z]+)\s*\/?(?=\>?)/g;
   const imports = [...new Set(normalizedCodeExample.match(importsRegex))].join(
@@ -140,6 +140,30 @@ const CodeBlock = ({ children, reactLive, center }) => {
             </Component>
 
             <Usage visible={codeVisible}>
+              <Highlight
+                {...defaultPropsWithTheme}
+                code={` import { ${imports} } from '@gympass/yoga';`}
+                language="jsx"
+              >
+                {({
+                  className,
+                  style,
+                  tokens,
+                  getLineProps,
+                  getTokenProps,
+                }) => (
+                  <Pre className={className} style={style}>
+                    {tokens.map((line, i) => (
+                      <div {...getLineProps({ line, key: i })}>
+                        {line.map((token, key) => (
+                          <span {...getTokenProps({ token, key })} />
+                        ))}
+                      </div>
+                    ))}
+                  </Pre>
+                )}
+              </Highlight>
+
               <Highlight
                 {...defaultPropsWithTheme}
                 code={children}
