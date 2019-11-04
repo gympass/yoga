@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { render, fireEvent, getAllByText } from '@testing-library/react';
+import React from 'react';
+import { render, fireEvent } from '@testing-library/react';
 
 import RadioGroup from '../';
 import ThemeProvider from '../../ThemeProvider';
