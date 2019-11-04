@@ -38,6 +38,7 @@ const Title = styled.Text`
         slider: {
           tooltip: {
             font: {
+              color,
               title: { size, weight },
             },
           },
@@ -45,6 +46,7 @@ const Title = styled.Text`
       },
     },
   }) => `
+    color: ${color};
     font-size: ${size};
     font-weight: ${weight};
   `}
@@ -58,6 +60,7 @@ const Description = styled.Text`
         slider: {
           tooltip: {
             font: {
+              color,
               description: { size, weight },
             },
           },
@@ -65,6 +68,7 @@ const Description = styled.Text`
       },
     },
   }) => `
+    color: ${color};
     font-size: ${size};
     font-weight: ${weight};
   `}
@@ -152,10 +156,12 @@ const Ribbon = ({ children, tooltipHeight, ...props }) => (
 const Tooltip = ({ title, description, ribbon, ...props }) => (
   <>
     {ribbon && <Ribbon>{ribbon}</Ribbon>}
-    <Tip {...props}>
-      <Title>{title}</Title>
-      <Description>{description}</Description>
-    </Tip>
+    {(title || description) && (
+      <Tip {...props}>
+        {title && <Title>{title}</Title>}
+        {description && <Description>{description}</Description>}
+      </Tip>
+    )}
     <Arrow />
   </>
 );
