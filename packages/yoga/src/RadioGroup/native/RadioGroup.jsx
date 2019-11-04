@@ -9,7 +9,6 @@ const Group = styled.View`
   align-self: center;
   position: relative;
   flex-direction: row;
-  width: 100%;
 `;
 
 const GrayLine = styled.View`
