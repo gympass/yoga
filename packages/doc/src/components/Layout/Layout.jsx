@@ -7,7 +7,7 @@ import Helmet from 'react-helmet';
 import { ThemeProvider, themes } from '@gympass/yoga';
 import tokens from '@gympass/yoga-tokens';
 
-import { Navigation, Documentation, Header } from '..';
+import { Navigation, Documentation, Header, Dropdown } from '..';
 
 const { colors } = tokens;
 
@@ -104,6 +104,8 @@ const Layout = ({
   const [theme, setTheme] = useState(allThemes.find(tm => tm === 'default'));
   const [locale, setLocale] = useState(allLocales.find(lc => lc === 'default'));
 
+  console.log(theme);
+
   return (
     <ThemeProvider theme={theme} locale={locale}>
       <Helmet>
@@ -127,7 +129,20 @@ const Layout = ({
       </Helmet>
       <GlobalStyle />
       <Grid>
-        <Header />
+        <Header>
+          <Dropdown
+            label="Theme:"
+            value={theme}
+            options={allThemes}
+            onSelect={tm => setTheme(tm)}
+          />
+          <Dropdown
+            label="Locale:"
+            value={locale}
+            options={allLocales}
+            onSelect={lc => setLocale(lc)}
+          />
+        </Header>
         <Navigation items={nav} />
         <Documentation mdx={body} />
       </Grid>
