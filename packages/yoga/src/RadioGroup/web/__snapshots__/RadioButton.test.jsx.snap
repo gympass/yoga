@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot with default radio button 1`] = `
+.c1 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  min-width: 126px;
+  background-color: transparent;
+  border-radius: 9999px;
+  font-size: 14px;
+  height: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.c0:hover,
+.c0:focus {
+  background-color: #F5F5FA;
+}
+
+<div>
+  <label
+    class="c0"
+  >
+    <input
+      class="c1"
+      type="radio"
+      value="Radio 1"
+    />
+    Radio 1
+  </label>
+</div>
+`;
+
+exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot with small radio button 1`] = `
+.c1 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  min-width: 126px;
+  background-color: transparent;
+  border-radius: 9999px;
+  font-size: 14px;
+  height: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.c0:hover,
+.c0:focus {
+  background-color: #F5F5FA;
+}
+
+<div>
+  <label
+    class="c0"
+  >
+    <input
+      class="c1"
+      type="radio"
+      value="Radio 1"
+    />
+    Radio 1
+  </label>
+</div>
+`;
