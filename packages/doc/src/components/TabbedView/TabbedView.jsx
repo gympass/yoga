@@ -52,7 +52,7 @@ const NavItem = styled.li`
     }
 
     &:hover {
-      color: red;
+      color: ${primaryColor};
     }
 
     ${
