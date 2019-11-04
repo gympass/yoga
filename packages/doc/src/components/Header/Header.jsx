@@ -1,49 +1,71 @@
 import React from 'react';
-import { node } from 'prop-types';
 import styled from 'styled-components';
-import tokens from '@gympass/yoga-tokens';
+import { node } from 'prop-types';
 
 import yoga from '../../images/lotus.svg';
 
-const { colors } = tokens;
-
-const YogaLogo = styled(yoga)`
-  path {
-    fill: ${colors.madrid[3]};
-  }
-`;
+const LOGO_WRAPPER_WIDTH = 320;
 
 const Wrapper = styled.div`
-  align-items: center;
-  background-color: ${colors.gray[0]};
-  box-shadow: 0 2px 2px #f0f1f2;
-  display: flex;
-  grid-area: Header;
-  height: 70px;
-  position: relative;
-  z-index: 2;
-`;
-
-const Actions = styled.div`
-  align-items: end;
-  display: flex;
-  justify-content: space-around;
-  width: 300px;
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    align-items: center;
+    background-color: ${grayPallete[0]};
+    box-shadow: 0 2px 2px ${grayPallete[1]};
+    display: flex;
+    flex-direction: row;
+    grid-area: Header;
+    height: 70px;
+    position: relative;
+    z-index: 2;
+  `};
 `;
 
 const LogoWrapper = styled.div`
-  padding: 0 32px;
-  width: 320px;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: left;
   overflow: hidden;
+  padding: 0 32px;
+  width: ${LOGO_WRAPPER_WIDTH}px;
+`;
+
+const YogaLogo = styled(yoga)`
+  ${({
+    theme: {
+      colors: {
+        primary: { length: len, [len - 1]: primaryColor },
+      },
+    },
+  }) => `
+    path {
+      fill: ${primaryColor};
+    }
+  `}
+`;
+
+const Actions = styled.div`
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 20px;
+  width: calc(100% - ${LOGO_WRAPPER_WIDTH}px);
 `;
 
 const Divider = styled.div`
-  border-right: 1px solid ${colors.gray[2]};
-  height: 20px;
-  width: 1px;
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    border-right: 1px solid ${grayPallete[2]};
+    height: 20px;
+    width: 1px;
+  `};
 `;
 
 const Header = ({ children }) => (
