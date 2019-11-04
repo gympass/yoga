@@ -1,112 +1,150 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import styled from 'styled-components';
+import Downshift from 'downshift';
+import { arrayOf, number, func, shapeOf } from 'prop-types';
+
 import Arrow from '../../images/arrow-dropdown.svg';
 
 const Wrapper = styled.div`
   position: relative;
-  max-width: 160px;
+  font-size: 14px;
+  ${({ width }) => (width ? `width: ${width}px` : '')};
 `;
 
 const Selector = styled.div`
+  align-items: center;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
+`;
+
+const Input = styled.input`
+  background-color: transparent;
+  border: none;
+  font-family: 'Muli';
+  font-size: 14px;
   padding: 8px 16px 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  text-align: center;
+  width: 80%;
+`;
+
+const Button = styled.button`
+  align-content: center;
+  background-color: transparent;
   cursor: pointer;
-  transition: 200ms all ease-out;
+  border: none;
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  left: 0;
+  padding: 10px 16px 6px;
+  position: absolute;
+  top: 0;
+  width: 100%;
 `;
 
 const ArrowDropdown = styled(Arrow)`
   width: 10px;
-  transition: 200ms all ease-out;
-  ${({ open }) => open && `transform: rotate(180deg);`}
-`;
-
-const Label = styled.span`
-  font-size: 12px;
-  padding-right: 5px;
-  color: #555;
 `;
 
 const OptionsList = styled.ul`
-  display: block;
-  flex-direction: column;
-  position: absolute;
-
-  width: 100%;
-  overflow: hidden;
-  z-index: 1;
-  top: 40px;
-  padding: 0;
-
-  list-style-type: none;
   background-color: white;
   border-radius: 8px;
   box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.2);
+  display: block;
+  flex-direction: column;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  z-index: 1;
 `;
 
 const Option = styled.li`
-  display: flex;
-  padding: 0 16px;
-  height: 40px;
-  align-items: center;
-  cursor: pointer;
-  font-size: 12px;
-  transition: 200ms all ease-out;
-  &:hover {
-    background-color: #caefea;
-  }
-  ${({ isSelected }) =>
-    isSelected &&
-    `
-    left: calc(100% - 2px);
-    transform: translateX(-100%);
+  ${({
+    isSelected,
+    theme: {
+      colors: { primary: primaryPallete },
+    },
+  }) => `
+    align-items: center;
+    background-color: ${isSelected ? primaryPallete[0] : 'inherit'};
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    padding: 0 16px;
+    transition: 200ms all ease-out;
+
+    &:hover {
+      background-color: ${primaryPallete[1]};
+    }
   `}
 `;
 
-const Dropdown = ({ label, value, options, onSelect }) => {
-  const [isOpen, setOpen] = useState(false);
+const Dropdown = ({ width, options, onChange, selectedItem }) => (
+  <>
+    <Downshift
+      selectedItem={selectedItem}
+      onChange={onChange}
+      itemToString={item => {
+        return item ? item.label : '';
+      }}
+    >
+      {({
+        getInputProps,
+        getItemProps,
+        getRootProps,
+        getMenuProps,
+        getToggleButtonProps,
+        isOpen,
+        highlightedIndex,
+        selectedItem,
+      }) => (
+        <Wrapper width={width} {...getRootProps()}>
+          <Selector>
+            <Input readOnly placeholder="Theme" {...getInputProps()} />
+            <Button {...getToggleButtonProps()}>
+              <ArrowDropdown />
+            </Button>
+          </Selector>
 
-  const toggleOptions = () => setOpen(!isOpen);
-
-  const onSelectOption = option => {
-    onSelect(option);
-    toggleOptions();
-  };
-
-  return (
-    <Wrapper>
-      <Selector onClick={() => toggleOptions()}>
-        <Label>{label}</Label>
-        <Label>{value}</Label>
-        <ArrowDropdown open={isOpen} />
-      </Selector>
-      {isOpen && (
-        <OptionsList>
-          {options &&
-            options.map(option => (
-              <Option key={option} onClick={() => onSelectOption(option)}>
-                {option}
-              </Option>
-            ))}
-        </OptionsList>
+          {isOpen ? (
+            <OptionsList {...getMenuProps()}>
+              {options.map((item, index) => (
+                <Option
+                  {...getItemProps({
+                    key: item.value,
+                    index,
+                    item,
+                    isActive: highlightedIndex === index,
+                    isSelected: selectedItem === item,
+                  })}
+                >
+                  {item.label}
+                </Option>
+              ))}
+            </OptionsList>
+          ) : null}
+        </Wrapper>
       )}
-    </Wrapper>
-  );
-};
+    </Downshift>
+  </>
+);
 
-Dropdown.propTypes = {
-  label: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  options: PropTypes.arrayOf(PropTypes.any).isRequired,
-  onSelect: PropTypes.func,
+Dropdown.protoTypes = {
+  width: number,
+  options: arrayOf({}).isRequired,
+  onChange: func,
+  selectedItem: {},
 };
 
 Dropdown.defaultProps = {
-  onSelect: () => {},
+  width: undefined,
+  onChange: () => {},
+  selectedItem: {},
 };
 
 export default Dropdown;

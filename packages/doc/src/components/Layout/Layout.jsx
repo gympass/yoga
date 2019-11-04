@@ -2,10 +2,9 @@ import React, { useState } from 'react';
 import { arrayOf, object, shape } from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 import Helmet from 'react-helmet';
-import { ThemeProvider, themes } from '@gympass/yoga';
-import tokens from '@gympass/yoga-tokens';
+import { ThemeProvider } from '@gympass/yoga';
 
-import { Navigation, Documentation, Header, Dropdown } from '..';
+import { Navigation, Documentation, Header, ThemeConfig } from '..';
 
 const GlobalStyle = createGlobalStyle`
   #gatsby-focus-wrapper, #___gatsby {
@@ -109,17 +108,12 @@ const Layout = ({
   doc: { body, frontmatter },
 }) => {
   const { metaTitle, metaDescription } = frontmatter;
-
-  const allThemes = Object.keys(themes);
-  const allLocales = Object.keys(tokens);
-
-  const [theme, setTheme] = useState(allThemes.find(tm => tm === 'default'));
-  const [locale, setLocale] = useState(allLocales.find(lc => lc === 'default'));
+  const [theme, setTheme] = useState();
+  const [locale, setLocale] = useState();
 
   return (
     <ThemeProvider theme={theme} locale={locale}>
       <Helmet>
-        <script async src="https://snack.expo.io/embed.js" />
         <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
         {metaTitle ? <title>{metaTitle}</title> : <title>{title}</title>}
         {metaTitle ? <meta name="title" content={metaTitle} /> : null}
@@ -136,25 +130,21 @@ const Layout = ({
         {metaDescription ? (
           <meta property="twitter:description" content={metaDescription} />
         ) : null}
+        <script async src="https://snack.expo.io/embed.js" />
       </Helmet>
       <GlobalStyle />
 
       <MainWrapper>
         <Grid>
           <Header>
-            <Dropdown
-              label="Theme:"
-              value={theme}
-              options={allThemes}
-              onSelect={tm => setTheme(tm)}
-            />
-            <Dropdown
-              label="Locale:"
-              value={locale}
-              options={allLocales}
-              onSelect={lc => setLocale(lc)}
+            <ThemeConfig
+              theme={theme}
+              locale={locale}
+              setTheme={setTheme}
+              setLocale={setLocale}
             />
           </Header>
+
           <Navigation items={nav} />
           <Documentation mdx={body} />
         </Grid>
@@ -166,6 +156,7 @@ const Layout = ({
 Layout.propTypes = {
   nav: arrayOf(object).isRequired,
   doc: shape({}).isRequired,
+  data: shape({}).isRequired,
 };
 
 export default Layout;

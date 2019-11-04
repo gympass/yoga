@@ -112,7 +112,7 @@ const getHtml = (tree, level = 0) =>
           to={url}
           level={level}
           as={hasChild && Colapsible}
-          visible={opened}
+          visible={opened.toString()}
           onClick={hasChild ? () => setOpened(!opened) : null}
         >
           {title} {hasChild ? <Arrow /> : ''}

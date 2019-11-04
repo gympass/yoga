@@ -10,6 +10,7 @@ import Documentation from './Documentation';
 import Dropdown from './Dropdown';
 import { TabbedView, Tab } from './TabbedView';
 import CodeSandboxButton from './CodeSandboxButton';
+import ThemeConfig from './ThemeConfig';
 
 export {
   CodeBlock,
@@ -25,4 +26,5 @@ export {
   TabbedView,
   Tab,
   CodeSandboxButton,
+  ThemeConfig,
 };
