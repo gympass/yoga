@@ -56,6 +56,11 @@ const baseTheme = ({ primary, secondary }) => {
           radius: radii.circle,
         },
         shadow: elevations.small,
+        pressed: {
+          width: 40,
+          height: 40,
+          position: -18,
+        },
       },
       tooltip: {
         shadow: elevations.small,

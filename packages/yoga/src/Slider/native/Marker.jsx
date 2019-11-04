@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Tooltip, Ribbon } from './Tooltip';
+import { Tooltip } from './Tooltip';
+import { hexToRgb } from '@gympass/yoga-common';
 
 const TooltipWrapper = styled.View`
   bottom: 20px;
@@ -23,7 +24,6 @@ const TooltipWrapper = styled.View`
 
 const Circle = styled.TouchableOpacity`
   ${({
-    pressed,
     theme: {
       components: {
         slider: {
@@ -49,6 +49,34 @@ const Circle = styled.TouchableOpacity`
   `}
 `;
 
+const CirclePressed = styled(Circle)`
+  ${({
+    pressed,
+    theme: {
+      components: {
+        slider: {
+          marker: {
+            backgroundColor,
+            pressed: { width, height, position },
+          },
+        },
+      },
+    },
+  }) => `
+  ${
+    pressed
+      ? `
+        background-color: ${hexToRgb(backgroundColor, 0.2)};
+        border: none;
+        top: ${position}px;
+        width: ${width};
+        height: ${height};
+      `
+      : 'display: none;'
+  }
+  `}
+`;
+
 const Marker = ({ pressed, tooltip }) => {
   return (
     <>
@@ -63,7 +91,8 @@ const Marker = ({ pressed, tooltip }) => {
           )}
         </TooltipWrapper>
       )}
-      <Circle pressed={pressed} />
+      <CirclePressed pressed={pressed} />
+      <Circle />
     </>
   );
 };
