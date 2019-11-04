@@ -82,13 +82,11 @@ const Marker = ({ pressed, tooltip }) => {
     <>
       {pressed && tooltip && (
         <TooltipWrapper>
-          {tooltip && (
-            <Tooltip
-              description={tooltip.description}
-              title={tooltip.title}
-              ribbon={tooltip.ribbon}
-            />
-          )}
+          <Tooltip
+            description={tooltip.description}
+            title={tooltip.title}
+            ribbon={tooltip.ribbon}
+          />
         </TooltipWrapper>
       )}
       <CirclePressed pressed={pressed} />
