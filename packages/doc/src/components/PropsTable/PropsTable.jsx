@@ -1,56 +1,70 @@
 import React from 'react';
 import styled from 'styled-components';
 import { string, shape } from 'prop-types';
-import tokens from '@gympass/yoga-tokens';
+import { hexToRgb } from '@gympass/yoga-common';
 import MetaDataQuery from './MetaDataQuery';
+
 import { InlineCode } from '..';
 
-const { colors } = tokens;
-
-const BORDER_COLOR = '#e2dddd';
-
 const TableWrapper = styled.div`
-  border: 1px solid ${BORDER_COLOR};
-  border-radius: 5px;
-  overflow: hidden;
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    border: 1px solid ${grayPallete[2]};
+    border-radius: 5px;
+    overflow: hidden;
+  `};
 `;
 
 const StyledTable = styled.table`
-  border-collapse: collapse;
-  font-family: monospace;
-  margin: 0px 0;
-  width: 100%;
+  ${({
+    theme: {
+      colors: {
+        primary: { length: len, [len - 1]: primaryColor },
+        gray: grayPallete,
+      },
+    },
+  }) => `
+    background-color: ${grayPallete[0]};
+    border-collapse: collapse;
+    font-family: monospace;
+    margin: 0px 0;
+    width: 100%;
 
-  thead {
-    background-color: #f6f8fa;
+    thead {
+      background-color: ${hexToRgb(grayPallete[1], 0.5)};
+      font-family: 'Muli';
 
-    th {
-      font-size: 14px;
-      font-weight: normal;
-      padding: 14px 12px 12px;
-      text-align: left;
-    }
-  }
-
-  tbody {
-    tr {
-      background-color: ${colors.gray[0]};
-
-      td {
-        border-top: 1px solid ${BORDER_COLOR};
+      th {
+        font-size: 14px;
+        font-weight: normal;
         padding: 14px 12px 12px;
+        text-align: left;
+      }
+    }
 
-        &:first-child {
-          font-weight: 700;
-        }
+    tbody {
+      tr {
+        background-color: ${grayPallete[0]};
 
-        &:nth-child(3),
-        &:last-child {
-          color: #e3116c;
+        td {
+          border-top: 1px solid ${hexToRgb(grayPallete[2], 0.7)};
+          padding: 14px 12px 12px;
+
+          &:first-child {
+            font-weight: 700;
+          }
+
+          &:nth-child(3),
+          &:last-child {
+            color: ${primaryColor};
+          }
         }
       }
     }
-  }
+  `};
 `;
 
 const Table = ({
