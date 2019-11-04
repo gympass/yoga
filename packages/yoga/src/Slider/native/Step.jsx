@@ -1,20 +1,17 @@
-import React from 'react';
 import styled from 'styled-components';
 
-const Circle = styled.View`
+const Step = styled.View`
   ${({
     active,
     theme: {
       components: {
         slider: {
-          snapDot: {
+          step: {
             backgroundColor: {
               active: activeBackgroundColor,
               inactive: inactiveBackgroundColor,
             },
             border: { radius },
-            height,
-            width,
           },
         },
       },
@@ -24,11 +21,9 @@ const Circle = styled.View`
       active ? activeBackgroundColor : inactiveBackgroundColor
     };
     border-radius: ${radius}px;
-    height: ${height}px;
-    width: ${width}px;
+    height: 10px;
+    width: 10px;
   `}
 `;
 
-const Dot = ({ active, ...props }) => <Circle {...props} active={active} />;
-
-export default Dot;
+export default Step;
