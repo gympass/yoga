@@ -1,55 +1,69 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import tokens from '@gympass/yoga-tokens';
-
-const { colors } = tokens;
 
 const Navbar = styled.ul`
-  display: flex;
-  flex-grow: 1;
-  flex-shrink: 1;
-  list-style: none;
-  margin: 0 0 25px 0;
-  padding: 0;
-  border-bottom: 1px dotted ${colors.gray[2]};
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    border-bottom: 1px dotted ${grayPallete[2]};
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    list-style: none;
+    margin: 0 0 25px 0;
+    padding: 0;
+  `};
 `;
 
 Navbar.displayName = 'Navbar';
 
 const NavItem = styled.li`
-  cursor: pointer;
-  font-size: 17px;
-  letter-spacing: initial;
-  line-height: initial;
-  overflow: hidden;
-  padding: 18px 18px 16px;
-  position: relative;
-  text-align: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  ${({
+    active,
+    theme: {
+      colors: {
+        primary: { length: len, [len - 1]: primaryColor },
+      },
+    },
+  }) => `
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: initial;
+    line-height: initial;
+    overflow: hidden;
+    padding: 18px 18px 16px;
+    position: relative;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 0;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 0;
 
-    transition: width 0.25s ease-out;
-  }
+      transition: width 0.25s ease-out;
+    }
 
-  &:hover {
-    color: red;
-  }
+    &:hover {
+      color: red;
+    }
 
-  ${props =>
-    props.active &&
-    `
-    color: ${colors.madrid[3]};
-    border-bottom: 2px solid ${colors.madrid[3]};
-  `};
+    ${
+      active
+        ? `
+          color: ${primaryColor};
+          border-bottom: 2px solid ${primaryColor};
+            `
+        : ''
+    }
+  `}
 `;
 
 NavItem.displayName = 'NavItem';
