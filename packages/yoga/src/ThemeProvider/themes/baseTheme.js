@@ -29,12 +29,11 @@ const baseTheme = ({ primary, secondary }) => {
           active: colors.primary[3],
           inactive: colors.gray[2],
         },
-        height: 4,
         border: {
           radius: radii.circle,
         },
       },
-      snapDot: {
+      step: {
         backgroundColor: {
           active: primary[3],
           inactive: colors.gray[2],
@@ -42,8 +41,6 @@ const baseTheme = ({ primary, secondary }) => {
         border: {
           radius: radii.circle,
         },
-        height: 10,
-        width: 10,
         position: -30,
       },
       marker: {
@@ -75,6 +72,7 @@ const baseTheme = ({ primary, secondary }) => {
         height: 56,
         width: 95,
         font: {
+          color: colors.gray[4],
           title: {
             size: fontSizes[2],
             weight: fontWeights.bold,
