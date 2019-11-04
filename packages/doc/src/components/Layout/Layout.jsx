@@ -1,39 +1,29 @@
 import React, { useState } from 'react';
 import { arrayOf, object, shape } from 'prop-types';
-
 import styled, { createGlobalStyle } from 'styled-components';
 import Helmet from 'react-helmet';
-
 import { ThemeProvider, themes } from '@gympass/yoga';
 import tokens from '@gympass/yoga-tokens';
 
 import { Navigation, Documentation, Header, Dropdown } from '..';
-
-const { colors } = tokens;
 
 const GlobalStyle = createGlobalStyle`
   #gatsby-focus-wrapper, #___gatsby {
     height: 100%;
   }
 
-  code {
-    color: ${colors.madrid[3]};
-    font-family: monospace;
-    font-size: 14px;
-  }
-
   html, body  {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    font-family: 'Muli';
     color: #666;
+    font-family: 'Muli';
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   h1, h2, h3, h4, h5, h6 {
+    color: #333;
     font-weight: 300;
     margin: 45px 0 20px;
-    color: #333;
   }
 
   p {
@@ -42,21 +32,16 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.8;
   }
 
-  a {
-    color: ${colors.madrid[3]};
-    text-decoration: none;
-  }
-
   h1 {
     font-size: 48px;
-    margin: 0;
     font-weight: 300;
+    margin: 0;
 
     + p {
       color: #6b6b78;
       font-size: 18px;
-      margin: 10px 0 50px;
       font-weight: 300;
+      margin: 10px 0 50px;
     }
   }
 
@@ -79,14 +64,41 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const MainWrapper = styled.div`
+  ${({
+    theme: {
+      colors: {
+        primary: { length: len, [len - 1]: primaryColor },
+      },
+    },
+  }) => `
+    code {
+      color: ${primaryColor};
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    a[target] {
+      color: ${primaryColor};
+      text-decoration: none;
+    }
+  `}
+`;
+
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    background-color: ${grayPallete[1]};
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
     'Header Header Header'
     'Navigation Documentation Summary';
-  background-color: ${colors.gray[1]};
+  `};
 `;
 
 const Layout = ({
@@ -103,8 +115,6 @@ const Layout = ({
 
   const [theme, setTheme] = useState(allThemes.find(tm => tm === 'default'));
   const [locale, setLocale] = useState(allLocales.find(lc => lc === 'default'));
-
-  console.log(theme);
 
   return (
     <ThemeProvider theme={theme} locale={locale}>
@@ -128,24 +138,27 @@ const Layout = ({
         ) : null}
       </Helmet>
       <GlobalStyle />
-      <Grid>
-        <Header>
-          <Dropdown
-            label="Theme:"
-            value={theme}
-            options={allThemes}
-            onSelect={tm => setTheme(tm)}
-          />
-          <Dropdown
-            label="Locale:"
-            value={locale}
-            options={allLocales}
-            onSelect={lc => setLocale(lc)}
-          />
-        </Header>
-        <Navigation items={nav} />
-        <Documentation mdx={body} />
-      </Grid>
+
+      <MainWrapper>
+        <Grid>
+          <Header>
+            <Dropdown
+              label="Theme:"
+              value={theme}
+              options={allThemes}
+              onSelect={tm => setTheme(tm)}
+            />
+            <Dropdown
+              label="Locale:"
+              value={locale}
+              options={allLocales}
+              onSelect={lc => setLocale(lc)}
+            />
+          </Header>
+          <Navigation items={nav} />
+          <Documentation mdx={body} />
+        </Grid>
+      </MainWrapper>
     </ThemeProvider>
   );
 };
