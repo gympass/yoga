@@ -36,13 +36,11 @@ const LogoWrapper = styled.div`
 const YogaLogo = styled(yoga)`
   ${({
     theme: {
-      colors: {
-        primary: { length: len, [len - 1]: primaryColor },
-      },
+      colors: { primary: primaryColor },
     },
   }) => `
     path {
-      fill: ${primaryColor};
+      fill: ${primaryColor[3]};
     }
   `}
 `;
