@@ -1,0 +1,459 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "flexDirection": "row",
+            "position": "relative",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "borderColor": "#DBDBE8",
+              "borderRadius": 9999,
+              "borderWidth": 1,
+              "height": "100%",
+              "position": "absolute",
+            },
+            Object {
+              "width": 0,
+            },
+          ]
+        }
+      />
+      <TouchableWithoutFeedback>
+        <View
+          checked={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderRadius": 9999,
+                "fontSize": 14,
+                "height": 40,
+                "justifyContent": "center",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            checked={false}
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Option 1
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+      <TouchableWithoutFeedback>
+        <View
+          checked={true}
+          small={false}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F46152",
+                "borderRadius": 9999,
+                "fontSize": 14,
+                "height": 40,
+                "justifyContent": "center",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            checked={true}
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                  "fontWeight": "700",
+                },
+              ]
+            }
+          >
+            Option 2
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+      <TouchableWithoutFeedback>
+        <View
+          checked={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderRadius": 9999,
+                "fontSize": 14,
+                "height": 40,
+                "justifyContent": "center",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            checked={false}
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Option 3
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<RadioGroup /> Snapshots should match snapshot with default radiogroup 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "flexDirection": "row",
+            "position": "relative",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "borderColor": "#DBDBE8",
+              "borderRadius": 9999,
+              "borderWidth": 1,
+              "height": "100%",
+              "position": "absolute",
+            },
+            Object {
+              "width": 0,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "flexDirection": "row",
+            "position": "relative",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "borderColor": "#DBDBE8",
+              "borderRadius": 9999,
+              "borderWidth": 1,
+              "height": "100%",
+              "position": "absolute",
+            },
+            Object {
+              "width": 0,
+            },
+          ]
+        }
+      />
+      <TouchableWithoutFeedback>
+        <View
+          checked={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderRadius": 9999,
+                "fontSize": 14,
+                "height": 40,
+                "justifyContent": "center",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            checked={false}
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Option 1
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+      <TouchableWithoutFeedback>
+        <View
+          checked={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderRadius": 9999,
+                "fontSize": 14,
+                "height": 40,
+                "justifyContent": "center",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            checked={false}
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Option 2
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+      <TouchableWithoutFeedback>
+        <View
+          checked={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderRadius": 9999,
+                "fontSize": 14,
+                "height": 40,
+                "justifyContent": "center",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            checked={false}
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Option 3
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "flexDirection": "row",
+            "position": "relative",
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "borderColor": "#DBDBE8",
+              "borderRadius": 9999,
+              "borderWidth": 1,
+              "height": "100%",
+              "position": "absolute",
+            },
+            Object {
+              "width": 0,
+            },
+          ]
+        }
+      />
+      <TouchableWithoutFeedback>
+        <View
+          checked={false}
+          small={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderRadius": 9999,
+                "fontSize": 14,
+                "height": 32,
+                "justifyContent": "center",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            checked={false}
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Option 1
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+      <TouchableWithoutFeedback>
+        <View
+          checked={false}
+          small={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderRadius": 9999,
+                "fontSize": 14,
+                "height": 32,
+                "justifyContent": "center",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            checked={false}
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Option 2
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+      <TouchableWithoutFeedback>
+        <View
+          checked={false}
+          small={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderRadius": 9999,
+                "fontSize": 14,
+                "height": 32,
+                "justifyContent": "center",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            checked={false}
+            style={
+              Array [
+                Object {},
+              ]
+            }
+          >
+            Option 3
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+    </View>
+  </View>
+</View>
+`;

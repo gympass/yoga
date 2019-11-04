@@ -82,7 +82,7 @@ const RadioGroupButton = ({ value, children, ...rest }) => {
   return (
     <TouchableWithoutFeedback
       onPress={() => {
-        onChange({ value });
+        onChange({ value: inputValue });
       }}
       {...context}
     >
