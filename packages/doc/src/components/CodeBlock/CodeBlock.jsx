@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import { MDXContext } from '@mdx-js/react';
-import { node, string, bool } from 'prop-types';
+import { node, string } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
-import githubTheme from 'prism-react-renderer/themes/github';
 import { hexToRgb } from '@gympass/yoga-common';
+import githubTheme from 'prism-react-renderer/themes/github';
 
-import CodeIcon from '../../images/code.svg';
 import { CodeSandboxButton } from '..';
+import CodeIcon from '../../images/code.svg';
 
 const defaultPropsWithTheme = {
   ...defaultProps,
@@ -16,90 +16,127 @@ const defaultPropsWithTheme = {
 };
 
 const StyledLiveError = styled(LiveError)`
-  color: #ff4249;
   background-color: #fff0f0;
-  padding: 15px 15px 4px;
+  color: #ff4249;
   margin: 0;
-  border-top: 1px solid #ffc8c8;
+  padding: 15px 15px 4px;
 `;
 
 const Pre = styled.pre`
-  padding: 18px;
-  font-size: 15px;
-  margin: 0;
-  border: 1px solid #e2dddd;
-  border-radius: 5px;
+  ${({
+    theme: {
+      colors: {
+        primary: { length: len, [len - 1]: primaryColor },
+      },
+    },
+  }) => `
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 0;
+    padding: 18px;
+
+    .token.string {
+      color: ${primaryColor} !important;
+    }
+  `}
 `;
 
 const Preview = styled.div`
-  border-radius: 5px;
-  border: 1px solid #e2dddd;
-  overflow: hidden;
-  textarea {
-    outline: none;
-  }
-  background-color: white;
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    background-color: ${grayPallete[0]};
+    border-radius: 5px;
+    border: 1px solid ${grayPallete[2]};
+    overflow: hidden;
+
+    textarea {
+      outline: none;
+    }
+  `};
 `;
 
 const Component = styled.div`
   font-family: 'Open Sans';
   padding: 20px;
-
   padding: 50px 20px;
 
   ${({ center }) =>
     center === 'true' &&
     `
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
   `}
 `;
 
 const Usage = styled.div`
-  background-color: rgb(246, 248, 250);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: 1px;
-  display: ${({ visible }) => (visible ? 'block' : 'none')};
+  ${({
+    visible,
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    background-color: ${grayPallete[0]};
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: ${visible ? 'block' : 'none'};
+    padding: 1px;
 
-  pre {
-    border: 0;
-  }
+    pre {
+      border: 0;
+    }
+  `};
 `;
 
 const Toolbar = styled.div`
-  height: 50px;
-  background-color: ${hexToRgb('#f5f5fa', 0.5)};
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    align-items: center;
+    background-color: ${hexToRgb(grayPallete[1], 0.5)};
+    display: flex;
+    height: 50px;
+    justify-content: center;
+  `};
 `;
 
 const ToolbarIconButton = styled.button`
-  outline: none;
-  cursor: pointer;
-  width: 36px;
-  height: 36px;
-  border: 0;
-  background-color: transparent;
-  margin-right: 10px;
+  ${({
+    theme: {
+      colors: {
+        primary: { length: len, [len - 1]: primaryColor },
+        gray: grayPallete,
+      },
+    },
+  }) => `
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    height: 36px;
+    margin-right: 10px;
+    outline: none;
+    width: 36px;
 
-  svg {
-    width: 100%;
-    height: 100%;
-    path {
-      fill: #999;
-    }
-  }
-
-  &:hover {
     svg {
+      width: 100%;
+      height: 100%;
+
       path {
-        fill: #f78d82;
+        fill: ${grayPallete[3]};
+      }
+
+      &:hover {
+        path {
+          fill: ${primaryColor};
+        }
       }
     }
-  }
+  `}
 `;
 
 const CodeBlock = ({ children, reactLive, center }) => {
