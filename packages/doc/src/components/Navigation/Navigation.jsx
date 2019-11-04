@@ -99,26 +99,7 @@ const Colapsible = styled.div`
 const getHtml = (tree, level = 0) =>
   Object.values(tree).map(({ title, url, ...childs }) => {
     const hasChild = Boolean(Object.keys(childs).length);
-    const [opened, setOpened] = useState([]);
-
-    const toSlug = string =>
-      string
-        .replace(/([a-z])([A-Z])/g, '$1-$2')
-        .replace(/[\s_]+/g, '-')
-        .toLowerCase();
-
-    const toggleLevel = name => {
-      const kebabStr = toSlug(name);
-      const exists = opened.includes(kebabStr);
-      let newState = [];
-
-      if (exists) {
-        newState = opened.filter(e => e !== kebabStr);
-      } else {
-        newState = [...opened, kebabStr];
-      }
-      setOpened(newState);
-    };
+    const [opened, setOpened] = useState(true);
 
     return (
       <ListItem
@@ -131,8 +112,8 @@ const getHtml = (tree, level = 0) =>
           to={url}
           level={level}
           as={hasChild && Colapsible}
-          visible={opened.includes(toSlug(title)) ? true : undefined}
-          onClick={hasChild ? () => toggleLevel(title) : null}
+          visible={opened}
+          onClick={hasChild ? () => setOpened(!opened) : null}
         >
           {title} {hasChild ? <Arrow /> : ''}
         </AnchorLink>
