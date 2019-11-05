@@ -142,7 +142,7 @@ const ToolbarIconButton = styled.button`
 const CodeBlock = ({ children, reactLive, center }) => {
   const [codeVisible, setCodeVisible] = useState(false);
   const normalizedCodeExample = children.trim();
-  const importsRegex = /(?<=\<)([A-Z][A-Za-z]+)\s*\/?(?=\>?)/g;
+  const importsRegex = /(?<=<)([A-Z][A-Za-z]+)\s*\/?(?=>?)/g;
   const imports = [...new Set(normalizedCodeExample.match(importsRegex))].join(
     ', ',
   );
