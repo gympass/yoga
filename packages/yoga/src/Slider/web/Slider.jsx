@@ -76,10 +76,11 @@ const Slider = ({
 
   const commonStepStyle = {
     borderRadius: stepRadius,
+    marginLeft: -4,
     position: 'absolute',
     height: 10,
-    width: 10,
     top: -3,
+    width: 10,
   };
 
   const activeStepStyle = {
