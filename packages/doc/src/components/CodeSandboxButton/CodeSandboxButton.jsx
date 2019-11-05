@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CodeSandboxIcon from '../../images/codesandbox.svg';
 import LoadingIcon from '../../images/loading.svg';
+
 import { URL, setOptions } from './code';
 
 const CodeSandboxButton = ({ code }) => {
@@ -19,10 +20,14 @@ const CodeSandboxButton = ({ code }) => {
       .then(() => setLoading(false));
   };
 
-  return loading ? (
-    <LoadingIcon />
-  ) : (
-    <CodeSandboxIcon onClick={() => createSandbox()} />
+  return (
+    <>
+      {loading ? (
+        <LoadingIcon />
+      ) : (
+        <CodeSandboxIcon onClick={() => createSandbox()} />
+      )}
+    </>
   );
 };
 

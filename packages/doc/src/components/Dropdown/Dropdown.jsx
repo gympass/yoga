@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Downshift from 'downshift';
-import { arrayOf, number, func } from 'prop-types';
+import { arrayOf, number, func, shape, string } from 'prop-types';
 
 import Arrow from '../../images/arrow-dropdown.svg';
 
@@ -133,17 +133,22 @@ const Dropdown = ({ width, options, onChange, selectedItem }) => (
   </>
 );
 
+const propShape = shape({
+  value: string,
+  label: string,
+});
+
 Dropdown.propTypes = {
   width: number,
-  options: arrayOf({}).isRequired,
+  options: arrayOf(propShape).isRequired,
   onChange: func,
-  selectedItem: {},
+  selectedItem: propShape,
 };
 
 Dropdown.defaultProps = {
   width: undefined,
   onChange: () => {},
-  selectedItem: {},
+  selectedItem: propShape,
 };
 
 export default Dropdown;
