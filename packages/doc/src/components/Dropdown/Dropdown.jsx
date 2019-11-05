@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Downshift from 'downshift';
-import { arrayOf, number, func, shapeOf } from 'prop-types';
+import { arrayOf, number, func } from 'prop-types';
 
 import Arrow from '../../images/arrow-dropdown.svg';
 
@@ -101,7 +101,6 @@ const Dropdown = ({ width, options, onChange, selectedItem }) => (
         getToggleButtonProps,
         isOpen,
         highlightedIndex,
-        selectedItem,
       }) => (
         <Wrapper width={width} {...getRootProps()}>
           <Selector>
@@ -134,7 +133,7 @@ const Dropdown = ({ width, options, onChange, selectedItem }) => (
   </>
 );
 
-Dropdown.protoTypes = {
+Dropdown.propTypes = {
   width: number,
   options: arrayOf({}).isRequired,
   onChange: func,
