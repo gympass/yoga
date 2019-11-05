@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Downshift from 'downshift';
 import { arrayOf, number, func, shape, string } from 'prop-types';
+import { readableColor } from 'polished';
 
 import Arrow from '../../images/arrow-dropdown.svg';
 
@@ -67,11 +68,18 @@ const Option = styled.li`
   ${({
     isSelected,
     theme: {
-      colors: { primary: primaryPallete },
+      colors: {
+        primary: primaryPallete,
+        gray: { darkGray },
+        white,
+      },
     },
   }) => `
     align-items: center;
     background-color: ${isSelected ? primaryPallete[0] : 'inherit'};
+    color: ${
+      isSelected ? readableColor(primaryPallete[0], darkGray, white) : 'inherit'
+    };
     cursor: pointer;
     display: flex;
     height: 40px;
@@ -80,6 +88,7 @@ const Option = styled.li`
 
     &:hover {
       background-color: ${primaryPallete[1]};
+      color: ${readableColor(primaryPallete[1], darkGray, white)};
     }
   `}
 `;
