@@ -86,6 +86,12 @@ const baseTheme = ({ primary, secondary }) => {
           backgroundColor: secondary[3],
           radius: radii.rounded,
           width: 95,
+          padding: {
+            top: spacing.xxsmall,
+            right: spacing.xsmall,
+            bottom: spacing.xxsmall,
+            left: spacing.xsmall,
+          },
           font: {
             color: colors.white,
             size: fontSizes[1],

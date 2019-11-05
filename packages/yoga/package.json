@@ -36,7 +36,8 @@
     "@gympass/yoga-common": "^0.1.0",
     "@gympass/yoga-tokens": "^0.1.0",
     "@ptomasroos/react-native-multi-slider": "^1.0.0",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "rc-slider": "^8.7.1"
   },
   "devDependencies": {
     "@testing-library/react": "^9.1.4",
