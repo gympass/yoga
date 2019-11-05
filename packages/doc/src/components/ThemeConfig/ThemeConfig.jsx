@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { themes } from '@gympass/yoga';
-import * as tokens from '@gympass/yoga-tokens';
 import { string, func } from 'prop-types';
 
 import { Dropdown } from '..';
@@ -11,12 +10,18 @@ const Wrapper = styled.div`
   flex-direction: row;
 `;
 
-const ThemeConfig = ({ theme, locale, setTheme, setLocale }) => {
-  const options = [
-    { value: 'endUser', label: 'End-user' },
-    { value: 'corp', label: 'Corporate' },
-    { value: 'gyms', label: 'Gyms' },
-  ];
+const ThemeConfig = ({ theme, setTheme }) => {
+  const spacesInPascalCase = word => {
+    const spacedWord = word
+      .match(/($[a-z])|[A-Z][^A-Z]+/g)
+      .map((item, index) => (index >= 1 ? item.toLowerCase() : item));
+
+    return spacedWord.join(' ');
+  };
+
+  const options = Object.keys(themes)
+    .filter(item => item !== 'default')
+    .map(item => ({ value: item, label: spacesInPascalCase(item) }));
 
   const selectedItem = options.filter(item => theme === item.value)[0];
 
@@ -34,14 +39,11 @@ const ThemeConfig = ({ theme, locale, setTheme, setLocale }) => {
 
 ThemeConfig.propTypes = {
   theme: string,
-  locale: string,
   setTheme: func.isRequired,
-  setLocale: func.isRequired,
 };
 
 ThemeConfig.defaultProps = {
-  theme: 'endUser',
-  locale: 'default',
+  theme: 'EndUser',
 };
 
 export default ThemeConfig;

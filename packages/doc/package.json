@@ -5,7 +5,7 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@gympass/yoga": "^0.0.5",
+    "@gympass/yoga": "^0.0.7",
     "@gympass/yoga-common": "^0.1.0",
     "@gympass/yoga-tokens": "^0.1.0",
     "@mdx-js/loader": "^1.4.5",

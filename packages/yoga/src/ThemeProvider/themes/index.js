@@ -1,5 +1,5 @@
-import corp from './corp';
-import endUser from './end-user';
-import gyms from './gyms';
+import Corporate from './Corporate';
+import EndUser from './EndUser';
+import Gyms from './Gyms';
 
-export { endUser as default, endUser, corp, gyms };
+export { EndUser as default, EndUser, Corporate, Gyms };
