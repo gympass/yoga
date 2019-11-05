@@ -92,7 +92,7 @@ const Colapsible = styled.div`
     }
   `};
   + ul {
-    display: ${({ visible }) => (visible ? 'block' : 'none')};
+    display: ${({ visible }) => (visible === 'true' ? 'block' : 'none')};
   }
 `;
 
