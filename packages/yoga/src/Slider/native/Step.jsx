@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bool } from 'prop-types';
 
 const Step = styled.View`
   ${({
@@ -25,5 +26,13 @@ const Step = styled.View`
     width: 10px;
   `}
 `;
+
+Step.propTypes = {
+  active: bool,
+};
+
+Step.defaultProps = {
+  active: false,
+};
 
 export default Step;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { string } from 'prop-types';
 import styled from 'styled-components';
 
 const Tip = styled.View`
@@ -147,8 +148,8 @@ const RibbonText = styled.Text`
   text-align: center;
 `;
 
-const Ribbon = ({ children, tooltipHeight, ...props }) => (
-  <RibbonWrapper tooltipHeight={tooltipHeight} {...props}>
+const Ribbon = ({ children, ...props }) => (
+  <RibbonWrapper {...props}>
     <RibbonText>{children}</RibbonText>
   </RibbonWrapper>
 );
@@ -165,5 +166,17 @@ const Tooltip = ({ title, description, ribbon, ...props }) => (
     <Arrow />
   </>
 );
+
+Tooltip.propTypes = {
+  title: string,
+  description: string,
+  ribbon: string,
+};
+
+Tooltip.defaultProps = {
+  title: undefined,
+  description: undefined,
+  ribbon: undefined,
+};
 
 export { Tooltip, Ribbon, Arrow };

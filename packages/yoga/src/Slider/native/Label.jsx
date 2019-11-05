@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { string } from 'prop-types';
 
 const LabelView = styled.View`
   align-items: center;
@@ -14,5 +15,13 @@ const LabelText = styled.Text`
     text-align: ${placement === 'left' ? 'left' : 'right'};
   `}
 `;
+
+LabelText.propTypes = {
+  placement: string,
+};
+
+LabelText.defaultProps = {
+  placement: 'left',
+};
 
 export { LabelView, LabelText };

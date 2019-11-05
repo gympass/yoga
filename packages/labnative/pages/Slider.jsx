@@ -12,7 +12,7 @@ const SliderPage = () => {
   const [withTooltip, setWithTooltip] = useState([0, 10]);
   const [overlapMultiLabel, setOverlapMultiLabel] = useState([0, 10]);
   const [singleSnapped, setSingleSnapped] = useState([0]);
-  const [multiValues, setMultiValues] = useState([0, 10]);
+  const [multiValues, setMultiValues] = useState([0, 7]);
 
   return (
     <ScrollView

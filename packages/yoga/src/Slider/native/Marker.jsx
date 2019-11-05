@@ -1,10 +1,10 @@
 import React from 'react';
+import { bool, arrayOf, number, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { Tooltip } from './Tooltip';
 import { hexToRgb } from '@gympass/yoga-common';
 
 const TooltipWrapper = styled.View`
-  bottom: 20px;
   position: absolute;
   z-index: 1;
 
@@ -12,13 +12,14 @@ const TooltipWrapper = styled.View`
     theme: {
       components: {
         slider: {
-          tooltip: { shadow, radius },
+          tooltip: { shadow, radius, distance },
         },
       },
     },
   }) => `
-    box-shadow: ${shadow};
+    bottom: ${distance}px;
     border-radius: ${radius}px;
+    box-shadow: ${shadow};
   `}
 `;
 
@@ -55,10 +56,7 @@ const CirclePressed = styled(Circle)`
     theme: {
       components: {
         slider: {
-          marker: {
-            backgroundColor,
-            pressed: { width, height, position },
-          },
+          marker: { backgroundColor },
         },
       },
     },
@@ -68,14 +66,22 @@ const CirclePressed = styled(Circle)`
       ? `
         background-color: ${hexToRgb(backgroundColor, 0.2)};
         border: none;
-        top: ${position}px;
-        width: ${width};
-        height: ${height};
+        top: -18px;
+        width: 40px;
+        height: 40px;
       `
       : 'display: none;'
   }
   `}
 `;
+
+CirclePressed.propTypes = {
+  pressed: bool,
+};
+
+CirclePressed.defaultProps = {
+  pressed: false,
+};
 
 const Marker = ({ pressed, tooltip }) => {
   return (
@@ -93,6 +99,22 @@ const Marker = ({ pressed, tooltip }) => {
       <Circle />
     </>
   );
+};
+
+Marker.propTypes = {
+  pressed: bool,
+  tooltip: shape({
+    description: string,
+    title: string,
+    ribbon: string,
+    visible: bool,
+    step: number,
+  }),
+};
+
+Marker.defaultProps = {
+  pressed: false,
+  tooltip: undefined,
 };
 
 export default Marker;
