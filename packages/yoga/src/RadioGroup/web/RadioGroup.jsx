@@ -14,12 +14,8 @@ import RadioGroupContext from '../RadioGroupContext';
 
 const Group = styled.div.attrs({
   role: 'radiogroup',
-})`
-  width: min-content;
-  display: flex;
-  border-style: solid;
-
-  ${({
+})(
+  ({
     theme: {
       components: {
         radioGroup: {
@@ -30,14 +26,17 @@ const Group = styled.div.attrs({
     },
     full,
   }) => `
-    border-radius: ${radii}px;
-    border-width: ${borderWidth}px;
-    border-color: ${borderColors};
+  width: min-content;
+  display: flex;
+  border-style: solid;
 
-    ${full ? `width: 100%;` : ``}
-  `}
-`;
+  border-radius: ${radii}px;
+  border-width: ${borderWidth}px;
+  border-color: ${borderColors};
 
+  ${full ? `width: 100%;` : ``}
+`,
+);
 const RadioGroup = ({
   name,
   onChange,
