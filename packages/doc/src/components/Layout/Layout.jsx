@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import { ThemeProvider } from '@gympass/yoga';
 
 import { Navigation, Documentation, Header, ThemeConfig } from '..';
+import Github from '../../images/github-logo.svg';
 
 const GlobalStyle = createGlobalStyle`
   #gatsby-focus-wrapper, #___gatsby {
@@ -100,6 +101,20 @@ const Grid = styled.div`
   `};
 `;
 
+const GithubLink = styled.a`
+  margin-left: 15px;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
+const GithubLogo = styled(Github)`
+  width: 22px;
+  height: 22px;
+`;
+
 const Layout = ({
   data: {
     siteMetadata: { title, favicon },
@@ -143,6 +158,13 @@ const Layout = ({
               setTheme={setTheme}
               setLocale={setLocale}
             />
+            <GithubLink
+              href="https://github.com/gympass/yoga"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GithubLogo />
+            </GithubLink>
           </Header>
 
           <Navigation items={nav} />
