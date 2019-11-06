@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { bool } from 'prop-types';
 
-const Step = styled.View`
-  ${({
+const Step = styled.View(
+  ({
     active,
     theme: {
       components: {
@@ -24,8 +24,8 @@ const Step = styled.View`
     border-radius: ${radius}px;
     height: 10px;
     width: 10px;
-  `}
-`;
+  `,
+);
 
 Step.propTypes = {
   active: bool,
