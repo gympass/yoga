@@ -91,7 +91,7 @@ describe('<RadioGroup />', () => {
         expect(radio2.checked).toBe(true);
       });
 
-      it.only('name should the one provided by context', () => {
+      it('name should the one provided by context', () => {
         const name = 'test';
 
         const { getAllByTestId } = render(
