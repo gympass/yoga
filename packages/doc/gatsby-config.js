@@ -81,5 +81,5 @@ module.exports = {
     favicon: config.siteMetadata.favicon,
   },
   plugins,
-  pathPrefix: '/yoga',
+  pathPrefix: '/',
 };

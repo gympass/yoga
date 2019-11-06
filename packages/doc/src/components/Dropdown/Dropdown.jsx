@@ -43,6 +43,7 @@ const Button = styled.button`
   position: absolute;
   top: 0;
   width: 100%;
+  outline: none;
 `;
 
 const ArrowDropdown = styled(Arrow)`
