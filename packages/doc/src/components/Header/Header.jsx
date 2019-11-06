@@ -47,6 +47,7 @@ const YogaLogo = styled(yoga)`
 
 const Actions = styled.div`
   align-self: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
