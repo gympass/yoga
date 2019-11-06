@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { string } from 'prop-types';
+import { oneOf } from 'prop-types';
 
 const LabelView = styled.View`
   align-items: center;
@@ -7,17 +7,17 @@ const LabelView = styled.View`
   justify-content: space-between;
 `;
 
-const LabelText = styled.Text`
+const LabelText = styled.Text(
+  ({ placement }) => `
   bottom: 5;
+  left: ${placement === 'left' ? -8 : 0}px;
   position: relative;
-  ${({ placement }) => `
-    left: ${placement === 'left' ? -8 : 0}px;
-    text-align: ${placement === 'left' ? 'left' : 'right'};
-  `}
-`;
+  text-align: ${placement};
+`,
+);
 
 LabelText.propTypes = {
-  placement: string,
+  placement: oneOf('left', 'right'),
 };
 
 LabelText.defaultProps = {

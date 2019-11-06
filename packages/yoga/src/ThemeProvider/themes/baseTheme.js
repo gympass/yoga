@@ -51,6 +51,12 @@ const baseTheme = ({ primary, secondary }) => {
         },
         shadow: elevations.small,
       },
+      label: {
+        font: {
+          size: fontSizes[1],
+          weight: fontWeights.regular,
+        },
+      },
       tooltip: {
         shadow: elevations.small,
         radius: radii.rounded,

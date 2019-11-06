@@ -2,38 +2,55 @@ import React from 'react';
 import { string } from 'prop-types';
 import styled from 'styled-components';
 
-const Tip = styled.View`
-  z-index: 3;
-  justify-content: center;
-
-  ${({
+const Wrapper = styled.View(
+  ({
     theme: {
       components: {
         slider: {
           tooltip: {
-            backgroundColor,
+            shadow,
             radius,
-            height,
-            padding: { top, right, bottom, left },
-            width,
+            ribbon: { backgroundColor },
           },
         },
       },
     },
   }) => `
     background-color: ${backgroundColor};
+    bottom: 30px;
+    border-radius: ${radius}px;
+    box-shadow: ${shadow};
+    position: absolute;
+    width: 95px;
+    z-index: 1;
+  `,
+);
+
+const Tip = styled.View(
+  ({
+    theme: {
+      components: {
+        slider: {
+          tooltip: {
+            backgroundColor,
+            radius,
+            padding: { top, right, bottom, left },
+          },
+        },
+      },
+    },
+  }) => `  
+    background-color: ${backgroundColor};
     border-radius: ${radius}px;
     padding: ${top}px ${right}px ${bottom}px ${left}px;
-    height: ${height}px;
-    width: ${width}px;
-  `}
-`;
+    justify-content: center;
+    width: 95px;
+    z-index: 3;
+  `,
+);
 
-const Title = styled.Text`
-  margin-bottom: 5px;
-  text-align: center;
-
-  ${({
+const Title = styled.Text(
+  ({
     theme: {
       components: {
         slider: {
@@ -50,12 +67,13 @@ const Title = styled.Text`
     color: ${color};
     font-size: ${size};
     font-weight: ${weight};
-  `}
-`;
+    margin-bottom: 5px;
+    text-align: center;
+  `,
+);
 
-const Description = styled.Text`
-  text-align: center;
-  ${({
+const Description = styled.Text(
+  ({
     theme: {
       components: {
         slider: {
@@ -72,63 +90,61 @@ const Description = styled.Text`
     color: ${color};
     font-size: ${size};
     font-weight: ${weight};
-  `}
-`;
+    text-align: center;
+  `,
+);
 
-const Arrow = styled.View`
-  border-radius: 3px;
-  transform: rotate(45deg);
-  position: absolute;
-  z-index: 2;
-  bottom: -5px;
-  align-self: center;
-  ${({
+const Arrow = styled.View(
+  ({
     theme: {
       components: {
         slider: {
-          tooltip: {
-            backgroundColor,
-            shadow,
-            arrow: { height, width },
-          },
+          tooltip: { backgroundColor, shadow },
         },
       },
     },
   }) => `
+    align-self: center;
     background-color: ${backgroundColor};
+    border-radius: 3px;
+    bottom: -5px;
     box-shadow: ${shadow};
-    height: ${height};
-    width: ${width};
-  `}
-`;
+    height: 16px;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 16px;
+    z-index: 2;
+  `,
+);
 
-const RibbonWrapper = styled.View`
-  ${({
+const RibbonWrapper = styled.View(
+  ({
     theme: {
       components: {
         slider: {
           tooltip: {
-            ribbon: { backgroundColor, radius, width },
+            ribbon: {
+              backgroundColor,
+              radius,
+              padding: { top, right, bottom, left },
+            },
           },
         },
       },
     },
   }) => `
+    align-items: center;
     background-color: ${backgroundColor};
     border-top-left-radius: ${radius}px;
     border-top-right-radius: ${radius}px;
-    bottom: 50px;
-    height: 32px;
-    width: ${width}px;
-  `}
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 5px;
-  position: absolute;
-`;
+    justify-content: center;
+    padding: ${top}px ${right}px ${bottom}px ${left}px;
+    position: relative;
+  `,
+);
 
-const RibbonText = styled.Text`
-  ${({
+const RibbonText = styled.Text(
+  ({
     theme: {
       components: {
         slider: {
@@ -141,12 +157,12 @@ const RibbonText = styled.Text`
       },
     },
   }) => `
-  color: ${color};
-  font-size: ${size};
-  font-weight: ${weight};
-`}
-  text-align: center;
-`;
+    color: ${color};
+    font-size: ${size};
+    font-weight: ${weight};
+    text-align: center;
+  `,
+);
 
 const Ribbon = ({ children, ...props }) => (
   <RibbonWrapper {...props}>
@@ -155,7 +171,7 @@ const Ribbon = ({ children, ...props }) => (
 );
 
 const Tooltip = ({ title, description, ribbon, ...props }) => (
-  <>
+  <Wrapper>
     {ribbon && <Ribbon>{ribbon}</Ribbon>}
     {(title || description) && (
       <Tip {...props}>
@@ -164,7 +180,7 @@ const Tooltip = ({ title, description, ribbon, ...props }) => (
       </Tip>
     )}
     <Arrow />
-  </>
+  </Wrapper>
 );
 
 Tooltip.propTypes = {
