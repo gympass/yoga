@@ -4,10 +4,10 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   bottom: 30px;
   left: 6px;
+  width: 95px;
   position: absolute;
   transform: translateX(-50%);
   ${({
-    dragging,
     theme: {
       components: {
         slider: {
@@ -23,7 +23,6 @@ const Wrapper = styled.div`
     background-color: ${backgroundColor};
     border-radius: ${radius}px;
     box-shadow: ${shadow};
-    display: ${dragging ? 'block' : 'none'};
   `}
 `;
 
@@ -62,19 +61,15 @@ const Arrow = styled.div`
     theme: {
       components: {
         slider: {
-          tooltip: {
-            backgroundColor,
-            shadow,
-            arrow: { height, width },
-          },
+          tooltip: { backgroundColor, shadow },
         },
       },
     },
   }) => `
     background-color: ${backgroundColor};
     box-shadow: ${shadow};
-    height: ${height}px;
-    width: ${width}px;
+    height: 16px;
+    width: 16px;
   `}
 `;
 
@@ -90,7 +85,6 @@ const Ribbon = styled.div`
               font: { color, size, weight },
               radius,
               padding: { top, right, bottom, left },
-              width,
             },
           },
         },
@@ -103,7 +97,6 @@ const Ribbon = styled.div`
     font-size: ${size}px;
     font-weight: ${weight};
     padding: ${top}px ${right}px ${bottom}px ${left}px;
-    width: ${width}px;
   `}
 `;
 
@@ -151,15 +144,20 @@ const Description = styled.div`
   `}
 `;
 
-const Tooltip = ({ dragging, title, description, ribbon, ...props }) => (
-  <Wrapper dragging={dragging} {...props}>
-    <Ribbon>{ribbon}</Ribbon>
-    <Tip>
-      <Title>{title}</Title>
-      <Description>{description}</Description>
-    </Tip>
-    <Arrow />
-  </Wrapper>
-);
+const Tooltip = ({ tooltip, ...props }) =>
+  tooltip ? (
+    <Wrapper {...props}>
+      {tooltip.ribbon && <Ribbon>{tooltip.ribbon}</Ribbon>}
+      {(tooltip.title || tooltip.description) && (
+        <Tip>
+          {tooltip.title && <Title>{tooltip.title}</Title>}
+          {tooltip.description && (
+            <Description>{tooltip.description}</Description>
+          )}
+        </Tip>
+      )}
+      <Arrow />
+    </Wrapper>
+  ) : null;
 
 export default Tooltip;
