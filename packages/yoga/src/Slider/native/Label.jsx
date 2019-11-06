@@ -9,11 +9,11 @@ const LabelView = styled.View`
 
 const LabelText = styled.Text(
   ({ placement }) => `
-  bottom: 5;
-  left: ${placement === 'left' ? -8 : 0}px;
-  position: relative;
-  text-align: ${placement};
-`,
+    bottom: 5;
+    left: ${placement === 'left' ? -8 : 0}px;
+    position: relative;
+    text-align: ${placement};
+  `,
 );
 
 LabelText.propTypes = {
