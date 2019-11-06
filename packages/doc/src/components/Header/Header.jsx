@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { node } from 'prop-types';
 
-import yoga from '../../images/lotus.svg';
+import yoga from '../../images/yoga-logo.svg';
 
 const LOGO_WRAPPER_WIDTH = 320;
 
