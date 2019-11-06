@@ -2,8 +2,6 @@
   <img src="../doc/src/images/lotus.png" />
 </p>
 
-# Yoga
-
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 ![Github Actions](https://github.com/gympass/yoga/workflows/Yoga%20-%20Gympass%20Design%20System/badge.svg)
 
