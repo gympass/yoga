@@ -5,17 +5,16 @@ import styled from 'styled-components';
 
 import RadioGroupContext from '../RadioGroupContext';
 
-const Group = styled.View`
-  align-self: center;
-  position: relative;
-  flex-direction: row;
-`;
+const Group = styled.View(
+  () => `
+    align-self: center;
+    position: relative;
+    flex-direction: row;
+  `,
+);
 
-const GrayLine = styled.View`
-  position: absolute;
-  height: 100%;
-
-  ${({
+const GrayLine = styled.View(
+  ({
     theme: {
       components: {
         radioGroup: {
@@ -25,11 +24,13 @@ const GrayLine = styled.View`
       },
     },
   }) => `
+    position: absolute;
+    height: 100%;
     border-radius: ${radii}px;
     border-width: ${borderWidth}px;
     border-color: ${borderColor};
-  `}
-`;
+  `,
+);
 
 const RadioGroup = ({
   onChange,

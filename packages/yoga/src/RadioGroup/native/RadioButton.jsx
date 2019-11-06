@@ -5,71 +5,52 @@ import styled from 'styled-components';
 
 import RadioGroupContext from '../RadioGroupContext';
 
-const RadioMark = styled.View`
-  align-items: center;
-  justify-content: center;
-  background-color: red;
-
-  ${({
+const RadioMark = styled.View(
+  ({
     theme: {
       components: {
-        radioGroup: {
-          radio: {
-            border: { radius: borderRadius },
-            padding: { left: paddingLeft, right: paddingRight },
-            height: { small: smallHeight, normal: normalHeight },
-            font: { size: fontSize },
-            backgroundColor: { enabled: backgroundColor },
-            checked: {
-              backgroundColor: { enabled: checkedBackgroundColor },
-            },
-          },
-        },
+        radioGroup: { radio },
       },
     },
     small,
     checked,
   }) => `
-    background-color: ${backgroundColor};
-    border-radius: ${borderRadius}px;
-    font-size: ${fontSize}px;
-    height: ${small ? smallHeight : normalHeight}px;
-    padding-left: ${paddingLeft}px;
-    padding-right: ${paddingRight}px;
-    
-    ${
-      checked
-        ? `
-      background-color: ${checkedBackgroundColor};
-    `
-        : ``
-    }
-  `};
-`;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  background-color: ${radio.backgroundColor.enabled};
+  border-radius: ${radio.border.radius}px;
+  font-size: ${radio.font.size}px;
+  height: ${small ? radio.height.small : radio.height.normal}px;
+  padding-left: ${radio.padding.left}px;
+  padding-right: ${radio.padding.right}px;
 
-const Text = styled.Text`
-  ${({
+  ${
+    checked
+      ? `
+          background-color: ${radio.checked.backgroundColor.enabled};
+        `
+      : ``
+  }
+`,
+);
+
+const Text = styled.Text(
+  ({
     theme: {
       components: {
-        radioGroup: {
-          radio: {
-            checked: {
-              textColor: { enabled: checkedTextColor },
-              font: { weight: checkedFontWeight },
-            },
-          },
-        },
+        radioGroup: { radio },
       },
     },
     checked,
   }) =>
     checked
       ? `
-      color: ${checkedTextColor};
-      font-weight: ${checkedFontWeight};
-    `
-      : ''}
-`;
+          color: ${radio.checked.textColor.enabled};
+          font-weight: ${radio.checked.font.weight};
+        `
+      : '',
+);
 
 const RadioGroupButton = ({ value, children, ...rest }) => {
   const { onChange, small, selectedValue, ...context } = useContext(
