@@ -1,31 +1,9 @@
 import React from 'react';
+import { bool, string, number, arrayOf, shape } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import RCSlider from 'rc-slider/lib/Slider';
 import RCRange from 'rc-slider/lib/Range';
 import Marker from './Marker';
-
-const sliderStyle = ({
-  activeBackgroundColor,
-  inactiveBackgroundColor,
-  radius,
-}) => `
-  position: relative;
-
-  .yoga-rail {
-    background-color: ${inactiveBackgroundColor};
-    border-radius: ${radius}px;
-    height: 4px;
-    position: absolute;
-    width: 100%;
-  }
-
-  .yoga-track {
-    background-color: ${activeBackgroundColor};
-    border-radius: ${radius}px;
-    position: absolute;
-    height: 4px;
-  }
-`;
 
 const StyledSlider = styled(RCSlider)`
   position: relative;
@@ -36,8 +14,9 @@ const StyledRange = styled(RCRange)`
 `;
 
 const Slider = ({
-  values,
+  snapped,
   tooltip,
+  values,
   theme: {
     components: {
       slider: {
@@ -58,6 +37,7 @@ const Slider = ({
       },
     },
   },
+  ...props
 }) => {
   const commonTrackStyle = {
     borderRadius: trackRadius,
@@ -93,10 +73,9 @@ const Slider = ({
 
   return values.length > 1 ? (
     <StyledRange
-      prefixCls="yoga"
-      min={0}
-      max={10}
-      dots
+      {...props}
+      dots={snapped}
+      value={values}
       trackStyle={[
         {
           ...commonTrackStyle,
@@ -115,14 +94,53 @@ const Slider = ({
         ...commonStepStyle,
         ...activeStepStyle,
       }}
-      handle={props => <Marker tooltip={tooltip} {...props} />}
+      handle={rest => <Marker values={values} tooltip={tooltip} {...rest} />}
     />
   ) : (
     <StyledSlider
+      {...props}
       prefixCls="yoga"
-      handle={props => <Marker tooltip={tooltip} {...props} />}
+      dots={snapped}
+      value={values[0]}
+      trackStyle={{
+        ...commonTrackStyle,
+        ...trackStyle,
+      }}
+      railStyle={{
+        ...commonTrackStyle,
+        ...railStyle,
+      }}
+      dotStyle={{
+        ...commonStepStyle,
+        ...inactiveStepStyle,
+      }}
+      activeDotStyle={{
+        ...commonStepStyle,
+        ...activeStepStyle,
+      }}
+      handle={rest => <Marker values={values} tooltip={tooltip} {...rest} />}
     />
   );
+};
+
+Slider.propTypes = {
+  snapped: bool,
+  tooltip: arrayOf(
+    shape({
+      ribbon: string,
+      title: string,
+      description: string,
+      visible: bool,
+      step: number,
+    }),
+  ),
+  values: arrayOf(number),
+};
+
+Slider.defaultProps = {
+  snapped: false,
+  tooltip: undefined,
+  values: [0],
 };
 
 export default withTheme(Slider);

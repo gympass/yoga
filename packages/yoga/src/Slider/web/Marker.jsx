@@ -30,10 +30,26 @@ const Circle = styled(RCHandle)`
   `}
 `;
 
-const Marker = ({ value, dragging, index, tooltip, ...props }) => (
-  <Circle value={value} {...props}>
-    <Tooltip dragging={dragging} {...tooltip} />
-  </Circle>
-);
+const Marker = ({ value, values, dragging, index, tooltip, ...props }) => {
+  const renderTooltip = () => {
+    if (!dragging) {
+      return false;
+    }
+
+    return tooltip.filter(item => {
+      if (!item.step && item.step !== 0) {
+        return item.visible;
+      }
+
+      return item.visible && values[index] === item.step;
+    })[0];
+  };
+
+  return (
+    <Circle {...props}>
+      {dragging && <Tooltip tooltip={renderTooltip()} />}
+    </Circle>
+  );
+};
 
 export default Marker;

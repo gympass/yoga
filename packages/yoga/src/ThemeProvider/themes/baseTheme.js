@@ -45,10 +45,7 @@ const baseTheme = ({ primary, secondary }) => {
       },
       marker: {
         backgroundColor: primary[3],
-        width: 24,
-        height: 24,
         border: {
-          width: 6,
           color: colors.white,
           radius: radii.circle,
         },
@@ -61,12 +58,10 @@ const baseTheme = ({ primary, secondary }) => {
         distance: spacing.large,
         padding: {
           top: spacing.xxsmall,
-          right: spacing.xxsmall,
+          right: spacing.xsmall,
           bottom: spacing.xxsmall,
-          left: spacing.xxsmall,
+          left: spacing.xsmall,
         },
-        height: 56,
-        width: 95,
         font: {
           color: colors.gray[4],
           title: {
@@ -78,14 +73,9 @@ const baseTheme = ({ primary, secondary }) => {
             weight: fontWeights.regular,
           },
         },
-        arrow: {
-          height: 16,
-          width: 16,
-        },
         ribbon: {
           backgroundColor: secondary[3],
           radius: radii.rounded,
-          width: 95,
           padding: {
             top: spacing.xxsmall,
             right: spacing.xsmall,
