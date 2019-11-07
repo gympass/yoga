@@ -1,23 +1,20 @@
 ---
-title: 'Default'
-metaTitle: 'Default Component'
-metaDescription: 'Default Component'
+title: 'Button'
+metaTitle: 'Button.Default'
+metaDescription: 'Button default looks and behavior'
 ---
+
+import DefaultWeb from './default-web.mdx';
+import DefaultNative from './default-native.mdx';
 
 # Button
 
-## Import the Button
+<TabbedView>
+  <Tab title={'Web'}>
+    <DefaultWeb />
+  </Tab>
 
-```javascript
-import { Button } from '@gympass/yoga';
-```
-
-## Usage
-
-```javascript reactLive=true
-<Button>Gympass</Button>
-```
-
-## Properties
-
-<PropsTable component="Button" />
+  <Tab title={'Native'}>
+    <DefaultNative />
+  </Tab>
+</TabbedView>
