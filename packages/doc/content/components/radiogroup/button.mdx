@@ -4,22 +4,17 @@ metaTitle: 'Button Component'
 metaDescription: 'Button Component'
 ---
 
-## Import the Radio
+import Web from './button-web.mdx';
+import Native from './button-native.mdx';
 
-```javascript
-import { RadioGroup } from '@gympass/yoga';
-```
+# RadioGroup.Button
 
-## Usage
+<TabbedView>
+  <Tab title={'Web'}>
+    <Web />
+  </Tab>
 
-```javascript reactLive=true
-<RadioGroup name="the_best" selectedValue="now">
-  <RadioGroup.Button value="24h">24 hours</RadioGroup.Button>
-  <RadioGroup.Button value="now">Open now</RadioGroup.Button>
-  <RadioGroup.Button value="sundays">At Sundays</RadioGroup.Button>
-</RadioGroup>
-```
-
-## Properties
-
-<PropsTable component="RadioGroup" />
+  <Tab title={'Native'}>
+    <Native />
+  </Tab>
+</TabbedView>
