@@ -96,16 +96,20 @@ const Slider = ({
         ...styles.railStyle,
       }}
       dotStyle={
-        snapped && {
-          ...styles.commonStepStyle,
-          ...styles.inactiveStepStyle,
-        }
+        snapped
+          ? {
+              ...styles.commonStepStyle,
+              ...styles.inactiveStepStyle,
+            }
+          : undefined
       }
       activeDotStyle={
-        snapped && {
-          ...styles.commonStepStyle,
-          ...styles.activeStepStyle,
-        }
+        snapped
+          ? {
+              ...styles.commonStepStyle,
+              ...styles.activeStepStyle,
+            }
+          : undefined
       }
       max={max}
       min={min}
@@ -144,16 +148,20 @@ const Slider = ({
         ...styles.railStyle,
       }}
       dotStyle={
-        snapped && {
-          ...styles.commonStepStyle,
-          ...styles.inactiveStepStyle,
-        }
+        snapped
+          ? {
+              ...styles.commonStepStyle,
+              ...styles.inactiveStepStyle,
+            }
+          : undefined
       }
       activeDotStyle={
-        snapped && {
-          ...styles.commonStepStyle,
-          ...styles.activeStepStyle,
-        }
+        snapped
+          ? {
+              ...styles.commonStepStyle,
+              ...styles.activeStepStyle,
+            }
+          : undefined
       }
       max={max}
       min={min}

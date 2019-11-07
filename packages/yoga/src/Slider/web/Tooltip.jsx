@@ -32,38 +32,22 @@ Wrapper.defaultProps = {
   hasRibbon: false,
 };
 
-const Tip = styled.div`
-  position: relative;
-  z-index: 3;
-
-  ${({
+const Tip = styled.div(
+  ({
     theme: {
-      components: {
-        slider: {
-          tooltip: {
-            backgroundColor,
-            radius,
-            padding: { top, right, bottom, left },
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `
-    background-color: ${backgroundColor};
-    border-radius: ${radius}px;
-    padding: ${top}px ${right}px ${bottom}px ${left}px;
-  `}
-`;
+    background-color: ${slider.tooltip.backgroundColor};
+    border-radius: ${slider.tooltip.radius}px;
+    padding: ${slider.tooltip.padding.top}px ${slider.tooltip.padding.right}px ${slider.tooltip.padding.bottom}px ${slider.tooltip.padding.left}px;
+    position: relative;
+    z-index: 3;
+  `,
+);
 
-const Arrow = styled.div`
-  border-radius: 3px;
-  bottom: -5px;
-  left: 50%;
-  position: absolute;
-  transform: rotate(45deg) translateX(-50%);
-  transform-origin: left;
-  z-index: 2;
-  ${({
+const Arrow = styled.div(
+  ({
     theme: {
       components: {
         slider: {
@@ -73,82 +57,61 @@ const Arrow = styled.div`
     },
   }) => `
     background-color: ${backgroundColor};
+    border-radius: 3px;
+    bottom: -5px;
     box-shadow: ${shadow};
     height: 16px;
+    left: 50%;
+    position: absolute;
+    transform: rotate(45deg) translateX(-50%);
+    transform-origin: left;
     width: 16px;
-  `}
-`;
+    z-index: 2;
+  `,
+);
 
-const Ribbon = styled.div`
-  position: relative;
-  text-align: center;
-  ${({
+const Ribbon = styled.div(
+  ({
     theme: {
-      components: {
-        slider: {
-          tooltip: {
-            ribbon: {
-              font: { color, size, weight },
-              radius,
-              padding: { top, right, bottom, left },
-            },
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `
-    border-top-left-radius: ${radius}px;
-    border-top-right-radius: ${radius}px;
-    color: ${color};
-    font-size: ${size}px;
-    font-weight: ${weight};
-    padding: ${top}px ${right}px ${bottom}px ${left}px;
-  `}
-`;
+    border-top-left-radius: ${slider.tooltip.ribbon.radius}px;
+    border-top-right-radius: ${slider.tooltip.ribbon.radius}px;
+    color: ${slider.tooltip.ribbon.font.color};
+    font-size: ${slider.tooltip.ribbon.font.size}px;
+    font-weight: ${slider.tooltip.ribbon.font.weight};
+    padding: ${slider.tooltip.ribbon.padding.top}px ${slider.tooltip.ribbon.padding.right}px ${slider.tooltip.ribbon.padding.bottom}px ${slider.tooltip.ribbon.padding.left}px;
+    position: relative;
+    text-align: center;
+  `,
+);
 
-const Title = styled.div`
-  text-align: center;
-  ${({
+const Title = styled.div(
+  ({
     theme: {
-      components: {
-        slider: {
-          tooltip: {
-            font: {
-              color,
-              title: { size, weight },
-            },
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `
-    color: ${color};
-    font-size: ${size}px;
-    font-weight: ${weight};
-  `}
-`;
+    color: ${slider.tooltip.font.color};
+    font-size: ${slider.tooltip.font.title.size}px;
+    font-weight: ${slider.tooltip.font.title.weight};
+    text-align: center;
+  `,
+);
 
-const Description = styled.div`
-  text-align: center;
-  ${({
+const Description = styled.div(
+  ({
     theme: {
-      components: {
-        slider: {
-          tooltip: {
-            font: {
-              color,
-              description: { size, weight },
-            },
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `
-    color: ${color};
-    font-size: ${size}px;
-    font-weight: ${weight};
-  `}
-`;
+    color: ${slider.tooltip.font.color};
+    font-size: ${slider.tooltip.font.description.size}px;
+    font-weight: ${slider.tooltip.font.description.weight};
+    text-align: center;
+  `,
+);
 
 const Tooltip = ({ data, ...props }) =>
   data ? (
