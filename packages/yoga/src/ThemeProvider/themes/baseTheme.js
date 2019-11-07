@@ -19,7 +19,7 @@ const BaseTheme = ({ primary, secondary }) => {
     secondary,
     gray: tokenColors.gray,
     white: tokenColors.white,
-    black: tokenColors.black,
+    dark: tokenColors.dark,
   };
 
   const components = {
