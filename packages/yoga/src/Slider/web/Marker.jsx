@@ -7,7 +7,7 @@ import Tooltip from './Tooltip';
 
 const Circle = styled(RCHandle)(
   ({
-    ['data-dragging']: dataDragging,
+    'data-dragging': dataDragging,
     theme: {
       components: { slider },
     },
