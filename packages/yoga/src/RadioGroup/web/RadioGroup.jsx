@@ -56,7 +56,9 @@ const RadioGroup = ({
       ...rest,
     }}
   >
-    <Group full={full} children={children} style={style} {...rest} />
+    <Group full={full} style={style} {...rest}>
+      {children}
+    </Group>
   </RadioGroupContext.Provider>
 );
 
