@@ -15,6 +15,7 @@ const StyledList = styled.ul`
     },
   }) => `
     display: flex;
+    width: 100%;
     flex-direction: ${horizontal ? 'row' : 'column'};
 
     > * {
