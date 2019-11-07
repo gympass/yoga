@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     web: {
-      ignore: ['**/native', '**/*.native.js'],
+      ignore: ['**/native', '**/*.native.js', '**/*.test.jsx'],
       presets: ['@babel/preset-env', '@babel/preset-react'],
     },
     esm: {
