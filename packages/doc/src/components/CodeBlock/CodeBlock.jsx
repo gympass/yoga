@@ -71,14 +71,17 @@ const Component = styled.div`
     background-color: ${darkMode ? dark : white};
     transition: all 0.3s ease-in-out;
 
-    ${
-      center
-        ? `
+    > div {
+      width: 100%;
+      ${
+        center
+          ? `
       align-items: center;
       display: flex;
       justify-content: center;
     `
-        : ''
+          : ''
+      }
     }
   `}
 `;
