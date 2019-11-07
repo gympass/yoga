@@ -195,4 +195,4 @@ Tooltip.defaultProps = {
   ribbon: undefined,
 };
 
-export { Tooltip, Ribbon, Arrow };
+export default Tooltip;

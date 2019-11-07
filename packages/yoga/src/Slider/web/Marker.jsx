@@ -1,9 +1,8 @@
 import React from 'react';
-import { arrayOf, number, shape, bool } from 'prop-types';
+import { arrayOf, number, shape, bool, string } from 'prop-types';
 import styled from 'styled-components';
 import RCHandle from 'rc-slider/lib/Handle';
 import Tooltip from './Tooltip';
-import { stripIgnoredCharacters } from 'graphql';
 
 const Circle = styled(RCHandle)`
   height: 24px;

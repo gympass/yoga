@@ -1,7 +1,7 @@
 import React from 'react';
 import { bool, number, shape, string } from 'prop-types';
 import styled from 'styled-components';
-import { Tooltip } from './Tooltip';
+import Tooltip from './Tooltip';
 import { hexToRgb } from '@gympass/yoga-common';
 
 const Circle = styled.TouchableOpacity(
