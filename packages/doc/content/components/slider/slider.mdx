@@ -4,6 +4,8 @@ metaTitle: 'Slider Component'
 metaDescription: 'Slider Component'
 ---
 
+import Controlled from './Controlled';
+
 # Slider
 
 ## Import the Slider
@@ -16,10 +18,40 @@ import { Slider } from '@gympass/yoga';
 
 ```javascript reactLive=true
 <Slider
-  values={[0, 10]}
-  tooltip={{ ribbon: 'My plan', title: 'Up to', description: 'U$ 99,90' }}
+  max={10}
+  min={0}
+  maxLabel={10}
+  minLabel={0}
+  tooltip={[
+    {
+      ribbon: 'My plan',
+      title: 'Up to',
+      description: 'U$ 99,90',
+      step: 2,
+      visible: true,
+    },
+  ]}
 />
 ```
+
+```javascript reactLive=true
+<Slider
+  max={7}
+  min={0}
+  tooltip={[
+    {
+      ribbon: 'My plan',
+      title: 'Up to',
+      description: 'U$ 99,90',
+      visible: true,
+    },
+  ]}
+/>
+```
+
+## Controlled example
+
+<Controlled />
 
 ## Properties
 

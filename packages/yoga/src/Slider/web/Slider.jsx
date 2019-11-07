@@ -7,68 +7,66 @@ import Marker from './Marker';
 
 const StyledSlider = styled(RCSlider)`
   position: relative;
+  padding-bottom: 15px;
 `;
 
 const StyledRange = styled(RCRange)`
   position: relative;
+  padding-bottom: 15px;
 `;
 
 const Slider = ({
   snapped,
   tooltip,
   values,
+  max,
+  maxLabel,
+  min,
+  minLabel,
   theme: {
-    components: {
-      slider: {
-        track: {
-          backgroundColor: {
-            active: activeBackgroundColor,
-            inactive: inactiveBackgroundColor,
-          },
-          border: { radius: trackRadius },
-        },
-        step: {
-          backgroundColor: {
-            active: stepActiveBackgroundColor,
-            inactive: stepInactiveBackgroundColor,
-          },
-          border: { radius: stepRadius },
-        },
-      },
-    },
+    components: { slider },
   },
   ...props
 }) => {
-  const commonTrackStyle = {
-    borderRadius: trackRadius,
-    height: 4,
-    position: 'absolute',
-    width: '100%',
-  };
+  const styles = {
+    commonTrackStyle: {
+      borderRadius: slider.track.border.radius,
+      height: 4,
+      position: 'absolute',
+      width: '100%',
+    },
 
-  const trackStyle = {
-    backgroundColor: activeBackgroundColor,
-  };
+    trackStyle: {
+      backgroundColor: slider.track.backgroundColor.active,
+    },
 
-  const railStyle = {
-    backgroundColor: inactiveBackgroundColor,
-  };
+    railStyle: {
+      backgroundColor: slider.track.backgroundColor.inactive,
+    },
 
-  const commonStepStyle = {
-    borderRadius: stepRadius,
-    marginLeft: -4,
-    position: 'absolute',
-    height: 10,
-    top: -3,
-    width: 10,
-  };
+    commonStepStyle: {
+      borderRadius: slider.step.border.radius,
+      marginLeft: -4,
+      position: 'absolute',
+      height: 10,
+      top: -3,
+      width: 10,
+    },
 
-  const activeStepStyle = {
-    backgroundColor: stepActiveBackgroundColor,
-  };
+    activeStepStyle: {
+      backgroundColor: slider.track.backgroundColor.active,
+    },
 
-  const inactiveStepStyle = {
-    backgroundColor: stepInactiveBackgroundColor,
+    inactiveStepStyle: {
+      backgroundColor: slider.track.backgroundColor.inactive,
+    },
+
+    labelStyle: {
+      fontSize: slider.label.font.size,
+      fontWeight: slider.label.font.weight,
+      position: 'absolute',
+      top: 15,
+    },
   };
 
   return values.length > 1 ? (
@@ -76,24 +74,36 @@ const Slider = ({
       {...props}
       dots={snapped}
       value={values}
+      marks={{
+        [min]: {
+          label: minLabel,
+          style: styles.labelStyle,
+        },
+        [max]: {
+          label: maxLabel,
+          style: styles.labelStyle,
+        },
+      }}
       trackStyle={[
         {
-          ...commonTrackStyle,
-          ...trackStyle,
+          ...styles.commonTrackStyle,
+          ...styles.trackStyle,
         },
       ]}
       railStyle={{
-        ...commonTrackStyle,
-        ...railStyle,
+        ...styles.commonTrackStyle,
+        ...styles.railStyle,
       }}
       dotStyle={{
-        ...commonStepStyle,
-        ...inactiveStepStyle,
+        ...styles.commonStepStyle,
+        ...styles.inactiveStepStyle,
       }}
       activeDotStyle={{
-        ...commonStepStyle,
-        ...activeStepStyle,
+        ...styles.commonStepStyle,
+        ...styles.activeStepStyle,
       }}
+      max={max}
+      min={min}
       handle={rest => <Marker values={values} tooltip={tooltip} {...rest} />}
     />
   ) : (
@@ -102,28 +112,44 @@ const Slider = ({
       prefixCls="yoga"
       dots={snapped}
       value={values[0]}
+      marks={{
+        [min]: {
+          label: minLabel,
+          style: styles.labelStyle,
+        },
+        [max]: {
+          label: maxLabel,
+          style: styles.labelStyle,
+        },
+      }}
       trackStyle={{
-        ...commonTrackStyle,
-        ...trackStyle,
+        ...styles.commonTrackStyle,
+        ...styles.trackStyle,
       }}
       railStyle={{
-        ...commonTrackStyle,
-        ...railStyle,
+        ...styles.commonTrackStyle,
+        ...styles.railStyle,
       }}
       dotStyle={{
-        ...commonStepStyle,
-        ...inactiveStepStyle,
+        ...styles.commonStepStyle,
+        ...styles.inactiveStepStyle,
       }}
       activeDotStyle={{
-        ...commonStepStyle,
-        ...activeStepStyle,
+        ...styles.commonStepStyle,
+        ...styles.activeStepStyle,
       }}
+      max={max}
+      min={min}
       handle={rest => <Marker values={values} tooltip={tooltip} {...rest} />}
     />
   );
 };
 
 Slider.propTypes = {
+  max: number,
+  maxLabel: string,
+  min: number,
+  minLabel: string,
   snapped: bool,
   tooltip: arrayOf(
     shape({
@@ -138,6 +164,10 @@ Slider.propTypes = {
 };
 
 Slider.defaultProps = {
+  max: 10,
+  maxLabel: undefined,
+  min: 0,
+  minLabel: undefined,
   snapped: false,
   tooltip: undefined,
   values: [0],
