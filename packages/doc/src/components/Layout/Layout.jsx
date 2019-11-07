@@ -115,7 +115,7 @@ const GithubLogo = styled(Github)`
 
 const Layout = ({
   data: {
-    siteMetadata: { title, favicon },
+    siteMetadata: { title },
   },
   nav,
   doc: { body, frontmatter },
@@ -127,8 +127,12 @@ const Layout = ({
   return (
     <ThemeProvider theme={theme} locale={locale}>
       <Helmet>
-        <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
-        {metaTitle ? <title>{metaTitle}</title> : <title>{title}</title>}
+        <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+        {metaTitle ? (
+          <title>Yoga - {metaTitle}</title>
+        ) : (
+          <title>Yoga - {title}</title>
+        )}
         {metaTitle ? <meta name="title" content={metaTitle} /> : null}
         {metaDescription ? (
           <meta name="description" content={metaDescription} />
