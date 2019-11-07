@@ -17,7 +17,7 @@ const LabelText = styled.Text(
 );
 
 LabelText.propTypes = {
-  placement: oneOf('left', 'right'),
+  placement: oneOf(['left', 'right']),
 };
 
 LabelText.defaultProps = {
