@@ -1,5 +1,5 @@
 import React from 'react';
-import { bool, string, number, arrayOf, shape } from 'prop-types';
+import { bool, string, number, arrayOf, shape, oneOfType } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import RCSlider from 'rc-slider/lib/Slider';
 import RCRange from 'rc-slider/lib/Range';
@@ -74,14 +74,15 @@ const Slider = ({
       {...props}
       dots={snapped}
       value={values}
+      allowCross={false}
       marks={{
         [min]: {
           label: minLabel,
-          style: styles.labelStyle,
+          style: { ...styles.labelStyle, transform: 'translateX(0%)' },
         },
         [max]: {
           label: maxLabel,
-          style: styles.labelStyle,
+          style: { ...styles.labelStyle, transform: 'translateX(-100%)' },
         },
       }}
       trackStyle={[
@@ -94,17 +95,29 @@ const Slider = ({
         ...styles.commonTrackStyle,
         ...styles.railStyle,
       }}
-      dotStyle={{
-        ...styles.commonStepStyle,
-        ...styles.inactiveStepStyle,
-      }}
-      activeDotStyle={{
-        ...styles.commonStepStyle,
-        ...styles.activeStepStyle,
-      }}
+      dotStyle={
+        snapped && {
+          ...styles.commonStepStyle,
+          ...styles.inactiveStepStyle,
+        }
+      }
+      activeDotStyle={
+        snapped && {
+          ...styles.commonStepStyle,
+          ...styles.activeStepStyle,
+        }
+      }
       max={max}
       min={min}
-      handle={rest => <Marker values={values} tooltip={tooltip} {...rest} />}
+      handle={({ ref, index, ...rest }) => (
+        <Marker
+          values={values}
+          tooltip={tooltip}
+          key={index}
+          index={index}
+          {...rest}
+        />
+      )}
     />
   ) : (
     <StyledSlider
@@ -115,11 +128,11 @@ const Slider = ({
       marks={{
         [min]: {
           label: minLabel,
-          style: styles.labelStyle,
+          style: { ...styles.labelStyle, transform: 'translateX(0%)' },
         },
         [max]: {
           label: maxLabel,
-          style: styles.labelStyle,
+          style: { ...styles.labelStyle, transform: 'translateX(-100%)' },
         },
       }}
       trackStyle={{
@@ -130,26 +143,38 @@ const Slider = ({
         ...styles.commonTrackStyle,
         ...styles.railStyle,
       }}
-      dotStyle={{
-        ...styles.commonStepStyle,
-        ...styles.inactiveStepStyle,
-      }}
-      activeDotStyle={{
-        ...styles.commonStepStyle,
-        ...styles.activeStepStyle,
-      }}
+      dotStyle={
+        snapped && {
+          ...styles.commonStepStyle,
+          ...styles.inactiveStepStyle,
+        }
+      }
+      activeDotStyle={
+        snapped && {
+          ...styles.commonStepStyle,
+          ...styles.activeStepStyle,
+        }
+      }
       max={max}
       min={min}
-      handle={rest => <Marker values={values} tooltip={tooltip} {...rest} />}
+      handle={({ ref, index, ...rest }) => (
+        <Marker
+          values={values}
+          tooltip={tooltip}
+          key={index}
+          index={index}
+          {...rest}
+        />
+      )}
     />
   );
 };
 
 Slider.propTypes = {
   max: number,
-  maxLabel: string,
+  maxLabel: oneOfType([string, number]),
   min: number,
-  minLabel: string,
+  minLabel: oneOfType([string, number]),
   snapped: bool,
   tooltip: arrayOf(
     shape({

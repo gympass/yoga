@@ -1,0 +1,571 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Slider /> Snapshots With one marker should match snapshot with Slider snapped 1`] = `
+.c1 {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  cursor: pointer;
+  margin-top: -10px;
+  outline: none;
+}
+
+.c0 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+<div>
+  <div
+    class="yoga yoga-with-marks c0"
+  >
+    <div
+      class="yoga-rail"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+    />
+    <div
+      class="yoga-track"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(244, 97, 82); left: 0%;"
+    />
+    <div
+      class="yoga-step"
+    >
+      <span
+        class="yoga-dot yoga-dot-active"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 0%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 100%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 10%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 20%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 30%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 40%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 50%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 60%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 70%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 80%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 90%;"
+      />
+    </div>
+    <div
+      aria-disabled="false"
+      aria-valuemax="10"
+      aria-valuemin="0"
+      aria-valuenow="0"
+      class="c1 yoga-handle"
+      data-dragging="false"
+      role="slider"
+      style="left: 0%; transform: translateX(-50%);"
+      tabindex="0"
+    />
+    <div
+      class="yoga-mark"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Slider /> Snapshots With one marker should match snapshot with Slider with labels 1`] = `
+.c1 {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  cursor: pointer;
+  margin-top: -10px;
+  outline: none;
+}
+
+.c0 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+<div>
+  <div
+    class="yoga yoga-with-marks c0"
+  >
+    <div
+      class="yoga-rail"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+    />
+    <div
+      class="yoga-track"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(244, 97, 82); left: 0%;"
+    />
+    <div
+      class="yoga-step"
+    >
+      <span
+        class="yoga-dot yoga-dot-active"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 0%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 100%;"
+      />
+    </div>
+    <div
+      aria-disabled="false"
+      aria-valuemax="10"
+      aria-valuemin="0"
+      aria-valuenow="0"
+      class="c1 yoga-handle"
+      data-dragging="false"
+      role="slider"
+      style="left: 0%; transform: translateX(-50%);"
+      tabindex="0"
+    />
+    <div
+      class="yoga-mark"
+    >
+      <span
+        class="yoga-mark-text yoga-mark-text-active"
+        style="transform: translateX(0%); left: 0%; font-size: 12px; font-weight: 400; position: absolute; top: 15px;"
+      >
+        0
+      </span>
+      <span
+        class="yoga-mark-text"
+        style="transform: translateX(-100%); left: 100%; font-size: 12px; font-weight: 400; position: absolute; top: 15px;"
+      >
+        10
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Slider /> Snapshots With one marker should match snapshot with default Slider 1`] = `
+.c1 {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  cursor: pointer;
+  margin-top: -10px;
+  outline: none;
+}
+
+.c0 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+<div>
+  <div
+    class="yoga yoga-with-marks c0"
+  >
+    <div
+      class="yoga-rail"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+    />
+    <div
+      class="yoga-track"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(244, 97, 82); left: 0%;"
+    />
+    <div
+      class="yoga-step"
+    >
+      <span
+        class="yoga-dot yoga-dot-active"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 0%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 100%;"
+      />
+    </div>
+    <div
+      aria-disabled="false"
+      aria-valuemax="10"
+      aria-valuemin="0"
+      aria-valuenow="0"
+      class="c1 yoga-handle"
+      data-dragging="false"
+      role="slider"
+      style="left: 0%; transform: translateX(-50%);"
+      tabindex="0"
+    />
+    <div
+      class="yoga-mark"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
+.c1 {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  cursor: pointer;
+  margin-top: -10px;
+  outline: none;
+}
+
+.c0 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+<div>
+  <div
+    class="rc-slider rc-slider-with-marks c0"
+  >
+    <div
+      class="rc-slider-rail"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+    />
+    <div
+      class="rc-slider-track rc-slider-track-1"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 40%; background-color: rgb(244, 97, 82); left: 30%;"
+    />
+    <div
+      class="rc-slider-step"
+    >
+      <span
+        class="rc-slider-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 0%;"
+      />
+      <span
+        class="rc-slider-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 100%;"
+      />
+    </div>
+    <div
+      aria-disabled="false"
+      aria-valuemax="10"
+      aria-valuemin="0"
+      aria-valuenow="3"
+      class="c1 rc-slider-handle rc-slider-handle-1"
+      data-dragging="false"
+      role="slider"
+      style="left: 30%; transform: translateX(-50%);"
+      tabindex="0"
+    />
+    <div
+      aria-disabled="false"
+      aria-valuemax="10"
+      aria-valuemin="0"
+      aria-valuenow="7"
+      class="c1 rc-slider-handle rc-slider-handle-2"
+      data-dragging="false"
+      role="slider"
+      style="left: 70%; transform: translateX(-50%);"
+      tabindex="0"
+    />
+    <div
+      class="rc-slider-mark"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Slider /> Snapshots With two markers should match snapshot with Slider snapped 1`] = `
+.c1 {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  cursor: pointer;
+  margin-top: -10px;
+  outline: none;
+}
+
+.c0 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+<div>
+  <div
+    class="rc-slider rc-slider-with-marks c0"
+  >
+    <div
+      class="rc-slider-rail"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+    />
+    <div
+      class="rc-slider-track rc-slider-track-1"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 40%; background-color: rgb(244, 97, 82); left: 30%;"
+    />
+    <div
+      class="rc-slider-step"
+    >
+      <span
+        class="rc-slider-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 0%;"
+      />
+      <span
+        class="rc-slider-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 100%;"
+      />
+      <span
+        class="rc-slider-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 10%;"
+      />
+      <span
+        class="rc-slider-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 20%;"
+      />
+      <span
+        class="rc-slider-dot rc-slider-dot-active"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 30%;"
+      />
+      <span
+        class="rc-slider-dot rc-slider-dot-active"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 40%;"
+      />
+      <span
+        class="rc-slider-dot rc-slider-dot-active"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 50%;"
+      />
+      <span
+        class="rc-slider-dot rc-slider-dot-active"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 60%;"
+      />
+      <span
+        class="rc-slider-dot rc-slider-dot-active"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 70%;"
+      />
+      <span
+        class="rc-slider-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 80%;"
+      />
+      <span
+        class="rc-slider-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 90%;"
+      />
+    </div>
+    <div
+      aria-disabled="false"
+      aria-valuemax="10"
+      aria-valuemin="0"
+      aria-valuenow="3"
+      class="c1 rc-slider-handle rc-slider-handle-1"
+      data-dragging="false"
+      role="slider"
+      style="left: 30%; transform: translateX(-50%);"
+      tabindex="0"
+    />
+    <div
+      aria-disabled="false"
+      aria-valuemax="10"
+      aria-valuemin="0"
+      aria-valuenow="7"
+      class="c1 rc-slider-handle rc-slider-handle-2"
+      data-dragging="false"
+      role="slider"
+      style="left: 70%; transform: translateX(-50%);"
+      tabindex="0"
+    />
+    <div
+      class="rc-slider-mark"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Slider /> Tooltip should render tooltips 1`] = `
+.c2 {
+  bottom: 30px;
+  left: 6px;
+  width: 95px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #178173;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.c4 {
+  position: relative;
+  z-index: 3;
+  background-color: #F5F5FA;
+  border-radius: 8px;
+  padding: 4px 8px 4px 8px;
+}
+
+.c7 {
+  border-radius: 3px;
+  bottom: -5px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: rotate(45deg) translateX(-50%);
+  -ms-transform: rotate(45deg) translateX(-50%);
+  transform: rotate(45deg) translateX(-50%);
+  -webkit-transform-origin: left;
+  -ms-transform-origin: left;
+  transform-origin: left;
+  z-index: 2;
+  background-color: #F5F5FA;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  height: 16px;
+  width: 16px;
+}
+
+.c3 {
+  position: relative;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px 4px 8px;
+}
+
+.c5 {
+  text-align: center;
+  color: #6B6B78;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c6 {
+  text-align: center;
+  color: #6B6B78;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c1 {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25),0px 0px 0px 8px rgba(244,97,82,0.2);
+  cursor: pointer;
+  margin-top: -10px;
+  outline: none;
+}
+
+.c0 {
+  position: relative;
+  padding-bottom: 15px;
+}
+
+<div>
+  <div
+    class="yoga yoga-with-marks c0"
+  >
+    <div
+      class="yoga-rail"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+    />
+    <div
+      class="yoga-track"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(244, 97, 82); left: 0%;"
+    />
+    <div
+      class="yoga-step"
+    >
+      <span
+        class="yoga-dot yoga-dot-active"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 0%;"
+      />
+      <span
+        class="yoga-dot"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 100%;"
+      />
+    </div>
+    <div
+      aria-disabled="false"
+      aria-valuemax="10"
+      aria-valuemin="0"
+      aria-valuenow="0"
+      class="c1 yoga-handle"
+      data-dragging="true"
+      role="slider"
+      style="left: 0%; transform: translateX(-50%);"
+      tabindex="0"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          ribbon
+        </div>
+        <div
+          class="c4"
+        >
+          <div
+            class="c5"
+          >
+            title
+          </div>
+          <div
+            class="c6"
+          >
+            description
+          </div>
+        </div>
+        <div
+          class="c7"
+        />
+      </div>
+    </div>
+    <div
+      class="yoga-mark"
+    />
+  </div>
+</div>
+`;

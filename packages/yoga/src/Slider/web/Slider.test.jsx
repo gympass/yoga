@@ -1,8 +1,7 @@
 import React from 'react';
-import { render, toJSON, fireEvent } from '@testing-library/react-native';
+import { render, fireEvent } from '@testing-library/react';
 import ThemeProvider from '../../ThemeProvider';
 import Slider from './Slider';
-import Tooltip from './Tooltip';
 
 describe('<Slider />', () => {
   describe('Snapshots', () => {
@@ -13,7 +12,7 @@ describe('<Slider />', () => {
             <Slider />
           </ThemeProvider>,
         );
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
       });
 
       it('should match snapshot with Slider with labels', () => {
@@ -22,7 +21,7 @@ describe('<Slider />', () => {
             <Slider minLabel={0} maxLabel={10} />
           </ThemeProvider>,
         );
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
       });
 
       it('should match snapshot with Slider snapped', () => {
@@ -31,7 +30,7 @@ describe('<Slider />', () => {
             <Slider snapped />
           </ThemeProvider>,
         );
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
       });
     });
     describe('With two markers', () => {
@@ -41,7 +40,7 @@ describe('<Slider />', () => {
             <Slider values={[3, 7]} />
           </ThemeProvider>,
         );
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
       });
 
       it('should match snapshot with Slider snapped', () => {
@@ -50,7 +49,7 @@ describe('<Slider />', () => {
             <Slider values={[3, 7]} snapped />
           </ThemeProvider>,
         );
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
       });
     });
   });
@@ -62,14 +61,14 @@ describe('<Slider />', () => {
           <Slider maxLabel="max" minLabel="min" />
         </ThemeProvider>,
       );
-      expect(getByText('max')).toHaveTextContent('max');
-      expect(getByText('min')).toHaveTextContent('min');
+      expect(getByText('max').textContent).toBe('max');
+      expect(getByText('min').textContent).toBe('min');
     });
   });
 
   describe('Tooltip', () => {
-    it('should render tooltip', () => {
-      const { container, getByText, getByRole } = render(
+    it.only('should render tooltips', () => {
+      const { container, getByRole, getByText } = render(
         <ThemeProvider>
           <Slider
             values={[0]}
@@ -85,44 +84,12 @@ describe('<Slider />', () => {
         </ThemeProvider>,
       );
 
-      fireEvent.responderGrant(getByRole('adjustable'), {
-        touchHistory: { touchBank: {} },
-      });
+      fireEvent.mouseDown(getByRole('slider'));
 
       expect(getByText('ribbon')).toBeTruthy();
       expect(getByText('title')).toBeTruthy();
       expect(getByText('description')).toBeTruthy();
-
-      expect(toJSON(container)).toMatchSnapshot();
-    });
-
-    it('should render tooltip on a specific step', () => {
-      const { container, getByText, getByRole } = render(
-        <ThemeProvider>
-          <Slider
-            values={[2]}
-            tooltip={[
-              {
-                ribbon: 'ribbon',
-                title: 'title',
-                description: 'description',
-                visible: true,
-                step: 2,
-              },
-            ]}
-          />
-        </ThemeProvider>,
-      );
-
-      fireEvent.responderGrant(getByRole('adjustable'), {
-        touchHistory: { touchBank: {} },
-      });
-
-      expect(getByText('ribbon')).toBeTruthy();
-      expect(getByText('title')).toBeTruthy();
-      expect(getByText('description')).toBeTruthy();
-
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(container).toMatchSnapshot();
     });
   });
 });
