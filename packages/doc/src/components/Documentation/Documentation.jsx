@@ -25,6 +25,7 @@ const customComponents = {
       {children}
     </h2>
   ),
+  pre: 'div',
   code: CodeBlock,
   inlineCode: InlineCode,
   TabbedView: ({ ...props }) => <TabbedView {...props} />,
