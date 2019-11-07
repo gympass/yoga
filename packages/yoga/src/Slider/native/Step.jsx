@@ -5,23 +5,15 @@ const Step = styled.View(
   ({
     active,
     theme: {
-      components: {
-        slider: {
-          step: {
-            backgroundColor: {
-              active: activeBackgroundColor,
-              inactive: inactiveBackgroundColor,
-            },
-            border: { radius },
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `
     background-color: ${
-      active ? activeBackgroundColor : inactiveBackgroundColor
+      active
+        ? slider.step.backgroundColor.active
+        : slider.step.backgroundColor.inactive
     };
-    border-radius: ${radius}px;
+    border-radius: ${slider.step.border.radius}px;
     height: 10px;
     width: 10px;
   `,

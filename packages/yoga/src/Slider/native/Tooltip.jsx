@@ -5,21 +5,13 @@ import styled from 'styled-components';
 const Wrapper = styled.View(
   ({
     theme: {
-      components: {
-        slider: {
-          tooltip: {
-            shadow,
-            radius,
-            ribbon: { backgroundColor },
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `
-    background-color: ${backgroundColor};
+    background-color: ${slider.tooltip.ribbon.backgroundColor};
     bottom: 38px;
-    border-radius: ${radius}px;
-    box-shadow: ${shadow};
+    border-radius: ${slider.tooltip.radius}px;
+    box-shadow: ${slider.tooltip.shadow};
     elevation: 8;
     position: absolute;
     width: 95px;
@@ -29,20 +21,12 @@ const Wrapper = styled.View(
 const Tip = styled.View(
   ({
     theme: {
-      components: {
-        slider: {
-          tooltip: {
-            backgroundColor,
-            radius,
-            padding: { top, right, bottom, left },
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `  
-    background-color: ${backgroundColor};
-    border-radius: ${radius}px;
-    padding: ${top}px ${right}px ${bottom}px ${left}px;
+    background-color: ${slider.tooltip.backgroundColor};
+    border-radius: ${slider.tooltip.radius}px;
+    padding: ${slider.tooltip.padding.top}px ${slider.tooltip.padding.right}px ${slider.tooltip.padding.bottom}px ${slider.tooltip.padding.left}px;
     justify-content: center;
     width: 95px;
   `,
@@ -51,21 +35,12 @@ const Tip = styled.View(
 const Title = styled.Text(
   ({
     theme: {
-      components: {
-        slider: {
-          tooltip: {
-            font: {
-              color,
-              title: { size, weight },
-            },
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `
-    color: ${color};
-    font-size: ${size};
-    font-weight: ${weight};
+    color: ${slider.tooltip.font.color};
+    font-size: ${slider.tooltip.font.title.size};
+    font-weight: ${slider.tooltip.font.title.weight};
     margin-bottom: 5px;
     text-align: center;
   `,
@@ -74,21 +49,12 @@ const Title = styled.Text(
 const Description = styled.Text(
   ({
     theme: {
-      components: {
-        slider: {
-          tooltip: {
-            font: {
-              color,
-              description: { size, weight },
-            },
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `
-    color: ${color};
-    font-size: ${size};
-    font-weight: ${weight};
+    color: ${slider.tooltip.font.color};
+    font-size: ${slider.tooltip.font.description.size}px;
+    font-weight: ${slider.tooltip.font.description.weight};
     text-align: center;
   `,
 );
@@ -96,18 +62,14 @@ const Description = styled.Text(
 const Arrow = styled.View(
   ({
     theme: {
-      components: {
-        slider: {
-          tooltip: { backgroundColor, shadow },
-        },
-      },
+      components: { slider },
     },
   }) => `
     align-self: center;
-    background-color: ${backgroundColor};
+    background-color: ${slider.tooltip.backgroundColor};
     border-radius: 3px;
     bottom: 10px;
-    box-shadow: ${shadow};
+    box-shadow: ${slider.tooltip.shadow};
     height: 16px;
     margin-bottom: -17px;
     position: relative;
@@ -120,25 +82,15 @@ const Arrow = styled.View(
 const RibbonWrapper = styled.View(
   ({
     theme: {
-      components: {
-        slider: {
-          tooltip: {
-            ribbon: {
-              backgroundColor,
-              radius,
-              padding: { top, right, bottom, left },
-            },
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `
     align-items: center;
-    background-color: ${backgroundColor};
-    border-top-left-radius: ${radius}px;
-    border-top-right-radius: ${radius}px;
+    background-color: ${slider.tooltip.ribbon.backgroundColor};
+    border-top-left-radius: ${slider.tooltip.ribbon.radius}px;
+    border-top-right-radius: ${slider.tooltip.ribbon.radius}px;
     justify-content: center;
-    padding: ${top}px ${right}px ${bottom}px ${left}px;
+    padding: ${slider.tooltip.ribbon.padding.top}px ${slider.tooltip.ribbon.padding.right}px ${slider.tooltip.ribbon.padding.bottom}px ${slider.tooltip.ribbon.padding.left}px;
     position: relative;
   `,
 );
@@ -146,20 +98,12 @@ const RibbonWrapper = styled.View(
 const RibbonText = styled.Text(
   ({
     theme: {
-      components: {
-        slider: {
-          tooltip: {
-            ribbon: {
-              font: { color, size, weight },
-            },
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `
-    color: ${color};
-    font-size: ${size};
-    font-weight: ${weight};
+    color: ${slider.tooltip.ribbon.font.color};
+    font-size: ${slider.tooltip.ribbon.font.size}px;
+    font-weight: ${slider.tooltip.ribbon.font.weight};
     text-align: center;
   `,
 );
