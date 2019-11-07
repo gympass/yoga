@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.2.2...@gympass/yoga-doc@0.3.0) (2019-11-07)
+
+### Features
+
+- **radiogroup.button:** create RadioGroup.Button compound Component ([9cfc5d6](https://github.com/Gympass/yoga/commit/9cfc5d6))
+
 ## [0.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.2.1...@gympass/yoga-doc@0.2.2) (2019-10-29)
 
 **Note:** Version bump only for package @gympass/yoga-doc
