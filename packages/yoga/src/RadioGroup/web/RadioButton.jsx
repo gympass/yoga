@@ -26,7 +26,7 @@ const RadioMark = styled.label(
 
   background-color: ${radio.backgroundColor.enabled};
   border-radius: ${radio.border.radius}px;
-    
+
   ${
     checked
       ? `
