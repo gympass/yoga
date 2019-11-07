@@ -3,7 +3,7 @@ import { arrayOf, object, shape } from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from '@gympass/yoga';
-
+import { hexToRgb } from '@gympass/yoga-common';
 import { Navigation, Documentation, Header, ThemeConfig } from '..';
 import Github from '../../images/github-logo.svg';
 
@@ -67,19 +67,17 @@ const GlobalStyle = createGlobalStyle`
 const MainWrapper = styled.div`
   ${({
     theme: {
-      colors: {
-        primary: { length: len, [len - 1]: primaryColor },
-      },
+      colors: { primary: primaryPallete },
     },
   }) => `
     code {
-      color: ${primaryColor};
+      color: ${primaryPallete[3]};
       font-family: monospace;
       font-size: 14px;
     }
 
     a[target] {
-      color: ${primaryColor};
+      color: ${primaryPallete[3]};
       text-decoration: none;
     }
   `}
@@ -91,7 +89,7 @@ const Grid = styled.div`
       colors: { gray: grayPallete },
     },
   }) => `
-    background-color: ${grayPallete[1]};
+    background-color: ${hexToRgb(grayPallete[1], 0.7)};
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;

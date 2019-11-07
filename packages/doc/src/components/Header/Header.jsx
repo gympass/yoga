@@ -4,7 +4,7 @@ import { node } from 'prop-types';
 
 import yoga from '../../images/yoga-logo.svg';
 
-const LOGO_WRAPPER_WIDTH = 320;
+const LOGO_WRAPPER_WIDTH = 250;
 
 const Wrapper = styled.div`
   ${({
@@ -25,22 +25,29 @@ const Wrapper = styled.div`
 `;
 
 const LogoWrapper = styled.div`
-  align-items: center;
-  display: flex;
-  justify-content: left;
-  overflow: hidden;
-  padding: 0 32px;
-  width: ${LOGO_WRAPPER_WIDTH}px;
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    align-items: center;
+    height: 100%;
+    display: flex;
+  justify-content: center;
+    overflow: hidden;
+    box-shadow: 2px 0 0 ${grayPallete[1]};
+    width: ${LOGO_WRAPPER_WIDTH}px;
+  `};
 `;
 
 const YogaLogo = styled(yoga)`
   ${({
     theme: {
-      colors: { primary: primaryColor },
+      colors: { primary: primaryPallete },
     },
   }) => `
     path {
-      fill: ${primaryColor[3]};
+      fill: ${primaryPallete[3]};
     }
   `}
 `;
@@ -72,8 +79,6 @@ const Header = ({ children }) => (
     <LogoWrapper>
       <YogaLogo />
     </LogoWrapper>
-
-    <Divider />
 
     <Actions>{children}</Actions>
   </Wrapper>

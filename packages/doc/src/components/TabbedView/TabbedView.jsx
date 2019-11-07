@@ -24,9 +24,7 @@ const NavItem = styled.li`
   ${({
     active,
     theme: {
-      colors: {
-        primary: { length: len, [len - 1]: primaryColor },
-      },
+      colors: { primary: primaryPallete },
     },
   }) => `
     cursor: pointer;
@@ -52,14 +50,14 @@ const NavItem = styled.li`
     }
 
     &:hover {
-      color: ${primaryColor};
+      color: ${primaryPallete[3]};
     }
 
     ${
       active
         ? `
-          color: ${primaryColor};
-          border-bottom: 2px solid ${primaryColor};
+          color: ${primaryPallete[3]};
+          border-bottom: 2px solid ${primaryPallete[3]};
             `
         : ''
     }

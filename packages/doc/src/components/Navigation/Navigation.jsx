@@ -18,7 +18,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     grid-area: Navigation;
     height: 100%;
-    width: 320px;
+    width: 250px;
 
     span {
       color: ${grayPallete[4]};
@@ -33,7 +33,7 @@ const Nav = styled.div`
 `;
 
 const List = styled.ul`
-  font-size: 16px;
+  font-size: 14px;
   list-style-type: none;
   padding: 0px;
   width: 100%;
@@ -61,16 +61,14 @@ const ListItem = styled.li`
   ${({
     active,
     theme: {
-      colors: {
-        primary: { length: len, [len - 1]: primaryColor },
-      },
+      colors: { primary: primaryPallete },
     },
   }) => `
     & > ${AnchorLink} {
       ${
         active
           ? `
-          color: ${primaryColor};
+          color: ${primaryPallete[3]};
             `
           : ''
       }
