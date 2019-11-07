@@ -7,6 +7,7 @@ const Wrapper = styled.div`
   width: 95px;
   position: absolute;
   transform: translateX(-50%);
+
   ${({
     theme: {
       components: {
