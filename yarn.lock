@@ -1055,15 +1055,6 @@
     signedsource "^1.0.0"
     yargs "^9.0.0"
 
-"@gympass/yoga@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@gympass/yoga/-/yoga-0.0.5.tgz#3d114e1e40b1a93e6ab8a56bc3b0fc3dab5b3b23"
-  integrity sha512-vDCkY2t9iGuPcg6IECLjer8J9EeTfa0EBknK6HDlXxVmSkdkP3fv6OI5TpZyVtoDlEEEr+h3UN5wm7kBQMQCWg==
-  dependencies:
-    "@gympass/yoga-common" "^0.1.0"
-    "@gympass/yoga-tokens" "^0.1.0"
-    prop-types "^15.7.2"
-
 "@hapi/address@2.x.x":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.2.tgz#1c794cd6dbf2354d1eb1ef10e0303f573e1c7222"
