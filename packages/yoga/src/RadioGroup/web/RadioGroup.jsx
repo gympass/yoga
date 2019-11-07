@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  string,
-  func,
-  oneOfType,
-  number,
-  bool,
-  node,
-  object,
-} from 'prop-types';
+import { string, func, oneOfType, number, bool, node, shape } from 'prop-types';
 import styled from 'styled-components';
 
 import RadioGroupContext from '../RadioGroupContext';
@@ -69,7 +61,7 @@ RadioGroup.propTypes = {
   small: bool,
   full: bool,
   children: node,
-  style: object,
+  style: shape({}),
 };
 
 RadioGroup.defaultProps = {
