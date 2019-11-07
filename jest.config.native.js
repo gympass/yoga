@@ -8,4 +8,7 @@ module.exports = {
       'styled-components/native/dist/styled-components.native.cjs',
     ),
   },
+  transformIgnorePatterns: [
+    '/node_modules/(?!@ptomasroos/react-native-multi-slider|react-native).+\\.js$',
+  ],
 };
