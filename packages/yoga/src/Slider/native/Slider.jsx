@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { bool, number, arrayOf, shape, string } from 'prop-types';
+import { bool, number, arrayOf, shape, string, oneOfType } from 'prop-types';
 import { withTheme } from 'styled-components';
 import MultiSlider from '@ptomasroos/react-native-multi-slider';
 import { LabelView, LabelText } from './Label';
@@ -106,9 +106,9 @@ const SliderComponent = ({
 
 SliderComponent.propTypes = {
   max: number,
-  maxLabel: string,
+  maxLabel: oneOfType([string, number]),
   min: number,
-  minLabel: string,
+  minLabel: oneOfType([string, number]),
   snapped: bool,
   tooltip: arrayOf(
     shape({
