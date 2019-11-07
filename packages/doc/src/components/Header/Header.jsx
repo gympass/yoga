@@ -1,31 +1,75 @@
 import React from 'react';
-import { node } from 'prop-types';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import { node } from 'prop-types';
 
-import GympassLogo from '../../images/gympass-logo.svg';
+import yoga from '../../images/yoga-logo.svg';
+
+const LOGO_WRAPPER_WIDTH = 250;
 
 const Wrapper = styled.div`
-  box-shadow: 0 2px 2px #f0f1f2;
-  grid-area: Header;
-  margin-bottom: 40px;
-  padding: 24px 45px 15px;
-  display: flex;
-  justify-content: space-between;
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    align-items: center;
+    background-color: ${grayPallete[0]};
+    box-shadow: 0 2px 2px ${grayPallete[1]};
+    display: flex;
+    flex-direction: row;
+    grid-area: Header;
+    height: 70px;
+    position: relative;
+    z-index: 2;
+  `};
+`;
+
+const LogoWrapper = styled.div`
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    align-items: center;
+    height: 100%;
+    display: flex;
+  justify-content: center;
+    overflow: hidden;
+    box-shadow: 2px 0 0 ${grayPallete[1]};
+    width: ${LOGO_WRAPPER_WIDTH}px;
+  `};
+`;
+
+const YogaLogo = styled(yoga)`
+  ${({
+    theme: {
+      colors: { primary: primaryPallete },
+    },
+  }) => `
+    path {
+      fill: ${primaryPallete[3]};
+      transition: all 0.3s ease-in-out;
+    }
+
+  `}
 `;
 
 const Actions = styled.div`
-  width: 300px;
+  align-self: center;
+  align-items: center;
   display: flex;
-  justify-content: space-around;
-  align-items: end;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 20px;
+  width: calc(100% - ${LOGO_WRAPPER_WIDTH}px);
 `;
 
 const Header = ({ children }) => (
   <Wrapper>
-    <Link to="/">
-      <GympassLogo />
-    </Link>
+    <LogoWrapper>
+      <YogaLogo />
+    </LogoWrapper>
+
     <Actions>{children}</Actions>
   </Wrapper>
 );

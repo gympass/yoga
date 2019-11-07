@@ -1,51 +1,67 @@
 import React from 'react';
 import styled from 'styled-components';
 import { string, shape } from 'prop-types';
+import { hexToRgb } from '@gympass/yoga-common';
 import MetaDataQuery from './MetaDataQuery';
+
 import { InlineCode } from '..';
 
-const BORDER_COLOR = '#e2dddd';
-
 const TableWrapper = styled.div`
-  border: 1px solid ${BORDER_COLOR};
-  border-radius: 5px;
-  overflow: hidden;
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    border: 1px solid ${grayPallete[2]};
+    border-radius: 5px;
+    overflow: hidden;
+  `};
 `;
 
 const StyledTable = styled.table`
-  border-collapse: collapse;
-  font-family: monospace;
-  margin: 0px 0;
-  width: 100%;
+  ${({
+    theme: {
+      colors: { primary: primaryPallete, gray: grayPallete },
+    },
+  }) => `
+    background-color: ${grayPallete[0]};
+    border-collapse: collapse;
+    font-family: monospace;
+    margin: 0px 0;
+    width: 100%;
 
-  thead {
-    background-color: #f6f8fa;
+    thead {
+      background-color: ${hexToRgb(grayPallete[1], 0.5)};
+      font-family: 'Muli';
 
-    th {
-      font-size: 14px;
-      font-weight: normal;
-      padding: 14px 12px 12px;
-      text-align: left;
-    }
-  }
-
-  tbody {
-    tr {
-      td {
-        border-top: 1px solid ${BORDER_COLOR};
+      th {
+        font-size: 14px;
+        font-weight: normal;
         padding: 14px 12px 12px;
+        text-align: left;
+      }
+    }
 
-        &:first-child {
-          font-weight: 700;
-        }
+    tbody {
+      tr {
+        background-color: ${grayPallete[0]};
 
-        &:nth-child(3),
-        &:last-child {
-          color: #e3116c;
+        td {
+          border-top: 1px solid ${hexToRgb(grayPallete[2], 0.7)};
+          padding: 14px 12px 12px;
+
+          &:first-child {
+            font-weight: 700;
+          }
+
+          &:nth-child(3),
+          &:last-child {
+            color: ${primaryPallete[3]};
+          }
         }
       }
     }
-  }
+  `};
 `;
 
 const Table = ({
@@ -93,19 +109,23 @@ Table.propTypes = {
   data: shape({}).isRequired,
 };
 
-const PropsTable = ({ component }) => {
+const PropsTable = ({ component, platform }) => {
   const {
     allComponentMetadata: { edges },
   } = MetaDataQuery();
 
   const componentProps = edges.filter(
-    ({ node }) => node.displayName === component,
+    ({ node }) =>
+      node.parent.absolutePath.includes(platform) &&
+      node.displayName === component,
   )[0];
+
   return <Table data={componentProps} />;
 };
 
 PropsTable.propTypes = {
   component: string.isRequired,
+  platform: string.isRequired,
 };
 
 export default PropsTable;

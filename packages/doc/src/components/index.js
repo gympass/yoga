@@ -1,6 +1,6 @@
 import CodeBlock from './CodeBlock';
 import PropsTable from './PropsTable';
-import GithubTitle from './GithubTitle';
+import ComponentTitle from './ComponentTitle';
 import Header from './Header';
 import InlineCode from './InlineCode';
 import Layout from './Layout';
@@ -8,10 +8,13 @@ import Navigation from './Navigation';
 import Summary from './Summary';
 import Documentation from './Documentation';
 import Dropdown from './Dropdown';
+import { TabbedView, Tab } from './TabbedView';
+import CodeSandboxButton from './CodeSandboxButton';
+import ThemeConfig from './ThemeConfig';
 
 export {
   CodeBlock,
-  GithubTitle,
+  ComponentTitle,
   Header,
   InlineCode,
   Layout,
@@ -20,4 +23,8 @@ export {
   PropsTable,
   Documentation,
   Dropdown,
+  TabbedView,
+  Tab,
+  CodeSandboxButton,
+  ThemeConfig,
 };

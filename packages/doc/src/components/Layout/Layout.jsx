@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { arrayOf, object, shape } from 'prop-types';
-
 import styled, { createGlobalStyle } from 'styled-components';
 import Helmet from 'react-helmet';
-
-import { ThemeProvider, themes } from '@gympass/yoga';
-import * as tokens from '@gympass/yoga-tokens';
-
-import { Navigation, Documentation, Header, Summary, Dropdown } from '..';
+import { ThemeProvider } from '@gympass/yoga';
+import { hexToRgb } from '@gympass/yoga-common';
+import { Navigation, Documentation, Header, ThemeConfig } from '..';
+import Github from '../../images/github-logo.svg';
 
 const GlobalStyle = createGlobalStyle`
   #gatsby-focus-wrapper, #___gatsby {
@@ -15,35 +13,35 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body  {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    font-family: 'Open Sans';
     color: #666;
+    font-family: 'Muli';
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   h1, h2, h3, h4, h5, h6 {
+    color: #333;
     font-weight: 300;
     margin: 45px 0 20px;
-    color: #333;
   }
 
   p {
-    margin: 0 0 14px
-  }
-
-  a {
-    color: #1890ff;
-    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 48px;
+    font-weight: 300;
     margin: 0;
 
     + p {
+      color: #6b6b78;
+      font-size: 18px;
+      font-weight: 300;
       margin: 10px 0 50px;
-      font-style: italic;
     }
   }
 
@@ -66,36 +64,75 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const MainWrapper = styled.div`
+  ${({
+    theme: {
+      colors: { primary: primaryPallete },
+    },
+  }) => `
+    code {
+      color: ${primaryPallete[3]};
+      font-family: monospace;
+      font-size: 14px;
+    }
+
+    a[target] {
+      color: ${primaryPallete[3]};
+      text-decoration: none;
+    }
+  `}
+`;
+
 const Grid = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr 166px;
-  grid-template-rows: auto 1fr;
-  grid-template-areas:
+  ${({
+    theme: {
+      colors: { gray: grayPallete },
+    },
+  }) => `
+    background-color: ${hexToRgb(grayPallete[1], 0.7)};
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
     'Header Header Header'
     'Navigation Documentation Summary';
-  height: 100%;
+  `};
+`;
+
+const GithubLink = styled.a`
+  margin-left: 15px;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
+`;
+
+const GithubLogo = styled(Github)`
+  width: 22px;
+  height: 22px;
 `;
 
 const Layout = ({
   data: {
-    siteMetadata: { title, favicon },
+    siteMetadata: { title },
   },
   nav,
   doc: { body, frontmatter },
 }) => {
   const { metaTitle, metaDescription } = frontmatter;
-
-  const allThemes = Object.keys(themes);
-  const allLocales = Object.keys(tokens);
-
-  const [theme, setTheme] = useState(allThemes.find(tm => tm === 'default'));
-  const [locale, setLocale] = useState(allLocales.find(lc => lc === 'default'));
+  const [theme, setTheme] = useState();
+  const [locale, setLocale] = useState();
 
   return (
     <ThemeProvider theme={theme} locale={locale}>
       <Helmet>
-        <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
-        {metaTitle ? <title>{metaTitle}</title> : <title>{title}</title>}
+        <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+        {metaTitle ? (
+          <title>Yoga - {metaTitle}</title>
+        ) : (
+          <title>Yoga - {title}</title>
+        )}
         {metaTitle ? <meta name="title" content={metaTitle} /> : null}
         {metaDescription ? (
           <meta name="description" content={metaDescription} />
@@ -110,27 +147,32 @@ const Layout = ({
         {metaDescription ? (
           <meta property="twitter:description" content={metaDescription} />
         ) : null}
+        <script async src="https://snack.expo.io/embed.js" />
       </Helmet>
       <GlobalStyle />
-      <Grid>
-        <Header>
-          <Dropdown
-            label="Theme:"
-            value={theme}
-            options={allThemes}
-            onSelect={tm => setTheme(tm)}
-          />
-          <Dropdown
-            label="Locale:"
-            value={locale}
-            options={allLocales}
-            onSelect={lc => setLocale(lc)}
-          />
-        </Header>
-        <Navigation items={nav} />
-        <Documentation mdx={body} />
-        <Summary>Alou</Summary>
-      </Grid>
+
+      <MainWrapper>
+        <Grid>
+          <Header>
+            <ThemeConfig
+              theme={theme}
+              locale={locale}
+              setTheme={setTheme}
+              setLocale={setLocale}
+            />
+            <GithubLink
+              href="https://github.com/gympass/yoga"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GithubLogo />
+            </GithubLink>
+          </Header>
+
+          <Navigation items={nav} />
+          <Documentation mdx={body} />
+        </Grid>
+      </MainWrapper>
     </ThemeProvider>
   );
 };
@@ -138,6 +180,7 @@ const Layout = ({
 Layout.propTypes = {
   nav: arrayOf(object).isRequired,
   doc: shape({}).isRequired,
+  data: shape({}).isRequired,
 };
 
 export default Layout;
