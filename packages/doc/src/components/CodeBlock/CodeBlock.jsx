@@ -9,6 +9,7 @@ import githubTheme from 'prism-react-renderer/themes/github';
 
 import { CodeSandboxButton } from '..';
 import CodeIcon from '../../images/code.svg';
+import MoonVector from '../../images/moon.svg';
 
 const defaultPropsWithTheme = {
   ...defaultProps,
@@ -57,16 +58,28 @@ const Preview = styled.div`
 `;
 
 const Component = styled.div`
-  font-family: 'Open Sans';
-  padding: 20px;
-  padding: 50px 20px;
+  ${({
+    darkMode,
+    center,
+    theme: {
+      colors: { white, dark },
+    },
+  }) => `
+    font-family: 'Open Sans';
+    padding: 20px;
+    padding: 50px 20px;
+    background-color: ${darkMode ? dark : white};
+    transition: all 0.3s ease-in-out;
 
-  ${({ center }) =>
-    center === 'true' &&
+    ${
+      center
+        ? `
+      align-items: center;
+      display: flex;
+      justify-content: center;
     `
-    align-items: center;
-    display: flex;
-    justify-content: center;
+        : ''
+    }
   `}
 `;
 
@@ -112,10 +125,10 @@ const ToolbarIconButton = styled.button`
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    height: 36px;
+    height: 32px;
     margin-right: 10px;
     outline: none;
-    width: 36px;
+    width: 32px;
 
     svg {
       width: 100%;
@@ -134,8 +147,18 @@ const ToolbarIconButton = styled.button`
   `}
 `;
 
+const Moon = styled(MoonVector)`
+  ${({ 'data-darkmode': darkMode }) => `
+    path[mode="dark"]{
+      display: ${darkMode ? 'none' : 'block'};
+    }
+  `}
+`;
+
 const CodeBlock = ({ children, reactLive, center }) => {
   const [codeVisible, setCodeVisible] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
   const normalizedCodeExample = children.trim();
   const importsRegex = /(?<=<)([A-Z][A-Za-z]+)(?<=\s*)\/?(?=>?)/g;
   const imports = [...new Set(normalizedCodeExample.match(importsRegex))].join(
@@ -165,9 +188,16 @@ const CodeBlock = ({ children, reactLive, center }) => {
               <ToolbarIconButton title="Show code" onClick={() => toggleCode()}>
                 <CodeIcon />
               </ToolbarIconButton>
+
+              <ToolbarIconButton
+                title="Change background"
+                onClick={() => setDarkMode(!darkMode)}
+              >
+                <Moon data-darkmode={darkMode} />
+              </ToolbarIconButton>
             </Toolbar>
 
-            <Component center={center}>
+            <Component center={center} darkMode={darkMode}>
               <LivePreview />
             </Component>
 

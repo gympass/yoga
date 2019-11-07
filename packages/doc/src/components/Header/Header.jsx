@@ -48,7 +48,9 @@ const YogaLogo = styled(yoga)`
   }) => `
     path {
       fill: ${primaryPallete[3]};
+      transition: all 0.3s ease-in-out;
     }
+
   `}
 `;
 
@@ -60,18 +62,6 @@ const Actions = styled.div`
   justify-content: flex-end;
   padding: 0 20px;
   width: calc(100% - ${LOGO_WRAPPER_WIDTH}px);
-`;
-
-const Divider = styled.div`
-  ${({
-    theme: {
-      colors: { gray: grayPallete },
-    },
-  }) => `
-    border-right: 1px solid ${grayPallete[2]};
-    height: 20px;
-    width: 1px;
-  `};
 `;
 
 const Header = ({ children }) => (
