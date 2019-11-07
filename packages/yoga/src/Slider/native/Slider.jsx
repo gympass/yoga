@@ -16,17 +16,7 @@ const SliderComponent = ({
   values,
   tooltip,
   theme: {
-    components: {
-      slider: {
-        track: {
-          backgroundColor: {
-            active: activeBackgroundColor,
-            inactive: inactiveBackgroundColor,
-          },
-          border: { radius },
-        },
-      },
-    },
+    components: { slider },
   },
   ...props
 }) => {
@@ -73,11 +63,13 @@ const SliderComponent = ({
         <MultiSlider
           values={values}
           trackStyle={{
-            backgroundColor: inactiveBackgroundColor,
+            backgroundColor: slider.track.backgroundColor.inactive,
             height: 4,
-            borderRadius: radius,
+            borderRadius: slider.track.border.radius,
           }}
-          selectedStyle={{ backgroundColor: activeBackgroundColor }}
+          selectedStyle={{
+            backgroundColor: slider.track.backgroundColor.active,
+          }}
           isMarkersSeparated
           min={min}
           max={max}

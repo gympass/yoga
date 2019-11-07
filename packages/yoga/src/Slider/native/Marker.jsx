@@ -7,21 +7,13 @@ import { hexToRgb } from '@gympass/yoga-common';
 const Circle = styled.TouchableOpacity(
   ({
     theme: {
-      components: {
-        slider: {
-          marker: {
-            backgroundColor,
-            border: { color: borderColor, radius },
-            shadow,
-          },
-        },
-      },
+      components: { slider },
     },
   }) => `
-    background-color: ${backgroundColor};
-    border: 6px solid ${borderColor};
-    border-radius: ${radius}px;
-    box-shadow: ${shadow};
+    background-color: ${slider.marker.backgroundColor};
+    border: 6px solid ${slider.marker.border.color};
+    border-radius: ${slider.marker.border.radius}px;
+    box-shadow: ${slider.marker.shadow};
     elevation: 4;
     height: 24px;
     width: 24px;
@@ -33,17 +25,13 @@ const CirclePressed = styled(Circle)(
   ({
     pressed,
     theme: {
-      components: {
-        slider: {
-          marker: { backgroundColor },
-        },
-      },
+      components: { slider },
     },
   }) => `
     ${
       pressed
         ? `
-          background-color: ${hexToRgb(backgroundColor, 0.2)};
+          background-color: ${hexToRgb(slider.marker.backgroundColor, 0.2)};
           border: none;
           width: 40px;
           height: 40px;
