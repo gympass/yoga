@@ -74,7 +74,7 @@ const Marker = ({ pressed, tooltip }) => {
         />
       )}
       <CirclePressed pressed={pressed} />
-      <Circle />
+      <Circle accessibilityRole="adjustable" />
     </>
   );
 };

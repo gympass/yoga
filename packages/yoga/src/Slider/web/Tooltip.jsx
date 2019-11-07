@@ -1,31 +1,36 @@
 import React from 'react';
+import { bool } from 'prop-types';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
+const Wrapper = styled.div(
+  ({
+    hasRibbon,
+    theme: {
+      components: { slider },
+    },
+  }) => `
   bottom: 30px;
   left: 6px;
   width: 95px;
   position: absolute;
   transform: translateX(-50%);
+    background-color: ${
+      hasRibbon
+        ? slider.tooltip.ribbon.backgroundColor
+        : slider.tooltip.backgroundColor
+    };
+    border-radius: ${slider.tooltip.radius}px;
+    box-shadow: ${slider.tooltip.shadow};
+`,
+);
 
-  ${({
-    theme: {
-      components: {
-        slider: {
-          tooltip: {
-            shadow,
-            radius,
-            ribbon: { backgroundColor },
-          },
-        },
-      },
-    },
-  }) => `
-    background-color: ${backgroundColor};
-    border-radius: ${radius}px;
-    box-shadow: ${shadow};
-  `}
-`;
+Wrapper.propTypes = {
+  hasRibbon: bool,
+};
+
+Wrapper.defaultProps = {
+  hasRibbon: false,
+};
 
 const Tip = styled.div`
   position: relative;
@@ -145,16 +150,14 @@ const Description = styled.div`
   `}
 `;
 
-const Tooltip = ({ tooltip, ...props }) =>
-  tooltip ? (
-    <Wrapper {...props}>
-      {tooltip.ribbon && <Ribbon>{tooltip.ribbon}</Ribbon>}
-      {(tooltip.title || tooltip.description) && (
+const Tooltip = ({ data, ...props }) =>
+  data ? (
+    <Wrapper hasRibbon={Boolean(data.ribbon)} {...props}>
+      {data.ribbon && <Ribbon>{data.ribbon}</Ribbon>}
+      {(data.title || data.description) && (
         <Tip>
-          {tooltip.title && <Title>{tooltip.title}</Title>}
-          {tooltip.description && (
-            <Description>{tooltip.description}</Description>
-          )}
+          {data.title && <Title>{data.title}</Title>}
+          {data.description && <Description>{data.description}</Description>}
         </Tip>
       )}
       <Arrow />
