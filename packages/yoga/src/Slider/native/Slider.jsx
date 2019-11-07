@@ -9,8 +9,8 @@ import Step from './Step';
 
 const SliderComponent = ({
   max,
-  min,
   maxLabel,
+  min,
   minLabel,
   snapped,
   values,
