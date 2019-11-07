@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, node } from 'prop-types';
 import styled from 'styled-components';
 
 const Wrapper = styled.View(
@@ -113,6 +113,10 @@ const Ribbon = ({ children, ...props }) => (
     <RibbonText>{children}</RibbonText>
   </RibbonWrapper>
 );
+
+Ribbon.propTypes = {
+  children: node.isRequired,
+};
 
 const Tooltip = ({ title, description, ribbon, ...props }) => (
   <Wrapper>
