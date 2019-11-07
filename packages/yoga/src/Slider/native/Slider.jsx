@@ -88,6 +88,9 @@ const SliderComponent = ({
           customMarkerRight={({ pressed }) => (
             <Marker tooltip={renderTooltip('right')} pressed={pressed} />
           )}
+          touchDimensions={{
+            slipDisplacement: 400,
+          }}
           {...props}
         />
         {(minLabel || maxLabel) && (

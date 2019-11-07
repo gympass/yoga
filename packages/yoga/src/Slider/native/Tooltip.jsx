@@ -17,12 +17,12 @@ const Wrapper = styled.View(
     },
   }) => `
     background-color: ${backgroundColor};
-    bottom: 30px;
+    bottom: 38px;
     border-radius: ${radius}px;
     box-shadow: ${shadow};
+    elevation: 8;
     position: absolute;
     width: 95px;
-    z-index: 1;
   `,
 );
 
@@ -45,7 +45,6 @@ const Tip = styled.View(
     padding: ${top}px ${right}px ${bottom}px ${left}px;
     justify-content: center;
     width: 95px;
-    z-index: 3;
   `,
 );
 
@@ -107,13 +106,14 @@ const Arrow = styled.View(
     align-self: center;
     background-color: ${backgroundColor};
     border-radius: 3px;
-    bottom: -5px;
+    bottom: 10px;
     box-shadow: ${shadow};
     height: 16px;
-    position: absolute;
+    margin-bottom: -17px;
+    position: relative;
     transform: rotate(45deg);
     width: 16px;
-    z-index: 2;
+    z-index: -1;
   `,
 );
 

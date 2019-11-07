@@ -22,10 +22,10 @@ const Circle = styled.TouchableOpacity(
     border: 6px solid ${borderColor};
     border-radius: ${radius}px;
     box-shadow: ${shadow};
+    elevation: 4;
     height: 24px;
     width: 24px;
-    position: absolute;
-    top: -10px;
+    position: relative;
   `,
 );
 
@@ -45,11 +45,12 @@ const CirclePressed = styled(Circle)(
         ? `
           background-color: ${hexToRgb(backgroundColor, 0.2)};
           border: none;
-          top: -18px;
           width: 40px;
           height: 40px;
-        `
-        : 'display: none;'
+          position: absolute;
+          elevation: 0;
+    `
+        : 'display: none; border: none;'
     }
   `,
 );
