@@ -78,8 +78,7 @@ module.exports = {
     github: {
       componentsPath: config.siteMetadata.github.componentsPath,
     },
-    favicon: config.siteMetadata.favicon,
   },
   plugins,
-  pathPrefix: '/',
+  pathPrefix: '/yoga',
 };
