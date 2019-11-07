@@ -142,6 +142,46 @@ const BaseTheme = ({ primary, secondary }) => {
         },
       },
     },
+    radioGroup: {
+      radio: {
+        border: {
+          radius: radii.circle,
+        },
+        hover: {
+          backgroundColor: colors.gray[1],
+        },
+        backgroundColor: {
+          enabled: 'transparent',
+        },
+        checked: {
+          backgroundColor: {
+            enabled: primary[3],
+          },
+          textColor: {
+            enabled: colors.white,
+          },
+          font: {
+            weight: fontWeights.bold,
+          },
+        },
+        padding: {
+          right: spacing.xlarge,
+          left: spacing.xlarge,
+        },
+        height: {
+          normal: 40,
+          small: 32,
+        },
+        font: {
+          size: fontSizes[2],
+        },
+      },
+      radii: radii.circle,
+      border: {
+        width: borders.small,
+        color: colors.gray[2],
+      },
+    },
   };
 
   return { components, baseFontSize, colors, spacing };
