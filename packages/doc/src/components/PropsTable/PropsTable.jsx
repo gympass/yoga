@@ -21,10 +21,7 @@ const TableWrapper = styled.div`
 const StyledTable = styled.table`
   ${({
     theme: {
-      colors: {
-        primary: { length: len, [len - 1]: primaryColor },
-        gray: grayPallete,
-      },
+      colors: { primary: primaryPallete, gray: grayPallete },
     },
   }) => `
     background-color: ${grayPallete[0]};
@@ -59,7 +56,7 @@ const StyledTable = styled.table`
 
           &:nth-child(3),
           &:last-child {
-            color: ${primaryColor};
+            color: ${primaryPallete[3]};
           }
         }
       }

@@ -25,9 +25,7 @@ const StyledLiveError = styled(LiveError)`
 const Pre = styled.pre`
   ${({
     theme: {
-      colors: {
-        primary: { length: len, [len - 1]: primaryColor },
-      },
+      colors: { primary: primaryPallete },
     },
   }) => `
     border-radius: 5px;
@@ -36,7 +34,7 @@ const Pre = styled.pre`
     padding: 18px;
 
     .token.string {
-      color: ${primaryColor} !important;
+      color: ${primaryPallete[3]} !important;
     }
   `}
 `;
@@ -108,10 +106,7 @@ const Toolbar = styled.div`
 const ToolbarIconButton = styled.button`
   ${({
     theme: {
-      colors: {
-        primary: { length: len, [len - 1]: primaryColor },
-        gray: grayPallete,
-      },
+      colors: { primary: primaryPallete, gray: grayPallete },
     },
   }) => `
     background-color: transparent;
@@ -132,7 +127,7 @@ const ToolbarIconButton = styled.button`
 
       &:hover {
         path {
-          fill: ${primaryColor};
+          fill: ${primaryPallete[3]};
         }
       }
     }
@@ -142,7 +137,7 @@ const ToolbarIconButton = styled.button`
 const CodeBlock = ({ children, reactLive, center }) => {
   const [codeVisible, setCodeVisible] = useState(false);
   const normalizedCodeExample = children.trim();
-  const importsRegex = /(?<=<)([A-Z][A-Za-z]+)\s*\/?(?=>?)/g;
+  const importsRegex = /(?<=<)([A-Z][A-Za-z]+)(?<=\s*)\/?(?=>?)/g;
   const imports = [...new Set(normalizedCodeExample.match(importsRegex))].join(
     ', ',
   );
