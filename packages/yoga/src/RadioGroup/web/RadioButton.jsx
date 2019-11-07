@@ -9,21 +9,7 @@ const RadioMark = styled.label(
   ({
     theme: {
       components: {
-        radioGroup: {
-          radio: {
-            border: { radius: borderRadius },
-            padding: { left: paddingLeft, right: paddingRight },
-            height: { small: smallHeight, normal: normalHeight },
-            font: { size: fontSize },
-            backgroundColor: { enabled: backgroundColor },
-            hover: { backgroundColor: hoverBackgroundColor },
-            checked: {
-              backgroundColor: { enabled: checkedBackgroundColor },
-              textColor: { enabled: checkedTextColor },
-              font: { weight: checkedFontWeight },
-            },
-          },
-        },
+        radioGroup: { radio },
       },
     },
     small,
@@ -38,29 +24,29 @@ const RadioMark = styled.label(
   white-space: nowrap;
   min-width: 126px;
 
-  background-color: ${backgroundColor};
-  border-radius: ${borderRadius}px;
+  background-color: ${radio.backgroundColor.enabled};
+  border-radius: ${radio.border.radius}px;
     
   ${
     checked
       ? `
-          background-color: ${checkedBackgroundColor};
-          box-shadow: 0 0 0 1px ${checkedBackgroundColor};
-          color: ${checkedTextColor};
-          font-weight: ${checkedFontWeight};
+          background-color: ${radio.checked.backgroundColor.enabled};
+          box-shadow: 0 0 0 1px ${radio.checked.backgroundColor.enabled};
+          color: ${radio.checked.textColor.enabled};
+          font-weight: ${radio.checked.font.weight};
           z-index: 1;
         `
       : `
         &:hover, &:focus {
-          background-color: ${hoverBackgroundColor};
+          background-color: ${radio.hover.backgroundColor};
         }
       `
   }
 
-  font-size: ${fontSize}px;
-  height: ${small ? smallHeight : normalHeight}px;
-  padding-left: ${paddingLeft}px;
-  padding-right: ${paddingRight}px;
+  font-size: ${radio.font.size}px;
+  height: ${small ? radio.height.small : radio.height.normal}px;
+  padding-left: ${radio.padding.left}px;
+  padding-right: ${radio.padding.right}px;
 `,
 );
 
