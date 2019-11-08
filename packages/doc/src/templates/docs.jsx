@@ -23,7 +23,6 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        favicon
       }
     }
     mdx(fields: { id: { eq: $id } }) {

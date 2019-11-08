@@ -63,7 +63,7 @@ const SwitchThumb = styled.View`
   height: ${thumbHeight}px;
   border-radius: ${thumbRadii};
   background-color: ${thumbBackgroundColor};
-  
+
   ${
     disabled
       ? `
@@ -73,8 +73,7 @@ const SwitchThumb = styled.View`
 `};
 `;
 
-/** The Switch is a kind of Checkbox  */
-const Switch = ({
+const CheckboxSwitch = ({
   checked,
   disabled,
   theme: {
@@ -145,16 +144,16 @@ const Switch = ({
   );
 };
 
-Switch.propTypes = {
+CheckboxSwitch.propTypes = {
   checked: bool,
   disabled: bool,
   onChange: func,
 };
 
-Switch.defaultProps = {
+CheckboxSwitch.defaultProps = {
   checked: false,
   disabled: false,
   onChange: () => {},
 };
 
-export default withTheme(Switch);
+export default withTheme(CheckboxSwitch);
