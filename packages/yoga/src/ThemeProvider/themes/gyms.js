@@ -1,12 +1,12 @@
-import baseTheme from './baseTheme';
+import BaseTheme from './BaseTheme';
 
-const gyms = tokens => {
+const Gyms = tokens => {
   const colors = {
     primary: tokens.colors.milan,
     secondary: tokens.colors.paris,
   };
 
-  return { colors, ...baseTheme(colors) };
+  return { colors, ...BaseTheme(colors) };
 };
 
-export default gyms;
+export default Gyms;

@@ -6,6 +6,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -44,6 +45,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -89,6 +91,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -130,6 +133,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -168,6 +172,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -213,6 +218,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;

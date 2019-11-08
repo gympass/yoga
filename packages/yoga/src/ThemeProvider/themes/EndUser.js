@@ -1,6 +1,6 @@
-import baseTheme from './baseTheme';
+import BaseTheme from './BaseTheme';
 
-const endUser = tokens => {
+const EndUser = tokens => {
   const colors = {
     primary: tokens.colors.madrid,
     secondary: tokens.colors.saoPaulo,
@@ -8,8 +8,8 @@ const endUser = tokens => {
 
   return {
     colors,
-    ...baseTheme(colors),
+    ...BaseTheme(colors),
   };
 };
 
-export default endUser;
+export default EndUser;
