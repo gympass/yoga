@@ -1,0 +1,489 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
+.c0 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-style: solid;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #DBDBE8;
+}
+
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c1 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  min-width: 126px;
+  background-color: transparent;
+  border-radius: 9999px;
+  font-size: 14px;
+  height: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #F5F5FA;
+}
+
+.c3 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  min-width: 126px;
+  background-color: transparent;
+  border-radius: 9999px;
+  background-color: #F46152;
+  box-shadow: 0 0 0 1px #F46152;
+  color: #FFFFFF;
+  font-weight: 700;
+  z-index: 1;
+  font-size: 14px;
+  height: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+<div>
+  <div
+    class="c0"
+    role="radiogroup"
+  >
+    <label
+      class="c1"
+    >
+      <input
+        class="c2"
+        name=""
+        type="radio"
+        value="Option 1"
+      />
+      Option 1
+    </label>
+    <label
+      class="c3"
+    >
+      <input
+        checked=""
+        class="c2"
+        name=""
+        type="radio"
+        value="Option 2"
+      />
+      Option 2
+    </label>
+    <label
+      class="c1"
+    >
+      <input
+        class="c2"
+        name=""
+        type="radio"
+        value="Option 3"
+      />
+      Option 3
+    </label>
+  </div>
+</div>
+`;
+
+exports[`<RadioGroup /> Snapshots should match snapshot with default radiogroup 1`] = `
+.c0 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-style: solid;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #DBDBE8;
+}
+
+<div>
+  <div
+    class="c0"
+    role="radiogroup"
+  />
+</div>
+`;
+
+exports[`<RadioGroup /> Snapshots should match snapshot with full radiogroup 1`] = `
+.c0 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-style: solid;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #DBDBE8;
+  width: 100%;
+}
+
+<div>
+  <div
+    class="c0"
+    role="radiogroup"
+  />
+</div>
+`;
+
+exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 1`] = `
+.c0 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-style: solid;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #DBDBE8;
+}
+
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c1 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  min-width: 126px;
+  background-color: transparent;
+  border-radius: 9999px;
+  font-size: 14px;
+  height: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #F5F5FA;
+}
+
+<div>
+  <div
+    class="c0"
+    role="radiogroup"
+  >
+    <label
+      class="c1"
+    >
+      <input
+        class="c2"
+        name=""
+        type="radio"
+        value="Option 1"
+      />
+      Option 1
+    </label>
+    <label
+      class="c1"
+    >
+      <input
+        class="c2"
+        name=""
+        type="radio"
+        value="Option 2"
+      />
+      Option 2
+    </label>
+    <label
+      class="c1"
+    >
+      <input
+        class="c2"
+        name=""
+        type="radio"
+        value="Option 3"
+      />
+      Option 3
+    </label>
+  </div>
+</div>
+`;
+
+exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = `
+.c0 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-style: solid;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #DBDBE8;
+}
+
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c1 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  min-width: 126px;
+  background-color: transparent;
+  border-radius: 9999px;
+  font-size: 14px;
+  height: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #F5F5FA;
+}
+
+<div>
+  <div
+    class="c0"
+    role="radiogroup"
+  >
+    <label
+      class="c1"
+    >
+      <input
+        class="c2"
+        name=""
+        type="radio"
+        value="Option 1"
+      />
+      Option 1
+    </label>
+    <label
+      class="c1"
+    >
+      <input
+        class="c2"
+        name=""
+        type="radio"
+        value="Option 2"
+      />
+      Option 2
+    </label>
+    <label
+      class="c1"
+    >
+      <input
+        class="c2"
+        name=""
+        type="radio"
+        value="Option 3"
+      />
+      Option 3
+    </label>
+  </div>
+</div>
+`;
+
+exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
+.c0 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-style: solid;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: #DBDBE8;
+}
+
+.c2 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c1 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  white-space: nowrap;
+  min-width: 126px;
+  background-color: transparent;
+  border-radius: 9999px;
+  font-size: 14px;
+  height: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.c1:hover,
+.c1:focus {
+  background-color: #F5F5FA;
+}
+
+<div>
+  <div
+    class="c0"
+    role="radiogroup"
+  >
+    <label
+      class="c1"
+    >
+      <input
+        class="c2"
+        data-testid="Option 1"
+        name="test"
+        type="radio"
+        value="Option 1"
+      />
+      Option 1
+    </label>
+    <label
+      class="c1"
+    >
+      <input
+        class="c2"
+        data-testid="Option 2"
+        name="test"
+        type="radio"
+        value="Option 2"
+      />
+      Option 2
+    </label>
+    <label
+      class="c1"
+    >
+      <input
+        class="c2"
+        data-testid="Option 3"
+        name="test"
+        type="radio"
+        value="Option 3"
+      />
+      Option 3
+    </label>
+  </div>
+</div>
+`;

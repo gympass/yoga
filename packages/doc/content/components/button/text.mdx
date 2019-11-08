@@ -1,23 +1,20 @@
 ---
 title: 'Text'
-metaTitle: 'Text Button Component'
-metaDescription: 'Text Button Component'
+metaTitle: 'Button.Text'
+metaDescription: 'Button text looks and behavior'
 ---
+
+import TextWeb from './text-web.mdx';
+import TextNative from './text-native.mdx';
 
 # Button.Text
 
-## Import the Button
+<TabbedView>
+  <Tab title={'Web'}>
+    <TextWeb />
+  </Tab>
 
-```javascript
-import { Button } from '@gympass/yoga';
-```
-
-## Usage
-
-```javascript reactLive=true
-<Button.Text>Gympass</Button.Text>
-```
-
-## Properties
-
-<PropsTable component="Button" />
+  <Tab title={'Native'}>
+    <TextNative />
+  </Tab>
+</TabbedView>

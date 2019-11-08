@@ -1,7 +1,31 @@
-# Yoga
+<p align="center">
+  <img src="packages/doc/src/images/lotus.png" />
+</p>
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
 ![Github Actions](https://github.com/gympass/yoga/workflows/Yoga%20-%20Gympass%20Design%20System/badge.svg)
+
+Design system at Gympass, our main intent is to support our projects.
+We have open-sourced our project for those who are interested in checkout how we do things and organize our code and documentation here.
+
+### What does it mean?
+
+> Yoga is a scientific system of practices made to help each one of us achieve our highest potential and experience.
+
+## Documentation
+
+Yoga is documented at [http://gympass.github.io/yoga](https://gympass.github.io/yoga).
+
+## Architecture
+
+Our codebase is a monorepo and individually versioned libraries.
+Here's an overview of our packages:
+
+| Package                                    | Version                                                                                                             | Size                                                                                                                                  |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| [`@gympass/yoga`](/packages/yoga)          | [![npm version](https://badgen.net/npm/v/@gympass/yoga)](https://www.npmjs.com/package/@gympass/yoga)               | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga)](https://bundlephobia.com/result?p=@gympass/yoga)               |
+| [`@gympass/yoga-tokens`](/packages/tokens) | [![npm version](https://badgen.net/npm/v/@gympass/yoga-tokens)](https://www.npmjs.com/package/@gympass/yoga-tokens) | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-tokens)](https://bundlephobia.com/result?p=@gympass/yoga-tokens) |
+| [`@gympass/yoga-common`](/packages/common) | [![npm version](https://badgen.net/npm/v/@gympass/yoga-common)](https://www.npmjs.com/package/@gympass/yoga-common) | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-common)](https://bundlephobia.com/result?p=@gympass/yoga-common) |
 
 ## Contributors ✨
 

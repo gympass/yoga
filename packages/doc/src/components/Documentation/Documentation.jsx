@@ -4,11 +4,17 @@ import styled from 'styled-components';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import * as components from '@gympass/yoga';
-
-import { CodeBlock, PropsTable, GithubTitle, InlineCode } from '..';
+import {
+  CodeBlock,
+  PropsTable,
+  ComponentTitle,
+  InlineCode,
+  TabbedView,
+  Tab,
+} from '..';
 
 const customComponents = {
-  h1: GithubTitle,
+  h1: ComponentTitle,
   h2: ({ children, ...props }) => (
     <h2
       id={(typeof children === 'string' ? children : '')
@@ -19,17 +25,18 @@ const customComponents = {
       {children}
     </h2>
   ),
+  pre: 'div',
   code: CodeBlock,
   inlineCode: InlineCode,
+  TabbedView: ({ ...props }) => <TabbedView {...props} />,
+  Tab: ({ ...props }) => <Tab {...props} />,
   PropsTable,
   ...components,
 };
 
 const Wrapper = styled.div`
   grid-area: Documentation;
-  padding-bottom: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 30px 100px;
 `;
 
 customComponents.h2.propTypes = {

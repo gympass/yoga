@@ -59,7 +59,11 @@ const plugins = [
       fonts: [
         {
           family: 'Open Sans',
-          variants: ['300', '400', '500', '700'],
+          variants: ['300', '500', '700'],
+        },
+        {
+          family: 'Muli',
+          variants: ['100', '300', '400', '500', '700', '900'],
         },
       ],
     },
@@ -74,7 +78,6 @@ module.exports = {
     github: {
       componentsPath: config.siteMetadata.github.componentsPath,
     },
-    favicon: config.siteMetadata.favicon,
   },
   plugins,
   pathPrefix: '/yoga',
