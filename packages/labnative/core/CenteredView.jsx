@@ -15,15 +15,15 @@ import paletteIcon from '../assets/images/palette_icon.png';
 
 const themeChoices = [
   {
-    value: 'endUser',
+    value: 'EndUser',
     label: 'End User',
   },
   {
-    value: 'corp',
-    label: 'Corp',
+    value: 'Corporate',
+    label: 'Corporate',
   },
   {
-    value: 'gyms',
+    value: 'Gyms',
     label: 'Gyms',
   },
 ];
@@ -80,9 +80,9 @@ const CenteredView = props => {
                   style={{ width: '100%' }}
                   onValueChange={theme => setThemed(theme)}
                 >
-                  <Picker.Item label="End User" value="endUser" />
-                  <Picker.Item label="Corp" value="corp" />
-                  <Picker.Item label="Gyms" value="gyms" />
+                  {themeChoices.map(({ label, value }) => (
+                    <Picker.Item label={label} value={value} key={value} />
+                  ))}
                 </Picker>
               )}
             </View>
