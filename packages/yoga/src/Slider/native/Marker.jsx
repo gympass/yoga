@@ -1,4 +1,5 @@
 import React from 'react';
+import { View } from 'react-native';
 import { bool, number, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import Tooltip from './Tooltip';
@@ -61,7 +62,7 @@ const Marker = ({ pressed, tooltip }) => {
           ribbon={tooltip.ribbon}
         />
       )}
-      <CirclePressed pressed={pressed} />
+      <CirclePressed as={View} pressed={pressed} />
       <Circle accessibilityRole="adjustable" />
     </>
   );
