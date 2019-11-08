@@ -86,7 +86,7 @@ const Table = ({
             name,
             description: { text: description },
             type: { name: type },
-            defaultValue: { value: defaultValue },
+            defaultValue,
             required: isRequired,
           }) => (
             <tr key={name}>
@@ -94,7 +94,9 @@ const Table = ({
               <td>{description}</td>
               <td>{type}</td>
               <td>
-                <InlineCode>{defaultValue.replace(/'/g, '')}</InlineCode>
+                <InlineCode>
+                  {defaultValue && defaultValue.value.replace(/'/g, '')}
+                </InlineCode>
               </td>
               <td>{String(isRequired)}</td>
             </tr>
