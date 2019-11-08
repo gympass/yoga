@@ -3,7 +3,9 @@ import { node, shape, string, bool } from 'prop-types';
 import styled from 'styled-components';
 
 const CardHeaderWrapper = styled.View`
+  position: relative;
   display: flex;
+  width: 100%;
   flex-direction: row;
   align-content: center;
   align-items: center;
@@ -23,26 +25,25 @@ const Ribbon = styled.View`
   ${({
     secondary,
     theme: {
+      colors,
       components: {
         card: {
           header: {
-            ribbon: { right, background, padding, radii },
+            ribbon: { padding, radii },
           },
         },
       },
     },
   }) => `
-    position: relative;
+    position: absolute;
     flex-basis: 60%;
-    right: ${right}px;
+    right: -16px;
     padding: ${padding.x}px ${padding.y}px;
     border-top-left-radius: ${radii.topLeft}px;
     border-bottom-left-radius: ${radii.bottomLeft}px;
-    ${
-      secondary
-        ? `background: ${background.secondary};`
-        : `background: ${background.primary};`
-    }
+    background: ${colors.primary[1]};
+
+    ${secondary && `background: ${colors.secondary[1]};`}
   `}
 `;
 
@@ -50,11 +51,12 @@ const RibbonText = styled.Text`
   ${({
     secondary,
     theme: {
+      colors,
       components: {
         card: {
           header: {
             ribbon: {
-              font: { weight, size, color },
+              font: { weight, size },
             },
           },
         },
@@ -63,7 +65,8 @@ const RibbonText = styled.Text`
   }) => `
     font-size: ${size}px;
     font-weight: ${weight};
-    ${secondary ? `color: ${color.secondary};` : `color: ${color.primary};`}
+    color: ${colors.primary[3]};
+    ${secondary && `color: ${colors.secondary[3]}`}
   `}
 `;
 

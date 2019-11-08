@@ -1,52 +1,20 @@
 import React from 'react';
-import { node, bool, shape, string } from 'prop-types';
+import { bool, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import Card from './Card';
-import CardHeader from './CardHeader';
-import CardFooter from './CardFooter';
 
 const CardPlan = styled(Card)`
   ${({
     selected,
     theme: {
       components: {
-        card: { background },
-      },
-    },
-  }) => `
-    ${
-      selected
-        ? `background-color: ${background.selected}`
-        : `background-color: ${background.default}`
-    }
-  `}
-`;
-
-const CardPlanHeader = styled(CardHeader)`
-  ${({
-    theme: {
-      components: {
         card: {
-          plan: { header },
+          plan: { background },
         },
       },
     },
   }) => `
-    margin-bottom: ${header.margin.bottom}px;
-  `}
-`;
-
-const CardPlanFooter = styled(CardFooter)`
-  ${({
-    theme: {
-      components: {
-        card: {
-          plan: { footer },
-        },
-      },
-    },
-  }) => `
-    margin-top: ${footer.margin.top}px;
+    ${selected && `background-color: ${background.selected}`}
   `}
 `;
 
@@ -57,18 +25,15 @@ const Title = styled.Text`
       components: {
         card: {
           plan: {
-            header: {
-              title: {
-                font: { size, color },
-              },
-            },
+            color,
+            title: { font },
           },
         },
       },
     },
   }) => `
-    font-size: ${size}px;
-    ${selected ? `color: ${color.selected}` : `color: ${color.default}`}
+    font-size: ${font.size}px;
+    ${selected ? `color: ${color.selected}` : `color: ${font.color}`}
   `}
 `;
 
@@ -79,17 +44,16 @@ const Price = styled.Text`
       components: {
         card: {
           plan: {
-            price: {
-              font: { size, weight, color },
-            },
+            color,
+            price: { font },
           },
         },
       },
     },
   }) => `
-    font-size: ${size}px;
-    font-weight: ${weight}; 
-    ${selected ? `color: ${color.selected}` : `color: ${color.default}`}
+    font-size: ${font.size}px;
+    font-weight: ${font.weight}; 
+    ${selected ? `color: ${color.selected}` : `color: ${font.color}`}
   `}
 `;
 
@@ -100,17 +64,16 @@ const Period = styled.Text`
       components: {
         card: {
           plan: {
-            period: {
-              font: { size, padding, color },
-            },
+            color,
+            period: { font },
           },
         },
       },
     },
   }) => `
-    font-size: ${size}px;
-    padding-top: ${padding.top}px;
-    ${selected ? `color: ${color.selected}` : `color: ${color.default}`}
+    font-size: ${font.size}px;
+    padding-top: ${font.padding.top}px;
+    ${selected ? `color: ${color.selected};` : `color: ${font.color};`}
   `}
 `;
 
@@ -121,38 +84,35 @@ const GymsQuantity = styled.Text`
       components: {
         card: {
           plan: {
-            footer: {
-              gymsQuantity: {
-                font: { size, weight, color },
-              },
-            },
+            color,
+            gymsQuantity: { font },
           },
         },
       },
     },
   }) => `
-    font-size: ${size}px;
-    font-weight: ${weight};
-    ${selected ? `color: ${color.selected}` : `color: ${color.default}`}
+    font-size: ${font.size}px;
+    font-weight: ${font.weight};
+    ${selected ? `color: ${color.selected}` : `color: ${font.color}`}
   `}
 `;
 
-const Plans = ({ plan, selected, ribbon, ...rest }) => {
+const Plan = ({ plan, selected, ribbon, ...rest }) => {
   return (
     <CardPlan selected={selected} {...rest}>
-      <CardPlanHeader ribbon={ribbon}>
+      <Card.Header ribbon={ribbon} style={{ marginBottom: 40 }}>
         <Title selected={selected}>{plan.name}</Title>
-      </CardPlanHeader>
+      </Card.Header>
       <Price selected={selected}>{plan.price}</Price>
       <Period selected={selected}>/{plan.period}</Period>
-      <CardPlanFooter>
+      <Card.Footer style={{ marginTop: 20 }}>
         <GymsQuantity selected={selected}>{plan.gyms} gyms</GymsQuantity>
-      </CardPlanFooter>
+      </Card.Footer>
     </CardPlan>
   );
 };
 
-Plans.propTypes = {
+Plan.propTypes = {
   selected: bool,
   plan: shape({
     name: string,
@@ -164,13 +124,11 @@ Plans.propTypes = {
     label: string,
     secondary: bool,
   }),
-  children: node,
 };
 
-Plans.defaultProps = {
+Plan.defaultProps = {
   selected: false,
   ribbon: null,
-  children: 'Card',
 };
 
-export default Plans;
+export default Plan;

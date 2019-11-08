@@ -142,17 +142,52 @@ const BaseTheme = ({ primary, secondary }) => {
         },
       },
     },
+    radioGroup: {
+      radio: {
+        border: {
+          radius: radii.circle,
+        },
+        hover: {
+          backgroundColor: colors.gray[1],
+        },
+        backgroundColor: {
+          enabled: 'transparent',
+        },
+        checked: {
+          backgroundColor: {
+            enabled: primary[3],
+          },
+          textColor: {
+            enabled: colors.white,
+          },
+          font: {
+            weight: fontWeights.bold,
+          },
+        },
+        padding: {
+          right: spacing.xlarge,
+          left: spacing.xlarge,
+        },
+        height: {
+          normal: 40,
+          small: 32,
+        },
+        font: {
+          size: fontSizes[2],
+        },
+      },
+      radii: radii.circle,
+      border: {
+        width: borders.small,
+        color: colors.gray[2],
+      },
+    },
     card: {
       padding: spacing.medium,
       radii: radii.rounded,
-      background: {
-        default: colors.white,
-        selected: colors.secondary[3],
-      },
       elevation: elevations.small,
       header: {
         ribbon: {
-          right: -spacing.medium,
           padding: {
             x: spacing.xsmall,
             y: spacing.medium,
@@ -161,43 +196,30 @@ const BaseTheme = ({ primary, secondary }) => {
             topLeft: 16,
             bottomLeft: 16,
           },
-          background: {
-            primary: colors.primary[1],
-            secondary: colors.secondary[1],
-          },
           font: {
             size: fontSizes[1],
             weight: fontWeights.bold,
-            color: {
-              primary: colors.primary[3],
-              secondary: colors.secondary[3],
-            },
           },
         },
       },
       plan: {
-        header: {
-          margin: {
-            bottom: spacing.xxlarge,
-          },
-          title: {
-            font: {
-              size: fontSizes[1],
-              color: {
-                default: colors.gray[4],
-                selected: colors.white,
-              },
-            },
+        background: {
+          selected: colors.secondary[3],
+        },
+        color: {
+          selected: colors.white,
+        },
+        title: {
+          font: {
+            size: fontSizes[1],
+            color: colors.gray[4],
           },
         },
         price: {
           font: {
             size: fontSizes[7],
             weight: fontWeights.bold,
-            color: {
-              default: colors.black,
-              selected: colors.white,
-            },
+            color: colors.black,
           },
         },
         period: {
@@ -206,70 +228,20 @@ const BaseTheme = ({ primary, secondary }) => {
             padding: {
               top: spacing.xxsmall,
             },
-            color: {
-              default: colors.gray[4],
-              selected: colors.white,
-            },
+            color: colors.gray[4],
           },
         },
-        footer: {
-          margin: {
-            top: spacing.large,
-          },
-          gymsQuantity: {
-            font: {
-              size: fontSizes[2],
-              weight: fontWeights.bold,
-              color: {
-                default: colors.secondary[3],
-                selected: colors.white,
-              },
-            },
-          },
-        },
-        radioGroup: {
-          radio: {
-            border: {
-              radius: radii.circle,
-            },
-            hover: {
-              backgroundColor: colors.gray[1],
-            },
-            backgroundColor: {
-              enabled: 'transparent',
-            },
-            checked: {
-              backgroundColor: {
-                enabled: primary[3],
-              },
-              textColor: {
-                enabled: colors.white,
-              },
-              font: {
-                weight: fontWeights.bold,
-              },
-            },
-            padding: {
-              right: spacing.xlarge,
-              left: spacing.xlarge,
-            },
-            height: {
-              normal: 40,
-              small: 32,
-            },
-            font: {
-              size: fontSizes[2],
-            },
-          },
-          radii: radii.circle,
-          border: {
-            width: borders.small,
-            color: colors.gray[2],
+        gymsQuantity: {
+          font: {
+            size: fontSizes[2],
+            weight: fontWeights.bold,
+            color: colors.secondary[3],
           },
         },
       },
     },
   };
+
   return { components, baseFontSize, colors, spacing };
 };
 

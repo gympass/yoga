@@ -1,0 +1,55 @@
+### Reference
+
+Gympass `<Card.Plan />` component can be used to display related gympass plans.
+
+### Usage
+
+```javascript reactLive=true center=true
+<section
+  style={{ display: 'flex', width: '100%', justifyContent: 'space-around' }}
+>
+  <Card.Plan
+    plan={{
+      name: 'Basic',
+      price: 'U$ 19.90',
+      period: 'month',
+      gyms: '1,239',
+    }}
+    style={{ width: 200 }}
+  ></Card.Plan>
+  <Card.Plan
+    selected
+    plan={{
+      name: 'Current Plan - Gold',
+      price: 'U$ 59.00',
+      period: 'month',
+      gyms: '32,290',
+    }}
+    style={{ width: 200 }}
+  ></Card.Plan>
+  <Card.Plan
+    plan={{
+      name: 'Platinum',
+      price: 'U$ 79.00',
+      period: 'month',
+      gyms: '12,290',
+    }}
+    ribbon={{ label: 'Upgrade', secondary: true }}
+    style={{ width: 200 }}
+  ></Card.Plan>
+  <Card.Plan
+    plan={{
+      name: 'Platinum',
+      price: 'U$ 19.90',
+      period: 'month',
+      gyms: '13,290',
+    }}
+    ribbon={{ label: 'Choose' }}
+    style={{ width: 200 }}
+  ></Card.Plan>
+</section>
+```
+
+### Props
+
+<PropsTable component="Card" platform="web" />

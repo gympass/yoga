@@ -1,5 +1,5 @@
 import React from 'react';
-import { node, bool, shape, string } from 'prop-types';
+import { bool, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import Card from './Card';
 
@@ -7,21 +7,17 @@ const CardPlan = styled(Card)`
   ${({
     selected,
     theme: {
-      colors,
       components: {
-        card: { background },
+        card: {
+          plan: { background, color },
+        },
       },
     },
   }) => `
-    ${
-      selected
-        ? `background-color: ${background.selected}`
-        : `background-color: ${background.default}`
-    }
+    ${selected && `background-color: ${background.selected}`}
     h1, h2, span {
-      font-family: 'Open Sans';
       margin: 0;
-      ${selected && `color: ${colors.white}`}
+      ${selected && `color: ${color.selected}`}
     }
   `}
 `;
@@ -31,18 +27,13 @@ const Title = styled.h1`
     theme: {
       components: {
         card: {
-          plan: {
-            header: {
-              title: {
-                font: { size },
-              },
-            },
-          },
+          plan: { title },
         },
       },
     },
   }) => `
-    font-size: ${size}px;
+    font-size: ${title.font.size}px;
+    color: ${title.font.color};
   `}
 `;
 
@@ -51,17 +42,14 @@ const Price = styled.h2`
     theme: {
       components: {
         card: {
-          plan: {
-            price: {
-              font: { size, weight },
-            },
-          },
+          plan: { price },
         },
       },
     },
   }) => `
-    font-size: ${size}px;
-    font-weight: ${weight};
+    font-size: ${price.font.size}px;
+    font-weight: ${price.font.weight};
+    color: ${price.font.color};
   `}
 `;
 
@@ -70,44 +58,34 @@ const Period = styled.span`
     theme: {
       components: {
         card: {
-          plan: {
-            period: {
-              font: { size, padding },
-            },
-          },
+          plan: { period },
         },
       },
     },
   }) => `
-    font-size: ${size}px;
-    padding-top: ${padding.top}px;
+    font-size: ${period.font.size}px;
+    padding-top: ${period.font.padding.top}px;
+    color: ${period.font.color};
   `}
 `;
 
 const GymsQuantity = styled.span`
   ${({
     theme: {
-      colors,
       components: {
         card: {
-          plan: {
-            footer: {
-              gymsQuantity: {
-                font: { size, weight },
-              },
-            },
-          },
+          plan: { gymsQuantity },
         },
       },
     },
   }) => `
-    font-size: ${size}px;
-    font-weight: ${weight};
-    color: ${colors.secondary[3]}
+    font-size: ${gymsQuantity.font.size}px;
+    font-weight: ${gymsQuantity.font.weight};
+    color: ${gymsQuantity.font.color}
   `}
 `;
 
-const Plan = ({ plan, selected, ribbon, children, ...rest }) => (
+const Plan = ({ plan, selected, ribbon, ...rest }) => (
   <CardPlan selected={selected} {...rest}>
     <Card.Header ribbon={ribbon} style={{ marginBottom: 40 }}>
       <Title>{plan.name}</Title>
@@ -132,13 +110,11 @@ Plan.propTypes = {
     label: string,
     secondary: bool,
   }),
-  children: node,
 };
 
 Plan.defaultProps = {
   selected: false,
   ribbon: null,
-  children: 'Card',
 };
 
 export default Plan;
