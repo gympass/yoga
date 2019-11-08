@@ -1,5 +1,4 @@
-import List from './web/List';
-import ListItem from './web/Item';
+import { List, ListItem } from './web';
 
 List.Item = ListItem;
 

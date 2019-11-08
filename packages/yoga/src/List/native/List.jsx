@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FlatList } from 'react-native';
 
-const StyledFlatList = styled.FlatList.attrs(() => ({
-  as: FlatList,
-}))`
+const StyledFlatList = styled.FlatList`
   width: 100%;
 `;
 
