@@ -1,23 +1,20 @@
 ---
 title: 'Outline'
-metaTitle: 'Outline Button Component'
-metaDescription: 'Outline Button Component'
+metaTitle: 'Button.Outline'
+metaDescription: 'Button outline looks and behavior'
 ---
+
+import OutlineWeb from './outline-web.mdx';
+import OutlineNative from './outline-native.mdx';
 
 # Button.Outline
 
-## Import the Button
+<TabbedView>
+  <Tab title={'Web'}>
+    <OutlineWeb />
+  </Tab>
 
-```javascript
-import { Button } from '@gympass/yoga';
-```
-
-## Usage
-
-```javascript reactLive=true
-<Button.Outline>Gympass</Button.Outline>
-```
-
-## Properties
-
-<PropsTable component="Button" />
+  <Tab title={'Native'}>
+    <OutlineNative />
+  </Tab>
+</TabbedView>

@@ -1,26 +1,14 @@
----
-title: 'List'
-metaTitle: 'List Component'
-metaDescription: 'List Component'
----
+### Reference
 
-import { Checkbox } from '@gympass/yoga';
+Gympass `<List />` component implements all our design guidelines, be sure to wrap your items with `<List.Item/>` that uses default spacing, border and color pallete tokens.
 
-# List
-
-## Import the List
-
-```javascript
-import { List } from '@gympass/yoga';
-```
-
-## Usage
+### Usage
 
 ```javascript reactLive=true
 <List>
   <List.Item>
     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-      <span>Lockers</span>
+      <span>Locker</span>
       <Checkbox.Switch />
     </div>
   </List.Item>
@@ -41,6 +29,6 @@ import { List } from '@gympass/yoga';
 </List>
 ```
 
-## Properties
+### Props
 
-<PropsTable component="List" />
+<PropsTable component="List" platform="web" />
