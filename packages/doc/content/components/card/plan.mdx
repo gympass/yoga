@@ -1,44 +1,20 @@
 ---
 title: 'Plan'
-metaTitle: 'Plan Card Component'
-metaDescription: 'Plan Card Component'
+metaTitle: 'Card Plan Component'
+metaDescription: 'Plan Cards are used to show gympass plans.'
 ---
 
-# Card
+import PlanWeb from './plan-web.mdx';
+import PlanNative from './plan-native.mdx';
 
-## Import the Card
+# Card.Plan
 
-```javascript
-import { Card } from '@gympass/yoga';
-```
+<TabbedView>
+  <Tab title={'Web'}>
+    <PlanWeb />
+  </Tab>
 
-## Usage
-
-```javascript reactLive=true
-<section>
-  <Card.Plan
-    selected
-    plan={{
-      name: 'Basic Premium',
-      price: 'R$ 29,90',
-      period: 'month',
-      gyms: '1.290',
-    }}
-    style={{ width: 200, marginBottom: 20 }}
-  ></Card.Plan>
-  <Card.Plan
-    plan={{
-      name: 'Basic',
-      price: 'R$ 29,90',
-      period: 'month',
-      gyms: '1.290',
-    }}
-    ribbon={{ label: 'Upgrade', secondary: true }}
-    style={{ width: 200 }}
-  ></Card.Plan>
-</section>
-```
-
-## Properties
-
-<PropsTable component="Card" />
+  <Tab title={'Native'}>
+    <PlanNative />
+  </Tab>
+</TabbedView>

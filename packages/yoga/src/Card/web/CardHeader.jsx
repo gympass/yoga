@@ -4,7 +4,9 @@ import styled from 'styled-components';
 
 const CardHeaderWrapper = styled.div`
   ${({ ribbon }) => `
+    position: relative;
     display: flex;
+    width: 100%;
     flex-direction: row;
     align-content: center;
     align-items: center;
@@ -23,35 +25,29 @@ const Ribbon = styled.div`
   ${({
     secondary,
     theme: {
+      colors,
       components: {
         card: {
           header: {
-            ribbon: {
-              right,
-              background,
-              padding,
-              radii,
-              font: { weight, size, color },
-            },
+            ribbon: { padding, radii, font },
           },
         },
       },
     },
   }) => `
-    position: relative;
+    position: absolute;
     flex-basis: 60%;
-    right: ${right}px;
+    right: -16px;
     padding: ${padding.x}px ${padding.y}px;
     border-top-left-radius: ${radii.topLeft}px;
     border-bottom-left-radius: ${radii.bottomLeft}px;
-    font-size: ${size}px;
-    font-weight: ${weight};
+    font-size: ${font.size}px;
+    font-weight: ${font.weight};
+    background: ${colors.primary[1]};
+    color: ${colors.primary[3]};
 
-    ${
-      secondary
-        ? `background: ${background.secondary}; color: ${color.secondary};`
-        : `background: ${background.primary}; color: ${color.primary};`
-    }
+    ${secondary &&
+      `background: ${colors.secondary[1]}; color: ${colors.secondary[3]};`}
   `}
 `;
 

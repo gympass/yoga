@@ -5,8 +5,9 @@ import styled from 'styled-components';
 const CardContainer = styled.View`
   ${({
     theme: {
+      colors,
       components: {
-        card: { padding, background, radii, elevation },
+        card: { padding, radii, elevation },
       },
     },
   }) => `
@@ -17,7 +18,7 @@ const CardContainer = styled.View`
     width: 100%;
     padding: ${padding}px;
     border-radius: ${radii}px;
-    background-color: ${background.default};
+    background-color: ${colors.white};
     box-shadow: ${elevation};
     elevation: 4;
   `}

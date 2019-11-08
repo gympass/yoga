@@ -1,34 +1,20 @@
 ---
 title: 'Simple'
 metaTitle: 'Card Component'
-metaDescription: 'Card Component'
+metaDescription: 'Cards are used to apply a container around a related grouping of information.'
 ---
+
+import CardWeb from './card-web.mdx';
+import CardNative from './card-native.mdx';
 
 # Card
 
-## Import the Card
+<TabbedView>
+  <Tab title={'Web'}>
+    <CardWeb />
+  </Tab>
 
-```javascript
-import { Card } from '@gympass/yoga';
-```
-
-## Usage
-
-```javascript reactLive=true
-<Card style={{ width: 400 }}>
-  <Card.Header>
-    <img
-      src="https://dnd1g0gk41u1l.cloudfront.net/image/filename/170489/md_1794801_698845723526423_9140455993574447934_n.png"
-      style={{ width: '100%' }}
-    />
-  </Card.Header>
-  <Card.Footer style={{ marginTop: 10 }}>
-    <Button.Text small>First Action</Button.Text>
-    <Button.Text small>Second Action</Button.Text>
-  </Card.Footer>
-</Card>
-```
-
-## Properties
-
-<PropsTable component="Card" />
+  <Tab title={'Native'}>
+    <CardNative />
+  </Tab>
+</TabbedView>

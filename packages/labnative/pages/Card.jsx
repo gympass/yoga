@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Card } from '@gympass/yoga';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 const StyledText = styled.Text`
@@ -17,7 +17,7 @@ const CardPage = () => {
       style={{
         width: '100%',
         height: '100%',
-        padding: 40,
+        padding: 10,
       }}
     >
       <StyledText>Card simple</StyledText>
@@ -37,36 +37,36 @@ const CardPage = () => {
 
       <StyledText>Card for Plans</StyledText>
 
-      <Card.Plan
-        selected
-        plan={{
-          name: 'Basic Premium of Master',
-          price: 'R$ 29,90',
-          period: 'month',
-          gyms: '1.290',
+      <View
+        style={{
+          display: 'flex',
+          width: '100%',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          justifyContent: 'space-around',
         }}
-        style={{ width: 180, marginBottom: 20 }}
-      />
-      <Card.Plan
-        plan={{
-          name: 'Basic Premium',
-          price: 'R$ 29,90',
-          period: 'month',
-          gyms: '1.290',
-        }}
-        ribbon={{ label: 'Choose' }}
-        style={{ width: 180, marginBottom: 20 }}
-      />
-      <Card.Plan
-        plan={{
-          name: 'Basic',
-          price: 'R$ 29,90',
-          period: 'month',
-          gyms: '1.290',
-        }}
-        ribbon={{ label: 'Upgrade', secondary: true }}
-        style={{ width: 180 }}
-      />
+      >
+        <Card.Plan
+          plan={{
+            name: 'Basic',
+            price: 'U$ 19.90',
+            period: 'month',
+            gyms: '13,290',
+          }}
+          ribbon={{ label: 'Choose' }}
+          style={{ width: 170 }}
+        ></Card.Plan>
+        <Card.Plan
+          selected
+          plan={{
+            name: 'Platinum',
+            price: 'U$ 29.90',
+            period: 'month',
+            gyms: '1,239',
+          }}
+          style={{ width: 170 }}
+        ></Card.Plan>
+      </View>
     </ScrollView>
   );
 };
