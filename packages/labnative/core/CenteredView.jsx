@@ -29,7 +29,7 @@ const themeChoices = [
 ];
 
 const CenteredView = props => {
-  const [themed, setThemed] = useState(themeChoices[0]);
+  const [themed, setThemed] = useState(themeChoices[1]);
 
   return (
     <ThemeProvider theme={themed.value}>
@@ -67,7 +67,7 @@ const CenteredView = props => {
                       padding: 20,
                     }}
                   >
-                    <Text style={{}}>{themed.label}</Text>
+                    <Text>{themed.label}</Text>
                     <Image
                       source={paletteIcon}
                       style={{ width: 25, height: 25, marginLeft: 12 }}
@@ -76,9 +76,15 @@ const CenteredView = props => {
                 </TouchableWithoutFeedback>
               ) : (
                 <Picker
-                  selectedValue={themed}
+                  selectedValue={themed.label}
                   style={{ width: '100%' }}
-                  onValueChange={theme => setThemed(theme)}
+                  onValueChange={theme => {
+                    setThemed(
+                      themeChoices[
+                        themeChoices.findIndex(t => t.value === theme)
+                      ],
+                    );
+                  }}
                 >
                   {themeChoices.map(({ label, value }) => (
                     <Picker.Item label={label} value={value} key={value} />
