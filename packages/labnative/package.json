@@ -1,16 +1,16 @@
 {
   "name": "@gympass/yoga-labnative",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "start": "react-native start",
-    "ios": "react-native run-ios --simulator \"iPhone X\"",
+    "ios": "react-native run-ios --simulator \"iPhone 11\"",
     "android": "react-native run-android",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
-    "@gympass/yoga": "^0.1.0",
+    "@gympass/yoga": "^0.2.0",
     "react": "^16.9.0",
     "react-native": "0.60.5",
     "react-native-gesture-handler": "^1.4.1",

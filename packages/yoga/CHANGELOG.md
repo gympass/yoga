@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.1.0...@gympass/yoga@0.2.0) (2019-11-08)
+
+### Features
+
+- **slider:** create new native component Slider ([88f65af](https://github.com/Gympass/yoga/commit/88f65afb4e8f78d66728ff8be07ced4491b65a98))
+- **yoga/slider:** add pressed state to slider component ([63d9c28](https://github.com/Gympass/yoga/commit/63d9c28a4aa9f339bf2e1496770c8b4002c0615d))
+- **yoga/slider:** add slider component to web platform ([68186b4](https://github.com/Gympass/yoga/commit/68186b43e2c4d1b467fdfd2fc3738e949811c903))
+- **yoga/slider:** implement major functionalities of Slider component ([2ed0c05](https://github.com/Gympass/yoga/commit/2ed0c0574e256c8c3cf92e9bf598f5735571e2e9))
+
 # [0.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.0.7...@gympass/yoga@0.1.0) (2019-11-07)
 
 ### Bug Fixes

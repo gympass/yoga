@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.1.0...@gympass/yoga-tokens@0.2.0) (2019-11-08)
+
+### Features
+
+- **yoga/slider:** implement major functionalities of Slider component ([2ed0c05](https://github.com/Gympass/yoga/commit/2ed0c0574e256c8c3cf92e9bf598f5735571e2e9))
+
 # 0.1.0 (2019-10-28)
 
 ### Bug Fixes

@@ -23,6 +23,78 @@ const BaseTheme = ({ primary, secondary }) => {
   };
 
   const components = {
+    slider: {
+      track: {
+        backgroundColor: {
+          active: colors.primary[3],
+          inactive: colors.gray[2],
+        },
+        border: {
+          radius: radii.circle,
+        },
+      },
+      step: {
+        backgroundColor: {
+          active: primary[3],
+          inactive: colors.gray[2],
+        },
+        border: {
+          radius: radii.circle,
+        },
+      },
+      marker: {
+        backgroundColor: primary[3],
+        border: {
+          color: colors.white,
+          radius: radii.circle,
+        },
+        shadow: elevations.small,
+      },
+      label: {
+        font: {
+          size: fontSizes[1],
+          weight: fontWeights.regular,
+        },
+      },
+      tooltip: {
+        shadow: elevations.small,
+        radius: radii.rounded,
+        backgroundColor: colors.gray[1],
+        distance: spacing.large,
+        padding: {
+          top: spacing.xxsmall,
+          right: spacing.xsmall,
+          bottom: spacing.xxsmall,
+          left: spacing.xsmall,
+        },
+        font: {
+          color: colors.gray[4],
+          title: {
+            size: fontSizes[2],
+            weight: fontWeights.bold,
+          },
+          description: {
+            size: fontSizes[2],
+            weight: fontWeights.regular,
+          },
+        },
+        ribbon: {
+          backgroundColor: secondary[3],
+          radius: radii.rounded,
+          padding: {
+            top: spacing.xxsmall,
+            right: spacing.xsmall,
+            bottom: spacing.xxsmall,
+            left: spacing.xsmall,
+          },
+          font: {
+            color: colors.white,
+            size: fontSizes[1],
+            weight: fontWeights.bold,
+          },
+        },
+      },
+    },
     list: {
       listItem: {
         padding: {
