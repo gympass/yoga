@@ -5,16 +5,23 @@ import RCSlider from 'rc-slider/lib/Slider';
 import RCRange from 'rc-slider/lib/Range';
 import Marker from './Marker';
 
-const StyledSlider = styled(RCSlider)`
+const StyledSlider = styled(RCSlider)(
+  ({ marks }) => `
   position: relative;
-  padding-bottom: 15px;
-`;
+  padding-bottom: ${marks ? 40 : 15}px;
+  width: 100%;
+`,
+);
 
-const StyledRange = styled(RCRange)`
+const StyledRange = styled(RCRange)(
+  ({ marks }) => `
   position: relative;
-  padding-bottom: 15px;
-`;
+  padding-bottom: ${marks ? 40 : 15}px;
+  width: 100%;
+`,
+);
 
+/** Sliders allow users to make selections from a range of values. Sliders reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters. */
 const Slider = ({
   snapped,
   tooltip,
@@ -179,11 +186,17 @@ const Slider = ({
 };
 
 Slider.propTypes = {
+  /** set the max value */
   max: number,
+  /** label to be displayed at max value */
   maxLabel: oneOfType([string, number]),
+  /** set the min value */
   min: number,
+  /** label to be displayed at min value */
   minLabel: oneOfType([string, number]),
+  /** make slider be snap through dots */
   snapped: bool,
+  /** accepts a shape with 'ribbon', 'title', 'description', 'visible' and 'step' properties */
   tooltip: arrayOf(
     shape({
       ribbon: string,
@@ -193,6 +206,7 @@ Slider.propTypes = {
       step: number,
     }),
   ),
+  /** an array that accepts one or two numbers, this determines how many markers will be displayed */
   values: arrayOf(number),
 };
 
@@ -202,7 +216,7 @@ Slider.defaultProps = {
   min: 0,
   minLabel: undefined,
   snapped: false,
-  tooltip: undefined,
+  tooltip: [],
   values: [0],
 };
 
