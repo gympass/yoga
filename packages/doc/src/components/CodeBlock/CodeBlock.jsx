@@ -59,22 +59,21 @@ const Preview = styled.div`
 
 const Component = styled.div`
   ${({
+    'data-center': center,
     darkMode,
-    center,
     theme: {
       colors: { white, dark },
     },
   }) => `
     font-family: 'Open Sans';
-    padding: 20px;
-    padding: 50px 20px;
+    padding: 50px;
     background-color: ${darkMode ? dark : white};
     transition: all 0.3s ease-in-out;
 
     > div {
       width: 100%;
       ${
-        center
+        center === 'true'
           ? `
       align-items: center;
       display: flex;
@@ -176,10 +175,10 @@ const CodeBlock = ({ children, reactLive, center }) => {
 
   return reactLive ? (
     <MDXContext.Consumer>
-      {scope => (
+      {Scope => (
         <LiveProvider
           code={normalizedCodeExample}
-          scope={scope}
+          scope={Scope}
           theme={githubTheme}
         >
           <Preview>
@@ -200,7 +199,7 @@ const CodeBlock = ({ children, reactLive, center }) => {
               </ToolbarIconButton>
             </Toolbar>
 
-            <Component center={center} darkMode={darkMode}>
+            <Component data-center={center} darkMode={darkMode}>
               <LivePreview />
             </Component>
 
