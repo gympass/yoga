@@ -67,7 +67,7 @@ describe('<Slider />', () => {
   });
 
   describe('Tooltip', () => {
-    it.only('should render tooltips', () => {
+    it('should render tooltips', () => {
       const { container, getByRole, getByText } = render(
         <ThemeProvider>
           <Slider
