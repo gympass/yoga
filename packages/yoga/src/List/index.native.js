@@ -1,5 +1,4 @@
-import List from './native/List';
-import ListItem from './native/Item';
+import { List, ListItem } from './native';
 
 List.Item = ListItem;
 

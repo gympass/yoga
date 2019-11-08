@@ -1,25 +1,40 @@
 ---
 title: 'Getting started'
-metaTitle: 'Components List Page'
-metaDescription: 'This is the list of Components'
+metaTitle: 'Getting started'
+metaDescription: 'This is the Getting started'
 ---
 
-# Our design-system
+# Yoga
 
-Following design guide-lines specification, we developed a React UI library antd that contains a set of high quality components that dictates Gympass interfaces.
+A scientific system of practices made to help each one of us achieve our highest potential and experience.
 
 ## Getting Started
 
-Our Design-system is dedicated to providing a good development experience for programmers and users.
+Gympass design-system's follows design guidelines specification, we developed a React and React Native UI library that contains a set of high quality components that defines our interfaces.
 
 ### Installing
 
-In order to install our design-system just use `yarn` or `npm` package manager
+In order to install our design-system just run:
 
 ```
 yarn add @gympass/yoga
+
+// or
+
+npm install @gympass/yoga
 ```
 
-### License
+### Usage
 
-This project is licensed under the MIT License.
+An important point in using it is that your whole application must be wrapped in our `ThemeProvider` component:
+
+```
+
+import { ThemeProvider, Button } from '@gympass/yoga';
+
+const App = () => (
+  <ThemeProvider>
+    <Button>Find an activity</Button>
+  </ThemeProvider>
+);
+```
