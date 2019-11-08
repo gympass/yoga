@@ -498,7 +498,8 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
 
 .c0 {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
+  width: 100%;
 }
 
 <div>
