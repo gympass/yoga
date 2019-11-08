@@ -19,6 +19,7 @@ const Circle = styled.TouchableOpacity(
     height: 24px;
     width: 24px;
     position: relative;
+    top: 2px;
   `,
 );
 
@@ -38,6 +39,7 @@ const CirclePressed = styled(Circle)(
           height: 40px;
           position: absolute;
           elevation: 0;
+          top: -6px;
     `
         : 'display: none; border: none;'
     }
