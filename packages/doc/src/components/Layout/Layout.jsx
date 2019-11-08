@@ -53,14 +53,16 @@ const GlobalStyle = createGlobalStyle`
     font-size: 22px;
   }
 
+  h4 {
+    font-size: 20px;
+  }
+
   * {
     box-sizing: border-box;
   }
 
   ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    line-height: 2;
   }
 `;
 

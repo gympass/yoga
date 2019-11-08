@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.3.0...@gympass/yoga-doc@0.4.0) (2019-11-08)
+
+### Bug Fixes
+
+- **doc/codeblock:** remove unnecessary scape chars ([3ac105d](https://github.com/Gympass/yoga/commit/3ac105d9e7d211460304cddcfd29c4e72b4310a7))
+- **doc/componenttitle:** fix query when compound component doens't have a root component ([2e67137](https://github.com/Gympass/yoga/commit/2e6713700310f56b2be5ea99e77762127f0dfb3e))
+- **doc/componenttitle:** make component description work with compound components ([4e1e427](https://github.com/Gympass/yoga/commit/4e1e427d35181b6563f45ebdbb16a52c9fd5c383))
+- **doc/dropdown:** fixing prop warnings ([23251d9](https://github.com/Gympass/yoga/commit/23251d90021fcdcd7d750de61ea9fdf63e382636))
+- **doc/navigation:** fixing prop error from gatsby Link component ([b5d4cde](https://github.com/Gympass/yoga/commit/b5d4cde4e105136a55bbb714ed37d07182422ca6))
+- **doc/proptable:** proptable now works for both platforms (platform prop) ([08a0d4e](https://github.com/Gympass/yoga/commit/08a0d4ed72673f2887b4e3f62ffe7bd5100ad80d))
+
+### Features
+
+- **doc/codesandbox:** component that handles dynamic creation of a sandbox ([ee3da7a](https://github.com/Gympass/yoga/commit/ee3da7a3560364af9e5a8ca6ddf86dcec7c334d2))
+- **doc/layout:** github icon ([577aec9](https://github.com/Gympass/yoga/commit/577aec973b3a027e48d96c8d6dc442cb9f49594a))
+- **doc/tabbedview:** adding tabbed view to use in MDX ([6b02a9e](https://github.com/Gympass/yoga/commit/6b02a9eac183ebb28aa240823369829a57c320f5))
+- **doc/themeconfig:** now possible to change colors of the docs ([4a0f36c](https://github.com/Gympass/yoga/commit/4a0f36ca7463d7351521db428fafea0587daf6a1))
+- **doc/web:** documentation for web using react-live and codesandbox API ([f685cfe](https://github.com/Gympass/yoga/commit/f685cfebf38c683b8382a944cef77e985e5c3735))
+- **expo:** adding expo support ([e300abe](https://github.com/Gympass/yoga/commit/e300abef975dcebd671999a4f02869ef59f5d208))
+
 # [0.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.2.2...@gympass/yoga-doc@0.3.0) (2019-11-07)
 
 ### Features
