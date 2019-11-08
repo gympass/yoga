@@ -7,7 +7,8 @@ import { LabelView, LabelText } from './Label';
 import Marker from './Marker';
 import Step from './Step';
 
-const SliderComponent = ({
+/** Sliders allow users to make selections from a range of values. Sliders reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters. */
+const Slider = ({
   max,
   maxLabel,
   min,
@@ -96,12 +97,18 @@ const SliderComponent = ({
   );
 };
 
-SliderComponent.propTypes = {
+Slider.propTypes = {
+  /** set the max value */
   max: number,
+  /** label to be displayed at max value */
   maxLabel: oneOfType([string, number]),
+  /** set the min value */
   min: number,
+  /** label to be displayed at min value */
   minLabel: oneOfType([string, number]),
+  /** make slider be snap through dots */
   snapped: bool,
+  /** accepts a shape with 'ribbon', 'title', 'description', 'visible' and 'step' properties */
   tooltip: arrayOf(
     shape({
       description: string,
@@ -111,10 +118,11 @@ SliderComponent.propTypes = {
       step: number,
     }),
   ),
+  /** an array that accepts one or two numbers, this determines how many markers will be displayed */
   values: arrayOf(number),
 };
 
-SliderComponent.defaultProps = {
+Slider.defaultProps = {
   max: 10,
   maxLabel: undefined,
   min: 0,
@@ -124,4 +132,4 @@ SliderComponent.defaultProps = {
   values: [0],
 };
 
-export default withTheme(SliderComponent);
+export default withTheme(Slider);
