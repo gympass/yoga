@@ -266,8 +266,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
               ]
             }
           >
-            <TouchableOpacity
-              activeOpacity={0.2}
+            <View
               pressed={false}
               style={
                 Array [
@@ -288,6 +287,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -314,6 +314,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -439,8 +440,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
               ]
             }
           >
-            <TouchableOpacity
-              activeOpacity={0.2}
+            <View
               pressed={false}
               style={
                 Array [
@@ -461,6 +461,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -487,6 +488,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -640,8 +642,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
               ]
             }
           >
-            <TouchableOpacity
-              activeOpacity={0.2}
+            <View
               pressed={false}
               style={
                 Array [
@@ -662,6 +663,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -688,6 +690,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -833,8 +836,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
               ]
             }
           >
-            <TouchableOpacity
-              activeOpacity={0.2}
+            <View
               pressed={false}
               style={
                 Array [
@@ -855,6 +857,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -881,6 +884,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -922,8 +926,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
               ]
             }
           >
-            <TouchableOpacity
-              activeOpacity={0.2}
+            <View
               pressed={false}
               style={
                 Array [
@@ -944,6 +947,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -970,6 +974,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -1269,8 +1274,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
               ]
             }
           >
-            <TouchableOpacity
-              activeOpacity={0.2}
+            <View
               pressed={false}
               style={
                 Array [
@@ -1291,6 +1295,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -1317,6 +1322,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -1358,8 +1364,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
               ]
             }
           >
-            <TouchableOpacity
-              activeOpacity={0.2}
+            <View
               pressed={false}
               style={
                 Array [
@@ -1380,6 +1385,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -1406,6 +1412,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -1661,8 +1668,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                 }
               />
             </View>
-            <TouchableOpacity
-              activeOpacity={0.2}
+            <View
               pressed={true}
               style={
                 Array [
@@ -1682,6 +1688,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": -6,
                     "width": 40,
                   },
                 ]
@@ -1708,6 +1715,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
@@ -1963,8 +1971,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                 }
               />
             </View>
-            <TouchableOpacity
-              activeOpacity={0.2}
+            <View
               pressed={true}
               style={
                 Array [
@@ -1984,6 +1991,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": -6,
                     "width": 40,
                   },
                 ]
@@ -2010,6 +2018,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                     },
                     "shadowOpacity": 1,
                     "shadowRadius": 6,
+                    "top": 2,
                     "width": 24,
                   },
                 ]
