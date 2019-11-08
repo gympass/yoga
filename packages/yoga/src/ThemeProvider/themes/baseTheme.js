@@ -142,6 +142,93 @@ const baseTheme = ({ primary, secondary }) => {
         },
       },
     },
+    card: {
+      padding: spacing.medium,
+      radii: radii.rounded,
+      background: {
+        default: colors.white,
+        selected: colors.secondary[3],
+      },
+      elevation: elevations.small,
+      header: {
+        ribbon: {
+          right: -spacing.medium,
+          padding: {
+            x: spacing.xsmall,
+            y: spacing.medium,
+          },
+          radii: {
+            topLeft: 16,
+            bottomLeft: 16,
+          },
+          background: {
+            primary: colors.primary[1],
+            secondary: colors.secondary[1],
+          },
+          font: {
+            size: fontSizes[1],
+            weight: fontWeights.bold,
+            color: {
+              primary: colors.primary[3],
+              secondary: colors.secondary[3],
+            },
+          },
+        },
+      },
+      plan: {
+        header: {
+          margin: {
+            bottom: spacing.xxlarge,
+          },
+          title: {
+            font: {
+              size: fontSizes[1],
+              color: {
+                default: colors.gray[4],
+                selected: colors.white,
+              },
+            },
+          },
+        },
+        price: {
+          font: {
+            size: fontSizes[7],
+            weight: fontWeights.bold,
+            color: {
+              default: colors.black,
+              selected: colors.white,
+            },
+          },
+        },
+        period: {
+          font: {
+            size: fontSizes[1],
+            padding: {
+              top: spacing.xxsmall,
+            },
+            color: {
+              default: colors.gray[4],
+              selected: colors.white,
+            },
+          },
+        },
+        footer: {
+          margin: {
+            top: spacing.large,
+          },
+          gymsQuantity: {
+            font: {
+              size: fontSizes[2],
+              weight: fontWeights.bold,
+              color: {
+                default: colors.secondary[3],
+                selected: colors.white,
+              },
+            },
+          },
+        },
+      },
+    },
   };
 
   return { components, baseFontSize, colors, spacing };
