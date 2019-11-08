@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<List /> Snapshots Without props should match snapshot with a default list 1`] = `
+.c1 {
+  padding: 20px 24px 20px 24px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10,6 +14,9 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .c0 > * {
@@ -18,10 +25,6 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 
 .c0 > *:last-child {
   border: none;
-}
-
-.c1 {
-  padding: 20px 24px 20px 24px;
 }
 
 <div>
@@ -40,6 +43,10 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 `;
 
 exports[`<List /> Snapshots Without props should match snapshot with a default list and multiple items 1`] = `
+.c1 {
+  padding: 20px 24px 20px 24px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -49,6 +56,9 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .c0 > * {
@@ -57,10 +67,6 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 
 .c0 > *:last-child {
   border: none;
-}
-
-.c1 {
-  padding: 20px 24px 20px 24px;
 }
 
 <div>
@@ -86,6 +92,10 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 `;
 
 exports[`<List /> Snapshots Without props should match snapshot with a default list, multiple items and no dividers 1`] = `
+.c1 {
+  padding: 20px 24px 20px 24px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -95,14 +105,13 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .c0 > *:last-child {
   border: none;
-}
-
-.c1 {
-  padding: 20px 24px 20px 24px;
 }
 
 <div>
@@ -128,6 +137,10 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 `;
 
 exports[`<List /> Snapshots Without props should match snapshot with a horizontal list 1`] = `
+.c1 {
+  padding: 20px 24px 20px 24px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -137,6 +150,9 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .c0 > * {
@@ -145,10 +161,6 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
 
 .c0 > *:last-child {
   border: none;
-}
-
-.c1 {
-  padding: 20px 24px 20px 24px;
 }
 
 <div>
@@ -167,6 +179,10 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
 `;
 
 exports[`<List /> Snapshots Without props should match snapshot with a horizontal list and multiple items 1`] = `
+.c1 {
+  padding: 20px 24px 20px 24px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -176,6 +192,9 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .c0 > * {
@@ -184,10 +203,6 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
 
 .c0 > *:last-child {
   border: none;
-}
-
-.c1 {
-  padding: 20px 24px 20px 24px;
 }
 
 <div>
@@ -213,6 +228,10 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
 `;
 
 exports[`<List /> Snapshots Without props should match snapshot with a horizontal list, multiple items and no dividers 1`] = `
+.c1 {
+  padding: 20px 24px 20px 24px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -222,14 +241,13 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .c0 > *:last-child {
   border: none;
-}
-
-.c1 {
-  padding: 20px 24px 20px 24px;
 }
 
 <div>

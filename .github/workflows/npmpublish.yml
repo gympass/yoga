@@ -33,7 +33,7 @@ jobs:
           GH_TOKEN=${GH_TOKEN}
           NPM_TOKEN=${NPM_TOKEN}
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
-          yarn lerna publish --yes
+          yarn lerna publish --yes --amend
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
