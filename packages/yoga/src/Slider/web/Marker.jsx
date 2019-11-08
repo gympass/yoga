@@ -17,10 +17,8 @@ const Circle = styled(RCHandle)(
     border-radius: ${slider.marker.border.radius}px;
     box-shadow: ${
       dataDragging
-        ? `${slider.marker.shadow}, 0px 0px 0px 8px ${hexToRgb(
-            slider.marker.backgroundColor,
-            0.2,
-          )}`
+        ? `${slider.marker.shadow},
+          0 0 0 8px ${hexToRgb(slider.marker.backgroundColor, 0.2)}`
         : slider.marker.shadow
     };
     cursor: pointer;
@@ -39,12 +37,12 @@ const Marker = ({ values, dragging, index, tooltip, ...props }) => {
       return false;
     }
 
-    return tooltip.filter(item => {
-      if (!item.step && item.step !== 0) {
-        return item.visible;
+    return tooltip.filter(({ step, visible }) => {
+      if (!step && step !== 0) {
+        return visible;
       }
 
-      return item.visible && values[index] === item.step;
+      return visible && values[index] === step;
     })[0];
   };
 
