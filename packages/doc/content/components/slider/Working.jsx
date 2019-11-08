@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Slider } from '@gympass/yoga';
 
-const Controlled = props => {
+const Working = props => {
   const [values, setValues] = useState([0, 7]);
 
   return (
@@ -168,4 +168,4 @@ const Controlled = props => {
   );
 };
 
-export default Controlled;
+export default Working;

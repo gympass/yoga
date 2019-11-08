@@ -41,7 +41,6 @@ const BaseTheme = ({ primary, secondary }) => {
         border: {
           radius: radii.circle,
         },
-        position: -30,
       },
       marker: {
         backgroundColor: primary[3],

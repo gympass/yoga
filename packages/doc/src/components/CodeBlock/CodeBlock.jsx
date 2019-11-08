@@ -175,10 +175,10 @@ const CodeBlock = ({ children, reactLive, center }) => {
 
   return reactLive ? (
     <MDXContext.Consumer>
-      {Scope => (
+      {scope => (
         <LiveProvider
           code={normalizedCodeExample}
-          scope={Scope}
+          scope={scope}
           theme={githubTheme}
         >
           <Preview>
