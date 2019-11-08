@@ -25,7 +25,7 @@ const milan = ['#FFF6E6', '#FFE5B3', '#FFD380', '#FFC24C'];
 /**
  * @type {Color}
  */
-const saoPaulo = ['#D3F3F2', '#ABE8E6', '#83DDDB', '#35C3BF'];
+const saoPaulo = ['#7DE8DA', '#27D8C1', '#1FAD9A', '#178173'];
 
 /**
  * @type {Color}

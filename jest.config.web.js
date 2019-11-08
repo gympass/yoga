@@ -1,5 +1,5 @@
 module.exports = {
   testMatch: ['<rootDir>/packages/**/web/*.test.jsx'],
-  setupFilesAfterEnv: ['./jest.setup.js'],
+  setupFilesAfterEnv: ['./jest.setup.web.js'],
   displayName: 'web',
 };
