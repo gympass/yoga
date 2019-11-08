@@ -29,7 +29,7 @@ const themeChoices = [
 ];
 
 const CenteredView = props => {
-  const [themed, setThemed] = useState(themeChoices[1]);
+  const [themed, setThemed] = useState(themeChoices[0]);
 
   return (
     <ThemeProvider theme={themed.value}>

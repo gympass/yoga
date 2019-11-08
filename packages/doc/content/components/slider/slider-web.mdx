@@ -1,0 +1,49 @@
+import Controlled from './Controlled';
+
+### Reference
+
+Gympass `<Slider />` component extends from <a href="https://github.com/react-component/slider/" target="_blank" rel="noopener noreferrer">rc-slider</a>.
+
+### Usage
+
+#### Simple slider
+
+```javascript reactLive=true center=true
+<Slider
+  max={10}
+  min={0}
+  maxLabel={10}
+  minLabel={0}
+  tooltip={[
+    {
+      ribbon: 'My plan',
+      title: 'Up to',
+      description: 'U$ 99,90',
+      step: 2,
+      visible: true,
+    },
+  ]}
+/>
+```
+
+#### Controlled slider
+
+Check this component on <a href="https://github.com/Gympass/yoga/blob/master/slider/packages/doc/content/components/slider/Controlled.jsx" target="_blank">Github</a>.
+
+<Controlled />
+
+#### Showing a tooltip
+
+Is possible to render a tooltip over the marks of slider, to do that you need to pass the `tooltip` prop. It's takes an array of objects that accepts the current shape:
+
+- ribbon: `string`
+- title: `string`
+- description: `string`
+- visible: `bool` (condition that controls tooltip visibility)
+- step: `number` (a specific step to show the tooltip)
+
+With this array of objects you can render different tooltips, with different messages for each respective step you like.
+
+### Props
+
+<PropsTable component="Slider" platform="web" />
