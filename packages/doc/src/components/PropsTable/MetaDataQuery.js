@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 const MetaDataQuery = () =>
   useStaticQuery(graphql`
     query {
-      allComponentMetadata {
+      allComponentMetadata(sort: { fields: displayName }) {
         edges {
           node {
             displayName
@@ -18,6 +18,13 @@ const MetaDataQuery = () =>
               }
               description {
                 text
+              }
+            }
+            parent {
+              ... on File {
+                id
+                name
+                absolutePath
               }
             }
           }

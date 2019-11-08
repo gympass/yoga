@@ -96,7 +96,7 @@ const SwitchThumb = styled.span`
     ${
       checked
         ? `
-        left: calc(100% - ${thumbLeft}px); 
+        left: calc(100% - ${thumbLeft}px);
         transform: translateX(-100%);`
         : ''
     }
@@ -106,7 +106,7 @@ const SwitchThumb = styled.span`
         background-color: ${disabledBackgroundColor};
         cursor: not-allowed;`
         : `
-        ${SwitchInput}:focus + &, 
+        ${SwitchInput}:focus + &,
         ${SwitchInput}:hover + &{
           box-shadow: 0 0 0 ${spacing.xsmall}px ${
             checked ? focusCheckedBackgroundColor : focusDisabledBackgroundColor
@@ -117,7 +117,7 @@ const SwitchThumb = styled.span`
   `};
 `;
 
-/** The Switch is a kind of Checkbox  */
+/** Switches allow users to turn an individual option on or off. They are usually used to activate or deactivate a specific setting. */
 const CheckboxSwitch = ({ checked, disabled, onChange, ...rest }) => (
   <SwitchTrack checked={checked} disabled={disabled} {...rest}>
     <SwitchInput

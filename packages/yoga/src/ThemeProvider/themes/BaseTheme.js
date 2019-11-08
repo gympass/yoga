@@ -12,14 +12,14 @@ const {
   borders,
 } = tokens;
 
-const baseTheme = ({ primary, secondary }) => {
+const BaseTheme = ({ primary, secondary }) => {
   const baseFontSize = fontSizes[3];
   const colors = {
     primary,
     secondary,
     gray: tokenColors.gray,
     white: tokenColors.white,
-    black: tokenColors.black,
+    dark: tokenColors.dark,
   };
 
   const components = {
@@ -260,4 +260,4 @@ const baseTheme = ({ primary, secondary }) => {
   return { components, baseFontSize, colors, spacing };
 };
 
-export default baseTheme;
+export default BaseTheme;
