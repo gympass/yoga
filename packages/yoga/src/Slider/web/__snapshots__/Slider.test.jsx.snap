@@ -2,22 +2,23 @@
 
 exports[`<Slider /> Snapshots With one marker should match snapshot with Slider snapped 1`] = `
 .c1 {
-  height: 24px;
-  position: absolute;
-  top: 0;
-  width: 24px;
   background-color: #F46152;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
   cursor: pointer;
+  height: 24px;
   margin-top: -10px;
   outline: none;
+  position: absolute;
+  top: 0;
+  width: 24px;
 }
 
 .c0 {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
+  width: 100%;
 }
 
 <div>
@@ -100,22 +101,23 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
 
 exports[`<Slider /> Snapshots With one marker should match snapshot with Slider with labels 1`] = `
 .c1 {
-  height: 24px;
-  position: absolute;
-  top: 0;
-  width: 24px;
   background-color: #F46152;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
   cursor: pointer;
+  height: 24px;
   margin-top: -10px;
   outline: none;
+  position: absolute;
+  top: 0;
+  width: 24px;
 }
 
 .c0 {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
+  width: 100%;
 }
 
 <div>
@@ -135,11 +137,11 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     >
       <span
         class="yoga-dot yoga-dot-active"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 0%;"
+        style="left: 0%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 100%;"
+        style="left: 100%;"
       />
     </div>
     <div
@@ -175,22 +177,23 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
 
 exports[`<Slider /> Snapshots With one marker should match snapshot with default Slider 1`] = `
 .c1 {
-  height: 24px;
-  position: absolute;
-  top: 0;
-  width: 24px;
   background-color: #F46152;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
   cursor: pointer;
+  height: 24px;
   margin-top: -10px;
   outline: none;
+  position: absolute;
+  top: 0;
+  width: 24px;
 }
 
 .c0 {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
+  width: 100%;
 }
 
 <div>
@@ -210,11 +213,11 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
     >
       <span
         class="yoga-dot yoga-dot-active"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 0%;"
+        style="left: 0%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 100%;"
+        style="left: 100%;"
       />
     </div>
     <div
@@ -237,22 +240,23 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
 
 exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
 .c1 {
-  height: 24px;
-  position: absolute;
-  top: 0;
-  width: 24px;
   background-color: #F46152;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
   cursor: pointer;
+  height: 24px;
   margin-top: -10px;
   outline: none;
+  position: absolute;
+  top: 0;
+  width: 24px;
 }
 
 .c0 {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
+  width: 100%;
 }
 
 <div>
@@ -272,11 +276,11 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
     >
       <span
         class="rc-slider-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 0%;"
+        style="left: 0%;"
       />
       <span
         class="rc-slider-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 100%;"
+        style="left: 100%;"
       />
     </div>
     <div
@@ -310,22 +314,23 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
 
 exports[`<Slider /> Snapshots With two markers should match snapshot with Slider snapped 1`] = `
 .c1 {
-  height: 24px;
-  position: absolute;
-  top: 0;
-  width: 24px;
   background-color: #F46152;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
   cursor: pointer;
+  height: 24px;
   margin-top: -10px;
   outline: none;
+  position: absolute;
+  top: 0;
+  width: 24px;
 }
 
 .c0 {
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
+  width: 100%;
 }
 
 <div>
