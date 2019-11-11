@@ -74,7 +74,7 @@ const Header = ({ children }) => (
   </Wrapper>
 );
 
-Header.protoTypes = {
+Header.propTypes = {
   children: node,
 };
 
