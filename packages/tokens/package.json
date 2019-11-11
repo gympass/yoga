@@ -17,6 +17,9 @@
     "prebuild": "rm -rf ./dist",
     "prepublishOnly": "node ../../prepublish.js"
   },
+  "dependencies": {
+    "@gympass/yoga-common": "^0.1.0"
+  },
   "publishConfig": {
     "access": "public",
     "directory": "dist"
