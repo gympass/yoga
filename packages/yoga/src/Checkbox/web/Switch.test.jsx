@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 
-import Checkbox from '../';
+import Checkbox from '..';
 import ThemeProvider from '../../ThemeProvider';
 
 describe('<Checkbox />', () => {

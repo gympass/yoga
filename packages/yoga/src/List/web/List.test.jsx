@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { ThemeProvider, List } from '../../';
+import { ThemeProvider, List } from '../..';
 
 describe('<List />', () => {
   describe('Snapshots', () => {

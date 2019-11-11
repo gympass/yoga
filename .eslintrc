@@ -1,4 +1,7 @@
 {
+  "env": {
+    "jest": true
+  },
   "parser": "babel-eslint",
   "plugins": ["react", "prettier"],
   "extends": [
