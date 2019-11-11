@@ -20,6 +20,7 @@ const CardContainer = styled.div`
     border-radius: ${radii}px;
     background-color: ${colors.white};
     box-shadow: ${elevation};
+    transition: 0.3s;
   `}
 `;
 
