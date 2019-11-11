@@ -13,6 +13,7 @@
     "react/jsx-props-no-spreading": "off"
   },
   "globals": {
-    "window": true
+    "window": true,
+    "fetch": false
   }
 }
