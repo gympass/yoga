@@ -5,7 +5,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   background-color: #F46152;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
@@ -104,7 +104,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   background-color: #F46152;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
@@ -180,7 +180,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
   background-color: #F46152;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
@@ -243,7 +243,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
   background-color: #F46152;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
@@ -317,7 +317,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
   background-color: #F46152;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
@@ -433,7 +433,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   transform: translateX(-50%);
   background-color: #178173;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
 .c4 {
@@ -448,7 +448,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   background-color: #F5F5FA;
   border-radius: 3px;
   bottom: -5px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
   height: 16px;
   left: 50%;
   position: absolute;
@@ -491,7 +491,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   background-color: #F46152;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25), 0 0 0 8px rgba(244,97,82,0.2);
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25), 0 0 0 8px rgba(244,97,82,0.2);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
