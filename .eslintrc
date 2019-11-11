@@ -13,7 +13,8 @@
   "rules": {
     "prettier/prettier": "error",
     "import/no-cycle": 0,
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": [2, { "ignore": ["theme"] }]
   },
   "globals": {
     "window": true,
