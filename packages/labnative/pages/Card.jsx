@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Card } from '@gympass/yoga';
 import { Text, View } from 'react-native';
@@ -12,6 +12,7 @@ const StyledText = styled.Text`
 `;
 
 const CardPage = () => {
+  const [cardSelected, setCardSelected] = useState(true);
   return (
     <ScrollView
       style={{
@@ -57,13 +58,14 @@ const CardPage = () => {
           style={{ width: 170 }}
         ></Card.Plan>
         <Card.Plan
-          selected
+          selected={cardSelected}
           plan={{
             name: 'Platinum',
             price: 'U$ 29.90',
             period: 'month',
             gyms: '1,239',
           }}
+          onCardPress={() => setCardSelected(!cardSelected)}
           style={{ width: 170 }}
         ></Card.Plan>
       </View>
