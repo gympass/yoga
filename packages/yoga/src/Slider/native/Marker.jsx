@@ -2,8 +2,8 @@ import React from 'react';
 import { View } from 'react-native';
 import { bool, number, shape, string } from 'prop-types';
 import styled from 'styled-components';
-import Tooltip from './Tooltip';
 import { hexToRgb } from '@gympass/yoga-common';
+import Tooltip from './Tooltip';
 
 const Circle = styled.TouchableOpacity(
   ({
