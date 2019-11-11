@@ -97,6 +97,7 @@ const getSummary = edges => {
 
 const Summary = () => {
   const ssr = typeof window !== 'undefined';
+
   const {
     allMdx: { edges },
   } = HeadingsQuery();
@@ -105,7 +106,9 @@ const Summary = () => {
   const handleScroll = () => ssr && setFixed(window.scrollY > 88);
 
   useEffect(() => {
-    ssr && window.addEventListener('scroll', handleScroll);
+    if (ssr) {
+      window.addEventListener('scroll', handleScroll);
+    }
 
     return () => ssr && window.removeEventListener('scroll', handleScroll);
   });
