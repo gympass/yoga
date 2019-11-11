@@ -1,6 +1,7 @@
 import React from 'react';
-import { bool, shape, string } from 'prop-types';
+import { bool, shape, string, func } from 'prop-types';
 import styled from 'styled-components';
+import { TouchableOpacity } from 'react-native';
 import Card from './Card';
 
 const CardPlan = styled(Card)`
@@ -97,17 +98,19 @@ const GymsQuantity = styled.Text`
   `}
 `;
 
-const Plan = ({ plan, selected, ribbon, ...rest }) => {
+const Plan = ({ plan, selected, ribbon, onCardPress, ...rest }) => {
   return (
     <CardPlan selected={selected} {...rest}>
-      <Card.Header ribbon={ribbon} style={{ marginBottom: 40 }}>
-        <Title selected={selected}>{plan.name}</Title>
-      </Card.Header>
-      <Price selected={selected}>{plan.price}</Price>
-      <Period selected={selected}>/{plan.period}</Period>
-      <Card.Footer style={{ marginTop: 20 }}>
-        <GymsQuantity selected={selected}>{plan.gyms} gyms</GymsQuantity>
-      </Card.Footer>
+      <TouchableOpacity testID="touchable" onPress={onCardPress}>
+        <Card.Header ribbon={ribbon} style={{ marginBottom: 40 }}>
+          <Title selected={selected}>{plan.name}</Title>
+        </Card.Header>
+        <Price selected={selected}>{plan.price}</Price>
+        <Period selected={selected}>/{plan.period}</Period>
+        <Card.Footer style={{ marginTop: 20 }}>
+          <GymsQuantity selected={selected}>{plan.gyms} gyms</GymsQuantity>
+        </Card.Footer>
+      </TouchableOpacity>
     </CardPlan>
   );
 };
@@ -124,11 +127,13 @@ Plan.propTypes = {
     label: string,
     secondary: bool,
   }),
+  onCardPress: func,
 };
 
 Plan.defaultProps = {
   selected: false,
   ribbon: null,
+  onCardPress: () => {},
 };
 
 export default Plan;

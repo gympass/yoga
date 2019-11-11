@@ -1,5 +1,5 @@
 import React from 'react';
-import { bool, shape, string } from 'prop-types';
+import { bool, shape, string, func } from 'prop-types';
 import styled from 'styled-components';
 import Card from './Card';
 
@@ -14,10 +14,10 @@ const CardPlan = styled(Card)`
       },
     },
   }) => `
-    ${selected && `background-color: ${background.selected}`}
+    ${selected ? `background-color: ${background.selected};` : ''}
     h1, h2, span {
       margin: 0;
-      ${selected && `color: ${color.selected}`}
+      ${selected ? `color: ${color.selected};` : ''}
     }
   `}
 `;
@@ -81,7 +81,7 @@ const GymsQuantity = styled.span`
   }) => `
     font-size: ${gymsQuantity.font.size}px;
     font-weight: ${gymsQuantity.font.weight};
-    color: ${gymsQuantity.font.color}
+    color: ${gymsQuantity.font.color};
   `}
 `;
 

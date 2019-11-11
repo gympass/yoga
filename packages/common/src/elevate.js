@@ -3,11 +3,11 @@ import hexToRgb from './hexToRgb';
 /**
  * Elevation function
  *
- * @param {String} color=#000 - Color to elevate
+ * @param {String} color=#9898A6 - Color to elevate
  * @param {Number} level - Elevation level. It must be between 0 and 4
  * @returns {String}
  */
-function elevate(color = '#000', level) {
+function elevate(color = '#9898A6', level) {
   const normalizedColor = hexToRgb(color, 0.25);
   const all = [
     'none',
