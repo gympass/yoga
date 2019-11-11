@@ -1,5 +1,5 @@
 import React from 'react';
-import { bool } from 'prop-types';
+import { bool, string, shape } from 'prop-types';
 import styled from 'styled-components';
 
 const Wrapper = styled.div(
@@ -126,5 +126,13 @@ const Tooltip = ({ data, ...props }) =>
       <Arrow />
     </Wrapper>
   ) : null;
+
+Tooltip.propTypes = {
+  data: shape({
+    ribbon: string,
+    title: string,
+    description: string,
+  }).isRequired,
+};
 
 export default Tooltip;
