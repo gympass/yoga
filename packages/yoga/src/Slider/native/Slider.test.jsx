@@ -2,7 +2,6 @@ import React from 'react';
 import { render, toJSON, fireEvent } from '@testing-library/react-native';
 import ThemeProvider from '../../ThemeProvider';
 import Slider from './Slider';
-import Tooltip from './Tooltip';
 
 describe('<Slider />', () => {
   describe('Snapshots', () => {

@@ -23,7 +23,7 @@ const Slider = ({
 }) => {
   const renderSnapDots = () => {
     const items = [];
-    for (let i = min; i <= max; i++) {
+    for (let i = min; i <= max; i + 1) {
       if (values.length > 1) {
         items.push(<Step key={i} active={values[0] < i && values[1] > i} />);
       } else {
