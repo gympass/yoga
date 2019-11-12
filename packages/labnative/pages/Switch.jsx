@@ -34,7 +34,7 @@ const CheckboxPage = () => {
       </SwitchWrapper>
       <StyledText>Checked</StyledText>
       <SwitchWrapper>
-        <Checkbox.Switch checked={true} />
+        <Checkbox.Switch checked />
       </SwitchWrapper>
       <StyledText>Working</StyledText>
       <SwitchWrapper>

@@ -67,7 +67,6 @@ const SwitchThumb = styled.span`
           thumb: {
             width: thumbWidth,
             height: thumbHeight,
-            shadow: thumbShadow,
             left: thumbLeft,
             radii: thumbRadii,
             backgroundColor: thumbBackgroundColor,

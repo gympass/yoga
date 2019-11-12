@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { ThemeProvider, List } from '../../';
+import { ThemeProvider, List } from '../..';
 
 describe('<List />', () => {
   describe('Snapshots', () => {
@@ -57,7 +57,7 @@ describe('<List />', () => {
           <ThemeProvider>
             <List horizontal>
               <List.Item>
-                <button>List test</button>
+                <button type="button">List test</button>
               </List.Item>
             </List>
           </ThemeProvider>,
