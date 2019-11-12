@@ -75,6 +75,9 @@
     }
   },
   "lint-staged": {
+    "*.{js,jsx}": [
+      "yarn lint:all"
+    ],
     "*.{js,css,json,md}": [
       "prettier --write",
       "git add"
