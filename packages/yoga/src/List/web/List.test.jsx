@@ -57,7 +57,7 @@ describe('<List />', () => {
           <ThemeProvider>
             <List horizontal>
               <List.Item>
-                <button>List test</button>
+                <button type="button">List test</button>
               </List.Item>
             </List>
           </ThemeProvider>,
