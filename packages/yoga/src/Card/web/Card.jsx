@@ -1,14 +1,10 @@
 import React from 'react';
-import { node } from 'prop-types';
 import styled from 'styled-components';
 
-const CardContainer = styled.div`
-  ${({
+const CardStyled = styled.div(
+  ({
     theme: {
-      colors,
-      components: {
-        card: { padding, radii, elevation },
-      },
+      components: { card },
     },
   }) => `
     display: flex;
@@ -16,24 +12,20 @@ const CardContainer = styled.div`
     justify-content: flex-start;
 
     width: 100%;
-    padding: ${padding}px;
-    border-radius: ${radii}px;
-    background-color: ${colors.white};
-    box-shadow: ${elevation};
-    transition: 0.3s;
-  `}
-`;
+    padding: 
+      ${card.padding.top}px 
+      ${card.padding.right}px 
+      ${card.padding.bottom}px 
+      ${card.padding.left}px;
 
-const Card = ({ children, ...rest }) => (
-  <CardContainer {...rest}>{children}</CardContainer>
+    border-radius: ${card.radii}px;
+    background-color: ${card.background};
+    box-shadow: ${card.elevation};
+`,
 );
 
-Card.propTypes = {
-  children: node,
-};
+const Card = ({ ...rest }) => <CardStyled {...rest} />;
 
-Card.defaultProps = {
-  children: 'Card',
-};
+Card.displayName = 'Card';
 
 export default Card;

@@ -65,7 +65,7 @@ const CardPage = () => {
             period: 'month',
             gyms: '1,239',
           }}
-          onCardPress={() => setCardSelected(!cardSelected)}
+          onPress={() => setCardSelected(!cardSelected)}
           style={{ width: 170 }}
         ></Card.Plan>
       </View>

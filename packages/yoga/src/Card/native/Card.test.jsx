@@ -15,14 +15,12 @@ const data = {
   ribbonSecondary: { label: 'Upgrade', secondary: true },
 };
 
-jest.useFakeTimers();
-
 describe('<Card />', () => {
   it('should match snapshot with default Card', () => {
     const { container } = render(
       <ThemeProvider>
         <Card>
-          <Text>Teste</Text>
+          <Text>Hello World</Text>
         </Card>
       </ThemeProvider>,
     );
@@ -67,7 +65,7 @@ describe('<Card />', () => {
     const onCardPressMock = jest.fn();
     const { getByTestId } = render(
       <ThemeProvider>
-        <Card.Plan plan={data.plan} onCardPress={onCardPressMock} />
+        <Card.Plan plan={data.plan} onPress={onCardPressMock} />
       </ThemeProvider>,
     );
     fireEvent.press(getByTestId('touchable'));
