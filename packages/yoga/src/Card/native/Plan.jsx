@@ -4,104 +4,88 @@ import styled from 'styled-components';
 import { TouchableOpacity } from 'react-native';
 import Card from './Card';
 
-const CardPlan = styled(Card)`
-  ${({
+const CardPlanWrapper = styled(Card)(
+  ({
     selected,
     theme: {
-      components: {
-        card: {
-          plan: { background },
-        },
-      },
+      components: { card },
     },
   }) => `
-    ${selected && `background-color: ${background.selected}`}
-  `}
-`;
+  ${selected && `background-color: ${card.plan.background.selected};`}
+`,
+);
 
-const Title = styled.Text`
-  ${({
+const Title = styled.Text(
+  ({
     selected,
     theme: {
-      components: {
-        card: {
-          plan: {
-            color,
-            title: { font },
-          },
-        },
-      },
+      components: { card },
     },
   }) => `
-    font-size: ${font.size}px;
-    ${selected ? `color: ${color.selected}` : `color: ${font.color}`}
-  `}
-`;
+  font-size: ${card.plan.title.font.size}px;
+  color: ${
+    selected
+      ? `${card.plan.title.font.selected.color}`
+      : `${card.plan.title.font.color}`
+  };
+`,
+);
 
-const Price = styled.Text`
-  ${({
+const Price = styled.Text(
+  ({
     selected,
     theme: {
-      components: {
-        card: {
-          plan: {
-            color,
-            price: { font },
-          },
-        },
-      },
+      components: { card },
     },
   }) => `
-    font-size: ${font.size}px;
-    font-weight: ${font.weight}; 
-    ${selected ? `color: ${color.selected}` : `color: ${font.color}`}
-  `}
-`;
+  font-size: ${card.plan.price.font.size}px;
+  font-weight: ${card.plan.price.font.weight}; 
+  color: ${
+    selected
+      ? `${card.plan.price.font.selected.color}`
+      : `${card.plan.price.font.color}`
+  };
+`,
+);
 
-const Period = styled.Text`
-  ${({
+const Period = styled.Text(
+  ({
     selected,
     theme: {
-      components: {
-        card: {
-          plan: {
-            color,
-            period: { font },
-          },
-        },
-      },
+      components: { card },
     },
   }) => `
-    font-size: ${font.size}px;
-    padding-top: ${font.padding.top}px;
-    ${selected ? `color: ${color.selected};` : `color: ${font.color};`}
-  `}
-`;
+  font-size: ${card.plan.period.font.size}px;
+  padding-top: ${card.plan.period.font.padding.top}px;
+  color: ${
+    selected
+      ? `${card.plan.period.font.selected.color}`
+      : `${card.plan.period.font.color}`
+  };
+`,
+);
 
-const GymsQuantity = styled.Text`
-  ${({
+const GymsQuantity = styled.Text(
+  ({
     selected,
     theme: {
-      components: {
-        card: {
-          plan: {
-            color,
-            gymsQuantity: { font },
-          },
-        },
-      },
+      components: { card },
     },
   }) => `
-    font-size: ${font.size}px;
-    font-weight: ${font.weight};
-    ${selected ? `color: ${color.selected}` : `color: ${font.color}`}
-  `}
-`;
+    font-size: ${card.plan.gymsQuantity.font.size}px;
+    font-weight: ${card.plan.gymsQuantity.font.weight};
+    color: ${
+      selected
+        ? `${card.plan.gymsQuantity.font.selected.color}`
+        : `${card.plan.gymsQuantity.font.color}`
+    };
+`,
+);
 
-const Plan = ({ plan, selected, ribbon, onCardPress, ...rest }) => {
+const CardPlan = ({ plan, selected, ribbon, ...rest }) => {
   return (
-    <CardPlan selected={selected} {...rest}>
-      <TouchableOpacity testID="touchable" onPress={onCardPress}>
+    <CardPlanWrapper selected={selected} {...rest}>
+      <TouchableOpacity testID="touchable" {...rest}>
         <Card.Header ribbon={ribbon} style={{ marginBottom: 40 }}>
           <Title selected={selected}>{plan.name}</Title>
         </Card.Header>
@@ -111,11 +95,13 @@ const Plan = ({ plan, selected, ribbon, onCardPress, ...rest }) => {
           <GymsQuantity selected={selected}>{plan.gyms} gyms</GymsQuantity>
         </Card.Footer>
       </TouchableOpacity>
-    </CardPlan>
+    </CardPlanWrapper>
   );
 };
 
-Plan.propTypes = {
+CardPlan.displayName = 'Card.Plan';
+
+CardPlan.propTypes = {
   selected: bool,
   plan: shape({
     name: string,
@@ -127,13 +113,13 @@ Plan.propTypes = {
     label: string,
     secondary: bool,
   }),
-  onCardPress: func,
+  onPress: func,
 };
 
-Plan.defaultProps = {
+CardPlan.defaultProps = {
   selected: false,
   ribbon: null,
-  onCardPress: () => {},
+  onPress: () => {},
 };
 
-export default Plan;
+export default CardPlan;

@@ -1,39 +1,30 @@
 import React from 'react';
-import { node } from 'prop-types';
 import styled from 'styled-components';
 
-const CardContainer = styled.View`
-  ${({
+const CardStyled = styled.View(
+  ({
     theme: {
-      colors,
-      components: {
-        card: { padding, radii, elevation },
-      },
+      components: { card },
     },
   }) => `
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     width: 100%;
-    padding: ${padding}px;
-    border-radius: ${radii}px;
-    background-color: ${colors.white};
-    box-shadow: ${elevation};
-    elevation: 4;
-  `}
-`;
+    padding:
+      ${card.padding.top}px 
+      ${card.padding.right}px 
+      ${card.padding.bottom}px 
+      ${card.padding.left}px;
 
-const Card = ({ children, ...rest }) => (
-  <CardContainer {...rest}>{children}</CardContainer>
+    border-radius: ${card.radii}px;
+    background-color: ${card.background};
+    box-shadow: ${card.elevation};
+    elevation: 4;
+`,
 );
 
-Card.propTypes = {
-  children: node,
-};
+const Card = ({ ...rest }) => <CardStyled {...rest} />;
 
-Card.defaultProps = {
-  children: 'Card',
-};
+Card.displayName = 'Card';
 
 export default Card;

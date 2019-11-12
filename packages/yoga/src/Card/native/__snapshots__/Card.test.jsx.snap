@@ -17,7 +17,6 @@ exports[`<Card /> should match snapshot Plan Card with selected boolean prop 1`]
         Object {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 8,
-          "display": "flex",
           "elevation": 4,
           "flexDirection": "column",
           "justifyContent": "flex-start",
@@ -50,7 +49,6 @@ exports[`<Card /> should match snapshot Plan Card with selected boolean prop 1`]
             Object {
               "alignContent": "center",
               "alignItems": "center",
-              "display": "flex",
               "flexDirection": "row",
               "justifyContent": "space-between",
               "position": "relative",
@@ -63,12 +61,9 @@ exports[`<Card /> should match snapshot Plan Card with selected boolean prop 1`]
         }
       >
         <View
-          ribbon={null}
           style={
             Array [
               Object {
-                "display": "flex",
-                "flexBasis": "100%",
                 "flexDirection": "row",
                 "flexWrap": "wrap",
               },
@@ -125,10 +120,8 @@ exports[`<Card /> should match snapshot Plan Card with selected boolean prop 1`]
             Object {
               "alignContent": "center",
               "alignItems": "center",
-              "display": "flex",
               "flexDirection": "row",
               "flexWrap": "wrap",
-              "justifyContent": "space-between",
             },
             Object {
               "marginTop": 20,
@@ -173,7 +166,6 @@ exports[`<Card /> should match snapshot with default Card 1`] = `
         Object {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 8,
-          "display": "flex",
           "elevation": 4,
           "flexDirection": "column",
           "justifyContent": "flex-start",
@@ -194,7 +186,7 @@ exports[`<Card /> should match snapshot with default Card 1`] = `
     }
   >
     <Text>
-      Teste
+      Hello World
     </Text>
   </View>
 </View>

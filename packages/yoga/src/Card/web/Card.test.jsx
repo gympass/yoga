@@ -19,7 +19,7 @@ describe('<Card />', () => {
     const { container } = render(
       <ThemeProvider>
         <Card>
-          <h1>olá mundo</h1>
+          <h1>Hello World</h1>
         </Card>
       </ThemeProvider>,
     );

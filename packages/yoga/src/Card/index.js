@@ -1,10 +1,7 @@
-import Card from './web/Card';
-import CardFooter from './web/CardFooter';
-import CardHeader from './web/CardHeader';
-import Plan from './web/Plan';
+import { Card, Footer, Header, Plan } from './web';
 
-Card.Footer = CardFooter;
-Card.Header = CardHeader;
+Card.Footer = Footer;
+Card.Header = Header;
 Card.Plan = Plan;
 
 export default Card;

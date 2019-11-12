@@ -255,18 +255,34 @@ const BaseTheme = ({ primary, secondary }) => {
       },
     },
     card: {
-      padding: spacing.medium,
+      background: colors.white,
+      padding: {
+        top: spacing.medium,
+        right: spacing.medium,
+        bottom: spacing.medium,
+        left: spacing.medium,
+      },
       radii: radii.rounded,
       elevation: elevations.small,
       header: {
         ribbon: {
+          background: {
+            primary: colors.primary[1],
+            secondary: colors.secondary[1],
+          },
+          color: {
+            primary: colors.primary[3],
+            secondary: colors.secondary[3],
+          },
           padding: {
-            x: spacing.xsmall,
-            y: spacing.medium,
+            top: spacing.xsmall,
+            right: spacing.medium,
+            bottom: spacing.xsmall,
+            left: spacing.medium,
           },
           radii: {
-            topLeft: 16,
-            bottomLeft: 16,
+            topLeft: radii.circle,
+            bottomLeft: radii.circle,
           },
           font: {
             size: fontSizes[1],
@@ -278,13 +294,13 @@ const BaseTheme = ({ primary, secondary }) => {
         background: {
           selected: colors.secondary[3],
         },
-        color: {
-          selected: colors.white,
-        },
         title: {
           font: {
             size: fontSizes[1],
             color: colors.gray[4],
+            selected: {
+              color: colors.white,
+            },
           },
         },
         price: {
@@ -292,15 +308,21 @@ const BaseTheme = ({ primary, secondary }) => {
             size: fontSizes[7],
             weight: fontWeights.bold,
             color: colors.black,
+            selected: {
+              color: colors.white,
+            },
           },
         },
         period: {
           font: {
             size: fontSizes[1],
+            color: colors.gray[4],
             padding: {
               top: spacing.xxsmall,
             },
-            color: colors.gray[4],
+            selected: {
+              color: colors.white,
+            },
           },
         },
         gymsQuantity: {
@@ -308,6 +330,9 @@ const BaseTheme = ({ primary, secondary }) => {
             size: fontSizes[2],
             weight: fontWeights.bold,
             color: colors.secondary[3],
+            selected: {
+              color: colors.white,
+            },
           },
         },
       },
