@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Card } from '@gympass/yoga';
-import { Text, View } from 'react-native';
+import { Text } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 const StyledText = styled.Text`
@@ -12,7 +12,6 @@ const StyledText = styled.Text`
 `;
 
 const CardPage = () => {
-  const [cardSelected, setCardSelected] = useState(true);
   return (
     <ScrollView
       style={{
@@ -35,40 +34,6 @@ const CardPage = () => {
         </Text>
         <Text>This is just a simple card</Text>
       </Card>
-
-      <StyledText>Card for Plans</StyledText>
-
-      <View
-        style={{
-          display: 'flex',
-          width: '100%',
-          flexDirection: 'row',
-          flexWrap: 'wrap',
-          justifyContent: 'space-around',
-        }}
-      >
-        <Card.Plan
-          plan={{
-            name: 'Basic',
-            price: 'U$ 19.90',
-            period: 'month',
-            gyms: '13,290',
-          }}
-          ribbon={{ label: 'Choose' }}
-          style={{ width: 170 }}
-        ></Card.Plan>
-        <Card.Plan
-          selected={cardSelected}
-          plan={{
-            name: 'Platinum',
-            price: 'U$ 29.90',
-            period: 'month',
-            gyms: '1,239',
-          }}
-          onPress={() => setCardSelected(!cardSelected)}
-          style={{ width: 170 }}
-        ></Card.Plan>
-      </View>
     </ScrollView>
   );
 };
