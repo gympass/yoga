@@ -3,13 +3,11 @@ import { node, shape, string, bool } from 'prop-types';
 import styled from 'styled-components';
 
 const CardHeaderWrapper = styled.div`
-  position: relative;
   display: flex;
   width: 100%;
   flex-direction: row;
   align-content: center;
   align-items: center;
-  justify-content: space-between;
 `;
 
 const HeaderContent = styled.div`
@@ -27,7 +25,7 @@ const Ribbon = styled.div(
   }) => `
     position: absolute;
     flex-wrap: wrap;
-    right: -16px;
+    right: 0;
     padding:
       ${card.header.ribbon.padding.top}px
       ${card.header.ribbon.padding.right}px

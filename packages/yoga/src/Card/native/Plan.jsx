@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { TouchableOpacity } from 'react-native';
 import Card from './Card';
 
-const CardPlanWrapper = styled(Card)(
+const CardPlanWrapper = styled(TouchableOpacity)(
   ({
     selected,
     theme: {
@@ -82,24 +82,18 @@ const GymsQuantity = styled.Text(
 `,
 );
 
-const CardPlan = ({ plan, selected, ribbon, ...rest }) => {
-  return (
-    <CardPlanWrapper selected={selected} {...rest}>
-      <TouchableOpacity testID="touchable" {...rest}>
-        <Card.Header ribbon={ribbon} style={{ marginBottom: 40 }}>
-          <Title selected={selected}>{plan.name}</Title>
-        </Card.Header>
-        <Price selected={selected}>{plan.price}</Price>
-        <Period selected={selected}>/{plan.period}</Period>
-        <Card.Footer style={{ marginTop: 20 }}>
-          <GymsQuantity selected={selected}>{plan.gyms} gyms</GymsQuantity>
-        </Card.Footer>
-      </TouchableOpacity>
-    </CardPlanWrapper>
-  );
-};
-
-CardPlan.displayName = 'Card.Plan';
+const CardPlan = ({ plan, selected, ribbon, ...rest }) => (
+  <CardPlanWrapper as={Card} selected={selected} {...rest}>
+    <Card.Header ribbon={ribbon} style={{ marginBottom: 40 }}>
+      <Title selected={selected}>{plan.name}</Title>
+    </Card.Header>
+    <Price selected={selected}>{plan.price}</Price>
+    <Period selected={selected}>/{plan.period}</Period>
+    <Card.Footer style={{ marginTop: 20 }}>
+      <GymsQuantity selected={selected}>{plan.gyms} gyms</GymsQuantity>
+    </Card.Footer>
+  </CardPlanWrapper>
+);
 
 CardPlan.propTypes = {
   selected: bool,
