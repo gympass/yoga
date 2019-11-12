@@ -15,7 +15,8 @@
     "import/no-cycle": 0,
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": [2, { "ignore": ["theme"] }],
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
+    "no-plusplus": 0
   },
   "globals": {
     "window": true,
