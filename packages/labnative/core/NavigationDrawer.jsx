@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Image, TouchableOpacity } from 'react-native';
+import { func } from 'prop-types';
 import hamburguer from '../assets/images/drawer.png';
 
 const NavigationDrawer = ({ toggleDrawer }) => (
@@ -12,5 +13,9 @@ const NavigationDrawer = ({ toggleDrawer }) => (
     </TouchableOpacity>
   </View>
 );
+
+NavigationDrawer.propTypes = {
+  toggleDrawer: func.isRequired,
+};
 
 export default NavigationDrawer;
