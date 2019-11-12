@@ -41,13 +41,9 @@
   },
   "devDependencies": {
     "@testing-library/react": "^9.1.4",
-    "@testing-library/react-native": "^4.1.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-native": "0.60.5"
+    "@testing-library/react-native": "^4.1.0"
   },
   "peerDependencies": {
-    "react": "^16.9.0",
     "styled-components": "^4.4.0"
   }
 }
