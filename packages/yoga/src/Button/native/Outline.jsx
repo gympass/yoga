@@ -106,20 +106,10 @@ const ButtonContainerOutline = styled(ButtonContainer)`
   `}
 `;
 
-const ButtonOutline = ({
-  children,
-  full,
-  disabled,
-  small,
-  pressed,
-  inverted,
-  ...rest
-}) => (
+const ButtonOutline = ({ children, disabled, pressed, inverted, ...rest }) => (
   <ButtonContainerOutline
     {...rest}
-    full={full}
     disabled={disabled}
-    small={small}
     pressed={pressed}
     inverted={inverted}
   >
@@ -128,5 +118,8 @@ const ButtonOutline = ({
     </LabelOutline>
   </ButtonContainerOutline>
 );
+
+ButtonOutline.propTypes = ButtonContainer.propTypes;
+ButtonOutline.defaultProps = ButtonContainer.defaultProps;
 
 export default withTouchable(ButtonOutline);

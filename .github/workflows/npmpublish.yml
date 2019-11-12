@@ -7,6 +7,7 @@ on:
 
 jobs:
   build-and-publish:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -24,6 +25,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Install dependencies
         run: yarn
+      - name: Lint
+        run: yarn lint:all
       - name: Test
         run: yarn test
       - name: Build

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent, toJSON } from '@testing-library/react-native';
 
-import Checkbox from '../';
+import Checkbox from '..';
 import ThemeProvider from '../../ThemeProvider';
 
 jest.useFakeTimers();
