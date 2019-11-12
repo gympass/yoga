@@ -7,7 +7,7 @@ import * as Pages from '../pages';
 
 const drawerOptions = {};
 
-Object.entries(Pages).map(([name, Page]) => {
+Object.entries(Pages).forEach(([name, Page]) => {
   const navigator = createStackNavigator({
     [name]: {
       screen: props => (
@@ -21,6 +21,7 @@ Object.entries(Pages).map(([name, Page]) => {
       }),
     },
   });
+
   drawerOptions[name] = {
     screen: navigator,
     navigationOptions: {
