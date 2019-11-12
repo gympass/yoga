@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 
@@ -105,9 +107,7 @@ describe('<RadioGroup />', () => {
         );
 
         const radios = getAllByTestId('radio');
-        radios.map(radio => {
-          expect(radio.name).toBe(name);
-        });
+        radios.map(radio => expect(radio.name).toBe(name));
       });
     });
 

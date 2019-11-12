@@ -86,9 +86,9 @@ describe('<RadioGroup />', () => {
       expect(container).toMatchSnapshot();
 
       // use testid to get the input[type=radio] instead of label
-      getAllByTestId(/^Option/).map(radio => {
-        expect(radio.name).toBe(groupName);
-      });
+      getAllByTestId(/^Option/).map(radio =>
+        expect(radio.name).toBe(groupName),
+      );
     });
   });
 });
