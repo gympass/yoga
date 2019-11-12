@@ -14,7 +14,8 @@
     "prettier/prettier": "error",
     "import/no-cycle": 0,
     "react/jsx-props-no-spreading": "off",
-    "react/prop-types": [2, { "ignore": ["theme"] }]
+    "react/prop-types": [2, { "ignore": ["theme"] }],
+    "import/no-extraneous-dependencies": 0
   },
   "globals": {
     "window": true,
