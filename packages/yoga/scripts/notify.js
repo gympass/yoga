@@ -8,11 +8,11 @@ const slackWebHook = process.env.SLACK_WEBHOOK_URL;
 const releaseNotification = {
   username: 'Yoga',
   text:
-    'A new version has been released! <https://github.com/Gympass/yoga/releases|Check it out!> :tada:',
-  icon_emoji: ':yoga_ds:',
+    'A new <https://github.com/Gympass/yoga/releases|version> has been released! <https://gympass.github.io/yoga|Check it out!> :tada:',
+  icon_emoji: ':yoga-ds:',
   attachments: [
     {
-      color: `#F46152`,
+      color: '#F46152',
       fields: [
         {
           title: 'Version',
@@ -59,7 +59,8 @@ async function notify() {
 
   console.log('Sending slack message...');
   try {
-    await sendSlackMessage(slackWebHook, releaseNotification);
+    const notification = JSON.stringify(releaseNotification);
+    await sendSlackMessage(slackWebHook, notification);
     console.log('Notification sent');
   } catch (e) {
     console.error('There was an error sending Slack notification', e);
