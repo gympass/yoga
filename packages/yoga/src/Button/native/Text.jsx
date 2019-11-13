@@ -74,18 +74,15 @@ const ButtonContainerText = styled(ButtonContainer)`
   `}
 `;
 
-const ButtonText = ({ children, full, disabled, small, pressed, ...rest }) => (
-  <ButtonContainerText
-    {...rest}
-    full={full}
-    disabled={disabled}
-    small={small}
-    pressed={pressed}
-  >
+const ButtonText = ({ children, disabled, pressed, ...rest }) => (
+  <ButtonContainerText {...rest} disabled={disabled} pressed={pressed}>
     <LabelText disabled={disabled} pressed={pressed}>
       {children}
     </LabelText>
   </ButtonContainerText>
 );
+
+ButtonText.propTypes = ButtonContainer.propTypes;
+ButtonText.defaultProps = ButtonContainer.defaultProps;
 
 export default withTouchable(ButtonText);

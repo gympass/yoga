@@ -25,6 +25,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Install dependencies
         run: yarn
+      - name: Lint
+        run: yarn lint:all
       - name: Test
         run: yarn test
       - name: Build

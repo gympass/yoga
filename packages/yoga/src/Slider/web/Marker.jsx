@@ -55,7 +55,7 @@ const Marker = ({ values, dragging, index, tooltip, ...props }) => {
 
 Marker.propTypes = {
   values: arrayOf(number),
-  'data-dragging': bool,
+  dragging: bool,
   index: number,
   tooltip: arrayOf(
     shape({
