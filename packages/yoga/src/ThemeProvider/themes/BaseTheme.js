@@ -254,6 +254,24 @@ const BaseTheme = ({ primary, secondary }) => {
         color: colors.gray[2],
       },
     },
+    checkbox: {
+      width: spacing.xlarge,
+      height: spacing.xlarge,
+      border: {
+        width: borders.medium,
+        color: colors.primary[3],
+        radii: 4,
+      },
+      checked: {
+        background: colors.primary[3],
+      },
+      disabled: {
+        background: colors.gray[3],
+        border: {
+          color: colors.gray[3],
+        },
+      },
+    },
   };
 
   return { components, baseFontSize, colors, spacing };

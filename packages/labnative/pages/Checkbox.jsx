@@ -16,7 +16,7 @@ const SwitchWrapper = styled.View`
   align-items: center;
 `;
 
-const SwitchPage = () => {
+const CheckboxPage = () => {
   const [checked, setChecked] = useState(true);
   return (
     <View
@@ -26,25 +26,22 @@ const SwitchPage = () => {
     >
       <StyledText>Disabled</StyledText>
       <SwitchWrapper>
-        <Checkbox.Switch disabled />
+        <Checkbox disabled />
       </SwitchWrapper>
       <StyledText>Unchecked</StyledText>
       <SwitchWrapper>
-        <Checkbox.Switch checked={false} />
+        <Checkbox checked={false} />
       </SwitchWrapper>
       <StyledText>Checked</StyledText>
       <SwitchWrapper>
-        <Checkbox.Switch checked />
+        <Checkbox checked />
       </SwitchWrapper>
       <StyledText>Working</StyledText>
       <SwitchWrapper>
-        <Checkbox.Switch
-          checked={checked}
-          onChange={() => setChecked(!checked)}
-        />
+        <Checkbox checked={checked} onChange={() => setChecked(!checked)} />
       </SwitchWrapper>
     </View>
   );
 };
 
-export default SwitchPage;
+export default CheckboxPage;
