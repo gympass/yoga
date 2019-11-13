@@ -5,14 +5,12 @@ import styled from 'styled-components';
 const CardHeaderWrapper = styled.div`
   display: flex;
   width: 100%;
-  flex-direction: row;
   align-content: center;
   align-items: center;
 `;
 
 const HeaderContent = styled.div`
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
 `;
 

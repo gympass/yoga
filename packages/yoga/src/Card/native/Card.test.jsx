@@ -31,7 +31,6 @@ describe('<Card />', () => {
 
   describe.skip('Card Plan Tests', () => {
     it('should match texts with Plan Card', () => {
-      console.log(CardPlan);
       const { getByText } = render(
         <ThemeProvider>
           <Card.Plan plan={data.plan} />
