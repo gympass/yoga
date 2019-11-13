@@ -17,7 +17,7 @@ const CardStyled = styled.View(
       ${card.padding.left}px;
 
     border-radius: ${card.radii}px;
-    background-color: ${card.background};
+    background-color: ${card.backgroundColor};
     box-shadow: ${card.elevation};
     elevation: 4;
 `,
