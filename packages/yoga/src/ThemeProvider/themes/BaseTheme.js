@@ -254,6 +254,17 @@ const BaseTheme = ({ primary, secondary }) => {
         color: colors.gray[2],
       },
     },
+    card: {
+      backgroundColor: colors.white,
+      padding: {
+        top: spacing.medium,
+        right: spacing.medium,
+        bottom: spacing.medium,
+        left: spacing.medium,
+      },
+      radii: radii.rounded,
+      elevation: elevations.small,
+    },
   };
 
   return { components, baseFontSize, colors, spacing };
