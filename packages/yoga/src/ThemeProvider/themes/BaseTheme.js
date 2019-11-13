@@ -255,7 +255,7 @@ const BaseTheme = ({ primary, secondary }) => {
       },
     },
     card: {
-      background: colors.white,
+      backgroundColor: colors.white,
       padding: {
         top: spacing.medium,
         right: spacing.medium,
