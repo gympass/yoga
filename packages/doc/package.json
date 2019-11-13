@@ -49,7 +49,7 @@
     "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop -o",
     "serve": "gatsby serve",
-    "deploy": "gh-pages -d public"
+    "publish": "gh-pages -d public"
   },
   "gitHead": "14873124d2c36e250c9fe2a5e9601b0f2c5efda1"
 }
