@@ -96,10 +96,10 @@ const CheckboxSwitch = ({
   const thumbFrom = thumbLeft;
 
   useEffect(() => {
-    const toggle = (checked, position) => {
+    const toggle = (isChecked, position) => {
       const animValue = {
-        fromValue: checked ? 0 : 1,
-        toValue: checked ? 1 : 0,
+        fromValue: isChecked ? 0 : 1,
+        toValue: isChecked ? 1 : 0,
         duration: 100,
       };
       Animated.timing(position, animValue).start();

@@ -78,10 +78,10 @@ const CenteredView = props => {
                 <Picker
                   selectedValue={themed.label}
                   style={{ width: '100%' }}
-                  onValueChange={theme => {
+                  onValueChange={selectedTheme => {
                     setThemed(
                       themeChoices[
-                        themeChoices.findIndex(t => t.value === theme)
+                        themeChoices.findIndex(t => t.value === selectedTheme)
                       ],
                     );
                   }}
