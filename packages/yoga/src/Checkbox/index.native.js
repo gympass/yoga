@@ -1,6 +1,4 @@
-import Switch from './native/Switch';
-
-const Checkbox = {};
+import { Checkbox, Switch } from './native';
 
 Checkbox.Switch = Switch;
 
