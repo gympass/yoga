@@ -1,5 +1,5 @@
 import React from 'react';
-import { bool, shape, string, func } from 'prop-types';
+import { bool, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { TouchableOpacity } from 'react-native';
 import Card from './Card';
@@ -11,7 +11,7 @@ const CardPlanWrapper = styled(TouchableOpacity)(
       components: { card },
     },
   }) => `
-  ${selected && `background-color: ${card.plan.background.selected};`}
+  ${selected ? `background-color: ${card.plan.background.selected};` : ``}
 `,
 );
 
@@ -107,13 +107,11 @@ CardPlan.propTypes = {
     label: string,
     secondary: bool,
   }),
-  onPress: func,
 };
 
 CardPlan.defaultProps = {
   selected: false,
   ribbon: null,
-  onPress: () => {},
 };
 
 export default CardPlan;

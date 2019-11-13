@@ -20,7 +20,7 @@ const CardPage = () => {
         padding: 10,
       }}
     >
-      <StyledText>Card simple</StyledText>
+      <StyledText>Simple Card</StyledText>
       <Card>
         <Text
           style={{

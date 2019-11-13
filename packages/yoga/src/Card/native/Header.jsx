@@ -5,14 +5,12 @@ import styled from 'styled-components';
 const CardHeaderWrapper = styled.View`
   position: relative;
   width: 100%;
-  flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: space-between;
 `;
 
 const HeaderContent = styled.View`
-  flex-direction: row;
   flex-wrap: wrap;
 `;
 
