@@ -10,7 +10,8 @@
     "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
     "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
     "prebuild": "rm -rf ./dist",
-    "prepublishOnly": "node ../../prepublish.js"
+    "prepublishOnly": "node ../../prepublish.js",
+    "postpublish": "node scripts/notify.js"
   },
   "keywords": [
     "Gympass",
