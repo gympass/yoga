@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/Gympass/design-system/compare/@gympass/yoga-doc@0.4.0...@gympass/yoga-doc@0.4.1) (2019-11-13)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
 # [0.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.3.0...@gympass/yoga-doc@0.4.0) (2019-11-08)
 
 ### Bug Fixes
