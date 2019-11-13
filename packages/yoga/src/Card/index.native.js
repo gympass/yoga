@@ -1,6 +1,3 @@
-import { Card, Footer, Header } from './native';
-
-Card.Footer = Footer;
-Card.Header = Header;
+import Card from './native';
 
 export default Card;

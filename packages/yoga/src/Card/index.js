@@ -1,6 +1,3 @@
-import { Card, Footer, Header } from './web';
-
-Card.Footer = Footer;
-Card.Header = Header;
+import Card from './web';
 
 export default Card;
