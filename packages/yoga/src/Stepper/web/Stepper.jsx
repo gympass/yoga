@@ -2,13 +2,14 @@ import React from 'react';
 import { node, number, checkPropTypes } from 'prop-types';
 import styled from 'styled-components';
 
-import Content from './Content';
 import Dots from './Dots';
 import Line from './Line';
 
 const Wrapper = styled.div(
   ({ theme: { spacing } }) => `
   width: 100%;
+  height: 46px;
+
   padding: 0 ${spacing.xxlarge}px;
 `,
 );
@@ -25,7 +26,7 @@ const Stepper = ({ children, activeStep, ...rest }) => (
         labels={React.Children.map(children, child => child.props.label)}
       />
     </Wrapper>
-    <Content activeStep={activeStep}>{children}</Content>
+    {children[activeStep]}
   </div>
 );
 

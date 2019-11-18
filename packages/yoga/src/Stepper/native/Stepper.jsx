@@ -3,7 +3,6 @@ import { View } from 'react-native';
 import { node, number, checkPropTypes } from 'prop-types';
 import styled from 'styled-components';
 
-import Content from './Content';
 import Line from './Line';
 import Dots from './Dots';
 
@@ -26,7 +25,7 @@ const Stepper = ({ children, activeStep, ...rest }) => (
         labels={React.Children.map(children, child => child.props.label)}
       />
     </Wrapper>
-    <Content activeStep={activeStep}>{children}</Content>
+    {children[activeStep]}
   </View>
 );
 
