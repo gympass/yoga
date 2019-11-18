@@ -20,6 +20,8 @@ const BaseTheme = ({ primary, secondary }) => {
     gray: tokenColors.gray,
     white: tokenColors.white,
     dark: tokenColors.dark,
+    positive: tokenColors.positive,
+    negative: tokenColors.negative,
   };
 
   const components = {
@@ -262,13 +264,42 @@ const BaseTheme = ({ primary, secondary }) => {
         color: colors.primary[3],
         radii: 4,
       },
+      label: {
+        padding: {
+          left: spacing.xsmall,
+        },
+        font: {
+          size: fontSizes[2],
+          color: colors.dark,
+        },
+      },
+      helper: {
+        margin: {
+          top: spacing.xxsmall,
+        },
+        font: {
+          size: fontSizes[2],
+          color: colors.gray[3],
+        },
+        selected: {
+          font: {
+            color: colors.negative[1],
+          },
+        },
+      },
       checked: {
-        background: colors.primary[3],
+        backgroundColor: colors.primary[3],
       },
       disabled: {
-        background: colors.gray[3],
+        backgroundColor: colors.gray[3],
         border: {
           color: colors.gray[3],
+        },
+      },
+      error: {
+        backgroundColor: colors.negative[1],
+        border: {
+          color: colors.negative[1],
         },
       },
     },
