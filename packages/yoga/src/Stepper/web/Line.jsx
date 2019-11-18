@@ -9,19 +9,22 @@ const Line = styled.div(
       components: { stepper },
     },
   }) => `
-  width: 100%;
-  height: 4px;
-  background-color: ${stepper.line.backgroundColor.inactive};
-
-  &:after {
-    background-color: ${stepper.line.backgroundColor.active};
-    content: '';
-    display: block;
-    width: ${activeStep <= 0 ? 0 : (activeStep / totalSteps) * 100}%;
+    width: 100%;
     height: 4px;
-    transition: width 0.3s;
-  }
-`,
+
+    background-color: ${stepper.line.backgroundColor.inactive};
+
+    &:after {
+      display: block;
+      content: '';
+
+      width: ${activeStep <= 0 ? 0 : (activeStep / totalSteps) * 100}%;
+      height: 4px;
+      
+      background-color: ${stepper.line.backgroundColor.active};
+      transition: width 0.3s;
+    }
+  `,
 );
 
 Line.propTypes = {

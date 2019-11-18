@@ -1,7 +1,8 @@
 import React from 'react';
-import { node, number, checkPropTypes } from 'prop-types';
+import { node } from 'prop-types';
 import styled from 'styled-components';
 
+import customPropType from '../customPropType';
 import Dots from './Dots';
 import Line from './Line';
 
@@ -34,19 +35,7 @@ Stepper.displayName = 'Stepper';
 
 Stepper.propTypes = {
   children: node.isRequired,
-  activeStep: (props, propName, componentName) => {
-    const { children, [propName]: activeStep } = props;
-
-    checkPropTypes({ [propName]: number }, props, 'prop', componentName);
-
-    if (activeStep > children.length - 1) {
-      return new Error(
-        `Invalid prop "${propName}" supplied to "${componentName}". "${propName}" must be smaller or equal the number of children.`,
-      );
-    }
-
-    return null;
-  },
+  activeStep: customPropType,
 };
 
 Stepper.defaultProps = {
