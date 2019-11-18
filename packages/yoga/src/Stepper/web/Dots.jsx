@@ -60,7 +60,8 @@ const DotWrapper = styled.div(
             ? stepper.dot.backgroundColor.active
             : stepper.dot.backgroundColor.inactive
         };
-        margin-top: -10px;
+        position: absolute;
+        top: -10px;
       }
     `;
   },
