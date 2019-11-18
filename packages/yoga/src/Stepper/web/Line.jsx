@@ -17,7 +17,7 @@ const Line = styled.div(
     background-color: ${stepper.line.backgroundColor.active};
     content: '';
     display: block;
-    width: ${activeStep <= 0 ? 0 : (activeStep / (totalSteps - 1)) * 100}%;
+    width: ${activeStep <= 0 ? 0 : (activeStep / totalSteps) * 100}%;
     height: 4px;
     transition: width 0.3s;
   }
