@@ -38,9 +38,11 @@ const DotWrapper = styled.div(
       components: { stepper },
     },
   }) => {
-    const active = index <= activeStep;
+    const active = typeof activeStep !== 'number' ? false : index <= activeStep;
 
     return `
+      width: 15px;
+      
       position: relative;
 
       text-align: center;
@@ -51,7 +53,7 @@ const DotWrapper = styled.div(
         };
         position: absolute;
         left: 50%;
-        top: 20px;
+        top: 10px;
       }
 
       ${Dot} {

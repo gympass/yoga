@@ -2,6 +2,9 @@ import React from 'react';
 import { number, arrayOf, string } from 'prop-types';
 import styled from 'styled-components';
 
+const activeDot = (index, activeStep) =>
+  typeof activeStep !== 'number' ? false : index <= activeStep;
+
 const Dot = styled.View(
   ({
     index,
@@ -18,7 +21,7 @@ const Dot = styled.View(
   border-radius: ${stepper.dot.radius}px;
 
   background-color: ${
-    index <= activeStep
+    activeDot(index, activeStep)
       ? stepper.dot.backgroundColor.active
       : stepper.dot.backgroundColor.inactive
   };
@@ -35,14 +38,14 @@ const Label = styled.Text(
   }) => `
   width: 95px;
 
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: -40px;
 
   font-size: ${stepper.label.font.size}px;
   font-weight: ${stepper.label.font.weight};
 
   color: ${
-    index <= activeStep
+    activeDot(index, activeStep)
       ? stepper.label.color.active
       : stepper.label.color.inactive
   };
