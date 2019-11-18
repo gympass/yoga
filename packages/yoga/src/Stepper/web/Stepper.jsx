@@ -18,7 +18,7 @@ const Stepper = ({ children, activeStep, ...rest }) => (
     <Wrapper>
       <Line
         activeStep={activeStep}
-        totalSteps={React.Children.count(children)}
+        totalSteps={React.Children.count(children) - 1}
       />
       <Dots
         activeStep={activeStep}
