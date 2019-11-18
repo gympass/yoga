@@ -31,15 +31,25 @@ const BaseTheme = ({ primary, secondary }) => {
         },
       },
       dot: {
+        radius: radii.circle,
         backgroundColor: {
           active: colors.primary[3],
           inactive: colors.gray[2],
         },
       },
       label: {
+        font: {
+          size: fontSizes[1],
+          weight: fontWeights.bold,
+        },
         color: {
           active: colors.primary[3],
-          inacvite: colors.gray[3],
+          inactive: colors.gray[3],
+        },
+      },
+      content: {
+        margin: {
+          top: spacing.huge,
         },
       },
     },
