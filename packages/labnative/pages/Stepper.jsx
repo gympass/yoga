@@ -21,9 +21,6 @@ const StepperPage = () => {
         <Stepper.Step label="Check-in">
           <Text>Check-in Content</Text>
         </Stepper.Step>
-        <Stepper.Step label="Check-in">
-          <Text>Check-in Content</Text>
-        </Stepper.Step>
       </Stepper>
     </StyledView>
   );
