@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.2.0...@gympass/yoga-tokens@0.2.1) (2019-11-13)
+
+### Bug Fixes
+
+- **tokens/package:** adding yoga-common dependency ([21563c4](https://github.com/Gympass/yoga/commit/21563c40b3106cc329c50f43f6ff8b0bfd3faf01))
+
 # [0.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.1.0...@gympass/yoga-tokens@0.2.0) (2019-11-08)
 
 ### Features

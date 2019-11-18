@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Gympass component library",
   "main": "./src",
   "sideEffects": false,
@@ -10,7 +10,8 @@
     "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
     "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
     "prebuild": "rm -rf ./dist",
-    "prepublishOnly": "node ../../prepublish.js"
+    "prepublishOnly": "node ../../prepublish.js",
+    "postpublish": "node scripts/notify.js"
   },
   "keywords": [
     "Gympass",
@@ -34,7 +35,7 @@
   },
   "dependencies": {
     "@gympass/yoga-common": "^0.1.0",
-    "@gympass/yoga-tokens": "^0.2.0",
+    "@gympass/yoga-tokens": "^0.2.1",
     "@ptomasroos/react-native-multi-slider": "^1.0.0",
     "prop-types": "^15.7.2",
     "rc-slider": "^8.7.1"
