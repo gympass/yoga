@@ -10,7 +10,7 @@ const StyledText = styled.Text`
   text-align: center;
 `;
 
-const SwitchWrapper = styled.View`
+const CheckboxWrapper = styled.View`
   margin-bottom: 10px;
   text-align: center;
   align-items: center;
@@ -25,21 +25,34 @@ const CheckboxPage = () => {
       }}
     >
       <StyledText>Disabled</StyledText>
-      <SwitchWrapper>
-        <Checkbox disabled />
-      </SwitchWrapper>
+      <CheckboxWrapper>
+        <Checkbox disabled label="Checkbox Label" helper="Checkbox Helper" />
+      </CheckboxWrapper>
       <StyledText>Unchecked</StyledText>
-      <SwitchWrapper>
-        <Checkbox checked={false} />
-      </SwitchWrapper>
+      <CheckboxWrapper>
+        <Checkbox
+          checked={false}
+          label="Checkbox Label"
+          helper="Checkbox Helper"
+        />
+      </CheckboxWrapper>
       <StyledText>Checked</StyledText>
-      <SwitchWrapper>
-        <Checkbox checked />
-      </SwitchWrapper>
+      <CheckboxWrapper>
+        <Checkbox checked label="Checkbox Label" helper="Checkbox Helper" />
+      </CheckboxWrapper>
+      <StyledText>Error</StyledText>
+      <CheckboxWrapper>
+        <Checkbox error label="Checkbox Label" helper="Checkbox Helper" />
+      </CheckboxWrapper>
       <StyledText>Working</StyledText>
-      <SwitchWrapper>
-        <Checkbox checked={checked} onChange={() => setChecked(!checked)} />
-      </SwitchWrapper>
+      <CheckboxWrapper>
+        <Checkbox
+          checked={checked}
+          label="Checkbox Label"
+          helper="Checkbox Helper"
+          onChange={() => setChecked(!checked)}
+        />
+      </CheckboxWrapper>
     </View>
   );
 };
