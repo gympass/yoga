@@ -2,17 +2,19 @@ import React from 'react';
 import { number, arrayOf, string } from 'prop-types';
 import styled from 'styled-components';
 
+import activeDot from '../activeDot';
+
 const Dot = styled.div(
   ({
     theme: {
       components: { stepper },
     },
   }) => `
-  width: 15px;
-  height: 15px;
+    width: 15px;
+    height: 15px;
 
-  border-radius: ${stepper.dot.radius}px;
-`,
+    border-radius: ${stepper.dot.radius}px;
+  `,
 );
 
 const Label = styled.span(
@@ -21,13 +23,13 @@ const Label = styled.span(
       components: { stepper },
     },
   }) => `
-  width: 95px;
+    width: 95px;
 
-  font-size: ${stepper.label.font.size}px;
-  font-weight: ${stepper.label.font.weight};
+    font-size: ${stepper.label.font.size}px;
+    font-weight: ${stepper.label.font.weight};
 
-  transform: translateX(-50%);
-`,
+    transform: translateX(-50%);
+  `,
 );
 
 const DotWrapper = styled.div(
@@ -37,36 +39,35 @@ const DotWrapper = styled.div(
     theme: {
       components: { stepper },
     },
-  }) => {
-    const active = typeof activeStep !== 'number' ? false : index <= activeStep;
+  }) => `
+    position: relative;
+    width: 15px;
 
-    return `
-      width: 15px;
-      
-      position: relative;
+    text-align: center;
 
-      text-align: center;
+    ${Label} {
+      position: absolute;
+      left: 50%;
+      top: 10px;
 
-      ${Label} {
-        color: ${
-          active ? stepper.label.color.active : stepper.label.color.inactive
-        };
-        position: absolute;
-        left: 50%;
-        top: 10px;
-      }
+      color: ${
+        activeDot(index, activeStep)
+          ? stepper.label.color.active
+          : stepper.label.color.inactive
+      };
+    }
 
-      ${Dot} {
-        background-color: ${
-          active
-            ? stepper.dot.backgroundColor.active
-            : stepper.dot.backgroundColor.inactive
-        };
-        position: absolute;
-        top: -10px;
-      }
-    `;
-  },
+    ${Dot} {
+      position: absolute;
+      top: -10px;
+
+      background-color: ${
+        activeDot(index, activeStep)
+          ? stepper.dot.backgroundColor.active
+          : stepper.dot.backgroundColor.inactive
+      };
+    }
+  `,
 );
 
 const Wrapper = styled.div`

@@ -2,8 +2,16 @@ import React from 'react';
 import { number, arrayOf, string } from 'prop-types';
 import styled from 'styled-components';
 
-const activeDot = (index, activeStep) =>
-  typeof activeStep !== 'number' ? false : index <= activeStep;
+import activeDot from '../activeDot';
+
+const Wrapper = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const DotWrapper = styled.View`
+  width: 15px;
+`;
 
 const Dot = styled.View(
   ({
@@ -13,19 +21,18 @@ const Dot = styled.View(
       components: { stepper },
     },
   }) => `
-  width: 15px;
-  height: 15px;
+    width: 15px;
+    height: 15px;
 
-  margin-top: -6px;
+    margin-top: -6px;
 
-  border-radius: ${stepper.dot.radius}px;
-
-  background-color: ${
-    activeDot(index, activeStep)
-      ? stepper.dot.backgroundColor.active
-      : stepper.dot.backgroundColor.inactive
-  };
-`,
+    border-radius: ${stepper.dot.radius}px;
+    background-color: ${
+      activeDot(index, activeStep)
+        ? stepper.dot.backgroundColor.active
+        : stepper.dot.backgroundColor.inactive
+    };
+  `,
 );
 
 const Label = styled.Text(
@@ -36,36 +43,26 @@ const Label = styled.Text(
       components: { stepper },
     },
   }) => `
-  width: 95px;
+    width: 95px;
+    margin-top: 10px;
+    margin-left: -40px;
 
-  margin-top: 10px;
-  margin-left: -40px;
+    color: ${
+      activeDot(index, activeStep)
+        ? stepper.label.color.active
+        : stepper.label.color.inactive
+    };
 
-  font-size: ${stepper.label.font.size}px;
-  font-weight: ${stepper.label.font.weight};
-
-  color: ${
-    activeDot(index, activeStep)
-      ? stepper.label.color.active
-      : stepper.label.color.inactive
-  };
-  text-align: center;
-`,
+    font-size: ${stepper.label.font.size}px;
+    font-weight: ${stepper.label.font.weight};
+    text-align: center;
+  `,
 );
-
-const DotWrapper = styled.View`
-  width: 15px;
-`;
-
-const Wrapper = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
-`;
 
 const Dots = ({ activeStep, labels }) => (
   <Wrapper>
     {labels.map((label, index) => (
-      <DotWrapper index={index} activeStep={activeStep} key={label}>
+      <DotWrapper key={label}>
         <Dot index={index} activeStep={activeStep} />
         <Label index={index} activeStep={activeStep}>
           {label}
