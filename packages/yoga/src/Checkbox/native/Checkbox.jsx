@@ -1,98 +1,113 @@
-import React from 'react';
-import { bool, func } from 'prop-types';
+import React, { useState } from 'react';
+import { bool, func, string } from 'prop-types';
 import styled from 'styled-components';
+import { TouchableWithoutFeedback } from 'react-native';
+import CheckMark from './CheckMark';
 
-const CheckboxWrapper = styled.TouchableOpacity`
-  width: 200px;
-  flex-direction: row;
+const CheckboxWrapper = styled.View`
+  width: 100%;
   flex-wrap: nowrap;
   align-items: center;
 `;
 
-const CheckboxStyled = styled.View(
+const Label = styled.Text(
   ({
-    checked,
-    disabled,
     theme: {
       components: { checkbox },
     },
   }) => `
-  display: flex;
-  width: ${checkbox.width}px;
-  height: ${checkbox.height}px;
-  border-radius: ${checkbox.border.radii}px;
-  border-width: ${checkbox.border.width}px;
-  border-style: solid;
-
-  ${checked ? `background-color: ${checkbox.checked.background};` : ``}
-
-  ${
-    disabled
-      ? `border-color: ${checkbox.disabled.border.color};`
-      : `border-color: ${checkbox.border.color};`
-  }
-
-  ${
-    checked && disabled
-      ? `background-color: ${checkbox.disabled.background};`
-      : ``
-  }
-
+  padding-left: ${checkbox.label.padding.left}px;
+  font-size: ${checkbox.label.font.size}px;
+  color: ${checkbox.label.font.color};
 `,
 );
 
-const Label = styled.Text`
-  display: flex;
-  align-items: center;
-  padding-left: 8px;
-
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.5px;
-  color: #41414a;
-`;
-
-const HelperWrapper = styled.View`
-  width: 200px;
-  margin-top: 4px;
-  flex-direction: row;
+const HelperWrapper = styled.View(
+  ({
+    theme: {
+      components: { checkbox },
+    },
+  }) => `
+  width: 100%;
   flex-wrap: nowrap;
-`;
+  margin-top: ${checkbox.helper.margin.top}px;
+`,
+);
 
-const Helper = styled.Text`
-  display: flex;
-  align-items: center;
-  align-self: flex-start;
+const Helper = styled.Text(
+  ({
+    error,
+    theme: {
+      components: { checkbox },
+    },
+  }) => `
+  font-size: ${checkbox.helper.font.size}px;
+  color: ${
+    error
+      ? `${checkbox.helper.selected.font.color};`
+      : `${checkbox.helper.font.color}`
+  }
+`,
+);
 
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  color: #9898a6;
-`;
-
-const Checkbox = ({ disabled, onChange, ...rest }) => {
+const Checkbox = ({
+  label,
+  helper,
+  disabled,
+  checked,
+  error,
+  onChange,
+  ...rest
+}) => {
+  const [pressed, setPressed] = useState(false);
   return (
     <>
-      <CheckboxWrapper onPress={onChange}>
-        <CheckboxStyled disabled={disabled} {...rest} />
-        <Label>Checkbox Label</Label>
-      </CheckboxWrapper>
-
-      <HelperWrapper>
-        <Helper>Helper text</Helper>
-      </HelperWrapper>
+      <TouchableWithoutFeedback
+        accessibilityRole="checkbox"
+        onPress={() => !disabled && onChange()}
+        onPressIn={() => !disabled && setPressed(true)}
+        onPressOut={() => !disabled && setPressed(false)}
+        {...rest}
+      >
+        <CheckboxWrapper>
+          <CheckMark
+            disabled={disabled}
+            checked={checked}
+            error={error}
+            pressed={pressed}
+          />
+          <Label>{label}</Label>
+        </CheckboxWrapper>
+      </TouchableWithoutFeedback>
+      {helper && (
+        <HelperWrapper>
+          <Helper error={error}>{helper}</Helper>
+        </HelperWrapper>
+      )}
     </>
   );
 };
 
 Checkbox.propTypes = {
+  /** set the component label */
+  label: string.isRequired,
+  /** set a short helper text under checkbox */
+  helper: string,
+  /** set a checked state in the component */
   checked: bool,
+  /** set a disabled state in the component */
   disabled: bool,
+  /** set a error state in the component */
+  error: bool,
+  /** when the checkbox is checked/unchecked */
   onChange: func,
 };
 
 Checkbox.defaultProps = {
+  helper: undefined,
   checked: false,
   disabled: false,
+  error: false,
   onChange: () => {},
 };
 
