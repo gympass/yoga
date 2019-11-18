@@ -1,59 +1,51 @@
 import React from 'react';
-import { node, number } from 'prop-types';
+import { node, number, checkPropTypes } from 'prop-types';
 import styled from 'styled-components';
 
-import Dot from './Dot';
+import Content from './Content';
+import Dots from './Dots';
+import Line from './Line';
 
-const Line = styled.div(
-  ({
-    activeStep,
-    totalSteps,
-    theme: {
-      components: { stepper },
-    },
-  }) => `
+const Wrapper = styled.div(
+  ({ theme: { spacing } }) => `
   width: 100%;
-  height: 4px;
-  background-color: ${stepper.line.backgroundColor.inactive};
-
-  &:after {
-    background-color: ${stepper.line.backgroundColor.active};
-    content: '';
-    display: block;
-    width: ${
-      activeStep <= 0 ? 0 : ((activeStep - 1) / (totalSteps - 1)) * 100
-    }%;
-    height: 4px;
-  }
+  padding: 0 ${spacing.xxlarge}px;
 `,
 );
 
-const Dots = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const Stepper = ({ children, activeStep }) => {
-  const totalSteps = [...Array(children.length).keys()];
-  return (
-    <>
-      <Line totalSteps={totalSteps.length} activeStep={activeStep} />
-      <Dots>
-        {totalSteps.map((step, index) => (
-          <Dot index={index + 1} activeStep={activeStep} key={step}>
-            {children[index]}
-          </Dot>
-        ))}
-      </Dots>
-    </>
-  );
-};
+const Stepper = ({ children, activeStep, ...rest }) => (
+  <div {...rest}>
+    <Wrapper>
+      <Line
+        activeStep={activeStep}
+        totalSteps={React.Children.count(children)}
+      />
+      <Dots
+        activeStep={activeStep}
+        labels={React.Children.map(children, child => child.props.label)}
+      />
+    </Wrapper>
+    <Content activeStep={activeStep}>{children}</Content>
+  </div>
+);
 
 Stepper.displayName = 'Stepper';
 
 Stepper.propTypes = {
   children: node.isRequired,
-  activeStep: number,
+  activeStep: (props, propName, componentName) => {
+    const { children, [propName]: activeStep } = props;
+
+    checkPropTypes({ [propName]: number }, props, 'prop', componentName);
+
+    if (activeStep > children.length - 1) {
+      return new Error(
+        `Invalid prop "${propName}" supplied to "${componentName}". "${propName}" must be smaller or equal the number of children.`,
+      );
+    }
+
+    return null;
+  },
 };
 
 Stepper.defaultProps = {
