@@ -108,7 +108,15 @@ const Table = ({
 );
 
 Table.propTypes = {
-  data: shape({}).isRequired,
+  data: shape({}),
+};
+
+Table.defaultProps = {
+  data: {
+    node: {
+      props: [],
+    },
+  },
 };
 
 const PropsTable = ({ component, platform }) => {
