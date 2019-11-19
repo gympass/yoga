@@ -10,7 +10,15 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
     }
   }
 >
-  <View>
+  <View
+    style={
+      Array [
+        Object {
+          "width": "100%",
+        },
+      ]
+    }
+  >
     <View
       style={
         Array [
@@ -234,7 +242,15 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
     }
   }
 >
-  <View>
+  <View
+    style={
+      Array [
+        Object {
+          "width": "100%",
+        },
+      ]
+    }
+  >
     <View
       style={
         Array [
