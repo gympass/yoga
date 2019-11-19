@@ -6,7 +6,11 @@ import customPropType from '../customPropType';
 import Dots from './Dots';
 import Line from './Line';
 
-const Wrapper = styled.div(
+const Root = styled.div`
+  width: 100%;
+`;
+
+const LineWrapper = styled.div(
   ({ theme: { spacing } }) => `
   width: 100%;
   height: 46px;
@@ -15,9 +19,10 @@ const Wrapper = styled.div(
 `,
 );
 
+/** Allows the user to navigate between steps relationed to a same context. */
 const Stepper = ({ children, activeStep, ...rest }) => (
-  <div {...rest}>
-    <Wrapper>
+  <Root {...rest}>
+    <LineWrapper>
       <Line
         activeStep={activeStep}
         totalSteps={React.Children.count(children) - 1}
@@ -26,19 +31,22 @@ const Stepper = ({ children, activeStep, ...rest }) => (
         activeStep={activeStep}
         labels={React.Children.map(children, child => child.props.label)}
       />
-    </Wrapper>
+    </LineWrapper>
     {children[activeStep]}
-  </div>
+  </Root>
 );
 
 Stepper.displayName = 'Stepper';
 
 Stepper.propTypes = {
-  children: node.isRequired,
+  /** Must be an Stepper.Step component. */
+  children: node,
+  /** Controls the active step, it receive the index value for showing some step. Starting from 0. */
   activeStep: customPropType,
 };
 
 Stepper.defaultProps = {
+  children: undefined,
   activeStep: 0,
 };
 
