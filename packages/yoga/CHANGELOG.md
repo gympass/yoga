@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.2.0...@gympass/yoga@0.3.0) (2019-11-13)
+
+### Features
+
+- **card:** creating Card Component for Native ([1a3df6f](https://github.com/Gympass/yoga/commit/1a3df6f4608fc87452a3fcf21dd59ed3394303dc))
+- **card:** creating Card Component for web ([e48f2bc](https://github.com/Gympass/yoga/commit/e48f2bcf8753fda32516ba14ab2fca09d4bab40a))
+- **card:** exporting Card Component in yoga package ([2fd9483](https://github.com/Gympass/yoga/commit/2fd94833417318e62217b5ea41c175d61ad28aff))
+
 # [0.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.1.0...@gympass/yoga@0.2.0) (2019-11-08)
 
 ### Features
