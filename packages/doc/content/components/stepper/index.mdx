@@ -4,20 +4,16 @@ metaTitle: 'Stepper'
 metaDescription: 'Stepper component'
 ---
 
+import StepperWeb from './stepper-web.mdx';
+import StepperNative from './stepper-native.mdx';
+
 # Stepper
 
-### Usage
-
-```javascript reactLive=true
-<Stepper activeStep={0}>
-  <Stepper.Step label="Confirm Booking">
-    <strong>Confirm Booking Content</strong>
-  </Stepper.Step>
-  <Stepper.Step label="Class Booked">
-    <strong>Class Booked Content</strong>
-  </Stepper.Step>
-  <Stepper.Step label="Check-in">
-    <strong>Check-in Content</strong>
-  </Stepper.Step>
-</Stepper>
-```
+<TabbedView>
+  <Tab title="Web">
+    <StepperWeb />
+  </Tab>
+  <Tab title="Native">
+    <StepperNative />
+  </Tab>
+</TabbedView>
