@@ -3,6 +3,12 @@ import { Text } from 'react-native';
 import styled from 'styled-components';
 import { Stepper } from '@gympass/yoga';
 
+const StepWrapper = styled.View`
+  padding: 10px;
+  flex-direction: row;
+  justify-content: center;
+`;
+
 const StyledView = styled.View`
   width: 100%;
   padding: 10px;
@@ -10,15 +16,21 @@ const StyledView = styled.View`
 
 const StepperPage = () => (
   <StyledView>
-    <Stepper activeStep={1}>
+    <Stepper activeStep={0}>
       <Stepper.Step label="Confirm Booking">
-        <Text>Confirm Booking Content</Text>
+        <StepWrapper>
+          <Text>Confirm Booking Content</Text>
+        </StepWrapper>
       </Stepper.Step>
       <Stepper.Step label="Class Booked">
-        <Text>Class Booked Content</Text>
+        <StepWrapper>
+          <Text>Class Booked Content</Text>
+        </StepWrapper>
       </Stepper.Step>
       <Stepper.Step label="Check-in">
-        <Text>Check-in Content</Text>
+        <StepWrapper>
+          <Text>Check-in Content</Text>
+        </StepWrapper>
       </Stepper.Step>
     </Stepper>
   </StyledView>
