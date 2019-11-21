@@ -34,8 +34,7 @@ const Label = styled.span(
 
 const DotWrapper = styled.div(
   ({
-    index,
-    activeStep,
+    active,
     theme: {
       components: { stepper },
     },
@@ -51,9 +50,7 @@ const DotWrapper = styled.div(
       top: 10px;
 
       color: ${
-        activeDot(index, activeStep)
-          ? stepper.label.color.active
-          : stepper.label.color.inactive
+        active ? stepper.label.color.active : stepper.label.color.inactive
       };
     }
 
@@ -62,7 +59,7 @@ const DotWrapper = styled.div(
       top: -10px;
 
       background-color: ${
-        activeDot(index, activeStep)
+        active
           ? stepper.dot.backgroundColor.active
           : stepper.dot.backgroundColor.inactive
       };
@@ -78,7 +75,7 @@ const Wrapper = styled.div`
 const Dots = ({ activeStep, labels }) => (
   <Wrapper>
     {labels.map((label, index) => (
-      <DotWrapper index={index} activeStep={activeStep} key={label}>
+      <DotWrapper active={activeDot(index, activeStep)} key={label}>
         <Dot />
         <Label>{label}</Label>
       </DotWrapper>
