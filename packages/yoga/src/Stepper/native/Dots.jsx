@@ -15,8 +15,7 @@ const DotWrapper = styled.View`
 
 const Dot = styled.View(
   ({
-    index,
-    activeStep,
+    active,
     theme: {
       components: { stepper },
     },
@@ -28,7 +27,7 @@ const Dot = styled.View(
 
     border-radius: ${stepper.dot.radius}px;
     background-color: ${
-      activeDot(index, activeStep)
+      active
         ? stepper.dot.backgroundColor.active
         : stepper.dot.backgroundColor.inactive
     };
@@ -37,8 +36,7 @@ const Dot = styled.View(
 
 const Label = styled.Text(
   ({
-    index,
-    activeStep,
+    active,
     theme: {
       components: { stepper },
     },
@@ -48,9 +46,7 @@ const Label = styled.Text(
     margin-left: -40px;
 
     color: ${
-      activeDot(index, activeStep)
-        ? stepper.label.color.active
-        : stepper.label.color.inactive
+      active ? stepper.label.color.active : stepper.label.color.inactive
     };
 
     font-size: ${stepper.label.font.size}px;
@@ -63,10 +59,8 @@ const Dots = ({ activeStep, labels }) => (
   <Wrapper>
     {labels.map((label, index) => (
       <DotWrapper key={label}>
-        <Dot index={index} activeStep={activeStep} />
-        <Label index={index} activeStep={activeStep}>
-          {label}
-        </Label>
+        <Dot active={activeDot(index, activeStep)} />
+        <Label active={activeDot(index, activeStep)}>{label}</Label>
       </DotWrapper>
     ))}
   </Wrapper>
