@@ -104,6 +104,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
     >
       <div
         class="c2"
+        width="0"
       />
       <div
         class="c3"
@@ -260,6 +261,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
     >
       <div
         class="c2"
+        width="50"
       />
       <div
         class="c3"

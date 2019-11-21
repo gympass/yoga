@@ -55,7 +55,6 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
           }
         />
         <View
-          activeStep={0}
           style={
             Array [
               Object {
@@ -67,7 +66,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
               },
             ]
           }
-          totalSteps={2}
+          width={0}
         />
       </View>
       <View
@@ -90,8 +89,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
           }
         >
           <View
-            activeStep={0}
-            index={0}
+            active={true}
             style={
               Array [
                 Object {
@@ -105,8 +103,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
             }
           />
           <Text
-            activeStep={0}
-            index={0}
+            active={true}
             style={
               Array [
                 Object {
@@ -134,8 +131,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
           }
         >
           <View
-            activeStep={0}
-            index={1}
+            active={false}
             style={
               Array [
                 Object {
@@ -149,8 +145,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
             }
           />
           <Text
-            activeStep={0}
-            index={1}
+            active={false}
             style={
               Array [
                 Object {
@@ -178,8 +173,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
           }
         >
           <View
-            activeStep={0}
-            index={2}
+            active={false}
             style={
               Array [
                 Object {
@@ -193,8 +187,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
             }
           />
           <Text
-            activeStep={0}
-            index={2}
+            active={false}
             style={
               Array [
                 Object {
@@ -287,7 +280,6 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
           }
         />
         <View
-          activeStep={1}
           style={
             Array [
               Object {
@@ -299,7 +291,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
               },
             ]
           }
-          totalSteps={2}
+          width={50}
         />
       </View>
       <View
@@ -322,8 +314,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
           }
         >
           <View
-            activeStep={1}
-            index={0}
+            active={true}
             style={
               Array [
                 Object {
@@ -337,8 +328,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
             }
           />
           <Text
-            activeStep={1}
-            index={0}
+            active={true}
             style={
               Array [
                 Object {
@@ -366,8 +356,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
           }
         >
           <View
-            activeStep={1}
-            index={1}
+            active={true}
             style={
               Array [
                 Object {
@@ -381,8 +370,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
             }
           />
           <Text
-            activeStep={1}
-            index={1}
+            active={true}
             style={
               Array [
                 Object {
@@ -410,8 +398,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
           }
         >
           <View
-            activeStep={1}
-            index={2}
+            active={false}
             style={
               Array [
                 Object {
@@ -425,8 +412,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
             }
           />
           <Text
-            activeStep={1}
-            index={2}
+            active={false}
             style={
               Array [
                 Object {
