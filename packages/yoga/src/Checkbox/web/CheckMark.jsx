@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import check from './CheckIcon';
+import check from '../CheckIcon';
 
 const CheckMark = styled.div(
   ({
@@ -11,6 +11,8 @@ const CheckMark = styled.div(
     },
   }) => `
     position: relative;
+    flex-shrink: 0;
+
     width: 24px;
     height: 24px;
     margin-right: ${checkbox.margin.right}px;
@@ -30,9 +32,7 @@ const CheckMark = styled.div(
     }
 
     border-color: ${
-      disabled
-        ? `${checkbox.disabled.border.color}`
-        : `${checkbox.border.color}`
+      disabled ? checkbox.disabled.border.color : checkbox.border.color
     };
 
     ${

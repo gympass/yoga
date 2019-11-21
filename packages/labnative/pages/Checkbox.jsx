@@ -11,6 +11,7 @@ const StyledText = styled.Text`
 `;
 
 const CheckboxWrapper = styled.View`
+  flex-direction: row;
   margin-bottom: 10px;
   text-align: center;
   align-items: center;
@@ -50,7 +51,7 @@ const CheckboxPage = () => {
           checked={checked}
           label="Checkbox Label"
           helper="Checkbox Helper"
-          onChange={() => setChecked(!checked)}
+          onPress={() => setChecked(!checked)}
         />
       </CheckboxWrapper>
     </View>

@@ -2,7 +2,7 @@ import React from 'react';
 import { bool } from 'prop-types';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
-import check from './CheckIcon';
+import check from '../CheckIcon';
 
 const CheckMarkStyled = styled.View(
   ({
@@ -23,9 +23,7 @@ const CheckMarkStyled = styled.View(
     ${checked ? `background-color: ${checkbox.checked.backgroundColor};` : ''}
 
     border-color: ${
-      disabled
-        ? `${checkbox.disabled.border.color}`
-        : `${checkbox.border.color}`
+      disabled ? checkbox.disabled.border.color : checkbox.border.color
     };
 
     ${
@@ -59,8 +57,10 @@ const CirclePressed = styled.View(
     position: absolute;
     top: -17px;
     left: -17px;
+
     width: 54px;
     height: 54px;
+    
     background-color: ${hexToRgb(
       checkbox.checked.backgroundColor,
       0.2,

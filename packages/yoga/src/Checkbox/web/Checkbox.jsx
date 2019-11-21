@@ -6,9 +6,7 @@ import CheckMark from './CheckMark';
 import { HiddenInput } from '../../shared';
 
 const CheckboxWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
 `;
 
 const Label = styled.label(
@@ -20,7 +18,9 @@ const Label = styled.label(
     display: flex;
     flex-direction: row;
     align-items: center;
+
     font-size: ${checkbox.label.font.size}px;
+
     color: ${checkbox.label.font.color};
   `,
 );
@@ -31,11 +31,8 @@ const CheckboxStyled = styled.div(
       components: { checkbox },
     },
   }) => `
-    width: 100%;
     position: relative;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     align-items: center;
 
     &:hover {
@@ -45,8 +42,10 @@ const CheckboxStyled = styled.div(
           position: absolute;
           top: -17px;
           left: -17px;
+
           width: 54px;
           height: 54px;
+
           background-color: ${hexToRgb(checkbox.checked.backgroundColor, 0.2)};
           border-radius: ${checkbox.hover.border.radius}px;
         }
@@ -61,10 +60,9 @@ const HelperWrapper = styled.div(
       components: { checkbox },
     },
   }) => `
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    
+    width: 100%;
     margin-top: ${checkbox.helper.margin.top}px;
   `,
 );
@@ -76,12 +74,11 @@ const Helper = styled.span(
       components: { checkbox },
     },
   }) => `
-    font-size: ${checkbox.helper.font.size}px;
     color: ${
-      error
-        ? `${checkbox.helper.selected.font.color}`
-        : `${checkbox.helper.font.color}`
+      error ? checkbox.helper.selected.font.color : checkbox.helper.font.color
     };
+
+    font-size: ${checkbox.helper.font.size}px;
   `,
 );
 
@@ -93,9 +90,10 @@ const Checkbox = ({
   checked,
   error,
   style,
+  className,
   ...rest
 }) => (
-  <CheckboxWrapper style={style}>
+  <CheckboxWrapper style={style} className={className}>
     <CheckboxStyled>
       <Label>
         <CheckMark disabled={disabled} checked={checked} error={error}>
@@ -127,6 +125,7 @@ Checkbox.propTypes = {
   error: bool,
   /** set a style to the checkbox container */
   style: objectOf(any),
+  className: string,
 };
 
 Checkbox.defaultProps = {
@@ -136,6 +135,7 @@ Checkbox.defaultProps = {
   disabled: false,
   error: false,
   style: undefined,
+  className: undefined,
 };
 
 Checkbox.displayName = 'Checkbox';

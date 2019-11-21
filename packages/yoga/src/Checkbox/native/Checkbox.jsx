@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { bool, func, string } from 'prop-types';
 import styled from 'styled-components';
-import { TouchableWithoutFeedback } from 'react-native';
+import { TouchableWithoutFeedback, View } from 'react-native';
 import CheckMark from './CheckMark';
 
 const CheckboxWrapper = styled.View`
-  width: 100%;
   flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
 `;
 
@@ -18,7 +16,9 @@ const Label = styled.Text(
     },
   }) => `
   padding-left: ${checkbox.label.padding.left}px;
+
   font-size: ${checkbox.label.font.size}px;
+
   color: ${checkbox.label.font.color};
 `,
 );
@@ -29,8 +29,6 @@ const HelperWrapper = styled.View(
       components: { checkbox },
     },
   }) => `
-  width: 100%;
-  flex-wrap: nowrap;
   margin-top: ${checkbox.helper.margin.top}px;
 `,
 );
@@ -43,10 +41,9 @@ const Helper = styled.Text(
     },
   }) => `
   font-size: ${checkbox.helper.font.size}px;
+
   color: ${
-    error
-      ? `${checkbox.helper.selected.font.color}`
-      : `${checkbox.helper.font.color}`
+    error ? checkbox.helper.selected.font.color : checkbox.helper.font.color
   };
 `,
 );
@@ -63,7 +60,7 @@ const Checkbox = ({
 }) => {
   const [pressed, setPressed] = useState(false);
   return (
-    <>
+    <View>
       <TouchableWithoutFeedback
         {...rest}
         accessibilityRole="checkbox"
@@ -92,7 +89,7 @@ const Checkbox = ({
           <Helper error={error}>{helper}</Helper>
         </HelperWrapper>
       )}
-    </>
+    </View>
   );
 };
 
