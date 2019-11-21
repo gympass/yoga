@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.3.1...@gympass/yoga-labnative@0.4.0) (2019-11-21)
+
+### Features
+
+- **yoga/stepper:** stepper component for native platform ([adc4011](https://github.com/Gympass/yoga/commit/adc4011d8c4f1139f5855e83eec25c3f3567057b))
+
 ## [0.3.1](https://github.com/Gympass/design-system/compare/@gympass/yoga-labnative@0.3.0...@gympass/yoga-labnative@0.3.1) (2019-11-13)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
