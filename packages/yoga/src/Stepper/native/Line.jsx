@@ -24,8 +24,7 @@ const InactiveLine = styled.View(
 
 const ActiveLine = styled.View(
   ({
-    activeStep,
-    totalSteps,
+    width,
     theme: {
       components: { stepper },
     },
@@ -34,7 +33,7 @@ const ActiveLine = styled.View(
     top: 0;
 
     background-color: ${stepper.line.backgroundColor.active};
-    width: ${activeStep <= 0 ? 0 : (activeStep / totalSteps) * 100}%;
+    width: ${width}%;
     height: 4px;
 `,
 );
@@ -42,7 +41,7 @@ const ActiveLine = styled.View(
 const Line = ({ activeStep, totalSteps }) => (
   <Wrapper>
     <InactiveLine />
-    <ActiveLine activeStep={activeStep} totalSteps={totalSteps} />
+    <ActiveLine width={activeStep <= 0 ? 0 : (activeStep / totalSteps) * 100} />
   </Wrapper>
 );
 
