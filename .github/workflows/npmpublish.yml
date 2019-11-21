@@ -1,13 +1,13 @@
 name: Yoga - Gympass Design System
 
 on:
-  push:
-    branches:
-      - master
+  pull_request:
+    types: [closed]
 
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
     steps:
       - uses: actions/checkout@v1
       - name: Configure CI Git User
