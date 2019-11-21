@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 const Line = styled.div(
   ({
-    activeStep,
-    totalSteps,
+    width,
     theme: {
       components: { stepper },
     },
@@ -18,7 +17,7 @@ const Line = styled.div(
       display: block;
       content: '';
 
-      width: ${activeStep <= 0 ? 0 : (activeStep / totalSteps) * 100}%;
+      width: ${width}%;
       height: 4px;
       
       background-color: ${stepper.line.backgroundColor.active};
