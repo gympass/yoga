@@ -45,9 +45,9 @@ const Helper = styled.Text(
   font-size: ${checkbox.helper.font.size}px;
   color: ${
     error
-      ? `${checkbox.helper.selected.font.color};`
+      ? `${checkbox.helper.selected.font.color}`
       : `${checkbox.helper.font.color}`
-  }
+  };
 `,
 );
 
@@ -57,18 +57,25 @@ const Checkbox = ({
   disabled,
   checked,
   error,
-  onChange,
+  onPressIn,
+  onPressOut,
   ...rest
 }) => {
   const [pressed, setPressed] = useState(false);
   return (
     <>
       <TouchableWithoutFeedback
-        accessibilityRole="checkbox"
-        onPress={() => !disabled && onChange()}
-        onPressIn={() => !disabled && setPressed(true)}
-        onPressOut={() => !disabled && setPressed(false)}
         {...rest}
+        accessibilityRole="checkbox"
+        disabled={disabled}
+        onPressIn={e => {
+          setPressed(true);
+          onPressIn(e);
+        }}
+        onPressOut={e => {
+          setPressed(false);
+          onPressOut(e);
+        }}
       >
         <CheckboxWrapper>
           <CheckMark
@@ -96,7 +103,8 @@ Checkbox.propTypes = {
   checked: bool,
   disabled: bool,
   error: bool,
-  onChange: func,
+  onPressIn: func,
+  onPressOut: func,
 };
 
 Checkbox.defaultProps = {
@@ -104,7 +112,8 @@ Checkbox.defaultProps = {
   checked: false,
   disabled: false,
   error: false,
-  onChange: () => {},
+  onPressIn: () => {},
+  onPressOut: () => {},
 };
 
 Checkbox.displayName = 'Checkbox';

@@ -16,7 +16,7 @@ const CheckMarkStyled = styled.View(
     width: 24px;
     height: 24px;
 
-    border-radius: ${checkbox.border.radii}px;
+    border-radius: ${checkbox.border.radius}px;
     border-width: ${checkbox.border.width}px;
     border-style: solid;
 
@@ -24,9 +24,9 @@ const CheckMarkStyled = styled.View(
 
     border-color: ${
       disabled
-        ? `${checkbox.disabled.border.color};`
-        : `${checkbox.border.color};`
-    }
+        ? `${checkbox.disabled.border.color}`
+        : `${checkbox.border.color}`
+    };
 
     ${
       disabled && checked
@@ -65,7 +65,7 @@ const CirclePressed = styled.View(
       checkbox.checked.backgroundColor,
       0.2,
     )};          
-    border-radius: ${checkbox.hover.border.radii};
+    border-radius: ${checkbox.hover.border.radius};
   `,
 );
 

@@ -274,7 +274,7 @@ const BaseTheme = ({ primary, secondary }) => {
       border: {
         width: borders.medium,
         color: colors.primary[3],
-        radii: 4,
+        radius: 4,
       },
       label: {
         padding: {
@@ -301,7 +301,7 @@ const BaseTheme = ({ primary, secondary }) => {
       },
       hover: {
         border: {
-          radii: radii.circle,
+          radius: radii.circle,
         },
       },
       checked: {

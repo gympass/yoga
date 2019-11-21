@@ -48,7 +48,7 @@ const CheckboxStyled = styled.div(
           width: 54px;
           height: 54px;
           background-color: ${hexToRgb(checkbox.checked.backgroundColor, 0.2)};
-          border-radius: ${checkbox.hover.border.radii}px;
+          border-radius: ${checkbox.hover.border.radius}px;
         }
       }
     }
@@ -79,9 +79,9 @@ const Helper = styled.span(
     font-size: ${checkbox.helper.font.size}px;
     color: ${
       error
-        ? `${checkbox.helper.selected.font.color};`
+        ? `${checkbox.helper.selected.font.color}`
         : `${checkbox.helper.font.color}`
-    }
+    };
   `,
 );
 

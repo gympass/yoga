@@ -10,6 +10,7 @@ const data = {
   helper: 'Helper Text',
 };
 
+/* eslint-disable no-console */
 const originalError = console.error;
 
 beforeEach(() => {

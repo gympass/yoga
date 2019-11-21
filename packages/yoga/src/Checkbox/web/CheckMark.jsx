@@ -15,7 +15,7 @@ const CheckMark = styled.div(
     height: 24px;
     margin-right: ${checkbox.margin.right}px;
 
-    border-radius: ${checkbox.border.radii}px;
+    border-radius: ${checkbox.border.radius}px;
     border-width: ${checkbox.border.width}px;
     border-style: solid;
 
