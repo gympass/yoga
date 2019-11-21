@@ -274,7 +274,7 @@ const BaseTheme = ({ primary, secondary }) => {
       border: {
         width: borders.medium,
         color: colors.primary[3],
-        radius: 4,
+        radius: radii.semiRounded,
       },
       label: {
         padding: {
