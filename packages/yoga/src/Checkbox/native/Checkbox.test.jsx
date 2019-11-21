@@ -72,7 +72,7 @@ describe('<Checkbox />', () => {
       const onChangeMock = jest.fn();
       const { getByTestId } = render(
         <ThemeProvider>
-          <Checkbox {...data} onChange={onChangeMock} testID="checkbox" />
+          <Checkbox {...data} onPress={onChangeMock} testID="checkbox" />
         </ThemeProvider>,
       );
       fireEvent.press(getByTestId('checkbox'));
