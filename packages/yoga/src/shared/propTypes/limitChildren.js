@@ -1,6 +1,6 @@
 import { number, checkPropTypes } from 'prop-types';
 
-const limitPropType = (props, propName, componentName) => {
+const limitChildren = (props, propName, componentName) => {
   const { children, [propName]: activeStep } = props;
 
   checkPropTypes({ [propName]: number }, props, 'prop', componentName);
@@ -14,4 +14,4 @@ const limitPropType = (props, propName, componentName) => {
   return null;
 };
 
-export default limitPropType;
+export default limitChildren;

@@ -1,4 +1,4 @@
-/* eslint-disable import/prefer-default-export */
 import HiddenInput from './HiddenInput';
+import { limitChildren, typeOf } from './propTypes';
 
-export { HiddenInput };
+export { HiddenInput, limitChildren, typeOf };

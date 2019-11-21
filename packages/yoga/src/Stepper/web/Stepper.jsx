@@ -1,8 +1,7 @@
 import React from 'react';
-import { node } from 'prop-types';
 import styled from 'styled-components';
 
-import limitPropType from '../limitPropType';
+import { limitChildren, typeOf } from '../../shared';
 import Dots from './Dots';
 import Line from './Line';
 
@@ -24,8 +23,11 @@ const Stepper = ({ children, activeStep, ...rest }) => (
   <Root {...rest}>
     <LineWrapper>
       <Line
-        activeStep={activeStep}
-        totalSteps={React.Children.count(children) - 1}
+        width={
+          activeStep <= 0
+            ? 0
+            : (activeStep / (React.Children.count(children) - 1)) * 100
+        }
       />
       <Dots
         activeStep={activeStep}
@@ -40,9 +42,9 @@ Stepper.displayName = 'Stepper';
 
 Stepper.propTypes = {
   /** Must be an Stepper.Step component. */
-  children: node,
+  children: typeOf('Stepper.Step'),
   /** Controls the active step, it receive the index value for showing some step. Starting from 0. */
-  activeStep: limitPropType,
+  activeStep: limitChildren,
 };
 
 Stepper.defaultProps = {
