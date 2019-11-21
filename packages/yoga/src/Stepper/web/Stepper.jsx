@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { limitChildren, typeOf } from '../../shared';
 import Dots from './Dots';
 import Line from './Line';
+import Step from './Step';
 
 const Root = styled.div`
   width: 100%;
@@ -18,7 +19,7 @@ const LineWrapper = styled.div(
 `,
 );
 
-/** Allows the user to navigate between steps relationed to a same context. */
+/** Stepper is responsible for the logic that drives a stepped workflow, it provides a wizard-like workflow by dividing content into logical steps. */
 const Stepper = ({ children, activeStep, ...rest }) => (
   <Root {...rest}>
     <LineWrapper>
@@ -42,7 +43,7 @@ Stepper.displayName = 'Stepper';
 
 Stepper.propTypes = {
   /** Must be an Stepper.Step component. */
-  children: typeOf('Stepper.Step'),
+  children: typeOf(Step.displayName),
   /** Controls the active step, it receive the index value for showing some step. Starting from 0. */
   activeStep: limitChildren,
 };
