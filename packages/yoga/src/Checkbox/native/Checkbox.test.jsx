@@ -5,7 +5,6 @@ import Checkbox from '..';
 import ThemeProvider from '../../ThemeProvider';
 
 const data = {
-  id: 'checkbox',
   value: 'value',
   label: 'Checkbox Component',
   helper: 'Helper Text',
@@ -68,7 +67,7 @@ describe('<Checkbox />', () => {
     });
   });
 
-  describe('call events', () => {
+  describe('Events', () => {
     it('should call onChange function when press on Checkbox', () => {
       const onChangeMock = jest.fn();
       const { getByTestId } = render(

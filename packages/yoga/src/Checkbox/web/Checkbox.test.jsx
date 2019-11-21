@@ -5,11 +5,20 @@ import Checkbox from '..';
 import ThemeProvider from '../../ThemeProvider';
 
 const data = {
-  id: 'checkbox',
   value: 'value',
   label: 'Checkbox Component',
   helper: 'Helper Text',
 };
+
+const originalError = console.error;
+
+beforeEach(() => {
+  console.error = jest.fn();
+});
+
+afterEach(() => {
+  console.error = originalError;
+});
 
 describe('<Checkbox />', () => {
   describe('Snapshots', () => {
@@ -68,7 +77,7 @@ describe('<Checkbox />', () => {
     });
   });
 
-  describe('call events', () => {
+  describe('Events', () => {
     it('should call onChange function when press on Checkbox', () => {
       const onChangeMock = jest.fn();
       const { getByRole } = render(

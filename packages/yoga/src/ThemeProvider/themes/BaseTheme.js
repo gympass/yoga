@@ -268,8 +268,9 @@ const BaseTheme = ({ primary, secondary }) => {
       elevation: elevations.small,
     },
     checkbox: {
-      width: spacing.xlarge,
-      height: spacing.xlarge,
+      margin: {
+        right: spacing.xsmall,
+      },
       border: {
         width: borders.medium,
         color: colors.primary[3],
@@ -296,6 +297,11 @@ const BaseTheme = ({ primary, secondary }) => {
           font: {
             color: colors.negative[1],
           },
+        },
+      },
+      hover: {
+        border: {
+          radii: radii.circle,
         },
       },
       checked: {

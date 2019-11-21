@@ -6,6 +6,7 @@ import CheckMark from './CheckMark';
 
 const CheckboxWrapper = styled.View`
   width: 100%;
+  flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
 `;
@@ -89,17 +90,12 @@ const Checkbox = ({
 };
 
 Checkbox.propTypes = {
-  /** set the component label */
   label: string.isRequired,
   /** set a short helper text under checkbox */
   helper: string,
-  /** set a checked state in the component */
   checked: bool,
-  /** set a disabled state in the component */
   disabled: bool,
-  /** set a error state in the component */
   error: bool,
-  /** when the checkbox is checked/unchecked */
   onChange: func,
 };
 
