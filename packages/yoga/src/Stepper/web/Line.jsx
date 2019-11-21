@@ -21,7 +21,6 @@ const Line = styled.div(
       height: 4px;
       
       background-color: ${stepper.line.backgroundColor.active};
-      transition: width 0.3s;
     }
   `,
 );
