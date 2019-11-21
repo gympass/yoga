@@ -1,0 +1,451 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 0,
+            "paddingLeft": 40,
+            "paddingRight": 40,
+            "paddingTop": 0,
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "position": "relative",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#DBDBE8",
+                "height": 4,
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#F46152",
+                "height": 4,
+                "position": "absolute",
+                "top": 0,
+                "width": "0%",
+              },
+            ]
+          }
+          width={0}
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "width": 15,
+              },
+            ]
+          }
+        >
+          <View
+            active={true}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#F46152",
+                  "borderRadius": 9999,
+                  "height": 15,
+                  "marginTop": -6,
+                  "width": 15,
+                },
+              ]
+            }
+          />
+          <Text
+            active={true}
+            style={
+              Array [
+                Object {
+                  "color": "#F46152",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "marginLeft": -40,
+                  "marginTop": 10,
+                  "textAlign": "center",
+                  "width": 95,
+                },
+              ]
+            }
+          >
+            step one
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "width": 15,
+              },
+            ]
+          }
+        >
+          <View
+            active={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#DBDBE8",
+                  "borderRadius": 9999,
+                  "height": 15,
+                  "marginTop": -6,
+                  "width": 15,
+                },
+              ]
+            }
+          />
+          <Text
+            active={false}
+            style={
+              Array [
+                Object {
+                  "color": "#9898A6",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "marginLeft": -40,
+                  "marginTop": 10,
+                  "textAlign": "center",
+                  "width": 95,
+                },
+              ]
+            }
+          >
+            step two
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "width": 15,
+              },
+            ]
+          }
+        >
+          <View
+            active={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#DBDBE8",
+                  "borderRadius": 9999,
+                  "height": 15,
+                  "marginTop": -6,
+                  "width": 15,
+                },
+              ]
+            }
+          />
+          <Text
+            active={false}
+            style={
+              Array [
+                Object {
+                  "color": "#9898A6",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "marginLeft": -40,
+                  "marginTop": 10,
+                  "textAlign": "center",
+                  "width": 95,
+                },
+              ]
+            }
+          >
+            step three
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      label="step one"
+      style={
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <Text>
+        step one content
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Stepper /> Snapshots should match snapshot with second step active 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "paddingBottom": 0,
+            "paddingLeft": 40,
+            "paddingRight": 40,
+            "paddingTop": 0,
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "position": "relative",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#DBDBE8",
+                "height": 4,
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#F46152",
+                "height": 4,
+                "position": "absolute",
+                "top": 0,
+                "width": "50%",
+              },
+            ]
+          }
+          width={50}
+        />
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "width": 15,
+              },
+            ]
+          }
+        >
+          <View
+            active={true}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#F46152",
+                  "borderRadius": 9999,
+                  "height": 15,
+                  "marginTop": -6,
+                  "width": 15,
+                },
+              ]
+            }
+          />
+          <Text
+            active={true}
+            style={
+              Array [
+                Object {
+                  "color": "#F46152",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "marginLeft": -40,
+                  "marginTop": 10,
+                  "textAlign": "center",
+                  "width": 95,
+                },
+              ]
+            }
+          >
+            step one
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "width": 15,
+              },
+            ]
+          }
+        >
+          <View
+            active={true}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#F46152",
+                  "borderRadius": 9999,
+                  "height": 15,
+                  "marginTop": -6,
+                  "width": 15,
+                },
+              ]
+            }
+          />
+          <Text
+            active={true}
+            style={
+              Array [
+                Object {
+                  "color": "#F46152",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "marginLeft": -40,
+                  "marginTop": 10,
+                  "textAlign": "center",
+                  "width": 95,
+                },
+              ]
+            }
+          >
+            step two
+          </Text>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "width": 15,
+              },
+            ]
+          }
+        >
+          <View
+            active={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#DBDBE8",
+                  "borderRadius": 9999,
+                  "height": 15,
+                  "marginTop": -6,
+                  "width": 15,
+                },
+              ]
+            }
+          />
+          <Text
+            active={false}
+            style={
+              Array [
+                Object {
+                  "color": "#9898A6",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "marginLeft": -40,
+                  "marginTop": 10,
+                  "textAlign": "center",
+                  "width": 95,
+                },
+              ]
+            }
+          >
+            step three
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      label="step two"
+      style={
+        Array [
+          Object {
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <Text>
+        step two content
+      </Text>
+    </View>
+  </View>
+</View>
+`;

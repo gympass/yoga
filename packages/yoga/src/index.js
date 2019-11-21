@@ -5,6 +5,7 @@ import Checkbox from './Checkbox';
 import Slider from './Slider';
 import RadioGroup from './RadioGroup';
 import Card from './Card';
+import Stepper from './Stepper';
 
 export {
   ThemeProvider,
@@ -15,4 +16,5 @@ export {
   RadioGroup,
   Slider,
   Card,
+  Stepper,
 };
