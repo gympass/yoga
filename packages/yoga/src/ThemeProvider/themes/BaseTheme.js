@@ -47,11 +47,6 @@ const BaseTheme = ({ primary, secondary }) => {
           inactive: colors.gray[3],
         },
       },
-      content: {
-        margin: {
-          top: spacing.huge,
-        },
-      },
     },
     slider: {
       track: {
