@@ -34,7 +34,7 @@ const Stepper = ({ children, activeStep, ...rest }) => (
         labels={React.Children.map(children, child => child.props.label)}
       />
     </LineWrapper>
-    {children[activeStep]}
+    {React.Children.toArray(children)[activeStep]}
   </Root>
 );
 
