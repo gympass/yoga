@@ -12,7 +12,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 >
   <TouchableWithoutFeedback
     accessibilityRole="checkbox"
-    id="checkbox"
     value="value"
   >
     <View
@@ -20,6 +19,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
         Array [
           Object {
             "alignItems": "center",
+            "flexDirection": "row",
             "flexWrap": "nowrap",
             "width": "100%",
           },
@@ -44,8 +44,12 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
           ]
         }
       >
-        <View
-          accessibilityIgnoresInvertColors={true}
+        <Image
+          source={
+            Object {
+              "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
+            }
+          }
           style={
             Array [
               Object {
@@ -58,31 +62,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
               },
             ]
           }
-        >
-          <Image
-            source={
-              Object {
-                "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "bottom": 0,
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                },
-                Object {
-                  "height": undefined,
-                  "width": undefined,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
+        />
       </View>
       <Text
         style={
@@ -139,7 +119,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 >
   <TouchableWithoutFeedback
     accessibilityRole="checkbox"
-    id="checkbox"
     value="value"
   >
     <View
@@ -147,6 +126,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
         Array [
           Object {
             "alignItems": "center",
+            "flexDirection": "row",
             "flexWrap": "nowrap",
             "width": "100%",
           },
@@ -225,7 +205,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 >
   <TouchableWithoutFeedback
     accessibilityRole="checkbox"
-    id="checkbox"
     value="value"
   >
     <View
@@ -233,6 +212,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
         Array [
           Object {
             "alignItems": "center",
+            "flexDirection": "row",
             "flexWrap": "nowrap",
             "width": "100%",
           },
@@ -257,8 +237,12 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
           ]
         }
       >
-        <View
-          accessibilityIgnoresInvertColors={true}
+        <Image
+          source={
+            Object {
+              "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
+            }
+          }
           style={
             Array [
               Object {
@@ -271,31 +255,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
               },
             ]
           }
-        >
-          <Image
-            source={
-              Object {
-                "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "bottom": 0,
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                },
-                Object {
-                  "height": undefined,
-                  "width": undefined,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
+        />
       </View>
       <Text
         style={
@@ -352,7 +312,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 >
   <TouchableWithoutFeedback
     accessibilityRole="checkbox"
-    id="checkbox"
     value="value"
   >
     <View
@@ -360,6 +319,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
         Array [
           Object {
             "alignItems": "center",
+            "flexDirection": "row",
             "flexWrap": "nowrap",
             "width": "100%",
           },
@@ -438,7 +398,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 >
   <TouchableWithoutFeedback
     accessibilityRole="checkbox"
-    id="checkbox"
     value="value"
   >
     <View
@@ -446,6 +405,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
         Array [
           Object {
             "alignItems": "center",
+            "flexDirection": "row",
             "flexWrap": "nowrap",
             "width": "100%",
           },
@@ -470,8 +430,12 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
           ]
         }
       >
-        <View
-          accessibilityIgnoresInvertColors={true}
+        <Image
+          source={
+            Object {
+              "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
+            }
+          }
           style={
             Array [
               Object {
@@ -484,31 +448,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
               },
             ]
           }
-        >
-          <Image
-            source={
-              Object {
-                "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
-              }
-            }
-            style={
-              Array [
-                Object {
-                  "bottom": 0,
-                  "left": 0,
-                  "position": "absolute",
-                  "right": 0,
-                  "top": 0,
-                },
-                Object {
-                  "height": undefined,
-                  "width": undefined,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
+        />
       </View>
       <Text
         style={
@@ -565,7 +505,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 >
   <TouchableWithoutFeedback
     accessibilityRole="checkbox"
-    id="checkbox"
     value="value"
   >
     <View
@@ -573,6 +512,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
         Array [
           Object {
             "alignItems": "center",
+            "flexDirection": "row",
             "flexWrap": "nowrap",
             "width": "100%",
           },

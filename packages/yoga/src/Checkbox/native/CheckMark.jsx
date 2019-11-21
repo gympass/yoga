@@ -13,37 +13,38 @@ const CheckMarkStyled = styled.View(
       components: { checkbox },
     },
   }) => `
-    width: ${checkbox.width}px;
-    height: ${checkbox.height}px;
+    width: 24px;
+    height: 24px;
+
     border-radius: ${checkbox.border.radii}px;
     border-width: ${checkbox.border.width}px;
     border-style: solid;
 
-    ${checked ? `background-color: ${checkbox.checked.backgroundColor};` : ``}
+    ${checked ? `background-color: ${checkbox.checked.backgroundColor};` : ''}
 
-    ${
+    border-color: ${
       disabled
-        ? `border-color: ${checkbox.disabled.border.color};`
-        : `border-color: ${checkbox.border.color};`
+        ? `${checkbox.disabled.border.color};`
+        : `${checkbox.border.color};`
     }
 
     ${
       disabled && checked
         ? `background-color: ${checkbox.disabled.backgroundColor};`
-        : ``
+        : ''
     }
 
-    ${error ? `border-color: ${checkbox.error.border.color};` : ``}
+    ${error ? `border-color: ${checkbox.error.border.color};` : ''}
 
     ${
       error && checked
         ? `background-color: ${checkbox.error.backgroundColor};`
-        : ``
+        : ''
     }
   `,
 );
 
-const CheckIcon = styled.ImageBackground`
+const CheckIcon = styled.Image`
   width: 16px;
   height: 11px;
   margin: 4px 2px 4px 2px;
@@ -51,26 +52,20 @@ const CheckIcon = styled.ImageBackground`
 
 const CirclePressed = styled.View(
   ({
-    pressed,
     theme: {
       components: { checkbox },
     },
   }) => `
-    ${
-      pressed
-        ? `
-          position: absolute;
-          top: -17px;
-          left: -17px;
-          width: 54px;
-          height: 54px;
-          background-color: ${hexToRgb(
-            checkbox.checked.backgroundColor,
-            0.2,
-          )};          
-          border-radius: 999;`
-        : 'display: none;'
-    }
+    position: absolute;
+    top: -17px;
+    left: -17px;
+    width: 54px;
+    height: 54px;
+    background-color: ${hexToRgb(
+      checkbox.checked.backgroundColor,
+      0.2,
+    )};          
+    border-radius: ${checkbox.hover.border.radii};
   `,
 );
 

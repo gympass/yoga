@@ -1,21 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] = `
-.c3 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
-.c2 {
+.c4 {
   position: relative;
   width: 24px;
   height: 24px;
+  margin-right: 8px;
   border-radius: 4px;
   border-width: 2px;
   border-style: solid;
@@ -27,8 +17,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   border-color: #F46152;
 }
 
-.c4 {
-  display: none;
+.c5 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
 }
 
 .c0 {
@@ -42,8 +39,25 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   flex-wrap: wrap;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  color: #41414A;
+}
+
 .c1 {
   width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -60,10 +74,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   align-items: center;
 }
 
-.c5 {
-  padding-left: 8px;
-  font-size: 14px;
-  color: #41414A;
+.c1:hover .c3:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -17px;
+  width: 54px;
+  height: 54px;
+  background-color: rgba(244,97,82,0.2);
+  border-radius: 9999px;
 }
 
 .c6 {
@@ -93,24 +112,18 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
     <div
       class="c1"
     >
-      <div
+      <label
         class="c2"
       >
-        <input
-          checked=""
-          class="c3"
-          id="checkbox"
-          type="checkbox"
-          value="value"
-        />
         <div
-          class="c4"
-        />
-      </div>
-      <label
-        class="c5"
-        for="checkbox"
-      >
+          class="c3 c4"
+        >
+          <input
+            checked=""
+            class="c5"
+            type="checkbox"
+          />
+        </div>
         Checkbox Component
       </label>
     </div>
@@ -128,7 +141,18 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 `;
 
 exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] = `
-.c3 {
+.c4 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #F46152;
+}
+
+.c5 {
   border: 0;
   height: 0;
   margin: 0;
@@ -137,20 +161,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   padding: 0;
   position: absolute;
   width: 0;
-}
-
-.c2 {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #F46152;
-}
-
-.c4 {
-  display: none;
 }
 
 .c0 {
@@ -164,8 +174,25 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   flex-wrap: wrap;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  color: #41414A;
+}
+
 .c1 {
   width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -182,10 +209,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   align-items: center;
 }
 
-.c5 {
-  padding-left: 8px;
-  font-size: 14px;
-  color: #41414A;
+.c1:hover .c3:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -17px;
+  width: 54px;
+  height: 54px;
+  background-color: rgba(244,97,82,0.2);
+  border-radius: 9999px;
 }
 
 .c6 {
@@ -215,23 +247,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
     <div
       class="c1"
     >
-      <div
+      <label
         class="c2"
       >
-        <input
-          class="c3"
-          id="checkbox"
-          type="checkbox"
-          value="value"
-        />
         <div
-          class="c4"
-        />
-      </div>
-      <label
-        class="c5"
-        for="checkbox"
-      >
+          class="c3 c4"
+        >
+          <input
+            class="c5"
+            type="checkbox"
+          />
+        </div>
         Checkbox Component
       </label>
     </div>
@@ -249,21 +275,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 `;
 
 exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked checkbox 1`] = `
-.c3 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
-.c2 {
+.c4 {
   position: relative;
   width: 24px;
   height: 24px;
+  margin-right: 8px;
   border-radius: 4px;
   border-width: 2px;
   border-style: solid;
@@ -276,8 +292,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   background-color: #9898A6;
 }
 
-.c4 {
-  display: none;
+.c5 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
 }
 
 .c0 {
@@ -291,8 +314,25 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   flex-wrap: wrap;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  color: #41414A;
+}
+
 .c1 {
   width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -309,10 +349,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   align-items: center;
 }
 
-.c5 {
-  padding-left: 8px;
-  font-size: 14px;
-  color: #41414A;
+.c1:hover .c3:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -17px;
+  width: 54px;
+  height: 54px;
+  background-color: rgba(244,97,82,0.2);
+  border-radius: 9999px;
 }
 
 .c6 {
@@ -342,25 +387,20 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
     <div
       class="c1"
     >
-      <div
-        class="c2"
-        disabled=""
-      >
-        <input
-          checked=""
-          class="c3"
-          id="checkbox"
-          type="checkbox"
-          value="value"
-        />
-        <div
-          class="c4"
-        />
-      </div>
       <label
-        class="c5"
-        for="checkbox"
+        class="c2"
       >
+        <div
+          class="c3 c4"
+          disabled=""
+        >
+          <input
+            checked=""
+            class="c5"
+            disabled=""
+            type="checkbox"
+          />
+        </div>
         Checkbox Component
       </label>
     </div>
@@ -378,7 +418,18 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 `;
 
 exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`] = `
-.c3 {
+.c4 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #9898A6;
+}
+
+.c5 {
   border: 0;
   height: 0;
   margin: 0;
@@ -387,20 +438,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   padding: 0;
   position: absolute;
   width: 0;
-}
-
-.c2 {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #9898A6;
-}
-
-.c4 {
-  display: none;
 }
 
 .c0 {
@@ -414,8 +451,25 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   flex-wrap: wrap;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  color: #41414A;
+}
+
 .c1 {
   width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -432,10 +486,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   align-items: center;
 }
 
-.c5 {
-  padding-left: 8px;
-  font-size: 14px;
-  color: #41414A;
+.c1:hover .c3:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -17px;
+  width: 54px;
+  height: 54px;
+  background-color: rgba(244,97,82,0.2);
+  border-radius: 9999px;
 }
 
 .c6 {
@@ -465,24 +524,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
     <div
       class="c1"
     >
-      <div
-        class="c2"
-        disabled=""
-      >
-        <input
-          class="c3"
-          id="checkbox"
-          type="checkbox"
-          value="value"
-        />
-        <div
-          class="c4"
-        />
-      </div>
       <label
-        class="c5"
-        for="checkbox"
+        class="c2"
       >
+        <div
+          class="c3 c4"
+          disabled=""
+        >
+          <input
+            class="c5"
+            disabled=""
+            type="checkbox"
+          />
+        </div>
         Checkbox Component
       </label>
     </div>
@@ -500,21 +554,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 `;
 
 exports[`<Checkbox /> Snapshots should match snapshot with error and checked checkbox 1`] = `
-.c3 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
-.c2 {
+.c4 {
   position: relative;
   width: 24px;
   height: 24px;
+  margin-right: 8px;
   border-radius: 4px;
   border-width: 2px;
   border-style: solid;
@@ -528,8 +572,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   background-color: #CB3530;
 }
 
-.c4 {
-  display: none;
+.c5 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
 }
 
 .c0 {
@@ -543,8 +594,25 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   flex-wrap: wrap;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  color: #41414A;
+}
+
 .c1 {
   width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -561,10 +629,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   align-items: center;
 }
 
-.c5 {
-  padding-left: 8px;
-  font-size: 14px;
-  color: #41414A;
+.c1:hover .c3:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -17px;
+  width: 54px;
+  height: 54px;
+  background-color: rgba(244,97,82,0.2);
+  border-radius: 9999px;
 }
 
 .c6 {
@@ -594,24 +667,18 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
     <div
       class="c1"
     >
-      <div
+      <label
         class="c2"
       >
-        <input
-          checked=""
-          class="c3"
-          id="checkbox"
-          type="checkbox"
-          value="value"
-        />
         <div
-          class="c4"
-        />
-      </div>
-      <label
-        class="c5"
-        for="checkbox"
-      >
+          class="c3 c4"
+        >
+          <input
+            checked=""
+            class="c5"
+            type="checkbox"
+          />
+        </div>
         Checkbox Component
       </label>
     </div>
@@ -629,7 +696,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 `;
 
 exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = `
-.c3 {
+.c4 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #F46152;
+  border-color: #CB3530;
+}
+
+.c5 {
   border: 0;
   height: 0;
   margin: 0;
@@ -638,21 +717,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   padding: 0;
   position: absolute;
   width: 0;
-}
-
-.c2 {
-  position: relative;
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #F46152;
-  border-color: #CB3530;
-}
-
-.c4 {
-  display: none;
 }
 
 .c0 {
@@ -666,8 +730,25 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   flex-wrap: wrap;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 14px;
+  color: #41414A;
+}
+
 .c1 {
   width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -684,10 +765,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   align-items: center;
 }
 
-.c5 {
-  padding-left: 8px;
-  font-size: 14px;
-  color: #41414A;
+.c1:hover .c3:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -17px;
+  width: 54px;
+  height: 54px;
+  background-color: rgba(244,97,82,0.2);
+  border-radius: 9999px;
 }
 
 .c6 {
@@ -717,23 +803,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
     <div
       class="c1"
     >
-      <div
+      <label
         class="c2"
       >
-        <input
-          class="c3"
-          id="checkbox"
-          type="checkbox"
-          value="value"
-        />
         <div
-          class="c4"
-        />
-      </div>
-      <label
-        class="c5"
-        for="checkbox"
-      >
+          class="c3 c4"
+        >
+          <input
+            class="c5"
+            type="checkbox"
+          />
+        </div>
         Checkbox Component
       </label>
     </div>
