@@ -11,9 +11,13 @@ const Wrapper = styled.View`
 `;
 
 const LineWrapper = styled.View(
-  ({ theme: { spacing } }) => `
+  ({
+    theme: {
+      components: { stepper },
+    },
+  }) => `
   width: 100%;
-  padding: 0 ${spacing.xxlarge}px;
+  padding: 0 ${stepper.padding.right}px 0 ${stepper.padding.left}px;
 `,
 );
 

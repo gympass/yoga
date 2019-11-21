@@ -24,6 +24,10 @@ const BaseTheme = ({ primary, secondary }) => {
 
   const components = {
     stepper: {
+      padding: {
+        left: spacing.xxlarge,
+        right: spacing.xxlarge,
+      },
       line: {
         backgroundColor: {
           active: colors.primary[3],
