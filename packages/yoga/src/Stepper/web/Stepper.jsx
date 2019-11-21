@@ -11,11 +11,15 @@ const Root = styled.div`
 `;
 
 const LineWrapper = styled.div(
-  ({ theme: { spacing } }) => `
+  ({
+    theme: {
+      components: { stepper },
+    },
+  }) => `
   width: 100%;
   height: 46px;
 
-  padding: 0 ${spacing.xxlarge}px;
+  padding: 0 ${stepper.padding.right}px 0 ${stepper.padding.left}px;
 `,
 );
 
