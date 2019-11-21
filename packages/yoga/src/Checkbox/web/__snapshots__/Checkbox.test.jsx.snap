@@ -3,6 +3,9 @@
 exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] = `
 .c4 {
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
   margin-right: 8px;
@@ -29,14 +32,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 }
 
 .c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: inline-block;
 }
 
 .c2 {
@@ -56,18 +52,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 }
 
 .c1 {
-  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -86,23 +75,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 }
 
 .c6 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  width: 100%;
   margin-top: 4px;
 }
 
 .c7 {
-  font-size: 14px;
   color: #9898A6;
+  font-size: 14px;
 }
 
 <div>
@@ -143,6 +126,9 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] = `
 .c4 {
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
   margin-right: 8px;
@@ -164,14 +150,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 }
 
 .c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: inline-block;
 }
 
 .c2 {
@@ -191,18 +170,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 }
 
 .c1 {
-  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -221,23 +193,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 }
 
 .c6 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  width: 100%;
   margin-top: 4px;
 }
 
 .c7 {
-  font-size: 14px;
   color: #9898A6;
+  font-size: 14px;
 }
 
 <div>
@@ -277,6 +243,9 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked checkbox 1`] = `
 .c4 {
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
   margin-right: 8px;
@@ -304,14 +273,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 }
 
 .c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: inline-block;
 }
 
 .c2 {
@@ -331,18 +293,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 }
 
 .c1 {
-  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -361,23 +316,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 }
 
 .c6 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  width: 100%;
   margin-top: 4px;
 }
 
 .c7 {
-  font-size: 14px;
   color: #9898A6;
+  font-size: 14px;
 }
 
 <div>
@@ -420,6 +369,9 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`] = `
 .c4 {
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
   margin-right: 8px;
@@ -441,14 +393,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 }
 
 .c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: inline-block;
 }
 
 .c2 {
@@ -468,18 +413,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 }
 
 .c1 {
-  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -498,23 +436,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 }
 
 .c6 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  width: 100%;
   margin-top: 4px;
 }
 
 .c7 {
-  font-size: 14px;
   color: #9898A6;
+  font-size: 14px;
 }
 
 <div>
@@ -556,6 +488,9 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 exports[`<Checkbox /> Snapshots should match snapshot with error and checked checkbox 1`] = `
 .c4 {
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
   margin-right: 8px;
@@ -584,14 +519,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 }
 
 .c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: inline-block;
 }
 
 .c2 {
@@ -611,18 +539,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 }
 
 .c1 {
-  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -641,23 +562,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 }
 
 .c6 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  width: 100%;
   margin-top: 4px;
 }
 
 .c7 {
-  font-size: 14px;
   color: #CB3530;
+  font-size: 14px;
 }
 
 <div>
@@ -698,6 +613,9 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = `
 .c4 {
   position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
   margin-right: 8px;
@@ -720,14 +638,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 }
 
 .c0 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: inline-block;
 }
 
 .c2 {
@@ -747,18 +658,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 }
 
 .c1 {
-  width: 100%;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -777,23 +681,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 }
 
 .c6 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  width: 100%;
   margin-top: 4px;
 }
 
 .c7 {
-  font-size: 14px;
   color: #CB3530;
+  font-size: 14px;
 }
 
 <div>
