@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 const config = require('./config');
 
 const plugins = [
@@ -54,18 +55,10 @@ const plugins = [
     },
   },
   {
-    resolve: `gatsby-plugin-prefetch-google-fonts`,
+    resolve: `gatsby-plugin-google-fonts`,
     options: {
-      fonts: [
-        {
-          family: 'Open Sans',
-          variants: ['300', '500', '700'],
-        },
-        {
-          family: 'Muli',
-          variants: ['100', '300', '400', '500', '700', '900'],
-        },
-      ],
+      fonts: [`open sans\:300,500,700`, `muli\:100,300,400,500,700,900`],
+      display: 'swap',
     },
   },
 ];

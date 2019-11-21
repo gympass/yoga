@@ -1,0 +1,311 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] = `
+.c6 {
+  width: 15px;
+  height: 15px;
+  border-radius: 9999px;
+}
+
+.c8 {
+  width: 95px;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  position: relative;
+  width: 15px;
+  text-align: center;
+}
+
+.c4 .c7 {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  color: #F46152;
+}
+
+.c4 .c5 {
+  position: absolute;
+  top: -10px;
+  background-color: #F46152;
+}
+
+.c9 {
+  position: relative;
+  width: 15px;
+  text-align: center;
+}
+
+.c9 .c7 {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  color: #9898A6;
+}
+
+.c9 .c5 {
+  position: absolute;
+  top: -10px;
+  background-color: #DBDBE8;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  width: 100%;
+  height: 4px;
+  background-color: #DBDBE8;
+}
+
+.c2:after {
+  display: block;
+  content: '';
+  width: 0%;
+  height: 4px;
+  background-color: #F46152;
+}
+
+.c10 {
+  width: 100%;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  width: 100%;
+  height: 46px;
+  padding: 0 40px 0 40px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+        width="0"
+      />
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5 c6"
+          />
+          <span
+            class="c7 c8"
+          >
+            step one
+          </span>
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c5 c6"
+          />
+          <span
+            class="c7 c8"
+          >
+            step two
+          </span>
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c5 c6"
+          />
+          <span
+            class="c7 c8"
+          >
+            step three
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+      label="step one"
+    >
+      step one content
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Stepper /> Snapshots should match snapshot with second step active 1`] = `
+.c6 {
+  width: 15px;
+  height: 15px;
+  border-radius: 9999px;
+}
+
+.c8 {
+  width: 95px;
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.c4 {
+  position: relative;
+  width: 15px;
+  text-align: center;
+}
+
+.c4 .c7 {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  color: #F46152;
+}
+
+.c4 .c5 {
+  position: absolute;
+  top: -10px;
+  background-color: #F46152;
+}
+
+.c9 {
+  position: relative;
+  width: 15px;
+  text-align: center;
+}
+
+.c9 .c7 {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  color: #9898A6;
+}
+
+.c9 .c5 {
+  position: absolute;
+  top: -10px;
+  background-color: #DBDBE8;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c2 {
+  width: 100%;
+  height: 4px;
+  background-color: #DBDBE8;
+}
+
+.c2:after {
+  display: block;
+  content: '';
+  width: 50%;
+  height: 4px;
+  background-color: #F46152;
+}
+
+.c10 {
+  width: 100%;
+}
+
+.c0 {
+  width: 100%;
+}
+
+.c1 {
+  width: 100%;
+  height: 46px;
+  padding: 0 40px 0 40px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+        width="50"
+      />
+      <div
+        class="c3"
+      >
+        <div
+          class="c4"
+        >
+          <div
+            class="c5 c6"
+          />
+          <span
+            class="c7 c8"
+          >
+            step one
+          </span>
+        </div>
+        <div
+          class="c4"
+        >
+          <div
+            class="c5 c6"
+          />
+          <span
+            class="c7 c8"
+          >
+            step two
+          </span>
+        </div>
+        <div
+          class="c9"
+        >
+          <div
+            class="c5 c6"
+          />
+          <span
+            class="c7 c8"
+          >
+            step three
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c10"
+      label="step two"
+    >
+      step two content
+    </div>
+  </div>
+</div>
+`;
