@@ -2,7 +2,7 @@ import React from 'react';
 import { node } from 'prop-types';
 import styled from 'styled-components';
 
-import customPropType from '../customPropType';
+import limitPropType from '../limitPropType';
 import Dots from './Dots';
 import Line from './Line';
 
@@ -42,7 +42,7 @@ Stepper.propTypes = {
   /** Must be an Stepper.Step component. */
   children: node,
   /** Controls the active step, it receive the index value for showing some step. Starting from 0. */
-  activeStep: customPropType,
+  activeStep: limitPropType,
 };
 
 Stepper.defaultProps = {
