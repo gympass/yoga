@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.4.1...@gympass/yoga-doc@0.5.0) (2019-11-21)
+
+### Bug Fixes
+
+- **yoga/doc:** change gatsby google-fonts plugin ([7d28f78](https://github.com/Gympass/yoga/commit/7d28f7893ba056f98e0f74c59c6a774357517858))
+- **yoga/doc:** fix CodeSandboxButton proptype ([056b3c0](https://github.com/Gympass/yoga/commit/056b3c007180fa403cf28f7cf6555565fc290b94))
+
+### Features
+
+- **yoga/stepper:** stepper component for web environment ([320bb24](https://github.com/Gympass/yoga/commit/320bb241f817cbb968efb6d7fadf7dc9a58dca17))
+- **yoga/stepper:** stepper component for web platform ([1f73872](https://github.com/Gympass/yoga/commit/1f73872b2eec67aa03ddfa8c04ac81c29fe55d47))
+
 ## [0.4.1](https://github.com/Gympass/design-system/compare/@gympass/yoga-doc@0.4.0...@gympass/yoga-doc@0.4.1) (2019-11-13)
 
 **Note:** Version bump only for package @gympass/yoga-doc
