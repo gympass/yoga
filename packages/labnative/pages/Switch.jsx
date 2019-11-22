@@ -16,7 +16,7 @@ const SwitchWrapper = styled.View`
   align-items: center;
 `;
 
-const CheckboxPage = () => {
+const SwitchPage = () => {
   const [checked, setChecked] = useState(true);
   return (
     <View
@@ -47,4 +47,4 @@ const CheckboxPage = () => {
   );
 };
 
-export default CheckboxPage;
+export default SwitchPage;
