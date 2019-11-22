@@ -4,17 +4,20 @@ import { Checkbox } from '@gympass/yoga';
 import styled from 'styled-components';
 
 const StyledText = styled.Text`
-  font-size: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
+
+  font-size: 20px;
   text-align: center;
 `;
 
 const CheckboxWrapper = styled.View`
   flex-direction: row;
-  margin-bottom: 10px;
-  text-align: center;
   align-items: center;
+
+  margin-bottom: 10px;
+
+  text-align: center;
 `;
 
 const CheckboxPage = () => {
