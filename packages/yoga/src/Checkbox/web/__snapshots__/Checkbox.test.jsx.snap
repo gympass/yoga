@@ -49,6 +49,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   align-items: center;
   font-size: 14px;
   color: #41414A;
+  cursor: pointer;
 }
 
 .c1 {
@@ -163,6 +164,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   align-items: center;
   font-size: 14px;
   color: #41414A;
+  cursor: pointer;
 }
 
 .c1 {
@@ -282,6 +284,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   align-items: center;
   font-size: 14px;
   color: #41414A;
+  cursor: pointer;
 }
 
 .c1 {
@@ -398,6 +401,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   align-items: center;
   font-size: 14px;
   color: #41414A;
+  cursor: pointer;
 }
 
 .c1 {
@@ -520,6 +524,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   align-items: center;
   font-size: 14px;
   color: #41414A;
+  cursor: pointer;
 }
 
 .c1 {
@@ -635,6 +640,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   align-items: center;
   font-size: 14px;
   color: #41414A;
+  cursor: pointer;
 }
 
 .c1 {
