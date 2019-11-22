@@ -7,7 +7,9 @@ const StyledList = styled.ul(
     divided,
     horizontal,
     theme: {
-      components: { list },
+      yoga: {
+        components: { list },
+      },
     },
   }) => `
   display: flex;

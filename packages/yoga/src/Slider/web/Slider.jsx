@@ -31,7 +31,9 @@ const Slider = ({
   min,
   minLabel,
   theme: {
-    components: { slider },
+    yoga: {
+      components: { slider },
+    },
   },
   ...props
 }) => {

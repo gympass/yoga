@@ -12,7 +12,9 @@ const CheckboxWrapper = styled.div`
 const Label = styled.label(
   ({
     theme: {
-      components: { checkbox },
+      yoga: {
+        components: { checkbox },
+      },
     },
   }) => `
     display: flex;
@@ -30,7 +32,9 @@ const Label = styled.label(
 const CheckboxStyled = styled.div(
   ({
     theme: {
-      components: { checkbox },
+      yoga: {
+        components: { checkbox },
+      },
     },
   }) => `
     position: relative;
@@ -59,7 +63,9 @@ const CheckboxStyled = styled.div(
 const HelperWrapper = styled.div(
   ({
     theme: {
-      components: { checkbox },
+      yoga: {
+        components: { checkbox },
+      },
     },
   }) => `
     width: 100%;
@@ -71,7 +77,9 @@ const Helper = styled.span(
   ({
     error,
     theme: {
-      components: { checkbox },
+      yoga: {
+        components: { checkbox },
+      },
     },
   }) => `
     color: ${

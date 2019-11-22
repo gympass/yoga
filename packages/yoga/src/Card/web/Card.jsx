@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const CardStyled = styled.div(
   ({
     theme: {
-      components: { card },
+      yoga: {
+        components: { card },
+      },
     },
   }) => `
     position: relative;

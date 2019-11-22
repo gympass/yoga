@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ThemeProvider from '../../ThemeProvider';
+import ThemeProvider from '../../Theme';
 import Stepper from '..';
 
 describe('<Stepper />', () => {

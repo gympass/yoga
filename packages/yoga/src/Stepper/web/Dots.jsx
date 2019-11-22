@@ -7,7 +7,9 @@ import activeDot from '../activeDot';
 const Dot = styled.div(
   ({
     theme: {
-      components: { stepper },
+      yoga: {
+        components: { stepper },
+      },
     },
   }) => `
     width: 15px;
@@ -20,7 +22,9 @@ const Dot = styled.div(
 const Label = styled.span(
   ({
     theme: {
-      components: { stepper },
+      yoga: {
+        components: { stepper },
+      },
     },
   }) => `
     width: 95px;
@@ -36,7 +40,9 @@ const DotWrapper = styled.div(
   ({
     active,
     theme: {
-      components: { stepper },
+      yoga: {
+        components: { stepper },
+      },
     },
   }) => `
     position: relative;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ThemeProvider from '../../ThemeProvider';
+import ThemeProvider from '../../Theme';
 import Card from './Card';
 
 describe('<Card />', () => {
