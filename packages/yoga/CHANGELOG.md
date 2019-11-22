@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.4.1...@gympass/yoga@0.5.0) (2019-11-22)
+
+### Features
+
+- **checkbox:** create checkbox component for web ([d338c1c](https://github.com/Gympass/yoga/commit/d338c1c212998e67b025df948e852fb374af3439))
+- **checkbox:** creating checkbox component for native ([ba55f95](https://github.com/Gympass/yoga/commit/ba55f9519dbd88f94bcbac59e38904415d16fcb3))
+- **checkbox:** creating checkbox component for native ([ea9b41d](https://github.com/Gympass/yoga/commit/ea9b41dc1fc4e700cb9ebffe47677a84126531cc))
+
 ## [0.4.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.4.0...@gympass/yoga@0.4.1) (2019-11-22)
 
 **Note:** Version bump only for package @gympass/yoga

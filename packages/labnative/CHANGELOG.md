@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.4.1...@gympass/yoga-labnative@0.5.0) (2019-11-22)
+
+### Features
+
+- **checkbox:** creating checkbox component for native ([ea9b41d](https://github.com/Gympass/yoga/commit/ea9b41dc1fc4e700cb9ebffe47677a84126531cc))
+- **checkbox:** creating checkbox native example (labnative) ([0983c30](https://github.com/Gympass/yoga/commit/0983c30efd52b0c0211bf5713a211b1d4edc87f6))
+
 ## [0.4.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.4.0...@gympass/yoga-labnative@0.4.1) (2019-11-22)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
