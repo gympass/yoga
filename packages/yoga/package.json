@@ -11,7 +11,7 @@
     "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
     "prebuild": "rm -rf ./dist",
     "prepublishOnly": "node ../../prepublish.js",
-    "postpublish": "node scripts/notify.js"
+    "postpublish": "lerna run deploy --scope=@gympass/yoga-doc && node scripts/notify.js"
   },
   "keywords": [
     "Gympass",
