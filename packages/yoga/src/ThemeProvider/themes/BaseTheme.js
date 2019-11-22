@@ -25,6 +25,35 @@ const BaseTheme = ({ primary, secondary }) => {
   };
 
   const components = {
+    stepper: {
+      padding: {
+        left: spacing.xxlarge,
+        right: spacing.xxlarge,
+      },
+      line: {
+        backgroundColor: {
+          active: colors.primary[3],
+          inactive: colors.gray[2],
+        },
+      },
+      dot: {
+        radius: radii.circle,
+        backgroundColor: {
+          active: colors.primary[3],
+          inactive: colors.gray[2],
+        },
+      },
+      label: {
+        font: {
+          size: fontSizes[1],
+          weight: fontWeights.bold,
+        },
+        color: {
+          active: colors.primary[3],
+          inactive: colors.gray[3],
+        },
+      },
+    },
     slider: {
       track: {
         backgroundColor: {

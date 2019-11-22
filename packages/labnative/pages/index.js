@@ -4,6 +4,7 @@ import Switch from './Switch';
 import RadioGroup from './RadioGroup';
 import Slider from './Slider';
 import Card from './Card';
+import Stepper from './Stepper';
 import Checkbox from './Checkbox';
 
-export { Button, Switch, List, RadioGroup, Slider, Card, Checkbox };
+export { Button, Switch, List, RadioGroup, Slider, Card, Stepper, Checkbox };

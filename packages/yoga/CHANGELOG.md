@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.4.0...@gympass/yoga@0.4.1) (2019-11-22)
+
+**Note:** Version bump only for package @gympass/yoga
+
+# [0.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.3.0...@gympass/yoga@0.4.0) (2019-11-21)
+
+### Features
+
+- **yoga/stepper:** stepper component for native platform ([adc4011](https://github.com/Gympass/yoga/commit/adc4011d8c4f1139f5855e83eec25c3f3567057b))
+- **yoga/stepper:** stepper component for web environment ([320bb24](https://github.com/Gympass/yoga/commit/320bb241f817cbb968efb6d7fadf7dc9a58dca17))
+- **yoga/stepper:** stepper component for web platform ([1f73872](https://github.com/Gympass/yoga/commit/1f73872b2eec67aa03ddfa8c04ac81c29fe55d47))
+
 # [0.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.2.0...@gympass/yoga@0.3.0) (2019-11-13)
 
 ### Features
