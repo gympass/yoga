@@ -10,7 +10,9 @@ const CheckMarkStyled = styled.View(
     disabled,
     error,
     theme: {
-      components: { checkbox },
+      yoga: {
+        components: { checkbox },
+      },
     },
   }) => `
     width: 24px;
@@ -51,7 +53,9 @@ const CheckIcon = styled.Image`
 const CirclePressed = styled.View(
   ({
     theme: {
-      components: { checkbox },
+      yoga: {
+        components: { checkbox },
+      },
     },
   }) => `
     position: absolute;

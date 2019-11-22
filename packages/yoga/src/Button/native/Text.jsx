@@ -9,14 +9,16 @@ const LabelText = styled(Label)`
     disabled,
     pressed,
     theme: {
-      components: {
-        button: {
-          types: {
-            text: {
-              textColor: {
-                disabled: disabledColor,
-                enabled: enabledColor,
-                pressed: pressedColor,
+      yoga: {
+        components: {
+          button: {
+            types: {
+              text: {
+                textColor: {
+                  disabled: disabledColor,
+                  enabled: enabledColor,
+                  pressed: pressedColor,
+                },
               },
             },
           },
@@ -36,14 +38,16 @@ const ButtonContainerText = styled(ButtonContainer)`
     pressed,
     disabled,
     theme: {
-      components: {
-        button: {
-          types: {
-            text: {
-              backgroundColor: {
-                disabled: disabledBackgroundColor,
-                enabled: enabledBackgroundColor,
-                pressed: pressedBackgroundColor,
+      yoga: {
+        components: {
+          button: {
+            types: {
+              text: {
+                backgroundColor: {
+                  disabled: disabledBackgroundColor,
+                  enabled: enabledBackgroundColor,
+                  pressed: pressedBackgroundColor,
+                },
               },
             },
           },

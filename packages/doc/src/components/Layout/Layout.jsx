@@ -69,7 +69,9 @@ const GlobalStyle = createGlobalStyle`
 const MainWrapper = styled.div`
   ${({
     theme: {
-      colors: { primary: primaryPallete },
+      yoga: {
+        colors: { primary: primaryPallete },
+      },
     },
   }) => `
     code {
@@ -88,7 +90,9 @@ const MainWrapper = styled.div`
 const Grid = styled.div`
   ${({
     theme: {
-      colors: { gray: grayPallete },
+      yoga: {
+        colors: { gray: grayPallete },
+      },
     },
   }) => `
     background-color: ${hexToRgb(grayPallete[1], 0.7)};

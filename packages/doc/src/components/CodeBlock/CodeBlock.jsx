@@ -26,7 +26,9 @@ const StyledLiveError = styled(LiveError)`
 const Pre = styled.pre`
   ${({
     theme: {
-      colors: { primary: primaryPallete },
+      yoga: {
+        colors: { primary: primaryPallete },
+      },
     },
   }) => `
     border-radius: 5px;
@@ -43,7 +45,9 @@ const Pre = styled.pre`
 const Preview = styled.div`
   ${({
     theme: {
-      colors: { gray: grayPallete },
+      yoga: {
+        colors: { gray: grayPallete },
+      },
     },
   }) => `
     background-color: ${grayPallete[0]};
@@ -62,7 +66,9 @@ const Component = styled.div`
     'data-center': center,
     darkMode,
     theme: {
-      colors: { white, dark },
+      yoga: {
+        colors: { white, dark },
+      },
     },
   }) => `
     font-family: 'Open Sans';
@@ -89,7 +95,9 @@ const Usage = styled.div`
   ${({
     visible,
     theme: {
-      colors: { gray: grayPallete },
+      yoga: {
+        colors: { gray: grayPallete },
+      },
     },
   }) => `
     background-color: ${grayPallete[0]};
@@ -107,7 +115,9 @@ const Usage = styled.div`
 const Toolbar = styled.div`
   ${({
     theme: {
-      colors: { gray: grayPallete },
+      yoga: {
+        colors: { gray: grayPallete },
+      },
     },
   }) => `
     align-items: center;
@@ -121,7 +131,9 @@ const Toolbar = styled.div`
 const ToolbarIconButton = styled.button`
   ${({
     theme: {
-      colors: { primary: primaryPallete, gray: grayPallete },
+      yoga: {
+        colors: { primary: primaryPallete, gray: grayPallete },
+      },
     },
   }) => `
     background-color: transparent;

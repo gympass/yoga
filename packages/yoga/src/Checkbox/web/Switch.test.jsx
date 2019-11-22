@@ -2,7 +2,7 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 
 import Checkbox from '..';
-import ThemeProvider from '../../ThemeProvider';
+import ThemeProvider from '../../Theme';
 
 describe('<Checkbox />', () => {
   describe('<Checkbox.Switch />', () => {

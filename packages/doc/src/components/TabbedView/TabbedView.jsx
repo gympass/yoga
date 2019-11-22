@@ -5,7 +5,9 @@ import styled from 'styled-components';
 const Navbar = styled.ul`
   ${({
     theme: {
-      colors: { gray: grayPallete },
+      yoga: {
+        colors: { gray: grayPallete },
+      },
     },
   }) => `
     border-bottom: 1px dotted ${grayPallete[2]};
@@ -24,7 +26,9 @@ const NavItem = styled.li`
   ${({
     active,
     theme: {
-      colors: { primary: primaryPallete },
+      yoga: {
+        colors: { primary: primaryPallete },
+      },
     },
   }) => `
     cursor: pointer;

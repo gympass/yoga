@@ -5,20 +5,22 @@ import Button from './Button';
 const ButtonText = styled(Button)`
   ${({
     theme: {
-      components: {
-        button: {
-          types: {
-            text: {
-              backgroundColor: {
-                disabled: disabledBackgroundColor,
-                enabled: enabledBackgroundColor,
-                pressed: pressedBackgroundColor,
-                hover: hoverBackgroundColor,
-              },
-              textColor: {
-                disabled: disabledTextColor,
-                enabled: enabledTextColor,
-                pressed: pressedTextColor,
+      yoga: {
+        components: {
+          button: {
+            types: {
+              text: {
+                backgroundColor: {
+                  disabled: disabledBackgroundColor,
+                  enabled: enabledBackgroundColor,
+                  pressed: pressedBackgroundColor,
+                  hover: hoverBackgroundColor,
+                },
+                textColor: {
+                  disabled: disabledTextColor,
+                  enabled: enabledTextColor,
+                  pressed: pressedTextColor,
+                },
               },
             },
           },

@@ -9,7 +9,9 @@ import { InlineCode } from '..';
 const TableWrapper = styled.div`
   ${({
     theme: {
-      colors: { gray: grayPallete },
+      yoga: {
+        colors: { gray: grayPallete },
+      },
     },
   }) => `
     border: 1px solid ${grayPallete[2]};
@@ -21,7 +23,9 @@ const TableWrapper = styled.div`
 const StyledTable = styled.table`
   ${({
     theme: {
-      colors: { primary: primaryPallete, gray: grayPallete },
+      yoga: {
+        colors: { primary: primaryPallete, gray: grayPallete },
+      },
     },
   }) => `
     background-color: ${grayPallete[0]};

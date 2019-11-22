@@ -8,7 +8,9 @@ import Tooltip from './Tooltip';
 const Circle = styled.TouchableOpacity(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     background-color: ${slider.marker.backgroundColor};
@@ -27,7 +29,9 @@ const CirclePressed = styled(Circle)(
   ({
     pressed,
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     ${

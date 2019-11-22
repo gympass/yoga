@@ -5,7 +5,9 @@ import styled from 'styled-components';
 const Wrapper = styled.View(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     background-color: ${slider.tooltip.ribbon.backgroundColor};
@@ -21,7 +23,9 @@ const Wrapper = styled.View(
 const Tip = styled.View(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `  
     background-color: ${slider.tooltip.backgroundColor};
@@ -35,7 +39,9 @@ const Tip = styled.View(
 const Title = styled.Text(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     color: ${slider.tooltip.font.color};
@@ -49,7 +55,9 @@ const Title = styled.Text(
 const Description = styled.Text(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     color: ${slider.tooltip.font.color};
@@ -62,7 +70,9 @@ const Description = styled.Text(
 const Arrow = styled.View(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     align-self: center;
@@ -82,7 +92,9 @@ const Arrow = styled.View(
 const RibbonWrapper = styled.View(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     align-items: center;
@@ -98,7 +110,9 @@ const RibbonWrapper = styled.View(
 const RibbonText = styled.Text(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     color: ${slider.tooltip.ribbon.font.color};

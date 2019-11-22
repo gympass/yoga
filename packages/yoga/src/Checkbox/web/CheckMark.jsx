@@ -7,7 +7,9 @@ const CheckMark = styled.div(
     disabled,
     error,
     theme: {
-      components: { checkbox },
+      yoga: {
+        components: { checkbox },
+      },
     },
   }) => `
     position: relative;

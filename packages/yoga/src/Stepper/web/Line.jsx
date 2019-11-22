@@ -5,7 +5,9 @@ const Line = styled.div(
   ({
     width,
     theme: {
-      components: { stepper },
+      yoga: {
+        components: { stepper },
+      },
     },
   }) => `
     width: 100%;
