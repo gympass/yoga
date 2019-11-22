@@ -45,7 +45,7 @@ const CheckMarkStyled = styled.View(
 const CheckIcon = styled.Image`
   width: 16px;
   height: 11px;
-  margin: 4px 2px 4px 2px;
+  margin: 4px 2px 4px;
 `;
 
 const CirclePressed = styled.View(
@@ -65,7 +65,7 @@ const CirclePressed = styled.View(
       checkbox.checked.backgroundColor,
       0.2,
     )};          
-    border-radius: ${checkbox.hover.border.radius};
+    border-radius: ${checkbox.hover.border.radius}px;
   `,
 );
 
