@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.5.1...@gympass/yoga@1.0.0) (2019-11-22)
+
+### Code Refactoring
+
+- **yoga/theme:** new file structure for theme provider. Add Yoga prefix ([747b2bf](https://github.com/Gympass/yoga/commit/747b2bf1a2436c9163ba0556934300c9f452eb28)), closes [#40](https://github.com/Gympass/yoga/issues/40)
+
+### BREAKING CHANGES
+
+- **yoga/theme:** Adding a new prefix to our theme results in something like this:
+
 ## [0.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.5.0...@gympass/yoga@0.5.1) (2019-11-22)
 
 ### Bug Fixes
