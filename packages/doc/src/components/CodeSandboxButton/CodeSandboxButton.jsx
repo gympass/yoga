@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { string } from 'prop-types';
+import { string, arrayOf } from 'prop-types';
 import CodeSandboxIcon from '../../images/codesandbox.svg';
 import LoadingIcon from '../../images/loading.svg';
 
@@ -33,7 +33,7 @@ const CodeSandboxButton = ({ code }) => {
 };
 
 CodeSandboxButton.propTypes = {
-  code: string.isRequired,
+  code: arrayOf(string).isRequired,
 };
 
 export default CodeSandboxButton;
