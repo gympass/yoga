@@ -75,10 +75,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 }
 
 .c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   margin-top: 4px;
 }
@@ -193,10 +189,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 }
 
 .c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   margin-top: 4px;
 }
@@ -316,10 +308,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 }
 
 .c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   margin-top: 4px;
 }
@@ -436,10 +424,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 }
 
 .c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   margin-top: 4px;
 }
@@ -562,10 +546,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 }
 
 .c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   margin-top: 4px;
 }
@@ -681,10 +661,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 }
 
 .c6 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   margin-top: 4px;
 }
