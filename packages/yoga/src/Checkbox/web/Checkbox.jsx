@@ -60,8 +60,6 @@ const HelperWrapper = styled.div(
       components: { checkbox },
     },
   }) => `
-    display: flex;
-    
     width: 100%;
     margin-top: ${checkbox.helper.margin.top}px;
   `,
