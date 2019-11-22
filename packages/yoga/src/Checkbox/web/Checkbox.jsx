@@ -22,6 +22,8 @@ const Label = styled.label(
     font-size: ${checkbox.label.font.size}px;
 
     color: ${checkbox.label.font.color};
+
+    cursor: pointer;
   `,
 );
 
