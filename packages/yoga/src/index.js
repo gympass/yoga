@@ -1,4 +1,4 @@
-import ThemeProvider, { themes } from './ThemeProvider';
+import ThemeProvider, { themes } from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
