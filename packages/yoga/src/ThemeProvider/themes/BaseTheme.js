@@ -20,6 +20,8 @@ const BaseTheme = ({ primary, secondary }) => {
     gray: tokenColors.gray,
     white: tokenColors.white,
     dark: tokenColors.dark,
+    positive: tokenColors.positive,
+    negative: tokenColors.negative,
   };
 
   const components = {
@@ -293,6 +295,59 @@ const BaseTheme = ({ primary, secondary }) => {
       },
       radii: radii.rounded,
       elevation: elevations.small,
+    },
+    checkbox: {
+      margin: {
+        right: spacing.xsmall,
+      },
+      border: {
+        width: borders.medium,
+        color: colors.primary[3],
+        radius: radii.semiRounded,
+      },
+      label: {
+        padding: {
+          left: spacing.xsmall,
+        },
+        font: {
+          size: fontSizes[2],
+          color: colors.dark,
+        },
+      },
+      helper: {
+        margin: {
+          top: spacing.xxsmall,
+        },
+        font: {
+          size: fontSizes[2],
+          color: colors.gray[3],
+        },
+        selected: {
+          font: {
+            color: colors.negative[1],
+          },
+        },
+      },
+      hover: {
+        border: {
+          radius: radii.circle,
+        },
+      },
+      checked: {
+        backgroundColor: colors.primary[3],
+      },
+      disabled: {
+        backgroundColor: colors.gray[3],
+        border: {
+          color: colors.gray[3],
+        },
+      },
+      error: {
+        backgroundColor: colors.negative[1],
+        border: {
+          color: colors.negative[1],
+        },
+      },
     },
   };
 

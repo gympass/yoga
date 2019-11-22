@@ -1,6 +1,4 @@
-import Switch from './web/Switch';
-
-const Checkbox = {};
+import { Checkbox, Switch } from './web';
 
 Checkbox.Switch = Switch;
 

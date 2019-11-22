@@ -1,0 +1,574 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <TouchableWithoutFeedback
+      accessibilityRole="checkbox"
+      disabled={false}
+      value="value"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+          ]
+        }
+      >
+        <View
+          checked={true}
+          disabled={false}
+          error={false}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#F46152",
+                "borderColor": "#F46152",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 11,
+                  "marginBottom": 4,
+                  "marginLeft": 2,
+                  "marginRight": 2,
+                  "marginTop": 4,
+                  "width": 16,
+                },
+              ]
+            }
+          />
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontSize": 14,
+                "paddingLeft": 8,
+              },
+            ]
+          }
+        >
+          Checkbox Component
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+    <View
+      style={
+        Array [
+          Object {
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        error={false}
+        style={
+          Array [
+            Object {
+              "color": "#9898A6",
+              "fontSize": 14,
+            },
+          ]
+        }
+      >
+        Helper Text
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <TouchableWithoutFeedback
+      accessibilityRole="checkbox"
+      disabled={false}
+      value="value"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+          ]
+        }
+      >
+        <View
+          checked={false}
+          disabled={false}
+          error={false}
+          style={
+            Array [
+              Object {
+                "borderColor": "#F46152",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontSize": 14,
+                "paddingLeft": 8,
+              },
+            ]
+          }
+        >
+          Checkbox Component
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+    <View
+      style={
+        Array [
+          Object {
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        error={false}
+        style={
+          Array [
+            Object {
+              "color": "#9898A6",
+              "fontSize": 14,
+            },
+          ]
+        }
+      >
+        Helper Text
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked checkbox 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <TouchableWithoutFeedback
+      accessibilityRole="checkbox"
+      disabled={true}
+      value="value"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+          ]
+        }
+      >
+        <View
+          checked={true}
+          disabled={true}
+          error={false}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#9898A6",
+                "borderColor": "#9898A6",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 11,
+                  "marginBottom": 4,
+                  "marginLeft": 2,
+                  "marginRight": 2,
+                  "marginTop": 4,
+                  "width": 16,
+                },
+              ]
+            }
+          />
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontSize": 14,
+                "paddingLeft": 8,
+              },
+            ]
+          }
+        >
+          Checkbox Component
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+    <View
+      style={
+        Array [
+          Object {
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        error={false}
+        style={
+          Array [
+            Object {
+              "color": "#9898A6",
+              "fontSize": 14,
+            },
+          ]
+        }
+      >
+        Helper Text
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <TouchableWithoutFeedback
+      accessibilityRole="checkbox"
+      disabled={true}
+      value="value"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+          ]
+        }
+      >
+        <View
+          checked={false}
+          disabled={true}
+          error={false}
+          style={
+            Array [
+              Object {
+                "borderColor": "#9898A6",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontSize": 14,
+                "paddingLeft": 8,
+              },
+            ]
+          }
+        >
+          Checkbox Component
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+    <View
+      style={
+        Array [
+          Object {
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        error={false}
+        style={
+          Array [
+            Object {
+              "color": "#9898A6",
+              "fontSize": 14,
+            },
+          ]
+        }
+      >
+        Helper Text
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with error and checked checkbox 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <TouchableWithoutFeedback
+      accessibilityRole="checkbox"
+      disabled={false}
+      value="value"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+          ]
+        }
+      >
+        <View
+          checked={true}
+          disabled={false}
+          error={true}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "#CB3530",
+                "borderColor": "#CB3530",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
+              }
+            }
+            style={
+              Array [
+                Object {
+                  "height": 11,
+                  "marginBottom": 4,
+                  "marginLeft": 2,
+                  "marginRight": 2,
+                  "marginTop": 4,
+                  "width": 16,
+                },
+              ]
+            }
+          />
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontSize": 14,
+                "paddingLeft": 8,
+              },
+            ]
+          }
+        >
+          Checkbox Component
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+    <View
+      style={
+        Array [
+          Object {
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        error={true}
+        style={
+          Array [
+            Object {
+              "color": "#CB3530",
+              "fontSize": 14,
+            },
+          ]
+        }
+      >
+        Helper Text
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <TouchableWithoutFeedback
+      accessibilityRole="checkbox"
+      disabled={false}
+      value="value"
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+          ]
+        }
+      >
+        <View
+          checked={false}
+          disabled={false}
+          error={true}
+          style={
+            Array [
+              Object {
+                "borderColor": "#CB3530",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontSize": 14,
+                "paddingLeft": 8,
+              },
+            ]
+          }
+        >
+          Checkbox Component
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+    <View
+      style={
+        Array [
+          Object {
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        error={true}
+        style={
+          Array [
+            Object {
+              "color": "#CB3530",
+              "fontSize": 14,
+            },
+          ]
+        }
+      >
+        Helper Text
+      </Text>
+    </View>
+  </View>
+</View>
+`;
