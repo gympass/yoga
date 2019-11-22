@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 
@@ -10,7 +11,6 @@ const data = {
   helper: 'Helper Text',
 };
 
-/* eslint-disable no-console */
 const originalError = console.error;
 
 beforeEach(() => {
