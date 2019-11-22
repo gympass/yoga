@@ -13,7 +13,9 @@ const Root = styled.div`
 const LineWrapper = styled.div(
   ({
     theme: {
-      components: { stepper },
+      yoga: {
+        components: { stepper },
+      },
     },
   }) => `
   width: 100%;

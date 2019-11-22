@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
 import { Text } from 'react-native';
-import ThemeProvider from '../../ThemeProvider';
+import ThemeProvider from '../../Theme';
 import List from '..';
 
 const data = [

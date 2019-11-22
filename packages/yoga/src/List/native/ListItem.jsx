@@ -6,7 +6,9 @@ const StyledView = styled.View(
   ({
     divided,
     theme: {
-      components: { list },
+      yoga: {
+        components: { list },
+      },
     },
   }) => `
   ${

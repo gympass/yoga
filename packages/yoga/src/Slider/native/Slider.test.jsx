@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, toJSON, fireEvent } from '@testing-library/react-native';
-import ThemeProvider from '../../ThemeProvider';
+import ThemeProvider from '../../Theme';
 import Slider from './Slider';
 
 describe('<Slider />', () => {

@@ -16,10 +16,12 @@ const Group = styled.View(
 const GrayLine = styled.View(
   ({
     theme: {
-      components: {
-        radioGroup: {
-          radii,
-          border: { width: borderWidth, color: borderColor },
+      yoga: {
+        components: {
+          radioGroup: {
+            radii,
+            border: { width: borderWidth, color: borderColor },
+          },
         },
       },
     },

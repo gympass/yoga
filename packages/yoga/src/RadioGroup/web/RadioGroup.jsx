@@ -9,10 +9,12 @@ const Group = styled.div.attrs({
 })(
   ({
     theme: {
-      components: {
-        radioGroup: {
-          radii,
-          border: { width: borderWidth, color: borderColors },
+      yoga: {
+        components: {
+          radioGroup: {
+            radii,
+            border: { width: borderWidth, color: borderColors },
+          },
         },
       },
     },

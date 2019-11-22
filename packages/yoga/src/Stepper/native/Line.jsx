@@ -9,7 +9,9 @@ const Wrapper = styled.View`
 const InactiveLine = styled.View(
   ({
     theme: {
-      components: { stepper },
+      yoga: {
+        components: { stepper },
+      },
     },
   }) => `
   width: 100%;
@@ -26,7 +28,9 @@ const ActiveLine = styled.View(
   ({
     width,
     theme: {
-      components: { stepper },
+      yoga: {
+        components: { stepper },
+      },
     },
   }) => `
     position: absolute;

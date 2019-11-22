@@ -10,19 +10,21 @@ const Label = styled.Text`
     pressed,
     inverted,
     theme: {
-      components: {
-        button: {
-          font: { size, weight },
-          types: {
-            contained: {
-              backgroundColor: {
-                enabled: enabledBackgroundColor,
-                pressed: pressedBackgroundColor,
-              },
-              textColor: {
-                disabled: disabledTextColor,
-                enabled: enabledTextColor,
-                pressed: pressedTextColor,
+      yoga: {
+        components: {
+          button: {
+            font: { size, weight },
+            types: {
+              contained: {
+                backgroundColor: {
+                  enabled: enabledBackgroundColor,
+                  pressed: pressedBackgroundColor,
+                },
+                textColor: {
+                  disabled: disabledTextColor,
+                  enabled: enabledTextColor,
+                  pressed: pressedTextColor,
+                },
               },
             },
           },
@@ -57,23 +59,25 @@ const ButtonContainer = styled.View`
     small,
     inverted,
     theme: {
-      components: {
-        button: {
-          padding: { left: paddingLeft, right: paddingRight },
-          height: { normal: normalHeight, small: smallHeight },
-          border: {
-            small: { width: smallWidth },
-            default: { width: defaultWidth },
-            radius,
-          },
-          types: {
-            contained: {
-              backgroundColor: {
-                disabled: disabledBackgroundColor,
-                enabled: enabledBackgroundColor,
-                pressed: pressedBackgroundColor,
+      yoga: {
+        components: {
+          button: {
+            padding: { left: paddingLeft, right: paddingRight },
+            height: { normal: normalHeight, small: smallHeight },
+            border: {
+              small: { width: smallWidth },
+              default: { width: defaultWidth },
+              radius,
+            },
+            types: {
+              contained: {
+                backgroundColor: {
+                  disabled: disabledBackgroundColor,
+                  enabled: enabledBackgroundColor,
+                  pressed: pressedBackgroundColor,
+                },
+                textColor: { enabled: enabledTextColor },
               },
-              textColor: { enabled: enabledTextColor },
             },
           },
         },

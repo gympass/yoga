@@ -9,27 +9,29 @@ const StyledButton = styled.button`
     small,
     inverted,
     theme: {
-      components: {
-        button: {
-          padding: { left: paddingLeft, right: paddingRight },
-          height: { small: smallHeight, normal: normalHeight },
-          font: { size, weight },
-          border: {
-            small: { width: smallWidth },
-            default: { width: defaultWidth },
-            radius,
-          },
-          types: {
-            contained: {
-              backgroundColor: {
-                disabled: disabledBackgroundColor,
-                enabled: enabledBackgroundColor,
-                pressed: pressedBackgroundColor,
-              },
-              textColor: {
-                disabled: disabledTextColor,
-                enabled: enabledTextColor,
-                pressed: pressedTextColor,
+      yoga: {
+        components: {
+          button: {
+            padding: { left: paddingLeft, right: paddingRight },
+            height: { small: smallHeight, normal: normalHeight },
+            font: { size, weight },
+            border: {
+              small: { width: smallWidth },
+              default: { width: defaultWidth },
+              radius,
+            },
+            types: {
+              contained: {
+                backgroundColor: {
+                  disabled: disabledBackgroundColor,
+                  enabled: enabledBackgroundColor,
+                  pressed: pressedBackgroundColor,
+                },
+                textColor: {
+                  disabled: disabledTextColor,
+                  enabled: enabledTextColor,
+                  pressed: pressedTextColor,
+                },
               },
             },
           },

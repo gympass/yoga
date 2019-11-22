@@ -5,7 +5,9 @@ const Step = styled.View(
   ({
     active,
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     background-color: ${

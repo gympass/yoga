@@ -8,8 +8,10 @@ import { HiddenInput } from '../../shared';
 const RadioMark = styled.label(
   ({
     theme: {
-      components: {
-        radioGroup: { radio },
+      yoga: {
+        components: {
+          radioGroup: { radio },
+        },
       },
     },
     small,

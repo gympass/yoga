@@ -7,21 +7,23 @@ const ButtonOutline = styled(Button)`
   ${({
     inverted,
     theme: {
-      colors: { white, gray },
-      components: {
-        button: {
-          types: {
-            outline: {
-              backgroundColor: {
-                disabled: disabledBackgroundColor,
-                enabled: enabledBackgroundColor,
-                pressed: pressedBackgroundColor,
-                hover: hoverBackgroundColor,
-              },
-              textColor: {
-                disabled: disabledTextColor,
-                enabled: enabledTextColor,
-                pressed: pressedTextColor,
+      yoga: {
+        colors: { white, gray },
+        components: {
+          button: {
+            types: {
+              outline: {
+                backgroundColor: {
+                  disabled: disabledBackgroundColor,
+                  enabled: enabledBackgroundColor,
+                  pressed: pressedBackgroundColor,
+                  hover: hoverBackgroundColor,
+                },
+                textColor: {
+                  disabled: disabledTextColor,
+                  enabled: enabledTextColor,
+                  pressed: pressedTextColor,
+                },
               },
             },
           },

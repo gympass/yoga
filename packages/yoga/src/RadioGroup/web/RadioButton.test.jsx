@@ -4,7 +4,7 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 
 import RadioGroup from '..';
-import ThemeProvider from '../../ThemeProvider';
+import ThemeProvider from '../../Theme';
 import RadioGroupContext from '../RadioGroupContext';
 
 const originalError = console.error;

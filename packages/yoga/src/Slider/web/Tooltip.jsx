@@ -6,7 +6,9 @@ const Wrapper = styled.div(
   ({
     hasRibbon,
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
   bottom: 30px;
@@ -35,7 +37,9 @@ Wrapper.defaultProps = {
 const Tip = styled.div(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     background-color: ${slider.tooltip.backgroundColor};
@@ -49,9 +53,11 @@ const Tip = styled.div(
 const Arrow = styled.div(
   ({
     theme: {
-      components: {
-        slider: {
-          tooltip: { backgroundColor, shadow },
+      yoga: {
+        components: {
+          slider: {
+            tooltip: { backgroundColor, shadow },
+          },
         },
       },
     },
@@ -73,7 +79,9 @@ const Arrow = styled.div(
 const Ribbon = styled.div(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     border-top-left-radius: ${slider.tooltip.ribbon.radius}px;
@@ -90,7 +98,9 @@ const Ribbon = styled.div(
 const Title = styled.div(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     color: ${slider.tooltip.font.color};
@@ -103,7 +113,9 @@ const Title = styled.div(
 const Description = styled.div(
   ({
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     color: ${slider.tooltip.font.color};

@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider as SCThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import * as tokens from '@gympass/yoga-tokens';
-import * as themes from './themes';
+import * as themes from '../themes';
 
 const getTheme = ({ theme, locale }) => {
   const token = tokens[locale] || tokens.default;
@@ -12,7 +12,9 @@ const getTheme = ({ theme, locale }) => {
 };
 
 const ThemeProvider = ({ children, ...theme }) => (
-  <SCThemeProvider theme={getTheme(theme)}>{children}</SCThemeProvider>
+  <SCThemeProvider theme={{ yoga: getTheme(theme) }}>
+    {children}
+  </SCThemeProvider>
 );
 
 ThemeProvider.propTypes = {

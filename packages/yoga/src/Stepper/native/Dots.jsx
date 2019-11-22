@@ -17,7 +17,9 @@ const Dot = styled.View(
   ({
     active,
     theme: {
-      components: { stepper },
+      yoga: {
+        components: { stepper },
+      },
     },
   }) => `
     width: 15px;
@@ -38,7 +40,9 @@ const Label = styled.Text(
   ({
     active,
     theme: {
-      components: { stepper },
+      yoga: {
+        components: { stepper },
+      },
     },
   }) => `
     width: 95px;

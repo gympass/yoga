@@ -17,7 +17,9 @@ const Slider = ({
   values,
   tooltip,
   theme: {
-    components: { slider },
+    yoga: {
+      components: { slider },
+    },
   },
   ...props
 }) => {

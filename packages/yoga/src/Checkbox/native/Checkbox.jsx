@@ -12,7 +12,9 @@ const CheckboxWrapper = styled.View`
 const Label = styled.Text(
   ({
     theme: {
-      components: { checkbox },
+      yoga: {
+        components: { checkbox },
+      },
     },
   }) => `
   padding-left: ${checkbox.label.padding.left}px;
@@ -26,7 +28,9 @@ const Label = styled.Text(
 const HelperWrapper = styled.View(
   ({
     theme: {
-      components: { checkbox },
+      yoga: {
+        components: { checkbox },
+      },
     },
   }) => `
   margin-top: ${checkbox.helper.margin.top}px;
@@ -37,7 +41,9 @@ const Helper = styled.Text(
   ({
     error,
     theme: {
-      components: { checkbox },
+      yoga: {
+        components: { checkbox },
+      },
     },
   }) => `
   font-size: ${checkbox.helper.font.size}px;

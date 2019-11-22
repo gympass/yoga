@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import { render, toJSON } from '@testing-library/react-native';
-import ThemeProvider from '../../ThemeProvider';
+import ThemeProvider from '../../Theme';
 import Stepper from '..';
 
 describe('<Stepper />', () => {

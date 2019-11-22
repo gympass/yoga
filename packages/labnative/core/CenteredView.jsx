@@ -39,7 +39,7 @@ const CenteredView = props => {
             <View
               style={{
                 height: 50,
-                backgroundColor: hexToRgb(theme.colors.gray[1]),
+                backgroundColor: hexToRgb(theme.yoga.colors.gray[1]),
               }}
             >
               {Platform.OS === 'ios' ? (
@@ -97,7 +97,7 @@ const CenteredView = props => {
                 alignItems: 'center',
                 flex: 1,
                 justifyContent: 'center',
-                backgroundColor: hexToRgb(theme.colors.gray[1]),
+                backgroundColor: hexToRgb(theme.yoga.colors.gray[1]),
               }}
               {...props}
             />

@@ -9,7 +9,9 @@ import createTree from './tree';
 const Wrapper = styled.div`
   ${({
     theme: {
-      colors: { gray: grayPallete },
+      yoga: {
+        colors: { gray: grayPallete },
+      },
     },
   }) => `
     align-items: center;
@@ -43,7 +45,9 @@ const AnchorLink = styled(Link)`
   ${({
     level,
     theme: {
-      colors: { gray: grayPallete },
+      yoga: {
+        colors: { gray: grayPallete },
+      },
     },
   }) => `
     color: ${grayPallete[4]};
@@ -61,7 +65,9 @@ const ListItem = styled.li`
   ${({
     active,
     theme: {
-      colors: { primary: primaryPallete },
+      yoga: {
+        colors: { primary: primaryPallete },
+      },
     },
   }) => `
     & > ${AnchorLink} {
@@ -79,7 +85,9 @@ const ListItem = styled.li`
 const Colapsible = styled.div`
   ${({
     theme: {
-      colors: { gray: grayPallete },
+      yoga: {
+        colors: { gray: grayPallete },
+      },
     },
   }) => `
     cursor: pointer;

@@ -2,7 +2,7 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 
 import RadioGroup from '..';
-import ThemeProvider from '../../ThemeProvider';
+import ThemeProvider from '../../Theme';
 
 describe('<RadioGroup />', () => {
   describe('Snapshots', () => {

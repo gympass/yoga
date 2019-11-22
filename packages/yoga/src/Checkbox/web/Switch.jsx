@@ -20,16 +20,18 @@ const SwitchTrack = styled.label`
 
   ${({
     theme: {
-      components: {
-        switch: {
-          track: {
-            width: trackWidth,
-            height: trackHeight,
-            radii: trackRadii,
-            backgroundColor: trackBackgroundColor,
-            transition: { duration: trackTransitionAnimation },
-            checked: { backgroundColor: checkedBackgroundColor },
-            disabled: { backgroundColor: disabledBackgroundColor },
+      yoga: {
+        components: {
+          switch: {
+            track: {
+              width: trackWidth,
+              height: trackHeight,
+              radii: trackRadii,
+              backgroundColor: trackBackgroundColor,
+              transition: { duration: trackTransitionAnimation },
+              checked: { backgroundColor: checkedBackgroundColor },
+              disabled: { backgroundColor: disabledBackgroundColor },
+            },
           },
         },
       },
@@ -62,24 +64,26 @@ const SwitchThumb = styled.span`
 
   ${({
     theme: {
-      components: {
-        switch: {
-          thumb: {
-            width: thumbWidth,
-            height: thumbHeight,
-            left: thumbLeft,
-            radii: thumbRadii,
-            backgroundColor: thumbBackgroundColor,
-            transition: { duration: thumbTransitionAnimation },
-            disabled: { backgroundColor: disabledBackgroundColor },
-          },
-          focus: {
-            checked: { backgroundColor: focusCheckedBackgroundColor },
-            disabled: { backgroundColor: focusDisabledBackgroundColor },
+      yoga: {
+        components: {
+          switch: {
+            thumb: {
+              width: thumbWidth,
+              height: thumbHeight,
+              left: thumbLeft,
+              radii: thumbRadii,
+              backgroundColor: thumbBackgroundColor,
+              transition: { duration: thumbTransitionAnimation },
+              disabled: { backgroundColor: disabledBackgroundColor },
+            },
+            focus: {
+              checked: { backgroundColor: focusCheckedBackgroundColor },
+              disabled: { backgroundColor: focusDisabledBackgroundColor },
+            },
           },
         },
+        spacing,
       },
-      spacing,
     },
     checked,
     disabled,
