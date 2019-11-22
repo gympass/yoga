@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.5.0...@gympass/yoga@0.5.1) (2019-11-22)
+
+### Bug Fixes
+
+- **yoga/checkbox:** add cursor pointer ([79793c1](https://github.com/Gympass/yoga/commit/79793c1383b1d2c32cd9ed8568f10d0a9cfc78be))
+
 # [0.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@0.4.1...@gympass/yoga@0.5.0) (2019-11-22)
 
 ### Features
