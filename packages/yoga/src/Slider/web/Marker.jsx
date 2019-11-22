@@ -9,7 +9,9 @@ const Circle = styled(RCHandle)(
   ({
     'data-dragging': dataDragging,
     theme: {
-      components: { slider },
+      yoga: {
+        components: { slider },
+      },
     },
   }) => `
     background-color: ${slider.marker.backgroundColor};

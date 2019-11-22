@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const CardStyled = styled.View(
   ({
     theme: {
-      components: { card },
+      yoga: {
+        components: { card },
+      },
     },
   }) => `
     flex-direction: column;

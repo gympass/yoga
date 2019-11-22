@@ -13,7 +13,9 @@ const Wrapper = styled.View`
 const LineWrapper = styled.View(
   ({
     theme: {
-      components: { stepper },
+      yoga: {
+        components: { stepper },
+      },
     },
   }) => `
   width: 100%;

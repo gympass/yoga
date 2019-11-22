@@ -9,7 +9,9 @@ const LOGO_WRAPPER_WIDTH = 250;
 const Wrapper = styled.div`
   ${({
     theme: {
-      colors: { gray: grayPallete },
+      yoga: {
+        colors: { gray: grayPallete },
+      },
     },
   }) => `
     align-items: center;
@@ -27,7 +29,9 @@ const Wrapper = styled.div`
 const LogoWrapper = styled.div`
   ${({
     theme: {
-      colors: { gray: grayPallete },
+      yoga: {
+        colors: { gray: grayPallete },
+      },
     },
   }) => `
     align-items: center;
@@ -43,7 +47,9 @@ const LogoWrapper = styled.div`
 const YogaLogo = styled(yoga)`
   ${({
     theme: {
-      colors: { primary: primaryPallete },
+      yoga: {
+        colors: { primary: primaryPallete },
+      },
     },
   }) => `
     path {

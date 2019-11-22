@@ -6,15 +6,17 @@ import { Animated, TouchableWithoutFeedback } from 'react-native';
 const SwitchTrack = styled.View`
   ${({
     theme: {
-      components: {
-        switch: {
-          track: {
-            width: trackWidth,
-            height: trackHeight,
-            radii: trackRadii,
-            backgroundColor: trackBackgroundColor,
-            checked: { backgroundColor: checkedBackgroundColor },
-            disabled: { backgroundColor: disabledBackgroundColor },
+      yoga: {
+        components: {
+          switch: {
+            track: {
+              width: trackWidth,
+              height: trackHeight,
+              radii: trackRadii,
+              backgroundColor: trackBackgroundColor,
+              checked: { backgroundColor: checkedBackgroundColor },
+              disabled: { backgroundColor: disabledBackgroundColor },
+            },
           },
         },
       },
@@ -44,14 +46,16 @@ const SwitchTrack = styled.View`
 const SwitchThumb = styled.View`
   ${({
     theme: {
-      components: {
-        switch: {
-          thumb: {
-            width: thumbWidth,
-            height: thumbHeight,
-            radii: thumbRadii,
-            backgroundColor: thumbBackgroundColor,
-            disabled: { backgroundColor: disabledBackgroundColor },
+      yoga: {
+        components: {
+          switch: {
+            thumb: {
+              width: thumbWidth,
+              height: thumbHeight,
+              radii: thumbRadii,
+              backgroundColor: thumbBackgroundColor,
+              disabled: { backgroundColor: disabledBackgroundColor },
+            },
           },
         },
       },
@@ -77,14 +81,16 @@ const CheckboxSwitch = ({
   checked,
   disabled,
   theme: {
-    components: {
-      switch: {
-        track: {
-          width: trackWidth,
-          backgroundColor: trackBackgroundColor,
-          checked: { backgroundColor: checkedBackgroundColor },
+    yoga: {
+      components: {
+        switch: {
+          track: {
+            width: trackWidth,
+            backgroundColor: trackBackgroundColor,
+            checked: { backgroundColor: checkedBackgroundColor },
+          },
+          thumb: { width: thumbWidth, left: thumbLeft },
         },
-        thumb: { width: thumbWidth, left: thumbLeft },
       },
     },
   },

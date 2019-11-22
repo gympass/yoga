@@ -10,16 +10,18 @@ const LabelOutline = styled(Label)`
     pressed,
     inverted,
     theme: {
-      colors: { white, gray },
-      components: {
-        button: {
-          types: {
-            outline: {
-              backgroundColor: { pressed: pressedBackgroundColor },
-              textColor: {
-                disabled: disabledTextColor,
-                enabled: enabledTextColor,
-                pressed: pressedTextColor,
+      yoga: {
+        colors: { white, gray },
+        components: {
+          button: {
+            types: {
+              outline: {
+                backgroundColor: { pressed: pressedBackgroundColor },
+                textColor: {
+                  disabled: disabledTextColor,
+                  enabled: enabledTextColor,
+                  pressed: pressedTextColor,
+                },
               },
             },
           },
@@ -51,20 +53,22 @@ const ButtonContainerOutline = styled(ButtonContainer)`
     disabled,
     inverted,
     theme: {
-      colors: { white, gray },
-      components: {
-        button: {
-          types: {
-            outline: {
-              backgroundColor: {
-                disabled: disabledBackgroundColor,
-                enabled: enabledBackgroundColor,
-                pressed: pressedBackgroundColor,
-              },
-              textColor: {
-                disabled: disabledTextColor,
-                enabled: enabledTextColor,
-                pressed: pressedTextColor,
+      yoga: {
+        colors: { white, gray },
+        components: {
+          button: {
+            types: {
+              outline: {
+                backgroundColor: {
+                  disabled: disabledBackgroundColor,
+                  enabled: enabledBackgroundColor,
+                  pressed: pressedBackgroundColor,
+                },
+                textColor: {
+                  disabled: disabledTextColor,
+                  enabled: enabledTextColor,
+                  pressed: pressedTextColor,
+                },
               },
             },
           },

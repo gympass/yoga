@@ -69,10 +69,12 @@ const Option = styled.li`
   ${({
     isSelected,
     theme: {
-      colors: {
-        primary: primaryPallete,
-        gray: { darkGray },
-        white,
+      yoga: {
+        colors: {
+          primary: primaryPallete,
+          gray: { darkGray },
+          white,
+        },
       },
     },
   }) => `

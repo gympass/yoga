@@ -8,8 +8,10 @@ import RadioGroupContext from '../RadioGroupContext';
 const RadioMark = styled.View(
   ({
     theme: {
-      components: {
-        radioGroup: { radio },
+      yoga: {
+        components: {
+          radioGroup: { radio },
+        },
       },
     },
     small,
@@ -38,8 +40,10 @@ const RadioMark = styled.View(
 const Text = styled.Text(
   ({
     theme: {
-      components: {
-        radioGroup: { radio },
+      yoga: {
+        components: {
+          radioGroup: { radio },
+        },
       },
     },
     checked,

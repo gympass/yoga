@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const StyledItem = styled.li(
   ({
     theme: {
-      components: { list },
+      yoga: {
+        components: { list },
+      },
     },
   }) => `
   padding: ${list.listItem.padding.top}px ${list.listItem.padding.right}px ${list.listItem.padding.bottom}px ${list.listItem.padding.left}px;
