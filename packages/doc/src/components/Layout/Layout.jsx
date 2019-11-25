@@ -5,9 +5,10 @@ import Helmet from 'react-helmet';
 import { ThemeProvider } from '@gympass/yoga';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Navigation, Documentation, Header, ThemeConfig } from '..';
-import Github from '../../images/github-logo.svg';
+import Footer from './Footer';
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle(
+  ({ overflow }) => `
   #gatsby-focus-wrapper, #___gatsby {
     height: 100%;
   }
@@ -18,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow: ${overflow ? 'hidden' : 'auto'};
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -39,7 +41,6 @@ const GlobalStyle = createGlobalStyle`
 
     + p {
       color: #6b6b78;
-      font-size: 18px;
       font-weight: 300;
       margin: 10px 0 50px;
     }
@@ -64,7 +65,30 @@ const GlobalStyle = createGlobalStyle`
   ul {
     line-height: 2;
   }
-`;
+
+  @media (max-width: 900px) {
+    h1 {
+      font-size: 26px;
+
+      + p {
+        margin-bottom: 30px;
+      }
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+`,
+);
 
 const MainWrapper = styled.div`
   ${({
@@ -74,12 +98,6 @@ const MainWrapper = styled.div`
       },
     },
   }) => `
-    code {
-      color: ${primaryPallete[3]};
-      font-family: monospace;
-      font-size: 14px;
-    }
-
     a[target] {
       color: ${primaryPallete[3]};
       text-decoration: none;
@@ -101,22 +119,19 @@ const Grid = styled.div`
     grid-template-rows: auto 1fr;
     grid-template-areas:
     'Header Header Header'
-    'Navigation Documentation Summary';
+    'Navigation Documentation Summary'
+    'Footer Footer Footer';
+
+    @media (max-width: 900px) {
+      grid-template-areas:
+      'Header'
+      'Documentation'
+      'Footer';
+
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+    }
   `};
-`;
-
-const GithubLink = styled.a`
-  margin-left: 15px;
-  opacity: 0.7;
-
-  &:hover {
-    opacity: 1;
-  }
-`;
-
-const GithubLogo = styled(Github)`
-  width: 22px;
-  height: 22px;
 `;
 
 const Layout = ({
@@ -129,6 +144,7 @@ const Layout = ({
   const { metaTitle, metaDescription } = frontmatter;
   const [theme, setTheme] = useState();
   const [locale, setLocale] = useState();
+  const [showMenu, toggleMenu] = useState(false);
 
   return (
     <ThemeProvider theme={theme} locale={locale}>
@@ -155,28 +171,35 @@ const Layout = ({
         ) : null}
         <script async src="https://snack.expo.io/embed.js" />
       </Helmet>
-      <GlobalStyle />
+      <GlobalStyle overflow={showMenu} />
 
       <MainWrapper>
         <Grid>
-          <Header>
+          <Header showMenu={showMenu} toggleMenu={toggleMenu}>
             <ThemeConfig
               theme={theme}
               locale={locale}
               setTheme={setTheme}
               setLocale={setLocale}
             />
-            <GithubLink
+          </Header>
+
+          <Navigation toggleMenu={toggleMenu} opened={showMenu} items={nav} />
+          <Documentation mdx={body} />
+          <Footer>
+            Made with{' '}
+            <span role="img" aria-label="heart">
+              ❤️
+            </span>{' '}
+            by Gympass •{' '}
+            <a
               href="https://github.com/gympass/yoga"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GithubLogo />
-            </GithubLink>
-          </Header>
-
-          <Navigation items={nav} />
-          <Documentation mdx={body} />
+              github
+            </a>
+          </Footer>
         </Grid>
       </MainWrapper>
     </ThemeProvider>

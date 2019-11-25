@@ -16,7 +16,7 @@ const TableWrapper = styled.div`
   }) => `
     border: 1px solid ${grayPallete[2]};
     border-radius: 5px;
-    overflow: hidden;
+    overflow-x: auto;
   `};
 `;
 
