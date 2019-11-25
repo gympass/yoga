@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.7](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.5.6...@gympass/yoga-doc@0.5.7) (2019-11-25)
+
+### Bug Fixes
+
+- **codeblock:** remove positive lookahead regex property from imports regex ([26dffb1](https://github.com/Gympass/yoga/commit/26dffb179072e027fdf862e72f57ffe5958885cb))
+- **yoga/doc:** fix arrow height and padding ([bbd18f3](https://github.com/Gympass/yoga/commit/bbd18f38cade3258b3f540bb93550073cf085482))
+
 ## [0.5.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.5.5...@gympass/yoga-doc@0.5.6) (2019-11-25)
 
 **Note:** Version bump only for package @gympass/yoga-doc
