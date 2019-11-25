@@ -184,10 +184,10 @@ const CodeBlock = ({ children, reactLive, center }) => {
   const [darkMode, setDarkMode] = useState(false);
 
   const normalizedCodeExample = children.trim();
-  const importsRegex = /(?<=<)([A-Z][A-Za-z]+)(?<=\s*)\/?(?=>?)/g;
-  const imports = [...new Set(normalizedCodeExample.match(importsRegex))].join(
-    ', ',
-  );
+  const importsRegex = /(?:<)([A-Z][A-Za-z]+)/g;
+  const imports = [...new Set(normalizedCodeExample.match(importsRegex))]
+    .join(', ')
+    .replace(/</g, '');
 
   const toggleCode = () => {
     setCodeVisible(!codeVisible);
