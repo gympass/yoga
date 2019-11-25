@@ -39,6 +39,12 @@ const Pre = styled.pre`
     .token.string {
       color: ${primaryPallete[3]} !important;
     }
+
+    overflow: auto;
+
+    @media (max-width: 900px) {
+      font-size: 12px;
+    }
   `}
 `;
 
@@ -87,6 +93,10 @@ const Component = styled.div`
     `
           : ''
       }
+    }
+
+    @media (max-width: 900px) {
+      padding: 20px;
     }
   `}
 `;

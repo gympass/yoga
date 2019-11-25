@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import { arrayOf, object } from 'prop-types';
+import { arrayOf, object, func, bool } from 'prop-types';
 
 import Arrow from '../../images/arrow-dropdown.svg';
 import createTree from './tree';
 
 const Wrapper = styled.div`
   ${({
+    opened,
     theme: {
       yoga: {
         colors: { gray: grayPallete },
@@ -25,6 +26,19 @@ const Wrapper = styled.div`
     span {
       color: ${grayPallete[4]};
     }
+
+    @media (max-width: 900px) {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      z-index: 3;
+
+      display: ${opened ? 'block' : 'none'};
+      width: 100%;
+      height: calc(100vh - 72px);
+
+      overflow: auto;
+    }
   `};
 `;
 
@@ -32,6 +46,11 @@ const Nav = styled.div`
   height: 100vh;
   padding: 30px;
   width: 100%;
+
+  @media (max-width: 900px) {
+    padding: 0 20px 0;
+    height: unset;
+  }
 `;
 
 const List = styled.ul`
@@ -102,7 +121,7 @@ const Colapsible = styled.div`
   }
 `;
 
-const getHtml = (tree, level = 0) =>
+const getHtml = (tree, level = 0, toggleMenu) =>
   Object.values(tree).map(({ title, url, ...childs }) => {
     const hasChild = Boolean(Object.keys(childs).length);
     const [opened, setOpened] = useState(true);
@@ -119,22 +138,26 @@ const getHtml = (tree, level = 0) =>
           level={level}
           as={hasChild && Colapsible}
           visible={opened.toString()}
-          onClick={hasChild ? () => setOpened(!opened) : null}
+          onClick={
+            hasChild ? () => setOpened(!opened) : () => toggleMenu(false)
+          }
         >
           {title} {hasChild ? <Arrow /> : ''}
         </AnchorLink>
-        {hasChild && <List level={level}>{getHtml(childs, level + 1)}</List>}
+        {hasChild && (
+          <List level={level}>{getHtml(childs, level + 1, toggleMenu)}</List>
+        )}
       </ListItem>
     );
   });
 
-const Navigation = ({ items }) => {
+const Navigation = ({ items, toggleMenu, opened }) => {
   const tree = createTree(items);
 
   return (
-    <Wrapper>
+    <Wrapper opened={opened}>
       <Nav>
-        <List level={0}>{getHtml(tree)}</List>
+        <List level={0}>{getHtml(tree, 0, toggleMenu)}</List>
       </Nav>
     </Wrapper>
   );
@@ -142,6 +165,8 @@ const Navigation = ({ items }) => {
 
 Navigation.propTypes = {
   items: arrayOf(object).isRequired,
+  toggleMenu: func.isRequired,
+  opened: bool.isRequired,
 };
 
 export default Navigation;
