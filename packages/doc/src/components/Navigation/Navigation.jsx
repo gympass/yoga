@@ -142,7 +142,8 @@ const getHtml = (tree, level = 0, toggleMenu) =>
             hasChild ? () => setOpened(!opened) : () => toggleMenu(false)
           }
         >
-          {title} {hasChild ? <Arrow /> : ''}
+          {title}{' '}
+          {hasChild ? <Arrow style={{ height: '100%', paddingTop: 10 }} /> : ''}
         </AnchorLink>
         {hasChild && (
           <List level={level}>{getHtml(childs, level + 1, toggleMenu)}</List>
