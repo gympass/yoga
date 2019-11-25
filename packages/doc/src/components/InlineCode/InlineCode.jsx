@@ -8,7 +8,7 @@ const InlineCode = styled.code(
       },
     },
   }) => `
-  padding: 2px 5px 5px;
+  padding: 2px 5px;
 
   background-color: #f6f8fa;
   border: 1px solid #e2dddd;
