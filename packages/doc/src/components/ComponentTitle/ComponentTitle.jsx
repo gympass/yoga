@@ -7,6 +7,7 @@ const Heading = styled.h1`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  word-break: break-all;
 `;
 
 const getMetaData = (isComponent, component) => {
