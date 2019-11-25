@@ -48,6 +48,7 @@ const Button = styled.button`
 
 const ArrowDropdown = styled(Arrow)`
   width: 10px;
+  padding-bottom: 4px;
 `;
 
 const OptionsList = styled.ul`
