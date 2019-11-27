@@ -9,9 +9,6 @@ const CardStyled = styled.View(
       },
     },
   }) => `
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
     padding:
       ${card.padding.top}px 
       ${card.padding.right}px 
