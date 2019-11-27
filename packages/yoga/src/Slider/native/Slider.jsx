@@ -16,6 +16,7 @@ const Slider = ({
   snapped,
   values,
   tooltip,
+  sliderLength,
   theme: {
     yoga: {
       components: { slider },
@@ -49,7 +50,7 @@ const Slider = ({
   };
 
   return (
-    <>
+    <View style={{ width: sliderLength }}>
       {snapped && (
         <View
           style={{
@@ -62,40 +63,39 @@ const Slider = ({
           {renderSnapDots()}
         </View>
       )}
-      <View>
-        <MultiSlider
-          values={values}
-          trackStyle={{
-            backgroundColor: slider.track.backgroundColor.inactive,
-            height: 4,
-            borderRadius: slider.track.border.radius,
-          }}
-          selectedStyle={{
-            backgroundColor: slider.track.backgroundColor.active,
-          }}
-          isMarkersSeparated
-          min={min}
-          max={max}
-          snapped={snapped}
-          customMarkerLeft={({ pressed }) => (
-            <Marker tooltip={renderTooltip('left')} pressed={pressed} />
-          )}
-          customMarkerRight={({ pressed }) => (
-            <Marker tooltip={renderTooltip('right')} pressed={pressed} />
-          )}
-          touchDimensions={{
-            slipDisplacement: 400,
-          }}
-          {...props}
-        />
-        {(minLabel || maxLabel) && (
-          <LabelView>
-            {minLabel && <LabelText placement="left">{minLabel}</LabelText>}
-            {maxLabel && <LabelText placement="right">{maxLabel}</LabelText>}
-          </LabelView>
+      <MultiSlider
+        {...props}
+        values={values}
+        sliderLength={sliderLength}
+        trackStyle={{
+          backgroundColor: slider.track.backgroundColor.inactive,
+          height: 4,
+          borderRadius: slider.track.border.radius,
+        }}
+        selectedStyle={{
+          backgroundColor: slider.track.backgroundColor.active,
+        }}
+        isMarkersSeparated
+        min={min}
+        max={max}
+        snapped={snapped}
+        customMarkerLeft={({ pressed }) => (
+          <Marker tooltip={renderTooltip('left')} pressed={pressed} />
         )}
-      </View>
-    </>
+        customMarkerRight={({ pressed }) => (
+          <Marker tooltip={renderTooltip('right')} pressed={pressed} />
+        )}
+        touchDimensions={{
+          slipDisplacement: 400,
+        }}
+      />
+      {(minLabel || maxLabel) && (
+        <LabelView>
+          {minLabel && <LabelText placement="left">{minLabel}</LabelText>}
+          {maxLabel && <LabelText placement="right">{maxLabel}</LabelText>}
+        </LabelView>
+      )}
+    </View>
   );
 };
 
@@ -108,6 +108,7 @@ Slider.propTypes = {
   min: number,
   /** label to be displayed at min value */
   minLabel: oneOfType([string, number]),
+  sliderLength: number,
   /** make slider be snap through dots */
   snapped: bool,
   /** accepts a shape with 'ribbon', 'title', 'description', 'visible' and 'step' properties */
@@ -129,6 +130,7 @@ Slider.defaultProps = {
   maxLabel: undefined,
   min: 0,
   minLabel: undefined,
+  sliderLength: 280,
   snapped: false,
   tooltip: [],
   values: [0],

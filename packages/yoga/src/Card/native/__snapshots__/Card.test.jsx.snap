@@ -17,8 +17,6 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
           "backgroundColor": "#FFFFFF",
           "borderRadius": 8,
           "elevation": 4,
-          "flexDirection": "column",
-          "justifyContent": "flex-start",
           "paddingBottom": 16,
           "paddingLeft": 16,
           "paddingRight": 16,
@@ -30,7 +28,6 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
           },
           "shadowOpacity": 1,
           "shadowRadius": 6,
-          "width": "100%",
         },
       ]
     }
