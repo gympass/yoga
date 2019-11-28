@@ -9,6 +9,7 @@ import Summary from './Summary';
 import Documentation from './Documentation';
 import Dropdown from './Dropdown';
 import { TabbedView, Tab } from './TabbedView';
+import TabBar from './TabBar';
 import CodeSandboxButton from './CodeSandboxButton';
 import ThemeConfig from './ThemeConfig';
 
@@ -25,6 +26,7 @@ export {
   Dropdown,
   TabbedView,
   Tab,
+  TabBar,
   CodeSandboxButton,
   ThemeConfig,
 };

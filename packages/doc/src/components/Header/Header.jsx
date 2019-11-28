@@ -88,6 +88,7 @@ const Actions = styled.div`
   justify-content: flex-end;
   padding: 0 20px;
   width: calc(100% - ${LOGO_WRAPPER_WIDTH}px);
+  height: 100%;
 
   @media (max-width: 900px) {
     display: none;

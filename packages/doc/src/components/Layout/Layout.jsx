@@ -4,8 +4,13 @@ import styled, { createGlobalStyle } from 'styled-components';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from '@gympass/yoga';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Navigation, Documentation, Header, ThemeConfig } from '..';
+import { Link } from 'gatsby';
+
+import { Navigation, Documentation, Header, ThemeConfig, TabBar } from '..';
 import Footer from './Footer';
+
+import ReactLogo from '../../images/react-logo.svg';
+import BookLogo from '../../images/book.svg';
 
 const GlobalStyle = createGlobalStyle(
   ({ overflow }) => `
@@ -123,6 +128,7 @@ const Grid = styled.div`
     'Footer Footer Footer';
 
     @media (max-width: 900px) {
+      padding-bottom: 64px;
       grid-template-areas:
       'Header'
       'Documentation'
@@ -133,6 +139,33 @@ const Grid = styled.div`
     }
   `};
 `;
+
+const HeaderLink = styled(Link).attrs({
+  activeClassName: 'active',
+  partiallyActive: true,
+})(
+  ({
+    theme: {
+      yoga: {
+        colors: { primary, gray },
+      },
+    },
+  }) =>
+    `
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    color: ${gray[3]};
+    height: 100%;
+
+    &.active {
+      border-bottom-color: ${primary[3]};
+      color: ${primary[3]};
+    }
+  `,
+);
 
 const Layout = ({
   data: {
@@ -176,6 +209,8 @@ const Layout = ({
       <MainWrapper>
         <Grid>
           <Header showMenu={showMenu} toggleMenu={toggleMenu}>
+            <HeaderLink to="/guidelines">Guidelines</HeaderLink>
+            <HeaderLink to="/components">Components</HeaderLink>
             <ThemeConfig
               theme={theme}
               locale={locale}
@@ -183,6 +218,16 @@ const Layout = ({
               setLocale={setLocale}
             />
           </Header>
+          <TabBar>
+            <TabBar.Tab to="/guidelines">
+              <BookLogo />
+              Guidelines
+            </TabBar.Tab>
+            <TabBar.Tab to="/components">
+              <ReactLogo />
+              Components
+            </TabBar.Tab>
+          </TabBar>
 
           <Navigation toggleMenu={toggleMenu} opened={showMenu} items={nav} />
           <Documentation mdx={body} />
