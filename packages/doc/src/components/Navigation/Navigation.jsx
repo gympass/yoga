@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 
       display: ${opened ? 'block' : 'none'};
       width: 100%;
-      height: calc(100vh - 72px);
+      padding-bottom: 68px;
 
       overflow: auto;
     }
@@ -53,7 +53,7 @@ const Nav = styled.div`
   }
 `;
 
-const List = styled.ul`
+const StyledList = styled.ul`
   font-size: 14px;
   list-style-type: none;
   padding: 0px;
@@ -80,7 +80,7 @@ const AnchorLink = styled(Link)`
   `};
 `;
 
-const ListItem = styled.li`
+const StyledListItem = styled.li`
   ${({
     active,
     theme: {
@@ -121,44 +121,59 @@ const Colapsible = styled.div`
   }
 `;
 
-const getHtml = (tree, level = 0, toggleMenu) =>
-  Object.values(tree).map(({ title, url, ...childs }) => {
-    const hasChild = Boolean(Object.keys(childs).length);
-    const [opened, setOpened] = useState(true);
+const ListItem = ({ title, url, childs, level, toggleMenu }) => {
+  const [opened, setOpened] = useState(true);
+  const hasChild = Boolean(Object.keys(childs).length);
 
-    return (
-      <ListItem
-        key={url}
-        active={
-          typeof window !== 'undefined' && window.location.pathname === url
-        }
+  return (
+    <StyledListItem
+      key={url}
+      active={typeof window !== 'undefined' && window.location.pathname === url}
+    >
+      <AnchorLink
+        to={url}
+        level={level}
+        as={hasChild && Colapsible}
+        visible={opened.toString()}
+        onClick={hasChild ? () => setOpened(!opened) : () => toggleMenu(false)}
       >
-        <AnchorLink
-          to={url}
-          level={level}
-          as={hasChild && Colapsible}
-          visible={opened.toString()}
-          onClick={
-            hasChild ? () => setOpened(!opened) : () => toggleMenu(false)
-          }
-        >
-          {title}{' '}
-          {hasChild ? <Arrow style={{ height: '100%', paddingTop: 10 }} /> : ''}
-        </AnchorLink>
-        {hasChild && (
-          <List level={level}>{getHtml(childs, level + 1, toggleMenu)}</List>
-        )}
-      </ListItem>
-    );
-  });
+        {title}{' '}
+        {hasChild ? <Arrow style={{ height: '100%', paddingTop: 10 }} /> : ''}
+      </AnchorLink>
+      {hasChild && (
+        <StyledList level={level}>
+          <List tree={childs} level={level + 1} toggleMenu={toggleMenu} />
+        </StyledList>
+      )}
+    </StyledListItem>
+  );
+};
+
+const List = ({ tree, level = 0, toggleMenu }) => (
+  <StyledList>
+    {Object.values(tree).map(({ title, url, ...childs }) => (
+      <ListItem
+        key={title}
+        title={title}
+        url={url}
+        childs={childs}
+        level={level}
+        toggleMenu={toggleMenu}
+      />
+    ))}
+  </StyledList>
+);
 
 const Navigation = ({ items, toggleMenu, opened }) => {
-  const tree = createTree(items);
+  const [, firstPath] = window.location.pathname.split('/');
+  const filteredItems = items.filter(({ url }) => url.includes(firstPath));
+  const tree = createTree(filteredItems);
+  console.log('TCL: Navigation -> tree', tree);
 
   return (
     <Wrapper opened={opened}>
       <Nav>
-        <List level={0}>{getHtml(tree, 0, toggleMenu)}</List>
+        <List tree={tree} toggleMenu={toggleMenu} />
       </Nav>
     </Wrapper>
   );
