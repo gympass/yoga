@@ -8709,6 +8709,11 @@ gh-pages@^2.1.1:
     graceful-fs "^4.1.11"
     rimraf "^2.6.2"
 
+git-last-commit@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/git-last-commit/-/git-last-commit-1.0.0.tgz#49acbad49b0ec4dae33d3a3ac7ab0a1bacf4928e"
+  integrity sha512-wpnmsd2dW1MnoencljcWO/06VUealfMaY40ZjK5t3v9ljL+bKCMbNaTn/YzwIh4pDo2hk5QcN+pLzUJ8aWB17A==
+
 git-raw-commits@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/git-raw-commits/-/git-raw-commits-2.0.0.tgz#d92addf74440c14bcc5c83ecce3fb7f8a79118b5"
