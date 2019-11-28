@@ -1,26 +1,15 @@
 /* eslint-disable no-console */
 const https = require('https');
-
-const pkg = require('../package.json');
+const git = require('git-last-commit');
 
 const slackWebHook = process.env.SLACK_WEBHOOK_URL;
 
 const releaseNotification = {
   username: 'Yoga',
+  icon_emoji: ':yoga-ds:',
   text:
     'A new <https://github.com/Gympass/yoga/releases|version> has been released! <https://gympass.github.io/yoga|Check it out!> :tada:',
-  icon_emoji: ':yoga-ds:',
-  attachments: [
-    {
-      color: '#F46152',
-      fields: [
-        {
-          title: 'Version',
-          value: pkg.version,
-        },
-      ],
-    },
-  ],
+  attachments: [],
 };
 
 function sendSlackMessage(webhookURL, messageBody) {
@@ -51,6 +40,18 @@ function sendSlackMessage(webhookURL, messageBody) {
   });
 }
 
+function getChangedPackages() {
+  return new Promise((resolve, reject) => {
+    git.getLastCommit(function(error, commit) {
+      if (error) {
+        reject(error);
+      }
+
+      resolve(commit);
+    });
+  });
+}
+
 async function notify() {
   if (!slackWebHook) {
     console.log('Missing Slack Webhook URL');
@@ -59,8 +60,24 @@ async function notify() {
 
   console.log('Sending slack message...');
   try {
+    const { body: changedPackages } = await getChangedPackages();
+
+    const changes = {
+      color: '#F46152',
+      fields: [
+        {
+          author_name: 'Changes',
+          pretext: changedPackages,
+        },
+      ],
+    };
+
+    releaseNotification.attachments.push(changes);
+
     const notification = JSON.stringify(releaseNotification);
+
     await sendSlackMessage(slackWebHook, notification);
+
     console.log('Notification sent');
   } catch (e) {
     console.error('There was an error sending Slack notification', e);
