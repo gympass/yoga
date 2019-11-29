@@ -12,6 +12,7 @@ import {
   InlineCode,
   TabbedView,
   Tab,
+  Home,
 } from '..';
 
 const customComponents = {
@@ -34,6 +35,7 @@ const customComponents = {
   PropsTable,
   ExpoSnack,
   ...components,
+  ...Home,
 };
 
 const Wrapper = styled.div`
