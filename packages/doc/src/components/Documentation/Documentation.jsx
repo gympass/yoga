@@ -39,6 +39,7 @@ const customComponents = {
 };
 
 const Wrapper = styled.div`
+  height: calc(100vh - 132px);
   grid-area: Documentation;
   padding: 30px 100px;
 

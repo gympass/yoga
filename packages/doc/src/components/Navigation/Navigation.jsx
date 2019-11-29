@@ -43,7 +43,7 @@ const Wrapper = styled.div`
 `;
 
 const Nav = styled.div`
-  height: 100vh;
+  height: calc(100vh - 140px);
   padding: 30px;
   width: 100%;
 
