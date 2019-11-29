@@ -34,8 +34,8 @@ const customComponents = {
   Tab: ({ ...props }) => <Tab {...props} />,
   PropsTable,
   ExpoSnack,
+  Home: ({ ...props }) => <Home {...props} />,
   ...components,
-  ...Home,
 };
 
 const Wrapper = styled.div`

@@ -1,4 +1,3 @@
-/* eslint-disable */
-import Logo from './Logo';
+import Home from './Home';
 
-export { Logo };
+export default Home;
