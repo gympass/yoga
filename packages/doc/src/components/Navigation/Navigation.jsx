@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import { arrayOf, object, func, bool } from 'prop-types';
+import { arrayOf, object, func, bool, shape, number, string } from 'prop-types';
 
 import Arrow from '../../images/arrow-dropdown.svg';
 import createTree from './tree';
@@ -149,7 +149,15 @@ const ListItem = ({ title, url, childs, level, toggleMenu }) => {
   );
 };
 
-const List = ({ tree, level = 0, toggleMenu }) => (
+ListItem.propTypes = {
+  title: string.isRequired,
+  url: string.isRequired,
+  childs: shape({}).isRequired,
+  level: number.isRequired,
+  toggleMenu: func.isRequired,
+};
+
+const List = ({ tree, level, toggleMenu }) => (
   <StyledList>
     {Object.values(tree).map(({ title, url, ...childs }) => (
       <ListItem
@@ -164,11 +172,20 @@ const List = ({ tree, level = 0, toggleMenu }) => (
   </StyledList>
 );
 
+List.propTypes = {
+  tree: shape({}).isRequired,
+  level: number,
+  toggleMenu: func.isRequired,
+};
+
+List.defaultProps = {
+  level: 0,
+};
+
 const Navigation = ({ items, toggleMenu, opened }) => {
   const [, firstPath] = window.location.pathname.split('/');
   const filteredItems = items.filter(({ url }) => url.includes(firstPath));
   const tree = createTree(filteredItems);
-  console.log('TCL: Navigation -> tree', tree);
 
   return (
     <Wrapper opened={opened}>

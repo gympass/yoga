@@ -42,7 +42,7 @@ function sendSlackMessage(webhookURL, messageBody) {
 
 function getChangedPackages() {
   return new Promise((resolve, reject) => {
-    git.getLastCommit(function(error, commit) {
+    git.getLastCommit((error, commit) => {
       if (error) {
         reject(error);
       }
