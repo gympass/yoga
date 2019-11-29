@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { arrayOf, object, shape } from 'prop-types';
+import { arrayOf, object, shape, bool } from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from '@gympass/yoga';
@@ -143,7 +143,6 @@ const Grid = styled.div`
 
 const HeaderLink = styled(Link).attrs({
   activeClassName: 'active',
-  partiallyActive: true,
 })(
   ({
     theme: {
@@ -179,6 +178,9 @@ const Layout = ({
   const [theme, setTheme] = useState();
   const [locale, setLocale] = useState();
   const [showMenu, toggleMenu] = useState(false);
+  const {
+    location: { pathname: route },
+  } = window;
 
   return (
     <ThemeProvider theme={theme} locale={locale}>
@@ -208,48 +210,65 @@ const Layout = ({
       <GlobalStyle overflow={showMenu} />
 
       <MainWrapper>
-        <Grid>
-          <Header showMenu={showMenu} toggleMenu={toggleMenu}>
-            <HeaderLink to="/guidelines">Guidelines</HeaderLink>
-            <HeaderLink to="/components">Components</HeaderLink>
-            <ThemeConfig
-              theme={theme}
-              locale={locale}
-              setTheme={setTheme}
-              setLocale={setLocale}
-            />
-          </Header>
-          <TabBar>
-            <TabBar.Tab to="/guidelines">
-              <BookLogo />
-              Guidelines
-            </TabBar.Tab>
-            <TabBar.Tab to="/components">
-              <ReactLogo />
-              Components
-            </TabBar.Tab>
-          </TabBar>
-
-          <Navigation toggleMenu={toggleMenu} opened={showMenu} items={nav} />
+        {route === '/' ? (
           <Documentation mdx={body} />
-          <Footer>
-            Made with{' '}
-            <span role="img" aria-label="heart">
-              ❤️
-            </span>{' '}
-            by Gympass •{' '}
-            <a
-              href="https://github.com/gympass/yoga"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              github
-            </a>
-          </Footer>
-        </Grid>
+        ) : (
+          <Grid>
+            <Header showMenu={showMenu} toggleMenu={toggleMenu}>
+              <HeaderLink to="/" partiallyActive={false}>
+                Home
+              </HeaderLink>
+              <HeaderLink to="/guidelines">Guidelines</HeaderLink>
+              <HeaderLink to="/components">Components</HeaderLink>
+              <ThemeConfig
+                theme={theme}
+                locale={locale}
+                setTheme={setTheme}
+                setLocale={setLocale}
+              />
+            </Header>
+
+            <TabBar>
+              <TabBar.Tab to="/guidelines">
+                <BookLogo />
+                Guidelines
+              </TabBar.Tab>
+              <TabBar.Tab to="/components">
+                <ReactLogo />
+                Components
+              </TabBar.Tab>
+            </TabBar>
+
+            <Navigation toggleMenu={toggleMenu} opened={showMenu} items={nav} />
+            <Documentation mdx={body} />
+
+            <Footer>
+              Made with{' '}
+              <span role="img" aria-label="heart">
+                ❤️
+              </span>{' '}
+              by Gympass •{' '}
+              <a
+                href="https://github.com/gympass/yoga"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github
+              </a>
+            </Footer>
+          </Grid>
+        )}
       </MainWrapper>
     </ThemeProvider>
   );
+};
+
+HeaderLink.propTypes = {
+  partiallyActive: bool,
+};
+
+HeaderLink.defaultProps = {
+  partiallyActive: true,
 };
 
 Layout.propTypes = {
