@@ -12,7 +12,7 @@ import { TabbedView, Tab } from './TabbedView';
 import TabBar from './TabBar';
 import CodeSandboxButton from './CodeSandboxButton';
 import ThemeConfig from './ThemeConfig';
-import * as Home from './Home';
+import Home from './Home';
 
 export {
   CodeBlock,
