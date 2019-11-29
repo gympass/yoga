@@ -36,26 +36,18 @@ const Wrapper = styled.div`
 `;
 
 const LogoWrapper = styled.div`
-  ${({
-    theme: {
-      yoga: {
-        colors: { gray: grayPallete },
-      },
-    },
-  }) => `
-    align-items: center;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    box-shadow: 2px 0 0 ${grayPallete[1]};
-    width: ${LOGO_WRAPPER_WIDTH}px;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  padding-left: 30px;
+  overflow: hidden;
+  width: ${LOGO_WRAPPER_WIDTH}px;
 
-    @media (max-width: 900px) {
-      width: unset;
-      box-shadow: none;
-    }
-  `};
+  @media (max-width: 900px) {
+    width: unset;
+    box-shadow: none;
+    padding-left: unset;
+  }
 `;
 
 const Hamburguer = styled(Spring)`

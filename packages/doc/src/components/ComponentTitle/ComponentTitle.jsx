@@ -49,7 +49,7 @@ const ComponentTitle = ({ children = '' }) => {
 
   return (
     <>
-      <Heading>{isComponent ? `<${children} />` : children}</Heading>
+      <Heading>{children}</Heading>
       {isComponent && <p>{description}</p>}
     </>
   );

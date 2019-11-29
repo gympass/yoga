@@ -20,7 +20,8 @@ const GlobalStyle = createGlobalStyle(
 
   html, body  {
     color: #666;
-    font-family: 'Muli';
+    font-family: 'neue-haas-grotesk-display';
+    letter-spacing: 0.5px;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -154,7 +155,7 @@ const HeaderLink = styled(Link).attrs({
     `
     display: flex;
     align-items: center;
-    margin-left: 18px;
+    margin-right: 32px;
     text-decoration: none;
     border-bottom: 2px solid transparent;
     color: ${gray[3]};
