@@ -2,10 +2,10 @@
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
+  "ignoreChanges": ["**/*.test.jsx", "**/*.md"],
   "command": {
     "publish": {
-      "conventionalCommits": true,
-      "ignoreChanges": ["**/*.test.jsx", "**/*.md"]
+      "conventionalCommits": true
     },
     "version": {
       "conventionalCommits": true,
