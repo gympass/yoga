@@ -25,7 +25,12 @@ const createTree = items => {
     allRoutes = merge(routeObj, allRoutes);
   });
 
-  return allRoutes;
+  const [filteredRoutes] = Object.values(allRoutes);
+
+  delete filteredRoutes.title;
+  delete filteredRoutes.url;
+
+  return filteredRoutes;
 };
 
 export default createTree;
