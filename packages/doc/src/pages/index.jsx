@@ -72,7 +72,7 @@ const metaTitle = 'Yoga • Design System';
 const metaDescription =
   'Yoga is a scientific system of practices made to help each one of us achieve our highest potential and experience.';
 
-export default () => (
+const Home = () => (
   <>
     <Helmet>
       <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
@@ -88,7 +88,7 @@ export default () => (
       <GlobalStyle />
       <Wrapper>
         <Header>
-          <YogaLogo width={78} height={48} />
+          <YogaLogo />
           <Version
             href="https://github.com/gympass/yoga"
             rel="noopener noreferrer"
@@ -119,3 +119,5 @@ export default () => (
     </ThemeProvider>
   </>
 );
+
+export default Home;
