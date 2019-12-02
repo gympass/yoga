@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.0.1...@gympass/yoga@1.0.2) (2019-12-02)
+
+### Bug Fixes
+
+- **checkbox:** removing accessibility role from checkbox ([9510f7c](https://github.com/Gympass/yoga/commit/9510f7cae1bf718cde55f116c09f049ce750d33e))
+
 ## [1.0.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.0.0...@gympass/yoga@1.0.1) (2019-11-27)
 
 ### Bug Fixes
