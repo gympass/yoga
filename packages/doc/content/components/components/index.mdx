@@ -4,8 +4,4 @@ metaTitle: 'Components List Page'
 metaDescription: 'This is the list of Components'
 ---
 
-<div style={{ display: 'none' }}>
-  {typeof window != 'undefined'
-    ? (window.location = '/components/getting-started')
-    : ''}
-</div>
+<Redirect url="/components/getting-started" />

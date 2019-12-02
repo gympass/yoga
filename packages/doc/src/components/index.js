@@ -13,6 +13,7 @@ import TabBar from './TabBar';
 import CodeSandboxButton from './CodeSandboxButton';
 import ThemeConfig from './ThemeConfig';
 import GlobalStyle from './GlobalStyle';
+import Redirect from './Redirect';
 
 export {
   CodeBlock,
@@ -31,4 +32,5 @@ export {
   CodeSandboxButton,
   ThemeConfig,
   GlobalStyle,
+  Redirect,
 };
