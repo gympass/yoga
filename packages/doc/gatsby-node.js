@@ -32,7 +32,10 @@ exports.createPages = ({ graphql, actions }) => {
         // Create blog posts pages.
         result.data.allMdx.edges.forEach(({ node }) => {
           createPage({
-            path: node.fields.slug ? node.fields.slug : '/',
+            path: node.fields.slug
+              ? [...new Set(node.fields.slug.split('/'))].join('/') ||
+                node.fields.slug
+              : '/',
             component: path.resolve('./src/templates/docs.jsx'),
             context: {
               id: node.fields.id,
