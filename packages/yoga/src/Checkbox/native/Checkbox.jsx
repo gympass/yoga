@@ -69,7 +69,6 @@ const Checkbox = ({
     <View>
       <TouchableWithoutFeedback
         {...rest}
-        accessibilityRole="checkbox"
         disabled={disabled}
         onPressIn={e => {
           setPressed(true);
