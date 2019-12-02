@@ -1,5 +1,7 @@
+/* eslint-disable no-console, import/no-dynamic-require */
 const path = require('path');
 const fs = require('fs-extra');
+
 const pkg = require(path.resolve('./package.json'));
 
 const outDir = './dist';

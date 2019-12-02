@@ -10,7 +10,7 @@
     "build:cjs": "NODE_ENV=cjs babel ./src --out-dir dist/cjs",
     "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
     "prebuild": "rm -rf ./dist",
-    "prepublishOnly": "node ../../prepublish.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js"
   },
   "publishConfig": {
     "access": "public",

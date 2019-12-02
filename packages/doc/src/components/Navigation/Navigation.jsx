@@ -56,7 +56,8 @@ const Nav = styled.div`
 const StyledList = styled.ul`
   font-size: 14px;
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
   width: 100%;
 `;
 
@@ -131,7 +132,7 @@ const ListItem = ({ title, url, childs, level, toggleMenu }) => {
       active={typeof window !== 'undefined' && window.location.pathname === url}
     >
       <AnchorLink
-        to={url}
+        to={[...new Set(url.split('/').filter(item => item))].join('/')}
         level={level}
         as={hasChild && Colapsible}
         visible={opened.toString()}
