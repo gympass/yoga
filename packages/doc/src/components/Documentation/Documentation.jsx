@@ -12,6 +12,7 @@ import {
   InlineCode,
   TabbedView,
   Tab,
+  Redirect,
 } from '..';
 
 const customComponents = {
@@ -29,10 +30,11 @@ const customComponents = {
   pre: 'div',
   code: CodeBlock,
   inlineCode: InlineCode,
-  TabbedView: ({ ...props }) => <TabbedView {...props} />,
-  Tab: ({ ...props }) => <Tab {...props} />,
+  TabbedView: props => <TabbedView {...props} />,
+  Tab: props => <Tab {...props} />,
   PropsTable,
   ExpoSnack,
+  Redirect: props => <Redirect {...props} />,
   ...components,
 };
 
