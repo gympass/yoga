@@ -89,7 +89,11 @@ export default () => (
       <Wrapper>
         <Header>
           <YogaLogo width={78} height={48} />
-          <Version href="#" rel="noopener noreferrer">
+          <Version
+            href="https://github.com/gympass/yoga"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             v{pkg.version}
           </Version>
         </Header>
