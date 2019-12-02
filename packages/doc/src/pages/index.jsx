@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from '@gympass/yoga';
-import pkg from '@gympass/yoga/package.json';
+import { version } from '@gympass/yoga/package.json';
 
 import { Box, Description, Header, Title } from '../components/Home';
 import { GlobalStyle } from '../components';
@@ -94,7 +94,7 @@ export default () => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            v{pkg.version}
+            v{version}
           </Version>
         </Header>
         <Description>
