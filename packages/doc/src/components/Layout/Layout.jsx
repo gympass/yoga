@@ -54,11 +54,11 @@ const Grid = styled.div`
 
     @media (max-width: 900px) {
       padding-bottom: 64px;
+
       grid-template-areas:
       'Header'
       'Documentation'
       'Footer';
-
       grid-template-columns: 100%;
       grid-template-rows: auto 1fr auto;
     }

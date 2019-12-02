@@ -12,7 +12,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 >
   <View>
     <TouchableWithoutFeedback
-      accessibilityRole="checkbox"
       disabled={false}
       value="value"
     >
@@ -118,7 +117,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 >
   <View>
     <TouchableWithoutFeedback
-      accessibilityRole="checkbox"
       disabled={false}
       value="value"
     >
@@ -203,7 +201,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 >
   <View>
     <TouchableWithoutFeedback
-      accessibilityRole="checkbox"
       disabled={true}
       value="value"
     >
@@ -309,7 +306,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 >
   <View>
     <TouchableWithoutFeedback
-      accessibilityRole="checkbox"
       disabled={true}
       value="value"
     >
@@ -394,7 +390,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 >
   <View>
     <TouchableWithoutFeedback
-      accessibilityRole="checkbox"
       disabled={false}
       value="value"
     >
@@ -500,7 +495,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 >
   <View>
     <TouchableWithoutFeedback
-      accessibilityRole="checkbox"
       disabled={false}
       value="value"
     >
