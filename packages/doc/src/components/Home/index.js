@@ -1,3 +1,6 @@
-import Home from './Home';
+import Box from './Box';
+import Description from './Description';
+import Header from './Header';
+import Title from './Title';
 
-export default Home;
+export { Box, Description, Header, Title };

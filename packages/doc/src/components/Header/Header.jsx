@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import { node, bool, func } from 'prop-types';
 import { Spring } from 'react-burgers';
 
@@ -90,7 +91,9 @@ const Actions = styled.div`
 const Header = ({ children, showMenu, toggleMenu }) => (
   <Wrapper>
     <LogoWrapper>
-      <YogaLogo />
+      <Link to="/">
+        <YogaLogo />
+      </Link>
     </LogoWrapper>
 
     <Hamburguer

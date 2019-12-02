@@ -1,100 +1,23 @@
 import React, { useState } from 'react';
 import { arrayOf, object, shape, bool } from 'prop-types';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from '@gympass/yoga';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Link } from 'gatsby';
 
-import { Navigation, Documentation, Header, ThemeConfig, TabBar } from '..';
+import {
+  GlobalStyle,
+  Navigation,
+  Documentation,
+  Header,
+  ThemeConfig,
+  TabBar,
+} from '..';
 import Footer from './Footer';
 
 import ReactLogo from '../../images/react-logo.svg';
 import BookLogo from '../../images/book.svg';
-
-const GlobalStyle = createGlobalStyle(
-  ({ overflow }) => `
-  #gatsby-focus-wrapper, #___gatsby {
-    height: 100%;
-  }
-
-  html, body  {
-    color: #666;
-    font-family: 'neue-haas-grotesk-display';
-    letter-spacing: 0.5px;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: ${overflow ? 'hidden' : 'auto'};
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    color: #333;
-    font-weight: 300;
-    margin: 45px 0 20px;
-  }
-
-  p {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.8;
-  }
-
-  h1 {
-    font-size: 48px;
-    font-weight: 300;
-    margin: 0;
-
-    + p {
-      color: #6b6b78;
-      font-weight: 300;
-      margin: 10px 0 50px;
-    }
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  h3 {
-    font-size: 22px;
-  }
-
-  h4 {
-    font-size: 20px;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  ul {
-    line-height: 2;
-  }
-
-  @media (max-width: 900px) {
-    h1 {
-      font-size: 26px;
-
-      + p {
-        margin-bottom: 30px;
-      }
-    }
-
-    h2 {
-      font-size: 18px;
-    }
-
-    h3 {
-      font-size: 16px;
-    }
-
-    p {
-      font-size: 14px;
-    }
-  }
-`,
-);
 
 const MainWrapper = styled.div`
   ${({
@@ -104,6 +27,7 @@ const MainWrapper = styled.div`
       },
     },
   }) => `
+    height: 100%;
     a[target] {
       color: ${primaryPallete[3]};
       text-decoration: none;
@@ -136,7 +60,7 @@ const Grid = styled.div`
       'Footer';
 
       grid-template-columns: 100%;
-      grid-template-rows: auto;
+      grid-template-rows: auto 1fr auto;
     }
   `};
 `;
@@ -178,9 +102,6 @@ const Layout = ({
   const [theme, setTheme] = useState();
   const [locale, setLocale] = useState();
   const [showMenu, toggleMenu] = useState(false);
-  const {
-    location: { pathname: route },
-  } = window;
 
   return (
     <ThemeProvider theme={theme} locale={locale}>
@@ -210,54 +131,47 @@ const Layout = ({
       <GlobalStyle overflow={showMenu} />
 
       <MainWrapper>
-        {route === '/' ? (
+        <Grid>
+          <Header showMenu={showMenu} toggleMenu={toggleMenu}>
+            <HeaderLink to="/guidelines">Guidelines</HeaderLink>
+            <HeaderLink to="/components">Components</HeaderLink>
+            <ThemeConfig
+              theme={theme}
+              locale={locale}
+              setTheme={setTheme}
+              setLocale={setLocale}
+            />
+          </Header>
+
+          <TabBar>
+            <TabBar.Tab to="/guidelines">
+              <BookLogo />
+              Guidelines
+            </TabBar.Tab>
+            <TabBar.Tab to="/components">
+              <ReactLogo />
+              Components
+            </TabBar.Tab>
+          </TabBar>
+
+          <Navigation toggleMenu={toggleMenu} opened={showMenu} items={nav} />
           <Documentation mdx={body} />
-        ) : (
-          <Grid>
-            <Header showMenu={showMenu} toggleMenu={toggleMenu}>
-              <HeaderLink to="/" partiallyActive={false}>
-                Home
-              </HeaderLink>
-              <HeaderLink to="/guidelines">Guidelines</HeaderLink>
-              <HeaderLink to="/components">Components</HeaderLink>
-              <ThemeConfig
-                theme={theme}
-                locale={locale}
-                setTheme={setTheme}
-                setLocale={setLocale}
-              />
-            </Header>
 
-            <TabBar>
-              <TabBar.Tab to="/guidelines">
-                <BookLogo />
-                Guidelines
-              </TabBar.Tab>
-              <TabBar.Tab to="/components">
-                <ReactLogo />
-                Components
-              </TabBar.Tab>
-            </TabBar>
-
-            <Navigation toggleMenu={toggleMenu} opened={showMenu} items={nav} />
-            <Documentation mdx={body} />
-
-            <Footer>
-              Made with{' '}
-              <span role="img" aria-label="heart">
-                ❤️
-              </span>{' '}
-              by Gympass •{' '}
-              <a
-                href="https://github.com/gympass/yoga"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                github
-              </a>
-            </Footer>
-          </Grid>
-        )}
+          <Footer>
+            Made with{' '}
+            <span role="img" aria-label="heart">
+              ❤️
+            </span>{' '}
+            by Gympass •{' '}
+            <a
+              href="https://github.com/gympass/yoga"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github
+            </a>
+          </Footer>
+        </Grid>
       </MainWrapper>
     </ThemeProvider>
   );

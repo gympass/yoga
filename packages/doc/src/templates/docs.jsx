@@ -1,12 +1,17 @@
 import React from 'react';
-import { string, shape } from 'prop-types';
+import { string, shape, node } from 'prop-types';
 import { graphql } from 'gatsby';
 import { handleItems, handleNavigation } from './nav';
 
 import { Layout } from '../components';
 
 const MDXRuntimeTest = props => {
-  const { data } = props;
+  const { data, children } = props;
+
+  if (!data) {
+    return children;
+  }
+
   const {
     allMdx: { edges },
     mdx,
@@ -57,11 +62,13 @@ export const pageQuery = graphql`
 `;
 
 MDXRuntimeTest.propTypes = {
-  data: shape({}).isRequired,
+  children: node.isRequired,
+  data: shape({}),
   edges: string,
 };
 
 MDXRuntimeTest.defaultProps = {
+  data: undefined,
   edges: undefined,
 };
 
