@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import { node, bool, func } from 'prop-types';
 import { Spring } from 'react-burgers';
 
-import yoga from '../../images/yoga-logo.svg';
+import yoga from 'images/yoga-logo.svg';
 
 const LOGO_WRAPPER_WIDTH = 250;
 

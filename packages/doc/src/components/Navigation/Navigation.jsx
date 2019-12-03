@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 import { arrayOf, object, func, bool, shape, number, string } from 'prop-types';
 
-import Arrow from '../../images/arrow-dropdown.svg';
+import Arrow from 'images/arrow-dropdown.svg';
 import createTree from './tree';
 
 const Wrapper = styled.div`
