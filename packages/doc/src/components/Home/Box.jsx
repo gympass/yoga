@@ -36,7 +36,7 @@ const Item = styled.a(
     height: auto;
 
     margin: 9px 0;
-
+    padding: 14px;
   }
 `,
 );
@@ -65,6 +65,7 @@ const Title = styled.h2`
 
   @media (max-width: 900px) {
     font-size: 14px;
+    margin-bottom: 12px;
   }
 `;
 
