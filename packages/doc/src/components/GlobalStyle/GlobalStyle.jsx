@@ -8,19 +8,22 @@ const GlobalStyle = createGlobalStyle(
     }
 
     html, body {
-      color: #666;
-      font-family: 'neue-haas-grotesk-display';
-      letter-spacing: 0.5px;
       height: 100%;
       margin: 0;
       padding: 0;
+
+      color: #666;
+      font-family: 'neue-haas-grotesk-display';
+      letter-spacing: 0.5px;
+
       overflow: ${overflow ? 'hidden' : 'auto'};
     }
 
     h1, h2, h3, h4, h5, h6 {
+      margin: 45px 0 20px;
+
       color: #333;
       font-weight: 300;
-      margin: 45px 0 20px;
     }
 
     p {
@@ -30,14 +33,16 @@ const GlobalStyle = createGlobalStyle(
     }
 
     h1 {
-      font-size: 48px;
-      font-weight: 300;
       margin: 0;
 
+      font-size: 48px;
+      font-weight: 300;
+
       + p {
+        margin: 10px 0 50px;
+        
         color: #6b6b78;
         font-weight: 300;
-        margin: 10px 0 50px;
       }
     }
 

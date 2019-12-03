@@ -10,18 +10,19 @@ const Item = styled.a(
       },
     },
   }) => `
-  height: 284px;
-  margin-right: 24px;
-  padding: 24px;
-
   display: flex;
   flex-basis: 300px;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
 
+  height: 284px;
+  margin-right: 24px;
+  padding: 24px;
+
   background-color: ${gray[1]};
   color: ${dark};
+
   text-decoration: none;
 
   &:last-child {
@@ -31,9 +32,11 @@ const Item = styled.a(
 
   @media (max-width: 900px) {
     flex-basis: 100%;
-    margin: 9px 0;
 
     height: auto;
+
+    margin: 9px 0;
+
   }
 `,
 );
@@ -54,10 +57,11 @@ const Content = styled.div`
 `;
 
 const Title = styled.h2`
+  margin: 0 0 16px;
+
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 0 0 16px;
 
   @media (max-width: 900px) {
     font-size: 14px;
