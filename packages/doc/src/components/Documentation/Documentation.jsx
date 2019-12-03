@@ -13,7 +13,7 @@ import {
   TabbedView,
   Tab,
   Redirect,
-} from '..';
+} from 'components';
 
 const customComponents = {
   h1: ComponentTitle,
