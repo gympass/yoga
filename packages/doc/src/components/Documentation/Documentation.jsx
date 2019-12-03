@@ -12,7 +12,7 @@ import {
   InlineCode,
   TabbedView,
   Tab,
-  Home,
+  Redirect,
 } from '..';
 
 const customComponents = {
@@ -30,16 +30,16 @@ const customComponents = {
   pre: 'div',
   code: CodeBlock,
   inlineCode: InlineCode,
-  TabbedView: ({ ...props }) => <TabbedView {...props} />,
-  Tab: ({ ...props }) => <Tab {...props} />,
+  TabbedView: props => <TabbedView {...props} />,
+  Tab: props => <Tab {...props} />,
   PropsTable,
   ExpoSnack,
+  Redirect: props => <Redirect {...props} />,
   ...components,
-  ...Home,
 };
 
 const Wrapper = styled.div`
-  height: calc(100vh - 132px);
+  height: 100%;
   grid-area: Documentation;
   padding: 30px 100px;
 

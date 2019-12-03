@@ -132,7 +132,7 @@ const ListItem = ({ title, url, childs, level, toggleMenu }) => {
       active={typeof window !== 'undefined' && window.location.pathname === url}
     >
       <AnchorLink
-        to={[...new Set(url.split('/').filter(item => item))].join('/')}
+        to={`/${[...new Set(url.split('/').filter(item => item))].join('/')}`}
         level={level}
         as={hasChild && Colapsible}
         visible={opened.toString()}

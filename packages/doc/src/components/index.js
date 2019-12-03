@@ -12,7 +12,8 @@ import { TabbedView, Tab } from './TabbedView';
 import TabBar from './TabBar';
 import CodeSandboxButton from './CodeSandboxButton';
 import ThemeConfig from './ThemeConfig';
-import * as Home from './Home';
+import GlobalStyle from './GlobalStyle';
+import Redirect from './Redirect';
 
 export {
   CodeBlock,
@@ -30,5 +31,6 @@ export {
   TabBar,
   CodeSandboxButton,
   ThemeConfig,
-  Home,
+  GlobalStyle,
+  Redirect,
 };
