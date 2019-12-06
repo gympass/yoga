@@ -1,37 +1,64 @@
-import React, { useEffect, useState, useRef, Fragment } from 'react';
+import React, { useEffect, useState } from 'react';
 import { string } from 'prop-types';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import HeadingsQuery from './HeadingsQuery';
 
-const Wrapper = styled.div`
-  grid-area: Summary;
-  position: relative;
+const getHeadings = (edges = []) => {
+  const pathname = typeof window !== 'undefined' && window.location.pathname;
+  const paths = edges.filter(
+    ({ node }) => node.fields && node.fields.slug.includes(pathname),
+  );
+  console.log('TCL: getHeadings -> paths', paths);
+
+  const [
+    {
+      node: { mdxAST },
+    },
+  ] = paths.length ? paths : [{ node: {} }];
+
+  const headings = mdxAST.children
+    .filter(c => c.type === 'heading')
+    .map(c => ({ depth: c.depth, value: c.children[0].value }));
+
+  return { anchors: headings };
+};
+
+const TableOfContent = styled.div`
+  position: sticky;
+  height: min-content;
+  top: 10px;
   margin-left: 20px;
-  margin-right: 20px;
-
-  ${({ fixed }) =>
-    fixed &&
-    `
-    position: fixed;
-    right: 7px;
-    top: 16px;
-  `}
+  margin-right: 38px;
 `;
 
-const AnchorList = styled.ul`
-  border-left: 1px solid #f6f6f6;
+const StyledList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  ul {
+    width: auto;
+    padding-left: 10px;
+    border-left: none;
+  }
 `;
 
-const AnchorItem = styled.li`
+const AnchorItem = styled.li(
+  ({
+    theme: {
+      yoga: {
+        colors: { primary },
+      },
+    },
+    depth,
+  }) => `
   font-size: 12px;
-  margin-bottom: 4px;
 
   a {
     color: inherit;
     display: block;
     overflow: hidden;
-    padding-left: 16px;
+    padding-left: ${8 * depth}px;
     text-decoration: none;
     text-overflow: ellipsis;
     width: 100%;
@@ -39,85 +66,53 @@ const AnchorItem = styled.li`
     transition: all 0.2s;
 
     &:hover {
-      color: #f46152;
+      color: ${primary[3]};
     }
   }
-`;
+`,
+);
 
-const getLinks = ({ url, title }) => (
-  <AnchorItem key={url}>
-    <Link
-      to={typeof window !== 'undefined' ? window.location.pathname + url : url}
-    >
-      {title}
-    </Link>
+const Anchor = ({ depth, value, id }) => (
+  <AnchorItem key={value} depth={depth}>
+    <a href={`#${id}`} title={value}>
+      {value}
+    </a>
   </AnchorItem>
 );
 
-getLinks.propTypes = {
+Anchor.propTypes = {
   url: string.isRequired,
   title: string.isRequired,
 };
 
-const getHeadings = (edges = []) => {
-  const pathname = typeof window !== 'undefined' && window.location.pathname;
-  const paths = edges.filter(
-    ({ node }) => node.fields && node.fields.slug === pathname,
-  );
-
-  const [
-    {
-      node: { tableOfContents = {} },
-    },
-  ] = paths.length ? paths : [{ node: {} }];
-
-  if (!Object.keys(tableOfContents).length) {
-    return [];
-  }
-
-  return tableOfContents.items;
-};
-
-const getSummary = edges => {
-  const headings = getHeadings(edges);
-
-  return (
-    <AnchorList>
-      {headings.map(heading => (
-        <Fragment key={heading.url}>
-          {getLinks(heading)}
-          {headings.length === 1 &&
-            heading.items &&
-            heading.items.map(subHeading => getLinks(subHeading))}
-        </Fragment>
-      ))}
-    </AnchorList>
-  );
-};
+const AnchorList = ({ anchors }) => (
+  <StyledList>
+    {anchors.map(anchor => (
+      <Anchor {...anchor} />
+    ))}
+  </StyledList>
+);
 
 const Summary = () => {
-  const ssr = typeof window !== 'undefined';
-
-  const {
-    allMdx: { edges },
-  } = HeadingsQuery();
-  const [fixed, setFixed] = useState(false);
-  const wrapperRef = useRef(null);
-  const handleScroll = () => ssr && setFixed(window.scrollY > 88);
-
+  const [anchors, setAnchors] = useState([]);
   useEffect(() => {
-    if (ssr) {
-      window.addEventListener('scroll', handleScroll);
-    }
+    const headings = Array.from(
+      document.querySelectorAll('h2, h3, h4, h5, h6'),
+    ).map(({ tagName: [, level], textContent: value, id }) => ({
+      depth: Number(level),
+      value,
+      id,
+    }));
+    console.log('TCL: Summary -> headings', headings);
 
-    return () => ssr && window.removeEventListener('scroll', handleScroll);
-  });
+    setAnchors(headings);
+  }, [window.location.href]);
 
-  return (
-    <Wrapper fixed={fixed} ref={wrapperRef}>
-      {getSummary(edges)}
-    </Wrapper>
-  );
+  return anchors.length ? (
+    <TableOfContent>
+      <AnchorList anchors={anchors} />
+    </TableOfContent>
+  ) : null;
 };
 
 export default Summary;
