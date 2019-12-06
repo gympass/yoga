@@ -171,6 +171,7 @@ ListItem.propTypes = {
   childs: shape({}).isRequired,
   level: number.isRequired,
   toggleMenu: func.isRequired,
+  linkable: bool.isRequired,
 };
 
 const List = ({ tree, level, toggleMenu }) => (

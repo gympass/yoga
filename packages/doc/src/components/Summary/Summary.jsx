@@ -1,27 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { string } from 'prop-types';
+import { string, number, arrayOf, shape } from 'prop-types';
 import styled from 'styled-components';
-import HeadingsQuery from './HeadingsQuery';
-
-const getHeadings = (edges = []) => {
-  const pathname = typeof window !== 'undefined' && window.location.pathname;
-  const paths = edges.filter(
-    ({ node }) => node.fields && node.fields.slug.includes(pathname),
-  );
-  console.log('TCL: getHeadings -> paths', paths);
-
-  const [
-    {
-      node: { mdxAST },
-    },
-  ] = paths.length ? paths : [{ node: {} }];
-
-  const headings = mdxAST.children
-    .filter(c => c.type === 'heading')
-    .map(c => ({ depth: c.depth, value: c.children[0].value }));
-
-  return { anchors: headings };
-};
 
 const TableOfContent = styled.div`
   position: sticky;
@@ -81,17 +60,28 @@ const Anchor = ({ depth, value, id }) => (
 );
 
 Anchor.propTypes = {
-  url: string.isRequired,
-  title: string.isRequired,
+  depth: number.isRequired,
+  id: string.isRequired,
+  value: string.isRequired,
 };
 
 const AnchorList = ({ anchors }) => (
   <StyledList>
     {anchors.map(anchor => (
-      <Anchor {...anchor} />
+      <Anchor key={anchor.id} {...anchor} />
     ))}
   </StyledList>
 );
+
+AnchorList.propTypes = {
+  anchors: arrayOf(
+    shape({
+      depth: number,
+      id: string,
+      value: string,
+    }),
+  ).isRequired,
+};
 
 const Summary = () => {
   const [anchors, setAnchors] = useState([]);
@@ -103,7 +93,6 @@ const Summary = () => {
       value,
       id,
     }));
-    console.log('TCL: Summary -> headings', headings);
 
     setAnchors(headings);
   }, [window.location.href]);

@@ -21,5 +21,6 @@ module.exports = {
   globals: {
     window: true,
     fetch: false,
+    document: true,
   },
 };

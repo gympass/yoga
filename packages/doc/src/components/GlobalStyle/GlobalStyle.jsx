@@ -1,9 +1,8 @@
-import { hexToRgb } from '@gympass/yoga-common';
 import { bool } from 'prop-types';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle(
-  ({ overflow, theme: { yoga: { colors: { gray, primary } } } }) => `
+  ({ overflow }) => `
     #gatsby-focus-wrapper, #___gatsby {
       height: 100%;
     }
@@ -84,37 +83,6 @@ const GlobalStyle = createGlobalStyle(
 
     img { 
       max-width: 100%;
-    }
-
-    table {
-      font-family: 'neue-haas-grotesk-display';
-      border-collapse: collapse;
-      background-color: ${gray[0]};
-      margin: 0px 0;
-      width: 100%;
-
-      thead {
-        background-color: ${hexToRgb(gray[1], 0.5)};
-
-        th {
-          border: 1px solid ${hexToRgb(gray[2], 0.7)};
-          font-size: 14px;
-          font-weight: normal;
-          padding: 14px 12px 12px;
-          text-align: left;
-        }
-      }
-
-      tbody {
-        tr {
-          background-color: ${gray[0]};
-
-          td {
-            border: 1px solid ${hexToRgb(gray[2], 0.7)};
-            padding: 14px 12px 12px;
-          }
-        }
-      } 
     }
 
     @media (max-width: 900px) {
