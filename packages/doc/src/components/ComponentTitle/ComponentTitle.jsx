@@ -9,7 +9,7 @@ const Heading = styled.h1`
   word-break: break-all;
 `;
 
-const getMetaData = (isComponent, component) => {
+const getMetaData = isComponent => {
   if (!isComponent) {
     return {};
   }

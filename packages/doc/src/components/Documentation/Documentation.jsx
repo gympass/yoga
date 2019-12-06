@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, node } from 'prop-types';
+import { string } from 'prop-types';
 import styled from 'styled-components';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
