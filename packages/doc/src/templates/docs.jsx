@@ -54,6 +54,7 @@ export const pageQuery = graphql`
           fields {
             slug
             title
+            linkable
           }
         }
       }

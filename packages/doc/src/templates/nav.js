@@ -18,7 +18,7 @@ const handleNavigation = (edges, items) =>
     if (slug) {
       const {
         node: {
-          fields: { title, slug: slugFlield },
+          fields: { title, slug: slugFlield, linkable },
         },
       } = edges.find(
         ({
@@ -28,7 +28,7 @@ const handleNavigation = (edges, items) =>
         }) => slugNode === slug,
       );
 
-      return { title, url: slugFlield };
+      return { title, url: slugFlield, linkable };
     }
     return null;
   });

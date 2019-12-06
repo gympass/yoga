@@ -20,16 +20,31 @@ const GlobalStyle = createGlobalStyle(
     }
 
     h1, h2, h3, h4, h5, h6 {
+      display: flex;
+      align-items: center;
       margin: 45px 0 20px;
 
       color: #333;
       font-weight: 300;
+
+      &:hover {
+        .anchor {
+          display: flex;
+        }
+      }
     }
 
     p {
       font-size: 18px;
       font-weight: 300;
       line-height: 1.8;
+    }
+
+    .anchor {
+      display: none;
+      padding-right: 8px;
+      margin-left: -24px;
+      float: left;
     }
 
     h1 {
@@ -64,6 +79,10 @@ const GlobalStyle = createGlobalStyle(
 
     ul {
       line-height: 2;
+    }
+
+    img { 
+      max-width: 100%;
     }
 
     @media (max-width: 900px) {

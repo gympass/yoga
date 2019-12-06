@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import { arrayOf, object, func, bool, shape, number, string } from 'prop-types';
 
 import Arrow from 'images/arrow-dropdown.svg';
@@ -122,9 +122,15 @@ const Colapsible = styled.div`
   }
 `;
 
-const ListItem = ({ title, url, childs, level, toggleMenu }) => {
+const ListItem = ({ title, linkable, url, childs, level, toggleMenu }) => {
   const [opened, setOpened] = useState(true);
   const hasChild = Boolean(Object.keys(childs).length);
+
+  const filteredUrl = `/${[
+    ...new Set(url.split('/').filter(item => item)),
+  ].join('/')}`;
+
+  const { pathname } = window.location;
 
   return (
     <StyledListItem
@@ -132,11 +138,20 @@ const ListItem = ({ title, url, childs, level, toggleMenu }) => {
       active={typeof window !== 'undefined' && window.location.pathname === url}
     >
       <AnchorLink
-        to={`/${[...new Set(url.split('/').filter(item => item))].join('/')}`}
         level={level}
-        as={hasChild && Colapsible}
+        as={Colapsible}
         visible={opened.toString()}
-        onClick={hasChild ? () => setOpened(!opened) : () => toggleMenu(false)}
+        onClick={() => {
+          if (hasChild) {
+            setOpened(!opened);
+          }
+
+          if (filteredUrl !== pathname && linkable) {
+            navigate(filteredUrl);
+          }
+
+          toggleMenu(false);
+        }}
       >
         {title}{' '}
         {hasChild ? <Arrow style={{ height: '100%', paddingTop: 10 }} /> : ''}
@@ -160,11 +175,12 @@ ListItem.propTypes = {
 
 const List = ({ tree, level, toggleMenu }) => (
   <StyledList>
-    {Object.values(tree).map(({ title, url, ...childs }) => (
+    {Object.values(tree).map(({ title, url, linkable, ...childs }) => (
       <ListItem
         key={title}
         title={title}
         url={url}
+        linkable={linkable}
         childs={childs}
         level={level}
         toggleMenu={toggleMenu}

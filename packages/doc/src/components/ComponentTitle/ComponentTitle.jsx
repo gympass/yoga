@@ -6,7 +6,6 @@ import DescriptionQuery from './DescriptionQuery';
 const Heading = styled.h1`
   display: flex;
   align-items: center;
-  justify-content: space-between;
   word-break: break-all;
 `;
 
@@ -18,34 +17,37 @@ const getMetaData = (isComponent, component) => {
     allComponentMetadata: { edges },
   } = DescriptionQuery();
 
-  const {
-    node: {
-      description: { text: description },
-    },
-  } = edges.filter(({ node: parentNode }) => {
-    const path = window.location.pathname.split('/');
-    const { length: len, [len - 2]: comp } = path;
+  const filteredEdges = edges.filter(({ node: { displayName } }) => {
+    const [, component, compound = ''] = window.location.pathname
+      .split('/')
+      .filter(l => l);
+
+    const componentName = `${component}${
+      compound === 'default' ? '' : compound
+    }`;
 
     return (
-      parentNode.displayName.toLowerCase() === comp.toLowerCase() ||
-      parentNode.displayName.toLowerCase() === component.toLowerCase()
+      displayName.replace('.', '').toLowerCase() === componentName.toLowerCase()
     );
-  })[0];
+  });
+
+  const [
+    {
+      node: {
+        description: { text: description },
+      },
+    },
+  ] = filteredEdges;
 
   return { description };
 };
 
 const ComponentTitle = ({ children = '' }) => {
-  const childrenString = typeof children === 'string' ? children : '';
-
   const isComponent =
     typeof window !== 'undefined' &&
     window.location.href.search(/components\/.+/) > -1;
 
-  const { description = '' } = getMetaData(
-    isComponent,
-    childrenString.replace('.', ''),
-  );
+  const { description = '' } = getMetaData(isComponent);
 
   return (
     <>

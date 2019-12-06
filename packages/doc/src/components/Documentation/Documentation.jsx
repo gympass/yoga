@@ -13,20 +13,11 @@ import {
   TabbedView,
   Tab,
   Redirect,
+  Summary,
 } from 'components';
 
 const customComponents = {
   h1: ComponentTitle,
-  h2: ({ children, ...props }) => (
-    <h2
-      id={(typeof children === 'string' ? children : '')
-        .replace(/\s+/g, '-')
-        .toLowerCase()}
-      {...props}
-    >
-      {children}
-    </h2>
-  ),
   pre: 'div',
   code: CodeBlock,
   inlineCode: InlineCode,
@@ -39,24 +30,24 @@ const customComponents = {
 };
 
 const Wrapper = styled.div`
+  display: flex;
   height: 100%;
   grid-area: Documentation;
-  padding: 30px 100px;
+  padding: 30px 0 30px 100px;
 
   @media (max-width: 900px) {
     padding: 80px 20px 20px;
   }
 `;
 
-customComponents.h2.propTypes = {
-  children: node.isRequired,
-};
-
 const Documentation = ({ mdx }) => (
   <Wrapper>
-    <MDXProvider components={customComponents}>
-      <MDXRenderer>{mdx}</MDXRenderer>
-    </MDXProvider>
+    <div style={{ width: '100%' }}>
+      <MDXProvider components={customComponents}>
+        <MDXRenderer>{mdx}</MDXRenderer>
+      </MDXProvider>
+    </div>
+    <Summary />
   </Wrapper>
 );
 

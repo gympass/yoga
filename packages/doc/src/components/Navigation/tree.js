@@ -1,6 +1,6 @@
 import { merge } from '@gympass/yoga-common';
 
-const createObjectNesting = (routes, { title, url }) => {
+const createObjectNesting = (routes, { title, url, linkable }) => {
   const newObj = {};
   let temp = newObj;
 
@@ -9,6 +9,7 @@ const createObjectNesting = (routes, { title, url }) => {
     temp = temp[item] = {
       title,
       url,
+      linkable,
     };
   });
 
@@ -19,9 +20,9 @@ const createTree = items => {
   const filteredItems = items.filter(item => item);
   let allRoutes = {};
 
-  filteredItems.forEach(({ title, url }) => {
+  filteredItems.forEach(({ title, url, linkable }) => {
     const explodedUrl = url.split('/').filter(item => item);
-    const routeObj = createObjectNesting(explodedUrl, { title, url });
+    const routeObj = createObjectNesting(explodedUrl, { title, url, linkable });
     allRoutes = merge(routeObj, allRoutes);
   });
 
@@ -29,6 +30,7 @@ const createTree = items => {
 
   delete filteredRoutes.title;
   delete filteredRoutes.url;
+  delete filteredRoutes.linkable;
 
   return filteredRoutes;
 };

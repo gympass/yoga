@@ -88,14 +88,29 @@ class TabbedView extends React.Component {
   constructor(props) {
     super(props);
 
+    const { children } = props;
+
+    const childrenArray = React.Children.toArray(children);
+
+    const [, href] = window.location.href.split('#');
+    childrenArray.find(a => a.props.title === href);
+
+    const activeTab = childrenArray.find(
+      child => child.props.title.toLowerCase() === href,
+    );
+
     this.state = {
-      activeTab: 0,
+      activeTab: childrenArray.indexOf(activeTab) <= 0 ? 0 : 1,
     };
   }
 
   onTabClick = tab => {
     const { children } = this.props;
     this.setState({ activeTab: children.indexOf(tab) });
+
+    window.location.href = `${
+      window.location.pathname
+    }#${tab.props.title.toLowerCase()}`;
   };
 
   render() {
