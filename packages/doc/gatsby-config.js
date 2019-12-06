@@ -34,6 +34,12 @@ const plugins = [
         {
           resolve: 'gatsby-remark-copy-linked-files',
         },
+        {
+          resolve: 'gatsby-remark-autolink-headers',
+          options: {
+            className: 'anchor',
+          },
+        },
       ],
       extensions: ['.mdx', '.md'],
     },
