@@ -136,4 +136,6 @@ Slider.defaultProps = {
   values: [0],
 };
 
+Slider.displayName = 'Slider';
+
 export default withTheme(Slider);

@@ -9,6 +9,7 @@ const HeadingsQuery = () =>
             fields {
               slug
             }
+            mdxAST
             tableOfContents
           }
         }
