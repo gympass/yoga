@@ -50,13 +50,13 @@ exports.createPages = ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === `Mdx`) {
+  if (node.internal.type === 'Mdx') {
     const parent = getNode(node.parent);
     const value =
       parent.relativePath && parent.relativePath.replace(parent.ext, '');
 
     createNodeField({
-      name: `slug`,
+      name: 'slug',
       node,
       value: `/${value && value.replace('index', '')}`,
     });
@@ -72,5 +72,26 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       value: node.frontmatter.title || startCase(parent.name),
     });
+
+    createNodeField({
+      name: 'linkable',
+      node,
+      value:
+        node.frontmatter.linkable === undefined
+          ? true
+          : node.frontmatter.linkable,
+    });
   }
+};
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        components: path.resolve(__dirname, 'src/components'),
+        assets: path.resolve(__dirname, 'static'),
+        images: path.resolve(__dirname, 'src/images'),
+      },
+    },
+  });
 };

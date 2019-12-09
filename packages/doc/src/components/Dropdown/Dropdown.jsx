@@ -4,7 +4,7 @@ import Downshift from 'downshift';
 import { arrayOf, number, func, shape, string } from 'prop-types';
 import { readableColor } from 'polished';
 
-import Arrow from '../../images/arrow-dropdown.svg';
+import Arrow from 'images/arrow-dropdown.svg';
 
 const Wrapper = styled.div`
   position: relative;

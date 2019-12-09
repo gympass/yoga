@@ -2,3 +2,7 @@
 /packages/labnative/android/**
 /packages/labnative/ios/**
 /packages/labnative/metro.config.js
+/packages/doc/content/**
+/packages/doc/node_modules/**
+/packages/doc/public/**
+/packages/doc/.cache/**

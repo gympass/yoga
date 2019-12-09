@@ -76,7 +76,7 @@ const RadioGroupButton = ({ children, value, ...rest }) => {
   );
 };
 
-RadioGroupButton.displayName = 'RadioGroup.Radio';
+RadioGroupButton.displayName = 'RadioGroup.Button';
 
 RadioGroupButton.propTypes = {
   children: oneOfType([string, number]).isRequired,

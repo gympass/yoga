@@ -7,9 +7,9 @@ import Highlight, { defaultProps } from 'prism-react-renderer';
 import { hexToRgb } from '@gympass/yoga-common';
 import githubTheme from 'prism-react-renderer/themes/github';
 
-import { CodeSandboxButton } from '..';
-import CodeIcon from '../../images/code.svg';
-import MoonVector from '../../images/moon.svg';
+import { CodeSandboxButton } from 'components';
+import CodeIcon from 'images/code.svg';
+import MoonVector from 'images/moon.svg';
 
 const defaultPropsWithTheme = {
   ...defaultProps,
