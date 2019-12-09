@@ -4,12 +4,13 @@ import Downshift from 'downshift';
 import { arrayOf, number, func, shape, string } from 'prop-types';
 import { readableColor } from 'polished';
 
-import Arrow from '../../images/arrow-dropdown.svg';
+import Arrow from 'images/arrow-dropdown.svg';
 
 const Wrapper = styled.div`
   position: relative;
   font-size: 14px;
   ${({ width }) => (width ? `width: ${width}px` : '')};
+  box-shadow: -1px 0 0 #f5f5fa;
 `;
 
 const Selector = styled.div`
@@ -23,7 +24,7 @@ const Selector = styled.div`
 const Input = styled.input`
   background-color: transparent;
   border: none;
-  font-family: 'Muli';
+  font-family: 'neue-haas-grotesk-display';
   font-size: 14px;
   padding: 8px 16px 8px;
   text-align: center;

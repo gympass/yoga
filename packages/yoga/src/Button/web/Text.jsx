@@ -51,4 +51,6 @@ const ButtonText = styled(Button)`
   `}
 `;
 
+ButtonText.displayName = 'Button.Text';
+
 export default ButtonText;

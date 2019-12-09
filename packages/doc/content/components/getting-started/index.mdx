@@ -1,0 +1,35 @@
+---
+title: 'Getting started'
+metaTitle: 'Getting started'
+metaDescription: 'This is the Getting started'
+---
+
+## Getting Started
+
+Gympass design-system's follows design guidelines specification, we developed a React and React Native UI library that contains a set of high quality components that defines our interfaces.
+
+### Installing
+
+In order to install our design-system just run:
+
+```
+yarn add @gympass/yoga
+
+// or
+
+npm install @gympass/yoga
+```
+
+### Usage
+
+An important point in using it is that your whole application must be wrapped in our `ThemeProvider` component:
+
+```
+import { ThemeProvider, Button } from '@gympass/yoga';
+
+const App = () => (
+  <ThemeProvider>
+    <Button>Find an activity</Button>
+  </ThemeProvider>
+);
+```

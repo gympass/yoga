@@ -36,7 +36,8 @@ const StyledTable = styled.table`
 
     thead {
       background-color: ${hexToRgb(grayPallete[1], 0.5)};
-      font-family: 'Muli';
+      font-family: 'neue-haas-grotesk-display';
+
 
       th {
         font-size: 14px;

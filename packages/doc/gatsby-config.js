@@ -34,6 +34,12 @@ const plugins = [
         {
           resolve: 'gatsby-remark-copy-linked-files',
         },
+        {
+          resolve: 'gatsby-remark-autolink-headers',
+          options: {
+            className: 'anchor',
+          },
+        },
       ],
       extensions: ['.mdx', '.md'],
     },
@@ -55,10 +61,14 @@ const plugins = [
     },
   },
   {
-    resolve: `gatsby-plugin-google-fonts`,
+    resolve: `gatsby-plugin-web-font-loader`,
     options: {
-      fonts: [`open sans\:300,500,700`, `muli\:100,300,400,500,700,900`],
-      display: 'swap',
+      typekit: {
+        id: 'bzu7qrx',
+      },
+      google: {
+        families: ['Open Sans'],
+      },
     },
   },
 ];
