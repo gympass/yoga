@@ -89,7 +89,13 @@ class TabbedView extends React.Component {
   constructor(props) {
     super(props);
 
-    const { children } = props;
+    this.state = {
+      activeTab: 0,
+    };
+  }
+
+  componentDidMount() {
+    const { children } = this.props;
 
     const childrenArray = React.Children.toArray(children);
 
@@ -100,9 +106,7 @@ class TabbedView extends React.Component {
       child => child.props.title.toLowerCase() === href,
     );
 
-    this.state = {
-      activeTab: childrenArray.indexOf(activeTab) <= 0 ? 0 : 1,
-    };
+    this.setState({ activeTab: childrenArray.indexOf(activeTab) <= 0 ? 0 : 1 });
   }
 
   onTabClick = tab => {
