@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.5.9...@gympass/yoga-doc@0.6.0) (2019-12-09)
+
+### Features
+
+- **doc/home:** adding home route ([09a02e6](https://github.com/Gympass/yoga/commit/09a02e6001f50a181c6f973e9b3e6c47692743d2))
+- **yoga/doc:** add Grammar and Mechanics guidelines ([7d6deb6](https://github.com/Gympass/yoga/commit/7d6deb603de3e49a64f0f6c88d382523683d6c0b))
+- **yoga/doc:** add voice and tone ([67784f9](https://github.com/Gympass/yoga/commit/67784f955d38849f2b979643e6fa396a377c48f7))
+- **yoga/doc:** add working Summary ([dd9bc96](https://github.com/Gympass/yoga/commit/dd9bc961f02494a6605d7927a70ee2e805e8176a))
+- **yoga/doc:** create yoga home page ([46853cc](https://github.com/Gympass/yoga/commit/46853cc2bdc3112af25a7427c12718e1ef3aacc3))
+- **yoga/doc:** start grammar and mechanincs ([9623bad](https://github.com/Gympass/yoga/commit/9623bad2d3b1dd8ba4a845a93f41146b877ef0b9))
+- **yoga/docs:** add new route to Yoga documentation: Guidelines ([a7e6acf](https://github.com/Gympass/yoga/commit/a7e6acf56639954e2d825730627ddc17fb44c126))
+- **yoga/guidelines:** add key points guideline section ([05ea4cb](https://github.com/Gympass/yoga/commit/05ea4cb6a3d1dda208b1ce2955fe2c716651de80))
+- **yoga/guidelines:** add web-elements guideline section ([a75a362](https://github.com/Gympass/yoga/commit/a75a362af44821e981c77dc99c73c8c774fb2578))
+- **yoga/guidelines:** add word-list guideline section ([676eb1c](https://github.com/Gympass/yoga/commit/676eb1c13b30ff38d0ee820496db949439084a84))
+- **yoga/guidelines:** add writting-for-accessibility guideline section ([43984fd](https://github.com/Gympass/yoga/commit/43984fdb1e08499b1652063eb02f487cde7011cc))
+- **yoga/guidelines:** add writting-for-translation guideline section ([1d442d0](https://github.com/Gympass/yoga/commit/1d442d01e2d57036b1ab7022627098fc5888bcd6))
+
 ## [0.5.9](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.5.8...@gympass/yoga-doc@0.5.9) (2019-12-02)
 
 **Note:** Version bump only for package @gympass/yoga-doc
