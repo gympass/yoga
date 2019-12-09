@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { string, number, arrayOf, shape } from 'prop-types';
 import styled from 'styled-components';
 
+const hasWindow = typeof window !== 'undefined';
+
 const TableOfContent = styled.div`
   position: sticky;
   height: min-content;
@@ -89,17 +91,22 @@ AnchorList.propTypes = {
 
 const Summary = () => {
   const [anchors, setAnchors] = useState([]);
-  useEffect(() => {
-    const headings = Array.from(
-      document.querySelectorAll('h2, h3, h4, h5, h6'),
-    ).map(({ tagName: [, level], textContent: value, id }) => ({
-      depth: Number(level),
-      value,
-      id,
-    }));
+  useEffect(
+    () => {
+      if (hasWindow) {
+        const headings = Array.from(
+          document.querySelectorAll('h2, h3, h4, h5, h6'),
+        ).map(({ tagName: [, level], textContent: value, id }) => ({
+          depth: Number(level),
+          value,
+          id,
+        }));
 
-    setAnchors(headings);
-  }, [window.location.href]);
+        setAnchors(headings);
+      }
+    },
+    hasWindow ? [window.location.href] : null,
+  );
 
   return anchors.length ? (
     <TableOfContent>

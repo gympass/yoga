@@ -83,6 +83,7 @@ Tab.propTypes = {
 Tab.displayName = 'Tab';
 
 const renderIf = (conditional, renderFn) => conditional && renderFn();
+const hasWindow = typeof window !== 'undefined';
 
 class TabbedView extends React.Component {
   constructor(props) {
@@ -92,7 +93,7 @@ class TabbedView extends React.Component {
 
     const childrenArray = React.Children.toArray(children);
 
-    const [, href] = window.location.href.split('#');
+    const [, href] = hasWindow ? window.location.href.split('#') : [];
     childrenArray.find(a => a.props.title === href);
 
     const activeTab = childrenArray.find(
@@ -108,9 +109,11 @@ class TabbedView extends React.Component {
     const { children } = this.props;
     this.setState({ activeTab: children.indexOf(tab) });
 
-    window.location.href = `${
-      window.location.pathname
-    }#${tab.props.title.toLowerCase()}`;
+    if (hasWindow) {
+      window.location.href = `${
+        window.location.pathname
+      }#${tab.props.title.toLowerCase()}`;
+    }
   };
 
   render() {
