@@ -13,11 +13,11 @@ import {
   Header,
   ThemeConfig,
   TabBar,
-} from '..';
-import Footer from './Footer';
+} from 'components';
+import ReactLogo from 'images/react-logo.svg';
+import BookLogo from 'images/book.svg';
 
-import ReactLogo from '../../images/react-logo.svg';
-import BookLogo from '../../images/book.svg';
+import Footer from './Footer';
 
 const MainWrapper = styled.div`
   ${({

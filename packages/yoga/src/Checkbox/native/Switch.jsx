@@ -162,4 +162,6 @@ CheckboxSwitch.defaultProps = {
   onChange: () => {},
 };
 
+CheckboxSwitch.displayName = 'Checkbox.Switch';
+
 export default withTheme(CheckboxSwitch);

@@ -2,6 +2,7 @@ import CodeBlock from './CodeBlock';
 import PropsTable from './PropsTable';
 import ComponentTitle from './ComponentTitle';
 import Header from './Header';
+import * as Home from './Home';
 import InlineCode from './InlineCode';
 import Layout from './Layout';
 import Navigation from './Navigation';
@@ -19,6 +20,7 @@ export {
   CodeBlock,
   ComponentTitle,
   Header,
+  Home,
   InlineCode,
   Layout,
   Navigation,

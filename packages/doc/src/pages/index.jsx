@@ -4,10 +4,10 @@ import Helmet from 'react-helmet';
 import { ThemeProvider } from '@gympass/yoga';
 import { version } from '@gympass/yoga/package.json';
 
-import { Box, Description, Header, Title } from '../components/Home';
-import { GlobalStyle } from '../components';
-import Lotus from '../images/lotus.svg';
-import Gympass from '../images/gympass-logo.svg';
+import { GlobalStyle, Home } from 'components';
+
+import Lotus from 'images/lotus.svg';
+import Gympass from 'images/gympass-logo.svg';
 
 const YogaLogo = styled(Lotus)`
   width: 78px;
@@ -72,7 +72,7 @@ const metaTitle = 'Yoga • Design System';
 const metaDescription =
   'Yoga is a scientific system of practices made to help each one of us achieve our highest potential and experience.';
 
-const Home = () => (
+const HomePage = () => (
   <>
     <Helmet>
       <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
@@ -87,7 +87,7 @@ const Home = () => (
     <ThemeProvider>
       <GlobalStyle />
       <Wrapper>
-        <Header>
+        <Home.Header>
           <YogaLogo />
           <Version
             href="https://github.com/gympass/yoga"
@@ -96,17 +96,17 @@ const Home = () => (
           >
             v{version}
           </Version>
-        </Header>
-        <Description>
-          <Title>
+        </Home.Header>
+        <Home.Description>
+          <Home.Title>
             Yoga is a scientific system of practices made to help each one of us
             achieve our highest potential and experience.
-          </Title>
+          </Home.Title>
           <GympassLogo />
-        </Description>
+        </Home.Description>
         <BoxWrapper>
           {boxes.map(({ title, description }, index) => (
-            <Box
+            <Home.Box
               key={title}
               number={index + 1}
               title={title}
@@ -120,4 +120,4 @@ const Home = () => (
   </>
 );
 
-export default Home;
+export default HomePage;

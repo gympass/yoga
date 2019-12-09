@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import { arrayOf, object, func, bool, shape, number, string } from 'prop-types';
 
-import Arrow from '../../images/arrow-dropdown.svg';
+import Arrow from 'images/arrow-dropdown.svg';
 import createTree from './tree';
 
 const Wrapper = styled.div`
@@ -122,21 +122,39 @@ const Colapsible = styled.div`
   }
 `;
 
-const ListItem = ({ title, url, childs, level, toggleMenu }) => {
+const ListItem = ({ title, linkable, url, childs, level, toggleMenu }) => {
   const [opened, setOpened] = useState(true);
   const hasChild = Boolean(Object.keys(childs).length);
+
+  const filteredUrl = `/${[
+    ...new Set(url.split('/').filter(item => item)),
+  ].join('/')}`;
+
+  const { pathname } = window.location;
 
   return (
     <StyledListItem
       key={url}
-      active={typeof window !== 'undefined' && window.location.pathname === url}
+      active={
+        typeof window !== 'undefined' &&
+        pathname.replace(/\/$/, '') === filteredUrl
+      }
     >
       <AnchorLink
-        to={`/${[...new Set(url.split('/').filter(item => item))].join('/')}`}
         level={level}
-        as={hasChild && Colapsible}
+        as={Colapsible}
         visible={opened.toString()}
-        onClick={hasChild ? () => setOpened(!opened) : () => toggleMenu(false)}
+        onClick={() => {
+          if (hasChild) {
+            setOpened(!opened);
+          }
+
+          if (filteredUrl !== pathname && linkable) {
+            navigate(filteredUrl);
+          }
+
+          toggleMenu(false);
+        }}
       >
         {title}{' '}
         {hasChild ? <Arrow style={{ height: '100%', paddingTop: 10 }} /> : ''}
@@ -156,15 +174,17 @@ ListItem.propTypes = {
   childs: shape({}).isRequired,
   level: number.isRequired,
   toggleMenu: func.isRequired,
+  linkable: bool.isRequired,
 };
 
 const List = ({ tree, level, toggleMenu }) => (
   <StyledList>
-    {Object.values(tree).map(({ title, url, ...childs }) => (
+    {Object.values(tree).map(({ title, url, linkable, ...childs }) => (
       <ListItem
         key={title}
         title={title}
         url={url}
+        linkable={linkable}
         childs={childs}
         level={level}
         toggleMenu={toggleMenu}
@@ -184,7 +204,8 @@ List.defaultProps = {
 };
 
 const Navigation = ({ items, toggleMenu, opened }) => {
-  const [, firstPath] = window.location.pathname.split('/');
+  const [, firstPath] =
+    typeof window !== 'undefined' ? window.location.pathname.split('/') : [];
   const filteredItems = items.filter(({ url }) => url.includes(firstPath));
   const tree = createTree(filteredItems);
 

@@ -20,16 +20,31 @@ const GlobalStyle = createGlobalStyle(
     }
 
     h1, h2, h3, h4, h5, h6 {
+      display: flex;
+      align-items: center;
       margin: 45px 0 20px;
 
       color: #333;
       font-weight: 300;
+
+      &:hover {
+        .anchor {
+          display: flex;
+        }
+      }
     }
 
     p {
       font-size: 18px;
       font-weight: 300;
       line-height: 1.8;
+    }
+
+    .anchor {
+      display: none;
+      padding-right: 8px;
+      margin-left: -24px;
+      float: left;
     }
 
     h1 {
@@ -66,6 +81,33 @@ const GlobalStyle = createGlobalStyle(
       line-height: 2;
     }
 
+    img { 
+      max-width: 100%;
+    }
+    
+    table {
+      text-align: left;
+      border-collapse: collapse;
+      margin: 0px 0;
+      width: 100%;
+
+      thead {
+        th {
+          font-size: 14px;
+          font-weight: normal;
+          padding: 14px 12px 12px;
+          text-align: left;
+        }
+      }
+
+      tbody tr, thead tr {
+        td, th {
+          border: 1px solid #ccc;
+          padding: 14px 12px 12px;
+        }
+      }
+    }
+    
     @media (max-width: 900px) {
       h1 {
         font-size: 26px;

@@ -1,37 +1,52 @@
-import React, { useEffect, useState, useRef, Fragment } from 'react';
-import { string } from 'prop-types';
+import React, { useEffect, useState } from 'react';
+import { string, number, arrayOf, shape } from 'prop-types';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
-import HeadingsQuery from './HeadingsQuery';
 
-const Wrapper = styled.div`
-  grid-area: Summary;
-  position: relative;
+const hasWindow = typeof window !== 'undefined';
+
+const TableOfContent = styled.div`
+  position: sticky;
+  height: min-content;
+  top: 10px;
+
+  max-width: 150px;
+
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 38px;
 
-  ${({ fixed }) =>
-    fixed &&
-    `
-    position: fixed;
-    right: 7px;
-    top: 16px;
-  `}
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
-const AnchorList = styled.ul`
-  border-left: 1px solid #f6f6f6;
+const StyledList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  ul {
+    width: auto;
+    padding-left: 10px;
+    border-left: none;
+  }
 `;
 
-const AnchorItem = styled.li`
+const AnchorItem = styled.li(
+  ({
+    theme: {
+      yoga: {
+        colors: { primary },
+      },
+    },
+    depth,
+  }) => `
   font-size: 12px;
-  margin-bottom: 4px;
 
   a {
     color: inherit;
     display: block;
     overflow: hidden;
-    padding-left: 16px;
+    padding-left: ${8 * depth}px;
     text-decoration: none;
     text-overflow: ellipsis;
     width: 100%;
@@ -39,85 +54,68 @@ const AnchorItem = styled.li`
     transition: all 0.2s;
 
     &:hover {
-      color: #f46152;
+      color: ${primary[3]};
     }
   }
-`;
+`,
+);
 
-const getLinks = ({ url, title }) => (
-  <AnchorItem key={url}>
-    <Link
-      to={typeof window !== 'undefined' ? window.location.pathname + url : url}
-    >
-      {title}
-    </Link>
+const Anchor = ({ depth, value, id }) => (
+  <AnchorItem key={value} depth={depth}>
+    <a href={`#${id}`} title={value}>
+      {value}
+    </a>
   </AnchorItem>
 );
 
-getLinks.propTypes = {
-  url: string.isRequired,
-  title: string.isRequired,
+Anchor.propTypes = {
+  depth: number.isRequired,
+  id: string.isRequired,
+  value: string.isRequired,
 };
 
-const getHeadings = (edges = []) => {
-  const pathname = typeof window !== 'undefined' && window.location.pathname;
-  const paths = edges.filter(
-    ({ node }) => node.fields && node.fields.slug === pathname,
-  );
+const AnchorList = ({ anchors }) => (
+  <StyledList>
+    {anchors.map(anchor => (
+      <Anchor key={anchor.id} {...anchor} />
+    ))}
+  </StyledList>
+);
 
-  const [
-    {
-      node: { tableOfContents = {} },
-    },
-  ] = paths.length ? paths : [{ node: {} }];
-
-  if (!Object.keys(tableOfContents).length) {
-    return [];
-  }
-
-  return tableOfContents.items;
-};
-
-const getSummary = edges => {
-  const headings = getHeadings(edges);
-
-  return (
-    <AnchorList>
-      {headings.map(heading => (
-        <Fragment key={heading.url}>
-          {getLinks(heading)}
-          {headings.length === 1 &&
-            heading.items &&
-            heading.items.map(subHeading => getLinks(subHeading))}
-        </Fragment>
-      ))}
-    </AnchorList>
-  );
+AnchorList.propTypes = {
+  anchors: arrayOf(
+    shape({
+      depth: number,
+      id: string,
+      value: string,
+    }),
+  ).isRequired,
 };
 
 const Summary = () => {
-  const ssr = typeof window !== 'undefined';
+  const [anchors, setAnchors] = useState([]);
+  useEffect(
+    () => {
+      if (hasWindow) {
+        const headings = Array.from(
+          document.querySelectorAll('h2, h3, h4, h5, h6'),
+        ).map(({ tagName: [, level], textContent: value, id }) => ({
+          depth: Number(level),
+          value,
+          id,
+        }));
 
-  const {
-    allMdx: { edges },
-  } = HeadingsQuery();
-  const [fixed, setFixed] = useState(false);
-  const wrapperRef = useRef(null);
-  const handleScroll = () => ssr && setFixed(window.scrollY > 88);
-
-  useEffect(() => {
-    if (ssr) {
-      window.addEventListener('scroll', handleScroll);
-    }
-
-    return () => ssr && window.removeEventListener('scroll', handleScroll);
-  });
-
-  return (
-    <Wrapper fixed={fixed} ref={wrapperRef}>
-      {getSummary(edges)}
-    </Wrapper>
+        setAnchors(headings);
+      }
+    },
+    hasWindow ? [window.location.href] : null,
   );
+
+  return anchors.length ? (
+    <TableOfContent>
+      <AnchorList anchors={anchors} />
+    </TableOfContent>
+  ) : null;
 };
 
 export default Summary;
