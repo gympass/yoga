@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -85,33 +85,24 @@ Tab.displayName = 'Tab';
 const renderIf = (conditional, renderFn) => conditional && renderFn();
 const hasWindow = typeof window !== 'undefined';
 
-class TabbedView extends React.Component {
-  constructor(props) {
-    super(props);
+const TabbedView = ({ children }) => {
+  const [currentTab, setCurrentTab] = useState(0);
 
-    this.state = {
-      activeTab: 0,
-    };
-  }
-
-  componentDidMount() {
-    const { children } = this.props;
-
+  useEffect(() => {
     const childrenArray = React.Children.toArray(children);
-
     const [, href] = hasWindow ? window.location.href.split('#') : [];
+
     childrenArray.find(a => a.props.title === href);
 
     const activeTab = childrenArray.find(
       child => child.props.title.toLowerCase() === href,
     );
 
-    this.setState({ activeTab: childrenArray.indexOf(activeTab) <= 0 ? 0 : 1 });
-  }
+    setCurrentTab(childrenArray.indexOf(activeTab) <= 0 ? 0 : 1);
+  });
 
-  onTabClick = tab => {
-    const { children } = this.props;
-    this.setState({ activeTab: children.indexOf(tab) });
+  const onTabClick = tab => {
+    setCurrentTab(children.indexOf(tab));
 
     if (hasWindow) {
       window.location.href = `${
@@ -120,35 +111,30 @@ class TabbedView extends React.Component {
     }
   };
 
-  render() {
-    const { children } = this.props;
-    const { activeTab } = this.state;
-
-    return (
-      <>
-        <Navbar>
-          {React.Children.map(
-            children,
-            tab =>
-              tab && (
-                <NavItem
-                  key={tab.props.title}
-                  onClick={() => this.onTabClick(tab)}
-                  active={children.indexOf(tab) === activeTab}
-                >
-                  {tab.props.title}
-                </NavItem>
-              ),
-          )}
-        </Navbar>
-
-        {React.Children.map(children, child =>
-          renderIf(children.indexOf(child) === activeTab, () => child),
+  return (
+    <>
+      <Navbar>
+        {React.Children.map(
+          children,
+          tab =>
+            tab && (
+              <NavItem
+                key={tab.props.title}
+                onClick={() => onTabClick(tab)}
+                active={children.indexOf(tab) === currentTab}
+              >
+                {tab.props.title}
+              </NavItem>
+            ),
         )}
-      </>
-    );
-  }
-}
+      </Navbar>
+
+      {React.Children.map(children, child =>
+        renderIf(children.indexOf(child) === currentTab, () => child),
+      )}
+    </>
+  );
+};
 
 TabbedView.propTypes = {
   children: PropTypes.oneOfType([
