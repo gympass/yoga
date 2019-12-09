@@ -8,6 +8,9 @@ const TableOfContent = styled.div`
   position: sticky;
   height: min-content;
   top: 10px;
+
+  max-width: 150px;
+
   margin-left: 20px;
   margin-right: 38px;
 
