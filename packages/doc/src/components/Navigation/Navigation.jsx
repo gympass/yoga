@@ -204,7 +204,8 @@ List.defaultProps = {
 };
 
 const Navigation = ({ items, toggleMenu, opened }) => {
-  const [, firstPath] = window.location.pathname.split('/');
+  const [, firstPath] =
+    typeof window !== 'undefined' ? window.location.pathname.split('/') : [];
   const filteredItems = items.filter(({ url }) => url.includes(firstPath));
   const tree = createTree(filteredItems);
 

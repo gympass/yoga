@@ -28,6 +28,10 @@ const createTree = items => {
 
   const [filteredRoutes] = Object.values(allRoutes);
 
+  if (!filteredRoutes) {
+    return {};
+  }
+
   delete filteredRoutes.title;
   delete filteredRoutes.url;
   delete filteredRoutes.linkable;
