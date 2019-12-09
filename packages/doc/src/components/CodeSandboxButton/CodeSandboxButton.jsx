@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { string, arrayOf } from 'prop-types';
-import CodeSandboxIcon from '../../images/codesandbox.svg';
-import LoadingIcon from '../../images/loading.svg';
+import CodeSandboxIcon from 'images/codesandbox.svg';
+import LoadingIcon from 'images/loading.svg';
 
 import { URL, setOptions } from './code';
 

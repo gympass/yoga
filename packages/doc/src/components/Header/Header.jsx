@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 import { node, bool, func } from 'prop-types';
 import { Spring } from 'react-burgers';
 
-import yoga from '../../images/yoga-logo.svg';
+import yoga from 'images/yoga-logo.svg';
 
 const LOGO_WRAPPER_WIDTH = 250;
 
@@ -36,26 +37,18 @@ const Wrapper = styled.div`
 `;
 
 const LogoWrapper = styled.div`
-  ${({
-    theme: {
-      yoga: {
-        colors: { gray: grayPallete },
-      },
-    },
-  }) => `
-    align-items: center;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    box-shadow: 2px 0 0 ${grayPallete[1]};
-    width: ${LOGO_WRAPPER_WIDTH}px;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  padding-left: 30px;
+  overflow: hidden;
+  width: ${LOGO_WRAPPER_WIDTH}px;
 
-    @media (max-width: 900px) {
-      width: unset;
-      box-shadow: none;
-    }
-  `};
+  @media (max-width: 900px) {
+    width: unset;
+    box-shadow: none;
+    padding-left: unset;
+  }
 `;
 
 const Hamburguer = styled(Spring)`
@@ -88,6 +81,7 @@ const Actions = styled.div`
   justify-content: flex-end;
   padding: 0 20px;
   width: calc(100% - ${LOGO_WRAPPER_WIDTH}px);
+  height: 100%;
 
   @media (max-width: 900px) {
     display: none;
@@ -97,7 +91,9 @@ const Actions = styled.div`
 const Header = ({ children, showMenu, toggleMenu }) => (
   <Wrapper>
     <LogoWrapper>
-      <YogaLogo />
+      <Link to="/">
+        <YogaLogo />
+      </Link>
     </LogoWrapper>
 
     <Hamburguer
