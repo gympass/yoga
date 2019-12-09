@@ -84,7 +84,30 @@ const GlobalStyle = createGlobalStyle(
     img { 
       max-width: 100%;
     }
+    
+    table {
+      text-align: left;
+      border-collapse: collapse;
+      margin: 0px 0;
+      width: 100%;
 
+      thead {
+        th {
+          font-size: 14px;
+          font-weight: normal;
+          padding: 14px 12px 12px;
+          text-align: left;
+        }
+      }
+
+      tbody tr, thead tr {
+        td, th {
+          border: 1px solid #ccc;
+          padding: 14px 12px 12px;
+        }
+      }
+    }
+    
     @media (max-width: 900px) {
       h1 {
         font-size: 26px;
