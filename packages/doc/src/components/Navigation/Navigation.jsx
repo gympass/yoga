@@ -135,7 +135,10 @@ const ListItem = ({ title, linkable, url, childs, level, toggleMenu }) => {
   return (
     <StyledListItem
       key={url}
-      active={typeof window !== 'undefined' && window.location.pathname === url}
+      active={
+        typeof window !== 'undefined' &&
+        pathname.replace(/\/$/, '') === filteredUrl
+      }
     >
       <AnchorLink
         level={level}

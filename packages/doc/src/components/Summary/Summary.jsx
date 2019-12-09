@@ -8,6 +8,10 @@ const TableOfContent = styled.div`
   top: 10px;
   margin-left: 20px;
   margin-right: 38px;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 `;
 
 const StyledList = styled.ul`
