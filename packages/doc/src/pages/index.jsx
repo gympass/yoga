@@ -60,11 +60,13 @@ const boxes = [
     title: 'guidelines',
     description:
       'Design principles, practical patterns and high quality design resources to help people create their product prototypes beautifully and efficiently.',
+    href: '/guidelines/product-content/',
   },
   {
     title: 'components',
     description:
       'A React and React Native UI library that contains a set of high quality components that defines our interfaces.',
+    href: '/components/getting-started/',
   },
 ];
 
@@ -105,13 +107,13 @@ const HomePage = () => (
           <GympassLogo />
         </Home.Description>
         <BoxWrapper>
-          {boxes.map(({ title, description }, index) => (
+          {boxes.map(({ title, description, href }, index) => (
             <Home.Box
               key={title}
               number={index + 1}
               title={title}
               description={description}
-              href={`/${title}`}
+              href={href}
             />
           ))}
         </BoxWrapper>

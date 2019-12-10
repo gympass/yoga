@@ -1,8 +1,9 @@
 import React from 'react';
 import { number, string } from 'prop-types';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-const Item = styled.a(
+const Item = styled(Link)(
   ({
     theme: {
       yoga: {
@@ -89,7 +90,7 @@ const Description = styled.p(
 );
 
 const Box = ({ number: boxNumber, title, description, href }) => (
-  <Item href={href}>
+  <Item to={href}>
     <Number>{boxNumber}</Number>
     <Content>
       <Title>{title}</Title>
