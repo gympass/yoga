@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.6.0...@gympass/yoga-doc@0.6.1) (2019-12-10)
+
+### Bug Fixes
+
+- **yoga/doc:** fix documentation links and slack notify ([b760d7a](https://github.com/Gympass/yoga/commit/b760d7a521679d432a408ad1d596e22a91de524a))
+
 # [0.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.5.9...@gympass/yoga-doc@0.6.0) (2019-12-09)
 
 ### Features
