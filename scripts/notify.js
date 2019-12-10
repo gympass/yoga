@@ -64,20 +64,20 @@ async function notify() {
 
     const changes = {
       color: '#F46152',
-      text: changedPackages,
       fields: [
         {
-          title: 'Changes',
+          author_name: 'Changes',
+          pretext: changedPackages,
         },
       ],
     };
 
     releaseNotification.attachments.push(changes);
 
-    console.log(JSON.stringify(releaseNotification, null, 2));
     const notification = JSON.stringify(releaseNotification);
 
     await sendSlackMessage(slackWebHook, notification);
+
     console.log('Notification sent');
   } catch (e) {
     console.error('There was an error sending Slack notification', e);
