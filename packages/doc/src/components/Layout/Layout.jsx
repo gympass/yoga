@@ -103,11 +103,6 @@ const Layout = ({
   const [locale, setLocale] = useState();
   const [showMenu, toggleMenu] = useState(false);
 
-  const prefix =
-    typeof window !== 'undefined'
-      ? window.location.pathname.split('/').filter(item => item)[0] === 'yoga'
-      : false;
-
   return (
     <ThemeProvider theme={theme} locale={locale}>
       <Helmet>
@@ -138,12 +133,8 @@ const Layout = ({
       <MainWrapper>
         <Grid>
           <Header showMenu={showMenu} toggleMenu={toggleMenu}>
-            <HeaderLink to="/guidelines/product-content/">
-              Guidelines
-            </HeaderLink>
-            <HeaderLink to="/components/getting-started/">
-              Components
-            </HeaderLink>
+            <HeaderLink to="/guidelines">Guidelines</HeaderLink>
+            <HeaderLink to="/components">Components</HeaderLink>
             <ThemeConfig
               theme={theme}
               locale={locale}
@@ -153,22 +144,17 @@ const Layout = ({
           </Header>
 
           <TabBar>
-            <TabBar.Tab to="/guidelines/product-content/">
+            <TabBar.Tab to="/guidelines">
               <BookLogo />
               Guidelines
             </TabBar.Tab>
-            <TabBar.Tab to="/components/getting-started/">
+            <TabBar.Tab to="/components">
               <ReactLogo />
               Components
             </TabBar.Tab>
           </TabBar>
 
-          <Navigation
-            toggleMenu={toggleMenu}
-            opened={showMenu}
-            items={nav}
-            prefix={prefix}
-          />
+          <Navigation toggleMenu={toggleMenu} opened={showMenu} items={nav} />
           <Documentation mdx={body} />
 
           <Footer>
