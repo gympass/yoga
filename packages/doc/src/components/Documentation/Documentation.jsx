@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, bool } from 'prop-types';
 import styled from 'styled-components';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
@@ -16,8 +16,8 @@ import {
   Summary,
 } from 'components';
 
-const customComponents = {
-  h1: ComponentTitle,
+const customComponents = prefix => ({
+  h1: props => <ComponentTitle {...props} prefix={prefix} />,
   pre: 'div',
   code: CodeBlock,
   inlineCode: InlineCode,
@@ -27,7 +27,7 @@ const customComponents = {
   ExpoSnack,
   Redirect: props => <Redirect {...props} />,
   ...components,
-};
+});
 
 const Wrapper = styled.div`
   display: flex;
@@ -40,10 +40,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const Documentation = ({ mdx }) => (
+const Documentation = ({ mdx, prefix }) => (
   <Wrapper>
     <div style={{ width: '100%' }}>
-      <MDXProvider components={customComponents}>
+      <MDXProvider components={customComponents(prefix)}>
         <MDXRenderer>{mdx}</MDXRenderer>
       </MDXProvider>
     </div>
@@ -53,6 +53,7 @@ const Documentation = ({ mdx }) => (
 
 Documentation.propTypes = {
   mdx: string.isRequired,
+  prefix: bool.isRequired,
 };
 
 export default Documentation;
