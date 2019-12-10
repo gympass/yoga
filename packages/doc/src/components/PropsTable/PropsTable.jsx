@@ -40,6 +40,7 @@ const StyledTable = styled.table`
 
 
       th {
+        border: none;
         font-size: 14px;
         font-weight: normal;
         padding: 14px 12px 12px;
@@ -52,6 +53,7 @@ const StyledTable = styled.table`
         background-color: ${grayPallete[0]};
 
         td {
+          border: none;
           border-top: 1px solid ${hexToRgb(grayPallete[2], 0.7)};
           padding: 14px 12px 12px;
 
