@@ -203,10 +203,12 @@ List.defaultProps = {
   level: 0,
 };
 
-const Navigation = ({ items, toggleMenu, opened }) => {
-  const [, firstPath] =
+const Navigation = ({ items, toggleMenu, opened, prefix }) => {
+  const [, firstPath, secondPath] =
     typeof window !== 'undefined' ? window.location.pathname.split('/') : [];
-  const filteredItems = items.filter(({ url }) => url.includes(firstPath));
+  const filteredItems = items.filter(({ url }) =>
+    url.includes(prefix ? secondPath : firstPath),
+  );
   const tree = createTree(filteredItems);
 
   return (
@@ -222,6 +224,7 @@ Navigation.propTypes = {
   items: arrayOf(object).isRequired,
   toggleMenu: func.isRequired,
   opened: bool.isRequired,
+  prefix: bool.isRequired,
 };
 
 export default Navigation;
