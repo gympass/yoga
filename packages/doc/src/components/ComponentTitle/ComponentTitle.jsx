@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { node } from 'prop-types';
+import { node, bool } from 'prop-types';
 import DescriptionQuery from './DescriptionQuery';
 
 const Heading = styled.h1`
@@ -9,7 +9,7 @@ const Heading = styled.h1`
   word-break: break-all;
 `;
 
-const getMetaData = isComponent => {
+const getMetaData = (isComponent, prefix) => {
   if (!isComponent) {
     return {};
   }
@@ -20,7 +20,7 @@ const getMetaData = isComponent => {
   const filteredEdges = edges.filter(({ node: { displayName } }) => {
     const [, component, compound = ''] = window.location.pathname
       .split('/')
-      .filter(l => l);
+      .filter(path => (prefix ? path && path !== 'yoga' : path));
 
     const componentName = `${component}${
       compound === 'default' ? '' : compound
@@ -42,12 +42,12 @@ const getMetaData = isComponent => {
   return { description };
 };
 
-const ComponentTitle = ({ children = '' }) => {
+const ComponentTitle = ({ prefix, children = '' }) => {
   const isComponent =
     typeof window !== 'undefined' &&
     window.location.href.search(/components\/.+/) > -1;
 
-  const { description = '' } = getMetaData(isComponent);
+  const { description = '' } = getMetaData(isComponent, prefix);
 
   return (
     <>
@@ -59,6 +59,7 @@ const ComponentTitle = ({ children = '' }) => {
 
 ComponentTitle.propTypes = {
   children: node.isRequired,
+  prefix: bool.isRequired,
 };
 
 export default ComponentTitle;
