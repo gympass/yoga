@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.6.1...@gympass/yoga-doc@0.6.2) (2019-12-10)
+
+### Bug Fixes
+
+- **yoga/doc:** fix doc issue due to prefix pathname ([b0b8e1e](https://github.com/Gympass/yoga/commit/b0b8e1ee989f757d2a6b70dd55d68ff77d23d635))
+
 ## [0.6.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.6.0...@gympass/yoga-doc@0.6.1) (2019-12-10)
 
 ### Bug Fixes
