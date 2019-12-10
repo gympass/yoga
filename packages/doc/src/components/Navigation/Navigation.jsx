@@ -122,7 +122,15 @@ const Colapsible = styled.div`
   }
 `;
 
-const ListItem = ({ title, linkable, url, childs, level, toggleMenu }) => {
+const ListItem = ({
+  title,
+  linkable,
+  url,
+  childs,
+  level,
+  toggleMenu,
+  prefix,
+}) => {
   const [opened, setOpened] = useState(true);
   const hasChild = Boolean(Object.keys(childs).length);
 
@@ -137,7 +145,8 @@ const ListItem = ({ title, linkable, url, childs, level, toggleMenu }) => {
       key={url}
       active={
         typeof window !== 'undefined' &&
-        pathname.replace(/\/$/, '') === filteredUrl
+        pathname.replace(/\/$/, '') ===
+          (prefix ? `/yoga${filteredUrl}` : filteredUrl)
       }
     >
       <AnchorLink
@@ -161,7 +170,12 @@ const ListItem = ({ title, linkable, url, childs, level, toggleMenu }) => {
       </AnchorLink>
       {hasChild && (
         <StyledList level={level}>
-          <List tree={childs} level={level + 1} toggleMenu={toggleMenu} />
+          <List
+            tree={childs}
+            level={level + 1}
+            toggleMenu={toggleMenu}
+            prefix={prefix}
+          />
         </StyledList>
       )}
     </StyledListItem>
@@ -175,9 +189,10 @@ ListItem.propTypes = {
   level: number.isRequired,
   toggleMenu: func.isRequired,
   linkable: bool.isRequired,
+  prefix: bool.isRequired,
 };
 
-const List = ({ tree, level, toggleMenu }) => (
+const List = ({ tree, level, toggleMenu, prefix }) => (
   <StyledList>
     {Object.values(tree).map(({ title, url, linkable, ...childs }) => (
       <ListItem
@@ -188,6 +203,7 @@ const List = ({ tree, level, toggleMenu }) => (
         childs={childs}
         level={level}
         toggleMenu={toggleMenu}
+        prefix={prefix}
       />
     ))}
   </StyledList>
@@ -197,6 +213,7 @@ List.propTypes = {
   tree: shape({}).isRequired,
   level: number,
   toggleMenu: func.isRequired,
+  prefix: bool.isRequired,
 };
 
 List.defaultProps = {
@@ -214,7 +231,7 @@ const Navigation = ({ items, toggleMenu, opened, prefix }) => {
   return (
     <Wrapper opened={opened}>
       <Nav>
-        <List tree={tree} toggleMenu={toggleMenu} />
+        <List tree={tree} toggleMenu={toggleMenu} prefix={prefix} />
       </Nav>
     </Wrapper>
   );

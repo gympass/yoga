@@ -169,7 +169,7 @@ const Layout = ({
             items={nav}
             prefix={prefix}
           />
-          <Documentation mdx={body} />
+          <Documentation mdx={body} prefix={prefix} />
 
           <Footer>
             Made with{' '}
