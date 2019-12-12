@@ -14,6 +14,7 @@ import {
   Tab,
   Redirect,
   Summary,
+  Tokens,
 } from 'components';
 
 const customComponents = prefix => ({
@@ -26,6 +27,9 @@ const customComponents = prefix => ({
   PropsTable,
   ExpoSnack,
   Redirect: props => <Redirect {...props} />,
+  Tokens: props => <Tokens {...props} />,
+  TokensColors: props => <Tokens.Colors {...props} />,
+  TokensCards: props => <Tokens.Cards {...props} />,
   ...components,
 });
 
@@ -36,6 +40,7 @@ const Wrapper = styled.div`
   padding: 30px 0 30px 100px;
 
   @media (max-width: 900px) {
+    min-height: calc(100vh - 130px);
     padding: 80px 20px 20px;
   }
 `;
