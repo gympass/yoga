@@ -32,6 +32,15 @@ describe('<Button />', () => {
         );
         expect(toJSON(container)).toMatchSnapshot();
       });
+
+      it('should match snapshot with link Button', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Link />
+          </ThemeProvider>,
+        );
+        expect(toJSON(container)).toMatchSnapshot();
+      });
     });
 
     describe('With inverted prop', () => {
@@ -57,6 +66,15 @@ describe('<Button />', () => {
         const { container } = render(
           <ThemeProvider>
             <Button.Text inverted />
+          </ThemeProvider>,
+        );
+        expect(toJSON(container)).toMatchSnapshot();
+      });
+
+      it('should match snapshot with link Button', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Link inverted />
           </ThemeProvider>,
         );
         expect(toJSON(container)).toMatchSnapshot();
@@ -144,6 +162,15 @@ describe('<Button />', () => {
         const { container } = render(
           <ThemeProvider>
             <Button.Text disabled />
+          </ThemeProvider>,
+        );
+        expect(toJSON(container)).toMatchSnapshot();
+      });
+
+      it('should match snapshot with link Button', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Link disabled />
           </ThemeProvider>,
         );
         expect(toJSON(container)).toMatchSnapshot();
