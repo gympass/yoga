@@ -12,11 +12,12 @@ const {
   borders,
 } = tokens;
 
-const BaseTheme = ({ primary, secondary }) => {
+const BaseTheme = ({ primary, secondary, tertiary }) => {
   const baseFontSize = fontSizes[3];
   const colors = {
     primary,
     secondary,
+    tertiary,
     gray: tokenColors.gray,
     white: tokenColors.white,
     dark: tokenColors.dark,
@@ -199,6 +200,13 @@ const BaseTheme = ({ primary, secondary }) => {
             disabled: colors.gray[3],
             enabled: primary[3],
             pressed: primary[2],
+          },
+        },
+        link: {
+          disabled: colors.gray[2],
+          margin: {
+            top: spacing.medium,
+            bottom: spacing.xsmall,
           },
         },
       },
