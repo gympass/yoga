@@ -900,3 +900,82 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
   </TouchableWithoutFeedback>
 </View>
 `;
+
+exports[`<Button /> With variant prop should match snapshot with default Button 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    variant="primary"
+  >
+    <Text
+      disabled={false}
+      inverted={false}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "color": "#F46152",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "marginBottom": 8,
+            "marginTop": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+      variant="primary"
+    />
+  </TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    variant="secondary"
+  >
+    <Text
+      disabled={false}
+      inverted={false}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "color": "#652CDB",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "marginBottom": 8,
+            "marginTop": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+      variant="secondary"
+    />
+  </TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    variant="tertiary"
+  >
+    <Text
+      disabled={false}
+      inverted={false}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "color": "#178173",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "marginBottom": 8,
+            "marginTop": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+      variant="tertiary"
+    />
+  </TouchableWithoutFeedback>
+</View>
+`;

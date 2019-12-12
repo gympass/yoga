@@ -178,6 +178,19 @@ describe('<Button />', () => {
     });
   });
 
+  describe('With variant prop', () => {
+    it('should match snapshot with default Button', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Button.Link variant="primary" />
+          <Button.Link variant="secondary" />
+          <Button.Link variant="tertiary" />
+        </ThemeProvider>,
+      );
+      expect(toJSON(container)).toMatchSnapshot();
+    });
+  });
+
   describe('onPress prop', () => {
     it('should call onPress function when click on Button', () => {
       const onPressMock = jest.fn();
