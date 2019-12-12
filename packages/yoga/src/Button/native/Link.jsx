@@ -26,7 +26,7 @@ const Link = styled(Label)`
     margin-bottom: ${link.margin.bottom}px;
     color: ${color[3]};
 
-    ${disabled ? `color: ${link.disabled};` : ''}
+    ${disabled ? `color: ${link.textColor.disabled};` : ''}
     ${!disabled && pressed ? `color: ${color[2]};` : ''}
 
     ${

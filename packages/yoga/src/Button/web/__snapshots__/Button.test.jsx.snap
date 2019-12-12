@@ -86,10 +86,10 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
 
 .c1 {
   height: unset;
-  background-color: unset;
   padding: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+  background-color: unset;
   border: none;
   border-radius: 0;
   color: #F46152;
@@ -108,7 +108,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
 
 .c1:disabled {
   background-color: unset;
-  color: #DBDBE8;
+  color: #9898A6;
 }
 
 <div>
@@ -562,10 +562,10 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
 
 .c1 {
   height: unset;
-  background-color: unset;
   padding: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+  background-color: unset;
   border: none;
   border-radius: 0;
   color: #F46152;
@@ -585,7 +585,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
 
 .c1:disabled {
   background-color: unset;
-  color: #DBDBE8;
+  color: #9898A6;
 }
 
 .c1:not([disabled]):hover,
@@ -1008,10 +1008,10 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
 
 .c1 {
   height: unset;
-  background-color: unset;
   padding: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+  background-color: unset;
   border: none;
   border-radius: 0;
   color: #F46152;
@@ -1030,15 +1030,15 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
 
 .c1:disabled {
   background-color: unset;
-  color: #DBDBE8;
+  color: #9898A6;
 }
 
 .c2 {
   height: unset;
-  background-color: unset;
   padding: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+  background-color: unset;
   border: none;
   border-radius: 0;
   color: #652CDB;
@@ -1057,15 +1057,15 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
 
 .c2:disabled {
   background-color: unset;
-  color: #DBDBE8;
+  color: #9898A6;
 }
 
 .c3 {
   height: unset;
-  background-color: unset;
   padding: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+  background-color: unset;
   border: none;
   border-radius: 0;
   color: #178173;
@@ -1084,7 +1084,7 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
 
 .c3:disabled {
   background-color: unset;
-  color: #DBDBE8;
+  color: #9898A6;
 }
 
 <div>
@@ -1191,10 +1191,10 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
 
 .c1 {
   height: unset;
-  background-color: unset;
   padding: 0;
   margin-top: 16px;
   margin-bottom: 8px;
+  background-color: unset;
   border: none;
   border-radius: 0;
   color: #F46152;
@@ -1213,7 +1213,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
 
 .c1:disabled {
   background-color: unset;
-  color: #DBDBE8;
+  color: #9898A6;
 }
 
 <div>

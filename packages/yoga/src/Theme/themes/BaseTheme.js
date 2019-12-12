@@ -203,7 +203,9 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           },
         },
         link: {
-          disabled: colors.gray[2],
+          textColor: {
+            disabled: colors.gray[3],
+          },
           margin: {
             top: spacing.medium,
             bottom: spacing.xsmall,

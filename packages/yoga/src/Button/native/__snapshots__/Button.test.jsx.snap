@@ -78,7 +78,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
       style={
         Array [
           Object {
-            "color": "#DBDBE8",
+            "color": "#9898A6",
             "fontSize": 14,
             "fontWeight": "700",
             "marginBottom": 8,

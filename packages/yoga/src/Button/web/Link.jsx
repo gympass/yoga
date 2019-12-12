@@ -20,10 +20,10 @@ const Link = styled(Button)(
     },
   }) => `
   height: unset;
-  background-color: unset;
   padding: 0;
   margin-top: ${link.margin.top}px;
   margin-bottom: ${link.margin.bottom}px;
+  background-color: unset;
   border: none;
   border-radius: 0;
   color: ${color[3]};
@@ -40,7 +40,7 @@ const Link = styled(Button)(
 
   &:disabled {
     background-color: unset;
-    color: ${link.disabled};
+    color: ${link.textColor.disabled};
   }
 
   ${
