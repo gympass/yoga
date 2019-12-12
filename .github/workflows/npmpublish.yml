@@ -6,8 +6,15 @@ on:
       - master
 
 jobs:
+  check-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: if merged
+        if: startsWith(github.event.head_commit.message, 'Merge')
+        run: exit 0
+
   build-and-publish:
-    if: startsWith(github.event.head_commit.message, 'Merge')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
