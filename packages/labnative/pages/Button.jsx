@@ -65,20 +65,23 @@ const ButtonPage = () => (
       </Button.Outline>
     </ButtonWrapper>
 
+    <StyledText>Link Buttons</StyledText>
+    <ButtonWrapper>
+      <Button.Link>Link</Button.Link>
+    </ButtonWrapper>
+    <ButtonWrapper>
+      <Button.Link inverted>Inverted</Button.Link>
+    </ButtonWrapper>
+    <ButtonWrapper>
+      <Button.Link disabled>Disabled</Button.Link>
+    </ButtonWrapper>
+
     <StyledText>Text Buttons</StyledText>
     <ButtonWrapper>
       <Button.Text>Text</Button.Text>
     </ButtonWrapper>
     <ButtonWrapper>
       <Button.Text disabled>Disabled</Button.Text>
-    </ButtonWrapper>
-
-    <StyledText>Link Buttons</StyledText>
-    <ButtonWrapper>
-      <Button.Link>Link</Button.Link>
-    </ButtonWrapper>
-    <ButtonWrapper>
-      <Button.Link disabled>Disabled</Button.Link>
     </ButtonWrapper>
   </ScrollView>
 );
