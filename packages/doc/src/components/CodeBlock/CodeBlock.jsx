@@ -58,7 +58,7 @@ const Preview = styled.div`
   }) => `
     background-color: ${grayPallete[0]};
     border-radius: 5px;
-    border: 1px solid ${grayPallete[2]};
+    border: 1px solid ${grayPallete[3]};
     overflow: hidden;
 
     textarea {
@@ -159,7 +159,7 @@ const ToolbarIconButton = styled.button`
       height: 100%;
 
       path {
-        fill: ${grayPallete[3]};
+        fill: ${grayPallete[7]};
       }
 
       &:hover {
