@@ -1578,7 +1578,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
               style={
                 Array [
                   Object {
-                    "backgroundColor": "#178173",
+                    "backgroundColor": "#652CDB",
                     "borderRadius": 8,
                     "bottom": 38,
                     "elevation": 8,
@@ -1600,7 +1600,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "backgroundColor": "#178173",
+                      "backgroundColor": "#652CDB",
                       "borderTopLeftRadius": 8,
                       "borderTopRightRadius": 8,
                       "justifyContent": "center",
@@ -1887,7 +1887,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
               style={
                 Array [
                   Object {
-                    "backgroundColor": "#178173",
+                    "backgroundColor": "#652CDB",
                     "borderRadius": 8,
                     "bottom": 38,
                     "elevation": 8,
@@ -1909,7 +1909,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                   Array [
                     Object {
                       "alignItems": "center",
-                      "backgroundColor": "#178173",
+                      "backgroundColor": "#652CDB",
                       "borderTopLeftRadius": 8,
                       "borderTopRightRadius": 8,
                       "justifyContent": "center",
