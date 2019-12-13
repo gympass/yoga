@@ -330,8 +330,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         },
         period: {
           margin: {
-            top: spacing.xsmall,
-            bottom: spacing.small,
+            bottom: spacing.xsmall,
           },
           font: {
             size: fontSizes.small,

@@ -7,7 +7,6 @@ The content can consist of multiple elements of varying types and sizes.
 
 ```javascript reactLive=true center=true
 <PlanCard
-  style={{ width: 280 }}
   ribbon={{
     text: 'Label',
     variant: '',
@@ -16,8 +15,13 @@ The content can consist of multiple elements of varying types and sizes.
   <PlanCard.Content
     title="Gympass Black for employees with Buddha Spa + Reebook included muitas outras coisas"
     price="U$ 99.90"
+    period="/month"
   />
-  <p>This is a PlanCard component, you can use it to display a content.</p>
+
+  <PlanCard.Actions>
+    <Button>Subscribe</Button>
+    <Button.Link>See gyms included</Button.Link>
+  </PlanCard.Actions>
 </PlanCard>
 ```
 

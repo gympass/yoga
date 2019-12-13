@@ -4,10 +4,8 @@ import Content from '../Card/Content';
 
 const Title = styled.h3`
   ${({
-    variant,
     theme: {
       yoga: {
-        colors: { [variant]: color = {} },
         components: {
           card: { plan },
         },
@@ -26,16 +24,15 @@ const Title = styled.h3`
   overflow: hidden;
   text-overflow: ellipsis;
   text-overflow: -o-ellipsis-lastline;
-  -webkit-box-orient: vertical; 
 `}
 `;
 
 const Price = styled.strong`
+  display: block;
+
   ${({
-    variant,
     theme: {
       yoga: {
-        colors: { [variant]: color = {} },
         components: {
           card: { plan },
         },
@@ -48,7 +45,25 @@ const Price = styled.strong`
   font-weight: ${plan.price.font.weight};
   `}
 `;
-const Period = styled.span``;
+const Period = styled.span`
+  display: block;
+
+  ${({
+    theme: {
+      yoga: {
+        components: {
+          card: { plan },
+        },
+      },
+    },
+  }) => `
+  display: block;
+  margin-bottom: ${plan.period.margin.bottom}px;
+
+  font-size: ${plan.period.font.size}px;
+  font-weight: ${plan.period.font.weight};
+  `}
+`;
 
 const PlanCardContent = ({ title, price, period }) => {
   return (
