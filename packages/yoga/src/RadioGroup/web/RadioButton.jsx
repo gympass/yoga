@@ -5,8 +5,19 @@ import styled from 'styled-components';
 import RadioGroupContext from '../RadioGroupContext';
 import { HiddenInput } from '../../shared';
 
-const RadioMark = styled.label(
-  ({
+const RadioMark = styled.label`
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 126px;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  ${({
     theme: {
       yoga: {
         components: {
@@ -17,40 +28,32 @@ const RadioMark = styled.label(
     small,
     checked,
   }) => `
-  cursor: pointer;
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  white-space: nowrap;
-  min-width: 126px;
+    box-sizing: border-box;
+    background-color: ${radio.backgroundColor.enabled};
+    border-radius: ${radio.border.radius}px;
 
-  background-color: ${radio.backgroundColor.enabled};
-  border-radius: ${radio.border.radius}px;
-
-  ${
-    checked
-      ? `
-          background-color: ${radio.checked.backgroundColor.enabled};
-          box-shadow: 0 0 0 1px ${radio.checked.backgroundColor.enabled};
-          color: ${radio.checked.textColor.enabled};
-          font-weight: ${radio.checked.font.weight};
-          z-index: 1;
+    ${
+      checked
+        ? `
+            background-color: ${radio.checked.backgroundColor.enabled};
+            box-shadow: 0 0 0 1px ${radio.checked.backgroundColor.enabled};
+            color: ${radio.checked.textColor.enabled};
+            font-weight: ${radio.checked.font.weight};
+            z-index: 1;
+          `
+        : `
+          &:hover, &:focus {
+            background-color: ${radio.hover.backgroundColor};
+          }
         `
-      : `
-        &:hover, &:focus {
-          background-color: ${radio.hover.backgroundColor};
-        }
-      `
-  }
+    }
 
-  font-size: ${radio.font.size}px;
-  height: ${small ? radio.height.small : radio.height.normal}px;
-  padding-left: ${radio.padding.left}px;
-  padding-right: ${radio.padding.right}px;
-`,
-);
+    font-size: ${radio.font.size}px;
+    height: ${small ? radio.height.small : radio.height.normal}px;
+    padding-left: ${radio.padding.left}px;
+    padding-right: ${radio.padding.right}px;
+  `}
+`;
 
 const RadioGroupButton = ({ children, value, ...rest }) => {
   const { name, onChange, small, selectedValue, ...context } = useContext(

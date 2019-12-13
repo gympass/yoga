@@ -1,15 +1,15 @@
 import { number } from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const Line = styled.div(
-  ({
+const Line = styled.div`
+  ${({
     width,
     theme: {
       yoga: {
         components: { stepper },
       },
     },
-  }) => `
+  }) => css`
     width: 100%;
     height: 4px;
 
@@ -21,11 +21,11 @@ const Line = styled.div(
 
       width: ${width}%;
       height: 4px;
-      
+
       background-color: ${stepper.line.backgroundColor.active};
     }
-  `,
-);
+  `}
+`;
 
 Line.propTypes = {
   activeStep: number,

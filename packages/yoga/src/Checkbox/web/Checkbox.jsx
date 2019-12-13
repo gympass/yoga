@@ -1,46 +1,49 @@
 import React from 'react';
 import { bool, string, objectOf, any } from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import CheckMark from './CheckMark';
 import { HiddenInput } from '../../shared';
 
 const CheckboxWrapper = styled.div`
   display: inline-block;
+
+  * {
+    box-sizing: border-box;
+  }
 `;
 
-const Label = styled.label(
-  ({
+const Label = styled.label`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  cursor: pointer;
+
+  ${({
     theme: {
       yoga: {
         components: { checkbox },
       },
     },
   }) => `
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
     font-size: ${checkbox.label.font.size}px;
-
     color: ${checkbox.label.font.color};
+  `}
+`;
 
-    cursor: pointer;
-  `,
-);
+const CheckboxStyled = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
 
-const CheckboxStyled = styled.div(
-  ({
+  ${({
     theme: {
       yoga: {
         components: { checkbox },
       },
     },
-  }) => `
-    position: relative;
-    display: flex;
-    align-items: center;
-
+  }) => css`
     &:hover {
       ${CheckMark} {
         :before {
@@ -57,24 +60,25 @@ const CheckboxStyled = styled.div(
         }
       }
     }
-  `,
-);
+  `}
+`;
 
-const HelperWrapper = styled.div(
-  ({
+const HelperWrapper = styled.div`
+  width: 100%;
+
+  ${({
     theme: {
       yoga: {
         components: { checkbox },
       },
     },
   }) => `
-    width: 100%;
     margin-top: ${checkbox.helper.margin.top}px;
-  `,
-);
+  `}
+`;
 
-const Helper = styled.span(
-  ({
+const Helper = styled.span`
+  ${({
     error,
     theme: {
       yoga: {
@@ -87,8 +91,8 @@ const Helper = styled.span(
     };
 
     font-size: ${checkbox.helper.font.size}px;
-  `,
-);
+  `}
+`;
 
 const Checkbox = ({
   value,
