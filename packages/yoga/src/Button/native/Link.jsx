@@ -33,12 +33,12 @@ const Link = styled(Label)`
       inverted && !disabled
         ? `
         color: ${white};
-        ${!disabled && pressed ? `color: ${gray[2]};` : ''}
+        ${!disabled && pressed ? `color: ${gray[3]};` : ''}
       `
         : ''
     }
 
-    ${inverted && pressed ? `color: ${gray[2]};` : ''}
+    ${inverted && pressed ? `color: ${gray[3]};` : ''}
   `}
 `;
 

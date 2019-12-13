@@ -22,7 +22,7 @@ const Tab = styled(Link).attrs({
   padding-top: 10px;
   padding-bottom: 10px;
   text-decoration: none;
-  color: ${gray[3]};
+  color: ${gray[7]};
   border-top: 2px solid transparent;
 
   font-size: 12px;
@@ -40,7 +40,7 @@ const Tab = styled(Link).attrs({
     width: 32px;
     height: 32px;
     margin-bottom: 4px;
-    fill: ${gray[3]};
+    fill: ${gray[7]};
   }
 `,
 );
