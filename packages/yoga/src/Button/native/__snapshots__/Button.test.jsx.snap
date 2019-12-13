@@ -58,6 +58,41 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
 </View>
 `;
 
+exports[`<Button /> Snapshots With disabled prop should match snapshot with link Button 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    disabled={true}
+  >
+    <Text
+      disabled={true}
+      inverted={false}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "color": "#9898A6",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "marginBottom": 8,
+            "marginTop": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+      variant="primary"
+    />
+  </TouchableWithoutFeedback>
+</View>
+`;
+
 exports[`<Button /> Snapshots With disabled prop should match snapshot with outline Button 1`] = `
 <View
   collapsable={true}
@@ -383,6 +418,41 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
 </View>
 `;
 
+exports[`<Button /> Snapshots With inverted prop should match snapshot with link Button 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    inverted={true}
+  >
+    <Text
+      disabled={false}
+      inverted={true}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "marginBottom": 8,
+            "marginTop": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+      variant="primary"
+    />
+  </TouchableWithoutFeedback>
+</View>
+`;
+
 exports[`<Button /> Snapshots With inverted prop should match snapshot with outline Button 1`] = `
 <View
   collapsable={true}
@@ -702,6 +772,39 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
 </View>
 `;
 
+exports[`<Button /> Snapshots Without props should match snapshot with link Button 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback>
+    <Text
+      disabled={false}
+      inverted={false}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "color": "#F46152",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "marginBottom": 8,
+            "marginTop": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+      variant="primary"
+    />
+  </TouchableWithoutFeedback>
+</View>
+`;
+
 exports[`<Button /> Snapshots Without props should match snapshot with outline Button 1`] = `
 <View
   collapsable={true}
@@ -794,6 +897,85 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
         }
       />
     </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Button /> With variant prop should match snapshot with default Button 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    variant="primary"
+  >
+    <Text
+      disabled={false}
+      inverted={false}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "color": "#F46152",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "marginBottom": 8,
+            "marginTop": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+      variant="primary"
+    />
+  </TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    variant="secondary"
+  >
+    <Text
+      disabled={false}
+      inverted={false}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "color": "#652CDB",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "marginBottom": 8,
+            "marginTop": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+      variant="secondary"
+    />
+  </TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    variant="tertiary"
+  >
+    <Text
+      disabled={false}
+      inverted={false}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "color": "#178173",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "marginBottom": 8,
+            "marginTop": 16,
+            "textAlign": "center",
+          },
+        ]
+      }
+      variant="tertiary"
+    />
   </TouchableWithoutFeedback>
 </View>
 `;

@@ -32,6 +32,15 @@ describe('<Button />', () => {
         );
         expect(toJSON(container)).toMatchSnapshot();
       });
+
+      it('should match snapshot with link Button', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Link />
+          </ThemeProvider>,
+        );
+        expect(toJSON(container)).toMatchSnapshot();
+      });
     });
 
     describe('With inverted prop', () => {
@@ -57,6 +66,15 @@ describe('<Button />', () => {
         const { container } = render(
           <ThemeProvider>
             <Button.Text inverted />
+          </ThemeProvider>,
+        );
+        expect(toJSON(container)).toMatchSnapshot();
+      });
+
+      it('should match snapshot with link Button', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Link inverted />
           </ThemeProvider>,
         );
         expect(toJSON(container)).toMatchSnapshot();
@@ -148,6 +166,28 @@ describe('<Button />', () => {
         );
         expect(toJSON(container)).toMatchSnapshot();
       });
+
+      it('should match snapshot with link Button', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Link disabled />
+          </ThemeProvider>,
+        );
+        expect(toJSON(container)).toMatchSnapshot();
+      });
+    });
+  });
+
+  describe('With variant prop', () => {
+    it('should match snapshot with default Button', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Button.Link variant="primary" />
+          <Button.Link variant="secondary" />
+          <Button.Link variant="tertiary" />
+        </ThemeProvider>,
+      );
+      expect(toJSON(container)).toMatchSnapshot();
     });
   });
 
