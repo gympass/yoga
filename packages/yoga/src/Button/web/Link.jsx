@@ -50,7 +50,7 @@ const Link = styled(Button)(
 
         &:not([disabled]):hover, &:not([disabled]):focus {
           box-shadow: unset;
-          color: ${gray[2]};
+          color: ${gray[3]};
         }
       `
       : ''
