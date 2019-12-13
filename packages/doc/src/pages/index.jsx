@@ -50,7 +50,7 @@ const Version = styled.a(
     },
   }) => `
   text-decoration: none;
-  color: ${gray[4]};
+  color: ${gray[8]};
   font-size: 16px;
 `,
 );
