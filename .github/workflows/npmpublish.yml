@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: if merged
-        if: startsWith(github.event.head_commit.message, 'Merge')
+        if: !startsWith(github.event.head_commit.message, 'Merge')
         run: exit 0
 
   build-and-publish:
