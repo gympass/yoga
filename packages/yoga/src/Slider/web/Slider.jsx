@@ -5,21 +5,31 @@ import RCSlider from 'rc-slider/lib/Slider';
 import RCRange from 'rc-slider/lib/Range';
 import Marker from './Marker';
 
-const StyledSlider = styled(RCSlider)(
-  ({ marks }) => `
+const StyledSlider = styled(RCSlider)`
   position: relative;
-  padding-bottom: ${marks ? 40 : 15}px;
   width: 100%;
-`,
-);
 
-const StyledRange = styled(RCRange)(
-  ({ marks }) => `
+  ${({ marks }) => `
+    padding-bottom: ${marks ? 40 : 15}px;
+  `}
+
+  * {
+    box-sizing: border-box;
+  }
+`;
+
+const StyledRange = styled(RCRange)`
   position: relative;
-  padding-bottom: ${marks ? 40 : 15}px;
   width: 100%;
-`,
-);
+
+  ${({ marks }) => `
+    padding-bottom: ${marks ? 40 : 15}px;
+  `}
+
+  * {
+    box-sizing: border-box;
+  }
+`;
 
 /** Sliders allow users to make selections from a range of values. Sliders reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters. */
 const Slider = ({

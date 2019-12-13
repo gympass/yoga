@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CardStyled = styled.div(
-  ({
+const CardStyled = styled.div`
+  ${({
     theme: {
       yoga: {
         components: { card },
       },
     },
   }) => `
+    box-sizing: border-box;
     padding: 
       ${card.padding.top}px 
       ${card.padding.right}px 
@@ -18,8 +19,8 @@ const CardStyled = styled.div(
     border-radius: ${card.radii}px;
     background-color: ${card.backgroundColor};
     box-shadow: ${card.elevation};
-`,
-);
+  `}
+`;
 
 const Card = ({ ...rest }) => <CardStyled {...rest} />;
 

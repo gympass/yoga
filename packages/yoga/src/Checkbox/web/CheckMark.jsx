@@ -1,8 +1,16 @@
 import styled from 'styled-components';
 import check from '../CheckIcon';
 
-const CheckMark = styled.div(
-  ({
+const CheckMark = styled.div`
+  position: relative;
+  flex-shrink: 0;
+
+  width: 24px;
+  height: 24px;
+
+  border-style: solid;
+
+  ${({
     checked,
     disabled,
     error,
@@ -12,24 +20,17 @@ const CheckMark = styled.div(
       },
     },
   }) => `
-    position: relative;
-    flex-shrink: 0;
-
-    width: 24px;
-    height: 24px;
     margin-right: ${checkbox.margin.right}px;
 
     border-radius: ${checkbox.border.radius}px;
     border-width: ${checkbox.border.width}px;
-    border-style: solid;
-
     ${
       checked
         ? `background-color: ${checkbox.checked.backgroundColor}; 
-           background-image: url(${check}); 
-           background-size: 16px 16px;
-           background-repeat: no-repeat;
-           background-position: center;`
+            background-image: url(${check}); 
+            background-size: 16px 16px;
+            background-repeat: no-repeat;
+            background-position: center;`
         : ''
     }
 
@@ -50,7 +51,7 @@ const CheckMark = styled.div(
         ? `background-color: ${checkbox.error.backgroundColor};`
         : ''
     }
-  `,
-);
+  `}
+`;
 
 export default CheckMark;
