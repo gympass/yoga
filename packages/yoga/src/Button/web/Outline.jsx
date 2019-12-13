@@ -63,8 +63,8 @@ const ButtonOutline = styled(Button)`
         }
 
         &:not([disabled]):active {
-          border-color: ${gray[2]};
-          color: ${gray[2]};
+          border-color: ${gray[3]};
+          color: ${gray[3]};
         }
     `
         : ''

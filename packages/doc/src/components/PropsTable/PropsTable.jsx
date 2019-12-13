@@ -14,7 +14,7 @@ const TableWrapper = styled.div`
       },
     },
   }) => `
-    border: 1px solid ${grayPallete[2]};
+    border: 1px solid ${grayPallete[3]};
     border-radius: 5px;
     overflow-x: auto;
   `};
@@ -54,7 +54,7 @@ const StyledTable = styled.table`
 
         td {
           border: none;
-          border-top: 1px solid ${hexToRgb(grayPallete[2], 0.7)};
+          border-top: 1px solid ${hexToRgb(grayPallete[3], 0.7)};
           padding: 14px 12px 12px;
 
           &:first-child {
@@ -63,7 +63,7 @@ const StyledTable = styled.table`
 
           &:nth-child(3),
           &:last-child {
-            color: ${primaryPallete[3]};
+            color: ${primaryPallete[7]};
           }
         }
       }

@@ -10,7 +10,7 @@ const Navbar = styled.ul`
       },
     },
   }) => `
-    border-bottom: 1px dotted ${grayPallete[2]};
+    border-bottom: 1px dotted ${grayPallete[3]};
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
