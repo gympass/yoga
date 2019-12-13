@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.0.3...@gympass/yoga@1.1.0) (2019-12-13)
+
+### Features
+
+- **button.link:** new Component: Button.Link ([b6e7a82](https://github.com/Gympass/yoga/commit/b6e7a82808910dff732e6c87b865486e3571af01))
+- **themeprovider:** add tertiary color support to the ThemeProvider ([e37443d](https://github.com/Gympass/yoga/commit/e37443d15e50c1bce8f25cd80eb22989da8c79a3))
+- **yoga/enduser:** add tertiary color to EndUser theme ([9c49556](https://github.com/Gympass/yoga/commit/9c49556246a814aa1b0a29f3529c6856f555533e))
+
 ## [1.0.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.0.2...@gympass/yoga@1.0.3) (2019-12-09)
 
 **Note:** Version bump only for package @gympass/yoga
