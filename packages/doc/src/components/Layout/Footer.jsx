@@ -13,7 +13,7 @@ const Footer = styled.footer(
 
     background-color: #fff;
     box-shadow: 0 -2px 2px ${grayPallete[1]};
-    color: ${grayPallete[3]};
+    color: ${grayPallete[7]};
 
     text-align: center;
   `,

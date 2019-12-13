@@ -25,7 +25,7 @@ const milan = ['#FFF6E6', '#FFE5B3', '#FFD380', '#FFC24C'];
 /**
  * @type {Color}
  */
-const saoPaulo = ['#7DE8DA', '#27D8C1', '#1FAD9A', '#178173'];
+const saoPaulo = ['#6FDCCB', '#58C2B4', '#3FA99B', '#2B9486'];
 
 /**
  * @type {Color}
@@ -50,7 +50,18 @@ const dark = '#41414A';
 /**
  * @type {Color}
  */
-const gray = [white, '#F5F5FA', '#DBDBE8', '#9898A6', '#6B6B78', dark];
+const gray = [
+  white,
+  '#F5F5FA',
+  '#E6E6F0',
+  '#DBDBE8',
+  '#D3D3E2',
+  '#C5C5D6',
+  '#A9A9B8',
+  '#9898A6',
+  '#6B6B78',
+  dark,
+];
 
 /**
  * @type {Color}
@@ -70,7 +81,7 @@ const informative = ['#E9F3FC', '#2186D9'];
 /**
  * @type {Color}
  */
-const attentive = ['#FBFBBE', '#997108'];
+const warning = ['#FBFBBE', '#CB9303'];
 
 const colors = {
   madrid,
@@ -84,7 +95,7 @@ const colors = {
   positive,
   negative,
   informative,
-  attentive,
+  warning,
 };
 
 export default colors;
