@@ -1650,7 +1650,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                       Object {
                         "color": "#6B6B78",
                         "fontSize": 14,
-                        "fontWeight": "700",
+                        "fontWeight": "400",
                         "marginBottom": 5,
                         "textAlign": "center",
                       },
@@ -1959,7 +1959,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                       Object {
                         "color": "#6B6B78",
                         "fontSize": 14,
-                        "fontWeight": "700",
+                        "fontWeight": "400",
                         "marginBottom": 5,
                         "textAlign": "center",
                       },

@@ -13,7 +13,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
 }
 
 .c0 {
-  cursor: pointer;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -29,9 +29,10 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative;
-  white-space: nowrap;
   min-width: 126px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;
@@ -72,7 +73,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
 }
 
 .c0 {
-  cursor: pointer;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -88,9 +89,10 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative;
-  white-space: nowrap;
   min-width: 126px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;
