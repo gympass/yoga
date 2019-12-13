@@ -80,7 +80,7 @@ const Description = styled.p(
   }) => `
     margin: 0;
 
-    color: ${gray[4]};
+    color: ${gray[8]};
     font-size: 16px;
 
     @media (max-width: 900px) {

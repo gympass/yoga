@@ -43,7 +43,7 @@ const LabelOutline = styled(Label)`
         : ''
     }
 
-    ${inverted && pressed ? `color: ${gray[2]};` : ''}
+    ${inverted && pressed ? `color: ${gray[3]};` : ''}
   `}
 `;
 
@@ -106,7 +106,7 @@ const ButtonContainerOutline = styled(ButtonContainer)`
         : ''
     }
 
-    ${inverted && pressed ? `border-color: ${gray[2]}` : ''}
+    ${inverted && pressed ? `border-color: ${gray[3]}` : ''}
   `}
 `;
 

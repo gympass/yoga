@@ -29,7 +29,7 @@ const MainWrapper = styled.div`
   }) => `
     height: 100%;
     a[target] {
-      color: ${primaryPallete[3]};
+      color: ${primaryPallete[7]};
       text-decoration: none;
     }
   `}
@@ -81,12 +81,12 @@ const HeaderLink = styled(Link).attrs({
     margin-right: 32px;
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    color: ${gray[3]};
+    color: ${gray[7]};
     height: 100%;
 
     &.active {
-      border-bottom-color: ${primary[3]};
-      color: ${primary[3]};
+      border-bottom-color: ${primary[7]};
+      color: ${primary[7]};
     }
   `,
 );

@@ -24,7 +24,7 @@ const Wrapper = styled.div`
     width: 250px;
 
     span {
-      color: ${grayPallete[4]};
+      color: ${grayPallete[8]};
     }
 
     @media (max-width: 900px) {
@@ -70,7 +70,7 @@ const AnchorLink = styled(Link)`
       },
     },
   }) => `
-    color: ${grayPallete[4]};
+    color: ${grayPallete[8]};
     display: flex;
     justify-content: space-between;
     padding: 10px 0px 10px 0px;
@@ -94,7 +94,7 @@ const StyledListItem = styled.li`
       ${
         active
           ? `
-          color: ${primaryPallete[3]};
+          color: ${primaryPallete[7]};
             `
           : ''
       }
@@ -111,7 +111,7 @@ const Colapsible = styled.div`
     },
   }) => `
     cursor: pointer;
-    color: ${grayPallete[3]};
+    color: ${grayPallete[7]};
     svg {
       width: 10px;
       margin-left: 5px;

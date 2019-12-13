@@ -9,13 +9,28 @@
  * The line height
  * @typedef LineHeight
  *
- * @type {Number[]}
+ * @type {Object}
+ * @property {number} xxsmall -12
+ * @property {number} xsmall - 16
+ * @property {number} small - 20
+ * @property {number} medium - 24
+ * @property {number} large - 32
+ * @property {number} xlarge - 40
  */
 
 /**
  * @type {LineHeight}
  * @default
  */
-const lineHeight = [1.2, 1.4, 1.6, 1.8];
+const lineHeight = [12, 16, 20, 24, 32, 40];
+
+[
+  lineHeight.xxsmall,
+  lineHeight.xsmall,
+  lineHeight.small,
+  lineHeight.medium,
+  lineHeight.large,
+  lineHeight.xlarge,
+] = lineHeight;
 
 export default lineHeight;
