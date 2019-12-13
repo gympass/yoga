@@ -13,7 +13,7 @@ const {
 } = tokens;
 
 const BaseTheme = ({ primary, secondary, tertiary }) => {
-  const baseFontSize = fontSizes[3];
+  const baseFontSize = fontSizes.medium;
   const colors = {
     primary,
     secondary,
@@ -34,24 +34,24 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       line: {
         backgroundColor: {
           active: colors.primary[3],
-          inactive: colors.gray[2],
+          inactive: colors.gray[3],
         },
       },
       dot: {
         radius: radii.circle,
         backgroundColor: {
           active: colors.primary[3],
-          inactive: colors.gray[2],
+          inactive: colors.gray[3],
         },
       },
       label: {
         font: {
-          size: fontSizes[1],
+          size: fontSizes.xsmall,
           weight: fontWeights.bold,
         },
         color: {
           active: colors.primary[3],
-          inactive: colors.gray[3],
+          inactive: colors.gray[7],
         },
       },
     },
@@ -59,7 +59,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       track: {
         backgroundColor: {
           active: colors.primary[3],
-          inactive: colors.gray[2],
+          inactive: colors.gray[3],
         },
         border: {
           radius: radii.circle,
@@ -68,7 +68,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       step: {
         backgroundColor: {
           active: primary[3],
-          inactive: colors.gray[2],
+          inactive: colors.gray[3],
         },
         border: {
           radius: radii.circle,
@@ -84,7 +84,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       },
       label: {
         font: {
-          size: fontSizes[1],
+          size: fontSizes.xsmall,
           weight: fontWeights.regular,
         },
       },
@@ -100,13 +100,13 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           left: spacing.xsmall,
         },
         font: {
-          color: colors.gray[4],
+          color: colors.gray[8],
           title: {
-            size: fontSizes[2],
+            size: fontSizes.small,
             weight: fontWeights.bold,
           },
           description: {
-            size: fontSizes[2],
+            size: fontSizes.small,
             weight: fontWeights.regular,
           },
         },
@@ -121,7 +121,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           },
           font: {
             color: colors.white,
-            size: fontSizes[1],
+            size: fontSizes.xsmall,
             weight: fontWeights.bold,
           },
         },
@@ -138,7 +138,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       },
       border: {
         width: borders.small,
-        color: colors.gray[2],
+        color: colors.gray[3],
       },
     },
     button: {
@@ -151,7 +151,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         small: 32,
       },
       font: {
-        size: fontSizes[2],
+        size: fontSizes.small,
         weight: fontWeights.bold,
       },
       border: {
@@ -166,12 +166,12 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       types: {
         contained: {
           backgroundColor: {
-            disabled: colors.gray[2],
+            disabled: colors.gray[3],
             enabled: primary[3],
             pressed: primary[2],
           },
           textColor: {
-            disabled: colors.gray[3],
+            disabled: colors.gray[7],
             enabled: colors.white,
             pressed: colors.white,
           },
@@ -184,7 +184,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
             hover: hexToRgb(primary[3], 0.3),
           },
           textColor: {
-            disabled: colors.gray[3],
+            disabled: colors.gray[7],
             enabled: primary[3],
             pressed: primary[2],
           },
@@ -197,14 +197,14 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
             hover: hexToRgb(primary[3], 0.3),
           },
           textColor: {
-            disabled: colors.gray[3],
+            disabled: colors.gray[7],
             enabled: primary[3],
             pressed: primary[2],
           },
         },
         link: {
           textColor: {
-            disabled: colors.gray[3],
+            disabled: colors.gray[7],
           },
           margin: {
             top: spacing.medium,
@@ -217,7 +217,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       track: {
         width: 48,
         height: 24,
-        backgroundColor: colors.gray[2],
+        backgroundColor: colors.gray[3],
         radii: radii.circle,
         transition: {
           duration: transitions.duration,
@@ -243,7 +243,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           backgroundColor: primary[3],
         },
         disabled: {
-          backgroundColor: colors.gray[2],
+          backgroundColor: colors.gray[3],
         },
       },
       focus: {
@@ -251,7 +251,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           backgroundColor: hexToRgb(primary[3], 0.2),
         },
         disabled: {
-          backgroundColor: hexToRgb(colors.gray[3], 0.2),
+          backgroundColor: hexToRgb(colors.gray[7], 0.2),
         },
       },
     },
@@ -286,13 +286,13 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           small: 32,
         },
         font: {
-          size: fontSizes[2],
+          size: fontSizes.small,
         },
       },
       radii: radii.circle,
       border: {
         width: borders.small,
-        color: colors.gray[2],
+        color: colors.gray[3],
       },
     },
     card: {
@@ -320,7 +320,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           left: spacing.xsmall,
         },
         font: {
-          size: fontSizes[2],
+          size: fontSizes.small,
           color: colors.dark,
         },
       },
@@ -329,8 +329,8 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           top: spacing.xxsmall,
         },
         font: {
-          size: fontSizes[2],
-          color: colors.gray[3],
+          size: fontSizes.small,
+          color: colors.gray[7],
         },
         selected: {
           font: {
@@ -347,9 +347,9 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         backgroundColor: colors.primary[3],
       },
       disabled: {
-        backgroundColor: colors.gray[3],
+        backgroundColor: colors.gray[7],
         border: {
-          color: colors.gray[3],
+          color: colors.gray[7],
         },
       },
       error: {

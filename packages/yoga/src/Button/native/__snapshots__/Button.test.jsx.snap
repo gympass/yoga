@@ -965,7 +965,7 @@ exports[`<Button /> With variant prop should match snapshot with default Button 
       style={
         Array [
           Object {
-            "color": "#178173",
+            "color": "#2B9486",
             "fontSize": 14,
             "fontWeight": "700",
             "marginBottom": 8,
