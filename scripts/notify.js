@@ -65,11 +65,6 @@ async function notify() {
     const changes = {
       color: '#F46152',
       text: changedPackages,
-      fields: [
-        {
-          title: 'Changes',
-        },
-      ],
     };
 
     releaseNotification.attachments.push(changes);
