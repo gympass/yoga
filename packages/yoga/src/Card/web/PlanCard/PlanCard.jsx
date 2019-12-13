@@ -4,17 +4,24 @@ import Card from '../Card';
 import { oneOf } from 'prop-types';
 
 const Plan = styled(Card)`
+  max-width: 280px;
+  width: 100%;
   ${({
     variant,
     theme: {
       yoga: {
-        colors: { [variant]: color = {} },
+        colors: { [variant]: color = {}, white },
       },
     },
   }) => `
-  background-color: ${color[3]};
-
-  ${variant ? 'color: white;' : ''}
+  ${
+    variant
+      ? `
+      color: ${white};
+      background-color: ${color[3]};
+    `
+      : ''
+  }
 `}
 `;
 

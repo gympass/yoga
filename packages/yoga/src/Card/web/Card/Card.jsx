@@ -29,7 +29,7 @@ const Ribbon = styled.span`
       yoga: {
         components: { card },
         spacing,
-        colors: { gray, [variant]: color = {}, white },
+        colors: { gray, [variant]: color = {}, white, dark },
       },
     },
   }) => `
@@ -50,13 +50,13 @@ const Ribbon = styled.span`
   border-bottom-right-radius: ${card.ribbon.radius}px;
 
   background-color: ${variant ? color[3] : gray[1]};
-  color: ${variant ? white : 'inherit'};
+  color: ${variant ? white : dark};
   `}
 `;
 
 const Card = ({ ribbon, children, ...rest }) => (
   <CardStyled {...rest}>
-    {Object.keys(ribbon).length && (
+    {Object.keys(ribbon).length > 0 && (
       <Ribbon variant={ribbon.variant}>{ribbon.text}</Ribbon>
     )}
     {children}
