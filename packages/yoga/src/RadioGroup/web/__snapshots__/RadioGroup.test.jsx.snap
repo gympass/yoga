@@ -2,17 +2,21 @@
 
 exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
 .c0 {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   border-style: solid;
   border-radius: 9999px;
   border-width: 1px;
   border-color: #DBDBE8;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c2 {
@@ -27,7 +31,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
 }
 
 .c1 {
-  cursor: pointer;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -43,9 +47,10 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative;
-  white-space: nowrap;
   min-width: 126px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;
@@ -60,7 +65,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
 }
 
 .c3 {
-  cursor: pointer;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -76,9 +81,10 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative;
-  white-space: nowrap;
   min-width: 126px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 9999px;
   background-color: #F46152;
@@ -137,17 +143,21 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
 
 exports[`<RadioGroup /> Snapshots should match snapshot with default radiogroup 1`] = `
 .c0 {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   border-style: solid;
   border-radius: 9999px;
   border-width: 1px;
   border-color: #DBDBE8;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div>
@@ -160,18 +170,22 @@ exports[`<RadioGroup /> Snapshots should match snapshot with default radiogroup 
 
 exports[`<RadioGroup /> Snapshots should match snapshot with full radiogroup 1`] = `
 .c0 {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   border-style: solid;
   border-radius: 9999px;
   border-width: 1px;
   border-color: #DBDBE8;
   width: 100%;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div>
@@ -184,17 +198,21 @@ exports[`<RadioGroup /> Snapshots should match snapshot with full radiogroup 1`]
 
 exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 1`] = `
 .c0 {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   border-style: solid;
   border-radius: 9999px;
   border-width: 1px;
   border-color: #DBDBE8;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c2 {
@@ -209,7 +227,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 
 }
 
 .c1 {
-  cursor: pointer;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -225,9 +243,10 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative;
-  white-space: nowrap;
   min-width: 126px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;
@@ -285,17 +304,21 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 
 
 exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = `
 .c0 {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   border-style: solid;
   border-radius: 9999px;
   border-width: 1px;
   border-color: #DBDBE8;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c2 {
@@ -310,7 +333,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
 }
 
 .c1 {
-  cursor: pointer;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -326,9 +349,10 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative;
-  white-space: nowrap;
   min-width: 126px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;
@@ -386,17 +410,21 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
 
 exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
 .c0 {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   border-style: solid;
   border-radius: 9999px;
   border-width: 1px;
   border-color: #DBDBE8;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c2 {
@@ -411,7 +439,7 @@ exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
 }
 
 .c1 {
-  cursor: pointer;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -427,9 +455,10 @@ exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative;
-  white-space: nowrap;
   min-width: 126px;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
   background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;

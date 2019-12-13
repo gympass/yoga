@@ -2,14 +2,15 @@
 
 exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with checked switch 1`] = `
 .c2 {
+  position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
-  position: absolute;
   cursor: inherit;
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -22,14 +23,17 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  position: relative;
   cursor: pointer;
   width: 48px;
   height: 24px;
+  background-color: #F46152;
   border-radius: 9999px;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-  background-color: #F46152;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c1:focus + .c4,
@@ -40,11 +44,11 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
 .c3 {
   position: relative;
   pointer-events: none;
+  left: 4px;
   width: 16px;
   height: 16px;
-  left: 4px;
-  border-radius: 9999px;
   background-color: #FFFFFF;
+  border-radius: 9999px;
   -webkit-transition: 300ms;
   transition: 300ms;
   left: calc(100% - 4px);
@@ -80,14 +84,15 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
 
 exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with default switch 1`] = `
 .c2 {
+  position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
-  position: absolute;
   cursor: inherit;
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -100,24 +105,27 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  position: relative;
   cursor: pointer;
   width: 48px;
   height: 24px;
+  background-color: #DBDBE8;
   border-radius: 9999px;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-  background-color: #DBDBE8;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c3 {
   position: relative;
   pointer-events: none;
+  left: 4px;
   width: 16px;
   height: 16px;
-  left: 4px;
-  border-radius: 9999px;
   background-color: #FFFFFF;
+  border-radius: 9999px;
   -webkit-transition: 300ms;
   transition: 300ms;
 }
@@ -149,14 +157,15 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 
 exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with disabled and checked switch 1`] = `
 .c2 {
+  position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
-  position: absolute;
   cursor: inherit;
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -169,16 +178,19 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  position: relative;
   cursor: pointer;
   width: 48px;
   height: 24px;
+  background-color: #F46152;
   border-radius: 9999px;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-  background-color: #F46152;
   background-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c1:focus + .c4,
@@ -194,11 +206,11 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 .c3 {
   position: relative;
   pointer-events: none;
+  left: 4px;
   width: 16px;
   height: 16px;
-  left: 4px;
-  border-radius: 9999px;
   background-color: #FFFFFF;
+  border-radius: 9999px;
   -webkit-transition: 300ms;
   transition: 300ms;
   left: calc(100% - 4px);
@@ -234,14 +246,15 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 
 exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with disabled switch 1`] = `
 .c2 {
+  position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
-  position: absolute;
   cursor: inherit;
 }
 
 .c0 {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -254,16 +267,19 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  position: relative;
   cursor: pointer;
   width: 48px;
   height: 24px;
+  background-color: #DBDBE8;
   border-radius: 9999px;
   -webkit-transition: background-color 300ms;
   transition: background-color 300ms;
-  background-color: #DBDBE8;
   background-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 .c1:focus + .c4,
@@ -274,11 +290,11 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 .c3 {
   position: relative;
   pointer-events: none;
+  left: 4px;
   width: 16px;
   height: 16px;
-  left: 4px;
-  border-radius: 9999px;
   background-color: #FFFFFF;
+  border-radius: 9999px;
   -webkit-transition: 300ms;
   transition: 300ms;
   background-color: #DBDBE8;
