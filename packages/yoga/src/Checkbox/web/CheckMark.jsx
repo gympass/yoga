@@ -26,11 +26,13 @@ const CheckMark = styled.div`
     border-width: ${checkbox.border.width}px;
     ${
       checked
-        ? `background-color: ${checkbox.checked.backgroundColor}; 
-            background-image: url(${check}); 
-            background-size: 16px 16px;
-            background-repeat: no-repeat;
-            background-position: center;`
+        ? `
+          background-color: ${checkbox.checked.backgroundColor}; 
+          background-image: url(${check}); 
+          background-size: 16px 16px;
+          background-repeat: no-repeat;
+          background-position: center;
+        `
         : ''
     }
 
