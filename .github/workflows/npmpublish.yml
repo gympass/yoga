@@ -8,10 +8,10 @@ on:
 jobs:
   check-merge:
     runs-on: ubuntu-latest
+    if: startsWith(github.event.head_commit.message, 'Merge') !== true
 
     steps:
-      - name: if merged
-        if: !startsWith(github.event.head_commit.message, 'Merge')
+      - name: Check Merge
         run: exit 0
 
   build-and-publish:
