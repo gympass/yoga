@@ -53,7 +53,7 @@ const StyledTable = styled.table`
   `};
 `;
 
-const ExampleStyled = styled.span`
+const Example = styled.span`
   ${({
     property,
     value,
@@ -77,18 +77,6 @@ const ExampleStyled = styled.span`
   `};
 `;
 
-const Example = ({ text, ...rest }) => (
-  <ExampleStyled {...rest}>{text}</ExampleStyled>
-);
-
-Example.propTypes = {
-  text: string,
-};
-
-Example.defaultProps = {
-  text: undefined,
-};
-
 const Tokens = ({ data, example }) => (
   <StyledTable>
     <thead>
@@ -110,11 +98,12 @@ const Tokens = ({ data, example }) => (
               <td>
                 <Example
                   property={example.property}
-                  text={example.text}
                   valueUnit={example.valueUnit}
                   hasBackground={example.hasBackground}
                   value={token.value}
-                />
+                >
+                  {example.text}
+                </Example>
               </td>
             )}
           </tr>
