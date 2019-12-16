@@ -135,4 +135,6 @@ Button.defaultProps = {
   small: false,
 };
 
+Button.displayName = 'Button';
+
 export default Button;

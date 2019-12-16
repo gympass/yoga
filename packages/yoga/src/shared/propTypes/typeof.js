@@ -1,6 +1,10 @@
 import React from 'react';
 
-const typeOf = childType => (props, propName, componentName) => {
+const typeOf = ({ displayName: childType }) => (
+  props,
+  propName,
+  componentName,
+) => {
   let error;
   const prop = props[propName];
   React.Children.forEach(prop, child => {
