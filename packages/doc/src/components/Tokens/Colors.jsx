@@ -62,9 +62,7 @@ const SubColors = ({ token }) => {
   return values.map((subcolor, index) => (
     <Color key={index} color={subcolor}>
       <span>
-        {valueType === 'string'
-          ? `${token.token}.${token.alias}`
-          : `${token.token}.${token.alias}[${index}]`}
+        {valueType === 'string' ? token.alias : `${token.alias}[${index}]`}
       </span>
       <span>{subcolor}</span>
     </Color>
@@ -75,8 +73,8 @@ const Colors = ({ data, ...rest }) => (
   <ColorsWrapper {...rest}>
     {data &&
       data.map(color => (
-        <ColorPallete key={color.alias}>
-          <Title>{color.alias}</Title>
+        <ColorPallete key={color.id}>
+          <Title>{color.id}</Title>
           <SubColors token={color} />
         </ColorPallete>
       ))}

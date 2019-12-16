@@ -1,29 +1,38 @@
+/* eslint-disable eqeqeq */
 import React from 'react';
 import yogaTokensModule from '@gympass/yoga-tokens';
 
-const getAlias = (module, values) => {
-  return values.map(value => {
-    const tokens = Object.entries(module);
-    const [, [alias]] = tokens.filter(([, v]) => v === value);
-    return alias;
+const getKeys = (module, values) => {
+  const tokens = Object.entries(module);
+
+  return values.map((value, index) => {
+    const keys = tokens.filter(([, v]) => v === value);
+    const key = keys.length > 1 ? keys[1][0] : keys[0][0];
+    const isAlias = key != index;
+    return { type: isAlias ? 'alias' : 'position', position: index, key };
   });
 };
 
 const withToken = Component => ({ token, ...rest }) => {
   const tokensModule = yogaTokensModule[token];
   const tokensValues = [...new Set(Object.values(tokensModule))];
-  const hasAlias = tokensValues.length !== Object.keys(tokensModule).length;
-  const tokensAlias = hasAlias
-    ? getAlias(tokensModule, tokensValues)
-    : Object.keys(tokensModule);
+  const tokensKeys = getKeys(tokensModule, tokensValues);
 
-  const data = tokensAlias.map((alias, index) => {
-    const name = hasAlias ? `${token}.${alias}` : `${token}[${alias}]`;
-    const value = tokensValues[index];
-    return { token, alias, name, value };
+  const data = tokensKeys.map(({ type, position, key }) => {
+    const keyName = `${token}[${position}]`;
+    const alias = type === 'alias' ? `${token}.${key}` : '--';
+    const value = tokensValues[position];
+
+    return {
+      token,
+      id: key,
+      key: keyName,
+      alias,
+      value,
+    };
   });
 
-  return <Component token={token} hasAlias={hasAlias} data={data} {...rest} />;
+  return <Component token={token} data={data} {...rest} />;
 };
 
 export default withToken;
