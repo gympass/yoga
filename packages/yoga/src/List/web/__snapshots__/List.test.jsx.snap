@@ -11,12 +11,12 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .c0 > * {
@@ -53,12 +53,12 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .c0 > * {
@@ -102,12 +102,12 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .c0 > *:last-child {
@@ -147,12 +147,12 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .c0 > * {
@@ -191,12 +191,12 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .c0 > * {
@@ -240,12 +240,12 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .c0 > *:last-child {

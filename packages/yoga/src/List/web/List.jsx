@@ -2,8 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const StyledList = styled.ul(
-  ({
+const StyledList = styled.ul`
+  display: flex;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  ${({
     divided,
     horizontal,
     theme: {
@@ -12,29 +20,24 @@ const StyledList = styled.ul(
       },
     },
   }) => `
-  display: flex;
-  width: 100%;
-  flex-direction: ${horizontal ? 'row' : 'column'};
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    flex-direction: ${horizontal ? 'row' : 'column'};
 
-  > * {
-      ${
-        divided
-          ? `border-${horizontal ? 'right' : 'bottom'}: ${
-              list.border.width
-            }px solid ${list.border.color}`
-          : ''
-      };
+    > * {
+        ${
+          divided
+            ? `border-${horizontal ? 'right' : 'bottom'}: ${
+                list.border.width
+              }px solid ${list.border.color}`
+            : ''
+        };
 
-      &:last-child {
-        border: none;
+        &:last-child {
+          border: none;
+        }
       }
     }
-  }
-`,
-);
+  `}
+`;
 
 /** Lists are a continuous group of text or images. They are composed of items containing primary and supplemental actions, which are represented by icons and text. */
 const List = ({ horizontal, divided, ...rest }) => (

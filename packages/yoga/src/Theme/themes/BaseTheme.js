@@ -103,7 +103,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           color: colors.gray[8],
           title: {
             size: fontSizes.small,
-            weight: fontWeights.bold,
+            weight: fontWeights.regular,
           },
           description: {
             size: fontSizes.small,
