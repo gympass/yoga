@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Card from '../Card';
 import { oneOf } from 'prop-types';
+
+import Card from '../Card';
 
 const Plan = styled(Card)`
   max-width: 280px;

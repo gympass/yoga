@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
+.c1 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c1:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+<div>
+  <section
+    class="c0"
+  >
+    <header
+      class=""
+    >
+      Hello World
+    </header>
+    <div
+      class=""
+    >
+      It's fine here
+    </div>
+    <footer
+      class=""
+    >
+      <button
+        class="c1"
+      >
+        Action's children must be Button
+      </button>
+    </footer>
+  </section>
+</div>
+`;
+
+exports[`<Card /> Snapshots should match snapshot with variant Card 1`] = `
+.c1 {
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c1:active {
+  background-color: #F78D82;
+  color: #FFFFFF;
+  border-color: #F78D82;
+}
+
+.c1:disabled {
+  background-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+  border-color: #DBDBE8;
+}
+
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+<div>
+  <section
+    class="c0"
+  >
+    <header
+      class=""
+    >
+      Hello World
+    </header>
+    <div
+      class=""
+    >
+      It's fine here
+    </div>
+    <footer
+      class=""
+    >
+      <button
+        class="c1"
+      >
+        Action's children must be Button
+      </button>
+    </footer>
+  </section>
+  <section
+    class="c0"
+  >
+    <header
+      class=""
+    >
+      Hello World
+    </header>
+    <div
+      class=""
+    >
+      It's fine here
+    </div>
+    <footer
+      class=""
+    >
+      <button
+        class="c1"
+      >
+        Action's children must be Button
+      </button>
+    </footer>
+  </section>
+  <section
+    class="c0"
+  >
+    <header
+      class=""
+    >
+      Hello World
+    </header>
+    <div
+      class=""
+    >
+      It's fine here
+    </div>
+    <footer
+      class=""
+    >
+      <button
+        class="c1"
+      >
+        Action's children must be Button
+      </button>
+    </footer>
+  </section>
+</div>
+`;

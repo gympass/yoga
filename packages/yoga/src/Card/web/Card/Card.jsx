@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, shape, oneOf } from 'prop-types';
+import { string, shape, oneOf, node } from 'prop-types';
 
 const CardStyled = styled.section`
   ${({
@@ -63,17 +63,22 @@ const Card = ({ ribbon, children, ...rest }) => (
   </CardStyled>
 );
 
-Card.displayName = 'Card';
-
 Card.propTypes = {
   ribbon: shape({
     text: string,
     variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
   }),
+  /** style the link following the theme (primary, secondary, tertiary) */
+  variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
+  children: node,
 };
 
 Card.defaultProps = {
   ribbon: {},
+  variant: '',
+  children: null,
 };
+
+Card.displayName = 'Card';
 
 export default Card;
