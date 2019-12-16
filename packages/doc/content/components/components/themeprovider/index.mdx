@@ -4,25 +4,19 @@ metaTitle: 'ThemeProvider'
 metaDescription: 'ThemeProvider Component'
 ---
 
-## Getting Started
+# ThemeProvider
 
-Gympass design-system's follows design guidelines specification, we developed a React and React Native UI library that contains a set of high quality components that defines our interfaces.
+### Reference
 
-### Installing
-
-In order to install our design-system just run:
-
-```
-yarn add @gympass/yoga
-
-// or
-
-npm install @gympass/yoga
-```
+ThemeProvider component extends from styled-component `ThemeProvider`, you can
+check it out [here.](https://www.styled-components.com/docs/advanced#theming)
+Our component adds some extra features to `ThemeProvider` like global and
+specific locale design-tokens merge.
 
 ### Usage
 
-An important point in using it is that your whole application must be wrapped in our `ThemeProvider` component:
+An important point in using it is that your whole application **must** be
+wrapped in our `ThemeProvider` component:
 
 ```
 import { ThemeProvider, Button } from '@gympass/yoga';
@@ -33,3 +27,23 @@ const App = () => (
   </ThemeProvider>
 );
 ```
+
+### Props
+
+In this component we have 2 props, both are very important. The first one is the
+very known `theme` prop from type `string`.
+
+In this prop you can pass one of our 3 available themes:
+
+- `endUser`
+- `corporate`
+- `gyms`
+
+These themes apply all global branding rules merging them with culture rules of
+and specific locale like `zh-cn` (china) for instance, but for this to happen
+We have to combine `theme` prop with the optional `locale` prop, from type
+`string` as well.
+
+Although Yoga supports `locale`, We don't have any design definitions for
+specific locale design-tokens yet, so the `ThemeProvider` components only uses
+global theming for now.
