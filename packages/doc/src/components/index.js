@@ -15,6 +15,7 @@ import CodeSandboxButton from './CodeSandboxButton';
 import ThemeConfig from './ThemeConfig';
 import GlobalStyle from './GlobalStyle';
 import Redirect from './Redirect';
+import Tokens from './Tokens';
 
 export {
   CodeBlock,
@@ -35,4 +36,5 @@ export {
   ThemeConfig,
   GlobalStyle,
   Redirect,
+  Tokens,
 };

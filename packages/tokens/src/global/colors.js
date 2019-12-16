@@ -89,13 +89,13 @@ const colors = {
   saoPaulo,
   newYork,
   paris,
-  white,
-  dark,
-  gray,
   positive,
   negative,
   informative,
   warning,
+  gray,
+  white,
+  dark,
 };
 
 export default colors;
