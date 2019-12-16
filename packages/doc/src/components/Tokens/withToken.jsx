@@ -19,16 +19,12 @@ const withToken = Component => ({ token, ...rest }) => {
   const tokensKeys = getKeys(tokensModule, tokensValues);
 
   const data = tokensKeys.map(({ type, position, key }) => {
-    const keyName = `${token}[${position}]`;
-    const alias = type === 'alias' ? `${token}.${key}` : '--';
-    const value = tokensValues[position];
-
     return {
       token,
       id: key,
-      key: keyName,
-      alias,
-      value,
+      key: `${token}[${position}]`,
+      alias: type === 'alias' ? `${token}.${key}` : '--',
+      value: tokensValues[position],
     };
   });
 
