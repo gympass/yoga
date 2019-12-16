@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
 import { Text } from 'react-native';
-import ThemeProvider from '../../Theme';
-import Card from '..';
+import ThemeProvider from '../../../Theme';
+import Card from '.';
 
 describe('<Card />', () => {
   describe('Snapshots', () => {
