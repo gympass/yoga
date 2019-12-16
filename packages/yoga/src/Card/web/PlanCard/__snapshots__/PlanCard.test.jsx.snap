@@ -255,21 +255,21 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
 
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
 .c6 {
-  background-color: #F46152;
-  border: 2px solid #F46152;
-  border-radius: 9999px;
   box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 700;
-  height: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  cursor: pointer;
   width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .c6:not([disabled]):hover,
@@ -279,15 +279,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 
 .c6:active {
   background-color: #F78D82;
-  color: #FFFFFF;
   border-color: #F78D82;
+  color: #FFFFFF;
 }
 
 .c6:disabled {
   background-color: #DBDBE8;
+  border-color: #DBDBE8;
   color: #9898A6;
   cursor: not-allowed;
-  border-color: #DBDBE8;
 }
 
 .c0 {
@@ -378,21 +378,21 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 
 exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`] = `
 .c6 {
-  background-color: #F46152;
-  border: 2px solid #F46152;
-  border-radius: 9999px;
   box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 700;
-  height: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  cursor: pointer;
   width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .c6:not([disabled]):hover,
@@ -402,15 +402,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
 
 .c6:active {
   background-color: #F78D82;
-  color: #FFFFFF;
   border-color: #F78D82;
+  color: #FFFFFF;
 }
 
 .c6:disabled {
   background-color: #DBDBE8;
+  border-color: #DBDBE8;
   color: #9898A6;
   cursor: not-allowed;
-  border-color: #DBDBE8;
 }
 
 .c0 {
@@ -503,21 +503,21 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
 
 exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`] = `
 .c6 {
-  background-color: #F46152;
-  border: 2px solid #F46152;
-  border-radius: 9999px;
   box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 700;
-  height: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  cursor: pointer;
   width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .c6:not([disabled]):hover,
@@ -527,15 +527,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
 
 .c6:active {
   background-color: #F78D82;
-  color: #FFFFFF;
   border-color: #F78D82;
+  color: #FFFFFF;
 }
 
 .c6:disabled {
   background-color: #DBDBE8;
+  border-color: #DBDBE8;
   color: #9898A6;
   cursor: not-allowed;
-  border-color: #DBDBE8;
 }
 
 .c0 {
