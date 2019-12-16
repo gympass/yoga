@@ -31,7 +31,6 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
         },
       ]
     }
-    variant=""
   >
     <View
       style={
