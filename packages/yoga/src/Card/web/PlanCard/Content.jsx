@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { string } from 'prop-types';
+
 import Content from '../Card/Content';
 
 const Title = styled.h3`
@@ -65,14 +67,20 @@ const Period = styled.span`
   `}
 `;
 
-const PlanCardContent = ({ title, price, period }) => {
-  return (
-    <Content>
-      {title && <Title>{title}</Title>}
-      {price && <Price>{price}</Price>}
-      {period && <Period>{period}</Period>}
-    </Content>
-  );
+const PlanCardContent = ({ title, price, period }) => (
+  <Content>
+    {title && <Title>{title}</Title>}
+    {price && <Price>{price}</Price>}
+    {period && <Period>{period}</Period>}
+  </Content>
+);
+
+PlanCardContent.propTypes = {
+  title: string.isRequired,
+  price: string.isRequired,
+  period: string.isRequired,
 };
+
+PlanCardContent.displayName = 'PlanCard.Content';
 
 export default PlanCardContent;
