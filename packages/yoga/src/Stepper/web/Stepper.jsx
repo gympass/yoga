@@ -49,7 +49,7 @@ Stepper.displayName = 'Stepper';
 
 Stepper.propTypes = {
   /** Must be an Stepper.Step component. */
-  children: typeOf(Step.displayName),
+  children: typeOf(Step),
   /** Controls the active step, it receive the index value for showing some step. Starting from 0. */
   activeStep: limitChildren,
 };
