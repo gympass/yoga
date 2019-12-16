@@ -86,6 +86,7 @@ const Tokens = ({ data, example }) => (
     <thead>
       <tr>
         <th>Token</th>
+        <th>Alias</th>
         <th>Value</th>
         {example && <th>Example</th>}
       </tr>
@@ -93,8 +94,9 @@ const Tokens = ({ data, example }) => (
     <tbody>
       {data &&
         data.map(token => (
-          <tr key={token.name}>
-            <td>{token.name}</td>
+          <tr key={token.id}>
+            <td>{token.key}</td>
+            <td>{token.alias}</td>
             <td>{token.value}</td>
             {example && (
               <td>

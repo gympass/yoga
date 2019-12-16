@@ -24,7 +24,7 @@ const Card = styled.div`
     },
   }) => `
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
 
     width: 200px;
@@ -56,13 +56,23 @@ const Cards = ({ data, example }) => (
     {data &&
       data.map(token => (
         <Card
-          key={token.alias}
+          key={token.id}
           property={example.property}
           valueUnit={example.valueUnit}
           value={token.value}
         >
-          <span>{token.name}</span>
-          <span>{token.value}</span>
+          <span>
+            <strong>token: </strong>
+            {token.key}
+          </span>
+          <span>
+            <strong>alias: </strong>
+            {token.alias}
+          </span>
+          <span>
+            <strong>value: </strong>
+            {token.value}
+          </span>
         </Card>
       ))}
   </CardsWrapper>
