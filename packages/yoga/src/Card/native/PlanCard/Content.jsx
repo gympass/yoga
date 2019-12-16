@@ -1,43 +1,43 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { string } from 'prop-types';
 
 import Content from '../Card/Content';
+import PlanCardContext from './PlanCardContext';
 
-const Title = styled.h3`
+const Title = styled.Text.attrs({
+  numberOfLines: 2,
+})`
   ${({
+    variant,
     theme: {
       yoga: {
         components: {
           card: { plan },
         },
+        colors: { white, dark },
       },
     },
   }) => `
-  display: -webkit-box;
   height: 40px;
   margin: ${plan.title.margin.top}px 0 ${plan.title.margin.bottom}px;
 
   font-size: ${plan.title.font.size}px;
   font-weight: ${plan.title.font.weight};
 
-  color: inherit;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-overflow: -o-ellipsis-lastline;
+  color: ${variant ? white : dark};
 `}
 `;
 
-const Price = styled.strong`
-  display: block;
-
+const Price = styled.Text`
   ${({
+    variant,
     theme: {
       yoga: {
         components: {
           card: { plan },
         },
+        colors: { white, dark },
       },
     },
   }) => `
@@ -45,17 +45,18 @@ const Price = styled.strong`
 
   font-size: ${plan.price.font.size}px;
   font-weight: ${plan.price.font.weight};
+  color: ${variant ? white : dark};
   `}
 `;
-const Period = styled.span`
-  display: block;
-
+const Period = styled.Text`
   ${({
+    variant,
     theme: {
       yoga: {
         components: {
           card: { plan },
         },
+        colors: { white, dark },
       },
     },
   }) => `
@@ -63,16 +64,21 @@ const Period = styled.span`
 
   font-size: ${plan.period.font.size}px;
   font-weight: ${plan.period.font.weight};
+  color: ${variant ? white : dark};
   `}
 `;
 
-const PlanCardContent = ({ title, price, period }) => (
-  <Content>
-    {title && <Title>{title}</Title>}
-    {price && <Price>{price}</Price>}
-    {period && <Period>{period}</Period>}
-  </Content>
-);
+const PlanCardContent = ({ title, price, period }) => {
+  const { variant } = useContext(PlanCardContext);
+
+  return (
+    <Content>
+      {title && <Title variant={variant}>{title}</Title>}
+      {price && <Price variant={variant}>{price}</Price>}
+      {period && <Period variant={variant}>{period}</Period>}
+    </Content>
+  );
+};
 
 PlanCardContent.propTypes = {
   title: string.isRequired,

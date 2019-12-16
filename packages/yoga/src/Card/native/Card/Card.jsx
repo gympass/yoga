@@ -2,27 +2,28 @@ import React from 'react';
 import styled from 'styled-components';
 import { string, shape, oneOf, node } from 'prop-types';
 
-const CardStyled = styled.section`
-  ${({
+const CardStyled = styled.View(
+  ({
     theme: {
       yoga: {
         components: { card },
       },
     },
   }) => `
-  padding: 
-    ${card.padding.top}px 
-    ${card.padding.right}px 
-    ${card.padding.bottom}px 
-    ${card.padding.left}px;
+    padding:
+      ${card.padding.top}px 
+      ${card.padding.right}px 
+      ${card.padding.bottom}px 
+      ${card.padding.left}px;
 
-  border-radius: ${card.radii}px;
-  background-color: ${card.backgroundColor};
-  box-shadow: ${card.elevation};
-`}
-`;
+    border-radius: ${card.radii}px;
+    background-color: ${card.backgroundColor};
+    box-shadow: ${card.elevation};
+    elevation: 4;
+`,
+);
 
-const Ribbon = styled.span`
+const Ribbon = styled.View`
   ${({
     variant,
     theme: {
@@ -33,12 +34,10 @@ const Ribbon = styled.span`
       },
     },
   }) => `
-  display: inline-block;
-  top: ${card.padding.top}px;
-  left: 0;
+  align-self: flex-start;
 
-  margin-left: -${card.padding.left}px;
   margin-bottom: ${card.padding.bottom}px;
+  margin-left: -${card.padding.left}px;
 
   padding: 
     ${spacing.xxsmall}px
@@ -54,10 +53,25 @@ const Ribbon = styled.span`
   `}
 `;
 
+const RibbonText = styled.Text`
+  ${({
+    variant,
+    theme: {
+      yoga: {
+        colors: { white, dark },
+      },
+    },
+  }) => `
+    color: ${variant ? white : dark};
+  `}
+`;
+
 const Card = ({ ribbon, children, ...rest }) => (
   <CardStyled {...rest}>
     {Object.keys(ribbon).length > 0 && (
-      <Ribbon variant={ribbon.variant}>{ribbon.text}</Ribbon>
+      <Ribbon variant={ribbon.variant}>
+        <RibbonText variant={ribbon.variant}>{ribbon.text}</RibbonText>
+      </Ribbon>
     )}
     {children}
   </CardStyled>
@@ -68,11 +82,14 @@ Card.propTypes = {
     text: string,
     variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
   }),
+  /** style the link following the theme (primary, secondary, tertiary) */
+  variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
   children: node,
 };
 
 Card.defaultProps = {
   ribbon: {},
+  variant: '',
   children: null,
 };
 
