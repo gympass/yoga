@@ -18,15 +18,13 @@ const withToken = Component => ({ token, ...rest }) => {
   const tokensValues = [...new Set(Object.values(tokensModule))];
   const tokensKeys = getKeys(tokensModule, tokensValues);
 
-  const data = tokensKeys.map(({ type, position, key }) => {
-    return {
-      token,
-      id: key,
-      key: `${token}[${position}]`,
-      alias: type === 'alias' ? `${token}.${key}` : '--',
-      value: tokensValues[position],
-    };
-  });
+  const data = tokensKeys.map(({ type, position, key }) => ({
+    token,
+    id: key,
+    key: `${token}[${position}]`,
+    alias: type === 'alias' ? `${token}.${key}` : '--',
+    value: tokensValues[position],
+  }));
 
   return <Component token={token} data={data} {...rest} />;
 };

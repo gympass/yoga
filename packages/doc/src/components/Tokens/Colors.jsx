@@ -1,17 +1,10 @@
-/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import styled from 'styled-components';
-import { arrayOf, any } from 'prop-types';
-import { hexToRgb } from '@gympass/yoga-common';
+import { arrayOf, oneOfType, shape, number, string, any } from 'prop-types';
 import withToken from './withToken';
 
-const ColorsWrapper = styled.section`
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-
-  width: 100%;
-`;
+import Tag from './Tag';
+import Wrapper from './Wrapper';
 
 const ColorPallete = styled.div`
   width: 300px;
@@ -28,31 +21,12 @@ const Title = styled.span`
 `;
 
 const Color = styled.div`
-  ${({
-    color,
-    theme: {
-      yoga: {
-        colors: { white, dark },
-      },
-    },
-  }) => `
+  ${({ color }) => `
     display: flex;
     justify-content: space-between;
 
     height: 80px;
     background-color: ${color};
-
-    span {
-      height: fit-content;
-      margin: 5px;
-      padding: 5px;
-      
-      background: ${hexToRgb(white, 0.4)};
-      border-radius: 4px;
-
-      font-size: 12px;
-      color: ${dark};
-    }
   `};
 `;
 
@@ -60,17 +34,17 @@ const SubColors = ({ token }) => {
   const valueType = typeof token.value;
   const values = valueType === 'string' ? [token.value] : token.value;
   return values.map((subcolor, index) => (
-    <Color key={index} color={subcolor}>
-      <span>
+    <Color key={subcolor} color={subcolor}>
+      <Tag light>
         {valueType === 'string' ? token.alias : `${token.alias}[${index}]`}
-      </span>
-      <span>{subcolor}</span>
+      </Tag>
+      <Tag light>{subcolor}</Tag>
     </Color>
   ));
 };
 
 const Colors = ({ data, ...rest }) => (
-  <ColorsWrapper {...rest}>
+  <Wrapper {...rest}>
     {data &&
       data.map(color => (
         <ColorPallete key={color.id}>
@@ -78,11 +52,19 @@ const Colors = ({ data, ...rest }) => (
           <SubColors token={color} />
         </ColorPallete>
       ))}
-  </ColorsWrapper>
+  </Wrapper>
 );
 
 Colors.propTypes = {
-  data: arrayOf(any).isRequired,
+  data: arrayOf(
+    shape({
+      token: string,
+      id: oneOfType([string, number]),
+      key: string,
+      alias: string,
+      value: oneOfType(any),
+    }),
+  ).isRequired,
 };
 
 export default withToken(Colors);
