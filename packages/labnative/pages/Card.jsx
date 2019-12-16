@@ -22,7 +22,12 @@ const CardPage = () => {
     >
       <StyledText>Simple Card</StyledText>
 
-      <ScrollView horizontal style={{ padding: 10 }}>
+      <ScrollView
+        horizontal
+        contentContainerStyle={{
+          padding: 10,
+        }}
+      >
         <Card
           style={{
             width: 250,
@@ -94,7 +99,13 @@ const CardPage = () => {
       </ScrollView>
 
       <StyledText>Plan Card</StyledText>
-      <ScrollView horizontal style={{ padding: 10 }}>
+      <ScrollView
+        horizontal
+        contentContainerStyle={{
+          padding: 10,
+          paddingBottom: 20,
+        }}
+      >
         <PlanCard
           style={{
             width: 250,
@@ -145,7 +156,7 @@ const CardPage = () => {
         >
           <PlanCard.Content
             title="Gympass Black for employees with Buddha Spa + Reebook included"
-            price="U$ 129.90"
+            price="U$ 299.90"
             period="/month"
           />
           <PlanCard.Actions>
