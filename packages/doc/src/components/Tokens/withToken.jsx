@@ -1,8 +1,8 @@
 import React from 'react';
 import yogaTokensModule from '@gympass/yoga-tokens';
 
-const getKeys = (module, values) => {
-  const tokens = Object.entries(module);
+const getKeys = (tokensModule, values) => {
+  const tokens = Object.entries(tokensModule);
 
   return values.map((value, index) => {
     const keys = tokens.filter(([, v]) => v === value);
