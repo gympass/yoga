@@ -6,16 +6,9 @@ on:
       - master
 
 jobs:
-  check-merge:
-    runs-on: ubuntu-latest
-    if: startsWith(github.event.head_commit.message, 'Merge') != true
-
-    steps:
-      - name: Check Merge
-        run: exit 0
-
   build-and-publish:
     runs-on: ubuntu-latest
+    if: startsWith(github.event.head_commit.message, 'Merge')
     steps:
       - uses: actions/checkout@v1
       - name: Configure CI Git User
@@ -51,3 +44,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+  check-build:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.head_commit.message, 'Merge') != true
+    steps:
+      - name: Nothing to do here
+        run: exit 0
