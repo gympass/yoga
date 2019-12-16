@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 8,
+          "elevation": 4,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+      ]
+    }
+    variant=""
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text>
+        Hello World
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text>
+        It's fine here
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <TouchableWithoutFeedback>
+        <View
+          disabled={false}
+          full={false}
+          inverted={false}
+          pressed={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "backgroundColor": "#F46152",
+                "borderColor": "#F46152",
+                "borderRadius": 9999,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "height": 48,
+                "justifyContent": "center",
+                "paddingLeft": 24,
+                "paddingRight": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            disabled={false}
+            inverted={false}
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Action's children must be Button
+          </Text>
+        </View>
+      </TouchableWithoutFeedback>
+    </View>
+  </View>
+</View>
+`;

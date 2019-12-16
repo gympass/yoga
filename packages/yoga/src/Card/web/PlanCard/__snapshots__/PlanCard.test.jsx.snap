@@ -152,7 +152,6 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
 
 .c4 {
   display: block;
-  display: block;
   margin-bottom: 8px;
   font-size: 14px;
   font-weight: 400;
@@ -221,7 +220,6 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
 }
 
 .c4 {
-  display: block;
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
@@ -325,7 +323,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 }
 
 .c4 {
-  display: block;
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
@@ -452,7 +449,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
 
 .c4 {
   display: block;
-  display: block;
   margin-bottom: 8px;
   font-size: 14px;
   font-weight: 400;
@@ -577,7 +573,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
 }
 
 .c4 {
-  display: block;
   display: block;
   margin-bottom: 8px;
   font-size: 14px;

@@ -1,0 +1,938 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 8,
+          "elevation": 4,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+        Object {
+          "maxWidth": 280,
+          "width": "100%",
+        },
+      ]
+    }
+    variant=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-start",
+            "backgroundColor": "#F5F5FA",
+            "borderBottomRightRadius": 9999,
+            "borderTopRightRadius": 9999,
+            "color": "#41414A",
+            "marginBottom": 16,
+            "marginLeft": -16,
+            "paddingBottom": 4,
+            "paddingLeft": 16,
+            "paddingRight": 12,
+            "paddingTop": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+            },
+          ]
+        }
+      >
+        Label
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ribbon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 8,
+          "elevation": 4,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+        Object {
+          "maxWidth": 280,
+          "width": "100%",
+        },
+      ]
+    }
+    variant=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-start",
+            "backgroundColor": "#652CDB",
+            "borderBottomRightRadius": 9999,
+            "borderTopRightRadius": 9999,
+            "color": "#FFFFFF",
+            "marginBottom": 16,
+            "marginLeft": -16,
+            "paddingBottom": 4,
+            "paddingLeft": 16,
+            "paddingRight": 12,
+            "paddingTop": 4,
+          },
+        ]
+      }
+      variant="secondary"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+            },
+          ]
+        }
+        variant="secondary"
+      >
+        Label
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary ribbon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 8,
+          "elevation": 4,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+        Object {
+          "maxWidth": 280,
+          "width": "100%",
+        },
+      ]
+    }
+    variant=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-start",
+            "backgroundColor": "#2B9486",
+            "borderBottomRightRadius": 9999,
+            "borderTopRightRadius": 9999,
+            "color": "#FFFFFF",
+            "marginBottom": 16,
+            "marginLeft": -16,
+            "paddingBottom": 4,
+            "paddingLeft": 16,
+            "paddingRight": 12,
+            "paddingTop": 4,
+          },
+        ]
+      }
+      variant="tertiary"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+            },
+          ]
+        }
+        variant="tertiary"
+      >
+        Label
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Content 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 8,
+          "elevation": 4,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+        Object {
+          "maxWidth": 280,
+          "width": "100%",
+        },
+      ]
+    }
+    variant=""
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        numberOfLines={2}
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "height": 40,
+              "marginBottom": 12,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 8,
+            },
+          ]
+        }
+        variant=""
+      >
+        Gympass Black for employees with Buddha Spa + Reebook included
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "marginTop": 12,
+            },
+          ]
+        }
+        variant=""
+      >
+        U$ 99.90
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "marginBottom": 8,
+            },
+          ]
+        }
+        variant=""
+      >
+        /month
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Content 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 8,
+          "elevation": 4,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+        Object {
+          "backgroundColor": "#652CDB",
+          "maxWidth": 280,
+          "width": "100%",
+        },
+      ]
+    }
+    variant="secondary"
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        numberOfLines={2}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "height": 40,
+              "marginBottom": 12,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 8,
+            },
+          ]
+        }
+        variant="secondary"
+      >
+        Gympass Black for employees with Buddha Spa + Reebook included
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "marginTop": 12,
+            },
+          ]
+        }
+        variant="secondary"
+      >
+        U$ 99.90
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "marginBottom": 8,
+            },
+          ]
+        }
+        variant="secondary"
+      >
+        /month
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 8,
+          "elevation": 4,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+        Object {
+          "maxWidth": 280,
+          "width": "100%",
+        },
+      ]
+    }
+    variant=""
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      Gympass PlanCard
+    </View>
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        numberOfLines={2}
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "height": 40,
+              "marginBottom": 12,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 8,
+            },
+          ]
+        }
+        variant=""
+      >
+        Gympass Black for employees with Buddha Spa + Reebook included
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "marginTop": 12,
+            },
+          ]
+        }
+        variant=""
+      >
+        U$ 99.90
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "marginBottom": 8,
+            },
+          ]
+        }
+        variant=""
+      >
+        /month
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "paddingTop": 8,
+          },
+        ]
+      }
+    >
+      <View
+        lastChild={true}
+        style={
+          Array [
+            Object {
+              "display": "flex",
+            },
+          ]
+        }
+      >
+        <TouchableWithoutFeedback>
+          <View
+            disabled={false}
+            full={false}
+            inverted={false}
+            pressed={false}
+            small={false}
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "#F46152",
+                  "borderColor": "#F46152",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 48,
+                  "justifyContent": "center",
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                },
+              ]
+            }
+          >
+            <Text
+              disabled={false}
+              inverted={false}
+              pressed={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontSize": 14,
+                    "fontWeight": "700",
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              should have buttons
+            </Text>
+          </View>
+        </TouchableWithoutFeedback>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 8,
+          "elevation": 4,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+        Object {
+          "backgroundColor": "#652CDB",
+          "maxWidth": 280,
+          "width": "100%",
+        },
+      ]
+    }
+    variant="secondary"
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      Gympass PlanCard
+    </View>
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        numberOfLines={2}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "height": 40,
+              "marginBottom": 12,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 8,
+            },
+          ]
+        }
+        variant="secondary"
+      >
+        Gympass Black for employees with Buddha Spa + Reebook included
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "marginTop": 12,
+            },
+          ]
+        }
+        variant="secondary"
+      >
+        U$ 99.90
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "marginBottom": 8,
+            },
+          ]
+        }
+        variant="secondary"
+      >
+        /month
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "paddingTop": 8,
+          },
+        ]
+      }
+    >
+      <View
+        lastChild={true}
+        style={
+          Array [
+            Object {
+              "display": "flex",
+            },
+          ]
+        }
+      >
+        <TouchableWithoutFeedback>
+          <View
+            disabled={false}
+            full={false}
+            inverted={false}
+            pressed={false}
+            small={false}
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "#F46152",
+                  "borderColor": "#F46152",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 48,
+                  "justifyContent": "center",
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                },
+              ]
+            }
+          >
+            <Text
+              disabled={false}
+              inverted={false}
+              pressed={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontSize": 14,
+                    "fontWeight": "700",
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              should have buttons
+            </Text>
+          </View>
+        </TouchableWithoutFeedback>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 8,
+          "elevation": 4,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+        Object {
+          "backgroundColor": "#2B9486",
+          "maxWidth": 280,
+          "width": "100%",
+        },
+      ]
+    }
+    variant="tertiary"
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      Gympass PlanCard
+    </View>
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        numberOfLines={2}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "height": 40,
+              "marginBottom": 12,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 8,
+            },
+          ]
+        }
+        variant="tertiary"
+      >
+        Gympass Black for employees with Buddha Spa + Reebook included
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 20,
+              "fontWeight": "700",
+              "marginTop": 12,
+            },
+          ]
+        }
+        variant="tertiary"
+      >
+        U$ 99.90
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "marginBottom": 8,
+            },
+          ]
+        }
+        variant="tertiary"
+      >
+        /month
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "paddingTop": 8,
+          },
+        ]
+      }
+    >
+      <View
+        lastChild={true}
+        style={
+          Array [
+            Object {
+              "display": "flex",
+            },
+          ]
+        }
+      >
+        <TouchableWithoutFeedback>
+          <View
+            disabled={false}
+            full={false}
+            inverted={false}
+            pressed={false}
+            small={false}
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "#F46152",
+                  "borderColor": "#F46152",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 48,
+                  "justifyContent": "center",
+                  "paddingLeft": 24,
+                  "paddingRight": 24,
+                },
+              ]
+            }
+          >
+            <Text
+              disabled={false}
+              inverted={false}
+              pressed={false}
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontSize": 14,
+                    "fontWeight": "700",
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              should have buttons
+            </Text>
+          </View>
+        </TouchableWithoutFeedback>
+      </View>
+    </View>
+  </View>
+</View>
+`;
