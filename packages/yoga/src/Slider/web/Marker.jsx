@@ -5,8 +5,15 @@ import styled from 'styled-components';
 import RCHandle from 'rc-slider/lib/Handle';
 import Tooltip from './Tooltip';
 
-const Circle = styled(RCHandle)(
-  ({
+const Circle = styled(RCHandle)`
+  cursor: pointer;
+  height: 24px;
+  margin-top: -10px;
+  outline: none;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  ${({
     'data-dragging': dataDragging,
     theme: {
       yoga: {
@@ -23,15 +30,8 @@ const Circle = styled(RCHandle)(
           0 0 0 8px ${hexToRgb(slider.marker.backgroundColor, 0.2)}`
         : slider.marker.shadow
     };
-    cursor: pointer;
-    height: 24px;
-    margin-top: -10px;
-    outline: none;
-    position: absolute;
-    top: 0;
-    width: 24px;
-  `,
-);
+  `}
+`;
 
 const Marker = ({ values, dragging, index, tooltip, ...props }) => {
   const renderTooltip = () => {
