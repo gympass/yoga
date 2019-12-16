@@ -6,8 +6,18 @@ import RadioGroupContext from '../RadioGroupContext';
 
 const Group = styled.div.attrs({
   role: 'radiogroup',
-})(
-  ({
+})`
+  display: flex;
+
+  width: min-content;
+
+  border-style: solid;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  ${({
     theme: {
       yoga: {
         components: {
@@ -20,17 +30,13 @@ const Group = styled.div.attrs({
     },
     full,
   }) => `
-  width: min-content;
-  display: flex;
-  border-style: solid;
+    border-radius: ${radii}px;
+    border-width: ${borderWidth}px;
+    border-color: ${borderColors};
 
-  border-radius: ${radii}px;
-  border-width: ${borderWidth}px;
-  border-color: ${borderColors};
-
-  ${full ? `width: 100%;` : ``}
-`,
-);
+    ${full ? `width: 100%;` : ``}
+  `}
+`;
 
 /** Radio group allows user to select one option from a set of options. Use value on group to set the selected option. */
 const RadioGroup = ({

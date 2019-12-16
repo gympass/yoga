@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { limitChildren, typeOf } from '../../shared';
 import Dots from './Dots';
@@ -8,22 +8,26 @@ import Step from './Step';
 
 const Root = styled.div`
   width: 100%;
+
+  * {
+    box-sizing: border-box;
+  }
 `;
 
-const LineWrapper = styled.div(
-  ({
+const LineWrapper = styled.div`
+  ${({
     theme: {
       yoga: {
         components: { stepper },
       },
     },
-  }) => `
-  width: 100%;
-  height: 46px;
+  }) => css`
+    width: 100%;
+    height: 46px;
 
-  padding: 0 ${stepper.padding.right}px 0 ${stepper.padding.left}px;
-`,
-);
+    padding: 0 ${stepper.padding.right}px 0 ${stepper.padding.left}px;
+  `}
+`;
 
 /** Stepper is responsible for the logic that drives a stepped workflow, it provides a wizard-like workflow by dividing content into logical steps. */
 const Stepper = ({ children, activeStep, ...rest }) => (

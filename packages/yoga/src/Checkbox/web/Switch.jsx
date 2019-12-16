@@ -1,22 +1,31 @@
 import React from 'react';
 import { bool, func } from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 /** This is a Switch description */
 const SwitchInput = styled.input`
+  position: absolute;
+
   width: 100%;
   height: 100%;
+
   opacity: 0;
-  position: absolute;
+
   cursor: inherit;
 `;
 
 const SwitchTrack = styled.label`
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
+
   cursor: pointer;
+
+  * {
+    box-sizing: border-box;
+  }
 
   ${({
     theme: {
@@ -39,27 +48,30 @@ const SwitchTrack = styled.label`
     checked,
     disabled,
   }) =>
-    `
-    width: ${trackWidth}px;
-    height: ${trackHeight}px;
-    border-radius: ${trackRadii}px;
-    transition: background-color ${trackTransitionAnimation};
-    background-color: ${
-      checked ? checkedBackgroundColor : trackBackgroundColor
-    };
+    css`
+      width: ${trackWidth}px;
+      height: ${trackHeight}px;
 
-    ${
-      disabled
-        ? `
-        background-color: ${disabledBackgroundColor};
-        cursor: not-allowed;`
-        : ''
-    }
-  `};
+      background-color: ${checked
+        ? checkedBackgroundColor
+        : trackBackgroundColor};
+
+      border-radius: ${trackRadii}px;
+
+      transition: background-color ${trackTransitionAnimation};
+
+      ${disabled
+        ? css`
+            background-color: ${disabledBackgroundColor};
+            cursor: not-allowed;
+          `
+        : ''}
+    `};
 `;
 
 const SwitchThumb = styled.span`
   position: relative;
+
   pointer-events: none;
 
   ${({
@@ -88,36 +100,38 @@ const SwitchThumb = styled.span`
     checked,
     disabled,
   }) =>
-    `
-    width: ${thumbWidth}px;
-    height: ${thumbHeight}px;
-    left: ${thumbLeft}px;
-    border-radius: ${thumbRadii}px;
-    background-color: ${thumbBackgroundColor};
-    transition: ${thumbTransitionAnimation};
+    css`
+      left: ${thumbLeft}px;
 
-    ${
-      checked
-        ? `
-        left: calc(100% - ${thumbLeft}px);
-        transform: translateX(-100%);`
-        : ''
-    }
-    ${
-      disabled
-        ? `
-        background-color: ${disabledBackgroundColor};
-        cursor: not-allowed;`
-        : `
-        ${SwitchInput}:focus + &,
-        ${SwitchInput}:hover + &{
-          box-shadow: 0 0 0 ${spacing.xsmall}px ${
-            checked ? focusCheckedBackgroundColor : focusDisabledBackgroundColor
-          };
-        }
-        `
-    }
-  `};
+      width: ${thumbWidth}px;
+      height: ${thumbHeight}px;
+
+      background-color: ${thumbBackgroundColor};
+      border-radius: ${thumbRadii}px;
+
+      transition: ${thumbTransitionAnimation};
+
+      ${checked
+        ? css`
+            left: calc(100% - ${thumbLeft}px);
+            transform: translateX(-100%);
+          `
+        : ''}
+      ${disabled
+        ? css`
+            background-color: ${disabledBackgroundColor};
+            cursor: not-allowed;
+          `
+        : css`
+            ${SwitchInput}:focus + &,
+            ${SwitchInput}:hover + & {
+              box-shadow: 0 0 0 ${spacing.xsmall}px
+                ${checked
+                  ? focusCheckedBackgroundColor
+                  : focusDisabledBackgroundColor};
+            }
+          `}
+    `};
 `;
 
 /** Switches allow users to turn an individual option on or off. They are usually used to activate or deactivate a specific setting. */

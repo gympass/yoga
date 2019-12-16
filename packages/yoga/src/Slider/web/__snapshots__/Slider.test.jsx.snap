@@ -2,10 +2,6 @@
 
 exports[`<Slider /> Snapshots With one marker should match snapshot with Slider snapped 1`] = `
 .c1 {
-  background-color: #F46152;
-  border: 6px solid #FFFFFF;
-  border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
@@ -13,12 +9,20 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   position: absolute;
   top: 0;
   width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
 .c0 {
   position: relative;
-  padding-bottom: 40px;
   width: 100%;
+  padding-bottom: 40px;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div>
@@ -101,10 +105,6 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
 
 exports[`<Slider /> Snapshots With one marker should match snapshot with Slider with labels 1`] = `
 .c1 {
-  background-color: #F46152;
-  border: 6px solid #FFFFFF;
-  border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
@@ -112,12 +112,20 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   position: absolute;
   top: 0;
   width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
 .c0 {
   position: relative;
-  padding-bottom: 40px;
   width: 100%;
+  padding-bottom: 40px;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div>
@@ -177,10 +185,6 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
 
 exports[`<Slider /> Snapshots With one marker should match snapshot with default Slider 1`] = `
 .c1 {
-  background-color: #F46152;
-  border: 6px solid #FFFFFF;
-  border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
@@ -188,12 +192,20 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
   position: absolute;
   top: 0;
   width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
 .c0 {
   position: relative;
-  padding-bottom: 40px;
   width: 100%;
+  padding-bottom: 40px;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div>
@@ -240,10 +252,6 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
 
 exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
 .c1 {
-  background-color: #F46152;
-  border: 6px solid #FFFFFF;
-  border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
@@ -251,12 +259,20 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
   position: absolute;
   top: 0;
   width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
 .c0 {
   position: relative;
-  padding-bottom: 40px;
   width: 100%;
+  padding-bottom: 40px;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div>
@@ -314,10 +330,6 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
 
 exports[`<Slider /> Snapshots With two markers should match snapshot with Slider snapped 1`] = `
 .c1 {
-  background-color: #F46152;
-  border: 6px solid #FFFFFF;
-  border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
@@ -325,12 +337,20 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
   position: absolute;
   top: 0;
   width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
 .c0 {
   position: relative;
-  padding-bottom: 40px;
   width: 100%;
+  padding-bottom: 40px;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div>
@@ -424,10 +444,10 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
 
 exports[`<Slider /> Tooltip should render tooltips 1`] = `
 .c2 {
-  bottom: 30px;
-  left: 6px;
   width: 95px;
   position: absolute;
+  bottom: 30px;
+  left: 6px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -437,61 +457,57 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
 }
 
 .c4 {
+  position: relative;
+  z-index: 3;
   background-color: #F5F5FA;
   border-radius: 8px;
   padding: 4px 8px 4px 8px;
-  position: relative;
-  z-index: 3;
 }
 
 .c7 {
-  background-color: #F5F5FA;
-  border-radius: 3px;
-  bottom: -5px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
-  height: 16px;
-  left: 50%;
   position: absolute;
+  bottom: -5px;
+  left: 50%;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
   -webkit-transform: rotate(45deg) translateX(-50%);
   -ms-transform: rotate(45deg) translateX(-50%);
   transform: rotate(45deg) translateX(-50%);
   -webkit-transform-origin: left;
   -ms-transform-origin: left;
   transform-origin: left;
-  width: 16px;
-  z-index: 2;
+  background-color: #F5F5FA;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
 .c3 {
+  position: relative;
+  text-align: center;
+  padding: 4px 8px 4px 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   color: #FFFFFF;
   font-size: 12px;
   font-weight: 700;
-  padding: 4px 8px 4px 8px;
-  position: relative;
-  text-align: center;
 }
 
 .c5 {
-  color: #6B6B78;
-  font-size: 14px;
-  font-weight: 700;
   text-align: center;
-}
-
-.c6 {
   color: #6B6B78;
   font-size: 14px;
   font-weight: 400;
+}
+
+.c6 {
   text-align: center;
+  color: #6B6B78;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .c1 {
-  background-color: #F46152;
-  border: 6px solid #FFFFFF;
-  border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25), 0 0 0 8px rgba(244,97,82,0.2);
   cursor: pointer;
   height: 24px;
   margin-top: -10px;
@@ -499,12 +515,20 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   position: absolute;
   top: 0;
   width: 24px;
+  background-color: #F46152;
+  border: 6px solid #FFFFFF;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25), 0 0 0 8px rgba(244,97,82,0.2);
 }
 
 .c0 {
   position: relative;
-  padding-bottom: 40px;
   width: 100%;
+  padding-bottom: 40px;
+}
+
+.c0 * {
+  box-sizing: border-box;
 }
 
 <div>

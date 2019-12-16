@@ -11,6 +11,7 @@ const getTheme = ({ theme, locale }) => {
   return appTheme(token);
 };
 
+/** This component provides a theme to all React components underneath itself via the context API. */
 const ThemeProvider = ({ children, ...theme }) => (
   <SCThemeProvider theme={{ yoga: getTheme(theme) }}>
     {children}
