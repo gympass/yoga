@@ -64,6 +64,8 @@ const Card = ({ ribbon, children, ...rest }) => (
 );
 
 Card.propTypes = {
+  /** text: the content inside the Card Ribbon
+   * variant: style the ribbon following the theme (primary, secondary, tertiary) */
   ribbon: shape({
     text: string,
     variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
