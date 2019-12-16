@@ -62,7 +62,7 @@ Colors.propTypes = {
       id: oneOfType([string, number]),
       key: string,
       alias: string,
-      value: oneOfType(any),
+      value: any,
     }),
   ).isRequired,
 };
