@@ -11,7 +11,7 @@ const getTheme = ({ theme, locale }) => {
   return appTheme(token);
 };
 
-/** Yoga has full theming support by exporting a ThemeProvider wrapper component. This component provides a theme to all React components underneath itself via the context API. */
+/** This component provides a theme to all React components underneath itself via the context API. */
 const ThemeProvider = ({ children, ...theme }) => (
   <SCThemeProvider theme={{ yoga: getTheme(theme) }}>
     {children}
