@@ -20,7 +20,8 @@ const Title = styled.Text.attrs({
     },
   }) => `
   height: 40px;
-  margin: ${plan.title.margin.top}px 0 ${plan.title.margin.bottom}px;
+  margin-top: ${plan.title.margin.top}px;
+  margin-bottom: ${plan.title.margin.bottom}px;
 
   font-size: ${plan.title.font.size}px;
   font-weight: ${plan.title.font.weight};

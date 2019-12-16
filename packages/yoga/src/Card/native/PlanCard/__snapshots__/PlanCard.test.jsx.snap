@@ -274,8 +274,6 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
               "fontWeight": "400",
               "height": 40,
               "marginBottom": 12,
-              "marginLeft": 0,
-              "marginRight": 0,
               "marginTop": 8,
             },
           ]
@@ -374,8 +372,6 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
               "fontWeight": "400",
               "height": 40,
               "marginBottom": 12,
-              "marginLeft": 0,
-              "marginRight": 0,
               "marginTop": 8,
             },
           ]
@@ -482,8 +478,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               "fontWeight": "400",
               "height": 40,
               "marginBottom": 12,
-              "marginLeft": 0,
-              "marginRight": 0,
               "marginTop": 8,
             },
           ]
@@ -655,8 +649,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
               "fontWeight": "400",
               "height": 40,
               "marginBottom": 12,
-              "marginLeft": 0,
-              "marginRight": 0,
               "marginTop": 8,
             },
           ]
@@ -828,8 +820,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
               "fontWeight": "400",
               "height": 40,
               "marginBottom": 12,
-              "marginLeft": 0,
-              "marginRight": 0,
               "marginTop": 8,
             },
           ]
