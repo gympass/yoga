@@ -22,7 +22,7 @@ Actions.propTypes = {
         typeOf(Button.Link),
       ]),
     ),
-  ]),
+  ]).isRequired,
 };
 
 Actions.displayName = 'Card.Actions';

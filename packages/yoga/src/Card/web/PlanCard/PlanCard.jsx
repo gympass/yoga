@@ -26,16 +26,16 @@ const Plan = styled(Card)`
 `}
 `;
 
-Plan.propTypes = {
+const PlanCard = ({ ...rest }) => <Plan {...rest} />;
+
+PlanCard.propTypes = {
+  /** style the card following the theme (primary, secondary, tertiary) */
   variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
 };
 
-Plan.defaultProps = {
+PlanCard.defaultProps = {
   variant: '',
 };
-
-const PlanCard = ({ ...rest }) => <Plan {...rest} />;
-
 PlanCard.displayName = 'PlanCard';
 
 export default PlanCard;

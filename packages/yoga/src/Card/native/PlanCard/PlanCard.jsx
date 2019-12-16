@@ -33,7 +33,7 @@ const PlanCard = ({ variant, ...rest }) => (
 );
 
 PlanCard.propTypes = {
-  /** style the link following the theme (primary, secondary, tertiary) */
+  /** style the card following the theme (primary, secondary, tertiary) */
   variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
 };
 

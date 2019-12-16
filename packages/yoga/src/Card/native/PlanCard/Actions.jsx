@@ -55,11 +55,7 @@ PlanActions.propTypes = {
         typeOf(Button.Link),
       ]),
     ),
-  ]),
-};
-
-PlanActions.defaultProps = {
-  children: null,
+  ]).isRequired,
 };
 
 PlanActions.displayName = 'PlanCard.Actions';
