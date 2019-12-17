@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.1.3...@gympass/yoga@1.2.0) (2019-12-17)
+
+### Bug Fixes
+
+- **plancard:** remove unused margin style ([866634f](https://github.com/Gympass/yoga/commit/866634fcc46b63603df75d7fe3726ea346c04038))
+- **proptypes/typeof:** auto getting displayName and fix Button.Link ([2629a6d](https://github.com/Gympass/yoga/commit/2629a6d7971709a5f4077c5acd1ea0e0e6c6a554))
+
+### Features
+
+- **plancard:** new component: PlanCard ([8c41b1a](https://github.com/Gympass/yoga/commit/8c41b1add0ca853b9a7a414ba52a6af061cadc77))
+- **plancard:** new component: PlanCard ([7100cce](https://github.com/Gympass/yoga/commit/7100ccebdb07383d7b52578bd70f0ee9f09dff14))
+- **plancard:** new Component: PlanCard ([1f3fbce](https://github.com/Gympass/yoga/commit/1f3fbcebd27c0f70444aba513059e8f112e04810))
+- **plancard:** new Component: PlanCard (Native) ([eb8578d](https://github.com/Gympass/yoga/commit/eb8578d403ade6ff4a7c53392c83f8a80e5d711d))
+
 ## [1.1.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.1.2...@gympass/yoga@1.1.3) (2019-12-16)
 
 **Note:** Version bump only for package @gympass/yoga
