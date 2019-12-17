@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.6.6...@gympass/yoga-doc@0.7.0) (2019-12-17)
+
+### Features
+
+- **plancard:** new component: PlanCard ([7100cce](https://github.com/Gympass/yoga/commit/7100ccebdb07383d7b52578bd70f0ee9f09dff14))
+- **plancard:** new Component: PlanCard ([1f3fbce](https://github.com/Gympass/yoga/commit/1f3fbcebd27c0f70444aba513059e8f112e04810))
+
 ## [0.6.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.6.5...@gympass/yoga-doc@0.6.6) (2019-12-16)
 
 **Note:** Version bump only for package @gympass/yoga-doc
