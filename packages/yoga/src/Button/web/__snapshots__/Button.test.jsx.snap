@@ -17,6 +17,14 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,
@@ -64,6 +72,22 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: unset;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  background-color: unset;
+  border: none;
+  border-radius: 0;
+  color: #F46152;
 }
 
 .c0:not([disabled]):hover,
@@ -84,40 +108,27 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
   cursor: not-allowed;
 }
 
-.c1 {
-  height: unset;
-  padding: 0;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  background-color: unset;
-  border: none;
-  border-radius: 0;
-  color: #F46152;
-}
-
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
   box-shadow: unset;
   color: #F78D82;
 }
 
-.c1:not([disabled]):active {
+.c0:not([disabled]):active {
   background-color: unset;
   color: #F78D82;
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: unset;
   color: #9898A6;
 }
 
 <div>
   <button
-    class="c0 c1"
+    class="c0"
     disabled=""
-  >
-    Button
-  </button>
+  />
 </div>
 `;
 
@@ -138,6 +149,14 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,
@@ -209,6 +228,14 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,
@@ -280,6 +307,14 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,
@@ -326,6 +361,14 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,
@@ -396,6 +439,14 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,
@@ -466,6 +517,14 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   color: #F46152;
@@ -526,9 +585,26 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   color: #F46152;
+  height: unset;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  background-color: unset;
+  border: none;
+  border-radius: 0;
+  color: #F46152;
+  color: #FFFFFF;
 }
 
 .c0:not([disabled]):hover,
@@ -560,46 +636,32 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c1 {
-  height: unset;
-  padding: 0;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  background-color: unset;
-  border: none;
-  border-radius: 0;
-  color: #F46152;
-  color: #FFFFFF;
-}
-
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
   box-shadow: unset;
   color: #F78D82;
 }
 
-.c1:not([disabled]):active {
+.c0:not([disabled]):active {
   background-color: unset;
   color: #F78D82;
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: unset;
   color: #9898A6;
 }
 
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
   box-shadow: unset;
   color: #DBDBE8;
 }
 
 <div>
   <button
-    class="c0 c1"
-  >
-    Button
-  </button>
+    class="c0"
+  />
 </div>
 `;
 
@@ -620,6 +682,14 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   color: #F46152;
@@ -716,6 +786,14 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   color: #F46152;
@@ -800,6 +878,14 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,
@@ -846,6 +932,14 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,
@@ -916,6 +1010,14 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,
@@ -986,6 +1088,22 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: unset;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  background-color: unset;
+  border: none;
+  border-radius: 0;
+  color: #F46152;
 }
 
 .c0:not([disabled]):hover,
@@ -1006,34 +1124,46 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   cursor: not-allowed;
 }
 
-.c1 {
-  height: unset;
-  padding: 0;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  background-color: unset;
-  border: none;
-  border-radius: 0;
-  color: #F46152;
-}
-
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
   box-shadow: unset;
   color: #F78D82;
 }
 
-.c1:not([disabled]):active {
+.c0:not([disabled]):active {
   background-color: unset;
   color: #F78D82;
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: unset;
   color: #9898A6;
 }
 
-.c2 {
+.c1 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   height: unset;
   padding: 0;
   margin-top: 16px;
@@ -1044,23 +1174,64 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   color: #652CDB;
 }
 
-.c2:not([disabled]):hover,
-.c2:not([disabled]):focus {
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c1:active {
+  background-color: #F78D82;
+  border-color: #F78D82;
+  color: #FFFFFF;
+}
+
+.c1:disabled {
+  background-color: #DBDBE8;
+  border-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
   box-shadow: unset;
   color: #8051E1;
 }
 
-.c2:not([disabled]):active {
+.c1:not([disabled]):active {
   background-color: unset;
   color: #8051E1;
 }
 
-.c2:disabled {
+.c1:disabled {
   background-color: unset;
   color: #9898A6;
 }
 
-.c3 {
+.c2 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   height: unset;
   padding: 0;
   margin-top: 16px;
@@ -1071,38 +1242,50 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   color: #2B9486;
 }
 
-.c3:not([disabled]):hover,
-.c3:not([disabled]):focus {
+.c2:not([disabled]):hover,
+.c2:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c2:active {
+  background-color: #F78D82;
+  border-color: #F78D82;
+  color: #FFFFFF;
+}
+
+.c2:disabled {
+  background-color: #DBDBE8;
+  border-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+}
+
+.c2:not([disabled]):hover,
+.c2:not([disabled]):focus {
   box-shadow: unset;
   color: #3FA99B;
 }
 
-.c3:not([disabled]):active {
+.c2:not([disabled]):active {
   background-color: unset;
   color: #3FA99B;
 }
 
-.c3:disabled {
+.c2:disabled {
   background-color: unset;
   color: #9898A6;
 }
 
 <div>
   <button
-    class="c0 c1"
-  >
-    Button
-  </button>
+    class="c0"
+  />
   <button
-    class="c0 c2"
-  >
-    Button
-  </button>
+    class="c1"
+  />
   <button
-    class="c0 c3"
-  >
-    Button
-  </button>
+    class="c2"
+  />
 </div>
 `;
 
@@ -1123,6 +1306,14 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,
@@ -1169,6 +1360,22 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: unset;
+  padding: 0;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  background-color: unset;
+  border: none;
+  border-radius: 0;
+  color: #F46152;
 }
 
 .c0:not([disabled]):hover,
@@ -1189,39 +1396,26 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
   cursor: not-allowed;
 }
 
-.c1 {
-  height: unset;
-  padding: 0;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  background-color: unset;
-  border: none;
-  border-radius: 0;
-  color: #F46152;
-}
-
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
   box-shadow: unset;
   color: #F78D82;
 }
 
-.c1:not([disabled]):active {
+.c0:not([disabled]):active {
   background-color: unset;
   color: #F78D82;
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: unset;
   color: #9898A6;
 }
 
 <div>
   <button
-    class="c0 c1"
-  >
-    Button
-  </button>
+    class="c0"
+  />
 </div>
 `;
 
@@ -1242,6 +1436,14 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,
@@ -1312,6 +1514,14 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c0:not([disabled]):hover,

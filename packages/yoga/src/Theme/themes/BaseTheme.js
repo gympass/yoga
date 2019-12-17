@@ -10,6 +10,7 @@ const {
   elevations,
   colors: tokenColors,
   borders,
+  fonts,
 } = tokens;
 
 const BaseTheme = ({ primary, secondary, tertiary }) => {
@@ -307,6 +308,9 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       elevation: elevations.small,
       ribbon: {
         radius: radii.circle,
+        font: {
+          size: fontSizes.xsmall,
+        },
       },
       plan: {
         title: {
@@ -394,7 +398,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     },
   };
 
-  return { components, baseFontSize, colors, spacing };
+  return { components, baseFontSize, colors, spacing, fonts };
 };
 
 export default BaseTheme;
