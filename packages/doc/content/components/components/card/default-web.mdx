@@ -1,14 +1,31 @@
 ### Reference
 
-Gympass `<Card />` component can be used to display content related to a single subject.
-The content can consist of multiple elements of varying types and sizes.
+Gympass `<Card />` component can be used to display content related to a single
+subject. The content can consist of multiple elements of varying types and
+sizes.
+
+As it could be seen in most components, the Card has its own compounds:
+
+- `<Card.Header />`
+- `<Card.Content />`
+- `<Card.Actions />`
+
+Also, the Card has the `variant` prop, which reflects the colors provided by our
+theme (primary, secondary, and tertiary).
 
 ### Usage
 
 ```javascript reactLive=true center=true
-<Card style={{ width: 500 }}>
-  <h1>Hello,</h1>
-  <p>This is a Card component, you can use it to display a content.</p>
+<Card style={{ width: 500 }} ribbon={{ text: 'Add a Ribbon, if you want' }}>
+  <Card.Header>
+    <h1>Hello,</h1>
+  </Card.Header>
+  <Card.Content>
+    <p>This is a Card component, you can use it to display a content.</p>
+  </Card.Content>
+  <Card.Actions>
+    <Button.Link>You can add actions as well</Button.Link>
+  </Card.Actions>
 </Card>
 ```
 

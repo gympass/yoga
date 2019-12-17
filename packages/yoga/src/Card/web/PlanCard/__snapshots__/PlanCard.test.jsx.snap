@@ -1,0 +1,627 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] = `
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c2 {
+  display: inline-block;
+  top: 16px;
+  left: 0;
+  margin-left: -16px;
+  margin-bottom: 16px;
+  padding: 4px 12px 4px 16px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  background-color: #F5F5FA;
+  color: #41414A;
+}
+
+.c1 {
+  max-width: 280px;
+  width: 100%;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <span
+      class="c2"
+    >
+      Label
+    </span>
+  </section>
+</div>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ribbon 1`] = `
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c2 {
+  display: inline-block;
+  top: 16px;
+  left: 0;
+  margin-left: -16px;
+  margin-bottom: 16px;
+  padding: 4px 12px 4px 16px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  background-color: #652CDB;
+  color: #FFFFFF;
+}
+
+.c1 {
+  max-width: 280px;
+  width: 100%;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <span
+      class="c2"
+    >
+      Label
+    </span>
+  </section>
+</div>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary ribbon 1`] = `
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c2 {
+  display: inline-block;
+  top: 16px;
+  left: 0;
+  margin-left: -16px;
+  margin-bottom: 16px;
+  padding: 4px 12px 4px 16px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  background-color: #2B9486;
+  color: #FFFFFF;
+}
+
+.c1 {
+  max-width: 280px;
+  width: 100%;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <span
+      class="c2"
+    >
+      Label
+    </span>
+  </section>
+</div>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Content 1`] = `
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1 {
+  max-width: 280px;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  height: 40px;
+  margin: 8px 0 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+}
+
+.c3 {
+  display: block;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.c4 {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <div
+      class=""
+    >
+      <h3
+        class="c2"
+      >
+        Gympass Black for employees with Buddha Spa + Reebook included
+      </h3>
+      <strong
+        class="c3"
+      >
+        U$ 99.90
+      </strong>
+      <span
+        class="c4"
+      >
+        /month
+      </span>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Content 1`] = `
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1 {
+  max-width: 280px;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #652CDB;
+}
+
+.c2 {
+  display: -webkit-box;
+  height: 40px;
+  margin: 8px 0 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+}
+
+.c3 {
+  display: block;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.c4 {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <div
+      class=""
+    >
+      <h3
+        class="c2"
+      >
+        Gympass Black for employees with Buddha Spa + Reebook included
+      </h3>
+      <strong
+        class="c3"
+      >
+        U$ 99.90
+      </strong>
+      <span
+        class="c4"
+      >
+        /month
+      </span>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
+.c6 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c6:not([disabled]):hover,
+.c6:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c6:active {
+  background-color: #F78D82;
+  border-color: #F78D82;
+  color: #FFFFFF;
+}
+
+.c6:disabled {
+  background-color: #DBDBE8;
+  border-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+}
+
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1 {
+  max-width: 280px;
+  width: 100%;
+}
+
+.c2 {
+  display: -webkit-box;
+  height: 40px;
+  margin: 8px 0 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+}
+
+.c3 {
+  display: block;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.c4 {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c5 {
+  display: grid;
+  grid-gap: 8px;
+  padding-top: 8px;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <header
+      class=""
+    >
+      Gympass PlanCard
+    </header>
+    <div
+      class=""
+    >
+      <h3
+        class="c2"
+      >
+        Gympass Black for employees with Buddha Spa + Reebook included
+      </h3>
+      <strong
+        class="c3"
+      >
+        U$ 99.90
+      </strong>
+      <span
+        class="c4"
+      >
+        /month
+      </span>
+    </div>
+    <footer
+      class="c5"
+    >
+      <button
+        class="c6"
+      >
+        should have buttons
+      </button>
+    </footer>
+  </section>
+</div>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`] = `
+.c6 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c6:not([disabled]):hover,
+.c6:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c6:active {
+  background-color: #F78D82;
+  border-color: #F78D82;
+  color: #FFFFFF;
+}
+
+.c6:disabled {
+  background-color: #DBDBE8;
+  border-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+}
+
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1 {
+  max-width: 280px;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #652CDB;
+}
+
+.c2 {
+  display: -webkit-box;
+  height: 40px;
+  margin: 8px 0 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+}
+
+.c3 {
+  display: block;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.c4 {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c5 {
+  display: grid;
+  grid-gap: 8px;
+  padding-top: 8px;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <header
+      class=""
+    >
+      Gympass PlanCard
+    </header>
+    <div
+      class=""
+    >
+      <h3
+        class="c2"
+      >
+        Gympass Black for employees with Buddha Spa + Reebook included
+      </h3>
+      <strong
+        class="c3"
+      >
+        U$ 99.90
+      </strong>
+      <span
+        class="c4"
+      >
+        /month
+      </span>
+    </div>
+    <footer
+      class="c5"
+    >
+      <button
+        class="c6"
+      >
+        should have buttons
+      </button>
+    </footer>
+  </section>
+</div>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`] = `
+.c6 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c6:not([disabled]):hover,
+.c6:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c6:active {
+  background-color: #F78D82;
+  border-color: #F78D82;
+  color: #FFFFFF;
+}
+
+.c6:disabled {
+  background-color: #DBDBE8;
+  border-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+}
+
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1 {
+  max-width: 280px;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #2B9486;
+}
+
+.c2 {
+  display: -webkit-box;
+  height: 40px;
+  margin: 8px 0 12px;
+  font-size: 14px;
+  font-weight: 400;
+  color: inherit;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+}
+
+.c3 {
+  display: block;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.c4 {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c5 {
+  display: grid;
+  grid-gap: 8px;
+  padding-top: 8px;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <header
+      class=""
+    >
+      Gympass PlanCard
+    </header>
+    <div
+      class=""
+    >
+      <h3
+        class="c2"
+      >
+        Gympass Black for employees with Buddha Spa + Reebook included
+      </h3>
+      <strong
+        class="c3"
+      >
+        U$ 99.90
+      </strong>
+      <span
+        class="c4"
+      >
+        /month
+      </span>
+    </div>
+    <footer
+      class="c5"
+    >
+      <button
+        class="c6"
+      >
+        should have buttons
+      </button>
+    </footer>
+  </section>
+</div>
+`;

@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
+.c1 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #F46152;
+  border: 2px solid #F46152;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+}
+
+.c1:active {
+  background-color: #F78D82;
+  border-color: #F78D82;
+  color: #FFFFFF;
+}
+
+.c1:disabled {
+  background-color: #DBDBE8;
+  border-color: #DBDBE8;
+  color: #9898A6;
+  cursor: not-allowed;
+}
+
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+<div>
+  <section
+    class="c0"
+  >
+    <header
+      class=""
+    >
+      Hello World
+    </header>
+    <div
+      class=""
+    >
+      It's fine here
+    </div>
+    <footer
+      class=""
+    >
+      <button
+        class="c1"
+      >
+        Action's children must be Button
+      </button>
+    </footer>
+  </section>
+</div>
+`;

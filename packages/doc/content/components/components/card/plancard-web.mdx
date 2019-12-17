@@ -1,0 +1,30 @@
+### Reference
+
+Gympass `<PlanCard />` component is used to display content related to an user's
+plan.
+
+### Usage
+
+```javascript reactLive=true center=true
+<PlanCard
+  ribbon={{
+    text: 'Label',
+    variant: '',
+  }}
+>
+  <PlanCard.Content
+    title="Gympass Black for employees with Buddha Spa + Reebook included"
+    price="U$ 99.90"
+    period="/month"
+  />
+
+  <PlanCard.Actions>
+    <Button>Subscribe</Button>
+    <Button.Link>See gyms included</Button.Link>
+  </PlanCard.Actions>
+</PlanCard>
+```
+
+### Props
+
+<PropsTable component="PlanCard" platform="web" />
