@@ -61,6 +61,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
           Array [
             Object {
               "color": "#41414A",
+              "fontSize": 12,
             },
           ]
         }
@@ -134,6 +135,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ri
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontSize": 12,
             },
           ]
         }
@@ -208,6 +210,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontSize": 12,
             },
           ]
         }
@@ -257,6 +260,40 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
     }
     variant=""
   >
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-start",
+            "backgroundColor": "#F5F5FA",
+            "borderBottomRightRadius": 9999,
+            "borderTopRightRadius": 9999,
+            "color": "#41414A",
+            "marginBottom": 16,
+            "marginLeft": -16,
+            "paddingBottom": 4,
+            "paddingLeft": 16,
+            "paddingRight": 12,
+            "paddingTop": 4,
+          },
+        ]
+      }
+      variant=""
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+              "fontSize": 12,
+            },
+          ]
+        }
+        variant=""
+      >
+        
+      </Text>
+    </View>
     <View
       style={
         Array [
@@ -358,6 +395,40 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
     <View
       style={
         Array [
+          Object {
+            "alignSelf": "flex-start",
+            "backgroundColor": "#F5F5FA",
+            "borderBottomRightRadius": 9999,
+            "borderTopRightRadius": 9999,
+            "color": "#41414A",
+            "marginBottom": 16,
+            "marginLeft": -16,
+            "paddingBottom": 4,
+            "paddingLeft": 16,
+            "paddingRight": 12,
+            "paddingTop": 4,
+          },
+        ]
+      }
+      variant=""
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+              "fontSize": 12,
+            },
+          ]
+        }
+        variant=""
+      >
+        
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
           Object {},
         ]
       }
@@ -452,6 +523,40 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
     }
     variant=""
   >
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-start",
+            "backgroundColor": "#F5F5FA",
+            "borderBottomRightRadius": 9999,
+            "borderTopRightRadius": 9999,
+            "color": "#41414A",
+            "marginBottom": 16,
+            "marginLeft": -16,
+            "paddingBottom": 4,
+            "paddingLeft": 16,
+            "paddingRight": 12,
+            "paddingTop": 4,
+          },
+        ]
+      }
+      variant=""
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+              "fontSize": 12,
+            },
+          ]
+        }
+        variant=""
+      >
+        
+      </Text>
+    </View>
     <View
       style={
         Array [
@@ -626,6 +731,40 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
     <View
       style={
         Array [
+          Object {
+            "alignSelf": "flex-start",
+            "backgroundColor": "#F5F5FA",
+            "borderBottomRightRadius": 9999,
+            "borderTopRightRadius": 9999,
+            "color": "#41414A",
+            "marginBottom": 16,
+            "marginLeft": -16,
+            "paddingBottom": 4,
+            "paddingLeft": 16,
+            "paddingRight": 12,
+            "paddingTop": 4,
+          },
+        ]
+      }
+      variant=""
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+              "fontSize": 12,
+            },
+          ]
+        }
+        variant=""
+      >
+        
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
           Object {},
         ]
       }
@@ -794,6 +933,40 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
     }
     variant="tertiary"
   >
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-start",
+            "backgroundColor": "#F5F5FA",
+            "borderBottomRightRadius": 9999,
+            "borderTopRightRadius": 9999,
+            "color": "#41414A",
+            "marginBottom": 16,
+            "marginLeft": -16,
+            "paddingBottom": 4,
+            "paddingLeft": 16,
+            "paddingRight": 12,
+            "paddingTop": 4,
+          },
+        ]
+      }
+      variant=""
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+              "fontSize": 12,
+            },
+          ]
+        }
+        variant=""
+      >
+        
+      </Text>
+    </View>
     <View
       style={
         Array [

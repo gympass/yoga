@@ -17,6 +17,14 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c1:not([disabled]):hover,

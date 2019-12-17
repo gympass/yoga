@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf } from 'prop-types';
+import { oneOf, shape, string } from 'prop-types';
 
 import Card from '../Card';
 
@@ -29,11 +29,21 @@ const Plan = styled(Card)`
 const PlanCard = ({ ...rest }) => <Plan {...rest} />;
 
 PlanCard.propTypes = {
+  /** text: the content inside the Card Ribbon
+   * variant: style the ribbon following the theme (primary, secondary, tertiary) */
+  ribbon: shape({
+    text: string,
+    variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
+  }),
   /** style the card following the theme (primary, secondary, tertiary) */
   variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
 };
 
 PlanCard.defaultProps = {
+  ribbon: {
+    text: '',
+    variant: '',
+  },
   variant: '',
 };
 PlanCard.displayName = 'PlanCard';

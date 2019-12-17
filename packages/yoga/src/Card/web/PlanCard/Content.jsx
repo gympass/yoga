@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string } from 'prop-types';
+import { string, node } from 'prop-types';
 
 import Content from '../Card/Content';
 
@@ -23,6 +23,7 @@ const Title = styled.h3`
 
   color: inherit;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   text-overflow: -o-ellipsis-lastline;
@@ -66,11 +67,12 @@ const Period = styled.span`
   `}
 `;
 
-const PlanCardContent = ({ title, price, period }) => (
-  <Content>
+const PlanCardContent = ({ title, price, period, children, ...rest }) => (
+  <Content {...rest}>
     {title && <Title>{title}</Title>}
     {price && <Price>{price}</Price>}
     {period && <Period>{period}</Period>}
+    {children}
   </Content>
 );
 
@@ -78,6 +80,11 @@ PlanCardContent.propTypes = {
   title: string.isRequired,
   price: string.isRequired,
   period: string.isRequired,
+  children: node,
+};
+
+PlanCardContent.defaultProps = {
+  children: null,
 };
 
 PlanCardContent.displayName = 'PlanCard.Content';

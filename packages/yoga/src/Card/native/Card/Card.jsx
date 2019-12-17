@@ -58,11 +58,14 @@ const RibbonText = styled.Text`
     variant,
     theme: {
       yoga: {
+        components: { card },
         colors: { white, dark },
       },
     },
   }) => `
     color: ${variant ? white : dark};
+
+    font-size: ${card.ribbon.font.size}px;
   `}
 `;
 
