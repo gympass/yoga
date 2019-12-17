@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.7.0...@gympass/yoga-doc@0.7.1) (2019-12-17)
+
+### Bug Fixes
+
+- **yoga/doc:** fix active links and Buttons definitions ([41ac4f5](https://github.com/Gympass/yoga/commit/41ac4f51e6f07adb3cddf44f0bdf565a4e2c9dda))
+
 # [0.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.6.6...@gympass/yoga-doc@0.7.0) (2019-12-17)
 
 ### Features
