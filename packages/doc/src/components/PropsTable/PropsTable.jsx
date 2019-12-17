@@ -63,7 +63,7 @@ const StyledTable = styled.table`
 
           &:nth-child(3),
           &:last-child {
-            color: ${primaryPallete[7]};
+            color: ${primaryPallete[3]};
           }
         }
       }

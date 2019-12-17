@@ -17,17 +17,20 @@ const getMetaData = (isComponent, prefix) => {
     allComponentMetadata: { edges },
   } = DescriptionQuery();
 
-  const filteredEdges = edges.filter(({ node: { displayName } }) => {
-    const [, component, compound = ''] = window.location.pathname
-      .split('/')
-      .filter(path => (prefix ? path && path !== 'yoga' : path));
+  const [, component, compound = ''] = window.location.pathname
+    .split('/')
+    .filter(path => (prefix ? path && path !== 'yoga' : path));
 
+  const filteredEdges = edges.filter(({ node: { displayName } }) => {
     const componentName = `${component}${
       compound === 'default' ? '' : compound
     }`;
 
+    const normalizedDisplayName = displayName.replace('.', '').toLowerCase();
+
     return (
-      displayName.replace('.', '').toLowerCase() === componentName.toLowerCase()
+      normalizedDisplayName === componentName.toLowerCase() ||
+      normalizedDisplayName === compound.toLowerCase()
     );
   });
 

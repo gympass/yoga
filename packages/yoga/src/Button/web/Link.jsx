@@ -2,12 +2,13 @@ import React from 'react';
 import { oneOf, bool } from 'prop-types';
 import styled from 'styled-components';
 
-import Button from './Button';
+import StyledButton from './StyledButton';
 
-const Link = styled(Button)`
+const Link = styled(StyledButton)`
   ${({
     inverted,
     variant,
+    full,
     theme: {
       yoga: {
         colors: { white, gray, [variant]: color },
@@ -55,6 +56,8 @@ const Link = styled(Button)`
       `
       : ''
   }
+
+  ${full ? 'width: 100%' : ''}
 `}
 `;
 

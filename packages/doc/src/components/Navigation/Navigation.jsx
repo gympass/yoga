@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     grid-area: Navigation;
-    height: 100%;
+    height: auto;
     width: 250px;
 
     span {
@@ -43,7 +43,7 @@ const Wrapper = styled.div`
 `;
 
 const Nav = styled.div`
-  height: calc(100vh - 140px);
+  height: auto;
   padding: 30px;
   width: 100%;
 
@@ -66,7 +66,7 @@ const AnchorLink = styled(Link)`
     level,
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { gray: grayPallete, primary: primaryPallete },
       },
     },
   }) => `
@@ -78,6 +78,10 @@ const AnchorLink = styled(Link)`
     text-indent: calc(15px * ${level});
     transition: all 0.3s;
     width: 100%;
+
+    :hover {
+      color: ${primaryPallete[3]};
+    }
   `};
 `;
 
@@ -94,7 +98,7 @@ const StyledListItem = styled.li`
       ${
         active
           ? `
-          color: ${primaryPallete[7]};
+          color: ${primaryPallete[3]};
             `
           : ''
       }

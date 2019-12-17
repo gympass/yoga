@@ -51,6 +51,8 @@ const Ribbon = styled.span`
 
   background-color: ${variant ? color[3] : gray[1]};
   color: ${variant ? white : dark};
+
+  font-size: ${card.ribbon.font.size}px;
   `}
 `;
 
