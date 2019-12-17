@@ -15,7 +15,7 @@ describe('<PlanCard />', () => {
               price="U$ 99.90"
               period="/month"
             >
-              content&apos;s children isn&apos;t rendered
+              content&apos;s children is rendered
             </PlanCard.Content>
             <PlanCard.Actions>
               <Button>should have buttons</Button>
@@ -36,7 +36,7 @@ describe('<PlanCard />', () => {
               price="U$ 99.90"
               period="/month"
             >
-              content&apos;s children isn&apos;t rendered
+              content&apos;s children is rendered
             </PlanCard.Content>
             <PlanCard.Actions>
               <Button>should have buttons</Button>
@@ -57,7 +57,7 @@ describe('<PlanCard />', () => {
               price="U$ 99.90"
               period="/month"
             >
-              content&apos;s children isn&apos;t rendered
+              content&apos;s children is rendered
             </PlanCard.Content>
             <PlanCard.Actions>
               <Button>should have buttons</Button>
