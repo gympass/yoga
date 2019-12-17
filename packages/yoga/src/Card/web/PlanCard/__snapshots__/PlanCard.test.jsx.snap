@@ -19,6 +19,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
   border-bottom-right-radius: 9999px;
   background-color: #F5F5FA;
   color: #41414A;
+  font-size: 12px;
 }
 
 .c1 {
@@ -58,6 +59,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ri
   border-bottom-right-radius: 9999px;
   background-color: #652CDB;
   color: #FFFFFF;
+  font-size: 12px;
 }
 
 .c1 {
@@ -97,6 +99,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
   border-bottom-right-radius: 9999px;
   background-color: #2B9486;
   color: #FFFFFF;
+  font-size: 12px;
 }
 
 .c1 {
@@ -125,12 +128,26 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
+.c2 {
+  display: inline-block;
+  top: 16px;
+  left: 0;
+  margin-left: -16px;
+  margin-bottom: 16px;
+  padding: 4px 12px 4px 16px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  background-color: #F5F5FA;
+  color: #41414A;
+  font-size: 12px;
+}
+
 .c1 {
   max-width: 280px;
   width: 100%;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   height: 40px;
   margin: 8px 0 12px;
@@ -138,19 +155,20 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
   font-weight: 400;
   color: inherit;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   text-overflow: -o-ellipsis-lastline;
 }
 
-.c3 {
+.c4 {
   display: block;
   margin-top: 12px;
   font-size: 20px;
   font-weight: 700;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
@@ -161,21 +179,24 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
   <section
     class="c0 c1"
   >
+    <span
+      class="c2"
+    />
     <div
       class=""
     >
       <h3
-        class="c2"
+        class="c3"
       >
         Gympass Black for employees with Buddha Spa + Reebook included
       </h3>
       <strong
-        class="c3"
+        class="c4"
       >
         U$ 99.90
       </strong>
       <span
-        class="c4"
+        class="c5"
       >
         /month
       </span>
@@ -192,6 +213,20 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
+.c2 {
+  display: inline-block;
+  top: 16px;
+  left: 0;
+  margin-left: -16px;
+  margin-bottom: 16px;
+  padding: 4px 12px 4px 16px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  background-color: #F5F5FA;
+  color: #41414A;
+  font-size: 12px;
+}
+
 .c1 {
   max-width: 280px;
   width: 100%;
@@ -199,7 +234,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
   background-color: #652CDB;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   height: 40px;
   margin: 8px 0 12px;
@@ -207,19 +242,20 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
   font-weight: 400;
   color: inherit;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   text-overflow: -o-ellipsis-lastline;
 }
 
-.c3 {
+.c4 {
   display: block;
   margin-top: 12px;
   font-size: 20px;
   font-weight: 700;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
@@ -230,21 +266,24 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
   <section
     class="c0 c1"
   >
+    <span
+      class="c2"
+    />
     <div
       class=""
     >
       <h3
-        class="c2"
+        class="c3"
       >
         Gympass Black for employees with Buddha Spa + Reebook included
       </h3>
       <strong
-        class="c3"
+        class="c4"
       >
         U$ 99.90
       </strong>
       <span
-        class="c4"
+        class="c5"
       >
         /month
       </span>
@@ -254,7 +293,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
 `;
 
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
-.c6 {
+.c7 {
   box-sizing: border-box;
   outline: none;
   -webkit-transition: all 0.2s;
@@ -270,20 +309,28 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-.c6:not([disabled]):hover,
-.c6:not([disabled]):focus {
+.c7:not([disabled]):hover,
+.c7:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(244,97,82,0.45);
 }
 
-.c6:active {
+.c7:active {
   background-color: #F78D82;
   border-color: #F78D82;
   color: #FFFFFF;
 }
 
-.c6:disabled {
+.c7:disabled {
   background-color: #DBDBE8;
   border-color: #DBDBE8;
   color: #9898A6;
@@ -297,12 +344,26 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
+.c2 {
+  display: inline-block;
+  top: 16px;
+  left: 0;
+  margin-left: -16px;
+  margin-bottom: 16px;
+  padding: 4px 12px 4px 16px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  background-color: #F5F5FA;
+  color: #41414A;
+  font-size: 12px;
+}
+
 .c1 {
   max-width: 280px;
   width: 100%;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   height: 40px;
   margin: 8px 0 12px;
@@ -310,35 +371,41 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-weight: 400;
   color: inherit;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   text-overflow: -o-ellipsis-lastline;
 }
 
-.c3 {
+.c4 {
   display: block;
   margin-top: 12px;
   font-size: 20px;
   font-weight: 700;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
   font-weight: 400;
 }
 
-.c5 {
-  display: grid;
-  grid-gap: 8px;
+.c6 {
   padding-top: 8px;
+}
+
+.c6 *:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 <div>
   <section
     class="c0 c1"
   >
+    <span
+      class="c2"
+    />
     <header
       class=""
     >
@@ -348,26 +415,27 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       class=""
     >
       <h3
-        class="c2"
+        class="c3"
       >
         Gympass Black for employees with Buddha Spa + Reebook included
       </h3>
       <strong
-        class="c3"
+        class="c4"
       >
         U$ 99.90
       </strong>
       <span
-        class="c4"
+        class="c5"
       >
         /month
       </span>
+      content's children isn't rendered
     </div>
     <footer
-      class="c5"
+      class="c6"
     >
       <button
-        class="c6"
+        class="c7"
       >
         should have buttons
       </button>
@@ -377,7 +445,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 `;
 
 exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`] = `
-.c6 {
+.c7 {
   box-sizing: border-box;
   outline: none;
   -webkit-transition: all 0.2s;
@@ -393,20 +461,28 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-.c6:not([disabled]):hover,
-.c6:not([disabled]):focus {
+.c7:not([disabled]):hover,
+.c7:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(244,97,82,0.45);
 }
 
-.c6:active {
+.c7:active {
   background-color: #F78D82;
   border-color: #F78D82;
   color: #FFFFFF;
 }
 
-.c6:disabled {
+.c7:disabled {
   background-color: #DBDBE8;
   border-color: #DBDBE8;
   color: #9898A6;
@@ -418,6 +494,20 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
   border-radius: 8px;
   background-color: #FFFFFF;
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c2 {
+  display: inline-block;
+  top: 16px;
+  left: 0;
+  margin-left: -16px;
+  margin-bottom: 16px;
+  padding: 4px 12px 4px 16px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  background-color: #F5F5FA;
+  color: #41414A;
+  font-size: 12px;
 }
 
 .c1 {
@@ -427,7 +517,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
   background-color: #652CDB;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   height: 40px;
   margin: 8px 0 12px;
@@ -435,35 +525,41 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
   font-weight: 400;
   color: inherit;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   text-overflow: -o-ellipsis-lastline;
 }
 
-.c3 {
+.c4 {
   display: block;
   margin-top: 12px;
   font-size: 20px;
   font-weight: 700;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
   font-weight: 400;
 }
 
-.c5 {
-  display: grid;
-  grid-gap: 8px;
+.c6 {
   padding-top: 8px;
+}
+
+.c6 *:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 <div>
   <section
     class="c0 c1"
   >
+    <span
+      class="c2"
+    />
     <header
       class=""
     >
@@ -473,26 +569,27 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
       class=""
     >
       <h3
-        class="c2"
+        class="c3"
       >
         Gympass Black for employees with Buddha Spa + Reebook included
       </h3>
       <strong
-        class="c3"
+        class="c4"
       >
         U$ 99.90
       </strong>
       <span
-        class="c4"
+        class="c5"
       >
         /month
       </span>
+      content's children isn't rendered
     </div>
     <footer
-      class="c5"
+      class="c6"
     >
       <button
-        class="c6"
+        class="c7"
       >
         should have buttons
       </button>
@@ -502,7 +599,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
 `;
 
 exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`] = `
-.c6 {
+.c7 {
   box-sizing: border-box;
   outline: none;
   -webkit-transition: all 0.2s;
@@ -518,20 +615,28 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
+  font-family: Open Sans;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
-.c6:not([disabled]):hover,
-.c6:not([disabled]):focus {
+.c7:not([disabled]):hover,
+.c7:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(244,97,82,0.45);
 }
 
-.c6:active {
+.c7:active {
   background-color: #F78D82;
   border-color: #F78D82;
   color: #FFFFFF;
 }
 
-.c6:disabled {
+.c7:disabled {
   background-color: #DBDBE8;
   border-color: #DBDBE8;
   color: #9898A6;
@@ -545,6 +650,20 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
+.c2 {
+  display: inline-block;
+  top: 16px;
+  left: 0;
+  margin-left: -16px;
+  margin-bottom: 16px;
+  padding: 4px 12px 4px 16px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  background-color: #F5F5FA;
+  color: #41414A;
+  font-size: 12px;
+}
+
 .c1 {
   max-width: 280px;
   width: 100%;
@@ -552,7 +671,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   background-color: #2B9486;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   height: 40px;
   margin: 8px 0 12px;
@@ -560,35 +679,41 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   font-weight: 400;
   color: inherit;
   -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   text-overflow: -o-ellipsis-lastline;
 }
 
-.c3 {
+.c4 {
   display: block;
   margin-top: 12px;
   font-size: 20px;
   font-weight: 700;
 }
 
-.c4 {
+.c5 {
   display: block;
   margin-bottom: 8px;
   font-size: 14px;
   font-weight: 400;
 }
 
-.c5 {
-  display: grid;
-  grid-gap: 8px;
+.c6 {
   padding-top: 8px;
+}
+
+.c6 *:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 <div>
   <section
     class="c0 c1"
   >
+    <span
+      class="c2"
+    />
     <header
       class=""
     >
@@ -598,26 +723,27 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
       class=""
     >
       <h3
-        class="c2"
+        class="c3"
       >
         Gympass Black for employees with Buddha Spa + Reebook included
       </h3>
       <strong
-        class="c3"
+        class="c4"
       >
         U$ 99.90
       </strong>
       <span
-        class="c4"
+        class="c5"
       >
         /month
       </span>
+      content's children isn't rendered
     </div>
     <footer
-      class="c5"
+      class="c6"
     >
       <button
-        class="c6"
+        class="c7"
       >
         should have buttons
       </button>

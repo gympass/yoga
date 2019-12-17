@@ -29,7 +29,7 @@ const MainWrapper = styled.div`
   }) => `
     height: 100%;
     a[target] {
-      color: ${primaryPallete[7]};
+      color: ${primaryPallete[3]};
       text-decoration: none;
     }
   `}
@@ -85,8 +85,8 @@ const HeaderLink = styled(Link).attrs({
     height: 100%;
 
     &.active {
-      border-bottom-color: ${primary[7]};
-      color: ${primary[7]};
+      border-bottom-color: ${primary[3]};
+      color: ${primary[3]};
     }
   `,
 );
@@ -141,9 +141,7 @@ const Layout = ({
             <HeaderLink to="/guidelines/product-content/">
               Guidelines
             </HeaderLink>
-            <HeaderLink to="/components/getting-started/">
-              Components
-            </HeaderLink>
+            <HeaderLink to="/components">Components</HeaderLink>
             <ThemeConfig
               theme={theme}
               locale={locale}

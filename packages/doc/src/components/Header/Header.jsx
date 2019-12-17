@@ -66,7 +66,7 @@ const YogaLogo = styled(yoga)`
     },
   }) => `
     path {
-      fill: ${primaryPallete[7]};
+      fill: ${primaryPallete[3]};
       transition: all 0.3s ease-in-out;
     }
 
