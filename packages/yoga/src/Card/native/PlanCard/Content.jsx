@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import { string } from 'prop-types';
+import { string, node } from 'prop-types';
 
 import Content from '../Card/Content';
 import PlanCardContext from './PlanCardContext';
@@ -69,7 +69,7 @@ const Period = styled.Text`
   `}
 `;
 
-const PlanCardContent = ({ title, price, period }) => {
+const PlanCardContent = ({ title, price, period, children }) => {
   const { variant } = useContext(PlanCardContext);
 
   return (
@@ -77,6 +77,8 @@ const PlanCardContent = ({ title, price, period }) => {
       {title && <Title variant={variant}>{title}</Title>}
       {price && <Price variant={variant}>{price}</Price>}
       {period && <Period variant={variant}>{period}</Period>}
+
+      {children}
     </Content>
   );
 };
@@ -85,6 +87,11 @@ PlanCardContent.propTypes = {
   title: string.isRequired,
   price: string.isRequired,
   period: string.isRequired,
+  children: node,
+};
+
+PlanCardContent.defaultProps = {
+  children: null,
 };
 
 PlanCardContent.displayName = 'PlanCard.Content';
