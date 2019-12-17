@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.2.1...@gympass/yoga@1.2.2) (2019-12-17)
+
+### Bug Fixes
+
+- **plancard:** planCard.Content now render its children (Native) ([20c999e](https://github.com/Gympass/yoga/commit/20c999e7c47ddf0092a8985ba6efb0fd4e83f129))
+
 ## [1.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.2.0...@gympass/yoga@1.2.1) (2019-12-17)
 
 ### Bug Fixes
