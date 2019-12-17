@@ -1,3 +1,3 @@
-import Card from './web';
+import { Card, PlanCard } from './web';
 
-export default Card;
+export { Card, PlanCard };

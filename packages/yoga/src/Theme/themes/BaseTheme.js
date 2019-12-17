@@ -305,6 +305,39 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       },
       radii: radii.rounded,
       elevation: elevations.small,
+      ribbon: {
+        radius: radii.circle,
+      },
+      plan: {
+        title: {
+          margin: {
+            top: spacing.xsmall,
+            bottom: spacing.small,
+          },
+          font: {
+            size: fontSizes.small,
+            weight: fontWeights.regular,
+          },
+        },
+        price: {
+          margin: {
+            top: spacing.small,
+          },
+          font: {
+            size: fontSizes.large,
+            weight: fontWeights.bold,
+          },
+        },
+        period: {
+          margin: {
+            bottom: spacing.xsmall,
+          },
+          font: {
+            size: fontSizes.small,
+            weight: fontWeights.regular,
+          },
+        },
+      },
     },
     checkbox: {
       margin: {

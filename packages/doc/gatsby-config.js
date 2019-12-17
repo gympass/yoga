@@ -67,7 +67,7 @@ const plugins = [
         id: 'bzu7qrx',
       },
       google: {
-        families: ['Open Sans'],
+        families: ['Open Sans:400,600,700'],
       },
     },
   },

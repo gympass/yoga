@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import ThemeProvider from '../../Theme';
-import Card from './Card';
+import { ThemeProvider, Button } from '../../..';
+import Card from '.';
 
 describe('<Card />', () => {
   describe('Snapshots', () => {
@@ -9,7 +9,11 @@ describe('<Card />', () => {
       const { container } = render(
         <ThemeProvider>
           <Card>
-            <h1>Hello World</h1>
+            <Card.Header>Hello World</Card.Header>
+            <Card.Content>It&apos;s fine here</Card.Content>
+            <Card.Actions>
+              <Button>Action&apos;s children must be Button</Button>
+            </Card.Actions>
           </Card>
         </ThemeProvider>,
       );

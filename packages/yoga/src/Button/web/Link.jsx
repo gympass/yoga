@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 import Button from './Button';
 
-const Link = styled(Button)(
-  ({
+const Link = styled(Button)`
+  ${({
     inverted,
     variant,
     theme: {
@@ -55,8 +55,8 @@ const Link = styled(Button)(
       `
       : ''
   }
-`,
-);
+`}
+`;
 
 const ButtonLink = props => <Link {...props} />;
 
