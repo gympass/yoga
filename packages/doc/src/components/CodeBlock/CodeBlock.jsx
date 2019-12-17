@@ -203,7 +203,7 @@ const CodeBlock = ({ children, reactLive, center }) => {
           scope={scope}
           theme={githubTheme}
         >
-          <Preview id="preview">
+          <Preview>
             <Toolbar>
               <ToolbarIconButton title="Open in CodeSandbox">
                 <CodeSandboxButton code={code} />
