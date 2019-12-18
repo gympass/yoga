@@ -1,4 +1,3 @@
-import React from 'react';
 import { number } from 'prop-types';
 import styled from 'styled-components';
 import tokens from '@gympass/yoga-tokens';
@@ -16,6 +15,14 @@ const columnPosition = (
     xlarge = large,
     xxlarge = xlarge,
     xxxlarge = xxlarge,
+    'xxsmall-offset': xxsmallOffset,
+    'xsmall-offset': xsmallOffset = xxsmallOffset,
+    'small-offset': smallOffset = xsmallOffset,
+    'medium-offset': mediumOffset = smallOffset,
+    'large-offset': largeOffset = mediumOffset,
+    'xlarge-offset': xlargeOffset = largeOffset,
+    'xxlarge-offset': xxlargeOffset = xlargeOffset,
+    'xxxlarge-offset': xxxlargeOffset = xxlargeOffset,
   },
   breakpoint,
 ) => {
@@ -24,33 +31,41 @@ const columnPosition = (
   const screenDefinitions = {
     xxsmall: {
       size: xxsmall,
+      offset: xxsmallOffset,
     },
     xsmall: {
       size: xsmall,
+      offset: xsmallOffset,
     },
     small: {
       size: small,
+      offset: smallOffset,
     },
     medium: {
       size: medium,
+      offset: xxsmallOffset,
     },
     large: {
       size: large,
+      offset: xxsmallOffset,
     },
     xlarge: {
       size: xlarge,
+      offset: xxsmallOffset,
     },
     xxlarge: {
       size: xxlarge,
+      offset: xxsmallOffset,
     },
     xxxlarge: {
       size: xxxlarge,
+      offset: xxsmallOffset,
     },
   };
 
-  const { size } = screenDefinitions[breakpoint];
+  const { size, offset } = screenDefinitions[breakpoint];
 
-  return q`grid-column: span ${size || 12};`;
+  return q`grid-column: ${offset ? `${offset + 1}/` : ''} span ${size || 12};`;
 };
 
 const Col = styled.div`
@@ -78,6 +93,33 @@ Col.propTypes = {
   xlarge: number,
   xxlarge: number,
   xxxlarge: number,
+  'xxsmall-offset': number,
+  'xsmall-offset': number,
+  'small-offset': number,
+  'medium-offset': number,
+  'large-offset': number,
+  'xlarge-offset': number,
+  'xxlarge-offset': number,
+  'xxxlarge-offset': number,
+};
+
+Col.defaultProps = {
+  xxsmall: undefined,
+  xsmall: undefined,
+  small: undefined,
+  medium: undefined,
+  large: undefined,
+  xlarge: undefined,
+  xxlarge: undefined,
+  xxxlarge: undefined,
+  'xxsmall-offset': undefined,
+  'xsmall-offset': undefined,
+  'small-offset': undefined,
+  'medium-offset': undefined,
+  'large-offset': undefined,
+  'xlarge-offset': undefined,
+  'xxlarge-offset': undefined,
+  'xxxlarge-offset': undefined,
 };
 
 export default Col;
