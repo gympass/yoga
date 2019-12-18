@@ -196,26 +196,24 @@ ListItem.propTypes = {
   prefix: bool.isRequired,
 };
 
-const List = ({ tree, level, toggleMenu, prefix }) => {
-  return (
-    <StyledList>
-      {Object.values(tree)
-        .sort((t1, t2) => (t1.order > t2.order ? 1 : -1))
-        .map(({ title, url, linkable, order, ...childs }) => (
-          <ListItem
-            key={title}
-            title={title}
-            url={url}
-            linkable={linkable}
-            childs={childs}
-            level={level}
-            toggleMenu={toggleMenu}
-            prefix={prefix}
-          />
-        ))}
-    </StyledList>
-  );
-};
+const List = ({ tree, level, toggleMenu, prefix }) => (
+  <StyledList>
+    {Object.values(tree)
+      .sort((t1, t2) => (t1.order > t2.order ? 1 : -1))
+      .map(({ title, url, linkable, order, ...childs }) => (
+        <ListItem
+          key={title}
+          title={title}
+          url={url}
+          linkable={linkable}
+          childs={childs}
+          level={level}
+          toggleMenu={toggleMenu}
+          prefix={prefix}
+        />
+      ))}
+  </StyledList>
+);
 
 List.propTypes = {
   tree: shape({}).isRequired,
