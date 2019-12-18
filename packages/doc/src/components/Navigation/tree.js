@@ -20,7 +20,7 @@ const createObjectNesting = (routes, { title, url, linkable, order }) => {
 const createTree = items => {
   const filteredItems = items.filter(item => item);
 
-  let allRoutes = [];
+  let allRoutes = {};
 
   filteredItems.forEach(({ title, url, linkable, order }) => {
     const explodedUrl = url.split('/').filter(item => item);
