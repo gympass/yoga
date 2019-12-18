@@ -1,3 +1,3 @@
-import { Container, Row, Col } from './web';
+import { Container, Row, Col, Hide } from './web';
 
-export { Container, Row, Col };
+export { Container, Row, Col, Hide };
