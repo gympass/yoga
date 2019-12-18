@@ -16,6 +16,7 @@ import ThemeConfig from './ThemeConfig';
 import GlobalStyle from './GlobalStyle';
 import Redirect from './Redirect';
 import Tokens from './Tokens';
+import Img from './Img';
 
 export {
   CodeBlock,
@@ -37,4 +38,5 @@ export {
   GlobalStyle,
   Redirect,
   Tokens,
+  Img,
 };
