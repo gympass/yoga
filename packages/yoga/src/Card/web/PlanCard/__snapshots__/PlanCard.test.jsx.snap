@@ -429,7 +429,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       >
         /month
       </span>
-      content's children isn't rendered
+      content's children is rendered
     </div>
     <footer
       class="c6"
@@ -583,7 +583,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
       >
         /month
       </span>
-      content's children isn't rendered
+      content's children is rendered
     </div>
     <footer
       class="c6"
@@ -737,7 +737,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
       >
         /month
       </span>
-      content's children isn't rendered
+      content's children is rendered
     </div>
     <footer
       class="c6"
