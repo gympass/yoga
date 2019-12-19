@@ -29,15 +29,15 @@ const Wrapper = styled.div`
 
     @media (max-width: 900px) {
       position: fixed;
+      display: ${opened ? 'block' : 'none'};
       top: 72px;
       left: 0;
-      z-index: 3;
 
-      display: ${opened ? 'block' : 'none'};
       width: 100%;
-      padding-bottom: 68px;
-
+      height: calc(100vh - 70px);
+      
       overflow: auto;
+      z-index: 3;
     }
   `};
 `;
@@ -161,12 +161,10 @@ const ListItem = ({
           if (hasChild) {
             setOpened(!opened);
           }
-
           if (filteredUrl !== pathname && linkable) {
             navigate(filteredUrl);
+            toggleMenu(false);
           }
-
-          toggleMenu(false);
         }}
       >
         {title}{' '}
