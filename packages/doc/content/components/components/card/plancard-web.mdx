@@ -5,22 +5,63 @@ plan.
 
 ### Usage
 
+#### Simple
+
 ```javascript reactLive=true center=true
 <PlanCard
   ribbon={{
-    text: 'Label',
-    variant: '',
+    text: 'Tag Label',
   }}
 >
   <PlanCard.Content
     title="Gympass Black for employees with Buddha Spa + Reebook included"
-    price="U$ 99.90"
+    price="US$99.90"
     period="/month"
   />
 
   <PlanCard.Actions>
-    <Button>Subscribe</Button>
-    <Button.Link>See gyms included</Button.Link>
+    <Button.Link variant="secondary">See gyms included</Button.Link>
+  </PlanCard.Actions>
+</PlanCard>
+```
+
+#### Ribbon variant
+
+```javascript reactLive=true center=true
+<PlanCard
+  ribbon={{
+    text: 'Medium Label',
+    variant: 'secondary',
+  }}
+>
+  <PlanCard.Content
+    title="Gympass Black for employees with Buddha Spa + Reebook included"
+    price="US$129.90"
+    period="/month"
+  />
+
+  <PlanCard.Actions>
+    <Button.Link variant="secondary">See gyms included</Button.Link>
+  </PlanCard.Actions>
+</PlanCard>
+```
+
+#### PlanCard variant
+
+```javascript reactLive=true center=true
+<PlanCard
+  ribbon={{
+    text: 'Super large label in french',
+  }}
+  variant="secondary"
+>
+  <PlanCard.Content
+    title="Gympass Black for employees with Buddha Spa + Reebook included"
+    price="US$299.90"
+    period="/month"
+  />
+  <PlanCard.Actions>
+    <Button.Link inverted>See gyms included</Button.Link>
   </PlanCard.Actions>
 </PlanCard>
 ```

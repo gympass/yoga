@@ -15,6 +15,7 @@ import {
   Redirect,
   Summary,
   Tokens,
+  Img,
 } from 'components';
 
 const customComponents = prefix => ({
@@ -26,6 +27,7 @@ const customComponents = prefix => ({
   Tab: props => <Tab {...props} />,
   PropsTable,
   ExpoSnack,
+  img: props => <Img {...props} prefix={prefix} />,
   Redirect: props => <Redirect {...props} />,
   Tokens: props => <Tokens {...props} />,
   TokensColors: props => <Tokens.Colors {...props} />,
@@ -35,7 +37,7 @@ const customComponents = prefix => ({
 
 const Wrapper = styled.div`
   display: flex;
-  height: 100%;
+  min-height: calc(100vh - 140px);
   grid-area: Documentation;
   padding: 30px 0 30px 100px;
 

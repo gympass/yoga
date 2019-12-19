@@ -621,6 +621,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       >
         /month
       </Text>
+      content's children is rendered
     </View>
     <View
       style={
@@ -826,6 +827,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
       >
         /month
       </Text>
+      content's children is rendered
     </View>
     <View
       style={
@@ -1031,6 +1033,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
       >
         /month
       </Text>
+      content's children is rendered
     </View>
     <View
       style={
