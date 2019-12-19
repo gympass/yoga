@@ -162,7 +162,6 @@ const ListItem = ({
             setOpened(!opened);
           }
           if (filteredUrl !== pathname && linkable) {
-            console.log('TCL: filteredUrl', filteredUrl);
             navigate(filteredUrl);
             toggleMenu(false);
           }
