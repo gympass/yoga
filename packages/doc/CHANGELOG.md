@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.7.3...@gympass/yoga-doc@0.7.4) (2019-12-19)
+
+### Bug Fixes
+
+- **yoga/doc:** fix navigation scroll bug and add writters contact email ([dc1cf31](https://github.com/Gympass/yoga/commit/dc1cf3116994f979302a843b6d93c7c5d9c0289b))
+
 ## [0.7.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.7.2...@gympass/yoga-doc@0.7.3) (2019-12-19)
 
 **Note:** Version bump only for package @gympass/yoga-doc
