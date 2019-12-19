@@ -48,13 +48,14 @@ export const pageQuery = graphql`
         metaDescription
       }
     }
-    allMdx(filter: { frontmatter: { metaDescription: { ne: null } } }) {
+    allMdx(filter: { frontmatter: { title: { ne: "" } } }) {
       edges {
         node {
           fields {
             slug
             title
             linkable
+            order
           }
         }
       }
