@@ -1,7 +1,8 @@
-import { number } from 'prop-types';
+import { number, arrayOf, oneOf } from 'prop-types';
 import styled from 'styled-components';
 import tokens from '@gympass/yoga-tokens';
 import query from '../query';
+import hideQuery from '../hideQuery';
 
 const { breakpoints } = tokens;
 
@@ -68,16 +69,21 @@ const columnPosition = (
   return q`grid-column: ${offset ? `${offset + 1}/` : ''} span ${size || 12};`;
 };
 
+const hideColumn = hideProp =>
+  hideProp.map(breakpoint => hideQuery(breakpoints)[breakpoint]);
+
 const Col = styled.div`
+  box-sizing: border-box;
+
+  min-width: 0;
+  min-height: 0;
+
   ${props =>
     Object.keys(breakpoints).map(breakpoint =>
       columnPosition(props, breakpoint),
     )}
 
-  box-sizing: border-box;
-
-  min-width: 0;
-  min-height: 0;
+  ${({ hide }) => (hide ? hideColumn(hide) : '')}
 
   border: 1px solid;
 
@@ -85,6 +91,18 @@ const Col = styled.div`
 `;
 
 Col.propTypes = {
+  hide: arrayOf(
+    oneOf([
+      'xxsmall',
+      'xsmall',
+      'small',
+      'medium',
+      'large',
+      'xlarge',
+      'xxlarge',
+      'xxxlarge',
+    ]),
+  ),
   xxsmall: number,
   xsmall: number,
   small: number,
@@ -104,6 +122,7 @@ Col.propTypes = {
 };
 
 Col.defaultProps = {
+  hide: undefined,
   xxsmall: undefined,
   xsmall: undefined,
   small: undefined,
