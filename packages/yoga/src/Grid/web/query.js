@@ -7,7 +7,7 @@ const query = () =>
   Object.keys(breakpoints).reduce((acc, label) => {
     acc[label] = (...style) => css`
       @media (min-width: ${breakpoints[label].width}px) {
-        ${css(...style)};
+        ${css(...style)}
       }
     `;
     return acc;
