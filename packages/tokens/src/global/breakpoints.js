@@ -10,56 +10,56 @@
  * @typedef Breakpoint
  *
  * @type {Object}
- * @property {Object} xxsmall
- * @property {Object} xsmall
- * @property {Object} small
- * @property {Object} medium
- * @property {Object} large
- * @property {Object} xlarge
- * @property {Object} xxlarge
- * @property {Object} xxxlarge
+ * @property {Object} xxs
+ * @property {Object} xs
+ * @property {Object} sm
+ * @property {Object} md
+ * @property {Object} lg
+ * @property {Object} xl
+ * @property {Object} xxl
+ * @property {Object} xxxl
  */
 
 /**
  * @type {Breakpoint}
  */
 const breakpoints = {
-  xxsmall: {
+  xxs: {
     width: 0,
     margin: 20,
     gutter: 16,
   },
-  xsmall: {
+  xs: {
     width: 360,
     margin: 20,
     gutter: 16,
   },
-  small: {
+  sm: {
     width: 480,
     margin: 20,
     gutter: 16,
   },
-  medium: {
+  md: {
     width: 768,
     margin: 20,
     gutter: 16,
   },
-  large: {
+  lg: {
     width: 1024,
     margin: 71,
     gutter: 24,
   },
-  xlarge: {
+  xl: {
     width: 1200,
     margin: 71,
     gutter: 24,
   },
-  xxlarge: {
+  xxl: {
     width: 1366,
     margin: 71,
     gutter: 24,
   },
-  xxxlarge: {
+  xxxl: {
     width: 1600,
     margin: 71,
     gutter: 24,

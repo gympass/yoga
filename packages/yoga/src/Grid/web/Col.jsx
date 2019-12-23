@@ -1,66 +1,66 @@
 import { number, arrayOf, oneOf } from 'prop-types';
 import styled from 'styled-components';
 import tokens from '@gympass/yoga-tokens';
-import query from '../query';
-import hideQuery from '../hideQuery';
+import query from './query';
+import hideQuery from './hideQuery';
 
 const { breakpoints } = tokens;
 
 const columnPosition = (
   {
-    xxsmall,
-    xsmall = xxsmall,
-    small = xsmall,
-    medium = small,
-    large = medium,
-    xlarge = large,
-    xxlarge = xlarge,
-    xxxlarge = xxlarge,
-    'xxsmall-offset': xxsmallOffset,
-    'xsmall-offset': xsmallOffset = xxsmallOffset,
-    'small-offset': smallOffset = xsmallOffset,
-    'medium-offset': mediumOffset = smallOffset,
-    'large-offset': largeOffset = mediumOffset,
-    'xlarge-offset': xlargeOffset = largeOffset,
-    'xxlarge-offset': xxlargeOffset = xlargeOffset,
-    'xxxlarge-offset': xxxlargeOffset = xxlargeOffset,
+    xxs,
+    xs = xxs,
+    sm = xs,
+    md = sm,
+    lg = md,
+    xl = lg,
+    xxl = xl,
+    xxxl = xxl,
+    'xxs-offset': xxsOffset,
+    'xs-offset': xsOffset = xxsOffset,
+    'sm-offset': smOffset = xsOffset,
+    'md-offset': mdOffset = smOffset,
+    'lg-offset': lgOffset = mdOffset,
+    'xl-offset': xlOffset = lgOffset,
+    'xxl-offset': xxlOffset = xlOffset,
+    'xxxl-offset': xxxlOffset = xxlOffset,
   },
   breakpoint,
 ) => {
   const q = query()[breakpoint];
 
   const screenDefinitions = {
-    xxsmall: {
-      size: xxsmall,
-      offset: xxsmallOffset,
+    xxs: {
+      size: xxs,
+      offset: xxsOffset,
     },
-    xsmall: {
-      size: xsmall,
-      offset: xsmallOffset,
+    xs: {
+      size: xs,
+      offset: xsOffset,
     },
-    small: {
-      size: small,
-      offset: smallOffset,
+    sm: {
+      size: sm,
+      offset: smOffset,
     },
-    medium: {
-      size: medium,
-      offset: xxsmallOffset,
+    md: {
+      size: md,
+      offset: mdOffset,
     },
-    large: {
-      size: large,
-      offset: xxsmallOffset,
+    lg: {
+      size: lg,
+      offset: lgOffset,
     },
-    xlarge: {
-      size: xlarge,
-      offset: xxsmallOffset,
+    xl: {
+      size: xl,
+      offset: xlOffset,
     },
-    xxlarge: {
-      size: xxlarge,
-      offset: xxsmallOffset,
+    xxl: {
+      size: xxl,
+      offset: xxlOffset,
     },
-    xxxlarge: {
-      size: xxxlarge,
-      offset: xxsmallOffset,
+    xxxl: {
+      size: xxxl,
+      offset: xxxlOffset,
     },
   };
 
@@ -84,61 +84,46 @@ const Col = styled.div`
     )}
 
   ${({ hide }) => (hide ? hideColumn(hide) : '')}
-
-  border: 1px solid;
-
-  background-color: #ffbaba;
 `;
 
 Col.propTypes = {
-  hide: arrayOf(
-    oneOf([
-      'xxsmall',
-      'xsmall',
-      'small',
-      'medium',
-      'large',
-      'xlarge',
-      'xxlarge',
-      'xxxlarge',
-    ]),
-  ),
-  xxsmall: number,
-  xsmall: number,
-  small: number,
-  medium: number,
-  large: number,
-  xlarge: number,
-  xxlarge: number,
-  xxxlarge: number,
-  'xxsmall-offset': number,
-  'xsmall-offset': number,
-  'small-offset': number,
-  'medium-offset': number,
-  'large-offset': number,
-  'xlarge-offset': number,
-  'xxlarge-offset': number,
-  'xxxlarge-offset': number,
+  hide: arrayOf(oneOf(['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl'])),
+  xxs: number,
+  xs: number,
+  sm: number,
+  md: number,
+  lg: number,
+  xl: number,
+  xxl: number,
+  xxxl: number,
+  'xxs-offset': number,
+  'xs-offset': number,
+  'sm-offset': number,
+  'md-offset': number,
+  'lg-offset': number,
+  'xl-offset': number,
+  'xxl-offset': number,
+  'xxxl-offset': number,
 };
 
 Col.defaultProps = {
   hide: undefined,
-  xxsmall: undefined,
-  xsmall: undefined,
-  small: undefined,
-  medium: undefined,
-  large: undefined,
-  xlarge: undefined,
-  xxlarge: undefined,
-  xxxlarge: undefined,
-  'xxsmall-offset': undefined,
-  'xsmall-offset': undefined,
-  'small-offset': undefined,
-  'medium-offset': undefined,
-  'large-offset': undefined,
-  'xlarge-offset': undefined,
-  'xxlarge-offset': undefined,
-  'xxxlarge-offset': undefined,
+  xxs: undefined,
+  xs: undefined,
+  sm: undefined,
+  md: undefined,
+  lg: undefined,
+  xl: undefined,
+  xxl: undefined,
+  xxxl: undefined,
+  'xxs-offset': undefined,
+  'xs-offset': undefined,
+  'sm-offset': undefined,
+  'md-offset': undefined,
+  'lg-offset': undefined,
+  'xl-offset': undefined,
+  'xxl-offset': undefined,
+  'xxxl-offset': undefined,
 };
 
 export default Col;
