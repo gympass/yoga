@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> Snapshots should match snapshot with default Container 1`] = `
+.c0 {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+@media (min-width:0px) {
+  .c0 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    padding-left: 71px;
+    padding-right: 71px;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
