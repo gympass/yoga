@@ -1,43 +1,43 @@
 import React from 'react';
-import { oneOf } from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
+import { oneOf, bool } from 'prop-types';
+import textStyle from '../textStyle';
 
-const StyledText = styled.Text`
-  ${({
-    level,
-    theme: {
-      yoga: {
-        components: { text },
-      },
-    },
-  }) => css`
-    margin: 0;
-    padding: 0;
-
-    font-size: ${text.size[level]}px;
-    line-height: ${text.height[level]}px;
-    font-weight: ${text.weight[level]};
-  `}
+const styledText = type => styled.Text`
+  ${textStyle(type)}
 `;
 
-const semantic = {
-  h1: 'h1',
-  h2: 'h2',
-  h3: 'h3',
-  h4: 'h4',
-  p: 'p',
-  small: 'p',
-  tiny: 'p',
-};
+const H1 = styledText('h1');
+H1.displayName = 'Text.H1';
 
-const Text = ({ level, ...rest }) => (
-  <StyledText level={level} as={semantic[`${level}`]} {...rest} />
-);
+const H2 = styledText('h2');
+H2.displayName = 'Text.H2';
 
-Text.propTypes = {
-  level: oneOf(['h1', 'h2', 'h3', 'h4', 'p', 'small', 'tiny']).isRequired,
-};
+const H3 = styledText('h3');
+H3.displayName = 'Text.H3';
 
+const H4 = styledText('h4');
+H4.displayName = 'Text.H4';
+
+const Small = styledText('small');
+Small.displayName = 'Text.Small';
+
+const Tiny = styledText('tiny');
+Tiny.displayName = 'Text.Tiny';
+
+const Paragraph = styledText('p');
+const Text = props => <Paragraph {...props} />;
 Text.displayName = 'Text';
 
-export default Text;
+Text.propTypes = {
+  inverted: bool,
+  /** style the text following the theme (primary, secondary, tertiary) */
+  variant: oneOf(['primary', 'secondary', 'tertiary']),
+};
+
+Text.defaultProps = {
+  inverted: false,
+  variant: undefined,
+};
+
+export { Text, H1, H2, H3, H4, Small, Tiny };
