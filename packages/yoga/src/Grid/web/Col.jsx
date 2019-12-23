@@ -6,68 +6,18 @@ import hideQuery from './hideQuery';
 
 const { breakpoints } = tokens;
 
-const columnPosition = (
-  {
-    xxs,
-    xs = xxs,
-    sm = xs,
-    md = sm,
-    lg = md,
-    xl = lg,
-    xxl = xl,
-    xxxl = xxl,
-    'xxs-offset': xxsOffset,
-    'xs-offset': xsOffset = xxsOffset,
-    'sm-offset': smOffset = xsOffset,
-    'md-offset': mdOffset = smOffset,
-    'lg-offset': lgOffset = mdOffset,
-    'xl-offset': xlOffset = lgOffset,
-    'xxl-offset': xxlOffset = xlOffset,
-    'xxxl-offset': xxxlOffset = xxlOffset,
-  },
-  breakpoint,
-) => {
-  const q = query()[breakpoint];
+const columnPosition = props =>
+  Object.keys(breakpoints)
+    .filter(breakpoint => props[breakpoint])
+    .map(filteredBreakpoint => {
+      const offset = props[`${filteredBreakpoint}-offset`];
 
-  const screenDefinitions = {
-    xxs: {
-      size: xxs,
-      offset: xxsOffset,
-    },
-    xs: {
-      size: xs,
-      offset: xsOffset,
-    },
-    sm: {
-      size: sm,
-      offset: smOffset,
-    },
-    md: {
-      size: md,
-      offset: mdOffset,
-    },
-    lg: {
-      size: lg,
-      offset: lgOffset,
-    },
-    xl: {
-      size: xl,
-      offset: xlOffset,
-    },
-    xxl: {
-      size: xxl,
-      offset: xxlOffset,
-    },
-    xxxl: {
-      size: xxxl,
-      offset: xxxlOffset,
-    },
-  };
-
-  const { size, offset } = screenDefinitions[breakpoint];
-
-  return q`grid-column: ${offset ? `${offset + 1}/` : ''} span ${size || 12};`;
-};
+      return query()[filteredBreakpoint]`
+        grid-column: ${offset ? `${offset + 1}/` : ''} span ${props[
+        filteredBreakpoint
+      ] || 12};
+      `;
+    });
 
 const hideColumn = hideProp =>
   hideProp.map(breakpoint => hideQuery(breakpoints)[breakpoint]);
@@ -78,10 +28,7 @@ const Col = styled.div`
   min-width: 0;
   min-height: 0;
 
-  ${props =>
-    Object.keys(breakpoints).map(breakpoint =>
-      columnPosition(props, breakpoint),
-    )}
+  ${props => columnPosition(props)}
 
   ${({ hide }) => (hide ? hideColumn(hide) : '')}
 `;
