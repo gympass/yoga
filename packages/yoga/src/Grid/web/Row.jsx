@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import query from '../query';
+import query from './query';
 
-const desktop = query().large`
+const desktop = query().lg`
   grid-column-gap: 24px;
 `;
 
-const mobile = query().xxsmall`
+const mobile = query().xxs`
   grid-column-gap: 16px;
 `;
 

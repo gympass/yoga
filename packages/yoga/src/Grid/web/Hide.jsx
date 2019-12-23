@@ -2,7 +2,7 @@ import { bool } from 'prop-types';
 import styled from 'styled-components';
 import tokens from '@gympass/yoga-tokens';
 
-import hideQuery from '../hideQuery';
+import hideQuery from './hideQuery';
 
 const { breakpoints } = tokens;
 
@@ -14,25 +14,25 @@ const Hide = styled.div`
 `;
 
 Hide.propTypes = {
-  xxsmall: bool,
-  xsmall: bool,
-  small: bool,
-  medium: bool,
-  large: bool,
-  xlarge: bool,
-  xxlarge: bool,
-  xxxlarge: bool,
+  xxs: bool,
+  xs: bool,
+  sm: bool,
+  md: bool,
+  lg: bool,
+  xl: bool,
+  xxl: bool,
+  xxxl: bool,
 };
 
 Hide.defaultProps = {
-  xxsmall: undefined,
-  xsmall: undefined,
-  small: undefined,
-  medium: undefined,
-  large: undefined,
-  xlarge: undefined,
-  xxlarge: undefined,
-  xxxlarge: undefined,
+  xxs: undefined,
+  xs: undefined,
+  sm: undefined,
+  md: undefined,
+  lg: undefined,
+  xl: undefined,
+  xxl: undefined,
+  xxxl: undefined,
 };
 
 export default Hide;

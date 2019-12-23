@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import query from '../query';
+import query from './query';
 
-const mobile = query().xxsmall`
+const mobile = query().xxs`
   padding-left: 20px;
   padding-right: 20px;
 `;
 
-const desktop = query().large`
+const desktop = query().lg`
   padding-left: 71px;
   padding-right: 71px;
 `;
