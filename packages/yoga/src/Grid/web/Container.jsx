@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import query from './query';
 
 const mobile = query().xxs`
@@ -15,10 +15,15 @@ const Container = styled.div`
   box-sizing: border-box;
 
   margin: 0 auto;
-  max-width: 1600px;
-
-  ${mobile}
-  ${desktop}
+  ${({ fluid }) => css`
+    ${fluid
+      ? 'max-width: 100%;'
+      : css`
+          max-width: 1600px;
+          ${mobile}
+          ${desktop}
+        `}
+  `}
 `;
 
 export default Container;

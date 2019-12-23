@@ -7,49 +7,7 @@ exports[`<Col /> Snapshots should be the same column size from medium to xxxl 1`
   min-height: 0;
 }
 
-@media (min-width:0px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:360px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:480px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
 @media (min-width:768px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1366px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1600px) {
   .c0 {
     grid-column: span 6;
   }
@@ -69,49 +27,7 @@ exports[`<Col /> Snapshots should hide Col in a xs and xm breakpoints 1`] = `
   min-height: 0;
 }
 
-@media (min-width:0px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:360px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:480px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
 @media (min-width:768px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1366px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1600px) {
   .c0 {
     grid-column: span 6;
   }
@@ -143,54 +59,6 @@ exports[`<Col /> Snapshots should match snapshot with default Col 1`] = `
   min-height: 0;
 }
 
-@media (min-width:0px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:360px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:480px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:1366px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:1600px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
 <div>
   <div
     class="c0"
@@ -211,48 +79,6 @@ exports[`<Col /> Snapshots should match snapshot with different Col size 1`] = `
   }
 }
 
-@media (min-width:360px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:480px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1366px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
-@media (min-width:1600px) {
-  .c0 {
-    grid-column: span 6;
-  }
-}
-
 <div>
   <div
     class="c0"
@@ -267,49 +93,7 @@ exports[`<Col /> Snapshots should set column offsets 1`] = `
   min-height: 0;
 }
 
-@media (min-width:0px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:360px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
-@media (min-width:480px) {
-  .c0 {
-    grid-column: span 12;
-  }
-}
-
 @media (min-width:768px) {
-  .c0 {
-    grid-column: 3/ span 6;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    grid-column: 3/ span 6;
-  }
-}
-
-@media (min-width:1200px) {
-  .c0 {
-    grid-column: 3/ span 6;
-  }
-}
-
-@media (min-width:1366px) {
-  .c0 {
-    grid-column: 3/ span 6;
-  }
-}
-
-@media (min-width:1600px) {
   .c0 {
     grid-column: 3/ span 6;
   }

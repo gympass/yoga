@@ -1,0 +1,37 @@
+---
+title: 'Grid'
+metaTitle: 'Grid'
+metaDescription: 'Grid Component'
+---
+
+# Grid
+
+## Container
+
+Containers provide a means to center and horizontally pad your site’s contents.
+Use `<Container />` for a centered container _with margins_ around or
+`<Container-fluid />` for a 100% width _without margins_ across all viewport and
+device sizes.
+
+```
+<Container>
+  ...
+</Container>
+
+// or
+
+<Container fluid>
+...
+</Container>
+```
+
+## Row
+
+Rows are wrappers for columns. Each column has horizontal padding (called a
+gutter) for controlling the space between them.
+
+## Col
+
+`<Col />` indicate the number of columns you’d like to use out of the possible
+12 per row. So, if you want three equal-width columns across, you can use
+`<Col xxs={4} />`.
