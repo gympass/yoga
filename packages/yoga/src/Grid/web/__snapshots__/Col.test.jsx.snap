@@ -9,7 +9,7 @@ exports[`<Col /> Snapshots should be the same column size from medium to xxxl 1`
 
 @media (min-width:768px) {
   .c0 {
-    grid-column: span 6;
+    grid-column-end: span 6;
   }
 }
 
@@ -29,7 +29,7 @@ exports[`<Col /> Snapshots should hide Col in a xs and xm breakpoints 1`] = `
 
 @media (min-width:768px) {
   .c0 {
-    grid-column: span 6;
+    grid-column-end: span 6;
   }
 }
 
@@ -75,7 +75,7 @@ exports[`<Col /> Snapshots should match snapshot with different Col size 1`] = `
 
 @media (min-width:0px) {
   .c0 {
-    grid-column: span 6;
+    grid-column-end: span 6;
   }
 }
 
@@ -95,7 +95,13 @@ exports[`<Col /> Snapshots should set column offsets 1`] = `
 
 @media (min-width:768px) {
   .c0 {
-    grid-column: 3/ span 6;
+    grid-column-end: span 6;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    grid-column-start: 3;
   }
 }
 

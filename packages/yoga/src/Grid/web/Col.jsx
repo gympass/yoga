@@ -6,18 +6,26 @@ import hideQuery from './hideQuery';
 
 const { breakpoints } = tokens;
 
-const columnPosition = props =>
-  Object.keys(breakpoints)
+const columnPosition = props => {
+  const breakpointKeys = Object.keys(breakpoints);
+  const position = breakpointKeys
     .filter(breakpoint => props[breakpoint])
-    .map(filteredBreakpoint => {
-      const offset = props[`${filteredBreakpoint}-offset`];
+    .map(
+      filteredBreakpoint => query()[filteredBreakpoint]`
+        grid-column-end: span ${props[filteredBreakpoint] || 12};
+      `,
+    );
 
-      return query()[filteredBreakpoint]`
-        grid-column: ${offset ? `${offset + 1}/` : ''} span ${props[
-        filteredBreakpoint
-      ] || 12};
-      `;
-    });
+  const offsets = breakpointKeys
+    .filter(breakpoint => props[`${breakpoint}-offset`])
+    .map(
+      offset => query()[offset]`
+        grid-column-start: ${props[`${offset}-offset`] + 1};
+      `,
+    );
+
+  return [...position, ...offsets];
+};
 
 const hideColumn = hideProp =>
   hideProp.map(breakpoint => hideQuery(breakpoints)[breakpoint]);
