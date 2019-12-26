@@ -2,24 +2,47 @@ import styled, { css } from 'styled-components';
 import query from './query';
 
 const mobile = query().xxs`
-  padding-left: 20px;
-  padding-right: 20px;
+  ${({
+    theme: {
+      yoga: {
+        components: { grid },
+      },
+    },
+  }) => `
+    padding-left: ${grid.container.margin.mobile.left}px;
+    padding-right: ${grid.container.margin.mobile.right}px;
+  `}
 `;
 
 const desktop = query().lg`
-  padding-left: 71px;
-  padding-right: 71px;
+  ${({
+    theme: {
+      yoga: {
+        components: { grid },
+      },
+    },
+  }) => `
+    padding-left: ${grid.container.margin.desktop.left}px;
+    padding-right: ${grid.container.margin.desktop.right}px;
+  `}
 `;
 
 const Container = styled.div`
   box-sizing: border-box;
 
   margin: 0 auto;
-  ${({ fluid }) => css`
+  ${({
+    fluid,
+    theme: {
+      yoga: {
+        components: { grid },
+      },
+    },
+  }) => css`
     ${fluid
       ? 'max-width: 100%;'
       : css`
-          max-width: 1600px;
+          max-width: ${grid.container.width}px;
           ${mobile}
           ${desktop}
         `}

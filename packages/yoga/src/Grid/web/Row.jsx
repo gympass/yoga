@@ -2,11 +2,27 @@ import styled from 'styled-components';
 import query from './query';
 
 const desktop = query().lg`
-  grid-column-gap: 24px;
+  ${({
+    theme: {
+      yoga: {
+        components: { grid },
+      },
+    },
+  }) => `
+    grid-column-gap: ${grid.gutter.desktop}px;
+  `}
 `;
 
 const mobile = query().xxs`
-  grid-column-gap: 16px;
+  ${({
+    theme: {
+      yoga: {
+        components: { grid },
+      },
+    },
+  }) => `
+    grid-column-gap: ${grid.gutter.mobile}px;
+  `}
 `;
 
 const Row = styled.div`
