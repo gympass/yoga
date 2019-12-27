@@ -34,15 +34,9 @@ const getMetaData = (isComponent, prefix) => {
     );
   });
 
-  const [
-    {
-      node: {
-        description: { text: description },
-      },
-    },
-  ] = filteredEdges;
+  const [currentNode] = filteredEdges;
 
-  return { description };
+  return currentNode ? { description: currentNode.node.description.text } : '';
 };
 
 const ComponentTitle = ({ prefix, children = '' }) => {

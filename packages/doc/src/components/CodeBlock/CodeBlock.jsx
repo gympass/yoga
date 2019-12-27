@@ -5,6 +5,7 @@ import { MDXContext } from '@mdx-js/react';
 import { node, string } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import { hexToRgb } from '@gympass/yoga-common';
+import { Col } from '@gympass/yoga';
 import githubTheme from 'prism-react-renderer/themes/github';
 
 import { CodeSandboxButton } from 'components';
@@ -73,7 +74,7 @@ const Component = styled.div`
     darkMode,
     theme: {
       yoga: {
-        colors: { white, dark },
+        colors: { white, dark, primary },
       },
     },
   }) => `
@@ -81,6 +82,11 @@ const Component = styled.div`
     padding: 50px;
     background-color: ${darkMode ? dark : white};
     transition: all 0.3s ease-in-out;
+
+    ${Col} {
+      background-color: ${primary[1]};
+      border: 1px solid;
+    }
 
     > div {
       width: 100%;

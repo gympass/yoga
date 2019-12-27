@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Col /> Snapshots should be the same column size from medium to xxxl 1`] = `
+.c0 {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    grid-column-end: span 6;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`<Col /> Snapshots should hide Col in a xs and xm breakpoints 1`] = `
+.c0 {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    grid-column-end: span 6;
+  }
+}
+
+@media (min-width:360px) and (max-width:479px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:480px) and (max-width:767px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`<Col /> Snapshots should match snapshot with default Col 1`] = `
+.c0 {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`<Col /> Snapshots should match snapshot with different Col size 1`] = `
+.c0 {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+}
+
+@media (min-width:0px) {
+  .c0 {
+    grid-column-end: span 6;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
+
+exports[`<Col /> Snapshots should set column offsets 1`] = `
+.c0 {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    grid-column-end: span 6;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    grid-column-start: 3;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;
