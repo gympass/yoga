@@ -275,7 +275,13 @@ const CodeBlock = ({ children, reactLive, center }) => {
       language="jsx"
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <Pre className={className} style={style}>
+        <Pre
+          className={className}
+          style={{
+            ...style,
+            border: '1px solid #DBDBE8',
+          }}
+        >
           {tokens.map((line, i) => (
             <div {...getLineProps({ line, key: i })}>
               {line.map((token, key) => (

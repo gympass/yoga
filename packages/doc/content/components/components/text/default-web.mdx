@@ -3,13 +3,26 @@
 Use `<Text>` to present your design and content as clearly and efficiently as
 possible.
 
-### Simple
+| **Component**  | **Element** | **Font-Size Token** |
+| -------------- | ----------- | ------------------- |
+| `<Text.H1>`    | `<h1>`      | xxlarge             |
+| `<Text.H2>`    | `<h2>`      | xlarge              |
+| `<Text.H3>`    | `<h3>`      | large               |
+| `<Text.H4>`    | `<h4>`      | medium              |
+| `<Text>`       | `<p>`       | medium              |
+| `<Text.Small>` | `<p>`       | small               |
+| `<Text.Tiny>`  | `<p>`       | tiny                |
+
+_You can see the font-size tokens values
+[here](https://gympass.github.io/yoga/guidelines/tokens/font-sizes)._
+
+### Simple Usage
 
 ```javascript reactLive=true
 <Text.H1>Live the mission</Text.H1>
 ```
 
-### All
+### All Usage
 
 ```javascript reactLive=true
 <>
@@ -22,6 +35,12 @@ possible.
   <Text.Tiny>Live the mission</Text.Tiny>
 </>
 ```
+
+### Gympass fonts
+
+All Yoga components uses its own font family based on
+[font design token](https://gympass.github.io/yoga/guidelines/tokens/fonts)
+provided by the `<ThemeProvider />`.
 
 ### Props
 
