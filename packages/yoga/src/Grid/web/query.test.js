@@ -15,7 +15,7 @@ describe('query helper function', () => {
     `;
 
     Object.keys(breakpoints).map(breakpoint => {
-      const style = query()[breakpoint]`
+      const style = query[breakpoint]`
           padding: 10px;
         `;
 

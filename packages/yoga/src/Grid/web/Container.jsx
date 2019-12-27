@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import query from './query';
 
-const mobile = query().xxs`
+const mobile = query.xxs`
   ${({
     theme: {
       yoga: {
@@ -14,7 +14,7 @@ const mobile = query().xxs`
   `}
 `;
 
-const desktop = query().lg`
+const desktop = query.lg`
   ${({
     theme: {
       yoga: {

@@ -11,7 +11,7 @@ const columnPosition = props => {
   const position = breakpointKeys
     .filter(breakpoint => props[breakpoint])
     .map(
-      filteredBreakpoint => query()[filteredBreakpoint]`
+      filteredBreakpoint => query[filteredBreakpoint]`
         grid-column-end: span ${props[filteredBreakpoint] || 12};
       `,
     );
@@ -19,7 +19,7 @@ const columnPosition = props => {
   const starts = breakpointKeys
     .filter(breakpoint => props[`${breakpoint}-start`])
     .map(
-      start => query()[start]`
+      start => query[start]`
         grid-column-start: ${props[`${start}-start`]};
       `,
     );
