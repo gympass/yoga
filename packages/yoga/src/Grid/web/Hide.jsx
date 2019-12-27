@@ -11,6 +11,11 @@ const Hide = styled.div`
     Object.keys(props)
       .filter(prop => props[prop] && Object.keys(breakpoints).includes(prop))
       .map(breakpoint => hideQuery(breakpoints)[breakpoint])}
+
+  ${props =>
+    Object.keys(props)
+      .filter(prop => props[`${prop}-start`])
+      .map(breakpoint => hideQuery(breakpoints)[`${breakpoint}-start`])}
 `;
 
 Hide.propTypes = {
@@ -22,6 +27,14 @@ Hide.propTypes = {
   xl: bool,
   xxl: bool,
   xxxl: bool,
+  'xxs-start': bool,
+  'xs-start': bool,
+  'sm-start': bool,
+  'md-start': bool,
+  'lg-start': bool,
+  'xl-start': bool,
+  'xxl-start': bool,
+  'xxxl-start': bool,
 };
 
 Hide.defaultProps = {
@@ -33,6 +46,14 @@ Hide.defaultProps = {
   xl: undefined,
   xxl: undefined,
   xxxl: undefined,
+  'xxs-start': undefined,
+  'xs-start': undefined,
+  'sm-start': undefined,
+  'md-start': undefined,
+  'lg-start': undefined,
+  'xl-start': undefined,
+  'xxl-start': undefined,
+  'xxxl-start': undefined,
 };
 
 export default Hide;

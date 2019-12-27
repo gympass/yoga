@@ -15,5 +15,16 @@ describe('<Hide />', () => {
       );
       expect(container).toMatchSnapshot();
     });
+
+    it('should hide starting from md breakpoint', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Hide md-start>
+            <div>foo</div>
+          </Hide>
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
   });
 });
