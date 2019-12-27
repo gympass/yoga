@@ -5,9 +5,67 @@ import ExpoSnack from 'react-expo-snack';
 Use `<Text>` to present your design and content as clearly and efficiently as
 possible.
 
+| **Component**  | **Font-Size Token** |
+| -------------- | ------------------- |
+| `<Text.H1>`    | xxlarge             |
+| `<Text.H2>`    | xlarge              |
+| `<Text.H3>`    | large               |
+| `<Text.H4>`    | medium              |
+| `<Text>`       | medium              |
+| `<Text.Small>` | small               |
+| `<Text.Tiny>`  | tiny                |
+
+_You can see the font-size tokens values
+[here](https://gympass.github.io/yoga/guidelines/tokens/font-sizes)._
+
 ### Usage
 
 <ExpoSnack id="@gympass/yoga-text" theme="light" />
+
+### Adding Gympass font in your project
+
+Both iOS and Android come with their own set of platform fonts but all Yoga
+components needs its own font family based on
+[font design token](https://gympass.github.io/yoga/guidelines/tokens/fonts).
+
+#### React Native > 0.60
+
+Edit or create the file `react-native.config.js` in your project's root to be as
+follows:
+
+```javascript
+module.exports = {
+  project: {
+    ios: {},
+    android: {},
+  },
+  assets: ['./node_modules/@gympass/yoga/fonts'],
+};
+```
+
+and run the command bellow:
+
+```
+react-native link
+```
+
+#### React Native < 0.60
+
+Add the following lines in your `package.json`:
+
+```javascript
+"rnpm": {
+  "assets": [
+    "./node_modules/@gympass/yoga/fonts"
+  ]
+}
+```
+
+and run the command bellow:
+
+```
+react-native link
+```
 
 ### Props
 
