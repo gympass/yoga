@@ -146,12 +146,34 @@ Check the example below:
           <div>Some content</div>
           <Hide xl>
             <div style={{ background: '#fba' }}>
-              This content will be hided <strong>only</strong> in xlarge
+              This content will be hidden <strong>only</strong> in xlarge
               breakpoint
             </div>
           </Hide>
         </main>
         <footer>Footer</footer>
+      </div>
+    </Col>
+  </Row>
+</Container>
+```
+
+If you want to hide something in all breakpoints starting from specific one,
+just use the `start` keyword.
+
+```javascript reactLive=true
+<Container>
+  <Row>
+    <Col xxs={12}>
+      <div style={{ background: '#fafafa' }}>
+        <div>Here we have some content hided in the medium breakpoint.</div>
+        <div>Open the code example or resize the browser to see it.</div>
+        <Hide md-start>
+          <div style={{ background: '#fba' }}>
+            This content will be hidden
+            <strong>in all breakpoints starting from medium breakpoint</strong>
+          </div>
+        </Hide>
       </div>
     </Col>
   </Row>
