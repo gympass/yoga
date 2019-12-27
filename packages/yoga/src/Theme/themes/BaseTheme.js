@@ -2,6 +2,7 @@ import tokens from '@gympass/yoga-tokens';
 import { hexToRgb } from '@gympass/yoga-common';
 
 const {
+  breakpoints,
   spacing,
   radii,
   fontSizes,
@@ -417,7 +418,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     },
   };
 
-  return { components, baseFontSize, colors, spacing, fonts };
+  return { components, baseFontSize, colors, spacing, fonts, breakpoints };
 };
 
 export default BaseTheme;

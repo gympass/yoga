@@ -35,7 +35,7 @@ describe('<Col />', () => {
     it('should set column offsets', () => {
       const { container } = render(
         <ThemeProvider>
-          <Col md-offset={2} md={6} />
+          <Col md-start={3} md={6} />
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();

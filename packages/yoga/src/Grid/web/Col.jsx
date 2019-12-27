@@ -16,15 +16,15 @@ const columnPosition = props => {
       `,
     );
 
-  const offsets = breakpointKeys
-    .filter(breakpoint => props[`${breakpoint}-offset`])
+  const starts = breakpointKeys
+    .filter(breakpoint => props[`${breakpoint}-start`])
     .map(
-      offset => query()[offset]`
-        grid-column-start: ${props[`${offset}-offset`] + 1};
+      start => query()[start]`
+        grid-column-start: ${props[`${start}-start`]};
       `,
     );
 
-  return [...position, ...offsets];
+  return [...position, ...starts];
 };
 
 const hideColumn = hideProp =>
@@ -51,14 +51,14 @@ Col.propTypes = {
   xl: number,
   xxl: number,
   xxxl: number,
-  'xxs-offset': number,
-  'xs-offset': number,
-  'sm-offset': number,
-  'md-offset': number,
-  'lg-offset': number,
-  'xl-offset': number,
-  'xxl-offset': number,
-  'xxxl-offset': number,
+  'xxs-start': number,
+  'xs-start': number,
+  'sm-start': number,
+  'md-start': number,
+  'lg-start': number,
+  'xl-start': number,
+  'xxl-start': number,
+  'xxxl-start': number,
 };
 
 Col.defaultProps = {
@@ -71,14 +71,14 @@ Col.defaultProps = {
   xl: undefined,
   xxl: undefined,
   xxxl: undefined,
-  'xxs-offset': undefined,
-  'xs-offset': undefined,
-  'sm-offset': undefined,
-  'md-offset': undefined,
-  'lg-offset': undefined,
-  'xl-offset': undefined,
-  'xxl-offset': undefined,
-  'xxxl-offset': undefined,
+  'xxs-start': undefined,
+  'xs-start': undefined,
+  'sm-start': undefined,
+  'md-start': undefined,
+  'lg-start': undefined,
+  'xl-start': undefined,
+  'xxl-start': undefined,
+  'xxxl-start': undefined,
 };
 
 export default Col;
