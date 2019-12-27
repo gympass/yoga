@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Hide /> Snapshots should hide starting from md breakpoint 1`] = `
+@media (min-width:768px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div>
+      foo
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Hide /> Snapshots should match snapshot 1`] = `
+@media (max-width:360px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:360px) and (max-width:479px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:480px) and (max-width:767px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1199px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1365px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1366px) and (max-width:1599px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+@media (min-width:1600px) {
+  .c0 {
+    display: none !important;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div>
+      foo
+    </div>
+  </div>
+</div>
+`;
