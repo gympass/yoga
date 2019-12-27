@@ -4,27 +4,28 @@
  *
  * @memberof @gympass/yoga-tokens
  */
+
 /**
  * A breakpoint
  * @typedef Breakpoint
  *
- * @property {Object} width
- * @property {Object} margin
- * @property {Object} gutter
+ * @property {Number} width
+ * @property {Number} margin
+ * @property {Number} gutter
  */
 /**
  * A breakpoint
  * @typedef Breakpoints
  *
  * @type {Object}
- * @property {Breakpoint} xxs - 0
- * @property {Breakpoint} xs - 360
- * @property {Breakpoint} sm - 480
- * @property {Breakpoint} md - 768
- * @property {Breakpoint} lg - 1024
- * @property {Breakpoint} xl - 1200
- * @property {Breakpoint} xxl - 1366
- * @property {Breakpoint} xxxl - 1600
+ * @property {Breakpoint} xxs
+ * @property {Breakpoint} xs
+ * @property {Breakpoint} sm
+ * @property {Breakpoint} md
+ * @property {Breakpoint} lg
+ * @property {Breakpoint} xl
+ * @property {Breakpoint} xxl
+ * @property {Breakpoint} xxxl
  */
 /**
  * @type {Breakpoints}
