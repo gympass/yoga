@@ -4,24 +4,30 @@
  *
  * @memberof @gympass/yoga-tokens
  */
-
 /**
  * A breakpoint
  * @typedef Breakpoint
  *
- * @type {Object}
- * @property {Object} xxs
- * @property {Object} xs
- * @property {Object} sm
- * @property {Object} md
- * @property {Object} lg
- * @property {Object} xl
- * @property {Object} xxl
- * @property {Object} xxxl
+ * @property {Object} width
+ * @property {Object} margin
+ * @property {Object} gutter
  */
-
 /**
- * @type {Breakpoint}
+ * A breakpoint
+ * @typedef Breakpoints
+ *
+ * @type {Object}
+ * @property {Breakpoint} xxs - 0
+ * @property {Breakpoint} xs - 360
+ * @property {Breakpoint} sm - 480
+ * @property {Breakpoint} md - 768
+ * @property {Breakpoint} lg - 1024
+ * @property {Breakpoint} xl - 1200
+ * @property {Breakpoint} xxl - 1366
+ * @property {Breakpoint} xxxl - 1600
+ */
+/**
+ * @type {Breakpoints}
  */
 const breakpoints = {
   xxs: {
