@@ -1,6 +1,5 @@
 import tokens from '@gympass/yoga-tokens';
 import { hexToRgb } from '@gympass/yoga-common';
-import { lineHeights } from '@gympass/yoga-tokens/src/global';
 
 const {
   spacing,
@@ -12,9 +11,11 @@ const {
   colors: tokenColors,
   borders,
   fonts,
+  lineHeights,
 } = tokens;
 
 const BaseTheme = ({ primary, secondary, tertiary }) => {
+  const [baseFontFamily] = fonts;
   const baseFontSize = fontSizes.medium;
   const colors = {
     primary,
@@ -436,7 +437,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     },
   };
 
-  return { components, baseFontSize, colors, spacing, fonts };
+  return { components, baseFontFamily, baseFontSize, colors, spacing, fonts };
 };
 
 export default BaseTheme;
