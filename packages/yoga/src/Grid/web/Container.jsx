@@ -9,8 +9,8 @@ const mobile = query().xxs`
       },
     },
   }) => `
-    padding-left: ${grid.container.margin.mobile.left}px;
-    padding-right: ${grid.container.margin.mobile.right}px;
+    margin-left: ${grid.container.margin.mobile.left}px;
+    margin-right: ${grid.container.margin.mobile.right}px;
   `}
 `;
 
@@ -22,15 +22,30 @@ const desktop = query().lg`
       },
     },
   }) => `
-    padding-left: ${grid.container.margin.desktop.left}px;
-    padding-right: ${grid.container.margin.desktop.right}px;
+    margin-left: ${grid.container.margin.desktop.left}px;
+    margin-right: ${grid.container.margin.desktop.right}px;
+  `}
+`;
+
+const xxxlarge = css`
+  ${({
+    theme: {
+      yoga: {
+        breakpoints: {
+          xxxl: { width, margin },
+        },
+      },
+    },
+  }) => `
+    @media (min-width: ${width + margin * 2}px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   `}
 `;
 
 const Container = styled.div`
   box-sizing: border-box;
-
-  margin: 0 auto;
   ${({
     fluid,
     theme: {
@@ -45,6 +60,7 @@ const Container = styled.div`
           max-width: ${grid.container.width}px;
           ${mobile}
           ${desktop}
+          ${xxxlarge}
         `}
   `}
 `;
