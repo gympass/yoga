@@ -13,8 +13,9 @@
  * @property {Number} margin
  * @property {Number} gutter
  */
+
 /**
- * A breakpoint
+ * List of all breakpoints
  * @typedef Breakpoints
  *
  * @type {Object}
