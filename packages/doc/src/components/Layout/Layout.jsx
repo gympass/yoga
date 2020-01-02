@@ -151,11 +151,11 @@ const Layout = ({
           </Header>
 
           <TabBar>
-            <TabBar.Tab to="/guidelines/product-content/">
+            <TabBar.Tab to="/guidelines">
               <BookLogo />
               Guidelines
             </TabBar.Tab>
-            <TabBar.Tab to="/components/getting-started/">
+            <TabBar.Tab to="/components">
               <ReactLogo />
               Components
             </TabBar.Tab>
