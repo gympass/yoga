@@ -44,7 +44,7 @@ const Price = styled(Text.H3)`
   margin-top: ${plan.price.margin.top}px;
   `}
 `;
-const Period = styled(Text.Tiny)`
+const Period = styled(Text.Small)`
   display: block;
   color: inherit;
 

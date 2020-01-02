@@ -1618,8 +1618,18 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                     Array [
                       Object {
                         "color": "#FFFFFF",
+                        "fontFamily": "Open Sans",
                         "fontSize": 12,
                         "fontWeight": "700",
+                        "lineHeight": 16,
+                        "marginBottom": 0,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
                         "textAlign": "center",
                       },
                     ]
@@ -1649,9 +1659,18 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                     Array [
                       Object {
                         "color": "#6B6B78",
+                        "fontFamily": "Open Sans",
                         "fontSize": 14,
                         "fontWeight": "400",
+                        "lineHeight": 20,
                         "marginBottom": 5,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
                         "textAlign": "center",
                       },
                     ]
@@ -1664,8 +1683,18 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                     Array [
                       Object {
                         "color": "#6B6B78",
+                        "fontFamily": "Open Sans",
                         "fontSize": 14,
                         "fontWeight": "400",
+                        "lineHeight": 20,
+                        "marginBottom": 0,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
                         "textAlign": "center",
                       },
                     ]
@@ -1927,8 +1956,18 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                     Array [
                       Object {
                         "color": "#FFFFFF",
+                        "fontFamily": "Open Sans",
                         "fontSize": 12,
                         "fontWeight": "700",
+                        "lineHeight": 16,
+                        "marginBottom": 0,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
                         "textAlign": "center",
                       },
                     ]
@@ -1958,9 +1997,18 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                     Array [
                       Object {
                         "color": "#6B6B78",
+                        "fontFamily": "Open Sans",
                         "fontSize": 14,
                         "fontWeight": "400",
+                        "lineHeight": 20,
                         "marginBottom": 5,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
                         "textAlign": "center",
                       },
                     ]
@@ -1973,8 +2021,18 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                     Array [
                       Object {
                         "color": "#6B6B78",
+                        "fontFamily": "Open Sans",
                         "fontSize": 14,
                         "fontWeight": "400",
+                        "lineHeight": 20,
+                        "marginBottom": 0,
+                        "marginLeft": 0,
+                        "marginRight": 0,
+                        "marginTop": 0,
+                        "paddingBottom": 0,
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
                         "textAlign": "center",
                       },
                     ]

@@ -168,13 +168,13 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     >
       <span
         class="yoga-mark-text yoga-mark-text-active"
-        style="transform: translateX(0%); left: 0%; font-size: 12px; font-weight: 400; position: absolute; top: 15px;"
+        style="transform: translateX(0%); left: 0%; position: absolute; top: 15px;"
       >
         0
       </span>
       <span
         class="yoga-mark-text"
-        style="transform: translateX(-100%); left: 100%; font-size: 12px; font-weight: 400; position: absolute; top: 15px;"
+        style="transform: translateX(-100%); left: 100%; position: absolute; top: 15px;"
       >
         10
       </span>
@@ -483,27 +483,45 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
 }
 
 .c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
   position: relative;
   text-align: center;
   padding: 4px 8px 4px 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   color: #FFFFFF;
-  font-size: 12px;
   font-weight: 700;
 }
 
 .c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
   text-align: center;
   color: #6B6B78;
-  font-size: 14px;
   font-weight: 400;
 }
 
 .c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
   text-align: center;
   color: #6B6B78;
-  font-size: 14px;
   font-weight: 400;
 }
 
@@ -569,24 +587,24 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
       <div
         class="c2"
       >
-        <div
+        <span
           class="c3"
         >
           ribbon
-        </div>
+        </span>
         <div
           class="c4"
         >
-          <div
+          <span
             class="c5"
           >
             title
-          </div>
-          <div
+          </span>
+          <span
             class="c6"
           >
             description
-          </div>
+          </span>
         </div>
         <div
           class="c7"
