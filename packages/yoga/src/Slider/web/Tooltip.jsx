@@ -136,11 +136,13 @@ const Description = styled(Text.Small)`
 const Tooltip = ({ data, ...props }) =>
   Object.keys(data).length ? (
     <Wrapper hasRibbon={Boolean(data.ribbon)} {...props}>
-      {data.ribbon && <Ribbon>{data.ribbon}</Ribbon>}
+      {data.ribbon && <Ribbon as="span">{data.ribbon}</Ribbon>}
       {(data.title || data.description) && (
         <Tip>
-          {data.title && <Title>{data.title}</Title>}
-          {data.description && <Description>{data.description}</Description>}
+          {data.title && <Title as="span">{data.title}</Title>}
+          {data.description && (
+            <Description as="span">{data.description}</Description>
+          )}
         </Tip>
       )}
       <Arrow />

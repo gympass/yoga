@@ -61,7 +61,18 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 12,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -135,7 +146,18 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ri
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Open Sans",
               "fontSize": 12,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -210,7 +232,18 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Open Sans",
               "fontSize": 12,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -285,7 +318,18 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 12,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -307,11 +351,19 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 14,
               "fontWeight": "400",
               "height": 40,
+              "lineHeight": 20,
               "marginBottom": 12,
+              "marginLeft": 0,
+              "marginRight": 0,
               "marginTop": 8,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -324,9 +376,18 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 20,
               "fontWeight": "700",
+              "lineHeight": 24,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
               "marginTop": 12,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -339,9 +400,18 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 14,
               "fontWeight": "400",
+              "lineHeight": 20,
               "marginBottom": 8,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -417,7 +487,18 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 12,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -439,11 +520,19 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Open Sans",
               "fontSize": 14,
               "fontWeight": "400",
               "height": 40,
+              "lineHeight": 20,
               "marginBottom": 12,
+              "marginLeft": 0,
+              "marginRight": 0,
               "marginTop": 8,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -456,9 +545,18 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Open Sans",
               "fontSize": 20,
               "fontWeight": "700",
+              "lineHeight": 24,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
               "marginTop": 12,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -471,9 +569,18 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Open Sans",
               "fontSize": 14,
               "fontWeight": "400",
+              "lineHeight": 20,
               "marginBottom": 8,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -548,7 +655,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 12,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -579,11 +697,19 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 14,
               "fontWeight": "400",
               "height": 40,
+              "lineHeight": 20,
               "marginBottom": 12,
+              "marginLeft": 0,
+              "marginRight": 0,
               "marginTop": 8,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -596,9 +722,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 20,
               "fontWeight": "700",
+              "lineHeight": 24,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
               "marginTop": 12,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -611,9 +746,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 14,
               "fontWeight": "400",
+              "lineHeight": 20,
               "marginBottom": 8,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -754,7 +898,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 12,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -785,11 +940,19 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Open Sans",
               "fontSize": 14,
               "fontWeight": "400",
               "height": 40,
+              "lineHeight": 20,
               "marginBottom": 12,
+              "marginLeft": 0,
+              "marginRight": 0,
               "marginTop": 8,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -802,9 +965,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Open Sans",
               "fontSize": 20,
               "fontWeight": "700",
+              "lineHeight": 24,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
               "marginTop": 12,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -817,9 +989,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Open Sans",
               "fontSize": 14,
               "fontWeight": "400",
+              "lineHeight": 20,
               "marginBottom": 8,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -960,7 +1141,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Open Sans",
               "fontSize": 12,
+              "fontWeight": "400",
+              "lineHeight": 16,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -991,11 +1183,19 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Open Sans",
               "fontSize": 14,
               "fontWeight": "400",
               "height": 40,
+              "lineHeight": 20,
               "marginBottom": 12,
+              "marginLeft": 0,
+              "marginRight": 0,
               "marginTop": 8,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -1008,9 +1208,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Open Sans",
               "fontSize": 20,
               "fontWeight": "700",
+              "lineHeight": 24,
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
               "marginTop": 12,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }
@@ -1023,9 +1232,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Open Sans",
               "fontSize": 14,
               "fontWeight": "400",
+              "lineHeight": 20,
               "marginBottom": 8,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+              "paddingBottom": 0,
+              "paddingLeft": 0,
+              "paddingRight": 0,
+              "paddingTop": 0,
             },
           ]
         }

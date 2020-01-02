@@ -44,7 +44,7 @@ const Price = styled(Text.H3)`
   color: ${variant ? white : dark};
   `}
 `;
-const Period = styled(Text.Tiny)`
+const Period = styled(Text.Small)`
   ${({
     variant,
     theme: {
