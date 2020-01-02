@@ -50,7 +50,6 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       },
       label: {
         font: {
-          size: fontSizes.xsmall,
           weight: fontWeights.bold,
         },
         color: {
@@ -86,12 +85,6 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         },
         shadow: elevations.small,
       },
-      label: {
-        font: {
-          size: fontSizes.xsmall,
-          weight: fontWeights.regular,
-        },
-      },
       tooltip: {
         shadow: elevations.small,
         radius: radii.rounded,
@@ -106,11 +99,9 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         font: {
           color: colors.gray[8],
           title: {
-            size: fontSizes.small,
             weight: fontWeights.regular,
           },
           description: {
-            size: fontSizes.small,
             weight: fontWeights.regular,
           },
         },
@@ -125,7 +116,6 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           },
           font: {
             color: colors.white,
-            size: fontSizes.xsmall,
             weight: fontWeights.bold,
           },
         },
@@ -311,9 +301,6 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       elevation: elevations.small,
       ribbon: {
         radius: radii.circle,
-        font: {
-          size: fontSizes.xsmall,
-        },
       },
       plan: {
         title: {
@@ -321,27 +308,15 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
             top: spacing.xsmall,
             bottom: spacing.small,
           },
-          font: {
-            size: fontSizes.small,
-            weight: fontWeights.regular,
-          },
         },
         price: {
           margin: {
             top: spacing.small,
           },
-          font: {
-            size: fontSizes.large,
-            weight: fontWeights.bold,
-          },
         },
         period: {
           margin: {
             bottom: spacing.xsmall,
-          },
-          font: {
-            size: fontSizes.small,
-            weight: fontWeights.regular,
           },
         },
       },

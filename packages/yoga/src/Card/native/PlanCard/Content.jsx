@@ -5,9 +5,9 @@ import { string, node } from 'prop-types';
 import Content from '../Card/Content';
 import PlanCardContext from './PlanCardContext';
 
-const Title = styled.Text.attrs({
-  numberOfLines: 2,
-})`
+import Text from '../../../Text';
+
+const Title = styled(Text.Small)`
   ${({
     variant,
     theme: {
@@ -23,14 +23,11 @@ const Title = styled.Text.attrs({
   margin-top: ${plan.title.margin.top}px;
   margin-bottom: ${plan.title.margin.bottom}px;
 
-  font-size: ${plan.title.font.size}px;
-  font-weight: ${plan.title.font.weight};
-
   color: ${variant ? white : dark};
 `}
 `;
 
-const Price = styled.Text`
+const Price = styled(Text.H3)`
   ${({
     variant,
     theme: {
@@ -44,12 +41,10 @@ const Price = styled.Text`
   }) => `
   margin-top: ${plan.price.margin.top}px;
 
-  font-size: ${plan.price.font.size}px;
-  font-weight: ${plan.price.font.weight};
   color: ${variant ? white : dark};
   `}
 `;
-const Period = styled.Text`
+const Period = styled(Text.Tiny)`
   ${({
     variant,
     theme: {
@@ -63,8 +58,6 @@ const Period = styled.Text`
   }) => `
   margin-bottom: ${plan.period.margin.bottom}px;
 
-  font-size: ${plan.period.font.size}px;
-  font-weight: ${plan.period.font.weight};
   color: ${variant ? white : dark};
   `}
 `;
@@ -74,7 +67,11 @@ const PlanCardContent = ({ title, price, period, children }) => {
 
   return (
     <Content>
-      {title && <Title variant={variant}>{title}</Title>}
+      {title && (
+        <Title variant={variant} numberOfLines={2}>
+          {title}
+        </Title>
+      )}
       {price && <Price variant={variant}>{price}</Price>}
       {period && <Period variant={variant}>{period}</Period>}
 

@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import { string, node } from 'prop-types';
 
 import Content from '../Card/Content';
+import Text from '../../../Text';
 
-const Title = styled.h3`
+const Title = styled(Text.Small)`
   ${({
     theme: {
       yoga: {
@@ -18,9 +19,6 @@ const Title = styled.h3`
   height: 40px;
   margin: ${plan.title.margin.top}px 0 ${plan.title.margin.bottom}px;
 
-  font-size: ${plan.title.font.size}px;
-  font-weight: ${plan.title.font.weight};
-
   color: inherit;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -30,8 +28,9 @@ const Title = styled.h3`
 `}
 `;
 
-const Price = styled.strong`
+const Price = styled(Text.H3)`
   display: block;
+  color: inherit;
 
   ${({
     theme: {
@@ -43,13 +42,11 @@ const Price = styled.strong`
     },
   }) => `
   margin-top: ${plan.price.margin.top}px;
-
-  font-size: ${plan.price.font.size}px;
-  font-weight: ${plan.price.font.weight};
   `}
 `;
-const Period = styled.span`
+const Period = styled(Text.Tiny)`
   display: block;
+  color: inherit;
 
   ${({
     theme: {
@@ -61,17 +58,14 @@ const Period = styled.span`
     },
   }) => `
   margin-bottom: ${plan.period.margin.bottom}px;
-
-  font-size: ${plan.period.font.size}px;
-  font-weight: ${plan.period.font.weight};
   `}
 `;
 
 const PlanCardContent = ({ title, price, period, children, ...rest }) => (
   <Content {...rest}>
-    {title && <Title>{title}</Title>}
-    {price && <Price>{price}</Price>}
-    {period && <Period>{period}</Period>}
+    {title && <Title as="h3">{title}</Title>}
+    {price && <Price as="strong">{price}</Price>}
+    {period && <Period as="span">{period}</Period>}
     {children}
   </Content>
 );
