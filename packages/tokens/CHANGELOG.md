@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.2.5...@gympass/yoga-tokens@0.3.0) (2019-12-27)
+
+### Features
+
+- **yoga/tokens:** add breakpoint definitions ([851d9d4](https://github.com/Gympass/yoga/commit/851d9d43bfe2827eb469ffb0c8b50c693387e1a3))
+
 ## [0.2.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.2.4...@gympass/yoga-tokens@0.2.5) (2019-12-16)
 
 **Note:** Version bump only for package @gympass/yoga-tokens

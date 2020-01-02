@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.2.2...@gympass/yoga@1.3.0) (2019-12-27)
+
+### Features
+
+- **yoga/grid:** add Hide component ([beb8dda](https://github.com/Gympass/yoga/commit/beb8ddab619637f8f77e8f25754672108a099e1b))
+- **yoga/grid:** add hide prop to Col component ([f549034](https://github.com/Gympass/yoga/commit/f54903479ed761f444e9ba48a25477e5bb787b3e))
+- **yoga/grid:** add offset feature to cols ([f1cf1b2](https://github.com/Gympass/yoga/commit/f1cf1b2460b7616d24f587a27e5a246224a59f94))
+- **yoga/grid:** create Container, Row and Col components ([cfd4475](https://github.com/Gympass/yoga/commit/cfd4475d8b55e241738d1d3db12fdef055d7fc67))
+- **yoga/grid:** create media-query helper ([057a61a](https://github.com/Gympass/yoga/commit/057a61aa261ea0a36d8385a94a250495593f3063))
+- **yoga/grid:** create media-query helper functions ([e4f4289](https://github.com/Gympass/yoga/commit/e4f428959419a99fa302859293407332bb66b084))
+
 ## [1.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.2.1...@gympass/yoga@1.2.2) (2019-12-17)
 
 ### Bug Fixes

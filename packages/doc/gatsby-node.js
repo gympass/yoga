@@ -81,6 +81,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
           ? true
           : node.frontmatter.linkable,
     });
+
+    createNodeField({
+      name: 'order',
+      node,
+      value: node.frontmatter.order || 0,
+    });
   }
 };
 
