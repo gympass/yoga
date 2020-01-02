@@ -3,6 +3,7 @@ import { number, arrayOf, string } from 'prop-types';
 import styled, { css } from 'styled-components';
 
 import activeDot from '../activeDot';
+import Text from '../../Text';
 
 const Dot = styled.div`
   ${({
@@ -19,7 +20,7 @@ const Dot = styled.div`
   `}
 `;
 
-const Label = styled.span`
+const Label = styled(Text.Tiny)`
   ${({
     theme: {
       yoga: {
@@ -29,7 +30,6 @@ const Label = styled.span`
   }) => css`
     width: 95px;
 
-    font-size: ${stepper.label.font.size}px;
     font-weight: ${stepper.label.font.weight};
 
     transform: translateX(-50%);
@@ -81,7 +81,7 @@ const Dots = ({ activeStep, labels }) => (
     {labels.map((label, index) => (
       <DotWrapper active={activeDot(index, activeStep)} key={label}>
         <Dot />
-        <Label>{label}</Label>
+        <Label as="span">{label}</Label>
       </DotWrapper>
     ))}
   </Wrapper>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { bool, string, shape } from 'prop-types';
 import styled from 'styled-components';
+import Text from '../../Text';
 
 const Wrapper = styled.div`
   width: 95px;
@@ -83,7 +84,7 @@ const Arrow = styled.div`
   `}
 `;
 
-const Ribbon = styled.div`
+const Ribbon = styled(Text.Tiny)`
   position: relative;
   text-align: center;
 
@@ -100,12 +101,11 @@ const Ribbon = styled.div`
     border-top-right-radius: ${slider.tooltip.ribbon.radius}px;
     color: ${slider.tooltip.ribbon.font.color};
 
-    font-size: ${slider.tooltip.ribbon.font.size}px;
     font-weight: ${slider.tooltip.ribbon.font.weight};
   `}
 `;
 
-const Title = styled.div`
+const Title = styled(Text.Small)`
   text-align: center;
   ${({
     theme: {
@@ -115,12 +115,11 @@ const Title = styled.div`
     },
   }) => `
     color: ${slider.tooltip.font.color};
-    font-size: ${slider.tooltip.font.title.size}px;
     font-weight: ${slider.tooltip.font.title.weight};
   `}
 `;
 
-const Description = styled.div`
+const Description = styled(Text.Small)`
   text-align: center;
   ${({
     theme: {
@@ -130,7 +129,6 @@ const Description = styled.div`
     },
   }) => `
     color: ${slider.tooltip.font.color};
-    font-size: ${slider.tooltip.font.description.size}px;
     font-weight: ${slider.tooltip.font.description.weight};
   `}
 `;
