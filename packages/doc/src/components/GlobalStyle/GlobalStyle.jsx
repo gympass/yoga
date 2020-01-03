@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle(
       font-weight: 300;
 
       + p {
-        margin: 10px 0 50px;
+        margin-top: 10px;
         
         color: #6b6b78;
         font-weight: 300;
@@ -111,10 +111,6 @@ const GlobalStyle = createGlobalStyle(
     @media (max-width: 900px) {
       h1 {
         font-size: 26px;
-
-        + p {
-          margin-bottom: 30px;
-        }
       }
 
       h2 {
