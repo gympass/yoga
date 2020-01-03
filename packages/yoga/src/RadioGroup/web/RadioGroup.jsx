@@ -38,7 +38,6 @@ const Group = styled.div.attrs({
   `}
 `;
 
-/** Radio group allows user to select one option from a set of options. Use value on group to set the selected option. */
 const RadioGroup = ({
   name,
   onChange,

@@ -49,7 +49,7 @@ const ComponentTitle = ({ prefix, children = '' }) => {
   return (
     <>
       <Heading>{children}</Heading>
-      {isComponent && <p>{description}</p>}
+      {description && <p>{description}</p>}
     </>
   );
 };

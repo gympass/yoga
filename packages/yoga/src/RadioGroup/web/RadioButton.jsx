@@ -55,6 +55,8 @@ const RadioMark = styled.label`
   `}
 `;
 
+/** Radio group allows user to select one option from a set of options. Use
+value on group to set the selected option. */
 const RadioGroupButton = ({ children, value, ...rest }) => {
   const { name, onChange, small, selectedValue, ...context } = useContext(
     RadioGroupContext,

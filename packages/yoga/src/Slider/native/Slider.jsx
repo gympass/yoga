@@ -7,7 +7,10 @@ import { LabelView, LabelText } from './Label';
 import Marker from './Marker';
 import Step from './Step';
 
-/** Sliders allow users to make selections from a range of values. Sliders reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters. */
+/** Sliders allow users to make selections from a range of values. Sliders
+reflect a range of values along a bar, from which users may select a single
+value. They are ideal for adjusting settings such as volume, brightness, or
+applying image filters. */
 const Slider = ({
   max,
   maxLabel,
