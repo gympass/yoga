@@ -12,9 +12,11 @@ const {
   colors: tokenColors,
   borders,
   fonts,
+  lineHeights,
 } = tokens;
 
 const BaseTheme = ({ primary, secondary, tertiary }) => {
+  const [baseFontFamily] = fonts;
   const baseFontSize = fontSizes.medium;
   const colors = {
     primary,
@@ -48,7 +50,6 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       },
       label: {
         font: {
-          size: fontSizes.xsmall,
           weight: fontWeights.bold,
         },
         color: {
@@ -84,12 +85,6 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         },
         shadow: elevations.small,
       },
-      label: {
-        font: {
-          size: fontSizes.xsmall,
-          weight: fontWeights.regular,
-        },
-      },
       tooltip: {
         shadow: elevations.small,
         radius: radii.rounded,
@@ -104,11 +99,9 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         font: {
           color: colors.gray[8],
           title: {
-            size: fontSizes.small,
             weight: fontWeights.regular,
           },
           description: {
-            size: fontSizes.small,
             weight: fontWeights.regular,
           },
         },
@@ -123,7 +116,6 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           },
           font: {
             color: colors.white,
-            size: fontSizes.xsmall,
             weight: fontWeights.bold,
           },
         },
@@ -309,9 +301,6 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       elevation: elevations.small,
       ribbon: {
         radius: radii.circle,
-        font: {
-          size: fontSizes.xsmall,
-        },
       },
       plan: {
         title: {
@@ -319,27 +308,15 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
             top: spacing.xsmall,
             bottom: spacing.small,
           },
-          font: {
-            size: fontSizes.small,
-            weight: fontWeights.regular,
-          },
         },
         price: {
           margin: {
             top: spacing.small,
           },
-          font: {
-            size: fontSizes.large,
-            weight: fontWeights.bold,
-          },
         },
         period: {
           margin: {
             bottom: spacing.xsmall,
-          },
-          font: {
-            size: fontSizes.small,
-            weight: fontWeights.regular,
           },
         },
       },
@@ -416,9 +393,54 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         },
       },
     },
+    text: {
+      h1: {
+        fontsize: fontSizes.xxlarge,
+        lineHeight: lineHeights.xlarge,
+        fontWeight: fontWeights.bold,
+      },
+      h2: {
+        fontsize: fontSizes.xlarge,
+        lineHeight: lineHeights.large,
+        fontWeight: fontWeights.bold,
+      },
+      h3: {
+        fontsize: fontSizes.large,
+        lineHeight: lineHeights.medium,
+        fontWeight: fontWeights.bold,
+      },
+      h4: {
+        fontsize: fontSizes.medium,
+        lineHeight: lineHeights.small,
+        fontWeight: fontWeights.bold,
+      },
+      p: {
+        fontsize: fontSizes.medium,
+        lineHeight: lineHeights.small,
+        fontWeight: fontWeights.regular,
+      },
+      small: {
+        fontsize: fontSizes.small,
+        lineHeight: lineHeights.small,
+        fontWeight: fontWeights.regular,
+      },
+      tiny: {
+        fontsize: fontSizes.xsmall,
+        lineHeight: lineHeights.xsmall,
+        fontWeight: fontWeights.regular,
+      },
+    },
   };
 
-  return { components, baseFontSize, colors, spacing, fonts, breakpoints };
+  return {
+    components,
+    baseFontFamily,
+    baseFontSize,
+    colors,
+    spacing,
+    fonts,
+    breakpoints,
+  };
 };
 
 export default BaseTheme;

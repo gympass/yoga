@@ -7,6 +7,7 @@ import RadioGroup from './RadioGroup';
 import { Card, PlanCard } from './Card';
 import Stepper from './Stepper';
 import { Container, Row, Col, Hide } from './Grid';
+import Text from './Text';
 
 export {
   ThemeProvider,
@@ -23,4 +24,5 @@ export {
   Row,
   Col,
   Hide,
+  Text,
 };

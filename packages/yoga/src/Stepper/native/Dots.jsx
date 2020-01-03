@@ -3,6 +3,7 @@ import { number, arrayOf, string } from 'prop-types';
 import styled from 'styled-components';
 
 import activeDot from '../activeDot';
+import Text from '../../Text';
 
 const Wrapper = styled.View`
   flex-direction: row;
@@ -36,7 +37,7 @@ const Dot = styled.View(
   `,
 );
 
-const Label = styled.Text(
+const Label = styled(Text.Tiny)(
   ({
     active,
     theme: {
@@ -53,7 +54,6 @@ const Label = styled.Text(
       active ? stepper.label.color.active : stepper.label.color.inactive
     };
 
-    font-size: ${stepper.label.font.size}px;
     font-weight: ${stepper.label.font.weight};
     text-align: center;
   `,

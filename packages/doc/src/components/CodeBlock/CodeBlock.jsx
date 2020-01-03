@@ -26,9 +26,10 @@ const StyledLiveError = styled(LiveError)`
 
 const Pre = styled.pre`
   ${({
+    bordered,
     theme: {
       yoga: {
-        colors: { primary: primaryPallete },
+        colors: { primary: primaryPallete, gray: grayPallete },
       },
     },
   }) => `
@@ -42,6 +43,7 @@ const Pre = styled.pre`
     }
 
     overflow: auto;
+    ${bordered ? `border: 1px solid ${grayPallete[3]};` : ''}
 
     @media (max-width: 900px) {
       font-size: 12px;
@@ -281,7 +283,13 @@ const CodeBlock = ({ children, reactLive, center }) => {
       language="jsx"
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <Pre className={className} style={style}>
+        <Pre
+          bordered
+          className={className}
+          style={{
+            ...style,
+          }}
+        >
           {tokens.map((line, i) => (
             <div {...getLineProps({ line, key: i })}>
               {line.map((token, key) => (

@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Live the mission
+  </h1>
+  <h2
+    class="c1"
+  >
+    Live the mission
+  </h2>
+  <h3
+    class="c2"
+  >
+    Live the mission
+  </h3>
+  <h4
+    class="c3"
+  >
+    Live the mission
+  </h4>
+  <p
+    class="c4"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c5"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c6"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #F46152;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #652CDB;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #2B9486;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Live the mission
+  </h1>
+  <h2
+    class="c1"
+  >
+    Live the mission
+  </h2>
+  <h3
+    class="c2"
+  >
+    Live the mission
+  </h3>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    Live the mission
+  </p>
+</div>
+`;

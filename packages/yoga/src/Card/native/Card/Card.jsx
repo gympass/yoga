@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { string, shape, oneOf, node } from 'prop-types';
 
+import Text from '../../../Text';
+
 const CardStyled = styled.View(
   ({
     theme: {
@@ -53,19 +55,16 @@ const Ribbon = styled.View`
   `}
 `;
 
-const RibbonText = styled.Text`
+const RibbonText = styled(Text.Tiny)`
   ${({
     variant,
     theme: {
       yoga: {
-        components: { card },
         colors: { white, dark },
       },
     },
   }) => `
     color: ${variant ? white : dark};
-
-    font-size: ${card.ribbon.font.size}px;
   `}
 `;
 

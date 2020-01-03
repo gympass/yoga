@@ -84,8 +84,6 @@ const Slider = ({
     },
 
     labelStyle: {
-      fontSize: slider.label.font.size,
-      fontWeight: slider.label.font.weight,
       position: 'absolute',
       top: 15,
     },
