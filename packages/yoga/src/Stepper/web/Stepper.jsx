@@ -29,7 +29,8 @@ const LineWrapper = styled.div`
   `}
 `;
 
-/** Stepper is responsible for the logic that drives a stepped workflow, it provides a wizard-like workflow by dividing content into logical steps. */
+/** Stepper is responsible for the logic that drives a stepped workflow, it
+provides a wizard-like workflow by dividing content into logical steps. */
 const Stepper = ({ children, activeStep, ...rest }) => (
   <Root {...rest}>
     <LineWrapper>
