@@ -15,7 +15,7 @@ const Navbar = styled.ul`
     flex-grow: 1;
     flex-shrink: 1;
     list-style: none;
-    margin: 0 0 25px 0;
+    margin: 30px 0 25px 0;
     padding: 0;
   `};
 `;
