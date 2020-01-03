@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.7.5...@gympass/yoga-doc@0.8.0) (2020-01-03)
+
+### Features
+
+- **text:** text component for web ([98d2267](https://github.com/Gympass/yoga/commit/98d226715f234604e67dc4997a727d528089e952))
+- **text:** text component for web and native ([6750d41](https://github.com/Gympass/yoga/commit/6750d417c360f73dbf40561b5f81640403e247fe))
+
 ## [0.7.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.7.4...@gympass/yoga-doc@0.7.5) (2019-12-27)
 
 **Note:** Version bump only for package @gympass/yoga-doc

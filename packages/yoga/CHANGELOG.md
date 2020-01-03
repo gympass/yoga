@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.3.0...@gympass/yoga@1.4.0) (2020-01-03)
+
+### Features
+
+- **fonts:** add open-sans fonts ([a0196b5](https://github.com/Gympass/yoga/commit/a0196b5230e34422f88d1ec8ad9921f1891731ee))
+- **text:** text component for web ([98d2267](https://github.com/Gympass/yoga/commit/98d226715f234604e67dc4997a727d528089e952))
+- **text:** text component for web and native ([6750d41](https://github.com/Gympass/yoga/commit/6750d417c360f73dbf40561b5f81640403e247fe))
+- **theme-provider:** add global styles in the Theme Provider ([87c88ab](https://github.com/Gympass/yoga/commit/87c88ab0194c09ed080f62917f5841ab5f728aa9))
+
 # [1.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.2.2...@gympass/yoga@1.3.0) (2019-12-27)
 
 ### Features

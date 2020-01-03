@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.5.13...@gympass/yoga-labnative@0.6.0) (2020-01-03)
+
+### Features
+
+- **text:** text component for web and native ([6750d41](https://github.com/Gympass/yoga/commit/6750d417c360f73dbf40561b5f81640403e247fe))
+
 ## [0.5.13](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.5.12...@gympass/yoga-labnative@0.5.13) (2019-12-27)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
