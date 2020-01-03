@@ -6,6 +6,7 @@ import Slider from './Slider';
 import RadioGroup from './RadioGroup';
 import { Card, PlanCard } from './Card';
 import Stepper from './Stepper';
+import Text from './Text';
 
 export {
   ThemeProvider,
@@ -18,4 +19,5 @@ export {
   Card,
   PlanCard,
   Stepper,
+  Text,
 };

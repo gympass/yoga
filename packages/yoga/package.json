@@ -10,6 +10,7 @@
     "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
     "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
     "prebuild": "rm -rf ./dist",
+    "postbuild": "cp -r ./src/Fonts ./dist/fonts",
     "prepublishOnly": "node ../../scripts/prepublish.js",
     "postpublish": "lerna run deploy --scope=@gympass/yoga-doc && node ../../scripts/notify.js"
   },

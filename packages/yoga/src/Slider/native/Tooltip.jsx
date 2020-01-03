@@ -2,6 +2,8 @@ import React from 'react';
 import { string, node } from 'prop-types';
 import styled from 'styled-components';
 
+import Text from '../../Text';
+
 const Wrapper = styled.View(
   ({
     theme: {
@@ -36,7 +38,7 @@ const Tip = styled.View(
   `,
 );
 
-const Title = styled.Text(
+const Title = styled(Text.Small)(
   ({
     theme: {
       yoga: {
@@ -45,14 +47,13 @@ const Title = styled.Text(
     },
   }) => `
     color: ${slider.tooltip.font.color};
-    font-size: ${slider.tooltip.font.title.size};
     font-weight: ${slider.tooltip.font.title.weight};
     margin-bottom: 5px;
     text-align: center;
   `,
 );
 
-const Description = styled.Text(
+const Description = styled(Text.Small)(
   ({
     theme: {
       yoga: {
@@ -61,7 +62,6 @@ const Description = styled.Text(
     },
   }) => `
     color: ${slider.tooltip.font.color};
-    font-size: ${slider.tooltip.font.description.size}px;
     font-weight: ${slider.tooltip.font.description.weight};
     text-align: center;
   `,
@@ -107,7 +107,7 @@ const RibbonWrapper = styled.View(
   `,
 );
 
-const RibbonText = styled.Text(
+const RibbonText = styled(Text.Tiny)(
   ({
     theme: {
       yoga: {
@@ -116,7 +116,6 @@ const RibbonText = styled.Text(
     },
   }) => `
     color: ${slider.tooltip.ribbon.font.color};
-    font-size: ${slider.tooltip.ribbon.font.size}px;
     font-weight: ${slider.tooltip.ribbon.font.weight};
     text-align: center;
   `,

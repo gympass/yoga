@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { string, shape, oneOf, node } from 'prop-types';
 
+import Text from '../../../Text';
+
 const CardStyled = styled.section`
   ${({
     theme: {
@@ -22,7 +24,7 @@ const CardStyled = styled.section`
 `}
 `;
 
-const Ribbon = styled.span`
+const Ribbon = styled(Text.Tiny)`
   ${({
     variant,
     theme: {
@@ -51,15 +53,15 @@ const Ribbon = styled.span`
 
   background-color: ${variant ? color[3] : gray[1]};
   color: ${variant ? white : dark};
-
-  font-size: ${card.ribbon.font.size}px;
   `}
 `;
 
 const Card = ({ ribbon, children, ...rest }) => (
   <CardStyled {...rest}>
     {Object.keys(ribbon).length > 0 && (
-      <Ribbon variant={ribbon.variant}>{ribbon.text}</Ribbon>
+      <Ribbon variant={ribbon.variant} as="span">
+        {ribbon.text}
+      </Ribbon>
     )}
     {children}
   </CardStyled>

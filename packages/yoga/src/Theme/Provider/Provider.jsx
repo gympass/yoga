@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider as SCThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import * as tokens from '@gympass/yoga-tokens';
 import * as themes from '../themes';
@@ -7,26 +7,22 @@ import * as themes from '../themes';
 const getTheme = ({ theme, locale }) => {
   const token = tokens[locale] || tokens.default;
   const appTheme = themes[theme] || themes.default;
-
   return appTheme(token);
 };
 
 /** This component provides a theme to all React components underneath itself via the context API. */
-const ThemeProvider = ({ children, ...theme }) => (
-  <SCThemeProvider theme={{ yoga: getTheme(theme) }}>
-    {children}
-  </SCThemeProvider>
+const Provider = ({ theme, locale, ...rest }) => (
+  <ThemeProvider theme={{ yoga: getTheme({ theme, locale }) }} {...rest} />
 );
 
-ThemeProvider.propTypes = {
+Provider.propTypes = {
   theme: PropTypes.string,
   locale: PropTypes.string,
-  children: PropTypes.node.isRequired,
 };
 
-ThemeProvider.defaultProps = {
+Provider.defaultProps = {
   theme: 'endUser',
   locale: 'pt-BR',
 };
 
-export default ThemeProvider;
+export default Provider;
