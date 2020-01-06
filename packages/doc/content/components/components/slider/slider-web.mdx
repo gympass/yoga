@@ -6,25 +6,30 @@ Gympass `<Slider />` component extends from <a href="https://github.com/react-co
 
 #### Simple slider
 
-```javascript reactLive=true center=true
-<Slider
-  max={10}
-  min={0}
-  maxLabel={10}
-  minLabel={0}
-  tooltip={[
-    {
-      ribbon: 'My plan',
-      title: 'Up to',
-      description: 'U$ 99,90',
-      step: 2,
-      visible: true,
-    },
-  ]}
-/>
+```javascript reactLive=true center=true state=true
+render(() => {
+  const [values, setValues] = useState([0]);
+
+  return (
+    <Slider
+      values={values}
+      onChange={value => setValues([value])}
+      max={10}
+      min={0}
+      minLabel={values[0]}
+      tooltip={[
+        {
+          description: 'Simple tooltip',
+          step: 2,
+          visible: true,
+        },
+      ]}
+    />
+  );
+});
 ```
 
-#### Working slider
+#### With many tooltips
 
 ```javascript reactLive=true state=true
 render(() => {
