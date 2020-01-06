@@ -5,7 +5,7 @@ import { MDXContext } from '@mdx-js/react';
 import { node, string } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Col } from '@gympass/yoga';
+import * as YogaComponents from '@gympass/yoga';
 import githubTheme from 'prism-react-renderer/themes/github';
 
 import { CodeSandboxButton } from 'components';
@@ -85,7 +85,7 @@ const Component = styled.div`
     background-color: ${darkMode ? dark : white};
     transition: all 0.3s ease-in-out;
 
-    ${Col} {
+    ${YogaComponents.Col} {
       background-color: ${primary[1]};
       border: 1px solid;
     }
@@ -187,13 +187,16 @@ const Moon = styled(MoonVector)`
   `}
 `;
 
-const CodeBlock = ({ children, reactLive, center }) => {
+const CodeBlock = ({ children, reactLive, center, state }) => {
   const [codeVisible, setCodeVisible] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
   const normalizedCodeExample = children.trim();
   const importsRegex = /(?:<)([A-Z][A-Za-z]+)/g;
   const imports = [...new Set(normalizedCodeExample.match(importsRegex))]
+    .filter(importedComponent =>
+      Object.keys(YogaComponents).includes(importedComponent.replace(/</g, '')),
+    )
     .join(', ')
     .replace(/</g, '');
 
@@ -208,8 +211,9 @@ const CodeBlock = ({ children, reactLive, center }) => {
       {scope => (
         <LiveProvider
           code={normalizedCodeExample}
-          scope={scope}
+          scope={{ ...scope, useState, styled }}
           theme={githubTheme}
+          noInline={state}
         >
           <Preview>
             <Toolbar>
@@ -307,11 +311,13 @@ CodeBlock.propTypes = {
   children: node.isRequired,
   reactLive: string,
   center: string,
+  state: string,
 };
 
 CodeBlock.defaultProps = {
   reactLive: undefined,
   center: 'false',
+  state: undefined,
 };
 
 export default CodeBlock;

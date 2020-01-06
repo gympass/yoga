@@ -5,8 +5,13 @@ Switches are best used for communicating activation (e.g., on/off states), while
 
 ### Usage
 
-```javascript reactLive=true center=true
-<Checkbox.Switch />
+```javascript reactLive=true center=true state=true
+render(() => {
+  const [checked, toggleChecked] = useState(false);
+  const onChange = () => toggleChecked(!checked);
+
+  return <Checkbox.Switch checked={checked} onChange={onChange} />;
+});
 ```
 
 ### Props
