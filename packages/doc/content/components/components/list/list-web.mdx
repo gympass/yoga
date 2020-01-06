@@ -4,29 +4,48 @@ Gympass `<List />` component implements all our design guidelines, be sure to wr
 
 ### Usage
 
-```javascript reactLive=true
-<List>
-  <List.Item>
-    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-      <span>Locker</span>
-      <Checkbox.Switch />
-    </div>
-  </List.Item>
+```javascript reactLive=true state=true
+const SwitchLine = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
-  <List.Item>
-    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-      <span>Wi-fi</span>
-      <Checkbox.Switch />
-    </div>
-  </List.Item>
+render(() => {
+  const [locker, setLocker] = useState(false);
+  const [wifi, setWifi] = useState(false);
+  const [parking, setParking] = useState(false);
 
-  <List.Item>
-    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-      <span>Parking</span>
-      <Checkbox.Switch />
-    </div>
-  </List.Item>
-</List>
+  return (
+    <List>
+      <List.Item>
+        <SwitchLine>
+          <span>Locker</span>
+          <Checkbox.Switch
+            checked={locker}
+            onChange={() => setLocker(!locker)}
+          />
+        </SwitchLine>
+      </List.Item>
+
+      <List.Item>
+        <SwitchLine>
+          <span>Wi-fi</span>
+          <Checkbox.Switch checked={wifi} onChange={() => setWifi(!wifi)} />
+        </SwitchLine>
+      </List.Item>
+
+      <List.Item>
+        <SwitchLine>
+          <span>Parking</span>
+          <Checkbox.Switch
+            checked={parking}
+            onChange={() => setParking(!parking)}
+          />
+        </SwitchLine>
+      </List.Item>
+    </List>
+  );
+});
 ```
 
 ### Props
