@@ -4,12 +4,22 @@
 
 ### Usage
 
-```javascript reactLive=true center=true
-<RadioGroup name="the_best" selectedValue="now">
-  <RadioGroup.Button value="24h">24 hours</RadioGroup.Button>
-  <RadioGroup.Button value="now">Open now</RadioGroup.Button>
-  <RadioGroup.Button value="sundays">At Sundays</RadioGroup.Button>
-</RadioGroup>
+```javascript reactLive=true center=true state=true
+render(() => {
+  const [selectedValue, setSelectedValue] = useState('now');
+
+  return (
+    <RadioGroup
+      name="openning"
+      selectedValue={selectedValue}
+      onChange={({ target: { value } }) => setSelectedValue(value)}
+    >
+      <RadioGroup.Button value="24h">24 hours</RadioGroup.Button>
+      <RadioGroup.Button value="now">Open now</RadioGroup.Button>
+      <RadioGroup.Button value="sundays">At Sundays</RadioGroup.Button>
+    </RadioGroup>
+  );
+});
 ```
 
 ### Props
