@@ -11,10 +11,12 @@ You can use it with or without children.
 ```javascript reactLive=true center=true state=true
 render(() => {
   const [activeStep, setActiveStep] = useState(0);
+
   const Section = styled.div`
     text-align: center;
     padding: 20px;
   `;
+
   const Actions = styled.div`
     display: flex;
     justify-content: space-between;

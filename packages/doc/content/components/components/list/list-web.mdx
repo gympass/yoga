@@ -11,9 +11,9 @@ const SwitchLine = styled.div`
 `;
 
 render(() => {
-  const [locker, setLocker] = useState(false);
-  const [wifi, setWifi] = useState(false);
-  const [parking, setParking] = useState(false);
+  const [locker, toggleLocker] = useState(false);
+  const [wifi, toggleWifi] = useState(false);
+  const [parking, toggleParking] = useState(false);
 
   return (
     <List>
@@ -22,7 +22,7 @@ render(() => {
           <span>Locker</span>
           <Checkbox.Switch
             checked={locker}
-            onChange={() => setLocker(!locker)}
+            onChange={() => toggleLocker(!locker)}
           />
         </SwitchLine>
       </List.Item>
@@ -30,7 +30,7 @@ render(() => {
       <List.Item>
         <SwitchLine>
           <span>Wi-fi</span>
-          <Checkbox.Switch checked={wifi} onChange={() => setWifi(!wifi)} />
+          <Checkbox.Switch checked={wifi} onChange={() => toggleWifi(!wifi)} />
         </SwitchLine>
       </List.Item>
 
@@ -39,7 +39,7 @@ render(() => {
           <span>Parking</span>
           <Checkbox.Switch
             checked={parking}
-            onChange={() => setParking(!parking)}
+            onChange={() => toggleParking(!parking)}
           />
         </SwitchLine>
       </List.Item>
