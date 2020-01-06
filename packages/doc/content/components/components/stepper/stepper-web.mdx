@@ -25,22 +25,34 @@ render(() => {
       <Stepper.Step label="Confirm Booking">
         <Section>Confirm booking content</Section>
         <Actions>
-          <Button disabled>Previous</Button>
-          <Button onClick={() => setActiveStep(1)}>Next</Button>
+          <Button small disabled>
+            Previous
+          </Button>
+          <Button small onClick={() => setActiveStep(1)}>
+            Next
+          </Button>
         </Actions>
       </Stepper.Step>
       <Stepper.Step label="Class Booked">
         <Section>Class Booked content</Section>
         <Actions>
-          <Button onClick={() => setActiveStep(0)}>Previous</Button>
-          <Button onClick={() => setActiveStep(2)}>Next</Button>
+          <Button small onClick={() => setActiveStep(0)}>
+            Previous
+          </Button>
+          <Button small onClick={() => setActiveStep(2)}>
+            Next
+          </Button>
         </Actions>
       </Stepper.Step>
       <Stepper.Step label="Check-in">
         <Section>Check-in content</Section>
         <Actions>
-          <Button onClick={() => setActiveStep(1)}>Previous</Button>
-          <Button disabled>Next</Button>
+          <Button small onClick={() => setActiveStep(1)}>
+            Previous
+          </Button>
+          <Button small disabled>
+            Next
+          </Button>
         </Actions>
       </Stepper.Step>
     </Stepper>
