@@ -4,13 +4,21 @@ Gympass `<Checkbox />` are used for a list of options where the user may select 
 
 ### Usage
 
-```javascript reactLive=true center=true
-<Checkbox
-  checked
-  value="checkbox-value"
-  label="Checkbox Checked"
-  helper="Checkbox Helper"
-/>
+```javascript reactLive=true center=true state=true
+render(() => {
+  const [checked, setChecked] = useState(false);
+  const onChange = () => setChecked(!checked);
+
+  return (
+    <Checkbox
+      checked={checked}
+      onChange={onChange}
+      value="checkbox-value"
+      label="Checkbox Checked"
+      helper="Checkbox Helper"
+    />
+  );
+});
 ```
 
 ### Props
