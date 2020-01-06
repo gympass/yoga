@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.4.0...@gympass/yoga@1.4.1) (2020-01-06)
+
+### Bug Fixes
+
+- **slider:** fix slider styles ([c5ad07d](https://github.com/Gympass/yoga/commit/c5ad07d73b85c49065aca579800bacb4951396fa))
+
 # [1.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.3.0...@gympass/yoga@1.4.0) (2020-01-03)
 
 ### Features
