@@ -87,6 +87,7 @@ const Arrow = styled.div`
 const Ribbon = styled(Text.Tiny)`
   position: relative;
   text-align: center;
+  display: block;
 
   ${({
     theme: {
@@ -106,6 +107,7 @@ const Ribbon = styled(Text.Tiny)`
 `;
 
 const Title = styled(Text.Small)`
+  display: block;
   text-align: center;
   ${({
     theme: {
@@ -120,6 +122,7 @@ const Title = styled(Text.Small)`
 `;
 
 const Description = styled(Text.Small)`
+  display: block;
   text-align: center;
   ${({
     theme: {
