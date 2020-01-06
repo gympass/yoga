@@ -40,10 +40,7 @@ PlanCard.propTypes = {
 };
 
 PlanCard.defaultProps = {
-  ribbon: {
-    text: '',
-    variant: '',
-  },
+  ribbon: {},
   variant: '',
 };
 PlanCard.displayName = 'PlanCard';
