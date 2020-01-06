@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.4.1...@gympass/yoga@1.4.2) (2020-01-06)
+
+### Bug Fixes
+
+- **plancard:** remove default props from ribbon in PlanCard ([313dcfc](https://github.com/Gympass/yoga/commit/313dcfcee4d00486d9112d7d9c7aca6f165ee8b5)), closes [#71](https://github.com/Gympass/yoga/issues/71)
+
 ## [1.4.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.4.0...@gympass/yoga@1.4.1) (2020-01-06)
 
 ### Bug Fixes
