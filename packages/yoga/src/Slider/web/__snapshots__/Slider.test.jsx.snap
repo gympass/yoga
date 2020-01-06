@@ -492,6 +492,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   color: #41414A;
   position: relative;
   text-align: center;
+  display: block;
   padding: 4px 8px 4px 8px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -507,6 +508,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   font-weight: 400;
   font-family: Open Sans;
   color: #41414A;
+  display: block;
   text-align: center;
   color: #6B6B78;
   font-weight: 400;
@@ -520,6 +522,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   font-weight: 400;
   font-family: Open Sans;
   color: #41414A;
+  display: block;
   text-align: center;
   color: #6B6B78;
   font-weight: 400;
