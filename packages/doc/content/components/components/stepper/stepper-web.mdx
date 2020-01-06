@@ -4,36 +4,48 @@ Gympass `<Stepper />` component is used to guide the user through determined ste
 
 ### Usage
 
+You can use it with or without children.
+
 #### Simple
 
-```javascript reactLive=true center=true
-<Stepper activeStep={0}>
-  <Stepper.Step label="Confirm Booking" />
-  <Stepper.Step label="Class Booked" />
-  <Stepper.Step label="Check-in" />
-</Stepper>
-```
+```javascript reactLive=true center=true state=true
+render(() => {
+  const [activeStep, setActiveStep] = useState(0);
+  const Section = styled.div`
+    text-align: center;
+    padding: 20px;
+  `;
+  const Actions = styled.div`
+    display: flex;
+    justify-content: space-between;
+  `;
 
-#### With content
-
-```javascript reactLive=true center=true
-<Stepper activeStep={1}>
-  <Stepper.Step label="Step 0">
-    <div style={{ paddingTop: 20, display: 'flex', justifyContent: 'center' }}>
-      Step 0
-    </div>
-  </Stepper.Step>
-  <Stepper.Step label="Step 1">
-    <div style={{ paddingTop: 20, display: 'flex', justifyContent: 'center' }}>
-      Step 1
-    </div>
-  </Stepper.Step>
-  <Stepper.Step label="Step 2">
-    <div style={{ paddingTop: 20, display: 'flex', justifyContent: 'center' }}>
-      Step 2
-    </div>
-  </Stepper.Step>
-</Stepper>
+  return (
+    <Stepper activeStep={activeStep}>
+      <Stepper.Step label="Confirm Booking">
+        <Section>Confirm booking content</Section>
+        <Actions>
+          <Button disabled>Previous</Button>
+          <Button onClick={() => setActiveStep(1)}>Next</Button>
+        </Actions>
+      </Stepper.Step>
+      <Stepper.Step label="Class Booked">
+        <Section>Class Booked content</Section>
+        <Actions>
+          <Button onClick={() => setActiveStep(0)}>Previous</Button>
+          <Button onClick={() => setActiveStep(2)}>Next</Button>
+        </Actions>
+      </Stepper.Step>
+      <Stepper.Step label="Check-in">
+        <Section>Check-in content</Section>
+        <Actions>
+          <Button onClick={() => setActiveStep(1)}>Previous</Button>
+          <Button disabled>Next</Button>
+        </Actions>
+      </Stepper.Step>
+    </Stepper>
+  );
+});
 ```
 
 ### Props
