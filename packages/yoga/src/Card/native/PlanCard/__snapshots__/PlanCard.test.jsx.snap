@@ -653,45 +653,52 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       >
         <TouchableWithoutFeedback>
           <View
-            disabled={false}
-            full={false}
-            inverted={false}
-            pressed={false}
-            small={false}
             style={
-              Array [
-                Object {
-                  "alignSelf": "center",
-                  "backgroundColor": "#F46152",
-                  "borderColor": "#F46152",
-                  "borderRadius": 9999,
-                  "borderStyle": "solid",
-                  "borderWidth": 2,
-                  "height": 48,
-                  "justifyContent": "center",
-                  "paddingLeft": 24,
-                  "paddingRight": 24,
-                },
-              ]
+              Object {
+                "flexDirection": "row",
+              }
             }
           >
-            <Text
+            <View
               disabled={false}
+              full={false}
               inverted={false}
               pressed={false}
+              small={false}
               style={
                 Array [
                   Object {
-                    "color": "#FFFFFF",
-                    "fontSize": 14,
-                    "fontWeight": "700",
-                    "textAlign": "center",
+                    "backgroundColor": "#F46152",
+                    "borderColor": "#F46152",
+                    "borderRadius": 9999,
+                    "borderStyle": "solid",
+                    "borderWidth": 2,
+                    "height": 48,
+                    "justifyContent": "center",
+                    "paddingLeft": 24,
+                    "paddingRight": 24,
                   },
                 ]
               }
             >
-              should have buttons
-            </Text>
+              <Text
+                disabled={false}
+                inverted={false}
+                pressed={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#FFFFFF",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                      "textAlign": "center",
+                    },
+                  ]
+                }
+              >
+                should have buttons
+              </Text>
+            </View>
           </View>
         </TouchableWithoutFeedback>
       </View>
@@ -851,45 +858,52 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
       >
         <TouchableWithoutFeedback>
           <View
-            disabled={false}
-            full={false}
-            inverted={false}
-            pressed={false}
-            small={false}
             style={
-              Array [
-                Object {
-                  "alignSelf": "center",
-                  "backgroundColor": "#F46152",
-                  "borderColor": "#F46152",
-                  "borderRadius": 9999,
-                  "borderStyle": "solid",
-                  "borderWidth": 2,
-                  "height": 48,
-                  "justifyContent": "center",
-                  "paddingLeft": 24,
-                  "paddingRight": 24,
-                },
-              ]
+              Object {
+                "flexDirection": "row",
+              }
             }
           >
-            <Text
+            <View
               disabled={false}
+              full={false}
               inverted={false}
               pressed={false}
+              small={false}
               style={
                 Array [
                   Object {
-                    "color": "#FFFFFF",
-                    "fontSize": 14,
-                    "fontWeight": "700",
-                    "textAlign": "center",
+                    "backgroundColor": "#F46152",
+                    "borderColor": "#F46152",
+                    "borderRadius": 9999,
+                    "borderStyle": "solid",
+                    "borderWidth": 2,
+                    "height": 48,
+                    "justifyContent": "center",
+                    "paddingLeft": 24,
+                    "paddingRight": 24,
                   },
                 ]
               }
             >
-              should have buttons
-            </Text>
+              <Text
+                disabled={false}
+                inverted={false}
+                pressed={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#FFFFFF",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                      "textAlign": "center",
+                    },
+                  ]
+                }
+              >
+                should have buttons
+              </Text>
+            </View>
           </View>
         </TouchableWithoutFeedback>
       </View>
@@ -1049,45 +1063,52 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
       >
         <TouchableWithoutFeedback>
           <View
-            disabled={false}
-            full={false}
-            inverted={false}
-            pressed={false}
-            small={false}
             style={
-              Array [
-                Object {
-                  "alignSelf": "center",
-                  "backgroundColor": "#F46152",
-                  "borderColor": "#F46152",
-                  "borderRadius": 9999,
-                  "borderStyle": "solid",
-                  "borderWidth": 2,
-                  "height": 48,
-                  "justifyContent": "center",
-                  "paddingLeft": 24,
-                  "paddingRight": 24,
-                },
-              ]
+              Object {
+                "flexDirection": "row",
+              }
             }
           >
-            <Text
+            <View
               disabled={false}
+              full={false}
               inverted={false}
               pressed={false}
+              small={false}
               style={
                 Array [
                   Object {
-                    "color": "#FFFFFF",
-                    "fontSize": 14,
-                    "fontWeight": "700",
-                    "textAlign": "center",
+                    "backgroundColor": "#F46152",
+                    "borderColor": "#F46152",
+                    "borderRadius": 9999,
+                    "borderStyle": "solid",
+                    "borderWidth": 2,
+                    "height": 48,
+                    "justifyContent": "center",
+                    "paddingLeft": 24,
+                    "paddingRight": 24,
                   },
                 ]
               }
             >
-              should have buttons
-            </Text>
+              <Text
+                disabled={false}
+                inverted={false}
+                pressed={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#FFFFFF",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                      "textAlign": "center",
+                    },
+                  ]
+                }
+              >
+                should have buttons
+              </Text>
+            </View>
           </View>
         </TouchableWithoutFeedback>
       </View>
