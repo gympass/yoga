@@ -1,3 +1,8 @@
+const rootIndexTemplate = (name, type) => `import ${name} from './${type}';
+
+export default ${name};
+`;
+
 const indexTemplate = name => `import ${name} from './${name}';
 
 export default ${name};
@@ -15,6 +20,7 @@ export default ${name};
 `;
 
 module.exports = {
+  rootIndexTemplate,
   indexTemplate,
   componentTemplate,
 };
