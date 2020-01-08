@@ -84,7 +84,6 @@ const ButtonContainer = styled.View`
       },
     },
   }) => `
-      align-self: center;
       background-color: ${enabledBackgroundColor};
       border: ${
         small ? smallWidth : defaultWidth
