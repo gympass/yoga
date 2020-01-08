@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.4.2...@gympass/yoga@1.4.3) (2020-01-08)
+
+### Bug Fixes
+
+- **button:** fix Button alignment on native ([6079666](https://github.com/Gympass/yoga/commit/607966680d8cc9ec23e2d7e90d4b6a516ce96585))
+
 ## [1.4.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.4.1...@gympass/yoga@1.4.2) (2020-01-06)
 
 ### Bug Fixes
