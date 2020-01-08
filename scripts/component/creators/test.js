@@ -1,5 +1,5 @@
-const testTemplate = require('./templates/test');
-const { createDirectory, createFile } = require('./factory');
+const testTemplate = require('../templates/test');
+const { createFile } = require('../utils');
 
 const test = (name, { web, native }) => {
   createFile(`${web}/${name}.test.jsx`, testTemplate(name));

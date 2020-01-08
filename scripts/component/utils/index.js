@@ -17,13 +17,17 @@ const getPaths = name => {
 const createDirectory = paths =>
   paths.forEach(path => {
     if (!fs.existsSync(path)) {
-      fs.mkdirSync(path, { recursive: true }, err => err && console.error(err));
+      fs.mkdirSync(
+        path,
+        { recursive: true },
+        err => err && throw new Error(err),
+      );
     }
   });
 
 const createFile = (path, content) => {
   if (!fs.existsSync(path)) {
-    fs.writeFile(path, content, err => err && console.error(err));
+    fs.writeFile(path, content, err => err && throw new Error(err));
   }
 };
 
