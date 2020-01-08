@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TouchableWithoutFeedback } from 'react-native';
+import { View, TouchableWithoutFeedback } from 'react-native';
 
 const withTouchable = Component => ({
   onPress = () => {},
@@ -22,7 +22,9 @@ const withTouchable = Component => ({
       onPress={onPress}
       {...rest}
     >
-      <Component {...rest} pressed={pressed} />
+      <View style={{ flexDirection: 'row' }}>
+        <Component {...rest} pressed={pressed} />
+      </View>
     </TouchableWithoutFeedback>
   );
 };
