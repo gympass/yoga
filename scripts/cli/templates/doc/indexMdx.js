@@ -1,4 +1,4 @@
-const indexMdx = name => {
+const indexMdx = (name, platform) => {
   const lowerCasedName = name.toLowerCase();
 
   return `---
@@ -7,11 +7,20 @@ metaTitle: '${name}'
 metaDescription: '${name} Component'
 ---
 
+${
+  !platform
+    ? `
 import ${name}Web from './${lowerCasedName}-web.mdx';
 import ${name}Native from './${lowerCasedName}-native.mdx';
+`
+    : ''
+}
 
 # ${name}
 
+${
+  !platform
+    ? `
 <TabbedView>
   <Tab title="Web">
     <${name}Web />
@@ -21,6 +30,9 @@ import ${name}Native from './${lowerCasedName}-native.mdx';
     <${name}Native />
   </Tab>
 </TabbedView>
+`
+    : ''
+}
   `;
 };
 

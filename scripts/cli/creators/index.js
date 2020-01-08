@@ -1,9 +1,12 @@
-const newComponent = require('./component');
-const newDoc = require('./doc');
-const newTest = require('./test');
+const { createWebComponent, createNativeComponent } = require('./component');
+const { createWebTest, createNativeTest } = require('./test');
+const { createWebDoc, createNativeDoc } = require('./doc');
 
 module.exports = {
-  newComponent,
-  newDoc,
-  newTest,
+  createWebComponent,
+  createNativeComponent,
+  createWebDoc,
+  createNativeDoc,
+  createWebTest,
+  createNativeTest,
 };
