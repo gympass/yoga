@@ -2,8 +2,8 @@ const {
   rootIndexTemplate,
   indexTemplate,
   componentTemplate,
-} = require('./templates/component');
-const { createDirectory, createFile } = require('./factory');
+} = require('../templates/component');
+const { createDirectory, createFile } = require('../utils');
 
 const component = (name, { base, web, native }) => {
   createDirectory([web, native]);

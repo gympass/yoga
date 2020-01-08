@@ -1,5 +1,5 @@
-const { webTemplate, nativeTemplate } = require('./templates/doc');
-const { createDirectory, createFile } = require('./factory');
+const { webTemplate, nativeTemplate } = require('../templates/doc');
+const { createDirectory, createFile } = require('../utils');
 
 const web = (name, webPath) => {
   const lowerCasedName = name.toLowerCase();
