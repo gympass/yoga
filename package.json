@@ -20,7 +20,8 @@
     "build:yoga": "lerna run build --scope=@gympass/yoga",
     "build:common": "lerna run build --scope=@gympass/yoga-common --stream",
     "build:tokens": "lerna run build --scope=@gympass/yoga-tokens --stream",
-    "build": "lerna run build --stream --parallel"
+    "build": "lerna run build --stream --parallel",
+    "new": "node ./scripts/cli/index.js"
   },
   "private": true,
   "devDependencies": {

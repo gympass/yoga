@@ -1,4 +1,4 @@
-const template = (name, type = 'web') => `import React from 'react';
+const test = (name, type = 'web') => `import React from 'react';
 import { render } from '@testing-library/react${
   type === 'native' ? '-native' : ''
 }';
@@ -9,7 +9,7 @@ describe('<${name} />', () => {
     const { container } = render(
       <ThemeProvider>
         <${name} />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(container).toMatchSnapshot();
@@ -17,4 +17,4 @@ describe('<${name} />', () => {
 });
 `;
 
-module.exports = template;
+module.exports = test;
