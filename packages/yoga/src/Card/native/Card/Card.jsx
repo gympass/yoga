@@ -72,7 +72,7 @@ const RibbonText = styled(Text.Tiny)`
       },
     },
   }) => `
-    color: ${variant ? white : dark};x
+    color: ${variant ? white : dark};
   `}
 `;
 
