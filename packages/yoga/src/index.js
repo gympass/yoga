@@ -8,6 +8,7 @@ import { Card, PlanCard } from './Card';
 import Stepper from './Stepper';
 import { Container, Row, Col, Hide } from './Grid';
 import Text from './Text';
+import Rating from './Rating';
 
 export {
   ThemeProvider,
@@ -25,4 +26,5 @@ export {
   Col,
   Hide,
   Text,
+  Rating,
 };
