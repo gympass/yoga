@@ -83,6 +83,11 @@ const informative = ['#E9F3FC', '#2186D9'];
  */
 const warning = ['#FBFBBE', '#CB9303'];
 
+/**
+ * @type {Color}
+ */
+const rating = ['#FFC24C'];
+
 const colors = {
   madrid,
   milan,
@@ -93,6 +98,7 @@ const colors = {
   negative,
   informative,
   warning,
+  rating,
   gray,
   white,
   dark,
