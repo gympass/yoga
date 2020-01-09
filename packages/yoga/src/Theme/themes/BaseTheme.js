@@ -290,7 +290,6 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       },
     },
     card: {
-      backgroundColor: colors.white,
       padding: {
         top: spacing.medium,
         right: spacing.medium,
