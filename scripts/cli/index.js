@@ -41,7 +41,7 @@ const init = () =>
   yargs
     .scriptName('new')
     .command(
-      'component [name]',
+      '* [name]',
       'creates a new component',
       yarg => {
         yarg.positional('name', {
