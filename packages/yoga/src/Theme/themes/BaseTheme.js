@@ -27,6 +27,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     dark: tokenColors.dark,
     positive: tokenColors.positive,
     negative: tokenColors.negative,
+    rating: tokenColors.rating,
   };
 
   const components = {
@@ -429,6 +430,12 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         lineHeight: lineHeights.xsmall,
         fontWeight: fontWeights.regular,
       },
+    },
+    rating: {
+      icon: {
+        size: 12,
+      },
+      gutter: spacing.xxsmall,
     },
   };
 
