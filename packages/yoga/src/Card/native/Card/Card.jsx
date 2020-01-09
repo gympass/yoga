@@ -10,7 +10,7 @@ const CardStyled = styled.View(
     variantIntensity,
     theme: {
       yoga: {
-        colors: { [variant]: color = {}, white },
+        colors: { [variant]: color = {} },
         components: { card },
       },
     },
@@ -22,7 +22,9 @@ const CardStyled = styled.View(
       ${card.padding.left}px;
 
     border-radius: ${card.radii}px;
-    background-color: ${variant ? color[variantIntensity] : white};
+    background-color: ${
+      variant ? color[variantIntensity] : card.backgroundColor
+    };
     box-shadow: ${card.elevation};
     elevation: 4;
 `,
