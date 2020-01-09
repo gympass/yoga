@@ -227,7 +227,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
 .c0 {
   padding: 16px  16px  16px  16px;
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #8051E1;
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
@@ -235,7 +235,6 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
   max-width: 280px;
   width: 100%;
   color: #FFFFFF;
-  background-color: #652CDB;
 }
 
 .c2 {
@@ -510,7 +509,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
 .c0 {
   padding: 16px  16px  16px  16px;
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #8051E1;
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
@@ -518,7 +517,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
   max-width: 280px;
   width: 100%;
   color: #FFFFFF;
-  background-color: #652CDB;
 }
 
 .c2 {
@@ -664,7 +662,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
 .c0 {
   padding: 16px  16px  16px  16px;
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #3FA99B;
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
@@ -672,7 +670,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   max-width: 280px;
   width: 100%;
   color: #FFFFFF;
-  background-color: #2B9486;
 }
 
 .c2 {
