@@ -56,7 +56,6 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
           },
         ]
       }
-      text="Label"
     >
       <Text
         style={
@@ -142,7 +141,6 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ri
           },
         ]
       }
-      text="Label"
       variant="secondary"
     >
       <Text
@@ -230,7 +228,6 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
           },
         ]
       }
-      text="Label"
       variant="tertiary"
     >
       <Text
