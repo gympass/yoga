@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.4.3...@gympass/yoga@1.5.0) (2020-01-10)
+
+### Features
+
+- **card:** add variantIntensity prop in Card and CardPlan ([a9af4a0](https://github.com/Gympass/yoga/commit/a9af4a0379552f696e4552de06de6c3d3313e9c8))
+
 ## [1.4.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.4.2...@gympass/yoga@1.4.3) (2020-01-08)
 
 ### Bug Fixes
