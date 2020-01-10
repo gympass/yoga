@@ -13,7 +13,7 @@ const reactNativeLib = path.resolve(__dirname, '../', '../');
 
 module.exports = (async () => {
   const {
-    resolver: { sourceExts, assetExts },
+    resolver: { assetExts },
   } = await getDefaultConfig();
 
   return {
@@ -26,14 +26,14 @@ module.exports = (async () => {
         'react-native': path.resolve(__dirname, 'node_modules/react-native'),
         'react-native-svg': path.resolve(
           __dirname,
-          'node_modules/react-native-svg',
+          'node_modules/react-native-svg/lib/commonjs',
         ),
       },
       blacklistRE: blacklist([
-        new RegExp(`${reactNativeLib}/node_modules/react-native/.*`),
+        new RegExp(`${reactNativeLib}/node_modules/.*/react-native/.*`),
       ]),
       assetExts: assetExts.filter(ext => ext !== 'svg'),
-      sourceExts: [...sourceExts, 'jsx', 'js', 'svg'],
+      sourceExts: ['jsx', 'js', 'svg'],
     },
     transformer: {
       babelTransformerPath: require.resolve('react-native-svg-transformer'),
