@@ -36,6 +36,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
       ]
     }
     variant=""
+    variantIntensity={2}
   >
     <View
       style={
@@ -120,6 +121,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ri
       ]
     }
     variant=""
+    variantIntensity={2}
   >
     <View
       style={
@@ -206,6 +208,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
       ]
     }
     variant=""
+    variantIntensity={2}
   >
     <View
       style={
@@ -292,6 +295,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
       ]
     }
     variant=""
+    variantIntensity={2}
   >
     <View
       style={
@@ -393,7 +397,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#8051E1",
           "borderRadius": 8,
           "elevation": 4,
           "paddingBottom": 16,
@@ -409,13 +413,13 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
           "shadowRadius": 6,
         },
         Object {
-          "backgroundColor": "#652CDB",
           "maxWidth": 280,
           "width": "100%",
         },
       ]
     }
     variant="secondary"
+    variantIntensity={2}
   >
     <View
       style={
@@ -539,6 +543,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       ]
     }
     variant=""
+    variantIntensity={2}
   >
     <View
       style={
@@ -721,7 +726,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#8051E1",
           "borderRadius": 8,
           "elevation": 4,
           "paddingBottom": 16,
@@ -737,13 +742,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
           "shadowRadius": 6,
         },
         Object {
-          "backgroundColor": "#652CDB",
           "maxWidth": 280,
           "width": "100%",
         },
       ]
     }
     variant="secondary"
+    variantIntensity={2}
   >
     <View
       style={
@@ -926,7 +931,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#3FA99B",
           "borderRadius": 8,
           "elevation": 4,
           "paddingBottom": 16,
@@ -942,13 +947,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
           "shadowRadius": 6,
         },
         Object {
-          "backgroundColor": "#2B9486",
           "maxWidth": 280,
           "width": "100%",
         },
       ]
     }
     variant="tertiary"
+    variantIntensity={2}
   >
     <View
       style={
