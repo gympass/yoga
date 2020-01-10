@@ -68,7 +68,11 @@ const Ribbon = styled(Text.Tiny)`
 const Card = ({ ribbon, children, ...rest }) => (
   <CardStyled {...rest}>
     {Object.keys(ribbon).length > 0 && (
-      <Ribbon {...ribbon} as="span">
+      <Ribbon
+        variant={ribbon.variant}
+        variantIntensity={ribbon.variantIntensity}
+        as="span"
+      >
         {ribbon.text}
       </Ribbon>
     )}
