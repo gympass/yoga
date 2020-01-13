@@ -18,50 +18,6 @@ const RatingWrapper = styled.div`
   }) => `
     width: ${width}px;
     height: ${rating.icon.size}px;
-
-    svg:not(:first-child) {
-      margin-left: ${rating.gutter}px;
-    }
-  `}
-`;
-
-const DisabledIcons = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-
-  ${({
-    theme: {
-      yoga: {
-        colors: { gray },
-      },
-    },
-  }) => `
-    svg {
-      fill: ${gray[3]};
-    }
-  `}
-`;
-
-const ActiveIcons = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-
-  ${({
-    theme: {
-      yoga: {
-        colors: { rating },
-      },
-    },
-  }) => `
-    svg {
-      fill: ${rating};
-    }
   `}
 `;
 
@@ -71,6 +27,7 @@ const Rating = ({
   iconQuantity,
   theme: {
     yoga: {
+      colors: { rating: color, gray },
       components: { rating },
     },
   },
@@ -80,41 +37,65 @@ const Rating = ({
     width={rating.gutter * (iconQuantity - 1) + rating.icon.size * iconQuantity}
     {...rest}
   >
-    <DisabledIcons>
-      {Array.from({ length: iconQuantity }, (_, i) => (
-        <Icon
-          key={`disabled-${i}`}
-          width={rating.icon.size}
-          height={rating.icon.size}
-        />
-      ))}
-    </DisabledIcons>
-    <ActiveIcons>
-      {Array.from({ length: iconQuantity }, (_, i) => {
-        const diff = i + 1 - value;
-        let width;
-        let wViewBox = SVG_DEFAULT_SIZE;
+    {Array.from({ length: iconQuantity }, (_, i) => {
+      const diff = i + 1 - value;
+      let width;
 
-        if (diff <= 0) {
-          width = rating.icon.size;
-        } else if (diff > 0 && diff < 1) {
-          width = (1 - diff) * rating.icon.size;
-          wViewBox *= 1 - diff;
-        } else {
-          width = 0;
-          wViewBox = 0;
-        }
-
+      if (diff <= 0) {
         return (
           <Icon
-            width={width}
+            fill={color}
+            key={`filled-${i}`}
+            width={rating.icon.size}
             height={rating.icon.size}
-            viewBox={`0 0 ${wViewBox} ${SVG_DEFAULT_SIZE}`}
-            key={`active-${i}`}
+            viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
+            style={{
+              marginLeft: i !== 0 ? rating.gutter : undefined,
+            }}
           />
         );
-      })}
-    </ActiveIcons>
+      }
+
+      if (diff > 0 && diff < 1) {
+        width = (1 - diff) * rating.icon.size;
+        const dWidth = diff * rating.icon.size;
+        const wViewBox = SVG_DEFAULT_SIZE * (1 - diff);
+        const dViewBox = SVG_DEFAULT_SIZE * diff;
+
+        return (
+          <React.Fragment key={`half-${i}`}>
+            <Icon
+              fill={color}
+              width={width}
+              height={rating.icon.size}
+              viewBox={`0 0 ${wViewBox} ${SVG_DEFAULT_SIZE}`}
+              style={{
+                marginLeft: i !== 0 ? rating.gutter : undefined,
+              }}
+            />
+            <Icon
+              fill={gray[5]}
+              width={dWidth}
+              height={rating.icon.size}
+              viewBox={`${wViewBox} 0 ${dViewBox} ${SVG_DEFAULT_SIZE}`}
+            />
+          </React.Fragment>
+        );
+      }
+
+      return (
+        <Icon
+          fill={gray[5]}
+          key={`unfilled-${i}`}
+          width={rating.icon.size}
+          height={rating.icon.size}
+          viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
+          style={{
+            marginLeft: i !== 0 ? rating.gutter : undefined,
+          }}
+        />
+      );
+    })}
   </RatingWrapper>
 );
 

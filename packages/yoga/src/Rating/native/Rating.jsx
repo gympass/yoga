@@ -43,11 +43,11 @@ const Rating = ({
       if (diff <= 0) {
         return (
           <Icon
+            fill={color}
             key={`filled-${i}`}
             width={rating.icon.size}
             height={rating.icon.size}
             viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
-            fill={color}
             style={{
               marginLeft: i !== 0 ? rating.gutter : undefined,
             }}
@@ -58,25 +58,25 @@ const Rating = ({
       if (diff > 0 && diff < 1) {
         const width = (1 - diff) * rating.icon.size;
         const dWidth = diff * rating.icon.size;
-        const wViewBox = 12 * (1 - diff);
-        const dViewBox = 12 * diff;
+        const wViewBox = SVG_DEFAULT_SIZE * (1 - diff);
+        const dViewBox = SVG_DEFAULT_SIZE * diff;
 
         return (
           <React.Fragment key={`half-${i}`}>
             <Icon
+              fill={color}
               width={width}
               height={rating.icon.size}
               viewBox={`0 0 ${wViewBox} ${SVG_DEFAULT_SIZE}`}
-              fill={color}
               style={{
                 marginLeft: i !== 0 ? rating.gutter : undefined,
               }}
             />
             <Icon
+              fill={gray[5]}
               width={dWidth}
               height={rating.icon.size}
               viewBox={`${wViewBox} 0 ${dViewBox} ${SVG_DEFAULT_SIZE}`}
-              fill={gray[5]}
             />
           </React.Fragment>
         );
@@ -84,6 +84,7 @@ const Rating = ({
 
       return (
         <Icon
+          fill={gray[5]}
           key={`unfilled-${i}`}
           width={rating.icon.size}
           height={rating.icon.size}
@@ -91,7 +92,6 @@ const Rating = ({
           style={{
             marginLeft: i !== 0 ? rating.gutter : undefined,
           }}
-          fill={gray[5]}
         />
       );
     })}
