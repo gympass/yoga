@@ -22,7 +22,6 @@ const RatingWrapper = styled.div`
     svg:not(:first-child) {
       margin-left: ${rating.gutter}px;
     }
-
   `}
 `;
 
