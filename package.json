@@ -58,14 +58,8 @@
       "packages/*"
     ],
     "nohoist": [
-      "@gympass/yoga-labnative/react-native",
-      "@gympass/yoga-labnative/react-native/**",
-      "@gympass/yoga-labnative/@react-native-community",
-      "@gympass/yoga-labnative/@react-native-community/**",
-      "@gympass/yoga-labnative/react-native-svg",
-      "@gympass/yoga-labnative/react-native-svg/**",
-      "@gympass/yoga-labnative/react-native-svg-transformer",
-      "@gympass/yoga-labnative/react-native-svg-transformer/**"
+      "@gympass/yoga-labnative/react-native*",
+      "@gympass/yoga-labnative/react-native*/**"
     ]
   },
   "config": {
