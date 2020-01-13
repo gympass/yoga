@@ -28,9 +28,14 @@ module.exports = (async () => {
           __dirname,
           'node_modules/react-native-svg/lib/commonjs',
         ),
+        react: path.resolve(__dirname, 'node_modules/react'),
       },
       blacklistRE: blacklist([
-        new RegExp(`${reactNativeLib}/node_modules/.*/react-native/.*`),
+        new RegExp(
+          `${reactNativeLib}/node_modules/(.*)/node_modules/react-native/.*`,
+        ),
+        new RegExp(`${reactNativeLib}/node_modules/react-native/.*`),
+        new RegExp(`${reactNativeLib}/node_modules/react/.*`),
       ]),
       assetExts: assetExts.filter(ext => ext !== 'svg'),
       sourceExts: ['jsx', 'js', 'svg'],
