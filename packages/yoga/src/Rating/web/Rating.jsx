@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { number, element } from 'prop-types';
+import { number, func } from 'prop-types';
 
 import Star from '../star.svg';
 
@@ -101,7 +101,7 @@ const Rating = ({
 
 Rating.propTypes = {
   value: number,
-  icon: element,
+  icon: func,
   iconQuantity: number,
 };
 
