@@ -21,10 +21,11 @@ const RatingWrapper = styled.View`
   `}
 `;
 
+/** Use the Rating component to view other people's opinions and experiences. */
 const Rating = ({
   value,
   icon: Icon,
-  iconQuantity,
+  max,
   theme: {
     yoga: {
       colors: { rating: color, gray },
@@ -34,10 +35,10 @@ const Rating = ({
   ...rest
 }) => (
   <RatingWrapper
-    width={rating.gutter * (iconQuantity - 1) + rating.icon.size * iconQuantity}
+    width={rating.gutter * (max - 1) + rating.icon.size * max}
     {...rest}
   >
-    {Array.from({ length: iconQuantity }, (_, i) => {
+    {Array.from({ length: max }, (_, i) => {
       const diff = i + 1 - value;
 
       if (diff <= 0) {
@@ -100,14 +101,16 @@ const Rating = ({
 
 Rating.propTypes = {
   value: number,
+  /** The icon to display */
   icon: func,
-  iconQuantity: number,
+  /** Maximum rating */
+  max: number,
 };
 
 Rating.defaultProps = {
   value: undefined,
   icon: Star,
-  iconQuantity: 5,
+  max: 5,
 };
 
 export default withTheme(Rating);
