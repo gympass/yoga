@@ -11,18 +11,11 @@ const Plan = styled(Card)`
     variant,
     theme: {
       yoga: {
-        colors: { [variant]: color = {}, white },
+        colors: { white },
       },
     },
   }) => `
-  ${
-    variant
-      ? `
-      color: ${white};
-      background-color: ${color[3]};
-    `
-      : ''
-  }
+  ${variant ? `color: ${white};` : ''}
 `}
 `;
 
@@ -30,18 +23,23 @@ const PlanCard = ({ ...rest }) => <Plan {...rest} />;
 
 PlanCard.propTypes = {
   /** text: the content inside the Card Ribbon
-   * variant: style the ribbon following the theme (primary, secondary, tertiary) */
+   * variant: style the ribbon following the theme (primary, secondary, tertiary)
+   * variantIntensity: ribbon variant color intensity (0, 1, 2, 3) */
   ribbon: shape({
     text: string,
     variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
+    variantIntensity: oneOf([0, 1, 2, 3]),
   }),
   /** style the card following the theme (primary, secondary, tertiary) */
   variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
+  /** intensity of variant color (0, 1, 2, 3) */
+  variantIntensity: oneOf([0, 1, 2, 3]),
 };
 
 PlanCard.defaultProps = {
   ribbon: {},
   variant: '',
+  variantIntensity: 2,
 };
 PlanCard.displayName = 'PlanCard';
 

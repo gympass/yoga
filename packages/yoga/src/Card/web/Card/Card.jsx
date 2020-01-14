@@ -6,8 +6,11 @@ import Text from '../../../Text';
 
 const CardStyled = styled.section`
   ${({
+    variant,
+    variantIntensity,
     theme: {
       yoga: {
+        colors: { [variant]: color = {} },
         components: { card },
       },
     },
@@ -19,7 +22,7 @@ const CardStyled = styled.section`
     ${card.padding.left}px;
 
   border-radius: ${card.radii}px;
-  background-color: ${card.backgroundColor};
+  background-color: ${variant ? color[variantIntensity] : card.backgroundColor};
   box-shadow: ${card.elevation};
 `}
 `;
@@ -27,6 +30,7 @@ const CardStyled = styled.section`
 const Ribbon = styled(Text.Tiny)`
   ${({
     variant,
+    variantIntensity,
     theme: {
       yoga: {
         components: { card },
@@ -51,7 +55,12 @@ const Ribbon = styled(Text.Tiny)`
   border-top-right-radius: ${card.ribbon.radius}px;
   border-bottom-right-radius: ${card.ribbon.radius}px;
 
-  background-color: ${variant ? color[3] : gray[1]};
+  background-color: ${
+    variant
+      ? color[typeof variantIntensity === 'number' ? variantIntensity : 3]
+      : gray[1]
+  };
+
   color: ${variant ? white : dark};
   `}
 `;
@@ -59,7 +68,11 @@ const Ribbon = styled(Text.Tiny)`
 const Card = ({ ribbon, children, ...rest }) => (
   <CardStyled {...rest}>
     {Object.keys(ribbon).length > 0 && (
-      <Ribbon variant={ribbon.variant} as="span">
+      <Ribbon
+        variant={ribbon.variant}
+        variantIntensity={ribbon.variantIntensity}
+        as="span"
+      >
         {ribbon.text}
       </Ribbon>
     )}
@@ -69,17 +82,25 @@ const Card = ({ ribbon, children, ...rest }) => (
 
 Card.propTypes = {
   /** text: the content inside the Card Ribbon
-   * variant: style the ribbon following the theme (primary, secondary, tertiary) */
+   * variant: style the ribbon following the theme (primary, secondary, tertiary)
+   * variantIntensity: ribbon variant color intensity (0, 1, 2, 3) */
   ribbon: shape({
     text: string,
     variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
+    variantIntensity: oneOf([0, 1, 2, 3]),
   }),
   children: node,
+  /** style the card following the theme (primary, secondary, tertiary) */
+  variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
+  /** intensity of variant color (0, 1, 2, 3) */
+  variantIntensity: oneOf([0, 1, 2, 3]),
 };
 
 Card.defaultProps = {
   ribbon: {},
   children: null,
+  variant: '',
+  variantIntensity: 3,
 };
 
 Card.displayName = 'Card';

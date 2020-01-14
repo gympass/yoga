@@ -14,45 +14,52 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
     disabled={true}
   >
     <View
-      disabled={true}
-      full={false}
-      inverted={false}
-      pressed={false}
-      small={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "#DBDBE8",
-            "borderColor": "#DBDBE8",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         disabled={true}
+        full={false}
         inverted={false}
         pressed={false}
+        small={false}
         style={
           Array [
             Object {
-              "color": "#9898A6",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "#DBDBE8",
+              "borderColor": "#DBDBE8",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
       >
-        Button
-      </Text>
+        <Text
+          disabled={true}
+          inverted={false}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#9898A6",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Button
+        </Text>
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -71,24 +78,32 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
   <TouchableWithoutFeedback
     disabled={true}
   >
-    <Text
-      disabled={true}
-      inverted={false}
-      pressed={false}
+    <View
       style={
-        Array [
-          Object {
-            "color": "#9898A6",
-            "fontSize": 14,
-            "fontWeight": "700",
-            "marginBottom": 8,
-            "marginTop": 16,
-            "textAlign": "center",
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
-      variant="primary"
-    />
+    >
+      <Text
+        disabled={true}
+        inverted={false}
+        pressed={false}
+        style={
+          Array [
+            Object {
+              "color": "#9898A6",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "marginBottom": 8,
+              "marginTop": 16,
+              "textAlign": "center",
+            },
+          ]
+        }
+        variant="primary"
+      />
+    </View>
   </TouchableWithoutFeedback>
 </View>
 `;
@@ -107,39 +122,46 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
     disabled={true}
   >
     <View
-      disabled={true}
-      pressed={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "#9898A6",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         disabled={true}
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#9898A6",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#9898A6",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
-      />
+      >
+        <Text
+          disabled={true}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#9898A6",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -159,39 +181,46 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
     disabled={true}
   >
     <View
-      disabled={true}
-      pressed={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "transparent",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         disabled={true}
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#9898A6",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "transparent",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
-      />
+      >
+        <Text
+          disabled={true}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#9898A6",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -211,46 +240,53 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
     full={true}
   >
     <View
-      disabled={false}
-      full={true}
-      inverted={false}
-      pressed={false}
-      small={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "#F46152",
-            "borderColor": "#F46152",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "width": "100%",
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         disabled={false}
+        full={true}
         inverted={false}
         pressed={false}
+        small={false}
         style={
           Array [
             Object {
-              "color": "#FFFFFF",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "#F46152",
+              "borderColor": "#F46152",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "width": "100%",
             },
           ]
         }
       >
-        Button
-      </Text>
+        <Text
+          disabled={false}
+          inverted={false}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Button
+        </Text>
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -270,39 +306,46 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
     full={true}
   >
     <View
-      full={true}
-      pressed={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "#F46152",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "width": "100%",
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
+        full={true}
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#F46152",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#F46152",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "width": "100%",
             },
           ]
         }
-      />
+      >
+        <Text
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#F46152",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -322,39 +365,46 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
     full={true}
   >
     <View
-      full={true}
-      pressed={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "transparent",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-            "width": "100%",
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
+        full={true}
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#F46152",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "transparent",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "width": "100%",
             },
           ]
         }
-      />
+      >
+        <Text
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#F46152",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -374,45 +424,52 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
     inverted={true}
   >
     <View
-      disabled={false}
-      full={false}
-      inverted={true}
-      pressed={false}
-      small={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "#FFFFFF",
-            "borderColor": "#FFFFFF",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         disabled={false}
+        full={false}
         inverted={true}
         pressed={false}
+        small={false}
         style={
           Array [
             Object {
-              "color": "#F46152",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
       >
-        Button
-      </Text>
+        <Text
+          disabled={false}
+          inverted={true}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#F46152",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Button
+        </Text>
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -431,24 +488,32 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
   <TouchableWithoutFeedback
     inverted={true}
   >
-    <Text
-      disabled={false}
-      inverted={true}
-      pressed={false}
+    <View
       style={
-        Array [
-          Object {
-            "color": "#FFFFFF",
-            "fontSize": 14,
-            "fontWeight": "700",
-            "marginBottom": 8,
-            "marginTop": 16,
-            "textAlign": "center",
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
-      variant="primary"
-    />
+    >
+      <Text
+        disabled={false}
+        inverted={true}
+        pressed={false}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "marginBottom": 8,
+              "marginTop": 16,
+              "textAlign": "center",
+            },
+          ]
+        }
+        variant="primary"
+      />
+    </View>
   </TouchableWithoutFeedback>
 </View>
 `;
@@ -467,39 +532,46 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
     inverted={true}
   >
     <View
-      inverted={true}
-      pressed={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "#FFFFFF",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         inverted={true}
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#FFFFFF",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
-      />
+      >
+        <Text
+          inverted={true}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -519,38 +591,45 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
     inverted={true}
   >
     <View
-      inverted={true}
-      pressed={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "transparent",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
+        inverted={true}
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#F46152",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "transparent",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
-      />
+      >
+        <Text
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#F46152",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -570,45 +649,52 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
     small={true}
   >
     <View
-      disabled={false}
-      full={false}
-      inverted={false}
-      pressed={false}
-      small={true}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "#F46152",
-            "borderColor": "#F46152",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "height": 32,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         disabled={false}
+        full={false}
         inverted={false}
         pressed={false}
+        small={true}
         style={
           Array [
             Object {
-              "color": "#FFFFFF",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "#F46152",
+              "borderColor": "#F46152",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 32,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
       >
-        Button
-      </Text>
+        <Text
+          disabled={false}
+          inverted={false}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Button
+        </Text>
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -628,38 +714,45 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
     small={true}
   >
     <View
-      pressed={false}
-      small={true}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "#F46152",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "height": 32,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         pressed={false}
+        small={true}
         style={
           Array [
             Object {
-              "color": "#F46152",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#F46152",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 32,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
-      />
+      >
+        <Text
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#F46152",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -679,38 +772,45 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
     small={true}
   >
     <View
-      pressed={false}
-      small={true}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "transparent",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "height": 32,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         pressed={false}
+        small={true}
         style={
           Array [
             Object {
-              "color": "#F46152",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "transparent",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "height": 32,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
-      />
+      >
+        <Text
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#F46152",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -728,45 +828,52 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
 >
   <TouchableWithoutFeedback>
     <View
-      disabled={false}
-      full={false}
-      inverted={false}
-      pressed={false}
-      small={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "#F46152",
-            "borderColor": "#F46152",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         disabled={false}
+        full={false}
         inverted={false}
         pressed={false}
+        small={false}
         style={
           Array [
             Object {
-              "color": "#FFFFFF",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "#F46152",
+              "borderColor": "#F46152",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
       >
-        Button
-      </Text>
+        <Text
+          disabled={false}
+          inverted={false}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Button
+        </Text>
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -783,24 +890,32 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
   }
 >
   <TouchableWithoutFeedback>
-    <Text
-      disabled={false}
-      inverted={false}
-      pressed={false}
+    <View
       style={
-        Array [
-          Object {
-            "color": "#F46152",
-            "fontSize": 14,
-            "fontWeight": "700",
-            "marginBottom": 8,
-            "marginTop": 16,
-            "textAlign": "center",
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
-      variant="primary"
-    />
+    >
+      <Text
+        disabled={false}
+        inverted={false}
+        pressed={false}
+        style={
+          Array [
+            Object {
+              "color": "#F46152",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "marginBottom": 8,
+              "marginTop": 16,
+              "textAlign": "center",
+            },
+          ]
+        }
+        variant="primary"
+      />
+    </View>
   </TouchableWithoutFeedback>
 </View>
 `;
@@ -817,37 +932,44 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
 >
   <TouchableWithoutFeedback>
     <View
-      pressed={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "#F46152",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#F46152",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#F46152",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
-      />
+      >
+        <Text
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#F46152",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -865,37 +987,44 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
 >
   <TouchableWithoutFeedback>
     <View
-      pressed={false}
       style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "transparent",
-            "borderRadius": 9999,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "height": 48,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
     >
-      <Text
+      <View
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#F46152",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "textAlign": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "transparent",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 2,
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
-      />
+      >
+        <Text
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#F46152",
+                "fontSize": 14,
+                "fontWeight": "700",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -914,68 +1043,92 @@ exports[`<Button /> With variant prop should match snapshot with default Button 
   <TouchableWithoutFeedback
     variant="primary"
   >
-    <Text
-      disabled={false}
-      inverted={false}
-      pressed={false}
+    <View
       style={
-        Array [
-          Object {
-            "color": "#F46152",
-            "fontSize": 14,
-            "fontWeight": "700",
-            "marginBottom": 8,
-            "marginTop": 16,
-            "textAlign": "center",
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
-      variant="primary"
-    />
+    >
+      <Text
+        disabled={false}
+        inverted={false}
+        pressed={false}
+        style={
+          Array [
+            Object {
+              "color": "#F46152",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "marginBottom": 8,
+              "marginTop": 16,
+              "textAlign": "center",
+            },
+          ]
+        }
+        variant="primary"
+      />
+    </View>
   </TouchableWithoutFeedback>
   <TouchableWithoutFeedback
     variant="secondary"
   >
-    <Text
-      disabled={false}
-      inverted={false}
-      pressed={false}
+    <View
       style={
-        Array [
-          Object {
-            "color": "#652CDB",
-            "fontSize": 14,
-            "fontWeight": "700",
-            "marginBottom": 8,
-            "marginTop": 16,
-            "textAlign": "center",
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
-      variant="secondary"
-    />
+    >
+      <Text
+        disabled={false}
+        inverted={false}
+        pressed={false}
+        style={
+          Array [
+            Object {
+              "color": "#652CDB",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "marginBottom": 8,
+              "marginTop": 16,
+              "textAlign": "center",
+            },
+          ]
+        }
+        variant="secondary"
+      />
+    </View>
   </TouchableWithoutFeedback>
   <TouchableWithoutFeedback
     variant="tertiary"
   >
-    <Text
-      disabled={false}
-      inverted={false}
-      pressed={false}
+    <View
       style={
-        Array [
-          Object {
-            "color": "#2B9486",
-            "fontSize": 14,
-            "fontWeight": "700",
-            "marginBottom": 8,
-            "marginTop": 16,
-            "textAlign": "center",
-          },
-        ]
+        Object {
+          "flexDirection": "row",
+        }
       }
-      variant="tertiary"
-    />
+    >
+      <Text
+        disabled={false}
+        inverted={false}
+        pressed={false}
+        style={
+          Array [
+            Object {
+              "color": "#2B9486",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "marginBottom": 8,
+              "marginTop": 16,
+              "textAlign": "center",
+            },
+          ]
+        }
+        variant="tertiary"
+      />
+    </View>
   </TouchableWithoutFeedback>
 </View>
 `;
