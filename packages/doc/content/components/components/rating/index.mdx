@@ -1,28 +1,20 @@
 ---
 title: 'Rating'
 metaTitle: 'Rating'
-metaDescription: 'Rating.'
+metaDescription: 'Use the Rating component to view other people's opinions and 
+experiences.'
 ---
+
+import RatingWeb from './rating-web.mdx';
+import RatingNative from './rating-native.mdx';
 
 # Rating
 
-```javascript reactLive=true state=true
-const Circle = props => (
-  <svg {...props}>
-    <circle cx="6" cy="6" r="6" />
-  </svg>
-);
-
-render(
-  <>
-    <Rating value={1} />
-    <Rating value={1.5} />
-    <Rating value={2} />
-    <Rating value={2.5} />
-    <Rating value={3} />
-    <Rating value={3.5} />
-    <Rating icon={Circle} value={4} />
-    <Rating icon={Circle} value={4.5} />
-  </>,
-);
-```
+<TabbedView>
+  <Tab title="Web">
+    <RatingWeb />
+  </Tab>
+  <Tab title="Native">
+    <RatingNative />
+  </Tab>
+</TabbedView>
