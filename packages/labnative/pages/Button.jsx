@@ -10,7 +10,7 @@ const ScrollView = styled.ScrollView`
 
 const ButtonWrapper = styled.View`
   margin-bottom: 10px;
-  text-align: center;
+  align-items: center;
 `;
 
 const StyledText = styled.Text`
