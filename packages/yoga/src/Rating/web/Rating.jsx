@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { number, func } from 'prop-types';
 
-import Star from '../star.svg';
+import { Star } from '@gympass/yoga-icons';
 
 const SVG_DEFAULT_SIZE = 12;
 

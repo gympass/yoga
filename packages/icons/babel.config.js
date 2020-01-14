@@ -1,13 +1,16 @@
 module.exports = {
   env: {
     web: {
-      presets: [['@babel/preset-env']],
+      presets: [['@babel/preset-env'], '@babel/preset-react'],
       ignore: ['**/*.native.js'],
       plugins: ['inline-react-svg'],
     },
 
     esm: {
-      presets: [['@babel/preset-env', { modules: false }]],
+      presets: [
+        ['@babel/preset-env', { modules: false }],
+        '@babel/preset-react',
+      ],
       ignore: ['**/*.native.js'],
       plugins: ['inline-react-svg'],
     },

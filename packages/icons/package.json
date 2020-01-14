@@ -10,7 +10,7 @@
   "author": "Allysson Santos <aallysson0@gmail.com>",
   "homepage": "https://github.com/Gympass/yoga#readme",
   "license": "MIT",
-  "main": "./cjs",
+  "main": "./src",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gympass/yoga.git"
@@ -28,7 +28,6 @@
   },
   "devDependencies": {
     "@dr.pogodin/babel-preset-svgr": "^1.0.3",
-    "@svgr/cli": "^5.0.1",
     "babel-plugin-inline-react-svg": "^1.1.0",
     "babel-plugin-transform-rename-import": "^2.3.0"
   },
