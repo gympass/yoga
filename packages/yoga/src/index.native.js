@@ -7,6 +7,7 @@ import RadioGroup from './RadioGroup';
 import { Card, PlanCard, EventCard } from './Card/index.native';
 import Stepper from './Stepper';
 import Text from './Text';
+import Rating from './Rating';
 
 export {
   ThemeProvider,
@@ -21,4 +22,5 @@ export {
   EventCard,
   Stepper,
   Text,
+  Rating,
 };

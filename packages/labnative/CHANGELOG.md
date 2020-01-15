@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.6.4...@gympass/yoga-labnative@0.7.0) (2020-01-15)
+
+### Features
+
+- **rating:** new component: Rating (native) ([2888d95](https://github.com/Gympass/yoga/commit/2888d95ed77e95db1d9acbede4599177491e5dee))
+- **svg:** add svg support in labnatibe ([8b54d63](https://github.com/Gympass/yoga/commit/8b54d631dfb868f32a11b240064eb40887bb11a6))
+- **svg:** aDD SVG SUPPORT IN REACT NATIVE ([0c91573](https://github.com/Gympass/yoga/commit/0c915732d10449437f22badcea48628a0d174dd8))
+- **svg:** trying to support svg at native development ([282c060](https://github.com/Gympass/yoga/commit/282c0601da219db534a165f6cca398f07b26adfe))
+
 ## [0.6.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.6.3...@gympass/yoga-labnative@0.6.4) (2020-01-10)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

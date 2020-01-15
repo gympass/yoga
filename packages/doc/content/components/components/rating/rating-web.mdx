@@ -1,0 +1,53 @@
+### Usage
+
+```javascript reactLive=true state=true
+const Center = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+render(
+  <Center>
+    <Rating value={1} />
+    <Rating value={1.5} />
+    <Rating value={2} />
+    <Rating value={2.5} />
+    <Rating value={3} />
+    <Rating value={3.5} />
+    <Rating value={4} />
+    <Rating value={4.5} />
+  </Center>,
+);
+```
+
+### Custom Icons
+
+```javascript reactLive=true state=true
+const Center = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Circle = props => (
+  <svg {...props}>
+    <circle cx="6" cy="7" r="5" />
+  </svg>
+);
+
+render(
+  <Center>
+    <Rating icon={Circle} value={1} />
+    <Rating icon={Circle} value={1.5} />
+    <Rating icon={Circle} value={2} />
+    <Rating icon={Circle} value={2.5} />
+    <Rating icon={Circle} value={3} />
+    <Rating icon={Circle} value={3.5} />
+    <Rating icon={Circle} value={4} />
+    <Rating icon={Circle} value={4.5} />
+  </Center>,
+);
+```
+
+### Props
+
+<PropsTable component="Rating" platform="web" />
