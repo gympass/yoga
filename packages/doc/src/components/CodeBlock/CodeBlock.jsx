@@ -6,6 +6,7 @@ import { node, string } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import { hexToRgb } from '@gympass/yoga-common';
 import * as YogaComponents from '@gympass/yoga';
+import * as YogaIcons from '@gympass/yoga-icons';
 import githubTheme from 'prism-react-renderer/themes/github';
 
 import { CodeSandboxButton } from 'components';
@@ -187,15 +188,31 @@ const Moon = styled(MoonVector)`
   `}
 `;
 
-const CodeBlock = ({ children, reactLive, center, state }) => {
+const CodeBlock = ({
+  children,
+  reactLive,
+  center,
+  state,
+  hasComponent,
+  hasIcon,
+}) => {
   const [codeVisible, setCodeVisible] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
   const normalizedCodeExample = children.trim();
   const importsRegex = /(?:<)([A-Z][A-Za-z]+)/g;
-  const imports = [...new Set(normalizedCodeExample.match(importsRegex))]
+  const importsComponents = [
+    ...new Set(normalizedCodeExample.match(importsRegex)),
+  ]
     .filter(importedComponent =>
       Object.keys(YogaComponents).includes(importedComponent.replace(/</g, '')),
+    )
+    .join(', ')
+    .replace(/</g, '');
+
+  const importsIcons = [...new Set(normalizedCodeExample.match(importsRegex))]
+    .filter(importedComponent =>
+      Object.keys(YogaIcons).includes(importedComponent.replace(/</g, '')),
     )
     .join(', ')
     .replace(/</g, '');
@@ -204,7 +221,7 @@ const CodeBlock = ({ children, reactLive, center, state }) => {
     setCodeVisible(!codeVisible);
   };
 
-  const code = [imports, normalizedCodeExample];
+  const code = [importsComponents, importsIcons, normalizedCodeExample];
 
   return reactLive ? (
     <MDXContext.Consumer>
@@ -240,7 +257,16 @@ const CodeBlock = ({ children, reactLive, center, state }) => {
             <Usage visible={codeVisible}>
               <Highlight
                 {...defaultPropsWithTheme}
-                code={` import { ${imports} } from '@gympass/yoga';`}
+                code={`${
+                  JSON.parse(hasComponent)
+                    ? ` import { ${importsComponents} } from '@gympass/yoga';`
+                    : ''
+                }
+${
+  JSON.parse(hasIcon)
+    ? ` import { ${importsIcons} } from '@gympass/yoga-icons';`
+    : ''
+}`.trimRight()}
                 language="jsx"
               >
                 {({
@@ -309,6 +335,8 @@ const CodeBlock = ({ children, reactLive, center, state }) => {
 
 CodeBlock.propTypes = {
   children: node.isRequired,
+  hasIcon: string,
+  hasComponent: string,
   reactLive: string,
   center: string,
   state: string,
@@ -316,6 +344,8 @@ CodeBlock.propTypes = {
 
 CodeBlock.defaultProps = {
   reactLive: undefined,
+  hasIcon: 'false',
+  hasComponent: 'true',
   center: 'false',
   state: undefined,
 };
