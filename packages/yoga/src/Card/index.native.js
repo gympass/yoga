@@ -1,3 +1,3 @@
-import { Card, PlanCard } from './native';
+import { Card, PlanCard, EventCard } from './native';
 
-export { Card, PlanCard };
+export { Card, PlanCard, EventCard };

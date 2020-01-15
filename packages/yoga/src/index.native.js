@@ -4,7 +4,7 @@ import List from './List';
 import Checkbox from './Checkbox';
 import Slider from './Slider';
 import RadioGroup from './RadioGroup';
-import { Card, PlanCard } from './Card';
+import { Card, PlanCard, EventCard } from './Card/index.native';
 import Stepper from './Stepper';
 import Text from './Text';
 
@@ -18,6 +18,7 @@ export {
   Slider,
   Card,
   PlanCard,
+  EventCard,
   Stepper,
   Text,
 };
