@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.5.0...@gympass/yoga@1.6.0) (2020-01-15)
+
+### Bug Fixes
+
+- **rating:** remove rating token ([557cae2](https://github.com/Gympass/yoga/commit/557cae2c3fb08c663c1b6011e28b28964f054767))
+
+### Features
+
+- **rating:** add babel plugin to handle svg components ([e996c2b](https://github.com/Gympass/yoga/commit/e996c2b5b5911335f9c087dcd8fb91cb1be111de))
+- **rating:** add rating config to baseTheme ([979eedd](https://github.com/Gympass/yoga/commit/979eedd477007859f7cf2f3f4627481156a1feb7))
+- **rating:** new component: Rating :tada: ([6c78b13](https://github.com/Gympass/yoga/commit/6c78b1385b35c18e161e8f8d837f221242fcc059))
+- **rating:** new component: Rating (native) ([2888d95](https://github.com/Gympass/yoga/commit/2888d95ed77e95db1d9acbede4599177491e5dee))
+- **svg:** aDD SVG SUPPORT IN REACT NATIVE ([0c91573](https://github.com/Gympass/yoga/commit/0c915732d10449437f22badcea48628a0d174dd8))
+- **svg:** trying to support svg at native development ([282c060](https://github.com/Gympass/yoga/commit/282c0601da219db534a165f6cca398f07b26adfe))
+
 # [1.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.4.3...@gympass/yoga@1.5.0) (2020-01-10)
 
 ### Features

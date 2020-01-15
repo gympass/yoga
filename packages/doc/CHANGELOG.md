@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.8.4...@gympass/yoga-doc@0.9.0) (2020-01-15)
+
+### Features
+
+- **svg:** trying to support svg at native development ([282c060](https://github.com/Gympass/yoga/commit/282c0601da219db534a165f6cca398f07b26adfe))
+
 ## [0.8.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.8.3...@gympass/yoga-doc@0.8.4) (2020-01-10)
 
 **Note:** Version bump only for package @gympass/yoga-doc
