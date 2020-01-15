@@ -320,6 +320,35 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           },
         },
       },
+      event: {
+        info: {
+          padding: spacing.medium,
+          name: {
+            fontWeight: fontWeights.semibold,
+            padding: {
+              bottom: spacing.xsmall,
+            },
+          },
+          place: {
+            color: colors.gray[8],
+            padding: {
+              bottom: spacing.xsmall,
+            },
+          },
+        },
+        date: {
+          radius: radii.rounded,
+          dayOfWeek: {
+            fontWeight: fontWeights.semibold,
+            padding: {
+              bottom: spacing.xsmall,
+            },
+          },
+          month: {
+            fontWeight: fontWeights.semibold,
+          },
+        },
+      },
     },
     checkbox: {
       margin: {
