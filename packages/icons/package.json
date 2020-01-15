@@ -7,8 +7,7 @@
     "icon",
     "react"
   ],
-  "author": "Allysson Santos <aallysson0@gmail.com>",
-  "homepage": "https://github.com/Gympass/yoga#readme",
+  "homepage": "https://github.com/Gympass/yoga/tree/master/packages/icons",
   "license": "MIT",
   "main": "./src",
   "repository": {
@@ -16,7 +15,6 @@
     "url": "git+https://github.com/Gympass/yoga.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
     "prebuild": "rm -rf ./dist",
     "build": "yarn build:native && yarn build:web && yarn build:esm",
     "build:web": "NODE_ENV=web babel ./src --out-dir dist/cjs",

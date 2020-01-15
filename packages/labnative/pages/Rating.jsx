@@ -4,15 +4,16 @@ import { Rating } from '@gympass/yoga';
 import Svg, { Circle } from 'react-native-svg/lib/commonjs';
 
 const ScrollView = styled.ScrollView`
+  width: 100%;
   margin-bottom: 50px;
   padding: 10px;
-  width: 100%;
 `;
 
 const StyledText = styled.Text`
-  font-size: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
+
+  font-size: 20px;
   text-align: center;
 `;
 
