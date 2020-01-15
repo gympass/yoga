@@ -430,6 +430,13 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         fontWeight: fontWeights.regular,
       },
     },
+    rating: {
+      backgroundColor: tokenColors.milan[3],
+      icon: {
+        size: 12,
+      },
+      gutter: spacing.xxsmall,
+    },
   };
 
   return {

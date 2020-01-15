@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import * as components from '@gympass/yoga';
+import * as icons from '@gympass/yoga-icons';
 import ExpoSnack from 'react-expo-snack';
 import {
   CodeBlock,
@@ -33,6 +34,7 @@ const customComponents = prefix => ({
   TokensColors: props => <Tokens.Colors {...props} />,
   TokensCards: props => <Tokens.Cards {...props} />,
   ...components,
+  ...icons,
 });
 
 const Wrapper = styled.div`

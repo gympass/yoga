@@ -7,6 +7,7 @@
   "dependencies": {
     "@gympass/yoga": "^1.5.0",
     "@gympass/yoga-common": "^0.1.1",
+    "@gympass/yoga-icons": "0.0.1",
     "@gympass/yoga-tokens": "^0.3.0",
     "@mdx-js/loader": "^1.4.5",
     "@mdx-js/mdx": "^1.4.5",
@@ -44,7 +45,7 @@
   "devDependencies": {
     "gatsby-plugin-remove-trailing-slashes": "^2.1.7",
     "gh-pages": "^2.1.1",
-    "prettier": "^1.18.2"
+    "prettier": "1.18.2"
   },
   "scripts": {
     "prebuild": "gatsby clean",
