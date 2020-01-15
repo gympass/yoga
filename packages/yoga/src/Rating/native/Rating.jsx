@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components/native';
+import styled, { withTheme } from 'styled-components';
 import { number, func } from 'prop-types';
 
 import { Star } from '@gympass/yoga-icons';
