@@ -47,13 +47,13 @@ describe('<Rating />', () => {
     it('should match snapshot with different icon quantity', () => {
       const { container } = render(
         <ThemeProvider>
-          <Rating iconQuantity={3} value={0} />
-          <Rating iconQuantity={3} value={0.5} />
-          <Rating iconQuantity={3} value={1} />
-          <Rating iconQuantity={3} value={1.5} />
-          <Rating iconQuantity={3} value={2} />
-          <Rating iconQuantity={3} value={2.5} />
-          <Rating iconQuantity={3} value={3} />
+          <Rating max={3} value={0} />
+          <Rating max={3} value={0.5} />
+          <Rating max={3} value={1} />
+          <Rating max={3} value={1.5} />
+          <Rating max={3} value={2} />
+          <Rating max={3} value={2.5} />
+          <Rating max={3} value={3} />
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();
