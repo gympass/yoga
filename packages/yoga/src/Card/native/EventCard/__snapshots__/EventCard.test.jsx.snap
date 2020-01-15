@@ -192,6 +192,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
       <View
         style={
           Object {
+            "alignItems": "center",
             "flexDirection": "row",
           }
         }
@@ -204,7 +205,9 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              undefined,
+              Object {
+                "marginRight": 5,
+              },
               Object {
                 "opacity": 1,
               },
@@ -475,6 +478,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
       <View
         style={
           Object {
+            "alignItems": "center",
             "flexDirection": "row",
           }
         }
@@ -487,7 +491,9 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              undefined,
+              Object {
+                "marginRight": 5,
+              },
               Object {
                 "opacity": 1,
               },
@@ -758,6 +764,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
       <View
         style={
           Object {
+            "alignItems": "center",
             "flexDirection": "row",
           }
         }
@@ -770,7 +777,9 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              undefined,
+              Object {
+                "marginRight": 5,
+              },
               Object {
                 "opacity": 1,
               },
@@ -1041,6 +1050,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
       <View
         style={
           Object {
+            "alignItems": "center",
             "flexDirection": "row",
           }
         }
@@ -1053,7 +1063,9 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              undefined,
+              Object {
+                "marginRight": 5,
+              },
               Object {
                 "opacity": 1,
               },
