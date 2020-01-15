@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.6.0...@gympass/yoga@1.6.1) (2020-01-15)
+
+### Bug Fixes
+
+- **rating:** remove /native from styled-components import ([1cb9640](https://github.com/Gympass/yoga/commit/1cb96402e1b03ef45c7a79ea1744e536d251b807))
+
 # [1.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.5.0...@gympass/yoga@1.6.0) (2020-01-15)
 
 ### Bug Fixes
