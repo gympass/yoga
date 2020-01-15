@@ -1,0 +1,1276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 76px;
+  height: 12px;
+}
+
+<div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 76px;
+  height: 12px;
+}
+
+<div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="6"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`<Rating /> Snapshots should match snapshot with different icon quantity 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 44px;
+  height: 12px;
+}
+
+<div>
+  <div
+    class="c0"
+    width="44"
+  >
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="44"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="6 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="44"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="44"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="6 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="44"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="44"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="6 0 6 12"
+      width="6"
+    />
+  </div>
+  <div
+    class="c0"
+    width="44"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Rating /> Snapshots should match snapshot with different values 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 76px;
+  height: 12px;
+}
+
+<div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="6 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 1.200000000000001 12"
+      width="1.200000000000001"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="1.200000000000001 0 10.799999999999999 12"
+      width="10.799999999999999"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 2.3999999999999995 12"
+      width="2.3999999999999995"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="2.3999999999999995 0 9.600000000000001 12"
+      width="9.600000000000001"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 3.6000000000000005 12"
+      width="3.6000000000000005"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="3.6000000000000005 0 8.399999999999999 12"
+      width="8.399999999999999"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 4.799999999999999 12"
+      width="4.799999999999999"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="4.799999999999999 0 7.200000000000001 12"
+      width="7.200000000000001"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="6 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 7.200000000000001 12"
+      width="7.200000000000001"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="7.200000000000001 0 4.799999999999999 12"
+      width="4.799999999999999"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 8.399999999999999 12"
+      width="8.399999999999999"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="8.399999999999999 0 3.6000000000000005 12"
+      width="3.6000000000000005"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 9.600000000000001 12"
+      width="9.600000000000001"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="9.600000000000001 0 2.3999999999999995 12"
+      width="2.3999999999999995"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 10.799999999999999 12"
+      width="10.799999999999999"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="10.799999999999999 0 1.200000000000001 12"
+      width="1.200000000000001"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="6 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="6 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+  <div
+    class="c0"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 6 12"
+      width="6"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="6 0 6 12"
+      width="6"
+    />
+  </div>
+</div>
+`;

@@ -3,6 +3,7 @@ module.exports = {
     web: {
       ignore: ['**/native', '**/*.native.js', '**/*.test.jsx'],
       presets: ['@babel/preset-env', '@babel/preset-react'],
+      plugins: ['inline-react-svg'],
     },
     esm: {
       ignore: ['**/native', '**/*.native.js', '**/*.test.jsx'],
