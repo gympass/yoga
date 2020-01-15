@@ -10,6 +10,10 @@
   "homepage": "https://github.com/Gympass/yoga/tree/master/packages/icons",
   "license": "MIT",
   "main": "./src",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gympass/yoga.git"
