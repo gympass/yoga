@@ -6,3 +6,4 @@
 /packages/doc/node_modules/**
 /packages/doc/public/**
 /packages/doc/.cache/**
+/packages/yoga/node_modules/**
