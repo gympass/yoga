@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "@gympass/yoga-common": "^0.1.1",
+    "@gympass/yoga-icons": "^0.1.0",
     "@gympass/yoga-tokens": "^0.3.0",
     "@ptomasroos/react-native-multi-slider": "^1.0.0",
     "prop-types": "^15.7.2",
