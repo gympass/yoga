@@ -52,7 +52,7 @@ const EventInfo = styled(View)`
   `}
 `;
 
-const DayOfWeek = styled(Text.Small)`
+const Weekday = styled(Text.Small)`
   ${({
     theme: {
       yoga: {
@@ -117,7 +117,7 @@ const Place = styled(Text.Small)`
 const EventCard = ({ event, date, variant, ...rest }) => (
   <Event {...rest}>
     <DateInfo variant={variant}>
-      <DayOfWeek inverted>{date.weekday}</DayOfWeek>
+      <Weekday inverted>{date.weekday}</Weekday>
       <Text.H3 inverted>{date.day}</Text.H3>
       <Month inverted>{date.month}</Month>
     </DateInfo>
@@ -133,11 +133,13 @@ const EventCard = ({ event, date, variant, ...rest }) => (
 );
 
 EventCard.propTypes = {
+  /** event information: { name (string), place (string), time (string) } */
   event: shape({
     name: string,
     place: string,
     time: string,
   }).isRequired,
+  /** date information: { day (string), weekday (string), month (string) } */
   date: shape({
     day: string,
     weekday: string,
