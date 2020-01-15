@@ -27,7 +27,6 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     dark: tokenColors.dark,
     positive: tokenColors.positive,
     negative: tokenColors.negative,
-    rating: tokenColors.rating[0],
   };
 
   const components = {
@@ -432,6 +431,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       },
     },
     rating: {
+      backgroundColor: tokenColors.milan[3],
       icon: {
         size: 12,
       },
