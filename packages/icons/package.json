@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-icons",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Yoga icon package",
   "keywords": [
     "yoga",
@@ -10,6 +10,10 @@
   "homepage": "https://github.com/Gympass/yoga/tree/master/packages/icons",
   "license": "MIT",
   "main": "./src",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gympass/yoga.git"

@@ -28,7 +28,7 @@ const Rating = ({
   max,
   theme: {
     yoga: {
-      colors: { rating: color, gray },
+      colors: { gray },
       components: { rating },
     },
   },
@@ -45,7 +45,7 @@ const Rating = ({
       if (diff <= 0) {
         return (
           <Icon
-            fill={color}
+            fill={rating.backgroundColor}
             key={`filled-${i}`}
             width={rating.icon.size}
             height={rating.icon.size}
@@ -66,7 +66,7 @@ const Rating = ({
         return (
           <React.Fragment key={`half-${i}`}>
             <Icon
-              fill={color}
+              fill={rating.backgroundColor}
               width={width}
               height={rating.icon.size}
               viewBox={`0 0 ${wViewBox} ${SVG_DEFAULT_SIZE}`}
