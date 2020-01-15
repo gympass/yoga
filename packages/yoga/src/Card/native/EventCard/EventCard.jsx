@@ -124,8 +124,8 @@ const EventCard = ({ event, date, variant, ...rest }) => (
     <EventInfo>
       <Name>{event.name}</Name>
       <Place>{event.place}</Place>
-      <View style={{ flexDirection: 'row' }}>
-        <Clock />
+      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+        <Clock style={{ marginRight: 5 }} />
         <Text.Tiny>{event.time}</Text.Tiny>
       </View>
     </EventInfo>
