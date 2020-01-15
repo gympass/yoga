@@ -189,29 +189,95 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
       >
         Gympass
       </Text>
-      <Text
+      <View
         style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "lineHeight": 16,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
+          Object {
+            "flexDirection": "row",
+          }
         }
       >
-        19 am
-      </Text>
+        <RNSVGSvgView
+          focusable={false}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              undefined,
+              Object {
+                "opacity": 1,
+              },
+              null,
+            ]
+          }
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4278190080,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={Array []}
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          19 am
+        </Text>
+      </View>
     </View>
   </View>
 </View>
@@ -406,29 +472,95 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
       >
         Gympass
       </Text>
-      <Text
+      <View
         style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "lineHeight": 16,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
+          Object {
+            "flexDirection": "row",
+          }
         }
       >
-        19 am
-      </Text>
+        <RNSVGSvgView
+          focusable={false}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              undefined,
+              Object {
+                "opacity": 1,
+              },
+              null,
+            ]
+          }
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4278190080,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={Array []}
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          19 am
+        </Text>
+      </View>
     </View>
   </View>
 </View>
@@ -623,29 +755,95 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
       >
         Gympass
       </Text>
-      <Text
+      <View
         style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "lineHeight": 16,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
+          Object {
+            "flexDirection": "row",
+          }
         }
       >
-        19 am
-      </Text>
+        <RNSVGSvgView
+          focusable={false}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              undefined,
+              Object {
+                "opacity": 1,
+              },
+              null,
+            ]
+          }
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4278190080,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={Array []}
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          19 am
+        </Text>
+      </View>
     </View>
   </View>
 </View>
@@ -840,29 +1038,95 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
       >
         Gympass
       </Text>
-      <Text
+      <View
         style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "lineHeight": 16,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
+          Object {
+            "flexDirection": "row",
+          }
         }
       >
-        19 am
-      </Text>
+        <RNSVGSvgView
+          focusable={false}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              undefined,
+              Object {
+                "opacity": 1,
+              },
+              null,
+            ]
+          }
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4278190080,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={Array []}
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          19 am
+        </Text>
+      </View>
     </View>
   </View>
 </View>

@@ -6,10 +6,13 @@ import EventCard from '.';
 const event = {
   name: 'Yoga Class',
   place: 'Gympass',
-  day: '19',
-  dayOfWeek: 'thu',
-  month: 'dec',
   time: '19 am',
+};
+
+const date = {
+  day: '19',
+  weekday: 'thu',
+  month: 'dec',
 };
 
 describe('<Card />', () => {
@@ -17,7 +20,7 @@ describe('<Card />', () => {
     it('should match snapshot with default EventCard', () => {
       const { container } = render(
         <ThemeProvider>
-          <EventCard event={event} />
+          <EventCard event={event} date={date} />
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();
@@ -25,7 +28,7 @@ describe('<Card />', () => {
     it('should match snapshot with variant primary EventCard', () => {
       const { container } = render(
         <ThemeProvider>
-          <EventCard event={event} variant="primary" />
+          <EventCard event={event} date={date} variant="primary" />
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();
@@ -33,7 +36,7 @@ describe('<Card />', () => {
     it('should match snapshot with variant secondary EventCard', () => {
       const { container } = render(
         <ThemeProvider>
-          <EventCard event={event} variant="secondary" />
+          <EventCard event={event} date={date} variant="secondary" />
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();
@@ -41,7 +44,7 @@ describe('<Card />', () => {
     it('should match snapshot with variant tertiary EventCard', () => {
       const { container } = render(
         <ThemeProvider>
-          <EventCard event={event} variant="tertiary" />
+          <EventCard event={event} date={date} variant="tertiary" />
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();

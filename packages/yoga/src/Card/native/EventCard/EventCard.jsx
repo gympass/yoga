@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { oneOf, shape, string } from 'prop-types';
 import { View } from 'react-native';
+import { Clock } from '@gympass/yoga-icons';
 
 import Card from '../Card';
 import Text from '../../../Text';
@@ -123,7 +124,10 @@ const EventCard = ({ event, date, variant, ...rest }) => (
     <EventInfo>
       <Name>{event.name}</Name>
       <Place>{event.place}</Place>
-      <Text.Tiny>{event.time}</Text.Tiny>
+      <View style={{ flexDirection: 'row' }}>
+        <Clock />
+        <Text.Tiny>{event.time}</Text.Tiny>
+      </View>
     </EventInfo>
   </Event>
 );
