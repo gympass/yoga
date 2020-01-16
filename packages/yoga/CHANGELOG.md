@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.6.1...@gympass/yoga@1.6.2) (2020-01-16)
+
+### Bug Fixes
+
+- **checkbox:** remove isRequired from label prop ([3659ab0](https://github.com/Gympass/yoga/commit/3659ab0e6f5bd98a8444c04e20b9b9a3cc48c031))
+
 ## [1.6.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.6.0...@gympass/yoga@1.6.1) (2020-01-15)
 
 ### Bug Fixes
