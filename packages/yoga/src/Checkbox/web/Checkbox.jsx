@@ -128,7 +128,7 @@ const Checkbox = ({
 );
 
 Checkbox.propTypes = {
-  label: string.isRequired,
+  label: string,
   /** short helper text under checkbox */
   helper: string,
   value: string,
@@ -141,6 +141,7 @@ Checkbox.propTypes = {
 };
 
 Checkbox.defaultProps = {
+  label: undefined,
   value: undefined,
   helper: undefined,
   checked: false,

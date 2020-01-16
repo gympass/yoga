@@ -26,6 +26,7 @@ Here's an overview of our packages:
 | [`@gympass/yoga`](/packages/yoga)          | [![npm version](https://badgen.net/npm/v/@gympass/yoga)](https://www.npmjs.com/package/@gympass/yoga)               | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga)](https://bundlephobia.com/result?p=@gympass/yoga)               |
 | [`@gympass/yoga-tokens`](/packages/tokens) | [![npm version](https://badgen.net/npm/v/@gympass/yoga-tokens)](https://www.npmjs.com/package/@gympass/yoga-tokens) | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-tokens)](https://bundlephobia.com/result?p=@gympass/yoga-tokens) |
 | [`@gympass/yoga-common`](/packages/common) | [![npm version](https://badgen.net/npm/v/@gympass/yoga-common)](https://www.npmjs.com/package/@gympass/yoga-common) | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-common)](https://bundlephobia.com/result?p=@gympass/yoga-common) |
+| [`@gympass/yoga-icons`](/packages/icons)   | [![npm version](https://badgen.net/npm/v/@gympass/yoga-icons)](https://www.npmjs.com/package/@gympass/yoga-icons)   | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-icons)](https://bundlephobia.com/result?p=@gympass/yoga-icons)   |
 
 ## Contributors ✨
 
