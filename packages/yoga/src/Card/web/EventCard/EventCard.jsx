@@ -1,20 +1,52 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled, { withTheme, css } from 'styled-components';
 import { oneOf, shape, string } from 'prop-types';
-import { View } from 'react-native';
 import { Clock } from '@gympass/yoga-icons';
 
 import Card from '../Card';
 import Text from '../../../Text';
 
 const Event = styled(Card)`
+  display: flex;
   flex-direction: row;
 
-  width: 280px;
+  width: 100%;
   padding: 0;
 `;
 
-const DateInfo = styled(View)`
+const EventInfo = styled.div`
+  ${({
+    theme: {
+      yoga: {
+        components: {
+          card: { event },
+        },
+      },
+    },
+  }) => css`
+    padding: ${event.info.padding}px;
+
+    ${Text.H4} {
+      padding-bottom: ${event.info.name.padding.bottom}px;
+
+      font-weight: ${event.info.name.fontWeight};
+    }
+
+    ${Text.Small} {
+      padding-bottom: ${event.info.place.padding.bottom}px;
+
+      color: ${event.info.place.color};
+    }
+  `}
+`;
+
+const EventTime = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+const DateInfo = styled.div`
   ${({
     variant,
     theme: {
@@ -26,8 +58,10 @@ const DateInfo = styled(View)`
       },
     },
   }) => `
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex-shrink: 0;
 
     width: 56px;
@@ -35,20 +69,6 @@ const DateInfo = styled(View)`
     border-top-left-radius: ${event.date.radius}px;
     border-bottom-left-radius: ${event.date.radius}px;
     background-color: ${color[2]};
-  `}
-`;
-
-const EventInfo = styled(View)`
-  ${({
-    theme: {
-      yoga: {
-        components: {
-          card: { event },
-        },
-      },
-    },
-  }) => `
-    padding: ${event.info.padding}px;
   `}
 `;
 
@@ -82,40 +102,6 @@ const Month = styled(Text.Small)`
   `}
 `;
 
-const Name = styled(Text.H4)`
-  ${({
-    theme: {
-      yoga: {
-        components: {
-          card: { event },
-        },
-      },
-    },
-  }) => `
-    width: 180px;
-    padding-bottom: ${event.info.name.padding.bottom}px;
-
-    font-weight: ${event.info.name.fontWeight};
-  `}
-`;
-
-const Place = styled(Text.Small)`
-  ${({
-    theme: {
-      yoga: {
-        components: {
-          card: { event },
-        },
-      },
-    },
-  }) => `
-    width: 180px;
-    padding-bottom: ${event.info.place.padding.bottom}px;
-
-    color: ${event.info.place.color};
-  `}
-`;
-
 const EventCard = ({
   event,
   date,
@@ -138,12 +124,12 @@ const EventCard = ({
       <Month inverted>{date.month}</Month>
     </DateInfo>
     <EventInfo>
-      <Name numberOfLines={2}>{event.name}</Name>
-      <Place numberOfLines={2}>{event.place}</Place>
-      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+      <Text.H4>{event.name}</Text.H4>
+      <Text.Small>{event.place}</Text.Small>
+      <EventTime>
         <Clock fill={icon.fill} style={{ marginRight: 5 }} />
         <Text.Tiny>{event.time}</Text.Tiny>
-      </View>
+      </EventTime>
     </EventInfo>
   </Event>
 );

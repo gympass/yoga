@@ -1,0 +1,773 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c10 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c12 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+}
+
+.c7 {
+  padding: 16px;
+}
+
+.c7 .c8 {
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.c7 .c3 {
+  padding-bottom: 8px;
+  color: #6B6B78;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 56px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #8051E1;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+  padding-bottom: 8px;
+  font-weight: 400;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <div
+      class="c2"
+    >
+      <p
+        class="c3 c4"
+      >
+        thu
+      </p>
+      <h3
+        class="c5"
+      >
+        19
+      </h3>
+      <p
+        class="c3 c6"
+      >
+        dec
+      </p>
+    </div>
+    <div
+      class="c7"
+    >
+      <h4
+        class="c8 c9"
+      >
+        Yoga Class
+      </h4>
+      <p
+        class="c3 c10"
+      >
+        Gympass
+      </p>
+      <div
+        class="c11"
+      >
+        <svg
+          fill="#41414A"
+          style="margin-right: 5px;"
+        />
+        <p
+          class="c12"
+        >
+          19 am
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<Card /> Snapshots should match snapshot with variant primary EventCard 1`] = `
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c10 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c12 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+}
+
+.c7 {
+  padding: 16px;
+}
+
+.c7 .c8 {
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.c7 .c3 {
+  padding-bottom: 8px;
+  color: #6B6B78;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 56px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #F78D82;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+  padding-bottom: 8px;
+  font-weight: 400;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <div
+      class="c2"
+    >
+      <p
+        class="c3 c4"
+      >
+        thu
+      </p>
+      <h3
+        class="c5"
+      >
+        19
+      </h3>
+      <p
+        class="c3 c6"
+      >
+        dec
+      </p>
+    </div>
+    <div
+      class="c7"
+    >
+      <h4
+        class="c8 c9"
+      >
+        Yoga Class
+      </h4>
+      <p
+        class="c3 c10"
+      >
+        Gympass
+      </p>
+      <div
+        class="c11"
+      >
+        <svg
+          fill="#41414A"
+          style="margin-right: 5px;"
+        />
+        <p
+          class="c12"
+        >
+          19 am
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<Card /> Snapshots should match snapshot with variant secondary EventCard 1`] = `
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c10 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c12 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+}
+
+.c7 {
+  padding: 16px;
+}
+
+.c7 .c8 {
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.c7 .c3 {
+  padding-bottom: 8px;
+  color: #6B6B78;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 56px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #8051E1;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+  padding-bottom: 8px;
+  font-weight: 400;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <div
+      class="c2"
+    >
+      <p
+        class="c3 c4"
+      >
+        thu
+      </p>
+      <h3
+        class="c5"
+      >
+        19
+      </h3>
+      <p
+        class="c3 c6"
+      >
+        dec
+      </p>
+    </div>
+    <div
+      class="c7"
+    >
+      <h4
+        class="c8 c9"
+      >
+        Yoga Class
+      </h4>
+      <p
+        class="c3 c10"
+      >
+        Gympass
+      </p>
+      <div
+        class="c11"
+      >
+        <svg
+          fill="#41414A"
+          style="margin-right: 5px;"
+        />
+        <p
+          class="c12"
+        >
+          19 am
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCard 1`] = `
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c10 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c12 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+}
+
+.c0 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+}
+
+.c7 {
+  padding: 16px;
+}
+
+.c7 .c8 {
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.c7 .c3 {
+  padding-bottom: 8px;
+  color: #6B6B78;
+}
+
+.c11 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 56px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #3FA99B;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+  padding-bottom: 8px;
+  font-weight: 400;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Open Sans;
+  color: #41414A;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+<div>
+  <section
+    class="c0 c1"
+  >
+    <div
+      class="c2"
+    >
+      <p
+        class="c3 c4"
+      >
+        thu
+      </p>
+      <h3
+        class="c5"
+      >
+        19
+      </h3>
+      <p
+        class="c3 c6"
+      >
+        dec
+      </p>
+    </div>
+    <div
+      class="c7"
+    >
+      <h4
+        class="c8 c9"
+      >
+        Yoga Class
+      </h4>
+      <p
+        class="c3 c10"
+      >
+        Gympass
+      </p>
+      <div
+        class="c11"
+      >
+        <svg
+          fill="#41414A"
+          style="margin-right: 5px;"
+        />
+        <p
+          class="c12"
+        >
+          19 am
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;

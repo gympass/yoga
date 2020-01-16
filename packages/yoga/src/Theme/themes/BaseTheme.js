@@ -341,8 +341,8 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         },
         date: {
           radius: radii.rounded,
-          dayOfWeek: {
-            fontWeight: fontWeights.semibold,
+          weekday: {
+            fontWeight: fontWeights.regular,
             padding: {
               bottom: spacing.xsmall,
             },

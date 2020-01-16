@@ -31,7 +31,6 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
         },
         Object {
           "flexDirection": "row",
-          "height": 104,
           "paddingBottom": 0,
           "paddingLeft": 0,
           "paddingRight": 0,
@@ -51,6 +50,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
             "backgroundColor": "#8051E1",
             "borderBottomLeftRadius": 8,
             "borderTopLeftRadius": 8,
+            "flexShrink": 0,
             "justifyContent": "center",
             "width": 56,
           },
@@ -66,7 +66,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
               "color": "#FFFFFF",
               "fontFamily": "Open Sans",
               "fontSize": 14,
-              "fontWeight": "600",
+              "fontWeight": "400",
               "lineHeight": 20,
               "marginBottom": 0,
               "marginLeft": 0,
@@ -144,6 +144,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
       }
     >
       <Text
+        numberOfLines={2}
         style={
           Array [
             Object {
@@ -160,6 +161,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
               "paddingLeft": 0,
               "paddingRight": 0,
               "paddingTop": 0,
+              "width": 180,
             },
           ]
         }
@@ -167,6 +169,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
         Yoga Class
       </Text>
       <Text
+        numberOfLines={2}
         style={
           Array [
             Object {
@@ -183,6 +186,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
               "paddingLeft": 0,
               "paddingRight": 0,
               "paddingTop": 0,
+              "width": 180,
             },
           ]
         }
@@ -198,6 +202,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
         }
       >
         <RNSVGSvgView
+          fill="#41414A"
           focusable={false}
           style={
             Array [
@@ -219,7 +224,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
             fill={
               Array [
                 0,
-                4278190080,
+                4282466634,
               ]
             }
             fillOpacity={1}
@@ -238,7 +243,11 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
             opacity={1}
             originX={0}
             originY={0}
-            propList={Array []}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
             rotation={0}
             scaleX={1}
             scaleY={1}
@@ -317,7 +326,6 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
         },
         Object {
           "flexDirection": "row",
-          "height": 104,
           "paddingBottom": 0,
           "paddingLeft": 0,
           "paddingRight": 0,
@@ -337,6 +345,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
             "backgroundColor": "#F78D82",
             "borderBottomLeftRadius": 8,
             "borderTopLeftRadius": 8,
+            "flexShrink": 0,
             "justifyContent": "center",
             "width": 56,
           },
@@ -352,7 +361,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
               "color": "#FFFFFF",
               "fontFamily": "Open Sans",
               "fontSize": 14,
-              "fontWeight": "600",
+              "fontWeight": "400",
               "lineHeight": 20,
               "marginBottom": 0,
               "marginLeft": 0,
@@ -430,6 +439,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
       }
     >
       <Text
+        numberOfLines={2}
         style={
           Array [
             Object {
@@ -446,6 +456,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
               "paddingLeft": 0,
               "paddingRight": 0,
               "paddingTop": 0,
+              "width": 180,
             },
           ]
         }
@@ -453,6 +464,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
         Yoga Class
       </Text>
       <Text
+        numberOfLines={2}
         style={
           Array [
             Object {
@@ -469,6 +481,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
               "paddingLeft": 0,
               "paddingRight": 0,
               "paddingTop": 0,
+              "width": 180,
             },
           ]
         }
@@ -484,6 +497,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
         }
       >
         <RNSVGSvgView
+          fill="#41414A"
           focusable={false}
           style={
             Array [
@@ -505,7 +519,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
             fill={
               Array [
                 0,
-                4278190080,
+                4282466634,
               ]
             }
             fillOpacity={1}
@@ -524,7 +538,11 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
             opacity={1}
             originX={0}
             originY={0}
-            propList={Array []}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
             rotation={0}
             scaleX={1}
             scaleY={1}
@@ -603,7 +621,6 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
         },
         Object {
           "flexDirection": "row",
-          "height": 104,
           "paddingBottom": 0,
           "paddingLeft": 0,
           "paddingRight": 0,
@@ -623,6 +640,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
             "backgroundColor": "#8051E1",
             "borderBottomLeftRadius": 8,
             "borderTopLeftRadius": 8,
+            "flexShrink": 0,
             "justifyContent": "center",
             "width": 56,
           },
@@ -638,7 +656,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
               "color": "#FFFFFF",
               "fontFamily": "Open Sans",
               "fontSize": 14,
-              "fontWeight": "600",
+              "fontWeight": "400",
               "lineHeight": 20,
               "marginBottom": 0,
               "marginLeft": 0,
@@ -716,6 +734,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
       }
     >
       <Text
+        numberOfLines={2}
         style={
           Array [
             Object {
@@ -732,6 +751,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
               "paddingLeft": 0,
               "paddingRight": 0,
               "paddingTop": 0,
+              "width": 180,
             },
           ]
         }
@@ -739,6 +759,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
         Yoga Class
       </Text>
       <Text
+        numberOfLines={2}
         style={
           Array [
             Object {
@@ -755,6 +776,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
               "paddingLeft": 0,
               "paddingRight": 0,
               "paddingTop": 0,
+              "width": 180,
             },
           ]
         }
@@ -770,6 +792,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
         }
       >
         <RNSVGSvgView
+          fill="#41414A"
           focusable={false}
           style={
             Array [
@@ -791,7 +814,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
             fill={
               Array [
                 0,
-                4278190080,
+                4282466634,
               ]
             }
             fillOpacity={1}
@@ -810,7 +833,11 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
             opacity={1}
             originX={0}
             originY={0}
-            propList={Array []}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
             rotation={0}
             scaleX={1}
             scaleY={1}
@@ -889,7 +916,6 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
         },
         Object {
           "flexDirection": "row",
-          "height": 104,
           "paddingBottom": 0,
           "paddingLeft": 0,
           "paddingRight": 0,
@@ -909,6 +935,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
             "backgroundColor": "#3FA99B",
             "borderBottomLeftRadius": 8,
             "borderTopLeftRadius": 8,
+            "flexShrink": 0,
             "justifyContent": "center",
             "width": 56,
           },
@@ -924,7 +951,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
               "color": "#FFFFFF",
               "fontFamily": "Open Sans",
               "fontSize": 14,
-              "fontWeight": "600",
+              "fontWeight": "400",
               "lineHeight": 20,
               "marginBottom": 0,
               "marginLeft": 0,
@@ -1002,6 +1029,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
       }
     >
       <Text
+        numberOfLines={2}
         style={
           Array [
             Object {
@@ -1018,6 +1046,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
               "paddingLeft": 0,
               "paddingRight": 0,
               "paddingTop": 0,
+              "width": 180,
             },
           ]
         }
@@ -1025,6 +1054,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
         Yoga Class
       </Text>
       <Text
+        numberOfLines={2}
         style={
           Array [
             Object {
@@ -1041,6 +1071,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
               "paddingLeft": 0,
               "paddingRight": 0,
               "paddingTop": 0,
+              "width": 180,
             },
           ]
         }
@@ -1056,6 +1087,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
         }
       >
         <RNSVGSvgView
+          fill="#41414A"
           focusable={false}
           style={
             Array [
@@ -1077,7 +1109,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
             fill={
               Array [
                 0,
-                4278190080,
+                4282466634,
               ]
             }
             fillOpacity={1}
@@ -1096,7 +1128,11 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
             opacity={1}
             originX={0}
             originY={0}
-            propList={Array []}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
             rotation={0}
             scaleX={1}
             scaleY={1}
