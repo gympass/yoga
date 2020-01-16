@@ -321,6 +321,9 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         },
       },
       event: {
+        icon: {
+          fill: colors.dark,
+        },
         info: {
           padding: spacing.medium,
           name: {
