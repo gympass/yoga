@@ -22,7 +22,7 @@ const DateInfo = styled(View)`
         components: {
           card: { event },
         },
-        colors: { [variant]: color = {} },
+        colors: { [variant]: color },
       },
     },
   }) => `

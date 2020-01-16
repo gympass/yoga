@@ -54,7 +54,7 @@ const DateInfo = styled.div`
         components: {
           card: { event },
         },
-        colors: { [variant]: color = {} },
+        colors: { [variant]: color },
       },
     },
   }) => `
