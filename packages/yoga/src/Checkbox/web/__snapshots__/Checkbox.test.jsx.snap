@@ -733,3 +733,101 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   </div>
 </div>
 `;
+
+exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
+.c4 {
+  position: relative;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-style: solid;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #F46152;
+}
+
+.c5 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 {
+  display: inline-block;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #41414A;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1:hover .c3:before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: -17px;
+  width: 54px;
+  height: 54px;
+  background-color: rgba(244,97,82,0.2);
+  border-radius: 9999px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <label
+        class="c2"
+      >
+        <div
+          class="c3 c4"
+        >
+          <input
+            class="c5"
+            type="checkbox"
+          />
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;

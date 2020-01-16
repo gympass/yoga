@@ -12,6 +12,14 @@ const data = {
 
 describe('<Checkbox />', () => {
   describe('Snapshots', () => {
+    it('should match snapshot without label', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox />
+        </ThemeProvider>,
+      );
+      expect(toJSON(container)).toMatchSnapshot();
+    });
     it('should match snapshot with default checkbox', () => {
       const { container } = render(
         <ThemeProvider>

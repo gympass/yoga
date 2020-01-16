@@ -566,3 +566,50 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   </View>
 </View>
 `;
+
+exports[`<Checkbox /> Snapshots should match snapshot without label 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <TouchableWithoutFeedback
+      disabled={false}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+          ]
+        }
+      >
+        <View
+          checked={false}
+          disabled={false}
+          error={false}
+          style={
+            Array [
+              Object {
+                "borderColor": "#F46152",
+                "borderRadius": 4,
+                "borderStyle": "solid",
+                "borderWidth": 2,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+        />
+      </View>
+    </TouchableWithoutFeedback>
+  </View>
+</View>
+`;
