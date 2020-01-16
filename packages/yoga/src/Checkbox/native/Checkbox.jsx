@@ -99,7 +99,7 @@ const Checkbox = ({
 };
 
 Checkbox.propTypes = {
-  label: string.isRequired,
+  label: string,
   /** set a short helper text under checkbox */
   helper: string,
   checked: bool,
@@ -110,6 +110,7 @@ Checkbox.propTypes = {
 };
 
 Checkbox.defaultProps = {
+  label: undefined,
   helper: undefined,
   checked: false,
   disabled: false,
