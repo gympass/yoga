@@ -86,7 +86,7 @@ const Checkbox = ({
             error={error}
             pressed={pressed}
           />
-          <Label>{label}</Label>
+          {label && <Label>{label}</Label>}
         </CheckboxWrapper>
       </TouchableWithoutFeedback>
       {helper && (
