@@ -5,15 +5,18 @@ metaDescription: 'Event Card are used to apply a container around a related
 grouping of information about Gympass events.'
 ---
 
+import EventCardWeb from './eventcard-web.mdx';
+import EventCardNative from './eventcard-native.mdx';
+
 # EventCard
 
-Gympass `<EventCard />` is used to apply a container around a related
-grouping of information about Gympass events.
+<TabbedView>
+  <Tab title="Web">
+    <EventCardWeb />
+  </Tab>
 
-### Usage
+  <Tab title="Native">
+    <EventCardNative />
+  </Tab>
+</TabbedView>
 
-<ExpoSnack id="@gympass/yoga-event-card" theme="light" />
-
-#### Props
-
-<PropsTable component="EventCard" platform="native" />
