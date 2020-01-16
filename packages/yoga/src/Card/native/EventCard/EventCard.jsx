@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import { oneOf, shape, string } from 'prop-types';
 import { View } from 'react-native';
 import { Clock } from '@gympass/yoga-icons';
@@ -114,7 +114,21 @@ const Place = styled(Text.Small)`
   `}
 `;
 
-const EventCard = ({ event, date, variant, ...rest }) => (
+const EventCard = ({
+  event,
+  date,
+  variant,
+  theme: {
+    yoga: {
+      components: {
+        card: {
+          event: { icon },
+        },
+      },
+    },
+  },
+  ...rest
+}) => (
   <Event {...rest}>
     <DateInfo variant={variant}>
       <Weekday inverted>{date.weekday}</Weekday>
@@ -125,7 +139,7 @@ const EventCard = ({ event, date, variant, ...rest }) => (
       <Name>{event.name}</Name>
       <Place>{event.place}</Place>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-        <Clock style={{ marginRight: 5 }} />
+        <Clock fill={icon.fill} style={{ marginRight: 5 }} />
         <Text.Tiny>{event.time}</Text.Tiny>
       </View>
     </EventInfo>
@@ -155,4 +169,4 @@ EventCard.defaultProps = {
 
 EventCard.displayName = 'EventCard';
 
-export default EventCard;
+export default withTheme(EventCard);
