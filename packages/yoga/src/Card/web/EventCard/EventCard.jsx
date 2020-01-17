@@ -24,40 +24,38 @@ const EventInfo = styled.div`
       },
     },
   }) => css`
-    padding: ${event.info.padding}px;
+    padding: ${event.info.padding.top}px ${event.info.padding.right}px
+      ${event.info.padding.left}px ${event.info.padding.bottom}px;
 
-    ${Text.H4} {
+    ${Text.H4}, ${Text.Small} {
       display: -webkit-inline-box;
-      height: ${event.info.name.height}px;
       overflow: hidden;
-      margin-bottom: ${event.info.name.marginBottom}px;
 
-      font-weight: ${event.info.name.fontWeight};
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
-      xtext-overflow: ellipsis;
-      text-overflow: -o-ellipsis-lastline;
-    }
-
-    ${Text.Small} {
-      display: -webkit-inline-box;
-      height: ${event.info.place.height}px;
-      overflow: hidden;
-      margin-bottom: ${event.info.place.marginBottom}px;
-
-      color: ${event.info.place.color};
-      font-weight: ${event.info.name.fontWeight};
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
       text-overflow: ellipsis;
       text-overflow: -o-ellipsis-lastline;
+    }
+
+    ${Text.H4} {
+      height: ${event.info.name.height}px;
+      margin-bottom: ${event.info.name.marginBottom}px;
+
+      font-weight: ${event.info.name.fontWeight};
+    }
+
+    ${Text.Small} {
+      height: ${event.info.place.height}px;
+      margin-bottom: ${event.info.place.marginBottom}px;
+
+      color: ${event.info.place.color};
+      font-weight: ${event.info.name.fontWeight};
     }
   `}
 `;
 
 const EventTime = styled.div`
   display: flex;
-  flex-direction: row;
   align-items: center;
 `;
 

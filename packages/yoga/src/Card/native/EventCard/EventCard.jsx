@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { oneOf, shape, string } from 'prop-types';
-import { View } from 'react-native';
 import { Clock } from '@gympass/yoga-icons';
 
 import Card from '../Card';
@@ -14,7 +13,7 @@ const Event = styled(Card)`
   padding: 0;
 `;
 
-const DateInfo = styled(View)`
+const DateInfo = styled.View`
   ${({
     variant,
     theme: {
@@ -37,7 +36,7 @@ const DateInfo = styled(View)`
   `}
 `;
 
-const EventInfo = styled(View)`
+const EventInfo = styled.View`
   ${({
     theme: {
       yoga: {
@@ -47,7 +46,8 @@ const EventInfo = styled(View)`
       },
     },
   }) => `
-    padding: ${event.info.padding}px;
+    padding: ${event.info.padding.top}px ${event.info.padding.right}px
+      ${event.info.padding.left}px ${event.info.padding.bottom}px;
   `}
 `;
 
@@ -115,7 +115,7 @@ const Place = styled(Text.Small)`
   `}
 `;
 
-const EventTime = styled(View)`
+const EventTime = styled.View`
   flex-direction: row;
   align-items: center;
 `;
