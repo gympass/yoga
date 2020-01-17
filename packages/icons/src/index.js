@@ -1,3 +1,3 @@
-import { Star } from './svg';
+import { Star, Building } from './svg';
 
-export { Star };
+export { Star, Building };
