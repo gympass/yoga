@@ -173,6 +173,7 @@ const CardPage = () => {
         }}
       >
         <EventCard
+          style={{ marginRight: 16 }}
           event={{
             name: 'Yoga Class',
             place: 'Gympass',
@@ -180,7 +181,21 @@ const CardPage = () => {
           }}
           date={{
             day: '19',
-            weekday: 'thu',
+            dayOfWeek: 'thu',
+            month: 'dez',
+          }}
+        />
+
+        <EventCard
+          variant="tertiary"
+          event={{
+            name: 'Yoga Class in Vila Olimpia',
+            place: 'Gympass - Live the Mission',
+            time: '19 am',
+          }}
+          date={{
+            day: '19',
+            dayOfWeek: 'thu',
             month: 'dez',
           }}
         />
