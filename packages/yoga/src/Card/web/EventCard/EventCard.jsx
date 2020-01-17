@@ -25,7 +25,7 @@ const EventInfo = styled.div`
     },
   }) => css`
     padding: ${event.info.padding.top}px ${event.info.padding.right}px
-      ${event.info.padding.left}px ${event.info.padding.bottom}px;
+      ${event.info.padding.bottom}px ${event.info.padding.left}px;
 
     ${Text.H4}, ${Text.Small} {
       display: -webkit-inline-box;
