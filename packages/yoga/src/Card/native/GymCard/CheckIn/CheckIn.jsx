@@ -71,6 +71,7 @@ const CheckIn = ({
 CheckIn.propTypes = {
   name: string.isRequired,
   address: string.isRequired,
+  /** The same as in source prop of Image react-native component */
   avatar: Image.propTypes.source,
   distance: string.isRequired,
   rating: number.isRequired,
@@ -79,5 +80,7 @@ CheckIn.propTypes = {
 CheckIn.defaultProps = {
   avatar: undefined,
 };
+
+CheckIn.displayName = 'GymCard.CheckIn';
 
 export default withTheme(CheckIn);
