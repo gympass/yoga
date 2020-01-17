@@ -71,6 +71,6 @@ jobs:
       - name: Slack Notify
         run: |
           SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
-          node ../../scripts/notify.js
+          node ./scripts/notify.js
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
