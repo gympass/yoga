@@ -327,25 +327,21 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         info: {
           padding: spacing.medium,
           name: {
+            height: spacing.large,
             fontWeight: fontWeights.semibold,
-            padding: {
-              bottom: spacing.xsmall,
-            },
+            marginBottom: spacing.xsmall,
           },
           place: {
+            height: spacing.large,
             color: colors.gray[8],
-            padding: {
-              bottom: spacing.xsmall,
-            },
+            marginBottom: spacing.xsmall,
           },
         },
         date: {
           radius: radii.rounded,
-          weekday: {
+          dayOfWeek: {
             fontWeight: fontWeights.regular,
-            padding: {
-              bottom: spacing.xsmall,
-            },
+            marginBottom: spacing.xsmall,
           },
           month: {
             fontWeight: fontWeights.semibold,

@@ -27,15 +27,30 @@ const EventInfo = styled.div`
     padding: ${event.info.padding}px;
 
     ${Text.H4} {
-      padding-bottom: ${event.info.name.padding.bottom}px;
+      display: -webkit-inline-box;
+      height: ${event.info.name.height}px;
+      overflow: hidden;
+      margin-bottom: ${event.info.name.marginBottom}px;
 
       font-weight: ${event.info.name.fontWeight};
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      xtext-overflow: ellipsis;
+      text-overflow: -o-ellipsis-lastline;
     }
 
     ${Text.Small} {
-      padding-bottom: ${event.info.place.padding.bottom}px;
+      display: -webkit-inline-box;
+      height: ${event.info.place.height}px;
+      overflow: hidden;
+      margin-bottom: ${event.info.place.marginBottom}px;
 
       color: ${event.info.place.color};
+      font-weight: ${event.info.name.fontWeight};
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      text-overflow: -o-ellipsis-lastline;
     }
   `}
 `;
@@ -72,7 +87,7 @@ const DateInfo = styled.div`
   `}
 `;
 
-const Weekday = styled(Text.Small)`
+const DayOfWeek = styled(Text.Small)`
   ${({
     theme: {
       yoga: {
@@ -82,9 +97,9 @@ const Weekday = styled(Text.Small)`
       },
     },
   }) => `
-    padding-bottom: ${event.date.weekday.padding.bottom}px;
+    margin-bottom: ${event.date.dayOfWeek.marginBottom}px;
 
-    font-weight: ${event.date.weekday.fontWeight};
+    font-weight: ${event.date.dayOfWeek.fontWeight};
   `}
 `;
 
@@ -119,13 +134,13 @@ const EventCard = ({
 }) => (
   <Event {...rest}>
     <DateInfo variant={variant}>
-      <Weekday inverted>{date.weekday}</Weekday>
+      <DayOfWeek inverted>{date.dayOfWeek}</DayOfWeek>
       <Text.H3 inverted>{date.day}</Text.H3>
       <Month inverted>{date.month}</Month>
     </DateInfo>
     <EventInfo>
-      <Text.H4>{event.name}</Text.H4>
-      <Text.Small>{event.place}</Text.Small>
+      <Text.H4 title={event.name}>{event.name}</Text.H4>
+      <Text.Small title={event.place}>{event.place}</Text.Small>
       <EventTime>
         <Clock fill={icon.fill} style={{ marginRight: 5 }} />
         <Text.Tiny>{event.time}</Text.Tiny>
@@ -141,10 +156,10 @@ EventCard.propTypes = {
     place: string,
     time: string,
   }).isRequired,
-  /** date information: { day (string), weekday (string), month (string) } */
+  /** date information: { day (string), dayOfWeek (string), month (string) } */
   date: shape({
     day: string,
-    weekday: string,
+    dayOfWeek: string,
     month: string,
   }).isRequired,
   /** style the card following the theme (primary, secondary, tertiary) */

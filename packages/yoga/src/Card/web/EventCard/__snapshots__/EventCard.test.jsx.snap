@@ -66,13 +66,28 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
 }
 
 .c7 .c8 {
-  padding-bottom: 8px;
+  display: -webkit-inline-box;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 8px;
   font-weight: 600;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  xtext-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
 }
 
 .c7 .c3 {
-  padding-bottom: 8px;
+  display: -webkit-inline-box;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 8px;
   color: #6B6B78;
+  font-weight: 600;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
 }
 
 .c11 {
@@ -123,7 +138,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   font-family: Open Sans;
   color: #41414A;
   color: #FFFFFF;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-weight: 400;
 }
 
@@ -148,9 +163,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
     >
       <p
         class="c3 c4"
-      >
-        thu
-      </p>
+      />
       <h3
         class="c5"
       >
@@ -167,11 +180,13 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
     >
       <h4
         class="c8 c9"
+        title="Yoga Class"
       >
         Yoga Class
       </h4>
       <p
         class="c3 c10"
+        title="Gympass"
       >
         Gympass
       </p>
@@ -259,13 +274,28 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
 }
 
 .c7 .c8 {
-  padding-bottom: 8px;
+  display: -webkit-inline-box;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 8px;
   font-weight: 600;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  xtext-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
 }
 
 .c7 .c3 {
-  padding-bottom: 8px;
+  display: -webkit-inline-box;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 8px;
   color: #6B6B78;
+  font-weight: 600;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
 }
 
 .c11 {
@@ -316,7 +346,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   font-family: Open Sans;
   color: #41414A;
   color: #FFFFFF;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-weight: 400;
 }
 
@@ -341,9 +371,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
     >
       <p
         class="c3 c4"
-      >
-        thu
-      </p>
+      />
       <h3
         class="c5"
       >
@@ -360,11 +388,13 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
     >
       <h4
         class="c8 c9"
+        title="Yoga Class"
       >
         Yoga Class
       </h4>
       <p
         class="c3 c10"
+        title="Gympass"
       >
         Gympass
       </p>
@@ -452,13 +482,28 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
 }
 
 .c7 .c8 {
-  padding-bottom: 8px;
+  display: -webkit-inline-box;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 8px;
   font-weight: 600;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  xtext-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
 }
 
 .c7 .c3 {
-  padding-bottom: 8px;
+  display: -webkit-inline-box;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 8px;
   color: #6B6B78;
+  font-weight: 600;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
 }
 
 .c11 {
@@ -509,7 +554,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   font-family: Open Sans;
   color: #41414A;
   color: #FFFFFF;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-weight: 400;
 }
 
@@ -534,9 +579,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
     >
       <p
         class="c3 c4"
-      >
-        thu
-      </p>
+      />
       <h3
         class="c5"
       >
@@ -553,11 +596,13 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
     >
       <h4
         class="c8 c9"
+        title="Yoga Class"
       >
         Yoga Class
       </h4>
       <p
         class="c3 c10"
+        title="Gympass"
       >
         Gympass
       </p>
@@ -645,13 +690,28 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
 }
 
 .c7 .c8 {
-  padding-bottom: 8px;
+  display: -webkit-inline-box;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 8px;
   font-weight: 600;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  xtext-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
 }
 
 .c7 .c3 {
-  padding-bottom: 8px;
+  display: -webkit-inline-box;
+  height: 20px;
+  overflow: hidden;
+  margin-bottom: 8px;
   color: #6B6B78;
+  font-weight: 600;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
 }
 
 .c11 {
@@ -702,7 +762,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   font-family: Open Sans;
   color: #41414A;
   color: #FFFFFF;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-weight: 400;
 }
 
@@ -727,9 +787,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
     >
       <p
         class="c3 c4"
-      >
-        thu
-      </p>
+      />
       <h3
         class="c5"
       >
@@ -746,11 +804,13 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
     >
       <h4
         class="c8 c9"
+        title="Yoga Class"
       >
         Yoga Class
       </h4>
       <p
         class="c3 c10"
+        title="Gympass"
       >
         Gympass
       </p>

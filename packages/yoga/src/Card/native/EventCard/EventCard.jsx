@@ -28,7 +28,6 @@ const DateInfo = styled(View)`
   }) => `
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
 
     width: 56px;
 
@@ -52,7 +51,7 @@ const EventInfo = styled(View)`
   `}
 `;
 
-const Weekday = styled(Text.Small)`
+const DayOfWeek = styled(Text.Small)`
   ${({
     theme: {
       yoga: {
@@ -62,9 +61,9 @@ const Weekday = styled(Text.Small)`
       },
     },
   }) => `
-    padding-bottom: ${event.date.weekday.padding.bottom}px;
+    margin-bottom: ${event.date.dayOfWeek.marginBottom}px;
 
-    font-weight: ${event.date.weekday.fontWeight};
+    font-weight: ${event.date.dayOfWeek.fontWeight};
   `}
 `;
 
@@ -93,7 +92,7 @@ const Name = styled(Text.H4)`
     },
   }) => `
     width: 180px;
-    padding-bottom: ${event.info.name.padding.bottom}px;
+    margin-bottom: ${event.info.name.marginBottom}px;
 
     font-weight: ${event.info.name.fontWeight};
   `}
@@ -110,10 +109,15 @@ const Place = styled(Text.Small)`
     },
   }) => `
     width: 180px;
-    padding-bottom: ${event.info.place.padding.bottom}px;
+    margin-bottom: ${event.info.place.marginBottom}px;
 
     color: ${event.info.place.color};
   `}
+`;
+
+const EventTime = styled(View)`
+  flex-direction: row;
+  align-items: center;
 `;
 
 const EventCard = ({
@@ -133,17 +137,17 @@ const EventCard = ({
 }) => (
   <Event {...rest}>
     <DateInfo variant={variant}>
-      <Weekday inverted>{date.weekday}</Weekday>
+      <DayOfWeek inverted>{date.dayOfWeek}</DayOfWeek>
       <Text.H3 inverted>{date.day}</Text.H3>
       <Month inverted>{date.month}</Month>
     </DateInfo>
     <EventInfo>
-      <Name numberOfLines={2}>{event.name}</Name>
-      <Place numberOfLines={2}>{event.place}</Place>
-      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+      <Name numberOfLines={1}>{event.name}</Name>
+      <Place numberOfLines={1}>{event.place}</Place>
+      <EventTime>
         <Clock fill={icon.fill} style={{ marginRight: 5 }} />
         <Text.Tiny>{event.time}</Text.Tiny>
-      </View>
+      </EventTime>
     </EventInfo>
   </Event>
 );
@@ -155,10 +159,10 @@ EventCard.propTypes = {
     place: string,
     time: string,
   }).isRequired,
-  /** date information: { day (string), weekday (string), month (string) } */
+  /** date information: { day (string), dayOfWeek (string), month (string) } */
   date: shape({
     day: string,
-    weekday: string,
+    dayOfWeek: string,
     month: string,
   }).isRequired,
   /** style the card following the theme (primary, secondary, tertiary) */
