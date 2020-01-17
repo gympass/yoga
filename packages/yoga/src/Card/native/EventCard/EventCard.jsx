@@ -47,7 +47,7 @@ const EventInfo = styled.View`
     },
   }) => `
     padding: ${event.info.padding.top}px ${event.info.padding.right}px
-      ${event.info.padding.left}px ${event.info.padding.bottom}px;
+      ${event.info.padding.bottom}px ${event.info.padding.left}px;
   `}
 `;
 
