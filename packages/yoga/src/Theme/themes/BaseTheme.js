@@ -325,7 +325,12 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           fill: colors.dark,
         },
         info: {
-          padding: spacing.medium,
+          padding: {
+            top: spacing.medium,
+            right: spacing.medium,
+            left: spacing.medium,
+            bottom: spacing.medium,
+          },
           name: {
             height: spacing.large,
             fontWeight: fontWeights.semibold,
