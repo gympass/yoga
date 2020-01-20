@@ -1,4 +1,5 @@
 import Star from './star.svg';
+import Clock from './clock.svg';
 import Building from './building.svg';
 
-export { Star, Building };
+export { Star, Clock, Building };
