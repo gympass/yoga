@@ -23,7 +23,6 @@ const Title = styled(Text.H4)`
   ${({
     theme: {
       yoga: {
-        spacing,
         components: {
           card: {
             gym: { checkIn },
@@ -32,7 +31,7 @@ const Title = styled(Text.H4)`
       },
     },
   }) => `
-    margin-bottom: ${spacing.xsmall}px;
+    margin-bottom: ${checkIn.title.margin.bottom}px;
     font-weight: ${checkIn.title.font.weight};
   `}
 `;
