@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.7.2...@gympass/yoga-labnative@0.8.0) (2020-01-20)
+
+### Features
+
+- **card:** creating card event ([1a40aa1](https://github.com/Gympass/yoga/commit/1a40aa16357ff30d6133feaed4048c679f5682c6))
+
 ## [0.7.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.7.1...@gympass/yoga-labnative@0.7.2) (2020-01-16)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
