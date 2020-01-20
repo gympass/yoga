@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Card, PlanCard, GymCard, Button } from '@gympass/yoga';
+import { Card, PlanCard, EventCard, GymCard, Button } from '@gympass/yoga';
 import { Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
@@ -164,6 +164,43 @@ const CardPage = () => {
           </PlanCard.Actions>
         </PlanCard>
       </ScrollView>
+
+      <StyledText>Event Card</StyledText>
+      <ScrollView
+        horizontal
+        contentContainerStyle={{
+          paddingBottom: 100,
+        }}
+      >
+        <EventCard
+          style={{ marginRight: 16 }}
+          event={{
+            name: 'Yoga Class',
+            place: 'Gympass',
+            time: '19 am',
+          }}
+          date={{
+            day: '19',
+            dayOfWeek: 'thu',
+            month: 'dez',
+          }}
+        />
+
+        <EventCard
+          variant="tertiary"
+          event={{
+            name: 'Yoga Class in Vila Olimpia',
+            place: 'Gympass - Live the Mission',
+            time: '19 am',
+          }}
+          date={{
+            day: '19',
+            dayOfWeek: 'thu',
+            month: 'dez',
+          }}
+        />
+      </ScrollView>
+
       <StyledText>Check-in Card</StyledText>
       <ScrollView
         horizontal
