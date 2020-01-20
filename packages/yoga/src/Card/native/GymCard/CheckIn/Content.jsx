@@ -4,16 +4,10 @@ import { Card } from '../..';
 const Content = styled(Card.Content)`
   ${({
     theme: {
-      yoga: {
-        components: {
-          card: {
-            gym: { checkIn },
-          },
-        },
-      },
+      yoga: { spacing },
     },
   }) => `
-    margin-top: ${checkIn.content.margin.top}px;
+    margin-top: ${spacing.medium}px;
   `}
 `;
 

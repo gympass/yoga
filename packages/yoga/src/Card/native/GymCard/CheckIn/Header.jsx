@@ -7,16 +7,10 @@ const Header = styled(Card.Header)`
 
   ${({
     theme: {
-      yoga: {
-        components: {
-          card: {
-            gym: { checkIn },
-          },
-        },
-      },
+      yoga: { spacing },
     },
   }) => `
-    margin-bottom: ${checkIn.header.margin.bottom}px;
+    margin-bottom: ${spacing.medium}px;
   `}
 `;
 
