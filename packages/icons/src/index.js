@@ -1,3 +1,3 @@
-import { Star, Clock } from './svg';
+import { Star, Clock, Building } from './svg';
 
-export { Star, Clock };
+export { Star, Clock, Building };
