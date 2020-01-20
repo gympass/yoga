@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.7.0...@gympass/yoga@1.8.0) (2020-01-20)
+
+### Features
+
+- **gymcard.checkin:** create new GymCard.CheckIn component ([c1d0d83](https://github.com/Gympass/yoga/commit/c1d0d83d55984d4fb99fdd8b9bc36df90bf31d54))
+
 # [1.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.6.2...@gympass/yoga@1.7.0) (2020-01-20)
 
 ### Bug Fixes
