@@ -322,15 +322,28 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       },
       gym: {
         checkIn: {
+          header: {
+            margin: {
+              bottom: spacing.medium,
+            },
+          },
           avatar: {
             border: {
               radius: radii.rounded,
               width: borders.small,
             },
           },
+          content: {
+            margin: {
+              top: spacing.medium,
+            },
+          },
           title: {
             font: {
               weight: fontWeights.regular,
+            },
+            margin: {
+              bottom: spacing.xsmall,
             },
           },
         },
