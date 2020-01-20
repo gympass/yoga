@@ -67,7 +67,7 @@ jobs:
           yarn build:doc
       - name: Deploy
         run: |
-          lerna run deploy --scope=@gympass/yoga-doc
+          yarn deploy:doc
       - name: Slack Notify
         run: |
           SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}

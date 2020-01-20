@@ -17,6 +17,7 @@
     "lint:tokens": "yarn lint packages/tokens",
     "lint:common": "yarn lint packages/common",
     "lint:all": "yarn lint packages",
+    "deploy:doc": "lerna run deploy --scope=@gympass/yoga-doc",
     "build:yoga": "lerna run build --scope=@gympass/yoga",
     "build:common": "lerna run build --scope=@gympass/yoga-common --stream",
     "build:tokens": "lerna run build --scope=@gympass/yoga-tokens --stream",
