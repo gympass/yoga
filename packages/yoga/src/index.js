@@ -9,6 +9,7 @@ import Stepper from './Stepper';
 import { Container, Row, Col, Hide } from './Grid';
 import Text from './Text';
 import Rating from './Rating';
+import Tag from './Tag';
 
 export {
   ThemeProvider,
@@ -28,4 +29,5 @@ export {
   Text,
   Rating,
   EventCard,
+  Tag,
 };

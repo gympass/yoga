@@ -8,6 +8,7 @@ import { Card, PlanCard, EventCard, GymCard } from './Card/native';
 import Stepper from './Stepper';
 import Text from './Text';
 import Rating from './Rating';
+import Tag from './Tag';
 
 export {
   ThemeProvider,
@@ -24,4 +25,5 @@ export {
   Stepper,
   Text,
   Rating,
+  Tag,
 };

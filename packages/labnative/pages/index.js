@@ -8,6 +8,7 @@ import Stepper from './Stepper';
 import Checkbox from './Checkbox';
 import Text from './Text';
 import Rating from './Rating';
+import Tag from './Tag';
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   Checkbox,
   Text,
   Rating,
+  Tag,
 };
