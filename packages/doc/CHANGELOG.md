@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.10.1...@gympass/yoga-doc@0.11.0) (2020-01-21)
+
+### Features
+
+- **tag:** new component: Tag ([7bbb45c](https://github.com/Gympass/yoga/commit/7bbb45ce282e562d97f3a3134fa8db01b6600e8e))
+
 ## [0.10.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.10.0...@gympass/yoga-doc@0.10.1) (2020-01-20)
 
 **Note:** Version bump only for package @gympass/yoga-doc
