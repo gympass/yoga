@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build-and-publish:
+  packages:
     runs-on: ubuntu-latest
     if: startsWith(github.event.head_commit.message, 'Merge')
     steps:
@@ -31,23 +31,46 @@ jobs:
         run: yarn test
       - name: Build
         run: |
-          CI=true
-          yarn build
+          yarn build:packages
       - name: Publish
         run: |
           GH_TOKEN=${GH_TOKEN}
           NPM_TOKEN=${NPM_TOKEN}
-          SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
           yarn lerna publish --yes
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
-  check-build:
+  doc:
     runs-on: ubuntu-latest
     if: startsWith(github.event.head_commit.message, 'Merge') != true
     steps:
-      - name: Nothing to do here
-        run: exit 0
+      - uses: actions/checkout@v1
+      - name: Configure CI Git User
+        run: |
+          git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git checkout master
+          git config --global user.email octobot@github.com
+          git config --global user.name GitHub Actions
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - name: Install dependencies
+        run: yarn
+      - name: Build
+        run: |
+          CI=true
+          yarn build:doc
+      - name: Deploy
+        run: |
+          yarn deploy:doc
+      - name: Slack Notify
+        run: |
+          SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
+          node ./scripts/notify.js
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

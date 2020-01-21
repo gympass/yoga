@@ -27,6 +27,8 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     dark: tokenColors.dark,
     positive: tokenColors.positive,
     negative: tokenColors.negative,
+    informative: tokenColors.informative,
+    warning: tokenColors.warning,
   };
 
   const components = {
@@ -320,6 +322,67 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           },
         },
       },
+      gym: {
+        checkIn: {
+          header: {
+            margin: {
+              bottom: spacing.medium,
+            },
+          },
+          avatar: {
+            border: {
+              radius: radii.rounded,
+              width: borders.small,
+            },
+          },
+          content: {
+            margin: {
+              top: spacing.medium,
+            },
+          },
+          title: {
+            font: {
+              weight: fontWeights.regular,
+            },
+            margin: {
+              bottom: spacing.xsmall,
+            },
+          },
+        },
+      },
+      event: {
+        icon: {
+          fill: colors.dark,
+        },
+        info: {
+          padding: {
+            top: spacing.medium,
+            right: spacing.medium,
+            left: spacing.medium,
+            bottom: spacing.medium,
+          },
+          name: {
+            height: spacing.large,
+            fontWeight: fontWeights.semibold,
+            marginBottom: spacing.xsmall,
+          },
+          place: {
+            height: spacing.large,
+            color: colors.gray[8],
+            marginBottom: spacing.xsmall,
+          },
+        },
+        date: {
+          radius: radii.rounded,
+          dayOfWeek: {
+            fontWeight: fontWeights.regular,
+            marginBottom: spacing.xsmall,
+          },
+          month: {
+            fontWeight: fontWeights.semibold,
+          },
+        },
+      },
     },
     checkbox: {
       margin: {
@@ -436,6 +499,26 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         size: 12,
       },
       gutter: spacing.xxsmall,
+    },
+    tag: {
+      icon: {
+        margin: {
+          right: spacing.xxsmall,
+        },
+      },
+      font: {
+        size: fontSizes.xsmall,
+        weight: fontWeights.bold,
+      },
+      padding: {
+        top: spacing.xsmall,
+        right: spacing.xsmall,
+        bottom: spacing.xsmall,
+        left: spacing.xsmall,
+      },
+      border: {
+        radius: radii.rounded,
+      },
     },
   };
 

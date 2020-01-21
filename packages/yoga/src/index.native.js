@@ -4,10 +4,11 @@ import List from './List';
 import Checkbox from './Checkbox';
 import Slider from './Slider';
 import RadioGroup from './RadioGroup';
-import { Card, PlanCard } from './Card';
+import { Card, PlanCard, EventCard, GymCard } from './Card/native';
 import Stepper from './Stepper';
 import Text from './Text';
 import Rating from './Rating';
+import Tag from './Tag';
 
 export {
   ThemeProvider,
@@ -19,7 +20,10 @@ export {
   Slider,
   Card,
   PlanCard,
+  EventCard,
+  GymCard,
   Stepper,
   Text,
   Rating,
+  Tag,
 };

@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga",
-  "version": "1.6.2",
+  "version": "1.9.0",
   "description": "Gympass component library",
   "main": "./src",
   "sideEffects": false,
@@ -11,8 +11,7 @@
     "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
     "prebuild": "rm -rf ./dist",
     "postbuild": "cp -r ./src/Fonts ./dist/fonts",
-    "prepublishOnly": "node ../../scripts/prepublish.js",
-    "postpublish": "lerna run deploy --scope=@gympass/yoga-doc && node ../../scripts/notify.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js"
   },
   "keywords": [
     "Gympass",
@@ -36,7 +35,7 @@
   },
   "dependencies": {
     "@gympass/yoga-common": "^0.1.1",
-    "@gympass/yoga-icons": "^0.1.1",
+    "@gympass/yoga-icons": "^0.4.0",
     "@gympass/yoga-tokens": "^0.3.0",
     "@ptomasroos/react-native-multi-slider": "^1.0.0",
     "prop-types": "^15.7.2",
