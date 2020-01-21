@@ -1,0 +1,28 @@
+### Usage
+
+```javascript reactLive=true state=true
+const Wrapper = styled.div`
+  & > div {
+    margin: 5px;
+    vertical-align: top;
+  }
+`;
+
+render(
+  <Wrapper>
+    <Tag>default</Tag>
+    <Tag icon={Building}>default with custom icon</Tag>
+    <Tag icon={false}>default without icon</Tag>
+    <Tag variant="informative">informative</Tag>
+    <Tag variant="positive">positive</Tag>
+    <Tag variant="negative">negative</Tag>
+    <Tag full variant="warning">
+      No spots left
+    </Tag>
+  </Wrapper>,
+);
+```
+
+### Props
+
+<PropsTable component="Tag" platform="web" />
