@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.8.1...@gympass/yoga-labnative@0.9.0) (2020-01-21)
+
+### Features
+
+- **tag:** new component: Tag ([7bbb45c](https://github.com/Gympass/yoga/commit/7bbb45ce282e562d97f3a3134fa8db01b6600e8e))
+
+## [0.8.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.8.0...@gympass/yoga-labnative@0.8.1) (2020-01-20)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+# [0.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.7.2...@gympass/yoga-labnative@0.8.0) (2020-01-20)
+
+### Features
+
+- **card:** creating card event ([1a40aa1](https://github.com/Gympass/yoga/commit/1a40aa16357ff30d6133feaed4048c679f5682c6))
+
 ## [0.7.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.7.1...@gympass/yoga-labnative@0.7.2) (2020-01-16)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

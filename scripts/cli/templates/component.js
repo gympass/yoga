@@ -11,6 +11,7 @@ const Styled${name} = styled.${type === 'web' ? 'div' : 'Text'}\`\`;
 const ${name} = props => <Styled${name} {...props} />;
 
 ${name}.propTypes = {};
+
 ${name}.defaultProps = {};
 
 export default ${name};
