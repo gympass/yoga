@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
+import { string, bool } from 'prop-types';
 
 const addProperties = (props, to, prefix = '') => {
   const filled = to;
-
   Object.entries(props).forEach(([key, value]) => {
     if (to instanceof window.HTMLElement) {
       to.setAttribute(`${prefix}${key}`, `${value}`);
@@ -11,7 +11,6 @@ const addProperties = (props, to, prefix = '') => {
       filled[`${prefix}${key}`] = `${value}`;
     }
   });
-
   return filled;
 };
 
@@ -24,7 +23,7 @@ const Snack = styled.div`
   width: 100%;
 `;
 
-const SnackEmbed = props => {
+const SnackEmbed = ({ id, ...props }) => {
   useEffect(() => {
     const { ExpoSnack } = window;
 
@@ -34,7 +33,7 @@ const SnackEmbed = props => {
 
       addProperties(
         {
-          id: 'snack',
+          id,
           src: 'https://snack.expo.io/embed.js',
           async: true,
         },
@@ -50,6 +49,27 @@ const SnackEmbed = props => {
   const snackProps = addProperties(props, {}, 'data-snack-');
 
   return <Snack {...snackProps} />;
+};
+
+SnackEmbed.propTypes = {
+  code: string.isRequired,
+  dependencies: string,
+  description: string,
+  id: string,
+  name: string,
+  platform: string,
+  preview: bool,
+  theme: string,
+};
+
+SnackEmbed.defaultProps = {
+  dependencies: '',
+  description: 'A yoga component native code sample',
+  id: 'yoga-component-snack',
+  name: 'yoga-component',
+  platform: 'web',
+  preview: true,
+  theme: 'light',
 };
 
 export default SnackEmbed;
