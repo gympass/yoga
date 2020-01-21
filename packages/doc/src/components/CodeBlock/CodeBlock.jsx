@@ -1,335 +1,62 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
-import { MDXContext } from '@mdx-js/react';
-import { node, string } from 'prop-types';
-import Highlight, { defaultProps } from 'prism-react-renderer';
-import { hexToRgb } from '@gympass/yoga-common';
+import React from 'react';
+import { node, string, bool } from 'prop-types';
+
 import * as YogaComponents from '@gympass/yoga';
 import * as YogaIcons from '@gympass/yoga-icons';
-import githubTheme from 'prism-react-renderer/themes/github';
 
-import { CodeSandboxButton } from 'components';
-import CodeIcon from 'images/code.svg';
-import MoonVector from 'images/moon.svg';
+import { ReactLive, PrismHighlight } from 'components';
 
-const defaultPropsWithTheme = {
-  ...defaultProps,
-  theme: githubTheme,
-};
-
-const StyledLiveError = styled(LiveError)`
-  background-color: #fff0f0;
-  color: #ff4249;
-  margin: 0;
-  padding: 15px 15px 4px;
-`;
-
-const Pre = styled.pre`
-  ${({
-    bordered,
-    theme: {
-      yoga: {
-        colors: { primary: primaryPallete, gray: grayPallete },
-      },
-    },
-  }) => `
-    border-radius: 5px;
-    font-size: 15px;
-    margin: 0;
-    padding: 18px;
-
-    .token.string {
-      color: ${primaryPallete[3]} !important;
-    }
-
-    overflow: auto;
-    ${bordered ? `border: 1px solid ${grayPallete[3]};` : ''}
-
-    @media (max-width: 900px) {
-      font-size: 12px;
-    }
-  `}
-`;
-
-const Preview = styled.div`
-  ${({
-    theme: {
-      yoga: {
-        colors: { gray: grayPallete },
-      },
-    },
-  }) => `
-    background-color: ${grayPallete[0]};
-    border-radius: 5px;
-    border: 1px solid ${grayPallete[3]};
-    overflow: hidden;
-
-    textarea {
-      outline: none;
-    }
-  `};
-`;
-
-const Component = styled.div`
-  ${({
-    'data-center': center,
-    darkMode,
-    theme: {
-      yoga: {
-        colors: { white, dark, primary },
-      },
-    },
-  }) => `
-    font-family: 'Open Sans';
-    padding: 50px;
-    background-color: ${darkMode ? dark : white};
-    transition: all 0.3s ease-in-out;
-
-    ${YogaComponents.Col} {
-      background-color: ${primary[1]};
-      border: 1px solid;
-    }
-
-    > div {
-      width: 100%;
-      ${
-        center === 'true'
-          ? `
-      align-items: center;
-      display: flex;
-      justify-content: center;
-    `
-          : ''
-      }
-    }
-
-    @media (max-width: 900px) {
-      padding: 20px;
-    }
-  `}
-`;
-
-const Usage = styled.div`
-  ${({
-    visible,
-    theme: {
-      yoga: {
-        colors: { gray: grayPallete },
-      },
-    },
-  }) => `
-    background-color: ${grayPallete[0]};
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    display: ${visible ? 'block' : 'none'};
-    padding: 1px;
-
-    pre {
-      border: 0;
-    }
-  `};
-`;
-
-const Toolbar = styled.div`
-  ${({
-    theme: {
-      yoga: {
-        colors: { gray: grayPallete },
-      },
-    },
-  }) => `
-    align-items: center;
-    background-color: ${hexToRgb(grayPallete[1], 0.5)};
-    display: flex;
-    height: 50px;
-    justify-content: center;
-  `};
-`;
-
-const ToolbarIconButton = styled.button`
-  ${({
-    theme: {
-      yoga: {
-        colors: { primary: primaryPallete, gray: grayPallete },
-      },
-    },
-  }) => `
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    height: 32px;
-    margin-right: 10px;
-    outline: none;
-    width: 32px;
-
-    svg {
-      width: 100%;
-      height: 100%;
-
-      path {
-        fill: ${grayPallete[7]};
-      }
-
-      &:hover {
-        path {
-          fill: ${primaryPallete[3]};
-        }
-      }
-    }
-  `}
-`;
-
-const Moon = styled(MoonVector)`
-  ${({ 'data-darkmode': darkMode }) => `
-    path[mode="dark"]{
-      display: ${darkMode ? 'none' : 'block'};
-    }
-  `}
-`;
-
-const CodeBlock = ({
-  children,
-  reactLive,
-  center,
-  state,
-  hasComponent,
-  hasIcon,
-}) => {
-  const [codeVisible, setCodeVisible] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
-
+const CodeBlock = ({ reactLive, children, ...props }) => {
   const normalizedCodeExample = children.trim();
-  const importsRegex = /(?:<)([A-Z][A-Za-z]+)/g;
-  const importsComponents = [
-    ...new Set(normalizedCodeExample.match(importsRegex)),
-  ]
-    .filter(importedComponent =>
-      Object.keys(YogaComponents).includes(importedComponent.replace(/</g, '')),
-    )
-    .join(', ')
-    .replace(/</g, '');
 
-  const importsIcons = [...new Set(normalizedCodeExample.match(importsRegex))]
-    .filter(importedComponent =>
-      Object.keys(YogaIcons).includes(importedComponent.replace(/</g, '')),
-    )
-    .join(', ')
-    .replace(/</g, '');
+  const findImports = dependencies => {
+    const importsRegex = /(?:<)([A-Z][A-Za-z]+)/g;
+    const components = [];
 
-  const toggleCode = () => {
-    setCodeVisible(!codeVisible);
+    dependencies.forEach(module => {
+      components.push(
+        [...new Set(normalizedCodeExample.match(importsRegex))]
+          .filter(
+            importedComponent => {
+              Object.entries(module).forEach(([key, value]) => {
+                if (key === 'dependency') {
+                  return Object.keys(value).includes(
+                    importedComponent.replace(/</g, ''),
+                  );
+                }
+              });
+            },
+            //
+          )
+          .join(', ')
+          .replace(/</g, ''),
+      );
+    });
+
+    return components;
   };
 
-  const code = [importsComponents, importsIcons, normalizedCodeExample];
+  const importsComponents = findImports([
+    { dependency: YogaComponents, path: '@gympass/yoga' },
+    { dependency: YogaIcons, path: '@gympass/yoga-icons' },
+  ]);
+
+  console.log(importsComponents);
+
+  // const importsIcons = findImports(YogaIcons);
 
   return reactLive ? (
-    <MDXContext.Consumer>
-      {scope => (
-        <LiveProvider
-          code={normalizedCodeExample}
-          scope={{ ...scope, useState, styled }}
-          theme={githubTheme}
-          noInline={state}
-        >
-          <Preview>
-            <Toolbar>
-              <ToolbarIconButton title="Open in CodeSandbox">
-                <CodeSandboxButton code={code} />
-              </ToolbarIconButton>
-
-              <ToolbarIconButton title="Show code" onClick={() => toggleCode()}>
-                <CodeIcon />
-              </ToolbarIconButton>
-
-              <ToolbarIconButton
-                title="Change background"
-                onClick={() => setDarkMode(!darkMode)}
-              >
-                <Moon data-darkmode={darkMode} />
-              </ToolbarIconButton>
-            </Toolbar>
-
-            <Component data-center={center} darkMode={darkMode}>
-              <LivePreview />
-            </Component>
-
-            <Usage visible={codeVisible}>
-              <Highlight
-                {...defaultPropsWithTheme}
-                code={`${
-                  JSON.parse(hasComponent)
-                    ? ` import { ${importsComponents} } from '@gympass/yoga';`
-                    : ''
-                }
-${
-  JSON.parse(hasIcon)
-    ? ` import { ${importsIcons} } from '@gympass/yoga-icons';`
-    : ''
-}`.trimRight()}
-                language="jsx"
-              >
-                {({
-                  className,
-                  style,
-                  tokens,
-                  getLineProps,
-                  getTokenProps,
-                }) => (
-                  <Pre className={className} style={style}>
-                    {tokens.map((line, i) => (
-                      <div {...getLineProps({ line, key: i })}>
-                        {line.map((token, key) => (
-                          <span {...getTokenProps({ token, key })} />
-                        ))}
-                      </div>
-                    ))}
-                  </Pre>
-                )}
-              </Highlight>
-
-              <Highlight
-                {...defaultPropsWithTheme}
-                code={children}
-                language="jsx"
-              >
-                {({ className, style }) => (
-                  <Pre className={className} style={style}>
-                    <LiveEditor />
-                  </Pre>
-                )}
-              </Highlight>
-
-              <StyledLiveError />
-            </Usage>
-          </Preview>
-        </LiveProvider>
-      )}
-    </MDXContext.Consumer>
+    <div>asd</div>
   ) : (
-    <Highlight
-      {...defaultPropsWithTheme}
-      code={normalizedCodeExample}
-      language="jsx"
-    >
-      {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <Pre
-          bordered
-          className={className}
-          style={{
-            ...style,
-          }}
-        >
-          {tokens.map((line, i) => (
-            <div {...getLineProps({ line, key: i })}>
-              {line.map((token, key) => (
-                <span {...getTokenProps({ token, key })} />
-              ))}
-            </div>
-          ))}
-        </Pre>
-      )}
-    </Highlight>
+    // <ReactLive
+    //   code={normalizedCodeExample}
+    //   importsComponents={importsComponents}
+    //   importsIcons={importsIcons}
+    //   {...props}
+    // >
+    //   {children}
+    // </ReactLive>
+    <PrismHighlight code={normalizedCodeExample} liveEditor={false} />
   );
 };
 
@@ -337,13 +64,13 @@ CodeBlock.propTypes = {
   children: node.isRequired,
   hasIcon: string,
   hasComponent: string,
-  reactLive: string,
+  reactLive: bool,
   center: string,
   state: string,
 };
 
 CodeBlock.defaultProps = {
-  reactLive: undefined,
+  reactLive: false,
   hasIcon: 'false',
   hasComponent: 'true',
   center: 'false',
