@@ -27,6 +27,8 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     dark: tokenColors.dark,
     positive: tokenColors.positive,
     negative: tokenColors.negative,
+    informative: tokenColors.informative,
+    warning: tokenColors.warning,
   };
 
   const components = {
@@ -497,6 +499,26 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         size: 12,
       },
       gutter: spacing.xxsmall,
+    },
+    tag: {
+      icon: {
+        margin: {
+          right: spacing.xxsmall,
+        },
+      },
+      font: {
+        size: fontSizes.xsmall,
+        weight: fontWeights.bold,
+      },
+      padding: {
+        top: spacing.xsmall,
+        right: spacing.xsmall,
+        bottom: spacing.xsmall,
+        left: spacing.xsmall,
+      },
+      border: {
+        radius: radii.rounded,
+      },
     },
   };
 

@@ -2,6 +2,7 @@ const test = (name, type = 'web') => `import React from 'react';
 import { render } from '@testing-library/react${
   type === 'native' ? '-native' : ''
 }';
+
 import { ThemeProvider, ${name} } from '../..';
 
 describe('<${name} />', () => {
