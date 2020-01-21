@@ -17,6 +17,7 @@ import GlobalStyle from './GlobalStyle';
 import Redirect from './Redirect';
 import Tokens from './Tokens';
 import Img from './Img';
+import SnackEmbed from './SnackEmbed';
 
 export {
   CodeBlock,
@@ -39,4 +40,5 @@ export {
   Redirect,
   Tokens,
   Img,
+  SnackEmbed,
 };

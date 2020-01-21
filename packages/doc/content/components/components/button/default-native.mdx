@@ -1,5 +1,3 @@
-import ExpoSnack from 'react-expo-snack';
-
 ### Reference
 
 Gympass `<Button />` component implements all our design guidelines such as default spacings, borders and color pallete tokens.
@@ -7,7 +5,33 @@ You can use all differente compounds like `<Button.Outline />` and `<Button.Text
 
 ### Usage
 
-<ExpoSnack id="@gympass/yoga-button" theme="light" />
+<SnackEmbed
+  theme="light"
+  preview={true}
+  name="button"
+  dependencies="@gympass/yoga"
+  platform="web"
+  code={`import * as React from 'react';
+import { Text, View, StyleSheet } from 'react-native';
+import { ThemeProvider, Button } from '@gympass/yoga';
+const App = () => (
+  <ThemeProvider>
+    <View style={styles.container}>
+      <Button>Gympass</Button>
+    </View>
+  </ThemeProvider>
+);
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#ecf0f1',
+  }
+});
+export default App;
+`}
+/>
 
 ### Props
 

@@ -17,6 +17,7 @@ import {
   Summary,
   Tokens,
   Img,
+  SnackEmbed,
 } from 'components';
 
 const customComponents = prefix => ({
@@ -33,6 +34,7 @@ const customComponents = prefix => ({
   Tokens: props => <Tokens {...props} />,
   TokensColors: props => <Tokens.Colors {...props} />,
   TokensCards: props => <Tokens.Cards {...props} />,
+  SnackEmbed: props => <SnackEmbed {...props} />,
   ...components,
   ...icons,
 });
