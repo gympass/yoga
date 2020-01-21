@@ -24,6 +24,8 @@ const Snack = styled.div`
 `;
 
 const SnackEmbed = ({ id, ...props }) => {
+  const snackProps = addProperties(props, {}, 'data-snack-');
+
   useEffect(() => {
     const { ExpoSnack } = window;
 
@@ -45,8 +47,6 @@ const SnackEmbed = ({ id, ...props }) => {
       ExpoSnack.initialize();
     }
   });
-
-  const snackProps = addProperties(props, {}, 'data-snack-');
 
   return <Snack {...snackProps} />;
 };
