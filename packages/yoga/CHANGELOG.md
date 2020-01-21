@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.8.0...@gympass/yoga@1.9.0) (2020-01-21)
+
+### Features
+
+- **tag:** new component: Tag ([7bbb45c](https://github.com/Gympass/yoga/commit/7bbb45ce282e562d97f3a3134fa8db01b6600e8e))
+- **tag:** new component: Tag (web and native) ([659af81](https://github.com/Gympass/yoga/commit/659af8155d60bec4f540a90b4bf7c9a76512fbee))
+
 # [1.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.7.0...@gympass/yoga@1.8.0) (2020-01-20)
 
 ### Features

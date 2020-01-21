@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.3.0...@gympass/yoga-icons@0.4.0) (2020-01-21)
+
+### Features
+
+- **icons:** add TriangleAlert to native index ([937d491](https://github.com/Gympass/yoga/commit/937d4917c0abbeea48caa209f883c2dbd380b294))
+- **icons:** new Icon: triangle alert ([6640a3a](https://github.com/Gympass/yoga/commit/6640a3ae501a8031a7daf48d979278c96245a1aa))
+
 # [0.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.2.0...@gympass/yoga-icons@0.3.0) (2020-01-20)
 
 ### Features
