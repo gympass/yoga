@@ -1,0 +1,28 @@
+### Reference
+
+Gympass `<Tag />` description
+
+### Usage
+
+```javascript reactLive=true state=true
+const Wrapper = styled.div`
+  & > div {
+    margin: 5px;
+  }
+`;
+
+render(
+  <Wrapper>
+    <Tag>Living the Mission</Tag>
+    <Tag full>Living the Mission</Tag>
+    <Tag variant="warning">Living the Mission</Tag>
+    <Tag variant="positive">Living the Mission</Tag>
+    <Tag variant="negative">Living the Mission</Tag>
+    <Tag variant="warning">Living the Mission</Tag>
+  </Wrapper>,
+);
+```
+
+### Props
+
+<PropsTable component="Tag" platform="web" />
