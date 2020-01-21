@@ -1,0 +1,1009 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tag /> should match snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    color={
+      Array [
+        "#F5F5FA",
+        "#6B6B78",
+      ]
+    }
+    full={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#F5F5FA",
+          "borderRadius": 8,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+          "width": "auto",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={12}
+        bbWidth={14}
+        fill="#6B6B78"
+        focusable={false}
+        height={12}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginRight": 5,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 12,
+              "width": 14,
+            },
+          ]
+        }
+        width={14}
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4285229944,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+      <Text
+        color={
+          Array [
+            "#F5F5FA",
+            "#6B6B78",
+          ]
+        }
+        style={
+          Array [
+            Object {
+              "color": "#6B6B78",
+              "fontSize": 12,
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        default
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Tag /> should match snapshot with custom icon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    color={
+      Array [
+        "#F5F5FA",
+        "#6B6B78",
+      ]
+    }
+    full={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#F5F5FA",
+          "borderRadius": 8,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+          "width": "auto",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={12}
+        bbWidth={14}
+        fill="#6B6B78"
+        focusable={false}
+        height={12}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginRight": 5,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 12,
+              "width": 14,
+            },
+          ]
+        }
+        width={14}
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4285229944,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+      <Text
+        color={
+          Array [
+            "#F5F5FA",
+            "#6B6B78",
+          ]
+        }
+        style={
+          Array [
+            Object {
+              "color": "#6B6B78",
+              "fontSize": 12,
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        default with custom icon
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Tag /> should match snapshot with full prop 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    color={
+      Array [
+        "#F5F5FA",
+        "#6B6B78",
+      ]
+    }
+    full={true}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#F5F5FA",
+          "borderRadius": 8,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={12}
+        bbWidth={14}
+        fill="#6B6B78"
+        focusable={false}
+        height={12}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginRight": 5,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 12,
+              "width": 14,
+            },
+          ]
+        }
+        width={14}
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4285229944,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+      <Text
+        color={
+          Array [
+            "#F5F5FA",
+            "#6B6B78",
+          ]
+        }
+        style={
+          Array [
+            Object {
+              "color": "#6B6B78",
+              "fontSize": 12,
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        full
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Tag /> should match snapshot with variant prop 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    color={
+      Array [
+        "#E9F3FC",
+        "#2186D9",
+      ]
+    }
+    full={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#E9F3FC",
+          "borderRadius": 8,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+          "width": "auto",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={12}
+        bbWidth={14}
+        fill="#2186D9"
+        focusable={false}
+        height={12}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginRight": 5,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 12,
+              "width": 14,
+            },
+          ]
+        }
+        width={14}
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4280387289,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+      <Text
+        color={
+          Array [
+            "#E9F3FC",
+            "#2186D9",
+          ]
+        }
+        style={
+          Array [
+            Object {
+              "color": "#2186D9",
+              "fontSize": 12,
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        informative
+      </Text>
+    </View>
+  </View>
+  <View
+    color={
+      Array [
+        "#DEF8E9",
+        "#1E854A",
+      ]
+    }
+    full={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#DEF8E9",
+          "borderRadius": 8,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+          "width": "auto",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={12}
+        bbWidth={14}
+        fill="#1E854A"
+        focusable={false}
+        height={12}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginRight": 5,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 12,
+              "width": 14,
+            },
+          ]
+        }
+        width={14}
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4280190282,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+      <Text
+        color={
+          Array [
+            "#DEF8E9",
+            "#1E854A",
+          ]
+        }
+        style={
+          Array [
+            Object {
+              "color": "#1E854A",
+              "fontSize": 12,
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        positive
+      </Text>
+    </View>
+  </View>
+  <View
+    color={
+      Array [
+        "#FCEAE9",
+        "#CB3530",
+      ]
+    }
+    full={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FCEAE9",
+          "borderRadius": 8,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+          "width": "auto",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={12}
+        bbWidth={14}
+        fill="#CB3530"
+        focusable={false}
+        height={12}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginRight": 5,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 12,
+              "width": 14,
+            },
+          ]
+        }
+        width={14}
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4291507504,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+      <Text
+        color={
+          Array [
+            "#FCEAE9",
+            "#CB3530",
+          ]
+        }
+        style={
+          Array [
+            Object {
+              "color": "#CB3530",
+              "fontSize": 12,
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        negative
+      </Text>
+    </View>
+  </View>
+  <View
+    color={
+      Array [
+        "#FBFBBE",
+        "#CB9303",
+      ]
+    }
+    full={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FBFBBE",
+          "borderRadius": 8,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+          "width": "auto",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={12}
+        bbWidth={14}
+        fill="#CB9303"
+        focusable={false}
+        height={12}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginRight": 5,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 12,
+              "width": 14,
+            },
+          ]
+        }
+        width={14}
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4291531523,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+      <Text
+        color={
+          Array [
+            "#FBFBBE",
+            "#CB9303",
+          ]
+        }
+        style={
+          Array [
+            Object {
+              "color": "#CB9303",
+              "fontSize": 12,
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        warning
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Tag /> should match snapshot with without icon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    color={
+      Array [
+        "#F5F5FA",
+        "#6B6B78",
+      ]
+    }
+    full={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#F5F5FA",
+          "borderRadius": 8,
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+          "width": "auto",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        color={
+          Array [
+            "#F5F5FA",
+            "#6B6B78",
+          ]
+        }
+        style={
+          Array [
+            Object {
+              "color": "#6B6B78",
+              "fontSize": 12,
+              "fontWeight": "700",
+            },
+          ]
+        }
+      >
+        default without icon
+      </Text>
+    </View>
+  </View>
+</View>
+`;
