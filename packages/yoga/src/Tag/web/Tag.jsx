@@ -37,6 +37,7 @@ const StyledTag = styled.div`
   `}
 `;
 
+/** Use Tag component when you want to categorize your content */
 const Tag = ({
   icon: Icon,
   children,
