@@ -7,56 +7,37 @@ import * as YogaIcons from '@gympass/yoga-icons';
 import { ReactLive, PrismHighlight } from 'components';
 
 const CodeBlock = ({ reactLive, children, ...props }) => {
-  const normalizedCodeExample = children.trim();
+  const code = children.trim();
 
-  const findImports = dependencies => {
-    const importsRegex = /(?:<)([A-Z][A-Za-z]+)/g;
-    const components = [];
+  const buildImports = modules => {
+    const findComponents = /(?<=<)(\w*)(?=\s*?\/?>)/gm;
+    const imports = [];
 
-    dependencies.forEach(module => {
-      components.push(
-        [...new Set(normalizedCodeExample.match(importsRegex))]
-          .filter(
-            importedComponent => {
-              Object.entries(module).forEach(([key, value]) => {
-                if (key === 'dependency') {
-                  return Object.keys(value).includes(
-                    importedComponent.replace(/</g, ''),
-                  );
-                }
-              });
-            },
-            //
-          )
-          .join(', ')
-          .replace(/</g, ''),
-      );
+    modules.forEach(({ name, path }) => {
+      const componentsInCode = [...new Set(code.match(findComponents))]
+        .filter(importedComponent =>
+          Object.keys(name).includes(importedComponent.replace(/</g, '')),
+        )
+        .join(', ')
+        .replace(/</g, '');
+
+      imports.push(`import { ${componentsInCode} } from '${path}';`);
     });
 
-    return components;
+    return imports.join('\n');
   };
 
-  const importsComponents = findImports([
-    { dependency: YogaComponents, path: '@gympass/yoga' },
-    { dependency: YogaIcons, path: '@gympass/yoga-icons' },
+  const imports = buildImports([
+    { name: YogaComponents, path: '@gympass/yoga' },
+    { name: YogaIcons, path: '@gympass/yoga-icons' },
   ]);
 
-  console.log(importsComponents);
-
-  // const importsIcons = findImports(YogaIcons);
-
   return reactLive ? (
-    <div>asd</div>
+    <ReactLive imports={imports} code={code} {...props}>
+      {children}
+    </ReactLive>
   ) : (
-    // <ReactLive
-    //   code={normalizedCodeExample}
-    //   importsComponents={importsComponents}
-    //   importsIcons={importsIcons}
-    //   {...props}
-    // >
-    //   {children}
-    // </ReactLive>
-    <PrismHighlight code={normalizedCodeExample} liveEditor={false} />
+    <PrismHighlight code={code} liveEditor={false} />
   );
 };
 
