@@ -3,10 +3,16 @@ const URL = 'https://codesandbox.io/api/v1/sandboxes/define?json=1';
 
 const getCode = children => {
   const [imports, component] = children;
+  const importPosition = 9;
+  const importsWithTheme = [
+    imports.slice(0, importPosition),
+    'ThemeProvider, ',
+    imports.slice(importPosition),
+  ].join('');
 
   return `import React from 'react';
-  import ReactDOM from 'react-dom';
-  import { ThemeProvider, ${imports} } from '@gympass/yoga';
+import ReactDOM from 'react-dom';
+${importsWithTheme}
 
   const App = () => <ThemeProvider>
   ${component}
