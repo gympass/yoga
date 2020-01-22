@@ -6,13 +6,11 @@ import { LiveProvider, LiveError, LivePreview } from 'react-live';
 import { MDXContext } from '@mdx-js/react';
 
 import * as YogaComponents from '@gympass/yoga';
-import { hexToRgb } from '@gympass/yoga-common';
-import { CodeSandboxButton, PrismHighlight } from 'components';
+import PrismHighlight from '../PrismHighlight';
+import CodeToolbar from './CodeToolbar';
+import ReactLiveContext from './ReactLiveContext';
 
-import CodeIcon from 'images/code.svg';
-import MoonVector from 'images/moon.svg';
-
-const StyledLiveError = styled(LiveError)`
+const CodeError = styled(LiveError)`
   background-color: #fff0f0;
   color: #ff4249;
   margin: 0;
@@ -98,71 +96,17 @@ const Usage = styled.div`
   `};
 `;
 
-const Toolbar = styled.div`
-  ${({
-    theme: {
-      yoga: {
-        colors: { gray: grayPallete },
-      },
-    },
-  }) => `
-    align-items: center;
-    background-color: ${hexToRgb(grayPallete[1], 0.5)};
-    display: flex;
-    height: 50px;
-    justify-content: center;
-  `};
-`;
-
-const ToolbarIconButton = styled.button`
-  ${({
-    theme: {
-      yoga: {
-        colors: { primary: primaryPallete, gray: grayPallete },
-      },
-    },
-  }) => `
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    height: 32px;
-    margin-right: 10px;
-    outline: none;
-    width: 32px;
-
-    svg {
-      width: 100%;
-      height: 100%;
-
-      path {
-        fill: ${grayPallete[7]};
-      }
-
-      &:hover {
-        path {
-          fill: ${primaryPallete[3]};
-        }
-      }
-    }
-  `}
-`;
-
-const Moon = styled(MoonVector)`
-  ${({ 'data-darkmode': darkMode }) => `
-    path[mode="dark"]{
-      display: ${darkMode ? 'none' : 'block'};
-    }
-  `}
-`;
-
 const ReactLive = ({ code, state, center, imports, children }) => {
   const [codeVisible, setCodeVisible] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  const sandbox = [imports, code];
-
-  const toggleCode = () => {
-    setCodeVisible(!codeVisible);
+  const sharedState = {
+    codeVisible,
+    setCodeVisible,
+    darkMode,
+    setDarkMode,
+    imports,
+    code,
   };
 
   return (
@@ -175,32 +119,19 @@ const ReactLive = ({ code, state, center, imports, children }) => {
           noInline={state}
         >
           <Preview>
-            <Toolbar>
-              <ToolbarIconButton title="Open in CodeSandbox">
-                <CodeSandboxButton code={sandbox} />
-              </ToolbarIconButton>
+            <ReactLiveContext.Provider value={sharedState}>
+              <CodeToolbar />
 
-              <ToolbarIconButton title="Show code" onClick={() => toggleCode()}>
-                <CodeIcon />
-              </ToolbarIconButton>
+              <Component data-center={center} darkMode={darkMode}>
+                <LivePreview />
+              </Component>
 
-              <ToolbarIconButton
-                title="Change background"
-                onClick={() => setDarkMode(!darkMode)}
-              >
-                <Moon data-darkmode={darkMode} />
-              </ToolbarIconButton>
-            </Toolbar>
-
-            <Component data-center={center} darkMode={darkMode}>
-              <LivePreview />
-            </Component>
-
-            <Usage visible={codeVisible}>
-              <PrismHighlight code={imports} />
-              <PrismHighlight code={children} liveEditor />
-              <StyledLiveError />
-            </Usage>
+              <Usage visible={codeVisible}>
+                <PrismHighlight code={imports} />
+                <PrismHighlight code={children} liveEditor />
+                <CodeError />
+              </Usage>
+            </ReactLiveContext.Provider>
           </Preview>
         </LiveProvider>
       )}
