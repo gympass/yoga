@@ -41,12 +41,14 @@ const CodeBlock = ({ reactLive, children, ...props }) => {
     code,
   };
 
-  return reactLive ? (
+  return (
     <CodeBlockContext.Provider value={codeblockData}>
-      <ReactLive {...props}>{children}</ReactLive>
+      {reactLive ? (
+        <ReactLive {...props}>{children}</ReactLive>
+      ) : (
+        <PrismHighlight code={code} />
+      )}
     </CodeBlockContext.Provider>
-  ) : (
-    <PrismHighlight code={code} liveEditor={false} />
   );
 };
 

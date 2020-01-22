@@ -1,4 +1,5 @@
 import React from 'react';
+import { string, bool } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import githubTheme from 'prism-react-renderer/themes/github';
 import styled from 'styled-components';
@@ -36,7 +37,7 @@ const Pre = styled.pre`
   `}
 `;
 
-const PrismHighlight = ({ code, liveEditor = false }) => (
+const PrismHighlight = ({ code, liveEditor }) => (
   <Highlight {...defaultPropsWithTheme} code={code} language="jsx">
     {({ className, style, tokens, getLineProps, getTokenProps }) =>
       liveEditor ? (
@@ -63,5 +64,14 @@ const PrismHighlight = ({ code, liveEditor = false }) => (
     }
   </Highlight>
 );
+
+PrismHighlight.propTypes = {
+  code: string.isRequired,
+  liveEditor: bool,
+};
+
+PrismHighlight.defaultProps = {
+  liveEditor: false,
+};
 
 export default PrismHighlight;

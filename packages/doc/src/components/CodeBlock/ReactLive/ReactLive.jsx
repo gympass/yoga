@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import styled from 'styled-components';
+import { node, string } from 'prop-types';
 
 import githubTheme from 'prism-react-renderer/themes/github';
 import { LiveProvider, LiveError, LivePreview } from 'react-live';
@@ -136,6 +137,17 @@ const ReactLive = ({ state, center, children }) => {
       )}
     </MDXContext.Consumer>
   );
+};
+
+ReactLive.propTypes = {
+  children: node.isRequired,
+  center: string,
+  state: string,
+};
+
+ReactLive.defaultProps = {
+  center: 'false',
+  state: undefined,
 };
 
 export default ReactLive;
