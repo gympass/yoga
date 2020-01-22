@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import styled from 'styled-components';
 
 import githubTheme from 'prism-react-renderer/themes/github';
@@ -8,7 +8,7 @@ import { MDXContext } from '@mdx-js/react';
 import * as YogaComponents from '@gympass/yoga';
 import PrismHighlight from '../PrismHighlight';
 import CodeToolbar from './CodeToolbar';
-import ReactLiveContext from './ReactLiveContext';
+import CodeBlockContext from '../CodeBlockContext';
 
 const CodeError = styled(LiveError)`
   background-color: #fff0f0;
@@ -96,18 +96,19 @@ const Usage = styled.div`
   `};
 `;
 
-const ReactLive = ({ code, state, center, imports, children }) => {
+const ReactLive = ({ state, center, children }) => {
   const [codeVisible, setCodeVisible] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  const sharedState = {
+  const codeblockData = useContext(CodeBlockContext);
+  const { imports, code } = codeblockData;
+
+  Object.assign(codeblockData, {
     codeVisible,
     setCodeVisible,
     darkMode,
     setDarkMode,
-    imports,
-    code,
-  };
+  });
 
   return (
     <MDXContext.Consumer>
@@ -119,19 +120,17 @@ const ReactLive = ({ code, state, center, imports, children }) => {
           noInline={state}
         >
           <Preview>
-            <ReactLiveContext.Provider value={sharedState}>
-              <CodeToolbar />
+            <CodeToolbar />
 
-              <Component data-center={center} darkMode={darkMode}>
-                <LivePreview />
-              </Component>
+            <Component data-center={center} darkMode={darkMode}>
+              <LivePreview />
+            </Component>
 
-              <Usage visible={codeVisible}>
-                <PrismHighlight code={imports} />
-                <PrismHighlight code={children} liveEditor />
-                <CodeError />
-              </Usage>
-            </ReactLiveContext.Provider>
+            <Usage visible={codeVisible}>
+              <PrismHighlight code={imports} />
+              <PrismHighlight code={children} liveEditor />
+              <CodeError />
+            </Usage>
           </Preview>
         </LiveProvider>
       )}

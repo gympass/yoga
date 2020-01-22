@@ -2,18 +2,6 @@ import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { string, bool } from 'prop-types';
 
-const addProperties = (props, to, prefix = '') => {
-  const filled = to;
-  Object.entries(props).forEach(([key, value]) => {
-    if (to instanceof window.HTMLElement) {
-      to.setAttribute(`${prefix}${key}`, `${value}`);
-    } else {
-      filled[`${prefix}${key}`] = `${value}`;
-    }
-  });
-  return filled;
-};
-
 const Snack = styled.div`
   overflow: hidden;
   background: #fafafa;
@@ -24,6 +12,18 @@ const Snack = styled.div`
 `;
 
 const SnackEmbed = ({ id, ...props }) => {
+  const addProperties = (properties, to, prefix = '') => {
+    const filled = to;
+    Object.entries(properties).forEach(([key, value]) => {
+      if (to instanceof window.HTMLElement) {
+        to.setAttribute(`${prefix}${key}`, `${value}`);
+      } else {
+        filled[`${prefix}${key}`] = `${value}`;
+      }
+    });
+    return filled;
+  };
+
   const snackProps = addProperties(props, {}, 'data-snack-');
 
   useEffect(() => {
