@@ -1,12 +1,12 @@
 import React, { useState, useContext } from 'react';
 import CodeSandboxIcon from 'images/codesandbox.svg';
 import LoadingIcon from 'images/loading.svg';
-import ReactLiveContext from './ReactLiveContext';
+import CodeBlockContext from '../CodeBlockContext';
 import { URL, setOptions } from './sandboxConfig';
 
 const CodeSandboxButton = () => {
   const [loading, setLoading] = useState(false);
-  const { imports, code } = useContext(ReactLiveContext);
+  const { imports, code } = useContext(CodeBlockContext);
 
   const sandbox = [imports, code];
 

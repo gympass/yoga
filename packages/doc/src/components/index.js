@@ -1,5 +1,4 @@
-import { CodeBlock, PrismHighlight, ReactLive, ExpoSnack } from './CodeBlock';
-
+import { CodeBlock, PrismHighlight, ReactLive, SnackEmbed } from './CodeBlock';
 import PropsTable from './PropsTable';
 import ComponentTitle from './ComponentTitle';
 import Header from './Header';
@@ -17,13 +16,12 @@ import GlobalStyle from './GlobalStyle';
 import Redirect from './Redirect';
 import Tokens from './Tokens';
 import Img from './Img';
-import SnackEmbed from './SnackEmbed';
 
 export {
   CodeBlock,
   PrismHighlight,
   ReactLive,
-  ExpoSnack,
+  SnackEmbed,
   ComponentTitle,
   Header,
   Home,
@@ -42,5 +40,4 @@ export {
   Redirect,
   Tokens,
   Img,
-  SnackEmbed,
 };

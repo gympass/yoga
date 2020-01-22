@@ -5,6 +5,7 @@ import * as YogaComponents from '@gympass/yoga';
 import * as YogaIcons from '@gympass/yoga-icons';
 
 import { ReactLive, PrismHighlight } from 'components';
+import CodeBlockContext from './CodeBlockContext';
 
 const CodeBlock = ({ reactLive, children, ...props }) => {
   const code = children.trim();
@@ -35,10 +36,15 @@ const CodeBlock = ({ reactLive, children, ...props }) => {
     { name: YogaComponents, path: '@gympass/yoga' },
   ]);
 
+  const codeblockData = {
+    imports,
+    code,
+  };
+
   return reactLive ? (
-    <ReactLive imports={imports} code={code} {...props}>
-      {children}
-    </ReactLive>
+    <CodeBlockContext.Provider value={codeblockData}>
+      <ReactLive {...props}>{children}</ReactLive>
+    </CodeBlockContext.Provider>
   ) : (
     <PrismHighlight code={code} liveEditor={false} />
   );

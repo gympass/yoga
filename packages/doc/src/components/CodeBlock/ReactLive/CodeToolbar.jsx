@@ -6,7 +6,7 @@ import CodeIcon from 'images/code.svg';
 import MoonVector from 'images/moon.svg';
 
 import CodeSandboxButton from './CodeSandboxButton';
-import ReactLiveContext from './ReactLiveContext';
+import CodeBlockContext from '../CodeBlockContext';
 
 const Toolbar = styled.div`
   ${({
@@ -67,7 +67,7 @@ const Moon = styled(MoonVector)`
 
 const CodeToolbar = () => {
   const { codeVisible, setCodeVisible, darkMode, setDarkMode } = useContext(
-    ReactLiveContext,
+    CodeBlockContext,
   );
 
   return (
