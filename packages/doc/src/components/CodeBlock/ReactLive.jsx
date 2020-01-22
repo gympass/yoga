@@ -155,20 +155,11 @@ const Moon = styled(MoonVector)`
   `}
 `;
 
-const ReactLive = ({
-  code,
-  state,
-  center,
-  hasComponent,
-  hasIcon,
-  importsComponents,
-  importsIcons,
-  children,
-}) => {
+const ReactLive = ({ code, state, center, imports, children }) => {
   const [codeVisible, setCodeVisible] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  const sandbox = [importsComponents, importsIcons, code];
+  const sandbox = [imports, code];
 
   const toggleCode = () => {
     setCodeVisible(!codeVisible);
@@ -206,21 +197,8 @@ const ReactLive = ({
             </Component>
 
             <Usage visible={codeVisible}>
-              <PrismHighlight
-                code={`${
-                  JSON.parse(hasComponent)
-                    ? ` import { ${importsComponents} } from '@gympass/yoga';`
-                    : ''
-                }
-${
-  JSON.parse(hasIcon)
-    ? ` import { ${importsIcons} } from '@gympass/yoga-icons';`
-    : ''
-}`.trimRight()}
-              />
-
+              <PrismHighlight code={imports} />
               <PrismHighlight code={children} liveEditor />
-
               <StyledLiveError />
             </Usage>
           </Preview>
