@@ -11,25 +11,28 @@ const CodeBlock = ({ reactLive, children, ...props }) => {
 
   const buildImports = modules => {
     const findComponents = /(?<=<)(\w*)(?=\s*?\/?>)/gm;
+    const sortModules = /(@gympass\/yoga*)/gm;
     const imports = [];
 
-    modules.forEach(({ name, path }) => {
-      const componentsInCode = [...new Set(code.match(findComponents))]
-        .filter(importedComponent =>
-          Object.keys(name).includes(importedComponent.replace(/</g, '')),
-        )
-        .join(', ')
-        .replace(/</g, '');
+    modules
+      .sort(a => (a.path.match(sortModules) ? -1 : 0))
+      .forEach(({ name, path }) => {
+        const componentsInCode = [...new Set(code.match(findComponents))]
+          .filter(importedComponent =>
+            Object.keys(name).includes(importedComponent.replace(/</g, '')),
+          )
+          .join(', ')
+          .replace(/</g, '');
 
-      imports.push(`import { ${componentsInCode} } from '${path}';`);
-    });
+        imports.push(`import { ${componentsInCode} } from '${path}';`);
+      });
 
     return imports.join('\n');
   };
 
   const imports = buildImports([
-    { name: YogaComponents, path: '@gympass/yoga' },
     { name: YogaIcons, path: '@gympass/yoga-icons' },
+    { name: YogaComponents, path: '@gympass/yoga' },
   ]);
 
   return reactLive ? (
