@@ -7,10 +7,11 @@ import * as YogaIcons from '@gympass/yoga-icons';
 import { ReactLive, PrismHighlight } from 'components';
 import CodeBlockContext from './CodeBlockContext';
 
-const CodeBlock = ({ reactLive, children, ...props }) => {
+const CodeBlock = props => {
+  const children = { props };
   const code = children.trim();
 
-  const buildImports = modules => {
+  const buildImportString = modules => {
     const findComponents = /(?<=<)(\w*)(?=\s*?\/?>)/gm;
     const sortModules = /(@gympass\/yoga*)/gm;
     const imports = [];
@@ -31,7 +32,7 @@ const CodeBlock = ({ reactLive, children, ...props }) => {
     return imports.join('\n');
   };
 
-  const imports = buildImports([
+  const imports = buildImportString([
     { name: YogaIcons, path: '@gympass/yoga-icons' },
     { name: YogaComponents, path: '@gympass/yoga' },
   ]);
@@ -41,31 +42,34 @@ const CodeBlock = ({ reactLive, children, ...props }) => {
     code,
   };
 
+  const getCodeBlockComponent = () => {
+    const codeBlockComponents = [
+      {
+        type: 'reactLive',
+        component: () => {
+          return <div>as</div>;
+        },
+      },
+    ];
+  };
+
   return (
     <CodeBlockContext.Provider value={codeblockData}>
-      {reactLive ? (
-        <ReactLive {...props}>{children}</ReactLive>
-      ) : (
-        <PrismHighlight code={code} />
-      )}
+      {getCodeBlockComponent()}
     </CodeBlockContext.Provider>
   );
 };
 
 CodeBlock.propTypes = {
   children: node.isRequired,
-  hasIcon: string,
-  hasComponent: string,
-  reactLive: bool,
-  center: string,
+  type: string,
+  center: bool,
   state: string,
 };
 
 CodeBlock.defaultProps = {
-  reactLive: false,
-  hasIcon: 'false',
-  hasComponent: 'true',
-  center: 'false',
+  type: 'reactLive',
+  center: false,
   state: undefined,
 };
 
