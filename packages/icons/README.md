@@ -1,6 +1,9 @@
 # Yoga Icons
 
 <img src="./src/svg/star.svg" alt="Star" width="12" height="12" />
+<img src="./src/svg/building.svg" alt="building" width="12" height="12" />
+<img src="./src/svg/clock.svg" alt="clock" width="12" height="12" />
+<img src="./src/svg/triangle_alert.svg" alt="triangle_alert" width="12" height="12" />
 
 ## Instalation
 
