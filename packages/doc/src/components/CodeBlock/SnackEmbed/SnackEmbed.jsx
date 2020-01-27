@@ -14,6 +14,7 @@ const Snack = styled.div`
 const SnackEmbed = ({ id, ...props }) => {
   const addProperties = (properties, to, prefix = '') => {
     const filled = to;
+
     Object.entries(properties).forEach(([key, value]) => {
       if (to instanceof window.HTMLElement) {
         to.setAttribute(`${prefix}${key}`, `${value}`);
@@ -21,6 +22,7 @@ const SnackEmbed = ({ id, ...props }) => {
         filled[`${prefix}${key}`] = `${value}`;
       }
     });
+
     return filled;
   };
 

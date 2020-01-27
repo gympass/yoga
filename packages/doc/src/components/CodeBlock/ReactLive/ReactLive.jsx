@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import styled from 'styled-components';
-import { node, string } from 'prop-types';
+import { node } from 'prop-types';
 
 import githubTheme from 'prism-react-renderer/themes/github';
 import { LiveProvider, LiveError, LivePreview } from 'react-live';
@@ -60,7 +60,7 @@ const Component = styled.div`
     > div {
       width: 100%;
       ${
-        center === 'true'
+        center
           ? `
       align-items: center;
       display: flex;
@@ -97,12 +97,12 @@ const Usage = styled.div`
   `};
 `;
 
-const ReactLive = ({ state, center, children }) => {
+const ReactLive = ({ children }) => {
   const [codeVisible, setCodeVisible] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
   const codeblockData = useContext(CodeBlockContext);
-  const { imports, code } = codeblockData;
+  const { imports, code, center, state } = codeblockData;
 
   Object.assign(codeblockData, {
     codeVisible,
@@ -128,7 +128,7 @@ const ReactLive = ({ state, center, children }) => {
             </Component>
 
             <Usage visible={codeVisible}>
-              <PrismHighlight code={imports} />
+              <PrismHighlight code={imports} liveEditor={false} />
               <PrismHighlight code={children} liveEditor />
               <CodeError />
             </Usage>
@@ -141,13 +141,6 @@ const ReactLive = ({ state, center, children }) => {
 
 ReactLive.propTypes = {
   children: node.isRequired,
-  center: string,
-  state: string,
-};
-
-ReactLive.defaultProps = {
-  center: 'false',
-  state: undefined,
 };
 
 export default ReactLive;
