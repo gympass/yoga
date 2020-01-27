@@ -1,6 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import styled from 'styled-components';
 import { string, bool } from 'prop-types';
+
+import CodeBlockContext from '../CodeBlockContext';
+import getTemplate from './template';
+
+const DEFAULT_IMPORTS = `import React from 'react';
+import styled from 'styled-components';`;
 
 const Snack = styled.div`
   overflow: hidden;
@@ -11,22 +17,33 @@ const Snack = styled.div`
   width: 100%;
 `;
 
+const addProperties = (properties, to, prefix = '') => {
+  const filled = to;
+
+  Object.entries(properties).forEach(([key, value]) => {
+    if (to instanceof window.HTMLElement) {
+      to.setAttribute(`${prefix}${key}`, `${value}`);
+    } else {
+      filled[`${prefix}${key}`] = `${value}`;
+    }
+  });
+
+  return filled;
+};
+
 const SnackEmbed = ({ id, ...props }) => {
-  const addProperties = (properties, to, prefix = '') => {
-    const filled = to;
+  const { imports, code, dependencies } = useContext(CodeBlockContext);
+  const allImports = `${DEFAULT_IMPORTS}\n${imports}`;
 
-    Object.entries(properties).forEach(([key, value]) => {
-      if (to instanceof window.HTMLElement) {
-        to.setAttribute(`${prefix}${key}`, `${value}`);
-      } else {
-        filled[`${prefix}${key}`] = `${value}`;
-      }
-    });
-
-    return filled;
-  };
-
-  const snackProps = addProperties(props, {}, 'data-snack-');
+  const snackProps = addProperties(
+    {
+      ...props,
+      code: getTemplate('native', allImports, code),
+      dependencies: dependencies.join(','),
+    },
+    {},
+    'data-snack-',
+  );
 
   useEffect(() => {
     const { ExpoSnack } = window;
@@ -54,8 +71,6 @@ const SnackEmbed = ({ id, ...props }) => {
 };
 
 SnackEmbed.propTypes = {
-  code: string.isRequired,
-  dependencies: string,
   description: string,
   id: string,
   name: string,
@@ -65,7 +80,6 @@ SnackEmbed.propTypes = {
 };
 
 SnackEmbed.defaultProps = {
-  dependencies: '',
   description: 'A yoga component native code sample',
   id: 'yoga-component-snack',
   name: 'yoga-component',

@@ -8,6 +8,7 @@ import { MDXContext } from '@mdx-js/react';
 
 import * as YogaComponents from '@gympass/yoga';
 import PrismHighlight from '../PrismHighlight';
+
 import CodeToolbar from './CodeToolbar';
 import CodeBlockContext from '../CodeBlockContext';
 

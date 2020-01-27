@@ -29,7 +29,7 @@ const CodeBlock = ({ children: sampleCode, center, state, type }) => {
   const code = sampleCode.trim();
 
   const buildImportString = modules => {
-    const findComponents = /(?<=<)(\w*)(?=\s*?\/?>)/gm;
+    const findComponents = /(?<=<)(\w*)(?=\s*?\/?>*)/gm;
     const sortModules = /(@gympass\/yoga*)/gm;
     const imports = [];
 
@@ -51,15 +51,25 @@ const CodeBlock = ({ children: sampleCode, center, state, type }) => {
     return imports.join('\n');
   };
 
-  const imports = buildImportString([
+  const NativeComponents = {
+    View: undefined,
+    StyleSheet: undefined,
+  };
+
+  const packages = [
     { name: YogaIcons, path: '@gympass/yoga-icons' },
     { name: YogaComponents, path: '@gympass/yoga' },
-  ]);
+    { name: NativeComponents, path: 'react-native' },
+  ];
+
+  const imports = buildImportString(packages);
+  const dependencies = Array.from(packages, ({ path }) => path);
 
   const codeblockData = {
-    imports,
-    code,
     center,
+    code,
+    dependencies,
+    imports,
     state,
   };
 
