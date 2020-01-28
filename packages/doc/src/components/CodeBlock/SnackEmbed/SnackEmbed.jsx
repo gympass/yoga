@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { string, bool } from 'prop-types';
 
 import CodeBlockContext from '../CodeBlockContext';
-import { getTemplate } from '../shared';
+import { native } from '../shared/templates';
 
 const Snack = styled.div`
   overflow: hidden;
@@ -34,7 +34,7 @@ const SnackEmbed = ({ id, ...props }) => {
   const snackProps = addProperties(
     {
       ...props,
-      code: getTemplate('native', imports, code),
+      code: native(imports, code),
       dependencies: dependencies.join(','),
     },
     {},
