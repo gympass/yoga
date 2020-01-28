@@ -3,10 +3,7 @@ import styled from 'styled-components';
 import { string, bool } from 'prop-types';
 
 import CodeBlockContext from '../CodeBlockContext';
-import getTemplate from './template';
-
-const DEFAULT_IMPORTS = `import React from 'react';
-import styled from 'styled-components';`;
+import { getTemplate } from '../shared';
 
 const Snack = styled.div`
   overflow: hidden;
@@ -33,12 +30,11 @@ const addProperties = (properties, to, prefix = '') => {
 
 const SnackEmbed = ({ id, ...props }) => {
   const { imports, code, dependencies } = useContext(CodeBlockContext);
-  const allImports = `${DEFAULT_IMPORTS}\n${imports}`;
 
   const snackProps = addProperties(
     {
       ...props,
-      code: getTemplate('native', allImports, code),
+      code: getTemplate('native', imports, code),
       dependencies: dependencies.join(','),
     },
     {},

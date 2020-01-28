@@ -1,28 +1,10 @@
+import { getTemplate } from '../shared';
+
 const HTML = '<div id="root"></div>';
 const URL = 'https://codesandbox.io/api/v1/sandboxes/define?json=1';
 
-const getCode = children => {
-  const [imports, component] = children;
-  const importPosition = 9;
-  const importsWithTheme = [
-    imports.slice(0, importPosition),
-    'ThemeProvider, ',
-    imports.slice(importPosition),
-  ].join('');
-
-  return `import React from 'react';
-import ReactDOM from 'react-dom';
-${importsWithTheme}
-
-  const App = () => <ThemeProvider>
-  ${component}
-  </ThemeProvider>
-
-  ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-  );`;
-};
+const getCode = ([imports, component]) =>
+  getTemplate('web', imports, component);
 
 const getPackage = code =>
   JSON.stringify({
