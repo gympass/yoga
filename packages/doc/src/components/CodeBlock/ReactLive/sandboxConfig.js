@@ -1,12 +1,9 @@
-import { getTemplate } from '../shared';
+import { web } from '../shared/templates';
 
 const HTML = '<div id="root"></div>';
 const URL = 'https://codesandbox.io/api/v1/sandboxes/define?json=1';
 
-const getCode = ([imports, component]) =>
-  getTemplate('web', imports, component);
-
-const getPackage = code =>
+const getPackage = (imports, component) =>
   JSON.stringify({
     files: {
       'package.json': {
@@ -20,7 +17,7 @@ const getPackage = code =>
         },
       },
       'index.js': {
-        content: getCode(code),
+        content: web(imports, component),
       },
       'index.html': {
         content: HTML,
@@ -28,13 +25,13 @@ const getPackage = code =>
     },
   });
 
-const setOptions = code => ({
+const setOptions = ([imports, component]) => ({
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',
     Accept: 'application/json',
   },
-  body: getPackage(code),
+  body: getPackage(imports, component),
 });
 
 export { URL, setOptions };
