@@ -53,7 +53,7 @@ const CodeBlock = ({ children: sampleCode, center, state, type }) => {
 
   const NativeComponents = {
     View: undefined,
-    StyleSheet: undefined,
+    Text: undefined,
   };
 
   const packages = [
