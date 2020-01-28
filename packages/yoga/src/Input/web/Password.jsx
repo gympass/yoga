@@ -1,17 +1,29 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, withTheme } from 'styled-components';
 import { func, string } from 'prop-types';
 import { Visibility, VisibilityOff } from '@gympass/yoga-icons';
 
 import Input from './Input';
 
 const Wrapper = styled.div`
+  position: relative;
+  display: inline-block;
+
   svg {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
     cursor: pointer;
   }
 `;
 
-const Password = props => {
+const Password = ({
+  theme: {
+    yoga: { colors },
+  },
+  ...props
+}) => {
   const [showPassword, toggleShowPassword] = React.useState(false);
 
   return (
@@ -22,17 +34,19 @@ const Password = props => {
         <Visibility
           onClick={() => toggleShowPassword(false)}
           width={20}
-          height={16}
+          height={20}
+          fill={colors.gray[7]}
         />
       ) : (
         <VisibilityOff
           onClick={() => toggleShowPassword(true)}
           width={20}
-          height={11}
+          height={20}
+          fill={colors.gray[7]}
         />
       )}
     </Wrapper>
   );
 };
 
-export default Password;
+export default withTheme(Password);
