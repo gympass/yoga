@@ -1,3 +1,10 @@
-import { Star, Clock, Building, TriangleAlert } from './svg';
+import {
+  Star,
+  Clock,
+  Building,
+  TriangleAlert,
+  Visibility,
+  VisibilityOff,
+} from './svg';
 
-export { Star, Clock, Building, TriangleAlert };
+export { Star, Clock, Building, TriangleAlert, Visibility, VisibilityOff };

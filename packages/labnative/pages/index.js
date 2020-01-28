@@ -9,6 +9,7 @@ import Checkbox from './Checkbox';
 import Text from './Text';
 import Rating from './Rating';
 import Tag from './Tag';
+import Input from './Input';
 
 export {
   Button,
@@ -22,4 +23,5 @@ export {
   Text,
   Rating,
   Tag,
-};
+  Input,
+ };

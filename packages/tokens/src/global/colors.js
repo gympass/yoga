@@ -51,16 +51,16 @@ const dark = '#41414A';
  * @type {Color}
  */
 const gray = [
-  white,
-  '#F5F5FA',
-  '#E6E6F0',
-  '#DBDBE8',
-  '#D3D3E2',
-  '#C5C5D6',
-  '#A9A9B8',
-  '#9898A6',
-  '#6B6B78',
-  dark,
+  white, //0
+  '#F5F5FA', // 1
+  '#E6E6F0', // 2
+  '#DBDBE8', // 3
+  '#D3D3E2', // 4
+  '#C5C5D6', // 5
+  '#A9A9B8', // 6
+  '#9898A6', // 7
+  '#6B6B78', // 8
+  dark, // 9
 ];
 
 /**

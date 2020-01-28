@@ -10,6 +10,7 @@ import { Container, Row, Col, Hide } from './Grid';
 import Text from './Text';
 import Rating from './Rating';
 import Tag from './Tag';
+import Input from './Input';
 
 export {
   ThemeProvider,
@@ -30,4 +31,5 @@ export {
   Rating,
   EventCard,
   Tag,
-};
+  Input,
+ };

@@ -29,6 +29,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     negative: tokenColors.negative,
     informative: tokenColors.informative,
     warning: tokenColors.warning,
+    disabled: tokenColors.gray[4],
   };
 
   const components = {
