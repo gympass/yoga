@@ -7,6 +7,8 @@ import * as YogaIcons from '@gympass/yoga-icons';
 import { ReactLive, PrismHighlight, SnackEmbed } from '.';
 import CodeBlockContext from './CodeBlockContext';
 
+import { importStatement } from './shared/templates';
+
 const CodeBlockComponent = ({ type }) =>
   [
     {
@@ -36,19 +38,27 @@ const CodeBlock = ({ children: sampleCode, center, state, type }) => {
     modules
       .sort(a => (a.path.match(sortModules) ? -1 : 0))
       .forEach(({ name, path }) => {
-        const componentsInCode = [...new Set(code.match(findComponents))]
-          .filter(importedComponent =>
-            Object.keys(name).includes(importedComponent.replace(/</g, '')),
-          )
-          .join(', ')
-          .replace(/</g, '');
+        const moduleComponents = {
+          components: [...new Set(code.match(findComponents))]
+            .filter(importedComponent =>
+              Object.keys(name).includes(importedComponent),
+            )
+            .filter(
+              item => !imports.filter(c => c.components.includes(item)).length,
+            ),
+          path,
+        };
 
-        if (componentsInCode) {
-          imports.push(`import { ${componentsInCode} } from '${path}';`);
+        if (moduleComponents.components.length > 0) {
+          imports.push(moduleComponents);
         }
       });
 
-    return imports.join('\n');
+    return [
+      ...imports.map(({ components, path }) =>
+        importStatement(components, path),
+      ),
+    ].join('\n');
   };
 
   const NativeComponents = {
@@ -64,7 +74,6 @@ const CodeBlock = ({ children: sampleCode, center, state, type }) => {
 
   const imports = buildImportString(packages);
   const dependencies = Array.from(packages, ({ path }) => path);
-
   const codeblockData = {
     center,
     code,
