@@ -2,8 +2,11 @@ import injectImport from '..';
 
 const native = (imports, code) => `import React from 'react';
 import styled from 'styled-components';
-${injectImport(imports, 'ThemeProvider')}
-import { View, StyleSheet } from 'react-native';
+${injectImport(
+  imports,
+  ['ThemeProvider', 'View, StyleSheet'],
+  ['@gympass/yoga', 'react-native'],
+)}
 
 const App = () => (
   <ThemeProvider>
