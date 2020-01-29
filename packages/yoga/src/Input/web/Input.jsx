@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import styled, { css } from 'styled-components';
-import { func, string, bool } from 'prop-types';
+import { func, string, bool, oneOf } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
 const ICON_SIZE = 24;
@@ -36,9 +36,10 @@ const Field = styled.input`
 
   ${({
     typed,
+    variant,
     theme: {
       yoga: {
-        colors,
+        colors: { [variant]: color },
         components: { input },
       },
     },
@@ -71,7 +72,7 @@ const Field = styled.input`
         font-size: ${input.label.font.size.typed}px;
         font-weight: ${input.label.font.weight.typed};
 
-        color: ${colors.primary};
+        color: ${color[3]};
       }
     }
 
@@ -176,7 +177,17 @@ const Wrapper = styled.div`
 
 const Input = React.forwardRef(
   (
-    { label, disabled, error, value, cleanable, onChange, onClean, ...props },
+    {
+      label,
+      disabled,
+      error,
+      value,
+      cleanable,
+      onChange,
+      onClean,
+      variant,
+      ...props
+    },
     ref,
   ) => {
     const [typed, setTyped] = useState(Boolean(value));
@@ -192,6 +203,7 @@ const Input = React.forwardRef(
           typed={typed}
           disabled={disabled}
           value={inputValue}
+          variant={variant}
           onChange={e => {
             setTyped(Boolean(e.target.value));
             setInputValue(e.target.value);
@@ -203,6 +215,7 @@ const Input = React.forwardRef(
           <Close
             disabled={disabled}
             onClick={e => {
+              setTyped(false);
               setInputValue('');
               inputRef.current.focus();
               onClean(e);
@@ -216,23 +229,26 @@ const Input = React.forwardRef(
 );
 
 Input.propTypes = {
-  label: string,
+  cleanable: bool,
   disabled: bool,
   error: bool,
-  value: string,
-  cleanable: bool,
+  label: string,
   onChange: func,
   onClean: func,
+  value: string,
+  /** style the label following the theme (primary, secondary, tertiary) */
+  variant: oneOf(['primary', 'secondary', 'tertiary']),
 };
 
 Input.defaultProps = {
-  label: 'Label',
+  cleanable: true,
   disabled: false,
   error: false,
-  value: undefined,
-  cleanable: true,
+  label: 'Label',
   onChange: () => {},
   onClean: () => {},
+  value: undefined,
+  variant: 'primary',
 };
 
 export default Input;
