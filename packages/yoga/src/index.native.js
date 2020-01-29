@@ -28,4 +28,4 @@ export {
   Rating,
   Tag,
   Input,
- };
+};

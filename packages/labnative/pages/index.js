@@ -24,4 +24,4 @@ export {
   Rating,
   Tag,
   Input,
- };
+};

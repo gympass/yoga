@@ -1,52 +1,63 @@
-import React from 'react';
-import styled, { css, withTheme } from 'styled-components';
-import { func, string } from 'prop-types';
+import React, { useState, useRef, useEffect } from 'react';
+import styled from 'styled-components';
 import { Visibility, VisibilityOff } from '@gympass/yoga-icons';
 
 import Input from './Input';
+
+const InlineBlock = styled.div`
+  display: inline-block;
+`;
 
 const Wrapper = styled.div`
   position: relative;
   display: inline-block;
 
-  svg {
-    position: absolute;
-    top: 50%;
-    right: 12px;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
+  ${({
+    theme: {
+      yoga: { spacing },
+    },
+  }) => `
+    svg {
+      top: ${spacing.xsmall}px;
+      right: ${spacing.xsmall}px;
+      height: calc(100% - ${spacing.xsmall * 2}px);
+    }  
+  `}
 `;
 
-const Password = ({
-  theme: {
-    yoga: { colors },
-  },
-  ...props
-}) => {
-  const [showPassword, toggleShowPassword] = React.useState(false);
+const Password = props => {
+  const [showPassword, toggleShowPassword] = useState(false);
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    const { current: element } = inputRef;
+
+    element.setSelectionRange(element.value.length, element.value.length);
+  }, [showPassword]);
+
+  const onClick = element => {
+    element.focus();
+    toggleShowPassword(!showPassword);
+  };
 
   return (
-    <Wrapper>
-      <Input {...props} type={showPassword ? 'text' : 'password'} />
+    <InlineBlock>
+      <Wrapper>
+        <Input
+          {...props}
+          ref={inputRef}
+          cleanable={false}
+          type={showPassword ? 'text' : 'password'}
+        />
 
-      {showPassword ? (
-        <Visibility
-          onClick={() => toggleShowPassword(false)}
-          width={20}
-          height={20}
-          fill={colors.gray[7]}
-        />
-      ) : (
-        <VisibilityOff
-          onClick={() => toggleShowPassword(true)}
-          width={20}
-          height={20}
-          fill={colors.gray[7]}
-        />
-      )}
-    </Wrapper>
+        {showPassword ? (
+          <Visibility onClick={() => onClick(inputRef.current)} />
+        ) : (
+          <VisibilityOff onClick={() => onClick(inputRef.current)} />
+        )}
+      </Wrapper>
+    </InlineBlock>
   );
 };
 
-export default withTheme(Password);
+export default Password;
