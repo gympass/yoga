@@ -36,6 +36,10 @@ const Pre = styled.pre`
     @media (max-width: 900px) {
       font-size: 12px;
     }
+
+    div pre {
+        padding: 0 !important;
+    }
   `}
 `;
 
