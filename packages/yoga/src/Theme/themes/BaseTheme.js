@@ -29,8 +29,24 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     negative: tokenColors.negative,
     informative: tokenColors.informative,
     warning: tokenColors.warning,
-    disabled: tokenColors.gray[4],
+    disabled: {
+      background: tokenColors.gray[4],
+      content: tokenColors.gray[7],
+    },
   };
+
+  [
+    colors.gray.surface,
+    colors.gray.background,
+    ,
+    ,
+    ,
+    ,
+    ,
+    colors.gray.medium,
+    colors.gray.dark,
+    colors.gray.darker,
+  ] = colors.gray;
 
   const components = {
     stepper: {
@@ -519,6 +535,48 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       },
       border: {
         radius: radii.rounded,
+      },
+    },
+    input: {
+      height: 48,
+      font: {
+        color: {
+          default: colors.gray.medium,
+          focus: colors.gray.darker,
+        },
+        size: fontSizes.medium,
+        weight: fontWeights.regular,
+      },
+      border: {
+        width: borders.small,
+        radius: radii.rounded,
+        color: {
+          default: colors.gray.medium,
+          typed: colors.gray.dark,
+        },
+      },
+      padding: {
+        top: spacing.small,
+        right: spacing.xsmall,
+        bottom: spacing.small,
+        left: spacing.small,
+      },
+      label: {
+        color: colors.gray.medium,
+        padding: {
+          right: spacing.xxsmall,
+          left: spacing.xxsmall,
+        },
+        font: {
+          size: {
+            default: fontSizes.medium,
+            typed: fontSizes.xsmall,
+          },
+          weight: {
+            default: fontWeights.regular,
+            typed: fontWeights.bold,
+          },
+        },
       },
     },
   };
