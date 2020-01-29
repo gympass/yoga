@@ -140,7 +140,7 @@ const Wrapper = styled.div`
 
     ${
       error
-        ? css`
+        ? `
             ${Label} {
               color: ${colors.negative[1]};
             }
@@ -154,14 +154,19 @@ const Wrapper = styled.div`
 
     ${
       disabled
-        ? css`
+        ? `
+            + svg,
+            svg {
+              fill: ${colors.disabled.background};
+              pointer-events: none;
+            }
             ${Label} {
-              color: ${colors.disabled};
+              color: ${colors.disabled.background};
             }
 
             ${Field} {
-              border-color: ${colors.disabled};
-              color: ${colors.disabled};
+              border-color: ${colors.disabled.background};
+              color: ${colors.disabled.background};
             }
           `
         : ''
@@ -196,6 +201,7 @@ const Input = React.forwardRef(
         {label && <Label typed={typed}>{label}</Label>}
         {cleanable && (
           <Close
+            disabled={disabled}
             onClick={e => {
               setInputValue('');
               inputRef.current.focus();
