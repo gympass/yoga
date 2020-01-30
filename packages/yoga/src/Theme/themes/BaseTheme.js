@@ -578,6 +578,15 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
           },
         },
       },
+      helper: {
+        color: colors.gray.medium,
+        margin: {
+          top: spacing.xxsmall,
+        },
+        font: {
+          size: fontSizes.xsmall,
+        },
+      },
     },
   };
 
