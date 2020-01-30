@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import styled, { css } from 'styled-components';
-import { func, string, bool, oneOf } from 'prop-types';
+import { func, string, bool, oneOf, number } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
 const ICON_SIZE = 24;
@@ -20,7 +20,7 @@ const Label = styled.label`
       },
     },
   }) => `
-    top: 50%;
+    top: ${input.padding.top * 2}px;
     left: ${input.padding.left}px;
     transform: translateY(-50%);
 
@@ -103,11 +103,31 @@ const Field = styled.input`
         `
       : ''}
   `}
+
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    display: none;
+  }
+`;
+
+const Helper = styled.div`
+  ${({
+    theme: {
+      yoga: {
+        components: { input },
+      },
+    },
+  }) => `
+    display: flex;
+    margin-top: ${input.helper.margin.top}px;
+  `}
 `;
 
 const Wrapper = styled.div`
   position: relative;
   display: inline-block;
+
+  vertical-align: top;
 
   ${({
     disabled,
@@ -142,7 +162,7 @@ const Wrapper = styled.div`
     ${
       error
         ? `
-            ${Label} {
+            ${Label}, ${Helper} {
               color: ${colors.negative[1]};
             }
 
@@ -161,7 +181,7 @@ const Wrapper = styled.div`
               fill: ${colors.disabled.background};
               pointer-events: none;
             }
-            ${Label} {
+            ${Label}, ${Helper} {
               color: ${colors.disabled.background};
             }
 
@@ -172,6 +192,25 @@ const Wrapper = styled.div`
           `
         : ''
     }
+  `}
+`;
+
+const Relative = styled.div`
+  position: relative;
+`;
+
+const Info = styled.span`
+  ${({
+    right,
+    theme: {
+      yoga: {
+        components: { input },
+      },
+    },
+  }) => `
+    font-size: ${input.helper.font.size}px;
+    
+    ${right ? 'margin-left: auto;' : ''}
   `}
 `;
 
@@ -186,6 +225,9 @@ const Input = React.forwardRef(
       onChange,
       onClean,
       variant,
+      maxLength,
+      helper,
+      readOnly,
       ...props
     },
     ref,
@@ -197,31 +239,47 @@ const Input = React.forwardRef(
 
     return (
       <Wrapper typed={typed} disabled={disabled} error={error}>
-        <Field
-          {...props}
-          ref={inputRef}
-          typed={typed}
-          disabled={disabled}
-          value={inputValue}
-          variant={variant}
-          onChange={e => {
-            setTyped(Boolean(e.target.value));
-            setInputValue(e.target.value);
-            onChange(e);
-          }}
-        />
-        {label && <Label typed={typed}>{label}</Label>}
-        {cleanable && (
-          <Close
-            disabled={disabled}
-            onClick={e => {
-              setTyped(false);
-              setInputValue('');
-              inputRef.current.focus();
-              onClean(e);
+        <Relative>
+          <Field
+            {...props}
+            {...{
+              typed,
+              disabled,
+              variant,
+              maxLength,
+              readOnly,
+            }}
+            ref={inputRef}
+            value={inputValue}
+            onChange={e => {
+              setTyped(Boolean(e.target.value));
+              setInputValue(e.target.value);
               onChange(e);
             }}
           />
+          {label && <Label typed={typed}>{label}</Label>}
+          {cleanable && typed && !readOnly && (
+            <Close
+              disabled={disabled}
+              onClick={e => {
+                setTyped(false);
+                setInputValue('');
+                inputRef.current.focus();
+                onClean(e);
+                onChange(e);
+              }}
+            />
+          )}
+        </Relative>
+        {(helper || maxLength || error) && (
+          <Helper>
+            {(error || helper) && <Info>{error || helper}</Info>}
+            {maxLength && (
+              <Info right>
+                {inputValue.length}/{maxLength}
+              </Info>
+            )}
+          </Helper>
         )}
       </Wrapper>
     );
@@ -229,26 +287,36 @@ const Input = React.forwardRef(
 );
 
 Input.propTypes = {
+  /** display a close icon to clean the field */
   cleanable: bool,
   disabled: bool,
-  error: bool,
+  error: string,
   label: string,
   onChange: func,
+  /** callback invoked when close icon is clicked */
   onClean: func,
   value: string,
   /** style the label following the theme (primary, secondary, tertiary) */
   variant: oneOf(['primary', 'secondary', 'tertiary']),
+  /** maximum length (number of characters) of value */
+  maxLength: number,
+  /** A helper text to be displayed below field */
+  helper: string,
+  readOnly: bool,
 };
 
 Input.defaultProps = {
   cleanable: true,
   disabled: false,
-  error: false,
+  error: undefined,
   label: 'Label',
   onChange: () => {},
   onClean: () => {},
   value: undefined,
   variant: 'primary',
+  maxLength: undefined,
+  helper: undefined,
+  readOnly: false,
 };
 
 export default Input;
