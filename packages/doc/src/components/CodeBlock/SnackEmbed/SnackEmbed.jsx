@@ -36,7 +36,12 @@ const SnackEmbed = ({ id, ...props }) => {
     {
       ...props,
       code: state
-        ? `${injectImport(imports, ['React'], ['react'], false)}\n\n${code}`
+        ? `${injectImport(
+            imports,
+            ['React', 'StyleSheet'],
+            ['react', 'react-native'],
+            false,
+          )}\n\n${code}`
         : native(imports, code),
       dependencies: dependencies.join(','),
     },
