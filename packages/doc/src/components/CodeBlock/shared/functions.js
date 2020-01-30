@@ -1,3 +1,5 @@
+import { importStatement } from './templates';
+
 const injectImport = (imports, componentList, paths) => {
   let injectedString = imports;
 
@@ -5,16 +7,22 @@ const injectImport = (imports, componentList, paths) => {
     const components = componentList[index].split(', ');
     const stringPosition = injectedString.indexOf(` } from '${path}'`);
 
-    components.forEach(component => {
-      const findComponent = new RegExp(component, 'gm');
-      if (!injectedString.match(findComponent)) {
-        injectedString = [
-          injectedString.slice(0, stringPosition),
-          `, ${component}`,
-          injectedString.slice(stringPosition),
-        ].join('');
-      }
-    });
+    if (stringPosition > -1) {
+      components.forEach(component => {
+        const findComponent = new RegExp(component, 'gm');
+        if (!injectedString.match(findComponent)) {
+          injectedString = [
+            injectedString.slice(0, stringPosition),
+            `, ${component}`,
+            injectedString.slice(stringPosition),
+          ].join('');
+        }
+      });
+    } else {
+      injectedString = injectedString.concat(
+        `\n${importStatement(components, path)}`,
+      );
+    }
   });
 
   return injectedString;
