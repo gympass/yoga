@@ -4,7 +4,23 @@ Gympass `<Checkbox />` are used for a list of options where the user may select 
 
 ### Usage
 
-<ExpoSnack id="@gympass/yoga-checkbox" theme="light" />
+```javascript type=expo
+<Text style={styles.text}>Disabled</Text>
+<Checkbox disabled label="Checkbox Label" helper="Checkbox Helper" />
+
+<Text style={styles.text}>Unchecked</Text>
+<Checkbox
+  checked={false}
+  label="Checkbox Label"
+  helper="Checkbox Helper"
+/>
+
+<Text style={styles.text}>Checked</Text>
+<Checkbox checked label="Checkbox Label" helper="Checkbox Helper" />
+
+<Text style={styles.text}>Error</Text>
+<Checkbox error label="Checkbox Label" helper="Checkbox Helper" />
+```
 
 ### Props
 
