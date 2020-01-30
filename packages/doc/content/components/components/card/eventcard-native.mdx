@@ -5,7 +5,21 @@ grouping of information about Gympass events.
 
 ### Usage
 
-<ExpoSnack id="@gympass/yoga-event-card" theme="light" />
+```javascript type=expo
+<EventCard
+  style={{ width: 250 }}
+  event={{
+    name: 'Yoga Class',
+    place: 'Gympass - Live the Mission',
+    time: '19 am',
+  }}
+  date={{
+    day: '19',
+    dayOfWeek: 'thu',
+    month: 'dez',
+  }}
+/>
+```
 
 #### Props
 

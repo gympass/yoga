@@ -1,13 +1,9 @@
 import React from 'react';
 import { node, bool, string } from 'prop-types';
-
-import * as YogaComponents from '@gympass/yoga';
-import * as YogaIcons from '@gympass/yoga-icons';
-
-import { ReactLive, PrismHighlight, SnackEmbed } from '.';
 import CodeBlockContext from './CodeBlockContext';
-
+import { ReactLive, PrismHighlight, SnackEmbed } from '.';
 import { importStatement } from './shared/templates';
+import { YogaComponents, YogaIcons, NativeComponents } from './shared/modules';
 
 const CodeBlockComponent = ({ type }) =>
   [
@@ -59,11 +55,6 @@ const CodeBlock = ({ children: sampleCode, center, state, type }) => {
         importStatement(components, path),
       ),
     ].join('\n');
-  };
-
-  const NativeComponents = {
-    View: undefined,
-    Text: undefined,
   };
 
   const packages = [
