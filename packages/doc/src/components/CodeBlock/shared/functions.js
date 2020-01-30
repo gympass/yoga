@@ -1,6 +1,6 @@
 import { importStatement } from './templates';
 
-const injectImport = (imports, componentList, paths) => {
+const injectImport = (imports, componentList, paths, destruct) => {
   let injectedString = imports;
 
   paths.forEach((path, index) => {
@@ -21,7 +21,7 @@ const injectImport = (imports, componentList, paths) => {
       });
     } else {
       injectedString = injectedString.concat(
-        `\n${importStatement(components, path)}`,
+        `\n${importStatement(components, path, destruct)}`,
       );
     }
   });

@@ -4,6 +4,7 @@ import { string, bool } from 'prop-types';
 
 import CodeBlockContext from '../CodeBlockContext';
 import { native } from '../shared/templates';
+import injectImport from '../shared/functions';
 
 const Snack = styled.div`
   overflow: hidden;
@@ -29,12 +30,14 @@ const addProperties = (properties, to, prefix = '') => {
 };
 
 const SnackEmbed = ({ id, ...props }) => {
-  const { imports, code, dependencies } = useContext(CodeBlockContext);
+  const { imports, code, dependencies, state } = useContext(CodeBlockContext);
 
   const snackProps = addProperties(
     {
       ...props,
-      code: native(imports, code),
+      code: state
+        ? `${injectImport(imports, ['React'], ['react'], false)}\n\n${code}`
+        : native(imports, code),
       dependencies: dependencies.join(','),
     },
     {},
