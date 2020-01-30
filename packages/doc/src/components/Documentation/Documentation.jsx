@@ -5,7 +5,6 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import * as components from '@gympass/yoga';
 import * as icons from '@gympass/yoga-icons';
-import ExpoSnack from 'react-expo-snack';
 import {
   CodeBlock,
   PropsTable,
@@ -27,7 +26,6 @@ const customComponents = prefix => ({
   TabbedView: props => <TabbedView {...props} />,
   Tab: props => <Tab {...props} />,
   PropsTable,
-  ExpoSnack,
   img: props => <Img {...props} prefix={prefix} />,
   Redirect: props => <Redirect {...props} />,
   Tokens: props => <Tokens {...props} />,
