@@ -6,7 +6,23 @@ Gympass List component extends from react-native's `FlatList` you can check it o
 
 ### Usage
 
-<ExpoSnack id="@gympass/yoga-list" theme="light" />
+```javascript type=expo
+<List
+  data={[
+    { key: 'Locker', checked: true },
+    { key: 'Wi-fi', checked: false },
+    { key: 'Parking', checked: false },
+  ]}
+  renderItem={({ item }) => (
+    <List.Item
+      style={{ flexDirection: 'row', justifyContent: 'space-between' }}
+    >
+      <Text>{item.key}</Text>
+      <Checkbox.Switch checked={item.checked} />
+    </List.Item>
+  )}
+/>
+```
 
 ### Props
 
