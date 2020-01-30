@@ -9,7 +9,8 @@ const injectImport = (imports, componentList, paths) => {
 
     if (stringPosition > -1) {
       components.forEach(component => {
-        const findComponent = new RegExp(component, 'gm');
+        const findComponent = new RegExp(`^${component}$`, 'gm');
+
         if (!injectedString.match(findComponent)) {
           injectedString = [
             injectedString.slice(0, stringPosition),
