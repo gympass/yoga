@@ -1,5 +1,5 @@
 import React from 'react';
-import { node, bool, string } from 'prop-types';
+import { node, bool, oneOf } from 'prop-types';
 import CodeBlockContext from './CodeBlockContext';
 import { ReactLive, PrismHighlight, SnackEmbed } from '.';
 import { importStatement } from './shared/templates';
@@ -81,7 +81,7 @@ const CodeBlock = ({ children: sampleCode, center, state, type }) => {
 };
 
 CodeBlock.propTypes = {
-  type: string,
+  type: oneOf(['reactLive', 'highlight', 'expo']),
   children: node.isRequired,
   center: bool,
   state: bool,
