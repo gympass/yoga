@@ -7,7 +7,6 @@ const ICON_SIZE = 24;
 
 const Label = styled.label`
   position: absolute;
-  align-self: flex-start;
 
   pointer-events: none;
   user-select: none;
@@ -132,6 +131,7 @@ const Wrapper = styled.div`
   ${({
     disabled,
     error,
+    full,
     theme: {
       yoga: {
         colors,
@@ -142,7 +142,6 @@ const Wrapper = styled.div`
   }) => `
     margin: ${spacing.xsmall}px;
 
-    + svg,
     svg {
       position: absolute;
       top: 0;
@@ -151,13 +150,25 @@ const Wrapper = styled.div`
       padding-right: ${spacing.xsmall}px;
       padding-left: ${spacing.xsmall}px;
 
-      height: 100%;
+      height: ${input.height}px;
 
       fill: ${input.font.color.default};
 
       box-sizing: content-box;
       cursor: pointer;
     }
+
+    ${
+      full
+        ? `
+          &,
+          ${Field} {
+            width: 100%;
+          }
+        `
+        : ''
+    }
+
 
     ${
       error
@@ -176,11 +187,11 @@ const Wrapper = styled.div`
     ${
       disabled
         ? `
-            + svg,
             svg {
               fill: ${colors.disabled.background};
               pointer-events: none;
             }
+
             ${Label}, ${Helper} {
               color: ${colors.disabled.background};
             }
@@ -193,10 +204,6 @@ const Wrapper = styled.div`
         : ''
     }
   `}
-`;
-
-const Relative = styled.div`
-  position: relative;
 `;
 
 const Info = styled.span`
@@ -228,6 +235,7 @@ const Input = React.forwardRef(
       maxLength,
       helper,
       readOnly,
+      full,
       ...props
     },
     ref,
@@ -237,40 +245,45 @@ const Input = React.forwardRef(
 
     const inputRef = ref || useRef(null);
 
+    const cleanField = e => {
+      if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        setTyped(false);
+        setInputValue('');
+        inputRef.current.focus();
+        onClean(e);
+        onChange(e);
+      }
+    };
+
     return (
-      <Wrapper typed={typed} disabled={disabled} error={error}>
-        <Relative>
-          <Field
-            {...props}
-            {...{
-              typed,
-              disabled,
-              variant,
-              maxLength,
-              readOnly,
-            }}
-            ref={inputRef}
-            value={inputValue}
-            onChange={e => {
-              setTyped(Boolean(e.target.value));
-              setInputValue(e.target.value);
-              onChange(e);
-            }}
+      <Wrapper typed={typed} disabled={disabled} error={error} full={full}>
+        <Field
+          {...props}
+          {...{
+            typed,
+            disabled,
+            variant,
+            maxLength,
+            readOnly,
+          }}
+          ref={inputRef}
+          value={inputValue}
+          onChange={e => {
+            setTyped(Boolean(e.target.value));
+            setInputValue(e.target.value);
+            onChange(e);
+          }}
+        />
+        {label && <Label typed={typed}>{label}</Label>}
+        {cleanable && typed && !readOnly && (
+          <Close
+            tabIndex={0}
+            disabled={disabled}
+            onClick={cleanField}
+            onKeyDown={cleanField}
           />
-          {label && <Label typed={typed}>{label}</Label>}
-          {cleanable && typed && !readOnly && (
-            <Close
-              disabled={disabled}
-              onClick={e => {
-                setTyped(false);
-                setInputValue('');
-                inputRef.current.focus();
-                onClean(e);
-                onChange(e);
-              }}
-            />
-          )}
-        </Relative>
+        )}
         {(helper || maxLength || error) && (
           <Helper>
             {(error || helper) && <Info>{error || helper}</Info>}
@@ -303,6 +316,7 @@ Input.propTypes = {
   /** A helper text to be displayed below field */
   helper: string,
   readOnly: bool,
+  full: bool,
 };
 
 Input.defaultProps = {
@@ -317,6 +331,7 @@ Input.defaultProps = {
   maxLength: undefined,
   helper: undefined,
   readOnly: false,
+  full: false,
 };
 
 export default Input;
