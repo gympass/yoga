@@ -23,7 +23,7 @@ const CodeBlockComponent = ({ type }) =>
     .find(({ type: blockType }) => blockType === type)
     .component();
 
-const CodeBlock = ({ children: sampleCode, center, state, type }) => {
+const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
   const code = sampleCode.trim();
 
   const buildImportString = modules => {
@@ -71,6 +71,7 @@ const CodeBlock = ({ children: sampleCode, center, state, type }) => {
     dependencies,
     imports,
     state,
+    theme,
   };
 
   return (

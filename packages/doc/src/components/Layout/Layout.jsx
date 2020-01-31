@@ -166,7 +166,7 @@ const Layout = ({
             items={nav}
             prefix={prefix}
           />
-          <Documentation mdx={body} prefix={prefix} />
+          <Documentation mdx={body} prefix={prefix} theme={theme} />
 
           <Footer>
             Made with{' '}

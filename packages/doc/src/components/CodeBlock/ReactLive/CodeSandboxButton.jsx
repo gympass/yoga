@@ -6,9 +6,9 @@ import { URL, setOptions } from './sandboxConfig';
 
 const CodeSandboxButton = () => {
   const [loading, setLoading] = useState(false);
-  const { imports, code } = useContext(CodeBlockContext);
+  const { imports, code, theme } = useContext(CodeBlockContext);
 
-  const sandbox = [imports, code];
+  const sandbox = [imports, code, theme];
 
   const createSandbox = () => {
     setLoading(true);

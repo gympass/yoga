@@ -30,7 +30,9 @@ const addProperties = (properties, to, prefix = '') => {
 };
 
 const SnackEmbed = ({ id, ...props }) => {
-  const { imports, code, dependencies, state } = useContext(CodeBlockContext);
+  const { imports, code, dependencies, state, theme } = useContext(
+    CodeBlockContext,
+  );
 
   const snackProps = addProperties(
     {
@@ -42,7 +44,7 @@ const SnackEmbed = ({ id, ...props }) => {
             ['react', 'react-native'],
             false,
           )}\n\n${code}`
-        : native(imports, code),
+        : native(imports, code, theme),
       dependencies: dependencies.join(','),
     },
     {},
