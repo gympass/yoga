@@ -5,9 +5,30 @@ import { Close } from '@gympass/yoga-icons';
 
 const ICON_SIZE = 24;
 
+const labelTransition = css`
+  ${({
+    theme: {
+      yoga: {
+        components: { input },
+      },
+    },
+  }) => `
+    top: 0;
+    transform: translateY(-50%);
+    left: ${input.padding.left - 2}px;
+
+    padding-right: ${input.label.padding.right}px;
+    padding-left: ${input.label.padding.left}px;
+
+    font-size: ${input.label.font.size.typed}px;
+    font-weight: ${input.label.font.weight.typed};
+  `}
+`;
+
 const Label = styled.label`
   position: absolute;
 
+  letter-spacing: normal;
   pointer-events: none;
   user-select: none;
 
@@ -61,22 +82,13 @@ const Field = styled.input`
       color: ${input.font.color.focus};
 
       & + ${Label} {
-        top: 0;
-        transform: translateY(-50%);
-        left: ${input.padding.left - 2}px;
-
-        padding-right: ${input.label.padding.right}px;
-        padding-left: ${input.label.padding.left}px;
-
-        font-size: ${input.label.font.size.typed}px;
-        font-weight: ${input.label.font.weight.typed};
-
+        ${labelTransition}
         color: ${color[3]};
       }
     }
 
     &:focus,
-    &:hover:not(:disabled) {
+    &:hover {
       border-color: ${input.border.color.typed};
     }
 
@@ -84,23 +96,17 @@ const Field = styled.input`
       cursor: not-allowed;
     }
 
-    ${typed
-      ? css`
-          border-color: ${input.border.color.typed};
+    ${
+      typed
+        ? css`
+            border-color: ${input.border.color.typed};
 
-          & + ${Label} {
-            top: 0;
-            transform: translateY(-50%);
-            left: ${input.padding.left - 2}px;
-
-            padding-right: ${input.label.padding.right}px;
-            padding-left: ${input.label.padding.left}px;
-
-            font-size: ${input.label.font.size.typed}px;
-            font-weight: ${input.label.font.weight.typed};
-          }
-        `
-      : ''}
+            & + ${Label} {
+              ${labelTransition}
+            }
+          `
+        : ''
+    }
   `}
 
   &[type="number"]::-webkit-outer-spin-button,
@@ -132,6 +138,7 @@ const Wrapper = styled.div`
     disabled,
     error,
     full,
+    width,
     theme: {
       yoga: {
         colors,
@@ -154,21 +161,18 @@ const Wrapper = styled.div`
 
       fill: ${input.font.color.default};
 
+      &:hover, &:focus {
+        fill: ${input.font.color.focus};
+      }
+
       box-sizing: content-box;
       cursor: pointer;
+      outline: none;
     }
 
-    ${
-      full
-        ? `
-          &,
-          ${Field} {
-            width: 100%;
-          }
-        `
-        : ''
+    &, ${Field} {
+      width: ${full ? '100%' : `${width}px`};
     }
-
 
     ${
       error
@@ -236,6 +240,7 @@ const Input = React.forwardRef(
       helper,
       readOnly,
       full,
+      width,
       ...props
     },
     ref,
@@ -248,16 +253,25 @@ const Input = React.forwardRef(
     const cleanField = e => {
       if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
+
         setTyped(false);
         setInputValue('');
+
         inputRef.current.focus();
+
         onClean(e);
         onChange(e);
       }
     };
 
     return (
-      <Wrapper typed={typed} disabled={disabled} error={error} full={full}>
+      <Wrapper
+        typed={typed}
+        disabled={disabled}
+        error={error}
+        full={full}
+        width={width}
+      >
         <Field
           {...props}
           {...{
@@ -317,6 +331,7 @@ Input.propTypes = {
   helper: string,
   readOnly: bool,
   full: bool,
+  width: number,
 };
 
 Input.defaultProps = {
@@ -327,11 +342,13 @@ Input.defaultProps = {
   onChange: () => {},
   onClean: () => {},
   value: undefined,
+  /** style label color following the theme (primary, secondary, tertiary) */
   variant: 'primary',
   maxLength: undefined,
   helper: undefined,
   readOnly: false,
   full: false,
+  width: 312,
 };
 
 export default Input;

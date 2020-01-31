@@ -35,6 +35,12 @@ const IconWrapper = styled.div`
     height: ${input.height}px;
     cursor: pointer;
 
+    outline: none;
+
+    &:hover svg, &:focus svg {
+      fill: ${input.font.color.focus};
+    }
+
     ${
       disabled
         ? `
@@ -46,10 +52,7 @@ const IconWrapper = styled.div`
 
     svg {
       height: ${input.height}px;
-
       fill: ${input.font.color.default};
-
-      box-sizing: content-box;
 
       ${
         disabled
@@ -74,6 +77,7 @@ const Password = ({ disabled, ...props }) => {
 
   const togglePassword = e => {
     if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
       toggleShowPassword(!showPassword);
     }
 
