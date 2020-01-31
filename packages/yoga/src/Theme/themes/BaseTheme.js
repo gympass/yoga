@@ -569,7 +569,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         },
         font: {
           size: {
-            default: fontSizes.medium,
+            default: fontSizes.small,
             typed: fontSizes.xsmall,
           },
           weight: {
