@@ -1,10 +1,10 @@
 import injectImport from '..';
 
-const web = (imports, code) => `import React from 'react';
+const web = (imports, code, theme) => `import React from 'react';
 import ReactDOM from 'react-dom';
 ${injectImport(imports, ['ThemeProvider'], ['@gympass/yoga'])}
 
-const App = () => <ThemeProvider>
+const App = () => <ThemeProvider ${theme ? `theme='${theme}'` : ''}>
 ${code}
 </ThemeProvider>
 

@@ -18,10 +18,10 @@ import {
   Img,
 } from 'components';
 
-const customComponents = prefix => ({
+const customComponents = (prefix, theme) => ({
   h1: props => <ComponentTitle {...props} prefix={prefix} />,
   pre: 'div',
-  code: CodeBlock,
+  code: props => <CodeBlock theme={theme} {...props} />,
   inlineCode: InlineCode,
   TabbedView: props => <TabbedView {...props} />,
   Tab: props => <Tab {...props} />,
@@ -47,10 +47,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const Documentation = ({ mdx, prefix }) => (
+const Documentation = ({ mdx, prefix, theme }) => (
   <Wrapper>
     <div style={{ width: '100%' }}>
-      <MDXProvider components={customComponents(prefix)}>
+      <MDXProvider components={customComponents(prefix, theme)}>
         <MDXRenderer>{mdx}</MDXRenderer>
       </MDXProvider>
     </div>
