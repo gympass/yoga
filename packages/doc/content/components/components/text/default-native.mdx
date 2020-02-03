@@ -18,7 +18,15 @@ _You can see the font-size tokens values
 
 ### Usage
 
-<ExpoSnack id="@gympass/yoga-text" theme="light" />
+```javascript type=expo
+  <Text.H1 variant="primary">Live the mission</Text.H1>
+  <Text.H2 variant="secondary">Live the mission</Text.H2>
+  <Text.H3 variant="tertiary">Live the mission</Text.H3>
+  <Text.H4>Live the mission</Text.H4>
+  <Text>Live the mission</Text>
+  <Text.Small>Live the mission</Text.Small>
+  <Text.Tiny>Live the mission</Text.Tiny>
+```
 
 ### Adding Gympass font in your project
 
@@ -31,7 +39,7 @@ components needs its own font family based on
 Edit or create the file `react-native.config.js` in your project's root to be as
 follows:
 
-```javascript
+```javascript type=highlight
 module.exports = {
   project: {
     ios: {},
@@ -43,7 +51,7 @@ module.exports = {
 
 and run the command bellow:
 
-```
+```javascript type=highlight
 react-native link
 ```
 
@@ -51,7 +59,7 @@ react-native link
 
 Add the following lines in your `package.json`:
 
-```javascript
+```javascript type=highlight
 "rnpm": {
   "assets": [
     "./node_modules/@gympass/yoga/fonts"
@@ -61,7 +69,7 @@ Add the following lines in your `package.json`:
 
 and run the command bellow:
 
-```
+```javascript type=highlight
 react-native link
 ```
 

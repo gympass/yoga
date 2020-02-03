@@ -131,7 +131,6 @@ const Layout = ({
         {metaDescription ? (
           <meta property="twitter:description" content={metaDescription} />
         ) : null}
-        <script async src="https://snack.expo.io/embed.js" />
       </Helmet>
       <GlobalStyle overflow={showMenu} />
 
@@ -167,7 +166,7 @@ const Layout = ({
             items={nav}
             prefix={prefix}
           />
-          <Documentation mdx={body} prefix={prefix} />
+          <Documentation mdx={body} prefix={prefix} theme={theme} />
 
           <Footer>
             Made with{' '}
