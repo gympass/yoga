@@ -5,24 +5,6 @@ import { ReactLive, PrismHighlight, SnackEmbed } from '.';
 import { importStatement } from './shared/templates';
 import { YogaComponents, YogaIcons, NativeComponents } from './shared/modules';
 
-const CodeBlockComponent = ({ type }) =>
-  [
-    {
-      type: 'reactLive',
-      component: () => <ReactLive />,
-    },
-    {
-      type: 'highlight',
-      component: () => <PrismHighlight />,
-    },
-    {
-      type: 'expo',
-      component: () => <SnackEmbed />,
-    },
-  ]
-    .find(({ type: blockType }) => blockType === type)
-    .component();
-
 const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
   const code = sampleCode.trim();
 
@@ -74,9 +56,15 @@ const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
     theme,
   };
 
+  const CodeBlockComponent = {
+    reactLive: ReactLive,
+    highlight: PrismHighlight,
+    expo: SnackEmbed,
+  }[type];
+
   return (
     <CodeBlockContext.Provider value={codeblockData}>
-      <CodeBlockComponent type={type} />
+      <CodeBlockComponent />
     </CodeBlockContext.Provider>
   );
 };
