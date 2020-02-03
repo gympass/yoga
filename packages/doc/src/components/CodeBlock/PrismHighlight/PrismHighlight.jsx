@@ -44,7 +44,7 @@ const Pre = styled.pre`
 `;
 
 const PrismHighlight = ({ code, liveEditor }) => {
-  const highlightCode = !code ? useContext(CodeBlockContext).code : code;
+  const highlightCode = code || useContext(CodeBlockContext).code;
 
   return (
     <Highlight {...defaultPropsWithTheme} code={highlightCode} language="jsx">
