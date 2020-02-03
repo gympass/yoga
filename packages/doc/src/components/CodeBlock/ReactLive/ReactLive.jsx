@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
 import styled from 'styled-components';
-import { node } from 'prop-types';
 
 import githubTheme from 'prism-react-renderer/themes/github';
 import { LiveProvider, LiveError, LivePreview } from 'react-live';
@@ -98,7 +97,7 @@ const Usage = styled.div`
   `};
 `;
 
-const ReactLive = ({ children }) => {
+const ReactLive = () => {
   const [codeVisible, setCodeVisible] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
@@ -130,7 +129,7 @@ const ReactLive = ({ children }) => {
 
             <Usage visible={codeVisible}>
               <PrismHighlight code={imports} liveEditor={false} />
-              <PrismHighlight code={children} liveEditor />
+              <PrismHighlight code={code} liveEditor />
               <CodeError />
             </Usage>
           </Preview>
@@ -138,10 +137,6 @@ const ReactLive = ({ children }) => {
       )}
     </MDXContext.Consumer>
   );
-};
-
-ReactLive.propTypes = {
-  children: node.isRequired,
 };
 
 export default ReactLive;
