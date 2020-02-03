@@ -1,3 +1,6 @@
 import CodeBlock from './CodeBlock';
+import PrismHighlight from './PrismHighlight';
+import ReactLive from './ReactLive';
+import SnackEmbed from './SnackEmbed';
 
-export default CodeBlock;
+export { CodeBlock, PrismHighlight, ReactLive, SnackEmbed };

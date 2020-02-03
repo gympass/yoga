@@ -5,7 +5,6 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import * as components from '@gympass/yoga';
 import * as icons from '@gympass/yoga-icons';
-import ExpoSnack from 'react-expo-snack';
 import {
   CodeBlock,
   PropsTable,
@@ -19,15 +18,14 @@ import {
   Img,
 } from 'components';
 
-const customComponents = prefix => ({
+const customComponents = (prefix, theme) => ({
   h1: props => <ComponentTitle {...props} prefix={prefix} />,
   pre: 'div',
-  code: CodeBlock,
+  code: props => <CodeBlock theme={theme} {...props} />,
   inlineCode: InlineCode,
   TabbedView: props => <TabbedView {...props} />,
   Tab: props => <Tab {...props} />,
   PropsTable,
-  ExpoSnack,
   img: props => <Img {...props} prefix={prefix} />,
   Redirect: props => <Redirect {...props} />,
   Tokens: props => <Tokens {...props} />,
@@ -49,10 +47,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const Documentation = ({ mdx, prefix }) => (
+const Documentation = ({ mdx, prefix, theme }) => (
   <Wrapper>
     <div style={{ width: '100%' }}>
-      <MDXProvider components={customComponents(prefix)}>
+      <MDXProvider components={customComponents(prefix, theme)}>
         <MDXRenderer>{mdx}</MDXRenderer>
       </MDXProvider>
     </div>
