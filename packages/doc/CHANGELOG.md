@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.12.0...@gympass/yoga-doc@0.12.1) (2020-02-04)
+
+### Bug Fixes
+
+- **doc:** fixing window object check for server side rendering ([d2a6181](https://github.com/Gympass/yoga/commit/d2a61818590224d77861a2c214b7f8c8b50534e8))
+
 # [0.12.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.11.0...@gympass/yoga-doc@0.12.0) (2020-02-04)
 
 ### Bug Fixes
