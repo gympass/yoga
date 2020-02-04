@@ -19,7 +19,7 @@ const addProperties = (properties, to, prefix = '') => {
   const filled = to;
 
   Object.entries(properties).forEach(([key, value]) => {
-    if (to instanceof window.HTMLElement) {
+    if (typeof window !== 'undefined' && to instanceof window.HTMLElement) {
       to.setAttribute(`${prefix}${key}`, `${value}`);
     } else {
       filled[`${prefix}${key}`] = `${value}`;
@@ -52,9 +52,7 @@ const SnackEmbed = ({ id, ...props }) => {
   );
 
   useEffect(() => {
-    const { ExpoSnack } = window;
-
-    if (!ExpoSnack) {
+    if (typeof window !== 'undefined' && !window.ExpoSnack) {
       const script = document.createElement('script');
       script.addEventListener('load', () => window.ExpoSnack.initialize());
 
@@ -69,7 +67,7 @@ const SnackEmbed = ({ id, ...props }) => {
 
       document.body.appendChild(script);
     } else {
-      ExpoSnack.initialize();
+      window.ExpoSnack.initialize();
     }
   });
 
