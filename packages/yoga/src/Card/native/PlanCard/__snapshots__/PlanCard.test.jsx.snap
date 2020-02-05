@@ -674,10 +674,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 Array [
                   Object {
                     "backgroundColor": "#F46152",
-                    "borderColor": "#F46152",
                     "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 2,
                     "height": 48,
                     "justifyContent": "center",
                     "paddingLeft": 24,
@@ -879,10 +876,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
                 Array [
                   Object {
                     "backgroundColor": "#F46152",
-                    "borderColor": "#F46152",
                     "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 2,
                     "height": 48,
                     "justifyContent": "center",
                     "paddingLeft": 24,
@@ -1084,10 +1078,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
                 Array [
                   Object {
                     "backgroundColor": "#F46152",
-                    "borderColor": "#F46152",
                     "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 2,
                     "height": 48,
                     "justifyContent": "center",
                     "paddingLeft": 24,

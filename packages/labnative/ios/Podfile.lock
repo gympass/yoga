@@ -81,7 +81,7 @@ PODS:
     - React-Core (= 0.60.5)
   - RNGestureHandler (1.5.3):
     - React
-  - RNReanimated (1.4.0):
+  - RNReanimated (1.7.0):
     - React
   - RNSVG (10.1.0):
     - React
@@ -190,7 +190,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 2105b2e0e2b66a6408fc69a46c8a7fb5b2fdade0
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
   RNGestureHandler: 02905abe54e1f6e59c081a10b4bd689721e17aa6
-  RNReanimated: b2ab0b693dddd2339bd2f300e770f6302d2e960c
+  RNReanimated: 031fe8d9ea93c2bd689a40f05320ef9d96f74d7f
   RNSVG: 069864be08c9fe065a2cf7e63656a34c78653c99
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 

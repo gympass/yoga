@@ -11,40 +11,31 @@ const Label = styled.Text`
     inverted,
     theme: {
       yoga: {
-        components: {
-          button: {
-            font: { size, weight },
-            types: {
-              contained: {
-                backgroundColor: {
-                  enabled: enabledBackgroundColor,
-                  pressed: pressedBackgroundColor,
-                },
-                textColor: {
-                  disabled: disabledTextColor,
-                  enabled: enabledTextColor,
-                  pressed: pressedTextColor,
-                },
-              },
-            },
-          },
-        },
+        components: { button },
       },
     },
   }) => `
-      font-size: ${size};
-      font-weight: ${weight};
-      color: ${enabledTextColor};
+      font-size: ${button.font.size};
+      font-weight: ${button.font.weight};
+      color: ${button.types.contained.font.default.color};
 
-      ${disabled ? `color: ${disabledTextColor};` : ''}
-      ${!disabled && pressed ? `color: ${pressedTextColor};` : ''}
+      ${disabled ? `color: ${button.types.contained.font.disabled.color};` : ''}
+      ${
+        !disabled && pressed
+          ? `color: ${button.types.contained.font.pressed.color};`
+          : ''
+      }
 
       ${
         inverted && !disabled
           ? `
-        color: ${enabledBackgroundColor};
+        color: ${button.types.contained.backgroundColor.default};
 
-        ${!disabled && pressed ? `color: ${pressedBackgroundColor};` : ''}
+        ${
+          !disabled && pressed
+            ? `color: ${button.types.contained.backgroundColor.pressed};`
+            : ''
+        }
       `
           : ''
       }
@@ -60,46 +51,22 @@ const ButtonContainer = styled.View`
     inverted,
     theme: {
       yoga: {
-        components: {
-          button: {
-            padding: { left: paddingLeft, right: paddingRight },
-            height: { normal: normalHeight, small: smallHeight },
-            border: {
-              small: { width: smallWidth },
-              default: { width: defaultWidth },
-              radius,
-            },
-            types: {
-              contained: {
-                backgroundColor: {
-                  disabled: disabledBackgroundColor,
-                  enabled: enabledBackgroundColor,
-                  pressed: pressedBackgroundColor,
-                },
-                textColor: { enabled: enabledTextColor },
-              },
-            },
-          },
-        },
+        components: { button },
       },
     },
   }) => `
-      background-color: ${enabledBackgroundColor};
-      border: ${
-        small ? smallWidth : defaultWidth
-      }px solid ${enabledBackgroundColor};
-      border-radius: ${radius}px;
-      height: ${small ? smallHeight : normalHeight};
+      background-color: ${button.types.contained.backgroundColor.default};
+      border-radius: ${button.border.radius}px;
+      height: ${small ? button.height.small : button.height.default};
       justify-content: center;
-      padding-left: ${paddingLeft}px;
-      padding-right: ${paddingRight}px;
+      padding-left: ${button.padding.left}px;
+      padding-right: ${button.padding.right}px;
       ${full ? 'width: 100%;' : ''}
 
       ${
         !disabled && pressed
           ? `
-        background-color: ${pressedBackgroundColor};
-        border-color: ${pressedBackgroundColor};
+        background-color: ${button.types.contained.backgroundColor.pressed};
       `
           : ''
       }
@@ -107,8 +74,7 @@ const ButtonContainer = styled.View`
       ${
         disabled
           ? `
-        background-color: ${disabledBackgroundColor};
-        border-color: ${disabledBackgroundColor};
+        background-color: ${button.types.contained.backgroundColor.disabled};
       `
           : ''
       }
@@ -116,8 +82,7 @@ const ButtonContainer = styled.View`
       ${
         inverted && !disabled
           ? `
-          background-color: ${enabledTextColor};
-          border-color: ${enabledTextColor};
+          background-color: ${button.types.contained.font.default.color};
         `
           : ''
       }
