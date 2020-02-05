@@ -9,47 +9,29 @@ const ButtonOutline = styled(Button)`
     theme: {
       yoga: {
         colors: { white, gray },
-        components: {
-          button: {
-            types: {
-              outline: {
-                backgroundColor: {
-                  disabled: disabledBackgroundColor,
-                  enabled: enabledBackgroundColor,
-                  pressed: pressedBackgroundColor,
-                  hover: hoverBackgroundColor,
-                },
-                textColor: {
-                  disabled: disabledTextColor,
-                  enabled: enabledTextColor,
-                  pressed: pressedTextColor,
-                },
-              },
-            },
-          },
-        },
+        components: { button },
       },
     },
   }) => `
-    background-color: ${enabledBackgroundColor};
-    border-color: ${enabledTextColor};
-    color: ${enabledTextColor};
+    background-color: ${button.types.outline.backgroundColor.default};
+    border-color: ${button.types.outline.font.default.color};
+    color: ${button.types.outline.font.default.color};
 
     &:not([disabled]):hover, &:not([disabled]):focus {
-      background-color: ${hoverBackgroundColor};
+      background-color: ${button.types.outline.backgroundColor.hover};
       box-shadow: none;
     }
 
     &:not([disabled]):active {
-      background-color: ${pressedBackgroundColor};
-      border-color: ${pressedTextColor};
-      color: ${pressedTextColor};
+      background-color: ${button.types.outline.backgroundColor.pressed};
+      border-color: ${button.types.outline.font.pressed.color};
+      color: ${button.types.outline.font.pressed.color};
     }
 
     &:disabled {
-      background-color: ${disabledBackgroundColor};
-      border-color: ${disabledTextColor};
-      color: ${disabledTextColor};
+      background-color: ${button.types.outline.backgroundColor.disabled};
+      border-color: ${button.types.outline.font.disabled.color};
+      color: ${button.types.outline.font.disabled.color};
     }
 
     ${
