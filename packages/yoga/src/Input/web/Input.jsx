@@ -3,26 +3,28 @@ import styled, { css } from 'styled-components';
 import { func, string, bool, oneOf, number } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
-import { slideInUp, slideInDown } from '@gympass/yoga-animation';
-
 const ICON_SIZE = 24;
 
 const labelTransition = css`
   ${({
     theme: {
       yoga: {
+        transitions,
         components: { input },
       },
     },
   }) => `
+    top: 0;
+    transform: translateY(-50%);
+    transition: ${transitions};
+
+    left: ${input.padding.left - 2}px;
+
     padding-right: ${input.label.padding.right}px;
     padding-left: ${input.label.padding.left}px;
 
-    transform: translateY(-50%); 
-    left: ${input.padding.left - 2}px;
-
-    /* font-size: ${input.label.font.size.typed}px;
-    font-weight: ${input.label.font.weight.typed}; */
+    font-size: ${input.label.font.size.typed}px;
+    font-weight: ${input.label.font.weight.typed};
   `}
 `;
 
@@ -37,14 +39,21 @@ const Label = styled.label`
     theme: {
       yoga: {
         colors,
+        transitions,
         components: { input },
       },
     },
   }) => css`
-    ${slideInDown(50)};
+    top: ${input.padding.top * 2}px;
     left: ${input.padding.left}px;
 
     background-color: ${colors.gray.surface};
+
+    transform: translateY(-50%);
+    transition: ${transitions};
+
+    font-size: ${input.label.font.size.default}px;
+    font-weight: ${input.label.font.weight.default};
     color: ${input.label.color};
   `}
 `;
@@ -82,8 +91,7 @@ const Field = styled.input`
       color: ${input.font.color.focus};
 
       & + ${Label} {
-        ${labelTransition};
-        ${slideInUp(50)};
+        ${labelTransition}
         color: ${color[3]};
       }
     }
@@ -97,15 +105,17 @@ const Field = styled.input`
       cursor: not-allowed;
     }
 
-    ${typed
-      ? css`
-          border-color: ${input.border.color.typed};
+    ${
+      typed
+        ? css`
+            border-color: ${input.border.color.typed};
 
-          & + ${Label} {
-            ${labelTransition}
-          }
-        `
-      : ''}
+            & + ${Label} {
+              ${labelTransition}
+            }
+          `
+        : ''
+    }
   `}
 
   &[type="number"]::-webkit-outer-spin-button,
