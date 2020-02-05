@@ -10,18 +10,18 @@
  * @typedef Transition
  *
  * @type {Object}
- * @property {String} duration - 300ms
- * @property {String} timing - ease
+ * @property {Array} duration
+ * @property {Array} timing
  */
 
-const duration = '300ms';
-const timing = 'ease';
+const duration = ['0.5s'];
+const timing = ['cubic-bezier(0, 0.75, 0.1, 1)'];
 
 /**
- * @type {Border}
+ * @type {Transition}
  * @default
  */
-const transitions = [`all ${duration} ${timing}`];
+const transitions = [`${duration[0]} all ${timing[0]}`];
 transitions.duration = duration;
 transitions.timing = timing;
 

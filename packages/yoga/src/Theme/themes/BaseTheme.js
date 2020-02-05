@@ -598,6 +598,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     spacing,
     fonts,
     breakpoints,
+    transitions,
   };
 };
 
