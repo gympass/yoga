@@ -1,3 +1,3 @@
-import withSpring from './withSpring';
+import { slideInUp, slideInDown } from './web';
 
-export { withSpring };
+export { slideInUp, slideInDown };
