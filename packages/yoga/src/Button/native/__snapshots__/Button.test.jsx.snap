@@ -30,10 +30,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
           Array [
             Object {
               "backgroundColor": "#DBDBE8",
-              "borderColor": "#DBDBE8",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -194,10 +191,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
           Array [
             Object {
               "backgroundColor": "transparent",
-              "borderColor": "transparent",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -256,10 +250,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
           Array [
             Object {
               "backgroundColor": "#F46152",
-              "borderColor": "#F46152",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -378,10 +369,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
           Array [
             Object {
               "backgroundColor": "transparent",
-              "borderColor": "transparent",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -440,10 +428,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
           Array [
             Object {
               "backgroundColor": "#FFFFFF",
-              "borderColor": "#FFFFFF",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -604,10 +589,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
           Array [
             Object {
               "backgroundColor": "transparent",
-              "borderColor": "transparent",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -665,10 +647,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
           Array [
             Object {
               "backgroundColor": "#F46152",
-              "borderColor": "#F46152",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 1,
               "height": 32,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -785,10 +764,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
           Array [
             Object {
               "backgroundColor": "transparent",
-              "borderColor": "transparent",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 1,
               "height": 32,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -844,10 +820,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
           Array [
             Object {
               "backgroundColor": "#F46152",
-              "borderColor": "#F46152",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -999,10 +972,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
           Array [
             Object {
               "backgroundColor": "transparent",
-              "borderColor": "transparent",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,

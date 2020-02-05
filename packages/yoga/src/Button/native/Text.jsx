@@ -10,26 +10,18 @@ const LabelText = styled(Label)`
     pressed,
     theme: {
       yoga: {
-        components: {
-          button: {
-            types: {
-              text: {
-                textColor: {
-                  disabled: disabledColor,
-                  enabled: enabledColor,
-                  pressed: pressedColor,
-                },
-              },
-            },
-          },
-        },
+        components: { button },
       },
     },
   }) => `
-    color: ${enabledColor};
+    color: ${button.types.text.font.default.color};
 
-    ${disabled ? `color: ${disabledColor};` : ''}
-    ${!disabled && pressed ? `color: ${pressedColor};` : ''}
+    ${disabled ? `color: ${button.types.text.font.disabled.color};` : ''}
+    ${
+      !disabled && pressed
+        ? `color: ${button.types.text.font.pressed.color};`
+        : ''
+    }
   `}
 `;
 
@@ -39,30 +31,16 @@ const ButtonContainerText = styled(ButtonContainer)`
     disabled,
     theme: {
       yoga: {
-        components: {
-          button: {
-            types: {
-              text: {
-                backgroundColor: {
-                  disabled: disabledBackgroundColor,
-                  enabled: enabledBackgroundColor,
-                  pressed: pressedBackgroundColor,
-                },
-              },
-            },
-          },
-        },
+        components: { button },
       },
     },
   }) => `
-    background-color: ${enabledBackgroundColor};
-    border-color: ${enabledBackgroundColor};
+    background-color: ${button.types.text.backgroundColor.default};
 
     ${
       !disabled && pressed
         ? `
-      background-color: ${pressedBackgroundColor};
-      border-color: ${pressedBackgroundColor};
+      background-color: ${button.types.text.backgroundColor.pressed};
     `
         : ''
     }
@@ -70,8 +48,7 @@ const ButtonContainerText = styled(ButtonContainer)`
     ${
       disabled
         ? `
-      background-color: ${disabledBackgroundColor};
-      border-color: ${disabledBackgroundColor};
+      background-color: ${button.types.text.backgroundColor.disabled};
     `
         : ''
     }
