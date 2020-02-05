@@ -143,7 +143,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         left: spacing.xlarge,
       },
       height: {
-        normal: 48,
+        default: 48,
         small: 32,
       },
       font: {
@@ -163,44 +163,64 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         contained: {
           backgroundColor: {
             disabled: colors.gray[3],
-            enabled: primary[3],
+            default: primary[3],
             pressed: primary[2],
           },
-          textColor: {
-            disabled: colors.gray[7],
-            enabled: colors.white,
-            pressed: colors.white,
+          font: {
+            default: {
+              color: colors.white,
+            },
+            disabled: {
+              color: colors.gray[7],
+            },
+            pressed: {
+              color: colors.white,
+            },
           },
         },
         outline: {
           backgroundColor: {
             disabled: 'transparent',
-            enabled: 'transparent',
+            default: 'transparent',
             pressed: 'transparent',
             hover: hexToRgb(primary[3], 0.3),
           },
-          textColor: {
-            disabled: colors.gray[7],
-            enabled: primary[3],
-            pressed: primary[2],
+          font: {
+            default: {
+              color: primary[3],
+            },
+            disabled: {
+              color: colors.gray[7],
+            },
+            pressed: {
+              color: primary[2],
+            },
           },
         },
         text: {
           backgroundColor: {
             disabled: 'transparent',
-            enabled: 'transparent',
+            default: 'transparent',
             pressed: 'transparent',
             hover: hexToRgb(primary[3], 0.3),
           },
-          textColor: {
-            disabled: colors.gray[7],
-            enabled: primary[3],
-            pressed: primary[2],
+          font: {
+            default: {
+              color: primary[3],
+            },
+            disabled: {
+              color: colors.gray[7],
+            },
+            pressed: {
+              color: primary[2],
+            },
           },
         },
         link: {
-          textColor: {
-            disabled: colors.gray[7],
+          font: {
+            disabled: {
+              color: colors.gray[7],
+            },
           },
           margin: {
             top: spacing.medium,
