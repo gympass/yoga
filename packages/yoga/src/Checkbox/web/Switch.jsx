@@ -37,7 +37,6 @@ const SwitchTrack = styled.label`
               height: trackHeight,
               radii: trackRadii,
               backgroundColor: trackBackgroundColor,
-              transition: { duration: trackTransitionAnimation },
               checked: { backgroundColor: checkedBackgroundColor },
               disabled: { backgroundColor: disabledBackgroundColor },
             },
@@ -58,7 +57,8 @@ const SwitchTrack = styled.label`
 
       border-radius: ${trackRadii}px;
 
-      transition: background-color ${trackTransitionAnimation};
+      transition-property: background-color;
+      transition-duration: 300ms;
 
       ${disabled
         ? css`
@@ -85,7 +85,6 @@ const SwitchThumb = styled.span`
               left: thumbLeft,
               radii: thumbRadii,
               backgroundColor: thumbBackgroundColor,
-              transition: { duration: thumbTransitionAnimation },
               disabled: { backgroundColor: disabledBackgroundColor },
             },
             focus: {
@@ -109,7 +108,9 @@ const SwitchThumb = styled.span`
       background-color: ${thumbBackgroundColor};
       border-radius: ${thumbRadii}px;
 
-      transition: ${thumbTransitionAnimation};
+      transition-property: left, transform;
+      transition-duration: 300ms;
+      transition-timing-function: ease;
 
       ${checked
         ? css`
@@ -130,7 +131,7 @@ const SwitchThumb = styled.span`
                   ? focusCheckedBackgroundColor
                   : focusDisabledBackgroundColor};
             }
-          `}
+          `};
     `};
 `;
 
