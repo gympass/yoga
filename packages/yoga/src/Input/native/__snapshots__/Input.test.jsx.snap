@@ -10,12 +10,46 @@ exports[`<Input /> should match snapshot 1`] = `
     }
   }
 >
-  <Text
+  <View
     style={
       Array [
-        Object {},
+        Object {
+          "marginBottom": 8,
+          "marginLeft": 8,
+          "marginRight": 8,
+          "marginTop": 8,
+        },
       ]
     }
-  />
+  >
+    <TextInput
+      allowFontScaling={true}
+      disabled={false}
+      editable={true}
+      focus={false}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#9898A6",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#9898A6",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "height": 52,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 56,
+            "paddingTop": 16,
+            "width": 312,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+  </View>
 </View>
 `;
