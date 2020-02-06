@@ -556,10 +556,10 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         },
       },
       padding: {
-        top: spacing.small,
-        right: spacing.xsmall,
-        bottom: spacing.small,
-        left: spacing.small,
+        top: spacing.medium,
+        right: spacing.medium,
+        bottom: spacing.medium,
+        left: spacing.medium,
       },
       label: {
         color: colors.gray.medium,

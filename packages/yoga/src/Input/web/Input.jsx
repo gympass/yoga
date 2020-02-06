@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import styled, { css } from 'styled-components';
-import { func, string, bool, oneOf, number } from 'prop-types';
+import { func, string, bool, number } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
 const ICON_SIZE = 24;
@@ -45,7 +45,7 @@ const Label = styled.label`
       },
     },
   }) => css`
-    top: ${input.padding.top * 2}px;
+    top: ${input.padding.top * 1.5}px;
     left: ${input.padding.left}px;
 
     background-color: ${colors.gray.surface};
@@ -68,10 +68,11 @@ const Field = styled.input`
 
   ${({
     typed,
-    variant,
     theme: {
       yoga: {
-        colors: { [variant]: color },
+        colors: {
+          gray: { darker },
+        },
         components: { input },
       },
     },
@@ -95,7 +96,7 @@ const Field = styled.input`
 
       & + ${Label} {
         ${labelTransition}
-        color: ${color[3]};
+        color: ${darker};
       }
     }
 
@@ -247,7 +248,6 @@ const Input = React.forwardRef(
       cleanable,
       onChange,
       onClean,
-      variant,
       maxLength,
       helper,
       readOnly,
@@ -289,7 +289,6 @@ const Input = React.forwardRef(
           {...{
             typed,
             disabled,
-            variant,
             maxLength,
             readOnly,
           }}
@@ -335,8 +334,6 @@ Input.propTypes = {
   /** callback invoked when close icon is clicked */
   onClean: func,
   value: string,
-  /** style the label following the theme (primary, secondary, tertiary) */
-  variant: oneOf(['primary', 'secondary', 'tertiary']),
   /** maximum length (number of characters) of value */
   maxLength: number,
   /** A helper text to be displayed below field */
@@ -354,8 +351,6 @@ Input.defaultProps = {
   onChange: () => {},
   onClean: () => {},
   value: undefined,
-  /** style label color following the theme (primary, secondary, tertiary) */
-  variant: 'primary',
   maxLength: undefined,
   helper: undefined,
   readOnly: false,
