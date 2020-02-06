@@ -13,7 +13,7 @@ exports[`<Input /> should match snapshot 1`] = `
   -ms-user-select: none;
   user-select: none;
   top: 24px;
-  left: 12px;
+  left: 16px;
   background-color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
@@ -31,10 +31,10 @@ exports[`<Input /> should match snapshot 1`] = `
   background-color: transparent;
   outline: none;
   height: 48px;
-  padding-top: 12px;
-  padding-right: 40px;
-  padding-bottom: 12px;
-  padding-left: 12px;
+  padding-top: 16px;
+  padding-right: 56px;
+  padding-bottom: 16px;
+  padding-left: 16px;
   border-radius: 8px;
   border: 1px solid #9898A6;
   color: #9898A6;
@@ -48,7 +48,7 @@ exports[`<Input /> should match snapshot 1`] = `
 
 .c2:focus + .c3 {
   top: 0;
-  left: 10px;
+  left: 14px;
   padding-right: 4px;
   padding-left: 4px;
   font-size: 12px;
@@ -60,7 +60,7 @@ exports[`<Input /> should match snapshot 1`] = `
   transition-duration: 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  color: #F46152;
+  color: #41414A;
 }
 
 .c2:focus,
