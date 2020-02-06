@@ -14,11 +14,17 @@ exports[`<Input /> should match snapshot 1`] = `
   user-select: none;
   top: 24px;
   left: 12px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9898A6;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: #FFFFFF;
-  color: #9898A6;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
 }
 
 .c2 {
@@ -42,14 +48,18 @@ exports[`<Input /> should match snapshot 1`] = `
 
 .c2:focus + .c3 {
   top: 0;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   left: 10px;
   padding-right: 4px;
   padding-left: 4px;
   font-size: 12px;
   font-weight: 700;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   color: #F46152;
 }
 
