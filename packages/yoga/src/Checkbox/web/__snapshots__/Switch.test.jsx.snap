@@ -28,8 +28,10 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
   height: 24px;
   background-color: #F46152;
   border-radius: 9999px;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 
 .c0 * {
@@ -49,8 +51,13 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
   height: 16px;
   background-color: #FFFFFF;
   border-radius: 9999px;
-  -webkit-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition-property: left,-webkit-transform;
+  -webkit-transition-property: left,transform;
+  transition-property: left,transform;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
   left: calc(100% - 4px);
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -110,8 +117,10 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   height: 24px;
   background-color: #DBDBE8;
   border-radius: 9999px;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
 }
 
 .c0 * {
@@ -126,8 +135,13 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   height: 16px;
   background-color: #FFFFFF;
   border-radius: 9999px;
-  -webkit-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition-property: left,-webkit-transform;
+  -webkit-transition-property: left,transform;
+  transition-property: left,transform;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
 }
 
 .c1:focus + .c3,
@@ -183,8 +197,10 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   height: 24px;
   background-color: #F46152;
   border-radius: 9999px;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   background-color: #F5F5FA;
   cursor: not-allowed;
 }
@@ -211,8 +227,13 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   height: 16px;
   background-color: #FFFFFF;
   border-radius: 9999px;
-  -webkit-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition-property: left,-webkit-transform;
+  -webkit-transition-property: left,transform;
+  transition-property: left,transform;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
   left: calc(100% - 4px);
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -272,8 +293,10 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   height: 24px;
   background-color: #DBDBE8;
   border-radius: 9999px;
-  -webkit-transition: background-color 300ms;
-  transition: background-color 300ms;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
   background-color: #F5F5FA;
   cursor: not-allowed;
 }
@@ -295,8 +318,13 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   height: 16px;
   background-color: #FFFFFF;
   border-radius: 9999px;
-  -webkit-transition: 300ms;
-  transition: 300ms;
+  -webkit-transition-property: left,-webkit-transform;
+  -webkit-transition-property: left,transform;
+  transition-property: left,transform;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
   background-color: #DBDBE8;
   cursor: not-allowed;
 }
