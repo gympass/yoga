@@ -7,7 +7,7 @@ const {
   radii,
   fontSizes,
   fontWeights,
-  transitions,
+  transition,
   elevations,
   colors: tokenColors,
   borders,
@@ -233,7 +233,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         backgroundColor: colors.gray[3],
         radii: radii.circle,
         transition: {
-          duration: transitions.duration,
+          duration: transition.duration,
         },
         checked: {
           backgroundColor: primary[3],
@@ -250,7 +250,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         backgroundColor: colors.white,
         shadow: elevations.small,
         transition: {
-          duration: transitions.duration,
+          duration: transition.duration,
         },
         checked: {
           backgroundColor: primary[3],
@@ -598,7 +598,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     spacing,
     fonts,
     breakpoints,
-    transitions,
+    transition,
   };
 };
 

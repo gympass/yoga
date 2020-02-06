@@ -21,10 +21,10 @@ const timing = ['cubic-bezier(0, 0.75, 0.1, 1)'];
  * @type {Transition}
  * @default
  */
-const transitions = [`${duration[0]} all ${timing[0]}`];
-transitions.duration = duration;
-transitions.timing = timing;
+const transition = {
+  default: `all ${duration[0]} ${timing}`,
+  duration,
+  timing,
+};
 
-[transitions.default] = transitions;
-
-export default transitions;
+export default transition;

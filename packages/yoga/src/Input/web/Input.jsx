@@ -9,15 +9,12 @@ const labelTransition = css`
   ${({
     theme: {
       yoga: {
-        transitions,
+        transition,
         components: { input },
       },
     },
   }) => `
     top: 0;
-    transform: translateY(-50%);
-    transition: ${transitions};
-
     left: ${input.padding.left - 2}px;
 
     padding-right: ${input.label.padding.right}px;
@@ -25,6 +22,10 @@ const labelTransition = css`
 
     font-size: ${input.label.font.size.typed}px;
     font-weight: ${input.label.font.weight.typed};
+
+    transform: translateY(-50%);
+    transition-duration: ${transition.duration[0]};
+    transition-timing-function: ${transition.timing[0]};
   `}
 `;
 
@@ -39,7 +40,7 @@ const Label = styled.label`
     theme: {
       yoga: {
         colors,
-        transitions,
+        transition,
         components: { input },
       },
     },
@@ -49,12 +50,14 @@ const Label = styled.label`
 
     background-color: ${colors.gray.surface};
 
-    transform: translateY(-50%);
-    transition: ${transitions};
-
     font-size: ${input.label.font.size.default}px;
     font-weight: ${input.label.font.weight.default};
     color: ${input.label.color};
+
+    transform: translateY(-50%);
+
+    transition-duration: ${transition.duration[0]};
+    transition-timing-function: ${transition.timing[0]};
   `}
 `;
 
