@@ -30,7 +30,7 @@ exports[`<Input /> should match snapshot 1`] = `
 .c2 {
   background-color: transparent;
   outline: none;
-  height: 48px;
+  height: 52px;
   padding-top: 16px;
   padding-right: 56px;
   padding-bottom: 16px;
@@ -38,7 +38,7 @@ exports[`<Input /> should match snapshot 1`] = `
   border-radius: 8px;
   border: 1px solid #9898A6;
   color: #9898A6;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -81,7 +81,6 @@ exports[`<Input /> should match snapshot 1`] = `
   position: relative;
   display: inline-block;
   vertical-align: top;
-  margin: 8px;
 }
 
 .c0 svg {
@@ -90,7 +89,7 @@ exports[`<Input /> should match snapshot 1`] = `
   right: 0;
   padding-right: 8px;
   padding-left: 8px;
-  height: 48px;
+  height: 52px;
   fill: #9898A6;
   box-sizing: content-box;
   cursor: pointer;
@@ -110,7 +109,6 @@ exports[`<Input /> should match snapshot 1`] = `
 <div>
   <div
     class="c0"
-    width="312"
   >
     <input
       class="c1 c2"
