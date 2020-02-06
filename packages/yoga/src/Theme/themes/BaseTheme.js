@@ -538,13 +538,14 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       },
     },
     input: {
-      height: 48,
+      width: 312,
+      height: 52,
       font: {
         color: {
           default: colors.gray.medium,
           focus: colors.gray.darker,
         },
-        size: fontSizes.medium,
+        size: fontSizes.small,
         weight: fontWeights.regular,
       },
       border: {

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import styled, { css } from 'styled-components';
-import { func, string, bool, number } from 'prop-types';
+import { func, string, bool, number, shape } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
 const ICON_SIZE = 24;
@@ -151,7 +151,6 @@ const Wrapper = styled.div`
     disabled,
     error,
     full,
-    width,
     theme: {
       yoga: {
         colors,
@@ -160,8 +159,6 @@ const Wrapper = styled.div`
       },
     },
   }) => `
-    margin: ${spacing.xsmall}px;
-
     svg {
       position: absolute;
       top: 0;
@@ -184,7 +181,7 @@ const Wrapper = styled.div`
     }
 
     &, ${Field} {
-      width: ${full ? '100%' : `${width}px`};
+      width: ${full ? '100%' : `${input.width}px`};
     }
 
     ${
@@ -252,7 +249,8 @@ const Input = React.forwardRef(
       helper,
       readOnly,
       full,
-      width,
+      style,
+      className,
       ...props
     },
     ref,
@@ -282,7 +280,8 @@ const Input = React.forwardRef(
         disabled={disabled}
         error={error}
         full={full}
-        width={width}
+        style={style}
+        className={className}
       >
         <Field
           {...props}
@@ -340,7 +339,8 @@ Input.propTypes = {
   helper: string,
   readOnly: bool,
   full: bool,
-  width: number,
+  style: shape({}),
+  className: string,
 };
 
 Input.defaultProps = {
@@ -355,7 +355,8 @@ Input.defaultProps = {
   helper: undefined,
   readOnly: false,
   full: false,
-  width: 312,
+  style: undefined,
+  className: undefined,
 };
 
 export default Input;

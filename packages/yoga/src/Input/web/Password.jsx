@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
-import { bool } from 'prop-types';
+import { bool, string, shape } from 'prop-types';
 import { Visibility, VisibilityOff } from '@gympass/yoga-icons';
 
 import Input from './Input';
@@ -26,8 +26,8 @@ const IconWrapper = styled.div`
     },
   }) => `
     position: absolute;
-    top: ${spacing.xsmall}px;
-    right: ${spacing.xsmall}px;
+    top: 0;
+    right: 0;
 
     padding-right: ${spacing.xsmall}px;
     padding-left: ${spacing.xsmall}px;
@@ -65,7 +65,7 @@ const IconWrapper = styled.div`
   `}
 `;
 
-const Password = ({ disabled, ...props }) => {
+const Password = ({ disabled, style, className, ...props }) => {
   const [showPassword, toggleShowPassword] = useState(false);
   const inputRef = useRef(null);
 
@@ -87,7 +87,7 @@ const Password = ({ disabled, ...props }) => {
   };
 
   return (
-    <InlineBlock>
+    <InlineBlock style={style} className={className}>
       <Wrapper>
         <Input
           {...props}
@@ -111,11 +111,15 @@ const Password = ({ disabled, ...props }) => {
 };
 
 Password.propTypes = {
+  className: string,
   disabled: bool,
+  style: shape({}),
 };
 
 Password.defaultProps = {
+  className: undefined,
   disabled: false,
+  style: undefined,
 };
 
 export default Password;
