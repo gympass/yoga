@@ -63,7 +63,7 @@ const Field = styled.TextInput(
   `,
 );
 
-const LabelWrapper = styled.View(
+const LabelWrapper = styled(Animated.View)(
   ({
     focus,
     typed,
@@ -88,7 +88,7 @@ const LabelWrapper = styled.View(
   `,
 );
 
-const Label = styled.Text(
+const Label = styled(Animated.Text)(
   ({
     disabled,
     error,
@@ -200,16 +200,29 @@ const Input = ({
   const [focused, setFocused] = useState(false);
   const [inputValue, setInputValue] = useState(value || '');
   const [typed, setTyped] = useState(Boolean(value));
-  const labelPosition = new Animated.Value(0);
 
-  useEffect(() => {
-    labelPosition.setValue(0);
-    Animated.timing(labelPosition, {
-      fromValue: focused ? 0 : 1,
-      toValue: focused ? 1 : 0,
+  const [labelTopAnimation] = useState(
+    new Animated.Value(input.padding.top * 1.5),
+  );
+  const [fontSizeAnimation] = useState(
+    new Animated.Value(input.label.font.size.default),
+  );
+
+  const animate = (animation, toValue) =>
+    Animated.timing(animation, {
+      toValue,
       duration: 500,
       easing: Easing.bezier(0, 0.75, 0.1, 1),
     }).start();
+
+  useEffect(() => {
+    const isTyped = typed || focused;
+
+    animate(labelTopAnimation, isTyped ? 0 : input.padding.top * 1.5);
+    animate(
+      fontSizeAnimation,
+      isTyped ? input.label.font.size.typed : input.label.font.size.default,
+    );
   }, [focused, typed]);
 
   return (
@@ -221,49 +234,34 @@ const Input = ({
         focus={focused}
         maxLength={maxLength}
         value={inputValue}
-        onBlur={e => {
-          onBlur(e);
-          setFocused(false);
-        }}
         onChangeText={text => {
           setTyped(Boolean(text));
           setInputValue(text);
           onChangeText(text);
         }}
         onFocus={e => {
-          onFocus(e);
           setFocused(true);
+          onFocus(e);
+        }}
+        onBlur={e => {
+          setFocused(false);
+          onBlur(e);
         }}
         {...props}
       />
       {label && (
         <LabelWrapper
-          as={Animated.View}
           focus={focused}
           typed={typed}
-          style={{
-            top: labelPosition.interpolate({
-              inputRange: [0, 1],
-              outputRange: [input.padding.top * 1.5, 0],
-            }),
-          }}
+          style={{ top: labelTopAnimation }}
         >
           <Label
             disabled={disabled}
             error={error}
-            as={Animated.Text}
             focus={focused}
             pointerEvents="none"
             typed={typed}
-            style={{
-              fontSize: labelPosition.interpolate({
-                inputRange: [0, 1],
-                outputRange: [
-                  input.label.font.size.default,
-                  input.label.font.size.typed,
-                ],
-              }),
-            }}
+            style={{ fontSize: fontSizeAnimation }}
           >
             {label}
           </Label>
