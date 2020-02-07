@@ -34,7 +34,6 @@
     "url": "https://github.com/Gympass/yoga/issues"
   },
   "dependencies": {
-    "@gympass/yoga-animation": "0.0.0",
     "@gympass/yoga-common": "^0.1.1",
     "@gympass/yoga-icons": "^0.4.0",
     "@gympass/yoga-tokens": "^0.3.0",
