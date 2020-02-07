@@ -63,6 +63,31 @@ const Field = styled.TextInput(
   `,
 );
 
+const LabelWrapper = styled.View(
+  ({
+    focus,
+    typed,
+    theme: {
+      yoga: {
+        components: { input },
+      },
+    },
+  }) => `
+    position: absolute;
+    left: ${input.padding.left}px;
+
+    transform: translateY(-${input.padding.top / 2}px);
+
+    ${
+      focus || typed
+        ? `
+      left: ${input.padding.left - 2}px;
+    `
+        : ''
+    }
+  `,
+);
+
 const Label = styled.Text(
   ({
     disabled,
@@ -76,28 +101,21 @@ const Label = styled.Text(
       },
     },
   }) => `
-    position: absolute;
-    left: ${input.padding.left}px;
-  
+    
     background-color: ${colors.gray.surface};
 
-    font-size: ${input.label.font.size.default}px;
     font-weight: ${input.label.font.weight.default};
-    color: ${input.label.color};
 
-    transform: translateY(-${input.padding.top / 2}px);
+    color: ${input.label.color};
 
     ${
       focus || typed
         ? `
-      left: ${input.padding.left - 2}px;
+        font-weight: ${input.label.font.weight.typed};
 
-      padding-right: ${input.label.padding.right}px;
-      padding-left: ${input.label.padding.left}px;
-
-      font-size: ${input.label.font.size.typed}px;
-      font-weight: ${input.label.font.weight.typed};
-    `
+        padding-right: ${input.label.padding.right}px;
+        padding-left: ${input.label.padding.left}px;
+      `
         : ''
     }
 
@@ -183,19 +201,12 @@ const Input = ({
   const [inputValue, setInputValue] = useState(value || '');
   const [typed, setTyped] = useState(Boolean(value));
   const labelPosition = new Animated.Value(0);
-  const labelFontSize = new Animated.Value(0);
 
   useEffect(() => {
     labelPosition.setValue(0);
     Animated.timing(labelPosition, {
-      toValue: 1,
-      duration: 500,
-      easing: Easing.bezier(0, 0.75, 0.1, 1),
-    }).start();
-
-    labelFontSize.setValue(0);
-    Animated.timing(labelFontSize, {
-      toValue: 1,
+      fromValue: focused ? 0 : 1,
+      toValue: focused ? 1 : 0,
       duration: 500,
       easing: Easing.bezier(0, 0.75, 0.1, 1),
     }).start();
@@ -226,42 +237,37 @@ const Input = ({
         {...props}
       />
       {label && (
-        <Label
-          disabled={disabled}
-          error={error}
-          as={Animated.Text}
+        <LabelWrapper
+          as={Animated.View}
           focus={focused}
-          pointerEvents="none"
           typed={typed}
           style={{
-            top: focused
-              ? labelPosition.interpolate({
-                  inputRange: [0, 1],
-                  outputRange: [input.padding.top * 1.5, 0],
-                })
-              : labelPosition.interpolate({
-                  inputRange: [0, 1],
-                  outputRange: [0, input.padding.top * 1.5],
-                }),
-            fontSize: focused
-              ? labelFontSize.interpolate({
-                  inputRange: [0, 1],
-                  outputRange: [
-                    input.label.font.size.default,
-                    input.label.font.size.typed,
-                  ],
-                })
-              : labelFontSize.interpolate({
-                  inputRange: [0, 1],
-                  outputRange: [
-                    input.label.font.size.typed,
-                    input.label.font.size.default,
-                  ],
-                }),
+            top: labelPosition.interpolate({
+              inputRange: [0, 1],
+              outputRange: [input.padding.top * 1.5, 0],
+            }),
           }}
         >
-          {label}
-        </Label>
+          <Label
+            disabled={disabled}
+            error={error}
+            as={Animated.Text}
+            focus={focused}
+            pointerEvents="none"
+            typed={typed}
+            style={{
+              fontSize: labelPosition.interpolate({
+                inputRange: [0, 1],
+                outputRange: [
+                  input.label.font.size.default,
+                  input.label.font.size.typed,
+                ],
+              }),
+            }}
+          >
+            {label}
+          </Label>
+        </LabelWrapper>
       )}
       {cleanable && typed && (
         <TouchableWithoutFeedback
