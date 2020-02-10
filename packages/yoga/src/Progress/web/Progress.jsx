@@ -1,6 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, number, shape, oneOfType, oneOf, bool } from 'prop-types';
+import {
+  string,
+  number,
+  shape,
+  oneOfType,
+  oneOf,
+  bool,
+  checkPropTypes,
+} from 'prop-types';
 
 const ProgressBar = styled.progress`
   border: none;
@@ -72,19 +80,27 @@ const Wrapper = styled.div`
     isNumber
       ? `
         ${Label} {
-          margin-${isNumber && align === 'right' ? 'left' : 'right'}: ${
-          spacing.xsmall
-        }px;
+          width: 22px;
+          margin-${align === 'right' ? 'left' : 'right'}: ${spacing.xsmall}px;
         }
     
         ${ProgressBar} {
           margin: auto;
         }
     `
-      : 'flex-direction: column;'}
+      : `
+        flex-direction: column;
+        
+        ${Label} {
+          margin-top: ${spacing.xxsmall}px;
+          max-width: 280px;
+        }
+      `}
   
-  align-items: ${({ align }) =>
-    align === 'right' ? `flex-end` : 'flex-start'};
+   ${({ align }) =>
+     align === 'right'
+       ? `align-items: flex-end; text-align: right;`
+       : 'align-items: flex-start;'}
 
   ${({ isNumber, align }) =>
     isNumber && align === 'left' ? 'flex-direction: row-reverse;' : ''}
@@ -104,11 +120,7 @@ Wrapper.defaultProps = {
  * of quantity.  The use of labels numeric or alphabetic can increase the user
  * understanding. */
 const Progress = ({ label, max, value, ...props }) => (
-  <Wrapper
-    isNumber={!Number.isNaN(label.value)}
-    align={label.placement || 'left'}
-    {...props}
-  >
+  <Wrapper isNumber={!isNaN(label.value)} align={label.placement} {...props}>
     <ProgressBar max={max} value={value} />
     {Object.keys(label).length > 0 && label.value && (
       <Label>{label.value}</Label>
@@ -117,8 +129,28 @@ const Progress = ({ label, max, value, ...props }) => (
 );
 
 Progress.propTypes = {
+  /** Use labels to increase users understanding. If the value is numeric, make
+   * sure it has a maximum of 3 characters */
   label: shape({
-    value: oneOfType([string, number]),
+    value: (props, propName, componentName) => {
+      const MAX_CHARS = 3;
+      const { [propName]: valueProp } = props;
+
+      checkPropTypes(
+        { [propName]: oneOfType([number, string]) },
+        props,
+        'prop',
+        componentName,
+      );
+
+      if (!isNaN(valueProp) && valueProp.toString().length > MAX_CHARS) {
+        return new Error(
+          `Invalid prop ${propName} supplied to ${componentName}. ${propName} must have up to ${MAX_CHARS} characters`,
+        );
+      }
+
+      return null;
+    },
     placement: oneOf(['left', 'right']),
   }),
   /** This attribute describes how much work the task indicated by the progress

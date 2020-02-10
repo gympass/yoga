@@ -19,6 +19,7 @@ module.exports = {
     'react/prop-types': [2, { ignore: ['theme'] }],
     'import/no-extraneous-dependencies': 0,
     'no-plusplus': 0,
+    'no-restricted-globals': 0,
   },
   globals: {
     window: true,
