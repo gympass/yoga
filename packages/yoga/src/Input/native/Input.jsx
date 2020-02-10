@@ -47,8 +47,8 @@ const Field = styled.TextInput(
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
 
-    ${focus ? `color: ${input.font.color.focus};` : ''}
-    ${focus || typed ? `border-color: ${input.border.color.typed};` : ''}
+    ${focus ? `border-color: ${input.border.color.typed};` : ''}
+    ${focus || typed ? `color: ${input.font.color.focus};` : ''}
     ${error ? `border-color: ${colors.negative[1]};` : ''}
 
     ${
@@ -100,13 +100,17 @@ const Label = styled(Animated.Text)(
     font-weight: ${input.label.font.weight.default};
     color: ${input.label.color.default};
 
-    ${focus ? `color: ${input.label.color.focus};` : ''}
+    ${
+      focus
+        ? `
+          color: ${input.label.color.focus};
+          font-weight: ${input.label.font.weight.typed};`
+        : ''
+    }
 
     ${
       focus || typed
         ? `
-        font-weight: ${input.label.font.weight.typed};
-
         padding-right: ${input.label.padding.right}px;
         padding-left: ${input.label.padding.left}px;
       `
@@ -165,6 +169,7 @@ const Info = styled.Text(
     flex-shrink: ${right ? '0' : '1'};
     flex-wrap: wrap;
 
+    color: ${input.helper.color};
     font-size: ${input.helper.font.size}px;
     
     ${error ? `color: ${colors.negative[1]};` : ''}

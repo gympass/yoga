@@ -552,7 +552,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         width: borders.small,
         radius: radii.rounded,
         color: {
-          default: colors.gray.medium,
+          default: colors.gray[4],
           typed: colors.gray.darker,
         },
       },
