@@ -9,6 +9,7 @@ import Stepper from './Stepper';
 import Text from './Text';
 import Rating from './Rating';
 import Tag from './Tag';
+import Progress from './Progress';
 
 export {
   ThemeProvider,
@@ -26,4 +27,5 @@ export {
   Text,
   Rating,
   Tag,
+  Progress,
 };
