@@ -6,13 +6,31 @@ import {
   shape,
   oneOfType,
   oneOf,
-  bool,
   checkPropTypes,
 } from 'prop-types';
 
-const ProgressBar = styled.progress`
-  border: none;
+const ProgressWrapper = styled.View`
   width: 100%;
+
+  ${({ isNumber, align }) => `
+  
+  ${
+    isNumber
+      ? `
+      flex-direction: row;
+    `
+      : `
+      flex-direction: column;
+    `
+  }
+
+  ${isNumber && align === 'left' ? 'flex-direction: row-reverse;' : ''}
+  `}
+`;
+const ProgressBar = styled.View`
+  position: relative;
+  flex-grow: 1;
+  margin: auto 0;
 
   ${({
     theme: {
@@ -21,116 +39,76 @@ const ProgressBar = styled.progress`
       },
     },
   }) => `
-  height: ${progress.height}px;
-
-  &&,
-  &::-webkit-progress-value,
-  &[value]::-webkit-progress-bar,
-  &:not(value)::-webkit-progress-bar {
-    border-radius: ${progress.border.radius}px;
-  }
-
-  &:not(value)::-moz-progress-bar,
-  &[value]::-moz-progress-bar {
-    border-radius: ${progress.border.radius}px;
-  }
-
-  &:not(value)::-webkit-progress-bar {
+    height: ${progress.height}px;
     background-color: ${progress.backgroundColor.bar};
-  }
-
-  &::-webkit-progress-value {
-    background-color: ${progress.backgroundColor.value};
-  }
-
-  &&,
-  &:not(value)::-moz-progress-bar {
-    background-color: ${progress.backgroundColor.bar};
-  }
-
-  &[value]::-moz-progress-bar {
-    background-color: ${progress.backgroundColor.value};
-  }
-`}
+    border-radius: ${progress.border.radius}px;
+  `};
 `;
+const ProgressValue = styled.View`
+  position: absolute;
+  height: 100%;
 
-const Label = styled.label`
   ${({
+    width,
     theme: {
       yoga: {
+        components: { progress },
+      },
+    },
+  }) =>
+    `
+    width: ${width}%;
+    background-color: ${progress.backgroundColor.value};
+    border-radius: ${progress.border.radius}px;
+  `}
+`;
+
+const Label = styled.Text`
+  ${({
+    isNumber,
+    align,
+    theme: {
+      yoga: {
+        spacing,
         components: { progress },
       },
     },
   }) => `
   font-size: ${progress.label.font.size}px;
+  text-align: ${align};
+
+  ${
+    isNumber
+      ? `
+      width: 22px;
+      margin-${align === 'right' ? 'left' : 'right'}: ${spacing.xsmall}px;
+    `
+      : `
+      margin-top: ${spacing.xxsmall}px;
+    `
+  }
 `}
 `;
 
-const Wrapper = styled.div`
-  width: 100%;
-  display: flex;
-
-  ${({
-    isNumber,
-    align,
-    theme: {
-      yoga: { spacing },
-    },
-  }) => `
-    ${
-      isNumber
-        ? `
-        ${Label} {
-          width: 22px;
-          margin-${align === 'right' ? 'left' : 'right'}: ${spacing.xsmall}px;
-        }
-    
-        ${ProgressBar} {
-          margin: auto;
-        }
-    `
-        : `
-        flex-direction: column;
-        
-        ${Label} {
-          margin-top: ${spacing.xxsmall}px;
-          max-width: 280px;
-        }
-      `
-    }
-
-      ${
-        align === 'right'
-          ? `align-items: flex-end; text-align: right;`
-          : 'align-items: flex-start;'
-      }
-      ${isNumber && align === 'left' ? 'flex-direction: row-reverse;' : ''}
-  `}
-`;
-
-Wrapper.propTypes = {
-  align: oneOf(['left', 'right']),
-  isNumber: bool,
-};
-
-Wrapper.defaultProps = {
-  align: 'left',
-  isNumber: false,
-};
-
-/** The Progress is a component used to indicate a progress of an indicator
+/** The Progress Bar is a component used to indicate a progress of an indicator
  * of quantity.  The use of labels numeric or alphabetic can increase the user
  * understanding. */
 const Progress = ({ label, max, value, ...props }) => {
   const isNumber = !isNaN(label.value);
+  const align = label.placement || 'left';
 
   return (
-    <Wrapper isNumber={isNumber} align={label.placement} {...props}>
-      <ProgressBar max={max} value={value} />
+    <ProgressWrapper {...props} isNumber={isNumber} align={align}>
+      <ProgressBar>
+        <ProgressValue width={(value / max) * 100} />
+      </ProgressBar>
+
       {Object.keys(label).length > 0 && (isNumber || label.value) && (
-        <Label>{label.value}</Label>
+        <Label isNumber={isNumber} align={align}>
+          {label.value}
+        </Label>
       )}
-    </Wrapper>
+    </ProgressWrapper>
   );
 };
 
