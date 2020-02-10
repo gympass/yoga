@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TouchableWithoutFeedback } from 'react-native';
+import { TouchableWithoutFeedback, Keyboard } from 'react-native';
 import styled, { withTheme } from 'styled-components';
 import { bool, func, shape, string } from 'prop-types';
 import { Visibility, VisibilityOff } from '@gympass/yoga-icons';
@@ -79,6 +79,8 @@ const Password = ({
         full={full}
         secureTextEntry={!showPassword}
         value={inputValue}
+        blurOnSubmit={false}
+        onSubmitEditing={() => Keyboard.dismiss()}
         onBlur={e => {
           setFocused(false);
           onBlur(e);
