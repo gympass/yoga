@@ -553,7 +553,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         radius: radii.rounded,
         color: {
           default: colors.gray.medium,
-          typed: colors.gray.dark,
+          typed: colors.gray.darker,
         },
       },
       padding: {
@@ -563,7 +563,10 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         left: spacing.medium,
       },
       label: {
-        color: colors.gray.medium,
+        color: {
+          default: colors.gray.medium,
+          focus: colors.gray.darker,
+        },
         padding: {
           right: spacing.xxsmall,
           left: spacing.xxsmall,
