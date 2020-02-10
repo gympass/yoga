@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Input /> should match snapshot 1`] = `
+exports[`<Input /> Snapshots should match snapshot when input is focused 1`] = `
 <View
   collapsable={true}
   pointerEvents="box-none"
@@ -11,13 +11,103 @@ exports[`<Input /> should match snapshot 1`] = `
   }
 >
   <View
+    full={false}
     style={
       Array [
         Object {
-          "marginBottom": 8,
-          "marginLeft": 8,
-          "marginRight": 8,
-          "marginTop": 8,
+          "position": "relative",
+          "width": 312,
+        },
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      disabled={false}
+      editable={true}
+      focus={true}
+      full={false}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#41414A",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#41414A",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "height": 52,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 32,
+            "paddingTop": 16,
+            "width": 312,
+          },
+        ]
+      }
+      testID="input"
+      typed={false}
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      focus={true}
+      pointerEvents="none"
+      style={
+        Object {
+          "left": 14,
+          "position": "absolute",
+          "top": 24,
+          "transform": Array [
+            Object {
+              "translateY": -8,
+            },
+          ],
+        }
+      }
+      typed={false}
+    >
+      <Text
+        disabled={false}
+        focus={true}
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "color": "#41414A",
+            "fontSize": 14,
+            "fontWeight": "700",
+            "paddingLeft": 4,
+            "paddingRight": 4,
+          }
+        }
+        typed={false}
+      >
+        Input
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Input /> Snapshots should match with default input 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    full={false}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": 312,
         },
       ]
     }
@@ -27,11 +117,12 @@ exports[`<Input /> should match snapshot 1`] = `
       disabled={false}
       editable={true}
       focus={false}
+      full={false}
       rejectResponderTermination={true}
       style={
         Array [
           Object {
-            "borderColor": "#9898A6",
+            "borderColor": "#D3D3E2",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -41,15 +132,349 @@ exports[`<Input /> should match snapshot 1`] = `
             "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 56,
+            "paddingRight": 32,
             "paddingTop": 16,
             "width": 312,
           },
         ]
       }
+      typed={false}
       underlineColorAndroid="transparent"
       value=""
     />
+  </View>
+</View>
+`;
+
+exports[`<Input /> Snapshots should match with disabled input 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    full={false}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": 312,
+        },
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      disabled={true}
+      editable={false}
+      focus={false}
+      full={false}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#D3D3E2",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#D3D3E2",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "height": 52,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 32,
+            "paddingTop": 16,
+            "width": 312,
+          },
+        ]
+      }
+      typed={false}
+      underlineColorAndroid="transparent"
+      value=""
+    />
+  </View>
+</View>
+`;
+
+exports[`<Input /> Snapshots should match with error 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    full={false}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": 312,
+        },
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      disabled={false}
+      editable={true}
+      error="Error message"
+      focus={false}
+      full={false}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#CB3530",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#9898A6",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "height": 52,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 32,
+            "paddingTop": 16,
+            "width": 312,
+          },
+        ]
+      }
+      typed={false}
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      full={false}
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "marginTop": 4,
+            "maxWidth": 312,
+            "width": 312,
+          },
+        ]
+      }
+    >
+      <Text
+        disabled={false}
+        error="Error message"
+        style={
+          Array [
+            Object {
+              "color": "#CB3530",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontSize": 12,
+            },
+          ]
+        }
+      >
+        Error message
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Input /> Snapshots should match with helper text and max length 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    full={false}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": 312,
+        },
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      disabled={false}
+      editable={true}
+      focus={false}
+      full={false}
+      maxLength={20}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#D3D3E2",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#9898A6",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "height": 52,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 32,
+            "paddingTop": 16,
+            "width": 312,
+          },
+        ]
+      }
+      typed={false}
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      full={false}
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "marginTop": 4,
+            "maxWidth": 312,
+            "width": 312,
+          },
+        ]
+      }
+    >
+      <Text
+        disabled={false}
+        style={
+          Array [
+            Object {
+              "color": "#9898A6",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontSize": 12,
+            },
+          ]
+        }
+      >
+        Helper text
+      </Text>
+      <Text
+        disabled={false}
+        right={true}
+        style={
+          Array [
+            Object {
+              "color": "#9898A6",
+              "flexShrink": 0,
+              "flexWrap": "wrap",
+              "fontSize": 12,
+              "marginLeft": "auto",
+            },
+          ]
+        }
+      >
+        0
+        /
+        20
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Input /> Snapshots should match with label 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    full={false}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": 312,
+        },
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      disabled={false}
+      editable={true}
+      focus={false}
+      full={false}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#D3D3E2",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#9898A6",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "height": 52,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 32,
+            "paddingTop": 16,
+            "width": 312,
+          },
+        ]
+      }
+      typed={false}
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      focus={false}
+      pointerEvents="none"
+      style={
+        Object {
+          "left": 16,
+          "position": "absolute",
+          "top": 24,
+          "transform": Array [
+            Object {
+              "translateY": -8,
+            },
+          ],
+        }
+      }
+      typed={false}
+    >
+      <Text
+        disabled={false}
+        focus={false}
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "color": "#9898A6",
+            "fontSize": 14,
+            "fontWeight": "400",
+          }
+        }
+        typed={false}
+      >
+        Input
+      </Text>
+    </View>
   </View>
 </View>
 `;
