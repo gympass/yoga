@@ -61,6 +61,7 @@ const Label = styled.label`
 `;
 
 const Field = styled.input`
+  appearance: none;
   background-color: transparent;
   outline: none;
 
