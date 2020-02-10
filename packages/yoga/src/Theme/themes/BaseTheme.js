@@ -1,6 +1,8 @@
 import tokens from '@gympass/yoga-tokens';
 import { hexToRgb } from '@gympass/yoga-common';
 
+import { progress } from './components';
+
 const {
   breakpoints,
   spacing,
@@ -540,6 +542,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
         radius: radii.rounded,
       },
     },
+    progress: progress({ spacing, colors, radii, fontSizes }),
   };
 
   return {
