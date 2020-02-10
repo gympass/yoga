@@ -197,6 +197,18 @@ const Input = ({
   const [inputValue, setInputValue] = useState(value || '');
   const [typed, setTyped] = useState(Boolean(value));
 
+  const iconColor = () => {
+    if (disabled) {
+      return colors.disabled.background;
+    }
+
+    if (focused) {
+      return input.font.color.focus;
+    }
+
+    return input.font.color.default;
+  };
+
   const [labelTopAnimation] = useState(
     new Animated.Value(input.padding.top * 1.5),
   );
@@ -212,12 +224,14 @@ const Input = ({
     }).start();
 
   useEffect(() => {
-    const isTyped = typed || focused;
+    const shouldAnimate = typed || focused;
 
-    animate(labelTopAnimation, isTyped ? 0 : input.padding.top * 1.5);
+    animate(labelTopAnimation, shouldAnimate ? 1 : input.padding.top * 1.5);
     animate(
       fontSizeAnimation,
-      isTyped ? input.label.font.size.typed : input.label.font.size.default,
+      shouldAnimate
+        ? input.label.font.size.typed
+        : input.label.font.size.default,
     );
   }, [focused, typed]);
 
@@ -274,12 +288,7 @@ const Input = ({
           }}
         >
           <CloseIcon>
-            <Close
-              height={input.height}
-              fill={
-                disabled ? colors.disabled.background : input.font.color.typed
-              }
-            />
+            <Close height={input.height} fill={iconColor()} />
           </CloseIcon>
         </TouchableWithoutFeedback>
       )}
