@@ -21,7 +21,6 @@ const labelTransition = css`
     padding-left: ${input.label.padding.left}px;
 
     font-size: ${input.label.font.size.typed}px;
-    font-weight: ${input.label.font.weight.typed};
 
     transform: translateY(-50%);
     transition-duration: ${transition.duration[0]};
@@ -92,9 +91,12 @@ const Field = styled.input`
 
     &:focus {
       color: ${input.font.color.focus};
+      border-color: ${input.border.color.typed};
 
       & + ${Label} {
         ${labelTransition}
+
+        font-weight: ${input.label.font.weight.typed};
         color: ${error ? `${colors.negative[1]}` : `${colors.gray.darker}`};
       }
     }
@@ -111,8 +113,6 @@ const Field = styled.input`
     ${
       typed
         ? css`
-            border-color: ${input.border.color.typed};
-
             & + ${Label} {
               ${labelTransition}
             }
@@ -194,7 +194,11 @@ const Wrapper = styled.div`
               border-color: ${colors.negative[1]};
             }
           `
-        : ''
+        : `
+          ${Helper} {
+            color: ${input.helper.color};
+          }
+        `
     }
 
     ${
