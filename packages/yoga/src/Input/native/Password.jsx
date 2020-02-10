@@ -73,13 +73,15 @@ const Password = ({
     <Wrapper style={style} full={full}>
       <Input
         {...props}
+        autoCompleteType="password"
+        blurOnSubmit={false}
         cleanable={false}
         clearTextOnFocus={false}
         disabled={disabled}
         full={full}
         secureTextEntry={!showPassword}
         value={inputValue}
-        blurOnSubmit={false}
+        textContentType="password"
         onSubmitEditing={() => Keyboard.dismiss()}
         onBlur={e => {
           setFocused(false);
