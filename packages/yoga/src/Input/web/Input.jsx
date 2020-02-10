@@ -52,7 +52,7 @@ const Label = styled.label`
 
     font-size: ${input.label.font.size.default}px;
     font-weight: ${input.label.font.weight.default};
-    color: ${input.label.color};
+    color: ${input.label.color.default};
 
     transform: translateY(-40%);
 
