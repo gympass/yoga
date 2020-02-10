@@ -5,13 +5,13 @@ import { Visibility, VisibilityOff } from '@gympass/yoga-icons';
 
 import Input from './Input';
 
-const InlineBlock = styled.div`
-  display: inline-block;
-`;
-
 const Wrapper = styled.div`
   position: relative;
   display: inline-block;
+
+  ${({ full }) => `
+    ${full ? 'width: 100%;' : ''}
+  `}
 `;
 
 const IconWrapper = styled.div`
@@ -65,7 +65,7 @@ const IconWrapper = styled.div`
   `}
 `;
 
-const Password = ({ disabled, style, className, ...props }) => {
+const Password = ({ disabled, style, className, full, ...props }) => {
   const [showPassword, toggleShowPassword] = useState(false);
   const inputRef = useRef(null);
 
@@ -87,38 +87,39 @@ const Password = ({ disabled, style, className, ...props }) => {
   };
 
   return (
-    <InlineBlock style={style} className={className}>
-      <Wrapper>
-        <Input
-          {...props}
-          disabled={disabled}
-          ref={inputRef}
-          cleanable={false}
-          type={showPassword ? 'text' : 'password'}
-        />
+    <Wrapper style={style} className={className} full={full}>
+      <Input
+        {...props}
+        disabled={disabled}
+        full={full}
+        ref={inputRef}
+        cleanable={false}
+        type={showPassword ? 'text' : 'password'}
+      />
 
-        <IconWrapper
-          tabIndex={disabled ? null : 0}
-          onClick={togglePassword}
-          onKeyDown={togglePassword}
-          disabled={disabled}
-        >
-          {showPassword ? <Visibility /> : <VisibilityOff />}
-        </IconWrapper>
-      </Wrapper>
-    </InlineBlock>
+      <IconWrapper
+        tabIndex={disabled ? null : 0}
+        onClick={togglePassword}
+        onKeyDown={togglePassword}
+        disabled={disabled}
+      >
+        {showPassword ? <Visibility /> : <VisibilityOff />}
+      </IconWrapper>
+    </Wrapper>
   );
 };
 
 Password.propTypes = {
   className: string,
   disabled: bool,
+  full: bool,
   style: shape({}),
 };
 
 Password.defaultProps = {
   className: undefined,
   disabled: false,
+  full: false,
   style: undefined,
 };
 
