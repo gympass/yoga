@@ -69,7 +69,6 @@ async function notify() {
 
     releaseNotification.attachments.push(changes);
 
-    console.log(JSON.stringify(releaseNotification, null, 2));
     const notification = JSON.stringify(releaseNotification);
 
     await sendSlackMessage(slackWebHook, notification);
