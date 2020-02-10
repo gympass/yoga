@@ -4,15 +4,17 @@ import { func, string, bool, number } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { Close } from '@gympass/yoga-icons';
 
-const ICON_SIZE = 24;
-
 const Wrapper = styled.View(
   ({
+    full,
     theme: {
-      yoga: { spacing },
+      yoga: {
+        components: { input },
+      },
     },
   }) => `
-    margin: ${spacing.xsmall}px;
+    position: relative;
+    width: ${full ? '100%' : `${input.width}px`};
   `,
 );
 
@@ -21,6 +23,8 @@ const Field = styled.TextInput(
     disabled,
     error,
     focus,
+    full,
+    typed,
     theme: {
       yoga: {
         colors,
@@ -28,11 +32,11 @@ const Field = styled.TextInput(
       },
     },
   }) => `
-    width: ${input.width}px;
+    width: ${full ? '100%' : `${input.width}px`};
     height: ${input.height}px;
 
     padding-top: ${input.padding.top}px;
-    padding-right: ${ICON_SIZE + input.padding.right * 2}px;
+    padding-right: ${input.padding.right * 2}px;
     padding-bottom: ${input.padding.bottom}px;
     padding-left: ${input.padding.left}px;
 
@@ -43,15 +47,10 @@ const Field = styled.TextInput(
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
 
-    ${
-      focus
-        ? `
-        color: ${input.font.color.focus};
-      `
-        : ''
-    }
-
+    ${focus ? `color: ${input.font.color.focus};` : ''}
+    ${focus || typed ? `border-color: ${input.border.color.typed};` : ''}
     ${error ? `border-color: ${colors.negative[1]};` : ''}
+
     ${
       disabled
         ? `
@@ -78,13 +77,7 @@ const LabelWrapper = styled(Animated.View)(
 
     transform: translateY(-${input.padding.top / 2}px);
 
-    ${
-      focus || typed
-        ? `
-      left: ${input.padding.left - 2}px;
-    `
-        : ''
-    }
+    ${focus || typed ? `left: ${input.padding.left - 2}px;` : ''}
   `,
 );
 
@@ -105,8 +98,9 @@ const Label = styled(Animated.Text)(
     background-color: ${colors.gray.surface};
 
     font-weight: ${input.label.font.weight.default};
+    color: ${input.label.color.default};
 
-    color: ${input.label.color};
+    ${focus ? `color: ${input.label.color.focus};` : ''}
 
     ${
       focus || typed
@@ -120,13 +114,7 @@ const Label = styled(Animated.Text)(
     }
 
     ${error ? `color: ${colors.negative[1]};` : ''}
-    ${
-      disabled
-        ? `
-      color: ${colors.disabled.background};
-    `
-        : ''
-    }
+    ${disabled ? `color: ${colors.disabled.background};` : ''}
   `,
 );
 
@@ -147,14 +135,18 @@ const CloseIcon = styled.View(
 
 const Helper = styled.View(
   ({
+    full,
     theme: {
       yoga: {
         components: { input },
       },
     },
   }) => `
-    margin-top: ${input.helper.margin.top}px;
+    width: ${full ? '100%' : `${input.width}px`};
+    max-width: ${input.width}px;
     flex-direction: row;
+
+    margin-top: ${input.helper.margin.top}px;
   `,
 );
 
@@ -170,11 +162,14 @@ const Info = styled.Text(
       },
     },
   }) => `
+    flex-shrink: ${right ? '0' : '1'};
+    flex-wrap: wrap;
+
     font-size: ${input.helper.font.size}px;
     
-    ${right ? 'margin-left: auto;' : ''}
     ${error ? `color: ${colors.negative[1]};` : ''}
     ${disabled ? `color: ${colors.disabled.background}` : ''}
+    ${right ? 'margin-left: auto;' : ''}
   `,
 );
 
@@ -182,6 +177,7 @@ const Input = ({
   cleanable,
   disabled,
   error,
+  full,
   helper,
   label,
   maxLength,
@@ -211,7 +207,7 @@ const Input = ({
   const animate = (animation, toValue) =>
     Animated.timing(animation, {
       toValue,
-      duration: 500,
+      duration: 300,
       easing: Easing.bezier(0, 0.75, 0.1, 1),
     }).start();
 
@@ -226,13 +222,16 @@ const Input = ({
   }, [focused, typed]);
 
   return (
-    <Wrapper>
+    <Wrapper full={full}>
       <Field
-        editable={!disabled}
+        {...props}
         disabled={disabled}
+        editable={!disabled}
         error={error}
         focus={focused}
+        full={full}
         maxLength={maxLength}
+        typed={typed}
         value={inputValue}
         onChangeText={text => {
           setTyped(Boolean(text));
@@ -247,11 +246,11 @@ const Input = ({
           setFocused(false);
           onBlur(e);
         }}
-        {...props}
       />
       {label && (
         <LabelWrapper
           focus={focused}
+          pointerEvents="none"
           typed={typed}
           style={{ top: labelTopAnimation }}
         >
@@ -259,7 +258,6 @@ const Input = ({
             disabled={disabled}
             error={error}
             focus={focused}
-            pointerEvents="none"
             typed={typed}
             style={{ fontSize: fontSizeAnimation }}
           >
@@ -279,21 +277,21 @@ const Input = ({
             <Close
               height={input.height}
               fill={
-                disabled ? colors.disabled.background : input.font.color.default
+                disabled ? colors.disabled.background : input.font.color.typed
               }
             />
           </CloseIcon>
         </TouchableWithoutFeedback>
       )}
       {(helper || maxLength || error) && (
-        <Helper>
+        <Helper full={full}>
           {(error || helper) && (
             <Info disabled={disabled} error={error}>
               {error || helper}
             </Info>
           )}
           {maxLength && (
-            <Info right error={error} disabled={disabled}>
+            <Info disabled={disabled} error={error} right>
               {inputValue.length}/{maxLength}
             </Info>
           )}
@@ -307,6 +305,7 @@ Input.propTypes = {
   cleanable: bool,
   disabled: bool,
   error: string,
+  full: bool,
   helper: string,
   label: string,
   maxLength: number,
@@ -320,6 +319,7 @@ Input.defaultProps = {
   cleanable: true,
   disabled: false,
   error: undefined,
+  full: false,
   helper: undefined,
   label: undefined,
   maxLength: undefined,
