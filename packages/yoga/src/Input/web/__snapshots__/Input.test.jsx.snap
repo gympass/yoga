@@ -18,9 +18,9 @@ exports[`<Input /> should match snapshot 1`] = `
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -28,6 +28,9 @@ exports[`<Input /> should match snapshot 1`] = `
 }
 
 .c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: transparent;
   outline: none;
   height: 52px;
@@ -36,14 +39,15 @@ exports[`<Input /> should match snapshot 1`] = `
   padding-bottom: 16px;
   padding-left: 16px;
   border-radius: 8px;
-  border: 1px solid #9898A6;
-  color: #9898A6;
+  border: 1px solid #D3D3E2;
+  color: #41414A;
   font-size: 14px;
   font-weight: 400;
 }
 
 .c2:focus {
   color: #41414A;
+  border-color: #41414A;
 }
 
 .c2:focus + .c3 {
@@ -52,7 +56,6 @@ exports[`<Input /> should match snapshot 1`] = `
   padding-right: 4px;
   padding-left: 4px;
   font-size: 12px;
-  font-weight: 700;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -60,12 +63,13 @@ exports[`<Input /> should match snapshot 1`] = `
   transition-duration: 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-weight: 700;
   color: #41414A;
 }
 
 .c2:focus,
 .c2:hover {
-  border-color: #6B6B78;
+  border-color: #41414A;
 }
 
 .c2:disabled {
@@ -91,9 +95,9 @@ exports[`<Input /> should match snapshot 1`] = `
   padding-left: 8px;
   height: 52px;
   fill: #9898A6;
+  outline: none;
   box-sizing: content-box;
   cursor: pointer;
-  outline: none;
 }
 
 .c0 svg:hover,
@@ -104,6 +108,10 @@ exports[`<Input /> should match snapshot 1`] = `
 .c0,
 .c0 .c1 {
   width: 312px;
+}
+
+.c0 .c5 {
+  color: #9898A6;
 }
 
 <div>
