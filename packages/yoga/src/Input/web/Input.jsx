@@ -54,7 +54,7 @@ const Label = styled.label`
     font-weight: ${input.label.font.weight.default};
     color: ${input.label.color};
 
-    transform: translateY(-50%);
+    transform: translateY(-40%);
 
     transition-duration: ${transition.duration[0]};
     transition-timing-function: ${transition.timing[0]};
@@ -63,16 +63,14 @@ const Label = styled.label`
 
 const Field = styled.input`
   background-color: transparent;
-
   outline: none;
 
   ${({
     typed,
+    error,
     theme: {
       yoga: {
-        colors: {
-          gray: { darker },
-        },
+        colors,
         components: { input },
       },
     },
@@ -87,7 +85,8 @@ const Field = styled.input`
     border-radius: ${input.border.radius}px;
     border: ${input.border.width}px solid ${input.border.color.default};
 
-    color: ${input.font.color.default};
+    color: ${input.font.color.focus};
+
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
 
@@ -96,7 +95,7 @@ const Field = styled.input`
 
       & + ${Label} {
         ${labelTransition}
-        color: ${darker};
+        color: ${error ? `${colors.negative[1]}` : `${colors.gray.darker}`};
       }
     }
 
@@ -170,14 +169,14 @@ const Wrapper = styled.div`
       height: ${input.height}px;
 
       fill: ${input.font.color.default};
+      outline: none;
 
       &:hover, &:focus {
         fill: ${input.font.color.focus};
       }
-
+      
       box-sizing: content-box;
       cursor: pointer;
-      outline: none;
     }
 
     &, ${Field} {
@@ -286,10 +285,11 @@ const Input = React.forwardRef(
         <Field
           {...props}
           {...{
-            typed,
             disabled,
-            maxLength,
+            error,
             readOnly,
+            maxLength,
+            typed,
           }}
           ref={inputRef}
           value={inputValue}
