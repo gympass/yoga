@@ -330,39 +330,39 @@ const Input = React.forwardRef(
 );
 
 Input.propTypes = {
+  className: string,
   /** display a close icon to clean the field */
   cleanable: bool,
   disabled: bool,
   error: string,
+  full: bool,
+  /** A helper text to be displayed below field */
+  helper: string,
   label: string,
+  /** maximum length (number of characters) of value */
+  maxLength: number,
+  readOnly: bool,
+  style: shape({}),
+  value: string,
   onChange: func,
   /** callback invoked when close icon is clicked */
   onClean: func,
-  value: string,
-  /** maximum length (number of characters) of value */
-  maxLength: number,
-  /** A helper text to be displayed below field */
-  helper: string,
-  readOnly: bool,
-  full: bool,
-  style: shape({}),
-  className: string,
 };
 
 Input.defaultProps = {
+  className: undefined,
   cleanable: true,
   disabled: false,
   error: undefined,
+  full: false,
+  helper: undefined,
   label: 'Label',
+  maxLength: undefined,
+  readOnly: false,
+  style: undefined,
+  value: undefined,
   onChange: () => {},
   onClean: () => {},
-  value: undefined,
-  maxLength: undefined,
-  helper: undefined,
-  readOnly: false,
-  full: false,
-  style: undefined,
-  className: undefined,
 };
 
 export default Input;
