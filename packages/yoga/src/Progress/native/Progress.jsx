@@ -25,6 +25,7 @@ const ProgressWrapper = styled.View`
 const ProgressBar = styled.View`
   position: relative;
   flex-grow: 1;
+
   margin: auto 0;
 
   ${({
@@ -35,12 +36,15 @@ const ProgressBar = styled.View`
     },
   }) => `
     height: ${progress.height}px;
+
     background-color: ${progress.backgroundColor.bar};
+
     border-radius: ${progress.border.radius}px;
   `};
 `;
 const ProgressValue = styled.View`
   position: absolute;
+
   height: 100%;
 
   ${({
@@ -53,7 +57,9 @@ const ProgressValue = styled.View`
   }) =>
     `
     width: ${width}%;
+
     background-color: ${progress.backgroundColor.value};
+
     border-radius: ${progress.border.radius}px;
   `}
 `;
@@ -76,6 +82,7 @@ const Label = styled.Text`
     isNumber
       ? `
       width: 22px;
+      
       margin-${align === 'right' ? 'left' : 'right'}: ${spacing.xsmall}px;
     `
       : `

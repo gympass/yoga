@@ -5,8 +5,9 @@ import { string, number, shape, oneOfType, oneOf, bool } from 'prop-types';
 import { charLength } from '../../shared';
 
 const ProgressBar = styled.progress`
-  border: none;
   width: 100%;
+
+  border: none;
 
   ${({
     theme: {
@@ -61,8 +62,9 @@ const Label = styled.label`
 `;
 
 const Wrapper = styled.div`
-  width: 100%;
   display: flex;
+
+  width: 100%;
 
   ${({
     isNumber,
@@ -76,6 +78,7 @@ const Wrapper = styled.div`
         ? `
         ${Label} {
           width: 22px;
+
           margin-${align === 'right' ? 'left' : 'right'}: ${spacing.xsmall}px;
         }
 
@@ -87,15 +90,16 @@ const Wrapper = styled.div`
         flex-direction: column;
 
         ${Label} {
-          margin-top: ${spacing.xxsmall}px;
           max-width: 280px;
+
+          margin-top: ${spacing.xxsmall}px;
         }
       `
     }
 
       ${
         align === 'right'
-          ? `align-items: flex-end; text-align: right;`
+          ? 'align-items: flex-end; text-align: right;'
           : 'align-items: flex-start;'
       }
       ${isNumber && align === 'left' ? 'flex-direction: row-reverse;' : ''}
