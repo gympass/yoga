@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.9.1...@gympass/yoga-labnative@0.10.0) (2020-02-11)
+
+### Features
+
+- **progress:** new component: Progress (native) ([2e4f664](https://github.com/Gympass/yoga/commit/2e4f664b92301fd2034a5d1c72471b7c565b9298))
+
 ## [0.9.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.9.0...@gympass/yoga-labnative@0.9.1) (2020-02-05)
 
 ### Bug Fixes

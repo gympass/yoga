@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.12.4...@gympass/yoga-doc@0.13.0) (2020-02-11)
+
+### Bug Fixes
+
+- **doc:** remove unnecessary padding from react-live ([c9d19af](https://github.com/Gympass/yoga/commit/c9d19afb0aae096729cf4df7eca256460685f14b))
+- **progress:** remove test from home >.< ([a3db54f](https://github.com/Gympass/yoga/commit/a3db54fcd85deadc69d06a78d0ecdb7e70939761))
+
+### Features
+
+- **progress:** new component: Progress (native) ([2e4f664](https://github.com/Gympass/yoga/commit/2e4f664b92301fd2034a5d1c72471b7c565b9298))
+- **progress:** new component: Progress (web) ([70d3ad1](https://github.com/Gympass/yoga/commit/70d3ad1059bb7c8add4db4bd321029d93d7b5530))
+
 ## [0.12.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.12.3...@gympass/yoga-doc@0.12.4) (2020-02-10)
 
 **Note:** Version bump only for package @gympass/yoga-doc
