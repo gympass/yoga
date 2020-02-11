@@ -98,6 +98,7 @@ const Password = ({
         }}
       />
       <TouchableWithoutFeedback
+        accessibilityRole="button"
         onPress={() => {
           if (disabled) return;
           toggleShowPassword(!showPassword);
