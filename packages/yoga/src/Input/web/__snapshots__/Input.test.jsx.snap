@@ -21,8 +21,8 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
 }
@@ -59,8 +59,8 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
@@ -152,8 +152,8 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
 }
@@ -190,8 +190,8 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
@@ -305,8 +305,8 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
 }
@@ -320,8 +320,8 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
@@ -360,8 +360,8 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
@@ -507,8 +507,8 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
 }
@@ -545,8 +545,8 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
@@ -576,8 +576,8 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
@@ -689,8 +689,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
 }
@@ -727,8 +727,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
@@ -758,8 +758,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
@@ -904,8 +904,8 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
 }
@@ -942,8 +942,8 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
