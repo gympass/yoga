@@ -131,7 +131,7 @@ const SwitchThumb = styled.span`
                   ? focusCheckedBackgroundColor
                   : focusDisabledBackgroundColor};
             }
-          `};
+          `}
     `};
 `;
 
