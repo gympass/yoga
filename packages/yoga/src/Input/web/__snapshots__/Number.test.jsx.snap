@@ -35,7 +35,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   outline: none;
   height: 52px;
   padding-top: 16px;
-  padding-right: 56px;
+  padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
   border-radius: 8px;
