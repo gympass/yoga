@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
-import { ThemeProvider } from '@gympass/yoga';
+import { ThemeProvider, Progress } from '@gympass/yoga';
 import { version } from '@gympass/yoga/package.json';
 
 import { GlobalStyle, Home } from 'components';
@@ -91,6 +91,7 @@ const HomePage = () => (
       <Wrapper>
         <Home.Header>
           <YogaLogo />
+          <Progress max={100} value={76} />
           <Version
             href="https://github.com/gympass/yoga"
             rel="noopener noreferrer"
