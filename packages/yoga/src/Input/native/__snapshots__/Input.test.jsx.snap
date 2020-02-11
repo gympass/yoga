@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Input /> Snapshots should match snapshot when input is focused 1`] = `
+exports[`<Input /> Snapshots should match when input is focused 1`] = `
 <View
   collapsable={true}
   pointerEvents="box-none"
@@ -281,6 +281,94 @@ exports[`<Input /> Snapshots should match with error 1`] = `
         }
       >
         Error message
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Input /> Snapshots should match with full width 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    full={true}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      disabled={false}
+      editable={true}
+      focus={false}
+      full={true}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#D3D3E2",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#9898A6",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "height": 52,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 32,
+            "paddingTop": 16,
+            "width": "100%",
+          },
+        ]
+      }
+      typed={false}
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      focus={false}
+      pointerEvents="none"
+      style={
+        Object {
+          "left": 16,
+          "position": "absolute",
+          "top": 24,
+          "transform": Array [
+            Object {
+              "translateY": -8,
+            },
+          ],
+        }
+      }
+      typed={false}
+    >
+      <Text
+        disabled={false}
+        focus={false}
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "color": "#9898A6",
+            "fontSize": 14,
+            "fontWeight": "400",
+          }
+        }
+        typed={false}
+      >
+        Label
       </Text>
     </View>
   </View>
