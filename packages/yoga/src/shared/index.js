@@ -1,4 +1,4 @@
 import HiddenInput from './HiddenInput';
-import { limitChildren, typeOf } from './propTypes';
+import { limitChildren, typeOf, charLength } from './propTypes';
 
-export { HiddenInput, limitChildren, typeOf };
+export { HiddenInput, limitChildren, typeOf, charLength };

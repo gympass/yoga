@@ -3,12 +3,7 @@ import { View } from 'react-native';
 import { Checkbox } from '@gympass/yoga';
 import styled from 'styled-components';
 
-const StyledText = styled.Text`
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-`;
+import { DocTitle } from '../components';
 
 const SwitchWrapper = styled.View`
   margin-bottom: 10px;
@@ -24,19 +19,19 @@ const SwitchPage = () => {
         paddingBottom: 40,
       }}
     >
-      <StyledText>Disabled</StyledText>
+      <DocTitle>Disabled</DocTitle>
       <SwitchWrapper>
         <Checkbox.Switch disabled />
       </SwitchWrapper>
-      <StyledText>Unchecked</StyledText>
+      <DocTitle>Unchecked</DocTitle>
       <SwitchWrapper>
         <Checkbox.Switch checked={false} />
       </SwitchWrapper>
-      <StyledText>Checked</StyledText>
+      <DocTitle>Checked</DocTitle>
       <SwitchWrapper>
         <Checkbox.Switch checked />
       </SwitchWrapper>
-      <StyledText>Working</StyledText>
+      <DocTitle>Working</DocTitle>
       <SwitchWrapper>
         <Checkbox.Switch
           checked={checked}

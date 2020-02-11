@@ -34,6 +34,8 @@ const SnackEmbed = ({ id, ...props }) => {
     CodeBlockContext,
   );
 
+  const sanitizedCode = encodeURI(code);
+
   const snackProps = addProperties(
     {
       ...props,
@@ -43,8 +45,8 @@ const SnackEmbed = ({ id, ...props }) => {
             ['React', 'StyleSheet'],
             ['react', 'react-native'],
             false,
-          )}\n\n${code}`
-        : native(imports, code, theme),
+          )}\n\n${sanitizedCode}`
+        : native(imports, sanitizedCode, theme),
       dependencies: dependencies.join(','),
     },
     {},
