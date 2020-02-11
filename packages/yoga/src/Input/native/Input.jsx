@@ -189,6 +189,7 @@ const Input = ({
   value,
   onBlur,
   onChangeText,
+  onClean,
   onFocus,
   theme: {
     yoga: {
@@ -288,10 +289,11 @@ const Input = ({
       {cleanable && typed && (
         <TouchableWithoutFeedback
           accessibilityRole="button"
-          onPress={() => {
+          onPress={e => {
             if (disabled) return;
             setInputValue('');
             setTyped(false);
+            onClean(e);
           }}
         >
           <CloseIcon>
@@ -318,17 +320,22 @@ const Input = ({
 };
 
 Input.propTypes = {
+  /** display a close icon to clean the field */
   cleanable: bool,
   disabled: bool,
   error: string,
   full: bool,
+  /** A helper text to be displayed below field */
   helper: string,
   label: string,
+  /** maximum length (number of characters) of value */
   maxLength: number,
   readOnly: bool,
   value: string,
   onBlur: func,
   onChangeText: func,
+  /** callback invoked when close icon is clicked */
+  onClean: func,
   onFocus: func,
 };
 
@@ -344,6 +351,7 @@ Input.defaultProps = {
   value: undefined,
   onBlur: () => {},
   onChangeText: () => {},
+  onClean: () => {},
   onFocus: () => {},
 };
 
