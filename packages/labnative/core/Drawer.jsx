@@ -31,7 +31,7 @@ Object.entries(Pages).forEach(([name, Page]) => {
 });
 
 const Drawer = createDrawerNavigator(drawerOptions, {
-  initialRouteName: 'Progress', // add your working component here
+  initialRouteName: '', // add your working component here
   contentOptions: {
     activeTintColor: 'black',
   },

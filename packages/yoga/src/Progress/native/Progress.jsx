@@ -1,13 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  string,
-  number,
-  shape,
-  oneOfType,
-  oneOf,
-  checkPropTypes,
-} from 'prop-types';
+import { string, number, shape, oneOfType, oneOf } from 'prop-types';
+
+import { charLength } from '../../shared';
 
 const ProgressWrapper = styled.View`
   width: 100%;
@@ -116,25 +111,7 @@ Progress.propTypes = {
   /** Use labels to increase users understanding. If the value is numeric, make
    * sure it has a maximum of 3 characters */
   label: shape({
-    value: (props, propName, componentName) => {
-      const MAX_CHARS = 3;
-      const { [propName]: valueProp } = props;
-
-      checkPropTypes(
-        { [propName]: oneOfType([number, string]) },
-        props,
-        'prop',
-        componentName,
-      );
-
-      if (!isNaN(valueProp) && valueProp.toString().length > MAX_CHARS) {
-        return new Error(
-          `Invalid prop ${propName} supplied to ${componentName}. ${propName} must have up to ${MAX_CHARS} characters`,
-        );
-      }
-
-      return null;
-    },
+    value: charLength(3, oneOfType([number, string])),
     placement: oneOf(['left', 'right']),
   }),
   /** This attribute describes how much work the task indicated by the progress
