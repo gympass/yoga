@@ -3,22 +3,12 @@ import { render, fireEvent } from '@testing-library/react';
 
 import { ThemeProvider, Input } from '../..';
 
-describe('<Input />', () => {
+describe('<Input.Password />', () => {
   describe('Snapshots', () => {
     it('should match with default input', () => {
       const { container } = render(
         <ThemeProvider>
-          <Input />
-        </ThemeProvider>,
-      );
-
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match with label', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <Input label="Input" />
+          <Input.Password />
         </ThemeProvider>,
       );
 
@@ -28,27 +18,7 @@ describe('<Input />', () => {
     it('should match with disabled input', () => {
       const { container } = render(
         <ThemeProvider>
-          <Input disabled />
-        </ThemeProvider>,
-      );
-
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match with error', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <Input error="Error message" />
-        </ThemeProvider>,
-      );
-
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match with helper text and max length', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <Input helper="Helper text" maxLength={20} />
+          <Input.Password disabled />
         </ThemeProvider>,
       );
 
@@ -58,7 +28,7 @@ describe('<Input />', () => {
     it('should match with full width', () => {
       const { container } = render(
         <ThemeProvider>
-          <Input label="Label" full />
+          <Input.Password label="Label" full />
         </ThemeProvider>,
       );
 
@@ -71,7 +41,11 @@ describe('<Input />', () => {
       const onChangeMock = jest.fn();
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" onChange={onChangeMock} />
+          <Input.Password
+            label="Input"
+            data-testid="input"
+            onChange={onChangeMock}
+          />
         </ThemeProvider>,
       );
 
@@ -84,7 +58,11 @@ describe('<Input />', () => {
       const onFocusMock = jest.fn();
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" onFocus={onFocusMock} />
+          <Input.Password
+            label="Input"
+            data-testid="input"
+            onFocus={onFocusMock}
+          />
         </ThemeProvider>,
       );
 
@@ -98,7 +76,11 @@ describe('<Input />', () => {
 
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" onBlur={onBlurMock} />
+          <Input.Password
+            label="Input"
+            data-testid="input"
+            onBlur={onBlurMock}
+          />
         </ThemeProvider>,
       );
 
@@ -109,34 +91,19 @@ describe('<Input />', () => {
     });
   });
 
-  describe('maxLength', () => {
-    it('should update maxLength counter when add character', () => {
-      const { getByTestId, getByText } = render(
-        <ThemeProvider>
-          <Input label="Input" data-testid="input" maxLength={10} />
-        </ThemeProvider>,
-      );
-
-      expect(getByText('0/10').textContent).toBe('0/10');
-
-      fireEvent.change(getByTestId('input'), { target: { value: 'foo' } });
-
-      expect(getByText('3/10').textContent).toBe('3/10');
-    });
-  });
-
-  describe('clean button', () => {
-    it('should clear input value when press clean button', () => {
+  describe('visibility button', () => {
+    it('should toggle password visibility when click visibility button', () => {
       const { getByRole, getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" />
+          <Input.Password label="Input" data-testid="input" />
         </ThemeProvider>,
       );
 
-      fireEvent.change(getByTestId('input'), { target: { value: 'foo' } });
+      expect(getByTestId('input').type).toBe('password');
+
       fireEvent.click(getByRole('button'));
 
-      expect(getByTestId('input').value).toBe('');
+      expect(getByTestId('input').type).toBe('text');
     });
   });
 });

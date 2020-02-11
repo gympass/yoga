@@ -92,24 +92,6 @@ describe('<Input />', () => {
       expect(onChangeTextMock).toHaveBeenCalled();
     });
 
-    it('should not call onChangeText when input is readOnly', () => {
-      const onChangeTextMock = jest.fn();
-      const { getByTestId } = render(
-        <ThemeProvider>
-          <Input
-            label="Input"
-            testID="input"
-            onChangeText={onChangeTextMock}
-            readOnly
-          />
-        </ThemeProvider>,
-      );
-
-      fireEvent.focus(getByTestId('input'));
-
-      expect(onChangeTextMock).not.toHaveBeenCalled();
-    });
-
     it('should not call onChangeText when input is disabled', () => {
       const onChangeTextMock = jest.fn();
       const { getByTestId } = render(
