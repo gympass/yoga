@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TouchableWithoutFeedback, Keyboard } from 'react-native';
 import styled, { withTheme } from 'styled-components';
-import { bool, func, shape, string } from 'prop-types';
+import { bool, func, shape } from 'prop-types';
 import { Visibility, VisibilityOff } from '@gympass/yoga-icons';
 
 import Input from './Input';
@@ -40,9 +40,7 @@ const Password = ({
   disabled,
   style,
   full,
-  value,
   onBlur,
-  onChangeText,
   onFocus,
   theme: {
     yoga: {
@@ -54,15 +52,13 @@ const Password = ({
 }) => {
   const [showPassword, toggleShowPassword] = useState(false);
   const [focused, setFocused] = useState(false);
-  const [inputValue, setInputValue] = useState(value || '');
-  const [typed, setTyped] = useState(Boolean(value));
 
   const iconColor = () => {
     if (disabled) {
       return colors.disabled.background;
     }
 
-    if (focused || typed) {
+    if (focused) {
       return input.font.color.focus;
     }
 
@@ -80,17 +76,11 @@ const Password = ({
         disabled={disabled}
         full={full}
         secureTextEntry={!showPassword}
-        value={inputValue}
         textContentType="password"
         onSubmitEditing={() => Keyboard.dismiss()}
         onBlur={e => {
           setFocused(false);
           onBlur(e);
-        }}
-        onChangeText={text => {
-          setTyped(Boolean(text));
-          setInputValue(text);
-          onChangeText(text);
         }}
         onFocus={e => {
           setFocused(true);
@@ -120,9 +110,7 @@ Password.propTypes = {
   disabled: bool,
   full: bool,
   style: shape({}),
-  value: string,
   onBlur: func,
-  onChangeText: func,
   onFocus: func,
 };
 
@@ -130,9 +118,7 @@ Password.defaultProps = {
   disabled: false,
   full: false,
   style: undefined,
-  value: undefined,
   onBlur: () => {},
-  onChangeText: () => {},
   onFocus: () => {},
 };
 
