@@ -117,7 +117,7 @@ Wrapper.defaultProps = {
 };
 
 /** The Progress is a component used to indicate a progress of an indicator
- * of quantity.  The use of labels numeric or alphabetic can increase the user
+ * of quantity. The use of labels numeric or alphabetic can increase the user
  * understanding. */
 const Progress = ({ label, max, value, ...props }) => {
   const isNumber = !isNaN(label.value);
