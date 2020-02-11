@@ -18,7 +18,7 @@ specific locale design-tokens merge.
 An important point in using it is that your whole application **must** be
 wrapped in our `ThemeProvider` component:
 
-```
+```javascript type=highlight
 import { ThemeProvider, Button } from '@gympass/yoga';
 
 const App = () => (
@@ -35,9 +35,9 @@ very known `theme` prop from type `string`.
 
 In this prop you can pass one of our 3 available themes:
 
-- `endUser`
-- `corporate`
-- `gyms`
+- `EndUser`
+- `Corporate`
+- `Gyms`
 
 These themes apply all global branding rules merging them with culture rules of
 and specific locale like `zh-cn` (china) for instance, but for this to happen

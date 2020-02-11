@@ -12,33 +12,28 @@ const LabelOutline = styled(Label)`
     theme: {
       yoga: {
         colors: { white, gray },
-        components: {
-          button: {
-            types: {
-              outline: {
-                backgroundColor: { pressed: pressedBackgroundColor },
-                textColor: {
-                  disabled: disabledTextColor,
-                  enabled: enabledTextColor,
-                  pressed: pressedTextColor,
-                },
-              },
-            },
-          },
-        },
+        components: { button },
       },
     },
   }) => `
-    color: ${enabledTextColor};
+    color: ${button.types.outline.font.default.color};
 
-    ${disabled ? `color: ${disabledTextColor};` : ''}
-    ${!disabled && pressed ? `color: ${pressedTextColor};` : ''}
+    ${disabled ? `color: ${button.types.outline.font.disabled.color};` : ''}
+    ${
+      !disabled && pressed
+        ? `color: ${button.types.outline.font.pressed.color};`
+        : ''
+    }
 
     ${
       inverted && !disabled
         ? `
         color: ${white};
-        ${!disabled && pressed ? `color: ${pressedBackgroundColor};` : ''}
+        ${
+          !disabled && pressed
+            ? `color: ${button.types.outline.backgroundColor.pressed};`
+            : ''
+        }
       `
         : ''
     }
@@ -52,38 +47,24 @@ const ButtonContainerOutline = styled(ButtonContainer)`
     pressed,
     disabled,
     inverted,
+    small,
     theme: {
       yoga: {
         colors: { white, gray },
-        components: {
-          button: {
-            types: {
-              outline: {
-                backgroundColor: {
-                  disabled: disabledBackgroundColor,
-                  enabled: enabledBackgroundColor,
-                  pressed: pressedBackgroundColor,
-                },
-                textColor: {
-                  disabled: disabledTextColor,
-                  enabled: enabledTextColor,
-                  pressed: pressedTextColor,
-                },
-              },
-            },
-          },
-        },
+        components: { button },
       },
     },
   }) => `
-    background-color: ${enabledBackgroundColor};
-    border-color: ${enabledTextColor};
+    border: ${
+      small ? button.border.small.width : button.border.default.width
+    }px solid ${button.types.outline.font.default.color};
+    background-color: ${button.types.outline.backgroundColor.default};
 
     ${
       !disabled && pressed
         ? `
-      background-color: ${pressedBackgroundColor};
-      border-color: ${pressedTextColor};
+      background-color: ${button.types.outline.backgroundColor.pressed};
+      border-color: ${button.types.outline.font.pressed.color};
     `
         : ''
     }
@@ -91,8 +72,8 @@ const ButtonContainerOutline = styled(ButtonContainer)`
     ${
       disabled
         ? `
-      background-color: ${disabledBackgroundColor};
-      border-color: ${disabledTextColor};
+      background-color: ${button.types.outline.backgroundColor.default};
+      border-color: ${button.types.outline.font.disabled.color};
     `
         : ''
     }

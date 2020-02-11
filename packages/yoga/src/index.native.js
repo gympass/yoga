@@ -10,6 +10,7 @@ import Text from './Text';
 import Rating from './Rating';
 import Tag from './Tag';
 import Input from './Input';
+import Progress from './Progress';
 
 export {
   ThemeProvider,
@@ -28,4 +29,5 @@ export {
   Rating,
   Tag,
   Input,
+  Progress,
 };

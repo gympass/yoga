@@ -12,18 +12,14 @@ const Link = styled(StyledButton)`
     theme: {
       yoga: {
         colors: { white, gray, [variant]: color },
-        components: {
-          button: {
-            types: { link },
-          },
-        },
+        components: { button },
       },
     },
   }) => `
   height: unset;
   padding: 0;
-  margin-top: ${link.margin.top}px;
-  margin-bottom: ${link.margin.bottom}px;
+  margin-top: ${button.types.link.margin.top}px;
+  margin-bottom: ${button.types.link.margin.bottom}px;
   background-color: unset;
   border: none;
   border-radius: 0;
@@ -41,7 +37,7 @@ const Link = styled(StyledButton)`
 
   &:disabled {
     background-color: unset;
-    color: ${link.textColor.disabled};
+    color: ${button.types.link.font.disabled.color};
   }
 
   ${

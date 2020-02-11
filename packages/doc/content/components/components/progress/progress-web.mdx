@@ -1,0 +1,27 @@
+### Usage
+
+```javascript
+<div style={{ width: 500 }}>
+  <Progress max={100} value={65} label={{ value: 65, placement: 'right' }} />
+</div>
+```
+
+### Examples
+
+```javascript
+<div style={{ display: 'flex', flexDirection: 'column', width: 500 }}>
+  <Progress max={100} value={20} label={{ value: 20, placement: 'left' }} />
+  <Progress max={100} value={40} label={{ value: 40, placement: 'left' }} />
+  <Progress max={100} value={67} label={{ value: 67, placement: 'left' }} />
+  <br />
+  <Progress
+    max={100}
+    value={70}
+    label={{ value: 'Some description', placement: 'left' }}
+  />
+</div>
+```
+
+### Props
+
+<PropsTable component="Progress" platform="web" />

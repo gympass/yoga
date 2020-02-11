@@ -10,6 +10,8 @@ import {
   Switch,
 } from 'react-native';
 import { ThemeProvider } from '@gympass/yoga';
+import { ThemeConsumer } from 'styled-components';
+
 import paletteIcon from '../assets/images/palette_icon.png';
 
 const themeChoices = [
@@ -41,6 +43,7 @@ const CenteredView = props => {
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'space-between',
+            paddingHorizontal: 20,
           }}
         >
           {Platform.OS === 'ios' ? (
@@ -64,7 +67,6 @@ const CenteredView = props => {
                   alignItems: 'center',
                   flexDirection: 'row',
                   justifyContent: 'flex-end',
-                  padding: 20,
                 }}
               >
                 <Image
@@ -100,27 +102,33 @@ const CenteredView = props => {
               ))}
             </Picker>
           )}
-          <View
-            style={{
-              alignItems: 'center',
-              flexDirection: 'row',
-            }}
-          >
-            <Text
-              style={{
-                color: darkMode === '#FFF' ? '#41414A' : '#FFF',
-              }}
-            >
-              Dark Mode
-            </Text>
+          <ThemeConsumer>
+            {theme => (
+              <View
+                style={{
+                  alignItems: 'center',
+                  flexDirection: 'row',
+                }}
+              >
+                <Text
+                  style={{
+                    color: darkMode === '#FFF' ? '#41414A' : '#FFF',
+                    marginRight: 8,
+                  }}
+                >
+                  Dark Mode
+                </Text>
 
-            <Switch
-              onChange={() => {
-                setDarkMode(darkMode === '#FFF' ? '#41414A' : '#FFF');
-              }}
-              value={darkMode === '#41414A'}
-            />
-          </View>
+                <Switch
+                  onChange={() => {
+                    setDarkMode(darkMode === '#FFF' ? '#41414A' : '#FFF');
+                  }}
+                  value={darkMode === '#41414A'}
+                  trackColor={{ true: theme.yoga.colors.primary[3] }}
+                />
+              </View>
+            )}
+          </ThemeConsumer>
         </View>
 
         <View
