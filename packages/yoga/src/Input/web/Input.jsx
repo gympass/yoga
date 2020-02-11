@@ -242,19 +242,19 @@ const Info = styled.span`
 const Input = React.forwardRef(
   (
     {
-      label,
+      className,
+      cleanable,
       disabled,
       error,
+      full,
+      helper,
+      label,
+      maxLength,
+      readOnly,
+      style,
       value,
-      cleanable,
       onChange,
       onClean,
-      maxLength,
-      helper,
-      readOnly,
-      full,
-      style,
-      className,
       ...props
     },
     ref,
@@ -311,6 +311,7 @@ const Input = React.forwardRef(
             disabled={disabled}
             onClick={cleanField}
             onKeyDown={cleanField}
+            role="button"
           />
         )}
         {(helper || maxLength || error) && (

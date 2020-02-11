@@ -102,6 +102,7 @@ const Password = ({ disabled, style, className, full, ...props }) => {
         onClick={togglePassword}
         onKeyDown={togglePassword}
         disabled={disabled}
+        role="button"
       >
         {showPassword ? <Visibility /> : <VisibilityOff />}
       </IconWrapper>
