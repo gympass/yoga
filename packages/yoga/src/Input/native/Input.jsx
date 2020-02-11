@@ -186,6 +186,7 @@ const Input = ({
   helper,
   label,
   maxLength,
+  readOnly,
   value,
   onBlur,
   onChangeText,
@@ -245,7 +246,7 @@ const Input = ({
       <Field
         {...props}
         disabled={disabled}
-        editable={!disabled}
+        editable={!(readOnly || disabled)}
         error={error}
         focus={focused}
         full={full}
@@ -286,6 +287,7 @@ const Input = ({
       )}
       {cleanable && typed && (
         <TouchableWithoutFeedback
+          accessibilityRole="button"
           onPress={() => {
             if (disabled) return;
             setInputValue('');
@@ -323,6 +325,7 @@ Input.propTypes = {
   helper: string,
   label: string,
   maxLength: number,
+  readOnly: bool,
   value: string,
   onBlur: func,
   onChangeText: func,
@@ -337,6 +340,7 @@ Input.defaultProps = {
   helper: undefined,
   label: undefined,
   maxLength: undefined,
+  readOnly: false,
   value: undefined,
   onBlur: () => {},
   onChangeText: () => {},
