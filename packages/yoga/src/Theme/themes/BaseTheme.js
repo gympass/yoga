@@ -546,6 +546,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     components,
     baseFontFamily,
     baseFontSize,
+    fontWeights,
     colors,
     spacing,
     fonts,
