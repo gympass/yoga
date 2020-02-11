@@ -5,7 +5,7 @@ Gympass \`<${name} />\` description
 
 ### Usage
 
-\`\`\`javascript reactLive=true
+\`\`\`javascript
   <${name}>${name}</${name}>
 \`\`\`
 
