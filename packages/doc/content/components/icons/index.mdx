@@ -23,7 +23,7 @@ export const IconWrapper = styled.div`
 export const AllIcons = () => (
   <>
     {Object.entries(YogaIcons).map(([name, Component]) => (
-      <IconWrapper>
+      <IconWrapper key={name}>
         <Component />
         {name}
       </IconWrapper>
@@ -38,7 +38,7 @@ used at your application.
 
 ## Installation
 
-```
+```bash type=highlight
 yarn add @gympass/yoga-icons
 ```
 

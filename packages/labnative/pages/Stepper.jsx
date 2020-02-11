@@ -1,7 +1,8 @@
 import React from 'react';
-import { Text } from 'react-native';
 import styled from 'styled-components';
 import { Stepper } from '@gympass/yoga';
+
+import { DocTitle } from '../components';
 
 const StepWrapper = styled.View`
   padding: 10px;
@@ -19,17 +20,17 @@ const StepperPage = () => (
     <Stepper activeStep={0}>
       <Stepper.Step label="Confirm Booking">
         <StepWrapper>
-          <Text>Confirm Booking Content</Text>
+          <DocTitle>Confirm Booking Content</DocTitle>
         </StepWrapper>
       </Stepper.Step>
       <Stepper.Step label="Class Booked">
         <StepWrapper>
-          <Text>Class Booked Content</Text>
+          <DocTitle>Class Booked Content</DocTitle>
         </StepWrapper>
       </Stepper.Step>
       <Stepper.Step label="Check-in">
         <StepWrapper>
-          <Text>Check-in Content</Text>
+          <DocTitle>Check-in Content</DocTitle>
         </StepWrapper>
       </Stepper.Step>
     </Stepper>

@@ -1,0 +1,145 @@
+import React from 'react';
+import styled from 'styled-components';
+import { string, number, shape, oneOfType, oneOf } from 'prop-types';
+
+import { charLength } from '../../shared';
+
+const ProgressWrapper = styled.View`
+  width: 100%;
+
+  ${({ isNumber, align }) => `
+  
+  ${
+    isNumber
+      ? `
+      flex-direction: row;
+    `
+      : `
+      flex-direction: column;
+    `
+  }
+
+  ${isNumber && align === 'left' ? 'flex-direction: row-reverse;' : ''}
+  `}
+`;
+const ProgressBar = styled.View`
+  position: relative;
+  flex-grow: 1;
+
+  margin: auto 0;
+
+  ${({
+    theme: {
+      yoga: {
+        components: { progress },
+      },
+    },
+  }) => `
+    height: ${progress.height}px;
+
+    background-color: ${progress.backgroundColor.bar};
+
+    border-radius: ${progress.border.radius}px;
+  `};
+`;
+const ProgressValue = styled.View`
+  position: absolute;
+
+  height: 100%;
+
+  ${({
+    width,
+    theme: {
+      yoga: {
+        components: { progress },
+      },
+    },
+  }) =>
+    `
+    width: ${width}%;
+
+    background-color: ${progress.backgroundColor.value};
+
+    border-radius: ${progress.border.radius}px;
+  `}
+`;
+
+const Label = styled.Text`
+  ${({
+    isNumber,
+    align,
+    theme: {
+      yoga: {
+        spacing,
+        components: { progress },
+      },
+    },
+  }) => `
+  font-size: ${progress.label.font.size}px;
+  text-align: ${align};
+
+  ${
+    isNumber
+      ? `
+      width: 22px;
+      
+      margin-${align === 'right' ? 'left' : 'right'}: ${spacing.xsmall}px;
+    `
+      : `
+      margin-top: ${spacing.xxsmall}px;
+    `
+  }
+`}
+`;
+
+/** The Progress Bar is a component used to indicate a progress of an indicator
+ * of quantity.  The use of labels numeric or alphabetic can increase the user
+ * understanding. */
+const Progress = ({ label, max, value, ...props }) => {
+  const isNumber = !isNaN(label.value);
+  const align = label.placement || 'left';
+
+  return (
+    <ProgressWrapper {...props} isNumber={isNumber} align={align}>
+      <ProgressBar>
+        <ProgressValue width={(value / max) * 100} />
+      </ProgressBar>
+
+      {Object.keys(label).length > 0 && (isNumber || label.value) && (
+        <Label isNumber={isNumber} align={align}>
+          {label.value}
+        </Label>
+      )}
+    </ProgressWrapper>
+  );
+};
+
+Progress.propTypes = {
+  /** Use labels to increase users understanding. If the value is numeric, make
+   * sure it has a maximum of 3 characters */
+  label: shape({
+    value: charLength(3, oneOfType([number, string])),
+    placement: oneOf(['left', 'right']),
+  }),
+  /** This attribute describes how much work the task indicated by the progress
+   * element requires. The max attribute, if present, must have a value greater
+   * than zero and be a valid floating point number. The default value is 1. */
+  max: number,
+  /** This attribute specifies how much of the task that has been completed. It
+   * must be a valid floating point number between 0 and max, or between 0 and 1
+   * if max is omitted. If there is no value attribute, the progress bar is
+   * indeterminate; this indicates that an activity is ongoing with no
+   * indication of how long it is expected to take. */
+  value: number,
+};
+
+Progress.defaultProps = {
+  label: {
+    value: undefined,
+    placement: 'left',
+  },
+  max: 1,
+  value: undefined,
+};
+
+export default Progress;

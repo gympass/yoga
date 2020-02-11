@@ -1,15 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Card, PlanCard, EventCard, GymCard, Button } from '@gympass/yoga';
 import { Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
-const StyledText = styled.Text`
-  font-size: 20px;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  text-align: center;
-`;
+import { DocTitle } from '../components';
 
 const CardPage = () => {
   return (
@@ -20,7 +14,7 @@ const CardPage = () => {
         padding: 10,
       }}
     >
-      <StyledText>Simple Card</StyledText>
+      <DocTitle>Simple Card</DocTitle>
 
       <ScrollView
         horizontal
@@ -98,7 +92,7 @@ const CardPage = () => {
         </Card>
       </ScrollView>
 
-      <StyledText>Plan Card</StyledText>
+      <DocTitle>Plan Card</DocTitle>
       <ScrollView
         horizontal
         contentContainerStyle={{
@@ -165,7 +159,7 @@ const CardPage = () => {
         </PlanCard>
       </ScrollView>
 
-      <StyledText>Event Card</StyledText>
+      <DocTitle>Event Card</DocTitle>
       <ScrollView
         horizontal
         contentContainerStyle={{
@@ -201,7 +195,7 @@ const CardPage = () => {
         />
       </ScrollView>
 
-      <StyledText>Check-in Card</StyledText>
+      <DocTitle>Check-in Card</DocTitle>
       <ScrollView
         horizontal
         contentContainerStyle={{

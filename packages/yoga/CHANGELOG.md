@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.9.1...@gympass/yoga@1.10.0) (2020-02-11)
+
+### Bug Fixes
+
+- **progress:** fix charLength import on native ([640ce4b](https://github.com/Gympass/yoga/commit/640ce4b0bc7873924d20f56db4199ffe24ba7fbd))
+- **progress:** fix lint -.-" ([4c6db15](https://github.com/Gympass/yoga/commit/4c6db15f6dcc77a88d198c48f6b367224ada568e))
+
+### Features
+
+- **progress:** new component: Progress (native) ([2e4f664](https://github.com/Gympass/yoga/commit/2e4f664b92301fd2034a5d1c72471b7c565b9298))
+- **progress:** new component: Progress (web) ([70d3ad1](https://github.com/Gympass/yoga/commit/70d3ad1059bb7c8add4db4bd321029d93d7b5530))
+
+## [1.9.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.9.0...@gympass/yoga@1.9.1) (2020-02-05)
+
+### Bug Fixes
+
+- **button:** fix the button border on Android ([2850745](https://github.com/Gympass/yoga/commit/2850745677aaac97b1160d51a218d35f2b62ea31))
+
 # [1.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.8.0...@gympass/yoga@1.9.0) (2020-01-21)
 
 ### Features

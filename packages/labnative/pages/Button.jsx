@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button } from '@gympass/yoga';
 
+import { DocTitle } from '../components';
+
 const ScrollView = styled.ScrollView`
   margin-bottom: 50px;
   padding: 10px;
@@ -13,16 +15,9 @@ const ButtonWrapper = styled.View`
   align-items: center;
 `;
 
-const StyledText = styled.Text`
-  font-size: 20px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-`;
-
 const ButtonPage = () => (
   <ScrollView>
-    <StyledText>Small Buttons</StyledText>
+    <DocTitle>Small Buttons</DocTitle>
     <ButtonWrapper>
       <Button small>Contained</Button>
     </ButtonWrapper>
@@ -33,7 +28,7 @@ const ButtonPage = () => (
       <Button.Text small>Text</Button.Text>
     </ButtonWrapper>
 
-    <StyledText>Contained Buttons</StyledText>
+    <DocTitle>Contained Buttons</DocTitle>
     <ButtonWrapper>
       <Button>Contained</Button>
     </ButtonWrapper>
@@ -49,7 +44,7 @@ const ButtonPage = () => (
       </Button>
     </ButtonWrapper>
 
-    <StyledText>Outline Buttons</StyledText>
+    <DocTitle>Outline Buttons</DocTitle>
     <ButtonWrapper>
       <Button.Outline>Outline</Button.Outline>
     </ButtonWrapper>
@@ -65,7 +60,7 @@ const ButtonPage = () => (
       </Button.Outline>
     </ButtonWrapper>
 
-    <StyledText>Link Buttons</StyledText>
+    <DocTitle>Link Buttons</DocTitle>
     <ButtonWrapper>
       <Button.Link>Link</Button.Link>
     </ButtonWrapper>
@@ -76,7 +71,7 @@ const ButtonPage = () => (
       <Button.Link disabled>Disabled</Button.Link>
     </ButtonWrapper>
 
-    <StyledText>Text Buttons</StyledText>
+    <DocTitle>Text Buttons</DocTitle>
     <ButtonWrapper>
       <Button.Text>Text</Button.Text>
     </ButtonWrapper>

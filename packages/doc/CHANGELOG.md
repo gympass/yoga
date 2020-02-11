@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.12.4...@gympass/yoga-doc@0.13.0) (2020-02-11)
+
+### Bug Fixes
+
+- **doc:** remove unnecessary padding from react-live ([c9d19af](https://github.com/Gympass/yoga/commit/c9d19afb0aae096729cf4df7eca256460685f14b))
+- **progress:** remove test from home >.< ([a3db54f](https://github.com/Gympass/yoga/commit/a3db54fcd85deadc69d06a78d0ecdb7e70939761))
+
+### Features
+
+- **progress:** new component: Progress (native) ([2e4f664](https://github.com/Gympass/yoga/commit/2e4f664b92301fd2034a5d1c72471b7c565b9298))
+- **progress:** new component: Progress (web) ([70d3ad1](https://github.com/Gympass/yoga/commit/70d3ad1059bb7c8add4db4bd321029d93d7b5530))
+
+## [0.12.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.12.3...@gympass/yoga-doc@0.12.4) (2020-02-10)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [0.12.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.12.2...@gympass/yoga-doc@0.12.3) (2020-02-07)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [0.12.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.12.1...@gympass/yoga-doc@0.12.2) (2020-02-05)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [0.12.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.12.0...@gympass/yoga-doc@0.12.1) (2020-02-04)
+
+### Bug Fixes
+
+- **doc:** fixing window object check for server side rendering ([d2a6181](https://github.com/Gympass/yoga/commit/d2a61818590224d77861a2c214b7f8c8b50534e8))
+
+# [0.12.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.11.0...@gympass/yoga-doc@0.12.0) (2020-02-04)
+
+### Bug Fixes
+
+- **doc:** fixing icon docs ([0066b02](https://github.com/Gympass/yoga/commit/0066b02885d6caaa2c26bdbcc019b9d7688b0ab0))
+- **doc:** fixing imports for web template ([750c034](https://github.com/Gympass/yoga/commit/750c034d5074650f7a1f6ce4bc91395fa1c856c8))
+- **doc:** fixing prism highlight pre indentation ([2c66ee2](https://github.com/Gympass/yoga/commit/2c66ee205b5302cdcdae3590e84d1e86f255f20d))
+- **doc:** not importing already imported components (cross-libraries) ([1854303](https://github.com/Gympass/yoga/commit/18543031b73d1444960af8f5f359d880de3d6455))
+- **doc:** removing unused props from reactLive component ([c6e3ed2](https://github.com/Gympass/yoga/commit/c6e3ed2c5ffb11209d1d4f9970c64fdf3e45cf06))
+- **doc:** text component hightlight sample ([c89731c](https://github.com/Gympass/yoga/commit/c89731cb8a4d5eda039b73595c0d8f3c7c9b9409))
+
+### Features
+
+- **doc:** codeblock now supports theming ([45a4596](https://github.com/Gympass/yoga/commit/45a4596a152b102c99adb5d4883ce8e8b14874ab))
+- **doc:** snackEmbed component ([7c3774e](https://github.com/Gympass/yoga/commit/7c3774e1c4ed84526ead2e576e8b934a1e074fb2))
+
 # [0.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.10.1...@gympass/yoga-doc@0.11.0) (2020-01-21)
 
 ### Features

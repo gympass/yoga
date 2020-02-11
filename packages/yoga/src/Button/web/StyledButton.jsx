@@ -15,68 +15,46 @@ const StyledButton = styled.button`
     theme: {
       yoga: {
         fonts,
-        components: {
-          button: {
-            padding: { left: paddingLeft, right: paddingRight },
-            height: { small: smallHeight, normal: normalHeight },
-            font: { size, weight },
-            border: {
-              small: { width: smallWidth },
-              default: { width: defaultWidth },
-              radius,
-            },
-            types: {
-              contained: {
-                backgroundColor: {
-                  disabled: disabledBackgroundColor,
-                  enabled: enabledBackgroundColor,
-                  pressed: pressedBackgroundColor,
-                },
-                textColor: {
-                  disabled: disabledTextColor,
-                  enabled: enabledTextColor,
-                  pressed: pressedTextColor,
-                },
-              },
-            },
-          },
-        },
+        components: { button },
       },
     },
   }) => `
       width: ${full ? '100%' : 'auto'};
-      height: ${small ? smallHeight : normalHeight}px;
-      padding-left: ${paddingLeft}px;
-      padding-right: ${paddingRight}px;
+      height: ${small ? button.height.small : button.height.default}px;
+      padding-left: ${button.padding.left}px;
+      padding-right: ${button.padding.right}px;
 
-      background-color: ${enabledBackgroundColor};
+      background-color: ${button.types.contained.backgroundColor.default};
       border: ${
-        small ? smallWidth : defaultWidth
-      }px solid ${enabledBackgroundColor};
-      border-radius: ${radius}px;
-      color: ${enabledTextColor};
+        small ? button.border.small.width : button.border.default.width
+      }px solid ${button.types.contained.backgroundColor.default};
+      border-radius: ${button.border.radius}px;
+      color: ${button.types.contained.font.default.color};
 
-      font-size: ${size}px;
-      font-weight: ${weight};
+      font-size: ${button.font.size}px;
+      font-weight: ${button.font.weight};
       font-family: ${fonts[0]};
       letter-spacing: normal;
       line-height: 1;
       text-decoration: none;
 
       &:not([disabled]):hover, &:not([disabled]):focus {
-        box-shadow: 0 4px 8px ${hexToRgb(enabledBackgroundColor, 0.45)};
+        box-shadow: 0 4px 8px ${hexToRgb(
+          button.types.contained.backgroundColor.default,
+          0.45,
+        )};
       }
 
       &:active {
-        background-color: ${pressedBackgroundColor};
-        border-color: ${pressedBackgroundColor};
-        color: ${pressedTextColor};
+        background-color: ${button.types.contained.backgroundColor.pressed};
+        border-color: ${button.types.contained.backgroundColor.pressed};
+        color: ${button.types.contained.font.pressed.color};
       }
 
       &:disabled {
-        background-color ${disabledBackgroundColor};
-        border-color: ${disabledBackgroundColor};
-        color: ${disabledTextColor};
+        background-color ${button.types.contained.backgroundColor.disabled};
+        border-color: ${button.types.contained.backgroundColor.disabled};
+        color: ${button.types.contained.font.disabled.color};
 
         cursor: not-allowed;
       }
@@ -84,18 +62,21 @@ const StyledButton = styled.button`
       ${
         inverted
           ? `
-        background-color: ${enabledTextColor};
-        border-color: ${enabledTextColor};
-        color: ${enabledBackgroundColor};
+        background-color: ${button.types.contained.font.default.color};
+        border-color: ${button.types.contained.font.default.color};
+        color: ${button.types.contained.backgroundColor.default};
 
         &:active {
-          background-color: ${enabledTextColor};
-          border-color: ${enabledTextColor};
-          color: ${pressedBackgroundColor};
+          background-color: ${button.types.contained.font.default.color};
+          border-color: ${button.types.contained.font.default.color};
+          color: ${button.types.contained.backgroundColor.pressed};
         }
 
         &:not([disabled]):hover, &:not([disabled]):focus {
-          box-shadow: 0 4px 8px ${hexToRgb(enabledTextColor, 0.45)};
+          box-shadow: 0 4px 8px ${hexToRgb(
+            button.types.contained.font.default.color,
+            0.45,
+          )};
         }
       `
           : ''

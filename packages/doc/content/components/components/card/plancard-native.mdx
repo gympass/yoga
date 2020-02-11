@@ -5,7 +5,23 @@ plan.
 
 ### Usage
 
-<ExpoSnack id="@gympass/yoga-plan-card" theme="light" />
+```javascript type=expo
+<PlanCard
+  ribbon={{
+    text: 'Tag Label',
+  }}
+>
+  <PlanCard.Content
+    title="Gympass Black for employees with Buddha Spa + Reebook included"
+    price="US$99.90"
+    period="/month"
+  />
+
+  <PlanCard.Actions>
+    <Button.Link variant="secondary">See gyms included</Button.Link>
+  </PlanCard.Actions>
+</PlanCard>
+```
 
 #### Props - PlanCard
 
