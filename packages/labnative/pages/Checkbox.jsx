@@ -3,13 +3,7 @@ import { View } from 'react-native';
 import { Checkbox } from '@gympass/yoga';
 import styled from 'styled-components';
 
-const StyledText = styled.Text`
-  margin-top: 20px;
-  margin-bottom: 10px;
-
-  font-size: 20px;
-  text-align: center;
-`;
+import { DocTitle } from '../components';
 
 const CheckboxWrapper = styled.View`
   flex-direction: row;
@@ -28,11 +22,11 @@ const CheckboxPage = () => {
         paddingBottom: 40,
       }}
     >
-      <StyledText>Disabled</StyledText>
+      <DocTitle>Disabled</DocTitle>
       <CheckboxWrapper>
         <Checkbox disabled label="Checkbox Label" helper="Checkbox Helper" />
       </CheckboxWrapper>
-      <StyledText>Unchecked</StyledText>
+      <DocTitle>Unchecked</DocTitle>
       <CheckboxWrapper>
         <Checkbox
           checked={false}
@@ -40,15 +34,15 @@ const CheckboxPage = () => {
           helper="Checkbox Helper"
         />
       </CheckboxWrapper>
-      <StyledText>Checked</StyledText>
+      <DocTitle>Checked</DocTitle>
       <CheckboxWrapper>
         <Checkbox checked label="Checkbox Label" helper="Checkbox Helper" />
       </CheckboxWrapper>
-      <StyledText>Error</StyledText>
+      <DocTitle>Error</DocTitle>
       <CheckboxWrapper>
         <Checkbox error label="Checkbox Label" helper="Checkbox Helper" />
       </CheckboxWrapper>
-      <StyledText>Working</StyledText>
+      <DocTitle>Working</DocTitle>
       <CheckboxWrapper>
         <Checkbox
           checked={checked}
