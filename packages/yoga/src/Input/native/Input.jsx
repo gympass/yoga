@@ -194,6 +194,7 @@ const Input = ({
   theme: {
     yoga: {
       colors,
+      transition,
       components: { input },
     },
   },
@@ -225,8 +226,8 @@ const Input = ({
   const animate = (animation, toValue) =>
     Animated.timing(animation, {
       toValue,
-      duration: 300,
-      easing: Easing.bezier(0, 0.75, 0.1, 1),
+      duration: transition.duration,
+      easing: Easing.bezier(...transition.timing[0]),
     }).start();
 
   useEffect(() => {

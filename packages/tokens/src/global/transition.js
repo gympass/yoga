@@ -14,15 +14,15 @@
  * @property {Array} timing
  */
 
-const duration = ['0.5s'];
-const timing = ['cubic-bezier(0, 0.75, 0.1, 1)'];
+const duration = [500];
+const timing = [[0, 0.75, 0.1, 1]];
 
 /**
  * @type {Transition}
  * @default
  */
 const transition = {
-  default: `all ${duration[0]} ${timing}`,
+  default: `all ${duration[0]} cubic-bezier(${timing[0].join(',')})`,
   duration,
   timing,
 };
