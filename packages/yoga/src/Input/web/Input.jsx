@@ -78,7 +78,7 @@ const Field = styled.input`
     height: ${input.height}px;
 
     padding-top: ${input.padding.top}px;
-    padding-right: ${ICON_SIZE + input.padding.right * 2}px;
+    padding-right: ${ICON_SIZE + input.padding.right}px;
     padding-bottom: ${input.padding.bottom}px;
     padding-left: ${input.padding.left}px;
 

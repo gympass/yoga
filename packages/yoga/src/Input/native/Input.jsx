@@ -54,9 +54,9 @@ const Field = styled.TextInput(
     ${
       disabled
         ? `
-      border-color: ${colors.disabled.background};
-      color: ${colors.disabled.background};
-    `
+          border-color: ${colors.disabled.background};
+          color: ${colors.disabled.background};
+        `
         : ''
     }
   `,
@@ -94,7 +94,6 @@ const Label = styled(Animated.Text)(
       },
     },
   }) => `
-    
     background-color: ${colors.gray.surface};
 
     font-weight: ${input.label.font.weight.default};
@@ -226,7 +225,7 @@ const Input = ({
   const animate = (animation, toValue) =>
     Animated.timing(animation, {
       toValue,
-      duration: transition.duration,
+      duration: transition.duration[0],
       easing: Easing.bezier(...transition.timing[0]),
     }).start();
 
