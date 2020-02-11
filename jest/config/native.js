@@ -16,6 +16,6 @@ module.exports = {
     '\\.svg$': '<rootDir>/../mock/svg.native.js',
   },
   transformIgnorePatterns: [
-    '/node_modules/(?!@ptomasroos/react-native-multi-slider|react-native|react-spring).+\\.js$',
+    '/node_modules/(?!@ptomasroos/react-native-multi-slider|react-native).+\\.js$',
   ],
 };
