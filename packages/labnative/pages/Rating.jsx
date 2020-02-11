@@ -3,18 +3,12 @@ import styled from 'styled-components';
 import { Rating } from '@gympass/yoga';
 import Svg, { Circle } from 'react-native-svg/lib/commonjs';
 
+import { DocTitle } from '../components';
+
 const ScrollView = styled.ScrollView`
   width: 100%;
   margin-bottom: 50px;
   padding: 10px;
-`;
-
-const StyledText = styled.Text`
-  margin-top: 20px;
-  margin-bottom: 10px;
-
-  font-size: 20px;
-  text-align: center;
 `;
 
 const CircleIcon = props => (
@@ -31,7 +25,7 @@ const ButtonPage = () => (
       justifyContent: 'center',
     }}
   >
-    <StyledText>Rating</StyledText>
+    <DocTitle>Rating</DocTitle>
 
     <Rating value={1} />
     <Rating value={1.5} />
@@ -42,7 +36,7 @@ const ButtonPage = () => (
     <Rating value={4} />
     <Rating value={4.5} />
 
-    <StyledText>Custom Icon</StyledText>
+    <DocTitle>Custom Icon</DocTitle>
 
     <Rating icon={CircleIcon} value={1} />
     <Rating icon={CircleIcon} value={1.5} />

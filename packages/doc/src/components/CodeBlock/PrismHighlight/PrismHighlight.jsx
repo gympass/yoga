@@ -37,9 +37,7 @@ const Pre = styled.pre`
       font-size: 12px;
     }
 
-    div pre {
-        padding: 0 !important;
-    }
+    
   `}
 `;
 

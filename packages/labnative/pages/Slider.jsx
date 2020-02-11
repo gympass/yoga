@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { ScrollView, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Slider } from '@gympass/yoga';
+
+import { DocTitle } from '../components';
 
 const StyledView = styled.View`
   margin-bottom: 30px;
@@ -23,7 +25,7 @@ const SliderPage = () => {
       }}
     >
       <StyledView>
-        <Text>Simple</Text>
+        <DocTitle>Simple</DocTitle>
         <Slider
           min={0}
           max={10}
@@ -34,7 +36,7 @@ const SliderPage = () => {
         />
       </StyledView>
       <StyledView>
-        <Text>With Tooltip</Text>
+        <DocTitle>With Tooltip</DocTitle>
         <Slider
           min={0}
           max={10}
@@ -53,7 +55,7 @@ const SliderPage = () => {
         />
       </StyledView>
       <StyledView>
-        <Text>Multi with min and max labels</Text>
+        <DocTitle>Multi with min and max labels</DocTitle>
         <Slider
           min={0}
           max={24}
@@ -67,7 +69,7 @@ const SliderPage = () => {
         />
       </StyledView>
       <StyledView>
-        <Text>Snapped</Text>
+        <DocTitle>Snapped</DocTitle>
         <Slider
           min={0}
           max={10}
@@ -79,7 +81,7 @@ const SliderPage = () => {
         />
       </StyledView>
       <StyledView>
-        <Text>Plans</Text>
+        <DocTitle>Plans</DocTitle>
         <Slider
           max={7}
           min={0}

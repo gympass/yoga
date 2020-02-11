@@ -9,7 +9,7 @@ const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
   const code = sampleCode.trim();
 
   const buildImportString = modules => {
-    const findComponents = /(?<=<)(\w*)(?=\s*?\/?>*)/gm;
+    const findComponents = /(?:<)(\w*)(?=\s*?\/?>*)/gm;
     const sortModules = /(@gympass\/yoga*)/gm;
     const imports = [];
 
@@ -17,7 +17,14 @@ const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
       .sort(a => (a.path.match(sortModules) ? -1 : 0))
       .forEach(({ name, path }) => {
         const moduleComponents = {
-          components: [...new Set(code.match(findComponents))]
+          components: [
+            ...new Set(
+              code
+                .match(findComponents)
+                .map(c => c.replace('<', ''))
+                .filter(c => c),
+            ),
+          ]
             .filter(importedComponent =>
               Object.keys(name).includes(importedComponent),
             )
@@ -45,7 +52,7 @@ const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
     { name: NativeComponents, path: 'react-native' },
   ];
 
-  const imports = buildImportString(packages);
+  const imports = type === 'highlight' ? [] : buildImportString(packages);
   const dependencies = Array.from(packages, ({ path }) => path);
   const codeblockData = {
     center,

@@ -1,0 +1,417 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Progress /> should match snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    align="left"
+    isNumber={false}
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F46152",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "NaN%",
+            },
+          ]
+        }
+        width={NaN}
+      />
+    </View>
+  </View>
+  <View
+    align="left"
+    isNumber={false}
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F46152",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "NaN%",
+            },
+          ]
+        }
+        width={NaN}
+      />
+    </View>
+  </View>
+  <View
+    align="left"
+    isNumber={false}
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F46152",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "60%",
+            },
+          ]
+        }
+        width={60}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Progress /> should match snapshot with label number 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F46152",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="right"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F46152",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "65%",
+            },
+          ]
+        }
+        width={65}
+      />
+    </View>
+    <Text
+      align="right"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontSize": 12,
+            "marginLeft": 8,
+            "textAlign": "right",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      65
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Progress /> should match snapshot with label string 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    align="left"
+    isNumber={false}
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F46152",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "NaN%",
+            },
+          ]
+        }
+        width={NaN}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={false}
+      style={
+        Array [
+          Object {
+            "fontSize": 12,
+            "marginTop": 4,
+            "textAlign": "left",
+          },
+        ]
+      }
+    >
+      Some decription here
+    </Text>
+  </View>
+  <View
+    align="right"
+    isNumber={false}
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F46152",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "65%",
+            },
+          ]
+        }
+        width={65}
+      />
+    </View>
+    <Text
+      align="right"
+      isNumber={false}
+      style={
+        Array [
+          Object {
+            "fontSize": 12,
+            "marginTop": 4,
+            "textAlign": "right",
+          },
+        ]
+      }
+    >
+      Some decription here
+    </Text>
+  </View>
+</View>
+`;
