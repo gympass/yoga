@@ -2,8 +2,8 @@
 
 exports[`<Progress /> should match snapshot 1`] = `
 .c1 {
-  border: none;
   width: 100%;
+  border: none;
   height: 8px;
 }
 
@@ -37,11 +37,11 @@ exports[`<Progress /> should match snapshot 1`] = `
 }
 
 .c0 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -52,8 +52,8 @@ exports[`<Progress /> should match snapshot 1`] = `
 }
 
 .c0 .c2 {
-  margin-top: 4px;
   max-width: 280px;
+  margin-top: 4px;
 }
 
 <div>
@@ -87,8 +87,8 @@ exports[`<Progress /> should match snapshot 1`] = `
 
 exports[`<Progress /> should match snapshot with label number 1`] = `
 .c2 {
-  border: none;
   width: 100%;
+  border: none;
   height: 8px;
 }
 
@@ -126,21 +126,21 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
 }
 
 .c6 .c3 {
-  margin-top: 4px;
   max-width: 280px;
+  margin-top: 4px;
 }
 
 .c7 .c3 {
-  margin-top: 4px;
   max-width: 280px;
+  margin-top: 4px;
 }
 
 .c0 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: flex-start;
   -webkit-box-align: flex-start;
   -ms-flex-align: flex-start;
@@ -160,11 +160,11 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
 }
 
 .c5 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-align-items: flex-end;
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
@@ -215,8 +215,8 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
 
 exports[`<Progress /> should match snapshot with label string 1`] = `
 .c1 {
-  border: none;
   width: 100%;
+  border: none;
   height: 8px;
 }
 
@@ -254,11 +254,11 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
 }
 
 .c0 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -269,16 +269,16 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
 }
 
 .c0 .c2 {
-  margin-top: 4px;
   max-width: 280px;
+  margin-top: 4px;
 }
 
 .c4 {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -290,8 +290,8 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
 }
 
 .c4 .c2 {
-  margin-top: 4px;
   max-width: 280px;
+  margin-top: 4px;
 }
 
 <div>
