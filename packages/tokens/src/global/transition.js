@@ -6,12 +6,19 @@
  */
 
 /**
+ * A timing
+ * @typedef Timing
+ *
+ * @type {Number[]}
+ */
+
+/**
  * A transition
  * @typedef Transition
  *
  * @type {Object}
- * @property {Array} duration
- * @property {Array} timing
+ * @property {Number[]} duration
+ * @property {Timing[]} timing
  */
 
 const duration = [500];
@@ -22,7 +29,6 @@ const timing = [[0, 0.75, 0.1, 1]];
  * @default
  */
 const transition = {
-  default: `all ${duration[0]} cubic-bezier(${timing[0].join(',')})`,
   duration,
   timing,
 };
