@@ -1,3 +1,3 @@
-import ThemeProvider from './web';
+import { ThemeProvider, FontLoader } from './web';
 
-export default ThemeProvider;
+export { ThemeProvider, FontLoader };

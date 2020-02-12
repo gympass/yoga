@@ -1,4 +1,4 @@
-import ThemeProvider, { themes } from './Theme';
+import ThemeProvider, { FontLoader, themes } from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -15,6 +15,7 @@ import Progress from './Progress';
 
 export {
   ThemeProvider,
+  FontLoader,
   themes,
   Button,
   List,
