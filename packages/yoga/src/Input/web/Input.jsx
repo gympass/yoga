@@ -66,8 +66,9 @@ const Field = styled.input`
   outline: none;
 
   ${({
-    typed,
+    cleanable,
     error,
+    typed,
     theme: {
       yoga: {
         colors,
@@ -75,10 +76,12 @@ const Field = styled.input`
       },
     },
   }) => css`
-    height: ${input.height}px;
+    height: 100%;
 
     padding-top: ${input.padding.top}px;
-    padding-right: ${ICON_SIZE + input.padding.right}px;
+    padding-right: ${
+      cleanable ? ICON_SIZE + input.padding.right : input.padding.right
+    }px;
     padding-bottom: ${input.padding.bottom}px;
     padding-left: ${input.padding.left}px;
 
@@ -159,6 +162,8 @@ const Wrapper = styled.div`
       },
     },
   }) => `
+    height: ${input.height}px;
+
     svg {
       position: absolute;
       top: 0;
