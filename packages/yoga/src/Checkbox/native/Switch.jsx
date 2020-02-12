@@ -7,18 +7,7 @@ const SwitchTrack = styled.View`
   ${({
     theme: {
       yoga: {
-        components: {
-          switch: {
-            track: {
-              width: trackWidth,
-              height: trackHeight,
-              radii: trackRadii,
-              backgroundColor: trackBackgroundColor,
-              checked: { backgroundColor: checkedBackgroundColor },
-              disabled: { backgroundColor: disabledBackgroundColor },
-            },
-          },
-        },
+        components: { checkboxSwitch },
       },
     },
     checked,
@@ -27,17 +16,19 @@ const SwitchTrack = styled.View`
     `
     display: flex;
     justify-content: center;
-    width: ${trackWidth}px;
-    height: ${trackHeight}px;
-    borderRadius: ${trackRadii}px;
+    width: ${checkboxSwitch.track.width}px;
+    height: ${checkboxSwitch.track.height}px;
+    borderRadius: ${checkboxSwitch.track.radii}px;
     background-color: ${
-      checked ? checkedBackgroundColor : trackBackgroundColor
+      checked
+        ? checkboxSwitch.track.checked.backgroundColor
+        : checkboxSwitch.track.backgroundColor
     };
 
     ${
       disabled
         ? `
-        background-color: ${disabledBackgroundColor};`
+        background-color: ${checkboxSwitch.track.disabled.backgroundColor};`
         : ''
     }
   `};
@@ -47,31 +38,21 @@ const SwitchThumb = styled.View`
   ${({
     theme: {
       yoga: {
-        components: {
-          switch: {
-            thumb: {
-              width: thumbWidth,
-              height: thumbHeight,
-              radii: thumbRadii,
-              backgroundColor: thumbBackgroundColor,
-              disabled: { backgroundColor: disabledBackgroundColor },
-            },
-          },
-        },
+        components: { checkboxSwitch },
       },
     },
     disabled,
   }) =>
     `
-  width: ${thumbWidth}px;
-  height: ${thumbHeight}px;
-  border-radius: ${thumbRadii};
-  background-color: ${thumbBackgroundColor};
+  width: ${checkboxSwitch.thumb.width}px;
+  height: ${checkboxSwitch.thumb.height}px;
+  border-radius: ${checkboxSwitch.thumb.radii};
+  background-color: ${checkboxSwitch.thumb.backgroundColor};
 
   ${
     disabled
       ? `
-      background-color: ${disabledBackgroundColor};`
+      background-color: ${checkboxSwitch.thumb.disabled.backgroundColor};`
       : ``
   }
 `};
@@ -82,24 +63,18 @@ const CheckboxSwitch = ({
   disabled,
   theme: {
     yoga: {
-      components: {
-        switch: {
-          track: {
-            width: trackWidth,
-            backgroundColor: trackBackgroundColor,
-            checked: { backgroundColor: checkedBackgroundColor },
-          },
-          thumb: { width: thumbWidth, left: thumbLeft },
-        },
-      },
+      components: { checkboxSwitch },
     },
   },
   onChange,
   ...rest
 }) => {
   const [thumbPosition] = useState(new Animated.Value(checked));
-  const thumbTo = trackWidth - thumbWidth - thumbLeft;
-  const thumbFrom = thumbLeft;
+  const thumbTo =
+    checkboxSwitch.track.width -
+    checkboxSwitch.thumb.width -
+    checkboxSwitch.thumb.left;
+  const thumbFrom = checkboxSwitch.thumb.left;
 
   useEffect(() => {
     const toggle = (isChecked, position) => {
@@ -120,14 +95,17 @@ const CheckboxSwitch = ({
         checked={checked}
         disabled={disabled}
         as={Animated.View}
-        style={{
-          backgroundColor:
-            !disabled &&
-            thumbPosition.interpolate({
+        style={
+          !disabled && {
+            backgroundColor: thumbPosition.interpolate({
               inputRange: [0, 1],
-              outputRange: [checkedBackgroundColor, trackBackgroundColor],
+              outputRange: [
+                checkboxSwitch.track.checked.backgroundColor,
+                checkboxSwitch.track.backgroundColor,
+              ],
             }),
-        }}
+          }
+        }
         {...rest}
       >
         <SwitchThumb

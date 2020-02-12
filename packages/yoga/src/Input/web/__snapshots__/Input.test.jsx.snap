@@ -1,0 +1,1015 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> Snapshots should match with default input 1`] = `
+.c4 {
+  position: absolute;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 24px;
+  left: 16px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9898A6;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
+  color: #41414A;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c2:focus {
+  color: #41414A;
+  border-color: #41414A;
+}
+
+.c2:focus + .c3 {
+  top: 0;
+  left: 14px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-weight: 700;
+  color: #41414A;
+}
+
+.c2:focus,
+.c2:hover {
+  border-color: #41414A;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2[type="number"]::-webkit-outer-spin-button,
+.c2[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c0 svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 52px;
+  fill: #9898A6;
+  outline: none;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.c0 svg:hover,
+.c0 svg:focus {
+  fill: #41414A;
+}
+
+.c0,
+.c0 .c1 {
+  width: 312px;
+}
+
+.c0 .c5 {
+  color: #9898A6;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      class="c1 c2"
+      value=""
+    />
+    <label
+      class="c3 c4"
+    >
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`<Input /> Snapshots should match with disabled input 1`] = `
+.c4 {
+  position: absolute;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 24px;
+  left: 16px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9898A6;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
+  color: #41414A;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c2:focus {
+  color: #41414A;
+  border-color: #41414A;
+}
+
+.c2:focus + .c3 {
+  top: 0;
+  left: 14px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-weight: 700;
+  color: #41414A;
+}
+
+.c2:focus,
+.c2:hover {
+  border-color: #41414A;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2[type="number"]::-webkit-outer-spin-button,
+.c2[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c5,
+.c5 .c1 {
+  width: 312px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c0 svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 52px;
+  fill: #9898A6;
+  outline: none;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.c0 svg:hover,
+.c0 svg:focus {
+  fill: #41414A;
+}
+
+.c0,
+.c0 .c1 {
+  width: 312px;
+}
+
+.c0 .c6 {
+  color: #9898A6;
+}
+
+.c0 svg {
+  fill: #D3D3E2;
+  pointer-events: none;
+}
+
+.c0 .c3,
+.c0 .c6 {
+  color: #D3D3E2;
+}
+
+.c0 .c1 {
+  border-color: #D3D3E2;
+  color: #D3D3E2;
+}
+
+<div>
+  <div
+    class="c0"
+    disabled=""
+  >
+    <input
+      class="c1 c2"
+      disabled=""
+      value=""
+    />
+    <label
+      class="c3 c4"
+    >
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`<Input /> Snapshots should match with error 1`] = `
+.c4 {
+  position: absolute;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 24px;
+  left: 16px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9898A6;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+}
+
+.c8:focus + .c3 {
+  top: 0;
+  left: 14px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-weight: 700;
+  color: #41414A;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
+  color: #41414A;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c2:focus {
+  color: #41414A;
+  border-color: #41414A;
+}
+
+.c2:focus + .c3 {
+  top: 0;
+  left: 14px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-weight: 700;
+  color: #CB3530;
+}
+
+.c2:focus,
+.c2:hover {
+  border-color: #41414A;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2[type="number"]::-webkit-outer-spin-button,
+.c2[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4px;
+}
+
+.c9,
+.c9 .c1 {
+  width: 312px;
+}
+
+.c9 .c5 {
+  color: #9898A6;
+}
+
+.c10,
+.c10 .c1 {
+  width: 312px;
+}
+
+.c10 .c5 {
+  color: #9898A6;
+}
+
+.c10 .c3,
+.c10 .c5 {
+  color: #D3D3E2;
+}
+
+.c10 .c1 {
+  border-color: #D3D3E2;
+  color: #D3D3E2;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c0 svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 52px;
+  fill: #9898A6;
+  outline: none;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.c0 svg:hover,
+.c0 svg:focus {
+  fill: #41414A;
+}
+
+.c0,
+.c0 .c1 {
+  width: 312px;
+}
+
+.c0 .c3,
+.c0 .c5 {
+  color: #CB3530;
+}
+
+.c0 .c1 {
+  border-color: #CB3530;
+}
+
+.c7 {
+  font-size: 12px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      class="c1 c2"
+      value=""
+    />
+    <label
+      class="c3 c4"
+    >
+      Label
+    </label>
+    <div
+      class="c5 c6"
+    >
+      <span
+        class="c7"
+      >
+        Error message
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Input /> Snapshots should match with full width 1`] = `
+.c4 {
+  position: absolute;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 24px;
+  left: 16px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9898A6;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
+  color: #41414A;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c2:focus {
+  color: #41414A;
+  border-color: #41414A;
+}
+
+.c2:focus + .c3 {
+  top: 0;
+  left: 14px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-weight: 700;
+  color: #41414A;
+}
+
+.c2:focus,
+.c2:hover {
+  border-color: #41414A;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2[type="number"]::-webkit-outer-spin-button,
+.c2[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c5:focus + .c3 {
+  top: 0;
+  left: 14px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-weight: 700;
+  color: #CB3530;
+}
+
+.c6,
+.c6 .c1 {
+  width: 312px;
+}
+
+.c7,
+.c7 .c1 {
+  width: 312px;
+}
+
+.c7 .c3,
+.c7 .c9 {
+  color: #D3D3E2;
+}
+
+.c7 .c1 {
+  border-color: #D3D3E2;
+  color: #D3D3E2;
+}
+
+.c8,
+.c8 .c1 {
+  width: 312px;
+}
+
+.c8 .c3,
+.c8 .c9 {
+  color: #CB3530;
+}
+
+.c8 .c1 {
+  border-color: #CB3530;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c0 svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 52px;
+  fill: #9898A6;
+  outline: none;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.c0 svg:hover,
+.c0 svg:focus {
+  fill: #41414A;
+}
+
+.c0,
+.c0 .c1 {
+  width: 100%;
+}
+
+.c0 .c9 {
+  color: #9898A6;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      class="c1 c2"
+      value=""
+    />
+    <label
+      class="c3 c4"
+    >
+      Label
+    </label>
+  </div>
+</div>
+`;
+
+exports[`<Input /> Snapshots should match with helper text and max length 1`] = `
+.c4 {
+  position: absolute;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 24px;
+  left: 16px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9898A6;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
+  color: #41414A;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c2:focus {
+  color: #41414A;
+  border-color: #41414A;
+}
+
+.c2:focus + .c3 {
+  top: 0;
+  left: 14px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-weight: 700;
+  color: #41414A;
+}
+
+.c2:focus,
+.c2:hover {
+  border-color: #41414A;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2[type="number"]::-webkit-outer-spin-button,
+.c2[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c9:focus + .c3 {
+  top: 0;
+  left: 14px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-weight: 700;
+  color: #CB3530;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4px;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c0 svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 52px;
+  fill: #9898A6;
+  outline: none;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.c0 svg:hover,
+.c0 svg:focus {
+  fill: #41414A;
+}
+
+.c0,
+.c0 .c1 {
+  width: 312px;
+}
+
+.c0 .c5 {
+  color: #9898A6;
+}
+
+.c10,
+.c10 .c1 {
+  width: 312px;
+}
+
+.c10 .c5 {
+  color: #9898A6;
+}
+
+.c10 .c3,
+.c10 .c5 {
+  color: #D3D3E2;
+}
+
+.c10 .c1 {
+  border-color: #D3D3E2;
+  color: #D3D3E2;
+}
+
+.c11,
+.c11 .c1 {
+  width: 312px;
+}
+
+.c11 .c3,
+.c11 .c5 {
+  color: #CB3530;
+}
+
+.c11 .c1 {
+  border-color: #CB3530;
+}
+
+.c7 {
+  font-size: 12px;
+}
+
+.c8 {
+  font-size: 12px;
+  margin-left: auto;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      class="c1 c2"
+      maxlength="20"
+      value=""
+    />
+    <label
+      class="c3 c4"
+    >
+      Label
+    </label>
+    <div
+      class="c5 c6"
+    >
+      <span
+        class="c7"
+      >
+        Helper text
+      </span>
+      <span
+        class="c8"
+      >
+        0
+        /
+        20
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Input /> Snapshots should match with label 1`] = `
+.c4 {
+  position: absolute;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 24px;
+  left: 16px;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9898A6;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
+  color: #41414A;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c2:focus {
+  color: #41414A;
+  border-color: #41414A;
+}
+
+.c2:focus + .c3 {
+  top: 0;
+  left: 14px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 12px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-weight: 700;
+  color: #41414A;
+}
+
+.c2:focus,
+.c2:hover {
+  border-color: #41414A;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2[type="number"]::-webkit-outer-spin-button,
+.c2[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c0 {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.c0 svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 52px;
+  fill: #9898A6;
+  outline: none;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+.c0 svg:hover,
+.c0 svg:focus {
+  fill: #41414A;
+}
+
+.c0,
+.c0 .c1 {
+  width: 312px;
+}
+
+.c0 .c5 {
+  color: #9898A6;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <input
+      class="c1 c2"
+      value=""
+    />
+    <label
+      class="c3 c4"
+    >
+      Input
+    </label>
+  </div>
+</div>
+`;

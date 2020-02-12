@@ -1,6 +1,7 @@
 import tokens from '@gympass/yoga-tokens';
 
 import {
+  input,
   progress,
   stepper,
   slider,
@@ -22,7 +23,7 @@ const {
   radii,
   fontSizes,
   fontWeights,
-  transitions,
+  transition,
   elevations,
   colors: tokenColors,
   borders,
@@ -44,17 +45,34 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     negative: tokenColors.negative,
     informative: tokenColors.informative,
     warning: tokenColors.warning,
+    disabled: {
+      background: tokenColors.gray[4],
+      content: tokenColors.gray[7],
+    },
   };
+
+  [
+    colors.gray.surface,
+    colors.gray.background,
+    ,
+    ,
+    ,
+    ,
+    ,
+    colors.gray.medium,
+    colors.gray.dark,
+    colors.gray.darker,
+  ] = colors.gray;
 
   const components = {
     stepper: stepper({ colors, spacing, fontWeights, radii }),
     slider: slider({ colors, radii, elevations, spacing, fontWeights }),
     list: list({ spacing, borders, colors }),
     button: button({ spacing, fontSizes, borders, radii, colors, fontWeights }),
-    switch: checkboxswitch({
+    checkboxSwitch: checkboxswitch({
       colors,
       radii,
-      transitions,
+      transition,
       spacing,
       elevations,
     }),
@@ -73,6 +91,14 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     rating: rating({ spacing, tokenColors }),
     tag: tag({ spacing, fontSizes, fontWeights, radii }),
     progress: progress({ spacing, colors, radii, fontSizes }),
+    input: input({
+      borders,
+      spacing,
+      colors,
+      radii,
+      fontSizes,
+      fontWeights,
+    }),
   };
 
   return {
@@ -83,6 +109,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     spacing,
     fonts,
     breakpoints,
+    transition,
   };
 };
 

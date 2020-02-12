@@ -2,7 +2,6 @@ import React from 'react';
 import { bool, func } from 'prop-types';
 import styled, { css } from 'styled-components';
 
-/** This is a Switch description */
 const SwitchInput = styled.input`
   position: absolute;
 
@@ -30,39 +29,28 @@ const SwitchTrack = styled.label`
   ${({
     theme: {
       yoga: {
-        components: {
-          switch: {
-            track: {
-              width: trackWidth,
-              height: trackHeight,
-              radii: trackRadii,
-              backgroundColor: trackBackgroundColor,
-              transition: { duration: trackTransitionAnimation },
-              checked: { backgroundColor: checkedBackgroundColor },
-              disabled: { backgroundColor: disabledBackgroundColor },
-            },
-          },
-        },
+        components: { checkboxSwitch },
       },
     },
     checked,
     disabled,
   }) =>
     css`
-      width: ${trackWidth}px;
-      height: ${trackHeight}px;
+      width: ${checkboxSwitch.track.width}px;
+      height: ${checkboxSwitch.track.height}px;
 
       background-color: ${checked
-        ? checkedBackgroundColor
-        : trackBackgroundColor};
+        ? checkboxSwitch.track.checked.backgroundColor
+        : checkboxSwitch.track.backgroundColor};
 
-      border-radius: ${trackRadii}px;
+      border-radius: ${checkboxSwitch.track.radii}px;
 
-      transition: background-color ${trackTransitionAnimation};
+      transition-property: background-color;
+      transition-duration: 300ms;
 
       ${disabled
         ? css`
-            background-color: ${disabledBackgroundColor};
+            background-color: ${checkboxSwitch.track.disabled.backgroundColor};
             cursor: not-allowed;
           `
         : ''}
@@ -77,23 +65,7 @@ const SwitchThumb = styled.span`
   ${({
     theme: {
       yoga: {
-        components: {
-          switch: {
-            thumb: {
-              width: thumbWidth,
-              height: thumbHeight,
-              left: thumbLeft,
-              radii: thumbRadii,
-              backgroundColor: thumbBackgroundColor,
-              transition: { duration: thumbTransitionAnimation },
-              disabled: { backgroundColor: disabledBackgroundColor },
-            },
-            focus: {
-              checked: { backgroundColor: focusCheckedBackgroundColor },
-              disabled: { backgroundColor: focusDisabledBackgroundColor },
-            },
-          },
-        },
+        components: { checkboxSwitch },
         spacing,
       },
     },
@@ -101,25 +73,27 @@ const SwitchThumb = styled.span`
     disabled,
   }) =>
     css`
-      left: ${thumbLeft}px;
+      left: ${checkboxSwitch.thumb.left}px;
 
-      width: ${thumbWidth}px;
-      height: ${thumbHeight}px;
+      width: ${checkboxSwitch.thumb.width}px;
+      height: ${checkboxSwitch.thumb.height}px;
 
-      background-color: ${thumbBackgroundColor};
-      border-radius: ${thumbRadii}px;
+      background-color: ${checkboxSwitch.thumb.backgroundColor};
+      border-radius: ${checkboxSwitch.thumb.radii}px;
 
-      transition: ${thumbTransitionAnimation};
+      transition-property: left, transform;
+      transition-duration: 300ms;
+      transition-timing-function: ease;
 
       ${checked
         ? css`
-            left: calc(100% - ${thumbLeft}px);
+            left: calc(100% - ${checkboxSwitch.thumb.left}px);
             transform: translateX(-100%);
           `
         : ''}
       ${disabled
         ? css`
-            background-color: ${disabledBackgroundColor};
+            background-color: ${checkboxSwitch.thumb.disabled.backgroundColor};
             cursor: not-allowed;
           `
         : css`
@@ -127,8 +101,8 @@ const SwitchThumb = styled.span`
             ${SwitchInput}:hover + & {
               box-shadow: 0 0 0 ${spacing.xsmall}px
                 ${checked
-                  ? focusCheckedBackgroundColor
-                  : focusDisabledBackgroundColor};
+                  ? checkboxSwitch.focus.checked.backgroundColor
+                  : checkboxSwitch.focus.disabled.backgroundColor};
             }
           `}
     `};
