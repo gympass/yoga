@@ -14,7 +14,7 @@ const StyledButton = styled.button`
     inverted,
     theme: {
       yoga: {
-        fonts,
+        baseFont,
         components: { button },
       },
     },
@@ -33,7 +33,7 @@ const StyledButton = styled.button`
 
       font-size: ${button.font.size}px;
       font-weight: ${button.font.weight};
-      font-family: ${fonts[0]};
+      font-family: ${baseFont.family};
       letter-spacing: normal;
       line-height: 1;
       text-decoration: none;

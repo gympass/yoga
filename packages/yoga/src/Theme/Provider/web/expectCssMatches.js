@@ -3,7 +3,6 @@ const normalizeCSS = rule =>
   rule
     .join('\n')
     .replace(/(?:\r\n|\r|\n)/g, '')
-    .replace(/\/\*.*\*\//g, '')
     .replace(/ {\s+/g, '{')
     .replace(/\s+ }/g, '}')
     .replace(/,\s+/g, ',')
