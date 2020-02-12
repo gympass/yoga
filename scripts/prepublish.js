@@ -15,7 +15,7 @@ const copyFile = file => {
 };
 
 const createPackageJson = () => {
-  const { scripts, devDependencies, ...packageDataOther } = pkg;
+  const { scripts, ...packageDataOther } = pkg;
 
   const newPackageData = {
     ...packageDataOther,
