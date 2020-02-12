@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.13.0...@gympass/yoga-doc@0.13.1) (2020-02-12)
+
+### Bug Fixes
+
+- **doc:** fix gatsby build ([41a5eff](https://github.com/Gympass/yoga/commit/41a5eff095277c39492241ca2b07e1cd087cc5c4))
+
 # [0.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.12.4...@gympass/yoga-doc@0.13.0) (2020-02-11)
 
 ### Bug Fixes
