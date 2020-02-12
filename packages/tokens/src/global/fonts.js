@@ -8,14 +8,21 @@
 /**
  * A font
  * @typedef Font
- * @type {String[]}
- * @desc Array that contains all font families.
+ *
+ * @type {Object}
+ * @property {String} openSans - Open Sans
  */
 
 /**
  * @type {Font}
  * @default
  */
-const fonts = ['Open Sans'];
+const fonts = [
+  {
+    family: 'Open Sans',
+    weight: [400, 600, 700, '400i', '600i', '700i'],
+  },
+];
+[fonts.openSans] = fonts;
 
 export default fonts;

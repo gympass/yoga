@@ -16,7 +16,7 @@ const {
 } = tokens;
 
 const BaseTheme = ({ primary, secondary, tertiary }) => {
-  const [baseFontFamily] = fonts;
+  const baseFont = fonts.openSans;
   const baseFontSize = fontSizes.medium;
   const colors = {
     primary,
@@ -544,7 +544,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
 
   return {
     components,
-    baseFontFamily,
+    baseFont,
     baseFontSize,
     fontWeights,
     colors,

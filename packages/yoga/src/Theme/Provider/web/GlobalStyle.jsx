@@ -3,32 +3,30 @@ import GoogleFontLoader from 'react-google-font-loader';
 import { createGlobalStyle, withTheme } from 'styled-components';
 
 const Global = createGlobalStyle`
-  ${({
-    theme: {
-      yoga: { baseFontFamily },
-    },
-  }) => `
+  ${({ fontFamily }) => `
     body {
-      font-family: "${baseFontFamily}";
+      font-family: "${fontFamily}";
     }
   `}
 `;
 
 const GlobalStyle = ({
   theme: {
-    yoga: { baseFontFamily, fontWeights },
+    yoga: {
+      baseFont: { family, weight },
+    },
   },
 }) => (
   <>
     <GoogleFontLoader
       fonts={[
         {
-          font: baseFontFamily,
-          weights: [...fontWeights],
+          font: family,
+          weights: [...weight],
         },
       ]}
     />
-    <Global />
+    <Global fontFamily={family} />
   </>
 );
 
