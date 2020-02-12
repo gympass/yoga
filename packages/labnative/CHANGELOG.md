@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.10.0...@gympass/yoga-labnative@0.11.0) (2020-02-12)
+
+### Features
+
+- **input:** create input component to native platform ([9e7f960](https://github.com/Gympass/yoga/commit/9e7f9603cf9e9427626caf4fde7f90fc1b69d147))
+- **input:** create tel, number and email inputs on native ([6e39b31](https://github.com/Gympass/yoga/commit/6e39b31dfe5987ffb436990c15bd80bde5e21d74))
+- **input:** input as compound ([9e56753](https://github.com/Gympass/yoga/commit/9e567538253fe6281f70dc9526f686dc41bbeebf))
+- **input:** input component to native environment ([4441c13](https://github.com/Gympass/yoga/commit/4441c137a6fb1a3be8d3afced17e33b5c0bdbdc9))
+
 # [0.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.9.1...@gympass/yoga-labnative@0.10.0) (2020-02-11)
 
 ### Features

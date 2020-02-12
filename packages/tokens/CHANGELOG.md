@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.3.0...@gympass/yoga-tokens@0.4.0) (2020-02-12)
+
+### Features
+
+- **input:** input as compound ([9e56753](https://github.com/Gympass/yoga/commit/9e567538253fe6281f70dc9526f686dc41bbeebf))
+
 # [0.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.2.5...@gympass/yoga-tokens@0.3.0) (2019-12-27)
 
 ### Features

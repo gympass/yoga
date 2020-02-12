@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.4.0...@gympass/yoga-icons@0.5.0) (2020-02-12)
+
+### Bug Fixes
+
+- **icons:** change visibility_off svg name to lowercase ([b5a192e](https://github.com/Gympass/yoga/commit/b5a192ebabe38066eb377810de6dfd50de51da5e))
+
+### Features
+
+- **animation:** create new yoga package: animations ([de00e30](https://github.com/Gympass/yoga/commit/de00e30c6344e80866ccefbe53bdf81462386fca))
+- **input:** input as compound ([9e56753](https://github.com/Gympass/yoga/commit/9e567538253fe6281f70dc9526f686dc41bbeebf))
+
 # [0.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.3.0...@gympass/yoga-icons@0.4.0) (2020-01-21)
 
 ### Features

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.13.1...@gympass/yoga-doc@0.14.0) (2020-02-12)
+
+### Features
+
+- **input:** input as compound ([9e56753](https://github.com/Gympass/yoga/commit/9e567538253fe6281f70dc9526f686dc41bbeebf))
+
 ## [0.13.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.13.0...@gympass/yoga-doc@0.13.1) (2020-02-12)
 
 ### Bug Fixes
