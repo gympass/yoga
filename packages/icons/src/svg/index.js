@@ -4,7 +4,7 @@ import Building from './building.svg';
 import TriangleAlert from './triangle_alert.svg';
 import Close from './close.svg';
 import Visibility from './visibility.svg';
-import VisibilityOff from './Visibility_off.svg';
+import VisibilityOff from './visibility_off.svg';
 
 export {
   Star,
