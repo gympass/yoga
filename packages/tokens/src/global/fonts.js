@@ -10,12 +10,12 @@
  * @typedef Font
  *
  * @type {Object}
- * @property {String} openSans - Open Sans
+ * @property {String} family
+ * @property {Array<Number|String>} weight
  */
 
 /**
- * @type {Font}
- * @default
+ * @type {Font[]}
  */
 const fonts = [
   {
