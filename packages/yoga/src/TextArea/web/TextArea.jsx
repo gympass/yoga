@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string } from 'prop-types';
+import { string, bool, number, func, shape } from 'prop-types';
 
 import Input from '../../Input';
 
@@ -42,11 +42,33 @@ const TextArea = ({ label, ...props }) => (
 );
 
 TextArea.propTypes = {
+  className: string,
+  disabled: bool,
+  error: string,
+  full: bool,
+  /** A helper text to be displayed below field */
+  helper: string,
   label: string,
+  /** maximum length (number of characters) of value */
+  maxLength: number,
+  readOnly: bool,
+  style: shape({}),
+  value: string,
+  onChange: func,
 };
 
 TextArea.defaultProps = {
-  label: '',
+  className: undefined,
+  disabled: false,
+  error: undefined,
+  full: false,
+  helper: undefined,
+  label: 'Label',
+  maxLength: undefined,
+  readOnly: false,
+  style: undefined,
+  value: undefined,
+  onChange: () => {},
 };
 
 export default TextArea;

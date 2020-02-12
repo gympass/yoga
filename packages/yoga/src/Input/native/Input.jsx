@@ -20,6 +20,7 @@ const Wrapper = styled.View(
 
 const Field = styled.TextInput(
   ({
+    cleanable,
     disabled,
     error,
     focus,
@@ -36,7 +37,9 @@ const Field = styled.TextInput(
     height: ${input.height}px;
 
     padding-top: ${input.padding.top}px;
-    padding-right: ${input.padding.right * 2}px;
+    padding-right: ${
+      cleanable ? input.padding.right * 2 : input.padding.right
+    }px;
     padding-bottom: ${input.padding.bottom}px;
     padding-left: ${input.padding.left}px;
 
