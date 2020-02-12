@@ -93,7 +93,11 @@ const Tokens = ({ data, example }) => (
           <tr key={token.id}>
             <td>{token.key}</td>
             <td>{token.alias}</td>
-            <td>{token.value}</td>
+            <td>
+              {typeof token.value === 'string'
+                ? token.value
+                : JSON.stringify(token.value)}
+            </td>
             {example && (
               <td>
                 <Example

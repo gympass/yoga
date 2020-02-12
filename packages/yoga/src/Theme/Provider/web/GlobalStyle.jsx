@@ -1,16 +1,33 @@
-import { createGlobalStyle } from 'styled-components';
+import React from 'react';
+import GoogleFontLoader from 'react-google-font-loader';
+import { createGlobalStyle, withTheme } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
-  ${({
-    theme: {
-      yoga: { baseFontFamily },
-    },
-  }) => `
-    @import url(https://fonts.googleapis.com/css?family=${baseFontFamily}:400,600,700,400i,600i,700i&display=swap);
+const Global = createGlobalStyle`
+  ${({ fontFamily }) => `
     body {
-      font-family: ${baseFontFamily};
+      font-family: "${fontFamily}";
     }
   `}
 `;
 
-export default GlobalStyle;
+const GlobalStyle = ({
+  theme: {
+    yoga: {
+      baseFont: { family, weight },
+    },
+  },
+}) => (
+  <>
+    <GoogleFontLoader
+      fonts={[
+        {
+          font: family,
+          weights: [...weight],
+        },
+      ]}
+    />
+    <Global fontFamily={family} />
+  </>
+);
+
+export default withTheme(GlobalStyle);
