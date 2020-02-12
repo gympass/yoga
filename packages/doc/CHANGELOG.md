@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.14.0...@gympass/yoga-doc@0.14.1) (2020-02-12)
+
+### Bug Fixes
+
+- **docs:** fix input/button imports on mdx files ([d5101eb](https://github.com/Gympass/yoga/commit/d5101ebf1ffb5a8ef7e6ded68d0959b7a38d8e1f))
+
 # [0.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.13.1...@gympass/yoga-doc@0.14.0) (2020-02-12)
 
 ### Features
