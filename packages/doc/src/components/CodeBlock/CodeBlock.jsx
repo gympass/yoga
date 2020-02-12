@@ -12,6 +12,7 @@ const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
     const findComponents = /(?:<)(\w*)(?=\s*?\/?>*)/gm;
     const sortModules = /(@gympass\/yoga*)/gm;
     const imports = [];
+    const foundComponents = code.match(findComponents) || [];
 
     modules
       .sort(a => (a.path.match(sortModules) ? -1 : 0))
@@ -19,10 +20,7 @@ const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
         const moduleComponents = {
           components: [
             ...new Set(
-              code
-                .match(findComponents)
-                .map(c => c.replace('<', ''))
-                .filter(c => c),
+              foundComponents.map(c => c.replace('<', '')).filter(c => c),
             ),
           ]
             .filter(importedComponent =>
