@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.11.0...@gympass/yoga@1.11.1) (2020-02-12)
+
+### Bug Fixes
+
+- **theme:** adjusting font import in web global style ([e6d4309](https://github.com/Gympass/yoga/commit/e6d4309e0e6fdbd3e0da980c5d4fbfcf0959eb9b))
+
 # [1.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.10.0...@gympass/yoga@1.11.0) (2020-02-12)
 
 ### Bug Fixes
