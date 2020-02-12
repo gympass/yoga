@@ -110,6 +110,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     fonts,
     breakpoints,
     transition,
+    radii,
   };
 };
 
