@@ -3,7 +3,7 @@ import { hexToRgb } from '@gympass/yoga-common';
 const checkboxswitch = ({
   colors,
   radii,
-  transitions,
+  transition,
   spacing,
   elevations,
 }) => ({
@@ -13,7 +13,7 @@ const checkboxswitch = ({
     backgroundColor: colors.gray[3],
     radii: radii.circle,
     transition: {
-      duration: transitions.duration,
+      duration: transition.duration[0],
     },
     checked: {
       backgroundColor: colors.primary[3],
@@ -30,7 +30,7 @@ const checkboxswitch = ({
     backgroundColor: colors.white,
     shadow: elevations.small,
     transition: {
-      duration: transitions.duration,
+      duration: transition.duration[0],
     },
     checked: {
       backgroundColor: colors.primary[3],

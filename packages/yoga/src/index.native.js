@@ -9,6 +9,7 @@ import Stepper from './Stepper';
 import Text from './Text';
 import Rating from './Rating';
 import Tag from './Tag';
+import Input from './Input';
 import Progress from './Progress';
 
 export {
@@ -27,5 +28,6 @@ export {
   Text,
   Rating,
   Tag,
+  Input,
   Progress,
 };

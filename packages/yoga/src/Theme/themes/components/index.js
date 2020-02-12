@@ -1,3 +1,4 @@
+import input from './input';
 import progress from './progress';
 import stepper from './stepper';
 import slider from './slider';
@@ -13,6 +14,7 @@ import rating from './rating';
 import tag from './tag';
 
 export {
+  input,
   progress,
   stepper,
   slider,

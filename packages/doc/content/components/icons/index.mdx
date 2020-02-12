@@ -24,7 +24,7 @@ export const AllIcons = () => (
   <>
     {Object.entries(YogaIcons).map(([name, Component]) => (
       <IconWrapper key={name}>
-        <Component />
+        <Component width={12} height={12} />
         {name}
       </IconWrapper>
     ))}

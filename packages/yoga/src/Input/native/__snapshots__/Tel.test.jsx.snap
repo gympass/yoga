@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    full={false}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": 312,
+        },
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      autoCompleteType="tel"
+      disabled={false}
+      editable={true}
+      focus={false}
+      full={false}
+      keyboardType="phone-pad"
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#D3D3E2",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#9898A6",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "height": 52,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 32,
+            "paddingTop": 16,
+            "width": 312,
+          },
+        ]
+      }
+      textContentType="telephoneNumber"
+      typed={false}
+      underlineColorAndroid="transparent"
+      value=""
+    />
+  </View>
+</View>
+`;
