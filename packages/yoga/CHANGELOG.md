@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.10.0...@gympass/yoga@1.11.0) (2020-02-12)
+
+### Bug Fixes
+
+- **input:** fix svg, label, and field disabled color ([afcd891](https://github.com/Gympass/yoga/commit/afcd89168b0f549011905f59bde8a82ad52695e7))
+
+### Features
+
+- **animation:** add fade and slide motion in native and web ([41bf6da](https://github.com/Gympass/yoga/commit/41bf6da65f8494eb5834d6aa39710d40725b1db7))
+- **animation:** create new yoga package: animations ([de00e30](https://github.com/Gympass/yoga/commit/de00e30c6344e80866ccefbe53bdf81462386fca))
+- **input:** create input component to native platform ([9e7f960](https://github.com/Gympass/yoga/commit/9e7f9603cf9e9427626caf4fde7f90fc1b69d147))
+- **input:** create tel, number and email inputs on native ([6e39b31](https://github.com/Gympass/yoga/commit/6e39b31dfe5987ffb436990c15bd80bde5e21d74))
+- **input:** input as compound ([9e56753](https://github.com/Gympass/yoga/commit/9e567538253fe6281f70dc9526f686dc41bbeebf))
+- **input:** input component to native environment ([4441c13](https://github.com/Gympass/yoga/commit/4441c137a6fb1a3be8d3afced17e33b5c0bdbdc9))
+
 # [1.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.9.1...@gympass/yoga@1.10.0) (2020-02-11)
 
 ### Bug Fixes
