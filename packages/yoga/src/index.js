@@ -12,6 +12,7 @@ import Rating from './Rating';
 import Tag from './Tag';
 import Input from './Input';
 import Progress from './Progress';
+import Dropdown from './Dropdown';
 
 export {
   ThemeProvider,
@@ -34,4 +35,5 @@ export {
   Tag,
   Input,
   Progress,
+  Dropdown,
 };
