@@ -24,7 +24,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - name: Install dependencies
-        run: yarn --pure-lockfile --non-interactive
+        run: yarn
       - name: Lint
         run: yarn lint:all
       - name: Test
