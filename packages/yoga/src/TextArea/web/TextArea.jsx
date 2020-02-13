@@ -28,9 +28,13 @@ const StyledInput = styled(Input)`
       `}
     }
   }
-}
 `;
 
+/**
+ * TextArea component represents a multi-line plain-text editing control,
+ * useful when you want to allow users to enter a sizeable amount of free-form
+ * text, for example a comment on a review or feedback form.
+ */
 const TextArea = ({ label, ...props }) => (
   <StyledInput
     {...props}
@@ -44,6 +48,7 @@ const TextArea = ({ label, ...props }) => (
 TextArea.propTypes = {
   className: string,
   disabled: bool,
+  /** A error text to be displayed below field */
   error: string,
   full: bool,
   /** A helper text to be displayed below field */

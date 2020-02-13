@@ -33,7 +33,7 @@ const IconWrapper = styled.View(
     top: 0;
     right: 0;
 
-    padding-right: ${spacing.xsmall}px;
+    padding-right: ${spacing.medium}px;
     padding-left: ${spacing.xsmall}px;
   `,
 );
