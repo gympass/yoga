@@ -295,6 +295,7 @@ const Input = React.forwardRef(
         <Field
           {...props}
           {...{
+            cleanable,
             disabled,
             error,
             readOnly,

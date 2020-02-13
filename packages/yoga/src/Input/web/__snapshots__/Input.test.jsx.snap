@@ -33,7 +33,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   appearance: none;
   background-color: transparent;
   outline: none;
-  height: 52px;
+  height: 100%;
   padding-top: 16px;
   padding-right: 40px;
   padding-bottom: 16px;
@@ -85,6 +85,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   position: relative;
   display: inline-block;
   vertical-align: top;
+  height: 52px;
 }
 
 .c0 svg {
@@ -164,7 +165,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   appearance: none;
   background-color: transparent;
   outline: none;
-  height: 52px;
+  height: 100%;
   padding-top: 16px;
   padding-right: 40px;
   padding-bottom: 16px;
@@ -221,6 +222,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   position: relative;
   display: inline-block;
   vertical-align: top;
+  height: 52px;
 }
 
 .c0 svg {
@@ -334,7 +336,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   appearance: none;
   background-color: transparent;
   outline: none;
-  height: 52px;
+  height: 100%;
   padding-top: 16px;
   padding-right: 40px;
   padding-bottom: 16px;
@@ -422,6 +424,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   position: relative;
   display: inline-block;
   vertical-align: top;
+  height: 52px;
 }
 
 .c0 svg {
@@ -519,7 +522,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   appearance: none;
   background-color: transparent;
   outline: none;
-  height: 52px;
+  height: 100%;
   padding-top: 16px;
   padding-right: 40px;
   padding-bottom: 16px;
@@ -622,6 +625,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   position: relative;
   display: inline-block;
   vertical-align: top;
+  height: 52px;
 }
 
 .c0 svg {
@@ -701,7 +705,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   appearance: none;
   background-color: transparent;
   outline: none;
-  height: 52px;
+  height: 100%;
   padding-top: 16px;
   padding-right: 40px;
   padding-bottom: 16px;
@@ -778,6 +782,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   position: relative;
   display: inline-block;
   vertical-align: top;
+  height: 52px;
 }
 
 .c0 svg {
@@ -916,7 +921,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   appearance: none;
   background-color: transparent;
   outline: none;
-  height: 52px;
+  height: 100%;
   padding-top: 16px;
   padding-right: 40px;
   padding-bottom: 16px;
@@ -968,6 +973,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   position: relative;
   display: inline-block;
   vertical-align: top;
+  height: 52px;
 }
 
 .c0 svg {
