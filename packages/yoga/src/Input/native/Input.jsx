@@ -4,6 +4,8 @@ import { func, string, bool, number } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { Close } from '@gympass/yoga-icons';
 
+const ICON_SIZE = 24;
+
 const Wrapper = styled.View(
   ({
     full,
@@ -38,7 +40,7 @@ const Field = styled.TextInput(
 
     padding-top: ${input.padding.top}px;
     padding-right: ${
-      cleanable ? input.padding.right * 2 : input.padding.right
+      cleanable ? ICON_SIZE + input.padding.right : input.padding.right
     }px;
     padding-bottom: ${input.padding.bottom}px;
     padding-left: ${input.padding.left}px;
@@ -249,6 +251,7 @@ const Input = ({
     <Wrapper full={full}>
       <Field
         {...props}
+        cleanable={cleanable}
         disabled={disabled}
         editable={!(readOnly || disabled)}
         error={error}

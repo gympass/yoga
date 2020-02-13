@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
+exports[`<TextArea /> should match snapshot 1`] = `
 <View
   collapsable={true}
   pointerEvents="box-none"
@@ -23,13 +23,12 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
   >
     <TextInput
       allowFontScaling={true}
-      autoCompleteType="tel"
-      cleanable={true}
+      cleanable={false}
       disabled={false}
       editable={true}
       focus={false}
       full={false}
-      keyboardType="phone-pad"
+      multiline={true}
       rejectResponderTermination={true}
       style={
         Array [
@@ -44,13 +43,16 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
             "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 40,
+            "paddingRight": 16,
             "paddingTop": 16,
             "width": 312,
           },
+          Object {
+            "height": 88,
+          },
         ]
       }
-      textContentType="telephoneNumber"
+      textAlignVertical="top"
       typed={false}
       underlineColorAndroid="transparent"
       value=""

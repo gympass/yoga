@@ -25,6 +25,7 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
       allowFontScaling={true}
       autoCapitalize="none"
       autoCompleteType="email"
+      cleanable={true}
       disabled={false}
       editable={true}
       focus={false}
@@ -44,7 +45,7 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
             "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 32,
+            "paddingRight": 40,
             "paddingTop": 16,
             "width": 312,
           },

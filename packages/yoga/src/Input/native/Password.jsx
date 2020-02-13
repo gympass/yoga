@@ -6,6 +6,8 @@ import { Visibility, VisibilityOff } from '@gympass/yoga-icons';
 
 import Input from './Input';
 
+const ICON_SIZE = 24;
+
 const Wrapper = styled.View(
   ({
     full,
@@ -85,6 +87,9 @@ const Password = ({
         onFocus={e => {
           setFocused(true);
           onFocus(e);
+        }}
+        style={{
+          paddingRight: ICON_SIZE + input.padding.right,
         }}
       />
       <TouchableWithoutFeedback
