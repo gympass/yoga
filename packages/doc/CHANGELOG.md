@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.3](https://github.com/Gympass/design-system/compare/@gympass/yoga-doc@0.14.2...@gympass/yoga-doc@0.14.3) (2020-02-14)
+
+### Bug Fixes
+
+- **theme:** fixing font import on SSR ([9a32dc9](https://github.com/Gympass/design-system/commit/9a32dc928e86cf44d70bc2fd4336f4d9d99b9b05))
+
 ## [0.14.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.14.1...@gympass/yoga-doc@0.14.2) (2020-02-12)
 
 **Note:** Version bump only for package @gympass/yoga-doc
