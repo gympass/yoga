@@ -18,7 +18,7 @@ const StyledInput = styled(Input)`
     border: ${textarea.border.width}px solid ${textarea.border.color.default};
 
     padding-top: ${textarea.padding.top}px;
-    padding-right: 0;
+    padding-right: ${textarea.padding.right}px;
     padding-bottom: ${textarea.padding.bottom}px;
     padding-left: ${textarea.padding.left}px;
 
