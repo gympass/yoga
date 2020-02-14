@@ -7,25 +7,49 @@ import Input from '../../Input';
 const StyledInput = styled(Input)`
   min-height: 88px;
 
-  textarea {
-    resize: none;
+  ${({
+    theme: {
+      yoga: {
+        components: { textarea },
+      },
+    },
+  }) => `
+    border-radius: ${textarea.border.radius}px;
+    border: ${textarea.border.width}px solid ${textarea.border.color.default};
 
-    ::-webkit-scrollbar {
-      width: 15px;
-      height: 18px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background-clip: padding-box;
+    padding-top: ${textarea.padding.top}px;
+    padding-right: 0;
+    padding-bottom: ${textarea.padding.bottom}px;
+    padding-left: ${textarea.padding.left}px;
 
-      ${({
-        theme: {
-          yoga: { radii, colors },
-        },
-      }) => `
-        background-color: ${colors.gray[5]}
-        border: 4px solid ${colors.white};
-        border-radius: ${radii.circle}px;
-      `}
+    width: ${textarea.width}px;
+  `}
+
+  && {
+    textarea {
+      width: 100%;
+      padding: 0;
+
+      border: none;
+      resize: none;
+
+      ::-webkit-scrollbar {
+        width: 15px;
+        height: 18px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-clip: padding-box;
+
+        ${({
+          theme: {
+            yoga: { radii, colors },
+          },
+        }) => `
+          background-color: ${colors.gray[5]}
+          border: 4px solid ${colors.white};
+          border-radius: ${radii.circle}px;
+        `}
+      }
     }
   }
 `;
