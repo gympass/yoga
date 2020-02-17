@@ -1,12 +1,19 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import { string, bool, number, func, shape } from 'prop-types';
 
-import Input from '../../Input';
+import Wrapper from '../../Input/web/Wrapper';
+import Field from '../../Input/web/Field';
+import Label from '../../Input/web/Label';
+import Helper from '../../Input/web/Helper';
 
-const StyledInput = styled(Input)`
-  min-height: 88px;
+const Root = styled.div`
+  display: inline-block;
 
+  cursor: text;
+`;
+
+const StyledWrapper = styled(Wrapper)`
   ${({
     theme: {
       yoga: {
@@ -14,80 +21,85 @@ const StyledInput = styled(Input)`
       },
     },
   }) => `
-    width: ${textarea.width}px;
+    height: 88px;
 
     padding-top: ${textarea.padding.top}px;
     padding-right: ${textarea.padding.right}px;
     padding-bottom: ${textarea.padding.bottom}px;
     padding-left: ${textarea.padding.left}px;
+   `}
+`;
 
-    border-radius: ${textarea.border.radius}px;
-    border: ${textarea.border.width}px solid ${textarea.border.color.default};
+const StyledField = styled(Field)`
+  resize: none;
+  height: 100%;
 
-    cursor: text;
-
-    &:hover, &:focus-within { 
-      border-color: ${textarea.border.color.typed};
-    }
-  `}
-
-  && {
-    textarea {
-      width: 100%;
-      padding: 0;
-
-      border: none;
-      resize: none;
-
-      ::-webkit-scrollbar {
-        width: 15px;
-        height: 18px;
-      }
-      ::-webkit-scrollbar-thumb {
-        background-clip: padding-box;
-
-        ${({
-          theme: {
-            yoga: { radii, colors },
-          },
-        }) => `
-          background-color: ${colors.gray[5]}
-          border: 4px solid ${colors.white};
-          border-radius: ${radii.circle}px;
-        `}
-      }
-    }
-
-    label,
-    textarea:focus + label {
-      transform: translateY(calc(-50% - 1px));
-    }
-  }
+  padding: 0;
 `;
 
 /**
- * Text Area is a type of text field which has a larger initiation size to
+ * TextArea is a type of text field which has a larger initiation size to
  * encourage a bigger user input. This component has a fixed height and the text
  * lines are increased when the input reaches the limit of lines established for
  * the field. This action creates a vertical scroll inside the component.
  */
-const TextArea = React.forwardRef(({ label, ...props }, ref) => {
-  const textAreaRef = ref || useRef(null);
+const TextArea = React.forwardRef(
+  (
+    {
+      disabled,
+      error,
+      helper,
+      label,
+      maxLength,
+      className,
+      style,
+      value,
+      onChange,
+      ...props
+    },
+    ref,
+  ) => {
+    const [textAreaValue, setTextAreaValue] = useState(value);
+    const [typed, setTyped] = useState(Boolean(value));
 
-  return (
-    // eslint-disable-next-line
-    <div onClick={() => textAreaRef.current.focus()}>
-      <StyledInput
-        {...props}
-        label={label}
-        forwardedAs="textarea"
-        ref={textAreaRef}
-        cleanable={false}
-        resizable={false}
-      />
-    </div>
-  );
-});
+    const textAreaRef = ref || useRef(null);
+
+    return (
+      // eslint-disable-next-line
+      <Root
+        className={className}
+        style={style}
+        onClick={() => textAreaRef.current.focus()}
+      >
+        <StyledWrapper error={error} disabled={disabled}>
+          <StyledField
+            {...props}
+            label={label}
+            as="textarea"
+            ref={textAreaRef}
+            cleanable={false}
+            maxLength={maxLength}
+            typed={typed}
+            error={error}
+            onChange={e => {
+              setTextAreaValue(e.target.value);
+              setTyped(Boolean(e.target.value));
+              onChange(e);
+            }}
+          />
+          {label && <Label error={error}>{label}</Label>}
+        </StyledWrapper>
+        <Helper
+          disabled={disabled}
+          error={error}
+          helper={helper}
+          maxLength={maxLength}
+          length={textAreaValue.length}
+        />
+      </Root>
+    );
+  },
+);
 
 TextArea.propTypes = {
   className: string,
@@ -100,6 +112,7 @@ TextArea.propTypes = {
   label: string,
   /** maximum length (number of characters) of value */
   maxLength: number,
+  placeholder: string,
   readOnly: bool,
   style: shape({}),
   value: string,
@@ -114,9 +127,10 @@ TextArea.defaultProps = {
   helper: undefined,
   label: '',
   maxLength: undefined,
+  placeholder: undefined,
   readOnly: false,
   style: undefined,
-  value: undefined,
+  value: '',
   onChange: () => {},
 };
 
