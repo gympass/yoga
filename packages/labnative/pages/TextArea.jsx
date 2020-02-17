@@ -4,16 +4,34 @@ import { TextArea } from '@gympass/yoga';
 
 const TextAreaPage = () => (
   <ScrollView
+    style={{ width: '100%', marginTop: 20, marginBottom: 50 }}
     contentContainerStyle={{
-      height: '100%',
-      justifyContent: 'space-evenly',
-      marginTop: 50,
+      height: 600,
+      width: '100%',
+      padding: 10,
+      alignItems: 'center',
     }}
   >
-    <TextArea label="Label" />
-    <TextArea label="Label" helper="Helper text" maxLength={20} />
-    <TextArea label="Label" error="Error text" maxLength={20} />
-    <TextArea disabled label="Label" helper="Helper text" maxLength={20} />
+    <TextArea style={{ marginBottom: 20 }} label="Label" />
+    <TextArea
+      style={{ marginBottom: 20 }}
+      label="Label"
+      helper="Helper text"
+      maxLength={20}
+    />
+    <TextArea
+      style={{ marginBottom: 20 }}
+      label="Label"
+      error="Error text"
+      maxLength={20}
+    />
+    <TextArea
+      style={{ marginBottom: 20 }}
+      disabled
+      label="Label"
+      helper="Helper text"
+      maxLength={20}
+    />
   </ScrollView>
 );
 

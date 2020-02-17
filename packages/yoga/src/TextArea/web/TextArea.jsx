@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 import { string, bool, number, func, shape } from 'prop-types';
 
@@ -14,15 +14,21 @@ const StyledInput = styled(Input)`
       },
     },
   }) => `
-    border-radius: ${textarea.border.radius}px;
-    border: ${textarea.border.width}px solid ${textarea.border.color.default};
+    width: ${textarea.width}px;
 
     padding-top: ${textarea.padding.top}px;
     padding-right: ${textarea.padding.right}px;
     padding-bottom: ${textarea.padding.bottom}px;
     padding-left: ${textarea.padding.left}px;
 
-    width: ${textarea.width}px;
+    border-radius: ${textarea.border.radius}px;
+    border: ${textarea.border.width}px solid ${textarea.border.color.default};
+
+    cursor: text;
+
+    &:hover, &:focus-within { 
+      border-color: ${textarea.border.color.typed};
+    }
   `}
 
   && {
@@ -51,23 +57,37 @@ const StyledInput = styled(Input)`
         `}
       }
     }
+
+    label,
+    textarea:focus + label {
+      transform: translateY(calc(-50% - 1px));
+    }
   }
 `;
 
 /**
- * TextArea component represents a multi-line plain-text editing control,
- * useful when you want to allow users to enter a sizeable amount of free-form
- * text, for example a comment on a review or feedback form.
+ * Text Area are a type of text field witch has a larger initiation size to
+ * encourage a bigger user input. This component has a fixed height and the text
+ * lines are increased when the input reaches the limit of lines established for
+ * the field. This action creates a vertical scroll inside the component.
  */
-const TextArea = ({ label, ...props }) => (
-  <StyledInput
-    {...props}
-    label={label}
-    forwardedAs="textarea"
-    cleanable={false}
-    resizable={false}
-  />
-);
+const TextArea = React.forwardRef(({ label, ...props }, ref) => {
+  const textAreaRef = ref || useRef(null);
+
+  return (
+    // eslint-disable-next-line
+    <div onClick={() => textAreaRef.current.focus()}>
+      <StyledInput
+        {...props}
+        label={label}
+        forwardedAs="textarea"
+        ref={textAreaRef}
+        cleanable={false}
+        resizable={false}
+      />
+    </div>
+  );
+});
 
 TextArea.propTypes = {
   className: string,

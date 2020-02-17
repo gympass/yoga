@@ -92,9 +92,10 @@ exports[`<TextArea /> should match snapshot 1`] = `
   position: absolute;
   top: 0;
   right: 0;
-  padding-right: 8px;
+  padding-right: 16px;
   padding-left: 8px;
   height: 52px;
+  width: 20px;
   fill: #9898A6;
   outline: none;
   box-sizing: content-box;
@@ -117,36 +118,61 @@ exports[`<TextArea /> should match snapshot 1`] = `
 
 .c1 {
   min-height: 88px;
+  width: 312px;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
+  cursor: text;
 }
 
-.c1 textarea {
+.c1:hover,
+.c1:focus-within {
+  border-color: #41414A;
+}
+
+.c1.c1 textarea {
+  width: 100%;
+  padding: 0;
+  border: none;
   resize: none;
 }
 
-.c1 textarea::-webkit-scrollbar {
+.c1.c1 textarea::-webkit-scrollbar {
   width: 15px;
   height: 18px;
 }
 
-.c1 textarea::-webkit-scrollbar-thumb {
+.c1.c1 textarea::-webkit-scrollbar-thumb {
   background-clip: padding-box;
   background-color: #C5C5D6;
   border: 4px solid #FFFFFF;
   border-radius: 9999px;
 }
 
+.c1.c1 label,
+.c1.c1 textarea:focus + label {
+  -webkit-transform: translateY(calc(-50% - 1px));
+  -ms-transform: translateY(calc(-50% - 1px));
+  transform: translateY(calc(-50% - 1px));
+}
+
 <div>
-  <div
-    class="c0 c1"
-  >
-    <textarea
-      class="c2 c3"
-    />
-    <label
-      class="c4 c5"
+  <div>
+    <div
+      class="c0 c1"
     >
-      Label
-    </label>
+      <textarea
+        class="c2 c3"
+      />
+      <label
+        class="c4 c5"
+      >
+        Label
+      </label>
+    </div>
   </div>
 </div>
 `;
