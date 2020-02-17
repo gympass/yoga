@@ -18,6 +18,7 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
           "position": "relative",
           "width": 312,
         },
+        Object {},
       ]
     }
   >
@@ -47,6 +48,9 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
             "paddingRight": 40,
             "paddingTop": 16,
             "width": 312,
+          },
+          Object {
+            "height": undefined,
           },
         ]
       }

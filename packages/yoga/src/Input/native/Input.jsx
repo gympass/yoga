@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { TouchableWithoutFeedback, Animated, Easing } from 'react-native';
-import { func, string, bool, number } from 'prop-types';
+import {
+  func,
+  string,
+  bool,
+  number,
+  oneOfType,
+  shape,
+  arrayOf,
+} from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { Close } from '@gympass/yoga-icons';
 
@@ -191,6 +199,7 @@ const Input = ({
   label,
   maxLength,
   readOnly,
+  style,
   value,
   onBlur,
   onChangeText,
@@ -247,8 +256,12 @@ const Input = ({
     );
   }, [focused, typed]);
 
+  const { height, ...styles } = Array.isArray(style)
+    ? Object.assign({}, ...style)
+    : style;
+
   return (
-    <Wrapper full={full}>
+    <Wrapper full={full} style={styles}>
       <Field
         {...props}
         cleanable={cleanable}
@@ -258,6 +271,9 @@ const Input = ({
         focus={focused}
         full={full}
         maxLength={maxLength}
+        style={{
+          height,
+        }}
         typed={typed}
         value={inputValue}
         onChangeText={text => {
@@ -303,7 +319,7 @@ const Input = ({
           }}
         >
           <CloseIcon>
-            <Close height={input.height} fill={iconColor()} />
+            <Close height={input.height} width={20} fill={iconColor()} />
           </CloseIcon>
         </TouchableWithoutFeedback>
       )}
@@ -338,6 +354,7 @@ Input.propTypes = {
   maxLength: number,
   readOnly: bool,
   value: string,
+  style: oneOfType([shape({}), arrayOf(shape({}))]),
   onBlur: func,
   onChangeText: func,
   /** callback invoked when close icon is clicked */
@@ -354,6 +371,7 @@ Input.defaultProps = {
   label: undefined,
   maxLength: undefined,
   readOnly: false,
+  style: {},
   value: undefined,
   onBlur: () => {},
   onChangeText: () => {},

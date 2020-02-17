@@ -18,6 +18,7 @@ exports[`<Input /> Snapshots should match when input is focused 1`] = `
           "position": "relative",
           "width": 312,
         },
+        Object {},
       ]
     }
   >
@@ -45,6 +46,9 @@ exports[`<Input /> Snapshots should match when input is focused 1`] = `
             "paddingRight": 40,
             "paddingTop": 16,
             "width": 312,
+          },
+          Object {
+            "height": undefined,
           },
         ]
       }
@@ -110,6 +114,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
           "position": "relative",
           "width": 312,
         },
+        Object {},
       ]
     }
   >
@@ -137,6 +142,9 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
             "paddingRight": 40,
             "paddingTop": 16,
             "width": 312,
+          },
+          Object {
+            "height": undefined,
           },
         ]
       }
@@ -166,6 +174,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
           "position": "relative",
           "width": 312,
         },
+        Object {},
       ]
     }
   >
@@ -193,6 +202,9 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
             "paddingRight": 40,
             "paddingTop": 16,
             "width": 312,
+          },
+          Object {
+            "height": undefined,
           },
         ]
       }
@@ -222,6 +234,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
           "position": "relative",
           "width": 312,
         },
+        Object {},
       ]
     }
   >
@@ -250,6 +263,9 @@ exports[`<Input /> Snapshots should match with error 1`] = `
             "paddingRight": 40,
             "paddingTop": 16,
             "width": 312,
+          },
+          Object {
+            "height": undefined,
           },
         ]
       }
@@ -309,6 +325,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
           "position": "relative",
           "width": "100%",
         },
+        Object {},
       ]
     }
   >
@@ -336,6 +353,9 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
             "paddingRight": 40,
             "paddingTop": 16,
             "width": "100%",
+          },
+          Object {
+            "height": undefined,
           },
         ]
       }
@@ -398,6 +418,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
           "position": "relative",
           "width": 312,
         },
+        Object {},
       ]
     }
   >
@@ -426,6 +447,9 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
             "paddingRight": 40,
             "paddingTop": 16,
             "width": 312,
+          },
+          Object {
+            "height": undefined,
           },
         ]
       }
@@ -503,6 +527,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
           "position": "relative",
           "width": 312,
         },
+        Object {},
       ]
     }
   >
@@ -530,6 +555,9 @@ exports[`<Input /> Snapshots should match with label 1`] = `
             "paddingRight": 40,
             "paddingTop": 16,
             "width": 312,
+          },
+          Object {
+            "height": undefined,
           },
         ]
       }

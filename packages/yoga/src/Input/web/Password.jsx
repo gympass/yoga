@@ -68,6 +68,7 @@ const IconWrapper = styled.div`
 
     svg {
       height: ${input.height}px;
+      width: 20px;
       fill: ${input.font.color.default};
 
       ${

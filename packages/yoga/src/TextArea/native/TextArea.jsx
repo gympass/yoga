@@ -9,9 +9,10 @@ const StyledInput = styled(Input)`
 `;
 
 /**
- * TextArea component represents a multi-line plain-text editing control,
- * useful when you want to allow users to enter a sizeable amount of free-form
- * text, for example a comment on a review or feedback form.
+ * Text Area are a type of text field witch has a larger initiation size to
+ * encourage a bigger user input. This component has a fixed height and the text
+ * lines are increased when the input reaches the limit of lines established for
+ * the field. This action creates a vertical scroll inside the component.
  */
 const TextArea = props => (
   <StyledInput {...props} textAlignVertical="top" multiline cleanable={false} />

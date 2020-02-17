@@ -173,6 +173,7 @@ const Wrapper = styled.div`
       padding-left: ${spacing.xsmall}px;
 
       height: ${input.height}px;
+      width: 20px;
 
       fill: ${input.font.color.default};
       outline: none;
