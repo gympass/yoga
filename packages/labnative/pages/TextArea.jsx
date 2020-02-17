@@ -12,7 +12,7 @@ const TextAreaPage = () => (
       alignItems: 'center',
     }}
   >
-    <TextArea style={{ marginBottom: 20 }} />
+    <TextArea style={{ marginBottom: 20 }} placeholder="Find an activity" />
     <TextArea
       style={{ marginBottom: 20 }}
       helper="Helper text"
