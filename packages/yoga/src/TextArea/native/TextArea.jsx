@@ -9,7 +9,7 @@ const StyledInput = styled(Input)`
 `;
 
 /**
- * Text Area are a type of text field witch has a larger initiation size to
+ * Text Area is a type of text field which has a larger initiation size to
  * encourage a bigger user input. This component has a fixed height and the text
  * lines are increased when the input reaches the limit of lines established for
  * the field. This action creates a vertical scroll inside the component.
@@ -40,7 +40,7 @@ TextArea.defaultProps = {
   error: undefined,
   full: false,
   helper: undefined,
-  label: undefined,
+  label: '',
   maxLength: undefined,
   readOnly: false,
   value: undefined,

@@ -12,12 +12,12 @@ const TextAreaPage = () => (
       alignItems: 'center',
     }}
   >
-    <TextArea style={{ marginBottom: 20 }} label="Label" />
+    <TextArea style={{ marginBottom: 20 }} />
     <TextArea
       style={{ marginBottom: 20 }}
-      label="Label"
       helper="Helper text"
       maxLength={20}
+      label="Label"
     />
     <TextArea
       style={{ marginBottom: 20 }}
