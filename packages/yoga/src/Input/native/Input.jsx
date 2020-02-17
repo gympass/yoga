@@ -290,7 +290,7 @@ const Input = ({
           onBlur(e);
         }}
       />
-      {label && (
+      {Boolean(label) && (
         <LabelWrapper
           focus={focused}
           pointerEvents="none"
@@ -368,7 +368,7 @@ Input.defaultProps = {
   error: undefined,
   full: false,
   helper: undefined,
-  label: undefined,
+  label: '',
   maxLength: undefined,
   readOnly: false,
   style: {},
