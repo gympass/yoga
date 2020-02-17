@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Rating } from '@gympass/yoga';
 import Svg, { Circle } from 'react-native-svg/lib/commonjs';
@@ -17,36 +17,42 @@ const CircleIcon = props => (
   </Svg>
 );
 
-const ButtonPage = () => (
-  <ScrollView
-    style={{ width: '100%' }}
-    contentContainerStyle={{
-      alignItems: 'center',
-      justifyContent: 'center',
-    }}
-  >
-    <DocTitle>Rating</DocTitle>
+const RatingPage = () => {
+  const [rating, setRating] = useState(2);
 
-    <Rating value={1} />
-    <Rating value={1.5} />
-    <Rating value={2} />
-    <Rating value={2.5} />
-    <Rating value={3} />
-    <Rating value={3.5} />
-    <Rating value={4} />
-    <Rating value={4.5} />
+  return (
+    <ScrollView
+      style={{
+        width: '100%',
+      }}
+      contentContainerStyle={{
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingBottom: 60,
+      }}
+    >
+      <DocTitle>Rating</DocTitle>
 
-    <DocTitle>Custom Icon</DocTitle>
+      <Rating value={1} />
+      <Rating value={1.5} />
+      <Rating value={2} />
+      <Rating value={2.5} />
+      <Rating value={3} />
+      <Rating value={3.5} />
+      <Rating value={4} />
+      <Rating value={4.5} />
 
-    <Rating icon={CircleIcon} value={1} />
-    <Rating icon={CircleIcon} value={1.5} />
-    <Rating icon={CircleIcon} value={2} />
-    <Rating icon={CircleIcon} value={2.5} />
-    <Rating icon={CircleIcon} value={3} />
-    <Rating icon={CircleIcon} value={3.5} />
-    <Rating icon={CircleIcon} value={4} />
-    <Rating icon={CircleIcon} value={4.5} />
-  </ScrollView>
-);
+      <DocTitle>Custom Icon</DocTitle>
 
-export default ButtonPage;
+      <Rating icon={{ type: CircleIcon }} value={1} />
+      <Rating icon={{ type: CircleIcon }} value={1.5} />
+      <Rating icon={{ type: CircleIcon }} value={2} />
+      <Rating icon={{ type: CircleIcon }} value={2.5} />
+
+      <DocTitle>Working</DocTitle>
+      <Rating readOnly={false} value={rating} onRate={setRating} />
+    </ScrollView>
+  );
+};
+
+export default RatingPage;

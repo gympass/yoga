@@ -1,3 +1,3 @@
-import { limitChildren, typeOf, charLength } from './propTypes';
+import { limitChildren, typeOf, charLength, max } from './propTypes';
 
-export { limitChildren, typeOf, charLength };
+export { limitChildren, typeOf, charLength, max };
