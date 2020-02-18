@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.12.1...@gympass/yoga@1.12.2) (2020-02-18)
+
+### Bug Fixes
+
+- **input:** fix input padding on password type ([6de8340](https://github.com/Gympass/yoga/commit/6de8340d4438447c8d72ac45944f6f9d5bc2bc50))
+- **input/textarea:** fix disabled and full props ([1ac0e77](https://github.com/Gympass/yoga/commit/1ac0e77ddb01a59ae31e52e6e8dbbf8c69444c33))
+
 ## [1.12.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.12.0...@gympass/yoga@1.12.1) (2020-02-18)
 
 ### Bug Fixes
