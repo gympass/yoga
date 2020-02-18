@@ -23,15 +23,15 @@ const RatingWrapper = styled.View`
 const Rating = ({
   value,
   max,
+  readOnly,
+  onRate,
   theme: {
     yoga: {
-      colors: { gray },
+      colors,
       components: { rating },
     },
   },
   icon: { type: Icon = Star, size: iconSize = 24 },
-  readOnly,
-  onRate,
   ...rest
 }) => {
   const [panResponder, setPanResponder] = useState({});
@@ -127,7 +127,7 @@ const Rating = ({
                 }}
               />
               <Icon
-                fill={gray[5]}
+                fill={colors.gray[5]}
                 width={dWidth}
                 height={iconSize}
                 viewBox={`${wViewBox} 0 ${dViewBox} ${SVG_DEFAULT_SIZE}`}
@@ -142,7 +142,7 @@ const Rating = ({
         return (
           <Icon
             key={`unfilled-${i}`}
-            fill={gray[5]}
+            fill={colors.gray[5]}
             width={iconSize}
             height={iconSize}
             viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
