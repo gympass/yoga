@@ -55,7 +55,7 @@ const Rating = ({
       components: { rating },
     },
   },
-  icon: { type: Icon, size: iconSize = rating.icon.size },
+  icon: { type: Icon = Star, size: iconSize = rating.icon.size },
   ...rest
 }) => {
   const wrapperRef = useRef(null);
