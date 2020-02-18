@@ -7,7 +7,7 @@ const max = (value, proptypes = number) => (props, propName, componentName) => {
 
   if (valueProp > value) {
     return new Error(
-      `Invalid prop ${propName} supplied to ${componentName}. ${propName} must be a value with maximun of ${value}`,
+      `Invalid prop ${propName} supplied to ${componentName}. ${propName} must be a value with maximum of ${value}`,
     );
   }
 
