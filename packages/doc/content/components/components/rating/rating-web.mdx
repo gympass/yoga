@@ -20,6 +20,27 @@ render(
 );
 ```
 
+### Working
+
+```javascript state
+const Center = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Circle = props => (
+  <svg {...props}>
+    <circle cx="6" cy="7" r="5" />
+  </svg>
+);
+
+render(() => {
+  const [rating, setRating] = useState(2);
+
+  return <Rating value={rating} onRate={setRating} readOnly={false} />;
+});
+```
+
 ### Custom Icons
 
 ```javascript state
