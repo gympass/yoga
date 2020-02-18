@@ -40,7 +40,6 @@ exports[`<Input /> Snapshots should match when input is focused 1`] = `
             "color": "#41414A",
             "fontSize": 14,
             "fontWeight": "400",
-            "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 40,
@@ -48,7 +47,7 @@ exports[`<Input /> Snapshots should match when input is focused 1`] = `
             "width": 312,
           },
           Object {
-            "height": undefined,
+            "height": 52,
           },
         ]
       }
@@ -136,7 +135,6 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
             "color": "#9898A6",
             "fontSize": 14,
             "fontWeight": "400",
-            "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 40,
@@ -144,7 +142,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
             "width": 312,
           },
           Object {
-            "height": undefined,
+            "height": 52,
           },
         ]
       }
@@ -196,7 +194,6 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
             "color": "#D3D3E2",
             "fontSize": 14,
             "fontWeight": "400",
-            "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 40,
@@ -204,7 +201,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
             "width": 312,
           },
           Object {
-            "height": undefined,
+            "height": 52,
           },
         ]
       }
@@ -257,7 +254,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
             "color": "#9898A6",
             "fontSize": 14,
             "fontWeight": "400",
-            "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 40,
@@ -265,7 +261,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
             "width": 312,
           },
           Object {
-            "height": undefined,
+            "height": 52,
           },
         ]
       }
@@ -347,7 +343,6 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
             "color": "#9898A6",
             "fontSize": 14,
             "fontWeight": "400",
-            "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 40,
@@ -355,7 +350,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
             "width": "100%",
           },
           Object {
-            "height": undefined,
+            "height": 52,
           },
         ]
       }
@@ -441,7 +436,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
             "color": "#9898A6",
             "fontSize": 14,
             "fontWeight": "400",
-            "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 40,
@@ -449,7 +443,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
             "width": 312,
           },
           Object {
-            "height": undefined,
+            "height": 52,
           },
         ]
       }
@@ -549,7 +543,6 @@ exports[`<Input /> Snapshots should match with label 1`] = `
             "color": "#9898A6",
             "fontSize": 14,
             "fontWeight": "400",
-            "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 40,
@@ -557,7 +550,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
             "width": 312,
           },
           Object {
-            "height": undefined,
+            "height": 52,
           },
         ]
       }

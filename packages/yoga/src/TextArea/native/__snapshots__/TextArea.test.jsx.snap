@@ -41,7 +41,6 @@ exports[`<TextArea /> should match snapshot 1`] = `
             "color": "#9898A6",
             "fontSize": 14,
             "fontWeight": "400",
-            "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 16,

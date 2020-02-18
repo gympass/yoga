@@ -43,7 +43,6 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
             "color": "#9898A6",
             "fontSize": 14,
             "fontWeight": "400",
-            "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 40,
@@ -51,7 +50,7 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
             "width": 312,
           },
           Object {
-            "height": undefined,
+            "height": 52,
           },
         ]
       }
