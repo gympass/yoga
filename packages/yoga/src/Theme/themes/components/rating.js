@@ -1,7 +1,7 @@
 const rating = ({ spacing, tokenColors }) => ({
   backgroundColor: tokenColors.milan[3],
   icon: {
-    size: 24,
+    size: 12,
   },
   gutter: spacing.xxsmall,
 });

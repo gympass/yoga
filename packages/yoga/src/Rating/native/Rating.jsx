@@ -13,16 +13,9 @@ const RatingWrapper = styled.View`
   justify-content: center;
   align-items: center;
 
-  ${({
-    width,
-    theme: {
-      yoga: {
-        components: { rating },
-      },
-    },
-  }) => `
+  ${({ width, height }) => `
     width: ${width}px;
-    height: ${rating.icon.size}px;
+    height: ${height}px;
   `}
 `;
 
@@ -36,7 +29,7 @@ const Rating = ({
       components: { rating },
     },
   },
-  icon: { type: Icon, size: iconSize = 24 },
+  icon: { type: Icon = Star, size: iconSize = 24 },
   readOnly,
   onRate,
   ...rest
@@ -89,6 +82,7 @@ const Rating = ({
 
   return (
     <RatingWrapper
+      height={iconSize}
       width={rating.gutter * (max - 1) + rating.icon.size * max}
       pointerEvents={readOnly ? 'none' : 'auto'}
       {...rest}
@@ -166,7 +160,9 @@ Rating.propTypes = {
   }),
   /** Maximum rating */
   max: number,
+  /** false to make it interactable */
   readOnly: bool,
+  /** Event to be fired on click */
   onRate: func,
 };
 
@@ -178,7 +174,7 @@ Rating.defaultProps = {
   },
   max: 5,
   readOnly: true,
-  onRate: () => {},
+  onRate: rating => {}, // eslint-disable-line no-unused-vars
 };
 
 export default withTheme(Rating);

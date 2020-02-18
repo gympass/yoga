@@ -18,9 +18,11 @@ const RatingWrapper = styled.div`
     pointer-events: none;
   }
 
-  ${({ width, height }) => `
+  ${({ width, height, readOnly }) => `
     width: ${width}px;
     height: ${height}px;
+
+    ${readOnly ? 'pointer-events: none;' : ''}
   `}
 `;
 
@@ -150,7 +152,9 @@ Rating.propTypes = {
   }),
   /** Maximum rating */
   max: number,
+  /** false to make it interactable */
   readOnly: bool,
+  /** Event to be fired on click */
   onRate: func,
   onMouseOver: func,
   onMouseMove: func,
@@ -165,7 +169,7 @@ Rating.defaultProps = {
   },
   max: 5,
   readOnly: true,
-  onRate: () => {},
+  onRate: rating => {}, // eslint-disable-line no-unused-vars
   onMouseOver: () => {},
   onMouseMove: () => {},
   onMouseLeave: () => {},
