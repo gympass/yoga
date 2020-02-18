@@ -38,6 +38,7 @@ const Field = styled.input`
     theme: {
       yoga: {
         colors,
+        baseFont,
         components: { input },
       },
     },
@@ -54,6 +55,7 @@ const Field = styled.input`
     color: ${input.font.color.focus};
     border: none;
 
+    font-family: ${baseFont.family}, sans-serif;
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
 
