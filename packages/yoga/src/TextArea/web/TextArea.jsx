@@ -11,6 +11,10 @@ const Root = styled.div`
   display: inline-block;
 
   cursor: text;
+
+  ${({ full }) => `
+    width: ${full ? '100%' : 'auto'};
+  `}
 `;
 
 const StyledWrapper = styled(Wrapper)`
@@ -48,6 +52,7 @@ const TextArea = React.forwardRef(
     {
       disabled,
       error,
+      full,
       helper,
       label,
       maxLength,
@@ -67,12 +72,15 @@ const TextArea = React.forwardRef(
     return (
       <Root
         className={className}
+        full={full}
         style={style}
         onClick={() => textAreaRef.current.focus()}
       >
-        <StyledWrapper error={error} disabled={disabled}>
+        <StyledWrapper error={error} disabled={disabled} full={full}>
           <StyledField
             {...props}
+            disabled={disabled}
+            full={full}
             label={label}
             as="textarea"
             ref={textAreaRef}
@@ -80,13 +88,18 @@ const TextArea = React.forwardRef(
             maxLength={maxLength}
             typed={typed}
             error={error}
+            value={textAreaValue}
             onChange={e => {
               setTextAreaValue(e.target.value);
               setTyped(Boolean(e.target.value));
               onChange(e);
             }}
           />
-          {label && <Label error={error}>{label}</Label>}
+          {label && (
+            <Label error={error} disabled={disabled}>
+              {label}
+            </Label>
+          )}
         </StyledWrapper>
         <Helper
           disabled={disabled}
