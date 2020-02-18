@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.12.2...@gympass/yoga-labnative@0.13.0) (2020-02-18)
+
+### Features
+
+- **rating:** add events on rating ([cd13223](https://github.com/Gympass/yoga/commit/cd132234977cf5010e4ad7ede096babd01fb1150))
+
 ## [0.12.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.12.1...@gympass/yoga-labnative@0.12.2) (2020-02-18)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
