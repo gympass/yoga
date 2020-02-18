@@ -1,3 +1,4 @@
 import ThemeProvider from './ThemeProvider';
+import FontLoader from './FontLoader';
 
-export default ThemeProvider;
+export { ThemeProvider, FontLoader };

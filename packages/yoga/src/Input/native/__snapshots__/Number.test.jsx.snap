@@ -18,11 +18,13 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
           "position": "relative",
           "width": 312,
         },
+        Object {},
       ]
     }
   >
     <TextInput
       allowFontScaling={true}
+      cleanable={true}
       disabled={false}
       editable={true}
       focus={false}
@@ -42,9 +44,12 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
             "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 32,
+            "paddingRight": 40,
             "paddingTop": 16,
             "width": 312,
+          },
+          Object {
+            "height": undefined,
           },
         ]
       }
