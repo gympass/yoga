@@ -52,6 +52,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   padding-left: 16px;
   color: #41414A;
   border: none;
+  font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -206,6 +207,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   padding-left: 16px;
   color: #41414A;
   border: none;
+  font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -358,6 +360,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   padding-left: 16px;
   color: #41414A;
   border: none;
+  font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
   border-color: #CB3530;
@@ -532,6 +535,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   padding-left: 16px;
   color: #41414A;
   border: none;
+  font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -681,6 +685,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   padding-left: 16px;
   color: #41414A;
   border: none;
+  font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -865,6 +870,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   padding-left: 16px;
   color: #41414A;
   border: none;
+  font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
