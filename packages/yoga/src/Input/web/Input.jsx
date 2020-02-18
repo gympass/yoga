@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import styled from 'styled-components';
 import { func, string, bool, number, shape } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
@@ -6,6 +7,12 @@ import Wrapper from './Wrapper';
 import Field from './Field';
 import Label from './Label';
 import Helper from './Helper';
+
+const Control = styled.div`
+  ${({ full }) => `
+    width: ${full ? '100%' : 'auto'};
+  `}
+`;
 
 const Input = React.forwardRef(
   (
@@ -47,7 +54,7 @@ const Input = React.forwardRef(
     };
 
     return (
-      <div>
+      <Control full={full}>
         <Wrapper
           disabled={disabled}
           error={error}
@@ -62,6 +69,7 @@ const Input = React.forwardRef(
               cleanable,
               disabled,
               error,
+              full,
               readOnly,
               maxLength,
               typed,
@@ -75,7 +83,7 @@ const Input = React.forwardRef(
             }}
           />
           {label && (
-            <Label typed={typed} error={error}>
+            <Label typed={typed} error={error} disabled={disabled}>
               {label}
             </Label>
           )}
@@ -95,9 +103,10 @@ const Input = React.forwardRef(
             helper={helper}
             maxLength={maxLength}
             length={inputValue.length}
+            disabled={disabled}
           />
         )}
-      </div>
+      </Control>
     );
   },
 );

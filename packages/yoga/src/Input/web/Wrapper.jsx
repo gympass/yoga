@@ -23,10 +23,6 @@ const Wrapper = styled.div`
     border-radius: ${input.border.radius}px;
     border: ${input.border.width}px solid ${input.border.color.default};
 
-    &:hover, &:focus-within {
-      border-color: ${error ? colors.negative[1] : input.border.color.typed};
-    }
-
     svg {
       position: absolute;
       top: 0;
@@ -54,22 +50,31 @@ const Wrapper = styled.div`
     }
 
     ${
-      disabled
-        ? `
-            svg {
-              fill: ${colors.disabled.background};
-              pointer-events: none;
-            }
-          `
-        : ''
-    }
-
-    ${
       error
         ? `
       border-color: ${colors.negative[1]};
     `
         : ''
+    }
+
+    ${
+      disabled
+        ? `
+            border-color: ${colors.disabled.background};
+            color: ${colors.disabled.background};
+            
+            svg {
+              fill: ${colors.disabled.background};
+              pointer-events: none;
+            }
+          `
+        : `   
+          &:hover, &:focus-within {
+            border-color: ${
+              error ? colors.negative[1] : input.border.color.typed
+            };
+          }
+        `
     }
   `}
 `;
