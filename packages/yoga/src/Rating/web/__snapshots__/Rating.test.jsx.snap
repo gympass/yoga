@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
+exports[`<Rating /> Snapshots should match snapshot when mouse over 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -10,9 +10,82 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
   height: 12px;
 }
 
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 svg {
+  pointer-events: none;
+}
+
 <div>
   <div
     class="c0"
+    height="12"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      style="margin-left: 4px;"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 76px;
+  height: 12px;
+  pointer-events: none;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 svg {
+  pointer-events: none;
+}
+
+<div>
+  <div
+    class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -59,215 +132,230 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 76px;
-  height: 12px;
+  width: 136px;
+  height: 24px;
+  pointer-events: none;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 svg {
+  pointer-events: none;
 }
 
 <div>
   <div
     class="c0"
-    width="76"
+    height="24"
+    readonly=""
+    width="136"
   >
     <svg
       fill="#C5C5D6"
-      height="12"
-      viewBox="0 0 12 12"
-      width="12"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
   </div>
   <div
     class="c0"
-    width="76"
+    height="24"
+    readonly=""
+    width="136"
   >
     <svg
       fill="#FFC24C"
-      height="12"
-      viewBox="0 0 12 12"
-      width="12"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
   </div>
   <div
     class="c0"
-    width="76"
+    height="24"
+    readonly=""
+    width="136"
   >
     <svg
       fill="#FFC24C"
-      height="12"
-      viewBox="0 0 12 12"
-      width="12"
+      height="24"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#FFC24C"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
-      height="12"
+      height="24"
       style="margin-left: 4px;"
-      viewBox="0 0 12 12"
-      width="12"
+      viewBox="0 0 24 24"
+      width="24"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
   </div>
@@ -282,11 +370,22 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
   display: inline-flex;
   width: 44px;
   height: 12px;
+  pointer-events: none;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 svg {
+  pointer-events: none;
 }
 
 <div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -312,6 +411,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -343,6 +444,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -368,6 +471,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -399,6 +504,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -424,6 +531,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -455,6 +564,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -489,11 +600,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   display: inline-flex;
   width: 76px;
   height: 12px;
+  pointer-events: none;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 svg {
+  pointer-events: none;
 }
 
 <div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -533,6 +655,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -578,6 +702,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -617,6 +743,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -662,6 +790,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -707,6 +837,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -752,6 +884,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -797,6 +931,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -842,6 +978,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -887,6 +1025,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -932,6 +1072,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -977,6 +1119,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1022,6 +1166,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1061,6 +1207,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1106,6 +1254,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1145,6 +1295,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1190,6 +1342,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1229,6 +1383,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
