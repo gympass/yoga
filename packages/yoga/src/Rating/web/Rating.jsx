@@ -1,15 +1,27 @@
-import React from 'react';
-import styled, { withTheme } from 'styled-components';
-import { number, func } from 'prop-types';
+/* eslint-disable jsx-a11y/mouse-events-have-key-events */
 
+import React, { useState, useRef } from 'react';
+import styled, { withTheme } from 'styled-components';
+import { number, func, shape, bool } from 'prop-types';
 import { Star } from '@gympass/yoga-icons';
 
-const SVG_DEFAULT_SIZE = 12;
+import { max as maxPropType } from '../../shared';
 
 const RatingWrapper = styled.div`
   display: inline-flex;
+
+  :hover {
+    cursor: pointer;
+  }
+
+  svg {
+    pointer-events: none;
+  }
+
   ${({
     width,
+    height,
+    readOnly,
     theme: {
       yoga: {
         components: { rating },
@@ -17,101 +29,158 @@ const RatingWrapper = styled.div`
     },
   }) => `
     width: ${width}px;
-    height: ${rating.icon.size}px;
+    height: ${height}px;
+
+    ${readOnly ? 'pointer-events: none;' : ''}
+
+    svg {
+      margin-left: ${rating.gutter / 2}px;
+      margin-right: ${rating.gutter / 2}px;
+    }
   `}
 `;
 
 /** Use the Rating component to view other people's opinions and experiences. */
 const Rating = ({
   value,
-  icon: Icon,
   max,
+  readOnly,
+  onRate,
+  onMouseOver,
+  onMouseMove,
+  onMouseLeave,
   theme: {
     yoga: {
-      colors: { gray },
+      colors,
       components: { rating },
     },
   },
+  icon: { type: Icon, size: iconSize = rating.icon.size },
   ...rest
-}) => (
-  <RatingWrapper
-    width={rating.gutter * (max - 1) + rating.icon.size * max}
-    {...rest}
-  >
-    {Array.from({ length: max }, (_, i) => {
-      const diff = i + 1 - value;
-      let width;
+}) => {
+  const wrapperRef = useRef(null);
+  const [hover, setHover] = useState(false);
+  const [currentRating, setCurrentRating] = useState(0);
 
-      if (diff <= 0) {
-        return (
-          <Icon
-            fill={rating.backgroundColor}
-            key={`filled-${i}`}
-            width={rating.icon.size}
-            height={rating.icon.size}
-            viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
-            style={{
-              marginLeft: i !== 0 ? rating.gutter : undefined,
-            }}
-          />
+  return (
+    <RatingWrapper
+      width={rating.gutter * (max - 1) + iconSize * max}
+      height={iconSize}
+      mouseOver={hover}
+      readOnly={readOnly}
+      {...rest}
+      onMouseOver={e => {
+        setHover(true);
+        onMouseOver(e);
+      }}
+      onMouseMove={e => {
+        setCurrentRating(
+          Math.ceil(
+            (e.clientX - e.target.offsetLeft) /
+              (wrapperRef.current.offsetWidth / max),
+          ) || 1,
         );
-      }
 
-      if (diff > 0 && diff < 1) {
-        width = (1 - diff) * rating.icon.size;
-        const dWidth = diff * rating.icon.size;
-        const wViewBox = SVG_DEFAULT_SIZE * (1 - diff);
-        const dViewBox = SVG_DEFAULT_SIZE * diff;
+        onMouseMove(e);
+      }}
+      onMouseLeave={e => {
+        setHover(false);
+        setCurrentRating(0);
+        onMouseLeave(e);
+      }}
+      onClick={() => onRate(currentRating)}
+      ref={wrapperRef}
+    >
+      {Array.from({ length: max }, (_, i) => {
+        const diff = i + 1 - value;
+        let width;
 
-        return (
-          <React.Fragment key={`half-${i}`}>
+        if (currentRating >= i + 1 || (!hover && diff <= 0)) {
+          return (
             <Icon
               fill={rating.backgroundColor}
-              width={width}
-              height={rating.icon.size}
-              viewBox={`0 0 ${wViewBox} ${SVG_DEFAULT_SIZE}`}
-              style={{
-                marginLeft: i !== 0 ? rating.gutter : undefined,
-              }}
+              key={`filled-${i}`}
+              width={iconSize}
+              height={iconSize}
+              viewBox={`0 0 ${iconSize} ${iconSize}`}
             />
-            <Icon
-              fill={gray[5]}
-              width={dWidth}
-              height={rating.icon.size}
-              viewBox={`${wViewBox} 0 ${dViewBox} ${SVG_DEFAULT_SIZE}`}
-            />
-          </React.Fragment>
-        );
-      }
+          );
+        }
 
-      return (
-        <Icon
-          fill={gray[5]}
-          key={`unfilled-${i}`}
-          width={rating.icon.size}
-          height={rating.icon.size}
-          viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
-          style={{
-            marginLeft: i !== 0 ? rating.gutter : undefined,
-          }}
-        />
-      );
-    })}
-  </RatingWrapper>
-);
+        if (!hover && diff > 0 && diff < 1) {
+          width = (1 - diff) * iconSize;
+          const dWidth = diff * iconSize;
+          const wViewBox = iconSize * (1 - diff);
+          const dViewBox = iconSize * diff;
+
+          return (
+            <React.Fragment key={`half-${i}`}>
+              <Icon
+                fill={rating.backgroundColor}
+                width={width}
+                height={iconSize}
+                viewBox={`0 0 ${wViewBox} ${iconSize}`}
+                style={{
+                  marginRight: 'unset',
+                }}
+              />
+              <Icon
+                fill={colors.gray[5]}
+                width={dWidth}
+                height={iconSize}
+                viewBox={`${wViewBox} 0 ${dViewBox} ${iconSize}`}
+                style={{
+                  marginLeft: 'unset',
+                }}
+              />
+            </React.Fragment>
+          );
+        }
+
+        return (
+          <Icon
+            fill={colors.gray[5]}
+            key={`unfilled-${i}`}
+            width={iconSize}
+            height={iconSize}
+            viewBox={`0 0 ${iconSize} ${iconSize}`}
+          />
+        );
+      })}
+    </RatingWrapper>
+  );
+};
 
 Rating.propTypes = {
   value: number,
   /** The icon to display */
-  icon: func,
+  icon: shape({
+    type: func,
+    size: maxPropType(24),
+  }),
   /** Maximum rating */
   max: number,
+  /** false to make it interactable */
+  readOnly: bool,
+  /** Event to be fired on click */
+  onRate: func,
+  onMouseOver: func,
+  onMouseMove: func,
+  onMouseLeave: func,
 };
 
 Rating.defaultProps = {
   value: undefined,
-  icon: Star,
+  icon: {
+    type: Star,
+    size: 12,
+  },
   max: 5,
+  readOnly: true,
+  onRate: rating => {}, // eslint-disable-line no-unused-vars
+  onMouseOver: () => {},
+  onMouseMove: () => {},
+  onMouseLeave: () => {},
 };
 
 export default withTheme(Rating);

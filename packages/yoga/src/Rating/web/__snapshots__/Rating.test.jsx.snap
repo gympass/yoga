@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
+exports[`<Rating /> Snapshots should match snapshot when mouse over 1`] = `
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -10,9 +10,88 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
   height: 12px;
 }
 
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 svg {
+  pointer-events: none;
+}
+
+.c0 svg {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
 <div>
   <div
     class="c0"
+    height="12"
+    width="76"
+  >
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#FFC24C"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+    <svg
+      fill="#C5C5D6"
+      height="12"
+      viewBox="0 0 12 12"
+      width="12"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 76px;
+  height: 12px;
+  pointer-events: none;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 svg {
+  pointer-events: none;
+}
+
+.c0 svg {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+<div>
+  <div
+    class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -24,28 +103,24 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
@@ -61,11 +136,27 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
   display: inline-flex;
   width: 76px;
   height: 12px;
+  pointer-events: none;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 svg {
+  pointer-events: none;
+}
+
+.c0 svg {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 <div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -75,66 +166,64 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -144,66 +233,64 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -213,61 +300,57 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     >
       <circle
-        cx="6"
-        cy="6"
-        r="6"
+        cx="12"
+        cy="12"
+        r="12"
       />
     </svg>
   </div>
@@ -282,11 +365,27 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
   display: inline-flex;
   width: 44px;
   height: 12px;
+  pointer-events: none;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 svg {
+  pointer-events: none;
+}
+
+.c0 svg {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 <div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -298,20 +397,20 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -329,20 +428,20 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -354,20 +453,20 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -379,7 +478,6 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 6 12"
       width="6"
     />
@@ -392,13 +490,14 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -410,20 +509,20 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -435,14 +534,12 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 6 12"
       width="6"
     />
@@ -455,6 +552,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="44"
   >
     <svg
@@ -466,14 +565,12 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
@@ -489,11 +586,27 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   display: inline-flex;
   width: 76px;
   height: 12px;
+  pointer-events: none;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 svg {
+  pointer-events: none;
+}
+
+.c0 svg {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 <div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -505,34 +618,32 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -550,34 +661,32 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -589,34 +698,32 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -628,7 +735,6 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 1.200000000000001 12"
       width="1.200000000000001"
     />
@@ -641,27 +747,26 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -673,7 +778,6 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 2.3999999999999995 12"
       width="2.3999999999999995"
     />
@@ -686,27 +790,26 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -718,7 +821,6 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 3.6000000000000005 12"
       width="3.6000000000000005"
     />
@@ -731,27 +833,26 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -763,7 +864,6 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 4.799999999999999 12"
       width="4.799999999999999"
     />
@@ -776,27 +876,26 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -808,7 +907,6 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 6 12"
       width="6"
     />
@@ -821,27 +919,26 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -853,7 +950,6 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 7.200000000000001 12"
       width="7.200000000000001"
     />
@@ -866,27 +962,26 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -898,7 +993,6 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 8.399999999999999 12"
       width="8.399999999999999"
     />
@@ -911,27 +1005,26 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -943,7 +1036,6 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 9.600000000000001 12"
       width="9.600000000000001"
     />
@@ -956,27 +1048,26 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -988,7 +1079,6 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 10.799999999999999 12"
       width="10.799999999999999"
     />
@@ -1001,27 +1091,26 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1033,34 +1122,32 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1072,14 +1159,12 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 6 12"
       width="6"
     />
@@ -1092,20 +1177,20 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1117,34 +1202,32 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1156,21 +1239,18 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 6 12"
       width="6"
     />
@@ -1183,13 +1263,14 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1201,34 +1282,32 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#C5C5D6"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
   </div>
   <div
     class="c0"
+    height="12"
+    readonly=""
     width="76"
   >
     <svg
@@ -1240,28 +1319,24 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 12 12"
       width="12"
     />
     <svg
       fill="#FFC24C"
       height="12"
-      style="margin-left: 4px;"
       viewBox="0 0 6 12"
       width="6"
     />
