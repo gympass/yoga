@@ -13,6 +13,17 @@ describe('<Rating />', () => {
           <Rating />
         </ThemeProvider>,
       );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot when it is not readOnly', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Rating readOnly={false} />
+        </ThemeProvider>,
+      );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -41,6 +52,7 @@ describe('<Rating />', () => {
           <Rating value={4.5} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -56,23 +68,25 @@ describe('<Rating />', () => {
           <Rating max={3} value={3} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
     it('should match snapshot with different icon', () => {
       const CircleIcon = props => (
         <Svg {...props}>
-          <Circle cx={6} cy={6} r={6} />
+          <Circle cx={12} cy={12} r={12} />
         </Svg>
       );
 
       const { container } = render(
         <ThemeProvider>
-          <Rating icon={CircleIcon} value={0} />
-          <Rating icon={CircleIcon} value={1} />
-          <Rating icon={CircleIcon} value={2} />
+          <Rating icon={{ type: CircleIcon }} value={0} />
+          <Rating icon={{ type: CircleIcon }} value={1} />
+          <Rating icon={{ type: CircleIcon }} value={2} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
   });
