@@ -65,7 +65,6 @@ const TextArea = React.forwardRef(
     const textAreaRef = ref || useRef(null);
 
     return (
-      // eslint-disable-next-line
       <Root
         className={className}
         style={style}
