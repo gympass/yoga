@@ -51,7 +51,7 @@ const Rating = ({
   onMouseLeave,
   theme: {
     yoga: {
-      colors: { gray },
+      colors,
       components: { rating },
     },
   },
@@ -125,7 +125,7 @@ const Rating = ({
                 }}
               />
               <Icon
-                fill={gray[5]}
+                fill={colors.gray[5]}
                 width={dWidth}
                 height={iconSize}
                 viewBox={`${wViewBox} 0 ${dViewBox} ${iconSize}`}
@@ -139,7 +139,7 @@ const Rating = ({
 
         return (
           <Icon
-            fill={gray[5]}
+            fill={colors.gray[5]}
             key={`unfilled-${i}`}
             width={iconSize}
             height={iconSize}
