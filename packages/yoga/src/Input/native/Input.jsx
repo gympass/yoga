@@ -44,7 +44,6 @@ const Field = styled.TextInput(
     },
   }) => `
     width: ${full ? '100%' : `${input.width}px`};
-    height: ${input.height}px;
 
     padding-top: ${input.padding.top}px;
     padding-right: ${
@@ -256,7 +255,7 @@ const Input = ({
     );
   }, [focused, typed]);
 
-  const { height, ...styles } = Array.isArray(style)
+  const { height = input.height, ...styles } = Array.isArray(style)
     ? Object.assign({}, ...style)
     : style;
 
