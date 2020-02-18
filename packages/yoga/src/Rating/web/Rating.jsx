@@ -18,11 +18,25 @@ const RatingWrapper = styled.div`
     pointer-events: none;
   }
 
-  ${({ width, height, readOnly }) => `
+  ${({
+    width,
+    height,
+    readOnly,
+    theme: {
+      yoga: {
+        components: { rating },
+      },
+    },
+  }) => `
     width: ${width}px;
     height: ${height}px;
 
     ${readOnly ? 'pointer-events: none;' : ''}
+
+    svg {
+      margin-left: ${rating.gutter / 2}px;
+      margin-right: ${rating.gutter / 2}px;
+    }
   `}
 `;
 
@@ -89,9 +103,6 @@ const Rating = ({
               width={iconSize}
               height={iconSize}
               viewBox={`0 0 ${iconSize} ${iconSize}`}
-              style={{
-                marginLeft: i !== 0 ? rating.gutter : undefined,
-              }}
             />
           );
         }
@@ -110,7 +121,7 @@ const Rating = ({
                 height={iconSize}
                 viewBox={`0 0 ${wViewBox} ${iconSize}`}
                 style={{
-                  marginLeft: i !== 0 ? rating.gutter : undefined,
+                  marginRight: 'unset',
                 }}
               />
               <Icon
@@ -133,9 +144,6 @@ const Rating = ({
             width={iconSize}
             height={iconSize}
             viewBox={`0 0 ${iconSize} ${iconSize}`}
-            style={{
-              marginLeft: i !== 0 ? rating.gutter : undefined,
-            }}
           />
         );
       })}
