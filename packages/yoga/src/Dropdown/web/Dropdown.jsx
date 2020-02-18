@@ -1,75 +1,163 @@
 import React from 'react';
 import styled from 'styled-components';
 import Downshift from 'downshift';
-import { arrayOf, number, func, shape, string } from 'prop-types';
+import { arrayOf, func, shape, string, bool } from 'prop-types';
 
-import { ArrowDown } from '@gympass/yoga-icons';
+import { Arrow } from '@gympass/yoga-icons';
 
 const Wrapper = styled.div`
   ${({
-    isOpen,
     theme: {
       yoga: {
-        colors: { primary },
+        components: { dropdown },
       },
     },
   }) => `
     position: relative;
+    display: block;
 
-    backgorund: #fff;
-    border: 1px solid #9898a6;
-    border-radius: 8px;
+    width: ${dropdown.width}px;
   `}
 `;
 
 const Selector = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  ${({
+    disabled,
+    theme: {
+      yoga: {
+        components: { dropdown },
+      },
+    },
+  }) => `
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  padding: 14px 0 14px 16px;
+    padding: ${dropdown.selector.padding.top}px 
+      ${dropdown.selector.padding.right}px
+      ${dropdown.selector.padding.bottom}px
+      ${dropdown.selector.padding.left}px;
+
+    background-color: ${dropdown.selector.background};
+    border-radius: ${dropdown.selector.border.radius}px;
+    border: 1px solid ${
+      disabled
+        ? dropdown.disabled.selector.border.color
+        : dropdown.selector.border.color
+    };
+  `}
 `;
 
 const Input = styled.input`
-  width: 282px;
+  ${({
+    disabled,
+    selectedItem,
+    theme: {
+      yoga: {
+        baseFont,
+        components: { dropdown },
+      },
+    },
+  }) => `
+    width: 100%;
+    padding: 0;
 
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 
-  font-family: Open Sans;
-  font-size: 14px;
-  line-height: 20px;
-  color: #9898a6;
+    font-family: ${baseFont.family};
+    font-size: ${dropdown.input.font.size}px;
+    line-height: ${dropdown.input.font.lineHeight}px;
+    cursor: ${disabled ? 'not-allowed' : 'pointer'};
+
+    &, &::placeholder {
+      ${
+        disabled
+          ? `color: ${dropdown.disabled.input.font.color};`
+          : `color: ${dropdown.input.font.color};`
+      }
+      ${
+        selectedItem
+          ? `color: ${dropdown.selected.input.font.color};`
+          : `color: ${dropdown.input.font.color};`
+      }
+    }
+  `}
 `;
 
 const Button = styled.button`
-  display: flex;
-  align-content: center;
-  justify-content: flex-end;
-  position: absolute;
-  top: 0;
-  left: 0;
+  ${({
+    disabled,
+    theme: {
+      yoga: {
+        components: { dropdown },
+      },
+    },
+  }) => `
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  width: 100%;
-  height: 100%;
-  padding-right: 14px;
+    width: 100%;
+    height: 100%;
+    padding-right: ${dropdown.button.paddingRight}px;
 
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: ${disabled ? 'not-allowed' : 'pointer'};
+  `}
+`;
+
+const ArrowIcon = styled(Arrow)`
+  ${({
+    isOpen,
+    disabled,
+    theme: {
+      yoga: {
+        colors: { primary },
+        components: { dropdown },
+      },
+    },
+  }) => `
+    fill: ${disabled ? dropdown.disabled.arrow.fill : primary[3]};
+    transform: rotate(${isOpen ? '180deg' : '0'});
+  `}
 `;
 
 const OptionsList = styled.ul`
-  width: 100%;
-  height: 140px;
-  margin: 0;
-  padding: 0;
-  overflow-x: scroll;
-  flex-direction: column;
+  ${({
+    theme: {
+      yoga: {
+        components: { dropdown },
+      },
+    },
+  }) => `
+    position: absolute;
+    top: ${dropdown.optionsList.top}px;
+    z-index: 1;
 
-  list-style-type: none;
+    width: 100%;
+    max-height: 140px;
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll;
+    list-style-type: none;
+
+    background: ${dropdown.optionsList.backgroundColor};
+    border-bottom: 1px solid ${dropdown.optionsList.border.color};
+    border-left: 1px solid ${dropdown.optionsList.border.color};
+    border-right: 1px solid ${dropdown.optionsList.border.color};
+    border-radius: 
+      ${dropdown.optionsList.border.radius.top}px 
+      ${dropdown.optionsList.border.radius.right}px 
+      ${dropdown.optionsList.border.radius.bottom}px 
+      ${dropdown.optionsList.border.radius.left}px
+  `}
 `;
 
 const Option = styled.li`
@@ -77,42 +165,64 @@ const Option = styled.li`
     isSelected,
     theme: {
       yoga: {
-        colors: { primary },
+        baseFont,
+        components: { dropdown },
       },
     },
   }) => `
     display: flex;
-    height: 40px;
-    padding: 0 16px;
     align-items: center;
-    
-    font-family: Open Sans;
-    font-size: 14px;
-    font-weight: ${isSelected ? 'bold' : 'normal'}; 
-    line-height: 20px;
-    color: ${isSelected ? '#41414A' : '#6B6B78'};
+    height: ${dropdown.option.height}px;
+    padding: 
+      ${dropdown.option.padding.top}px 
+      ${dropdown.option.padding.right}px 
+      ${dropdown.option.padding.bottom}px 
+      ${dropdown.option.padding.left}px;
+    cursor: pointer;
+  
+    font-family: ${baseFont.family};
+    font-size: ${dropdown.option.font.size}px;
+    line-height: ${dropdown.option.font.lineHeight}px;
+    font-weight: ${
+      isSelected
+        ? `${dropdown.selected.option.font.weight}`
+        : `${dropdown.option.font.weight}`
+    }; 
+    color: ${
+      isSelected
+        ? `${dropdown.selected.option.font.color}`
+        : `${dropdown.option.font.color}`
+    };
 
     &:hover {
-      background-color: ${isSelected ? '#E6E6F0' : '#F5F5FA'};  
+      background-color: ${
+        isSelected
+          ? `${dropdown.hover.option.backgroundColor.selected}`
+          : `${dropdown.hover.option.backgroundColor.default}`
+      }; 
     }
-
-    cursor: pointer;
-    transition: 200ms all ease-out;  
-
     &:last-child {
-      border-radius: 0 0 8px 8px;
+      border-radius: 
+        ${dropdown.option.border.radius.top}px 
+        ${dropdown.option.border.radius.right}px 
+        ${dropdown.option.border.radius.bottom}px 
+        ${dropdown.option.border.radius.left}px
     }
   `}
 `;
 
-const Dropdown = ({ label, options, selectedOption, onChange }) => (
+const getSelectedOption = options => {
+  const filteredOptions = options.filter(item => item.selected === true);
+  return filteredOptions.length > 0 ? filteredOptions[0] : null;
+};
+
+const Dropdown = ({ label, disabled, options, onChange, ...rest }) => (
   <>
     <Downshift
-      initialSelectedItem={selectedOption}
+      initialSelectedItem={getSelectedOption(options)}
+      selectedItemChanged={(prevItem, item) => prevItem !== item}
+      itemToString={item => (item ? item.label : '')}
       onChange={onChange}
-      itemToString={item => {
-        return item ? item.label : '';
-      }}
     >
       {({
         getInputProps,
@@ -123,15 +233,21 @@ const Dropdown = ({ label, options, selectedOption, onChange }) => (
         isOpen,
         selectedItem,
       }) => (
-        <Wrapper isOpen={isOpen} {...getRootProps()}>
-          <Selector>
+        <Wrapper {...getRootProps()} {...rest}>
+          <Selector isOpen={isOpen} disabled={disabled}>
             <Input
               readOnly
-              placeholder={selectedOption.label || label}
+              placeholder={label}
+              selectedItem={selectedItem}
+              disabled={disabled}
               {...getInputProps()}
             />
-            <Button {...getToggleButtonProps()}>
-              <ArrowDown />
+            <Button
+              isOpen={isOpen}
+              disabled={disabled}
+              {...getToggleButtonProps()}
+            >
+              <ArrowIcon isOpen={isOpen} disabled={disabled} />
             </Button>
           </Selector>
 
@@ -156,20 +272,21 @@ const Dropdown = ({ label, options, selectedOption, onChange }) => (
   </>
 );
 
-const optionProp = shape({
-  label: string,
-  value: string,
-});
-
 Dropdown.propTypes = {
   label: string,
-  options: arrayOf(optionProp).isRequired,
-  selectedOption: optionProp.isRequired,
+  disabled: bool,
+  options: arrayOf(
+    shape({
+      label: string,
+      value: string,
+    }),
+  ).isRequired,
   onChange: func,
 };
 
 Dropdown.defaultProps = {
   label: '',
+  disabled: false,
   onChange: () => {},
 };
 

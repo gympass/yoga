@@ -5,7 +5,7 @@ import TriangleAlert from './triangle_alert.svg';
 import Close from './close.svg';
 import Visibility from './visibility.svg';
 import VisibilityOff from './visibility_off.svg';
-import ArrowDown from './arrow_down.svg';
+import Arrow from './arrow.svg';
 
 export {
   Star,
@@ -15,5 +15,5 @@ export {
   Close,
   Visibility,
   VisibilityOff,
-  ArrowDown,
+  Arrow,
 };
