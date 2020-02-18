@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.13.0...@gympass/yoga@1.13.1) (2020-02-18)
+
+### Bug Fixes
+
+- **rating:** add default icon to rating destructuring ([ebeeeec](https://github.com/Gympass/yoga/commit/ebeeeec7d1a1a2243bf4cb46d0a632a25be55e4b))
+
 # [1.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.12.2...@gympass/yoga@1.13.0) (2020-02-18)
 
 ### Bug Fixes
