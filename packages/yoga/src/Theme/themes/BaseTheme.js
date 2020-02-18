@@ -15,6 +15,7 @@ import {
   text,
   rating,
   tag,
+  dropdown,
 } from './components';
 
 const {
@@ -98,6 +99,14 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       radii,
       fontSizes,
       fontWeights,
+    }),
+    dropdown: dropdown({
+      colors,
+      fontSizes,
+      fontWeights,
+      lineHeights,
+      radii,
+      spacing,
     }),
   };
 

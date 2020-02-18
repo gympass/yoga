@@ -5,19 +5,20 @@ Gympass `<Dropdown />` description
 ### Usage
 
 ```javascript
-<Dropdown
-  label="Selecione o cara Storo"
-  selectedOption={{ label: 'Victor', value: 'Victor' }}
-  options={[
-    { label: 'Victor', value: 'Victor' },
-    { label: 'Gabin', value: 'Gabin' },
-    { label: 'Alliso', value: 'alli' },
-    { label: 'Alliso', value: 'alli2' },
-    { label: 'Alliso', value: 'alli3' },
-    { label: 'Alliso', value: 'alli4' },
-    { label: 'Alliso', value: 'alli5' },
-  ]}
-/>
+<section style={{ display: 'flex' }}>
+  <Dropdown
+    label="Find an activity to love"
+    options={[
+      { label: 'Yoga', value: 'yoga' },
+      { label: 'Crossfit', value: 'crossfit' },
+      { label: 'Tenis', value: 'tenis' },
+      { label: 'Soccer', value: 'soccer' },
+      { label: 'Pilates', value: 'pilates' },
+      { label: 'Run', value: 'running' },
+    ]}
+    style={{ marginLeft: 20, width: 220 }}
+  />
+</section>
 ```
 
 ### Props
