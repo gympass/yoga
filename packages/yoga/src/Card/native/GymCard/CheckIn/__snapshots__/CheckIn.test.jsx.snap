@@ -122,7 +122,8 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               "borderWidth": 0,
             },
             Object {
-              "marginLeft": undefined,
+              "marginLeft": 2,
+              "marginRight": 2,
             },
             Object {
               "opacity": 1,
@@ -201,7 +202,8 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               "borderWidth": 0,
             },
             Object {
-              "marginLeft": 4,
+              "marginLeft": 2,
+              "marginRight": 2,
             },
             Object {
               "opacity": 1,
@@ -280,7 +282,8 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               "borderWidth": 0,
             },
             Object {
-              "marginLeft": 4,
+              "marginLeft": 2,
+              "marginRight": 2,
             },
             Object {
               "opacity": 1,
@@ -359,7 +362,8 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               "borderWidth": 0,
             },
             Object {
-              "marginLeft": 4,
+              "marginLeft": 2,
+              "marginRight": 2,
             },
             Object {
               "opacity": 1,
@@ -438,7 +442,8 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               "borderWidth": 0,
             },
             Object {
-              "marginLeft": 4,
+              "marginLeft": 2,
+              "marginRight": 2,
             },
             Object {
               "opacity": 1,
@@ -758,7 +763,8 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               "borderWidth": 0,
             },
             Object {
-              "marginLeft": undefined,
+              "marginLeft": 2,
+              "marginRight": 2,
             },
             Object {
               "opacity": 1,
@@ -837,7 +843,8 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               "borderWidth": 0,
             },
             Object {
-              "marginLeft": 4,
+              "marginLeft": 2,
+              "marginRight": 2,
             },
             Object {
               "opacity": 1,
@@ -916,7 +923,8 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               "borderWidth": 0,
             },
             Object {
-              "marginLeft": 4,
+              "marginLeft": 2,
+              "marginRight": 2,
             },
             Object {
               "opacity": 1,
@@ -995,7 +1003,8 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               "borderWidth": 0,
             },
             Object {
-              "marginLeft": 4,
+              "marginLeft": 2,
+              "marginRight": 2,
             },
             Object {
               "opacity": 1,
@@ -1074,7 +1083,8 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               "borderWidth": 0,
             },
             Object {
-              "marginLeft": 4,
+              "marginLeft": 2,
+              "marginRight": 2,
             },
             Object {
               "opacity": 1,

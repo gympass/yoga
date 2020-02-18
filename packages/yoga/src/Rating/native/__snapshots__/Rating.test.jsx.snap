@@ -20,11 +20,11 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -43,7 +43,8 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -122,7 +123,8 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -201,7 +203,8 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -280,7 +283,8 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -359,7 +363,8 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -445,11 +450,11 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -468,7 +473,8 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -547,7 +553,8 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -626,7 +633,8 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -705,7 +713,8 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -784,7 +793,8 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -870,11 +880,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -893,7 +903,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -1016,7 +1027,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -1139,7 +1151,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -1262,7 +1275,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -1385,7 +1399,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -1502,11 +1517,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -1525,7 +1540,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -1648,7 +1664,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -1771,7 +1788,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -1894,7 +1912,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -2017,7 +2036,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -2134,11 +2154,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -2157,7 +2177,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -2280,7 +2301,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -2403,7 +2425,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -2526,7 +2549,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -2649,7 +2673,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -2779,11 +2804,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 44,
+          "width": 80,
         },
       ]
     }
-    width={44}
+    width={80}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -2802,7 +2827,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -2881,7 +2907,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -2960,7 +2987,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -3033,11 +3061,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 44,
+          "width": 80,
         },
       ]
     }
-    width={44}
+    width={80}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -3056,7 +3084,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -3134,7 +3162,9 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -3212,7 +3242,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -3291,7 +3322,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -3364,11 +3396,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 44,
+          "width": 80,
         },
       ]
     }
-    width={44}
+    width={80}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -3387,7 +3419,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -3466,7 +3499,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -3545,7 +3579,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -3618,11 +3653,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 44,
+          "width": 80,
         },
       ]
     }
-    width={44}
+    width={80}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -3641,7 +3676,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -3720,671 +3756,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 12,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={6}
-      width={12}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={12}
-      fill="#C5C5D6"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={6}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 12,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={6}
-      width={12}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4291151318,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#C5C5D6"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4291151318,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-  </View>
-  <View
-    height={24}
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 24,
-          "justifyContent": "center",
-          "width": 44,
-        },
-      ]
-    }
-    width={44}
-  >
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": undefined,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#C5C5D6"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4291151318,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-  </View>
-  <View
-    height={24}
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 24,
-          "justifyContent": "center",
-          "width": 44,
-        },
-      ]
-    }
-    width={44}
-  >
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": undefined,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={12}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -4462,7 +3834,681 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 12,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={6}
+      width={12}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4291151318,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#C5C5D6"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4291151318,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+  </View>
+  <View
+    height={24}
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 80,
+        },
+      ]
+    }
+    width={80}
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#C5C5D6"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4291151318,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+  </View>
+  <View
+    height={24}
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 80,
+        },
+      ]
+    }
+    width={80}
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={12}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 12,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={6}
+      width={12}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={12}
+      fill="#C5C5D6"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={6}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -4534,11 +4580,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 44,
+          "width": 80,
         },
       ]
     }
-    width={44}
+    width={80}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -4557,7 +4603,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -4636,7 +4683,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -4715,7 +4763,8 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -4801,11 +4850,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -4824,7 +4873,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -4903,7 +4953,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -4982,7 +5033,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -5061,7 +5113,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -5140,7 +5193,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -5213,11 +5267,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -5236,7 +5290,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -5314,7 +5368,9 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -5392,7 +5448,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -5471,7 +5528,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -5550,7 +5608,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -5629,7 +5688,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -5702,11 +5762,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -5725,7 +5785,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -5804,7 +5865,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -5883,7 +5945,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -5962,7 +6025,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -6041,7 +6105,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -6114,11 +6179,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -6137,7 +6202,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -6216,7 +6282,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -6294,7 +6360,9 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -6372,7 +6440,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -6451,7 +6520,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -6530,7 +6600,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -6603,11 +6674,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -6626,7 +6697,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -6705,7 +6777,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -6783,7 +6855,9 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -6861,7 +6935,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -6940,7 +7015,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -7019,7 +7095,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -7092,11 +7169,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -7115,7 +7192,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -7194,7 +7272,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -7272,7 +7350,9 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -7350,7 +7430,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -7429,7 +7510,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -7508,7 +7590,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -7581,11 +7664,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -7604,7 +7687,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -7683,7 +7767,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -7761,7 +7845,9 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -7839,7 +7925,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -7918,7 +8005,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -7997,7 +8085,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -8070,11 +8159,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -8093,7 +8182,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -8172,7 +8262,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -8250,7 +8340,9 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -8328,7 +8420,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -8407,7 +8500,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -8486,7 +8580,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -8559,11 +8654,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -8582,7 +8677,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -8661,7 +8757,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -8739,7 +8835,9 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -8817,7 +8915,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -8896,7 +8995,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -8975,7 +9075,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -9048,11 +9149,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -9071,7 +9172,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -9150,7 +9252,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -9228,7 +9330,9 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -9306,7 +9410,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -9385,7 +9490,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -9464,7 +9570,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -9537,11 +9644,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -9560,7 +9667,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -9639,7 +9747,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -9717,7 +9825,9 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -9795,7 +9905,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -9874,7 +9985,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -9953,7 +10065,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -10026,11 +10139,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -10049,7 +10162,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -10128,7 +10242,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -10206,7 +10320,9 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -10284,7 +10400,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -10363,7 +10480,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -10442,7 +10560,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -10515,11 +10634,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -10538,7 +10657,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -10617,7 +10737,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -10696,7 +10817,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -10775,7 +10897,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -10854,7 +10977,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -10927,11 +11051,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -10950,7 +11074,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -11029,7 +11154,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -11108,7 +11234,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -11186,7 +11312,9 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
@@ -11264,7 +11392,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -11343,7 +11472,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -11416,11 +11546,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -11439,7 +11569,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -11518,7 +11649,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -11597,7 +11729,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -11676,7 +11809,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -11755,7 +11889,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -11828,11 +11963,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 76,
+          "width": 136,
         },
       ]
     }
-    width={76}
+    width={136}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -11851,7 +11986,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": undefined,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -11930,7 +12066,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -12009,7 +12146,8 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
+            "marginRight": 2,
           },
           Object {
             "opacity": 1,
@@ -12088,987 +12226,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "borderWidth": 0,
           },
           Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 12,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={6}
-      width={12}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={12}
-      fill="#C5C5D6"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={6}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 12,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={6}
-      width={12}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4291151318,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#C5C5D6"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4291151318,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-  </View>
-  <View
-    height={24}
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 24,
-          "justifyContent": "center",
-          "width": 76,
-        },
-      ]
-    }
-    width={76}
-  >
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": undefined,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#C5C5D6"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4291151318,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-  </View>
-  <View
-    height={24}
-    pointerEvents="none"
-    style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "height": 24,
-          "justifyContent": "center",
-          "width": 76,
-        },
-      ]
-    }
-    width={76}
-  >
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": undefined,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={24}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
-          },
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
-        ]
-      }
-      vbHeight={12}
-      vbWidth={12}
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294951500,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      align="xMidYMid"
-      bbHeight={24}
-      bbWidth={12}
-      fill="#FFC24C"
-      focusable={false}
-      height={24}
-      meetOrSlice={0}
-      minX={0}
-      minY={0}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Object {
-            "marginLeft": 4,
+            "marginLeft": 2,
           },
           Object {
             "opacity": 1,
@@ -13146,7 +12304,1001 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Object {
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 12,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={6}
+      width={12}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4291151318,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#C5C5D6"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4291151318,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+  </View>
+  <View
+    height={24}
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 136,
+        },
+      ]
+    }
+    width={136}
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#C5C5D6"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4291151318,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+  </View>
+  <View
+    height={24}
+    pointerEvents="none"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "height": 24,
+          "justifyContent": "center",
+          "width": 136,
+        },
+      ]
+    }
+    width={136}
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={24}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+            "marginRight": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 24,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={12}
+      width={24}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={12}
+      fill="#FFC24C"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginLeft": 2,
+          },
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": 24,
+            "width": 12,
+          },
+        ]
+      }
+      vbHeight={12}
+      vbWidth={6}
+      width={12}
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294951500,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={24}
+      bbWidth={12}
+      fill="#C5C5D6"
+      focusable={false}
+      height={24}
+      meetOrSlice={0}
+      minX={6}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "marginRight": 2,
+          },
           Object {
             "opacity": 1,
           },
