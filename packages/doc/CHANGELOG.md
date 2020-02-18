@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.14.3...@gympass/yoga-doc@0.15.0) (2020-02-18)
+
+### Bug Fixes
+
+- **input:** fix icons padding ([e3970c1](https://github.com/Gympass/yoga/commit/e3970c1361ed235cc5b3f999e51a0a7b3cd98bb0))
+
+### Features
+
+- **textarea:** create textarea component to web platform ([42c569c](https://github.com/Gympass/yoga/commit/42c569c61c772fb5d7c097c682fac458fa27e3ac))
+
 ## [0.14.3](https://github.com/Gympass/design-system/compare/@gympass/yoga-doc@0.14.2...@gympass/yoga-doc@0.14.3) (2020-02-14)
 
 ### Bug Fixes
