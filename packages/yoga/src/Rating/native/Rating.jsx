@@ -83,7 +83,7 @@ const Rating = ({
   return (
     <RatingWrapper
       height={iconSize}
-      width={rating.gutter * (max - 1) + rating.icon.size * max}
+      width={rating.gutter * (max - 1) + iconSize * max}
       pointerEvents={readOnly ? 'none' : 'auto'}
       {...rest}
       {...panResponder.panHandlers}
@@ -91,6 +91,7 @@ const Rating = ({
     >
       {Array.from({ length: max }, (_, i) => {
         const diff = i + 1 - value;
+        const margin = rating.gutter / 2;
 
         if (swipeRating >= i + 1 || (!swipping && diff <= 0)) {
           return (
@@ -101,7 +102,8 @@ const Rating = ({
               height={iconSize}
               viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
               style={{
-                marginLeft: i !== 0 ? rating.gutter : undefined,
+                marginLeft: margin,
+                marginRight: margin,
               }}
             />
           );
@@ -121,7 +123,7 @@ const Rating = ({
                 height={iconSize}
                 viewBox={`0 0 ${wViewBox} ${SVG_DEFAULT_SIZE}`}
                 style={{
-                  marginLeft: i !== 0 ? rating.gutter : undefined,
+                  marginLeft: margin,
                 }}
               />
               <Icon
@@ -129,6 +131,9 @@ const Rating = ({
                 width={dWidth}
                 height={iconSize}
                 viewBox={`${wViewBox} 0 ${dViewBox} ${SVG_DEFAULT_SIZE}`}
+                style={{
+                  marginRight: margin,
+                }}
               />
             </React.Fragment>
           );
@@ -142,7 +147,8 @@ const Rating = ({
             height={iconSize}
             viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
             style={{
-              marginLeft: i !== 0 ? rating.gutter : undefined,
+              marginLeft: margin,
+              marginRight: margin,
             }}
           />
         );
