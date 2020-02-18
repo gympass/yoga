@@ -1,3 +1,4 @@
+import textarea from './textarea';
 import input from './input';
 import progress from './progress';
 import stepper from './stepper';
@@ -14,6 +15,7 @@ import rating from './rating';
 import tag from './tag';
 
 export {
+  textarea,
   input,
   progress,
   stepper,

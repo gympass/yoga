@@ -5,6 +5,22 @@ import { Visibility, VisibilityOff } from '@gympass/yoga-icons';
 
 import Input from './Input';
 
+const ICON_SIZE = 24;
+
+const StyledInput = styled(Input)`
+  ${({
+    theme: {
+      yoga: {
+        components: { input },
+      },
+    },
+  }) => `
+    input {
+      padding-right: ${ICON_SIZE + input.padding.right}px;
+    }
+  `}
+`;
+
 const Wrapper = styled.div`
   position: relative;
   display: inline-block;
@@ -29,7 +45,7 @@ const IconWrapper = styled.div`
     top: 0;
     right: 0;
 
-    padding-right: ${spacing.xsmall}px;
+    padding-right: ${spacing.medium}px;
     padding-left: ${spacing.xsmall}px;
 
     height: ${input.height}px;
@@ -52,6 +68,7 @@ const IconWrapper = styled.div`
 
     svg {
       height: ${input.height}px;
+      width: 20px;
       fill: ${input.font.color.default};
 
       ${
@@ -88,7 +105,7 @@ const Password = ({ disabled, style, className, full, ...props }) => {
 
   return (
     <Wrapper style={style} className={className} full={full}>
-      <Input
+      <StyledInput
         {...props}
         disabled={disabled}
         full={full}
