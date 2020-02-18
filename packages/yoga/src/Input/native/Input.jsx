@@ -35,6 +35,7 @@ const Field = styled.TextInput(
     error,
     focus,
     full,
+    textContentType,
     typed,
     theme: {
       yoga: {
@@ -47,7 +48,9 @@ const Field = styled.TextInput(
 
     padding-top: ${input.padding.top}px;
     padding-right: ${
-      cleanable ? ICON_SIZE + input.padding.right : input.padding.right
+      cleanable || textContentType === 'password'
+        ? ICON_SIZE + input.padding.right
+        : input.padding.right
     }px;
     padding-bottom: ${input.padding.bottom}px;
     padding-left: ${input.padding.left}px;
@@ -199,6 +202,7 @@ const Input = ({
   maxLength,
   readOnly,
   style,
+  textContentType,
   value,
   onBlur,
   onChangeText,
@@ -273,6 +277,7 @@ const Input = ({
         style={{
           height,
         }}
+        textContentType={textContentType}
         typed={typed}
         value={inputValue}
         onChangeText={text => {
@@ -352,6 +357,7 @@ Input.propTypes = {
   /** maximum length (number of characters) of value */
   maxLength: number,
   readOnly: bool,
+  textContentType: string,
   value: string,
   style: oneOfType([shape({}), arrayOf(shape({}))]),
   onBlur: func,
@@ -371,6 +377,7 @@ Input.defaultProps = {
   maxLength: undefined,
   readOnly: false,
   style: {},
+  textContentType: undefined,
   value: undefined,
   onBlur: () => {},
   onChangeText: () => {},
