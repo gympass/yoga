@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.12.0...@gympass/yoga@1.12.1) (2020-02-18)
+
+### Bug Fixes
+
+- **input:** fix field height on native ([c57747d](https://github.com/Gympass/yoga/commit/c57747d892366f7bafd7b88677d588420506443f))
+
 # [1.12.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.11.2...@gympass/yoga@1.12.0) (2020-02-18)
 
 ### Bug Fixes
