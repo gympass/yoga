@@ -11,6 +11,7 @@ import Rating from './Rating';
 import Tag from './Tag';
 import Input from './Input';
 import Progress from './Progress';
+import TextArea from './TextArea';
 
 export {
   ThemeProvider,
@@ -30,4 +31,5 @@ export {
   Tag,
   Input,
   Progress,
+  TextArea,
 };
