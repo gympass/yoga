@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.12.2...@gympass/yoga@1.13.0) (2020-02-18)
+
+### Bug Fixes
+
+- **rating:** revisit how padding is setted on rating ([b840abc](https://github.com/Gympass/yoga/commit/b840abce40dbba5f95ba5df44eba89028698ae1b))
+
+### Features
+
+- **rating:** add events on rating ([cd13223](https://github.com/Gympass/yoga/commit/cd132234977cf5010e4ad7ede096babd01fb1150))
+- **rating:** add interaction on reating ([389947c](https://github.com/Gympass/yoga/commit/389947cc8d338403945aceee64a6313913d4063f))
+
 ## [1.12.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.12.1...@gympass/yoga@1.12.2) (2020-02-18)
 
 ### Bug Fixes

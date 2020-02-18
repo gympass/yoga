@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.15.3...@gympass/yoga-doc@0.16.0) (2020-02-18)
+
+### Bug Fixes
+
+- **rating:** revisit how padding is setted on rating ([b840abc](https://github.com/Gympass/yoga/commit/b840abce40dbba5f95ba5df44eba89028698ae1b))
+
+### Features
+
+- **rating:** add events on rating ([cd13223](https://github.com/Gympass/yoga/commit/cd132234977cf5010e4ad7ede096babd01fb1150))
+
 ## [0.15.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.15.2...@gympass/yoga-doc@0.15.3) (2020-02-18)
 
 **Note:** Version bump only for package @gympass/yoga-doc
