@@ -11,6 +11,7 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
   }
 >
   <View
+    height={24}
     pointerEvents="auto"
     style={
       Array [
@@ -19,11 +20,11 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -435,6 +436,7 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
   }
 >
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -443,11 +445,11 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -859,6 +861,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
   }
 >
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -867,11 +870,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -1490,6 +1493,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -1498,11 +1502,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -2121,6 +2125,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -2129,11 +2134,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -2765,6 +2770,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
   }
 >
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -2773,11 +2779,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 44,
         },
       ]
     }
-    width={80}
+    width={44}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -3018,6 +3024,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -3026,11 +3033,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 44,
         },
       ]
     }
-    width={80}
+    width={44}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -3348,6 +3355,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -3356,11 +3364,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 44,
         },
       ]
     }
-    width={80}
+    width={44}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -3601,6 +3609,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -3609,11 +3618,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 44,
         },
       ]
     }
-    width={80}
+    width={44}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -3931,6 +3940,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -3939,11 +3949,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 44,
         },
       ]
     }
-    width={80}
+    width={44}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -4184,6 +4194,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -4192,11 +4203,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 44,
         },
       ]
     }
-    width={80}
+    width={44}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -4514,6 +4525,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -4522,11 +4534,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 44,
         },
       ]
     }
-    width={80}
+    width={44}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -4780,6 +4792,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
   }
 >
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -4788,11 +4801,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -5191,6 +5204,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -5199,11 +5213,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -5679,6 +5693,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -5687,11 +5702,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -6090,6 +6105,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -6098,11 +6114,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -6578,6 +6594,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -6586,11 +6603,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -7066,6 +7083,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -7074,11 +7092,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -7554,6 +7572,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -7562,11 +7581,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -8042,6 +8061,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -8050,11 +8070,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -8530,6 +8550,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -8538,11 +8559,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -9018,6 +9039,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -9026,11 +9048,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -9506,6 +9528,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -9514,11 +9537,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -9994,6 +10017,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -10002,11 +10026,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -10482,6 +10506,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -10490,11 +10515,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -10893,6 +10918,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -10901,11 +10927,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -11381,6 +11407,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -11389,11 +11416,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -11792,6 +11819,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -11800,11 +11828,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -12280,6 +12308,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -12288,11 +12317,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -12691,6 +12720,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
     </RNSVGSvgView>
   </View>
   <View
+    height={24}
     pointerEvents="none"
     style={
       Array [
@@ -12699,11 +12729,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 76,
         },
       ]
     }
-    width={136}
+    width={76}
   >
     <RNSVGSvgView
       align="xMidYMid"
