@@ -1,8 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { TouchableWithoutFeedback, Animated, Easing } from 'react-native';
-import { func, string, bool, number } from 'prop-types';
+import {
+  func,
+  string,
+  bool,
+  number,
+  oneOfType,
+  shape,
+  arrayOf,
+} from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { Close } from '@gympass/yoga-icons';
+
+const ICON_SIZE = 24;
 
 const Wrapper = styled.View(
   ({
@@ -20,6 +30,7 @@ const Wrapper = styled.View(
 
 const Field = styled.TextInput(
   ({
+    cleanable,
     disabled,
     error,
     focus,
@@ -36,7 +47,9 @@ const Field = styled.TextInput(
     height: ${input.height}px;
 
     padding-top: ${input.padding.top}px;
-    padding-right: ${input.padding.right * 2}px;
+    padding-right: ${
+      cleanable ? ICON_SIZE + input.padding.right : input.padding.right
+    }px;
     padding-bottom: ${input.padding.bottom}px;
     padding-left: ${input.padding.left}px;
 
@@ -131,7 +144,7 @@ const CloseIcon = styled.View(
     top: 0px;
     right: 0px;
 
-    padding-right: ${spacing.xsmall}px;
+    padding-right: ${spacing.medium}px;
     padding-left: ${spacing.xsmall}px;
   `,
 );
@@ -186,6 +199,7 @@ const Input = ({
   label,
   maxLength,
   readOnly,
+  style,
   value,
   onBlur,
   onChangeText,
@@ -242,16 +256,24 @@ const Input = ({
     );
   }, [focused, typed]);
 
+  const { height, ...styles } = Array.isArray(style)
+    ? Object.assign({}, ...style)
+    : style;
+
   return (
-    <Wrapper full={full}>
+    <Wrapper full={full} style={styles}>
       <Field
         {...props}
+        cleanable={cleanable}
         disabled={disabled}
         editable={!(readOnly || disabled)}
         error={error}
         focus={focused}
         full={full}
         maxLength={maxLength}
+        style={{
+          height,
+        }}
         typed={typed}
         value={inputValue}
         onChangeText={text => {
@@ -268,7 +290,7 @@ const Input = ({
           onBlur(e);
         }}
       />
-      {label && (
+      {Boolean(label) && (
         <LabelWrapper
           focus={focused}
           pointerEvents="none"
@@ -297,7 +319,7 @@ const Input = ({
           }}
         >
           <CloseIcon>
-            <Close height={input.height} fill={iconColor()} />
+            <Close height={input.height} width={20} fill={iconColor()} />
           </CloseIcon>
         </TouchableWithoutFeedback>
       )}
@@ -332,6 +354,7 @@ Input.propTypes = {
   maxLength: number,
   readOnly: bool,
   value: string,
+  style: oneOfType([shape({}), arrayOf(shape({}))]),
   onBlur: func,
   onChangeText: func,
   /** callback invoked when close icon is clicked */
@@ -345,9 +368,10 @@ Input.defaultProps = {
   error: undefined,
   full: false,
   helper: undefined,
-  label: undefined,
+  label: '',
   maxLength: undefined,
   readOnly: false,
+  style: {},
   value: undefined,
   onBlur: () => {},
   onChangeText: () => {},
