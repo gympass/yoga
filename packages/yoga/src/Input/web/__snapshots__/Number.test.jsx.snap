@@ -55,6 +55,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 .c2:focus {
