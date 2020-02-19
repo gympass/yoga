@@ -218,8 +218,13 @@ const Input = ({
   ...props
 }) => {
   const [focused, setFocused] = useState(false);
-  const [inputValue, setInputValue] = useState(value || '');
+  const [inputValue, setInputValue] = useState(value);
   const [typed, setTyped] = useState(Boolean(value));
+
+  useEffect(() => {
+    setInputValue(value);
+    setTyped(Boolean(value));
+  }, [value]);
 
   const iconColor = () => {
     if (disabled) {
@@ -262,7 +267,6 @@ const Input = ({
   const { height = input.height, ...styles } = Array.isArray(style)
     ? Object.assign({}, ...style)
     : style;
-
   return (
     <Wrapper full={full} style={styles}>
       <Field
@@ -319,6 +323,7 @@ const Input = ({
             if (disabled) return;
             setInputValue('');
             setTyped(false);
+            onChangeText('');
             onClean(e);
           }}
         >
@@ -378,7 +383,7 @@ Input.defaultProps = {
   readOnly: false,
   style: {},
   textContentType: undefined,
-  value: undefined,
+  value: '',
   onBlur: () => {},
   onChangeText: () => {},
   onClean: () => {},
