@@ -43,7 +43,7 @@ TextArea.defaultProps = {
   label: '',
   maxLength: undefined,
   readOnly: false,
-  value: undefined,
+  value: '',
   onBlur: () => {},
   onChangeText: () => {},
   onFocus: () => {},
