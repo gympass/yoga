@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.13.1...@gympass/yoga@1.14.0) (2020-02-19)
+
+### Features
+
+- **progress:** add variant prop to control bar color ([7b9caec](https://github.com/Gympass/yoga/commit/7b9caec018e59f4c1d4ff332abc62a1e2f8891a1))
+- **progress:** add variant prop to control bar color on native ([52eb4a1](https://github.com/Gympass/yoga/commit/52eb4a1f5e1649a5afcf268039e9742a4bd2db6e))
+
 ## [1.13.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.13.0...@gympass/yoga@1.13.1) (2020-02-18)
 
 ### Bug Fixes
