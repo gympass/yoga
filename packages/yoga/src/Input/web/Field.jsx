@@ -59,6 +59,8 @@ const Field = styled.input`
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
 
+    box-sizing: border-box;
+
     &:focus {
       color: ${input.font.color.focus};
 

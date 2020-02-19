@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { string, bool, number, func, shape } from 'prop-types';
 
@@ -68,6 +68,11 @@ const TextArea = React.forwardRef(
     const [typed, setTyped] = useState(Boolean(value));
 
     const textAreaRef = ref || useRef(null);
+
+    useEffect(() => {
+      setTextAreaValue(value);
+      setTyped(Boolean(value));
+    }, [value]);
 
     return (
       <Root

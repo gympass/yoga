@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { func, string, bool, number, shape } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
@@ -35,7 +35,7 @@ const Input = React.forwardRef(
     ref,
   ) => {
     const [typed, setTyped] = useState(Boolean(value));
-    const [inputValue, setInputValue] = useState(value || '');
+    const [inputValue, setInputValue] = useState(value);
 
     const inputRef = ref || useRef(null);
 
@@ -52,6 +52,11 @@ const Input = React.forwardRef(
         onChange(e);
       }
     };
+
+    useEffect(() => {
+      setInputValue(value);
+      setTyped(Boolean(value));
+    }, [value]);
 
     return (
       <Control full={full}>
