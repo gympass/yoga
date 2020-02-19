@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.14.0...@gympass/yoga@1.14.1) (2020-02-19)
+
+### Bug Fixes
+
+- **input/textarea:** now when prop value change the component is refreshed ([8131902](https://github.com/Gympass/yoga/commit/81319021a7c0e547572ab8ba8d40e01cd39cfa21))
+
 # [1.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.13.1...@gympass/yoga@1.14.0) (2020-02-19)
 
 ### Features
