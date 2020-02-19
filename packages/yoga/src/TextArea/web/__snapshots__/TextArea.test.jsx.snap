@@ -75,6 +75,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
   font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  box-sizing: border-box;
   resize: none;
   height: 100%;
   padding: 0;

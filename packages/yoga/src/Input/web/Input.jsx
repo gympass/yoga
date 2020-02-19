@@ -147,7 +147,7 @@ Input.defaultProps = {
   maxLength: undefined,
   readOnly: false,
   style: undefined,
-  value: undefined,
+  value: '',
   onChange: () => {},
   onClean: () => {},
 };

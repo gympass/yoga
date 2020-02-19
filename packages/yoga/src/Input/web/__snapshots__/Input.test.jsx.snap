@@ -55,6 +55,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 .c2:focus {
@@ -213,6 +214,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 .c2:focus {
@@ -374,6 +376,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  box-sizing: border-box;
   border-color: #CB3530;
 }
 
@@ -555,6 +558,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 .c2:focus {
@@ -711,6 +715,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 .c2:focus {
@@ -902,6 +907,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   font-family: Open Sans,sans-serif;
   font-size: 14px;
   font-weight: 400;
+  box-sizing: border-box;
 }
 
 .c2:focus {
