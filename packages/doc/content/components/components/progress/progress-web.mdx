@@ -9,16 +9,29 @@
 ### Examples
 
 ```javascript
-<div style={{ display: 'flex', flexDirection: 'column', width: 500 }}>
-  <Progress max={100} value={20} label={{ value: 20, placement: 'left' }} />
-  <Progress max={100} value={40} label={{ value: 40, placement: 'left' }} />
-  <Progress max={100} value={67} label={{ value: 67, placement: 'left' }} />
-  <br />
-  <Progress
-    max={100}
-    value={70}
-    label={{ value: 'Some description', placement: 'left' }}
-  />
+<div
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    width: 500,
+    height: 100,
+    justifyContent: 'space-between',
+  }}
+>
+  <div>
+    <Progress max={100} value={20} label={{ value: 20, placement: 'left' }} />
+    <Progress max={100} value={40} label={{ value: 40, placement: 'left' }} />
+    <Progress max={100} value={67} label={{ value: 67, placement: 'left' }} />
+  </div>
+
+  <div>
+    <Progress
+      label={{ value: 'With variant', placement: 'left' }}
+      max={100}
+      value={70}
+      variant="secondary"
+    />
+  </div>
 </div>
 ```
 

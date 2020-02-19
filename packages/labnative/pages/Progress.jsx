@@ -20,9 +20,10 @@ const ProgressPage = () => (
     />
 
     <Progress
+      label={{ value: 'With variant', placement: 'left' }}
       max={100}
       value={70}
-      label={{ value: 'Some description', placement: 'left' }}
+      variant="secondary"
     />
   </ScrollView>
 );
