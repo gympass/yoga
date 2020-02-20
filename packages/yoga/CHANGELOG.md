@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.14.1...@gympass/yoga@1.14.2) (2020-02-20)
+
+### Bug Fixes
+
+- **plancard:** fixing plancard behaviour inside grid cols ([731e77a](https://github.com/Gympass/yoga/commit/731e77a2f39924b5267ef266298bf23308be92e5))
+
 ## [1.14.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.14.0...@gympass/yoga@1.14.1) (2020-02-19)
 
 ### Bug Fixes
