@@ -26,7 +26,7 @@
     "prebuild:native": "yarn build:native:svg",
     "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
     "build:native:svg": "NODE_ENV=svg babel ./src --out-dir dist/cjs --extensions '.svg'",
-    "prepublishOnly": "node ../../scripts/prepublish.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js --rn"
   },
   "devDependencies": {
     "@dr.pogodin/babel-preset-svgr": "^1.0.3",
