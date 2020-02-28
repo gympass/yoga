@@ -11,7 +11,7 @@
     "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
     "prebuild": "rm -rf ./dist",
     "postbuild": "cp -r ./src/Fonts ./dist/fonts",
-    "prepublishOnly": "node ../../scripts/prepublish.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js --rn"
   },
   "keywords": [
     "Gympass",

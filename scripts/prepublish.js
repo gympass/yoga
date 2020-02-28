@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs-extra');
 
 const pkg = require(path.resolve('./package.json'));
+const hasRNPackage = process.argv.find(arg => arg.includes('rn'));
 
 const outDir = './dist';
 
@@ -23,6 +24,10 @@ const createPackageJson = () => {
     module: './esm',
     private: false,
   };
+
+  if (hasRNPackage) {
+    newPackageData['react-native'] = './cjs/index.native.js';
+  }
 
   const buildPath = path.resolve(`${outDir}/package.json`);
 
