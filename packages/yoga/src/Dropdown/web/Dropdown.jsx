@@ -23,6 +23,8 @@ const Wrapper = styled.div`
 const Selector = styled.div`
   ${({
     disabled,
+    selected,
+    isOpen,
     theme: {
       yoga: {
         components: { dropdown },
@@ -41,18 +43,34 @@ const Selector = styled.div`
 
     background-color: ${dropdown.selector.background};
     border-radius: ${dropdown.selector.border.radius}px;
-    border: 1px solid ${
+    border: 1px solid ${dropdown.selector.border.color};
+    ${
       disabled
-        ? dropdown.disabled.selector.border.color
-        : dropdown.selector.border.color
+        ? `border-color: ${dropdown.disabled.selector.border.color};`
+        : ''
     };
+    ${
+      selected
+        ? `border-color: ${dropdown.selected.selector.border.color};`
+        : ''
+    };
+    ${
+      isOpen && !disabled
+        ? `border-color: ${dropdown.hover.selector.border.color}`
+        : ''
+    }
+    &:hover{
+      ${
+        !disabled ? `border-color: ${dropdown.hover.selector.border.color}` : ''
+      };
+    }
   `}
 `;
 
 const Input = styled.input`
   ${({
     disabled,
-    selectedItem,
+    selected,
     theme: {
       yoga: {
         baseFont,
@@ -72,16 +90,9 @@ const Input = styled.input`
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
 
     &, &::placeholder {
-      ${
-        disabled
-          ? `color: ${dropdown.disabled.input.font.color};`
-          : `color: ${dropdown.input.font.color};`
-      }
-      ${
-        selectedItem
-          ? `color: ${dropdown.selected.input.font.color};`
-          : `color: ${dropdown.input.font.color};`
-      }
+      color: ${dropdown.input.font.color};
+      ${selected ? `color: ${dropdown.selected.input.font.color};` : ''}
+      ${disabled ? `color: ${dropdown.disabled.input.font.color};` : ''}
     }
   `}
 `;
@@ -117,6 +128,7 @@ const ArrowIcon = styled(Arrow)`
   ${({
     isOpen,
     disabled,
+    selected,
     theme: {
       yoga: {
         colors: { primary },
@@ -124,13 +136,16 @@ const ArrowIcon = styled(Arrow)`
       },
     },
   }) => `
-    fill: ${disabled ? dropdown.disabled.arrow.fill : primary[3]};
+    fill: ${dropdown.disabled.arrow.fill};
+    ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
+    ${selected ? `fill: ${primary[3]};` : ''};
     transform: rotate(${isOpen ? '180deg' : '0'});
   `}
 `;
 
 const OptionsList = styled.ul`
   ${({
+    selected,
     theme: {
       yoga: {
         components: { dropdown },
@@ -138,7 +153,7 @@ const OptionsList = styled.ul`
     },
   }) => `
     position: absolute;
-    top: ${dropdown.optionsList.top}px;
+    top: 46px;
     z-index: 1;
 
     width: 100%;
@@ -149,9 +164,15 @@ const OptionsList = styled.ul`
     list-style-type: none;
 
     background: ${dropdown.optionsList.backgroundColor};
-    border-bottom: 1px solid ${dropdown.optionsList.border.color};
-    border-left: 1px solid ${dropdown.optionsList.border.color};
-    border-right: 1px solid ${dropdown.optionsList.border.color};
+    border: 1px solid ${dropdown.optionsList.border.color};
+    border-top: none;
+
+    ${
+      selected
+        ? `border-color: ${dropdown.selected.optionsList.border.color};`
+        : ''
+    };
+
     border-radius: 
       ${dropdown.optionsList.border.radius.top}px 
       ${dropdown.optionsList.border.radius.right}px 
@@ -183,11 +204,13 @@ const Option = styled.li`
     font-family: ${baseFont.family};
     font-size: ${dropdown.option.font.size}px;
     line-height: ${dropdown.option.font.lineHeight}px;
+    
     font-weight: ${
       isSelected
         ? `${dropdown.selected.option.font.weight}`
         : `${dropdown.option.font.weight}`
     }; 
+
     color: ${
       isSelected
         ? `${dropdown.selected.option.font.color}`
@@ -195,12 +218,9 @@ const Option = styled.li`
     };
 
     &:hover {
-      background-color: ${
-        isSelected
-          ? `${dropdown.hover.option.backgroundColor.selected}`
-          : `${dropdown.hover.option.backgroundColor.default}`
-      }; 
+      background-color: ${dropdown.hover.option.backgroundColor}; 
     }
+
     &:last-child {
       border-radius: 
         ${dropdown.option.border.radius.top}px 
@@ -217,59 +237,65 @@ const getSelectedOption = options => {
 };
 
 const Dropdown = ({ label, disabled, options, onChange, ...rest }) => (
-  <>
-    <Downshift
-      initialSelectedItem={getSelectedOption(options)}
-      selectedItemChanged={(prevItem, item) => prevItem !== item}
-      itemToString={item => (item ? item.label : '')}
-      onChange={onChange}
-    >
-      {({
-        getInputProps,
-        getItemProps,
-        getRootProps,
-        getMenuProps,
-        getToggleButtonProps,
-        isOpen,
-        selectedItem,
-      }) => (
-        <Wrapper {...getRootProps()} {...rest}>
-          <Selector isOpen={isOpen} disabled={disabled}>
-            <Input
-              readOnly
-              placeholder={label}
-              selectedItem={selectedItem}
-              disabled={disabled}
-              {...getInputProps()}
-            />
-            <Button
+  <Downshift
+    initialSelectedItem={getSelectedOption(options)}
+    selectedItemChanged={(prevItem, item) => prevItem !== item}
+    itemToString={item => (item ? item.label : '')}
+    onChange={onChange}
+  >
+    {({
+      getInputProps,
+      getItemProps,
+      getRootProps,
+      getMenuProps,
+      getToggleButtonProps,
+      selectedItem,
+      isOpen,
+    }) => (
+      <Wrapper {...getRootProps()} {...rest}>
+        <Selector
+          isOpen={isOpen}
+          disabled={disabled}
+          selected={selectedItem !== null}
+        >
+          <Input
+            readOnly
+            placeholder={label}
+            disabled={disabled}
+            selected={selectedItem !== null}
+            {...getInputProps()}
+          />
+          <Button
+            isOpen={isOpen}
+            disabled={disabled}
+            {...getToggleButtonProps()}
+          >
+            <ArrowIcon
               isOpen={isOpen}
               disabled={disabled}
-              {...getToggleButtonProps()}
-            >
-              <ArrowIcon isOpen={isOpen} disabled={disabled} />
-            </Button>
-          </Selector>
+              selected={selectedItem !== null}
+            />
+          </Button>
+        </Selector>
 
-          {isOpen ? (
-            <OptionsList {...getMenuProps()}>
-              {options.map(item => (
-                <Option
-                  {...getItemProps({
-                    key: item.value,
-                    item,
-                    isSelected: selectedItem === item,
-                  })}
-                >
-                  {item.label}
-                </Option>
-              ))}
-            </OptionsList>
-          ) : null}
-        </Wrapper>
-      )}
-    </Downshift>
-  </>
+        {isOpen && (
+          <OptionsList selected={selectedItem !== null} {...getMenuProps()}>
+            {options.map(item => (
+              <Option
+                {...getItemProps({
+                  key: item.value,
+                  item,
+                  isSelected: selectedItem === item,
+                })}
+              >
+                {item.label}
+              </Option>
+            ))}
+          </OptionsList>
+        )}
+      </Wrapper>
+    )}
+  </Downshift>
 );
 
 Dropdown.propTypes = {

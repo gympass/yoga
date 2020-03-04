@@ -1,0 +1,412 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dropdown /> should match snapshot 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px  16px 16px 16px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
+}
+
+.c1:hover {
+  border-color: #41414A;
+}
+
+.c2 {
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.c2,
+.c2::-webkit-input-placeholder {
+  color: #9898A6;
+}
+
+.c2,
+.c2::-moz-placeholder {
+  color: #9898A6;
+}
+
+.c2,
+.c2:-ms-input-placeholder {
+  color: #9898A6;
+}
+
+.c2,
+.c2::placeholder {
+  color: #9898A6;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-right: 16px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.c4 {
+  fill: #DBDBE8;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+<div>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-0-label"
+    class="c0"
+    role="combobox"
+  >
+    <div
+      class="c1"
+    >
+      <input
+        aria-autocomplete="list"
+        aria-labelledby="downshift-0-label"
+        autocomplete="off"
+        class="c2"
+        id="downshift-0-input"
+        placeholder="Find an activity to love"
+        readonly=""
+        value=""
+      />
+      <button
+        aria-haspopup="true"
+        aria-label="open menu"
+        class="c3"
+        data-toggle="true"
+        role="button"
+        type="button"
+      >
+        <svg
+          class="c4"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Dropdown /> should match snapshot when disabled 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px  16px 16px 16px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
+  border-color: #DBDBE8;
+}
+
+.c2 {
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: not-allowed;
+}
+
+.c2,
+.c2::-webkit-input-placeholder {
+  color: #9898A6;
+  color: #DBDBE8;
+}
+
+.c2,
+.c2::-moz-placeholder {
+  color: #9898A6;
+  color: #DBDBE8;
+}
+
+.c2,
+.c2:-ms-input-placeholder {
+  color: #9898A6;
+  color: #DBDBE8;
+}
+
+.c2,
+.c2::placeholder {
+  color: #9898A6;
+  color: #DBDBE8;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-right: 16px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.c4 {
+  fill: #DBDBE8;
+  fill: #DBDBE8;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+<div>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-1-label"
+    class="c0"
+    role="combobox"
+  >
+    <div
+      class="c1"
+      disabled=""
+    >
+      <input
+        aria-autocomplete="list"
+        aria-labelledby="downshift-1-label"
+        autocomplete="off"
+        class="c2"
+        disabled=""
+        id="downshift-1-input"
+        placeholder="Find an activity to love"
+        readonly=""
+        value=""
+      />
+      <button
+        aria-haspopup="true"
+        aria-label="open menu"
+        class="c3"
+        data-toggle="true"
+        disabled=""
+        role="button"
+        type="button"
+      >
+        <svg
+          class="c4"
+          disabled=""
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
+.c0 {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 16px  16px 16px 16px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
+  border-color: #DBDBE8;
+  border-color: #41414A;
+}
+
+.c2 {
+  width: 100%;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: not-allowed;
+}
+
+.c2,
+.c2::-webkit-input-placeholder {
+  color: #9898A6;
+  color: #41414A;
+  color: #DBDBE8;
+}
+
+.c2,
+.c2::-moz-placeholder {
+  color: #9898A6;
+  color: #41414A;
+  color: #DBDBE8;
+}
+
+.c2,
+.c2:-ms-input-placeholder {
+  color: #9898A6;
+  color: #41414A;
+  color: #DBDBE8;
+}
+
+.c2,
+.c2::placeholder {
+  color: #9898A6;
+  color: #41414A;
+  color: #DBDBE8;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-right: 16px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.c4 {
+  fill: #DBDBE8;
+  fill: #DBDBE8;
+  fill: #F46152;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+}
+
+<div>
+  <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-2-label"
+    class="c0"
+    role="combobox"
+  >
+    <div
+      class="c1"
+      disabled=""
+    >
+      <input
+        aria-autocomplete="list"
+        aria-labelledby="downshift-2-label"
+        autocomplete="off"
+        class="c2"
+        disabled=""
+        id="downshift-2-input"
+        placeholder="Find an activity to love"
+        readonly=""
+        value="Swimming"
+      />
+      <button
+        aria-haspopup="true"
+        aria-label="open menu"
+        class="c3"
+        data-toggle="true"
+        disabled=""
+        role="button"
+        type="button"
+      >
+        <svg
+          class="c4"
+          disabled=""
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

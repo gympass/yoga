@@ -107,6 +107,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       lineHeights,
       radii,
       spacing,
+      borders,
     }),
   };
 
