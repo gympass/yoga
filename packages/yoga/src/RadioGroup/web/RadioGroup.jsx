@@ -11,29 +11,7 @@ const Group = styled.div.attrs({
 
   width: min-content;
 
-  border-style: solid;
-
-  * {
-    box-sizing: border-box;
-  }
-
-  ${({
-    theme: {
-      yoga: {
-        components: {
-          radioGroup: {
-            radii,
-            border: { width: borderWidth, color: borderColors },
-          },
-        },
-      },
-    },
-    full,
-  }) => `
-    border-radius: ${radii}px;
-    border-width: ${borderWidth}px;
-    border-color: ${borderColors};
-
+  ${({ full }) => `
     ${full ? `width: 100%;` : ``}
   `}
 `;
