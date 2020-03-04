@@ -1,0 +1,25 @@
+---
+title: 'AutoComplete'
+metaTitle: 'AutoComplete'
+metaDescription: 'AutoComplete Component'
+---
+
+# AutoComplete
+
+```javascript state
+render(() => {
+  const [value, setValue] = useState('');
+
+  console.log('value', value);
+
+  return (
+    <AutoComplete
+      value={value}
+      onChange={e => setValue(e.target.value)}
+      onSelect={selected => setValue(selected)}
+    />
+  );
+});
+```
+
+### Props
