@@ -10,9 +10,13 @@ render(() => {
       selectedValue={selectedValue}
       onChange={({ target: { value } }) => setSelectedValue(value)}
     >
-      <RadioGroup.Button value="24h">24 hours</RadioGroup.Button>
-      <RadioGroup.Button value="now">Open now</RadioGroup.Button>
-      <RadioGroup.Button value="sundays">At Sundays</RadioGroup.Button>
+      <RadioGroup.Radio style={{ marginRight: 4 }} value="24h">
+        24 hours
+      </RadioGroup.Radio>
+      <RadioGroup.Radio style={{ marginRight: 4 }} value="now">
+        Open now
+      </RadioGroup.Radio>
+      <RadioGroup.Radio value="sundays">At Sundays</RadioGroup.Radio>
     </RadioGroup>
   );
 });
