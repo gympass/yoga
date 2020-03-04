@@ -5,20 +5,24 @@ const dropdown = ({
   lineHeights,
   radii,
   spacing,
+  borders,
 }) => ({
-  width: 312,
+  width: 320,
   selector: {
     background: colors.white,
     padding: {
-      top: 14,
-      right: spacing.zero,
-      bottom: 14,
+      top: spacing.medium,
+      right: spacing.medium,
+      bottom: spacing.medium,
       left: spacing.medium,
     },
     border: {
       radius: radii.rounded,
-      color: colors.gray[7],
+      color: colors.gray[4],
     },
+  },
+  arrow: {
+    fill: colors.gray[7],
   },
   input: {
     font: {
@@ -28,19 +32,22 @@ const dropdown = ({
     },
   },
   button: {
-    paddingRight: 14,
+    paddingRight: spacing.medium,
   },
   optionsList: {
     backgroundColor: colors.white,
-    top: spacing.xxlarge,
     border: {
+      top: radii.sharp,
+      right: radii.sharp,
+      bottom: radii.rounded,
+      left: radii.rounded,
       radius: {
         top: radii.sharp,
         right: radii.sharp,
         bottom: radii.rounded,
         left: radii.rounded,
       },
-      color: colors.gray[7],
+      color: colors.dark,
     },
   },
   option: {
@@ -53,6 +60,8 @@ const dropdown = ({
       left: spacing.medium,
     },
     border: {
+      width: borders.small,
+      color: colors.gray[1],
       radius: {
         top: radii.sharp,
         right: radii.sharp,
@@ -61,18 +70,32 @@ const dropdown = ({
       },
     },
     font: {
-      color: colors.gray[spacing.xsmall],
+      color: colors.gray[8],
       size: fontSizes.small,
       lineHeight: lineHeights.small,
       weight: fontWeights.regular,
     },
   },
-  hover: {
-    option: {
-      backgroundColor: {
-        default: colors.gray[1],
-        selected: colors.gray[2],
+  backdrop: {
+    content: {
+      minHeight: 200,
+      backgroundColor: colors.white,
+      border: {
+        radius: {
+          topLeft: radii.circle,
+          topRight: radii.circle,
+        },
       },
+    },
+  },
+  hover: {
+    selector: {
+      border: {
+        color: colors.dark,
+      },
+    },
+    option: {
+      backgroundColor: colors.gray[1],
     },
   },
   disabled: {
@@ -91,8 +114,18 @@ const dropdown = ({
     },
   },
   selected: {
+    selector: {
+      border: {
+        color: colors.dark,
+      },
+    },
     input: {
       font: {
+        color: colors.dark,
+      },
+    },
+    optionsList: {
+      border: {
         color: colors.dark,
       },
     },

@@ -1,0 +1,367 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    accessibilityRole="button"
+  >
+    <View
+      disabled={false}
+      selected={null}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#D3D3E2",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+            "position": "relative",
+            "width": 320,
+          },
+        ]
+      }
+    >
+      <Text
+        disabled={false}
+        selected={null}
+        style={
+          Array [
+            Object {
+              "color": "#9898A6",
+            },
+          ]
+        }
+      >
+        Find an activity to love
+      </Text>
+      <RNSVGSvgView
+        fill="#9898A6"
+        focusable={false}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            undefined,
+            Object {
+              "opacity": 1,
+            },
+            null,
+          ]
+        }
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4288190630,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    accessibilityRole="button"
+  >
+    <View
+      disabled={true}
+      selected={null}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#DBDBE8",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+            "position": "relative",
+            "width": 320,
+          },
+        ]
+      }
+    >
+      <Text
+        disabled={true}
+        selected={null}
+        style={
+          Array [
+            Object {
+              "color": "#DBDBE8",
+            },
+          ]
+        }
+      >
+        Find an activity to love
+      </Text>
+      <RNSVGSvgView
+        fill="#DBDBE8"
+        focusable={false}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            undefined,
+            Object {
+              "opacity": 1,
+            },
+            null,
+          ]
+        }
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4292598760,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    accessibilityRole="button"
+  >
+    <View
+      disabled={true}
+      selected={
+        Object {
+          "label": "Swimming",
+          "selected": true,
+          "value": "swimming",
+        }
+      }
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#41414A",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+            "position": "relative",
+            "width": 320,
+          },
+        ]
+      }
+    >
+      <Text
+        disabled={true}
+        selected={
+          Object {
+            "label": "Swimming",
+            "selected": true,
+            "value": "swimming",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "color": "#41414A",
+            },
+          ]
+        }
+      >
+        Swimming
+      </Text>
+      <RNSVGSvgView
+        fill="#DBDBE8"
+        focusable={false}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            undefined,
+            Object {
+              "opacity": 1,
+            },
+            null,
+          ]
+        }
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4292598760,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;

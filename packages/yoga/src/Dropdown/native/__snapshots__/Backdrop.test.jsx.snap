@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Backdrop /> Snapshots should match snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+/>
+`;
+
+exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "height": 1334,
+          "position": "absolute",
+          "width": 750,
+          "zIndex": 1,
+        },
+      ]
+    }
+  >
+    <TouchableWithoutFeedback>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#41414A",
+            "height": "100%",
+            "opacity": 0,
+            "position": "relative",
+            "width": "100%",
+          }
+        }
+      />
+    </TouchableWithoutFeedback>
+    <View
+      style={
+        Object {
+          "bottom": -200,
+          "justifyContent": "flex-end",
+          "position": "absolute",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderTopLeftRadius": 9999,
+              "borderTopRightRadius": 9999,
+              "justifyContent": "center",
+              "minHeight": 200,
+              "width": 750,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 16,
+                "fontWeight": "700",
+                "lineHeight": 20,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 20,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 20,
+                "textAlign": "center",
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          Find an Activity
+        </Text>
+        Some Content
+      </View>
+    </View>
+  </View>
+</View>
+`;
