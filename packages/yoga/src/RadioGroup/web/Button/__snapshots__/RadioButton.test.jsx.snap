@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot with default radio button 1`] = `
-.c1 {
+.c2 {
   border: 0;
   height: 0;
   margin: 0;
@@ -12,7 +12,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   width: 0;
 }
 
-.c0 {
+.c1 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -33,7 +33,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: [object Object];
   border-radius: 9999px;
   font-size: 14px;
   height: 40px;
@@ -41,27 +41,58 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   padding-right: 24px;
 }
 
-.c0:hover,
-.c0:focus {
-  background-color: #F5F5FA;
+.c1:hover,
+.c1:focus {
+  background-color: #E6E6F0;
+}
+
+.c0 {
+  border-style: solid;
+  border-color: #DBDBE8;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left: none;
+  border-right: none;
+}
+
+.c0:first-child {
+  border-right-width: 0;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #DBDBE8;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.c0:last-child {
+  border-left-width: 0;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #DBDBE8;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 
 <div>
-  <label
+  <div
     class="c0"
   >
-    <input
+    <label
       class="c1"
-      type="radio"
-      value="Radio 1"
-    />
-    Radio 1
-  </label>
+    >
+      <input
+        class="c2"
+        type="radio"
+        value="Radio 1"
+      />
+      Radio 1
+    </label>
+  </div>
 </div>
 `;
 
 exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot with small radio button 1`] = `
-.c1 {
+.c2 {
   border: 0;
   height: 0;
   margin: 0;
@@ -72,7 +103,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   width: 0;
 }
 
-.c0 {
+.c1 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -93,7 +124,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: [object Object];
   border-radius: 9999px;
   font-size: 14px;
   height: 32px;
@@ -101,21 +132,52 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   padding-right: 24px;
 }
 
-.c0:hover,
-.c0:focus {
-  background-color: #F5F5FA;
+.c1:hover,
+.c1:focus {
+  background-color: #E6E6F0;
+}
+
+.c0 {
+  border-style: solid;
+  border-color: #DBDBE8;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left: none;
+  border-right: none;
+}
+
+.c0:first-child {
+  border-right-width: 0;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #DBDBE8;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.c0:last-child {
+  border-left-width: 0;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #DBDBE8;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 
 <div>
-  <label
+  <div
     class="c0"
   >
-    <input
+    <label
       class="c1"
-      type="radio"
-      value="Radio 1"
-    />
-    Radio 1
-  </label>
+    >
+      <input
+        class="c2"
+        type="radio"
+        value="Radio 1"
+      />
+      Radio 1
+    </label>
+  </div>
 </div>
 `;
