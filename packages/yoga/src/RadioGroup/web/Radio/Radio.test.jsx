@@ -73,9 +73,9 @@ describe('<RadioGroup />', () => {
         const { getAllByTestId } = render(
           <RadioGroupContext.Provider value={{ name }}>
             <ThemeProvider>
-              <RadioGroup.Radio data-testid="radio">Radio 1</RadioGroup.Radio>
-              <RadioGroup.Radio data-testid="radio">Radio 2</RadioGroup.Radio>
-              <RadioGroup.Radio data-testid="radio">Radio 3</RadioGroup.Radio>
+              <RadioGroup.Radio data-testid="radio" value="Radio 1" />
+              <RadioGroup.Radio data-testid="radio" value="Radio 2" />
+              <RadioGroup.Radio data-testid="radio" value="Radio 3" />
             </ThemeProvider>
           </RadioGroupContext.Provider>,
         );
