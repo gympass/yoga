@@ -12,9 +12,7 @@ const radiogroup = ({
       width: borders.small,
       color: colors.gray[3],
     },
-    backgroundColor: {
-      enabled: 'transparent',
-    },
+    backgroundColor: 'transparent',
     padding: {
       right: spacing.xlarge,
       left: spacing.xlarge,
@@ -47,7 +45,7 @@ const radiogroup = ({
       weight: fontWeights.bold,
     },
     hover: {
-      backgroundColor: colors.primary[1],
+      backgroundColor: colors.primary[0],
     },
   },
 });

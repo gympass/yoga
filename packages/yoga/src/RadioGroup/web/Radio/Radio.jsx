@@ -151,7 +151,7 @@ const Wrapper = styled.div`
 `;
 
 /** The Radio is a type of selection control that allows the user to select a
- * single option from a list.  */
+ * single option from a list. */
 const RadioGroupRadio = ({ value, disabled, style, className, ...rest }) => {
   const { name, onChange, selectedValue, ...context } = useContext(
     RadioGroupContext,

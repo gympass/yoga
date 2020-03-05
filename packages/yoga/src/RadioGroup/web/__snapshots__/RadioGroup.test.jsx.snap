@@ -43,7 +43,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: [object Object];
+  background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;
   height: 40px;
@@ -77,7 +77,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: [object Object];
+  background-color: transparent;
   border-radius: 9999px;
   background-color: #F46152;
   box-shadow: 0 0 0 1px #F46152;
@@ -254,7 +254,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: [object Object];
+  background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;
   height: 40px;
@@ -391,7 +391,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: [object Object];
+  background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;
   height: 32px;
@@ -528,7 +528,7 @@ exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: [object Object];
+  background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;
   height: 40px;

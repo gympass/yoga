@@ -33,7 +33,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: [object Object];
+  background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;
   height: 40px;
@@ -124,7 +124,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   white-space: nowrap;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: [object Object];
+  background-color: transparent;
   border-radius: 9999px;
   font-size: 14px;
   height: 32px;
