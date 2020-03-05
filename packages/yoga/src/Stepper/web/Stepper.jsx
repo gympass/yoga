@@ -53,9 +53,10 @@ const Stepper = ({ children, activeStep, ...rest }) => (
 Stepper.displayName = 'Stepper';
 
 Stepper.propTypes = {
-  /** Must be an Stepper.Step component. */
+  /** Must be a Stepper.Step component. */
   children: typeOf(Step),
-  /** Controls the active step, it receive the index value for showing some step. Starting from 0. */
+  /** Controls the active step, it receive the index value for showing some
+   * step. Starting from 0. */
   activeStep: limitChildren,
 };
 
