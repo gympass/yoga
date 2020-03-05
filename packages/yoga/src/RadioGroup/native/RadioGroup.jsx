@@ -4,6 +4,7 @@ import { string, func, oneOfType, number, bool, node } from 'prop-types';
 import styled from 'styled-components';
 
 import RadioGroupContext from '../RadioGroupContext';
+import RadioButton from './Button/RadioButton';
 
 const Group = styled.View(
   () => `
@@ -17,25 +18,25 @@ const GrayLine = styled.View(
   ({
     theme: {
       yoga: {
-        components: {
-          radioGroup: {
-            radii,
-            border: { width: borderWidth, color: borderColor },
-          },
-        },
+        components: { radioGroup },
       },
     },
   }) => `
     position: absolute;
     height: 100%;
-    border-radius: ${radii}px;
-    border-width: ${borderWidth}px;
-    border-color: ${borderColor};
+    border-radius: ${radioGroup.button.border.radius}px;
+    border-width: ${radioGroup.button.border.width}px;
+    border-color: ${radioGroup.button.border.color};
   `,
 );
 
 const RadioGroup = ({ onChange, selectedValue, small, children, ...rest }) => {
   const [groupSize, setGroupSize] = useState(0);
+
+  const isButton = React.Children.map(children, child => child.type).every(
+    child => child === RadioButton,
+  );
+
   return (
     <RadioGroupContext.Provider
       value={{
@@ -54,7 +55,10 @@ const RadioGroup = ({ onChange, selectedValue, small, children, ...rest }) => {
             },
           }) => setGroupSize(width)}
         >
-          <GrayLine style={{ width: groupSize }} />
+          {Boolean(isButton && groupSize) && (
+            <GrayLine style={{ width: groupSize }} />
+          )}
+
           {children}
         </Group>
       </View>
@@ -66,14 +70,13 @@ RadioGroup.propTypes = {
   onChange: func,
   selectedValue: oneOfType([string, number]),
   small: bool,
-  children: node,
+  children: node.isRequired,
 };
 
 RadioGroup.defaultProps = {
   onChange: () => {},
   selectedValue: '',
   small: false,
-  children: null,
 };
 
 export default RadioGroup;
