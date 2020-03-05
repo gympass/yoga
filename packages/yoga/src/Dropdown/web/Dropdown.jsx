@@ -128,25 +128,6 @@ const Button = styled.button`
   `}
 `;
 
-const ArrowIcon = styled(ArrowDown)`
-  ${({
-    isOpen,
-    disabled,
-    selected,
-    theme: {
-      yoga: {
-        colors: { primary },
-        components: { dropdown },
-      },
-    },
-  }) => `
-    fill: ${dropdown.disabled.arrow.fill};
-    ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
-    ${selected ? `fill: ${primary[3]};` : ''};
-    transform: rotate(${isOpen ? '180deg' : '0'});
-  `}
-`;
-
 const OptionsList = styled.ul`
   ${({
     selected,
@@ -233,6 +214,27 @@ const Option = styled.li`
         ${dropdown.option.border.radius.bottom}px 
         ${dropdown.option.border.radius.left}px
     }
+  `}
+`;
+
+const ArrowIcon = styled(({ isOpen, disabled, selected, ...props }) => (
+  <ArrowDown {...props} />
+))`
+  ${({
+    isOpen,
+    disabled,
+    selected,
+    theme: {
+      yoga: {
+        colors: { primary },
+        components: { dropdown },
+      },
+    },
+  }) => `
+    fill: ${dropdown.disabled.arrow.fill};
+    ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
+    ${selected ? `fill: ${primary[3]};` : ''};
+    transform: rotate(${isOpen ? '180deg' : '0'});
   `}
 `;
 

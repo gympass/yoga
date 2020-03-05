@@ -272,7 +272,6 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
       >
         <svg
           class="c4"
-          disabled=""
         />
       </button>
     </div>
@@ -558,7 +557,6 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
       >
         <svg
           class="c4"
-          disabled=""
         />
       </button>
     </div>

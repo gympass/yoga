@@ -45,6 +45,7 @@ const Options = ({ options, selectedOption, onSelect }) => (
   <ScrollView contentContainerStyle={{ width: '100%', height: 60 * 3.6 }}>
     <List
       data={options.map(item => item)}
+      keyExtractor={(_, index) => index.toString()}
       renderItem={({ item }) => (
         <TouchableWithoutFeedback onPress={() => onSelect(item)}>
           <Option

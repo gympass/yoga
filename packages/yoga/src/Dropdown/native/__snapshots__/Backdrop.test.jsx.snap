@@ -22,20 +22,11 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
     }
   }
 >
-  <View
-    style={
-      Array [
-        Object {
-          "flexBasis": 0,
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "height": "100%",
-          "position": "absolute",
-          "width": "100%",
-          "zIndex": 1,
-        },
-      ]
-    }
+  <Modal
+    animationType="none"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={true}
   >
     <TouchableWithoutFeedback>
       <View
@@ -53,10 +44,9 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
     <View
       style={
         Object {
-          "bottom": 0,
+          "bottom": -320,
           "justifyContent": "flex-end",
           "position": "absolute",
-          "top": -200,
         }
       }
     >
@@ -68,7 +58,6 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
               "borderTopLeftRadius": 8,
               "borderTopRightRadius": 8,
               "justifyContent": "center",
-              "minHeight": 275,
               "width": 750,
             },
           ]
@@ -102,6 +91,6 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
         Some Content
       </View>
     </View>
-  </View>
+  </Modal>
 </View>
 `;
