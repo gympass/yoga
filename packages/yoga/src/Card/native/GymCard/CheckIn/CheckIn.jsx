@@ -60,7 +60,7 @@ const CheckIn = ({
       )}
       <Text.Tiny>{distance}</Text.Tiny>
     </Header>
-    <Rating value={rating} />
+    <Rating value={rating} icon={{ size: 12 }} />
     <Content>
       <Title numberOfLines={2}>{name}</Title>
       <Text.Tiny numberOfLines={2}>{address}</Text.Tiny>

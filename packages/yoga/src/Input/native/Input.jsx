@@ -1,8 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { TouchableWithoutFeedback, Animated, Easing } from 'react-native';
-import { func, string, bool, number } from 'prop-types';
+import {
+  func,
+  string,
+  bool,
+  number,
+  oneOfType,
+  shape,
+  arrayOf,
+} from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { Close } from '@gympass/yoga-icons';
+
+const ICON_SIZE = 24;
 
 const Wrapper = styled.View(
   ({
@@ -20,10 +30,12 @@ const Wrapper = styled.View(
 
 const Field = styled.TextInput(
   ({
+    cleanable,
     disabled,
     error,
     focus,
     full,
+    textContentType,
     typed,
     theme: {
       yoga: {
@@ -33,10 +45,13 @@ const Field = styled.TextInput(
     },
   }) => `
     width: ${full ? '100%' : `${input.width}px`};
-    height: ${input.height}px;
 
     padding-top: ${input.padding.top}px;
-    padding-right: ${input.padding.right * 2}px;
+    padding-right: ${
+      cleanable || textContentType === 'password'
+        ? ICON_SIZE + input.padding.right
+        : input.padding.right
+    }px;
     padding-bottom: ${input.padding.bottom}px;
     padding-left: ${input.padding.left}px;
 
@@ -131,7 +146,7 @@ const CloseIcon = styled.View(
     top: 0px;
     right: 0px;
 
-    padding-right: ${spacing.xsmall}px;
+    padding-right: ${spacing.medium}px;
     padding-left: ${spacing.xsmall}px;
   `,
 );
@@ -186,6 +201,8 @@ const Input = ({
   label,
   maxLength,
   readOnly,
+  style,
+  textContentType,
   value,
   onBlur,
   onChangeText,
@@ -201,8 +218,13 @@ const Input = ({
   ...props
 }) => {
   const [focused, setFocused] = useState(false);
-  const [inputValue, setInputValue] = useState(value || '');
+  const [inputValue, setInputValue] = useState(value);
   const [typed, setTyped] = useState(Boolean(value));
+
+  useEffect(() => {
+    setInputValue(value);
+    setTyped(Boolean(value));
+  }, [value]);
 
   const iconColor = () => {
     if (disabled) {
@@ -242,16 +264,24 @@ const Input = ({
     );
   }, [focused, typed]);
 
+  const { height = input.height, ...styles } = Array.isArray(style)
+    ? Object.assign({}, ...style)
+    : style;
   return (
-    <Wrapper full={full}>
+    <Wrapper full={full} style={styles}>
       <Field
         {...props}
+        cleanable={cleanable}
         disabled={disabled}
         editable={!(readOnly || disabled)}
         error={error}
         focus={focused}
         full={full}
         maxLength={maxLength}
+        style={{
+          height,
+        }}
+        textContentType={textContentType}
         typed={typed}
         value={inputValue}
         onChangeText={text => {
@@ -268,7 +298,7 @@ const Input = ({
           onBlur(e);
         }}
       />
-      {label && (
+      {Boolean(label) && (
         <LabelWrapper
           focus={focused}
           pointerEvents="none"
@@ -293,11 +323,12 @@ const Input = ({
             if (disabled) return;
             setInputValue('');
             setTyped(false);
+            onChangeText('');
             onClean(e);
           }}
         >
           <CloseIcon>
-            <Close height={input.height} fill={iconColor()} />
+            <Close height={input.height} width={20} fill={iconColor()} />
           </CloseIcon>
         </TouchableWithoutFeedback>
       )}
@@ -331,7 +362,9 @@ Input.propTypes = {
   /** maximum length (number of characters) of value */
   maxLength: number,
   readOnly: bool,
+  textContentType: string,
   value: string,
+  style: oneOfType([shape({}), arrayOf(shape({}))]),
   onBlur: func,
   onChangeText: func,
   /** callback invoked when close icon is clicked */
@@ -345,10 +378,12 @@ Input.defaultProps = {
   error: undefined,
   full: false,
   helper: undefined,
-  label: undefined,
+  label: '',
   maxLength: undefined,
   readOnly: false,
-  value: undefined,
+  style: {},
+  textContentType: undefined,
+  value: '',
   onBlur: () => {},
   onChangeText: () => {},
   onClean: () => {},

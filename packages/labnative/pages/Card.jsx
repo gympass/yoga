@@ -13,6 +13,9 @@ const CardPage = () => {
         height: '100%',
         padding: 10,
       }}
+      contentContainerStyle={{
+        paddingBottom: 100,
+      }}
     >
       <DocTitle>Simple Card</DocTitle>
 
@@ -163,7 +166,7 @@ const CardPage = () => {
       <ScrollView
         horizontal
         contentContainerStyle={{
-          paddingBottom: 100,
+          padding: 10,
         }}
       >
         <EventCard

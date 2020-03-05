@@ -26,5 +26,6 @@ module.exports = {
     window: true,
     fetch: false,
     document: true,
+    HTMLElement: true,
   },
 };

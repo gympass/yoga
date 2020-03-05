@@ -1,4 +1,4 @@
-import ThemeProvider, { themes } from './Theme';
+import ThemeProvider, { FontLoader, themes } from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -13,9 +13,11 @@ import Tag from './Tag';
 import Input from './Input';
 import Progress from './Progress';
 import Dropdown from './Dropdown';
+import TextArea from './TextArea';
 
 export {
   ThemeProvider,
+  FontLoader,
   themes,
   Button,
   List,
@@ -36,4 +38,5 @@ export {
   Input,
   Progress,
   Dropdown,
+  TextArea,
 };

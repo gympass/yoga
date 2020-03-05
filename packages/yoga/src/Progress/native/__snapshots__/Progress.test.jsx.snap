@@ -51,6 +51,7 @@ exports[`<Progress /> should match snapshot 1`] = `
             },
           ]
         }
+        variant="primary"
         width={NaN}
       />
     </View>
@@ -96,6 +97,7 @@ exports[`<Progress /> should match snapshot 1`] = `
             },
           ]
         }
+        variant="primary"
         width={NaN}
       />
     </View>
@@ -141,6 +143,7 @@ exports[`<Progress /> should match snapshot 1`] = `
             },
           ]
         }
+        variant="primary"
         width={60}
       />
     </View>
@@ -199,6 +202,7 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
             },
           ]
         }
+        variant="primary"
         width={20}
       />
     </View>
@@ -260,6 +264,7 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
             },
           ]
         }
+        variant="primary"
         width={65}
       />
     </View>
@@ -334,6 +339,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
             },
           ]
         }
+        variant="primary"
         width={NaN}
       />
     </View>
@@ -394,6 +400,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
             },
           ]
         }
+        variant="primary"
         width={65}
       />
     </View>
@@ -411,6 +418,156 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
       }
     >
       Some decription here
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Progress /> should match snapshot with secondary variant prop 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#652CDB",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="secondary"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Progress /> should match snapshot with tertiary variant prop 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#2B9486",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="tertiary"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
     </Text>
   </View>
 </View>

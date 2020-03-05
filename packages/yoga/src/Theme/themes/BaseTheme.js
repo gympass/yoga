@@ -1,6 +1,7 @@
 import tokens from '@gympass/yoga-tokens';
 
 import {
+  textarea,
   input,
   progress,
   stepper,
@@ -100,6 +101,14 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       fontSizes,
       fontWeights,
     }),
+    textarea: textarea({
+      borders,
+      spacing,
+      colors,
+      radii,
+      fontSizes,
+      fontWeights,
+    }),
     dropdown: dropdown({
       colors,
       fontSizes,
@@ -121,6 +130,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     fonts,
     breakpoints,
     transition,
+    radii,
   };
 };
 

@@ -31,7 +31,7 @@ const IconWrapper = styled.View(
     top: 0;
     right: 0;
 
-    padding-right: ${spacing.xsmall}px;
+    padding-right: ${spacing.medium}px;
     padding-left: ${spacing.xsmall}px;
   `,
 );
@@ -96,9 +96,13 @@ const Password = ({
       >
         <IconWrapper disabled={disabled}>
           {showPassword ? (
-            <Visibility height={input.height} fill={iconColor()} />
+            <Visibility height={input.height} width={20} fill={iconColor()} />
           ) : (
-            <VisibilityOff height={input.height} fill={iconColor()} />
+            <VisibilityOff
+              height={input.height}
+              width={20}
+              fill={iconColor()}
+            />
           )}
         </IconWrapper>
       </TouchableWithoutFeedback>

@@ -18,12 +18,14 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
           "position": "relative",
           "width": 312,
         },
+        Object {},
       ]
     }
   >
     <TextInput
       allowFontScaling={true}
       autoCompleteType="tel"
+      cleanable={true}
       disabled={false}
       editable={true}
       focus={false}
@@ -40,12 +42,14 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
             "color": "#9898A6",
             "fontSize": 14,
             "fontWeight": "400",
-            "height": 52,
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 32,
+            "paddingRight": 40,
             "paddingTop": 16,
             "width": 312,
+          },
+          Object {
+            "height": 52,
           },
         ]
       }

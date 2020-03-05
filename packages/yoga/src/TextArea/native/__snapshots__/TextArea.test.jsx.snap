@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextArea /> should match snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    full={false}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": 312,
+        },
+        Object {},
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      cleanable={false}
+      disabled={false}
+      editable={true}
+      focus={false}
+      full={false}
+      multiline={true}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#D3D3E2",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#9898A6",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+            "width": 312,
+          },
+          Object {
+            "height": 88,
+          },
+        ]
+      }
+      textAlignVertical="top"
+      typed={false}
+      underlineColorAndroid="transparent"
+      value=""
+    />
+  </View>
+</View>
+`;

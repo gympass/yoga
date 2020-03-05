@@ -1,116 +1,186 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { PanResponder } from 'react-native';
 import styled, { withTheme } from 'styled-components';
-import { number, func } from 'prop-types';
-
+import { number, func, bool, shape } from 'prop-types';
 import { Star } from '@gympass/yoga-icons';
+
+import { max as maxPropType } from '../../shared';
 
 const SVG_DEFAULT_SIZE = 12;
 
 const RatingWrapper = styled.View`
   flex-direction: row;
-  ${({
-    width,
-    theme: {
-      yoga: {
-        components: { rating },
-      },
-    },
-  }) => `
+  justify-content: center;
+  align-items: center;
+
+  ${({ width, height }) => `
     width: ${width}px;
-    height: ${rating.icon.size}px;
+    height: ${height}px;
   `}
 `;
 
 /** Use the Rating component to view other people's opinions and experiences. */
 const Rating = ({
   value,
-  icon: Icon,
   max,
+  readOnly,
+  onRate,
   theme: {
     yoga: {
-      colors: { gray },
+      colors,
       components: { rating },
     },
   },
+  icon: { type: Icon = Star, size: iconSize = 24 },
   ...rest
-}) => (
-  <RatingWrapper
-    width={rating.gutter * (max - 1) + rating.icon.size * max}
-    {...rest}
-  >
-    {Array.from({ length: max }, (_, i) => {
-      const diff = i + 1 - value;
+}) => {
+  const [panResponder, setPanResponder] = useState({});
+  const [wrapperLayout, setWrapperLayout] = useState({});
+  const [swipeRating, setSwipeRating] = useState(0);
+  const [swipping, toggleSwipping] = useState(false);
 
-      if (diff <= 0) {
+  function getCurrentRating(swipeValue) {
+    let currentRating = 1;
+
+    if (swipeValue > wrapperLayout.width) {
+      currentRating = max;
+    } else if (swipeValue <= 0) {
+      currentRating = 0;
+    } else {
+      currentRating = Math.round(swipeValue / (wrapperLayout.width / max));
+    }
+
+    return currentRating || 1;
+  }
+
+  useEffect(() => {
+    const responder = PanResponder.create({
+      onStartShouldSetPanResponder: () => true,
+      onStartShouldSetPanResponderCapture: () => true,
+      onMoveShouldSetPanResponder: () => true,
+      onMoveShouldSetPanResponderCapture: () => true,
+      onPanResponderTerminationRequest: () => true,
+
+      onPanResponderGrant: ({ nativeEvent: { pageX } }) => {
+        toggleSwipping(true);
+        setSwipeRating(getCurrentRating(pageX - wrapperLayout.x));
+      },
+
+      onPanResponderMove: ({ nativeEvent: { pageX } }) => {
+        setSwipeRating(getCurrentRating(pageX - wrapperLayout.x));
+      },
+
+      onPanResponderRelease: ({ nativeEvent: { pageX } }) => {
+        setSwipeRating(0);
+        toggleSwipping(false);
+        onRate(getCurrentRating(pageX - wrapperLayout.x));
+      },
+    });
+
+    setPanResponder(responder);
+  }, [wrapperLayout]);
+
+  return (
+    <RatingWrapper
+      height={iconSize}
+      width={rating.gutter * (max - 1) + iconSize * max}
+      pointerEvents={readOnly ? 'none' : 'auto'}
+      {...rest}
+      {...panResponder.panHandlers}
+      onLayout={({ nativeEvent: { layout } }) => setWrapperLayout(layout)}
+    >
+      {Array.from({ length: max }, (_, i) => {
+        const diff = i + 1 - value;
+        const margin = rating.gutter / 2;
+
+        if (swipeRating >= i + 1 || (!swipping && diff <= 0)) {
+          return (
+            <Icon
+              key={`filled-${i}`}
+              fill={rating.backgroundColor}
+              width={iconSize}
+              height={iconSize}
+              viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
+              style={{
+                marginLeft: margin,
+                marginRight: margin,
+              }}
+            />
+          );
+        }
+
+        if (diff > 0 && diff < 1) {
+          const width = (1 - diff) * iconSize;
+          const dWidth = diff * iconSize;
+          const wViewBox = SVG_DEFAULT_SIZE * (1 - diff);
+          const dViewBox = SVG_DEFAULT_SIZE * diff;
+
+          return (
+            <React.Fragment key={`half-${i}`}>
+              <Icon
+                fill={rating.backgroundColor}
+                width={width}
+                height={iconSize}
+                viewBox={`0 0 ${wViewBox} ${SVG_DEFAULT_SIZE}`}
+                style={{
+                  marginLeft: margin,
+                }}
+              />
+              <Icon
+                fill={colors.gray[5]}
+                width={dWidth}
+                height={iconSize}
+                viewBox={`${wViewBox} 0 ${dViewBox} ${SVG_DEFAULT_SIZE}`}
+                style={{
+                  marginRight: margin,
+                }}
+              />
+            </React.Fragment>
+          );
+        }
+
         return (
           <Icon
-            fill={rating.backgroundColor}
-            key={`filled-${i}`}
-            width={rating.icon.size}
-            height={rating.icon.size}
+            key={`unfilled-${i}`}
+            fill={colors.gray[5]}
+            width={iconSize}
+            height={iconSize}
             viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
             style={{
-              marginLeft: i !== 0 ? rating.gutter : undefined,
+              marginLeft: margin,
+              marginRight: margin,
             }}
           />
         );
-      }
-
-      if (diff > 0 && diff < 1) {
-        const width = (1 - diff) * rating.icon.size;
-        const dWidth = diff * rating.icon.size;
-        const wViewBox = SVG_DEFAULT_SIZE * (1 - diff);
-        const dViewBox = SVG_DEFAULT_SIZE * diff;
-
-        return (
-          <React.Fragment key={`half-${i}`}>
-            <Icon
-              fill={rating.backgroundColor}
-              width={width}
-              height={rating.icon.size}
-              viewBox={`0 0 ${wViewBox} ${SVG_DEFAULT_SIZE}`}
-              style={{
-                marginLeft: i !== 0 ? rating.gutter : undefined,
-              }}
-            />
-            <Icon
-              fill={gray[5]}
-              width={dWidth}
-              height={rating.icon.size}
-              viewBox={`${wViewBox} 0 ${dViewBox} ${SVG_DEFAULT_SIZE}`}
-            />
-          </React.Fragment>
-        );
-      }
-
-      return (
-        <Icon
-          fill={gray[5]}
-          key={`unfilled-${i}`}
-          width={rating.icon.size}
-          height={rating.icon.size}
-          viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
-          style={{
-            marginLeft: i !== 0 ? rating.gutter : undefined,
-          }}
-        />
-      );
-    })}
-  </RatingWrapper>
-);
+      })}
+    </RatingWrapper>
+  );
+};
 
 Rating.propTypes = {
   value: number,
   /** The icon to display */
-  icon: func,
+  icon: shape({
+    type: func,
+    size: maxPropType(24),
+  }),
   /** Maximum rating */
   max: number,
+  /** false to make it interactable */
+  readOnly: bool,
+  /** Event to be fired on click */
+  onRate: func,
 };
 
 Rating.defaultProps = {
   value: undefined,
-  icon: Star,
+  icon: {
+    type: Star,
+    size: 24,
+  },
   max: 5,
+  readOnly: true,
+  onRate: rating => {}, // eslint-disable-line no-unused-vars
 };
 
 export default withTheme(Rating);

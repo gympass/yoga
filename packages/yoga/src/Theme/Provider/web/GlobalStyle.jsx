@@ -1,6 +1,6 @@
 import React from 'react';
-import GoogleFontLoader from 'react-google-font-loader';
 import { createGlobalStyle, withTheme } from 'styled-components';
+import FontLoader from './FontLoader';
 
 const Global = createGlobalStyle`
   ${({ fontFamily }) => `
@@ -13,19 +13,12 @@ const Global = createGlobalStyle`
 const GlobalStyle = ({
   theme: {
     yoga: {
-      baseFont: { family, weight },
+      baseFont: { family },
     },
   },
 }) => (
   <>
-    <GoogleFontLoader
-      fonts={[
-        {
-          font: family,
-          weights: [...weight],
-        },
-      ]}
-    />
+    <FontLoader />
     <Global fontFamily={family} />
   </>
 );
