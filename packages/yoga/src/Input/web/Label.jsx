@@ -29,7 +29,7 @@ const Label = styled.label`
 
     transform: translateY(-40%);
 
-    transition-duration: ${transition.duration[0]}ms;
+    transition-duration: ${transition.duration[1]}ms;
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
 
     ${error ? `color: ${colors.negative[1]};` : ''}
