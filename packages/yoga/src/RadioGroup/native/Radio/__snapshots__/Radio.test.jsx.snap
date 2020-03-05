@@ -10,9 +10,12 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
     }
   }
 >
-  <TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    disabled={false}
+  >
     <View
       checked={false}
+      disabled={false}
       style={
         Array [
           Object {
@@ -25,11 +28,13 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
             "justifyContent": "center",
             "width": 20,
           },
+          Object {},
         ]
       }
     >
       <View
         checked={false}
+        disabled={false}
         style={
           Array [
             Object {
@@ -56,9 +61,12 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
     }
   }
 >
-  <TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    disabled={false}
+  >
     <View
       checked={false}
+      disabled={false}
       style={
         Array [
           Object {
@@ -71,11 +79,13 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
             "justifyContent": "center",
             "width": 20,
           },
+          Object {},
         ]
       }
     >
       <View
         checked={false}
+        disabled={false}
         style={
           Array [
             Object {
@@ -102,9 +112,12 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
     }
   }
 >
-  <TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    disabled={false}
+  >
     <View
       checked={false}
+      disabled={false}
       style={
         Array [
           Object {
@@ -117,12 +130,14 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
             "justifyContent": "center",
             "width": 20,
           },
+          Object {},
         ]
       }
       testID="radio"
     >
       <View
         checked={false}
+        disabled={false}
         style={
           Array [
             Object {
@@ -183,6 +198,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
             "justifyContent": "center",
             "width": 20,
           },
+          Object {},
         ]
       }
     >
