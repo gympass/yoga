@@ -6,20 +6,12 @@ import {
   Dimensions,
   TouchableWithoutFeedback,
   Easing,
+  Modal,
 } from 'react-native';
 
 import { Text } from '@gympass/yoga';
 
-const { width, height } = Dimensions.get('screen');
-
-const BackdropStyled = styled.View`
-  position: absolute;
-  z-index: 1;
-  flex: 1;
-
-  width: 100%;
-  height: 100%;
-`;
+const { width } = Dimensions.get('screen');
 
 const ClosableArea = styled(Animated.View)`
   ${({
@@ -38,7 +30,6 @@ const ClosableArea = styled(Animated.View)`
 const ContentWrapper = styled(Animated.View)`
   position: absolute;
   justify-content: flex-end;
-  bottom: 0;
 `;
 
 const Content = styled.View`
@@ -51,7 +42,6 @@ const Content = styled.View`
   }) => `
     justify-content: center;
     width: ${width}px;
-    min-height: 275px;
 
     background-color: ${dropdown.backdrop.content.backgroundColor};
     border-top-left-radius: ${dropdown.backdrop.content.border.radius.topLeft}px;
@@ -82,7 +72,7 @@ const Backdrop = ({
   const [isOpen, toggleIsOpen] = useState(visible);
   const [backgroundAnimation] = useState(new Animated.Value(0));
   const [contentAnimation] = useState(
-    new Animated.Value(-dropdown.backdrop.content.minHeight),
+    new Animated.Value(-dropdown.backdrop.content.height),
   );
 
   const animate = (animation, toValue) =>
@@ -95,22 +85,22 @@ const Backdrop = ({
   useEffect(() => {
     if (visible) toggleIsOpen(true);
     animate(backgroundAnimation, visible ? 0.5 : 0);
-    animate(contentAnimation, visible ? 320 : height);
+    animate(contentAnimation, visible ? 0 : -dropdown.backdrop.content.height);
   }, [visible]);
 
   return (
     isOpen && (
-      <BackdropStyled {...props}>
+      <Modal transparent animationType="none" {...props}>
         <TouchableWithoutFeedback onPress={() => onClose()}>
           <ClosableArea style={{ opacity: backgroundAnimation }} />
         </TouchableWithoutFeedback>
-        <ContentWrapper style={{ top: contentAnimation }}>
+        <ContentWrapper style={{ bottom: contentAnimation }}>
           <Content>
             {title && <Title>{title}</Title>}
             {children}
           </Content>
         </ContentWrapper>
-      </BackdropStyled>
+      </Modal>
     )
   );
 };

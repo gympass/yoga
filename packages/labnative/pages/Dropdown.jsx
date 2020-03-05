@@ -1,4 +1,5 @@
 import React from 'react';
+import { View } from 'react-native';
 import { Dropdown } from '@gympass/yoga';
 
 import { DocTitle } from '../components';
@@ -6,14 +7,16 @@ import { DocTitle } from '../components';
 const DropdownPage = () => (
   <>
     <DocTitle>Simple</DocTitle>
-    <Dropdown
-      label="Select your City"
-      options={[
-        { label: 'Los Angeles', value: 'los-angeles' },
-        { label: 'Santa Monica', value: 'santa-monica' },
-        { label: 'San Francisco', value: 'san-francisco' },
-      ]}
-    />
+    <View style={{ position: 'relative' }}>
+      <Dropdown
+        label="Select your City"
+        options={[
+          { label: 'Los Angeles', value: 'los-angeles' },
+          { label: 'Santa Monica', value: 'santa-monica' },
+          { label: 'San Francisco', value: 'san-francisco' },
+        ]}
+      />
+    </View>
     <DocTitle>Disabled</DocTitle>
     <Dropdown
       disabled

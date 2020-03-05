@@ -78,7 +78,7 @@ const dropdown = ({
   },
   backdrop: {
     content: {
-      minHeight: 200,
+      height: 320,
       backgroundColor: colors.white,
       border: {
         radius: {
