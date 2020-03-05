@@ -29,9 +29,9 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
           "flexBasis": 0,
           "flexGrow": 1,
           "flexShrink": 1,
-          "height": 1334,
+          "height": "100%",
           "position": "absolute",
-          "width": 750,
+          "width": "100%",
           "zIndex": 1,
         },
       ]
@@ -53,9 +53,10 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
     <View
       style={
         Object {
-          "bottom": -200,
+          "bottom": 0,
           "justifyContent": "flex-end",
           "position": "absolute",
+          "top": -200,
         }
       }
     >
@@ -64,10 +65,10 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
           Array [
             Object {
               "backgroundColor": "#FFFFFF",
-              "borderTopLeftRadius": 9999,
-              "borderTopRightRadius": 9999,
+              "borderTopLeftRadius": 8,
+              "borderTopRightRadius": 8,
               "justifyContent": "center",
-              "minHeight": 200,
+              "minHeight": 275,
               "width": 750,
             },
           ]

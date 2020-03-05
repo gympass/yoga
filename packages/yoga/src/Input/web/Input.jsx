@@ -23,7 +23,7 @@ const labelTransition = css`
     font-size: ${input.label.font.size.typed}px;
 
     transform: translateY(-50%);
-    transition-duration: ${transition.duration[0]}ms;
+    transition-duration: ${transition.duration[1]}ms;
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
   `}
 `;
@@ -55,7 +55,7 @@ const Label = styled.label`
 
     transform: translateY(-40%);
 
-    transition-duration: ${transition.duration[0]}ms;
+    transition-duration: ${transition.duration[1]}ms;
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
   `}
 `;
