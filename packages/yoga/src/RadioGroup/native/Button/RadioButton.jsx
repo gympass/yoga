@@ -3,15 +3,13 @@ import { string, oneOfType, number, node } from 'prop-types';
 import { TouchableWithoutFeedback } from 'react-native';
 import styled from 'styled-components';
 
-import RadioGroupContext from '../RadioGroupContext';
+import RadioGroupContext from '../../RadioGroupContext';
 
 const RadioMark = styled.View(
   ({
     theme: {
       yoga: {
-        components: {
-          radioGroup: { radio },
-        },
+        components: { radioGroup },
       },
     },
     small,
@@ -20,17 +18,19 @@ const RadioMark = styled.View(
   align-items: center;
   justify-content: center;
   background-color: red;
-  background-color: ${radio.backgroundColor.enabled};
-  border-radius: ${radio.border.radius}px;
-  font-size: ${radio.font.size}px;
-  height: ${small ? radio.height.small : radio.height.normal}px;
-  padding-left: ${radio.padding.left}px;
-  padding-right: ${radio.padding.right}px;
+  background-color: ${radioGroup.button.backgroundColor};
+  border-radius: ${radioGroup.button.border.radius}px;
+  font-size: ${radioGroup.font.size}px;
+  height: ${
+    small ? radioGroup.button.height.small : radioGroup.button.height.normal
+  }px;
+  padding-left: ${radioGroup.button.padding.left}px;
+  padding-right: ${radioGroup.button.padding.right}px;
 
   ${
     checked
       ? `
-          background-color: ${radio.checked.backgroundColor.enabled};
+          background-color: ${radioGroup.checked.backgroundColor};
         `
       : ``
   }
@@ -41,17 +41,15 @@ const Text = styled.Text(
   ({
     theme: {
       yoga: {
-        components: {
-          radioGroup: { radio },
-        },
+        components: { radioGroup },
       },
     },
     checked,
   }) =>
     checked
       ? `
-          color: ${radio.checked.textColor.enabled};
-          font-weight: ${radio.checked.font.weight};
+          color: ${radioGroup.checked.textColor};
+          font-weight: ${radioGroup.checked.font.weight};
         `
       : '',
 );
@@ -80,7 +78,7 @@ const RadioGroupButton = ({ value, children, ...rest }) => {
   );
 };
 
-RadioGroupButton.displayName = 'RadioGroup.Radio';
+RadioGroupButton.displayName = 'RadioGroup.Button';
 
 RadioGroupButton.propTypes = {
   value: oneOfType([string, number]),
