@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { arrayOf, func, shape, string, bool } from 'prop-types';
 import { TouchableWithoutFeedback } from 'react-native';
-
-import { Arrow } from '@gympass/yoga-icons';
+import { ArrowDown } from '@gympass/yoga-icons';
 
 import Options from './Options';
 import Backdrop from './Backdrop';
@@ -12,6 +11,7 @@ const Selector = styled.View`
   ${({
     disabled,
     selected,
+    full,
     theme: {
       yoga: {
         components: { dropdown },
@@ -23,7 +23,7 @@ const Selector = styled.View`
     justify-content: space-between;
     align-items: center;
 
-    width: ${dropdown.width}px;
+    width: ${full ? '100%' : `${dropdown.width}px`};
     padding: ${dropdown.selector.padding.top}px 
       ${dropdown.selector.padding.right}px 
       ${dropdown.selector.padding.bottom}px
@@ -31,7 +31,9 @@ const Selector = styled.View`
 
     background-color: ${dropdown.selector.background};
     border-radius: ${dropdown.selector.border.radius}px;
-    border: 1px solid ${dropdown.selector.border.color};
+    border: ${dropdown.selector.border.width}px solid ${
+    dropdown.selector.border.color
+  };
     ${
       disabled
         ? `border-color: ${dropdown.disabled.selector.border.color};`
@@ -61,14 +63,13 @@ const Label = styled.Text`
   `}
 `;
 
-const getSelectedOption = options => {
-  const filteredOptions = options.filter(item => item.selected === true);
-  return filteredOptions.length > 0 ? filteredOptions[0] : null;
-};
+const getSelectedOption = options =>
+  options.find(item => item.selected === true);
 
 const Dropdown = ({
   label,
   disabled,
+  full,
   options,
   cancelActionLabel,
   confirmActionLabel,
@@ -81,8 +82,8 @@ const Dropdown = ({
   },
   ...rest
 }) => {
-  const [selected, setSelected] = useState(getSelectedOption(options));
-  const [isOpen, setIsOpen] = useState(false);
+  const [selected, toggleIsSelected] = useState(getSelectedOption(options));
+  const [isOpen, toggleIsOpen] = useState(false);
 
   const iconColor = () => {
     if (disabled) return dropdown.disabled.arrow.fill;
@@ -94,27 +95,31 @@ const Dropdown = ({
     <>
       <TouchableWithoutFeedback
         accessibilityRole="button"
-        onPress={() => !disabled && setIsOpen(true)}
+        onPress={() => !disabled && toggleIsOpen(true)}
       >
-        <Selector disabled={disabled} selected={selected} {...rest}>
+        <Selector full={full} disabled={disabled} selected={selected} {...rest}>
           <Label disabled={disabled} selected={selected}>
-            {selected ? selected.label : label}
+            {(selected && selected.label) || label}
           </Label>
-          <Arrow fill={iconColor()} />
+          <ArrowDown fill={iconColor()} />
         </Selector>
       </TouchableWithoutFeedback>
 
-      <Backdrop visible={isOpen} title={label} onClose={() => setIsOpen(false)}>
+      <Backdrop
+        visible={isOpen}
+        title={label}
+        onClose={() => toggleIsOpen(false)}
+      >
         <Options
           options={options}
           selectedOption={selected}
           cancelActionLabel={cancelActionLabel}
           confirmActionLabel={confirmActionLabel}
-          onClose={() => setIsOpen(false)}
+          onClose={() => toggleIsOpen(false)}
           onSelect={item => {
-            setSelected(item);
+            toggleIsSelected(item);
             onChange(item);
-            setIsOpen(false);
+            toggleIsOpen(false);
           }}
         />
       </Backdrop>
@@ -125,6 +130,8 @@ const Dropdown = ({
 Dropdown.propTypes = {
   label: string,
   disabled: bool,
+  full: bool,
+  /** dropdown options: { label (string), value (string or number) } */
   options: arrayOf(
     shape({
       label: string,
@@ -138,6 +145,7 @@ Dropdown.propTypes = {
 
 Dropdown.defaultProps = {
   label: '',
+  full: false,
   cancelActionLabel: 'Cancel',
   confirmActionLabel: 'Confirm',
   disabled: false,

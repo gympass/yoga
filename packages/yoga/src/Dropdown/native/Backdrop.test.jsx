@@ -15,6 +15,7 @@ describe('<Backdrop />', () => {
       );
       expect(container).toMatchSnapshot();
     });
+
     it('should match snapshot when visible', () => {
       const { container } = render(
         <ThemeProvider>

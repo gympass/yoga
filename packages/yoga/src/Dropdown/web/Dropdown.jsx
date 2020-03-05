@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import Downshift from 'downshift';
 import { arrayOf, func, shape, string, bool } from 'prop-types';
-
-import { Arrow } from '@gympass/yoga-icons';
+import { ArrowDown } from '@gympass/yoga-icons';
 
 const Wrapper = styled.div`
   ${({
+    full,
     theme: {
       yoga: {
         components: { dropdown },
@@ -14,9 +14,10 @@ const Wrapper = styled.div`
     },
   }) => `
     position: relative;
-    display: block;
+    display: inline-block;
+    vertical-align: top;
 
-    width: ${dropdown.width}px;
+    width: ${full ? '100%' : `${dropdown.width}px`};
   `}
 `;
 
@@ -36,6 +37,7 @@ const Selector = styled.div`
     justify-content: space-between;
     align-items: center;
 
+    width: 100%;
     padding: ${dropdown.selector.padding.top}px 
       ${dropdown.selector.padding.right}px
       ${dropdown.selector.padding.bottom}px
@@ -43,7 +45,8 @@ const Selector = styled.div`
 
     background-color: ${dropdown.selector.background};
     border-radius: ${dropdown.selector.border.radius}px;
-    border: 1px solid ${dropdown.selector.border.color};
+    border: ${dropdown.selector.border.width}px solid 
+    ${dropdown.selector.border.color};
     ${
       disabled
         ? `border-color: ${dropdown.disabled.selector.border.color};`
@@ -108,6 +111,7 @@ const Button = styled.button`
   }) => `
     display: flex;
     align-content: center;
+    align-items: center;
     justify-content: flex-end;
     position: absolute;
     top: 0;
@@ -115,7 +119,7 @@ const Button = styled.button`
 
     width: 100%;
     height: 100%;
-    padding-right: ${dropdown.button.paddingRight}px;
+    padding-right: ${dropdown.button.padding.right}px;
 
     border: none;
     outline: none;
@@ -124,7 +128,7 @@ const Button = styled.button`
   `}
 `;
 
-const ArrowIcon = styled(Arrow)`
+const ArrowIcon = styled(ArrowDown)`
   ${({
     isOpen,
     disabled,
@@ -157,14 +161,15 @@ const OptionsList = styled.ul`
     z-index: 1;
 
     width: 100%;
-    max-height: 140px;
+    max-height: ${dropdown.option.height * 3.5}px;
     margin: 0;
     padding: 0;
-    overflow-x: scroll;
+    overflow-y: auto;
     list-style-type: none;
 
     background: ${dropdown.optionsList.backgroundColor};
-    border: 1px solid ${dropdown.optionsList.border.color};
+    border: ${dropdown.optionsList.border.width}px solid
+    ${dropdown.optionsList.border.color};
     border-top: none;
 
     ${
@@ -231,12 +236,10 @@ const Option = styled.li`
   `}
 `;
 
-const getSelectedOption = options => {
-  const filteredOptions = options.filter(item => item.selected === true);
-  return filteredOptions.length > 0 ? filteredOptions[0] : null;
-};
+const getSelectedOption = options =>
+  options.find(item => item.selected === true);
 
-const Dropdown = ({ label, disabled, options, onChange, ...rest }) => (
+const Dropdown = ({ label, disabled, full, options, onChange, ...rest }) => (
   <Downshift
     initialSelectedItem={getSelectedOption(options)}
     selectedItemChanged={(prevItem, item) => prevItem !== item}
@@ -252,7 +255,7 @@ const Dropdown = ({ label, disabled, options, onChange, ...rest }) => (
       selectedItem,
       isOpen,
     }) => (
-      <Wrapper {...getRootProps()} {...rest}>
+      <Wrapper full={full} {...getRootProps()} {...rest}>
         <Selector
           isOpen={isOpen}
           disabled={disabled}
@@ -301,6 +304,8 @@ const Dropdown = ({ label, disabled, options, onChange, ...rest }) => (
 Dropdown.propTypes = {
   label: string,
   disabled: bool,
+  full: bool,
+  /** dropdown options: { label (string), value (string or number) } */
   options: arrayOf(
     shape({
       label: string,
@@ -312,6 +317,7 @@ Dropdown.propTypes = {
 
 Dropdown.defaultProps = {
   label: '',
+  full: false,
   disabled: false,
   onChange: () => {},
 };

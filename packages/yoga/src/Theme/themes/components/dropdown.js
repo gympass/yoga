@@ -17,6 +17,7 @@ const dropdown = ({
       left: spacing.medium,
     },
     border: {
+      width: borders.small,
       radius: radii.rounded,
       color: colors.gray[4],
     },
@@ -32,21 +33,20 @@ const dropdown = ({
     },
   },
   button: {
-    paddingRight: spacing.medium,
+    padding: {
+      right: spacing.medium,
+    },
   },
   optionsList: {
     backgroundColor: colors.white,
     border: {
-      top: radii.sharp,
-      right: radii.sharp,
-      bottom: radii.rounded,
-      left: radii.rounded,
       radius: {
         top: radii.sharp,
         right: radii.sharp,
         bottom: radii.rounded,
         left: radii.rounded,
       },
+      width: borders.small,
       color: colors.dark,
     },
   },
@@ -70,7 +70,7 @@ const dropdown = ({
       },
     },
     font: {
-      color: colors.gray[8],
+      color: colors.gray.dark,
       size: fontSizes.small,
       lineHeight: lineHeights.small,
       weight: fontWeights.regular,
@@ -82,8 +82,24 @@ const dropdown = ({
       backgroundColor: colors.white,
       border: {
         radius: {
-          topLeft: radii.circle,
-          topRight: radii.circle,
+          topLeft: radii.rounded,
+          topRight: radii.rounded,
+        },
+      },
+      option: {
+        padding: {
+          top: spacing.large,
+          right: spacing.large,
+          bottom: spacing.large,
+          left: spacing.large,
+        },
+      },
+      actions: {
+        padding: {
+          top: spacing.zero,
+          right: spacing.large,
+          bottom: spacing.large,
+          left: spacing.large,
         },
       },
     },

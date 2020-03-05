@@ -6,7 +6,7 @@ import {
   Close,
   Visibility,
   VisibilityOff,
-  Arrow,
+  ArrowDown,
 } from './svg';
 
 export {
@@ -17,5 +17,5 @@ export {
   Close,
   Visibility,
   VisibilityOff,
-  Arrow,
+  ArrowDown,
 };

@@ -21,7 +21,7 @@
  * @property {Timing[]} timing
  */
 
-const duration = [500, 200];
+const duration = [200, 500];
 const timing = [[0, 0.75, 0.1, 1]];
 
 /**
