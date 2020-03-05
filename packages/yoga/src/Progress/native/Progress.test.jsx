@@ -45,4 +45,34 @@ describe('<Progress />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot with secondary variant prop', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Progress
+          max={100}
+          value={20}
+          label={{ value: 20 }}
+          variant="secondary"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with tertiary variant prop', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Progress
+          max={100}
+          value={20}
+          label={{ value: 20 }}
+          variant="tertiary"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });

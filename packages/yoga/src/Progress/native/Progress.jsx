@@ -48,9 +48,11 @@ const ProgressValue = styled.View`
   height: 100%;
 
   ${({
+    variant,
     width,
     theme: {
       yoga: {
+        colors: { [variant]: color = {} },
         components: { progress },
       },
     },
@@ -58,7 +60,7 @@ const ProgressValue = styled.View`
     `
     width: ${width}%;
 
-    background-color: ${progress.backgroundColor.value};
+    background-color: ${color[3]};
 
     border-radius: ${progress.border.radius}px;
   `}
@@ -95,14 +97,14 @@ const Label = styled.Text`
 /** The Progress Bar is a component used to indicate a progress of an indicator
  * of quantity.  The use of labels numeric or alphabetic can increase the user
  * understanding. */
-const Progress = ({ label, max, value, ...props }) => {
+const Progress = ({ label, max, value, variant, ...props }) => {
   const isNumber = !isNaN(label.value);
   const align = label.placement || 'left';
 
   return (
     <ProgressWrapper {...props} isNumber={isNumber} align={align}>
       <ProgressBar>
-        <ProgressValue width={(value / max) * 100} />
+        <ProgressValue width={(value / max) * 100} variant={variant} />
       </ProgressBar>
 
       {Object.keys(label).length > 0 && (isNumber || label.value) && (
@@ -131,6 +133,8 @@ Progress.propTypes = {
    * indeterminate; this indicates that an activity is ongoing with no
    * indication of how long it is expected to take. */
   value: number,
+  /** Value color based on theme colors (primary, secondary, tertiary). */
+  variant: oneOf(['primary', 'secondary', 'tertiary']),
 };
 
 Progress.defaultProps = {
@@ -140,6 +144,7 @@ Progress.defaultProps = {
   },
   max: 1,
   value: undefined,
+  variant: 'primary',
 };
 
 export default Progress;

@@ -3,6 +3,64 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.16.4...@gympass/yoga-doc@0.16.5) (2020-02-28)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [0.16.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.16.3...@gympass/yoga-doc@0.16.4) (2020-02-20)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [0.16.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.16.2...@gympass/yoga-doc@0.16.3) (2020-02-19)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [0.16.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.16.1...@gympass/yoga-doc@0.16.2) (2020-02-19)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [0.16.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.16.0...@gympass/yoga-doc@0.16.1) (2020-02-18)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+# [0.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.15.3...@gympass/yoga-doc@0.16.0) (2020-02-18)
+
+### Bug Fixes
+
+- **rating:** revisit how padding is setted on rating ([b840abc](https://github.com/Gympass/yoga/commit/b840abce40dbba5f95ba5df44eba89028698ae1b))
+
+### Features
+
+- **rating:** add events on rating ([cd13223](https://github.com/Gympass/yoga/commit/cd132234977cf5010e4ad7ede096babd01fb1150))
+
+## [0.15.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.15.2...@gympass/yoga-doc@0.15.3) (2020-02-18)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [0.15.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.15.1...@gympass/yoga-doc@0.15.2) (2020-02-18)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [0.15.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.15.0...@gympass/yoga-doc@0.15.1) (2020-02-18)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+# [0.15.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.14.3...@gympass/yoga-doc@0.15.0) (2020-02-18)
+
+### Bug Fixes
+
+- **input:** fix icons padding ([e3970c1](https://github.com/Gympass/yoga/commit/e3970c1361ed235cc5b3f999e51a0a7b3cd98bb0))
+
+### Features
+
+- **textarea:** create textarea component to web platform ([42c569c](https://github.com/Gympass/yoga/commit/42c569c61c772fb5d7c097c682fac458fa27e3ac))
+
+## [0.14.3](https://github.com/Gympass/design-system/compare/@gympass/yoga-doc@0.14.2...@gympass/yoga-doc@0.14.3) (2020-02-14)
+
+### Bug Fixes
+
+- **theme:** fixing font import on SSR ([9a32dc9](https://github.com/Gympass/design-system/commit/9a32dc928e86cf44d70bc2fd4336f4d9d99b9b05))
+
 ## [0.14.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.14.1...@gympass/yoga-doc@0.14.2) (2020-02-12)
 
 **Note:** Version bump only for package @gympass/yoga-doc

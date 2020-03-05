@@ -12,6 +12,7 @@ import Tag from './Tag';
 import Input from './Input';
 import Progress from './Progress';
 import Dropdown from './Dropdown';
+import TextArea from './TextArea';
 
 export {
   ThemeProvider,
@@ -32,4 +33,5 @@ export {
   Input,
   Progress,
   Dropdown,
+  TextArea,
 };

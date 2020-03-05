@@ -3,6 +3,76 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.14.2...@gympass/yoga@1.14.3) (2020-02-28)
+
+**Note:** Version bump only for package @gympass/yoga
+
+## [1.14.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.14.1...@gympass/yoga@1.14.2) (2020-02-20)
+
+### Bug Fixes
+
+- **plancard:** fixing plancard behaviour inside grid cols ([731e77a](https://github.com/Gympass/yoga/commit/731e77a2f39924b5267ef266298bf23308be92e5))
+
+## [1.14.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.14.0...@gympass/yoga@1.14.1) (2020-02-19)
+
+### Bug Fixes
+
+- **input/textarea:** now when prop value change the component is refreshed ([8131902](https://github.com/Gympass/yoga/commit/81319021a7c0e547572ab8ba8d40e01cd39cfa21))
+
+# [1.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.13.1...@gympass/yoga@1.14.0) (2020-02-19)
+
+### Features
+
+- **progress:** add variant prop to control bar color ([7b9caec](https://github.com/Gympass/yoga/commit/7b9caec018e59f4c1d4ff332abc62a1e2f8891a1))
+- **progress:** add variant prop to control bar color on native ([52eb4a1](https://github.com/Gympass/yoga/commit/52eb4a1f5e1649a5afcf268039e9742a4bd2db6e))
+
+## [1.13.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.13.0...@gympass/yoga@1.13.1) (2020-02-18)
+
+### Bug Fixes
+
+- **rating:** add default icon to rating destructuring ([ebeeeec](https://github.com/Gympass/yoga/commit/ebeeeec7d1a1a2243bf4cb46d0a632a25be55e4b))
+
+# [1.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.12.2...@gympass/yoga@1.13.0) (2020-02-18)
+
+### Bug Fixes
+
+- **rating:** revisit how padding is setted on rating ([b840abc](https://github.com/Gympass/yoga/commit/b840abce40dbba5f95ba5df44eba89028698ae1b))
+
+### Features
+
+- **rating:** add events on rating ([cd13223](https://github.com/Gympass/yoga/commit/cd132234977cf5010e4ad7ede096babd01fb1150))
+- **rating:** add interaction on reating ([389947c](https://github.com/Gympass/yoga/commit/389947cc8d338403945aceee64a6313913d4063f))
+
+## [1.12.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.12.1...@gympass/yoga@1.12.2) (2020-02-18)
+
+### Bug Fixes
+
+- **input:** fix input padding on password type ([6de8340](https://github.com/Gympass/yoga/commit/6de8340d4438447c8d72ac45944f6f9d5bc2bc50))
+- **input/textarea:** fix disabled and full props ([1ac0e77](https://github.com/Gympass/yoga/commit/1ac0e77ddb01a59ae31e52e6e8dbbf8c69444c33))
+
+## [1.12.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.12.0...@gympass/yoga@1.12.1) (2020-02-18)
+
+### Bug Fixes
+
+- **input:** fix field height on native ([c57747d](https://github.com/Gympass/yoga/commit/c57747d892366f7bafd7b88677d588420506443f))
+
+# [1.12.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.11.2...@gympass/yoga@1.12.0) (2020-02-18)
+
+### Bug Fixes
+
+- **input:** fix icons padding ([e3970c1](https://github.com/Gympass/yoga/commit/e3970c1361ed235cc5b3f999e51a0a7b3cd98bb0))
+
+### Features
+
+- **textarea:** create textarea component to native platform ([7c09f12](https://github.com/Gympass/yoga/commit/7c09f121f596acb730ba532c90ac987356f943c2))
+- **textarea:** create textarea component to web platform ([42c569c](https://github.com/Gympass/yoga/commit/42c569c61c772fb5d7c097c682fac458fa27e3ac))
+
+## [1.11.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.11.1...@gympass/yoga@1.11.2) (2020-02-14)
+
+### Bug Fixes
+
+- **theme:** fixing font import on SSR ([9a32dc9](https://github.com/Gympass/yoga/commit/9a32dc928e86cf44d70bc2fd4336f4d9d99b9b05))
+
 ## [1.11.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.11.0...@gympass/yoga@1.11.1) (2020-02-12)
 
 ### Bug Fixes

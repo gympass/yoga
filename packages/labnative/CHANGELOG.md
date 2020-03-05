@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.14.2...@gympass/yoga-labnative@0.14.3) (2020-02-28)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+## [0.14.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.14.1...@gympass/yoga-labnative@0.14.2) (2020-02-20)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+## [0.14.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.14.0...@gympass/yoga-labnative@0.14.1) (2020-02-19)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+# [0.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.13.1...@gympass/yoga-labnative@0.14.0) (2020-02-19)
+
+### Features
+
+- **progress:** add variant prop to control bar color on native ([52eb4a1](https://github.com/Gympass/yoga/commit/52eb4a1f5e1649a5afcf268039e9742a4bd2db6e))
+
+## [0.13.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.13.0...@gympass/yoga-labnative@0.13.1) (2020-02-18)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+# [0.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.12.2...@gympass/yoga-labnative@0.13.0) (2020-02-18)
+
+### Features
+
+- **rating:** add events on rating ([cd13223](https://github.com/Gympass/yoga/commit/cd132234977cf5010e4ad7ede096babd01fb1150))
+
+## [0.12.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.12.1...@gympass/yoga-labnative@0.12.2) (2020-02-18)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+## [0.12.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.12.0...@gympass/yoga-labnative@0.12.1) (2020-02-18)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+# [0.12.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.11.2...@gympass/yoga-labnative@0.12.0) (2020-02-18)
+
+### Features
+
+- **textarea:** create textarea component to native platform ([7c09f12](https://github.com/Gympass/yoga/commit/7c09f121f596acb730ba532c90ac987356f943c2))
+
+## [0.11.2](https://github.com/Gympass/design-system/compare/@gympass/yoga-labnative@0.11.1...@gympass/yoga-labnative@0.11.2) (2020-02-14)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
 ## [0.11.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.11.0...@gympass/yoga-labnative@0.11.1) (2020-02-12)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

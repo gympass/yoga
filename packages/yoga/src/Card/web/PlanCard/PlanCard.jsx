@@ -6,7 +6,6 @@ import Card from '../Card';
 
 const Plan = styled(Card)`
   max-width: 280px;
-  width: 100%;
   ${({
     variant,
     theme: {
