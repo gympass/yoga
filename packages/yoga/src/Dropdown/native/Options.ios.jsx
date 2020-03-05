@@ -10,10 +10,22 @@ const PickerStyled = styled.Picker`
 `;
 
 const PickerActions = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
+  ${({
+    theme: {
+      yoga: {
+        components: { dropdown },
+      },
+    },
+  }) => `
+    flex-direction: row;
+    justify-content: space-between;
 
-  padding: 0px 20px 20px 20px;
+    padding:
+      ${dropdown.backdrop.content.actions.padding.top}px 
+      ${dropdown.backdrop.content.actions.padding.right}px 
+      ${dropdown.backdrop.content.actions.padding.bottom}px 
+      ${dropdown.backdrop.content.actions.padding.left}px;
+  `}
 `;
 
 const Options = ({
@@ -28,9 +40,9 @@ const Options = ({
   return (
     <>
       <PickerStyled
-        selectedValue={selected && selected.label}
-        onValueChange={(itemValue, itemIndex) =>
-          setSelected({ label: itemValue, value: itemIndex })
+        selectedValue={selected && selected.value}
+        onValueChange={itemValue =>
+          setSelected(options.find(option => option.value === itemValue))
         }
       >
         {options.map(item => (

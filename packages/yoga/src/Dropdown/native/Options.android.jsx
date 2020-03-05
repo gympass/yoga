@@ -14,7 +14,11 @@ const Option = styled(List.Item)`
       },
     },
   }) => `
-    padding: 22px 20px;
+    padding:
+      ${dropdown.backdrop.content.option.padding.top}px 
+      ${dropdown.backdrop.content.option.padding.right}px 
+      ${dropdown.backdrop.content.option.padding.bottom}px 
+      ${dropdown.backdrop.content.option.padding.left}px;
 
     border-bottom-width: ${dropdown.option.border.width}px;
     background-color: ${
@@ -38,7 +42,7 @@ const Option = styled(List.Item)`
 `;
 
 const Options = ({ options, selectedOption, onSelect }) => (
-  <ScrollView contentContainerStyle={{ width: '100%', height: 165 }}>
+  <ScrollView contentContainerStyle={{ width: '100%', height: 60 * 3.6 }}>
     <List
       data={options.map(item => item)}
       renderItem={({ item }) => (

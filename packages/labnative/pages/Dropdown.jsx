@@ -7,14 +7,11 @@ const DropdownPage = () => (
   <>
     <DocTitle>Simple</DocTitle>
     <Dropdown
-      label="Find an activity to love"
+      label="Select your City"
       options={[
-        { label: 'Yoga', value: 'yoga' },
-        { label: 'Crossfit', value: 'crossfit' },
-        { label: 'Tenis', value: 'tenis' },
-        { label: 'Soccer', value: 'soccer' },
-        { label: 'Pilates', value: 'pilates' },
-        { label: 'Run', value: 'running' },
+        { label: 'Los Angeles', value: 'los-angeles' },
+        { label: 'Santa Monica', value: 'santa-monica' },
+        { label: 'San Francisco', value: 'san-francisco' },
       ]}
     />
     <DocTitle>Disabled</DocTitle>

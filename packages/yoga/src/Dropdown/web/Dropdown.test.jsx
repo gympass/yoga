@@ -24,6 +24,7 @@ describe('<Dropdown />', () => {
     );
     expect(container).toMatchSnapshot();
   });
+
   it('should match snapshot when disabled', () => {
     const { container } = render(
       <ThemeProvider>
@@ -32,6 +33,16 @@ describe('<Dropdown />', () => {
     );
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot when full', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Dropdown full {...dropdownProps} />
+      </ThemeProvider>,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
   it('should match snapshot when has a selected value', () => {
     const selectedOption = {
       label: 'Swimming',
