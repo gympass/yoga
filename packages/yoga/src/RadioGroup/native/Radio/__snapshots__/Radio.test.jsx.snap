@@ -28,7 +28,6 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
             "justifyContent": "center",
             "width": 20,
           },
-          Object {},
         ]
       }
     >
@@ -79,7 +78,6 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
             "justifyContent": "center",
             "width": 20,
           },
-          Object {},
         ]
       }
     >
@@ -130,7 +128,6 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
             "justifyContent": "center",
             "width": 20,
           },
-          Object {},
         ]
       }
       testID="radio"
@@ -198,7 +195,6 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
             "justifyContent": "center",
             "width": 20,
           },
-          Object {},
         ]
       }
     >

@@ -35,7 +35,7 @@ const Button = styled.label`
         ? `
             background-color: ${radioGroup.checked.backgroundColor};
             box-shadow: 0 0 0  ${radioGroup.button.border.width}px ${radioGroup.checked.backgroundColor};
-            color: ${radioGroup.checked.textColor};
+            color: ${radioGroup.checked.font.color};
             font-weight: ${radioGroup.checked.font.weight};
             z-index: 1;
           `
@@ -107,7 +107,7 @@ const RadioGroupButton = ({ children, value, ...rest }) => {
 
   return (
     <ButtonWrapper>
-      <Button small={small} checked={checked}>
+      <Button {...{ small, checked }}>
         <HiddenInput
           type="radio"
           value={inputValue}

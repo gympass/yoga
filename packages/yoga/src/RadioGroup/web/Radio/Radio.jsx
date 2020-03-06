@@ -8,24 +8,25 @@ import { HiddenInput } from '../../../shared';
 
 const Radio = styled.span`
   position: relative;
-
   display: block;
 
   ${({
     theme: {
       yoga: {
-        components: { radioGroup },
+        components: {
+          radioGroup: { radio },
+        },
       },
     },
   }) =>
     `
-      width: ${radioGroup.radio.size}px;
-      height: ${radioGroup.radio.size}px;
+      width: ${radio.size}px;
+      height: ${radio.size}px;
 
-      border-width: ${radioGroup.radio.size * 0.1}px; 
+      border-width: ${radio.size * 0.1}px; 
       border-style: solid;
-      border-color: ${radioGroup.radio.backgroundColor};
-      border-radius: ${radioGroup.radio.border.radius}px;
+      border-color: ${radio.backgroundColor};
+      border-radius: ${radio.border.radius}px;
     `}
 `;
 

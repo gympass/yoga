@@ -40,8 +40,8 @@ const radiogroup = ({
   },
   checked: {
     backgroundColor: colors.primary[3],
-    textColor: colors.white,
     font: {
+      color: colors.white,
       weight: fontWeights.bold,
     },
     hover: {

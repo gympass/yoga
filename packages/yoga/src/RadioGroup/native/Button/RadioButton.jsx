@@ -17,16 +17,18 @@ const RadioMark = styled.View(
   }) => `
   align-items: center;
   justify-content: center;
-  background-color: red;
-  background-color: ${radioGroup.button.backgroundColor};
-  border-radius: ${radioGroup.button.border.radius}px;
-  font-size: ${radioGroup.font.size}px;
+
   height: ${
     small ? radioGroup.button.height.small : radioGroup.button.height.normal
   }px;
   padding-left: ${radioGroup.button.padding.left}px;
   padding-right: ${radioGroup.button.padding.right}px;
-
+  
+  background-color: ${radioGroup.button.backgroundColor};
+  border-radius: ${radioGroup.button.border.radius}px;
+  
+  font-size: ${radioGroup.font.size}px;
+  
   ${
     checked
       ? `
@@ -48,7 +50,7 @@ const Text = styled.Text(
   }) =>
     checked
       ? `
-          color: ${radioGroup.checked.textColor};
+          color: ${radioGroup.checked.font.color};
           font-weight: ${radioGroup.checked.font.weight};
         `
       : '',
