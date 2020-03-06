@@ -30,7 +30,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
 }
 
 .c1 {
-  width: 312px;
+  width: 320px;
 }
 
 .c1:hover,

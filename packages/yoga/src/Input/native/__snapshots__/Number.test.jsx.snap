@@ -16,7 +16,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
       Array [
         Object {
           "position": "relative",
-          "width": 312,
+          "width": 320,
         },
         Object {},
       ]
@@ -45,7 +45,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
             "paddingLeft": 16,
             "paddingRight": 40,
             "paddingTop": 16,
-            "width": 312,
+            "width": 320,
           },
           Object {
             "height": 52,
