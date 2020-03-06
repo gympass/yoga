@@ -45,8 +45,10 @@ const Selector = styled.div`
 
     background-color: ${dropdown.selector.background};
     border-radius: ${dropdown.selector.border.radius}px;
-    border: ${dropdown.selector.border.width}px solid 
-    ${dropdown.selector.border.color};
+    border-width: ${dropdown.selector.border.width}px;
+    border-style: solid;
+    border-color: ${dropdown.selector.border.color};
+
     ${
       disabled
         ? `border-color: ${dropdown.disabled.selector.border.color};`
@@ -149,8 +151,9 @@ const OptionsList = styled.ul`
     list-style-type: none;
 
     background: ${dropdown.optionsList.backgroundColor};
-    border: ${dropdown.optionsList.border.width}px solid
-    ${dropdown.optionsList.border.color};
+    border-width: ${dropdown.optionsList.border.width}px;
+    border-style: solid;
+    border-color: ${dropdown.optionsList.border.color};
     border-top: none;
 
     ${
@@ -160,16 +163,17 @@ const OptionsList = styled.ul`
     };
 
     border-radius: 
-      ${dropdown.optionsList.border.radius.top}px 
-      ${dropdown.optionsList.border.radius.right}px 
-      ${dropdown.optionsList.border.radius.bottom}px 
-      ${dropdown.optionsList.border.radius.left}px
+        ${dropdown.option.border.radius.topLeft}px 
+        ${dropdown.option.border.radius.topRight}px 
+        ${dropdown.option.border.radius.bottomRight}px 
+        ${dropdown.option.border.radius.bottomLeft}px;
   `}
 `;
 
 const Option = styled.li`
   ${({
     isSelected,
+    highlighted,
     theme: {
       yoga: {
         baseFont,
@@ -203,16 +207,22 @@ const Option = styled.li`
         : `${dropdown.option.font.color}`
     };
 
+    ${
+      highlighted
+        ? `background-color: ${dropdown.hover.option.backgroundColor};`
+        : ''
+    }
+
     &:hover {
       background-color: ${dropdown.hover.option.backgroundColor}; 
     }
 
     &:last-child {
       border-radius: 
-        ${dropdown.option.border.radius.top}px 
-        ${dropdown.option.border.radius.right}px 
-        ${dropdown.option.border.radius.bottom}px 
-        ${dropdown.option.border.radius.left}px
+        ${dropdown.option.border.radius.topLeft}px 
+        ${dropdown.option.border.radius.topRight}px 
+        ${dropdown.option.border.radius.bottomRight}px 
+        ${dropdown.option.border.radius.bottomLeft}px;
     }
   `}
 `;
@@ -226,14 +236,13 @@ const ArrowIcon = styled(({ isOpen, disabled, selected, ...props }) => (
     selected,
     theme: {
       yoga: {
-        colors: { primary },
         components: { dropdown },
       },
     },
   }) => `
     fill: ${dropdown.disabled.arrow.fill};
     ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
-    ${selected ? `fill: ${primary[3]};` : ''};
+    ${selected ? `fill: ${dropdown.selected.arrow.fill};` : ''};
     transform: rotate(${isOpen ? '180deg' : '0'});
   `}
 `;
@@ -241,6 +250,7 @@ const ArrowIcon = styled(({ isOpen, disabled, selected, ...props }) => (
 const getSelectedOption = options =>
   options.find(item => item.selected === true);
 
+/** Gympass `<Dropdown />` is a multiple choice type of menu. */
 const Dropdown = ({ label, disabled, full, options, onChange, ...rest }) => (
   <Downshift
     initialSelectedItem={getSelectedOption(options)}
@@ -255,6 +265,7 @@ const Dropdown = ({ label, disabled, full, options, onChange, ...rest }) => (
       getMenuProps,
       getToggleButtonProps,
       selectedItem,
+      highlightedIndex,
       isOpen,
     }) => (
       <Wrapper full={full} {...getRootProps()} {...rest}>
@@ -285,12 +296,13 @@ const Dropdown = ({ label, disabled, full, options, onChange, ...rest }) => (
 
         {isOpen && (
           <OptionsList selected={selectedItem !== null} {...getMenuProps()}>
-            {options.map(item => (
+            {options.map((item, index) => (
               <Option
                 {...getItemProps({
                   key: item.value,
                   item,
                   isSelected: selectedItem === item,
+                  highlighted: highlightedIndex === index,
                 })}
               >
                 {item.label}

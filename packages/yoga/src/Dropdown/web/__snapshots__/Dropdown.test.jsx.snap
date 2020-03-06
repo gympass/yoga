@@ -26,7 +26,9 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   padding: 16px  16px 16px 16px;
   background-color: #FFFFFF;
   border-radius: 8px;
-  border: 1px solid  #D3D3E2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D3D3E2;
 }
 
 .c1:hover {
@@ -163,7 +165,9 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   padding: 16px  16px 16px 16px;
   background-color: #FFFFFF;
   border-radius: 8px;
-  border: 1px solid  #D3D3E2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D3D3E2;
   border-color: #DBDBE8;
 }
 
@@ -305,7 +309,9 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   padding: 16px  16px 16px 16px;
   background-color: #FFFFFF;
   border-radius: 8px;
-  border: 1px solid  #D3D3E2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D3D3E2;
 }
 
 .c1:hover {
@@ -442,7 +448,9 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   padding: 16px  16px 16px 16px;
   background-color: #FFFFFF;
   border-radius: 8px;
-  border: 1px solid  #D3D3E2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D3D3E2;
   border-color: #DBDBE8;
   border-color: #41414A;
 }

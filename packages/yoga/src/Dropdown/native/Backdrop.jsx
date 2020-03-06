@@ -3,15 +3,12 @@ import styled, { withTheme } from 'styled-components';
 import { node, string, func, bool } from 'prop-types';
 import {
   Animated,
-  Dimensions,
   TouchableWithoutFeedback,
   Easing,
   Modal,
 } from 'react-native';
 
 import { Text } from '@gympass/yoga';
-
-const { width } = Dimensions.get('screen');
 
 const ClosableArea = styled(Animated.View)`
   ${({
@@ -30,6 +27,8 @@ const ClosableArea = styled(Animated.View)`
 const ContentWrapper = styled(Animated.View)`
   position: absolute;
   justify-content: flex-end;
+
+  width: 100%;
 `;
 
 const Content = styled.View`
@@ -41,7 +40,7 @@ const Content = styled.View`
     },
   }) => `
     justify-content: center;
-    width: ${width}px;
+    width: 100%;
 
     background-color: ${dropdown.backdrop.content.backgroundColor};
     border-top-left-radius: ${dropdown.backdrop.content.border.radius.topLeft}px;
@@ -50,10 +49,22 @@ const Content = styled.View`
 `;
 
 const Title = styled(Text.H4)`
-  width: 100%;
-  padding: 20px 0;
+  ${({
+    theme: {
+      yoga: {
+        components: { dropdown },
+      },
+    },
+  }) => `
+    width: 100%;
+    padding: 
+      ${dropdown.backdrop.content.title.padding.top}px 
+      ${dropdown.backdrop.content.title.padding.right}px 
+      ${dropdown.backdrop.content.title.padding.bottom}px 
+      ${dropdown.backdrop.content.title.padding.left}px;
 
-  text-align: center;
+    text-align: center;
+  `}
 `;
 
 const Backdrop = ({
@@ -90,8 +101,8 @@ const Backdrop = ({
 
   return (
     isOpen && (
-      <Modal transparent animationType="none" {...props}>
-        <TouchableWithoutFeedback onPress={() => onClose()}>
+      <Modal {...props} transparent animationType="none">
+        <TouchableWithoutFeedback onPress={onClose}>
           <ClosableArea style={{ opacity: backgroundAnimation }} />
         </TouchableWithoutFeedback>
         <ContentWrapper style={{ bottom: contentAnimation }}>

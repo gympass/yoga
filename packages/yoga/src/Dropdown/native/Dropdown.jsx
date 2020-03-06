@@ -31,9 +31,10 @@ const Selector = styled.View`
 
     background-color: ${dropdown.selector.background};
     border-radius: ${dropdown.selector.border.radius}px;
-    border: ${dropdown.selector.border.width}px solid ${
-    dropdown.selector.border.color
-  };
+    border-width: ${dropdown.selector.border.width}px;
+    border-style: solid;
+    border-color: ${dropdown.selector.border.color};
+
     ${
       disabled
         ? `border-color: ${dropdown.disabled.selector.border.color};`
@@ -66,6 +67,7 @@ const Label = styled.Text`
 const getSelectedOption = options =>
   options.find(item => item.selected === true);
 
+/** Gympass `<Dropdown />` is a multiple choice type of menu. */
 const Dropdown = ({
   label,
   disabled,
@@ -76,7 +78,6 @@ const Dropdown = ({
   onChange,
   theme: {
     yoga: {
-      colors: { primary },
       components: { dropdown },
     },
   },
@@ -87,7 +88,7 @@ const Dropdown = ({
 
   const iconColor = () => {
     if (disabled) return dropdown.disabled.arrow.fill;
-    if (selected) return primary[3];
+    if (selected) return dropdown.selected.arrow.fill;
     return dropdown.arrow.fill;
   };
 
