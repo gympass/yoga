@@ -51,7 +51,7 @@ const Options = ({
       </PickerStyled>
 
       <PickerActions>
-        <Button.Link onPress={() => onClose()}>{cancelActionLabel}</Button.Link>
+        <Button.Link onPress={onClose}>{cancelActionLabel}</Button.Link>
         <Button.Link onPress={() => onSelect(selected)}>
           {confirmActionLabel}
         </Button.Link>

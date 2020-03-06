@@ -47,6 +47,7 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
           "bottom": -320,
           "justifyContent": "flex-end",
           "position": "absolute",
+          "width": "100%",
         }
       }
     >
@@ -58,7 +59,7 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
               "borderTopLeftRadius": 8,
               "borderTopRightRadius": 8,
               "justifyContent": "center",
-              "width": 750,
+              "width": "100%",
             },
           ]
         }
