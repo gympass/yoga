@@ -30,7 +30,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 }
 
 .c1 {
-  width: 312px;
+  width: 320px;
 }
 
 .c1:hover,
@@ -189,7 +189,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 }
 
 .c1 {
-  width: 312px;
+  width: 320px;
 }
 
 .c1 svg {
@@ -351,7 +351,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 }
 
 .c1 {
-  width: 312px;
+  width: 320px;
 }
 
 .c1:hover,
@@ -690,7 +690,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 }
 
 .c1 {
-  width: 312px;
+  width: 320px;
 }
 
 .c1:hover,
@@ -882,7 +882,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 }
 
 .c1 {
-  width: 312px;
+  width: 320px;
 }
 
 .c1:hover,

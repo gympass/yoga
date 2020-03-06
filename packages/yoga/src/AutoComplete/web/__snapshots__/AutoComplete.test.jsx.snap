@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Input.Email /> Snapshots should match with default input 1`] = `
-.c1 {
+exports[`<AutoComplete /> should match snapshot 1`] = `
+.c2 {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -10,7 +10,7 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   border: 1px solid #D3D3E2;
 }
 
-.c1 svg {
+.c2 svg {
   position: absolute;
   top: 0;
   right: 0;
@@ -24,21 +24,21 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   cursor: pointer;
 }
 
-.c1 svg:hover,
-.c1 svg:focus {
+.c2 svg:hover,
+.c2 svg:focus {
   fill: #41414A;
 }
 
-.c1 {
+.c2 {
   width: 320px;
 }
 
-.c1:hover,
-.c1:focus-within {
+.c2:hover,
+.c2:focus-within {
   border-color: #41414A;
 }
 
-.c2 {
+.c4 {
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -58,11 +58,11 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   box-sizing: border-box;
 }
 
-.c2:focus {
+.c4:focus {
   color: #41414A;
 }
 
-.c2:focus + label {
+.c4:focus + label {
   top: -1px;
   left: 14px;
   padding-right: 4px;
@@ -79,34 +79,34 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   color: #41414A;
 }
 
-.c2:disabled {
+.c4:disabled {
   cursor: not-allowed;
   border-color: #D3D3E2;
   color: #D3D3E2;
 }
 
-.c2::-webkit-input-placeholder {
+.c4::-webkit-input-placeholder {
   color: #9898A6;
 }
 
-.c2::-moz-placeholder {
+.c4::-moz-placeholder {
   color: #9898A6;
 }
 
-.c2:-ms-input-placeholder {
+.c4:-ms-input-placeholder {
   color: #9898A6;
 }
 
-.c2::placeholder {
+.c4::placeholder {
   color: #9898A6;
 }
 
-.c2[type="number"]::-webkit-outer-spin-button,
-.c2[type="number"]::-webkit-inner-spin-button {
+.c4[type="number"]::-webkit-outer-spin-button,
+.c4[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
-.c3 {
+.c5 {
   position: absolute;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -132,8 +132,16 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
 }
 
-.c0 {
+.c1 {
   width: auto;
+}
+
+.c3 {
+  z-index: 1;
+}
+
+.c0 {
+  position: relative;
 }
 
 <div>
@@ -143,16 +151,19 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
     <div
       class="c1"
     >
-      <input
-        class="c2"
-        type="email"
-        value=""
-      />
-      <label
-        class="c3"
+      <div
+        class="c2 c3"
       >
-        Label
-      </label>
+        <input
+          class="c4"
+          value=""
+        />
+        <label
+          class="c5"
+        >
+          Label
+        </label>
+      </div>
     </div>
   </div>
 </div>
