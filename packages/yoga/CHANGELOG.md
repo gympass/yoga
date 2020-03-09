@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.15.0...@gympass/yoga@1.16.0) (2020-03-09)
+
+### Bug Fixes
+
+- **radiogroup.radio:** fix reviews from [@victormath12](https://github.com/victormath12) [@alllyssonsantos](https://github.com/alllyssonsantos) [@alan-oliv](https://github.com/alan-oliv) ([c826da1](https://github.com/Gympass/yoga/commit/c826da118545df895717ac65804f9fc137bdd162))
+
+### Features
+
+- **radiobutton.radio:** new component: RadioGroup.Radio (native) ([1b972c2](https://github.com/Gympass/yoga/commit/1b972c249708c38c24b4fe9c5d971cfd98011e8f))
+- **radiogroup.radio:** add a new theme for radiogroup.radio component and revisit the old button ([6bd09c8](https://github.com/Gympass/yoga/commit/6bd09c8251975ca427058dc97fa1f268aa6c504f))
+- **radiogroup.radio:** add new RadioGroup.Radio component (web) ([df27bdf](https://github.com/Gympass/yoga/commit/df27bdfc259a36e1694b332dc7875b6ebd151625))
+
 # [1.15.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.14.3...@gympass/yoga@1.15.0) (2020-03-09)
 
 ### Features
