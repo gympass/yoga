@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.16.5...@gympass/yoga-doc@0.17.0) (2020-03-09)
+
+### Features
+
+- **dropdown:** add dropdown component ([b4cac13](https://github.com/Gympass/yoga/commit/b4cac139b5ec85c174739cc569762642afc59c6b))
+- **dropdown:** add dropdown component for native ([3d935f7](https://github.com/Gympass/yoga/commit/3d935f7a46c61b287abf4d57845b0f7ac617558e))
+
 ## [0.16.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.16.4...@gympass/yoga-doc@0.16.5) (2020-02-28)
 
 **Note:** Version bump only for package @gympass/yoga-doc
