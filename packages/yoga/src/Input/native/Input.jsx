@@ -248,7 +248,7 @@ const Input = ({
   const animate = (animation, toValue) =>
     Animated.timing(animation, {
       toValue,
-      duration: transition.duration[0],
+      duration: transition.duration[1],
       easing: Easing.bezier(...transition.timing[0]),
     }).start();
 

@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Backdrop /> Snapshots should match snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+/>
+`;
+
+exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Modal
+    animationType="none"
+    hardwareAccelerated={false}
+    transparent={true}
+    visible={true}
+  >
+    <TouchableWithoutFeedback>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#41414A",
+            "height": "100%",
+            "opacity": 0,
+            "position": "relative",
+            "width": "100%",
+          }
+        }
+      />
+    </TouchableWithoutFeedback>
+    <View
+      style={
+        Object {
+          "bottom": -320,
+          "justifyContent": "flex-end",
+          "position": "absolute",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderTopLeftRadius": 8,
+              "borderTopRightRadius": 8,
+              "justifyContent": "center",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 16,
+                "fontWeight": "700",
+                "lineHeight": 20,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 20,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 20,
+                "textAlign": "center",
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          Find an Activity
+        </Text>
+        Some Content
+      </View>
+    </View>
+  </Modal>
+</View>
+`;
