@@ -125,6 +125,7 @@ const AutoComplete = ({
   onSelect,
   onChange,
   onClean,
+  onFocus,
   ...props
 }) => {
   const [showOption, setShowOption] = useState(false);
@@ -136,12 +137,18 @@ const AutoComplete = ({
   const reg = new RegExp(`(${escapeRegExp(value || '').trim() || null})`, 'gi');
 
   useEffect(() => {
-    window.addEventListener('click', ({ target }) => {
+    const windowClick = ({ target }) => {
       if (!inputRef.current?.contains(target)) {
         setShowOption(false);
         setFocusedOption(null);
       }
-    });
+    };
+
+    window.addEventListener('click', windowClick);
+
+    return () => {
+      window.removeEventListener('click', windowClick);
+    };
   }, []);
 
   const closeOptions = () => {
@@ -182,6 +189,7 @@ const AutoComplete = ({
 
     if (key === 'ArrowUp' || (key === 'Tab' && shiftKey)) {
       e.preventDefault();
+
       if (
         optionsRef.current &&
         focusedOption === optionsRef.current.firstChild
@@ -246,13 +254,18 @@ const AutoComplete = ({
           closeOptions();
           onClean(cleanable);
         }}
-        onFocus={() => setShowOption(Boolean(value))}
+        onFocus={e => {
+          setShowOption(Boolean(value));
+          onFocus(e);
+        }}
         ref={inputRef}
         showOptions={showOption}
         value={value}
       />
       {options && showOption && (
-        <List ref={optionsRef}>{renderList(options)}</List>
+        <List ref={optionsRef} full={full}>
+          {renderList(options)}
+        </List>
       )}
     </Wrapper>
   );
@@ -265,6 +278,7 @@ AutoComplete.propTypes = {
   onSelect: func,
   onChange: func,
   onClean: func,
+  onFocus: func,
 };
 
 AutoComplete.defaultProps = {
@@ -273,6 +287,7 @@ AutoComplete.defaultProps = {
   onSelect: () => {},
   onChange: () => {},
   onClean: () => {},
+  onFocus: () => {},
   options: [
     'Aberdeen',
     'Abilene',
