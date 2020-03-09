@@ -1,5 +1,6 @@
+/* eslint react/no-array-index-key: 0 */
 import React, { useState, useRef, useEffect } from 'react';
-import { arrayOf, string, func } from 'prop-types';
+import { arrayOf, string, func, bool } from 'prop-types';
 import styled from 'styled-components';
 
 import Input from '../../Input/web/Input';
@@ -34,6 +35,8 @@ const StyledInput = styled(Input)`
 
 const Wrapper = styled.div`
   position: relative;
+
+  ${({ full }) => `width: ${full ? '100%' : 'auto'}`}
 `;
 
 const List = styled.ul`
@@ -45,6 +48,7 @@ const List = styled.ul`
   z-index: 999;
 
   ${({
+    full,
     theme: {
       yoga: {
         components: { autoComplete },
@@ -52,7 +56,7 @@ const List = styled.ul`
     },
   }) => `
     top: ${autoComplete.height}px;
-    width: ${autoComplete.width}px;
+    width: ${full ? '100%' : `${autoComplete.width}px`};
 
     background-color: ${autoComplete.field.backgroundColor};
     border:
@@ -62,7 +66,7 @@ const List = styled.ul`
     border-bottom-left-radius: ${autoComplete.border.radius}px;
     border-bottom-right-radius: ${autoComplete.border.radius}px;
 
-    max-height: ${autoComplete.height * 5}px;
+    max-height: ${autoComplete.height * 6}px;
     overflow: hidden;
   `}
 `;
@@ -114,7 +118,15 @@ const Match = styled.mark`
   `}
 `;
 
-const AutoComplete = ({ options, value, onSelect, onChange, ...props }) => {
+const AutoComplete = ({
+  full,
+  options,
+  value,
+  onSelect,
+  onChange,
+  onClean,
+  ...props
+}) => {
   const [showOption, setShowOption] = useState(false);
   const [focusedOption, setFocusedOption] = useState(null);
 
@@ -201,14 +213,14 @@ const AutoComplete = ({ options, value, onSelect, onChange, ...props }) => {
           ? -1
           : 1,
       )
-      .slice(0, 5)
+      .slice(0, 6)
       .map(option => (
         <Item key={option} tabIndex={0} onClick={handleSelect}>
           {option
             .split(reg)
             .map((part, index) =>
               part.match(reg) ? (
-                <Match key={index}>{part}</Match>
+                <Match key={`${index}`}>{part}</Match>
               ) : (
                 <React.Fragment key={`unmatch-${index}`}>{part}</React.Fragment>
               ),
@@ -226,10 +238,14 @@ const AutoComplete = ({ options, value, onSelect, onChange, ...props }) => {
   };
 
   return (
-    <Wrapper {...props} onKeyDown={handleKeyDown}>
+    <Wrapper {...props} onKeyDown={handleKeyDown} full={full}>
       <StyledInput
+        full={full}
         onChange={handleChange}
-        onClean={closeOptions}
+        onClean={cleanable => {
+          closeOptions();
+          onClean(cleanable);
+        }}
         onFocus={() => setShowOption(Boolean(value))}
         ref={inputRef}
         showOptions={showOption}
@@ -243,16 +259,20 @@ const AutoComplete = ({ options, value, onSelect, onChange, ...props }) => {
 };
 
 AutoComplete.propTypes = {
+  full: bool,
   options: arrayOf(string),
   value: string,
   onSelect: func,
   onChange: func,
+  onClean: func,
 };
 
 AutoComplete.defaultProps = {
+  full: false,
   value: '',
   onSelect: () => {},
   onChange: () => {},
+  onClean: () => {},
   options: [
     'Aberdeen',
     'Abilene',
