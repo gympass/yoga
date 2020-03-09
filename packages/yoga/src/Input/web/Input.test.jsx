@@ -126,7 +126,7 @@ describe('<Input />', () => {
   });
 
   describe('clean button', () => {
-    it('should call onClear when press clean button', () => {
+    it('should call onClean when press clean button', () => {
       const onCleanMock = jest.fn();
 
       const { getByRole, getByTestId } = render(
@@ -138,7 +138,7 @@ describe('<Input />', () => {
       fireEvent.change(getByTestId('input'), { target: { value: 'foo' } });
       fireEvent.click(getByRole('button'));
 
-      expect(onCleanMock).toHaveBeenCalled();
+      expect(onCleanMock).toHaveBeenCalledWith('');
     });
   });
 });

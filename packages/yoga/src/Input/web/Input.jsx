@@ -43,8 +43,8 @@ const Input = React.forwardRef(
       if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
 
-        inputRef.current.focus();
         onClean('');
+        inputRef.current.focus();
       }
     };
 
