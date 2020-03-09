@@ -22,22 +22,6 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
         ]
       }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "borderColor": "#DBDBE8",
-              "borderRadius": 9999,
-              "borderWidth": 1,
-              "height": "100%",
-              "position": "absolute",
-            },
-            Object {
-              "width": 0,
-            },
-          ]
-        }
-      />
       <TouchableWithoutFeedback>
         <View
           checked={false}
@@ -139,7 +123,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
 </View>
 `;
 
-exports[`<RadioGroup /> Snapshots should match snapshot with default radiogroup 1`] = `
+exports[`<RadioGroup /> Snapshots should match snapshot with radio button as children 1`] = `
 <View
   collapsable={true}
   pointerEvents="box-none"
@@ -161,65 +145,6 @@ exports[`<RadioGroup /> Snapshots should match snapshot with default radiogroup 
         ]
       }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "borderColor": "#DBDBE8",
-              "borderRadius": 9999,
-              "borderWidth": 1,
-              "height": "100%",
-              "position": "absolute",
-            },
-            Object {
-              "width": 0,
-            },
-          ]
-        }
-      />
-    </View>
-  </View>
-</View>
-`;
-
-exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View>
-    <View
-      style={
-        Array [
-          Object {
-            "alignSelf": "center",
-            "flexDirection": "row",
-            "position": "relative",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "borderColor": "#DBDBE8",
-              "borderRadius": 9999,
-              "borderWidth": 1,
-              "height": "100%",
-              "position": "absolute",
-            },
-            Object {
-              "width": 0,
-            },
-          ]
-        }
-      />
       <TouchableWithoutFeedback>
         <View
           checked={false}
@@ -340,22 +265,6 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
         ]
       }
     >
-      <View
-        style={
-          Array [
-            Object {
-              "borderColor": "#DBDBE8",
-              "borderRadius": 9999,
-              "borderWidth": 1,
-              "height": "100%",
-              "position": "absolute",
-            },
-            Object {
-              "width": 0,
-            },
-          ]
-        }
-      />
       <TouchableWithoutFeedback>
         <View
           checked={false}

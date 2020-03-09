@@ -9,17 +9,9 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  border-style: solid;
-  border-radius: 9999px;
-  border-width: 1px;
-  border-color: #DBDBE8;
 }
 
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c2 {
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -30,7 +22,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   width: 0;
 }
 
-.c1 {
+.c2 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -59,12 +51,12 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   padding-right: 24px;
 }
 
-.c1:hover,
-.c1:focus {
-  background-color: #F5F5FA;
+.c2:hover,
+.c2:focus {
+  background-color: #E6E6F0;
 }
 
-.c3 {
+.c4 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -98,45 +90,84 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   padding-right: 24px;
 }
 
+.c1 {
+  border-style: solid;
+  border-color: #DBDBE8;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left: none;
+  border-right: none;
+}
+
+.c1:first-child {
+  border-right-width: 0;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #DBDBE8;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.c1:last-child {
+  border-left-width: 0;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #DBDBE8;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
 <div>
   <div
     class="c0"
     role="radiogroup"
   >
-    <label
+    <div
       class="c1"
     >
-      <input
+      <label
         class="c2"
-        name=""
-        type="radio"
-        value="Option 1"
-      />
-      Option 1
-    </label>
-    <label
-      class="c3"
-    >
-      <input
-        checked=""
-        class="c2"
-        name=""
-        type="radio"
-        value="Option 2"
-      />
-      Option 2
-    </label>
-    <label
+      >
+        <input
+          class="c3"
+          name=""
+          type="radio"
+          value="Option 1"
+        />
+        Option 1
+      </label>
+    </div>
+    <div
       class="c1"
     >
-      <input
+      <label
+        class="c4"
+      >
+        <input
+          checked=""
+          class="c3"
+          name=""
+          type="radio"
+          value="Option 2"
+        />
+        Option 2
+      </label>
+    </div>
+    <div
+      class="c1"
+    >
+      <label
         class="c2"
-        name=""
-        type="radio"
-        value="Option 3"
-      />
-      Option 3
-    </label>
+      >
+        <input
+          class="c3"
+          name=""
+          type="radio"
+          value="Option 3"
+        />
+        Option 3
+      </label>
+    </div>
   </div>
 </div>
 `;
@@ -150,14 +181,6 @@ exports[`<RadioGroup /> Snapshots should match snapshot with default radiogroup 
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  border-style: solid;
-  border-radius: 9999px;
-  border-width: 1px;
-  border-color: #DBDBE8;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 <div>
@@ -177,15 +200,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with full radiogroup 1`]
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  border-style: solid;
-  border-radius: 9999px;
-  border-width: 1px;
-  border-color: #DBDBE8;
   width: 100%;
-}
-
-.c0 * {
-  box-sizing: border-box;
 }
 
 <div>
@@ -205,17 +220,9 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  border-style: solid;
-  border-radius: 9999px;
-  border-width: 1px;
-  border-color: #DBDBE8;
 }
 
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c2 {
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -226,7 +233,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 
   width: 0;
 }
 
-.c1 {
+.c2 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -255,9 +262,36 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 
   padding-right: 24px;
 }
 
-.c1:hover,
-.c1:focus {
-  background-color: #F5F5FA;
+.c2:hover,
+.c2:focus {
+  background-color: #E6E6F0;
+}
+
+.c1 {
+  border-style: solid;
+  border-color: #DBDBE8;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left: none;
+  border-right: none;
+}
+
+.c1:first-child {
+  border-right-width: 0;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #DBDBE8;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.c1:last-child {
+  border-left-width: 0;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #DBDBE8;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 
 <div>
@@ -265,39 +299,51 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 
     class="c0"
     role="radiogroup"
   >
-    <label
+    <div
       class="c1"
     >
-      <input
+      <label
         class="c2"
-        name=""
-        type="radio"
-        value="Option 1"
-      />
-      Option 1
-    </label>
-    <label
+      >
+        <input
+          class="c3"
+          name=""
+          type="radio"
+          value="Option 1"
+        />
+        Option 1
+      </label>
+    </div>
+    <div
       class="c1"
     >
-      <input
+      <label
         class="c2"
-        name=""
-        type="radio"
-        value="Option 2"
-      />
-      Option 2
-    </label>
-    <label
+      >
+        <input
+          class="c3"
+          name=""
+          type="radio"
+          value="Option 2"
+        />
+        Option 2
+      </label>
+    </div>
+    <div
       class="c1"
     >
-      <input
+      <label
         class="c2"
-        name=""
-        type="radio"
-        value="Option 3"
-      />
-      Option 3
-    </label>
+      >
+        <input
+          class="c3"
+          name=""
+          type="radio"
+          value="Option 3"
+        />
+        Option 3
+      </label>
+    </div>
   </div>
 </div>
 `;
@@ -311,17 +357,9 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  border-style: solid;
-  border-radius: 9999px;
-  border-width: 1px;
-  border-color: #DBDBE8;
 }
 
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c2 {
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -332,7 +370,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
   width: 0;
 }
 
-.c1 {
+.c2 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -361,9 +399,36 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
   padding-right: 24px;
 }
 
-.c1:hover,
-.c1:focus {
-  background-color: #F5F5FA;
+.c2:hover,
+.c2:focus {
+  background-color: #E6E6F0;
+}
+
+.c1 {
+  border-style: solid;
+  border-color: #DBDBE8;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left: none;
+  border-right: none;
+}
+
+.c1:first-child {
+  border-right-width: 0;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #DBDBE8;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.c1:last-child {
+  border-left-width: 0;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #DBDBE8;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 
 <div>
@@ -371,39 +436,51 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
     class="c0"
     role="radiogroup"
   >
-    <label
+    <div
       class="c1"
     >
-      <input
+      <label
         class="c2"
-        name=""
-        type="radio"
-        value="Option 1"
-      />
-      Option 1
-    </label>
-    <label
+      >
+        <input
+          class="c3"
+          name=""
+          type="radio"
+          value="Option 1"
+        />
+        Option 1
+      </label>
+    </div>
+    <div
       class="c1"
     >
-      <input
+      <label
         class="c2"
-        name=""
-        type="radio"
-        value="Option 2"
-      />
-      Option 2
-    </label>
-    <label
+      >
+        <input
+          class="c3"
+          name=""
+          type="radio"
+          value="Option 2"
+        />
+        Option 2
+      </label>
+    </div>
+    <div
       class="c1"
     >
-      <input
+      <label
         class="c2"
-        name=""
-        type="radio"
-        value="Option 3"
-      />
-      Option 3
-    </label>
+      >
+        <input
+          class="c3"
+          name=""
+          type="radio"
+          value="Option 3"
+        />
+        Option 3
+      </label>
+    </div>
   </div>
 </div>
 `;
@@ -417,17 +494,9 @@ exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
-  border-style: solid;
-  border-radius: 9999px;
-  border-width: 1px;
-  border-color: #DBDBE8;
 }
 
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c2 {
+.c3 {
   border: 0;
   height: 0;
   margin: 0;
@@ -438,7 +507,7 @@ exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
   width: 0;
 }
 
-.c1 {
+.c2 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -467,9 +536,36 @@ exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
   padding-right: 24px;
 }
 
-.c1:hover,
-.c1:focus {
-  background-color: #F5F5FA;
+.c2:hover,
+.c2:focus {
+  background-color: #E6E6F0;
+}
+
+.c1 {
+  border-style: solid;
+  border-color: #DBDBE8;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left: none;
+  border-right: none;
+}
+
+.c1:first-child {
+  border-right-width: 0;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #DBDBE8;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.c1:last-child {
+  border-left-width: 0;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #DBDBE8;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
 }
 
 <div>
@@ -477,42 +573,54 @@ exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
     class="c0"
     role="radiogroup"
   >
-    <label
+    <div
       class="c1"
     >
-      <input
+      <label
         class="c2"
-        data-testid="Option 1"
-        name="test"
-        type="radio"
-        value="Option 1"
-      />
-      Option 1
-    </label>
-    <label
+      >
+        <input
+          class="c3"
+          data-testid="Option 1"
+          name="test"
+          type="radio"
+          value="Option 1"
+        />
+        Option 1
+      </label>
+    </div>
+    <div
       class="c1"
     >
-      <input
+      <label
         class="c2"
-        data-testid="Option 2"
-        name="test"
-        type="radio"
-        value="Option 2"
-      />
-      Option 2
-    </label>
-    <label
+      >
+        <input
+          class="c3"
+          data-testid="Option 2"
+          name="test"
+          type="radio"
+          value="Option 2"
+        />
+        Option 2
+      </label>
+    </div>
+    <div
       class="c1"
     >
-      <input
+      <label
         class="c2"
-        data-testid="Option 3"
-        name="test"
-        type="radio"
-        value="Option 3"
-      />
-      Option 3
-    </label>
+      >
+        <input
+          class="c3"
+          data-testid="Option 3"
+          name="test"
+          type="radio"
+          value="Option 3"
+        />
+        Option 3
+      </label>
+    </div>
   </div>
 </div>
 `;

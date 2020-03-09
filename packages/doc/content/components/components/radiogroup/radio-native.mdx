@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
-import { View } from 'react-native';
-import { RadioGroup } from '@gympass/yoga';
+### Usage
 
-import { DocTitle } from '../components';
+```javascript type=expo state
+const { useState } = React;
 
-const RadioGroupPage = () => {
+const App = () => {
   const [selectedValue, setSelectedValue] = useState('24h');
   const [category, setCategory] = useState('Gyms');
 
   return (
     <View>
-      <DocTitle>RadioGroup.Button</DocTitle>
+      <Text>RadioGroup.Button</Text>
 
       <RadioGroup
         selectedValue={selectedValue}
@@ -21,7 +20,7 @@ const RadioGroupPage = () => {
         <RadioGroup.Button value="sundays">At Sundays</RadioGroup.Button>
       </RadioGroup>
 
-      <DocTitle>RadioGroup.Radio</DocTitle>
+      <Text>RadioGroup.Radio</Text>
 
       <RadioGroup
         selectedValue={category}
@@ -42,4 +41,15 @@ const RadioGroupPage = () => {
   );
 };
 
-export default RadioGroupPage;
+export default App;
+```
+
+### Props
+
+#### RadioGroup
+
+<PropsTable component="RadioGroup" platform="native" />
+
+#### RadioGroup.Radio
+
+<PropsTable component="RadioGroup.Radio" platform="native" />
