@@ -87,6 +87,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       value: node.frontmatter.order || 0,
     });
+
+    createNodeField({
+      name: 'opened',
+      node,
+      value:
+        node.frontmatter.opened === undefined ? true : node.frontmatter.opened,
+    });
   }
 };
 
