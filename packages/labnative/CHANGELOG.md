@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.14.3...@gympass/yoga-labnative@0.15.0) (2020-03-09)
+
+### Features
+
+- **dropdown:** add dropdown component ([b4cac13](https://github.com/Gympass/yoga/commit/b4cac139b5ec85c174739cc569762642afc59c6b))
+- **dropdown:** add dropdown component for native ([3d935f7](https://github.com/Gympass/yoga/commit/3d935f7a46c61b287abf4d57845b0f7ac617558e))
+- **dropdown:** creating backdrop when press the dropdown in native ([83d7613](https://github.com/Gympass/yoga/commit/83d7613d65b39dc5740218f8f0f2d251635ec27e))
+
 ## [0.14.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.14.2...@gympass/yoga-labnative@0.14.3) (2020-02-28)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
