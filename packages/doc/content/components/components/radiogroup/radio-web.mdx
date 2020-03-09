@@ -10,9 +10,9 @@ render(() => {
       selectedValue={selectedValue}
       onChange={({ target: { value } }) => setSelectedValue(value)}
     >
-      <RadioGroup.Button value="24h">24 hours</RadioGroup.Button>
-      <RadioGroup.Button value="now">Open now</RadioGroup.Button>
-      <RadioGroup.Button value="sundays">At Sundays</RadioGroup.Button>
+      <RadioGroup.Radio style={{ marginRight: 4 }} value="24h" />
+      <RadioGroup.Radio style={{ marginRight: 4 }} value="now" />
+      <RadioGroup.Radio value="sundays" />
     </RadioGroup>
   );
 });
@@ -20,4 +20,10 @@ render(() => {
 
 ### Props
 
+#### RadioGroup
+
 <PropsTable component="RadioGroup" platform="web" />
+
+#### RadioGroup.Radio
+
+<PropsTable component="RadioGroup.Radio" platform="web" />

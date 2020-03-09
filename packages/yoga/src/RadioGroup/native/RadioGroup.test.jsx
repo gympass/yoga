@@ -6,16 +6,7 @@ import ThemeProvider from '../../Theme';
 
 describe('<RadioGroup />', () => {
   describe('Snapshots', () => {
-    it('should match snapshot with default radiogroup', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <RadioGroup />
-        </ThemeProvider>,
-      );
-      expect(toJSON(container)).toMatchSnapshot();
-    });
-
-    it('should match snapshot with radios as children', () => {
+    it('should match snapshot with radio button as children', () => {
       const { container, getAllByText } = render(
         <ThemeProvider>
           <RadioGroup>
