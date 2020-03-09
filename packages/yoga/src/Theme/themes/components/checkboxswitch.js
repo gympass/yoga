@@ -13,7 +13,7 @@ const checkboxswitch = ({
     backgroundColor: colors.gray[3],
     radii: radii.circle,
     transition: {
-      duration: transition.duration[0],
+      duration: transition.duration[1],
     },
     checked: {
       backgroundColor: colors.primary[3],
@@ -30,7 +30,7 @@ const checkboxswitch = ({
     backgroundColor: colors.white,
     shadow: elevations.small,
     transition: {
-      duration: transition.duration[0],
+      duration: transition.duration[1],
     },
     checked: {
       backgroundColor: colors.primary[3],

@@ -7,6 +7,7 @@
 <img src="./src/svg/close.svg" alt="triangle_alert" width="12" height="12" />
 <img src="./src/svg/visibility.svg" alt="triangle_alert" width="12" height="12" />
 <img src="./src/svg/visibility_off.svg" alt="triangle_alert" width="12" height="12" />
+<img src="./src/svg/arrow_down.svg" alt="arrow_down" width="12" height="12" />
 
 ## Instalation
 
