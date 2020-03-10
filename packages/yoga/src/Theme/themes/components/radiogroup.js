@@ -6,27 +6,13 @@ const radiogroup = ({
   borders,
   fontSizes,
 }) => ({
-  radio: {
+  button: {
     border: {
       radius: radii.circle,
+      width: borders.small,
+      color: colors.gray[3],
     },
-    hover: {
-      backgroundColor: colors.gray[1],
-    },
-    backgroundColor: {
-      enabled: 'transparent',
-    },
-    checked: {
-      backgroundColor: {
-        enabled: colors.primary[3],
-      },
-      textColor: {
-        enabled: colors.white,
-      },
-      font: {
-        weight: fontWeights.bold,
-      },
-    },
+    backgroundColor: 'transparent',
     padding: {
       right: spacing.xlarge,
       left: spacing.xlarge,
@@ -35,14 +21,32 @@ const radiogroup = ({
       normal: 40,
       small: 32,
     },
-    font: {
-      size: fontSizes.small,
+  },
+  radio: {
+    size: 20,
+    backgroundColor: colors.gray[6],
+    border: {
+      radius: radii.circle,
     },
   },
-  radii: radii.circle,
-  border: {
-    width: borders.small,
-    color: colors.gray[3],
+  font: {
+    size: fontSizes.small,
+  },
+  hover: {
+    backgroundColor: colors.gray[2],
+  },
+  disabled: {
+    backgroundColor: colors.gray[5],
+  },
+  checked: {
+    backgroundColor: colors.primary[3],
+    font: {
+      color: colors.white,
+      weight: fontWeights.bold,
+    },
+    hover: {
+      backgroundColor: colors.primary[0],
+    },
   },
 });
 

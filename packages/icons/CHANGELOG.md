@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.6.0...@gympass/yoga-icons@0.6.1) (2020-03-10)
+
+**Note:** Version bump only for package @gympass/yoga-icons
+
+# [0.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.5.2...@gympass/yoga-icons@0.6.0) (2020-03-09)
+
+### Features
+
+- **dropdown:** add dropdown component ([b4cac13](https://github.com/Gympass/yoga/commit/b4cac139b5ec85c174739cc569762642afc59c6b))
+- **dropdown:** add dropdown component for native ([3d935f7](https://github.com/Gympass/yoga/commit/3d935f7a46c61b287abf4d57845b0f7ac617558e))
+
+## [0.5.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.5.1...@gympass/yoga-icons@0.5.2) (2020-02-28)
+
+**Note:** Version bump only for package @gympass/yoga-icons
+
 ## [0.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.5.0...@gympass/yoga-icons@0.5.1) (2020-02-18)
 
 **Note:** Version bump only for package @gympass/yoga-icons

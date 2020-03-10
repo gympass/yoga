@@ -12,6 +12,7 @@ import Rating from './Rating';
 import Tag from './Tag';
 import Input from './Input';
 import Progress from './Progress';
+import Dropdown from './Dropdown';
 import TextArea from './TextArea';
 import AutoComplete from './AutoComplete';
 
@@ -37,6 +38,7 @@ export {
   Tag,
   Input,
   Progress,
+  Dropdown,
   TextArea,
   AutoComplete,
 };

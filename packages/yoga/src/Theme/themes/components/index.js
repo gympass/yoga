@@ -14,6 +14,7 @@ import grid from './grid';
 import text from './text';
 import rating from './rating';
 import tag from './tag';
+import dropdown from './dropdown';
 
 export {
   autocomplete,
@@ -32,4 +33,5 @@ export {
   text,
   rating,
   tag,
+  dropdown,
 };
