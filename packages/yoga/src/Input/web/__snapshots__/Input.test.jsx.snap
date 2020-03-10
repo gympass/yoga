@@ -122,10 +122,10 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   padding-left: 0px;
   right: 0;
   bottom: 0;
-  border: 1px solid #d3d3e2;
-  border-radius: 8px;
   margin: 0;
   pointer-events: none;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
   padding-left: 12px;
 }
 
@@ -345,10 +345,10 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   padding-left: 0px;
   right: 0;
   bottom: 0;
-  border: 1px solid #d3d3e2;
-  border-radius: 8px;
   margin: 0;
   pointer-events: none;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
   padding-left: 12px;
 }
 
@@ -567,10 +567,10 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   padding-left: 0px;
   right: 0;
   bottom: 0;
-  border: 1px solid #d3d3e2;
-  border-radius: 8px;
   margin: 0;
   pointer-events: none;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
   padding-left: 12px;
 }
 
@@ -803,10 +803,10 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   padding-left: 0px;
   right: 0;
   bottom: 0;
-  border: 1px solid #d3d3e2;
-  border-radius: 8px;
   margin: 0;
   pointer-events: none;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
   padding-left: 12px;
 }
 
@@ -1015,10 +1015,10 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   padding-left: 0px;
   right: 0;
   bottom: 0;
-  border: 1px solid #d3d3e2;
-  border-radius: 8px;
   margin: 0;
   pointer-events: none;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
   padding-left: 12px;
 }
 
@@ -1262,10 +1262,10 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   padding-left: 0px;
   right: 0;
   bottom: 0;
-  border: 1px solid #d3d3e2;
-  border-radius: 8px;
   margin: 0;
   pointer-events: none;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
   padding-left: 12px;
 }
 
