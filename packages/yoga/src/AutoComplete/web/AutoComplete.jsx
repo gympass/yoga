@@ -20,6 +20,11 @@ const StyledInput = styled(Input)`
   }) =>
     showOptions
       ? `
+        border-color: ${input.border.color.typed};
+        border-bottom-width: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
         fieldset {
           border-color: ${input.border.color.typed};
           border-bottom-width: 0;
@@ -120,6 +125,7 @@ const Match = styled.mark`
   `}
 `;
 
+/** The autocomplete is a normal input field enhanced by a panel of suggested options. */
 const AutoComplete = ({
   className,
   style,
@@ -179,6 +185,10 @@ const AutoComplete = ({
     }
 
     if (key === 'ArrowDown' || (key === 'Tab' && !shiftKey)) {
+      if (!showOption) {
+        return;
+      }
+
       e.preventDefault();
       if (!focusedOption && optionsRef.current) {
         setFocusedOption(optionsRef.current.firstChild);
@@ -192,8 +202,11 @@ const AutoComplete = ({
     }
 
     if (key === 'ArrowUp' || (key === 'Tab' && shiftKey)) {
-      e.preventDefault();
+      if (!showOption) {
+        return;
+      }
 
+      e.preventDefault();
       if (
         optionsRef.current &&
         focusedOption === optionsRef.current.firstChild
