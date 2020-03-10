@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-icons",
-  "version": "0.5.1",
+  "version": "0.6.1",
   "description": "Yoga icon package",
   "keywords": [
     "yoga",
@@ -26,12 +26,15 @@
     "prebuild:native": "yarn build:native:svg",
     "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
     "build:native:svg": "NODE_ENV=svg babel ./src --out-dir dist/cjs --extensions '.svg'",
-    "prepublishOnly": "node ../../scripts/prepublish.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js --rn"
   },
   "devDependencies": {
     "@dr.pogodin/babel-preset-svgr": "^1.0.3",
     "babel-plugin-inline-react-svg": "^1.1.0",
     "babel-plugin-transform-rename-import": "^2.3.0"
+  },
+  "peerDependencies": {
+    "react-native-svg": ">=9.13.3"
   },
   "bugs": {
     "url": "https://github.com/Gympass/yoga/issues"

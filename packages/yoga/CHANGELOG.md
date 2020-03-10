@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.16.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.16.0...@gympass/yoga@1.16.1) (2020-03-10)
+
+**Note:** Version bump only for package @gympass/yoga
+
+# [1.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.15.0...@gympass/yoga@1.16.0) (2020-03-09)
+
+### Bug Fixes
+
+- **radiogroup.radio:** fix reviews from [@victormath12](https://github.com/victormath12) [@alllyssonsantos](https://github.com/alllyssonsantos) [@alan-oliv](https://github.com/alan-oliv) ([c826da1](https://github.com/Gympass/yoga/commit/c826da118545df895717ac65804f9fc137bdd162))
+
+### Features
+
+- **radiobutton.radio:** new component: RadioGroup.Radio (native) ([1b972c2](https://github.com/Gympass/yoga/commit/1b972c249708c38c24b4fe9c5d971cfd98011e8f))
+- **radiogroup.radio:** add a new theme for radiogroup.radio component and revisit the old button ([6bd09c8](https://github.com/Gympass/yoga/commit/6bd09c8251975ca427058dc97fa1f268aa6c504f))
+- **radiogroup.radio:** add new RadioGroup.Radio component (web) ([df27bdf](https://github.com/Gympass/yoga/commit/df27bdfc259a36e1694b332dc7875b6ebd151625))
+
+# [1.15.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.14.3...@gympass/yoga@1.15.0) (2020-03-09)
+
+### Features
+
+- **dropdown:** add dropdown component ([b4cac13](https://github.com/Gympass/yoga/commit/b4cac139b5ec85c174739cc569762642afc59c6b))
+- **dropdown:** add dropdown component for native ([3d935f7](https://github.com/Gympass/yoga/commit/3d935f7a46c61b287abf4d57845b0f7ac617558e))
+- **dropdown:** creating backdrop when press the dropdown in native ([83d7613](https://github.com/Gympass/yoga/commit/83d7613d65b39dc5740218f8f0f2d251635ec27e))
+
+## [1.14.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.14.2...@gympass/yoga@1.14.3) (2020-02-28)
+
+**Note:** Version bump only for package @gympass/yoga
+
 ## [1.14.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.14.1...@gympass/yoga@1.14.2) (2020-02-20)
 
 ### Bug Fixes

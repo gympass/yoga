@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.4.1...@gympass/yoga-tokens@0.5.0) (2020-03-09)
+
+### Features
+
+- **dropdown:** creating backdrop when press the dropdown in native ([83d7613](https://github.com/Gympass/yoga/commit/83d7613d65b39dc5740218f8f0f2d251635ec27e))
+
 ## [0.4.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.4.0...@gympass/yoga-tokens@0.4.1) (2020-02-12)
 
 **Note:** Version bump only for package @gympass/yoga-tokens

@@ -10,7 +10,7 @@
     "dev:web": "lerna run dev --scope=@gympass/yoga-doc --stream",
     "dev:native:android": "lerna run android --scope=@gympass/yoga-labnative --stream",
     "dev:native:ios": "lerna run ios --scope=@gympass/yoga-labnative --stream",
-    "lint": "eslint --ext js,jsx",
+    "lint": "eslint --ext js,jsx,android.jsx,ios.jsx",
     "lint:yoga": "yarn lint packages/yoga",
     "lint:doc": "yarn lint packages/doc",
     "lint:labnative": "yarn lint packages/labnative",
