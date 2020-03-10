@@ -20,10 +20,12 @@ const StyledInput = styled(Input)`
   }) =>
     showOptions
       ? `
-        border-color: ${input.border.color.typed};
-        border-bottom-width: 0;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        fieldset {
+          border-color: ${input.border.color.typed};
+          border-bottom-width: 0;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
 
         & label {
           color: ${input.label.color.focus};

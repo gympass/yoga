@@ -62,6 +62,7 @@ const Input = React.forwardRef(
           className={className}
           style={style}
           typed={typed}
+          label={label}
         >
           <Field
             {...props}

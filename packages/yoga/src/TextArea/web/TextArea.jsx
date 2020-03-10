@@ -81,7 +81,12 @@ const TextArea = React.forwardRef(
         style={style}
         onClick={() => textAreaRef.current.focus()}
       >
-        <StyledWrapper error={error} disabled={disabled} full={full}>
+        <StyledWrapper
+          error={error}
+          disabled={disabled}
+          full={full}
+          label={label}
+        >
           <StyledField
             {...props}
             disabled={disabled}
@@ -101,7 +106,7 @@ const TextArea = React.forwardRef(
             }}
           />
           {label && (
-            <Label error={error} disabled={disabled}>
+            <Label error={error} disabled={disabled} typed={typed}>
               {label}
             </Label>
           )}
