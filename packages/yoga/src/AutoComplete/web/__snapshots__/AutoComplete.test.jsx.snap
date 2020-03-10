@@ -8,6 +8,10 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   height: 52px;
 }
 
+.c2 {
+  width: 100%;
+}
+
 .c2 svg {
   position: absolute;
   top: 0;
@@ -25,10 +29,6 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 .c2 svg:hover,
 .c2 svg:focus {
   fill: #41414A;
-}
-
-.c2 {
-  width: 100%;
 }
 
 .c2:focus-within legend {
@@ -83,10 +83,6 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 .c4:disabled {
   cursor: not-allowed;
   color: #D3D3E2;
-}
-
-.c4:disabled ~ fieldset {
-  border-color: #D3D3E2;
 }
 
 .c4::-webkit-input-placeholder {
@@ -233,6 +229,10 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   height: 52px;
 }
 
+.c2 {
+  width: 320px;
+}
+
 .c2 svg {
   position: absolute;
   top: 0;
@@ -250,10 +250,6 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 .c2 svg:hover,
 .c2 svg:focus {
   fill: #41414A;
-}
-
-.c2 {
-  width: 320px;
 }
 
 .c2:focus-within legend {
@@ -308,10 +304,6 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 .c4:disabled {
   cursor: not-allowed;
   color: #D3D3E2;
-}
-
-.c4:disabled ~ fieldset {
-  border-color: #D3D3E2;
 }
 
 .c4::-webkit-input-placeholder {
@@ -458,6 +450,10 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   height: 52px;
 }
 
+.c2 {
+  width: 100%;
+}
+
 .c2 svg {
   position: absolute;
   top: 0;
@@ -475,10 +471,6 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 .c2 svg:hover,
 .c2 svg:focus {
   fill: #41414A;
-}
-
-.c2 {
-  width: 100%;
 }
 
 .c2:focus-within legend {
@@ -533,10 +525,6 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 .c4:disabled {
   cursor: not-allowed;
   color: #D3D3E2;
-}
-
-.c4:disabled ~ fieldset {
-  border-color: #D3D3E2;
 }
 
 .c4::-webkit-input-placeholder {
@@ -778,6 +766,10 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   height: 52px;
 }
 
+.c2 {
+  width: 320px;
+}
+
 .c2 svg {
   position: absolute;
   top: 0;
@@ -795,10 +787,6 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 .c2 svg:hover,
 .c2 svg:focus {
   fill: #41414A;
-}
-
-.c2 {
-  width: 320px;
 }
 
 .c2:focus-within legend {
@@ -853,10 +841,6 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 .c4:disabled {
   cursor: not-allowed;
   color: #D3D3E2;
-}
-
-.c4:disabled ~ fieldset {
-  border-color: #D3D3E2;
 }
 
 .c4::-webkit-input-placeholder {

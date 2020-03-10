@@ -8,6 +8,10 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
   height: 52px;
 }
 
+.c1 {
+  width: 320px;
+}
+
 .c1 svg {
   position: absolute;
   top: 0;
@@ -25,10 +29,6 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
 .c1 svg:hover,
 .c1 svg:focus {
   fill: #41414A;
-}
-
-.c1 {
-  width: 320px;
 }
 
 .c1:focus-within legend {
@@ -83,10 +83,6 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
 .c2:disabled {
   cursor: not-allowed;
   color: #D3D3E2;
-}
-
-.c2:disabled ~ fieldset {
-  border-color: #D3D3E2;
 }
 
 .c2::-webkit-input-placeholder {

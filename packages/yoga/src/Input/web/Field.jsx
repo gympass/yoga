@@ -72,24 +72,10 @@ const Field = styled.input`
     &:disabled {
       cursor: not-allowed;
       color: ${colors.disabled.background};
-
-      & ~ fieldset {
-        border-color: ${colors.disabled.background};
-      }
     }
 
     &::placeholder {
       color: ${input.label.color.default};
-    }
-
-    ${
-      error
-        ? `
-        & ~ fieldset {
-          border-color: ${colors.negative[1]};
-        }
-    `
-        : ''
     }
 
     ${
