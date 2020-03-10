@@ -1,21 +1,23 @@
 import {
-  Star,
-  Clock,
+  ArrowDown,
   Building,
-  TriangleAlert,
+  Clock,
   Close,
+  Done,
+  Star,
+  TriangleAlert,
   Visibility,
   VisibilityOff,
-  ArrowDown,
 } from './svg';
 
 export {
-  Star,
-  Clock,
+  ArrowDown,
   Building,
-  TriangleAlert,
+  Clock,
   Close,
+  Done,
+  Star,
+  TriangleAlert,
   Visibility,
   VisibilityOff,
-  ArrowDown,
 };
