@@ -8,6 +8,10 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   height: 52px;
 }
 
+.c1 {
+  width: 320px;
+}
+
 .c1 svg {
   position: absolute;
   top: 0;
@@ -25,10 +29,6 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 .c1 svg:hover,
 .c1 svg:focus {
   fill: #41414A;
-}
-
-.c1 {
-  width: 320px;
 }
 
 .c1:focus-within legend {
@@ -83,10 +83,6 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 .c2:disabled {
   cursor: not-allowed;
   color: #D3D3E2;
-}
-
-.c2:disabled ~ fieldset {
-  border-color: #D3D3E2;
 }
 
 .c2::-webkit-input-placeholder {
@@ -222,6 +218,10 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   color: #D3D3E2;
 }
 
+.c1 {
+  width: 320px;
+}
+
 .c1 svg {
   position: absolute;
   top: 0;
@@ -241,10 +241,6 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   fill: #41414A;
 }
 
-.c1 {
-  width: 320px;
-}
-
 .c1:focus-within legend {
   max-width: 1000px;
   font-weight: 700;
@@ -253,6 +249,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 .c1:hover fieldset,
 .c1:focus-within fieldset {
   border-color: #41414A;
+  border-color: #D3D3E2;
 }
 
 .c1 svg {
@@ -306,10 +303,6 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 .c2:disabled {
   cursor: not-allowed;
   color: #D3D3E2;
-}
-
-.c2:disabled ~ fieldset {
-  border-color: #D3D3E2;
 }
 
 .c2::-webkit-input-placeholder {
@@ -449,6 +442,14 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   border-color: #CB3530;
 }
 
+.c1 {
+  width: 320px;
+}
+
+.c1 fieldset {
+  border-color: #CB3530;
+}
+
 .c1 svg {
   position: absolute;
   top: 0;
@@ -466,10 +467,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 .c1 svg:hover,
 .c1 svg:focus {
   fill: #41414A;
-}
-
-.c1 {
-  width: 320px;
 }
 
 .c1:focus-within legend {
@@ -526,10 +523,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   color: #D3D3E2;
 }
 
-.c2:disabled ~ fieldset {
-  border-color: #D3D3E2;
-}
-
 .c2::-webkit-input-placeholder {
   color: #9898A6;
 }
@@ -544,10 +537,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 
 .c2::placeholder {
   color: #9898A6;
-}
-
-.c2 ~ fieldset {
-  border-color: #CB3530;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -689,6 +678,10 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   height: 52px;
 }
 
+.c1 {
+  width: 100%;
+}
+
 .c1 svg {
   position: absolute;
   top: 0;
@@ -706,10 +699,6 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 .c1 svg:hover,
 .c1 svg:focus {
   fill: #41414A;
-}
-
-.c1 {
-  width: 100%;
 }
 
 .c1:focus-within legend {
@@ -764,10 +753,6 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 .c2:disabled {
   cursor: not-allowed;
   color: #D3D3E2;
-}
-
-.c2:disabled ~ fieldset {
-  border-color: #D3D3E2;
 }
 
 .c2::-webkit-input-placeholder {
@@ -901,6 +886,10 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   height: 52px;
 }
 
+.c1 {
+  width: 320px;
+}
+
 .c1 svg {
   position: absolute;
   top: 0;
@@ -918,10 +907,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 .c1 svg:hover,
 .c1 svg:focus {
   fill: #41414A;
-}
-
-.c1 {
-  width: 320px;
 }
 
 .c1:focus-within legend {
@@ -976,10 +961,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 .c2:disabled {
   cursor: not-allowed;
   color: #D3D3E2;
-}
-
-.c2:disabled ~ fieldset {
-  border-color: #D3D3E2;
 }
 
 .c2::-webkit-input-placeholder {
@@ -1148,6 +1129,10 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   height: 52px;
 }
 
+.c1 {
+  width: 320px;
+}
+
 .c1 svg {
   position: absolute;
   top: 0;
@@ -1165,10 +1150,6 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 .c1 svg:hover,
 .c1 svg:focus {
   fill: #41414A;
-}
-
-.c1 {
-  width: 320px;
 }
 
 .c1:focus-within legend {
@@ -1223,10 +1204,6 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 .c2:disabled {
   cursor: not-allowed;
   color: #D3D3E2;
-}
-
-.c2:disabled ~ fieldset {
-  border-color: #D3D3E2;
 }
 
 .c2::-webkit-input-placeholder {

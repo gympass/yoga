@@ -30,6 +30,24 @@ const Wrapper = styled.div`
         : ''
     }
 
+
+    & {
+      width: ${full ? '100%' : `${input.width}px`};
+    }
+
+    ${
+      error
+        ? `
+      border-color: ${colors.negative[1]};
+
+      fieldset {
+        border-color: ${colors.negative[1]};
+      }
+    `
+        : ''
+    }
+
+
     svg {
       position: absolute;
       top: 0;
@@ -52,18 +70,6 @@ const Wrapper = styled.div`
       cursor: pointer;
     }
 
-    & {
-      width: ${full ? '100%' : `${input.width}px`};
-    }
-
-    ${
-      error
-        ? `
-      border-color: ${colors.negative[1]};
-    `
-        : ''
-    }
-
     &:focus-within {
       legend {
         max-width: 1000px;
@@ -79,11 +85,15 @@ const Wrapper = styled.div`
             border-color: ${
               error ? colors.negative[1] : input.border.color.typed
             };
+
+            ${disabled ? `border-color: ${colors.disabled.background};` : ''}
           }`
           : `
           border-color: ${
             error ? colors.negative[1] : input.border.color.typed
           };
+
+          ${disabled ? `border-color: ${colors.disabled.background};` : ''}
       `
       }
     }
@@ -93,7 +103,7 @@ const Wrapper = styled.div`
         ? `
             border-color: ${colors.disabled.background};
             color: ${colors.disabled.background};
-            
+
             svg {
               fill: ${colors.disabled.background};
               pointer-events: none;
