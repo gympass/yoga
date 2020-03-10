@@ -134,9 +134,9 @@ const ListItem = ({
   level,
   toggleMenu,
   prefix,
-  opened,
+  collapsed,
 }) => {
-  const [collapsed, setCollapsed] = useState(opened);
+  const [collapse, toggleCollapse] = useState(collapsed);
   const hasChild = Boolean(Object.keys(childs).length);
 
   const filteredUrl = `/${[
@@ -157,10 +157,10 @@ const ListItem = ({
       <AnchorLink
         level={level}
         as={Colapsible}
-        visible={collapsed.toString()}
+        visible={collapse.toString()}
         onClick={() => {
           if (hasChild) {
-            setCollapsed(!collapsed);
+            toggleCollapse(!collapse);
           }
           if (filteredUrl !== pathname && linkable) {
             navigate(filteredUrl);
@@ -193,14 +193,14 @@ ListItem.propTypes = {
   toggleMenu: func.isRequired,
   linkable: bool.isRequired,
   prefix: bool.isRequired,
-  opened: bool.isRequired,
+  collapsed: bool.isRequired,
 };
 
 const List = ({ tree, level, toggleMenu, prefix }) => (
   <StyledList>
     {Object.values(tree)
       .sort((t1, t2) => (t1.order > t2.order ? 1 : -1))
-      .map(({ title, url, linkable, order, opened, ...childs }) => (
+      .map(({ title, url, linkable, order, collapsed, ...childs }) => (
         <ListItem
           key={title}
           title={title}
@@ -210,7 +210,7 @@ const List = ({ tree, level, toggleMenu, prefix }) => (
           level={level}
           toggleMenu={toggleMenu}
           prefix={prefix}
-          opened={opened}
+          collapsed={collapsed}
         />
       ))}
   </StyledList>

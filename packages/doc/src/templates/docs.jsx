@@ -56,7 +56,7 @@ export const pageQuery = graphql`
             title
             linkable
             order
-            opened
+            collapsed
           }
         }
       }
