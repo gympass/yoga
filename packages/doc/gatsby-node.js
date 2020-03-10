@@ -87,6 +87,15 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       value: node.frontmatter.order || 0,
     });
+
+    createNodeField({
+      name: 'collapsed',
+      node,
+      value:
+        node.frontmatter.collapsed === undefined
+          ? true
+          : node.frontmatter.collapsed,
+    });
   }
 };
 

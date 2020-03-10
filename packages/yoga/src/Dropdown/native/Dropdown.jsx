@@ -67,7 +67,7 @@ const Label = styled.Text`
 const getSelectedOption = options =>
   options.find(item => item.selected === true);
 
-/** Gympass `<Dropdown />` is a multiple choice type of menu. */
+/** Gympass Dropdown is a multiple choice type of menu. */
 const Dropdown = ({
   label,
   disabled,
@@ -132,14 +132,17 @@ Dropdown.propTypes = {
   label: string,
   disabled: bool,
   full: bool,
-  /** dropdown options: { label (string), value (string or number) } */
+  /** { label (string), value (string or number), selected: (boolean) } */
   options: arrayOf(
     shape({
       label: string,
       value: string,
+      selected: bool,
     }),
   ).isRequired,
+  /** Cancel label that will be shown in iOS option chooser */
   cancelActionLabel: string,
+  /** Confirm label that will be shown in iOS option chooser */
   confirmActionLabel: string,
   onChange: func,
 };

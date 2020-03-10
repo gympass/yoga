@@ -8,36 +8,38 @@ const App = () => {
   const [category, setCategory] = useState('Gyms');
 
   return (
-    <View>
-      <Text>RadioGroup.Button</Text>
+    <ThemeProvider>
+      <View>
+        <Text>RadioGroup.Button</Text>
 
-      <RadioGroup
-        selectedValue={selectedValue}
-        onChange={({ value }) => setSelectedValue(value)}
-      >
-        <RadioGroup.Button value="24h">24 hours</RadioGroup.Button>
-        <RadioGroup.Button value="now">Open now</RadioGroup.Button>
-        <RadioGroup.Button value="sundays">At Sundays</RadioGroup.Button>
-      </RadioGroup>
+        <RadioGroup
+          selectedValue={selectedValue}
+          onChange={({ value }) => setSelectedValue(value)}
+        >
+          <RadioGroup.Button value="24h">24 hours</RadioGroup.Button>
+          <RadioGroup.Button value="now">Open now</RadioGroup.Button>
+          <RadioGroup.Button value="sundays">At Sundays</RadioGroup.Button>
+        </RadioGroup>
 
-      <Text>RadioGroup.Radio</Text>
+        <Text>RadioGroup.Radio</Text>
 
-      <RadioGroup
-        selectedValue={category}
-        onChange={({ value }) => setCategory(value)}
-        style={{
-          paddingBottom: 40,
-        }}
-      >
-        <RadioGroup.Radio
+        <RadioGroup
+          selectedValue={category}
+          onChange={({ value }) => setCategory(value)}
           style={{
-            marginRight: 4,
+            paddingBottom: 40,
           }}
-          value="Gyms"
-        />
-        <RadioGroup.Radio value="Classes" />
-      </RadioGroup>
-    </View>
+        >
+          <RadioGroup.Radio
+            style={{
+              marginRight: 4,
+            }}
+            value="Gyms"
+          />
+          <RadioGroup.Radio value="Classes" />
+        </RadioGroup>
+      </View>
+    <ThemeProvider>
   );
 };
 
