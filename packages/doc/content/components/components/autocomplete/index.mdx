@@ -6,6 +6,17 @@ metaDescription: 'AutoComplete Component'
 
 # AutoComplete
 
+## Reference
+
+It accepts unlimited number of suggstions, but it filters and only display the six
+most matched options.
+
+You can use `onSelect` prop to handle when user select a suggested option.
+
+It inherit all the [Input](./input/default) props.
+
+## Usage
+
 ```javascript state
 render(() => {
   const [value, setValue] = useState('');
@@ -16,9 +27,19 @@ render(() => {
       onChange={e => setValue(e.target.value)}
       onSelect={selected => setValue(selected)}
       onClean={cleanable => setValue(cleanable)}
+      options={[
+        'Madrid',
+        'Milan',
+        'São Paulo',
+        'New York',
+        'Paris',
+        'Buenos Aires',
+      ]}
     />
   );
 });
 ```
 
 ### Props
+
+<PropsTable component="AutoComplete" platform="web" />
