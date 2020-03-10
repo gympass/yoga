@@ -1,8 +1,9 @@
 import React from 'react';
 import { bool, string, objectOf, any } from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
-import CheckMark from './CheckMark';
+import { Done } from '@gympass/yoga-icons';
+
 import { HiddenInput } from '../../shared';
 
 const CheckboxWrapper = styled.div`
@@ -11,6 +12,67 @@ const CheckboxWrapper = styled.div`
   * {
     box-sizing: border-box;
   }
+`;
+
+const CheckMark = styled.div`
+  position: relative;
+
+  border-style: solid;
+
+  ${({
+    checked,
+    disabled,
+    error,
+    theme: {
+      yoga: {
+        components: { checkbox },
+      },
+    },
+  }) => `
+    width: ${checkbox.size}px;
+    height: ${checkbox.size}px;
+
+    margin-right: ${checkbox.margin.right}px;
+
+    border-radius: ${checkbox.border.radius}px;
+    border-width: ${checkbox.border.width}px;
+
+    border-color: ${
+      disabled ? checkbox.disabled.border.color : checkbox.border.color
+    };
+
+    ${
+      checked
+        ? `
+        background-color: ${checkbox.checked.backgroundColor}; 
+
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          
+          fill: white;
+
+          transform: translate(-50%, -50%);
+        }
+        `
+        : ''
+    }
+
+    ${
+      disabled && checked
+        ? `background-color: ${checkbox.disabled.backgroundColor};`
+        : ''
+    }
+
+    ${error ? `border-color: ${checkbox.error.border.color};` : ''}
+
+    ${
+      error && checked
+        ? `background-color: ${checkbox.error.backgroundColor};`
+        : ''
+    }
+  `}
 `;
 
 const Label = styled.label`
@@ -32,10 +94,9 @@ const Label = styled.label`
   `}
 `;
 
-const CheckboxStyled = styled.div`
-  position: relative;
-  display: flex;
-  align-items: center;
+const Shadow = styled.span`
+  position: absolute;
+  display: none;
 
   ${({
     theme: {
@@ -43,23 +104,65 @@ const CheckboxStyled = styled.div`
         components: { checkbox },
       },
     },
-  }) => css`
-    &:hover {
-      ${CheckMark} {
-        :before {
-          content: '';
-          position: absolute;
-          top: -17px;
-          left: -17px;
+  }) => `
+    width: ${checkbox.size}px;
+    height: ${checkbox.size}px;
+    border-radius: ${checkbox.hover.border.radius}px;
+  `}
+`;
 
-          width: 54px;
-          height: 54px;
+const CheckboxStyled = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  ${({
+    theme: {
+      yoga: {
+        components: { checkbox },
+      },
+    },
+  }) => `
 
-          background-color: ${hexToRgb(checkbox.checked.backgroundColor, 0.2)};
-          border-radius: ${checkbox.hover.border.radius}px;
-        }
-      }
+  ${Label}:active,
+  &:focus-within,
+  &:hover  {
+    ${Shadow} {
+      display: block;
     }
+  }
+
+  ${Label}:active {
+    ${Shadow} {
+      background-color: ${hexToRgb(checkbox.hover.backgroundColor, 0.75)};
+
+      box-shadow: 0 0 0 ${Math.round(
+        checkbox.size * 0.33 + checkbox.border.width * 2,
+      )}px
+      ${hexToRgb(checkbox.hover.backgroundColor, 0.75)};
+    }
+  }
+
+  &:focus-within {
+    ${Shadow} {
+      background-color: ${hexToRgb(checkbox.hover.backgroundColor, 0.5)};
+      
+      box-shadow: 0 0 0 ${Math.round(
+        checkbox.size * 0.33 + checkbox.border.width * 2,
+      )}px
+        ${hexToRgb(checkbox.hover.backgroundColor, 0.5)};
+      }
+  }
+
+  &:hover {
+    ${Shadow} {
+      background-color: ${hexToRgb(checkbox.hover.backgroundColor, 0.25)};
+
+      box-shadow: 0 0 0 ${Math.round(
+        checkbox.size * 0.33 + checkbox.border.width * 2,
+      )}px
+      ${hexToRgb(checkbox.hover.backgroundColor, 0.25)};
+    }
+  }
   `}
 `;
 
@@ -108,14 +211,16 @@ const Checkbox = ({
   <CheckboxWrapper style={style} className={className}>
     <CheckboxStyled>
       <Label>
+        <Shadow />
         <CheckMark disabled={disabled} checked={checked} error={error}>
-          <HiddenInput
-            type="checkbox"
-            checked={checked}
-            disabled={disabled}
-            {...rest}
-          />
+          {checked && <Done />}
         </CheckMark>
+        <HiddenInput
+          type="checkbox"
+          checked={checked}
+          disabled={disabled}
+          {...rest}
+        />
         {label}
       </Label>
     </CheckboxStyled>

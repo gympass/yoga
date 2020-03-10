@@ -1,4 +1,5 @@
 const checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
+  size: 24,
   margin: {
     right: spacing.xsmall,
   },
@@ -31,6 +32,7 @@ const checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
     },
   },
   hover: {
+    backgroundColor: colors.primary[1],
     border: {
       radius: radii.circle,
     },
