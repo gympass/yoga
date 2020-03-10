@@ -156,17 +156,19 @@ describe('<Input />', () => {
   });
 
   describe('clean button', () => {
-    it('should clear input value when press clean button', () => {
+    it('should call onClean when press clean button', () => {
+      const onCleanMock = jest.fn();
+
       const { getByRole, getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" />
+          <Input label="Input" testID="input" onClean={onCleanMock} />
         </ThemeProvider>,
       );
 
       fireEvent.changeText(getByTestId('input'), 'foo');
       fireEvent.press(getByRole('button'));
 
-      expect(getByTestId('input').props.value).toBe('');
+      expect(onCleanMock).toHaveBeenCalledWith('');
     });
   });
 });
