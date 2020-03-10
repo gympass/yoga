@@ -11,11 +11,8 @@ const labelTransition = css`
       },
     },
   }) => `
-    top: -1px;
-    left: ${input.padding.left - 2}px;
-
-    padding-right: ${input.label.padding.right}px;
-    padding-left: ${input.label.padding.left}px;
+    top: 0px;
+    left: ${input.padding.left}px;
 
     font-size: ${input.label.font.size.typed}px;
 
@@ -74,8 +71,11 @@ const Field = styled.input`
 
     &:disabled {
       cursor: not-allowed;
-      border-color: ${colors.disabled.background};
       color: ${colors.disabled.background};
+
+      & ~ fieldset {
+        border-color: ${colors.disabled.background};
+      }
     }
 
     &::placeholder {
@@ -85,7 +85,9 @@ const Field = styled.input`
     ${
       error
         ? `
-      border-color: ${colors.negative[1]};
+        & ~ fieldset {
+          border-color: ${colors.negative[1]};
+        }
     `
         : ''
     }
@@ -104,6 +106,10 @@ const Field = styled.input`
   &[type="number"]::-webkit-outer-spin-button,
   &[type="number"]::-webkit-inner-spin-button {
     display: none;
+  }
+
+  &:invalid {
+    box-shadow: none;
   }
 `;
 

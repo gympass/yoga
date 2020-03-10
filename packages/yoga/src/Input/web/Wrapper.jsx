@@ -10,6 +10,7 @@ const Wrapper = styled.div`
     disabled,
     error,
     full,
+    label,
     theme: {
       yoga: {
         colors,
@@ -20,8 +21,14 @@ const Wrapper = styled.div`
   }) => `
     height: ${input.height}px;
 
-    border-radius: ${input.border.radius}px;
-    border: ${input.border.width}px solid ${input.border.color.default};
+    ${
+      !label
+        ? `
+        border-radius: ${input.border.radius}px;
+        border: 1px solid #d3d3e2;
+        `
+        : ''
+    }
 
     svg {
       position: absolute;
@@ -57,6 +64,30 @@ const Wrapper = styled.div`
         : ''
     }
 
+    &:focus-within {
+      legend {
+        max-width: 1000px;
+        font-weight: 700;
+      }
+    }
+
+    &:hover, &:focus-within {
+      ${
+        label
+          ? `
+          fieldset {
+            border-color: ${
+              error ? colors.negative[1] : input.border.color.typed
+            };
+          }`
+          : `
+          border-color: ${
+            error ? colors.negative[1] : input.border.color.typed
+          };
+      `
+      }
+    }
+
     ${
       disabled
         ? `
@@ -67,14 +98,14 @@ const Wrapper = styled.div`
               fill: ${colors.disabled.background};
               pointer-events: none;
             }
+
+            ${
+              label
+                ? `fieldset { border-color: ${colors.disabled.background}; }`
+                : ''
+            }
           `
-        : `   
-          &:hover, &:focus-within {
-            border-color: ${
-              error ? colors.negative[1] : input.border.color.typed
-            };
-          }
-        `
+        : ''
     }
   `}
 `;
