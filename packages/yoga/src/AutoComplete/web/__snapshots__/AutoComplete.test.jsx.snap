@@ -6,8 +6,6 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   display: inline-block;
   vertical-align: top;
   height: 52px;
-  border-radius: 8px;
-  border: 1px solid #D3D3E2;
 }
 
 .c2 svg {
@@ -33,8 +31,13 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   width: 100%;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:focus-within legend {
+  max-width: 1000px;
+  font-weight: 700;
+}
+
+.c2:hover fieldset,
+.c2:focus-within fieldset {
   border-color: #41414A;
 }
 
@@ -63,10 +66,8 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 }
 
 .c4:focus + label {
-  top: -1px;
-  left: 14px;
-  padding-right: 4px;
-  padding-left: 4px;
+  top: 0px;
+  left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -81,8 +82,11 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 
 .c4:disabled {
   cursor: not-allowed;
-  border-color: #D3D3E2;
   color: #D3D3E2;
+}
+
+.c4:disabled ~ fieldset {
+  border-color: #D3D3E2;
 }
 
 .c4::-webkit-input-placeholder {
@@ -106,6 +110,44 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   display: none;
 }
 
+.c4:invalid {
+  box-shadow: none;
+}
+
+.c6 {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  padding: 0;
+  padding-left: 0px;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #d3d3e2;
+  border-radius: 8px;
+  margin: 0;
+  pointer-events: none;
+  padding-left: 12px;
+}
+
+.c7 {
+  font-size: 11px;
+  visibility: hidden;
+  position: relative;
+  max-width: 0.01px;
+  width: auto;
+  height: 14px;
+  padding: 0;
+  font-weight: normal;
+  -webkit-transition: max-width ease 50ms;
+  transition: max-width ease 50ms;
+  max-width: 0.01px;
+}
+
+.c8 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 .c5 {
   position: absolute;
   -webkit-letter-spacing: normal;
@@ -119,7 +161,6 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   user-select: none;
   top: 24px;
   left: 16px;
-  background-color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
@@ -154,6 +195,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
     >
       <div
         class="c2 c3"
+        label="Label"
       >
         <input
           class="c4"
@@ -164,6 +206,19 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
         >
           Label
         </label>
+        <fieldset
+          class="c6"
+        >
+          <legend
+            class="c7"
+          >
+            <span
+              class="c8"
+            >
+              Label
+            </span>
+          </legend>
+        </fieldset>
       </div>
     </div>
   </div>
@@ -176,8 +231,6 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   display: inline-block;
   vertical-align: top;
   height: 52px;
-  border-radius: 8px;
-  border: 1px solid #D3D3E2;
 }
 
 .c2 svg {
@@ -203,8 +256,13 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   width: 320px;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:focus-within legend {
+  max-width: 1000px;
+  font-weight: 700;
+}
+
+.c2:hover fieldset,
+.c2:focus-within fieldset {
   border-color: #41414A;
 }
 
@@ -233,10 +291,8 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 }
 
 .c4:focus + label {
-  top: -1px;
-  left: 14px;
-  padding-right: 4px;
-  padding-left: 4px;
+  top: 0px;
+  left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -251,8 +307,11 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 
 .c4:disabled {
   cursor: not-allowed;
-  border-color: #D3D3E2;
   color: #D3D3E2;
+}
+
+.c4:disabled ~ fieldset {
+  border-color: #D3D3E2;
 }
 
 .c4::-webkit-input-placeholder {
@@ -276,6 +335,44 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   display: none;
 }
 
+.c4:invalid {
+  box-shadow: none;
+}
+
+.c6 {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  padding: 0;
+  padding-left: 0px;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #d3d3e2;
+  border-radius: 8px;
+  margin: 0;
+  pointer-events: none;
+  padding-left: 12px;
+}
+
+.c7 {
+  font-size: 11px;
+  visibility: hidden;
+  position: relative;
+  max-width: 0.01px;
+  width: auto;
+  height: 14px;
+  padding: 0;
+  font-weight: normal;
+  -webkit-transition: max-width ease 50ms;
+  transition: max-width ease 50ms;
+  max-width: 0.01px;
+}
+
+.c8 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 .c5 {
   position: absolute;
   -webkit-letter-spacing: normal;
@@ -289,7 +386,6 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   user-select: none;
   top: 24px;
   left: 16px;
-  background-color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
@@ -324,6 +420,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
     >
       <div
         class="c2 c3"
+        label="Label"
       >
         <input
           class="c4"
@@ -334,6 +431,19 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
         >
           Label
         </label>
+        <fieldset
+          class="c6"
+        >
+          <legend
+            class="c7"
+          >
+            <span
+              class="c8"
+            >
+              Label
+            </span>
+          </legend>
+        </fieldset>
       </div>
     </div>
   </div>
@@ -346,8 +456,6 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   display: inline-block;
   vertical-align: top;
   height: 52px;
-  border-radius: 8px;
-  border: 1px solid #D3D3E2;
 }
 
 .c2 svg {
@@ -373,8 +481,13 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   width: 100%;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:focus-within legend {
+  max-width: 1000px;
+  font-weight: 700;
+}
+
+.c2:hover fieldset,
+.c2:focus-within fieldset {
   border-color: #41414A;
 }
 
@@ -403,10 +516,8 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c4:focus + label {
-  top: -1px;
-  left: 14px;
-  padding-right: 4px;
-  padding-left: 4px;
+  top: 0px;
+  left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -421,8 +532,11 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c4:disabled {
   cursor: not-allowed;
-  border-color: #D3D3E2;
   color: #D3D3E2;
+}
+
+.c4:disabled ~ fieldset {
+  border-color: #D3D3E2;
 }
 
 .c4::-webkit-input-placeholder {
@@ -442,10 +556,8 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c4 + label {
-  top: -1px;
-  left: 14px;
-  padding-right: 4px;
-  padding-left: 4px;
+  top: 0px;
+  left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -461,6 +573,44 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   display: none;
 }
 
+.c4:invalid {
+  box-shadow: none;
+}
+
+.c6 {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  padding: 0;
+  padding-left: 0px;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #d3d3e2;
+  border-radius: 8px;
+  margin: 0;
+  pointer-events: none;
+  padding-left: 12px;
+}
+
+.c7 {
+  font-size: 11px;
+  visibility: hidden;
+  position: relative;
+  max-width: 0.01px;
+  width: auto;
+  height: 14px;
+  padding: 0;
+  font-weight: normal;
+  -webkit-transition: max-width ease 50ms;
+  transition: max-width ease 50ms;
+  max-width: 1000px;
+}
+
+.c8 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 .c5 {
   position: absolute;
   -webkit-letter-spacing: normal;
@@ -474,7 +624,6 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   user-select: none;
   top: 24px;
   left: 16px;
-  background-color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
@@ -493,6 +642,9 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c3 {
   z-index: 1;
+}
+
+.c3 fieldset {
   border-color: #41414A;
   border-bottom-width: 0;
   border-bottom-left-radius: 0;
@@ -509,7 +661,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   width: 100%;
 }
 
-.c6 {
+.c9 {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -525,7 +677,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   overflow: hidden;
 }
 
-.c7 {
+.c10 {
   line-height: 20px;
   list-style: none;
   cursor: pointer;
@@ -536,12 +688,12 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   padding: 16px 16px 16px 16px;
 }
 
-.c7:hover,
-.c7:focus {
+.c10:hover,
+.c10:focus {
   background-color: #F5F5FA;
 }
 
-.c8 {
+.c11 {
   color: inherit;
   background: transparent;
   font-weight: 700;
@@ -556,6 +708,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
     >
       <div
         class="c2 c3"
+        label="Label"
       >
         <input
           class="c4"
@@ -566,6 +719,19 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
         >
           Label
         </label>
+        <fieldset
+          class="c6"
+        >
+          <legend
+            class="c7"
+          >
+            <span
+              class="c8"
+            >
+              Label
+            </span>
+          </legend>
+        </fieldset>
         <svg
           role="button"
           tabindex="0"
@@ -573,27 +739,27 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
       </div>
     </div>
     <ul
-      class="c6"
+      class="c9"
     >
       <li
-        class="c7"
+        class="c10"
         tabindex="0"
       >
         
         <mark
-          class="c8"
+          class="c11"
         >
           s
         </mark>
         econd
       </li>
       <li
-        class="c7"
+        class="c10"
         tabindex="0"
       >
         fir
         <mark
-          class="c8"
+          class="c11"
         >
           s
         </mark>
@@ -610,8 +776,6 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   display: inline-block;
   vertical-align: top;
   height: 52px;
-  border-radius: 8px;
-  border: 1px solid #D3D3E2;
 }
 
 .c2 svg {
@@ -637,8 +801,13 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   width: 320px;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:focus-within legend {
+  max-width: 1000px;
+  font-weight: 700;
+}
+
+.c2:hover fieldset,
+.c2:focus-within fieldset {
   border-color: #41414A;
 }
 
@@ -667,10 +836,8 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c4:focus + label {
-  top: -1px;
-  left: 14px;
-  padding-right: 4px;
-  padding-left: 4px;
+  top: 0px;
+  left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -685,8 +852,11 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c4:disabled {
   cursor: not-allowed;
-  border-color: #D3D3E2;
   color: #D3D3E2;
+}
+
+.c4:disabled ~ fieldset {
+  border-color: #D3D3E2;
 }
 
 .c4::-webkit-input-placeholder {
@@ -706,10 +876,8 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c4 + label {
-  top: -1px;
-  left: 14px;
-  padding-right: 4px;
-  padding-left: 4px;
+  top: 0px;
+  left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -725,6 +893,44 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   display: none;
 }
 
+.c4:invalid {
+  box-shadow: none;
+}
+
+.c6 {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  padding: 0;
+  padding-left: 0px;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #d3d3e2;
+  border-radius: 8px;
+  margin: 0;
+  pointer-events: none;
+  padding-left: 12px;
+}
+
+.c7 {
+  font-size: 11px;
+  visibility: hidden;
+  position: relative;
+  max-width: 0.01px;
+  width: auto;
+  height: 14px;
+  padding: 0;
+  font-weight: normal;
+  -webkit-transition: max-width ease 50ms;
+  transition: max-width ease 50ms;
+  max-width: 1000px;
+}
+
+.c8 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 .c5 {
   position: absolute;
   -webkit-letter-spacing: normal;
@@ -738,7 +944,6 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   user-select: none;
   top: 24px;
   left: 16px;
-  background-color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
@@ -757,6 +962,9 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c3 {
   z-index: 1;
+}
+
+.c3 fieldset {
   border-color: #41414A;
   border-bottom-width: 0;
   border-bottom-left-radius: 0;
@@ -773,7 +981,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   width: auto;
 }
 
-.c6 {
+.c9 {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -789,7 +997,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   overflow: hidden;
 }
 
-.c7 {
+.c10 {
   line-height: 20px;
   list-style: none;
   cursor: pointer;
@@ -800,12 +1008,12 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   padding: 16px 16px 16px 16px;
 }
 
-.c7:hover,
-.c7:focus {
+.c10:hover,
+.c10:focus {
   background-color: #F5F5FA;
 }
 
-.c8 {
+.c11 {
   color: inherit;
   background: transparent;
   font-weight: 700;
@@ -820,6 +1028,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
     >
       <div
         class="c2 c3"
+        label="Label"
       >
         <input
           class="c4"
@@ -830,6 +1039,19 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
         >
           Label
         </label>
+        <fieldset
+          class="c6"
+        >
+          <legend
+            class="c7"
+          >
+            <span
+              class="c8"
+            >
+              Label
+            </span>
+          </legend>
+        </fieldset>
         <svg
           role="button"
           tabindex="0"
@@ -837,27 +1059,27 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
       </div>
     </div>
     <ul
-      class="c6"
+      class="c9"
     >
       <li
-        class="c7"
+        class="c10"
         tabindex="0"
       >
         
         <mark
-          class="c8"
+          class="c11"
         >
           s
         </mark>
         econd
       </li>
       <li
-        class="c7"
+        class="c10"
         tabindex="0"
       >
         fir
         <mark
-          class="c8"
+          class="c11"
         >
           s
         </mark>

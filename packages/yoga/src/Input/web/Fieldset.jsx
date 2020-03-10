@@ -8,11 +8,20 @@ const Fieldset = styled.fieldset`
   padding-left: 0px;
   right: 0;
   bottom: 0;
-  border: 1px solid #d3d3e2;
-  border-radius: 8px;
   margin: 0;
   pointer-events: none;
-  padding-left: 12px;
+
+  ${({
+    theme: {
+      yoga: {
+        components: { input },
+      },
+    },
+  }) => `
+    border-radius: ${input.border.radius}px;
+    border: ${input.border.width}px solid ${input.border.color.default};
+    padding-left: ${input.label.padding.left + input.border.radius}px;
+  `}
 `;
 
 export default Fieldset;
