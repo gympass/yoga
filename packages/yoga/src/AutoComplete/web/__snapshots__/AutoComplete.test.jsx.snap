@@ -630,6 +630,10 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c3 {
   z-index: 1;
+  border-color: #41414A;
+  border-bottom-width: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .c3 fieldset {
@@ -946,6 +950,10 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c3 {
   z-index: 1;
+  border-color: #41414A;
+  border-bottom-width: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .c3 fieldset {
