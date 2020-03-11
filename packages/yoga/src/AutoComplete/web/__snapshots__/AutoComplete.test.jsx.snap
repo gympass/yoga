@@ -660,6 +660,10 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   font-weight: 700;
 }
 
+.c3 legend {
+  font-weight: 700;
+}
+
 .c0 {
   position: relative;
   width: 100%;
@@ -981,6 +985,10 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c3 label {
   color: #41414A;
+  font-weight: 700;
+}
+
+.c3 legend {
   font-weight: 700;
 }
 
