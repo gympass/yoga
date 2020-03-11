@@ -25,20 +25,13 @@ const checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
       size: fontSizes.small,
       color: colors.gray[7],
     },
-    selected: {
-      font: {
-        color: colors.negative[1],
-      },
-    },
   },
   hover: {
-    backgroundColor: colors.primary[1],
     border: {
       radius: radii.circle,
     },
   },
   checked: {
-    backgroundColor: colors.primary[3],
     icon: {
       color: colors.white,
     },
@@ -47,12 +40,6 @@ const checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
     backgroundColor: colors.gray[7],
     border: {
       color: colors.gray[7],
-    },
-  },
-  error: {
-    backgroundColor: colors.negative[1],
-    border: {
-      color: colors.negative[1],
     },
   },
 });
