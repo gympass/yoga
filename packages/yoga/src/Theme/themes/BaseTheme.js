@@ -117,6 +117,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       radii,
       fontSizes,
       fontWeights,
+      lineHeights,
     }),
     dropdown: dropdown({
       colors,
