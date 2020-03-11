@@ -1,5 +1,6 @@
 /* eslint react/no-array-index-key: 0 */
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
+import Downshift from 'downshift';
 import { arrayOf, string, func, bool, shape } from 'prop-types';
 import styled from 'styled-components';
 
@@ -11,14 +12,14 @@ const StyledInput = styled(Input)`
   z-index: 1;
 
   ${({
-    showOptions,
+    isOpen,
     theme: {
       yoga: {
         components: { input },
       },
     },
   }) =>
-    showOptions
+    isOpen
       ? `
         border-color: ${input.border.color.typed};
         border-bottom-width: 0;
@@ -88,6 +89,7 @@ const Item = styled.li`
   cursor: pointer;
 
   ${({
+    selected,
     theme: {
       yoga: {
         components: { autoComplete },
@@ -107,9 +109,14 @@ const Item = styled.li`
     font-weight: ${autoComplete.list.font.weight.default};
     line-height: ${autoComplete.list.font.lineHeight}px;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: ${autoComplete.list.backgroundColor.hover};
+    }
+
+    ${
+      selected
+        ? `background-color: ${autoComplete.list.backgroundColor.hover};`
+        : ''
     }
   `}
 `;
@@ -135,158 +142,106 @@ const AutoComplete = ({
   style,
   full,
   options,
-  value,
-  onSelect,
   onChange,
   onClean,
-  onFocus,
+  onSelect,
+  value,
   ...props
 }) => {
-  const [showOption, setShowOption] = useState(false);
-  const [focusedOption, setFocusedOption] = useState(null);
-
-  const inputRef = useRef(null);
-  const optionsRef = useRef(null);
-
-  const reg = new RegExp(`(${escapeRegExp(value || '').trim() || null})`, 'gi');
-
-  useEffect(() => {
-    const clickOutside = ({ target }) => {
-      if (!inputRef.current?.contains(target)) {
-        setShowOption(false);
-        setFocusedOption(null);
-      }
-    };
-
-    window.addEventListener('click', clickOutside);
-
-    return () => {
-      window.removeEventListener('click', clickOutside);
-    };
-  }, []);
-
-  const closeOptions = () => {
-    setShowOption(false);
-    setFocusedOption(null);
-  };
-
-  const handleSelect = e => {
-    inputRef.current.focus();
-    closeOptions();
-    onSelect(e.target.textContent);
-  };
-
-  const handleKeyDown = e => {
-    const { key, shiftKey } = e;
-
-    if (key === 'Escape') {
-      inputRef.current.focus();
-      closeOptions();
-    }
-
-    if (key === 'Enter' && focusedOption) {
-      handleSelect(e);
-    }
-
-    if (showOption && (key === 'ArrowDown' || (key === 'Tab' && !shiftKey))) {
-      e.preventDefault();
-      if (!focusedOption && optionsRef.current) {
-        setFocusedOption(optionsRef.current.firstChild);
-        optionsRef.current.firstChild.focus();
-      }
-
-      if (focusedOption && focusedOption.nextElementSibling) {
-        focusedOption.nextElementSibling.focus();
-        setFocusedOption(focusedOption.nextElementSibling);
-      }
-    }
-
-    if (showOption && (key === 'ArrowUp' || (key === 'Tab' && shiftKey))) {
-      e.preventDefault();
-      if (
-        optionsRef.current &&
-        focusedOption === optionsRef.current.firstChild
-      ) {
-        setFocusedOption(null);
-        inputRef.current.focus();
-      }
-
-      if (focusedOption && focusedOption.previousElementSibling) {
-        focusedOption.previousElementSibling.focus();
-        setFocusedOption(focusedOption.previousElementSibling);
-      }
-    }
-  };
-
-  const handleChange = e => {
-    setShowOption(true);
-    onChange(e);
-  };
-
-  const renderList = optionsList => {
-    const inputedValue = value?.toLowerCase().trim();
-
-    const list = optionsList
-      .filter(option => option.match(reg))
-      .sort((first, second) =>
-        first.toLowerCase().indexOf(inputedValue) <
-        second.toLowerCase().indexOf(inputedValue)
-          ? -1
-          : 1,
-      )
-      .slice(0, 6)
-      .map(option => (
-        <Item key={option} tabIndex={0} onClick={handleSelect}>
-          {option
-            .split(reg)
-            .map((part, index) =>
-              part.match(reg) ? (
-                <Match key={`${index}`}>{part}</Match>
-              ) : (
-                <React.Fragment key={`unmatch-${index}`}>{part}</React.Fragment>
-              ),
-            )}
-        </Item>
-      ));
-
-    if (!list.length) {
-      setShowOption(false);
-
-      return null;
-    }
-
-    return list;
-  };
+  const [userValue, setUserValue] = useState(value);
 
   return (
-    <Wrapper
-      className={className}
-      style={style}
-      onKeyDown={handleKeyDown}
-      full={full}
+    <Downshift
+      selectedItem={userValue}
+      onStateChange={changes => {
+        if (Object.prototype.hasOwnProperty.call(changes, 'selectedItem')) {
+          setUserValue(changes.selectedItem);
+          onSelect(changes.selectedItem);
+        } else if (
+          Object.prototype.hasOwnProperty.call(changes, 'inputValue')
+        ) {
+          setUserValue(changes.inputValue);
+          onChange(changes.inputValue);
+        }
+      }}
     >
-      <StyledInput
-        {...props}
-        full={full}
-        onChange={handleChange}
-        onClean={cleanable => {
-          closeOptions();
-          onClean(cleanable);
-        }}
-        onFocus={e => {
-          setShowOption(Boolean(value));
-          onFocus(e);
-        }}
-        ref={inputRef}
-        showOptions={showOption}
-        value={value}
-      />
-      {options && showOption && (
-        <List ref={optionsRef} full={full}>
-          {renderList(options)}
-        </List>
-      )}
-    </Wrapper>
+      {({
+        getInputProps,
+        getItemProps,
+        clearSelection,
+        getMenuProps,
+        getRootProps,
+        highlightedIndex,
+        isOpen,
+        openMenu,
+        inputValue,
+      }) => {
+        const reg = new RegExp(
+          `(${escapeRegExp(inputValue || '').trim() || null})`,
+          'gi',
+        );
+
+        const suggestionList = options
+          .filter(option => option.match(reg))
+          .sort((first, second) =>
+            first.toLowerCase().indexOf(inputValue) <
+            second.toLowerCase().indexOf(inputValue)
+              ? -1
+              : 1,
+          )
+          .slice(0, 6);
+
+        const hasSuggestion = isOpen && Boolean(suggestionList.length);
+
+        return (
+          <Wrapper
+            className={className}
+            style={style}
+            full={full}
+            {...getRootProps()}
+          >
+            <StyledInput
+              {...props}
+              full={full}
+              isOpen={hasSuggestion}
+              onClean={cleanable => {
+                onClean(cleanable);
+                clearSelection();
+              }}
+              {...getInputProps({
+                onFocus: () => (inputValue.length ? openMenu() : null),
+              })}
+            />
+            {hasSuggestion && (
+              <List {...getMenuProps()} full={full}>
+                {suggestionList.map((option, optionIndex) => (
+                  <Item
+                    {...getItemProps({
+                      key: `${option}${optionIndex}`,
+                      index: optionIndex,
+                      item: option,
+                      selected: highlightedIndex === optionIndex,
+                    })}
+                  >
+                    {option
+                      .split(reg)
+                      .map((part, index) =>
+                        part.match(reg) ? (
+                          <Match key={`${index}`}>{part}</Match>
+                        ) : (
+                          <React.Fragment key={`unmatch-${index}`}>
+                            {part}
+                          </React.Fragment>
+                        ),
+                      )}
+                  </Item>
+                ))}
+              </List>
+            )}
+          </Wrapper>
+        );
+      }}
+    </Downshift>
   );
 };
 
@@ -295,23 +250,21 @@ AutoComplete.propTypes = {
   full: bool,
   options: arrayOf(string),
   style: shape({}),
-  value: string,
   onSelect: func,
   onChange: func,
   onClean: func,
-  onFocus: func,
+  value: string,
 };
 
 AutoComplete.defaultProps = {
   className: undefined,
   full: false,
-  options: undefined,
+  options: [],
   style: undefined,
-  value: '',
   onSelect: () => {},
   onChange: () => {},
   onClean: () => {},
-  onFocus: () => {},
+  value: undefined,
 };
 
 export default AutoComplete;

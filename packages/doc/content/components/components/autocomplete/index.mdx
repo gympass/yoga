@@ -26,7 +26,7 @@ render(() => {
   return (
     <AutoComplete
       value={value}
-      onChange={e => setValue(e.target.value)}
+      onChange={value => setValue(value)}
       onSelect={selected => setValue(selected)}
       onClean={cleanable => setValue(cleanable)}
       options={[
@@ -36,6 +36,9 @@ render(() => {
         'New York',
         'Paris',
         'Buenos Aires',
+        'Amsterdam',
+        'Los Angeles',
+        'Hollywood',
       ]}
     />
   );
