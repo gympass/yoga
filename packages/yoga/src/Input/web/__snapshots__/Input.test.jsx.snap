@@ -33,7 +33,6 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 
 .c1:focus-within legend {
   max-width: 1000px;
-  font-weight: 700;
 }
 
 .c1:hover fieldset,
@@ -243,7 +242,6 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 
 .c1:focus-within legend {
   max-width: 1000px;
-  font-weight: 700;
 }
 
 .c1:hover fieldset,
@@ -471,7 +469,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 
 .c1:focus-within legend {
   max-width: 1000px;
-  font-weight: 700;
 }
 
 .c1:hover fieldset,
@@ -703,7 +700,6 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 
 .c1:focus-within legend {
   max-width: 1000px;
-  font-weight: 700;
 }
 
 .c1:hover fieldset,
@@ -911,7 +907,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 
 .c1:focus-within legend {
   max-width: 1000px;
-  font-weight: 700;
 }
 
 .c1:hover fieldset,
@@ -1154,7 +1149,6 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 
 .c1:focus-within legend {
   max-width: 1000px;
-  font-weight: 700;
 }
 
 .c1:hover fieldset,

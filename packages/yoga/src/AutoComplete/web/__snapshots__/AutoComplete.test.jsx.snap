@@ -33,7 +33,6 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 
 .c2:focus-within legend {
   max-width: 1000px;
-  font-weight: 700;
 }
 
 .c2:hover fieldset,
@@ -254,7 +253,6 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 
 .c2:focus-within legend {
   max-width: 1000px;
-  font-weight: 700;
 }
 
 .c2:hover fieldset,
@@ -475,7 +473,6 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c2:focus-within legend {
   max-width: 1000px;
-  font-weight: 700;
 }
 
 .c2:hover fieldset,
@@ -795,7 +792,6 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c2:focus-within legend {
   max-width: 1000px;
-  font-weight: 700;
 }
 
 .c2:hover fieldset,
