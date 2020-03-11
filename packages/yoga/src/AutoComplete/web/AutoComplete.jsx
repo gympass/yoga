@@ -63,23 +63,22 @@ const List = styled.ul`
     },
   }) => `
     top: ${autoComplete.height}px;
+
     width: ${full ? '100%' : `${autoComplete.width}px`};
+    max-height: ${autoComplete.height * 6}px;
 
     background-color: ${autoComplete.field.backgroundColor};
     border:
       ${autoComplete.border.width}px solid ${autoComplete.border.color.typed};
     border-top-width: 0;
-
     border-bottom-left-radius: ${autoComplete.border.radius}px;
     border-bottom-right-radius: ${autoComplete.border.radius}px;
 
-    max-height: ${autoComplete.height * 6}px;
     overflow: hidden;
   `}
 `;
 
 const Item = styled.li`
-  line-height: 20px;
   list-style: none;
 
   cursor: pointer;
@@ -91,17 +90,18 @@ const Item = styled.li`
       },
     },
   }) => `
-    background-color: ${autoComplete.list.backgroundColor.default};
-    outline: none;
-
-    font-size: ${autoComplete.list.font.size}px;
-    font-weight: ${autoComplete.list.font.weight.default};
-
     padding:
       ${autoComplete.list.padding.top}px
       ${autoComplete.list.padding.right}px
       ${autoComplete.list.padding.bottom}px
       ${autoComplete.list.padding.left}px;
+
+    background-color: ${autoComplete.list.backgroundColor.default};
+    outline: none;
+
+    font-size: ${autoComplete.list.font.size}px;
+    font-weight: ${autoComplete.list.font.weight.default};
+    line-height: ${autoComplete.list.font.lineHeight}px;
 
     &:hover,
     &:focus {
@@ -111,8 +111,8 @@ const Item = styled.li`
 `;
 
 const Match = styled.mark`
-  color: inherit;
   background: transparent;
+  color: inherit;
 
   ${({
     theme: {

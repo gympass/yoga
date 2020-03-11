@@ -18,6 +18,7 @@ const autocomplete = tokens => ({
         default: tokens.fontWeights.regular,
         matched: tokens.fontWeights.bold,
       },
+      lineHeight: tokens.lineHeights.small,
     },
     backgroundColor: {
       default: tokens.colors.white,
