@@ -33,6 +33,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 
 .c2:focus-within legend {
   max-width: 1000px;
+  font-weight: 700;
 }
 
 .c2:hover fieldset,
@@ -125,7 +126,6 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 }
 
 .c7 {
-  font-size: 11px;
   visibility: hidden;
   position: relative;
   max-width: 0.01px;
@@ -136,6 +136,11 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
   max-width: 0.01px;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c8 {
@@ -253,6 +258,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 
 .c2:focus-within legend {
   max-width: 1000px;
+  font-weight: 700;
 }
 
 .c2:hover fieldset,
@@ -345,7 +351,6 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 }
 
 .c7 {
-  font-size: 11px;
   visibility: hidden;
   position: relative;
   max-width: 0.01px;
@@ -356,6 +361,11 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
   max-width: 0.01px;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c8 {
@@ -473,6 +483,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c2:focus-within legend {
   max-width: 1000px;
+  font-weight: 700;
 }
 
 .c2:hover fieldset,
@@ -578,7 +589,6 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c7 {
-  font-size: 11px;
   visibility: hidden;
   position: relative;
   max-width: 0.01px;
@@ -589,6 +599,11 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
   max-width: 1000px;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c8 {
@@ -792,6 +807,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c2:focus-within legend {
   max-width: 1000px;
+  font-weight: 700;
 }
 
 .c2:hover fieldset,
@@ -897,7 +913,6 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c7 {
-  font-size: 11px;
   visibility: hidden;
   position: relative;
   max-width: 0.01px;
@@ -908,6 +923,11 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
   max-width: 1000px;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c8 {

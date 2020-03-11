@@ -33,6 +33,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 
 .c1:focus-within legend {
   max-width: 1000px;
+  font-weight: 700;
 }
 
 .c1:hover fieldset,
@@ -125,7 +126,6 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 }
 
 .c5 {
-  font-size: 11px;
   visibility: hidden;
   position: relative;
   max-width: 0.01px;
@@ -136,6 +136,11 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
   max-width: 0.01px;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c6 {
@@ -242,6 +247,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 
 .c1:focus-within legend {
   max-width: 1000px;
+  font-weight: 700;
 }
 
 .c1:hover fieldset,
@@ -344,7 +350,6 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 }
 
 .c5 {
-  font-size: 11px;
   visibility: hidden;
   position: relative;
   max-width: 0.01px;
@@ -355,6 +360,11 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
   max-width: 0.01px;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c6 {
@@ -469,6 +479,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 
 .c1:focus-within legend {
   max-width: 1000px;
+  font-weight: 700;
 }
 
 .c1:hover fieldset,
@@ -561,7 +572,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 }
 
 .c5 {
-  font-size: 11px;
   visibility: hidden;
   position: relative;
   max-width: 0.01px;
@@ -572,6 +582,11 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
   max-width: 0.01px;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c6 {
@@ -700,6 +715,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 
 .c1:focus-within legend {
   max-width: 1000px;
+  font-weight: 700;
 }
 
 .c1:hover fieldset,
@@ -792,7 +808,6 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 }
 
 .c5 {
-  font-size: 11px;
   visibility: hidden;
   position: relative;
   max-width: 0.01px;
@@ -803,6 +818,11 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
   max-width: 0.01px;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c6 {
@@ -907,6 +927,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 
 .c1:focus-within legend {
   max-width: 1000px;
+  font-weight: 700;
 }
 
 .c1:hover fieldset,
@@ -999,7 +1020,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 }
 
 .c5 {
-  font-size: 11px;
   visibility: hidden;
   position: relative;
   max-width: 0.01px;
@@ -1010,6 +1030,11 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
   max-width: 0.01px;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c6 {
@@ -1149,6 +1174,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 
 .c1:focus-within legend {
   max-width: 1000px;
+  font-weight: 700;
 }
 
 .c1:hover fieldset,
@@ -1241,7 +1267,6 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 }
 
 .c5 {
-  font-size: 11px;
   visibility: hidden;
   position: relative;
   max-width: 0.01px;
@@ -1252,6 +1277,11 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
   max-width: 0.01px;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c6 {
