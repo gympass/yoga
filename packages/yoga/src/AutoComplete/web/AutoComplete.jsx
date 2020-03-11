@@ -36,6 +36,10 @@ const StyledInput = styled(Input)`
           color: ${input.label.color.focus};
           font-weight: ${input.label.font.weight.typed};
         }
+
+        & legend {
+          font-weight: ${input.label.font.weight.typed};
+        }
       `
       : ''}
 `;
@@ -147,17 +151,17 @@ const AutoComplete = ({
   const reg = new RegExp(`(${escapeRegExp(value || '').trim() || null})`, 'gi');
 
   useEffect(() => {
-    const windowClick = ({ target }) => {
+    const clickOutside = ({ target }) => {
       if (!inputRef.current?.contains(target)) {
         setShowOption(false);
         setFocusedOption(null);
       }
     };
 
-    window.addEventListener('click', windowClick);
+    window.addEventListener('click', clickOutside);
 
     return () => {
-      window.removeEventListener('click', windowClick);
+      window.removeEventListener('click', clickOutside);
     };
   }, []);
 
@@ -184,11 +188,7 @@ const AutoComplete = ({
       handleSelect(e);
     }
 
-    if (key === 'ArrowDown' || (key === 'Tab' && !shiftKey)) {
-      if (!showOption) {
-        return;
-      }
-
+    if (showOption && (key === 'ArrowDown' || (key === 'Tab' && !shiftKey))) {
       e.preventDefault();
       if (!focusedOption && optionsRef.current) {
         setFocusedOption(optionsRef.current.firstChild);
@@ -201,11 +201,7 @@ const AutoComplete = ({
       }
     }
 
-    if (key === 'ArrowUp' || (key === 'Tab' && shiftKey)) {
-      if (!showOption) {
-        return;
-      }
-
+    if (showOption && (key === 'ArrowUp' || (key === 'Tab' && shiftKey))) {
       e.preventDefault();
       if (
         optionsRef.current &&
