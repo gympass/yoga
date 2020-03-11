@@ -55,7 +55,6 @@ exports[`<TextArea /> should match snapshot 1`] = `
 
 .c1:focus-within legend {
   max-width: 1000px;
-  font-weight: 700;
 }
 
 .c1:hover,

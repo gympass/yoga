@@ -73,7 +73,6 @@ const Wrapper = styled.div`
     &:focus-within {
       legend {
         max-width: 1000px;
-        font-weight: 700;
       }
     }
 
