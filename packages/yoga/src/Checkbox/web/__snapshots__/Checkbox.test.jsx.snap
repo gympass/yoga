@@ -1,5 +1,252 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Checkbox /> Snapshots should match snapshot with all variant styles 1`] = `
+.c7 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 {
+  display: inline-block;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #F46152;
+}
+
+.c9 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #652CDB;
+}
+
+.c11 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #2B9486;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #41414A;
+}
+
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
+}
+
+.c1 .c2:active .c4 {
+  background-color: rgba(250,185,178,0.75);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.75);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(250,185,178,0.5);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.5);
+}
+
+.c1:hover .c4 {
+  background-color: rgba(250,185,178,0.25);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
+}
+
+.c8 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c8 .c2:active .c4,
+.c8:focus-within .c4,
+.c8:hover .c4 {
+  display: block;
+}
+
+.c8 .c2:active .c4 {
+  background-color: rgba(160,124,233,0.75);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.75);
+}
+
+.c8:focus-within .c4 {
+  background-color: rgba(160,124,233,0.5);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.5);
+}
+
+.c8:hover .c4 {
+  background-color: rgba(160,124,233,0.25);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.25);
+}
+
+.c10 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c10 .c2:active .c4,
+.c10:focus-within .c4,
+.c10:hover .c4 {
+  display: block;
+}
+
+.c10 .c2:active .c4 {
+  background-color: rgba(88,194,180,0.75);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.75);
+}
+
+.c10:focus-within .c4 {
+  background-color: rgba(88,194,180,0.5);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.5);
+}
+
+.c10:hover .c4 {
+  background-color: rgba(88,194,180,0.25);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.25);
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c6"
+        />
+        <input
+          class="c7"
+          type="checkbox"
+        />
+      </label>
+    </div>
+  </div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c8"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c9"
+        />
+        <input
+          class="c7"
+          type="checkbox"
+        />
+      </label>
+    </div>
+  </div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c10"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c11"
+        />
+        <input
+          class="c7"
+          type="checkbox"
+        />
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] = `
 .c7 {
   border: 0;
@@ -98,6 +345,48 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 .c1:hover .c4 {
   background-color: rgba(250,185,178,0.25);
   box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
+}
+
+.c10 .c2:active .c4,
+.c10:focus-within .c4,
+.c10:hover .c4 {
+  display: block;
+}
+
+.c10 .c2:active .c4 {
+  background-color: rgba(160,124,233,0.75);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.75);
+}
+
+.c10:focus-within .c4 {
+  background-color: rgba(160,124,233,0.5);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.5);
+}
+
+.c10:hover .c4 {
+  background-color: rgba(160,124,233,0.25);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.25);
+}
+
+.c11 .c2:active .c4,
+.c11:focus-within .c4,
+.c11:hover .c4 {
+  display: block;
+}
+
+.c11 .c2:active .c4 {
+  background-color: rgba(88,194,180,0.75);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.75);
+}
+
+.c11:focus-within .c4 {
+  background-color: rgba(88,194,180,0.5);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.5);
+}
+
+.c11:hover .c4 {
+  background-color: rgba(88,194,180,0.25);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.25);
 }
 
 .c8 {
@@ -236,6 +525,48 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 .c1:hover .c4 {
   background-color: rgba(250,185,178,0.25);
   box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
+}
+
+.c10 .c2:active .c4,
+.c10:focus-within .c4,
+.c10:hover .c4 {
+  display: block;
+}
+
+.c10 .c2:active .c4 {
+  background-color: rgba(160,124,233,0.75);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.75);
+}
+
+.c10:focus-within .c4 {
+  background-color: rgba(160,124,233,0.5);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.5);
+}
+
+.c10:hover .c4 {
+  background-color: rgba(160,124,233,0.25);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.25);
+}
+
+.c11 .c2:active .c4,
+.c11:focus-within .c4,
+.c11:hover .c4 {
+  display: block;
+}
+
+.c11 .c2:active .c4 {
+  background-color: rgba(88,194,180,0.75);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.75);
+}
+
+.c11:focus-within .c4 {
+  background-color: rgba(88,194,180,0.5);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.5);
+}
+
+.c11:hover .c4 {
+  background-color: rgba(88,194,180,0.25);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.25);
 }
 
 .c8 {
@@ -385,6 +716,48 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
 }
 
+.c10 .c2:active .c4,
+.c10:focus-within .c4,
+.c10:hover .c4 {
+  display: block;
+}
+
+.c10 .c2:active .c4 {
+  background-color: rgba(160,124,233,0.75);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.75);
+}
+
+.c10:focus-within .c4 {
+  background-color: rgba(160,124,233,0.5);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.5);
+}
+
+.c10:hover .c4 {
+  background-color: rgba(160,124,233,0.25);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.25);
+}
+
+.c11 .c2:active .c4,
+.c11:focus-within .c4,
+.c11:hover .c4 {
+  display: block;
+}
+
+.c11 .c2:active .c4 {
+  background-color: rgba(88,194,180,0.75);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.75);
+}
+
+.c11:focus-within .c4 {
+  background-color: rgba(88,194,180,0.5);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.5);
+}
+
+.c11:hover .c4 {
+  background-color: rgba(88,194,180,0.25);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.25);
+}
+
 .c8 {
   width: 100%;
   margin-top: 4px;
@@ -523,6 +896,48 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 .c1:hover .c4 {
   background-color: rgba(250,185,178,0.25);
   box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
+}
+
+.c10 .c2:active .c4,
+.c10:focus-within .c4,
+.c10:hover .c4 {
+  display: block;
+}
+
+.c10 .c2:active .c4 {
+  background-color: rgba(160,124,233,0.75);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.75);
+}
+
+.c10:focus-within .c4 {
+  background-color: rgba(160,124,233,0.5);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.5);
+}
+
+.c10:hover .c4 {
+  background-color: rgba(160,124,233,0.25);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.25);
+}
+
+.c11 .c2:active .c4,
+.c11:focus-within .c4,
+.c11:hover .c4 {
+  display: block;
+}
+
+.c11 .c2:active .c4 {
+  background-color: rgba(88,194,180,0.75);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.75);
+}
+
+.c11:focus-within .c4 {
+  background-color: rgba(88,194,180,0.5);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.5);
+}
+
+.c11:hover .c4 {
+  background-color: rgba(88,194,180,0.25);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.25);
 }
 
 .c8 {
@@ -675,6 +1090,48 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
 }
 
+.c10 .c2:active .c4,
+.c10:focus-within .c4,
+.c10:hover .c4 {
+  display: block;
+}
+
+.c10 .c2:active .c4 {
+  background-color: rgba(160,124,233,0.75);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.75);
+}
+
+.c10:focus-within .c4 {
+  background-color: rgba(160,124,233,0.5);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.5);
+}
+
+.c10:hover .c4 {
+  background-color: rgba(160,124,233,0.25);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.25);
+}
+
+.c11 .c2:active .c4,
+.c11:focus-within .c4,
+.c11:hover .c4 {
+  display: block;
+}
+
+.c11 .c2:active .c4 {
+  background-color: rgba(88,194,180,0.75);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.75);
+}
+
+.c11:focus-within .c4 {
+  background-color: rgba(88,194,180,0.5);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.5);
+}
+
+.c11:hover .c4 {
+  background-color: rgba(88,194,180,0.25);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.25);
+}
+
 .c8 {
   width: 100%;
   margin-top: 4px;
@@ -717,7 +1174,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
       <span
         class="c9"
       >
-        Helper Text
+        Error msg
       </span>
     </div>
   </div>
@@ -814,6 +1271,48 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
 }
 
+.c10 .c2:active .c4,
+.c10:focus-within .c4,
+.c10:hover .c4 {
+  display: block;
+}
+
+.c10 .c2:active .c4 {
+  background-color: rgba(160,124,233,0.75);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.75);
+}
+
+.c10:focus-within .c4 {
+  background-color: rgba(160,124,233,0.5);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.5);
+}
+
+.c10:hover .c4 {
+  background-color: rgba(160,124,233,0.25);
+  box-shadow: 0 0 0 12px rgba(160,124,233,0.25);
+}
+
+.c11 .c2:active .c4,
+.c11:focus-within .c4,
+.c11:hover .c4 {
+  display: block;
+}
+
+.c11 .c2:active .c4 {
+  background-color: rgba(88,194,180,0.75);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.75);
+}
+
+.c11:focus-within .c4 {
+  background-color: rgba(88,194,180,0.5);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.5);
+}
+
+.c11:hover .c4 {
+  background-color: rgba(88,194,180,0.25);
+  box-shadow: 0 0 0 12px rgba(88,194,180,0.25);
+}
+
 .c8 {
   width: 100%;
   margin-top: 4px;
@@ -853,7 +1352,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
       <span
         class="c9"
       >
-        Helper Text
+        Error msg
       </span>
     </div>
   </div>
