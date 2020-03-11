@@ -38,6 +38,10 @@ describe('<Checkbox />', () => {
           <Checkbox variant="primary" />
           <Checkbox variant="secondary" />
           <Checkbox variant="tertiary" />
+
+          <Checkbox variant="primary" checked />
+          <Checkbox variant="secondary" checked />
+          <Checkbox variant="tertiary" checked />
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();

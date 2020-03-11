@@ -53,6 +53,72 @@ exports[`<Checkbox /> Snapshots should match snapshot with all variant styles 1`
   border-color: #2B9486;
 }
 
+.c12 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #F46152;
+  background-color: #F46152;
+}
+
+.c12 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c13 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #652CDB;
+  background-color: #652CDB;
+}
+
+.c13 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c14 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #2B9486;
+  background-color: #2B9486;
+}
+
+.c14 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -238,6 +304,81 @@ exports[`<Checkbox /> Snapshots should match snapshot with all variant styles 1`
           class="c11"
         />
         <input
+          class="c7"
+          type="checkbox"
+        />
+      </label>
+    </div>
+  </div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c12"
+        >
+          <svg />
+        </div>
+        <input
+          checked=""
+          class="c7"
+          type="checkbox"
+        />
+      </label>
+    </div>
+  </div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c8"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c13"
+        >
+          <svg />
+        </div>
+        <input
+          checked=""
+          class="c7"
+          type="checkbox"
+        />
+      </label>
+    </div>
+  </div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c10"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c14"
+        >
+          <svg />
+        </div>
+        <input
+          checked=""
           class="c7"
           type="checkbox"
         />
