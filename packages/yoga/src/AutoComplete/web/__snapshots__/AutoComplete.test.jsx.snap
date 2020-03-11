@@ -188,7 +188,11 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 
 <div>
   <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-1-label"
     class="c0"
+    role="combobox"
   >
     <div
       class="c1"
@@ -198,7 +202,11 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
         label="Label"
       >
         <input
+          aria-autocomplete="list"
+          aria-labelledby="downshift-1-label"
+          autocomplete="off"
           class="c4"
+          id="downshift-1-input"
           value=""
         />
         <label
@@ -413,7 +421,11 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 
 <div>
   <div
+    aria-expanded="false"
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-0-label"
     class="c0"
+    role="combobox"
   >
     <div
       class="c1"
@@ -423,7 +435,11 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
         label="Label"
       >
         <input
+          aria-autocomplete="list"
+          aria-labelledby="downshift-0-label"
+          autocomplete="off"
           class="c4"
+          id="downshift-0-input"
           value=""
         />
         <label
@@ -696,8 +712,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   line-height: 20px;
 }
 
-.c10:hover,
-.c10:focus {
+.c10:hover {
   background-color: #F5F5FA;
 }
 
@@ -709,7 +724,12 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 <div>
   <div
+    aria-expanded="true"
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-3-label"
+    aria-owns="downshift-3-menu"
     class="c0"
+    role="combobox"
   >
     <div
       class="c1"
@@ -719,7 +739,12 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
         label="Label"
       >
         <input
+          aria-autocomplete="list"
+          aria-controls="downshift-3-menu"
+          aria-labelledby="downshift-3-label"
+          autocomplete="off"
           class="c4"
+          id="downshift-3-input"
           value="s"
         />
         <label
@@ -747,11 +772,16 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
       </div>
     </div>
     <ul
+      aria-labelledby="downshift-3-label"
       class="c9"
+      id="downshift-3-menu"
+      role="listbox"
     >
       <li
+        aria-selected="false"
         class="c10"
-        tabindex="0"
+        id="downshift-3-item-0"
+        role="option"
       >
         
         <mark
@@ -762,8 +792,10 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
         econd
       </li>
       <li
+        aria-selected="false"
         class="c10"
-        tabindex="0"
+        id="downshift-3-item-1"
+        role="option"
       >
         fir
         <mark
@@ -1024,8 +1056,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   line-height: 20px;
 }
 
-.c10:hover,
-.c10:focus {
+.c10:hover {
   background-color: #F5F5FA;
 }
 
@@ -1037,7 +1068,12 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 <div>
   <div
+    aria-expanded="true"
+    aria-haspopup="listbox"
+    aria-labelledby="downshift-2-label"
+    aria-owns="downshift-2-menu"
     class="c0"
+    role="combobox"
   >
     <div
       class="c1"
@@ -1047,7 +1083,12 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
         label="Label"
       >
         <input
+          aria-autocomplete="list"
+          aria-controls="downshift-2-menu"
+          aria-labelledby="downshift-2-label"
+          autocomplete="off"
           class="c4"
+          id="downshift-2-input"
           value="s"
         />
         <label
@@ -1075,11 +1116,16 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
       </div>
     </div>
     <ul
+      aria-labelledby="downshift-2-label"
       class="c9"
+      id="downshift-2-menu"
+      role="listbox"
     >
       <li
+        aria-selected="false"
         class="c10"
-        tabindex="0"
+        id="downshift-2-item-0"
+        role="option"
       >
         
         <mark
@@ -1090,8 +1136,10 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
         econd
       </li>
       <li
+        aria-selected="false"
         class="c10"
-        tabindex="0"
+        id="downshift-2-item-1"
+        role="option"
       >
         fir
         <mark
