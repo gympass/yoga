@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { bool, node } from 'prop-types';
 
 const StyledLegend = styled.legend`
-  font-size: 11px;
   visibility: hidden;
   position: relative;
   max-width: 0.01px;
@@ -14,8 +13,18 @@ const StyledLegend = styled.legend`
 
   transition: max-width ease 50ms;
 
-  ${({ typed }) => `
+  ${({
+    typed,
+    theme: {
+      yoga: {
+        components: { input },
+      },
+    },
+  }) => `
     max-width: ${typed ? '1000' : '0.01'}px;
+
+    font-size: ${input.label.font.size.typed}px;
+    letter-spacing: normal;
   `}
 `;
 
