@@ -1,5 +1,5 @@
 import React from 'react';
-import { bool, string, objectOf, any } from 'prop-types';
+import { bool, string, objectOf, any, oneOf } from 'prop-types';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Done } from '@gympass/yoga-icons';
@@ -23,8 +23,10 @@ const CheckMark = styled.div`
     checked,
     disabled,
     error,
+    variant,
     theme: {
       yoga: {
+        colors: { [variant]: color = [], negative },
         components: { checkbox },
       },
     },
@@ -36,15 +38,12 @@ const CheckMark = styled.div`
 
     border-radius: ${checkbox.border.radius}px;
     border-width: ${checkbox.border.width}px;
-
-    border-color: ${
-      disabled ? checkbox.disabled.border.color : checkbox.border.color
-    };
+    border-color: ${disabled ? checkbox.disabled.border.color : color[3]};
 
     ${
       checked
         ? `
-        background-color: ${checkbox.checked.backgroundColor}; 
+        background-color: ${color[3]}; 
 
         svg {
           position: absolute;
@@ -65,13 +64,9 @@ const CheckMark = styled.div`
         : ''
     }
 
-    ${error ? `border-color: ${checkbox.error.border.color};` : ''}
+    ${error ? `border-color: ${negative[1]};` : ''}
 
-    ${
-      error && checked
-        ? `background-color: ${checkbox.error.backgroundColor};`
-        : ''
-    }
+    ${error && checked ? `background-color: ${negative[1]};` : ''}
   `}
 `;
 
@@ -115,55 +110,54 @@ const CheckboxStyled = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+
   ${({
+    variant,
     theme: {
       yoga: {
+        colors: { [variant]: color = [] },
         components: { checkbox },
       },
     },
-  }) => `
+  }) => {
+    const shadowSize = Math.round(
+      checkbox.size * 0.33 + checkbox.border.width * 2,
+    );
 
-  ${Label}:active,
-  &:focus-within,
-  &:hover  {
-    ${Shadow} {
-      display: block;
-    }
-  }
-
-  ${Label}:active {
-    ${Shadow} {
-      background-color: ${hexToRgb(checkbox.hover.backgroundColor, 0.75)};
-
-      box-shadow: 0 0 0 ${Math.round(
-        checkbox.size * 0.33 + checkbox.border.width * 2,
-      )}px
-      ${hexToRgb(checkbox.hover.backgroundColor, 0.75)};
-    }
-  }
-
-  &:focus-within {
-    ${Shadow} {
-      background-color: ${hexToRgb(checkbox.hover.backgroundColor, 0.5)};
-      
-      box-shadow: 0 0 0 ${Math.round(
-        checkbox.size * 0.33 + checkbox.border.width * 2,
-      )}px
-        ${hexToRgb(checkbox.hover.backgroundColor, 0.5)};
+    return `
+      ${Label}:active,
+      &:focus-within,
+      &:hover  {
+        ${Shadow} {
+          display: block;
+        }
       }
-  }
 
-  &:hover {
-    ${Shadow} {
-      background-color: ${hexToRgb(checkbox.hover.backgroundColor, 0.25)};
+      ${Label}:active {
+        ${Shadow} {
+          background-color: ${hexToRgb(color[1], 0.75)};
 
-      box-shadow: 0 0 0 ${Math.round(
-        checkbox.size * 0.33 + checkbox.border.width * 2,
-      )}px
-      ${hexToRgb(checkbox.hover.backgroundColor, 0.25)};
-    }
-  }
-  `}
+          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[1], 0.75)};
+        }
+      }
+
+      &:focus-within {
+        ${Shadow} {
+          background-color: ${hexToRgb(color[1], 0.5)};
+          
+          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[1], 0.5)};
+          }
+      }
+
+      &:hover {
+        ${Shadow} {
+          background-color: ${hexToRgb(color[1], 0.25)};
+
+          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[1], 0.25)};
+        }
+      }
+    `;
+  }}
 `;
 
 const HelperWrapper = styled.div`
@@ -185,13 +179,12 @@ const Helper = styled.span`
     error,
     theme: {
       yoga: {
+        colors: { negative },
         components: { checkbox },
       },
     },
   }) => `
-    color: ${
-      error ? checkbox.helper.selected.font.color : checkbox.helper.font.color
-    };
+    color: ${error ? negative[1] : checkbox.helper.font.color};
 
     font-size: ${checkbox.helper.font.size}px;
   `}
@@ -206,13 +199,21 @@ const Checkbox = ({
   error,
   style,
   className,
+  variant,
   ...rest
 }) => (
   <CheckboxWrapper style={style} className={className}>
-    <CheckboxStyled>
+    <CheckboxStyled variant={variant}>
       <Label>
         <Shadow />
-        <CheckMark disabled={disabled} checked={checked} error={error}>
+        <CheckMark
+          {...{
+            disabled,
+            checked,
+            error,
+            variant,
+          }}
+        >
           {checked && <Done />}
         </CheckMark>
         <HiddenInput
@@ -224,9 +225,9 @@ const Checkbox = ({
         {label}
       </Label>
     </CheckboxStyled>
-    {helper && (
+    {(helper || error) && (
       <HelperWrapper>
-        <Helper error={error}>{helper}</Helper>
+        <Helper error={error}>{error || helper}</Helper>
       </HelperWrapper>
     )}
   </CheckboxWrapper>
@@ -239,10 +240,12 @@ Checkbox.propTypes = {
   value: string,
   checked: bool,
   disabled: bool,
-  error: bool,
+  error: string,
   /** set a style to the checkbox container */
   style: objectOf(any),
   className: string,
+  /** style the card following the theme (primary, secondary, tertiary) */
+  variant: oneOf(['primary', 'secondary', 'tertiary']),
 };
 
 Checkbox.defaultProps = {
@@ -251,9 +254,10 @@ Checkbox.defaultProps = {
   helper: undefined,
   checked: false,
   disabled: false,
-  error: false,
+  error: undefined,
   style: undefined,
   className: undefined,
+  variant: 'primary',
 };
 
 Checkbox.displayName = 'Checkbox';
