@@ -1,26 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] = `
-.c4 {
-  position: relative;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  background-color: #F46152;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC);
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: #F46152;
-}
-
-.c5 {
+.c7 {
   border: 0;
   height: 0;
   margin: 0;
@@ -39,7 +20,29 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   box-sizing: border-box;
 }
 
-.c2 {
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #F46152;
+  background-color: #F46152;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: white;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -56,6 +59,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   color: #41414A;
 }
 
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -68,23 +79,33 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   align-items: center;
 }
 
-.c1:hover .c3:before {
-  content: '';
-  position: absolute;
-  top: -17px;
-  left: -17px;
-  width: 54px;
-  height: 54px;
-  background-color: rgba(244,97,82,0.2);
-  border-radius: 9999px;
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
 }
 
-.c6 {
+.c1 .c2:active .c4 {
+  background-color: rgba(250,185,178,0.75);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.75);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(250,185,178,0.5);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.5);
+}
+
+.c1:hover .c4 {
+  background-color: rgba(250,185,178,0.25);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
+}
+
+.c8 {
   width: 100%;
   margin-top: 4px;
 }
 
-.c7 {
+.c9 {
   color: #9898A6;
   font-size: 14px;
 }
@@ -97,25 +118,29 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
       class="c1"
     >
       <label
-        class="c2"
+        class="c2 c3"
       >
+        <span
+          class="c4 c5"
+        />
         <div
-          class="c3 c4"
+          class="c6"
         >
-          <input
-            checked=""
-            class="c5"
-            type="checkbox"
-          />
+          <svg />
         </div>
+        <input
+          checked=""
+          class="c7"
+          type="checkbox"
+        />
         Checkbox Component
       </label>
     </div>
     <div
-      class="c6"
+      class="c8"
     >
       <span
-        class="c7"
+        class="c9"
       >
         Helper Text
       </span>
@@ -125,21 +150,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 `;
 
 exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] = `
-.c4 {
-  position: relative;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #F46152;
-}
-
-.c5 {
+.c7 {
   border: 0;
   height: 0;
   margin: 0;
@@ -158,7 +169,18 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   box-sizing: border-box;
 }
 
-.c2 {
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #F46152;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -175,6 +197,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   color: #41414A;
 }
 
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -187,23 +217,33 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   align-items: center;
 }
 
-.c1:hover .c3:before {
-  content: '';
-  position: absolute;
-  top: -17px;
-  left: -17px;
-  width: 54px;
-  height: 54px;
-  background-color: rgba(244,97,82,0.2);
-  border-radius: 9999px;
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
 }
 
-.c6 {
+.c1 .c2:active .c4 {
+  background-color: rgba(250,185,178,0.75);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.75);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(250,185,178,0.5);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.5);
+}
+
+.c1:hover .c4 {
+  background-color: rgba(250,185,178,0.25);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
+}
+
+.c8 {
   width: 100%;
   margin-top: 4px;
 }
 
-.c7 {
+.c9 {
   color: #9898A6;
   font-size: 14px;
 }
@@ -216,24 +256,26 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
       class="c1"
     >
       <label
-        class="c2"
+        class="c2 c3"
       >
+        <span
+          class="c4 c5"
+        />
         <div
-          class="c3 c4"
-        >
-          <input
-            class="c5"
-            type="checkbox"
-          />
-        </div>
+          class="c6"
+        />
+        <input
+          class="c7"
+          type="checkbox"
+        />
         Checkbox Component
       </label>
     </div>
     <div
-      class="c6"
+      class="c8"
     >
       <span
-        class="c7"
+        class="c9"
       >
         Helper Text
       </span>
@@ -243,27 +285,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 `;
 
 exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked checkbox 1`] = `
-.c4 {
-  position: relative;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  background-color: #F46152;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC);
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: #9898A6;
-  background-color: #9898A6;
-}
-
-.c5 {
+.c7 {
   border: 0;
   height: 0;
   margin: 0;
@@ -282,7 +304,30 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   box-sizing: border-box;
 }
 
-.c2 {
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #9898A6;
+  background-color: #F46152;
+  background-color: #9898A6;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: white;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -299,6 +344,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   color: #41414A;
 }
 
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -311,23 +364,33 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   align-items: center;
 }
 
-.c1:hover .c3:before {
-  content: '';
-  position: absolute;
-  top: -17px;
-  left: -17px;
-  width: 54px;
-  height: 54px;
-  background-color: rgba(244,97,82,0.2);
-  border-radius: 9999px;
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
 }
 
-.c6 {
+.c1 .c2:active .c4 {
+  background-color: rgba(250,185,178,0.75);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.75);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(250,185,178,0.5);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.5);
+}
+
+.c1:hover .c4 {
+  background-color: rgba(250,185,178,0.25);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
+}
+
+.c8 {
   width: 100%;
   margin-top: 4px;
 }
 
-.c7 {
+.c9 {
   color: #9898A6;
   font-size: 14px;
 }
@@ -340,27 +403,31 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
       class="c1"
     >
       <label
-        class="c2"
+        class="c2 c3"
       >
+        <span
+          class="c4 c5"
+        />
         <div
-          class="c3 c4"
+          class="c6"
           disabled=""
         >
-          <input
-            checked=""
-            class="c5"
-            disabled=""
-            type="checkbox"
-          />
+          <svg />
         </div>
+        <input
+          checked=""
+          class="c7"
+          disabled=""
+          type="checkbox"
+        />
         Checkbox Component
       </label>
     </div>
     <div
-      class="c6"
+      class="c8"
     >
       <span
-        class="c7"
+        class="c9"
       >
         Helper Text
       </span>
@@ -370,21 +437,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 `;
 
 exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`] = `
-.c4 {
-  position: relative;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #9898A6;
-}
-
-.c5 {
+.c7 {
   border: 0;
   height: 0;
   margin: 0;
@@ -403,7 +456,18 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   box-sizing: border-box;
 }
 
-.c2 {
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #9898A6;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -420,6 +484,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   color: #41414A;
 }
 
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -432,23 +504,33 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   align-items: center;
 }
 
-.c1:hover .c3:before {
-  content: '';
-  position: absolute;
-  top: -17px;
-  left: -17px;
-  width: 54px;
-  height: 54px;
-  background-color: rgba(244,97,82,0.2);
-  border-radius: 9999px;
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
 }
 
-.c6 {
+.c1 .c2:active .c4 {
+  background-color: rgba(250,185,178,0.75);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.75);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(250,185,178,0.5);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.5);
+}
+
+.c1:hover .c4 {
+  background-color: rgba(250,185,178,0.25);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
+}
+
+.c8 {
   width: 100%;
   margin-top: 4px;
 }
 
-.c7 {
+.c9 {
   color: #9898A6;
   font-size: 14px;
 }
@@ -461,26 +543,28 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
       class="c1"
     >
       <label
-        class="c2"
+        class="c2 c3"
       >
+        <span
+          class="c4 c5"
+        />
         <div
-          class="c3 c4"
+          class="c6"
           disabled=""
-        >
-          <input
-            class="c5"
-            disabled=""
-            type="checkbox"
-          />
-        </div>
+        />
+        <input
+          class="c7"
+          disabled=""
+          type="checkbox"
+        />
         Checkbox Component
       </label>
     </div>
     <div
-      class="c6"
+      class="c8"
     >
       <span
-        class="c7"
+        class="c9"
       >
         Helper Text
       </span>
@@ -490,28 +574,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 `;
 
 exports[`<Checkbox /> Snapshots should match snapshot with error and checked checkbox 1`] = `
-.c4 {
-  position: relative;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  background-color: #F46152;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC);
-  background-size: 16px 16px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: #F46152;
-  border-color: #CB3530;
-  background-color: #CB3530;
-}
-
-.c5 {
+.c7 {
   border: 0;
   height: 0;
   margin: 0;
@@ -530,7 +593,31 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   box-sizing: border-box;
 }
 
-.c2 {
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #F46152;
+  background-color: #F46152;
+  border-color: #CB3530;
+  background-color: #CB3530;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: white;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -547,6 +634,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   color: #41414A;
 }
 
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -559,23 +654,33 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   align-items: center;
 }
 
-.c1:hover .c3:before {
-  content: '';
-  position: absolute;
-  top: -17px;
-  left: -17px;
-  width: 54px;
-  height: 54px;
-  background-color: rgba(244,97,82,0.2);
-  border-radius: 9999px;
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
 }
 
-.c6 {
+.c1 .c2:active .c4 {
+  background-color: rgba(250,185,178,0.75);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.75);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(250,185,178,0.5);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.5);
+}
+
+.c1:hover .c4 {
+  background-color: rgba(250,185,178,0.25);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
+}
+
+.c8 {
   width: 100%;
   margin-top: 4px;
 }
 
-.c7 {
+.c9 {
   color: #CB3530;
   font-size: 14px;
 }
@@ -588,25 +693,29 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
       class="c1"
     >
       <label
-        class="c2"
+        class="c2 c3"
       >
+        <span
+          class="c4 c5"
+        />
         <div
-          class="c3 c4"
+          class="c6"
         >
-          <input
-            checked=""
-            class="c5"
-            type="checkbox"
-          />
+          <svg />
         </div>
+        <input
+          checked=""
+          class="c7"
+          type="checkbox"
+        />
         Checkbox Component
       </label>
     </div>
     <div
-      class="c6"
+      class="c8"
     >
       <span
-        class="c7"
+        class="c9"
       >
         Helper Text
       </span>
@@ -616,22 +725,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 `;
 
 exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = `
-.c4 {
-  position: relative;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #F46152;
-  border-color: #CB3530;
-}
-
-.c5 {
+.c7 {
   border: 0;
   height: 0;
   margin: 0;
@@ -650,7 +744,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   box-sizing: border-box;
 }
 
-.c2 {
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #F46152;
+  border-color: #CB3530;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -667,6 +773,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   color: #41414A;
 }
 
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -679,23 +793,33 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   align-items: center;
 }
 
-.c1:hover .c3:before {
-  content: '';
-  position: absolute;
-  top: -17px;
-  left: -17px;
-  width: 54px;
-  height: 54px;
-  background-color: rgba(244,97,82,0.2);
-  border-radius: 9999px;
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
 }
 
-.c6 {
+.c1 .c2:active .c4 {
+  background-color: rgba(250,185,178,0.75);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.75);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(250,185,178,0.5);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.5);
+}
+
+.c1:hover .c4 {
+  background-color: rgba(250,185,178,0.25);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
+}
+
+.c8 {
   width: 100%;
   margin-top: 4px;
 }
 
-.c7 {
+.c9 {
   color: #CB3530;
   font-size: 14px;
 }
@@ -708,24 +832,26 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
       class="c1"
     >
       <label
-        class="c2"
+        class="c2 c3"
       >
+        <span
+          class="c4 c5"
+        />
         <div
-          class="c3 c4"
-        >
-          <input
-            class="c5"
-            type="checkbox"
-          />
-        </div>
+          class="c6"
+        />
+        <input
+          class="c7"
+          type="checkbox"
+        />
         Checkbox Component
       </label>
     </div>
     <div
-      class="c6"
+      class="c8"
     >
       <span
-        class="c7"
+        class="c9"
       >
         Helper Text
       </span>
@@ -735,21 +861,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 `;
 
 exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
-.c4 {
-  position: relative;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  border-style: solid;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #F46152;
-}
-
-.c5 {
+.c7 {
   border: 0;
   height: 0;
   margin: 0;
@@ -768,7 +880,18 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   box-sizing: border-box;
 }
 
-.c2 {
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #F46152;
+}
+
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -785,6 +908,14 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   color: #41414A;
 }
 
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
 .c1 {
   position: relative;
   display: -webkit-box;
@@ -797,15 +928,25 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   align-items: center;
 }
 
-.c1:hover .c3:before {
-  content: '';
-  position: absolute;
-  top: -17px;
-  left: -17px;
-  width: 54px;
-  height: 54px;
-  background-color: rgba(244,97,82,0.2);
-  border-radius: 9999px;
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
+}
+
+.c1 .c2:active .c4 {
+  background-color: rgba(250,185,178,0.75);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.75);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(250,185,178,0.5);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.5);
+}
+
+.c1:hover .c4 {
+  background-color: rgba(250,185,178,0.25);
+  box-shadow: 0 0 0 12px rgba(250,185,178,0.25);
 }
 
 <div>
@@ -816,16 +957,18 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
       class="c1"
     >
       <label
-        class="c2"
+        class="c2 c3"
       >
+        <span
+          class="c4 c5"
+        />
         <div
-          class="c3 c4"
-        >
-          <input
-            class="c5"
-            type="checkbox"
-          />
-        </div>
+          class="c6"
+        />
+        <input
+          class="c7"
+          type="checkbox"
+        />
       </label>
     </div>
   </div>
