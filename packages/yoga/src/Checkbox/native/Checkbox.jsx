@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { bool, func, string } from 'prop-types';
+import { bool, func, string, oneOf, shape } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { TouchableWithoutFeedback, View } from 'react-native';
 import { hexToRgb } from '@gympass/yoga-common';
@@ -43,15 +43,14 @@ const Helper = styled.Text(
     error,
     theme: {
       yoga: {
+        colors: { negative },
         components: { checkbox },
       },
     },
   }) => `
   font-size: ${checkbox.helper.font.size}px;
 
-  color: ${
-    error ? checkbox.helper.selected.font.color : checkbox.helper.font.color
-  };
+  color: ${error ? negative[1] : checkbox.helper.font.color};
 `,
 );
 
@@ -60,14 +59,16 @@ const CheckBackground = styled.View(
     checked,
     disabled,
     error,
+    variant,
     theme: {
       yoga: {
+        colors: { [variant]: color = [], negative },
         components: { checkbox },
       },
     },
   }) => `
     position: absolute;
-    
+
     width: ${checkbox.size}px;
     height: ${checkbox.size}px;
 
@@ -75,11 +76,9 @@ const CheckBackground = styled.View(
     border-width: ${checkbox.border.width}px;
     border-style: solid;
 
-    ${checked ? `background-color: ${checkbox.checked.backgroundColor};` : ''}
+    ${checked ? `background-color: ${color[3]};` : ''}
 
-    border-color: ${
-      disabled ? checkbox.disabled.border.color : checkbox.border.color
-    };
+    border-color: ${disabled ? checkbox.disabled.border.color : color[3]};
 
     ${
       disabled && checked
@@ -87,20 +86,18 @@ const CheckBackground = styled.View(
         : ''
     }
 
-    ${error ? `border-color: ${checkbox.error.border.color};` : ''}
+    ${error ? `border-color: ${negative[1]};` : ''}
 
-    ${
-      error && checked
-        ? `background-color: ${checkbox.error.backgroundColor};`
-        : ''
-    }
+    ${error && checked ? `background-color: ${negative[1]};` : ''}
   `,
 );
 
 const Shadow = styled.View(
   ({
+    variant,
     theme: {
       yoga: {
+        colors: { [variant]: color = [] },
         components: { checkbox },
       },
     },
@@ -111,10 +108,7 @@ const Shadow = styled.View(
       width: ${size}px;
       height: ${size}px;
 
-      background-color: ${hexToRgb(
-        checkbox.hover.backgroundColor,
-        0.75,
-      )};          
+      background-color: ${hexToRgb(color[1], 0.75)};          
       border-radius: ${checkbox.hover.border.radius}px;
     `;
   },
@@ -142,6 +136,8 @@ const Checkbox = ({
   disabled,
   checked,
   error,
+  style,
+  variant,
   onPressIn,
   onPressOut,
   theme: {
@@ -166,24 +162,34 @@ const Checkbox = ({
           onPressOut(e);
         }}
       >
-        <CheckboxWrapper>
+        <CheckboxWrapper style={style}>
           <CheckArea>
-            {pressed && !disabled && <Shadow pressed={pressed} />}
+            {pressed && !disabled && (
+              <Shadow pressed={pressed} variant={variant} />
+            )}
             <CheckBackground
-              disabled={disabled}
-              checked={checked}
-              error={error}
-              pressed={pressed}
+              {...{
+                disabled,
+                checked,
+                error,
+                pressed,
+                variant,
+              }}
             />
-            {checked && <Done fill={checkbox.checked.icon.color} />}
+            {checked && (
+              <Done
+                fill={checkbox.checked.icon.color}
+                style={{ position: 'absolute' }}
+              />
+            )}
           </CheckArea>
 
           {label && <Label>{label}</Label>}
         </CheckboxWrapper>
       </TouchableWithoutFeedback>
-      {helper && (
+      {(helper || error) && (
         <HelperWrapper>
-          <Helper error={error}>{helper}</Helper>
+          <Helper error={error}>{error || helper}</Helper>
         </HelperWrapper>
       )}
     </View>
@@ -196,7 +202,10 @@ Checkbox.propTypes = {
   helper: string,
   checked: bool,
   disabled: bool,
-  error: bool,
+  error: string,
+  style: shape({}),
+  /** style the card following the theme (primary, secondary, tertiary) */
+  variant: oneOf(['primary', 'secondary', 'tertiary']),
   onPressIn: func,
   onPressOut: func,
 };
@@ -206,7 +215,9 @@ Checkbox.defaultProps = {
   helper: undefined,
   checked: false,
   disabled: false,
-  error: false,
+  error: undefined,
+  style: {},
+  variant: 'primary',
   onPressIn: () => {},
   onPressOut: () => {},
 };
