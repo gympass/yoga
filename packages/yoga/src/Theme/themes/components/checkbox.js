@@ -39,6 +39,9 @@ const checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
   },
   checked: {
     backgroundColor: colors.primary[3],
+    icon: {
+      color: colors.white,
+    },
   },
   disabled: {
     backgroundColor: colors.gray[7],
