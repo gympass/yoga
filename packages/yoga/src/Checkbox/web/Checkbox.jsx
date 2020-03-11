@@ -51,7 +51,7 @@ const CheckMark = styled.div`
           top: 50%;
           left: 50%;
           
-          fill: ${checkbox.checked.icons.color};
+          fill: ${checkbox.checked.icon.color};
 
           transform: translate(-50%, -50%);
         }
