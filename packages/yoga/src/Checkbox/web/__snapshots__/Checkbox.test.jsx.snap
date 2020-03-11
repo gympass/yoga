@@ -36,7 +36,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   position: absolute;
   top: 50%;
   left: 50%;
-  fill: white;
+  fill: #FFFFFF;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
@@ -321,7 +321,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   position: absolute;
   top: 50%;
   left: 50%;
-  fill: white;
+  fill: #FFFFFF;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
@@ -611,7 +611,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   position: absolute;
   top: 50%;
   left: 50%;
-  fill: white;
+  fill: #FFFFFF;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
