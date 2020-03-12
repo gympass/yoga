@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.0.0...@gympass/yoga-doc@1.0.1) (2020-03-12)
+
+### Bug Fixes
+
+- **doc:** remove .md files from being parsed from gatsby-mdx ([e9b4159](https://github.com/Gympass/yoga/commit/e9b415907704350efb75977172fcfbbe1a15c9fa))
+
 # [1.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.17.3...@gympass/yoga-doc@1.0.0) (2020-03-12)
 
 ### Bug Fixes
