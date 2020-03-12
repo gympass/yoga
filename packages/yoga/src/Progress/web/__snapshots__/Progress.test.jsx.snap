@@ -123,6 +123,10 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
 
 .c4 {
   font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c6 .c3 {
@@ -251,6 +255,10 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
 
 .c3 {
   font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c0 {
@@ -363,6 +371,10 @@ exports[`<Progress /> should match snapshot with secondary variant prop 1`] = `
 
 .c4 {
   font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c5 .c3 {
@@ -464,6 +476,10 @@ exports[`<Progress /> should match snapshot with tertiary variant prop 1`] = `
 
 .c4 {
   font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
 }
 
 .c5 .c3 {
