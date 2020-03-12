@@ -25,8 +25,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### BREAKING CHANGES
 
 - **input:** The Input component do not clean the value when clean icon is clicked, now you will
-  need to pass the onClean prop and update your state to clean the field. ex: "<Input onClean={cleaned
-  => setValue(cleaned)} />"
+  need to pass the onClean prop and update your state to clean the field. ex: "<Input onClean={cleaned => setValue(cleaned)} />"
 
 # [1.17.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.16.1...@gympass/yoga@1.17.0) (2020-03-12)
 

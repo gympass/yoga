@@ -41,7 +41,7 @@ const plugins = [
           },
         },
       ],
-      extensions: ['.mdx', '.md'],
+      extensions: ['.mdx'],
     },
   },
   'gatsby-plugin-remove-trailing-slashes',
