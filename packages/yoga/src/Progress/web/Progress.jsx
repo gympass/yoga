@@ -60,6 +60,7 @@ const Label = styled.label`
     },
   }) => `
   font-size: ${progress.label.font.size}px;
+  letter-spacing: normal;
 `}
 `;
 
