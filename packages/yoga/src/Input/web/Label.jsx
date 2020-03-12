@@ -1,6 +1,11 @@
+import React from 'react';
 import styled, { css } from 'styled-components';
+import { bool, node, string } from 'prop-types';
 
-const Label = styled.label`
+import Fieldset from './Fieldset';
+import Legend from './Legend';
+
+const StyledLabel = styled.label`
   position: absolute;
 
   letter-spacing: normal;
@@ -21,8 +26,6 @@ const Label = styled.label`
     top: ${input.padding.top * 1.5}px;
     left: ${input.padding.left}px;
 
-    background-color: ${colors.gray.surface};
-
     font-size: ${input.label.font.size.default}px;
     font-weight: ${input.label.font.weight.default};
     color: ${input.label.color.default};
@@ -36,5 +39,29 @@ const Label = styled.label`
     ${disabled ? `color: ${colors.disabled.background};` : ''}
   `}
 `;
+
+const Label = ({ children, typed, error, disabled, ...props }) => (
+  <>
+    <StyledLabel error={error} disabled={disabled} {...props}>
+      {children}
+    </StyledLabel>
+    <Fieldset error={error} disabled={disabled} area-hidden="true">
+      <Legend typed={typed}>{children}</Legend>
+    </Fieldset>
+  </>
+);
+
+Label.propTypes = {
+  children: node.isRequired,
+  typed: bool,
+  error: string,
+  disabled: bool,
+};
+
+Label.defaultProps = {
+  typed: undefined,
+  error: undefined,
+  disabled: undefined,
+};
 
 export default Label;

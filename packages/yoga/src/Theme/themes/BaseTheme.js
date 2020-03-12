@@ -1,6 +1,7 @@
 import tokens from '@gympass/yoga-tokens';
 
 import {
+  autocomplete,
   textarea,
   input,
   progress,
@@ -108,6 +109,15 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       radii,
       fontSizes,
       fontWeights,
+    }),
+    autocomplete: autocomplete({
+      borders,
+      spacing,
+      colors,
+      radii,
+      fontSizes,
+      fontWeights,
+      lineHeights,
     }),
     dropdown: dropdown({
       colors,

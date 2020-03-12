@@ -11,7 +11,7 @@ const Snack = styled.div`
   background: #fafafa;
   border: 1px solid rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  height: 505px;
+  height: 585px;
   width: 100%;
 `;
 
@@ -89,7 +89,7 @@ SnackEmbed.defaultProps = {
   description: 'A yoga component native code sample',
   id: 'yoga-component-snack',
   name: 'yoga-component',
-  platform: 'web',
+  platform: 'ios',
   preview: true,
   theme: 'light',
 };

@@ -16,7 +16,7 @@ exports[`<Input /> Snapshots should match when input is focused 1`] = `
       Array [
         Object {
           "position": "relative",
-          "width": 312,
+          "width": 320,
         },
         Object {},
       ]
@@ -44,7 +44,7 @@ exports[`<Input /> Snapshots should match when input is focused 1`] = `
             "paddingLeft": 16,
             "paddingRight": 40,
             "paddingTop": 16,
-            "width": 312,
+            "width": 320,
           },
           Object {
             "height": 52,
@@ -111,7 +111,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
       Array [
         Object {
           "position": "relative",
-          "width": 312,
+          "width": 320,
         },
         Object {},
       ]
@@ -139,7 +139,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
             "paddingLeft": 16,
             "paddingRight": 40,
             "paddingTop": 16,
-            "width": 312,
+            "width": 320,
           },
           Object {
             "height": 52,
@@ -170,7 +170,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
       Array [
         Object {
           "position": "relative",
-          "width": 312,
+          "width": 320,
         },
         Object {},
       ]
@@ -198,7 +198,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
             "paddingLeft": 16,
             "paddingRight": 40,
             "paddingTop": 16,
-            "width": 312,
+            "width": 320,
           },
           Object {
             "height": 52,
@@ -229,7 +229,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
       Array [
         Object {
           "position": "relative",
-          "width": 312,
+          "width": 320,
         },
         Object {},
       ]
@@ -258,7 +258,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
             "paddingLeft": 16,
             "paddingRight": 40,
             "paddingTop": 16,
-            "width": 312,
+            "width": 320,
           },
           Object {
             "height": 52,
@@ -276,8 +276,8 @@ exports[`<Input /> Snapshots should match with error 1`] = `
           Object {
             "flexDirection": "row",
             "marginTop": 4,
-            "maxWidth": 312,
-            "width": 312,
+            "maxWidth": 320,
+            "width": 320,
           },
         ]
       }
@@ -411,7 +411,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
       Array [
         Object {
           "position": "relative",
-          "width": 312,
+          "width": 320,
         },
         Object {},
       ]
@@ -440,7 +440,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
             "paddingLeft": 16,
             "paddingRight": 40,
             "paddingTop": 16,
-            "width": 312,
+            "width": 320,
           },
           Object {
             "height": 52,
@@ -458,8 +458,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
           Object {
             "flexDirection": "row",
             "marginTop": 4,
-            "maxWidth": 312,
-            "width": 312,
+            "maxWidth": 320,
+            "width": 320,
           },
         ]
       }
@@ -519,7 +519,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
       Array [
         Object {
           "position": "relative",
-          "width": 312,
+          "width": 320,
         },
         Object {},
       ]
@@ -547,7 +547,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
             "paddingLeft": 16,
             "paddingRight": 40,
             "paddingTop": 16,
-            "width": 312,
+            "width": 320,
           },
           Object {
             "height": 52,

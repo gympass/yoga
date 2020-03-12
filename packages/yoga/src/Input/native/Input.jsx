@@ -319,12 +319,9 @@ const Input = ({
       {cleanable && typed && (
         <TouchableWithoutFeedback
           accessibilityRole="button"
-          onPress={e => {
+          onPress={() => {
             if (disabled) return;
-            setInputValue('');
-            setTyped(false);
-            onChangeText('');
-            onClean(e);
+            onClean('');
           }}
         >
           <CloseIcon>

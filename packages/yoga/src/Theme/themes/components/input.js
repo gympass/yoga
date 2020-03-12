@@ -6,7 +6,7 @@ const input = ({
   radii,
   spacing,
 }) => ({
-  width: 312,
+  width: 320,
   height: 52,
   font: {
     color: {

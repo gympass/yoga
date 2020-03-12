@@ -1,7 +1,18 @@
 ### Usage
 
-```javascript
-<Input.Number label="Number" />
+```javascript state
+render(() => {
+  const [value, setValue] = useState('');
+
+  return (
+    <Input.Number
+      label="Number"
+      value={value}
+      onChange={e => setValue(e.target.value)}
+      onClean={cleaned => setValue(cleaned)}
+    />
+  );
+});
 ```
 
 ### Props

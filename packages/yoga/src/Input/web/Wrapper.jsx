@@ -10,6 +10,7 @@ const Wrapper = styled.div`
     disabled,
     error,
     full,
+    label,
     theme: {
       yoga: {
         colors,
@@ -20,8 +21,34 @@ const Wrapper = styled.div`
   }) => `
     height: ${input.height}px;
 
-    border-radius: ${input.border.radius}px;
-    border: ${input.border.width}px solid ${input.border.color.default};
+    ${
+      !label
+        ? `
+          border-radius: ${input.border.radius}px;
+          border-width: ${input.border.width}px;
+          border-style: solid;
+          border-color: ${input.border.color.default};
+        `
+        : ''
+    }
+
+
+    & {
+      width: ${full ? '100%' : `${input.width}px`};
+    }
+
+    ${
+      error
+        ? `
+      border-color: ${colors.negative[1]};
+
+      fieldset {
+        border-color: ${colors.negative[1]};
+      }
+    `
+        : ''
+    }
+
 
     svg {
       position: absolute;
@@ -45,16 +72,32 @@ const Wrapper = styled.div`
       cursor: pointer;
     }
 
-    & {
-      width: ${full ? '100%' : `${input.width}px`};
+    &:focus-within {
+      legend {
+        max-width: 1000px;
+        font-weight: ${input.label.font.weight.typed};
+      }
     }
 
-    ${
-      error
-        ? `
-      border-color: ${colors.negative[1]};
-    `
-        : ''
+    &:hover, &:focus-within {
+      ${
+        label
+          ? `
+          fieldset {
+            border-color: ${
+              error ? colors.negative[1] : input.border.color.typed
+            };
+
+            ${disabled ? `border-color: ${colors.disabled.background};` : ''}
+          }`
+          : `
+          border-color: ${
+            error ? colors.negative[1] : input.border.color.typed
+          };
+
+          ${disabled ? `border-color: ${colors.disabled.background};` : ''}
+      `
+      }
     }
 
     ${
@@ -62,19 +105,19 @@ const Wrapper = styled.div`
         ? `
             border-color: ${colors.disabled.background};
             color: ${colors.disabled.background};
-            
+
             svg {
               fill: ${colors.disabled.background};
               pointer-events: none;
             }
+
+            ${
+              label
+                ? `fieldset { border-color: ${colors.disabled.background}; }`
+                : ''
+            }
           `
-        : `   
-          &:hover, &:focus-within {
-            border-color: ${
-              error ? colors.negative[1] : input.border.color.typed
-            };
-          }
-        `
+        : ''
     }
   `}
 `;

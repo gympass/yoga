@@ -29,7 +29,6 @@ const Preview = styled.div`
     background-color: ${grayPallete[0]};
     border-radius: 5px;
     border: 1px solid ${grayPallete[3]};
-    overflow: hidden;
 
     textarea {
       outline: none;

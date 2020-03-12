@@ -1,3 +1,4 @@
+import autocomplete from './autocomplete';
 import textarea from './textarea';
 import input from './input';
 import progress from './progress';
@@ -16,6 +17,7 @@ import tag from './tag';
 import dropdown from './dropdown';
 
 export {
+  autocomplete,
   textarea,
   input,
   progress,
