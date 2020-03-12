@@ -3,15 +3,17 @@ import styled from 'styled-components';
 import { bool, node } from 'prop-types';
 
 const StyledLegend = styled.legend`
-  visibility: hidden;
   position: relative;
+  padding: 0;
+
   max-width: 0.01px;
   width: auto;
   height: 14px;
-  padding: 0;
+
   font-weight: normal;
 
   transition: max-width ease 50ms;
+  visibility: hidden;
 
   ${({
     typed,

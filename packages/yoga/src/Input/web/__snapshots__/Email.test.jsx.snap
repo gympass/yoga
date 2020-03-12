@@ -66,7 +66,7 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
 }
 
 .c2:focus + label {
-  top: 0px;
+  top: 0;
   left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
@@ -126,15 +126,15 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
 }
 
 .c5 {
-  visibility: hidden;
   position: relative;
+  padding: 0;
   max-width: 0.01px;
   width: auto;
   height: 14px;
-  padding: 0;
   font-weight: normal;
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
+  visibility: hidden;
   max-width: 0.01px;
   font-size: 12px;
   -webkit-letter-spacing: normal;
