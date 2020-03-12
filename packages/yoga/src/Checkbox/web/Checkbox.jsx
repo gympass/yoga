@@ -120,9 +120,7 @@ const CheckboxStyled = styled.div`
       },
     },
   }) => {
-    const shadowSize = Math.round(
-      checkbox.size * 0.33 + checkbox.border.width * 2,
-    );
+    const shadowSize = Math.round(checkbox.size * 0.33);
 
     return `
       ${Label}:active,
