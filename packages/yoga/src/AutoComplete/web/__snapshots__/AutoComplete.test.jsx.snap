@@ -66,7 +66,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 }
 
 .c4:focus + label {
-  top: 0px;
+  top: 0;
   left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
@@ -126,15 +126,15 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 }
 
 .c7 {
-  visibility: hidden;
   position: relative;
+  padding: 0;
   max-width: 0.01px;
   width: auto;
   height: 14px;
-  padding: 0;
   font-weight: normal;
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
+  visibility: hidden;
   max-width: 0.01px;
   font-size: 12px;
   -webkit-letter-spacing: normal;
@@ -299,7 +299,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 }
 
 .c4:focus + label {
-  top: 0px;
+  top: 0;
   left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
@@ -359,15 +359,15 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 }
 
 .c7 {
-  visibility: hidden;
   position: relative;
+  padding: 0;
   max-width: 0.01px;
   width: auto;
   height: 14px;
-  padding: 0;
   font-weight: normal;
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
+  visibility: hidden;
   max-width: 0.01px;
   font-size: 12px;
   -webkit-letter-spacing: normal;
@@ -532,7 +532,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c4:focus + label {
-  top: 0px;
+  top: 0;
   left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
@@ -568,7 +568,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c4 + label {
-  top: 0px;
+  top: 0;
   left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
@@ -605,15 +605,15 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c7 {
-  visibility: hidden;
   position: relative;
+  padding: 0;
   max-width: 0.01px;
   width: auto;
   height: 14px;
-  padding: 0;
   font-weight: normal;
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
+  visibility: hidden;
   max-width: 1000px;
   font-size: 12px;
   -webkit-letter-spacing: normal;
@@ -694,7 +694,9 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   width: 100%;
   max-height: 312px;
   background-color: #FFFFFF;
-  border: 1px solid #41414A;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #41414A;
   border-top-width: 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -876,7 +878,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c4:focus + label {
-  top: 0px;
+  top: 0;
   left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
@@ -912,7 +914,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c4 + label {
-  top: 0px;
+  top: 0;
   left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
@@ -949,15 +951,15 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c7 {
-  visibility: hidden;
   position: relative;
+  padding: 0;
   max-width: 0.01px;
   width: auto;
   height: 14px;
-  padding: 0;
   font-weight: normal;
   -webkit-transition: max-width ease 50ms;
   transition: max-width ease 50ms;
+  visibility: hidden;
   max-width: 1000px;
   font-size: 12px;
   -webkit-letter-spacing: normal;
@@ -1038,7 +1040,9 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   width: 320px;
   max-height: 312px;
   background-color: #FFFFFF;
-  border: 1px solid #41414A;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #41414A;
   border-top-width: 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;

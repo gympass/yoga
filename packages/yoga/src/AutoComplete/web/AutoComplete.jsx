@@ -63,21 +63,24 @@ const List = styled.ul`
     full,
     theme: {
       yoga: {
-        components: { autoComplete },
+        components: { autocomplete },
       },
     },
   }) => `
-    top: ${autoComplete.height}px;
+    top: ${autocomplete.height}px;
 
-    width: ${full ? '100%' : `${autoComplete.width}px`};
-    max-height: ${autoComplete.height * 6}px;
+    width: ${full ? '100%' : `${autocomplete.width}px`};
+    max-height: ${autocomplete.height * 6}px;
 
-    background-color: ${autoComplete.field.backgroundColor};
-    border:
-      ${autoComplete.border.width}px solid ${autoComplete.border.color.typed};
+    background-color: ${autocomplete.field.backgroundColor};
+
+    border-width: ${autocomplete.border.width}px;
+    border-style: solid;
+    border-color: ${autocomplete.border.color.typed};
+
     border-top-width: 0;
-    border-bottom-left-radius: ${autoComplete.border.radius}px;
-    border-bottom-right-radius: ${autoComplete.border.radius}px;
+    border-bottom-left-radius: ${autocomplete.border.radius}px;
+    border-bottom-right-radius: ${autocomplete.border.radius}px;
 
     overflow: hidden;
   `}
@@ -92,30 +95,30 @@ const Item = styled.li`
     selected,
     theme: {
       yoga: {
-        components: { autoComplete },
+        components: { autocomplete },
       },
     },
   }) => `
     padding:
-      ${autoComplete.list.padding.top}px
-      ${autoComplete.list.padding.right}px
-      ${autoComplete.list.padding.bottom}px
-      ${autoComplete.list.padding.left}px;
+      ${autocomplete.list.padding.top}px
+      ${autocomplete.list.padding.right}px
+      ${autocomplete.list.padding.bottom}px
+      ${autocomplete.list.padding.left}px;
 
-    background-color: ${autoComplete.list.backgroundColor.default};
+    background-color: ${autocomplete.list.backgroundColor.default};
     outline: none;
 
-    font-size: ${autoComplete.list.font.size}px;
-    font-weight: ${autoComplete.list.font.weight.default};
-    line-height: ${autoComplete.list.font.lineHeight}px;
+    font-size: ${autocomplete.list.font.size}px;
+    font-weight: ${autocomplete.list.font.weight.default};
+    line-height: ${autocomplete.list.font.lineHeight}px;
 
     &:hover {
-      background-color: ${autoComplete.list.backgroundColor.hover};
+      background-color: ${autocomplete.list.backgroundColor.hover};
     }
 
     ${
       selected
-        ? `background-color: ${autoComplete.list.backgroundColor.hover};`
+        ? `background-color: ${autocomplete.list.backgroundColor.hover};`
         : ''
     }
   `}
@@ -128,11 +131,11 @@ const Match = styled.mark`
   ${({
     theme: {
       yoga: {
-        components: { autoComplete },
+        components: { autocomplete },
       },
     },
   }) => `
-    font-weight: ${autoComplete.list.font.weight.matched};
+    font-weight: ${autocomplete.list.font.weight.matched};
   `}
 `;
 
@@ -227,7 +230,7 @@ const AutoComplete = ({
                       .split(reg)
                       .map((part, index) =>
                         part.match(reg) ? (
-                          <Match key={`${index}`}>{part}</Match>
+                          <Match key={index}>{part}</Match>
                         ) : (
                           <React.Fragment key={`unmatch-${index}`}>
                             {part}
