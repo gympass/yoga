@@ -29,28 +29,28 @@ const SwitchTrack = styled.label`
   ${({
     theme: {
       yoga: {
-        components: { checkboxSwitch },
+        components: { checkboxswitch },
       },
     },
     checked,
     disabled,
   }) =>
     css`
-      width: ${checkboxSwitch.track.width}px;
-      height: ${checkboxSwitch.track.height}px;
+      width: ${checkboxswitch.track.width}px;
+      height: ${checkboxswitch.track.height}px;
 
       background-color: ${checked
-        ? checkboxSwitch.track.checked.backgroundColor
-        : checkboxSwitch.track.backgroundColor};
+        ? checkboxswitch.track.checked.backgroundColor
+        : checkboxswitch.track.backgroundColor};
 
-      border-radius: ${checkboxSwitch.track.radii}px;
+      border-radius: ${checkboxswitch.track.radii}px;
 
       transition-property: background-color;
       transition-duration: 300ms;
 
       ${disabled
         ? css`
-            background-color: ${checkboxSwitch.track.disabled.backgroundColor};
+            background-color: ${checkboxswitch.track.disabled.backgroundColor};
             cursor: not-allowed;
           `
         : ''}
@@ -65,7 +65,7 @@ const SwitchThumb = styled.span`
   ${({
     theme: {
       yoga: {
-        components: { checkboxSwitch },
+        components: { checkboxswitch },
         spacing,
       },
     },
@@ -73,13 +73,13 @@ const SwitchThumb = styled.span`
     disabled,
   }) =>
     css`
-      left: ${checkboxSwitch.thumb.left}px;
+      left: ${checkboxswitch.thumb.left}px;
 
-      width: ${checkboxSwitch.thumb.width}px;
-      height: ${checkboxSwitch.thumb.height}px;
+      width: ${checkboxswitch.thumb.width}px;
+      height: ${checkboxswitch.thumb.height}px;
 
-      background-color: ${checkboxSwitch.thumb.backgroundColor};
-      border-radius: ${checkboxSwitch.thumb.radii}px;
+      background-color: ${checkboxswitch.thumb.backgroundColor};
+      border-radius: ${checkboxswitch.thumb.radii}px;
 
       transition-property: left, transform;
       transition-duration: 300ms;
@@ -87,13 +87,13 @@ const SwitchThumb = styled.span`
 
       ${checked
         ? css`
-            left: calc(100% - ${checkboxSwitch.thumb.left}px);
+            left: calc(100% - ${checkboxswitch.thumb.left}px);
             transform: translateX(-100%);
           `
         : ''}
       ${disabled
         ? css`
-            background-color: ${checkboxSwitch.thumb.disabled.backgroundColor};
+            background-color: ${checkboxswitch.thumb.disabled.backgroundColor};
             cursor: not-allowed;
           `
         : css`
@@ -101,8 +101,8 @@ const SwitchThumb = styled.span`
             ${SwitchInput}:hover + & {
               box-shadow: 0 0 0 ${spacing.xsmall}px
                 ${checked
-                  ? checkboxSwitch.focus.checked.backgroundColor
-                  : checkboxSwitch.focus.disabled.backgroundColor};
+                  ? checkboxswitch.focus.checked.backgroundColor
+                  : checkboxswitch.focus.disabled.backgroundColor};
             }
           `}
     `};

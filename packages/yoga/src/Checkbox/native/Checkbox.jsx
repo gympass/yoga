@@ -130,6 +130,9 @@ const CheckArea = styled.View(
 `,
 );
 
+/** The checkbox component is used when the user needs to select one or more
+ * items on a task. This component can also allow the user to turn an option on
+ * or off.  */
 const Checkbox = ({
   label,
   helper,

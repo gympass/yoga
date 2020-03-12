@@ -7,7 +7,7 @@ const SwitchTrack = styled.View`
   ${({
     theme: {
       yoga: {
-        components: { checkboxSwitch },
+        components: { checkboxswitch },
       },
     },
     checked,
@@ -16,19 +16,19 @@ const SwitchTrack = styled.View`
     `
     display: flex;
     justify-content: center;
-    width: ${checkboxSwitch.track.width}px;
-    height: ${checkboxSwitch.track.height}px;
-    borderRadius: ${checkboxSwitch.track.radii}px;
+    width: ${checkboxswitch.track.width}px;
+    height: ${checkboxswitch.track.height}px;
+    borderRadius: ${checkboxswitch.track.radii}px;
     background-color: ${
       checked
-        ? checkboxSwitch.track.checked.backgroundColor
-        : checkboxSwitch.track.backgroundColor
+        ? checkboxswitch.track.checked.backgroundColor
+        : checkboxswitch.track.backgroundColor
     };
 
     ${
       disabled
         ? `
-        background-color: ${checkboxSwitch.track.disabled.backgroundColor};`
+        background-color: ${checkboxswitch.track.disabled.backgroundColor};`
         : ''
     }
   `};
@@ -38,21 +38,21 @@ const SwitchThumb = styled.View`
   ${({
     theme: {
       yoga: {
-        components: { checkboxSwitch },
+        components: { checkboxswitch },
       },
     },
     disabled,
   }) =>
     `
-  width: ${checkboxSwitch.thumb.width}px;
-  height: ${checkboxSwitch.thumb.height}px;
-  border-radius: ${checkboxSwitch.thumb.radii};
-  background-color: ${checkboxSwitch.thumb.backgroundColor};
+  width: ${checkboxswitch.thumb.width}px;
+  height: ${checkboxswitch.thumb.height}px;
+  border-radius: ${checkboxswitch.thumb.radii};
+  background-color: ${checkboxswitch.thumb.backgroundColor};
 
   ${
     disabled
       ? `
-      background-color: ${checkboxSwitch.thumb.disabled.backgroundColor};`
+      background-color: ${checkboxswitch.thumb.disabled.backgroundColor};`
       : ``
   }
 `};
@@ -63,7 +63,7 @@ const CheckboxSwitch = ({
   disabled,
   theme: {
     yoga: {
-      components: { checkboxSwitch },
+      components: { checkboxswitch },
     },
   },
   onChange,
@@ -71,10 +71,10 @@ const CheckboxSwitch = ({
 }) => {
   const [thumbPosition] = useState(new Animated.Value(checked));
   const thumbTo =
-    checkboxSwitch.track.width -
-    checkboxSwitch.thumb.width -
-    checkboxSwitch.thumb.left;
-  const thumbFrom = checkboxSwitch.thumb.left;
+    checkboxswitch.track.width -
+    checkboxswitch.thumb.width -
+    checkboxswitch.thumb.left;
+  const thumbFrom = checkboxswitch.thumb.left;
 
   useEffect(() => {
     const toggle = (isChecked, position) => {
@@ -100,8 +100,8 @@ const CheckboxSwitch = ({
             backgroundColor: thumbPosition.interpolate({
               inputRange: [0, 1],
               outputRange: [
-                checkboxSwitch.track.checked.backgroundColor,
-                checkboxSwitch.track.backgroundColor,
+                checkboxswitch.track.checked.backgroundColor,
+                checkboxswitch.track.backgroundColor,
               ],
             }),
           }
