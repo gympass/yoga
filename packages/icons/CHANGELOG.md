@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.6.1...@gympass/yoga-icons@0.7.0) (2020-03-12)
+
+### Features
+
+- **icons:** add new icon (Done) and sort the export ([82bb47a](https://github.com/Gympass/yoga/commit/82bb47ae3cecf105c99750da70ab8d5e4e7963a9))
+
 ## [0.6.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.6.0...@gympass/yoga-icons@0.6.1) (2020-03-10)
 
 **Note:** Version bump only for package @gympass/yoga-icons

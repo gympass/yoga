@@ -22,46 +22,107 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
               "alignItems": "center",
               "flexDirection": "row",
             },
+            Object {},
           ]
         }
       >
         <View
-          checked={true}
-          disabled={false}
-          error={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#F46152",
-                "borderColor": "#F46152",
-                "borderRadius": 4,
-                "borderStyle": "solid",
-                "borderWidth": 2,
+                "alignItems": "center",
                 "height": 24,
+                "justifyContent": "center",
                 "width": 24,
               },
             ]
           }
         >
-          <Image
-            source={
-              Object {
-                "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
-              }
-            }
+          <View
+            checked={true}
+            disabled={false}
+            pressed={false}
             style={
               Array [
                 Object {
-                  "height": 11,
-                  "marginBottom": 4,
-                  "marginLeft": 2,
-                  "marginRight": 2,
-                  "marginTop": 4,
-                  "width": 16,
+                  "backgroundColor": "#F46152",
+                  "borderColor": "#F46152",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
                 },
               ]
             }
+            variant="primary"
           />
+          <RNSVGSvgView
+            fill="#FFFFFF"
+            focusable={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "position": "absolute",
+                },
+                Object {
+                  "opacity": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4294967295,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
         </View>
         <Text
           style={
@@ -88,7 +149,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
       }
     >
       <Text
-        error={false}
         style={
           Array [
             Object {
@@ -127,26 +187,42 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
               "alignItems": "center",
               "flexDirection": "row",
             },
+            Object {},
           ]
         }
       >
         <View
-          checked={false}
-          disabled={false}
-          error={false}
           style={
             Array [
               Object {
-                "borderColor": "#F46152",
-                "borderRadius": 4,
-                "borderStyle": "solid",
-                "borderWidth": 2,
+                "alignItems": "center",
                 "height": 24,
+                "justifyContent": "center",
                 "width": 24,
               },
             ]
           }
-        />
+        >
+          <View
+            checked={false}
+            disabled={false}
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "borderColor": "#F46152",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
+                },
+              ]
+            }
+            variant="primary"
+          />
+        </View>
         <Text
           style={
             Array [
@@ -172,7 +248,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
       }
     >
       <Text
-        error={false}
         style={
           Array [
             Object {
@@ -211,46 +286,107 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
               "alignItems": "center",
               "flexDirection": "row",
             },
+            Object {},
           ]
         }
       >
         <View
-          checked={true}
-          disabled={true}
-          error={false}
           style={
             Array [
               Object {
-                "backgroundColor": "#9898A6",
-                "borderColor": "#9898A6",
-                "borderRadius": 4,
-                "borderStyle": "solid",
-                "borderWidth": 2,
+                "alignItems": "center",
                 "height": 24,
+                "justifyContent": "center",
                 "width": 24,
               },
             ]
           }
         >
-          <Image
-            source={
-              Object {
-                "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
-              }
-            }
+          <View
+            checked={true}
+            disabled={true}
+            pressed={false}
             style={
               Array [
                 Object {
-                  "height": 11,
-                  "marginBottom": 4,
-                  "marginLeft": 2,
-                  "marginRight": 2,
-                  "marginTop": 4,
-                  "width": 16,
+                  "backgroundColor": "#9898A6",
+                  "borderColor": "#9898A6",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
                 },
               ]
             }
+            variant="primary"
           />
+          <RNSVGSvgView
+            fill="#FFFFFF"
+            focusable={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "position": "absolute",
+                },
+                Object {
+                  "opacity": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4294967295,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
         </View>
         <Text
           style={
@@ -277,7 +413,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
       }
     >
       <Text
-        error={false}
         style={
           Array [
             Object {
@@ -316,26 +451,42 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
               "alignItems": "center",
               "flexDirection": "row",
             },
+            Object {},
           ]
         }
       >
         <View
-          checked={false}
-          disabled={true}
-          error={false}
           style={
             Array [
               Object {
-                "borderColor": "#9898A6",
-                "borderRadius": 4,
-                "borderStyle": "solid",
-                "borderWidth": 2,
+                "alignItems": "center",
                 "height": 24,
+                "justifyContent": "center",
                 "width": 24,
               },
             ]
           }
-        />
+        >
+          <View
+            checked={false}
+            disabled={true}
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "borderColor": "#9898A6",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
+                },
+              ]
+            }
+            variant="primary"
+          />
+        </View>
         <Text
           style={
             Array [
@@ -361,7 +512,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
       }
     >
       <Text
-        error={false}
         style={
           Array [
             Object {
@@ -400,46 +550,108 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
               "alignItems": "center",
               "flexDirection": "row",
             },
+            Object {},
           ]
         }
       >
         <View
-          checked={true}
-          disabled={false}
-          error={true}
           style={
             Array [
               Object {
-                "backgroundColor": "#CB3530",
-                "borderColor": "#CB3530",
-                "borderRadius": 4,
-                "borderStyle": "solid",
-                "borderWidth": 2,
+                "alignItems": "center",
                 "height": 24,
+                "justifyContent": "center",
                 "width": 24,
               },
             ]
           }
         >
-          <Image
-            source={
-              Object {
-                "uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAQAAAAAYLlVAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCw4QFioQDlrfAAABI0lEQVRo3u2YPW7CQBBGP18A0UXpaZEQJ+AG6VJyEroIChrEUSKROkWOkN+WHiSgRnp0QDCQtdeejZL5+tn31tLOjCx5PJ7/niwNlrZ6Wukx26TBD9gCMKeVAj/ikKe0eFinxcNHWjz0LfEPOfzY8Y53vOMd73jHO/534LnnhVcmNCLw+WVrGFra35e8c2OOl/g8KiulEIWXWH8rLawQiZeYnZQXUojGS7RYllWoAC9JdFicHPPFbUBdde++jELFbaeoQg1dr4hCTU03VKHGnh+iUPPI+UnBYOJdUzAauJcUDOc93TPdcZrDl+l6EV/B6vaBChbL1hUFq13vgoLpqplXsMSfUbDGSxJd5gBsGVR/etDvehq6U1PP2VuC+3s8nj+fHXfWlhGVw0EjAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTExLTE0VDE2OjIyOjQyKzAwOjAwR6ZpUQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0xMS0xNFQxNjoyMjo0MiswMDowMDb70e0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC",
-              }
-            }
+          <View
+            checked={true}
+            disabled={false}
+            error="Error text"
+            pressed={false}
             style={
               Array [
                 Object {
-                  "height": 11,
-                  "marginBottom": 4,
-                  "marginLeft": 2,
-                  "marginRight": 2,
-                  "marginTop": 4,
-                  "width": 16,
+                  "backgroundColor": "#CB3530",
+                  "borderColor": "#CB3530",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
                 },
               ]
             }
+            variant="primary"
           />
+          <RNSVGSvgView
+            fill="#FFFFFF"
+            focusable={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "position": "absolute",
+                },
+                Object {
+                  "opacity": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4294967295,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
         </View>
         <Text
           style={
@@ -466,7 +678,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
       }
     >
       <Text
-        error={true}
+        error="Error text"
         style={
           Array [
             Object {
@@ -476,7 +688,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
           ]
         }
       >
-        Helper Text
+        Error text
       </Text>
     </View>
   </View>
@@ -505,26 +717,43 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
               "alignItems": "center",
               "flexDirection": "row",
             },
+            Object {},
           ]
         }
       >
         <View
-          checked={false}
-          disabled={false}
-          error={true}
           style={
             Array [
               Object {
-                "borderColor": "#CB3530",
-                "borderRadius": 4,
-                "borderStyle": "solid",
-                "borderWidth": 2,
+                "alignItems": "center",
                 "height": 24,
+                "justifyContent": "center",
                 "width": 24,
               },
             ]
           }
-        />
+        >
+          <View
+            checked={false}
+            disabled={false}
+            error="Error text"
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "borderColor": "#CB3530",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
+                },
+              ]
+            }
+            variant="primary"
+          />
+        </View>
         <Text
           style={
             Array [
@@ -550,7 +779,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
       }
     >
       <Text
-        error={true}
+        error="Error text"
         style={
           Array [
             Object {
@@ -560,9 +789,520 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
           ]
         }
       >
-        Helper Text
+        Error text
       </Text>
     </View>
+  </View>
+</View>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <TouchableWithoutFeedback
+      disabled={false}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            Object {},
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 24,
+                "justifyContent": "center",
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <View
+            checked={false}
+            disabled={false}
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "borderColor": "#F46152",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
+                },
+              ]
+            }
+            variant="primary"
+          />
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>
+  <View>
+    <TouchableWithoutFeedback
+      disabled={false}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            Object {},
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 24,
+                "justifyContent": "center",
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <View
+            checked={false}
+            disabled={false}
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "borderColor": "#652CDB",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
+                },
+              ]
+            }
+            variant="secondary"
+          />
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>
+  <View>
+    <TouchableWithoutFeedback
+      disabled={false}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            Object {},
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 24,
+                "justifyContent": "center",
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <View
+            checked={false}
+            disabled={false}
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "borderColor": "#2B9486",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
+                },
+              ]
+            }
+            variant="tertiary"
+          />
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>
+  <View>
+    <TouchableWithoutFeedback
+      disabled={false}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            Object {},
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 24,
+                "justifyContent": "center",
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <View
+            checked={true}
+            disabled={false}
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#F46152",
+                  "borderColor": "#F46152",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
+                },
+              ]
+            }
+            variant="primary"
+          />
+          <RNSVGSvgView
+            fill="#FFFFFF"
+            focusable={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "position": "absolute",
+                },
+                Object {
+                  "opacity": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4294967295,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>
+  <View>
+    <TouchableWithoutFeedback
+      disabled={false}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            Object {},
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 24,
+                "justifyContent": "center",
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <View
+            checked={true}
+            disabled={false}
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#652CDB",
+                  "borderColor": "#652CDB",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
+                },
+              ]
+            }
+            variant="secondary"
+          />
+          <RNSVGSvgView
+            fill="#FFFFFF"
+            focusable={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "position": "absolute",
+                },
+                Object {
+                  "opacity": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4294967295,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>
+  <View>
+    <TouchableWithoutFeedback
+      disabled={false}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            Object {},
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 24,
+                "justifyContent": "center",
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <View
+            checked={true}
+            disabled={false}
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#2B9486",
+                  "borderColor": "#2B9486",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
+                },
+              ]
+            }
+            variant="tertiary"
+          />
+          <RNSVGSvgView
+            fill="#FFFFFF"
+            focusable={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "position": "absolute",
+                },
+                Object {
+                  "opacity": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4294967295,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
   </View>
 </View>
 `;
@@ -588,26 +1328,105 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 1`] = `
               "alignItems": "center",
               "flexDirection": "row",
             },
+            Object {},
           ]
         }
       >
         <View
-          checked={false}
-          disabled={false}
-          error={false}
           style={
             Array [
               Object {
-                "borderColor": "#F46152",
-                "borderRadius": 4,
-                "borderStyle": "solid",
-                "borderWidth": 2,
+                "alignItems": "center",
                 "height": 24,
+                "justifyContent": "center",
                 "width": 24,
               },
             ]
           }
-        />
+        >
+          <View
+            checked={false}
+            disabled={false}
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "borderColor": "#F46152",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
+                },
+              ]
+            }
+            variant="primary"
+          />
+        </View>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>
+</View>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot without label 2`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View>
+    <TouchableWithoutFeedback
+      disabled={false}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            },
+            Object {},
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 24,
+                "justifyContent": "center",
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <View
+            checked={false}
+            disabled={false}
+            pressed={false}
+            style={
+              Array [
+                Object {
+                  "borderColor": "#F46152",
+                  "borderRadius": 4,
+                  "borderStyle": "solid",
+                  "borderWidth": 2,
+                  "height": 24,
+                  "position": "absolute",
+                  "width": 24,
+                },
+              ]
+            }
+            variant="primary"
+          />
+        </View>
       </View>
     </TouchableWithoutFeedback>
   </View>

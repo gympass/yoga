@@ -19,7 +19,10 @@ module.exports = (async () => {
   return {
     watchFolders: [
       path.resolve(__dirname, '../../', 'node_modules'),
-      reactNativeLib,
+      `${reactNativeLib}/packages/yoga`,
+      `${reactNativeLib}/packages/icons`,
+      `${reactNativeLib}/packages/tokens`,
+      `${reactNativeLib}/packages/common`,
     ],
     resolver: {
       extraNodeModules: {

@@ -72,7 +72,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     slider: slider({ colors, radii, elevations, spacing, fontWeights }),
     list: list({ spacing, borders, colors }),
     button: button({ spacing, fontSizes, borders, radii, colors, fontWeights }),
-    checkboxSwitch: checkboxswitch({
+    checkboxswitch: checkboxswitch({
       colors,
       radii,
       transition,

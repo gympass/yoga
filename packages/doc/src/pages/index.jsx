@@ -77,7 +77,12 @@ const metaDescription =
 const HomePage = () => (
   <>
     <Helmet>
-      <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+      <link
+        rel="icon"
+        type="image/png"
+        href="/yoga/favicon.png"
+        sizes="32x32"
+      />
       <title>{metaTitle}</title>
       <meta name="title" content={metaTitle} />
       <meta name="description" content={metaDescription} />

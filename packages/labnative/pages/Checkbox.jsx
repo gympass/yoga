@@ -40,7 +40,11 @@ const CheckboxPage = () => {
       </CheckboxWrapper>
       <DocTitle>Error</DocTitle>
       <CheckboxWrapper>
-        <Checkbox error label="Checkbox Label" helper="Checkbox Helper" />
+        <Checkbox
+          label="Checkbox Label"
+          helper="Checkbox Helper"
+          error="Error text"
+        />
       </CheckboxWrapper>
       <DocTitle>Working</DocTitle>
       <CheckboxWrapper>
@@ -50,6 +54,22 @@ const CheckboxPage = () => {
           helper="Checkbox Helper"
           onPress={() => setChecked(!checked)}
         />
+      </CheckboxWrapper>
+      <DocTitle>Variants</DocTitle>
+      <CheckboxWrapper>
+        <Checkbox
+          checked
+          variant="primary"
+          label="Primary (default)"
+          style={{ marginRight: 4 }}
+        />
+        <Checkbox
+          checked
+          variant="secondary"
+          label="Seconary"
+          style={{ marginRight: 4 }}
+        />
+        <Checkbox checked variant="tertiary" label="Tertiary" />
       </CheckboxWrapper>
     </View>
   );
