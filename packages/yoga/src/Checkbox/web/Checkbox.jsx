@@ -133,25 +133,17 @@ const CheckboxStyled = styled.div`
 
       ${Label}:active {
         ${Shadow} {
-          background-color: ${hexToRgb(color[0], 0.75)};
+          background-color: ${hexToRgb(color[1], 0.75)};
 
-          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[0], 0.75)};
+          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[1], 0.75)};
         }
       }
 
-      &:focus-within {
+      &:focus-within, &:hover {
         ${Shadow} {
-          background-color: ${hexToRgb(color[0], 0.5)};
+          background-color: ${hexToRgb(color[1], 0.25)};
           
-          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[0], 0.5)};
-          }
-      }
-
-      &:hover {
-        ${Shadow} {
-          background-color: ${hexToRgb(color[0], 0.25)};
-
-          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[0], 0.25)};
+          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[1], 0.5)};
         }
       }
     `;
