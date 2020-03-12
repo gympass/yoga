@@ -110,7 +110,7 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
       fontSizes,
       fontWeights,
     }),
-    autoComplete: autocomplete({
+    autocomplete: autocomplete({
       borders,
       spacing,
       colors,

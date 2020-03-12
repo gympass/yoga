@@ -24,8 +24,10 @@ const Wrapper = styled.div`
     ${
       !label
         ? `
-        border-radius: ${input.border.radius}px;
-        border: 1px solid #d3d3e2;
+          border-radius: ${input.border.radius}px;
+          border-width: ${input.border.width}px;
+          border-style: solid;
+          border-color: ${input.border.color.default};
         `
         : ''
     }
@@ -73,7 +75,7 @@ const Wrapper = styled.div`
     &:focus-within {
       legend {
         max-width: 1000px;
-        font-weight: 700;
+        font-weight: ${input.label.font.weight.typed};
       }
     }
 

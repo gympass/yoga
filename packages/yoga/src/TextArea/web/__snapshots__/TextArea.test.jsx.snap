@@ -22,7 +22,9 @@ exports[`<TextArea /> should match snapshot 1`] = `
   vertical-align: top;
   height: 52px;
   border-radius: 8px;
-  border: 1px solid #d3d3e2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D3D3E2;
   height: 88px;
   padding-top: 16px;
   padding-right: 16px;
@@ -91,7 +93,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
 }
 
 .c2:focus + label {
-  top: 0px;
+  top: 0;
   left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);

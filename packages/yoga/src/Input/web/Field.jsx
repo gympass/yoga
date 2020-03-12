@@ -11,7 +11,7 @@ const labelTransition = css`
       },
     },
   }) => `
-    top: 0px;
+    top: 0;
     left: ${input.padding.left}px;
 
     font-size: ${input.label.font.size.typed}px;
