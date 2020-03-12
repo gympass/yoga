@@ -20,6 +20,31 @@ describe('<Checkbox />', () => {
       );
       expect(toJSON(container)).toMatchSnapshot();
     });
+
+    it('should match snapshot with variants', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox variant="primary" />
+          <Checkbox variant="secondary" />
+          <Checkbox variant="tertiary" />
+
+          <Checkbox variant="primary" checked />
+          <Checkbox variant="secondary" checked />
+          <Checkbox variant="tertiary" checked />
+        </ThemeProvider>,
+      );
+      expect(toJSON(container)).toMatchSnapshot();
+    });
+
+    it('should match snapshot without label', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox />
+        </ThemeProvider>,
+      );
+      expect(toJSON(container)).toMatchSnapshot();
+    });
+
     it('should match snapshot with default checkbox', () => {
       const { container } = render(
         <ThemeProvider>
@@ -59,7 +84,7 @@ describe('<Checkbox />', () => {
     it('should match snapshot with error checkbox', () => {
       const { container } = render(
         <ThemeProvider>
-          <Checkbox {...data} error />
+          <Checkbox {...data} error="Error text" />
         </ThemeProvider>,
       );
       expect(toJSON(container)).toMatchSnapshot();
@@ -68,7 +93,7 @@ describe('<Checkbox />', () => {
     it('should match snapshot with error and checked checkbox', () => {
       const { container } = render(
         <ThemeProvider>
-          <Checkbox {...data} error checked />
+          <Checkbox {...data} error="Error text" checked />
         </ThemeProvider>,
       );
       expect(toJSON(container)).toMatchSnapshot();
