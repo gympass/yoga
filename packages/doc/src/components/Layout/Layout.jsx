@@ -111,7 +111,12 @@ const Layout = ({
   return (
     <ThemeProvider theme={theme} locale={locale}>
       <Helmet>
-        <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/yoga/favicon.png"
+          sizes="32x32"
+        />
         {metaTitle ? (
           <title>Yoga - {metaTitle}</title>
         ) : (
