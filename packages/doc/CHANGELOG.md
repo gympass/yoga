@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.17.3...@gympass/yoga-doc@1.0.0) (2020-03-12)
+
+### Bug Fixes
+
+- **input:** change input default width and change onClean callback behaviour ([24d27f1](https://github.com/Gympass/yoga/commit/24d27f187ad168209bc6d717698894474f6f2166))
+
+### Code Refactoring
+
+- **input:** changes due [@ggdaltoso](https://github.com/ggdaltoso) review ([3a9b7a1](https://github.com/Gympass/yoga/commit/3a9b7a1d06e641803e8f901b9368e8d865567be4))
+
+### Features
+
+- **autocomplete:** create web autocomplete component ([8d2d503](https://github.com/Gympass/yoga/commit/8d2d503198792b656afd6cc66b5cd9b2fe93f7c3))
+
+### BREAKING CHANGES
+
+- **input:** The Input component do not clean the value when clean icon is clicked, now you will
+  need to pass the onClean prop and update your state to clean the field. ex: "<Input onClean={cleaned
+  => setValue(cleaned)} />"
+
 ## [0.17.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@0.17.2...@gympass/yoga-doc@0.17.3) (2020-03-12)
 
 **Note:** Version bump only for package @gympass/yoga-doc

@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.17.0...@gympass/yoga@2.0.0) (2020-03-12)
+
+### Bug Fixes
+
+- **checkbox:** fix checkbox opacity ([40febc3](https://github.com/Gympass/yoga/commit/40febc36cbcc4144eeb6ed314b76075aaeca3a2f))
+- **input:** change input default width and change onClean callback behaviour ([24d27f1](https://github.com/Gympass/yoga/commit/24d27f187ad168209bc6d717698894474f6f2166))
+
+### Code Refactoring
+
+- **input:** changes due [@ggdaltoso](https://github.com/ggdaltoso) review ([3a9b7a1](https://github.com/Gympass/yoga/commit/3a9b7a1d06e641803e8f901b9368e8d865567be4))
+
+### Features
+
+- **autocomplete:** create web autocomplete component ([8d2d503](https://github.com/Gympass/yoga/commit/8d2d503198792b656afd6cc66b5cd9b2fe93f7c3))
+
+### Performance Improvements
+
+- **autocomplete:** handle keyDown when showOptions is false ([d9d27c9](https://github.com/Gympass/yoga/commit/d9d27c9d78e44a79a24d25f17bd19d37a9770edd))
+
+### BREAKING CHANGES
+
+- **input:** The Input component do not clean the value when clean icon is clicked, now you will
+  need to pass the onClean prop and update your state to clean the field. ex: "<Input onClean={cleaned
+  => setValue(cleaned)} />"
+
 # [1.17.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.16.1...@gympass/yoga@1.17.0) (2020-03-12)
 
 ### Bug Fixes
