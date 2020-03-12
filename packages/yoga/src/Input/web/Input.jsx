@@ -43,13 +43,8 @@ const Input = React.forwardRef(
       if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
 
-        setTyped(false);
-        setInputValue('');
-
+        onClean('');
         inputRef.current.focus();
-
-        onClean(e);
-        onChange(e);
       }
     };
 
@@ -67,6 +62,7 @@ const Input = React.forwardRef(
           className={className}
           style={style}
           typed={typed}
+          label={label}
         >
           <Field
             {...props}
@@ -132,7 +128,7 @@ Input.propTypes = {
   style: shape({}),
   value: string,
   onChange: func,
-  /** callback invoked when close icon is clicked */
+  /** callback invoked when close icon is clicked, it returns a empty string to update your state */
   onClean: func,
 };
 

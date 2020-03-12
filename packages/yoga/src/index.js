@@ -14,6 +14,7 @@ import Input from './Input';
 import Progress from './Progress';
 import Dropdown from './Dropdown';
 import TextArea from './TextArea';
+import AutoComplete from './AutoComplete';
 
 export {
   ThemeProvider,
@@ -39,4 +40,5 @@ export {
   Progress,
   Dropdown,
   TextArea,
+  AutoComplete,
 };

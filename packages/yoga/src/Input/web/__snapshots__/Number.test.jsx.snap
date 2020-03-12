@@ -6,8 +6,10 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   display: inline-block;
   vertical-align: top;
   height: 52px;
-  border-radius: 8px;
-  border: 1px solid #D3D3E2;
+}
+
+.c1 {
+  width: 320px;
 }
 
 .c1 svg {
@@ -29,12 +31,13 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   fill: #41414A;
 }
 
-.c1 {
-  width: 312px;
+.c1:focus-within legend {
+  max-width: 1000px;
+  font-weight: 700;
 }
 
-.c1:hover,
-.c1:focus-within {
+.c1:hover fieldset,
+.c1:focus-within fieldset {
   border-color: #41414A;
 }
 
@@ -63,10 +66,8 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
 }
 
 .c2:focus + label {
-  top: -1px;
-  left: 14px;
-  padding-right: 4px;
-  padding-left: 4px;
+  top: 0;
+  left: 16px;
   font-size: 12px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -81,7 +82,6 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
 
 .c2:disabled {
   cursor: not-allowed;
-  border-color: #D3D3E2;
   color: #D3D3E2;
 }
 
@@ -106,6 +106,48 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   display: none;
 }
 
+.c2:invalid {
+  box-shadow: none;
+}
+
+.c4 {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  padding: 0;
+  padding-left: 0px;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  pointer-events: none;
+  border-radius: 8px;
+  border: 1px solid #D3D3E2;
+  padding-left: 12px;
+}
+
+.c5 {
+  position: relative;
+  padding: 0;
+  max-width: 0.01px;
+  width: auto;
+  height: 14px;
+  font-weight: normal;
+  -webkit-transition: max-width ease 50ms;
+  transition: max-width ease 50ms;
+  visibility: hidden;
+  max-width: 0.01px;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+}
+
+.c6 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 .c3 {
   position: absolute;
   -webkit-letter-spacing: normal;
@@ -119,7 +161,6 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   user-select: none;
   top: 24px;
   left: 16px;
-  background-color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
@@ -142,6 +183,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   >
     <div
       class="c1"
+      label="Label"
     >
       <input
         class="c2"
@@ -153,6 +195,19 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
       >
         Label
       </label>
+      <fieldset
+        class="c4"
+      >
+        <legend
+          class="c5"
+        >
+          <span
+            class="c6"
+          >
+            Label
+          </span>
+        </legend>
+      </fieldset>
     </div>
   </div>
 </div>

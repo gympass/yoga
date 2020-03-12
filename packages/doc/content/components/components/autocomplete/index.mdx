@@ -1,0 +1,50 @@
+---
+title: 'AutoComplete'
+metaTitle: 'AutoComplete'
+metaDescription: 'AutoComplete Component'
+---
+
+import { Link } from 'gatsby';
+
+# AutoComplete
+
+## Reference
+
+It accepts unlimited number of suggstions, but it filters and only display the six
+most matched options.
+
+You can use `onSelect` prop to handle when user select a suggested option.
+
+It inherit all the <Link to="/components/input/default">Input</Link> props.
+
+## Usage
+
+```javascript state
+render(() => {
+  const [value, setValue] = useState('');
+
+  return (
+    <AutoComplete
+      value={value}
+      onChange={value => setValue(value)}
+      onSelect={selected => setValue(selected)}
+      onClean={cleaned => setValue(cleaned)}
+      options={[
+        'Madrid',
+        'Milan',
+        'São Paulo',
+        'New York',
+        'Paris',
+        'Buenos Aires',
+        'Amsterdam',
+        'Los Angeles',
+        'Hollywood',
+      ]}
+    />
+  );
+});
+```
+
+### Props
+
+<PropsTable component="AutoComplete" platform="web" />
