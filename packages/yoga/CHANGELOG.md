@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.17.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.16.1...@gympass/yoga@1.17.0) (2020-03-12)
+
+### Bug Fixes
+
+- **checkbox:** hover and focus with the same shadow ([6563d01](https://github.com/Gympass/yoga/commit/6563d01f2674b63486ad5f8272eb56371078c144))
+- **checkbox:** update shadow size on web ([ea78012](https://github.com/Gympass/yoga/commit/ea780122abbc72da629a78d735c76f2ce63235d3))
+- **checkbox:** update shadow values ([cf2efbf](https://github.com/Gympass/yoga/commit/cf2efbf8e14d537a7e6aa9c8f7687d9be07d3400))
+
+### Features
+
+- **checkbox:** add variant prop to Checkbox component (native) ([cdcb1b7](https://github.com/Gympass/yoga/commit/cdcb1b7322f7857901a6210105fabf8ee01963e1))
+- **checkbox:** add variant prop to Checkbox component (web) ([5abf243](https://github.com/Gympass/yoga/commit/5abf243bc5caa280fb089cd532e44e79809c7481))
+
 ## [1.16.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@1.16.0...@gympass/yoga@1.16.1) (2020-03-10)
 
 **Note:** Version bump only for package @gympass/yoga
