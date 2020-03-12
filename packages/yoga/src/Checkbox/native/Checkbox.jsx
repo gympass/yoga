@@ -108,7 +108,7 @@ const Shadow = styled.View(
       width: ${size}px;
       height: ${size}px;
 
-      background-color: ${hexToRgb(color[1], 0.75)};          
+      background-color: ${hexToRgb(color[0], 0.75)};          
       border-radius: ${checkbox.hover.border.radius}px;
     `;
   },
