@@ -141,7 +141,7 @@ const CheckboxStyled = styled.div`
 
       &:focus-within, &:hover {
         ${Shadow} {
-          background-color: ${hexToRgb(color[1], 0.25)};
+          background-color: ${hexToRgb(color[1], 0.5)};
           
           box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[1], 0.5)};
         }
