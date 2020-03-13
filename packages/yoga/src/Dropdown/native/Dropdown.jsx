@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import styled, { withTheme } from 'styled-components';
-import { arrayOf, func, shape, string, bool } from 'prop-types';
+import {
+  arrayOf,
+  func,
+  shape,
+  number,
+  string,
+  bool,
+  oneOfType,
+} from 'prop-types';
 import { TouchableWithoutFeedback } from 'react-native';
 import { ArrowDown } from '@gympass/yoga-icons';
 
@@ -136,7 +144,7 @@ Dropdown.propTypes = {
   options: arrayOf(
     shape({
       label: string,
-      value: string,
+      value: oneOfType([string, number]),
       selected: bool,
     }),
   ).isRequired,
