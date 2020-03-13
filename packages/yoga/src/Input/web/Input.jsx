@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
-import { func, string, bool, number, shape } from 'prop-types';
+import { func, string, bool, number, shape, oneOfType } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
 import Wrapper from './Wrapper';
@@ -126,7 +126,7 @@ Input.propTypes = {
   maxLength: number,
   readOnly: bool,
   style: shape({}),
-  value: string,
+  value: oneOfType([string, number]),
   onChange: func,
   /** callback invoked when close icon is clicked, it returns a empty string to update your state */
   onClean: func,
