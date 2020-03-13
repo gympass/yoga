@@ -1,7 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import Downshift from 'downshift';
-import { arrayOf, func, shape, string, bool } from 'prop-types';
+import {
+  arrayOf,
+  func,
+  shape,
+  string,
+  number,
+  bool,
+  oneOfType,
+} from 'prop-types';
 import { ArrowDown } from '@gympass/yoga-icons';
 
 const Wrapper = styled.div`
@@ -323,7 +331,7 @@ Dropdown.propTypes = {
   options: arrayOf(
     shape({
       label: string,
-      value: string,
+      value: oneOfType([string, number]),
       selected: bool,
     }),
   ).isRequired,
