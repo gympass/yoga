@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.0.1...@gympass/yoga@2.0.2) (2020-03-13)
+
+### Bug Fixes
+
+- **dropdown:** fix value propType for native Dropdown ([c3eb03f](https://github.com/Gympass/yoga/commit/c3eb03feecc348c469518354523e53374710e765))
+- **dropdown:** fix value propType for web Dropdown ([e8c7591](https://github.com/Gympass/yoga/commit/e8c7591a5c5c1dc00c745ea0970309007d40f8e9))
+- **input:** fix value propType for native Input ([b1a52ae](https://github.com/Gympass/yoga/commit/b1a52aec79cd4b3e5d0ecaebeaa543dcd05e5f34))
+- **input:** fix value propType for web Input ([48e9d47](https://github.com/Gympass/yoga/commit/48e9d479c28ba2689b88d0f52e32aa9b53b2e02b))
+
 ## [2.0.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.0.0...@gympass/yoga@2.0.1) (2020-03-12)
 
 ### Bug Fixes
