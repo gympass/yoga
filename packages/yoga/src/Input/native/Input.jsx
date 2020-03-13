@@ -360,7 +360,7 @@ Input.propTypes = {
   maxLength: number,
   readOnly: bool,
   textContentType: string,
-  value: string,
+  value: oneOfType([string, number]),
   style: oneOfType([shape({}), arrayOf(shape({}))]),
   onBlur: func,
   onChangeText: func,
