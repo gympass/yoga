@@ -71,6 +71,7 @@ const List = styled.ul`
 
     width: ${full ? '100%' : `${autocomplete.width}px`};
     max-height: ${autocomplete.height * 6}px;
+    box-sizing: border-box;
 
     background-color: ${autocomplete.field.backgroundColor};
 
@@ -87,6 +88,8 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
+  box-sizing: border-box;
+
   list-style: none;
 
   cursor: pointer;
