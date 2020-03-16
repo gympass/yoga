@@ -2,6 +2,7 @@
 
 exports[`<List /> Snapshots Without props should match snapshot with a default list 1`] = `
 .c1 {
+  box-sizing: border-box;
   padding: 20px 24px 20px 24px;
 }
 
@@ -44,6 +45,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 
 exports[`<List /> Snapshots Without props should match snapshot with a default list and multiple items 1`] = `
 .c1 {
+  box-sizing: border-box;
   padding: 20px 24px 20px 24px;
 }
 
@@ -96,6 +98,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
   display: inline-block;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 20px 24px 20px 24px;
@@ -142,6 +145,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 
 exports[`<List /> Snapshots Without props should match snapshot with a default list, multiple items and no dividers 1`] = `
 .c1 {
+  box-sizing: border-box;
   padding: 20px 24px 20px 24px;
 }
 
@@ -187,6 +191,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 
 exports[`<List /> Snapshots Without props should match snapshot with a horizontal list 1`] = `
 .c1 {
+  box-sizing: border-box;
   padding: 20px 24px 20px 24px;
 }
 
@@ -231,6 +236,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
 
 exports[`<List /> Snapshots Without props should match snapshot with a horizontal list and multiple items 1`] = `
 .c1 {
+  box-sizing: border-box;
   padding: 20px 24px 20px 24px;
 }
 
@@ -280,6 +286,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
 
 exports[`<List /> Snapshots Without props should match snapshot with a horizontal list, multiple items and no dividers 1`] = `
 .c1 {
+  box-sizing: border-box;
   padding: 20px 24px 20px 24px;
 }
 
