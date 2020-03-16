@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledItem = styled.a`
+const StyledLinkItem = styled.a`
   ${({
     theme: {
       yoga: {
@@ -23,12 +23,12 @@ const StyledItem = styled.a`
   text-decoration: none;
 `;
 
-const ListItem = ({ ...rest }) => (
+const Linkitem = ({ ...rest }) => (
   <li>
-    <StyledItem {...rest} />
+    <StyledLinkItem {...rest} />
   </li>
 );
 
-ListItem.displayName = 'List.Item';
+Linkitem.displayName = 'List.LinkItem';
 
-export default ListItem;
+export default Linkitem;
