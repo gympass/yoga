@@ -2,6 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledLinkItem = styled.a`
+  display: inline-block;
+
+  width: 100%;
+  height: 100%;
+
+  text-decoration: none;
+
   ${({
     theme: {
       yoga: {
@@ -15,13 +22,6 @@ const StyledLinkItem = styled.a`
       ${list.listItem.padding.bottom}px
       ${list.listItem.padding.left}px;
   `}
-
-  display: inline-block;
-
-  width: 100%;
-  height: 100%;
-
-  text-decoration: none;
 `;
 
 const Linkitem = ({ ...rest }) => (
