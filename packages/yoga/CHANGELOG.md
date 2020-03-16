@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.1.0...@gympass/yoga@2.1.1) (2020-03-16)
+
+### Bug Fixes
+
+- **List:** add 'box-sizing border-box' to items ([bbb8c9b](https://github.com/Gympass/yoga/commit/bbb8c9be2fa1b962d3f221dca1121765175c78d7))
+
 # [2.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.0.3...@gympass/yoga@2.1.0) (2020-03-16)
 
 ### Features
