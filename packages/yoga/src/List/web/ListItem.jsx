@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledItem = styled.li`
+  box-sizing: border-box;
+
   ${({
     theme: {
       yoga: {
@@ -9,7 +11,11 @@ const StyledItem = styled.li`
       },
     },
   }) => `
-    padding: ${list.listItem.padding.top}px ${list.listItem.padding.right}px ${list.listItem.padding.bottom}px ${list.listItem.padding.left}px;
+    padding:
+      ${list.listItem.padding.top}px
+      ${list.listItem.padding.right}px
+      ${list.listItem.padding.bottom}px
+      ${list.listItem.padding.left}px;
   `}
 `;
 
