@@ -44,6 +44,7 @@ const Selector = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 
     width: 100%;
     padding: ${dropdown.selector.padding.top}px 
@@ -57,6 +58,13 @@ const Selector = styled.div`
     border-style: solid;
     border-color: ${dropdown.selector.border.color};
 
+    &:hover{
+      ${
+        !disabled
+          ? `border-color: ${dropdown.hover.selector.border.color};`
+          : ''
+      };
+    }
     ${
       disabled
         ? `border-color: ${dropdown.disabled.selector.border.color};`
@@ -69,13 +77,8 @@ const Selector = styled.div`
     };
     ${
       isOpen && !disabled
-        ? `border-color: ${dropdown.hover.selector.border.color}`
+        ? `border-color: ${dropdown.hover.selector.border.color};`
         : ''
-    }
-    &:hover{
-      ${
-        !disabled ? `border-color: ${dropdown.hover.selector.border.color}` : ''
-      };
     }
   `}
 `;
@@ -150,6 +153,7 @@ const OptionsList = styled.ul`
     position: absolute;
     top: 46px;
     z-index: 1;
+    box-sizing: border-box;
 
     width: 100%;
     max-height: ${dropdown.option.height * 3.5}px;

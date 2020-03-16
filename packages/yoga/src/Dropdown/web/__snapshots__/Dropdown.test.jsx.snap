@@ -22,6 +22,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   width: 100%;
   padding: 16px  16px 16px 16px;
   background-color: #FFFFFF;
@@ -161,6 +162,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   width: 100%;
   padding: 16px  16px 16px 16px;
   background-color: #FFFFFF;
@@ -305,6 +307,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   width: 100%;
   padding: 16px  16px 16px 16px;
   background-color: #FFFFFF;
@@ -444,6 +447,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  box-sizing: border-box;
   width: 100%;
   padding: 16px  16px 16px 16px;
   background-color: #FFFFFF;
