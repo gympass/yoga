@@ -2,6 +2,8 @@
 
 Gympass `<List />` component implements all our design guidelines, be sure to wrap your items with `<List.Item/>` that uses default spacing, border and color pallete tokens.
 
+If you need to use an anchor, `<List.LinkItem/>` is also available.
+
 ### Usage
 
 ```javascript state
@@ -43,6 +45,13 @@ render(() => {
           />
         </SwitchLine>
       </List.Item>
+
+      <List.LinkItem
+        href="https://www.gympass.com/"
+        target="_blank"
+      >
+        <Text>Link</Text>
+      </List.LinkItem>
     </List>
   );
 });
