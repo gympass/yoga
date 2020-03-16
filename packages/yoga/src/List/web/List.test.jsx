@@ -98,6 +98,19 @@ describe('<List />', () => {
         );
         expect(container).toMatchSnapshot();
       });
+
+      it('should match snapshot with a default list and using a link item', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <List>
+              <List.LinkItem>
+                <div>List test</div>
+              </List.LinkItem>
+            </List>
+          </ThemeProvider>,
+        );
+        expect(container).toMatchSnapshot();
+      });
     });
   });
 });
