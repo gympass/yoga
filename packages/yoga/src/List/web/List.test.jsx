@@ -99,7 +99,7 @@ describe('<List />', () => {
         expect(container).toMatchSnapshot();
       });
 
-      it('should match snapshot with a default list and using an link item', () => {
+      it('should match snapshot with a default list and using a link item', () => {
         const { container } = render(
           <ThemeProvider>
             <List>

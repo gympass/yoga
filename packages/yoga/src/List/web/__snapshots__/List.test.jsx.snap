@@ -91,7 +91,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 </div>
 `;
 
-exports[`<List /> Snapshots Without props should match snapshot with a default list and using an link item 1`] = `
+exports[`<List /> Snapshots Without props should match snapshot with a default list and using a link item 1`] = `
 .c1 {
   padding: 20px 24px 20px 24px;
   display: inline-block;

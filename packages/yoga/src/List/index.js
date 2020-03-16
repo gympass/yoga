@@ -1,6 +1,6 @@
-import { List, ListItem, ListLinkItem } from './web';
+import { List, ListItem, LinkItem } from './web';
 
 List.Item = ListItem;
-List.LinkItem = ListLinkItem;
+List.LinkItem = LinkItem;
 
 export default List;
