@@ -67,6 +67,7 @@ const List = styled.ul`
       },
     },
   }) => `
+    box-sizing: border-box;
     top: ${autocomplete.height}px;
 
     width: ${full ? '100%' : `${autocomplete.width}px`};
@@ -87,6 +88,8 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
+  box-sizing: border-box;
+
   list-style: none;
 
   cursor: pointer;
