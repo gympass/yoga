@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.0.3...@gympass/yoga@2.1.0) (2020-03-16)
+
+### Features
+
+- **List.LinkItem:** create the component ([7b65392](https://github.com/Gympass/yoga/commit/7b653929e2be544e8f79068cd6ea8bb5e798bdee))
+
 ## [2.0.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.0.2...@gympass/yoga@2.0.3) (2020-03-16)
 
 ### Bug Fixes
