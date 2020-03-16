@@ -690,10 +690,10 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   margin: 0;
   padding: 0;
   z-index: 999;
-  box-sizing: border-box;
   top: 52px;
   width: 100%;
   max-height: 312px;
+  box-sizing: border-box;
   background-color: #FFFFFF;
   border-width: 1px;
   border-style: solid;
@@ -1038,10 +1038,10 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   margin: 0;
   padding: 0;
   z-index: 999;
-  box-sizing: border-box;
   top: 52px;
   width: 320px;
   max-height: 312px;
+  box-sizing: border-box;
   background-color: #FFFFFF;
   border-width: 1px;
   border-style: solid;
