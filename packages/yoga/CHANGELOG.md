@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.0.2...@gympass/yoga@2.0.3) (2020-03-16)
+
+### Bug Fixes
+
+- **dropdown:** adjusting dropdown box-sizing ([8c43d56](https://github.com/Gympass/yoga/commit/8c43d56b53bf91d820ff7032d39d4f4257428685))
+
 ## [2.0.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.0.1...@gympass/yoga@2.0.2) (2020-03-13)
 
 ### Bug Fixes
