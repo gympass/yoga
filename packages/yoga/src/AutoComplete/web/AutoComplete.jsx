@@ -67,11 +67,11 @@ const List = styled.ul`
       },
     },
   }) => `
-    box-sizing: border-box;
     top: ${autocomplete.height}px;
 
     width: ${full ? '100%' : `${autocomplete.width}px`};
     max-height: ${autocomplete.height * 6}px;
+    box-sizing: border-box;
 
     background-color: ${autocomplete.field.backgroundColor};
 
