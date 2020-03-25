@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.1.1...@gympass/yoga@2.1.2) (2020-03-25)
+
+### Bug Fixes
+
+- **theme-provider:** removing Font Loader from Global Style ([5779a53](https://github.com/Gympass/yoga/commit/5779a53593f9fd9b1bec9aeaa2607f5b747a3af7))
+
 ## [2.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.1.0...@gympass/yoga@2.1.1) (2020-03-16)
 
 ### Bug Fixes
