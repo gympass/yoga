@@ -1,26 +1,17 @@
-import React from 'react';
-import { createGlobalStyle, withTheme } from 'styled-components';
-import FontLoader from './FontLoader';
+import { createGlobalStyle } from 'styled-components';
 
-const Global = createGlobalStyle`
-  ${({ fontFamily }) => `
+const GlobalStyle = createGlobalStyle`
+  ${({
+    theme: {
+      yoga: {
+        baseFont: { family },
+      },
+    },
+  }) => `
     body {
-      font-family: "${fontFamily}";
+      font-family: "${family}";
     }
   `}
 `;
 
-const GlobalStyle = ({
-  theme: {
-    yoga: {
-      baseFont: { family },
-    },
-  },
-}) => (
-  <>
-    <FontLoader />
-    <Global fontFamily={family} />
-  </>
-);
-
-export default withTheme(GlobalStyle);
+export default GlobalStyle;
