@@ -1,11 +1,11 @@
 @gympass/yoga:
-  - package/yoga/*
+  - packages/yoga/*
 
 @gympass/yoga-doc:
-  - package/doc/*
+  - packages/doc/*
 
 @gympass/yoga-icons:
-  - package/icons/*
+  - packages/icons/*
 
 @gympass/yoga-tokens:
-  - package/tokens/*
+  - packages/tokens/*
