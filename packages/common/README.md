@@ -1,11 +1,9 @@
 # `@gympass/yoga-common`
 
-> TODO: description
+This package contains some helpers used in all Yoga packages:
 
-## Usage
-
-```
-const common = require('@gympass/yoga-common');
-
-// TODO: DEMONSTRATE API
-```
+- @gympass/yoga
+- @gympass/yoga-doc
+- @gympass/yoga-icons
+- @gympass/yoga-labnative
+- @gympass/yoga-tokens
