@@ -1,11 +1,15 @@
+# Add '@gympass/yoga' label to any change within the 'yoga' package
 @gympass/yoga:
   - packages/yoga/*
 
+# Add '@gympass/yoga-doc' label to any change within the 'yoga-doc' package
 @gympass/yoga-doc:
   - packages/doc/*
 
+# Add '@gympass/yoga-icons' label to any change within the 'yoga-icons' package
 @gympass/yoga-icons:
   - packages/icons/*
 
+# Add '@gympass/yoga-tokens' label to any change within the 'yoga-tokens' package
 @gympass/yoga-tokens:
   - packages/tokens/*
