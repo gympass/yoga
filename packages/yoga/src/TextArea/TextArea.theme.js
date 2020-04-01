@@ -1,7 +1,5 @@
 import Input from '../Input/Input.theme';
 
-const TextArea = tokens => ({
-  ...Input(tokens),
-});
+const TextArea = Input;
 
 export default TextArea;
