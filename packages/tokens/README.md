@@ -1,11 +1,3 @@
 # `@gympass/yoga-tokens`
 
-> TODO: description
-
-## Usage
-
-```
-const tokens = require('@gympass/yoga-tokens');
-
-// TODO: DEMONSTRATE API
-```
+You can see it as documented at [Yoga website](https://gympass.github.io/yoga/guidelines/tokens/spacing).
