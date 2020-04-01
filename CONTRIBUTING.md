@@ -64,7 +64,7 @@ packages
 ### Theme
 
 Currently we have 3 predefined themes `Corporate`, `EndUser` and `Gyms`, all
-off them follows the `BaseTheme` object.
+of them follows the `BaseTheme` object.
 
 All components must follow the `theme` property to style it. Every component has
 his own file, you can find it at `/packages/yoga/src/Theme/themes/components`.
