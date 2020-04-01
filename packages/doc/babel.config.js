@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['@babel/plugin-proposal-optional-chaining', 'import-glob'],
+  plugins: ['import-glob'],
   presets: [
     [
       'babel-preset-gatsby',
