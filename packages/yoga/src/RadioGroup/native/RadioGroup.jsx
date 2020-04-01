@@ -18,15 +18,15 @@ const GrayLine = styled.View(
   ({
     theme: {
       yoga: {
-        components: { radioGroup },
+        components: { radiogroup },
       },
     },
   }) => `
     position: absolute;
     height: 100%;
-    border-radius: ${radioGroup.button.border.radius}px;
-    border-width: ${radioGroup.button.border.width}px;
-    border-color: ${radioGroup.button.border.color};
+    border-radius: ${radiogroup.button.border.radius}px;
+    border-width: ${radiogroup.button.border.width}px;
+    border-color: ${radiogroup.button.border.color};
   `,
 );
 

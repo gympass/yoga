@@ -1,7 +1,7 @@
-import input from './input';
+import Input from '../Input/Input.theme';
 
-const autocomplete = tokens => ({
-  ...input(tokens),
+const AutoComplete = tokens => ({
+  ...Input(tokens),
   field: {
     backgroundColor: tokens.colors.white,
   },
@@ -27,4 +27,4 @@ const autocomplete = tokens => ({
   },
 });
 
-export default autocomplete;
+export default AutoComplete;

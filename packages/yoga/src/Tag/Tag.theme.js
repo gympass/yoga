@@ -1,4 +1,4 @@
-const tag = ({ spacing, fontSizes, fontWeights, radii }) => ({
+const Tag = ({ spacing, fontSizes, fontWeights, radii }) => ({
   icon: {
     margin: {
       right: spacing.xxsmall,
@@ -19,4 +19,4 @@ const tag = ({ spacing, fontSizes, fontWeights, radii }) => ({
   },
 });
 
-export default tag;
+export default Tag;
