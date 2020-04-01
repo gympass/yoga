@@ -55,6 +55,7 @@ packages
         │   │   ├─index.js
         │   │   ├─NewComponent.jsx
         │   │   └─NewComponent.test.jsx
+        │   ├─NewComponent.theme.js
         │   ├─index.js
         │   └─index.native.js
         ├─index.js
@@ -66,8 +67,7 @@ packages
 Currently we have 3 predefined themes `Corporate`, `EndUser` and `Gyms`, all
 of them follows the `BaseTheme` object.
 
-All components must follow the `theme` property to style it. Every component has
-his own file, you can find it at `/packages/yoga/src/Theme/themes/components`.
+Every component has its own `theme` file. You can find it in its own folder.
 
 When building a new component, make sure to add values like paddings, colors,
 margins, to the component theme file.
