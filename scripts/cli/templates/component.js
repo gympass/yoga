@@ -6,7 +6,15 @@ export default ${name};
 const component = (name, type = 'web') => `import React from 'react';
 import styled from 'styled-components';
 
-const Styled${name} = styled.${type === 'web' ? 'div' : 'Text'}\`\`;
+const Styled${name} = styled.${type === 'web' ? 'div' : 'Text'}\`
+  \${({
+    theme: {
+      yoga: {
+        components: { ${name.toLowerCase()} },
+      },
+    },
+  }) => \`\`}
+\`;
 
 const ${name} = props => <Styled${name} {...props} />;
 

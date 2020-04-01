@@ -7,6 +7,7 @@ const {
   createNativeTest,
   createWebDoc,
   createNativeDoc,
+  createComponentTheme,
 } = require('./creators');
 
 const cli = ({ name, web, native }) => {
@@ -16,6 +17,7 @@ const cli = ({ name, web, native }) => {
     createWebComponent(name, paths);
     createWebTest(name, paths);
     createWebDoc(name, paths, 'web');
+    createComponentTheme(name, paths);
     editIndexFiles(name, paths, 'web');
   }
 
@@ -23,6 +25,7 @@ const cli = ({ name, web, native }) => {
     createNativeComponent(name, paths);
     createNativeTest(name, paths);
     createNativeDoc(name, paths, 'native');
+    createComponentTheme(name, paths);
     editIndexFiles(name, paths, 'native');
   }
 
@@ -33,6 +36,7 @@ const cli = ({ name, web, native }) => {
     createNativeComponent(name, paths);
     createNativeTest(name, paths);
     createNativeDoc(name, paths);
+    createComponentTheme(name, paths);
     editIndexFiles(name, paths);
   }
 };
