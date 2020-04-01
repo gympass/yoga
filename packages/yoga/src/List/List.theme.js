@@ -1,4 +1,4 @@
-const list = ({ spacing, borders, colors }) => ({
+const List = ({ spacing, borders, colors }) => ({
   listItem: {
     padding: {
       top: spacing.large,
@@ -13,4 +13,4 @@ const list = ({ spacing, borders, colors }) => ({
   },
 });
 
-export default list;
+export default List;

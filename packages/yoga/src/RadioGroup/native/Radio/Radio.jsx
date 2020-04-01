@@ -9,7 +9,7 @@ const RadioMark = styled.View(
   ({
     theme: {
       yoga: {
-        components: { radioGroup },
+        components: { radiogroup },
       },
     },
     checked,
@@ -18,18 +18,18 @@ const RadioMark = styled.View(
   justify-content: center;
   align-items: center;
   
-  height: ${radioGroup.radio.size}px;
-  width: ${radioGroup.radio.size}px;
+  height: ${radiogroup.radio.size}px;
+  width: ${radiogroup.radio.size}px;
 
-  border-width: ${radioGroup.radio.size * 0.1}px;
+  border-width: ${radiogroup.radio.size * 0.1}px;
   border-style: solid;
-  border-color: ${radioGroup.radio.backgroundColor};
-  border-radius: ${radioGroup.radio.border.radius}px;
+  border-color: ${radiogroup.radio.backgroundColor};
+  border-radius: ${radiogroup.radio.border.radius}px;
 
   ${
     checked
       ? `
-          border-color: ${radioGroup.checked.backgroundColor};
+          border-color: ${radiogroup.checked.backgroundColor};
         `
       : ``
   }
@@ -37,7 +37,7 @@ const RadioMark = styled.View(
   ${
     disabled
       ? `
-          border-color: ${radioGroup.disabled.backgroundColor};
+          border-color: ${radiogroup.disabled.backgroundColor};
         `
       : ``
   }
@@ -48,22 +48,22 @@ const Dot = styled.View(
   ({
     theme: {
       yoga: {
-        components: { radioGroup },
+        components: { radiogroup },
       },
     },
     checked,
     disabled,
   }) => `
-  height: ${radioGroup.radio.size * 0.5}px;
-  width: ${radioGroup.radio.size * 0.5}px;
+  height: ${radiogroup.radio.size * 0.5}px;
+  width: ${radiogroup.radio.size * 0.5}px;
 
-  background-color: ${radioGroup.radio.backgroundColor};
-  border-radius: ${radioGroup.radio.border.radius}px;
+  background-color: ${radiogroup.radio.backgroundColor};
+  border-radius: ${radiogroup.radio.border.radius}px;
 
   ${
     checked
       ? `
-          background-color: ${radioGroup.checked.backgroundColor};
+          background-color: ${radiogroup.checked.backgroundColor};
         `
       : ``
   }
@@ -71,7 +71,7 @@ const Dot = styled.View(
   ${
     disabled
       ? `
-          background-color: ${radioGroup.disabled.backgroundColor};
+          background-color: ${radiogroup.disabled.backgroundColor};
         `
       : ``
   }
@@ -82,18 +82,18 @@ const Shadow = styled.View(
   ({
     theme: {
       yoga: {
-        components: { radioGroup },
+        components: { radiogroup },
       },
     },
   }) => `
   position: absolute;
-  height: ${radioGroup.radio.size + radioGroup.radio.size * 0.4 * 2}px;
-  width: ${radioGroup.radio.size + radioGroup.radio.size * 0.4 * 2}px;
+  height: ${radiogroup.radio.size + radiogroup.radio.size * 0.4 * 2}px;
+  width: ${radiogroup.radio.size + radiogroup.radio.size * 0.4 * 2}px;
 
-  border-width: ${radioGroup.radio.size * 0.4}px;
+  border-width: ${radiogroup.radio.size * 0.4}px;
   border-style: solid;
-  border-color: ${radioGroup.checked.hover.backgroundColor};
-  border-radius: ${radioGroup.radio.border.radius}px;
+  border-color: ${radiogroup.checked.hover.backgroundColor};
+  border-radius: ${radiogroup.radio.border.radius}px;
 
   opacity: 0.75;
 `,

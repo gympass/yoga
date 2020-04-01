@@ -1,57 +1,25 @@
 import tokens from '@gympass/yoga-tokens';
-
-import {
-  autocomplete,
-  textarea,
-  input,
-  progress,
-  stepper,
-  slider,
-  list,
-  button,
-  checkboxswitch,
-  radiogroup,
-  card,
-  checkbox,
-  grid,
-  text,
-  rating,
-  tag,
-  dropdown,
-} from './components';
-
-const {
-  breakpoints,
-  spacing,
-  radii,
-  fontSizes,
-  fontWeights,
-  transition,
-  elevations,
-  colors: tokenColors,
-  borders,
-  fonts,
-  lineHeights,
-} = tokens;
+import * as componentThemes from '../../**/*.theme.js';
 
 const BaseTheme = ({ primary, secondary, tertiary }) => {
-  const baseFont = fonts.openSans;
-  const baseFontSize = fontSizes.medium;
+  const baseFont = tokens.fonts.openSans;
+  const baseFontSize = tokens.fontSizes.medium;
   const colors = {
     primary,
     secondary,
     tertiary,
-    gray: tokenColors.gray,
-    white: tokenColors.white,
-    dark: tokenColors.dark,
-    positive: tokenColors.positive,
-    negative: tokenColors.negative,
-    informative: tokenColors.informative,
-    warning: tokenColors.warning,
+    gray: tokens.colors.gray,
+    white: tokens.colors.white,
+    dark: tokens.colors.dark,
+    positive: tokens.colors.positive,
+    negative: tokens.colors.negative,
+    informative: tokens.colors.informative,
+    warning: tokens.colors.warning,
     disabled: {
-      background: tokenColors.gray[4],
-      content: tokenColors.gray[7],
+      background: tokens.colors.gray[4],
+      content: tokens.colors.gray[7],
     },
+    rating: tokens.colors.milan[3],
   };
 
   [
@@ -67,80 +35,23 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     colors.gray.darker,
   ] = colors.gray;
 
-  const components = {
-    stepper: stepper({ colors, spacing, fontWeights, radii }),
-    slider: slider({ colors, radii, elevations, spacing, fontWeights }),
-    list: list({ spacing, borders, colors }),
-    button: button({ spacing, fontSizes, borders, radii, colors, fontWeights }),
-    checkboxswitch: checkboxswitch({
+  const components = {};
+  Object.entries(componentThemes).forEach(([names, themed]) => {
+    const [, name] = names.split('$');
+    components[name.toLowerCase()] = themed({
+      ...tokens,
       colors,
-      radii,
-      transition,
-      spacing,
-      elevations,
-    }),
-    radioGroup: radiogroup({
-      radii,
-      colors,
-      fontWeights,
-      spacing,
-      borders,
-      fontSizes,
-    }),
-    card: card({ colors, spacing, radii, elevations, borders, fontWeights }),
-    checkbox: checkbox({ spacing, colors, borders, radii, fontSizes }),
-    grid: grid(),
-    text: text({ fontSizes, lineHeights, fontWeights }),
-    rating: rating({ spacing, tokenColors }),
-    tag: tag({ spacing, fontSizes, fontWeights, radii }),
-    progress: progress({ spacing, colors, radii, fontSizes }),
-    input: input({
-      borders,
-      spacing,
-      colors,
-      radii,
-      fontSizes,
-      fontWeights,
-    }),
-    textarea: textarea({
-      borders,
-      spacing,
-      colors,
-      radii,
-      fontSizes,
-      fontWeights,
-    }),
-    autocomplete: autocomplete({
-      borders,
-      spacing,
-      colors,
-      radii,
-      fontSizes,
-      fontWeights,
-      lineHeights,
-    }),
-    dropdown: dropdown({
-      colors,
-      fontSizes,
-      fontWeights,
-      lineHeights,
-      radii,
-      spacing,
-      borders,
-    }),
-  };
+      baseFont,
+      baseFontSize,
+    });
+  });
 
   return {
+    ...tokens,
     components,
+    colors,
     baseFont,
     baseFontSize,
-    fontWeights,
-    colors,
-    spacing,
-    fonts,
-    breakpoints,
-    transition,
-    radii,
   };
 };
 

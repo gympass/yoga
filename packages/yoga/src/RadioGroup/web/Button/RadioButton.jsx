@@ -20,38 +20,38 @@ const Button = styled.label`
   ${({
     theme: {
       yoga: {
-        components: { radioGroup },
+        components: { radiogroup },
       },
     },
     small,
     checked,
   }) => `
     box-sizing: border-box;
-    background-color: ${radioGroup.button.backgroundColor};
-    border-radius: ${radioGroup.button.border.radius}px;
+    background-color: ${radiogroup.button.backgroundColor};
+    border-radius: ${radiogroup.button.border.radius}px;
 
     ${
       checked
         ? `
-            background-color: ${radioGroup.checked.backgroundColor};
-            box-shadow: 0 0 0  ${radioGroup.button.border.width}px ${radioGroup.checked.backgroundColor};
-            color: ${radioGroup.checked.font.color};
-            font-weight: ${radioGroup.checked.font.weight};
+            background-color: ${radiogroup.checked.backgroundColor};
+            box-shadow: 0 0 0  ${radiogroup.button.border.width}px ${radiogroup.checked.backgroundColor};
+            color: ${radiogroup.checked.font.color};
+            font-weight: ${radiogroup.checked.font.weight};
             z-index: 1;
           `
         : `
           &:hover, &:focus {
-            background-color: ${radioGroup.hover.backgroundColor};
+            background-color: ${radiogroup.hover.backgroundColor};
           }
         `
     }
 
-    font-size: ${radioGroup.font.size}px;
+    font-size: ${radiogroup.font.size}px;
     height: ${
-      small ? radioGroup.button.height.small : radioGroup.button.height.normal
+      small ? radiogroup.button.height.small : radiogroup.button.height.normal
     }px;
-    padding-left: ${radioGroup.button.padding.left}px;
-    padding-right: ${radioGroup.button.padding.right}px;
+    padding-left: ${radiogroup.button.padding.left}px;
+    padding-right: ${radiogroup.button.padding.right}px;
   `}
 `;
 
@@ -61,36 +61,36 @@ const ButtonWrapper = styled.div`
   ${({
     theme: {
       yoga: {
-        components: { radioGroup },
+        components: { radiogroup },
       },
     },
   }) => `
-    border-color: ${radioGroup.button.border.color};
-    border-top-width: ${radioGroup.button.border.width}px;
-    border-bottom-width: ${radioGroup.button.border.width}px;
+    border-color: ${radiogroup.button.border.color};
+    border-top-width: ${radiogroup.button.border.width}px;
+    border-bottom-width: ${radiogroup.button.border.width}px;
     
     border-left: none;
     border-right: none;
     
     &:first-child {
       border-right-width: 0;
-      border-left-width: ${radioGroup.button.border.width}px;
+      border-left-width: ${radiogroup.button.border.width}px;
       border-left-style: solid;
-      border-left-color: ${radioGroup.button.border.color};
+      border-left-color: ${radiogroup.button.border.color};
 
-      border-top-left-radius: ${radioGroup.button.border.radius}px;
-      border-bottom-left-radius: ${radioGroup.button.border.radius}px;
+      border-top-left-radius: ${radiogroup.button.border.radius}px;
+      border-bottom-left-radius: ${radiogroup.button.border.radius}px;
     }
   
     &:last-child {
       border-left-width: 0;
 
-      border-right-width: ${radioGroup.button.border.width}px;
+      border-right-width: ${radiogroup.button.border.width}px;
       border-right-style: solid;
-      border-right-color: ${radioGroup.button.border.color};
+      border-right-color: ${radiogroup.button.border.color};
 
-      border-top-right-radius: ${radioGroup.button.border.radius}px;
-      border-bottom-right-radius: ${radioGroup.button.border.radius}px;
+      border-top-right-radius: ${radiogroup.button.border.radius}px;
+      border-bottom-right-radius: ${radiogroup.button.border.radius}px;
     }
   `}
 `;

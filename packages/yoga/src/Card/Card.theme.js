@@ -1,4 +1,4 @@
-const card = ({
+const Card = ({
   colors,
   spacing,
   radii,
@@ -99,4 +99,4 @@ const card = ({
   },
 });
 
-export default card;
+export default Card;

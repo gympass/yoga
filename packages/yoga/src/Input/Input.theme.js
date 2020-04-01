@@ -1,4 +1,4 @@
-const input = ({
+const Input = ({
   colors,
   fontSizes,
   fontWeights,
@@ -61,4 +61,4 @@ const input = ({
   },
 });
 
-export default input;
+export default Input;

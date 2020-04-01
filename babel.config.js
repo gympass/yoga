@@ -22,6 +22,7 @@ module.exports = {
       ],
     },
     test: {
+      plugins: ['import-glob'],
       presets: [
         '@babel/preset-env',
         '@babel/preset-react',

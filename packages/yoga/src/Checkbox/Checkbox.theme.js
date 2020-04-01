@@ -1,4 +1,4 @@
-const checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
+const Checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
   size: 24,
   margin: {
     right: spacing.xsmall,
@@ -43,4 +43,4 @@ const checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
   },
 });
 
-export default checkbox;
+export default Checkbox;

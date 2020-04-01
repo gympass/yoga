@@ -9,7 +9,7 @@ const RadioMark = styled.View(
   ({
     theme: {
       yoga: {
-        components: { radioGroup },
+        components: { radiogroup },
       },
     },
     small,
@@ -19,20 +19,20 @@ const RadioMark = styled.View(
   justify-content: center;
 
   height: ${
-    small ? radioGroup.button.height.small : radioGroup.button.height.normal
+    small ? radiogroup.button.height.small : radiogroup.button.height.normal
   }px;
-  padding-left: ${radioGroup.button.padding.left}px;
-  padding-right: ${radioGroup.button.padding.right}px;
+  padding-left: ${radiogroup.button.padding.left}px;
+  padding-right: ${radiogroup.button.padding.right}px;
   
-  background-color: ${radioGroup.button.backgroundColor};
-  border-radius: ${radioGroup.button.border.radius}px;
+  background-color: ${radiogroup.button.backgroundColor};
+  border-radius: ${radiogroup.button.border.radius}px;
   
-  font-size: ${radioGroup.font.size}px;
+  font-size: ${radiogroup.font.size}px;
   
   ${
     checked
       ? `
-          background-color: ${radioGroup.checked.backgroundColor};
+          background-color: ${radiogroup.checked.backgroundColor};
         `
       : ``
   }
@@ -43,15 +43,15 @@ const Text = styled.Text(
   ({
     theme: {
       yoga: {
-        components: { radioGroup },
+        components: { radiogroup },
       },
     },
     checked,
   }) =>
     checked
       ? `
-          color: ${radioGroup.checked.font.color};
-          font-weight: ${radioGroup.checked.font.weight};
+          color: ${radiogroup.checked.font.color};
+          font-weight: ${radiogroup.checked.font.weight};
         `
       : '',
 );
