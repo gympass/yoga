@@ -14,7 +14,7 @@ const Radio = styled.span`
     theme: {
       yoga: {
         components: {
-          radioGroup: { radio },
+          radiogroup: { radio },
         },
       },
     },
@@ -46,21 +46,21 @@ const Wrapper = styled.div`
     disabled,
     theme: {
       yoga: {
-        components: { radioGroup },
+        components: { radiogroup },
       },
     },
   }) =>
     `
-    width: ${radioGroup.radio.size}px;
-    height: ${radioGroup.radio.size}px;
+    width: ${radiogroup.radio.size}px;
+    height: ${radiogroup.radio.size}px;
 
     &:hover {
       ${Input} {
         cursor: pointer;
       }
       ${Radio} {
-        box-shadow: 0 0 0 ${radioGroup.radio.size * 0.4}px ${hexToRgb(
-      radioGroup.hover.backgroundColor,
+        box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px ${hexToRgb(
+      radiogroup.hover.backgroundColor,
       0.25,
     )};
       }
@@ -72,8 +72,8 @@ const Wrapper = styled.div`
     
       &:hover {
         ${Radio} {
-        box-shadow: 0 0 0 ${radioGroup.radio.size * 0.4}px ${hexToRgb(
-            radioGroup.checked.hover.backgroundColor,
+        box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px ${hexToRgb(
+            radiogroup.checked.hover.backgroundColor,
             0.25,
           )};
         }
@@ -81,8 +81,8 @@ const Wrapper = styled.div`
     
       &:focus-within {
         ${Radio} {
-        box-shadow: 0 0 0 ${radioGroup.radio.size * 0.4}px ${hexToRgb(
-            radioGroup.checked.hover.backgroundColor,
+        box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px ${hexToRgb(
+            radiogroup.checked.hover.backgroundColor,
             0.5,
           )};
         }
@@ -90,26 +90,26 @@ const Wrapper = styled.div`
     
       &:active {
         ${Radio} {
-        box-shadow: 0 0 0 ${radioGroup.radio.size * 0.4}px ${hexToRgb(
-            radioGroup.checked.hover.backgroundColor,
+        box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px ${hexToRgb(
+            radiogroup.checked.hover.backgroundColor,
             0.75,
           )};
         }
       }
 
       ${Radio} {
-        border-color: ${radioGroup.checked.backgroundColor};
+        border-color: ${radiogroup.checked.backgroundColor};
 
         &:after {
           position: absolute;
           top: 50%;
           left: 50%;
 
-          width: ${radioGroup.radio.size * 0.5}px;
-          height: ${radioGroup.radio.size * 0.5}px;
+          width: ${radiogroup.radio.size * 0.5}px;
+          height: ${radiogroup.radio.size * 0.5}px;
           
           border-radius: 100%;
-          background-color: ${radioGroup.checked.backgroundColor};
+          background-color: ${radiogroup.checked.backgroundColor};
           
           transform: translate(-50%, -50%);
           
@@ -124,7 +124,7 @@ const Wrapper = styled.div`
       disabled
         ? `
         ${Radio} {
-          border-color: ${radioGroup.disabled.backgroundColor};
+          border-color: ${radiogroup.disabled.backgroundColor};
         }
 
         &:hover {
@@ -143,7 +143,7 @@ const Wrapper = styled.div`
       disabled && checked
         ? `
           ${Radio}:after {
-            background-color: ${radioGroup.disabled.backgroundColor};
+            background-color: ${radiogroup.disabled.backgroundColor};
           }
         `
         : ''

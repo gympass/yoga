@@ -1,4 +1,4 @@
-const text = ({ fontSizes, lineHeights, fontWeights }) => ({
+const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
   h1: {
     fontsize: fontSizes.xxlarge,
     lineHeight: lineHeights.xlarge,
@@ -36,4 +36,4 @@ const text = ({ fontSizes, lineHeights, fontWeights }) => ({
   },
 });
 
-export default text;
+export default Text;

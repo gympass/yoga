@@ -1,4 +1,4 @@
-const slider = ({ colors, radii, elevations, spacing, fontWeights }) => ({
+const Slider = ({ colors, radii, elevations, spacing, fontWeights }) => ({
   track: {
     backgroundColor: {
       active: colors.primary[3],
@@ -62,4 +62,4 @@ const slider = ({ colors, radii, elevations, spacing, fontWeights }) => ({
   },
 });
 
-export default slider;
+export default Slider;

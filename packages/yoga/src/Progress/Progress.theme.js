@@ -1,4 +1,4 @@
-const progress = ({ spacing, colors, radii, fontSizes }) => ({
+const Progress = ({ spacing, colors, radii, fontSizes }) => ({
   height: spacing.xsmall,
   backgroundColor: {
     bar: colors.gray[1],
@@ -13,4 +13,4 @@ const progress = ({ spacing, colors, radii, fontSizes }) => ({
   },
 });
 
-export default progress;
+export default Progress;

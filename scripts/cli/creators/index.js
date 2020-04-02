@@ -1,6 +1,7 @@
 const { createWebComponent, createNativeComponent } = require('./component');
 const { createWebTest, createNativeTest } = require('./test');
 const { createWebDoc, createNativeDoc } = require('./doc');
+const { createComponentTheme } = require('./theme');
 
 module.exports = {
   createWebComponent,
@@ -9,4 +10,5 @@ module.exports = {
   createNativeDoc,
   createWebTest,
   createNativeTest,
+  createComponentTheme,
 };

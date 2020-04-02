@@ -1,4 +1,4 @@
-const stepper = ({ colors, spacing, fontWeights, radii }) => ({
+const Stepper = ({ colors, spacing, fontWeights, radii }) => ({
   padding: {
     left: spacing.xxlarge,
     right: spacing.xxlarge,
@@ -27,4 +27,4 @@ const stepper = ({ colors, spacing, fontWeights, radii }) => ({
   },
 });
 
-export default stepper;
+export default Stepper;

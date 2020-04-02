@@ -1,4 +1,4 @@
-const grid = () => ({
+const Grid = () => ({
   gutter: {
     desktop: 24,
     mobile: 16,
@@ -18,4 +18,4 @@ const grid = () => ({
   },
 });
 
-export default grid;
+export default Grid;
