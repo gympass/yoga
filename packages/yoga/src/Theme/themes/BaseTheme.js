@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 import tokens from '@gympass/yoga-tokens';
 import * as componentThemes from '../../**/*.theme.js';
 
@@ -22,18 +23,11 @@ const BaseTheme = ({ primary, secondary, tertiary }) => {
     rating: tokens.colors.milan[3],
   };
 
-  [
-    colors.gray.surface,
-    colors.gray.background,
-    ,
-    ,
-    ,
-    ,
-    ,
-    colors.gray.medium,
-    colors.gray.dark,
-    colors.gray.darker,
-  ] = colors.gray;
+  colors.gray.surface = tokens.colors.gray[0];
+  colors.gray.background = tokens.colors.gray[1];
+  colors.gray.medium = tokens.colors.gray[7];
+  colors.gray.dark = tokens.colors.gray[8];
+  colors.gray.darker = tokens.colors.gray[9];
 
   const components = {};
   Object.entries(componentThemes).forEach(([names, themed]) => {
