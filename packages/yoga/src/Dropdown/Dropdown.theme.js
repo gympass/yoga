@@ -1,4 +1,4 @@
-const dropdown = ({
+const Dropdown = ({
   colors,
   fontSizes,
   fontWeights,
@@ -165,4 +165,4 @@ const dropdown = ({
   },
 });
 
-export default dropdown;
+export default Dropdown;

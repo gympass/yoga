@@ -1,6 +1,6 @@
 import { hexToRgb } from '@gympass/yoga-common';
 
-const checkboxswitch = ({
+const CheckboxSwitch = ({
   colors,
   radii,
   transition,
@@ -49,4 +49,4 @@ const checkboxswitch = ({
   },
 });
 
-export default checkboxswitch;
+export default CheckboxSwitch;

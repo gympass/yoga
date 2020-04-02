@@ -1,4 +1,4 @@
-const radiogroup = ({
+const RadioGroup = ({
   radii,
   colors,
   fontWeights,
@@ -50,4 +50,4 @@ const radiogroup = ({
   },
 });
 
-export default radiogroup;
+export default RadioGroup;

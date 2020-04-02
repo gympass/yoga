@@ -7,6 +7,7 @@ const {
   createNativeTest,
   createWebDoc,
   createNativeDoc,
+  createComponentTheme,
 } = require('./creators');
 
 const cli = ({ name, web, native }) => {
@@ -35,6 +36,8 @@ const cli = ({ name, web, native }) => {
     createNativeDoc(name, paths);
     editIndexFiles(name, paths);
   }
+
+  createComponentTheme(name, paths);
 };
 
 const init = () =>

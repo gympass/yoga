@@ -1,6 +1,6 @@
 import { hexToRgb } from '@gympass/yoga-common';
 
-const button = ({
+const Button = ({
   spacing,
   fontSizes,
   borders,
@@ -100,4 +100,4 @@ const button = ({
   },
 });
 
-export default button;
+export default Button;
