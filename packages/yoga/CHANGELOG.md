@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.1.3...@gympass/yoga@2.2.0) (2020-04-06)
+
+### Features
+
+- **theme:** add Wellness theme ([f6a040a](https://github.com/Gympass/yoga/commit/f6a040aa72a24cfec678a2b7905cd27c7084bede))
+
 ## [2.1.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.1.2...@gympass/yoga@2.1.3) (2020-04-02)
 
 **Note:** Version bump only for package @gympass/yoga

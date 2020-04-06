@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.7.0...@gympass/yoga-icons@0.8.0) (2020-04-06)
+
+### Features
+
+- **icons:** add new filter icon ([116ff9c](https://github.com/Gympass/yoga/commit/116ff9c26f1140842ffa248156b580a5e68b7e59))
+
 # [0.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.6.1...@gympass/yoga-icons@0.7.0) (2020-03-12)
 
 ### Features
