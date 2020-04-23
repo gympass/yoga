@@ -4,6 +4,7 @@ import Clock from './clock.svg';
 import Close from './close.svg';
 import Done from './done.svg';
 import Filter from './filter.svg';
+import Lock from './lock.svg';
 import Star from './star.svg';
 import TriangleAlert from './triangle_alert.svg';
 import Visibility from './visibility.svg';
@@ -16,6 +17,7 @@ export {
   Close,
   Done,
   Filter,
+  Lock,
   Star,
   TriangleAlert,
   Visibility,
