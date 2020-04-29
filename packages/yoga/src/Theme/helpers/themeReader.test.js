@@ -39,4 +39,38 @@ describe('theme reader', () => {
       expect(theme.array[i](obj)).toBe(val);
     });
   });
+
+  it('should be destructible', () => {
+    const directNestedValue = 'very nested';
+    const lazyNestedValue = 'very much nested';
+    const firstTokenValue = 'wow such value';
+    const secondTokenValue = 'much token';
+
+    const obj = {
+      theme: {
+        yoga: {
+          directNested: {
+            value: directNestedValue,
+          },
+          lazyNested: {
+            value: lazyNestedValue,
+          },
+          firstToken: firstTokenValue,
+          secondToken: secondTokenValue,
+        },
+      },
+    };
+
+    const {
+      directNested: { value },
+      lazyNested,
+      firstToken,
+      secondToken,
+    } = theme;
+
+    expect(value(obj)).toBe(directNestedValue);
+    expect(lazyNested.value(obj)).toBe(lazyNestedValue);
+    expect(firstToken(obj)).toBe(firstTokenValue);
+    expect(secondToken(obj)).toBe(secondTokenValue);
+  });
 });
