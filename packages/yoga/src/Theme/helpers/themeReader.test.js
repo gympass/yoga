@@ -1,8 +1,18 @@
+import ProxyPolyfillBuilder from 'proxy-polyfill/src/proxy';
+
 import theme from './themeReader';
+
+// Tests should ran using the polyfill.
+global.Proxy = ProxyPolyfillBuilder();
 
 describe('theme reader', () => {
   it('should return a function', () => {
     expect(theme).toBeInstanceOf(Function);
+  });
+
+  it('should return undefined if key does not exist on the theme', () => {
+    expect(typeof theme.colors.randomValue).toBe('undefined');
+    expect(typeof theme.randomValue).toBe('undefined');
   });
 
   it('should have theme.yoga as the base path', () => {
@@ -17,12 +27,16 @@ describe('theme reader', () => {
     const obj = {
       theme: {
         yoga: {
-          my: { nested: { value } },
+          breakpoints: {
+            xs: {
+              margin: value,
+            },
+          },
         },
       },
     };
 
-    expect(theme.my.nested.value(obj)).toBe(value);
+    expect(theme.breakpoints.xs.margin(obj)).toBe(value);
   });
 
   it('should be able to get fields with array position', () => {
@@ -30,47 +44,43 @@ describe('theme reader', () => {
     const obj = {
       theme: {
         yoga: {
-          array,
+          borders: array,
         },
       },
     };
 
     array.forEach((val, i) => {
-      expect(theme.array[i](obj)).toBe(val);
+      expect(theme.borders[i](obj)).toBe(val);
     });
   });
 
   it('should be destructible', () => {
-    const directNestedValue = 'very nested';
-    const lazyNestedValue = 'very much nested';
-    const firstTokenValue = 'wow such value';
-    const secondTokenValue = 'much token';
+    const baseFontSizeValue = 'nice size';
+    const primaryValue = 'very primary';
+    const lgValue = 'much large';
 
     const obj = {
       theme: {
         yoga: {
-          directNested: {
-            value: directNestedValue,
+          baseFontSize: baseFontSizeValue,
+          colors: {
+            primary: primaryValue,
           },
-          lazyNested: {
-            value: lazyNestedValue,
+          breakpoints: {
+            lg: lgValue,
           },
-          firstToken: firstTokenValue,
-          secondToken: secondTokenValue,
         },
       },
     };
 
     const {
-      directNested: { value },
-      lazyNested,
-      firstToken,
-      secondToken,
+      baseFontSize,
+      colors: { primary },
+      breakpoints,
     } = theme;
 
-    expect(value(obj)).toBe(directNestedValue);
-    expect(lazyNested.value(obj)).toBe(lazyNestedValue);
-    expect(firstToken(obj)).toBe(firstTokenValue);
-    expect(secondToken(obj)).toBe(secondTokenValue);
+    expect(primary(obj)).toBe(primaryValue);
+    expect(breakpoints.lg(obj)).toBe(lgValue);
+    expect(baseFontSize(obj)).toBe(baseFontSizeValue);
   });
 });
