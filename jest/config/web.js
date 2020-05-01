@@ -1,6 +1,5 @@
 module.exports = {
   testMatch: [
-    '<rootDir>/../../packages/**/helpers/**/*.test.js',
     '<rootDir>/../../packages/**/web/**/*.test.js',
     '<rootDir>/../../packages/**/web/**/*.test.jsx',
   ],

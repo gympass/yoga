@@ -1,11 +1,13 @@
 import ProxyPolyfillBuilder from 'proxy-polyfill/src/proxy';
 
-import theme from './themeReader';
+import theme from './index';
 
-// Tests should ran using the polyfill.
-global.Proxy = ProxyPolyfillBuilder();
+describe('themeReader - base specs', () => {
+  beforeAll(() => {
+    // Tests should ran using the polyfill.
+    global.Proxy = ProxyPolyfillBuilder();
+  });
 
-describe('theme reader', () => {
   it('should return a function', () => {
     expect(theme).toBeInstanceOf(Function);
   });

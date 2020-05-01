@@ -1,9 +1,6 @@
 module.exports = {
   roots: ['<rootDir>/../../'],
-  testMatch: [
-    '<rootDir>/../../packages/**/helpers/**/*.test.js',
-    '<rootDir>/../../packages/**/native/**/*.test.jsx',
-  ],
+  testMatch: ['<rootDir>/../../packages/**/native/**/*.test.jsx'],
   transform: { '^.+\\.jsx?$': 'babel-jest' },
   displayName: 'native',
   preset: '@testing-library/react-native',
