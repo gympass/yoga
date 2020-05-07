@@ -14,13 +14,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -29,57 +23,73 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "maxWidth": 280,
-          "width": "100%",
-        },
       ]
     }
-    variant=""
-    variantIntensity={2}
   >
     <View
       style={
         Array [
           Object {
-            "alignSelf": "flex-start",
-            "backgroundColor": "#F5F5FA",
-            "borderBottomRightRadius": 9999,
-            "borderTopRightRadius": 9999,
-            "color": "#41414A",
-            "marginBottom": 16,
-            "marginLeft": -16,
-            "paddingBottom": 4,
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 12,
-            "paddingTop": 4,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "maxWidth": 280,
+            "width": "100%",
           },
         ]
       }
+      variant=""
+      variantIntensity={2}
     >
-      <Text
+      <View
         style={
           Array [
             Object {
+              "alignSelf": "flex-start",
+              "backgroundColor": "#F5F5FA",
+              "borderBottomRightRadius": 9999,
+              "borderTopRightRadius": 9999,
               "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "lineHeight": 16,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "marginBottom": 16,
+              "marginLeft": -16,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 12,
+              "paddingTop": 4,
             },
           ]
         }
       >
-        Label
-      </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          Label
+        </Text>
+      </View>
     </View>
   </View>
 </View>
@@ -99,13 +109,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ri
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -114,59 +118,75 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ri
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "maxWidth": 280,
-          "width": "100%",
-        },
       ]
     }
-    variant=""
-    variantIntensity={2}
   >
     <View
       style={
         Array [
           Object {
-            "alignSelf": "flex-start",
-            "backgroundColor": "#652CDB",
-            "borderBottomRightRadius": 9999,
-            "borderTopRightRadius": 9999,
-            "color": "#FFFFFF",
-            "marginBottom": 16,
-            "marginLeft": -16,
-            "paddingBottom": 4,
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 12,
-            "paddingTop": 4,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "maxWidth": 280,
+            "width": "100%",
           },
         ]
       }
-      variant="secondary"
+      variant=""
+      variantIntensity={2}
     >
-      <Text
+      <View
         style={
           Array [
             Object {
+              "alignSelf": "flex-start",
+              "backgroundColor": "#652CDB",
+              "borderBottomRightRadius": 9999,
+              "borderTopRightRadius": 9999,
               "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "lineHeight": 16,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "marginBottom": 16,
+              "marginLeft": -16,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 12,
+              "paddingTop": 4,
             },
           ]
         }
         variant="secondary"
       >
-        Label
-      </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant="secondary"
+        >
+          Label
+        </Text>
+      </View>
     </View>
   </View>
 </View>
@@ -186,13 +206,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -201,59 +215,75 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "maxWidth": 280,
-          "width": "100%",
-        },
       ]
     }
-    variant=""
-    variantIntensity={2}
   >
     <View
       style={
         Array [
           Object {
-            "alignSelf": "flex-start",
-            "backgroundColor": "#2B9486",
-            "borderBottomRightRadius": 9999,
-            "borderTopRightRadius": 9999,
-            "color": "#FFFFFF",
-            "marginBottom": 16,
-            "marginLeft": -16,
-            "paddingBottom": 4,
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 12,
-            "paddingTop": 4,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "maxWidth": 280,
+            "width": "100%",
           },
         ]
       }
-      variant="tertiary"
+      variant=""
+      variantIntensity={2}
     >
-      <Text
+      <View
         style={
           Array [
             Object {
+              "alignSelf": "flex-start",
+              "backgroundColor": "#2B9486",
+              "borderBottomRightRadius": 9999,
+              "borderTopRightRadius": 9999,
               "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "lineHeight": 16,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
+              "marginBottom": 16,
+              "marginLeft": -16,
+              "paddingBottom": 4,
+              "paddingLeft": 16,
+              "paddingRight": 12,
+              "paddingTop": 4,
             },
           ]
         }
         variant="tertiary"
       >
-        Label
-      </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant="tertiary"
+        >
+          Label
+        </Text>
+      </View>
     </View>
   </View>
 </View>
@@ -273,13 +303,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -288,96 +312,112 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "maxWidth": 280,
-          "width": "100%",
-        },
       ]
     }
-    variant=""
-    variantIntensity={2}
   >
     <View
       style={
         Array [
-          Object {},
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "maxWidth": 280,
+            "width": "100%",
+          },
         ]
       }
+      variant=""
+      variantIntensity={2}
     >
-      <Text
-        numberOfLines={2}
+      <View
         style={
           Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "height": 40,
-              "lineHeight": 20,
-              "marginBottom": 12,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 8,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
+            Object {},
           ]
         }
-        variant=""
       >
-        Gympass Black for employees with Buddha Spa + Reebook included
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 20,
-              "fontWeight": "700",
-              "lineHeight": 24,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 12,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant=""
-      >
-        U$ 99.90
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant=""
-      >
-        /month
-      </Text>
+        <Text
+          numberOfLines={2}
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "height": 40,
+                "lineHeight": 20,
+                "marginBottom": 12,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 8,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant=""
+        >
+          Gympass Black for employees with Buddha Spa + Reebook included
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 24,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 12,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant=""
+        >
+          U$ 99.90
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant=""
+        >
+          /month
+        </Text>
+      </View>
     </View>
   </View>
 </View>
@@ -397,13 +437,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
     style={
       Array [
         Object {
-          "backgroundColor": "#8051E1",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -412,96 +446,112 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "maxWidth": 280,
-          "width": "100%",
-        },
       ]
     }
-    variant="secondary"
-    variantIntensity={2}
   >
     <View
       style={
         Array [
-          Object {},
+          Object {
+            "backgroundColor": "#8051E1",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "maxWidth": 280,
+            "width": "100%",
+          },
         ]
       }
+      variant="secondary"
+      variantIntensity={2}
     >
-      <Text
-        numberOfLines={2}
+      <View
         style={
           Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "height": 40,
-              "lineHeight": 20,
-              "marginBottom": 12,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 8,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
+            Object {},
           ]
         }
-        variant="secondary"
       >
-        Gympass Black for employees with Buddha Spa + Reebook included
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 20,
-              "fontWeight": "700",
-              "lineHeight": 24,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 12,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant="secondary"
-      >
-        U$ 99.90
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant="secondary"
-      >
-        /month
-      </Text>
+        <Text
+          numberOfLines={2}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "height": 40,
+                "lineHeight": 20,
+                "marginBottom": 12,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 8,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant="secondary"
+        >
+          Gympass Black for employees with Buddha Spa + Reebook included
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 24,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 12,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant="secondary"
+        >
+          U$ 99.90
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant="secondary"
+        >
+          /month
+        </Text>
+      </View>
     </View>
   </View>
 </View>
@@ -521,13 +571,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -536,173 +580,189 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "maxWidth": 280,
-          "width": "100%",
-        },
       ]
     }
-    variant=""
-    variantIntensity={2}
   >
     <View
       style={
         Array [
-          Object {},
-        ]
-      }
-    >
-      Gympass PlanCard
-    </View>
-    <View
-      style={
-        Array [
-          Object {},
-        ]
-      }
-    >
-      <Text
-        numberOfLines={2}
-        style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "height": 40,
-              "lineHeight": 20,
-              "marginBottom": 12,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 8,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant=""
-      >
-        Gympass Black for employees with Buddha Spa + Reebook included
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 20,
-              "fontWeight": "700",
-              "lineHeight": 24,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 12,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant=""
-      >
-        U$ 99.90
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant=""
-      >
-        /month
-      </Text>
-      content's children is rendered
-    </View>
-    <View
-      style={
-        Array [
           Object {
-            "paddingTop": 8,
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "maxWidth": 280,
+            "width": "100%",
           },
         ]
       }
+      variant=""
+      variantIntensity={2}
     >
       <View
-        lastChild={true}
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        Gympass PlanCard
+      </View>
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          numberOfLines={2}
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "height": 40,
+                "lineHeight": 20,
+                "marginBottom": 12,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 8,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant=""
+        >
+          Gympass Black for employees with Buddha Spa + Reebook included
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 24,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 12,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant=""
+        >
+          U$ 99.90
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant=""
+        >
+          /month
+        </Text>
+        content's children is rendered
+      </View>
+      <View
         style={
           Array [
             Object {
-              "display": "flex",
+              "paddingTop": 8,
             },
           ]
         }
       >
-        <TouchableWithoutFeedback>
-          <View
-            style={
+        <View
+          lastChild={true}
+          style={
+            Array [
               Object {
-                "flexDirection": "row",
-              }
-            }
-          >
+                "display": "flex",
+              },
+            ]
+          }
+        >
+          <TouchableWithoutFeedback>
             <View
-              disabled={false}
-              full={false}
-              inverted={false}
-              pressed={false}
-              small={false}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "#F46152",
-                    "borderRadius": 9999,
-                    "height": 48,
-                    "justifyContent": "center",
-                    "paddingLeft": 24,
-                    "paddingRight": 24,
-                  },
-                ]
+                Object {
+                  "flexDirection": "row",
+                }
               }
             >
-              <Text
+              <View
                 disabled={false}
+                full={false}
                 inverted={false}
                 pressed={false}
+                small={false}
                 style={
                   Array [
                     Object {
-                      "color": "#FFFFFF",
-                      "fontSize": 14,
-                      "fontWeight": "700",
-                      "textAlign": "center",
+                      "backgroundColor": "#F46152",
+                      "borderRadius": 9999,
+                      "height": 48,
+                      "justifyContent": "center",
+                      "paddingLeft": 24,
+                      "paddingRight": 24,
                     },
                   ]
                 }
               >
-                should have buttons
-              </Text>
+                <Text
+                  disabled={false}
+                  inverted={false}
+                  pressed={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#FFFFFF",
+                        "fontSize": 14,
+                        "fontWeight": "700",
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  should have buttons
+                </Text>
+              </View>
             </View>
-          </View>
-        </TouchableWithoutFeedback>
+          </TouchableWithoutFeedback>
+        </View>
       </View>
     </View>
   </View>
@@ -723,13 +783,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
     style={
       Array [
         Object {
-          "backgroundColor": "#8051E1",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -738,173 +792,189 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "maxWidth": 280,
-          "width": "100%",
-        },
       ]
     }
-    variant="secondary"
-    variantIntensity={2}
   >
     <View
       style={
         Array [
-          Object {},
-        ]
-      }
-    >
-      Gympass PlanCard
-    </View>
-    <View
-      style={
-        Array [
-          Object {},
-        ]
-      }
-    >
-      <Text
-        numberOfLines={2}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "height": 40,
-              "lineHeight": 20,
-              "marginBottom": 12,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 8,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant="secondary"
-      >
-        Gympass Black for employees with Buddha Spa + Reebook included
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 20,
-              "fontWeight": "700",
-              "lineHeight": 24,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 12,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant="secondary"
-      >
-        U$ 99.90
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant="secondary"
-      >
-        /month
-      </Text>
-      content's children is rendered
-    </View>
-    <View
-      style={
-        Array [
           Object {
-            "paddingTop": 8,
+            "backgroundColor": "#8051E1",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "maxWidth": 280,
+            "width": "100%",
           },
         ]
       }
+      variant="secondary"
+      variantIntensity={2}
     >
       <View
-        lastChild={true}
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        Gympass PlanCard
+      </View>
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          numberOfLines={2}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "height": 40,
+                "lineHeight": 20,
+                "marginBottom": 12,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 8,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant="secondary"
+        >
+          Gympass Black for employees with Buddha Spa + Reebook included
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 24,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 12,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant="secondary"
+        >
+          U$ 99.90
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant="secondary"
+        >
+          /month
+        </Text>
+        content's children is rendered
+      </View>
+      <View
         style={
           Array [
             Object {
-              "display": "flex",
+              "paddingTop": 8,
             },
           ]
         }
       >
-        <TouchableWithoutFeedback>
-          <View
-            style={
+        <View
+          lastChild={true}
+          style={
+            Array [
               Object {
-                "flexDirection": "row",
-              }
-            }
-          >
+                "display": "flex",
+              },
+            ]
+          }
+        >
+          <TouchableWithoutFeedback>
             <View
-              disabled={false}
-              full={false}
-              inverted={false}
-              pressed={false}
-              small={false}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "#F46152",
-                    "borderRadius": 9999,
-                    "height": 48,
-                    "justifyContent": "center",
-                    "paddingLeft": 24,
-                    "paddingRight": 24,
-                  },
-                ]
+                Object {
+                  "flexDirection": "row",
+                }
               }
             >
-              <Text
+              <View
                 disabled={false}
+                full={false}
                 inverted={false}
                 pressed={false}
+                small={false}
                 style={
                   Array [
                     Object {
-                      "color": "#FFFFFF",
-                      "fontSize": 14,
-                      "fontWeight": "700",
-                      "textAlign": "center",
+                      "backgroundColor": "#F46152",
+                      "borderRadius": 9999,
+                      "height": 48,
+                      "justifyContent": "center",
+                      "paddingLeft": 24,
+                      "paddingRight": 24,
                     },
                   ]
                 }
               >
-                should have buttons
-              </Text>
+                <Text
+                  disabled={false}
+                  inverted={false}
+                  pressed={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#FFFFFF",
+                        "fontSize": 14,
+                        "fontWeight": "700",
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  should have buttons
+                </Text>
+              </View>
             </View>
-          </View>
-        </TouchableWithoutFeedback>
+          </TouchableWithoutFeedback>
+        </View>
       </View>
     </View>
   </View>
@@ -925,13 +995,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
     style={
       Array [
         Object {
-          "backgroundColor": "#3FA99B",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -940,173 +1004,189 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "maxWidth": 280,
-          "width": "100%",
-        },
       ]
     }
-    variant="tertiary"
-    variantIntensity={2}
   >
     <View
       style={
         Array [
-          Object {},
-        ]
-      }
-    >
-      Gympass PlanCard
-    </View>
-    <View
-      style={
-        Array [
-          Object {},
-        ]
-      }
-    >
-      <Text
-        numberOfLines={2}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "height": 40,
-              "lineHeight": 20,
-              "marginBottom": 12,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 8,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant="tertiary"
-      >
-        Gympass Black for employees with Buddha Spa + Reebook included
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 20,
-              "fontWeight": "700",
-              "lineHeight": 24,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 12,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant="tertiary"
-      >
-        U$ 99.90
-      </Text>
-      <Text
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-        variant="tertiary"
-      >
-        /month
-      </Text>
-      content's children is rendered
-    </View>
-    <View
-      style={
-        Array [
           Object {
-            "paddingTop": 8,
+            "backgroundColor": "#3FA99B",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "maxWidth": 280,
+            "width": "100%",
           },
         ]
       }
+      variant="tertiary"
+      variantIntensity={2}
     >
       <View
-        lastChild={true}
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        Gympass PlanCard
+      </View>
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          numberOfLines={2}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "height": 40,
+                "lineHeight": 20,
+                "marginBottom": 12,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 8,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant="tertiary"
+        >
+          Gympass Black for employees with Buddha Spa + Reebook included
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 24,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 12,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant="tertiary"
+        >
+          U$ 99.90
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+          variant="tertiary"
+        >
+          /month
+        </Text>
+        content's children is rendered
+      </View>
+      <View
         style={
           Array [
             Object {
-              "display": "flex",
+              "paddingTop": 8,
             },
           ]
         }
       >
-        <TouchableWithoutFeedback>
-          <View
-            style={
+        <View
+          lastChild={true}
+          style={
+            Array [
               Object {
-                "flexDirection": "row",
-              }
-            }
-          >
+                "display": "flex",
+              },
+            ]
+          }
+        >
+          <TouchableWithoutFeedback>
             <View
-              disabled={false}
-              full={false}
-              inverted={false}
-              pressed={false}
-              small={false}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "#F46152",
-                    "borderRadius": 9999,
-                    "height": 48,
-                    "justifyContent": "center",
-                    "paddingLeft": 24,
-                    "paddingRight": 24,
-                  },
-                ]
+                Object {
+                  "flexDirection": "row",
+                }
               }
             >
-              <Text
+              <View
                 disabled={false}
+                full={false}
                 inverted={false}
                 pressed={false}
+                small={false}
                 style={
                   Array [
                     Object {
-                      "color": "#FFFFFF",
-                      "fontSize": 14,
-                      "fontWeight": "700",
-                      "textAlign": "center",
+                      "backgroundColor": "#F46152",
+                      "borderRadius": 9999,
+                      "height": 48,
+                      "justifyContent": "center",
+                      "paddingLeft": 24,
+                      "paddingRight": 24,
                     },
                   ]
                 }
               >
-                should have buttons
-              </Text>
+                <Text
+                  disabled={false}
+                  inverted={false}
+                  pressed={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#FFFFFF",
+                        "fontSize": 14,
+                        "fontWeight": "700",
+                        "textAlign": "center",
+                      },
+                    ]
+                  }
+                >
+                  should have buttons
+                </Text>
+              </View>
             </View>
-          </View>
-        </TouchableWithoutFeedback>
+          </TouchableWithoutFeedback>
+        </View>
       </View>
     </View>
   </View>

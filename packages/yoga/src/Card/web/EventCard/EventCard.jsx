@@ -12,6 +12,7 @@ const Event = styled(Card)`
 
   width: 100%;
   padding: 0;
+  overflow: hidden;
 `;
 
 const EventInfo = styled.div`

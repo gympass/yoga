@@ -59,6 +59,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   flex-direction: row;
   width: 100%;
   padding: 0;
+  overflow: hidden;
 }
 
 .c7 {
@@ -262,6 +263,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   flex-direction: row;
   width: 100%;
   padding: 0;
+  overflow: hidden;
 }
 
 .c7 {
@@ -465,6 +467,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   flex-direction: row;
   width: 100%;
   padding: 0;
+  overflow: hidden;
 }
 
 .c7 {
@@ -668,6 +671,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   flex-direction: row;
   width: 100%;
   padding: 0;
+  overflow: hidden;
 }
 
 .c7 {

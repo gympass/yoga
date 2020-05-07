@@ -170,7 +170,7 @@ const CardPage = () => {
         }}
       >
         <EventCard
-          style={{ marginRight: 16 }}
+          style={{ marginRight: 16, borderRadius: 16 }}
           event={{
             name: 'Yoga Class',
             place: 'Gympass',

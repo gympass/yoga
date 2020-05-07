@@ -14,13 +14,7 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -31,85 +25,101 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
         },
       ]
     }
-    variant=""
-    variantIntensity={3}
   >
     <View
       style={
         Array [
-          Object {},
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
         ]
       }
+      variant=""
+      variantIntensity={3}
     >
-      <Text>
-        Hello World
-      </Text>
-    </View>
-    <View
-      style={
-        Array [
-          Object {},
-        ]
-      }
-    >
-      <Text>
-        It's fine here
-      </Text>
-    </View>
-    <View
-      style={
-        Array [
-          Object {},
-        ]
-      }
-    >
-      <TouchableWithoutFeedback>
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-            }
-          }
-        >
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text>
+          Hello World
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text>
+          It's fine here
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <TouchableWithoutFeedback>
           <View
-            disabled={false}
-            full={false}
-            inverted={false}
-            pressed={false}
-            small={false}
             style={
-              Array [
-                Object {
-                  "backgroundColor": "#F46152",
-                  "borderRadius": 9999,
-                  "height": 48,
-                  "justifyContent": "center",
-                  "paddingLeft": 24,
-                  "paddingRight": 24,
-                },
-              ]
+              Object {
+                "flexDirection": "row",
+              }
             }
           >
-            <Text
+            <View
               disabled={false}
+              full={false}
               inverted={false}
               pressed={false}
+              small={false}
               style={
                 Array [
                   Object {
-                    "color": "#FFFFFF",
-                    "fontSize": 14,
-                    "fontWeight": "700",
-                    "textAlign": "center",
+                    "backgroundColor": "#F46152",
+                    "borderRadius": 9999,
+                    "height": 48,
+                    "justifyContent": "center",
+                    "paddingLeft": 24,
+                    "paddingRight": 24,
                   },
                 ]
               }
             >
-              Action's children must be Button
-            </Text>
+              <Text
+                disabled={false}
+                inverted={false}
+                pressed={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#FFFFFF",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                      "textAlign": "center",
+                    },
+                  ]
+                }
+              >
+                Action's children must be Button
+              </Text>
+            </View>
           </View>
-        </View>
-      </TouchableWithoutFeedback>
+        </TouchableWithoutFeedback>
+      </View>
     </View>
   </View>
 </View>

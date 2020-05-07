@@ -14,13 +14,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -29,251 +23,81 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "flexDirection": "row",
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-          "width": 280,
-        },
       ]
     }
-    variant=""
-    variantIntensity={3}
   >
     <View
       style={
         Array [
           Object {
-            "alignItems": "center",
-            "backgroundColor": "#8051E1",
-            "borderBottomLeftRadius": 8,
-            "borderTopLeftRadius": 8,
-            "justifyContent": "center",
-            "width": 56,
-          },
-        ]
-      }
-      variant="secondary"
-    >
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 20,
-              "fontWeight": "700",
-              "lineHeight": 24,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        19
-      </Text>
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "600",
-              "lineHeight": 20,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        dec
-      </Text>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 16,
             "paddingTop": 16,
           },
+          Object {
+            "flexDirection": "row",
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "width": 280,
+          },
         ]
       }
+      variant=""
+      variantIntensity={3}
     >
-      <Text
-        numberOfLines={1}
-        style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 16,
-              "fontWeight": "600",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-              "width": 180,
-            },
-          ]
-        }
-      >
-        Yoga Class
-      </Text>
-      <Text
-        numberOfLines={1}
-        style={
-          Array [
-            Object {
-              "color": "#6B6B78",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-              "width": 180,
-            },
-          ]
-        }
-      >
-        Gympass
-      </Text>
       <View
         style={
           Array [
             Object {
               "alignItems": "center",
-              "flexDirection": "row",
+              "backgroundColor": "#8051E1",
+              "borderBottomLeftRadius": 8,
+              "borderTopLeftRadius": 8,
+              "justifyContent": "center",
+              "width": 56,
             },
           ]
         }
+        variant="secondary"
       >
-        <RNSVGSvgView
-          fill="#41414A"
-          focusable={false}
+        <Text
+          inverted={true}
           style={
             Array [
               Object {
-                "backgroundColor": "transparent",
-                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
               },
-              Object {
-                "marginRight": 5,
-              },
-              Object {
-                "opacity": 1,
-              },
-              null,
             ]
           }
-        >
-          <RNSVGGroup
-            fill={
-              Array [
-                0,
-                4282466634,
-              ]
-            }
-            fillOpacity={1}
-            fillRule={1}
-            font={Object {}}
-            matrix={
-              Array [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-              ]
-            }
-            opacity={1}
-            originX={0}
-            originY={0}
-            propList={
-              Array [
-                "fill",
-              ]
-            }
-            rotation={0}
-            scaleX={1}
-            scaleY={1}
-            skewX={0}
-            skewY={0}
-            stroke={null}
-            strokeDasharray={null}
-            strokeDashoffset={null}
-            strokeLinecap={0}
-            strokeLinejoin={0}
-            strokeMiterlimit={4}
-            strokeOpacity={1}
-            strokeWidth={1}
-            vectorEffect={0}
-            x={0}
-            y={0}
-          />
-        </RNSVGSvgView>
+        />
         <Text
+          inverted={true}
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#FFFFFF",
                 "fontFamily": "Open Sans",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 16,
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 24,
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -286,8 +110,194 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
             ]
           }
         >
-          19 am
+          19
         </Text>
+        <Text
+          inverted={true}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "600",
+                "lineHeight": 20,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          dec
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 16,
+                "fontWeight": "600",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": 180,
+              },
+            ]
+          }
+        >
+          Yoga Class
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": 180,
+              },
+            ]
+          }
+        >
+          Gympass
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          <RNSVGSvgView
+            fill="#41414A"
+            focusable={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "marginRight": 5,
+                },
+                Object {
+                  "opacity": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4282466634,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#41414A",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "marginBottom": 0,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 0,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            19 am
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -308,13 +318,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -323,251 +327,81 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "flexDirection": "row",
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-          "width": 280,
-        },
       ]
     }
-    variant=""
-    variantIntensity={3}
   >
     <View
       style={
         Array [
           Object {
-            "alignItems": "center",
-            "backgroundColor": "#F78D82",
-            "borderBottomLeftRadius": 8,
-            "borderTopLeftRadius": 8,
-            "justifyContent": "center",
-            "width": 56,
-          },
-        ]
-      }
-      variant="primary"
-    >
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 20,
-              "fontWeight": "700",
-              "lineHeight": 24,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        19
-      </Text>
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "600",
-              "lineHeight": 20,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        dec
-      </Text>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 16,
             "paddingTop": 16,
           },
+          Object {
+            "flexDirection": "row",
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "width": 280,
+          },
         ]
       }
+      variant=""
+      variantIntensity={3}
     >
-      <Text
-        numberOfLines={1}
-        style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 16,
-              "fontWeight": "600",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-              "width": 180,
-            },
-          ]
-        }
-      >
-        Yoga Class
-      </Text>
-      <Text
-        numberOfLines={1}
-        style={
-          Array [
-            Object {
-              "color": "#6B6B78",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-              "width": 180,
-            },
-          ]
-        }
-      >
-        Gympass
-      </Text>
       <View
         style={
           Array [
             Object {
               "alignItems": "center",
-              "flexDirection": "row",
+              "backgroundColor": "#F78D82",
+              "borderBottomLeftRadius": 8,
+              "borderTopLeftRadius": 8,
+              "justifyContent": "center",
+              "width": 56,
             },
           ]
         }
+        variant="primary"
       >
-        <RNSVGSvgView
-          fill="#41414A"
-          focusable={false}
+        <Text
+          inverted={true}
           style={
             Array [
               Object {
-                "backgroundColor": "transparent",
-                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
               },
-              Object {
-                "marginRight": 5,
-              },
-              Object {
-                "opacity": 1,
-              },
-              null,
             ]
           }
-        >
-          <RNSVGGroup
-            fill={
-              Array [
-                0,
-                4282466634,
-              ]
-            }
-            fillOpacity={1}
-            fillRule={1}
-            font={Object {}}
-            matrix={
-              Array [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-              ]
-            }
-            opacity={1}
-            originX={0}
-            originY={0}
-            propList={
-              Array [
-                "fill",
-              ]
-            }
-            rotation={0}
-            scaleX={1}
-            scaleY={1}
-            skewX={0}
-            skewY={0}
-            stroke={null}
-            strokeDasharray={null}
-            strokeDashoffset={null}
-            strokeLinecap={0}
-            strokeLinejoin={0}
-            strokeMiterlimit={4}
-            strokeOpacity={1}
-            strokeWidth={1}
-            vectorEffect={0}
-            x={0}
-            y={0}
-          />
-        </RNSVGSvgView>
+        />
         <Text
+          inverted={true}
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#FFFFFF",
                 "fontFamily": "Open Sans",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 16,
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 24,
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -580,8 +414,194 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
             ]
           }
         >
-          19 am
+          19
         </Text>
+        <Text
+          inverted={true}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "600",
+                "lineHeight": 20,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          dec
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 16,
+                "fontWeight": "600",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": 180,
+              },
+            ]
+          }
+        >
+          Yoga Class
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": 180,
+              },
+            ]
+          }
+        >
+          Gympass
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          <RNSVGSvgView
+            fill="#41414A"
+            focusable={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "marginRight": 5,
+                },
+                Object {
+                  "opacity": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4282466634,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#41414A",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "marginBottom": 0,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 0,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            19 am
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -602,13 +622,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -617,251 +631,81 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "flexDirection": "row",
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-          "width": 280,
-        },
       ]
     }
-    variant=""
-    variantIntensity={3}
   >
     <View
       style={
         Array [
           Object {
-            "alignItems": "center",
-            "backgroundColor": "#8051E1",
-            "borderBottomLeftRadius": 8,
-            "borderTopLeftRadius": 8,
-            "justifyContent": "center",
-            "width": 56,
-          },
-        ]
-      }
-      variant="secondary"
-    >
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 20,
-              "fontWeight": "700",
-              "lineHeight": 24,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        19
-      </Text>
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "600",
-              "lineHeight": 20,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        dec
-      </Text>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 16,
             "paddingTop": 16,
           },
+          Object {
+            "flexDirection": "row",
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "width": 280,
+          },
         ]
       }
+      variant=""
+      variantIntensity={3}
     >
-      <Text
-        numberOfLines={1}
-        style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 16,
-              "fontWeight": "600",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-              "width": 180,
-            },
-          ]
-        }
-      >
-        Yoga Class
-      </Text>
-      <Text
-        numberOfLines={1}
-        style={
-          Array [
-            Object {
-              "color": "#6B6B78",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-              "width": 180,
-            },
-          ]
-        }
-      >
-        Gympass
-      </Text>
       <View
         style={
           Array [
             Object {
               "alignItems": "center",
-              "flexDirection": "row",
+              "backgroundColor": "#8051E1",
+              "borderBottomLeftRadius": 8,
+              "borderTopLeftRadius": 8,
+              "justifyContent": "center",
+              "width": 56,
             },
           ]
         }
+        variant="secondary"
       >
-        <RNSVGSvgView
-          fill="#41414A"
-          focusable={false}
+        <Text
+          inverted={true}
           style={
             Array [
               Object {
-                "backgroundColor": "transparent",
-                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
               },
-              Object {
-                "marginRight": 5,
-              },
-              Object {
-                "opacity": 1,
-              },
-              null,
             ]
           }
-        >
-          <RNSVGGroup
-            fill={
-              Array [
-                0,
-                4282466634,
-              ]
-            }
-            fillOpacity={1}
-            fillRule={1}
-            font={Object {}}
-            matrix={
-              Array [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-              ]
-            }
-            opacity={1}
-            originX={0}
-            originY={0}
-            propList={
-              Array [
-                "fill",
-              ]
-            }
-            rotation={0}
-            scaleX={1}
-            scaleY={1}
-            skewX={0}
-            skewY={0}
-            stroke={null}
-            strokeDasharray={null}
-            strokeDashoffset={null}
-            strokeLinecap={0}
-            strokeLinejoin={0}
-            strokeMiterlimit={4}
-            strokeOpacity={1}
-            strokeWidth={1}
-            vectorEffect={0}
-            x={0}
-            y={0}
-          />
-        </RNSVGSvgView>
+        />
         <Text
+          inverted={true}
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#FFFFFF",
                 "fontFamily": "Open Sans",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 16,
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 24,
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -874,8 +718,194 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
             ]
           }
         >
-          19 am
+          19
         </Text>
+        <Text
+          inverted={true}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "600",
+                "lineHeight": 20,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          dec
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 16,
+                "fontWeight": "600",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": 180,
+              },
+            ]
+          }
+        >
+          Yoga Class
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": 180,
+              },
+            ]
+          }
+        >
+          Gympass
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          <RNSVGSvgView
+            fill="#41414A"
+            focusable={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "marginRight": 5,
+                },
+                Object {
+                  "opacity": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4282466634,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#41414A",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "marginBottom": 0,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 0,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            19 am
+          </Text>
+        </View>
       </View>
     </View>
   </View>
@@ -896,13 +926,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
     style={
       Array [
         Object {
-          "backgroundColor": "#FFFFFF",
-          "borderRadius": 8,
           "elevation": 4,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.25)",
           "shadowOffset": Object {
             "height": 2,
@@ -911,251 +935,81 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
           "shadowOpacity": 1,
           "shadowRadius": 6,
         },
-        Object {
-          "flexDirection": "row",
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-          "width": 280,
-        },
       ]
     }
-    variant=""
-    variantIntensity={3}
   >
     <View
       style={
         Array [
           Object {
-            "alignItems": "center",
-            "backgroundColor": "#3FA99B",
-            "borderBottomLeftRadius": 8,
-            "borderTopLeftRadius": 8,
-            "justifyContent": "center",
-            "width": 56,
-          },
-        ]
-      }
-      variant="tertiary"
-    >
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      />
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 20,
-              "fontWeight": "700",
-              "lineHeight": 24,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        19
-      </Text>
-      <Text
-        inverted={true}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "600",
-              "lineHeight": 20,
-              "marginBottom": 0,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-            },
-          ]
-        }
-      >
-        dec
-      </Text>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 16,
             "paddingTop": 16,
           },
+          Object {
+            "flexDirection": "row",
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "width": 280,
+          },
         ]
       }
+      variant=""
+      variantIntensity={3}
     >
-      <Text
-        numberOfLines={1}
-        style={
-          Array [
-            Object {
-              "color": "#41414A",
-              "fontFamily": "Open Sans",
-              "fontSize": 16,
-              "fontWeight": "600",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-              "width": 180,
-            },
-          ]
-        }
-      >
-        Yoga Class
-      </Text>
-      <Text
-        numberOfLines={1}
-        style={
-          Array [
-            Object {
-              "color": "#6B6B78",
-              "fontFamily": "Open Sans",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 8,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "marginTop": 0,
-              "paddingBottom": 0,
-              "paddingLeft": 0,
-              "paddingRight": 0,
-              "paddingTop": 0,
-              "width": 180,
-            },
-          ]
-        }
-      >
-        Gympass
-      </Text>
       <View
         style={
           Array [
             Object {
               "alignItems": "center",
-              "flexDirection": "row",
+              "backgroundColor": "#3FA99B",
+              "borderBottomLeftRadius": 8,
+              "borderTopLeftRadius": 8,
+              "justifyContent": "center",
+              "width": 56,
             },
           ]
         }
+        variant="tertiary"
       >
-        <RNSVGSvgView
-          fill="#41414A"
-          focusable={false}
+        <Text
+          inverted={true}
           style={
             Array [
               Object {
-                "backgroundColor": "transparent",
-                "borderWidth": 0,
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
               },
-              Object {
-                "marginRight": 5,
-              },
-              Object {
-                "opacity": 1,
-              },
-              null,
             ]
           }
-        >
-          <RNSVGGroup
-            fill={
-              Array [
-                0,
-                4282466634,
-              ]
-            }
-            fillOpacity={1}
-            fillRule={1}
-            font={Object {}}
-            matrix={
-              Array [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-              ]
-            }
-            opacity={1}
-            originX={0}
-            originY={0}
-            propList={
-              Array [
-                "fill",
-              ]
-            }
-            rotation={0}
-            scaleX={1}
-            scaleY={1}
-            skewX={0}
-            skewY={0}
-            stroke={null}
-            strokeDasharray={null}
-            strokeDashoffset={null}
-            strokeLinecap={0}
-            strokeLinejoin={0}
-            strokeMiterlimit={4}
-            strokeOpacity={1}
-            strokeWidth={1}
-            vectorEffect={0}
-            x={0}
-            y={0}
-          />
-        </RNSVGSvgView>
+        />
         <Text
+          inverted={true}
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#FFFFFF",
                 "fontFamily": "Open Sans",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 16,
+                "fontSize": 20,
+                "fontWeight": "700",
+                "lineHeight": 24,
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -1168,8 +1022,194 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
             ]
           }
         >
-          19 am
+          19
         </Text>
+        <Text
+          inverted={true}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "600",
+                "lineHeight": 20,
+                "marginBottom": 0,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+              },
+            ]
+          }
+        >
+          dec
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Open Sans",
+                "fontSize": 16,
+                "fontWeight": "600",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": 180,
+              },
+            ]
+          }
+        >
+          Yoga Class
+        </Text>
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Open Sans",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+                "marginBottom": 8,
+                "marginLeft": 0,
+                "marginRight": 0,
+                "marginTop": 0,
+                "paddingBottom": 0,
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "width": 180,
+              },
+            ]
+          }
+        >
+          Gympass
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          <RNSVGSvgView
+            fill="#41414A"
+            focusable={false}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "marginRight": 5,
+                },
+                Object {
+                  "opacity": 1,
+                },
+                null,
+              ]
+            }
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4282466634,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#41414A",
+                  "fontFamily": "Open Sans",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "lineHeight": 16,
+                  "marginBottom": 0,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 0,
+                  "paddingBottom": 0,
+                  "paddingLeft": 0,
+                  "paddingRight": 0,
+                  "paddingTop": 0,
+                },
+              ]
+            }
+          >
+            19 am
+          </Text>
+        </View>
       </View>
     </View>
   </View>
