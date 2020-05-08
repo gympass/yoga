@@ -4,6 +4,19 @@ import { string, shape, oneOf, node } from 'prop-types';
 
 import Text from '../../../Text';
 
+const CardShadow = styled.View(
+  ({
+    theme: {
+      yoga: {
+        components: { card },
+      },
+    },
+  }) => `
+    box-shadow: ${card.elevation};
+    elevation: 4;
+`,
+);
+
 const CardStyled = styled.View(
   ({
     variant,
@@ -25,8 +38,8 @@ const CardStyled = styled.View(
     background-color: ${
       variant ? color[variantIntensity] : card.backgroundColor
     };
-    box-shadow: ${card.elevation};
     elevation: 4;
+    overflow: hidden;
 `,
 );
 
@@ -79,17 +92,19 @@ const RibbonText = styled(Text.Tiny)`
 `;
 
 const Card = ({ ribbon, children, ...rest }) => (
-  <CardStyled {...rest}>
-    {Object.keys(ribbon).length > 0 && (
-      <Ribbon
-        variant={ribbon.variant}
-        variantIntensity={ribbon.variantIntensity}
-      >
-        <RibbonText variant={ribbon.variant}>{ribbon.text}</RibbonText>
-      </Ribbon>
-    )}
-    {children}
-  </CardStyled>
+  <CardShadow>
+    <CardStyled {...rest}>
+      {Object.keys(ribbon).length > 0 && (
+        <Ribbon
+          variant={ribbon.variant}
+          variantIntensity={ribbon.variantIntensity}
+        >
+          <RibbonText variant={ribbon.variant}>{ribbon.text}</RibbonText>
+        </Ribbon>
+      )}
+      {children}
+    </CardStyled>
+  </CardShadow>
 );
 
 Card.propTypes = {

@@ -12,6 +12,7 @@ const Event = styled(Card)`
 
   width: 100%;
   padding: 0;
+  overflow: hidden;
 `;
 
 const EventInfo = styled.div`
@@ -64,9 +65,6 @@ const DateInfo = styled.div`
     variant,
     theme: {
       yoga: {
-        components: {
-          card: { event },
-        },
         colors: { [variant]: color },
       },
     },
@@ -78,9 +76,6 @@ const DateInfo = styled.div`
     flex-shrink: 0;
 
     width: 56px;
-
-    border-top-left-radius: ${event.date.radius}px;
-    border-bottom-left-radius: ${event.date.radius}px;
     background-color: ${color[2]};
   `}
 `;
