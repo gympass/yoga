@@ -8,7 +8,7 @@ const skeleton = baseTheme({
   tertiary: 'tertiary',
 });
 
-const PLACEHOLDER = true;
+const CACHE_PLACEHOLDER = null;
 
 const withoutKey = (fn, key) =>
   !{}.hasOwnProperty.call(fn, key) || key === 'prototype';
@@ -18,14 +18,18 @@ const createFakeObj = (paths, object) => {
 
   // We only need the key to be present, the value does not matter.
   Object.keys(object).forEach(key => {
-    fn[key] = PLACEHOLDER;
+    fn[key] = CACHE_PLACEHOLDER;
   });
 
   return new Proxy(fn, {
     get(target, key) {
       if (withoutKey(fn, key)) return target[key];
 
-      return createFakeObj([...paths, key], object[key]);
+      if (fn[key]) return fn[key];
+
+      // We replace the value, this will be used as cache on the next call.
+      fn[key] = createFakeObj([...paths, key], object[key]);
+      return fn[key];
     },
   });
 };
