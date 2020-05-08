@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.2.0...@gympass/yoga@2.2.1) (2020-05-08)
+
+
+### Bug Fixes
+
+* **card:** adjusting card shadow and event-card style ([8cc6083](https://github.com/Gympass/yoga/commit/8cc6083356d7bac48bb340216308a20fc8327e9a))
+* **card:** fix card shadow on ios and android platforms ([4b57bee](https://github.com/Gympass/yoga/commit/4b57bee65c04f2e439c255afbc04a1644bde3435))
+* **eventcard:** remove unnecessary border-radius ([6ce5919](https://github.com/Gympass/yoga/commit/6ce5919d104d0a3e4da9d6817ab1838724ded4b2))
+
+
+
+
+
 # [2.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.1.3...@gympass/yoga@2.2.0) (2020-04-06)
 
 ### Features

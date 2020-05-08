@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.13](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.12...@gympass/yoga-labnative@0.15.13) (2020-05-08)
+
+
+### Bug Fixes
+
+* **card:** adjusting card shadow and event-card style ([8cc6083](https://github.com/Gympass/yoga/commit/8cc6083356d7bac48bb340216308a20fc8327e9a))
+* **card:** fix card shadow on ios and android platforms ([4b57bee](https://github.com/Gympass/yoga/commit/4b57bee65c04f2e439c255afbc04a1644bde3435))
+* **metro:** fix import-blob in metro config ([48d4153](https://github.com/Gympass/yoga/commit/48d4153bee29bff6cad6f9fe43de05c053092faf))
+
+
+
+
+
 ## [0.15.12](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.11...@gympass/yoga-labnative@0.15.12) (2020-04-06)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
