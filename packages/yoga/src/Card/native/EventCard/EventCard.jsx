@@ -46,6 +46,7 @@ const EventInfo = styled.View`
       },
     },
   }) => `
+    flex: 1;
     padding: ${event.info.padding.top}px ${event.info.padding.right}px
       ${event.info.padding.bottom}px ${event.info.padding.left}px;
   `}
@@ -91,7 +92,6 @@ const Name = styled(Text.H4)`
       },
     },
   }) => `
-    width: 180px;
     margin-bottom: ${event.info.name.marginBottom}px;
 
     font-weight: ${event.info.name.fontWeight};
@@ -134,23 +134,25 @@ const EventCard = ({
     },
   },
   ...rest
-}) => (
-  <Event {...rest}>
-    <DateInfo variant={variant}>
-      <DayOfWeek inverted>{date.dayOfWeek}</DayOfWeek>
-      <Text.H3 inverted>{date.day}</Text.H3>
-      <Month inverted>{date.month}</Month>
-    </DateInfo>
-    <EventInfo>
-      <Name numberOfLines={1}>{event.name}</Name>
-      <Place numberOfLines={1}>{event.place}</Place>
-      <EventTime>
-        <Clock fill={icon.fill} style={{ marginRight: 5 }} />
-        <Text.Tiny>{event.time}</Text.Tiny>
-      </EventTime>
-    </EventInfo>
-  </Event>
-);
+}) => {
+  return (
+    <Event {...rest}>
+      <DateInfo variant={variant}>
+        <DayOfWeek inverted>{date.dayOfWeek}</DayOfWeek>
+        <Text.H3 inverted>{date.day}</Text.H3>
+        <Month inverted>{date.month}</Month>
+      </DateInfo>
+      <EventInfo>
+        <Name numberOfLines={1}>{event.name}</Name>
+        <Place numberOfLines={1}>{event.place}</Place>
+        <EventTime>
+          <Clock fill={icon.fill} style={{ marginRight: 5 }} />
+          <Text.Tiny>{event.time}</Text.Tiny>
+        </EventTime>
+      </EventInfo>
+    </Event>
+  );
+};
 
 EventCard.propTypes = {
   /** event information: { name (string), place (string), time (string) } */

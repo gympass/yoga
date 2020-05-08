@@ -38,6 +38,7 @@ const CardStyled = styled.View(
     background-color: ${
       variant ? color[variantIntensity] : card.backgroundColor
     };
+    elevation: 4;
     overflow: hidden;
 `,
 );

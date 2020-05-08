@@ -32,6 +32,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
@@ -127,6 +128,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ri
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
@@ -224,6 +226,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
@@ -321,6 +324,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
@@ -455,6 +459,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
           Object {
             "backgroundColor": "#8051E1",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
@@ -589,6 +594,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
@@ -801,6 +807,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
           Object {
             "backgroundColor": "#8051E1",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
@@ -1013,6 +1020,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
           Object {
             "backgroundColor": "#3FA99B",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,

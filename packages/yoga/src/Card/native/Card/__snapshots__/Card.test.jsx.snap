@@ -32,6 +32,7 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,

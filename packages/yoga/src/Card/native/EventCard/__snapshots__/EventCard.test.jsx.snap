@@ -32,6 +32,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
@@ -141,6 +142,9 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
         style={
           Array [
             Object {
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -167,7 +171,6 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "width": 180,
               },
             ]
           }
@@ -336,6 +339,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
@@ -445,6 +449,9 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
         style={
           Array [
             Object {
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -471,7 +478,6 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "width": 180,
               },
             ]
           }
@@ -640,6 +646,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
@@ -749,6 +756,9 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
         style={
           Array [
             Object {
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -775,7 +785,6 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "width": 180,
               },
             ]
           }
@@ -944,6 +953,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
+            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
@@ -1053,6 +1063,9 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
         style={
           Array [
             Object {
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
               "paddingBottom": 16,
               "paddingLeft": 16,
               "paddingRight": 16,
@@ -1079,7 +1092,6 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
                 "paddingLeft": 0,
                 "paddingRight": 0,
                 "paddingTop": 0,
-                "width": 180,
               },
             ]
           }
