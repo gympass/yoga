@@ -65,7 +65,13 @@
     ],
     "nohoist": [
       "@gympass/yoga-labnative/react-native*",
-      "@gympass/yoga-labnative/react-native*/**"
+      "@gympass/yoga-labnative/react-native*/**",
+      "@gympass/yoga-labnative/@react-navigation*",
+      "@gympass/yoga-labnative/@react-navigation/**",
+      "**/@react-navigation",
+      "**/@react-navigation/**",
+      "**/@react-navigation/core/",
+      "**/@react-navigation/core/**"
     ]
   },
   "config": {
