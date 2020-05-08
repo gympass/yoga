@@ -120,8 +120,6 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 56px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
   background-color: #8051E1;
 }
 
@@ -324,8 +322,6 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 56px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
   background-color: #F78D82;
 }
 
@@ -528,8 +524,6 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 56px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
   background-color: #8051E1;
 }
 
@@ -732,8 +726,6 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 56px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
   background-color: #3FA99B;
 }
 
