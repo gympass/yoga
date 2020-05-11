@@ -1,4 +1,4 @@
-import ThemeProvider, { themes } from './Theme';
+import ThemeProvider, { themes, theme } from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -17,6 +17,7 @@ import TextArea from './TextArea';
 export {
   ThemeProvider,
   themes,
+  theme,
   Button,
   List,
   Checkbox,

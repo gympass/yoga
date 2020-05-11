@@ -1,4 +1,4 @@
-import ThemeProvider, { FontLoader, themes } from './Theme';
+import ThemeProvider, { FontLoader, themes, theme } from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -20,6 +20,7 @@ export {
   ThemeProvider,
   FontLoader,
   themes,
+  theme,
   Button,
   List,
   Checkbox,

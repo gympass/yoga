@@ -1,0 +1,88 @@
+---
+title: 'Theme Reader'
+metaTitle: 'ThemeReader'
+metaDescription: 'ThemeReader Helper'
+---
+
+# Theme Reader
+
+### Reference
+
+We created this helper to make the usage of the yoga theme tokens easier. This
+exists to replace the `${(props) => props.theme.yoga[token]}` usage, which can
+get confusing if you are using it multiple times.
+
+It has the following signature, exemplified:
+
+```javascript type=highlight
+theme.spacing.large = (props) => props.theme.yoga.spacing.large
+```
+
+### Usage
+
+This is a simple usage:
+
+```javascript type=highlight
+import styled from 'styled-components';
+import { theme } from '@gympass/yoga';
+
+const MyCoolComponent = styled.div`
+  padding: ${theme.spacing.large}px;
+  background-color: ${theme.colors.primary};
+`;
+```
+
+But since every selection returns a function, you could do some advanced things
+with it:
+
+> *This example is just to illustrate the capabilities of the helper*
+
+```javascript type=highlight
+import styled from 'styled-components';
+import { theme } from '@gympass/yoga';
+
+const MyCoolComponent = styled.div`
+  margin: ${(props) => {
+    // We explicitly called the helper.
+    const spacings = theme.spacing(props);
+
+    const index = Math.floor(Math.random() * spacings.length) + 1;
+
+    return spacings[index];
+  }}px;
+
+  color: ${(props) => {
+    // Just to exemplify how you can use the helper.
+    const values = theme(props);
+
+    const color = values.color.primary;
+
+    return color;
+  }}
+`;
+```
+
+### Difference
+
+Using this helper you can make changes like this:
+
+```javascript type=highlight
+// Before:
+import styled from 'styled-components';
+
+const MyCoolComponent = styled.div`
+  padding: ${(props) => props.theme.yoga.spacing.large}px;
+  background-color: ${(props) => props.theme.yoga.colors.primary};
+`;
+
+// After:
+import styled from 'styled-components';
+import { theme } from '@gympass/yoga';
+
+const MyCoolComponent = styled.div`
+  padding: ${theme.spacing.large}px;
+  background-color: ${theme.colors.primary};
+`;
+```
+
+Less repetition, better readability!
