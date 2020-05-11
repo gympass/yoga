@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.2.2...@gympass/yoga@2.3.0) (2020-05-11)
+
+
+### Bug Fixes
+
+* **themeReader:** add prototype validation ([c7adb13](https://github.com/Gympass/yoga/commit/c7adb13b27b44e486aed3221a1382fcc80d290aa))
+
+
+### Features
+
+* **themeReader:** add "cache" to the logic ([6c70367](https://github.com/Gympass/yoga/commit/6c70367c5a65a02dfb783c8d48dc6e92c1207427))
+* create theme reader ([6d30739](https://github.com/Gympass/yoga/commit/6d307393b8603373a2ad8e8385d203127e438d1d))
+
+
+
+
+
 ## [2.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.2.1...@gympass/yoga@2.2.2) (2020-05-11)
 
 **Note:** Version bump only for package @gympass/yoga
