@@ -52,11 +52,23 @@
         "doc",
         "review"
       ]
+    },
+    {
+      "login": "tcK1",
+      "name": "Kaic Bastidas",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/9873486?v=4",
+      "profile": "http://linkedin.com/in/kaicbastidas",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "yoga",
   "projectOwner": "Gympass",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "skipCi": true
 }
