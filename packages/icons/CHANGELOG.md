@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.8.0...@gympass/yoga-icons@0.9.0) (2020-05-11)
+
+
+### Features
+
+* **icons:** add lock icon ([1a285e0](https://github.com/Gympass/yoga/commit/1a285e02bc14462e58729ceba3826e3b3157670c))
+
+
+
+
+
 # [0.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.7.0...@gympass/yoga-icons@0.8.0) (2020-04-06)
 
 ### Features
