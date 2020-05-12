@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.16](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.15...@gympass/yoga-labnative@0.15.16) (2020-05-12)
+
+
+### Bug Fixes
+
+* **labnative:** adjusting custom transformer ([5761335](https://github.com/Gympass/yoga/commit/5761335bd19214153ba6c3a34af3b9de195e78a2))
+* **labnative:** remove customTransformer ([0dc1263](https://github.com/Gympass/yoga/commit/0dc126307ccead5f63475138399b0f9849d761ab))
+
+
+
+
+
 ## [0.15.15](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.14...@gympass/yoga-labnative@0.15.15) (2020-05-11)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-labnative",
-  "version": "0.15.15",
+  "version": "0.15.16",
   "private": true,
   "scripts": {
     "start": "react-native start",
