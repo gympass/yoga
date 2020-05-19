@@ -940,7 +940,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
             style={
               Array [
                 Object {
-                  "borderColor": "#2B9486",
+                  "borderColor": "#22766B",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -1222,8 +1222,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
             style={
               Array [
                 Object {
-                  "backgroundColor": "#2B9486",
-                  "borderColor": "#2B9486",
+                  "backgroundColor": "#22766B",
+                  "borderColor": "#22766B",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,

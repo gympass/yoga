@@ -462,7 +462,7 @@ exports[`<Progress /> should match snapshot with tertiary variant prop 1`] = `
 }
 
 .c2::-webkit-progress-value {
-  background-color: #2B9486;
+  background-color: #22766B;
 }
 
 .c2.c2,
@@ -471,7 +471,7 @@ exports[`<Progress /> should match snapshot with tertiary variant prop 1`] = `
 }
 
 .c2[value]::-moz-progress-bar {
-  background-color: #2B9486;
+  background-color: #22766B;
 }
 
 .c4 {
