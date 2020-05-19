@@ -25,7 +25,7 @@ const milan = ['#FFF6E6', '#FFE5B3', '#FFD380', '#FFC24C'];
 /**
  * @type {Color}
  */
-const saoPaulo = ['#6FDCCB', '#58C2B4', '#3FA99B', '#2B9486'];
+const saoPaulo = ['#B5DAD5', '#55A99E', '#2B9486', '#22766B'];
 
 /**
  * @type {Color}
@@ -36,6 +36,11 @@ const newYork = ['#606CD2', '#3847C7', '#2D399F', '#232C7B'];
  * @type {Color}
  */
 const paris = ['#BFA8F0', '#A07CE9', '#8051E1', '#652CDB'];
+
+/**
+ * @type {Color}
+ */
+const buenosAires = ['#A3C2E9', '#4686D3', '#1968C9', '#1453A0'];
 
 /**
  * @type {Color}
@@ -89,6 +94,7 @@ const colors = {
   saoPaulo,
   newYork,
   paris,
+  buenosAires,
   positive,
   negative,
   informative,
