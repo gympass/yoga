@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.17](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.16...@gympass/yoga-labnative@0.15.17) (2020-05-21)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
 ## [0.15.16](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.15...@gympass/yoga-labnative@0.15.16) (2020-05-12)
 
 

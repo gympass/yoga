@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.5.0...@gympass/yoga-tokens@0.6.0) (2020-05-21)
+
+
+### Features
+
+* **color:** add buenosAires color pallete ([642d348](https://github.com/Gympass/yoga/commit/642d348ec7a5b12dd5e6f70c78d6419f3ef0dafd))
+
+
+
+
+
 # [0.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.4.1...@gympass/yoga-tokens@0.5.0) (2020-03-09)
 
 ### Features

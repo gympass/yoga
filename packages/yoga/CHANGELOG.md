@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.3.0...@gympass/yoga@2.4.0) (2020-05-21)
+
+
+### Features
+
+* **corp theme:** change Corporate theme colors ([06510b2](https://github.com/Gympass/yoga/commit/06510b28fd6bc5069e0ea08f64f7827552106e89))
+
+
+
+
+
 # [2.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.2.2...@gympass/yoga@2.3.0) (2020-05-11)
 
 
