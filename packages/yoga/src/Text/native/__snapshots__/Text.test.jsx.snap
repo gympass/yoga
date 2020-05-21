@@ -237,7 +237,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
     style={
       Array [
         Object {
-          "color": "#2B9486",
+          "color": "#22766B",
           "fontFamily": "Open Sans",
           "fontSize": 20,
           "fontWeight": "700",

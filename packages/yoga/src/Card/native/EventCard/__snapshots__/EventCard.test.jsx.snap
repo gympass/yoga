@@ -978,7 +978,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#3FA99B",
+              "backgroundColor": "#2B9486",
               "borderBottomLeftRadius": 8,
               "borderTopLeftRadius": 8,
               "justifyContent": "center",

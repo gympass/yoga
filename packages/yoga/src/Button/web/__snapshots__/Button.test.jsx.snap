@@ -1239,7 +1239,7 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   background-color: unset;
   border: none;
   border-radius: 0;
-  color: #2B9486;
+  color: #22766B;
 }
 
 .c2:not([disabled]):hover,
@@ -1263,12 +1263,12 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
 .c2:not([disabled]):hover,
 .c2:not([disabled]):focus {
   box-shadow: unset;
-  color: #3FA99B;
+  color: #2B9486;
 }
 
 .c2:not([disabled]):active {
   background-color: unset;
-  color: #3FA99B;
+  color: #2B9486;
 }
 
 .c2:disabled {

@@ -247,7 +247,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
           Array [
             Object {
               "alignSelf": "flex-start",
-              "backgroundColor": "#2B9486",
+              "backgroundColor": "#22766B",
               "borderBottomRightRadius": 9999,
               "borderTopRightRadius": 9999,
               "color": "#FFFFFF",
@@ -1018,7 +1018,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
       style={
         Array [
           Object {
-            "backgroundColor": "#3FA99B",
+            "backgroundColor": "#2B9486",
             "borderRadius": 8,
             "elevation": 4,
             "overflow": "hidden",

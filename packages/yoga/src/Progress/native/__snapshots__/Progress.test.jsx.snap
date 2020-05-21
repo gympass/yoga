@@ -541,7 +541,7 @@ exports[`<Progress /> should match snapshot with tertiary variant prop 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#2B9486",
+              "backgroundColor": "#22766B",
               "borderRadius": 8,
               "height": "100%",
               "position": "absolute",

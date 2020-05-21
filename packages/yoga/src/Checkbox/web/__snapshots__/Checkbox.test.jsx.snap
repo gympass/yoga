@@ -50,7 +50,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with all variant styles 1`
   margin-right: 8px;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #2B9486;
+  border-color: #22766B;
 }
 
 .c12 {
@@ -105,8 +105,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with all variant styles 1`
   margin-right: 8px;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #2B9486;
-  background-color: #2B9486;
+  border-color: #22766B;
+  background-color: #22766B;
 }
 
 .c14 svg {
@@ -221,14 +221,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with all variant styles 1`
 }
 
 .c10 .c2:active .c4 {
-  background-color: rgba(88,194,180,0.75);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.75);
+  background-color: rgba(85,169,158,0.75);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
 }
 
 .c10:focus-within .c4,
 .c10:hover .c4 {
-  background-color: rgba(88,194,180,0.5);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.5);
+  background-color: rgba(85,169,158,0.5);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
 }
 
 <div>
@@ -496,14 +496,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 }
 
 .c11 .c2:active .c4 {
-  background-color: rgba(88,194,180,0.75);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.75);
+  background-color: rgba(85,169,158,0.75);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
 }
 
 .c11:focus-within .c4,
 .c11:hover .c4 {
-  background-color: rgba(88,194,180,0.5);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.5);
+  background-color: rgba(85,169,158,0.5);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
 }
 
 .c8 {
@@ -664,14 +664,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 }
 
 .c11 .c2:active .c4 {
-  background-color: rgba(88,194,180,0.75);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.75);
+  background-color: rgba(85,169,158,0.75);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
 }
 
 .c11:focus-within .c4,
 .c11:hover .c4 {
-  background-color: rgba(88,194,180,0.5);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.5);
+  background-color: rgba(85,169,158,0.5);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
 }
 
 .c8 {
@@ -841,14 +841,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 }
 
 .c11 .c2:active .c4 {
-  background-color: rgba(88,194,180,0.75);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.75);
+  background-color: rgba(85,169,158,0.75);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
 }
 
 .c11:focus-within .c4,
 .c11:hover .c4 {
-  background-color: rgba(88,194,180,0.5);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.5);
+  background-color: rgba(85,169,158,0.5);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
 }
 
 .c8 {
@@ -1011,14 +1011,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 }
 
 .c11 .c2:active .c4 {
-  background-color: rgba(88,194,180,0.75);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.75);
+  background-color: rgba(85,169,158,0.75);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
 }
 
 .c11:focus-within .c4,
 .c11:hover .c4 {
-  background-color: rgba(88,194,180,0.5);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.5);
+  background-color: rgba(85,169,158,0.5);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
 }
 
 .c8 {
@@ -1191,14 +1191,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 }
 
 .c11 .c2:active .c4 {
-  background-color: rgba(88,194,180,0.75);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.75);
+  background-color: rgba(85,169,158,0.75);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
 }
 
 .c11:focus-within .c4,
 .c11:hover .c4 {
-  background-color: rgba(88,194,180,0.5);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.5);
+  background-color: rgba(85,169,158,0.5);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
 }
 
 .c8 {
@@ -1360,14 +1360,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 }
 
 .c11 .c2:active .c4 {
-  background-color: rgba(88,194,180,0.75);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.75);
+  background-color: rgba(85,169,158,0.75);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
 }
 
 .c11:focus-within .c4,
 .c11:hover .c4 {
-  background-color: rgba(88,194,180,0.5);
-  box-shadow: 0 0 0 8px rgba(88,194,180,0.5);
+  background-color: rgba(85,169,158,0.5);
+  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
 }
 
 .c8 {

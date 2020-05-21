@@ -2,8 +2,8 @@ import BaseTheme from './BaseTheme';
 
 const Corporate = tokens => {
   const colors = {
-    primary: tokens.colors.newYork,
-    secondary: tokens.colors.paris,
+    primary: tokens.colors.buenosAires,
+    secondary: tokens.colors.saoPaulo,
   };
 
   return { colors, ...BaseTheme(colors) };

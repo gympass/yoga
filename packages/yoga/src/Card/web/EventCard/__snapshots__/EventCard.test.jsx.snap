@@ -726,7 +726,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 56px;
-  background-color: #3FA99B;
+  background-color: #2B9486;
 }
 
 .c4 {
