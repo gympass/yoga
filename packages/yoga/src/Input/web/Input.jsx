@@ -9,6 +9,7 @@ import Label from './Label';
 import Helper from './Helper';
 
 const Control = styled.div`
+  box-sizing: border-box;
   ${({ full }) => `
     width: ${full ? '100%' : 'auto'};
   `}
