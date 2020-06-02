@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.4.0...@gympass/yoga@2.4.1) (2020-06-02)
+
+
+### Bug Fixes
+
+* **input:** new property box-sizing in input component ([1b2f2dc](https://github.com/Gympass/yoga/commit/1b2f2dc856246e4c40804bf738a003c62d946dfa))
+
+
+
+
+
 # [2.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.3.0...@gympass/yoga@2.4.0) (2020-05-21)
 
 
