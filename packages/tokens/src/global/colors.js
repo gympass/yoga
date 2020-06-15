@@ -30,7 +30,7 @@ const saoPaulo = ['#B5DAD5', '#55A99E', '#2B9486', '#22766B'];
 /**
  * @type {Color}
  */
-const newYork = ['#606CD2', '#3847C7', '#2D399F', '#232C7B'];
+const newYork = ['#D7DAF3', '#5F6BD2', '#3847C7', '#27318B'];
 
 /**
  * @type {Color}
