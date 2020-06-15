@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.6.0...@gympass/yoga-tokens@0.7.0) (2020-06-15)
+
+
+### Features
+
+* **colors:** new York colors updated ([0bc2594](https://github.com/Gympass/yoga/commit/0bc2594b7d04051c8463bd4af01c86823f12c527))
+
+
+
+
+
 # [0.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.5.0...@gympass/yoga-tokens@0.6.0) (2020-05-21)
 
 

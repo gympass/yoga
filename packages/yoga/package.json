@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga",
-  "version": "2.4.1",
+  "version": "2.5.0",
   "description": "Gympass component library",
   "main": "./src",
   "sideEffects": false,
@@ -36,7 +36,7 @@
   "dependencies": {
     "@gympass/yoga-common": "^0.1.1",
     "@gympass/yoga-icons": "^0.9.0",
-    "@gympass/yoga-tokens": "^0.6.0",
+    "@gympass/yoga-tokens": "^0.7.0",
     "@ptomasroos/react-native-multi-slider": "^1.0.0",
     "downshift": "^5.0.0",
     "prop-types": "^15.7.2",
