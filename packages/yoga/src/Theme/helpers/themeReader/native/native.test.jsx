@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { render } from '@testing-library/react-native';
 
 import ThemeProvider, { theme } from '../../../index.native';
@@ -16,6 +16,39 @@ describe('themeReader - web specs', () => {
     const { asJSON } = render(
       <ThemeProvider>
         <Component testID="component">Teste</Component>
+      </ThemeProvider>,
+    );
+
+    expect(asJSON().children[0].props.style).toEqual([
+      { borderWidth: 1, borderColor: 'black', borderStyle: 'solid' },
+    ]);
+  });
+
+  it('should render with conditional', () => {
+    const Component = styled.View`
+      border: ${({ borders }) =>
+        borders
+          ? css`
+              ${theme.borders.small}px solid
+            `
+          : 'none'};
+    `;
+
+    const { asJSON, rerender } = render(
+      <ThemeProvider>
+        <Component borders={false} testID="component">
+          Teste
+        </Component>
+      </ThemeProvider>,
+    );
+
+    expect(asJSON().children[0].props.style).toEqual([
+      { borderWidth: 0, borderColor: 'black', borderStyle: 'solid' },
+    ]);
+
+    rerender(
+      <ThemeProvider>
+        <Component borders data-testid="component" />
       </ThemeProvider>,
     );
 
