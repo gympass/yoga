@@ -26,6 +26,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
   border-style: solid;
   border-color: #D3D3E2;
   height: 88px;
+  box-sizing: border-box;
   padding-top: 16px;
   padding-right: 16px;
   padding-bottom: 16px;
@@ -67,10 +68,10 @@ exports[`<TextArea /> should match snapshot 1`] = `
 
 .c2 {
   width: 100%;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
   outline: none;
   height: 100%;
   padding-top: 16px;
