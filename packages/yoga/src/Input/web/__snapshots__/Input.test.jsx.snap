@@ -43,10 +43,10 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 
 .c2 {
   width: 100%;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
   outline: none;
   height: 100%;
   padding-top: 16px;
@@ -175,7 +175,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 
 .c0 {
   box-sizing: border-box;
-  width: auto;
+  width: 320px;
 }
 
 <div>
@@ -268,10 +268,10 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 
 .c2 {
   width: 100%;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
   outline: none;
   height: 100%;
   padding-top: 16px;
@@ -401,7 +401,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 
 .c0 {
   box-sizing: border-box;
-  width: auto;
+  width: 320px;
 }
 
 <div>
@@ -491,10 +491,10 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 
 .c2 {
   width: 100%;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
   outline: none;
   height: 100%;
   padding-top: 16px;
@@ -638,7 +638,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 
 .c0 {
   box-sizing: border-box;
-  width: auto;
+  width: 320px;
 }
 
 <div>
@@ -728,10 +728,10 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 
 .c2 {
   width: 100%;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
   outline: none;
   height: 100%;
   padding-top: 16px;
@@ -941,10 +941,10 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 
 .c2 {
   width: 100%;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
   outline: none;
   height: 100%;
   padding-top: 16px;
@@ -1091,7 +1091,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 
 .c0 {
   box-sizing: border-box;
-  width: auto;
+  width: 320px;
 }
 
 <div>
@@ -1189,10 +1189,10 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 
 .c2 {
   width: 100%;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
   outline: none;
   height: 100%;
   padding-top: 16px;
@@ -1321,7 +1321,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 
 .c0 {
   box-sizing: border-box;
-  width: auto;
+  width: 320px;
 }
 
 <div>

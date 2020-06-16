@@ -43,10 +43,10 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 
 .c4 {
   width: 100%;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
   outline: none;
   height: 100%;
   padding-top: 16px;
@@ -277,10 +277,10 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 
 .c4 {
   width: 100%;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
   outline: none;
   height: 100%;
   padding-top: 16px;
@@ -409,7 +409,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 
 .c1 {
   box-sizing: border-box;
-  width: auto;
+  width: 320px;
 }
 
 .c3 {
@@ -511,10 +511,10 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c4 {
   width: 100%;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
   outline: none;
   height: 100%;
   padding-top: 16px;
@@ -860,10 +860,10 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c4 {
   width: 100%;
+  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-color: transparent;
   outline: none;
   height: 100%;
   padding-top: 16px;
@@ -1005,7 +1005,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c1 {
   box-sizing: border-box;
-  width: auto;
+  width: 320px;
 }
 
 .c3 {
