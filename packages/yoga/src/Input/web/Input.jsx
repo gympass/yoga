@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { func, string, bool, number, shape, oneOfType } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
+import { theme } from '../../Theme';
 import Wrapper from './Wrapper';
 import Field from './Field';
 import Label from './Label';
@@ -10,9 +11,12 @@ import Helper from './Helper';
 
 const Control = styled.div`
   box-sizing: border-box;
-  ${({ full }) => `
-    width: ${full ? '100%' : 'auto'};
-  `}
+  width: ${({ full }) =>
+    full
+      ? '100%'
+      : css`
+          ${theme.components.input.width}px
+        `};
 `;
 
 const Input = React.forwardRef(

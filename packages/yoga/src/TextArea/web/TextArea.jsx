@@ -26,6 +26,7 @@ const StyledWrapper = styled(Wrapper)`
     },
   }) => `
     height: 88px;
+    box-sizing: border-box;
 
     padding-top: ${textarea.padding.top}px;
     padding-right: ${textarea.padding.right}px;
