@@ -10,8 +10,15 @@ import Helper from './Helper';
 
 const Control = styled.div`
   box-sizing: border-box;
-  ${({ full }) => `
-    width: ${full ? '100%' : 'auto'};
+  ${({
+    full,
+    theme: {
+      yoga: {
+        components: { input },
+      },
+    },
+  }) => `
+    width: ${full ? '100%' : `${input.width}px`};
   `}
 `;
 

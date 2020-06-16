@@ -24,8 +24,10 @@ const labelTransition = css`
 
 const Field = styled.input`
   width: 100%;
-  appearance: none;
+
   background-color: transparent;
+
+  appearance: none;
   outline: none;
 
   ${({
