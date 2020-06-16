@@ -12,6 +12,7 @@ const StyledView = styled.View`
 const SliderPage = () => {
   const [simple, setSimple] = useState([0]);
   const [withTooltip, setWithTooltip] = useState([0, 10]);
+  const [withAlwaysTooltip, setWithAlwaysTooltip] = useState([0, 10]);
   const [overlapMultiLabel, setOverlapMultiLabel] = useState([0, 10]);
   const [singleSnapped, setSingleSnapped] = useState([0]);
   const [multiValues, setMultiValues] = useState([0, 7]);
@@ -50,6 +51,26 @@ const SliderPage = () => {
               title: 'Title',
               description: `Description`,
               visible: true,
+            },
+          ]}
+        />
+      </StyledView>
+      <StyledView>
+        <DocTitle>With Always showing Tooltip</DocTitle>
+        <Slider
+          min={0}
+          max={10}
+          sliderLength={300}
+          values={withAlwaysTooltip}
+          step={1}
+          onValuesChange={e => setWithAlwaysTooltip(e)}
+          tooltip={[
+            {
+              ribbon: 'Ribbon',
+              title: 'Title',
+              description: `Description`,
+              visible: true,
+              alwaysShow: true,
             },
           ]}
         />

@@ -60,7 +60,7 @@ CirclePressed.defaultProps = {
 
 const Marker = ({ pressed, tooltip }) => (
   <>
-    {pressed && tooltip && (
+    {tooltip && (pressed || tooltip.alwaysShow) && (
       <Tooltip
         description={tooltip.description}
         title={tooltip.title}
@@ -80,6 +80,7 @@ Marker.propTypes = {
     ribbon: string,
     visible: bool,
     step: number,
+    alwaysShow: bool,
   }),
 };
 

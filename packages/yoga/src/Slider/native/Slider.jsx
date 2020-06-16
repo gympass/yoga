@@ -114,7 +114,7 @@ Slider.propTypes = {
   sliderLength: number,
   /** make slider be snap through dots */
   snapped: bool,
-  /** accepts a shape with 'ribbon', 'title', 'description', 'visible' and 'step' properties */
+  /** accepts a shape with 'ribbon', 'title', 'description', 'visible', 'step' and 'alwaysShow' properties */
   tooltip: arrayOf(
     shape({
       description: string,
@@ -122,6 +122,7 @@ Slider.propTypes = {
       ribbon: string,
       visible: bool,
       step: number,
+      alwaysShow: bool,
     }),
   ),
   /** an array that accepts one or two numbers, this determines how many markers will be displayed */
