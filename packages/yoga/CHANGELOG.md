@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.0...@gympass/yoga@2.5.1) (2020-06-16)
+
+
+### Bug Fixes
+
+* **input:** fix control div to match input size ([f4eecf9](https://github.com/Gympass/yoga/commit/f4eecf9b9de84866aac37bec103f451696753966))
+* **textarea:** add missing box-sizing ([33301c3](https://github.com/Gympass/yoga/commit/33301c3a1f61047012c938973fa70f4d76c005f4)), closes [#138](https://github.com/Gympass/yoga/issues/138)
+
+
+
+
+
 # [2.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.4.1...@gympass/yoga@2.5.0) (2020-06-15)
 
 
