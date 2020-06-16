@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { arrayOf, number, shape, bool, string } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
 import styled from 'styled-components';
@@ -34,23 +34,23 @@ const Circle = styled(RCHandle)`
 `;
 
 const Marker = ({ values, dragging, index, tooltip, ...props }) => {
-  const renderTooltip = () => {
-    if (!dragging) {
-      return false;
-    }
+  const currentTooltip = useMemo(
+    () =>
+      tooltip.filter(({ step, visible }) => {
+        if (!step && step !== 0) {
+          return visible;
+        }
 
-    return tooltip.filter(({ step, visible }) => {
-      if (!step && step !== 0) {
-        return visible;
-      }
-
-      return visible && values[index] === step;
-    })[0];
-  };
+        return visible && values[index] === step;
+      })[0],
+    [values, index, tooltip],
+  );
 
   return (
     <Circle data-dragging={Boolean(dragging)} {...props}>
-      {dragging && <Tooltip data={renderTooltip()} />}
+      {(currentTooltip?.alwaysShow || dragging) && (
+        <Tooltip data={currentTooltip} />
+      )}
     </Circle>
   );
 };

@@ -209,7 +209,7 @@ Slider.propTypes = {
   minLabel: oneOfType([string, number]),
   /** make slider be snap through dots */
   snapped: bool,
-  /** accepts a shape with 'ribbon', 'title', 'description', 'visible' and 'step' properties */
+  /** accepts a shape with 'ribbon', 'title', 'description', 'visible', 'step' and 'alwaysShow' properties */
   tooltip: arrayOf(
     shape({
       ribbon: string,
@@ -217,6 +217,7 @@ Slider.propTypes = {
       description: string,
       visible: bool,
       step: number,
+      alwaysShow: bool,
     }),
   ),
   /** an array that accepts one or two numbers, this determines how many markers will be displayed */

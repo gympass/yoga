@@ -91,5 +91,29 @@ describe('<Slider />', () => {
       expect(getByText('description')).toBeTruthy();
       expect(container).toMatchSnapshot();
     });
+
+    it('should keep the tooltip rendered if alwaysShow is truthy', () => {
+      const { container, getByText } = render(
+        <ThemeProvider>
+          <Slider
+            values={[0]}
+            tooltip={[
+              {
+                ribbon: 'ribbon',
+                title: 'title',
+                description: 'description',
+                visible: true,
+                alwaysShow: true,
+              },
+            ]}
+          />
+        </ThemeProvider>,
+      );
+
+      expect(getByText('ribbon')).toBeTruthy();
+      expect(getByText('title')).toBeTruthy();
+      expect(getByText('description')).toBeTruthy();
+      expect(container).toMatchSnapshot();
+    });
   });
 });
