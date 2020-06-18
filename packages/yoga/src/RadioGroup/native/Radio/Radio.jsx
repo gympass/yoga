@@ -126,7 +126,7 @@ const RadioGroupRadio = ({ value, disabled, ...rest }) => {
       {...context}
     >
       <RadioMark checked={checked} disabled={disabled} {...rest}>
-        <Dot checked={checked} disabled={disabled} />
+        {checked && <Dot checked={checked} disabled={disabled} />}
         {pressing && <Shadow />}
       </RadioMark>
     </TouchableWithoutFeedback>
