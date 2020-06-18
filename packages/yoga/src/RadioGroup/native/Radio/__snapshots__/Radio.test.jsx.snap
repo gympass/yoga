@@ -30,22 +30,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
           },
         ]
       }
-    >
-      <View
-        checked={false}
-        disabled={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#A9A9B8",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-    </View>
+    />
   </TouchableWithoutFeedback>
 </View>
 `;
@@ -80,22 +65,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
           },
         ]
       }
-    >
-      <View
-        checked={false}
-        disabled={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#A9A9B8",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-    </View>
+    />
   </TouchableWithoutFeedback>
 </View>
 `;
@@ -132,20 +102,6 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
       }
       testID="radio"
     >
-      <View
-        checked={false}
-        disabled={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#A9A9B8",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
       <View
         style={
           Array [
@@ -197,22 +153,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
           },
         ]
       }
-    >
-      <View
-        checked={false}
-        disabled={true}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#C5C5D6",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-    </View>
+    />
   </TouchableWithoutFeedback>
 </View>
 `;
