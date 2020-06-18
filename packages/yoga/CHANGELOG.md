@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.1...@gympass/yoga@2.5.2) (2020-06-18)
+
+
+### Bug Fixes
+
+* **radiobutton:** fix radio-button dot ([7e6dc39](https://github.com/Gympass/yoga/commit/7e6dc39e6b03bcc58bd968f6d7a58e9f4276720d))
+
+
+
+
+
 ## [2.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.0...@gympass/yoga@2.5.1) (2020-06-16)
 
 
