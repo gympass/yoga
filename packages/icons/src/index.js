@@ -10,6 +10,7 @@ import {
   TriangleAlert,
   Visibility,
   VisibilityOff,
+  Youtube,
 } from './svg';
 
 export {
@@ -24,4 +25,5 @@ export {
   TriangleAlert,
   Visibility,
   VisibilityOff,
+  Youtube,
 };

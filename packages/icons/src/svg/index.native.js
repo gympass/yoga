@@ -9,6 +9,7 @@ import Star from './star.svg';
 import TriangleAlert from './triangle_alert.svg';
 import Visibility from './visibility.svg';
 import VisibilityOff from './visibility_off.svg';
+import Youtube from './youtube.svg';
 
 export {
   ArrowDown,
@@ -22,4 +23,5 @@ export {
   TriangleAlert,
   Visibility,
   VisibilityOff,
+  Youtube,
 };
