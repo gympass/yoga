@@ -3,7 +3,7 @@ module.exports = {
     web: {
       presets: [['@babel/preset-env'], '@babel/preset-react'],
       ignore: ['**/*.native.js'],
-      plugins: ['inline-react-svg'],
+      plugins: [['inline-react-svg', { svgo: false }]],
     },
 
     esm: {
@@ -12,7 +12,7 @@ module.exports = {
         '@babel/preset-react',
       ],
       ignore: ['**/*.native.js'],
-      plugins: ['inline-react-svg'],
+      plugins: [['inline-react-svg', { svgo: false }]],
     },
 
     native: {
