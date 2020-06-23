@@ -1,14 +1,16 @@
 # Yoga Icons
 
-<img src="./src/svg/star.svg" alt="Star" width="12" height="12" />
-<img src="./src/svg/building.svg" alt="building" width="12" height="12" />
-<img src="./src/svg/clock.svg" alt="clock" width="12" height="12" />
-<img src="./src/svg/triangle_alert.svg" alt="triangle_alert" width="12" height="12" />
-<img src="./src/svg/close.svg" alt="triangle_alert" width="12" height="12" />
-<img src="./src/svg/visibility.svg" alt="triangle_alert" width="12" height="12" />
-<img src="./src/svg/visibility_off.svg" alt="triangle_alert" width="12" height="12" />
-<img src="./src/svg/arrow_down.svg" alt="arrow_down" width="12" height="12" />
-<img src="./src/svg/youtube.svg" alt="youtube" width="12" height="12" />
+<p style="float: left;">
+  <img src="./src/svg/star.svg" alt="Star" title="Star" width="12"  />
+  <img src="./src/svg/building.svg" alt="building" title="building" width="12"  />
+  <img src="./src/svg/clock.svg" alt="clock" title="clock" width="12"  />
+  <img src="./src/svg/triangle_alert.svg" alt="triangle_alert" title="triangle_alert" width="12"  />
+  <img src="./src/svg/close.svg" alt="triangle_alert" title="triangle_alert" width="12"  />
+  <img src="./src/svg/visibility.svg" alt="triangle_alert" title="triangle_alert" width="12"  />
+  <img src="./src/svg/visibility_off.svg" alt="triangle_alert" title="triangle_alert" width="12"  />
+  <img src="./src/svg/arrow_down.svg" alt="arrow_down" title="arrow_down" width="12"  />
+  <img src="./src/svg/youtube.svg" alt="youtube" title="youtube" width="12"  />
+</p>
 
 ## Instalation
 
