@@ -4314,7 +4314,7 @@ babel-plugin-import-glob@^2.0.0:
     identifierfy "^1.1.0"
     minimatch-capture "^1.1.0"
 
-babel-plugin-inline-react-svg@^1.1.0:
+babel-plugin-inline-react-svg@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-inline-react-svg/-/babel-plugin-inline-react-svg-1.1.1.tgz#3fce30c5653a6c032c21ccc2b3e0141cd494b1d8"
   integrity sha512-KCCzSKJUigDXd/dxJDE6uNyVTYE46FiTt8Md3vpYHtbADeTjOLJq5LkmaVpISplxKCK25VZU8sha2Km6uIEFJA==
