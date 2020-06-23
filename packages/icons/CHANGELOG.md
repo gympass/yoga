@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.10.0...@gympass/yoga-icons@0.11.0) (2020-06-23)
+
+
+### Features
+
+* **icons:** add svgr to build process using [@dr](https://github.com/dr).pogodin/babel-preset-svgr ([90e5cab](https://github.com/Gympass/yoga/commit/90e5caba1b28b1bdfcf353a75fed7c0e3068eb46))
+
+
+
+
+
 # [0.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.9.0...@gympass/yoga-icons@0.10.0) (2020-06-23)
 
 
