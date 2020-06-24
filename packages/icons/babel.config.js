@@ -10,7 +10,14 @@ module.exports = {
       presets: [
         ['@babel/preset-env'],
         '@babel/preset-react',
-        '@dr.pogodin/babel-preset-svgr',
+        [
+          '@dr.pogodin/babel-preset-svgr',
+          {
+            svgr: {
+              removeViewBox: false,
+            },
+          },
+        ],
       ],
       ignore: ['**/*.native.js'],
     },
@@ -19,7 +26,14 @@ module.exports = {
       presets: [
         ['@babel/preset-env', { modules: false }],
         '@babel/preset-react',
-        '@dr.pogodin/babel-preset-svgr',
+        [
+          '@dr.pogodin/babel-preset-svgr',
+          {
+            svgr: {
+              removeViewBox: false,
+            },
+          },
+        ],
       ],
       ignore: ['**/*.native.js'],
     },
