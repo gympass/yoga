@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.5...@gympass/yoga@3.0.0) (2020-08-12)
+
+
+### Features
+
+* **rubik:** add and use Rubik font instead of open-sans ([12f0ff6](https://github.com/Gympass/yoga/commit/12f0ff62d8332ea8fcee55fb9f403bab7ff315bb))
+* **yoga:** change baseFontFamily to  rubik ([a082683](https://github.com/Gympass/yoga/commit/a0826833616ad2d351ec44a7b4b8b3fe5f346ae5))
+
+
+### BREAKING CHANGES
+
+* **rubik:** remove fontWeights.semibold and add fontWeights.medium
+
+
+
+
+
 ## [2.5.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.4...@gympass/yoga@2.5.5) (2020-06-24)
 
 **Note:** Version bump only for package @gympass/yoga

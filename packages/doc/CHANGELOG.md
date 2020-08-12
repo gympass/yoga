@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.1.15...@gympass/yoga-doc@1.2.0) (2020-08-12)
+
+
+### Features
+
+* **doc:** use Rubik as font-family ([078651f](https://github.com/Gympass/yoga/commit/078651f3dbfcb52f5df58335368ba9fb093c734c))
+
+
+
+
+
 ## [1.1.15](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.1.14...@gympass/yoga-doc@1.1.15) (2020-06-24)
 
 **Note:** Version bump only for package @gympass/yoga-doc

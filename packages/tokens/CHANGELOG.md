@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.7.0...@gympass/yoga-tokens@0.8.0) (2020-08-12)
+
+
+### Features
+
+* **tokens:** change font-family to rubik ([9e06545](https://github.com/Gympass/yoga/commit/9e065450dbbdeec863426693db714edbf1fbb461))
+
+
+
+
+
 # [0.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.6.0...@gympass/yoga-tokens@0.7.0) (2020-06-15)
 
 

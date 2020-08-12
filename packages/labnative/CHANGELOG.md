@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.24...@gympass/yoga-labnative@0.16.0) (2020-08-12)
+
+
+### Features
+
+* **fonts:** add rubik static files ([246f9a7](https://github.com/Gympass/yoga/commit/246f9a7cb19678974605ffa1b0f5c4d0e27bbcaa))
+
+
+
+
+
 ## [0.15.24](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.23...@gympass/yoga-labnative@0.15.24) (2020-06-24)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
