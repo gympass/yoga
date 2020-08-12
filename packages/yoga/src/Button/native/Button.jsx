@@ -17,6 +17,7 @@ const Label = styled.Text`
   }) => `
       font-size: ${button.font.size};
       font-weight: ${button.font.weight};
+      font-family: ${button.font.family};
       color: ${button.types.contained.font.default.color};
 
       ${disabled ? `color: ${button.types.contained.font.disabled.color};` : ''}

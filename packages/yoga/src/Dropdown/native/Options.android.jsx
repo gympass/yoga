@@ -15,16 +15,16 @@ const Option = styled(List.Item)`
     },
   }) => `
     padding:
-      ${dropdown.backdrop.content.option.padding.top}px 
-      ${dropdown.backdrop.content.option.padding.right}px 
-      ${dropdown.backdrop.content.option.padding.bottom}px 
+      ${dropdown.backdrop.content.option.padding.top}px
+      ${dropdown.backdrop.content.option.padding.right}px
+      ${dropdown.backdrop.content.option.padding.bottom}px
       ${dropdown.backdrop.content.option.padding.left}px;
 
     border-bottom-width: ${dropdown.option.border.width}px;
     background-color: ${
       isSelected ? `${dropdown.hover.option.backgroundColor}` : 'transparent'
-    }; 
-  
+    };
+
     font-family: ${baseFont.family};
     font-size: ${dropdown.option.font.size}px;
     line-height: ${dropdown.option.font.lineHeight}px;
@@ -32,7 +32,7 @@ const Option = styled(List.Item)`
       isSelected
         ? `${dropdown.selected.option.font.weight}`
         : `${dropdown.option.font.weight}`
-    }; 
+    };
     color: ${
       isSelected
         ? `${dropdown.selected.option.font.color}`

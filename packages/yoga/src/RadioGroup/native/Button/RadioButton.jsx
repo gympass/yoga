@@ -23,12 +23,12 @@ const RadioMark = styled.View(
   }px;
   padding-left: ${radiogroup.button.padding.left}px;
   padding-right: ${radiogroup.button.padding.right}px;
-  
+
   background-color: ${radiogroup.button.backgroundColor};
   border-radius: ${radiogroup.button.border.radius}px;
-  
+
   font-size: ${radiogroup.font.size}px;
-  
+
   ${
     checked
       ? `
@@ -43,17 +43,22 @@ const Text = styled.Text(
   ({
     theme: {
       yoga: {
+        baseFont,
         components: { radiogroup },
       },
     },
     checked,
-  }) =>
-    checked
-      ? `
+  }) => `
+    font-family: ${baseFont.family};
+    ${
+      checked
+        ? `
           color: ${radiogroup.checked.font.color};
           font-weight: ${radiogroup.checked.font.weight};
         `
-      : '',
+        : ''
+    }
+    `,
 );
 
 /** Radio group allows user to select one option from a set of options. Use

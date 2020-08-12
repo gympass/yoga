@@ -8,7 +8,7 @@ const ProgressWrapper = styled.View`
   width: 100%;
 
   ${({ isNumber, align }) => `
-  
+
   ${
     isNumber
       ? `
@@ -72,11 +72,13 @@ const Label = styled.Text`
     align,
     theme: {
       yoga: {
+        baseFont,
         spacing,
         components: { progress },
       },
     },
   }) => `
+  font-family: ${baseFont.family};
   font-size: ${progress.label.font.size}px;
   text-align: ${align};
 
@@ -84,7 +86,7 @@ const Label = styled.Text`
     isNumber
       ? `
       width: 22px;
-      
+
       margin-${align === 'right' ? 'left' : 'right'}: ${spacing.xsmall}px;
     `
       : `

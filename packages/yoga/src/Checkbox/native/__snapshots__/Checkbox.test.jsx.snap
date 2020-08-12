@@ -129,6 +129,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
             Array [
               Object {
                 "color": "#41414A",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "paddingLeft": 8,
               },
@@ -153,6 +154,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
           Array [
             Object {
               "color": "#9898A6",
+              "fontFamily": "Rubik",
               "fontSize": 14,
             },
           ]
@@ -228,6 +230,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
             Array [
               Object {
                 "color": "#41414A",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "paddingLeft": 8,
               },
@@ -252,6 +255,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
           Array [
             Object {
               "color": "#9898A6",
+              "fontFamily": "Rubik",
               "fontSize": 14,
             },
           ]
@@ -393,6 +397,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
             Array [
               Object {
                 "color": "#41414A",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "paddingLeft": 8,
               },
@@ -417,6 +422,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
           Array [
             Object {
               "color": "#9898A6",
+              "fontFamily": "Rubik",
               "fontSize": 14,
             },
           ]
@@ -492,6 +498,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
             Array [
               Object {
                 "color": "#41414A",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "paddingLeft": 8,
               },
@@ -516,6 +523,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
           Array [
             Object {
               "color": "#9898A6",
+              "fontFamily": "Rubik",
               "fontSize": 14,
             },
           ]
@@ -658,6 +666,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
             Array [
               Object {
                 "color": "#41414A",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "paddingLeft": 8,
               },
@@ -683,6 +692,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
           Array [
             Object {
               "color": "#CB3530",
+              "fontFamily": "Rubik",
               "fontSize": 14,
             },
           ]
@@ -759,6 +769,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
             Array [
               Object {
                 "color": "#41414A",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "paddingLeft": 8,
               },
@@ -784,6 +795,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
           Array [
             Object {
               "color": "#CB3530",
+              "fontFamily": "Rubik",
               "fontSize": 14,
             },
           ]

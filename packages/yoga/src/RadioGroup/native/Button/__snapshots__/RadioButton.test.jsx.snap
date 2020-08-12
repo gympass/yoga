@@ -32,7 +32,9 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
         checked={false}
         style={
           Array [
-            Object {},
+            Object {
+              "fontFamily": "Rubik",
+            },
           ]
         }
       >
@@ -76,7 +78,9 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
         checked={false}
         style={
           Array [
-            Object {},
+            Object {
+              "fontFamily": "Rubik",
+            },
           ]
         }
       >

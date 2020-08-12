@@ -14,10 +14,10 @@ const StyledTag = styled.View`
     },
   }) => `
     width: ${full ? '100%' : 'auto'};
-    padding: 
-      ${tag.padding.top}px 
-      ${tag.padding.right}px 
-      ${tag.padding.bottom}px 
+    padding:
+      ${tag.padding.top}px
+      ${tag.padding.right}px
+      ${tag.padding.bottom}px
       ${tag.padding.left}px;
 
     background-color: ${color[0]};
@@ -36,12 +36,14 @@ const StyledText = styled.Text`
     color,
     theme: {
       yoga: {
+        baseFont,
         components: { tag },
       },
     },
   }) => `
     color: ${color[1]};
 
+    font-family: ${baseFont.family};
     font-size: ${tag.font.size}px;
     font-weight: ${tag.font.weight};
   `}

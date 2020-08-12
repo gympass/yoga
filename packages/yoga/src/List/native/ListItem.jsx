@@ -19,10 +19,11 @@ const StyledView = styled.View(
         `
       : ''
   }
-    padding: 
-      ${list.listItem.padding.top}px 
-      ${list.listItem.padding.right}px 
-      ${list.listItem.padding.bottom}px 
+
+    padding:
+      ${list.listItem.padding.top}px
+      ${list.listItem.padding.right}px
+      ${list.listItem.padding.bottom}px
       ${list.listItem.padding.left}px;
   `,
 );

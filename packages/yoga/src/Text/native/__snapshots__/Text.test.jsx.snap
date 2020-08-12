@@ -15,7 +15,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
       Array [
         Object {
           "color": "#41414A",
-          "fontFamily": "Open Sans",
+          "fontFamily": "Rubik",
           "fontSize": 32,
           "fontWeight": "700",
           "lineHeight": 40,
@@ -38,7 +38,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
       Array [
         Object {
           "color": "#41414A",
-          "fontFamily": "Open Sans",
+          "fontFamily": "Rubik",
           "fontSize": 24,
           "fontWeight": "700",
           "lineHeight": 32,
@@ -61,7 +61,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
       Array [
         Object {
           "color": "#41414A",
-          "fontFamily": "Open Sans",
+          "fontFamily": "Rubik",
           "fontSize": 20,
           "fontWeight": "700",
           "lineHeight": 24,
@@ -84,7 +84,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
       Array [
         Object {
           "color": "#41414A",
-          "fontFamily": "Open Sans",
+          "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "700",
           "lineHeight": 20,
@@ -108,7 +108,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
       Array [
         Object {
           "color": "#41414A",
-          "fontFamily": "Open Sans",
+          "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 20,
@@ -131,7 +131,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
       Array [
         Object {
           "color": "#41414A",
-          "fontFamily": "Open Sans",
+          "fontFamily": "Rubik",
           "fontSize": 14,
           "fontWeight": "400",
           "lineHeight": 20,
@@ -154,7 +154,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
       Array [
         Object {
           "color": "#41414A",
-          "fontFamily": "Open Sans",
+          "fontFamily": "Rubik",
           "fontSize": 12,
           "fontWeight": "400",
           "lineHeight": 16,
@@ -190,7 +190,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
       Array [
         Object {
           "color": "#F46152",
-          "fontFamily": "Open Sans",
+          "fontFamily": "Rubik",
           "fontSize": 32,
           "fontWeight": "700",
           "lineHeight": 40,
@@ -214,7 +214,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
       Array [
         Object {
           "color": "#652CDB",
-          "fontFamily": "Open Sans",
+          "fontFamily": "Rubik",
           "fontSize": 24,
           "fontWeight": "700",
           "lineHeight": 32,
@@ -238,7 +238,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
       Array [
         Object {
           "color": "#22766B",
-          "fontFamily": "Open Sans",
+          "fontFamily": "Rubik",
           "fontSize": 20,
           "fontWeight": "700",
           "lineHeight": 24,
@@ -276,7 +276,7 @@ exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
       Array [
         Object {
           "color": "#FFFFFF",
-          "fontFamily": "Open Sans",
+          "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 20,

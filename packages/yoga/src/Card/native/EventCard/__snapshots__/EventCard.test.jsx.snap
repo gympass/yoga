@@ -73,7 +73,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -95,7 +95,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "700",
                 "lineHeight": 24,
@@ -119,9 +119,9 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
-                "fontWeight": "600",
+                "fontWeight": "500",
                 "lineHeight": 20,
                 "marginBottom": 0,
                 "marginLeft": 0,
@@ -159,9 +159,9 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 16,
-                "fontWeight": "600",
+                "fontWeight": "500",
                 "lineHeight": 20,
                 "marginBottom": 8,
                 "marginLeft": 0,
@@ -183,7 +183,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
             Array [
               Object {
                 "color": "#6B6B78",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -282,7 +282,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
               Array [
                 Object {
                   "color": "#41414A",
-                  "fontFamily": "Open Sans",
+                  "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "400",
                   "lineHeight": 16,
@@ -380,7 +380,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -402,7 +402,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "700",
                 "lineHeight": 24,
@@ -426,9 +426,9 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
-                "fontWeight": "600",
+                "fontWeight": "500",
                 "lineHeight": 20,
                 "marginBottom": 0,
                 "marginLeft": 0,
@@ -466,9 +466,9 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 16,
-                "fontWeight": "600",
+                "fontWeight": "500",
                 "lineHeight": 20,
                 "marginBottom": 8,
                 "marginLeft": 0,
@@ -490,7 +490,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
             Array [
               Object {
                 "color": "#6B6B78",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -589,7 +589,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
               Array [
                 Object {
                   "color": "#41414A",
-                  "fontFamily": "Open Sans",
+                  "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "400",
                   "lineHeight": 16,
@@ -687,7 +687,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -709,7 +709,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "700",
                 "lineHeight": 24,
@@ -733,9 +733,9 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
-                "fontWeight": "600",
+                "fontWeight": "500",
                 "lineHeight": 20,
                 "marginBottom": 0,
                 "marginLeft": 0,
@@ -773,9 +773,9 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 16,
-                "fontWeight": "600",
+                "fontWeight": "500",
                 "lineHeight": 20,
                 "marginBottom": 8,
                 "marginLeft": 0,
@@ -797,7 +797,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
             Array [
               Object {
                 "color": "#6B6B78",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -896,7 +896,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
               Array [
                 Object {
                   "color": "#41414A",
-                  "fontFamily": "Open Sans",
+                  "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "400",
                   "lineHeight": 16,
@@ -994,7 +994,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -1016,7 +1016,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "700",
                 "lineHeight": 24,
@@ -1040,9 +1040,9 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
-                "fontWeight": "600",
+                "fontWeight": "500",
                 "lineHeight": 20,
                 "marginBottom": 0,
                 "marginLeft": 0,
@@ -1080,9 +1080,9 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 16,
-                "fontWeight": "600",
+                "fontWeight": "500",
                 "lineHeight": 20,
                 "marginBottom": 8,
                 "marginLeft": 0,
@@ -1104,7 +1104,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
             Array [
               Object {
                 "color": "#6B6B78",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -1203,7 +1203,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
               Array [
                 Object {
                   "color": "#41414A",
-                  "fontFamily": "Open Sans",
+                  "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "400",
                   "lineHeight": 16,

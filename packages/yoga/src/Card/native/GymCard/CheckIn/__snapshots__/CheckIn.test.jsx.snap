@@ -80,7 +80,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
@@ -531,7 +531,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -556,7 +556,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
@@ -732,7 +732,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
@@ -1183,7 +1183,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -1208,7 +1208,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
