@@ -34,7 +34,7 @@ const StyledTable = styled.table`
         padding: 14px 12px 12px;
 
         border: none;
-        
+
         font-weight: normal;
         text-align: left;
       }
@@ -72,7 +72,7 @@ const Example = styled.span`
     background-color: ${
       hasBackground ? hexToRgb(grayPallete[2], 0.7) : 'transparent'
     };
-    font-family: "Open Sans";
+    font-family: "Rubik";
     ${property}: ${valueUnit ? `${value}${valueUnit}` : value};
   `};
 `;

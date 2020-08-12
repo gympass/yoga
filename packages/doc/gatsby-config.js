@@ -64,7 +64,7 @@ const plugins = [
     resolve: `gatsby-plugin-web-font-loader`,
     options: {
       google: {
-        families: ['Open Sans:400,600,700,400i,600i,700i'],
+        families: ['Rubik:300,400,500,700,900,300i,400i,500i,700i,900i'],
       },
     },
   },

@@ -46,7 +46,7 @@ const Component = styled.div`
       },
     },
   }) => `
-    font-family: 'Open Sans';
+    font-family: 'Rubik';
     padding: 50px;
     background-color: ${darkMode ? dark : white};
     transition: all 0.3s ease-in-out;
