@@ -17,7 +17,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -72,7 +72,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -149,7 +149,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -228,7 +228,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -307,7 +307,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -361,7 +361,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -439,7 +439,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -517,7 +517,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -585,7 +585,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -682,7 +682,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -786,7 +786,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -878,7 +878,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -932,7 +932,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -1010,7 +1010,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -1088,7 +1088,7 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -1156,7 +1156,7 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -1224,7 +1224,7 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -1306,7 +1306,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -1360,7 +1360,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -1436,7 +1436,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -1514,7 +1514,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;

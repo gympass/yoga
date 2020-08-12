@@ -488,7 +488,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   position: relative;
   text-align: center;
@@ -506,7 +506,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   text-align: center;
@@ -520,7 +520,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   text-align: center;

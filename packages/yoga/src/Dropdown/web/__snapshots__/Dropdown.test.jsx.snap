@@ -41,7 +41,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   padding: 0;
   background-color: transparent;
   border: none;
-  font-family: Open Sans;
+  font-family: Rubik;
   font-size: 14px;
   line-height: 20px;
   cursor: pointer;
@@ -178,7 +178,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   padding: 0;
   background-color: transparent;
   border: none;
-  font-family: Open Sans;
+  font-family: Rubik;
   font-size: 14px;
   line-height: 20px;
   cursor: not-allowed;
@@ -326,7 +326,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   padding: 0;
   background-color: transparent;
   border: none;
-  font-family: Open Sans;
+  font-family: Rubik;
   font-size: 14px;
   line-height: 20px;
   cursor: pointer;
@@ -464,7 +464,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   padding: 0;
   background-color: transparent;
   border: none;
-  font-family: Open Sans;
+  font-family: Rubik;
   font-size: 14px;
   line-height: 20px;
   cursor: not-allowed;

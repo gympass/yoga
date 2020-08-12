@@ -55,7 +55,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   padding-left: 16px;
   color: #41414A;
   border: none;
-  font-family: Open Sans,sans-serif;
+  font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
   box-sizing: border-box;

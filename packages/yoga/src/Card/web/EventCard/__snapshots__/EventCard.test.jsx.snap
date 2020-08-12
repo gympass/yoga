@@ -7,7 +7,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
 }
@@ -18,7 +18,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -28,7 +28,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -38,7 +38,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -79,14 +79,12 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
 .c7 .c8 {
   height: 20px;
   margin-bottom: 8px;
-  font-weight: 600;
 }
 
 .c7 .c3 {
   height: 20px;
   margin-bottom: 8px;
   color: #6B6B78;
-  font-weight: 600;
 }
 
 .c11 {
@@ -129,7 +127,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
   margin-bottom: 8px;
@@ -142,10 +140,10 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
-  font-weight: 600;
+  font-weight: undefined;
 }
 
 <div>
@@ -209,7 +207,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
 }
@@ -220,7 +218,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -230,7 +228,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -240,7 +238,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -281,14 +279,12 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
 .c7 .c8 {
   height: 20px;
   margin-bottom: 8px;
-  font-weight: 600;
 }
 
 .c7 .c3 {
   height: 20px;
   margin-bottom: 8px;
   color: #6B6B78;
-  font-weight: 600;
 }
 
 .c11 {
@@ -331,7 +327,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
   margin-bottom: 8px;
@@ -344,10 +340,10 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
-  font-weight: 600;
+  font-weight: undefined;
 }
 
 <div>
@@ -411,7 +407,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
 }
@@ -422,7 +418,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -432,7 +428,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -442,7 +438,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -483,14 +479,12 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
 .c7 .c8 {
   height: 20px;
   margin-bottom: 8px;
-  font-weight: 600;
 }
 
 .c7 .c3 {
   height: 20px;
   margin-bottom: 8px;
   color: #6B6B78;
-  font-weight: 600;
 }
 
 .c11 {
@@ -533,7 +527,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
   margin-bottom: 8px;
@@ -546,10 +540,10 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
-  font-weight: 600;
+  font-weight: undefined;
 }
 
 <div>
@@ -613,7 +607,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
 }
@@ -624,7 +618,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -634,7 +628,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -644,7 +638,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -685,14 +679,12 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
 .c7 .c8 {
   height: 20px;
   margin-bottom: 8px;
-  font-weight: 600;
 }
 
 .c7 .c3 {
   height: 20px;
   margin-bottom: 8px;
   color: #6B6B78;
-  font-weight: 600;
 }
 
 .c11 {
@@ -735,7 +727,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
   margin-bottom: 8px;
@@ -748,10 +740,10 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
-  font-weight: 600;
+  font-weight: undefined;
 }
 
 <div>
