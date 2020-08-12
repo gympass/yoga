@@ -7,7 +7,6 @@ const Button = ({
   radii,
   colors,
   fontWeights,
-  baseFont,
 }) => ({
   padding: {
     right: spacing.xlarge,
@@ -18,7 +17,6 @@ const Button = ({
     small: 32,
   },
   font: {
-    family: baseFont.family,
     size: fontSizes.small,
     weight: fontWeights.bold,
   },

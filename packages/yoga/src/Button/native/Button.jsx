@@ -11,13 +11,14 @@ const Label = styled.Text`
     inverted,
     theme: {
       yoga: {
+        baseFont,
         components: { button },
       },
     },
   }) => `
       font-size: ${button.font.size};
       font-weight: ${button.font.weight};
-      font-family: ${button.font.family};
+      font-family: ${baseFont.family};
       color: ${button.types.contained.font.default.color};
 
       ${disabled ? `color: ${button.types.contained.font.disabled.color};` : ''}
