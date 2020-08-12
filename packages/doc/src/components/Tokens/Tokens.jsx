@@ -72,7 +72,7 @@ const Example = styled.span`
     background-color: ${
       hasBackground ? hexToRgb(grayPallete[2], 0.7) : 'transparent'
     };
-    font-family: "Rubik";
+    font-family: 'Rubik';
     ${property}: ${valueUnit ? `${value}${valueUnit}` : value};
   `};
 `;
