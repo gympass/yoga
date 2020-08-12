@@ -7,13 +7,6 @@ import { Button } from '@gympass/yoga';
 const PickerStyled = styled.Picker`
   width: 100%;
   height: 190px;
-  ${({
-    theme: {
-      yoga: { baseFont },
-    },
-  }) => `
-    font-family: ${baseFont.family};
-  `}
 `;
 
 const PickerActions = styled.View`
