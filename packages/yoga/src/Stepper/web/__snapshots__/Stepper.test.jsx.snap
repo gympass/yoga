@@ -13,7 +13,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   width: 95px;
   font-weight: 700;
@@ -178,7 +178,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   width: 95px;
   font-weight: 700;

@@ -212,6 +212,7 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
       style={
         Array [
           Object {
+            "fontFamily": "Rubik",
             "fontSize": 12,
             "marginRight": 8,
             "textAlign": "left",
@@ -274,6 +275,7 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
       style={
         Array [
           Object {
+            "fontFamily": "Rubik",
             "fontSize": 12,
             "marginLeft": 8,
             "textAlign": "right",
@@ -349,6 +351,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
       style={
         Array [
           Object {
+            "fontFamily": "Rubik",
             "fontSize": 12,
             "marginTop": 4,
             "textAlign": "left",
@@ -410,6 +413,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
       style={
         Array [
           Object {
+            "fontFamily": "Rubik",
             "fontSize": 12,
             "marginTop": 4,
             "textAlign": "right",
@@ -484,6 +488,7 @@ exports[`<Progress /> should match snapshot with secondary variant prop 1`] = `
       style={
         Array [
           Object {
+            "fontFamily": "Rubik",
             "fontSize": 12,
             "marginRight": 8,
             "textAlign": "left",
@@ -559,6 +564,7 @@ exports[`<Progress /> should match snapshot with tertiary variant prop 1`] = `
       style={
         Array [
           Object {
+            "fontFamily": "Rubik",
             "fontSize": 12,
             "marginRight": 8,
             "textAlign": "left",

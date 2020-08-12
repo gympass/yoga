@@ -3,7 +3,7 @@ import tokens from '@gympass/yoga-tokens';
 import * as componentThemes from '../../**/*.theme.js';
 
 const BaseTheme = ({ primary, secondary, tertiary }) => {
-  const baseFont = tokens.fonts.openSans;
+  const baseFont = tokens.fonts.rubik;
   const baseFontSize = tokens.fontSizes.medium;
   const colors = {
     primary,

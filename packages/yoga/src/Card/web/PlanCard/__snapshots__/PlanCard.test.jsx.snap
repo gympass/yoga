@@ -14,7 +14,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: inline-block;
   top: 16px;
@@ -59,7 +59,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ri
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #652CDB;
   display: inline-block;
   top: 16px;
@@ -104,7 +104,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #22766B;
   display: inline-block;
   top: 16px;
@@ -153,7 +153,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: -webkit-box;
   height: 40px;
@@ -172,7 +172,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   color: inherit;
@@ -185,7 +185,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   color: inherit;
@@ -238,7 +238,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: -webkit-box;
   height: 40px;
@@ -257,7 +257,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   color: inherit;
@@ -270,7 +270,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   color: inherit;
@@ -321,7 +321,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -366,7 +366,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: -webkit-box;
   height: 40px;
@@ -385,7 +385,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   color: inherit;
@@ -398,7 +398,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   color: inherit;
@@ -472,7 +472,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -518,7 +518,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: -webkit-box;
   height: 40px;
@@ -537,7 +537,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   color: inherit;
@@ -550,7 +550,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   color: inherit;
@@ -624,7 +624,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -670,7 +670,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: -webkit-box;
   height: 40px;
@@ -689,7 +689,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   color: inherit;
@@ -702,7 +702,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   display: block;
   color: inherit;

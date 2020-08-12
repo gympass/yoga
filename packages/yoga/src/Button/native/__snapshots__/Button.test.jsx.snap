@@ -47,6 +47,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
             Array [
               Object {
                 "color": "#9898A6",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -90,6 +91,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
           Array [
             Object {
               "color": "#9898A6",
+              "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "700",
               "marginBottom": 8,
@@ -151,6 +153,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
             Array [
               Object {
                 "color": "#9898A6",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -207,6 +210,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
             Array [
               Object {
                 "color": "#9898A6",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -268,6 +272,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
             Array [
               Object {
                 "color": "#FFFFFF",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -329,6 +334,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
             Array [
               Object {
                 "color": "#F46152",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -385,6 +391,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
             Array [
               Object {
                 "color": "#F46152",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -445,6 +452,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
             Array [
               Object {
                 "color": "#F46152",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -488,6 +496,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
           Array [
             Object {
               "color": "#FFFFFF",
+              "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "700",
               "marginBottom": 8,
@@ -549,6 +558,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
             Array [
               Object {
                 "color": "#FFFFFF",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -604,6 +614,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
             Array [
               Object {
                 "color": "#F46152",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -664,6 +675,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
             Array [
               Object {
                 "color": "#FFFFFF",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -724,6 +736,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
             Array [
               Object {
                 "color": "#F46152",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -779,6 +792,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
             Array [
               Object {
                 "color": "#F46152",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -837,6 +851,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
             Array [
               Object {
                 "color": "#FFFFFF",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -878,6 +893,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
           Array [
             Object {
               "color": "#F46152",
+              "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "700",
               "marginBottom": 8,
@@ -935,6 +951,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
             Array [
               Object {
                 "color": "#F46152",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -987,6 +1004,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
             Array [
               Object {
                 "color": "#F46152",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "700",
                 "textAlign": "center",
@@ -1028,6 +1046,7 @@ exports[`<Button /> With variant prop should match snapshot with default Button 
           Array [
             Object {
               "color": "#F46152",
+              "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "700",
               "marginBottom": 8,
@@ -1058,6 +1077,7 @@ exports[`<Button /> With variant prop should match snapshot with default Button 
           Array [
             Object {
               "color": "#652CDB",
+              "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "700",
               "marginBottom": 8,
@@ -1088,6 +1108,7 @@ exports[`<Button /> With variant prop should match snapshot with default Button 
           Array [
             Object {
               "color": "#22766B",
+              "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "700",
               "marginBottom": 8,

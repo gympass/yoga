@@ -43,6 +43,7 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
           Array [
             Object {
               "color": "#9898A6",
+              "fontFamily": "Rubik",
             },
           ]
         }
@@ -160,6 +161,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
           Array [
             Object {
               "color": "#DBDBE8",
+              "fontFamily": "Rubik",
             },
           ]
         }
@@ -277,6 +279,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
           Array [
             Object {
               "color": "#9898A6",
+              "fontFamily": "Rubik",
             },
           ]
         }
@@ -408,6 +411,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
           Array [
             Object {
               "color": "#41414A",
+              "fontFamily": "Rubik",
             },
           ]
         }

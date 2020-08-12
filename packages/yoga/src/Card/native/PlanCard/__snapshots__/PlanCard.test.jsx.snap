@@ -72,7 +72,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
@@ -169,7 +169,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ri
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
@@ -267,7 +267,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
@@ -353,7 +353,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "height": 40,
@@ -378,7 +378,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "700",
                 "lineHeight": 24,
@@ -402,7 +402,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -488,7 +488,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "height": 40,
@@ -513,7 +513,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "700",
                 "lineHeight": 24,
@@ -537,7 +537,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -632,7 +632,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "height": 40,
@@ -657,7 +657,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "700",
                 "lineHeight": 24,
@@ -681,7 +681,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -756,6 +756,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                     Array [
                       Object {
                         "color": "#FFFFFF",
+                        "fontFamily": "Rubik",
                         "fontSize": 14,
                         "fontWeight": "700",
                         "textAlign": "center",
@@ -845,7 +846,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "height": 40,
@@ -870,7 +871,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "700",
                 "lineHeight": 24,
@@ -894,7 +895,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -969,6 +970,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
                     Array [
                       Object {
                         "color": "#FFFFFF",
+                        "fontFamily": "Rubik",
                         "fontSize": 14,
                         "fontWeight": "700",
                         "textAlign": "center",
@@ -1058,7 +1060,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "height": 40,
@@ -1083,7 +1085,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "700",
                 "lineHeight": 24,
@@ -1107,7 +1109,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
             Array [
               Object {
                 "color": "#FFFFFF",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "lineHeight": 20,
@@ -1182,6 +1184,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
                     Array [
                       Object {
                         "color": "#FFFFFF",
+                        "fontFamily": "Rubik",
                         "fontSize": 14,
                         "fontWeight": "700",
                         "textAlign": "center",

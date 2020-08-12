@@ -39,6 +39,7 @@ const Field = styled.TextInput(
     typed,
     theme: {
       yoga: {
+        baseFont,
         colors,
         components: { input },
       },
@@ -59,6 +60,7 @@ const Field = styled.TextInput(
     border: ${input.border.width}px solid ${input.border.color.default};
 
     color: ${input.font.color.default};
+    font-family: ${baseFont.family};
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
 
@@ -105,12 +107,14 @@ const Label = styled(Animated.Text)(
     theme: {
       yoga: {
         colors,
+        baseFont,
         components: { input },
       },
     },
   }) => `
     background-color: ${colors.gray.surface};
 
+    font-family: ${baseFont.family};
     font-weight: ${input.label.font.weight.default};
     color: ${input.label.color.default};
 
@@ -185,7 +189,7 @@ const Info = styled.Text(
 
     color: ${input.helper.color};
     font-size: ${input.helper.font.size}px;
-    
+
     ${error ? `color: ${colors.negative[1]};` : ''}
     ${disabled ? `color: ${colors.disabled.background}` : ''}
     ${right ? 'margin-left: auto;' : ''}

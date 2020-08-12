@@ -1,3 +1,5 @@
+import weights from './font-weights';
+
 /**
  * @module fonts
  * @desc Fonts tokens module.
@@ -19,10 +21,10 @@
  */
 const fonts = [
   {
-    family: 'Open Sans',
-    weight: [400, 600, 700, '400i', '600i', '700i'],
+    family: 'Rubik',
+    weight: [...weights, ...weights.map(weight => `${weight}i`)],
   },
 ];
-[fonts.openSans] = fonts;
+[fonts.rubik] = fonts;
 
 export default fonts;

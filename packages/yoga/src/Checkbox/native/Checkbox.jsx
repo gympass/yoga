@@ -14,12 +14,14 @@ const Label = styled.Text(
   ({
     theme: {
       yoga: {
+        baseFont,
         components: { checkbox },
       },
     },
   }) => `
   padding-left: ${checkbox.label.padding.left}px;
 
+  font-family: ${baseFont.family};
   font-size: ${checkbox.label.font.size}px;
 
   color: ${checkbox.label.font.color};
@@ -43,12 +45,14 @@ const Helper = styled.Text(
     error,
     theme: {
       yoga: {
+        baseFont,
         colors: { negative },
         components: { checkbox },
       },
     },
   }) => `
   font-size: ${checkbox.helper.font.size}px;
+  font-family: ${baseFont.family};
 
   color: ${error ? negative[1] : checkbox.helper.font.color};
 `,
@@ -108,7 +112,7 @@ const Shadow = styled.View(
       width: ${size}px;
       height: ${size}px;
 
-      background-color: ${hexToRgb(color[1], 0.75)};          
+      background-color: ${hexToRgb(color[1], 0.75)};
       border-radius: ${checkbox.hover.border.radius}px;
     `;
   },

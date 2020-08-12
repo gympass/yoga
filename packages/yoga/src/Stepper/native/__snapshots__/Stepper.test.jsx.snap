@@ -108,7 +108,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
               Array [
                 Object {
                   "color": "#F46152",
-                  "fontFamily": "Open Sans",
+                  "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "700",
                   "lineHeight": 16,
@@ -158,7 +158,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
               Array [
                 Object {
                   "color": "#9898A6",
-                  "fontFamily": "Open Sans",
+                  "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "700",
                   "lineHeight": 16,
@@ -208,7 +208,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
               Array [
                 Object {
                   "color": "#9898A6",
-                  "fontFamily": "Open Sans",
+                  "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "700",
                   "lineHeight": 16,
@@ -357,7 +357,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
               Array [
                 Object {
                   "color": "#F46152",
-                  "fontFamily": "Open Sans",
+                  "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "700",
                   "lineHeight": 16,
@@ -407,7 +407,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
               Array [
                 Object {
                   "color": "#F46152",
-                  "fontFamily": "Open Sans",
+                  "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "700",
                   "lineHeight": 16,
@@ -457,7 +457,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
               Array [
                 Object {
                   "color": "#9898A6",
-                  "fontFamily": "Open Sans",
+                  "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "700",
                   "lineHeight": 16,

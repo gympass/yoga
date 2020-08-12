@@ -7,7 +7,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   font-size: 32px;
   line-height: 40px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -17,7 +17,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -27,7 +27,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -37,7 +37,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -47,7 +47,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -57,7 +57,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -67,7 +67,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
 }
 
@@ -117,7 +117,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   font-size: 32px;
   line-height: 40px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #F46152;
 }
 
@@ -127,7 +127,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   font-size: 24px;
   line-height: 32px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #652CDB;
 }
 
@@ -137,7 +137,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #22766B;
 }
 
@@ -167,7 +167,7 @@ exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  font-family: Open Sans;
+  font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
 }

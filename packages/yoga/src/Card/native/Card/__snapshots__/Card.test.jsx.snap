@@ -108,6 +108,7 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
                   Array [
                     Object {
                       "color": "#FFFFFF",
+                      "fontFamily": "Rubik",
                       "fontSize": 14,
                       "fontWeight": "700",
                       "textAlign": "center",

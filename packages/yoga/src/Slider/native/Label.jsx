@@ -8,10 +8,18 @@ const LabelView = styled.View`
 `;
 
 const LabelText = styled.Text(
-  ({ placement }) => `
+  ({
+    placement,
+    theme: {
+      yoga: { baseFont },
+    },
+  }) => `
+    position: relative;
     bottom: 5;
     left: ${placement === 'left' ? -8 : 0}px;
-    position: relative;
+
+    font-family: ${baseFont.family};
+
     text-align: ${placement};
   `,
 );

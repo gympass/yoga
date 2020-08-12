@@ -32,8 +32,8 @@ const Selector = styled.View`
     align-items: center;
 
     width: ${full ? '100%' : `${dropdown.width}px`};
-    padding: ${dropdown.selector.padding.top}px 
-      ${dropdown.selector.padding.right}px 
+    padding: ${dropdown.selector.padding.top}px
+      ${dropdown.selector.padding.right}px
       ${dropdown.selector.padding.bottom}px
       ${dropdown.selector.padding.left}px;
 
@@ -62,10 +62,12 @@ const Label = styled.Text`
     selected,
     theme: {
       yoga: {
+        baseFont,
         components: { dropdown },
       },
     },
   }) => `
+    font-family: ${baseFont.family};
     color: ${dropdown.input.font.color};
     ${disabled ? `color: ${dropdown.disabled.input.font.color};` : ''}
     ${selected ? `color: ${dropdown.selected.input.font.color};` : ''}

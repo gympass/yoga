@@ -45,7 +45,9 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
             checked={false}
             style={
               Array [
-                Object {},
+                Object {
+                  "fontFamily": "Rubik",
+                },
               ]
             }
           >
@@ -78,6 +80,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
               Array [
                 Object {
                   "color": "#FFFFFF",
+                  "fontFamily": "Rubik",
                   "fontWeight": "700",
                 },
               ]
@@ -110,7 +113,9 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
             checked={false}
             style={
               Array [
-                Object {},
+                Object {
+                  "fontFamily": "Rubik",
+                },
               ]
             }
           >
@@ -168,7 +173,9 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
             checked={false}
             style={
               Array [
-                Object {},
+                Object {
+                  "fontFamily": "Rubik",
+                },
               ]
             }
           >
@@ -199,7 +206,9 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
             checked={false}
             style={
               Array [
-                Object {},
+                Object {
+                  "fontFamily": "Rubik",
+                },
               ]
             }
           >
@@ -230,7 +239,9 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
             checked={false}
             style={
               Array [
-                Object {},
+                Object {
+                  "fontFamily": "Rubik",
+                },
               ]
             }
           >
@@ -288,7 +299,9 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
             checked={false}
             style={
               Array [
-                Object {},
+                Object {
+                  "fontFamily": "Rubik",
+                },
               ]
             }
           >
@@ -319,7 +332,9 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
             checked={false}
             style={
               Array [
-                Object {},
+                Object {
+                  "fontFamily": "Rubik",
+                },
               ]
             }
           >
@@ -350,7 +365,9 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
             checked={false}
             style={
               Array [
-                Object {},
+                Object {
+                  "fontFamily": "Rubik",
+                },
               ]
             }
           >

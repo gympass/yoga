@@ -69,7 +69,7 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
             Array [
               Object {
                 "color": "#41414A",
-                "fontFamily": "Open Sans",
+                "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "700",
                 "lineHeight": 20,

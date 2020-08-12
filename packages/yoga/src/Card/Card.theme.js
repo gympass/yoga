@@ -77,7 +77,7 @@ const Card = ({
       },
       name: {
         height: spacing.large,
-        fontWeight: fontWeights.semibold,
+        fontWeight: fontWeights.medium,
         marginBottom: spacing.xsmall,
       },
       place: {
@@ -93,7 +93,7 @@ const Card = ({
         marginBottom: spacing.xsmall,
       },
       month: {
-        fontWeight: fontWeights.semibold,
+        fontWeight: fontWeights.medium,
       },
     },
   },

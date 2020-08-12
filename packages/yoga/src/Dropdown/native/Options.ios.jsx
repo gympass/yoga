@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import { func, arrayOf, string, shape, oneOfType, number } from 'prop-types';
 import { Picker } from 'react-native';
 import { Button } from '@gympass/yoga';
@@ -21,9 +21,9 @@ const PickerActions = styled.View`
     justify-content: space-between;
 
     padding:
-      ${dropdown.backdrop.content.actions.padding.top}px 
-      ${dropdown.backdrop.content.actions.padding.right}px 
-      ${dropdown.backdrop.content.actions.padding.bottom}px 
+      ${dropdown.backdrop.content.actions.padding.top}px
+      ${dropdown.backdrop.content.actions.padding.right}px
+      ${dropdown.backdrop.content.actions.padding.bottom}px
       ${dropdown.backdrop.content.actions.padding.left}px;
   `}
 `;
@@ -35,6 +35,9 @@ const Options = ({
   confirmActionLabel,
   onSelect,
   onClose,
+  theme: {
+    yoga: { baseFont },
+  },
 }) => {
   const [selected, setSelected] = useState(selectedOption);
   return (
@@ -44,6 +47,9 @@ const Options = ({
         onValueChange={itemValue =>
           setSelected(options.find(option => option.value === itemValue))
         }
+        itemStyle={{
+          fontFamily: baseFont.family,
+        }}
       >
         {options.map(item => (
           <Picker.Item key={item} {...item} />
@@ -80,4 +86,4 @@ Options.defaultProps = {
   onClose: () => {},
 };
 
-export default Options;
+export default withTheme(Options);

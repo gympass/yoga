@@ -19,8 +19,14 @@
  * @type {FontWeight}
  * @default
  */
-const fontWeights = [400, 600, 700];
+const fontWeights = [300, 400, 500, 700, 900];
 
-[fontWeights.regular, fontWeights.semibold, fontWeights.bold] = fontWeights;
+[
+  fontWeights.light,
+  fontWeights.regular,
+  fontWeights.medium,
+  fontWeights.bold,
+  fontWeights.black,
+] = fontWeights;
 
 export default fontWeights;
