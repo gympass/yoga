@@ -1,10 +1,10 @@
 const List = ({ spacing, borders, colors }) => ({
   listItem: {
     padding: {
-      top: spacing.large,
-      right: spacing.xlarge,
-      bottom: spacing.large,
-      left: spacing.xlarge,
+      top: spacing.medium,
+      right: spacing.large,
+      bottom: spacing.medium,
+      left: spacing.large,
     },
   },
   border: {
