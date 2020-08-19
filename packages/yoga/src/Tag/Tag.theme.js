@@ -9,10 +9,10 @@ const Tag = ({ spacing, fontSizes, fontWeights, radii }) => ({
     weight: fontWeights.bold,
   },
   padding: {
-    top: spacing.small,
-    right: spacing.small,
-    bottom: spacing.small,
-    left: spacing.small,
+    top: spacing.xxsmall,
+    right: spacing.xxsmall,
+    bottom: spacing.xxsmall,
+    left: spacing.xxsmall,
   },
   border: {
     radius: radii.rounded,
