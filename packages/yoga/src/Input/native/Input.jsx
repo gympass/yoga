@@ -150,8 +150,8 @@ const CloseIcon = styled.View(
     top: 0px;
     right: 0px;
 
-    padding-right: ${spacing.medium}px;
-    padding-left: ${spacing.xsmall}px;
+    padding-right: ${spacing.small}px;
+    padding-left: ${spacing.small}px;
   `,
 );
 
