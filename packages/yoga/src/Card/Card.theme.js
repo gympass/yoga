@@ -8,10 +8,10 @@ const Card = ({
 }) => ({
   backgroundColor: colors.white,
   padding: {
-    top: spacing.medium,
-    right: spacing.medium,
-    bottom: spacing.medium,
-    left: spacing.medium,
+    top: spacing.small,
+    right: spacing.small,
+    bottom: spacing.small,
+    left: spacing.small,
   },
   radii: radii.rounded,
   elevation: elevations.small,
@@ -21,18 +21,18 @@ const Card = ({
   plan: {
     title: {
       margin: {
-        top: spacing.xsmall,
-        bottom: spacing.small,
+        top: spacing.xxsmall,
+        bottom: spacing.xsmall,
       },
     },
     price: {
       margin: {
-        top: spacing.small,
+        top: spacing.xsmall,
       },
     },
     period: {
       margin: {
-        bottom: spacing.xsmall,
+        bottom: spacing.xxsmall,
       },
     },
   },
@@ -40,7 +40,7 @@ const Card = ({
     checkIn: {
       header: {
         margin: {
-          bottom: spacing.medium,
+          bottom: spacing.small,
         },
       },
       avatar: {
@@ -51,7 +51,7 @@ const Card = ({
       },
       content: {
         margin: {
-          top: spacing.medium,
+          top: spacing.small,
         },
       },
       title: {
@@ -59,7 +59,7 @@ const Card = ({
           weight: fontWeights.regular,
         },
         margin: {
-          bottom: spacing.xsmall,
+          bottom: spacing.xxsmall,
         },
       },
     },
@@ -70,27 +70,27 @@ const Card = ({
     },
     info: {
       padding: {
-        top: spacing.medium,
-        right: spacing.medium,
-        left: spacing.medium,
-        bottom: spacing.medium,
+        top: spacing.small,
+        right: spacing.small,
+        left: spacing.small,
+        bottom: spacing.small,
       },
       name: {
-        height: spacing.large,
+        height: spacing.medium,
         fontWeight: fontWeights.medium,
-        marginBottom: spacing.xsmall,
+        marginBottom: spacing.xxsmall,
       },
       place: {
-        height: spacing.large,
+        height: spacing.medium,
         color: colors.gray[8],
-        marginBottom: spacing.xsmall,
+        marginBottom: spacing.xxsmall,
       },
     },
     date: {
       radius: radii.rounded,
       dayOfWeek: {
         fontWeight: fontWeights.regular,
-        marginBottom: spacing.xsmall,
+        marginBottom: spacing.xxsmall,
       },
       month: {
         fontWeight: fontWeights.medium,
