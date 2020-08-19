@@ -3,7 +3,7 @@ const Rating = ({ spacing, colors }) => ({
   icon: {
     size: 12,
   },
-  gutter: spacing.xxsmall,
+  gutter: spacing.xxxsmall,
 });
 
 export default Rating;
