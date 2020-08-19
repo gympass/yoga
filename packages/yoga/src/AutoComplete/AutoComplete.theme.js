@@ -7,10 +7,10 @@ const AutoComplete = tokens => ({
   },
   list: {
     padding: {
-      top: tokens.spacing.medium,
-      right: tokens.spacing.medium,
-      bottom: tokens.spacing.medium,
-      left: tokens.spacing.medium,
+      top: tokens.spacing.small,
+      right: tokens.spacing.small,
+      bottom: tokens.spacing.small,
+      left: tokens.spacing.small,
     },
     font: {
       size: tokens.fontSizes.small,
