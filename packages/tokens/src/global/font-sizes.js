@@ -17,13 +17,15 @@
  * @property {number} large - 20
  * @property {number} xlarge - 24
  * @property {number} xxlarge - 32
+ * @property {number} xxxlarge - 40
+ * @property {number} huge - 48
  */
 
 /**
  * @type {FontSize}
  * @default
  */
-const fontSizes = [10, 12, 14, 16, 20, 24, 32];
+const fontSizes = [10, 12, 14, 16, 20, 24, 32, 40, 48];
 
 [
   fontSizes.xxsmall,
@@ -33,6 +35,8 @@ const fontSizes = [10, 12, 14, 16, 20, 24, 32];
   fontSizes.large,
   fontSizes.xlarge,
   fontSizes.xxlarge,
+  fontSizes.xxxlarge,
+  fontSizes.huge,
 ] = fontSizes;
 
 export default fontSizes;
