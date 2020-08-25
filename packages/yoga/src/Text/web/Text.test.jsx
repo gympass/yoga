@@ -12,6 +12,7 @@ describe('<Text />', () => {
           <Text.H2>Live the mission</Text.H2>
           <Text.H3>Live the mission</Text.H3>
           <Text.H4>Live the mission</Text.H4>
+          <Text.H5>Live the mission</Text.H5>
           <Text>Live the mission</Text>
           <Text.Small>Live the mission</Text.Small>
           <Text.Tiny>Live the mission</Text.Tiny>
