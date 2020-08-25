@@ -63,6 +63,15 @@
         "ideas",
         "doc"
       ]
+    },
+    {
+      "login": "luispiresgympass",
+      "name": "Luis Pires",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/58981184?v=4",
+      "profile": "https://github.com/luispiresgympass",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
