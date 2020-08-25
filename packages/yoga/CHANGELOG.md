@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@3.0.0...@gympass/yoga@3.1.0) (2020-08-25)
+
+
+### Features
+
+* **theme:** added kids theme into yoga ([0e6305d](https://github.com/Gympass/yoga/commit/0e6305d899dff457cc988515b27b9f663f90178e))
+
+
+
+
+
 # [3.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.5...@gympass/yoga@3.0.0) (2020-08-12)
 
 
