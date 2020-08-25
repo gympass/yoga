@@ -97,8 +97,8 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
                 "fontSize": 20,
-                "fontWeight": "700",
-                "lineHeight": 24,
+                "fontWeight": "500",
+                "lineHeight": 28,
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -154,6 +154,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
         }
       >
         <Text
+          inverted={false}
           numberOfLines={1}
           style={
             Array [
@@ -162,7 +163,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
                 "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "500",
-                "lineHeight": 20,
+                "lineHeight": 24,
                 "marginBottom": 8,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -404,8 +405,8 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
                 "fontSize": 20,
-                "fontWeight": "700",
-                "lineHeight": 24,
+                "fontWeight": "500",
+                "lineHeight": 28,
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -461,6 +462,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
         }
       >
         <Text
+          inverted={false}
           numberOfLines={1}
           style={
             Array [
@@ -469,7 +471,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
                 "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "500",
-                "lineHeight": 20,
+                "lineHeight": 24,
                 "marginBottom": 8,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -711,8 +713,8 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
                 "fontSize": 20,
-                "fontWeight": "700",
-                "lineHeight": 24,
+                "fontWeight": "500",
+                "lineHeight": 28,
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -768,6 +770,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
         }
       >
         <Text
+          inverted={false}
           numberOfLines={1}
           style={
             Array [
@@ -776,7 +779,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
                 "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "500",
-                "lineHeight": 20,
+                "lineHeight": 24,
                 "marginBottom": 8,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -1018,8 +1021,8 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
                 "fontSize": 20,
-                "fontWeight": "700",
-                "lineHeight": 24,
+                "fontWeight": "500",
+                "lineHeight": 28,
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,
@@ -1075,6 +1078,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
         }
       >
         <Text
+          inverted={false}
           numberOfLines={1}
           style={
             Array [
@@ -1083,7 +1087,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
                 "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "500",
-                "lineHeight": 20,
+                "lineHeight": 24,
                 "marginBottom": 8,
                 "marginLeft": 0,
                 "marginRight": 0,

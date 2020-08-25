@@ -27,7 +27,7 @@ const Title = styled(Text.Small)`
 `}
 `;
 
-const Price = styled(Text.H3)`
+const Price = styled(Text.H5)`
   ${({
     variant,
     theme: {
