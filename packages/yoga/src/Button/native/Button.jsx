@@ -5,7 +5,7 @@ import withTouchable from './withTouchable';
 
 import Text from '../../Text';
 
-const Label = styled(Text.H5)`
+const Label = styled(Text.Bold)`
   text-align: center;
   ${({
     disabled,
