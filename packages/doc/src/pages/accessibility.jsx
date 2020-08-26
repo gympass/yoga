@@ -212,7 +212,7 @@ const HomePage = () => {
             onChange={value => setSliderValue([value])}
             max={10}
             min={0}
-            minLabel={values[0]}
+            minLabel={sliderValue[0]}
             tooltip={[
               {
                 description: 'Simple tooltip',
