@@ -39,6 +39,21 @@ const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
     lineHeight: lineHeights.xsmall,
     fontWeight: fontWeights.regular,
   },
+  light: {
+    fontWeight: fontWeights.light,
+  },
+  regular: {
+    fontWeight: fontWeights.regular,
+  },
+  medium: {
+    fontWeight: fontWeights.medium,
+  },
+  bold: {
+    fontWeight: fontWeights.bold,
+  },
+  black: {
+    fontWeight: fontWeights.black,
+  },
 });
 
 export default Text;

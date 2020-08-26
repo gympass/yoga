@@ -9,19 +9,18 @@ const textStyle = type => () => css`
         baseFont,
         colors: { [variant]: color = {}, dark, white },
         components: {
-          text: { [type]: heading },
+          text: {
+            [type]: { fontsize, lineHeight, fontWeight },
+          },
         },
       },
     },
   }) => `
-    margin: 0;
-    padding: 0;
-  
-    font-size: ${heading.fontsize}px;
-    line-height: ${heading.lineHeight}px;
+    ${fontsize ? `font-size: ${fontsize}px` : ''};
+    ${lineHeight ? `line-height: ${lineHeight}px` : ''};
 
     font-family: ${baseFont.family}${
-    heading.fontWeight !== 400 ? `-${heading.fontWeight}` : ''
+    fontWeight !== 400 ? `-${fontWeight}` : ''
   };
     color: ${variant ? color[3] : dark};
     ${inverted ? `color: ${white};` : ''}
