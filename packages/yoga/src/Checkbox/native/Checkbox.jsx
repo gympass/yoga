@@ -5,23 +5,23 @@ import { TouchableWithoutFeedback, View } from 'react-native';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Done } from '@gympass/yoga-icons';
 
+import Text from '../../Text';
+
 const CheckboxWrapper = styled.View`
   flex-direction: row;
   align-items: center;
 `;
 
-const Label = styled.Text(
+const Label = styled(Text.Regular)(
   ({
     theme: {
       yoga: {
-        baseFont,
         components: { checkbox },
       },
     },
   }) => `
   padding-left: ${checkbox.label.padding.left}px;
 
-  font-family: ${baseFont.family};
   font-size: ${checkbox.label.font.size}px;
 
   color: ${checkbox.label.font.color};
@@ -40,19 +40,17 @@ const HelperWrapper = styled.View(
 `,
 );
 
-const Helper = styled.Text(
+const Helper = styled(Text.Regular)(
   ({
     error,
     theme: {
       yoga: {
-        baseFont,
         colors: { negative },
         components: { checkbox },
       },
     },
   }) => `
   font-size: ${checkbox.helper.font.size}px;
-  font-family: ${baseFont.family};
 
   color: ${error ? negative[1] : checkbox.helper.font.color};
 `,
