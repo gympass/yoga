@@ -65,6 +65,7 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
         }
       >
         <Text
+          inverted={false}
           style={
             Array [
               Object {
@@ -72,7 +73,7 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
                 "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "700",
-                "lineHeight": 20,
+                "lineHeight": 24,
                 "marginBottom": 0,
                 "marginLeft": 0,
                 "marginRight": 0,

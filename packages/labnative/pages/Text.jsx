@@ -29,6 +29,9 @@ const TextPage = () => (
       <Text.H4>Heading H4</Text.H4>
     </TextWrapper>
     <TextWrapper>
+      <Text.H5>Heading H5</Text.H5>
+    </TextWrapper>
+    <TextWrapper>
       <Text>Text Paragraph</Text>
     </TextWrapper>
     <TextWrapper>

@@ -48,7 +48,7 @@ const Content = styled.View`
   `}
 `;
 
-const Title = styled(Text.H4)`
+const Title = styled(Text)`
   ${({
     theme: {
       yoga: {
@@ -57,12 +57,13 @@ const Title = styled(Text.H4)`
     },
   }) => `
     width: 100%;
-    padding: 
-      ${dropdown.backdrop.content.title.padding.top}px 
-      ${dropdown.backdrop.content.title.padding.right}px 
-      ${dropdown.backdrop.content.title.padding.bottom}px 
+    padding:
+      ${dropdown.backdrop.content.title.padding.top}px
+      ${dropdown.backdrop.content.title.padding.right}px
+      ${dropdown.backdrop.content.title.padding.bottom}px
       ${dropdown.backdrop.content.title.padding.left}px;
 
+    font-weight: ${dropdown.backdrop.content.title.font.weight};
     text-align: center;
   `}
 `;

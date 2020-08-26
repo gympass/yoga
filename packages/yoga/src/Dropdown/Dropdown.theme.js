@@ -93,6 +93,9 @@ const Dropdown = ({
           bottom: spacing.medium,
           left: spacing.zero,
         },
+        font: {
+          weight: fontWeights.bold,
+        },
       },
       option: {
         padding: {
