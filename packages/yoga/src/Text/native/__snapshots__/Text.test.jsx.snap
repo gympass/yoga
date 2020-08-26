@@ -16,8 +16,54 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
         Object {
           "color": "#41414A",
           "fontFamily": "Rubik",
+          "fontSize": 48,
+          "fontWeight": "500",
+          "lineHeight": 56,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#41414A",
+          "fontFamily": "Rubik",
+          "fontSize": 40,
+          "fontWeight": "500",
+          "lineHeight": 48,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#41414A",
+          "fontFamily": "Rubik",
           "fontSize": 32,
-          "fontWeight": "700",
+          "fontWeight": "500",
           "lineHeight": 40,
           "marginBottom": 0,
           "marginLeft": 0,
@@ -40,54 +86,8 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
           "color": "#41414A",
           "fontFamily": "Rubik",
           "fontSize": 24,
-          "fontWeight": "700",
+          "fontWeight": "500",
           "lineHeight": 32,
-          "marginBottom": 0,
-          "marginLeft": 0,
-          "marginRight": 0,
-          "marginTop": 0,
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-        },
-      ]
-    }
-  >
-    Live the mission
-  </Text>
-  <Text
-    style={
-      Array [
-        Object {
-          "color": "#41414A",
-          "fontFamily": "Rubik",
-          "fontSize": 20,
-          "fontWeight": "700",
-          "lineHeight": 24,
-          "marginBottom": 0,
-          "marginLeft": 0,
-          "marginRight": 0,
-          "marginTop": 0,
-          "paddingBottom": 0,
-          "paddingLeft": 0,
-          "paddingRight": 0,
-          "paddingTop": 0,
-        },
-      ]
-    }
-  >
-    Live the mission
-  </Text>
-  <Text
-    style={
-      Array [
-        Object {
-          "color": "#41414A",
-          "fontFamily": "Rubik",
-          "fontSize": 16,
-          "fontWeight": "700",
-          "lineHeight": 20,
           "marginBottom": 0,
           "marginLeft": 0,
           "marginRight": 0,
@@ -111,7 +111,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
-          "lineHeight": 20,
+          "lineHeight": 24,
           "marginBottom": 0,
           "marginLeft": 0,
           "marginRight": 0,
@@ -191,9 +191,9 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
         Object {
           "color": "#F46152",
           "fontFamily": "Rubik",
-          "fontSize": 32,
-          "fontWeight": "700",
-          "lineHeight": 40,
+          "fontSize": 48,
+          "fontWeight": "500",
+          "lineHeight": 56,
           "marginBottom": 0,
           "marginLeft": 0,
           "marginRight": 0,
@@ -215,9 +215,9 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
         Object {
           "color": "#652CDB",
           "fontFamily": "Rubik",
-          "fontSize": 24,
-          "fontWeight": "700",
-          "lineHeight": 32,
+          "fontSize": 40,
+          "fontWeight": "500",
+          "lineHeight": 48,
           "marginBottom": 0,
           "marginLeft": 0,
           "marginRight": 0,
@@ -239,9 +239,9 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
         Object {
           "color": "#22766B",
           "fontFamily": "Rubik",
-          "fontSize": 20,
-          "fontWeight": "700",
-          "lineHeight": 24,
+          "fontSize": 32,
+          "fontWeight": "500",
+          "lineHeight": 40,
           "marginBottom": 0,
           "marginLeft": 0,
           "marginRight": 0,
@@ -279,7 +279,7 @@ exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
-          "lineHeight": 20,
+          "lineHeight": 24,
           "marginBottom": 0,
           "marginLeft": 0,
           "marginRight": 0,

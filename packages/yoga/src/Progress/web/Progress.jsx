@@ -82,7 +82,7 @@ const Wrapper = styled.div`
         ${Label} {
           width: 22px;
 
-          margin-${align === 'right' ? 'left' : 'right'}: ${spacing.xsmall}px;
+          margin-${align === 'right' ? 'left' : 'right'}: ${spacing.xxsmall}px;
         }
 
         ${ProgressBar} {
@@ -95,7 +95,7 @@ const Wrapper = styled.div`
         ${Label} {
           max-width: 280px;
 
-          margin-top: ${spacing.xxsmall}px;
+          margin-top: ${spacing.xxxsmall}px;
         }
       `
     }

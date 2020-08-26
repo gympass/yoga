@@ -25,10 +25,10 @@ const Input = ({
     },
   },
   padding: {
-    top: spacing.medium,
-    right: spacing.medium,
-    bottom: spacing.medium,
-    left: spacing.medium,
+    top: spacing.small,
+    right: spacing.small,
+    bottom: spacing.small,
+    left: spacing.small,
   },
   label: {
     color: {
@@ -36,8 +36,8 @@ const Input = ({
       focus: colors.gray.darker,
     },
     padding: {
-      right: spacing.xxsmall,
-      left: spacing.xxsmall,
+      right: spacing.xxxsmall,
+      left: spacing.xxxsmall,
     },
     font: {
       size: {
@@ -53,7 +53,7 @@ const Input = ({
   helper: {
     color: colors.gray.medium,
     margin: {
-      top: spacing.xxsmall,
+      top: spacing.xxxsmall,
     },
     font: {
       size: fontSizes.xsmall,

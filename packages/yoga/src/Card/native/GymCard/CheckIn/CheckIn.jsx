@@ -17,7 +17,7 @@ const Wrapper = styled(Card)`
   min-height: 204px;
 `;
 
-const Title = styled(Text.H4)`
+const Title = styled(Text)`
   min-height: 40px;
 
   ${({

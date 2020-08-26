@@ -14,8 +14,8 @@ const RadioGroup = ({
     },
     backgroundColor: 'transparent',
     padding: {
-      right: spacing.xlarge,
-      left: spacing.xlarge,
+      right: spacing.large,
+      left: spacing.large,
     },
     height: {
       normal: 40,

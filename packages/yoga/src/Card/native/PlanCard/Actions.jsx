@@ -24,7 +24,7 @@ const ActionWrapper = styled.View`
       yoga: { spacing },
     },
   }) => `
-    padding-top: ${spacing.xsmall}px;
+    padding-top: ${spacing.xxsmall}px;
   `}
 `;
 

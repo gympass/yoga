@@ -170,8 +170,8 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
   margin: 0;
   padding: 0;
   font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 28px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
   display: block;
@@ -255,8 +255,8 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
   margin: 0;
   padding: 0;
   font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 28px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
   display: block;
@@ -383,8 +383,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   margin: 0;
   padding: 0;
   font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 28px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
   display: block;
@@ -535,8 +535,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
   margin: 0;
   padding: 0;
   font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 28px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
   display: block;
@@ -687,8 +687,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   margin: 0;
   padding: 0;
   font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 28px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
   display: block;

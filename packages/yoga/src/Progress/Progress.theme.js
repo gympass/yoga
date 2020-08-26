@@ -1,5 +1,5 @@
 const Progress = ({ spacing, colors, radii, fontSizes }) => ({
-  height: spacing.xsmall,
+  height: spacing.xxsmall,
   backgroundColor: {
     bar: colors.gray[1],
   },

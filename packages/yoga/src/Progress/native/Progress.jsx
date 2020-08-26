@@ -87,10 +87,10 @@ const Label = styled.Text`
       ? `
       width: 22px;
 
-      margin-${align === 'right' ? 'left' : 'right'}: ${spacing.xsmall}px;
+      margin-${align === 'right' ? 'left' : 'right'}: ${spacing.xxsmall}px;
     `
       : `
-      margin-top: ${spacing.xxsmall}px;
+      margin-top: ${spacing.xxxsmall}px;
     `
   }
 `}

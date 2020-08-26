@@ -4,9 +4,9 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
 .c0 {
   margin: 0;
   padding: 0;
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
 }
@@ -14,9 +14,9 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
 .c1 {
   margin: 0;
   padding: 0;
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
 }
@@ -24,9 +24,9 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
 .c2 {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
 }
@@ -34,14 +34,24 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
 .c3 {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
 }
 
-.c5 {
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #41414A;
+}
+
+.c6 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -51,7 +61,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   color: #41414A;
 }
 
-.c6 {
+.c7 {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -61,11 +71,11 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   color: #41414A;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
@@ -92,11 +102,11 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   >
     Live the mission
   </h4>
-  <p
+  <h5
     class="c4"
   >
     Live the mission
-  </p>
+  </h5>
   <p
     class="c5"
   >
@@ -107,6 +117,11 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   >
     Live the mission
   </p>
+  <p
+    class="c7"
+  >
+    Live the mission
+  </p>
 </div>
 `;
 
@@ -114,9 +129,9 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
 .c0 {
   margin: 0;
   padding: 0;
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
   font-family: Rubik;
   color: #F46152;
 }
@@ -124,9 +139,9 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
 .c1 {
   margin: 0;
   padding: 0;
-  font-size: 24px;
-  line-height: 32px;
-  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
   font-family: Rubik;
   color: #652CDB;
 }
@@ -134,9 +149,9 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
 .c2 {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
   font-family: Rubik;
   color: #22766B;
 }
@@ -165,7 +180,7 @@ exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
