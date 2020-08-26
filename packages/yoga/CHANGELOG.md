@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@3.1.0...@gympass/yoga@4.0.0) (2020-08-26)
+
+
+### Features
+
+* **button:** updated button tokens ([91b8e42](https://github.com/Gympass/yoga/commit/91b8e42ca257e0348b834ca2d3b384691f2a3760))
+* **text:** update Text components to use new font-sizes,weights and heights tokens. Add new H5 ([b70861e](https://github.com/Gympass/yoga/commit/b70861e28b00d55cf19863d4f394bc51349008ef))
+
+
+### BREAKING CHANGES
+
+* **text:** Update Text Heading components font-sizes, weight, height values
+
+
+
+
+
 # [3.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@3.0.0...@gympass/yoga@3.1.0) (2020-08-25)
 
 
