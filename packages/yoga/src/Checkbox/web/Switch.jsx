@@ -99,7 +99,7 @@ const SwitchThumb = styled.span`
         : css`
             ${SwitchInput}:focus + &,
             ${SwitchInput}:hover + & {
-              box-shadow: 0 0 0 ${spacing.xsmall}px
+              box-shadow: 0 0 0 ${spacing.xxsmall}px
                 ${checked
                   ? checkboxswitch.focus.checked.backgroundColor
                   : checkboxswitch.focus.disabled.backgroundColor};

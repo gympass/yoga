@@ -31,10 +31,10 @@ const Slider = ({ colors, radii, elevations, spacing, fontWeights }) => ({
     backgroundColor: colors.gray[1],
     distance: spacing.large,
     padding: {
-      top: spacing.xxsmall,
-      right: spacing.xsmall,
-      bottom: spacing.xxsmall,
-      left: spacing.xsmall,
+      top: spacing.xxxsmall,
+      right: spacing.xxsmall,
+      bottom: spacing.xxxsmall,
+      left: spacing.xxsmall,
     },
     font: {
       color: colors.gray[8],
@@ -49,10 +49,10 @@ const Slider = ({ colors, radii, elevations, spacing, fontWeights }) => ({
       backgroundColor: colors.secondary[3],
       radius: radii.rounded,
       padding: {
-        top: spacing.xxsmall,
-        right: spacing.xsmall,
-        bottom: spacing.xxsmall,
-        left: spacing.xsmall,
+        top: spacing.xxxsmall,
+        right: spacing.xxsmall,
+        bottom: spacing.xxxsmall,
+        left: spacing.xxsmall,
       },
       font: {
         color: colors.white,

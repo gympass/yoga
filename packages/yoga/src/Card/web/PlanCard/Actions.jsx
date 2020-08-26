@@ -8,9 +8,9 @@ const PlanActions = styled(Actions)`
     },
   }) => `
     *:not(:last-child) {
-      margin-bottom: ${spacing.xsmall}px;
+      margin-bottom: ${spacing.xxsmall}px;
     }
-    padding-top: ${spacing.xsmall}px;
+    padding-top: ${spacing.xxsmall}px;
   `}
 `;
 
