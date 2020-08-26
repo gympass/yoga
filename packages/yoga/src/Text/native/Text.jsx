@@ -19,7 +19,7 @@ const H4 = styledText('h4');
 H4.displayName = 'Text.H4';
 
 const H5 = styledText('h5');
-H5.displayName = 'Text.H4';
+H5.displayName = 'Text.H5';
 
 const Small = styledText('small');
 Small.displayName = 'Text.Small';
