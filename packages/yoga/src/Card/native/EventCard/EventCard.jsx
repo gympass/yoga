@@ -82,7 +82,7 @@ const Month = styled(Text.Small)`
   `}
 `;
 
-const Name = styled(Text)`
+const Name = styled(Text.Medium)`
   ${({
     theme: {
       yoga: {
@@ -94,7 +94,7 @@ const Name = styled(Text)`
   }) => `
     margin-bottom: ${event.info.name.marginBottom}px;
 
-    font-weight: ${event.info.name.fontWeight};
+    font-size: ${event.info.name.fontSize}px;
   `}
 `;
 
