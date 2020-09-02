@@ -172,6 +172,90 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   >
     Live the mission
   </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#41414A",
+          "fontFamily": "Rubik",
+          "fontWeight": "400",
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#41414A",
+          "fontFamily": "Rubik",
+          "fontWeight": "500",
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#41414A",
+          "fontFamily": "Rubik",
+          "fontWeight": "700",
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#41414A",
+          "fontFamily": "Rubik",
+          "fontWeight": "900",
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>
 </View>
 `;
 

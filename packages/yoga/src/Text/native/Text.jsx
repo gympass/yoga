@@ -2,14 +2,7 @@ import styled from 'styled-components';
 import { oneOf, bool } from 'prop-types';
 import textStyle from '../textStyle';
 
-const styledText = (type, trim = true) => styled.Text`
-  ${trim
-    ? `
-      margin: 0;
-      padding: 0;
-    `
-    : ''}
-
+const styledText = type => styled.Text`
   ${textStyle(type)}
 `;
 
@@ -34,19 +27,19 @@ Small.displayName = 'Text.Small';
 const Tiny = styledText('tiny');
 Tiny.displayName = 'Text.Tiny';
 
-const Light = styledText('light', false);
+const Light = styledText('light');
 Light.displayName = 'Text.Light';
 
-const Regular = styledText('regular', false);
+const Regular = styledText('regular');
 Regular.displayName = 'Text.Regular';
 
-const Medium = styledText('medium', false);
+const Medium = styledText('medium');
 Medium.displayName = 'Text.Medium';
 
-const Bold = styledText('bold', false);
+const Bold = styledText('bold');
 Bold.displayName = 'Text.Bold';
 
-const Black = styledText('black', false);
+const Black = styledText('black');
 Black.displayName = 'Text.Black';
 
 const Text = styledText('p');

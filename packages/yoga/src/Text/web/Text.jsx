@@ -5,6 +5,9 @@ import textStyle from '../textStyle';
 const styledText = (type, element = false) => (element
   ? styled[type]
   : styled.p)`
+  margin: 0;
+  padding: 0;
+
   ${textStyle(type)}
 `;
 
@@ -29,6 +32,21 @@ Small.displayName = 'Text.Small';
 const Tiny = styledText('tiny');
 Tiny.displayName = 'Text.Tiny';
 
+const Light = styledText('light');
+Light.displayName = 'Text.Light';
+
+const Regular = styledText('regular');
+Regular.displayName = 'Text.Regular';
+
+const Medium = styledText('medium');
+Medium.displayName = 'Text.Medium';
+
+const Bold = styledText('bold');
+Bold.displayName = 'Text.Bold';
+
+const Black = styledText('black');
+Black.displayName = 'Text.Black';
+
 const Text = styledText('p');
 Text.displayName = 'Text';
 
@@ -43,4 +61,18 @@ Text.defaultProps = {
   variant: undefined,
 };
 
-export { Text, H1, H2, H3, H4, H5, Small, Tiny };
+export {
+  Text,
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  Small,
+  Tiny,
+  Light,
+  Regular,
+  Medium,
+  Bold,
+  Black,
+};
