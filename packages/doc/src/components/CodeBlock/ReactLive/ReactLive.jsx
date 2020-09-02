@@ -18,7 +18,9 @@ const CodeError = styled(LiveError)`
   padding: 15px 15px 4px;
 `;
 
-const Preview = styled.div`
+const Preview = styled.div.attrs({
+  id: 'react-live-preview',
+})`
   ${({
     theme: {
       yoga: {

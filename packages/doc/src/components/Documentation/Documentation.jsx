@@ -18,8 +18,19 @@ import {
   Img,
 } from 'components';
 
+import {
+  SubHeading2,
+  SubHeading3,
+  SubHeading4,
+  Paragraph,
+} from 'components/ComponentTitle/ComponentTitle';
+
 const customComponents = (prefix, theme) => ({
   h1: props => <ComponentTitle {...props} prefix={prefix} />,
+  h2: props => <SubHeading2 {...props} />,
+  h3: props => <SubHeading3 {...props} />,
+  h4: props => <SubHeading4 {...props} />,
+  p: props => <Paragraph {...props} />,
   pre: 'div',
   code: props => <CodeBlock theme={theme} {...props} />,
   inlineCode: InlineCode,
