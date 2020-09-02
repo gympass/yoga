@@ -38,7 +38,19 @@ const TextPage = () => (
       <Text.Small>Text Small</Text.Small>
     </TextWrapper>
     <TextWrapper>
-      <Text.Tiny>Text Tiny</Text.Tiny>
+      <Text.Light>Text Light</Text.Light>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Regular>Text Regular</Text.Regular>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Medium>Text Medium</Text.Medium>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Bold>Text Bold</Text.Bold>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Black>Text Black</Text.Black>
     </TextWrapper>
   </ScrollView>
 );
