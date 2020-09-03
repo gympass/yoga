@@ -3,6 +3,8 @@ import styled, { withTheme } from 'styled-components';
 import { func, oneOf, oneOfType, bool, node } from 'prop-types';
 import { TriangleAlert } from '@gympass/yoga-icons';
 
+import { Text } from '../..';
+
 const StyledTag = styled.View`
   ${({
     color,
@@ -31,21 +33,18 @@ const Wrapper = styled.View`
   align-items: center;
 `;
 
-const StyledText = styled.Text`
+const StyledText = styled(Text.Bold)`
   ${({
     color,
     theme: {
       yoga: {
-        baseFont,
         components: { tag },
       },
     },
   }) => `
     color: ${color[1]};
 
-    font-family: ${baseFont.family};
     font-size: ${tag.font.size}px;
-    font-weight: ${tag.font.weight};
   `}
 `;
 
