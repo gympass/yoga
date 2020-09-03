@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@4.0.0...@gympass/yoga@4.1.0) (2020-09-03)
+
+
+### Bug Fixes
+
+* **dropdown:** adjust android option font styles and use Text component from yoga ([4f00cff](https://github.com/Gympass/yoga/commit/4f00cff21da435965f0871eb6bb885f27f4fc483))
+* **font:** add textStyle.android to handle how font-familly is set when android ([587a721](https://github.com/Gympass/yoga/commit/587a721e8240075d7ba07dffcaa104fe60467d23))
+* **text:** fix typo: Text.H5 displayName ([a3988dd](https://github.com/Gympass/yoga/commit/a3988ddaa45f7508608beab11e43d54b9a57cc79))
+
+
+### Features
+
+* **text:** update Text component to match our new tokens ([751886d](https://github.com/Gympass/yoga/commit/751886d9af1d59f993e0faf9762cd121631b590f))
+
+
+
+
+
 # [4.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@3.1.0...@gympass/yoga@4.0.0) (2020-08-26)
 
 

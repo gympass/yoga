@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.2...@gympass/yoga-doc@1.2.3) (2020-09-03)
+
+
+### Bug Fixes
+
+* **reactlive:** remove unecessary id ([f8eb08a](https://github.com/Gympass/yoga/commit/f8eb08a419da80c4ff31c3ec6a645b809424e3e3))
+
+
+
+
+
 ## [1.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.1...@gympass/yoga-doc@1.2.2) (2020-08-26)
 
 **Note:** Version bump only for package @gympass/yoga-doc
