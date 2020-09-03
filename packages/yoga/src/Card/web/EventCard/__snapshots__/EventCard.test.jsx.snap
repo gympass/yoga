@@ -80,6 +80,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   height: 20px;
   margin-bottom: 8px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .c7 .c3 {
@@ -282,6 +283,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   height: 20px;
   margin-bottom: 8px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .c7 .c3 {
@@ -484,6 +486,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   height: 20px;
   margin-bottom: 8px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .c7 .c3 {
@@ -686,6 +689,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   height: 20px;
   margin-bottom: 8px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .c7 .c3 {

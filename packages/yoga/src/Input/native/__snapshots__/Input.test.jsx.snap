@@ -296,7 +296,9 @@ exports[`<Input /> Snapshots should match with error 1`] = `
               "color": "#CB3530",
               "flexShrink": 1,
               "flexWrap": "wrap",
+              "fontFamily": "Rubik",
               "fontSize": 12,
+              "fontWeight": "400",
             },
           ]
         }
@@ -480,7 +482,9 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
               "color": "#9898A6",
               "flexShrink": 1,
               "flexWrap": "wrap",
+              "fontFamily": "Rubik",
               "fontSize": 12,
+              "fontWeight": "400",
             },
           ]
         }
@@ -496,7 +500,9 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
               "color": "#9898A6",
               "flexShrink": 0,
               "flexWrap": "wrap",
+              "fontFamily": "Rubik",
               "fontSize": 12,
+              "fontWeight": "400",
               "marginLeft": "auto",
             },
           ]
