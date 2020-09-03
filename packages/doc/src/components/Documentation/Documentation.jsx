@@ -16,6 +16,7 @@ import {
   Summary,
   Tokens,
   Img,
+  Ul,
 } from 'components';
 
 import {
@@ -31,6 +32,7 @@ const customComponents = (prefix, theme) => ({
   h3: props => <SubHeading3 {...props} />,
   h4: props => <SubHeading4 {...props} />,
   p: props => <Paragraph {...props} />,
+  ul: props => <Ul {...props} />,
   pre: 'div',
   code: props => <CodeBlock theme={theme} {...props} />,
   inlineCode: InlineCode,

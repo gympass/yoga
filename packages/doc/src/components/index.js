@@ -16,6 +16,7 @@ import GlobalStyle from './GlobalStyle';
 import Redirect from './Redirect';
 import Tokens from './Tokens';
 import Img from './Img';
+import Ul from './Ul';
 
 export {
   CodeBlock,
@@ -37,4 +38,5 @@ export {
   Redirect,
   Tokens,
   Img,
+  Ul,
 };

@@ -74,10 +74,6 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const Ul = styled.ul`
-  line-height: 2;
-`;
-
 const getMetaData = (isComponent, prefix) => {
   if (!isComponent) {
     return {};
@@ -118,7 +114,7 @@ const ComponentTitle = ({ prefix, children = '' }) => {
   return (
     <>
       <Heading>{children}</Heading>
-      {description && <p>{description}</p>}
+      {description && <Paragraph>{description}</Paragraph>}
     </>
   );
 };
