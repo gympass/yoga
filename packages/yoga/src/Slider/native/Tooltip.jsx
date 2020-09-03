@@ -105,7 +105,7 @@ const RibbonWrapper = styled.View(
   `,
 );
 
-const RibbonText = styled(Text.Tiny)(
+const RibbonText = styled(Text.Bold)(
   ({
     theme: {
       yoga: {
@@ -114,6 +114,9 @@ const RibbonText = styled(Text.Tiny)(
     },
   }) => `
     color: ${slider.tooltip.ribbon.font.color};
+
+    font-size: ${slider.tooltip.ribbon.font.size}px;
+
     text-align: center;
   `,
 );

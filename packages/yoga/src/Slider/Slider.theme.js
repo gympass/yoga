@@ -1,4 +1,11 @@
-const Slider = ({ colors, radii, elevations, spacing, fontWeights }) => ({
+const Slider = ({
+  colors,
+  radii,
+  elevations,
+  spacing,
+  fontWeights,
+  fontSizes,
+}) => ({
   track: {
     backgroundColor: {
       active: colors.primary[3],
@@ -57,6 +64,7 @@ const Slider = ({ colors, radii, elevations, spacing, fontWeights }) => ({
       font: {
         color: colors.white,
         weight: fontWeights.bold,
+        size: fontSizes.xsmall,
       },
     },
   },
