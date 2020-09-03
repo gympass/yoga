@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { bool, string, number } from 'prop-types';
 
+import Text from '../../Text';
+
 const Wrapper = styled.div`
   ${({
     disabled,
@@ -16,14 +18,12 @@ const Wrapper = styled.div`
     display: flex;
     margin-top: ${input.helper.margin.top}px;
 
-    color: ${input.helper.color};
-
     ${error ? `color: ${colors.negative[1]};` : ''}
     ${disabled ? `color: ${colors.disabled.background};` : ''}
   `}
 `;
 
-const Info = styled.span`
+const Info = styled(Text.Small)`
   ${({
     right,
     theme: {
@@ -32,6 +32,7 @@ const Info = styled.span`
       },
     },
   }) => `
+    color: ${input.helper.color};
     font-size: ${input.helper.font.size}px;
     
     ${right ? 'margin-left: auto;' : ''}
@@ -40,9 +41,9 @@ const Info = styled.span`
 
 const Helper = ({ disabled, error, helper, maxLength, length }) => (
   <Wrapper disabled={disabled} error={error}>
-    {(error || helper) && <Info>{error || helper}</Info>}
+    {(error || helper) && <Info as="span">{error || helper}</Info>}
     {maxLength && (
-      <Info right>
+      <Info as="span" right>
         {length}/{maxLength}
       </Info>
     )}

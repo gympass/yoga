@@ -16,6 +16,10 @@ describe('<Text />', () => {
           <Text>Live the mission</Text>
           <Text.Small>Live the mission</Text.Small>
           <Text.Tiny>Live the mission</Text.Tiny>
+          <Text.Regular>Live the mission</Text.Regular>
+          <Text.Medium>Live the mission</Text.Medium>
+          <Text.Bold>Live the mission</Text.Bold>
+          <Text.Black>Live the mission</Text.Black>
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();

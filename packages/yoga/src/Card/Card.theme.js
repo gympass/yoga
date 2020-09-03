@@ -5,6 +5,7 @@ const Card = ({
   elevations,
   borders,
   fontWeights,
+  fontSizes,
 }) => ({
   backgroundColor: colors.white,
   padding: {
@@ -78,6 +79,7 @@ const Card = ({
       name: {
         height: spacing.medium,
         fontWeight: fontWeights.medium,
+        fontSize: fontSizes.medium,
         marginBottom: spacing.xxsmall,
       },
       place: {

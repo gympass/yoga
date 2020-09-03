@@ -84,14 +84,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
-                "marginBottom": 0,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
               },
             ]
           }
@@ -537,14 +529,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
                 "fontWeight": "400",
                 "lineHeight": 24,
                 "marginBottom": 8,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
                 "minHeight": 40,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
               },
             ]
           }
@@ -561,14 +546,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
-                "marginBottom": 0,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
               },
             ]
           }
@@ -737,14 +714,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
-                "marginBottom": 0,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
               },
             ]
           }
@@ -1190,14 +1159,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
                 "fontWeight": "400",
                 "lineHeight": 24,
                 "marginBottom": 8,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
                 "minHeight": 40,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
               },
             ]
           }
@@ -1214,14 +1176,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
-                "marginBottom": 0,
-                "marginLeft": 0,
-                "marginRight": 0,
-                "marginTop": 0,
-                "paddingBottom": 0,
-                "paddingLeft": 0,
-                "paddingRight": 0,
-                "paddingTop": 0,
               },
             ]
           }

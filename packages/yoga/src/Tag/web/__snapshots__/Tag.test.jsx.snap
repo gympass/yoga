@@ -14,7 +14,7 @@ exports[`<Tag /> should match snapshot 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 8px  8px  8px  8px;
+  padding: 8px 8px 8px 8px;
   background-color: #F5F5FA;
   color: #6B6B78;
   border-radius: 8px;
@@ -55,7 +55,7 @@ exports[`<Tag /> should match snapshot with custom icon 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 8px  8px  8px  8px;
+  padding: 8px 8px 8px 8px;
   background-color: #F5F5FA;
   color: #6B6B78;
   border-radius: 8px;
@@ -96,7 +96,7 @@ exports[`<Tag /> should match snapshot with full prop 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 8px  8px  8px  8px;
+  padding: 8px 8px 8px 8px;
   background-color: #F5F5FA;
   color: #6B6B78;
   border-radius: 8px;
@@ -137,7 +137,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 8px  8px  8px  8px;
+  padding: 8px 8px 8px 8px;
   background-color: #E9F3FC;
   color: #2186D9;
   border-radius: 8px;
@@ -162,7 +162,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 8px  8px  8px  8px;
+  padding: 8px 8px 8px 8px;
   background-color: #DEF8E9;
   color: #1E854A;
   border-radius: 8px;
@@ -187,7 +187,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 8px  8px  8px  8px;
+  padding: 8px 8px 8px 8px;
   background-color: #FCEAE9;
   color: #CB3530;
   border-radius: 8px;
@@ -212,7 +212,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 8px  8px  8px  8px;
+  padding: 8px 8px 8px 8px;
   background-color: #FBFBBE;
   color: #CB9303;
   border-radius: 8px;
@@ -286,7 +286,7 @@ exports[`<Tag /> should match snapshot with without icon 1`] = `
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 8px  8px  8px  8px;
+  padding: 8px 8px 8px 8px;
   background-color: #F5F5FA;
   color: #6B6B78;
   border-radius: 8px;

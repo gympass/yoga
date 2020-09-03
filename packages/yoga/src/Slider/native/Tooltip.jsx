@@ -29,7 +29,7 @@ const Tip = styled.View(
         components: { slider },
       },
     },
-  }) => `  
+  }) => `
     background-color: ${slider.tooltip.backgroundColor};
     border-radius: ${slider.tooltip.radius}px;
     padding: ${slider.tooltip.padding.top}px ${slider.tooltip.padding.right}px ${slider.tooltip.padding.bottom}px ${slider.tooltip.padding.left}px;
@@ -47,7 +47,6 @@ const Title = styled(Text.Small)(
     },
   }) => `
     color: ${slider.tooltip.font.color};
-    font-weight: ${slider.tooltip.font.title.weight};
     margin-bottom: 5px;
     text-align: center;
   `,
@@ -62,7 +61,6 @@ const Description = styled(Text.Small)(
     },
   }) => `
     color: ${slider.tooltip.font.color};
-    font-weight: ${slider.tooltip.font.description.weight};
     text-align: center;
   `,
 );
@@ -107,7 +105,7 @@ const RibbonWrapper = styled.View(
   `,
 );
 
-const RibbonText = styled(Text.Tiny)(
+const RibbonText = styled(Text.Bold)(
   ({
     theme: {
       yoga: {
@@ -116,7 +114,9 @@ const RibbonText = styled(Text.Tiny)(
     },
   }) => `
     color: ${slider.tooltip.ribbon.font.color};
-    font-weight: ${slider.tooltip.ribbon.font.weight};
+
+    font-size: ${slider.tooltip.ribbon.font.size}px;
+
     text-align: center;
   `,
 );

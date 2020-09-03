@@ -131,6 +131,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
                 "color": "#41414A",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
+                "fontWeight": "400",
                 "paddingLeft": 8,
               },
             ]
@@ -156,6 +157,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
               "color": "#9898A6",
               "fontFamily": "Rubik",
               "fontSize": 14,
+              "fontWeight": "400",
             },
           ]
         }
@@ -232,6 +234,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
                 "color": "#41414A",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
+                "fontWeight": "400",
                 "paddingLeft": 8,
               },
             ]
@@ -257,6 +260,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
               "color": "#9898A6",
               "fontFamily": "Rubik",
               "fontSize": 14,
+              "fontWeight": "400",
             },
           ]
         }
@@ -399,6 +403,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
                 "color": "#41414A",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
+                "fontWeight": "400",
                 "paddingLeft": 8,
               },
             ]
@@ -424,6 +429,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
               "color": "#9898A6",
               "fontFamily": "Rubik",
               "fontSize": 14,
+              "fontWeight": "400",
             },
           ]
         }
@@ -500,6 +506,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
                 "color": "#41414A",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
+                "fontWeight": "400",
                 "paddingLeft": 8,
               },
             ]
@@ -525,6 +532,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
               "color": "#9898A6",
               "fontFamily": "Rubik",
               "fontSize": 14,
+              "fontWeight": "400",
             },
           ]
         }
@@ -668,6 +676,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
                 "color": "#41414A",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
+                "fontWeight": "400",
                 "paddingLeft": 8,
               },
             ]
@@ -694,6 +703,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
               "color": "#CB3530",
               "fontFamily": "Rubik",
               "fontSize": 14,
+              "fontWeight": "400",
             },
           ]
         }
@@ -771,6 +781,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
                 "color": "#41414A",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
+                "fontWeight": "400",
                 "paddingLeft": 8,
               },
             ]
@@ -797,6 +808,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
               "color": "#CB3530",
               "fontFamily": "Rubik",
               "fontSize": 14,
+              "fontWeight": "400",
             },
           ]
         }

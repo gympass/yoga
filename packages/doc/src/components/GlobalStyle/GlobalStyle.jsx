@@ -19,27 +19,6 @@ const GlobalStyle = createGlobalStyle(
       overflow: ${overflow ? 'hidden' : 'auto'};
     }
 
-    h1, h2, h3, h4, h5, h6 {
-      display: flex;
-      align-items: center;
-      margin: 45px 0 20px;
-
-      color: #333;
-      font-weight: 300;
-
-      &:hover {
-        .anchor {
-          display: flex;
-        }
-      }
-    }
-
-    p {
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 1.8;
-    }
-
     .anchor {
       display: none;
       padding-right: 8px;
@@ -47,38 +26,8 @@ const GlobalStyle = createGlobalStyle(
       float: left;
     }
 
-    h1 {
-      margin: 0;
-
-      font-size: 48px;
-      font-weight: 300;
-
-      + p {
-        margin-top: 10px;
-        
-        color: #6b6b78;
-        font-weight: 300;
-      }
-    }
-
-    h2 {
-      font-size: 30px;
-    }
-
-    h3 {
-      font-size: 22px;
-    }
-
-    h4 {
-      font-size: 20px;
-    }
-
     * {
       box-sizing: border-box;
-    }
-
-    ul {
-      line-height: 2;
     }
 
     img { 
@@ -105,24 +54,6 @@ const GlobalStyle = createGlobalStyle(
           border: 1px solid #ccc;
           padding: 14px 12px 12px;
         }
-      }
-    }
-    
-    @media (max-width: 900px) {
-      h1 {
-        font-size: 26px;
-      }
-
-      h2 {
-        font-size: 18px;
-      }
-
-      h3 {
-        font-size: 16px;
-      }
-
-      p {
-        font-size: 14px;
       }
     }
   `,

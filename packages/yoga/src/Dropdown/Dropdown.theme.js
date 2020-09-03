@@ -95,6 +95,7 @@ const Dropdown = ({
         },
         font: {
           weight: fontWeights.bold,
+          size: fontSizes.medium,
         },
       },
       option: {

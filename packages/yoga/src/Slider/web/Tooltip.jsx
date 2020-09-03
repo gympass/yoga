@@ -84,7 +84,7 @@ const Arrow = styled.div`
   `}
 `;
 
-const Ribbon = styled(Text.Tiny)`
+const Ribbon = styled(Text.Bold)`
   position: relative;
   text-align: center;
   display: block;
@@ -102,7 +102,7 @@ const Ribbon = styled(Text.Tiny)`
     border-top-right-radius: ${slider.tooltip.ribbon.radius}px;
     color: ${slider.tooltip.ribbon.font.color};
 
-    font-weight: ${slider.tooltip.ribbon.font.weight};
+    font-size: ${slider.tooltip.ribbon.font.size}px;
   `}
 `;
 

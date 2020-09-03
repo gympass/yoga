@@ -37,7 +37,7 @@ const Dot = styled.View(
   `,
 );
 
-const Label = styled(Text.Tiny)(
+const Label = styled(Text.Bold)(
   ({
     active,
     theme: {
@@ -54,7 +54,7 @@ const Label = styled(Text.Tiny)(
       active ? stepper.label.color.active : stepper.label.color.inactive
     };
 
-    font-weight: ${stepper.label.font.weight};
+    font-size: ${stepper.label.font.size}px;
     text-align: center;
   `,
 );

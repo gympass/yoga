@@ -55,26 +55,16 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Open Sans Bold Italic.ttf</string>
-		<string>Open Sans Bold.ttf</string>
-		<string>Open Sans Extrabold Italic.ttf</string>
-		<string>Open Sans Extrabold.ttf</string>
-		<string>Open Sans Italic.ttf</string>
-		<string>Open Sans Light Italic.ttf</string>
-		<string>Open Sans Light.ttf</string>
-		<string>Open Sans Semibold Italic.ttf</string>
-		<string>Open Sans Semibold.ttf</string>
-		<string>Open Sans.ttf</string>
-		<string>Rubik-Black.ttf</string>
-		<string>Rubik-BlackItalic.ttf</string>
-		<string>Rubik-Bold.ttf</string>
-		<string>Rubik-BoldItalic.ttf</string>
-		<string>Rubik-Italic.ttf</string>
-		<string>Rubik-Light.ttf</string>
-		<string>Rubik-LightItalic.ttf</string>
-		<string>Rubik-Medium.ttf</string>
-		<string>Rubik-MediumItalic.ttf</string>
-		<string>Rubik-Regular.ttf</string>
+		<string>Rubik-300-italic.ttf</string>
+		<string>Rubik-300.ttf</string>
+		<string>Rubik-500-italic.ttf</string>
+		<string>Rubik-500.ttf</string>
+		<string>Rubik-700-italic.ttf</string>
+		<string>Rubik-700.ttf</string>
+		<string>Rubik-900-italic.ttf</string>
+		<string>Rubik-900.ttf</string>
+		<string>Rubik-italic.ttf</string>
+		<string>Rubik.ttf</string>
 	</array>
 </dict>
 </plist>

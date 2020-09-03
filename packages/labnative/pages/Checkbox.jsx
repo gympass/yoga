@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Checkbox } from '@gympass/yoga';
 import styled from 'styled-components';
 
@@ -16,8 +16,9 @@ const CheckboxWrapper = styled.View`
 
 const CheckboxPage = () => {
   const [checked, setChecked] = useState(true);
+
   return (
-    <View
+    <ScrollView
       style={{
         paddingBottom: 40,
       }}
@@ -71,7 +72,7 @@ const CheckboxPage = () => {
         />
         <Checkbox checked variant="tertiary" label="Tertiary" />
       </CheckboxWrapper>
-    </View>
+    </ScrollView>
   );
 };
 

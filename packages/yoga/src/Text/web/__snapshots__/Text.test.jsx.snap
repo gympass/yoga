@@ -71,6 +71,38 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   color: #41414A;
 }
 
+.c8 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #41414A;
+}
+
+.c10 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-family: Rubik;
+  color: #41414A;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-family: Rubik;
+  color: #41414A;
+}
+
 .c5 {
   margin: 0;
   padding: 0;
@@ -119,6 +151,26 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   </p>
   <p
     class="c7"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c8"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c9"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c10"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c11"
   >
     Live the mission
   </p>

@@ -628,11 +628,18 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   display: -ms-flexbox;
   display: flex;
   margin-top: 4px;
-  color: #9898A6;
   color: #CB3530;
 }
 
 .c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+  color: #9898A6;
   font-size: 12px;
 }
 
@@ -1077,14 +1084,29 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   display: -ms-flexbox;
   display: flex;
   margin-top: 4px;
-  color: #9898A6;
 }
 
 .c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+  color: #9898A6;
   font-size: 12px;
 }
 
 .c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+  color: #9898A6;
   font-size: 12px;
   margin-left: auto;
 }

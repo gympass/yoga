@@ -43,6 +43,7 @@ const EventInfo = styled.div`
       margin-bottom: ${event.info.name.marginBottom}px;
 
       font-weight: ${event.info.name.fontWeight};
+      font-size: ${event.info.name.fontSize}px;
     }
 
     ${Text.Small} {
