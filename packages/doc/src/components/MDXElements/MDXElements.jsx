@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { node, bool } from 'prop-types';
+import { string, node, bool } from 'prop-types';
+
 import DescriptionQuery from './DescriptionQuery';
 
 const Heading = styled.h1`
@@ -74,6 +75,20 @@ export const Paragraph = styled.p`
   }
 `;
 
+export const Ul = styled.ul`
+  line-height: 2;
+`;
+
+export const Img = ({ src, prefix, alt, ...props }) => (
+  <img src={prefix ? `/yoga${src}` : src} alt={alt} {...props} />
+);
+
+Img.propTypes = {
+  src: string.isRequired,
+  prefix: bool.isRequired,
+  alt: string.isRequired,
+};
+
 const getMetaData = (isComponent, prefix) => {
   if (!isComponent) {
     return {};
@@ -104,7 +119,7 @@ const getMetaData = (isComponent, prefix) => {
   return currentNode ? { description: currentNode.node.description.text } : '';
 };
 
-const ComponentTitle = ({ prefix, children = '' }) => {
+export const ComponentTitle = ({ prefix, children = '' }) => {
   const isComponent =
     typeof window !== 'undefined' &&
     window.location.href.search(/components\/.+/) > -1;
@@ -123,5 +138,3 @@ ComponentTitle.propTypes = {
   children: node.isRequired,
   prefix: bool.isRequired,
 };
-
-export default ComponentTitle;

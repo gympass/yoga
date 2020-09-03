@@ -8,23 +8,23 @@ import * as icons from '@gympass/yoga-icons';
 import {
   CodeBlock,
   PropsTable,
-  ComponentTitle,
   InlineCode,
   TabbedView,
   Tab,
   Redirect,
   Summary,
   Tokens,
-  Img,
-  Ul,
 } from 'components';
 
 import {
+  ComponentTitle,
   SubHeading2,
   SubHeading3,
   SubHeading4,
   Paragraph,
-} from 'components/ComponentTitle/ComponentTitle';
+  Img,
+  Ul,
+} from '../MDXElements/MDXElements';
 
 const customComponents = (prefix, theme) => ({
   h1: props => <ComponentTitle {...props} prefix={prefix} />,

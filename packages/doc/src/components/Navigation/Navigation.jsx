@@ -6,7 +6,7 @@ import { arrayOf, object, func, bool, shape, number, string } from 'prop-types';
 import Arrow from 'images/arrow-dropdown.svg';
 import createTree from './tree';
 
-import Ul from '../Ul';
+import MDXElements from '../MDXElements';
 
 const Wrapper = styled.div`
   ${({
@@ -55,7 +55,7 @@ const Nav = styled.div`
   }
 `;
 
-const StyledList = styled(Ul)`
+const StyledList = styled(MDXElements.Ul)`
   font-size: 14px;
   list-style-type: none;
   padding: 0;

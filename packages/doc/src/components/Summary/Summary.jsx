@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { string, number, arrayOf, shape } from 'prop-types';
 import styled from 'styled-components';
 
-import Ul from '../Ul';
+import MDXElements from '../MDXElements';
 
 const hasWindow = typeof window !== 'undefined';
 
@@ -21,7 +21,7 @@ const TableOfContent = styled.div`
   }
 `;
 
-const StyledList = styled(Ul)`
+const StyledList = styled(MDXElements.Ul)`
   list-style: none;
   padding: 0;
   margin: 0;
