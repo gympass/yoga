@@ -48,7 +48,7 @@ const Content = styled.View`
   `}
 `;
 
-const Title = styled(Text)`
+const Title = styled(Text.Bold)`
   ${({
     theme: {
       yoga: {
@@ -63,7 +63,8 @@ const Title = styled(Text)`
       ${dropdown.backdrop.content.title.padding.bottom}px
       ${dropdown.backdrop.content.title.padding.left}px;
 
-    font-weight: ${dropdown.backdrop.content.title.font.weight};
+    font-size: ${dropdown.backdrop.content.title.font.size}px;
+
     text-align: center;
   `}
 `;
