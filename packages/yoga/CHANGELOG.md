@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@4.1.0...@gympass/yoga@4.1.1) (2020-09-10)
+
+
+### Bug Fixes
+
+* **font:** rename rubik italic file name ([2e3383a](https://github.com/Gympass/yoga/commit/2e3383a854e26ffb7fb9843dd6fa7cb57f0bbef4))
+
+
+
+
+
 # [4.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@4.0.0...@gympass/yoga@4.1.0) (2020-09-03)
 
 
