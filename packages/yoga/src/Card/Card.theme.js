@@ -20,20 +20,58 @@ const Card = ({
     radius: radii.circle,
   },
   plan: {
+    padding: {
+      top: spacing.xxlarge + 8,
+      right: spacing.medium,
+      bottom: spacing.large,
+      left: spacing.medium,
+    },
+    radius: 16,
+    subtitle: {
+      color: colors.gray[8],
+    },
     title: {
+      color: '#001027',
       margin: {
-        top: spacing.xxsmall,
-        bottom: spacing.xsmall,
+        bottom: spacing.xxxsmall,
       },
+    },
+    description: {
+      color: colors.gray[8],
     },
     price: {
       margin: {
-        top: spacing.xsmall,
+        top: spacing.xlarge,
+        bottom: spacing.xxlarge,
       },
     },
-    period: {
+    list: {
       margin: {
-        bottom: spacing.xxsmall,
+        top: spacing.small,
+      },
+      item: {
+        margin: {
+          bottom: spacing.small,
+        },
+        font: {
+          size: fontSizes.small,
+          color: '#001027',
+        },
+        icon: {
+          margin: {
+            right: spacing.xsmall,
+          },
+        },
+      },
+      button: {
+        font: {
+          color: colors.secondary[3],
+          size: fontSizes.xsmall,
+          weight: fontWeights.medium,
+        },
+        margin: {
+          top: spacing.xsmall,
+        },
       },
     },
   },

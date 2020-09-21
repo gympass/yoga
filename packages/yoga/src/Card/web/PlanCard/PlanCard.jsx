@@ -1,44 +1,53 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, shape, string } from 'prop-types';
+import { node } from 'prop-types';
 
-import Card from '../Card';
+import theme from '../../../Theme/helpers/themeReader';
 
-const Plan = styled(Card)`
-  max-width: 280px;
-  ${({
-    variant,
-    theme: {
-      yoga: {
-        colors: { white },
-      },
-    },
-  }) => `
-  ${variant ? `color: ${white};` : ''}
-`}
+const Plan = styled.article`
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  max-width: 288px;
+
+  padding: ${theme.components.card.plan.padding.top}px
+    ${theme.components.card.plan.padding.right}px
+    ${theme.components.card.plan.padding.bottom}px
+    ${theme.components.card.plan.padding.left}px;
+
+  border-radius: ${theme.components.card.plan.radius}px;
+
+  background-color: ${theme.colors.white};
+
+  box-shadow: ${theme.components.card.elevation};
+  overflow: hidden;
 `;
 
-const PlanCard = ({ ...rest }) => <Plan {...rest} />;
+const Border = styled.span`
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+  width: 100%;
+
+  height: 8px;
+  background-color: #d7d7e0;
+`;
+
+const PlanCard = ({ children, ...rest }) => (
+  <Plan {...rest}>
+    <Border />
+    {children}
+  </Plan>
+);
 
 PlanCard.propTypes = {
-  /** text: the content inside the Card Ribbon
-   * variant: style the ribbon following the theme (primary, secondary, tertiary)
-   * variantIntensity: ribbon variant color intensity (0, 1, 2, 3) */
-  ribbon: shape({
-    text: string,
-    variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
-    variantIntensity: oneOf([0, 1, 2, 3]),
-  }),
-  /** style the card following the theme (primary, secondary, tertiary) */
-  variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
-  /** intensity of variant color (0, 1, 2, 3) */
-  variantIntensity: oneOf([0, 1, 2, 3]),
+  children: node,
 };
 
 PlanCard.defaultProps = {
-  ribbon: {},
-  variant: '',
-  variantIntensity: 2,
+  children: undefined,
 };
 PlanCard.displayName = 'PlanCard';
 
