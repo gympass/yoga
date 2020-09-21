@@ -89,9 +89,9 @@ const Password = ({ disabled, style, className, full, ...props }) => {
   useEffect(() => {
     const { current: element } = inputRef;
 
-  if(element.value.length) {
-    element.setSelectionRange(element.value.length, element.value.length);
-  }
+    if (element.value.length) {
+      element.setSelectionRange(element.value.length, element.value.length);
+    }
   }, [showPassword]);
 
   const togglePassword = e => {

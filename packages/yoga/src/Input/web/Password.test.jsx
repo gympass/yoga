@@ -89,22 +89,6 @@ describe('<Input.Password />', () => {
 
       expect(onBlurMock).toHaveBeenCalled();
     });
-
-    it('should not stay focus at first render', () => {
-      const { getByTestId } = render(
-        <ThemeProvider>
-          <Input.Password
-            label="Input"
-            data-testid="input"
-          />
-        </ThemeProvider>,
-      );
-
-     // expect(document.activeElement.tagName).toEqual('BODY');
-    //  expect(document.activeElement).toEqual(getByTestId('input'));
-
-    });
-
   });
 
   describe('visibility button', () => {
