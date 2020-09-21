@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { string, node } from 'prop-types';
 
 import theme from '../../../Theme/helpers/themeReader';
@@ -8,8 +8,18 @@ import Content from '../Card/Content';
 import Subtitle from './Subtitle';
 
 const Title = styled(Text.H5)`
-  color: ${theme.components.card.plan.title.color};
-  margin-bottom: ${theme.components.card.plan.title.margin.bottom}px;
+  ${props => {
+    const {
+      components: {
+        card: { plan },
+      },
+    } = theme(props);
+
+    return css`
+      color: ${plan.title.color};
+      margin-bottom: ${plan.title.margin.bottom}px;
+    `;
+  }}
 `;
 
 const Description = styled(Text.Small)`
@@ -27,8 +37,19 @@ const Description = styled(Text.Small)`
 
 const Price = styled.div`
   display: flex;
-  margin-top: ${theme.components.card.plan.price.margin.top}px;
-  margin-bottom: ${theme.components.card.plan.price.margin.bottom}px;
+
+  ${props => {
+    const {
+      components: {
+        card: { plan },
+      },
+    } = theme(props);
+
+    return css`
+      margin-top: ${plan.price.margin.top}px;
+      margin-bottom: ${plan.price.margin.bottom}px;
+    `;
+  }}
 `;
 
 const EnhancePrice = styled(Text.Small)`
@@ -69,9 +90,12 @@ const PlanCardContent = ({
 );
 
 PlanCardContent.propTypes = {
+  /** Plan name */
   title: string.isRequired,
+  /** currency of the current country */
   currency: string.isRequired,
   price: string.isRequired,
+  /** period that this price will be charged  */
   period: string.isRequired,
   description: string,
   subtitle: string,

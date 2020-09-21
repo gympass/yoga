@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-import { node } from 'prop-types';
+import styled, { css } from 'styled-components';
+import { node, string } from 'prop-types';
 
 import theme from '../../../Theme/helpers/themeReader';
 
@@ -10,17 +10,27 @@ const Plan = styled.article`
   position: relative;
   max-width: 288px;
 
-  padding: ${theme.components.card.plan.padding.top}px
-    ${theme.components.card.plan.padding.right}px
-    ${theme.components.card.plan.padding.bottom}px
-    ${theme.components.card.plan.padding.left}px;
-
-  border-radius: ${theme.components.card.plan.radius}px;
-
-  background-color: ${theme.colors.white};
-
-  box-shadow: ${theme.components.card.elevation};
   overflow: hidden;
+
+  ${props => {
+    const {
+      colors,
+      components: {
+        card: { plan, elevation },
+      },
+    } = theme(props);
+
+    return css`
+      padding: ${plan.padding.top}px ${plan.padding.right}px
+        ${plan.padding.bottom}px ${plan.padding.left}px;
+
+      border-radius: ${plan.radius}px;
+
+      background-color: ${colors.white};
+
+      box-shadow: ${elevation};
+    `;
+  }}
 `;
 
 const Border = styled.span`
@@ -35,20 +45,57 @@ const Border = styled.span`
   background-color: #d7d7e0;
 `;
 
-const PlanCard = ({ children, ...rest }) => (
+const Ribbon = styled.span`
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  ${props => {
+    const {
+      components: {
+        card: { plan },
+      },
+    } = theme(props);
+
+    return css`
+      top: ${plan.ribbon.position.top}px;
+      left: ${plan.ribbon.position.left}px;
+
+      padding-left: ${plan.ribbon.padding.left}px;
+      padding-right: ${plan.ribbon.padding.right}px;
+
+      border: ${plan.ribbon.border.width}px solid ${plan.ribbon.border.color};
+      border-radius: ${plan.ribbon.radius}px;
+
+      font-size: ${plan.ribbon.font.size}px;
+      line-height: ${plan.ribbon.font.lineHeight}px;
+      font-weight: ${plan.ribbon.font.weight};
+    `;
+  }}
+`;
+
+const PlanCard = ({ children, ribbon, ...rest }) => (
   <Plan {...rest}>
     <Border />
+    {ribbon && <Ribbon>{ribbon}</Ribbon>}
     {children}
   </Plan>
 );
 
 PlanCard.propTypes = {
   children: node,
+  /** A text to be displayed in a badge on top of card */
+  ribbon: string,
 };
 
 PlanCard.defaultProps = {
   children: undefined,
+  ribbon: undefined,
 };
+
 PlanCard.displayName = 'PlanCard';
 
 export default PlanCard;

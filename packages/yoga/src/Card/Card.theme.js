@@ -6,6 +6,7 @@ const Card = ({
   borders,
   fontWeights,
   fontSizes,
+  lineHeights,
 }) => ({
   backgroundColor: colors.white,
   padding: {
@@ -21,14 +22,40 @@ const Card = ({
   },
   plan: {
     padding: {
-      top: spacing.xxlarge + 8,
+      top: spacing.xxxlarge + 8,
       right: spacing.medium,
       bottom: spacing.large,
       left: spacing.medium,
     },
     radius: 16,
+    ribbon: {
+      radius: radii.semiRounded,
+      position: {
+        top: spacing.medium,
+        left: spacing.medium,
+      },
+      padding: {
+        right: spacing.xxsmall,
+        left: spacing.xxsmall,
+      },
+      border: {
+        width: borders.small,
+        color: colors.gray[7],
+      },
+      font: {
+        size: fontSizes.xsmall,
+        lineHeight: lineHeights.xsmall,
+        fontWeight: fontWeights.medium,
+      },
+    },
     subtitle: {
-      color: colors.gray[8],
+      margin: {
+        bottom: spacing.xxsmall,
+      },
+      font: {
+        color: colors.gray[8],
+        weight: fontWeights.medium,
+      },
     },
     title: {
       color: '#001027',
@@ -72,6 +99,11 @@ const Card = ({
         margin: {
           top: spacing.xsmall,
         },
+      },
+    },
+    actions: {
+      margin: {
+        top: spacing.large,
       },
     },
   },

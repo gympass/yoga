@@ -18,28 +18,33 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-  margin-bottom: ${theme.components.card.plan.list.item.margin.bottom}px;
-
-  font-size: ${theme.components.card.plan.list.item.font.size}px;
-  color: ${theme.components.card.plan.list.item.font.color};
-
   ${truncateStyle}
 
-  svg {
-    margin-right: ${theme.components.card.plan.list.item.icon.margin.right}px;
-  }
+  ${props => {
+    const {
+      components: {
+        card: { plan },
+      },
+    } = theme(props);
+
+    return css`
+      margin-bottom: ${plan.list.item.margin.bottom}px;
+
+      font-size: ${plan.list.item.font.size}px;
+      color: ${plan.list.item.font.color};
+
+      svg {
+        margin-right: ${plan.list.item.icon.margin.right}px;
+      }
+    `;
+  }}
 `;
 
 const Button = styled.button`
   display: block;
-  margin-top: ${theme.components.card.plan.list.button.margin.top}px;
   padding: 0;
 
-  font-family: ${theme.baseFont.family};
-  font-size: ${theme.components.card.plan.list.button.font.size}px;
-  font-weight: ${theme.components.card.plan.list.button.font.weight};
   letter-spacing: normal;
-  color: ${theme.components.card.plan.list.button.font.color};
 
   background-color: transparent;
   border: none;
@@ -48,6 +53,23 @@ const Button = styled.button`
   text-decoration: none;
 
   ${truncateStyle}
+
+  ${props => {
+    const {
+      components: {
+        card: { plan },
+      },
+    } = theme(props);
+
+    return css`
+      margin-top: ${plan.list.button.margin.top}px;
+
+      font-family: ${theme.baseFont.family};
+      font-size: ${plan.list.button.font.size}px;
+      font-weight: ${plan.list.button.font.weight};
+      color: ${plan.list.button.font.color};
+    `;
+  }}
 `;
 
 const ListItem = ({ text, icon: Icon, buttonProps }) => (
@@ -59,12 +81,15 @@ const ListItem = ({ text, icon: Icon, buttonProps }) => (
 );
 
 List.displayName = 'PlanCard.List';
-Item.displayName = 'PlanCard.ListItem';
+ListItem.displayName = 'PlanCard.ListItem';
 Button.displayName = 'PlanCard.ListButton';
 
 ListItem.propTypes = {
   text: string.isRequired,
+  /** an icon to be displayed on the begin of the item */
   icon: oneOfType([node, func]),
+  /** if provided displays a button below the item text. It accepts all button
+   * element props */
   buttonProps: shape({}),
 };
 
