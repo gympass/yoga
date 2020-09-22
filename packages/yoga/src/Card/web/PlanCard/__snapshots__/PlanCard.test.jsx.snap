@@ -231,6 +231,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
+  outline: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -58,6 +58,7 @@ const Button = styled.button`
 
   cursor: pointer;
   text-decoration: none;
+  outline: none;
 
   ${truncateStyle}
 
