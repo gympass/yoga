@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { string, node, shape, oneOfType, func } from 'prop-types';
 
+import Text from '../../../Text';
 import theme from '../../../Theme/helpers/themeReader';
 
 const truncateStyle = css`
@@ -30,14 +31,20 @@ const Item = styled.li`
     return css`
       margin-bottom: ${plan.list.item.margin.bottom}px;
 
-      font-size: ${plan.list.item.font.size}px;
-      color: ${plan.list.item.font.color};
-
       svg {
+        vertical-align: middle;
         margin-right: ${plan.list.item.icon.margin.right}px;
       }
     `;
   }}
+`;
+
+const ItemText = styled(Text.Small)`
+  display: inline-block;
+  height: 16px;
+  vertical-align: middle;
+
+  color: ${theme.components.card.plan.list.item.font.color};
 `;
 
 const Button = styled.button`
@@ -74,8 +81,8 @@ const Button = styled.button`
 
 const ListItem = ({ text, icon: Icon, buttonProps }) => (
   <Item>
-    {Icon && <Icon width={16} height={16} />}
-    {text}
+    {Icon && <Icon fill="#9898A6" width={16} height={16} />}
+    <ItemText as="span">{text}</ItemText>
     {Object.keys(buttonProps).length && <Button {...buttonProps} />}
   </Item>
 );

@@ -22,9 +22,9 @@ const Card = ({
   },
   plan: {
     padding: {
-      top: spacing.xxxlarge + 8,
+      top: spacing.xxxlarge,
       right: spacing.medium,
-      bottom: spacing.large,
+      bottom: spacing.xlarge,
       left: spacing.medium,
     },
     radius: 16,
@@ -44,8 +44,8 @@ const Card = ({
       },
       font: {
         size: fontSizes.xsmall,
-        lineHeight: lineHeights.xsmall,
-        fontWeight: fontWeights.medium,
+        height: lineHeights.xsmall,
+        weight: fontWeights.medium,
       },
     },
     subtitle: {
@@ -68,6 +68,11 @@ const Card = ({
       color: colors.gray[8],
     },
     price: {
+      currency: {
+        margin: {
+          right: spacing.xxxsmall,
+        },
+      },
       margin: {
         top: spacing.xlarge,
         bottom: spacing.xxlarge,
@@ -106,6 +111,17 @@ const Card = ({
       margin: {
         top: spacing.large,
       },
+    },
+    colors: {
+      vibin: '#D8385E',
+      hope: '#1D856C',
+      verve: '#FF874C',
+      light: '#D7D7E0',
+      energy: '#FFC24C',
+      medium: '#6B6B78',
+      stamina: '#231B22',
+      relax: '#7068D4',
+      deep: '#710252',
     },
   },
   gym: {

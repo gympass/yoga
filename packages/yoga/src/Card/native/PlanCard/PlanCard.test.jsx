@@ -36,6 +36,7 @@ describe('<PlanCard />', () => {
         </PlanCard>
       </ThemeProvider>,
     );
+
   describe('Events', () => {
     it('should call onPress when ListItem has a button', () => {
       const { getByText } = renderPlan();
@@ -49,6 +50,24 @@ describe('<PlanCard />', () => {
     it('should match snapshot with default PlanCard', () => {
       const { container: planCard } = renderPlan();
       expect(planCard).toMatchSnapshot();
+    });
+
+    it('should match snapshot with variant', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <PlanCard ribbon="Recommended Plan" variant="hope">
+            <PlanCard.Content
+              subtitle="plan"
+              title="Basic"
+              currency="$"
+              price="99.90"
+              period="/month"
+            />
+          </PlanCard>
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
     });
   });
 });

@@ -58,6 +58,10 @@ const EnhancePrice = styled(Text.Small)`
   `}
 `;
 
+const Currency = styled(EnhancePrice)`
+  margin-right: ${theme.components.card.plan.price.currency.margin.right}px;
+`;
+
 const PlanCardContent = ({
   title,
   subtitle,
@@ -74,9 +78,9 @@ const PlanCardContent = ({
     <Description>{description}</Description>
     <Price>
       {currency && (
-        <EnhancePrice as="sup" align="flex-start">
+        <Currency as="sup" align="flex-start">
           {currency}
-        </EnhancePrice>
+        </Currency>
       )}
       {price && <Text.H1 as="strong">{price}</Text.H1>}
       {period && (

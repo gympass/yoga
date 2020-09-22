@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, string } from 'prop-types';
+import { node, string, oneOf } from 'prop-types';
 
 import theme from '../../../Theme/helpers/themeReader';
 
@@ -43,7 +43,9 @@ const Border = styled.View`
   right: 0;
 
   height: 8px;
-  background-color: #d7d7e0;
+  background-color: ${({ variant }) =>
+    theme.components.card.plan.colors[variant] ||
+    theme.components.card.plan.colors.deep};
 `;
 
 const Ribbon = styled.View`
@@ -82,14 +84,14 @@ const RibbonText = styled(Text.Medium)`
 
     return css`
       font-size: ${plan.ribbon.font.size}px;
-      line-height: ${plan.ribbon.font.lineHeight}px;
+      line-height: ${plan.ribbon.font.height}px;
     `;
   }}
 `;
 
-const PlanCard = ({ children, ribbon, ...rest }) => (
+const PlanCard = ({ children, ribbon, variant, ...rest }) => (
   <Plan {...rest}>
-    <Border />
+    <Border variant={variant} />
     {ribbon && (
       <Ribbon>
         <RibbonText>{ribbon}</RibbonText>
@@ -103,11 +105,24 @@ PlanCard.propTypes = {
   children: node,
   /** A text to be displayed in a badge on top of card */
   ribbon: string,
+  /** change the border top color */
+  variant: oneOf([
+    'vibin',
+    'hope',
+    'verve',
+    'light',
+    'energy',
+    'medium',
+    'stamina',
+    'relax',
+    'deep',
+  ]),
 };
 
 PlanCard.defaultProps = {
   children: undefined,
   ribbon: undefined,
+  variant: undefined,
 };
 PlanCard.displayName = 'PlanCard';
 
