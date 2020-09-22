@@ -176,7 +176,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   -ms-flex-pack: center;
   justify-content: center;
   background-color: transparent;
-  top: 20px;
+  top: 28px;
   left: 20px;
   padding-left: 8px;
   padding-right: 8px;

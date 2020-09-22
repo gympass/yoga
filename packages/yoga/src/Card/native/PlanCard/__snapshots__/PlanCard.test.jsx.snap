@@ -47,7 +47,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             "paddingBottom": 32,
             "paddingLeft": 20,
             "paddingRight": 20,
-            "paddingTop": 56,
+            "paddingTop": 64,
             "position": "relative",
             "shadowColor": "rgba(152, 152, 166, 0.25)",
             "shadowOffset": Object {
@@ -92,7 +92,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               "paddingLeft": 8,
               "paddingRight": 8,
               "position": "absolute",
-              "top": 20,
+              "top": 28,
             },
           ]
         }
@@ -519,7 +519,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
             "paddingBottom": 32,
             "paddingLeft": 20,
             "paddingRight": 20,
-            "paddingTop": 56,
+            "paddingTop": 64,
             "position": "relative",
             "shadowColor": "rgba(152, 152, 166, 0.25)",
             "shadowOffset": Object {

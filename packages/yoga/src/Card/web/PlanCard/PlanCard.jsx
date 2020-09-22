@@ -4,7 +4,7 @@ import { node, oneOf } from 'prop-types';
 
 import theme from '../../../Theme/helpers/themeReader';
 
-const PLAN_LINE_HEIGHT = 8;
+export const PLAN_LINE_HEIGHT = 8;
 
 const Plan = styled.article`
   width: 100%;

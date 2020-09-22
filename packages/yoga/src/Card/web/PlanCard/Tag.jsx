@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 
+import { PLAN_LINE_HEIGHT } from './PlanCard';
 import theme from '../../../Theme/helpers/themeReader';
 
 const Tag = styled.span`
@@ -18,7 +19,7 @@ const Tag = styled.span`
     } = theme(props);
 
     return css`
-      top: ${plan.tag.position.top}px;
+      top: ${plan.tag.position.top + PLAN_LINE_HEIGHT}px;
       left: ${plan.tag.position.left}px;
 
       padding-left: ${plan.tag.padding.left}px;

@@ -6,6 +6,8 @@ import theme from '../../../Theme/helpers/themeReader';
 
 import Card from '../Card';
 
+export const PLAN_LINE_HEIGHT = 8;
+
 const Plan = styled(Card)`
   max-width: 288px;
   width: 100%;
@@ -23,7 +25,7 @@ const Plan = styled(Card)`
     } = theme(props);
 
     return css`
-      padding: ${plan.padding.top}px ${plan.padding.right}px
+      padding: ${plan.padding.top + PLAN_LINE_HEIGHT}px ${plan.padding.right}px
         ${plan.padding.bottom}px ${plan.padding.left}px;
 
       border-radius: ${plan.radius}px;

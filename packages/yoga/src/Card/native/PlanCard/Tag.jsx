@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { node } from 'prop-types';
 
+import { PLAN_LINE_HEIGHT } from './PlanCard';
 import Text from '../../../Text';
 import theme from '../../../Theme/helpers/themeReader';
 
@@ -20,7 +21,7 @@ const Wrapper = styled.View`
     } = theme(props);
 
     return css`
-      top: ${plan.tag.position.top}px;
+      top: ${plan.tag.position.top + PLAN_LINE_HEIGHT}px;
       left: ${plan.tag.position.left}px;
 
       padding-left: ${plan.tag.padding.left}px;
