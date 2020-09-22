@@ -97,7 +97,8 @@ const CardPage = () => {
 
       <DocTitle>Plan Card</DocTitle>
       <ScrollView horizontal style={{ height: 700 }}>
-        <PlanCard ribbon="Recommended for you" style={{ marginLeft: 10 }}>
+        <PlanCard style={{ marginLeft: 10 }}>
+          <PlanCard.Tag>Recommended for you</PlanCard.Tag>
           <PlanCard.Content
             subtitle="plan"
             title="Basic"

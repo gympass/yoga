@@ -1,14 +1,8 @@
-### Reference
-
-Gympass `<PlanCard />` component is used to display content related to an user's
-plan.
-
 ### Usage
 
-#### Simple
-
 ```javascript
-<PlanCard ribbon="Recommended for you">
+<PlanCard>
+  <PlanCard.Tag>Recommended for you</PlanCard.Tag>
   <PlanCard.Content
     subtitle="plan"
     title="Basic"
@@ -25,9 +19,7 @@ plan.
         buttonProps={{
           children: 'See all gyms and studios',
           as: 'a',
-          onClick: () => {
-            alert('See all gyms and studios');
-          },
+          href: '#',
         }}
       />
       <PlanCard.ListItem
@@ -35,7 +27,6 @@ plan.
         text="24 wellness app"
         buttonProps={{
           children: 'See all apps',
-          as: 'a',
           onClick: () => {
             alert('See all apps');
           },
