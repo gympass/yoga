@@ -28,7 +28,7 @@ const Card = ({
       left: spacing.medium,
     },
     radius: 16,
-    ribbon: {
+    tag: {
       radius: radii.semiRounded,
       position: {
         top: spacing.medium,

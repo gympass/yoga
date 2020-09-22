@@ -291,7 +291,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               <RNSVGSvgView
                 bbHeight={16}
                 bbWidth={16}
-                fill="#001027"
+                fill="#9898A6"
                 focusable={false}
                 height={16}
                 style={
@@ -319,7 +319,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                   fill={
                     Array [
                       0,
-                      4278194215,
+                      4288190630,
                     ]
                   }
                   fillOpacity={1}
@@ -550,42 +550,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
         }
         variant="hope"
       />
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "#9898A6",
-              "borderRadius": 4,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "justifyContent": "center",
-              "left": 20,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "position": "absolute",
-              "top": 20,
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#41414A",
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "500",
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Recommended Plan
-        </Text>
-      </View>
       <View
         style={
           Array [

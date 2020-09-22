@@ -10,7 +10,8 @@ describe('<PlanCard />', () => {
   const renderPlan = () =>
     render(
       <ThemeProvider>
-        <PlanCard ribbon="Recommended Plan">
+        <PlanCard>
+          <PlanCard.Tag>Recommended Plan</PlanCard.Tag>
           <PlanCard.Content
             subtitle="plan"
             title="Basic"
@@ -55,7 +56,7 @@ describe('<PlanCard />', () => {
     it('should match snapshot with variant', () => {
       const { container } = render(
         <ThemeProvider>
-          <PlanCard ribbon="Recommended Plan" variant="hope">
+          <PlanCard variant="hope">
             <PlanCard.Content
               subtitle="plan"
               title="Basic"

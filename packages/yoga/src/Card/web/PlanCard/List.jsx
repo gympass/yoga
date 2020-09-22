@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, withTheme } from 'styled-components';
 import { string, node, shape, oneOfType, func } from 'prop-types';
 
 import Text from '../../../Text';
@@ -79,12 +79,16 @@ const Button = styled.button`
   }}
 `;
 
-const ListItem = ({ text, icon: Icon, buttonProps }) => (
-  <Item>
-    {Icon && <Icon fill="#9898A6" width={16} height={16} />}
-    <ItemText as="span">{text}</ItemText>
-    {Object.keys(buttonProps).length && <Button {...buttonProps} />}
-  </Item>
+const ListItem = withTheme(
+  ({ text, icon: Icon, buttonProps, theme: yogaTheme }) => (
+    <Item>
+      {Icon && (
+        <Icon fill={yogaTheme.yoga.colors.gray[7]} width={16} height={16} />
+      )}
+      <ItemText as="span">{text}</ItemText>
+      {Object.keys(buttonProps).length && <Button {...buttonProps} />}
+    </Item>
+  ),
 );
 
 List.displayName = 'PlanCard.List';
