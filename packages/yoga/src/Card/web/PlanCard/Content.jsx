@@ -73,7 +73,7 @@ const PlanCardContent = ({
     {title && <Title>{title}</Title>}
     <Description>{description}</Description>
     <Price>
-      {price && (
+      {currency && (
         <EnhancePrice as="sup" align="flex-start">
           {currency}
         </EnhancePrice>

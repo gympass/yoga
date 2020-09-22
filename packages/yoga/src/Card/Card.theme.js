@@ -55,6 +55,7 @@ const Card = ({
       font: {
         color: colors.gray[8],
         weight: fontWeights.medium,
+        size: fontSizes.xsmall,
       },
     },
     title: {
