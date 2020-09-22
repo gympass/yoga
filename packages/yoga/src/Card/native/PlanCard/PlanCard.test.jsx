@@ -1,142 +1,54 @@
 import React from 'react';
-import { render } from '@testing-library/react-native';
+import { render, fireEvent } from '@testing-library/react-native';
+import { Star } from '@gympass/yoga-icons';
 import { ThemeProvider, Button } from '../../..';
 import PlanCard from '.';
 
 describe('<PlanCard />', () => {
+  const buttonOnPressMock = jest.fn();
+
+  const renderPlan = () =>
+    render(
+      <ThemeProvider>
+        <PlanCard ribbon="Recommended Plan">
+          <PlanCard.Content
+            subtitle="plan"
+            title="Basic"
+            currency="$"
+            price="99.90"
+            period="/month"
+          >
+            <PlanCard.Subtitle>Get access to</PlanCard.Subtitle>
+            <PlanCard.List>
+              <PlanCard.ListItem
+                icon={Star}
+                text="list item"
+                buttonProps={{
+                  children: 'button',
+                  onPress: buttonOnPressMock,
+                }}
+              />
+            </PlanCard.List>
+          </PlanCard.Content>
+          <PlanCard.Actions>
+            <Button full>Select this plan</Button>
+          </PlanCard.Actions>
+        </PlanCard>
+      </ThemeProvider>,
+    );
+  describe('Events', () => {
+    it('should call onPress when ListItem has a button', () => {
+      const { getByText } = renderPlan();
+      fireEvent.press(getByText('button'));
+
+      expect(buttonOnPressMock).toHaveBeenCalled();
+    });
+  });
+
   describe('Snapshots', () => {
     it('should match snapshot with default PlanCard', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <PlanCard>
-            <PlanCard.Header>Gympass PlanCard</PlanCard.Header>
-            <PlanCard.Content
-              title="Gympass Black for employees with Buddha Spa + Reebook included"
-              price="U$ 99.90"
-              period="/month"
-            >
-              content&apos;s children is rendered
-            </PlanCard.Content>
-            <PlanCard.Actions>
-              <Button>should have buttons</Button>
-            </PlanCard.Actions>
-          </PlanCard>
-        </ThemeProvider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match snapshot with secondary PlanCard', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <PlanCard variant="secondary">
-            <PlanCard.Header>Gympass PlanCard</PlanCard.Header>
-            <PlanCard.Content
-              title="Gympass Black for employees with Buddha Spa + Reebook included"
-              price="U$ 99.90"
-              period="/month"
-            >
-              content&apos;s children is rendered
-            </PlanCard.Content>
-            <PlanCard.Actions>
-              <Button>should have buttons</Button>
-            </PlanCard.Actions>
-          </PlanCard>
-        </ThemeProvider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match snapshot with tertiary PlanCard', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <PlanCard variant="tertiary">
-            <PlanCard.Header>Gympass PlanCard</PlanCard.Header>
-            <PlanCard.Content
-              title="Gympass Black for employees with Buddha Spa + Reebook included"
-              price="U$ 99.90"
-              period="/month"
-            >
-              content&apos;s children is rendered
-            </PlanCard.Content>
-            <PlanCard.Actions>
-              <Button>should have buttons</Button>
-            </PlanCard.Actions>
-          </PlanCard>
-        </ThemeProvider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match snapshot PlanCard with ribbon', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <PlanCard
-            ribbon={{
-              text: 'Label',
-            }}
-          />
-        </ThemeProvider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match snapshot PlanCard with secondary ribbon', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <PlanCard
-            ribbon={{
-              text: 'Label',
-              variant: 'secondary',
-            }}
-          />
-        </ThemeProvider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match snapshot PlanCard with tertiary ribbon', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <PlanCard
-            ribbon={{
-              text: 'Label',
-              variant: 'tertiary',
-            }}
-          />
-        </ThemeProvider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match snapshot default PlanCard with Content', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <PlanCard>
-            <PlanCard.Content
-              title="Gympass Black for employees with Buddha Spa + Reebook included"
-              price="U$ 99.90"
-              period="/month"
-            />
-          </PlanCard>
-        </ThemeProvider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match snapshot variant PlanCard with Content', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <PlanCard variant="secondary">
-            <PlanCard.Content
-              title="Gympass Black for employees with Buddha Spa + Reebook included"
-              price="U$ 99.90"
-              period="/month"
-            />
-          </PlanCard>
-        </ThemeProvider>,
-      );
-      expect(container).toMatchSnapshot();
+      const { container: planCard } = renderPlan();
+      expect(planCard).toMatchSnapshot();
     });
   });
 });
