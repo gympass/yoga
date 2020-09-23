@@ -1,15 +1,15 @@
-import PlanCard from './PlanCard';
-import Content from './Content';
 import Actions from './Actions';
+import Content from './Content';
+import PlanCard from './PlanCard';
 import Subtitle from './Subtitle';
 import Tag from './Tag';
 import { List, ListItem } from './List';
 
-PlanCard.Content = Content;
 PlanCard.Actions = Actions;
-PlanCard.Subtitle = Subtitle;
-PlanCard.Tag = Tag;
+PlanCard.Content = Content;
 PlanCard.List = List;
 PlanCard.ListItem = ListItem;
+PlanCard.Subtitle = Subtitle;
+PlanCard.Tag = Tag;
 
 export default PlanCard;
