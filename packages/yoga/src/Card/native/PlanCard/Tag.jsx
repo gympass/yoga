@@ -53,6 +53,8 @@ const Tag = ({ children, ...rest }) => (
   </Wrapper>
 );
 
+Tag.displayName = 'PlanCard.Tag';
+
 Tag.propTypes = {
   children: node.isRequired,
 };

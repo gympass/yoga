@@ -35,4 +35,6 @@ const Tag = styled.span`
   }}
 `;
 
+Tag.displayName = 'PlanCard.Tag';
+
 export default Tag;
