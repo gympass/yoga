@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@4.1.2...@gympass/yoga@5.0.0) (2020-09-24)
+
+
+### Features
+
+* **plancard:** add ribbon support and destructuring theme properties on styles ([2672d08](https://github.com/Gympass/yoga/commit/2672d0832924321df229233230628f1176cd7de1))
+* **plancard:** add variant support and fix some spacings ([0b1927d](https://github.com/Gympass/yoga/commit/0b1927dbd7e31a1ddfb581f983b2d043a12c6452))
+* **plancard:** extract "ribbon" to a new "PlanCard.Tag" component ([3438ca9](https://github.com/Gympass/yoga/commit/3438ca9f9b925aa1247fc5397eea6802a2414386))
+* **plancard:** implement de redesign from PlanCard ([f428347](https://github.com/Gympass/yoga/commit/f4283479b8f2a89a4c934d7116a1c11a4bc7d115))
+* **plancard:** redesign of PlanCard on native platform ([9d3b6d8](https://github.com/Gympass/yoga/commit/9d3b6d86f06a919aeab9df7d02efbb01ff4d8f32))
+
+
+### BREAKING CHANGES
+
+* **plancard:** change PlanCard.Content props, now it accepts: title, subtitle(new), currency(new),
+price(only the value, without currency), period, description(new)
+
+
+
+
+
 ## [4.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@4.1.1...@gympass/yoga@4.1.2) (2020-09-21)
 
 
