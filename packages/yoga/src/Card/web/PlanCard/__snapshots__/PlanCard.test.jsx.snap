@@ -1,317 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] = `
-.c0 {
-  padding: 16px  16px  16px  16px;
-  border-radius: 8px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #41414A;
-  display: inline-block;
-  top: 16px;
-  left: 0;
-  margin-left: -16px;
-  margin-bottom: 16px;
-  padding: 4px 12px 4px 16px;
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-  background-color: #F5F5FA;
-  color: #41414A;
-}
-
-.c1 {
-  max-width: 280px;
-}
-
-<div>
-  <section
-    class="c0 c1"
-  >
-    <span
-      class="c2"
-    >
-      Label
-    </span>
-  </section>
-</div>
-`;
-
-exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ribbon 1`] = `
-.c0 {
-  padding: 16px  16px  16px  16px;
-  border-radius: 8px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #652CDB;
-  display: inline-block;
-  top: 16px;
-  left: 0;
-  margin-left: -16px;
-  margin-bottom: 16px;
-  padding: 4px 12px 4px 16px;
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-  background-color: #652CDB;
-  color: #FFFFFF;
-}
-
-.c1 {
-  max-width: 280px;
-}
-
-<div>
-  <section
-    class="c0 c1"
-  >
-    <span
-      class="c2"
-    >
-      Label
-    </span>
-  </section>
-</div>
-`;
-
-exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary ribbon 1`] = `
-.c0 {
-  padding: 16px  16px  16px  16px;
-  border-radius: 8px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #22766B;
-  display: inline-block;
-  top: 16px;
-  left: 0;
-  margin-left: -16px;
-  margin-bottom: 16px;
-  padding: 4px 12px 4px 16px;
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-  background-color: #22766B;
-  color: #FFFFFF;
-}
-
-.c1 {
-  max-width: 280px;
-}
-
-<div>
-  <section
-    class="c0 c1"
-  >
-    <span
-      class="c2"
-    >
-      Label
-    </span>
-  </section>
-</div>
-`;
-
-exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Content 1`] = `
-.c0 {
-  padding: 16px  16px  16px  16px;
-  border-radius: 8px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
-}
-
-.c1 {
-  max-width: 280px;
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #41414A;
-  display: -webkit-box;
-  height: 40px;
-  margin: 8px 0 12px;
-  color: inherit;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-overflow: -o-ellipsis-lastline;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 500;
-  font-family: Rubik;
-  color: #41414A;
-  display: block;
-  color: inherit;
-  margin-top: 12px;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #41414A;
-  display: block;
-  color: inherit;
-  margin-bottom: 8px;
-}
-
-<div>
-  <section
-    class="c0 c1"
-  >
-    <div
-      class=""
-    >
-      <h3
-        class="c2"
-      >
-        Gympass Black for employees with Buddha Spa + Reebook included
-      </h3>
-      <strong
-        class="c3"
-      >
-        U$ 99.90
-      </strong>
-      <span
-        class="c4"
-      >
-        /month
-      </span>
-    </div>
-  </section>
-</div>
-`;
-
-exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Content 1`] = `
-.c0 {
-  padding: 16px  16px  16px  16px;
-  border-radius: 8px;
-  background-color: #8051E1;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
-}
-
-.c1 {
-  max-width: 280px;
-  color: #FFFFFF;
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #41414A;
-  display: -webkit-box;
-  height: 40px;
-  margin: 8px 0 12px;
-  color: inherit;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-overflow: -o-ellipsis-lastline;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 500;
-  font-family: Rubik;
-  color: #41414A;
-  display: block;
-  color: inherit;
-  margin-top: 12px;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #41414A;
-  display: block;
-  color: inherit;
-  margin-bottom: 8px;
-}
-
-<div>
-  <section
-    class="c0 c1"
-  >
-    <div
-      class=""
-    >
-      <h3
-        class="c2"
-      >
-        Gympass Black for employees with Buddha Spa + Reebook included
-      </h3>
-      <strong
-        class="c3"
-      >
-        U$ 99.90
-      </strong>
-      <span
-        class="c4"
-      >
-        /month
-      </span>
-    </div>
-  </section>
-</div>
-`;
-
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
-.c6 {
+.c15 {
   box-sizing: border-box;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
-  width: auto;
+  width: 100%;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
@@ -331,68 +27,185 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   text-decoration: none;
 }
 
-.c6:not([disabled]):hover,
-.c6:not([disabled]):focus {
+.c15:not([disabled]):hover,
+.c15:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(244,97,82,0.45);
 }
 
-.c6:active {
+.c15:active {
   background-color: #F78D82;
   border-color: #F78D82;
   color: #FFFFFF;
 }
 
-.c6:disabled {
+.c15:disabled {
   background-color: #DBDBE8;
   border-color: #DBDBE8;
   color: #9898A6;
   cursor: not-allowed;
 }
 
+.c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #41414A;
+}
+
+.c14 {
+  margin-top: 24px;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #6B6B78;
+  font-weight: 500;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #41414A;
+  color: #001027;
+  margin-bottom: 4px;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+  height: 40px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #6B6B78;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-right: 4px;
+}
+
 .c0 {
-  padding: 16px  16px  16px  16px;
-  border-radius: 8px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  max-width: 288px;
+  overflow: hidden;
+  padding: 64px 20px 32px 20px;
+  border-radius: 16px;
   background-color: #FFFFFF;
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
 
 .c1 {
-  max-width: 280px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 8px;
+  background-color: #710252;
 }
 
 .c2 {
-  margin: 0;
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: transparent;
+  top: 28px;
+  left: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #9898A6;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: px;
+  font-weight: 500;
+}
+
+.c10 {
+  margin: 16px 0 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #41414A;
-  display: -webkit-box;
-  height: 40px;
-  margin: 8px 0 12px;
-  color: inherit;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  list-style: none;
+}
+
+.c11 {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-overflow: -o-ellipsis-lastline;
+  margin-bottom: 16px;
 }
 
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 500;
-  font-family: Rubik;
-  color: #41414A;
-  display: block;
-  color: inherit;
-  margin-top: 12px;
+.c11 svg {
+  vertical-align: middle;
+  margin-right: 12px;
 }
 
-.c4 {
+.c12 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -400,287 +213,147 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
+  display: inline-block;
+  height: 16px;
+  vertical-align: middle;
+  color: #001027;
+}
+
+.c13 {
   display: block;
-  color: inherit;
-  margin-bottom: 8px;
-}
-
-.c5 {
-  padding-top: 8px;
-}
-
-.c5 *:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-<div>
-  <section
-    class="c0 c1"
-  >
-    <header
-      class=""
-    >
-      Gympass PlanCard
-    </header>
-    <div
-      class=""
-    >
-      <h3
-        class="c2"
-      >
-        Gympass Black for employees with Buddha Spa + Reebook included
-      </h3>
-      <strong
-        class="c3"
-      >
-        U$ 99.90
-      </strong>
-      <span
-        class="c4"
-      >
-        /month
-      </span>
-      content's children is rendered
-    </div>
-    <footer
-      class="c5"
-    >
-      <button
-        class="c6"
-      >
-        should have buttons
-      </button>
-    </footer>
-  </section>
-</div>
-`;
-
-exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`] = `
-.c6 {
-  box-sizing: border-box;
-  outline: none;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  cursor: pointer;
-  width: auto;
-  height: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
-  border-radius: 9999px;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
-  font-family: Rubik;
+  padding: 0;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  line-height: 1;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-.c6:not([disabled]):hover,
-.c6:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
-}
-
-.c6:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
-  color: #FFFFFF;
-}
-
-.c6:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
-  cursor: not-allowed;
-}
-
-.c0 {
-  padding: 16px  16px  16px  16px;
-  border-radius: 8px;
-  background-color: #8051E1;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
-}
-
-.c1 {
-  max-width: 280px;
-  color: #FFFFFF;
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #41414A;
-  display: -webkit-box;
-  height: 40px;
-  margin: 8px 0 12px;
-  color: inherit;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  outline: none;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  text-overflow: -o-ellipsis-lastline;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 500;
-  font-family: Rubik;
-  color: #41414A;
-  display: block;
-  color: inherit;
   margin-top: 12px;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
-  display: block;
-  color: inherit;
-  margin-bottom: 8px;
-}
-
-.c5 {
-  padding-top: 8px;
-}
-
-.c5 *:not(:last-child) {
-  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #652CDB;
 }
 
 <div>
-  <section
-    class="c0 c1"
+  <article
+    class="c0"
   >
-    <header
-      class=""
+    <span
+      class="c1"
+    />
+    <span
+      class="c2"
     >
-      Gympass PlanCard
-    </header>
+      Recommended Plan
+    </span>
     <div
       class=""
     >
-      <h3
-        class="c2"
-      >
-        Gympass Black for employees with Buddha Spa + Reebook included
-      </h3>
-      <strong
+      <p
         class="c3"
       >
-        U$ 99.90
-      </strong>
-      <span
+        plan
+      </p>
+      <h5
         class="c4"
       >
-        /month
-      </span>
-      content's children is rendered
-    </div>
-    <footer
-      class="c5"
-    >
-      <button
+        Basic
+      </h5>
+      <p
+        class="c5"
+      />
+      <div
         class="c6"
       >
-        should have buttons
+        <sup
+          class="c7"
+        >
+          $
+        </sup>
+        <strong
+          class="c8"
+        >
+          99.90
+        </strong>
+        <sub
+          class="c9"
+        >
+          /month
+        </sub>
+      </div>
+      <p
+        class="c3"
+      >
+        Get access to
+      </p>
+      <ul
+        class="c10"
+      >
+        <li
+          class="c11"
+        >
+          <svg
+            fill="#9898A6"
+            height="16"
+            width="16"
+          />
+          <span
+            class="c12"
+          >
+            list item
+          </span>
+          <a
+            class="c13"
+          >
+            button
+          </a>
+        </li>
+      </ul>
+    </div>
+    <footer
+      class="c14"
+    >
+      <button
+        class="c15"
+      >
+        Select this plan
       </button>
     </footer>
-  </section>
+  </article>
 </div>
 `;
 
-exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`] = `
-.c6 {
-  box-sizing: border-box;
-  outline: none;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  cursor: pointer;
-  width: auto;
-  height: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
-  border-radius: 9999px;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
   font-family: Rubik;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  line-height: 1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c6:not([disabled]):hover,
-.c6:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
-}
-
-.c6:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
-  color: #FFFFFF;
-}
-
-.c6:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
-  cursor: not-allowed;
-}
-
-.c0 {
-  padding: 16px  16px  16px  16px;
-  border-radius: 8px;
-  background-color: #2B9486;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
-}
-
-.c1 {
-  max-width: 280px;
-  color: #FFFFFF;
+  color: #41414A;
 }
 
 .c2 {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 16px;
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
-  display: -webkit-box;
-  height: 40px;
-  margin: 8px 0 12px;
-  color: inherit;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-overflow: -o-ellipsis-lastline;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #6B6B78;
+  font-weight: 500;
 }
 
 .c3 {
@@ -691,9 +364,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   font-weight: 500;
   font-family: Rubik;
   color: #41414A;
-  display: block;
-  color: inherit;
-  margin-top: 12px;
+  color: #001027;
+  margin-bottom: 4px;
 }
 
 .c4 {
@@ -704,57 +376,117 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
-  display: block;
-  color: inherit;
-  margin-bottom: 8px;
+  height: 40px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #6B6B78;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
 }
 
 .c5 {
-  padding-top: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 40px;
 }
 
-.c5 *:not(:last-child) {
-  margin-bottom: 8px;
+.c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-right: 4px;
+}
+
+.c0 {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  max-width: 288px;
+  overflow: hidden;
+  padding: 64px 20px 32px 20px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 8px;
+  background-color: #1D856C;
 }
 
 <div>
-  <section
-    class="c0 c1"
+  <article
+    class="c0"
   >
-    <header
-      class=""
-    >
-      Gympass PlanCard
-    </header>
+    <span
+      class="c1"
+    />
     <div
       class=""
     >
-      <h3
+      <p
         class="c2"
       >
-        Gympass Black for employees with Buddha Spa + Reebook included
-      </h3>
-      <strong
+        plan
+      </p>
+      <h5
         class="c3"
       >
-        U$ 99.90
-      </strong>
-      <span
+        Basic
+      </h5>
+      <p
         class="c4"
+      />
+      <div
+        class="c5"
       >
-        /month
-      </span>
-      content's children is rendered
+        <sup
+          class="c6"
+        >
+          $
+        </sup>
+        <strong
+          class="c7"
+        >
+          99.90
+        </strong>
+        <sub
+          class="c8"
+        >
+          /month
+        </sub>
+      </div>
     </div>
-    <footer
-      class="c5"
-    >
-      <button
-        class="c6"
-      >
-        should have buttons
-      </button>
-    </footer>
-  </section>
+  </article>
 </div>
 `;
