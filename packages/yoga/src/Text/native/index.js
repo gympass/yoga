@@ -1,3 +1,31 @@
-import { Text, H1, H2, H3, H4, Small, Tiny } from './Text';
+import {
+  Text,
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  Small,
+  Tiny,
+  Light,
+  Regular,
+  Medium,
+  Bold,
+  Black,
+} from './Text';
 
-export { Text, H1, H2, H3, H4, Small, Tiny };
+export {
+  Text,
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  Small,
+  Tiny,
+  Light,
+  Regular,
+  Medium,
+  Bold,
+  Black,
+};

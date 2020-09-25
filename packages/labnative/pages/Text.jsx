@@ -29,13 +29,28 @@ const TextPage = () => (
       <Text.H4>Heading H4</Text.H4>
     </TextWrapper>
     <TextWrapper>
+      <Text.H5>Heading H5</Text.H5>
+    </TextWrapper>
+    <TextWrapper>
       <Text>Text Paragraph</Text>
     </TextWrapper>
     <TextWrapper>
       <Text.Small>Text Small</Text.Small>
     </TextWrapper>
     <TextWrapper>
-      <Text.Tiny>Text Tiny</Text.Tiny>
+      <Text.Light>Text Light</Text.Light>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Regular>Text Regular</Text.Regular>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Medium>Text Medium</Text.Medium>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Bold>Text Bold</Text.Bold>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Black>Text Black</Text.Black>
     </TextWrapper>
   </ScrollView>
 );

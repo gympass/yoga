@@ -82,7 +82,7 @@ const Month = styled(Text.Small)`
   `}
 `;
 
-const Name = styled(Text.H4)`
+const Name = styled(Text.Medium)`
   ${({
     theme: {
       yoga: {
@@ -94,7 +94,7 @@ const Name = styled(Text.H4)`
   }) => `
     margin-bottom: ${event.info.name.marginBottom}px;
 
-    font-weight: ${event.info.name.fontWeight};
+    font-size: ${event.info.name.fontSize}px;
   `}
 `;
 
@@ -139,7 +139,7 @@ const EventCard = ({
     <Event {...rest}>
       <DateInfo variant={variant}>
         <DayOfWeek inverted>{date.dayOfWeek}</DayOfWeek>
-        <Text.H3 inverted>{date.day}</Text.H3>
+        <Text.H5 inverted>{date.day}</Text.H5>
         <Month inverted>{date.month}</Month>
       </DateInfo>
       <EventInfo>

@@ -14,6 +14,7 @@ import { ArrowDown } from '@gympass/yoga-icons';
 
 import Options from './Options';
 import Backdrop from './Backdrop';
+import Text from '../../Text';
 
 const Selector = styled.View`
   ${({
@@ -56,18 +57,16 @@ const Selector = styled.View`
   `}
 `;
 
-const Label = styled.Text`
+const Label = styled(Text)`
   ${({
     disabled,
     selected,
     theme: {
       yoga: {
-        baseFont,
         components: { dropdown },
       },
     },
   }) => `
-    font-family: ${baseFont.family};
     color: ${dropdown.input.font.color};
     ${disabled ? `color: ${dropdown.disabled.input.font.color};` : ''}
     ${selected ? `color: ${dropdown.selected.input.font.color};` : ''}

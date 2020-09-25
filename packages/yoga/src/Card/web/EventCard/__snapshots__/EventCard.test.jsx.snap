@@ -5,21 +5,11 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   margin: 0;
   padding: 0;
   font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 28px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
-}
-
-.c9 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  font-family: Rubik;
-  color: #41414A;
 }
 
 .c10 {
@@ -37,6 +27,16 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   padding: 0;
   font-size: 12px;
   line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
@@ -80,6 +80,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   height: 20px;
   margin-bottom: 8px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .c7 .c3 {
@@ -158,11 +159,11 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
       <p
         class="c3 c4"
       />
-      <h3
+      <h5
         class="c5"
       >
         19
-      </h3>
+      </h5>
       <p
         class="c3 c6"
       >
@@ -172,12 +173,12 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
     <div
       class="c7"
     >
-      <h4
+      <h3
         class="c8 c9"
         title="Yoga Class"
       >
         Yoga Class
-      </h4>
+      </h3>
       <p
         class="c3 c10"
         title="Gympass"
@@ -207,21 +208,11 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   margin: 0;
   padding: 0;
   font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 28px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
-}
-
-.c9 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  font-family: Rubik;
-  color: #41414A;
 }
 
 .c10 {
@@ -239,6 +230,16 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   padding: 0;
   font-size: 12px;
   line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
@@ -282,6 +283,7 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
   height: 20px;
   margin-bottom: 8px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .c7 .c3 {
@@ -360,11 +362,11 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
       <p
         class="c3 c4"
       />
-      <h3
+      <h5
         class="c5"
       >
         19
-      </h3>
+      </h5>
       <p
         class="c3 c6"
       >
@@ -374,12 +376,12 @@ exports[`<Card /> Snapshots should match snapshot with variant primary EventCard
     <div
       class="c7"
     >
-      <h4
+      <h3
         class="c8 c9"
         title="Yoga Class"
       >
         Yoga Class
-      </h4>
+      </h3>
       <p
         class="c3 c10"
         title="Gympass"
@@ -409,21 +411,11 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   margin: 0;
   padding: 0;
   font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 28px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
-}
-
-.c9 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  font-family: Rubik;
-  color: #41414A;
 }
 
 .c10 {
@@ -441,6 +433,16 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   padding: 0;
   font-size: 12px;
   line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
@@ -484,6 +486,7 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
   height: 20px;
   margin-bottom: 8px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .c7 .c3 {
@@ -562,11 +565,11 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
       <p
         class="c3 c4"
       />
-      <h3
+      <h5
         class="c5"
       >
         19
-      </h3>
+      </h5>
       <p
         class="c3 c6"
       >
@@ -576,12 +579,12 @@ exports[`<Card /> Snapshots should match snapshot with variant secondary EventCa
     <div
       class="c7"
     >
-      <h4
+      <h3
         class="c8 c9"
         title="Yoga Class"
       >
         Yoga Class
-      </h4>
+      </h3>
       <p
         class="c3 c10"
         title="Gympass"
@@ -611,21 +614,11 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   margin: 0;
   padding: 0;
   font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 28px;
+  font-weight: 500;
   font-family: Rubik;
   color: #41414A;
   color: #FFFFFF;
-}
-
-.c9 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  font-family: Rubik;
-  color: #41414A;
 }
 
 .c10 {
@@ -643,6 +636,16 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   padding: 0;
   font-size: 12px;
   line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #41414A;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
@@ -686,6 +689,7 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
   height: 20px;
   margin-bottom: 8px;
   font-weight: 500;
+  font-size: 16px;
 }
 
 .c7 .c3 {
@@ -764,11 +768,11 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
       <p
         class="c3 c4"
       />
-      <h3
+      <h5
         class="c5"
       >
         19
-      </h3>
+      </h5>
       <p
         class="c3 c6"
       >
@@ -778,12 +782,12 @@ exports[`<Card /> Snapshots should match snapshot with variant tertiary EventCar
     <div
       class="c7"
     >
-      <h4
+      <h3
         class="c8 c9"
         title="Yoga Class"
       >
         Yoga Class
-      </h4>
+      </h3>
       <p
         class="c3 c10"
         title="Gympass"

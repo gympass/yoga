@@ -18,10 +18,10 @@ const StyledTag = styled.div`
   }) => `
     display: ${full ? 'flex' : 'inline-flex'};
 
-    padding: 
-      ${tag.padding.top}px 
-      ${tag.padding.right}px 
-      ${tag.padding.bottom}px 
+    padding:
+      ${tag.padding.top}px
+      ${tag.padding.right}px
+      ${tag.padding.bottom}px
       ${tag.padding.left}px;
 
     background-color: ${color[0]};

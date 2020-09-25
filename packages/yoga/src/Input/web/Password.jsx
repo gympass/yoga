@@ -45,8 +45,8 @@ const IconWrapper = styled.div`
     top: 0;
     right: 0;
 
-    padding-right: ${spacing.medium}px;
-    padding-left: ${spacing.xsmall}px;
+    padding-right: ${spacing.small}px;
+    padding-left: ${spacing.xxsmall}px;
 
     height: ${input.height}px;
     cursor: pointer;
@@ -77,7 +77,7 @@ const IconWrapper = styled.div`
             fill: ${colors.disabled.background};
             pointer-events: none;`
           : ''
-      }  
+      }
     }
   `}
 `;
@@ -89,7 +89,9 @@ const Password = ({ disabled, style, className, full, ...props }) => {
   useEffect(() => {
     const { current: element } = inputRef;
 
-    element.setSelectionRange(element.value.length, element.value.length);
+    if (element.value.length) {
+      element.setSelectionRange(element.value.length, element.value.length);
+    }
   }, [showPassword]);
 
   const togglePassword = e => {

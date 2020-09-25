@@ -9,8 +9,8 @@ const Button = ({
   fontWeights,
 }) => ({
   padding: {
-    right: spacing.xlarge,
-    left: spacing.xlarge,
+    right: spacing.large,
+    left: spacing.large,
   },
   height: {
     default: 48,
@@ -93,8 +93,8 @@ const Button = ({
         },
       },
       margin: {
-        top: spacing.medium,
-        bottom: spacing.xsmall,
+        top: spacing.small,
+        bottom: spacing.xxsmall,
       },
     },
   },

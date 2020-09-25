@@ -39,11 +39,15 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
     >
       <Text
         disabled={false}
+        inverted={false}
         style={
           Array [
             Object {
               "color": "#9898A6",
               "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
             },
           ]
         }
@@ -157,11 +161,15 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
     >
       <Text
         disabled={true}
+        inverted={false}
         style={
           Array [
             Object {
               "color": "#DBDBE8",
               "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
             },
           ]
         }
@@ -275,11 +283,15 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
     >
       <Text
         disabled={false}
+        inverted={false}
         style={
           Array [
             Object {
               "color": "#9898A6",
               "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
             },
           ]
         }
@@ -400,6 +412,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
     >
       <Text
         disabled={true}
+        inverted={false}
         selected={
           Object {
             "label": "Swimming",
@@ -412,6 +425,9 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
             Object {
               "color": "#41414A",
               "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
             },
           ]
         }

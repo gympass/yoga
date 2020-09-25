@@ -11,10 +11,10 @@ const Dropdown = ({
   selector: {
     background: colors.white,
     padding: {
-      top: spacing.medium,
-      right: spacing.medium,
-      bottom: spacing.medium,
-      left: spacing.medium,
+      top: spacing.small,
+      right: spacing.small,
+      bottom: spacing.small,
+      left: spacing.small,
     },
     border: {
       width: borders.small,
@@ -34,7 +34,7 @@ const Dropdown = ({
   },
   button: {
     padding: {
-      right: spacing.medium,
+      right: spacing.small,
     },
   },
   optionsList: {
@@ -55,9 +55,9 @@ const Dropdown = ({
     backgroundColor: colors.white,
     padding: {
       top: spacing.zero,
-      right: spacing.medium,
+      right: spacing.small,
       bottom: spacing.zero,
-      left: spacing.medium,
+      left: spacing.small,
     },
     border: {
       width: borders.small,
@@ -88,10 +88,14 @@ const Dropdown = ({
       },
       title: {
         padding: {
-          top: spacing.large,
+          top: spacing.medium,
           right: spacing.zero,
-          bottom: spacing.large,
+          bottom: spacing.medium,
           left: spacing.zero,
+        },
+        font: {
+          weight: fontWeights.bold,
+          size: fontSizes.medium,
         },
       },
       option: {

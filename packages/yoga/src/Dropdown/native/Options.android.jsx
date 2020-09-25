@@ -9,7 +9,6 @@ const Option = styled(List.Item)`
     isSelected,
     theme: {
       yoga: {
-        baseFont,
         components: { dropdown },
       },
     },
@@ -24,15 +23,20 @@ const Option = styled(List.Item)`
     background-color: ${
       isSelected ? `${dropdown.hover.option.backgroundColor}` : 'transparent'
     };
+  `}
+`;
 
-    font-family: ${baseFont.family};
+const OptionText = styled.Text`
+  ${({
+    isSelected,
+    theme: {
+      yoga: {
+        components: { dropdown },
+      },
+    },
+  }) => `
     font-size: ${dropdown.option.font.size}px;
     line-height: ${dropdown.option.font.lineHeight}px;
-    font-weight: ${
-      isSelected
-        ? `${dropdown.selected.option.font.weight}`
-        : `${dropdown.option.font.weight}`
-    };
     color: ${
       isSelected
         ? `${dropdown.selected.option.font.color}`
@@ -52,7 +56,16 @@ const Options = ({ options, selectedOption, onSelect }) => (
             key={item.value}
             isSelected={selectedOption && selectedOption.value === item.value}
           >
-            <Text>{item.label}</Text>
+            <OptionText
+              isSelected={selectedOption && selectedOption.value === item.value}
+              as={
+                selectedOption && selectedOption.value === item.value
+                  ? Text.Bold
+                  : Text.Regular
+              }
+            >
+              {item.label}
+            </OptionText>
           </Option>
         </TouchableWithoutFeedback>
       )}

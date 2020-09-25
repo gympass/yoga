@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import { node, bool } from 'prop-types';
 import withTouchable from './withTouchable';
 
-const Label = styled.Text`
+import Text from '../../Text';
+
+const Label = styled(Text.Bold)`
   text-align: center;
   ${({
     disabled,
@@ -11,14 +13,11 @@ const Label = styled.Text`
     inverted,
     theme: {
       yoga: {
-        baseFont,
         components: { button },
       },
     },
   }) => `
       font-size: ${button.font.size};
-      font-weight: ${button.font.weight};
-      font-family: ${baseFont.family};
       color: ${button.types.contained.font.default.color};
 
       ${disabled ? `color: ${button.types.contained.font.disabled.color};` : ''}

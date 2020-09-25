@@ -12,6 +12,8 @@ import {
 import styled, { withTheme } from 'styled-components';
 import { Close } from '@gympass/yoga-icons';
 
+import Text from '../../Text';
+
 const ICON_SIZE = 24;
 
 const Wrapper = styled.View(
@@ -150,8 +152,8 @@ const CloseIcon = styled.View(
     top: 0px;
     right: 0px;
 
-    padding-right: ${spacing.medium}px;
-    padding-left: ${spacing.xsmall}px;
+    padding-right: ${spacing.small}px;
+    padding-left: ${spacing.small}px;
   `,
 );
 
@@ -172,7 +174,7 @@ const Helper = styled.View(
   `,
 );
 
-const Info = styled.Text(
+const Info = styled(Text.Regular)(
   ({
     disabled,
     error,

@@ -1,24 +1,42 @@
-### Reference
-
-Gympass `<PlanCard />` component is used to display content related to an user's
-plan.
-
 ### Usage
 
 ```javascript type=expo
-<PlanCard
-  ribbon={{
-    text: 'Tag Label',
-  }}
->
+<PlanCard>
+  <PlanCard.Tag>Recommended for you</PlanCard.Tag>
   <PlanCard.Content
-    title="Gympass Black for employees with Buddha Spa + Reebook included"
-    price="US$99.90"
+    subtitle="plan"
+    title="Basic"
+    description="Try a new training experience"
+    currency="$"
+    price="99.90"
     period="/month"
-  />
-
+  >
+    <PlanCard.Subtitle>Get access to</PlanCard.Subtitle>
+    <PlanCard.List>
+      <PlanCard.ListItem
+        icon={Star}
+        text="2.900 gyms and studios"
+        buttonProps={{
+          children: 'See all gyms and studios',
+          onPress: () => {
+            alert('See all gyms and studios');
+          },
+        }}
+      />
+      <PlanCard.ListItem
+        icon={Star}
+        text="24 wellness app"
+        buttonProps={{
+          children: 'See all apps',
+          onPress: () => {
+            alert('See all apps');
+          },
+        }}
+      />
+    </PlanCard.List>
+  </PlanCard.Content>
   <PlanCard.Actions>
-    <Button.Link variant="secondary">See gyms included</Button.Link>
+    <Button full>Select this plan</Button>
   </PlanCard.Actions>
 </PlanCard>
 ```

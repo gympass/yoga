@@ -20,7 +20,7 @@ const Dot = styled.div`
   `}
 `;
 
-const Label = styled(Text.Tiny)`
+const Label = styled(Text.Bold)`
   ${({
     theme: {
       yoga: {
@@ -30,7 +30,7 @@ const Label = styled(Text.Tiny)`
   }) => css`
     width: 95px;
 
-    font-weight: ${stepper.label.font.weight};
+    font-size: ${stepper.label.font.size}px;
 
     transform: translateX(-50%);
   `}

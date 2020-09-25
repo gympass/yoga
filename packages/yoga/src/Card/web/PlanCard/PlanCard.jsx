@@ -1,45 +1,82 @@
 import React from 'react';
-import styled from 'styled-components';
-import { oneOf, shape, string } from 'prop-types';
+import styled, { css } from 'styled-components';
+import { node, oneOf } from 'prop-types';
 
-import Card from '../Card';
+import theme from '../../../Theme/helpers/themeReader';
 
-const Plan = styled(Card)`
-  max-width: 280px;
-  ${({
-    variant,
-    theme: {
-      yoga: {
-        colors: { white },
+export const PLAN_LINE_HEIGHT = 8;
+
+const Plan = styled.article`
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  max-width: 288px;
+
+  overflow: hidden;
+
+  ${props => {
+    const {
+      colors,
+      components: {
+        card: { plan, elevation },
       },
-    },
-  }) => `
-  ${variant ? `color: ${white};` : ''}
-`}
+    } = theme(props);
+
+    return css`
+      padding: ${plan.padding.top + PLAN_LINE_HEIGHT}px ${plan.padding.right}px
+        ${plan.padding.bottom}px ${plan.padding.left}px;
+
+      border-radius: ${plan.radius}px;
+
+      background-color: ${colors.white};
+
+      box-shadow: ${elevation};
+    `;
+  }}
 `;
 
-const PlanCard = ({ ...rest }) => <Plan {...rest} />;
+const Border = styled.span`
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+  width: 100%;
+
+  height: ${PLAN_LINE_HEIGHT}px;
+  background-color: ${({ variant }) =>
+    theme.components.card.plan.colors[variant] ||
+    theme.components.card.plan.colors.deep};
+`;
+
+const PlanCard = ({ children, variant, ...rest }) => (
+  <Plan {...rest}>
+    <Border variant={variant} />
+    {children}
+  </Plan>
+);
 
 PlanCard.propTypes = {
-  /** text: the content inside the Card Ribbon
-   * variant: style the ribbon following the theme (primary, secondary, tertiary)
-   * variantIntensity: ribbon variant color intensity (0, 1, 2, 3) */
-  ribbon: shape({
-    text: string,
-    variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
-    variantIntensity: oneOf([0, 1, 2, 3]),
-  }),
-  /** style the card following the theme (primary, secondary, tertiary) */
-  variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
-  /** intensity of variant color (0, 1, 2, 3) */
-  variantIntensity: oneOf([0, 1, 2, 3]),
+  children: node,
+  /** change the border top color */
+  variant: oneOf([
+    'vibin',
+    'hope',
+    'verve',
+    'light',
+    'energy',
+    'medium',
+    'stamina',
+    'relax',
+    'deep',
+  ]),
 };
 
 PlanCard.defaultProps = {
-  ribbon: {},
-  variant: '',
-  variantIntensity: 2,
+  children: undefined,
+  variant: undefined,
 };
+
 PlanCard.displayName = 'PlanCard';
 
 export default PlanCard;

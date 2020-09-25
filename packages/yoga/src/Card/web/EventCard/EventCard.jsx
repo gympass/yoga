@@ -28,7 +28,7 @@ const EventInfo = styled.div`
     padding: ${event.info.padding.top}px ${event.info.padding.right}px
       ${event.info.padding.bottom}px ${event.info.padding.left}px;
 
-    ${Text.H4}, ${Text.Small} {
+    ${Text}, ${Text.Small} {
       display: -webkit-inline-box;
       overflow: hidden;
 
@@ -38,11 +38,12 @@ const EventInfo = styled.div`
       text-overflow: -o-ellipsis-lastline;
     }
 
-    ${Text.H4} {
+    ${Text} {
       height: ${event.info.name.height}px;
       margin-bottom: ${event.info.name.marginBottom}px;
 
       font-weight: ${event.info.name.fontWeight};
+      font-size: ${event.info.name.fontSize}px;
     }
 
     ${Text.Small} {
@@ -128,11 +129,13 @@ const EventCard = ({
   <Event {...rest}>
     <DateInfo variant={variant}>
       <DayOfWeek inverted>{date.dayOfWeek}</DayOfWeek>
-      <Text.H3 inverted>{date.day}</Text.H3>
+      <Text.H5 inverted>{date.day}</Text.H5>
       <Month inverted>{date.month}</Month>
     </DateInfo>
     <EventInfo>
-      <Text.H4 title={event.name}>{event.name}</Text.H4>
+      <Text as="h3" title={event.name}>
+        {event.name}
+      </Text>
       <Text.Small title={event.place}>{event.place}</Text.Small>
       <EventTime>
         <Clock fill={icon.fill} style={{ marginRight: 5 }} />

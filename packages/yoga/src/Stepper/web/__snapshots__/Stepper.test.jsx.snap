@@ -10,13 +10,11 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
 .c8 {
   margin: 0;
   padding: 0;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
+  font-weight: 700;
   font-family: Rubik;
   color: #41414A;
   width: 95px;
-  font-weight: 700;
+  font-size: 12px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -175,13 +173,11 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
 .c8 {
   margin: 0;
   padding: 0;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
+  font-weight: 700;
   font-family: Rubik;
   color: #41414A;
   width: 95px;
-  font-weight: 700;
+  font-size: 12px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);

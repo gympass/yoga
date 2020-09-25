@@ -47,10 +47,10 @@ const Ribbon = styled(Text.Tiny)`
   margin-bottom: ${card.padding.bottom}px;
 
   padding: 
-    ${spacing.xxsmall}px
-    ${spacing.small}px
-    ${spacing.xxsmall}px
-    ${spacing.medium}px;
+    ${spacing.xxxsmall}px
+    ${spacing.xsmall}px
+    ${spacing.xxxsmall}px
+    ${spacing.small}px;
   
   border-top-right-radius: ${card.ribbon.radius}px;
   border-bottom-right-radius: ${card.ribbon.radius}px;

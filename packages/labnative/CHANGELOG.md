@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.5...@gympass/yoga-labnative@0.16.6) (2020-09-24)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [0.16.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.4...@gympass/yoga-labnative@0.16.5) (2020-09-21)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [0.16.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.3...@gympass/yoga-labnative@0.16.4) (2020-09-10)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [0.16.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.2...@gympass/yoga-labnative@0.16.3) (2020-09-03)
+
+
+### Bug Fixes
+
+* **labnative:** refactor/clean assets ([28f97f8](https://github.com/Gympass/yoga/commit/28f97f8d456d675c340d53b9e3242019ab9754e4))
+
+
+
+
+
+## [0.16.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.1...@gympass/yoga-labnative@0.16.2) (2020-08-26)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
 ## [0.16.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.0...@gympass/yoga-labnative@0.16.1) (2020-08-25)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

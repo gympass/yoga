@@ -1,6 +1,5 @@
 import { CodeBlock } from './CodeBlock';
 import PropsTable from './PropsTable';
-import ComponentTitle from './ComponentTitle';
 import Header from './Header';
 import * as Home from './Home';
 import InlineCode from './InlineCode';
@@ -15,11 +14,10 @@ import ThemeConfig from './ThemeConfig';
 import GlobalStyle from './GlobalStyle';
 import Redirect from './Redirect';
 import Tokens from './Tokens';
-import Img from './Img';
+import MDXElements from './MDXElements';
 
 export {
   CodeBlock,
-  ComponentTitle,
   Header,
   Home,
   InlineCode,
@@ -36,5 +34,5 @@ export {
   GlobalStyle,
   Redirect,
   Tokens,
-  Img,
+  MDXElements,
 };

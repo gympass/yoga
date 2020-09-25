@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { oneOf, bool } from 'prop-types';
 import textStyle from '../textStyle';
@@ -19,14 +18,32 @@ H3.displayName = 'Text.H3';
 const H4 = styledText('h4');
 H4.displayName = 'Text.H4';
 
+const H5 = styledText('h5');
+H5.displayName = 'Text.H5';
+
 const Small = styledText('small');
 Small.displayName = 'Text.Small';
 
 const Tiny = styledText('tiny');
 Tiny.displayName = 'Text.Tiny';
 
-const Paragraph = styledText('p');
-const Text = props => <Paragraph {...props} />;
+const Light = styledText('light');
+Light.displayName = 'Text.Light';
+
+const Regular = styledText('regular');
+Regular.displayName = 'Text.Regular';
+
+const Medium = styledText('medium');
+Medium.displayName = 'Text.Medium';
+
+const Bold = styledText('bold');
+Bold.displayName = 'Text.Bold';
+
+const Black = styledText('black');
+Black.displayName = 'Text.Black';
+
+const Text = styledText('p');
+
 Text.displayName = 'Text';
 
 Text.propTypes = {
@@ -40,4 +57,18 @@ Text.defaultProps = {
   variant: undefined,
 };
 
-export { Text, H1, H2, H3, H4, Small, Tiny };
+export {
+  Text,
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  Small,
+  Tiny,
+  Light,
+  Regular,
+  Medium,
+  Bold,
+  Black,
+};
