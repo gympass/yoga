@@ -145,6 +145,7 @@ const Layout = ({
             <HeaderLink to="/guidelines/product-content/">
               Guidelines
             </HeaderLink>
+            <HeaderLink to="/accessibility">Accessibility</HeaderLink>
             <HeaderLink to="/components">Components</HeaderLink>
             <ThemeConfig
               theme={theme}
@@ -159,6 +160,7 @@ const Layout = ({
               <BookLogo />
               Guidelines
             </TabBar.Tab>
+            <TabBar.Tab to="/accessibility">Accessibility</TabBar.Tab>
             <TabBar.Tab to="/components">
               <ReactLogo />
               Components
