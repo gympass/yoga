@@ -26,11 +26,11 @@ const Fieldset = styled.fieldset`
     padding-left: ${input.label.padding.left + input.border.radius}px;
     width: ${full ? '100%' : `${input.width}px`};
 
-
     &:hover, &:focus-within {
       border-color: ${error ? colors.negative[1] : input.border.color.typed};
 
       ${disabled ? `border-color: ${colors.disabled.background};` : ''}
+    }
   `}
 `;
 

@@ -10,43 +10,7 @@ import Helper from './Helper';
 
 import Fieldset from './Fieldset';
 import Legend from './Legend';
-
-const StyledLabel = styled.label`
-  letter-spacing: normal;
-  pointer-events: none;
-  position: absolute;
-  user-select: none;
-
-  ${({
-    theme: {
-      yoga: {
-        components: { input },
-      },
-    },
-  }) => css`
-    transform: translateY(12px);
-    left: 15px;
-
-    font-size: ${input.label.font.size.default}px;
-    font-weight: ${input.label.font.weight.default};
-    color: ${input.label.color.default};
-
-    transition-duration: 500ms;
-    transition-timing-function: cubic-bezier(0, 0.75, 0.1, 1);
-  `}
-
-  ${({ error, theme: { yoga } }) =>
-    error &&
-    css`
-      color: ${yoga.colors.negative[1]};
-    `}
-
-  ${({ disabled, theme: { yoga } }) =>
-    disabled &&
-    css`
-      color: ${yoga.colors.disabled.background};
-    `}
-`;
+import Label from './Label';
 
 const Control = styled.div`
   box-sizing: border-box;
@@ -146,11 +110,11 @@ const Input = React.forwardRef(
             }}
           />
 
-          <StyledLabel error={error} disabled={disabled} {...props}>
+          <Label error={error} disabled={disabled} {...props}>
             {label}
-          </StyledLabel>
+          </Label>
 
-          <Legend>{label}</Legend>
+          {label && <Legend>{label}</Legend>}
 
           {cleanable && !readOnly && value && (
             <CloseButton

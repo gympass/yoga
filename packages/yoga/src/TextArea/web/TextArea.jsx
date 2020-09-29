@@ -2,9 +2,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { string, bool, number, func, shape } from 'prop-types';
 
-import Wrapper from '../../Input/web/Wrapper';
+import FieldSet from '../../Input/web/FieldSet';
 import Field from '../../Input/web/Field';
 import Label from '../../Input/web/Label';
+import Legend from '../../Input/web/Legend';
 import Helper from '../../Input/web/Helper';
 
 const Root = styled.div`
@@ -17,7 +18,10 @@ const Root = styled.div`
   `}
 `;
 
-const StyledWrapper = styled(Wrapper)`
+const StyledFieldSet = styled(FieldSet)`
+  height: 88px;
+  box-sizing: border-box;
+
   ${({
     theme: {
       yoga: {
@@ -25,9 +29,6 @@ const StyledWrapper = styled(Wrapper)`
       },
     },
   }) => `
-    height: 88px;
-    box-sizing: border-box;
-
     padding-top: ${textarea.padding.top}px;
     padding-right: ${textarea.padding.right}px;
     padding-bottom: ${textarea.padding.bottom}px;
@@ -39,7 +40,13 @@ const StyledField = styled(Field)`
   resize: none;
   height: 100%;
 
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+`;
+
+const StyledLabel = styled(Label)`
+  left: 20px;
+  transform: translateY(-10px);
 `;
 
 /**
@@ -82,7 +89,7 @@ const TextArea = React.forwardRef(
         style={style}
         onClick={() => textAreaRef.current.focus()}
       >
-        <StyledWrapper
+        <StyledFieldSet
           error={error}
           disabled={disabled}
           full={full}
@@ -106,12 +113,13 @@ const TextArea = React.forwardRef(
               onChange(e);
             }}
           />
-          {label && (
-            <Label error={error} disabled={disabled} typed={typed}>
-              {label}
-            </Label>
-          )}
-        </StyledWrapper>
+
+          <StyledLabel error={error} disabled={disabled} {...props}>
+            {label}
+          </StyledLabel>
+
+          {label && <Legend>{label}</Legend>}
+        </StyledFieldSet>
         <Helper
           disabled={disabled}
           error={error}

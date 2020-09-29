@@ -4,6 +4,7 @@ const ICON_SIZE = 24;
 
 const labelTransition = css`
   ${({
+    as,
     theme: {
       yoga: {
         components: { input },
@@ -11,7 +12,7 @@ const labelTransition = css`
     },
   }) => `
     font-size: ${input.label.font.size.typed}px;
-    transform: translateY(-14px);
+    transform: translateY(-${as === 'textarea' ? '30' : '14'}px);
   `}
 `;
 
@@ -57,7 +58,7 @@ const Field = styled.input`
 
       & ~ legend {
         max-width: 1000px;
-        padding: 0 3px;
+        padding: 0 2px;
       }
 
       & ~ label {
