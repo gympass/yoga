@@ -6,34 +6,29 @@ const labelTransition = css`
   ${({
     theme: {
       yoga: {
-        transition,
         components: { input },
       },
     },
   }) => `
-    top: 0;
-    left: ${input.padding.left}px;
-
     font-size: ${input.label.font.size.typed}px;
-
-    transform: translateY(-50%);
-    transition-duration: ${transition.duration[1]}ms;
-    transition-timing-function: cubic-bezier(${transition.timing[0].join()});
+    transform: translateY(-14px);
   `}
 `;
 
 const Field = styled.input`
-  width: 100%;
-
-  background-color: transparent;
-
   appearance: none;
+  background-color: transparent;
+  left: 0;
   outline: none;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  transform: translateY(-5px);
 
   ${({
     cleanable,
     error,
-    typed,
+    value,
     theme: {
       yoga: {
         colors,
@@ -42,28 +37,30 @@ const Field = styled.input`
       },
     },
   }) => css`
-    height: 100%;
-
-    padding-top: ${input.padding.top}px;
-    padding-right: ${
-      cleanable ? ICON_SIZE + input.padding.right : input.padding.right
-    }px;
-    padding-bottom: ${input.padding.bottom}px;
-    padding-left: ${input.padding.left}px;
-
-    color: ${input.font.color.focus};
     border: none;
-
+    box-sizing: border-box;
+    color: ${input.font.color.focus};
     font-family: ${baseFont.family}, sans-serif;
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
+    height: 52px;
+    padding-bottom: ${input.padding.bottom}px;
+    padding-left: ${input.padding.left}px;
+    padding-right: ${
+      cleanable ? ICON_SIZE + input.padding.right : input.padding.right
+    }px;
+    padding-top: ${input.padding.top}px;
 
-    box-sizing: border-box;
-
+    &:focus-within,
     &:focus {
       color: ${input.font.color.focus};
 
-      & + label {
+      & ~ legend {
+        max-width: 1000px;
+        padding: 0 3px;
+      }
+
+      & ~ label {
         ${labelTransition}
 
         font-weight: ${input.label.font.weight.typed};
@@ -80,15 +77,16 @@ const Field = styled.input`
       color: ${input.label.color.default};
     }
 
-    ${
-      typed
-        ? css`
-            & + label {
-              ${labelTransition}
-            }
-          `
-        : ''
-    }
+    ${value &&
+      css`
+        & ~ legend {
+          max-width: 1000px;
+        }
+
+        & ~ label {
+          ${labelTransition}
+        }
+      `}
   `}
 
   &[type="number"]::-webkit-outer-spin-button,

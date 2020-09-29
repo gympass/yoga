@@ -1,13 +1,52 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import styled, { css } from 'styled-components';
 import { func, string, bool, number, shape, oneOfType } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
 import { theme } from '../../Theme';
-import Wrapper from './Wrapper';
 import Field from './Field';
-import Label from './Label';
+
 import Helper from './Helper';
+
+import Fieldset from './Fieldset';
+import Legend from './Legend';
+
+const StyledLabel = styled.label`
+  letter-spacing: normal;
+  pointer-events: none;
+  position: absolute;
+  user-select: none;
+
+  ${({
+    theme: {
+      yoga: {
+        components: { input },
+      },
+    },
+  }) => css`
+    transform: translateY(12px);
+    left: 15px;
+
+    font-size: ${input.label.font.size.default}px;
+    font-weight: ${input.label.font.weight.default};
+    color: ${input.label.color.default};
+
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0, 0.75, 0.1, 1);
+  `}
+
+  ${({ error, theme: { yoga } }) =>
+    error &&
+    css`
+      color: ${yoga.colors.negative[1]};
+    `}
+
+  ${({ disabled, theme: { yoga } }) =>
+    disabled &&
+    css`
+      color: ${yoga.colors.disabled.background};
+    `}
+`;
 
 const Control = styled.div`
   box-sizing: border-box;
@@ -19,10 +58,39 @@ const Control = styled.div`
         `};
 `;
 
+const CloseButton = styled(Close)`
+  box-sizing: content-box;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 0;
+  width: 20px;
+  z-index: 1000000;
+
+  ${({
+    theme: {
+      yoga: {
+        spacing,
+        components: { input },
+      },
+    },
+  }) => css`
+    fill: ${input.font.color.default};
+    height: ${input.height}px;
+    padding-left: ${spacing.xxsmall}px;
+    padding-right: ${spacing.small}px;
+    transform: translateY(-6px);
+
+    &:hover,
+    &:focus {
+      fill: ${input.font.color.focus};
+    }
+  `};
+`;
+
 const Input = React.forwardRef(
   (
     {
-      className,
       cleanable,
       disabled,
       error,
@@ -39,9 +107,6 @@ const Input = React.forwardRef(
     },
     ref,
   ) => {
-    const [typed, setTyped] = useState(Boolean(value));
-    const [inputValue, setInputValue] = useState(value);
-
     const inputRef = ref || useRef(null);
 
     const cleanField = e => {
@@ -49,25 +114,20 @@ const Input = React.forwardRef(
         e.preventDefault();
 
         onClean('');
+
         inputRef.current.focus();
       }
     };
 
-    useEffect(() => {
-      setInputValue(value);
-      setTyped(Boolean(value));
-    }, [value]);
-
     return (
       <Control full={full}>
-        <Wrapper
+        <Fieldset
+          area-hidden="true"
           disabled={disabled}
           error={error}
           full={full}
-          className={className}
-          style={style}
-          typed={typed}
           label={label}
+          style={style}
         >
           <Field
             {...props}
@@ -78,23 +138,22 @@ const Input = React.forwardRef(
               full,
               readOnly,
               maxLength,
-              typed,
             }}
             ref={inputRef}
-            value={inputValue}
+            value={value}
             onChange={e => {
-              setTyped(Boolean(e.target.value));
-              setInputValue(e.target.value);
               onChange(e);
             }}
           />
-          {label && (
-            <Label typed={typed} error={error} disabled={disabled}>
-              {label}
-            </Label>
-          )}
-          {cleanable && typed && !readOnly && (
-            <Close
+
+          <StyledLabel error={error} disabled={disabled} {...props}>
+            {label}
+          </StyledLabel>
+
+          <Legend>{label}</Legend>
+
+          {cleanable && !readOnly && value && (
+            <CloseButton
               tabIndex={0}
               disabled={disabled}
               onClick={cleanField}
@@ -102,13 +161,14 @@ const Input = React.forwardRef(
               role="button"
             />
           )}
-        </Wrapper>
+        </Fieldset>
+
         {(helper || maxLength || error) && (
           <Helper
             error={error}
             helper={helper}
             maxLength={maxLength}
-            length={inputValue.length}
+            length={value.length}
             disabled={disabled}
           />
         )}
