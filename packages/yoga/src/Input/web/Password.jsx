@@ -42,7 +42,7 @@ const IconWrapper = styled.div`
     },
   }) => `
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
 
     padding-right: ${spacing.small}px;

@@ -22,7 +22,7 @@ const Control = styled.div`
         `};
 `;
 
-const CloseButton = styled(Close)`
+const ClearButton = styled(Close)`
   box-sizing: content-box;
   cursor: pointer;
   outline: none;
@@ -117,7 +117,7 @@ const Input = React.forwardRef(
           {label && <Legend>{label}</Legend>}
 
           {cleanable && !readOnly && value && (
-            <CloseButton
+            <ClearButton
               tabIndex={0}
               disabled={disabled}
               onClick={cleanField}
