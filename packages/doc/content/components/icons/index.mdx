@@ -15,16 +15,16 @@ export const IconWrapper = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  font-size: 10px;
+  width: 120px;
+  height: 80px;
+  font-size: 14px;
 `;
 
 export const AllIcons = () => (
   <>
     {Object.entries(YogaIcons).map(([name, Component]) => (
       <IconWrapper key={name}>
-        <Component width={12} height={12} />
+        <Component width={16} height={16} />
         {name}
       </IconWrapper>
     ))}
