@@ -8,7 +8,7 @@ const ButtonOutline = styled(Button)`
     inverted,
     theme: {
       yoga: {
-        colors: { white, gray },
+        colors: { white },
         components: { button },
       },
     },
@@ -41,12 +41,12 @@ const ButtonOutline = styled(Button)`
         color: ${white};
 
         &:not([disabled]):hover, &:not([disabled]):focus {
-          background-color: ${hexToRgb(white, 0.3)};
+          background-color: ${hexToRgb(white, 0.25)};
         }
 
         &:not([disabled]):active {
-          border-color: ${gray[3]};
-          color: ${gray[3]};
+          border-color: ${hexToRgb(white, 0.75)};
+          color: ${hexToRgb(white, 0.75)};
         }
     `
         : ''
