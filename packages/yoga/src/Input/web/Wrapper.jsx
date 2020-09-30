@@ -88,14 +88,22 @@ const Wrapper = styled.div`
               error ? colors.negative[1] : input.border.color.typed
             };
 
-            ${disabled ? `border-color: ${colors.disabled.background};` : ''}
+            ${
+              disabled
+                ? `border-color: ${colors.elements.backgroundAndDisabled};`
+                : ''
+            }
           }`
           : `
           border-color: ${
             error ? colors.negative[1] : input.border.color.typed
           };
 
-          ${disabled ? `border-color: ${colors.disabled.background};` : ''}
+          ${
+            disabled
+              ? `border-color: ${colors.elements.backgroundAndDisabled};`
+              : ''
+          }
       `
       }
     }
@@ -103,17 +111,17 @@ const Wrapper = styled.div`
     ${
       disabled
         ? `
-            border-color: ${colors.disabled.background};
-            color: ${colors.disabled.background};
+            border-color: ${colors.elements.backgroundAndDisabled};
+            color: ${colors.elements.backgroundAndDisabled};
 
             svg {
-              fill: ${colors.disabled.background};
+              fill: ${colors.elements.backgroundAndDisabled};
               pointer-events: none;
             }
 
             ${
               label
-                ? `fieldset { border-color: ${colors.disabled.background}; }`
+                ? `fieldset { border-color: ${colors.elements.backgroundAndDisabled}; }`
                 : ''
             }
           `

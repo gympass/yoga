@@ -19,7 +19,7 @@ const Wrapper = styled.div`
     margin-top: ${input.helper.margin.top}px;
 
     ${error ? `color: ${colors.negative[1]};` : ''}
-    ${disabled ? `color: ${colors.disabled.background};` : ''}
+    ${disabled ? `color: ${colors.elements.backgroundAndDisabled};` : ''}
   `}
 `;
 

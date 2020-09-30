@@ -1,4 +1,4 @@
-function hexToRgb(hex, opacity = 1) {
+function hexToRgb(hex = '', opacity = 1) {
   const h = hex.replace('#', '');
 
   const shortened = h.length === 3;
