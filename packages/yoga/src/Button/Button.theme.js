@@ -32,16 +32,16 @@ const Button = ({
   types: {
     contained: {
       backgroundColor: {
-        disabled: colors.gray[3],
-        default: colors.primary[3],
-        pressed: colors.primary[2],
+        disabled: colors.elements.backgroundAndDisabled,
+        default: colors.primary,
+        pressed: hexToRgb(colors.primary, 0.75),
       },
       font: {
         default: {
           color: colors.white,
         },
         disabled: {
-          color: colors.gray[7],
+          color: colors.text.disabled,
         },
         pressed: {
           color: colors.white,
@@ -53,17 +53,17 @@ const Button = ({
         disabled: 'transparent',
         default: 'transparent',
         pressed: 'transparent',
-        hover: hexToRgb(colors.primary[3], 0.3),
+        hover: hexToRgb(colors.primary, 0.25),
       },
       font: {
         default: {
-          color: colors.primary[3],
+          color: colors.text.primary,
         },
         disabled: {
-          color: colors.gray[7],
+          color: colors.text.disabled,
         },
         pressed: {
-          color: colors.primary[2],
+          color: hexToRgb(colors.text.primary, 0.75),
         },
       },
     },
@@ -72,24 +72,24 @@ const Button = ({
         disabled: 'transparent',
         default: 'transparent',
         pressed: 'transparent',
-        hover: hexToRgb(colors.primary[3], 0.3),
+        hover: hexToRgb(colors.primary, 0.25),
       },
       font: {
         default: {
-          color: colors.primary[3],
+          color: colors.text.primary,
         },
         disabled: {
-          color: colors.gray[7],
+          color: colors.text.disabled,
         },
         pressed: {
-          color: colors.primary[2],
+          color: hexToRgb(colors.primary, 0.75),
         },
       },
     },
     link: {
       font: {
         disabled: {
-          color: colors.gray[7],
+          color: colors.text.disabled,
         },
       },
       margin: {
