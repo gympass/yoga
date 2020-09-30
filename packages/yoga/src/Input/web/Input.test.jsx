@@ -129,9 +129,9 @@ describe('<Input />', () => {
     it('should call onClean when press clean button', () => {
       const onCleanMock = jest.fn();
 
-      const { getByRole, getByTestId } = render(
+      const { getByTestId, getByRole } = render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" onClean={onCleanMock} />
+          <Input label="Input" onClean={onCleanMock} />
         </ThemeProvider>,
       );
 

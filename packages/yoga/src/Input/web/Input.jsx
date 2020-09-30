@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import { func, string, bool, number, shape, oneOfType } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
@@ -72,6 +72,11 @@ const Input = React.forwardRef(
     ref,
   ) => {
     const inputRef = ref || useRef(null);
+    const [inputValue, setInputValue] = useState(value);
+
+    useEffect(() => {
+      setInputValue(value);
+    }, [value]);
 
     const cleanField = e => {
       if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
@@ -104,19 +109,21 @@ const Input = React.forwardRef(
               maxLength,
             }}
             ref={inputRef}
-            value={value}
+            data-testid="input"
+            value={inputValue}
             onChange={e => {
+              setInputValue(e.target.value);
               onChange(e);
             }}
           />
 
-          <Label error={error} disabled={disabled} {...props}>
+          <Label error={error} disabled={disabled}>
             {label}
           </Label>
 
           {label && <Legend>{label}</Legend>}
 
-          {cleanable && !readOnly && value && (
+          {cleanable && !readOnly && inputValue && (
             <ClearButton
               tabIndex={0}
               disabled={disabled}
@@ -132,7 +139,7 @@ const Input = React.forwardRef(
             error={error}
             helper={helper}
             maxLength={maxLength}
-            length={value.length}
+            length={inputValue.length}
             disabled={disabled}
           />
         )}

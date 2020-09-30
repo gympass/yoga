@@ -1,81 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Input.Email /> Snapshots should match with default input 1`] = `
-.c1 {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  height: 52px;
-}
-
-.c1 {
-  width: 320px;
-}
-
-.c1 svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 16px;
-  padding-left: 8px;
-  height: 52px;
-  width: 20px;
-  fill: #9898A6;
-  outline: none;
-  box-sizing: content-box;
-  cursor: pointer;
-}
-
-.c1 svg:hover,
-.c1 svg:focus {
-  fill: #41414A;
-}
-
-.c1:focus-within legend {
-  max-width: 1000px;
-  font-weight: 700;
-}
-
-.c1:hover fieldset,
-.c1:focus-within fieldset {
-  border-color: #41414A;
-}
-
 .c2 {
-  width: 100%;
-  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: transparent;
+  left: 0;
   outline: none;
-  height: 100%;
-  padding-top: 16px;
-  padding-right: 40px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  color: #41414A;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  -webkit-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
   border: none;
+  box-sizing: border-box;
+  color: #41414A;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  box-sizing: border-box;
+  height: 52px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 40px;
+  padding-top: 16px;
 }
 
+.c2:focus-within,
 .c2:focus {
   color: #41414A;
 }
 
-.c2:focus + label {
-  top: 0;
-  left: 16px;
+.c2:focus-within ~ legend,
+.c2:focus ~ legend {
+  max-width: 1000px;
+  padding: 0 2px;
+}
+
+.c2:focus-within ~ label,
+.c2:focus ~ label {
   font-size: 12px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  -webkit-transform: translateY(-14px);
+  -ms-transform: translateY(-14px);
+  transform: translateY(-14px);
   font-weight: 700;
   color: #41414A;
 }
@@ -110,32 +78,36 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   box-shadow: none;
 }
 
-.c4 {
-  position: absolute;
-  top: -7px;
-  left: 0;
-  padding: 0;
-  padding-left: 0px;
-  right: 0;
+.c1 {
   bottom: 0;
+  height: 60px;
   margin: 0;
-  pointer-events: none;
+  padding: 0;
+  position: relative;
+  right: 0;
   border-radius: 8px;
-  border: 1px solid #D3D3E2;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D3D3E2;
   padding-left: 12px;
+  width: 320px;
 }
 
-.c5 {
+.c1:hover,
+.c1:focus-within {
+  border-color: #41414A;
+}
+
+.c4 {
   position: relative;
   padding: 0;
-  max-width: 0.01px;
+  max-width: 0px;
   width: auto;
   height: 14px;
   font-weight: normal;
-  -webkit-transition: max-width ease 50ms;
-  transition: max-width ease 50ms;
+  -webkit-transition: max-width 50ms ease 0;
+  transition: max-width 50ms ease 0;
   visibility: hidden;
-  max-width: 0.01px;
   font-size: 12px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -143,30 +115,29 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   letter-spacing: normal;
 }
 
-.c6 {
+.c5 {
   padding-left: 4px;
   padding-right: 4px;
 }
 
 .c3 {
-  position: absolute;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   pointer-events: none;
+  position: absolute;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  top: 24px;
-  left: 16px;
+  -webkit-transform: translateY(12px);
+  -ms-transform: translateY(12px);
+  transform: translateY(12px);
+  left: 15px;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
-  -webkit-transform: translateY(-40%);
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -182,12 +153,13 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   <div
     class="c0"
   >
-    <div
+    <fieldset
       class="c1"
       label="Label"
     >
       <input
         class="c2"
+        data-testid="input"
         type="email"
         value=""
       />
@@ -196,20 +168,17 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
       >
         Label
       </label>
-      <fieldset
+      <legend
         class="c4"
       >
-        <legend
+        <span
           class="c5"
         >
-          <span
-            class="c6"
-          >
-            Label
-          </span>
-        </legend>
-      </fieldset>
-    </div>
+          Label
+        </span>
+      </legend>
+      
+    </fieldset>
   </div>
 </div>
 `;
