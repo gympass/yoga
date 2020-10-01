@@ -16,7 +16,7 @@ that generates good health (arogya), contributes to longevity
 (chirayu), and the total intrinsic discipline culminates into
 positive and perennial happiness and peace.
 
-### The word Yoga mean?
+### The word Yoga?
 >• The word ‘Yoga’ is a Sanskrit word which originated
 from the root ‘YUJ’.
 >• Synonym of this Sanskrit word is found in different
