@@ -8,9 +8,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);

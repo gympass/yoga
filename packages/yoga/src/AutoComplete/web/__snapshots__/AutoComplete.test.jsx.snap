@@ -8,9 +8,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -211,9 +209,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -414,9 +410,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -573,7 +567,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   position: absolute;
   right: 0;
   width: 20px;
-  z-index: 1000000;
+  top: 14px;
   fill: #9898A6;
   height: 52px;
   padding-left: 8px;
@@ -752,9 +746,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -911,7 +903,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   position: absolute;
   right: 0;
   width: 20px;
-  z-index: 1000000;
+  top: 14px;
   fill: #9898A6;
   height: 52px;
   padding-left: 8px;

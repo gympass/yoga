@@ -71,7 +71,7 @@ describe('<Input />', () => {
       const onChangeMock = jest.fn();
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" onChange={onChangeMock} />
+          <Input label="Input" onChange={onChangeMock} />
         </ThemeProvider>,
       );
 
@@ -84,7 +84,7 @@ describe('<Input />', () => {
       const onFocusMock = jest.fn();
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" onFocus={onFocusMock} />
+          <Input label="Input" onFocus={onFocusMock} />
         </ThemeProvider>,
       );
 
@@ -98,7 +98,7 @@ describe('<Input />', () => {
 
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" onBlur={onBlurMock} />
+          <Input label="Input" onBlur={onBlurMock} />
         </ThemeProvider>,
       );
 
@@ -113,7 +113,7 @@ describe('<Input />', () => {
     it('should update maxLength counter when add character', () => {
       const { getByTestId, getByText } = render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" maxLength={10} />
+          <Input label="Input" maxLength={10} />
         </ThemeProvider>,
       );
 

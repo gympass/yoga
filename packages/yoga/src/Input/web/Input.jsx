@@ -29,7 +29,7 @@ const ClearButton = styled(Close)`
   position: absolute;
   right: 0;
   width: 20px;
-  z-index: 1000000;
+  top: 14px;
 
   ${({
     theme: {

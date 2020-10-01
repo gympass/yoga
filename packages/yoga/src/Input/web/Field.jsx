@@ -21,9 +21,7 @@ const Field = styled.input`
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   transform: translateY(-5px);
 
   ${({

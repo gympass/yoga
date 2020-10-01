@@ -8,9 +8,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -190,9 +188,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -377,9 +373,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -590,9 +584,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -772,9 +764,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
@@ -1004,9 +994,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   background-color: transparent;
   left: 0;
   outline: none;
-  position: absolute;
   width: 100%;
-  z-index: 1000;
   -webkit-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   transform: translateY(-5px);
