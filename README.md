@@ -8,9 +8,22 @@
 Design system at Gympass, our main intent is to support our projects.
 We have open-sourced our project for those who are interested in checkout how we do things and organize our code and documentation here.
 
-### What does it mean?
+### What does Yoga mean?
 
 > Yoga is a scientific system of practices made to help each one of us achieve our highest potential and experience.
+>• In this sense, it is an exercise in moral and mental cultivation
+that generates good health (arogya), contributes to longevity
+(chirayu), and the total intrinsic discipline culminates into
+positive and perennial happiness and peace.
+
+### The word Yoga mean?
+>• The word ‘Yoga’ is a Sanskrit word which originated
+from the root ‘YUJ’.
+>• Synonym of this Sanskrit word is found in different
+European languages too.
+>• Those are ‘yoke’ in English, ‘youg’ in French, ‘joch’ in
+German, ‘zugos’ in Greek, ‘jugum’ in Latin, ‘igo’ in
+Russian and ‘yugo’in Spanish.
 
 ## Documentation
 
