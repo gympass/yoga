@@ -19,8 +19,6 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-  ${truncateStyle}
-
   ${props => {
     const {
       components: {
@@ -39,10 +37,21 @@ const Item = styled.li`
   }}
 `;
 
+const Wrapper = styled.div`
+  display: flex;
+  min-width: 0;
+
+  svg {
+    flex-shrink: 0;
+  }
+`;
+
 const ItemText = styled(Text.Small)`
   display: inline-block;
-  height: 16px;
+  height: 100%;
   vertical-align: middle;
+
+  ${truncateStyle}
 
   color: ${theme.components.card.plan.list.item.font.color};
 `;
@@ -51,6 +60,8 @@ const Button = styled.button`
   display: block;
   padding: 0;
 
+  width: 100%;
+
   letter-spacing: normal;
 
   background-color: transparent;
@@ -58,6 +69,7 @@ const Button = styled.button`
 
   cursor: pointer;
   text-decoration: none;
+  text-align: left;
   outline: none;
 
   ${truncateStyle}
@@ -83,10 +95,12 @@ const Button = styled.button`
 const ListItem = withTheme(
   ({ text, icon: Icon, buttonProps, theme: yogaTheme }) => (
     <Item>
-      {Icon && (
-        <Icon fill={yogaTheme.yoga.colors.gray[7]} width={16} height={16} />
-      )}
-      <ItemText as="span">{text}</ItemText>
+      <Wrapper>
+        {Icon && (
+          <Icon fill={yogaTheme.yoga.colors.gray[7]} width={16} height={16} />
+        )}
+        <ItemText as="span">{text}</ItemText>
+      </Wrapper>
       {Object.keys(buttonProps).length && <Button {...buttonProps} />}
     </Item>
   ),

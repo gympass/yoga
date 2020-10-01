@@ -73,7 +73,7 @@ const PlanCardContent = ({
   ...rest
 }) => (
   <Content {...rest}>
-    {subtitle && <Subtitle>plan</Subtitle>}
+    {subtitle && <Subtitle>{subtitle}</Subtitle>}
     {title && <Title>{title}</Title>}
     <Description>{description}</Description>
     <Price>
