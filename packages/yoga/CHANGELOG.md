@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.0.0...@gympass/yoga@5.0.1) (2020-10-02)
+
+
+### Bug Fixes
+
+* **plancard:** fix truncate text and subtitle prop from PlanCard.Content component ([79c42eb](https://github.com/Gympass/yoga/commit/79c42eb92393c8c8fc097344062c19f6fadb5a11))
+
+
+
+
+
 # [5.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@4.1.2...@gympass/yoga@5.0.0) (2020-09-24)
 
 
