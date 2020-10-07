@@ -9,6 +9,7 @@ const Link = styled(StyledButton)`
   ${({
     inverted,
     full,
+    variant,
     theme: {
       yoga: {
         colors: { white, text, [variant]: color },
