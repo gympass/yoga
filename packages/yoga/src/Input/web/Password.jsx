@@ -42,7 +42,7 @@ const IconWrapper = styled.div`
     },
   }) => `
     position: absolute;
-    top: 10px;
+    top: 8px;
     right: 0;
 
     padding-right: ${spacing.small}px;
@@ -115,7 +115,6 @@ const Password = ({ disabled, style, className, full, ...props }) => {
         cleanable={false}
         type={showPassword ? 'text' : 'password'}
       />
-
       <IconWrapper
         tabIndex={disabled ? null : 0}
         onClick={togglePassword}

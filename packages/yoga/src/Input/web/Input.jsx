@@ -22,15 +22,7 @@ const Control = styled.div`
         `};
 `;
 
-const ClearButton = styled(Close)`
-  box-sizing: content-box;
-  cursor: pointer;
-  outline: none;
-  position: absolute;
-  right: 0;
-  width: 20px;
-  top: 14px;
-
+const IconWrapper = styled.div`
   ${({
     theme: {
       yoga: {
@@ -38,18 +30,29 @@ const ClearButton = styled(Close)`
         components: { input },
       },
     },
-  }) => css`
-    fill: ${input.font.color.default};
-    height: ${input.height}px;
-    padding-left: ${spacing.xxsmall}px;
-    padding-right: ${spacing.small}px;
-    transform: translateY(-6px);
+  }) => `
+    position: absolute;
+    top: 0px;
+    right: 0;
 
-    &:hover,
-    &:focus {
+    padding-right: ${spacing.small}px;
+    padding-left: ${spacing.xxsmall}px;
+
+    height: ${input.height}px;
+    cursor: pointer;
+
+    outline: none;
+
+    &:hover svg, &:focus svg {
       fill: ${input.font.color.focus};
     }
-  `};
+
+    svg {
+      height: ${input.height}px;
+      width: 20px;
+      fill: ${input.font.color.default};
+    }
+  `}
 `;
 
 const Input = React.forwardRef(
@@ -122,15 +125,16 @@ const Input = React.forwardRef(
           </Label>
 
           {label && <Legend>{label}</Legend>}
-
           {cleanable && !readOnly && inputValue && (
-            <ClearButton
+            <IconWrapper
               tabIndex={0}
               disabled={disabled}
               onClick={cleanField}
               onKeyDown={cleanField}
               role="button"
-            />
+            >
+              <Close/>
+            </IconWrapper>
           )}
         </Fieldset>
 

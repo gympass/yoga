@@ -1,12 +1,8 @@
 import styled from 'styled-components';
 
-const Fieldset = styled.fieldset`
-  bottom: 0;
-  height: 60px;
-  margin: 0;
-  padding: 0;
+const Fieldset = styled.div`
+  height: 52px;
   position: relative;
-  right: 0;
 
   ${({
     error,

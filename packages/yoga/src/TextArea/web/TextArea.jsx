@@ -46,7 +46,6 @@ const StyledField = styled(Field)`
 
 const StyledLabel = styled(Label)`
   left: 20px;
-  transform: translateY(-10px);
 `;
 
 /**

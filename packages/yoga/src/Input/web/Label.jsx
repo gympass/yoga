@@ -13,8 +13,11 @@ const StyledLabel = styled.label`
       },
     },
   }) => css`
-    transform: translateY(12px);
-    left: 15px;
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+    left: 16px;
+    top:12px;
 
     font-size: ${input.label.font.size.default}px;
     font-weight: ${input.label.font.weight.default};
@@ -25,16 +28,13 @@ const StyledLabel = styled.label`
   `}
 
   ${({ error, theme: { yoga } }) =>
-    error &&
-    css`
-      color: ${yoga.colors.negative[1]};
-    `}
+    error ? css` color: ${yoga.colors.negative[1]}; ` : ''
+  };
 
   ${({ disabled, theme: { yoga } }) =>
-    disabled &&
-    css`
-      color: ${yoga.colors.disabled.background};
-    `}
+    disabled ? css` color: ${yoga.colors.disabled.background}; ` : ''
+  };
+
 `;
 
 export default StyledLabel;

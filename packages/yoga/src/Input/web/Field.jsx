@@ -1,28 +1,26 @@
 import styled, { css } from 'styled-components';
 
-const ICON_SIZE = 24;
-
 const labelTransition = css`
   ${({
     as,
     theme: {
       yoga: {
+        colors,
         components: { input },
       },
     },
   }) => `
     font-size: ${input.label.font.size.typed}px;
-    transform: translateY(-${as === 'textarea' ? '30' : '14'}px);
+    background-color: ${colors.white};
+    transform: 20px);
   `}
 `;
 
 const Field = styled.input`
   appearance: none;
   background-color: transparent;
-  left: 0;
   outline: none;
-  width: 100%;
-  transform: translateY(-5px);
+  width: 85%;
 
   ${({
     cleanable,
@@ -42,13 +40,7 @@ const Field = styled.input`
     font-family: ${baseFont.family}, sans-serif;
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
-    height: 52px;
-    padding-bottom: ${input.padding.bottom}px;
-    padding-left: ${input.padding.left}px;
-    padding-right: ${
-      cleanable ? ICON_SIZE + input.padding.right : input.padding.right
-    }px;
-    padding-top: ${input.padding.top}px;
+    height: 100%;
 
     &:focus-within,
     &:focus {
