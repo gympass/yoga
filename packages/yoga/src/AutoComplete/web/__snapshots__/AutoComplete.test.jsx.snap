@@ -30,15 +30,15 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 
 .c3:focus-within ~ label,
 .c3:focus ~ label {
+  -webkit-transform: translateY(-130%);
+  -ms-transform: translateY(-130%);
+  transform: translateY(-130%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   background-color: #FFFFFF;
-  -webkit-transform: 20px);
-  font-weight: 700;
-  color: #41414A;
-  -ms-transform: 20px);
-  font-weight: 700;
-  color: #41414A;
-  transform: 20px);
   font-weight: 700;
   color: #41414A;
 }
@@ -227,15 +227,15 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 
 .c3:focus-within ~ label,
 .c3:focus ~ label {
+  -webkit-transform: translateY(-130%);
+  -ms-transform: translateY(-130%);
+  transform: translateY(-130%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   background-color: #FFFFFF;
-  -webkit-transform: 20px);
-  font-weight: 700;
-  color: #41414A;
-  -ms-transform: 20px);
-  font-weight: 700;
-  color: #41414A;
-  transform: 20px);
   font-weight: 700;
   color: #41414A;
 }
@@ -424,15 +424,15 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c3:focus-within ~ label,
 .c3:focus ~ label {
+  -webkit-transform: translateY(-130%);
+  -ms-transform: translateY(-130%);
+  transform: translateY(-130%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   background-color: #FFFFFF;
-  -webkit-transform: 20px);
-  font-weight: 700;
-  color: #41414A;
-  -ms-transform: 20px);
-  font-weight: 700;
-  color: #41414A;
-  transform: 20px);
   font-weight: 700;
   color: #41414A;
 }
@@ -463,11 +463,15 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c3 ~ label {
+  -webkit-transform: translateY(-130%);
+  -ms-transform: translateY(-130%);
+  transform: translateY(-130%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   background-color: #FFFFFF;
-  -webkit-transform: 20px);
-  -ms-transform: 20px);
-  transform: 20px);
 }
 
 .c3[type="number"]::-webkit-outer-spin-button,
@@ -759,15 +763,15 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c3:focus-within ~ label,
 .c3:focus ~ label {
+  -webkit-transform: translateY(-130%);
+  -ms-transform: translateY(-130%);
+  transform: translateY(-130%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   background-color: #FFFFFF;
-  -webkit-transform: 20px);
-  font-weight: 700;
-  color: #41414A;
-  -ms-transform: 20px);
-  font-weight: 700;
-  color: #41414A;
-  transform: 20px);
   font-weight: 700;
   color: #41414A;
 }
@@ -798,11 +802,15 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c3 ~ label {
+  -webkit-transform: translateY(-130%);
+  -ms-transform: translateY(-130%);
+  transform: translateY(-130%);
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   background-color: #FFFFFF;
-  -webkit-transform: 20px);
-  -ms-transform: 20px);
-  transform: 20px);
 }
 
 .c3[type="number"]::-webkit-outer-spin-button,

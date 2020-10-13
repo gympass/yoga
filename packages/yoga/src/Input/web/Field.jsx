@@ -2,17 +2,19 @@ import styled, { css } from 'styled-components';
 
 const labelTransition = css`
   ${({
-    as,
     theme: {
       yoga: {
+        transition,
         colors,
         components: { input },
       },
     },
   }) => `
+    transform: translateY(-130%);
+    transition-duration: ${transition.duration[1]}ms;
+    transition-timing-function: cubic-bezier(${transition.timing[0].join()});
     font-size: ${input.label.font.size.typed}px;
     background-color: ${colors.white};
-    transform: 20px);
   `}
 `;
 
@@ -21,9 +23,7 @@ const Field = styled.input`
   background-color: transparent;
   outline: none;
   width: 85%;
-
   ${({
-    cleanable,
     error,
     value,
     theme: {
@@ -41,7 +41,6 @@ const Field = styled.input`
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
     height: 100%;
-
     &:focus-within,
     &:focus {
       color: ${input.font.color.focus};

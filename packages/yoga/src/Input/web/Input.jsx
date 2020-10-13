@@ -133,7 +133,7 @@ const Input = React.forwardRef(
               onKeyDown={cleanField}
               role="button"
             >
-              <Close/>
+              <Close />
             </IconWrapper>
           )}
         </Fieldset>
