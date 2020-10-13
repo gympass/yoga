@@ -16,12 +16,8 @@ exports[`<TextArea /> should match snapshot 1`] = `
 }
 
 .c1 {
-  bottom: 0;
-  height: 60px;
-  margin: 0;
-  padding: 0;
+  height: 52px;
   position: relative;
-  right: 0;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
@@ -46,23 +42,15 @@ exports[`<TextArea /> should match snapshot 1`] = `
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  left: 0;
   outline: none;
-  width: 100%;
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  transform: translateY(-5px);
+  width: 85%;
   border: none;
   box-sizing: border-box;
   color: #41414A;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  height: 52px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 16px;
+  height: 100%;
   resize: none;
   height: 100%;
   padding-top: 0;
@@ -83,9 +71,14 @@ exports[`<TextArea /> should match snapshot 1`] = `
 .c2:focus-within ~ label,
 .c2:focus ~ label {
   font-size: 12px;
-  -webkit-transform: translateY(-30px);
-  -ms-transform: translateY(-30px);
-  transform: translateY(-30px);
+  background-color: #FFFFFF;
+  -webkit-transform: 20px);
+  font-weight: 700;
+  color: #41414A;
+  -ms-transform: 20px);
+  font-weight: 700;
+  color: #41414A;
+  transform: 20px);
   font-weight: 700;
   color: #41414A;
 }
@@ -131,10 +124,13 @@ exports[`<TextArea /> should match snapshot 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transform: translateY(12px);
-  -ms-transform: translateY(12px);
-  transform: translateY(12px);
-  left: 15px;
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  left: 16px;
+  top: 12px;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
@@ -143,16 +139,13 @@ exports[`<TextArea /> should match snapshot 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   left: 20px;
-  -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
 }
 
 <div>
   <div
     class="c0"
   >
-    <fieldset
+    <div
       class="c1"
       label=""
     >
@@ -164,7 +157,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
         class="c3"
       />
       
-    </fieldset>
+    </div>
     <div
       class="c4"
     />

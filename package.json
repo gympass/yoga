@@ -14,7 +14,7 @@
     "lint:yoga": "NODE_ENV=test yarn lint packages/yoga",
     "lint:doc": "NODE_ENV=test yarn lint packages/doc",
     "lint:labnative": "NODE_ENV=test yarn lint packages/labnative",
-    "lint:tokens": "NODE_ENV=test yarn lint packages/tokens",
+    "lint:tokens": "NODE_ENV=test yarn lint packgit ages/tokens",
     "lint:common": "NODE_ENV=test yarn lint packages/common",
     "lint:all": "NODE_ENV=test yarn lint packages",
     "deploy:doc": "lerna run deploy --scope=@gympass/yoga-doc",

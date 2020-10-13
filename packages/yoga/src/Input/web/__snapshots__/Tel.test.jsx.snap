@@ -6,23 +6,15 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  left: 0;
   outline: none;
-  width: 100%;
-  -webkit-transform: translateY(-5px);
-  -ms-transform: translateY(-5px);
-  transform: translateY(-5px);
+  width: 85%;
   border: none;
   box-sizing: border-box;
   color: #41414A;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  height: 52px;
-  padding-bottom: 16px;
-  padding-left: 16px;
-  padding-right: 40px;
-  padding-top: 16px;
+  height: 100%;
 }
 
 .c2:focus-within,
@@ -39,9 +31,14 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
 .c2:focus-within ~ label,
 .c2:focus ~ label {
   font-size: 12px;
-  -webkit-transform: translateY(-14px);
-  -ms-transform: translateY(-14px);
-  transform: translateY(-14px);
+  background-color: #FFFFFF;
+  -webkit-transform: 20px);
+  font-weight: 700;
+  color: #41414A;
+  -ms-transform: 20px);
+  font-weight: 700;
+  color: #41414A;
+  transform: 20px);
   font-weight: 700;
   color: #41414A;
 }
@@ -77,12 +74,8 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
 }
 
 .c1 {
-  bottom: 0;
-  height: 60px;
-  margin: 0;
-  padding: 0;
+  height: 52px;
   position: relative;
-  right: 0;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
@@ -129,10 +122,13 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transform: translateY(12px);
-  -ms-transform: translateY(12px);
-  transform: translateY(12px);
-  left: 15px;
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+  left: 16px;
+  top: 12px;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
@@ -151,7 +147,7 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
   <div
     class="c0"
   >
-    <fieldset
+    <div
       class="c1"
       label="Label"
     >
@@ -176,7 +172,7 @@ exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
         </span>
       </legend>
       
-    </fieldset>
+    </div>
   </div>
 </div>
 `;
