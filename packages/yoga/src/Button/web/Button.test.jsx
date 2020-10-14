@@ -182,7 +182,6 @@ describe('<Button />', () => {
           <ThemeProvider>
             <Button.Link variant="primary" />
             <Button.Link variant="secondary" />
-            <Button.Link variant="tertiary" />
           </ThemeProvider>,
         );
         expect(container).toMatchSnapshot();

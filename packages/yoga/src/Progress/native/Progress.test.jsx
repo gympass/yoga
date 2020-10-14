@@ -46,33 +46,46 @@ describe('<Progress />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should match snapshot with secondary variant prop', () => {
+  it('should match snapshot with all variants', () => {
     const { container } = render(
       <ThemeProvider>
+        <Progress
+          max={100}
+          value={20}
+          label={{ value: 20 }}
+          variant="primary"
+        />
         <Progress
           max={100}
           value={20}
           label={{ value: 20 }}
           variant="secondary"
         />
-      </ThemeProvider>,
-    );
-
-    expect(container).toMatchSnapshot();
-  });
-
-  it('should match snapshot with tertiary variant prop', () => {
-    const { container } = render(
-      <ThemeProvider>
+        <Progress max={100} value={20} label={{ value: 20 }} variant="vibin" />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="hope" />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="energy" />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="relax" />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="peace" />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="verve" />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="uplift" />
         <Progress
           max={100}
           value={20}
           label={{ value: 20 }}
-          variant="tertiary"
+          variant="deepPurple"
         />
+        <Progress
+          max={100}
+          value={20}
+          label={{ value: 20 }}
+          variant="stamina"
+        />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="dark" />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="medium" />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="deep" />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="light" />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="clear" />
+        <Progress max={100} value={20} label={{ value: 20 }} variant="white" />
       </ThemeProvider>,
     );
-
-    expect(container).toMatchSnapshot();
-  });
 });
