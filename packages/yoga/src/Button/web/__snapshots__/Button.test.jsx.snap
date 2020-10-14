@@ -1071,7 +1071,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
 </div>
 `;
 
-exports[`<Button /> Snapshots With variant prop should match snapshot with link Button 1`] = `
+exports[`<Button /> Snapshots With variant prop should match snapshot with link Button.Link 1`] = `
 .c0 {
   box-sizing: border-box;
   outline: none;
@@ -1140,7 +1140,15 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   color: #D7D7E0;
 }
 
-.c1 {
+<div>
+  <button
+    class="c0"
+  />
+</div>
+`;
+
+exports[`<Button /> Snapshots With variant prop should match snapshot with link Button.Outline 1`] = `
+.c0 {
   box-sizing: border-box;
   outline: none;
   -webkit-transition: all 0.2s;
@@ -1164,57 +1172,56 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   line-height: 1;
   -webkit-text-decoration: none;
   text-decoration: none;
-  height: unset;
-  padding: 0;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  background-color: unset;
-  border: none;
-  border-radius: 0;
-  color: #D8385E;
 }
 
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c1:active {
+.c0:active {
   background-color: rgba(35,27,34,0.75);
   border-color: transparent;
   color: #FFFFFF;
 }
 
-.c1:disabled {
+.c0:disabled {
   background-color: #F5F5FA;
   border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
+.c1 {
+  background-color: transparent;
+  border-color: #231B22;
+  color: #231B22;
+}
+
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  box-shadow: unset;
-  color: rgba(216,56,94,0.75);
+  background-color: rgba(35,27,34,0.25);
+  box-shadow: none;
 }
 
 .c1:not([disabled]):active {
-  background-color: unset;
-  color: rgba(216,56,94,0.75);
+  background-color: transparent;
+  border-color: rgba(35,27,34,0.75);
+  color: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
-  background-color: unset;
+  background-color: transparent;
+  border-color: #D7D7E0;
   color: #D7D7E0;
 }
 
 <div>
   <button
-    class="c0"
-  />
-  <button
-    class="c1"
-  />
+    class="c0 c1"
+  >
+    Button
+  </button>
 </div>
 `;
 
