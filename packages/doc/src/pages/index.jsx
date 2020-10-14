@@ -45,12 +45,12 @@ const Version = styled.a(
   ({
     theme: {
       yoga: {
-        colors: { gray },
+        colors: { text },
       },
     },
   }) => `
   text-decoration: none;
-  color: ${gray[8]};
+  color: ${text.secondary};
   font-size: 16px;
 `,
 );

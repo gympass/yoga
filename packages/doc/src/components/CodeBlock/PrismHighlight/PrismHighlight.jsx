@@ -17,7 +17,7 @@ const Pre = styled.pre`
     bordered,
     theme: {
       yoga: {
-        colors: { primary: primaryPallete, gray: grayPallete },
+        colors: { primary, elements },
       },
     },
   }) => `
@@ -27,17 +27,15 @@ const Pre = styled.pre`
     padding: 18px;
 
     .token.string {
-      color: ${primaryPallete[3]} !important;
+      color: ${primary} !important;
     }
 
     overflow: auto;
-    ${bordered ? `border: 1px solid ${grayPallete[3]};` : ''}
+    ${bordered ? `border: 1px solid ${elements.lineAndBorders};` : ''}
 
     @media (max-width: 900px) {
       font-size: 12px;
     }
-
-    
   `}
 `;
 

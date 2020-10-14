@@ -10,7 +10,6 @@ import Documentation from './Documentation';
 import Dropdown from './Dropdown';
 import { TabbedView, Tab } from './TabbedView';
 import TabBar from './TabBar';
-import ThemeConfig from './ThemeConfig';
 import GlobalStyle from './GlobalStyle';
 import Redirect from './Redirect';
 import Tokens from './Tokens';
@@ -30,7 +29,6 @@ export {
   TabbedView,
   Tab,
   TabBar,
-  ThemeConfig,
   GlobalStyle,
   Redirect,
   Tokens,

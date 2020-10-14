@@ -12,12 +12,12 @@ const Toolbar = styled.div`
   ${({
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { elements },
       },
     },
   }) => `
     align-items: center;
-    background-color: ${hexToRgb(grayPallete[1], 0.5)};
+    background-color: ${hexToRgb(elements.backgroundAndDisabled, 0.5)};
     display: flex;
     height: 50px;
     justify-content: center;
@@ -28,7 +28,7 @@ const ToolbarIconButton = styled.button`
   ${({
     theme: {
       yoga: {
-        colors: { primary: primaryPallete, gray: grayPallete },
+        colors: { primary, elements },
       },
     },
   }) => `
@@ -45,12 +45,12 @@ const ToolbarIconButton = styled.button`
       height: 100%;
 
       path {
-        fill: ${grayPallete[7]};
+        fill: ${elements.selectionAndIcons};
       }
 
       &:hover {
         path {
-          fill: ${primaryPallete[3]};
+          fill: ${primary};
         }
       }
     }

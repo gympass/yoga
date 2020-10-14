@@ -8,7 +8,7 @@ const Tab = styled(Link).attrs({
   ({
     theme: {
       yoga: {
-        colors: { primary, gray },
+        colors: { primary, text, elements },
       },
     },
   }) =>
@@ -22,17 +22,17 @@ const Tab = styled(Link).attrs({
   padding-top: 10px;
   padding-bottom: 10px;
   text-decoration: none;
-  color: ${gray[7]};
+  color: ${text.secondary};
   border-top: 2px solid transparent;
 
   font-size: 12px;
 
   &.active {
-    border-top-color: ${primary[3]};
-    color: ${primary[3]};
+    border-top-color: ${primary};
+    color: ${primary};
 
     svg {
-      fill: ${primary[3]};
+      fill: ${primary};
     }
   }
 
@@ -40,7 +40,7 @@ const Tab = styled(Link).attrs({
     width: 32px;
     height: 32px;
     margin-bottom: 4px;
-    fill: ${gray[7]};
+    fill: ${elements.selectionAndIcons};
   }
 `,
 );

@@ -4,7 +4,7 @@ const TabBar = styled.nav(
   ({
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { elements, text },
       },
     },
   }) => `
@@ -16,8 +16,8 @@ const TabBar = styled.nav(
   width: 100%;
   
   background-color: #fff;
-  box-shadow: 0 -2px 2px ${grayPallete[1]};
-  color: ${grayPallete[7]};
+  box-shadow: 0 -2px 2px ${elements.lineAndBorders};
+  color: ${text.secondary};
 
   z-index: 2;
 

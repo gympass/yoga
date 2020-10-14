@@ -22,13 +22,13 @@ const Preview = styled.div`
   ${({
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { white, elements },
       },
     },
   }) => `
-    background-color: ${grayPallete[0]};
+    background-color: ${white};
     border-radius: 5px;
-    border: 1px solid ${grayPallete[3]};
+    border: 1px solid ${elements.lineAndBorders};
 
     textarea {
       outline: none;
@@ -42,17 +42,17 @@ const Component = styled.div`
     darkMode,
     theme: {
       yoga: {
-        colors: { white, dark, primary },
+        colors: { white, text, primary },
       },
     },
   }) => `
     font-family: 'Rubik';
     padding: 50px;
-    background-color: ${darkMode ? dark : white};
+    background-color: ${darkMode ? text.primary : white};
     transition: all 0.3s ease-in-out;
 
     ${YogaComponents.Col} {
-      background-color: ${primary[1]};
+      background-color: ${primary};
       border: 1px solid;
     }
 
@@ -80,11 +80,11 @@ const Usage = styled.div`
     visible,
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { white },
       },
     },
   }) => `
-    background-color: ${grayPallete[0]};
+    background-color: ${white};
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     display: ${visible ? 'block' : 'none'};
