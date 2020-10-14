@@ -1,12 +1,9 @@
 import 'proxy-polyfill';
+import tokens from '@gympass/yoga-tokens';
 
-import baseTheme from '../../themes/BaseTheme';
+import theme from '../../theme';
 
-const skeleton = baseTheme({
-  primary: 'primary',
-  secondary: 'secondary',
-  tertiary: 'tertiary',
-});
+const skeleton = theme(tokens);
 
 const CACHE_PLACEHOLDER = null;
 
