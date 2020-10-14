@@ -19,15 +19,15 @@ const Dropdown = ({
     border: {
       width: borders.small,
       radius: radii.rounded,
-      color: colors.gray[4],
+      color: colors.elements.lineAndBorders,
     },
   },
   arrow: {
-    fill: colors.gray[7],
+    fill: colors.elements.lineAndBorders,
   },
   input: {
     font: {
-      color: colors.gray[7],
+      color: colors.elements.selectionAndIcons,
       size: fontSizes.small,
       lineHeight: lineHeights.small,
     },
@@ -47,7 +47,7 @@ const Dropdown = ({
         bottomLeft: radii.rounded,
       },
       width: borders.small,
-      color: colors.dark,
+      color: colors.text.primary,
     },
   },
   option: {
@@ -61,7 +61,7 @@ const Dropdown = ({
     },
     border: {
       width: borders.small,
-      color: colors.gray[1],
+      color: colors.elements.backgroundAndDisabled,
       radius: {
         topLeft: radii.sharp,
         topRight: radii.sharp,
@@ -70,7 +70,7 @@ const Dropdown = ({
       },
     },
     font: {
-      color: colors.gray.dark,
+      color: colors.text.primary,
       size: fontSizes.small,
       lineHeight: lineHeights.small,
       weight: fontWeights.regular,
@@ -119,50 +119,50 @@ const Dropdown = ({
   hover: {
     selector: {
       border: {
-        color: colors.dark,
+        color: colors.text.primary,
       },
     },
     option: {
-      backgroundColor: colors.gray[1],
+      backgroundColor: colors.elements.backgroundAndDisabled,
     },
   },
   disabled: {
     selector: {
       border: {
-        color: colors.gray[3],
+        color: colors.elements.backgroundAndDisabled,
       },
     },
     input: {
       font: {
-        color: colors.gray[3],
+        color: colors.elements.backgroundAndDisabled,
       },
     },
     arrow: {
-      fill: colors.gray[3],
+      fill: colors.elements.backgroundAndDisabled,
     },
   },
   selected: {
     selector: {
       border: {
-        color: colors.dark,
+        color: colors.text.primary,
       },
     },
     arrow: {
-      fill: colors.primary[3],
+      fill: colors.primary,
     },
     input: {
       font: {
-        color: colors.dark,
+        color: colors.text.primary,
       },
     },
     optionsList: {
       border: {
-        color: colors.dark,
+        color: colors.text.primary,
       },
     },
     option: {
       font: {
-        color: colors.dark,
+        color: colors.text.primary,
         weight: fontWeights.bold,
       },
     },
