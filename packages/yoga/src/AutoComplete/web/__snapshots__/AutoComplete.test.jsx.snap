@@ -2,45 +2,49 @@
 
 exports[`<AutoComplete /> Snapshots should match with a full width component 1`] = `
 .c3 {
+  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
   outline: none;
-  width: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   border: none;
   box-sizing: border-box;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 16px;
   color: #41414A;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  height: 100%;
 }
 
-.c3:focus-within,
 .c3:focus {
   color: #41414A;
 }
 
-.c3:focus-within ~ legend,
 .c3:focus ~ legend {
   max-width: 1000px;
   padding: 0 2px;
 }
 
-.c3:focus-within ~ label,
 .c3:focus ~ label {
-  -webkit-transform: translateY(-140%);
-  -ms-transform: translateY(-140%);
-  transform: translateY(-140%);
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  background-color: #FFFFFF;
-  padding-left: 4px;
-  padding-right: 4px;
   font-weight: 700;
   color: #41414A;
 }
@@ -76,14 +80,16 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 }
 
 .c2 {
-  height: 52px;
   position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 52px;
+  padding-left: 12px;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
   border-color: #D3D3E2;
-  padding-left: 16px;
-  width: 100%;
 }
 
 .c2:hover,
@@ -96,10 +102,8 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   padding: 0;
   max-width: 0px;
   width: auto;
-  height: 14px;
+  height: 0;
   font-weight: normal;
-  -webkit-transition: max-width 50ms ease 0;
-  transition: max-width 50ms ease 0;
   visibility: hidden;
   font-size: 12px;
   -webkit-letter-spacing: normal;
@@ -124,16 +128,14 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
+  top: 16px;
   left: 16px;
-  top: 12px;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -165,7 +167,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
     <div
       class="c1"
     >
-      <div
+      <fieldset
         class="c2"
         label="Label"
       >
@@ -193,7 +195,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
           </span>
         </legend>
         
-      </div>
+      </fieldset>
     </div>
   </div>
 </div>
@@ -201,45 +203,49 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 
 exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 .c3 {
+  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
   outline: none;
-  width: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   border: none;
   box-sizing: border-box;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 16px;
   color: #41414A;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  height: 100%;
 }
 
-.c3:focus-within,
 .c3:focus {
   color: #41414A;
 }
 
-.c3:focus-within ~ legend,
 .c3:focus ~ legend {
   max-width: 1000px;
   padding: 0 2px;
 }
 
-.c3:focus-within ~ label,
 .c3:focus ~ label {
-  -webkit-transform: translateY(-140%);
-  -ms-transform: translateY(-140%);
-  transform: translateY(-140%);
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  background-color: #FFFFFF;
-  padding-left: 4px;
-  padding-right: 4px;
   font-weight: 700;
   color: #41414A;
 }
@@ -275,14 +281,16 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 }
 
 .c2 {
-  height: 52px;
   position: relative;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 52px;
+  padding-left: 12px;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
   border-color: #D3D3E2;
-  padding-left: 16px;
-  width: 320px;
 }
 
 .c2:hover,
@@ -295,10 +303,8 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   padding: 0;
   max-width: 0px;
   width: auto;
-  height: 14px;
+  height: 0;
   font-weight: normal;
-  -webkit-transition: max-width 50ms ease 0;
-  transition: max-width 50ms ease 0;
   visibility: hidden;
   font-size: 12px;
   -webkit-letter-spacing: normal;
@@ -323,16 +329,14 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
+  top: 16px;
   left: 16px;
-  top: 12px;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -364,7 +368,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
     <div
       class="c1"
     >
-      <div
+      <fieldset
         class="c2"
         label="Label"
       >
@@ -392,7 +396,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
           </span>
         </legend>
         
-      </div>
+      </fieldset>
     </div>
   </div>
 </div>
@@ -400,45 +404,49 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 
 exports[`<AutoComplete /> Snapshots should match with full width options list 1`] = `
 .c3 {
+  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
   outline: none;
-  width: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   border: none;
   box-sizing: border-box;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 16px;
   color: #41414A;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  height: 100%;
 }
 
-.c3:focus-within,
 .c3:focus {
   color: #41414A;
 }
 
-.c3:focus-within ~ legend,
 .c3:focus ~ legend {
   max-width: 1000px;
   padding: 0 2px;
 }
 
-.c3:focus-within ~ label,
 .c3:focus ~ label {
-  -webkit-transform: translateY(-140%);
-  -ms-transform: translateY(-140%);
-  transform: translateY(-140%);
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  background-color: #FFFFFF;
-  padding-left: 4px;
-  padding-right: 4px;
   font-weight: 700;
   color: #41414A;
 }
@@ -469,17 +477,17 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c3 ~ label {
-  -webkit-transform: translateY(-140%);
-  -ms-transform: translateY(-140%);
-  transform: translateY(-140%);
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  background-color: #FFFFFF;
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 .c3[type="number"]::-webkit-outer-spin-button,
@@ -492,14 +500,16 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c2 {
-  height: 52px;
   position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 52px;
+  padding-left: 12px;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
   border-color: #D3D3E2;
-  padding-left: 16px;
-  width: 100%;
 }
 
 .c2:hover,
@@ -512,10 +522,8 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   padding: 0;
   max-width: 0px;
   width: auto;
-  height: 14px;
+  height: 0;
   font-weight: normal;
-  -webkit-transition: max-width 50ms ease 0;
-  transition: max-width 50ms ease 0;
   visibility: hidden;
   font-size: 12px;
   -webkit-letter-spacing: normal;
@@ -540,16 +548,14 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
+  top: 16px;
   left: 16px;
-  top: 12px;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -563,7 +569,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c8 {
   position: absolute;
-  top: 0px;
+  top: 6;
   right: 0;
   padding-right: 16px;
   padding-left: 8px;
@@ -665,7 +671,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
     <div
       class="c1"
     >
-      <div
+      <fieldset
         class="c2"
         label="Label"
       >
@@ -700,7 +706,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
         >
           <svg />
         </div>
-      </div>
+      </fieldset>
     </div>
     <ul
       aria-labelledby="downshift-3-label"
@@ -743,45 +749,49 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 .c3 {
+  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
   outline: none;
-  width: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   border: none;
   box-sizing: border-box;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 16px;
+  padding-left: 16px;
   color: #41414A;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  height: 100%;
 }
 
-.c3:focus-within,
 .c3:focus {
   color: #41414A;
 }
 
-.c3:focus-within ~ legend,
 .c3:focus ~ legend {
   max-width: 1000px;
   padding: 0 2px;
 }
 
-.c3:focus-within ~ label,
 .c3:focus ~ label {
-  -webkit-transform: translateY(-140%);
-  -ms-transform: translateY(-140%);
-  transform: translateY(-140%);
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  background-color: #FFFFFF;
-  padding-left: 4px;
-  padding-right: 4px;
   font-weight: 700;
   color: #41414A;
 }
@@ -812,17 +822,17 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c3 ~ label {
-  -webkit-transform: translateY(-140%);
-  -ms-transform: translateY(-140%);
-  transform: translateY(-140%);
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  background-color: #FFFFFF;
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 .c3[type="number"]::-webkit-outer-spin-button,
@@ -835,14 +845,16 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c2 {
-  height: 52px;
   position: relative;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 52px;
+  padding-left: 12px;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
   border-color: #D3D3E2;
-  padding-left: 16px;
-  width: 320px;
 }
 
 .c2:hover,
@@ -855,10 +867,8 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   padding: 0;
   max-width: 0px;
   width: auto;
-  height: 14px;
+  height: 0;
   font-weight: normal;
-  -webkit-transition: max-width 50ms ease 0;
-  transition: max-width 50ms ease 0;
   visibility: hidden;
   font-size: 12px;
   -webkit-letter-spacing: normal;
@@ -883,16 +893,14 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
+  top: 16px;
   left: 16px;
-  top: 12px;
   font-size: 14px;
   font-weight: 400;
   color: #9898A6;
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -906,7 +914,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c8 {
   position: absolute;
-  top: 0px;
+  top: 6;
   right: 0;
   padding-right: 16px;
   padding-left: 8px;
@@ -1008,7 +1016,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
     <div
       class="c1"
     >
-      <div
+      <fieldset
         class="c2"
         label="Label"
       >
@@ -1043,7 +1051,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
         >
           <svg />
         </div>
-      </div>
+      </fieldset>
     </div>
     <ul
       aria-labelledby="downshift-2-label"

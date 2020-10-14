@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-const Fieldset = styled.div`
-  height: 52px;
+const Fieldset = styled.fieldset`
   position: relative;
+  margin: 0;
+  padding: 0;
 
   ${({
     error,
@@ -15,12 +16,15 @@ const Fieldset = styled.div`
       },
     },
   }) => `
+    width: ${full ? '100%' : `${input.width}px`};
+    height: ${input.height}px;
+
+    padding-left: ${input.label.padding.left + input.border.radius}px;
+
     border-radius: ${input.border.radius}px;
     border-width: ${input.border.width}px;
     border-style: solid;
     border-color: ${error ? colors.negative[1] : input.border.color.default};
-    padding-left: 16px;
-    width: ${full ? '100%' : `${input.width}px`};
 
     &:hover, &:focus-within {
       border-color: ${error ? colors.negative[1] : input.border.color.typed};

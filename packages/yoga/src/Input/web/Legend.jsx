@@ -7,9 +7,8 @@ const StyledLegend = styled.legend`
   padding: 0;
   max-width: 0px;
   width: auto;
-  height: 14px;
+  height: 0;
   font-weight: normal;
-  transition: max-width 50ms ease 0;
   visibility: hidden;
 
   ${({

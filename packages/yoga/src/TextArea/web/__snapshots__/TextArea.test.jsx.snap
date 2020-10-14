@@ -9,6 +9,31 @@ exports[`<TextArea /> should match snapshot 1`] = `
   margin-top: 4px;
 }
 
+.c3 {
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  pointer-events: none;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 16px;
+  left: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9898A6;
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+}
+
 .c0 {
   display: inline-block;
   cursor: text;
@@ -16,20 +41,18 @@ exports[`<TextArea /> should match snapshot 1`] = `
 }
 
 .c1 {
-  height: 52px;
   position: relative;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 52px;
+  padding-left: 12px;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
   border-color: #D3D3E2;
-  padding-left: 16px;
-  width: 320px;
   height: 88px;
   box-sizing: border-box;
-  padding-top: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
-  padding-left: 16px;
 }
 
 .c1:hover,
@@ -38,49 +61,51 @@ exports[`<TextArea /> should match snapshot 1`] = `
 }
 
 .c2 {
+  width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
   outline: none;
-  width: 85%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   border: none;
   box-sizing: border-box;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
   color: #41414A;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  height: 100%;
   resize: none;
   height: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
-.c2:focus-within,
 .c2:focus {
   color: #41414A;
 }
 
-.c2:focus-within ~ legend,
 .c2:focus ~ legend {
   max-width: 1000px;
   padding: 0 2px;
 }
 
-.c2:focus-within ~ label,
 .c2:focus ~ label {
-  -webkit-transform: translateY(-140%);
-  -ms-transform: translateY(-140%);
-  transform: translateY(-140%);
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  background-color: #FFFFFF;
-  padding-left: 4px;
-  padding-right: 4px;
   font-weight: 700;
   color: #41414A;
 }
@@ -115,39 +140,11 @@ exports[`<TextArea /> should match snapshot 1`] = `
   box-shadow: none;
 }
 
-.c3 {
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  pointer-events: none;
-  position: absolute;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  -webkit-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  transform: translateY(5px);
-  left: 16px;
-  top: 12px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #9898A6;
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  left: 20px;
-}
-
 <div>
   <div
     class="c0"
   >
-    <div
+    <fieldset
       class="c1"
       label=""
     >
@@ -159,7 +156,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
         class="c3"
       />
       
-    </div>
+    </fieldset>
     <div
       class="c4"
     />

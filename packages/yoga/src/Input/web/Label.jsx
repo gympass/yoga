@@ -9,22 +9,21 @@ const StyledLabel = styled.label`
   ${({
     theme: {
       yoga: {
+        transition,
         components: { input },
       },
     },
   }) => css`
-    -webkit-transform: translateY(5px);
-    -ms-transform: translateY(5px);
-    transform: translateY(5px);
-    left: 16px;
-    top: 12px;
+    top: ${input.padding.top}px;
+    left: ${input.padding.left}px;
 
     font-size: ${input.label.font.size.default}px;
     font-weight: ${input.label.font.weight.default};
     color: ${input.label.color.default};
 
-    transition-duration: 500ms;
-    transition-timing-function: cubic-bezier(0, 0.75, 0.1, 1);
+    transition-property: transform, font-size;
+    transition-duration: ${transition.duration[1]}ms;
+    transition-timing-function: cubic-bezier(${transition.timing[0].join()});
   `}
 
   ${({ error, theme: { yoga } }) =>

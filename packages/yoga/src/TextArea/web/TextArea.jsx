@@ -21,31 +21,11 @@ const Root = styled.div`
 const StyledFieldSet = styled(FieldSet)`
   height: 88px;
   box-sizing: border-box;
-
-  ${({
-    theme: {
-      yoga: {
-        components: { textarea },
-      },
-    },
-  }) => `
-    padding-top: ${textarea.padding.top}px;
-    padding-right: ${textarea.padding.right}px;
-    padding-bottom: ${textarea.padding.bottom}px;
-    padding-left: ${textarea.padding.left}px;
-   `}
 `;
 
 const StyledField = styled(Field)`
   resize: none;
   height: 100%;
-
-  padding-top: 0;
-  padding-bottom: 0;
-`;
-
-const StyledLabel = styled(Label)`
-  left: 20px;
 `;
 
 /**
@@ -113,9 +93,9 @@ const TextArea = React.forwardRef(
             }}
           />
 
-          <StyledLabel error={error} disabled={disabled} {...props}>
+          <Label error={error} disabled={disabled} {...props}>
             {label}
-          </StyledLabel>
+          </Label>
 
           {label && <Legend>{label}</Legend>}
         </StyledFieldSet>

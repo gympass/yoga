@@ -1,31 +1,41 @@
 import styled, { css } from 'styled-components';
 
+const ICON_SIZE = 24;
+
 const labelTransition = css`
   ${({
     theme: {
       yoga: {
         transition,
-        colors,
         components: { input },
       },
     },
   }) => `
-    transform: translateY(-140%);
+    transform: translateY(-${input.height / 2 - 2}px);
+    transition-property: transform, font-size;
     transition-duration: ${transition.duration[1]}ms;
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
+
     font-size: ${input.label.font.size.typed}px;
-    background-color: ${colors.white};
-    padding-left: ${input.label.padding.left}px;
-    padding-right: ${input.label.padding.right}px;
   `}
 `;
 
 const Field = styled.input`
+  width: 100%;
+
   appearance: none;
   background-color: transparent;
   outline: none;
-  width: 85%;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  border: none;
+  box-sizing: border-box;
+
   ${({
+    cleanable,
     error,
     value,
     theme: {
@@ -36,14 +46,19 @@ const Field = styled.input`
       },
     },
   }) => css`
-    border: none;
-    box-sizing: border-box;
+    height: ${input.height}px;
+    padding-top: ${input.padding.top}px;
+    padding-right: ${
+      cleanable ? ICON_SIZE + input.padding.right : input.padding.right
+    }px;
+    padding-bottom: ${input.padding.bottom}px;
+    padding-left: ${input.padding.left}px;
+
     color: ${input.font.color.focus};
     font-family: ${baseFont.family}, sans-serif;
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
-    height: 100%;
-    &:focus-within,
+
     &:focus {
       color: ${input.font.color.focus};
 
