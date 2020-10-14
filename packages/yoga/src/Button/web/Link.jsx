@@ -61,28 +61,8 @@ const Link = styled(StyledButton)`
 const ButtonLink = props => <Link {...props} />;
 
 ButtonLink.propTypes = {
-  /** style the card following the theme (primary, secondary, vibin, hope,
-   * energy, relax, peace, verve, uplift, deepPurple, deep, stamina, dark,
-   * medium, light, clear, white) */
-  variant: oneOf([
-    'primary',
-    'secondary',
-    'vibin',
-    'hope',
-    'energy',
-    'relax',
-    'peace',
-    'verve',
-    'uplift',
-    'deepPurple',
-    'stamina',
-    'dark',
-    'medium',
-    'deep',
-    'light',
-    'clear',
-    'white',
-  ]),
+  /** style the link following the theme (primary, secondary) */
+  variant: oneOf(['primary', 'secondary']),
   inverted: bool,
   disabled: bool,
 };

@@ -1,24 +1,27 @@
+import React from 'react';
 import styled from 'styled-components';
+import { oneOf, bool } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
 
 import Button from './Button';
 
-const ButtonOutline = styled(Button)`
+const Outline = styled(Button)`
   ${({
     inverted,
+    variant,
     theme: {
       yoga: {
-        colors: { white },
+        colors: { white, [variant]: color },
         components: { button },
       },
     },
   }) => `
     background-color: ${button.types.outline.backgroundColor.default};
-    border-color: ${button.types.outline.font.default.color};
-    color: ${button.types.outline.font.default.color};
+    border-color: ${color};
+    color: ${color};
 
     &:not([disabled]):hover, &:not([disabled]):focus {
-      background-color: ${button.types.outline.backgroundColor.hover};
+      background-color: ${hexToRgb(color, 0.25)};
       box-shadow: none;
     }
 
@@ -53,5 +56,20 @@ const ButtonOutline = styled(Button)`
     }
   `}
 `;
+
+const ButtonOutline = props => <Outline {...props} />;
+
+ButtonOutline.propTypes = {
+  /** style the link following the theme (primary, secondary) */
+  variant: oneOf(['primary', 'secondary']),
+  inverted: bool,
+};
+
+ButtonOutline.defaultProps = {
+  variant: 'primary',
+  inverted: false,
+};
+
+ButtonOutline.displayName = 'Button.Outline';
 
 export default ButtonOutline;
