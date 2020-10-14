@@ -28,13 +28,18 @@ const StyledLabel = styled.label`
   `}
 
   ${({ error, theme: { yoga } }) =>
-    error ? css `color: ${yoga.colors.negative[1]}; ` : ''
-  };
+    error
+      ? css`
+          color: ${yoga.colors.negative[1]};
+        `
+      : ''};
 
   ${({ disabled, theme: { yoga } }) =>
-    disabled ? css  `color: ${yoga.colors.disabled.background};` : ''
-  };
-
+    disabled
+      ? css`
+          color: ${yoga.colors.disabled.background};
+        `
+      : ''};
 `;
 
 export default StyledLabel;

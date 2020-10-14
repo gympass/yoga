@@ -19,7 +19,7 @@ const Fieldset = styled.div`
     border-width: ${input.border.width}px;
     border-style: solid;
     border-color: ${error ? colors.negative[1] : input.border.color.default};
-    padding-left: ${input.label.padding.left + input.border.radius}px;
+    padding-left: 16px;
     width: ${full ? '100%' : `${input.width}px`};
 
     &:hover, &:focus-within {

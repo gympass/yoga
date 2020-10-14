@@ -10,11 +10,13 @@ const labelTransition = css`
       },
     },
   }) => `
-    transform: translateY(-130%);
+    transform: translateY(-140%);
     transition-duration: ${transition.duration[1]}ms;
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
     font-size: ${input.label.font.size.typed}px;
     background-color: ${colors.white};
+    padding-left: ${input.label.padding.left}px;
+    padding-right: ${input.label.padding.right}px;
   `}
 `;
 
