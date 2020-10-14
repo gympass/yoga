@@ -97,7 +97,11 @@ const ListItem = withTheme(
     <Item>
       <Wrapper>
         {Icon && (
-          <Icon fill={yogaTheme.yoga.colors.gray[7]} width={16} height={16} />
+          <Icon
+            fill={yogaTheme.yoga.colors.elements.selectionAndIcons}
+            width={16}
+            height={16}
+          />
         )}
         <ItemText as="span">{text}</ItemText>
       </Wrapper>

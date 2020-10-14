@@ -44,9 +44,14 @@ const Border = styled.span`
   width: 100%;
 
   height: ${PLAN_LINE_HEIGHT}px;
-  background-color: ${({ variant }) =>
-    theme.components.card.plan.colors[variant] ||
-    theme.components.card.plan.colors.deep};
+  background-color: ${({
+    variant,
+    theme: {
+      yoga: {
+        colors: { deepPurple, [variant]: color = deepPurple },
+      },
+    },
+  }) => color};
 `;
 
 const PlanCard = ({ children, variant, ...rest }) => (
@@ -58,23 +63,33 @@ const PlanCard = ({ children, variant, ...rest }) => (
 
 PlanCard.propTypes = {
   children: node,
-  /** change the border top color */
+  /** style the card border top color following the theme (primary, secondary,
+   * vibin, hope, energy, relax, peace, verve, uplift, deepPurple, deep,
+   * stamina, dark, medium, light, clear, white) */
   variant: oneOf([
+    'primary',
+    'secondary',
     'vibin',
     'hope',
-    'verve',
-    'light',
     'energy',
-    'medium',
-    'stamina',
     'relax',
+    'peace',
+    'verve',
+    'uplift',
+    'deepPurple',
+    'stamina',
+    'dark',
+    'medium',
     'deep',
+    'light',
+    'clear',
+    'white',
   ]),
 };
 
 PlanCard.defaultProps = {
   children: undefined,
-  variant: undefined,
+  variant: 'deepPurple',
 };
 
 PlanCard.displayName = 'PlanCard';
