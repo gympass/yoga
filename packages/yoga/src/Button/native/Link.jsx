@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { oneOf, bool } from 'prop-types';
+import { hexToRgb } from '@gympass/yoga-common';
 
 import withTouchable from './withTouchable';
 import { Label } from './Button';
@@ -13,7 +14,7 @@ const Link = styled(Label)`
     variant,
     theme: {
       yoga: {
-        colors: { white, gray, [variant]: color },
+        colors: { white, text, [variant]: color },
         components: {
           button: {
             types: { link },
@@ -24,21 +25,21 @@ const Link = styled(Label)`
   }) => `
     margin-top: ${link.margin.top}px;
     margin-bottom: ${link.margin.bottom}px;
-    color: ${color[3]};
+    color: ${color};
 
     ${disabled ? `color: ${link.font.disabled.color};` : ''}
-    ${!disabled && pressed ? `color: ${color[2]};` : ''}
+    ${!disabled && pressed ? `color: ${hexToRgb(color, 0.75)};` : ''}
 
     ${
       inverted && !disabled
         ? `
         color: ${white};
-        ${!disabled && pressed ? `color: ${gray[3]};` : ''}
+        ${!disabled && pressed ? `color: ${text.secondary};` : ''}
       `
         : ''
     }
 
-    ${inverted && pressed ? `color: ${gray[3]};` : ''}
+    ${inverted && pressed ? `color: ${text.secondary};` : ''}
   `}
 `;
 
