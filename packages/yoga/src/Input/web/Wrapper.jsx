@@ -40,10 +40,10 @@ const Wrapper = styled.div`
     ${
       error
         ? `
-      border-color: ${colors.negative[1]};
+      border-color: ${colors.feedback.attention[1]};
 
       fieldset {
-        border-color: ${colors.negative[1]};
+        border-color: ${colors.feedback.attention[1]};
       }
     `
         : ''
@@ -85,7 +85,7 @@ const Wrapper = styled.div`
           ? `
           fieldset {
             border-color: ${
-              error ? colors.negative[1] : input.border.color.typed
+              error ? colors.feedback.attention[1] : input.border.color.typed
             };
 
             ${
@@ -96,7 +96,7 @@ const Wrapper = styled.div`
           }`
           : `
           border-color: ${
-            error ? colors.negative[1] : input.border.color.typed
+            error ? colors.feedback.attention[1] : input.border.color.typed
           };
 
           ${

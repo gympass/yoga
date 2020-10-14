@@ -18,7 +18,7 @@ const Wrapper = styled.div`
     display: flex;
     margin-top: ${input.helper.margin.top}px;
 
-    ${error ? `color: ${colors.negative[1]};` : ''}
+    ${error ? `color: ${colors.feedback.attention[1]};` : ''}
     ${disabled ? `color: ${colors.elements.backgroundAndDisabled};` : ''}
   `}
 `;

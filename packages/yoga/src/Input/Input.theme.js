@@ -10,8 +10,8 @@ const Input = ({
   height: 52,
   font: {
     color: {
-      default: colors.gray.medium,
-      focus: colors.gray.darker,
+      default: colors.text.secondary,
+      focus: colors.text.primary,
     },
     size: fontSizes.small,
     weight: fontWeights.regular,
@@ -20,8 +20,8 @@ const Input = ({
     width: borders.small,
     radius: radii.rounded,
     color: {
-      default: colors.gray[4],
-      typed: colors.gray.darker,
+      default: colors.elements.lineAndBorders,
+      typed: colors.text.primary,
     },
   },
   padding: {
@@ -32,8 +32,8 @@ const Input = ({
   },
   label: {
     color: {
-      default: colors.gray.medium,
-      focus: colors.gray.darker,
+      default: colors.text.secondary,
+      focus: colors.text.primary,
     },
     padding: {
       right: spacing.xxxsmall,
@@ -51,7 +51,7 @@ const Input = ({
     },
   },
   helper: {
-    color: colors.gray.medium,
+    color: colors.text.secondary,
     margin: {
       top: spacing.xxxsmall,
     },

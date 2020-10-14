@@ -67,7 +67,9 @@ const Field = styled.input`
         ${labelTransition}
 
         font-weight: ${input.label.font.weight.typed};
-        color: ${error ? `${colors.negative[1]}` : `${colors.text.primary}`};
+        color: ${
+          error ? `${colors.feedback.attention[1]}` : `${colors.text.primary}`
+        };
       }
     }
 

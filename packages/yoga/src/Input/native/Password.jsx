@@ -55,7 +55,7 @@ const Password = ({
 
   const iconColor = () => {
     if (disabled) {
-      return colors.disabled.background;
+      return colors.elements.backgroundAndDisabled;
     }
 
     if (focused) {

@@ -35,7 +35,7 @@ const StyledLabel = styled.label`
     transition-duration: ${transition.duration[1]}ms;
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
 
-    ${error ? `color: ${colors.negative[1]};` : ''}
+    ${error ? `color: ${colors.feedback.attention[1]};` : ''}
     ${disabled ? `color: ${colors.elements.backgroundAndDisabled};` : ''}
   `}
 `;
