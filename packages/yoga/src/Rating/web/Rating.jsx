@@ -125,7 +125,7 @@ const Rating = ({
                 }}
               />
               <Icon
-                fill={colors.gray[5]}
+                fill={colors.elements.lineAndBorders}
                 width={dWidth}
                 height={iconSize}
                 viewBox={`${wViewBox} 0 ${dViewBox} ${iconSize}`}
@@ -139,7 +139,7 @@ const Rating = ({
 
         return (
           <Icon
-            fill={colors.gray[5]}
+            fill={colors.elements.lineAndBorders}
             key={`unfilled-${i}`}
             width={iconSize}
             height={iconSize}
