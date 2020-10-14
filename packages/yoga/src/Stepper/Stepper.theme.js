@@ -5,15 +5,15 @@ const Stepper = ({ colors, spacing, fontSizes, fontWeights, radii }) => ({
   },
   line: {
     backgroundColor: {
-      active: colors.primary[3],
-      inactive: colors.gray[3],
+      active: colors.primary,
+      inactive: colors.elements.backgroundAndDisabled,
     },
   },
   dot: {
     radius: radii.circle,
     backgroundColor: {
-      active: colors.primary[3],
-      inactive: colors.gray[3],
+      active: colors.primary,
+      inactive: colors.elements.backgroundAndDisabled,
     },
   },
   label: {
@@ -22,8 +22,8 @@ const Stepper = ({ colors, spacing, fontSizes, fontWeights, radii }) => ({
       size: fontSizes.xsmall,
     },
     color: {
-      active: colors.primary[3],
-      inactive: colors.gray[7],
+      active: colors.primary,
+      inactive: colors.elements.selectionAndIcons,
     },
   },
 });
