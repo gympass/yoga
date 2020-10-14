@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const StyledLabel = styled.label`
+const Label = styled.label`
   letter-spacing: normal;
   pointer-events: none;
   position: absolute;
@@ -41,4 +41,4 @@ const StyledLabel = styled.label`
       : ''};
 `;
 
-export default StyledLabel;
+export default Label;

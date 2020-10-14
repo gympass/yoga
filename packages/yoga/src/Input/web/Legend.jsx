@@ -5,7 +5,7 @@ import { node } from 'prop-types';
 const StyledLegend = styled.legend`
   position: relative;
   padding: 0;
-  max-width: 0px;
+  max-width: 0;
   width: auto;
   height: 0;
   font-weight: normal;
