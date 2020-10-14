@@ -30,15 +30,17 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
 
 .c2:focus-within ~ label,
 .c2:focus ~ label {
-  -webkit-transform: translateY(-130%);
-  -ms-transform: translateY(-130%);
-  transform: translateY(-130%);
+  -webkit-transform: translateY(-140%);
+  -ms-transform: translateY(-140%);
+  transform: translateY(-140%);
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   background-color: #FFFFFF;
+  padding-left: 4px;
+  padding-right: 4px;
   font-weight: 700;
   color: #41414A;
 }
@@ -80,7 +82,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #D3D3E2;
-  padding-left: 12px;
+  padding-left: 16px;
   width: 320px;
 }
 
