@@ -44,7 +44,7 @@ const CheckIn = ({
   rating,
   theme: {
     yoga: {
-      colors: { gray },
+      colors: { elements },
     },
   },
   ...rest
@@ -55,7 +55,7 @@ const CheckIn = ({
         <Avatar source={avatar} />
       ) : (
         <Placeholder>
-          <Building width={24} height={26} fill={gray[3]} />
+          <Building width={24} height={26} fill={elements.selectionAndIcons} />
         </Placeholder>
       )}
       <Text.Tiny>{distance}</Text.Tiny>

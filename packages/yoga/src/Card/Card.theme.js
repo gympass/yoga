@@ -67,7 +67,7 @@ const Card = ({
   },
   event: {
     icon: {
-      fill: colors.dark,
+      fill: colors.text.primary,
     },
     info: {
       padding: {
@@ -84,11 +84,12 @@ const Card = ({
       },
       place: {
         height: spacing.medium,
-        color: colors.gray[8],
+        color: colors.text.secondary,
         marginBottom: spacing.xxsmall,
       },
     },
     date: {
+      backgroundColor: colors.secondary,
       radius: radii.rounded,
       dayOfWeek: {
         fontWeight: fontWeights.regular,

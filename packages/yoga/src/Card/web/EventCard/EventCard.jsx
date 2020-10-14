@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { withTheme, css } from 'styled-components';
-import { oneOf, shape, string } from 'prop-types';
+import { shape, string } from 'prop-types';
 import { Clock } from '@gympass/yoga-icons';
 
 import Card from '../Card';
@@ -63,10 +63,11 @@ const EventTime = styled.div`
 
 const DateInfo = styled.div`
   ${({
-    variant,
     theme: {
       yoga: {
-        colors: { [variant]: color },
+        components: {
+          card: { event },
+        },
       },
     },
   }) => `
@@ -77,7 +78,7 @@ const DateInfo = styled.div`
     flex-shrink: 0;
 
     width: 56px;
-    background-color: ${color[2]};
+    background-color: ${event.date.backgroundColor};
   `}
 `;
 
@@ -114,7 +115,6 @@ const Month = styled(Text.Small)`
 const EventCard = ({
   event,
   date,
-  variant,
   theme: {
     yoga: {
       components: {
@@ -127,7 +127,7 @@ const EventCard = ({
   ...rest
 }) => (
   <Event {...rest}>
-    <DateInfo variant={variant}>
+    <DateInfo>
       <DayOfWeek inverted>{date.dayOfWeek}</DayOfWeek>
       <Text.H5 inverted>{date.day}</Text.H5>
       <Month inverted>{date.month}</Month>
@@ -158,12 +158,6 @@ EventCard.propTypes = {
     dayOfWeek: string,
     month: string,
   }).isRequired,
-  /** style the card following the theme (primary, secondary, tertiary) */
-  variant: oneOf(['primary', 'secondary', 'tertiary']),
-};
-
-EventCard.defaultProps = {
-  variant: 'secondary',
 };
 
 EventCard.displayName = 'EventCard';

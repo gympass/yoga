@@ -20,10 +20,9 @@ const CardShadow = styled.View(
 const CardStyled = styled.View(
   ({
     variant,
-    variantIntensity,
     theme: {
       yoga: {
-        colors: { [variant]: color = {} },
+        colors: { [variant]: color },
         components: { card },
       },
     },
@@ -35,9 +34,7 @@ const CardStyled = styled.View(
       ${card.padding.left}px;
 
     border-radius: ${card.radii}px;
-    background-color: ${
-      variant ? color[variantIntensity] : card.backgroundColor
-    };
+    background-color: ${variant ? color : card.backgroundColor};
     elevation: 4;
     overflow: hidden;
 `,
@@ -46,12 +43,11 @@ const CardStyled = styled.View(
 const Ribbon = styled.View`
   ${({
     variant,
-    variantIntensity,
     theme: {
       yoga: {
         components: { card },
         spacing,
-        colors: { gray, [variant]: color = {}, white, dark },
+        colors: { elements, [variant]: color, white, dark },
       },
     },
   }) => `
@@ -68,11 +64,7 @@ const Ribbon = styled.View`
     
     border-top-right-radius: ${card.ribbon.radius}px;
     border-bottom-right-radius: ${card.ribbon.radius}px;
-    background-color: ${
-      variant
-        ? color[typeof variantIntensity === 'number' ? variantIntensity : 3]
-        : gray[1]
-    };
+    background-color: ${variant ? color : elements.backgroundAndDisabled};
 
     color: ${variant ? white : dark};
   `}
@@ -95,10 +87,7 @@ const Card = ({ ribbon, children, ...rest }) => (
   <CardShadow>
     <CardStyled {...rest}>
       {Object.keys(ribbon).length > 0 && (
-        <Ribbon
-          variant={ribbon.variant}
-          variantIntensity={ribbon.variantIntensity}
-        >
+        <Ribbon variant={ribbon.variant}>
           <RibbonText variant={ribbon.variant}>{ribbon.text}</RibbonText>
         </Ribbon>
       )}
@@ -109,25 +98,62 @@ const Card = ({ ribbon, children, ...rest }) => (
 
 Card.propTypes = {
   /** text: the content inside the Card Ribbon
-   * variant: style the ribbon following the theme (primary, secondary, tertiary)
-   * variantIntensity: ribbon variant color intensity (0, 1, 2, 3) */
+   * variant: style the card following the theme (primary, secondary, vibin,
+   * hope, energy, relax, peace, verve, uplift, deepPurple, deep, stamina, dark,
+   * medium, light, clear, white) */
   ribbon: shape({
     text: string,
-    variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
-    variantIntensity: oneOf([0, 1, 2, 3]),
+    variant: oneOf([
+      '',
+      'primary',
+      'secondary',
+      'vibin',
+      'hope',
+      'energy',
+      'relax',
+      'peace',
+      'verve',
+      'uplift',
+      'deepPurple',
+      'stamina',
+      'dark',
+      'medium',
+      'deep',
+      'light',
+      'clear',
+      'white',
+    ]),
   }),
   children: node,
-  /** style the card following the theme (primary, secondary, tertiary) */
-  variant: oneOf(['', 'primary', 'secondary', 'tertiary']),
-  /** intensity of variant color (0, 1, 2, 3) */
-  variantIntensity: oneOf([0, 1, 2, 3]),
+  /** style the card following the theme (primary, secondary, vibin, hope,
+   * energy, relax, peace, verve, uplift, deepPurple, deep, stamina, dark,
+   * medium, light, clear, white) */
+  variant: oneOf([
+    '',
+    'primary',
+    'secondary',
+    'vibin',
+    'hope',
+    'energy',
+    'relax',
+    'peace',
+    'verve',
+    'uplift',
+    'deepPurple',
+    'stamina',
+    'dark',
+    'medium',
+    'deep',
+    'light',
+    'clear',
+    'white',
+  ]),
 };
 
 Card.defaultProps = {
   ribbon: {},
   children: null,
   variant: '',
-  variantIntensity: 3,
 };
 
 Card.displayName = 'Card';
