@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, oneOf, oneOfType, bool, node } from 'prop-types';
 import { TriangleAlert } from '@gympass/yoga-icons';
+import { hexToRgb } from '@gympass/yoga-common';
 
 const StyledTag = styled.div`
   justify-content: center;
@@ -24,8 +25,8 @@ const StyledTag = styled.div`
       ${tag.padding.bottom}px
       ${tag.padding.left}px;
 
-    background-color: ${color[0]};
-    color: ${color[1]};
+    background-color: ${hexToRgb(color, 0.25)};
+    color: ${color};
     border-radius: ${tag.border.radius}px;
 
     font-size: ${tag.font.size}px;
@@ -44,16 +45,13 @@ const Tag = ({
   variant,
   theme: {
     yoga: {
-      colors: {
-        gray: { 1: background, 8: text },
-        [variant]: color = [background, text],
-      },
+      colors: { text, [variant]: color = text.secondary },
     },
   },
   ...props
 }) => (
   <StyledTag color={color} {...props}>
-    {Icon && <Icon width={14} height={12} fill={color[1]} />}
+    {Icon && <Icon width={14} height={12} fill={color} />}
     {children}
   </StyledTag>
 );
@@ -61,8 +59,29 @@ const Tag = ({
 Tag.propTypes = {
   icon: oneOfType([bool, func]),
   full: bool,
-  /** '', positive, negative, informative, warning */
-  variant: oneOf(['', 'positive', 'negative', 'informative', 'warning']),
+  /** style the card following the theme (primary, secondary, vibin, hope,
+   * energy, relax, peace, verve, uplift, deepPurple, deep, stamina, dark,
+   * medium, light, clear, white) */
+  variant: oneOf([
+    '',
+    'primary',
+    'secondary',
+    'vibin',
+    'hope',
+    'energy',
+    'relax',
+    'peace',
+    'verve',
+    'uplift',
+    'deepPurple',
+    'stamina',
+    'dark',
+    'medium',
+    'deep',
+    'light',
+    'clear',
+    'white',
+  ]),
   children: node.isRequired,
 };
 

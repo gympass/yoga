@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, oneOf, oneOfType, bool, node } from 'prop-types';
+import { hexToRgb } from '@gympass/yoga-common';
 import { TriangleAlert } from '@gympass/yoga-icons';
 
 import { Text } from '../..';
@@ -22,7 +23,7 @@ const StyledTag = styled.View`
       ${tag.padding.bottom}px
       ${tag.padding.left}px;
 
-    background-color: ${color[0]};
+    background-color: ${hexToRgb(color, 0.25)};
     border-radius: ${tag.border.radius}px;
   `}
 `;
@@ -42,7 +43,7 @@ const StyledText = styled(Text.Bold)`
       },
     },
   }) => `
-    color: ${color[1]};
+    color: ${color};
 
     font-size: ${tag.font.size}px;
   `}
@@ -56,10 +57,7 @@ const Tag = ({
   theme: {
     yoga: {
       components: { tag },
-      colors: {
-        gray: { 1: background, 8: text },
-        [variant]: color = [background, text],
-      },
+      colors: { text, [variant]: color = text.secondary },
     },
   },
   ...props
@@ -70,7 +68,7 @@ const Tag = ({
         <Icon
           width={14}
           height={12}
-          fill={color[1]}
+          fill={color}
           style={{ marginRight: tag.icon.margin.right + 1 }}
         />
       )}
