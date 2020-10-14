@@ -52,7 +52,7 @@ const ProgressValue = styled.View`
     width,
     theme: {
       yoga: {
-        colors: { [variant]: color = {} },
+        colors: { [variant]: color },
         components: { progress },
       },
     },
@@ -60,7 +60,7 @@ const ProgressValue = styled.View`
     `
     width: ${width}%;
 
-    background-color: ${color[3]};
+    background-color: ${color};
 
     border-radius: ${progress.border.radius}px;
   `}
@@ -135,8 +135,28 @@ Progress.propTypes = {
    * indeterminate; this indicates that an activity is ongoing with no
    * indication of how long it is expected to take. */
   value: number,
-  /** Value color based on theme colors (primary, secondary, tertiary). */
-  variant: oneOf(['primary', 'secondary', 'tertiary']),
+  /** style the card following the theme (primary, secondary, vibin, hope,
+   * energy, relax, peace, verve, uplift, deepPurple, deep, stamina, dark,
+   * medium, light, clear, white) */
+  variant: oneOf([
+    'primary',
+    'secondary',
+    'vibin',
+    'hope',
+    'energy',
+    'relax',
+    'peace',
+    'verve',
+    'uplift',
+    'deepPurple',
+    'stamina',
+    'dark',
+    'medium',
+    'deep',
+    'light',
+    'clear',
+    'white',
+  ]),
 };
 
 Progress.defaultProps = {
