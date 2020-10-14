@@ -88,4 +88,7 @@ describe('<Progress />', () => {
         <Progress max={100} value={20} label={{ value: 20 }} variant="white" />
       </ThemeProvider>,
     );
+
+    expect(container).toMatchSnapshot();
+  });
 });
