@@ -100,7 +100,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 .c6 {
   position: relative;
   padding: 0;
-  max-width: 0px;
+  max-width: 0;
   width: auto;
   height: 0;
   font-weight: normal;
@@ -301,7 +301,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 .c6 {
   position: relative;
   padding: 0;
-  max-width: 0px;
+  max-width: 0;
   width: auto;
   height: 0;
   font-weight: normal;
@@ -520,7 +520,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 .c6 {
   position: relative;
   padding: 0;
-  max-width: 0px;
+  max-width: 0;
   width: auto;
   height: 0;
   font-weight: normal;
@@ -569,7 +569,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c8 {
   position: absolute;
-  top: 6;
+  top: 0;
   right: 0;
   padding-right: 16px;
   padding-left: 8px;
@@ -865,7 +865,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 .c6 {
   position: relative;
   padding: 0;
-  max-width: 0px;
+  max-width: 0;
   width: auto;
   height: 0;
   font-weight: normal;
@@ -914,7 +914,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c8 {
   position: absolute;
-  top: 6;
+  top: 0;
   right: 0;
   padding-right: 16px;
   padding-left: 8px;

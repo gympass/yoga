@@ -100,7 +100,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 .c4 {
   position: relative;
   padding: 0;
-  max-width: 0px;
+  max-width: 0;
   width: auto;
   height: 0;
   font-weight: normal;
@@ -281,7 +281,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 .c4 {
   position: relative;
   padding: 0;
-  max-width: 0px;
+  max-width: 0;
   width: auto;
   height: 0;
   font-weight: normal;
@@ -486,7 +486,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 .c4 {
   position: relative;
   padding: 0;
-  max-width: 0px;
+  max-width: 0;
   width: auto;
   height: 0;
   font-weight: normal;
@@ -676,7 +676,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 .c4 {
   position: relative;
   padding: 0;
-  max-width: 0px;
+  max-width: 0;
   width: auto;
   height: 0;
   font-weight: normal;
@@ -889,7 +889,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 .c4 {
   position: relative;
   padding: 0;
-  max-width: 0px;
+  max-width: 0;
   width: auto;
   height: 0;
   font-weight: normal;
@@ -1086,7 +1086,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 .c4 {
   position: relative;
   padding: 0;
-  max-width: 0px;
+  max-width: 0;
   width: auto;
   height: 0;
   font-weight: normal;
