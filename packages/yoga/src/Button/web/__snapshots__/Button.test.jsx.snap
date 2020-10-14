@@ -11,8 +11,8 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -29,19 +29,19 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
@@ -66,8 +66,8 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -87,41 +87,41 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
   background-color: unset;
   border: none;
   border-radius: 0;
-  color: #F46152;
+  color: #231B22;
 }
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: unset;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):active {
   background-color: unset;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:disabled {
   background-color: unset;
-  color: #9898A6;
+  color: #D7D7E0;
 }
 
 <div>
@@ -143,8 +143,8 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -161,44 +161,44 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c1 {
   background-color: transparent;
-  border-color: #F46152;
-  color: #F46152;
+  border-color: #231B22;
+  color: #231B22;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(244,97,82,0.3);
+  background-color: rgba(35,27,34,0.25);
   box-shadow: none;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
-  border-color: #F78D82;
-  color: #F78D82;
+  border-color: rgba(35,27,34,0.75);
+  color: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #9898A6;
-  color: #9898A6;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 <div>
@@ -222,8 +222,8 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -240,44 +240,44 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c1 {
   background-color: transparent;
   border-color: transparent;
-  color: #F46152;
+  color: #231B22;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(244,97,82,0.3);
+  background-color: rgba(35,27,34,0.25);
   box-shadow: none;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
   border-color: transparent;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #9898A6;
+  color: #D7D7E0;
 }
 
 <div>
@@ -301,8 +301,8 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -319,19 +319,19 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
@@ -355,8 +355,8 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -373,44 +373,44 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c1 {
   background-color: transparent;
-  border-color: #F46152;
-  color: #F46152;
+  border-color: #231B22;
+  color: #231B22;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(244,97,82,0.3);
+  background-color: rgba(35,27,34,0.25);
   box-shadow: none;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
-  border-color: #F78D82;
-  color: #F78D82;
+  border-color: rgba(35,27,34,0.75);
+  color: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #9898A6;
-  color: #9898A6;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 <div>
@@ -433,8 +433,8 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -451,44 +451,44 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c1 {
   background-color: transparent;
   border-color: transparent;
-  color: #F46152;
+  color: #231B22;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(244,97,82,0.3);
+  background-color: rgba(35,27,34,0.25);
   box-shadow: none;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
   border-color: transparent;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #9898A6;
+  color: #D7D7E0;
 }
 
 <div>
@@ -511,8 +511,8 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -527,31 +527,31 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
   text-decoration: none;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  color: #F46152;
+  color: #231B22;
 }
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c0:active {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):hover,
@@ -579,8 +579,8 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -595,7 +595,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
   text-decoration: none;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  color: #F46152;
+  color: #231B22;
   height: unset;
   padding: 0;
   margin-top: 16px;
@@ -603,32 +603,32 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
   background-color: unset;
   border: none;
   border-radius: 0;
-  color: #F46152;
+  color: #231B22;
   color: #FFFFFF;
 }
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c0:active {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):hover,
@@ -639,23 +639,23 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: unset;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):active {
   background-color: unset;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:disabled {
   background-color: unset;
-  color: #9898A6;
+  color: #D7D7E0;
 }
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: unset;
-  color: #DBDBE8;
+  color: #6B6B78;
 }
 
 <div>
@@ -676,8 +676,8 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -692,31 +692,31 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
   text-decoration: none;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  color: #F46152;
+  color: #231B22;
 }
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c0:active {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):hover,
@@ -726,38 +726,38 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
 
 .c1 {
   background-color: transparent;
-  border-color: #F46152;
-  color: #F46152;
+  border-color: #231B22;
+  color: #231B22;
   border-color: #FFFFFF;
   color: #FFFFFF;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(244,97,82,0.3);
+  background-color: rgba(35,27,34,0.25);
   box-shadow: none;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
-  border-color: #F78D82;
-  color: #F78D82;
+  border-color: rgba(35,27,34,0.75);
+  color: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #9898A6;
-  color: #9898A6;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.25);
 }
 
 .c1:not([disabled]):active {
-  border-color: #DBDBE8;
-  color: #DBDBE8;
+  border-color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.75);
 }
 
 <div>
@@ -780,8 +780,8 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -796,31 +796,31 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
   text-decoration: none;
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  color: #F46152;
+  color: #231B22;
 }
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c0:active {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):hover,
@@ -831,25 +831,25 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
 .c1 {
   background-color: transparent;
   border-color: transparent;
-  color: #F46152;
+  color: #231B22;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(244,97,82,0.3);
+  background-color: rgba(35,27,34,0.25);
   box-shadow: none;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
   border-color: transparent;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #9898A6;
+  color: #D7D7E0;
 }
 
 <div>
@@ -872,8 +872,8 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
   height: 32px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 1px solid #F46152;
+  background-color: #231B22;
+  border: 1px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -890,19 +890,19 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
@@ -926,8 +926,8 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
   height: 32px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 1px solid #F46152;
+  background-color: #231B22;
+  border: 1px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -944,44 +944,44 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c1 {
   background-color: transparent;
-  border-color: #F46152;
-  color: #F46152;
+  border-color: #231B22;
+  color: #231B22;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(244,97,82,0.3);
+  background-color: rgba(35,27,34,0.25);
   box-shadow: none;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
-  border-color: #F78D82;
-  color: #F78D82;
+  border-color: rgba(35,27,34,0.75);
+  color: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #9898A6;
-  color: #9898A6;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 <div>
@@ -1004,8 +1004,8 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
   height: 32px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 1px solid #F46152;
+  background-color: #231B22;
+  border: 1px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -1022,44 +1022,44 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c1 {
   background-color: transparent;
   border-color: transparent;
-  color: #F46152;
+  color: #231B22;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(244,97,82,0.3);
+  background-color: rgba(35,27,34,0.25);
   box-shadow: none;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
   border-color: transparent;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #9898A6;
+  color: #D7D7E0;
 }
 
 <div>
@@ -1082,8 +1082,8 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -1103,41 +1103,41 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   background-color: unset;
   border: none;
   border-radius: 0;
-  color: #F46152;
+  color: #231B22;
 }
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: unset;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):active {
   background-color: unset;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:disabled {
   background-color: unset;
-  color: #9898A6;
+  color: #D7D7E0;
 }
 
 .c1 {
@@ -1150,8 +1150,8 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -1171,109 +1171,41 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   background-color: unset;
   border: none;
   border-radius: 0;
-  color: #652CDB;
+  color: #D8385E;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c1:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c1:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
   box-shadow: unset;
-  color: #8051E1;
+  color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):active {
   background-color: unset;
-  color: #8051E1;
+  color: rgba(216,56,94,0.75);
 }
 
 .c1:disabled {
   background-color: unset;
-  color: #9898A6;
-}
-
-.c2 {
-  box-sizing: border-box;
-  outline: none;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  cursor: pointer;
-  width: auto;
-  height: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
-  border-radius: 9999px;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
-  font-family: Rubik;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  line-height: 1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  height: unset;
-  padding: 0;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  background-color: unset;
-  border: none;
-  border-radius: 0;
-  color: #22766B;
-}
-
-.c2:not([disabled]):hover,
-.c2:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
-}
-
-.c2:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
-  color: #FFFFFF;
-}
-
-.c2:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
-  cursor: not-allowed;
-}
-
-.c2:not([disabled]):hover,
-.c2:not([disabled]):focus {
-  box-shadow: unset;
-  color: #2B9486;
-}
-
-.c2:not([disabled]):active {
-  background-color: unset;
-  color: #2B9486;
-}
-
-.c2:disabled {
-  background-color: unset;
-  color: #9898A6;
+  color: #D7D7E0;
 }
 
 <div>
@@ -1282,9 +1214,6 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   />
   <button
     class="c1"
-  />
-  <button
-    class="c2"
   />
 </div>
 `;
@@ -1300,8 +1229,8 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -1318,19 +1247,19 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
@@ -1354,8 +1283,8 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -1375,41 +1304,41 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
   background-color: unset;
   border: none;
   border-radius: 0;
-  color: #F46152;
+  color: #231B22;
 }
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: unset;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):active {
   background-color: unset;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c0:disabled {
   background-color: unset;
-  color: #9898A6;
+  color: #D7D7E0;
 }
 
 <div>
@@ -1430,8 +1359,8 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -1448,44 +1377,44 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c1 {
   background-color: transparent;
-  border-color: #F46152;
-  color: #F46152;
+  border-color: #231B22;
+  color: #231B22;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(244,97,82,0.3);
+  background-color: rgba(35,27,34,0.25);
   box-shadow: none;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
-  border-color: #F78D82;
-  color: #F78D82;
+  border-color: rgba(35,27,34,0.75);
+  color: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #9898A6;
-  color: #9898A6;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
 }
 
 <div>
@@ -1508,8 +1437,8 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
@@ -1526,44 +1455,44 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
 
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c0:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
+  border-color: transparent;
   color: #FFFFFF;
 }
 
 .c0:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  border-color: transparent;
+  color: #D7D7E0;
   cursor: not-allowed;
 }
 
 .c1 {
   background-color: transparent;
   border-color: transparent;
-  color: #F46152;
+  color: #231B22;
 }
 
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(244,97,82,0.3);
+  background-color: rgba(35,27,34,0.25);
   box-shadow: none;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
   border-color: transparent;
-  color: #F78D82;
+  color: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #9898A6;
+  color: #D7D7E0;
 }
 
 <div>

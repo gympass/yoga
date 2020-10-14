@@ -20,7 +20,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   padding-left: 8px;
   height: 52px;
   width: 20px;
-  fill: #9898A6;
+  fill: #6B6B78;
   outline: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -28,7 +28,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 
 .c2 svg:hover,
 .c2 svg:focus {
-  fill: #41414A;
+  fill: #231B22;
 }
 
 .c2:focus-within legend {
@@ -38,7 +38,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 
 .c2:hover fieldset,
 .c2:focus-within fieldset {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c4 {
@@ -53,7 +53,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -62,7 +62,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 }
 
 .c4:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c4:focus + label {
@@ -77,28 +77,28 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c4:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c4::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4[type="number"]::-webkit-outer-spin-button,
@@ -121,7 +121,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   margin: 0;
   pointer-events: none;
   border-radius: 8px;
-  border: 1px solid #D3D3E2;
+  border: 1px solid #D7D7E0;
   padding-left: 12px;
 }
 
@@ -163,7 +163,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
@@ -254,7 +254,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   padding-left: 8px;
   height: 52px;
   width: 20px;
-  fill: #9898A6;
+  fill: #6B6B78;
   outline: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -262,7 +262,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 
 .c2 svg:hover,
 .c2 svg:focus {
-  fill: #41414A;
+  fill: #231B22;
 }
 
 .c2:focus-within legend {
@@ -272,7 +272,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 
 .c2:hover fieldset,
 .c2:focus-within fieldset {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c4 {
@@ -287,7 +287,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -296,7 +296,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 }
 
 .c4:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c4:focus + label {
@@ -311,28 +311,28 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c4:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c4::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4[type="number"]::-webkit-outer-spin-button,
@@ -355,7 +355,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   margin: 0;
   pointer-events: none;
   border-radius: 8px;
-  border: 1px solid #D3D3E2;
+  border: 1px solid #D7D7E0;
   padding-left: 12px;
 }
 
@@ -397,7 +397,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
@@ -488,7 +488,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   padding-left: 8px;
   height: 52px;
   width: 20px;
-  fill: #9898A6;
+  fill: #6B6B78;
   outline: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -496,7 +496,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c2 svg:hover,
 .c2 svg:focus {
-  fill: #41414A;
+  fill: #231B22;
 }
 
 .c2:focus-within legend {
@@ -506,7 +506,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c2:hover fieldset,
 .c2:focus-within fieldset {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c4 {
@@ -521,7 +521,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -530,7 +530,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c4:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c4:focus + label {
@@ -545,28 +545,28 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c4:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c4::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4 + label {
@@ -602,7 +602,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   margin: 0;
   pointer-events: none;
   border-radius: 8px;
-  border: 1px solid #D3D3E2;
+  border: 1px solid #D7D7E0;
   padding-left: 12px;
 }
 
@@ -644,7 +644,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
@@ -661,21 +661,21 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 
 .c3 {
   z-index: 1;
-  border-color: #41414A;
+  border-color: #231B22;
   border-bottom-width: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .c3 fieldset {
-  border-color: #41414A;
+  border-color: #231B22;
   border-bottom-width: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .c3 label {
-  color: #41414A;
+  color: #231B22;
   font-weight: 700;
 }
 
@@ -700,7 +700,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   background-color: #FFFFFF;
   border-width: 1px;
   border-style: solid;
-  border-color: #41414A;
+  border-color: #231B22;
   border-top-width: 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -837,7 +837,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   padding-left: 8px;
   height: 52px;
   width: 20px;
-  fill: #9898A6;
+  fill: #6B6B78;
   outline: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -845,7 +845,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c2 svg:hover,
 .c2 svg:focus {
-  fill: #41414A;
+  fill: #231B22;
 }
 
 .c2:focus-within legend {
@@ -855,7 +855,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c2:hover fieldset,
 .c2:focus-within fieldset {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c4 {
@@ -870,7 +870,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -879,7 +879,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c4:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c4:focus + label {
@@ -894,28 +894,28 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c4:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c4::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c4 + label {
@@ -951,7 +951,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   margin: 0;
   pointer-events: none;
   border-radius: 8px;
-  border: 1px solid #D3D3E2;
+  border: 1px solid #D7D7E0;
   padding-left: 12px;
 }
 
@@ -993,7 +993,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
@@ -1010,21 +1010,21 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 
 .c3 {
   z-index: 1;
-  border-color: #41414A;
+  border-color: #231B22;
   border-bottom-width: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .c3 fieldset {
-  border-color: #41414A;
+  border-color: #231B22;
   border-bottom-width: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .c3 label {
-  color: #41414A;
+  color: #231B22;
   font-weight: 700;
 }
 
@@ -1049,7 +1049,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   background-color: #FFFFFF;
   border-width: 1px;
   border-style: solid;
-  border-color: #41414A;
+  border-color: #231B22;
   border-top-width: 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;

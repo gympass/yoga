@@ -53,7 +53,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
 
 .c2:hover,
 .c2:focus {
-  background-color: #E6E6F0;
+  background-color: #D7D7E0;
 }
 
 .c4 {
@@ -79,8 +79,8 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   box-sizing: border-box;
   background-color: transparent;
   border-radius: 9999px;
-  background-color: #F46152;
-  box-shadow: 0 0 0 1px #F46152;
+  background-color: #231B22;
+  box-shadow: 0 0 0 1px #231B22;
   color: #FFFFFF;
   font-weight: 700;
   z-index: 1;
@@ -92,7 +92,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
 
 .c1 {
   border-style: solid;
-  border-color: #DBDBE8;
+  border-color: #F5F5FA;
   border-top-width: 1px;
   border-bottom-width: 1px;
   border-left: none;
@@ -103,7 +103,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   border-right-width: 0;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #DBDBE8;
+  border-left-color: #F5F5FA;
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
 }
@@ -112,7 +112,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   border-left-width: 0;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #DBDBE8;
+  border-right-color: #F5F5FA;
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
 }
@@ -264,12 +264,12 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 
 
 .c2:hover,
 .c2:focus {
-  background-color: #E6E6F0;
+  background-color: #D7D7E0;
 }
 
 .c1 {
   border-style: solid;
-  border-color: #DBDBE8;
+  border-color: #F5F5FA;
   border-top-width: 1px;
   border-bottom-width: 1px;
   border-left: none;
@@ -280,7 +280,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 
   border-right-width: 0;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #DBDBE8;
+  border-left-color: #F5F5FA;
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
 }
@@ -289,7 +289,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radios as children 
   border-left-width: 0;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #DBDBE8;
+  border-right-color: #F5F5FA;
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
 }
@@ -401,12 +401,12 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
 
 .c2:hover,
 .c2:focus {
-  background-color: #E6E6F0;
+  background-color: #D7D7E0;
 }
 
 .c1 {
   border-style: solid;
-  border-color: #DBDBE8;
+  border-color: #F5F5FA;
   border-top-width: 1px;
   border-bottom-width: 1px;
   border-left: none;
@@ -417,7 +417,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
   border-right-width: 0;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #DBDBE8;
+  border-left-color: #F5F5FA;
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
 }
@@ -426,7 +426,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
   border-left-width: 0;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #DBDBE8;
+  border-right-color: #F5F5FA;
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
 }
@@ -538,12 +538,12 @@ exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
 
 .c2:hover,
 .c2:focus {
-  background-color: #E6E6F0;
+  background-color: #D7D7E0;
 }
 
 .c1 {
   border-style: solid;
-  border-color: #DBDBE8;
+  border-color: #F5F5FA;
   border-top-width: 1px;
   border-bottom-width: 1px;
   border-left: none;
@@ -554,7 +554,7 @@ exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
   border-right-width: 0;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #DBDBE8;
+  border-left-color: #F5F5FA;
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
 }
@@ -563,7 +563,7 @@ exports[`<RadioGroup /> Snapshots should set the name for all children 1`] = `
   border-left-width: 0;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #DBDBE8;
+  border-right-color: #F5F5FA;
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
 }

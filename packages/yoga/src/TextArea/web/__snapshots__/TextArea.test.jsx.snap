@@ -23,7 +23,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
+  border-color: #D7D7E0;
   height: 88px;
   box-sizing: border-box;
   padding-top: 16px;
@@ -44,7 +44,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
   padding-left: 8px;
   height: 52px;
   width: 20px;
-  fill: #9898A6;
+  fill: #6B6B78;
   outline: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -52,7 +52,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
 
 .c1 svg:hover,
 .c1 svg:focus {
-  fill: #41414A;
+  fill: #231B22;
 }
 
 .c1:focus-within legend {
@@ -62,7 +62,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
 
 .c1:hover,
 .c1:focus-within {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c2 {
@@ -77,7 +77,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
   padding-right: 16px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -89,7 +89,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus + label {
@@ -104,28 +104,28 @@ exports[`<TextArea /> should match snapshot 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,

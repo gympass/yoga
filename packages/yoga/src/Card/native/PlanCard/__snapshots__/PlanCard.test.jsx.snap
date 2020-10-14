@@ -56,7 +56,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
               "backgroundColor": "#F5F5FA",
               "borderBottomRightRadius": 9999,
               "borderTopRightRadius": 9999,
-              "color": "#41414A",
+              "color": undefined,
               "marginBottom": 16,
               "marginLeft": -16,
               "paddingBottom": 4,
@@ -71,7 +71,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] =
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": undefined,
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
@@ -141,7 +141,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ri
           Array [
             Object {
               "alignSelf": "flex-start",
-              "backgroundColor": "#652CDB",
+              "backgroundColor": "#D8385E",
               "borderBottomRightRadius": 9999,
               "borderTopRightRadius": 9999,
               "color": "#FFFFFF",
@@ -231,7 +231,7 @@ exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary rib
           Array [
             Object {
               "alignSelf": "flex-start",
-              "backgroundColor": "#22766B",
+              "backgroundColor": undefined,
               "borderBottomRightRadius": 9999,
               "borderTopRightRadius": 9999,
               "color": "#FFFFFF",
@@ -328,7 +328,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": undefined,
                 "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -347,7 +347,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": undefined,
                 "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "500",
@@ -364,7 +364,7 @@ exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Cont
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": undefined,
                 "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -413,7 +413,7 @@ exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Cont
       style={
         Array [
           Object {
-            "backgroundColor": "#8051E1",
+            "backgroundColor": "#D8385E",
             "borderRadius": 8,
             "elevation": 4,
             "overflow": "hidden",
@@ -567,7 +567,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": undefined,
                 "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -586,7 +586,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": undefined,
                 "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "500",
@@ -603,7 +603,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": undefined,
                 "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
@@ -654,7 +654,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 style={
                   Array [
                     Object {
-                      "backgroundColor": "#F46152",
+                      "backgroundColor": "#231B22",
                       "borderRadius": 9999,
                       "height": 48,
                       "justifyContent": "center",
@@ -722,7 +722,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
       style={
         Array [
           Object {
-            "backgroundColor": "#8051E1",
+            "backgroundColor": "#D8385E",
             "borderRadius": 8,
             "elevation": 4,
             "overflow": "hidden",
@@ -848,7 +848,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
                 style={
                   Array [
                     Object {
-                      "backgroundColor": "#F46152",
+                      "backgroundColor": "#231B22",
                       "borderRadius": 9999,
                       "height": 48,
                       "justifyContent": "center",
@@ -916,7 +916,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
       style={
         Array [
           Object {
-            "backgroundColor": "#2B9486",
+            "backgroundColor": undefined,
             "borderRadius": 8,
             "elevation": 4,
             "overflow": "hidden",
@@ -1042,7 +1042,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
                 style={
                   Array [
                     Object {
-                      "backgroundColor": "#F46152",
+                      "backgroundColor": "#231B22",
                       "borderRadius": 9999,
                       "height": 48,
                       "justifyContent": "center",

@@ -20,7 +20,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
         Array [
           Object {
             "alignItems": "center",
-            "borderColor": "#A9A9B8",
+            "borderColor": "#9898A6",
             "borderRadius": 9999,
             "borderStyle": "solid",
             "borderWidth": 2,
@@ -55,7 +55,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
         Array [
           Object {
             "alignItems": "center",
-            "borderColor": "#A9A9B8",
+            "borderColor": "#9898A6",
             "borderRadius": 9999,
             "borderStyle": "solid",
             "borderWidth": 2,
@@ -90,7 +90,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
         Array [
           Object {
             "alignItems": "center",
-            "borderColor": "#A9A9B8",
+            "borderColor": "#9898A6",
             "borderRadius": 9999,
             "borderStyle": "solid",
             "borderWidth": 2,
@@ -106,7 +106,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
         style={
           Array [
             Object {
-              "borderColor": "#FDE5E2",
+              "borderColor": "#231B22",
               "borderRadius": 9999,
               "borderStyle": "solid",
               "borderWidth": 8,
@@ -143,7 +143,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
         Array [
           Object {
             "alignItems": "center",
-            "borderColor": "#C5C5D6",
+            "borderColor": "#F5F5FA",
             "borderRadius": 9999,
             "borderStyle": "solid",
             "borderWidth": 2,

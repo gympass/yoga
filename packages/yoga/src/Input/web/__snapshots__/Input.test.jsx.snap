@@ -20,7 +20,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   padding-left: 8px;
   height: 52px;
   width: 20px;
-  fill: #9898A6;
+  fill: #6B6B78;
   outline: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -28,7 +28,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 
 .c1 svg:hover,
 .c1 svg:focus {
-  fill: #41414A;
+  fill: #231B22;
 }
 
 .c1:focus-within legend {
@@ -38,7 +38,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 
 .c1:hover fieldset,
 .c1:focus-within fieldset {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c2 {
@@ -53,7 +53,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -62,7 +62,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus + label {
@@ -77,28 +77,28 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -121,7 +121,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   margin: 0;
   pointer-events: none;
   border-radius: 8px;
-  border: 1px solid #D3D3E2;
+  border: 1px solid #D7D7E0;
   padding-left: 12px;
 }
 
@@ -163,7 +163,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
@@ -219,8 +219,8 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   display: inline-block;
   vertical-align: top;
   height: 52px;
-  border-color: #D3D3E2;
-  color: #D3D3E2;
+  border-color: #F5F5FA;
+  color: #F5F5FA;
 }
 
 .c1 {
@@ -235,7 +235,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   padding-left: 8px;
   height: 52px;
   width: 20px;
-  fill: #9898A6;
+  fill: #6B6B78;
   outline: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -243,7 +243,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 
 .c1 svg:hover,
 .c1 svg:focus {
-  fill: #41414A;
+  fill: #231B22;
 }
 
 .c1:focus-within legend {
@@ -253,17 +253,17 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 
 .c1:hover fieldset,
 .c1:focus-within fieldset {
-  border-color: #41414A;
-  border-color: #D3D3E2;
+  border-color: #231B22;
+  border-color: #F5F5FA;
 }
 
 .c1 svg {
-  fill: #D3D3E2;
+  fill: #F5F5FA;
   pointer-events: none;
 }
 
 .c1 fieldset {
-  border-color: #D3D3E2;
+  border-color: #F5F5FA;
 }
 
 .c2 {
@@ -278,7 +278,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -287,7 +287,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus + label {
@@ -302,28 +302,28 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -346,7 +346,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   margin: 0;
   pointer-events: none;
   border-radius: 8px;
-  border: 1px solid #D3D3E2;
+  border: 1px solid #D7D7E0;
   padding-left: 12px;
 }
 
@@ -388,7 +388,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
@@ -396,7 +396,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c0 {
@@ -449,7 +449,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   display: inline-block;
   vertical-align: top;
   height: 52px;
-  border-color: #CB3530;
+  border-color: #FF874C;
 }
 
 .c1 {
@@ -457,7 +457,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 }
 
 .c1 fieldset {
-  border-color: #CB3530;
+  border-color: #FF874C;
 }
 
 .c1 svg {
@@ -468,7 +468,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   padding-left: 8px;
   height: 52px;
   width: 20px;
-  fill: #9898A6;
+  fill: #6B6B78;
   outline: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -476,7 +476,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 
 .c1 svg:hover,
 .c1 svg:focus {
-  fill: #41414A;
+  fill: #231B22;
 }
 
 .c1:focus-within legend {
@@ -486,7 +486,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 
 .c1:hover fieldset,
 .c1:focus-within fieldset {
-  border-color: #CB3530;
+  border-color: #FF874C;
 }
 
 .c2 {
@@ -501,7 +501,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -510,7 +510,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus + label {
@@ -525,28 +525,28 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
-  color: #CB3530;
+  color: #FF874C;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -569,7 +569,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   margin: 0;
   pointer-events: none;
   border-radius: 8px;
-  border: 1px solid #D3D3E2;
+  border: 1px solid #D7D7E0;
   padding-left: 12px;
 }
 
@@ -611,7 +611,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
@@ -619,7 +619,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  color: #CB3530;
+  color: #FF874C;
 }
 
 .c7 {
@@ -628,7 +628,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   display: -ms-flexbox;
   display: flex;
   margin-top: 4px;
-  color: #CB3530;
+  color: #FF874C;
 }
 
 .c8 {
@@ -638,8 +638,8 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
-  color: #9898A6;
+  color: #231B22;
+  color: #6B6B78;
   font-size: 12px;
 }
 
@@ -712,7 +712,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   padding-left: 8px;
   height: 52px;
   width: 20px;
-  fill: #9898A6;
+  fill: #6B6B78;
   outline: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -720,7 +720,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 
 .c1 svg:hover,
 .c1 svg:focus {
-  fill: #41414A;
+  fill: #231B22;
 }
 
 .c1:focus-within legend {
@@ -730,7 +730,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 
 .c1:hover fieldset,
 .c1:focus-within fieldset {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c2 {
@@ -745,7 +745,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -754,7 +754,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus + label {
@@ -769,28 +769,28 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -813,7 +813,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   margin: 0;
   pointer-events: none;
   border-radius: 8px;
-  border: 1px solid #D3D3E2;
+  border: 1px solid #D7D7E0;
   padding-left: 12px;
 }
 
@@ -855,7 +855,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
@@ -925,7 +925,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   padding-left: 8px;
   height: 52px;
   width: 20px;
-  fill: #9898A6;
+  fill: #6B6B78;
   outline: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -933,7 +933,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 
 .c1 svg:hover,
 .c1 svg:focus {
-  fill: #41414A;
+  fill: #231B22;
 }
 
 .c1:focus-within legend {
@@ -943,7 +943,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 
 .c1:hover fieldset,
 .c1:focus-within fieldset {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c2 {
@@ -958,7 +958,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -967,7 +967,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus + label {
@@ -982,28 +982,28 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -1026,7 +1026,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   margin: 0;
   pointer-events: none;
   border-radius: 8px;
-  border: 1px solid #D3D3E2;
+  border: 1px solid #D7D7E0;
   padding-left: 12px;
 }
 
@@ -1068,7 +1068,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
@@ -1093,8 +1093,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
-  color: #9898A6;
+  color: #231B22;
+  color: #6B6B78;
   font-size: 12px;
 }
 
@@ -1105,8 +1105,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
-  color: #9898A6;
+  color: #231B22;
+  color: #6B6B78;
   font-size: 12px;
   margin-left: auto;
 }
@@ -1188,7 +1188,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   padding-left: 8px;
   height: 52px;
   width: 20px;
-  fill: #9898A6;
+  fill: #6B6B78;
   outline: none;
   box-sizing: content-box;
   cursor: pointer;
@@ -1196,7 +1196,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 
 .c1 svg:hover,
 .c1 svg:focus {
-  fill: #41414A;
+  fill: #231B22;
 }
 
 .c1:focus-within legend {
@@ -1206,7 +1206,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 
 .c1:hover fieldset,
 .c1:focus-within fieldset {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c2 {
@@ -1221,7 +1221,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -1230,7 +1230,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus + label {
@@ -1245,28 +1245,28 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -1289,7 +1289,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   margin: 0;
   pointer-events: none;
   border-radius: 8px;
-  border: 1px solid #D3D3E2;
+  border: 1px solid #D7D7E0;
   padding-left: 12px;
 }
 
@@ -1331,7 +1331,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);

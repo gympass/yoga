@@ -11,17 +11,12 @@ exports[`<Tag /> should match snapshot 1`] = `
   }
 >
   <View
-    color={
-      Array [
-        "#F5F5FA",
-        "#6B6B78",
-      ]
-    }
+    color="#6B6B78"
     full={false}
     style={
       Array [
         Object {
-          "backgroundColor": "#F5F5FA",
+          "backgroundColor": "rgba(107, 107, 120, 0.25)",
           "borderRadius": 8,
           "paddingBottom": 8,
           "paddingLeft": 8,
@@ -117,12 +112,7 @@ exports[`<Tag /> should match snapshot 1`] = `
         />
       </RNSVGSvgView>
       <Text
-        color={
-          Array [
-            "#F5F5FA",
-            "#6B6B78",
-          ]
-        }
+        color="#6B6B78"
         style={
           Array [
             Object {
@@ -152,17 +142,12 @@ exports[`<Tag /> should match snapshot with custom icon 1`] = `
   }
 >
   <View
-    color={
-      Array [
-        "#F5F5FA",
-        "#6B6B78",
-      ]
-    }
+    color="#6B6B78"
     full={false}
     style={
       Array [
         Object {
-          "backgroundColor": "#F5F5FA",
+          "backgroundColor": "rgba(107, 107, 120, 0.25)",
           "borderRadius": 8,
           "paddingBottom": 8,
           "paddingLeft": 8,
@@ -258,12 +243,7 @@ exports[`<Tag /> should match snapshot with custom icon 1`] = `
         />
       </RNSVGSvgView>
       <Text
-        color={
-          Array [
-            "#F5F5FA",
-            "#6B6B78",
-          ]
-        }
+        color="#6B6B78"
         style={
           Array [
             Object {
@@ -293,17 +273,12 @@ exports[`<Tag /> should match snapshot with full prop 1`] = `
   }
 >
   <View
-    color={
-      Array [
-        "#F5F5FA",
-        "#6B6B78",
-      ]
-    }
+    color="#6B6B78"
     full={true}
     style={
       Array [
         Object {
-          "backgroundColor": "#F5F5FA",
+          "backgroundColor": "rgba(107, 107, 120, 0.25)",
           "borderRadius": 8,
           "paddingBottom": 8,
           "paddingLeft": 8,
@@ -399,12 +374,7 @@ exports[`<Tag /> should match snapshot with full prop 1`] = `
         />
       </RNSVGSvgView>
       <Text
-        color={
-          Array [
-            "#F5F5FA",
-            "#6B6B78",
-          ]
-        }
+        color="#6B6B78"
         style={
           Array [
             Object {
@@ -434,17 +404,12 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   }
 >
   <View
-    color={
-      Array [
-        "#E9F3FC",
-        "#2186D9",
-      ]
-    }
+    color="#6B6B78"
     full={false}
     style={
       Array [
         Object {
-          "backgroundColor": "#E9F3FC",
+          "backgroundColor": "rgba(107, 107, 120, 0.25)",
           "borderRadius": 8,
           "paddingBottom": 8,
           "paddingLeft": 8,
@@ -469,7 +434,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
       <RNSVGSvgView
         bbHeight={12}
         bbWidth={14}
-        fill="#2186D9"
+        fill="#6B6B78"
         focusable={false}
         height={12}
         style={
@@ -497,7 +462,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
           fill={
             Array [
               0,
-              4280387289,
+              4285229944,
             ]
           }
           fillOpacity={1}
@@ -540,16 +505,11 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
         />
       </RNSVGSvgView>
       <Text
-        color={
-          Array [
-            "#E9F3FC",
-            "#2186D9",
-          ]
-        }
+        color="#6B6B78"
         style={
           Array [
             Object {
-              "color": "#2186D9",
+              "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
               "fontWeight": "700",
@@ -562,17 +522,12 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     </View>
   </View>
   <View
-    color={
-      Array [
-        "#DEF8E9",
-        "#1E854A",
-      ]
-    }
+    color="#6B6B78"
     full={false}
     style={
       Array [
         Object {
-          "backgroundColor": "#DEF8E9",
+          "backgroundColor": "rgba(107, 107, 120, 0.25)",
           "borderRadius": 8,
           "paddingBottom": 8,
           "paddingLeft": 8,
@@ -597,7 +552,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
       <RNSVGSvgView
         bbHeight={12}
         bbWidth={14}
-        fill="#1E854A"
+        fill="#6B6B78"
         focusable={false}
         height={12}
         style={
@@ -625,7 +580,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
           fill={
             Array [
               0,
-              4280190282,
+              4285229944,
             ]
           }
           fillOpacity={1}
@@ -668,16 +623,11 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
         />
       </RNSVGSvgView>
       <Text
-        color={
-          Array [
-            "#DEF8E9",
-            "#1E854A",
-          ]
-        }
+        color="#6B6B78"
         style={
           Array [
             Object {
-              "color": "#1E854A",
+              "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
               "fontWeight": "700",
@@ -690,17 +640,12 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     </View>
   </View>
   <View
-    color={
-      Array [
-        "#FCEAE9",
-        "#CB3530",
-      ]
-    }
+    color="#6B6B78"
     full={false}
     style={
       Array [
         Object {
-          "backgroundColor": "#FCEAE9",
+          "backgroundColor": "rgba(107, 107, 120, 0.25)",
           "borderRadius": 8,
           "paddingBottom": 8,
           "paddingLeft": 8,
@@ -725,7 +670,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
       <RNSVGSvgView
         bbHeight={12}
         bbWidth={14}
-        fill="#CB3530"
+        fill="#6B6B78"
         focusable={false}
         height={12}
         style={
@@ -753,7 +698,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
           fill={
             Array [
               0,
-              4291507504,
+              4285229944,
             ]
           }
           fillOpacity={1}
@@ -796,16 +741,11 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
         />
       </RNSVGSvgView>
       <Text
-        color={
-          Array [
-            "#FCEAE9",
-            "#CB3530",
-          ]
-        }
+        color="#6B6B78"
         style={
           Array [
             Object {
-              "color": "#CB3530",
+              "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
               "fontWeight": "700",
@@ -818,17 +758,12 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     </View>
   </View>
   <View
-    color={
-      Array [
-        "#FBFBBE",
-        "#CB9303",
-      ]
-    }
+    color="#6B6B78"
     full={false}
     style={
       Array [
         Object {
-          "backgroundColor": "#FBFBBE",
+          "backgroundColor": "rgba(107, 107, 120, 0.25)",
           "borderRadius": 8,
           "paddingBottom": 8,
           "paddingLeft": 8,
@@ -853,7 +788,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
       <RNSVGSvgView
         bbHeight={12}
         bbWidth={14}
-        fill="#CB9303"
+        fill="#6B6B78"
         focusable={false}
         height={12}
         style={
@@ -881,7 +816,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
           fill={
             Array [
               0,
-              4291531523,
+              4285229944,
             ]
           }
           fillOpacity={1}
@@ -924,16 +859,11 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
         />
       </RNSVGSvgView>
       <Text
-        color={
-          Array [
-            "#FBFBBE",
-            "#CB9303",
-          ]
-        }
+        color="#6B6B78"
         style={
           Array [
             Object {
-              "color": "#CB9303",
+              "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
               "fontWeight": "700",
@@ -959,17 +889,12 @@ exports[`<Tag /> should match snapshot with without icon 1`] = `
   }
 >
   <View
-    color={
-      Array [
-        "#F5F5FA",
-        "#6B6B78",
-      ]
-    }
+    color="#6B6B78"
     full={false}
     style={
       Array [
         Object {
-          "backgroundColor": "#F5F5FA",
+          "backgroundColor": "rgba(107, 107, 120, 0.25)",
           "borderRadius": 8,
           "paddingBottom": 8,
           "paddingLeft": 8,
@@ -992,12 +917,7 @@ exports[`<Tag /> should match snapshot with without icon 1`] = `
       }
     >
       <Text
-        color={
-          Array [
-            "#F5F5FA",
-            "#6B6B78",
-          ]
-        }
+        color="#6B6B78"
         style={
           Array [
             Object {

@@ -26,7 +26,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
   cursor: pointer;
   width: 48px;
   height: 24px;
-  background-color: #F46152;
+  background-color: #231B22;
   border-radius: 9999px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -66,7 +66,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
 
 .c1:focus + .c3,
 .c1:hover + .c3 {
-  box-shadow: 0 0 0 8px rgba(244,97,82,0.2);
+  box-shadow: 0 0 0 8px rgba(35,27,34,0.2);
 }
 
 <div>
@@ -115,7 +115,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   cursor: pointer;
   width: 48px;
   height: 24px;
-  background-color: #DBDBE8;
+  background-color: #D7D7E0;
   border-radius: 9999px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -195,7 +195,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   cursor: pointer;
   width: 48px;
   height: 24px;
-  background-color: #F46152;
+  background-color: #231B22;
   border-radius: 9999px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -216,7 +216,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 
 .c1:focus + .c5,
 .c1:hover + .c5 {
-  box-shadow: 0 0 0 8px rgba(244,97,82,0.2);
+  box-shadow: 0 0 0 8px rgba(35,27,34,0.2);
 }
 
 .c3 {
@@ -238,7 +238,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   transform: translateX(-100%);
-  background-color: #DBDBE8;
+  background-color: #D7D7E0;
   cursor: not-allowed;
 }
 
@@ -291,7 +291,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   cursor: pointer;
   width: 48px;
   height: 24px;
-  background-color: #DBDBE8;
+  background-color: #D7D7E0;
   border-radius: 9999px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -325,7 +325,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   transition-duration: 300ms;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
-  background-color: #DBDBE8;
+  background-color: #D7D7E0;
   cursor: not-allowed;
 }
 
