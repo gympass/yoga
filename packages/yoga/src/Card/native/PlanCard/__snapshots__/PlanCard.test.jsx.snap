@@ -1,503 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PlanCard /> Snapshots should match snapshot PlanCard with ribbon 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    style={
-      Array [
-        Object {
-          "elevation": 4,
-          "shadowColor": "rgba(152, 152, 166, 0.25)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 6,
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 8,
-            "elevation": 4,
-            "overflow": "hidden",
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 16,
-            "paddingTop": 16,
-          },
-          Object {
-            "maxWidth": 280,
-            "width": "100%",
-          },
-        ]
-      }
-      variant=""
-      variantIntensity={2}
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "alignSelf": "flex-start",
-              "backgroundColor": "#F5F5FA",
-              "borderBottomRightRadius": 9999,
-              "borderTopRightRadius": 9999,
-              "color": undefined,
-              "marginBottom": 16,
-              "marginLeft": -16,
-              "paddingBottom": 4,
-              "paddingLeft": 16,
-              "paddingRight": 12,
-              "paddingTop": 4,
-            },
-          ]
-        }
-      >
-        <Text
-          style={
-            Array [
-              Object {
-                "color": undefined,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Label
-        </Text>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`<PlanCard /> Snapshots should match snapshot PlanCard with secondary ribbon 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    style={
-      Array [
-        Object {
-          "elevation": 4,
-          "shadowColor": "rgba(152, 152, 166, 0.25)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 6,
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 8,
-            "elevation": 4,
-            "overflow": "hidden",
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 16,
-            "paddingTop": 16,
-          },
-          Object {
-            "maxWidth": 280,
-            "width": "100%",
-          },
-        ]
-      }
-      variant=""
-      variantIntensity={2}
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "alignSelf": "flex-start",
-              "backgroundColor": "#D8385E",
-              "borderBottomRightRadius": 9999,
-              "borderTopRightRadius": 9999,
-              "color": "#FFFFFF",
-              "marginBottom": 16,
-              "marginLeft": -16,
-              "paddingBottom": 4,
-              "paddingLeft": 16,
-              "paddingRight": 12,
-              "paddingTop": 4,
-            },
-          ]
-        }
-        variant="secondary"
-      >
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 16,
-              },
-            ]
-          }
-          variant="secondary"
-        >
-          Label
-        </Text>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`<PlanCard /> Snapshots should match snapshot PlanCard with tertiary ribbon 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    style={
-      Array [
-        Object {
-          "elevation": 4,
-          "shadowColor": "rgba(152, 152, 166, 0.25)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 6,
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 8,
-            "elevation": 4,
-            "overflow": "hidden",
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 16,
-            "paddingTop": 16,
-          },
-          Object {
-            "maxWidth": 280,
-            "width": "100%",
-          },
-        ]
-      }
-      variant=""
-      variantIntensity={2}
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "alignSelf": "flex-start",
-              "backgroundColor": undefined,
-              "borderBottomRightRadius": 9999,
-              "borderTopRightRadius": 9999,
-              "color": "#FFFFFF",
-              "marginBottom": 16,
-              "marginLeft": -16,
-              "paddingBottom": 4,
-              "paddingLeft": 16,
-              "paddingRight": 12,
-              "paddingTop": 4,
-            },
-          ]
-        }
-        variant="tertiary"
-      >
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 16,
-              },
-            ]
-          }
-          variant="tertiary"
-        >
-          Label
-        </Text>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`<PlanCard /> Snapshots should match snapshot default PlanCard with Content 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    style={
-      Array [
-        Object {
-          "elevation": 4,
-          "shadowColor": "rgba(152, 152, 166, 0.25)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 6,
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 8,
-            "elevation": 4,
-            "overflow": "hidden",
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 16,
-            "paddingTop": 16,
-          },
-          Object {
-            "maxWidth": 280,
-            "width": "100%",
-          },
-        ]
-      }
-      variant=""
-      variantIntensity={2}
-    >
-      <View
-        style={
-          Array [
-            Object {},
-          ]
-        }
-      >
-        <Text
-          numberOfLines={2}
-          style={
-            Array [
-              Object {
-                "color": undefined,
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "height": 40,
-                "lineHeight": 20,
-                "marginBottom": 12,
-                "marginTop": 8,
-              },
-            ]
-          }
-          variant=""
-        >
-          Gympass Black for employees with Buddha Spa + Reebook included
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": undefined,
-                "fontFamily": "Rubik",
-                "fontSize": 20,
-                "fontWeight": "500",
-                "lineHeight": 28,
-                "marginTop": 12,
-              },
-            ]
-          }
-          variant=""
-        >
-          U$ 99.90
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": undefined,
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "lineHeight": 20,
-                "marginBottom": 8,
-              },
-            ]
-          }
-          variant=""
-        >
-          /month
-        </Text>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`<PlanCard /> Snapshots should match snapshot variant PlanCard with Content 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    style={
-      Array [
-        Object {
-          "elevation": 4,
-          "shadowColor": "rgba(152, 152, 166, 0.25)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 6,
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#D8385E",
-            "borderRadius": 8,
-            "elevation": 4,
-            "overflow": "hidden",
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 16,
-            "paddingTop": 16,
-          },
-          Object {
-            "maxWidth": 280,
-            "width": "100%",
-          },
-        ]
-      }
-      variant="secondary"
-      variantIntensity={2}
-    >
-      <View
-        style={
-          Array [
-            Object {},
-          ]
-        }
-      >
-        <Text
-          numberOfLines={2}
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "height": 40,
-                "lineHeight": 20,
-                "marginBottom": 12,
-                "marginTop": 8,
-              },
-            ]
-          }
-          variant="secondary"
-        >
-          Gympass Black for employees with Buddha Spa + Reebook included
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 20,
-                "fontWeight": "500",
-                "lineHeight": 28,
-                "marginTop": 12,
-              },
-            ]
-          }
-          variant="secondary"
-        >
-          U$ 99.90
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "lineHeight": 20,
-                "marginBottom": 8,
-              },
-            ]
-          }
-          variant="secondary"
-        >
-          /month
-        </Text>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
 <View
   collapsable={true}
@@ -538,22 +40,78 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             "paddingTop": 16,
           },
           Object {
-            "maxWidth": 280,
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "maxWidth": 288,
+            "overflow": "hidden",
+            "paddingBottom": 32,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 64,
+            "position": "relative",
+            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
             "width": "100%",
           },
         ]
       }
       variant=""
-      variantIntensity={2}
+      variantIntensity={3}
     >
       <View
         style={
           Array [
-            Object {},
+            Object {
+              "backgroundColor": "#710252",
+              "height": 8,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderColor": "#9898A6",
+              "borderRadius": 4,
+              "borderStyle": "solid",
+              "borderWidth": 1,
+              "justifyContent": "center",
+              "left": 20,
+              "paddingLeft": 8,
+              "paddingRight": 8,
+              "position": "absolute",
+              "top": 28,
+            },
           ]
         }
       >
-        Gympass PlanCard
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#41414A",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "lineHeight": 16,
+              },
+            ]
+          }
+        >
+          Recommended Plan
+        </Text>
       </View>
       <View
         style={
@@ -562,82 +120,167 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           ]
         }
       >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "marginBottom": 8,
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          plan
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#001027",
+                "fontFamily": "Rubik",
+                "fontSize": 20,
+                "fontWeight": "500",
+                "lineHeight": 28,
+                "marginBottom": 4,
+              },
+            ]
+          }
+        >
+          Basic
+        </Text>
         <Text
           numberOfLines={2}
           style={
             Array [
               Object {
-                "color": undefined,
+                "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "height": 40,
                 "lineHeight": 20,
-                "marginBottom": 12,
-                "marginTop": 8,
               },
             ]
           }
-          variant=""
-        >
-          Gympass Black for employees with Buddha Spa + Reebook included
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": undefined,
-                "fontFamily": "Rubik",
-                "fontSize": 20,
-                "fontWeight": "500",
-                "lineHeight": 28,
-                "marginTop": 12,
-              },
-            ]
-          }
-          variant=""
-        >
-          U$ 99.90
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": undefined,
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "lineHeight": 20,
-                "marginBottom": 8,
-              },
-            ]
-          }
-          variant=""
-        >
-          /month
-        </Text>
-        content's children is rendered
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "paddingTop": 8,
-            },
-          ]
-        }
-      >
+        />
         <View
-          lastChild={true}
           style={
             Array [
               Object {
-                "display": "flex",
+                "flexDirection": "row",
+                "marginBottom": 40,
+                "marginTop": 32,
               },
             ]
           }
         >
-          <TouchableWithoutFeedback>
+          <View
+            align="flex-start"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-start",
+                  "marginRight": 4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#41414A",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
+              }
+            >
+              $
+            </Text>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#41414A",
+                  "fontFamily": "Rubik",
+                  "fontSize": 48,
+                  "fontWeight": "500",
+                  "lineHeight": 56,
+                },
+              ]
+            }
+          >
+            99.90
+          </Text>
+          <View
+            align="flex-end"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-end",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#41414A",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
+              }
+            >
+              /month
+            </Text>
+          </View>
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "marginBottom": 8,
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          Get access to
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "marginTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "marginBottom": 16,
+                },
+              ]
+            }
+          >
             <View
               style={
                 Object {
@@ -645,54 +288,191 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 }
               }
             >
-              <View
-                disabled={false}
-                full={false}
-                inverted={false}
-                pressed={false}
-                small={false}
+              <RNSVGSvgView
+                bbHeight={16}
+                bbWidth={16}
+                fill="#9898A6"
+                focusable={false}
+                height={16}
                 style={
                   Array [
                     Object {
-                      "backgroundColor": "#231B22",
-                      "borderRadius": 9999,
-                      "height": 48,
-                      "justifyContent": "center",
-                      "paddingLeft": 24,
-                      "paddingRight": 24,
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    Object {
+                      "marginRight": 12,
+                    },
+                    Object {
+                      "opacity": 1,
+                    },
+                    Object {
+                      "flex": 0,
+                      "height": 16,
+                      "width": 16,
+                    },
+                  ]
+                }
+                width={16}
+              >
+                <RNSVGGroup
+                  fill={
+                    Array [
+                      0,
+                      4288190630,
+                    ]
+                  }
+                  fillOpacity={1}
+                  fillRule={1}
+                  font={Object {}}
+                  matrix={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                  opacity={1}
+                  originX={0}
+                  originY={0}
+                  propList={
+                    Array [
+                      "fill",
+                    ]
+                  }
+                  rotation={0}
+                  scaleX={1}
+                  scaleY={1}
+                  skewX={0}
+                  skewY={0}
+                  stroke={null}
+                  strokeDasharray={null}
+                  strokeDashoffset={null}
+                  strokeLinecap={0}
+                  strokeLinejoin={0}
+                  strokeMiterlimit={4}
+                  strokeOpacity={1}
+                  strokeWidth={1}
+                  vectorEffect={0}
+                  x={0}
+                  y={0}
+                />
+              </RNSVGSvgView>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#001027",
+                      "fontFamily": "Rubik",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "lineHeight": 20,
+                    },
+                  ]
+                }
+              >
+                list item
+              </Text>
+            </View>
+            <TouchableWithoutFeedback>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "marginTop": 12,
                     },
                   ]
                 }
               >
                 <Text
-                  disabled={false}
-                  inverted={false}
-                  pressed={false}
                   style={
                     Array [
                       Object {
-                        "color": "#FFFFFF",
+                        "color": "#652CDB",
                         "fontFamily": "Rubik",
-                        "fontSize": 14,
-                        "fontWeight": "700",
-                        "textAlign": "center",
+                        "fontSize": 12,
+                        "fontWeight": "500",
                       },
                     ]
                   }
                 >
-                  should have buttons
+                  button
                 </Text>
               </View>
-            </View>
-          </TouchableWithoutFeedback>
+            </TouchableWithoutFeedback>
+          </View>
         </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginTop": 24,
+            },
+          ]
+        }
+      >
+        <TouchableWithoutFeedback
+          full={true}
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              disabled={false}
+              full={true}
+              inverted={false}
+              pressed={false}
+              small={false}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "#F46152",
+                    "borderRadius": 9999,
+                    "height": 48,
+                    "justifyContent": "center",
+                    "paddingLeft": 24,
+                    "paddingRight": 24,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                disabled={false}
+                inverted={false}
+                pressed={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#FFFFFF",
+                      "fontFamily": "Rubik",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                      "textAlign": "center",
+                    },
+                  ]
+                }
+              >
+                Select this plan
+              </Text>
+            </View>
+          </View>
+        </TouchableWithoutFeedback>
       </View>
     </View>
   </View>
 </View>
 `;
 
-exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`] = `
+exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
 <View
   collapsable={true}
   pointerEvents="box-none"
@@ -722,7 +502,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
       style={
         Array [
           Object {
-            "backgroundColor": "#D8385E",
+            "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
             "elevation": 4,
             "overflow": "hidden",
@@ -732,217 +512,44 @@ exports[`<PlanCard /> Snapshots should match snapshot with secondary PlanCard 1`
             "paddingTop": 16,
           },
           Object {
-            "maxWidth": 280,
-            "width": "100%",
-          },
-        ]
-      }
-      variant="secondary"
-      variantIntensity={2}
-    >
-      <View
-        style={
-          Array [
-            Object {},
-          ]
-        }
-      >
-        Gympass PlanCard
-      </View>
-      <View
-        style={
-          Array [
-            Object {},
-          ]
-        }
-      >
-        <Text
-          numberOfLines={2}
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "height": 40,
-                "lineHeight": 20,
-                "marginBottom": 12,
-                "marginTop": 8,
-              },
-            ]
-          }
-          variant="secondary"
-        >
-          Gympass Black for employees with Buddha Spa + Reebook included
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 20,
-                "fontWeight": "500",
-                "lineHeight": 28,
-                "marginTop": 12,
-              },
-            ]
-          }
-          variant="secondary"
-        >
-          U$ 99.90
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "lineHeight": 20,
-                "marginBottom": 8,
-              },
-            ]
-          }
-          variant="secondary"
-        >
-          /month
-        </Text>
-        content's children is rendered
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "paddingTop": 8,
-            },
-          ]
-        }
-      >
-        <View
-          lastChild={true}
-          style={
-            Array [
-              Object {
-                "display": "flex",
-              },
-            ]
-          }
-        >
-          <TouchableWithoutFeedback>
-            <View
-              style={
-                Object {
-                  "flexDirection": "row",
-                }
-              }
-            >
-              <View
-                disabled={false}
-                full={false}
-                inverted={false}
-                pressed={false}
-                small={false}
-                style={
-                  Array [
-                    Object {
-                      "backgroundColor": "#231B22",
-                      "borderRadius": 9999,
-                      "height": 48,
-                      "justifyContent": "center",
-                      "paddingLeft": 24,
-                      "paddingRight": 24,
-                    },
-                  ]
-                }
-              >
-                <Text
-                  disabled={false}
-                  inverted={false}
-                  pressed={false}
-                  style={
-                    Array [
-                      Object {
-                        "color": "#FFFFFF",
-                        "fontFamily": "Rubik",
-                        "fontSize": 14,
-                        "fontWeight": "700",
-                        "textAlign": "center",
-                      },
-                    ]
-                  }
-                >
-                  should have buttons
-                </Text>
-              </View>
-            </View>
-          </TouchableWithoutFeedback>
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    style={
-      Array [
-        Object {
-          "elevation": 4,
-          "shadowColor": "rgba(152, 152, 166, 0.25)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 6,
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": undefined,
-            "borderRadius": 8,
-            "elevation": 4,
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "maxWidth": 288,
             "overflow": "hidden",
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 16,
-            "paddingTop": 16,
-          },
-          Object {
-            "maxWidth": 280,
+            "paddingBottom": 32,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 64,
+            "position": "relative",
+            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
             "width": "100%",
           },
         ]
       }
-      variant="tertiary"
-      variantIntensity={2}
+      variant=""
+      variantIntensity={3}
     >
       <View
         style={
           Array [
-            Object {},
+            Object {
+              "backgroundColor": "#1D856C",
+              "height": 8,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
           ]
         }
-      >
-        Gympass PlanCard
-      </View>
+        variant="hope"
+      />
       <View
         style={
           Array [
@@ -950,129 +557,132 @@ exports[`<PlanCard /> Snapshots should match snapshot with tertiary PlanCard 1`]
           ]
         }
       >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "marginBottom": 8,
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          plan
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#001027",
+                "fontFamily": "Rubik",
+                "fontSize": 20,
+                "fontWeight": "500",
+                "lineHeight": 28,
+                "marginBottom": 4,
+              },
+            ]
+          }
+        >
+          Basic
+        </Text>
         <Text
           numberOfLines={2}
           style={
             Array [
               Object {
-                "color": "#FFFFFF",
+                "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "400",
                 "height": 40,
                 "lineHeight": 20,
-                "marginBottom": 12,
-                "marginTop": 8,
               },
             ]
           }
-          variant="tertiary"
-        >
-          Gympass Black for employees with Buddha Spa + Reebook included
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 20,
-                "fontWeight": "500",
-                "lineHeight": 28,
-                "marginTop": 12,
-              },
-            ]
-          }
-          variant="tertiary"
-        >
-          U$ 99.90
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "lineHeight": 20,
-                "marginBottom": 8,
-              },
-            ]
-          }
-          variant="tertiary"
-        >
-          /month
-        </Text>
-        content's children is rendered
-      </View>
-      <View
-        style={
-          Array [
-            Object {
-              "paddingTop": 8,
-            },
-          ]
-        }
-      >
+        />
         <View
-          lastChild={true}
           style={
             Array [
               Object {
-                "display": "flex",
+                "flexDirection": "row",
+                "marginBottom": 40,
+                "marginTop": 32,
               },
             ]
           }
         >
-          <TouchableWithoutFeedback>
-            <View
-              style={
+          <View
+            align="flex-start"
+            style={
+              Array [
                 Object {
-                  "flexDirection": "row",
-                }
+                  "alignSelf": "flex-start",
+                  "marginRight": 4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#41414A",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
               }
             >
-              <View
-                disabled={false}
-                full={false}
-                inverted={false}
-                pressed={false}
-                small={false}
-                style={
-                  Array [
-                    Object {
-                      "backgroundColor": "#231B22",
-                      "borderRadius": 9999,
-                      "height": 48,
-                      "justifyContent": "center",
-                      "paddingLeft": 24,
-                      "paddingRight": 24,
-                    },
-                  ]
-                }
-              >
-                <Text
-                  disabled={false}
-                  inverted={false}
-                  pressed={false}
-                  style={
-                    Array [
-                      Object {
-                        "color": "#FFFFFF",
-                        "fontFamily": "Rubik",
-                        "fontSize": 14,
-                        "fontWeight": "700",
-                        "textAlign": "center",
-                      },
-                    ]
-                  }
-                >
-                  should have buttons
-                </Text>
-              </View>
-            </View>
-          </TouchableWithoutFeedback>
+              $
+            </Text>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#41414A",
+                  "fontFamily": "Rubik",
+                  "fontSize": 48,
+                  "fontWeight": "500",
+                  "lineHeight": 56,
+                },
+              ]
+            }
+          >
+            99.90
+          </Text>
+          <View
+            align="flex-end"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-end",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#41414A",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
+              }
+            >
+              /month
+            </Text>
+          </View>
         </View>
       </View>
     </View>

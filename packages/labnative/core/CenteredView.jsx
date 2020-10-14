@@ -1,33 +1,7 @@
 import React, { useState } from 'react';
-import {
-  View,
-  Image,
-  Picker,
-  Platform,
-  TouchableWithoutFeedback,
-  Text,
-  ActionSheetIOS,
-  Switch,
-} from 'react-native';
+import { View, Text, Switch } from 'react-native';
 import { ThemeProvider } from '@gympass/yoga';
 import { ThemeConsumer } from 'styled-components';
-
-import paletteIcon from '../assets/images/palette_icon.png';
-
-const themeChoices = [
-  {
-    value: 'EndUser',
-    label: 'End User',
-  },
-  {
-    value: 'Corporate',
-    label: 'Corporate',
-  },
-  {
-    value: 'Gyms',
-    label: 'Gyms',
-  },
-];
 
 const CenteredView = props => {
   const [darkMode, setDarkMode] = useState('#FFF');

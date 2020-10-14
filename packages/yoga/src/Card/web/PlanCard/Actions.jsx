@@ -1,17 +1,10 @@
 import styled from 'styled-components';
+
 import Actions from '../Card/Actions';
+import theme from '../../../Theme/helpers/themeReader';
 
 const PlanActions = styled(Actions)`
-  ${({
-    theme: {
-      yoga: { spacing },
-    },
-  }) => `
-    *:not(:last-child) {
-      margin-bottom: ${spacing.xxsmall}px;
-    }
-    padding-top: ${spacing.xxsmall}px;
-  `}
+  margin-top: ${theme.components.card.plan.actions.margin.top}px;
 `;
 
 PlanActions.displayName = 'PlanCard.Actions';

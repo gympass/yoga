@@ -1,5 +1,7 @@
+/* eslint-disable no-undef, no-alert */
 import React from 'react';
 import { Card, PlanCard, EventCard, GymCard, Button } from '@gympass/yoga';
+import { Star } from '@gympass/yoga-icons';
 import { Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
@@ -94,65 +96,43 @@ const CardPage = () => {
       </ScrollView>
 
       <DocTitle>Plan Card</DocTitle>
-      <ScrollView horizontal style={{ height: 260 }}>
-        <PlanCard
-          style={{
-            width: 250,
-            marginRight: 16,
-            marginLeft: 8,
-          }}
-          ribbon={{
-            text: 'Tag Label',
-          }}
-        >
+      <ScrollView horizontal style={{ height: 700 }}>
+        <PlanCard style={{ marginLeft: 10 }}>
+          <PlanCard.Tag>Recommended for you</PlanCard.Tag>
           <PlanCard.Content
-            title="Gympass Black for employees with Buddha Spa + Reebook included"
-            price="U$ 99.90"
+            subtitle="plan"
+            title="Basic"
+            description="Try a new training experience"
+            currency="$"
+            price="99.90"
             period="/month"
-          />
+          >
+            <PlanCard.Subtitle>Get access to</PlanCard.Subtitle>
+            <PlanCard.List>
+              <PlanCard.ListItem
+                icon={Star}
+                text="2.900 gyms and studios"
+                buttonProps={{
+                  children: 'See all gyms and studios',
+                  onPress: () => {
+                    alert('See all gyms and studios');
+                  },
+                }}
+              />
+              <PlanCard.ListItem
+                icon={Star}
+                text="24 wellness app"
+                buttonProps={{
+                  children: 'See all apps',
+                  onPress: () => {
+                    alert('See all apps');
+                  },
+                }}
+              />
+            </PlanCard.List>
+          </PlanCard.Content>
           <PlanCard.Actions>
-            <Button.Link variant="secondary">See gyms included</Button.Link>
-          </PlanCard.Actions>
-        </PlanCard>
-        <PlanCard
-          style={{
-            width: 250,
-            marginRight: 16,
-            marginLeft: 8,
-          }}
-          ribbon={{
-            text: 'Medium Label',
-            variant: 'secondary',
-          }}
-        >
-          <PlanCard.Content
-            title="Gympass Black for employees with Buddha Spa + Reebook included"
-            price="U$ 129.90"
-            period="/month"
-          />
-          <PlanCard.Actions>
-            <Button.Link variant="secondary">See gyms included</Button.Link>
-          </PlanCard.Actions>
-        </PlanCard>
-
-        <PlanCard
-          style={{
-            width: 250,
-            marginRight: 16,
-            marginLeft: 8,
-          }}
-          ribbon={{
-            text: 'Super large label in french',
-          }}
-          variant="secondary"
-        >
-          <PlanCard.Content
-            title="Gympass Black for employees with Buddha Spa + Reebook included"
-            price="U$ 299.90"
-            period="/month"
-          />
-          <PlanCard.Actions>
-            <Button.Link inverted>See gyms included</Button.Link>
+            <Button full>Select this plan</Button>
           </PlanCard.Actions>
         </PlanCard>
       </ScrollView>

@@ -6,6 +6,7 @@ const Card = ({
   borders,
   fontWeights,
   fontSizes,
+  lineHeights,
 }) => ({
   backgroundColor: colors.white,
   padding: {
@@ -20,21 +21,107 @@ const Card = ({
     radius: radii.circle,
   },
   plan: {
-    title: {
-      margin: {
-        top: spacing.xxsmall,
-        bottom: spacing.xsmall,
+    padding: {
+      top: spacing.xxxlarge,
+      right: spacing.medium,
+      bottom: spacing.xlarge,
+      left: spacing.medium,
+    },
+    radius: 16,
+    tag: {
+      radius: radii.semiRounded,
+      position: {
+        top: spacing.medium,
+        left: spacing.medium,
+      },
+      padding: {
+        right: spacing.xxsmall,
+        left: spacing.xxsmall,
+      },
+      border: {
+        width: borders.small,
+        color: colors.gray[7],
+      },
+      font: {
+        size: fontSizes.xsmall,
+        height: lineHeights.xsmall,
+        weight: fontWeights.medium,
       },
     },
-    price: {
-      margin: {
-        top: spacing.xsmall,
-      },
-    },
-    period: {
+    subtitle: {
       margin: {
         bottom: spacing.xxsmall,
       },
+      font: {
+        color: colors.gray[8],
+        weight: fontWeights.medium,
+        size: fontSizes.xsmall,
+      },
+    },
+    title: {
+      color: '#001027',
+      margin: {
+        bottom: spacing.xxxsmall,
+      },
+    },
+    description: {
+      color: colors.gray[8],
+    },
+    price: {
+      currency: {
+        margin: {
+          right: spacing.xxxsmall,
+        },
+      },
+      margin: {
+        top: spacing.xlarge,
+        bottom: spacing.xxlarge,
+      },
+    },
+    list: {
+      margin: {
+        top: spacing.small,
+      },
+      item: {
+        margin: {
+          bottom: spacing.small,
+        },
+        font: {
+          size: fontSizes.small,
+          color: '#001027',
+        },
+        icon: {
+          margin: {
+            right: spacing.xsmall,
+          },
+        },
+      },
+      button: {
+        font: {
+          color: colors.secondary[3],
+          size: fontSizes.xsmall,
+          weight: fontWeights.medium,
+        },
+        margin: {
+          top: spacing.xsmall,
+        },
+      },
+    },
+    actions: {
+      margin: {
+        top: spacing.large,
+      },
+    },
+    colors: {
+      vibin: '#D8385E',
+      hope: '#1D856C',
+      verve: '#FF874C',
+      light: '#D7D7E0',
+      energy: '#FFC24C',
+      medium: '#6B6B78',
+      stamina: '#231B22',
+      relax: '#7068D4',
+      deep: '#710252',
     },
   },
   gym: {

@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga",
-  "version": "4.1.2",
+  "version": "5.0.1",
   "description": "Gympass component library",
   "main": "./src",
   "sideEffects": false,
