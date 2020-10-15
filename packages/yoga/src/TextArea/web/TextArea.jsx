@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { string, bool, number, func, shape } from 'prop-types';
 
-import FieldSet from '../../Input/web/FieldSet';
+import FieldSet from '../../Input/web/Fieldset';
 import Field from '../../Input/web/Field';
 import Label from '../../Input/web/Label';
 import Legend from '../../Input/web/Legend';
