@@ -157,7 +157,6 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
     >
       <input
         class="c2"
-        data-testid="input"
         value=""
       />
       <label
@@ -340,7 +339,6 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
     >
       <input
         class="c2"
-        data-testid="input"
         disabled=""
         value=""
       />
@@ -544,7 +542,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
     >
       <input
         class="c2"
-        data-testid="input"
         value=""
       />
       <label
@@ -733,7 +730,6 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
     >
       <input
         class="c2"
-        data-testid="input"
         value=""
       />
       <label
@@ -946,7 +942,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
     >
       <input
         class="c2"
-        data-testid="input"
         maxlength="20"
         value=""
       />
@@ -1143,7 +1138,6 @@ exports[`<Input /> Snapshots should match with label 1`] = `
     >
       <input
         class="c2"
-        data-testid="input"
         value=""
       />
       <label

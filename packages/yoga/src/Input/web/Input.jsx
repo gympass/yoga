@@ -94,7 +94,6 @@ const Input = React.forwardRef(
     return (
       <Control full={full}>
         <Fieldset
-          area-hidden="true"
           disabled={disabled}
           error={error}
           full={full}
@@ -112,7 +111,6 @@ const Input = React.forwardRef(
               maxLength,
             }}
             ref={inputRef}
-            data-testid="input"
             value={inputValue}
             onChange={e => {
               setInputValue(e.target.value);
