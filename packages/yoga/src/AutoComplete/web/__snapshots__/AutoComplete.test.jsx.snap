@@ -773,8 +773,10 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
           </legend>
         </fieldset>
         <svg
+          height="20"
           role="button"
           tabindex="0"
+          width="20"
         />
       </div>
     </div>
@@ -1122,8 +1124,10 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
           </legend>
         </fieldset>
         <svg
+          height="20"
           role="button"
           tabindex="0"
+          width="20"
         />
       </div>
     </div>
