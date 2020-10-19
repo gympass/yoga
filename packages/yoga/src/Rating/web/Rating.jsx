@@ -33,8 +33,7 @@ const RatingWrapper = styled.div`
 
     ${readOnly ? 'pointer-events: none;' : ''}
 
-    svg {
-      margin-left: ${rating.gutter / 2}px;
+    svg:not(:last-child) {
       margin-right: ${rating.gutter / 2}px;
     }
   `}
@@ -62,9 +61,12 @@ const Rating = ({
   const [hover, setHover] = useState(false);
   const [currentRating, setCurrentRating] = useState(0);
 
+  const ICON_PADDING_SPACING = iconSize / 12;
+  const VIEW_BOX_ICON_SIZE = iconSize * 0.85;
+
   return (
     <RatingWrapper
-      width={rating.gutter * (max - 1) + iconSize * max}
+      width={rating.gutter * (max - 1) + VIEW_BOX_ICON_SIZE * max}
       height={iconSize}
       mouseOver={hover}
       readOnly={readOnly}
@@ -96,39 +98,44 @@ const Rating = ({
         let width;
 
         if (currentRating >= i + 1 || (!hover && diff <= 0)) {
+          // full filled star
           return (
             <Icon
               fill={rating.backgroundColor}
               key={`filled-${i}`}
               width={iconSize}
               height={iconSize}
-              viewBox={`0 0 ${iconSize} ${iconSize}`}
+              viewBox={`${ICON_PADDING_SPACING} ${ICON_PADDING_SPACING} ${VIEW_BOX_ICON_SIZE} ${VIEW_BOX_ICON_SIZE}`}
             />
           );
         }
 
         if (!hover && diff > 0 && diff < 1) {
+          // half filled star
           width = (1 - diff) * iconSize;
           const dWidth = diff * iconSize;
-          const wViewBox = iconSize * (1 - diff);
-          const dViewBox = iconSize * diff;
+          const wViewBox = VIEW_BOX_ICON_SIZE * (1 - diff);
+          const dViewBox = VIEW_BOX_ICON_SIZE * diff;
 
           return (
             <React.Fragment key={`half-${i}`}>
+              {/* // half filled star */}
               <Icon
                 fill={rating.backgroundColor}
                 width={width}
                 height={iconSize}
-                viewBox={`0 0 ${wViewBox} ${iconSize}`}
+                viewBox={`${ICON_PADDING_SPACING} ${ICON_PADDING_SPACING} ${wViewBox} ${VIEW_BOX_ICON_SIZE}`}
                 style={{
                   marginRight: 'unset',
                 }}
               />
+              {/* // half unfilled star */}
               <Icon
                 fill={colors.gray[5]}
                 width={dWidth}
                 height={iconSize}
-                viewBox={`${wViewBox} 0 ${dViewBox} ${iconSize}`}
+                viewBox={`${wViewBox +
+                  ICON_PADDING_SPACING} ${ICON_PADDING_SPACING} ${dViewBox} ${VIEW_BOX_ICON_SIZE}`}
                 style={{
                   marginLeft: 'unset',
                 }}
@@ -138,12 +145,13 @@ const Rating = ({
         }
 
         return (
+          // unfilled star
           <Icon
             fill={colors.gray[5]}
             key={`unfilled-${i}`}
             width={iconSize}
             height={iconSize}
-            viewBox={`0 0 ${iconSize} ${iconSize}`}
+            viewBox={`${ICON_PADDING_SPACING} ${ICON_PADDING_SPACING} ${VIEW_BOX_ICON_SIZE} ${VIEW_BOX_ICON_SIZE}`}
           />
         );
       })}
