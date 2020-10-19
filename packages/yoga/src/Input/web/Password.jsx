@@ -123,7 +123,11 @@ const Password = ({ disabled, style, className, full, ...props }) => {
         disabled={disabled}
         role="button"
       >
-        {showPassword ? <Visibility /> : <VisibilityOff />}
+        {showPassword ? (
+          <Visibility width={20} height={20} />
+        ) : (
+          <VisibilityOff width={20} height={20} />
+        )}
       </IconWrapper>
     </Wrapper>
   );

@@ -10,7 +10,7 @@ import {
   bool,
   oneOfType,
 } from 'prop-types';
-import { ArrowDown } from '@gympass/yoga-icons';
+import { ChevronDown } from '@gympass/yoga-icons';
 
 const Wrapper = styled.div`
   ${({
@@ -47,7 +47,7 @@ const Selector = styled.div`
     box-sizing: border-box;
 
     width: 100%;
-    padding: ${dropdown.selector.padding.top}px 
+    padding: ${dropdown.selector.padding.top}px
       ${dropdown.selector.padding.right}px
       ${dropdown.selector.padding.bottom}px
       ${dropdown.selector.padding.left}px;
@@ -174,10 +174,10 @@ const OptionsList = styled.ul`
         : ''
     };
 
-    border-radius: 
-        ${dropdown.option.border.radius.topLeft}px 
-        ${dropdown.option.border.radius.topRight}px 
-        ${dropdown.option.border.radius.bottomRight}px 
+    border-radius:
+        ${dropdown.option.border.radius.topLeft}px
+        ${dropdown.option.border.radius.topRight}px
+        ${dropdown.option.border.radius.bottomRight}px
         ${dropdown.option.border.radius.bottomLeft}px;
   `}
 `;
@@ -196,22 +196,22 @@ const Option = styled.li`
     display: flex;
     align-items: center;
     height: ${dropdown.option.height}px;
-    padding: 
-      ${dropdown.option.padding.top}px 
-      ${dropdown.option.padding.right}px 
-      ${dropdown.option.padding.bottom}px 
+    padding:
+      ${dropdown.option.padding.top}px
+      ${dropdown.option.padding.right}px
+      ${dropdown.option.padding.bottom}px
       ${dropdown.option.padding.left}px;
     cursor: pointer;
-  
+
     font-family: ${baseFont.family};
     font-size: ${dropdown.option.font.size}px;
     line-height: ${dropdown.option.font.lineHeight}px;
-    
+
     font-weight: ${
       isSelected
         ? `${dropdown.selected.option.font.weight}`
         : `${dropdown.option.font.weight}`
-    }; 
+    };
 
     color: ${
       isSelected
@@ -226,21 +226,21 @@ const Option = styled.li`
     }
 
     &:hover {
-      background-color: ${dropdown.hover.option.backgroundColor}; 
+      background-color: ${dropdown.hover.option.backgroundColor};
     }
 
     &:last-child {
-      border-radius: 
-        ${dropdown.option.border.radius.topLeft}px 
-        ${dropdown.option.border.radius.topRight}px 
-        ${dropdown.option.border.radius.bottomRight}px 
+      border-radius:
+        ${dropdown.option.border.radius.topLeft}px
+        ${dropdown.option.border.radius.topRight}px
+        ${dropdown.option.border.radius.bottomRight}px
         ${dropdown.option.border.radius.bottomLeft}px;
     }
   `}
 `;
 
 const ArrowIcon = styled(({ isOpen, disabled, selected, ...props }) => (
-  <ArrowDown {...props} />
+  <ChevronDown width={20} height={20} {...props} />
 ))`
   ${({
     isOpen,
