@@ -69,7 +69,6 @@ import {
   Linkedin,
   Location,
   LockOff,
-  LockOn,
   Lock,
   LockerRoom,
   LogOut,
@@ -130,7 +129,6 @@ import {
   Visibility,
   Wallet,
   Whatsapp,
-  YoutubeFilled,
   Youtube,
 } from './svg';
 
@@ -205,7 +203,6 @@ export {
   Linkedin,
   Location,
   LockOff,
-  LockOn,
   Lock,
   LockerRoom,
   LogOut,
@@ -266,6 +263,5 @@ export {
   Visibility,
   Wallet,
   Whatsapp,
-  YoutubeFilled,
   Youtube,
 };

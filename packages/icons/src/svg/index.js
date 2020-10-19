@@ -68,7 +68,6 @@ import Link from './link.svg';
 import Linkedin from './linkedin.svg';
 import Location from './location.svg';
 import LockOff from './lock_off.svg';
-import LockOn from './lock_on.svg';
 import Lock from './lock.svg';
 import LockerRoom from './locker_room.svg';
 import LogOut from './log_out.svg';
@@ -129,7 +128,6 @@ import VisibilityOff from './visibility_off.svg';
 import Visibility from './visibility.svg';
 import Wallet from './wallet.svg';
 import Whatsapp from './whatsapp.svg';
-import YoutubeFilled from './youtube_filled.svg';
 import Youtube from './youtube.svg';
 
 export {
@@ -203,7 +201,6 @@ export {
   Linkedin,
   Location,
   LockOff,
-  LockOn,
   Lock,
   LockerRoom,
   LogOut,
@@ -264,6 +261,5 @@ export {
   Visibility,
   Wallet,
   Whatsapp,
-  YoutubeFilled,
   Youtube,
 };
