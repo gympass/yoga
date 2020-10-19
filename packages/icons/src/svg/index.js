@@ -4,7 +4,6 @@ import AddBooking from './add_booking.svg';
 import Add from './add.svg';
 import AlertCircle from './alert_circle.svg';
 import AlertTriangle from './alert_triangle.svg';
-import ArrowDown from './arrow_down.svg';
 import ArrowDropDown from './arrow_drop_down.svg';
 import ArrowDropUp from './arrow_drop_up.svg';
 import ArrowLeft from './arrow_left.svg';
@@ -29,7 +28,6 @@ import ChevronDown from './chevron_down.svg';
 import ChevronLeft from './chevron_left.svg';
 import ChevronRight from './chevron_right.svg';
 import ChevronUp from './chevron_up.svg';
-import Clock from './clock.svg';
 import CloseFilled from './close_filled.svg';
 import Close from './close.svg';
 import CompassFilled from './compass_filled.svg';
@@ -42,7 +40,6 @@ import Disconnect from './disconnect.svg';
 import DislikeFilled from './dislike_filled.svg';
 import Dislike from './dislike.svg';
 import Doc from './doc.svg';
-import Done from './done.svg';
 import Download from './download.svg';
 import Draggable from './draggable.svg';
 import Dumbbell from './dumbbell.svg';
@@ -129,7 +126,6 @@ import UserFilled from './user_filled.svg';
 import User from './user.svg';
 import Video from './video.svg';
 import VisibilityOff from './visibility_off.svg';
-import VisibilityOn from './visibility_on.svg';
 import Visibility from './visibility.svg';
 import Wallet from './wallet.svg';
 import Whatsapp from './whatsapp.svg';
@@ -143,7 +139,6 @@ export {
   Add,
   AlertCircle,
   AlertTriangle,
-  ArrowDown,
   ArrowDropDown,
   ArrowDropUp,
   ArrowLeft,
@@ -168,7 +163,6 @@ export {
   ChevronLeft,
   ChevronRight,
   ChevronUp,
-  Clock,
   CloseFilled,
   Close,
   CompassFilled,
@@ -181,7 +175,6 @@ export {
   DislikeFilled,
   Dislike,
   Doc,
-  Done,
   Download,
   Draggable,
   Dumbbell,
@@ -268,7 +261,6 @@ export {
   User,
   Video,
   VisibilityOff,
-  VisibilityOn,
   Visibility,
   Wallet,
   Whatsapp,
