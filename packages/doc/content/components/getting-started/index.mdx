@@ -36,3 +36,47 @@ const App = () => (
   </ThemeProvider>
 );
 ```
+### Adding Gympass font in your project
+
+Both iOS and Android come with their own set of platform fonts but all Yoga
+components needs its own font family based on
+[font design token](https://gympass.github.io/yoga/guidelines/tokens/fonts).
+
+#### React Native > 0.60
+
+Edit or create the file `react-native.config.js` in your project's root to be as
+follows:
+
+```javascript type=highlight
+module.exports = {
+  project: {
+    ios: {},
+    android: {},
+  },
+  assets: ['./node_modules/@gympass/yoga/fonts'],
+};
+```
+
+and run the command bellow:
+
+```javascript type=highlight
+react-native link
+```
+
+#### React Native < 0.60
+
+Add the following lines in your `package.json`:
+
+```javascript type=highlight
+"rnpm": {
+  "assets": [
+    "./node_modules/@gympass/yoga/fonts"
+  ]
+}
+```
+
+and run the command bellow:
+
+```javascript type=highlight
+react-native link
+```
