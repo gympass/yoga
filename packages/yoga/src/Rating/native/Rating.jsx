@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { PanResponder } from 'react-native';
 import styled, { withTheme } from 'styled-components';
 import { number, func, bool, shape } from 'prop-types';
-import { Star } from '@gympass/yoga-icons';
+import { StarFilled } from '@gympass/yoga-icons';
 
 import { max as maxPropType } from '../../shared';
 
@@ -31,7 +31,7 @@ const Rating = ({
       components: { rating },
     },
   },
-  icon: { type: Icon = Star, size: iconSize = 24 },
+  icon: { type: Icon = StarFilled, size: iconSize = 24 },
   ...rest
 }) => {
   const [panResponder, setPanResponder] = useState({});
@@ -175,7 +175,7 @@ Rating.propTypes = {
 Rating.defaultProps = {
   value: undefined,
   icon: {
-    type: Star,
+    type: StarFilled,
     size: 24,
   },
   max: 5,
