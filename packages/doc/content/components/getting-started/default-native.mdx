@@ -1,15 +1,3 @@
-### Installing
-
-In order to install our design-system just run:
-
-```bash type=highlight
-yarn add @gympass/yoga
-
-// or
-
-npm install @gympass/yoga
-```
-
 ### Adding Gympass font in your project
 
 Both iOS and Android come with their own set of platform fonts but all Yoga
@@ -53,18 +41,4 @@ and run the command bellow:
 
 ```javascript type=highlight
 react-native link
-```
-
-### Usage
-
-An important point in using it is that your whole application must be wrapped in our `ThemeProvider` component:
-
-```javascript type=highlight
-import { ThemeProvider, Button } from '@gympass/yoga';
-
-const App = () => (
-  <ThemeProvider>
-    <Button>Find an activity</Button>
-  </ThemeProvider>
-);
 ```
