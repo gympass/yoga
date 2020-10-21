@@ -2,9 +2,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { string, bool, number, func, shape } from 'prop-types';
 
-import Wrapper from '../../Input/web/Wrapper';
+import FieldSet from '../../Input/web/Fieldset';
 import Field from '../../Input/web/Field';
 import Label from '../../Input/web/Label';
+import Legend from '../../Input/web/Legend';
 import Helper from '../../Input/web/Helper';
 
 const Root = styled.div`
@@ -17,29 +18,14 @@ const Root = styled.div`
   `}
 `;
 
-const StyledWrapper = styled(Wrapper)`
-  ${({
-    theme: {
-      yoga: {
-        components: { textarea },
-      },
-    },
-  }) => `
-    height: 88px;
-    box-sizing: border-box;
-
-    padding-top: ${textarea.padding.top}px;
-    padding-right: ${textarea.padding.right}px;
-    padding-bottom: ${textarea.padding.bottom}px;
-    padding-left: ${textarea.padding.left}px;
-   `}
+const StyledFieldSet = styled(FieldSet)`
+  height: 88px;
+  box-sizing: border-box;
 `;
 
 const StyledField = styled(Field)`
   resize: none;
   height: 100%;
-
-  padding: 0;
 `;
 
 /**
@@ -82,7 +68,7 @@ const TextArea = React.forwardRef(
         style={style}
         onClick={() => textAreaRef.current.focus()}
       >
-        <StyledWrapper
+        <StyledFieldSet
           error={error}
           disabled={disabled}
           full={full}
@@ -106,12 +92,13 @@ const TextArea = React.forwardRef(
               onChange(e);
             }}
           />
-          {label && (
-            <Label error={error} disabled={disabled} typed={typed}>
-              {label}
-            </Label>
-          )}
-        </StyledWrapper>
+
+          <Label error={error} disabled={disabled} {...props}>
+            {label}
+          </Label>
+
+          {label && <Legend>{label}</Legend>}
+        </StyledFieldSet>
         <Helper
           disabled={disabled}
           error={error}

@@ -1,13 +1,16 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import { func, string, bool, number, shape, oneOfType } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
 import { theme } from '../../Theme';
-import Wrapper from './Wrapper';
 import Field from './Field';
-import Label from './Label';
+
 import Helper from './Helper';
+
+import Fieldset from './Fieldset';
+import Legend from './Legend';
+import Label from './Label';
 
 const Control = styled.div`
   box-sizing: border-box;
@@ -19,10 +22,42 @@ const Control = styled.div`
         `};
 `;
 
+const IconWrapper = styled.div`
+  ${({
+    theme: {
+      yoga: {
+        spacing,
+        components: { input },
+      },
+    },
+  }) => `
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding-right: ${spacing.small}px;
+    padding-left: ${spacing.xxsmall}px;
+
+    height: ${input.height}px;
+    cursor: pointer;
+
+    outline: none;
+
+    &:hover svg, &:focus svg {
+      fill: ${input.font.color.focus};
+    }
+
+    svg {
+      height: ${input.height}px;
+      width: 20px;
+      fill: ${input.font.color.default};
+    }
+  `}
+`;
+
 const Input = React.forwardRef(
   (
     {
-      className,
       cleanable,
       disabled,
       error,
@@ -39,35 +74,31 @@ const Input = React.forwardRef(
     },
     ref,
   ) => {
-    const [typed, setTyped] = useState(Boolean(value));
+    const inputRef = ref || useRef(null);
     const [inputValue, setInputValue] = useState(value);
 
-    const inputRef = ref || useRef(null);
+    useEffect(() => {
+      setInputValue(value);
+    }, [value]);
 
     const cleanField = e => {
       if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
 
         onClean('');
+
         inputRef.current.focus();
       }
     };
 
-    useEffect(() => {
-      setInputValue(value);
-      setTyped(Boolean(value));
-    }, [value]);
-
     return (
       <Control full={full}>
-        <Wrapper
+        <Fieldset
           disabled={disabled}
           error={error}
           full={full}
-          className={className}
-          style={style}
-          typed={typed}
           label={label}
+          style={style}
         >
           <Field
             {...props}
@@ -78,23 +109,22 @@ const Input = React.forwardRef(
               full,
               readOnly,
               maxLength,
-              typed,
             }}
             ref={inputRef}
             value={inputValue}
             onChange={e => {
-              setTyped(Boolean(e.target.value));
               setInputValue(e.target.value);
               onChange(e);
             }}
           />
-          {label && (
-            <Label typed={typed} error={error} disabled={disabled}>
-              {label}
-            </Label>
-          )}
-          {cleanable && typed && !readOnly && (
-            <Close
+
+          <Label error={error} disabled={disabled}>
+            {label}
+          </Label>
+
+          {label && <Legend>{label}</Legend>}
+          {cleanable && !readOnly && inputValue && (
+            <IconWrapper
               tabIndex={0}
               disabled={disabled}
               onClick={cleanField}
@@ -102,9 +132,12 @@ const Input = React.forwardRef(
               width={20}
               height={20}
               role="button"
-            />
+            >
+              <Close />
+            </IconWrapper>
           )}
-        </Wrapper>
+        </Fieldset>
+
         {(helper || maxLength || error) && (
           <Helper
             error={error}

@@ -3,180 +3,100 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.16.7](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.6...@gympass/yoga-labnative@0.16.7) (2020-10-02)
+## [0.16.8](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.7...@gympass/yoga-labnative@0.16.8) (2020-10-15)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+## [0.16.7](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.6...@gympass/yoga-labnative@0.16.7) (2020-10-02)
 
-
-
+**Note:** Version bump only for package @gympass/yoga-labnative
 
 ## [0.16.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.5...@gympass/yoga-labnative@0.16.6) (2020-09-24)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 ## [0.16.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.4...@gympass/yoga-labnative@0.16.5) (2020-09-21)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
-
-
-
-
 
 ## [0.16.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.3...@gympass/yoga-labnative@0.16.4) (2020-09-10)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 ## [0.16.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.2...@gympass/yoga-labnative@0.16.3) (2020-09-03)
-
 
 ### Bug Fixes
 
-* **labnative:** refactor/clean assets ([28f97f8](https://github.com/Gympass/yoga/commit/28f97f8d456d675c340d53b9e3242019ab9754e4))
-
-
-
-
+- **labnative:** refactor/clean assets ([28f97f8](https://github.com/Gympass/yoga/commit/28f97f8d456d675c340d53b9e3242019ab9754e4))
 
 ## [0.16.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.1...@gympass/yoga-labnative@0.16.2) (2020-08-26)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 ## [0.16.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.0...@gympass/yoga-labnative@0.16.1) (2020-08-25)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 # [0.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.24...@gympass/yoga-labnative@0.16.0) (2020-08-12)
-
 
 ### Features
 
-* **fonts:** add rubik static files ([246f9a7](https://github.com/Gympass/yoga/commit/246f9a7cb19678974605ffa1b0f5c4d0e27bbcaa))
-
-
-
-
+- **fonts:** add rubik static files ([246f9a7](https://github.com/Gympass/yoga/commit/246f9a7cb19678974605ffa1b0f5c4d0e27bbcaa))
 
 ## [0.15.24](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.23...@gympass/yoga-labnative@0.15.24) (2020-06-24)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 ## [0.15.23](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.22...@gympass/yoga-labnative@0.15.23) (2020-06-23)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
-
-
-
-
 
 ## [0.15.22](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.21...@gympass/yoga-labnative@0.15.22) (2020-06-23)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 ## [0.15.21](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.20...@gympass/yoga-labnative@0.15.21) (2020-06-18)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
-
-
-
-
 
 ## [0.15.20](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.19...@gympass/yoga-labnative@0.15.20) (2020-06-16)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 ## [0.15.19](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.18...@gympass/yoga-labnative@0.15.19) (2020-06-15)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
-
-
-
-
 
 ## [0.15.18](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.17...@gympass/yoga-labnative@0.15.18) (2020-06-02)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 ## [0.15.17](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.16...@gympass/yoga-labnative@0.15.17) (2020-05-21)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 ## [0.15.16](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.15...@gympass/yoga-labnative@0.15.16) (2020-05-12)
-
 
 ### Bug Fixes
 
-* **labnative:** adjusting custom transformer ([5761335](https://github.com/Gympass/yoga/commit/5761335bd19214153ba6c3a34af3b9de195e78a2))
-* **labnative:** remove customTransformer ([0dc1263](https://github.com/Gympass/yoga/commit/0dc126307ccead5f63475138399b0f9849d761ab))
-
-
-
-
+- **labnative:** adjusting custom transformer ([5761335](https://github.com/Gympass/yoga/commit/5761335bd19214153ba6c3a34af3b9de195e78a2))
+- **labnative:** remove customTransformer ([0dc1263](https://github.com/Gympass/yoga/commit/0dc126307ccead5f63475138399b0f9849d761ab))
 
 ## [0.15.15](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.14...@gympass/yoga-labnative@0.15.15) (2020-05-11)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 ## [0.15.14](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.13...@gympass/yoga-labnative@0.15.14) (2020-05-11)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 ## [0.15.13](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.12...@gympass/yoga-labnative@0.15.13) (2020-05-08)
-
 
 ### Bug Fixes
 
-* **card:** adjusting card shadow and event-card style ([8cc6083](https://github.com/Gympass/yoga/commit/8cc6083356d7bac48bb340216308a20fc8327e9a))
-* **card:** fix card shadow on ios and android platforms ([4b57bee](https://github.com/Gympass/yoga/commit/4b57bee65c04f2e439c255afbc04a1644bde3435))
-* **metro:** fix import-blob in metro config ([48d4153](https://github.com/Gympass/yoga/commit/48d4153bee29bff6cad6f9fe43de05c053092faf))
-
-
-
-
+- **card:** adjusting card shadow and event-card style ([8cc6083](https://github.com/Gympass/yoga/commit/8cc6083356d7bac48bb340216308a20fc8327e9a))
+- **card:** fix card shadow on ios and android platforms ([4b57bee](https://github.com/Gympass/yoga/commit/4b57bee65c04f2e439c255afbc04a1644bde3435))
+- **metro:** fix import-blob in metro config ([48d4153](https://github.com/Gympass/yoga/commit/48d4153bee29bff6cad6f9fe43de05c053092faf))
 
 ## [0.15.12](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.15.11...@gympass/yoga-labnative@0.15.12) (2020-04-06)
 

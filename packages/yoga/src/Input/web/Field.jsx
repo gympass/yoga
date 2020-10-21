@@ -11,29 +11,33 @@ const labelTransition = css`
       },
     },
   }) => `
-    top: 0;
-    left: ${input.padding.left}px;
-
-    font-size: ${input.label.font.size.typed}px;
-
-    transform: translateY(-50%);
+    transform: translateY(-${input.height / 2 - 2}px);
+    transition-property: transform, font-size;
     transition-duration: ${transition.duration[1]}ms;
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
+
+    font-size: ${input.label.font.size.typed}px;
   `}
 `;
 
 const Field = styled.input`
   width: 100%;
 
-  background-color: transparent;
-
   appearance: none;
+  background-color: transparent;
   outline: none;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  border: none;
+  box-sizing: border-box;
 
   ${({
     cleanable,
     error,
-    typed,
+    value,
     theme: {
       yoga: {
         colors,
@@ -42,8 +46,7 @@ const Field = styled.input`
       },
     },
   }) => css`
-    height: 100%;
-
+    height: ${input.height}px;
     padding-top: ${input.padding.top}px;
     padding-right: ${
       cleanable ? ICON_SIZE + input.padding.right : input.padding.right
@@ -52,18 +55,19 @@ const Field = styled.input`
     padding-left: ${input.padding.left}px;
 
     color: ${input.font.color.focus};
-    border: none;
-
     font-family: ${baseFont.family}, sans-serif;
     font-size: ${input.font.size}px;
     font-weight: ${input.font.weight};
 
-    box-sizing: border-box;
-
     &:focus {
       color: ${input.font.color.focus};
 
-      & + label {
+      & ~ legend {
+        max-width: 1000px;
+        padding: 0 2px;
+      }
+
+      & ~ label {
         ${labelTransition}
 
         font-weight: ${input.label.font.weight.typed};
@@ -80,15 +84,16 @@ const Field = styled.input`
       color: ${input.label.color.default};
     }
 
-    ${
-      typed
-        ? css`
-            & + label {
-              ${labelTransition}
-            }
-          `
-        : ''
-    }
+    ${value &&
+      css`
+        & ~ legend {
+          max-width: 1000px;
+        }
+
+        & ~ label {
+          ${labelTransition}
+        }
+      `}
   `}
 
   &[type="number"]::-webkit-outer-spin-button,
