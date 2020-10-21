@@ -61,12 +61,12 @@ const Rating = ({
   const [hover, setHover] = useState(false);
   const [currentRating, setCurrentRating] = useState(0);
 
-  const ICON_PADDING_SPACING = iconSize / 12;
-  const VIEW_BOX_ICON_SIZE = iconSize * 0.85;
+  const ICON_PADDING_SPACING = 1;
+  const VIEW_BOX_ICON_SIZE = 12;
 
   return (
     <RatingWrapper
-      width={rating.gutter * (max - 1) + VIEW_BOX_ICON_SIZE * max}
+      width={rating.gutter * (max - 1) + iconSize * max}
       height={iconSize}
       mouseOver={hover}
       readOnly={readOnly}
@@ -114,8 +114,9 @@ const Rating = ({
           // half filled star
           width = (1 - diff) * iconSize;
           const dWidth = diff * iconSize;
-          const wViewBox = VIEW_BOX_ICON_SIZE * (1 - diff);
-          const dViewBox = VIEW_BOX_ICON_SIZE * diff;
+          const wViewBox =
+            VIEW_BOX_ICON_SIZE * (1 - diff) - ICON_PADDING_SPACING * 2;
+          const dViewBox = iconSize * diff;
 
           return (
             <React.Fragment key={`half-${i}`}>
@@ -181,7 +182,7 @@ Rating.defaultProps = {
   value: undefined,
   icon: {
     type: Star,
-    size: 12,
+    size: 50,
   },
   max: 5,
   readOnly: true,
