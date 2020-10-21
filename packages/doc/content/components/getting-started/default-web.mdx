@@ -1,28 +1,14 @@
 ### Adding Gympass font in your project
 
+Make sure to import and use `FontLoader` inside `ThemeProvider`.
+
 ```javascript type=highlight
-import React from 'react';
-import GoogleFontLoader from 'react-google-font-loader';
-import { withTheme } from 'styled-components';
+import { ThemeProvider, Button, FontLoader } from '@gympass/yoga';
 
-const FontLoader = ({
-  theme: {
-    yoga: {
-      baseFont: { family, weight },
-    },
-  },
-}) => (
-  <>
-    {typeof window !== 'undefined' ? (
-      <GoogleFontLoader fonts={[{ font: family, weights: weight }]} />
-    ) : (
-      <link
-        rel="stylesheet"
-        href={`https://fonts.googleapis.com/css?family=${family}:${weight.join()}`}
-      />
-    )}
-  </>
+const App = () => (
+  <ThemeProvider>
+    <FontLoader />
+    <Button>Find an activity</Button>
+  </ThemeProvider>
 );
-
-export default withTheme(FontLoader);
 ```
