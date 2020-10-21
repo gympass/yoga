@@ -108,15 +108,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
         width={90}
       >
         <RNSVGSvgView
-          align="xMidYMid"
           bbHeight={18}
           bbWidth={18}
           fill="#FFC24C"
           focusable={false}
           height={18}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
           style={
             Array [
               Object {
@@ -134,8 +130,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
           width={18}
         >
           <RNSVGGroup
@@ -185,15 +179,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
           bbHeight={18}
           bbWidth={18}
           fill="#FFC24C"
           focusable={false}
           height={18}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
           style={
             Array [
               Object {
@@ -211,8 +201,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
           width={18}
         >
           <RNSVGGroup
@@ -262,15 +250,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
           bbHeight={18}
           bbWidth={18}
           fill="#FFC24C"
           focusable={false}
           height={18}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
           style={
             Array [
               Object {
@@ -288,8 +272,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
           width={18}
         >
           <RNSVGGroup
@@ -339,15 +321,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
           bbHeight={18}
           bbWidth={18}
           fill="#FFC24C"
           focusable={false}
           height={18}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
           style={
             Array [
               Object {
@@ -365,8 +343,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
           width={18}
         >
           <RNSVGGroup
@@ -416,15 +392,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
           bbHeight={18}
           bbWidth={18}
           fill="#FFC24C"
           focusable={false}
           height={18}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
           style={
             Array [
               Object {
@@ -442,8 +414,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
           width={18}
         >
           <RNSVGGroup
@@ -723,15 +693,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
         width={90}
       >
         <RNSVGSvgView
-          align="xMidYMid"
           bbHeight={18}
           bbWidth={18}
           fill="#FFC24C"
           focusable={false}
           height={18}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
           style={
             Array [
               Object {
@@ -749,8 +715,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
           width={18}
         >
           <RNSVGGroup
@@ -800,15 +764,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
           bbHeight={18}
           bbWidth={18}
           fill="#FFC24C"
           focusable={false}
           height={18}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
           style={
             Array [
               Object {
@@ -826,8 +786,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
           width={18}
         >
           <RNSVGGroup
@@ -877,15 +835,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
           bbHeight={18}
           bbWidth={18}
           fill="#FFC24C"
           focusable={false}
           height={18}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
           style={
             Array [
               Object {
@@ -903,8 +857,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
           width={18}
         >
           <RNSVGGroup
@@ -954,15 +906,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
           bbHeight={18}
           bbWidth={18}
           fill="#FFC24C"
           focusable={false}
           height={18}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
           style={
             Array [
               Object {
@@ -980,8 +928,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
           width={18}
         >
           <RNSVGGroup
@@ -1031,15 +977,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
           bbHeight={18}
           bbWidth={18}
           fill="#FFC24C"
           focusable={false}
           height={18}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
           style={
             Array [
               Object {
@@ -1057,8 +999,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
           width={18}
         >
           <RNSVGGroup
