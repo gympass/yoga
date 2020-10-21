@@ -101,11 +101,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               "flexDirection": "row",
               "height": 18,
               "justifyContent": "center",
-              "width": 106,
+              "width": 90,
             },
           ]
         }
-        width={106}
+        width={90}
       >
         <RNSVGSvgView
           align="xMidYMid"
@@ -123,10 +123,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
@@ -203,10 +200,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
@@ -283,10 +277,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
@@ -363,10 +354,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
@@ -443,10 +431,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
@@ -731,11 +716,11 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               "flexDirection": "row",
               "height": 18,
               "justifyContent": "center",
-              "width": 106,
+              "width": 90,
             },
           ]
         }
-        width={106}
+        width={90}
       >
         <RNSVGSvgView
           align="xMidYMid"
@@ -753,10 +738,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
@@ -833,10 +815,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
@@ -913,10 +892,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
@@ -993,10 +969,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
@@ -1073,10 +1046,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
