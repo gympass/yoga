@@ -15,9 +15,7 @@ const StyledInput = styled(Input)`
       },
     },
   }) => `
-    input {
-      padding-right: ${ICON_SIZE + input.padding.right}px;
-    }
+    padding-right: ${ICON_SIZE + input.padding.right}px;
   `}
 `;
 
