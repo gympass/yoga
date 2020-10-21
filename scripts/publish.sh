@@ -1,6 +1,7 @@
 #!/bin/bash
 
 BRANCH=`git rev-parse --abbrev-ref HEAD`
+echo "on branch $BRANCH"
 
 if [ $BRANCH == 'master' ];
 then
