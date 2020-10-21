@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+      - alpha
+      - beta
 
 jobs:
   packages:
@@ -44,7 +46,7 @@ jobs:
 
   doc:
     runs-on: ubuntu-latest
-    if: startsWith(github.event.head_commit.message, 'Merge') != true
+    if: startsWith(github.event.head_commit.message, 'Merge') != true && && contains(github.ref, "master")
     steps:
       - uses: actions/checkout@v1
       - name: Configure CI Git User
