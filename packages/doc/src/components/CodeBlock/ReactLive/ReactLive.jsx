@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
 import styled from 'styled-components';
-
 import githubTheme from 'prism-react-renderer/themes/github';
 import { LiveProvider, LiveError, LivePreview } from 'react-live';
+import { hexToRgb } from '@gympass/yoga-common';
 import { MDXContext } from '@mdx-js/react';
 
 import * as YogaComponents from '@gympass/yoga';
@@ -52,8 +52,9 @@ const Component = styled.div`
     transition: all 0.3s ease-in-out;
 
     ${YogaComponents.Col} {
-      background-color: ${primary};
+      background-color: ${hexToRgb(primary, 0.5)};
       border: 1px solid;
+      color: ${white};
     }
 
     > div {
