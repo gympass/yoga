@@ -99,6 +99,8 @@ const Input = React.forwardRef(
               disabled={disabled}
               onClick={cleanField}
               onKeyDown={cleanField}
+              width={20}
+              height={20}
               role="button"
             />
           )}

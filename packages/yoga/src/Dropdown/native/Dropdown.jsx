@@ -10,7 +10,7 @@ import {
   oneOfType,
 } from 'prop-types';
 import { TouchableWithoutFeedback } from 'react-native';
-import { ArrowDown } from '@gympass/yoga-icons';
+import { ChevronDown } from '@gympass/yoga-icons';
 
 import Options from './Options';
 import Backdrop from './Backdrop';
@@ -111,7 +111,7 @@ const Dropdown = ({
           <Label disabled={disabled} selected={selected}>
             {(selected && selected.label) || label}
           </Label>
-          <ArrowDown fill={iconColor()} />
+          <ChevronDown width={20} height={20} fill={iconColor()} />
         </Selector>
       </TouchableWithoutFeedback>
 

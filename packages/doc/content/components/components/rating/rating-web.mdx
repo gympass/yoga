@@ -28,12 +28,6 @@ const Center = styled.div`
   flex-direction: column;
 `;
 
-const Circle = props => (
-  <svg {...props}>
-    <circle cx="6" cy="6" r="6" />
-  </svg>
-);
-
 render(() => {
   const [rating, setRating] = useState(2);
 
@@ -49,22 +43,16 @@ const Center = styled.div`
   flex-direction: column;
 `;
 
-const Circle = props => (
-  <svg {...props}>
-    <circle cx="6" cy="7" r="5" />
-  </svg>
-);
-
 render(
   <Center>
-    <Rating icon={{ type: Circle }} value={1} />
-    <Rating icon={{ type: Circle }} value={1.5} />
-    <Rating icon={{ type: Circle }} value={2} />
-    <Rating icon={{ type: Circle }} value={2.5} />
-    <Rating icon={{ type: Circle }} value={3} />
-    <Rating icon={{ type: Circle }} value={3.5} />
-    <Rating icon={{ type: Circle }} value={4} />
-    <Rating icon={{ type: Circle }} value={4.5} />
+    <Rating value={1} />
+    <Rating icon={{ type: FavoriteFilled }} value={1.5} />
+    <Rating icon={{ type: LikeFilled }} value={2} />
+    <Rating icon={{ type: CompassFilled }} value={2.5} />
+    <Rating icon={{ type: DislikeFilled }} value={3} />
+    <Rating icon={{ type: UserFilled }} value={3.5} />
+    <Rating icon={{ type: SmartphoneFilled }} value={4} />
+    <Rating icon={{ type: PlayFilled }} value={4.5} />
   </Center>,
 );
 ```

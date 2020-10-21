@@ -24,7 +24,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 16px  16px 16px 16px;
+  padding: 16px 16px 16px 16px;
   background-color: #FFFFFF;
   border-radius: 8px;
   border-width: 1px;
@@ -133,6 +133,8 @@ exports[`<Dropdown /> should match snapshot 1`] = `
       >
         <svg
           class="c4"
+          height="20"
+          width="20"
         />
       </button>
     </div>
@@ -164,7 +166,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 16px  16px 16px 16px;
+  padding: 16px 16px 16px 16px;
   background-color: #FFFFFF;
   border-radius: 8px;
   border-width: 1px;
@@ -278,6 +280,8 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
       >
         <svg
           class="c4"
+          height="20"
+          width="20"
         />
       </button>
     </div>
@@ -309,7 +313,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 16px  16px 16px 16px;
+  padding: 16px 16px 16px 16px;
   background-color: #FFFFFF;
   border-radius: 8px;
   border-width: 1px;
@@ -418,6 +422,8 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
       >
         <svg
           class="c4"
+          height="20"
+          width="20"
         />
       </button>
     </div>
@@ -449,7 +455,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 16px  16px 16px 16px;
+  padding: 16px 16px 16px 16px;
   background-color: #FFFFFF;
   border-radius: 8px;
   border-width: 1px;
@@ -569,6 +575,8 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
       >
         <svg
           class="c4"
+          height="20"
+          width="20"
         />
       </button>
     </div>

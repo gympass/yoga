@@ -1,8 +1,8 @@
 import React from 'react';
 import { bool, string, objectOf, any, oneOf } from 'prop-types';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Done } from '@gympass/yoga-icons';
+import { Check } from '@gympass/yoga-icons';
 
 import { HiddenInput } from '../../shared';
 
@@ -43,13 +43,13 @@ const CheckMark = styled.div`
     ${
       checked
         ? `
-        background-color: ${color[3]}; 
+        background-color: ${color[3]};
 
         svg {
           position: absolute;
           top: 50%;
           left: 50%;
-          
+
           fill: ${checkbox.checked.icon.color};
 
           transform: translate(-50%, -50%);
@@ -142,7 +142,7 @@ const CheckboxStyled = styled.div`
       &:focus-within, &:hover {
         ${Shadow} {
           background-color: ${hexToRgb(color[1], 0.5)};
-          
+
           box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[1], 0.5)};
         }
       }
@@ -193,6 +193,11 @@ const Checkbox = ({
   style,
   className,
   variant,
+  theme: {
+    yoga: {
+      components: { checkbox },
+    },
+  },
   ...rest
 }) => (
   <CheckboxWrapper style={style} className={className}>
@@ -207,7 +212,7 @@ const Checkbox = ({
             variant,
           }}
         >
-          {checked && <Done />}
+          {checked && <Check width={checkbox.size} height={checkbox.size} />}
         </CheckMark>
         <HiddenInput
           type="checkbox"
@@ -255,4 +260,4 @@ Checkbox.defaultProps = {
 
 Checkbox.displayName = 'Checkbox';
 
-export default Checkbox;
+export default withTheme(Checkbox);
