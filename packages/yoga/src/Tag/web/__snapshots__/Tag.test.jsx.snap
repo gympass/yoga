@@ -33,8 +33,8 @@ exports[`<Tag /> should match snapshot 1`] = `
   >
     <svg
       fill="#6B6B78"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     default
   </div>
@@ -399,8 +399,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#231B22"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     primary
   </div>
@@ -410,8 +410,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#D8385E"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     secondary
   </div>
@@ -421,8 +421,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#D8385E"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     vibin
   </div>
@@ -432,8 +432,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#1D856C"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     hope
   </div>
@@ -443,8 +443,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#FFC24C"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     energy
   </div>
@@ -454,8 +454,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#7068D4"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     relax
   </div>
@@ -465,8 +465,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#FFB0A7"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     peace
   </div>
@@ -476,8 +476,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#FF874C"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     verve
   </div>
@@ -487,8 +487,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#FF4438"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     uplift
   </div>
@@ -498,8 +498,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#710252"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     deepPurple
   </div>
@@ -509,8 +509,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#231B22"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     stamina
   </div>
@@ -520,8 +520,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#6B6B78"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     dark
   </div>
@@ -531,8 +531,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#9898A6"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     medium
   </div>
@@ -542,8 +542,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#6B6B78"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     deep
   </div>
@@ -553,8 +553,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#D7D7E0"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     light
   </div>
@@ -564,8 +564,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#F5F5FA"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     clear
   </div>
@@ -575,8 +575,8 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   >
     <svg
       fill="#FFFFFF"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     white
   </div>
@@ -616,8 +616,8 @@ exports[`<Tag /> should match snapshot with custom icon 1`] = `
   >
     <svg
       fill="#6B6B78"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     default with custom icon
   </div>
@@ -657,8 +657,8 @@ exports[`<Tag /> should match snapshot with full prop 1`] = `
   >
     <svg
       fill="#6B6B78"
-      height="12"
-      width="14"
+      height="16"
+      width="16"
     />
     full
   </div>

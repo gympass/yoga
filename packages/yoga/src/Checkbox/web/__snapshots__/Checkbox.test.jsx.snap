@@ -193,7 +193,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with all variant styles 1`
         <div
           class="c8"
         >
-          <svg />
+          <svg
+            height="24"
+            width="24"
+          />
         </div>
         <input
           checked=""
@@ -218,7 +221,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with all variant styles 1`
         <div
           class="c8"
         >
-          <svg />
+          <svg
+            height="24"
+            width="24"
+          />
         </div>
         <input
           checked=""
@@ -243,7 +249,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with all variant styles 1`
         <div
           class="c8"
         >
-          <svg />
+          <svg
+            height="24"
+            width="24"
+          />
         </div>
         <input
           checked=""
@@ -382,7 +391,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
         <div
           class="c6"
         >
-          <svg />
+          <svg
+            height="24"
+            width="24"
+          />
         </div>
         <input
           checked=""
@@ -668,7 +680,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
           class="c6"
           disabled=""
         >
-          <svg />
+          <svg
+            height="24"
+            width="24"
+          />
         </div>
         <input
           checked=""
@@ -957,7 +972,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
         <div
           class="c6"
         >
-          <svg />
+          <svg
+            height="24"
+            width="24"
+          />
         </div>
         <input
           checked=""

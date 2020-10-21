@@ -55,8 +55,11 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
         Find an activity to love
       </Text>
       <RNSVGSvgView
+        bbHeight={20}
+        bbWidth={20}
         fill="#D7D7E0"
         focusable={false}
+        height={20}
         style={
           Array [
             Object {
@@ -67,9 +70,14 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
             Object {
               "opacity": 1,
             },
-            null,
+            Object {
+              "flex": 0,
+              "height": 20,
+              "width": 20,
+            },
           ]
         }
+        width={20}
       >
         <RNSVGGroup
           fill={
@@ -177,8 +185,11 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
         Find an activity to love
       </Text>
       <RNSVGSvgView
+        bbHeight={20}
+        bbWidth={20}
         fill="#F5F5FA"
         focusable={false}
+        height={20}
         style={
           Array [
             Object {
@@ -189,9 +200,14 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
             Object {
               "opacity": 1,
             },
-            null,
+            Object {
+              "flex": 0,
+              "height": 20,
+              "width": 20,
+            },
           ]
         }
+        width={20}
       >
         <RNSVGGroup
           fill={
@@ -299,8 +315,11 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
         Find an activity to love
       </Text>
       <RNSVGSvgView
+        bbHeight={20}
+        bbWidth={20}
         fill="#D7D7E0"
         focusable={false}
+        height={20}
         style={
           Array [
             Object {
@@ -311,9 +330,14 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
             Object {
               "opacity": 1,
             },
-            null,
+            Object {
+              "flex": 0,
+              "height": 20,
+              "width": 20,
+            },
           ]
         }
+        width={20}
       >
         <RNSVGGroup
           fill={
@@ -435,8 +459,11 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
         Swimming
       </Text>
       <RNSVGSvgView
+        bbHeight={20}
+        bbWidth={20}
         fill="#F5F5FA"
         focusable={false}
+        height={20}
         style={
           Array [
             Object {
@@ -447,9 +474,14 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
             Object {
               "opacity": 1,
             },
-            null,
+            Object {
+              "flex": 0,
+              "height": 20,
+              "width": 20,
+            },
           ]
         }
+        width={20}
       >
         <RNSVGGroup
           fill={

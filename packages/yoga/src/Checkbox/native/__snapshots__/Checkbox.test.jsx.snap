@@ -58,8 +58,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
             }
           />
           <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
             fill="#FFFFFF"
             focusable={false}
+            height={24}
             style={
               Array [
                 Object {
@@ -72,9 +75,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
                 Object {
                   "opacity": 1,
                 },
-                null,
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
               ]
             }
+            width={24}
           >
             <RNSVGGroup
               fill={
@@ -328,8 +336,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
             }
           />
           <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
             fill="#FFFFFF"
             focusable={false}
+            height={24}
             style={
               Array [
                 Object {
@@ -342,9 +353,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
                 Object {
                   "opacity": 1,
                 },
-                null,
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
               ]
             }
+            width={24}
           >
             <RNSVGGroup
               fill={
@@ -599,8 +615,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
             }
           />
           <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
             fill="#FFFFFF"
             focusable={false}
+            height={24}
             style={
               Array [
                 Object {
@@ -613,9 +632,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
                 Object {
                   "opacity": 1,
                 },
-                null,
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
               ]
             }
+            width={24}
           >
             <RNSVGGroup
               fill={
@@ -1022,8 +1046,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
             }
           />
           <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
             fill="#FFFFFF"
             focusable={false}
+            height={24}
             style={
               Array [
                 Object {
@@ -1036,9 +1063,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
                 Object {
                   "opacity": 1,
                 },
-                null,
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
               ]
             }
+            width={24}
           >
             <RNSVGGroup
               fill={
@@ -1138,8 +1170,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
             }
           />
           <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
             fill="#FFFFFF"
             focusable={false}
+            height={24}
             style={
               Array [
                 Object {
@@ -1152,9 +1187,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
                 Object {
                   "opacity": 1,
                 },
-                null,
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
               ]
             }
+            width={24}
           >
             <RNSVGGroup
               fill={
@@ -1254,8 +1294,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
             }
           />
           <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
             fill="#FFFFFF"
             focusable={false}
+            height={24}
             style={
               Array [
                 Object {
@@ -1268,9 +1311,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
                 Object {
                   "opacity": 1,
                 },
-                null,
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
               ]
             }
+            width={24}
           >
             <RNSVGGroup
               fill={

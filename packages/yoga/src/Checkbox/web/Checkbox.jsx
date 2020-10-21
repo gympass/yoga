@@ -1,8 +1,8 @@
 import React from 'react';
 import { bool, string, objectOf, any } from 'prop-types';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Done } from '@gympass/yoga-icons';
+import { Check } from '@gympass/yoga-icons';
 
 import { HiddenInput } from '../../shared';
 
@@ -48,7 +48,7 @@ const CheckMark = styled.div`
           position: absolute;
           top: 50%;
           left: 50%;
-          
+
           fill: ${checkbox.checked.icon.color};
 
           transform: translate(-50%, -50%);
@@ -201,6 +201,11 @@ const Checkbox = ({
   error,
   style,
   className,
+  theme: {
+    yoga: {
+      components: { checkbox },
+    },
+  },
   ...rest
 }) => (
   <CheckboxWrapper style={style} className={className}>
@@ -214,7 +219,7 @@ const Checkbox = ({
             error,
           }}
         >
-          {checked && <Done />}
+          {checked && <Check width={checkbox.size} height={checkbox.size} />}
         </CheckMark>
         <HiddenInput
           type="checkbox"
@@ -259,4 +264,4 @@ Checkbox.defaultProps = {
 
 Checkbox.displayName = 'Checkbox';
 
-export default Checkbox;
+export default withTheme(Checkbox);

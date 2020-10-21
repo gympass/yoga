@@ -1,8 +1,8 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, oneOf, oneOfType, bool, node } from 'prop-types';
-import { TriangleAlert } from '@gympass/yoga-icons';
 import { hexToRgb } from '@gympass/yoga-common';
+import { AlertTriangle } from '@gympass/yoga-icons';
 
 const StyledTag = styled.div`
   justify-content: center;
@@ -51,7 +51,7 @@ const Tag = ({
   ...props
 }) => (
   <StyledTag color={color} {...props}>
-    {Icon && <Icon width={14} height={12} fill={color} />}
+    {Icon && <Icon width={16} height={16} fill={color} />}
     {children}
   </StyledTag>
 );
@@ -86,7 +86,7 @@ Tag.propTypes = {
 };
 
 Tag.defaultProps = {
-  icon: TriangleAlert,
+  icon: AlertTriangle,
   full: false,
   variant: '',
 };

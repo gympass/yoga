@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { shape, string } from 'prop-types';
-import { Clock } from '@gympass/yoga-icons';
+import { Time } from '@gympass/yoga-icons';
 
 import Card from '../Card';
 import Text from '../../../Text';
@@ -143,7 +143,7 @@ const EventCard = ({
         <Name numberOfLines={1}>{event.name}</Name>
         <Place numberOfLines={1}>{event.place}</Place>
         <EventTime>
-          <Clock fill={icon.fill} style={{ marginRight: 5 }} />
+          <Time fill={icon.fill} style={{ marginRight: 5 }} />
           <Text.Tiny>{event.time}</Text.Tiny>
         </EventTime>
       </EventInfo>

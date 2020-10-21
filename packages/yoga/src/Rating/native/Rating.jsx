@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { PanResponder } from 'react-native';
 import styled, { withTheme } from 'styled-components';
 import { number, func, bool, shape } from 'prop-types';
-import { Star } from '@gympass/yoga-icons';
+import { StarFilled } from '@gympass/yoga-icons';
 
 import { max as maxPropType } from '../../shared';
 
@@ -31,7 +31,7 @@ const Rating = ({
       components: { rating },
     },
   },
-  icon: { type: Icon = Star, size: iconSize = 24 },
+  icon: { type: Icon = StarFilled, size: iconSize = 24 },
   ...rest
 }) => {
   const [panResponder, setPanResponder] = useState({});
@@ -83,7 +83,7 @@ const Rating = ({
   return (
     <RatingWrapper
       height={iconSize}
-      width={rating.gutter * (max - 1) + iconSize * max}
+      width={iconSize * max}
       pointerEvents={readOnly ? 'none' : 'auto'}
       {...rest}
       {...panResponder.panHandlers}
@@ -91,7 +91,6 @@ const Rating = ({
     >
       {Array.from({ length: max }, (_, i) => {
         const diff = i + 1 - value;
-        const margin = rating.gutter / 2;
 
         if (swipeRating >= i + 1 || (!swipping && diff <= 0)) {
           return (
@@ -100,11 +99,6 @@ const Rating = ({
               fill={rating.backgroundColor}
               width={iconSize}
               height={iconSize}
-              viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
-              style={{
-                marginLeft: margin,
-                marginRight: margin,
-              }}
             />
           );
         }
@@ -122,18 +116,12 @@ const Rating = ({
                 width={width}
                 height={iconSize}
                 viewBox={`0 0 ${wViewBox} ${SVG_DEFAULT_SIZE}`}
-                style={{
-                  marginLeft: margin,
-                }}
               />
               <Icon
                 fill={colors.elements.lineAndBorders}
                 width={dWidth}
                 height={iconSize}
                 viewBox={`${wViewBox} 0 ${dViewBox} ${SVG_DEFAULT_SIZE}`}
-                style={{
-                  marginRight: margin,
-                }}
               />
             </React.Fragment>
           );
@@ -145,11 +133,6 @@ const Rating = ({
             fill={colors.elements.lineAndBorders}
             width={iconSize}
             height={iconSize}
-            viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
-            style={{
-              marginLeft: margin,
-              marginRight: margin,
-            }}
           />
         );
       })}
@@ -175,7 +158,7 @@ Rating.propTypes = {
 Rating.defaultProps = {
   value: undefined,
   icon: {
-    type: Star,
+    type: StarFilled,
     size: 24,
   },
   max: 5,
