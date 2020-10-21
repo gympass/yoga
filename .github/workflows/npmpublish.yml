@@ -46,7 +46,7 @@ jobs:
 
   doc:
     runs-on: ubuntu-latest
-    if: startsWith(github.event.head_commit.message, 'Merge') != true && && contains(github.ref, "master")
+    if: startsWith(github.event.head_commit.message, 'Merge') != true && contains(github.ref, "master")
     steps:
       - uses: actions/checkout@v1
       - name: Configure CI Git User
