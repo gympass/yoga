@@ -20,11 +20,11 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -42,10 +42,7 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -122,10 +119,7 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -202,10 +196,7 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -282,10 +273,7 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -362,10 +350,7 @@ exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -450,11 +435,11 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -472,10 +457,7 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -552,10 +534,7 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -632,10 +611,7 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -712,10 +688,7 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -792,10 +765,7 @@ exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -880,11 +850,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -902,10 +872,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -1026,10 +993,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -1150,10 +1114,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -1274,10 +1235,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -1398,10 +1356,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -1517,11 +1472,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -1539,10 +1494,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -1663,10 +1615,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -1787,10 +1736,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -1911,10 +1857,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -2035,10 +1978,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -2154,11 +2094,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -2176,10 +2116,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -2300,10 +2237,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -2424,10 +2358,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -2548,10 +2479,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -2672,10 +2600,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -2804,11 +2729,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 72,
         },
       ]
     }
-    width={80}
+    width={72}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -2826,10 +2751,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -2906,10 +2828,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -2986,10 +2905,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3061,11 +2977,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 72,
         },
       ]
     }
-    width={80}
+    width={72}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -3083,9 +2999,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3162,9 +3076,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3241,10 +3153,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3321,10 +3230,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3396,11 +3302,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 72,
         },
       ]
     }
-    width={80}
+    width={72}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -3418,10 +3324,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3498,10 +3401,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3578,10 +3478,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3653,11 +3550,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 72,
         },
       ]
     }
-    width={80}
+    width={72}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -3675,10 +3572,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3755,9 +3649,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3834,9 +3726,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3913,10 +3803,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -3988,11 +3875,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 72,
         },
       ]
     }
-    width={80}
+    width={72}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -4010,10 +3897,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -4090,10 +3974,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -4170,10 +4051,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -4245,11 +4123,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 72,
         },
       ]
     }
-    width={80}
+    width={72}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -4267,10 +4145,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -4347,10 +4222,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -4427,9 +4299,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -4506,9 +4376,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -4580,11 +4448,11 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 80,
+          "width": 72,
         },
       ]
     }
-    width={80}
+    width={72}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -4602,10 +4470,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -4682,10 +4547,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -4762,10 +4624,7 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -4850,11 +4709,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -4872,10 +4731,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -4952,10 +4808,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5032,10 +4885,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5112,10 +4962,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5192,10 +5039,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5267,11 +5111,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -5289,9 +5133,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5368,9 +5210,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5447,10 +5287,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5527,10 +5364,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5607,10 +5441,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5687,10 +5518,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5762,11 +5590,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -5784,10 +5612,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5864,10 +5689,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -5944,10 +5766,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6024,10 +5843,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6104,10 +5920,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6179,11 +5992,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -6201,10 +6014,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6281,9 +6091,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6360,9 +6168,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6439,10 +6245,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6519,10 +6322,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6599,10 +6399,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6674,11 +6471,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -6696,10 +6493,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6776,9 +6570,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6855,9 +6647,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -6934,10 +6724,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7014,10 +6801,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7094,10 +6878,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7169,11 +6950,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -7191,10 +6972,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7271,9 +7049,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7350,9 +7126,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7429,10 +7203,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7509,10 +7280,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7589,10 +7357,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7664,11 +7429,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -7686,10 +7451,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7766,9 +7528,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7845,9 +7605,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -7924,10 +7682,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8004,10 +7759,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8084,10 +7836,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8159,11 +7908,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -8181,10 +7930,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8261,9 +8007,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8340,9 +8084,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8419,10 +8161,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8499,10 +8238,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8579,10 +8315,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8654,11 +8387,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -8676,10 +8409,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8756,9 +8486,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8835,9 +8563,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8914,10 +8640,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -8994,10 +8717,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9074,10 +8794,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9149,11 +8866,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -9171,10 +8888,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9251,9 +8965,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9330,9 +9042,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9409,10 +9119,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9489,10 +9196,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9569,10 +9273,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9644,11 +9345,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -9666,10 +9367,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9746,9 +9444,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9825,9 +9521,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9904,10 +9598,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -9984,10 +9675,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10064,10 +9752,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10139,11 +9824,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -10161,10 +9846,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10241,9 +9923,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10320,9 +10000,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10399,10 +10077,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10479,10 +10154,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10559,10 +10231,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10634,11 +10303,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -10656,10 +10325,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10736,10 +10402,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10816,10 +10479,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10896,10 +10556,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -10976,10 +10633,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11051,11 +10705,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -11073,10 +10727,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11153,10 +10804,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11233,9 +10881,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11312,9 +10958,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11391,10 +11035,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11471,10 +11112,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11546,11 +11184,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -11568,10 +11206,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11648,10 +11283,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11728,10 +11360,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11808,10 +11437,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11888,10 +11514,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -11963,11 +11586,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -11985,10 +11608,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12065,10 +11685,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12145,10 +11762,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12225,9 +11839,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12304,9 +11916,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12383,10 +11993,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12458,11 +12065,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -12480,10 +12087,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12560,10 +12164,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12640,10 +12241,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12720,10 +12318,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12800,10 +12395,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12875,11 +12467,11 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
           "flexDirection": "row",
           "height": 24,
           "justifyContent": "center",
-          "width": 136,
+          "width": 120,
         },
       ]
     }
-    width={136}
+    width={120}
   >
     <RNSVGSvgView
       align="xMidYMid"
@@ -12897,10 +12489,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -12977,10 +12566,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -13057,10 +12643,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -13137,10 +12720,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -13217,9 +12797,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginLeft": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
@@ -13296,9 +12874,7 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Object {
-            "marginRight": 2,
-          },
+          undefined,
           Object {
             "opacity": 1,
           },
