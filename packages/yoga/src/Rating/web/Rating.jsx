@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
-
 import React, { useState, useRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { number, func, shape, bool } from 'prop-types';
@@ -18,24 +17,11 @@ const RatingWrapper = styled.div`
     pointer-events: none;
   }
 
-  ${({
-    width,
-    height,
-    readOnly,
-    theme: {
-      yoga: {
-        components: { rating },
-      },
-    },
-  }) => `
+  ${({ width, height, readOnly }) => `
     width: ${width}px;
     height: ${height}px;
 
     ${readOnly ? 'pointer-events: none;' : ''}
-
-    svg:not(:last-child) {
-      margin-right: ${rating.gutter / 2}px;
-    }
   `}
 `;
 
@@ -61,12 +47,11 @@ const Rating = ({
   const [hover, setHover] = useState(false);
   const [currentRating, setCurrentRating] = useState(0);
 
-  const ICON_PADDING_SPACING = 1;
   const VIEW_BOX_ICON_SIZE = 12;
 
   return (
     <RatingWrapper
-      width={rating.gutter * (max - 1) + iconSize * max}
+      width={iconSize * max}
       height={iconSize}
       mouseOver={hover}
       readOnly={readOnly}
@@ -105,7 +90,7 @@ const Rating = ({
               key={`filled-${i}`}
               width={iconSize}
               height={iconSize}
-              viewBox={`${ICON_PADDING_SPACING} ${ICON_PADDING_SPACING} ${VIEW_BOX_ICON_SIZE} ${VIEW_BOX_ICON_SIZE}`}
+              viewBox={`0 0 ${VIEW_BOX_ICON_SIZE} ${VIEW_BOX_ICON_SIZE}`}
             />
           );
         }
@@ -114,9 +99,8 @@ const Rating = ({
           // half filled star
           width = (1 - diff) * iconSize;
           const dWidth = diff * iconSize;
-          const wViewBox =
-            VIEW_BOX_ICON_SIZE * (1 - diff) - ICON_PADDING_SPACING * 2;
-          const dViewBox = iconSize * diff;
+          const wViewBox = VIEW_BOX_ICON_SIZE * (1 - diff);
+          const dViewBox = VIEW_BOX_ICON_SIZE * diff;
 
           return (
             <React.Fragment key={`half-${i}`}>
@@ -125,21 +109,14 @@ const Rating = ({
                 fill={rating.backgroundColor}
                 width={width}
                 height={iconSize}
-                viewBox={`${ICON_PADDING_SPACING} ${ICON_PADDING_SPACING} ${wViewBox} ${VIEW_BOX_ICON_SIZE}`}
-                style={{
-                  marginRight: 'unset',
-                }}
+                viewBox={`0 0 ${wViewBox} ${VIEW_BOX_ICON_SIZE}`}
               />
               {/* // half unfilled star */}
               <Icon
                 fill={colors.gray[5]}
                 width={dWidth}
                 height={iconSize}
-                viewBox={`${wViewBox +
-                  ICON_PADDING_SPACING} ${ICON_PADDING_SPACING} ${dViewBox} ${VIEW_BOX_ICON_SIZE}`}
-                style={{
-                  marginLeft: 'unset',
-                }}
+                viewBox={`${wViewBox} 0 ${dViewBox} ${VIEW_BOX_ICON_SIZE}`}
               />
             </React.Fragment>
           );
@@ -152,7 +129,7 @@ const Rating = ({
             key={`unfilled-${i}`}
             width={iconSize}
             height={iconSize}
-            viewBox={`${ICON_PADDING_SPACING} ${ICON_PADDING_SPACING} ${VIEW_BOX_ICON_SIZE} ${VIEW_BOX_ICON_SIZE}`}
+            viewBox={`0 0 ${VIEW_BOX_ICON_SIZE} ${VIEW_BOX_ICON_SIZE}`}
           />
         );
       })}
@@ -182,7 +159,7 @@ Rating.defaultProps = {
   value: undefined,
   icon: {
     type: Star,
-    size: 50,
+    size: 12,
   },
   max: 5,
   readOnly: true,
