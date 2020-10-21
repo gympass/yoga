@@ -16,7 +16,7 @@ jobs:
       - name: Configure CI Git User
         run: |
           git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git checkout ${GITHUB_REF##*/}
+          git checkout origin/${GITHUB_REF##*/}
           git config --global user.email yoga@gympass.com
           git config --global user.name Yoga
         env:
@@ -39,7 +39,6 @@ jobs:
           GH_TOKEN=${GH_TOKEN}
           NPM_TOKEN=${NPM_TOKEN}
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
-          ls ./scripts
           sh ./scripts/publish.sh
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
