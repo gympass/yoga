@@ -166,7 +166,7 @@ Progress.defaultProps = {
   },
   max: 1,
   value: undefined,
-  variant: 'primary',
+  variant: 'verve',
 };
 
 export default Progress;
