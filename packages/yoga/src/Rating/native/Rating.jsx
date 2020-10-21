@@ -99,7 +99,6 @@ const Rating = ({
               fill={rating.backgroundColor}
               width={iconSize}
               height={iconSize}
-              viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
             />
           );
         }
@@ -134,7 +133,6 @@ const Rating = ({
             fill={colors.gray[5]}
             width={iconSize}
             height={iconSize}
-            viewBox={`0 0 ${SVG_DEFAULT_SIZE} ${SVG_DEFAULT_SIZE}`}
           />
         );
       })}

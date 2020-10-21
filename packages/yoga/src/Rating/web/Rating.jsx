@@ -90,7 +90,6 @@ const Rating = ({
               key={`filled-${i}`}
               width={iconSize}
               height={iconSize}
-              viewBox={`0 0 ${VIEW_BOX_ICON_SIZE} ${VIEW_BOX_ICON_SIZE}`}
             />
           );
         }
@@ -129,7 +128,6 @@ const Rating = ({
             key={`unfilled-${i}`}
             width={iconSize}
             height={iconSize}
-            viewBox={`0 0 ${VIEW_BOX_ICON_SIZE} ${VIEW_BOX_ICON_SIZE}`}
           />
         );
       })}
