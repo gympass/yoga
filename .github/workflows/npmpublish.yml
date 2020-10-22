@@ -12,16 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     if: startsWith(github.event.head_commit.message, 'Merge')
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
       - name: Configure CI Git User
         run: |
           git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git fetch
-          git checkout ${TARGET_BRANCH#refs/heads/}
           git config --global user.email yoga@gympass.com
           git config --global user.name Yoga
         env:
-          TARGET_BRANCH: ${{ github.event.ref }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - uses: actions/setup-node@v1
         with:
