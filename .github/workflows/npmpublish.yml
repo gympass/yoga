@@ -16,10 +16,12 @@ jobs:
       - name: Configure CI Git User
         run: |
           git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git checkout ${{ github.event.pull_request.base.ref }}
+          git fetch
+          git checkout ${TARGET_BRANCH#refs/head/}
           git config --global user.email yoga@gympass.com
           git config --global user.name Yoga
         env:
+          TARGET_BRANCH: ${{ github.event.ref }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - uses: actions/setup-node@v1
         with:
