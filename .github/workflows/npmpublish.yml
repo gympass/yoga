@@ -21,7 +21,7 @@ jobs:
         run: |
           git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
           git fetch
-          git checkout ${TARGET_BRANCH#refs/head/}
+          git checkout ${TARGET_BRANCH#refs/heads/}
           git config --global user.email yoga@gympass.com
           git config --global user.name Yoga
         env:
