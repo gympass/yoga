@@ -10,8 +10,12 @@ on:
 jobs:
   packages:
     runs-on: ubuntu-latest
-    if: startsWith(github.event.head_commit.message, 'Merge')
+    # if: startsWith(github.event.head_commit.message, 'Merge')
     steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
       - uses: actions/checkout@v1
       - name: Configure CI Git User
         run: |
