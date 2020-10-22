@@ -16,7 +16,7 @@ jobs:
       - name: Configure CI Git User
         run: |
           git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git checkout origin/${GITHUB_REF##*/}
+          git checkout ${{ github.event.pull_request.base.ref }}
           git config --global user.email yoga@gympass.com
           git config --global user.name Yoga
         env:
