@@ -3,6 +3,8 @@
 BRANCH=`git rev-parse --abbrev-ref HEAD`
 echo "on branch $BRANCH"
 
+set -e
+
 if [[ $BRANCH == "master" ]];
 then
   yarn lerna publish --yes
