@@ -40,7 +40,8 @@ jobs:
           GH_TOKEN=${GH_TOKEN}
           NPM_TOKEN=${NPM_TOKEN}
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
-          sh ./scripts/publish.sh
+          chmod +x ./scripts/publish
+          ./scripts/publish
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
