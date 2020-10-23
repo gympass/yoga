@@ -7,6 +7,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
   display: -ms-flexbox;
   display: flex;
   margin-top: 4px;
+  color: #6B6B78;
 }
 
 .c3 {

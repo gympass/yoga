@@ -180,61 +180,6 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 `;
 
 exports[`<Input /> Snapshots should match with disabled input 1`] = `
-<<<<<<< HEAD
-.c1 {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  height: 52px;
-  border-color: #F5F5FA;
-  color: #F5F5FA;
-}
-
-.c1 {
-  width: 320px;
-}
-
-.c1 svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 16px;
-  padding-left: 8px;
-  height: 52px;
-  width: 20px;
-  fill: #6B6B78;
-  outline: none;
-  box-sizing: content-box;
-  cursor: pointer;
-}
-
-.c1 svg:hover,
-.c1 svg:focus {
-  fill: #231B22;
-}
-
-.c1:focus-within legend {
-  max-width: 1000px;
-  font-weight: 700;
-}
-
-.c1:hover fieldset,
-.c1:focus-within fieldset {
-  border-color: #231B22;
-  border-color: #F5F5FA;
-}
-
-.c1 svg {
-  fill: #F5F5FA;
-  pointer-events: none;
-}
-
-.c1 fieldset {
-  border-color: #F5F5FA;
-}
-
-=======
->>>>>>> origin/alpha
 .c2 {
   width: 100%;
   -webkit-appearance: none;
@@ -252,12 +197,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-<<<<<<< HEAD
   color: #231B22;
-  border: none;
-=======
-  color: #41414A;
->>>>>>> origin/alpha
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -321,26 +261,20 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 .c1 {
   position: relative;
   margin: 0;
-<<<<<<< HEAD
-  pointer-events: none;
-  border-radius: 8px;
-  border: 1px solid #D7D7E0;
-=======
   padding: 0;
   width: 320px;
   height: 52px;
->>>>>>> origin/alpha
   padding-left: 12px;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
+  border-color: #D7D7E0;
 }
 
 .c1:hover,
 .c1:focus-within {
-  border-color: #41414A;
-  border-color: #D3D3E2;
+  border-color: #231B22;
+  border-color: #F5F5FA;
 }
 
 .c4 {
@@ -378,17 +312,10 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-<<<<<<< HEAD
   color: #6B6B78;
-  -webkit-transform: translateY(-40%);
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
-=======
-  color: #9898A6;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
   transition-property: transform,font-size;
->>>>>>> origin/alpha
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -437,54 +364,6 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 `;
 
 exports[`<Input /> Snapshots should match with error 1`] = `
-<<<<<<< HEAD
-.c1 {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  height: 52px;
-  border-color: #FF874C;
-}
-
-.c1 {
-  width: 320px;
-}
-
-.c1 fieldset {
-  border-color: #FF874C;
-}
-
-.c1 svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 16px;
-  padding-left: 8px;
-  height: 52px;
-  width: 20px;
-  fill: #6B6B78;
-  outline: none;
-  box-sizing: content-box;
-  cursor: pointer;
-}
-
-.c1 svg:hover,
-.c1 svg:focus {
-  fill: #231B22;
-}
-
-.c1:focus-within legend {
-  max-width: 1000px;
-  font-weight: 700;
-}
-
-.c1:hover fieldset,
-.c1:focus-within fieldset {
-  border-color: #FF874C;
-}
-
-=======
->>>>>>> origin/alpha
 .c2 {
   width: 100%;
   -webkit-appearance: none;
@@ -502,12 +381,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-<<<<<<< HEAD
   color: #231B22;
-  border: none;
-=======
-  color: #41414A;
->>>>>>> origin/alpha
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -574,7 +448,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   display: -ms-flexbox;
   display: flex;
   margin-top: 4px;
-  color: #CB3530;
+  color: #FF874C;
 }
 
 .c7 {
@@ -584,33 +458,27 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
-  color: #9898A6;
+  color: #231B22;
+  color: currentColor;
   font-size: 12px;
 }
 
 .c1 {
   position: relative;
   margin: 0;
-<<<<<<< HEAD
-  pointer-events: none;
-  border-radius: 8px;
-  border: 1px solid #D7D7E0;
-=======
   padding: 0;
   width: 320px;
   height: 52px;
->>>>>>> origin/alpha
   padding-left: 12px;
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #CB3530;
+  border-color: #FF874C;
 }
 
 .c1:hover,
 .c1:focus-within {
-  border-color: #CB3530;
+  border-color: #FF874C;
 }
 
 .c4 {
@@ -648,17 +516,10 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-<<<<<<< HEAD
   color: #6B6B78;
-  -webkit-transform: translateY(-40%);
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
-=======
-  color: #9898A6;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
   transition-property: transform,font-size;
->>>>>>> origin/alpha
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -666,30 +527,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   color: #FF874C;
 }
 
-<<<<<<< HEAD
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 4px;
-  color: #FF874C;
-}
-
-.c8 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  color: #6B6B78;
-  font-size: 12px;
-}
-
-=======
->>>>>>> origin/alpha
 .c0 {
   box-sizing: border-box;
   width: 320px;
@@ -1000,6 +837,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   display: -ms-flexbox;
   display: flex;
   margin-top: 4px;
+  color: #6B6B78;
 }
 
 .c7 {
@@ -1010,7 +848,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
-  color: #6B6B78;
+  color: currentColor;
   font-size: 12px;
 }
 
@@ -1022,7 +860,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
-  color: #6B6B78;
+  color: currentColor;
   font-size: 12px;
   margin-left: auto;
 }

@@ -18,7 +18,7 @@ const Wrapper = styled.div`
     display: flex;
     margin-top: ${input.helper.margin.top}px;
 
-    ${error ? `color: ${colors.feedback.attention[1]};` : ''}
+    color: ${error ? colors.feedback.attention[1] : input.helper.color};
     ${disabled ? `color: ${colors.elements.backgroundAndDisabled};` : ''}
   `}
 `;
@@ -32,7 +32,7 @@ const Info = styled(Text.Small)`
       },
     },
   }) => `
-    color: ${input.helper.color};
+    color: currentColor;
     font-size: ${input.helper.font.size}px;
     
     ${right ? 'margin-left: auto;' : ''}
