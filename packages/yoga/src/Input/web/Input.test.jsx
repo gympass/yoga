@@ -71,7 +71,7 @@ describe('<Input />', () => {
       const onChangeMock = jest.fn();
       const { getByTestId } = render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" onChange={onChangeMock} />
+          <Input label="Input" onChange={onChangeMock} data-testid="input" />
         </ThemeProvider>,
       );
 
@@ -129,7 +129,7 @@ describe('<Input />', () => {
     it('should call onClean when press clean button', () => {
       const onCleanMock = jest.fn();
 
-      const { getByRole, getByTestId } = render(
+      const { getByTestId, getByRole } = render(
         <ThemeProvider>
           <Input label="Input" data-testid="input" onClean={onCleanMock} />
         </ThemeProvider>,

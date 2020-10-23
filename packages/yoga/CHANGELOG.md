@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 5.1.1-alpha.0 (2020-10-23)
+
+**Note:** Version bump only for package @gympass/yoga
+
+# [5.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.0.1...@gympass/yoga@5.1.0) (2020-10-15)
+
+### Bug Fixes
+
+- **TextArea:** change fieldset import case ([05ea669](https://github.com/Gympass/yoga/commit/05ea6693ed32aff43f960d2206931aead6a5d3dc))
+- fixing css in component input ([9b217c0](https://github.com/Gympass/yoga/commit/9b217c03d01f9e60d3ac1523bfaf9afbea68e900)), closes [#158](https://github.com/Gympass/yoga/issues/158)
+
+### Features
+
+- changing styles in component Input ([01eaf36](https://github.com/Gympass/yoga/commit/01eaf36d0836ab9495a532b856020d13b54af795))
+- removing z-index in component Field and Input ([032b43d](https://github.com/Gympass/yoga/commit/032b43d989a08c725166e9fc33cacad7c9834d49)), closes [#158](https://github.com/Gympass/yoga/issues/158)
+
 ## [5.0.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.0.0...@gympass/yoga@5.0.1) (2020-10-02)
 
 ### Bug Fixes

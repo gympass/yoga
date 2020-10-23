@@ -1,141 +1,110 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<AutoComplete /> Snapshots should match with a full width component 1`] = `
-.c2 {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  height: 52px;
-}
-
-.c2 {
+.c3 {
   width: 100%;
-}
-
-.c2 svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 16px;
-  padding-left: 8px;
-  height: 52px;
-  width: 20px;
-  fill: #6B6B78;
-  outline: none;
-  box-sizing: content-box;
-  cursor: pointer;
-}
-
-.c2 svg:hover,
-.c2 svg:focus {
-  fill: #231B22;
-}
-
-.c2:focus-within legend {
-  max-width: 1000px;
-  font-weight: 700;
-}
-
-.c2:hover fieldset,
-.c2:focus-within fieldset {
-  border-color: #231B22;
-}
-
-.c4 {
-  width: 100%;
-  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: transparent;
   outline: none;
-  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  box-sizing: border-box;
+  height: 52px;
   padding-top: 16px;
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
   color: #231B22;
-  border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  box-sizing: border-box;
 }
 
-.c4:focus {
+.c3:focus {
   color: #231B22;
 }
 
-.c4:focus + label {
-  top: 0;
-  left: 16px;
-  font-size: 12px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.c3:focus ~ legend {
+  max-width: 1000px;
+  padding: 0 2px;
+}
+
+.c3:focus ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
   font-weight: 700;
   color: #231B22;
 }
 
-.c4:disabled {
+.c3:disabled {
   cursor: not-allowed;
   color: #F5F5FA;
 }
 
-.c4::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #6B6B78;
 }
 
-.c4::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #6B6B78;
 }
 
-.c4:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #6B6B78;
 }
 
-.c4::placeholder {
+.c3::placeholder {
   color: #6B6B78;
 }
 
-.c4[type="number"]::-webkit-outer-spin-button,
-.c4[type="number"]::-webkit-inner-spin-button {
+.c3[type="number"]::-webkit-outer-spin-button,
+.c3[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
-.c4:invalid {
+.c3:invalid {
   box-shadow: none;
 }
 
-.c6 {
-  position: absolute;
-  top: -7px;
-  left: 0;
-  padding: 0;
-  padding-left: 0px;
-  right: 0;
-  bottom: 0;
+.c2 {
+  position: relative;
   margin: 0;
-  pointer-events: none;
-  border-radius: 8px;
-  border: 1px solid #D7D7E0;
+  padding: 0;
+  width: 100%;
+  height: 52px;
   padding-left: 12px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D7D7E0;
 }
 
-.c7 {
+.c2:hover,
+.c2:focus-within {
+  border-color: #231B22;
+}
+
+.c6 {
   position: relative;
   padding: 0;
-  max-width: 0.01px;
+  max-width: 0;
   width: auto;
-  height: 14px;
+  height: 0;
   font-weight: normal;
-  -webkit-transition: max-width ease 50ms;
-  transition: max-width ease 50ms;
   visibility: hidden;
-  max-width: 0.01px;
   font-size: 12px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -143,30 +112,30 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   letter-spacing: normal;
 }
 
-.c8 {
+.c7 {
   padding-left: 4px;
   padding-right: 4px;
 }
 
 .c5 {
-  position: absolute;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   pointer-events: none;
+  position: absolute;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  top: 24px;
+  top: 16px;
   left: 16px;
   font-size: 14px;
   font-weight: 400;
   color: #6B6B78;
-  -webkit-transform: translateY(-40%);
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -178,7 +147,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   width: 100%;
 }
 
-.c3 {
+.c4 {
   z-index: 1;
 }
 
@@ -198,15 +167,15 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
     <div
       class="c1"
     >
-      <div
-        class="c2 c3"
+      <fieldset
+        class="c2"
         label="Label"
       >
         <input
           aria-autocomplete="list"
           aria-labelledby="downshift-1-label"
           autocomplete="off"
-          class="c4"
+          class="c3 c4"
           id="downshift-1-input"
           value=""
         />
@@ -215,161 +184,127 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
         >
           Label
         </label>
-        <fieldset
+        <legend
           class="c6"
         >
-          <legend
+          <span
             class="c7"
           >
-            <span
-              class="c8"
-            >
-              Label
-            </span>
-          </legend>
-        </fieldset>
-      </div>
+            Label
+          </span>
+        </legend>
+        
+      </fieldset>
     </div>
   </div>
 </div>
 `;
 
 exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
-.c2 {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  height: 52px;
-}
-
-.c2 {
-  width: 320px;
-}
-
-.c2 svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 16px;
-  padding-left: 8px;
-  height: 52px;
-  width: 20px;
-  fill: #6B6B78;
-  outline: none;
-  box-sizing: content-box;
-  cursor: pointer;
-}
-
-.c2 svg:hover,
-.c2 svg:focus {
-  fill: #231B22;
-}
-
-.c2:focus-within legend {
-  max-width: 1000px;
-  font-weight: 700;
-}
-
-.c2:hover fieldset,
-.c2:focus-within fieldset {
-  border-color: #231B22;
-}
-
-.c4 {
+.c3 {
   width: 100%;
-  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: transparent;
   outline: none;
-  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  box-sizing: border-box;
+  height: 52px;
   padding-top: 16px;
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
   color: #231B22;
-  border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  box-sizing: border-box;
 }
 
-.c4:focus {
+.c3:focus {
   color: #231B22;
 }
 
-.c4:focus + label {
-  top: 0;
-  left: 16px;
-  font-size: 12px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.c3:focus ~ legend {
+  max-width: 1000px;
+  padding: 0 2px;
+}
+
+.c3:focus ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
   font-weight: 700;
   color: #231B22;
 }
 
-.c4:disabled {
+.c3:disabled {
   cursor: not-allowed;
   color: #F5F5FA;
 }
 
-.c4::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #6B6B78;
 }
 
-.c4::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #6B6B78;
 }
 
-.c4:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #6B6B78;
 }
 
-.c4::placeholder {
+.c3::placeholder {
   color: #6B6B78;
 }
 
-.c4[type="number"]::-webkit-outer-spin-button,
-.c4[type="number"]::-webkit-inner-spin-button {
+.c3[type="number"]::-webkit-outer-spin-button,
+.c3[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
-.c4:invalid {
+.c3:invalid {
   box-shadow: none;
 }
 
-.c6 {
-  position: absolute;
-  top: -7px;
-  left: 0;
-  padding: 0;
-  padding-left: 0px;
-  right: 0;
-  bottom: 0;
+.c2 {
+  position: relative;
   margin: 0;
-  pointer-events: none;
-  border-radius: 8px;
-  border: 1px solid #D7D7E0;
+  padding: 0;
+  width: 320px;
+  height: 52px;
   padding-left: 12px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D7D7E0;
 }
 
-.c7 {
+.c2:hover,
+.c2:focus-within {
+  border-color: #231B22;
+}
+
+.c6 {
   position: relative;
   padding: 0;
-  max-width: 0.01px;
+  max-width: 0;
   width: auto;
-  height: 14px;
+  height: 0;
   font-weight: normal;
-  -webkit-transition: max-width ease 50ms;
-  transition: max-width ease 50ms;
   visibility: hidden;
-  max-width: 0.01px;
   font-size: 12px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -377,30 +312,30 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   letter-spacing: normal;
 }
 
-.c8 {
+.c7 {
   padding-left: 4px;
   padding-right: 4px;
 }
 
 .c5 {
-  position: absolute;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   pointer-events: none;
+  position: absolute;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  top: 24px;
+  top: 16px;
   left: 16px;
   font-size: 14px;
   font-weight: 400;
   color: #6B6B78;
-  -webkit-transform: translateY(-40%);
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -412,7 +347,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   width: 320px;
 }
 
-.c3 {
+.c4 {
   z-index: 1;
 }
 
@@ -432,15 +367,15 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
     <div
       class="c1"
     >
-      <div
-        class="c2 c3"
+      <fieldset
+        class="c2"
         label="Label"
       >
         <input
           aria-autocomplete="list"
           aria-labelledby="downshift-0-label"
           autocomplete="off"
-          class="c4"
+          class="c3 c4"
           id="downshift-0-input"
           value=""
         />
@@ -449,174 +384,145 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
         >
           Label
         </label>
-        <fieldset
+        <legend
           class="c6"
         >
-          <legend
+          <span
             class="c7"
           >
-            <span
-              class="c8"
-            >
-              Label
-            </span>
-          </legend>
-        </fieldset>
-      </div>
+            Label
+          </span>
+        </legend>
+        
+      </fieldset>
     </div>
   </div>
 </div>
 `;
 
 exports[`<AutoComplete /> Snapshots should match with full width options list 1`] = `
-.c2 {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  height: 52px;
-}
-
-.c2 {
+.c3 {
   width: 100%;
-}
-
-.c2 svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 16px;
-  padding-left: 8px;
-  height: 52px;
-  width: 20px;
-  fill: #6B6B78;
-  outline: none;
-  box-sizing: content-box;
-  cursor: pointer;
-}
-
-.c2 svg:hover,
-.c2 svg:focus {
-  fill: #231B22;
-}
-
-.c2:focus-within legend {
-  max-width: 1000px;
-  font-weight: 700;
-}
-
-.c2:hover fieldset,
-.c2:focus-within fieldset {
-  border-color: #231B22;
-}
-
-.c4 {
-  width: 100%;
-  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: transparent;
   outline: none;
-  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  box-sizing: border-box;
+  height: 52px;
   padding-top: 16px;
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
   color: #231B22;
-  border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  box-sizing: border-box;
 }
 
-.c4:focus {
+.c3:focus {
   color: #231B22;
 }
 
-.c4:focus + label {
-  top: 0;
-  left: 16px;
-  font-size: 12px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.c3:focus ~ legend {
+  max-width: 1000px;
+  padding: 0 2px;
+}
+
+.c3:focus ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
   font-weight: 700;
   color: #231B22;
 }
 
-.c4:disabled {
+.c3:disabled {
   cursor: not-allowed;
   color: #F5F5FA;
 }
 
-.c4::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #6B6B78;
 }
 
-.c4::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #6B6B78;
 }
 
-.c4:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #6B6B78;
 }
 
-.c4::placeholder {
+.c3::placeholder {
   color: #6B6B78;
 }
 
-.c4 + label {
-  top: 0;
-  left: 16px;
-  font-size: 12px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.c3 ~ legend {
+  max-width: 1000px;
+}
+
+.c3 ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
 }
 
-.c4[type="number"]::-webkit-outer-spin-button,
-.c4[type="number"]::-webkit-inner-spin-button {
+.c3[type="number"]::-webkit-outer-spin-button,
+.c3[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
-.c4:invalid {
+.c3:invalid {
   box-shadow: none;
 }
 
-.c6 {
-  position: absolute;
-  top: -7px;
-  left: 0;
-  padding: 0;
-  padding-left: 0px;
-  right: 0;
-  bottom: 0;
+.c2 {
+  position: relative;
   margin: 0;
-  pointer-events: none;
-  border-radius: 8px;
-  border: 1px solid #D7D7E0;
+  padding: 0;
+  width: 100%;
+  height: 52px;
   padding-left: 12px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D7D7E0;
 }
 
-.c7 {
+.c2:hover,
+.c2:focus-within {
+  border-color: #231B22;
+}
+
+.c6 {
   position: relative;
   padding: 0;
-  max-width: 0.01px;
+  max-width: 0;
   width: auto;
-  height: 14px;
+  height: 0;
   font-weight: normal;
-  -webkit-transition: max-width ease 50ms;
-  transition: max-width ease 50ms;
   visibility: hidden;
-  max-width: 1000px;
   font-size: 12px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -624,30 +530,30 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   letter-spacing: normal;
 }
 
-.c8 {
+.c7 {
   padding-left: 4px;
   padding-right: 4px;
 }
 
 .c5 {
-  position: absolute;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   pointer-events: none;
+  position: absolute;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  top: 24px;
+  top: 16px;
   left: 16px;
   font-size: 14px;
   font-weight: 400;
   color: #6B6B78;
-  -webkit-transform: translateY(-40%);
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -659,7 +565,29 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   width: 100%;
 }
 
-.c3 {
+.c8 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 16px;
+  padding-left: 8px;
+  height: 52px;
+  cursor: pointer;
+  outline: none;
+}
+
+.c8:hover svg,
+.c8:focus svg {
+  fill: #231B22;
+}
+
+.c8 svg {
+  height: 52px;
+  width: 20px;
+  fill: #6B6B78;
+}
+
+.c4 {
   z-index: 1;
   border-color: #231B22;
   border-bottom-width: 0;
@@ -667,19 +595,19 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   border-bottom-right-radius: 0;
 }
 
-.c3 fieldset {
+.c4 fieldset {
   border-color: #231B22;
   border-bottom-width: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.c3 label {
+.c4 label {
   color: #231B22;
   font-weight: 700;
 }
 
-.c3 legend {
+.c4 legend {
   font-weight: 700;
 }
 
@@ -741,8 +669,8 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
     <div
       class="c1"
     >
-      <div
-        class="c2 c3"
+      <fieldset
+        class="c2"
         label="Label"
       >
         <input
@@ -750,7 +678,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
           aria-controls="downshift-3-menu"
           aria-labelledby="downshift-3-label"
           autocomplete="off"
-          class="c4"
+          class="c3 c4"
           id="downshift-3-input"
           value="s"
         />
@@ -759,26 +687,25 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
         >
           Label
         </label>
-        <fieldset
+        <legend
           class="c6"
         >
-          <legend
+          <span
             class="c7"
           >
-            <span
-              class="c8"
-            >
-              Label
-            </span>
-          </legend>
-        </fieldset>
-        <svg
+            Label
+          </span>
+        </legend>
+        <div
+          class="c8"
           height="20"
           role="button"
           tabindex="0"
           width="20"
-        />
-      </div>
+        >
+          <svg />
+        </div>
+      </fieldset>
     </div>
     <ul
       aria-labelledby="downshift-3-label"
@@ -820,154 +747,128 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 `;
 
 exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
-.c2 {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  height: 52px;
-}
-
-.c2 {
-  width: 320px;
-}
-
-.c2 svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 16px;
-  padding-left: 8px;
-  height: 52px;
-  width: 20px;
-  fill: #6B6B78;
-  outline: none;
-  box-sizing: content-box;
-  cursor: pointer;
-}
-
-.c2 svg:hover,
-.c2 svg:focus {
-  fill: #231B22;
-}
-
-.c2:focus-within legend {
-  max-width: 1000px;
-  font-weight: 700;
-}
-
-.c2:hover fieldset,
-.c2:focus-within fieldset {
-  border-color: #231B22;
-}
-
-.c4 {
+.c3 {
   width: 100%;
-  background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  background-color: transparent;
   outline: none;
-  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  box-sizing: border-box;
+  height: 52px;
   padding-top: 16px;
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
   color: #231B22;
-  border: none;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
-  box-sizing: border-box;
 }
 
-.c4:focus {
+.c3:focus {
   color: #231B22;
 }
 
-.c4:focus + label {
-  top: 0;
-  left: 16px;
-  font-size: 12px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.c3:focus ~ legend {
+  max-width: 1000px;
+  padding: 0 2px;
+}
+
+.c3:focus ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
   font-weight: 700;
   color: #231B22;
 }
 
-.c4:disabled {
+.c3:disabled {
   cursor: not-allowed;
   color: #F5F5FA;
 }
 
-.c4::-webkit-input-placeholder {
+.c3::-webkit-input-placeholder {
   color: #6B6B78;
 }
 
-.c4::-moz-placeholder {
+.c3::-moz-placeholder {
   color: #6B6B78;
 }
 
-.c4:-ms-input-placeholder {
+.c3:-ms-input-placeholder {
   color: #6B6B78;
 }
 
-.c4::placeholder {
+.c3::placeholder {
   color: #6B6B78;
 }
 
-.c4 + label {
-  top: 0;
-  left: 16px;
-  font-size: 12px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.c3 ~ legend {
+  max-width: 1000px;
+}
+
+.c3 ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
 }
 
-.c4[type="number"]::-webkit-outer-spin-button,
-.c4[type="number"]::-webkit-inner-spin-button {
+.c3[type="number"]::-webkit-outer-spin-button,
+.c3[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
-.c4:invalid {
+.c3:invalid {
   box-shadow: none;
 }
 
-.c6 {
-  position: absolute;
-  top: -7px;
-  left: 0;
-  padding: 0;
-  padding-left: 0px;
-  right: 0;
-  bottom: 0;
+.c2 {
+  position: relative;
   margin: 0;
-  pointer-events: none;
-  border-radius: 8px;
-  border: 1px solid #D7D7E0;
+  padding: 0;
+  width: 320px;
+  height: 52px;
   padding-left: 12px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D7D7E0;
 }
 
-.c7 {
+.c2:hover,
+.c2:focus-within {
+  border-color: #231B22;
+}
+
+.c6 {
   position: relative;
   padding: 0;
-  max-width: 0.01px;
+  max-width: 0;
   width: auto;
-  height: 14px;
+  height: 0;
   font-weight: normal;
-  -webkit-transition: max-width ease 50ms;
-  transition: max-width ease 50ms;
   visibility: hidden;
-  max-width: 1000px;
   font-size: 12px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -975,30 +876,30 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   letter-spacing: normal;
 }
 
-.c8 {
+.c7 {
   padding-left: 4px;
   padding-right: 4px;
 }
 
 .c5 {
-  position: absolute;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
   pointer-events: none;
+  position: absolute;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  top: 24px;
+  top: 16px;
   left: 16px;
   font-size: 14px;
   font-weight: 400;
   color: #6B6B78;
-  -webkit-transform: translateY(-40%);
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
@@ -1010,7 +911,29 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   width: 320px;
 }
 
-.c3 {
+.c8 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 16px;
+  padding-left: 8px;
+  height: 52px;
+  cursor: pointer;
+  outline: none;
+}
+
+.c8:hover svg,
+.c8:focus svg {
+  fill: #231B22;
+}
+
+.c8 svg {
+  height: 52px;
+  width: 20px;
+  fill: #6B6B78;
+}
+
+.c4 {
   z-index: 1;
   border-color: #231B22;
   border-bottom-width: 0;
@@ -1018,19 +941,19 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   border-bottom-right-radius: 0;
 }
 
-.c3 fieldset {
+.c4 fieldset {
   border-color: #231B22;
   border-bottom-width: 0;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.c3 label {
+.c4 label {
   color: #231B22;
   font-weight: 700;
 }
 
-.c3 legend {
+.c4 legend {
   font-weight: 700;
 }
 
@@ -1092,8 +1015,8 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
     <div
       class="c1"
     >
-      <div
-        class="c2 c3"
+      <fieldset
+        class="c2"
         label="Label"
       >
         <input
@@ -1101,7 +1024,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
           aria-controls="downshift-2-menu"
           aria-labelledby="downshift-2-label"
           autocomplete="off"
-          class="c4"
+          class="c3 c4"
           id="downshift-2-input"
           value="s"
         />
@@ -1110,26 +1033,25 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
         >
           Label
         </label>
-        <fieldset
+        <legend
           class="c6"
         >
-          <legend
+          <span
             class="c7"
           >
-            <span
-              class="c8"
-            >
-              Label
-            </span>
-          </legend>
-        </fieldset>
-        <svg
+            Label
+          </span>
+        </legend>
+        <div
+          class="c8"
           height="20"
           role="button"
           tabindex="0"
           width="20"
-        />
-      </div>
+        >
+          <svg />
+        </div>
+      </fieldset>
     </div>
     <ul
       aria-labelledby="downshift-2-label"

@@ -1,11 +1,14 @@
 #!/bin/bash
-​
+
 BRANCH=`git rev-parse --abbrev-ref HEAD`
-​
-if [ $BRANCH == 'master' ];
+echo "on branch $BRANCH"
+
+set -e
+
+if [[ $BRANCH == "master" ]];
 then
   yarn lerna publish --yes
-elif [ $BRANCH == 'alpha' ] || [ $BRANCH == 'beta' ];
+elif [[ $BRANCH == "alpha" || $BRANCH == "beta" ]];
 then
   yarn lerna publish --conventional-prerelease --yes --preid $BRANCH
 else
