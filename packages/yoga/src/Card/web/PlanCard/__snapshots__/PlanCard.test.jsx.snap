@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
-.c15 {
+.c16 {
   box-sizing: border-box;
   outline: none;
   -webkit-transition: all 0.2s;
@@ -27,18 +27,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   text-decoration: none;
 }
 
-.c15:not([disabled]):hover,
-.c15:not([disabled]):focus {
+.c16:not([disabled]):hover,
+.c16:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(244,97,82,0.45);
 }
 
-.c15:active {
+.c16:active {
   background-color: #F78D82;
   border-color: #F78D82;
   color: #FFFFFF;
 }
 
-.c15:disabled {
+.c16:disabled {
   background-color: #DBDBE8;
   border-color: #DBDBE8;
   color: #9898A6;
@@ -55,7 +55,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   color: #41414A;
 }
 
-.c14 {
+.c15 {
   margin-top: 24px;
 }
 
@@ -194,9 +194,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 }
 
 .c11 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin-bottom: 16px;
 }
 
@@ -206,6 +203,20 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 }
 
 .c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0;
+}
+
+.c12 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c13 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -214,14 +225,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-family: Rubik;
   color: #41414A;
   display: inline-block;
-  height: 16px;
+  height: 100%;
   vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #001027;
 }
 
-.c13 {
+.c14 {
   display: block;
   padding: 0;
+  width: 100%;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -231,6 +246,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;
+  text-align: left;
   outline: none;
   white-space: nowrap;
   overflow: hidden;
@@ -300,18 +316,22 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         <li
           class="c11"
         >
-          <svg
-            fill="#9898A6"
-            height="16"
-            width="16"
-          />
-          <span
+          <div
             class="c12"
           >
-            list item
-          </span>
+            <svg
+              fill="#9898A6"
+              height="16"
+              width="16"
+            />
+            <span
+              class="c13"
+            >
+              list item
+            </span>
+          </div>
           <a
-            class="c13"
+            class="c14"
           >
             button
           </a>
@@ -319,10 +339,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       </ul>
     </div>
     <footer
-      class="c14"
+      class="c15"
     >
       <button
-        class="c15"
+        class="c16"
       >
         Select this plan
       </button>
