@@ -45,6 +45,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/luispiresgympass"><img src="https://avatars0.githubusercontent.com/u/58981184?v=4" width="100px;" alt=""/><br /><sub><b>Luis Pires</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=luispiresgympass" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/invilliaanajacobsen"><img src="https://avatars2.githubusercontent.com/u/57181206?v=4" width="100px;" alt=""/><br /><sub><b>invilliaanajacobsen</b></sub></a><br /><a href="https://github.com/Gympass/yoga/issues?q=author%3Ainvilliaanajacobsen" title="Bug reports">🐛</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="http://www.caioalexandre.com"><img src="https://avatars1.githubusercontent.com/u/31045534?v=4" width="100px;" alt=""/><br /><sub><b>Caio Alexandre</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=caioalexandrebr" title="Documentation">📖</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
