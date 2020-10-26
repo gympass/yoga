@@ -239,12 +239,11 @@ const Option = styled.li`
   `}
 `;
 
-const ArrowIcon = styled(({ isOpen, disabled, selected, ...props }) => (
+const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
   <ChevronDown width={20} height={20} {...props} />
 ))`
   ${({
     isOpen,
-    disabled,
     selected,
     theme: {
       yoga: {
@@ -253,7 +252,6 @@ const ArrowIcon = styled(({ isOpen, disabled, selected, ...props }) => (
     },
   }) => `
     fill: ${dropdown.disabled.arrow.fill};
-    ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
     ${selected ? `fill: ${dropdown.selected.arrow.fill};` : ''};
     transform: rotate(${isOpen ? '180deg' : '0'});
   `}
@@ -298,11 +296,7 @@ const Dropdown = ({ label, disabled, full, options, onChange, ...rest }) => (
             disabled={disabled}
             {...getToggleButtonProps()}
           >
-            <ArrowIcon
-              isOpen={isOpen}
-              disabled={disabled}
-              selected={selectedItem !== null}
-            />
+            <ArrowIcon isOpen={isOpen} selected={selectedItem !== null} />
           </Button>
         </Selector>
 
