@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   }) => `
     align-items: center;
     background-color: ${white};
-    box-shadow: 0 2px 2px ${elements.lineAndBorders};
+    box-shadow: 0 2px 2px ${elements.backgroundAndDisabled};
     display: flex;
     flex-direction: row;
     grid-area: Header;

@@ -12,7 +12,7 @@ const Footer = styled.footer(
     padding: 20px;
 
     background-color: ${white};
-    box-shadow: 0 -2px 2px ${elements.lineAndBorders};
+    box-shadow: 0 -2px 2px ${elements.backgroundAndDisabled};
     color: ${elements.selectionAndIcons};
 
     text-align: center;

@@ -14,14 +14,14 @@ const TabBar = styled.nav(
   left: 0;
   height: 64px;
   width: 100%;
-  
+
   background-color: #fff;
-  box-shadow: 0 -2px 2px ${elements.lineAndBorders};
+  box-shadow: 0 -2px 2px ${elements.backgroundAndDisabled};
   color: ${text.secondary};
 
   z-index: 2;
 
-  @media (min-width: 900px) { 
+  @media (min-width: 900px) {
     display: none;
   }
 `,
