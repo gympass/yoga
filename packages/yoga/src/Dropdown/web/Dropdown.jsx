@@ -245,13 +245,15 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
   ${({
     isOpen,
     selected,
+    disabled,
     theme: {
       yoga: {
         components: { dropdown },
       },
     },
   }) => `
-    fill: ${dropdown.disabled.arrow.fill};
+    fill: ${dropdown.arrow.fill};
+    ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
     ${selected ? `fill: ${dropdown.selected.arrow.fill};` : ''};
     transform: rotate(${isOpen ? '180deg' : '0'});
   `}
@@ -296,7 +298,11 @@ const Dropdown = ({ label, disabled, full, options, onChange, ...rest }) => (
             disabled={disabled}
             {...getToggleButtonProps()}
           >
-            <ArrowIcon isOpen={isOpen} selected={selectedItem !== null} />
+            <ArrowIcon
+              isOpen={isOpen}
+              selected={selectedItem !== null}
+              disabled={disabled}
+            />
           </Button>
         </Selector>
 
