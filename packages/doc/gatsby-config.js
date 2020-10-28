@@ -1,4 +1,5 @@
 /* eslint-disable no-useless-escape */
+const { execSync } = require('child_process');
 const config = require('./config');
 
 const plugins = [
@@ -70,6 +71,17 @@ const plugins = [
   },
 ];
 
+const currentBranch = execSync('git rev-parse --abbrev-ref HEAD')
+  .toString('utf8')
+  .replace(/[\n\r\s]+$/, '');
+
+// on master branch: /yoga
+// on alpha: /yoga/alpha
+// on beta: /yoga/beta
+const pathPrefix = `/yoga${
+  ['alpha', 'beta'].includes(currentBranch) ? `/${currentBranch}` : ''
+}`;
+
 module.exports = {
   siteMetadata: {
     title: config.siteMetadata.title,
@@ -80,5 +92,5 @@ module.exports = {
     },
   },
   plugins,
-  pathPrefix: '/yoga',
+  pathPrefix,
 };
