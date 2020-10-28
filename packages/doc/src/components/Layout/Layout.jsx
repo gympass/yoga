@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from '@gympass/yoga';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Link } from 'gatsby';
+import { Link, withPrefix } from 'gatsby';
 
 import {
   GlobalStyle,
@@ -103,10 +103,7 @@ const Layout = ({
   const [locale, setLocale] = useState();
   const [showMenu, toggleMenu] = useState(false);
 
-  const prefix =
-    typeof window !== 'undefined'
-      ? window.location.pathname.split('/').filter(item => item)[0] === 'yoga'
-      : false;
+  const prefix = withPrefix('/');
 
   return (
     <ThemeProvider theme={theme} locale={locale}>
