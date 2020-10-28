@@ -42,7 +42,6 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
         ]
       }
       variant=""
-      variantIntensity={3}
     >
       <View
         style={
@@ -90,7 +89,7 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
               style={
                 Array [
                   Object {
-                    "backgroundColor": "#F46152",
+                    "backgroundColor": "#231B22",
                     "borderRadius": 9999,
                     "height": 48,
                     "justifyContent": "center",

@@ -32,7 +32,7 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "#41414A",
+            "backgroundColor": "#231B22",
             "height": "100%",
             "opacity": 0,
             "position": "relative",
@@ -68,7 +68,7 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "700",

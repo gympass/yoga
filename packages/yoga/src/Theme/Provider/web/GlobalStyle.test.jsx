@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import tokens from '@gympass/yoga-tokens';
-import theme from '../../themes';
+import theme from '../../theme';
 
 import GlobalStyle from './GlobalStyle';
 import ThemeProvider from './ThemeProvider';

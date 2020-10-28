@@ -7,9 +7,12 @@ const Label = styled.label`
   user-select: none;
 
   ${({
+    error,
+    disabled,
     theme: {
       yoga: {
         transition,
+        colors,
         components: { input },
       },
     },
@@ -24,21 +27,10 @@ const Label = styled.label`
     transition-property: transform, font-size;
     transition-duration: ${transition.duration[1]}ms;
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
+
+    ${error ? `color: ${colors.feedback.attention[1]};` : ''}
+    ${disabled ? `color: ${colors.elements.backgroundAndDisabled};` : ''}
   `}
-
-  ${({ error, theme: { yoga } }) =>
-    error
-      ? css`
-          color: ${yoga.colors.negative[1]};
-        `
-      : ''};
-
-  ${({ disabled, theme: { yoga } }) =>
-    disabled
-      ? css`
-          color: ${yoga.colors.disabled.background};
-        `
-      : ''};
 `;
 
 export default Label;

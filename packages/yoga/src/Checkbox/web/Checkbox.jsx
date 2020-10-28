@@ -1,5 +1,5 @@
 import React from 'react';
-import { bool, string, objectOf, any, oneOf } from 'prop-types';
+import { bool, string, objectOf, any } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Check } from '@gympass/yoga-icons';
@@ -23,10 +23,9 @@ const CheckMark = styled.div`
     checked,
     disabled,
     error,
-    variant,
     theme: {
       yoga: {
-        colors: { [variant]: color = [], negative },
+        colors: { primary, feedback },
         components: { checkbox },
       },
     },
@@ -38,12 +37,12 @@ const CheckMark = styled.div`
 
     border-radius: ${checkbox.border.radius}px;
     border-width: ${checkbox.border.width}px;
-    border-color: ${disabled ? checkbox.disabled.border.color : color[3]};
+    border-color: ${disabled ? checkbox.disabled.border.color : primary};
 
     ${
       checked
         ? `
-        background-color: ${color[3]};
+        background-color: ${primary}; 
 
         svg {
           position: absolute;
@@ -64,9 +63,9 @@ const CheckMark = styled.div`
         : ''
     }
 
-    ${error ? `border-color: ${negative[1]};` : ''}
+    ${error ? `border-color: ${feedback.attention[1]};` : ''}
 
-    ${error && checked ? `background-color: ${negative[1]};` : ''}
+    ${error && checked ? `background-color: ${feedback.attention[1]};` : ''}
   `}
 `;
 
@@ -112,10 +111,9 @@ const CheckboxStyled = styled.div`
   align-items: center;
 
   ${({
-    variant,
     theme: {
       yoga: {
-        colors: { [variant]: color = [] },
+        colors: { elements },
         components: { checkbox },
       },
     },
@@ -131,19 +129,30 @@ const CheckboxStyled = styled.div`
         }
       }
 
-      ${Label}:active {
+      &:hover {
         ${Shadow} {
-          background-color: ${hexToRgb(color[1], 0.75)};
-
-          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[1], 0.75)};
+          background-color: ${hexToRgb(elements.lineAndBorders, 0.25)};
+          
+          box-shadow: 0 0 0 ${shadowSize}px 
+            ${hexToRgb(elements.lineAndBorders, 0.25)};
         }
       }
 
-      &:focus-within, &:hover {
+      &:focus-within {
         ${Shadow} {
-          background-color: ${hexToRgb(color[1], 0.5)};
+          background-color: ${hexToRgb(elements.lineAndBorders, 0.5)};
+          
+          box-shadow: 0 0 0 ${shadowSize}px 
+            ${hexToRgb(elements.lineAndBorders, 0.5)};
+        }
+      }
 
-          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[1], 0.5)};
+      ${Label}:active {
+        ${Shadow} {
+          background-color: ${hexToRgb(elements.lineAndBorders, 0.75)};
+
+          box-shadow: 0 0 0 ${shadowSize}px 
+            ${hexToRgb(elements.lineAndBorders, 0.75)};
         }
       }
     `;
@@ -169,12 +178,12 @@ const Helper = styled.span`
     error,
     theme: {
       yoga: {
-        colors: { negative },
+        colors: { feedback },
         components: { checkbox },
       },
     },
   }) => `
-    color: ${error ? negative[1] : checkbox.helper.font.color};
+    color: ${error ? feedback.attention[1] : checkbox.helper.font.color};
 
     font-size: ${checkbox.helper.font.size}px;
   `}
@@ -192,7 +201,6 @@ const Checkbox = ({
   error,
   style,
   className,
-  variant,
   theme: {
     yoga: {
       components: { checkbox },
@@ -201,7 +209,7 @@ const Checkbox = ({
   ...rest
 }) => (
   <CheckboxWrapper style={style} className={className}>
-    <CheckboxStyled variant={variant}>
+    <CheckboxStyled>
       <Label>
         <Shadow />
         <CheckMark
@@ -209,7 +217,6 @@ const Checkbox = ({
             disabled,
             checked,
             error,
-            variant,
           }}
         >
           {checked && <Check width={checkbox.size} height={checkbox.size} />}
@@ -242,8 +249,6 @@ Checkbox.propTypes = {
   /** set a style to the checkbox container */
   style: objectOf(any),
   className: string,
-  /** style the card following the theme (primary, secondary, tertiary) */
-  variant: oneOf(['primary', 'secondary', 'tertiary']),
 };
 
 Checkbox.defaultProps = {
@@ -255,7 +260,6 @@ Checkbox.defaultProps = {
   error: undefined,
   style: undefined,
   className: undefined,
-  variant: 'primary',
 };
 
 Checkbox.displayName = 'Checkbox';

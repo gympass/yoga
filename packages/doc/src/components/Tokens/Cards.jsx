@@ -14,7 +14,7 @@ const Card = styled.div`
     valueUnit,
     theme: {
       yoga: {
-        colors: { gray: grayPallete, white },
+        colors: { elements, white },
       },
     },
   }) => `
@@ -28,7 +28,7 @@ const Card = styled.div`
     padding: 8px;
 
     background: ${white};
-    border: 1px solid ${hexToRgb(grayPallete[2], 0.7)};
+    border: 1px solid ${hexToRgb(elements.lineAndBorders, 0.7)};
     ${property}: ${valueUnit ? `${value}${valueUnit}` : value};
   `};
 `;

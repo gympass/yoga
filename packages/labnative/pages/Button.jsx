@@ -49,6 +49,14 @@ const ButtonPage = () => (
       <Button.Outline>Outline</Button.Outline>
     </ButtonWrapper>
     <ButtonWrapper>
+      <Button.Outline variant="secondary">Secondary</Button.Outline>
+    </ButtonWrapper>
+    <ButtonWrapper>
+      <Button.Outline variant="secondary" disabled>
+        Secondary Disabled
+      </Button.Outline>
+    </ButtonWrapper>
+    <ButtonWrapper>
       <Button.Outline disabled>Disabled</Button.Outline>
     </ButtonWrapper>
     <ButtonWrapper>
@@ -63,6 +71,9 @@ const ButtonPage = () => (
     <DocTitle>Link Buttons</DocTitle>
     <ButtonWrapper>
       <Button.Link>Link</Button.Link>
+    </ButtonWrapper>
+    <ButtonWrapper>
+      <Button.Link variant="secondary">Link secondary</Button.Link>
     </ButtonWrapper>
     <ButtonWrapper>
       <Button.Link inverted>Inverted</Button.Link>

@@ -34,11 +34,11 @@ exports[`<TextArea /> should match snapshot 1`] = `
       style={
         Array [
           Object {
-            "borderColor": "#D3D3E2",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
-            "color": "#9898A6",
+            "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
             "fontWeight": "400",

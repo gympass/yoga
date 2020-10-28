@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 ## [0.16.8](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.7...@gympass/yoga-labnative@0.16.8) (2020-10-15)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

@@ -61,7 +61,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         ]
       }
       variant=""
-      variantIntensity={3}
     >
       <View
         style={
@@ -76,6 +75,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             },
           ]
         }
+        variant="deepPurple"
       />
       <View
         style={
@@ -83,7 +83,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             Object {
               "alignItems": "center",
               "backgroundColor": "transparent",
-              "borderColor": "#9898A6",
+              "borderColor": "#D7D7E0",
               "borderRadius": 4,
               "borderStyle": "solid",
               "borderWidth": 1,
@@ -101,7 +101,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "500",
@@ -140,7 +140,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           style={
             Array [
               Object {
-                "color": "#001027",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "500",
@@ -193,7 +193,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               style={
                 Array [
                   Object {
-                    "color": "#41414A",
+                    "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -209,7 +209,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             style={
               Array [
                 Object {
-                  "color": "#41414A",
+                  "color": "#231B22",
                   "fontFamily": "Rubik",
                   "fontSize": 48,
                   "fontWeight": "500",
@@ -234,7 +234,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               style={
                 Array [
                   Object {
-                    "color": "#41414A",
+                    "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -365,7 +365,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 style={
                   Array [
                     Object {
-                      "color": "#001027",
+                      "color": "#231B22",
                       "fontFamily": "Rubik",
                       "fontSize": 14,
                       "fontWeight": "400",
@@ -391,7 +391,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                   style={
                     Array [
                       Object {
-                        "color": "#652CDB",
+                        "color": "#D8385E",
                         "fontFamily": "Rubik",
                         "fontSize": 12,
                         "fontWeight": "500",
@@ -434,7 +434,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               style={
                 Array [
                   Object {
-                    "backgroundColor": "#F46152",
+                    "backgroundColor": "#231B22",
                     "borderRadius": 9999,
                     "height": 48,
                     "justifyContent": "center",
@@ -533,7 +533,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
         ]
       }
       variant=""
-      variantIntensity={3}
     >
       <View
         style={
@@ -577,7 +576,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
           style={
             Array [
               Object {
-                "color": "#001027",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 20,
                 "fontWeight": "500",
@@ -630,7 +629,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "#41414A",
+                    "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -646,7 +645,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
             style={
               Array [
                 Object {
-                  "color": "#41414A",
+                  "color": "#231B22",
                   "fontFamily": "Rubik",
                   "fontSize": 48,
                   "fontWeight": "500",
@@ -671,7 +670,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
               style={
                 Array [
                   Object {
-                    "color": "#41414A",
+                    "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 14,
                     "fontWeight": "400",

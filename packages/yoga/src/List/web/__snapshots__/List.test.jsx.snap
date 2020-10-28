@@ -21,7 +21,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 }
 
 .c0 > * {
-  border-bottom: 1px solid #DBDBE8;
+  border-bottom: 1px solid #F5F5FA;
 }
 
 .c0 > *:last-child {
@@ -64,7 +64,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 }
 
 .c0 > * {
-  border-bottom: 1px solid #DBDBE8;
+  border-bottom: 1px solid #F5F5FA;
 }
 
 .c0 > *:last-child {
@@ -119,7 +119,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 }
 
 .c0 > * {
-  border-bottom: 1px solid #DBDBE8;
+  border-bottom: 1px solid #F5F5FA;
 }
 
 .c0 > *:last-child {
@@ -210,7 +210,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
 }
 
 .c0 > * {
-  border-right: 1px solid #DBDBE8;
+  border-right: 1px solid #F5F5FA;
 }
 
 .c0 > *:last-child {
@@ -255,7 +255,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
 }
 
 .c0 > * {
-  border-right: 1px solid #DBDBE8;
+  border-right: 1px solid #F5F5FA;
 }
 
 .c0 > *:last-child {

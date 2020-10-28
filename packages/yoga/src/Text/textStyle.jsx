@@ -7,7 +7,7 @@ const textStyle = type => () => css`
     theme: {
       yoga: {
         baseFont,
-        colors: { [variant]: color = {}, dark, white },
+        colors: { [variant]: color, text, white },
         components: {
           text: {
             [type]: { fontsize, lineHeight, fontWeight },
@@ -21,7 +21,7 @@ const textStyle = type => () => css`
     ${fontWeight ? `font-weight: ${fontWeight}` : ''};
 
     font-family: ${baseFont.family};
-    color: ${variant ? color[3] : dark};
+    color: ${variant ? color : text.primary};
     ${inverted ? `color: ${white};` : ''}
   `}
 `;

@@ -7,7 +7,7 @@ const Item = styled(Link)(
   ({
     theme: {
       yoga: {
-        colors: { gray, dark },
+        colors: { elements, text },
       },
     },
   }) => `
@@ -21,8 +21,8 @@ const Item = styled(Link)(
   margin-right: 24px;
   padding: 24px;
 
-  background-color: ${gray[1]};
-  color: ${dark};
+  background-color: ${elements.backgroundAndDisabled};
+  color: ${text.primary};
 
   text-decoration: none;
 
@@ -74,13 +74,13 @@ const Description = styled.p(
   ({
     theme: {
       yoga: {
-        colors: { gray },
+        colors: { text },
       },
     },
   }) => `
     margin: 0;
 
-    color: ${gray[8]};
+    color: ${text.secondary};
     font-size: 16px;
 
     @media (max-width: 900px) {

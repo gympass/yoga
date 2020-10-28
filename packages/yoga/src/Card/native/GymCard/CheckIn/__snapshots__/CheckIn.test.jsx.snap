@@ -46,7 +46,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
         ]
       }
       variant=""
-      variantIntensity={3}
     >
       <View
         style={
@@ -79,7 +78,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
@@ -478,7 +477,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -496,7 +495,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
@@ -559,7 +558,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
         ]
       }
       variant=""
-      variantIntensity={3}
     >
       <View
         style={
@@ -577,7 +575,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
             Array [
               Object {
                 "alignItems": "center",
-                "borderColor": "#DBDBE8",
+                "borderColor": "#D7D7E0",
                 "borderRadius": 8,
                 "borderStyle": "solid",
                 "borderWidth": 1,
@@ -591,7 +589,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           <RNSVGSvgView
             bbHeight={26}
             bbWidth={24}
-            fill="#DBDBE8"
+            fill="#9898A6"
             focusable={false}
             height={26}
             style={
@@ -617,7 +615,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               fill={
                 Array [
                   0,
-                  4292598760,
+                  4288190630,
                 ]
               }
               fillOpacity={1}
@@ -664,7 +662,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
@@ -1063,7 +1061,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "400",
@@ -1081,7 +1079,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",

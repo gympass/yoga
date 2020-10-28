@@ -7,59 +7,34 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @gympass/yoga-icons
 
-
-
-
-
 ## [0.11.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.11.0...@gympass/yoga-icons@0.11.1) (2020-06-24)
-
 
 ### Bug Fixes
 
-* **icons:** keep viewBox svg attribute ([1ba9469](https://github.com/Gympass/yoga/commit/1ba946937d49b2ed7fd2ccfdf127b5eed9a6280d))
-
-
-
-
+- **icons:** keep viewBox svg attribute ([1ba9469](https://github.com/Gympass/yoga/commit/1ba946937d49b2ed7fd2ccfdf127b5eed9a6280d))
 
 # [0.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.10.0...@gympass/yoga-icons@0.11.0) (2020-06-23)
 
-
 ### Features
 
-* **icons:** add svgr to build process using [@dr](https://github.com/dr).pogodin/babel-preset-svgr ([90e5cab](https://github.com/Gympass/yoga/commit/90e5caba1b28b1bdfcf353a75fed7c0e3068eb46))
-
-
-
-
+- **icons:** add svgr to build process using [@dr](https://github.com/dr).pogodin/babel-preset-svgr ([90e5cab](https://github.com/Gympass/yoga/commit/90e5caba1b28b1bdfcf353a75fed7c0e3068eb46))
 
 # [0.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.9.0...@gympass/yoga-icons@0.10.0) (2020-06-23)
 
-
 ### Bug Fixes
 
-* **svg:** remove svgo from build web process (esm and cjs) ([5b177bb](https://github.com/Gympass/yoga/commit/5b177bbf3a41d1ef5d19553aba522cc939786437))
-
+- **svg:** remove svgo from build web process (esm and cjs) ([5b177bb](https://github.com/Gympass/yoga/commit/5b177bbf3a41d1ef5d19553aba522cc939786437))
 
 ### Features
 
-* update youtube svg ([a7e2d16](https://github.com/Gympass/yoga/commit/a7e2d16be37333d9b4d8be4aa09995c335ebc615))
-* **Icons:** add youtube icon ([3b9d0f3](https://github.com/Gympass/yoga/commit/3b9d0f395861e03befe7ee3409f024897c648607))
-
-
-
-
+- update youtube svg ([a7e2d16](https://github.com/Gympass/yoga/commit/a7e2d16be37333d9b4d8be4aa09995c335ebc615))
+- **Icons:** add youtube icon ([3b9d0f3](https://github.com/Gympass/yoga/commit/3b9d0f395861e03befe7ee3409f024897c648607))
 
 # [0.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.8.0...@gympass/yoga-icons@0.9.0) (2020-05-11)
 
-
 ### Features
 
-* **icons:** add lock icon ([1a285e0](https://github.com/Gympass/yoga/commit/1a285e02bc14462e58729ceba3826e3b3157670c))
-
-
-
-
+- **icons:** add lock icon ([1a285e0](https://github.com/Gympass/yoga/commit/1a285e02bc14462e58729ceba3826e3b3157670c))
 
 # [0.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.7.0...@gympass/yoga-icons@0.8.0) (2020-04-06)
 

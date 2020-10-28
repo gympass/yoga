@@ -25,7 +25,7 @@ const Placeholder = styled.View`
   ${({
     theme: {
       yoga: {
-        colors: { gray },
+        colors: { elements },
         components: {
           card: {
             gym: { checkIn },
@@ -40,7 +40,7 @@ const Placeholder = styled.View`
     align-items: center;
     justify-content: center;
 
-    border: ${checkIn.avatar.border.width}px solid ${gray[3]};
+    border: ${checkIn.avatar.border.width}px solid ${elements.lineAndBorders};
     border-radius: ${checkIn.avatar.border.radius}px;
   `}
 `;

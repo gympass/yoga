@@ -1,4 +1,4 @@
-import ThemeProvider, { FontLoader, themes, theme } from './Theme';
+import ThemeProvider, { FontLoader, yogaTheme, theme } from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -19,7 +19,7 @@ import AutoComplete from './AutoComplete';
 export {
   ThemeProvider,
   FontLoader,
-  themes,
+  yogaTheme,
   theme,
   Button,
   List,

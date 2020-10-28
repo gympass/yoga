@@ -16,7 +16,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
       disabled={false}
       style={
         Object {
-          "backgroundColor": "rgba(219, 219, 232, 1)",
+          "backgroundColor": "rgba(215, 215, 224, 1)",
           "borderRadius": 9999,
           "display": "flex",
           "height": 24,
@@ -63,7 +63,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
       disabled={false}
       style={
         Object {
-          "backgroundColor": "rgba(244, 97, 82, 1)",
+          "backgroundColor": "rgba(35, 27, 34, 1)",
           "borderRadius": 9999,
           "display": "flex",
           "height": 24,
@@ -124,7 +124,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         disabled={true}
         style={
           Object {
-            "backgroundColor": "#DBDBE8",
+            "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 16,
             "transform": Array [
@@ -171,7 +171,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         disabled={true}
         style={
           Object {
-            "backgroundColor": "#DBDBE8",
+            "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 16,
             "transform": Array [

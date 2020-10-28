@@ -177,12 +177,19 @@ describe('<Button />', () => {
     });
 
     describe('With variant prop', () => {
-      it('should match snapshot with link Button', () => {
+      it('should match snapshot with link Button.Link', () => {
         const { container } = render(
           <ThemeProvider>
             <Button.Link variant="primary" />
-            <Button.Link variant="secondary" />
-            <Button.Link variant="tertiary" />
+          </ThemeProvider>,
+        );
+        expect(container).toMatchSnapshot();
+      });
+
+      it('should match snapshot with link Button.Outline', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Outline variant="primary" />
           </ThemeProvider>,
         );
         expect(container).toMatchSnapshot();

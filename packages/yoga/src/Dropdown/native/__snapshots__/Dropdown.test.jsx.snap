@@ -21,7 +21,7 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
-            "borderColor": "#D3D3E2",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -57,7 +57,7 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
       <RNSVGSvgView
         bbHeight={20}
         bbWidth={20}
-        fill="#9898A6"
+        fill="#D7D7E0"
         focusable={false}
         height={20}
         style={
@@ -83,7 +83,7 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
           fill={
             Array [
               0,
-              4288190630,
+              4292335584,
             ]
           }
           fillOpacity={1}
@@ -151,7 +151,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
-            "borderColor": "#DBDBE8",
+            "borderColor": "#F5F5FA",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -173,7 +173,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
         style={
           Array [
             Object {
-              "color": "#DBDBE8",
+              "color": "#F5F5FA",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "400",
@@ -187,7 +187,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
       <RNSVGSvgView
         bbHeight={20}
         bbWidth={20}
-        fill="#DBDBE8"
+        fill="#F5F5FA"
         focusable={false}
         height={20}
         style={
@@ -213,7 +213,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
           fill={
             Array [
               0,
-              4292598760,
+              4294309370,
             ]
           }
           fillOpacity={1}
@@ -281,7 +281,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
-            "borderColor": "#D3D3E2",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -317,7 +317,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
       <RNSVGSvgView
         bbHeight={20}
         bbWidth={20}
-        fill="#9898A6"
+        fill="#D7D7E0"
         focusable={false}
         height={20}
         style={
@@ -343,7 +343,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
           fill={
             Array [
               0,
-              4288190630,
+              4292335584,
             ]
           }
           fillOpacity={1}
@@ -418,7 +418,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
-            "borderColor": "#41414A",
+            "borderColor": "#231B22",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -447,7 +447,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
         style={
           Array [
             Object {
-              "color": "#41414A",
+              "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "400",
@@ -461,7 +461,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
       <RNSVGSvgView
         bbHeight={20}
         bbWidth={20}
-        fill="#DBDBE8"
+        fill="#F5F5FA"
         focusable={false}
         height={20}
         style={
@@ -487,7 +487,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
           fill={
             Array [
               0,
-              4292598760,
+              4294309370,
             ]
           }
           fillOpacity={1}

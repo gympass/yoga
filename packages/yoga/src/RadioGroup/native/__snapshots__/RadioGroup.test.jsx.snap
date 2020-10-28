@@ -63,7 +63,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
             Array [
               Object {
                 "alignItems": "center",
-                "backgroundColor": "#F46152",
+                "backgroundColor": "#231B22",
                 "borderRadius": 9999,
                 "fontSize": 14,
                 "height": 40,

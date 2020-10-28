@@ -40,7 +40,7 @@ const Card = ({
       },
       border: {
         width: borders.small,
-        color: colors.gray[7],
+        color: colors.elements.lineAndBorders,
       },
       font: {
         size: fontSizes.xsmall,
@@ -53,19 +53,19 @@ const Card = ({
         bottom: spacing.xxsmall,
       },
       font: {
-        color: colors.gray[8],
+        color: colors.text.secondary,
         weight: fontWeights.medium,
         size: fontSizes.xsmall,
       },
     },
     title: {
-      color: '#001027',
+      color: colors.text.primary,
       margin: {
         bottom: spacing.xxxsmall,
       },
     },
     description: {
-      color: colors.gray[8],
+      color: colors.text.secondary,
     },
     price: {
       currency: {
@@ -88,7 +88,7 @@ const Card = ({
         },
         font: {
           size: fontSizes.small,
-          color: '#001027',
+          color: colors.text.primary,
         },
         icon: {
           margin: {
@@ -98,7 +98,7 @@ const Card = ({
       },
       button: {
         font: {
-          color: colors.secondary[3],
+          color: colors.secondary,
           size: fontSizes.xsmall,
           weight: fontWeights.medium,
         },
@@ -111,17 +111,6 @@ const Card = ({
       margin: {
         top: spacing.large,
       },
-    },
-    colors: {
-      vibin: '#D8385E',
-      hope: '#1D856C',
-      verve: '#FF874C',
-      light: '#D7D7E0',
-      energy: '#FFC24C',
-      medium: '#6B6B78',
-      stamina: '#231B22',
-      relax: '#7068D4',
-      deep: '#710252',
     },
   },
   gym: {
@@ -154,7 +143,7 @@ const Card = ({
   },
   event: {
     icon: {
-      fill: colors.dark,
+      fill: colors.text.primary,
     },
     info: {
       padding: {
@@ -171,11 +160,12 @@ const Card = ({
       },
       place: {
         height: spacing.medium,
-        color: colors.gray[8],
+        color: colors.text.secondary,
         marginBottom: spacing.xxsmall,
       },
     },
     date: {
+      backgroundColor: colors.secondary,
       radius: radii.rounded,
       dayOfWeek: {
         fontWeight: fontWeights.regular,

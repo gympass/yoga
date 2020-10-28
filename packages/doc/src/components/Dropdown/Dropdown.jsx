@@ -5,6 +5,7 @@ import { arrayOf, number, func, shape, string } from 'prop-types';
 import { readableColor } from 'polished';
 
 import Arrow from 'images/arrow-dropdown.svg';
+import { hexToRgb } from '@gympass/yoga-common';
 
 const Wrapper = styled.div`
   position: relative;
@@ -72,18 +73,14 @@ const Option = styled.li`
     isSelected,
     theme: {
       yoga: {
-        colors: {
-          primary: primaryPallete,
-          gray: { darkGray },
-          white,
-        },
+        colors: { primary, text, white },
       },
     },
   }) => `
     align-items: center;
-    background-color: ${isSelected ? primaryPallete[0] : 'inherit'};
+    background-color: ${isSelected ? primary : 'inherit'};
     color: ${
-      isSelected ? readableColor(primaryPallete[0], darkGray, white) : 'inherit'
+      isSelected ? readableColor(primary, text.secondary, white) : 'inherit'
     };
     cursor: pointer;
     display: flex;
@@ -92,8 +89,8 @@ const Option = styled.li`
     transition: 200ms all ease-out;
 
     &:hover {
-      background-color: ${primaryPallete[1]};
-      color: ${readableColor(primaryPallete[1], darkGray, white)};
+      background-color: ${hexToRgb(primary, 0.25)};
+      color: ${readableColor(primary, text.secondary, white)};
     }
   `}
 `;

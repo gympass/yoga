@@ -112,7 +112,7 @@ const Rating = ({
               />
               {/* // half unfilled star */}
               <Icon
-                fill={colors.gray[5]}
+                fill={colors.elements.lineAndBorders}
                 width={dWidth}
                 height={iconSize}
                 viewBox={`${wViewBox} 0 ${dViewBox} ${VIEW_BOX_ICON_SIZE}`}
@@ -124,7 +124,7 @@ const Rating = ({
         return (
           // unfilled star
           <Icon
-            fill={colors.gray[5]}
+            fill={colors.elements.lineAndBorders}
             key={`unfilled-${i}`}
             width={iconSize}
             height={iconSize}

@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @gympass/yoga-common
 
-
-
-
-
 ## [0.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-common@0.1.0...@gympass/yoga-common@0.1.1) (2019-12-09)
 
 **Note:** Version bump only for package @gympass/yoga-common

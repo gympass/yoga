@@ -68,13 +68,13 @@ const Field = styled.TextInput(
 
     ${focus ? `border-color: ${input.border.color.typed};` : ''}
     ${focus || typed ? `color: ${input.font.color.focus};` : ''}
-    ${error ? `border-color: ${colors.negative[1]};` : ''}
+    ${error ? `border-color: ${colors.feedback.attention[1]};` : ''}
 
     ${
       disabled
         ? `
-          border-color: ${colors.disabled.background};
-          color: ${colors.disabled.background};
+          border-color: ${colors.elements.backgroundAndDisabled};
+          color: ${colors.elements.backgroundAndDisabled};
         `
         : ''
     }
@@ -114,7 +114,7 @@ const Label = styled(Animated.Text)(
       },
     },
   }) => `
-    background-color: ${colors.gray.surface};
+    background-color: ${colors.white};
 
     font-family: ${baseFont.family};
     font-weight: ${input.label.font.weight.default};
@@ -137,8 +137,8 @@ const Label = styled(Animated.Text)(
         : ''
     }
 
-    ${error ? `color: ${colors.negative[1]};` : ''}
-    ${disabled ? `color: ${colors.disabled.background};` : ''}
+    ${error ? `color: ${colors.feedback.attention[1]};` : ''}
+    ${disabled ? `color: ${colors.elements.backgroundAndDisabled};` : ''}
   `,
 );
 
@@ -192,8 +192,8 @@ const Info = styled(Text.Regular)(
     color: ${input.helper.color};
     font-size: ${input.helper.font.size}px;
 
-    ${error ? `color: ${colors.negative[1]};` : ''}
-    ${disabled ? `color: ${colors.disabled.background}` : ''}
+    ${error ? `color: ${colors.feedback.attention[1]};` : ''}
+    ${disabled ? `color: ${colors.elements.backgroundAndDisabled}` : ''}
     ${right ? 'margin-left: auto;' : ''}
   `,
 );
@@ -234,7 +234,7 @@ const Input = ({
 
   const iconColor = () => {
     if (disabled) {
-      return colors.disabled.background;
+      return colors.elements.backgroundAndDisabled;
     }
 
     if (focused) {

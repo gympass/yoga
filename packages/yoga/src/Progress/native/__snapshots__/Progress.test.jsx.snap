@@ -43,7 +43,7 @@ exports[`<Progress /> should match snapshot 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#F46152",
+              "backgroundColor": "#FF874C",
               "borderRadius": 8,
               "height": "100%",
               "position": "absolute",
@@ -51,7 +51,7 @@ exports[`<Progress /> should match snapshot 1`] = `
             },
           ]
         }
-        variant="primary"
+        variant="verve"
         width={NaN}
       />
     </View>
@@ -89,7 +89,7 @@ exports[`<Progress /> should match snapshot 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#F46152",
+              "backgroundColor": "#FF874C",
               "borderRadius": 8,
               "height": "100%",
               "position": "absolute",
@@ -97,7 +97,7 @@ exports[`<Progress /> should match snapshot 1`] = `
             },
           ]
         }
-        variant="primary"
+        variant="verve"
         width={NaN}
       />
     </View>
@@ -135,7 +135,7 @@ exports[`<Progress /> should match snapshot 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#F46152",
+              "backgroundColor": "#FF874C",
               "borderRadius": 8,
               "height": "100%",
               "position": "absolute",
@@ -143,10 +143,1094 @@ exports[`<Progress /> should match snapshot 1`] = `
             },
           ]
         }
-        variant="primary"
+        variant="verve"
         width={60}
       />
     </View>
+  </View>
+</View>
+`;
+
+exports[`<Progress /> should match snapshot with all variants 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#231B22",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="primary"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#D8385E",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="secondary"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#D8385E",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="vibin"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#1D856C",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="hope"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFC24C",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="energy"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#7068D4",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="relax"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFB0A7",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="peace"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FF874C",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="verve"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FF4438",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="uplift"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#710252",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="deepPurple"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#231B22",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="stamina"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": undefined,
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="dark"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#9898A6",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="medium"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#6B6B78",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="deep"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="light"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#F5F5FA",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="clear"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+  </View>
+  <View
+    align="left"
+    isNumber={true}
+    style={
+      Array [
+        Object {
+          "flexDirection": "row-reverse",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "20%",
+            },
+          ]
+        }
+        variant="white"
+        width={20}
+      />
+    </View>
+    <Text
+      align="left"
+      isNumber={true}
+      style={
+        Array [
+          Object {
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "marginRight": 8,
+            "textAlign": "left",
+            "width": 22,
+          },
+        ]
+      }
+    >
+      20
+    </Text>
   </View>
 </View>
 `;
@@ -194,7 +1278,7 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#F46152",
+              "backgroundColor": "#FF874C",
               "borderRadius": 8,
               "height": "100%",
               "position": "absolute",
@@ -202,7 +1286,7 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
             },
           ]
         }
-        variant="primary"
+        variant="verve"
         width={20}
       />
     </View>
@@ -257,7 +1341,7 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#F46152",
+              "backgroundColor": "#FF874C",
               "borderRadius": 8,
               "height": "100%",
               "position": "absolute",
@@ -265,7 +1349,7 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
             },
           ]
         }
-        variant="primary"
+        variant="verve"
         width={65}
       />
     </View>
@@ -333,7 +1417,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#F46152",
+              "backgroundColor": "#FF874C",
               "borderRadius": 8,
               "height": "100%",
               "position": "absolute",
@@ -341,7 +1425,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
             },
           ]
         }
-        variant="primary"
+        variant="verve"
         width={NaN}
       />
     </View>
@@ -395,7 +1479,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#F46152",
+              "backgroundColor": "#FF874C",
               "borderRadius": 8,
               "height": "100%",
               "position": "absolute",
@@ -403,7 +1487,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
             },
           ]
         }
-        variant="primary"
+        variant="verve"
         width={65}
       />
     </View>
@@ -422,158 +1506,6 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
       }
     >
       Some decription here
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`<Progress /> should match snapshot with secondary variant prop 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    align="left"
-    isNumber={true}
-    style={
-      Array [
-        Object {
-          "flexDirection": "row-reverse",
-          "width": "100%",
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#F5F5FA",
-            "borderRadius": 8,
-            "flexGrow": 1,
-            "height": 8,
-            "marginBottom": "auto",
-            "marginLeft": 0,
-            "marginRight": 0,
-            "marginTop": "auto",
-            "position": "relative",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#652CDB",
-              "borderRadius": 8,
-              "height": "100%",
-              "position": "absolute",
-              "width": "20%",
-            },
-          ]
-        }
-        variant="secondary"
-        width={20}
-      />
-    </View>
-    <Text
-      align="left"
-      isNumber={true}
-      style={
-        Array [
-          Object {
-            "fontFamily": "Rubik",
-            "fontSize": 12,
-            "marginRight": 8,
-            "textAlign": "left",
-            "width": 22,
-          },
-        ]
-      }
-    >
-      20
-    </Text>
-  </View>
-</View>
-`;
-
-exports[`<Progress /> should match snapshot with tertiary variant prop 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    align="left"
-    isNumber={true}
-    style={
-      Array [
-        Object {
-          "flexDirection": "row-reverse",
-          "width": "100%",
-        },
-      ]
-    }
-  >
-    <View
-      style={
-        Array [
-          Object {
-            "backgroundColor": "#F5F5FA",
-            "borderRadius": 8,
-            "flexGrow": 1,
-            "height": 8,
-            "marginBottom": "auto",
-            "marginLeft": 0,
-            "marginRight": 0,
-            "marginTop": "auto",
-            "position": "relative",
-          },
-        ]
-      }
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#22766B",
-              "borderRadius": 8,
-              "height": "100%",
-              "position": "absolute",
-              "width": "20%",
-            },
-          ]
-        }
-        variant="tertiary"
-        width={20}
-      />
-    </View>
-    <Text
-      align="left"
-      isNumber={true}
-      style={
-        Array [
-          Object {
-            "fontFamily": "Rubik",
-            "fontSize": 12,
-            "marginRight": 8,
-            "textAlign": "left",
-            "width": 22,
-          },
-        ]
-      }
-    >
-      20
     </Text>
   </View>
 </View>

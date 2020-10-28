@@ -10,6 +10,8 @@ const Radio = styled.span`
   position: relative;
   display: block;
 
+  pointer-events: none;
+
   ${({
     theme: {
       yoga: {
@@ -49,8 +51,14 @@ const Wrapper = styled.div`
         components: { radiogroup },
       },
     },
-  }) =>
-    `
+  }) => {
+    const stateColors = {
+      hover: hexToRgb(radiogroup.hover.backgroundColor, 0.25),
+      focusWithin: hexToRgb(radiogroup.checked.hover.backgroundColor, 0.5),
+      active: hexToRgb(radiogroup.checked.hover.backgroundColor, 0.75),
+    };
+
+    return `
     width: ${radiogroup.radio.size}px;
     height: ${radiogroup.radio.size}px;
 
@@ -59,10 +67,8 @@ const Wrapper = styled.div`
         cursor: pointer;
       }
       ${Radio} {
-        box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px ${hexToRgb(
-      radiogroup.hover.backgroundColor,
-      0.25,
-    )};
+        z-index: 1;
+        box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px ${stateColors.hover};
       }
     }
 
@@ -72,28 +78,26 @@ const Wrapper = styled.div`
     
       &:hover {
         ${Radio} {
-        box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px ${hexToRgb(
-            radiogroup.checked.hover.backgroundColor,
-            0.25,
-          )};
+          background-color: ${stateColors.hover};
+          box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px 
+            ${stateColors.hover};
         }
       }
     
       &:focus-within {
         ${Radio} {
-        box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px ${hexToRgb(
-            radiogroup.checked.hover.backgroundColor,
-            0.5,
-          )};
+          z-index: 1;
+          background-color: ${stateColors.focusWithin};
+          box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px 
+            ${stateColors.focusWithin};
         }
       }
     
       &:active {
         ${Radio} {
-        box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px ${hexToRgb(
-            radiogroup.checked.hover.backgroundColor,
-            0.75,
-          )};
+          background-color: ${stateColors.active};
+          box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px 
+            ${stateColors.active};
         }
       }
 
@@ -148,7 +152,8 @@ const Wrapper = styled.div`
         `
         : ''
     }
-  `}
+  `;
+  }}
 `;
 
 /** The Radio is a type of selection control that allows the user to select a

@@ -8,8 +8,8 @@ const Slider = ({
 }) => ({
   track: {
     backgroundColor: {
-      active: colors.primary[3],
-      inactive: colors.gray[3],
+      active: colors.primary,
+      inactive: colors.elements.lineAndBorders,
     },
     border: {
       radius: radii.circle,
@@ -17,15 +17,15 @@ const Slider = ({
   },
   step: {
     backgroundColor: {
-      active: colors.primary[3],
-      inactive: colors.gray[3],
+      active: colors.primary,
+      inactive: colors.elements.backgroundAndDisabled,
     },
     border: {
       radius: radii.circle,
     },
   },
   marker: {
-    backgroundColor: colors.primary[3],
+    backgroundColor: colors.primary,
     border: {
       color: colors.white,
       radius: radii.circle,
@@ -35,7 +35,7 @@ const Slider = ({
   tooltip: {
     shadow: elevations.small,
     radius: radii.rounded,
-    backgroundColor: colors.gray[1],
+    backgroundColor: colors.elements.backgroundAndDisabled,
     distance: spacing.large,
     padding: {
       top: spacing.xxxsmall,
@@ -44,7 +44,7 @@ const Slider = ({
       left: spacing.xxsmall,
     },
     font: {
-      color: colors.gray[8],
+      color: colors.text.secondary,
       title: {
         weight: fontWeights.regular,
       },
@@ -53,7 +53,7 @@ const Slider = ({
       },
     },
     ribbon: {
-      backgroundColor: colors.secondary[3],
+      backgroundColor: colors.secondary,
       radius: radii.rounded,
       padding: {
         top: spacing.xxxsmall,

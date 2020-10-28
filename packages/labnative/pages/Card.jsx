@@ -71,7 +71,7 @@ const CardPage = () => {
         <Card
           ribbon={{
             text: 'Label',
-            variant: 'tertiary',
+            variant: 'secondary',
           }}
           style={{
             width: 250,
@@ -141,7 +141,6 @@ const CardPage = () => {
       <ScrollView horizontal style={{ height: 140 }}>
         <EventCard
           style={{ marginRight: 8, marginLeft: 8 }}
-          variant="tertiary"
           event={{
             name: 'Yoga Class in Vila Olimpia',
             place: 'Gympass - Live the Mission',

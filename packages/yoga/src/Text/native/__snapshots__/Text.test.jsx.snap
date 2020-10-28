@@ -14,7 +14,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     style={
       Array [
         Object {
-          "color": "#41414A",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 48,
           "fontWeight": "500",
@@ -29,7 +29,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     style={
       Array [
         Object {
-          "color": "#41414A",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 40,
           "fontWeight": "500",
@@ -44,7 +44,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     style={
       Array [
         Object {
-          "color": "#41414A",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 32,
           "fontWeight": "500",
@@ -59,7 +59,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     style={
       Array [
         Object {
-          "color": "#41414A",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 24,
           "fontWeight": "500",
@@ -75,7 +75,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     style={
       Array [
         Object {
-          "color": "#41414A",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
@@ -90,7 +90,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     style={
       Array [
         Object {
-          "color": "#41414A",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 14,
           "fontWeight": "400",
@@ -105,7 +105,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     style={
       Array [
         Object {
-          "color": "#41414A",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 12,
           "fontWeight": "400",
@@ -120,7 +120,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     style={
       Array [
         Object {
-          "color": "#41414A",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontWeight": "400",
         },
@@ -133,7 +133,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     style={
       Array [
         Object {
-          "color": "#41414A",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontWeight": "500",
         },
@@ -146,7 +146,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     style={
       Array [
         Object {
-          "color": "#41414A",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontWeight": "700",
         },
@@ -159,7 +159,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     style={
       Array [
         Object {
-          "color": "#41414A",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontWeight": "900",
         },
@@ -185,7 +185,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
     style={
       Array [
         Object {
-          "color": "#F46152",
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 48,
           "fontWeight": "500",
@@ -201,7 +201,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
     style={
       Array [
         Object {
-          "color": "#652CDB",
+          "color": "#D8385E",
           "fontFamily": "Rubik",
           "fontSize": 40,
           "fontWeight": "500",
@@ -217,7 +217,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
     style={
       Array [
         Object {
-          "color": "#22766B",
+          "color": undefined,
           "fontFamily": "Rubik",
           "fontSize": 32,
           "fontWeight": "500",

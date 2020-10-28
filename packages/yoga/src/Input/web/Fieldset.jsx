@@ -24,12 +24,20 @@ const Fieldset = styled.fieldset`
     border-radius: ${input.border.radius}px;
     border-width: ${input.border.width}px;
     border-style: solid;
-    border-color: ${error ? colors.negative[1] : input.border.color.default};
+    border-color: ${
+      error ? colors.feedback.attention[1] : input.border.color.default
+    };
 
     &:hover, &:focus-within {
-      border-color: ${error ? colors.negative[1] : input.border.color.typed};
+      border-color: ${
+        error ? colors.feedback.attention[1] : input.border.color.typed
+      };
 
-      ${disabled ? `border-color: ${colors.disabled.background};` : ''}
+      ${
+        disabled
+          ? `border-color: ${colors.elements.backgroundAndDisabled};`
+          : ''
+      }
     }
   `}
 `;

@@ -18,14 +18,14 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus ~ legend {
@@ -46,28 +46,28 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -89,12 +89,12 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
+  border-color: #D7D7E0;
 }
 
 .c1:hover,
 .c1:focus-within {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c4 {
@@ -132,7 +132,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
   transition-property: transform,font-size;
@@ -197,14 +197,14 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus ~ legend {
@@ -225,28 +225,28 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -268,13 +268,13 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
+  border-color: #D7D7E0;
 }
 
 .c1:hover,
 .c1:focus-within {
-  border-color: #41414A;
-  border-color: #D3D3E2;
+  border-color: #231B22;
+  border-color: #F5F5FA;
 }
 
 .c4 {
@@ -312,7 +312,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
   transition-property: transform,font-size;
@@ -320,7 +320,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c0 {
@@ -381,14 +381,14 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus ~ legend {
@@ -409,28 +409,28 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   font-weight: 700;
-  color: #CB3530;
+  color: #FF874C;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -448,7 +448,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   display: -ms-flexbox;
   display: flex;
   margin-top: 4px;
-  color: #CB3530;
+  color: #FF874C;
 }
 
 .c7 {
@@ -458,8 +458,8 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
-  color: #9898A6;
+  color: #231B22;
+  color: currentColor;
   font-size: 12px;
 }
 
@@ -473,12 +473,12 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #CB3530;
+  border-color: #FF874C;
 }
 
 .c1:hover,
 .c1:focus-within {
-  border-color: #CB3530;
+  border-color: #FF874C;
 }
 
 .c4 {
@@ -516,7 +516,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
   transition-property: transform,font-size;
@@ -524,7 +524,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  color: #CB3530;
+  color: #FF874C;
 }
 
 .c0 {
@@ -591,14 +591,14 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus ~ legend {
@@ -619,28 +619,28 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -662,12 +662,12 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
+  border-color: #D7D7E0;
 }
 
 .c1:hover,
 .c1:focus-within {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c4 {
@@ -705,7 +705,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
   transition-property: transform,font-size;
@@ -770,14 +770,14 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus ~ legend {
@@ -798,28 +798,28 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -837,6 +837,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   display: -ms-flexbox;
   display: flex;
   margin-top: 4px;
+  color: #6B6B78;
 }
 
 .c7 {
@@ -846,8 +847,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
-  color: #9898A6;
+  color: #231B22;
+  color: currentColor;
   font-size: 12px;
 }
 
@@ -858,8 +859,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
-  color: #9898A6;
+  color: #231B22;
+  color: currentColor;
   font-size: 12px;
   margin-left: auto;
 }
@@ -874,12 +875,12 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
+  border-color: #D7D7E0;
 }
 
 .c1:hover,
 .c1:focus-within {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c4 {
@@ -917,7 +918,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
   transition-property: transform,font-size;
@@ -999,14 +1000,14 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   padding-right: 40px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus ~ legend {
@@ -1027,28 +1028,28 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   font-weight: 700;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #F5F5FA;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -1070,12 +1071,12 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
+  border-color: #D7D7E0;
 }
 
 .c1:hover,
 .c1:focus-within {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c4 {
@@ -1113,7 +1114,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
   transition-property: transform,font-size;

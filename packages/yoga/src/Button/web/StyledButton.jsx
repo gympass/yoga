@@ -47,13 +47,13 @@ const StyledButton = styled.button`
 
       &:active {
         background-color: ${button.types.contained.backgroundColor.pressed};
-        border-color: ${button.types.contained.backgroundColor.pressed};
+        border-color: transparent;
         color: ${button.types.contained.font.pressed.color};
       }
 
       &:disabled {
         background-color ${button.types.contained.backgroundColor.disabled};
-        border-color: ${button.types.contained.backgroundColor.disabled};
+        border-color: transparent;
         color: ${button.types.contained.font.disabled.color};
 
         cursor: not-allowed;

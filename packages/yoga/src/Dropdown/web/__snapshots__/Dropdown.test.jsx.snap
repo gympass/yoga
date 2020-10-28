@@ -29,11 +29,11 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
+  border-color: #D7D7E0;
 }
 
 .c1:hover {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c2 {
@@ -96,7 +96,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
 }
 
 .c4 {
-  fill: #DBDBE8;
+  fill: #D7D7E0;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
@@ -171,8 +171,8 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
-  border-color: #DBDBE8;
+  border-color: #D7D7E0;
+  border-color: #F5F5FA;
 }
 
 .c2 {
@@ -189,25 +189,25 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
 .c2,
 .c2::-webkit-input-placeholder {
   color: #9898A6;
-  color: #DBDBE8;
+  color: #F5F5FA;
 }
 
 .c2,
 .c2::-moz-placeholder {
   color: #9898A6;
-  color: #DBDBE8;
+  color: #F5F5FA;
 }
 
 .c2,
 .c2:-ms-input-placeholder {
   color: #9898A6;
-  color: #DBDBE8;
+  color: #F5F5FA;
 }
 
 .c2,
 .c2::placeholder {
   color: #9898A6;
-  color: #DBDBE8;
+  color: #F5F5FA;
 }
 
 .c3 {
@@ -239,8 +239,8 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
 }
 
 .c4 {
-  fill: #DBDBE8;
-  fill: #DBDBE8;
+  fill: #D7D7E0;
+  fill: #F5F5FA;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
@@ -280,6 +280,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
       >
         <svg
           class="c4"
+          disabled=""
           height="20"
           width="20"
         />
@@ -318,11 +319,11 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
+  border-color: #D7D7E0;
 }
 
 .c1:hover {
-  border-color: #41414A;
+  border-color: #231B22;
 }
 
 .c2 {
@@ -385,7 +386,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
 }
 
 .c4 {
-  fill: #DBDBE8;
+  fill: #D7D7E0;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
@@ -460,9 +461,9 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
-  border-color: #DBDBE8;
-  border-color: #41414A;
+  border-color: #D7D7E0;
+  border-color: #F5F5FA;
+  border-color: #231B22;
 }
 
 .c2 {
@@ -479,29 +480,29 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 .c2,
 .c2::-webkit-input-placeholder {
   color: #9898A6;
-  color: #41414A;
-  color: #DBDBE8;
+  color: #231B22;
+  color: #F5F5FA;
 }
 
 .c2,
 .c2::-moz-placeholder {
   color: #9898A6;
-  color: #41414A;
-  color: #DBDBE8;
+  color: #231B22;
+  color: #F5F5FA;
 }
 
 .c2,
 .c2:-ms-input-placeholder {
   color: #9898A6;
-  color: #41414A;
-  color: #DBDBE8;
+  color: #231B22;
+  color: #F5F5FA;
 }
 
 .c2,
 .c2::placeholder {
   color: #9898A6;
-  color: #41414A;
-  color: #DBDBE8;
+  color: #231B22;
+  color: #F5F5FA;
 }
 
 .c3 {
@@ -533,9 +534,9 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 }
 
 .c4 {
-  fill: #DBDBE8;
-  fill: #DBDBE8;
-  fill: #F46152;
+  fill: #D7D7E0;
+  fill: #F5F5FA;
+  fill: #231B22;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
@@ -575,6 +576,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
       >
         <svg
           class="c4"
+          disabled=""
           height="20"
           width="20"
         />

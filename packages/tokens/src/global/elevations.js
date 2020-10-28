@@ -23,7 +23,7 @@ import colors from './colors';
  * @type Elevation
  * @default
  */
-const elevations = elevate(colors.gray[7]);
+const elevations = elevate(colors.medium);
 
 [
   elevations.zero,

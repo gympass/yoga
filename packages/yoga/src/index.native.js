@@ -1,4 +1,4 @@
-import ThemeProvider, { themes, theme } from './Theme';
+import ThemeProvider, { yogaTheme, theme } from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -16,7 +16,7 @@ import TextArea from './TextArea';
 
 export {
   ThemeProvider,
-  themes,
+  yogaTheme,
   theme,
   Button,
   List,

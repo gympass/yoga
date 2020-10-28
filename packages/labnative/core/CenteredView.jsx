@@ -1,40 +1,13 @@
 import React, { useState } from 'react';
-import {
-  View,
-  Image,
-  Picker,
-  Platform,
-  TouchableWithoutFeedback,
-  Text,
-  ActionSheetIOS,
-  Switch,
-} from 'react-native';
+import { View, Text, Switch } from 'react-native';
 import { ThemeProvider } from '@gympass/yoga';
 import { ThemeConsumer } from 'styled-components';
 
-import paletteIcon from '../assets/images/palette_icon.png';
-
-const themeChoices = [
-  {
-    value: 'EndUser',
-    label: 'End User',
-  },
-  {
-    value: 'Corporate',
-    label: 'Corporate',
-  },
-  {
-    value: 'Gyms',
-    label: 'Gyms',
-  },
-];
-
 const CenteredView = props => {
-  const [themed, setThemed] = useState(themeChoices[0]);
   const [darkMode, setDarkMode] = useState('#FFF');
 
   return (
-    <ThemeProvider theme={themed.value}>
+    <ThemeProvider>
       <>
         <View
           style={{
@@ -46,62 +19,6 @@ const CenteredView = props => {
             paddingHorizontal: 20,
           }}
         >
-          {Platform.OS === 'ios' ? (
-            <TouchableWithoutFeedback
-              style={{
-                height: 50,
-              }}
-              onPress={() =>
-                ActionSheetIOS.showActionSheetWithOptions(
-                  {
-                    options: themeChoices.map(t => t.label),
-                  },
-                  buttonIndex => {
-                    setThemed(themeChoices[buttonIndex]);
-                  },
-                )
-              }
-            >
-              <View
-                style={{
-                  alignItems: 'center',
-                  flexDirection: 'row',
-                  justifyContent: 'flex-end',
-                }}
-              >
-                <Image
-                  source={paletteIcon}
-                  style={{ width: 25, height: 25, marginRight: 12 }}
-                />
-                <Text
-                  style={{
-                    color: darkMode === '#FFF' ? '#41414A' : '#FFF',
-                  }}
-                >
-                  {themed.label}
-                </Text>
-              </View>
-            </TouchableWithoutFeedback>
-          ) : (
-            <Picker
-              selectedValue={themed.label}
-              style={{
-                width: '40%',
-                color: darkMode === '#FFF' ? '#41414A' : '#FFF',
-              }}
-              onValueChange={selectedTheme => {
-                setThemed(
-                  themeChoices[
-                    themeChoices.findIndex(t => t.value === selectedTheme)
-                  ],
-                );
-              }}
-            >
-              {themeChoices.map(({ label, value }) => (
-                <Picker.Item label={label} value={value} key={value} />
-              ))}
-            </Picker>
-          )}
           <ThemeConsumer>
             {theme => (
               <View
@@ -124,7 +41,7 @@ const CenteredView = props => {
                     setDarkMode(darkMode === '#FFF' ? '#41414A' : '#FFF');
                   }}
                   value={darkMode === '#41414A'}
-                  trackColor={{ true: theme.yoga.colors.primary[3] }}
+                  trackColor={{ true: theme.yoga.colors.primary }}
                 />
               </View>
             )}

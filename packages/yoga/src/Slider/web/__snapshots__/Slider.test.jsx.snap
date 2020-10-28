@@ -9,7 +9,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   position: absolute;
   top: 0;
   width: 24px;
-  background-color: #F46152;
+  background-color: #231B22;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
@@ -31,58 +31,58 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   >
     <div
       class="yoga-rail"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(215, 215, 224);"
     />
     <div
       class="yoga-track"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(244, 97, 82); left: 0%;"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(35, 27, 34); left: 0%;"
     />
     <div
       class="yoga-step"
     >
       <span
         class="yoga-dot yoga-dot-active"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 0%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(35, 27, 34); left: 0%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 100%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 100%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 10%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 10%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 20%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 20%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 30%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 30%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 40%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 40%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 50%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 50%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 60%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 60%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 70%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 70%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 80%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 80%;"
       />
       <span
         class="yoga-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 90%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 90%;"
       />
     </div>
     <div
@@ -112,7 +112,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   position: absolute;
   top: 0;
   width: 24px;
-  background-color: #F46152;
+  background-color: #231B22;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
@@ -134,11 +134,11 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   >
     <div
       class="yoga-rail"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(215, 215, 224);"
     />
     <div
       class="yoga-track"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(244, 97, 82); left: 0%;"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(35, 27, 34); left: 0%;"
     />
     <div
       class="yoga-step"
@@ -192,7 +192,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
   position: absolute;
   top: 0;
   width: 24px;
-  background-color: #F46152;
+  background-color: #231B22;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
@@ -214,11 +214,11 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
   >
     <div
       class="yoga-rail"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(215, 215, 224);"
     />
     <div
       class="yoga-track"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(244, 97, 82); left: 0%;"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(35, 27, 34); left: 0%;"
     />
     <div
       class="yoga-step"
@@ -259,7 +259,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
   position: absolute;
   top: 0;
   width: 24px;
-  background-color: #F46152;
+  background-color: #231B22;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
@@ -281,11 +281,11 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
   >
     <div
       class="rc-slider-rail"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(215, 215, 224);"
     />
     <div
       class="rc-slider-track rc-slider-track-1"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 40%; background-color: rgb(244, 97, 82); left: 30%;"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 40%; background-color: rgb(35, 27, 34); left: 30%;"
     />
     <div
       class="rc-slider-step"
@@ -337,7 +337,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
   position: absolute;
   top: 0;
   width: 24px;
-  background-color: #F46152;
+  background-color: #231B22;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
@@ -359,58 +359,58 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
   >
     <div
       class="rc-slider-rail"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(215, 215, 224);"
     />
     <div
       class="rc-slider-track rc-slider-track-1"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 40%; background-color: rgb(244, 97, 82); left: 30%;"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 40%; background-color: rgb(35, 27, 34); left: 30%;"
     />
     <div
       class="rc-slider-step"
     >
       <span
         class="rc-slider-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 0%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 0%;"
       />
       <span
         class="rc-slider-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 100%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 100%;"
       />
       <span
         class="rc-slider-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 10%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 10%;"
       />
       <span
         class="rc-slider-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 20%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 20%;"
       />
       <span
         class="rc-slider-dot rc-slider-dot-active"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 30%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(35, 27, 34); left: 30%;"
       />
       <span
         class="rc-slider-dot rc-slider-dot-active"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 40%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(35, 27, 34); left: 40%;"
       />
       <span
         class="rc-slider-dot rc-slider-dot-active"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 50%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(35, 27, 34); left: 50%;"
       />
       <span
         class="rc-slider-dot rc-slider-dot-active"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 60%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(35, 27, 34); left: 60%;"
       />
       <span
         class="rc-slider-dot rc-slider-dot-active"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(244, 97, 82); left: 70%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(35, 27, 34); left: 70%;"
       />
       <span
         class="rc-slider-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 80%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 80%;"
       />
       <span
         class="rc-slider-dot"
-        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(219, 219, 232); left: 90%;"
+        style="border-radius: 9999px; margin-left: -4px; position: absolute; height: 10px; top: -3px; width: 10px; background-color: rgb(215, 215, 224); left: 90%;"
       />
     </div>
     <div
@@ -451,7 +451,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #652CDB;
+  background-color: #D8385E;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(152,152,166,0.25);
 }
@@ -487,7 +487,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   padding: 0;
   font-weight: 700;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   position: relative;
   text-align: center;
   display: block;
@@ -505,7 +505,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   display: block;
   text-align: center;
   color: #6B6B78;
@@ -519,7 +519,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   display: block;
   text-align: center;
   color: #6B6B78;
@@ -534,10 +534,10 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   position: absolute;
   top: 0;
   width: 24px;
-  background-color: #F46152;
+  background-color: #231B22;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25), 0 0 0 8px rgba(244,97,82,0.2);
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25), 0 0 0 8px rgba(35,27,34,0.2);
 }
 
 .c0 {
@@ -556,11 +556,11 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   >
     <div
       class="yoga-rail"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(219, 219, 232);"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 100%; background-color: rgb(215, 215, 224);"
     />
     <div
       class="yoga-track"
-      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(244, 97, 82); left: 0%;"
+      style="border-radius: 9999px; height: 4px; position: absolute; width: 0%; background-color: rgb(35, 27, 34); left: 0%;"
     />
     <div
       class="yoga-step"

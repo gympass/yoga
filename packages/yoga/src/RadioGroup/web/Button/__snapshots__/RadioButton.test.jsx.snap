@@ -43,12 +43,12 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
 
 .c1:hover,
 .c1:focus {
-  background-color: #E6E6F0;
+  background-color: #D7D7E0;
 }
 
 .c0 {
   border-style: solid;
-  border-color: #DBDBE8;
+  border-color: #F5F5FA;
   border-top-width: 1px;
   border-bottom-width: 1px;
   border-left: none;
@@ -59,7 +59,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   border-right-width: 0;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #DBDBE8;
+  border-left-color: #F5F5FA;
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
 }
@@ -68,7 +68,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   border-left-width: 0;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #DBDBE8;
+  border-right-color: #F5F5FA;
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
 }
@@ -134,12 +134,12 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
 
 .c1:hover,
 .c1:focus {
-  background-color: #E6E6F0;
+  background-color: #D7D7E0;
 }
 
 .c0 {
   border-style: solid;
-  border-color: #DBDBE8;
+  border-color: #F5F5FA;
   border-top-width: 1px;
   border-bottom-width: 1px;
   border-left: none;
@@ -150,7 +150,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   border-right-width: 0;
   border-left-width: 1px;
   border-left-style: solid;
-  border-left-color: #DBDBE8;
+  border-left-color: #F5F5FA;
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
 }
@@ -159,7 +159,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   border-left-width: 0;
   border-right-width: 1px;
   border-right-style: solid;
-  border-right-color: #DBDBE8;
+  border-right-color: #F5F5FA;
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
 }

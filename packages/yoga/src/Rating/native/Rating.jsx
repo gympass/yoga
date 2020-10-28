@@ -118,7 +118,7 @@ const Rating = ({
                 viewBox={`0 0 ${wViewBox} ${SVG_DEFAULT_SIZE}`}
               />
               <Icon
-                fill={colors.gray[5]}
+                fill={colors.elements.lineAndBorders}
                 width={dWidth}
                 height={iconSize}
                 viewBox={`${wViewBox} 0 ${dViewBox} ${SVG_DEFAULT_SIZE}`}
@@ -130,7 +130,7 @@ const Rating = ({
         return (
           <Icon
             key={`unfilled-${i}`}
-            fill={colors.gray[5]}
+            fill={colors.elements.lineAndBorders}
             width={iconSize}
             height={iconSize}
           />

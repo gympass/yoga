@@ -1,17 +1,18 @@
 import React from 'react';
 import { oneOf, bool } from 'prop-types';
 import styled from 'styled-components';
+import { hexToRgb } from '@gympass/yoga-common';
 
 import StyledButton from './StyledButton';
 
 const Link = styled(StyledButton)`
   ${({
     inverted,
-    variant,
     full,
+    variant,
     theme: {
       yoga: {
-        colors: { white, gray, [variant]: color },
+        colors: { white, text, [variant]: color },
         components: { button },
       },
     },
@@ -23,16 +24,16 @@ const Link = styled(StyledButton)`
   background-color: unset;
   border: none;
   border-radius: 0;
-  color: ${color[3]};
+  color: ${color};
 
   &:not([disabled]):hover, &:not([disabled]):focus {
     box-shadow: unset;
-    color: ${color[2]};
+    color: ${hexToRgb(color, 0.75)};
   }
 
   &:not([disabled]):active {
     background-color: unset;
-    color: ${color[2]};
+    color: ${hexToRgb(color, 0.75)};
   }
 
   &:disabled {
@@ -47,7 +48,7 @@ const Link = styled(StyledButton)`
 
         &:not([disabled]):hover, &:not([disabled]):focus {
           box-shadow: unset;
-          color: ${gray[3]};
+          color: ${text.secondary};
         }
       `
       : ''
@@ -60,8 +61,8 @@ const Link = styled(StyledButton)`
 const ButtonLink = props => <Link {...props} />;
 
 ButtonLink.propTypes = {
-  /** style the link following the theme (primary, secondary, tertiary) */
-  variant: oneOf(['primary', 'secondary', 'tertiary']),
+  /** style the link following the theme (primary, secondary) */
+  variant: oneOf(['primary', 'secondary']),
   inverted: bool,
   disabled: bool,
 };
