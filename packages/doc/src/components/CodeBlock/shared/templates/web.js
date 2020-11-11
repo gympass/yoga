@@ -1,16 +1,47 @@
-import injectImport from '..';
+import { injectImport, getStateTypeCode } from '..';
 
-const web = (imports, code, theme) => `import React from 'react';
+const web = (imports, code, theme) => {
+  const isState = code.search('render') !== -1;
+
+  const buildCode = component => `import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-${injectImport(imports, ['ThemeProvider'], ['@gympass/yoga'])}
+import styled from 'styled-components';
+${injectImport(imports, ['ThemeProvider, FontLoader'], ['@gympass/yoga'])}
 
-const App = () => <ThemeProvider ${theme ? `theme='${theme}'` : ''}>
-${code}
-</ThemeProvider>
+${component}
 
 ReactDOM.render(
   <App />,
   document.getElementById('root')
-);`;
+);
+`;
+
+  if (isState) {
+    const {
+      styledComponents,
+      codeBetweenRenderAndReturn,
+      componentCode,
+    } = getStateTypeCode(code);
+
+    return buildCode(`${styledComponents || ''}
+const App = () => {
+  ${codeBetweenRenderAndReturn}
+
+  return (
+    <ThemeProvider${theme ? `theme='${theme}'` : ''}>
+      <FontLoader />
+      ${componentCode}
+    </ThemeProvider>
+  );
+};`);
+  }
+
+  return buildCode(`const App = () => (
+  <ThemeProvider${theme ? `theme='${theme}'` : ''}>
+    <FontLoader />
+    ${code}
+  </ThemeProvider>
+);`);
+};
 
 export default web;
