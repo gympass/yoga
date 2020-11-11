@@ -29,7 +29,7 @@ const injectImport = (imports, componentList, paths, destruct) => {
   return injectedString;
 };
 
-const getStateTypeCode = code => {
+const getCodeFragments = code => {
   const [codeThatIsntComponent] = code.match(/([.*\s*\S*]*)return/gi) || [];
   const codeBetweenRenderAndReturn = codeThatIsntComponent
     ? codeThatIsntComponent.replace(/\s*render.*/, '').replace(/\s*return/, '')
@@ -50,4 +50,4 @@ const getStateTypeCode = code => {
   };
 };
 
-export { getStateTypeCode, injectImport };
+export { getCodeFragments, injectImport };

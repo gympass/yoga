@@ -1,3 +1,3 @@
-import { injectImport, getStateTypeCode } from './functions';
+import { injectImport, getCodeFragments } from './functions';
 
-export { injectImport, getStateTypeCode };
+export { injectImport, getCodeFragments };

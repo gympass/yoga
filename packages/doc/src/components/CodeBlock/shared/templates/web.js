@@ -1,4 +1,4 @@
-import { injectImport, getStateTypeCode } from '..';
+import { injectImport, getCodeFragments } from '..';
 
 const web = (imports, code, theme) => {
   const isState = code.search('render') !== -1;
@@ -21,7 +21,7 @@ ReactDOM.render(
       styledComponents,
       codeBetweenRenderAndReturn,
       componentCode,
-    } = getStateTypeCode(code);
+    } = getCodeFragments(code);
 
     return buildCode(`${styledComponents || ''}
 const App = () => {
