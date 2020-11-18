@@ -25,7 +25,7 @@ ReactDOM.render(
 
     return buildCode(`${styledComponents || ''}
 const App = () => {
-  ${codeBetweenRenderAndReturn}
+  ${codeBetweenRenderAndReturn.trim()}
 
   return (
     <ThemeProvider${theme ? `theme='${theme}'` : ''}>
