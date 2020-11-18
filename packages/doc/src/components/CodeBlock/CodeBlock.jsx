@@ -9,7 +9,7 @@ const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
   const code = sampleCode.trim();
 
   const buildImportString = modules => {
-    const findComponents = /(?:<)(\w*)(?=\s*?\/?>*)/gm;
+    const findComponents = /(?:<|{)(\w*)(?=\s*?\/?>*)/gm;
     const sortModules = /(@gympass\/yoga*)/gm;
     const imports = [];
     const foundComponents = code.match(findComponents) || [];
@@ -20,7 +20,7 @@ const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
         const moduleComponents = {
           components: [
             ...new Set(
-              foundComponents.map(c => c.replace('<', '')).filter(c => c),
+              foundComponents.map(c => c.replace(/<|{/, '')).filter(c => c),
             ),
           ]
             .filter(importedComponent =>
