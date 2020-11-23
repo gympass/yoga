@@ -32,11 +32,11 @@ const Info = styled(Text.Small)`
       },
     },
   }) => `
-    color: ${input.helper.color};
+    color: currentColor;
     font-size: ${input.helper.font.size}px;
     
     ${right ? 'margin-left: auto;' : ''}
-  `}
+    `}
 `;
 
 const Helper = ({ disabled, error, helper, maxLength, length }) => (
