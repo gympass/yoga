@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.1.0...@gympass/yoga@5.1.1) (2020-11-26)
+
+
+### Bug Fixes
+
+* **input:** fix Input helper text color when affected by an error ([71a117f](https://github.com/Gympass/yoga/commit/71a117f7bb384728e0fd14e1fdcf1439c0066230))
+
+
+
+
+
 # [5.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.0.1...@gympass/yoga@5.1.0) (2020-10-15)
 
 
