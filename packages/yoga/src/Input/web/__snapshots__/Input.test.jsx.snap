@@ -459,7 +459,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
-  color: #9898A6;
+  color: currentColor;
   font-size: 12px;
 }
 
@@ -847,7 +847,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
-  color: #9898A6;
+  color: currentColor;
   font-size: 12px;
 }
 
@@ -859,7 +859,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   font-weight: 400;
   font-family: Rubik;
   color: #41414A;
-  color: #9898A6;
+  color: currentColor;
   font-size: 12px;
   margin-left: auto;
 }
