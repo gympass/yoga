@@ -1,6 +1,8 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { ThemeProvider, Button } from '@gympass/yoga';
+
+import ThemeProvider from '../../Theme';
+import Button from '..';
 
 describe('<Button />', () => {
   describe('Snapshots', () => {

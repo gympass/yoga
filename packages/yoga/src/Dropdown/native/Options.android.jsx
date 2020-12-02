@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { func, arrayOf, string, shape, number, oneOfType } from 'prop-types';
 import { ScrollView, TouchableWithoutFeedback } from 'react-native';
-import { Text, List } from '@gympass/yoga';
+import { Text, List } from '../..';
 
 const Option = styled(List.Item)`
   ${({
