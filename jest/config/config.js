@@ -1,3 +1,3 @@
 module.exports = {
-  projects: ['<rootDir>/native.js', '<rootDir>/web.js'],
+  projects: ['<rootDir>/native.js', '<rootDir>/helpers.js', '<rootDir>/web.js'],
 };
