@@ -70,6 +70,7 @@ const Input = React.forwardRef(
       value,
       onChange,
       onClean,
+      hiddenMaxLength,
       ...props
     },
     ref,
@@ -135,7 +136,6 @@ const Input = React.forwardRef(
             </IconWrapper>
           )}
         </Fieldset>
-
         {(helper || maxLength || error) && (
           <Helper
             error={error}
@@ -143,6 +143,7 @@ const Input = React.forwardRef(
             maxLength={maxLength}
             length={inputValue.length}
             disabled={disabled}
+            hiddenMaxLength={hiddenMaxLength}
           />
         )}
       </Control>
@@ -168,6 +169,7 @@ Input.propTypes = {
   onChange: func,
   /** callback invoked when close icon is clicked, it returns a empty string to update your state */
   onClean: func,
+  hiddenMaxLength: bool,
 };
 
 Input.defaultProps = {
@@ -184,6 +186,7 @@ Input.defaultProps = {
   value: '',
   onChange: () => {},
   onClean: () => {},
+  hiddenMaxLength: false,
 };
 
 export default Input;
