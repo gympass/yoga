@@ -214,7 +214,7 @@ const Input = ({
   onChangeText,
   onClean,
   onFocus,
-  hiddenMaxLength,
+  hideMaxLength,
   theme: {
     yoga: {
       colors,
@@ -343,7 +343,7 @@ const Input = ({
               {error || helper}
             </Info>
           )}
-          {!hiddenMaxLength && maxLength && (
+          {!hideMaxLength && maxLength && (
             <Info disabled={disabled} error={error} right>
               {inputValue.length}/{maxLength}
             </Info>
@@ -374,7 +374,7 @@ Input.propTypes = {
   /** callback invoked when close icon is clicked */
   onClean: func,
   onFocus: func,
-  hiddenMaxLength: bool,
+  hideMaxLength: bool,
 };
 
 Input.defaultProps = {
@@ -393,7 +393,7 @@ Input.defaultProps = {
   onChangeText: () => {},
   onClean: () => {},
   onFocus: () => {},
-  hiddenMaxLength: false,
+  hideMaxLength: false,
 };
 
 export default withTheme(Input);

@@ -55,6 +55,16 @@ describe('<Input />', () => {
       expect(container).toMatchSnapshot();
     });
 
+    it('should match with helper text, max length and hideMaxLength', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Input helper="Helper text" maxLength={20} hideMaxLength={false} />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
     it('should match with full width', () => {
       const { container } = render(
         <ThemeProvider>

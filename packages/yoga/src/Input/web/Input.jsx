@@ -70,7 +70,7 @@ const Input = React.forwardRef(
       value,
       onChange,
       onClean,
-      hiddenMaxLength,
+      hideMaxLength,
       ...props
     },
     ref,
@@ -143,7 +143,7 @@ const Input = React.forwardRef(
             maxLength={maxLength}
             length={inputValue.length}
             disabled={disabled}
-            hiddenMaxLength={hiddenMaxLength}
+            hideMaxLength={hideMaxLength}
           />
         )}
       </Control>
@@ -170,7 +170,7 @@ Input.propTypes = {
   /** callback invoked when close icon is clicked, it returns a empty string to update your state */
   onClean: func,
   /** when max length helper is unnecessary to appear */
-  hiddenMaxLength: bool,
+  hideMaxLength: bool,
 };
 
 Input.defaultProps = {
@@ -187,7 +187,7 @@ Input.defaultProps = {
   value: '',
   onChange: () => {},
   onClean: () => {},
-  hiddenMaxLength: false,
+  hideMaxLength: false,
 };
 
 export default Input;
