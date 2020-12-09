@@ -1080,19 +1080,6 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
   font-size: 12px;
 }
 
-.c8 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #41414A;
-  color: currentColor;
-  font-size: 12px;
-  margin-left: auto;
-}
-
 .c1 {
   position: relative;
   margin: 0;
@@ -1197,13 +1184,6 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
         class="c7"
       >
         Helper text
-      </span>
-      <span
-        class="c8"
-      >
-        0
-        /
-        20
       </span>
     </div>
   </div>

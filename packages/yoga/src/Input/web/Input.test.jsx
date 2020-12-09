@@ -58,7 +58,7 @@ describe('<Input />', () => {
     it('should match with helper text, max length and hideMaxLength', () => {
       const { container } = render(
         <ThemeProvider>
-          <Input helper="Helper text" maxLength={20} hideMaxLength={false} />
+          <Input helper="Helper text" maxLength={20} hideMaxLength />
         </ThemeProvider>,
       );
 

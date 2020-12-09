@@ -604,27 +604,6 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
       >
         Helper text
       </Text>
-      <Text
-        disabled={false}
-        right={true}
-        style={
-          Array [
-            Object {
-              "color": "#9898A6",
-              "flexShrink": 0,
-              "flexWrap": "wrap",
-              "fontFamily": "Rubik",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "marginLeft": "auto",
-            },
-          ]
-        }
-      >
-        0
-        /
-        20
-      </Text>
     </View>
   </View>
 </View>
