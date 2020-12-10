@@ -43,12 +43,10 @@ export const matcher = (width, isNot = false, range = 'min') => (
   }
 `;
 
-availableBreakpoints.reduce((acc, label) => {
-  acc[label] = matcher(label);
-  acc.not[label] = matcher(label, true);
-
-  return acc;
-}, media);
+availableBreakpoints.forEach(breakpoint => {
+  media[breakpoint] = matcher(breakpoint);
+  media.not[breakpoint] = matcher(breakpoint, true);
+});
 
 media.max = width => matcher(width, false, 'max');
 media.not.max = width => matcher(width, true, 'max');
