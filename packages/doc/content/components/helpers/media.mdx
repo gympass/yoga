@@ -23,38 +23,44 @@ yarn add @gympass/yoga-helpers
 npm install @gympass/yoga-helpers
 ```
 
-### Usage
+<br />
+
+### API
 
 ```javascript type=highlight
 import styled from 'styled-components';
 import { media } from '@gympass/yoga-helper';
 ​
 const MyResponsiveButton = styled.button`
-  // default min
-  // @media (min-width: breakpoint)
-  ${media.md``}
+  ${media[breakpoint]``}
+  // generates: @media (min-width: breakpoint)
+  // Ex.: media.md`` or media['xxs']``
 ​
-  // you can also use as media.min(breakpoint)
-  // @media (min-width: breakpoint)
-  ${media.min('md')``}
+  ${media.min(breakpoint)``}
+  // generates: @media (min-width: breakpoint)
+  // Ex.: media.min('md')``
 
-  // or media.max('breakpoint')
-  // @media (max-width: breakpoint)
-  ${media.max('xl')``}
+  ${media.max(breakpoint)``}
+  // generates: @media (max-width: breakpoint)
+  // Ex.: media.max('xl')``
 ​
-  // for a device range
-  // @media (min-width: breakpoint) and (max-width: breakpoint)
-  ${media.between('md', 'l')``}
+  ${media.between(minBreakpoint, maxBreakpoint)``}
+  // generates: @media (min-width: minBreakpoint) and (max-width: maxBreakpoint)
+  // Ex.: media.between('md', 'l')``
 ​
-  // jest like
-  // @media not all and (min-width: breakpoint)
-  ${media.not.md``}
+  // We can also use .not (Like jest expect matchers)
+  ${media.not[breakpoint]``}
+  ${media.not.min(breakpoint)``}
+  // generates: @media not all and (min-width: breakpoint)
+  // Ex.: media.not.md`` or media.not['xxs']``
 
-  // @media not all and (max-width: breakpoint)
-  ${media.not.max('xxl')``}
+  ${media.not.max(breakpoint)``}
+  // generates: @media not all and (max-width: breakpoint)
+  // Ex.: media.not.max('xxl')``
 
+  ${media.not.between(minBreakpoint, maxBreakpoint)``}
   // @media not all and (min-width: breakpoint) and (max-width: breakpoint)
-  ${media.not.between('sm', 'md')``}
+  // Ex.: media.not.between('sm', 'mdx')``
 `;
 
 ```
@@ -67,21 +73,19 @@ import styled from 'styled-components';
 import { media } from '@gympass/yoga-helper';
 
 const HideMe = styled.div`
-  // will hide for, and only for, xxs
   ${media.hide.xxs}
+  // will hide for, and only for, xxs
 
-  // or
-  // you can define when it will start hiding
   ${media.hide['md-start']}
+  // you can define when it will start hiding
 `;
 
 const NotHideMe = styled.div`
-  // will hide for everyone besides sm
-  ${media.not.hide.sm}
+  ${media.not.hide.sm} // will hide for everyone besides sm
 `;
 ```
 
-### Example
+### Usage
 
 ```javascript state
 render(() => {
