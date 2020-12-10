@@ -90,6 +90,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "thayllachristine",
+      "name": "Thaylla Christine",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/38869416?v=4",
+      "profile": "https://github.com/thayllachristine",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
