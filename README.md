@@ -47,6 +47,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="http://www.caioalexandre.com"><img src="https://avatars1.githubusercontent.com/u/31045534?v=4" width="100px;" alt=""/><br /><sub><b>Caio Alexandre</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=caioalexandrebr" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/thayllachristine"><img src="https://avatars2.githubusercontent.com/u/38869416?v=4" width="100px;" alt=""/><br /><sub><b>Thaylla Christine</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=thayllachristine" title="Code">💻</a></td>
   </tr>
 </table>
 
