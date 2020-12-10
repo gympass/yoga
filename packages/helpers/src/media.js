@@ -11,19 +11,28 @@ const media = {
 
 export const not = isNot => (isNot ? 'not all and ' : '');
 
+const availableBreakpoints = Object.keys(breakpoints);
+
 const getRange = (width, range) => {
-  if (Array.isArray(width)) {
-    const [min, max] = width;
+  try {
+    if (Array.isArray(width)) {
+      const [min, max] = width;
 
-    const {
-      [min]: { width: minBreakpoint },
-      [max]: { width: maxBreakpoint },
-    } = breakpoints;
+      const {
+        [min]: { width: minBreakpoint },
+        [max]: { width: maxBreakpoint },
+      } = breakpoints;
 
-    return `(min-width: ${minBreakpoint}px) and (max-width: ${maxBreakpoint}px)`;
+      return `(min-width: ${minBreakpoint}px) and (max-width: ${maxBreakpoint}px)`;
+    }
+
+    return `(${range}-width: ${breakpoints[width].width}px)`;
+  } catch {
+    const msg = `Make sure you've entered the right breakpoints. 
+  Your input: ${Array.isArray(width) ? width.join(', ') : width}
+  Available breakpoints: ${availableBreakpoints.join(', ')}`;
+    throw new Error(msg);
   }
-
-  return `(${range}-width: ${breakpoints[width].width}px)`;
 };
 
 export const matcher = (width, isNot = false, range = 'min') => (
@@ -34,7 +43,7 @@ export const matcher = (width, isNot = false, range = 'min') => (
   }
 `;
 
-Object.keys(breakpoints).reduce((acc, label) => {
+availableBreakpoints.reduce((acc, label) => {
   acc[label] = matcher(label);
   acc.not[label] = matcher(label, true);
 
