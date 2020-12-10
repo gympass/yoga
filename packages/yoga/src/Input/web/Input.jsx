@@ -70,6 +70,7 @@ const Input = React.forwardRef(
       value,
       onChange,
       onClean,
+      hideMaxLength,
       ...props
     },
     ref,
@@ -135,7 +136,6 @@ const Input = React.forwardRef(
             </IconWrapper>
           )}
         </Fieldset>
-
         {(helper || maxLength || error) && (
           <Helper
             error={error}
@@ -143,6 +143,7 @@ const Input = React.forwardRef(
             maxLength={maxLength}
             length={inputValue.length}
             disabled={disabled}
+            hideMaxLength={hideMaxLength}
           />
         )}
       </Control>
@@ -157,7 +158,7 @@ Input.propTypes = {
   disabled: bool,
   error: string,
   full: bool,
-  /** A helper text to be displayed below field */
+  /** a helper text to be displayed below field */
   helper: string,
   label: string,
   /** maximum length (number of characters) of value */
@@ -168,6 +169,8 @@ Input.propTypes = {
   onChange: func,
   /** callback invoked when close icon is clicked, it returns a empty string to update your state */
   onClean: func,
+  /** when max length helper is unnecessary to appear */
+  hideMaxLength: bool,
 };
 
 Input.defaultProps = {
@@ -184,6 +187,7 @@ Input.defaultProps = {
   value: '',
   onChange: () => {},
   onClean: () => {},
+  hideMaxLength: false,
 };
 
 export default Input;
