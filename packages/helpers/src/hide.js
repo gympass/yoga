@@ -8,8 +8,10 @@ const availableBreakpoints = Object.entries(breakpoints);
 const hide = isNot =>
   availableBreakpoints.reduce((acc, [key, breakpoint], index) => {
     if (index === 0) {
+      const [, secondBreakpoint] = availableBreakpoints[index + 1];
+
       acc[key] = css`
-        @media ${not(isNot)} (max-width: ${breakpoint.width}px) {
+        @media ${not(isNot)} (max-width: ${secondBreakpoint.width}px) {
           display: none !important;
         }
       `;
@@ -32,7 +34,6 @@ const hide = isNot =>
 
       return acc;
     }
-
     const [, nextBreakpoint] = availableBreakpoints[index + 1];
 
     acc[key] = css`
