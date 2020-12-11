@@ -1,3 +1,8 @@
-import { YogaComponents, YogaIcons, NativeComponents } from './modules';
+import {
+  YogaComponents,
+  YogaIcons,
+  YogaHelpers,
+  NativeComponents,
+} from './modules';
 
-export { YogaComponents, YogaIcons, NativeComponents };
+export { YogaComponents, YogaIcons, YogaHelpers, NativeComponents };

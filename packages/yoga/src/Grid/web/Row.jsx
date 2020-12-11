@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import query from './query';
+import { media } from '@gympass/yoga-helpers';
 
-const desktop = query.lg`
+const desktop = media.lg`
   ${({
     theme: {
       yoga: {
@@ -13,7 +13,7 @@ const desktop = query.lg`
   `}
 `;
 
-const mobile = query.xxs`
+const mobile = media.xxs`
   ${({
     theme: {
       yoga: {

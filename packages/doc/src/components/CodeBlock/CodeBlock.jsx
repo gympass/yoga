@@ -3,7 +3,12 @@ import { node, bool, oneOf } from 'prop-types';
 import CodeBlockContext from './CodeBlockContext';
 import { ReactLive, PrismHighlight, SnackEmbed } from '.';
 import { importStatement } from './shared/templates';
-import { YogaComponents, YogaIcons, NativeComponents } from './shared/modules';
+import {
+  YogaComponents,
+  YogaIcons,
+  YogaHelpers,
+  NativeComponents,
+} from './shared/modules';
 
 const buildImportString = (code, modules) => {
   const findComponents = /(?:<)(\w*)(?=\s*?\/?>*)/gm;
@@ -41,6 +46,7 @@ const buildImportString = (code, modules) => {
 
 const packages = [
   { name: YogaIcons, path: '@gympass/yoga-icons' },
+  { name: YogaHelpers, path: '@gympass/yoga-helpers' },
   { name: YogaComponents, path: '@gympass/yoga' },
   { name: NativeComponents, path: 'react-native' },
 ];

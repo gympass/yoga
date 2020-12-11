@@ -1,5 +1,6 @@
 import * as YogaComponents from '@gympass/yoga';
 import * as YogaIcons from '@gympass/yoga-icons';
+import * as YogaHelpers from '@gympass/yoga-helpers';
 
 const YogaNativeComponents = { GymCard: undefined };
 Object.assign(YogaComponents, YogaNativeComponents);
@@ -37,4 +38,4 @@ const NativeComponents = {
   VirtualizedList: undefined,
 };
 
-export { YogaComponents, YogaIcons, NativeComponents };
+export { YogaComponents, YogaIcons, YogaHelpers, NativeComponents };

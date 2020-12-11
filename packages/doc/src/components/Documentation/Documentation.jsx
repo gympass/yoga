@@ -5,6 +5,8 @@ import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
 import * as components from '@gympass/yoga';
 import * as icons from '@gympass/yoga-icons';
+import * as helpers from '@gympass/yoga-helpers';
+
 import {
   CodeBlock,
   PropsTable,
@@ -46,6 +48,7 @@ const customComponents = (prefix, theme) => ({
   TokensCards: props => <Tokens.Cards {...props} />,
   ...components,
   ...icons,
+  ...helpers,
 });
 
 const Wrapper = styled.div`
