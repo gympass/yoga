@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.3.0...@gympass/yoga-doc@1.4.0) (2020-12-16)
+
+
+### Bug Fixes
+
+* **doc:** fix "injectImport" import ([3fa288c](https://github.com/Gympass/yoga/commit/3fa288c6089056e40461d40eaadbbfffbb25dd98))
+* **docs:** fix codesandbox code generation when it's a "state" type ([57e259e](https://github.com/Gympass/yoga/commit/57e259e1307d56c5594a525343086fc59e188a06))
+
+
+### Features
+
+* **doc:** get components that are inside brackets ([7c1f2ef](https://github.com/Gympass/yoga/commit/7c1f2ef5d893351f0836e6ed39cf080914c3ffd8))
+
+
+
+
+
 # [1.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.13...@gympass/yoga-doc@1.3.0) (2020-12-11)
 
 
