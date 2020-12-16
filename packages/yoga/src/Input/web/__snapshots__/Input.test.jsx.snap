@@ -1089,6 +1089,7 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 320px;
   height: 52px;
   padding-left: 12px;
