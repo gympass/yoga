@@ -11,7 +11,7 @@ import {
 } from './shared/modules';
 
 const buildImportString = (code, modules) => {
-  const findComponents = /(?:<)(\w*)(?=\s*?\/?>*)/gm;
+  const findComponents = /(?:<|{)(\w*)(?=\s*?\/?>*)/gm;
   const sortModules = /(@gympass\/yoga*)/gm;
   const imports = [];
   const foundComponents = code.match(findComponents) || [];
@@ -22,7 +22,7 @@ const buildImportString = (code, modules) => {
       const moduleComponents = {
         components: [
           ...new Set(
-            foundComponents.map(c => c.replace('<', '')).filter(c => c),
+            foundComponents.map(c => c.replace(/<|{/, '')).filter(c => c),
           ),
         ]
           .filter(importedComponent =>

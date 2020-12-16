@@ -83,6 +83,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 320px;
   height: 52px;
   padding-left: 12px;
@@ -262,6 +263,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 320px;
   height: 52px;
   padding-left: 12px;
@@ -467,6 +469,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 320px;
   height: 52px;
   padding-left: 12px;
@@ -656,6 +659,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 100%;
   height: 52px;
   padding-left: 12px;
@@ -868,6 +872,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 320px;
   height: 52px;
   padding-left: 12px;
@@ -1273,6 +1278,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 320px;
   height: 52px;
   padding-left: 12px;

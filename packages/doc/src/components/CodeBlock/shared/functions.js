@@ -29,4 +29,25 @@ const injectImport = (imports, componentList, paths, destruct) => {
   return injectedString;
 };
 
-export default injectImport;
+const getCodeFragments = code => {
+  const [codeThatIsntComponent] = code.match(/([.*\s*\S*]*)return/gi) || [];
+  const codeBetweenRenderAndReturn = codeThatIsntComponent
+    ? codeThatIsntComponent.replace(/\s*render.*/, '').replace(/\s*return/, '')
+    : '';
+  const [styledComponents] = code.match(/const\s*.*styled[.*\s*\S*]*`;/) || [];
+
+  const withoutStyledComponents = codeBetweenRenderAndReturn.replace(
+    styledComponents,
+    '',
+  );
+
+  const [componentCode] = code.match(/<\s*?[.*\s*\S*]*>/) || [];
+
+  return {
+    styledComponents,
+    codeBetweenRenderAndReturn: withoutStyledComponents,
+    componentCode,
+  };
+};
+
+export { getCodeFragments, injectImport };
