@@ -2,11 +2,15 @@ import { css } from 'styled-components';
 
 const textStyle = type => () => css`
   ${({
+    light,
     variant,
     inverted,
+    size = 'medium',
     theme: {
       yoga: {
         baseFont,
+        fontWeights,
+        fontSizes: { [size]: pSize },
         colors: { [variant]: color, text, white },
         components: {
           text: {
@@ -16,9 +20,10 @@ const textStyle = type => () => css`
       },
     },
   }) => `
-    ${fontsize ? `font-size: ${fontsize}px` : ''};
+    ${fontsize || pSize ? `font-size: ${fontsize || pSize}px` : ''};
     ${lineHeight ? `line-height: ${lineHeight}px` : ''};
     ${fontWeight ? `font-weight: ${fontWeight}` : ''};
+    ${light ? `font-weight: ${fontWeights.light}` : ''};
 
     font-family: ${baseFont.family};
     color: ${variant ? color : text.primary};

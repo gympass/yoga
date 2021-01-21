@@ -2,12 +2,16 @@ import { css } from 'styled-components';
 
 const textStyle = type => () => css`
   ${({
+    light,
     variant,
     inverted,
+    size = 'medium',
     theme: {
       yoga: {
         baseFont,
-        colors: { [variant]: color = {}, dark, white },
+        fontWeights,
+        fontSizes: { [size]: pSize },
+        colors: { [variant]: color, text, white },
         components: {
           text: {
             [type]: { fontsize, lineHeight, fontWeight },
@@ -16,13 +20,16 @@ const textStyle = type => () => css`
       },
     },
   }) => `
-    ${fontsize ? `font-size: ${fontsize}px` : ''};
+    ${fontsize || pSize ? `font-size: ${fontsize || pSize}px` : ''};
     ${lineHeight ? `line-height: ${lineHeight}px` : ''};
 
     font-family: ${baseFont.family}${
     fontWeight !== 400 ? `-${fontWeight}` : ''
   };
-    color: ${variant ? color[3] : dark};
+
+    ${light ? `font-family: ${baseFont.family}-${fontWeights.light}` : ''};
+
+    color: ${variant ? color : text.primary};
     ${inverted ? `color: ${white};` : ''}
   `}
 `;
