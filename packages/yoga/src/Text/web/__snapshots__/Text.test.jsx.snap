@@ -74,6 +74,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
 .c8 {
   margin: 0;
   padding: 0;
+  font-size: 16px;
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
@@ -82,6 +83,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
 .c9 {
   margin: 0;
   padding: 0;
+  font-size: 16px;
   font-weight: 500;
   font-family: Rubik;
   color: #231B22;
@@ -90,6 +92,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
 .c10 {
   margin: 0;
   padding: 0;
+  font-size: 16px;
   font-weight: 700;
   font-family: Rubik;
   color: #231B22;
@@ -98,6 +101,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
 .c11 {
   margin: 0;
   padding: 0;
+  font-size: 16px;
   font-weight: 900;
   font-family: Rubik;
   color: #231B22;
@@ -173,6 +177,122 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     class="c11"
   >
     Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
+  font-weight: 300;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
+  font-weight: 300;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  font-weight: 300;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Live the mission
+  </h1>
+  <h2
+    class="c1"
+  >
+    Live the mission
+  </h2>
+  <h3
+    class="c2"
+  >
+    Live the mission
+  </h3>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text size 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    Live the small mission
+  </p>
+  <p
+    class="c1"
+  >
+    Live the medium mission
+  </p>
+  <p
+    class="c2"
+  >
+    Live the xlarge mission
+  </p>
+  <p
+    class="c3"
+  >
+    Live the xxxlarge mission
   </p>
 </div>
 `;

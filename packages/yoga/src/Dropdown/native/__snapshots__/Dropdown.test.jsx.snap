@@ -40,14 +40,19 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
       <Text
         disabled={false}
         inverted={false}
+        light={false}
+        size="medium"
         style={
           Array [
             Object {
-              "color": "#9898A6",
+              "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "400",
               "lineHeight": 24,
+            },
+            Object {
+              "color": "#9898A6",
             },
           ]
         }
@@ -170,14 +175,19 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
       <Text
         disabled={true}
         inverted={false}
+        light={false}
+        size="medium"
         style={
           Array [
             Object {
-              "color": "#F5F5FA",
+              "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "400",
               "lineHeight": 24,
+            },
+            Object {
+              "color": "#F5F5FA",
             },
           ]
         }
@@ -300,14 +310,19 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
       <Text
         disabled={false}
         inverted={false}
+        light={false}
+        size="medium"
         style={
           Array [
             Object {
-              "color": "#9898A6",
+              "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "400",
               "lineHeight": 24,
+            },
+            Object {
+              "color": "#9898A6",
             },
           ]
         }
@@ -437,6 +452,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
       <Text
         disabled={true}
         inverted={false}
+        light={false}
         selected={
           Object {
             "label": "Swimming",
@@ -444,6 +460,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
             "value": "swimming",
           }
         }
+        size="medium"
         style={
           Array [
             Object {
@@ -452,6 +469,9 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
               "fontSize": 16,
               "fontWeight": "400",
               "lineHeight": 24,
+            },
+            Object {
+              "color": "#231B22",
             },
           ]
         }

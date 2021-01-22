@@ -72,6 +72,8 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   </Text>
   <Text
     inverted={false}
+    light={false}
+    size="medium"
     style={
       Array [
         Object {
@@ -122,6 +124,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
         Object {
           "color": "#231B22",
           "fontFamily": "Rubik",
+          "fontSize": 16,
           "fontWeight": "400",
         },
       ]
@@ -135,6 +138,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
         Object {
           "color": "#231B22",
           "fontFamily": "Rubik",
+          "fontSize": 16,
           "fontWeight": "500",
         },
       ]
@@ -148,6 +152,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
         Object {
           "color": "#231B22",
           "fontFamily": "Rubik",
+          "fontSize": 16,
           "fontWeight": "700",
         },
       ]
@@ -161,12 +166,149 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
         Object {
           "color": "#231B22",
           "fontFamily": "Rubik",
+          "fontSize": 16,
           "fontWeight": "900",
         },
       ]
     }
   >
     Live the mission
+  </Text>
+</View>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Text
+    light={true}
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 48,
+          "fontWeight": "300",
+          "lineHeight": 56,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>
+  <Text
+    light={true}
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 40,
+          "fontWeight": "300",
+          "lineHeight": 48,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>
+  <Text
+    light={true}
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 32,
+          "fontWeight": "300",
+          "lineHeight": 40,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>
+</View>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text size 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Text
+    size="xsmall"
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "fontWeight": "400",
+          "lineHeight": 20,
+        },
+      ]
+    }
+  >
+    Live the small mission
+  </Text>
+  <Text
+    size="medium"
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "lineHeight": 16,
+        },
+      ]
+    }
+  >
+    Live the medium mission
+  </Text>
+  <Text
+    size="xlarge"
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 24,
+          "fontWeight": "400",
+        },
+      ]
+    }
+  >
+    Live the xlarge mission
+  </Text>
+  <Text
+    size="xxxlarge"
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 40,
+          "fontWeight": "500",
+        },
+      ]
+    }
+  >
+    Live the xxxlarge mission
   </Text>
 </View>
 `;
@@ -244,6 +386,8 @@ exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
 >
   <Text
     inverted={true}
+    light={false}
+    size="medium"
     style={
       Array [
         Object {

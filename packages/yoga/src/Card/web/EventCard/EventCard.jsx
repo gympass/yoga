@@ -4,7 +4,7 @@ import { shape, string } from 'prop-types';
 import { Time } from '@gympass/yoga-icons';
 
 import Card from '../Card';
-import Text from '../../../Text';
+import { TextRenderer, Text } from '../../../Text/web/Text';
 
 const Event = styled(Card)`
   display: flex;
@@ -28,7 +28,7 @@ const EventInfo = styled.div`
     padding: ${event.info.padding.top}px ${event.info.padding.right}px
       ${event.info.padding.bottom}px ${event.info.padding.left}px;
 
-    ${Text}, ${Text.Small} {
+    ${TextRenderer}, ${Text.Small} {
       display: -webkit-inline-box;
       overflow: hidden;
 
@@ -38,7 +38,7 @@ const EventInfo = styled.div`
       text-overflow: -o-ellipsis-lastline;
     }
 
-    ${Text} {
+    ${TextRenderer} {
       height: ${event.info.name.height}px;
       margin-bottom: ${event.info.name.marginBottom}px;
 

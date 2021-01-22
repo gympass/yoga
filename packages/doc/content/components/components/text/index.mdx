@@ -22,7 +22,7 @@ possible.
 | `<Text.H3>`      | `<h3>`      | xxlarge       | medium          | xxlarge         |
 | `<Text.H4>`      | `<h4>`      | xlarge        | medium          | xlarge          |
 | `<Text.H5>`      | `<h5>`      | large         | medium          | large           |
-| `<Text>`         | `<p>`       | medium        | medium          | medium          |
+| `<Text>`         | `<p>`       | medium        | regular         | medium          |
 | `<Text.Small>`   | `<p>`       | small         | medium          | small           |
 | `<Text.Tiny>`    | `<p>`       | xsmall        | medium          | xsmall          |
 | `<Text.Light>`   | `<p>`       | -             | light           | -               |
@@ -33,6 +33,9 @@ possible.
 
 _You can see the font-size tokens values
 [here](https://gympass.github.io/yoga/guidelines/tokens/font-sizes)._
+
+All Text components have a prop `size` which will set the `fontSize` accordingly 
+with our tokens. Regardless, all pre-established config will be prioritized.
 
 <TabbedView>
   <Tab title="Web">
