@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import { oneOf, bool } from 'prop-types';
 import textStyle from '../textStyle';
@@ -42,19 +43,53 @@ Bold.displayName = 'Text.Bold';
 const Black = styledText('black');
 Black.displayName = 'Text.Black';
 
-const Text = styledText('p');
+const TextRenderer = styledText('p');
 
+const Text = props => <TextRenderer {...props} />;
 Text.displayName = 'Text';
 
 Text.propTypes = {
   inverted: bool,
-  /** style the text following the theme (primary, secondary, tertiary) */
-  variant: oneOf(['primary', 'secondary', 'tertiary']),
+  /** style the text following the theme */
+  variant: oneOf([
+    'primary',
+    'secondary',
+    'vibin',
+    'hope',
+    'energy',
+    'relax',
+    'peace',
+    'verve',
+    'uplift',
+    'deepPurple',
+    'stamina',
+    'deep',
+    'medium',
+    'light',
+    'clear',
+    'whit',
+  ]),
+  /** set the font-size following the theme */
+  size: oneOf([
+    'xxsmall',
+    'xsmall',
+    'small',
+    'medium',
+    'large',
+    'xlarge',
+    'xxlarge',
+    'xxxlarge',
+    'huge',
+  ]),
+  /** set the font-weight to regular */
+  light: bool,
 };
 
 Text.defaultProps = {
   inverted: false,
   variant: undefined,
+  size: 'medium',
+  light: false,
 };
 
 export {
