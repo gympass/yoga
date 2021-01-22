@@ -72,7 +72,7 @@ Text.propTypes = {
     'medium',
     'light',
     'clear',
-    'whit',
+    'white',
   ]),
   /** set the font-size following the theme */
   size: oneOf([
