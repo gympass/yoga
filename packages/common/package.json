@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-common",
-  "version": "0.1.2-alpha.2",
+  "version": "0.1.2-alpha.3",
   "description": "Shared resources between packages",
   "homepage": "https://github.com/Gympass/yoga",
   "license": "MIT",
