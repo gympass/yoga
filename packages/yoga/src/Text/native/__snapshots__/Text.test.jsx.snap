@@ -72,6 +72,8 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   </Text>
   <Text
     inverted={false}
+    light={false}
+    size="medium"
     style={
       Array [
         Object {
@@ -384,6 +386,8 @@ exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
 >
   <Text
     inverted={true}
+    light={false}
+    size="medium"
     style={
       Array [
         Object {
