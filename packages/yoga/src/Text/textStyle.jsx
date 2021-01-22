@@ -20,7 +20,7 @@ const textStyle = type => () => css`
       },
     },
   }) => `
-    ${fontsize || pSize ? `font-size: ${fontsize || pSize}px` : ''};
+    font-size: ${fontsize || pSize}px;
     ${lineHeight ? `line-height: ${lineHeight}px` : ''};
     ${fontWeight ? `font-weight: ${fontWeight}` : ''};
     ${light ? `font-weight: ${fontWeights.light}` : ''};

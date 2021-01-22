@@ -98,6 +98,7 @@ Text.defaultProps = {
 };
 
 export {
+  TextRenderer,
   Text,
   H1,
   H2,
