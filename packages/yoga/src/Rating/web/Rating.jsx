@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { number, func, shape, bool } from 'prop-types';
-import { Star } from '@gympass/yoga-icons';
+import { StarFilled } from '@gympass/yoga-icons';
 
 import { max as maxPropType } from '../../shared';
 
@@ -40,7 +40,7 @@ const Rating = ({
       components: { rating },
     },
   },
-  icon: { type: Icon = Star, size: iconSize = rating.icon.size },
+  icon: { type: Icon = StarFilled, size: iconSize = rating.icon.size },
   ...rest
 }) => {
   const wrapperRef = useRef(null);
@@ -156,7 +156,7 @@ Rating.propTypes = {
 Rating.defaultProps = {
   value: undefined,
   icon: {
-    type: Star,
+    type: StarFilled,
     size: 12,
   },
   max: 5,
