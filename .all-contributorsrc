@@ -99,6 +99,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "evilamaior",
+      "name": "Esthéfanie Vila Maior",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46816386?v=4",
+      "profile": "https://github.com/evilamaior",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
