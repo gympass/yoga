@@ -70,15 +70,6 @@ describe('<Button />', () => {
         );
         expect(toJSON(container)).toMatchSnapshot();
       });
-
-      it('should match snapshot with link Button', () => {
-        const { container } = render(
-          <ThemeProvider>
-            <Button.Link inverted />
-          </ThemeProvider>,
-        );
-        expect(toJSON(container)).toMatchSnapshot();
-      });
     });
 
     describe('With small prop', () => {
@@ -179,15 +170,6 @@ describe('<Button />', () => {
   });
 
   describe('With variant prop', () => {
-    it('should match snapshot with default Button.Link', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <Button.Link variant="secondary" />
-        </ThemeProvider>,
-      );
-      expect(toJSON(container)).toMatchSnapshot();
-    });
-
     it('should match snapshot with default Button.Outline', () => {
       const { container } = render(
         <ThemeProvider>

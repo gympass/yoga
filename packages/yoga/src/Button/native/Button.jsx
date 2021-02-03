@@ -5,11 +5,12 @@ import withTouchable from './withTouchable';
 
 import Text from '../../Text';
 
-const Label = styled(Text.Bold)`
+const Label = styled(Text.Medium)`
   text-align: center;
   ${({
     disabled,
     pressed,
+    small,
     inverted,
     theme: {
       yoga: {
@@ -17,7 +18,7 @@ const Label = styled(Text.Bold)`
       },
     },
   }) => `
-      font-size: ${button.font.size};
+      font-size: ${small ? button.font.size.small : button.font.size.default}px;
       color: ${button.types.contained.font.default.color};
 
       ${disabled ? `color: ${button.types.contained.font.disabled.color};` : ''}
@@ -60,8 +61,12 @@ const ButtonContainer = styled.View`
       border-radius: ${button.border.radius}px;
       height: ${small ? button.height.small : button.height.default};
       justify-content: center;
-      padding-left: ${button.padding.left}px;
-      padding-right: ${button.padding.right}px;
+      padding-left: ${
+        small ? button.padding.small.left : button.padding.default.left
+      }px;
+      padding-right: ${
+        small ? button.padding.small.right : button.padding.default.right
+      }px;
       ${full ? 'width: 100%;' : ''}
 
       ${
@@ -110,7 +115,12 @@ const Button = ({
     small={small}
     inverted={inverted}
   >
-    <Label disabled={disabled} pressed={pressed} inverted={inverted}>
+    <Label
+      disabled={disabled}
+      pressed={pressed}
+      inverted={inverted}
+      small={small}
+    >
       {children}
     </Label>
   </ButtonContainer>

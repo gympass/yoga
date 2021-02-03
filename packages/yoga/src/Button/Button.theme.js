@@ -9,16 +9,25 @@ const Button = ({
   fontWeights,
 }) => ({
   padding: {
-    right: spacing.large,
-    left: spacing.large,
+    default: {
+      right: spacing.large,
+      left: spacing.large,
+    },
+    small: {
+      right: spacing.small,
+      left: spacing.small,
+    },
   },
   height: {
     default: 48,
     small: 32,
   },
   font: {
-    size: fontSizes.small,
-    weight: fontWeights.bold,
+    size: {
+      default: fontSizes.medium,
+      small: fontSizes.small,
+    },
+    weight: fontWeights.medium,
   },
   border: {
     small: {
@@ -68,18 +77,16 @@ const Button = ({
       },
     },
     text: {
-      backgroundColor: {
-        disabled: 'transparent',
-        default: 'transparent',
-        pressed: 'transparent',
-        hover: hexToRgb(colors.primary, 0.25),
-      },
+      backgroundColor: 'transparent',
       font: {
         default: {
           color: colors.text.primary,
         },
         disabled: {
           color: colors.text.disabled,
+        },
+        hover: {
+          color: hexToRgb(colors.primary, 0.5),
         },
         pressed: {
           color: hexToRgb(colors.primary, 0.75),
@@ -88,6 +95,7 @@ const Button = ({
     },
     link: {
       font: {
+        color: colors.secondary,
         disabled: {
           color: colors.text.disabled,
         },

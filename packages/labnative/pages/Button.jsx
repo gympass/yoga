@@ -73,12 +73,6 @@ const ButtonPage = () => (
       <Button.Link>Link</Button.Link>
     </ButtonWrapper>
     <ButtonWrapper>
-      <Button.Link variant="secondary">Link secondary</Button.Link>
-    </ButtonWrapper>
-    <ButtonWrapper>
-      <Button.Link inverted>Inverted</Button.Link>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button.Link disabled>Disabled</Button.Link>
     </ButtonWrapper>
 

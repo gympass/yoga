@@ -62,24 +62,6 @@ describe('<Button />', () => {
         );
         expect(container).toMatchSnapshot();
       });
-
-      it('should match snapshot with text Button', () => {
-        const { container } = render(
-          <ThemeProvider>
-            <Button.Text inverted />
-          </ThemeProvider>,
-        );
-        expect(container).toMatchSnapshot();
-      });
-
-      it('should match snapshot with link Button', () => {
-        const { container } = render(
-          <ThemeProvider>
-            <Button.Link inverted />
-          </ThemeProvider>,
-        );
-        expect(container).toMatchSnapshot();
-      });
     });
 
     describe('With small prop', () => {
@@ -179,15 +161,6 @@ describe('<Button />', () => {
     });
 
     describe('With variant prop', () => {
-      it('should match snapshot with link Button.Link', () => {
-        const { container } = render(
-          <ThemeProvider>
-            <Button.Link variant="primary" />
-          </ThemeProvider>,
-        );
-        expect(container).toMatchSnapshot();
-      });
-
       it('should match snapshot with link Button.Outline', () => {
         const { container } = render(
           <ThemeProvider>

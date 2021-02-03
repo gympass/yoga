@@ -43,13 +43,14 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
           disabled={true}
           inverted={false}
           pressed={false}
+          small={false}
           style={
             Array [
               Object {
                 "color": "#D7D7E0",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -85,22 +86,18 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
     >
       <Text
         disabled={true}
-        inverted={false}
         pressed={false}
         style={
           Array [
             Object {
               "color": "#D7D7E0",
               "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "marginBottom": 8,
-              "marginTop": 16,
+              "fontSize": 16,
+              "fontWeight": "500",
               "textAlign": "center",
             },
           ]
         }
-        variant="primary"
       />
     </View>
   </TouchableWithoutFeedback>
@@ -155,8 +152,8 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
               Object {
                 "color": "#D7D7E0",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -195,7 +192,7 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
         style={
           Array [
             Object {
-              "backgroundColor": "transparent",
+              "backgroundColor": undefined,
               "borderRadius": 9999,
               "height": 48,
               "justifyContent": "center",
@@ -213,8 +210,8 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
               Object {
                 "color": "#D7D7E0",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -270,13 +267,14 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
           disabled={false}
           inverted={false}
           pressed={false}
+          small={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -338,8 +336,8 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -378,7 +376,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
         style={
           Array [
             Object {
-              "backgroundColor": "transparent",
+              "backgroundColor": undefined,
               "borderRadius": 9999,
               "height": 48,
               "justifyContent": "center",
@@ -396,8 +394,8 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -452,13 +450,14 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
           disabled={false}
           inverted={true}
           pressed={false}
+          small={false}
           style={
             Array [
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -467,50 +466,6 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
           Button
         </Text>
       </View>
-    </View>
-  </TouchableWithoutFeedback>
-</View>
-`;
-
-exports[`<Button /> Snapshots With inverted prop should match snapshot with link Button 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <TouchableWithoutFeedback
-    inverted={true}
-  >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <Text
-        disabled={false}
-        inverted={true}
-        pressed={false}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "marginBottom": 8,
-              "marginTop": 16,
-              "textAlign": "center",
-            },
-          ]
-        }
-        variant="primary"
-      />
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -564,8 +519,8 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -604,7 +559,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
         style={
           Array [
             Object {
-              "backgroundColor": "transparent",
+              "backgroundColor": undefined,
               "borderRadius": 9999,
               "height": 48,
               "justifyContent": "center",
@@ -621,8 +576,8 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -667,8 +622,8 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
               "borderRadius": 9999,
               "height": 32,
               "justifyContent": "center",
-              "paddingLeft": 24,
-              "paddingRight": 24,
+              "paddingLeft": 16,
+              "paddingRight": 16,
             },
           ]
         }
@@ -677,13 +632,14 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
           disabled={false}
           inverted={false}
           pressed={false}
+          small={true}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
-                "fontWeight": "700",
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -730,8 +686,8 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
               "borderWidth": 1,
               "height": 32,
               "justifyContent": "center",
-              "paddingLeft": 24,
-              "paddingRight": 24,
+              "paddingLeft": 16,
+              "paddingRight": 16,
             },
           ]
         }
@@ -744,8 +700,8 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -784,25 +740,26 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
         style={
           Array [
             Object {
-              "backgroundColor": "transparent",
+              "backgroundColor": undefined,
               "borderRadius": 9999,
               "height": 32,
               "justifyContent": "center",
-              "paddingLeft": 24,
-              "paddingRight": 24,
+              "paddingLeft": 16,
+              "paddingRight": 16,
             },
           ]
         }
       >
         <Text
           pressed={false}
+          small={true}
           style={
             Array [
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
-                "fontWeight": "700",
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -855,13 +812,14 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
           disabled={false}
           inverted={false}
           pressed={false}
+          small={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -895,22 +853,18 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
     >
       <Text
         disabled={false}
-        inverted={false}
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#231B22",
+              "color": "#D8385E",
               "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "marginBottom": 8,
-              "marginTop": 16,
+              "fontSize": 16,
+              "fontWeight": "500",
               "textAlign": "center",
             },
           ]
         }
-        variant="primary"
       />
     </View>
   </TouchableWithoutFeedback>
@@ -961,8 +915,8 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -998,7 +952,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
         style={
           Array [
             Object {
-              "backgroundColor": "transparent",
+              "backgroundColor": undefined,
               "borderRadius": 9999,
               "height": 48,
               "justifyContent": "center",
@@ -1015,58 +969,14 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
           }
         />
       </View>
-    </View>
-  </TouchableWithoutFeedback>
-</View>
-`;
-
-exports[`<Button /> With variant prop should match snapshot with default Button.Link 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <TouchableWithoutFeedback
-    variant="secondary"
-  >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <Text
-        disabled={false}
-        inverted={false}
-        pressed={false}
-        style={
-          Array [
-            Object {
-              "color": "#D8385E",
-              "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "marginBottom": 8,
-              "marginTop": 16,
-              "textAlign": "center",
-            },
-          ]
-        }
-        variant="secondary"
-      />
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -1118,8 +1028,8 @@ exports[`<Button /> With variant prop should match snapshot with default Button.
               Object {
                 "color": "#D8385E",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]

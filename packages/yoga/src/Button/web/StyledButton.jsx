@@ -21,8 +21,12 @@ const StyledButton = styled.button`
   }) => `
       width: ${full ? '100%' : 'auto'};
       height: ${small ? button.height.small : button.height.default}px;
-      padding-left: ${button.padding.left}px;
-      padding-right: ${button.padding.right}px;
+      padding-left: ${
+        small ? button.padding.small.left : button.padding.default.left
+      }px;
+      padding-right: ${
+        small ? button.padding.small.right : button.padding.default.right
+      }px;
 
       background-color: ${button.types.contained.backgroundColor.default};
       border: ${
@@ -31,7 +35,7 @@ const StyledButton = styled.button`
       border-radius: ${button.border.radius}px;
       color: ${button.types.contained.font.default.color};
 
-      font-size: ${button.font.size}px;
+      font-size: ${small ? button.font.size.small : button.font.size.default}px;
       font-weight: ${button.font.weight};
       font-family: ${baseFont.family};
       letter-spacing: normal;
