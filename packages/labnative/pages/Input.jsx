@@ -23,13 +23,13 @@ const InputPage = () => {
     >
       <Input
         label="With error"
+        error="Please, don't let this field empy"
         value={defaultValue}
         onChangeText={text => setDefaultValue(text)}
         onClean={cleaned => setDefaultValue(cleaned)}
       />
       <Input
         label="Default"
-        error="Please, don't let this field empy"
         value={defaultValue}
         onChangeText={text => setDefaultValue(text)}
         onClean={cleaned => setDefaultValue(cleaned)}

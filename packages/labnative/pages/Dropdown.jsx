@@ -42,6 +42,19 @@ const DropdownPage = () => (
         { label: 'Run', value: 'running' },
       ]}
     />
+    <DocTitle>With error</DocTitle>
+    <Dropdown
+      label="Find an activity to love"
+      error="Please, select one activity"
+      options={[
+        { label: 'Yoga', value: 'yoga' },
+        { label: 'Crossfit', value: 'crossfit' },
+        { label: 'Tenis', value: 'tenis' },
+        { label: 'Soccer', value: 'soccer' },
+        { label: 'Pilates', value: 'pilates' },
+        { label: 'Run', value: 'running' },
+      ]}
+    />
   </>
 );
 
