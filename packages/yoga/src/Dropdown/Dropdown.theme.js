@@ -1,3 +1,5 @@
+import { hexToRgb } from '@gympass/yoga-common';
+
 const Dropdown = ({
   colors,
   fontSizes,
@@ -23,11 +25,11 @@ const Dropdown = ({
     },
   },
   arrow: {
-    fill: colors.elements.lineAndBorders,
+    fill: colors.text.secondary,
   },
   input: {
     font: {
-      color: colors.elements.selectionAndIcons,
+      color: colors.text.secondary,
       size: fontSizes.small,
       lineHeight: lineHeights.small,
     },
@@ -47,7 +49,7 @@ const Dropdown = ({
         bottomLeft: radii.rounded,
       },
       width: borders.small,
-      color: colors.text.primary,
+      color: colors.text.secondary,
     },
   },
   option: {
@@ -119,11 +121,11 @@ const Dropdown = ({
   hover: {
     selector: {
       border: {
-        color: colors.text.primary,
+        color: colors.text.secondary,
       },
     },
     option: {
-      backgroundColor: colors.elements.backgroundAndDisabled,
+      backgroundColor: hexToRgb(colors.elements.backgroundAndDisabled, 0.5),
     },
   },
   disabled: {
@@ -134,11 +136,11 @@ const Dropdown = ({
     },
     input: {
       font: {
-        color: colors.elements.backgroundAndDisabled,
+        color: colors.text.disabled,
       },
     },
     arrow: {
-      fill: colors.elements.backgroundAndDisabled,
+      fill: colors.elements.lineAndBorders,
     },
   },
   selected: {
@@ -163,7 +165,8 @@ const Dropdown = ({
     option: {
       font: {
         color: colors.text.primary,
-        weight: fontWeights.bold,
+        weight: fontWeights.medium,
+        size: fontSizes.medium,
       },
     },
   },

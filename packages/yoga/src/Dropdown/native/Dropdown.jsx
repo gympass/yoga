@@ -9,20 +9,23 @@ import {
   bool,
   oneOfType,
 } from 'prop-types';
-import { TouchableWithoutFeedback } from 'react-native';
+import { TouchableWithoutFeedback, View } from 'react-native';
 import { ChevronDown } from '@gympass/yoga-icons';
 
 import Options from './Options';
 import Backdrop from './Backdrop';
 import Text from '../../Text';
+import Helper from '../../Input/native/Helper';
 
 const Selector = styled.View`
   ${({
     disabled,
     selected,
+    error,
     full,
     theme: {
       yoga: {
+        colors,
         components: { dropdown },
       },
     },
@@ -42,7 +45,9 @@ const Selector = styled.View`
     border-radius: ${dropdown.selector.border.radius}px;
     border-width: ${dropdown.selector.border.width}px;
     border-style: solid;
-    border-color: ${dropdown.selector.border.color};
+    border-color: ${
+      error ? colors.feedback.attention[1] : dropdown.selector.border.color
+    };
 
     ${
       disabled
@@ -78,6 +83,7 @@ const getSelectedOption = options =>
 
 /** Gympass Dropdown is a multiple choice type of menu. */
 const Dropdown = ({
+  error,
   label,
   disabled,
   full,
@@ -107,12 +113,21 @@ const Dropdown = ({
         accessibilityRole="button"
         onPress={() => !disabled && toggleIsOpen(true)}
       >
-        <Selector full={full} disabled={disabled} selected={selected} {...rest}>
-          <Label disabled={disabled} selected={selected}>
-            {(selected && selected.label) || label}
-          </Label>
-          <ChevronDown width={20} height={20} fill={iconColor()} />
-        </Selector>
+        <View>
+          <Selector
+            full={full}
+            disabled={disabled}
+            selected={selected}
+            error={error}
+            {...rest}
+          >
+            <Label disabled={disabled} selected={selected}>
+              {(selected && selected.label) || label}
+            </Label>
+            <ChevronDown width={20} height={20} fill={iconColor()} />
+          </Selector>
+          {error && !selected && <Helper error={error} />}
+        </View>
       </TouchableWithoutFeedback>
 
       <Backdrop
@@ -140,6 +155,7 @@ const Dropdown = ({
 Dropdown.propTypes = {
   label: string,
   disabled: bool,
+  error: string,
   full: bool,
   /** { label (string), value (string or number), selected: (boolean) } */
   options: arrayOf(
@@ -158,6 +174,7 @@ Dropdown.propTypes = {
 
 Dropdown.defaultProps = {
   label: '',
+  error: undefined,
   full: false,
   cancelActionLabel: 'Cancel',
   confirmActionLabel: 'Confirm',
