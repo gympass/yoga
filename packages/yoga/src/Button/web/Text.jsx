@@ -10,24 +10,26 @@ const ButtonText = styled(Button)`
       },
     },
   }) => `
-    background-color: ${button.types.text.backgroundColor.default};
-    border-color: ${button.types.text.backgroundColor.default};
+    background-color: ${button.types.text.backgroundColor};
+    border-color: ${button.types.text.backgroundColor};
     color: ${button.types.text.font.default.color};
 
-    &:not([disabled]):hover, &:not([disabled]):focus {
-      background-color: ${button.types.text.backgroundColor.hover};
+    &:not([disabled]):hover, &:not([disabled]):focus, &:not([disabled]):active {
+      background-color: ${button.types.text.backgroundColor};
       box-shadow: none;
     }
 
-    &:not([disabled]):active {
-      background-color: ${button.types.text.backgroundColor.pressed};
-      border-color: ${button.types.text.backgroundColor.pressed};
+    &:not([disabled]):hover {
+      color: ${button.types.text.font.hover.color};
+    }
+
+    &:not([disabled]):focus, &:not([disabled]):active {
       color: ${button.types.text.font.pressed.color};
     }
 
     &:disabled {
-      background-color: ${button.types.text.backgroundColor.disabled};
-      border-color: ${button.types.text.backgroundColor.disabled};
+      background-color: ${button.types.text.backgroundColor};
+      border-color: ${button.types.text.backgroundColor};
       color: ${button.types.text.font.disabled.color};
     }
   `}
