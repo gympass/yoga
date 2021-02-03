@@ -55,9 +55,14 @@ const ButtonContainerText = styled(ButtonContainer)`
   `}
 `;
 
-const ButtonText = ({ children, disabled, pressed, ...rest }) => (
-  <ButtonContainerText {...rest} disabled={disabled} pressed={pressed}>
-    <LabelText disabled={disabled} pressed={pressed}>
+const ButtonText = ({ children, disabled, pressed, small, ...rest }) => (
+  <ButtonContainerText
+    {...rest}
+    disabled={disabled}
+    pressed={pressed}
+    small={small}
+  >
+    <LabelText disabled={disabled} pressed={pressed} small={small}>
       {children}
     </LabelText>
   </ButtonContainerText>
