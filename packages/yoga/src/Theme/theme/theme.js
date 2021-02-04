@@ -1,5 +1,4 @@
 /* eslint-disable prefer-destructuring */
-import { hexToRgb } from '@gympass/yoga-common';
 import * as componentThemes from '../../**/*.theme.js';
 
 const theme = tokens => {
@@ -11,9 +10,9 @@ const theme = tokens => {
     primary: tokens.colors.stamina,
     secondary: tokens.colors.vibin,
     feedback: {
-      success: [hexToRgb(tokens.colors.hope, 0.25), tokens.colors.hope],
-      informative: [hexToRgb(tokens.colors.relax, 0.25), tokens.colors.relax],
-      attention: [hexToRgb(tokens.colors.verve, 0.25), tokens.colors.verve],
+      success: [tokens.colors.success, tokens.colors.hope],
+      informative: [tokens.colors.neutral, tokens.colors.relax],
+      attention: [tokens.colors.attention, tokens.colors.verve],
     },
     text: {
       primary: tokens.colors.stamina,
@@ -26,6 +25,19 @@ const theme = tokens => {
       backgroundAndDisabled: tokens.colors.clear,
     },
   };
+
+  [
+    colors.feedback.success.light,
+    colors.feedback.success.dark,
+  ] = colors.feedback.success;
+  [
+    colors.feedback.informative.light,
+    colors.feedback.informative.dark,
+  ] = colors.feedback.informative;
+  [
+    colors.feedback.attention.light,
+    colors.feedback.attention.dark,
+  ] = colors.feedback.attention;
 
   const components = {};
   Object.entries(componentThemes).forEach(([names, themed]) => {
