@@ -211,7 +211,6 @@ const Input = ({
   textContentType,
   value,
   onBlur,
-  onChangeText,
   onClean,
   onFocus,
   hideMaxLength,
@@ -289,10 +288,6 @@ const Input = ({
         textContentType={textContentType}
         typed={typed}
         value={value}
-        onChangeText={text => {
-          setTyped(Boolean(text));
-          onChangeText(text);
-        }}
         onFocus={e => {
           setFocused(true);
           onFocus(e);
@@ -367,7 +362,6 @@ Input.propTypes = {
   value: oneOfType([string, number]),
   style: oneOfType([shape({}), arrayOf(shape({}))]),
   onBlur: func,
-  onChangeText: func,
   /** callback invoked when close icon is clicked */
   onClean: func,
   onFocus: func,
@@ -387,7 +381,6 @@ Input.defaultProps = {
   textContentType: undefined,
   value: '',
   onBlur: () => {},
-  onChangeText: () => {},
   onClean: () => {},
   onFocus: () => {},
   hideMaxLength: false,

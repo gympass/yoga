@@ -173,16 +173,34 @@ describe('<Input />', () => {
     it('should call onClean when press clean button', () => {
       const onCleanMock = jest.fn();
 
-      const { getByRole, getByTestId } = render(
+      const { getByRole } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" onClean={onCleanMock} />
+          <Input label="Input" value="foo" onClean={onCleanMock} />
         </ThemeProvider>,
       );
 
-      fireEvent.changeText(getByTestId('input'), 'foo');
       fireEvent.press(getByRole('button'));
 
       expect(onCleanMock).toHaveBeenCalledWith('');
+    });
+
+    it('should test if clean button is present', () => {
+      const { rerender, queryByRole } = render(
+        <ThemeProvider>
+          <Input label="Input" />
+        </ThemeProvider>,
+      );
+
+      // closeButton
+      expect(queryByRole('button')).toBeNull();
+
+      rerender(
+        <ThemeProvider>
+          <Input label="Input" value="foo" />
+        </ThemeProvider>,
+      );
+
+      expect(queryByRole('button')).not.toBeNull();
     });
   });
 });
