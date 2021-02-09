@@ -1,15 +1,22 @@
-import { AlertCircle } from '@gympass/yoga-icons';
+import { Accessibility, AlertCircle } from '@gympass/yoga-icons';
 
 ### Reference
+### Basic usage
 
-Gympass `<IconWrapper />` description
+```javascript type=expo
+<>
+  <IconWrapper as={Accessibility} />
+</>
+```
 
-### Usage
+### Usage with custom size, fill and stroke.
 
-```javascript
+```javascript type=expo
+<>
   <IconWrapper as={AlertCircle} width="medium" height="medium" fill="energy" stroke="energy" />
+</>
 ```
 
 ### Props
 
-<PropsTable component="IconWrapper" platform="web" />
+<PropsTable component="IconWrapper" platform="native" />
