@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.2...@gympass/yoga@5.2.3) (2021-02-09)
+
+
+### Bug Fixes
+
+* **native:** remove inputValue from input component ([5348c16](https://github.com/Gympass/yoga/commit/5348c162304d766bb85b17235950e9936c808c9b))
+* remove inputValue from input component ([c9890c3](https://github.com/Gympass/yoga/commit/c9890c314166e16c6d03317fd0720db6d3ccc3a0))
+
+
+
+
+
 ## [5.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.1...@gympass/yoga@5.2.2) (2020-12-16)
 
 
