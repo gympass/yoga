@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, screen } from '@testing-library/react';
 
 import { ThemeProvider, Input } from '../..';
 
@@ -79,26 +79,28 @@ describe('<Input />', () => {
   describe('Events', () => {
     it('should call onChange', () => {
       const onChangeMock = jest.fn();
-      const { getByTestId } = render(
+      render(
         <ThemeProvider>
           <Input label="Input" onChange={onChangeMock} data-testid="input" />
         </ThemeProvider>,
       );
 
-      fireEvent.change(getByTestId('input'), { target: { value: 'foo' } });
+      fireEvent.change(screen.getByTestId('input'), {
+        target: { value: 'foo' },
+      });
 
       expect(onChangeMock).toHaveBeenCalled();
     });
 
     it('should call onFocus', () => {
       const onFocusMock = jest.fn();
-      const { getByTestId } = render(
+      render(
         <ThemeProvider>
           <Input label="Input" data-testid="input" onFocus={onFocusMock} />
         </ThemeProvider>,
       );
 
-      fireEvent.focus(getByTestId('input'));
+      fireEvent.focus(screen.getByTestId('input'));
 
       expect(onFocusMock).toHaveBeenCalled();
     });
@@ -106,14 +108,14 @@ describe('<Input />', () => {
     it('should call onBlur', () => {
       const onBlurMock = jest.fn();
 
-      const { getByTestId } = render(
+      render(
         <ThemeProvider>
           <Input label="Input" data-testid="input" onBlur={onBlurMock} />
         </ThemeProvider>,
       );
 
-      fireEvent.focus(getByTestId('input'));
-      fireEvent.blur(getByTestId('input'));
+      fireEvent.focus(screen.getByTestId('input'));
+      fireEvent.blur(screen.getByTestId('input'));
 
       expect(onBlurMock).toHaveBeenCalled();
     });
@@ -121,34 +123,56 @@ describe('<Input />', () => {
 
   describe('maxLength', () => {
     it('should update maxLength counter when add character', () => {
-      const { getByTestId, getByText } = render(
+      const { rerender } = render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" maxLength={10} />
+          <Input label="Input" maxLength={10} />
         </ThemeProvider>,
       );
 
-      expect(getByText('0/10').textContent).toBe('0/10');
+      expect(screen.getByText('0/10').textContent).toBe('0/10');
 
-      fireEvent.change(getByTestId('input'), { target: { value: 'foo' } });
+      rerender(
+        <ThemeProvider>
+          <Input label="Input" value="foo" maxLength={10} />
+        </ThemeProvider>,
+      );
 
-      expect(getByText('3/10').textContent).toBe('3/10');
+      expect(screen.getByText('3/10').textContent).toBe('3/10');
     });
   });
 
   describe('clean button', () => {
     it('should call onClean when press clean button', () => {
-      const onCleanMock = jest.fn();
+      const onClean = jest.fn();
 
-      const { getByTestId, getByRole } = render(
+      render(
         <ThemeProvider>
-          <Input label="Input" data-testid="input" onClean={onCleanMock} />
+          <Input label="Input" value="foo" onClean={onClean} />
         </ThemeProvider>,
       );
 
-      fireEvent.change(getByTestId('input'), { target: { value: 'foo' } });
-      fireEvent.click(getByRole('button'));
+      fireEvent.click(screen.queryByRole('button'));
 
-      expect(onCleanMock).toHaveBeenCalledWith('');
+      expect(onClean).toHaveBeenCalled();
+    });
+
+    it('should test if clean button is present', () => {
+      const { rerender } = render(
+        <ThemeProvider>
+          <Input label="Input" />
+        </ThemeProvider>,
+      );
+
+      // closeButton
+      expect(screen.queryByRole('button')).toBeNull();
+
+      rerender(
+        <ThemeProvider>
+          <Input label="Input" value="foo" />
+        </ThemeProvider>,
+      );
+
+      expect(screen.queryByRole('button')).not.toBeNull();
     });
   });
 });
