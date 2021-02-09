@@ -151,7 +151,7 @@ describe('<Input />', () => {
 
   describe('maxLength', () => {
     it('should update maxLength counter when add character', () => {
-      const { getByTestId, getByText } = render(
+      const { getByText, rerender } = render(
         <ThemeProvider>
           <Input label="Input" testID="input" maxLength={10} />
         </ThemeProvider>,
@@ -159,7 +159,11 @@ describe('<Input />', () => {
 
       expect(getByText('0/10').children.join('')).toBe('0/10');
 
-      fireEvent.changeText(getByTestId('input'), 'foo');
+      rerender(
+        <ThemeProvider>
+          <Input label="Input" value="foo" maxLength={10} />
+        </ThemeProvider>,
+      );
 
       expect(getByText('3/10').children.join('')).toBe('3/10');
     });
