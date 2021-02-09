@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef } from 'react';
 import styled, { css } from 'styled-components';
 import { func, string, bool, number, shape, oneOfType } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
@@ -76,11 +76,6 @@ const Input = React.forwardRef(
     ref,
   ) => {
     const inputRef = ref || useRef(null);
-    const [inputValue, setInputValue] = useState(value);
-
-    useEffect(() => {
-      setInputValue(value);
-    }, [value]);
 
     const cleanField = e => {
       if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
@@ -112,11 +107,8 @@ const Input = React.forwardRef(
               maxLength,
             }}
             ref={inputRef}
-            value={inputValue}
-            onChange={e => {
-              setInputValue(e.target.value);
-              onChange(e);
-            }}
+            value={value}
+            onChange={onChange}
           />
 
           <Label error={error} disabled={disabled}>
@@ -124,7 +116,7 @@ const Input = React.forwardRef(
           </Label>
 
           {label && <Legend>{label}</Legend>}
-          {cleanable && !readOnly && inputValue && (
+          {cleanable && !readOnly && value && (
             <IconWrapper
               tabIndex={0}
               disabled={disabled}
@@ -141,7 +133,7 @@ const Input = React.forwardRef(
             error={error}
             helper={helper}
             maxLength={maxLength}
-            length={inputValue.length}
+            length={value.length}
             disabled={disabled}
             hideMaxLength={hideMaxLength}
           />
