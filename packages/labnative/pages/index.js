@@ -14,6 +14,7 @@ import Progress from './Progress';
 import Dropdown from './Dropdown';
 import TextArea from './TextArea';
 import Icon from './Icon';
+import IconWrapper from './IconWrapper';
 
 export {
   Button,
@@ -32,4 +33,5 @@ export {
   Dropdown,
   TextArea,
   Icon,
+  IconWrapper,
 };
