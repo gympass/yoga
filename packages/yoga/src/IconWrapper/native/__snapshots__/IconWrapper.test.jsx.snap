@@ -13,7 +13,6 @@ exports[`Snapshots should match snapshot 1`] = `
   <svg
     fill="#231B22"
     height={16}
-    stroke="rgba(0, 0, 0, 0)"
     width={16}
   >
     <circle

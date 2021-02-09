@@ -12,10 +12,10 @@ const IconWrapper = ({
   ...props
 }) => (
   <Component
-    fill={theme.yoga.colors[fill] || fill}
-    stroke={theme.yoga.colors[stroke] || stroke}
     width={theme.yoga.spacing[width] || width}
     height={theme.yoga.spacing[height] || height}
+    {...(fill && { fill: theme.yoga.colors[fill] || fill })}
+    {...(stroke && { stroke: theme.yoga.colors[stroke] || stroke })}
     {...props}
   />
 );
@@ -43,8 +43,8 @@ IconWrapper.propTypes = {
 };
 
 IconWrapper.defaultProps = {
-  fill: 'stamina',
-  stroke: 'rgba(0, 0, 0, 0)',
+  fill: undefined,
+  stroke: undefined,
   width: 'xsmall',
   height: 'xsmall',
 };

@@ -1,3 +1,3 @@
-import IconWrapper from './IconWrapper';
+import IconWrapper from '../IconWrapper';
 
 export default IconWrapper;
