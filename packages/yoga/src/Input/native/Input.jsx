@@ -192,7 +192,7 @@ const Info = styled(Text.Regular)(
     font-size: ${input.helper.font.size}px;
 
     ${error ? `color: ${colors.feedback.attention[1]};` : ''}
-    ${disabled ? `color: ${colors.elements.backgroundAndDisabled};` : ''}
+    ${disabled ? `color: ${colors.text.disabled};` : ''}
     ${focused ? `color: ${input.helper.color.focus};` : ''}
     ${right ? 'margin-left: auto;' : ''}
   `,
