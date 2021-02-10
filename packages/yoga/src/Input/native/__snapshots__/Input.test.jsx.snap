@@ -270,6 +270,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
       value=""
     />
     <View
+      disabled={false}
       full={false}
       style={
         Array [
@@ -455,6 +456,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
       value=""
     />
     <View
+      disabled={false}
       full={false}
       style={
         Array [
