@@ -12,7 +12,7 @@ const Checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
       left: spacing.xxsmall,
     },
     font: {
-      size: fontSizes.small,
+      size: fontSizes.medium,
       color: colors.text.primary,
     },
   },
@@ -36,9 +36,9 @@ const Checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
     },
   },
   disabled: {
-    backgroundColor: colors.elements.backgroundAndDisabled,
+    backgroundColor: colors.elements.lineAndBorders,
     border: {
-      color: colors.elements.backgroundAndDisabled,
+      color: colors.elements.lineAndBorders,
     },
   },
 });
