@@ -15,7 +15,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   box-sizing: border-box;
   height: 52px;
   padding-top: 16px;
-  padding-right: 40px;
+  padding-right: 52px;
   padding-bottom: 16px;
   padding-left: 16px;
   color: #231B22;
@@ -30,28 +30,31 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
 
 .c2:focus ~ legend {
   max-width: 1000px;
-  padding: 0 2px;
+  -webkit-transition-property: max-width;
+  transition-property: max-width;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
 }
 
 .c2:focus ~ label {
   -webkit-transform: translateY(-24px);
   -ms-transform: translateY(-24px);
   transform: translateY(-24px);
-  -webkit-transition-property: -webkit-transform,font-size;
-  -webkit-transition-property: transform,font-size;
-  transition-property: transform,font-size;
+  -webkit-transition-property: -webkit-transform,font-size,color;
+  -webkit-transition-property: transform,font-size,color;
+  transition-property: transform,font-size,color;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 400;
   color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #F5F5FA;
+  color: #D7D7E0;
 }
 
 .c2::-webkit-input-placeholder {
@@ -97,6 +100,10 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   border-color: #231B22;
 }
 
+.c1:focus-within + .c6 {
+  color: #231B22;
+}
+
 .c4 {
   position: relative;
   padding: 0;
@@ -105,11 +112,15 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   height: 0;
   font-weight: normal;
   visibility: hidden;
+  -webkit-transition-property: max-width,padding;
+  transition-property: max-width,padding;
   font-size: 12px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
+  -webkit-transition-duration: 100ms;
+  transition-duration: 100ms;
 }
 
 .c5 {
