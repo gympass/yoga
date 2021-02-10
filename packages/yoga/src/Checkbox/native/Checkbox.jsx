@@ -69,7 +69,7 @@ const CheckBackground = styled.View(
       },
     },
   }) => {
-    let borderColor;
+    let borderColor = primary;
     let bgColor = 'transparent';
 
     if (error) {

@@ -31,7 +31,7 @@ const CheckMark = styled.div`
       },
     },
   }) => {
-    let borderColor;
+    let borderColor = primary;
     let bgColor = 'transparent';
     let checkColor = checkbox.checked.icon.color;
 

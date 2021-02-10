@@ -288,7 +288,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
       }
     >
       <Text
-        disabled={false}
         error="Error message"
         style={
           Array [
@@ -475,7 +474,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
       }
     >
       <Text
-        disabled={false}
         style={
           Array [
             Object {
@@ -492,7 +490,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
         Helper text
       </Text>
       <Text
-        disabled={false}
         right={true}
         style={
           Array [
