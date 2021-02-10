@@ -40,11 +40,11 @@ const Wrapper = styled.div`
 
       label {
         color: ${input.label.color.focus};
-        font-weight: ${input.label.font.weight.typed};
+        font-weight: ${input.label.font.weight};
       }
 
       legend {
-        font-weight: ${input.label.font.weight.typed};
+        font-weight: ${input.label.font.weight};
       }
       `
       : ''}
