@@ -4,6 +4,7 @@ import { Input } from '@gympass/yoga';
 
 const InputPage = () => {
   const [defaultValue, setDefaultValue] = useState('');
+  const [withErrorValue, setWithErrorValue] = useState('');
   const [emailValue, setEmailValue] = useState('');
   const [numberValue, setNumberValue] = useState('');
   const [passwordValue, setPasswordValue] = useState('');
@@ -22,17 +23,19 @@ const InputPage = () => {
       }}
     >
       <Input
-        label="With error"
-        error="Please, don't let this field empy"
+        label="Default"
+        helper="Helper Text"
+        maxLength={20}
         value={defaultValue}
         onChangeText={text => setDefaultValue(text)}
         onClean={cleaned => setDefaultValue(cleaned)}
       />
       <Input
-        label="Default"
-        value={defaultValue}
-        onChangeText={text => setDefaultValue(text)}
-        onClean={cleaned => setDefaultValue(cleaned)}
+        label="With error"
+        error="Please, don't let this field empy"
+        value={withErrorValue}
+        onChangeText={text => setWithErrorValue(text)}
+        onClean={cleaned => setWithErrorValue(cleaned)}
       />
       <Input.Email
         label="Email"
@@ -57,6 +60,7 @@ const InputPage = () => {
         onChangeText={text => setTelValue(text)}
         onClean={cleaned => setTelValue(cleaned)}
       />
+      <Input disabled label="Disabled" />
     </ScrollView>
   );
 };

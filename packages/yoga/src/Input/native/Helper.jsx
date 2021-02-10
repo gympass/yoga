@@ -24,6 +24,7 @@ const HelperWrapper = styled.View(
 const Info = styled(Text.Regular)(
   ({
     disabled,
+    focused,
     error,
     right,
     theme: {
@@ -36,24 +37,33 @@ const Info = styled(Text.Regular)(
     flex-shrink: ${right ? '0' : '1'};
     flex-wrap: wrap;
 
-    color: ${input.helper.color};
+    color: ${input.helper.color.default};
     font-size: ${input.helper.font.size}px;
 
     ${error ? `color: ${colors.feedback.attention[1]};` : ''}
-    ${disabled ? `color: ${colors.elements.backgroundAndDisabled}` : ''}
+    ${disabled ? `color: ${colors.text.disabled};` : ''}
+    ${focused ? `color: ${input.helper.color.focus};` : ''}
     ${right ? 'margin-left: auto;' : ''}
   `,
 );
 
-const Helper = ({ full, error, helper, disabled, maxLength, length }) => (
+const Helper = ({
+  full,
+  error,
+  helper,
+  disabled,
+  focused,
+  maxLength,
+  length,
+}) => (
   <HelperWrapper full={full} disabled={disabled}>
     {(error || helper) && (
-      <Info disabled={disabled} error={error}>
+      <Info disabled={disabled} focused={focused} error={error}>
         {error || helper}
       </Info>
     )}
     {maxLength && (
-      <Info disabled={disabled} error={error} right>
+      <Info disabled={disabled} focused={focused} error={error} right>
         {length}/{maxLength}
       </Info>
     )}
@@ -63,6 +73,7 @@ const Helper = ({ full, error, helper, disabled, maxLength, length }) => (
 Helper.propTypes = {
   disabled: bool,
   error: string,
+  focused: bool,
   full: bool,
   helper: string,
   maxLength: number,
@@ -72,6 +83,7 @@ Helper.propTypes = {
 Helper.defaultProps = {
   disabled: undefined,
   error: undefined,
+  focused: false,
   full: false,
   helper: undefined,
   maxLength: undefined,

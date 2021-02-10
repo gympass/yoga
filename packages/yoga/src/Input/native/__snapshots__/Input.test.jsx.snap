@@ -40,10 +40,9 @@ exports[`<Input /> Snapshots should match when input is focused 1`] = `
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 14,
-            "fontWeight": "400",
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 40,
+            "paddingRight": 52,
             "paddingTop": 16,
             "width": 320,
           },
@@ -83,7 +82,6 @@ exports[`<Input /> Snapshots should match when input is focused 1`] = `
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 14,
-            "fontWeight": "700",
             "paddingLeft": 4,
             "paddingRight": 4,
           }
@@ -137,10 +135,9 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
-            "fontWeight": "400",
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 40,
+            "paddingRight": 52,
             "paddingTop": 16,
             "width": 320,
           },
@@ -190,17 +187,16 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
       style={
         Array [
           Object {
-            "borderColor": "#F5F5FA",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
-            "color": "#F5F5FA",
+            "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 14,
-            "fontWeight": "400",
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 40,
+            "paddingRight": 52,
             "paddingTop": 16,
             "width": 320,
           },
@@ -258,10 +254,9 @@ exports[`<Input /> Snapshots should match with error 1`] = `
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
-            "fontWeight": "400",
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 40,
+            "paddingRight": 52,
             "paddingTop": 16,
             "width": 320,
           },
@@ -275,6 +270,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
       value=""
     />
     <View
+      disabled={false}
       full={false}
       style={
         Array [
@@ -288,7 +284,9 @@ exports[`<Input /> Snapshots should match with error 1`] = `
       }
     >
       <Text
+        disabled={false}
         error="Error message"
+        focused={false}
         style={
           Array [
             Object {
@@ -349,10 +347,9 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
-            "fontWeight": "400",
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 40,
+            "paddingRight": 52,
             "paddingTop": 16,
             "width": "100%",
           },
@@ -391,7 +388,6 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
-            "fontWeight": "400",
           }
         }
         typed={false}
@@ -444,10 +440,9 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
-            "fontWeight": "400",
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 40,
+            "paddingRight": 52,
             "paddingTop": 16,
             "width": 320,
           },
@@ -461,6 +456,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
       value=""
     />
     <View
+      disabled={false}
       full={false}
       style={
         Array [
@@ -474,6 +470,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
       }
     >
       <Text
+        disabled={false}
+        focused={false}
         style={
           Array [
             Object {
@@ -490,6 +488,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
         Helper text
       </Text>
       <Text
+        disabled={false}
+        focused={false}
         right={true}
         style={
           Array [
@@ -554,10 +554,9 @@ exports[`<Input /> Snapshots should match with label 1`] = `
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
-            "fontWeight": "400",
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 40,
+            "paddingRight": 52,
             "paddingTop": 16,
             "width": 320,
           },
@@ -596,7 +595,6 @@ exports[`<Input /> Snapshots should match with label 1`] = `
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
-            "fontWeight": "400",
           }
         }
         typed={false}

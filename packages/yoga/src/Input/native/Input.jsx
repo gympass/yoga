@@ -14,7 +14,7 @@ import { Close } from '@gympass/yoga-icons';
 
 import Helper from './Helper';
 
-const ICON_SIZE = 24;
+const ICON_SIZE = 20;
 
 const Wrapper = styled.View(
   ({
@@ -52,7 +52,7 @@ const Field = styled.TextInput(
     padding-top: ${input.padding.top}px;
     padding-right: ${
       cleanable || textContentType === 'password'
-        ? ICON_SIZE + input.padding.right
+        ? ICON_SIZE + input.padding.right * 2
         : input.padding.right
     }px;
     padding-bottom: ${input.padding.bottom}px;
@@ -64,7 +64,6 @@ const Field = styled.TextInput(
     color: ${input.font.color.default};
     font-family: ${baseFont.family};
     font-size: ${input.font.size}px;
-    font-weight: ${input.font.weight};
 
     ${focus ? `border-color: ${input.border.color.typed};` : ''}
     ${focus || typed ? `color: ${input.font.color.focus};` : ''}
@@ -73,8 +72,8 @@ const Field = styled.TextInput(
     ${
       disabled
         ? `
-          border-color: ${colors.elements.backgroundAndDisabled};
-          color: ${colors.elements.backgroundAndDisabled};
+          border-color: ${colors.elements.lineAndBorders};
+          color: ${colors.text.disabled};
         `
         : ''
     }
@@ -117,14 +116,13 @@ const Label = styled(Animated.Text)(
     background-color: ${colors.white};
 
     font-family: ${baseFont.family};
-    font-weight: ${input.label.font.weight.default};
     color: ${input.label.color.default};
 
     ${
       focus
         ? `
           color: ${input.label.color.focus};
-          font-weight: ${input.label.font.weight.typed};`
+        `
         : ''
     }
 
@@ -138,7 +136,7 @@ const Label = styled(Animated.Text)(
     }
 
     ${error ? `color: ${colors.feedback.attention[1]};` : ''}
-    ${disabled ? `color: ${colors.elements.backgroundAndDisabled};` : ''}
+    ${disabled ? `color: ${colors.text.disabled};` : ''}
   `,
 );
 
@@ -299,7 +297,8 @@ const Input = ({
           full={full}
           error={error}
           helper={helper}
-          disable={disabled}
+          focused={focused}
+          disabled={disabled}
           maxLength={maxLength}
           length={inputValue.length}
         />
