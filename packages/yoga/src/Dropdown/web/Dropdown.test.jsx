@@ -28,7 +28,7 @@ describe('<Dropdown />', () => {
   it('should match snapshot when disabled', () => {
     const { container } = render(
       <ThemeProvider>
-        <Dropdown disabled {...dropdownProps} />
+        <Dropdown {...dropdownProps} disabled />
       </ThemeProvider>,
     );
     expect(container).toMatchSnapshot();
@@ -37,7 +37,7 @@ describe('<Dropdown />', () => {
   it('should match snapshot when full', () => {
     const { container } = render(
       <ThemeProvider>
-        <Dropdown full {...dropdownProps} />
+        <Dropdown {...dropdownProps} full />
       </ThemeProvider>,
     );
     expect(container).toMatchSnapshot();
@@ -54,9 +54,19 @@ describe('<Dropdown />', () => {
 
     const { container } = render(
       <ThemeProvider>
-        <Dropdown disabled {...props} />
+        <Dropdown {...props} disabled />
       </ThemeProvider>,
     );
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with error', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Dropdown {...dropdownProps} error="Please, select one activity" />
+      </ThemeProvider>,
+    );
+
     expect(container).toMatchSnapshot();
   });
 });

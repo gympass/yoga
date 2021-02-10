@@ -12,7 +12,7 @@ import {
 import styled, { withTheme } from 'styled-components';
 import { Close } from '@gympass/yoga-icons';
 
-import Text from '../../Text';
+import Helper from './Helper';
 
 const ICON_SIZE = 20;
 
@@ -155,49 +155,6 @@ const CloseIcon = styled.View(
   `,
 );
 
-const Helper = styled.View(
-  ({
-    full,
-    theme: {
-      yoga: {
-        components: { input },
-      },
-    },
-  }) => `
-    width: ${full ? '100%' : `${input.width}px`};
-    max-width: ${input.width}px;
-    flex-direction: row;
-
-    margin-top: ${input.helper.margin.top}px;
-  `,
-);
-
-const Info = styled(Text.Regular)(
-  ({
-    disabled,
-    focused,
-    error,
-    right,
-    theme: {
-      yoga: {
-        colors,
-        components: { input },
-      },
-    },
-  }) => `
-    flex-shrink: ${right ? '0' : '1'};
-    flex-wrap: wrap;
-
-    color: ${input.helper.color.default};
-    font-size: ${input.helper.font.size}px;
-
-    ${error ? `color: ${colors.feedback.attention[1]};` : ''}
-    ${disabled ? `color: ${colors.text.disabled};` : ''}
-    ${focused ? `color: ${input.helper.color.focus};` : ''}
-    ${right ? 'margin-left: auto;' : ''}
-  `,
-);
-
 const Input = ({
   cleanable,
   disabled,
@@ -336,18 +293,15 @@ const Input = ({
         </TouchableWithoutFeedback>
       )}
       {(helper || maxLength || error) && (
-        <Helper full={full}>
-          {(error || helper) && (
-            <Info focused={focused} disabled={disabled} error={error}>
-              {error || helper}
-            </Info>
-          )}
-          {maxLength && (
-            <Info focused={focused} disabled={disabled} error={error} right>
-              {inputValue.length}/{maxLength}
-            </Info>
-          )}
-        </Helper>
+        <Helper
+          full={full}
+          error={error}
+          helper={helper}
+          focused={focused}
+          disabled={disabled}
+          maxLength={maxLength}
+          length={inputValue.length}
+        />
       )}
     </Wrapper>
   );

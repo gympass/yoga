@@ -61,5 +61,15 @@ describe('<Dropdown />', () => {
       );
       expect(container).toMatchSnapshot();
     });
+
+    it('should match snapshot with error', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Dropdown {...dropdownProps} error="Please, select one activity" />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
   });
 });
