@@ -21,7 +21,7 @@ const Label = styled.label`
     left: ${input.padding.left}px;
 
     font-size: ${input.label.font.size.default}px;
-    font-weight: ${input.label.font.weight.default};
+    font-weight: ${input.label.font.weight};
     color: ${input.label.color.default};
 
     transition-property: transform, font-size;
@@ -29,7 +29,7 @@ const Label = styled.label`
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
 
     ${error ? `color: ${colors.feedback.attention[1]};` : ''}
-    ${disabled ? `color: ${colors.elements.backgroundAndDisabled};` : ''}
+    ${disabled ? `color: ${colors.text.disabled};` : ''}
   `}
 `;
 

@@ -24,8 +24,10 @@ const Control = styled.div`
 
 const IconWrapper = styled.div`
   ${({
+    disabled,
     theme: {
       yoga: {
+        colors,
         spacing,
         components: { input },
       },
@@ -51,6 +53,18 @@ const IconWrapper = styled.div`
       height: ${input.height}px;
       width: 20px;
       fill: ${input.font.color.default};
+    }
+
+    ${
+      disabled
+        ? `
+      cursor: not-allowed;
+      pointer-events: none;
+      svg {
+        fill: ${colors.text.disabled};
+      }
+    `
+        : ''
     }
   `}
 `;

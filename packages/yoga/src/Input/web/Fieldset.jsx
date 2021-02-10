@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Wrapper as HelperWrapper } from './Helper';
 
 const Fieldset = styled.fieldset`
   position: relative;
@@ -33,11 +34,11 @@ const Fieldset = styled.fieldset`
         error ? colors.feedback.attention[1] : input.border.color.typed
       };
 
-      ${
-        disabled
-          ? `border-color: ${colors.elements.backgroundAndDisabled};`
-          : ''
-      }
+      ${disabled ? `border-color: ${colors.elements.lineAndBorders};` : ''}
+    }
+
+    &:focus-within + ${HelperWrapper} {
+      color: ${input.helper.color.focus};
     }
   `}
 `;
