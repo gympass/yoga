@@ -60,37 +60,58 @@ const CheckBackground = styled.View(
   ({
     checked,
     disabled,
+    inverted,
     error,
     theme: {
       yoga: {
-        colors: { primary, feedback },
+        colors: { primary, feedback, elements, white },
         components: { checkbox },
       },
     },
-  }) => `
-    position: absolute;
+  }) => {
+    let borderColor;
+    let bgColor = 'transparent';
 
-    width: ${checkbox.size}px;
-    height: ${checkbox.size}px;
+    if (error) {
+      [, borderColor] = feedback.attention;
 
-    border-radius: ${checkbox.border.radius}px;
-    border-width: ${checkbox.border.width}px;
-    border-style: solid;
+      if (checked) {
+        [, bgColor] = feedback.attention;
+      }
+    } else if (disabled) {
+      borderColor = checkbox.disabled.border.color;
 
-    ${checked ? `background-color: ${primary};` : ''}
+      if (checked) {
+        bgColor = checkbox.disabled.backgroundColor;
+        borderColor = elements.lineAndBorders;
+      }
+    } else if (checked) {
+      borderColor = primary;
+      bgColor = primary;
 
-    border-color: ${disabled ? checkbox.disabled.border.color : primary};
-
-    ${
-      disabled && checked
-        ? `background-color: ${checkbox.disabled.backgroundColor};`
-        : ''
+      if (inverted) {
+        bgColor = white;
+        borderColor = white;
+      }
+    } else if (inverted) {
+      borderColor = white;
     }
 
-    ${error ? `border-color: ${feedback.attention[1]};` : ''}
+    return `
+      position: absolute;
 
-    ${error && checked ? `background-color: ${feedback.attention[1]};` : ''}
-  `,
+      width: ${checkbox.size}px;
+      height: ${checkbox.size}px;
+
+      border-radius: ${checkbox.border.radius}px;
+      border-width: ${checkbox.border.width}px;
+      border-style: solid;
+
+      background-color: ${bgColor};
+
+      border-color: ${borderColor};
+    `;
+  },
 );
 
 const Shadow = styled.View(
@@ -142,9 +163,11 @@ const Checkbox = ({
   style,
   onPressIn,
   onPressOut,
+  inverted,
   theme: {
     yoga: {
       components: { checkbox },
+      colors,
     },
   },
   ...rest
@@ -173,11 +196,12 @@ const Checkbox = ({
                 checked,
                 error,
                 pressed,
+                inverted,
               }}
             />
             {checked && (
               <Check
-                fill={checkbox.checked.icon.color}
+                fill={inverted ? colors.primary : checkbox.checked.icon.color}
                 style={{ position: 'absolute' }}
                 width={24}
                 height={24}
@@ -203,6 +227,7 @@ Checkbox.propTypes = {
   helper: string,
   checked: bool,
   disabled: bool,
+  inverted: bool,
   error: string,
   style: shape({}),
   onPressIn: func,
@@ -214,6 +239,7 @@ Checkbox.defaultProps = {
   helper: undefined,
   checked: false,
   disabled: false,
+  inverted: false,
   error: undefined,
   style: {},
   onPressIn: () => {},
