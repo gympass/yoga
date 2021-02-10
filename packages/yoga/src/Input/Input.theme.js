@@ -44,14 +44,14 @@ const Input = ({
         default: fontSizes.small,
         typed: fontSizes.xsmall,
       },
-      weight: {
-        default: fontWeights.regular,
-        typed: fontWeights.bold,
-      },
+      weight: fontWeights.regular,
     },
   },
   helper: {
-    color: colors.text.secondary,
+    color: {
+      default: colors.text.secondary,
+      focus: colors.text.primary,
+    },
     margin: {
       top: spacing.xxxsmall,
     },
