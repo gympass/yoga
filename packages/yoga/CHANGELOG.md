@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0-alpha.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.0...@gympass/yoga@5.2.0-alpha.1) (2021-02-11)
+
+
+### Features
+
+* **iconwrapper:** add Icon wrapper abstraction component ([a1c19ea](https://github.com/Gympass/yoga/commit/a1c19ead37f8e592101cf89bcbd749d9e491533a))
+
+
+
+
+
 # [5.2.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.1.1-alpha.4...@gympass/yoga@5.2.0-alpha.0) (2021-02-04)
 
 

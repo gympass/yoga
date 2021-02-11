@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.9-alpha.5...@gympass/yoga-labnative@0.17.0-alpha.0) (2021-02-11)
+
+
+### Features
+
+* **iconwrapper:** add Icon wrapper abstraction component ([a1c19ea](https://github.com/Gympass/yoga/commit/a1c19ead37f8e592101cf89bcbd749d9e491533a))
+
+
+
+
+
 ## [0.16.9-alpha.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.9-alpha.4...@gympass/yoga-labnative@0.16.9-alpha.5) (2021-02-04)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

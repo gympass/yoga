@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.9-alpha.5...@gympass/yoga-doc@1.3.0-alpha.0) (2021-02-11)
+
+
+### Bug Fixes
+
+* **icon-wrapper:** fix name collision of IconWrapper and unnecessary imports ([031978e](https://github.com/Gympass/yoga/commit/031978e3b5f2297ef5ef6657eca15b6028f36eac))
+* **props-table:** enable the omission of a platform for PropsTable ([c4c78e9](https://github.com/Gympass/yoga/commit/c4c78e9813873d2ced5e62f9856ae088e76c6269))
+
+
+### Features
+
+* **iconwrapper:** add Icon wrapper abstraction component ([a1c19ea](https://github.com/Gympass/yoga/commit/a1c19ead37f8e592101cf89bcbd749d9e491533a))
+
+
+
+
+
 ## [1.2.9-alpha.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.9-alpha.4...@gympass/yoga-doc@1.2.9-alpha.5) (2021-02-04)
 
 **Note:** Version bump only for package @gympass/yoga-doc
