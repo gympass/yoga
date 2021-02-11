@@ -13,7 +13,7 @@ import Input from './Input';
 import Progress from './Progress';
 import Dropdown from './Dropdown';
 import TextArea from './TextArea';
-import IconWrapper from './IconWrapper';
+import Icon from './Icon';
 
 export {
   ThemeProvider,
@@ -36,5 +36,5 @@ export {
   Progress,
   Dropdown,
   TextArea,
-  IconWrapper,
+  Icon,
 };

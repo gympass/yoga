@@ -15,7 +15,7 @@ import Progress from './Progress';
 import Dropdown from './Dropdown';
 import TextArea from './TextArea';
 import AutoComplete from './AutoComplete';
-import IconWrapper from './IconWrapper';
+import Icon from './Icon';
 
 export {
   ThemeProvider,
@@ -43,5 +43,5 @@ export {
   Dropdown,
   TextArea,
   AutoComplete,
-  IconWrapper,
+  Icon,
 };

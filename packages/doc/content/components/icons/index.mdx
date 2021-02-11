@@ -10,7 +10,7 @@ import styled from 'styled-components';
 import IconsWeb from './icons-web.mdx';
 import IconsNative from './icons-native.mdx';
 
-export const IconsContainer = styled.div`
+export const IconWrapper = styled.div`
   display: inline-flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -23,10 +23,10 @@ export const IconsContainer = styled.div`
 export const AllIcons = () => (
   <>
     {Object.entries(YogaIcons).map(([name, Component]) => (
-      <IconsContainer key={name}>
+      <IconWrapper key={name}>
         <Component width={16} height={16} />
         {name}
-      </IconsContainer>
+      </IconWrapper>
     ))}
   </>
 );

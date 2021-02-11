@@ -1,7 +1,7 @@
 import React from 'react';
-import { render } from '@testing-library/react-native';
+import { render } from '@testing-library/react';
 
-import { ThemeProvider, IconWrapper } from '../..';
+import { ThemeProvider, Icon } from '../..';
 
 describe('Snapshots', () => {
   it('should match snapshot', () => {
@@ -12,7 +12,7 @@ describe('Snapshots', () => {
     );
     const { container } = render(
       <ThemeProvider>
-        <IconWrapper as={Circle} width="small" height="small" fill="stamina" />
+        <Icon as={Circle} width="small" height="small" fill="stamina" />
       </ThemeProvider>,
     );
 
