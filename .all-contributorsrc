@@ -129,6 +129,15 @@
         "ideas",
         "doc"
       ]
+    },
+    {
+      "login": "andrerocha22",
+      "name": "André Rocha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39251409?v=4",
+      "profile": "https://github.com/andrerocha22",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
