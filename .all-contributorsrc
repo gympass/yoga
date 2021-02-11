@@ -118,6 +118,17 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "coelhucas",
+      "name": "Lucas Coelho",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28108272?v=4",
+      "profile": "https://lucascoelho.dev/",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
