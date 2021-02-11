@@ -37,13 +37,17 @@ const commonSizes = [
 Icon.propTypes = {
   /** SVG to be rendered. */
   as: elementType.isRequired,
-  /** Fill color. Use it as one of theme.colors tokens (vibing, neutral, stamina...) */
+  /** Fill color. Use it as one of theme.colors
+   * tokens (vibing, neutral, stamina...) */
   fill: string,
-  /** Stroke color. Use it as one of theme.colors tokens (vibing, neutral, stamina...) */
+  /** Stroke color. Use it as one of theme.colors
+   * tokens (vibing, neutral, stamina...) */
   stroke: string,
-  /** Horizontal size of the SVG. Use it as one of theme.spacing tokens (xxsmall, small, medium...) */
+  /** Horizontal size of the SVG. Use it as one of
+   * theme.spacing tokens (xxsmall, small, medium...) */
   width: oneOf([...commonSizes, instanceOf(Number)]),
-  /** Vertical size of the SVG. Use it as one of theme.spacing tokens (xxsmall, small, medium...) */
+  /** Vertical size of the SVG. Use it as one of
+   * theme.spacing tokens (xxsmall, small, medium...) */
   height: oneOf([...commonSizes, instanceOf(Number)]),
 };
 
