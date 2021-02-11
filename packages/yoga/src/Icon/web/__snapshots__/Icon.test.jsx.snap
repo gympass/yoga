@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshots should match snapshot 1`] = `
+<div>
+  <svg
+    fill="#231B22"
+    height="16"
+    width="16"
+  >
+    <circle
+      cx="16"
+      cy="16"
+      r="16"
+    />
+  </svg>
+</div>
+`;

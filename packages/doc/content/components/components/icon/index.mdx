@@ -1,0 +1,33 @@
+---
+title: 'Icon'
+metaTitle: 'Icon'
+metaDescription: 'Icon Component'
+---
+
+
+import IconWeb from './icon-web.mdx';
+import IconNative from './icon-native.mdx';
+
+
+# Icon
+
+This icon works as a wrapper for our icons abstracting color, size and stroke usage, which are all received as strings
+representing a spacing token name.
+
+* Refer to [Icons](icons) to check already existing icons which can be used in conjunction with this component.
+* Refer to [spacing](../guidelines/tokens/spacing) tokens to check possible string values for both width and height dimensions.
+* Refer to [colors](../guidelines/tokens/colors) tokens to check possible string values for both fill and stroke properties.
+
+<TabbedView>
+  <Tab title="Web">
+    <IconWeb />
+  </Tab>
+
+  <Tab title="Native">
+    <IconNative />
+  </Tab>
+</TabbedView>
+
+### Props
+
+<PropsTable component="Icon" />
