@@ -1,5 +1,5 @@
 import React from 'react';
-import { oneOf, elementType, string } from 'prop-types';
+import { oneOf, elementType, string, instanceOf } from 'prop-types';
 import { withTheme } from 'styled-components';
 
 const Icon = ({
@@ -10,17 +10,15 @@ const Icon = ({
   stroke,
   theme,
   ...props
-}) => {
-  return (
-    <Component
-      width={theme.yoga.spacing[width] || width}
-      height={theme.yoga.spacing[height] || height}
-      {...(fill && { fill: theme.yoga.colors[fill] || fill })}
-      {...(stroke && { stroke: theme.yoga.colors[stroke] || stroke })}
-      {...props}
-    />
-  );
-};
+}) => (
+  <Component
+    width={theme.yoga.spacing[width] || width}
+    height={theme.yoga.spacing[height] || height}
+    {...(fill && { fill: theme.yoga.colors[fill] || fill })}
+    {...(stroke && { stroke: theme.yoga.colors[stroke] || stroke })}
+    {...props}
+  />
+);
 
 const commonSizes = [
   'xxxsmall',
@@ -37,18 +35,23 @@ const commonSizes = [
 ];
 
 Icon.propTypes = {
+  /** SVG to be rendered. */
   as: elementType.isRequired,
+  /** Fill color. Use it as one of theme.colors tokens (vibing, neutral, stamina...) */
   fill: string,
+  /** Stroke color. Use it as one of theme.colors tokens (vibing, neutral, stamina...) */
   stroke: string,
-  width: oneOf(commonSizes),
-  height: oneOf(commonSizes),
+  /** Horizontal size of the SVG. Use it as one of theme.spacing tokens (xxsmall, small, medium...) */
+  width: oneOf([...commonSizes, instanceOf(Number)]),
+  /** Vertical size of the SVG. Use it as one of theme.spacing tokens (xxsmall, small, medium...) */
+  height: oneOf([...commonSizes, instanceOf(Number)]),
 };
 
 Icon.defaultProps = {
   fill: undefined,
   stroke: undefined,
-  width: 'xsmall',
-  height: 'xsmall',
+  width: undefined,
+  height: undefined,
 };
 
 export default withTheme(Icon);
