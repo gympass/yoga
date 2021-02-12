@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0-alpha.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.2...@gympass/yoga@5.2.0-alpha.3) (2021-02-12)
+
+
+### Bug Fixes
+
+* **icon:** apply width and height conditionally ([18689e1](https://github.com/Gympass/yoga/commit/18689e17d0dc80f43b3b4cf40f7d07e9a43c9394))
+
+
+
+
+
 # [5.2.0-alpha.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.1...@gympass/yoga@5.2.0-alpha.2) (2021-02-11)
 
 **Note:** Version bump only for package @gympass/yoga
