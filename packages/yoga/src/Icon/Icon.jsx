@@ -12,8 +12,8 @@ const Icon = ({
   ...props
 }) => (
   <Component
-    width={theme.yoga.spacing[width] || width}
-    height={theme.yoga.spacing[height] || height}
+    {...(width && { width: theme.yoga.spacing[width] || width })}
+    {...(height && { height: theme.yoga.spacing[height] || height })}
     {...(fill && { fill: theme.yoga.colors[fill] || fill })}
     {...(stroke && { stroke: theme.yoga.colors[stroke] || stroke })}
     {...props}
