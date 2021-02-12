@@ -53,6 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://geovanasilva.dev/"><img src="https://avatars.githubusercontent.com/u/13040713?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Geovana Silva</b></sub></a><br /><a href="https://github.com/Gympass/yoga/issues?q=author%3Ageovanasilva" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://lucascoelho.dev/"><img src="https://avatars.githubusercontent.com/u/28108272?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lucas Coelho</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=coelhucas" title="Code">💻</a> <a href="#ideas-coelhucas" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/Gympass/yoga/commits?author=coelhucas" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/andrerocha22"><img src="https://avatars.githubusercontent.com/u/39251409?v=4?s=100" width="100px;" alt=""/><br /><sub><b>André Rocha</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=andrerocha22" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/katharinedepaulo"><img src="https://avatars.githubusercontent.com/u/57157659?v=4?s=100" width="100px;" alt=""/><br /><sub><b>katharinedepaulo</b></sub></a><br /><a href="#ideas-katharinedepaulo" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
