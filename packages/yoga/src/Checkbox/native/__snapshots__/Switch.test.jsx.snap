@@ -16,7 +16,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
       disabled={false}
       style={
         Object {
-          "backgroundColor": "rgba(215, 215, 224, 1)",
+          "backgroundColor": "rgba(152, 152, 166, 1)",
           "borderRadius": 9999,
           "display": "flex",
           "height": 24,
@@ -32,13 +32,13 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 9999,
-            "height": 16,
+            "height": 20,
             "transform": Array [
               Object {
-                "translateX": 4,
+                "translateX": 2,
               },
             ],
-            "width": 16,
+            "width": 20,
           }
         }
       />
@@ -79,13 +79,13 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 9999,
-            "height": 16,
+            "height": 20,
             "transform": Array [
               Object {
-                "translateX": 28,
+                "translateX": 26,
               },
             ],
-            "width": 16,
+            "width": 20,
           }
         }
       />
@@ -124,15 +124,15 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         disabled={true}
         style={
           Object {
-            "backgroundColor": "#D7D7E0",
+            "backgroundColor": undefined,
             "borderRadius": 9999,
-            "height": 16,
+            "height": 20,
             "transform": Array [
               Object {
-                "translateX": 4,
+                "translateX": 2,
               },
             ],
-            "width": 16,
+            "width": 20,
           }
         }
       />
@@ -171,15 +171,15 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         disabled={true}
         style={
           Object {
-            "backgroundColor": "#D7D7E0",
+            "backgroundColor": undefined,
             "borderRadius": 9999,
-            "height": 16,
+            "height": 20,
             "transform": Array [
               Object {
-                "translateX": 28,
+                "translateX": 26,
               },
             ],
-            "width": 16,
+            "width": 20,
           }
         }
       />
