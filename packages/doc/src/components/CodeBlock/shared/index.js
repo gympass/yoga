@@ -1,3 +1,3 @@
-import injectImport from './functions';
+import { injectImport, getCodeFragments } from './functions';
 
-export default injectImport;
+export { injectImport, getCodeFragments };

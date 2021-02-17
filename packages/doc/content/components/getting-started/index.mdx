@@ -5,6 +5,9 @@ metaDescription: 'This is the Getting started'
 order: 0
 ---
 
+import GettingStartedWeb from './default-web.mdx';
+import GettingStartedNative from './default-native.mdx';
+
 ## Getting Started
 
 Gympass design-system's follows design guidelines specification, we developed a React and React Native UI library that contains a set of high quality components that defines our interfaces.
@@ -36,3 +39,13 @@ const App = () => (
   </ThemeProvider>
 );
 ```
+
+<TabbedView>
+  <Tab title="Web">
+    <GettingStartedWeb />
+  </Tab>
+
+  <Tab title="Native">
+    <GettingStartedNative />
+  </Tab>
+</TabbedView>

@@ -1,4 +1,4 @@
-import injectImport from '..';
+import { injectImport } from '..';
 
 const native = (imports, code, theme) => `import React from 'react';
 import styled from 'styled-components';

@@ -7,74 +7,111 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+## [1.4.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.4.0...@gympass/yoga-doc@1.4.1) (2021-02-09)
 
-
-
+**Note:** Version bump only for package @gympass/yoga-doc
 
 # [1.3.0-alpha.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.3.0-alpha.0...@gympass/yoga-doc@1.3.0-alpha.1) (2021-02-11)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
-
-
-
-
-# [1.3.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.9-alpha.5...@gympass/yoga-doc@1.3.0-alpha.0) (2021-02-11)
-
+# [1.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.3.0...@gympass/yoga-doc@1.4.0) (2020-12-16)
 
 ### Bug Fixes
 
-* **icon-wrapper:** fix name collision of IconWrapper and unnecessary imports ([031978e](https://github.com/Gympass/yoga/commit/031978e3b5f2297ef5ef6657eca15b6028f36eac))
-* **props-table:** enable the omission of a platform for PropsTable ([c4c78e9](https://github.com/Gympass/yoga/commit/c4c78e9813873d2ced5e62f9856ae088e76c6269))
-
+- **doc:** fix "injectImport" import ([3fa288c](https://github.com/Gympass/yoga/commit/3fa288c6089056e40461d40eaadbbfffbb25dd98))
+- **docs:** fix codesandbox code generation when it's a "state" type ([57e259e](https://github.com/Gympass/yoga/commit/57e259e1307d56c5594a525343086fc59e188a06))
 
 ### Features
 
-* **iconwrapper:** add Icon wrapper abstraction component ([a1c19ea](https://github.com/Gympass/yoga/commit/a1c19ead37f8e592101cf89bcbd749d9e491533a))
+- **doc:** get components that are inside brackets ([7c1f2ef](https://github.com/Gympass/yoga/commit/7c1f2ef5d893351f0836e6ed39cf080914c3ffd8))
 
+# [1.3.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.9-alpha.5...@gympass/yoga-doc@1.3.0-alpha.0) (2021-02-11)
 
+### Bug Fixes
 
+- **icon-wrapper:** fix name collision of IconWrapper and unnecessary imports ([031978e](https://github.com/Gympass/yoga/commit/031978e3b5f2297ef5ef6657eca15b6028f36eac))
+- **props-table:** enable the omission of a platform for PropsTable ([c4c78e9](https://github.com/Gympass/yoga/commit/c4c78e9813873d2ced5e62f9856ae088e76c6269))
 
+### Features
+
+- **iconwrapper:** add Icon wrapper abstraction component ([a1c19ea](https://github.com/Gympass/yoga/commit/a1c19ead37f8e592101cf89bcbd749d9e491533a))
+
+# [1.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.13...@gympass/yoga-doc@1.3.0) (2020-12-11)
+
+### Features
+
+- **doc:** providing @gympass/yoga-helpers support ([81ccc32](https://github.com/Gympass/yoga/commit/81ccc321d55e086c65d58ee6dd36a05f6f156ba4))
 
 ## [1.2.9-alpha.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.9-alpha.4...@gympass/yoga-doc@1.2.9-alpha.5) (2021-02-04)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+## [1.2.13](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.12...@gympass/yoga-doc@1.2.13) (2020-12-10)
 
-
-
+**Note:** Version bump only for package @gympass/yoga-doc
 
 ## 1.2.9-alpha.4 (2021-01-27)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+## [1.2.12](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.11...@gympass/yoga-doc@1.2.12) (2020-11-26)
 
+**Note:** Version bump only for package @gympass/yoga-doc
 
+## [1.2.11](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.10...@gympass/yoga-doc@1.2.11) (2020-11-18)
 
+**Note:** Version bump only for package @gympass/yoga-doc
 
 ## 1.2.9-alpha.3 (2021-01-22)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+## [1.2.10](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.9...@gympass/yoga-doc@1.2.10) (2020-11-11)
 
+**Note:** Version bump only for package @gympass/yoga-doc
 
+## [1.2.9](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.8...@gympass/yoga-doc@1.2.9) (2020-10-23)
 
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [1.2.8](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.7...@gympass/yoga-doc@1.2.8) (2020-10-15)
+
+**Note:** Version bump only for package @gympass/yoga-doc
 
 ## 1.2.9-alpha.2 (2020-12-03)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+## [1.2.7](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.6...@gympass/yoga-doc@1.2.7) (2020-10-02)
 
+**Note:** Version bump only for package @gympass/yoga-doc
 
+## [1.2.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.5...@gympass/yoga-doc@1.2.6) (2020-09-24)
 
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [1.2.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.4...@gympass/yoga-doc@1.2.5) (2020-09-21)
+
+**Note:** Version bump only for package @gympass/yoga-doc
 
 ## 1.2.9-alpha.1 (2020-10-28)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+## [1.2.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.3...@gympass/yoga-doc@1.2.4) (2020-09-10)
 
+**Note:** Version bump only for package @gympass/yoga-doc
 
+## [1.2.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.2...@gympass/yoga-doc@1.2.3) (2020-09-03)
 
+### Bug Fixes
+
+- **reactlive:** remove unecessary id ([f8eb08a](https://github.com/Gympass/yoga/commit/f8eb08a419da80c4ff31c3ec6a645b809424e3e3))
+
+## [1.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.1...@gympass/yoga-doc@1.2.2) (2020-08-26)
+
+**Note:** Version bump only for package @gympass/yoga-doc
 
 ## 1.2.9-alpha.0 (2020-10-23)
 
@@ -93,6 +130,24 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 **Note:** Version bump only for package @gympass/yoga-doc
 
 ## [1.2.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.4...@gympass/yoga-doc@1.2.5) (2020-09-21)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [1.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.2.0...@gympass/yoga-doc@1.2.1) (2020-08-25)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+# [1.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.1.15...@gympass/yoga-doc@1.2.0) (2020-08-12)
+
+### Features
+
+- **doc:** use Rubik as font-family ([078651f](https://github.com/Gympass/yoga/commit/078651f3dbfcb52f5df58335368ba9fb093c734c))
+
+## [1.1.15](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.1.14...@gympass/yoga-doc@1.1.15) (2020-06-24)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [1.1.14](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.1.13...@gympass/yoga-doc@1.1.14) (2020-06-23)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
@@ -129,6 +184,18 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 **Note:** Version bump only for package @gympass/yoga-doc
 
 ## [1.1.13](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.1.12...@gympass/yoga-doc@1.1.13) (2020-06-23)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [1.1.12](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.1.11...@gympass/yoga-doc@1.1.12) (2020-06-18)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [1.1.11](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.1.10...@gympass/yoga-doc@1.1.11) (2020-06-16)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+## [1.1.10](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.1.9...@gympass/yoga-doc@1.1.10) (2020-06-15)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 

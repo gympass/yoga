@@ -211,9 +211,9 @@ const Input = ({
   textContentType,
   value,
   onBlur,
-  onChangeText,
   onClean,
   onFocus,
+  hideMaxLength,
   theme: {
     yoga: {
       colors,
@@ -224,11 +224,9 @@ const Input = ({
   ...props
 }) => {
   const [focused, setFocused] = useState(false);
-  const [inputValue, setInputValue] = useState(value);
   const [typed, setTyped] = useState(Boolean(value));
 
   useEffect(() => {
-    setInputValue(value);
     setTyped(Boolean(value));
   }, [value]);
 
@@ -289,12 +287,7 @@ const Input = ({
         }}
         textContentType={textContentType}
         typed={typed}
-        value={inputValue}
-        onChangeText={text => {
-          setTyped(Boolean(text));
-          setInputValue(text);
-          onChangeText(text);
-        }}
+        value={value}
         onFocus={e => {
           setFocused(true);
           onFocus(e);
@@ -342,9 +335,9 @@ const Input = ({
               {error || helper}
             </Info>
           )}
-          {maxLength && (
+          {!hideMaxLength && maxLength && (
             <Info disabled={disabled} error={error} right>
-              {inputValue.length}/{maxLength}
+              {value.length}/{maxLength}
             </Info>
           )}
         </Helper>
@@ -369,10 +362,10 @@ Input.propTypes = {
   value: oneOfType([string, number]),
   style: oneOfType([shape({}), arrayOf(shape({}))]),
   onBlur: func,
-  onChangeText: func,
   /** callback invoked when close icon is clicked */
   onClean: func,
   onFocus: func,
+  hideMaxLength: bool,
 };
 
 Input.defaultProps = {
@@ -388,9 +381,9 @@ Input.defaultProps = {
   textContentType: undefined,
   value: '',
   onBlur: () => {},
-  onChangeText: () => {},
   onClean: () => {},
   onFocus: () => {},
+  hideMaxLength: false,
 };
 
 export default withTheme(Input);

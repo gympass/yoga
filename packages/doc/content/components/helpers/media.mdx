@@ -1,0 +1,142 @@
+---
+title: 'Media'
+metaTitle: 'Media'
+metaDescription: 'Functions to help you dealing with responsive design'
+---
+
+import { Link } from 'gatsby';
+
+## Media
+
+The `media` module makes easy to write media queries using `styled-components`.
+
+It has a helper for each breakpoint, defined in our <Link to="/guidelines/tokens/breakpoints">guidelines</Link>:
+`xxs`, `xs`, `sm`, `md`, `lg`, `xl`, `xxl`, and `xxxl`.
+
+### Installing
+
+```bash type=highlight
+yarn add @gympass/yoga-helpers
+
+// or
+
+npm install @gympass/yoga-helpers
+```
+
+<br />
+
+### API
+
+```javascript type=highlight
+import styled from 'styled-components';
+import { media } from '@gympass/yoga-helper';
+​
+const MyResponsiveButton = styled.button`
+  ${media[breakpoint]``}
+  // generates: @media (min-width: breakpoint)
+  // Ex.: media.md`` or media['xxs']``
+​
+  ${media.min(breakpoint)``}
+  // generates: @media (min-width: breakpoint)
+  // Ex.: media.min('md')``
+
+  ${media.max(breakpoint)``}
+  // generates: @media (max-width: breakpoint)
+  // Ex.: media.max('xl')``
+​
+  ${media.between(minBreakpoint, maxBreakpoint)``}
+  // generates: @media (min-width: minBreakpoint) and (max-width: maxBreakpoint)
+  // Ex.: media.between('md', 'l')``
+​
+  // We can also use .not (Like jest expect matchers)
+  ${media.not[breakpoint]``}
+  ${media.not.min(breakpoint)``}
+  // generates: @media not all and (min-width: breakpoint)
+  // Ex.: media.not.md`` or media.not['xxs']``
+
+  ${media.not.max(breakpoint)``}
+  // generates: @media not all and (max-width: breakpoint)
+  // Ex.: media.not.max('xxl')``
+
+  ${media.not.between(minBreakpoint, maxBreakpoint)``}
+  // @media not all and (min-width: breakpoint) and (max-width: breakpoint)
+  // Ex.: media.not.between('sm', 'mdx')``
+`;
+
+```
+
+The hide helper follows what we define in the <Link to="components/grid#hide">Hide</Link>
+component
+
+```javascript type=highlight
+import styled from 'styled-components';
+import { media } from '@gympass/yoga-helper';
+
+const HideMe = styled.div`
+  ${media.hide.xxs}
+  // will hide for, and only for, xxs
+
+  ${media.hide['md-start']}
+  // you can define when it will start hiding
+`;
+
+const NotHideMe = styled.div`
+  ${media.not.hide.sm} // will hide for everyone besides sm
+`;
+```
+
+### Usage
+
+```javascript state
+render(() => {
+  const MyFancyCard = styled(Card)`
+    color: white;
+    background-color: peru;
+    border-color: peru;
+
+    ${media.max('sm')`
+      background-color: blueviolet;
+      border-color: blueviolet;
+    `}
+
+    ${media.md`
+      background-color: forestgreen;
+      border-color: forestgreen;
+    `}
+
+    ${media.between('lg', 'xxl')`
+      background-color: goldenrod;
+      border-color: goldenrod;
+    `}
+  `;
+
+  return <MyFancyCard>Resize the window!</MyFancyCard>;
+});
+```
+
+<br />
+
+```javascript state
+render(() => {
+  const ShowMeOnMobile = styled.div`
+    ${media.hide.md}
+    ${media.hide.lg}
+    ${media.hide.xl}
+    ${media.hide.xxl}
+    ${media.hide.xxxl}
+
+    // or you could just use media.hide['md-start']
+  `;
+
+  const ShowMeOnDesktop = styled.div`
+    ${media.not.hide['md-start']}
+  `;
+
+  return (
+    <>
+      <ShowMeOnMobile>Show me on Mobile</ShowMeOnMobile>
+      <ShowMeOnDesktop>Show me on Desktop</ShowMeOnDesktop>
+    </>
+  );
+});
+```

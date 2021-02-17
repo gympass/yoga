@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef } from 'react';
 import styled, { css } from 'styled-components';
 import { func, string, bool, number, shape, oneOfType } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
@@ -70,16 +70,12 @@ const Input = React.forwardRef(
       value,
       onChange,
       onClean,
+      hideMaxLength,
       ...props
     },
     ref,
   ) => {
     const inputRef = ref || useRef(null);
-    const [inputValue, setInputValue] = useState(value);
-
-    useEffect(() => {
-      setInputValue(value);
-    }, [value]);
 
     const cleanField = e => {
       if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
@@ -111,11 +107,8 @@ const Input = React.forwardRef(
               maxLength,
             }}
             ref={inputRef}
-            value={inputValue}
-            onChange={e => {
-              setInputValue(e.target.value);
-              onChange(e);
-            }}
+            value={value}
+            onChange={onChange}
           />
 
           <Label error={error} disabled={disabled}>
@@ -123,7 +116,7 @@ const Input = React.forwardRef(
           </Label>
 
           {label && <Legend>{label}</Legend>}
-          {cleanable && !readOnly && inputValue && (
+          {cleanable && !readOnly && value && (
             <IconWrapper
               tabIndex={0}
               disabled={disabled}
@@ -137,14 +130,14 @@ const Input = React.forwardRef(
             </IconWrapper>
           )}
         </Fieldset>
-
         {(helper || maxLength || error) && (
           <Helper
             error={error}
             helper={helper}
             maxLength={maxLength}
-            length={inputValue.length}
+            length={value.length}
             disabled={disabled}
+            hideMaxLength={hideMaxLength}
           />
         )}
       </Control>
@@ -159,7 +152,7 @@ Input.propTypes = {
   disabled: bool,
   error: string,
   full: bool,
-  /** A helper text to be displayed below field */
+  /** a helper text to be displayed below field */
   helper: string,
   label: string,
   /** maximum length (number of characters) of value */
@@ -170,6 +163,8 @@ Input.propTypes = {
   onChange: func,
   /** callback invoked when close icon is clicked, it returns a empty string to update your state */
   onClean: func,
+  /** when max length helper is unnecessary to appear */
+  hideMaxLength: bool,
 };
 
 Input.defaultProps = {
@@ -186,6 +181,7 @@ Input.defaultProps = {
   value: '',
   onChange: () => {},
   onClean: () => {},
+  hideMaxLength: false,
 };
 
 export default Input;

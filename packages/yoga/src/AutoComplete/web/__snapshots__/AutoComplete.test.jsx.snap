@@ -83,6 +83,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 100%;
   height: 52px;
   padding-left: 12px;
@@ -283,6 +284,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 320px;
   height: 52px;
   padding-left: 12px;
@@ -501,6 +503,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 100%;
   height: 52px;
   padding-left: 12px;
@@ -847,6 +850,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 320px;
   height: 52px;
   padding-left: 12px;

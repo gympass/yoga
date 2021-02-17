@@ -1,8 +1,7 @@
 import { number, arrayOf, oneOf } from 'prop-types';
 import styled from 'styled-components';
 import tokens from '@gympass/yoga-tokens';
-import query from './query';
-import hideQuery from './hideQuery';
+import { media } from '@gympass/yoga-helpers';
 
 const { breakpoints } = tokens;
 
@@ -11,7 +10,7 @@ const columnPosition = props => {
   const position = breakpointKeys
     .filter(breakpoint => props[breakpoint])
     .map(
-      filteredBreakpoint => query[filteredBreakpoint]`
+      filteredBreakpoint => media[filteredBreakpoint]`
         grid-column-end: span ${props[filteredBreakpoint] || 12};
       `,
     );
@@ -19,7 +18,7 @@ const columnPosition = props => {
   const starts = breakpointKeys
     .filter(breakpoint => props[`${breakpoint}-start`])
     .map(
-      start => query[start]`
+      start => media[start]`
         grid-column-start: ${props[`${start}-start`]};
       `,
     );
@@ -28,7 +27,7 @@ const columnPosition = props => {
 };
 
 const hideColumn = hideProp =>
-  hideProp.map(breakpoint => hideQuery(breakpoints)[breakpoint]);
+  hideProp.map(breakpoint => media.hide[breakpoint]);
 
 const Col = styled.div`
   box-sizing: border-box;

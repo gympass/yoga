@@ -5,6 +5,8 @@ const Fieldset = styled.fieldset`
   margin: 0;
   padding: 0;
 
+  box-sizing: border-box;
+
   ${({
     error,
     disabled,
