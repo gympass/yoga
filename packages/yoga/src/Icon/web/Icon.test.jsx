@@ -12,7 +12,7 @@ describe('Snapshots', () => {
     );
     const { container } = render(
       <ThemeProvider>
-        <Icon as={Circle} width="small" height="small" fill="stamina" />
+        <Icon as={Circle} size="small" fill="stamina" />
       </ThemeProvider>,
     );
 
