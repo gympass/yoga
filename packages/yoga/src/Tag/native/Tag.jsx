@@ -12,22 +12,30 @@ export const StyledTag = styled.View`
     variant,
     theme: {
       yoga: {
-        colors: { text, [variant]: color = text.secondary },
+        colors: {
+          text,
+          elements,
+          feedback: {
+            [variant]: color = { dark: text.secondary },
+            [variant]: borderColor = { dark: elements.selectionAndIcons },
+          },
+        },
         components: { tag },
       },
     },
   }) => `
     width: ${full ? '100%' : 'auto'};
+    
     padding:
       ${tag.padding.top}px
       ${tag.padding.right}px
       ${tag.padding.bottom}px
       ${tag.padding.left}px;
 
-    color: ${color};
+    color: ${color.dark};
     border-radius: ${tag.border.radius}px;
     border: ${tag.border.width}px solid;
-    border-color: ${color};
+    border-color: ${borderColor.dark};
   `}
 `;
 
@@ -61,27 +69,7 @@ Tag.propTypes = {
   /** style the card following the theme (primary, secondary, stamina, vibin,
    * peace, verve, uplift, verve, uplift, deep, medium, light, white,
    * energy, success, neutral, attention, hope, relax, clear) */
-  variant: oneOf([
-    '',
-    'primary',
-    'secondary',
-    'stamina',
-    'vibin',
-    'peace',
-    'verve',
-    'uplift',
-    'deep',
-    'medium',
-    'light',
-    'white',
-    'energy',
-    'success',
-    'neutral',
-    'attention',
-    'hope',
-    'relax',
-    'clear',
-  ]),
+  variant: oneOf(['', 'success', 'informative', 'attention']),
   children: node.isRequired,
 };
 

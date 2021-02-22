@@ -13,7 +13,11 @@ const StyledTag = styled.div`
       yoga: {
         colors: {
           text,
-          feedback: { [variant]: color = { dark: text.secondary } },
+          elements,
+          feedback: {
+            [variant]: color = { dark: text.secondary },
+            [variant]: borderColor = { dark: elements.selectionAndIcons },
+          },
         },
         components: { tag },
       },
@@ -30,7 +34,7 @@ const StyledTag = styled.div`
     color: ${color.dark};
     border-radius: ${tag.border.radius}px;
     border: ${tag.border.width}px solid;
-    border-color: ${color.dark};
+    border-color: ${borderColor.dark};
 
     font-size: ${tag.font.size}px;
     line-height: ${tag.font.lineHeight}px;

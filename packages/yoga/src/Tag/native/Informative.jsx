@@ -49,8 +49,8 @@ const TagInformative = ({
   icon: Icon,
   theme: {
     yoga: {
-      spacing,
       colors: { primary, color = primary },
+      components: { tag },
     },
   },
   ...props
@@ -59,10 +59,10 @@ const TagInformative = ({
     <Wrapper>
       {Icon && (
         <Icon
-          width={spacing.small}
-          height={spacing.small}
+          width={tag.icon.size}
+          height={tag.icon.size}
           fill={color}
-          marginRight={spacing.xxxsmall}
+          marginRight={tag.icon.margin.right}
         />
       )}
       <StyledTextInformative>{children}</StyledTextInformative>

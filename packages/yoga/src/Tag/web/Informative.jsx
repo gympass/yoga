@@ -44,12 +44,20 @@ const TagInformative = ({
   theme: {
     yoga: {
       colors: { primary, color = primary },
+      components: { tag },
     },
   },
   ...props
 }) => (
   <Informative {...props}>
-    {Icon && <Icon width={16} height={16} fill={color} />}
+    {Icon && (
+      <Icon
+        width={tag.icon.size}
+        height={tag.icon.size}
+        fill={color}
+        marginRight={tag.icon.margin.right}
+      />
+    )}
     {children}
   </Informative>
 );
