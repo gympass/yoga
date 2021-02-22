@@ -17,26 +17,17 @@ const TagWrapper = styled.View`
 const TagPage = () => (
   <TagWrapper>
     <Tag>default</Tag>
-    <Tag icon={Building}>default with custom icon</Tag>
     <Tag icon={false}>default without icon</Tag>
     <Tag variant="primary">primary</Tag>
     <Tag variant="secondary">secondary</Tag>
 
-    <Tag variant="vibin">vibin</Tag>
-    <Tag variant="hope">hope</Tag>
-    <Tag variant="energy">energy</Tag>
-    <Tag variant="relax">relax</Tag>
-    <Tag variant="peace">peace</Tag>
-    <Tag variant="verve">verve</Tag>
-    <Tag variant="uplift">uplift</Tag>
-    <Tag variant="deepPurple">deepPurple</Tag>
-    <Tag variant="stamina">stamina</Tag>
-    <Tag variant="dark">dark</Tag>
-    <Tag variant="medium">medium</Tag>
-    <Tag variant="deep">deep</Tag>
-    <Tag variant="light">light</Tag>
-    <Tag variant="clear">clear</Tag>
-    <Tag variant="white">white</Tag>
+    <Tag.Informative variant="success" icon={Building}>
+      default with custom icon
+    </Tag.Informative>
+
+    <Tag.Informative variant="success">success</Tag.Informative>
+    <Tag.Informative variant="neutral">neutral</Tag.Informative>
+    <Tag.Informative variant="attention">attention</Tag.Informative>
 
     <Tag full variant="relax">
       No spots left

@@ -1,18 +1,20 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { func, oneOf, oneOfType, bool, node } from 'prop-types';
-import { hexToRgb } from '@gympass/yoga-common';
-import { AlertTriangle } from '@gympass/yoga-icons';
+import { oneOf, bool, node } from 'prop-types';
 
 const StyledTag = styled.div`
   justify-content: center;
   align-items: center;
 
   ${({
-    color,
     full,
+    variant,
     theme: {
       yoga: {
+        colors: {
+          text,
+          feedback: { [variant]: color = { dark: text.secondary } },
+        },
         components: { tag },
       },
     },
@@ -25,68 +27,32 @@ const StyledTag = styled.div`
       ${tag.padding.bottom}px
       ${tag.padding.left}px;
 
-    background-color: ${hexToRgb(color, 0.25)};
-    color: ${color};
+    color: ${color.dark};
     border-radius: ${tag.border.radius}px;
+    border: ${tag.border.width}px solid;
+    border-color: ${color.dark};
 
     font-size: ${tag.font.size}px;
+    line-height: ${tag.font.lineHeight}px;
     font-weight: ${tag.font.weight};
-
-    svg {
-      margin-right: ${tag.icon.margin.right + 1}px;
-    }
   `}
 `;
 
 /** Use Tag component when you want to categorize your content */
-const Tag = ({
-  icon: Icon,
-  children,
-  variant,
-  theme: {
-    yoga: {
-      colors: { text, [variant]: color = text.secondary },
-    },
-  },
-  ...props
-}) => (
-  <StyledTag color={color} {...props}>
-    {Icon && <Icon width={16} height={16} fill={color} />}
-    {children}
-  </StyledTag>
+const Tag = ({ children, ...props }) => (
+  <StyledTag {...props}>{children}</StyledTag>
 );
 
 Tag.propTypes = {
-  icon: oneOfType([bool, func]),
   full: bool,
-  /** style the card following the theme (primary, secondary, vibin, hope,
-   * energy, relax, peace, verve, uplift, deepPurple, deep, stamina, dark,
-   * medium, light, clear, white) */
-  variant: oneOf([
-    '',
-    'primary',
-    'secondary',
-    'vibin',
-    'hope',
-    'energy',
-    'relax',
-    'peace',
-    'verve',
-    'uplift',
-    'deepPurple',
-    'stamina',
-    'dark',
-    'medium',
-    'deep',
-    'light',
-    'clear',
-    'white',
-  ]),
+  /** style the card following the theme (primary, secondary, stamina, vibin,
+   * peace, verve, uplift, verve, uplift, deep, medium, light, white,
+   * energy, success, neutral, attention, hope, relax, clear) */
+  variant: oneOf(['', 'success', 'informative', 'attention']),
   children: node.isRequired,
 };
 
 Tag.defaultProps = {
-  icon: AlertTriangle,
   full: false,
   variant: '',
 };
