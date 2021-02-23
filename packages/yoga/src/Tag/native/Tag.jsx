@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { oneOf, bool, node } from 'prop-types';
+import { oneOf, node } from 'prop-types';
 import Text from '../../Text';
 
 export const StyledTag = styled.View`
@@ -25,14 +25,13 @@ export const StyledTag = styled.View`
     },
   }) => `
     width: ${full ? '100%' : 'auto'};
-    
     padding:
       ${tag.padding.top}px
       ${tag.padding.right}px
       ${tag.padding.bottom}px
       ${tag.padding.left}px;
 
-    color: ${color.dark};
+    color: ${color.light};
     border-radius: ${tag.border.radius}px;
     border: ${tag.border.width}px solid;
     border-color: ${borderColor.dark};
@@ -65,16 +64,12 @@ const Tag = ({ children, ...props }) => (
 );
 
 Tag.propTypes = {
-  full: bool,
-  /** style the card following the theme (primary, secondary, stamina, vibin,
-   * peace, verve, uplift, verve, uplift, deep, medium, light, white,
-   * energy, success, neutral, attention, hope, relax, clear) */
+  /** style the card following the theme (success, informative, attention) */
   variant: oneOf(['', 'success', 'informative', 'attention']),
   children: node.isRequired,
 };
 
 Tag.defaultProps = {
-  full: false,
   variant: '',
 };
 

@@ -1,8 +1,7 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { func, oneOfType, bool, node } from 'prop-types';
+import { func, oneOfType, oneOf, bool, node } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
-import { CheckedFull } from '@gympass/yoga-icons';
 
 import Tag from './Tag';
 
@@ -16,18 +15,16 @@ const Informative = styled(Tag)`
       yoga: {
         colors: {
           text,
-          feedback: {
-            [variant]: { light = text.secondary },
-          },
+          feedback: { [variant]: color = { light: text.secondary } },
         },
         components: { tag },
       },
     },
   }) => `
-    background-color: ${hexToRgb(light)};
+    background-color: ${hexToRgb(color.light)};
     color: ${text.primary};
     border-radius: ${tag.border.radius}px;
-    border-color: ${light};
+    border-color: ${color.light};
 
     font-size: ${tag.font.size}px;
     font-weight: ${tag.font.weight};
@@ -63,12 +60,14 @@ const TagInformative = ({
 );
 
 TagInformative.propTypes = {
+  variant: oneOf(['', 'success', 'informative', 'attention']),
   icon: oneOfType([bool, func]),
   children: node.isRequired,
 };
 
 TagInformative.defaultProps = {
-  icon: CheckedFull,
+  variant: 'informative',
+  icon: false,
 };
 
 TagInformative.displayName = 'Tag.Informative';

@@ -17,21 +17,23 @@ const TagWrapper = styled.View`
 const TagPage = () => (
   <TagWrapper>
     <Tag>default</Tag>
-    <Tag icon={false}>default without icon</Tag>
-    <Tag variant="primary">primary</Tag>
-    <Tag variant="secondary">secondary</Tag>
 
-    <Tag.Informative variant="success" icon={Building}>
-      default with custom icon
-    </Tag.Informative>
+    <Tag variant="success">success</Tag>
+    <Tag variant="informative">informative</Tag>
+    <Tag variant="attention">attention</Tag>
+
+    <Tag.Informative>default informative</Tag.Informative>
+    <Tag.Informative icon={Building}>default with custom icon</Tag.Informative>
 
     <Tag.Informative variant="success">success</Tag.Informative>
-    <Tag.Informative variant="neutral">neutral</Tag.Informative>
-    <Tag.Informative variant="attention">attention</Tag.Informative>
+    <Tag.Informative variant="success" icon={Building}>
+      success with custom icon
+    </Tag.Informative>
 
-    <Tag full variant="relax">
-      No spots left
-    </Tag>
+    <Tag.Informative variant="attention">attention</Tag.Informative>
+    <Tag.Informative variant="attention" icon={Building}>
+      attention with custom icon
+    </Tag.Informative>
   </TagWrapper>
 );
 

@@ -1,13 +1,12 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { oneOf, bool, node } from 'prop-types';
+import { oneOf, node } from 'prop-types';
 
 const StyledTag = styled.div`
   justify-content: center;
   align-items: center;
 
   ${({
-    full,
     variant,
     theme: {
       yoga: {
@@ -23,7 +22,7 @@ const StyledTag = styled.div`
       },
     },
   }) => `
-    display: ${full ? 'flex' : 'inline-flex'};
+    display: inline-flex;
 
     padding:
       ${tag.padding.top}px
@@ -48,16 +47,12 @@ const Tag = ({ children, ...props }) => (
 );
 
 Tag.propTypes = {
-  full: bool,
-  /** style the card following the theme (primary, secondary, stamina, vibin,
-   * peace, verve, uplift, verve, uplift, deep, medium, light, white,
-   * energy, success, neutral, attention, hope, relax, clear) */
+  /** style the card following the theme (success, neutral, attention) */
   variant: oneOf(['', 'success', 'informative', 'attention']),
   children: node.isRequired,
 };
 
 Tag.defaultProps = {
-  full: false,
   variant: '',
 };
 
