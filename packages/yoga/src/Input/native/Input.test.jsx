@@ -67,6 +67,16 @@ describe('<Input />', () => {
       expect(container).toMatchSnapshot();
     });
 
+    it('should match with helper text, max length and hideMaxLength', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Input helper="Helper text" maxLength={20} hideMaxLength />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
     it('should match with full width', () => {
       const { container } = render(
         <ThemeProvider>
@@ -141,7 +151,7 @@ describe('<Input />', () => {
 
   describe('maxLength', () => {
     it('should update maxLength counter when add character', () => {
-      const { getByTestId, getByText } = render(
+      const { getByText, rerender } = render(
         <ThemeProvider>
           <Input label="Input" testID="input" maxLength={10} />
         </ThemeProvider>,
@@ -149,7 +159,11 @@ describe('<Input />', () => {
 
       expect(getByText('0/10').children.join('')).toBe('0/10');
 
-      fireEvent.changeText(getByTestId('input'), 'foo');
+      rerender(
+        <ThemeProvider>
+          <Input label="Input" value="foo" maxLength={10} />
+        </ThemeProvider>,
+      );
 
       expect(getByText('3/10').children.join('')).toBe('3/10');
     });
@@ -159,16 +173,34 @@ describe('<Input />', () => {
     it('should call onClean when press clean button', () => {
       const onCleanMock = jest.fn();
 
-      const { getByRole, getByTestId } = render(
+      const { getByRole } = render(
         <ThemeProvider>
-          <Input label="Input" testID="input" onClean={onCleanMock} />
+          <Input label="Input" value="foo" onClean={onCleanMock} />
         </ThemeProvider>,
       );
 
-      fireEvent.changeText(getByTestId('input'), 'foo');
       fireEvent.press(getByRole('button'));
 
       expect(onCleanMock).toHaveBeenCalledWith('');
+    });
+
+    it('should test if clean button is present', () => {
+      const { rerender, queryByRole } = render(
+        <ThemeProvider>
+          <Input label="Input" />
+        </ThemeProvider>,
+      );
+
+      // closeButton
+      expect(queryByRole('button')).toBeNull();
+
+      rerender(
+        <ThemeProvider>
+          <Input label="Input" value="foo" />
+        </ThemeProvider>,
+      );
+
+      expect(queryByRole('button')).not.toBeNull();
     });
   });
 });

@@ -86,6 +86,7 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   position: relative;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 320px;
   height: 52px;
   padding-left: 12px;

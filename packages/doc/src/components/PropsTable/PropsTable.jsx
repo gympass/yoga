@@ -126,7 +126,7 @@ Table.defaultProps = {
   },
 };
 
-const PropsTable = ({ component, platform }) => {
+const PropsTable = ({ component, platform = '' }) => {
   const {
     allComponentMetadata: { edges },
   } = MetaDataQuery();

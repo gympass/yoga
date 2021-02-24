@@ -1,0 +1,14 @@
+### Adding Gympass font in your project
+
+Make sure to import and use `FontLoader` inside `ThemeProvider`.
+
+```javascript type=highlight
+import { ThemeProvider, Button, FontLoader } from '@gympass/yoga';
+
+const App = () => (
+  <ThemeProvider>
+    <FontLoader />
+    <Button>Find an activity</Button>
+  </ThemeProvider>
+);
+```

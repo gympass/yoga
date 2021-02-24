@@ -81,6 +81,72 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "caioalexandrebr",
+      "name": "Caio Alexandre",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/31045534?v=4",
+      "profile": "http://www.caioalexandre.com",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "thayllachristine",
+      "name": "Thaylla Christine",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/38869416?v=4",
+      "profile": "https://github.com/thayllachristine",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "evilamaior",
+      "name": "Esthéfanie Vila Maior",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46816386?v=4",
+      "profile": "https://github.com/evilamaior",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "geovanasilva",
+      "name": "Geovana Silva",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13040713?v=4",
+      "profile": "http://geovanasilva.dev/",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "coelhucas",
+      "name": "Lucas Coelho",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28108272?v=4",
+      "profile": "https://lucascoelho.dev/",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc"
+      ]
+    },
+    {
+      "login": "andrerocha22",
+      "name": "André Rocha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39251409?v=4",
+      "profile": "https://github.com/andrerocha22",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "katharinedepaulo",
+      "name": "katharinedepaulo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57157659?v=4",
+      "profile": "https://github.com/katharinedepaulo",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,

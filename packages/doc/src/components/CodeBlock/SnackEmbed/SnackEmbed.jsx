@@ -4,7 +4,7 @@ import { string, bool } from 'prop-types';
 
 import CodeBlockContext from '../CodeBlockContext';
 import { native } from '../shared/templates';
-import injectImport from '../shared/functions';
+import { injectImport } from '../shared/functions';
 
 const Snack = styled.div`
   overflow: hidden;

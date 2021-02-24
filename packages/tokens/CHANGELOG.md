@@ -3,37 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@1.0.1-alpha.4...@gympass/yoga-tokens@1.1.0-alpha.0) (2021-02-04)
+
+### Features
+
+- **colors:** add feedback colors ([247714b](https://github.com/Gympass/yoga/commit/247714b736bdd684be7b0b667d2a7262ba25d8c0))
+
 ## 1.0.1-alpha.4 (2021-01-27)
 
 **Note:** Version bump only for package @gympass/yoga-tokens
-
-
-
-
 
 ## 1.0.1-alpha.3 (2021-01-22)
 
 **Note:** Version bump only for package @gympass/yoga-tokens
 
-
-
-
-
 ## 1.0.1-alpha.2 (2020-12-03)
 
 **Note:** Version bump only for package @gympass/yoga-tokens
 
-
-
-
-
 ## 1.0.1-alpha.1 (2020-10-28)
 
 **Note:** Version bump only for package @gympass/yoga-tokens
-
-
-
-
 
 ## 1.0.1-alpha.0 (2020-10-23)
 

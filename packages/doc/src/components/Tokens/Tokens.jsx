@@ -13,6 +13,12 @@ import { hexToRgb } from '@gympass/yoga-common';
 
 import withToken from './withToken';
 
+function capitalizeFirstLetter(str) {
+  const [first, ...rest] = str;
+
+  return `${first.toUpperCase()}${rest}`;
+}
+
 const StyledTable = styled.table`
   ${({
     theme: {
@@ -77,13 +83,20 @@ const Example = styled.span`
   `};
 `;
 
-const Tokens = ({ data, example }) => (
+const Tokens = ({ data, example, columns }) => (
   <StyledTable>
     <thead>
       <tr>
         <th>Token</th>
         <th>Alias</th>
-        <th>Value</th>
+        {columns ? (
+          columns.map(column => (
+            <th key={column}>{capitalizeFirstLetter(column)}</th>
+          ))
+        ) : (
+          <th>Value</th>
+        )}
+
         {example && <th>Example</th>}
       </tr>
     </thead>
@@ -93,11 +106,20 @@ const Tokens = ({ data, example }) => (
           <tr key={token.id}>
             <td>{token.key}</td>
             <td>{token.alias}</td>
-            <td>
-              {typeof token.value === 'string'
-                ? token.value
-                : JSON.stringify(token.value)}
-            </td>
+            {columns ? (
+              columns.map(column => {
+                const prop = token.value[column];
+
+                return <td key={prop}>{prop}</td>;
+              })
+            ) : (
+              <td>
+                {typeof token.value === 'string'
+                  ? token.value
+                  : JSON.stringify(token.value)}
+              </td>
+            )}
+
             {example && (
               <td>
                 <Example
@@ -132,10 +154,12 @@ Tokens.propTypes = {
     valueUnit: string,
     hasBackground: bool,
   }),
+  columns: arrayOf(string),
 };
 
 Tokens.defaultProps = {
   example: undefined,
+  columns: undefined,
 };
 
 export default withToken(Tokens);

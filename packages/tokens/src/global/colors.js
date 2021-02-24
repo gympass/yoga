@@ -54,6 +54,23 @@ const uplift = '#FF4438';
  */
 const deepPurple = '#710252';
 
+// Feedback ↓
+
+/**
+ * @type {Color}
+ */
+const success = '#C1EEDB';
+
+/**
+ * @type {Color}
+ */
+const neutral = '#E0DFFF';
+
+/**
+ * @type {Color}
+ */
+const attention = '#FCD6C3';
+
 // Gray scale ↓
 
 /**
@@ -95,6 +112,9 @@ const colors = {
   verve,
   uplift,
   deepPurple,
+  success,
+  neutral,
+  attention,
   stamina,
   deep,
   medium,

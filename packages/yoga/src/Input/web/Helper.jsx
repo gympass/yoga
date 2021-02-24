@@ -26,6 +26,7 @@ export const Wrapper = styled.div`
 const Info = styled(Text.Small)`
   ${({
     right,
+    hideMaxLength,
     theme: {
       yoga: {
         components: { input },
@@ -36,13 +37,22 @@ const Info = styled(Text.Small)`
     font-size: ${input.helper.font.size}px;
 
     ${right ? 'margin-left: auto;' : ''}
-  `}
+    ${hideMaxLength ? 'display: none;' : ''}
+
+    `}
 `;
 
-const Helper = ({ disabled, error, helper, maxLength, length }) => (
+const Helper = ({
+  disabled,
+  error,
+  helper,
+  maxLength,
+  length,
+  hideMaxLength,
+}) => (
   <Wrapper disabled={disabled} error={error}>
     {(error || helper) && <Info as="span">{error || helper}</Info>}
-    {maxLength && (
+    {maxLength && !hideMaxLength && (
       <Info as="span" right>
         {length}/{maxLength}
       </Info>
@@ -56,6 +66,7 @@ Helper.propTypes = {
   helper: string,
   maxLength: number,
   length: number,
+  hideMaxLength: bool,
 };
 
 Helper.defaultProps = {
@@ -64,6 +75,7 @@ Helper.defaultProps = {
   helper: undefined,
   maxLength: undefined,
   length: undefined,
+  hideMaxLength: undefined,
 };
 
 export default Helper;

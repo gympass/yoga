@@ -514,6 +514,98 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 </View>
 `;
 
+exports[`<Input /> Snapshots should match with helper text, max length and hideMaxLength 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    full={false}
+    style={
+      Array [
+        Object {
+          "position": "relative",
+          "width": 320,
+        },
+        Object {},
+      ]
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      cleanable={true}
+      disabled={false}
+      editable={true}
+      focus={false}
+      full={false}
+      maxLength={20}
+      rejectResponderTermination={true}
+      style={
+        Array [
+          Object {
+            "borderColor": "#D7D7E0",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#6B6B78",
+            "fontFamily": "Rubik",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 40,
+            "paddingTop": 16,
+            "width": 320,
+          },
+          Object {
+            "height": 52,
+          },
+        ]
+      }
+      typed={false}
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      full={false}
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "marginTop": 4,
+            "maxWidth": 320,
+            "width": 320,
+          },
+        ]
+      }
+    >
+      <Text
+        disabled={false}
+        style={
+          Array [
+            Object {
+              "color": "#6B6B78",
+              "flexShrink": 1,
+              "flexWrap": "wrap",
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        Helper text
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`<Input /> Snapshots should match with label 1`] = `
 <View
   collapsable={true}

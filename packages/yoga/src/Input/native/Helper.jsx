@@ -55,6 +55,7 @@ const Helper = ({
   focused,
   maxLength,
   length,
+  hideMaxLength,
 }) => (
   <HelperWrapper full={full} disabled={disabled}>
     {(error || helper) && (
@@ -62,7 +63,7 @@ const Helper = ({
         {error || helper}
       </Info>
     )}
-    {maxLength && (
+    {!hideMaxLength && maxLength && (
       <Info disabled={disabled} focused={focused} error={error} right>
         {length}/{maxLength}
       </Info>
@@ -78,6 +79,7 @@ Helper.propTypes = {
   helper: string,
   maxLength: number,
   length: number,
+  hideMaxLength: bool,
 };
 
 Helper.defaultProps = {
@@ -88,6 +90,7 @@ Helper.defaultProps = {
   helper: undefined,
   maxLength: undefined,
   length: undefined,
+  hideMaxLength: false,
 };
 
 export default Helper;

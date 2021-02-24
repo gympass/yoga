@@ -128,7 +128,7 @@ const ReactLive = () => {
             </Component>
 
             <Usage visible={codeVisible}>
-              <PrismHighlight code={imports} liveEditor={false} />
+              {imports && <PrismHighlight code={imports} liveEditor={false} />}
               <PrismHighlight code={code} liveEditor />
               <CodeError />
             </Usage>

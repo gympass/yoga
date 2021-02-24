@@ -3,37 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2-alpha.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.11.2-alpha.4...@gympass/yoga-icons@0.11.2-alpha.5) (2021-02-04)
+
+### Bug Fixes
+
+- **icons:** fix stroke attr for the Star icon ([fd2e001](https://github.com/Gympass/yoga/commit/fd2e001b15cfc53601d9019cd46f8f364e73d455))
+
 ## 0.11.2-alpha.4 (2021-01-27)
 
 **Note:** Version bump only for package @gympass/yoga-icons
-
-
-
-
 
 ## 0.11.2-alpha.3 (2021-01-22)
 
 **Note:** Version bump only for package @gympass/yoga-icons
 
-
-
-
-
 ## 0.11.2-alpha.2 (2020-12-03)
 
 **Note:** Version bump only for package @gympass/yoga-icons
 
-
-
-
-
 ## 0.11.2-alpha.1 (2020-10-28)
 
 **Note:** Version bump only for package @gympass/yoga-icons
-
-
-
-
 
 ## 0.11.2-alpha.0 (2020-10-23)
 
