@@ -40,9 +40,9 @@ const Info = styled(Text.Regular)(
     color: ${input.helper.color.default};
     font-size: ${input.helper.font.size}px;
 
-    ${error ? `color: ${colors.feedback.attention[1]};` : ''}
     ${disabled ? `color: ${colors.text.disabled};` : ''}
     ${focused ? `color: ${input.helper.color.focus};` : ''}
+    ${error ? `color: ${colors.feedback.attention.dark};` : ''}
     ${right ? 'margin-left: auto;' : ''}
   `,
 );
