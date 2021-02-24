@@ -555,10 +555,9 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
-            "fontWeight": "400",
             "paddingBottom": 16,
             "paddingLeft": 16,
-            "paddingRight": 40,
+            "paddingRight": 52,
             "paddingTop": 16,
             "width": 320,
           },
@@ -572,6 +571,7 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
       value=""
     />
     <View
+      disabled={false}
       full={false}
       style={
         Array [
@@ -586,6 +586,7 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
     >
       <Text
         disabled={false}
+        focused={false}
         style={
           Array [
             Object {
