@@ -8,7 +8,6 @@ export const StyledTag = styled.View`
   align-items: center;
 
   ${({
-    full,
     variant,
     theme: {
       yoga: {
@@ -24,14 +23,14 @@ export const StyledTag = styled.View`
       },
     },
   }) => `
-    width: ${full ? '100%' : 'auto'};
+    width: auto;
     padding:
       ${tag.padding.top}px
       ${tag.padding.right}px
       ${tag.padding.bottom}px
       ${tag.padding.left}px;
 
-    color: ${color.light};
+    color: ${color.dark};
     border-radius: ${tag.border.radius}px;
     border: ${tag.border.width}px solid;
     border-color: ${borderColor.dark};
@@ -43,12 +42,15 @@ export const StyledText = styled(Text)`
     variant,
     theme: {
       yoga: {
-        colors: { text, [variant]: color = text.secondary },
+        colors: {
+          text,
+          feedback: { [variant]: color = { dark: text.secondary } },
+        },
         components: { tag },
       },
     },
   }) => `
-    color: ${color};
+    color: ${color.dark};
 
     font-size: ${tag.font.size}px;
     line-height: ${tag.font.lineHeight}px;
