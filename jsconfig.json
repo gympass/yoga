@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@gympass/yoga-common": ["./packages/common/src/index.js"],
+      "@gympass/yoga-helpers": ["./packages/helpers/src/index.js"],
+      "@gympass/yoga-icons": ["./packages/icons/src"],
+      "@gympass/yoga-tokens": ["./packages/tokens/src/index.js"],
+      "@gympass/yoga": ["./packages/yoga/src"]
+    }
+  }
+}
