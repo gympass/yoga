@@ -39,11 +39,11 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
 }
 
 .c1:focus + .c4 {
-  box-shadow: 0 0 0 8px rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c1:hover + .c4 {
-  box-shadow: 0 0 0 8px rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c1:active + .c4 {
@@ -160,11 +160,11 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 }
 
 .c1:focus + .c3 {
-  box-shadow: 0 0 0 8px rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c1:hover + .c3 {
-  box-shadow: 0 0 0 8px rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c1:active + .c3 {
@@ -232,11 +232,11 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 }
 
 .c1:focus + .c4 {
-  box-shadow: 0 0 0 8px rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c1:hover + .c4 {
-  box-shadow: 0 0 0 8px rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c1:active + .c4 {
@@ -342,11 +342,11 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 }
 
 .c1:focus + .c4 {
-  box-shadow: 0 0 0 8px rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c1:hover + .c4 {
-  box-shadow: 0 0 0 8px rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c1:active + .c4 {
