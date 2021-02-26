@@ -50,10 +50,10 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
   align-items: center;
   border-style: solid;
   padding: 4px 8px 4px 8px;
-  color: #7068D4;
+  color: #1D856C;
   border-radius: 4px;
   border-width: 1px;
-  border-color: #7068D4;
+  border-color: #1D856C;
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
@@ -68,10 +68,10 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E0DFFF;
+  background-color: #C1EEDB;
   color: #231B22;
   border-radius: 4px;
-  border-color: #E0DFFF;
+  border-color: #C1EEDB;
   font-size: 12px;
   font-weight: 500;
 }
@@ -90,36 +90,12 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
       style="margin-right: 4px;"
       width="16"
     />
-    default with custom icon
+    success with custom icon
   </div>
 </div>
 `;
 
 exports[`<Tag /> should match snapshot with variant prop 1`] = `
-.c1 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-style: solid;
-  padding: 4px 8px 4px 8px;
-  color: #7068D4;
-  border-radius: 4px;
-  border-width: 1px;
-  border-color: #7068D4;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -139,6 +115,30 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   border-radius: 4px;
   border-width: 1px;
   border-color: #1D856C;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #7068D4;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #7068D4;
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
@@ -188,30 +188,6 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
 `;
 
 exports[`<Tag /> should match snapshot with variant prop and informative type 1`] = `
-.c2 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-style: solid;
-  padding: 4px 8px 4px 8px;
-  color: #7068D4;
-  border-radius: 4px;
-  border-width: 1px;
-  border-color: #7068D4;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 500;
-}
-
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -231,6 +207,30 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   border-radius: 4px;
   border-width: 1px;
   border-color: #1D856C;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #7068D4;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #7068D4;
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
@@ -260,27 +260,6 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   font-weight: 500;
 }
 
-.c3 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #E0DFFF;
-  color: #231B22;
-  border-radius: 4px;
-  border-color: #E0DFFF;
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.c3 svg {
-  margin-right: 4px;
-}
-
 .c1 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -299,6 +278,27 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
 }
 
 .c1 svg {
+  margin-right: 4px;
+}
+
+.c3 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #E0DFFF;
+  color: #231B22;
+  border-radius: 4px;
+  border-color: #E0DFFF;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.c3 svg {
   margin-right: 4px;
 }
 
@@ -358,10 +358,10 @@ exports[`<Tag /> should match snapshot with without icon and informative type 1`
   align-items: center;
   border-style: solid;
   padding: 4px 8px 4px 8px;
-  color: #7068D4;
+  color: #1D856C;
   border-radius: 4px;
   border-width: 1px;
-  border-color: #7068D4;
+  border-color: #1D856C;
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
@@ -376,10 +376,10 @@ exports[`<Tag /> should match snapshot with without icon and informative type 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #E0DFFF;
+  background-color: #C1EEDB;
   color: #231B22;
   border-radius: 4px;
-  border-color: #E0DFFF;
+  border-color: #C1EEDB;
   font-size: 12px;
   font-weight: 500;
 }
@@ -392,7 +392,7 @@ exports[`<Tag /> should match snapshot with without icon and informative type 1`
   <div
     class="c0 c1"
   >
-    default without icon
+    success without icon
   </div>
 </div>
 `;
