@@ -12,10 +12,8 @@ export const StyledTag = styled.View`
     theme: {
       yoga: {
         colors: {
-          text,
           elements,
           feedback: {
-            [variant]: color = { dark: text.secondary },
             [variant]: borderColor = { dark: elements.selectionAndIcons },
           },
         },
@@ -30,14 +28,13 @@ export const StyledTag = styled.View`
       ${tag.padding.bottom}px
       ${tag.padding.left}px;
 
-    color: ${color.dark};
     border-radius: ${tag.border.radius}px;
     border-width: ${tag.border.width}px;
     border-color: ${borderColor.dark};
   `}
 `;
 
-export const StyledText = styled(Text)`
+export const StyledText = styled(({ variant, ...rest }) => <Text {...rest} />)`
   ${({
     variant,
     theme: {

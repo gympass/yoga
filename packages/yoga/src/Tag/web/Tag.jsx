@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 import { oneOf, node } from 'prop-types';
 
 const StyledTag = styled.div`
@@ -43,9 +43,7 @@ const StyledTag = styled.div`
 `;
 
 /** Tags should be keywords to categorize or organize an item. */
-const Tag = ({ children, ...props }) => (
-  <StyledTag {...props}>{children}</StyledTag>
-);
+const Tag = props => <StyledTag {...props} />;
 
 Tag.propTypes = {
   /** style the tag following the theme (success, informative, attention) */
@@ -57,4 +55,4 @@ Tag.defaultProps = {
   variant: '',
 };
 
-export default withTheme(Tag);
+export default Tag;
