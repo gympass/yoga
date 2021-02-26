@@ -17,7 +17,7 @@ exports[`<Tag /> should match snapshot 1`] = `
   padding: 4px 8px 4px 8px;
   color: #6B6B78;
   border-radius: 4px;
-  border: 1px solid;
+  border-width: 1px;
   border-color: #9898A6;
   font-size: 12px;
   line-height: 16px;
@@ -50,7 +50,7 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
   padding: 4px 8px 4px 8px;
   color: #7068D4;
   border-radius: 4px;
-  border: 1px solid;
+  border-width: 1px;
   border-color: #7068D4;
   font-size: 12px;
   line-height: 16px;
@@ -66,7 +66,7 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(224,223,255,1);
+  background-color: #E0DFFF;
   color: #231B22;
   border-radius: 4px;
   border-color: #E0DFFF;
@@ -110,7 +110,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   padding: 4px 8px 4px 8px;
   color: #7068D4;
   border-radius: 4px;
-  border: 1px solid;
+  border-width: 1px;
   border-color: #7068D4;
   font-size: 12px;
   line-height: 16px;
@@ -133,7 +133,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   padding: 4px 8px 4px 8px;
   color: #1D856C;
   border-radius: 4px;
-  border: 1px solid;
+  border-width: 1px;
   border-color: #1D856C;
   font-size: 12px;
   line-height: 16px;
@@ -156,7 +156,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   padding: 4px 8px 4px 8px;
   color: #FF874C;
   border-radius: 4px;
-  border: 1px solid;
+  border-width: 1px;
   border-color: #FF874C;
   font-size: 12px;
   line-height: 16px;
@@ -199,7 +199,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   padding: 4px 8px 4px 8px;
   color: #7068D4;
   border-radius: 4px;
-  border: 1px solid;
+  border-width: 1px;
   border-color: #7068D4;
   font-size: 12px;
   line-height: 16px;
@@ -222,7 +222,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   padding: 4px 8px 4px 8px;
   color: #1D856C;
   border-radius: 4px;
-  border: 1px solid;
+  border-width: 1px;
   border-color: #1D856C;
   font-size: 12px;
   line-height: 16px;
@@ -245,7 +245,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   padding: 4px 8px 4px 8px;
   color: #FF874C;
   border-radius: 4px;
-  border: 1px solid;
+  border-width: 1px;
   border-color: #FF874C;
   font-size: 12px;
   line-height: 16px;
@@ -261,7 +261,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(224,223,255,1);
+  background-color: #E0DFFF;
   color: #231B22;
   border-radius: 4px;
   border-color: #E0DFFF;
@@ -282,7 +282,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(193,238,219,1);
+  background-color: #C1EEDB;
   color: #231B22;
   border-radius: 4px;
   border-color: #C1EEDB;
@@ -303,7 +303,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(252,214,195,1);
+  background-color: #FCD6C3;
   color: #231B22;
   border-radius: 4px;
   border-color: #FCD6C3;
@@ -351,7 +351,7 @@ exports[`<Tag /> should match snapshot with without icon and informative type 1`
   padding: 4px 8px 4px 8px;
   color: #7068D4;
   border-radius: 4px;
-  border: 1px solid;
+  border-width: 1px;
   border-color: #7068D4;
   font-size: 12px;
   line-height: 16px;
@@ -367,7 +367,7 @@ exports[`<Tag /> should match snapshot with without icon and informative type 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(224,223,255,1);
+  background-color: #E0DFFF;
   color: #231B22;
   border-radius: 4px;
   border-color: #E0DFFF;

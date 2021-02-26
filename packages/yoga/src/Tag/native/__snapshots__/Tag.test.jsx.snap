@@ -17,7 +17,6 @@ exports[`<Tag /> should match snapshot 1`] = `
           "alignItems": "center",
           "borderColor": "#9898A6",
           "borderRadius": 4,
-          "borderStyle": "solid",
           "borderWidth": 1,
           "color": "#6B6B78",
           "justifyContent": "center",
@@ -2419,10 +2418,9 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(224, 223, 255, 1)",
+          "backgroundColor": "#E0DFFF",
           "borderColor": "#E0DFFF",
           "borderRadius": 4,
-          "borderStyle": "solid",
           "borderWidth": 1,
           "color": "#7068D4",
           "justifyContent": "center",
@@ -2565,7 +2563,6 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
           "alignItems": "center",
           "borderColor": "#1D856C",
           "borderRadius": 4,
-          "borderStyle": "solid",
           "borderWidth": 1,
           "color": "#1D856C",
           "justifyContent": "center",
@@ -4956,7 +4953,6 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
           "alignItems": "center",
           "borderColor": "#7068D4",
           "borderRadius": 4,
-          "borderStyle": "solid",
           "borderWidth": 1,
           "color": "#7068D4",
           "justifyContent": "center",
@@ -7347,7 +7343,6 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
           "alignItems": "center",
           "borderColor": "#FF874C",
           "borderRadius": 4,
-          "borderStyle": "solid",
           "borderWidth": 1,
           "color": "#FF874C",
           "justifyContent": "center",
@@ -9749,10 +9744,9 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(193, 238, 219, 1)",
+          "backgroundColor": "#C1EEDB",
           "borderColor": "#C1EEDB",
           "borderRadius": 4,
-          "borderStyle": "solid",
           "borderWidth": 1,
           "color": "#1D856C",
           "justifyContent": "center",
@@ -9808,10 +9802,9 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(224, 223, 255, 1)",
+          "backgroundColor": "#E0DFFF",
           "borderColor": "#E0DFFF",
           "borderRadius": 4,
-          "borderStyle": "solid",
           "borderWidth": 1,
           "color": "#7068D4",
           "justifyContent": "center",
@@ -9867,10 +9860,9 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(252, 214, 195, 1)",
+          "backgroundColor": "#FCD6C3",
           "borderColor": "#FCD6C3",
           "borderRadius": 4,
-          "borderStyle": "solid",
           "borderWidth": 1,
           "color": "#FF874C",
           "justifyContent": "center",
@@ -9939,10 +9931,9 @@ exports[`<Tag /> should match snapshot with without icon and informative type 1`
       Array [
         Object {
           "alignItems": "center",
-          "backgroundColor": "rgba(224, 223, 255, 1)",
+          "backgroundColor": "#E0DFFF",
           "borderColor": "#E0DFFF",
           "borderRadius": 4,
-          "borderStyle": "solid",
           "borderWidth": 1,
           "color": "#7068D4",
           "justifyContent": "center",
