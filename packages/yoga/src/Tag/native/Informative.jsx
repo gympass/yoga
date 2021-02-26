@@ -46,6 +46,7 @@ const StyledTextInformative = styled(StyledText)`
   `}
 `;
 
+/** Tags should be keywords to categorize or organize an item. */
 const TagInformative = ({
   children,
   icon: Icon,
