@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, oneOfType, oneOf, bool, node } from 'prop-types';
-import { hexToRgb } from '@gympass/yoga-common';
 
 import Tag from './Tag';
 
@@ -21,7 +20,7 @@ const Informative = styled(Tag)`
       },
     },
   }) => `
-    background-color: ${hexToRgb(color.light)};
+    background-color: ${color.light};
     color: ${text.primary};
     border-radius: ${tag.border.radius}px;
     border-color: ${color.light};
@@ -35,12 +34,13 @@ const Informative = styled(Tag)`
   `}
 `;
 
+/** Tags should be keywords to categorize or organize an item. */
 const TagInformative = ({
   children,
   icon: Icon,
   theme: {
     yoga: {
-      colors: { primary, color = primary },
+      colors: { text, textColor = text.primary },
       components: { tag },
     },
   },
@@ -51,7 +51,7 @@ const TagInformative = ({
       <Icon
         width={tag.icon.size}
         height={tag.icon.size}
-        fill={color}
+        fill={textColor}
         marginRight={tag.icon.margin.right}
       />
     )}
@@ -60,6 +60,7 @@ const TagInformative = ({
 );
 
 TagInformative.propTypes = {
+  /** style the tag following the theme (success, informative, attention) */
   variant: oneOf(['', 'success', 'informative', 'attention']),
   icon: oneOfType([bool, func]),
   children: node.isRequired,

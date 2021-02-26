@@ -32,7 +32,7 @@ const StyledTag = styled.div`
 
     color: ${color.dark};
     border-radius: ${tag.border.radius}px;
-    border: ${tag.border.width}px solid;
+    border-width: ${tag.border.width}px;
     border-color: ${borderColor.dark};
 
     font-size: ${tag.font.size}px;
@@ -41,7 +41,7 @@ const StyledTag = styled.div`
   `}
 `;
 
-/** Use Tag component when you want to categorize your content */
+/** Tags should be keywords to categorize or organize an item. */
 const Tag = ({ children, ...props }) => (
   <StyledTag {...props}>{children}</StyledTag>
 );

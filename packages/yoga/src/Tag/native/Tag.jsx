@@ -32,7 +32,7 @@ export const StyledTag = styled.View`
 
     color: ${color.dark};
     border-radius: ${tag.border.radius}px;
-    border: ${tag.border.width}px solid;
+    border-width: ${tag.border.width}px;
     border-color: ${borderColor.dark};
   `}
 `;
