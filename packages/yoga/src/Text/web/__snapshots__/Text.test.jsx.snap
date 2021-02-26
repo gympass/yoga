@@ -107,6 +107,17 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   color: #231B22;
 }
 
+.c12 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  text-transform: uppercase;
+}
+
 .c5 {
   margin: 0;
   padding: 0;
@@ -175,6 +186,11 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   </p>
   <p
     class="c11"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c12"
   >
     Live the mission
   </p>
