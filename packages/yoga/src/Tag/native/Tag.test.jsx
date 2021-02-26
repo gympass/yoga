@@ -18,8 +18,8 @@ describe('<Tag />', () => {
   it('should match snapshot with custom icon and informative type', () => {
     const { container } = render(
       <ThemeProvider>
-        <Tag.Informative icon={Building}>
-          default with custom icon
+        <Tag.Informative variant="success" icon={Building}>
+          success with custom icon
         </Tag.Informative>
       </ThemeProvider>,
     );
@@ -30,7 +30,9 @@ describe('<Tag />', () => {
   it('should match snapshot with without icon and informative type', () => {
     const { container } = render(
       <ThemeProvider>
-        <Tag.Informative>default without icon</Tag.Informative>
+        <Tag.Informative variant="success">
+          success without icon
+        </Tag.Informative>
       </ThemeProvider>,
     );
 

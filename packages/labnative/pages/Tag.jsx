@@ -33,18 +33,18 @@ const TagPage = () => (
 
     <TagWrapper>
       <DocTitle>Informative Tags</DocTitle>
-      <Tag.Informative>default informative</Tag.Informative>
       <Tag.Informative variant="success">success</Tag.Informative>
+      <Tag.Informative variant="informative">informative</Tag.Informative>
       <Tag.Informative variant="attention">attention</Tag.Informative>
     </TagWrapper>
 
     <TagWrapper>
       <DocTitle>Informative Tags with Icon</DocTitle>
-      <Tag.Informative icon={Building}>
-        default with custom icon
-      </Tag.Informative>
       <Tag.Informative variant="success" icon={Building}>
         success with custom icon
+      </Tag.Informative>
+      <Tag.Informative variant="informative" icon={Building}>
+        informative with custom icon
       </Tag.Informative>
       <Tag.Informative variant="attention" icon={Building}>
         attention with custom icon
