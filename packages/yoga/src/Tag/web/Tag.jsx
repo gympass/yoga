@@ -3,8 +3,11 @@ import styled, { withTheme } from 'styled-components';
 import { oneOf, node } from 'prop-types';
 
 const StyledTag = styled.div`
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  border-style: solid;
 
   ${({
     variant,
@@ -22,8 +25,6 @@ const StyledTag = styled.div`
       },
     },
   }) => `
-    display: inline-flex;
-
     padding:
       ${tag.padding.top}px
       ${tag.padding.right}px
@@ -47,7 +48,7 @@ const Tag = ({ children, ...props }) => (
 );
 
 Tag.propTypes = {
-  /** style the card following the theme (success, neutral, attention) */
+  /** style the tag following the theme (success, informative, attention) */
   variant: oneOf(['', 'success', 'informative', 'attention']),
   children: node.isRequired,
 };

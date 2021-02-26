@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { func, oneOfType, oneOf, bool, node } from 'prop-types';
+import { func, oneOf, node } from 'prop-types';
 
 import { StyledTag, StyledText } from './Tag';
 
@@ -33,12 +33,12 @@ const StyledTextInformative = styled(StyledText)`
   ${({
     theme: {
       yoga: {
-        colors: { text, color = text.primary },
+        colors: { text },
         components: { tag },
       },
     },
   }) => `
-    color: ${color};
+    color: ${text.primary};
 
     font-size: ${tag.font.size}px;
     line-height: ${tag.font.lineHeight}px;
@@ -52,7 +52,7 @@ const TagInformative = ({
   icon: Icon,
   theme: {
     yoga: {
-      colors: { primary, color = primary },
+      colors: { primary },
       components: { tag },
     },
   },
@@ -64,8 +64,8 @@ const TagInformative = ({
         <Icon
           width={tag.icon.size}
           height={tag.icon.size}
-          fill={color}
-          marginRight={tag.icon.margin.right}
+          fill={primary}
+          style={{ marginRight: tag.icon.margin.right }}
         />
       )}
       <StyledTextInformative>{children}</StyledTextInformative>
@@ -76,13 +76,13 @@ const TagInformative = ({
 TagInformative.propTypes = {
   /** style the tag following the theme (success, informative, attention) */
   variant: oneOf(['', 'success', 'informative', 'attention']),
-  icon: oneOfType([bool, func]),
+  icon: func,
   children: node.isRequired,
 };
 
 TagInformative.defaultProps = {
   variant: 'informative',
-  icon: false,
+  icon: undefined,
 };
 
 TagInformative.displayName = 'Tag.Informative';

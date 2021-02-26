@@ -66,7 +66,7 @@ const Tag = ({ children, ...props }) => (
 );
 
 Tag.propTypes = {
-  /** style the card following the theme (success, informative, attention) */
+  /** style the tag following the theme (success, informative, attention) */
   variant: oneOf(['', 'success', 'informative', 'attention']),
   children: node.isRequired,
 };
