@@ -13,6 +13,7 @@ import {
   Bold,
   Black,
   SectionTitle,
+  SmallestException,
 } from './web';
 
 Text.H1 = H1;
@@ -28,5 +29,6 @@ Text.Medium = Medium;
 Text.Bold = Bold;
 Text.Black = Black;
 Text.SectionTitle = SectionTitle;
+Text.SmallestException = SmallestException;
 
 export default Text;

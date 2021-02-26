@@ -60,6 +60,11 @@ const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
     fontWeight: fontWeights.medium,
     textTransform: 'uppercase',
   },
+  smallestException: {
+    fontsize: fontSizes.xxsmall,
+    lineHeight: lineHeights.xxsmall,
+    fontWeight: fontWeights.regular,
+  },
 });
 
 export default Text;

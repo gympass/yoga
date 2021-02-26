@@ -51,6 +51,9 @@ Black.displayName = 'Text.Black';
 const SectionTitle = styledText('sectionTitle');
 SectionTitle.displayName = 'Text.SectionTitle';
 
+const SmallestException = styledText('smallestException');
+SmallestException.displayName = 'Text.SmallestException';
+
 const TextRenderer = styledText('p');
 
 const Text = props => <TextRenderer {...props} />;
@@ -116,4 +119,5 @@ export {
   Bold,
   Black,
   SectionTitle,
+  SmallestException,
 };

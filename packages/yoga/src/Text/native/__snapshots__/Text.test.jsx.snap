@@ -190,6 +190,21 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   >
     Live the mission
   </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 10,
+          "fontWeight": "400",
+          "lineHeight": 12,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>
 </View>
 `;
 

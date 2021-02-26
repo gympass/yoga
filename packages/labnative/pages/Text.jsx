@@ -71,6 +71,9 @@ const TextPage = () => (
       <Text.SectionTitle>Text SectionTitle</Text.SectionTitle>
     </TextWrapper>
     <TextWrapper>
+      <Text.SmallestException>Text SmallestException</Text.SmallestException>
+    </TextWrapper>
+    <TextWrapper>
       <Text.Medium size="xsmall">XSmall Text.Medium</Text.Medium>
     </TextWrapper>
     <TextWrapper>
