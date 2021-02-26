@@ -2451,14 +2451,15 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
         fill="#231B22"
         focusable={false}
         height={16}
-        marginRight={4}
         style={
           Array [
             Object {
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            undefined,
+            Object {
+              "marginRight": 4,
+            },
             Object {
               "opacity": 1,
             },

@@ -2,6 +2,10 @@
 
 exports[`<Tag /> should match snapshot 1`] = `
 .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -10,10 +14,7 @@ exports[`<Tag /> should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border-style: solid;
   padding: 4px 8px 4px 8px;
   color: #6B6B78;
   border-radius: 4px;
@@ -35,6 +36,10 @@ exports[`<Tag /> should match snapshot 1`] = `
 
 exports[`<Tag /> should match snapshot with custom icon and informative type 1`] = `
 .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -43,10 +48,7 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border-style: solid;
   padding: 4px 8px 4px 8px;
   color: #7068D4;
   border-radius: 4px;
@@ -85,7 +87,7 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
     <svg
       fill="#231B22"
       height="16"
-      marginRight="4"
+      style="margin-right: 4px;"
       width="16"
     />
     default with custom icon
@@ -95,6 +97,10 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
 
 exports[`<Tag /> should match snapshot with variant prop 1`] = `
 .c1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -103,10 +109,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border-style: solid;
   padding: 4px 8px 4px 8px;
   color: #7068D4;
   border-radius: 4px;
@@ -118,6 +121,10 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
 }
 
 .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -126,10 +133,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border-style: solid;
   padding: 4px 8px 4px 8px;
   color: #1D856C;
   border-radius: 4px;
@@ -141,6 +145,10 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
 }
 
 .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -149,10 +157,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border-style: solid;
   padding: 4px 8px 4px 8px;
   color: #FF874C;
   border-radius: 4px;
@@ -184,6 +189,10 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
 
 exports[`<Tag /> should match snapshot with variant prop and informative type 1`] = `
 .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -192,10 +201,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border-style: solid;
   padding: 4px 8px 4px 8px;
   color: #7068D4;
   border-radius: 4px;
@@ -207,6 +213,10 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
 }
 
 .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -215,10 +225,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border-style: solid;
   padding: 4px 8px 4px 8px;
   color: #1D856C;
   border-radius: 4px;
@@ -230,6 +237,10 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
 }
 
 .c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -238,10 +249,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border-style: solid;
   padding: 4px 8px 4px 8px;
   color: #FF874C;
   border-radius: 4px;
@@ -336,6 +344,10 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
 
 exports[`<Tag /> should match snapshot with without icon and informative type 1`] = `
 .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -344,10 +356,7 @@ exports[`<Tag /> should match snapshot with without icon and informative type 1`
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  border-style: solid;
   padding: 4px 8px 4px 8px;
   color: #7068D4;
   border-radius: 4px;
