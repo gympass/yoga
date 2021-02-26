@@ -12,6 +12,7 @@ import {
   Medium,
   Bold,
   Black,
+  SectionTitle,
 } from './Text';
 
 export {
@@ -28,4 +29,5 @@ export {
   Medium,
   Bold,
   Black,
+  SectionTitle,
 };
