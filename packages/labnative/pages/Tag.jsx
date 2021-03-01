@@ -3,45 +3,54 @@ import styled from 'styled-components';
 import { Tag } from '@gympass/yoga';
 import { Building } from '@gympass/yoga-icons';
 
+import { DocTitle } from '../components';
+
+const ScrollView = styled.ScrollView`
+  margin-bottom: 50px;
+  padding: 10px;
+  width: 100%;
+`;
+
 const TagWrapper = styled.View`
   width: 100%;
   padding: 20px;
   margin-bottom: 10px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 250px;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 `;
 
 const TagPage = () => (
-  <TagWrapper>
-    <Tag>default</Tag>
-    <Tag icon={Building}>default with custom icon</Tag>
-    <Tag icon={false}>default without icon</Tag>
-    <Tag variant="primary">primary</Tag>
-    <Tag variant="secondary">secondary</Tag>
+  <ScrollView>
+    <TagWrapper>
+      <DocTitle>Default Tags</DocTitle>
+      <Tag>default</Tag>
+      <Tag variant="success">success</Tag>
+      <Tag variant="informative">informative</Tag>
+      <Tag variant="attention">attention</Tag>
+    </TagWrapper>
 
-    <Tag variant="vibin">vibin</Tag>
-    <Tag variant="hope">hope</Tag>
-    <Tag variant="energy">energy</Tag>
-    <Tag variant="relax">relax</Tag>
-    <Tag variant="peace">peace</Tag>
-    <Tag variant="verve">verve</Tag>
-    <Tag variant="uplift">uplift</Tag>
-    <Tag variant="deepPurple">deepPurple</Tag>
-    <Tag variant="stamina">stamina</Tag>
-    <Tag variant="dark">dark</Tag>
-    <Tag variant="medium">medium</Tag>
-    <Tag variant="deep">deep</Tag>
-    <Tag variant="light">light</Tag>
-    <Tag variant="clear">clear</Tag>
-    <Tag variant="white">white</Tag>
+    <TagWrapper>
+      <DocTitle>Informative Tags</DocTitle>
+      <Tag.Informative variant="success">success</Tag.Informative>
+      <Tag.Informative variant="informative">informative</Tag.Informative>
+      <Tag.Informative variant="attention">attention</Tag.Informative>
+    </TagWrapper>
 
-    <Tag full variant="relax">
-      No spots left
-    </Tag>
-  </TagWrapper>
+    <TagWrapper>
+      <DocTitle>Informative Tags with Icon</DocTitle>
+      <Tag.Informative variant="success" icon={Building}>
+        success with custom icon
+      </Tag.Informative>
+      <Tag.Informative variant="informative" icon={Building}>
+        informative with custom icon
+      </Tag.Informative>
+      <Tag.Informative variant="attention" icon={Building}>
+        attention with custom icon
+      </Tag.Informative>
+    </TagWrapper>
+  </ScrollView>
 );
 
 export default TagPage;

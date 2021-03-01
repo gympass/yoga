@@ -1,0 +1,31 @@
+### Usage
+
+```javascript state
+const Wrapper = styled.div`
+  & > div {
+    margin: 5px;
+    vertical-align: top;
+  }
+`;
+
+render(
+  <Wrapper>
+    <Tag.Informative variant="success">success</Tag.Informative>
+    <Tag.Informative variant="success" icon={Building}>
+      success with custom icon
+    </Tag.Informative>
+
+    <Tag.Informative variant="informative">informative</Tag.Informative>
+    <Tag.Informative variant="informative" icon={Building}>informative with custom icon</Tag.Informative>
+
+    <Tag.Informative variant="attention">attention</Tag.Informative>
+    <Tag.Informative variant="attention" icon={Building}>
+      attention with custom icon
+    </Tag.Informative>
+  </Wrapper>,
+);
+```
+
+### Props
+
+<PropsTable component="Tag.Informative" platform="web" />
