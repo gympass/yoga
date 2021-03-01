@@ -56,9 +56,9 @@ export const StyledText = styled(({ variant, ...rest }) => <Text {...rest} />)`
 `;
 
 /** Use Tag component when you want to categorize your content */
-const Tag = ({ children, ...props }) => (
-  <StyledTag {...props}>
-    <StyledText {...props}>{children}</StyledText>
+const Tag = ({ children, variant, ...props }) => (
+  <StyledTag variant={variant} {...props}>
+    <StyledText variant={variant}>{children}</StyledText>
   </StyledTag>
 );
 

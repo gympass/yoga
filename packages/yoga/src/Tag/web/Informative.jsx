@@ -48,12 +48,7 @@ const TagInformative = ({
 }) => (
   <Informative {...props}>
     {Icon && (
-      <Icon
-        width={tag.icon.size}
-        height={tag.icon.size}
-        fill={text.primary}
-        style={{ marginRight: tag.icon.margin.right }}
-      />
+      <Icon width={tag.icon.size} height={tag.icon.size} fill={text.primary} />
     )}
     {children}
   </Informative>
