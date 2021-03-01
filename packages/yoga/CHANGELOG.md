@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0-alpha.6](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.5...@gympass/yoga@5.2.0-alpha.6) (2021-03-01)
+
+
+### Features
+
+* **tag:** fix tag default color, refactor tests, change docs ([16d6232](https://github.com/Gympass/yoga/commit/16d623272fd8fe4844cdb1f292cc44e92b0134d2))
+* **tag:** remove tag full / fix tag informative to be without tag as default ([1ead324](https://github.com/Gympass/yoga/commit/1ead324b0dec9ec33036799dab9f4fa0632baf00))
+* **tag:** update tag border color and icon margin ([51cae3c](https://github.com/Gympass/yoga/commit/51cae3c7713389b1b918cccbc0bb1e69e8bf37ff))
+* refactor tag component to Yoga 2.0 ([d748909](https://github.com/Gympass/yoga/commit/d7489096e99dee6d01a47ffa8857390b6a0dc6dc))
+
+
+
+
+
 # [5.2.0-alpha.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.4...@gympass/yoga@5.2.0-alpha.5) (2021-02-26)
 
 **Note:** Version bump only for package @gympass/yoga
