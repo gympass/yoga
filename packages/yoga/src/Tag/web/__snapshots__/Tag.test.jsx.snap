@@ -87,7 +87,6 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
     <svg
       fill="#231B22"
       height="16"
-      style="margin-right: 4px;"
       width="16"
     />
     success with custom icon
