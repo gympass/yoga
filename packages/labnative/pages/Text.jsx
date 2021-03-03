@@ -68,6 +68,12 @@ const TextPage = () => (
       <Text.Black>Text Black</Text.Black>
     </TextWrapper>
     <TextWrapper>
+      <Text.SectionTitle>Text SectionTitle</Text.SectionTitle>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.SmallestException>Text SmallestException</Text.SmallestException>
+    </TextWrapper>
+    <TextWrapper>
       <Text.Medium size="xsmall">XSmall Text.Medium</Text.Medium>
     </TextWrapper>
     <TextWrapper>

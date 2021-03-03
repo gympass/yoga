@@ -2,6 +2,10 @@
 
 exports[`<Tag /> should match snapshot 1`] = `
 .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -10,64 +14,32 @@ exports[`<Tag /> should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(107,107,120,0.25);
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
   color: #6B6B78;
-  border-radius: 8px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #9898A6;
   font-size: 12px;
-  font-weight: 700;
-}
-
-.c0 svg {
-  margin-right: 5px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 <div>
   <div
     class="c0"
-    color="#6B6B78"
   >
-    <svg
-      fill="#6B6B78"
-      height="16"
-      width="16"
-    />
     default
   </div>
 </div>
 `;
 
-exports[`<Tag /> should match snapshot with all variants 1`] = `
-.c9 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(107,107,120,0.25);
-  color: #6B6B78;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.c9 svg {
-  margin-right: 5px;
-}
-
+exports[`<Tag /> should match snapshot with custom icon and informative type 1`] = `
 .c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -76,20 +48,15 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(35,27,34,0.25);
-  color: #231B22;
-  border-radius: 8px;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #1D856C;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #1D856C;
   font-size: 12px;
-  font-weight: 700;
-}
-
-.c0 svg {
-  margin-right: 5px;
+  line-height: 16px;
+  font-weight: 500;
 }
 
 .c1 {
@@ -101,23 +68,38 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: #C1EEDB;
+  color: #231B22;
+  border-radius: 4px;
+  border-color: #C1EEDB;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.c1 svg {
+  margin-right: 4px;
+}
+
+<div>
+  <div
+    class="c0 c1"
+  >
+    <svg
+      fill="#231B22"
+      height="16"
+      width="16"
+    />
+    success with custom icon
+  </div>
+</div>
+`;
+
+exports[`<Tag /> should match snapshot with variant prop 1`] = `
+.c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(216,56,94,0.25);
-  color: #D8385E;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.c1 svg {
-  margin-right: 5px;
-}
-
-.c2 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -126,20 +108,176 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #1D856C;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #1D856C;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.c1 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(29,133,108,0.25);
-  color: #1D856C;
-  border-radius: 8px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #7068D4;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #7068D4;
   font-size: 12px;
-  font-weight: 700;
+  line-height: 16px;
+  font-weight: 500;
 }
 
-.c2 svg {
-  margin-right: 5px;
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #FF874C;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #FF874C;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    success
+  </div>
+  <div
+    class="c1"
+  >
+    informative
+  </div>
+  <div
+    class="c2"
+  >
+    attention
+  </div>
+</div>
+`;
+
+exports[`<Tag /> should match snapshot with variant prop and informative type 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #1D856C;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #1D856C;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #7068D4;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #7068D4;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.c4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #FF874C;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #FF874C;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.c1 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #C1EEDB;
+  color: #231B22;
+  border-radius: 4px;
+  border-color: #C1EEDB;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.c1 svg {
+  margin-right: 4px;
 }
 
 .c3 {
@@ -151,45 +289,16 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(255,194,76,0.25);
-  color: #FFC24C;
-  border-radius: 8px;
+  background-color: #E0DFFF;
+  color: #231B22;
+  border-radius: 4px;
+  border-color: #E0DFFF;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c3 svg {
-  margin-right: 5px;
-}
-
-.c4 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(112,104,212,0.25);
-  color: #7068D4;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.c4 svg {
-  margin-right: 5px;
+  margin-right: 4px;
 }
 
 .c5 {
@@ -201,431 +310,43 @@ exports[`<Tag /> should match snapshot with all variants 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(255,176,167,0.25);
-  color: #FFB0A7;
-  border-radius: 8px;
+  background-color: #FCD6C3;
+  color: #231B22;
+  border-radius: 4px;
+  border-color: #FCD6C3;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .c5 svg {
-  margin-right: 5px;
-}
-
-.c6 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(255,135,76,0.25);
-  color: #FF874C;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.c6 svg {
-  margin-right: 5px;
-}
-
-.c7 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(255,68,56,0.25);
-  color: #FF4438;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.c7 svg {
-  margin-right: 5px;
-}
-
-.c8 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(113,2,82,0.25);
-  color: #710252;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.c8 svg {
-  margin-right: 5px;
-}
-
-.c10 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(152,152,166,0.25);
-  color: #9898A6;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.c10 svg {
-  margin-right: 5px;
-}
-
-.c11 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(215,215,224,0.25);
-  color: #D7D7E0;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.c11 svg {
-  margin-right: 5px;
-}
-
-.c12 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(245,245,250,0.25);
-  color: #F5F5FA;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.c12 svg {
-  margin-right: 5px;
-}
-
-.c13 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(255,255,255,0.25);
-  color: #FFFFFF;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.c13 svg {
-  margin-right: 5px;
+  margin-right: 4px;
 }
 
 <div>
   <div
-    class="c0"
-    color="#231B22"
+    class="c0 c1"
   >
-    <svg
-      fill="#231B22"
-      height="16"
-      width="16"
-    />
-    primary
+    success
   </div>
   <div
-    class="c1"
-    color="#D8385E"
+    class="c2 c3"
   >
-    <svg
-      fill="#D8385E"
-      height="16"
-      width="16"
-    />
-    secondary
+    informative
   </div>
   <div
-    class="c1"
-    color="#D8385E"
+    class="c4 c5"
   >
-    <svg
-      fill="#D8385E"
-      height="16"
-      width="16"
-    />
-    vibin
-  </div>
-  <div
-    class="c2"
-    color="#1D856C"
-  >
-    <svg
-      fill="#1D856C"
-      height="16"
-      width="16"
-    />
-    hope
-  </div>
-  <div
-    class="c3"
-    color="#FFC24C"
-  >
-    <svg
-      fill="#FFC24C"
-      height="16"
-      width="16"
-    />
-    energy
-  </div>
-  <div
-    class="c4"
-    color="#7068D4"
-  >
-    <svg
-      fill="#7068D4"
-      height="16"
-      width="16"
-    />
-    relax
-  </div>
-  <div
-    class="c5"
-    color="#FFB0A7"
-  >
-    <svg
-      fill="#FFB0A7"
-      height="16"
-      width="16"
-    />
-    peace
-  </div>
-  <div
-    class="c6"
-    color="#FF874C"
-  >
-    <svg
-      fill="#FF874C"
-      height="16"
-      width="16"
-    />
-    verve
-  </div>
-  <div
-    class="c7"
-    color="#FF4438"
-  >
-    <svg
-      fill="#FF4438"
-      height="16"
-      width="16"
-    />
-    uplift
-  </div>
-  <div
-    class="c8"
-    color="#710252"
-  >
-    <svg
-      fill="#710252"
-      height="16"
-      width="16"
-    />
-    deepPurple
-  </div>
-  <div
-    class="c0"
-    color="#231B22"
-  >
-    <svg
-      fill="#231B22"
-      height="16"
-      width="16"
-    />
-    stamina
-  </div>
-  <div
-    class="c9"
-    color="#6B6B78"
-  >
-    <svg
-      fill="#6B6B78"
-      height="16"
-      width="16"
-    />
-    dark
-  </div>
-  <div
-    class="c10"
-    color="#9898A6"
-  >
-    <svg
-      fill="#9898A6"
-      height="16"
-      width="16"
-    />
-    medium
-  </div>
-  <div
-    class="c9"
-    color="#6B6B78"
-  >
-    <svg
-      fill="#6B6B78"
-      height="16"
-      width="16"
-    />
-    deep
-  </div>
-  <div
-    class="c11"
-    color="#D7D7E0"
-  >
-    <svg
-      fill="#D7D7E0"
-      height="16"
-      width="16"
-    />
-    light
-  </div>
-  <div
-    class="c12"
-    color="#F5F5FA"
-  >
-    <svg
-      fill="#F5F5FA"
-      height="16"
-      width="16"
-    />
-    clear
-  </div>
-  <div
-    class="c13"
-    color="#FFFFFF"
-  >
-    <svg
-      fill="#FFFFFF"
-      height="16"
-      width="16"
-    />
-    white
+    attention
   </div>
 </div>
 `;
 
-exports[`<Tag /> should match snapshot with custom icon 1`] = `
+exports[`<Tag /> should match snapshot with without icon and informative type 1`] = `
 .c0 {
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(107,107,120,0.25);
-  color: #6B6B78;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.c0 svg {
-  margin-right: 5px;
-}
-
-<div>
-  <div
-    class="c0"
-    color="#6B6B78"
-  >
-    <svg
-      fill="#6B6B78"
-      height="16"
-      width="16"
-    />
-    default with custom icon
-  </div>
-</div>
-`;
-
-exports[`<Tag /> should match snapshot with full prop 1`] = `
-.c0 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -634,39 +355,18 @@ exports[`<Tag /> should match snapshot with full prop 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(107,107,120,0.25);
-  color: #6B6B78;
-  border-radius: 8px;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #1D856C;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #1D856C;
   font-size: 12px;
-  font-weight: 700;
+  line-height: 16px;
+  font-weight: 500;
 }
 
-.c0 svg {
-  margin-right: 5px;
-}
-
-<div>
-  <div
-    class="c0"
-    color="#6B6B78"
-  >
-    <svg
-      fill="#6B6B78"
-      height="16"
-      width="16"
-    />
-    full
-  </div>
-</div>
-`;
-
-exports[`<Tag /> should match snapshot with without icon 1`] = `
-.c0 {
+.c1 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -675,28 +375,23 @@ exports[`<Tag /> should match snapshot with without icon 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 8px 8px 8px 8px;
-  background-color: rgba(107,107,120,0.25);
-  color: #6B6B78;
-  border-radius: 8px;
+  background-color: #C1EEDB;
+  color: #231B22;
+  border-radius: 4px;
+  border-color: #C1EEDB;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
-.c0 svg {
-  margin-right: 5px;
+.c1 svg {
+  margin-right: 4px;
 }
 
 <div>
   <div
-    class="c0"
-    color="#6B6B78"
+    class="c0 c1"
   >
-    default without icon
+    success without icon
   </div>
 </div>
 `;

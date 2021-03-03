@@ -12,6 +12,8 @@ import {
   Medium,
   Bold,
   Black,
+  SectionTitle,
+  SmallestException,
 } from './native';
 
 Text.H1 = H1;
@@ -26,5 +28,7 @@ Text.Regular = Regular;
 Text.Medium = Medium;
 Text.Bold = Bold;
 Text.Black = Black;
+Text.SectionTitle = SectionTitle;
+Text.SmallestException = SmallestException;
 
 export default Text;

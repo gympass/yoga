@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.11.2-alpha.5...@gympass/yoga-icons@0.12.0-alpha.0) (2021-02-26)
+
+
+### Features
+
+* **icon:** new dumbbell icon ([23a3bc6](https://github.com/Gympass/yoga/commit/23a3bc6daa330c1b02bf33db65fcc9d806dead55))
+* **icon:** remove fill attr ([8a2be72](https://github.com/Gympass/yoga/commit/8a2be72b8c060829b2e3b144d50be6c58be2aca3))
+* **icon:** remove fill prop of path ([0cd6687](https://github.com/Gympass/yoga/commit/0cd6687deaff8d3b87c42c4a93cd79835dc6ca8c))
+
+
+
+
+
 ## [0.11.2-alpha.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.11.2-alpha.4...@gympass/yoga-icons@0.11.2-alpha.5) (2021-02-04)
 
 ### Bug Fixes

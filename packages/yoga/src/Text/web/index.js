@@ -12,6 +12,8 @@ import {
   Medium,
   Bold,
   Black,
+  SectionTitle,
+  SmallestException,
 } from './Text';
 
 export {
@@ -28,4 +30,6 @@ export {
   Medium,
   Bold,
   Black,
+  SectionTitle,
+  SmallestException,
 };
