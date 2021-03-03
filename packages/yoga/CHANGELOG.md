@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0-alpha.7](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.6...@gympass/yoga@5.2.0-alpha.7) (2021-03-03)
+
+
+### Features
+
+* **text:** add section title as a new variation to the text component ([5be64e5](https://github.com/Gympass/yoga/commit/5be64e59a819d72bf04b2a5ff588693123695bc6))
+* **text:** adding the smallestException as a new variant to the text component ([3b095fb](https://github.com/Gympass/yoga/commit/3b095fbac532e9a821b7d9963bd1f1c56bf9d2c7))
+
+
+
+
+
 # [5.2.0-alpha.6](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.5...@gympass/yoga@5.2.0-alpha.6) (2021-03-01)
 
 
