@@ -17,7 +17,7 @@ const Label = styled(Text.Bold)`
       },
     },
   }) => `
-      font-size: ${button.font.size};
+      font-size: ${button.font.size}px;
       color: ${button.types.contained.font.default.color};
 
       ${disabled ? `color: ${button.types.contained.font.disabled.color};` : ''}
@@ -58,7 +58,7 @@ const ButtonContainer = styled.View`
   }) => `
       background-color: ${button.types.contained.backgroundColor.default};
       border-radius: ${button.border.radius}px;
-      height: ${small ? button.height.small : button.height.default};
+      height: ${small ? button.height.small : button.height.default}px;
       justify-content: center;
       padding-left: ${button.padding.left}px;
       padding-right: ${button.padding.right}px;
