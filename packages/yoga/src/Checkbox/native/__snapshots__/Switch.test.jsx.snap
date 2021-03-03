@@ -32,7 +32,15 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 9999,
+            "elevation": 4,
             "height": 20,
+            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
             "transform": Array [
               Object {
                 "translateX": 2,
@@ -79,7 +87,15 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 9999,
+            "elevation": 4,
             "height": 20,
+            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
             "transform": Array [
               Object {
                 "translateX": 26,
@@ -124,9 +140,17 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         disabled={true}
         style={
           Object {
-            "backgroundColor": undefined,
+            "backgroundColor": "#FFFFFF",
             "borderRadius": 9999,
+            "elevation": 4,
             "height": 20,
+            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
             "transform": Array [
               Object {
                 "translateX": 2,
@@ -171,9 +195,17 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         disabled={true}
         style={
           Object {
-            "backgroundColor": undefined,
+            "backgroundColor": "#FFFFFF",
             "borderRadius": 9999,
+            "elevation": 4,
             "height": 20,
+            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
             "transform": Array [
               Object {
                 "translateX": 26,
