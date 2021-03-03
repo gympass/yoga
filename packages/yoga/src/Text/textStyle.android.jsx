@@ -14,23 +14,24 @@ const textStyle = type => () => css`
         colors: { [variant]: color, text, white },
         components: {
           text: {
-            [type]: { fontsize, lineHeight, fontWeight },
+            [type]: { fontsize, lineHeight, fontWeight, textTransform },
           },
         },
       },
     },
   }) => `
     font-size: ${fontsize || pSize}px;
-    ${lineHeight ? `line-height: ${lineHeight}px` : ''};
+    ${lineHeight ? `line-height: ${lineHeight}px;` : ''}
 
     font-family: ${baseFont.family}${
     fontWeight !== 400 ? `-${fontWeight}` : ''
   };
 
-    ${light ? `font-family: ${baseFont.family}-${fontWeights.light}` : ''};
+    ${light ? `font-family: ${baseFont.family}-${fontWeights.light};` : ''}
 
     color: ${variant ? color : text.primary};
     ${inverted ? `color: ${white};` : ''}
+    ${textTransform ? `text-transform: ${textTransform};` : ''}
   `}
 `;
 

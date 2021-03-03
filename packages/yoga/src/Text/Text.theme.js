@@ -54,6 +54,17 @@ const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
   black: {
     fontWeight: fontWeights.black,
   },
+  sectionTitle: {
+    fontsize: fontSizes.xsmall,
+    lineHeight: lineHeights.xsmall,
+    fontWeight: fontWeights.medium,
+    textTransform: 'uppercase',
+  },
+  smallestException: {
+    fontsize: fontSizes.xxsmall,
+    lineHeight: lineHeights.xxsmall,
+    fontWeight: fontWeights.regular,
+  },
 });
 
 export default Text;
