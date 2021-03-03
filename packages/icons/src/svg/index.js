@@ -43,6 +43,7 @@ import Doc from './doc.svg';
 import Download from './download.svg';
 import Draggable from './draggable.svg';
 import Dumbbell from './dumbbell.svg';
+import DumbbellFilled from './dumbbell_filled.svg';
 import Edit from './edit.svg';
 import Exit from './exit.svg';
 import Facebook from './facebook.svg';
@@ -176,6 +177,7 @@ export {
   Download,
   Draggable,
   Dumbbell,
+  DumbbellFilled,
   Edit,
   Exit,
   Facebook,

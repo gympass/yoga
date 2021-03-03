@@ -19,6 +19,8 @@ describe('<Text />', () => {
           <Text.Medium>Live the mission</Text.Medium>
           <Text.Bold>Live the mission</Text.Bold>
           <Text.Black>Live the mission</Text.Black>
+          <Text.SectionTitle>Live the mission</Text.SectionTitle>
+          <Text.SmallestException>Live the mission</Text.SmallestException>
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();

@@ -2,7 +2,7 @@
   <img src="packages/doc/src/images/lotus.png" />
 </p>
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 ![Github Actions](https://github.com/gympass/yoga/workflows/Yoga%20-%20Gympass%20Design%20System/badge.svg)
 
 Design system at Gympass, our main intent is to support our projects.
@@ -28,6 +28,20 @@ Here's an overview of our packages:
 | [`@gympass/yoga-common`](/packages/common)   | [![npm version](https://badgen.net/npm/v/@gympass/yoga-common)](https://www.npmjs.com/package/@gympass/yoga-common)   | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-common)](https://bundlephobia.com/result?p=@gympass/yoga-common)   |
 | [`@gympass/yoga-icons`](/packages/icons)     | [![npm version](https://badgen.net/npm/v/@gympass/yoga-icons)](https://www.npmjs.com/package/@gympass/yoga-icons)     | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-icons)](https://bundlephobia.com/result?p=@gympass/yoga-icons)     |
 | [`@gympass/yoga-helpers`](/packages/helpers) | [![npm version](https://badgen.net/npm/v/@gympass/yoga-helpers)](https://www.npmjs.com/package/@gympass/yoga-helpers) | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-helpers)](https://bundlephobia.com/result?p=@gympass/yoga-helpers) |
+
+## Contributing
+
+This repository should _and_ will grow, its contents will be used for many people in our current and future
+projects. As such, we follow some practices to keep a common architecture in our changes.
+
+### [Code of Conduct](https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md)
+
+We adopted the _Citizen Code of Condute_, which is widely used in many projects and communities such the [Rust comunity](https://www.rust-lang.org/policies/code-of-conduct).
+Please read the [full text](https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md) so that you can understand what actions will and will not be tolerated.
+
+### [Contributing Guide](CONTRIBUTING.md)
+
+Read our [contributing guide](CONTRIBUTING.md) to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to Yoga.
 
 ## Contributors ✨
 

@@ -1,0 +1,24 @@
+### Usage
+
+```javascript state
+const Wrapper = styled.div`
+  & > div {
+    margin: 5px;
+    vertical-align: top;
+  }
+`;
+
+render(
+  <Wrapper>
+    <Tag>default</Tag>
+
+    <Tag variant="success">success</Tag>
+    <Tag variant="informative">informative</Tag>
+    <Tag variant="attention">attention</Tag>
+  </Wrapper>,
+);
+```
+
+### Props
+
+<PropsTable component="Tag" platform="web" />
