@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 import { oneOf, node } from 'prop-types';
 import Text from '../../Text';
 
@@ -72,4 +72,4 @@ Tag.defaultProps = {
   variant: '',
 };
 
-export default withTheme(Tag);
+export default Tag;
