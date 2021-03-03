@@ -434,8 +434,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               style={
                 Array [
                   Object {
+                    "alignItems": "center",
                     "backgroundColor": "#231B22",
                     "borderRadius": 9999,
+                    "flexDirection": "row",
                     "height": 48,
                     "justifyContent": "center",
                     "paddingLeft": 24,
@@ -446,6 +448,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               }
             >
               <Text
+                color="#FFFFFF"
                 disabled={false}
                 inverted={false}
                 pressed={false}
