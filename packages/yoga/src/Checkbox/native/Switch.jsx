@@ -48,6 +48,8 @@ const SwitchThumb = styled.View`
   height: ${checkboxswitch.thumb.height}px;
   border-radius: ${checkboxswitch.thumb.radii};
   background-color: ${checkboxswitch.thumb.backgroundColor};
+  box-shadow: ${checkboxswitch.thumb.shadow};
+  elevation: 4;
 
   ${
     disabled

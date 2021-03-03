@@ -36,7 +36,7 @@ const CheckboxSwitch = ({
       backgroundColor: colors.primary,
     },
     disabled: {
-      backgroundColor: colors.elements.white,
+      backgroundColor: colors.white,
     },
   },
   focus: {
