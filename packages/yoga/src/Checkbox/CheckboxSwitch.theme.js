@@ -1,5 +1,22 @@
 import { hexToRgb } from '@gympass/yoga-common';
 
+/**
+ *  @typedef {import('@gympass/yoga-tokens/src/global/colors').Colors} Colors
+ *  @typedef {import('@gympass/yoga-tokens/src/global/radii').Radii} Radii
+ *  @typedef {import('@gympass/yoga-tokens/src/global/spacing').Spacing} Spacing
+ *  @typedef {import('@gympass/yoga-tokens/src/global/transition').Transition} Transition
+ *  @typedef {import('@gympass/yoga-tokens/src/global/elevations').Elevation} Elevation
+ */
+
+/**
+ * @param {{
+ *  colors: Colors
+ *  radii: Radii
+ *  transition: Transition
+ *  spacing: Spacing
+ *  elevations: Elevation
+ * }} props
+ */
 const CheckboxSwitch = ({
   colors,
   radii,

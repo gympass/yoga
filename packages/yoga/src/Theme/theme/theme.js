@@ -1,10 +1,58 @@
 /* eslint-disable prefer-destructuring */
 import * as componentThemes from '../../**/*.theme.js';
 
+/**
+ * @typedef {typeof import('@gympass/yoga-tokens/src/global')} Tokens
+ * @typedef {import('packages/tokens/src/global/font-sizes').FontSize} FontSize
+ * @typedef {import('@gympass/yoga-tokens/src/global/colors').Color} Color
+ * @typedef {import('@gympass/yoga-tokens/src/global/colors').Colors} Colors
+ */
+
+/**
+ * @typedef {Object} ExtendColors
+ *
+ * @property {Color} primary
+ * @property {Color} secondary
+ * @property {{
+ *   success: {
+ *     light: Color
+ *     dark: Color
+ *   }
+ *   informative: {
+ *     light: Color
+ *     dark: Color
+ *   }
+ *   attention: {
+ *     light: Color
+ *     dark: Color
+ *   }
+ * }} feedback
+ * @property {{
+ *   primary: Color
+ *   secondary: Color
+ *   disabled: Color
+ * }} text
+ * @property {{
+ *   selectionAndIcons: Color
+ *   lineAndBorders: Color
+ *   backgroundAndDisabled: Color
+ * }} elements
+ */
+
+/**
+ * @typedef ThemeColors
+ * @type {Colors & ExtendColors}
+ */
+
+/**
+ * @param {Tokens} tokens
+ */
 const theme = tokens => {
   const baseFont = tokens.fonts.rubik;
+  /** @type {FontSize} */
   const baseFontSize = tokens.fontSizes.medium;
 
+  /** @type {ThemeColors} */
   const colors = {
     ...tokens.colors,
     primary: tokens.colors.stamina,

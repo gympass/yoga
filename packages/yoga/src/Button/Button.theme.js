@@ -1,5 +1,24 @@
 import { hexToRgb } from '@gympass/yoga-common';
 
+/**
+ *  @typedef {import('@gympass/yoga-tokens/src/global/spacing').Spacing} Spacing
+ *  @typedef {import('@gympass/yoga-tokens/src/global/font-sizes').FontSize} FontSize
+ *  @typedef {import('@gympass/yoga-tokens/src/global/borders').Border} Border
+ *  @typedef {import('@gympass/yoga-tokens/src/global/radii').Radii} Radii
+ *  @typedef {import('@gympass/yoga-tokens/src/global/colors').Colors} Colors
+ *  @typedef {import('@gympass/yoga-tokens/src/global/font-weights').FontWeight} FontWeight
+ */
+
+/**
+ * @param {{
+ *  spacing: Spacing
+ *  fontSizes: FontSize
+ *  borders: Border
+ *  radii: Radii
+ *  colors: Colors
+ *  fontWeights: FontWeight
+ * }} props
+ */
 const Button = ({
   spacing,
   fontSizes,

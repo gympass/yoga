@@ -17,7 +17,13 @@ import weights from './font-weights';
  */
 
 /**
- * @type {Font[]}
+ * @typedef Fonts
+ * @type {Object}
+ * @property {Font} rubik
+ */
+
+/**
+ * @type {Fonts}
  */
 const fonts = [
   {

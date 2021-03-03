@@ -10,9 +10,9 @@
  * @typedef Border
  *
  * @type {Object}
- * @property {String} zero - 0
- * @property {String} small - 1
- * @property {String} medium - 2
+ * @property {number} zero - 0
+ * @property {number} small - 1
+ * @property {number} medium - 2
  */
 
 /**

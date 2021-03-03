@@ -1,3 +1,26 @@
+/**
+ *  @typedef {import('@gympass/yoga-tokens/src/global/colors').Colors} Colors
+ *  @typedef {import('@gympass/yoga-tokens/src/global/spacing').Spacing} Spacing
+ *  @typedef {import('@gympass/yoga-tokens/src/global/radii').Radii} Radii
+ *  @typedef {import('@gympass/yoga-tokens/src/global/elevations').Elevation} Elevation
+ *  @typedef {import('@gympass/yoga-tokens/src/global/borders').Border} Border
+ *  @typedef {import('@gympass/yoga-tokens/src/global/font-weights').FontWeight} FontWeight
+ *  @typedef {import('@gympass/yoga-tokens/src/global/font-sizes').FontSize} FontSize
+ *  @typedef {import('@gympass/yoga-tokens/src/global/line-heights').LineHeight} LineHeight
+ */
+
+/**
+ * @param {{
+ *  colors: Colors
+ *  spacing: Spacing
+ *  radii: Radii
+ *  elevations: Elevation
+ *  borders: Border
+ *  fontWeights: FontWeight
+ *  fontSizes: FontSize
+ *  lineHeights: LineHeight
+ * }} props
+ */
 const Card = ({
   colors,
   spacing,

@@ -1,10 +1,17 @@
 /**
+ *  @typedef {import('@gympass/yoga-tokens/src/global/spacing').Spacing} Spacing
+ *  @typedef {import('@gympass/yoga-tokens/src/global/font-sizes').FontSize} FontSize
+ *  @typedef {import('@gympass/yoga-tokens/src/global/font-weights').FontWeight} FontWeight
+ *  @typedef {import('@gympass/yoga-tokens/src/global/radii').Radii} Radii
+ */
+
+/**
  * @param {{
- *  spacing: import('packages/tokens/src/global/spacing').Spacing
- *  fontSizes: import('packages/tokens/src/global/font-sizes').FontSize
- *  fontWeights: import('packages/tokens/src/global/font-weights').FontWeight
- *  radii: import('packages/tokens/src/global/radii').Radii
- * }} tag
+ *  spacing: Spacing
+ *  fontSizes: FontSize
+ *  fontWeights: FontWeight
+ *  radii: Radii
+ * }} props
  */
 const Tag = ({ spacing, fontSizes, fontWeights, radii }) => ({
   icon: {
