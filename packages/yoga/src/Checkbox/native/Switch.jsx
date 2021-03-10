@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { bool, func } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Animated, TouchableWithoutFeedback } from 'react-native';
+import { Animated } from 'react-native';
+import withTouchable from '../../Button/native/withTouchable';
 
 const SwitchTrack = styled.View`
   ${({
@@ -91,6 +92,7 @@ const SwitchThumb = styled.View`
 
 const CheckboxSwitch = ({
   checked,
+  pressed,
   disabled,
   theme: {
     yoga: {
@@ -128,15 +130,8 @@ const CheckboxSwitch = ({
     toggle(!checked, thumbPosition);
   }, [checked]);
 
-  const [pressed, setPressed] = useState(false);
-
   return (
-    <TouchableWithoutFeedback
-      disabled={disabled}
-      onPress={e => onChange(e)}
-      onPressIn={() => setPressed(true)}
-      onPressOut={() => setPressed(false)}
-    >
+    <>
       <SwitchTrack
         checked={checked}
         disabled={disabled}
@@ -186,7 +181,7 @@ const CheckboxSwitch = ({
           }}
         />
       </SwitchTrack>
-    </TouchableWithoutFeedback>
+    </>
   );
 };
 
@@ -194,14 +189,16 @@ CheckboxSwitch.propTypes = {
   checked: bool,
   disabled: bool,
   onChange: func,
+  pressed: bool,
 };
 
 CheckboxSwitch.defaultProps = {
   checked: false,
   disabled: false,
   onChange: () => {},
+  pressed: false,
 };
 
 CheckboxSwitch.displayName = 'Checkbox.Switch';
 
-export default withTheme(CheckboxSwitch);
+export default withTouchable(withTheme(CheckboxSwitch));

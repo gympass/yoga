@@ -5,6 +5,8 @@ const withTouchable = Component => ({
   onPress = () => {},
   onPressIn = () => {},
   onPressOut = () => {},
+  onChange = () => {},
+  accessibilityRole = undefined,
   ...rest
 }) => {
   const [pressed, setPressed] = useState(false);
@@ -19,7 +21,11 @@ const withTouchable = Component => ({
         setPressed(false);
         onPressOut(e);
       }}
-      onPress={onPress}
+      onPress={e => {
+        onPress(e);
+        onChange(e);
+      }}
+      accessibilityRole={accessibilityRole}
       {...rest}
     >
       <View style={{ flexDirection: 'row' }}>
