@@ -5,59 +5,33 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [0.12.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.11.2-alpha.5...@gympass/yoga-icons@0.12.0-alpha.0) (2021-02-26)
 
-
 ### Features
 
-* **icon:** new dumbbell icon ([23a3bc6](https://github.com/Gympass/yoga/commit/23a3bc6daa330c1b02bf33db65fcc9d806dead55))
-* **icon:** remove fill attr ([8a2be72](https://github.com/Gympass/yoga/commit/8a2be72b8c060829b2e3b144d50be6c58be2aca3))
-* **icon:** remove fill prop of path ([0cd6687](https://github.com/Gympass/yoga/commit/0cd6687deaff8d3b87c42c4a93cd79835dc6ca8c))
-
-
-
-
+- **icon:** new dumbbell icon ([23a3bc6](https://github.com/Gympass/yoga/commit/23a3bc6daa330c1b02bf33db65fcc9d806dead55))
+- **icon:** remove fill attr ([8a2be72](https://github.com/Gympass/yoga/commit/8a2be72b8c060829b2e3b144d50be6c58be2aca3))
+- **icon:** remove fill prop of path ([0cd6687](https://github.com/Gympass/yoga/commit/0cd6687deaff8d3b87c42c4a93cd79835dc6ca8c))
 
 ## [0.11.2-alpha.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.11.2-alpha.4...@gympass/yoga-icons@0.11.2-alpha.5) (2021-02-04)
 
-
 ### Bug Fixes
 
-* **icons:** fix stroke attr for the Star icon ([fd2e001](https://github.com/Gympass/yoga/commit/fd2e001b15cfc53601d9019cd46f8f364e73d455))
-
-
-
-
+- **icons:** fix stroke attr for the Star icon ([fd2e001](https://github.com/Gympass/yoga/commit/fd2e001b15cfc53601d9019cd46f8f364e73d455))
 
 ## 0.11.2-alpha.4 (2021-01-27)
 
 **Note:** Version bump only for package @gympass/yoga-icons
 
-
-
-
-
 ## 0.11.2-alpha.3 (2021-01-22)
 
 **Note:** Version bump only for package @gympass/yoga-icons
-
-
-
-
 
 ## 0.11.2-alpha.2 (2020-12-03)
 
 **Note:** Version bump only for package @gympass/yoga-icons
 
-
-
-
-
 ## 0.11.2-alpha.1 (2020-10-28)
 
 **Note:** Version bump only for package @gympass/yoga-icons
-
-
-
-
 
 ## 0.11.2-alpha.0 (2020-10-23)
 

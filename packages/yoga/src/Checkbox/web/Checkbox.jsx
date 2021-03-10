@@ -22,51 +22,69 @@ const CheckMark = styled.div`
   ${({
     checked,
     disabled,
+    inverted,
     error,
     theme: {
       yoga: {
-        colors: { primary, feedback },
+        colors: { primary, feedback, elements, white },
         components: { checkbox },
       },
     },
-  }) => `
+  }) => {
+    let borderColor = primary;
+    let bgColor = 'transparent';
+    let checkColor = checkbox.checked.icon.color;
+
+    if (error) {
+      [, borderColor] = feedback.attention;
+
+      if (checked) {
+        [, bgColor] = feedback.attention;
+      }
+    } else if (disabled) {
+      borderColor = checkbox.disabled.border.color;
+
+      if (checked) {
+        bgColor = checkbox.disabled.backgroundColor;
+        borderColor = elements.lineAndBorders;
+      }
+    } else if (checked) {
+      borderColor = primary;
+      bgColor = primary;
+      checkColor = checkbox.checked.icon.color;
+
+      if (inverted) {
+        bgColor = white;
+        borderColor = white;
+        checkColor = primary;
+      }
+    } else if (inverted) {
+      borderColor = white;
+      checkColor = primary;
+    }
+
+    return `
     width: ${checkbox.size}px;
     height: ${checkbox.size}px;
 
     margin-right: ${checkbox.margin.right}px;
+    
+    background-color: ${bgColor}; 
 
     border-radius: ${checkbox.border.radius}px;
     border-width: ${checkbox.border.width}px;
-    border-color: ${disabled ? checkbox.disabled.border.color : primary};
+    border-color: ${borderColor};
 
-    ${
-      checked
-        ? `
-        background-color: ${primary}; 
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
 
-        svg {
-          position: absolute;
-          top: 50%;
-          left: 50%;
+      fill: ${checkColor};
 
-          fill: ${checkbox.checked.icon.color};
-
-          transform: translate(-50%, -50%);
-        }
-        `
-        : ''
-    }
-
-    ${
-      disabled && checked
-        ? `background-color: ${checkbox.disabled.backgroundColor};`
-        : ''
-    }
-
-    ${error ? `border-color: ${feedback.attention[1]};` : ''}
-
-    ${error && checked ? `background-color: ${feedback.attention[1]};` : ''}
-  `}
+      transform: translate(-50%, -50%);
+    }`;
+  }}
 `;
 
 const Label = styled.label`
@@ -201,6 +219,7 @@ const Checkbox = ({
   error,
   style,
   className,
+  inverted,
   theme: {
     yoga: {
       components: { checkbox },
@@ -217,6 +236,7 @@ const Checkbox = ({
             disabled,
             checked,
             error,
+            inverted,
           }}
         >
           {checked && <Check width={checkbox.size} height={checkbox.size} />}
@@ -245,6 +265,7 @@ Checkbox.propTypes = {
   value: string,
   checked: bool,
   disabled: bool,
+  inverted: bool,
   error: string,
   /** set a style to the checkbox container */
   style: objectOf(any),
@@ -257,6 +278,7 @@ Checkbox.defaultProps = {
   helper: undefined,
   checked: false,
   disabled: false,
+  inverted: false,
   error: undefined,
   style: undefined,
   className: undefined,

@@ -12,9 +12,9 @@ import {
 import styled, { withTheme } from 'styled-components';
 import { Close } from '@gympass/yoga-icons';
 
-import Text from '../../Text';
+import Helper from './Helper';
 
-const ICON_SIZE = 24;
+const ICON_SIZE = 20;
 
 const Wrapper = styled.View(
   ({
@@ -52,7 +52,7 @@ const Field = styled.TextInput(
     padding-top: ${input.padding.top}px;
     padding-right: ${
       cleanable || textContentType === 'password'
-        ? ICON_SIZE + input.padding.right
+        ? ICON_SIZE + input.padding.right * 2
         : input.padding.right
     }px;
     padding-bottom: ${input.padding.bottom}px;
@@ -64,7 +64,6 @@ const Field = styled.TextInput(
     color: ${input.font.color.default};
     font-family: ${baseFont.family};
     font-size: ${input.font.size}px;
-    font-weight: ${input.font.weight};
 
     ${focus ? `border-color: ${input.border.color.typed};` : ''}
     ${focus || typed ? `color: ${input.font.color.focus};` : ''}
@@ -73,8 +72,8 @@ const Field = styled.TextInput(
     ${
       disabled
         ? `
-          border-color: ${colors.elements.backgroundAndDisabled};
-          color: ${colors.elements.backgroundAndDisabled};
+          border-color: ${colors.elements.lineAndBorders};
+          color: ${colors.text.disabled};
         `
         : ''
     }
@@ -117,14 +116,13 @@ const Label = styled(Animated.Text)(
     background-color: ${colors.white};
 
     font-family: ${baseFont.family};
-    font-weight: ${input.label.font.weight.default};
     color: ${input.label.color.default};
 
     ${
       focus
         ? `
           color: ${input.label.color.focus};
-          font-weight: ${input.label.font.weight.typed};`
+        `
         : ''
     }
 
@@ -138,7 +136,7 @@ const Label = styled(Animated.Text)(
     }
 
     ${error ? `color: ${colors.feedback.attention[1]};` : ''}
-    ${disabled ? `color: ${colors.elements.backgroundAndDisabled};` : ''}
+    ${disabled ? `color: ${colors.text.disabled};` : ''}
   `,
 );
 
@@ -154,47 +152,6 @@ const CloseIcon = styled.View(
 
     padding-right: ${spacing.small}px;
     padding-left: ${spacing.small}px;
-  `,
-);
-
-const Helper = styled.View(
-  ({
-    full,
-    theme: {
-      yoga: {
-        components: { input },
-      },
-    },
-  }) => `
-    width: ${full ? '100%' : `${input.width}px`};
-    max-width: ${input.width}px;
-    flex-direction: row;
-
-    margin-top: ${input.helper.margin.top}px;
-  `,
-);
-
-const Info = styled(Text.Regular)(
-  ({
-    disabled,
-    error,
-    right,
-    theme: {
-      yoga: {
-        colors,
-        components: { input },
-      },
-    },
-  }) => `
-    flex-shrink: ${right ? '0' : '1'};
-    flex-wrap: wrap;
-
-    color: ${input.helper.color};
-    font-size: ${input.helper.font.size}px;
-
-    ${error ? `color: ${colors.feedback.attention[1]};` : ''}
-    ${disabled ? `color: ${colors.elements.backgroundAndDisabled}` : ''}
-    ${right ? 'margin-left: auto;' : ''}
   `,
 );
 
@@ -329,18 +286,16 @@ const Input = ({
         </TouchableWithoutFeedback>
       )}
       {(helper || maxLength || error) && (
-        <Helper full={full}>
-          {(error || helper) && (
-            <Info disabled={disabled} error={error}>
-              {error || helper}
-            </Info>
-          )}
-          {!hideMaxLength && maxLength && (
-            <Info disabled={disabled} error={error} right>
-              {value.length}/{maxLength}
-            </Info>
-          )}
-        </Helper>
+        <Helper
+          full={full}
+          error={error}
+          helper={helper}
+          focused={focused}
+          disabled={disabled}
+          maxLength={maxLength}
+          length={value.length}
+          hideMaxLength={hideMaxLength}
+        />
       )}
     </Wrapper>
   );

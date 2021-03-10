@@ -8,8 +8,10 @@ import Input from '../../Input/web/Input';
 
 const escapeRegExp = str => str.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
 
-const StyledInput = styled(Input)`
-  z-index: 1;
+const Wrapper = styled.div`
+  position: relative;
+
+  ${({ full }) => `width: ${full ? '100%' : 'auto'}`}
 
   ${({
     isOpen,
@@ -21,34 +23,31 @@ const StyledInput = styled(Input)`
   }) =>
     isOpen
       ? `
+
+      ${Input} {
         border-color: ${input.border.color.typed};
         border-bottom-width: 0;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+      }
 
-        fieldset {
-          border-color: ${input.border.color.typed};
-          border-bottom-width: 0;
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
+      fieldset {
+        border-color: ${input.border.color.typed};
+        border-bottom-width: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
 
-        & label {
-          color: ${input.label.color.focus};
-          font-weight: ${input.label.font.weight.typed};
-        }
+      label {
+        color: ${input.label.color.focus};
+        font-weight: ${input.label.font.weight};
+      }
 
-        & legend {
-          font-weight: ${input.label.font.weight.typed};
-        }
+      legend {
+        font-weight: ${input.label.font.weight};
+      }
       `
       : ''}
-`;
-
-const Wrapper = styled.div`
-  position: relative;
-
-  ${({ full }) => `width: ${full ? '100%' : 'auto'}`}
 `;
 
 const List = styled.ul`
@@ -204,12 +203,12 @@ const AutoComplete = ({
             className={className}
             style={style}
             full={full}
+            isOpen={hasSuggestion}
             {...getRootProps()}
           >
-            <StyledInput
+            <Input
               {...props}
               full={full}
-              isOpen={hasSuggestion}
               onClean={cleanable => {
                 onClean(cleanable);
                 clearSelection();

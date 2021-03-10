@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @gympass/yoga-helpers
 
-
-
-
-
 # 0.1.0 (2020-12-11)
 
 ### Bug Fixes

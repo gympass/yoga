@@ -9,25 +9,37 @@ const Button = ({
   fontWeights,
 }) => ({
   padding: {
-    right: spacing.large,
-    left: spacing.large,
+    default: {
+      right: spacing.large,
+      left: spacing.large,
+    },
+    small: {
+      right: spacing.small,
+      left: spacing.small,
+    },
   },
   height: {
     default: 48,
     small: 32,
   },
   font: {
-    size: fontSizes.small,
-    weight: fontWeights.bold,
+    size: {
+      default: fontSizes.medium,
+      small: fontSizes.small,
+    },
+    weight: fontWeights.medium,
   },
   border: {
-    small: {
-      width: borders.small,
-    },
-    default: {
-      width: borders.medium,
-    },
     radius: radii.circle,
+  },
+  icon: {
+    size: {
+      default: 24,
+      small: 16,
+    },
+    margin: {
+      right: spacing.xxsmall,
+    },
   },
   types: {
     contained: {
@@ -50,10 +62,11 @@ const Button = ({
     },
     outline: {
       backgroundColor: {
-        disabled: 'transparent',
         default: 'transparent',
-        pressed: 'transparent',
-        hover: hexToRgb(colors.primary, 0.25),
+        hover: colors.primary,
+      },
+      border: {
+        width: borders.small,
       },
       font: {
         default: {
@@ -61,6 +74,9 @@ const Button = ({
         },
         disabled: {
           color: colors.text.disabled,
+        },
+        hover: {
+          color: colors.white,
         },
         pressed: {
           color: hexToRgb(colors.text.primary, 0.75),
@@ -68,26 +84,11 @@ const Button = ({
       },
     },
     text: {
-      backgroundColor: {
-        disabled: 'transparent',
-        default: 'transparent',
-        pressed: 'transparent',
-        hover: hexToRgb(colors.primary, 0.25),
-      },
-      font: {
-        default: {
-          color: colors.text.primary,
-        },
-        disabled: {
-          color: colors.text.disabled,
-        },
-        pressed: {
-          color: hexToRgb(colors.primary, 0.75),
-        },
-      },
+      backgroundColor: 'transparent',
     },
     link: {
       font: {
+        color: colors.secondary,
         disabled: {
           color: colors.text.disabled,
         },

@@ -5,44 +5,26 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [0.17.0-alpha.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.17.0-alpha.5...@gympass/yoga-labnative@0.17.0-alpha.6) (2021-03-03)
 
-
 ### Features
 
-* **text:** add section title as a new variation to the text component ([5be64e5](https://github.com/Gympass/yoga/commit/5be64e59a819d72bf04b2a5ff588693123695bc6))
-* **text:** adding the smallestException as a new variant to the text component ([3b095fb](https://github.com/Gympass/yoga/commit/3b095fbac532e9a821b7d9963bd1f1c56bf9d2c7))
-
-
-
-
+- **text:** add section title as a new variation to the text component ([5be64e5](https://github.com/Gympass/yoga/commit/5be64e59a819d72bf04b2a5ff588693123695bc6))
+- **text:** adding the smallestException as a new variant to the text component ([3b095fb](https://github.com/Gympass/yoga/commit/3b095fbac532e9a821b7d9963bd1f1c56bf9d2c7))
 
 # [0.17.0-alpha.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.17.0-alpha.4...@gympass/yoga-labnative@0.17.0-alpha.5) (2021-03-01)
 
-
 ### Features
 
-* **tag:** fix tag default color, refactor tests, change docs ([16d6232](https://github.com/Gympass/yoga/commit/16d623272fd8fe4844cdb1f292cc44e92b0134d2))
-* **tag:** remove tag full / fix tag informative to be without tag as default ([1ead324](https://github.com/Gympass/yoga/commit/1ead324b0dec9ec33036799dab9f4fa0632baf00))
-* refactor tag component to Yoga 2.0 ([d748909](https://github.com/Gympass/yoga/commit/d7489096e99dee6d01a47ffa8857390b6a0dc6dc))
-
-
-
-
+- **tag:** fix tag default color, refactor tests, change docs ([16d6232](https://github.com/Gympass/yoga/commit/16d623272fd8fe4844cdb1f292cc44e92b0134d2))
+- **tag:** remove tag full / fix tag informative to be without tag as default ([1ead324](https://github.com/Gympass/yoga/commit/1ead324b0dec9ec33036799dab9f4fa0632baf00))
+- refactor tag component to Yoga 2.0 ([d748909](https://github.com/Gympass/yoga/commit/d7489096e99dee6d01a47ffa8857390b6a0dc6dc))
 
 # [0.17.0-alpha.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.17.0-alpha.3...@gympass/yoga-labnative@0.17.0-alpha.4) (2021-02-26)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
-
-
-
-
 # [0.17.0-alpha.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.17.0-alpha.2...@gympass/yoga-labnative@0.17.0-alpha.3) (2021-02-17)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
-
-
-
-
 
 ## [0.16.13](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@0.16.12...@gympass/yoga-labnative@0.16.13) (2021-02-09)
 
