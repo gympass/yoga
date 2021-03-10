@@ -10,7 +10,9 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
     }
   }
 >
-  <TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    disabled={false}
+  >
     <View
       checked={true}
       disabled={false}
@@ -65,7 +67,9 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
     }
   }
 >
-  <TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    disabled={false}
+  >
     <View
       checked={false}
       disabled={false}
@@ -120,7 +124,9 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
     }
   }
 >
-  <TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    disabled={true}
+  >
     <View
       checked={true}
       disabled={true}
@@ -175,7 +181,9 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
     }
   }
 >
-  <TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    disabled={true}
+  >
     <View
       checked={false}
       disabled={true}
