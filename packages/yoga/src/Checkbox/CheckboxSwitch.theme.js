@@ -25,6 +25,7 @@ const CheckboxSwitch = ({
   thumb: {
     width: spacing.medium,
     height: spacing.medium,
+    shadowScale: 1.6,
     left: 2,
     radii: radii.circle,
     backgroundColor: colors.white,
