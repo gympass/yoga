@@ -30,13 +30,16 @@ const Button = ({
     weight: fontWeights.medium,
   },
   border: {
-    small: {
-      width: borders.small,
-    },
-    default: {
-      width: borders.medium,
-    },
     radius: radii.circle,
+  },
+  icon: {
+    size: {
+      default: 24,
+      small: 16,
+    },
+    margin: {
+      right: spacing.xxsmall,
+    },
   },
   types: {
     contained: {
@@ -59,25 +62,12 @@ const Button = ({
     },
     outline: {
       backgroundColor: {
-        disabled: 'transparent',
         default: 'transparent',
-        pressed: 'transparent',
-        hover: hexToRgb(colors.primary, 0.25),
+        hover: colors.primary,
       },
-      font: {
-        default: {
-          color: colors.text.primary,
-        },
-        disabled: {
-          color: colors.text.disabled,
-        },
-        pressed: {
-          color: hexToRgb(colors.text.primary, 0.75),
-        },
+      border: {
+        width: borders.small,
       },
-    },
-    text: {
-      backgroundColor: 'transparent',
       font: {
         default: {
           color: colors.text.primary,
@@ -86,12 +76,15 @@ const Button = ({
           color: colors.text.disabled,
         },
         hover: {
-          color: hexToRgb(colors.primary, 0.5),
+          color: colors.white,
         },
         pressed: {
-          color: hexToRgb(colors.primary, 0.75),
+          color: hexToRgb(colors.text.primary, 0.75),
         },
       },
+    },
+    text: {
+      backgroundColor: 'transparent',
     },
     link: {
       font: {

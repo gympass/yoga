@@ -11,14 +11,14 @@ Actions.propTypes = {
     oneOfType([
       typeOf(Button),
       typeOf(Button.Text),
-      typeOf(Button.Outline),
+      typeOf(Button),
       typeOf(Button.Link),
     ]),
     arrayOf(
       oneOfType([
         typeOf(Button),
         typeOf(Button.Text),
-        typeOf(Button.Outline),
+        typeOf(Button),
         typeOf(Button.Link),
       ]),
     ),

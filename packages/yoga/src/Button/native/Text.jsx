@@ -1,74 +1,86 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
+import { hexToRgb } from '@gympass/yoga-common';
 
 import withTouchable from './withTouchable';
 import { Label, ButtonContainer } from './Button';
 
 const LabelText = styled(Label)`
-  ${({
-    disabled,
-    pressed,
-    theme: {
-      yoga: {
-        components: { button },
-      },
-    },
-  }) => `
-    color: ${button.types.text.font.default.color};
-
-    ${disabled ? `color: ${button.types.text.font.disabled.color};` : ''}
-    ${
-      !disabled && pressed
-        ? `color: ${button.types.text.font.pressed.color};`
-        : ''
-    }
-  `}
+  ${({ color }) => `color: ${color};`}
 `;
 
 const ButtonContainerText = styled(ButtonContainer)`
   ${({
-    pressed,
-    disabled,
     theme: {
       yoga: {
         components: { button },
       },
     },
   }) => `
-    background-color: ${button.types.text.backgroundColor.default};
-
-    ${
-      !disabled && pressed
-        ? `
-      background-color: ${button.types.text.backgroundColor.pressed};
-    `
-        : ''
-    }
-
-    ${
-      disabled
-        ? `
-      background-color: ${button.types.text.backgroundColor.disabled};
-    `
-        : ''
-    }
+    background-color: ${button.types.text.backgroundColor};
   `}
 `;
 
-const ButtonText = ({ children, disabled, pressed, small, ...rest }) => (
-  <ButtonContainerText
-    {...rest}
-    disabled={disabled}
-    pressed={pressed}
-    small={small}
-  >
-    <LabelText disabled={disabled} pressed={pressed} small={small}>
-      {children}
-    </LabelText>
-  </ButtonContainerText>
-);
+const ButtonText = ({
+  children,
+  disabled,
+  pressed,
+  small,
+  secondary,
+  inverted,
+  icon: Icon,
+  theme: {
+    yoga: {
+      colors,
+      components: { button },
+    },
+  },
+  ...rest
+}) => {
+  let textColor = colors[secondary ? 'secondary' : 'primary'];
+
+  if (disabled) {
+    textColor = colors.text.disabled;
+  } else if (inverted) {
+    textColor = colors.white;
+    if (pressed) {
+      textColor = hexToRgb(colors.white, 0.75);
+    }
+  } else if (pressed) {
+    textColor = hexToRgb(colors[secondary ? 'secondary' : 'primary'], 0.75);
+  }
+
+  return (
+    <ButtonContainerText
+      {...rest}
+      disabled={disabled}
+      pressed={pressed}
+      small={small}
+    >
+      {Icon && (
+        <Icon
+          width={small ? button.icon.size.small : button.icon.size.default}
+          height={small ? button.icon.size.small : button.icon.size.default}
+          fill={textColor}
+          style={{
+            marginRight: button.icon.margin.right,
+          }}
+        />
+      )}
+      <LabelText
+        disabled={disabled}
+        pressed={pressed}
+        small={small}
+        secondary={secondary}
+        color={textColor}
+      >
+        {children}
+      </LabelText>
+    </ButtonContainerText>
+  );
+};
 
 ButtonText.propTypes = ButtonContainer.propTypes;
 ButtonText.defaultProps = ButtonContainer.defaultProps;
 
-export default withTouchable(ButtonText);
+export default withTouchable(withTheme(ButtonText));
