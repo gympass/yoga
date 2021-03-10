@@ -11,19 +11,12 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
   }
 >
   <TouchableWithoutFeedback
-    disabled={false}
+    checked={true}
   >
     <View
-      checked={true}
-      disabled={false}
       style={
         Object {
-          "backgroundColor": "rgba(152, 152, 166, 1)",
-          "borderRadius": 9999,
-          "display": "flex",
-          "height": 24,
-          "justifyContent": "center",
-          "width": 48,
+          "flexDirection": "row",
         }
       }
     >
@@ -32,26 +25,41 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
         disabled={false}
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "rgba(152, 152, 166, 1)",
             "borderRadius": 9999,
-            "elevation": 4,
-            "height": 20,
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 0,
-            },
-            "shadowOpacity": 1,
-            "shadowRadius": 6,
-            "transform": Array [
-              Object {
-                "translateX": 2,
-              },
-            ],
-            "width": 20,
+            "display": "flex",
+            "height": 24,
+            "justifyContent": "center",
+            "width": 48,
           }
         }
-      />
+      >
+        <View
+          checked={true}
+          disabled={false}
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "elevation": 4,
+              "height": 20,
+              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 6,
+              "transform": Array [
+                Object {
+                  "translateX": 2,
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -67,20 +75,11 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
     }
   }
 >
-  <TouchableWithoutFeedback
-    disabled={false}
-  >
+  <TouchableWithoutFeedback>
     <View
-      checked={false}
-      disabled={false}
       style={
         Object {
-          "backgroundColor": "rgba(35, 27, 34, 1)",
-          "borderRadius": 9999,
-          "display": "flex",
-          "height": 24,
-          "justifyContent": "center",
-          "width": 48,
+          "flexDirection": "row",
         }
       }
     >
@@ -89,26 +88,41 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         disabled={false}
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "rgba(35, 27, 34, 1)",
             "borderRadius": 9999,
-            "elevation": 4,
-            "height": 20,
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 0,
-            },
-            "shadowOpacity": 1,
-            "shadowRadius": 6,
-            "transform": Array [
-              Object {
-                "translateX": 26,
-              },
-            ],
-            "width": 20,
+            "display": "flex",
+            "height": 24,
+            "justifyContent": "center",
+            "width": 48,
           }
         }
-      />
+      >
+        <View
+          checked={false}
+          disabled={false}
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "elevation": 4,
+              "height": 20,
+              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 6,
+              "transform": Array [
+                Object {
+                  "translateX": 26,
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -125,19 +139,13 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   }
 >
   <TouchableWithoutFeedback
+    checked={true}
     disabled={true}
   >
     <View
-      checked={true}
-      disabled={true}
       style={
         Object {
-          "backgroundColor": "#F5F5FA",
-          "borderRadius": 9999,
-          "display": "flex",
-          "height": 24,
-          "justifyContent": "center",
-          "width": 48,
+          "flexDirection": "row",
         }
       }
     >
@@ -146,26 +154,41 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         disabled={true}
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#F5F5FA",
             "borderRadius": 9999,
-            "elevation": 4,
-            "height": 20,
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 0,
-            },
-            "shadowOpacity": 1,
-            "shadowRadius": 6,
-            "transform": Array [
-              Object {
-                "translateX": 2,
-              },
-            ],
-            "width": 20,
+            "display": "flex",
+            "height": 24,
+            "justifyContent": "center",
+            "width": 48,
           }
         }
-      />
+      >
+        <View
+          checked={true}
+          disabled={true}
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "elevation": 4,
+              "height": 20,
+              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 6,
+              "transform": Array [
+                Object {
+                  "translateX": 2,
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -185,16 +208,9 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
     disabled={true}
   >
     <View
-      checked={false}
-      disabled={true}
       style={
         Object {
-          "backgroundColor": "#F5F5FA",
-          "borderRadius": 9999,
-          "display": "flex",
-          "height": 24,
-          "justifyContent": "center",
-          "width": 48,
+          "flexDirection": "row",
         }
       }
     >
@@ -203,26 +219,41 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         disabled={true}
         style={
           Object {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#F5F5FA",
             "borderRadius": 9999,
-            "elevation": 4,
-            "height": 20,
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 0,
-            },
-            "shadowOpacity": 1,
-            "shadowRadius": 6,
-            "transform": Array [
-              Object {
-                "translateX": 26,
-              },
-            ],
-            "width": 20,
+            "display": "flex",
+            "height": 24,
+            "justifyContent": "center",
+            "width": 48,
           }
         }
-      />
+      >
+        <View
+          checked={false}
+          disabled={true}
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "elevation": 4,
+              "height": 20,
+              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 6,
+              "transform": Array [
+                Object {
+                  "translateX": 26,
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
