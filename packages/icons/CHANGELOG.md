@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0-alpha.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.12.0-alpha.0...@gympass/yoga-icons@0.12.0-alpha.1) (2021-03-11)
+
+
+### Features
+
+* **icon:** add pause and play icons ([0c82c3e](https://github.com/Gympass/yoga/commit/0c82c3ec6e9593086416784904e03b065dc1dbee))
+
+
+
+
+
 # [0.12.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.11.2-alpha.5...@gympass/yoga-icons@0.12.0-alpha.0) (2021-02-26)
 
 
