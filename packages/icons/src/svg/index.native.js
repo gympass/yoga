@@ -88,10 +88,12 @@ import NotificationOff from './notification_off.svg';
 import PaperPin from './paper_pin.svg';
 import Paperclip from './paperclip.svg';
 import Password from './password.svg';
+import Pause from './pause.svg';
 import PhoneFilled from './phone_filled.svg';
 import Phone from './phone.svg';
 import PieChart from './pie_chart.svg';
 import PinFilled from './pin_filled.svg';
+import Play from './play.svg';
 import PlayFilled from './play_filled.svg';
 import PlusCircle from './plus_circle.svg';
 import Printer from './printer.svg';
@@ -222,10 +224,12 @@ export {
   PaperPin,
   Paperclip,
   Password,
+  Pause,
   PhoneFilled,
   Phone,
   PieChart,
   PinFilled,
+  Play,
   PlayFilled,
   PlusCircle,
   Printer,
