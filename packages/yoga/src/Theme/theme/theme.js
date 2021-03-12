@@ -3,7 +3,8 @@ import * as componentThemes from '../../**/*.theme.js';
 
 /**
  * @typedef {typeof import('@gympass/yoga-tokens/src/global')} Tokens
- * @typedef {import('packages/tokens/src/global/font-sizes').FontSize} FontSize
+ * @typedef {import('@gympass/yoga-tokens/src/global/fonts').Font} Font
+ * @typedef {import('@gympass/yoga-tokens/src/global/font-sizes').FontSize} FontSize
  * @typedef {import('@gympass/yoga-tokens/src/global/colors').Color} Color
  * @typedef {import('@gympass/yoga-tokens/src/global/colors').Colors} Colors
  */
@@ -45,9 +46,24 @@ import * as componentThemes from '../../**/*.theme.js';
  */
 
 /**
+ * @typedef YogaTheme
+ * 
+ * @property {Font} baseFont 
+ * @property {FontSize} baseFontSize 
+ * @property {ThemeColors} colors 
+ */
+
+/**
+ * @typedef Theme
+ * @type {YogaTheme & Tokens}
+ */
+
+/**
  * @param {Tokens} tokens
+ * @returns {Theme & Tokens} Yoga theme
  */
 const theme = tokens => {
+  /** @type {Font} */
   const baseFont = tokens.fonts.rubik;
   /** @type {FontSize} */
   const baseFontSize = tokens.fontSizes.medium;
