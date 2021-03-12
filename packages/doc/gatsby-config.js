@@ -71,6 +71,9 @@ const plugins = [
 ];
 
 module.exports = {
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+  },
   siteMetadata: {
     title: config.siteMetadata.title,
     description: config.siteMetadata.description,
