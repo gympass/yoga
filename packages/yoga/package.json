@@ -38,20 +38,20 @@
     "@gympass/yoga-helpers": "^0.1.1-alpha.0",
     "@gympass/yoga-icons": "^0.11.2-alpha.5",
     "@gympass/yoga-tokens": "^1.1.0-alpha.0",
-    "@ptomasroos/react-native-multi-slider": "^1.0.0",
-    "downshift": "^5.0.0",
+    "@ptomasroos/react-native-multi-slider": "^2.2.2",
+    "downshift": "^6.1.0",
     "prop-types": "^15.7.2",
-    "proxy-polyfill": "^0.3.1",
-    "rc-slider": "^8.7.1",
+    "proxy-polyfill": "^0.3.2",
+    "rc-slider": "^9.7.1",
     "react-google-font-loader": "^1.1.0"
   },
   "devDependencies": {
-    "@testing-library/react": "^9.1.4",
-    "@testing-library/react-native": "^4.1.0",
-    "babel-plugin-inline-react-svg": "^1.1.1",
-    "styled-components": "^4.4.0"
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/react-native": "^7.2.0",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "styled-components": "^5.2.1"
   },
   "peerDependencies": {
-    "styled-components": "^4.4.0"
+    "styled-components": "^5.2.1"
   }
 }
