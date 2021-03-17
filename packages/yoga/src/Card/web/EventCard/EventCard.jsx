@@ -1,10 +1,10 @@
 import React from 'react';
 import styled, { withTheme, css } from 'styled-components';
-import { oneOf, shape, string } from 'prop-types';
-import { Clock } from '@gympass/yoga-icons';
+import { shape, string } from 'prop-types';
+import { Time } from '@gympass/yoga-icons';
 
 import Card from '../Card';
-import Text from '../../../Text';
+import { TextRenderer, Text } from '../../../Text/web/Text';
 
 const Event = styled(Card)`
   display: flex;
@@ -28,7 +28,7 @@ const EventInfo = styled.div`
     padding: ${event.info.padding.top}px ${event.info.padding.right}px
       ${event.info.padding.bottom}px ${event.info.padding.left}px;
 
-    ${Text}, ${Text.Small} {
+    ${TextRenderer}, ${Text.Small} {
       display: -webkit-inline-box;
       overflow: hidden;
 
@@ -38,7 +38,7 @@ const EventInfo = styled.div`
       text-overflow: -o-ellipsis-lastline;
     }
 
-    ${Text} {
+    ${TextRenderer} {
       height: ${event.info.name.height}px;
       margin-bottom: ${event.info.name.marginBottom}px;
 
@@ -63,10 +63,11 @@ const EventTime = styled.div`
 
 const DateInfo = styled.div`
   ${({
-    variant,
     theme: {
       yoga: {
-        colors: { [variant]: color },
+        components: {
+          card: { event },
+        },
       },
     },
   }) => `
@@ -77,7 +78,7 @@ const DateInfo = styled.div`
     flex-shrink: 0;
 
     width: 56px;
-    background-color: ${color[2]};
+    background-color: ${event.date.backgroundColor};
   `}
 `;
 
@@ -114,7 +115,6 @@ const Month = styled(Text.Small)`
 const EventCard = ({
   event,
   date,
-  variant,
   theme: {
     yoga: {
       components: {
@@ -127,7 +127,7 @@ const EventCard = ({
   ...rest
 }) => (
   <Event {...rest}>
-    <DateInfo variant={variant}>
+    <DateInfo>
       <DayOfWeek inverted>{date.dayOfWeek}</DayOfWeek>
       <Text.H5 inverted>{date.day}</Text.H5>
       <Month inverted>{date.month}</Month>
@@ -138,7 +138,7 @@ const EventCard = ({
       </Text>
       <Text.Small title={event.place}>{event.place}</Text.Small>
       <EventTime>
-        <Clock fill={icon.fill} style={{ marginRight: 5 }} />
+        <Time fill={icon.fill} style={{ marginRight: 5 }} />
         <Text.Tiny>{event.time}</Text.Tiny>
       </EventTime>
     </EventInfo>
@@ -158,12 +158,6 @@ EventCard.propTypes = {
     dayOfWeek: string,
     month: string,
   }).isRequired,
-  /** style the card following the theme (primary, secondary, tertiary) */
-  variant: oneOf(['primary', 'secondary', 'tertiary']),
-};
-
-EventCard.defaultProps = {
-  variant: 'secondary',
 };
 
 EventCard.displayName = 'EventCard';

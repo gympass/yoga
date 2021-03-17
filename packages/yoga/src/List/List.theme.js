@@ -9,7 +9,7 @@ const List = ({ spacing, borders, colors }) => ({
   },
   border: {
     width: borders.small,
-    color: colors.gray[3],
+    color: colors.elements.backgroundAndDisabled,
   },
 });
 

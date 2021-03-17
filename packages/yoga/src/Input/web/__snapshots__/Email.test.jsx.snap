@@ -15,59 +15,62 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   box-sizing: border-box;
   height: 52px;
   padding-top: 16px;
-  padding-right: 40px;
+  padding-right: 52px;
   padding-bottom: 16px;
   padding-left: 16px;
-  color: #41414A;
+  color: #231B22;
   font-family: Rubik,sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
 .c2:focus {
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2:focus ~ legend {
   max-width: 1000px;
-  padding: 0 2px;
+  -webkit-transition-property: max-width;
+  transition-property: max-width;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
 }
 
 .c2:focus ~ label {
   -webkit-transform: translateY(-24px);
   -ms-transform: translateY(-24px);
   transform: translateY(-24px);
-  -webkit-transition-property: -webkit-transform,font-size;
-  -webkit-transition-property: transform,font-size;
-  transition-property: transform,font-size;
+  -webkit-transition-property: -webkit-transform,font-size,color;
+  -webkit-transition-property: transform,font-size,color;
+  transition-property: transform,font-size,color;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
-  font-weight: 700;
-  color: #41414A;
+  font-weight: 400;
+  color: #231B22;
 }
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D3D3E2;
+  color: #D7D7E0;
 }
 
 .c2::-webkit-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::-moz-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2:-ms-input-placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2::placeholder {
-  color: #9898A6;
+  color: #6B6B78;
 }
 
 .c2[type="number"]::-webkit-outer-spin-button,
@@ -90,12 +93,16 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D3D3E2;
+  border-color: #D7D7E0;
 }
 
 .c1:hover,
 .c1:focus-within {
-  border-color: #41414A;
+  border-color: #231B22;
+}
+
+.c1:focus-within + .c6 {
+  color: #231B22;
 }
 
 .c4 {
@@ -106,11 +113,15 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   height: 0;
   font-weight: normal;
   visibility: hidden;
+  -webkit-transition-property: max-width,padding;
+  transition-property: max-width,padding;
   font-size: 12px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
+  -webkit-transition-duration: 100ms;
+  transition-duration: 100ms;
 }
 
 .c5 {
@@ -133,7 +144,7 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   left: 16px;
   font-size: 14px;
   font-weight: 400;
-  color: #9898A6;
+  color: #6B6B78;
   -webkit-transition-property: -webkit-transform,font-size;
   -webkit-transition-property: transform,font-size;
   transition-property: transform,font-size;

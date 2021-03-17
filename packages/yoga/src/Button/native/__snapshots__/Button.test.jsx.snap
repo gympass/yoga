@@ -29,8 +29,10 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
         style={
           Array [
             Object {
-              "backgroundColor": "#DBDBE8",
+              "alignItems": "center",
+              "backgroundColor": "#F5F5FA",
               "borderRadius": 9999,
+              "flexDirection": "row",
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -40,16 +42,158 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
         }
       >
         <Text
+          color="#D7D7E0"
           disabled={true}
           inverted={false}
           pressed={false}
+          small={false}
           style={
             Array [
               Object {
-                "color": "#9898A6",
+                "color": "#D7D7E0",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Button
+        </Text>
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Button /> Snapshots With disabled prop should match snapshot with default Button with Icon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    disabled={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        disabled={true}
+        full={false}
+        inverted={false}
+        pressed={false}
+        small={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#F5F5FA",
+              "borderRadius": 9999,
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#D7D7E0"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "marginRight": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4292335584,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          color="#D7D7E0"
+          disabled={true}
+          inverted={false}
+          pressed={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "color": "#D7D7E0",
+                "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -85,83 +229,19 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
     >
       <Text
         disabled={true}
-        inverted={false}
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#9898A6",
+              "color": "#D7D7E0",
               "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "marginBottom": 8,
-              "marginTop": 16,
+              "fontSize": 16,
+              "fontWeight": "500",
               "textAlign": "center",
             },
           ]
         }
-        variant="primary"
       />
-    </View>
-  </TouchableWithoutFeedback>
-</View>
-`;
-
-exports[`<Button /> Snapshots With disabled prop should match snapshot with outline Button 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <TouchableWithoutFeedback
-    disabled={true}
-  >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        disabled={true}
-        pressed={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "transparent",
-              "borderColor": "#9898A6",
-              "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
-              "height": 48,
-              "justifyContent": "center",
-              "paddingLeft": 24,
-              "paddingRight": 24,
-            },
-          ]
-        }
-      >
-        <Text
-          disabled={true}
-          pressed={false}
-          style={
-            Array [
-              Object {
-                "color": "#9898A6",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
-                "textAlign": "center",
-              },
-            ]
-          }
-        />
-      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -193,8 +273,10 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 9999,
+              "flexDirection": "row",
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -204,15 +286,149 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
         }
       >
         <Text
+          color="#D7D7E0"
           disabled={true}
           pressed={false}
           style={
             Array [
               Object {
-                "color": "#9898A6",
+                "color": "#D7D7E0",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Button /> Snapshots With disabled prop should match snapshot with text Button with Icon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    disabled={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        disabled={true}
+        pressed={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 9999,
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#D7D7E0"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "marginRight": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4292335584,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          color="#D7D7E0"
+          disabled={true}
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#D7D7E0",
+                "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -253,8 +469,10 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
         style={
           Array [
             Object {
-              "backgroundColor": "#F46152",
+              "alignItems": "center",
+              "backgroundColor": "#231B22",
               "borderRadius": 9999,
+              "flexDirection": "row",
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -265,16 +483,18 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
         }
       >
         <Text
+          color="#FFFFFF"
           disabled={false}
           inverted={false}
           pressed={false}
+          small={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -288,7 +508,7 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
 </View>
 `;
 
-exports[`<Button /> Snapshots With full prop should match snapshot with outline Button 1`] = `
+exports[`<Button /> Snapshots With full prop should match snapshot with default Button with Icon 1`] = `
 <View
   collapsable={true}
   pointerEvents="box-none"
@@ -309,16 +529,18 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
       }
     >
       <View
+        disabled={false}
         full={true}
+        inverted={false}
         pressed={false}
+        small={false}
         style={
           Array [
             Object {
-              "backgroundColor": "transparent",
-              "borderColor": "#F46152",
+              "alignItems": "center",
+              "backgroundColor": "#231B22",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
+              "flexDirection": "row",
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -328,20 +550,99 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
           ]
         }
       >
-        <Text
-          pressed={false}
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#FFFFFF"
+          focusable={false}
+          height={24}
           style={
             Array [
               Object {
-                "color": "#F46152",
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "marginRight": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4294967295,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          color="#FFFFFF"
+          disabled={false}
+          inverted={false}
+          pressed={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
           }
-        />
+        >
+          Button
+        </Text>
       </View>
     </View>
   </TouchableWithoutFeedback>
@@ -374,8 +675,10 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 9999,
+              "flexDirection": "row",
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -386,14 +689,148 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
         }
       >
         <Text
+          color="#231B22"
           pressed={false}
           style={
             Array [
               Object {
-                "color": "#F46152",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Button /> Snapshots With full prop should match snapshot with text Button with Icon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    full={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        full={true}
+        pressed={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 9999,
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#231B22"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "marginRight": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4280490786,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          color="#231B22"
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -434,8 +871,10 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "#FFFFFF",
               "borderRadius": 9999,
+              "flexDirection": "row",
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -445,16 +884,18 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
         }
       >
         <Text
+          color="#231B22"
           disabled={false}
           inverted={true}
           pressed={false}
+          small={false}
           style={
             Array [
               Object {
-                "color": "#F46152",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -468,51 +909,7 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
 </View>
 `;
 
-exports[`<Button /> Snapshots With inverted prop should match snapshot with link Button 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <TouchableWithoutFeedback
-    inverted={true}
-  >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <Text
-        disabled={false}
-        inverted={true}
-        pressed={false}
-        style={
-          Array [
-            Object {
-              "color": "#FFFFFF",
-              "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "marginBottom": 8,
-              "marginTop": 16,
-              "textAlign": "center",
-            },
-          ]
-        }
-        variant="primary"
-      />
-    </View>
-  </TouchableWithoutFeedback>
-</View>
-`;
-
-exports[`<Button /> Snapshots With inverted prop should match snapshot with outline Button 1`] = `
+exports[`<Button /> Snapshots With inverted prop should match snapshot with default Button with Icon 1`] = `
 <View
   collapsable={true}
   pointerEvents="box-none"
@@ -533,16 +930,18 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
       }
     >
       <View
+        disabled={false}
+        full={false}
         inverted={true}
         pressed={false}
+        small={false}
         style={
           Array [
             Object {
-              "backgroundColor": "transparent",
-              "borderColor": "#FFFFFF",
+              "alignItems": "center",
+              "backgroundColor": "#FFFFFF",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
+              "flexDirection": "row",
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -551,21 +950,99 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
           ]
         }
       >
-        <Text
-          inverted={true}
-          pressed={false}
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#231B22"
+          focusable={false}
+          height={24}
           style={
             Array [
               Object {
-                "color": "#FFFFFF",
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "marginRight": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4280490786,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          color="#231B22"
+          disabled={false}
+          inverted={true}
+          pressed={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
           }
-        />
+        >
+          Button
+        </Text>
       </View>
     </View>
   </TouchableWithoutFeedback>
@@ -593,13 +1070,14 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
       }
     >
       <View
-        inverted={true}
         pressed={false}
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 9999,
+              "flexDirection": "row",
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -609,14 +1087,146 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
         }
       >
         <Text
+          color="#FFFFFF"
           pressed={false}
           style={
             Array [
               Object {
-                "color": "#F46152",
+                "color": "#FFFFFF",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Button /> Snapshots With inverted prop should match snapshot with text Button with Icon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    inverted={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        pressed={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 9999,
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#FFFFFF"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "marginRight": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4294967295,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          color="#FFFFFF"
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -657,27 +1267,31 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
         style={
           Array [
             Object {
-              "backgroundColor": "#F46152",
+              "alignItems": "center",
+              "backgroundColor": "#231B22",
               "borderRadius": 9999,
+              "flexDirection": "row",
               "height": 32,
               "justifyContent": "center",
-              "paddingLeft": 24,
-              "paddingRight": 24,
+              "paddingLeft": 16,
+              "paddingRight": 16,
             },
           ]
         }
       >
         <Text
+          color="#FFFFFF"
           disabled={false}
           inverted={false}
           pressed={false}
+          small={true}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
-                "fontWeight": "700",
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -691,7 +1305,7 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
 </View>
 `;
 
-exports[`<Button /> Snapshots With small prop should match snapshot with outline Button 1`] = `
+exports[`<Button /> Snapshots With small prop should match snapshot with default Button with Icon 1`] = `
 <View
   collapsable={true}
   pointerEvents="box-none"
@@ -712,38 +1326,119 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
       }
     >
       <View
+        disabled={false}
+        full={false}
+        inverted={false}
         pressed={false}
         small={true}
         style={
           Array [
             Object {
-              "backgroundColor": "transparent",
-              "borderColor": "#F46152",
+              "alignItems": "center",
+              "backgroundColor": "#231B22",
               "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 1,
+              "flexDirection": "row",
               "height": 32,
               "justifyContent": "center",
-              "paddingLeft": 24,
-              "paddingRight": 24,
+              "paddingLeft": 16,
+              "paddingRight": 16,
             },
           ]
         }
       >
-        <Text
-          pressed={false}
+        <RNSVGSvgView
+          bbHeight={16}
+          bbWidth={16}
+          fill="#FFFFFF"
+          focusable={false}
+          height={16}
           style={
             Array [
               Object {
-                "color": "#F46152",
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "marginRight": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 16,
+                "width": 16,
+              },
+            ]
+          }
+          width={16}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4294967295,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          color="#FFFFFF"
+          disabled={false}
+          inverted={false}
+          pressed={false}
+          small={true}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
-                "fontWeight": "700",
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
           }
-        />
+        >
+          Button
+        </Text>
       </View>
     </View>
   </TouchableWithoutFeedback>
@@ -776,25 +1471,162 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 9999,
+              "flexDirection": "row",
               "height": 32,
               "justifyContent": "center",
-              "paddingLeft": 24,
-              "paddingRight": 24,
+              "paddingLeft": 16,
+              "paddingRight": 16,
             },
           ]
         }
       >
         <Text
+          color="#231B22"
           pressed={false}
+          small={true}
           style={
             Array [
               Object {
-                "color": "#F46152",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
-                "fontWeight": "700",
+                "fontWeight": "500",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Button /> Snapshots With small prop should match snapshot with text Button with Icon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    small={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        pressed={false}
+        small={true}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 9999,
+              "flexDirection": "row",
+              "height": 32,
+              "justifyContent": "center",
+              "paddingLeft": 16,
+              "paddingRight": 16,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={16}
+          bbWidth={16}
+          fill="#231B22"
+          focusable={false}
+          height={16}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "marginRight": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 16,
+                "width": 16,
+              },
+            ]
+          }
+          width={16}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4280490786,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          color="#231B22"
+          pressed={false}
+          small={true}
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -833,8 +1665,10 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
         style={
           Array [
             Object {
-              "backgroundColor": "#F46152",
+              "alignItems": "center",
+              "backgroundColor": "#231B22",
               "borderRadius": 9999,
+              "flexDirection": "row",
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -844,16 +1678,156 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
         }
       >
         <Text
+          color="#FFFFFF"
           disabled={false}
           inverted={false}
           pressed={false}
+          small={false}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Button
+        </Text>
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Button /> Snapshots Without props should match snapshot with default Button with Icon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        disabled={false}
+        full={false}
+        inverted={false}
+        pressed={false}
+        small={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#231B22",
+              "borderRadius": 9999,
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#FFFFFF"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "marginRight": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4294967295,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          color="#FFFFFF"
+          disabled={false}
+          inverted={false}
+          pressed={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "color": "#FFFFFF",
+                "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -887,79 +1861,19 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
     >
       <Text
         disabled={false}
-        inverted={false}
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#F46152",
+              "color": "#D8385E",
               "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "marginBottom": 8,
-              "marginTop": 16,
+              "fontSize": 16,
+              "fontWeight": "500",
               "textAlign": "center",
             },
           ]
         }
-        variant="primary"
       />
-    </View>
-  </TouchableWithoutFeedback>
-</View>
-`;
-
-exports[`<Button /> Snapshots Without props should match snapshot with outline Button 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <TouchableWithoutFeedback>
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        pressed={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "transparent",
-              "borderColor": "#F46152",
-              "borderRadius": 9999,
-              "borderStyle": "solid",
-              "borderWidth": 2,
-              "height": 48,
-              "justifyContent": "center",
-              "paddingLeft": 24,
-              "paddingRight": 24,
-            },
-          ]
-        }
-      >
-        <Text
-          pressed={false}
-          style={
-            Array [
-              Object {
-                "color": "#F46152",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
-                "textAlign": "center",
-              },
-            ]
-          }
-        />
-      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -988,8 +1902,10 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
         style={
           Array [
             Object {
+              "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 9999,
+              "flexDirection": "row",
               "height": 48,
               "justifyContent": "center",
               "paddingLeft": 24,
@@ -999,14 +1915,15 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
         }
       >
         <Text
+          color="#231B22"
           pressed={false}
           style={
             Array [
               Object {
-                "color": "#F46152",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "700",
+                "fontSize": 16,
+                "fontWeight": "500",
                 "textAlign": "center",
               },
             ]
@@ -1018,7 +1935,7 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
 </View>
 `;
 
-exports[`<Button /> With variant prop should match snapshot with default Button 1`] = `
+exports[`<Button /> Snapshots Without props should match snapshot with text Button with Icon 1`] = `
 <View
   collapsable={true}
   pointerEvents="box-none"
@@ -1028,9 +1945,7 @@ exports[`<Button /> With variant prop should match snapshot with default Button 
     }
   }
 >
-  <TouchableWithoutFeedback
-    variant="primary"
-  >
+  <TouchableWithoutFeedback>
     <View
       style={
         Object {
@@ -1038,87 +1953,112 @@ exports[`<Button /> With variant prop should match snapshot with default Button 
         }
       }
     >
-      <Text
-        disabled={false}
-        inverted={false}
+      <View
         pressed={false}
         style={
           Array [
             Object {
-              "color": "#F46152",
-              "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "marginBottom": 8,
-              "marginTop": 16,
-              "textAlign": "center",
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderRadius": 9999,
+              "flexDirection": "row",
+              "height": 48,
+              "justifyContent": "center",
+              "paddingLeft": 24,
+              "paddingRight": 24,
             },
           ]
         }
-        variant="primary"
-      />
-    </View>
-  </TouchableWithoutFeedback>
-  <TouchableWithoutFeedback
-    variant="secondary"
-  >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <Text
-        disabled={false}
-        inverted={false}
-        pressed={false}
-        style={
-          Array [
-            Object {
-              "color": "#652CDB",
-              "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "marginBottom": 8,
-              "marginTop": 16,
-              "textAlign": "center",
-            },
-          ]
-        }
-        variant="secondary"
-      />
-    </View>
-  </TouchableWithoutFeedback>
-  <TouchableWithoutFeedback
-    variant="tertiary"
-  >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <Text
-        disabled={false}
-        inverted={false}
-        pressed={false}
-        style={
-          Array [
-            Object {
-              "color": "#22766B",
-              "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "700",
-              "marginBottom": 8,
-              "marginTop": 16,
-              "textAlign": "center",
-            },
-          ]
-        }
-        variant="tertiary"
-      />
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#231B22"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "marginRight": 8,
+              },
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4280490786,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          color="#231B22"
+          pressed={false}
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "textAlign": "center",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
   </TouchableWithoutFeedback>
 </View>

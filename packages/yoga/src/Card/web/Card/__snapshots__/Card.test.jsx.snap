@@ -7,16 +7,28 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -27,22 +39,37 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
   text-decoration: none;
 }
 
+.c1 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c1:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
+.c1:active svg {
+  fill: #FFFFFF;
+}
+
 .c1:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  color: #D7D7E0;
   cursor: not-allowed;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
 }
 
 .c0 {

@@ -1,5 +1,5 @@
 const Rating = ({ spacing, colors }) => ({
-  backgroundColor: colors.rating,
+  backgroundColor: colors.energy,
   icon: {
     size: 12,
   },

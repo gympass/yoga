@@ -12,13 +12,13 @@ const Wrapper = styled.div`
   ${({
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { white, elements },
       },
     },
   }) => `
     align-items: center;
-    background-color: ${grayPallete[0]};
-    box-shadow: 0 2px 2px ${grayPallete[1]};
+    background-color: ${white};
+    box-shadow: 0 2px 2px ${elements.backgroundAndDisabled};
     display: flex;
     flex-direction: row;
     grid-area: Header;
@@ -61,12 +61,12 @@ const YogaLogo = styled(yoga)`
   ${({
     theme: {
       yoga: {
-        colors: { primary: primaryPallete },
+        colors: { primary },
       },
     },
   }) => `
     path {
-      fill: ${primaryPallete[3]};
+      fill: ${primary};
       transition: all 0.3s ease-in-out;
     }
 

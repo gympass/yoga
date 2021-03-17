@@ -9,39 +9,51 @@ const Button = ({
   fontWeights,
 }) => ({
   padding: {
-    right: spacing.large,
-    left: spacing.large,
+    default: {
+      right: spacing.large,
+      left: spacing.large,
+    },
+    small: {
+      right: spacing.small,
+      left: spacing.small,
+    },
   },
   height: {
     default: 48,
     small: 32,
   },
   font: {
-    size: fontSizes.small,
-    weight: fontWeights.bold,
+    size: {
+      default: fontSizes.medium,
+      small: fontSizes.small,
+    },
+    weight: fontWeights.medium,
   },
   border: {
-    small: {
-      width: borders.small,
-    },
-    default: {
-      width: borders.medium,
-    },
     radius: radii.circle,
+  },
+  icon: {
+    size: {
+      default: 24,
+      small: 16,
+    },
+    margin: {
+      right: spacing.xxsmall,
+    },
   },
   types: {
     contained: {
       backgroundColor: {
-        disabled: colors.gray[3],
-        default: colors.primary[3],
-        pressed: colors.primary[2],
+        disabled: colors.elements.backgroundAndDisabled,
+        default: colors.primary,
+        pressed: hexToRgb(colors.primary, 0.75),
       },
       font: {
         default: {
           color: colors.white,
         },
         disabled: {
-          color: colors.gray[7],
+          color: colors.text.disabled,
         },
         pressed: {
           color: colors.white,
@@ -50,46 +62,35 @@ const Button = ({
     },
     outline: {
       backgroundColor: {
-        disabled: 'transparent',
         default: 'transparent',
-        pressed: 'transparent',
-        hover: hexToRgb(colors.primary[3], 0.3),
+        hover: colors.primary,
+      },
+      border: {
+        width: borders.small,
       },
       font: {
         default: {
-          color: colors.primary[3],
+          color: colors.text.primary,
         },
         disabled: {
-          color: colors.gray[7],
+          color: colors.text.disabled,
+        },
+        hover: {
+          color: colors.white,
         },
         pressed: {
-          color: colors.primary[2],
+          color: hexToRgb(colors.text.primary, 0.75),
         },
       },
     },
     text: {
-      backgroundColor: {
-        disabled: 'transparent',
-        default: 'transparent',
-        pressed: 'transparent',
-        hover: hexToRgb(colors.primary[3], 0.3),
-      },
-      font: {
-        default: {
-          color: colors.primary[3],
-        },
-        disabled: {
-          color: colors.gray[7],
-        },
-        pressed: {
-          color: colors.primary[2],
-        },
-      },
+      backgroundColor: 'transparent',
     },
     link: {
       font: {
+        color: colors.secondary,
         disabled: {
-          color: colors.gray[7],
+          color: colors.text.disabled,
         },
       },
       margin: {

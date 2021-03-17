@@ -46,7 +46,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
         ]
       }
       variant=""
-      variantIntensity={3}
     >
       <View
         style={
@@ -79,7 +78,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
@@ -92,54 +91,45 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
         </Text>
       </View>
       <View
-        height={12}
+        height={18}
         pointerEvents="none"
         style={
           Array [
             Object {
               "alignItems": "center",
               "flexDirection": "row",
-              "height": 12,
+              "height": 18,
               "justifyContent": "center",
-              "width": 76,
+              "width": 90,
             },
           ]
         }
-        width={76}
+        width={90}
       >
         <RNSVGSvgView
-          align="xMidYMid"
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={18}
+          bbWidth={18}
           fill="#FFC24C"
           focusable={false}
-          height={12}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
+          height={18}
           style={
             Array [
               Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 18,
+                "width": 18,
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
-          width={12}
+          width={18}
         >
           <RNSVGGroup
             fill={
@@ -188,38 +178,29 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={18}
+          bbWidth={18}
           fill="#FFC24C"
           focusable={false}
-          height={12}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
+          height={18}
           style={
             Array [
               Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 18,
+                "width": 18,
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
-          width={12}
+          width={18}
         >
           <RNSVGGroup
             fill={
@@ -268,38 +249,29 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={18}
+          bbWidth={18}
           fill="#FFC24C"
           focusable={false}
-          height={12}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
+          height={18}
           style={
             Array [
               Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 18,
+                "width": 18,
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
-          width={12}
+          width={18}
         >
           <RNSVGGroup
             fill={
@@ -348,38 +320,29 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={18}
+          bbWidth={18}
           fill="#FFC24C"
           focusable={false}
-          height={12}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
+          height={18}
           style={
             Array [
               Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 18,
+                "width": 18,
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
-          width={12}
+          width={18}
         >
           <RNSVGGroup
             fill={
@@ -428,38 +391,29 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={18}
+          bbWidth={18}
           fill="#FFC24C"
           focusable={false}
-          height={12}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
+          height={18}
           style={
             Array [
               Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 18,
+                "width": 18,
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
-          width={12}
+          width={18}
         >
           <RNSVGGroup
             fill={
@@ -519,15 +473,20 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
       >
         <Text
           inverted={false}
+          light={false}
           numberOfLines={2}
+          size="medium"
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "400",
                 "lineHeight": 24,
+              },
+              Object {
+                "fontWeight": "400",
                 "marginBottom": 8,
                 "minHeight": 40,
               },
@@ -541,7 +500,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
@@ -604,7 +563,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
         ]
       }
       variant=""
-      variantIntensity={3}
     >
       <View
         style={
@@ -622,7 +580,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
             Array [
               Object {
                 "alignItems": "center",
-                "borderColor": "#DBDBE8",
+                "borderColor": "#D7D7E0",
                 "borderRadius": 8,
                 "borderStyle": "solid",
                 "borderWidth": 1,
@@ -636,7 +594,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           <RNSVGSvgView
             bbHeight={26}
             bbWidth={24}
-            fill="#DBDBE8"
+            fill="#9898A6"
             focusable={false}
             height={26}
             style={
@@ -662,7 +620,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               fill={
                 Array [
                   0,
-                  4292598760,
+                  4288190630,
                 ]
               }
               fillOpacity={1}
@@ -709,7 +667,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
@@ -722,54 +680,45 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
         </Text>
       </View>
       <View
-        height={12}
+        height={18}
         pointerEvents="none"
         style={
           Array [
             Object {
               "alignItems": "center",
               "flexDirection": "row",
-              "height": 12,
+              "height": 18,
               "justifyContent": "center",
-              "width": 76,
+              "width": 90,
             },
           ]
         }
-        width={76}
+        width={90}
       >
         <RNSVGSvgView
-          align="xMidYMid"
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={18}
+          bbWidth={18}
           fill="#FFC24C"
           focusable={false}
-          height={12}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
+          height={18}
           style={
             Array [
               Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 18,
+                "width": 18,
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
-          width={12}
+          width={18}
         >
           <RNSVGGroup
             fill={
@@ -818,38 +767,29 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={18}
+          bbWidth={18}
           fill="#FFC24C"
           focusable={false}
-          height={12}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
+          height={18}
           style={
             Array [
               Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 18,
+                "width": 18,
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
-          width={12}
+          width={18}
         >
           <RNSVGGroup
             fill={
@@ -898,38 +838,29 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={18}
+          bbWidth={18}
           fill="#FFC24C"
           focusable={false}
-          height={12}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
+          height={18}
           style={
             Array [
               Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 18,
+                "width": 18,
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
-          width={12}
+          width={18}
         >
           <RNSVGGroup
             fill={
@@ -978,38 +909,29 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={18}
+          bbWidth={18}
           fill="#FFC24C"
           focusable={false}
-          height={12}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
+          height={18}
           style={
             Array [
               Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 18,
+                "width": 18,
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
-          width={12}
+          width={18}
         >
           <RNSVGGroup
             fill={
@@ -1058,38 +980,29 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           />
         </RNSVGSvgView>
         <RNSVGSvgView
-          align="xMidYMid"
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={18}
+          bbWidth={18}
           fill="#FFC24C"
           focusable={false}
-          height={12}
-          meetOrSlice={0}
-          minX={0}
-          minY={0}
+          height={18}
           style={
             Array [
               Object {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Object {
-                "marginLeft": 2,
-                "marginRight": 2,
-              },
+              undefined,
               Object {
                 "opacity": 1,
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 18,
+                "width": 18,
               },
             ]
           }
-          vbHeight={12}
-          vbWidth={12}
-          width={12}
+          width={18}
         >
           <RNSVGGroup
             fill={
@@ -1149,15 +1062,20 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
       >
         <Text
           inverted={false}
+          light={false}
           numberOfLines={2}
+          size="medium"
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "400",
                 "lineHeight": 24,
+              },
+              Object {
+                "fontWeight": "400",
                 "marginBottom": 8,
                 "minHeight": 40,
               },
@@ -1171,7 +1089,7 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",

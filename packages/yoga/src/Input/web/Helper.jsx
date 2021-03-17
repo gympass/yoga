@@ -4,7 +4,7 @@ import { bool, string, number } from 'prop-types';
 
 import Text from '../../Text';
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   ${({
     disabled,
     error,
@@ -18,8 +18,8 @@ const Wrapper = styled.div`
     display: flex;
     margin-top: ${input.helper.margin.top}px;
 
-    ${error ? `color: ${colors.negative[1]};` : ''}
-    ${disabled ? `color: ${colors.disabled.background};` : ''}
+    color: ${error ? colors.feedback.attention[1] : input.helper.color.default};
+    ${disabled ? `color: ${colors.text.disabled};` : ''}
   `}
 `;
 

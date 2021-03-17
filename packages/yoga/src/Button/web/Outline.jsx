@@ -1,57 +1,120 @@
+import React from 'react';
 import styled from 'styled-components';
+import { bool, func, node, oneOfType } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
 
 import Button from './Button';
 
-const ButtonOutline = styled(Button)`
+const Outline = styled(Button)`
   ${({
     inverted,
     theme: {
       yoga: {
-        colors: { white, gray },
-        components: { button },
+        colors: { white },
+        components: {
+          button: {
+            types: { outline },
+          },
+        },
       },
     },
   }) => `
-    background-color: ${button.types.outline.backgroundColor.default};
-    border-color: ${button.types.outline.font.default.color};
-    color: ${button.types.outline.font.default.color};
+    background-color: ${outline.backgroundColor.default};
+    border: ${outline.border.width}px solid;
+    border-color: ${outline.font.default.color};
+    color: ${outline.font.default.color};
+
+    svg {
+      fill: ${outline.font.default.color};
+    }
 
     &:not([disabled]):hover, &:not([disabled]):focus {
-      background-color: ${button.types.outline.backgroundColor.hover};
-      box-shadow: none;
+      background-color: ${outline.backgroundColor.hover};
+      color: ${outline.font.hover.color};
+
+      svg {
+        fill: ${outline.font.hover.color};
+      }
     }
 
     &:not([disabled]):active {
-      background-color: ${button.types.outline.backgroundColor.pressed};
-      border-color: ${button.types.outline.font.pressed.color};
-      color: ${button.types.outline.font.pressed.color};
+      background-color: ${outline.backgroundColor.default};
+      border-color: ${outline.font.pressed.color};
+      color: ${outline.font.pressed.color};
+      box-shadow: none;
+
+      svg {
+        fill: ${outline.font.pressed.color};
+      }
     }
 
     &:disabled {
-      background-color: ${button.types.outline.backgroundColor.disabled};
-      border-color: ${button.types.outline.font.disabled.color};
-      color: ${button.types.outline.font.disabled.color};
+      background-color: ${outline.backgroundColor.default};
+      border-color: ${outline.font.disabled.color};
+      color: ${outline.font.disabled.color};
+
+      svg {
+        fill: ${outline.font.disabled.color};
+      }
     }
 
     ${
       inverted
         ? `
-        border-color: ${white};
-        color: ${white};
+          border-color: ${white};
+          color: ${white};
 
-        &:not([disabled]):hover, &:not([disabled]):focus {
-          background-color: ${hexToRgb(white, 0.3)};
-        }
+          svg {
+            fill: ${white};
+          }
 
-        &:not([disabled]):active {
-          border-color: ${gray[3]};
-          color: ${gray[3]};
-        }
-    `
+          &:not([disabled]):hover, &:not([disabled]):focus {
+            background-color: ${white};
+            color: ${outline.font.default.color};
+
+            svg {
+              fill: ${outline.font.default.color};
+            }
+          }
+
+          &:not([disabled]):active {
+            background-color: ${outline.backgroundColor.default};
+            border-color: ${hexToRgb(white, 0.75)};
+            color: ${hexToRgb(white, 0.75)};
+
+            svg {
+              fill: ${hexToRgb(white, 0.75)};
+            }
+          }
+
+          &:disabled {
+            border-color: ${outline.font.disabled.color};
+            color: ${outline.font.disabled.color};
+            svg {
+              fill: ${outline.font.disabled.color};
+            }
+          }
+        `
         : ''
     }
   `}
 `;
+
+const ButtonOutline = props => <Outline {...props} />;
+
+ButtonOutline.propTypes = {
+  inverted: bool,
+  small: bool,
+  /** an Icon from yoga-icons package */
+  icon: oneOfType([node, func]),
+};
+
+ButtonOutline.defaultProps = {
+  inverted: false,
+  small: false,
+  icon: undefined,
+};
+
+ButtonOutline.displayName = 'Button.Outline';
 
 export default ButtonOutline;

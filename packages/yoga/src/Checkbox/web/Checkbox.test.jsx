@@ -6,7 +6,6 @@ import Checkbox from '..';
 import ThemeProvider from '../../Theme';
 
 const data = {
-  value: 'value',
   label: 'Checkbox Component',
   helper: 'Helper Text',
 };
@@ -27,21 +26,6 @@ describe('<Checkbox />', () => {
       const { container } = render(
         <ThemeProvider>
           <Checkbox />
-        </ThemeProvider>,
-      );
-      expect(container).toMatchSnapshot();
-    });
-
-    it('should match snapshot with all variant styles', () => {
-      const { container } = render(
-        <ThemeProvider>
-          <Checkbox variant="primary" />
-          <Checkbox variant="secondary" />
-          <Checkbox variant="tertiary" />
-
-          <Checkbox variant="primary" checked />
-          <Checkbox variant="secondary" checked />
-          <Checkbox variant="tertiary" checked />
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();
@@ -96,6 +80,33 @@ describe('<Checkbox />', () => {
       const { container } = render(
         <ThemeProvider>
           <Checkbox {...data} error="Error msg" checked />
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with inverted', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox {...data} inverted />
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with inverted and checked', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox {...data} inverted checked />
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with inverted and checked and disabled', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox {...data} inverted checked disabled />
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();

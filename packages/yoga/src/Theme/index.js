@@ -1,5 +1,5 @@
 import { ThemeProvider, FontLoader } from './Provider';
-import * as themes from './themes';
+import yogaTheme from './theme';
 import theme from './helpers/themeReader';
 
-export { ThemeProvider as default, FontLoader, themes, theme };
+export { ThemeProvider as default, FontLoader, yogaTheme, theme };

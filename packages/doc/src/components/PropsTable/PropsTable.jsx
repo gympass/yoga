@@ -10,11 +10,11 @@ const TableWrapper = styled.div`
   ${({
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { elements },
       },
     },
   }) => `
-    border: 1px solid ${grayPallete[3]};
+    border: 1px solid ${elements.lineAndBorders};
     border-radius: 5px;
     overflow-x: auto;
   `};
@@ -24,18 +24,18 @@ const StyledTable = styled.table`
   ${({
     theme: {
       yoga: {
-        colors: { primary: primaryPallete, gray: grayPallete },
+        colors: { primary, white, elements },
       },
     },
   }) => `
-    background-color: ${grayPallete[0]};
+    background-color: ${white};
     border-collapse: collapse;
     font-family: monospace;
     margin: 0px 0;
     width: 100%;
 
     thead {
-      background-color: ${hexToRgb(grayPallete[1], 0.5)};
+      background-color: ${hexToRgb(elements.lineAndBorders, 0.5)};
       font-family: 'neue-haas-grotesk-display';
 
 
@@ -50,11 +50,11 @@ const StyledTable = styled.table`
 
     tbody {
       tr {
-        background-color: ${grayPallete[0]};
+        background-color: ${white};
 
         td {
           border: none;
-          border-top: 1px solid ${hexToRgb(grayPallete[3], 0.7)};
+          border-top: 1px solid ${hexToRgb(elements.selectionAndIcons, 0.7)};
           padding: 14px 12px 12px;
 
           &:first-child {
@@ -63,7 +63,7 @@ const StyledTable = styled.table`
 
           &:nth-child(3),
           &:last-child {
-            color: ${primaryPallete[3]};
+            color: ${primary};
           }
         }
       }
@@ -126,7 +126,7 @@ Table.defaultProps = {
   },
 };
 
-const PropsTable = ({ component, platform }) => {
+const PropsTable = ({ component, platform = '' }) => {
   const {
     allComponentMetadata: { edges },
   } = MetaDataQuery();

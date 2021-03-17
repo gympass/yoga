@@ -4,11 +4,12 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
 .c2 {
   position: relative;
   display: block;
+  pointer-events: none;
   width: 20px;
   height: 20px;
   border-width: 2px;
   border-style: solid;
-  border-color: #A9A9B8;
+  border-color: #9898A6;
   border-radius: 9999px;
 }
 
@@ -38,7 +39,8 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
 }
 
 .c0:hover .c1 {
-  box-shadow: 0 0 0 8px rgba(230,230,240,0.25);
+  z-index: 1;
+  box-shadow: 0 0 0 8px rgba(215,215,224,0.25);
 }
 
 <div>

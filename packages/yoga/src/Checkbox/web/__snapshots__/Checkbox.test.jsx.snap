@@ -1,381 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Checkbox /> Snapshots should match snapshot with all variant styles 1`] = `
-.c7 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
-.c0 {
-  display: inline-block;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c6 {
-  position: relative;
-  border-style: solid;
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #F46152;
-}
-
-.c9 {
-  position: relative;
-  border-style: solid;
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #652CDB;
-}
-
-.c11 {
-  position: relative;
-  border-style: solid;
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #22766B;
-}
-
-.c12 {
-  position: relative;
-  border-style: solid;
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #F46152;
-  background-color: #F46152;
-}
-
-.c12 svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  fill: #FFFFFF;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-}
-
-.c13 {
-  position: relative;
-  border-style: solid;
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #652CDB;
-  background-color: #652CDB;
-}
-
-.c13 svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  fill: #FFFFFF;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-}
-
-.c14 {
-  position: relative;
-  border-style: solid;
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #22766B;
-  background-color: #22766B;
-}
-
-.c14 svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  fill: #FFFFFF;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 14px;
-  color: #41414A;
-}
-
-.c5 {
-  position: absolute;
-  display: none;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-}
-
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 .c2:active .c4,
-.c1:focus-within .c4,
-.c1:hover .c4 {
-  display: block;
-}
-
-.c1 .c2:active .c4 {
-  background-color: rgba(250,185,178,0.75);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.75);
-}
-
-.c1:focus-within .c4,
-.c1:hover .c4 {
-  background-color: rgba(250,185,178,0.5);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.5);
-}
-
-.c8 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c8 .c2:active .c4,
-.c8:focus-within .c4,
-.c8:hover .c4 {
-  display: block;
-}
-
-.c8 .c2:active .c4 {
-  background-color: rgba(160,124,233,0.75);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.75);
-}
-
-.c8:focus-within .c4,
-.c8:hover .c4 {
-  background-color: rgba(160,124,233,0.5);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.5);
-}
-
-.c10 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c10 .c2:active .c4,
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  display: block;
-}
-
-.c10 .c2:active .c4 {
-  background-color: rgba(85,169,158,0.75);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
-}
-
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  background-color: rgba(85,169,158,0.5);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
-}
-
-<div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c1"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c6"
-        />
-        <input
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c8"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c9"
-        />
-        <input
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c10"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c11"
-        />
-        <input
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c1"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c12"
-        >
-          <svg />
-        </div>
-        <input
-          checked=""
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c8"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c13"
-        >
-          <svg />
-        </div>
-        <input
-          checked=""
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c10"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c14"
-        >
-          <svg />
-        </div>
-        <input
-          checked=""
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] = `
 .c7 {
   border: 0;
@@ -402,10 +26,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: #231B22;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #F46152;
-  background-color: #F46152;
+  border-color: #231B22;
 }
 
 .c6 svg {
@@ -431,8 +55,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
-  color: #41414A;
+  font-size: 16px;
+  color: #231B22;
 }
 
 .c5 {
@@ -461,49 +85,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   display: block;
 }
 
-.c1 .c2:active .c4 {
-  background-color: rgba(250,185,178,0.75);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.75);
-}
-
-.c1:focus-within .c4,
 .c1:hover .c4 {
-  background-color: rgba(250,185,178,0.5);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.5);
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
 }
 
-.c10 .c2:active .c4,
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  display: block;
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
 }
 
-.c10 .c2:active .c4 {
-  background-color: rgba(160,124,233,0.75);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.75);
-}
-
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  background-color: rgba(160,124,233,0.5);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.5);
-}
-
-.c11 .c2:active .c4,
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  display: block;
-}
-
-.c11 .c2:active .c4 {
-  background-color: rgba(85,169,158,0.75);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
-}
-
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  background-color: rgba(85,169,158,0.5);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
 }
 
 .c8 {
@@ -512,7 +106,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 }
 
 .c9 {
-  color: #9898A6;
+  color: #6B6B78;
   font-size: 14px;
 }
 
@@ -532,7 +126,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
         <div
           class="c6"
         >
-          <svg />
+          <svg
+            height="24"
+            width="24"
+          />
         </div>
         <input
           checked=""
@@ -581,9 +178,20 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #F46152;
+  border-color: #231B22;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c3 {
@@ -599,8 +207,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
-  color: #41414A;
+  font-size: 16px;
+  color: #231B22;
 }
 
 .c5 {
@@ -629,49 +237,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   display: block;
 }
 
-.c1 .c2:active .c4 {
-  background-color: rgba(250,185,178,0.75);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.75);
-}
-
-.c1:focus-within .c4,
 .c1:hover .c4 {
-  background-color: rgba(250,185,178,0.5);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.5);
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
 }
 
-.c10 .c2:active .c4,
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  display: block;
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
 }
 
-.c10 .c2:active .c4 {
-  background-color: rgba(160,124,233,0.75);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.75);
-}
-
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  background-color: rgba(160,124,233,0.5);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.5);
-}
-
-.c11 .c2:active .c4,
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  display: block;
-}
-
-.c11 .c2:active .c4 {
-  background-color: rgba(85,169,158,0.75);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
-}
-
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  background-color: rgba(85,169,158,0.5);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
 }
 
 .c8 {
@@ -680,7 +258,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 }
 
 .c9 {
-  color: #9898A6;
+  color: #6B6B78;
   font-size: 14px;
 }
 
@@ -746,11 +324,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: #D7D7E0;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #9898A6;
-  background-color: #F46152;
-  background-color: #9898A6;
+  border-color: #D7D7E0;
 }
 
 .c6 svg {
@@ -776,8 +353,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
-  color: #41414A;
+  font-size: 16px;
+  color: #231B22;
 }
 
 .c5 {
@@ -806,49 +383,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   display: block;
 }
 
-.c1 .c2:active .c4 {
-  background-color: rgba(250,185,178,0.75);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.75);
-}
-
-.c1:focus-within .c4,
 .c1:hover .c4 {
-  background-color: rgba(250,185,178,0.5);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.5);
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
 }
 
-.c10 .c2:active .c4,
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  display: block;
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
 }
 
-.c10 .c2:active .c4 {
-  background-color: rgba(160,124,233,0.75);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.75);
-}
-
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  background-color: rgba(160,124,233,0.5);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.5);
-}
-
-.c11 .c2:active .c4,
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  display: block;
-}
-
-.c11 .c2:active .c4 {
-  background-color: rgba(85,169,158,0.75);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
-}
-
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  background-color: rgba(85,169,158,0.5);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
 }
 
 .c8 {
@@ -857,7 +404,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 }
 
 .c9 {
-  color: #9898A6;
+  color: #6B6B78;
   font-size: 14px;
 }
 
@@ -878,7 +425,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
           class="c6"
           disabled=""
         >
-          <svg />
+          <svg
+            height="24"
+            width="24"
+          />
         </div>
         <input
           checked=""
@@ -928,9 +478,20 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #9898A6;
+  border-color: #D7D7E0;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c3 {
@@ -946,8 +507,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
-  color: #41414A;
+  font-size: 16px;
+  color: #231B22;
 }
 
 .c5 {
@@ -976,49 +537,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   display: block;
 }
 
-.c1 .c2:active .c4 {
-  background-color: rgba(250,185,178,0.75);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.75);
-}
-
-.c1:focus-within .c4,
 .c1:hover .c4 {
-  background-color: rgba(250,185,178,0.5);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.5);
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
 }
 
-.c10 .c2:active .c4,
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  display: block;
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
 }
 
-.c10 .c2:active .c4 {
-  background-color: rgba(160,124,233,0.75);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.75);
-}
-
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  background-color: rgba(160,124,233,0.5);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.5);
-}
-
-.c11 .c2:active .c4,
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  display: block;
-}
-
-.c11 .c2:active .c4 {
-  background-color: rgba(85,169,158,0.75);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
-}
-
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  background-color: rgba(85,169,158,0.5);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
 }
 
 .c8 {
@@ -1027,7 +558,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 }
 
 .c9 {
-  color: #9898A6;
+  color: #6B6B78;
   font-size: 14px;
 }
 
@@ -1095,12 +626,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: #FF874C;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #F46152;
-  background-color: #F46152;
-  border-color: #CB3530;
-  background-color: #CB3530;
+  border-color: #FF874C;
 }
 
 .c6 svg {
@@ -1126,8 +655,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
-  color: #41414A;
+  font-size: 16px;
+  color: #231B22;
 }
 
 .c5 {
@@ -1156,49 +685,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   display: block;
 }
 
-.c1 .c2:active .c4 {
-  background-color: rgba(250,185,178,0.75);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.75);
-}
-
-.c1:focus-within .c4,
 .c1:hover .c4 {
-  background-color: rgba(250,185,178,0.5);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.5);
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
 }
 
-.c10 .c2:active .c4,
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  display: block;
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
 }
 
-.c10 .c2:active .c4 {
-  background-color: rgba(160,124,233,0.75);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.75);
-}
-
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  background-color: rgba(160,124,233,0.5);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.5);
-}
-
-.c11 .c2:active .c4,
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  display: block;
-}
-
-.c11 .c2:active .c4 {
-  background-color: rgba(85,169,158,0.75);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
-}
-
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  background-color: rgba(85,169,158,0.5);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
 }
 
 .c8 {
@@ -1207,7 +706,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 }
 
 .c9 {
-  color: #CB3530;
+  color: #FF874C;
   font-size: 14px;
 }
 
@@ -1227,7 +726,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
         <div
           class="c6"
         >
-          <svg />
+          <svg
+            height="24"
+            width="24"
+          />
         </div>
         <input
           checked=""
@@ -1276,10 +778,20 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #F46152;
-  border-color: #CB3530;
+  border-color: #FF874C;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c3 {
@@ -1295,8 +807,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
-  color: #41414A;
+  font-size: 16px;
+  color: #231B22;
 }
 
 .c5 {
@@ -1325,49 +837,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   display: block;
 }
 
-.c1 .c2:active .c4 {
-  background-color: rgba(250,185,178,0.75);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.75);
-}
-
-.c1:focus-within .c4,
 .c1:hover .c4 {
-  background-color: rgba(250,185,178,0.5);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.5);
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
 }
 
-.c10 .c2:active .c4,
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  display: block;
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
 }
 
-.c10 .c2:active .c4 {
-  background-color: rgba(160,124,233,0.75);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.75);
-}
-
-.c10:focus-within .c4,
-.c10:hover .c4 {
-  background-color: rgba(160,124,233,0.5);
-  box-shadow: 0 0 0 8px rgba(160,124,233,0.5);
-}
-
-.c11 .c2:active .c4,
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  display: block;
-}
-
-.c11 .c2:active .c4 {
-  background-color: rgba(85,169,158,0.75);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.75);
-}
-
-.c11:focus-within .c4,
-.c11:hover .c4 {
-  background-color: rgba(85,169,158,0.5);
-  box-shadow: 0 0 0 8px rgba(85,169,158,0.5);
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
 }
 
 .c8 {
@@ -1376,7 +858,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 }
 
 .c9 {
-  color: #CB3530;
+  color: #FF874C;
   font-size: 14px;
 }
 
@@ -1416,7 +898,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 </div>
 `;
 
-exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
+exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
 .c7 {
   border: 0;
   height: 0;
@@ -1442,9 +924,20 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #F46152;
+  border-color: #FFFFFF;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #231B22;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c3 {
@@ -1460,8 +953,8 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
-  color: #41414A;
+  font-size: 16px;
+  color: #231B22;
 }
 
 .c5 {
@@ -1490,15 +983,471 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   display: block;
 }
 
-.c1 .c2:active .c4 {
-  background-color: rgba(250,185,178,0.75);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.75);
+.c1:hover .c4 {
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
 }
 
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
+}
+
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
+}
+
+.c8 {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.c9 {
+  color: #6B6B78;
+  font-size: 14px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c6"
+        />
+        <input
+          class="c7"
+          type="checkbox"
+        />
+        Checkbox Component
+      </label>
+    </div>
+    <div
+      class="c8"
+    >
+      <span
+        class="c9"
+      >
+        Helper Text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 1`] = `
+.c7 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 {
+  display: inline-block;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #FFFFFF;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #231B22;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #231B22;
+}
+
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .c2:active .c4,
 .c1:focus-within .c4,
 .c1:hover .c4 {
-  background-color: rgba(250,185,178,0.5);
-  box-shadow: 0 0 0 8px rgba(250,185,178,0.5);
+  display: block;
+}
+
+.c1:hover .c4 {
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
+}
+
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
+}
+
+.c8 {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.c9 {
+  color: #6B6B78;
+  font-size: 14px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c6"
+        >
+          <svg
+            height="24"
+            width="24"
+          />
+        </div>
+        <input
+          checked=""
+          class="c7"
+          type="checkbox"
+        />
+        Checkbox Component
+      </label>
+    </div>
+    <div
+      class="c8"
+    >
+      <span
+        class="c9"
+      >
+        Helper Text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked and disabled 1`] = `
+.c7 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 {
+  display: inline-block;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-color: #D7D7E0;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #D7D7E0;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #231B22;
+}
+
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
+}
+
+.c1:hover .c4 {
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
+}
+
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
+}
+
+.c8 {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.c9 {
+  color: #6B6B78;
+  font-size: 14px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c6"
+          disabled=""
+        >
+          <svg
+            height="24"
+            width="24"
+          />
+        </div>
+        <input
+          checked=""
+          class="c7"
+          disabled=""
+          type="checkbox"
+        />
+        Checkbox Component
+      </label>
+    </div>
+    <div
+      class="c8"
+    >
+      <span
+        class="c9"
+      >
+        Helper Text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
+.c7 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 {
+  display: inline-block;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-color: transparent;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #231B22;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #231B22;
+}
+
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
+}
+
+.c1:hover .c4 {
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
+}
+
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
 }
 
 <div>

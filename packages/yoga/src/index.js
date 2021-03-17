@@ -1,4 +1,4 @@
-import ThemeProvider, { FontLoader, themes, theme } from './Theme';
+import ThemeProvider, { FontLoader, yogaTheme, theme } from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -15,11 +15,12 @@ import Progress from './Progress';
 import Dropdown from './Dropdown';
 import TextArea from './TextArea';
 import AutoComplete from './AutoComplete';
+import Icon from './Icon';
 
 export {
   ThemeProvider,
   FontLoader,
-  themes,
+  yogaTheme,
   theme,
   Button,
   List,
@@ -42,4 +43,5 @@ export {
   Dropdown,
   TextArea,
   AutoComplete,
+  Icon,
 };

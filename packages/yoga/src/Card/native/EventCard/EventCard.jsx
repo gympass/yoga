@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { oneOf, shape, string } from 'prop-types';
-import { Clock } from '@gympass/yoga-icons';
+import { shape, string } from 'prop-types';
+import { Time } from '@gympass/yoga-icons';
 
 import Card from '../Card';
 import Text from '../../../Text';
@@ -15,13 +15,11 @@ const Event = styled(Card)`
 
 const DateInfo = styled.View`
   ${({
-    variant,
     theme: {
       yoga: {
         components: {
           card: { event },
         },
-        colors: { [variant]: color },
       },
     },
   }) => `
@@ -32,7 +30,7 @@ const DateInfo = styled.View`
 
     border-top-left-radius: ${event.date.radius}px;
     border-bottom-left-radius: ${event.date.radius}px;
-    background-color: ${color[2]};
+    background-color: ${event.date.backgroundColor};
   `}
 `;
 
@@ -123,7 +121,6 @@ const EventTime = styled.View`
 const EventCard = ({
   event,
   date,
-  variant,
   theme: {
     yoga: {
       components: {
@@ -137,7 +134,7 @@ const EventCard = ({
 }) => {
   return (
     <Event {...rest}>
-      <DateInfo variant={variant}>
+      <DateInfo>
         <DayOfWeek inverted>{date.dayOfWeek}</DayOfWeek>
         <Text.H5 inverted>{date.day}</Text.H5>
         <Month inverted>{date.month}</Month>
@@ -146,7 +143,7 @@ const EventCard = ({
         <Name numberOfLines={1}>{event.name}</Name>
         <Place numberOfLines={1}>{event.place}</Place>
         <EventTime>
-          <Clock fill={icon.fill} style={{ marginRight: 5 }} />
+          <Time fill={icon.fill} style={{ marginRight: 5 }} />
           <Text.Tiny>{event.time}</Text.Tiny>
         </EventTime>
       </EventInfo>
@@ -167,12 +164,6 @@ EventCard.propTypes = {
     dayOfWeek: string,
     month: string,
   }).isRequired,
-  /** style the card following the theme (primary, secondary, tertiary) */
-  variant: oneOf(['primary', 'secondary', 'tertiary']),
-};
-
-EventCard.defaultProps = {
-  variant: 'secondary',
 };
 
 EventCard.displayName = 'EventCard';

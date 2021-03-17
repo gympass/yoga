@@ -19,6 +19,8 @@ commit some change, please use:
 $ yarn commit
 ```
 
+We usually follow the `{{feat|fix|doc|ci}}/{{what-am-i-doing}}` for branch names.
+
 ## New Component
 
 At Yoga, a Component isn't just one file. It has its own docs, tests, exports,
@@ -64,7 +66,7 @@ packages
 
 ### Theme
 
-Currently we have 3 predefined themes `Corporate`, `EndUser` and `Gyms`, all
+Currently, we have 3 predefined themes `Corporate`, `EndUser` and `Gyms`, all
 of them follows the `BaseTheme` object.
 
 Every component has its own `theme` file. You can find it in its own folder.
@@ -75,7 +77,7 @@ margins, to the component theme file.
 ### Web
 
 We use our doc environment to build our components. To develop your component,
-you can just type
+you can just type.
 
 ```
 $ yarn dev:web
@@ -93,7 +95,7 @@ native version of our components.
 
 #### iOS (Mac only)
 
-For the iOS development, type and the simulator will open automacally.
+For the iOS development, type, and the simulator will open automagically.
 
 ```
 $ yarn dev:native:ios
@@ -120,7 +122,7 @@ can run:
 $ yarn test /path/to/your/component
 ```
 
-Or you can run it by platform:
+Or you can run it by a platform:
 
 ```
 $ yarn test:web /path/to/your/component
@@ -144,7 +146,7 @@ $ yarn test:web
 
 If you want to add a documentation that isn't of a component, like
 [this one](https://gympass.github.io/yoga/guidelines/product-content), you can
-create an `.md` file under `./docs/content/guidelines` and it will be automacally added.
+create an `.md` file under `./docs/content/guidelines` and it will be automagically added.
 
 ## New Icon
 
@@ -153,7 +155,7 @@ Just add the `.svg` file under `packages/icons/src/svg` and modify the
 
 ## Git Hooks
 
-There is two hooks inside Yoga repo:
+We have two hooks inside Yoga repo:
 
 1. `pre-commit`: run eslint on all repo
 2. `pre-push`: run `yarn test`

@@ -13,7 +13,7 @@ const ProgressBar = styled.progress`
     variant,
     theme: {
       yoga: {
-        colors: { [variant]: color = {} },
+        colors: { [variant]: color },
         components: { progress },
       },
     },
@@ -37,7 +37,7 @@ const ProgressBar = styled.progress`
   }
 
   &::-webkit-progress-value {
-    background-color: ${color[3]};
+    background-color: ${color};
   }
 
   &&,
@@ -46,7 +46,7 @@ const ProgressBar = styled.progress`
   }
 
   &[value]::-moz-progress-bar {
-    background-color: ${color[3]};
+    background-color: ${color};
   }
 `}
 `;
@@ -152,8 +152,28 @@ Progress.propTypes = {
    * indeterminate; this indicates that an activity is ongoing with no
    * indication of how long it is expected to take. */
   value: number,
-  /** Value color based on theme colors (primary, secondary, tertiary). */
-  variant: oneOf(['primary', 'secondary', 'tertiary']),
+  /** style the card following the theme (primary, secondary, vibin, hope,
+   * energy, relax, peace, verve, uplift, deepPurple, deep, stamina, dark,
+   * medium, light, clear, white) */
+  variant: oneOf([
+    'primary',
+    'secondary',
+    'vibin',
+    'hope',
+    'energy',
+    'relax',
+    'peace',
+    'verve',
+    'uplift',
+    'deepPurple',
+    'stamina',
+    'dark',
+    'medium',
+    'deep',
+    'light',
+    'clear',
+    'white',
+  ]),
 };
 
 Progress.defaultProps = {
@@ -163,7 +183,7 @@ Progress.defaultProps = {
   },
   max: 1,
   value: undefined,
-  variant: 'primary',
+  variant: 'verve',
 };
 
 export default Progress;

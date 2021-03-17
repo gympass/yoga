@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
-import { ThemeProvider } from '@gympass/yoga';
+import { ThemeProvider, theme } from '@gympass/yoga';
 import { version } from '@gympass/yoga/package.json';
 
 import { GlobalStyle, Home } from 'components';
@@ -12,12 +12,20 @@ import Gympass from 'images/gympass-logo.svg';
 const YogaLogo = styled(Lotus)`
   width: 78px;
 
+  path {
+    fill: ${theme.colors.primary};
+  }
+
   @media (max-width: 900px) {
     width: 50px;
   }
 `;
 
 const GympassLogo = styled(Gympass)`
+  path {
+    fill: ${theme.colors.primary};
+  }
+
   @media (max-width: 900px) {
     width: 80px;
   }
@@ -45,12 +53,12 @@ const Version = styled.a(
   ({
     theme: {
       yoga: {
-        colors: { gray },
+        colors: { text },
       },
     },
   }) => `
   text-decoration: none;
-  color: ${gray[8]};
+  color: ${text.secondary};
   font-size: 16px;
 `,
 );
@@ -95,7 +103,7 @@ const HomePage = () => (
       <GlobalStyle />
       <Wrapper>
         <Home.Header>
-          <YogaLogo />
+          <YogaLogo fill="#000" />
           <Version
             href="https://github.com/gympass/yoga"
             rel="noopener noreferrer"

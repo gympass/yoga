@@ -8,7 +8,7 @@ import {
   Modal,
 } from 'react-native';
 
-import { Text } from '@gympass/yoga';
+import { Text } from '../..';
 
 const ClosableArea = styled(Animated.View)`
   ${({
@@ -20,7 +20,7 @@ const ClosableArea = styled(Animated.View)`
     width: 100%;
     height: 100%;
 
-    background-color: ${colors.dark};
+    background-color: ${colors.text.primary};
   `}
 `;
 

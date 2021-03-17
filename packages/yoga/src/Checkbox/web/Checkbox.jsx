@@ -1,8 +1,8 @@
 import React from 'react';
-import { bool, string, objectOf, any, oneOf } from 'prop-types';
-import styled from 'styled-components';
+import { bool, string, objectOf, any } from 'prop-types';
+import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Done } from '@gympass/yoga-icons';
+import { Check } from '@gympass/yoga-icons';
 
 import { HiddenInput } from '../../shared';
 
@@ -22,52 +22,69 @@ const CheckMark = styled.div`
   ${({
     checked,
     disabled,
+    inverted,
     error,
-    variant,
     theme: {
       yoga: {
-        colors: { [variant]: color = [], negative },
+        colors: { primary, feedback, elements, white },
         components: { checkbox },
       },
     },
-  }) => `
+  }) => {
+    let borderColor = primary;
+    let bgColor = 'transparent';
+    let checkColor = checkbox.checked.icon.color;
+
+    if (error) {
+      [, borderColor] = feedback.attention;
+
+      if (checked) {
+        [, bgColor] = feedback.attention;
+      }
+    } else if (disabled) {
+      borderColor = checkbox.disabled.border.color;
+
+      if (checked) {
+        bgColor = checkbox.disabled.backgroundColor;
+        borderColor = elements.lineAndBorders;
+      }
+    } else if (checked) {
+      borderColor = primary;
+      bgColor = primary;
+      checkColor = checkbox.checked.icon.color;
+
+      if (inverted) {
+        bgColor = white;
+        borderColor = white;
+        checkColor = primary;
+      }
+    } else if (inverted) {
+      borderColor = white;
+      checkColor = primary;
+    }
+
+    return `
     width: ${checkbox.size}px;
     height: ${checkbox.size}px;
 
     margin-right: ${checkbox.margin.right}px;
+    
+    background-color: ${bgColor}; 
 
     border-radius: ${checkbox.border.radius}px;
     border-width: ${checkbox.border.width}px;
-    border-color: ${disabled ? checkbox.disabled.border.color : color[3]};
+    border-color: ${borderColor};
 
-    ${
-      checked
-        ? `
-        background-color: ${color[3]}; 
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
 
-        svg {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          
-          fill: ${checkbox.checked.icon.color};
+      fill: ${checkColor};
 
-          transform: translate(-50%, -50%);
-        }
-        `
-        : ''
-    }
-
-    ${
-      disabled && checked
-        ? `background-color: ${checkbox.disabled.backgroundColor};`
-        : ''
-    }
-
-    ${error ? `border-color: ${negative[1]};` : ''}
-
-    ${error && checked ? `background-color: ${negative[1]};` : ''}
-  `}
+      transform: translate(-50%, -50%);
+    }`;
+  }}
 `;
 
 const Label = styled.label`
@@ -112,10 +129,9 @@ const CheckboxStyled = styled.div`
   align-items: center;
 
   ${({
-    variant,
     theme: {
       yoga: {
-        colors: { [variant]: color = [] },
+        colors: { elements },
         components: { checkbox },
       },
     },
@@ -131,19 +147,30 @@ const CheckboxStyled = styled.div`
         }
       }
 
-      ${Label}:active {
+      &:hover {
         ${Shadow} {
-          background-color: ${hexToRgb(color[1], 0.75)};
-
-          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[1], 0.75)};
+          background-color: ${hexToRgb(elements.lineAndBorders, 0.25)};
+          
+          box-shadow: 0 0 0 ${shadowSize}px 
+            ${hexToRgb(elements.lineAndBorders, 0.25)};
         }
       }
 
-      &:focus-within, &:hover {
+      &:focus-within {
         ${Shadow} {
-          background-color: ${hexToRgb(color[1], 0.5)};
+          background-color: ${hexToRgb(elements.lineAndBorders, 0.5)};
           
-          box-shadow: 0 0 0 ${shadowSize}px ${hexToRgb(color[1], 0.5)};
+          box-shadow: 0 0 0 ${shadowSize}px 
+            ${hexToRgb(elements.lineAndBorders, 0.5)};
+        }
+      }
+
+      ${Label}:active {
+        ${Shadow} {
+          background-color: ${hexToRgb(elements.lineAndBorders, 0.75)};
+
+          box-shadow: 0 0 0 ${shadowSize}px 
+            ${hexToRgb(elements.lineAndBorders, 0.75)};
         }
       }
     `;
@@ -169,12 +196,12 @@ const Helper = styled.span`
     error,
     theme: {
       yoga: {
-        colors: { negative },
+        colors: { feedback },
         components: { checkbox },
       },
     },
   }) => `
-    color: ${error ? negative[1] : checkbox.helper.font.color};
+    color: ${error ? feedback.attention[1] : checkbox.helper.font.color};
 
     font-size: ${checkbox.helper.font.size}px;
   `}
@@ -192,11 +219,16 @@ const Checkbox = ({
   error,
   style,
   className,
-  variant,
+  inverted,
+  theme: {
+    yoga: {
+      components: { checkbox },
+    },
+  },
   ...rest
 }) => (
   <CheckboxWrapper style={style} className={className}>
-    <CheckboxStyled variant={variant}>
+    <CheckboxStyled>
       <Label>
         <Shadow />
         <CheckMark
@@ -204,10 +236,10 @@ const Checkbox = ({
             disabled,
             checked,
             error,
-            variant,
+            inverted,
           }}
         >
-          {checked && <Done />}
+          {checked && <Check width={checkbox.size} height={checkbox.size} />}
         </CheckMark>
         <HiddenInput
           type="checkbox"
@@ -233,12 +265,11 @@ Checkbox.propTypes = {
   value: string,
   checked: bool,
   disabled: bool,
+  inverted: bool,
   error: string,
   /** set a style to the checkbox container */
   style: objectOf(any),
   className: string,
-  /** style the card following the theme (primary, secondary, tertiary) */
-  variant: oneOf(['primary', 'secondary', 'tertiary']),
 };
 
 Checkbox.defaultProps = {
@@ -247,12 +278,12 @@ Checkbox.defaultProps = {
   helper: undefined,
   checked: false,
   disabled: false,
+  inverted: false,
   error: undefined,
   style: undefined,
   className: undefined,
-  variant: 'primary',
 };
 
 Checkbox.displayName = 'Checkbox';
 
-export default Checkbox;
+export default withTheme(Checkbox);

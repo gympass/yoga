@@ -3,313 +3,300 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [5.2.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.2...@gympass/yoga@5.2.3) (2021-02-09)
+# [5.2.0-alpha.9](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.8...@gympass/yoga@5.2.0-alpha.9) (2021-03-17)
 
 
 ### Bug Fixes
 
-* **native:** remove inputValue from input component ([5348c16](https://github.com/Gympass/yoga/commit/5348c162304d766bb85b17235950e9936c808c9b))
-* remove inputValue from input component ([c9890c3](https://github.com/Gympass/yoga/commit/c9890c314166e16c6d03317fd0720db6d3ccc3a0))
+* **autocomplete:** matching Figma file ([298f833](https://github.com/Gympass/yoga/commit/298f833dde219e494767663fa93700e2cea4b413))
+* **button:** fix missing unit warnings ([8cf87aa](https://github.com/Gympass/yoga/commit/8cf87aaa48cf1e539c5556cf6d726a6c057f4c94))
+* **button.outline:** update button.outline layout with new figma specification ([a4b881f](https://github.com/Gympass/yoga/commit/a4b881fa241b6c348e0c82a6427e47bf2e374702))
+* **checkbox.switch:** updating states tokens ([854c3f8](https://github.com/Gympass/yoga/commit/854c3f898a9a57b1a2bf04bca6e6c7d31f4cfaa9))
+* **helper:** update helper text color when error ([0f7557d](https://github.com/Gympass/yoga/commit/0f7557d100e61dc51b35b24e59a37537f945db5d))
+* **native:** fix Button components to reflect figma design ([a433d0d](https://github.com/Gympass/yoga/commit/a433d0d1cd1600ee89683f63f62a032a7709774b))
+* **radiogroup:** adjust default text color ([73a159d](https://github.com/Gympass/yoga/commit/73a159d8b80d0ee6baffaaa58e8f0d2681cb1bc7))
+* **web:** fix button components to reflect figma design ([fa39aaf](https://github.com/Gympass/yoga/commit/fa39aaf0d2016e21f601773d61dbb6f053f53491))
+
+
+### Features
+
+* **button:** add icon support to Button, Button.Text and Button.Outline ([8308108](https://github.com/Gympass/yoga/commit/8308108b56f3a17c59d8bd8c137fe127d29e5a30))
+* **checkbox:** update Checkbox to match Figma file ([5fef900](https://github.com/Gympass/yoga/commit/5fef9005bb500459b5b468bd24704b7670a597b4))
+* **dropdown:** update Dropdown to match Figma file ([bd95558](https://github.com/Gympass/yoga/commit/bd95558feff980385cfc545a3499e2a59aa27969))
+* **helper:** export Input Helper to be used outside of it ([96c44cb](https://github.com/Gympass/yoga/commit/96c44cb7bdded42a2981d188236b4cf6d140f223))
+* **switch:** adjust thumb color on native and shadow ([0079510](https://github.com/Gympass/yoga/commit/00795101849dbb627600bcfa66e5ce14c778d45b))
+* **switch:** onPress shadow ([ffbc1c0](https://github.com/Gympass/yoga/commit/ffbc1c06c8c09aabb3d5b12be6ca2e79f627c132))
 
 
 
 
+
+# [5.2.0-alpha.8](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.7...@gympass/yoga@5.2.0-alpha.8) (2021-03-11)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+# [5.2.0-alpha.7](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.6...@gympass/yoga@5.2.0-alpha.7) (2021-03-03)
+
+### Features
+
+- **text:** add section title as a new variation to the text component ([5be64e5](https://github.com/Gympass/yoga/commit/5be64e59a819d72bf04b2a5ff588693123695bc6))
+- **text:** adding the smallestException as a new variant to the text component ([3b095fb](https://github.com/Gympass/yoga/commit/3b095fbac532e9a821b7d9963bd1f1c56bf9d2c7))
+
+# [5.2.0-alpha.6](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.5...@gympass/yoga@5.2.0-alpha.6) (2021-03-01)
+
+### Features
+
+- **tag:** fix tag default color, refactor tests, change docs ([16d6232](https://github.com/Gympass/yoga/commit/16d623272fd8fe4844cdb1f292cc44e92b0134d2))
+- **tag:** remove tag full / fix tag informative to be without tag as default ([1ead324](https://github.com/Gympass/yoga/commit/1ead324b0dec9ec33036799dab9f4fa0632baf00))
+- **tag:** update tag border color and icon margin ([51cae3c](https://github.com/Gympass/yoga/commit/51cae3c7713389b1b918cccbc0bb1e69e8bf37ff))
+- refactor tag component to Yoga 2.0 ([d748909](https://github.com/Gympass/yoga/commit/d7489096e99dee6d01a47ffa8857390b6a0dc6dc))
+
+# [5.2.0-alpha.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.4...@gympass/yoga@5.2.0-alpha.5) (2021-02-26)
+
+**Note:** Version bump only for package @gympass/yoga
+
+# [5.2.0-alpha.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.3...@gympass/yoga@5.2.0-alpha.4) (2021-02-17)
+
+### Bug Fixes
+
+- **native:** remove inputValue from input component ([5348c16](https://github.com/Gympass/yoga/commit/5348c162304d766bb85b17235950e9936c808c9b))
+- remove inputValue from input component ([c9890c3](https://github.com/Gympass/yoga/commit/c9890c314166e16c6d03317fd0720db6d3ccc3a0))
+- **input:** fix Input helper text color when affected by an error ([71a117f](https://github.com/Gympass/yoga/commit/71a117f7bb384728e0fd14e1fdcf1439c0066230))
+- **yoga:** add box-sizing to input fieldset ([835e345](https://github.com/Gympass/yoga/commit/835e345662d5dbee807e50d34dd3200d9b5b4962))
+
+### Features
+
+- **input:** add hiddenMaxLength props to not render Help component inside Input ([e78b627](https://github.com/Gympass/yoga/commit/e78b627c5daaf40bef2294840d86571ea9d0362e))
+- **input:** create a description to hiddenMaxLength prop ([50c2c38](https://github.com/Gympass/yoga/commit/50c2c38f8c9108104e1627ce283aa7b5a44395db))
+- **input:** rename prop to hideMaxLength and add snapshot to web component ([57ae3a0](https://github.com/Gympass/yoga/commit/57ae3a03279a00b715fbe4afab03eff5acee1884))
+
+## [5.2.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.2...@gympass/yoga@5.2.3) (2021-02-09)
+
+### Bug Fixes
+
+- **native:** remove inputValue from input component ([5348c16](https://github.com/Gympass/yoga/commit/5348c162304d766bb85b17235950e9936c808c9b))
+- remove inputValue from input component ([c9890c3](https://github.com/Gympass/yoga/commit/c9890c314166e16c6d03317fd0720db6d3ccc3a0))
 
 ## [5.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.1...@gympass/yoga@5.2.2) (2020-12-16)
 
-
 ### Bug Fixes
 
-* **yoga:** add box-sizing to input fieldset ([835e345](https://github.com/Gympass/yoga/commit/835e345662d5dbee807e50d34dd3200d9b5b4962))
-
-
-
-
+- **yoga:** add box-sizing to input fieldset ([835e345](https://github.com/Gympass/yoga/commit/835e345662d5dbee807e50d34dd3200d9b5b4962))
 
 ## [5.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0...@gympass/yoga@5.2.1) (2020-12-11)
 
 **Note:** Version bump only for package @gympass/yoga
 
-
-
-
-
 # [5.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.1.1...@gympass/yoga@5.2.0) (2020-12-10)
-
 
 ### Features
 
-* **input:** add hiddenMaxLength props to not render Help component inside Input ([e78b627](https://github.com/Gympass/yoga/commit/e78b627c5daaf40bef2294840d86571ea9d0362e))
-* **input:** create a description to hiddenMaxLength prop ([50c2c38](https://github.com/Gympass/yoga/commit/50c2c38f8c9108104e1627ce283aa7b5a44395db))
-* **input:** rename prop to hideMaxLength and add snapshot to web component ([57ae3a0](https://github.com/Gympass/yoga/commit/57ae3a03279a00b715fbe4afab03eff5acee1884))
-
-
-
-
+- **input:** add hiddenMaxLength props to not render Help component inside Input ([e78b627](https://github.com/Gympass/yoga/commit/e78b627c5daaf40bef2294840d86571ea9d0362e))
+- **input:** create a description to hiddenMaxLength prop ([50c2c38](https://github.com/Gympass/yoga/commit/50c2c38f8c9108104e1627ce283aa7b5a44395db))
+- **input:** rename prop to hideMaxLength and add snapshot to web component ([57ae3a0](https://github.com/Gympass/yoga/commit/57ae3a03279a00b715fbe4afab03eff5acee1884))
 
 ## [5.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.1.0...@gympass/yoga@5.1.1) (2020-11-26)
 
+### Bug Fixes
+
+- **input:** fix Input helper text color when affected by an error ([71a117f](https://github.com/Gympass/yoga/commit/71a117f7bb384728e0fd14e1fdcf1439c0066230))
+
+# [5.2.0-alpha.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.2...@gympass/yoga@5.2.0-alpha.3) (2021-02-12)
 
 ### Bug Fixes
 
-* **input:** fix Input helper text color when affected by an error ([71a117f](https://github.com/Gympass/yoga/commit/71a117f7bb384728e0fd14e1fdcf1439c0066230))
+- **icon:** apply width and height conditionally ([18689e1](https://github.com/Gympass/yoga/commit/18689e17d0dc80f43b3b4cf40f7d07e9a43c9394))
 
+# [5.2.0-alpha.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.1...@gympass/yoga@5.2.0-alpha.2) (2021-02-11)
 
+**Note:** Version bump only for package @gympass/yoga
 
+# [5.2.0-alpha.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.0...@gympass/yoga@5.2.0-alpha.1) (2021-02-11)
 
+### Features
+
+- **iconwrapper:** add Icon wrapper abstraction component ([a1c19ea](https://github.com/Gympass/yoga/commit/a1c19ead37f8e592101cf89bcbd749d9e491533a))
+
+# [5.2.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.1.1-alpha.4...@gympass/yoga@5.2.0-alpha.0) (2021-02-04)
+
+### Features
+
+- **colors:** add feedback colors ([247714b](https://github.com/Gympass/yoga/commit/247714b736bdd684be7b0b667d2a7262ba25d8c0))
+
+## 5.1.1-alpha.4 (2021-01-27)
+
+**Note:** Version bump only for package @gympass/yoga
+
+## 5.1.1-alpha.3 (2021-01-22)
+
+**Note:** Version bump only for package @gympass/yoga
+
+## 5.1.1-alpha.2 (2020-12-03)
+
+**Note:** Version bump only for package @gympass/yoga
+
+## 5.1.1-alpha.1 (2020-10-28)
+
+**Note:** Version bump only for package @gympass/yoga
+
+## 5.1.1-alpha.0 (2020-10-23)
+
+**Note:** Version bump only for package @gympass/yoga
 
 # [5.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.0.1...@gympass/yoga@5.1.0) (2020-10-15)
 
-
 ### Bug Fixes
 
-* **TextArea:** change fieldset import case ([05ea669](https://github.com/Gympass/yoga/commit/05ea6693ed32aff43f960d2206931aead6a5d3dc))
-* fixing css in component input ([9b217c0](https://github.com/Gympass/yoga/commit/9b217c03d01f9e60d3ac1523bfaf9afbea68e900)), closes [#158](https://github.com/Gympass/yoga/issues/158)
-
+- **TextArea:** change fieldset import case ([05ea669](https://github.com/Gympass/yoga/commit/05ea6693ed32aff43f960d2206931aead6a5d3dc))
+- fixing css in component input ([9b217c0](https://github.com/Gympass/yoga/commit/9b217c03d01f9e60d3ac1523bfaf9afbea68e900)), closes [#158](https://github.com/Gympass/yoga/issues/158)
 
 ### Features
 
-* changing styles in component Input ([01eaf36](https://github.com/Gympass/yoga/commit/01eaf36d0836ab9495a532b856020d13b54af795))
-* removing z-index in component Field and Input ([032b43d](https://github.com/Gympass/yoga/commit/032b43d989a08c725166e9fc33cacad7c9834d49)), closes [#158](https://github.com/Gympass/yoga/issues/158)
-
-
-
-
+- changing styles in component Input ([01eaf36](https://github.com/Gympass/yoga/commit/01eaf36d0836ab9495a532b856020d13b54af795))
+- removing z-index in component Field and Input ([032b43d](https://github.com/Gympass/yoga/commit/032b43d989a08c725166e9fc33cacad7c9834d49)), closes [#158](https://github.com/Gympass/yoga/issues/158)
 
 ## [5.0.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.0.0...@gympass/yoga@5.0.1) (2020-10-02)
 
-
 ### Bug Fixes
 
-* **plancard:** fix truncate text and subtitle prop from PlanCard.Content component ([79c42eb](https://github.com/Gympass/yoga/commit/79c42eb92393c8c8fc097344062c19f6fadb5a11))
-
-
-
-
+- **plancard:** fix truncate text and subtitle prop from PlanCard.Content component ([79c42eb](https://github.com/Gympass/yoga/commit/79c42eb92393c8c8fc097344062c19f6fadb5a11))
 
 # [5.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@4.1.2...@gympass/yoga@5.0.0) (2020-09-24)
 
-
 ### Features
 
-* **plancard:** add ribbon support and destructuring theme properties on styles ([2672d08](https://github.com/Gympass/yoga/commit/2672d0832924321df229233230628f1176cd7de1))
-* **plancard:** add variant support and fix some spacings ([0b1927d](https://github.com/Gympass/yoga/commit/0b1927dbd7e31a1ddfb581f983b2d043a12c6452))
-* **plancard:** extract "ribbon" to a new "PlanCard.Tag" component ([3438ca9](https://github.com/Gympass/yoga/commit/3438ca9f9b925aa1247fc5397eea6802a2414386))
-* **plancard:** implement de redesign from PlanCard ([f428347](https://github.com/Gympass/yoga/commit/f4283479b8f2a89a4c934d7116a1c11a4bc7d115))
-* **plancard:** redesign of PlanCard on native platform ([9d3b6d8](https://github.com/Gympass/yoga/commit/9d3b6d86f06a919aeab9df7d02efbb01ff4d8f32))
-
+- **plancard:** add ribbon support and destructuring theme properties on styles ([2672d08](https://github.com/Gympass/yoga/commit/2672d0832924321df229233230628f1176cd7de1))
+- **plancard:** add variant support and fix some spacings ([0b1927d](https://github.com/Gympass/yoga/commit/0b1927dbd7e31a1ddfb581f983b2d043a12c6452))
+- **plancard:** extract "ribbon" to a new "PlanCard.Tag" component ([3438ca9](https://github.com/Gympass/yoga/commit/3438ca9f9b925aa1247fc5397eea6802a2414386))
+- **plancard:** implement de redesign from PlanCard ([f428347](https://github.com/Gympass/yoga/commit/f4283479b8f2a89a4c934d7116a1c11a4bc7d115))
+- **plancard:** redesign of PlanCard on native platform ([9d3b6d8](https://github.com/Gympass/yoga/commit/9d3b6d86f06a919aeab9df7d02efbb01ff4d8f32))
 
 ### BREAKING CHANGES
 
-* **plancard:** change PlanCard.Content props, now it accepts: title, subtitle(new), currency(new),
-price(only the value, without currency), period, description(new)
-
-
-
-
+- **plancard:** change PlanCard.Content props, now it accepts: title, subtitle(new), currency(new),
+  price(only the value, without currency), period, description(new)
 
 ## [4.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@4.1.1...@gympass/yoga@4.1.2) (2020-09-21)
 
-
 ### Bug Fixes
 
-* **file name:** removing unnecessary unit tests ([356ab06](https://github.com/Gympass/yoga/commit/356ab06e1a0b0822b0241f87467bc7bc35740e15))
-
-
-
-
+- **file name:** removing unnecessary unit tests ([356ab06](https://github.com/Gympass/yoga/commit/356ab06e1a0b0822b0241f87467bc7bc35740e15))
 
 ## [4.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@4.1.0...@gympass/yoga@4.1.1) (2020-09-10)
 
-
 ### Bug Fixes
 
-* **font:** rename rubik italic file name ([2e3383a](https://github.com/Gympass/yoga/commit/2e3383a854e26ffb7fb9843dd6fa7cb57f0bbef4))
-
-
-
-
+- **font:** rename rubik italic file name ([2e3383a](https://github.com/Gympass/yoga/commit/2e3383a854e26ffb7fb9843dd6fa7cb57f0bbef4))
 
 # [4.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@4.0.0...@gympass/yoga@4.1.0) (2020-09-03)
 
-
 ### Bug Fixes
 
-* **dropdown:** adjust android option font styles and use Text component from yoga ([4f00cff](https://github.com/Gympass/yoga/commit/4f00cff21da435965f0871eb6bb885f27f4fc483))
-* **font:** add textStyle.android to handle how font-familly is set when android ([587a721](https://github.com/Gympass/yoga/commit/587a721e8240075d7ba07dffcaa104fe60467d23))
-* **text:** fix typo: Text.H5 displayName ([a3988dd](https://github.com/Gympass/yoga/commit/a3988ddaa45f7508608beab11e43d54b9a57cc79))
-
+- **dropdown:** adjust android option font styles and use Text component from yoga ([4f00cff](https://github.com/Gympass/yoga/commit/4f00cff21da435965f0871eb6bb885f27f4fc483))
+- **font:** add textStyle.android to handle how font-familly is set when android ([587a721](https://github.com/Gympass/yoga/commit/587a721e8240075d7ba07dffcaa104fe60467d23))
+- **text:** fix typo: Text.H5 displayName ([a3988dd](https://github.com/Gympass/yoga/commit/a3988ddaa45f7508608beab11e43d54b9a57cc79))
 
 ### Features
 
-* **text:** update Text component to match our new tokens ([751886d](https://github.com/Gympass/yoga/commit/751886d9af1d59f993e0faf9762cd121631b590f))
-
-
-
-
+- **text:** update Text component to match our new tokens ([751886d](https://github.com/Gympass/yoga/commit/751886d9af1d59f993e0faf9762cd121631b590f))
 
 # [4.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@3.1.0...@gympass/yoga@4.0.0) (2020-08-26)
 
-
 ### Features
 
-* **button:** updated button tokens ([91b8e42](https://github.com/Gympass/yoga/commit/91b8e42ca257e0348b834ca2d3b384691f2a3760))
-* **text:** update Text components to use new font-sizes,weights and heights tokens. Add new H5 ([b70861e](https://github.com/Gympass/yoga/commit/b70861e28b00d55cf19863d4f394bc51349008ef))
-
+- **button:** updated button tokens ([91b8e42](https://github.com/Gympass/yoga/commit/91b8e42ca257e0348b834ca2d3b384691f2a3760))
+- **text:** update Text components to use new font-sizes,weights and heights tokens. Add new H5 ([b70861e](https://github.com/Gympass/yoga/commit/b70861e28b00d55cf19863d4f394bc51349008ef))
 
 ### BREAKING CHANGES
 
-* **text:** Update Text Heading components font-sizes, weight, height values
-
-
-
-
+- **text:** Update Text Heading components font-sizes, weight, height values
 
 # [3.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@3.0.0...@gympass/yoga@3.1.0) (2020-08-25)
 
-
 ### Features
 
-* **theme:** added kids theme into yoga ([0e6305d](https://github.com/Gympass/yoga/commit/0e6305d899dff457cc988515b27b9f663f90178e))
-
-
-
-
+- **theme:** added kids theme into yoga ([0e6305d](https://github.com/Gympass/yoga/commit/0e6305d899dff457cc988515b27b9f663f90178e))
 
 # [3.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.5...@gympass/yoga@3.0.0) (2020-08-12)
 
-
 ### Features
 
-* **rubik:** add and use Rubik font instead of open-sans ([12f0ff6](https://github.com/Gympass/yoga/commit/12f0ff62d8332ea8fcee55fb9f403bab7ff315bb))
-* **yoga:** change baseFontFamily to  rubik ([a082683](https://github.com/Gympass/yoga/commit/a0826833616ad2d351ec44a7b4b8b3fe5f346ae5))
-
+- **rubik:** add and use Rubik font instead of open-sans ([12f0ff6](https://github.com/Gympass/yoga/commit/12f0ff62d8332ea8fcee55fb9f403bab7ff315bb))
+- **yoga:** change baseFontFamily to rubik ([a082683](https://github.com/Gympass/yoga/commit/a0826833616ad2d351ec44a7b4b8b3fe5f346ae5))
 
 ### BREAKING CHANGES
 
-* **rubik:** remove fontWeights.semibold and add fontWeights.medium
-
-
-
-
+- **rubik:** remove fontWeights.semibold and add fontWeights.medium
 
 ## [2.5.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.4...@gympass/yoga@2.5.5) (2020-06-24)
 
 **Note:** Version bump only for package @gympass/yoga
 
-
-
-
-
 ## [2.5.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.3...@gympass/yoga@2.5.4) (2020-06-23)
 
 **Note:** Version bump only for package @gympass/yoga
-
-
-
-
 
 ## [2.5.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.2...@gympass/yoga@2.5.3) (2020-06-23)
 
 **Note:** Version bump only for package @gympass/yoga
 
-
-
-
-
 ## [2.5.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.1...@gympass/yoga@2.5.2) (2020-06-18)
-
 
 ### Bug Fixes
 
-* **radiobutton:** fix radio-button dot ([7e6dc39](https://github.com/Gympass/yoga/commit/7e6dc39e6b03bcc58bd968f6d7a58e9f4276720d))
-
-
-
-
+- **radiobutton:** fix radio-button dot ([7e6dc39](https://github.com/Gympass/yoga/commit/7e6dc39e6b03bcc58bd968f6d7a58e9f4276720d))
 
 ## [2.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.5.0...@gympass/yoga@2.5.1) (2020-06-16)
 
-
 ### Bug Fixes
 
-* **input:** fix control div to match input size ([f4eecf9](https://github.com/Gympass/yoga/commit/f4eecf9b9de84866aac37bec103f451696753966))
-* **textarea:** add missing box-sizing ([33301c3](https://github.com/Gympass/yoga/commit/33301c3a1f61047012c938973fa70f4d76c005f4)), closes [#138](https://github.com/Gympass/yoga/issues/138)
-
-
-
-
+- **input:** fix control div to match input size ([f4eecf9](https://github.com/Gympass/yoga/commit/f4eecf9b9de84866aac37bec103f451696753966))
+- **textarea:** add missing box-sizing ([33301c3](https://github.com/Gympass/yoga/commit/33301c3a1f61047012c938973fa70f4d76c005f4)), closes [#138](https://github.com/Gympass/yoga/issues/138)
 
 # [2.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.4.1...@gympass/yoga@2.5.0) (2020-06-15)
 
-
 ### Features
 
-* **gyms theme:** update Gyms theme colors ([0ea16fb](https://github.com/Gympass/yoga/commit/0ea16fbaa3f53366e112c0fe43c54b570d214e49))
-
-
-
-
+- **gyms theme:** update Gyms theme colors ([0ea16fb](https://github.com/Gympass/yoga/commit/0ea16fbaa3f53366e112c0fe43c54b570d214e49))
 
 ## [2.4.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.4.0...@gympass/yoga@2.4.1) (2020-06-02)
 
-
 ### Bug Fixes
 
-* **input:** new property box-sizing in input component ([1b2f2dc](https://github.com/Gympass/yoga/commit/1b2f2dc856246e4c40804bf738a003c62d946dfa))
-
-
-
-
+- **input:** new property box-sizing in input component ([1b2f2dc](https://github.com/Gympass/yoga/commit/1b2f2dc856246e4c40804bf738a003c62d946dfa))
 
 # [2.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.3.0...@gympass/yoga@2.4.0) (2020-05-21)
 
-
 ### Features
 
-* **corp theme:** change Corporate theme colors ([06510b2](https://github.com/Gympass/yoga/commit/06510b28fd6bc5069e0ea08f64f7827552106e89))
-
-
-
-
+- **corp theme:** change Corporate theme colors ([06510b2](https://github.com/Gympass/yoga/commit/06510b28fd6bc5069e0ea08f64f7827552106e89))
 
 # [2.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.2.2...@gympass/yoga@2.3.0) (2020-05-11)
 
-
 ### Bug Fixes
 
-* **themeReader:** add prototype validation ([c7adb13](https://github.com/Gympass/yoga/commit/c7adb13b27b44e486aed3221a1382fcc80d290aa))
-
+- **themeReader:** add prototype validation ([c7adb13](https://github.com/Gympass/yoga/commit/c7adb13b27b44e486aed3221a1382fcc80d290aa))
 
 ### Features
 
-* **themeReader:** add "cache" to the logic ([6c70367](https://github.com/Gympass/yoga/commit/6c70367c5a65a02dfb783c8d48dc6e92c1207427))
-* create theme reader ([6d30739](https://github.com/Gympass/yoga/commit/6d307393b8603373a2ad8e8385d203127e438d1d))
-
-
-
-
+- **themeReader:** add "cache" to the logic ([6c70367](https://github.com/Gympass/yoga/commit/6c70367c5a65a02dfb783c8d48dc6e92c1207427))
+- create theme reader ([6d30739](https://github.com/Gympass/yoga/commit/6d307393b8603373a2ad8e8385d203127e438d1d))
 
 ## [2.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.2.1...@gympass/yoga@2.2.2) (2020-05-11)
 
 **Note:** Version bump only for package @gympass/yoga
 
-
-
-
-
 ## [2.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.2.0...@gympass/yoga@2.2.1) (2020-05-08)
-
 
 ### Bug Fixes
 
-* **card:** adjusting card shadow and event-card style ([8cc6083](https://github.com/Gympass/yoga/commit/8cc6083356d7bac48bb340216308a20fc8327e9a))
-* **card:** fix card shadow on ios and android platforms ([4b57bee](https://github.com/Gympass/yoga/commit/4b57bee65c04f2e439c255afbc04a1644bde3435))
-* **eventcard:** remove unnecessary border-radius ([6ce5919](https://github.com/Gympass/yoga/commit/6ce5919d104d0a3e4da9d6817ab1838724ded4b2))
-
-
-
-
+- **card:** adjusting card shadow and event-card style ([8cc6083](https://github.com/Gympass/yoga/commit/8cc6083356d7bac48bb340216308a20fc8327e9a))
+- **card:** fix card shadow on ios and android platforms ([4b57bee](https://github.com/Gympass/yoga/commit/4b57bee65c04f2e439c255afbc04a1644bde3435))
+- **eventcard:** remove unnecessary border-radius ([6ce5919](https://github.com/Gympass/yoga/commit/6ce5919d104d0a3e4da9d6817ab1838724ded4b2))
 
 # [2.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@2.1.3...@gympass/yoga@2.2.0) (2020-04-06)
 

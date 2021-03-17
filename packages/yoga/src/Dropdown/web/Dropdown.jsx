@@ -10,7 +10,9 @@ import {
   bool,
   oneOfType,
 } from 'prop-types';
-import { ArrowDown } from '@gympass/yoga-icons';
+import { ChevronDown } from '@gympass/yoga-icons';
+
+import Helper from '../../Input/web/Helper';
 
 const Wrapper = styled.div`
   ${({
@@ -34,9 +36,11 @@ const Selector = styled.div`
     disabled,
     selected,
     isOpen,
+    error,
     theme: {
       yoga: {
-        components: { dropdown },
+        colors,
+        components: { dropdown, input },
       },
     },
   }) => `
@@ -46,8 +50,9 @@ const Selector = styled.div`
     align-items: center;
     box-sizing: border-box;
 
+    height: ${input.height}px;
     width: 100%;
-    padding: ${dropdown.selector.padding.top}px 
+    padding: ${dropdown.selector.padding.top}px
       ${dropdown.selector.padding.right}px
       ${dropdown.selector.padding.bottom}px
       ${dropdown.selector.padding.left}px;
@@ -56,7 +61,9 @@ const Selector = styled.div`
     border-radius: ${dropdown.selector.border.radius}px;
     border-width: ${dropdown.selector.border.width}px;
     border-style: solid;
-    border-color: ${dropdown.selector.border.color};
+    border-color: ${
+      error ? colors.feedback.attention[1] : dropdown.selector.border.color
+    };
 
     &:hover{
       ${
@@ -174,10 +181,10 @@ const OptionsList = styled.ul`
         : ''
     };
 
-    border-radius: 
-        ${dropdown.option.border.radius.topLeft}px 
-        ${dropdown.option.border.radius.topRight}px 
-        ${dropdown.option.border.radius.bottomRight}px 
+    border-radius:
+        ${dropdown.option.border.radius.topLeft}px
+        ${dropdown.option.border.radius.topRight}px
+        ${dropdown.option.border.radius.bottomRight}px
         ${dropdown.option.border.radius.bottomLeft}px;
   `}
 `;
@@ -196,27 +203,31 @@ const Option = styled.li`
     display: flex;
     align-items: center;
     height: ${dropdown.option.height}px;
-    padding: 
-      ${dropdown.option.padding.top}px 
-      ${dropdown.option.padding.right}px 
-      ${dropdown.option.padding.bottom}px 
+    padding:
+      ${dropdown.option.padding.top}px
+      ${dropdown.option.padding.right}px
+      ${dropdown.option.padding.bottom}px
       ${dropdown.option.padding.left}px;
     cursor: pointer;
-  
+
     font-family: ${baseFont.family};
-    font-size: ${dropdown.option.font.size}px;
+    font-size: ${
+      isSelected
+        ? dropdown.selected.option.font.size
+        : dropdown.option.font.size
+    }px;
     line-height: ${dropdown.option.font.lineHeight}px;
-    
+
     font-weight: ${
       isSelected
         ? `${dropdown.selected.option.font.weight}`
         : `${dropdown.option.font.weight}`
-    }; 
+    };
 
     color: ${
       isSelected
-        ? `${dropdown.selected.option.font.color}`
-        : `${dropdown.option.font.color}`
+        ? dropdown.selected.option.font.color
+        : dropdown.option.font.color
     };
 
     ${
@@ -226,33 +237,33 @@ const Option = styled.li`
     }
 
     &:hover {
-      background-color: ${dropdown.hover.option.backgroundColor}; 
+      background-color: ${dropdown.hover.option.backgroundColor};
     }
 
     &:last-child {
-      border-radius: 
-        ${dropdown.option.border.radius.topLeft}px 
-        ${dropdown.option.border.radius.topRight}px 
-        ${dropdown.option.border.radius.bottomRight}px 
+      border-radius:
+        ${dropdown.option.border.radius.topLeft}px
+        ${dropdown.option.border.radius.topRight}px
+        ${dropdown.option.border.radius.bottomRight}px
         ${dropdown.option.border.radius.bottomLeft}px;
     }
   `}
 `;
 
-const ArrowIcon = styled(({ isOpen, disabled, selected, ...props }) => (
-  <ArrowDown {...props} />
+const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
+  <ChevronDown width={20} height={20} {...props} />
 ))`
   ${({
     isOpen,
-    disabled,
     selected,
+    disabled,
     theme: {
       yoga: {
         components: { dropdown },
       },
     },
   }) => `
-    fill: ${dropdown.disabled.arrow.fill};
+    fill: ${dropdown.arrow.fill};
     ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
     ${selected ? `fill: ${dropdown.selected.arrow.fill};` : ''};
     transform: rotate(${isOpen ? '180deg' : '0'});
@@ -263,7 +274,15 @@ const getSelectedOption = options =>
   options.find(item => item.selected === true);
 
 /** Gympass Dropdown is a multiple choice type of menu. */
-const Dropdown = ({ label, disabled, full, options, onChange, ...rest }) => (
+const Dropdown = ({
+  error,
+  label,
+  disabled,
+  full,
+  options,
+  onChange,
+  ...rest
+}) => (
   <Downshift
     initialSelectedItem={getSelectedOption(options)}
     selectedItemChanged={(prevItem, item) => prevItem !== item}
@@ -284,6 +303,7 @@ const Dropdown = ({ label, disabled, full, options, onChange, ...rest }) => (
         <Selector
           isOpen={isOpen}
           disabled={disabled}
+          error={error}
           selected={selectedItem !== null}
         >
           <Input
@@ -300,8 +320,8 @@ const Dropdown = ({ label, disabled, full, options, onChange, ...rest }) => (
           >
             <ArrowIcon
               isOpen={isOpen}
-              disabled={disabled}
               selected={selectedItem !== null}
+              disabled={disabled}
             />
           </Button>
         </Selector>
@@ -322,6 +342,7 @@ const Dropdown = ({ label, disabled, full, options, onChange, ...rest }) => (
             ))}
           </OptionsList>
         )}
+        {error && <Helper error={error} />}
       </Wrapper>
     )}
   </Downshift>
@@ -330,6 +351,7 @@ const Dropdown = ({ label, disabled, full, options, onChange, ...rest }) => (
 Dropdown.propTypes = {
   label: string,
   disabled: bool,
+  error: string,
   full: bool,
   /** { label (string), value (string or number), selected: (boolean) } */
   options: arrayOf(
@@ -344,6 +366,7 @@ Dropdown.propTypes = {
 
 Dropdown.defaultProps = {
   label: '',
+  error: undefined,
   full: false,
   disabled: false,
   onChange: () => {},

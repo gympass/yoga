@@ -4,17 +4,20 @@ on:
   push:
     branches:
       - master
+      - alpha
+      - beta
 
 jobs:
   packages:
     runs-on: ubuntu-latest
     if: startsWith(github.event.head_commit.message, 'Merge')
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Configure CI Git User
         run: |
           git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git checkout master
           git config --global user.email yoga@gympass.com
           git config --global user.name Yoga
         env:
@@ -37,14 +40,15 @@ jobs:
           GH_TOKEN=${GH_TOKEN}
           NPM_TOKEN=${NPM_TOKEN}
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
-          yarn lerna publish --yes
+          chmod +x ./scripts/publish
+          ./scripts/publish
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   doc:
     runs-on: ubuntu-latest
-    if: startsWith(github.event.head_commit.message, 'Merge') != true
+    if: startsWith(github.event.head_commit.message, 'Merge') != true && contains(github.ref, 'master')
     steps:
       - uses: actions/checkout@v1
       - name: Configure CI Git User

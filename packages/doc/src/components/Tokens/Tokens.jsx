@@ -23,7 +23,7 @@ const StyledTable = styled.table`
   ${({
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { elements },
       },
     },
   }) => `
@@ -50,7 +50,7 @@ const StyledTable = styled.table`
       padding: 14px 12px 12px;
 
       border: none;
-      border-top: 1px solid ${hexToRgb(grayPallete[2], 0.7)};
+      border-top: 1px solid ${hexToRgb(elements.lineAndBorders, 0.7)};
 
       &:first-child {
         font-weight: 700;
@@ -67,7 +67,7 @@ const Example = styled.span`
     hasBackground,
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { elements },
       },
     },
   }) => `
@@ -76,7 +76,7 @@ const Example = styled.span`
       property === 'height' && valueUnit ? `${value}${valueUnit}` : '100%'
     };
     background-color: ${
-      hasBackground ? hexToRgb(grayPallete[2], 0.7) : 'transparent'
+      hasBackground ? hexToRgb(elements.lineAndBorders, 0.7) : 'transparent'
     };
     font-family: 'Rubik';
     ${property}: ${valueUnit ? `${value}${valueUnit}` : value};

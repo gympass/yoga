@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-const ICON_SIZE = 24;
+const ICON_SIZE = 20;
 
 const labelTransition = css`
   ${({
@@ -12,7 +12,7 @@ const labelTransition = css`
     },
   }) => `
     transform: translateY(-${input.height / 2 - 2}px);
-    transition-property: transform, font-size;
+    transition-property: transform, font-size, color;
     transition-duration: ${transition.duration[1]}ms;
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
 
@@ -40,6 +40,7 @@ const Field = styled.input`
     value,
     theme: {
       yoga: {
+        transition,
         colors,
         baseFont,
         components: { input },
@@ -49,7 +50,7 @@ const Field = styled.input`
     height: ${input.height}px;
     padding-top: ${input.padding.top}px;
     padding-right: ${
-      cleanable ? ICON_SIZE + input.padding.right : input.padding.right
+      cleanable ? ICON_SIZE + input.padding.right * 2 : input.padding.right
     }px;
     padding-bottom: ${input.padding.bottom}px;
     padding-left: ${input.padding.left}px;
@@ -64,20 +65,23 @@ const Field = styled.input`
 
       & ~ legend {
         max-width: 1000px;
-        padding: 0 2px;
+        transition-property: max-width;
+        transition-duration: ${transition.duration[1]}ms;
       }
 
       & ~ label {
         ${labelTransition}
 
-        font-weight: ${input.label.font.weight.typed};
-        color: ${error ? `${colors.negative[1]}` : `${colors.gray.darker}`};
+        font-weight: ${input.label.font.weight};
+        color: ${
+          error ? `${colors.feedback.attention[1]}` : `${colors.text.primary}`
+        };
       }
     }
 
     &:disabled {
       cursor: not-allowed;
-      color: ${colors.disabled.background};
+      color: ${colors.text.disabled};
     }
 
     &::placeholder {

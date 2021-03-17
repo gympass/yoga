@@ -9,99 +9,118 @@
  * A color
  * @typedef Color
  *
- * @type {String | String[]}
+ * @type {String}
  */
 
 /**
  * @type {Color}
  */
-const madrid = ['#FDE5E2', '#FAB9B2', '#F78D82', '#F46152'];
+const vibin = '#D8385E';
 
 /**
  * @type {Color}
  */
-const milan = ['#FFF6E6', '#FFE5B3', '#FFD380', '#FFC24C'];
+const hope = '#1D856C';
 
 /**
  * @type {Color}
  */
-const saoPaulo = ['#B5DAD5', '#55A99E', '#2B9486', '#22766B'];
+const energy = '#FFC24C';
 
 /**
  * @type {Color}
  */
-const newYork = ['#D7DAF3', '#5F6BD2', '#3847C7', '#27318B'];
+const relax = '#7068D4';
+
+// Brand colors ↓
 
 /**
  * @type {Color}
  */
-const paris = ['#BFA8F0', '#A07CE9', '#8051E1', '#652CDB'];
+const peace = '#FFB0A7';
 
 /**
  * @type {Color}
  */
-const buenosAires = ['#A3C2E9', '#4686D3', '#1968C9', '#1453A0'];
+const verve = '#FF874C';
+
+/**
+ * @type {Color}
+ */
+const uplift = '#FF4438';
+
+/**
+ * @type {Color}
+ */
+const deepPurple = '#710252';
+
+// Feedback ↓
+
+/**
+ * @type {Color}
+ */
+const success = '#C1EEDB';
+
+/**
+ * @type {Color}
+ */
+const neutral = '#E0DFFF';
+
+/**
+ * @type {Color}
+ */
+const attention = '#FCD6C3';
+
+// Gray scale ↓
+
+/**
+ * @type {Color}
+ */
+const stamina = '#231B22';
+
+/**
+ * @type {Color}
+ */
+const deep = '#6B6B78';
+
+/**
+ * @type {Color}
+ */
+const medium = '#9898A6';
+
+/**
+ * @type {Color}
+ */
+const light = '#D7D7E0';
+
+/**
+ * @type {Color}
+ */
+const clear = '#F5F5FA';
 
 /**
  * @type {Color}
  */
 const white = '#FFFFFF';
 
-/**
- * @type {Color}
- */
-const dark = '#41414A';
-
-/**
- * @type {Color}
- */
-const gray = [
-  white, // 0
-  '#F5F5FA', // 1
-  '#E6E6F0', // 2
-  '#DBDBE8', // 3
-  '#D3D3E2', // 4
-  '#C5C5D6', // 5
-  '#A9A9B8', // 6
-  '#9898A6', // 7
-  '#6B6B78', // 8
-  dark, // 9
-];
-
-/**
- * @type {Color}
- */
-const positive = ['#DEF8E9', '#1E854A'];
-
-/**
- * @type {Color}
- */
-const negative = ['#FCEAE9', '#CB3530'];
-
-/**
- * @type {Color}
- */
-const informative = ['#E9F3FC', '#2186D9'];
-
-/**
- * @type {Color}
- */
-const warning = ['#FBFBBE', '#CB9303'];
-
 const colors = {
-  madrid,
-  milan,
-  saoPaulo,
-  newYork,
-  paris,
-  buenosAires,
-  positive,
-  negative,
-  informative,
-  warning,
-  gray,
+  vibin,
+  hope,
+  energy,
+  relax,
+  peace,
+  verve,
+  uplift,
+  deepPurple,
+  success,
+  neutral,
+  attention,
+  stamina,
+  deep,
+  medium,
+  light,
+  clear,
   white,
-  dark,
 };
 
 export default colors;

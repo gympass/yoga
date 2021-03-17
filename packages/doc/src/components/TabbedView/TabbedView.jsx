@@ -6,11 +6,11 @@ const Navbar = styled.ul`
   ${({
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { elements },
       },
     },
   }) => `
-    border-bottom: 1px dotted ${grayPallete[3]};
+    border-bottom: 1px dotted ${elements.lineAndBorders};
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
@@ -27,7 +27,7 @@ const NavItem = styled.li`
     active,
     theme: {
       yoga: {
-        colors: { primary: primaryPallete },
+        colors: { primary },
       },
     },
   }) => `
@@ -54,14 +54,14 @@ const NavItem = styled.li`
     }
 
     &:hover {
-      color: ${primaryPallete[3]};
+      color: ${primary};
     }
 
     ${
       active
         ? `
-          color: ${primaryPallete[3]};
-          border-bottom: 2px solid ${primaryPallete[3]};
+          color: ${primary};
+          border-bottom: 2px solid ${primary};
             `
         : ''
     }

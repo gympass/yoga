@@ -1,3 +1,5 @@
+import { hexToRgb } from '@gympass/yoga-common';
+
 const Dropdown = ({
   colors,
   fontSizes,
@@ -19,15 +21,15 @@ const Dropdown = ({
     border: {
       width: borders.small,
       radius: radii.rounded,
-      color: colors.gray[4],
+      color: colors.elements.lineAndBorders,
     },
   },
   arrow: {
-    fill: colors.gray[7],
+    fill: colors.text.secondary,
   },
   input: {
     font: {
-      color: colors.gray[7],
+      color: colors.text.secondary,
       size: fontSizes.small,
       lineHeight: lineHeights.small,
     },
@@ -47,7 +49,7 @@ const Dropdown = ({
         bottomLeft: radii.rounded,
       },
       width: borders.small,
-      color: colors.dark,
+      color: colors.text.secondary,
     },
   },
   option: {
@@ -61,7 +63,7 @@ const Dropdown = ({
     },
     border: {
       width: borders.small,
-      color: colors.gray[1],
+      color: colors.elements.backgroundAndDisabled,
       radius: {
         topLeft: radii.sharp,
         topRight: radii.sharp,
@@ -70,7 +72,7 @@ const Dropdown = ({
       },
     },
     font: {
-      color: colors.gray.dark,
+      color: colors.text.primary,
       size: fontSizes.small,
       lineHeight: lineHeights.small,
       weight: fontWeights.regular,
@@ -119,51 +121,52 @@ const Dropdown = ({
   hover: {
     selector: {
       border: {
-        color: colors.dark,
+        color: colors.text.secondary,
       },
     },
     option: {
-      backgroundColor: colors.gray[1],
+      backgroundColor: hexToRgb(colors.elements.backgroundAndDisabled, 0.5),
     },
   },
   disabled: {
     selector: {
       border: {
-        color: colors.gray[3],
+        color: colors.elements.backgroundAndDisabled,
       },
     },
     input: {
       font: {
-        color: colors.gray[3],
+        color: colors.text.disabled,
       },
     },
     arrow: {
-      fill: colors.gray[3],
+      fill: colors.elements.lineAndBorders,
     },
   },
   selected: {
     selector: {
       border: {
-        color: colors.dark,
+        color: colors.text.primary,
       },
     },
     arrow: {
-      fill: colors.primary[3],
+      fill: colors.primary,
     },
     input: {
       font: {
-        color: colors.dark,
+        color: colors.text.primary,
       },
     },
     optionsList: {
       border: {
-        color: colors.dark,
+        color: colors.text.primary,
       },
     },
     option: {
       font: {
-        color: colors.dark,
-        weight: fontWeights.bold,
+        color: colors.text.primary,
+        weight: fontWeights.medium,
+        size: fontSizes.medium,
       },
     },
   },

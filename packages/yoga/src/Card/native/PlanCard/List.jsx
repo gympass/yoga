@@ -61,7 +61,7 @@ const ListItem = withTheme(
           <Icon
             width={16}
             height={16}
-            fill={yogaTheme.yoga.colors.gray[7]}
+            fill={yogaTheme.yoga.colors.elements.selectionAndIcons}
             style={{
               marginRight:
                 yogaTheme.yoga.components.card.plan.list.item.icon.margin.right,

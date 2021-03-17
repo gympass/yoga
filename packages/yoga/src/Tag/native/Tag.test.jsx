@@ -15,20 +15,24 @@ describe('<Tag />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should match snapshot with custom icon', () => {
+  it('should match snapshot with custom icon and informative type', () => {
     const { container } = render(
       <ThemeProvider>
-        <Tag icon={Building}>default with custom icon</Tag>
+        <Tag.Informative variant="success" icon={Building}>
+          success with custom icon
+        </Tag.Informative>
       </ThemeProvider>,
     );
 
     expect(container).toMatchSnapshot();
   });
 
-  it('should match snapshot with without icon', () => {
+  it('should match snapshot with without icon and informative type', () => {
     const { container } = render(
       <ThemeProvider>
-        <Tag icon={false}>default without icon</Tag>
+        <Tag.Informative variant="success">
+          success without icon
+        </Tag.Informative>
       </ThemeProvider>,
     );
 
@@ -38,20 +42,21 @@ describe('<Tag />', () => {
   it('should match snapshot with variant prop', () => {
     const { container } = render(
       <ThemeProvider>
+        <Tag variant="success">success</Tag>
         <Tag variant="informative">informative</Tag>
-        <Tag variant="positive">positive</Tag>
-        <Tag variant="negative">negative</Tag>
-        <Tag variant="warning">warning</Tag>
+        <Tag variant="attention">attention</Tag>
       </ThemeProvider>,
     );
 
     expect(container).toMatchSnapshot();
   });
 
-  it('should match snapshot with full prop', () => {
+  it('should match snapshot with variant prop and informative type', () => {
     const { container } = render(
       <ThemeProvider>
-        <Tag full>full</Tag>
+        <Tag.Informative variant="success">success</Tag.Informative>
+        <Tag.Informative variant="informative">informative</Tag.Informative>
+        <Tag.Informative variant="attention">attention</Tag.Informative>
       </ThemeProvider>,
     );
 

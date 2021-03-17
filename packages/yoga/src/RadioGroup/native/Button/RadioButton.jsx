@@ -50,6 +50,8 @@ const Text = styled.Text(
     checked,
   }) => `
     font-family: ${baseFont.family};
+    color: ${radiogroup.font.color};
+
     ${
       checked
         ? `

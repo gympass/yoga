@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { hexToRgb } from '@gympass/yoga-common';
 import { Link, navigate } from 'gatsby';
 import { arrayOf, object, func, bool, shape, number, string } from 'prop-types';
 
@@ -13,12 +14,12 @@ const Wrapper = styled.div`
     opened,
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { white, text },
       },
     },
   }) => `
     align-items: center;
-    background-color: ${grayPallete[0]};
+    background-color: ${white};
     display: flex;
     flex-direction: column;
     grid-area: Navigation;
@@ -26,7 +27,7 @@ const Wrapper = styled.div`
     width: 250px;
 
     span {
-      color: ${grayPallete[8]};
+      color: ${text.secondary};
     }
 
     @media (max-width: 900px) {
@@ -68,11 +69,11 @@ const AnchorLink = styled(Link)`
     level,
     theme: {
       yoga: {
-        colors: { gray: grayPallete, primary: primaryPallete },
+        colors: { text, primary },
       },
     },
   }) => `
-    color: ${grayPallete[8]};
+    color: ${text.secondary};
     display: flex;
     justify-content: space-between;
     padding: 10px 0px 10px 0px;
@@ -82,7 +83,7 @@ const AnchorLink = styled(Link)`
     width: 100%;
 
     :hover {
-      color: ${primaryPallete[3]};
+      color: ${primary};
     }
   `};
 `;
@@ -92,7 +93,7 @@ const StyledListItem = styled.li`
     active,
     theme: {
       yoga: {
-        colors: { primary: primaryPallete },
+        colors: { primary },
       },
     },
   }) => `
@@ -100,7 +101,7 @@ const StyledListItem = styled.li`
       ${
         active
           ? `
-          color: ${primaryPallete[3]};
+          color: ${primary};
             `
           : ''
       }
@@ -112,12 +113,12 @@ const Colapsible = styled.div`
   ${({
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { text },
       },
     },
   }) => `
     cursor: pointer;
-    color: ${grayPallete[7]};
+    color: ${hexToRgb(text.secondary, 0.75)};
     svg {
       width: 10px;
       margin-left: 5px;

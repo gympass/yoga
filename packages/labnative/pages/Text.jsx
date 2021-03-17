@@ -32,6 +32,21 @@ const TextPage = () => (
       <Text.H5>Heading H5</Text.H5>
     </TextWrapper>
     <TextWrapper>
+      <Text.H1 variant="primary" light>
+        Heading H1
+      </Text.H1>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.H2 variant="secondary" light>
+        Heading H2
+      </Text.H2>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.H3 variant="tertiary" light>
+        Heading H3
+      </Text.H3>
+    </TextWrapper>
+    <TextWrapper>
       <Text>Text Paragraph</Text>
     </TextWrapper>
     <TextWrapper>
@@ -51,6 +66,21 @@ const TextPage = () => (
     </TextWrapper>
     <TextWrapper>
       <Text.Black>Text Black</Text.Black>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.SectionTitle>Text SectionTitle</Text.SectionTitle>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.SmallestException>Text SmallestException</Text.SmallestException>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Medium size="xsmall">XSmall Text.Medium</Text.Medium>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Medium size="medium">Medium Text.Medium</Text.Medium>
+    </TextWrapper>
+    <TextWrapper>
+      <Text.Medium size="xlarge">XLarge Text.Medium</Text.Medium>
     </TextWrapper>
   </ScrollView>
 );

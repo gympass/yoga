@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { View, TouchableWithoutFeedback } from 'react-native';
 
 const withTouchable = Component => ({
-  onPress = () => {},
   onPressIn = () => {},
   onPressOut = () => {},
+  onChange = () => {},
+  onPress = onChange,
   ...rest
 }) => {
   const [pressed, setPressed] = useState(false);

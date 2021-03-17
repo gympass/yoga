@@ -3,58 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [1.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.8.0...@gympass/yoga-tokens@1.0.0) (2020-08-26)
-
+# [1.1.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@1.0.1-alpha.4...@gympass/yoga-tokens@1.1.0-alpha.0) (2021-02-04)
 
 ### Features
 
-* **theme:** add new font-sizes ([5002c1b](https://github.com/Gympass/yoga/commit/5002c1ba61c27571d1293ff6db3915f6219c44ed))
-* **token:** add new line-height tokens ([a602776](https://github.com/Gympass/yoga/commit/a6027762f7abbea09a3cac0cf4ae575ab71c3345))
-* **tokens:** add 2 new spacings values (32 and 80) and 2 more keys (xxxsmall and xhuge) ([28acfc5](https://github.com/Gympass/yoga/commit/28acfc5c86c6da6ffb765eada157b849758272bf)), closes [#116](https://github.com/Gympass/yoga/issues/116)
+- **colors:** add feedback colors ([247714b](https://github.com/Gympass/yoga/commit/247714b736bdd684be7b0b667d2a7262ba25d8c0))
 
+## 1.0.1-alpha.4 (2021-01-27)
+
+**Note:** Version bump only for package @gympass/yoga-tokens
+
+## 1.0.1-alpha.3 (2021-01-22)
+
+**Note:** Version bump only for package @gympass/yoga-tokens
+
+## 1.0.1-alpha.2 (2020-12-03)
+
+**Note:** Version bump only for package @gympass/yoga-tokens
+
+## 1.0.1-alpha.1 (2020-10-28)
+
+**Note:** Version bump only for package @gympass/yoga-tokens
+
+## 1.0.1-alpha.0 (2020-10-23)
+
+**Note:** Version bump only for package @gympass/yoga-tokens
+
+# [1.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.8.0...@gympass/yoga-tokens@1.0.0) (2020-08-26)
+
+### Features
+
+- **theme:** add new font-sizes ([5002c1b](https://github.com/Gympass/yoga/commit/5002c1ba61c27571d1293ff6db3915f6219c44ed))
+- **token:** add new line-height tokens ([a602776](https://github.com/Gympass/yoga/commit/a6027762f7abbea09a3cac0cf4ae575ab71c3345))
+- **tokens:** add 2 new spacings values (32 and 80) and 2 more keys (xxxsmall and xhuge) ([28acfc5](https://github.com/Gympass/yoga/commit/28acfc5c86c6da6ffb765eada157b849758272bf)), closes [#116](https://github.com/Gympass/yoga/issues/116)
 
 ### BREAKING CHANGES
 
-* **token:** Change values from large and xlarge tokens, large was 32 now it's 28. xlarge was 40
-now it's 32.
-* **tokens:** Due to some values updates, some layouts would be broken.
-
-
-
-
+- **token:** Change values from large and xlarge tokens, large was 32 now it's 28. xlarge was 40
+  now it's 32.
+- **tokens:** Due to some values updates, some layouts would be broken.
 
 # [0.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.7.0...@gympass/yoga-tokens@0.8.0) (2020-08-12)
 
-
 ### Features
 
-* **tokens:** change font-family to rubik ([9e06545](https://github.com/Gympass/yoga/commit/9e065450dbbdeec863426693db714edbf1fbb461))
-
-
-
-
+- **tokens:** change font-family to rubik ([9e06545](https://github.com/Gympass/yoga/commit/9e065450dbbdeec863426693db714edbf1fbb461))
 
 # [0.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.6.0...@gympass/yoga-tokens@0.7.0) (2020-06-15)
 
-
 ### Features
 
-* **colors:** new York colors updated ([0bc2594](https://github.com/Gympass/yoga/commit/0bc2594b7d04051c8463bd4af01c86823f12c527))
-
-
-
-
+- **colors:** new York colors updated ([0bc2594](https://github.com/Gympass/yoga/commit/0bc2594b7d04051c8463bd4af01c86823f12c527))
 
 # [0.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.5.0...@gympass/yoga-tokens@0.6.0) (2020-05-21)
 
-
 ### Features
 
-* **color:** add buenosAires color pallete ([642d348](https://github.com/Gympass/yoga/commit/642d348ec7a5b12dd5e6f70c78d6419f3ef0dafd))
-
-
-
-
+- **color:** add buenosAires color pallete ([642d348](https://github.com/Gympass/yoga/commit/642d348ec7a5b12dd5e6f70c78d6419f3ef0dafd))
 
 # [0.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@0.4.1...@gympass/yoga-tokens@0.5.0) (2020-03-09)
 

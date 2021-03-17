@@ -13,7 +13,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   <View>
     <TouchableWithoutFeedback
       disabled={false}
-      value="value"
     >
       <View
         style={
@@ -41,12 +40,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
           <View
             checked={true}
             disabled={false}
+            inverted={false}
             pressed={false}
             style={
               Array [
                 Object {
-                  "backgroundColor": "#F46152",
-                  "borderColor": "#F46152",
+                  "backgroundColor": "#231B22",
+                  "borderColor": "#231B22",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -56,11 +56,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
                 },
               ]
             }
-            variant="primary"
           />
           <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
             fill="#FFFFFF"
             focusable={false}
+            height={24}
             style={
               Array [
                 Object {
@@ -73,9 +75,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
                 Object {
                   "opacity": 1,
                 },
-                null,
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
               ]
             }
+            width={24}
           >
             <RNSVGGroup
               fill={
@@ -128,9 +135,9 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
+                "fontSize": 16,
                 "fontWeight": "400",
                 "paddingLeft": 8,
               },
@@ -154,7 +161,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
         style={
           Array [
             Object {
-              "color": "#9898A6",
+              "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "400",
@@ -182,7 +189,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   <View>
     <TouchableWithoutFeedback
       disabled={false}
-      value="value"
     >
       <View
         style={
@@ -210,11 +216,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
           <View
             checked={false}
             disabled={false}
+            inverted={false}
             pressed={false}
             style={
               Array [
                 Object {
-                  "borderColor": "#F46152",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#231B22",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -224,16 +232,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
                 },
               ]
             }
-            variant="primary"
           />
         </View>
         <Text
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
+                "fontSize": 16,
                 "fontWeight": "400",
                 "paddingLeft": 8,
               },
@@ -257,7 +264,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
         style={
           Array [
             Object {
-              "color": "#9898A6",
+              "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "400",
@@ -285,7 +292,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   <View>
     <TouchableWithoutFeedback
       disabled={true}
-      value="value"
     >
       <View
         style={
@@ -313,12 +319,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
           <View
             checked={true}
             disabled={true}
+            inverted={false}
             pressed={false}
             style={
               Array [
                 Object {
-                  "backgroundColor": "#9898A6",
-                  "borderColor": "#9898A6",
+                  "backgroundColor": "#D7D7E0",
+                  "borderColor": "#D7D7E0",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -328,11 +335,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
                 },
               ]
             }
-            variant="primary"
           />
           <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
             fill="#FFFFFF"
             focusable={false}
+            height={24}
             style={
               Array [
                 Object {
@@ -345,9 +354,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
                 Object {
                   "opacity": 1,
                 },
-                null,
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
               ]
             }
+            width={24}
           >
             <RNSVGGroup
               fill={
@@ -400,9 +414,9 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
+                "fontSize": 16,
                 "fontWeight": "400",
                 "paddingLeft": 8,
               },
@@ -426,7 +440,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
         style={
           Array [
             Object {
-              "color": "#9898A6",
+              "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "400",
@@ -454,7 +468,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   <View>
     <TouchableWithoutFeedback
       disabled={true}
-      value="value"
     >
       <View
         style={
@@ -482,11 +495,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
           <View
             checked={false}
             disabled={true}
+            inverted={false}
             pressed={false}
             style={
               Array [
                 Object {
-                  "borderColor": "#9898A6",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#D7D7E0",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -496,16 +511,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
                 },
               ]
             }
-            variant="primary"
           />
         </View>
         <Text
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
+                "fontSize": 16,
                 "fontWeight": "400",
                 "paddingLeft": 8,
               },
@@ -529,7 +543,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
         style={
           Array [
             Object {
-              "color": "#9898A6",
+              "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "400",
@@ -557,7 +571,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   <View>
     <TouchableWithoutFeedback
       disabled={false}
-      value="value"
     >
       <View
         style={
@@ -586,12 +599,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
             checked={true}
             disabled={false}
             error="Error text"
+            inverted={false}
             pressed={false}
             style={
               Array [
                 Object {
-                  "backgroundColor": "#CB3530",
-                  "borderColor": "#CB3530",
+                  "backgroundColor": "#FF874C",
+                  "borderColor": "#FF874C",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -601,11 +615,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
                 },
               ]
             }
-            variant="primary"
           />
           <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
             fill="#FFFFFF"
             focusable={false}
+            height={24}
             style={
               Array [
                 Object {
@@ -618,9 +634,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
                 Object {
                   "opacity": 1,
                 },
-                null,
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
               ]
             }
+            width={24}
           >
             <RNSVGGroup
               fill={
@@ -673,9 +694,9 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
+                "fontSize": 16,
                 "fontWeight": "400",
                 "paddingLeft": 8,
               },
@@ -700,7 +721,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
         style={
           Array [
             Object {
-              "color": "#CB3530",
+              "color": "#FF874C",
               "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "400",
@@ -728,7 +749,6 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   <View>
     <TouchableWithoutFeedback
       disabled={false}
-      value="value"
     >
       <View
         style={
@@ -757,11 +777,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
             checked={false}
             disabled={false}
             error="Error text"
+            inverted={false}
             pressed={false}
             style={
               Array [
                 Object {
-                  "borderColor": "#CB3530",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#FF874C",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -771,16 +793,15 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
                 },
               ]
             }
-            variant="primary"
           />
         </View>
         <Text
           style={
             Array [
               Object {
-                "color": "#41414A",
+                "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 14,
+                "fontSize": 16,
                 "fontWeight": "400",
                 "paddingLeft": 8,
               },
@@ -805,7 +826,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
         style={
           Array [
             Object {
-              "color": "#CB3530",
+              "color": "#FF874C",
               "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "400",
@@ -820,7 +841,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 </View>
 `;
 
-exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
+exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
 <View
   collapsable={true}
   pointerEvents="box-none"
@@ -860,11 +881,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
           <View
             checked={false}
             disabled={false}
+            inverted={true}
             pressed={false}
             style={
               Array [
                 Object {
-                  "borderColor": "#F46152",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#FFFFFF",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -874,112 +897,63 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
                 },
               ]
             }
-            variant="primary"
           />
         </View>
-      </View>
-    </TouchableWithoutFeedback>
-  </View>
-  <View>
-    <TouchableWithoutFeedback
-      disabled={false}
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {},
-          ]
-        }
-      >
-        <View
+        <Text
           style={
             Array [
               Object {
-                "alignItems": "center",
-                "height": 24,
-                "justifyContent": "center",
-                "width": 24,
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "paddingLeft": 8,
               },
             ]
           }
         >
-          <View
-            checked={false}
-            disabled={false}
-            pressed={false}
-            style={
-              Array [
-                Object {
-                  "borderColor": "#652CDB",
-                  "borderRadius": 4,
-                  "borderStyle": "solid",
-                  "borderWidth": 2,
-                  "height": 24,
-                  "position": "absolute",
-                  "width": 24,
-                },
-              ]
-            }
-            variant="secondary"
-          />
-        </View>
+          Checkbox Component
+        </Text>
       </View>
     </TouchableWithoutFeedback>
-  </View>
-  <View>
-    <TouchableWithoutFeedback
-      disabled={false}
+    <View
+      style={
+        Array [
+          Object {
+            "marginTop": 4,
+          },
+        ]
+      }
     >
-      <View
+      <Text
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "flexDirection": "row",
+              "color": "#6B6B78",
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "400",
             },
-            Object {},
           ]
         }
       >
-        <View
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "height": 24,
-                "justifyContent": "center",
-                "width": 24,
-              },
-            ]
-          }
-        >
-          <View
-            checked={false}
-            disabled={false}
-            pressed={false}
-            style={
-              Array [
-                Object {
-                  "borderColor": "#22766B",
-                  "borderRadius": 4,
-                  "borderStyle": "solid",
-                  "borderWidth": 2,
-                  "height": 24,
-                  "position": "absolute",
-                  "width": 24,
-                },
-              ]
-            }
-            variant="tertiary"
-          />
-        </View>
-      </View>
-    </TouchableWithoutFeedback>
+        Helper Text
+      </Text>
+    </View>
   </View>
+</View>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
   <View>
     <TouchableWithoutFeedback
       disabled={false}
@@ -1010,12 +984,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
           <View
             checked={true}
             disabled={false}
+            inverted={true}
             pressed={false}
             style={
               Array [
                 Object {
-                  "backgroundColor": "#F46152",
-                  "borderColor": "#F46152",
+                  "backgroundColor": "#FFFFFF",
+                  "borderColor": "#FFFFFF",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -1025,11 +1000,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
                 },
               ]
             }
-            variant="primary"
           />
           <RNSVGSvgView
-            fill="#FFFFFF"
+            bbHeight={24}
+            bbWidth={24}
+            fill="#231B22"
             focusable={false}
+            height={24}
             style={
               Array [
                 Object {
@@ -1042,15 +1019,20 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
                 Object {
                   "opacity": 1,
                 },
-                null,
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
               ]
             }
+            width={24}
           >
             <RNSVGGroup
               fill={
                 Array [
                   0,
-                  4294967295,
+                  4280490786,
                 ]
               }
               fillOpacity={1}
@@ -1093,12 +1075,64 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
             />
           </RNSVGSvgView>
         </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "paddingLeft": 8,
+              },
+            ]
+          }
+        >
+          Checkbox Component
+        </Text>
       </View>
     </TouchableWithoutFeedback>
+    <View
+      style={
+        Array [
+          Object {
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#6B6B78",
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        Helper Text
+      </Text>
+    </View>
   </View>
+</View>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked and disabled 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
   <View>
     <TouchableWithoutFeedback
-      disabled={false}
+      disabled={true}
     >
       <View
         style={
@@ -1125,13 +1159,14 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
         >
           <View
             checked={true}
-            disabled={false}
+            disabled={true}
+            inverted={true}
             pressed={false}
             style={
               Array [
                 Object {
-                  "backgroundColor": "#652CDB",
-                  "borderColor": "#652CDB",
+                  "backgroundColor": "#D7D7E0",
+                  "borderColor": "#D7D7E0",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -1141,11 +1176,13 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
                 },
               ]
             }
-            variant="secondary"
           />
           <RNSVGSvgView
-            fill="#FFFFFF"
+            bbHeight={24}
+            bbWidth={24}
+            fill="#231B22"
             focusable={false}
+            height={24}
             style={
               Array [
                 Object {
@@ -1158,15 +1195,20 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
                 Object {
                   "opacity": 1,
                 },
-                null,
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
               ]
             }
+            width={24}
           >
             <RNSVGGroup
               fill={
                 Array [
                   0,
-                  4294967295,
+                  4280490786,
                 ]
               }
               fillOpacity={1}
@@ -1209,124 +1251,47 @@ exports[`<Checkbox /> Snapshots should match snapshot with variants 1`] = `
             />
           </RNSVGSvgView>
         </View>
-      </View>
-    </TouchableWithoutFeedback>
-  </View>
-  <View>
-    <TouchableWithoutFeedback
-      disabled={false}
-    >
-      <View
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-            },
-            Object {},
-          ]
-        }
-      >
-        <View
+        <Text
           style={
             Array [
               Object {
-                "alignItems": "center",
-                "height": 24,
-                "justifyContent": "center",
-                "width": 24,
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "400",
+                "paddingLeft": 8,
               },
             ]
           }
         >
-          <View
-            checked={true}
-            disabled={false}
-            pressed={false}
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "#22766B",
-                  "borderColor": "#22766B",
-                  "borderRadius": 4,
-                  "borderStyle": "solid",
-                  "borderWidth": 2,
-                  "height": 24,
-                  "position": "absolute",
-                  "width": 24,
-                },
-              ]
-            }
-            variant="tertiary"
-          />
-          <RNSVGSvgView
-            fill="#FFFFFF"
-            focusable={false}
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "transparent",
-                  "borderWidth": 0,
-                },
-                Object {
-                  "position": "absolute",
-                },
-                Object {
-                  "opacity": 1,
-                },
-                null,
-              ]
-            }
-          >
-            <RNSVGGroup
-              fill={
-                Array [
-                  0,
-                  4294967295,
-                ]
-              }
-              fillOpacity={1}
-              fillRule={1}
-              font={Object {}}
-              matrix={
-                Array [
-                  1,
-                  0,
-                  0,
-                  1,
-                  0,
-                  0,
-                ]
-              }
-              opacity={1}
-              originX={0}
-              originY={0}
-              propList={
-                Array [
-                  "fill",
-                ]
-              }
-              rotation={0}
-              scaleX={1}
-              scaleY={1}
-              skewX={0}
-              skewY={0}
-              stroke={null}
-              strokeDasharray={null}
-              strokeDashoffset={null}
-              strokeLinecap={0}
-              strokeLinejoin={0}
-              strokeMiterlimit={4}
-              strokeOpacity={1}
-              strokeWidth={1}
-              vectorEffect={0}
-              x={0}
-              y={0}
-            />
-          </RNSVGSvgView>
-        </View>
+          Checkbox Component
+        </Text>
       </View>
     </TouchableWithoutFeedback>
+    <View
+      style={
+        Array [
+          Object {
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#6B6B78",
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "400",
+            },
+          ]
+        }
+      >
+        Helper Text
+      </Text>
+    </View>
   </View>
 </View>
 `;
@@ -1371,11 +1336,13 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 1`] = `
           <View
             checked={false}
             disabled={false}
+            inverted={false}
             pressed={false}
             style={
               Array [
                 Object {
-                  "borderColor": "#F46152",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#231B22",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -1385,7 +1352,6 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 1`] = `
                 },
               ]
             }
-            variant="primary"
           />
         </View>
       </View>
@@ -1434,11 +1400,13 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 2`] = `
           <View
             checked={false}
             disabled={false}
+            inverted={false}
             pressed={false}
             style={
               Array [
                 Object {
-                  "borderColor": "#F46152",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#231B22",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -1448,7 +1416,6 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 2`] = `
                 },
               ]
             }
-            variant="primary"
           />
         </View>
       </View>

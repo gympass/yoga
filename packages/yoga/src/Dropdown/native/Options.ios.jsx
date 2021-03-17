@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, arrayOf, string, shape, oneOfType, number } from 'prop-types';
 import { Picker } from 'react-native';
-import { Button } from '@gympass/yoga';
+import { Button } from '../..';
 
 const PickerStyled = styled.Picker`
   width: 100%;

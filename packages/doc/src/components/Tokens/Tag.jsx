@@ -6,7 +6,7 @@ const Tag = styled.span`
     light,
     theme: {
       yoga: {
-        colors: { white, gray },
+        colors: { white, elements },
       },
     },
   }) => `
@@ -15,7 +15,9 @@ const Tag = styled.span`
     margin: 5px;
     padding: 5px;
     
-    background: ${light ? hexToRgb(white, 0.4) : hexToRgb(gray[2], 0.4)};
+    background: ${
+      light ? hexToRgb(white, 0.4) : hexToRgb(elements.lineAndBorders, 0.4)
+    };
     border-radius: 4px;
 
     font-size: 12px;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { arrayOf, object, shape, bool } from 'prop-types';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
-import { ThemeProvider } from '@gympass/yoga';
+import { ThemeProvider, yogaTheme } from '@gympass/yoga';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Link } from 'gatsby';
 
@@ -11,7 +11,6 @@ import {
   Navigation,
   Documentation,
   Header,
-  ThemeConfig,
   TabBar,
 } from 'components';
 import ReactLogo from 'images/react-logo.svg';
@@ -23,13 +22,13 @@ const MainWrapper = styled.div`
   ${({
     theme: {
       yoga: {
-        colors: { primary: primaryPallete },
+        colors: { primary },
       },
     },
   }) => `
     height: 100%;
     a[target] {
-      color: ${primaryPallete[3]};
+      color: ${primary};
       text-decoration: none;
     }
   `}
@@ -39,11 +38,11 @@ const Grid = styled.div`
   ${({
     theme: {
       yoga: {
-        colors: { gray: grayPallete },
+        colors: { elements },
       },
     },
   }) => `
-    background-color: ${hexToRgb(grayPallete[1], 0.7)};
+    background-color: ${hexToRgb(elements.backgroundAndDisabled, 0.7)};
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
@@ -71,7 +70,7 @@ const HeaderLink = styled(Link).attrs({
   ({
     theme: {
       yoga: {
-        colors: { primary, gray },
+        colors: { primary, elements },
       },
     },
   }) =>
@@ -81,12 +80,12 @@ const HeaderLink = styled(Link).attrs({
     margin-right: 32px;
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    color: ${gray[7]};
+    color: ${elements.selectionAndIcons};
     height: 100%;
 
     &.active {
-      border-bottom-color: ${primary[3]};
-      color: ${primary[3]};
+      border-bottom-color: ${primary};
+      color: ${primary};
     }
   `,
 );
@@ -99,8 +98,6 @@ const Layout = ({
   doc: { body, frontmatter },
 }) => {
   const { metaTitle, metaDescription } = frontmatter;
-  const [theme, setTheme] = useState();
-  const [locale, setLocale] = useState();
   const [showMenu, toggleMenu] = useState(false);
 
   const prefix =
@@ -109,7 +106,7 @@ const Layout = ({
       : false;
 
   return (
-    <ThemeProvider theme={theme} locale={locale}>
+    <ThemeProvider>
       <Helmet>
         <link
           rel="icon"
@@ -146,12 +143,6 @@ const Layout = ({
               Guidelines
             </HeaderLink>
             <HeaderLink to="/components">Components</HeaderLink>
-            <ThemeConfig
-              theme={theme}
-              locale={locale}
-              setTheme={setTheme}
-              setLocale={setLocale}
-            />
           </Header>
 
           <TabBar>
@@ -171,7 +162,7 @@ const Layout = ({
             items={nav}
             prefix={prefix}
           />
-          <Documentation mdx={body} prefix={prefix} theme={theme} />
+          <Documentation mdx={body} prefix={prefix} theme={yogaTheme} />
 
           <Footer>
             Made with{' '}

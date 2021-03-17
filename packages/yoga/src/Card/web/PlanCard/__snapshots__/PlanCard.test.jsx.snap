@@ -7,16 +7,28 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #F46152;
-  border: 2px solid #F46152;
+  background-color: #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -27,22 +39,37 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   text-decoration: none;
 }
 
+.c16 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c16:not([disabled]):hover,
 .c16:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(244,97,82,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c16:active {
-  background-color: #F78D82;
-  border-color: #F78D82;
+  background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
+.c16:active svg {
+  fill: #FFFFFF;
+}
+
 .c16:disabled {
-  background-color: #DBDBE8;
-  border-color: #DBDBE8;
-  color: #9898A6;
+  background-color: #F5F5FA;
+  color: #D7D7E0;
   cursor: not-allowed;
+}
+
+.c16:disabled svg {
+  fill: #D7D7E0;
 }
 
 .c8 {
@@ -52,7 +79,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   line-height: 56px;
   font-weight: 500;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c15 {
@@ -66,7 +93,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   line-height: 16px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   text-transform: uppercase;
   margin-bottom: 8px;
   color: #6B6B78;
@@ -80,8 +107,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   line-height: 28px;
   font-weight: 500;
   font-family: Rubik;
-  color: #41414A;
-  color: #001027;
+  color: #231B22;
+  color: #231B22;
   margin-bottom: 4px;
 }
 
@@ -92,7 +119,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   height: 40px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -119,7 +146,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -132,7 +159,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
@@ -180,7 +207,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   left: 20px;
   padding-left: 8px;
   padding-right: 8px;
-  border: 1px solid #9898A6;
+  border: 1px solid #D7D7E0;
   border-radius: 4px;
   font-size: 12px;
   line-height: px;
@@ -223,14 +250,14 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   display: inline-block;
   height: 100%;
   vertical-align: middle;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #001027;
+  color: #231B22;
 }
 
 .c14 {
@@ -255,7 +282,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-family: Rubik;
   font-size: 12px;
   font-weight: 500;
-  color: #652CDB;
+  color: #D8385E;
 }
 
 <div>
@@ -359,7 +386,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   line-height: 56px;
   font-weight: 500;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
 }
 
 .c2 {
@@ -369,7 +396,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   line-height: 16px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   text-transform: uppercase;
   margin-bottom: 8px;
   color: #6B6B78;
@@ -383,8 +410,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   line-height: 28px;
   font-weight: 500;
   font-family: Rubik;
-  color: #41414A;
-  color: #001027;
+  color: #231B22;
+  color: #231B22;
   margin-bottom: 4px;
 }
 
@@ -395,7 +422,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   height: 40px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -422,7 +449,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -435,7 +462,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   line-height: 20px;
   font-weight: 400;
   font-family: Rubik;
-  color: #41414A;
+  color: #231B22;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
