@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0-alpha.8](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.3.0-alpha.7...@gympass/yoga-doc@1.3.0-alpha.8) (2021-03-17)
+
+
+### Bug Fixes
+
+* **button.outline:** update button.outline layout with new figma specification ([a4b881f](https://github.com/Gympass/yoga/commit/a4b881fa241b6c348e0c82a6427e47bf2e374702))
+* **native:** fix Button components to reflect figma design ([a433d0d](https://github.com/Gympass/yoga/commit/a433d0d1cd1600ee89683f63f62a032a7709774b))
+* **web:** fix button components to reflect figma design ([fa39aaf](https://github.com/Gympass/yoga/commit/fa39aaf0d2016e21f601773d61dbb6f053f53491))
+
+
+
+
+
 # [1.3.0-alpha.7](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.3.0-alpha.6...@gympass/yoga-doc@1.3.0-alpha.7) (2021-03-11)
 
 **Note:** Version bump only for package @gympass/yoga-doc

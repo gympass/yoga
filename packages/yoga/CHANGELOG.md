@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0-alpha.9](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.8...@gympass/yoga@5.2.0-alpha.9) (2021-03-17)
+
+
+### Bug Fixes
+
+* **autocomplete:** matching Figma file ([298f833](https://github.com/Gympass/yoga/commit/298f833dde219e494767663fa93700e2cea4b413))
+* **button:** fix missing unit warnings ([8cf87aa](https://github.com/Gympass/yoga/commit/8cf87aaa48cf1e539c5556cf6d726a6c057f4c94))
+* **button.outline:** update button.outline layout with new figma specification ([a4b881f](https://github.com/Gympass/yoga/commit/a4b881fa241b6c348e0c82a6427e47bf2e374702))
+* **checkbox.switch:** updating states tokens ([854c3f8](https://github.com/Gympass/yoga/commit/854c3f898a9a57b1a2bf04bca6e6c7d31f4cfaa9))
+* **helper:** update helper text color when error ([0f7557d](https://github.com/Gympass/yoga/commit/0f7557d100e61dc51b35b24e59a37537f945db5d))
+* **native:** fix Button components to reflect figma design ([a433d0d](https://github.com/Gympass/yoga/commit/a433d0d1cd1600ee89683f63f62a032a7709774b))
+* **radiogroup:** adjust default text color ([73a159d](https://github.com/Gympass/yoga/commit/73a159d8b80d0ee6baffaaa58e8f0d2681cb1bc7))
+* **web:** fix button components to reflect figma design ([fa39aaf](https://github.com/Gympass/yoga/commit/fa39aaf0d2016e21f601773d61dbb6f053f53491))
+
+
+### Features
+
+* **button:** add icon support to Button, Button.Text and Button.Outline ([8308108](https://github.com/Gympass/yoga/commit/8308108b56f3a17c59d8bd8c137fe127d29e5a30))
+* **checkbox:** update Checkbox to match Figma file ([5fef900](https://github.com/Gympass/yoga/commit/5fef9005bb500459b5b468bd24704b7670a597b4))
+* **dropdown:** update Dropdown to match Figma file ([bd95558](https://github.com/Gympass/yoga/commit/bd95558feff980385cfc545a3499e2a59aa27969))
+* **helper:** export Input Helper to be used outside of it ([96c44cb](https://github.com/Gympass/yoga/commit/96c44cb7bdded42a2981d188236b4cf6d140f223))
+* **switch:** adjust thumb color on native and shadow ([0079510](https://github.com/Gympass/yoga/commit/00795101849dbb627600bcfa66e5ce14c778d45b))
+* **switch:** onPress shadow ([ffbc1c0](https://github.com/Gympass/yoga/commit/ffbc1c06c8c09aabb3d5b12be6ca2e79f627c132))
+
+
+
+
+
 # [5.2.0-alpha.8](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.7...@gympass/yoga@5.2.0-alpha.8) (2021-03-11)
 
 **Note:** Version bump only for package @gympass/yoga
