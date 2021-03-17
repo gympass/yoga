@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { bool, func } from 'prop-types';
+import { bool } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
-import { Animated, TouchableWithoutFeedback } from 'react-native';
+import { hexToRgb } from '@gympass/yoga-common';
+import { Animated } from 'react-native';
+import withTouchable from '../../Button/native/withTouchable';
 
 const SwitchTrack = styled.View`
   ${({
@@ -34,6 +36,34 @@ const SwitchTrack = styled.View`
   `};
 `;
 
+const ThumbShadow = styled.View(
+  ({
+    theme: {
+      yoga: {
+        colors,
+        components: { checkboxswitch },
+      },
+    },
+    checked,
+  }) => {
+    const width = checkboxswitch.thumb.width * checkboxswitch.thumb.shadowScale;
+    const height =
+      checkboxswitch.thumb.height * checkboxswitch.thumb.shadowScale;
+
+    return `
+      width: ${width}px;
+      height: ${height}px;
+      position: absolute;
+      background-color: ${
+        checked
+          ? hexToRgb(colors.text.secondary, 0.75)
+          : hexToRgb(colors.elements.lineAndBorders, 0.75)
+      };
+      border-radius: ${checkboxswitch.thumb.radii}px;
+    `;
+  },
+);
+
 const SwitchThumb = styled.View`
   ${({
     theme: {
@@ -48,6 +78,8 @@ const SwitchThumb = styled.View`
   height: ${checkboxswitch.thumb.height}px;
   border-radius: ${checkboxswitch.thumb.radii};
   background-color: ${checkboxswitch.thumb.backgroundColor};
+  box-shadow: ${checkboxswitch.thumb.shadow};
+  elevation: 4;
 
   ${
     disabled
@@ -60,14 +92,13 @@ const SwitchThumb = styled.View`
 
 const CheckboxSwitch = ({
   checked,
+  pressed,
   disabled,
   theme: {
     yoga: {
       components: { checkboxswitch },
     },
   },
-  onChange,
-  ...rest
 }) => {
   const [thumbPosition] = useState(new Animated.Value(checked));
   const thumbTo =
@@ -75,6 +106,14 @@ const CheckboxSwitch = ({
     checkboxswitch.thumb.width -
     checkboxswitch.thumb.left;
   const thumbFrom = checkboxswitch.thumb.left;
+
+  const shadowDiameter =
+    checkboxswitch.thumb.width * checkboxswitch.thumb.shadowScale;
+  const shadowAndThumbDiff = shadowDiameter - checkboxswitch.thumb.width;
+  const halfDiff = shadowAndThumbDiff / 2;
+
+  const thumbShadowFrom = (halfDiff - checkboxswitch.thumb.left) * -1;
+  const thumbShadowTo = thumbTo - halfDiff;
 
   useEffect(() => {
     const toggle = (isChecked, position) => {
@@ -90,56 +129,69 @@ const CheckboxSwitch = ({
   }, [checked]);
 
   return (
-    <TouchableWithoutFeedback onPress={onChange}>
-      <SwitchTrack
-        checked={checked}
-        disabled={disabled}
-        as={Animated.View}
-        style={
-          !disabled && {
-            backgroundColor: thumbPosition.interpolate({
-              inputRange: [0, 1],
-              outputRange: [
-                checkboxswitch.track.checked.backgroundColor,
-                checkboxswitch.track.backgroundColor,
-              ],
-            }),
-          }
+    <SwitchTrack
+      checked={checked}
+      disabled={disabled}
+      as={Animated.View}
+      style={
+        !disabled && {
+          backgroundColor: thumbPosition.interpolate({
+            inputRange: [0, 1],
+            outputRange: [
+              checkboxswitch.track.checked.backgroundColor,
+              checkboxswitch.track.backgroundColor,
+            ],
+          }),
         }
-        {...rest}
-      >
-        <SwitchThumb
+      }
+    >
+      {pressed && !disabled && (
+        <ThumbShadow
           checked={checked}
-          disabled={disabled}
           as={Animated.View}
           style={{
             transform: [
               {
                 translateX: thumbPosition.interpolate({
                   inputRange: [0, 1],
-                  outputRange: [thumbTo, thumbFrom],
+                  outputRange: [thumbShadowTo, thumbShadowFrom],
                 }),
               },
             ],
           }}
         />
-      </SwitchTrack>
-    </TouchableWithoutFeedback>
+      )}
+      <SwitchThumb
+        checked={checked}
+        disabled={disabled}
+        as={Animated.View}
+        style={{
+          transform: [
+            {
+              translateX: thumbPosition.interpolate({
+                inputRange: [0, 1],
+                outputRange: [thumbTo, thumbFrom],
+              }),
+            },
+          ],
+        }}
+      />
+    </SwitchTrack>
   );
 };
 
 CheckboxSwitch.propTypes = {
   checked: bool,
   disabled: bool,
-  onChange: func,
+  pressed: bool,
 };
 
 CheckboxSwitch.defaultProps = {
   checked: false,
   disabled: false,
-  onChange: () => {},
+  pressed: false,
 };
 
 CheckboxSwitch.displayName = 'Checkbox.Switch';
 
-export default withTheme(CheckboxSwitch);
+export default withTouchable(withTheme(CheckboxSwitch));

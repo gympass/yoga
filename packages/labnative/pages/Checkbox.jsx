@@ -16,6 +16,7 @@ const CheckboxWrapper = styled.View`
 
 const CheckboxPage = () => {
   const [checked, setChecked] = useState(true);
+  const [checkInverted, setCheckInverted] = useState(true);
 
   return (
     <ScrollView
@@ -25,25 +26,55 @@ const CheckboxPage = () => {
     >
       <DocTitle>Disabled</DocTitle>
       <CheckboxWrapper>
-        <Checkbox disabled label="Checkbox Label" helper="Checkbox Helper" />
+        <Checkbox
+          disabled
+          style={{ marginRight: 4 }}
+          label="Default Label"
+          helper="Default Helper"
+        />
+        <Checkbox
+          disabled
+          inverted
+          label="Inverted Label"
+          helper="Inverted Helper"
+        />
       </CheckboxWrapper>
       <DocTitle>Unchecked</DocTitle>
       <CheckboxWrapper>
         <Checkbox
           checked={false}
-          label="Checkbox Label"
-          helper="Checkbox Helper"
+          style={{ marginRight: 4 }}
+          label="Default Label"
+          helper="Default Helper"
+        />
+        <Checkbox
+          checked={false}
+          inverted
+          label="Inverted Label"
+          helper="Inverted Helper"
         />
       </CheckboxWrapper>
       <DocTitle>Checked</DocTitle>
       <CheckboxWrapper>
-        <Checkbox checked label="Checkbox Label" helper="Checkbox Helper" />
+        <Checkbox
+          checked
+          style={{ marginRight: 4 }}
+          label="Default Label"
+          helper="Default Helper"
+        />
+        <Checkbox
+          checked
+          inverted
+          style={{ marginRight: 4 }}
+          label="Inverted Label"
+          helper="Inverted Helper"
+        />
       </CheckboxWrapper>
       <DocTitle>Error</DocTitle>
       <CheckboxWrapper>
         <Checkbox
-          label="Checkbox Label"
-          helper="Checkbox Helper"
+          label="Default Label"
+          helper="Default Helper"
           error="Error text"
         />
       </CheckboxWrapper>
@@ -51,26 +82,18 @@ const CheckboxPage = () => {
       <CheckboxWrapper>
         <Checkbox
           checked={checked}
-          label="Checkbox Label"
-          helper="Checkbox Helper"
+          label="Default Label"
+          helper="Default Helper"
           onPress={() => setChecked(!checked)}
-        />
-      </CheckboxWrapper>
-      <DocTitle>Variants</DocTitle>
-      <CheckboxWrapper>
-        <Checkbox
-          checked
-          variant="primary"
-          label="Primary (default)"
           style={{ marginRight: 4 }}
         />
         <Checkbox
-          checked
-          variant="secondary"
-          label="Seconary"
-          style={{ marginRight: 4 }}
+          checked={checkInverted}
+          label="Inverted"
+          helper="Default Helper"
+          onPress={() => setCheckInverted(!checkInverted)}
+          inverted
         />
-        <Checkbox checked variant="tertiary" label="Tertiary" />
       </CheckboxWrapper>
     </ScrollView>
   );

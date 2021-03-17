@@ -13,58 +13,38 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [5.2.0-alpha.7](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.6...@gympass/yoga@5.2.0-alpha.7) (2021-03-03)
 
-
 ### Features
 
-* **text:** add section title as a new variation to the text component ([5be64e5](https://github.com/Gympass/yoga/commit/5be64e59a819d72bf04b2a5ff588693123695bc6))
-* **text:** adding the smallestException as a new variant to the text component ([3b095fb](https://github.com/Gympass/yoga/commit/3b095fbac532e9a821b7d9963bd1f1c56bf9d2c7))
-
-
-
-
+- **text:** add section title as a new variation to the text component ([5be64e5](https://github.com/Gympass/yoga/commit/5be64e59a819d72bf04b2a5ff588693123695bc6))
+- **text:** adding the smallestException as a new variant to the text component ([3b095fb](https://github.com/Gympass/yoga/commit/3b095fbac532e9a821b7d9963bd1f1c56bf9d2c7))
 
 # [5.2.0-alpha.6](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.5...@gympass/yoga@5.2.0-alpha.6) (2021-03-01)
 
-
 ### Features
 
-* **tag:** fix tag default color, refactor tests, change docs ([16d6232](https://github.com/Gympass/yoga/commit/16d623272fd8fe4844cdb1f292cc44e92b0134d2))
-* **tag:** remove tag full / fix tag informative to be without tag as default ([1ead324](https://github.com/Gympass/yoga/commit/1ead324b0dec9ec33036799dab9f4fa0632baf00))
-* **tag:** update tag border color and icon margin ([51cae3c](https://github.com/Gympass/yoga/commit/51cae3c7713389b1b918cccbc0bb1e69e8bf37ff))
-* refactor tag component to Yoga 2.0 ([d748909](https://github.com/Gympass/yoga/commit/d7489096e99dee6d01a47ffa8857390b6a0dc6dc))
-
-
-
-
+- **tag:** fix tag default color, refactor tests, change docs ([16d6232](https://github.com/Gympass/yoga/commit/16d623272fd8fe4844cdb1f292cc44e92b0134d2))
+- **tag:** remove tag full / fix tag informative to be without tag as default ([1ead324](https://github.com/Gympass/yoga/commit/1ead324b0dec9ec33036799dab9f4fa0632baf00))
+- **tag:** update tag border color and icon margin ([51cae3c](https://github.com/Gympass/yoga/commit/51cae3c7713389b1b918cccbc0bb1e69e8bf37ff))
+- refactor tag component to Yoga 2.0 ([d748909](https://github.com/Gympass/yoga/commit/d7489096e99dee6d01a47ffa8857390b6a0dc6dc))
 
 # [5.2.0-alpha.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.4...@gympass/yoga@5.2.0-alpha.5) (2021-02-26)
 
 **Note:** Version bump only for package @gympass/yoga
 
-
-
-
-
 # [5.2.0-alpha.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.3...@gympass/yoga@5.2.0-alpha.4) (2021-02-17)
-
 
 ### Bug Fixes
 
-* **native:** remove inputValue from input component ([5348c16](https://github.com/Gympass/yoga/commit/5348c162304d766bb85b17235950e9936c808c9b))
-* remove inputValue from input component ([c9890c3](https://github.com/Gympass/yoga/commit/c9890c314166e16c6d03317fd0720db6d3ccc3a0))
-* **input:** fix Input helper text color when affected by an error ([71a117f](https://github.com/Gympass/yoga/commit/71a117f7bb384728e0fd14e1fdcf1439c0066230))
-* **yoga:** add box-sizing to input fieldset ([835e345](https://github.com/Gympass/yoga/commit/835e345662d5dbee807e50d34dd3200d9b5b4962))
-
+- **native:** remove inputValue from input component ([5348c16](https://github.com/Gympass/yoga/commit/5348c162304d766bb85b17235950e9936c808c9b))
+- remove inputValue from input component ([c9890c3](https://github.com/Gympass/yoga/commit/c9890c314166e16c6d03317fd0720db6d3ccc3a0))
+- **input:** fix Input helper text color when affected by an error ([71a117f](https://github.com/Gympass/yoga/commit/71a117f7bb384728e0fd14e1fdcf1439c0066230))
+- **yoga:** add box-sizing to input fieldset ([835e345](https://github.com/Gympass/yoga/commit/835e345662d5dbee807e50d34dd3200d9b5b4962))
 
 ### Features
 
-* **input:** add hiddenMaxLength props to not render Help component inside Input ([e78b627](https://github.com/Gympass/yoga/commit/e78b627c5daaf40bef2294840d86571ea9d0362e))
-* **input:** create a description to hiddenMaxLength prop ([50c2c38](https://github.com/Gympass/yoga/commit/50c2c38f8c9108104e1627ce283aa7b5a44395db))
-* **input:** rename prop to hideMaxLength and add snapshot to web component ([57ae3a0](https://github.com/Gympass/yoga/commit/57ae3a03279a00b715fbe4afab03eff5acee1884))
-
-
-
-
+- **input:** add hiddenMaxLength props to not render Help component inside Input ([e78b627](https://github.com/Gympass/yoga/commit/e78b627c5daaf40bef2294840d86571ea9d0362e))
+- **input:** create a description to hiddenMaxLength prop ([50c2c38](https://github.com/Gympass/yoga/commit/50c2c38f8c9108104e1627ce283aa7b5a44395db))
+- **input:** rename prop to hideMaxLength and add snapshot to web component ([57ae3a0](https://github.com/Gympass/yoga/commit/57ae3a03279a00b715fbe4afab03eff5acee1884))
 
 ## [5.2.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.2...@gympass/yoga@5.2.3) (2021-02-09)
 

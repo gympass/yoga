@@ -10,6 +10,7 @@ const StyledLegend = styled.legend`
   height: 0;
   font-weight: normal;
   visibility: hidden;
+  transition-property: max-width, padding;
 
   ${({
     theme: {
@@ -20,6 +21,8 @@ const StyledLegend = styled.legend`
   }) => `
     font-size: ${input.label.font.size.typed}px;
     letter-spacing: normal;
+
+    transition-duration: 100ms;
   `}
 `;
 

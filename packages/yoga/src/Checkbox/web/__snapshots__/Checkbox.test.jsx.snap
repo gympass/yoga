@@ -1,270 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Checkbox /> Snapshots should match snapshot with all variant styles 1`] = `
-.c7 {
-  border: 0;
-  height: 0;
-  margin: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 0;
-}
-
-.c0 {
-  display: inline-block;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-.c6 {
-  position: relative;
-  border-style: solid;
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #231B22;
-}
-
-.c8 {
-  position: relative;
-  border-style: solid;
-  width: 24px;
-  height: 24px;
-  margin-right: 8px;
-  border-radius: 4px;
-  border-width: 2px;
-  border-color: #231B22;
-  background-color: #231B22;
-}
-
-.c8 svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  fill: #FFFFFF;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 14px;
-  color: #231B22;
-}
-
-.c5 {
-  position: absolute;
-  display: none;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-}
-
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c1 .c2:active .c4,
-.c1:focus-within .c4,
-.c1:hover .c4 {
-  display: block;
-}
-
-.c1:hover .c4 {
-  background-color: rgba(215,215,224,0.25);
-  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
-}
-
-.c1:focus-within .c4 {
-  background-color: rgba(215,215,224,0.5);
-  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
-}
-
-.c1 .c2:active .c4 {
-  background-color: rgba(215,215,224,0.75);
-  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
-}
-
-<div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c1"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c6"
-        />
-        <input
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c1"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c6"
-        />
-        <input
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c1"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c6"
-        />
-        <input
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c1"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c8"
-        >
-          <svg
-            height="24"
-            width="24"
-          />
-        </div>
-        <input
-          checked=""
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c1"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c8"
-        >
-          <svg
-            height="24"
-            width="24"
-          />
-        </div>
-        <input
-          checked=""
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-  <div
-    class="c0"
-  >
-    <div
-      class="c1"
-    >
-      <label
-        class="c2 c3"
-      >
-        <span
-          class="c4 c5"
-        />
-        <div
-          class="c8"
-        >
-          <svg
-            height="24"
-            width="24"
-          />
-        </div>
-        <input
-          checked=""
-          class="c7"
-          type="checkbox"
-        />
-      </label>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] = `
 .c7 {
   border: 0;
@@ -291,10 +26,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: #231B22;
   border-radius: 4px;
   border-width: 2px;
   border-color: #231B22;
-  background-color: #231B22;
 }
 
 .c6 svg {
@@ -320,7 +55,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   color: #231B22;
 }
 
@@ -443,9 +178,20 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
   border-color: #231B22;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c3 {
@@ -461,7 +207,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   color: #231B22;
 }
 
@@ -578,11 +324,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: #D7D7E0;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #F5F5FA;
-  background-color: #231B22;
-  background-color: #F5F5FA;
+  border-color: #D7D7E0;
 }
 
 .c6 svg {
@@ -608,7 +353,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   color: #231B22;
 }
 
@@ -733,9 +478,20 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #F5F5FA;
+  border-color: #D7D7E0;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c3 {
@@ -751,7 +507,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   color: #231B22;
 }
 
@@ -870,12 +626,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: #FF874C;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #231B22;
-  background-color: #231B22;
   border-color: #FF874C;
-  background-color: #FF874C;
 }
 
 .c6 svg {
@@ -901,7 +655,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   color: #231B22;
 }
 
@@ -1024,10 +778,20 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #231B22;
   border-color: #FF874C;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c3 {
@@ -1043,7 +807,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   color: #231B22;
 }
 
@@ -1134,6 +898,458 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 </div>
 `;
 
+exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
+.c7 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 {
+  display: inline-block;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-color: transparent;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #FFFFFF;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #231B22;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #231B22;
+}
+
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
+}
+
+.c1:hover .c4 {
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
+}
+
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
+}
+
+.c8 {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.c9 {
+  color: #6B6B78;
+  font-size: 14px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c6"
+        />
+        <input
+          class="c7"
+          type="checkbox"
+        />
+        Checkbox Component
+      </label>
+    </div>
+    <div
+      class="c8"
+    >
+      <span
+        class="c9"
+      >
+        Helper Text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 1`] = `
+.c7 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 {
+  display: inline-block;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #FFFFFF;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #231B22;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #231B22;
+}
+
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
+}
+
+.c1:hover .c4 {
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
+}
+
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
+}
+
+.c8 {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.c9 {
+  color: #6B6B78;
+  font-size: 14px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c6"
+        >
+          <svg
+            height="24"
+            width="24"
+          />
+        </div>
+        <input
+          checked=""
+          class="c7"
+          type="checkbox"
+        />
+        Checkbox Component
+      </label>
+    </div>
+    <div
+      class="c8"
+    >
+      <span
+        class="c9"
+      >
+        Helper Text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked and disabled 1`] = `
+.c7 {
+  border: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0;
+}
+
+.c0 {
+  display: inline-block;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c6 {
+  position: relative;
+  border-style: solid;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background-color: #D7D7E0;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #D7D7E0;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #231B22;
+}
+
+.c5 {
+  position: absolute;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}
+
+.c1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 .c2:active .c4,
+.c1:focus-within .c4,
+.c1:hover .c4 {
+  display: block;
+}
+
+.c1:hover .c4 {
+  background-color: rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.25);
+}
+
+.c1:focus-within .c4 {
+  background-color: rgba(215,215,224,0.5);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.5);
+}
+
+.c1 .c2:active .c4 {
+  background-color: rgba(215,215,224,0.75);
+  box-shadow: 0 0 0 8px  rgba(215,215,224,0.75);
+}
+
+.c8 {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.c9 {
+  color: #6B6B78;
+  font-size: 14px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <label
+        class="c2 c3"
+      >
+        <span
+          class="c4 c5"
+        />
+        <div
+          class="c6"
+          disabled=""
+        >
+          <svg
+            height="24"
+            width="24"
+          />
+        </div>
+        <input
+          checked=""
+          class="c7"
+          disabled=""
+          type="checkbox"
+        />
+        Checkbox Component
+      </label>
+    </div>
+    <div
+      class="c8"
+    >
+      <span
+        class="c9"
+      >
+        Helper Text
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
 .c7 {
   border: 0;
@@ -1160,9 +1376,20 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   width: 24px;
   height: 24px;
   margin-right: 8px;
+  background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
   border-color: #231B22;
+}
+
+.c6 svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  fill: #FFFFFF;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 
 .c3 {
@@ -1178,7 +1405,7 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   color: #231B22;
 }
 

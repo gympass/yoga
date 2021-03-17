@@ -13,54 +13,34 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.3.0-alpha.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.3.0-alpha.5...@gympass/yoga-doc@1.3.0-alpha.6) (2021-03-03)
 
-
 ### Features
 
-* **text:** add section title as a new variation to the text component ([5be64e5](https://github.com/Gympass/yoga/commit/5be64e59a819d72bf04b2a5ff588693123695bc6))
-* **text:** adding the smallestException as a new variant to the text component ([3b095fb](https://github.com/Gympass/yoga/commit/3b095fbac532e9a821b7d9963bd1f1c56bf9d2c7))
-
-
-
-
+- **text:** add section title as a new variation to the text component ([5be64e5](https://github.com/Gympass/yoga/commit/5be64e59a819d72bf04b2a5ff588693123695bc6))
+- **text:** adding the smallestException as a new variant to the text component ([3b095fb](https://github.com/Gympass/yoga/commit/3b095fbac532e9a821b7d9963bd1f1c56bf9d2c7))
 
 # [1.3.0-alpha.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.3.0-alpha.4...@gympass/yoga-doc@1.3.0-alpha.5) (2021-03-01)
 
-
 ### Features
 
-* **tag:** fix tag default color, refactor tests, change docs ([16d6232](https://github.com/Gympass/yoga/commit/16d623272fd8fe4844cdb1f292cc44e92b0134d2))
-* **tag:** remove tag full / fix tag informative to be without tag as default ([1ead324](https://github.com/Gympass/yoga/commit/1ead324b0dec9ec33036799dab9f4fa0632baf00))
-* refactor tag component to Yoga 2.0 ([d748909](https://github.com/Gympass/yoga/commit/d7489096e99dee6d01a47ffa8857390b6a0dc6dc))
-
-
-
-
+- **tag:** fix tag default color, refactor tests, change docs ([16d6232](https://github.com/Gympass/yoga/commit/16d623272fd8fe4844cdb1f292cc44e92b0134d2))
+- **tag:** remove tag full / fix tag informative to be without tag as default ([1ead324](https://github.com/Gympass/yoga/commit/1ead324b0dec9ec33036799dab9f4fa0632baf00))
+- refactor tag component to Yoga 2.0 ([d748909](https://github.com/Gympass/yoga/commit/d7489096e99dee6d01a47ffa8857390b6a0dc6dc))
 
 # [1.3.0-alpha.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.3.0-alpha.3...@gympass/yoga-doc@1.3.0-alpha.4) (2021-02-26)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
-
-
-
-
 # [1.3.0-alpha.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.3.0-alpha.2...@gympass/yoga-doc@1.3.0-alpha.3) (2021-02-17)
-
 
 ### Bug Fixes
 
-* **doc:** fix "injectImport" import ([3fa288c](https://github.com/Gympass/yoga/commit/3fa288c6089056e40461d40eaadbbfffbb25dd98))
-* **docs:** fix codesandbox code generation when it's a "state" type ([57e259e](https://github.com/Gympass/yoga/commit/57e259e1307d56c5594a525343086fc59e188a06))
-
+- **doc:** fix "injectImport" import ([3fa288c](https://github.com/Gympass/yoga/commit/3fa288c6089056e40461d40eaadbbfffbb25dd98))
+- **docs:** fix codesandbox code generation when it's a "state" type ([57e259e](https://github.com/Gympass/yoga/commit/57e259e1307d56c5594a525343086fc59e188a06))
 
 ### Features
 
-* **doc:** get components that are inside brackets ([7c1f2ef](https://github.com/Gympass/yoga/commit/7c1f2ef5d893351f0836e6ed39cf080914c3ffd8))
-* **doc:** providing @gympass/yoga-helpers support ([81ccc32](https://github.com/Gympass/yoga/commit/81ccc321d55e086c65d58ee6dd36a05f6f156ba4))
-
-
-
-
+- **doc:** get components that are inside brackets ([7c1f2ef](https://github.com/Gympass/yoga/commit/7c1f2ef5d893351f0836e6ed39cf080914c3ffd8))
+- **doc:** providing @gympass/yoga-helpers support ([81ccc32](https://github.com/Gympass/yoga/commit/81ccc321d55e086c65d58ee6dd36a05f6f156ba4))
 
 # [1.3.0-alpha.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@1.3.0-alpha.1...@gympass/yoga-doc@1.3.0-alpha.2) (2021-02-12)
 

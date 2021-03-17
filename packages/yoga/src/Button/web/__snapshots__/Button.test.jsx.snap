@@ -7,16 +7,28 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -27,6 +39,15 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -34,15 +55,21 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
 }
 
 <div>
@@ -55,6 +82,89 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with defa
 </div>
 `;
 
+exports[`<Button /> Snapshots With disabled prop should match snapshot with default Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0"
+    disabled=""
+  >
+    <svg />
+    Button
+  </button>
+</div>
+`;
+
 exports[`<Button /> Snapshots With disabled prop should match snapshot with link Button 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -62,16 +172,28 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -82,12 +204,19 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
   text-decoration: none;
   height: unset;
   padding: 0;
-  margin-top: 16px;
-  margin-bottom: 8px;
   background-color: unset;
   border: none;
   border-radius: 0;
-  color: #231B22;
+  color: #D8385E;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
 }
 
 .c0:not([disabled]):hover,
@@ -97,30 +226,41 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with link
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
-.c0:not([disabled]):hover,
-.c0:not([disabled]):focus {
-  box-shadow: unset;
-  color: rgba(35,27,34,0.75);
+.c0:disabled svg {
+  fill: #D7D7E0;
 }
 
+.c0:disabled,
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus,
 .c0:not([disabled]):active {
+  box-shadow: unset;
   background-color: unset;
-  color: rgba(35,27,34,0.75);
+}
+
+.c0:not([disabled]):hover {
+  color: rgba(216,56,94,0.5);
+}
+
+.c0:not([disabled]):focus,
+.c0:not([disabled]):active {
+  color: rgba(216,56,94,0.75);
 }
 
 .c0:disabled {
-  background-color: unset;
   color: #D7D7E0;
 }
 
@@ -139,16 +279,28 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -159,6 +311,15 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -166,33 +327,54 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
 .c1 {
   background-color: transparent;
+  border: 1px solid;
   border-color: #231B22;
   color: #231B22;
 }
 
+.c1 svg {
+  fill: #231B22;
+}
+
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(35,27,34,0.25);
-  box-shadow: none;
+  background-color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #FFFFFF;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
   border-color: rgba(35,27,34,0.75);
   color: rgba(35,27,34,0.75);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
@@ -201,11 +383,141 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with outl
   color: #D7D7E0;
 }
 
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
 <div>
   <button
     class="c0 c1"
     disabled=""
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With disabled prop should match snapshot with outline Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c1 {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #231B22;
+  color: #231B22;
+}
+
+.c1 svg {
+  fill: #231B22;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #FFFFFF;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: rgba(35,27,34,0.75);
+  color: rgba(35,27,34,0.75);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0 c1"
+    disabled=""
+  >
+    <svg />
     Button
   </button>
 </div>
@@ -218,16 +530,28 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -238,6 +562,15 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -245,15 +578,21 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -262,22 +601,43 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
   color: #231B22;
 }
 
+.c1 svg {
+  fill: #231B22;
+}
+
 .c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  background-color: rgba(35,27,34,0.25);
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  background-color: transparent;
   box-shadow: none;
 }
 
+.c1:not([disabled]):hover {
+  color: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):focus,
 .c1:not([disabled]):active {
-  background-color: transparent;
-  border-color: transparent;
   color: rgba(35,27,34,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
   color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
 }
 
 <div>
@@ -290,23 +650,35 @@ exports[`<Button /> Snapshots With disabled prop should match snapshot with text
 </div>
 `;
 
-exports[`<Button /> Snapshots With full prop should match snapshot with default Button 1`] = `
+exports[`<Button /> Snapshots With disabled prop should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
-  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -317,6 +689,15 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -324,21 +705,237 @@ exports[`<Button /> Snapshots With full prop should match snapshot with default 
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: transparent;
+  color: #231B22;
+}
+
+.c1 svg {
+  fill: #231B22;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.c1:not([disabled]):hover {
+  color: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  color: rgba(35,27,34,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0 c1"
+    disabled=""
+  >
+    <svg />
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With full prop should match snapshot with default Button 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
 }
 
 <div>
   <button
     class="c0"
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With full prop should match snapshot with default Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <svg />
     Button
   </button>
 </div>
@@ -351,16 +948,28 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -371,6 +980,15 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -378,33 +996,54 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
 .c1 {
   background-color: transparent;
+  border: 1px solid;
   border-color: #231B22;
   color: #231B22;
 }
 
+.c1 svg {
+  fill: #231B22;
+}
+
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(35,27,34,0.25);
-  box-shadow: none;
+  background-color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #FFFFFF;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
   border-color: rgba(35,27,34,0.75);
   color: rgba(35,27,34,0.75);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
@@ -413,10 +1052,139 @@ exports[`<Button /> Snapshots With full prop should match snapshot with outline 
   color: #D7D7E0;
 }
 
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
 <div>
   <button
     class="c0 c1"
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With full prop should match snapshot with outline Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c1 {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #231B22;
+  color: #231B22;
+}
+
+.c1 svg {
+  fill: #231B22;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #FFFFFF;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: rgba(35,27,34,0.75);
+  color: rgba(35,27,34,0.75);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    <svg />
     Button
   </button>
 </div>
@@ -429,16 +1197,28 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -449,6 +1229,15 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -456,15 +1245,21 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -473,16 +1268,33 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
   color: #231B22;
 }
 
+.c1 svg {
+  fill: #231B22;
+}
+
 .c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  background-color: rgba(35,27,34,0.25);
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  background-color: transparent;
   box-shadow: none;
 }
 
+.c1:not([disabled]):hover {
+  color: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):focus,
 .c1:not([disabled]):active {
-  background-color: transparent;
-  border-color: transparent;
   color: rgba(35,27,34,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
@@ -491,10 +1303,141 @@ exports[`<Button /> Snapshots With full prop should match snapshot with text But
   color: #D7D7E0;
 }
 
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
 <div>
   <button
     class="c0 c1"
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With full prop should match snapshot with text Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: transparent;
+  color: #231B22;
+}
+
+.c1 svg {
+  fill: #231B22;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.c1:not([disabled]):hover {
+  color: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  color: rgba(35,27,34,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    <svg />
     Button
   </button>
 </div>
@@ -507,16 +1450,28 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -526,8 +1481,16 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
-  border-color: #FFFFFF;
   color: #231B22;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
 }
 
 .c0:not([disabled]):hover,
@@ -537,21 +1500,34 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c0 svg {
+  fill: #231B22;
+}
+
 .c0:active {
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
+  background-color: rgba(255,255,255,0.75);
   color: rgba(35,27,34,0.75);
+}
+
+.c0:active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):hover,
@@ -568,23 +1544,35 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with defa
 </div>
 `;
 
-exports[`<Button /> Snapshots With inverted prop should match snapshot with link Button 1`] = `
+exports[`<Button /> Snapshots With inverted prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -594,17 +1582,16 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
-  border-color: #FFFFFF;
   color: #231B22;
-  height: unset;
-  padding: 0;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  background-color: unset;
-  border: none;
-  border-radius: 0;
-  color: #231B22;
-  color: #FFFFFF;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
 }
 
 .c0:not([disabled]):hover,
@@ -614,21 +1601,34 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c0 svg {
+  fill: #231B22;
+}
+
 .c0:active {
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
+  background-color: rgba(255,255,255,0.75);
   color: rgba(35,27,34,0.75);
+}
+
+.c0:active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):hover,
@@ -636,32 +1636,13 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with link
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c0:not([disabled]):hover,
-.c0:not([disabled]):focus {
-  box-shadow: unset;
-  color: rgba(35,27,34,0.75);
-}
-
-.c0:not([disabled]):active {
-  background-color: unset;
-  color: rgba(35,27,34,0.75);
-}
-
-.c0:disabled {
-  background-color: unset;
-  color: #D7D7E0;
-}
-
-.c0:not([disabled]):hover,
-.c0:not([disabled]):focus {
-  box-shadow: unset;
-  color: #6B6B78;
-}
-
 <div>
   <button
     class="c0"
-  />
+  >
+    <svg />
+    Button
+  </button>
 </div>
 `;
 
@@ -672,16 +1653,28 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -691,8 +1684,16 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
-  border-color: #FFFFFF;
   color: #231B22;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
 }
 
 .c0:not([disabled]):hover,
@@ -702,21 +1703,34 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c0 svg {
+  fill: #231B22;
+}
+
 .c0:active {
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
+  background-color: rgba(255,255,255,0.75);
   color: rgba(35,27,34,0.75);
+}
+
+.c0:active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):hover,
@@ -726,22 +1740,37 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
 
 .c1 {
   background-color: transparent;
+  border: 1px solid;
   border-color: #231B22;
   color: #231B22;
   border-color: #FFFFFF;
   color: #FFFFFF;
 }
 
+.c1 svg {
+  fill: #231B22;
+}
+
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(35,27,34,0.25);
-  box-shadow: none;
+  background-color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #FFFFFF;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
   border-color: rgba(35,27,34,0.75);
   color: rgba(35,27,34,0.75);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
@@ -750,20 +1779,229 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with outl
   color: #D7D7E0;
 }
 
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c1 svg {
+  fill: #FFFFFF;
+}
+
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(255,255,255,0.25);
+  background-color: #FFFFFF;
+  color: #231B22;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #231B22;
 }
 
 .c1:not([disabled]):active {
+  background-color: transparent;
   border-color: rgba(255,255,255,0.75);
   color: rgba(255,255,255,0.75);
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(255,255,255,0.75);
+}
+
+.c1:disabled {
+  border-color: #D7D7E0;
+  color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
 }
 
 <div>
   <button
     class="c0 c1"
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With inverted prop should match snapshot with outline Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #231B22;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c0 svg {
+  fill: #231B22;
+}
+
+.c0:active {
+  background-color: rgba(255,255,255,0.75);
+  color: rgba(35,27,34,0.75);
+}
+
+.c0:active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
+.c1 {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #231B22;
+  color: #231B22;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+
+.c1 svg {
+  fill: #231B22;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #FFFFFF;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: rgba(35,27,34,0.75);
+  color: rgba(35,27,34,0.75);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c1 svg {
+  fill: #FFFFFF;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: #FFFFFF;
+  color: #231B22;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #231B22;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.75);
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(255,255,255,0.75);
+}
+
+.c1:disabled {
+  border-color: #D7D7E0;
+  color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    <svg />
     Button
   </button>
 </div>
@@ -776,16 +2014,28 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -795,8 +2045,16 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
-  border-color: #FFFFFF;
   color: #231B22;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
 }
 
 .c0:not([disabled]):hover,
@@ -806,21 +2064,34 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c0 svg {
+  fill: #231B22;
+}
+
 .c0:active {
-  background-color: #FFFFFF;
-  border-color: #FFFFFF;
+  background-color: rgba(255,255,255,0.75);
   color: rgba(35,27,34,0.75);
+}
+
+.c0:active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c0:not([disabled]):hover,
@@ -832,18 +2103,58 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1 svg {
+  fill: #231B22;
 }
 
 .c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  background-color: rgba(35,27,34,0.25);
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  background-color: transparent;
   box-shadow: none;
 }
 
+.c1:not([disabled]):hover {
+  color: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):focus,
 .c1:not([disabled]):active {
-  background-color: transparent;
-  border-color: transparent;
   color: rgba(35,27,34,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c1 svg {
+  fill: #FFFFFF;
+}
+
+.c1:not([disabled]):hover {
+  color: rgba(255,255,255,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(255,255,255,0.5);
+}
+
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  color: rgba(255,255,255,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(255,255,255,0.75);
 }
 
 .c1:disabled {
@@ -852,10 +2163,184 @@ exports[`<Button /> Snapshots With inverted prop should match snapshot with text
   color: #D7D7E0;
 }
 
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
 <div>
   <button
     class="c0 c1"
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With inverted prop should match snapshot with text Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #231B22;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c0 svg {
+  fill: #231B22;
+}
+
+.c0:active {
+  background-color: rgba(255,255,255,0.75);
+  color: rgba(35,27,34,0.75);
+}
+
+.c0:active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: transparent;
+  color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1 svg {
+  fill: #231B22;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.c1:not([disabled]):hover {
+  color: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  color: rgba(35,27,34,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c1 svg {
+  fill: #FFFFFF;
+}
+
+.c1:not([disabled]):hover {
+  color: rgba(255,255,255,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(255,255,255,0.5);
+}
+
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  color: rgba(255,255,255,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(255,255,255,0.75);
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    <svg />
     Button
   </button>
 </div>
@@ -868,16 +2353,28 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 32px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   background-color: #231B22;
-  border: 1px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -888,6 +2385,15 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -895,21 +2401,109 @@ exports[`<Button /> Snapshots With small prop should match snapshot with default
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
 }
 
 <div>
   <button
     class="c0"
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With small prop should match snapshot with default Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <svg />
     Button
   </button>
 </div>
@@ -922,16 +2516,28 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 32px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   background-color: #231B22;
-  border: 1px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -942,6 +2548,15 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -949,33 +2564,54 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
 .c1 {
   background-color: transparent;
+  border: 1px solid;
   border-color: #231B22;
   color: #231B22;
 }
 
+.c1 svg {
+  fill: #231B22;
+}
+
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(35,27,34,0.25);
-  box-shadow: none;
+  background-color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #FFFFFF;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
   border-color: rgba(35,27,34,0.75);
   color: rgba(35,27,34,0.75);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
@@ -984,10 +2620,139 @@ exports[`<Button /> Snapshots With small prop should match snapshot with outline
   color: #D7D7E0;
 }
 
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
 <div>
   <button
     class="c0 c1"
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots With small prop should match snapshot with outline Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c1 {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #231B22;
+  color: #231B22;
+}
+
+.c1 svg {
+  fill: #231B22;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #FFFFFF;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: rgba(35,27,34,0.75);
+  color: rgba(35,27,34,0.75);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    <svg />
     Button
   </button>
 </div>
@@ -1000,16 +2765,28 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 32px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
   background-color: #231B22;
-  border: 1px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -1020,6 +2797,15 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -1027,15 +2813,21 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -1044,22 +2836,43 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
   color: #231B22;
 }
 
+.c1 svg {
+  fill: #231B22;
+}
+
 .c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  background-color: rgba(35,27,34,0.25);
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  background-color: transparent;
   box-shadow: none;
 }
 
+.c1:not([disabled]):hover {
+  color: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):focus,
 .c1:not([disabled]):active {
-  background-color: transparent;
-  border-color: transparent;
   color: rgba(35,27,34,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
   color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
 }
 
 <div>
@@ -1071,99 +2884,35 @@ exports[`<Button /> Snapshots With small prop should match snapshot with text Bu
 </div>
 `;
 
-exports[`<Button /> Snapshots With variant prop should match snapshot with link Button.Link 1`] = `
+exports[`<Button /> Snapshots With small prop should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
-  height: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
   background-color: #231B22;
-  border: 2px solid #231B22;
-  border-radius: 9999px;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
-  font-family: Rubik;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  line-height: 1;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  height: unset;
-  padding: 0;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  background-color: unset;
   border: none;
-  border-radius: 0;
-  color: #231B22;
-}
-
-.c0:not([disabled]):hover,
-.c0:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
-}
-
-.c0:active {
-  background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
-  color: #FFFFFF;
-}
-
-.c0:disabled {
-  background-color: #F5F5FA;
-  border-color: transparent;
-  color: #D7D7E0;
-  cursor: not-allowed;
-}
-
-.c0:not([disabled]):hover,
-.c0:not([disabled]):focus {
-  box-shadow: unset;
-  color: rgba(35,27,34,0.75);
-}
-
-.c0:not([disabled]):active {
-  background-color: unset;
-  color: rgba(35,27,34,0.75);
-}
-
-.c0:disabled {
-  background-color: unset;
-  color: #D7D7E0;
-}
-
-<div>
-  <button
-    class="c0"
-  />
-</div>
-`;
-
-exports[`<Button /> Snapshots With variant prop should match snapshot with link Button.Outline 1`] = `
-.c0 {
-  box-sizing: border-box;
-  outline: none;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  cursor: pointer;
-  width: auto;
-  height: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
-  background-color: #231B22;
-  border: 2px solid #231B22;
   border-radius: 9999px;
   color: #FFFFFF;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -1174,6 +2923,15 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -1181,45 +2939,73 @@ exports[`<Button /> Snapshots With variant prop should match snapshot with link 
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
 }
 
 .c1 {
   background-color: transparent;
-  border-color: #231B22;
+  border-color: transparent;
   color: #231B22;
 }
 
+.c1 svg {
+  fill: #231B22;
+}
+
 .c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  background-color: rgba(35,27,34,0.25);
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  background-color: transparent;
   box-shadow: none;
 }
 
+.c1:not([disabled]):hover {
+  color: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):focus,
 .c1:not([disabled]):active {
-  background-color: transparent;
-  border-color: rgba(35,27,34,0.75);
   color: rgba(35,27,34,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
+  border-color: transparent;
   color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
 }
 
 <div>
   <button
     class="c0 c1"
   >
+    <svg />
     Button
   </button>
 </div>
@@ -1232,16 +3018,28 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -1252,6 +3050,15 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -1259,21 +3066,109 @@ exports[`<Button /> Snapshots Without props should match snapshot with default B
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
 }
 
 <div>
   <button
     class="c0"
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots Without props should match snapshot with default Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <svg />
     Button
   </button>
 </div>
@@ -1286,16 +3181,28 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -1306,12 +3213,19 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
   text-decoration: none;
   height: unset;
   padding: 0;
-  margin-top: 16px;
-  margin-bottom: 8px;
   background-color: unset;
   border: none;
   border-radius: 0;
-  color: #231B22;
+  color: #D8385E;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
 }
 
 .c0:not([disabled]):hover,
@@ -1321,30 +3235,41 @@ exports[`<Button /> Snapshots Without props should match snapshot with link Butt
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
-.c0:not([disabled]):hover,
-.c0:not([disabled]):focus {
-  box-shadow: unset;
-  color: rgba(35,27,34,0.75);
+.c0:disabled svg {
+  fill: #D7D7E0;
 }
 
+.c0:disabled,
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus,
 .c0:not([disabled]):active {
+  box-shadow: unset;
   background-color: unset;
-  color: rgba(35,27,34,0.75);
+}
+
+.c0:not([disabled]):hover {
+  color: rgba(216,56,94,0.5);
+}
+
+.c0:not([disabled]):focus,
+.c0:not([disabled]):active {
+  color: rgba(216,56,94,0.75);
 }
 
 .c0:disabled {
-  background-color: unset;
   color: #D7D7E0;
 }
 
@@ -1362,16 +3287,28 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -1382,6 +3319,15 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -1389,33 +3335,54 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
 .c1 {
   background-color: transparent;
+  border: 1px solid;
   border-color: #231B22;
   color: #231B22;
 }
 
+.c1 svg {
+  fill: #231B22;
+}
+
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus {
-  background-color: rgba(35,27,34,0.25);
-  box-shadow: none;
+  background-color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #FFFFFF;
 }
 
 .c1:not([disabled]):active {
   background-color: transparent;
   border-color: rgba(35,27,34,0.75);
   color: rgba(35,27,34,0.75);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
@@ -1424,10 +3391,139 @@ exports[`<Button /> Snapshots Without props should match snapshot with outline B
   color: #D7D7E0;
 }
 
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
 <div>
   <button
     class="c0 c1"
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots Without props should match snapshot with outline Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c1 {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #231B22;
+  color: #231B22;
+}
+
+.c1 svg {
+  fill: #231B22;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus {
+  background-color: #231B22;
+  color: #FFFFFF;
+}
+
+.c1:not([disabled]):hover svg,
+.c1:not([disabled]):focus svg {
+  fill: #FFFFFF;
+}
+
+.c1:not([disabled]):active {
+  background-color: transparent;
+  border-color: rgba(35,27,34,0.75);
+  color: rgba(35,27,34,0.75);
+  box-shadow: none;
+}
+
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: #D7D7E0;
+  color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    <svg />
     Button
   </button>
 </div>
@@ -1440,16 +3536,28 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: auto;
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
   background-color: #231B22;
-  border: 2px solid #231B22;
+  border: none;
   border-radius: 9999px;
   color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -1460,6 +3568,15 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
   text-decoration: none;
 }
 
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
@@ -1467,15 +3584,21 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
 
 .c0:active {
   background-color: rgba(35,27,34,0.75);
-  border-color: transparent;
   color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
 }
 
 .c0:disabled {
   background-color: #F5F5FA;
-  border-color: transparent;
   color: #D7D7E0;
   cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -1484,16 +3607,33 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
   color: #231B22;
 }
 
+.c1 svg {
+  fill: #231B22;
+}
+
 .c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  background-color: rgba(35,27,34,0.25);
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  background-color: transparent;
   box-shadow: none;
 }
 
+.c1:not([disabled]):hover {
+  color: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):focus,
 .c1:not([disabled]):active {
-  background-color: transparent;
-  border-color: transparent;
   color: rgba(35,27,34,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
@@ -1502,10 +3642,141 @@ exports[`<Button /> Snapshots Without props should match snapshot with text Butt
   color: #D7D7E0;
 }
 
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
 <div>
   <button
     class="c0 c1"
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots Without props should match snapshot with text Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c1 {
+  background-color: transparent;
+  border-color: transparent;
+  color: #231B22;
+}
+
+.c1 svg {
+  fill: #231B22;
+}
+
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.c1:not([disabled]):hover {
+  color: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(35,27,34,0.5);
+}
+
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  color: rgba(35,27,34,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c1:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  color: #D7D7E0;
+}
+
+.c1:disabled svg {
+  fill: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    <svg />
     Button
   </button>
 </div>

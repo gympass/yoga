@@ -19,69 +19,99 @@ const StyledButton = styled.button`
       },
     },
   }) => `
-      width: ${full ? '100%' : 'auto'};
-      height: ${small ? button.height.small : button.height.default}px;
-      padding-left: ${button.padding.left}px;
-      padding-right: ${button.padding.right}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      background-color: ${button.types.contained.backgroundColor.default};
-      border: ${
-        small ? button.border.small.width : button.border.default.width
-      }px solid ${button.types.contained.backgroundColor.default};
-      border-radius: ${button.border.radius}px;
-      color: ${button.types.contained.font.default.color};
+    width: ${full ? '100%' : 'auto'};
+    height: ${small ? button.height.small : button.height.default}px;
+    padding-left: ${
+      small ? button.padding.small.left : button.padding.default.left
+    }px;
+    padding-right: ${
+      small ? button.padding.small.right : button.padding.default.right
+    }px;
 
-      font-size: ${button.font.size}px;
-      font-weight: ${button.font.weight};
-      font-family: ${baseFont.family};
-      letter-spacing: normal;
-      line-height: 1;
-      text-decoration: none;
+    background-color: ${button.types.contained.backgroundColor.default};
+    border: none;
+    border-radius: ${button.border.radius}px;
+    color: ${button.types.contained.font.default.color};
 
-      &:not([disabled]):hover, &:not([disabled]):focus {
-        box-shadow: 0 4px 8px ${hexToRgb(
-          button.types.contained.backgroundColor.default,
-          0.45,
-        )};
+    font-size: ${small ? button.font.size.small : button.font.size.default}px;
+    font-weight: ${button.font.weight};
+    font-family: ${baseFont.family};
+    letter-spacing: normal;
+    line-height: 1;
+    text-decoration: none;
+
+    svg {
+      width: ${small ? button.icon.size.small : button.icon.size.default}px;
+      height: ${small ? button.icon.size.small : button.icon.size.default}px;
+      fill: ${button.types.contained.font.default.color};
+      margin-right: ${button.icon.margin.right}px;
+
+      transition: fill 0.2s;
+    }
+
+    &:not([disabled]):hover, &:not([disabled]):focus {
+      box-shadow: 0 4px 8px ${hexToRgb(
+        button.types.contained.backgroundColor.default,
+        0.45,
+      )};
+    }
+
+    &:active {
+      background-color: ${button.types.contained.backgroundColor.pressed};
+      color: ${button.types.contained.font.pressed.color};
+
+      svg {
+        fill: ${button.types.contained.font.pressed.color};
+      }
+    }
+
+    &:disabled {
+      background-color ${button.types.contained.backgroundColor.disabled};
+      color: ${button.types.contained.font.disabled.color};
+
+      svg {
+        fill: ${button.types.contained.font.disabled.color};
+      }
+
+      cursor: not-allowed;
+    }
+
+    ${
+      inverted
+        ? `
+      background-color: ${button.types.contained.font.default.color};
+      color: ${button.types.contained.backgroundColor.default};
+
+      svg {
+        fill: ${button.types.contained.backgroundColor.default};
       }
 
       &:active {
-        background-color: ${button.types.contained.backgroundColor.pressed};
-        border-color: transparent;
-        color: ${button.types.contained.font.pressed.color};
-      }
+        background-color: ${hexToRgb(
+          button.types.contained.font.default.color,
+          0.75,
+        )};
+        color: ${button.types.contained.backgroundColor.pressed};
 
-      &:disabled {
-        background-color ${button.types.contained.backgroundColor.disabled};
-        border-color: transparent;
-        color: ${button.types.contained.font.disabled.color};
-
-        cursor: not-allowed;
-      }
-
-      ${
-        inverted
-          ? `
-        background-color: ${button.types.contained.font.default.color};
-        border-color: ${button.types.contained.font.default.color};
-        color: ${button.types.contained.backgroundColor.default};
-
-        &:active {
-          background-color: ${button.types.contained.font.default.color};
-          border-color: ${button.types.contained.font.default.color};
-          color: ${button.types.contained.backgroundColor.pressed};
+        svg {
+          fill: ${button.types.contained.backgroundColor.pressed};
         }
-
-        &:not([disabled]):hover, &:not([disabled]):focus {
-          box-shadow: 0 4px 8px ${hexToRgb(
-            button.types.contained.font.default.color,
-            0.45,
-          )};
-        }
-      `
-          : ''
       }
-    `}
+
+      &:not([disabled]):hover, &:not([disabled]):focus {
+        box-shadow: 0 4px 8px ${hexToRgb(
+          button.types.contained.font.default.color,
+          0.45,
+        )};
+      }
+    `
+        : ''
+    }
+  `}
 `;
 
 export default StyledButton;

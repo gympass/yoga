@@ -67,6 +67,7 @@ const SwitchThumb = styled.span`
       yoga: {
         components: { checkboxswitch },
         spacing,
+        elevations,
       },
     },
     checked,
@@ -89,6 +90,7 @@ const SwitchThumb = styled.span`
         ? css`
             left: calc(100% - ${checkboxswitch.thumb.left}px);
             transform: translateX(-100%);
+            box-shadow: ${elevations.small};
           `
         : ''}
       ${disabled
@@ -97,12 +99,25 @@ const SwitchThumb = styled.span`
             cursor: not-allowed;
           `
         : css`
-            ${SwitchInput}:focus + &,
-            ${SwitchInput}:hover + & {
+            ${SwitchInput}:focus + & {
               box-shadow: 0 0 0 ${spacing.xxsmall}px
                 ${checked
                   ? checkboxswitch.focus.checked.backgroundColor
                   : checkboxswitch.focus.disabled.backgroundColor};
+            }
+
+            ${SwitchInput}:hover + & {
+              box-shadow: 0 0 0 ${spacing.xxsmall}px
+                ${checked
+                  ? checkboxswitch.hover.checked.backgroundColor
+                  : checkboxswitch.hover.disabled.backgroundColor};
+            }
+
+            ${SwitchInput}:active + & {
+              box-shadow: 0 0 0 ${spacing.xxsmall}px
+                ${checked
+                  ? checkboxswitch.pressed.checked.backgroundColor
+                  : checkboxswitch.pressed.disabled.backgroundColor};
             }
           `}
     `};

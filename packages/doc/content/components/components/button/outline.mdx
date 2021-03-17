@@ -4,17 +4,29 @@ metaTitle: 'Button.Outline'
 metaDescription: 'Button outline looks and behavior'
 ---
 
-import OutlineWeb from './outline-web.mdx';
-import OutlineNative from './outline-native.mdx';
-
 # Button.Outline
 
-<TabbedView>
-  <Tab title="Web">
-    <OutlineWeb />
-  </Tab>
+### Reference
 
-  <Tab title="Native">
-    <OutlineNative />
-  </Tab>
-</TabbedView>
+#### Web only
+
+Gympass `<Button />` component implements all our design guidelines such as default spacings, borders and color pallete tokens.
+You can use all differente compounds like `<Button />` and `<Button.Text />` combining with their props such as `small` or `inverted` so the button become the desired variation.
+
+### Usage
+
+#### Default
+
+```javascript
+<Button.Outline>Find an activity</Button.Outline>
+```
+
+#### With icon
+
+```javascript
+<Button.Outline icon={Booking}>Find an activity</Button.Outline>
+```
+
+### Props
+
+<PropsTable component="Button.Outline" platform="web" />

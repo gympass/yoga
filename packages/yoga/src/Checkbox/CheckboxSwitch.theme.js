@@ -10,7 +10,7 @@ const CheckboxSwitch = ({
   track: {
     width: 48,
     height: 24,
-    backgroundColor: colors.elements.lineAndBorders,
+    backgroundColor: colors.elements.selectionAndIcons,
     radii: radii.circle,
     transition: {
       duration: transition.duration[1],
@@ -23,9 +23,10 @@ const CheckboxSwitch = ({
     },
   },
   thumb: {
-    width: spacing.small,
-    height: spacing.small,
-    left: spacing.xxxsmall,
+    width: spacing.medium,
+    height: spacing.medium,
+    shadowScale: 1.6,
+    left: 2,
     radii: radii.circle,
     backgroundColor: colors.white,
     shadow: elevations.small,
@@ -36,15 +37,31 @@ const CheckboxSwitch = ({
       backgroundColor: colors.primary,
     },
     disabled: {
-      backgroundColor: colors.elements.lineAndBorders,
+      backgroundColor: colors.white,
     },
   },
   focus: {
     checked: {
-      backgroundColor: hexToRgb(colors.primary, 0.2),
+      backgroundColor: hexToRgb(colors.text.secondary, 0.5),
     },
     disabled: {
-      backgroundColor: hexToRgb(colors.elements.selectionAndIcons, 0.2),
+      backgroundColor: hexToRgb(colors.elements.backgroundAndDisabled, 0.5),
+    },
+  },
+  hover: {
+    checked: {
+      backgroundColor: hexToRgb(colors.text.secondary, 0.25),
+    },
+    disabled: {
+      backgroundColor: hexToRgb(colors.elements.backgroundAndDisabled, 0.25),
+    },
+  },
+  pressed: {
+    checked: {
+      backgroundColor: hexToRgb(colors.text.secondary, 0.75),
+    },
+    disabled: {
+      backgroundColor: hexToRgb(colors.elements.lineAndBorders, 0.75),
     },
   },
 });

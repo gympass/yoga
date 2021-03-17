@@ -10,6 +10,7 @@ const Button = ({
   disabled,
   inverted,
   small,
+  icon: Icon,
   ...props
 }) => (
   <StyledButton
@@ -20,6 +21,7 @@ const Button = ({
     small={small}
     {...props}
   >
+    {Icon && <Icon />}
     {children}
   </StyledButton>
 );
@@ -31,6 +33,8 @@ Button.propTypes = {
   inverted: bool,
   onClick: func,
   small: bool,
+  /** an Icon from yoga-icons package */
+  icon: node,
 };
 
 Button.defaultProps = {
@@ -40,6 +44,7 @@ Button.defaultProps = {
   inverted: false,
   onClick: () => {},
   small: false,
+  icon: false,
 };
 
 Button.displayName = 'Button';

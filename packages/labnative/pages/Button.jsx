@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button } from '@gympass/yoga';
+import { Booking } from '@gympass/yoga-icons';
 
 import { DocTitle } from '../components';
 
@@ -22,15 +23,25 @@ const ButtonPage = () => (
       <Button small>Contained</Button>
     </ButtonWrapper>
     <ButtonWrapper>
-      <Button.Outline small>Outline</Button.Outline>
+      <Button icon={Booking} small>
+        Contained with Icon
+      </Button>
     </ButtonWrapper>
     <ButtonWrapper>
       <Button.Text small>Text</Button.Text>
+    </ButtonWrapper>
+    <ButtonWrapper>
+      <Button.Text icon={Booking} small>
+        Text with Icon
+      </Button.Text>
     </ButtonWrapper>
 
     <DocTitle>Contained Buttons</DocTitle>
     <ButtonWrapper>
       <Button>Contained</Button>
+    </ButtonWrapper>
+    <ButtonWrapper>
+      <Button icon={Booking}>With Icon</Button>
     </ButtonWrapper>
     <ButtonWrapper>
       <Button disabled>Disabled</Button>
@@ -39,44 +50,19 @@ const ButtonPage = () => (
       <Button inverted>Inverted</Button>
     </ButtonWrapper>
     <ButtonWrapper>
+      <Button icon={Booking} inverted>
+        Inverted with Icon
+      </Button>
+    </ButtonWrapper>
+    <ButtonWrapper>
       <Button disabled inverted>
         Disabled Inverted
       </Button>
     </ButtonWrapper>
 
-    <DocTitle>Outline Buttons</DocTitle>
-    <ButtonWrapper>
-      <Button.Outline>Outline</Button.Outline>
-    </ButtonWrapper>
-    <ButtonWrapper>
-      <Button.Outline variant="secondary">Secondary</Button.Outline>
-    </ButtonWrapper>
-    <ButtonWrapper>
-      <Button.Outline variant="secondary" disabled>
-        Secondary Disabled
-      </Button.Outline>
-    </ButtonWrapper>
-    <ButtonWrapper>
-      <Button.Outline disabled>Disabled</Button.Outline>
-    </ButtonWrapper>
-    <ButtonWrapper>
-      <Button.Outline inverted>Inverted</Button.Outline>
-    </ButtonWrapper>
-    <ButtonWrapper>
-      <Button.Outline disabled inverted>
-        Disabled Inverted
-      </Button.Outline>
-    </ButtonWrapper>
-
     <DocTitle>Link Buttons</DocTitle>
     <ButtonWrapper>
       <Button.Link>Link</Button.Link>
-    </ButtonWrapper>
-    <ButtonWrapper>
-      <Button.Link variant="secondary">Link secondary</Button.Link>
-    </ButtonWrapper>
-    <ButtonWrapper>
-      <Button.Link inverted>Inverted</Button.Link>
     </ButtonWrapper>
     <ButtonWrapper>
       <Button.Link disabled>Disabled</Button.Link>
@@ -87,7 +73,31 @@ const ButtonPage = () => (
       <Button.Text>Text</Button.Text>
     </ButtonWrapper>
     <ButtonWrapper>
+      <Button.Text icon={Booking}>With Icon</Button.Text>
+    </ButtonWrapper>
+    <ButtonWrapper>
+      <Button.Text secondary>Secondary</Button.Text>
+    </ButtonWrapper>
+    <ButtonWrapper>
+      <Button.Text icon={Booking} secondary>
+        Secondary with Icon
+      </Button.Text>
+    </ButtonWrapper>
+    <ButtonWrapper>
+      <Button.Text inverted>Inverted</Button.Text>
+    </ButtonWrapper>
+    <ButtonWrapper>
+      <Button.Text icon={Booking} inverted>
+        Inverted with Icon
+      </Button.Text>
+    </ButtonWrapper>
+    <ButtonWrapper>
       <Button.Text disabled>Disabled</Button.Text>
+    </ButtonWrapper>
+    <ButtonWrapper>
+      <Button.Text icon={Booking} disabled>
+        Disabled with Icon
+      </Button.Text>
     </ButtonWrapper>
   </ScrollView>
 );
