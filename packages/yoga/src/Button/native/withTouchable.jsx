@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { View, TouchableWithoutFeedback } from 'react-native';
 
 const withTouchable = Component => ({
-  onPress = () => {},
   onPressIn = () => {},
   onPressOut = () => {},
   onChange = () => {},
-  accessibilityRole = undefined,
+  onPress = onChange,
   ...rest
 }) => {
   const [pressed, setPressed] = useState(false);
@@ -21,11 +20,7 @@ const withTouchable = Component => ({
         setPressed(false);
         onPressOut(e);
       }}
-      onPress={e => {
-        onPress(e);
-        onChange(e);
-      }}
-      accessibilityRole={accessibilityRole}
+      onPress={onPress}
       {...rest}
     >
       <View style={{ flexDirection: 'row' }}>
