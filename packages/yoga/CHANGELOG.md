@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.9...@gympass/yoga@6.0.0) (2021-03-17)
+
+
+### Bug Fixes
+
+* **button:** update icon proptype (Button{.Outline}) ([2f9882b](https://github.com/Gympass/yoga/commit/2f9882bf00ee53f2363f080bde1136b7618eb3f5))
+
+
+
+
+
 # [5.2.0-alpha.9](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.8...@gympass/yoga@5.2.0-alpha.9) (2021-03-17)
 
 
