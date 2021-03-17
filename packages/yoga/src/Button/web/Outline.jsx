@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { bool, node } from 'prop-types';
+import { bool, func, node, oneOfType } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
 
 import Button from './Button';
@@ -106,13 +106,13 @@ ButtonOutline.propTypes = {
   inverted: bool,
   small: bool,
   /** an Icon from yoga-icons package */
-  icon: node,
+  icon: oneOfType([node, func]),
 };
 
 ButtonOutline.defaultProps = {
   inverted: false,
   small: false,
-  icon: false,
+  icon: undefined,
 };
 
 ButtonOutline.displayName = 'Button.Outline';
