@@ -46,6 +46,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
             style={
               Array [
                 Object {
+                  "color": "#231B22",
                   "fontFamily": "Rubik",
                 },
               ]
@@ -114,6 +115,7 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
             style={
               Array [
                 Object {
+                  "color": "#231B22",
                   "fontFamily": "Rubik",
                 },
               ]
@@ -174,6 +176,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
             style={
               Array [
                 Object {
+                  "color": "#231B22",
                   "fontFamily": "Rubik",
                 },
               ]
@@ -207,6 +210,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
             style={
               Array [
                 Object {
+                  "color": "#231B22",
                   "fontFamily": "Rubik",
                 },
               ]
@@ -240,6 +244,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
             style={
               Array [
                 Object {
+                  "color": "#231B22",
                   "fontFamily": "Rubik",
                 },
               ]
@@ -300,6 +305,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
             style={
               Array [
                 Object {
+                  "color": "#231B22",
                   "fontFamily": "Rubik",
                 },
               ]
@@ -333,6 +339,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
             style={
               Array [
                 Object {
+                  "color": "#231B22",
                   "fontFamily": "Rubik",
                 },
               ]
@@ -366,6 +373,7 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
             style={
               Array [
                 Object {
+                  "color": "#231B22",
                   "fontFamily": "Rubik",
                 },
               ]

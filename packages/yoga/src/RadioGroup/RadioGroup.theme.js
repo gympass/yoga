@@ -31,6 +31,7 @@ const RadioGroup = ({
   },
   font: {
     size: fontSizes.small,
+    color: colors.text.primary,
   },
   hover: {
     backgroundColor: colors.elements.lineAndBorders,
