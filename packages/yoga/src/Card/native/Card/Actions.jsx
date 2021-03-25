@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { arrayOf, oneOfType } from 'prop-types';
 
 import Button from '../../../Button';
+import Tag from '../../../Tag';
 import { typeOf } from '../../../shared/propTypes';
 
 const Actions = styled.View``;
@@ -13,6 +14,8 @@ Actions.propTypes = {
       typeOf(Button.Text),
       typeOf(Button),
       typeOf(Button.Link),
+      typeOf(Tag),
+      typeOf(Tag.Informative),
     ]),
     arrayOf(
       oneOfType([
@@ -20,6 +23,8 @@ Actions.propTypes = {
         typeOf(Button.Text),
         typeOf(Button),
         typeOf(Button.Link),
+        typeOf(Tag),
+        typeOf(Tag.Informative),
       ]),
     ),
   ]).isRequired,
