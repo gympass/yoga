@@ -114,6 +114,7 @@ import SortAscending from './sort_ascending.svg';
 import SortDescending from './sort_descending.svg';
 import StarFilled from './star_filled.svg';
 import Star from './star.svg';
+import SystemStatus from './system_status.svg';
 import PriceTag from './price_tag.svg';
 import Time from './time.svg';
 import Token from './token.svg';
@@ -250,6 +251,7 @@ export {
   SortDescending,
   StarFilled,
   Star,
+  SystemStatus,
   PriceTag,
   Time,
   Token,
