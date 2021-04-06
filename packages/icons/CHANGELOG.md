@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.0.0...@gympass/yoga-icons@1.1.0) (2021-04-06)
+
+
+### Features
+
+* **icons:** add system status icon ([59b69fc](https://github.com/Gympass/yoga/commit/59b69fc02d6103c9790ab4e4012c50d4bdf4bdff))
+* **icons:** changed the color ([e8c4e7a](https://github.com/Gympass/yoga/commit/e8c4e7acc1bbcbeaa6ff9fc27baddf4bc7d913b4))
+
+
+
+
+
 # [1.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.12.0-alpha.1...@gympass/yoga-icons@1.0.0) (2021-03-17)
 
 **Note:** Version bump only for package @gympass/yoga-icons
