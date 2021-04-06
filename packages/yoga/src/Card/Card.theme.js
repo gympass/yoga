@@ -64,6 +64,7 @@ const Card = ({
       },
     },
     list: {
+      height: 92,
       margin: {
         top: spacing.small,
       },
@@ -93,6 +94,12 @@ const Card = ({
       },
     },
     actions: {
+      buttonText: {
+        margin: {
+          top: spacing.medium,
+          bottom: spacing.zero,
+        },
+      },
       margin: {
         top: spacing.large,
       },
