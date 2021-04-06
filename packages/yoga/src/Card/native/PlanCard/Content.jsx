@@ -56,8 +56,8 @@ const Currency = styled(EnhancePrice)`
 `;
 
 const PlanCardContent = ({
-  subtitle,
   title,
+  subtitle,
   description,
   currency,
   suffix,
