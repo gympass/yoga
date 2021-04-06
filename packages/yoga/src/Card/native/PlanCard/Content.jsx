@@ -1,11 +1,10 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { string, node } from 'prop-types';
+import { string, shape, node } from 'prop-types';
 
 import Content from '../Card/Content';
 import Text from '../../../Text';
 import theme from '../../../Theme/helpers/themeReader';
-import Subtitle from './Subtitle';
 
 const Title = styled(Text.H5)`
   ${props => {
@@ -57,7 +56,6 @@ const Currency = styled(EnhancePrice)`
 
 const PlanCardContent = ({
   title,
-  subtitle,
   description,
   currency,
   price,
@@ -66,19 +64,18 @@ const PlanCardContent = ({
   ...rest
 }) => (
   <Content {...rest}>
-    {subtitle && <Subtitle>{subtitle}</Subtitle>}
     {title && <Title>{title}</Title>}
-    <Description numberOfLines={2}>{description}</Description>
+    {description && <Description numberOfLines={2}>{description}</Description>}
     <Price>
-      {currency && (
+      {currency.prefix && (
         <Currency align="flex-start">
-          <Text.Small>{currency}</Text.Small>
+          <Text.Small>{currency.prefix}</Text.Small>
         </Currency>
       )}
-      {price && <Text.H1>{price}</Text.H1>}
+      {price && <Text.H3>{price}</Text.H3>}
       {period && (
         <EnhancePrice align="flex-end">
-          <Text.Small>{period}</Text.Small>
+          <Text.Small>{`${currency.suffix || ''}${period}`}</Text.Small>
         </EnhancePrice>
       )}
     </Price>
@@ -90,19 +87,20 @@ PlanCardContent.propTypes = {
   /** Plan name */
   title: string.isRequired,
   /** currency of the current country */
-  currency: string.isRequired,
+  currency: shape({
+    prefix: string,
+    suffix: string,
+  }).isRequired,
   price: string.isRequired,
   /** period that this price will be charged  */
   period: string.isRequired,
   description: string,
-  subtitle: string,
   children: node,
 };
 
 PlanCardContent.defaultProps = {
   children: null,
   description: null,
-  subtitle: null,
 };
 
 PlanCardContent.displayName = 'PlanCard.Content';
