@@ -7,6 +7,7 @@ import Text from '../../../Text';
 import theme from '../../../Theme/helpers/themeReader';
 
 const List = styled.View`
+  height: ${theme.components.card.plan.list.height}px;
   margin-top: ${theme.components.card.plan.list.margin.top}px;
 `;
 

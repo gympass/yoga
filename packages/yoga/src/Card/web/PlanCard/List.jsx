@@ -12,6 +12,7 @@ const truncateStyle = css`
 `;
 
 const List = styled.ul`
+  height: ${theme.components.card.plan.list.height}px;
   margin: ${theme.components.card.plan.list.margin.top}px 0 0;
   padding: 0;
 
