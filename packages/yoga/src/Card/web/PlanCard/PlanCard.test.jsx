@@ -70,5 +70,24 @@ describe('<PlanCard />', () => {
 
       expect(container).toMatchSnapshot();
     });
+
+    it('should match snapshot with suffix', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <PlanCard variant="hope">
+            <PlanCard.Content
+              subtitle="plan"
+              title="Basic"
+              currency="$"
+              suffix="MXN"
+              price="99.90"
+              period="/month"
+            />
+          </PlanCard>
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
   });
 });
