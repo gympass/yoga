@@ -99,6 +99,7 @@ PlanCardContent.propTypes = {
   title: string.isRequired,
   /** currency of the current country */
   currency: string,
+  /** suffix currency of the current country */
   suffix: string,
   price: string.isRequired,
   /** period that this price will be charged  */
