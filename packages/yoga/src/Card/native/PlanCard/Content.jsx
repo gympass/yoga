@@ -5,6 +5,7 @@ import { string, node } from 'prop-types';
 import Content from '../Card/Content';
 import Text from '../../../Text';
 import theme from '../../../Theme/helpers/themeReader';
+import Subtitle from './Subtitle';
 
 const Title = styled(Text.H5)`
   ${props => {
@@ -55,6 +56,7 @@ const Currency = styled(EnhancePrice)`
 `;
 
 const PlanCardContent = ({
+  subtitle,
   title,
   description,
   currency,
@@ -65,6 +67,7 @@ const PlanCardContent = ({
   ...rest
 }) => (
   <Content {...rest}>
+    {subtitle && <Subtitle>{subtitle}</Subtitle>}
     {title && <Title>{title}</Title>}
     {description && <Description numberOfLines={2}>{description}</Description>}
     <Price>
@@ -94,12 +97,14 @@ PlanCardContent.propTypes = {
   /** period that this price will be charged  */
   period: string.isRequired,
   description: string,
+  subtitle: string,
   children: node,
 };
 
 PlanCardContent.defaultProps = {
   children: null,
   description: null,
+  subtitle: null,
   suffix: null,
 };
 
