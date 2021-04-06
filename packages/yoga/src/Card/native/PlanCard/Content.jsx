@@ -91,7 +91,7 @@ PlanCardContent.propTypes = {
   /** Plan name */
   title: string.isRequired,
   /** currency of the current country */
-  currency: string.isRequired,
+  currency: string,
   suffix: string,
   price: string.isRequired,
   /** period that this price will be charged  */
@@ -105,6 +105,7 @@ PlanCardContent.defaultProps = {
   children: null,
   description: null,
   subtitle: null,
+  currency: null,
   suffix: null,
 };
 
