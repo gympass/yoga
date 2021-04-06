@@ -280,6 +280,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           style={
             Array [
               Object {
+                "height": 92,
                 "marginTop": 16,
               },
             ]

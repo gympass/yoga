@@ -234,6 +234,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 }
 
 .c11 {
+  height: 92px;
   margin: 16px 0 0;
   padding: 0;
   list-style: none;
