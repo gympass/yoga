@@ -6,7 +6,6 @@ const Card = ({
   borders,
   fontWeights,
   fontSizes,
-  lineHeights,
 }) => ({
   backgroundColor: colors.white,
   padding: {
@@ -29,23 +28,9 @@ const Card = ({
     },
     radius: 16,
     tag: {
-      radius: radii.semiRounded,
       position: {
         top: spacing.medium,
         left: spacing.medium,
-      },
-      padding: {
-        right: spacing.xxsmall,
-        left: spacing.xxsmall,
-      },
-      border: {
-        width: borders.small,
-        color: colors.elements.lineAndBorders,
-      },
-      font: {
-        size: fontSizes.xsmall,
-        height: lineHeights.xsmall,
-        weight: fontWeights.medium,
       },
     },
     subtitle: {
@@ -74,8 +59,8 @@ const Card = ({
         },
       },
       margin: {
-        top: spacing.xlarge,
-        bottom: spacing.xxlarge,
+        top: spacing.small,
+        bottom: spacing.large,
       },
     },
     list: {
