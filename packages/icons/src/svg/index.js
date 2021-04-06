@@ -4,6 +4,7 @@ import AddBooking from './add_booking.svg';
 import Add from './add.svg';
 import AlertCircle from './alert_circle.svg';
 import AlertTriangle from './alert_triangle.svg';
+import AlertTriangleFilled from './alert_triangle_filled.svg';
 import ArrowDropDown from './arrow_drop_down.svg';
 import ArrowDropUp from './arrow_drop_up.svg';
 import ArrowLeft from './arrow_left.svg';
@@ -140,6 +141,7 @@ export {
   Add,
   AlertCircle,
   AlertTriangle,
+  AlertTriangleFilled,
   ArrowDropDown,
   ArrowDropUp,
   ArrowLeft,
