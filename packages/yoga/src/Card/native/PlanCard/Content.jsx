@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { string, shape, node } from 'prop-types';
+import { string, node } from 'prop-types';
 
 import Content from '../Card/Content';
 import Text from '../../../Text';
@@ -58,6 +58,7 @@ const PlanCardContent = ({
   title,
   description,
   currency,
+  suffix,
   price,
   period,
   children,
@@ -67,15 +68,15 @@ const PlanCardContent = ({
     {title && <Title>{title}</Title>}
     {description && <Description numberOfLines={2}>{description}</Description>}
     <Price>
-      {currency.prefix && (
+      {currency && (
         <Currency align="flex-start">
-          <Text.Small>{currency.prefix}</Text.Small>
+          <Text.Small>{currency}</Text.Small>
         </Currency>
       )}
       {price && <Text.H3>{price}</Text.H3>}
       {period && (
         <EnhancePrice align="flex-end">
-          <Text.Small>{`${currency.suffix || ''}${period}`}</Text.Small>
+          <Text.Small>{`${suffix || ''}${period}`}</Text.Small>
         </EnhancePrice>
       )}
     </Price>
@@ -87,10 +88,8 @@ PlanCardContent.propTypes = {
   /** Plan name */
   title: string.isRequired,
   /** currency of the current country */
-  currency: shape({
-    prefix: string,
-    suffix: string,
-  }).isRequired,
+  currency: string.isRequired,
+  suffix: string,
   price: string.isRequired,
   /** period that this price will be charged  */
   period: string.isRequired,
@@ -101,6 +100,7 @@ PlanCardContent.propTypes = {
 PlanCardContent.defaultProps = {
   children: null,
   description: null,
+  suffix: null,
 };
 
 PlanCardContent.displayName = 'PlanCard.Content';
