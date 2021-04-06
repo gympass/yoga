@@ -88,7 +88,7 @@ const PlanCardContent = ({
 );
 
 PlanCardContent.propTypes = {
-  /** Plan name */
+  /** plan name */
   title: string.isRequired,
   /** currency of the current country */
   currency: string,
