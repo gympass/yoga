@@ -11,7 +11,7 @@ describe('<PlanCard />', () => {
     render(
       <ThemeProvider>
         <PlanCard>
-          <PlanCard.Tag>Recommended Plan</PlanCard.Tag>
+          <PlanCard.Tag variant="informative">Recommended Plan</PlanCard.Tag>
           <PlanCard.Content
             subtitle="plan"
             title="Basic"

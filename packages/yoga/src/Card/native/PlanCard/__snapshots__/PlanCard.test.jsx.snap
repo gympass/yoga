@@ -147,8 +147,23 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             Object {},
           ]
         }
-        subtitle="plan"
       >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "marginBottom": 8,
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          plan
+        </Text>
         <Text
           style={
             Array [
@@ -552,8 +567,23 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
             Object {},
           ]
         }
-        subtitle="plan"
       >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "marginBottom": 8,
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          plan
+        </Text>
         <Text
           style={
             Array [
@@ -739,8 +769,23 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
             Object {},
           ]
         }
-        subtitle="plan"
       >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "marginBottom": 8,
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          plan
+        </Text>
         <Text
           style={
             Array [
