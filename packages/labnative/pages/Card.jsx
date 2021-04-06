@@ -1,6 +1,6 @@
 /* eslint-disable no-undef, no-alert */
 import React from 'react';
-import { Card, PlanCard, EventCard, GymCard, Button } from '@gympass/yoga';
+import { Card, PlanCard, EventCard, GymCard } from '@gympass/yoga';
 import { MapPin, Smartphone, Star } from '@gympass/yoga-icons';
 import { Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -113,9 +113,8 @@ const CardPage = () => {
             </PlanCard.List>
           </PlanCard.Content>
           <PlanCard.Actions>
-            <Button small full>
-              Select this plan
-            </Button>
+            <PlanCard.Button>Select this plan</PlanCard.Button>
+            <PlanCard.ButtonText>See whats included</PlanCard.ButtonText>
           </PlanCard.Actions>
         </PlanCard>
       </ScrollView>
