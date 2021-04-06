@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.1.0...@gympass/yoga-icons@1.1.1) (2021-04-06)
+
+
+### Bug Fixes
+
+* **icons:** remove fill="none" from SystemStatus icon ([9da2f5e](https://github.com/Gympass/yoga/commit/9da2f5e2416d17d9d1ec1518c8a6bf1f6aa1f609))
+* **systemstatus:** removed fixed fill property from svg ([0c9867c](https://github.com/Gympass/yoga/commit/0c9867cae17a4159da3a07e95e5500980d9f02d2))
+
+
+
+
+
 # [1.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.0.0...@gympass/yoga-icons@1.1.0) (2021-04-06)
 
 
