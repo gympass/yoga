@@ -92,23 +92,15 @@ const Button = styled.button`
   }}
 `;
 
-const ListItem = withTheme(
-  ({ text, icon: Icon, buttonProps, theme: yogaTheme }) => (
-    <Item>
-      <Wrapper>
-        {Icon && (
-          <Icon
-            fill={yogaTheme.yoga.colors.elements.selectionAndIcons}
-            width={16}
-            height={16}
-          />
-        )}
-        <ItemText as="span">{text}</ItemText>
-      </Wrapper>
-      {Object.keys(buttonProps).length && <Button {...buttonProps} />}
-    </Item>
-  ),
-);
+const ListItem = withTheme(({ text, icon: Icon, buttonProps }) => (
+  <Item>
+    <Wrapper>
+      {Icon && <Icon width={16} height={16} />}
+      <ItemText as="span">{text}</ItemText>
+    </Wrapper>
+    {Boolean(Object.keys(buttonProps).length) && <Button {...buttonProps} />}
+  </Item>
+));
 
 List.displayName = 'PlanCard.List';
 ListItem.displayName = 'PlanCard.ListItem';
