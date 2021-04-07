@@ -83,7 +83,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 }
 
 .c16 {
-  margin-top: 24px;
+  margin-top: 32px;
 }
 
 .c5 {
@@ -118,7 +118,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   display: -ms-flexbox;
   display: flex;
   margin-top: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .c10 {
@@ -437,7 +437,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   display: -ms-flexbox;
   display: flex;
   margin-top: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .c7 {
@@ -576,7 +576,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   display: -ms-flexbox;
   display: flex;
   margin-top: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .c7 {
