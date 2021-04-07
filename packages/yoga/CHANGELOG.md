@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.0.3...@gympass/yoga@6.1.0) (2021-04-07)
+
+
+### Bug Fixes
+
+* **plancard.content:** update currency approach to not break current use ([35c5e4e](https://github.com/Gympass/yoga/commit/35c5e4e3fdde6b3cbf7fc4d8b73807287c14cd6f))
+* **plancard.list:** check buttonProps as boolean value ([07e60a5](https://github.com/Gympass/yoga/commit/07e60a583ad1cedf65fcf0b19339d71f069934d3))
+* **plancard.list:** check buttonProps exists before render the button ([6382ecc](https://github.com/Gympass/yoga/commit/6382ecc087df64df0bd1679b7f985da00c6320ca))
+* **plancard.theme:** update margins ([020b211](https://github.com/Gympass/yoga/commit/020b211c3a54d7dfa8e7d84c79e49c43f2a4e77c))
+
+
+### Features
+
+* **plancard.actions:** create button actions ([48d8702](https://github.com/Gympass/yoga/commit/48d8702658c55512edc23ac6c8f5f5c0bb7cbd98))
+
+
+
+
+
 ## [6.0.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.0.2...@gympass/yoga@6.0.3) (2021-04-07)
 
 
