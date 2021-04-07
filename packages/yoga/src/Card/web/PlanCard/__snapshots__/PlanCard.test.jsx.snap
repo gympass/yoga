@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
-.c16 {
+.c17 {
   box-sizing: border-box;
   outline: none;
   -webkit-transition: all 0.2s;
@@ -39,7 +39,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   text-decoration: none;
 }
 
-.c16 svg {
+.c17 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -48,31 +48,31 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   transition: fill 0.2s;
 }
 
-.c16:not([disabled]):hover,
-.c16:not([disabled]):focus {
+.c17:not([disabled]):hover,
+.c17:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c16:active {
+.c17:active {
   background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c16:active svg {
+.c17:active svg {
   fill: #FFFFFF;
 }
 
-.c16:disabled {
+.c17:disabled {
   background-color: #F5F5FA;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
-.c16:disabled svg {
+.c17:disabled svg {
   fill: #D7D7E0;
 }
 
-.c8 {
+.c9 {
   margin: 0;
   padding: 0;
   font-size: 48px;
@@ -82,11 +82,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   color: #231B22;
 }
 
-.c15 {
-  margin-top: 24px;
+.c16 {
+  margin-top: 32px;
 }
 
-.c3 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -100,7 +100,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-weight: 500;
 }
 
-.c4 {
+.c6 {
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -112,34 +112,16 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   margin-bottom: 4px;
 }
 
-.c5 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  height: 40px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  color: #6B6B78;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-overflow: -o-ellipsis-lastline;
-}
-
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 40px;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
-.c9 {
+.c10 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -152,7 +134,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   align-self: flex-end;
 }
 
-.c7 {
+.c8 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -189,6 +171,51 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 }
 
 .c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #7068D4;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #7068D4;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.c3 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #E0DFFF;
+  color: #231B22;
+  border-radius: 4px;
+  border-color: #E0DFFF;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.c3 svg {
+  margin-right: 4px;
+}
+
+.c4 {
   position: absolute;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -202,34 +229,27 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: transparent;
   top: 28px;
   left: 20px;
-  padding-left: 8px;
-  padding-right: 8px;
-  border: 1px solid #D7D7E0;
-  border-radius: 4px;
-  font-size: 12px;
-  line-height: px;
-  font-weight: 500;
 }
 
-.c10 {
+.c11 {
+  height: 92px;
   margin: 16px 0 0;
   padding: 0;
   list-style: none;
 }
 
-.c11 {
+.c12 {
   margin-bottom: 16px;
 }
 
-.c11 svg {
+.c12 svg {
   vertical-align: middle;
   margin-right: 12px;
 }
 
-.c12 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -237,13 +257,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   min-width: 0;
 }
 
-.c12 svg {
+.c13 svg {
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
-.c13 {
+.c14 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -260,7 +280,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   color: #231B22;
 }
 
-.c14 {
+.c15 {
   display: block;
   padding: 0;
   width: 100%;
@@ -292,73 +312,69 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
     <span
       class="c1"
     />
-    <span
-      class="c2"
+    <div
+      class="c2 c3 c4"
     >
       Recommended Plan
-    </span>
+    </div>
     <div
       class=""
     >
       <p
-        class="c3"
+        class="c5"
       >
         plan
       </p>
       <h5
-        class="c4"
+        class="c6"
       >
         Basic
       </h5>
-      <p
-        class="c5"
-      />
       <div
-        class="c6"
+        class="c7"
       >
         <sup
-          class="c7"
+          class="c8"
         >
           $
         </sup>
         <strong
-          class="c8"
+          class="c9"
         >
           99.90
         </strong>
         <sub
-          class="c9"
+          class="c10"
         >
-          /month
+           /month
         </sub>
       </div>
       <p
-        class="c3"
+        class="c5"
       >
         Get access to
       </p>
       <ul
-        class="c10"
+        class="c11"
       >
         <li
-          class="c11"
+          class="c12"
         >
           <div
-            class="c12"
+            class="c13"
           >
             <svg
-              fill="#9898A6"
               height="16"
               width="16"
             />
             <span
-              class="c13"
+              class="c14"
             >
               list item
             </span>
           </div>
           <a
-            class="c14"
+            class="c15"
           >
             button
           </a>
@@ -366,10 +382,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       </ul>
     </div>
     <footer
-      class="c15"
+      class="c16"
     >
       <button
-        class="c16"
+        class="c17"
       >
         Select this plan
       </button>
@@ -378,8 +394,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 </div>
 `;
 
-exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
-.c7 {
+exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
+.c6 {
   margin: 0;
   padding: 0;
   font-size: 48px;
@@ -416,33 +432,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
 }
 
 .c4 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  height: 40px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  color: #6B6B78;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-overflow: -o-ellipsis-lastline;
-}
-
-.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 40px;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -455,7 +453,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   align-self: flex-end;
 }
 
-.c6 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -511,26 +509,162 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
       >
         Basic
       </h5>
-      <p
-        class="c4"
-      />
       <div
-        class="c5"
+        class="c4"
       >
         <sup
-          class="c6"
+          class="c5"
         >
           $
         </sup>
         <strong
-          class="c7"
+          class="c6"
         >
           99.90
         </strong>
         <sub
-          class="c8"
+          class="c7"
         >
-          /month
+          MXN /month
+        </sub>
+      </div>
+    </div>
+  </article>
+</div>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #6B6B78;
+  font-weight: 500;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  color: #231B22;
+  margin-bottom: 4px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-right: 4px;
+}
+
+.c0 {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  max-width: 288px;
+  overflow: hidden;
+  padding: 64px 20px 32px 20px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 8px;
+  background-color: #1D856C;
+}
+
+<div>
+  <article
+    class="c0"
+  >
+    <span
+      class="c1"
+    />
+    <div
+      class=""
+    >
+      <p
+        class="c2"
+      >
+        plan
+      </p>
+      <h5
+        class="c3"
+      >
+        Basic
+      </h5>
+      <div
+        class="c4"
+      >
+        <sup
+          class="c5"
+        >
+          $
+        </sup>
+        <strong
+          class="c6"
+        >
+          99.90
+        </strong>
+        <sub
+          class="c7"
+        >
+           /month
         </sub>
       </div>
     </div>

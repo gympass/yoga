@@ -1,7 +1,7 @@
 /* eslint-disable no-undef, no-alert */
 import React from 'react';
-import { Card, PlanCard, EventCard, GymCard, Button } from '@gympass/yoga';
-import { Star } from '@gympass/yoga-icons';
+import { Card, PlanCard, EventCard, GymCard } from '@gympass/yoga';
+import { MapPin, Smartphone, Star } from '@gympass/yoga-icons';
 import { Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
@@ -98,41 +98,23 @@ const CardPage = () => {
       <DocTitle>Plan Card</DocTitle>
       <ScrollView horizontal style={{ height: 700 }}>
         <PlanCard style={{ marginLeft: 10 }}>
-          <PlanCard.Tag>Recommended for you</PlanCard.Tag>
+          <PlanCard.Tag variant="informative">Recommended for you</PlanCard.Tag>
           <PlanCard.Content
-            subtitle="plan"
             title="Basic"
-            description="Try a new training experience"
             currency="$"
             price="99.90"
             period="/month"
           >
             <PlanCard.Subtitle>Get access to</PlanCard.Subtitle>
             <PlanCard.List>
-              <PlanCard.ListItem
-                icon={Star}
-                text="2.900 gyms and studios"
-                buttonProps={{
-                  children: 'See all gyms and studios',
-                  onPress: () => {
-                    alert('See all gyms and studios');
-                  },
-                }}
-              />
-              <PlanCard.ListItem
-                icon={Star}
-                text="24 wellness app"
-                buttonProps={{
-                  children: 'See all apps',
-                  onPress: () => {
-                    alert('See all apps');
-                  },
-                }}
-              />
+              <PlanCard.ListItem icon={MapPin} text="2.900 gyms and studios" />
+              <PlanCard.ListItem icon={Smartphone} text="24 wellness app" />
+              <PlanCard.ListItem icon={Star} text="1-on-1 training sessions" />
             </PlanCard.List>
           </PlanCard.Content>
           <PlanCard.Actions>
-            <Button full>Select this plan</Button>
+            <PlanCard.Button>Select this plan</PlanCard.Button>
+            <PlanCard.ButtonText>See whats included</PlanCard.ButtonText>
           </PlanCard.Actions>
         </PlanCard>
       </ScrollView>

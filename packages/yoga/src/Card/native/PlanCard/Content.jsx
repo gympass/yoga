@@ -60,6 +60,7 @@ const PlanCardContent = ({
   subtitle,
   description,
   currency,
+  suffix,
   price,
   period,
   children,
@@ -68,17 +69,17 @@ const PlanCardContent = ({
   <Content {...rest}>
     {subtitle && <Subtitle>{subtitle}</Subtitle>}
     {title && <Title>{title}</Title>}
-    <Description numberOfLines={2}>{description}</Description>
+    {description && <Description numberOfLines={2}>{description}</Description>}
     <Price>
       {currency && (
         <Currency align="flex-start">
           <Text.Small>{currency}</Text.Small>
         </Currency>
       )}
-      {price && <Text.H1>{price}</Text.H1>}
+      {price && <Text.H3>{price}</Text.H3>}
       {period && (
         <EnhancePrice align="flex-end">
-          <Text.Small>{period}</Text.Small>
+          <Text.Small>{`${suffix || ''}${period}`}</Text.Small>
         </EnhancePrice>
       )}
     </Price>
@@ -87,10 +88,12 @@ const PlanCardContent = ({
 );
 
 PlanCardContent.propTypes = {
-  /** Plan name */
+  /** plan name */
   title: string.isRequired,
   /** currency of the current country */
-  currency: string.isRequired,
+  currency: string,
+  /** suffix currency of the current country */
+  suffix: string,
   price: string.isRequired,
   /** period that this price will be charged  */
   period: string.isRequired,
@@ -103,6 +106,8 @@ PlanCardContent.defaultProps = {
   children: null,
   description: null,
   subtitle: null,
+  currency: null,
+  suffix: null,
 };
 
 PlanCardContent.displayName = 'PlanCard.Content';

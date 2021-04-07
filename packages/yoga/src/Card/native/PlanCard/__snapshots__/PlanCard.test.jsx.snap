@@ -82,36 +82,64 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "transparent",
-              "borderColor": "#D7D7E0",
+              "backgroundColor": "#E0DFFF",
+              "borderColor": "#E0DFFF",
               "borderRadius": 4,
-              "borderStyle": "solid",
               "borderWidth": 1,
               "justifyContent": "center",
-              "left": 20,
+              "paddingBottom": 4,
               "paddingLeft": 8,
               "paddingRight": 8,
+              "paddingTop": 4,
+              "width": "auto",
+            },
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "left": 20,
               "position": "absolute",
               "top": 28,
             },
           ]
         }
+        variant="informative"
       >
-        <Text
+        <View
           style={
             Array [
               Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "500",
-                "lineHeight": 16,
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "center",
               },
             ]
           }
         >
-          Recommended Plan
-        </Text>
+          <Text
+            inverted={false}
+            light={false}
+            size="medium"
+            style={
+              Array [
+                Object {
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "lineHeight": 24,
+                },
+                Object {
+                  "color": "#231B22",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "lineHeight": 16,
+                },
+              ]
+            }
+          >
+            Recommended Plan
+          </Text>
+        </View>
       </View>
       <View
         style={
@@ -152,28 +180,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         >
           Basic
         </Text>
-        <Text
-          numberOfLines={2}
-          style={
-            Array [
-              Object {
-                "color": "#6B6B78",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "height": 40,
-                "lineHeight": 20,
-              },
-            ]
-          }
-        />
         <View
           style={
             Array [
               Object {
                 "flexDirection": "row",
-                "marginBottom": 40,
-                "marginTop": 32,
+                "marginBottom": 32,
+                "marginTop": 16,
               },
             ]
           }
@@ -211,9 +224,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 Object {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
-                  "fontSize": 48,
+                  "fontSize": 32,
                   "fontWeight": "500",
-                  "lineHeight": 56,
+                  "lineHeight": 40,
                 },
               ]
             }
@@ -267,6 +280,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           style={
             Array [
               Object {
+                "height": 92,
                 "marginTop": 16,
               },
             ]
@@ -291,7 +305,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               <RNSVGSvgView
                 bbHeight={16}
                 bbWidth={16}
-                fill="#9898A6"
                 focusable={false}
                 height={16}
                 style={
@@ -319,7 +332,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                   fill={
                     Array [
                       0,
-                      4288190630,
+                      4278190080,
                     ]
                   }
                   fillOpacity={1}
@@ -338,11 +351,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                   opacity={1}
                   originX={0}
                   originY={0}
-                  propList={
-                    Array [
-                      "fill",
-                    ]
-                  }
+                  propList={Array []}
                   rotation={0}
                   scaleX={1}
                   scaleY={1}
@@ -410,7 +419,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         style={
           Array [
             Object {
-              "marginTop": 24,
+              "marginTop": 32,
             },
           ]
         }
@@ -470,6 +479,208 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             </View>
           </View>
         </TouchableWithoutFeedback>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "elevation": 4,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "elevation": 4,
+            "overflow": "hidden",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "maxWidth": 288,
+            "overflow": "hidden",
+            "paddingBottom": 32,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 64,
+            "position": "relative",
+            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
+            "width": "100%",
+          },
+        ]
+      }
+      variant=""
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#1D856C",
+              "height": 8,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+          ]
+        }
+        variant="hope"
+      />
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "marginBottom": 8,
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          plan
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 20,
+                "fontWeight": "500",
+                "lineHeight": 28,
+                "marginBottom": 4,
+              },
+            ]
+          }
+        >
+          Basic
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+                "marginBottom": 32,
+                "marginTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            align="flex-start"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-start",
+                  "marginRight": 4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
+              }
+            >
+              $
+            </Text>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 32,
+                  "fontWeight": "500",
+                  "lineHeight": 40,
+                },
+              ]
+            }
+          >
+            99.90
+          </Text>
+          <View
+            align="flex-end"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-end",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
+              }
+            >
+              MXN/month
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
   </View>
@@ -592,28 +803,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
         >
           Basic
         </Text>
-        <Text
-          numberOfLines={2}
-          style={
-            Array [
-              Object {
-                "color": "#6B6B78",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "400",
-                "height": 40,
-                "lineHeight": 20,
-              },
-            ]
-          }
-        />
         <View
           style={
             Array [
               Object {
                 "flexDirection": "row",
-                "marginBottom": 40,
-                "marginTop": 32,
+                "marginBottom": 32,
+                "marginTop": 16,
               },
             ]
           }
@@ -651,9 +847,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
                 Object {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
-                  "fontSize": 48,
+                  "fontSize": 32,
                   "fontWeight": "500",
-                  "lineHeight": 56,
+                  "lineHeight": 40,
                 },
               ]
             }

@@ -11,7 +11,7 @@ describe('<PlanCard />', () => {
     render(
       <ThemeProvider>
         <PlanCard>
-          <PlanCard.Tag>Recommended Plan</PlanCard.Tag>
+          <PlanCard.Tag variant="informative">Recommended Plan</PlanCard.Tag>
           <PlanCard.Content
             subtitle="plan"
             title="Basic"
@@ -61,6 +61,25 @@ describe('<PlanCard />', () => {
               subtitle="plan"
               title="Basic"
               currency="$"
+              price="99.90"
+              period="/month"
+            />
+          </PlanCard>
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with suffix', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <PlanCard variant="hope">
+            <PlanCard.Content
+              subtitle="plan"
+              title="Basic"
+              currency="$"
+              suffix="MXN"
               price="99.90"
               period="/month"
             />

@@ -3,15 +3,13 @@ import styled, { css } from 'styled-components';
 import { node } from 'prop-types';
 
 import { PLAN_LINE_HEIGHT } from './PlanCard';
-import Text from '../../../Text';
+import Tag from '../../../Tag';
 import theme from '../../../Theme/helpers/themeReader';
 
-const Wrapper = styled.View`
+const StyledTag = styled(Tag.Informative)`
   position: absolute;
   align-items: center;
   justify-content: center;
-
-  background-color: transparent;
 
   ${props => {
     const {
@@ -23,40 +21,18 @@ const Wrapper = styled.View`
     return css`
       top: ${plan.tag.position.top + PLAN_LINE_HEIGHT}px;
       left: ${plan.tag.position.left}px;
-
-      padding-left: ${plan.tag.padding.left}px;
-      padding-right: ${plan.tag.padding.right}px;
-
-      border: ${plan.tag.border.width}px solid ${plan.tag.border.color};
-      border-radius: ${plan.tag.radius}px;
-    `;
-  }}
-`;
-const StyledText = styled(Text.Medium)`
-  ${props => {
-    const {
-      components: {
-        card: { plan },
-      },
-    } = theme(props);
-
-    return css`
-      font-size: ${plan.tag.font.size}px;
-      line-height: ${plan.tag.font.height}px;
     `;
   }}
 `;
 
-const Tag = ({ children, ...rest }) => (
-  <Wrapper {...rest}>
-    <StyledText>{children}</StyledText>
-  </Wrapper>
+const PlanCardTag = ({ children, ...rest }) => (
+  <StyledTag {...rest}>{children}</StyledTag>
 );
 
-Tag.displayName = 'PlanCard.Tag';
+PlanCardTag.displayName = 'PlanCard.Tag';
 
-Tag.propTypes = {
+PlanCardTag.propTypes = {
   children: node.isRequired,
 };
 
-export default Tag;
+export default PlanCardTag;
