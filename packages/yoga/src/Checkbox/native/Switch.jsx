@@ -100,7 +100,7 @@ const CheckboxSwitch = ({
     },
   },
 }) => {
-  const [thumbPosition] = useState(new Animated.Value(checked));
+  const [thumbPosition] = useState(new Animated.Value(Number(checked)));
   const thumbTo =
     checkboxswitch.track.width -
     checkboxswitch.thumb.width -
