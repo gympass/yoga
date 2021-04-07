@@ -167,6 +167,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "nypacheco",
+      "name": "Nathália Pacheco",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12848917?v=4",
+      "profile": "https://github.com/nypacheco",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
