@@ -96,7 +96,7 @@ const Card = ({
     actions: {
       buttonText: {
         margin: {
-          top: spacing.medium,
+          top: spacing.xsmall,
           bottom: spacing.zero,
         },
       },
