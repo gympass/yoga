@@ -60,7 +60,7 @@ const Card = ({
       },
       margin: {
         top: spacing.small,
-        bottom: spacing.large,
+        bottom: spacing.xlarge,
       },
     },
     list: {
@@ -101,7 +101,7 @@ const Card = ({
         },
       },
       margin: {
-        top: spacing.large,
+        top: spacing.xlarge,
       },
     },
   },
