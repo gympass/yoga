@@ -57,7 +57,7 @@ const peerDependencies = [
   { path: 'react-is' },
 ];
 
-const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
+const CodeBlock = ({ children: sampleCode, center, state, type }) => {
   const code = sampleCode.trim();
 
   const imports = type === 'highlight' ? [] : buildImportString(code, packages);
@@ -72,7 +72,6 @@ const CodeBlock = ({ children: sampleCode, center, state, type, theme }) => {
     dependencies,
     imports,
     state,
-    theme,
   };
 
   const CodeBlockComponent = {
