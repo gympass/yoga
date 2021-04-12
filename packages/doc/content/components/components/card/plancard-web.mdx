@@ -11,16 +11,17 @@
   >
     <PlanCard.Subtitle>Get access to</PlanCard.Subtitle>
     <PlanCard.List>
+      <PlanCard.ListItem icon={MapPin} text="2.900 gyms and studios" />
+      <PlanCard.ListItem icon={Smartphone} text="24 wellness app" />
       <PlanCard.ListItem
-        icon={MapPin}
-        text="2.900 gyms and studios"
-      />
-      <PlanCard.ListItem
-        icon={Smartphone}
-        text="24 wellness app"
-      />
-      <PlanCard.ListItem
-        icon={Star}
+        icon={
+          <Icon
+            as={Star}
+            height="small"
+            width="small"
+            stroke="medium"
+          />
+        }
         text="1-on-1 training sessions"
       />
     </PlanCard.List>
