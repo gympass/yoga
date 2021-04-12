@@ -1,6 +1,6 @@
 /* eslint-disable no-undef, no-alert */
 import React from 'react';
-import { Card, PlanCard, EventCard, GymCard } from '@gympass/yoga';
+import { Card, PlanCard, EventCard, GymCard, Icon } from '@gympass/yoga';
 import { MapPin, Smartphone, Star } from '@gympass/yoga-icons';
 import { Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
@@ -109,7 +109,17 @@ const CardPage = () => {
             <PlanCard.List>
               <PlanCard.ListItem icon={MapPin} text="2.900 gyms and studios" />
               <PlanCard.ListItem icon={Smartphone} text="24 wellness app" />
-              <PlanCard.ListItem icon={Star} text="1-on-1 training sessions" />
+              <PlanCard.ListItem
+                icon={
+                  <Icon
+                    as={Star}
+                    height="small"
+                    width="small"
+                    stroke="medium"
+                  />
+                }
+                text="1-on-1 training sessions"
+              />
             </PlanCard.List>
           </PlanCard.Content>
           <PlanCard.Actions>
