@@ -14,6 +14,7 @@ import Progress from './Progress';
 import Dropdown from './Dropdown';
 import TextArea from './TextArea';
 import Icon from './Icon';
+import Avatar from './Avatar';
 
 export {
   ThemeProvider,
@@ -37,4 +38,5 @@ export {
   Dropdown,
   TextArea,
   Icon,
-};
+  Avatar,
+ };
