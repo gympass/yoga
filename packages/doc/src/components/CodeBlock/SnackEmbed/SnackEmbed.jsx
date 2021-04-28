@@ -30,9 +30,7 @@ const addProperties = (properties, to, prefix = '') => {
 };
 
 const SnackEmbed = ({ id, ...props }) => {
-  const { imports, code, dependencies, state, theme } = useContext(
-    CodeBlockContext,
-  );
+  const { imports, code, dependencies, state } = useContext(CodeBlockContext);
 
   const sanitizedCode = encodeURI(code);
 
@@ -46,7 +44,7 @@ const SnackEmbed = ({ id, ...props }) => {
             ['react', 'react-native'],
             false,
           )}\n\n${sanitizedCode}`
-        : native(imports, sanitizedCode, theme),
+        : native(imports, sanitizedCode),
       dependencies: dependencies.join(','),
     },
     {},
