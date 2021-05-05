@@ -73,7 +73,6 @@ const Card = ({
           bottom: spacing.small,
         },
         font: {
-          size: fontSizes.small,
           color: colors.text.primary,
         },
         icon: {

@@ -1,52 +1,38 @@
-import React from 'react';
-import styled, { css, withTheme } from 'styled-components';
-import { View, TouchableWithoutFeedback } from 'react-native';
+import React, { isValidElement } from 'react';
+import styled, { withTheme } from 'styled-components';
+import { TouchableWithoutFeedback } from 'react-native';
 import { string, node, shape, oneOfType, func } from 'prop-types';
 
 import Text from '../../../Text';
 import theme from '../../../Theme/helpers/themeReader';
 
+const { plan } = theme.components.card;
+
 const List = styled.View`
-  height: ${theme.components.card.plan.list.height}px;
-  margin-top: ${theme.components.card.plan.list.margin.top}px;
+  min-height: ${plan.list.height}px;
+  margin-top: ${plan.list.margin.top}px;
 `;
 
 const Item = styled.View`
-  margin-bottom: ${theme.components.card.plan.list.item.margin.bottom}px;
+  margin-bottom: ${plan.list.item.margin.bottom}px;
 `;
 
-const ItemText = styled(Text.Small)`
-  ${props => {
-    const {
-      components: {
-        card: { plan },
-      },
-    } = theme(props);
+const Wrapper = styled.View`
+  flex-direction: row;
+  align-items: center;
+`;
 
-    return css`
-      font-size: ${plan.list.item.font.size}px;
-      color: ${plan.list.item.font.color};
-    `;
-  }}
+const IconWrapper = styled.View`
+  margin-right: ${plan.list.item.icon.margin.right}px;
 `;
 
 const Button = styled.View`
-  margin-top: ${theme.components.card.plan.list.button.margin.top}px;
+  margin-top: ${plan.list.button.margin.top}px;
 `;
 
 const ButtonText = styled(Text.Medium)`
-  ${props => {
-    const {
-      components: {
-        card: { plan },
-      },
-    } = theme(props);
-
-    return css`
-      font-size: ${plan.list.button.font.size}px;
-      color: ${plan.list.button.font.color};
-    `;
-  }}
+  font-size: ${plan.list.button.font.size}px;
+  color: ${plan.list.button.font.color};
 `;
 
 const ListItem = withTheme(
@@ -57,19 +43,22 @@ const ListItem = withTheme(
     theme: yogaTheme,
   }) => (
     <Item>
-      <View style={{ flexDirection: 'row' }}>
+      <Wrapper>
         {Icon && (
-          <Icon
-            width={16}
-            height={16}
-            style={{
-              marginRight:
-                yogaTheme.yoga.components.card.plan.list.item.icon.margin.right,
-            }}
-          />
+          <IconWrapper>
+            {isValidElement(Icon) ? (
+              Icon
+            ) : (
+              <Icon
+                width={16}
+                height={16}
+                fill={yogaTheme.yoga.colors.elements.selectionAndIcons}
+              />
+            )}
+          </IconWrapper>
         )}
-        <ItemText>{text}</ItemText>
-      </View>
+        <Text.Small>{text}</Text.Small>
+      </Wrapper>
       {Boolean(Object.keys(buttonProps).length) && (
         <TouchableWithoutFeedback {...buttonProps}>
           <Button>
@@ -78,7 +67,7 @@ const ListItem = withTheme(
         </TouchableWithoutFeedback>
       )}
     </Item>
-  ),
+  )
 );
 
 List.displayName = 'PlanCard.List';

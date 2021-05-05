@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
-import { Star } from '@gympass/yoga-icons';
-import { ThemeProvider, Button } from '../../..';
+import { Star, MapPin } from '@gympass/yoga-icons';
+import { ThemeProvider, Button, Icon } from '../../..';
 import PlanCard from '.';
 
 describe('<PlanCard />', () => {
@@ -21,6 +21,17 @@ describe('<PlanCard />', () => {
           >
             <PlanCard.Subtitle>Get access to</PlanCard.Subtitle>
             <PlanCard.List>
+              <PlanCard.ListItem
+                icon={
+                  <Icon
+                    as={MapPin}
+                    height="small"
+                    width="small"
+                    stroke="medium"
+                  />
+                }
+                text="gyms and studios"
+              />
               <PlanCard.ListItem
                 icon={Star}
                 text="list item"

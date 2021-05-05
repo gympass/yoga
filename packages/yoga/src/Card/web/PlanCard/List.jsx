@@ -5,6 +5,8 @@ import { string, node, shape, oneOfType, func } from 'prop-types';
 import Text from '../../../Text';
 import theme from '../../../Theme/helpers/themeReader';
 
+const { plan } = theme.components.card;
+
 const truncateStyle = css`
   white-space: nowrap;
   overflow: hidden;
@@ -12,30 +14,24 @@ const truncateStyle = css`
 `;
 
 const List = styled.ul`
-  height: ${theme.components.card.plan.list.height}px;
-  margin: ${theme.components.card.plan.list.margin.top}px 0 0;
+  height: ${plan.list.height}px;
+  margin: ${plan.list.margin.top}px 0 0;
   padding: 0;
 
   list-style: none;
 `;
 
+const IconWrapper = styled.div`
+  margin-right: ${plan.list.item.icon.margin.right}px;
+`;
+
 const Item = styled.li`
-  ${props => {
-    const {
-      components: {
-        card: { plan },
-      },
-    } = theme(props);
+  margin-bottom: ${plan.list.item.margin.bottom}px;
 
-    return css`
-      margin-bottom: ${plan.list.item.margin.bottom}px;
-
-      svg {
-        vertical-align: middle;
-        margin-right: ${plan.list.item.icon.margin.right}px;
-      }
-    `;
-  }}
+  svg {
+    vertical-align: middle;
+    margin-right: ${plan.list.item.icon.margin.right}px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -52,14 +48,15 @@ const ItemText = styled(Text.Small)`
   height: 100%;
   vertical-align: middle;
 
-  ${truncateStyle}
+  color: ${plan.list.item.font.color};
 
-  color: ${theme.components.card.plan.list.item.font.color};
+  ${truncateStyle}
 `;
 
 const Button = styled.button`
   display: block;
   padding: 0;
+  margin-top: ${plan.list.button.margin.top}px;
 
   width: 100%;
 
@@ -68,40 +65,47 @@ const Button = styled.button`
   background-color: transparent;
   border: none;
 
+  font-family: ${theme.baseFont.family};
+  font-size: ${plan.list.button.font.size}px;
+  font-weight: ${plan.list.button.font.weight};
+  color: ${plan.list.button.font.color};
+
   cursor: pointer;
   text-decoration: none;
   text-align: left;
   outline: none;
 
   ${truncateStyle}
-
-  ${props => {
-    const {
-      components: {
-        card: { plan },
-      },
-    } = theme(props);
-
-    return css`
-      margin-top: ${plan.list.button.margin.top}px;
-
-      font-family: ${theme.baseFont.family};
-      font-size: ${plan.list.button.font.size}px;
-      font-weight: ${plan.list.button.font.weight};
-      color: ${plan.list.button.font.color};
-    `;
-  }}
 `;
 
-const ListItem = withTheme(({ text, icon: Icon, buttonProps }) => (
-  <Item>
-    <Wrapper>
-      {Icon && <Icon width={16} height={16} />}
-      <ItemText as="span">{text}</ItemText>
-    </Wrapper>
-    {Boolean(Object.keys(buttonProps).length) && <Button {...buttonProps} />}
-  </Item>
-));
+const ListItem = withTheme(
+  ({ text, icon: Icon, buttonProps, theme: yogaTheme }) => {
+    const isReactElement = typeof Icon === 'object';
+    return (
+      <Item>
+        <Wrapper>
+          {Icon && (
+            <IconWrapper>
+              {isReactElement ? (
+                Icon
+              ) : (
+                <Icon
+                  width={16}
+                  height={16}
+                  fill={yogaTheme.yoga.colors.elements.selectionAndIcons}
+                />
+              )}
+            </IconWrapper>
+          )}
+          <ItemText as="span">{text}</ItemText>
+        </Wrapper>
+        {Boolean(Object.keys(buttonProps).length) && (
+          <Button {...buttonProps} />
+        )}
+      </Item>
+    );
+  },
+);
 
 List.displayName = 'PlanCard.List';
 ListItem.displayName = 'PlanCard.ListItem';
