@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { isValidElement } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { TouchableWithoutFeedback } from 'react-native';
 import { string, node, shape, oneOfType, func } from 'prop-types';
@@ -26,11 +26,6 @@ const IconWrapper = styled.View`
   margin-right: ${plan.list.item.icon.margin.right}px;
 `;
 
-const ItemText = styled(Text.Small)`
-  font-size: ${plan.list.item.font.size}px;
-  color: ${plan.list.item.font.color};
-`;
-
 const Button = styled.View`
   margin-top: ${plan.list.button.margin.top}px;
 `;
@@ -46,36 +41,33 @@ const ListItem = withTheme(
     icon: Icon,
     buttonProps: { children, ...buttonProps },
     theme: yogaTheme,
-  }) => {
-    const isReactElement = typeof Icon === 'object';
-    return (
-      <Item>
-        <Wrapper>
-          {Icon && (
-            <IconWrapper>
-              {isReactElement ? (
-                Icon
-              ) : (
-                <Icon
-                  width={16}
-                  height={16}
-                  fill={yogaTheme.yoga.colors.elements.selectionAndIcons}
-                />
-              )}
-            </IconWrapper>
-          )}
-          <ItemText>{text}</ItemText>
-        </Wrapper>
-        {Boolean(Object.keys(buttonProps).length) && (
-          <TouchableWithoutFeedback {...buttonProps}>
-            <Button>
-              <ButtonText>{children}</ButtonText>
-            </Button>
-          </TouchableWithoutFeedback>
+  }) => (
+    <Item>
+      <Wrapper>
+        {Icon && (
+          <IconWrapper>
+            {isValidElement(Icon) ? (
+              Icon
+            ) : (
+              <Icon
+                width={16}
+                height={16}
+                fill={yogaTheme.yoga.colors.elements.selectionAndIcons}
+              />
+            )}
+          </IconWrapper>
         )}
-      </Item>
-    );
-  },
+        <Text.Small>{text}</Text.Small>
+      </Wrapper>
+      {Boolean(Object.keys(buttonProps).length) && (
+        <TouchableWithoutFeedback {...buttonProps}>
+          <Button>
+            <ButtonText>{children}</ButtonText>
+          </Button>
+        </TouchableWithoutFeedback>
+      )}
+    </Item>
+  )
 );
 
 List.displayName = 'PlanCard.List';
