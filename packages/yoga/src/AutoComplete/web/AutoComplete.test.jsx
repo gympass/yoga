@@ -98,7 +98,7 @@ describe('<AutoComplete />', () => {
 
       fireEvent.change(getByDisplayValue('New'), { target: { value: 'a' } });
 
-      expect(onChangeMock).toHaveBeenCalled();
+      expect(onChangeMock).toHaveBeenCalledWith('a');
       expect(onSelectMock).not.toHaveBeenCalled();
       expect(onCleanMock).not.toHaveBeenCalled();
     });
@@ -125,7 +125,7 @@ describe('<AutoComplete />', () => {
 
       expect(onCleanMock).toHaveBeenCalledWith('');
       expect(onSelectMock).not.toHaveBeenCalled();
-      expect(onChangeMock).toHaveBeenCalled();
+      expect(onChangeMock).toHaveBeenCalledWith('');
     });
 
     it('should call onSelectMock', () => {
@@ -149,8 +149,8 @@ describe('<AutoComplete />', () => {
       fireEvent.click(getByRole('option'));
 
       expect(onSelectMock).toHaveBeenCalledWith('New York');
+      expect(onChangeMock).toHaveBeenCalledWith('New York');
       expect(onCleanMock).not.toHaveBeenCalled();
-      expect(onChangeMock).toHaveBeenCalled();
     });
   });
 });
