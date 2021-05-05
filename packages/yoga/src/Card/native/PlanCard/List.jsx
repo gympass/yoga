@@ -67,7 +67,7 @@ const ListItem = withTheme(
         </TouchableWithoutFeedback>
       )}
     </Item>
-  )
+  ),
 );
 
 List.displayName = 'PlanCard.List';
