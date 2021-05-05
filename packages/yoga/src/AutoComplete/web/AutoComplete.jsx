@@ -160,10 +160,7 @@ const AutoComplete = ({
       selectedItem={userValue}
       onStateChange={changes => {
         const { selectedItem, inputValue } = changes;
-        if (
-          Object.prototype.hasOwnProperty.call(changes, 'selectedItem') &&
-          selectedItem
-        ) {
+        if (selectedItem) {
           setUserValue(selectedItem);
           onSelect(selectedItem);
           onChange(selectedItem);
