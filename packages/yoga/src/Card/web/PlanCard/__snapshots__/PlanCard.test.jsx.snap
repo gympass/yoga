@@ -248,11 +248,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   margin-bottom: 16px;
 }
 
-.c12 svg {
-  vertical-align: middle;
-  margin-right: 12px;
-}
-
 .c13 {
   display: -webkit-box;
   display: -webkit-flex;

@@ -27,11 +27,6 @@ const IconWrapper = styled.div`
 
 const Item = styled.li`
   margin-bottom: ${plan.list.item.margin.bottom}px;
-
-  svg {
-    vertical-align: middle;
-    margin-right: ${plan.list.item.icon.margin.right}px;
-  }
 `;
 
 const Wrapper = styled.div`
