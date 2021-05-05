@@ -83,6 +83,8 @@ describe('<AutoComplete />', () => {
   describe('Event listeners', () => {
     it('should call onChangeMock', () => {
       const onChangeMock = jest.fn();
+      const onCleanMock = jest.fn();
+      const onSelectMock = jest.fn();
 
       const { getByDisplayValue } = render(
         <ThemeProvider>
@@ -97,10 +99,14 @@ describe('<AutoComplete />', () => {
       fireEvent.change(getByDisplayValue('New'), { target: { value: 'a' } });
 
       expect(onChangeMock).toHaveBeenCalled();
+      expect(onSelectMock).not.toHaveBeenCalled();
+      expect(onCleanMock).not.toHaveBeenCalled();
     });
 
     it('should call onCleanMock', () => {
       const onCleanMock = jest.fn();
+      const onSelectMock = jest.fn();
+      const onChangeMock = jest.fn();
 
       const { getByDisplayValue, getByRole } = render(
         <ThemeProvider>
@@ -108,6 +114,8 @@ describe('<AutoComplete />', () => {
             value="New"
             options={['New York']}
             onClean={onCleanMock}
+            onSelect={onSelectMock}
+            onChange={onChangeMock}
           />
         </ThemeProvider>,
       );
@@ -116,6 +124,33 @@ describe('<AutoComplete />', () => {
       fireEvent.click(getByRole('button'));
 
       expect(onCleanMock).toHaveBeenCalledWith('');
+      expect(onSelectMock).not.toHaveBeenCalled();
+      expect(onChangeMock).toHaveBeenCalled();
+    });
+
+    it('should call onSelectMock', () => {
+      const onSelectMock = jest.fn();
+      const onCleanMock = jest.fn();
+      const onChangeMock = jest.fn();
+
+      const { getByDisplayValue, getByRole } = render(
+        <ThemeProvider>
+          <AutoComplete
+            value="New"
+            options={['New York']}
+            onSelect={onSelectMock}
+            onClean={onCleanMock}
+            onChange={onChangeMock}
+          />
+        </ThemeProvider>,
+      );
+
+      fireEvent.focus(getByDisplayValue('New'));
+      fireEvent.click(getByRole('option'));
+
+      expect(onSelectMock).toHaveBeenCalledWith('New York');
+      expect(onCleanMock).not.toHaveBeenCalled();
+      expect(onChangeMock).toHaveBeenCalled();
     });
   });
 });
