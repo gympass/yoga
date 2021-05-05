@@ -159,14 +159,19 @@ const AutoComplete = ({
     <Downshift
       selectedItem={userValue}
       onStateChange={changes => {
-        if (Object.prototype.hasOwnProperty.call(changes, 'selectedItem')) {
-          setUserValue(changes.selectedItem);
-          onSelect(changes.selectedItem);
+        const { selectedItem, inputValue } = changes;
+        if (
+          Object.prototype.hasOwnProperty.call(changes, 'selectedItem') &&
+          selectedItem
+        ) {
+          setUserValue(selectedItem);
+          onSelect(selectedItem);
+          onChange(selectedItem);
         } else if (
           Object.prototype.hasOwnProperty.call(changes, 'inputValue')
         ) {
-          setUserValue(changes.inputValue);
-          onChange(changes.inputValue);
+          setUserValue(inputValue);
+          onChange(inputValue);
         }
       }}
     >
