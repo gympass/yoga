@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.1.0...@gympass/yoga@6.2.0) (2021-05-05)
+
+
+### Features
+
+* **plancard:** add logic to render icon ([b69ad4b](https://github.com/Gympass/yoga/commit/b69ad4bbc58d78783418525b707a02678ee7358c))
+
+
+
+
+
 # [6.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.0.3...@gympass/yoga@6.1.0) (2021-04-07)
 
 
