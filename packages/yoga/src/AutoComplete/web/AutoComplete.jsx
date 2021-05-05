@@ -260,8 +260,11 @@ AutoComplete.propTypes = {
   full: bool,
   options: arrayOf(string),
   style: shape({}),
+  /** callback to know when a user selects a suggestion */
   onSelect: func,
+  /** called when user type or clean the field and when selects a suggestion */
   onChange: func,
+  /** a callback to know when the user cleaned the field */
   onClean: func,
   value: string,
 };
