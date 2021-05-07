@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.2.0...@gympass/yoga@6.2.1) (2021-05-07)
+
+
+### Bug Fixes
+
+* **AutoComplete:** call onSelect only if selectedItem has value ([04ddf6b](https://github.com/Gympass/yoga/commit/04ddf6bf0d77e87bbb850ff76c43d02e0e4b8d17))
+
+
+
+
+
 # [6.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.1.0...@gympass/yoga@6.2.0) (2021-05-05)
 
 
