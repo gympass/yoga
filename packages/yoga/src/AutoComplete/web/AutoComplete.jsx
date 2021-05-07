@@ -159,14 +159,16 @@ const AutoComplete = ({
     <Downshift
       selectedItem={userValue}
       onStateChange={changes => {
-        if (Object.prototype.hasOwnProperty.call(changes, 'selectedItem')) {
-          setUserValue(changes.selectedItem);
-          onSelect(changes.selectedItem);
+        const { selectedItem, inputValue } = changes;
+        if (selectedItem) {
+          setUserValue(selectedItem);
+          onSelect(selectedItem);
+          onChange(selectedItem);
         } else if (
           Object.prototype.hasOwnProperty.call(changes, 'inputValue')
         ) {
-          setUserValue(changes.inputValue);
-          onChange(changes.inputValue);
+          setUserValue(inputValue);
+          onChange(inputValue);
         }
       }}
     >
@@ -255,8 +257,11 @@ AutoComplete.propTypes = {
   full: bool,
   options: arrayOf(string),
   style: shape({}),
+  /** callback to know when a user selects a suggestion */
   onSelect: func,
+  /** called when user type or clean the field and when selects a suggestion */
   onChange: func,
+  /** a callback to know when the user cleaned the field */
   onClean: func,
   value: string,
 };

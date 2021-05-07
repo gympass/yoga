@@ -13,9 +13,7 @@ import { Link } from 'gatsby';
 It accepts unlimited number of suggstions, but it filters and only display the six
 most matched options.
 
-You can use `onSelect` prop to handle when user select a suggested option.
-
-It inherit all the <Link to="/components/input/default">Input</Link> props.
+It inherit all the [Input](/components/input/default) props.
 
 ## Usage
 
@@ -27,8 +25,8 @@ render(() => {
     <AutoComplete
       value={value}
       onChange={value => setValue(value)}
-      onSelect={selected => setValue(selected)}
-      onClean={cleaned => setValue(cleaned)}
+      onSelect={selected => console.log(selected)}
+      onClean={cleaned => console.log('cleaned', cleaned)}
       options={[
         'Madrid',
         'Milan',
