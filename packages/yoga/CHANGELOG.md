@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.2.1...@gympass/yoga@6.2.2) (2021-05-07)
+
+
+### Bug Fixes
+
+* **plancard:** duplicated margin right on icon ([206254b](https://github.com/Gympass/yoga/commit/206254b82a3e746ac1aabf77993444c9a0c090a9))
+
+
+
+
+
 ## [6.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.2.0...@gympass/yoga@6.2.1) (2021-05-07)
 
 
