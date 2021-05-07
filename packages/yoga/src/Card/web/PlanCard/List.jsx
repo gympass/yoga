@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { isValidElement } from 'react';
 import styled, { css, withTheme } from 'styled-components';
 import { string, node, shape, oneOfType, func } from 'prop-types';
 
@@ -27,11 +27,6 @@ const IconWrapper = styled.div`
 
 const Item = styled.li`
   margin-bottom: ${plan.list.item.margin.bottom}px;
-
-  svg {
-    vertical-align: middle;
-    margin-right: ${plan.list.item.icon.margin.right}px;
-  }
 `;
 
 const Wrapper = styled.div`
@@ -79,32 +74,27 @@ const Button = styled.button`
 `;
 
 const ListItem = withTheme(
-  ({ text, icon: Icon, buttonProps, theme: yogaTheme }) => {
-    const isReactElement = typeof Icon === 'object';
-    return (
-      <Item>
-        <Wrapper>
-          {Icon && (
-            <IconWrapper>
-              {isReactElement ? (
-                Icon
-              ) : (
-                <Icon
-                  width={16}
-                  height={16}
-                  fill={yogaTheme.yoga.colors.elements.selectionAndIcons}
-                />
-              )}
-            </IconWrapper>
-          )}
-          <ItemText as="span">{text}</ItemText>
-        </Wrapper>
-        {Boolean(Object.keys(buttonProps).length) && (
-          <Button {...buttonProps} />
+  ({ text, icon: Icon, buttonProps, theme: yogaTheme }) => (
+    <Item>
+      <Wrapper>
+        {Icon && (
+          <IconWrapper>
+            {isValidElement(Icon) ? (
+              Icon
+            ) : (
+              <Icon
+                width={16}
+                height={16}
+                fill={yogaTheme.yoga.colors.elements.selectionAndIcons}
+              />
+            )}
+          </IconWrapper>
         )}
-      </Item>
-    );
-  },
+        <ItemText as="span">{text}</ItemText>
+      </Wrapper>
+      {Boolean(Object.keys(buttonProps).length) && <Button {...buttonProps} />}
+    </Item>
+  ),
 );
 
 List.displayName = 'PlanCard.List';
