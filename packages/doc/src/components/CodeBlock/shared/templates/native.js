@@ -1,6 +1,6 @@
 import { injectImport } from '..';
 
-const native = (imports, code, theme) => `import React from 'react';
+const native = (imports, code) => `import React from 'react';
 import styled from 'styled-components';
 ${injectImport(
   imports,
@@ -9,7 +9,7 @@ ${injectImport(
 )}
 
 const App = () => (
-  <ThemeProvider ${theme ? `theme='${theme}'` : ''}>
+  <ThemeProvider>
     <View style={styles.container}>
       ${code}
     </View>

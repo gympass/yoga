@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { arrayOf, object, shape, bool } from 'prop-types';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
-import { ThemeProvider, yogaTheme } from '@gympass/yoga';
+import { ThemeProvider } from '@gympass/yoga';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Link } from 'gatsby';
 
@@ -162,7 +162,7 @@ const Layout = ({
             items={nav}
             prefix={prefix}
           />
-          <Documentation mdx={body} prefix={prefix} theme={yogaTheme} />
+          <Documentation mdx={body} prefix={prefix} />
 
           <Footer>
             Made with{' '}

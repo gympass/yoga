@@ -28,7 +28,7 @@ import {
   Ul,
 } from '../MDXElements/MDXElements';
 
-const customComponents = (prefix, theme) => ({
+const customComponents = prefix => ({
   h1: props => <ComponentTitle {...props} prefix={prefix} />,
   h2: props => <SubHeading2 {...props} />,
   h3: props => <SubHeading3 {...props} />,
@@ -36,7 +36,7 @@ const customComponents = (prefix, theme) => ({
   p: props => <Paragraph {...props} />,
   ul: props => <Ul {...props} />,
   pre: 'div',
-  code: props => <CodeBlock theme={theme} {...props} />,
+  code: props => <CodeBlock {...props} />,
   inlineCode: InlineCode,
   TabbedView: props => <TabbedView {...props} />,
   Tab: props => <Tab {...props} />,
@@ -63,10 +63,10 @@ const Wrapper = styled.div`
   }
 `;
 
-const Documentation = ({ mdx, prefix, theme }) => (
+const Documentation = ({ mdx, prefix }) => (
   <Wrapper>
     <div style={{ width: '100%' }}>
-      <MDXProvider components={customComponents(prefix, theme)}>
+      <MDXProvider components={customComponents(prefix)}>
         <MDXRenderer>{mdx}</MDXRenderer>
       </MDXProvider>
     </div>

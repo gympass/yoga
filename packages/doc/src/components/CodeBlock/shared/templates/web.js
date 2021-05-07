@@ -1,6 +1,6 @@
 import { injectImport, getCodeFragments } from '..';
 
-const web = (imports, code, theme) => {
+const web = (imports, code) => {
   const isState = code.search('render') !== -1;
 
   const buildCode = component => `import React, { useState, useEffect } from 'react';
@@ -28,7 +28,7 @@ const App = () => {
   ${codeBetweenRenderAndReturn.trim()}
 
   return (
-    <ThemeProvider${theme ? `theme='${theme}'` : ''}>
+    <ThemeProvider>
       <FontLoader />
       ${componentCode}
     </ThemeProvider>
@@ -37,7 +37,7 @@ const App = () => {
   }
 
   return buildCode(`const App = () => (
-  <ThemeProvider${theme ? `theme='${theme}'` : ''}>
+  <ThemeProvider>
     <FontLoader />
     ${code}
   </ThemeProvider>

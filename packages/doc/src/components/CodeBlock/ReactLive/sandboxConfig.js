@@ -3,7 +3,7 @@ import { web } from '../shared/templates';
 const HTML = '<div id="root"></div>';
 const URL = 'https://codesandbox.io/api/v1/sandboxes/define?json=1';
 
-const getPackage = ([imports, component, theme]) =>
+const getPackage = ([imports, component]) =>
   JSON.stringify({
     files: {
       'package.json': {
@@ -17,7 +17,7 @@ const getPackage = ([imports, component, theme]) =>
         },
       },
       'index.js': {
-        content: web(imports, component, theme),
+        content: web(imports, component),
       },
       'index.html': {
         content: HTML,
