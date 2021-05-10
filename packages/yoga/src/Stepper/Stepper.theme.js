@@ -1,3 +1,6 @@
+/**
+ * @param {import('../Theme/theme/theme').Theme}
+ */
 const Stepper = ({ colors, spacing, fontSizes, fontWeights, radii }) => ({
   padding: {
     left: spacing.xxlarge,

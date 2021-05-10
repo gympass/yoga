@@ -1,9 +1,5 @@
 /**
- *  @typedef {import('../Theme/theme/theme').Theme} Theme
- */
-
-/**
- * @param {Theme}
+ * @param {import('../Theme/theme/theme').Theme}
  */
 const Tag = ({ spacing, fontSizes, fontWeights, radii }) => ({
   icon: {

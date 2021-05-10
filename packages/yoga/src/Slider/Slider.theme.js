@@ -1,3 +1,6 @@
+/**
+ * @param {import('../Theme/theme/theme').Theme}
+ */
 const Slider = ({
   colors,
   radii,

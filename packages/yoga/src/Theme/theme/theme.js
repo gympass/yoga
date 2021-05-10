@@ -47,10 +47,10 @@ import * as componentThemes from '../../**/*.theme.js';
 
 /**
  * @typedef YogaTheme
- * 
- * @property {Font} baseFont 
- * @property {FontSize} baseFontSize 
- * @property {ThemeColors} colors 
+ *
+ * @property {Font} baseFont
+ * @property {FontSize} baseFontSize
+ * @property {ThemeColors} colors
  */
 
 /**

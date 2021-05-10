@@ -1,3 +1,6 @@
+/**
+ * @param {import('../Theme/theme/theme').Theme}
+ */
 const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
   h1: {
     fontsize: fontSizes.huge,
