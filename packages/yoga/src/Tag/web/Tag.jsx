@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { oneOf, node } from 'prop-types';
+import { spacing } from './system';
 
 const StyledTag = styled.div`
   display: inline-flex;
@@ -40,6 +41,8 @@ const StyledTag = styled.div`
     line-height: ${tag.font.lineHeight}px;
     font-weight: ${tag.font.weight};
   `}
+
+  ${spacing}
 `;
 
 /** Tags should be keywords to categorize or organize an item. */
