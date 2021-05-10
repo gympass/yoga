@@ -121,23 +121,23 @@ const white = '#FFFFFF';
 /**
  * @typedef {Object} Colors
  *
- * @property {Color} vibin      - #D8385E
- * @property {Color} hope       - #1D856C
- * @property {Color} energy     - #FFC24C
- * @property {Color} relax      - #7068D4
- * @property {Color} peace      - #FFB0A7
- * @property {Color} verve      - #FF874C
- * @property {Color} uplift     - #FF4438
- * @property {Color} deepPurple - #710252
- * @property {Color} success    - #C1EEDB
- * @property {Color} neutral    - #E0DFFF
- * @property {Color} attention  - #FCD6C3
- * @property {Color} stamina    - #231B22
- * @property {Color} deep       - #6B6B78
- * @property {Color} medium     - #9898A6
- * @property {Color} light      - #D7D7E0
- * @property {Color} clear      - #F5F5FA
- * @property {Color} white      - #FFFFFF
+ * @property {Color} vibin      - ![](https://plchldr.co/i/30x12?text=%20&bg=D8385E) #D8385E
+ * @property {Color} hope       - ![](https://plchldr.co/i/30x12?text=%20&bg=1D856C) #1D856C
+ * @property {Color} energy     - ![](https://plchldr.co/i/30x12?text=%20&bg=FFC24C) #FFC24C
+ * @property {Color} relax      - ![](https://plchldr.co/i/30x12?text=%20&bg=7068D4) #7068D4
+ * @property {Color} peace      - ![](https://plchldr.co/i/30x12?text=%20&bg=FFB0A7) #FFB0A7
+ * @property {Color} verve      - ![](https://plchldr.co/i/30x12?text=%20&bg=FF874C) #FF874C
+ * @property {Color} uplift     - ![](https://plchldr.co/i/30x12?text=%20&bg=FF4438) #FF4438
+ * @property {Color} deepPurple - ![](https://plchldr.co/i/30x12?text=%20&bg=710252) #710252
+ * @property {Color} success    - ![](https://plchldr.co/i/30x12?text=%20&bg=C1EEDB) #C1EEDB
+ * @property {Color} neutral    - ![](https://plchldr.co/i/30x12?text=%20&bg=E0DFFF) #E0DFFF
+ * @property {Color} attention  - ![](https://plchldr.co/i/30x12?text=%20&bg=FCD6C3) #FCD6C3
+ * @property {Color} stamina    - ![](https://plchldr.co/i/30x12?text=%20&bg=231B22) #231B22
+ * @property {Color} deep       - ![](https://plchldr.co/i/30x12?text=%20&bg=6B6B78) #6B6B78
+ * @property {Color} medium     - ![](https://plchldr.co/i/30x12?text=%20&bg=9898A6) #9898A6
+ * @property {Color} light      - ![](https://plchldr.co/i/30x12?text=%20&bg=D7D7E0) #D7D7E0
+ * @property {Color} clear      - ![](https://plchldr.co/i/30x12?text=%20&bg=F5F5FA) #F5F5FA
+ * @property {Color} white      - ![](https://plchldr.co/i/30x12?text=%20&bg=FFFFFF) #FFFFFF
  */
 
 /**
