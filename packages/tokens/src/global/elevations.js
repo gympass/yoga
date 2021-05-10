@@ -13,10 +13,10 @@ import colors from './colors';
  * @typedef Elevation
  *
  * @type {Object}
- * @property {String} zero
- * @property {String} small
- * @property {String} medium
- * @property {String} large
+ * @property {String} zero - none
+ * @property {String} small - 0 2px 6px rgba(152, 152, 166, 0.25)
+ * @property {String} medium - 0 4px 12px rgba(152, 152, 166, 0.25)
+ * @property {String} large - 0 8px 20px rgba(152, 152, 166, 0.25)
  */
 
 /**
