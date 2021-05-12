@@ -3,8 +3,16 @@ import { theme as themeReader } from '@gympass/yoga';
 
 const getFromTheme = props => spec => themeReader(props)[spec];
 const getSpacing = props => getFromTheme(props)('spacing');
+const getBorder = props => getFromTheme(props)('borders');
+const getColor = props => getFromTheme(props)('colors');
 
-const generator = ({ props, prop, cssProperty, getter, transform }) => {
+const generator = ({
+  props,
+  prop,
+  cssProperty,
+  getter,
+  transform = value => value,
+}) => {
   const spacing = getter(props);
 
   if (Array.isArray(prop)) {
@@ -36,4 +44,4 @@ const compose = (...functions) => args =>
     .flat()
     .filter(Boolean);
 
-export { getFromTheme, getSpacing, generator, compose };
+export { getFromTheme, getSpacing, getBorder, getColor, generator, compose };
