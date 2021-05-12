@@ -34,7 +34,7 @@ const Slider = ({
   },
   tooltip: {
     shadow: elevations.small,
-    radius: radii.rounded,
+    radius: radii.small,
     backgroundColor: colors.elements.backgroundAndDisabled,
     distance: spacing.large,
     padding: {
@@ -54,7 +54,7 @@ const Slider = ({
     },
     ribbon: {
       backgroundColor: colors.secondary,
-      radius: radii.rounded,
+      radius: radii.small,
       padding: {
         top: spacing.xxxsmall,
         right: spacing.xxsmall,

@@ -5,7 +5,7 @@ const Checkbox = ({ spacing, colors, borders, radii, fontSizes }) => ({
   },
   border: {
     width: borders.medium,
-    radius: radii.semiRounded,
+    radius: radii.xsmall,
   },
   label: {
     padding: {
