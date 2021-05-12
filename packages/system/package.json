@@ -1,0 +1,23 @@
+{
+  "name": "@gympass/yoga-system",
+  "version": "0.0.1",
+  "description": "A package to help make UI components, libraries, and tools as interoperable as possible.",
+  "keywords": [
+    "design-system",
+    "react",
+    "gympass"
+  ],
+  "homepage": "https://gympass.github.io/yoga/",
+  "license": "MIT",
+  "main": "src",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gympass/yoga.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Gympass/yoga/issues"
+  }
+}
