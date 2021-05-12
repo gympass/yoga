@@ -4,6 +4,7 @@ import { theme as themeReader } from '@gympass/yoga';
 const getFromTheme = props => spec => themeReader(props)[spec];
 const getSpacing = props => getFromTheme(props)('spacing');
 const getBorder = props => getFromTheme(props)('borders');
+const getBorderRadius = props => getFromTheme(props)('radii');
 const getColor = props => getFromTheme(props)('colors');
 
 const generator = ({
@@ -44,4 +45,12 @@ const compose = (...functions) => args =>
     .flat()
     .filter(Boolean);
 
-export { getFromTheme, getSpacing, getBorder, getColor, generator, compose };
+export {
+  getFromTheme,
+  getSpacing,
+  getBorder,
+  getColor,
+  getBorderRadius,
+  generator,
+  compose,
+};
