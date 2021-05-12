@@ -1,7 +1,16 @@
 import { css } from 'styled-components';
 import { theme as themeReader } from '@gympass/yoga';
 
+function resolve(obj, path) {
+  try {
+    return path.split('.').reduce((prev, curr) => prev && prev[curr], obj);
+  } catch {
+    return undefined;
+  }
+}
+
 const getFromTheme = props => spec => themeReader(props)[spec];
+
 const getSpacing = props => getFromTheme(props)('spacing');
 const getBorder = props => getFromTheme(props)('borders');
 const getBorderRadius = props => getFromTheme(props)('radii');
@@ -14,7 +23,7 @@ const generator = ({
   getter,
   transform = value => value,
 }) => {
-  const spacing = getter(props);
+  const themeProp = getter(props);
 
   if (Array.isArray(prop)) {
     const v = prop
@@ -25,8 +34,9 @@ const generator = ({
   }
 
   const p = props[prop];
+  const value = resolve(themeProp, p) || p;
 
-  const values = transform(spacing[p] || p);
+  const values = transform(value);
 
   if (Array.isArray(cssProperty)) {
     const computedCSS = cssProperty.reduce(
