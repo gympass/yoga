@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { oneOf, node } from 'prop-types';
-import { spacing } from './system';
+import { spacing } from '@gympass/yoga-system';
 
 const StyledTag = styled.div`
   display: inline-flex;
