@@ -4,7 +4,7 @@ const Progress = ({ spacing, colors, radii, fontSizes }) => ({
     bar: colors.elements.backgroundAndDisabled,
   },
   border: {
-    radius: radii.rounded,
+    radius: radii.small,
   },
   label: {
     font: {
