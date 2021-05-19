@@ -156,7 +156,7 @@ const Card = ({
       },
     },
     date: {
-      backgroundColor: colors.secondary,
+      backgroundColor: colors.primary,
       radius: radii.small,
       dayOfWeek: {
         fontWeight: fontWeights.regular,
