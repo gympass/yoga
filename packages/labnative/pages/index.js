@@ -15,6 +15,7 @@ import Dropdown from './Dropdown';
 import TextArea from './TextArea';
 import IconsList from './IconsList';
 import Icon from './Icon';
+import Chips from './Chips';
 
 export {
   Button,
@@ -34,4 +35,5 @@ export {
   TextArea,
   IconsList,
   Icon,
-};
+  Chips,
+ };
