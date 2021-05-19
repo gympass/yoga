@@ -18,6 +18,7 @@ const getColor = props => getFromTheme(props)('colors');
 const getFontSize = props => getFromTheme(props)('fontSize');
 const getFontWeight = props => getFromTheme(props)('fontWeights');
 const getLineHeight = props => getFromTheme(props)('lineHeights');
+const getElevation = props => getFromTheme(props)('elevations');
 
 const generator = ({
   props,
@@ -68,6 +69,7 @@ export {
   getFontSize,
   getFontWeight,
   getLineHeight,
+  getElevation,
   generator,
   compose,
 };
