@@ -16,10 +16,12 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
     <View
       checked={false}
       disabled={false}
+      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
             "borderColor": "#9898A6",
             "borderRadius": 9999,
             "borderStyle": "solid",
@@ -51,10 +53,12 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
     <View
       checked={false}
       disabled={false}
+      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
             "borderColor": "#9898A6",
             "borderRadius": 9999,
             "borderStyle": "solid",
@@ -86,10 +90,12 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
     <View
       checked={false}
       disabled={false}
+      pressed={true}
       style={
         Array [
           Object {
             "alignItems": "center",
+            "backgroundColor": "rgba(245, 245, 250, 0.75)",
             "borderColor": "#9898A6",
             "borderRadius": 9999,
             "borderStyle": "solid",
@@ -103,10 +109,11 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
       testID="radio"
     >
       <View
+        checked={false}
         style={
           Array [
             Object {
-              "borderColor": "#D8385E",
+              "borderColor": "rgba(245, 245, 250, 0.75)",
               "borderRadius": 9999,
               "borderStyle": "solid",
               "borderWidth": 8,
@@ -139,10 +146,12 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
     <View
       checked={false}
       disabled={true}
+      pressed={false}
       style={
         Array [
           Object {
             "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
             "borderColor": "#F5F5FA",
             "borderRadius": 9999,
             "borderStyle": "solid",
