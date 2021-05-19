@@ -85,12 +85,13 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
               full={false}
               inverted={false}
               pressed={false}
+              secondary={false}
               small={false}
               style={
                 Array [
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "#231B22",
+                    "backgroundColor": "#D8385E",
                     "borderRadius": 9999,
                     "flexDirection": "row",
                     "height": 48,

@@ -106,7 +106,7 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
         style={
           Array [
             Object {
-              "borderColor": "#231B22",
+              "borderColor": "#D8385E",
               "borderRadius": 9999,
               "borderStyle": "solid",
               "borderWidth": 8,
