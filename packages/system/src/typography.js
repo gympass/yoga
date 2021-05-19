@@ -1,5 +1,11 @@
 import { toPx } from './unit';
-import { getFontSize, getFontWeight, getColor, generator } from './theme';
+import {
+  getFontSize,
+  getFontWeight,
+  getColor,
+  getLineHeight,
+  generator,
+} from './theme';
 
 const color = props =>
   generator({
@@ -27,4 +33,13 @@ const fontWeight = props =>
     transform: value => value && value.toString(),
   });
 
-export { fontSize, fontWeight, color };
+const lineHeight = props =>
+  generator({
+    props,
+    prop: ['lineHeight', 'lh'],
+    cssProperty: 'line-height',
+    getter: getLineHeight,
+    transform: toPx,
+  });
+
+export { fontSize, fontWeight, color, lineHeight };
