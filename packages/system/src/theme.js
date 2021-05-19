@@ -16,6 +16,7 @@ const getBorder = props => getFromTheme(props)('borders');
 const getBorderRadius = props => getFromTheme(props)('radii');
 const getColor = props => getFromTheme(props)('colors');
 const getFontSize = props => getFromTheme(props)('fontSize');
+const getFontWeight = props => getFromTheme(props)('fontWeights');
 
 const generator = ({
   props,
@@ -47,6 +48,7 @@ const generator = ({
 
     return css(computedCSS);
   }
+
   return css({ [cssProperty]: values });
 };
 
@@ -63,6 +65,7 @@ export {
   getColor,
   getBorderRadius,
   getFontSize,
+  getFontWeight,
   generator,
   compose,
 };

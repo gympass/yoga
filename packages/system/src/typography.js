@@ -1,5 +1,5 @@
 import { toPx } from './unit';
-import { getFontSize, generator } from './theme';
+import { getFontSize, getFontWeight, generator } from './theme';
 
 const fontSize = props =>
   generator({
@@ -10,4 +10,13 @@ const fontSize = props =>
     transform: toPx,
   });
 
-export { fontSize };
+const fontWeight = props =>
+  generator({
+    props,
+    prop: ['fontWeight', 'fw'],
+    cssProperty: 'font-weight',
+    getter: getFontWeight,
+    transform: value => value && value.toString(),
+  });
+
+export { fontSize, fontWeight };
