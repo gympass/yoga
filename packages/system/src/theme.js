@@ -15,6 +15,7 @@ const getSpacing = props => getFromTheme(props)('spacing');
 const getBorder = props => getFromTheme(props)('borders');
 const getBorderRadius = props => getFromTheme(props)('radii');
 const getColor = props => getFromTheme(props)('colors');
+const getFontSize = props => getFromTheme(props)('fontSize');
 
 const generator = ({
   props,
@@ -61,6 +62,7 @@ export {
   getBorder,
   getColor,
   getBorderRadius,
+  getFontSize,
   generator,
   compose,
 };
