@@ -1,13 +1,5 @@
 import { getColor, generator } from './theme';
 
-const color = props =>
-  generator({
-    props,
-    prop: ['color', 'c'],
-    cssProperty: 'color',
-    getter: getColor,
-  });
-
 const backgroundColor = props =>
   generator({
     props,
@@ -16,4 +8,4 @@ const backgroundColor = props =>
     getter: getColor,
   });
 
-export { color, backgroundColor };
+export { backgroundColor };
