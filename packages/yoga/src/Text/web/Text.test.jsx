@@ -69,5 +69,18 @@ describe('<Text />', () => {
       );
       expect(container).toMatchSnapshot();
     });
+
+    it('should match snapshot with truncated lines Text', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text numberOfLines={1}>
+            Live the mission
+            <br />
+            even in one line
+          </Text>
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
   });
 });
