@@ -16,6 +16,7 @@ import Dropdown from './Dropdown';
 import TextArea from './TextArea';
 import AutoComplete from './AutoComplete';
 import Icon from './Icon';
+import Chips from './Chips';
 
 export {
   ThemeProvider,
@@ -44,4 +45,5 @@ export {
   TextArea,
   AutoComplete,
   Icon,
+  Chips,
 };

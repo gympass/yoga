@@ -1,0 +1,29 @@
+### Reference
+
+Gympass `<Chips />` description
+
+### Usage
+
+```javascript state
+render(() => {
+  const [first, toggleFirst] = useState(false);
+  const [second, toggleSecond] = useState(false);
+  const onToggleFirst = () => toggleFirst(!first);
+  const onToggleSecond = () => toggleSecond(!second);
+
+  return (
+    <>
+      <Chips selected={first} onToggle={onToggleFirst}>
+        Label
+      </Chips>
+      <Chips selected={second} onToggle={onToggleSecond}>
+        Label
+      </Chips>
+    </>
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Chips" platform="web" />
