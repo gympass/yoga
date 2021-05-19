@@ -18,7 +18,7 @@ const Slider = ({
   step: {
     backgroundColor: {
       active: colors.primary,
-      inactive: colors.elements.backgroundAndDisabled,
+      inactive: colors.elements.lineAndBorders,
     },
     border: {
       radius: radii.circle,
@@ -53,7 +53,7 @@ const Slider = ({
       },
     },
     ribbon: {
-      backgroundColor: colors.secondary,
+      backgroundColor: colors.primary,
       radius: radii.small,
       padding: {
         top: spacing.xxxsmall,
