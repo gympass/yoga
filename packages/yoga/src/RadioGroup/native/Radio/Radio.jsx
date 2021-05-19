@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
+import styled from 'styled-components';
 import { string, oneOfType, number, bool } from 'prop-types';
 import { TouchableWithoutFeedback } from 'react-native';
-import styled from 'styled-components';
+import { hexToRgb } from '@gympass/yoga-common';
 
 import RadioGroupContext from '../../RadioGroupContext';
 
@@ -9,17 +10,23 @@ const RadioMark = styled.View(
   ({
     theme: {
       yoga: {
+        colors: { white },
         components: { radiogroup },
       },
     },
     checked,
     disabled,
+    pressed,
   }) => `
   justify-content: center;
   align-items: center;
   
   height: ${radiogroup.radio.size}px;
   width: ${radiogroup.radio.size}px;
+
+  background-color: ${
+    pressed ? hexToRgb(radiogroup.hover.backgroundColor, 0.75) : white
+  };
 
   border-width: ${radiogroup.radio.size * 0.1}px;
   border-style: solid;
@@ -30,6 +37,11 @@ const RadioMark = styled.View(
     checked
       ? `
           border-color: ${radiogroup.checked.backgroundColor};
+          background-color: ${
+            pressed
+              ? hexToRgb(radiogroup.checked.hover.backgroundColor, 0.75)
+              : white
+          }
         `
       : ``
   }
@@ -80,6 +92,7 @@ const Dot = styled.View(
 
 const Shadow = styled.View(
   ({
+    checked,
     theme: {
       yoga: {
         components: { radiogroup },
@@ -92,7 +105,11 @@ const Shadow = styled.View(
 
   border-width: ${radiogroup.radio.size * 0.4}px;
   border-style: solid;
-  border-color: ${radiogroup.checked.hover.backgroundColor};
+  border-color: ${
+    checked
+      ? hexToRgb(radiogroup.checked.hover.backgroundColor, 0.75)
+      : hexToRgb(radiogroup.hover.backgroundColor, 0.75)
+  };
   border-radius: ${radiogroup.radio.border.radius}px;
 
   opacity: 0.75;
@@ -125,9 +142,14 @@ const RadioGroupRadio = ({ value, disabled, ...rest }) => {
       disabled={disabled}
       {...context}
     >
-      <RadioMark checked={checked} disabled={disabled} {...rest}>
+      <RadioMark
+        checked={checked}
+        disabled={disabled}
+        pressed={pressing}
+        {...rest}
+      >
         {checked && <Dot checked={checked} disabled={disabled} />}
-        {pressing && <Shadow />}
+        {pressing && <Shadow checked={checked} />}
       </RadioMark>
     </TouchableWithoutFeedback>
   );

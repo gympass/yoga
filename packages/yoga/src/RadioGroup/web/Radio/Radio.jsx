@@ -53,9 +53,13 @@ const Wrapper = styled.div`
     },
   }) => {
     const stateColors = {
-      hover: hexToRgb(radiogroup.hover.backgroundColor, 0.25),
+      hover: checked
+        ? hexToRgb(radiogroup.checked.backgroundColor, 0.25)
+        : hexToRgb(radiogroup.hover.backgroundColor, 0.25),
       focusWithin: hexToRgb(radiogroup.checked.hover.backgroundColor, 0.5),
-      active: hexToRgb(radiogroup.checked.hover.backgroundColor, 0.75),
+      active: checked
+        ? hexToRgb(radiogroup.checked.hover.backgroundColor, 0.75)
+        : hexToRgb(radiogroup.hover.backgroundColor, 0.75),
     };
 
     return `
@@ -69,6 +73,16 @@ const Wrapper = styled.div`
       ${Radio} {
         z-index: 1;
         box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px ${stateColors.hover};
+        background-color: ${hexToRgb(radiogroup.hover.backgroundColor, 0.25)};
+      }
+    }
+
+    &:active {
+      ${Radio} {
+        box-shadow: 0 0 0 ${radiogroup.radio.size * 0.4}px ${
+      stateColors.active
+    };
+        background-color: ${hexToRgb(radiogroup.hover.backgroundColor, 0.75)};
       }
     }
 
