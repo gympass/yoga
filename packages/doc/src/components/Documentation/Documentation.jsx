@@ -3,9 +3,11 @@ import { string, bool } from 'prop-types';
 import styled from 'styled-components';
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer';
 import { MDXProvider } from '@mdx-js/react';
+
 import * as components from '@gympass/yoga';
 import * as icons from '@gympass/yoga-icons';
 import * as helpers from '@gympass/yoga-helpers';
+import * as system from '@gympass/yoga-system';
 
 import {
   CodeBlock,
@@ -49,6 +51,7 @@ const customComponents = prefix => ({
   ...components,
   ...icons,
   ...helpers,
+  ...system,
 });
 
 const Wrapper = styled.div`
