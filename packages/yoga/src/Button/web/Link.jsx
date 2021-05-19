@@ -54,10 +54,12 @@ const ButtonLink = props => <Link {...props} />;
 
 ButtonLink.propTypes = {
   disabled: bool,
+  secondary: bool,
 };
 
 ButtonLink.defaultProps = {
   disabled: false,
+  secondary: false,
 };
 
 ButtonLink.displayName = 'Button.Link';

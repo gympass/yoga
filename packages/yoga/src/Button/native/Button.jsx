@@ -29,52 +29,59 @@ const ButtonContainer = styled.View`
     full,
     small,
     inverted,
+    secondary,
     theme: {
       yoga: {
         components: { button },
       },
     },
-  }) => `
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  }) => {
+    const state = secondary ? 'secondary' : 'primary';
 
-    background-color: ${button.types.contained.backgroundColor.default};
-    border-radius: ${button.border.radius}px;
-    height: ${small ? button.height.small : button.height.default};
-    justify-content: center;
-    padding-left: ${
-      small ? button.padding.small.left : button.padding.default.left
-    }px;
-    padding-right: ${
-      small ? button.padding.small.right : button.padding.default.right
-    }px;
-    ${full ? 'width: 100%;' : ''}
+    return `
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
 
-    ${
-      !disabled && pressed
-        ? `
-      background-color: ${button.types.contained.backgroundColor.pressed};
-    `
-        : ''
-    }
+      background-color: ${
+        button.types.contained.backgroundColor[state].default
+      };
+      border-radius: ${button.border.radius}px;
+      height: ${small ? button.height.small : button.height.default};
+      justify-content: center;
+      padding-left: ${
+        small ? button.padding.small.left : button.padding.default.left
+      }px;
+      padding-right: ${
+        small ? button.padding.small.right : button.padding.default.right
+      }px;
+      ${full ? 'width: 100%;' : ''}
 
-    ${
-      disabled
-        ? `
-      background-color: ${button.types.contained.backgroundColor.disabled};
-    `
-        : ''
-    }
-
-    ${
-      inverted && !disabled
-        ? `
-        background-color: ${button.types.contained.font.default.color};
+      ${
+        !disabled && pressed
+          ? `
+        background-color: ${button.types.contained.backgroundColor[state].pressed};
       `
-        : ''
-    }
-  `}
+          : ''
+      }
+
+      ${
+        disabled
+          ? `
+        background-color: ${button.types.contained.backgroundColor.disabled};
+      `
+          : ''
+      }
+
+      ${
+        inverted && !disabled
+          ? `
+          background-color: ${button.types.contained.font.default.color};
+        `
+          : ''
+      }
+    `;
+  }}
 `;
 
 /** Buttons make common actions more obvious and help users more easily perform
@@ -87,6 +94,7 @@ const Button = ({
   small,
   pressed,
   inverted,
+  secondary,
   icon: Icon,
   theme: {
     yoga: {
@@ -95,14 +103,15 @@ const Button = ({
   },
   ...rest
 }) => {
+  const state = secondary ? 'secondary' : 'primary';
   let textColor = button.types.contained.font.default.color;
 
   if (disabled) {
     textColor = button.types.contained.font.disabled.color;
   } else if (inverted) {
-    textColor = button.types.contained.backgroundColor.default;
+    textColor = button.types.contained.backgroundColor[state].default;
     if (pressed) {
-      textColor = button.types.contained.backgroundColor.pressed;
+      textColor = button.types.contained.backgroundColor[state].pressed;
     }
   } else if (pressed) {
     textColor = button.types.contained.font.pressed.color;
@@ -116,6 +125,7 @@ const Button = ({
       disabled={disabled}
       small={small}
       inverted={inverted}
+      secondary={secondary}
     >
       {Icon && (
         <Icon
@@ -147,6 +157,7 @@ Button.propTypes = {
   small: bool,
   pressed: bool,
   inverted: bool,
+  secondary: bool,
   /** an Icon from yoga-icons package */
   icon: oneOfType([bool, func]),
 };
@@ -158,6 +169,7 @@ Button.defaultProps = {
   small: false,
   pressed: false,
   inverted: false,
+  secondary: false,
   icon: undefined,
 };
 
