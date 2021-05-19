@@ -5,6 +5,7 @@ import {
   getColor,
   getLineHeight,
   generator,
+  compose,
 } from './theme';
 
 const color = props =>
@@ -42,4 +43,11 @@ const lineHeight = props =>
     transform: toPx,
   });
 
-export { fontSize, fontWeight, color, lineHeight };
+const typography = compose(
+  color,
+  fontSize,
+  fontWeight,
+  lineHeight,
+);
+
+export { fontSize, fontWeight, color, lineHeight, typography };
