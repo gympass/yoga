@@ -37,7 +37,8 @@ const ButtonText = ({
   },
   ...rest
 }) => {
-  let textColor = colors[secondary ? 'secondary' : 'primary'];
+  const state = secondary ? 'secondary' : 'primary';
+  let textColor = colors[state];
 
   if (disabled) {
     textColor = colors.text.disabled;
@@ -47,7 +48,7 @@ const ButtonText = ({
       textColor = hexToRgb(colors.white, 0.75);
     }
   } else if (pressed) {
-    textColor = hexToRgb(colors[secondary ? 'secondary' : 'primary'], 0.75);
+    textColor = hexToRgb(colors[state], 0.75);
   }
 
   return (
