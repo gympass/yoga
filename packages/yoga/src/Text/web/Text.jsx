@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, bool } from 'prop-types';
-import textStyle from '../textStyle';
+import { oneOf, bool, number } from 'prop-types';
+import textStyle from '../textStyle.web';
 
 const styledText = (type, element = false) => (element
   ? styled[type]
@@ -61,6 +61,7 @@ Text.displayName = 'Text';
 
 Text.propTypes = {
   inverted: bool,
+  numberOfLines: number,
   /** style the text following the theme */
   variant: oneOf([
     'primary',
@@ -100,6 +101,7 @@ Text.defaultProps = {
   inverted: false,
   variant: undefined,
   size: 'medium',
+  numberOfLines: undefined,
   light: false,
 };
 
