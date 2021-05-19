@@ -26,7 +26,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
   cursor: pointer;
   width: 48px;
   height: 24px;
-  background-color: #231B22;
+  background-color: #D8385E;
   border-radius: 9999px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -73,15 +73,15 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
 }
 
 .c1:focus + .c3 {
-  box-shadow: 0 0 0 8px rgba(107,107,120,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c1:hover + .c3 {
-  box-shadow: 0 0 0 8px rgba(107,107,120,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c1:active + .c3 {
-  box-shadow: 0 0 0 8px rgba(107,107,120,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 <div>
@@ -217,7 +217,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
   cursor: pointer;
   width: 48px;
   height: 24px;
-  background-color: #231B22;
+  background-color: #D8385E;
   border-radius: 9999px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -244,15 +244,15 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 }
 
 .c1:focus + .c5 {
-  box-shadow: 0 0 0 8px rgba(107,107,120,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c1:hover + .c5 {
-  box-shadow: 0 0 0 8px rgba(107,107,120,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c1:active + .c5 {
-  box-shadow: 0 0 0 8px rgba(107,107,120,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c3 {

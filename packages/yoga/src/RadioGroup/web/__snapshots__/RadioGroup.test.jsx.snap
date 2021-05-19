@@ -79,8 +79,8 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   box-sizing: border-box;
   background-color: transparent;
   border-radius: 9999px;
-  background-color: #231B22;
-  box-shadow: 0 0 0 1px #231B22;
+  background-color: #D8385E;
+  box-shadow: 0 0 0 1px #D8385E;
   color: #FFFFFF;
   font-weight: 700;
   z-index: 1;
