@@ -7,8 +7,8 @@ const theme = tokens => {
 
   const colors = {
     ...tokens.colors,
-    primary: tokens.colors.stamina,
-    secondary: tokens.colors.vibin,
+    primary: tokens.colors.vibin,
+    secondary: tokens.colors.stamina,
     feedback: {
       success: [tokens.colors.success, tokens.colors.hope],
       informative: [tokens.colors.neutral, tokens.colors.relax],
