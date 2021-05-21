@@ -6,6 +6,7 @@
     "pretest": "lerna run prebuild --ignore=@gympass/yoga-doc",
     "test:native": "NODE_ENV=test jest --config=./jest/config/native.js",
     "test:helpers": "NODE_ENV=test jest --config=./jest/config/helpers.js",
+    "test:system": "NODE_ENV=test jest --config=./jest/config/system.js",
     "test:web": "NODE_ENV=test jest --config=./jest/config/web.js",
     "prettier": "prettier",
     "dev:web": "lerna run dev --scope=@gympass/yoga-doc --stream",
