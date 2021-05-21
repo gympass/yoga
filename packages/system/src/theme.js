@@ -1,15 +1,25 @@
 import { css } from 'styled-components';
-import { theme as themeReader } from '@gympass/yoga';
 
 function resolve(obj, path) {
   try {
-    return path.split('.').reduce((prev, curr) => prev && prev[curr], obj);
+    return path
+      .split('.')
+      .reduce((prev, curr) => prev && prev[curr], obj)
+      .toString();
   } catch {
     return undefined;
   }
 }
 
-const getFromTheme = props => spec => themeReader(props)[spec];
+const getFromTheme = props => spec => {
+  const {
+    theme: {
+      yoga: { [spec]: matchedSpec },
+    },
+  } = props;
+
+  return matchedSpec;
+};
 
 const getSpacing = props => getFromTheme(props)('spacing');
 const getBorder = props => getFromTheme(props)('borders');
@@ -38,6 +48,7 @@ const generator = ({
   }
 
   const p = props[prop];
+
   const value = resolve(themeProp, p) || p;
 
   const values = transform(value);
