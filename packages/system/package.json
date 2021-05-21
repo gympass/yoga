@@ -19,5 +19,11 @@
   },
   "bugs": {
     "url": "https://github.com/Gympass/yoga/issues"
+  },
+  "devDependencies": {
+    "styled-components": "^4.4.0"
+  },
+  "peerDependencies": {
+    "styled-components": "^4.4.0"
   }
 }
