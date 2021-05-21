@@ -7,8 +7,17 @@ import {
   compose,
 } from './theme';
 
-const transform = value =>
-  Number(value) && value !== 0 ? `${toPx(value)} solid` : value;
+const transform = value => {
+  if (Number(value) && value !== 0) {
+    return `${toPx(value)} solid`;
+  }
+
+  if (Number(value) === 0) {
+    return 'none';
+  }
+
+  return value;
+};
 
 const border = props =>
   generator({
@@ -90,7 +99,7 @@ const borderBottomColor = props =>
 const borderLeftColor = props =>
   generator({
     props,
-    prop: ['borderLeftColor', 'bfc'],
+    prop: ['borderLeftColor', 'blc'],
     cssProperty: 'borderLeftColor',
     getter: getColor,
   });
