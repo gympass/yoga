@@ -161,7 +161,7 @@ const borderRadius = props =>
 const borderTopLeftRadius = props =>
   generator({
     props,
-    prop: ['borderTopLeftRadius', 'btfr'],
+    prop: ['borderTopLeftRadius', 'btlr'],
     cssProperty: 'borderTopLeftRadius',
     getter: getBorderRadius,
     transform: toPx,
@@ -179,7 +179,7 @@ const borderTopRightRadius = props =>
 const borderBottomLeftRadius = props =>
   generator({
     props,
-    prop: ['borderBottomLeftRadius', 'bbfr'],
+    prop: ['borderBottomLeftRadius', 'bblr'],
     cssProperty: 'borderBottomLeftRadius',
     getter: getBorderRadius,
     transform: toPx,
