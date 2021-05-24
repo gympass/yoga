@@ -25,6 +25,9 @@ import {
 const borders = [0, 1, 2];
 [borders.zero, borders.small, borders.medium] = borders;
 
+const radii = [0, 4, 8, 9999];
+[radii.sharp, radii.semiRounded, radii.rounded, radii.circle] = radii;
+
 const colors = {
   vibin: '#D8385E',
   hope: '#1D856C',
@@ -34,6 +37,7 @@ const theme = {
   yoga: {
     borders,
     colors,
+    radii,
   },
 };
 
@@ -480,6 +484,182 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderLeftWidth: '30%' });
 
       const b = borderLeftWidth({ theme, borderLeftWidth: '30%' });
+      expect(b).toStrictEqual(expectedNoTheme);
+    });
+  });
+});
+
+describe('radius', () => {
+  describe('borderRadius', () => {
+    it('Should return values for border prop', () => {
+      const expectedSharpStyle = css({ borderRadius: radii.sharp });
+      const expectedRoundedStyle = css({ borderRadius: radii.rounded });
+
+      const sharp1 = borderRadius({ theme, br: 'sharp' });
+      const sharp2 = borderRadius({ theme, borderRadius: 'sharp' });
+      expect(sharp1).toStrictEqual(sharp2);
+
+      const rounded1 = borderRadius({ theme, br: 'rounded' });
+      const rounded2 = borderRadius({ theme, borderRadius: 'rounded' });
+      expect(rounded1).toStrictEqual(rounded2);
+
+      const sharpOptions = [sharp1, sharp2];
+      sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
+
+      const roundedOptions = [rounded1, rounded2];
+      roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({ borderRadius: '50%' });
+
+      const b = borderRadius({ theme, borderRadius: '50%' });
+      expect(b).toStrictEqual(expectedNoTheme);
+    });
+  });
+
+  describe('borderTopLeftRadius', () => {
+    it('Should return values for border prop', () => {
+      const expectedSharpStyle = css({ borderTopLeftRadius: radii.sharp });
+      const expectedRoundedStyle = css({ borderTopLeftRadius: radii.rounded });
+
+      const sharp1 = borderTopLeftRadius({ theme, btlr: 'sharp' });
+      const sharp2 = borderTopLeftRadius({
+        theme,
+        borderTopLeftRadius: 'sharp',
+      });
+      expect(sharp1).toStrictEqual(sharp2);
+
+      const rounded1 = borderTopLeftRadius({ theme, btlr: 'rounded' });
+      const rounded2 = borderTopLeftRadius({
+        theme,
+        borderTopLeftRadius: 'rounded',
+      });
+      expect(rounded1).toStrictEqual(rounded2);
+
+      const sharpOptions = [sharp1, sharp2];
+      sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
+
+      const roundedOptions = [rounded1, rounded2];
+      roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({ borderTopLeftRadius: '50%' });
+
+      const b = borderTopLeftRadius({ theme, borderTopLeftRadius: '50%' });
+      expect(b).toStrictEqual(expectedNoTheme);
+    });
+  });
+
+  describe('borderTopRightRadius', () => {
+    it('Should return values for border prop', () => {
+      const expectedSharpStyle = css({ borderTopRightRadius: radii.sharp });
+      const expectedRoundedStyle = css({ borderTopRightRadius: radii.rounded });
+
+      const sharp1 = borderTopRightRadius({ theme, btrr: 'sharp' });
+      const sharp2 = borderTopRightRadius({
+        theme,
+        borderTopRightRadius: 'sharp',
+      });
+      expect(sharp1).toStrictEqual(sharp2);
+
+      const rounded1 = borderTopRightRadius({ theme, btrr: 'rounded' });
+      const rounded2 = borderTopRightRadius({
+        theme,
+        borderTopRightRadius: 'rounded',
+      });
+      expect(rounded1).toStrictEqual(rounded2);
+
+      const sharpOptions = [sharp1, sharp2];
+      sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
+
+      const roundedOptions = [rounded1, rounded2];
+      roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({ borderTopRightRadius: '50%' });
+
+      const b = borderTopRightRadius({ theme, borderTopRightRadius: '50%' });
+      expect(b).toStrictEqual(expectedNoTheme);
+    });
+  });
+
+  describe('borderBottomLeftRadius', () => {
+    it('Should return values for border prop', () => {
+      const expectedSharpStyle = css({ borderBottomLeftRadius: radii.sharp });
+      const expectedRoundedStyle = css({
+        borderBottomLeftRadius: radii.rounded,
+      });
+
+      const sharp1 = borderBottomLeftRadius({ theme, bblr: 'sharp' });
+      const sharp2 = borderBottomLeftRadius({
+        theme,
+        borderBottomLeftRadius: 'sharp',
+      });
+      expect(sharp1).toStrictEqual(sharp2);
+
+      const rounded1 = borderBottomLeftRadius({ theme, bblr: 'rounded' });
+      const rounded2 = borderBottomLeftRadius({
+        theme,
+        borderBottomLeftRadius: 'rounded',
+      });
+      expect(rounded1).toStrictEqual(rounded2);
+
+      const sharpOptions = [sharp1, sharp2];
+      sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
+
+      const roundedOptions = [rounded1, rounded2];
+      roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({ borderBottomLeftRadius: '50%' });
+
+      const b = borderBottomLeftRadius({
+        theme,
+        borderBottomLeftRadius: '50%',
+      });
+      expect(b).toStrictEqual(expectedNoTheme);
+    });
+  });
+
+  describe('borderBottomRightRadius', () => {
+    it('Should return values for border prop', () => {
+      const expectedSharpStyle = css({ borderBottomRightRadius: radii.sharp });
+      const expectedRoundedStyle = css({
+        borderBottomRightRadius: radii.rounded,
+      });
+
+      const sharp1 = borderBottomRightRadius({ theme, bbrr: 'sharp' });
+      const sharp2 = borderBottomRightRadius({
+        theme,
+        borderBottomRightRadius: 'sharp',
+      });
+      expect(sharp1).toStrictEqual(sharp2);
+
+      const rounded1 = borderBottomRightRadius({ theme, bbrr: 'rounded' });
+      const rounded2 = borderBottomRightRadius({
+        theme,
+        borderBottomRightRadius: 'rounded',
+      });
+      expect(rounded1).toStrictEqual(rounded2);
+
+      const sharpOptions = [sharp1, sharp2];
+      sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
+
+      const roundedOptions = [rounded1, rounded2];
+      roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({ borderBottomRightRadius: '50%' });
+
+      const b = borderBottomRightRadius({
+        theme,
+        borderBottomRightRadius: '50%',
+      });
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
