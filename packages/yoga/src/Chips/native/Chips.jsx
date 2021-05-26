@@ -1,5 +1,5 @@
 import React from 'react';
-import { node, number, arrayOf, bool } from 'prop-types';
+import { node, number, arrayOf, bool, func } from 'prop-types';
 import styled, { css, withTheme } from 'styled-components';
 
 import Counter from './Counter';
@@ -71,7 +71,12 @@ const Chips = ({
   const [FirstIcon, SecondIcon] = icons;
 
   return (
-    <Wrapper {...props} disabled={disabled} selected={selected}>
+    <Wrapper
+      {...props}
+      onPress={onToggle}
+      disabled={disabled}
+      selected={selected}
+    >
       {SecondIcon && (
         <Icon
           as={SecondIcon}
@@ -83,12 +88,10 @@ const Chips = ({
           }}
         />
       )}
-      <StyledChips
-        as={selected ? Text.Bold : Text}
-        selected={selected}
-        children={children}
-      />
-      {selected && counter && !disabled && <Counter>{counter}</Counter>}
+      <StyledChips as={selected ? Text.Bold : Text} selected={selected}>
+        {children}
+      </StyledChips>
+      {selected && counter && !disabled && <Counter value={counter} />}
       {FirstIcon && (
         <Icon
           as={FirstIcon}
@@ -116,6 +119,8 @@ Chips.propTypes = {
   disabled: bool,
   /** a list of max two icons from @gympass/yoga-icons package */
   icons: arrayOf(node),
+  onPress: func,
+  onToggle: func,
 };
 
 Chips.defaultProps = {
@@ -124,6 +129,8 @@ Chips.defaultProps = {
   disabled: false,
   counter: undefined,
   icons: [],
+  onPress: () => {},
+  onToggle: () => {},
 };
 
 export default withTouchable(withTheme(Chips));

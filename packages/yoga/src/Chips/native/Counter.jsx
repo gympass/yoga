@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { number, oneOf, string } from 'prop-types';
 
 import { theme } from '../../Theme';
 import Text from '../../Text';
@@ -25,8 +26,12 @@ const Wrapper = styled(Text.Medium)`
   background-color: ${theme.colors.secondary};
 `;
 
-const Counter = ({ children }) => (
-  <Wrapper>{children > 999 ? '+999' : children}</Wrapper>
+const Counter = ({ value }) => (
+  <Wrapper>{Number(value) > 999 ? '+999' : value}</Wrapper>
 );
+
+Counter.propTypes = {
+  value: oneOf([number, string]).isRequired,
+};
 
 export default Counter;

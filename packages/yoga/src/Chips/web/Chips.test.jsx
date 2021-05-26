@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import { MapPin, ChevronDown } from '@gympass/yoga-icons';
 
 import { ThemeProvider, Chips } from '../..';
-import { MapPin, ChevronDown } from '@gympass/yoga-icons';
 
 describe('<Chips />', () => {
   describe('Snapshots', () => {

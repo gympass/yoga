@@ -39,4 +39,4 @@ export {
   TextArea,
   Icon,
   Chips,
- };
+};

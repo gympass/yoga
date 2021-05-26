@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { node, number, arrayOf, bool } from 'prop-types';
+import { node, number, arrayOf, bool, func } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
 
 import { theme } from '../../Theme';
@@ -92,11 +92,6 @@ const Wrapper = styled.button`
         &:hover:enabled {
           border-color: ${colors.secondary};
         }
-
-        &:focus:enabled,
-        &:active:enabled {
-          border-color: transparent;
-        }
       `;
     }
 
@@ -149,7 +144,7 @@ const Chips = ({
         />
       )}
       <Text>{children}</Text>
-      {selected && counter && !disabled && <Counter>{counter}</Counter>}
+      {selected && counter && !disabled && <Counter value={counter} />}
       {FirstIcon && (
         <Icon
           as={FirstIcon}
@@ -174,6 +169,8 @@ Chips.propTypes = {
   disabled: bool,
   /** a list of max two icons from @gympass/yoga-icons package */
   icons: arrayOf(node),
+  /** click event */
+  onToggle: func,
 };
 
 Chips.defaultProps = {
@@ -182,6 +179,7 @@ Chips.defaultProps = {
   disabled: false,
   counter: undefined,
   icons: [],
+  onToggle: () => {},
 };
 
 export default Chips;
