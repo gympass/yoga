@@ -52,6 +52,10 @@ const Wrapper = styled.button`
       font-size: ${fontSizes.xsmall}px;
       line-height: ${lineHeights.xsmall}px;
 
+      :not(:last-child) {
+        margin-right: ${spacing.small}px;
+      }
+
       &[disabled] {
         background-color: ${colors.elements.backgroundAndDisabled};
         color: ${colors.elements.selectionAndIcons};
