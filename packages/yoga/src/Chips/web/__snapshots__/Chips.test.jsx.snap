@@ -235,11 +235,6 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   border-color: #D8385E;
 }
 
-.c2:focus:enabled,
-.c2:active:enabled {
-  border-color: transparent;
-}
-
 <div>
   <button
     class="c0"
@@ -434,11 +429,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   border-color: #D8385E;
 }
 
-.c2:focus:enabled,
-.c2:active:enabled {
-  border-color: transparent;
-}
-
 <div>
   <button
     class="c0"
@@ -589,11 +579,6 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
   border-color: #D8385E;
 }
 
-.c0:focus:enabled,
-.c0:active:enabled {
-  border-color: transparent;
-}
-
 <div>
   <button
     class="c0"
@@ -729,11 +714,6 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 
 .c2:hover:enabled {
   border-color: #D8385E;
-}
-
-.c2:focus:enabled,
-.c2:active:enabled {
-  border-color: transparent;
 }
 
 <div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { number, oneOf, string } from 'prop-types';
+import { number, oneOfType, string } from 'prop-types';
 
 import { theme } from '../../Theme';
 
@@ -31,7 +31,7 @@ const Counter = ({ value }) => (
 );
 
 Counter.propTypes = {
-  value: oneOf([number, string]).isRequired,
+  value: oneOfType([number, string]).isRequired,
 };
 
 export default Counter;
