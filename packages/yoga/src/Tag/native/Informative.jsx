@@ -52,7 +52,9 @@ const TagInformative = ({
   icon: Icon,
   theme: {
     yoga: {
-      colors: { primary },
+      colors: {
+        text: { primary },
+      },
       components: { tag },
     },
   },
