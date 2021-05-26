@@ -101,7 +101,7 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
       <RNSVGSvgView
         bbHeight={16}
         bbWidth={16}
-        fill="#D8385E"
+        fill="#231B22"
         focusable={false}
         height={16}
         style={
@@ -129,7 +129,7 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
           fill={
             Array [
               0,
-              4292360286,
+              4280490786,
             ]
           }
           fillOpacity={1}
