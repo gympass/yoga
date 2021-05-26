@@ -1,20 +1,129 @@
 import React from 'react';
-import styled from 'styled-components';
+import { node, number, arrayOf, bool } from 'prop-types';
+import styled, { css, withTheme } from 'styled-components';
 
-const StyledChips = styled.Text`
-  ${({
-    theme: {
-      yoga: {
-        components: { chips },
-      },
-    },
-  }) => ``}
+import Counter from './Counter';
+import { theme } from '../../Theme';
+import Text from '../../Text';
+import Icon from '../../Icon';
+import withTouchable from '../../Button/native/withTouchable';
+
+const Wrapper = styled.View`
+  height: 32px;
+  max-width: 216px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: ${theme.spacing.small}px;
+  padding: ${theme.spacing.xxsmall}px;
+
+  border-style: solid;
+  border-radius: ${theme.radii.small}px;
+  border-width: ${theme.borders.small}px;
+
+  ${({ disabled }) =>
+    disabled
+      ? css`
+          background-color: ${theme.colors.elements.backgroundAndDisabled};
+          color: ${theme.colors.elements.selectionAndIcons};
+
+          border-color: ${theme.colors.elements.lineAndBorders};
+        `
+      : ''}
+
+  ${({ selected }) =>
+    selected
+      ? css`
+          background-color: ${theme.colors.yoga};
+          border-color: ${theme.colors.secondary};
+        `
+      : ''}
 `;
 
-const Chips = props => <StyledChips {...props} />;
+const StyledChips = styled(Text)`
+  font-size: ${theme.fontSizes.xsmall}px;
+  line-height: ${theme.lineHeights.xsmall}px;
 
-Chips.propTypes = {};
+  ${({ selected }) =>
+    selected
+      ? css`
+          color: ${theme.colors.secondary};
+        `
+      : ''}
+`;
 
-Chips.defaultProps = {};
+const Chips = ({
+  children,
+  selected,
+  counter,
+  icons,
+  disabled,
+  onPress,
+  onToggle = onPress,
+  theme: {
+    yoga: { spacing },
+  },
+  ...props
+}) => {
+  const [FirstIcon, SecondIcon] = icons;
 
-export default Chips;
+  return (
+    <Wrapper {...props} disabled={disabled} selected={selected}>
+      {SecondIcon && (
+        <Icon
+          as={SecondIcon}
+          fill={selected ? 'secondary' : 'primary'}
+          width="small"
+          height="small"
+          style={{
+            marginRight: children ? spacing.xxxsmall : undefined,
+          }}
+        />
+      )}
+      <StyledChips
+        as={selected ? Text.Bold : Text}
+        selected={selected}
+        children={children}
+      />
+      {selected && counter && !disabled && <Counter>{counter}</Counter>}
+      {FirstIcon && (
+        <Icon
+          as={FirstIcon}
+          fill={selected ? 'secondary' : 'primary'}
+          width="small"
+          height="small"
+          style={{
+            marginLeft: children ? spacing.xxxsmall : undefined,
+          }}
+        />
+      )}
+    </Wrapper>
+  );
+};
+
+Chips.propTypes = {
+  /** text to be displayed */
+  children: node,
+  /** if the chip is selected */
+  selected: bool,
+  /** will display a three digit number, if the value is greater than 999 a plus
+   * sign will be displayed instead. ex: "+999" */
+  counter: number,
+  /** disable chip */
+  disabled: bool,
+  /** a list of max two icons from @gympass/yoga-icons package */
+  icons: arrayOf(node),
+};
+
+Chips.defaultProps = {
+  children: undefined,
+  selected: false,
+  disabled: false,
+  counter: undefined,
+  icons: [],
+};
+
+export default withTouchable(withTheme(Chips));
