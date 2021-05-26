@@ -61,8 +61,8 @@ const Chips = ({
   counter,
   icons,
   disabled,
-  onPress,
-  onToggle = onPress,
+  onToggle,
+  onPress = onToggle,
   theme: {
     yoga: { spacing },
   },
@@ -73,7 +73,7 @@ const Chips = ({
   return (
     <Wrapper
       {...props}
-      onPress={onToggle}
+      onPress={onPress}
       disabled={disabled}
       selected={selected}
     >

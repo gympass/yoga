@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, toJSON } from '@testing-library/react-native';
+import { render, toJSON, fireEvent } from '@testing-library/react-native';
 import { MapPin, ChevronDown } from '@gympass/yoga-icons';
 
 import { ThemeProvider, Chips } from '../..';
@@ -119,6 +119,22 @@ describe('<Chips />', () => {
 
         expect(toJSON(container)).toMatchSnapshot();
       });
+    });
+  });
+
+  describe('Events', () => {
+    it('should toggle using onPress', () => {
+      const toggleMock = jest.fn();
+
+      const { getByText } = render(
+        <ThemeProvider>
+          <Chips onPress={toggleMock}>Classes</Chips>
+        </ThemeProvider>,
+      );
+
+      fireEvent.press(getByText('Classes'));
+
+      expect(toggleMock).toHaveBeenCalled();
     });
   });
 });

@@ -124,6 +124,7 @@ const Chips = ({
   icons,
   disabled,
   onToggle,
+  onClick = onToggle,
   ...props
 }) => {
   const [FirstIcon, SecondIcon] = icons;
@@ -132,7 +133,7 @@ const Chips = ({
     <Wrapper
       selected={selected}
       disabled={disabled}
-      onClick={onToggle}
+      onClick={onClick}
       {...props}
     >
       {SecondIcon && (
@@ -171,6 +172,7 @@ Chips.propTypes = {
   icons: arrayOf(node),
   /** click event */
   onToggle: func,
+  onClick: func,
 };
 
 Chips.defaultProps = {
@@ -180,6 +182,7 @@ Chips.defaultProps = {
   counter: undefined,
   icons: [],
   onToggle: () => {},
+  onClick: () => {},
 };
 
 export default Chips;
