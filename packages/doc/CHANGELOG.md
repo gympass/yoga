@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.0.8...@gympass/yoga-doc@2.1.0) (2021-05-27)
+
+
+### Features
+
+* **text:** new numberOfLines for truncate prop ([d693ff7](https://github.com/Gympass/yoga/commit/d693ff723d8ae9de45e66078ffcd2d6536fd44bf))
+
+
+
+
+
 ## [2.0.8](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.0.7...@gympass/yoga-doc@2.0.8) (2021-05-07)
 
 **Note:** Version bump only for package @gympass/yoga-doc
