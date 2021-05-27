@@ -181,8 +181,8 @@ Chips.defaultProps = {
   disabled: false,
   counter: undefined,
   icons: [],
-  onToggle: () => {},
-  onClick: () => {},
+  onToggle: undefined,
+  onClick: undefined,
 };
 
 export default Chips;

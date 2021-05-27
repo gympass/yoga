@@ -1,12 +1,12 @@
 import React from 'react';
 import { node, number, arrayOf, bool, func } from 'prop-types';
 import styled, { css, withTheme } from 'styled-components';
+import { TouchableWithoutFeedback } from 'react-native';
 
 import Counter from './Counter';
 import { theme } from '../../Theme';
 import Text from '../../Text';
 import Icon from '../../Icon';
-import withTouchable from '../../Button/native/withTouchable';
 
 const Wrapper = styled.View`
   height: 32px;
@@ -71,39 +71,36 @@ const Chips = ({
   const [FirstIcon, SecondIcon] = icons;
 
   return (
-    <Wrapper
-      {...props}
-      onPress={onPress}
-      disabled={disabled}
-      selected={selected}
-    >
-      {SecondIcon && (
-        <Icon
-          as={SecondIcon}
-          fill={selected ? 'secondary' : 'primary'}
-          width="small"
-          height="small"
-          style={{
-            marginRight: children ? spacing.xxxsmall : undefined,
-          }}
-        />
-      )}
-      <StyledChips as={selected ? Text.Bold : Text} selected={selected}>
-        {children}
-      </StyledChips>
-      {selected && counter && !disabled && <Counter value={counter} />}
-      {FirstIcon && (
-        <Icon
-          as={FirstIcon}
-          fill={selected ? 'secondary' : 'primary'}
-          width="small"
-          height="small"
-          style={{
-            marginLeft: children ? spacing.xxxsmall : undefined,
-          }}
-        />
-      )}
-    </Wrapper>
+    <TouchableWithoutFeedback onPress={onPress} {...props}>
+      <Wrapper disabled={disabled} selected={selected}>
+        {SecondIcon && (
+          <Icon
+            as={SecondIcon}
+            fill={selected ? 'secondary' : 'primary'}
+            width="small"
+            height="small"
+            style={{
+              marginRight: children ? spacing.xxxsmall : undefined,
+            }}
+          />
+        )}
+        <StyledChips as={selected ? Text.Bold : Text} selected={selected}>
+          {children}
+        </StyledChips>
+        {selected && counter && !disabled && <Counter value={counter} />}
+        {FirstIcon && (
+          <Icon
+            as={FirstIcon}
+            fill={selected ? 'secondary' : 'primary'}
+            width="small"
+            height="small"
+            style={{
+              marginLeft: children ? spacing.xxxsmall : undefined,
+            }}
+          />
+        )}
+      </Wrapper>
+    </TouchableWithoutFeedback>
   );
 };
 
@@ -119,6 +116,7 @@ Chips.propTypes = {
   disabled: bool,
   /** a list of max two icons from @gympass/yoga-icons package */
   icons: arrayOf(node),
+  /** onPress event */
   onPress: func,
   onToggle: func,
 };
@@ -129,8 +127,8 @@ Chips.defaultProps = {
   disabled: false,
   counter: undefined,
   icons: [],
-  onPress: () => {},
-  onToggle: () => {},
+  onPress: undefined,
+  onToggle: undefined,
 };
 
-export default withTouchable(withTheme(Chips));
+export default withTheme(Chips);
