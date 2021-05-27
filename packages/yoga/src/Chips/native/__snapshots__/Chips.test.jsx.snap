@@ -10,65 +10,54 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
     }
   }
 >
-  <TouchableWithoutFeedback
-    counter={8}
-  >
+  <TouchableWithoutFeedback>
     <View
+      disabled={false}
+      selected={false}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        pressed={false}
+      <Text
+        inverted={false}
+        light={false}
         selected={false}
+        size="medium"
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Classes
-        </Text>
-      </View>
+        Classes
+      </Text>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -84,239 +73,204 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
     }
   }
 >
-  <TouchableWithoutFeedback
-    counter={8}
-  >
+  <TouchableWithoutFeedback>
     <View
+      disabled={false}
+      selected={false}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        pressed={false}
+      <Text
+        inverted={false}
+        light={false}
         selected={false}
+        size="medium"
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Classes
-        </Text>
-      </View>
+        Classes
+      </Text>
     </View>
   </TouchableWithoutFeedback>
-  <TouchableWithoutFeedback
-    counter={52}
-    selected={true}
-  >
+  <TouchableWithoutFeedback>
     <View
+      disabled={false}
+      selected={true}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFEEF2",
+            "borderColor": "#D8385E",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        pressed={false}
+      <Text
         selected={true}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#FFEEF2",
-              "borderColor": "#D8385E",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#D8385E",
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          selected={true}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "700",
-              },
-              Object {
-                "color": "#D8385E",
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Gyms and studios
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#D8385E",
-                "borderRadius": 8,
-                "color": "#FFFFFF",
-                "display": "flex",
-                "flexShrink": 0,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "500",
-                "height": 16,
-                "justifyContent": "center",
-                "lineHeight": 16,
-                "marginLeft": 4,
-                "minWidth": 16,
-                "paddingLeft": 5,
-                "paddingRight": 5,
-              },
-            ]
-          }
-        >
-          52
-        </Text>
-      </View>
-    </View>
-  </TouchableWithoutFeedback>
-  <TouchableWithoutFeedback
-    counter={1732}
-    selected={true}
-  >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        disabled={false}
-        pressed={false}
-        selected={true}
+        Gyms and studios
+      </Text>
+      <Text
         style={
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#FFEEF2",
-              "borderColor": "#D8385E",
+              "backgroundColor": "#D8385E",
               "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
+              "color": "#FFFFFF",
               "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
+              "flexShrink": 0,
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "height": 16,
               "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "lineHeight": 16,
+              "marginLeft": 4,
+              "minWidth": 16,
+              "paddingLeft": 5,
+              "paddingRight": 5,
             },
           ]
         }
       >
-        <Text
-          selected={true}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "700",
-              },
-              Object {
-                "color": "#D8385E",
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Personal trainers
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#D8385E",
-                "borderRadius": 8,
-                "color": "#FFFFFF",
-                "display": "flex",
-                "flexShrink": 0,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "500",
-                "height": 16,
-                "justifyContent": "center",
-                "lineHeight": 16,
-                "marginLeft": 4,
-                "minWidth": 16,
-                "paddingLeft": 5,
-                "paddingRight": 5,
-              },
-            ]
-          }
-        >
-          +999
-        </Text>
-      </View>
+        52
+      </Text>
+    </View>
+  </TouchableWithoutFeedback>
+  <TouchableWithoutFeedback>
+    <View
+      disabled={false}
+      selected={true}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFEEF2",
+            "borderColor": "#D8385E",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        selected={true}
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#D8385E",
+              "fontSize": 12,
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        Personal trainers
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#D8385E",
+              "borderRadius": 8,
+              "color": "#FFFFFF",
+              "display": "flex",
+              "flexShrink": 0,
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "height": 16,
+              "justifyContent": "center",
+              "lineHeight": 16,
+              "marginLeft": 4,
+              "minWidth": 16,
+              "paddingLeft": 5,
+              "paddingRight": 5,
+            },
+          ]
+        }
+      >
+        +999
+      </Text>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -333,7 +287,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   }
 >
   <TouchableWithoutFeedback
-    counter={8}
     icon={
       Array [
         [Function],
@@ -341,139 +294,52 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     }
   >
     <View
+      disabled={false}
+      selected={false}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        icon={
-          Array [
-            [Function],
-          ]
-        }
-        pressed={false}
+      <Text
+        inverted={false}
+        light={false}
         selected={false}
+        size="medium"
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Location
-        </Text>
-      </View>
-    </View>
-  </TouchableWithoutFeedback>
-  <TouchableWithoutFeedback
-    counter={8}
-    icon={
-      Array [
-        [Function],
-        [Function],
-      ]
-    }
-  >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        disabled={false}
-        icon={
-          Array [
-            [Function],
-            [Function],
-          ]
-        }
-        pressed={false}
-        selected={false}
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
-            },
-          ]
-        }
-      >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Classes
-        </Text>
-      </View>
+        Location
+      </Text>
     </View>
   </TouchableWithoutFeedback>
   <TouchableWithoutFeedback
@@ -485,67 +351,109 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     }
   >
     <View
+      disabled={false}
+      selected={false}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        icon={
-          Array [
-            [Function],
-            [Function],
-          ]
-        }
-        pressed={false}
+      <Text
+        inverted={false}
+        light={false}
         selected={false}
+        size="medium"
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Gyms and studios
-        </Text>
-      </View>
+        Classes
+      </Text>
+    </View>
+  </TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    icon={
+      Array [
+        [Function],
+        [Function],
+      ]
+    }
+  >
+    <View
+      disabled={false}
+      selected={false}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        inverted={false}
+        light={false}
+        selected={false}
+        size="medium"
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        Gyms and studios
+      </Text>
     </View>
   </TouchableWithoutFeedback>
   <TouchableWithoutFeedback
@@ -556,262 +464,133 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
     }
   >
     <View
+      disabled={false}
+      selected={false}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        icon={
-          Array [
-            [Function],
-          ]
-        }
-        pressed={false}
+      <Text
+        inverted={false}
+        light={false}
         selected={false}
+        size="medium"
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Personal trainers
-        </Text>
-      </View>
+        Personal trainers
+      </Text>
     </View>
   </TouchableWithoutFeedback>
   <TouchableWithoutFeedback
-    counter={8}
     icon={
       Array [
         [Function],
       ]
     }
-    selected={true}
   >
     <View
+      disabled={false}
+      selected={true}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFEEF2",
+            "borderColor": "#D8385E",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        icon={
-          Array [
-            [Function],
-          ]
-        }
-        pressed={false}
+      <Text
         selected={true}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#FFEEF2",
-              "borderColor": "#D8385E",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#D8385E",
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          selected={true}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "700",
-              },
-              Object {
-                "color": "#D8385E",
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Activities
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#D8385E",
-                "borderRadius": 8,
-                "color": "#FFFFFF",
-                "display": "flex",
-                "flexShrink": 0,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "500",
-                "height": 16,
-                "justifyContent": "center",
-                "lineHeight": 16,
-                "marginLeft": 4,
-                "minWidth": 16,
-                "paddingLeft": 5,
-                "paddingRight": 5,
-              },
-            ]
-          }
-        >
-          8
-        </Text>
-      </View>
-    </View>
-  </TouchableWithoutFeedback>
-  <TouchableWithoutFeedback
-    counter={8}
-    icon={
-      Array [
-        [Function],
-        [Function],
-      ]
-    }
-    selected={true}
-  >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        disabled={false}
-        icon={
-          Array [
-            [Function],
-            [Function],
-          ]
-        }
-        pressed={false}
-        selected={true}
+        Activities
+      </Text>
+      <Text
         style={
           Array [
             Object {
               "alignItems": "center",
-              "backgroundColor": "#FFEEF2",
-              "borderColor": "#D8385E",
+              "backgroundColor": "#D8385E",
               "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
+              "color": "#FFFFFF",
               "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
+              "flexShrink": 0,
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "height": 16,
               "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "lineHeight": 16,
+              "marginLeft": 4,
+              "minWidth": 16,
+              "paddingLeft": 5,
+              "paddingRight": 5,
             },
           ]
         }
       >
-        <Text
-          selected={true}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "700",
-              },
-              Object {
-                "color": "#D8385E",
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Language
-        </Text>
-        <Text
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#D8385E",
-                "borderRadius": 8,
-                "color": "#FFFFFF",
-                "display": "flex",
-                "flexShrink": 0,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "500",
-                "height": 16,
-                "justifyContent": "center",
-                "lineHeight": 16,
-                "marginLeft": 4,
-                "minWidth": 16,
-                "paddingLeft": 5,
-                "paddingRight": 5,
-              },
-            ]
-          }
-        >
-          8
-        </Text>
-      </View>
+        8
+      </Text>
     </View>
   </TouchableWithoutFeedback>
   <TouchableWithoutFeedback
@@ -821,69 +600,135 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         [Function],
       ]
     }
-    selected={true}
   >
     <View
+      disabled={false}
+      selected={true}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFEEF2",
+            "borderColor": "#D8385E",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        icon={
-          Array [
-            [Function],
-            [Function],
-          ]
-        }
-        pressed={false}
+      <Text
         selected={true}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#FFEEF2",
-              "borderColor": "#D8385E",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#D8385E",
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          selected={true}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "700",
-              },
-              Object {
-                "color": "#D8385E",
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Categories
-        </Text>
-      </View>
+        Language
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#D8385E",
+              "borderRadius": 8,
+              "color": "#FFFFFF",
+              "display": "flex",
+              "flexShrink": 0,
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "height": 16,
+              "justifyContent": "center",
+              "lineHeight": 16,
+              "marginLeft": 4,
+              "minWidth": 16,
+              "paddingLeft": 5,
+              "paddingRight": 5,
+            },
+          ]
+        }
+      >
+        8
+      </Text>
+    </View>
+  </TouchableWithoutFeedback>
+  <TouchableWithoutFeedback
+    icon={
+      Array [
+        [Function],
+        [Function],
+      ]
+    }
+  >
+    <View
+      disabled={false}
+      selected={true}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFEEF2",
+            "borderColor": "#D8385E",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        selected={true}
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#D8385E",
+              "fontSize": 12,
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        Categories
+      </Text>
     </View>
   </TouchableWithoutFeedback>
   <TouchableWithoutFeedback
@@ -892,68 +737,53 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         [Function],
       ]
     }
-    selected={true}
   >
     <View
+      disabled={false}
+      selected={true}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFEEF2",
+            "borderColor": "#D8385E",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        icon={
-          Array [
-            [Function],
-          ]
-        }
-        pressed={false}
+      <Text
         selected={true}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#FFEEF2",
-              "borderColor": "#D8385E",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#D8385E",
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          selected={true}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "700",
-              },
-              Object {
-                "color": "#D8385E",
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Availability
-        </Text>
-      </View>
+        Availability
+      </Text>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -969,64 +799,53 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
     }
   }
 >
-  <TouchableWithoutFeedback
-    selected={true}
-  >
+  <TouchableWithoutFeedback>
     <View
+      disabled={false}
+      selected={true}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFEEF2",
+            "borderColor": "#D8385E",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        pressed={false}
+      <Text
         selected={true}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#FFEEF2",
-              "borderColor": "#D8385E",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#D8385E",
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          selected={true}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "700",
-              },
-              Object {
-                "color": "#D8385E",
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Classes
-        </Text>
-      </View>
+        Classes
+      </Text>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -1044,181 +863,150 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 >
   <TouchableWithoutFeedback>
     <View
+      disabled={false}
+      selected={false}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        pressed={false}
+      <Text
+        inverted={false}
+        light={false}
         selected={false}
+        size="medium"
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Classes
-        </Text>
-      </View>
+        Classes
+      </Text>
     </View>
   </TouchableWithoutFeedback>
-  <TouchableWithoutFeedback
-    selected={true}
-  >
+  <TouchableWithoutFeedback>
     <View
+      disabled={false}
+      selected={true}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFEEF2",
+            "borderColor": "#D8385E",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        pressed={false}
+      <Text
         selected={true}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#FFEEF2",
-              "borderColor": "#D8385E",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#D8385E",
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          selected={true}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "700",
-              },
-              Object {
-                "color": "#D8385E",
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Gyms and studios
-        </Text>
-      </View>
+        Gyms and studios
+      </Text>
     </View>
   </TouchableWithoutFeedback>
-  <TouchableWithoutFeedback
-    selected={true}
-  >
+  <TouchableWithoutFeedback>
     <View
+      disabled={false}
+      selected={true}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFEEF2",
+            "borderColor": "#D8385E",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        pressed={false}
+      <Text
         selected={true}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#FFEEF2",
-              "borderColor": "#D8385E",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "700",
+            },
+            Object {
+              "color": "#D8385E",
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          selected={true}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "700",
-              },
-              Object {
-                "color": "#D8385E",
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Personal trainers
-        </Text>
-      </View>
+        Personal trainers
+      </Text>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -1236,61 +1024,52 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
 >
   <TouchableWithoutFeedback>
     <View
+      disabled={false}
+      selected={false}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        pressed={false}
+      <Text
+        inverted={false}
+        light={false}
         selected={false}
+        size="medium"
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Classes
-        </Text>
-      </View>
+        Classes
+      </Text>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -1306,68 +1085,57 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
     }
   }
 >
-  <TouchableWithoutFeedback
-    disabled={true}
-  >
+  <TouchableWithoutFeedback>
     <View
+      disabled={true}
+      selected={false}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#F5F5FA",
+            "borderColor": "#D7D7E0",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "color": "#9898A6",
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={true}
-        pressed={false}
+      <Text
+        inverted={false}
+        light={false}
         selected={false}
+        size="medium"
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#F5F5FA",
-              "borderColor": "#D7D7E0",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "color": "#9898A6",
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Classes
-        </Text>
-      </View>
+        Classes
+      </Text>
     </View>
   </TouchableWithoutFeedback>
 </View>
@@ -1385,179 +1153,152 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
 >
   <TouchableWithoutFeedback>
     <View
+      disabled={false}
+      selected={false}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        pressed={false}
+      <Text
+        inverted={false}
+        light={false}
         selected={false}
+        size="medium"
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Classes
-        </Text>
-      </View>
+        Classes
+      </Text>
     </View>
   </TouchableWithoutFeedback>
   <TouchableWithoutFeedback>
     <View
+      disabled={false}
+      selected={false}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        pressed={false}
+      <Text
+        inverted={false}
+        light={false}
         selected={false}
+        size="medium"
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Gyms and studios
-        </Text>
-      </View>
+        Gyms and studios
+      </Text>
     </View>
   </TouchableWithoutFeedback>
   <TouchableWithoutFeedback>
     <View
+      disabled={false}
+      selected={false}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "display": "flex",
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "marginRight": 16,
+            "maxWidth": 216,
+            "paddingBottom": 8,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 8,
+          },
+        ]
       }
     >
-      <View
-        disabled={false}
-        pressed={false}
+      <Text
+        inverted={false}
+        light={false}
         selected={false}
+        size="medium"
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "borderRadius": 8,
-              "borderStyle": "solid",
-              "borderWidth": 1,
-              "display": "flex",
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "marginRight": 16,
-              "maxWidth": 216,
-              "paddingBottom": 8,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "paddingTop": 8,
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "fontSize": 12,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        <Text
-          inverted={false}
-          light={false}
-          selected={false}
-          size="medium"
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 24,
-              },
-              Object {
-                "fontSize": 12,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          Personal trainers
-        </Text>
-      </View>
+        Personal trainers
+      </Text>
     </View>
   </TouchableWithoutFeedback>
 </View>
