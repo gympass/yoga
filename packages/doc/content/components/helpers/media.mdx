@@ -35,10 +35,6 @@ const MyResponsiveButton = styled.button`
   ${media[breakpoint]``}
   // generates: @media (min-width: breakpoint)
   // Ex.: media.md`` or media['xxs']``
-​
-  ${media.min(breakpoint)``}
-  // generates: @media (min-width: breakpoint)
-  // Ex.: media.min('md')``
 
   ${media.max(breakpoint)``}
   // generates: @media (max-width: breakpoint)
@@ -50,7 +46,6 @@ const MyResponsiveButton = styled.button`
 ​
   // We can also use .not (Like jest expect matchers)
   ${media.not[breakpoint]``}
-  ${media.not.min(breakpoint)``}
   // generates: @media not all and (min-width: breakpoint)
   // Ex.: media.not.md`` or media.not['xxs']``
 
