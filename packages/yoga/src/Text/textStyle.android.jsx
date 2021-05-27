@@ -1,37 +1,24 @@
 import { css } from 'styled-components';
+import defaultStyle from './textStyle';
 
 const textStyle = type => () => css`
+  ${defaultStyle(type)};
   ${({
     light,
-    variant,
-    inverted,
-    size = 'medium',
     theme: {
       yoga: {
         baseFont,
         fontWeights,
-        fontSizes: { [size]: pSize },
-        colors: { [variant]: color, text, white },
         components: {
           text: {
-            [type]: { fontsize, lineHeight, fontWeight, textTransform },
+            [type]: { fontWeight },
           },
         },
       },
     },
   }) => `
-    font-size: ${fontsize || pSize}px;
-    ${lineHeight ? `line-height: ${lineHeight}px;` : ''}
-
-    font-family: ${baseFont.family}${
-    fontWeight !== 400 ? `-${fontWeight}` : ''
-  };
-
+    ${fontWeight !== 400 ? `-${fontWeight}` : ''};
     ${light ? `font-family: ${baseFont.family}-${fontWeights.light};` : ''}
-
-    color: ${variant ? color : text.primary};
-    ${inverted ? `color: ${white};` : ''}
-    ${textTransform ? `text-transform: ${textTransform};` : ''}
   `}
 `;
 
