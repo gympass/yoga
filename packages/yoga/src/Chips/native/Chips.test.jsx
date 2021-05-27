@@ -136,5 +136,19 @@ describe('<Chips />', () => {
 
       expect(toggleMock).toHaveBeenCalled();
     });
+
+    it('should toggle using onToggle', () => {
+      const toggleMock = jest.fn();
+
+      const { getByText } = render(
+        <ThemeProvider>
+          <Chips onToggle={toggleMock}>Classes</Chips>
+        </ThemeProvider>,
+      );
+
+      fireEvent.press(getByText('Classes'));
+
+      expect(toggleMock).toHaveBeenCalled();
+    });
   });
 });
