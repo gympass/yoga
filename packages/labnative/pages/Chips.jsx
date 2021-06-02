@@ -21,7 +21,7 @@ const ChipsPage = () => {
       </Chips>
       <Chips disabled>Gyms and studios</Chips>
       <Chips selected counter={1350}>
-        Personal trainers
+        Personal trainers with a very long text
       </Chips>
       <Chips icons={[MapPin]}>Activities</Chips>
       <Chips icons={[Filter]} />
