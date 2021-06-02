@@ -182,6 +182,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
           "fontFamily": "Rubik",
           "fontSize": 12,
           "fontWeight": "500",
+          "letterSpacing": 1,
           "lineHeight": 16,
           "textTransform": "uppercase",
         },

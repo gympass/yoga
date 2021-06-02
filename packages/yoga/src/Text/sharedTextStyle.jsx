@@ -14,13 +14,20 @@ const textStyle = type => () => css`
         colors: { [variant]: color, text, white },
         components: {
           text: {
-            [type]: { fontsize, lineHeight, fontWeight, textTransform },
+            [type]: {
+              fontsize,
+              lineHeight,
+              fontWeight,
+              textTransform,
+              letterSpacing,
+            },
           },
         },
       },
     },
   }) => `
     font-size: ${fontsize || pSize}px;
+    ${letterSpacing ? `letter-spacing: ${letterSpacing}px;` : ''}
     ${lineHeight ? `line-height: ${lineHeight}px;` : ''}
     ${fontWeight ? `font-weight: ${fontWeight};` : ''}
     ${light ? `font-weight: ${fontWeights.light};` : ''}
