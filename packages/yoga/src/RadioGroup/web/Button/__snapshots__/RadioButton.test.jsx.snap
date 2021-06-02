@@ -43,7 +43,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
 
 .c1:hover,
 .c1:focus {
-  background-color: #D7D7E0;
+  background-color: #F5F5FA;
 }
 
 .c0 {
@@ -134,7 +134,7 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
 
 .c1:hover,
 .c1:focus {
-  background-color: #D7D7E0;
+  background-color: #F5F5FA;
 }
 
 .c0 {

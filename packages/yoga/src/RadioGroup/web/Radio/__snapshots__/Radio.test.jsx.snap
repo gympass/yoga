@@ -40,7 +40,13 @@ exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot wit
 
 .c0:hover .c1 {
   z-index: 1;
-  box-shadow: 0 0 0 8px rgba(215,215,224,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
+  background-color: rgba(245,245,250,0.25);
+}
+
+.c0:active .c1 {
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
+  background-color: rgba(245,245,250,0.75);
 }
 
 <div>

@@ -31,13 +31,13 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
   position: absolute;
   left: 50%;
   top: 10px;
-  color: #231B22;
+  color: #D8385E;
 }
 
 .c4 .c5 {
   position: absolute;
   top: -10px;
-  background-color: #231B22;
+  background-color: #D8385E;
 }
 
 .c9 {
@@ -81,7 +81,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
   content: '';
   width: 0%;
   height: 4px;
-  background-color: #231B22;
+  background-color: #D8385E;
 }
 
 .c10 {
@@ -195,13 +195,13 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
   position: absolute;
   left: 50%;
   top: 10px;
-  color: #231B22;
+  color: #D8385E;
 }
 
 .c4 .c5 {
   position: absolute;
   top: -10px;
-  background-color: #231B22;
+  background-color: #D8385E;
 }
 
 .c9 {
@@ -245,7 +245,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
   content: '';
   width: 50%;
   height: 4px;
-  background-color: #231B22;
+  background-color: #D8385E;
 }
 
 .c10 {

@@ -336,7 +336,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   line-height: 56px;
   font-weight: 500;
   font-family: Rubik;
-  color: #231B22;
+  color: #D8385E;
 }
 
 .c1 {
@@ -346,7 +346,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   line-height: 48px;
   font-weight: 500;
   font-family: Rubik;
-  color: #D8385E;
+  color: #231B22;
 }
 
 .c2 {

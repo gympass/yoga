@@ -18,13 +18,21 @@ You can use all differente compounds like `<Button />` and `<Button.Text />` com
 #### Default
 
 ```javascript
-<Button.Outline>Find an activity</Button.Outline>
+<div style={{ display: 'flex', justifyContent: 'space-evenly', width: '100%' }}>
+  <Button.Outline>Find an activity</Button.Outline>
+  <Button.Outline secondary>Find an activity</Button.Outline>
+</div>
 ```
 
 #### With icon
 
 ```javascript
-<Button.Outline icon={Booking}>Find an activity</Button.Outline>
+<div style={{ display: 'flex', justifyContent: 'space-evenly', width: '100%' }}>
+  <Button.Outline icon={Booking}>Find an activity</Button.Outline>
+  <Button.Outline icon={Booking} secondary>
+    Find an activity
+  </Button.Outline>
+</div>
 ```
 
 ### Props
