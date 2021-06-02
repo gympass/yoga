@@ -1,5 +1,5 @@
 import React from 'react';
-import { node, number, arrayOf, bool, func } from 'prop-types';
+import { number, arrayOf, bool, func, node } from 'prop-types';
 import styled, { css, withTheme } from 'styled-components';
 import { TouchableWithoutFeedback } from 'react-native';
 
@@ -21,6 +21,7 @@ const Wrapper = styled.View`
   padding: ${theme.spacing.xxsmall}px;
 
   border-style: solid;
+  border-color: ${theme.colors.elements.lineAndBorders};
   border-radius: ${theme.radii.small}px;
   border-width: ${theme.borders.small}px;
 
@@ -115,10 +116,10 @@ Chips.propTypes = {
   /** disable chip */
   disabled: bool,
   /** a list of max two icons from @gympass/yoga-icons package */
-  icons: arrayOf(node),
+  icons: arrayOf(func),
   /** onPress event */
-  onPress: func,
   onToggle: func,
+  onPress: func,
 };
 
 Chips.defaultProps = {
@@ -127,8 +128,8 @@ Chips.defaultProps = {
   disabled: false,
   counter: undefined,
   icons: [],
-  onPress: undefined,
   onToggle: undefined,
+  onPress: undefined,
 };
 
 export default withTheme(Chips);
