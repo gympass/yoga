@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.3.0...@gympass/yoga@7.0.0) (2021-06-02)
+
+
+### Bug Fixes
+
+* **checkbox:** fix background and box-shadow color on web platform ([d83b1ef](https://github.com/Gympass/yoga/commit/d83b1ef64e420d3ecdae2da5de2157d6a5516162))
+* **checkbox:** fix background and box-shadow colors on native platform ([e41242f](https://github.com/Gympass/yoga/commit/e41242fe601b022f8730a19bcc44492a2baa3901))
+* **radio:** fix background and box-shadow color ([9b4c910](https://github.com/Gympass/yoga/commit/9b4c910aefa5d5a008a3a8867c707b84418fb326))
+* **slider:** fix step dot background-color and change tooltip ribbon background-color ([2bec213](https://github.com/Gympass/yoga/commit/2bec213cac709cbd65ad54eb5053302cae2889dd))
+* **switch:** fix thumb shadow colow on native platform ([5e01c74](https://github.com/Gympass/yoga/commit/5e01c74662cc0f9982a45157ce8e165bec76fba7))
+* **tag:** update icon color in Tag.Informative ([cfafb42](https://github.com/Gympass/yoga/commit/cfafb421caca7fcd1dac06be79d8079f11d70f10))
+
+
+### Features
+
+* **text:** add letter-spacing to Text.Section ([93c8329](https://github.com/Gympass/yoga/commit/93c8329bf2efe5e293d3525e65b4e2643faeeb99))
+* **yoga:** add new prop "secondary" to all Button components ([7b831ee](https://github.com/Gympass/yoga/commit/7b831ee7e71a49dadf8ad9ff83e84001ff241252))
+* **yoga:** add new prop "secondary" to all Button components on native platform ([6def8ed](https://github.com/Gympass/yoga/commit/6def8eda56f2eabd1b4e3251c8b8d00721c00550))
+* **yoga:** change background-color from EventCard ([4015814](https://github.com/Gympass/yoga/commit/40158143b594c3d48ebf3f69d13e8f3b869ab503))
+* **yoga:** change primary and secondary theme colors ([eedc573](https://github.com/Gympass/yoga/commit/eedc573482d75db993d282dd651a74a2c9955afd))
+* **yoga:** update components that use "semiRounded" and "rounded" tokens for the new ones ([5445f3d](https://github.com/Gympass/yoga/commit/5445f3da2aed19385c067faa1de54cccdf883b09))
+* **yoga:** update switch shadow colors ([cc0221a](https://github.com/Gympass/yoga/commit/cc0221a2446fdc2a5ec7f4efea579b1fb3f21527))
+
+
+### BREAKING CHANGES
+
+* **yoga:** Primary color was "stamina" and secondary color was "vibin". We shifted both, so,
+primary became "vibin" and secondary became "stamina".
+* **yoga:** The radii tokens that are "passed" to theme has changed their names, so, if you are
+using "radii" from "theme", make sure to update their names. Check the changelog of the "tokens"
+package.
+
+
+
+
+
 # [6.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.2.2...@gympass/yoga@6.3.0) (2021-05-27)
 
 
