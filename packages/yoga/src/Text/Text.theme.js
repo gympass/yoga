@@ -58,6 +58,7 @@ const Text = ({ fontSizes, lineHeights, fontWeights }) => ({
     fontsize: fontSizes.xsmall,
     lineHeight: lineHeights.xsmall,
     fontWeight: fontWeights.medium,
+    letterSpacing: 1,
     textTransform: 'uppercase',
   },
   smallestException: {
