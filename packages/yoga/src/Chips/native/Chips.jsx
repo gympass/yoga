@@ -12,10 +12,9 @@ const Wrapper = styled.View`
   height: 32px;
   max-width: 216px;
 
-  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   margin-right: ${theme.spacing.small}px;
   padding: ${theme.spacing.xxsmall}px;
@@ -24,6 +23,10 @@ const Wrapper = styled.View`
   border-color: ${theme.colors.elements.lineAndBorders};
   border-radius: ${theme.radii.small}px;
   border-width: ${theme.borders.small}px;
+
+  background-color: ${theme.colors.white};
+
+  overflow: hidden;
 
   ${({ disabled }) =>
     disabled
@@ -47,6 +50,8 @@ const Wrapper = styled.View`
 const StyledChips = styled(Text)`
   font-size: ${theme.fontSizes.xsmall}px;
   line-height: ${theme.lineHeights.xsmall}px;
+
+  flex-shrink: 1;
 
   ${({ selected }) =>
     selected
@@ -85,7 +90,11 @@ const Chips = ({
             }}
           />
         )}
-        <StyledChips as={selected ? Text.Bold : Text} selected={selected}>
+        <StyledChips
+          as={selected ? Text.Bold : Text}
+          selected={selected}
+          numberOfLines={1}
+        >
           {children}
         </StyledChips>
         {selected && counter && !disabled && <Counter value={counter} />}
