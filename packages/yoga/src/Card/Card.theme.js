@@ -14,7 +14,7 @@ const Card = ({
     bottom: spacing.small,
     left: spacing.small,
   },
-  radii: radii.rounded,
+  radii: radii.small,
   elevation: elevations.small,
   ribbon: {
     radius: radii.circle,
@@ -113,7 +113,7 @@ const Card = ({
       },
       avatar: {
         border: {
-          radius: radii.rounded,
+          radius: radii.small,
           width: borders.small,
         },
       },
@@ -156,8 +156,8 @@ const Card = ({
       },
     },
     date: {
-      backgroundColor: colors.secondary,
-      radius: radii.rounded,
+      backgroundColor: colors.primary,
+      radius: radii.small,
       dayOfWeek: {
         fontWeight: fontWeights.regular,
         marginBottom: spacing.xxsmall,

@@ -23,7 +23,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #231B22;
+  background-color: #D8385E;
   border: none;
   border-radius: 9999px;
   color: #FFFFFF;
@@ -50,11 +50,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 
 .c18:not([disabled]):hover,
 .c18:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
 }
 
 .c18:active {
-  background-color: rgba(35,27,34,0.75);
+  background-color: rgba(216,56,94,0.75);
   color: #FFFFFF;
 }
 
@@ -293,7 +293,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-family: Rubik;
   font-size: 12px;
   font-weight: 500;
-  color: #D8385E;
+  color: #231B22;
   cursor: pointer;
   -webkit-text-decoration: none;
   text-decoration: none;

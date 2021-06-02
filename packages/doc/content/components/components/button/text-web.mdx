@@ -8,16 +8,21 @@ You can use all differente compounds like `<Button.Outline />` and `<Button />` 
 #### Default
 
 ```javascript
-<>
+<div style={{ display: 'flex', justifyContent: 'space-evenly', width: '100%' }}>
   <Button.Text>Find an activity</Button.Text>
   <Button.Text secondary>Find an activity</Button.Text>
-</>
+</div>
 ```
 
 #### With icon
 
 ```javascript
-<Button.Text icon={Booking}>Find an activity</Button.Text>
+<div style={{ display: 'flex', justifyContent: 'space-evenly', width: '100%' }}>
+  <Button.Text icon={Booking}>Find an activity</Button.Text>
+  <Button.Text icon={Booking} secondary>
+    Find an activity
+  </Button.Text>
+</div>
 ```
 
 ### Props

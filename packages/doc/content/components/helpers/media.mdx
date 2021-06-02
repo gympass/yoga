@@ -29,16 +29,12 @@ npm install @gympass/yoga-helpers
 
 ```javascript type=highlight
 import styled from 'styled-components';
-import { media } from '@gympass/yoga-helper';
+import { media } from '@gympass/yoga-helpers';
 ​
 const MyResponsiveButton = styled.button`
   ${media[breakpoint]``}
   // generates: @media (min-width: breakpoint)
   // Ex.: media.md`` or media['xxs']``
-​
-  ${media.min(breakpoint)``}
-  // generates: @media (min-width: breakpoint)
-  // Ex.: media.min('md')``
 
   ${media.max(breakpoint)``}
   // generates: @media (max-width: breakpoint)
@@ -50,7 +46,6 @@ const MyResponsiveButton = styled.button`
 ​
   // We can also use .not (Like jest expect matchers)
   ${media.not[breakpoint]``}
-  ${media.not.min(breakpoint)``}
   // generates: @media not all and (min-width: breakpoint)
   // Ex.: media.not.md`` or media.not['xxs']``
 
@@ -70,7 +65,7 @@ component
 
 ```javascript type=highlight
 import styled from 'styled-components';
-import { media } from '@gympass/yoga-helper';
+import { media } from '@gympass/yoga-helpers';
 
 const HideMe = styled.div`
   ${media.hide.xxs}

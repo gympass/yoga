@@ -116,20 +116,23 @@ const CheckBackground = styled.View(
 
 const Shadow = styled.View(
   ({
+    checked,
+    inverted,
     theme: {
       yoga: {
-        colors: { elements },
+        colors: { primary, elements, white },
         components: { checkbox },
       },
     },
   }) => {
     const size = checkbox.size * 1.67;
+    const shadowColor = checked ? primary : elements.backgroundAndDisabled;
 
     return `
       width: ${size}px;
       height: ${size}px;
 
-      background-color: ${hexToRgb(elements.lineAndBorders, 0.75)};
+      background-color: ${hexToRgb(inverted ? white : shadowColor, 0.75)};
       border-radius: ${checkbox.hover.border.radius}px;
     `;
   },
@@ -189,7 +192,9 @@ const Checkbox = ({
       >
         <CheckboxWrapper style={style}>
           <CheckArea>
-            {pressed && !disabled && <Shadow pressed={pressed} />}
+            {pressed && !disabled && (
+              <Shadow pressed={pressed} checked={checked} inverted={inverted} />
+            )}
             <CheckBackground
               {...{
                 disabled,

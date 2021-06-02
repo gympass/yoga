@@ -538,7 +538,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                   style={
                     Array [
                       Object {
-                        "color": "#D8385E",
+                        "color": "#231B22",
                         "fontFamily": "Rubik",
                         "fontSize": 12,
                         "fontWeight": "500",
@@ -577,12 +577,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               full={true}
               inverted={false}
               pressed={false}
+              secondary={false}
               small={false}
               style={
                 Array [
                   Object {
                     "alignItems": "center",
-                    "backgroundColor": "#231B22",
+                    "backgroundColor": "#D8385E",
                     "borderRadius": 9999,
                     "flexDirection": "row",
                     "height": 48,

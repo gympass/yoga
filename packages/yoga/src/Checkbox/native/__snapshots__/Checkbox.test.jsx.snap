@@ -45,8 +45,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
             style={
               Array [
                 Object {
-                  "backgroundColor": "#231B22",
-                  "borderColor": "#231B22",
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "#D8385E",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -222,7 +222,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
               Array [
                 Object {
                   "backgroundColor": "transparent",
-                  "borderColor": "#231B22",
+                  "borderColor": "#D8385E",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -1004,7 +1004,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
           <RNSVGSvgView
             bbHeight={24}
             bbWidth={24}
-            fill="#231B22"
+            fill="#D8385E"
             focusable={false}
             height={24}
             style={
@@ -1032,7 +1032,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
               fill={
                 Array [
                   0,
-                  4280490786,
+                  4292360286,
                 ]
               }
               fillOpacity={1}
@@ -1180,7 +1180,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
           <RNSVGSvgView
             bbHeight={24}
             bbWidth={24}
-            fill="#231B22"
+            fill="#D8385E"
             focusable={false}
             height={24}
             style={
@@ -1208,7 +1208,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
               fill={
                 Array [
                   0,
-                  4280490786,
+                  4292360286,
                 ]
               }
               fillOpacity={1}
@@ -1342,7 +1342,7 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 1`] = `
               Array [
                 Object {
                   "backgroundColor": "transparent",
-                  "borderColor": "#231B22",
+                  "borderColor": "#D8385E",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -1406,7 +1406,7 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 2`] = `
               Array [
                 Object {
                   "backgroundColor": "transparent",
-                  "borderColor": "#231B22",
+                  "borderColor": "#D8385E",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,

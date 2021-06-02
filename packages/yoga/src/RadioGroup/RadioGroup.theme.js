@@ -34,7 +34,7 @@ const RadioGroup = ({
     color: colors.text.primary,
   },
   hover: {
-    backgroundColor: colors.elements.lineAndBorders,
+    backgroundColor: colors.elements.backgroundAndDisabled,
   },
   disabled: {
     backgroundColor: colors.elements.backgroundAndDisabled,

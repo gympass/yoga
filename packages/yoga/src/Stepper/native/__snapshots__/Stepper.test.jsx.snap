@@ -58,7 +58,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
           style={
             Array [
               Object {
-                "backgroundColor": "#231B22",
+                "backgroundColor": "#D8385E",
                 "height": 4,
                 "position": "absolute",
                 "top": 0,
@@ -93,7 +93,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
             style={
               Array [
                 Object {
-                  "backgroundColor": "#231B22",
+                  "backgroundColor": "#D8385E",
                   "borderRadius": 9999,
                   "height": 15,
                   "marginTop": -6,
@@ -107,7 +107,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
             style={
               Array [
                 Object {
-                  "color": "#231B22",
+                  "color": "#D8385E",
                   "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "700",
@@ -286,7 +286,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
           style={
             Array [
               Object {
-                "backgroundColor": "#231B22",
+                "backgroundColor": "#D8385E",
                 "height": 4,
                 "position": "absolute",
                 "top": 0,
@@ -321,7 +321,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
             style={
               Array [
                 Object {
-                  "backgroundColor": "#231B22",
+                  "backgroundColor": "#D8385E",
                   "borderRadius": 9999,
                   "height": 15,
                   "marginTop": -6,
@@ -335,7 +335,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
             style={
               Array [
                 Object {
-                  "color": "#231B22",
+                  "color": "#D8385E",
                   "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "700",
@@ -364,7 +364,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
             style={
               Array [
                 Object {
-                  "backgroundColor": "#231B22",
+                  "backgroundColor": "#D8385E",
                   "borderRadius": 9999,
                   "height": 15,
                   "marginTop": -6,
@@ -378,7 +378,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
             style={
               Array [
                 Object {
-                  "color": "#231B22",
+                  "color": "#D8385E",
                   "fontFamily": "Rubik",
                   "fontSize": 12,
                   "fontWeight": "700",
