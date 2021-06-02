@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import { node, number, arrayOf, bool, func } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
 
@@ -68,14 +68,6 @@ const Wrapper = styled.button`
       svg {
         flex-shrink: 0;
       }
-
-      svg:first-child {
-        margin-right: ${spacing.xxxsmall}px;
-      }
-
-      svg:last-child {
-        margin-left: ${spacing.xxxsmall}px;
-      }
     `;
 
     if (selected) {
@@ -125,6 +117,9 @@ const Chips = ({
   disabled,
   onToggle,
   onClick = onToggle,
+  theme: {
+    yoga: { spacing },
+  },
   ...props
 }) => {
   const [FirstIcon, SecondIcon] = icons;
@@ -142,9 +137,12 @@ const Chips = ({
           fill={selected ? 'primary' : 'secondary'}
           width="small"
           height="small"
+          style={{
+            marginRight: children ? spacing.xxxsmall : undefined,
+          }}
         />
       )}
-      <Text>{children}</Text>
+      {children && <Text>{children}</Text>}
       {selected && counter && !disabled && <Counter value={counter} />}
       {FirstIcon && (
         <Icon
@@ -152,6 +150,9 @@ const Chips = ({
           fill={selected ? 'primary' : 'secondary'}
           width="small"
           height="small"
+          style={{
+            marginLeft: children ? spacing.xxxsmall : undefined,
+          }}
         />
       )}
     </Wrapper>
@@ -185,4 +186,4 @@ Chips.defaultProps = {
   onClick: undefined,
 };
 
-export default Chips;
+export default withTheme(Chips);

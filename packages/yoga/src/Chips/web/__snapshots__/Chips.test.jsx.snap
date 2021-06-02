@@ -52,14 +52,6 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
   flex-shrink: 0;
 }
 
-.c0 svg:first-child {
-  margin-right: 4px;
-}
-
-.c0 svg:last-child {
-  margin-left: 4px;
-}
-
 .c0:hover:enabled {
   border-color: #231B22;
 }
@@ -163,14 +155,6 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   flex-shrink: 0;
 }
 
-.c0 svg:first-child {
-  margin-right: 4px;
-}
-
-.c0 svg:last-child {
-  margin-left: 4px;
-}
-
 .c0:hover:enabled {
   border-color: #231B22;
 }
@@ -221,14 +205,6 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-}
-
-.c2 svg:first-child {
-  margin-right: 4px;
-}
-
-.c2 svg:last-child {
-  margin-left: 4px;
 }
 
 .c2:hover:enabled {
@@ -357,14 +333,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   flex-shrink: 0;
 }
 
-.c0 svg:first-child {
-  margin-right: 4px;
-}
-
-.c0 svg:last-child {
-  margin-left: 4px;
-}
-
 .c0:hover:enabled {
   border-color: #231B22;
 }
@@ -415,14 +383,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-}
-
-.c2 svg:first-child {
-  margin-right: 4px;
-}
-
-.c2 svg:last-child {
-  margin-left: 4px;
 }
 
 .c2:hover:enabled {
@@ -567,14 +527,6 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
   flex-shrink: 0;
 }
 
-.c0 svg:first-child {
-  margin-right: 4px;
-}
-
-.c0 svg:last-child {
-  margin-left: 4px;
-}
-
 .c0:hover:enabled {
   border-color: #D8385E;
 }
@@ -644,14 +596,6 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   flex-shrink: 0;
 }
 
-.c0 svg:first-child {
-  margin-right: 4px;
-}
-
-.c0 svg:last-child {
-  margin-left: 4px;
-}
-
 .c0:hover:enabled {
   border-color: #231B22;
 }
@@ -702,14 +646,6 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-}
-
-.c2 svg:first-child {
-  margin-right: 4px;
-}
-
-.c2 svg:last-child {
-  margin-left: 4px;
 }
 
 .c2:hover:enabled {
@@ -799,14 +735,6 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
   flex-shrink: 0;
 }
 
-.c0 svg:first-child {
-  margin-right: 4px;
-}
-
-.c0 svg:last-child {
-  margin-left: 4px;
-}
-
 .c0:hover:enabled {
   border-color: #231B22;
 }
@@ -879,14 +807,6 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-}
-
-.c0 svg:first-child {
-  margin-right: 4px;
-}
-
-.c0 svg:last-child {
-  margin-left: 4px;
 }
 
 .c0:hover:enabled {
@@ -962,14 +882,6 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-}
-
-.c0 svg:first-child {
-  margin-right: 4px;
-}
-
-.c0 svg:last-child {
-  margin-left: 4px;
 }
 
 .c0:hover:enabled {
