@@ -83,14 +83,14 @@ const Wrapper = styled.button`
         ${commonStyles}
 
         background-color: ${colors.yoga};
-        color: ${colors.secondary};
+        color: ${colors.primary};
 
         border-color: transparent;
 
         font-weight: ${fontWeights.medium};
 
         &:hover:enabled {
-          border-color: ${colors.secondary};
+          border-color: ${colors.primary};
         }
       `;
     }
