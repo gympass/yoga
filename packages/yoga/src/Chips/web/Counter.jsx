@@ -23,7 +23,7 @@ const Wrapper = styled.span`
   font-weight: ${theme.fontWeights.medium}px;
 
   border-radius: ${theme.radii.small}px;
-  background-color: ${theme.colors.secondary};
+  background-color: ${theme.colors.primary};
 `;
 
 const Counter = ({ value }) => (

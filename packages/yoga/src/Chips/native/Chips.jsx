@@ -39,7 +39,7 @@ const Wrapper = styled.View`
     selected
       ? css`
           background-color: ${theme.colors.yoga};
-          border-color: ${theme.colors.secondary};
+          border-color: ${theme.colors.primary};
         `
       : ''}
 `;
@@ -51,7 +51,7 @@ const StyledChips = styled(Text)`
   ${({ selected }) =>
     selected
       ? css`
-          color: ${theme.colors.secondary};
+          color: ${theme.colors.primary};
         `
       : ''}
 `;
@@ -77,7 +77,7 @@ const Chips = ({
         {SecondIcon && (
           <Icon
             as={SecondIcon}
-            fill={selected ? 'secondary' : 'primary'}
+            fill={selected ? 'primary' : 'secondary'}
             width="small"
             height="small"
             style={{
@@ -92,7 +92,7 @@ const Chips = ({
         {FirstIcon && (
           <Icon
             as={FirstIcon}
-            fill={selected ? 'secondary' : 'primary'}
+            fill={selected ? 'primary' : 'secondary'}
             width="small"
             height="small"
             style={{

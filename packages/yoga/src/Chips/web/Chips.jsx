@@ -101,12 +101,12 @@ const Wrapper = styled.button`
       border-color: ${colors.elements.lineAndBorders};
 
       background-color: ${colors.white};
-      color: ${colors.primary};
+      color: ${colors.secondary};
 
       font-weight: ${fontWeights.regular};
 
       &:hover:enabled {
-        border-color: ${colors.primary};
+        border-color: ${colors.secondary};
       }
 
       &:focus:enabled,
@@ -139,7 +139,7 @@ const Chips = ({
       {SecondIcon && (
         <Icon
           as={SecondIcon}
-          fill={selected ? 'secondary' : 'primary'}
+          fill={selected ? 'primary' : 'secondary'}
           width="small"
           height="small"
         />
@@ -149,7 +149,7 @@ const Chips = ({
       {FirstIcon && (
         <Icon
           as={FirstIcon}
-          fill={selected ? 'secondary' : 'primary'}
+          fill={selected ? 'primary' : 'secondary'}
           width="small"
           height="small"
         />
