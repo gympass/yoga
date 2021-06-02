@@ -15,7 +15,11 @@
     "url": "git+https://github.com/Gympass/yoga.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "NODE_ENV=cjs babel ./src --out-dir dist/cjs",
+    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "prebuild": "rm -rf ./dist",
+    "prepublishOnly": "node ../../scripts/prepublish.js"
   },
   "bugs": {
     "url": "https://github.com/Gympass/yoga/issues"

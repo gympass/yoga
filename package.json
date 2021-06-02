@@ -27,6 +27,7 @@
     "build:tokens": "lerna run build --scope=@gympass/yoga-tokens --stream",
     "build:doc": "lerna run build --scope=@gympass/yoga-doc --stream",
     "build:packages": "lerna run build --ignore=@gympass/yoga-doc --stream",
+    "build:system": "lerna run build --scope=@gympass/yoga-system --stream",
     "build": "lerna run build --stream --parallel",
     "new": "node ./scripts/cli/index.js"
   },
