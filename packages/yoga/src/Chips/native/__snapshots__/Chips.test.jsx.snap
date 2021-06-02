@@ -18,6 +18,7 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -81,6 +82,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
         Array [
           Object {
             "alignItems": "center",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -300,6 +302,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -357,6 +360,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -414,6 +418,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -470,6 +475,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -869,6 +875,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
         Array [
           Object {
             "alignItems": "center",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -1030,6 +1037,7 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
         Array [
           Object {
             "alignItems": "center",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -1159,6 +1167,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
         Array [
           Object {
             "alignItems": "center",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -1209,6 +1218,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
         Array [
           Object {
             "alignItems": "center",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -1259,6 +1269,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
         Array [
           Object {
             "alignItems": "center",
+            "borderColor": "#D7D7E0",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
