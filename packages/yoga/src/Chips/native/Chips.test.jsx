@@ -38,6 +38,16 @@ describe('<Chips />', () => {
       expect(toJSON(container)).toMatchSnapshot();
     });
 
+    it('should match snapshot with a long text', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Chips>Classes with a very long text</Chips>
+        </ThemeProvider>,
+      );
+
+      expect(toJSON(container)).toMatchSnapshot();
+    });
+
     describe('selected', () => {
       it('should match snapshot', () => {
         const { container } = render(
