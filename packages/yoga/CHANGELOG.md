@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.0.0...@gympass/yoga@7.1.0) (2021-06-04)
+
+
+### Features
+
+* **chips:** add ellipsis support to native chips component ([d5c026e](https://github.com/Gympass/yoga/commit/d5c026e8b10b72091a809cb123033e1b455be3a7))
+* **chips:** add margin right (web) ([efd2baa](https://github.com/Gympass/yoga/commit/efd2baa5b6305042f22f51dce64c46220c65a229))
+* **chips:** create native version ([073246c](https://github.com/Gympass/yoga/commit/073246ca5891b7d5427d454764cc26c3c7a4214f))
+* **chips:** start development of new component Chips (native platform) ([5e84c4a](https://github.com/Gympass/yoga/commit/5e84c4a55a99f98f2231aee1c5d98516729cb34b))
+* **yoga:** start development of new component Chips (web platform) ([a0df8f3](https://github.com/Gympass/yoga/commit/a0df8f358a036a75602c808fad02e1508eb85eb7))
+
+
+
+
+
 # [7.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.3.0...@gympass/yoga@7.0.0) (2021-06-02)
 
 

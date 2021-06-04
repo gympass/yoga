@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.0.9...@gympass/yoga-labnative@1.1.0) (2021-06-04)
+
+
+### Features
+
+* **chips:** start development of new component Chips (native platform) ([5e84c4a](https://github.com/Gympass/yoga/commit/5e84c4a55a99f98f2231aee1c5d98516729cb34b))
+
+
+
+
+
 ## [1.0.9](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.0.8...@gympass/yoga-labnative@1.0.9) (2021-06-02)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

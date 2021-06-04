@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.1.3...@gympass/yoga-doc@2.2.0) (2021-06-04)
+
+
+### Features
+
+* **yoga:** start development of new component Chips (web platform) ([a0df8f3](https://github.com/Gympass/yoga/commit/a0df8f358a036a75602c808fad02e1508eb85eb7))
+
+
+
+
+
 ## [2.1.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.1.2...@gympass/yoga-doc@2.1.3) (2021-06-02)
 
 **Note:** Version bump only for package @gympass/yoga-doc
