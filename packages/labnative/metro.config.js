@@ -23,6 +23,7 @@ module.exports = (async () => {
       `${reactNativeLib}/packages/icons`,
       `${reactNativeLib}/packages/tokens`,
       `${reactNativeLib}/packages/common`,
+      `${reactNativeLib}/packages/system`,
     ],
     resolver: {
       extraNodeModules: {
