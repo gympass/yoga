@@ -177,6 +177,24 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "matheushenrique1",
+      "name": "Matheus Henrique",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32910717?v=4",
+      "profile": "https://github.com/matheushenrique1",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Dario-Felipe",
+      "name": "Dário Felipe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59899974?v=4",
+      "profile": "http://www.linkedin.com/in/dariofelipe",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,

@@ -111,6 +111,10 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   margin: 0;
   padding: 0;
   font-size: 12px;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
   line-height: 16px;
   font-weight: 500;
   font-family: Rubik;
@@ -336,7 +340,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   line-height: 56px;
   font-weight: 500;
   font-family: Rubik;
-  color: #231B22;
+  color: #D8385E;
 }
 
 .c1 {
@@ -346,7 +350,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   line-height: 48px;
   font-weight: 500;
   font-family: Rubik;
-  color: #D8385E;
+  color: #231B22;
 }
 
 .c2 {
@@ -395,6 +399,32 @@ exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
     class="c0"
   >
     Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with truncated lines Text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    Live the mission
+    <br />
+    even in one line
   </p>
 </div>
 `;

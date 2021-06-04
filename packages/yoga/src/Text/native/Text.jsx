@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { oneOf, bool } from 'prop-types';
-import textStyle from '../textStyle';
+import textStyle from '../sharedTextStyle';
 
 const styledText = type => styled.Text`
   ${textStyle(type)}

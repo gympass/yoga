@@ -54,6 +54,11 @@ const uplift = '#FF4438';
  */
 const deepPurple = '#710252';
 
+/**
+ * @type {Color}
+ */
+const yoga = '#FFEEF2';
+
 // Feedback ↓
 
 /**
@@ -112,6 +117,7 @@ const colors = {
   verve,
   uplift,
   deepPurple,
+  yoga,
   success,
   neutral,
   attention,

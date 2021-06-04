@@ -42,7 +42,7 @@ const CheckboxSwitch = ({
   },
   focus: {
     checked: {
-      backgroundColor: hexToRgb(colors.text.secondary, 0.5),
+      backgroundColor: hexToRgb(colors.primary, 0.5),
     },
     disabled: {
       backgroundColor: hexToRgb(colors.elements.backgroundAndDisabled, 0.5),
@@ -50,7 +50,7 @@ const CheckboxSwitch = ({
   },
   hover: {
     checked: {
-      backgroundColor: hexToRgb(colors.text.secondary, 0.25),
+      backgroundColor: hexToRgb(colors.primary, 0.25),
     },
     disabled: {
       backgroundColor: hexToRgb(colors.elements.backgroundAndDisabled, 0.25),
@@ -58,7 +58,7 @@ const CheckboxSwitch = ({
   },
   pressed: {
     checked: {
-      backgroundColor: hexToRgb(colors.text.secondary, 0.75),
+      backgroundColor: hexToRgb(colors.primary, 0.75),
     },
     disabled: {
       backgroundColor: hexToRgb(colors.elements.lineAndBorders, 0.75),

@@ -194,7 +194,7 @@ exports[`<Progress /> should match snapshot with all variants 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#231B22",
+              "backgroundColor": "#D8385E",
               "borderRadius": 8,
               "height": "100%",
               "position": "absolute",
@@ -257,7 +257,7 @@ exports[`<Progress /> should match snapshot with all variants 1`] = `
         style={
           Array [
             Object {
-              "backgroundColor": "#D8385E",
+              "backgroundColor": "#231B22",
               "borderRadius": 8,
               "height": "100%",
               "position": "absolute",

@@ -18,7 +18,7 @@ const Input = ({
   },
   border: {
     width: borders.small,
-    radius: radii.rounded,
+    radius: radii.small,
     color: {
       default: colors.elements.lineAndBorders,
       typed: colors.text.primary,
