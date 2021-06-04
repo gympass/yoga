@@ -495,11 +495,11 @@ describe('radius', () => {
       const expectedSharpStyle = css({ borderRadius: radii.sharp });
       const expectedRoundedStyle = css({ borderRadius: radii.rounded });
 
-      const sharp1 = borderRadius({ theme, br: 'sharp' });
+      const sharp1 = borderRadius({ theme, bRadius: 'sharp' });
       const sharp2 = borderRadius({ theme, borderRadius: 'sharp' });
       expect(sharp1).toStrictEqual(sharp2);
 
-      const rounded1 = borderRadius({ theme, br: 'rounded' });
+      const rounded1 = borderRadius({ theme, bRadius: 'rounded' });
       const rounded2 = borderRadius({ theme, borderRadius: 'rounded' });
       expect(rounded1).toStrictEqual(rounded2);
 

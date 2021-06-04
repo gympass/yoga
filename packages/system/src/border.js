@@ -152,7 +152,7 @@ const borderLeftWidth = props =>
 const borderRadius = props =>
   generator({
     props,
-    prop: ['borderRadius', 'br'],
+    prop: ['borderRadius', 'bRadius'],
     cssProperty: 'borderRadius',
     getter: getBorderRadius,
     transform: toPx,
