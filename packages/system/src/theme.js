@@ -25,7 +25,7 @@ const getSpacing = props => getFromTheme(props)('spacing');
 const getBorder = props => getFromTheme(props)('borders');
 const getBorderRadius = props => getFromTheme(props)('radii');
 const getColor = props => getFromTheme(props)('colors');
-const getFontSize = props => getFromTheme(props)('fontSize');
+const getFontSize = props => getFromTheme(props)('fontSizes');
 const getFontWeight = props => getFromTheme(props)('fontWeights');
 const getLineHeight = props => getFromTheme(props)('lineHeights');
 const getElevation = props => getFromTheme(props)('elevations');

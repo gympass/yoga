@@ -26,7 +26,7 @@ const colors = {
 const theme = {
   yoga: {
     colors,
-    fontSize: fontSizes,
+    fontSizes,
     lineHeights,
     fontWeights,
   },
