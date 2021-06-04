@@ -4,8 +4,63 @@ Gympass `<Chips />` description
 
 ### Usage
 
-```javascript type=expo
-  <Chips />
+```javascript type=expo state
+const { useState } = React;
+
+function App() {
+  const [first, toggleFirst] = useState(false);
+  const [second, toggleSecond] = useState(false);
+  const onToggleFirst = () => toggleFirst(!first);
+  const onToggleSecond = () => toggleSecond(!second);
+
+  return (
+    <ThemeProvider>
+      <Chips selected={first} onPress={onToggleFirst}>
+        Classes
+      </Chips>
+      <Chips selected={second} onToggle={onToggleSecond}>
+        Gyms and studios
+      </Chips>
+    </ThemeProvider>
+  );
+}
+
+export default App;
+```
+
+With icons:
+
+```javascript state
+const { useState } = React;
+
+function App() {
+  const [first, toggleFirst] = useState(true);
+  const [second, toggleSecond] = useState(false);
+  const [third, toggleThird] = useState(false);
+  const onToggleFirst = () => toggleFirst(!first);
+  const onToggleSecond = () => toggleSecond(!second);
+  const onToggleThird = () => toggleThird(!third);
+
+  return (
+    <ThemeProvider>
+      <Chips selected={first} onPress={onToggleFirst} icons={[, Time]}>
+        Open now
+      </Chips>
+      <Chips selected={second} onToggle={onToggleSecond} icons={[ChevronDown]}>
+        Activities
+      </Chips>
+      <Chips
+        selected={third}
+        onToggle={onToggleThird}
+        icons={[ChevronDown, MapPin]}
+      >
+        Location
+      </Chips>
+    </ThemeProvider>
+  );
+}
+
+export default App;
 ```
 
 ### Props

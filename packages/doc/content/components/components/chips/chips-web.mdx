@@ -24,6 +24,37 @@ render(() => {
 });
 ```
 
+With icons:
+
+```javascript state
+render(() => {
+  const [first, toggleFirst] = useState(true);
+  const [second, toggleSecond] = useState(false);
+  const [third, toggleThird] = useState(false);
+  const onToggleFirst = () => toggleFirst(!first);
+  const onToggleSecond = () => toggleSecond(!second);
+  const onToggleThird = () => toggleThird(!third);
+
+  return (
+    <>
+      <Chips selected={first} onToggle={onToggleFirst} icons={[, Time]}>
+        Open now
+      </Chips>
+      <Chips selected={second} onToggle={onToggleSecond} icons={[ChevronDown]}>
+        Activities
+      </Chips>
+      <Chips
+        selected={third}
+        onToggle={onToggleThird}
+        icons={[ChevronDown, MapPin]}
+      >
+        Location
+      </Chips>
+    </>
+  );
+});
+```
+
 ### Props
 
 <PropsTable component="Chips" platform="web" />
