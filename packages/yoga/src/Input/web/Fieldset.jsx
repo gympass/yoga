@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Wrapper as HelperWrapper } from './Helper';
 
 const Fieldset = styled.fieldset`
   position: relative;
@@ -39,9 +38,7 @@ const Fieldset = styled.fieldset`
       ${disabled ? `border-color: ${colors.elements.lineAndBorders};` : ''}
     }
 
-    &:focus-within + ${HelperWrapper} {
-      color: ${input.helper.color.focus};
-    }
+    
   `}
 `;
 
