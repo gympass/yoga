@@ -1,11 +1,3 @@
 # `@gympass/yoga-system`
 
-> TODO: description
-
-## Usage
-
-```
-const system = require('@gympass/yoga-system');
-
-// TODO: DEMONSTRATE API
-```
+You can see it as documented at [Yoga website](https://gympass.github.io/yoga/system/getting-started/).
