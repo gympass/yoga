@@ -31,38 +31,49 @@ const getLineHeight = props => getFromTheme(props)('lineHeights');
 const getElevation = props => getFromTheme(props)('elevations');
 
 const generator = ({
-  props,
+  props: componentProps,
   prop,
   cssProperty,
   getter,
   transform = value => value,
 }) => {
-  const themeProp = getter(props);
+  const themeProp = getter(componentProps);
 
+  // If prop is an array, ex: ['border', 'b'], we run the generator for each one
   if (Array.isArray(prop)) {
-    const v = prop
-      .map(p => generator({ props, prop: p, cssProperty, getter, transform }))
+    return prop
+      .map(p =>
+        generator({
+          props: componentProps,
+          prop: p,
+          cssProperty,
+          getter,
+          transform,
+        }),
+      )
       .flat();
-
-    return v;
   }
 
-  const p = props[prop];
+  // Getting the desired prop from your component props
+  const propFromComponent = componentProps[prop];
 
-  const value = resolve(themeProp, p) || p;
+  // Getting the value from the theme
+  const value = resolve(themeProp, propFromComponent) || propFromComponent;
 
-  const values = transform(value);
+  const transformedValue = transform(value);
 
+  // If the css is an array, like ['marginLeft', 'marginRight'], we produce
+  // an object mapping all of values to its keys
   if (Array.isArray(cssProperty)) {
     const computedCSS = cssProperty.reduce(
-      (acc, property) => Object.assign(acc, { [property]: values }),
+      (acc, property) => Object.assign(acc, { [property]: transformedValue }),
       {},
     );
 
     return css(computedCSS);
   }
 
-  return css({ [cssProperty]: values });
+  return css({ [cssProperty]: transformedValue });
 };
 
 const compose = (...functions) => args =>
