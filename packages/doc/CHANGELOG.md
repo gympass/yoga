@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.0...@gympass/yoga-doc@2.2.1) (2021-06-10)
+
+
+### Bug Fixes
+
+* **codeblock:** add 'react-scripts' as dependency ([af61cd1](https://github.com/Gympass/yoga/commit/af61cd1562bc42d66e5b350e63f5b68cf6cbb288))
+
+
+
+
+
 # [2.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.1.3...@gympass/yoga-doc@2.2.0) (2021-06-04)
 
 
