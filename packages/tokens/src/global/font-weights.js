@@ -10,9 +10,11 @@
  * @typedef FontWeight
  *
  * @type {Object}
+ * @property {number} light - 300
  * @property {number} regular - 400
- * @property {number} semibold - 600
+ * @property {number} medium - 500
  * @property {number} bold - 700
+ * @property {number} black - 900
  */
 
 /**

@@ -1,0 +1,51 @@
+---
+title: 'Getting Started'
+metaTitle: 'System - Getting Started'
+metaDescription: 'These are the guidelines to better use of Yoga Design System'
+order: 0
+---
+
+## Getting Started
+
+We use tokens as our options and our theme is built based on these options. We name
+it as a **decision**.
+
+To make the usage of our decisions easier, we created the package
+`@gympass/yoga-system`
+
+### Installing
+
+```bash type=highlight
+yarn add @gympass/yoga-system
+
+// or
+
+npm install @gympass/yoga-system
+```
+
+### Usage
+
+As a shorthand for all our system properties, we use the `system` module:
+
+```javascript type=highlight
+import styled from 'styled-components';
+import { ThemeProvider } from '@gympass/yoga';
+import { system } from '@gympass/yoga-system';
+
+const Hero = styled.div`
+  ${system}
+`;
+
+const App = () => (
+  <ThemeProvider>
+    <Hero
+      border="small"
+      padding="small"
+      borderRadius="semiRounded"
+      color="feedback.success.dark"
+    >
+      Making wellbeing universal
+    </Hero>
+  </ThemeProvider>
+);
+```
