@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-system",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A package to help make UI components, libraries, and tools as interoperable as possible.",
   "keywords": [
     "design-system",
