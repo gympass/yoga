@@ -12,9 +12,11 @@ import {
 
 const buildImportString = (code, modules) => {
   const findComponents = /(?:<|{)(\w*)(?=\s*?\/?>*)/gm;
+  const findStyledComponents = /styled\(\w*/gm;
   const sortModules = /(@gympass\/yoga*)/gm;
   const imports = [];
   const foundComponents = code.match(findComponents) || [];
+  const foundStyledComponents = code.match(findStyledComponents) || [];
 
   modules
     .sort(a => (a.path.match(sortModules) ? -1 : 0))
@@ -23,6 +25,11 @@ const buildImportString = (code, modules) => {
         components: [
           ...new Set(
             foundComponents.map(c => c.replace(/<|{/, '')).filter(c => c),
+          ),
+          ...new Set(
+            foundStyledComponents
+              .map(c => c.replace(/styled\(/, ''))
+              .filter(c => c),
           ),
         ]
           .filter(importedComponent =>
