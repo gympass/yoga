@@ -76,6 +76,11 @@ const boxes = [
       'A React and React Native UI library that contains a set of high quality components that defines our interfaces.',
     href: '/components/getting-started/',
   },
+  {
+    title: 'system',
+    description: 'The simpliest way to use our decisions on our options',
+    href: '/system/getting-started/',
+  },
 ];
 
 const metaTitle = 'Yoga • Design System';

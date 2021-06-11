@@ -3,31 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [3.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@2.0.0...@gympass/yoga-tokens@3.0.0) (2021-06-02)
-
-
-### Features
-
-* **tokens:** add new color "yoga" ([ff092c6](https://github.com/Gympass/yoga/commit/ff092c6c33ec28c1f8355fbd62ae4b0061db7d7f))
-* **tokens:** rename and add new radii token ([5d325fb](https://github.com/Gympass/yoga/commit/5d325fbabafa2e1d20ee8bb25c87d11d3103df82))
-
-
-### BREAKING CHANGES
-
-* **tokens:** Radii tokens renamed: "semiRounded" is now "xsmall" (4px); "rounded" is now "small" (8px). New radii
-token "regular" (16px).
-
-
-
-
-
-# [2.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@1.1.0-alpha.0...@gympass/yoga-tokens@2.0.0) (2021-03-17)
+## [3.0.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.0.0...@gympass/yoga-tokens@3.0.1) (2021-06-10)
 
 **Note:** Version bump only for package @gympass/yoga-tokens
 
 
 
 
+
+# [3.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@2.0.0...@gympass/yoga-tokens@3.0.0) (2021-06-02)
+
+### Features
+
+- **tokens:** add new color "yoga" ([ff092c6](https://github.com/Gympass/yoga/commit/ff092c6c33ec28c1f8355fbd62ae4b0061db7d7f))
+- **tokens:** rename and add new radii token ([5d325fb](https://github.com/Gympass/yoga/commit/5d325fbabafa2e1d20ee8bb25c87d11d3103df82))
+
+### BREAKING CHANGES
+
+- **tokens:** Radii tokens renamed: "semiRounded" is now "xsmall" (4px); "rounded" is now "small" (8px). New radii
+  token "regular" (16px).
+
+# [2.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@1.1.0-alpha.0...@gympass/yoga-tokens@2.0.0) (2021-03-17)
+
+**Note:** Version bump only for package @gympass/yoga-tokens
 
 # [1.1.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@1.0.1-alpha.4...@gympass/yoga-tokens@1.1.0-alpha.0) (2021-02-04)
 
