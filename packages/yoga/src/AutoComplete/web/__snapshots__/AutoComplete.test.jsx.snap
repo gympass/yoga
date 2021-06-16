@@ -101,10 +101,6 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   border-color: #231B22;
 }
 
-.c2:focus-within + .c7 {
-  color: #231B22;
-}
-
 .c5 {
   position: relative;
   padding: 0;
@@ -307,10 +303,6 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 .c2:hover,
 .c2:focus-within {
   border-color: #231B22;
-}
-
-.c2:focus-within + .c7 {
-  color: #231B22;
 }
 
 .c5 {
@@ -533,10 +525,6 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 .c2:hover,
 .c2:focus-within {
   border-color: #231B22;
-}
-
-.c2:focus-within + .c11 {
-  color: #231B22;
 }
 
 .c5 {
@@ -890,10 +878,6 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 .c2:hover,
 .c2:focus-within {
   border-color: #231B22;
-}
-
-.c2:focus-within + .c11 {
-  color: #231B22;
 }
 
 .c5 {

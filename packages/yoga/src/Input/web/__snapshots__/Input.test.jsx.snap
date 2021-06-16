@@ -101,10 +101,6 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   border-color: #231B22;
 }
 
-.c1:focus-within + .c6 {
-  color: #231B22;
-}
-
 .c4 {
   position: relative;
   padding: 0;
@@ -293,10 +289,6 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   border-color: #D7D7E0;
 }
 
-.c1:focus-within + .c6 {
-  color: #231B22;
-}
-
 .c4 {
   position: relative;
   padding: 0;
@@ -469,7 +461,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   box-shadow: none;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -478,7 +470,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   color: #FF874C;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -488,14 +480,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   color: #231B22;
   color: currentColor;
   font-size: 12px;
-}
-
-.c9:focus-within + .c6 {
-  color: #231B22;
-}
-
-.c10:focus-within + .c6 {
-  color: #231B22;
 }
 
 .c1 {
@@ -515,10 +499,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 .c1:hover,
 .c1:focus-within {
   border-color: #FF874C;
-}
-
-.c1:focus-within + .c6 {
-  color: #231B22;
 }
 
 .c4 {
@@ -605,10 +585,10 @@ exports[`<Input /> Snapshots should match with error 1`] = `
       
     </fieldset>
     <div
-      class="c6 c7"
+      class="c6"
     >
       <span
-        class="c8"
+        class="c7"
       >
         Error message
       </span>
@@ -716,10 +696,6 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 .c1:hover,
 .c1:focus-within {
   border-color: #231B22;
-}
-
-.c1:focus-within + .c6 {
-  color: #231B22;
 }
 
 .c4 {
@@ -890,7 +866,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   box-shadow: none;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -899,7 +875,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   color: #6B6B78;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -911,7 +887,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   font-size: 12px;
 }
 
-.c9 {
+.c8 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -941,18 +917,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 .c1:hover,
 .c1:focus-within {
   border-color: #231B22;
-}
-
-.c1:focus-within + .c6 {
-  color: #231B22;
-}
-
-.c10:focus-within + .c6 {
-  color: #231B22;
-}
-
-.c11:focus-within + .c6 {
-  color: #231B22;
 }
 
 .c4 {
@@ -1039,15 +1003,15 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
       
     </fieldset>
     <div
-      class="c6 c7"
+      class="c6"
     >
       <span
-        class="c8"
+        class="c7"
       >
         Helper text
       </span>
       <span
-        class="c9"
+        class="c8"
       >
         0
         /
@@ -1140,7 +1104,7 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
   box-shadow: none;
 }
 
-.c7 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1149,7 +1113,7 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
   color: #6B6B78;
 }
 
-.c8 {
+.c7 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -1178,18 +1142,6 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
 .c1:hover,
 .c1:focus-within {
   border-color: #231B22;
-}
-
-.c1:focus-within + .c6 {
-  color: #231B22;
-}
-
-.c9:focus-within + .c6 {
-  color: #231B22;
-}
-
-.c10:focus-within + .c6 {
-  color: #231B22;
 }
 
 .c4 {
@@ -1276,10 +1228,10 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
       
     </fieldset>
     <div
-      class="c6 c7"
+      class="c6"
     >
       <span
-        class="c8"
+        class="c7"
       >
         Helper text
       </span>
@@ -1387,10 +1339,6 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 .c1:hover,
 .c1:focus-within {
   border-color: #231B22;
-}
-
-.c1:focus-within + .c6 {
-  color: #231B22;
 }
 
 .c4 {

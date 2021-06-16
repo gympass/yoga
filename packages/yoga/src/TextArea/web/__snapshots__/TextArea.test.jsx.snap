@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<TextArea /> should match snapshot 1`] = `
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -60,10 +60,6 @@ exports[`<TextArea /> should match snapshot 1`] = `
 .c1:hover,
 .c1:focus-within {
   border-color: #231B22;
-}
-
-.c1:focus-within + .c4 {
-  color: #231B22;
 }
 
 .c2 {
@@ -167,7 +163,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
       
     </fieldset>
     <div
-      class="c4 c5"
+      class="c4"
     />
   </div>
 </div>

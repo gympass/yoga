@@ -101,10 +101,6 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   border-color: #231B22;
 }
 
-.c1:focus-within + .c6 {
-  color: #231B22;
-}
-
 .c4 {
   position: relative;
   padding: 0;
