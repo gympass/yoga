@@ -28,6 +28,7 @@ Here's an overview of our packages:
 | [`@gympass/yoga-common`](/packages/common)   | [![npm version](https://badgen.net/npm/v/@gympass/yoga-common)](https://www.npmjs.com/package/@gympass/yoga-common)   | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-common)](https://bundlephobia.com/result?p=@gympass/yoga-common)   |
 | [`@gympass/yoga-icons`](/packages/icons)     | [![npm version](https://badgen.net/npm/v/@gympass/yoga-icons)](https://www.npmjs.com/package/@gympass/yoga-icons)     | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-icons)](https://bundlephobia.com/result?p=@gympass/yoga-icons)     |
 | [`@gympass/yoga-helpers`](/packages/helpers) | [![npm version](https://badgen.net/npm/v/@gympass/yoga-helpers)](https://www.npmjs.com/package/@gympass/yoga-helpers) | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-helpers)](https://bundlephobia.com/result?p=@gympass/yoga-helpers) |
+| [`@gympass/yoga-system`](/packages/system)   | [![npm version](https://badgen.net/npm/v/@gympass/yoga-system)](https://www.npmjs.com/package/@gympass/yoga-system)   | [![Bundle size](https://badgen.net/bundlephobia/minzip/@gympass/yoga-system)](https://bundlephobia.com/result?p=@gympass/yoga-system)   |
 
 ## Contributing
 

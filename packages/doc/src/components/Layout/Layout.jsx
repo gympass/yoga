@@ -144,7 +144,7 @@ const Layout = ({
               Guidelines
             </HeaderLink>
             <HeaderLink to="/components">Components</HeaderLink>
-            <HeaderLink to="/system">System</HeaderLink>
+            <HeaderLink to="/system/getting-started">System</HeaderLink>
           </Header>
 
           <TabBar>
@@ -156,7 +156,7 @@ const Layout = ({
               <ReactLogo />
               Components
             </TabBar.Tab>
-            <TabBar.Tab to="/system">
+            <TabBar.Tab to="/system/getting-started">
               <WrenchIcon />
               System
             </TabBar.Tab>
