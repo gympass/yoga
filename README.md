@@ -76,6 +76,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/matheushenrique1"><img src="https://avatars.githubusercontent.com/u/32910717?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Henrique</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=matheushenrique1" title="Documentation">📖</a></td>
     <td align="center"><a href="http://www.linkedin.com/in/dariofelipe"><img src="https://avatars.githubusercontent.com/u/59899974?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dário Felipe</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=Dario-Felipe" title="Documentation">📖</a></td>
     <td align="center"><a href="https://joaovicdsantos.github.io/"><img src="https://avatars.githubusercontent.com/u/24553367?v=4?s=100" width="100px;" alt=""/><br /><sub><b>João Victor</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=joaovicdsantos" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://wendler.dev"><img src="https://avatars.githubusercontent.com/u/6570553?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Wendler Eis</b></sub></a><br /><a href="https://github.com/Gympass/yoga/issues?q=author%3AWendlereis" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
