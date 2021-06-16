@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.3...@gympass/yoga@7.2.0) (2021-06-16)
+
+
+### Features
+
+* **yoga:** new component: Box ([15a2247](https://github.com/Gympass/yoga/commit/15a22472863c5ee1452ee2d2351c98b501fda1bf))
+
+
+
+
+
 ## [7.1.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.2...@gympass/yoga@7.1.3) (2021-06-16)
 
 
