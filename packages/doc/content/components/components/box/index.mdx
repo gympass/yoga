@@ -1,0 +1,31 @@
+---
+title: 'Box'
+metaTitle: 'Box'
+metaDescription: 'Box Component'
+---
+
+import { Link as GatsbyLink } from 'gatsby';
+
+import BoxWeb from './box-web.mdx';
+import BoxNative from './box-native.mdx';
+
+# Box
+
+<p>
+  Use this component as a layout primitive to add&nbsp;
+  <GatsbyLink to="/system/backgroundColor">background color</GatsbyLink>,&nbsp;
+  <GatsbyLink to="/system/border">borders</GatsbyLink>,&nbsp;
+  <GatsbyLink to="/system/elevation">elevation</GatsbyLink>,&nbsp;
+  <GatsbyLink to="/system/spacing">spacing</GatsbyLink>, and&nbsp;
+  <GatsbyLink to="/system/typography">typography</GatsbyLink> to content.
+</p>
+
+<TabbedView>
+  <Tab title="Web">
+    <BoxWeb />
+  </Tab>
+
+  <Tab title="Native">
+    <BoxNative />
+  </Tab>
+</TabbedView>

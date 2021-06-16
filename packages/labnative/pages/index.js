@@ -16,6 +16,7 @@ import TextArea from './TextArea';
 import IconsList from './IconsList';
 import Icon from './Icon';
 import Chips from './Chips';
+import Box from './Box';
 
 export {
   Button,
@@ -36,4 +37,5 @@ export {
   IconsList,
   Icon,
   Chips,
+  Box,
 };
