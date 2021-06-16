@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.2...@gympass/yoga@7.1.3) (2021-06-16)
+
+
+### Bug Fixes
+
+* **input:** adjust error helper color on input focus ([375c394](https://github.com/Gympass/yoga/commit/375c3946375244a97b70509224f3d4c3089336b8))
+
+
+
+
+
 ## [7.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.1...@gympass/yoga@7.1.2) (2021-06-10)
 
 **Note:** Version bump only for package @gympass/yoga
