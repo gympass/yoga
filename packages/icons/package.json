@@ -33,7 +33,8 @@
     "babel-plugin-transform-rename-import": "^2.3.0"
   },
   "peerDependencies": {
-    "react-native-svg": ">=9.13.3"
+    "react-native-svg": ">=9.13.3",
+    "react": ">=16"
   },
   "bugs": {
     "url": "https://github.com/Gympass/yoga/issues"
