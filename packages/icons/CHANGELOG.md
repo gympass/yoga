@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.1.1...@gympass/yoga-icons@1.1.2) (2021-06-16)
+
+
+### Bug Fixes
+
+* add react as peer dependency ([3add4ad](https://github.com/Gympass/yoga/commit/3add4ad892ab69f304fe665940b5a21e53f9bc03))
+
+
+
+
+
 ## [1.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.1.0...@gympass/yoga-icons@1.1.1) (2021-04-06)
 
 

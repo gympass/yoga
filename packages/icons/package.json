@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-icons",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Yoga icon package",
   "keywords": [
     "yoga",
@@ -33,8 +33,8 @@
     "babel-plugin-transform-rename-import": "^2.3.0"
   },
   "peerDependencies": {
-    "react-native-svg": ">=9.13.3",
-    "react": ">=16"
+    "react": ">=16",
+    "react-native-svg": ">=9.13.3"
   },
   "bugs": {
     "url": "https://github.com/Gympass/yoga/issues"
