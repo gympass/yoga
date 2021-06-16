@@ -17,6 +17,7 @@ import TextArea from './TextArea';
 import AutoComplete from './AutoComplete';
 import Icon from './Icon';
 import Chips from './Chips';
+import Box from './Box';
 
 export {
   ThemeProvider,
@@ -46,4 +47,5 @@ export {
   AutoComplete,
   Icon,
   Chips,
+  Box,
 };
