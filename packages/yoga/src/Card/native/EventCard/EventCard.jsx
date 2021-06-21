@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { shape, string, bool, oneOfType } from 'prop-types';
 import { Time } from '@gympass/yoga-icons';
+import { TouchableWithoutFeedback } from 'react-native';
 
 import Card from '../Card';
 import Text from '../../../Text';
@@ -15,7 +16,7 @@ const Event = styled(Card)`
     small,
   }) => `
   flex-direction: row;
-  width: ${small ? 56 : 280};
+  width: ${small ? 56 : 280}px;
   height: 104px;
   border-radius: ${radii.regular};
   padding: 0;
@@ -31,7 +32,6 @@ const DateInfo = styled.View`
   }) => `
     justify-content: center;
     align-items: center;
-
     width: 56px;
     padding: 20px 0;
     background-color: ${active ? colors.primary : colors.white};
@@ -96,9 +96,19 @@ const Indicator = styled(Box)`
   `}
 `;
 
-const EventTime = styled.View`
+const Row = styled(Box)`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const EventTime = styled(Box)`
   flex-direction: row;
   align-items: center;
+`;
+
+const LinkContainer = styled.TouchableWithoutFeedback`
+  align-self: flex-end;
 `;
 
 const DateInfoSmall = ({ date, active, event, onPress }) => {
@@ -134,6 +144,9 @@ const DateInfoDefault = ({ date }) => {
 const EventCard = ({
   event,
   date,
+  link,
+  onPress,
+  onLinkPress,
   small,
   active,
   theme: {
@@ -148,27 +161,36 @@ const EventCard = ({
   ...rest
 }) => {
   return (
-    <Event {...rest} small={small}>
-      {small ? (
-        <DateInfoSmall date={date} event={event} active={active} {...rest} />
-      ) : (
-        <DateInfoDefault date={date} />
-      )}
-      {!small && (
-        <EventInfo p="small" pl="xsmall">
-          <Name numberOfLines={1} size="small">
-            {event.name}
-          </Name>
-          <Place variant="deep" numberOfLines={1}>
-            {event.place}
-          </Place>
-          <EventTime>
-            <Time fill={icon.fill} style={{ marginRight: 5 }} />
-            <Text.Tiny>{event.time}</Text.Tiny>
-          </EventTime>
-        </EventInfo>
-      )}
-    </Event>
+    <TouchableWithoutFeedback onPress={onPress}>
+      <Event {...rest} small={small}>
+        {small ? (
+          <DateInfoSmall date={date} event={event} active={active} {...rest} />
+        ) : (
+          <DateInfoDefault date={date} />
+        )}
+        {!small && (
+          <EventInfo p="small" pl="xsmall">
+            <Name numberOfLines={1} size="small">
+              {event.name}
+            </Name>
+            <Place variant="deep" numberOfLines={1}>
+              {event.place}
+            </Place>
+            <Row>
+              <EventTime>
+                <Time fill={icon.fill} style={{ marginRight: 5 }} />
+                <Text.Tiny>{event.time}</Text.Tiny>
+              </EventTime>
+              <LinkContainer onPress={onLinkPress}>
+                <Text.Medium size="xsmall" variant="primary">
+                  {link}
+                </Text.Medium>
+              </LinkContainer>
+            </Row>
+          </EventInfo>
+        )}
+      </Event>
+    </TouchableWithoutFeedback>
   );
 };
 

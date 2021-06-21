@@ -143,12 +143,13 @@ const CardPage = () => {
             dayOfWeek: 'thu',
             month: 'dez',
           }}
+          link="Join class"
+          onLinkPress={() => {}}
         />
         <EventCard
           style={{ marginRight: 8, marginLeft: 8 }}
           event={{
-            name:
-              'Yoga Class Long title dshauio dhasuio dhasiuo dhasuiod hasiuo dhasoiu dhasoiud ho',
+            name: 'Yoga Class – This is a very long title',
             place: 'Gympass',
             time: '19 am',
           }}
@@ -174,8 +175,7 @@ const CardPage = () => {
         <EventCard
           style={{ marginRight: 8, marginLeft: 8 }}
           event={{
-            name:
-              'Yoga Class Long title dshauio dhasuio dhasiuo dhasuiod hasiuo dhasoiu dhasoiud ho',
+            name: 'Yoga Class',
             place: 'Gympass',
             time: '19 am',
           }}
@@ -190,8 +190,7 @@ const CardPage = () => {
         <EventCard
           style={{ marginRight: 8, marginLeft: 8 }}
           event={{
-            name:
-              'Yoga Class Long title dshauio dhasuio dhasiuo dhasuiod hasiuo dhasoiu dhasoiud ho',
+            name: 'Yoga Class',
             place: 'Gympass',
             time: '19 am',
           }}
