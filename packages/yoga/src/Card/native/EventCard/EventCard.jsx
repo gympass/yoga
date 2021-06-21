@@ -10,18 +10,14 @@ import Box from '../../../Box';
 const Event = styled(Card)`
   ${({
     theme: {
-      yoga: {
-        components: {
-          card: { event },
-        },
-      },
+      yoga: { radii },
     },
     small,
   }) => `
   flex-direction: row;
   width: ${small ? 56 : 280};
   height: 104px;
-  border-radius: ${event.radii};
+  border-radius: ${radii.regular};
   padding: 0;
   `}
 `;
@@ -29,11 +25,7 @@ const Event = styled(Card)`
 const DateInfo = styled.View`
   ${({
     theme: {
-      yoga: {
-        components: {
-          card: { event },
-        },
-      },
+      yoga: { colors },
     },
     active,
   }) => `
@@ -41,17 +33,13 @@ const DateInfo = styled.View`
     align-items: center;
 
     width: 56px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-top-left-radius: ${event.date.radius}px;
-    border-bottom-left-radius: ${event.date.radius}px;
-    background-color: ${
-      active
-        ? event.date.backgroundColor.active
-        : event.date.backgroundColor.default
-    };
-
+    padding: 20px 0;
+    background-color: ${active ? colors.primary : colors.white};
   `}
+`;
+
+const EventInfo = styled(Box)`
+  flex: 1;
 `;
 
 const Top = styled.View`
@@ -61,65 +49,39 @@ const Top = styled.View`
   margin-bottom: 2px;
 `;
 
-const EventInfo = styled.View`
-  ${({
-    theme: {
-      yoga: {
-        components: {
-          card: { event },
-        },
-      },
-    },
-  }) => `
-    flex: 1;
-    padding: ${event.info.padding.top}px ${event.info.padding.right}px
-      ${event.info.padding.bottom}px ${event.info.padding.left}px;
-  `}
-`;
-
-const Month = styled(Text.Tiny)`
-  text-transform: uppercase;
-`;
-
 const Name = styled(Text.Medium)`
   ${({
     theme: {
-      yoga: {
-        components: {
-          card: { event },
-        },
-      },
+      yoga: { spacing, lineHeights },
     },
   }) => `
-    margin-bottom: ${event.info.name.marginBottom}px;
+    margin-bottom: ${spacing.xxxsmall}px;
+    line-height: ${lineHeights.small}
   `}
 `;
 
 const Place = styled(Text.Tiny)`
   ${({
     theme: {
-      yoga: {
-        components: {
-          card: { event },
-        },
-      },
+      yoga: { spacing },
     },
   }) => `
     width: 180px;
-    margin-bottom: ${event.info.place.marginBottom}px;
+    margin-bottom: ${spacing.xsmall}px;
   `}
 `;
 
-const getIndicatorColor = (active, hasEvent, backgroundColor) => {
-  if (active) return backgroundColor.active;
+const getIndicatorColor = (active, hasEvent, colors) => {
+  if (active) return colors.white;
 
-  return hasEvent ? backgroundColor.default : backgroundColor.disabled;
+  return hasEvent ? colors.primary : colors.light;
 };
 
 const Indicator = styled(Box)`
   ${({
     theme: {
       yoga: {
+        colors,
         components: {
           card: { event },
         },
@@ -130,11 +92,7 @@ const Indicator = styled(Box)`
   }) => `
     width: ${event.indicator.size}px;
     height: ${event.indicator.size}px;
-    background-color: ${getIndicatorColor(
-      active,
-      hasEvent,
-      event.indicator.backgroundColor,
-    )};
+    background-color: ${getIndicatorColor(active, hasEvent, colors)};
   `}
 `;
 
@@ -156,7 +114,9 @@ const DateInfoSmall = ({ date, active, event, onPress }) => {
         )}
       </Top>
       <Text.H5 variant={active ? 'white' : 'secondary'}>{date.day}</Text.H5>
-      <Month variant={active ? 'white' : 'deep'}>{date.month}</Month>
+      <Text.Tiny variant={active ? 'white' : 'deep'}>
+        {String(date.month).toUpperCase()}
+      </Text.Tiny>
     </DateInfo>
   );
 };
@@ -166,7 +126,7 @@ const DateInfoDefault = ({ date }) => {
     <DateInfo active>
       <Text.Tiny inverted>{date.dayOfWeek}</Text.Tiny>
       <Text.H5 inverted>{date.day}</Text.H5>
-      <Month inverted>{date.month}</Month>
+      <Text.Tiny inverted>{String(date.month).toUpperCase()}</Text.Tiny>
     </DateInfo>
   );
 };
@@ -195,7 +155,7 @@ const EventCard = ({
         <DateInfoDefault date={date} />
       )}
       {!small && (
-        <EventInfo>
+        <EventInfo p="small" pl="xsmall">
           <Name numberOfLines={1} size="small">
             {event.name}
           </Name>

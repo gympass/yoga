@@ -61,10 +61,10 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "#D8385E",
-              "borderBottomLeftRadius": 8,
-              "borderTopLeftRadius": 8,
               "justifyContent": "center",
               "paddingBottom": 20,
+              "paddingLeft": 0,
+              "paddingRight": 0,
               "paddingTop": 20,
               "width": 56,
             },
@@ -111,15 +111,16 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
-                "textTransform": "uppercase",
               },
             ]
           }
         >
-          dec
+          DEC
         </Text>
       </View>
       <View
+        p="small"
+        pl="xsmall"
         style={
           Array [
             Object {
@@ -127,7 +128,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
               "flexGrow": 1,
               "flexShrink": 1,
               "paddingBottom": 16,
-              "paddingLeft": 16,
+              "paddingLeft": 12,
               "paddingRight": 16,
               "paddingTop": 16,
             },
@@ -144,7 +145,8 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
                 "fontFamily": "Rubik",
                 "fontSize": 14,
                 "fontWeight": "500",
-                "marginBottom": 8,
+                "lineHeight": 20,
+                "marginBottom": 4,
               },
             ]
           }
@@ -161,7 +163,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
                 "fontSize": 12,
                 "fontWeight": "400",
                 "lineHeight": 16,
-                "marginBottom": 8,
+                "marginBottom": 12,
                 "width": 180,
               },
             ]
