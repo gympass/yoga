@@ -160,6 +160,61 @@ const CardPage = () => {
         />
       </ScrollView>
 
+      <ScrollView horizontal style={{ height: 140 }}>
+        <EventCard
+          style={{ marginRight: 8, marginLeft: 8 }}
+          date={{
+            day: '19',
+            dayOfWeek: 'thu',
+            month: 'dez',
+          }}
+          small
+          onPress={() => {}}
+        />
+        <EventCard
+          style={{ marginRight: 8, marginLeft: 8 }}
+          event={{
+            name:
+              'Yoga Class Long title dshauio dhasuio dhasiuo dhasuiod hasiuo dhasoiu dhasoiud ho',
+            place: 'Gympass',
+            time: '19 am',
+          }}
+          date={{
+            day: '20',
+            dayOfWeek: 'thu',
+            month: 'dez',
+          }}
+          small
+          onPress={() => {}}
+        />
+        <EventCard
+          style={{ marginRight: 8, marginLeft: 8 }}
+          event={{
+            name:
+              'Yoga Class Long title dshauio dhasuio dhasiuo dhasuiod hasiuo dhasoiu dhasoiud ho',
+            place: 'Gympass',
+            time: '19 am',
+          }}
+          date={{
+            day: '21',
+            dayOfWeek: 'thu',
+            month: 'dez',
+          }}
+          small
+          active
+          onPress={() => {}}
+        />
+        <EventCard
+          style={{ marginRight: 8, marginLeft: 8 }}
+          date={{
+            day: '22',
+            dayOfWeek: 'thu',
+            month: 'dez',
+          }}
+          small
+        />
+      </ScrollView>
+
       <DocTitle>Check-in Card</DocTitle>
       <ScrollView horizontal style={{ height: 240 }}>
         <GymCard.CheckIn

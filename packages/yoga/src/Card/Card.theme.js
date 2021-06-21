@@ -133,6 +133,7 @@ const Card = ({
     },
   },
   event: {
+    radii: radii.regular,
     icon: {
       fill: colors.text.primary,
     },
@@ -155,15 +156,41 @@ const Card = ({
         marginBottom: spacing.xxsmall,
       },
     },
+    indicator: {
+      size: spacing.xxsmall,
+      marginBottom: spacing.xxsmall,
+      backgroundColor: {
+        disabled: colors.light,
+        default: colors.primary,
+        active: colors.white,
+      },
+    },
     date: {
-      backgroundColor: colors.primary,
+      backgroundColor: {
+        default: colors.white,
+        active: colors.primary,
+      },
       radius: radii.small,
       dayOfWeek: {
         fontWeight: fontWeights.regular,
         marginBottom: spacing.xxsmall,
+        color: {
+          default: colors.deep,
+          active: colors.white,
+        },
+      },
+      day: {
+        color: {
+          default: colors.text.primary,
+          active: colors.white,
+        },
       },
       month: {
         fontWeight: fontWeights.medium,
+        color: {
+          default: colors.deep,
+          active: colors.white,
+        },
       },
     },
   },
