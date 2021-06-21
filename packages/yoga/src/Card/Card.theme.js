@@ -174,23 +174,9 @@ const Card = ({
       dayOfWeek: {
         fontWeight: fontWeights.regular,
         marginBottom: spacing.xxsmall,
-        color: {
-          default: colors.deep,
-          active: colors.white,
-        },
-      },
-      day: {
-        color: {
-          default: colors.text.primary,
-          active: colors.white,
-        },
       },
       month: {
         fontWeight: fontWeights.medium,
-        color: {
-          default: colors.deep,
-          active: colors.white,
-        },
       },
     },
   },

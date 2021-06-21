@@ -72,7 +72,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
         }
       >
         <Text
-          active={true}
+          inverted={true}
           style={
             Array [
               Object {
@@ -86,7 +86,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
           }
         />
         <Text
-          active={true}
+          inverted={true}
           style={
             Array [
               Object {
@@ -102,14 +102,14 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
           19
         </Text>
         <Text
-          active={true}
+          inverted={true}
           style={
             Array [
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
-                "fontWeight": "500",
+                "fontWeight": "400",
                 "lineHeight": 16,
                 "textTransform": "uppercase",
               },
@@ -136,14 +136,14 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
       >
         <Text
           numberOfLines={1}
+          size="small"
           style={
             Array [
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "400",
-                "lineHeight": 20,
+                "fontSize": 14,
+                "fontWeight": "500",
                 "marginBottom": 8,
               },
             ]
@@ -166,6 +166,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
               },
             ]
           }
+          variant="deep"
         >
           Gympass
         </Text>

@@ -5,6 +5,7 @@ import { Time } from '@gympass/yoga-icons';
 
 import Card from '../Card';
 import Text from '../../../Text';
+import Box from '../../../Box';
 
 const Event = styled(Card)`
   ${({
@@ -76,63 +77,11 @@ const EventInfo = styled.View`
   `}
 `;
 
-const DayOfWeek = styled(Text.Tiny)`
-  ${({
-    theme: {
-      yoga: {
-        components: {
-          card: { event },
-        },
-      },
-    },
-    active,
-  }) => `
-    font-weight: ${event.date.dayOfWeek.fontWeight};
-    color: ${
-      active
-        ? event.date.dayOfWeek.color.active
-        : event.date.dayOfWeek.color.default
-    };
-  `}
-`;
-
-const Day = styled(Text.H5)`
-  ${({
-    theme: {
-      yoga: {
-        components: {
-          card: { event },
-        },
-      },
-    },
-    active,
-  }) => `
-    color: ${
-      active ? event.date.day.color.active : event.date.day.color.default
-    };
-  `}
-`;
-
 const Month = styled(Text.Tiny)`
-  ${({
-    theme: {
-      yoga: {
-        components: {
-          card: { event },
-        },
-      },
-    },
-    active,
-  }) => `
-    font-weight: ${event.date.month.fontWeight};
-    color: ${
-      active ? event.date.month.color.active : event.date.month.color.default
-    };
-    text-transform: uppercase;
-  `}
+  text-transform: uppercase;
 `;
 
-const Name = styled(Text.Small)`
+const Name = styled(Text.Medium)`
   ${({
     theme: {
       yoga: {
@@ -143,7 +92,6 @@ const Name = styled(Text.Small)`
     },
   }) => `
     margin-bottom: ${event.info.name.marginBottom}px;
-    font-size: ${event.info.name.fontSize}px;
   `}
 `;
 
@@ -159,7 +107,6 @@ const Place = styled(Text.Tiny)`
   }) => `
     width: 180px;
     margin-bottom: ${event.info.place.marginBottom}px;
-    color: ${event.info.place.color};
   `}
 `;
 
@@ -169,7 +116,7 @@ const getIndicatorColor = (active, hasEvent, backgroundColor) => {
   return hasEvent ? backgroundColor.default : backgroundColor.disabled;
 };
 
-const Indicator = styled.View`
+const Indicator = styled(Box)`
   ${({
     theme: {
       yoga: {
@@ -183,7 +130,6 @@ const Indicator = styled.View`
   }) => `
     width: ${event.indicator.size}px;
     height: ${event.indicator.size}px;
-    border-radius: ${event.indicator.size}px;
     background-color: ${getIndicatorColor(
       active,
       hasEvent,
@@ -202,13 +148,15 @@ const DateInfoSmall = ({ date, active, event, onPress }) => {
     <DateInfo active={active} small>
       <Top>
         {onPress ? (
-          <Indicator active={active} event={event} />
+          <Indicator borderRadius="small" active={active} event={event} />
         ) : (
-          <DayOfWeek active={active}>{date.dayOfWeek}</DayOfWeek>
+          <Text.Tiny variant={active ? 'white' : 'deep'}>
+            {date.dayOfWeek}
+          </Text.Tiny>
         )}
       </Top>
-      <Day active={active}>{date.day}</Day>
-      <Month active={active}>{date.month}</Month>
+      <Text.H5 variant={active ? 'white' : 'secondary'}>{date.day}</Text.H5>
+      <Month variant={active ? 'white' : 'deep'}>{date.month}</Month>
     </DateInfo>
   );
 };
@@ -216,9 +164,9 @@ const DateInfoSmall = ({ date, active, event, onPress }) => {
 const DateInfoDefault = ({ date }) => {
   return (
     <DateInfo active>
-      <DayOfWeek active>{date.dayOfWeek}</DayOfWeek>
-      <Day active>{date.day}</Day>
-      <Month active>{date.month}</Month>
+      <Text.Tiny inverted>{date.dayOfWeek}</Text.Tiny>
+      <Text.H5 inverted>{date.day}</Text.H5>
+      <Month inverted>{date.month}</Month>
     </DateInfo>
   );
 };
@@ -248,8 +196,12 @@ const EventCard = ({
       )}
       {!small && (
         <EventInfo>
-          <Name numberOfLines={1}>{event.name}</Name>
-          <Place numberOfLines={1}>{event.place}</Place>
+          <Name numberOfLines={1} size="small">
+            {event.name}
+          </Name>
+          <Place variant="deep" numberOfLines={1}>
+            {event.place}
+          </Place>
           <EventTime>
             <Time fill={icon.fill} style={{ marginRight: 5 }} />
             <Text.Tiny>{event.time}</Text.Tiny>
