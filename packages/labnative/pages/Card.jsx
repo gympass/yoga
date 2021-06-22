@@ -130,7 +130,11 @@ const CardPage = () => {
       </ScrollView>
 
       <DocTitle>Event Card</DocTitle>
-      <ScrollView horizontal style={{ height: 140 }}>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={{ height: 140 }}
+      >
         <EventCard
           style={{ marginRight: 8, marginLeft: 8 }}
           event={{
@@ -161,7 +165,11 @@ const CardPage = () => {
         />
       </ScrollView>
 
-      <ScrollView horizontal style={{ height: 140 }}>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={{ height: 140 }}
+      >
         <EventCard
           style={{ marginRight: 8, marginLeft: 8 }}
           date={{

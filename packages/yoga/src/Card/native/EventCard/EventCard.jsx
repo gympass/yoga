@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { shape, string, bool, oneOfType } from 'prop-types';
+import { shape, string, bool, oneOfType, func } from 'prop-types';
 import { Time } from '@gympass/yoga-icons';
 import { TouchableWithoutFeedback } from 'react-native';
 
@@ -9,32 +9,20 @@ import Text from '../../../Text';
 import Box from '../../../Box';
 
 const Event = styled(Card)`
-  ${({
-    theme: {
-      yoga: { radii },
-    },
-    small,
-  }) => `
+  ${({ theme: { yoga }, small }) => `
   flex-direction: row;
-  width: ${small ? 56 : 280}px;
+  width: ${small ? yoga.spacing.xxxlarge : 280}px;
   height: 104px;
-  border-radius: ${radii.regular};
-  padding: 0;
+  border-radius: ${yoga.radii.regular};
+  padding: ${yoga.spacing.zero};
   `}
 `;
 
-const DateInfo = styled.View`
-  ${({
-    theme: {
-      yoga: { colors },
-    },
-    active,
-  }) => `
-    justify-content: center;
-    align-items: center;
-    width: 56px;
-    padding: 20px 0;
-    background-color: ${active ? colors.primary : colors.white};
+const DateInfo = styled(Box)`
+  ${({ theme: { yoga } }) => `
+  justify-content: center;
+  align-items: center;
+  width: ${yoga.spacing.xxxlarge}px;
   `}
 `;
 
@@ -42,32 +30,26 @@ const EventInfo = styled(Box)`
   flex: 1;
 `;
 
-const Top = styled.View`
-  height: 16px;
+const Top = styled(Box)`
+  ${({ theme: { yoga } }) => `
   justify-content: center;
   align-items: center;
-  margin-bottom: 2px;
+  height: ${yoga.spacing.small}px;
+  margin-bottom: ${yoga.spacing.xxxsmall / 2}px;
+  `}
 `;
 
 const Name = styled(Text.Medium)`
-  ${({
-    theme: {
-      yoga: { spacing, lineHeights },
-    },
-  }) => `
-    margin-bottom: ${spacing.xxxsmall}px;
-    line-height: ${lineHeights.small}
+  ${({ theme: { yoga } }) => `
+    margin-bottom: ${yoga.spacing.xxxsmall}px;
+    line-height: ${yoga.lineHeights.small}
   `}
 `;
 
 const Place = styled(Text.Tiny)`
-  ${({
-    theme: {
-      yoga: { spacing },
-    },
-  }) => `
+  ${({ theme: { yoga } }) => `
     width: 180px;
-    margin-bottom: ${spacing.xsmall}px;
+    margin-bottom: ${yoga.spacing.xsmall}px;
   `}
 `;
 
@@ -111,9 +93,14 @@ const LinkContainer = styled.TouchableWithoutFeedback`
   align-self: flex-end;
 `;
 
-const DateInfoSmall = ({ date, active, event, onPress }) => {
+const SmallCard = ({ date, active, event, onPress }) => {
   return (
-    <DateInfo active={active} small>
+    <DateInfo
+      active={active}
+      small
+      pv="medium"
+      bg={active ? 'primary' : 'white'}
+    >
       <Top>
         {onPress ? (
           <Indicator borderRadius="small" active={active} event={event} />
@@ -131,24 +118,11 @@ const DateInfoSmall = ({ date, active, event, onPress }) => {
   );
 };
 
-const DateInfoDefault = ({ date }) => {
-  return (
-    <DateInfo active>
-      <Text.Tiny inverted>{date.dayOfWeek}</Text.Tiny>
-      <Text.H5 inverted>{date.day}</Text.H5>
-      <Text.Tiny inverted>{String(date.month).toUpperCase()}</Text.Tiny>
-    </DateInfo>
-  );
-};
-
-const EventCard = ({
+const FullCard = ({
   event,
   date,
   link,
-  onPress,
   onLinkPress,
-  small,
-  active,
   theme: {
     yoga: {
       components: {
@@ -158,36 +132,45 @@ const EventCard = ({
       },
     },
   },
-  ...rest
 }) => {
   return (
+    <>
+      <DateInfo bg="primary">
+        <Text.Tiny inverted>{date.dayOfWeek}</Text.Tiny>
+        <Text.H5 inverted>{date.day}</Text.H5>
+        <Text.Tiny inverted>{String(date.month).toUpperCase()}</Text.Tiny>
+      </DateInfo>
+      <EventInfo p="small" pl="xsmall">
+        <Name numberOfLines={1} size="small">
+          {event.name}
+        </Name>
+        <Place variant="deep" numberOfLines={1}>
+          {event.place}
+        </Place>
+        <Row>
+          <EventTime>
+            <Time fill={icon.fill} style={{ marginRight: 5 }} />
+            <Text.Tiny>{event.time}</Text.Tiny>
+          </EventTime>
+          <LinkContainer onPress={onLinkPress}>
+            <Text.Medium size="xsmall" variant="primary">
+              {link}
+            </Text.Medium>
+          </LinkContainer>
+        </Row>
+      </EventInfo>
+    </>
+  );
+};
+
+const EventCard = ({ onPress, small, ...rest }) => {
+  return (
     <TouchableWithoutFeedback onPress={onPress}>
-      <Event {...rest} small={small}>
+      <Event small={small} {...rest}>
         {small ? (
-          <DateInfoSmall date={date} event={event} active={active} {...rest} />
+          <SmallCard onPress={onPress} {...rest} />
         ) : (
-          <DateInfoDefault date={date} />
-        )}
-        {!small && (
-          <EventInfo p="small" pl="xsmall">
-            <Name numberOfLines={1} size="small">
-              {event.name}
-            </Name>
-            <Place variant="deep" numberOfLines={1}>
-              {event.place}
-            </Place>
-            <Row>
-              <EventTime>
-                <Time fill={icon.fill} style={{ marginRight: 5 }} />
-                <Text.Tiny>{event.time}</Text.Tiny>
-              </EventTime>
-              <LinkContainer onPress={onLinkPress}>
-                <Text.Medium size="xsmall" variant="primary">
-                  {link}
-                </Text.Medium>
-              </LinkContainer>
-            </Row>
-          </EventInfo>
+          <FullCard {...rest} />
         )}
       </Event>
     </TouchableWithoutFeedback>
@@ -220,15 +203,31 @@ EventCard.defaultProps = {
   event: undefined,
 };
 
-DateInfoDefault.propTypes = {
+SmallCard.propTypes = {
   date: shape({
     day: string,
     dayOfWeek: string,
     month: string,
   }).isRequired,
+  active: bool,
+  event: oneOfType([
+    shape({
+      name: string,
+      place: string,
+      time: string,
+    }),
+    bool,
+  ]),
+  onPress: func,
 };
 
-DateInfoSmall.propTypes = EventCard.propTypes;
+SmallCard.defaultProps = {
+  active: false,
+  event: undefined,
+  onPress: undefined,
+};
+
+FullCard.propTypes = EventCard.propTypes;
 
 EventCard.displayName = 'EventCard';
 
