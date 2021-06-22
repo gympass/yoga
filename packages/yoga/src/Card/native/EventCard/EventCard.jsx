@@ -141,11 +141,13 @@ const FullCard = ({
             <Time fill={icon.fill} style={{ marginRight: 5 }} />
             <Text.Tiny>{event.time}</Text.Tiny>
           </EventTime>
-          <LinkContainer onPress={onLinkPress}>
-            <Text.Medium size="xsmall" variant="primary">
-              {link}
-            </Text.Medium>
-          </LinkContainer>
+          {!!link && (
+            <LinkContainer onPress={onLinkPress}>
+              <Text.Medium size="xsmall" variant="primary">
+                {link}
+              </Text.Medium>
+            </LinkContainer>
+          )}
         </Row>
       </EventInfo>
     </>
