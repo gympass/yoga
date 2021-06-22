@@ -1326,15 +1326,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
             }
           >
             <View
-              active={true}
+              bgColor="white"
               borderRadius="small"
-              event={
-                Object {
-                  "name": "Yoga Class",
-                  "place": "Gympass",
-                  "time": "19 am",
-                }
-              }
               style={
                 Array [
                   Object {
@@ -4087,9 +4080,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
             }
           >
             <View
-              active={false}
+              bgColor="light"
               borderRadius="small"
-              event={false}
               style={
                 Array [
                   Object {
@@ -5467,15 +5459,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
             }
           >
             <View
-              active={false}
+              bgColor="primary"
               borderRadius="small"
-              event={
-                Object {
-                  "name": "Yoga Class",
-                  "place": "Gympass",
-                  "time": "19 am",
-                }
-              }
               style={
                 Array [
                   Object {

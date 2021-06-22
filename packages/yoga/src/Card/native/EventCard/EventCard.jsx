@@ -53,17 +53,15 @@ const Place = styled(Text.Tiny)`
   `}
 `;
 
-const getIndicatorColor = (active, hasEvent, colors) => {
-  if (active) return colors.white;
-
-  return hasEvent ? colors.primary : colors.light;
+const getIndicatorColor = (active, event) => {
+  if (active) return 'white';
+  return event ? 'primary' : 'light';
 };
 
 const Indicator = styled(Box)`
-  ${({ theme: { yoga }, active, event: hasEvent }) => `
+  ${({ theme: { yoga } }) => `
     width: ${yoga.spacing.xxsmall}px;
     height: ${yoga.spacing.xxsmall}px;
-    background-color: ${getIndicatorColor(active, hasEvent, yoga.colors)};
   `}
 `;
 
@@ -82,30 +80,26 @@ const LinkContainer = styled.TouchableWithoutFeedback`
   align-self: flex-end;
 `;
 
-const SmallCard = ({ date, active, event, onPress }) => {
-  return (
-    <DateInfo
-      active={active}
-      small
-      pv="medium"
-      bg={active ? 'primary' : 'white'}
-    >
-      <Top>
-        {onPress ? (
-          <Indicator borderRadius="small" active={active} event={event} />
-        ) : (
-          <Text.Tiny variant={active ? 'white' : 'deep'}>
-            {date.dayOfWeek}
-          </Text.Tiny>
-        )}
-      </Top>
-      <Text.H5 variant={active ? 'white' : 'secondary'}>{date.day}</Text.H5>
-      <Text.Tiny variant={active ? 'white' : 'deep'}>
-        {String(date.month).toUpperCase()}
-      </Text.Tiny>
-    </DateInfo>
-  );
-};
+const SmallCard = ({ date, active, event, onPress }) => (
+  <DateInfo active={active} small pv="medium" bg={active ? 'primary' : 'white'}>
+    <Top>
+      {onPress ? (
+        <Indicator
+          borderRadius="small"
+          bgColor={getIndicatorColor(active, Boolean(event))}
+        />
+      ) : (
+        <Text.Tiny variant={active ? 'white' : 'deep'}>
+          {date.dayOfWeek}
+        </Text.Tiny>
+      )}
+    </Top>
+    <Text.H5 variant={active ? 'white' : 'secondary'}>{date.day}</Text.H5>
+    <Text.Tiny variant={active ? 'white' : 'deep'}>
+      {String(date.month).toUpperCase()}
+    </Text.Tiny>
+  </DateInfo>
+);
 
 const FullCard = ({
   event,
@@ -154,19 +148,17 @@ const FullCard = ({
   );
 };
 
-const EventCard = ({ onPress, small, ...rest }) => {
-  return (
-    <TouchableWithoutFeedback onPress={onPress}>
-      <Event small={small} {...rest}>
-        {small ? (
-          <SmallCard onPress={onPress} {...rest} />
-        ) : (
-          <FullCard {...rest} />
-        )}
-      </Event>
-    </TouchableWithoutFeedback>
-  );
-};
+const EventCard = ({ onPress, small, ...rest }) => (
+  <TouchableWithoutFeedback onPress={onPress}>
+    <Event small={small} {...rest}>
+      {small ? (
+        <SmallCard onPress={onPress} {...rest} />
+      ) : (
+        <FullCard {...rest} />
+      )}
+    </Event>
+  </TouchableWithoutFeedback>
+);
 
 EventCard.propTypes = {
   /** event information: { name (string), place (string), time (string) } */
