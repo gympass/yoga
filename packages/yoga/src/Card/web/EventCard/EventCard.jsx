@@ -78,7 +78,7 @@ const DateInfo = styled.div`
     flex-shrink: 0;
 
     width: 56px;
-    background-color: ${event.date.backgroundColor.active};
+    background-color: ${event.date.backgroundColor};
   `}
 `;
 

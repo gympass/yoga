@@ -383,10 +383,7 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
                   "elevation": "0 2px 6px rgba(152, 152, 166, 0.25)",
                   "event": Object {
                     "date": Object {
-                      "backgroundColor": Object {
-                        "active": "#D8385E",
-                        "default": "#FFFFFF",
-                      },
+                      "backgroundColor": "#D8385E",
                       "dayOfWeek": Object {
                         "fontWeight": 400,
                         "marginBottom": 8,
@@ -398,15 +395,6 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
                     },
                     "icon": Object {
                       "fill": "#231B22",
-                    },
-                    "indicator": Object {
-                      "backgroundColor": Object {
-                        "active": "#FFFFFF",
-                        "default": "#D8385E",
-                        "disabled": "#D7D7E0",
-                      },
-                      "marginBottom": 8,
-                      "size": 8,
                     },
                     "info": Object {
                       "name": Object {
@@ -427,7 +415,6 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
                         "marginBottom": 8,
                       },
                     },
-                    "radii": 16,
                   },
                   "gym": Object {
                     "checkIn": Object {

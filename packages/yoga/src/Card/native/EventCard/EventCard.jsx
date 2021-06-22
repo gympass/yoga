@@ -60,21 +60,10 @@ const getIndicatorColor = (active, hasEvent, colors) => {
 };
 
 const Indicator = styled(Box)`
-  ${({
-    theme: {
-      yoga: {
-        colors,
-        components: {
-          card: { event },
-        },
-      },
-    },
-    active,
-    event: hasEvent,
-  }) => `
-    width: ${event.indicator.size}px;
-    height: ${event.indicator.size}px;
-    background-color: ${getIndicatorColor(active, hasEvent, colors)};
+  ${({ theme: { yoga }, active, event: hasEvent }) => `
+    width: ${yoga.spacing.xxsmall}px;
+    height: ${yoga.spacing.xxsmall}px;
+    background-color: ${getIndicatorColor(active, hasEvent, yoga.colors)};
   `}
 `;
 
