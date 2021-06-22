@@ -19,7 +19,7 @@ const textStyle = type => () => css`
     },
   }) => `
   font-family: ${
-    (fontWeight === 400 || Platform.OS === 'ios') && fontWeight
+    fontWeight === 400 || Platform.OS === 'ios'
       ? baseFont.family
       : `${baseFont.family}-${fontWeight}`
   };
