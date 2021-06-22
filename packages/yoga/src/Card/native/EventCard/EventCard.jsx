@@ -186,12 +186,18 @@ EventCard.propTypes = {
   }).isRequired,
   small: bool,
   active: bool,
+  link: string,
+  onLinkPress: func,
+  onPress: func,
 };
 
 EventCard.defaultProps = {
   small: false,
   active: false,
   event: undefined,
+  link: '',
+  onLinkPress: undefined,
+  onPress: undefined,
 };
 
 SmallCard.propTypes = {

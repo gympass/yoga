@@ -3,24 +3,57 @@ import { render } from '@testing-library/react-native';
 import { ThemeProvider } from '../../..';
 import EventCard from '.';
 
-const event = {
-  name: 'Yoga Class',
-  place: 'Gympass',
-  time: '19 am',
+const defaultProps = {
+  event: {
+    name: 'Yoga Class',
+    place: 'Gympass',
+    time: '19 am',
+  },
+  date: {
+    day: '19',
+    dayOfWeek: 'thu',
+    month: 'dec',
+  },
 };
 
-const date = {
-  day: '19',
-  weekday: 'thu',
-  month: 'dec',
-};
-
-describe('<Card />', () => {
+describe('<EventCard />', () => {
   describe('Snapshots', () => {
-    it('should match snapshot with default EventCard', () => {
+    it('should match snapshot with full EventCard', () => {
       const { container } = render(
         <ThemeProvider>
-          <EventCard event={event} date={date} />
+          <EventCard {...defaultProps} />
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+    it('should match snapshot of small EventCard with event indicator disabled', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <EventCard {...defaultProps} event={false} small onPress={() => {}} />
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+    it('should match snapshot of small EventCard with event indicator enabled', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <EventCard {...defaultProps} small onPress={() => {}} />
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+    it('should match snapshot of small EventCard active', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <EventCard {...defaultProps} small active onPress={() => {}} />
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+    it('should match snapshot of small EventCard with day of week and without indicator', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <EventCard {...defaultProps} small />
         </ThemeProvider>,
       );
       expect(container).toMatchSnapshot();
