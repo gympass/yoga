@@ -1,5 +1,4 @@
 import { css } from 'styled-components';
-import { Platform } from 'react-native';
 import defaultStyle from './sharedTextStyle';
 
 const textStyle = type => () => css`
@@ -19,12 +18,10 @@ const textStyle = type => () => css`
     },
   }) => `
   font-family: ${
-    fontWeight === 400 || Platform.OS === 'ios'
-      ? baseFont.family
-      : `${baseFont.family}-${fontWeight}`
+    fontWeight === 400 ? baseFont.family : `${baseFont.family}-${fontWeight}`
   };
     
-    ${light ? `font-family: ${baseFont.family}-${fontWeights.light};` : ''}
+  ${light ? `font-family: ${baseFont.family}-${fontWeights.light};` : ''}
   `}
 `;
 
