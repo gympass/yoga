@@ -14,6 +14,8 @@ import {
   paddingLeft,
   paddingHorizontal,
   paddingVertical,
+  width,
+  height,
   spacing,
 } from './spacing';
 
@@ -594,6 +596,78 @@ describe('spacings', () => {
       });
 
       const pv = paddingVertical({ theme, pv: 20 });
+      expect(pv).toStrictEqual(expectedNoTheme);
+    });
+  });
+
+  describe('width', () => {
+    it('Should return values for width prop', () => {
+      const expectedZeroSpacing = css({
+        width: spacings.zero,
+      });
+      const expectedMediumSpacing = css({
+        width: spacings.medium,
+      });
+
+      const zero1 = width({ theme, w: 'zero' });
+      const zero2 = width({ theme, width: 'zero' });
+
+      expect(zero1).toStrictEqual(zero2);
+
+      const medium1 = width({ theme, w: 'medium' });
+      const medium2 = width({ theme, width: 'medium' });
+
+      expect(medium1).toStrictEqual(medium2);
+
+      const zeroOptions = [zero1, zero2];
+      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+
+      const mediumOptions = [medium1, medium2];
+      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({
+        width: 20,
+      });
+
+      const pv = width({ theme, w: 20 });
+      expect(pv).toStrictEqual(expectedNoTheme);
+    });
+  });
+
+  describe('height', () => {
+    it('Should return values for height prop', () => {
+      const expectedZeroSpacing = css({
+        height: spacings.zero,
+      });
+      const expectedMediumSpacing = css({
+        height: spacings.medium,
+      });
+
+      const zero1 = height({ theme, h: 'zero' });
+      const zero2 = height({ theme, height: 'zero' });
+
+      expect(zero1).toStrictEqual(zero2);
+
+      const medium1 = height({ theme, h: 'medium' });
+      const medium2 = height({ theme, height: 'medium' });
+
+      expect(medium1).toStrictEqual(medium2);
+
+      const zeroOptions = [zero1, zero2];
+      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+
+      const mediumOptions = [medium1, medium2];
+      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({
+        height: 20,
+      });
+
+      const pv = height({ theme, h: 20 });
       expect(pv).toStrictEqual(expectedNoTheme);
     });
   });
