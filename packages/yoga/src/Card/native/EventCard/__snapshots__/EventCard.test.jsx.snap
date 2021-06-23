@@ -1320,7 +1320,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                   "alignItems": "center",
                   "height": 16,
                   "justifyContent": "center",
-                  "marginBottom": 2,
                 },
               ]
             }
@@ -2699,7 +2698,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                   "alignItems": "center",
                   "height": 16,
                   "justifyContent": "center",
-                  "marginBottom": 2,
                 },
               ]
             }
@@ -4074,7 +4072,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   "alignItems": "center",
                   "height": 16,
                   "justifyContent": "center",
-                  "marginBottom": 2,
                 },
               ]
             }
@@ -5453,7 +5450,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   "alignItems": "center",
                   "height": 16,
                   "justifyContent": "center",
-                  "marginBottom": 2,
                 },
               ]
             }
