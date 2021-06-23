@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.2.1...@gympass/yoga@7.2.2) (2021-06-23)
+
+
+### Bug Fixes
+
+* android font weight issue ([25b36c4](https://github.com/Gympass/yoga/commit/25b36c415120145737d1893baf4584327d33c70f))
+* refactor imports ([4211b03](https://github.com/Gympass/yoga/commit/4211b033b229913c0a9b7af7f85cef57efdbac7d))
+* remove fontweight compare ([15d2e85](https://github.com/Gympass/yoga/commit/15d2e8530b9e31180ad0240d80ef4c916eac703e))
+* update tests ([a7ce28b](https://github.com/Gympass/yoga/commit/a7ce28be8fdf622809dd31701e11d75d5e8d1e53))
+
+
+
+
+
 ## [7.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.2.0...@gympass/yoga@7.2.1) (2021-06-16)
 
 

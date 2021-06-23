@@ -1,11 +1,11 @@
 {
   "name": "@gympass/yoga-doc",
   "description": "Gympass Design System components documentation",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@gympass/yoga": "^7.2.1",
+    "@gympass/yoga": "^7.2.2",
     "@gympass/yoga-common": "^1.0.0",
     "@gympass/yoga-icons": "^1.1.2",
     "@gympass/yoga-system": "^0.1.1",
