@@ -1,29 +1,33 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled, { withTheme, css } from 'styled-components';
 import { shape, string, bool, oneOfType, func } from 'prop-types';
 import { Time } from '@gympass/yoga-icons';
 import { TouchableWithoutFeedback } from 'react-native';
-
+import theme from '../../../Theme/helpers/themeReader';
 import Card from '../Card';
 import Text from '../../../Text';
 import Box from '../../../Box';
 
+const { spacing, radii, lineHeights } = theme;
+
 const Event = styled(Card)`
-  ${({ theme: { yoga }, small }) => `
   flex-direction: row;
-  width: ${small ? yoga.spacing.xxxlarge : 280}px;
   height: 104px;
-  border-radius: ${yoga.radii.regular};
-  padding: ${yoga.spacing.zero};
-  `}
+  border-radius: ${radii.regular}px;
+  padding: ${spacing.zero};
+  width: 280px;
+  ${({ small }) =>
+    small
+      ? css`
+          width: ${spacing.xxxlarge}px;
+        `
+      : ''}
 `;
 
 const DateInfo = styled(Box)`
-  ${({ theme: { yoga } }) => `
   justify-content: center;
   align-items: center;
-  width: ${yoga.spacing.xxxlarge}px;
-  `}
+  width: 56px;
 `;
 
 const EventInfo = styled(Box)`
@@ -31,26 +35,19 @@ const EventInfo = styled(Box)`
 `;
 
 const Top = styled(Box)`
-  ${({ theme: { yoga } }) => `
   justify-content: center;
   align-items: center;
-  height: ${yoga.spacing.small}px;
-  margin-bottom: ${yoga.spacing.xxxsmall / 2}px;
-  `}
+  height: ${spacing.small}px;
 `;
 
 const Name = styled(Text.Medium)`
-  ${({ theme: { yoga } }) => `
-    margin-bottom: ${yoga.spacing.xxxsmall}px;
-    line-height: ${yoga.lineHeights.small}
-  `}
+  margin-bottom: ${spacing.xxxsmall}px;
+  line-height: ${lineHeights.small}px;
 `;
 
 const Place = styled(Text.Tiny)`
-  ${({ theme: { yoga } }) => `
-    width: 180px;
-    margin-bottom: ${yoga.spacing.xsmall}px;
-  `}
+  width: 180px;
+  margin-bottom: ${spacing.xsmall}px;
 `;
 
 const getIndicatorColor = (active, event) => {
@@ -59,10 +56,8 @@ const getIndicatorColor = (active, event) => {
 };
 
 const Indicator = styled(Box)`
-  ${({ theme: { yoga } }) => `
-    width: ${yoga.spacing.xxsmall}px;
-    height: ${yoga.spacing.xxsmall}px;
-  `}
+  width: ${spacing.xxsmall}px;
+  height: ${spacing.xxsmall}px;
 `;
 
 const Row = styled(Box)`
