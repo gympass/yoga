@@ -127,6 +127,24 @@ const paddingVertical = props =>
     transform: toPx,
   });
 
+const width = props =>
+  generator({
+    props,
+    prop: ['width', 'w'],
+    cssProperty: 'width',
+    getter: getSpacing,
+    transform: toPx,
+  });
+
+const height = props =>
+  generator({
+    props,
+    prop: ['height', 'h'],
+    cssProperty: 'height',
+    getter: getSpacing,
+    transform: toPx,
+  });
+
 const spacing = compose(
   margin,
   marginTop,
@@ -142,6 +160,8 @@ const spacing = compose(
   paddingLeft,
   paddingHorizontal,
   paddingVertical,
+  width,
+  height,
 );
 
 export {
@@ -160,4 +180,6 @@ export {
   paddingHorizontal,
   paddingVertical,
   spacing,
+  width,
+  height,
 };
