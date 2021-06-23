@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import defaultStyle from './textStyle';
+import defaultStyle from './sharedTextStyle';
 
 const textStyle = type => () => css`
   ${defaultStyle(type)};
@@ -17,8 +17,11 @@ const textStyle = type => () => css`
       },
     },
   }) => `
-    ${fontWeight !== 400 ? `-${fontWeight}` : ''};
-    ${light ? `font-family: ${baseFont.family}-${fontWeights.light};` : ''}
+  font-family: ${
+    fontWeight === 400 ? baseFont.family : `${baseFont.family}-${fontWeight}`
+  };
+    
+  ${light ? `font-family: ${baseFont.family}-${fontWeights.light};` : ''}
   `}
 `;
 
