@@ -7,6 +7,7 @@ import theme from '../../../Theme/helpers/themeReader';
 import Card from '../Card';
 import Text from '../../../Text';
 import Box from '../../../Box';
+import Button from '../../../Button';
 
 const { spacing, radii, lineHeights } = theme;
 
@@ -50,6 +51,10 @@ const Place = styled(Text.Tiny)`
   margin-bottom: ${spacing.xsmall}px;
 `;
 
+const Day = styled(Text.H5)`
+  margin: ${spacing.xxxsmall}px 0;
+`;
+
 const getIndicatorColor = (active, event) => {
   if (active) return 'white';
   return event ? 'primary' : 'light';
@@ -71,7 +76,7 @@ const EventTime = styled(Box)`
   align-items: center;
 `;
 
-const LinkContainer = styled.TouchableWithoutFeedback`
+const ButtonLink = styled(Button.Link)`
   align-self: flex-end;
 `;
 
@@ -89,7 +94,7 @@ const SmallCard = ({ date, active, event, onPress }) => (
         </Text.Tiny>
       )}
     </Top>
-    <Text.H5 variant={active ? 'white' : 'secondary'}>{date.day}</Text.H5>
+    <Day variant={active ? 'white' : 'secondary'}>{date.day}</Day>
     <Text.Tiny variant={active ? 'white' : 'deep'}>
       {String(date.month).toUpperCase()}
     </Text.Tiny>
@@ -114,8 +119,10 @@ const FullCard = ({
   return (
     <>
       <DateInfo bg="primary">
-        <Text.Tiny inverted>{date.dayOfWeek}</Text.Tiny>
-        <Text.H5 inverted>{date.day}</Text.H5>
+        <Top>
+          <Text.Tiny inverted>{date.dayOfWeek}</Text.Tiny>
+        </Top>
+        <Day inverted>{date.day}</Day>
         <Text.Tiny inverted>{String(date.month).toUpperCase()}</Text.Tiny>
       </DateInfo>
       <EventInfo p="small" pl="xsmall">
@@ -131,11 +138,9 @@ const FullCard = ({
             <Text.Tiny>{event.time}</Text.Tiny>
           </EventTime>
           {!!link && (
-            <LinkContainer onPress={onLinkPress}>
-              <Text.Medium size="xsmall" variant="primary">
-                {link}
-              </Text.Medium>
-            </LinkContainer>
+            <ButtonLink onPress={onLinkPress} small>
+              {link}
+            </ButtonLink>
           )}
         </Row>
       </EventInfo>

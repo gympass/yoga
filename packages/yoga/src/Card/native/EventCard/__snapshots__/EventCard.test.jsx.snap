@@ -267,7 +267,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                   "font": Object {
                     "size": Object {
                       "default": 16,
-                      "small": 14,
+                      "small": 12,
                     },
                     "weight": 500,
                   },
@@ -1348,6 +1348,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 28,
+                  "marginBottom": 4,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 4,
                 },
               ]
             }
@@ -1645,7 +1649,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                   "font": Object {
                     "size": Object {
                       "default": 16,
-                      "small": 14,
+                      "small": 12,
                     },
                     "weight": 500,
                   },
@@ -2728,6 +2732,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 28,
+                  "marginBottom": 4,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 4,
                 },
               ]
             }
@@ -3019,7 +3027,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   "font": Object {
                     "size": Object {
                       "default": 16,
-                      "small": 14,
+                      "small": 12,
                     },
                     "weight": 500,
                   },
@@ -4100,6 +4108,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 28,
+                  "marginBottom": 4,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 4,
                 },
               ]
             }
@@ -4397,7 +4409,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   "font": Object {
                     "size": Object {
                       "default": 16,
-                      "small": 14,
+                      "small": 12,
                     },
                     "weight": 500,
                   },
@@ -5478,6 +5490,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 28,
+                  "marginBottom": 4,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 4,
                 },
               ]
             }
@@ -5775,7 +5791,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                   "font": Object {
                     "size": Object {
                       "default": 16,
-                      "small": 14,
+                      "small": 12,
                     },
                     "weight": 500,
                   },
@@ -6816,22 +6832,34 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
             ]
           }
         >
-          <Text
-            inverted={true}
+          <View
             style={
               Array [
                 Object {
-                  "color": "#FFFFFF",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
+                  "alignItems": "center",
+                  "height": 16,
+                  "justifyContent": "center",
                 },
               ]
             }
           >
-            thu
-          </Text>
+            <Text
+              inverted={true}
+              style={
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Rubik",
+                    "fontSize": 12,
+                    "fontWeight": "400",
+                    "lineHeight": 16,
+                  },
+                ]
+              }
+            >
+              thu
+            </Text>
+          </View>
           <Text
             inverted={true}
             style={
@@ -6842,6 +6870,10 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                   "fontSize": 20,
                   "fontWeight": "500",
                   "lineHeight": 28,
+                  "marginBottom": 4,
+                  "marginLeft": 0,
+                  "marginRight": 0,
+                  "marginTop": 4,
                 },
               ]
             }
