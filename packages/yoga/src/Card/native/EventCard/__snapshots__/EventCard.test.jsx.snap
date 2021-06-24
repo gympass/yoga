@@ -1349,8 +1349,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                   "fontWeight": "500",
                   "lineHeight": 28,
                   "marginBottom": 4,
-                  "marginLeft": 0,
-                  "marginRight": 0,
                   "marginTop": 4,
                 },
               ]
@@ -2733,8 +2731,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                   "fontWeight": "500",
                   "lineHeight": 28,
                   "marginBottom": 4,
-                  "marginLeft": 0,
-                  "marginRight": 0,
                   "marginTop": 4,
                 },
               ]
@@ -4109,8 +4105,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   "fontWeight": "500",
                   "lineHeight": 28,
                   "marginBottom": 4,
-                  "marginLeft": 0,
-                  "marginRight": 0,
                   "marginTop": 4,
                 },
               ]
@@ -5491,8 +5485,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   "fontWeight": "500",
                   "lineHeight": 28,
                   "marginBottom": 4,
-                  "marginLeft": 0,
-                  "marginRight": 0,
                   "marginTop": 4,
                 },
               ]
@@ -6871,8 +6863,6 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                   "fontWeight": "500",
                   "lineHeight": 28,
                   "marginBottom": 4,
-                  "marginLeft": 0,
-                  "marginRight": 0,
                   "marginTop": 4,
                 },
               ]

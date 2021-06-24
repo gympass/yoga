@@ -52,7 +52,8 @@ const Place = styled(Text.Tiny)`
 `;
 
 const Day = styled(Text.H5)`
-  margin: ${spacing.xxxsmall}px 0;
+  margin-top: ${spacing.xxxsmall}px;
+  margin-bottom: ${spacing.xxxsmall}px;
 `;
 
 const getIndicatorColor = (active, event) => {
