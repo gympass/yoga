@@ -79,6 +79,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://joaovicdsantos.github.io/"><img src="https://avatars.githubusercontent.com/u/24553367?v=4?s=100" width="100px;" alt=""/><br /><sub><b>João Victor</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=joaovicdsantos" title="Documentation">📖</a></td>
     <td align="center"><a href="http://wendler.dev"><img src="https://avatars.githubusercontent.com/u/6570553?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Wendler Eis</b></sub></a><br /><a href="https://github.com/Gympass/yoga/issues?q=author%3AWendlereis" title="Bug reports">🐛</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/tjamancio"><img src="https://avatars.githubusercontent.com/u/43884476?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Thiago Amâncio</b></sub></a><br /><a href="#design-tjamancio" title="Design">🎨</a> <a href="https://github.com/Gympass/yoga/issues?q=author%3Atjamancio" title="Bug reports">🐛</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
