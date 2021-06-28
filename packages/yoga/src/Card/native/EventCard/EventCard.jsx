@@ -90,14 +90,12 @@ const SmallCard = ({ date, active, event, onPress }) => (
           bgColor={getIndicatorColor(active, Boolean(event))}
         />
       ) : (
-        <Text.Tiny variant={active ? 'white' : 'deep'}>
-          {date.dayOfWeek}
-        </Text.Tiny>
+        <Text.Tiny variant={active ? 'white' : 'deep'}>{date.month}</Text.Tiny>
       )}
     </Top>
     <Day variant={active ? 'white' : 'secondary'}>{date.day}</Day>
     <Text.Tiny variant={active ? 'white' : 'deep'}>
-      {String(date.month).toUpperCase()}
+      {String(date.dayOfWeek).toUpperCase()}
     </Text.Tiny>
   </DateInfo>
 );
@@ -121,10 +119,10 @@ const FullCard = ({
     <>
       <DateInfo bg="primary">
         <Top>
-          <Text.Tiny inverted>{date.dayOfWeek}</Text.Tiny>
+          <Text.Tiny inverted>{date.month}</Text.Tiny>
         </Top>
         <Day inverted>{date.day}</Day>
-        <Text.Tiny inverted>{String(date.month).toUpperCase()}</Text.Tiny>
+        <Text.Tiny inverted>{String(date.dayOfWeek).toUpperCase()}</Text.Tiny>
       </DateInfo>
       <EventInfo p="small" pl="xsmall">
         <Name numberOfLines={1} size="small">

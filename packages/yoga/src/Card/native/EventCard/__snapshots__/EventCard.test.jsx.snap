@@ -1371,7 +1371,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
             }
             variant="white"
           >
-            DEC
+            THU
           </Text>
         </View>
       </View>
@@ -2718,7 +2718,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
               }
               variant="deep"
             >
-              thu
+              dec
             </Text>
           </View>
           <Text
@@ -2753,7 +2753,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
             }
             variant="deep"
           >
-            DEC
+            THU
           </Text>
         </View>
       </View>
@@ -4127,7 +4127,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
             }
             variant="deep"
           >
-            DEC
+            THU
           </Text>
         </View>
       </View>
@@ -5507,7 +5507,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
             }
             variant="deep"
           >
-            DEC
+            THU
           </Text>
         </View>
       </View>
@@ -6849,7 +6849,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                 ]
               }
             >
-              thu
+              dec
             </Text>
           </View>
           <Text
@@ -6884,7 +6884,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
               ]
             }
           >
-            DEC
+            THU
           </Text>
         </View>
         <View
