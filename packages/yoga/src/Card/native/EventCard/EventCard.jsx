@@ -88,7 +88,7 @@ const SmallCard = ({
   event,
   onPress,
 }) => (
-  <DateInfo active={active} small pv="medium" bg={active ? 'primary' : 'white'}>
+  <DateInfo small pv="medium" bg={active ? 'primary' : 'white'}>
     <Top>
       {onPress ? (
         <Indicator

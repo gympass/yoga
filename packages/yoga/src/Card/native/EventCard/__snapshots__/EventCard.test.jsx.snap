@@ -1297,7 +1297,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
         variant=""
       >
         <View
-          active={true}
           bg="primary"
           pv="medium"
           small={true}
@@ -2678,7 +2677,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
         variant=""
       >
         <View
-          active={false}
           bg="white"
           pv="medium"
           small={true}
@@ -4055,7 +4053,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
         variant=""
       >
         <View
-          active={false}
           bg="white"
           pv="medium"
           small={true}
@@ -5436,7 +5433,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
         variant=""
       >
         <View
-          active={false}
           bg="white"
           pv="medium"
           small={true}
