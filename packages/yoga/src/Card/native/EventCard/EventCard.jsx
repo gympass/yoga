@@ -17,6 +17,7 @@ const Event = styled(Card)`
   border-radius: ${radii.regular}px;
   padding: ${spacing.zero};
   width: 280px;
+  margin-right: ${spacing.xxsmall};
   ${({ small }) =>
     small
       ? css`
@@ -81,7 +82,12 @@ const ButtonLink = styled(Button.Link)`
   align-self: flex-end;
 `;
 
-const SmallCard = ({ date, active, event, onPress }) => (
+const SmallCard = ({
+  date: { month, day, dayOfWeek },
+  active,
+  event,
+  onPress,
+}) => (
   <DateInfo active={active} small pv="medium" bg={active ? 'primary' : 'white'}>
     <Top>
       {onPress ? (
@@ -90,19 +96,19 @@ const SmallCard = ({ date, active, event, onPress }) => (
           bgColor={getIndicatorColor(active, Boolean(event))}
         />
       ) : (
-        <Text.Tiny variant={active ? 'white' : 'deep'}>{date.month}</Text.Tiny>
+        <Text.Tiny variant={active ? 'white' : 'deep'}>{month}</Text.Tiny>
       )}
     </Top>
-    <Day variant={active ? 'white' : 'secondary'}>{date.day}</Day>
+    <Day variant={active ? 'white' : 'secondary'}>{day}</Day>
     <Text.Tiny variant={active ? 'white' : 'deep'}>
-      {String(date.dayOfWeek).toUpperCase()}
+      {String(dayOfWeek).toUpperCase()}
     </Text.Tiny>
   </DateInfo>
 );
 
 const FullCard = ({
   event,
-  date,
+  date: { month, day, dayOfWeek },
   link,
   onLinkPress,
   theme: {
@@ -114,38 +120,36 @@ const FullCard = ({
       },
     },
   },
-}) => {
-  return (
-    <>
-      <DateInfo bg="primary">
-        <Top>
-          <Text.Tiny inverted>{date.month}</Text.Tiny>
-        </Top>
-        <Day inverted>{date.day}</Day>
-        <Text.Tiny inverted>{String(date.dayOfWeek).toUpperCase()}</Text.Tiny>
-      </DateInfo>
-      <EventInfo p="small" pl="xsmall">
-        <Name numberOfLines={1} size="small">
-          {event.name}
-        </Name>
-        <Place variant="deep" numberOfLines={1}>
-          {event.place}
-        </Place>
-        <Row>
-          <EventTime>
-            <Time fill={icon.fill} style={{ marginRight: 5 }} />
-            <Text.Tiny>{event.time}</Text.Tiny>
-          </EventTime>
-          {!!link && (
-            <ButtonLink onPress={onLinkPress} small>
-              {link}
-            </ButtonLink>
-          )}
-        </Row>
-      </EventInfo>
-    </>
-  );
-};
+}) => (
+  <>
+    <DateInfo bg="primary">
+      <Top>
+        <Text.Tiny inverted>{month}</Text.Tiny>
+      </Top>
+      <Day inverted>{day}</Day>
+      <Text.Tiny inverted>{String(dayOfWeek).toUpperCase()}</Text.Tiny>
+    </DateInfo>
+    <EventInfo p="small" pl="xsmall">
+      <Name numberOfLines={1} size="small">
+        {event.name}
+      </Name>
+      <Place variant="deep" numberOfLines={1}>
+        {event.place}
+      </Place>
+      <Row>
+        <EventTime>
+          <Time fill={icon.fill} style={{ marginRight: 5 }} />
+          <Text.Tiny>{event.time}</Text.Tiny>
+        </EventTime>
+        {!!link && (
+          <ButtonLink onPress={onLinkPress} small>
+            {link}
+          </ButtonLink>
+        )}
+      </Row>
+    </EventInfo>
+  </>
+);
 
 const EventCard = ({ onPress, small, ...rest }) => (
   <TouchableWithoutFeedback onPress={onPress}>

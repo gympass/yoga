@@ -136,7 +136,6 @@ const CardPage = () => {
         style={{ height: 140 }}
       >
         <EventCard
-          style={{ marginRight: 8, marginLeft: 8 }}
           event={{
             name: 'Yoga Class in Vila Olimpia',
             place: 'Gympass - Live the Mission',
@@ -151,7 +150,6 @@ const CardPage = () => {
           onLinkPress={() => {}}
         />
         <EventCard
-          style={{ marginRight: 8, marginLeft: 8 }}
           event={{
             name: 'Yoga Class – This is a very long title',
             place: 'Gympass',
@@ -171,7 +169,6 @@ const CardPage = () => {
         style={{ height: 140 }}
       >
         <EventCard
-          style={{ marginRight: 8, marginLeft: 8 }}
           date={{
             day: '19',
             dayOfWeek: 'thu',
@@ -181,7 +178,6 @@ const CardPage = () => {
           onPress={() => {}}
         />
         <EventCard
-          style={{ marginRight: 8, marginLeft: 8 }}
           event={{
             name: 'Yoga Class',
             place: 'Gympass',
@@ -196,7 +192,6 @@ const CardPage = () => {
           onPress={() => {}}
         />
         <EventCard
-          style={{ marginRight: 8, marginLeft: 8 }}
           event={{
             name: 'Yoga Class',
             place: 'Gympass',
@@ -212,7 +207,6 @@ const CardPage = () => {
           onPress={() => {}}
         />
         <EventCard
-          style={{ marginRight: 8, marginLeft: 8 }}
           date={{
             day: '22',
             dayOfWeek: 'thu',
