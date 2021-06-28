@@ -1,0 +1,62 @@
+### Reference
+
+Gympass `<List />` component implements all our design guidelines, be sure to wrap your items with `<List.Item/>` that uses default spacing, border and color pallete tokens.
+
+If you need to use an anchor, `<List.LinkItem/>` is also available.
+
+### Usage
+
+```javascript state
+const SwitchLine = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+render(() => {
+  const [locker, toggleLocker] = useState(false);
+  const [wifi, toggleWifi] = useState(false);
+  const [parking, toggleParking] = useState(false);
+
+  return (
+    <List>
+      <List.Item>
+        <SwitchLine>
+          <span>Locker</span>
+          <Checkbox.Switch
+            checked={locker}
+            onChange={() => toggleLocker(!locker)}
+          />
+        </SwitchLine>
+      </List.Item>
+
+      <List.Item>
+        <SwitchLine>
+          <span>Wi-fi</span>
+          <Checkbox.Switch checked={wifi} onChange={() => toggleWifi(!wifi)} />
+        </SwitchLine>
+      </List.Item>
+
+      <List.Item>
+        <SwitchLine>
+          <span>Parking</span>
+          <Checkbox.Switch
+            checked={parking}
+            onChange={() => toggleParking(!parking)}
+          />
+        </SwitchLine>
+      </List.Item>
+
+      <List.LinkItem
+        href="https://www.gympass.com/"
+        target="_blank"
+      >
+        <Text>Link</Text>
+      </List.LinkItem>
+    </List>
+  );
+});
+```
+
+### Props
+
+<PropsTable component="List" platform="web" />

@@ -1,0 +1,26 @@
+### Reference
+
+Gympass `<Card />` component can be used to display content related to a single subject.
+The content can consist of multiple elements of varying types and sizes.
+
+### Usage
+
+```javascript type=expo
+<Card style={{ width: 250 }} ribbon={{ text: 'Add a Ribbon, if you want' }}>
+  <Card.Header>
+    <Text.H1>Hello,</Text.H1>
+  </Card.Header>
+
+  <Card.Content>
+    <Text>This is a Card component, you can use it to display a content.</Text>
+  </Card.Content>
+
+  <Card.Actions>
+    <Button.Link>You can add actions as well</Button.Link>
+  </Card.Actions>
+</Card>
+```
+
+### Props
+
+<PropsTable component="Card" platform="native" />

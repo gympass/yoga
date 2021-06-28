@@ -1,0 +1,183 @@
+---
+title: 'Grid'
+metaTitle: 'Grid'
+metaDescription: 'Grid Component'
+---
+
+# Grid
+
+Use the grid components to easily create complex responsive layouts.
+
+## Breakpoints
+
+We have 8 breakpoints going from `xxsmall` to `xxxlarge`.
+
+| **Breakpoint** | **Col prop** | **Value** |
+| -------------- | ------------ | --------- |
+| xxsmall        | xxs          | `0`       |
+| xsmall         | xs           | `360`     |
+| small          | sm           | `480`     |
+| medium         | md           | `768`     |
+| large          | lg           | `1024`    |
+| xlarge         | xl           | `1200`    |
+| xxlarge        | xxl          | `1366`    |
+| xxxlarge       | xxxl         | `1600`    |
+
+## Container
+
+Containers provide a way to center and horizontally pad your site’s contents.
+Use `<Container />` for a centered container _with margins_ around and
+`max-width` of `1600px` or `<Container fluid />` for a 100% width
+_without margins_ across all viewport and device sizes.
+
+## Row
+
+Rows are wrappers for columns.
+
+## Col
+
+`<Col />` indicate the number of columns you’d like to use out of the possible
+**12** per row. So, if you want three equal-width columns across, you can use
+`<Col xxs={4} />`.
+
+Each column has horizontal padding (called gutter) of `24px` in desktop or
+`16px` in mobile resolutions for controlling the space between them.
+
+```javascript reactLive=true
+<Container>
+  <Row>
+    <Col xxs={4}>Column</Col>
+    <Col xxs={4}>Column</Col>
+    <Col xxs={4}>Column</Col>
+  </Row>
+</Container>
+```
+
+Another example. Let suppose that you have a column like this:
+`<Col xxs={12} md={6} />`, it will fill 12 columns until the viewport reaches
+the medium breakpoint then, it will fill 6 columns.
+
+```javascript reactLive=true
+<Container>
+  <Row>
+    <Col xxs={12} md={6}>
+      Column
+    </Col>
+  </Row>
+</Container>
+```
+
+(Resize your browser to see `xxsmall` breakpoint in action)
+
+### Starting in a determined position
+
+You can start a column in a predetermined grid position. If you want a layout
+that starts from the third position and fill the 10 remaining, you can do:
+`<Col xxs-start={3} xxs={10} />`.
+
+Every breakpoint has its own `start` keyword.
+
+```javascript reactLive=true
+<Container>
+  <Row>
+    <Col xxs-start={3} xxs={10}>
+      Column
+    </Col>
+  </Row>
+</Container>
+```
+
+See another complex example:
+
+```javascript reactLive=true
+<Container>
+  <Row>
+    <Col xxs={4}>Column</Col>
+    <Col xxs-start={9} xxs={4}>
+      Column
+    </Col>
+  </Row>
+  <Row>
+    <Col xxs={2}>Column</Col>
+    <Col xxs={4} xxs-start={5}>
+      Column
+    </Col>
+    <Col xxs={2} xxs-start={11}>
+      Column
+    </Col>
+  </Row>
+</Container>
+```
+
+### Hiding columns
+
+It's possible to hide columns in some breakpoint, you can use the `hide` prop to
+do it. This prop accepts an array of breakpoints.
+
+```javascript reactLive=true
+<Container>
+  <Row>
+    <Col xxs={4}>Column</Col>
+    <Col xxs={4}>Column</Col>
+    <Col xxs={4} hide={['xl']}>
+      Column
+    </Col>
+  </Row>
+</Container>
+```
+
+In the example above the third column will be hided _only_ in the xlarge
+breakpoint.
+
+## Hide
+
+You can use the `<Hide />` to hide some elements of your layout. It renders a
+`div` with a media query to apply the `display: none` style.
+
+Check the example below:
+
+```javascript reactLive=true
+<Container>
+  <Row>
+    <Col xxs={12}>
+      <div style={{ background: '#fafafa' }}>
+        <header>Header</header>
+        <main>
+          <div>Some content</div>
+          <Hide xl>
+            <div style={{ background: '#fba' }}>
+              This content will be hidden <strong>only</strong> in xlarge
+              breakpoint
+            </div>
+          </Hide>
+        </main>
+        <footer>Footer</footer>
+      </div>
+    </Col>
+  </Row>
+</Container>
+```
+
+If you want to hide something in all breakpoints starting from specific one,
+use it with the `-start` sufix: `md-start`.
+
+```javascript reactLive=true
+<Container>
+  <Row>
+    <Col xxs={12}>
+      <div style={{ background: '#fafafa' }}>
+        <div>Here we have some content hided in the medium breakpoint.</div>
+        <div>Open the code example or resize the browser to see it.</div>
+        <Hide md-start>
+          <div style={{ background: '#fba' }}>
+            This content will be hidden
+            <strong>in all breakpoints starting from medium breakpoint</strong>
+          </div>
+        </Hide>
+      </div>
+    </Col>
+  </Row>
+</Container>
+```
+
+You can mix the breakpoint props to hide in one, several or all of them.

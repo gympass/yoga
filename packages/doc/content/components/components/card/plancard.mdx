@@ -1,0 +1,38 @@
+---
+title: 'Plan'
+metaTitle: 'Plan Card Component'
+metaDescription: 'Plan Card are used to apply a container around a related
+grouping of information about Gympass plans.'
+---
+
+import PlanCardWeb from './plancard-web.mdx';
+import PlanCardNative from './plancard-native.mdx';
+
+# PlanCard
+
+Gympass `<PlanCard />` component is used to display content related to an user's
+plan.
+
+```jsx type=highlight
+<PlanCard>
+  <PlanCard.Tag />
+  <PlanCard.Content>
+    <PlanCard.Subtitle />
+  </PlanCard.Content>
+  <PlanCard.List>
+    <PlanCard.ListItem />
+    <PlanCard.ListItem />
+  </PlanCard.List>
+  <PlanCard.Actions />
+</PlanCard>
+```
+
+<TabbedView>
+  <Tab title="Web">
+    <PlanCardWeb />
+  </Tab>
+
+  <Tab title="Native">
+    <PlanCardNative />
+  </Tab>
+</TabbedView>

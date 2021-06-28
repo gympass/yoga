@@ -1,0 +1,51 @@
+---
+title: 'Getting started'
+metaTitle: 'Getting started'
+metaDescription: 'This is the Getting started'
+order: 0
+---
+
+import GettingStartedWeb from './default-web.mdx';
+import GettingStartedNative from './default-native.mdx';
+
+## Getting Started
+
+Gympass design-system's follows design guidelines specification, we developed a React and React Native UI library that contains a set of high quality components that defines our interfaces.
+
+An important note is that the **styled-components** is a peerDependency [see why](https://styled-components.com/docs/faqs#i-am-a-library-author-should-i-bundle-styledcomponents-with-my-library), if you dont have styled-components installed you'll [need to install](https://styled-components.com/docs/basics#installation).
+
+### Installing
+
+In order to install our design-system just run:
+
+```bash type=highlight
+yarn add @gympass/yoga
+
+// or
+
+npm install @gympass/yoga
+```
+
+### Usage
+
+An important point in using it is that your whole application must be wrapped in our `ThemeProvider` component:
+
+```javascript type=highlight
+import { ThemeProvider, Button } from '@gympass/yoga';
+
+const App = () => (
+  <ThemeProvider>
+    <Button>Find an activity</Button>
+  </ThemeProvider>
+);
+```
+
+<TabbedView>
+  <Tab title="Web">
+    <GettingStartedWeb />
+  </Tab>
+
+  <Tab title="Native">
+    <GettingStartedNative />
+  </Tab>
+</TabbedView>

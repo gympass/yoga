@@ -1,0 +1,46 @@
+### Usage
+
+```javascript type=expo state
+const { useState } = React;
+
+const RatingPage = () => {
+  const [rating, setRating] = useState(2);
+
+  return (
+    <ThemeProvider>
+      <ScrollView
+        style={{
+          width: '100%',
+          marginBottom: 50,
+          padding: 10,
+        }}
+        contentContainerStyle={{
+          alignItems: 'center',
+          justifyContent: 'center',
+          paddingBottom: 60,
+        }}
+      >
+        <Text>Rating</Text>
+
+        <Rating value={1} />
+        <Rating value={1.5} />
+        <Rating value={2} />
+        <Rating value={2.5} />
+        <Rating value={3} />
+        <Rating value={3.5} />
+        <Rating value={4} />
+        <Rating value={4.5} />
+
+        <Text>Working</Text>
+        <Rating readOnly={false} value={rating} onRate={setRating} />
+      </ScrollView>
+    </ThemeProvider>
+  );
+};
+
+export default RatingPage;
+```
+
+### Props
+
+<PropsTable component="Rating" platform="native" />

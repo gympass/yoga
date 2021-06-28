@@ -1,0 +1,62 @@
+### Usage
+
+```javascript state
+const Center = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+render(
+  <Center>
+    <Rating value={1} />
+    <Rating value={1.5} />
+    <Rating value={2} />
+    <Rating value={2.5} />
+    <Rating value={3} />
+    <Rating value={3.5} />
+    <Rating value={4} />
+    <Rating value={4.5} />
+  </Center>,
+);
+```
+
+### Working
+
+```javascript state
+const Center = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+render(() => {
+  const [rating, setRating] = useState(2);
+
+  return <Rating value={rating} onRate={setRating} readOnly={false} />;
+});
+```
+
+### Custom Icons
+
+```javascript state
+const Center = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+render(
+  <Center>
+    <Rating value={1} />
+    <Rating icon={{ type: FavoriteFilled }} value={1.5} />
+    <Rating icon={{ type: LikeFilled }} value={2} />
+    <Rating icon={{ type: CompassFilled }} value={2.5} />
+    <Rating icon={{ type: DislikeFilled }} value={3} />
+    <Rating icon={{ type: UserFilled }} value={3.5} />
+    <Rating icon={{ type: SmartphoneFilled }} value={4} />
+    <Rating icon={{ type: PlayFilled }} value={4.5} />
+  </Center>,
+);
+```
+
+### Props
+
+<PropsTable component="Rating" platform="web" />

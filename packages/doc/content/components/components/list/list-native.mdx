@@ -1,0 +1,27 @@
+### Reference
+
+Gympass List component extends from react-native's `FlatList` you can check it out <a target="_blank" href="https://facebook.github.io/react-native/docs/flatlist">here</a>. Flatlist is a performant interface for rendering basic, flat lists, supporting the most handy features. We extend `FlatList` implementing all our design guidelines, be sure to wrap your items with `<List.Item/>` that uses default spacing, border and color pallete tokens.
+
+### Usage
+
+```javascript type=expo
+<List
+  data={[
+    { key: 'Locker', checked: true },
+    { key: 'Wi-fi', checked: false },
+    { key: 'Parking', checked: false },
+  ]}
+  renderItem={({ item }) => (
+    <List.Item
+      style={{ flexDirection: 'row', justifyContent: 'space-between' }}
+    >
+      <Text>{item.key}</Text>
+      <Checkbox.Switch checked={item.checked} />
+    </List.Item>
+  )}
+/>
+```
+
+### Props
+
+<PropsTable component="List" platform="native" />

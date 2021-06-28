@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Row /> Snapshots should match snapshot with default Row 1`] = `
+.c0 {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(12,1fr);
+}
+
+@media (min-width:0px) {
+  .c0 {
+    grid-column-gap: 16px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    grid-column-gap: 24px;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  />
+</div>
+`;

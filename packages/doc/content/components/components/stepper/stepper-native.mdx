@@ -1,0 +1,80 @@
+### Reference
+
+Gympass `<Stepper />` component is used to guide the user through determined steps.
+
+### Usage
+
+```javascript type=expo state=true
+const { useState } = React;
+
+const App = () => {
+  const [activeStep, setActiveStep] = useState(0);
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#ecf0f1',
+    },
+    stepper: {
+      height: 50,
+      width: 320,
+    },
+    text: {
+      textAlign: 'center',
+      marginTop: 20,
+    },
+    buttons: {
+      width: 200,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      marginTop: 50,
+    },
+  });
+
+  return (
+    <ThemeProvider>
+      <View style={styles.container}>
+        <View style={styles.stepper}>
+          <Stepper activeStep={activeStep}>
+            <Stepper.Step label="Confirm Booking" />
+            <Stepper.Step label="Class Booked">
+              <View style={styles.text}>Steps can have childrens too</View>
+            </Stepper.Step>
+            <Stepper.Step label="Check-in" />
+          </Stepper>
+        </View>
+
+        <View style={styles.buttons}>
+          <Button
+            small
+            onClick={() => setActiveStep(activeStep - 1)}
+            disabled={activeStep === 0}
+          >
+            Previous
+          </Button>
+
+          <Button
+            small
+            onClick={() => setActiveStep(activeStep + 1)}
+            disabled={activeStep === 2}
+          >
+            Next
+          </Button>
+        </View>
+      </View>
+    </ThemeProvider>
+  );
+};
+export default App;
+```
+
+### Props
+
+#### Stepper
+
+<PropsTable component="Stepper" platform="native" />
+
+#### Stepper.Step
+
+<PropsTable component="Stepper.Step" platform="native" />

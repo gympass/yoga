@@ -1,0 +1,260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with checked switch 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    checked={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        checked={true}
+        disabled={false}
+        style={
+          Object {
+            "backgroundColor": "rgba(152, 152, 166, 1)",
+            "borderRadius": 9999,
+            "display": "flex",
+            "height": 24,
+            "justifyContent": "center",
+            "width": 48,
+          }
+        }
+      >
+        <View
+          checked={true}
+          disabled={false}
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "elevation": 4,
+              "height": 20,
+              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 6,
+              "transform": Array [
+                Object {
+                  "translateX": 2,
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with default switch 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        checked={false}
+        disabled={false}
+        style={
+          Object {
+            "backgroundColor": "rgba(216, 56, 94, 1)",
+            "borderRadius": 9999,
+            "display": "flex",
+            "height": 24,
+            "justifyContent": "center",
+            "width": 48,
+          }
+        }
+      >
+        <View
+          checked={false}
+          disabled={false}
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "elevation": 4,
+              "height": 20,
+              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 6,
+              "transform": Array [
+                Object {
+                  "translateX": 26,
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with disabled and checked switch 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    checked={true}
+    disabled={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        checked={true}
+        disabled={true}
+        style={
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 9999,
+            "display": "flex",
+            "height": 24,
+            "justifyContent": "center",
+            "width": 48,
+          }
+        }
+      >
+        <View
+          checked={true}
+          disabled={true}
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "elevation": 4,
+              "height": 20,
+              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 6,
+              "transform": Array [
+                Object {
+                  "translateX": 2,
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with disabled switch 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    disabled={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        checked={false}
+        disabled={true}
+        style={
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 9999,
+            "display": "flex",
+            "height": 24,
+            "justifyContent": "center",
+            "width": 48,
+          }
+        }
+      >
+        <View
+          checked={false}
+          disabled={true}
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "elevation": 4,
+              "height": 20,
+              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 1,
+              "shadowRadius": 6,
+              "transform": Array [
+                Object {
+                  "translateX": 26,
+                },
+              ],
+              "width": 20,
+            }
+          }
+        />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;

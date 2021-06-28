@@ -1,0 +1,600 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tag /> should match snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "#9898A6",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "width": "auto",
+        },
+      ]
+    }
+    variant=""
+  >
+    <Text
+      inverted={false}
+      light={false}
+      size="medium"
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          Object {
+            "color": "#6B6B78",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
+          },
+        ]
+      }
+    >
+      default
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Tag /> should match snapshot with custom icon and informative type 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C1EEDB",
+          "borderColor": "#C1EEDB",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="success"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={16}
+        bbWidth={16}
+        fill="#231B22"
+        focusable={false}
+        height={16}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginRight": 4,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 16,
+              "width": 16,
+            },
+          ]
+        }
+        width={16}
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4280490786,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+      <Text
+        inverted={false}
+        light={false}
+        size="medium"
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#231B22",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        success with custom icon
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Tag /> should match snapshot with variant prop 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "#1D856C",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="success"
+  >
+    <Text
+      inverted={false}
+      light={false}
+      size="medium"
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          Object {
+            "color": "#1D856C",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
+          },
+        ]
+      }
+    >
+      success
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "#7068D4",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="informative"
+  >
+    <Text
+      inverted={false}
+      light={false}
+      size="medium"
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          Object {
+            "color": "#7068D4",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
+          },
+        ]
+      }
+    >
+      informative
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "#FF874C",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="attention"
+  >
+    <Text
+      inverted={false}
+      light={false}
+      size="medium"
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "400",
+            "lineHeight": 24,
+          },
+          Object {
+            "color": "#FF874C",
+            "fontSize": 12,
+            "fontWeight": "500",
+            "lineHeight": 16,
+          },
+        ]
+      }
+    >
+      attention
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Tag /> should match snapshot with variant prop and informative type 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C1EEDB",
+          "borderColor": "#C1EEDB",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="success"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        inverted={false}
+        light={false}
+        size="medium"
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#231B22",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        success
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#E0DFFF",
+          "borderColor": "#E0DFFF",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="informative"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        inverted={false}
+        light={false}
+        size="medium"
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#231B22",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        informative
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FCD6C3",
+          "borderColor": "#FCD6C3",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="attention"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        inverted={false}
+        light={false}
+        size="medium"
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#231B22",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        attention
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Tag /> should match snapshot with without icon and informative type 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C1EEDB",
+          "borderColor": "#C1EEDB",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="success"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        inverted={false}
+        light={false}
+        size="medium"
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "400",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#231B22",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        success without icon
+      </Text>
+    </View>
+  </View>
+</View>
+`;

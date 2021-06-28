@@ -1,0 +1,225 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "ggdaltoso",
+      "name": "Gabriel Daltoso",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6536985?v=4",
+      "profile": "https://twitter.com/ggdaltoso",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc",
+        "review"
+      ]
+    },
+    {
+      "login": "allyssonsantos",
+      "name": "Allysson dos Santos",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/13424727?v=4",
+      "profile": "https://twitter.com/_allyssonsantos",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc",
+        "review"
+      ]
+    },
+    {
+      "login": "victormath12",
+      "name": "Victor Caetano",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/11219999?v=4",
+      "profile": "https://br.linkedin.com/in/victor-matheus-jesus-caetano-9633b5118",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc",
+        "review"
+      ]
+    },
+    {
+      "login": "alan-oliv",
+      "name": "Alan Oliveira",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4368481?v=4",
+      "profile": "https://twitter.com/oalanoliv",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc",
+        "review"
+      ]
+    },
+    {
+      "login": "tcK1",
+      "name": "Kaic Bastidas",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/9873486?v=4",
+      "profile": "http://linkedin.com/in/kaicbastidas",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc"
+      ]
+    },
+    {
+      "login": "luispiresgympass",
+      "name": "Luis Pires",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/58981184?v=4",
+      "profile": "https://github.com/luispiresgympass",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "invilliaanajacobsen",
+      "name": "invilliaanajacobsen",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/57181206?v=4",
+      "profile": "https://github.com/invilliaanajacobsen",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "caioalexandrebr",
+      "name": "Caio Alexandre",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/31045534?v=4",
+      "profile": "http://www.caioalexandre.com",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "thayllachristine",
+      "name": "Thaylla Christine",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/38869416?v=4",
+      "profile": "https://github.com/thayllachristine",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "evilamaior",
+      "name": "Esthéfanie Vila Maior",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46816386?v=4",
+      "profile": "https://github.com/evilamaior",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "geovanasilva",
+      "name": "Geovana Silva",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13040713?v=4",
+      "profile": "http://geovanasilva.dev/",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "coelhucas",
+      "name": "Lucas Coelho",
+      "avatar_url": "https://avatars.githubusercontent.com/u/28108272?v=4",
+      "profile": "https://lucascoelho.dev/",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc"
+      ]
+    },
+    {
+      "login": "andrerocha22",
+      "name": "André Rocha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39251409?v=4",
+      "profile": "https://github.com/andrerocha22",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "katharinepadilha",
+      "name": "Katharine Padilha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14188981?v=4",
+      "profile": "https://medium.com/@katharinep",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "thiagogympass",
+      "name": "thiagogympass",
+      "avatar_url": "https://avatars.githubusercontent.com/u/75859418?v=4",
+      "profile": "https://github.com/thiagogympass",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "alycecristines",
+      "name": "Alyce Cristine",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44280864?v=4",
+      "profile": "https://www.linkedin.com/in/alycecristines/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "nypacheco",
+      "name": "Nathália Pacheco",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12848917?v=4",
+      "profile": "https://github.com/nypacheco",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "matheushenrique1",
+      "name": "Matheus Henrique",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32910717?v=4",
+      "profile": "https://github.com/matheushenrique1",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Dario-Felipe",
+      "name": "Dário Felipe",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59899974?v=4",
+      "profile": "http://www.linkedin.com/in/dariofelipe",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "joaovicdsantos",
+      "name": "João Victor",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24553367?v=4",
+      "profile": "https://joaovicdsantos.github.io/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Wendlereis",
+      "name": "Wendler Eis",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6570553?v=4",
+      "profile": "http://wendler.dev",
+      "contributions": [
+        "bug"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "yoga",
+  "projectOwner": "Gympass",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}

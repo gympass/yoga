@@ -1,0 +1,46 @@
+### Usage
+
+```javascript type=expo
+<PlanCard>
+  <PlanCard.Tag variant="informative">Recommended for you</PlanCard.Tag>
+  <PlanCard.Content
+    title="Basic"
+    currency="$"
+    price="99.90"
+    period="/month"
+  >
+    <PlanCard.Subtitle>Get access to</PlanCard.Subtitle>
+    <PlanCard.List>
+      <PlanCard.ListItem icon={MapPin} text="2.900 gyms and studios" />
+      <PlanCard.ListItem icon={Smartphone} text="24 wellness app" />
+      <PlanCard.ListItem
+        icon={
+          <Icon
+            as={Star}
+            height="small"
+            width="small"
+            stroke="medium"
+          />
+        }
+        text="1-on-1 training sessions"
+      />
+    </PlanCard.List>
+  </PlanCard.Content>
+  <PlanCard.Actions>
+    <PlanCard.Button>Select this plan</PlanCard.Button>
+    <PlanCard.ButtonText>See what's included</PlanCard.ButtonText>
+  </PlanCard.Actions>
+</PlanCard>
+```
+
+#### Props - PlanCard
+
+<PropsTable component="PlanCard" platform="web" />
+
+#### Props - PlanCard.Content
+
+<PropsTable component="PlanCard.Content" platform="web" />
+
+#### Props - PlanCard.ListItem
+
+<PropsTable component="PlanCard.ListItem" platform="web" />

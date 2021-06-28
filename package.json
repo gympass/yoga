@@ -1,0 +1,100 @@
+{
+  "scripts": {
+    "commit": "git-cz",
+    "clean": "lerna clean -y && lerna run prebuild --scope=@gympass/yoga-doc",
+    "test": "NODE_ENV=test jest --config=./jest/config/config.js",
+    "pretest": "lerna run prebuild --ignore=@gympass/yoga-doc",
+    "test:native": "NODE_ENV=test jest --config=./jest/config/native.js",
+    "test:helpers": "NODE_ENV=test jest --config=./jest/config/helpers.js",
+    "test:system": "NODE_ENV=test jest --config=./jest/config/system.js",
+    "test:web": "NODE_ENV=test jest --config=./jest/config/web.js",
+    "prettier": "prettier",
+    "dev:web": "lerna run dev --scope=@gympass/yoga-doc --stream",
+    "dev:native:android": "lerna run android --scope=@gympass/yoga-labnative --stream",
+    "dev:native:ios": "lerna run ios --scope=@gympass/yoga-labnative --stream",
+    "lint": "eslint --ext js,jsx,android.jsx,ios.jsx",
+    "lint:yoga": "NODE_ENV=test yarn lint packages/yoga",
+    "lint:doc": "NODE_ENV=test yarn lint packages/doc",
+    "lint:labnative": "NODE_ENV=test yarn lint packages/labnative",
+    "lint:tokens": "NODE_ENV=test yarn lint packages/tokens",
+    "lint:common": "NODE_ENV=test yarn lint packages/common",
+    "lint:system": "NODE_ENV=test yarn lint packages/system",
+    "lint:all": "NODE_ENV=test yarn lint packages",
+    "deploy:doc": "lerna run deploy --scope=@gympass/yoga-doc",
+    "build:yoga": "lerna run build --scope=@gympass/yoga",
+    "build:helpers": "lerna run build --scope=@gympass/yoga-helpers --stream",
+    "build:common": "lerna run build --scope=@gympass/yoga-common --stream",
+    "build:tokens": "lerna run build --scope=@gympass/yoga-tokens --stream",
+    "build:doc": "lerna run build --scope=@gympass/yoga-doc --stream",
+    "build:packages": "lerna run build --ignore=@gympass/yoga-doc --stream",
+    "build:system": "lerna run build --scope=@gympass/yoga-system --stream",
+    "build": "lerna run build --stream --parallel",
+    "new": "node ./scripts/cli/index.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.6.3",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@testing-library/jest-native": "^3.0.2",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-import-glob": "^2.0.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "6.2.0",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "3.1.0",
+    "fs-extra": "^8.1.0",
+    "git-last-commit": "^1.0.0",
+    "husky": "3.0.5",
+    "jest": "^24.9.0",
+    "jest-styled-components": "^6.3.3",
+    "lerna": "^3.18.3",
+    "lint-staged": "9.2.5",
+    "metro-react-native-babel-preset": "^0.56.0",
+    "prettier": "1.18.2",
+    "react-native": "^0.61.2",
+    "yargs": "^15.1.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "@gympass/yoga-labnative/react-native*",
+      "@gympass/yoga-labnative/react-native*/**",
+      "@gympass/yoga-labnative/@react-navigation*",
+      "@gympass/yoga-labnative/@react-navigation/**",
+      "**/@react-navigation",
+      "**/@react-navigation/**",
+      "**/@react-navigation/core/",
+      "**/@react-navigation/core/**"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "yarn lint:all",
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

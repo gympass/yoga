@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
+.c2 {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  box-sizing: border-box;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 52px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  color: #231B22;
+  font-family: Rubik,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c2:focus {
+  color: #231B22;
+}
+
+.c2:focus ~ legend {
+  max-width: 1000px;
+  -webkit-transition-property: max-width;
+  transition-property: max-width;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.c2:focus ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size,color;
+  -webkit-transition-property: transform,font-size,color;
+  transition-property: transform,font-size,color;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
+  font-weight: 400;
+  color: #231B22;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+  color: #D7D7E0;
+}
+
+.c2::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2::placeholder {
+  color: #6B6B78;
+}
+
+.c2[type="number"]::-webkit-outer-spin-button,
+.c2[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c2:invalid {
+  box-shadow: none;
+}
+
+.c1 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 320px;
+  height: 52px;
+  padding-left: 12px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D7D7E0;
+}
+
+.c1:hover,
+.c1:focus-within {
+  border-color: #231B22;
+}
+
+.c4 {
+  position: relative;
+  padding: 0;
+  max-width: 0;
+  width: auto;
+  height: 0;
+  font-weight: normal;
+  visibility: hidden;
+  -webkit-transition-property: max-width,padding;
+  transition-property: max-width,padding;
+  font-size: 12px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  -webkit-transition-duration: 100ms;
+  transition-duration: 100ms;
+}
+
+.c5 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.c3 {
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  pointer-events: none;
+  position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 16px;
+  left: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6B6B78;
+  -webkit-transition-property: -webkit-transform,font-size;
+  -webkit-transition-property: transform,font-size;
+  transition-property: transform,font-size;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+}
+
+.c0 {
+  box-sizing: border-box;
+  width: 320px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <fieldset
+      class="c1"
+      label="Label"
+    >
+      <input
+        class="c2"
+        type="tel"
+        value=""
+      />
+      <label
+        class="c3"
+      >
+        Label
+      </label>
+      <legend
+        class="c4"
+      >
+        <span
+          class="c5"
+        >
+          Label
+        </span>
+      </legend>
+      
+    </fieldset>
+  </div>
+</div>
+`;

@@ -1,0 +1,40 @@
+---
+title: 'Outline'
+metaTitle: 'Button.Outline'
+metaDescription: 'Button outline looks and behavior'
+---
+
+# Button.Outline
+
+### Reference
+
+#### Web only
+
+Gympass `<Button />` component implements all our design guidelines such as default spacings, borders and color pallete tokens.
+You can use all differente compounds like `<Button />` and `<Button.Text />` combining with their props such as `small` or `inverted` so the button become the desired variation.
+
+### Usage
+
+#### Default
+
+```javascript
+<div style={{ display: 'flex', justifyContent: 'space-evenly', width: '100%' }}>
+  <Button.Outline>Find an activity</Button.Outline>
+  <Button.Outline secondary>Find an activity</Button.Outline>
+</div>
+```
+
+#### With icon
+
+```javascript
+<div style={{ display: 'flex', justifyContent: 'space-evenly', width: '100%' }}>
+  <Button.Outline icon={Booking}>Find an activity</Button.Outline>
+  <Button.Outline icon={Booking} secondary>
+    Find an activity
+  </Button.Outline>
+</div>
+```
+
+### Props
+
+<PropsTable component="Button.Outline" platform="web" />

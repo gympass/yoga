@@ -1,0 +1,22 @@
+### Usage
+
+```javascript state
+render(() => {
+  const [value, setValue] = useState('');
+
+  return (
+    <Input
+      label="Find an activity"
+      helper="Helper text"
+      maxLength={20}
+      value={value}
+      onChange={e => setValue(e.target.value)}
+      onClean={cleaned => setValue(cleaned)}
+    />
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Input" platform="web" />

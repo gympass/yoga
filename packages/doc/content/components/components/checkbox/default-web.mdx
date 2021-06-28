@@ -1,0 +1,22 @@
+### Usage
+
+```javascript state
+render(() => {
+  const [checked, toggleChecked] = useState(false);
+  const onChange = () => toggleChecked(!checked);
+
+  return (
+    <Checkbox
+      checked={checked}
+      onChange={onChange}
+      value="checkbox-value"
+      label="Checkbox"
+      helper="Checkbox Helper"
+    />
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Checkbox" platform="web" />

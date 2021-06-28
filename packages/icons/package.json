@@ -1,0 +1,42 @@
+{
+  "name": "@gympass/yoga-icons",
+  "version": "1.1.2",
+  "description": "Yoga icon package",
+  "keywords": [
+    "yoga",
+    "icon",
+    "react"
+  ],
+  "homepage": "https://github.com/Gympass/yoga/tree/master/packages/icons",
+  "license": "MIT",
+  "main": "./src",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gympass/yoga.git"
+  },
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "yarn build:native && yarn build:web && yarn build:esm",
+    "build:web": "NODE_ENV=web babel ./src --out-dir dist/cjs --extensions '.svg,.js'",
+    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm --extensions '.svg,.js'",
+    "prebuild:native": "yarn build:native:svg",
+    "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
+    "build:native:svg": "NODE_ENV=svg babel ./src --out-dir dist/cjs --extensions '.svg' --out-file-extension .native.js",
+    "prepublishOnly": "node ../../scripts/prepublish.js --rn"
+  },
+  "devDependencies": {
+    "@dr.pogodin/babel-preset-svgr": "^1.0.3",
+    "babel-plugin-transform-rename-import": "^2.3.0"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-native-svg": ">=9.13.3"
+  },
+  "bugs": {
+    "url": "https://github.com/Gympass/yoga/issues"
+  }
+}

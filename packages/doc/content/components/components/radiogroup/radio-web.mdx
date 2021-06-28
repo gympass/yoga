@@ -1,0 +1,29 @@
+### Usage
+
+```javascript state
+render(() => {
+  const [selectedValue, setSelectedValue] = useState('now');
+
+  return (
+    <RadioGroup
+      name="openning"
+      selectedValue={selectedValue}
+      onChange={({ target: { value } }) => setSelectedValue(value)}
+    >
+      <RadioGroup.Radio style={{ marginRight: 4 }} value="24h" />
+      <RadioGroup.Radio style={{ marginRight: 4 }} value="now" />
+      <RadioGroup.Radio value="sundays" />
+    </RadioGroup>
+  );
+});
+```
+
+### Props
+
+#### RadioGroup
+
+<PropsTable component="RadioGroup" platform="web" />
+
+#### RadioGroup.Radio
+
+<PropsTable component="RadioGroup.Radio" platform="web" />

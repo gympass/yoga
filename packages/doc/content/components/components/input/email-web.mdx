@@ -1,0 +1,21 @@
+### Usage
+
+```javascript state
+render(() => {
+  const [value, setValue] = useState('');
+
+  return (
+    <Input.Email
+      label="E-mail"
+      helper="Insert a valid e-mail address"
+      value={value}
+      onChange={e => setValue(e.target.value)}
+      onClean={cleaned => setValue(cleaned)}
+    />
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Input" platform="web" />

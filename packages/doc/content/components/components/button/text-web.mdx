@@ -1,0 +1,30 @@
+### Reference
+
+Gympass `<Button />` component implements all our design guidelines such as default spacings, borders and color pallete tokens.
+You can use all differente compounds like `<Button.Outline />` and `<Button />` combining with their props such as `small` or `inverted` so the button become the desired variation.
+
+### Usage
+
+#### Default
+
+```javascript
+<div style={{ display: 'flex', justifyContent: 'space-evenly', width: '100%' }}>
+  <Button.Text>Find an activity</Button.Text>
+  <Button.Text secondary>Find an activity</Button.Text>
+</div>
+```
+
+#### With icon
+
+```javascript
+<div style={{ display: 'flex', justifyContent: 'space-evenly', width: '100%' }}>
+  <Button.Text icon={Booking}>Find an activity</Button.Text>
+  <Button.Text icon={Booking} secondary>
+    Find an activity
+  </Button.Text>
+</div>
+```
+
+### Props
+
+<PropsTable component="Button" platform="web" />

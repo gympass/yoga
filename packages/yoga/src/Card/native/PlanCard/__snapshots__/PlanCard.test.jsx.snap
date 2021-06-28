@@ -1,0 +1,1029 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "elevation": 4,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "elevation": 4,
+            "overflow": "hidden",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "maxWidth": 288,
+            "overflow": "hidden",
+            "paddingBottom": 32,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 64,
+            "position": "relative",
+            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
+            "width": "100%",
+          },
+        ]
+      }
+      variant=""
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#710252",
+              "height": 8,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+          ]
+        }
+        variant="deepPurple"
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#E0DFFF",
+              "borderColor": "#E0DFFF",
+              "borderRadius": 4,
+              "borderWidth": 1,
+              "justifyContent": "center",
+              "paddingBottom": 4,
+              "paddingLeft": 8,
+              "paddingRight": 8,
+              "paddingTop": 4,
+              "width": "auto",
+            },
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "left": 20,
+              "position": "absolute",
+              "top": 28,
+            },
+          ]
+        }
+        variant="informative"
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "center",
+              },
+            ]
+          }
+        >
+          <Text
+            inverted={false}
+            light={false}
+            size="medium"
+            style={
+              Array [
+                Object {
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                  "lineHeight": 24,
+                },
+                Object {
+                  "color": "#231B22",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "lineHeight": 16,
+                },
+              ]
+            }
+          >
+            Recommended Plan
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "marginBottom": 8,
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          plan
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 20,
+                "fontWeight": "500",
+                "lineHeight": 28,
+                "marginBottom": 4,
+              },
+            ]
+          }
+        >
+          Basic
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+                "marginBottom": 32,
+                "marginTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            align="flex-start"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-start",
+                  "marginRight": 4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
+              }
+            >
+              $
+            </Text>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 32,
+                  "fontWeight": "500",
+                  "lineHeight": 40,
+                },
+              ]
+            }
+          >
+            99.90
+          </Text>
+          <View
+            align="flex-end"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-end",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
+              }
+            >
+              /month
+            </Text>
+          </View>
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "marginBottom": 8,
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          Get access to
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "marginTop": 16,
+                "minHeight": 92,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "marginBottom": 16,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "marginRight": 12,
+                    },
+                  ]
+                }
+              >
+                <RNSVGSvgView
+                  bbHeight={16}
+                  bbWidth={16}
+                  focusable={false}
+                  height={16}
+                  stroke="#9898A6"
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      undefined,
+                      Object {
+                        "opacity": 1,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 16,
+                        "width": 16,
+                      },
+                    ]
+                  }
+                  width={16}
+                >
+                  <RNSVGGroup
+                    fill={
+                      Array [
+                        0,
+                        4278190080,
+                      ]
+                    }
+                    fillOpacity={1}
+                    fillRule={1}
+                    font={Object {}}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "stroke",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={
+                      Array [
+                        0,
+                        4288190630,
+                      ]
+                    }
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  />
+                </RNSVGSvgView>
+              </View>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#231B22",
+                      "fontFamily": "Rubik",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "lineHeight": 20,
+                    },
+                  ]
+                }
+              >
+                gyms and studios
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "marginBottom": 16,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  Array [
+                    Object {
+                      "marginRight": 12,
+                    },
+                  ]
+                }
+              >
+                <RNSVGSvgView
+                  bbHeight={16}
+                  bbWidth={16}
+                  fill="#9898A6"
+                  focusable={false}
+                  height={16}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      undefined,
+                      Object {
+                        "opacity": 1,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 16,
+                        "width": 16,
+                      },
+                    ]
+                  }
+                  width={16}
+                >
+                  <RNSVGGroup
+                    fill={
+                      Array [
+                        0,
+                        4288190630,
+                      ]
+                    }
+                    fillOpacity={1}
+                    fillRule={1}
+                    font={Object {}}
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    opacity={1}
+                    originX={0}
+                    originY={0}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotation={0}
+                    scaleX={1}
+                    scaleY={1}
+                    skewX={0}
+                    skewY={0}
+                    stroke={null}
+                    strokeDasharray={null}
+                    strokeDashoffset={null}
+                    strokeLinecap={0}
+                    strokeLinejoin={0}
+                    strokeMiterlimit={4}
+                    strokeOpacity={1}
+                    strokeWidth={1}
+                    vectorEffect={0}
+                    x={0}
+                    y={0}
+                  />
+                </RNSVGSvgView>
+              </View>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#231B22",
+                      "fontFamily": "Rubik",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "lineHeight": 20,
+                    },
+                  ]
+                }
+              >
+                list item
+              </Text>
+            </View>
+            <TouchableWithoutFeedback>
+              <View
+                style={
+                  Array [
+                    Object {
+                      "marginTop": 12,
+                    },
+                  ]
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#231B22",
+                        "fontFamily": "Rubik",
+                        "fontSize": 12,
+                        "fontWeight": "500",
+                      },
+                    ]
+                  }
+                >
+                  button
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        <TouchableWithoutFeedback
+          full={true}
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              disabled={false}
+              full={true}
+              inverted={false}
+              pressed={false}
+              secondary={false}
+              small={false}
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#D8385E",
+                    "borderRadius": 9999,
+                    "flexDirection": "row",
+                    "height": 48,
+                    "justifyContent": "center",
+                    "paddingLeft": 24,
+                    "paddingRight": 24,
+                    "width": "100%",
+                  },
+                ]
+              }
+            >
+              <Text
+                color="#FFFFFF"
+                disabled={false}
+                inverted={false}
+                pressed={false}
+                small={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#FFFFFF",
+                      "fontFamily": "Rubik",
+                      "fontSize": 16,
+                      "fontWeight": "500",
+                      "textAlign": "center",
+                    },
+                  ]
+                }
+              >
+                Select this plan
+              </Text>
+            </View>
+          </View>
+        </TouchableWithoutFeedback>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "elevation": 4,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "elevation": 4,
+            "overflow": "hidden",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "maxWidth": 288,
+            "overflow": "hidden",
+            "paddingBottom": 32,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 64,
+            "position": "relative",
+            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
+            "width": "100%",
+          },
+        ]
+      }
+      variant=""
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#1D856C",
+              "height": 8,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+          ]
+        }
+        variant="hope"
+      />
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "marginBottom": 8,
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          plan
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 20,
+                "fontWeight": "500",
+                "lineHeight": 28,
+                "marginBottom": 4,
+              },
+            ]
+          }
+        >
+          Basic
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+                "marginBottom": 32,
+                "marginTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            align="flex-start"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-start",
+                  "marginRight": 4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
+              }
+            >
+              $
+            </Text>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 32,
+                  "fontWeight": "500",
+                  "lineHeight": 40,
+                },
+              ]
+            }
+          >
+            99.90
+          </Text>
+          <View
+            align="flex-end"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-end",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
+              }
+            >
+              MXN/month
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "elevation": 4,
+          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 6,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 8,
+            "elevation": 4,
+            "overflow": "hidden",
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          },
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "maxWidth": 288,
+            "overflow": "hidden",
+            "paddingBottom": 32,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 64,
+            "position": "relative",
+            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 6,
+            "width": "100%",
+          },
+        ]
+      }
+      variant=""
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#1D856C",
+              "height": 8,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+          ]
+        }
+        variant="hope"
+      />
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "marginBottom": 8,
+                "textTransform": "uppercase",
+              },
+            ]
+          }
+        >
+          plan
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 20,
+                "fontWeight": "500",
+                "lineHeight": 28,
+                "marginBottom": 4,
+              },
+            ]
+          }
+        >
+          Basic
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "flexDirection": "row",
+                "marginBottom": 32,
+                "marginTop": 16,
+              },
+            ]
+          }
+        >
+          <View
+            align="flex-start"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-start",
+                  "marginRight": 4,
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
+              }
+            >
+              $
+            </Text>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 32,
+                  "fontWeight": "500",
+                  "lineHeight": 40,
+                },
+              ]
+            }
+          >
+            99.90
+          </Text>
+          <View
+            align="flex-end"
+            style={
+              Array [
+                Object {
+                  "alignSelf": "flex-end",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "400",
+                    "lineHeight": 20,
+                  },
+                ]
+              }
+            >
+              /month
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

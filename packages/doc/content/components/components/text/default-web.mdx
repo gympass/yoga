@@ -1,0 +1,59 @@
+### Simple Usage
+
+```javascript reactLive=true
+<Text.H1>Live the mission</Text.H1>
+```
+
+### All Usage
+
+```javascript reactLive=true
+<div style={{ width: 500 }}>
+  <Text.H1 variant="primary">Live the mission</Text.H1>
+  <Text.H2 variant="secondary">Live the mission</Text.H2>
+  <Text.H3>Live the mission</Text.H3>
+  <Text.H4>Live the mission</Text.H4>
+  <Text>Live the mission</Text>
+  <br />
+  <Text.Small>Live the mission</Text.Small>
+  <Text.Tiny>Live the mission</Text.Tiny>
+  <Text.Regular>Live the mission</Text.Regular>
+  <Text.Medium>Live the mission</Text.Medium>
+  <Text.Bold>Live the mission</Text.Bold>
+  <Text.Black>Live the mission</Text.Black>
+  <Text.SectionTitle>Live the mission</Text.SectionTitle>
+  <Text.SmallestException>Live the mission</Text.SmallestException>
+  <br />
+  <Text.Small size="xsmall">Live the small mission</Text.Small>
+  <Text.Tiny size="medium">Live the medium mission</Text.Tiny>
+  <Text.Regular size="xlarge">Live the xlarge mission</Text.Regular>
+  <Text.Medium size="xxxlarge">Live the xxxlarge mission</Text.Medium>
+  <br />
+  <Text.Medium numberOfLines={2} size="xxxlarge">Live the truncated mission<br />After two lines</Text.Medium>
+  <Text variant="vibin">Live the mission</Text>
+  <Text variant="hope">Live the mission</Text>
+  <Text variant="energy">Live the mission</Text>
+  <Text variant="relax">Live the mission</Text>
+  <Text variant="peace">Live the mission</Text>
+  <Text variant="verve">Live the mission</Text>
+  <Text variant="uplift">Live the mission</Text>
+  <Text variant="deepPurple">Live the mission</Text>
+  <Text variant="stamina">Live the mission</Text>
+  <Text variant="dark">Live the mission</Text>
+  <Text variant="medium">Live the mission</Text>
+  <Text variant="deep">Live the mission</Text>
+  <Text variant="light">Live the mission</Text>
+  <Text variant="clear">Live the mission</Text>
+  <Text variant="white">Live the mission</Text>
+</div>
+```
+
+### Gympass fonts
+
+All Yoga components uses its own font family based on
+[font design token](https://gympass.github.io/yoga/guidelines/tokens/fonts)
+provided by the `<ThemeProvider />`, if you are using Server Side Rendening
+(SSR) you need to import the `<FontLoader />` in your `<Head>`.
+
+### Props
+
+<PropsTable component="Text" platform="web" />

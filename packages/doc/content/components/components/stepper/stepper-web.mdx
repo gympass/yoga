@@ -1,0 +1,73 @@
+### Reference
+
+Gympass `<Stepper />` component is used to guide the user through determined steps.
+
+### Usage
+
+You can use it with or without children.
+
+#### Simple
+
+```javascript state=true
+render(() => {
+  const [activeStep, setActiveStep] = useState(0);
+
+  const Section = styled.div`
+    text-align: center;
+    padding: 20px;
+  `;
+
+  const Actions = styled.div`
+    display: flex;
+    justify-content: space-between;
+  `;
+
+  return (
+    <Stepper activeStep={activeStep}>
+      <Stepper.Step label="Confirm Booking">
+        <Section>Confirm booking content</Section>
+        <Actions>
+          <Button small disabled>
+            Previous
+          </Button>
+          <Button small onClick={() => setActiveStep(1)}>
+            Next
+          </Button>
+        </Actions>
+      </Stepper.Step>
+      <Stepper.Step label="Class Booked">
+        <Section>Class Booked content</Section>
+        <Actions>
+          <Button small onClick={() => setActiveStep(0)}>
+            Previous
+          </Button>
+          <Button small onClick={() => setActiveStep(2)}>
+            Next
+          </Button>
+        </Actions>
+      </Stepper.Step>
+      <Stepper.Step label="Check-in">
+        <Section>Check-in content</Section>
+        <Actions>
+          <Button small onClick={() => setActiveStep(1)}>
+            Previous
+          </Button>
+          <Button small disabled>
+            Next
+          </Button>
+        </Actions>
+      </Stepper.Step>
+    </Stepper>
+  );
+});
+```
+
+### Props
+
+#### Stepper
+
+<PropsTable component="Stepper" platform="web" />
+
+#### Stepper.Step
+
+<PropsTable component="Stepper.Step" platform="web" />

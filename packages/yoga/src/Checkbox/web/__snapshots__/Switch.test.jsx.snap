@@ -1,0 +1,397 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with checked switch 1`] = `
+.c2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 48px;
+  height: 24px;
+  background-color: #D8385E;
+  border-radius: 9999px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1:focus + .c4 {
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
+}
+
+.c1:hover + .c4 {
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
+}
+
+.c1:active + .c4 {
+  box-shadow: 0 0 0 8px rgba(215,215,224,0.75);
+}
+
+.c3 {
+  position: relative;
+  pointer-events: none;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 9999px;
+  -webkit-transition-property: left,-webkit-transform;
+  -webkit-transition-property: left,transform;
+  transition-property: left,transform;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  left: calc(100% - 2px);
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+}
+
+.c1:focus + .c3 {
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
+}
+
+.c1:hover + .c3 {
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
+}
+
+.c1:active + .c3 {
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
+}
+
+<div>
+  <label
+    class="c0"
+  >
+    <input
+      aria-checked="true"
+      aria-hidden="true"
+      aria-readonly="false"
+      class="c1 c2"
+      role="switch"
+      type="checkbox"
+    />
+    <span
+      class="c3"
+      role="button"
+    />
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with default switch 1`] = `
+.c2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 48px;
+  height: 24px;
+  background-color: #9898A6;
+  border-radius: 9999px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c3 {
+  position: relative;
+  pointer-events: none;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 9999px;
+  -webkit-transition-property: left,-webkit-transform;
+  -webkit-transition-property: left,transform;
+  transition-property: left,transform;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.c1:focus + .c3 {
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
+}
+
+.c1:hover + .c3 {
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
+}
+
+.c1:active + .c3 {
+  box-shadow: 0 0 0 8px rgba(215,215,224,0.75);
+}
+
+<div>
+  <label
+    class="c0"
+  >
+    <input
+      aria-checked="false"
+      aria-hidden="true"
+      aria-readonly="false"
+      class="c1 c2"
+      role="switch"
+      type="checkbox"
+    />
+    <span
+      class="c3"
+      role="button"
+    />
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with disabled and checked switch 1`] = `
+.c2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 48px;
+  height: 24px;
+  background-color: #D8385E;
+  border-radius: 9999px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  background-color: #F5F5FA;
+  cursor: not-allowed;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1:focus + .c4 {
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
+}
+
+.c1:hover + .c4 {
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
+}
+
+.c1:active + .c4 {
+  box-shadow: 0 0 0 8px rgba(215,215,224,0.75);
+}
+
+.c1:focus + .c5 {
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
+}
+
+.c1:hover + .c5 {
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
+}
+
+.c1:active + .c5 {
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
+}
+
+.c3 {
+  position: relative;
+  pointer-events: none;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 9999px;
+  -webkit-transition-property: left,-webkit-transform;
+  -webkit-transition-property: left,transform;
+  transition-property: left,transform;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  left: calc(100% - 2px);
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  background-color: #FFFFFF;
+  cursor: not-allowed;
+}
+
+<div>
+  <label
+    class="c0"
+    disabled=""
+  >
+    <input
+      aria-checked="true"
+      aria-hidden="true"
+      aria-readonly="true"
+      class="c1 c2"
+      disabled=""
+      role="switch"
+      type="checkbox"
+    />
+    <span
+      class="c3"
+      disabled=""
+      role="button"
+    />
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with disabled switch 1`] = `
+.c2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 48px;
+  height: 24px;
+  background-color: #9898A6;
+  border-radius: 9999px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  background-color: #F5F5FA;
+  cursor: not-allowed;
+}
+
+.c0 * {
+  box-sizing: border-box;
+}
+
+.c1:focus + .c4 {
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
+}
+
+.c1:hover + .c4 {
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
+}
+
+.c1:active + .c4 {
+  box-shadow: 0 0 0 8px rgba(215,215,224,0.75);
+}
+
+.c3 {
+  position: relative;
+  pointer-events: none;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 9999px;
+  -webkit-transition-property: left,-webkit-transform;
+  -webkit-transition-property: left,transform;
+  transition-property: left,transform;
+  -webkit-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #FFFFFF;
+  cursor: not-allowed;
+}
+
+<div>
+  <label
+    class="c0"
+    disabled=""
+  >
+    <input
+      aria-checked="false"
+      aria-hidden="true"
+      aria-readonly="true"
+      class="c1 c2"
+      disabled=""
+      role="switch"
+      type="checkbox"
+    />
+    <span
+      class="c3"
+      disabled=""
+      role="button"
+    />
+  </label>
+</div>
+`;

@@ -1,0 +1,59 @@
+{
+  "name": "@gympass/yoga",
+  "version": "7.3.0",
+  "description": "Gympass component library",
+  "main": "./src",
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn build:web && yarn build:native && yarn build:esm",
+    "build:web": "NODE_ENV=web babel ./src --out-dir dist/cjs",
+    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
+    "prebuild": "rm -rf ./dist",
+    "postbuild": "cp -r ./src/Fonts ./dist/fonts",
+    "prepublishOnly": "node ../../scripts/prepublish.js --rn"
+  },
+  "keywords": [
+    "Gympass",
+    "components",
+    "styled-components",
+    "react",
+    "design-system"
+  ],
+  "homepage": "https://github.com/Gympass/yoga#readme",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gympass/yoga.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gympass/yoga/issues"
+  },
+  "dependencies": {
+    "@gympass/yoga-common": "^1.0.0",
+    "@gympass/yoga-helpers": "^1.0.0",
+    "@gympass/yoga-icons": "^1.1.2",
+    "@gympass/yoga-system": "^0.1.1",
+    "@gympass/yoga-tokens": "^3.0.1",
+    "@ptomasroos/react-native-multi-slider": "^1.0.0",
+    "downshift": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "proxy-polyfill": "^0.3.1",
+    "rc-slider": "^8.7.1",
+    "react-google-font-loader": "^1.1.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^9.1.4",
+    "@testing-library/react-native": "^4.1.0",
+    "babel-plugin-inline-react-svg": "^1.1.1",
+    "styled-components": "^4.4.0"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "styled-components": "^4.4.0"
+  }
+}

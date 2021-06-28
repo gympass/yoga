@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot with default radio 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    disabled={false}
+  >
+    <View
+      checked={false}
+      disabled={false}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#9898A6",
+            "borderRadius": 9999,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "height": 20,
+            "justifyContent": "center",
+            "width": 20,
+          },
+        ]
+      }
+    />
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot with default radio 2`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    disabled={false}
+  >
+    <View
+      checked={false}
+      disabled={false}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#9898A6",
+            "borderRadius": 9999,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "height": 20,
+            "justifyContent": "center",
+            "width": 20,
+          },
+        ]
+      }
+    />
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot with default radio pressed 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    disabled={false}
+  >
+    <View
+      checked={false}
+      disabled={false}
+      pressed={true}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "rgba(245, 245, 250, 0.75)",
+            "borderColor": "#9898A6",
+            "borderRadius": 9999,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "height": 20,
+            "justifyContent": "center",
+            "width": 20,
+          },
+        ]
+      }
+      testID="radio"
+    >
+      <View
+        checked={false}
+        style={
+          Array [
+            Object {
+              "borderColor": "rgba(245, 245, 250, 0.75)",
+              "borderRadius": 9999,
+              "borderStyle": "solid",
+              "borderWidth": 8,
+              "height": 36,
+              "opacity": 0.75,
+              "position": "absolute",
+              "width": 36,
+            },
+          ]
+        }
+      />
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<RadioGroup /> <RadioGroup.Radio /> Snapshots should match snapshot with disabled radio 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    disabled={true}
+  >
+    <View
+      checked={false}
+      disabled={true}
+      pressed={false}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#F5F5FA",
+            "borderRadius": 9999,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "height": 20,
+            "justifyContent": "center",
+            "width": 20,
+          },
+        ]
+      }
+    />
+  </TouchableWithoutFeedback>
+</View>
+`;

@@ -1,0 +1,33 @@
+{
+  "name": "@gympass/yoga-helpers",
+  "version": "1.0.0",
+  "description": "Gympass helpers",
+  "keywords": [
+    "styled-components",
+    "helper",
+    "media",
+    "query"
+  ],
+  "author": "ggdaltoso <ggdaltoso@gmail.com>",
+  "homepage": "https://gympass.github.io/yoga/",
+  "license": "MIT",
+  "main": "src/index.js",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gympass/yoga.git"
+  },
+  "scripts": {
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "NODE_ENV=cjs babel ./src --out-dir dist/cjs",
+    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "prebuild": "rm -rf ./dist",
+    "prepublishOnly": "node ../../scripts/prepublish.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Gympass/yoga/issues"
+  }
+}

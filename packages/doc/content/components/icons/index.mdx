@@ -1,0 +1,57 @@
+---
+title: 'Icons'
+metaTitle: 'Icons'
+metaDescription: 'Icons Component'
+---
+
+import * as YogaIcons from '@gympass/yoga-icons';
+import styled from 'styled-components';
+
+import IconsWeb from './icons-web.mdx';
+import IconsNative from './icons-native.mdx';
+
+export const IconWrapper = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 120px;
+  height: 80px;
+  font-size: 14px;
+`;
+
+export const AllIcons = () => (
+  <>
+    {Object.entries(YogaIcons).map(([name, Component]) => (
+      <IconWrapper key={name}>
+        <Component width={16} height={16} />
+        {name}
+      </IconWrapper>
+    ))}
+  </>
+);
+
+# Icons
+
+Yoga provide a package called `@gympass/yoga-icons` that contains icons to be
+used at your application.
+
+## Installation
+
+```bash type=highlight
+yarn add @gympass/yoga-icons
+```
+
+<TabbedView>
+  <Tab title="Web">
+    <IconsWeb />
+  </Tab>
+
+  <Tab title="Native">
+    <IconsNative />
+  </Tab>
+</TabbedView>
+
+### All Icons
+
+<AllIcons />
