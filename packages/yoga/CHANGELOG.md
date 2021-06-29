@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.3.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.0...@gympass/yoga@7.3.1) (2021-06-29)
+
+
+### Bug Fixes
+
+* fix checkbox width when adding large label text ([3fc2138](https://github.com/Gympass/yoga/commit/3fc21382341efb507866443aeaea1f161db1a1c2)), closes [#279](https://github.com/Gympass/yoga/issues/279)
+
+
+
+
+
 # [7.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.2.2...@gympass/yoga@7.3.0) (2021-06-28)
 
 
