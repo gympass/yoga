@@ -21,6 +21,8 @@ const CheckMark = styled.div`
 
   border-style: solid;
 
+  flex-shrink: 0;
+
   ${({
     checked,
     disabled,
