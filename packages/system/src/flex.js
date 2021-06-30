@@ -84,6 +84,14 @@ const flexWrap = props =>
     cssProperty: 'flexWrap',
   });
 
+const order = props =>
+  generator({
+    props,
+    prop: ['order'],
+    cssProperty: 'order',
+    getter: () => ({}),
+  });
+
 const flexes = compose(
   flex,
   flexBasis,
@@ -97,6 +105,7 @@ const flexes = compose(
   alignSelf,
   justifyContent,
   justifySelf,
+  order,
 );
 
 export {
@@ -113,4 +122,5 @@ export {
   justifyContent,
   justifySelf,
   flexes,
+  order,
 };
