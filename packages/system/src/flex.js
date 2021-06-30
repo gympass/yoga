@@ -89,7 +89,6 @@ const order = props =>
     props,
     prop: ['order'],
     cssProperty: 'order',
-    getter: () => ({}),
   });
 
 const flexes = compose(
