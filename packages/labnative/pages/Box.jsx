@@ -8,10 +8,14 @@ const BoxPage = () => (
       b="small"
       p="small"
       borderRadius="small"
-      color="feedback.success.dark"
-      as={Text}
+      borderColor="feedback.success.dark"
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
     >
-      Making wellbeing universal
+      <Text>Making</Text>
+      <Text>wellbeing</Text>
+      <Text>universal</Text>
     </Box>
   </View>
 );
