@@ -130,9 +130,12 @@ const CardPage = () => {
       </ScrollView>
 
       <DocTitle>Event Card</DocTitle>
-      <ScrollView horizontal style={{ height: 140 }}>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={{ height: 140 }}
+      >
         <EventCard
-          style={{ marginRight: 8, marginLeft: 8 }}
           event={{
             name: 'Yoga Class in Vila Olimpia',
             place: 'Gympass - Live the Mission',
@@ -143,12 +146,12 @@ const CardPage = () => {
             dayOfWeek: 'thu',
             month: 'dez',
           }}
+          link="Join class"
+          onLinkPress={() => {}}
         />
         <EventCard
-          style={{ marginRight: 8, marginLeft: 8 }}
           event={{
-            name:
-              'Yoga Class Long title dshauio dhasuio dhasiuo dhasuiod hasiuo dhasoiu dhasoiud ho',
+            name: 'Yoga Class – This is a very long title',
             place: 'Gympass',
             time: '19 am',
           }}
@@ -157,6 +160,59 @@ const CardPage = () => {
             dayOfWeek: 'thu',
             month: 'dez',
           }}
+        />
+      </ScrollView>
+
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        style={{ height: 140 }}
+      >
+        <EventCard
+          date={{
+            day: '19',
+            dayOfWeek: 'thu',
+            month: 'dez',
+          }}
+          small
+          onPress={() => {}}
+        />
+        <EventCard
+          event={{
+            name: 'Yoga Class',
+            place: 'Gympass',
+            time: '19 am',
+          }}
+          date={{
+            day: '20',
+            dayOfWeek: 'thu',
+            month: 'dez',
+          }}
+          small
+          onPress={() => {}}
+        />
+        <EventCard
+          event={{
+            name: 'Yoga Class',
+            place: 'Gympass',
+            time: '19 am',
+          }}
+          date={{
+            day: '21',
+            dayOfWeek: 'thu',
+            month: 'dez',
+          }}
+          small
+          active
+          onPress={() => {}}
+        />
+        <EventCard
+          date={{
+            day: '22',
+            dayOfWeek: 'thu',
+            month: 'dez',
+          }}
+          small
         />
       </ScrollView>
 

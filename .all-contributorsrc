@@ -141,21 +141,23 @@
       ]
     },
     {
-      "login": "katharinedepaulo",
-      "name": "katharinedepaulo",
-      "avatar_url": "https://avatars.githubusercontent.com/u/57157659?v=4",
-      "profile": "https://github.com/katharinedepaulo",
+      "login": "katharinepadilha",
+      "name": "Katharine Padilha",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14188981?v=4",
+      "profile": "https://medium.com/@katharinep",
       "contributions": [
+        "code",
         "ideas"
       ]
     },
     {
-      "login": "thiagogympass",
-      "name": "thiagogympass",
-      "avatar_url": "https://avatars.githubusercontent.com/u/75859418?v=4",
-      "profile": "https://github.com/thiagogympass",
+      "login": "tjamancio",
+      "name": "Thiago Amâncio",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43884476?v=4",
+      "profile": "https://github.com/tjamancio",
       "contributions": [
-        "design"
+        "design",
+        "bug"
       ]
     },
     {
@@ -210,6 +212,15 @@
       "name": "Wendler Eis",
       "avatar_url": "https://avatars.githubusercontent.com/u/6570553?v=4",
       "profile": "http://wendler.dev",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "dehmirandac2",
+      "name": "Deborah Miranda",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8313529?v=4",
+      "profile": "https://github.com/dehmirandac2",
       "contributions": [
         "bug"
       ]

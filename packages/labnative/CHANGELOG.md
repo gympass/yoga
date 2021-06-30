@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.2.0...@gympass/yoga-labnative@1.2.1) (2021-06-29)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+# [1.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.1.6...@gympass/yoga-labnative@1.2.0) (2021-06-28)
+
+
+### Features
+
+* **event card:** add link button ([3539421](https://github.com/Gympass/yoga/commit/3539421431eba3f458b25fb6261b99441d7fb7b8))
+* **event card:** fix code review requests ([94b3888](https://github.com/Gympass/yoga/commit/94b38889e87d97ac2eb5457dfc88d42d032016cf))
+* **event card:** refactor to use yoga apis ([4196168](https://github.com/Gympass/yoga/commit/419616814172c753b0145449d9ceeccba92c3b56))
+* **event card:** update and create small version ([f190597](https://github.com/Gympass/yoga/commit/f19059720f290d1d2b78e3fd053d1b70514f7d18))
+
+
+
+
+
 ## [1.1.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.1.5...@gympass/yoga-labnative@1.1.6) (2021-06-23)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

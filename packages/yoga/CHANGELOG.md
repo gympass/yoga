@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.3.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.0...@gympass/yoga@7.3.1) (2021-06-29)
+
+
+### Bug Fixes
+
+* fix checkbox width when adding large label text ([3fc2138](https://github.com/Gympass/yoga/commit/3fc21382341efb507866443aeaea1f161db1a1c2)), closes [#279](https://github.com/Gympass/yoga/issues/279)
+
+
+
+
+
+# [7.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.2.2...@gympass/yoga@7.3.0) (2021-06-28)
+
+
+### Features
+
+* **event card:** add link button ([3539421](https://github.com/Gympass/yoga/commit/3539421431eba3f458b25fb6261b99441d7fb7b8))
+* **event card:** add tests ([93277e6](https://github.com/Gympass/yoga/commit/93277e6b6b161379eca11a22a02d3009382f4b9e))
+* **event card:** code review fixes ([79161a4](https://github.com/Gympass/yoga/commit/79161a43ce74037dc7defec5e956ea6b0a175e8b))
+* **event card:** fix code review requests ([94b3888](https://github.com/Gympass/yoga/commit/94b38889e87d97ac2eb5457dfc88d42d032016cf))
+* **event card:** fix web component ([c718596](https://github.com/Gympass/yoga/commit/c7185961c1b95b3373e9c5d32336179ced8a618e))
+* **event card:** invert day of week and month ([c2b3a11](https://github.com/Gympass/yoga/commit/c2b3a112956d15a195a835752568d50ed2271523))
+* **event card:** link is not conditionally rendered ([01678e2](https://github.com/Gympass/yoga/commit/01678e2c0356fd7e27ad42c1b21e2cae5c710953))
+* **event card:** refactor to remove component theme ([234fbed](https://github.com/Gympass/yoga/commit/234fbed11acf90b1fb5076b3b316fbace896d528))
+* **event card:** refactor to use yoga api ([050e8c7](https://github.com/Gympass/yoga/commit/050e8c7ef6537ed4af6e678851b74460e6c5eaa7))
+* **event card:** refactor to use yoga apis ([4196168](https://github.com/Gympass/yoga/commit/419616814172c753b0145449d9ceeccba92c3b56))
+* **event card:** remove margin bottom ([c25a87f](https://github.com/Gympass/yoga/commit/c25a87f5492f40ede9333cc1350447c8e9bca438))
+* **event card:** remove unused code on theme ([f326da7](https://github.com/Gympass/yoga/commit/f326da7fda9438b56cf14caad1867fba762eee46))
+* **event card:** remove unused prop ([a0469b7](https://github.com/Gympass/yoga/commit/a0469b72491b5c97acddd889200ec42748898928))
+* **event card:** update and create small version ([f190597](https://github.com/Gympass/yoga/commit/f19059720f290d1d2b78e3fd053d1b70514f7d18))
+* **event card:** update button link size and margin ([878bed7](https://github.com/Gympass/yoga/commit/878bed72d2a337f1d20d36be17db6973b6a61115))
+* **event card:** update margins ([a5cf612](https://github.com/Gympass/yoga/commit/a5cf61226eefdb76f0837384576b813ef675f076))
+* **event card:** update snapshot ([58f5d37](https://github.com/Gympass/yoga/commit/58f5d3797cf8b4de64a75c50c8d06321bf146d5a))
+* **event card:** update snapshot ([c9acc21](https://github.com/Gympass/yoga/commit/c9acc21631f326abbbe0dce5e3a8a3208ef18794))
+* **event card:** use theme reader ([b42fdc4](https://github.com/Gympass/yoga/commit/b42fdc48717b7f5203bde67f51265e02220b2fb5))
+
+
+
+
+
 ## [7.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.2.1...@gympass/yoga@7.2.2) (2021-06-23)
 
 
