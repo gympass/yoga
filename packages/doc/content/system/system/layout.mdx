@@ -1,0 +1,133 @@
+---
+title: 'Layout'
+metaTitle: 'System - Layout'
+metaDescription: '@gympass/yoga-system layout'
+---
+
+## layout
+
+```javascript state
+const Frame = styled.div`
+  border: 1px solid #ccc;
+
+  width: 100px;
+  height: 100px;
+
+  ${position}
+`;
+
+const Dot = styled.div`
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+  background-color: tomato;
+
+  ${positions}
+`;
+
+render(() => {
+  return (
+    <Frame position="relative">
+      <Dot position="absolute" top="small" left="small" />
+    </Frame>
+  );
+});
+```
+
+_For React Native users, we strongly recommend the usage of shorthands due to
+[some](https://github.com/facebook/react-native/issues/12469) &nbsp;
+[conflicts](https://github.com/styled-components/styled-components/issues/403)
+&nbsp; [you could face](https://github.com/hyrwork/react-native-row/issues/6)_
+
+<table>
+  <thead>
+    <tr>
+      <th>Module</th>
+      <th>Prop</th>
+      <th>CSS Property</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <inlineCode>display</inlineCode>
+      </td>
+      <td>
+        <inlineCode>display</inlineCode>, <inlineCode>d</inlineCode>
+      </td>
+      <td>
+        <inlineCode>display</inlineCode>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+The `positions` module has all the listed above
+
+<table>
+  <thead>
+    <tr>
+      <th>Module</th>
+      <th>Prop</th>
+      <th>CSS Property</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <inlineCode>position</inlineCode>
+      </td>
+      <td>
+        <inlineCode>position</inlineCode>
+      </td>
+      <td>
+        <inlineCode>position</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>top</inlineCode>
+      </td>
+      <td>
+        <inlineCode>top</inlineCode>
+      </td>
+      <td>
+        <inlineCode>top</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>right</inlineCode>
+      </td>
+      <td>
+        <inlineCode>right</inlineCode>
+      </td>
+      <td>
+        <inlineCode>right</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>bottom</inlineCode>
+      </td>
+      <td>
+        <inlineCode>bottom</inlineCode>
+      </td>
+      <td>
+        <inlineCode>bottom</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>left</inlineCode>
+      </td>
+      <td>
+        <inlineCode>left</inlineCode>
+      </td>
+      <td>
+        <inlineCode>left</inlineCode>
+      </td>
+    </tr>
+  </tbody>
+</table>
