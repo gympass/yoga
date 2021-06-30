@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.1.1...@gympass/yoga-system@0.2.0) (2021-06-30)
+
+
+### Features
+
+* **system:** add display, positions, and flexes submodules into system module ([1d1359b](https://github.com/Gympass/yoga/commit/1d1359baa25898524b116031c5f4436d1cdb6cc4))
+* **system:** add order submodule ([496611a](https://github.com/Gympass/yoga/commit/496611a4eeef5d068c7e4e06a3a890bdc7a504b1))
+* **system:** adding flex module ([d8b1359](https://github.com/Gympass/yoga/commit/d8b1359fc319e8e626d80bc307ac93fc0fcf4e2e))
+* **system:** adding layout module ([12ae773](https://github.com/Gympass/yoga/commit/12ae7733cc5aa7c840c4b22eb22e19c79c8cf755))
+* **system:** adding width and height modules ([ef903f5](https://github.com/Gympass/yoga/commit/ef903f57d8c8f5ac0665b0f23792c5e6843a5ca1))
+* **system:** exporting new modules ([2711379](https://github.com/Gympass/yoga/commit/2711379c5055c8747ddf6d7f703994d01cb8894e))
+
+
+
+
+
 ## [0.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.1.0...@gympass/yoga-system@0.1.1) (2021-06-10)
 
 **Note:** Version bump only for package @gympass/yoga-system
