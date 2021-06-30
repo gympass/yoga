@@ -34,7 +34,7 @@ const generator = ({
   props: componentProps,
   prop,
   cssProperty,
-  getter,
+  getter = () => ({}),
   transform = value => value,
 }) => {
   const themeProp = getter(componentProps);
