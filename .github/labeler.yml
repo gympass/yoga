@@ -13,5 +13,8 @@
 '@gympass/yoga-common':
   - packages/common/**/*
 
+'@gympass/yoga-system':
+  - packages/system/**/*
+
 '@gympass/yoga-labnative':
   - packages/labnative/**/*
