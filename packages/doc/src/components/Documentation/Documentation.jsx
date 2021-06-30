@@ -28,6 +28,19 @@ import {
   Ul,
 } from '../MDXElements/MDXElements';
 
+import {
+  Colors,
+  Fonts,
+  FontSizes,
+  FontWeights,
+  LineHeights,
+  Breakpoints,
+  Spacing,
+  Borders,
+  Elevations,
+  Shape,
+} from '../Theme/index';
+
 const customComponents = prefix => ({
   h1: props => <ComponentTitle {...props} prefix={prefix} />,
   h2: props => <SubHeading2 {...props} />,
@@ -46,6 +59,16 @@ const customComponents = prefix => ({
   Tokens: props => <Tokens {...props} />,
   TokensColors: props => <Tokens.Colors {...props} />,
   TokensCards: props => <Tokens.Cards {...props} />,
+  ThemeColors: props => <Colors {...props} />,
+  ThemeFonts: props => <Fonts {...props} />,
+  ThemeFontSizes: props => <FontSizes {...props} />,
+  ThemeFontWeights: props => <FontWeights {...props} />,
+  ThemeLineHeights: props => <LineHeights {...props} />,
+  ThemeBreakpoints: props => <Breakpoints {...props} />,
+  ThemeSpacing: props => <Spacing {...props} />,
+  ThemeBorders: props => <Borders {...props} />,
+  ThemeElevations: props => <Elevations {...props} />,
+  ThemeShape: props => <Shape {...props} />,
   ...components,
   ...icons,
   ...helpers,
