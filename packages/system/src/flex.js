@@ -5,7 +5,6 @@ const flexDirection = props =>
     props,
     prop: ['flexDirection'],
     cssProperty: 'flexDirection',
-    getter: () => ({}),
   });
 
 const alignItems = props =>
@@ -13,7 +12,6 @@ const alignItems = props =>
     props,
     prop: ['alignItems'],
     cssProperty: 'alignItems',
-    getter: () => ({}),
   });
 
 const alignContent = props =>
@@ -21,7 +19,6 @@ const alignContent = props =>
     props,
     prop: ['alignContent'],
     cssProperty: 'alignContent',
-    getter: () => ({}),
   });
 
 const alignSelf = props =>
@@ -29,7 +26,6 @@ const alignSelf = props =>
     props,
     prop: ['alignSelf'],
     cssProperty: 'alignSelf',
-    getter: () => ({}),
   });
 
 const justifyContent = props =>
@@ -37,7 +33,6 @@ const justifyContent = props =>
     props,
     prop: ['justifyContent'],
     cssProperty: 'justifyContent',
-    getter: () => ({}),
   });
 
 const justifySelf = props =>
@@ -45,7 +40,6 @@ const justifySelf = props =>
     props,
     prop: ['justifySelf'],
     cssProperty: 'justifySelf',
-    getter: () => ({}),
   });
 
 const flex = props =>
@@ -53,7 +47,6 @@ const flex = props =>
     props,
     prop: ['flex'],
     cssProperty: 'flex',
-    getter: () => ({}),
   });
 
 const flexBasis = props =>
@@ -61,7 +54,6 @@ const flexBasis = props =>
     props,
     prop: ['flexBasis'],
     cssProperty: 'flexBasis',
-    getter: () => ({}),
   });
 
 const flexFlow = props =>
@@ -69,7 +61,6 @@ const flexFlow = props =>
     props,
     prop: ['flexFlow'],
     cssProperty: 'flexFlow',
-    getter: () => ({}),
   });
 
 const flexGrow = props =>
@@ -77,7 +68,6 @@ const flexGrow = props =>
     props,
     prop: ['flexGrow'],
     cssProperty: 'flexGrow',
-    getter: () => ({}),
   });
 
 const flexShrink = props =>
@@ -85,7 +75,6 @@ const flexShrink = props =>
     props,
     prop: ['flexShrink'],
     cssProperty: 'flexShrink',
-    getter: () => ({}),
   });
 
 const flexWrap = props =>
@@ -93,7 +82,6 @@ const flexWrap = props =>
     props,
     prop: ['flexWrap'],
     cssProperty: 'flexWrap',
-    getter: () => ({}),
   });
 
 const flexes = compose(

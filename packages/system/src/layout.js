@@ -6,7 +6,6 @@ const display = props =>
     props,
     prop: ['display', 'd'],
     cssProperty: 'display',
-    getter: () => ({}),
   });
 
 const position = props =>
@@ -14,7 +13,6 @@ const position = props =>
     props,
     prop: ['position'],
     cssProperty: 'position',
-    getter: () => ({}),
   });
 
 const top = props =>
