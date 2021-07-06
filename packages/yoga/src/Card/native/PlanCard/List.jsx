@@ -9,7 +9,6 @@ import theme from '../../../Theme/helpers/themeReader';
 const { plan } = theme.components.card;
 
 const List = styled.View`
-  min-height: ${plan.list.height}px;
   margin-top: ${plan.list.margin.top}px;
 `;
 
