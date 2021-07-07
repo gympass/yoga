@@ -1,0 +1,234 @@
+---
+title: 'Spacing'
+metaTitle: 'System - Spacing'
+metaDescription: '@gympass/yoga-system spacing'
+---
+
+## spacing
+
+```javascript state
+const SquareWrapper = styled.div`
+  border: 1px solid tomato;
+
+  ${padding}
+`;
+
+const Square = styled.div`
+  border: 1px solid;
+
+  ${spacing}
+`;
+
+render(() => {
+  return (
+    <SquareWrapper p="xxxsmall">
+      <Square ph="medium" paddingVertical="small" mb="medium">
+        Everyone can be happy and healthy
+      </Square>
+    </SquareWrapper>
+  );
+});
+```
+
+The `spacing` module has all the listed above
+
+_For React Native users, we strongly recommend the usage of shorthands due to
+[some](https://github.com/facebook/react-native/issues/12469) &nbsp;
+[conflicts](https://github.com/styled-components/styled-components/issues/403)
+&nbsp; [you could face](https://github.com/hyrwork/react-native-row/issues/6)_
+
+<table>
+  <thead>
+    <tr>
+      <th>Module</th>
+      <th>Prop</th>
+      <th>CSS Property</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <inlineCode>margin</inlineCode>
+      </td>
+      <td>
+        <inlineCode>margin</inlineCode>, <inlineCode>m</inlineCode>
+      </td>
+      <td>
+        <inlineCode>margin</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>marginTop</inlineCode>
+      </td>
+      <td>
+        <inlineCode>marginTop</inlineCode>, <inlineCode>mt</inlineCode>
+      </td>
+      <td>
+        <inlineCode>margin-top</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>marginRight</inlineCode>
+      </td>
+      <td>
+        <inlineCode>marginRight</inlineCode>, <inlineCode>mr</inlineCode>
+      </td>
+      <td>
+        <inlineCode>margin-right</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>marginBottom</inlineCode>
+      </td>
+      <td>
+        <inlineCode>marginBottom</inlineCode>, <inlineCode>mb</inlineCode>
+      </td>
+      <td>
+        <inlineCode>margin-bottom</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>marginLeft</inlineCode>
+      </td>
+      <td>
+        <inlineCode>marginLeft</inlineCode>, <inlineCode>ml</inlineCode>
+      </td>
+      <td>
+        <inlineCode>margin-left</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>marginHorizontal</inlineCode>
+      </td>
+      <td>
+        <inlineCode>marginHorizontal</inlineCode>, <inlineCode>mx</inlineCode>,
+        <inlineCode>mh</inlineCode>
+      </td>
+      <td>
+        <inlineCode>margin-left</inlineCode> and
+        <inlineCode>margin-right</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>marginVertical</inlineCode>
+      </td>
+      <td>
+        <inlineCode>marginVertical</inlineCode>, <inlineCode>my</inlineCode>,
+        <inlineCode>mv</inlineCode>
+      </td>
+      <td>
+        <inlineCode>margin-top</inlineCode> and
+        <inlineCode>margin-bottom</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>padding</inlineCode>
+      </td>
+      <td>
+        <inlineCode>padding</inlineCode>, <inlineCode>p</inlineCode>
+      </td>
+      <td>
+        <inlineCode>padding</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>paddingTop</inlineCode>
+      </td>
+      <td>
+        <inlineCode>paddingTop</inlineCode>, <inlineCode>pt</inlineCode>
+      </td>
+      <td>
+        <inlineCode>padding-top</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>paddingRight</inlineCode>
+      </td>
+      <td>
+        <inlineCode>paddingRight</inlineCode>, <inlineCode>pr</inlineCode>
+      </td>
+      <td>
+        <inlineCode>padding-right</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>paddingBottom</inlineCode>
+      </td>
+      <td>
+        <inlineCode>paddingBottom</inlineCode>, <inlineCode>pb</inlineCode>
+      </td>
+      <td>
+        <inlineCode>padding-bottom</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>paddingLeft</inlineCode>
+      </td>
+      <td>
+        <inlineCode>paddingLeft</inlineCode>, <inlineCode>pl</inlineCode>
+      </td>
+      <td>
+        <inlineCode>padding-left</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>paddingHorizontal</inlineCode>
+      </td>
+      <td>
+        <inlineCode>paddingHorizontal</inlineCode>, <inlineCode>px</inlineCode>,
+        <inlineCode>ph</inlineCode>
+      </td>
+      <td>
+        <inlineCode>padding-left</inlineCode> and
+        <inlineCode>padding-right</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>paddingVertical</inlineCode>
+      </td>
+      <td>
+        <inlineCode>paddingVertical</inlineCode>, <inlineCode>py</inlineCode>,
+        <inlineCode>pv</inlineCode>
+      </td>
+      <td>
+        <inlineCode>padding-top</inlineCode> and
+        <inlineCode>padding-bottom</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>width</inlineCode>
+      </td>
+      <td>
+        <inlineCode>width</inlineCode>, <inlineCode>w</inlineCode>
+      </td>
+      <td>
+        <inlineCode>width</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>height</inlineCode>
+      </td>
+      <td>
+        <inlineCode>height</inlineCode>, <inlineCode>h</inlineCode>
+      </td>
+      <td>
+        <inlineCode>height</inlineCode>
+      </td>
+    </tr>
+  </tbody>
+</table>

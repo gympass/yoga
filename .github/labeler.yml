@@ -1,17 +1,20 @@
-"@gympass/yoga": 
+'@gympass/yoga':
   - packages/yoga/**/*
 
-"@gympass/yoga-doc": 
+'@gympass/yoga-doc':
   - packages/doc/**/*
 
-"@gympass/yoga-icons": 
+'@gympass/yoga-icons':
   - packages/icons/**/*
 
-"@gympass/yoga-tokens": 
+'@gympass/yoga-tokens':
   - packages/tokens/**/*
 
-"@gympass/yoga-common": 
+'@gympass/yoga-common':
   - packages/common/**/*
 
-"@gympass/yoga-labnative": 
+'@gympass/yoga-system':
+  - packages/system/**/*
+
+'@gympass/yoga-labnative':
   - packages/labnative/**/*

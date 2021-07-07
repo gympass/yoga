@@ -10,6 +10,7 @@ const Button = ({
   disabled,
   inverted,
   small,
+  secondary,
   icon: Icon,
   ...props
 }) => (
@@ -19,6 +20,7 @@ const Button = ({
     inverted={inverted}
     onClick={onClick}
     small={small}
+    secondary={secondary}
     {...props}
   >
     {Icon && <Icon />}
@@ -33,6 +35,7 @@ Button.propTypes = {
   inverted: bool,
   onClick: func,
   small: bool,
+  secondary: bool,
   /** an Icon from yoga-icons package */
   icon: oneOfType([node, func]),
 };
@@ -44,6 +47,7 @@ Button.defaultProps = {
   inverted: false,
   onClick: () => {},
   small: false,
+  secondary: false,
   icon: undefined,
 };
 

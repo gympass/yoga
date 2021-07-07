@@ -1,0 +1,198 @@
+---
+title: 'Flex'
+metaTitle: 'System - Flex'
+metaDescription: '@gympass/yoga-system flex'
+---
+
+## flex
+
+```javascript state
+const Stack = styled.div`
+  width: 140px;
+  height: 110px;
+  border: 1px solid #ccc;
+  padding: 4px;
+
+  ${display}
+  ${flexes}
+`;
+
+const Item = styled.div`
+  background-color: lavender;
+  padding: 4px;
+
+  ${order}
+`;
+
+render(() => {
+  return (
+    <Stack
+      d="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="space-around"
+    >
+      <Item order={0}>Making</Item>
+      <Item order={2}>wellbeing</Item>
+      <Item order={1}>universal</Item>
+    </Stack>
+  );
+});
+```
+
+The `flexes` module has all the listed above
+
+<table>
+  <thead>
+    <tr>
+      <th>Module</th>
+      <th>Prop</th>
+      <th>CSS Property</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <inlineCode>flex</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flex</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flex</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>flexBasis</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flexBasis</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flex-basis</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>flexFlow</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flexFlow</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flex-flow</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>flexGrow</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flexGrow</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flex-grow</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>flexShrink</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flexShrink</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flex-shrink</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>flexWrap</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flexWrap</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flex-wrap</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>flexDirection</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flexDirection</inlineCode>
+      </td>
+      <td>
+        <inlineCode>flex-direction</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>alignItems</inlineCode>
+      </td>
+      <td>
+        <inlineCode>alignItems</inlineCode>
+      </td>
+      <td>
+        <inlineCode>align-items</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>alignContent</inlineCode>
+      </td>
+      <td>
+        <inlineCode>alignContent</inlineCode>
+      </td>
+      <td>
+        <inlineCode>align-content</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>alignSelf</inlineCode>
+      </td>
+      <td>
+        <inlineCode>alignSelf</inlineCode>
+      </td>
+      <td>
+        <inlineCode>align-self</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>justifyContent</inlineCode>
+      </td>
+      <td>
+        <inlineCode>justifyContent</inlineCode>
+      </td>
+      <td>
+        <inlineCode>justify-content</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>justifySelf</inlineCode>
+      </td>
+      <td>
+        <inlineCode>justifySelf</inlineCode>
+      </td>
+      <td>
+        <inlineCode>justify-self</inlineCode>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <inlineCode>order</inlineCode>
+      </td>
+      <td>
+        <inlineCode>order</inlineCode>
+      </td>
+      <td>
+        <inlineCode>order</inlineCode>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -56,8 +56,8 @@ const ThumbShadow = styled.View(
       position: absolute;
       background-color: ${
         checked
-          ? hexToRgb(colors.text.secondary, 0.75)
-          : hexToRgb(colors.elements.lineAndBorders, 0.75)
+          ? hexToRgb(colors.primary, 0.75)
+          : hexToRgb(colors.elements.backgroundAndDisabled, 0.75)
       };
       border-radius: ${checkboxswitch.thumb.radii}px;
     `;

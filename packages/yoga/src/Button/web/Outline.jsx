@@ -8,6 +8,7 @@ import Button from './Button';
 const Outline = styled(Button)`
   ${({
     inverted,
+    secondary,
     theme: {
       yoga: {
         colors: { white },
@@ -18,86 +19,90 @@ const Outline = styled(Button)`
         },
       },
     },
-  }) => `
-    background-color: ${outline.backgroundColor.default};
-    border: ${outline.border.width}px solid;
-    border-color: ${outline.font.default.color};
-    color: ${outline.font.default.color};
+  }) => {
+    const state = secondary ? 'secondary' : 'primary';
 
-    svg {
-      fill: ${outline.font.default.color};
-    }
-
-    &:not([disabled]):hover, &:not([disabled]):focus {
-      background-color: ${outline.backgroundColor.hover};
-      color: ${outline.font.hover.color};
-
-      svg {
-        fill: ${outline.font.hover.color};
-      }
-    }
-
-    &:not([disabled]):active {
+    return `
       background-color: ${outline.backgroundColor.default};
-      border-color: ${outline.font.pressed.color};
-      color: ${outline.font.pressed.color};
-      box-shadow: none;
+      border: ${outline.border.width}px solid;
+      border-color: ${outline.font.default[state].color};
+      color: ${outline.font.default[state].color};
 
       svg {
-        fill: ${outline.font.pressed.color};
+        fill: ${outline.font.default[state].color};
       }
-    }
 
-    &:disabled {
-      background-color: ${outline.backgroundColor.default};
-      border-color: ${outline.font.disabled.color};
-      color: ${outline.font.disabled.color};
+      &:not([disabled]):hover, &:not([disabled]):focus {
+        background-color: ${outline.backgroundColor[state].hover};
+        color: ${outline.font.hover.color};
 
-      svg {
-        fill: ${outline.font.disabled.color};
+        svg {
+          fill: ${outline.font.hover.color};
+        }
       }
-    }
 
-    ${
-      inverted
-        ? `
-          border-color: ${white};
-          color: ${white};
+      &:not([disabled]):active {
+        background-color: ${outline.backgroundColor.default};
+        border-color: ${outline.font.pressed[state].color};
+        color: ${outline.font.pressed[state].color};
+        box-shadow: none;
 
-          svg {
-            fill: ${white};
-          }
+        svg {
+          fill: ${outline.font.pressed[state].color};
+        }
+      }
 
-          &:not([disabled]):hover, &:not([disabled]):focus {
-            background-color: ${white};
-            color: ${outline.font.default.color};
+      &:disabled {
+        background-color: ${outline.backgroundColor.default};
+        border-color: ${outline.font.disabled.color};
+        color: ${outline.font.disabled.color};
+
+        svg {
+          fill: ${outline.font.disabled.color};
+        }
+      }
+
+      ${
+        inverted
+          ? `
+            border-color: ${white};
+            color: ${white};
 
             svg {
-              fill: ${outline.font.default.color};
+              fill: ${white};
             }
-          }
 
-          &:not([disabled]):active {
-            background-color: ${outline.backgroundColor.default};
-            border-color: ${hexToRgb(white, 0.75)};
-            color: ${hexToRgb(white, 0.75)};
+            &:not([disabled]):hover, &:not([disabled]):focus {
+              background-color: ${white};
+              color: ${outline.font.default[state].color};
 
-            svg {
-              fill: ${hexToRgb(white, 0.75)};
+              svg {
+                fill: ${outline.font.default[state].color};
+              }
             }
-          }
 
-          &:disabled {
-            border-color: ${outline.font.disabled.color};
-            color: ${outline.font.disabled.color};
-            svg {
-              fill: ${outline.font.disabled.color};
+            &:not([disabled]):active {
+              background-color: ${outline.backgroundColor.default};
+              border-color: ${hexToRgb(white, 0.75)};
+              color: ${hexToRgb(white, 0.75)};
+
+              svg {
+                fill: ${hexToRgb(white, 0.75)};
+              }
             }
-          }
-        `
-        : ''
-    }
-  `}
+
+            &:disabled {
+              border-color: ${outline.font.disabled.color};
+              color: ${outline.font.disabled.color};
+              svg {
+                fill: ${outline.font.disabled.color};
+              }
+            }
+          `
+          : ''
+      }
+    `;
+  }}
 `;
 
 const ButtonOutline = props => <Outline {...props} />;

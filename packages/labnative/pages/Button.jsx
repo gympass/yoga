@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from '@gympass/yoga';
+import { Button, theme } from '@gympass/yoga';
 import { Booking } from '@gympass/yoga-icons';
 
 import { DocTitle } from '../components';
@@ -11,94 +11,91 @@ const ScrollView = styled.ScrollView`
   width: 100%;
 `;
 
-const ButtonWrapper = styled.View`
-  margin-bottom: 10px;
+const Wrapper = styled.View`
+  width: 100%;
   align-items: center;
+  justify-content: space-between;
+  border-bottom-width: ${theme.borders.small}px;
+  border-color: ${theme.colors.secondary};
+  padding-bottom: ${theme.spacing.medium}px;
 `;
 
 const ButtonPage = () => (
-  <ScrollView>
-    <DocTitle>Small Buttons</DocTitle>
-    <ButtonWrapper>
-      <Button small>Contained</Button>
-    </ButtonWrapper>
-    <ButtonWrapper>
+  <ScrollView
+    contentContainerStyle={{
+      alignItems: 'center',
+    }}
+  >
+    <Wrapper style={{ height: 360 }}>
+      <DocTitle>Small Buttons</DocTitle>
+      <Button small>Primary contained</Button>
       <Button icon={Booking} small>
         Contained with Icon
       </Button>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button.Text small>Text</Button.Text>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button.Text icon={Booking} small>
-        Text with Icon
+        Text with icon
       </Button.Text>
-    </ButtonWrapper>
+      <Button small secondary>
+        Secondary contained
+      </Button>
+      <Button icon={Booking} small secondary>
+        Secondary contained with Icon
+      </Button>
+      <Button.Text small secondary>
+        Secondary text
+      </Button.Text>
+      <Button.Text icon={Booking} small secondary>
+        Secondary text with icon
+      </Button.Text>
+    </Wrapper>
 
-    <DocTitle>Contained Buttons</DocTitle>
-    <ButtonWrapper>
+    <Wrapper style={{ height: 550 }}>
+      <DocTitle>Contained Buttons</DocTitle>
       <Button>Contained</Button>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button icon={Booking}>With Icon</Button>
-    </ButtonWrapper>
-    <ButtonWrapper>
-      <Button disabled>Disabled</Button>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button inverted>Inverted</Button>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button icon={Booking} inverted>
         Inverted with Icon
       </Button>
-    </ButtonWrapper>
-    <ButtonWrapper>
-      <Button disabled inverted>
-        Disabled Inverted
+      <Button disabled>Disabled</Button>
+      <Button secondary>Secondary contained</Button>
+      <Button icon={Booking} secondary>
+        Secondary with icon
       </Button>
-    </ButtonWrapper>
+      <Button inverted secondary>
+        Secondary inverted
+      </Button>
+      <Button icon={Booking} inverted secondary>
+        Secondary inverted with icon
+      </Button>
+    </Wrapper>
 
-    <DocTitle>Link Buttons</DocTitle>
-    <ButtonWrapper>
+    <Wrapper style={{ height: 180 }}>
+      <DocTitle>Link Buttons</DocTitle>
       <Button.Link>Link</Button.Link>
-    </ButtonWrapper>
-    <ButtonWrapper>
+      <Button.Link secondary>Secondary Link</Button.Link>
       <Button.Link disabled>Disabled</Button.Link>
-    </ButtonWrapper>
+    </Wrapper>
 
-    <DocTitle>Text Buttons</DocTitle>
-    <ButtonWrapper>
+    <Wrapper>
+      <DocTitle>Text Buttons</DocTitle>
+
       <Button.Text>Text</Button.Text>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button.Text icon={Booking}>With Icon</Button.Text>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button.Text secondary>Secondary</Button.Text>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button.Text icon={Booking} secondary>
         Secondary with Icon
       </Button.Text>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button.Text inverted>Inverted</Button.Text>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button.Text icon={Booking} inverted>
         Inverted with Icon
       </Button.Text>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button.Text disabled>Disabled</Button.Text>
-    </ButtonWrapper>
-    <ButtonWrapper>
       <Button.Text icon={Booking} disabled>
         Disabled with Icon
       </Button.Text>
-    </ButtonWrapper>
+    </Wrapper>
   </ScrollView>
 );
 

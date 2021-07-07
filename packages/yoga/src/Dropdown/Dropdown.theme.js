@@ -20,7 +20,7 @@ const Dropdown = ({
     },
     border: {
       width: borders.small,
-      radius: radii.rounded,
+      radius: radii.small,
       color: colors.elements.lineAndBorders,
     },
   },
@@ -45,8 +45,8 @@ const Dropdown = ({
       radius: {
         topLeft: radii.sharp,
         topRight: radii.sharp,
-        bottomRight: radii.rounded,
-        bottomLeft: radii.rounded,
+        bottomRight: radii.small,
+        bottomLeft: radii.small,
       },
       width: borders.small,
       color: colors.text.secondary,
@@ -67,8 +67,8 @@ const Dropdown = ({
       radius: {
         topLeft: radii.sharp,
         topRight: radii.sharp,
-        bottomRight: radii.rounded,
-        bottomLeft: radii.rounded,
+        bottomRight: radii.small,
+        bottomLeft: radii.small,
       },
     },
     font: {
@@ -84,8 +84,8 @@ const Dropdown = ({
       backgroundColor: colors.white,
       border: {
         radius: {
-          topLeft: radii.rounded,
-          topRight: radii.rounded,
+          topLeft: radii.small,
+          topRight: radii.small,
         },
       },
       title: {

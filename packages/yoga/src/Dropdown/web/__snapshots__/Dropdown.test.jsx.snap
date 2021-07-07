@@ -540,7 +540,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 .c4 {
   fill: #6B6B78;
   fill: #D7D7E0;
-  fill: #231B22;
+  fill: #D8385E;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
@@ -714,7 +714,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
 
 .c4 {
   fill: #6B6B78;
-  fill: #231B22;
+  fill: #D8385E;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);

@@ -1,0 +1,925 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
+.c1 {
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c0 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  border-color: #D7D7E0;
+  background-color: #FFFFFF;
+  color: #231B22;
+  font-weight: 400;
+}
+
+.c0:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c0[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0:hover:enabled {
+  border-color: #231B22;
+}
+
+.c0:focus:enabled,
+.c0:active:enabled {
+  border-color: rgba(215,215,224,0.75);
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Classes
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Chips /> Snapshots counter should match snapshot with more than one Chip 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 16px;
+  min-width: 16px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 4px;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500px;
+  border-radius: 8px;
+  background-color: #D8385E;
+}
+
+.c1 {
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c0 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  border-color: #D7D7E0;
+  background-color: #FFFFFF;
+  color: #231B22;
+  font-weight: 400;
+}
+
+.c0:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c0[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0:hover:enabled {
+  border-color: #231B22;
+}
+
+.c0:focus:enabled,
+.c0:active:enabled {
+  border-color: rgba(215,215,224,0.75);
+}
+
+.c2 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #FFEEF2;
+  color: #D8385E;
+  border-color: transparent;
+  font-weight: 500;
+}
+
+.c2:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c2[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c2 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c2:hover:enabled {
+  border-color: #D8385E;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Classes
+    </span>
+  </button>
+  <button
+    class="c2"
+  >
+    <span
+      class="c1"
+    >
+      Gyms and studios
+    </span>
+    <span
+      class="c3"
+    >
+      52
+    </span>
+  </button>
+  <button
+    class="c2"
+  >
+    <span
+      class="c1"
+    >
+      Personal trainers
+    </span>
+    <span
+      class="c3"
+    >
+      +999
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 16px;
+  min-width: 16px;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-left: 4px;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500px;
+  border-radius: 8px;
+  background-color: #D8385E;
+}
+
+.c1 {
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c0 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  border-color: #D7D7E0;
+  background-color: #FFFFFF;
+  color: #231B22;
+  font-weight: 400;
+}
+
+.c0:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c0[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0:hover:enabled {
+  border-color: #231B22;
+}
+
+.c0:focus:enabled,
+.c0:active:enabled {
+  border-color: rgba(215,215,224,0.75);
+}
+
+.c2 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #FFEEF2;
+  color: #D8385E;
+  border-color: transparent;
+  font-weight: 500;
+}
+
+.c2:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c2[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c2 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c2:hover:enabled {
+  border-color: #D8385E;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Location
+    </span>
+  </button>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Classes
+    </span>
+  </button>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Gyms and studios
+    </span>
+  </button>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Personal trainers
+    </span>
+  </button>
+  <button
+    class="c2"
+  >
+    <span
+      class="c1"
+    >
+      Activities
+    </span>
+    <span
+      class="c3"
+    >
+      8
+    </span>
+  </button>
+  <button
+    class="c2"
+  >
+    <span
+      class="c1"
+    >
+      Language
+    </span>
+    <span
+      class="c3"
+    >
+      8
+    </span>
+  </button>
+  <button
+    class="c2"
+  >
+    <span
+      class="c1"
+    >
+      Categories
+    </span>
+  </button>
+  <button
+    class="c2"
+  >
+    <span
+      class="c1"
+    >
+      Availability
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
+.c1 {
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c0 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #FFEEF2;
+  color: #D8385E;
+  border-color: transparent;
+  font-weight: 500;
+}
+
+.c0:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c0[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0:hover:enabled {
+  border-color: #D8385E;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Classes
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Chips /> Snapshots selected should match snapshot with more than one Chip 1`] = `
+.c1 {
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c0 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  border-color: #D7D7E0;
+  background-color: #FFFFFF;
+  color: #231B22;
+  font-weight: 400;
+}
+
+.c0:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c0[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0:hover:enabled {
+  border-color: #231B22;
+}
+
+.c0:focus:enabled,
+.c0:active:enabled {
+  border-color: rgba(215,215,224,0.75);
+}
+
+.c2 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #FFEEF2;
+  color: #D8385E;
+  border-color: transparent;
+  font-weight: 500;
+}
+
+.c2:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c2[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c2 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c2:hover:enabled {
+  border-color: #D8385E;
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Classes
+    </span>
+  </button>
+  <button
+    class="c2"
+  >
+    <span
+      class="c1"
+    >
+      Gyms and studios
+    </span>
+  </button>
+  <button
+    class="c2"
+  >
+    <span
+      class="c1"
+    >
+      Personal trainers
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Chips /> Snapshots should match snapshot 1`] = `
+.c1 {
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c0 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  border-color: #D7D7E0;
+  background-color: #FFFFFF;
+  color: #231B22;
+  font-weight: 400;
+}
+
+.c0:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c0[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0:hover:enabled {
+  border-color: #231B22;
+}
+
+.c0:focus:enabled,
+.c0:active:enabled {
+  border-color: rgba(215,215,224,0.75);
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Classes
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
+.c1 {
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c0 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  border-color: #D7D7E0;
+  background-color: #FFFFFF;
+  color: #231B22;
+  font-weight: 400;
+}
+
+.c0:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c0[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0:hover:enabled {
+  border-color: #231B22;
+}
+
+.c0:focus:enabled,
+.c0:active:enabled {
+  border-color: rgba(215,215,224,0.75);
+}
+
+<div>
+  <button
+    class="c0"
+    disabled=""
+  >
+    <span
+      class="c1"
+    >
+      Classes
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] = `
+.c1 {
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c0 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  border-color: #D7D7E0;
+  background-color: #FFFFFF;
+  color: #231B22;
+  font-weight: 400;
+}
+
+.c0:not(:last-child) {
+  margin-right: 16px;
+}
+
+.c0[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0:hover:enabled {
+  border-color: #231B22;
+}
+
+.c0:focus:enabled,
+.c0:active:enabled {
+  border-color: rgba(215,215,224,0.75);
+}
+
+<div>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Classes
+    </span>
+  </button>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Gyms and studios
+    </span>
+  </button>
+  <button
+    class="c0"
+  >
+    <span
+      class="c1"
+    >
+      Personal trainers
+    </span>
+  </button>
+</div>
+`;

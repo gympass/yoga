@@ -3,48 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.1.0...@gympass/yoga-icons@1.1.1) (2021-04-06)
-
+## [1.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.1.1...@gympass/yoga-icons@1.1.2) (2021-06-16)
 
 ### Bug Fixes
 
-* **icons:** remove fill="none" from SystemStatus icon ([9da2f5e](https://github.com/Gympass/yoga/commit/9da2f5e2416d17d9d1ec1518c8a6bf1f6aa1f609))
-* **systemstatus:** removed fixed fill property from svg ([0c9867c](https://github.com/Gympass/yoga/commit/0c9867cae17a4159da3a07e95e5500980d9f02d2))
+- add react as peer dependency ([3add4ad](https://github.com/Gympass/yoga/commit/3add4ad892ab69f304fe665940b5a21e53f9bc03))
 
+## [1.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.1.0...@gympass/yoga-icons@1.1.1) (2021-04-06)
 
+### Bug Fixes
 
-
+- **icons:** remove fill="none" from SystemStatus icon ([9da2f5e](https://github.com/Gympass/yoga/commit/9da2f5e2416d17d9d1ec1518c8a6bf1f6aa1f609))
+- **systemstatus:** removed fixed fill property from svg ([0c9867c](https://github.com/Gympass/yoga/commit/0c9867cae17a4159da3a07e95e5500980d9f02d2))
 
 # [1.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.0.0...@gympass/yoga-icons@1.1.0) (2021-04-06)
 
-
 ### Features
 
-* **icons:** add system status icon ([59b69fc](https://github.com/Gympass/yoga/commit/59b69fc02d6103c9790ab4e4012c50d4bdf4bdff))
-* **icons:** changed the color ([e8c4e7a](https://github.com/Gympass/yoga/commit/e8c4e7acc1bbcbeaa6ff9fc27baddf4bc7d913b4))
-
-
-
-
+- **icons:** add system status icon ([59b69fc](https://github.com/Gympass/yoga/commit/59b69fc02d6103c9790ab4e4012c50d4bdf4bdff))
+- **icons:** changed the color ([e8c4e7a](https://github.com/Gympass/yoga/commit/e8c4e7acc1bbcbeaa6ff9fc27baddf4bc7d913b4))
 
 # [1.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.12.0-alpha.1...@gympass/yoga-icons@1.0.0) (2021-03-17)
 
 **Note:** Version bump only for package @gympass/yoga-icons
 
-
-
-
-
 # [0.12.0-alpha.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.12.0-alpha.0...@gympass/yoga-icons@0.12.0-alpha.1) (2021-03-11)
-
 
 ### Features
 
-* **icon:** add pause and play icons ([0c82c3e](https://github.com/Gympass/yoga/commit/0c82c3ec6e9593086416784904e03b065dc1dbee))
-
-
-
-
+- **icon:** add pause and play icons ([0c82c3e](https://github.com/Gympass/yoga/commit/0c82c3ec6e9593086416784904e03b065dc1dbee))
 
 # [0.12.0-alpha.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@0.11.2-alpha.5...@gympass/yoga-icons@0.12.0-alpha.0) (2021-02-26)
 

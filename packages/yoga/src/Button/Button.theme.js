@@ -25,7 +25,7 @@ const Button = ({
   font: {
     size: {
       default: fontSizes.medium,
-      small: fontSizes.small,
+      small: fontSizes.xsmall,
     },
     weight: fontWeights.medium,
   },
@@ -45,8 +45,14 @@ const Button = ({
     contained: {
       backgroundColor: {
         disabled: colors.elements.backgroundAndDisabled,
-        default: colors.primary,
-        pressed: hexToRgb(colors.primary, 0.75),
+        primary: {
+          default: colors.primary,
+          pressed: hexToRgb(colors.primary, 0.75),
+        },
+        secondary: {
+          default: colors.secondary,
+          pressed: hexToRgb(colors.secondary, 0.75),
+        },
       },
       font: {
         default: {
@@ -63,14 +69,24 @@ const Button = ({
     outline: {
       backgroundColor: {
         default: 'transparent',
-        hover: colors.primary,
+        primary: {
+          hover: colors.primary,
+        },
+        secondary: {
+          hover: colors.secondary,
+        },
       },
       border: {
         width: borders.small,
       },
       font: {
         default: {
-          color: colors.text.primary,
+          primary: {
+            color: colors.primary,
+          },
+          secondary: {
+            color: colors.secondary,
+          },
         },
         disabled: {
           color: colors.text.disabled,
@@ -79,7 +95,12 @@ const Button = ({
           color: colors.white,
         },
         pressed: {
-          color: hexToRgb(colors.text.primary, 0.75),
+          primary: {
+            color: hexToRgb(colors.primary, 0.75),
+          },
+          secondary: {
+            color: hexToRgb(colors.secondary, 0.75),
+          },
         },
       },
     },
@@ -88,7 +109,12 @@ const Button = ({
     },
     link: {
       font: {
-        color: colors.secondary,
+        primary: {
+          color: colors.primary,
+        },
+        secondary: {
+          color: colors.secondary,
+        },
         disabled: {
           color: colors.text.disabled,
         },

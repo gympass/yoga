@@ -11,6 +11,7 @@ const getPackage = ([imports, component]) =>
           dependencies: {
             react: 'latest',
             'react-dom': 'latest',
+            'react-scripts': 'latest',
             '@gympass/yoga': 'latest',
             'styled-components': 'latest',
           },

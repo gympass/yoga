@@ -12,12 +12,16 @@ const CheckboxWrapper = styled.div`
   * {
     box-sizing: border-box;
   }
+
+  ${({ disabled }) => (disabled ? `cursor: not-allowed` : '')}
 `;
 
 const CheckMark = styled.div`
   position: relative;
 
   border-style: solid;
+
+  flex-shrink: 0;
 
   ${({
     checked,
@@ -31,7 +35,7 @@ const CheckMark = styled.div`
       },
     },
   }) => {
-    let borderColor = primary;
+    let borderColor = elements.selectionAndIcons;
     let bgColor = 'transparent';
     let checkColor = checkbox.checked.icon.color;
 
@@ -129,16 +133,28 @@ const CheckboxStyled = styled.div`
   align-items: center;
 
   ${({
+    checked,
+    inverted,
+    disabled,
     theme: {
       yoga: {
-        colors: { elements },
+        colors: { primary, elements, white },
         components: { checkbox },
       },
     },
   }) => {
     const shadowSize = Math.round(checkbox.size * 0.33);
+    const shadowColor = () => {
+      if (inverted) {
+        return white;
+      }
+
+      return checked ? primary : elements.backgroundAndDisabled;
+    };
 
     return `
+      ${disabled ? `pointer-events: none` : ''}
+
       ${Label}:active,
       &:focus-within,
       &:hover  {
@@ -149,28 +165,28 @@ const CheckboxStyled = styled.div`
 
       &:hover {
         ${Shadow} {
-          background-color: ${hexToRgb(elements.lineAndBorders, 0.25)};
-          
+          background-color: ${hexToRgb(shadowColor(), 0.25)};
+
           box-shadow: 0 0 0 ${shadowSize}px 
-            ${hexToRgb(elements.lineAndBorders, 0.25)};
+            ${hexToRgb(shadowColor(), 0.25)};
         }
       }
 
       &:focus-within {
         ${Shadow} {
-          background-color: ${hexToRgb(elements.lineAndBorders, 0.5)};
-          
+          background-color: ${hexToRgb(shadowColor(), 0.5)};
+
           box-shadow: 0 0 0 ${shadowSize}px 
-            ${hexToRgb(elements.lineAndBorders, 0.5)};
+            ${hexToRgb(shadowColor(), 0.5)};
         }
       }
 
       ${Label}:active {
         ${Shadow} {
-          background-color: ${hexToRgb(elements.lineAndBorders, 0.75)};
+          background-color: ${hexToRgb(shadowColor(), 0.75)};
 
           box-shadow: 0 0 0 ${shadowSize}px 
-            ${hexToRgb(elements.lineAndBorders, 0.75)};
+            ${hexToRgb(shadowColor(), 0.75)};
         }
       }
     `;
@@ -227,8 +243,8 @@ const Checkbox = ({
   },
   ...rest
 }) => (
-  <CheckboxWrapper style={style} className={className}>
-    <CheckboxStyled>
+  <CheckboxWrapper style={style} className={className} disabled={disabled}>
+    <CheckboxStyled checked={checked} inverted={inverted} disabled={disabled}>
       <Label>
         <Shadow />
         <CheckMark

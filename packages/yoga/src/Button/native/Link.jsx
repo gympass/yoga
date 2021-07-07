@@ -10,6 +10,7 @@ const Link = styled(Label)`
   ${({
     disabled,
     pressed,
+    secondary,
     theme: {
       yoga: {
         components: {
@@ -19,22 +20,32 @@ const Link = styled(Label)`
         },
       },
     },
-  }) => `
-    color: ${link.font.color};
+  }) => {
+    const state = secondary ? 'secondary' : 'primary';
 
-    ${disabled ? `color: ${link.font.disabled.color};` : ''}
-    ${!disabled && pressed ? `color: ${hexToRgb(link.font.color, 0.75)};` : ''}
-  `}
+    return `
+      color: ${link.font[state].color};
+
+      ${disabled ? `color: ${link.font.disabled.color};` : ''}
+      ${
+        !disabled && pressed
+          ? `color: ${hexToRgb(link.font[state].color, 0.75)};`
+          : ''
+      }
+    `;
+  }}
 `;
 
 const ButtonLink = props => <Link {...props} />;
 
 ButtonLink.propTypes = {
   disabled: bool,
+  secondary: bool,
 };
 
 ButtonLink.defaultProps = {
   disabled: false,
+  secondary: false,
 };
 
 ButtonLink.displayName = 'Button.Link';

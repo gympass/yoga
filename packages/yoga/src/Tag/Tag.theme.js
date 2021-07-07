@@ -18,7 +18,7 @@ const Tag = ({ spacing, fontSizes, fontWeights, radii, borders }) => ({
   },
   border: {
     width: borders.small,
-    radius: radii.semiRounded,
+    radius: radii.xsmall,
   },
 });
 

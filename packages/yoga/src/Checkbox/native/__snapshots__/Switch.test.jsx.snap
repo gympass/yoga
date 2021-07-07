@@ -88,7 +88,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         disabled={false}
         style={
           Object {
-            "backgroundColor": "rgba(35, 27, 34, 1)",
+            "backgroundColor": "rgba(216, 56, 94, 1)",
             "borderRadius": 9999,
             "display": "flex",
             "height": 24,

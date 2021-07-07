@@ -15,6 +15,7 @@ import {
 } from 'components';
 import ReactLogo from 'images/react-logo.svg';
 import BookLogo from 'images/book.svg';
+import WrenchIcon from 'images/wrench.svg';
 
 import Footer from './Footer';
 
@@ -143,6 +144,7 @@ const Layout = ({
               Guidelines
             </HeaderLink>
             <HeaderLink to="/components">Components</HeaderLink>
+            <HeaderLink to="/system/getting-started">System</HeaderLink>
           </Header>
 
           <TabBar>
@@ -153,6 +155,10 @@ const Layout = ({
             <TabBar.Tab to="/components">
               <ReactLogo />
               Components
+            </TabBar.Tab>
+            <TabBar.Tab to="/system/getting-started">
+              <WrenchIcon />
+              System
             </TabBar.Tab>
           </TabBar>
 

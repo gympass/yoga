@@ -14,6 +14,8 @@ import Progress from './Progress';
 import Dropdown from './Dropdown';
 import TextArea from './TextArea';
 import Icon from './Icon';
+import Chips from './Chips';
+import Box from './Box';
 
 export {
   ThemeProvider,
@@ -37,4 +39,6 @@ export {
   Dropdown,
   TextArea,
   Icon,
+  Chips,
+  Box,
 };

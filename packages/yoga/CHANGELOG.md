@@ -3,142 +3,196 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [6.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.2.2...@gympass/yoga@6.3.0) (2021-05-27)
+## [7.3.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.1...@gympass/yoga@7.3.2) (2021-06-30)
 
+**Note:** Version bump only for package @gympass/yoga
+
+## [7.3.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.0...@gympass/yoga@7.3.1) (2021-06-29)
+
+### Bug Fixes
+
+- fix checkbox width when adding large label text ([3fc2138](https://github.com/Gympass/yoga/commit/3fc21382341efb507866443aeaea1f161db1a1c2)), closes [#279](https://github.com/Gympass/yoga/issues/279)
+
+# [7.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.2.2...@gympass/yoga@7.3.0) (2021-06-28)
 
 ### Features
 
-* **text:** new numberOfLines for truncate prop ([d693ff7](https://github.com/Gympass/yoga/commit/d693ff723d8ae9de45e66078ffcd2d6536fd44bf))
+- **event card:** add link button ([3539421](https://github.com/Gympass/yoga/commit/3539421431eba3f458b25fb6261b99441d7fb7b8))
+- **event card:** add tests ([93277e6](https://github.com/Gympass/yoga/commit/93277e6b6b161379eca11a22a02d3009382f4b9e))
+- **event card:** code review fixes ([79161a4](https://github.com/Gympass/yoga/commit/79161a43ce74037dc7defec5e956ea6b0a175e8b))
+- **event card:** fix code review requests ([94b3888](https://github.com/Gympass/yoga/commit/94b38889e87d97ac2eb5457dfc88d42d032016cf))
+- **event card:** fix web component ([c718596](https://github.com/Gympass/yoga/commit/c7185961c1b95b3373e9c5d32336179ced8a618e))
+- **event card:** invert day of week and month ([c2b3a11](https://github.com/Gympass/yoga/commit/c2b3a112956d15a195a835752568d50ed2271523))
+- **event card:** link is not conditionally rendered ([01678e2](https://github.com/Gympass/yoga/commit/01678e2c0356fd7e27ad42c1b21e2cae5c710953))
+- **event card:** refactor to remove component theme ([234fbed](https://github.com/Gympass/yoga/commit/234fbed11acf90b1fb5076b3b316fbace896d528))
+- **event card:** refactor to use yoga api ([050e8c7](https://github.com/Gympass/yoga/commit/050e8c7ef6537ed4af6e678851b74460e6c5eaa7))
+- **event card:** refactor to use yoga apis ([4196168](https://github.com/Gympass/yoga/commit/419616814172c753b0145449d9ceeccba92c3b56))
+- **event card:** remove margin bottom ([c25a87f](https://github.com/Gympass/yoga/commit/c25a87f5492f40ede9333cc1350447c8e9bca438))
+- **event card:** remove unused code on theme ([f326da7](https://github.com/Gympass/yoga/commit/f326da7fda9438b56cf14caad1867fba762eee46))
+- **event card:** remove unused prop ([a0469b7](https://github.com/Gympass/yoga/commit/a0469b72491b5c97acddd889200ec42748898928))
+- **event card:** update and create small version ([f190597](https://github.com/Gympass/yoga/commit/f19059720f290d1d2b78e3fd053d1b70514f7d18))
+- **event card:** update button link size and margin ([878bed7](https://github.com/Gympass/yoga/commit/878bed72d2a337f1d20d36be17db6973b6a61115))
+- **event card:** update margins ([a5cf612](https://github.com/Gympass/yoga/commit/a5cf61226eefdb76f0837384576b813ef675f076))
+- **event card:** update snapshot ([58f5d37](https://github.com/Gympass/yoga/commit/58f5d3797cf8b4de64a75c50c8d06321bf146d5a))
+- **event card:** update snapshot ([c9acc21](https://github.com/Gympass/yoga/commit/c9acc21631f326abbbe0dce5e3a8a3208ef18794))
+- **event card:** use theme reader ([b42fdc4](https://github.com/Gympass/yoga/commit/b42fdc48717b7f5203bde67f51265e02220b2fb5))
 
+## [7.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.2.1...@gympass/yoga@7.2.2) (2021-06-23)
 
+### Bug Fixes
 
+- android font weight issue ([25b36c4](https://github.com/Gympass/yoga/commit/25b36c415120145737d1893baf4584327d33c70f))
+- refactor imports ([4211b03](https://github.com/Gympass/yoga/commit/4211b033b229913c0a9b7af7f85cef57efdbac7d))
+- remove fontweight compare ([15d2e85](https://github.com/Gympass/yoga/commit/15d2e8530b9e31180ad0240d80ef4c916eac703e))
+- update tests ([a7ce28b](https://github.com/Gympass/yoga/commit/a7ce28be8fdf622809dd31701e11d75d5e8d1e53))
 
+## [7.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.2.0...@gympass/yoga@7.2.1) (2021-06-16)
+
+### Bug Fixes
+
+- add react as peer dependency ([ee55792](https://github.com/Gympass/yoga/commit/ee55792d38d4ebdfc11faa99173574405b30db99))
+
+# [7.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.3...@gympass/yoga@7.2.0) (2021-06-16)
+
+### Features
+
+- **yoga:** new component: Box ([15a2247](https://github.com/Gympass/yoga/commit/15a22472863c5ee1452ee2d2351c98b501fda1bf))
+
+## [7.1.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.2...@gympass/yoga@7.1.3) (2021-06-16)
+
+### Bug Fixes
+
+- **input:** adjust error helper color on input focus ([375c394](https://github.com/Gympass/yoga/commit/375c3946375244a97b70509224f3d4c3089336b8))
+
+## [7.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.1...@gympass/yoga@7.1.2) (2021-06-10)
+
+**Note:** Version bump only for package @gympass/yoga
+
+## [7.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.0...@gympass/yoga@7.1.1) (2021-06-10)
+
+**Note:** Version bump only for package @gympass/yoga
+
+# [7.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.0.0...@gympass/yoga@7.1.0) (2021-06-04)
+
+### Features
+
+- **chips:** add ellipsis support to native chips component ([d5c026e](https://github.com/Gympass/yoga/commit/d5c026e8b10b72091a809cb123033e1b455be3a7))
+- **chips:** add margin right (web) ([efd2baa](https://github.com/Gympass/yoga/commit/efd2baa5b6305042f22f51dce64c46220c65a229))
+- **chips:** create native version ([073246c](https://github.com/Gympass/yoga/commit/073246ca5891b7d5427d454764cc26c3c7a4214f))
+- **chips:** start development of new component Chips (native platform) ([5e84c4a](https://github.com/Gympass/yoga/commit/5e84c4a55a99f98f2231aee1c5d98516729cb34b))
+- **yoga:** start development of new component Chips (web platform) ([a0df8f3](https://github.com/Gympass/yoga/commit/a0df8f358a036a75602c808fad02e1508eb85eb7))
+
+# [7.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.3.0...@gympass/yoga@7.0.0) (2021-06-02)
+
+### Bug Fixes
+
+- **checkbox:** fix background and box-shadow color on web platform ([d83b1ef](https://github.com/Gympass/yoga/commit/d83b1ef64e420d3ecdae2da5de2157d6a5516162))
+- **checkbox:** fix background and box-shadow colors on native platform ([e41242f](https://github.com/Gympass/yoga/commit/e41242fe601b022f8730a19bcc44492a2baa3901))
+- **radio:** fix background and box-shadow color ([9b4c910](https://github.com/Gympass/yoga/commit/9b4c910aefa5d5a008a3a8867c707b84418fb326))
+- **slider:** fix step dot background-color and change tooltip ribbon background-color ([2bec213](https://github.com/Gympass/yoga/commit/2bec213cac709cbd65ad54eb5053302cae2889dd))
+- **switch:** fix thumb shadow colow on native platform ([5e01c74](https://github.com/Gympass/yoga/commit/5e01c74662cc0f9982a45157ce8e165bec76fba7))
+- **tag:** update icon color in Tag.Informative ([cfafb42](https://github.com/Gympass/yoga/commit/cfafb421caca7fcd1dac06be79d8079f11d70f10))
+
+### Features
+
+- **text:** add letter-spacing to Text.Section ([93c8329](https://github.com/Gympass/yoga/commit/93c8329bf2efe5e293d3525e65b4e2643faeeb99))
+- **yoga:** add new prop "secondary" to all Button components ([7b831ee](https://github.com/Gympass/yoga/commit/7b831ee7e71a49dadf8ad9ff83e84001ff241252))
+- **yoga:** add new prop "secondary" to all Button components on native platform ([6def8ed](https://github.com/Gympass/yoga/commit/6def8eda56f2eabd1b4e3251c8b8d00721c00550))
+- **yoga:** change background-color from EventCard ([4015814](https://github.com/Gympass/yoga/commit/40158143b594c3d48ebf3f69d13e8f3b869ab503))
+- **yoga:** change primary and secondary theme colors ([eedc573](https://github.com/Gympass/yoga/commit/eedc573482d75db993d282dd651a74a2c9955afd))
+- **yoga:** update components that use "semiRounded" and "rounded" tokens for the new ones ([5445f3d](https://github.com/Gympass/yoga/commit/5445f3da2aed19385c067faa1de54cccdf883b09))
+- **yoga:** update switch shadow colors ([cc0221a](https://github.com/Gympass/yoga/commit/cc0221a2446fdc2a5ec7f4efea579b1fb3f21527))
+
+### BREAKING CHANGES
+
+- **yoga:** Primary color was "stamina" and secondary color was "vibin". We shifted both, so,
+  primary became "vibin" and secondary became "stamina".
+- **yoga:** The radii tokens that are "passed" to theme has changed their names, so, if you are
+  using "radii" from "theme", make sure to update their names. Check the changelog of the "tokens"
+  package.
+
+# [6.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.2.2...@gympass/yoga@6.3.0) (2021-05-27)
+
+### Features
+
+- **text:** new numberOfLines for truncate prop ([d693ff7](https://github.com/Gympass/yoga/commit/d693ff723d8ae9de45e66078ffcd2d6536fd44bf))
 
 ## [6.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.2.1...@gympass/yoga@6.2.2) (2021-05-07)
 
-
 ### Bug Fixes
 
-* **plancard:** duplicated margin right on icon ([206254b](https://github.com/Gympass/yoga/commit/206254b82a3e746ac1aabf77993444c9a0c090a9))
-
-
-
-
+- **plancard:** duplicated margin right on icon ([206254b](https://github.com/Gympass/yoga/commit/206254b82a3e746ac1aabf77993444c9a0c090a9))
 
 ## [6.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.2.0...@gympass/yoga@6.2.1) (2021-05-07)
 
-
 ### Bug Fixes
 
-* **AutoComplete:** call onSelect only if selectedItem has value ([04ddf6b](https://github.com/Gympass/yoga/commit/04ddf6bf0d77e87bbb850ff76c43d02e0e4b8d17))
-
-
-
-
+- **AutoComplete:** call onSelect only if selectedItem has value ([04ddf6b](https://github.com/Gympass/yoga/commit/04ddf6bf0d77e87bbb850ff76c43d02e0e4b8d17))
 
 # [6.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.1.0...@gympass/yoga@6.2.0) (2021-05-05)
 
-
 ### Features
 
-* **plancard:** add logic to render icon ([b69ad4b](https://github.com/Gympass/yoga/commit/b69ad4bbc58d78783418525b707a02678ee7358c))
-
-
-
-
+- **plancard:** add logic to render icon ([b69ad4b](https://github.com/Gympass/yoga/commit/b69ad4bbc58d78783418525b707a02678ee7358c))
 
 # [6.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.0.3...@gympass/yoga@6.1.0) (2021-04-07)
 
-
 ### Bug Fixes
 
-* **plancard.content:** update currency approach to not break current use ([35c5e4e](https://github.com/Gympass/yoga/commit/35c5e4e3fdde6b3cbf7fc4d8b73807287c14cd6f))
-* **plancard.list:** check buttonProps as boolean value ([07e60a5](https://github.com/Gympass/yoga/commit/07e60a583ad1cedf65fcf0b19339d71f069934d3))
-* **plancard.list:** check buttonProps exists before render the button ([6382ecc](https://github.com/Gympass/yoga/commit/6382ecc087df64df0bd1679b7f985da00c6320ca))
-* **plancard.theme:** update margins ([020b211](https://github.com/Gympass/yoga/commit/020b211c3a54d7dfa8e7d84c79e49c43f2a4e77c))
-
+- **plancard.content:** update currency approach to not break current use ([35c5e4e](https://github.com/Gympass/yoga/commit/35c5e4e3fdde6b3cbf7fc4d8b73807287c14cd6f))
+- **plancard.list:** check buttonProps as boolean value ([07e60a5](https://github.com/Gympass/yoga/commit/07e60a583ad1cedf65fcf0b19339d71f069934d3))
+- **plancard.list:** check buttonProps exists before render the button ([6382ecc](https://github.com/Gympass/yoga/commit/6382ecc087df64df0bd1679b7f985da00c6320ca))
+- **plancard.theme:** update margins ([020b211](https://github.com/Gympass/yoga/commit/020b211c3a54d7dfa8e7d84c79e49c43f2a4e77c))
 
 ### Features
 
-* **plancard.actions:** create button actions ([48d8702](https://github.com/Gympass/yoga/commit/48d8702658c55512edc23ac6c8f5f5c0bb7cbd98))
-
-
-
-
+- **plancard.actions:** create button actions ([48d8702](https://github.com/Gympass/yoga/commit/48d8702658c55512edc23ac6c8f5f5c0bb7cbd98))
 
 ## [6.0.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.0.2...@gympass/yoga@6.0.3) (2021-04-07)
 
-
 ### Bug Fixes
 
-* **checkbox-switch:** explicitly convert checked to number ([0eacf34](https://github.com/Gympass/yoga/commit/0eacf34ccc69b6c61f9b71845c29b292ebc5681a))
-
-
-
-
+- **checkbox-switch:** explicitly convert checked to number ([0eacf34](https://github.com/Gympass/yoga/commit/0eacf34ccc69b6c61f9b71845c29b292ebc5681a))
 
 ## [6.0.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.0.1...@gympass/yoga@6.0.2) (2021-04-06)
 
 **Note:** Version bump only for package @gympass/yoga
 
-
-
-
-
 ## [6.0.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.0.0...@gympass/yoga@6.0.1) (2021-04-06)
 
 **Note:** Version bump only for package @gympass/yoga
 
-
-
-
-
 # [6.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.9...@gympass/yoga@6.0.0) (2021-03-17)
-
 
 ### Bug Fixes
 
-* **button:** update icon proptype (Button{.Outline}) ([2f9882b](https://github.com/Gympass/yoga/commit/2f9882bf00ee53f2363f080bde1136b7618eb3f5))
-
-
-
-
+- **button:** update icon proptype (Button{.Outline}) ([2f9882b](https://github.com/Gympass/yoga/commit/2f9882bf00ee53f2363f080bde1136b7618eb3f5))
 
 # [5.2.0-alpha.9](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.8...@gympass/yoga@5.2.0-alpha.9) (2021-03-17)
 
-
 ### Bug Fixes
 
-* **autocomplete:** matching Figma file ([298f833](https://github.com/Gympass/yoga/commit/298f833dde219e494767663fa93700e2cea4b413))
-* **button:** fix missing unit warnings ([8cf87aa](https://github.com/Gympass/yoga/commit/8cf87aaa48cf1e539c5556cf6d726a6c057f4c94))
-* **button.outline:** update button.outline layout with new figma specification ([a4b881f](https://github.com/Gympass/yoga/commit/a4b881fa241b6c348e0c82a6427e47bf2e374702))
-* **checkbox.switch:** updating states tokens ([854c3f8](https://github.com/Gympass/yoga/commit/854c3f898a9a57b1a2bf04bca6e6c7d31f4cfaa9))
-* **helper:** update helper text color when error ([0f7557d](https://github.com/Gympass/yoga/commit/0f7557d100e61dc51b35b24e59a37537f945db5d))
-* **native:** fix Button components to reflect figma design ([a433d0d](https://github.com/Gympass/yoga/commit/a433d0d1cd1600ee89683f63f62a032a7709774b))
-* **radiogroup:** adjust default text color ([73a159d](https://github.com/Gympass/yoga/commit/73a159d8b80d0ee6baffaaa58e8f0d2681cb1bc7))
-* **web:** fix button components to reflect figma design ([fa39aaf](https://github.com/Gympass/yoga/commit/fa39aaf0d2016e21f601773d61dbb6f053f53491))
-
+- **autocomplete:** matching Figma file ([298f833](https://github.com/Gympass/yoga/commit/298f833dde219e494767663fa93700e2cea4b413))
+- **button:** fix missing unit warnings ([8cf87aa](https://github.com/Gympass/yoga/commit/8cf87aaa48cf1e539c5556cf6d726a6c057f4c94))
+- **button.outline:** update button.outline layout with new figma specification ([a4b881f](https://github.com/Gympass/yoga/commit/a4b881fa241b6c348e0c82a6427e47bf2e374702))
+- **checkbox.switch:** updating states tokens ([854c3f8](https://github.com/Gympass/yoga/commit/854c3f898a9a57b1a2bf04bca6e6c7d31f4cfaa9))
+- **helper:** update helper text color when error ([0f7557d](https://github.com/Gympass/yoga/commit/0f7557d100e61dc51b35b24e59a37537f945db5d))
+- **native:** fix Button components to reflect figma design ([a433d0d](https://github.com/Gympass/yoga/commit/a433d0d1cd1600ee89683f63f62a032a7709774b))
+- **radiogroup:** adjust default text color ([73a159d](https://github.com/Gympass/yoga/commit/73a159d8b80d0ee6baffaaa58e8f0d2681cb1bc7))
+- **web:** fix button components to reflect figma design ([fa39aaf](https://github.com/Gympass/yoga/commit/fa39aaf0d2016e21f601773d61dbb6f053f53491))
 
 ### Features
 
-* **button:** add icon support to Button, Button.Text and Button.Outline ([8308108](https://github.com/Gympass/yoga/commit/8308108b56f3a17c59d8bd8c137fe127d29e5a30))
-* **checkbox:** update Checkbox to match Figma file ([5fef900](https://github.com/Gympass/yoga/commit/5fef9005bb500459b5b468bd24704b7670a597b4))
-* **dropdown:** update Dropdown to match Figma file ([bd95558](https://github.com/Gympass/yoga/commit/bd95558feff980385cfc545a3499e2a59aa27969))
-* **helper:** export Input Helper to be used outside of it ([96c44cb](https://github.com/Gympass/yoga/commit/96c44cb7bdded42a2981d188236b4cf6d140f223))
-* **switch:** adjust thumb color on native and shadow ([0079510](https://github.com/Gympass/yoga/commit/00795101849dbb627600bcfa66e5ce14c778d45b))
-* **switch:** onPress shadow ([ffbc1c0](https://github.com/Gympass/yoga/commit/ffbc1c06c8c09aabb3d5b12be6ca2e79f627c132))
-
-
-
-
+- **button:** add icon support to Button, Button.Text and Button.Outline ([8308108](https://github.com/Gympass/yoga/commit/8308108b56f3a17c59d8bd8c137fe127d29e5a30))
+- **checkbox:** update Checkbox to match Figma file ([5fef900](https://github.com/Gympass/yoga/commit/5fef9005bb500459b5b468bd24704b7670a597b4))
+- **dropdown:** update Dropdown to match Figma file ([bd95558](https://github.com/Gympass/yoga/commit/bd95558feff980385cfc545a3499e2a59aa27969))
+- **helper:** export Input Helper to be used outside of it ([96c44cb](https://github.com/Gympass/yoga/commit/96c44cb7bdded42a2981d188236b4cf6d140f223))
+- **switch:** adjust thumb color on native and shadow ([0079510](https://github.com/Gympass/yoga/commit/00795101849dbb627600bcfa66e5ce14c778d45b))
+- **switch:** onPress shadow ([ffbc1c0](https://github.com/Gympass/yoga/commit/ffbc1c06c8c09aabb3d5b12be6ca2e79f627c132))
 
 # [5.2.0-alpha.8](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.7...@gympass/yoga@5.2.0-alpha.8) (2021-03-11)
 
 **Note:** Version bump only for package @gympass/yoga
-
-
-
-
 
 # [5.2.0-alpha.7](https://github.com/Gympass/yoga/compare/@gympass/yoga@5.2.0-alpha.6...@gympass/yoga@5.2.0-alpha.7) (2021-03-03)
 
