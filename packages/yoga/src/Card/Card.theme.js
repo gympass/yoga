@@ -64,7 +64,6 @@ const Card = ({
       },
     },
     list: {
-      height: 92,
       margin: {
         top: spacing.small,
       },
