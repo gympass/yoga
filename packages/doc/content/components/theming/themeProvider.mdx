@@ -1,0 +1,33 @@
+---
+title: 'ThemeProvider'
+metaTitle: 'ThemeProvider'
+metaDescription: 'ThemeProvider Component'
+---
+
+# ThemeProvider
+
+### Reference
+
+ThemeProvider component extends from styled-component `ThemeProvider`, you can
+check it out [here.](https://www.styled-components.com/docs/advanced#theming)
+Our component adds some extra features to `ThemeProvider` like global and
+specific locale design-tokens merge.
+
+### Usage
+
+An important point in using it is that your whole application **must** be
+wrapped in our `ThemeProvider` component:
+
+```javascript type=highlight
+import { ThemeProvider, Button } from '@gympass/yoga';
+
+const App = () => (
+  <ThemeProvider>
+    <Button>Find an activity</Button>
+  </ThemeProvider>
+);
+```
+
+Although Yoga supports `locale`, we don't have any design definitions for
+specific locale design-tokens yet, so the `ThemeProvider` components only uses
+global theming for now.
