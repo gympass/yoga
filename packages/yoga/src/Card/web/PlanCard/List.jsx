@@ -14,7 +14,6 @@ const truncateStyle = css`
 `;
 
 const List = styled.ul`
-  height: ${plan.list.height}px;
   margin: ${plan.list.margin.top}px 0 0;
   padding: 0;
 

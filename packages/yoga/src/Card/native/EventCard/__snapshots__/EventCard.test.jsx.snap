@@ -478,7 +478,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                           "top": 12,
                         },
                       },
-                      "height": 92,
                       "item": Object {
                         "font": Object {
                           "color": "#231B22",
@@ -1858,7 +1857,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                           "top": 12,
                         },
                       },
-                      "height": 92,
                       "item": Object {
                         "font": Object {
                           "color": "#231B22",
@@ -3234,7 +3232,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                           "top": 12,
                         },
                       },
-                      "height": 92,
                       "item": Object {
                         "font": Object {
                           "color": "#231B22",
@@ -4614,7 +4611,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                           "top": 12,
                         },
                       },
-                      "height": 92,
                       "item": Object {
                         "font": Object {
                           "color": "#231B22",
@@ -5994,7 +5990,6 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                           "top": 12,
                         },
                       },
-                      "height": 92,
                       "item": Object {
                         "font": Object {
                           "color": "#231B22",
