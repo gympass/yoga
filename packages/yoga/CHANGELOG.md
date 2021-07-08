@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.2...@gympass/yoga@7.4.0) (2021-07-08)
+
+
+### Bug Fixes
+
+* **plan_card:** removing the fixed height on planCard.ListItem ([ef34523](https://github.com/Gympass/yoga/commit/ef34523e6c3920c3cb20d7bc2c8fbc8277f8c098)), closes [#281](https://github.com/Gympass/yoga/issues/281)
+
+
+### Features
+
+* **plan_card:** removing fixed list height on card theme ([075f0b0](https://github.com/Gympass/yoga/commit/075f0b00e74746bf2d93e1b381e711de5d264bfa))
+
+
+
+
+
 ## [7.3.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.1...@gympass/yoga@7.3.2) (2021-06-30)
 
 **Note:** Version bump only for package @gympass/yoga
