@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled, { withTheme } from 'styled-components';
-import { func, string, bool, oneOf } from 'prop-types';
+import { func, string, bool, number, oneOf } from 'prop-types';
 
 import { media } from '@gympass/yoga-helpers';
 
@@ -79,9 +79,9 @@ const StyledSnackbar = styled.div`
     `}
 
   ${media.md`
+    left: auto;
     bottom: ${theme.components.snackbar.position.desktop.bottom}px;
     right: ${theme.components.snackbar.position.desktop.right}px;
-    left: auto;
 
     width: ${theme.components.snackbar.minWidth.desktop}px;
   `}
@@ -89,6 +89,7 @@ const StyledSnackbar = styled.div`
 
 const Snackbar = ({
   open,
+  autoClose,
   variant,
   hasIcon,
   message,
@@ -102,37 +103,57 @@ const Snackbar = ({
   },
   ...props
 }) => {
+  const [isOpen, setIsOpen] = useState(open || false);
+
+  const handleCloseSnackbar = () => {
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+    let timer;
+
+    if (open && autoClose) {
+      timer = setTimeout(() => {
+        handleCloseSnackbar();
+      }, autoClose);
+    }
+
+    return () => clearTimeout(timer);
+  }, [autoClose]);
+
   return (
-    <StyledSnackbar variant={variant} {...props}>
-      {hasIcon && (
-        <IconWrapper>
-          <Icon
-            as={snackbar.variant.icon[variant]}
-            fill="secondary"
-            width="large"
-            height="large"
-          />
-        </IconWrapper>
-      )}
-
-      <Box as={Text.Small} flex={1} mr="small" numberOfLines={2}>
-        {message}
-      </Box>
-
-      <ActionsWrapper>
-        {onAction && actionText && (
-          <Button.Link onClick={onAction} secondary small>
-            {actionText}
-          </Button.Link>
+    isOpen && (
+      <StyledSnackbar variant={variant} {...props}>
+        {hasIcon && (
+          <IconWrapper>
+            <Icon
+              as={snackbar.variant.icon[variant]}
+              fill="secondary"
+              width="large"
+              height="large"
+            />
+          </IconWrapper>
         )}
 
-        {onClose && (
-          <IconButtonWrapper>
-            <Icon as={Close} fill="secondary" width="large" height="large" />
-          </IconButtonWrapper>
-        )}
-      </ActionsWrapper>
-    </StyledSnackbar>
+        <Box as={Text.Small} flex={1} mr="small" numberOfLines={2}>
+          {message}
+        </Box>
+
+        <ActionsWrapper>
+          {onAction && actionText && (
+            <Button.Link onClick={onAction} secondary small>
+              {actionText}
+            </Button.Link>
+          )}
+
+          {onClose && (
+            <IconButtonWrapper onClick={onClose}>
+              <Icon as={Close} fill="secondary" width="large" height="large" />
+            </IconButtonWrapper>
+          )}
+        </ActionsWrapper>
+      </StyledSnackbar>
+    )
   );
 };
 
@@ -140,6 +161,7 @@ Snackbar.propTypes = {
   message: string.isRequired,
   hasIcon: bool,
   open: bool,
+  autoClose: number,
   variant: oneOf(['success', 'failure', 'info']),
   actionText: string,
   onAction: func,
@@ -147,9 +169,10 @@ Snackbar.propTypes = {
 };
 
 Snackbar.defaultProps = {
-  hasIcon: true,
-  open: false,
   variant: 'info',
+  open: false,
+  hasIcon: true,
+  autoClose: false,
   actionText: undefined,
   onAction: undefined,
   onClose: undefined,
