@@ -1,7 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
 
-import { ThemeProvider, Avatar } from '../..';
+import { ThemeProvider } from '../..';
+import Avatar from './Avatar';
 
 describe('<Avatar />', () => {
   it('should match snapshot', () => {

@@ -261,6 +261,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                   },
                   "width": 320,
                 },
+                "avatar": Object {},
                 "button": Object {
                   "border": Object {
                     "radius": 9999,
@@ -1641,6 +1642,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                   },
                   "width": 320,
                 },
+                "avatar": Object {},
                 "button": Object {
                   "border": Object {
                     "radius": 9999,
@@ -3017,6 +3019,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   },
                   "width": 320,
                 },
+                "avatar": Object {},
                 "button": Object {
                   "border": Object {
                     "radius": 9999,
@@ -4397,6 +4400,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   },
                   "width": 320,
                 },
+                "avatar": Object {},
                 "button": Object {
                   "border": Object {
                     "radius": 9999,
@@ -5777,6 +5781,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                   },
                   "width": 320,
                 },
+                "avatar": Object {},
                 "button": Object {
                   "border": Object {
                     "radius": 9999,
