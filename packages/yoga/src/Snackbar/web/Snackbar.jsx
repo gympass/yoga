@@ -2,12 +2,15 @@ import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, string, bool, oneOf } from 'prop-types';
 
+import { media } from '@gympass/yoga-helpers';
+
 import { Close } from '@gympass/yoga-icons';
 
 import { theme } from '../../Theme';
 
-import Icon from '../../Icon';
+import Box from '../../Box';
 import Button from '../../Button';
+import Icon from '../../Icon';
 import Text from '../../Text';
 
 const IconWrapper = styled.div`
@@ -28,11 +31,6 @@ const IconButtonWrapper = styled.div`
       fill: ${theme.colors.text.secondary};
     }
   }
-`;
-
-const Message = styled(Text.Small)`
-  flex: 1;
-  margin-right: ${theme.spacing.small}px;
 `;
 
 const ActionsWrapper = styled.aside`
@@ -59,11 +57,12 @@ const StyledSnackbar = styled.div`
       justify-content: space-between;
   
       position: absolute;
-      bottom: ${snackbar.position.bottom}px;
-      right: ${snackbar.position.right}px;
+      bottom: ${snackbar.position.mobile.bottom}px;
+      right: ${snackbar.position.mobile.right}px;
+      left: ${snackbar.position.mobile.left}px;
   
-      min-width: ${snackbar.width.min}px;
-      max-width: ${snackbar.width.max}px;
+      min-width: ${snackbar.minWidth.mobile}px;
+      max-width: ${snackbar.maxWidth.default}px;
   
       min-height: ${snackbar.height.min}px;
       max-height: ${snackbar.height.max}px;
@@ -75,7 +74,17 @@ const StyledSnackbar = styled.div`
       box-shadow: ${snackbar.shadow.default};
 
       background-color: ${snackbar.variant.color[variant]};
+
+      z-index: 100;
     `}
+
+  ${media.md`
+    bottom: ${theme.components.snackbar.position.desktop.bottom}px;
+    right: ${theme.components.snackbar.position.desktop.right}px;
+    left: auto;
+
+    width: ${theme.components.snackbar.minWidth.desktop}px;
+  `}
 `;
 
 const Snackbar = ({
@@ -106,7 +115,9 @@ const Snackbar = ({
         </IconWrapper>
       )}
 
-      <Message>{message}</Message>
+      <Box as={Text.Small} flex={1} mr="small" numberOfLines={2}>
+        {message}
+      </Box>
 
       <ActionsWrapper>
         {onAction && actionText && (

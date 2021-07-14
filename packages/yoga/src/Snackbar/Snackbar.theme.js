@@ -12,8 +12,15 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
     default: spacing.small,
   },
   position: {
-    bottom: 40,
-    right: 40,
+    desktop: {
+      bottom: spacing.xxlarge,
+      right: spacing.xxlarge,
+    },
+    mobile: {
+      bottom: spacing.small,
+      right: spacing.small,
+      left: spacing.small,
+    },
   },
   shadow: {
     default: elevations.small,
@@ -30,9 +37,12 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
       info: AlertCircle,
     },
   },
-  width: {
-    min: 320,
-    max: 600,
+  minWidth: {
+    desktop: 400,
+    mobile: 320,
+  },
+  maxWidth: {
+    default: 600,
   },
 });
 
