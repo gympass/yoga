@@ -13,6 +13,7 @@ const Circle = ({ src, fill, placeholder, width, height }) => {
       height={height}
       borderRadius="circle"
       placeholder={icon}
+      type="circle"
     />
   );
 };
@@ -33,6 +34,6 @@ Circle.defaultProps = {
   height: undefined,
 };
 
-Circle.displayName = 'Circle';
+Circle.displayName = 'Avatar.Circle';
 
 export default Circle;

@@ -11,7 +11,8 @@ const Avatar = ({
   placeholder,
   width = 48,
   height = 48,
-  borderRadius = 'regular',
+  borderRadius = 'small',
+  type = 'default',
 }) => {
   const icon = placeholder || BuildingFilled;
   return (
@@ -25,7 +26,11 @@ const Avatar = ({
       elevation="small"
       borderRadius={borderRadius}
     >
-      {src ? <Image source={src} /> : <Placeholder fill={fill} icon={icon} />}
+      {src ? (
+        <Image type={type} source={src} />
+      ) : (
+        <Placeholder fill={fill} icon={icon} />
+      )}
     </Box>
   );
 };
@@ -37,6 +42,7 @@ Avatar.propTypes = {
   width: number,
   height: number,
   borderRadius: string,
+  type: string,
 };
 
 Avatar.defaultProps = {
@@ -46,6 +52,7 @@ Avatar.defaultProps = {
   width: undefined,
   height: undefined,
   borderRadius: undefined,
+  type: undefined,
 };
 
 Avatar.displayName = 'Avatar';

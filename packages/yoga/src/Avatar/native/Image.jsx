@@ -7,14 +7,14 @@ const Image = styled(ImageNative)`
     theme: {
       yoga: {
         elevations: { small },
-        radii: { circle, regular },
+        radii,
       },
     },
   }) => {
     return `
       width: 100%;
       height: 100%;
-      border-radius: ${type === 'circle' ? circle : regular};
+      border-radius: ${type === 'circle' ? radii.circle : radii.small};
       box-shadow: ${small}
     `;
   }}
