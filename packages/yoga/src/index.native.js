@@ -16,7 +16,6 @@ import TextArea from './TextArea';
 import Icon from './Icon';
 import Chips from './Chips';
 import Box from './Box';
-import Snackbar from './Snackbar';
 
 export {
   ThemeProvider,
@@ -42,5 +41,4 @@ export {
   Icon,
   Chips,
   Box,
-  Snackbar,
 };
