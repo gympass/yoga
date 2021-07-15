@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, string, bool, number, oneOf } from 'prop-types';
 
@@ -91,9 +91,9 @@ const Snackbar = ({
   open,
   autoClose,
   variant,
-  hasIcon,
+  hideIcon,
   message,
-  actionText,
+  actionLabel,
   onAction,
   onClose,
   theme: {
@@ -103,28 +103,22 @@ const Snackbar = ({
   },
   ...props
 }) => {
-  const [isOpen, setIsOpen] = useState(open || false);
-
-  const handleCloseSnackbar = () => {
-    setIsOpen(false);
-  };
-
   useEffect(() => {
     let timer;
 
-    if (open && autoClose) {
+    if (open && autoClose && onClose) {
       timer = setTimeout(() => {
-        handleCloseSnackbar();
+        onClose();
       }, autoClose);
     }
 
     return () => clearTimeout(timer);
-  }, [autoClose]);
+  }, [open, autoClose]);
 
   return (
-    isOpen && (
+    open && (
       <StyledSnackbar variant={variant} {...props}>
-        {hasIcon && (
+        {!hideIcon && (
           <IconWrapper>
             <Icon
               as={snackbar.variant.icon[variant]}
@@ -140,9 +134,9 @@ const Snackbar = ({
         </Box>
 
         <ActionsWrapper>
-          {onAction && actionText && (
+          {onAction && actionLabel && (
             <Button.Link onClick={onAction} secondary small>
-              {actionText}
+              {actionLabel}
             </Button.Link>
           )}
 
@@ -158,24 +152,39 @@ const Snackbar = ({
 };
 
 Snackbar.propTypes = {
-  message: string.isRequired,
-  hasIcon: bool,
+  /** Controls the snackbar visibility. */
   open: bool,
+
+  /** A number in milliseconds to close snackbar automaticaly. The `onClose` function becomes required when passing this function. */
   autoClose: number,
-  variant: oneOf(['success', 'failure', 'info']),
-  actionText: string,
+
+  /** Label for a custom action. */
+  actionLabel: string,
+
+  /** Controls the snackbar icon visibility. */
+  hideIcon: bool,
+
+  /** The message shown when snackbar is opened. */
+  message: string.isRequired,
+
+  /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
   onAction: func,
+
+  /** Function to close the snackbar. */
   onClose: func,
+
+  /** The style variant, it may be "success", "failure" or "info". */
+  variant: oneOf(['success', 'failure', 'info']),
 };
 
 Snackbar.defaultProps = {
-  variant: 'info',
   open: false,
-  hasIcon: true,
   autoClose: false,
-  actionText: undefined,
+  actionLabel: undefined,
+  hideIcon: false,
   onAction: undefined,
   onClose: undefined,
+  variant: 'info',
 };
 
 export default withTheme(Snackbar);
