@@ -1,26 +1,25 @@
 import React from 'react';
 import { UserFilled } from '@gympass/yoga-icons';
 import { func, string, number } from 'prop-types';
-import BoxAvatar from './BoxAvatar';
-import Placeholder from './Placeholder';
-import Image from './Image';
+import Avatar from './Avatar';
 
 const Circle = ({ src, fill, placeholder, width, height }) => {
   const icon = placeholder || UserFilled;
   return (
-    <BoxAvatar width={width} height={height} borderRadius="circle">
-      {src ? (
-        <Image source={src} type="circle" />
-      ) : (
-        <Placeholder icon={icon} fill={fill} />
-      )}
-    </BoxAvatar>
+    <Avatar
+      src={src}
+      fill={fill}
+      width={width}
+      height={height}
+      borderRadius="circle"
+      placeholder={icon}
+    />
   );
 };
 
 Circle.propTypes = {
   src: string,
-  placeholder: func.isRequired,
+  placeholder: func,
   fill: string,
   width: number,
   height: number,
@@ -28,6 +27,7 @@ Circle.propTypes = {
 
 Circle.defaultProps = {
   src: undefined,
+  placeholder: undefined,
   fill: undefined,
   width: undefined,
   height: undefined,
