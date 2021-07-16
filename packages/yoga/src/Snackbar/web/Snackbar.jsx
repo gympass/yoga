@@ -140,7 +140,7 @@ const Snackbar = ({
             </Button.Link>
           )}
 
-          {onClose && (
+          {!autoClose && onClose && (
             <IconButtonWrapper onClick={onClose}>
               <Icon as={Close} fill="secondary" width="large" height="large" />
             </IconButtonWrapper>
