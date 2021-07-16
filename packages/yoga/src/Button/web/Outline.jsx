@@ -108,14 +108,22 @@ const Outline = styled(Button)`
 const ButtonOutline = props => <Outline {...props} />;
 
 ButtonOutline.propTypes = {
+  disabled: bool,
+  full: bool,
   inverted: bool,
+  onClick: func,
+  secondary: bool,
   small: bool,
   /** an Icon from yoga-icons package */
   icon: oneOfType([node, func]),
 };
 
 ButtonOutline.defaultProps = {
+  disabled: false,
+  full: false,
   inverted: false,
+  onClick: () => {},
+  secondary: false,
   small: false,
   icon: undefined,
 };
