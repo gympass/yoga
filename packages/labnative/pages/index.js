@@ -17,7 +17,6 @@ import IconsList from './IconsList';
 import Icon from './Icon';
 import Chips from './Chips';
 import Box from './Box';
-import Snackbar from './Snackbar';
 
 export {
   Button,
@@ -39,5 +38,4 @@ export {
   Icon,
   Chips,
   Box,
-  Snackbar,
 };

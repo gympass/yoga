@@ -4,22 +4,49 @@ metaTitle: 'Snackbar'
 metaDescription: 'Snackbar Component'
 ---
 
-
 import SnackbarWeb from './snackbar-web.mdx';
-import SnackbarNative from './snackbar-native.mdx';
-
 
 # Snackbar
 
+### Reference
 
-<TabbedView>
-  <Tab title="Web">
-    <SnackbarWeb />
-  </Tab>
+Gympass `<Snackbar />` description
 
-  <Tab title="Native">
-    <SnackbarNative />
-  </Tab>
-</TabbedView>
+### Usage
 
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('onAction function');
+  };
+
+  return (
+    <>
+      <Button onClick={handleOpen}>Open snackbar</Button>
+
+      <Snackbar
+        open={isOpen}
+        message="Feedback message."
+        actionLabel="Action"
+        onAction={handleOnAction}
+        onClose={handleOnClose}
+      />
+    </>
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Snackbar" platform="web" />
   
