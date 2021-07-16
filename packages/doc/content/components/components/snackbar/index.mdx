@@ -4,13 +4,13 @@ metaTitle: 'Snackbar'
 metaDescription: 'Snackbar Component'
 ---
 
-import SnackbarWeb from './snackbar-web.mdx';
-
 # Snackbar
 
 ### Reference
 
-Gympass `<Snackbar />` description
+Gympass `<Snackbar />` is the proper component to show alert messages.
+
+The `Snackbar` may have an icon, a custom action and a close button.
 
 ### Usage
 
@@ -36,7 +36,7 @@ render(() => {
 
       <Snackbar
         open={isOpen}
-        message="Feedback message."
+        message="We are processing your file."
         actionLabel="Action"
         onAction={handleOnAction}
         onClose={handleOnClose}
@@ -46,7 +46,58 @@ render(() => {
 });
 ```
 
+#### Variants
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = variant => {
+    setIsOpen(state => ({ ...state, [variant]: true }));
+  };
+
+  const handleOnClose = variant => {
+    setIsOpen(state => ({ ...state, [variant]: false }));
+  };
+
+  const handleOnAction = () => {
+    alert('onAction function');
+  };
+
+  return (
+    <>
+      <section style={{ display: 'flex', justifyContent: 'space-between', width: 700 }}>
+        <Button.Outline onClick={() => handleOpen('info')}>Open info snackbar</Button.Outline>
+        <Button.Outline onClick={() => handleOpen('success')}>Open success snackbar</Button.Outline>
+        <Button.Outline onClick={() => handleOpen('failure')}>Open failure snackbar</Button.Outline>
+      </section>
+      
+      <Snackbar
+        open={isOpen.info}
+        message="We are processing your file."
+        onClose={() => handleOnClose('info')}
+      />
+
+      <Snackbar
+        open={isOpen.success}
+        variant="success"
+        message="Eligible added successfully."
+        onClose={() => handleOnClose('success')}
+      />
+
+      <Snackbar
+        open={isOpen.failure}
+        variant="failure"
+        message="Something went wrong, try again."
+        actionLabel="Retry"
+        onAction={handleOnAction}
+        onClose={() => handleOnClose('failure')}
+      />
+    </>
+  );
+});
+```
+
 ### Props
 
 <PropsTable component="Snackbar" platform="web" />
-  
