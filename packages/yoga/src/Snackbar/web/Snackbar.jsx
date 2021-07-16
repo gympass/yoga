@@ -117,9 +117,14 @@ const Snackbar = ({
 
   return (
     open && (
-      <StyledSnackbar variant={variant} {...props}>
+      <StyledSnackbar
+        role="alert"
+        aria-label={variant}
+        variant={variant}
+        {...props}
+      >
         {!hideIcon && (
-          <IconWrapper>
+          <IconWrapper role="img">
             <Icon
               as={snackbar.variant.icon[variant]}
               fill="secondary"
@@ -141,7 +146,7 @@ const Snackbar = ({
           )}
 
           {!autoClose && onClose && (
-            <IconButtonWrapper onClick={onClose}>
+            <IconButtonWrapper role="button" onClick={onClose}>
               <Icon as={Close} fill="secondary" width="large" height="large" />
             </IconButtonWrapper>
           )}
@@ -179,7 +184,7 @@ Snackbar.propTypes = {
 
 Snackbar.defaultProps = {
   open: false,
-  autoClose: false,
+  autoClose: undefined,
   actionLabel: undefined,
   hideIcon: false,
   onAction: undefined,
