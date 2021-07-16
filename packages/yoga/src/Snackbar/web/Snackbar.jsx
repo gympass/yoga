@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, string, bool, number, oneOf } from 'prop-types';
 
@@ -103,16 +103,18 @@ const Snackbar = ({
   },
   ...props
 }) => {
-  useEffect(() => {
-    let timer;
+  const timeoutRef = useRef();
 
-    if (open && autoClose && onClose) {
-      timer = setTimeout(() => {
+  useEffect(() => {
+    const shouldCloseOnTimer = open && autoClose && onClose;
+
+    if (shouldCloseOnTimer) {
+      timeoutRef.current = setTimeout(() => {
         onClose();
       }, autoClose);
     }
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timeoutRef.current);
   }, [open, autoClose]);
 
   return (
