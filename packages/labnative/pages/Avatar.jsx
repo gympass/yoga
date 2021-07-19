@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Avatar } from '@gympass/yoga';
-import { Youtube, UserFilled } from '@gympass/yoga-icons';
+import { Youtube } from '@gympass/yoga-icons';
 import { DocTitle } from '../components';
 import avatar from '../assets/images/avatarIcons/avatar.png';
 import classIcon from '../assets/images/avatarIcons/class.png';
@@ -53,7 +53,7 @@ const AvatarPage = () => (
     </AvatarWrapper>
     <AvatarWrapper>
       <DocTitle>Circle Avatar with placeholder prop</DocTitle>
-      <Avatar.Circle placeholder={UserFilled} />
+      <Avatar.Circle placeholder={Youtube} />
     </AvatarWrapper>
     <AvatarWrapper>
       <DocTitle>Circle Avatar with width and height props</DocTitle>
