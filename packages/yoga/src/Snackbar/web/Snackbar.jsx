@@ -13,13 +13,6 @@ import Button from '../../Button';
 import Icon from '../../Icon';
 import Text from '../../Text';
 
-const IconWrapper = styled.div`
-  display: flex;
-  align-items: center;
-
-  margin-right: ${theme.spacing.xxsmall}px;
-`;
-
 const IconButtonWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -126,14 +119,14 @@ const Snackbar = ({
         {...props}
       >
         {!hideIcon && (
-          <IconWrapper role="img">
+          <Box display="flex" alignItems="center" mr="small" role="img">
             <Icon
               as={snackbar.variant.icon[variant]}
               fill="secondary"
               width="large"
               height="large"
             />
-          </IconWrapper>
+          </Box>
         )}
 
         <Box as={Text.Small} flex={1} mr="small" numberOfLines={2}>
