@@ -36,7 +36,7 @@ render(() => {
 
       <Snackbar
         open={isOpen}
-        message="We are processing your file."
+        message="Wellbeing is now universal."
         actionLabel="Action"
         onAction={handleOnAction}
         onClose={handleOnClose}
@@ -80,21 +80,21 @@ render(() => {
       
       <Snackbar
         open={isOpen.info}
-        message="We are processing your file."
+        variant="info"
+        message="We are making wellbeing universal."
         onClose={() => handleOnClose('info')}
       />
 
       <Snackbar
         open={isOpen.success}
-        variant="success"
-        message="Eligible added successfully."
+        message="Wellbeing is now universal."
         onClose={() => handleOnClose('success')}
       />
 
       <Snackbar
         open={isOpen.failure}
         variant="failure"
-        message="Something went wrong, try again."
+        message="Something went wrong."
         actionLabel="Retry"
         onAction={handleOnAction}
         onClose={() => handleOnClose('failure')}

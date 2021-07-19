@@ -184,7 +184,7 @@ Snackbar.defaultProps = {
   hideIcon: false,
   onAction: undefined,
   onClose: undefined,
-  variant: 'info',
+  variant: 'success',
 };
 
 export default memo(withTheme(Snackbar));
