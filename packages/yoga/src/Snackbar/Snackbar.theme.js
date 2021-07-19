@@ -1,4 +1,4 @@
-import { CheckedFull, AlertTriangle, AlertCircle } from '@gympass/yoga-icons';
+import { CheckedFull, AlertTriangle, Info } from '@gympass/yoga-icons';
 
 const Snackbar = ({ colors, elevations, radii, spacing }) => ({
   border: {
@@ -34,7 +34,7 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
     icon: {
       success: CheckedFull,
       failure: AlertTriangle,
-      info: AlertCircle,
+      info: Info,
     },
   },
   minWidth: {
