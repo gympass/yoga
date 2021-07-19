@@ -1,5 +1,5 @@
 import Avatar from './native/Avatar';
-import AvatarCircle from './native/Circle';
+import AvatarCircle from './native/AvatarCircle';
 
 Avatar.Circle = AvatarCircle;
 

@@ -9,31 +9,30 @@ const Avatar = ({
   src,
   fill,
   placeholder,
-  width = 48,
-  height = 48,
-  borderRadius = 'small',
-  type = 'default',
-}) => {
-  const icon = placeholder || BuildingFilled;
-  return (
-    <Box
-      bgColor="elements.selectionAndIcons"
-      display="flex"
-      width={width}
-      height={height}
-      alignItems="center"
-      justifyContent="center"
-      elevation="small"
-      borderRadius={borderRadius}
-    >
-      {src ? (
-        <Image type={type} source={src} />
-      ) : (
-        <Placeholder fill={fill} icon={icon} />
-      )}
-    </Box>
-  );
-};
+  width,
+  height,
+  borderRadius,
+  type,
+  ...otherProps
+}) => (
+  <Box
+    bgColor="elements.selectionAndIcons"
+    display="flex"
+    width={width}
+    height={height}
+    alignItems="center"
+    justifyContent="center"
+    elevation="small"
+    borderRadius={borderRadius}
+    {...otherProps}
+  >
+    {src ? (
+      <Image type={type} source={src} />
+    ) : (
+      <Placeholder fill={fill} icon={placeholder} />
+    )}
+  </Box>
+);
 
 Avatar.propTypes = {
   src: string,
@@ -47,12 +46,12 @@ Avatar.propTypes = {
 
 Avatar.defaultProps = {
   src: undefined,
-  placeholder: undefined,
+  placeholder: BuildingFilled,
   fill: undefined,
-  width: undefined,
-  height: undefined,
-  borderRadius: undefined,
-  type: undefined,
+  width: 48,
+  height: 48,
+  borderRadius: 'small',
+  type: 'default',
 };
 
 Avatar.displayName = 'Avatar';
