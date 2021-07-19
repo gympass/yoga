@@ -7,19 +7,22 @@ import avatar from '../assets/images/avatarIcons/avatar.png';
 import classIcon from '../assets/images/avatarIcons/class.png';
 
 const ScrollView = styled.ScrollView`
-  margin-bottom: 50px;
   padding: 10px;
+  margin-bottom: 50px;
+
   width: 100%;
 `;
 
 const AvatarWrapper = styled.View`
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 10px;
   align-items: center;
   justify-content: space-between;
-  height: 250px;
   flex-direction: column;
+
+  padding: 20px;
+  margin-bottom: 10px;
+
+  width: 100%;
+  height: 250px;
 `;
 
 const AvatarPage = () => (
