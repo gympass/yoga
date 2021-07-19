@@ -76,7 +76,7 @@ const StyledSnackbar = styled.div`
     bottom: ${theme.components.snackbar.position.desktop.bottom}px;
     right: ${theme.components.snackbar.position.desktop.right}px;
 
-    width: ${theme.components.snackbar.minWidth.desktop}px;
+    min-width: ${theme.components.snackbar.minWidth.desktop}px;
   `}
 `;
 
