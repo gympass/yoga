@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { memo, useEffect, useRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, string, bool, number, oneOf } from 'prop-types';
 
@@ -187,4 +187,4 @@ Snackbar.defaultProps = {
   variant: 'info',
 };
 
-export default withTheme(Snackbar);
+export default memo(withTheme(Snackbar));
