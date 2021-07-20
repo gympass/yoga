@@ -13,6 +13,7 @@ const Avatar = ({
   height,
   borderRadius,
   type,
+  defaultSource,
   ...otherProps
 }) => (
   <Box
@@ -27,7 +28,7 @@ const Avatar = ({
     {...otherProps}
   >
     {src ? (
-      <Image type={type} source={src} />
+      <Image defaultSource={defaultSource} type={type} source={src} />
     ) : (
       <Placeholder fill={fill} icon={placeholder} />
     )}
@@ -42,6 +43,7 @@ Avatar.propTypes = {
   height: number,
   borderRadius: string,
   type: string,
+  defaultSource: string,
 };
 
 Avatar.defaultProps = {
@@ -52,6 +54,7 @@ Avatar.defaultProps = {
   height: 48,
   borderRadius: 'small',
   type: 'default',
+  defaultSource: undefined,
 };
 
 Avatar.displayName = 'Avatar';

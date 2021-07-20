@@ -5,6 +5,8 @@ import { Youtube } from '@gympass/yoga-icons';
 import { DocTitle } from '../components';
 import avatar from '../assets/images/avatarIcons/avatar.png';
 import classIcon from '../assets/images/avatarIcons/class.png';
+import defaultAvatar from '../assets/images/avatarIcons/defaultAvatar.png';
+import defaultAvatarCircle from '../assets/images/avatarIcons/defaultAvatarCircle.png';
 
 const ScrollView = styled.ScrollView`
   padding: 10px;
@@ -33,7 +35,7 @@ const AvatarPage = () => (
     </AvatarWrapper>
     <AvatarWrapper>
       <DocTitle>Default Avatar</DocTitle>
-      <Avatar src={avatar} />
+      <Avatar src={avatar} defaultSource={defaultAvatar} />
     </AvatarWrapper>
     <AvatarWrapper>
       <DocTitle>Default Avatar with placeholder prop</DocTitle>
@@ -49,7 +51,7 @@ const AvatarPage = () => (
     </AvatarWrapper>
     <AvatarWrapper>
       <DocTitle>Circle Avatar </DocTitle>
-      <Avatar.Circle src={classIcon} />
+      <Avatar.Circle src={classIcon} defaultSource={defaultAvatarCircle} />
     </AvatarWrapper>
     <AvatarWrapper>
       <DocTitle>Circle Avatar with placeholder prop</DocTitle>
