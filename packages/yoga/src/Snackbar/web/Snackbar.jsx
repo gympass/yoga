@@ -90,7 +90,7 @@ const fadeIn = keyframes`
 `;
 
 const AnimatedSnackbar = styled(StyledSnackbar)`
-  animation: ${fadeIn} 0.5s ease-out;
+  animation: ${fadeIn} 0.2s ease-in-out;
 `;
 
 const Snackbar = ({
