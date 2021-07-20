@@ -9,6 +9,7 @@ const AvatarCircle = ({
   placeholder,
   width,
   height,
+  defaultSource,
   ...otherProps
 }) => (
   <Avatar
@@ -18,6 +19,7 @@ const AvatarCircle = ({
     height={height}
     borderRadius="circle"
     placeholder={placeholder}
+    defaultSource={defaultSource}
     type="circle"
     {...otherProps}
   />
@@ -29,6 +31,7 @@ AvatarCircle.propTypes = {
   fill: string,
   width: number,
   height: number,
+  defaultSource: string,
 };
 
 AvatarCircle.defaultProps = {
@@ -37,6 +40,7 @@ AvatarCircle.defaultProps = {
   fill: undefined,
   width: undefined,
   height: undefined,
+  defaultSource: undefined,
 };
 
 AvatarCircle.displayName = 'AvatarCircle';

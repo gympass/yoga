@@ -39,11 +39,18 @@ const AvatarPage = () => (
     </AvatarWrapper>
     <AvatarWrapper>
       <DocTitle>Default Avatar with placeholder prop</DocTitle>
-      <Avatar placeholder={Youtube} />
+      <Avatar placeholder={Youtube} width={90} height={90} />
     </AvatarWrapper>
     <AvatarWrapper>
       <DocTitle>Default Avatar with width and height props</DocTitle>
-      <Avatar src={avatar} width={78} height={78} />
+      <Avatar src={avatar} width={80} height={80} />
+    </AvatarWrapper>
+    <AvatarWrapper>
+      <DocTitle>
+        Default Avatar with defaultSource props to show a static image when in
+        loading the src
+      </DocTitle>
+      <Avatar.Circle src={classIcon} defaultSource={defaultAvatar} />
     </AvatarWrapper>
     <AvatarWrapper>
       <DocTitle>Circle Avatar without image prop</DocTitle>
@@ -51,6 +58,13 @@ const AvatarPage = () => (
     </AvatarWrapper>
     <AvatarWrapper>
       <DocTitle>Circle Avatar </DocTitle>
+      <Avatar.Circle src={classIcon} defaultSource="asdasdasd" />
+    </AvatarWrapper>
+    <AvatarWrapper>
+      <DocTitle>
+        Circle Avatar with defaultSource props to show a static image when in
+        loading the src
+      </DocTitle>
       <Avatar.Circle src={classIcon} defaultSource={defaultAvatarCircle} />
     </AvatarWrapper>
     <AvatarWrapper>
@@ -59,7 +73,7 @@ const AvatarPage = () => (
     </AvatarWrapper>
     <AvatarWrapper>
       <DocTitle>Circle Avatar with width and height props</DocTitle>
-      <Avatar.Circle src={classIcon} width={78} height={78} />
+      <Avatar.Circle src={classIcon} width={100} height={100} />
     </AvatarWrapper>
   </ScrollView>
 );
