@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.12...@gympass/yoga-doc@2.3.0) (2021-07-20)
+
+
+### Features
+
+* improvements in doc of component avatar ([01e1020](https://github.com/Gympass/yoga/commit/01e1020935228db4a0c0f6c2358a1de5a35d434e))
+
+
+
+
+
 ## [2.2.12](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.11...@gympass/yoga-doc@2.2.12) (2021-07-08)
 
 **Note:** Version bump only for package @gympass/yoga-doc

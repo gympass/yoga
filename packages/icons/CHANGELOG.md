@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.1.2...@gympass/yoga-icons@1.2.0) (2021-07-20)
+
+
+### Features
+
+* create component avatar ([58e8dd6](https://github.com/Gympass/yoga/commit/58e8dd6cdf1ac749cdcaa08a5dc1d93747e53aa2))
+
+
+
+
+
 ## [1.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.1.1...@gympass/yoga-icons@1.1.2) (2021-06-16)
 
 

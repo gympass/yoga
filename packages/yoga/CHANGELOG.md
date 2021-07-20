@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.4.0...@gympass/yoga@7.5.0) (2021-07-20)
+
+
+### Features
+
+* add default values in defaultProps ([60a7d26](https://github.com/Gympass/yoga/commit/60a7d2642096fe4d3f420525626c2b0ebad31e88))
+* add more examples in doc ([bbab935](https://github.com/Gympass/yoga/commit/bbab935d1cc06cf3078aba09d3aa113612eb91e5))
+* add props defaultSource in avatar ([5f11020](https://github.com/Gympass/yoga/commit/5f11020919ee503ddb08e1d999bce2b64c44605c))
+* create component avatar ([58e8dd6](https://github.com/Gympass/yoga/commit/58e8dd6cdf1ac749cdcaa08a5dc1d93747e53aa2))
+* improvements in component avatar ([d58fd3f](https://github.com/Gympass/yoga/commit/d58fd3fafc44811273771c1deb8aa9b31c05a6ab))
+* improvements in doc of component avatar ([01e1020](https://github.com/Gympass/yoga/commit/01e1020935228db4a0c0f6c2358a1de5a35d434e))
+* remove component BoxAvatar ([070d987](https://github.com/Gympass/yoga/commit/070d987b1b6a83a9cd40e9daac00d6d7740c09eb))
+
+
+
+
+
 # [7.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.2...@gympass/yoga@7.4.0) (2021-07-08)
 
 
