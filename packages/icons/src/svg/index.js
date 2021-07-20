@@ -126,6 +126,7 @@ import Upload from './upload.svg';
 import Upload2 from './upload2.svg';
 import UserAdd from './user_add.svg';
 import UserFilled from './user_filled.svg';
+import UserFilledStar from './user_filled_star.svg';
 import User from './user.svg';
 import Video from './video.svg';
 import VisibilityOff from './visibility_off.svg';
@@ -263,6 +264,7 @@ export {
   Upload2,
   UserAdd,
   UserFilled,
+  UserFilledStar,
   User,
   Video,
   VisibilityOff,
