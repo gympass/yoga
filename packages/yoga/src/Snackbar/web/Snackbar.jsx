@@ -1,5 +1,5 @@
 import React, { memo, useEffect, useRef } from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled, { keyframes, withTheme } from 'styled-components';
 import { func, string, bool, number, oneOf } from 'prop-types';
 
 import { media } from '@gympass/yoga-helpers';
@@ -80,6 +80,19 @@ const StyledSnackbar = styled.div`
   `}
 `;
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
+const AnimatedSnackbar = styled(StyledSnackbar)`
+  animation: ${fadeIn} 0.5s ease-out;
+`;
+
 const Snackbar = ({
   open,
   autoClose,
@@ -112,7 +125,7 @@ const Snackbar = ({
 
   return (
     open && (
-      <StyledSnackbar
+      <AnimatedSnackbar
         role="alert"
         aria-label={variant}
         variant={variant}
@@ -146,7 +159,7 @@ const Snackbar = ({
             </IconButtonWrapper>
           )}
         </ActionsWrapper>
-      </StyledSnackbar>
+      </AnimatedSnackbar>
     )
   );
 };
