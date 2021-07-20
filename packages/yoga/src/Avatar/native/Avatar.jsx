@@ -14,6 +14,7 @@ const Avatar = ({
   borderRadius,
   type,
   defaultSource,
+  elevation,
   ...otherProps
 }) => (
   <Box
@@ -23,7 +24,7 @@ const Avatar = ({
     height={height}
     alignItems="center"
     justifyContent="center"
-    elevation="small"
+    elevation={elevation}
     borderRadius={borderRadius}
     {...otherProps}
   >
@@ -44,6 +45,7 @@ Avatar.propTypes = {
   borderRadius: string,
   type: string,
   defaultSource: string,
+  elevation: string,
 };
 
 Avatar.defaultProps = {
@@ -55,6 +57,7 @@ Avatar.defaultProps = {
   borderRadius: 'small',
   type: 'default',
   defaultSource: undefined,
+  elevation: 'small',
 };
 
 Avatar.displayName = 'Avatar';
