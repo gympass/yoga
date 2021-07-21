@@ -113,11 +113,11 @@ const Colors = ({ theme }) => {
     <Wrapper>
       <BackgroundColor theme={theme} color="primary">
         <span>primary</span>
-        <span>#231B22</span>
+        <span>#D8385E</span>
       </BackgroundColor>
       <BackgroundColor theme={theme} color="secondary">
         <span>secondary</span>
-        <span>#D8385E </span>
+        <span>#231B22</span>
       </BackgroundColor>
       <FeedbackColors theme={theme} color="success" token={0}>
         <span> feedback.success.light </span>
