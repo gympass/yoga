@@ -1,0 +1,26 @@
+---
+title: 'Elevations'
+metaTitle: 'Theme Elevations'
+metaDescription: 'Elevations Component'
+order: 6
+---
+
+## Elevations
+
+Elevation is the relative distance between two surfaces along the z-axis.
+It brings additional hierarchy to the design and is used mainly to emphasise
+interaction states. Elevation is represented with shadows cast by surfaces.
+Shadows can be either one-color only (shades of grey with variable opacity) or,
+in special cases (like images) it can mimic the image content (see streaming
+app light theme templates).
+
+```javascript type=highlight
+import styled from 'styled-components';
+import { theme } from '@gympass/yoga';
+
+const MyCoolComponent = styled.div`
+  box-shadow: ${theme.elevations.medium};
+`;
+```
+
+<ThemeElevations />
