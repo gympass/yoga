@@ -18,6 +18,7 @@ import AutoComplete from './AutoComplete';
 import Icon from './Icon';
 import Chips from './Chips';
 import Box from './Box';
+import SearchList from './SearchList';
 
 export {
   ThemeProvider,
@@ -48,4 +49,5 @@ export {
   Icon,
   Chips,
   Box,
+  SearchList,
 };
