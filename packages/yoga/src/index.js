@@ -18,6 +18,7 @@ import AutoComplete from './AutoComplete';
 import Icon from './Icon';
 import Chips from './Chips';
 import Box from './Box';
+import SearchList from './SearchList';
 import Snackbar from './Snackbar';
 
 export {
@@ -50,4 +51,5 @@ export {
   Chips,
   Box,
   Snackbar,
+  SearchList,
 };
