@@ -11,13 +11,14 @@ const Wrapper = styled.div`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid gray;
   padding: 20px 0;
 
   span {
     :nth-child(1) {
-      font-weight: bold;
       font-size: 28px;
+    }
+    :nth-child(2) {
+      font-weight: bold;
     }
   }
 `;
