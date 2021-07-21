@@ -2,120 +2,131 @@
 title: 'Theme'
 metaTitle: 'Theme'
 metaDescription: 'Theme Component'
+order: 0
 ---
 
-# Theme
+## Theme
 
-By default all Theme components use the default theme. You can extend and customize theme on top level with ThemeProvider or on individual component level with theme override.
+We consider our theme as the decision we make **besides** all our **options**, aka [tokens](https://gympass.github.io/yoga/guidelines/tokens/borders).
 
-## Colors
-
-Gympass theme colors can distinguishes our brand and helps us to create
-consistent experiences and meaningful expressions in our products.
+There is a variable responsible for providing all those settings through the ThemeProvider, from styled-components. Although, there is a theme file for each component, aiming to have the native and web styles in the same place, following the pattern of `Component.theme.js`.
 
 ```javascript type=highlight
-theme.colors
+theme: {
+  yoga: {
+    borders: [
+      0:0
+      1:1
+      2:2
+    ],
+    breakpoints: {
+      xxs: { width:0, margin:20, gutter:16 },
+      xs: { width:360, margin:20, gutter:16 },
+      sm: { width:480, margin:20, gutter:16 },
+      md: { width:768, margin:20, gutter:16 },
+      lg: { width:1024, margin:71, gutter:24 },
+      xl: { width:1200, margin:71, gutter:24 },
+      xxl: { width:1366, margin:71, gutter:24 },
+      xxxl: { width:1600, margin:71, gutter:24 },
+    },
+    colors: {
+      vibin:"#D8385E"
+      hope:"#1D856C"
+      energy:"#FFC24C"
+      relax:"#7068D4"
+      peace:"#FFB0A7"
+      verve:"#FF874C"
+      uplift:"#FF4438"
+      deepPurple:"#710252"
+      yoga:"#FFEEF2"
+      success:"#C1EEDB"
+      neutral:"#E0DFFF"
+      attention:"#FCD6C3"
+      stamina:"#231B22"
+      deep:"#6B6B78"
+      medium:"#9898A6"
+      light:"#D7D7E0"
+      clear:"#F5F5FA"
+      white:"#FFFFFF"
+      primary:"#D8385E"
+      secondary:"#231B22"
+    },
+    fontSizes: [
+      0:10
+      1:12
+      2:14
+      3:16
+      4:20
+      5:24
+      6:32
+      7:40
+      8:48
+    ],
+    fontWeights: [
+      0:300
+      1:400
+      2:500
+      3:700
+      4:900
+    ],
+    lineHeights: [
+      0:12
+      1:16
+      2:20
+      3:24
+      4:28
+      5:32
+      6:40
+      7:48
+      8:56
+    ],
+    radii: [
+      0:0
+      1:4
+      2:8
+      3:16
+      4:9999
+    ],
+    elevations: [
+      0:"none"
+      1:"0 2px 6px rgba(152, 152, 166, 0.25)"
+      2:"0 4px 12px rgba(152, 152, 166, 0.25)"
+      3:"0 8px 20px rgba(152, 152, 166, 0.25)"
+    ],
+    spacing: [
+      0:0
+      1:4
+      2:8
+      3:12
+      4:16
+      5:20
+      6:24
+      7:32
+      8:40
+      9:56
+      10:72
+      11:80
+    ],
+    transition: {
+      duration: [0:200, 1:500],
+      timing: [0:0, 1:0.75, 2:0.1, 3:1]
+    }
+    baseFont: {
+      family: 'Rubik',
+      weight: [
+        0:300
+        1:400
+        2:500
+        3:700
+        4:900
+        5:"300i"
+        6:"400i"
+        7:"500i"
+        8:"700i"
+        9:"900i"
+      ]
+    },
+    baseFontSize:16
+  }
+}
 ```
-
-<ThemeColors />
-
-## Fonts
-
-Fonts can define our brand and the way we express ourselves through
-titles and texts.
-
-```javascript type=highlight
-theme.fonts
-```
-
-<ThemeFonts />
-
-## Font-Sizes
-
-
-Font sizes define the size of a typography and its content hierarchy to be semantic and consistent.
-
-```javascript type=highlight
-theme.fontSizes
-```
-
-<ThemeFontSizes />
-
-## Font-Weights
-
-Font Weights define the weight of a typography to express relevance.
-
-```javascript type=highlight
-theme.fontWeights
-```
-
-<ThemeFontWeights />
-
-## Line-Heights
-
-Line heights refers to the height of a typography and it indicates how tall or
-short each glyph in a typeface will be.
-
-```javascript type=highlight
-theme.lineHeights
-```
-
-<ThemeLineHeights />
-
-## Breakpoints
-
-A breakpoint maps the screen size with its layout requirements.
-
-```javascript type=highlight
-theme.breakpoints
-```
-
-<ThemeBreakpoints />
-
-## Spacing
-
-Spacing system is vast and comprehensive. There are 10 predefined padding sizes.
-In specific cases, when a huge gap is needed those values can be summed up.
-
-```javascript type=highlight
-theme.spacing
-```
-
-<ThemeSpacing />
-
-## Borders
-
-A border is a visual attribute that you can apply to a shape. We use three kinds
-of borders to differentiate elements.
-
-```javascript type=highlight
-theme.borders
-```
-
-<ThemeBorders />
-
-## Elevations
-
-Elevation is the relative distance between two surfaces along the z-axis.
-It brings additional hierarchy to the design and is used mainly to emphasise
-interaction states. Elevation is represented with shadows cast by surfaces.
-Shadows can be either one-color only (shades of grey with variable opacity) or,
-in special cases (like images) it can mimic the image content (see streaming
-app light theme templates).
-
-```javascript type=highlight
-theme.elevations
-```
-
-<ThemeElevations />
-
-## Shapes (Radii)
-
-Surfaces can be displayed in different shapes. Shapes direct attention,
-identify components, communicate state and express brand.
-
-```javascript type=highlight
-theme.radii
-```
-
-<ThemeShape />
