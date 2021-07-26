@@ -108,9 +108,9 @@ render(() => {
 });
 ```
 
-#### Auto close
+#### Close automaticaly
 
-The `Snackbar` has the ability to close itself automaticaly. To do it, you must provide `onClose` and `autoClose` props.
+The `Snackbar` has the ability to close itself automaticaly. To do it, you must provide `onClose` and `duration` props.
 
 ```javascript state
 render(() => {
@@ -132,7 +132,7 @@ render(() => {
         open={isOpen}
         variant="info"
         message="We are making wellbeing universal."
-        autoClose={4000}
+        duration={4000}
         onClose={handleOnClose}
       />
     </>
@@ -168,7 +168,7 @@ render(() => {
         open={isOpen}
         variant="info"
         message="We are making wellbeing universal."
-        autoClose={4000}
+        duration={4000}
         onAction={handleOnAction}
         actionLabel="Custom Action"
       />

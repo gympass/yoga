@@ -95,7 +95,7 @@ const AnimatedSnackbar = styled(StyledSnackbar)`
 
 const Snackbar = ({
   open,
-  autoClose,
+  duration,
   variant,
   hideIcon,
   message,
@@ -112,16 +112,16 @@ const Snackbar = ({
   const timeoutRef = useRef();
 
   useEffect(() => {
-    const shouldCloseOnTimer = open && autoClose && onClose;
+    const shouldCloseOnTimer = open && duration && onClose;
 
     if (shouldCloseOnTimer) {
       timeoutRef.current = setTimeout(() => {
         onClose();
-      }, autoClose);
+      }, duration);
     }
 
     return () => clearTimeout(timeoutRef.current);
-  }, [open, autoClose]);
+  }, [open, duration]);
 
   return (
     open && (
@@ -153,7 +153,7 @@ const Snackbar = ({
             </Button.Link>
           )}
 
-          {!autoClose && onClose && (
+          {!duration && onClose && (
             <IconButtonWrapper role="button" onClick={onClose}>
               <Icon as={Close} fill="secondary" width="large" height="large" />
             </IconButtonWrapper>
@@ -169,7 +169,7 @@ Snackbar.propTypes = {
   open: bool,
 
   /** A number in milliseconds to close snackbar automaticaly. The `onClose` function becomes required when passing this function. */
-  autoClose: number,
+  duration: number,
 
   /** Label for a custom action. */
   actionLabel: string,
@@ -192,7 +192,7 @@ Snackbar.propTypes = {
 
 Snackbar.defaultProps = {
   open: false,
-  autoClose: undefined,
+  duration: undefined,
   actionLabel: undefined,
   hideIcon: false,
   onAction: undefined,

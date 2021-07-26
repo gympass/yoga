@@ -80,7 +80,7 @@ describe('<Snackbar />', () => {
     expect(onCloseMock).toHaveBeenCalledTimes(1);
   });
 
-  it('should close after autoClose timeout', async () => {
+  it('should close after timeout', async () => {
     jest.useFakeTimers();
 
     const onCloseMock = jest.fn();
@@ -89,7 +89,7 @@ describe('<Snackbar />', () => {
       <ThemeProvider>
         <Snackbar
           open
-          autoClose={1000}
+          duration={1000}
           message="Make wellbeing universal"
           onClose={onCloseMock}
         />
