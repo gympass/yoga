@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.5.0...@gympass/yoga@7.5.1) (2021-07-26)
+
+
+### Bug Fixes
+
+* fixing chips margin right ([0531f6a](https://github.com/Gympass/yoga/commit/0531f6a783ddd9faf14763064468ec5ea7b1e211))
+
+
+
+
+
 # [7.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.4.0...@gympass/yoga@7.5.0) (2021-07-20)
 
 
