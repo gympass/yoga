@@ -16,7 +16,7 @@ const Wrapper = styled.View`
   align-items: center;
   justify-content: flex-start;
 
-  margin-right: ${theme.spacing.small}px;
+  margin-right: ${theme.spacing.xxsmall}px;
   padding: ${theme.spacing.xxsmall}px;
 
   border-style: solid;
