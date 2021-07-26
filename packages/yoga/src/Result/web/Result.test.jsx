@@ -1,13 +1,13 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { ThemeProvider, SearchList } from '../..';
+import { ThemeProvider, Result } from '../..';
 
-describe('<SearchList />', () => {
+describe('<Result />', () => {
   it('should match snapshot', () => {
     const { container } = render(
       <ThemeProvider>
-        <SearchList />
+        <Result />
       </ThemeProvider>,
     );
 
