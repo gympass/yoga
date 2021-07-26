@@ -6,22 +6,10 @@ import Icon from '../../Icon';
 import Text from '../../Text';
 
 const Content = styled.View`
-  position: absolute;
-  right: 0;
   display: flex;
   flex-direction: row;
+  margin-left: 10px;
   align-items: center;
-  ${({
-    theme: {
-      yoga: {
-        spacing: { xxxsmall },
-      },
-    },
-  }) => {
-    return `
-      top: ${xxxsmall}
-    `;
-  }}
 `;
 
 const RateValue = styled(Text.Medium)`
@@ -29,13 +17,11 @@ const RateValue = styled(Text.Medium)`
     theme: {
       yoga: {
         spacing: { xxxsmall },
-        lineHeights: { xsmall },
       },
     },
   }) => {
     return `
       margin-left:${xxxsmall};
-      line-height:${xsmall}
     `;
   }}
 `;

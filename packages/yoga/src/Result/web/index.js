@@ -1,3 +1,3 @@
-import Result from './Result';
+import Result from './SearchList';
 
 export default Result;
