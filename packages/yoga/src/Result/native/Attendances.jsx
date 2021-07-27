@@ -6,8 +6,10 @@ import Text from '../../Text';
 import Rate from './Rate';
 
 const Content = styled.View`
+  width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
 `;
 
 const Description = styled(Text.Regular)`
@@ -26,7 +28,7 @@ const Description = styled(Text.Regular)`
   }}
 `;
 
-const AttendanceList = styled(Text.Regular)`
+const Item = styled.View`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,23 +45,31 @@ const AttendanceList = styled(Text.Regular)`
   }}
 `;
 
-const Attendance = ({ attendanceList, rate }) => (
+const List = styled.View`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
+
+const Attendances = ({ attendances, rate }) => (
   <Content>
-    <AttendanceList size="xsmall" variant="deep">
-      {attendanceList &&
-        attendanceList.map(({ description, icon }) => (
-          <>
+    <List>
+      {attendances &&
+        attendances.map(({ description, icon }) => (
+          <Item>
             <Icon as={icon} width="xsmall" height="xsmall" fill="medium" />
-            {description}
-          </>
+            <Description numberOfLines={1} number size="xsmall">
+              {description}
+            </Description>
+          </Item>
         ))}
-    </AttendanceList>
+    </List>
     {rate && <Rate rate={rate} />}
   </Content>
 );
 
-Attendance.propTypes = {
-  attendanceList: arrayOf(
+Attendances.propTypes = {
+  attendances: arrayOf(
     shape({
       description: string,
       icon: func,
@@ -68,8 +78,8 @@ Attendance.propTypes = {
   rate: string,
 };
 
-Attendance.defaultProps = {
+Attendances.defaultProps = {
   rate: undefined,
 };
 
-export default Attendance;
+export default Attendances;
