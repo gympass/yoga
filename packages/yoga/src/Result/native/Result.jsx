@@ -33,12 +33,12 @@ const Content = styled.View`
   ${({
     theme: {
       yoga: {
-        spacing: { medium, large },
+        spacing: { small, large },
       },
     },
   }) => {
     return `
-      margin-left:${medium};
+      margin-left:${small};
       margin-bottom:${large};
     `;
   }}
