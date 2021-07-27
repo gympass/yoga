@@ -5,55 +5,67 @@ import Icon from '../../Icon';
 import Text from '../../Text';
 import Rate from './Rate';
 
-const List = styled(Text.Regular)`
-  max-width: 220px;
-  text-align-vertical: center;
+const Content = styled.View`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
-const ItemSeparator = styled.View`
-  background-color: #7bff66;
+const Description = styled(Text.Regular)`
   ${({
     theme: {
       yoga: {
-        spacing: { zero, xxxsmall },
+        lineHeights: { xsmall },
+        spacing: { xxxsmall },
       },
     },
   }) => {
     return `
-      width: ${xxxsmall};
-      height: ${zero};
+      line-height:${xsmall};
+      margin-left:${xxxsmall};
     `;
   }}
 `;
 
-const IconWrapper = styled.View`
-  height: 16px;
-  width: 16px;
+const Item = styled.View`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  ${({
+    theme: {
+      yoga: {
+        spacing: { xxxsmall },
+      },
+    },
+  }) => {
+    return `
+      margin-right:${xxxsmall};
+    `;
+  }}
+`;
+
+const List = styled.View`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
 const Attendances = ({ attendances, rate }) => (
-  <>
-    <List numberOfLines={1} size="xsmall">
+  <Content>
+    <List>
       {attendances &&
         attendances.map(({ description, icon }) => (
-          <>
-            <IconWrapper>
-              <Icon
-                as={icon}
-                fill="medium"
-                width="16px"
-                height="16px"
-                style={{ marginTop: 2 }}
-              />
-            </IconWrapper>
-            <ItemSeparator />
-            {description}
-            <ItemSeparator />
-          </>
+          <Item>
+            <Icon as={icon} width="xsmall" height="xsmall" fill="medium" />
+            <Description numberOfLines={1} number size="xsmall">
+              {description}
+            </Description>
+          </Item>
         ))}
     </List>
     {rate && <Rate rate={rate} />}
-  </>
+  </Content>
 );
 
 Attendances.propTypes = {

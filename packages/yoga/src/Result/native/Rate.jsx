@@ -17,11 +17,13 @@ const RateValue = styled(Text.Medium)`
     theme: {
       yoga: {
         spacing: { xxxsmall },
+        lineHeights: { xsmall },
       },
     },
   }) => {
     return `
       margin-left:${xxxsmall};
+      line-height:${xsmall}
     `;
   }}
 `;
