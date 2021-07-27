@@ -1,13 +1,11 @@
 import React, { isValidElement } from 'react';
 import styled, { withTheme } from 'styled-components';
-import { arrayOf, string, shape, func, boolean } from 'prop-types';
+import { arrayOf, string, shape, func, boolean, node } from 'prop-types';
 import Text from '../../Text';
-import Attendance from './Attendance';
+import Attendances from './Attendances';
+import Box from '../../Box';
 
-const StyledSearchList = styled.View`
-  position: relative;
-  display: flex;
-  flex-direction: row;
+const StyledBox = styled(Box)`
   ${({
     divided,
     theme: {
@@ -22,7 +20,8 @@ const StyledSearchList = styled.View`
        ${
          divided
            ? `
-          border-bottom-color: ${light};
+             border-bottom-width: 1px;
+             border-bottom-color: ${light}
         `
            : ''
        }
@@ -34,12 +33,13 @@ const Content = styled.View`
   ${({
     theme: {
       yoga: {
-        spacing: { medium },
+        spacing: { medium, large },
       },
     },
   }) => {
     return `
       margin-left:${medium};
+      margin-bottom:${large};
     `;
   }}
 `;
@@ -66,16 +66,18 @@ const Result = ({
   rate,
   title,
   subTitle,
-  divider,
+  divided,
+  children,
 }) => (
-  <StyledSearchList>
+  <StyledBox divided={divided} display="flex" flexDirection="row">
     {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
     <Content>
-      <Attendance attendances={attendances} rate={rate} />
+      <Attendances attendances={attendances} rate={rate} />
       <Title>{title}</Title>
-      <Subtitle>{subTitle}</Subtitle>
+      {subTitle && <Text.Small variant="stamina">{subTitle}</Text.Small>}
+      {children}
     </Content>
-  </StyledSearchList>
+  </StyledBox>
 );
 
 Result.propTypes = {
@@ -88,13 +90,16 @@ Result.propTypes = {
   ).isRequired,
   rate: string,
   title: string.isRequired,
-  subTitle: string.isRequired,
-  divider: boolean,
+  subTitle: string,
+  divided: boolean,
+  children: node,
 };
 
 Result.defaultProps = {
   rate: undefined,
-  divider: false,
+  divided: false,
+  subTitle: undefined,
+  children: {},
 };
 
 export default withTheme(Result);
