@@ -34,13 +34,3 @@ target 'labnative' do
 
   use_native_modules!
 end
-
-target 'labnative-tvOS' do
-  # Pods for labnative-tvOS
-
-  target 'labnative-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end
