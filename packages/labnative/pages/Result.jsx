@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Result, Avatar } from '@gympass/yoga';
-import { BuildingFilled } from '@gympass/yoga-icons';
+import { BuildingFilled, Youtube } from '@gympass/yoga-icons';
+import avatar from '../assets/images/avatarIcons/avatar.png';
 import { DocTitle } from '../components';
 
 const attendanceList = [
@@ -12,6 +13,17 @@ const attendanceList = [
   {
     description: 'Attendance 02',
     icon: BuildingFilled,
+  },
+];
+
+const attendanceList2 = [
+  {
+    description: 'In person',
+    icon: BuildingFilled,
+  },
+  {
+    description: 'Online',
+    icon: Youtube,
   },
 ];
 
@@ -40,13 +52,25 @@ const ResultPage = () => (
       <DocTitle>Default Result</DocTitle>
       <Result
         rate="5.0"
-        avatar={<Avatar.Circle />}
+        avatar={<Avatar />}
         attendances={attendanceList}
         title="Partner Name"
         subTitle="Activity"
         divided
       >
         <Result.Button>Link Button</Result.Button>
+      </Result>
+    </ResultWrapper>
+    <ResultWrapper>
+      <DocTitle>Default Result With Circle Avatar</DocTitle>
+      <Result
+        rate="New"
+        avatar={<Avatar.Circle src={avatar} />}
+        attendances={attendanceList2}
+        title="Partner Name"
+        divided
+      >
+        <Result.Button>Upgrade</Result.Button>
       </Result>
     </ResultWrapper>
   </ScrollView>
