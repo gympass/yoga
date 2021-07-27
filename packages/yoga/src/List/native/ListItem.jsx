@@ -14,7 +14,8 @@ const StyledView = styled.View(
   ${
     divided
       ? `
-          borderBottomColor: '#D7D7E0',
+          border-bottom-width: ${list.border.width}px;
+          border-bottom-color: ${list.border.color};
         `
       : ''
   }
