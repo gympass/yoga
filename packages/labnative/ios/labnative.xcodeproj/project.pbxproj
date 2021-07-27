@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* labnativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* labnativeTests.m */; };
 		0B1A7C07B71448BA8354D161 /* Rubik-900-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D28BCB1007644299BE8E79A9 /* Rubik-900-italic.ttf */; };
+		0F3CF3EA92960AB3D57E7E13 /* libPods-labnativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6BADA7B7039FB92D54292A /* libPods-labnativeTests.a */; };
 		1251CB04BB5F4A67A17BB04E /* Rubik-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53B7F739796943F5AD63E19F /* Rubik-900.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		34EC4FB4E57B464CBE4EDF51 /* Rubik-500.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6E734CA5226407583552C5F /* Rubik-500.ttf */; };
+		3B3BC1449C00272FE5555D78 /* libPods-labnative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F248A17DA6F5A8F51D91EA /* libPods-labnative.a */; };
 		594404B398F141AD9BDE238F /* Rubik-300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D573036276504B7C8845D7CC /* Rubik-300.ttf */; };
 		615EDA9B065748049EEB7FB7 /* Rubik-700-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C1F762A554EADBBCACBD1 /* Rubik-700-italic.ttf */; };
 		7BC0D0AFF0FE472CB8A751C3 /* Rubik-700.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC6064EAE64217AE323587 /* Rubik-700.ttf */; };
@@ -49,9 +51,11 @@
 		33F58296D36345399CBC36B3 /* Rubik.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Rubik.ttf; path = ../../yoga/src/Fonts/Rubik.ttf; sourceTree = "<group>"; };
 		53B7F739796943F5AD63E19F /* Rubik-900.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-900.ttf"; path = "../../yoga/src/Fonts/Rubik-900.ttf"; sourceTree = "<group>"; };
 		55DDE15917774C6AB5A11765 /* Rubik-500-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-500-italic.ttf"; path = "../../yoga/src/Fonts/Rubik-500-italic.ttf"; sourceTree = "<group>"; };
+		5A6BADA7B7039FB92D54292A /* libPods-labnativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-labnativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C094E8AB30445E57B0BF26D /* Pods-labnative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnative.release.xcconfig"; path = "Target Support Files/Pods-labnative/Pods-labnative.release.xcconfig"; sourceTree = "<group>"; };
 		8C5C1F762A554EADBBCACBD1 /* Rubik-700-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-700-italic.ttf"; path = "../../yoga/src/Fonts/Rubik-700-italic.ttf"; sourceTree = "<group>"; };
 		9BBC6064EAE64217AE323587 /* Rubik-700.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-700.ttf"; path = "../../yoga/src/Fonts/Rubik-700.ttf"; sourceTree = "<group>"; };
+		B3F248A17DA6F5A8F51D91EA /* libPods-labnative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-labnative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E734CA5226407583552C5F /* Rubik-500.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-500.ttf"; path = "../../yoga/src/Fonts/Rubik-500.ttf"; sourceTree = "<group>"; };
 		C41A3A5FEDC7439BA430B6D7 /* Rubik-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-italic.ttf"; path = "../../yoga/src/Fonts/Rubik-italic.ttf"; sourceTree = "<group>"; };
 		CAC024244914682AB979E12F /* Pods-labnativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnativeTests.release.xcconfig"; path = "Target Support Files/Pods-labnativeTests/Pods-labnativeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F3CF3EA92960AB3D57E7E13 /* libPods-labnativeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3BC1449C00272FE5555D78 /* libPods-labnative.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				B3F248A17DA6F5A8F51D91EA /* libPods-labnative.a */,
+				5A6BADA7B7039FB92D54292A /* libPods-labnativeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
