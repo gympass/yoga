@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.5.1...@gympass/yoga@7.6.0) (2021-07-27)
+
+
+### Bug Fixes
+
+* **event-card:** update snapshots ([d390053](https://github.com/Gympass/yoga/commit/d390053e22693252d43d0f33b2ca628a70056e45))
+* **snackbar:** adjust close button visibility ([057c827](https://github.com/Gympass/yoga/commit/057c8270db47d83f7f7ab8d7526809db4af891bc))
+* **snackbar:** fix icon for info variant ([1a59ad2](https://github.com/Gympass/yoga/commit/1a59ad205703de0ab85b2cd70409581d9efccdbd))
+
+
+### Features
+
+* **snackbar:** add autoClose behavior ([c56712c](https://github.com/Gympass/yoga/commit/c56712c995a6a7561815c2c37c1f9a046ef6059c))
+* **snackbar:** add fadein animation ([f688179](https://github.com/Gympass/yoga/commit/f6881796fa1f869b8e324f5dc6755cd99848b6e8))
+* **snackbar:** add size behavior ([3835fef](https://github.com/Gympass/yoga/commit/3835fefbb61a1099d75dc0819e71889592c0955a))
+* **snackbar:** add snackbar component structure ([1df01d0](https://github.com/Gympass/yoga/commit/1df01d08e12cdacfec13af401b2c30340bb7a7c4))
+* **snackbar:** add styles with basic behavior ([3f5a23d](https://github.com/Gympass/yoga/commit/3f5a23dd5a75debe253d96baa7a43e7d63e775ad))
+* **snackbar:** add variant behavior ([7d9504c](https://github.com/Gympass/yoga/commit/7d9504c8dd18781730398e2d2335b2d739bfc5da))
+* **snackbar:** adjust fadein time ([b9c45ef](https://github.com/Gympass/yoga/commit/b9c45ef2d7593c6e478fdfe3e7af628f6d01631d))
+* **snackbar:** adjust the default variant ([08f953c](https://github.com/Gympass/yoga/commit/08f953cddffde6cf8ed24d2428965ce7e7d0d7bf))
+* **snackbar:** adjust width for desktop ([07798dd](https://github.com/Gympass/yoga/commit/07798dd081565bccdb646500a321ebb8bcedea0f))
+
+
+### Performance Improvements
+
+* **snackbar:** add memoization to snackbar component ([0781012](https://github.com/Gympass/yoga/commit/078101276b4153437a807d9a8e498c739f6b9d0f))
+
+
+
+
+
 ## [7.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.5.0...@gympass/yoga@7.5.1) (2021-07-26)
 
 

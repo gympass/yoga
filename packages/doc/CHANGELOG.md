@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.3.1...@gympass/yoga-doc@2.4.0) (2021-07-27)
+
+
+### Bug Fixes
+
+* **snackbar:** remove native documentation ([f53f5e7](https://github.com/Gympass/yoga/commit/f53f5e7418f5633ecf3a63b783defdf8a975690d))
+
+
+### Features
+
+* **snackbar:** add snackbar component structure ([1df01d0](https://github.com/Gympass/yoga/commit/1df01d08e12cdacfec13af401b2c30340bb7a7c4))
+* **snackbar:** add styles with basic behavior ([3f5a23d](https://github.com/Gympass/yoga/commit/3f5a23dd5a75debe253d96baa7a43e7d63e775ad))
+* **snackbar:** adjust the default variant ([08f953c](https://github.com/Gympass/yoga/commit/08f953cddffde6cf8ed24d2428965ce7e7d0d7bf))
+
+
+
+
+
 ## [2.3.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.3.0...@gympass/yoga-doc@2.3.1) (2021-07-26)
 
 **Note:** Version bump only for package @gympass/yoga-doc
