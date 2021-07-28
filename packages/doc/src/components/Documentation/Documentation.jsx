@@ -41,6 +41,7 @@ import {
   Borders,
   Elevations,
   Shape,
+  ReactInspector,
 } from '../Theme/index';
 
 const customComponents = prefix => ({
@@ -71,6 +72,7 @@ const customComponents = prefix => ({
   ThemeBorders: props => <Borders {...props} />,
   ThemeElevations: props => <Elevations {...props} />,
   ThemeShape: props => <Shape {...props} />,
+  ThemeInspector: props => <ReactInspector {...props} />,
   ...components,
   ...icons,
   ...helpers,
