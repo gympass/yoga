@@ -8,6 +8,7 @@ import Spacing from './Spacing';
 import Borders from './Borders';
 import Elevations from './Elevations';
 import Shape from './Shape';
+import ReactInspector from './Inspector';
 
 export {
   Colors,
@@ -20,4 +21,5 @@ export {
   Borders,
   Elevations,
   Shape,
+  ReactInspector,
 };
