@@ -1,29 +1,40 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 
-const Table = styled.table`
+export const Table = styled.table`
+  tbody tr td,
+  thead tr td,
+  tbody tr th,
+  thead tr th {
+    border: none;
+  }
+
   tr {
-    border-bottom: 0.3px gray solid;
-    th {
+    border-bottom: 1px gray solid;
+
+    th,
+    td {
       padding: 20px;
       font-weight: normal;
 
-      :nth-child(1) {
-        font-weight: bolder;
+      :first-child {
+        font-weight: bold;
       }
     }
   }
 `;
 
-const Breakpoints = ({ theme }) => {
-  return (
-    <Table>
+const Breakpoints = ({ theme }) => (
+  <Table>
+    <thead>
       <tr>
         <th>Theme</th>
         <th>Width</th>
         <th>Margin</th>
         <th>Gutter</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
         <th>breakpoints.xxs</th>
         <th>{theme.yoga.breakpoints.xxs.width}</th>
@@ -72,8 +83,8 @@ const Breakpoints = ({ theme }) => {
         <th>{theme.yoga.breakpoints.xxxl.margin}</th>
         <th>{theme.yoga.breakpoints.xxxl.gutter}</th>
       </tr>
-    </Table>
-  );
-};
+    </tbody>
+  </Table>
+);
 
 export default withTheme(Breakpoints);

@@ -1,41 +1,25 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components';
+import { withTheme } from 'styled-components';
 
-const Table = styled.table`
-  tr {
-    border-bottom: 0.3px gray solid;
-    th {
-      padding: 20px 5px;
-      font-weight: normal;
+import { Table } from './Breakpoints';
 
-      :nth-child(1) {
-        font-weight: bolder;
-      }
-    }
-  }
-`;
-
-const Fonts = ({ theme }) => {
-  return (
-    <Table>
+const Fonts = ({ theme }) => (
+  <Table>
+    <thead>
       <tr>
-        <th> Theme </th>
-        <th> Family </th>
-        <th> Weight </th>
+        <td> Theme </td>
+        <td> Family </td>
+        <td> Weight </td>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <th> fonts.rubik </th>
-        <th>{theme.yoga.fonts.rubik.family}</th>
-        <th>
-          [
-          {theme.yoga.fonts.rubik.weight.map(value => (
-            <span key={value}> {value} </span>
-          ))}
-          ]
-        </th>
+        <td> fonts.rubik </td>
+        <td>{theme.yoga.fonts.rubik.family}</td>
+        <td>[{theme.yoga.fonts.rubik.weight.join(', ')}]</td>
       </tr>
-    </Table>
-  );
-};
+    </tbody>
+  </Table>
+);
 
 export default withTheme(Fonts);
