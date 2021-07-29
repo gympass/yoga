@@ -8,12 +8,12 @@ const Wrapper = styled.div`
   }
 `;
 
-const ReactInspector = ({ theme }) => {
-  return (
-    <Wrapper>
+const ReactInspector = ({ theme }) => (
+  <Wrapper>
+    {typeof window !== 'undefined' && Inspector && (
       <Inspector data={theme} name="theme" expandLevel={2} />
-    </Wrapper>
-  );
-};
+    )}
+  </Wrapper>
+);
 
 export default withTheme(ReactInspector);
