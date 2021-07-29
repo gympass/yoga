@@ -2,13 +2,13 @@ import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { Box } from '@gympass/yoga';
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 `;
 
-const BorderBox = props => (
+export const BorderBox = props => (
   <Box
     w={300}
     h={200}
@@ -23,7 +23,7 @@ const BorderBox = props => (
     {...props}
   />
 );
-const ThemeBox = props => (
+export const ThemeBox = props => (
   <Box
     p="xxxsmall"
     mb="xxxsmall"
