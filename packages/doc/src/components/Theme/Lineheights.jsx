@@ -1,69 +1,51 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components';
+import { withTheme } from 'styled-components';
 
-const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+import { Wrapper, Content, TextBox } from './FontWeights';
 
-  margin: 30px 0;
-`;
+const LHBox = props => (
+  <TextBox bgColor="rgba(215, 215, 224, 0.4)" {...props} />
+);
 
-const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 20px 0;
-
-  span {
-    :nth-child(1) {
-      font-size: 28px;
-    }
-    :nth-child(2) {
-      font-weight: bold;
-    }
-  }
-`;
-
-const LineHeights = ({ theme }) => {
-  return (
-    <Wrapper>
-      <Content>
-        <span> {theme.yoga.lineHeights[0]} </span>
-        <span> xxsmall </span>
-      </Content>
-      <Content>
-        <span> {theme.yoga.lineHeights[1]} </span>
-        <span> xsmall </span>
-      </Content>
-      <Content>
-        <span> {theme.yoga.lineHeights[2]} </span>
-        <span> small </span>
-      </Content>
-      <Content>
-        <span> {theme.yoga.lineHeights[3]} </span>
-        <span> medium </span>
-      </Content>
-      <Content>
-        <span> {theme.yoga.lineHeights[4]} </span>
-        <span> large </span>
-      </Content>
-      <Content>
-        <span> {theme.yoga.lineHeights[5]} </span>
-        <span> xlarge </span>
-      </Content>
-      <Content>
-        <span> {theme.yoga.lineHeights[6]} </span>
-        <span> xxlarge </span>
-      </Content>
-      <Content>
-        <span> {theme.yoga.lineHeights[7]} </span>
-        <span> xxxlarge </span>
-      </Content>
-      <Content>
-        <span> {theme.yoga.lineHeights[8]} </span>
-        <span> huge </span>
-      </Content>
-    </Wrapper>
-  );
-};
+const LineHeights = ({ theme }) => (
+  <Wrapper>
+    <Content>
+      <TextBox> xxsmall </TextBox>
+      <LHBox lh="xxsmall">{theme.yoga.lineHeights.xxsmall}</LHBox>
+    </Content>
+    <Content>
+      <TextBox> xsmall </TextBox>
+      <LHBox lh="xsmall"> {theme.yoga.lineHeights.xsmall} </LHBox>
+    </Content>
+    <Content>
+      <TextBox> small </TextBox>
+      <LHBox lh="small"> {theme.yoga.lineHeights.small} </LHBox>
+    </Content>
+    <Content>
+      <TextBox> medium </TextBox>
+      <LHBox lh="medium"> {theme.yoga.lineHeights.medium} </LHBox>
+    </Content>
+    <Content>
+      <TextBox> large </TextBox>
+      <LHBox lh="large"> {theme.yoga.lineHeights.large} </LHBox>
+    </Content>
+    <Content>
+      <TextBox> xlarge </TextBox>
+      <LHBox lh="xlarge"> {theme.yoga.lineHeights.xlarge} </LHBox>
+    </Content>
+    <Content>
+      <TextBox> xxlarge </TextBox>
+      <LHBox lh="xxlarge"> {theme.yoga.lineHeights.xxlarge} </LHBox>
+    </Content>
+    <Content>
+      <TextBox> xxxlarge </TextBox>
+      <LHBox lh="xxxlarge"> {theme.yoga.lineHeights.xxxlarge} </LHBox>
+    </Content>
+    <Content>
+      <TextBox> huge </TextBox>
+      <LHBox lh="huge"> {theme.yoga.lineHeights.huge} </LHBox>
+    </Content>
+  </Wrapper>
+);
 
 export default withTheme(LineHeights);

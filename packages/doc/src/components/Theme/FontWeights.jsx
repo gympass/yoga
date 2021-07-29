@@ -1,9 +1,9 @@
-import { media } from '@gympass/yoga-helpers';
-import { Box } from '@gympass/yoga/src';
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
+import { media } from '@gympass/yoga-helpers';
+import { Box } from '@gympass/yoga/src';
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
@@ -14,11 +14,11 @@ const Wrapper = styled.div`
   `}
 `;
 
-const Content = props => (
+export const Content = props => (
   <Box display="flex" flexDirection="column" pv="medium" {...props} />
 );
 
-const TextBox = props => <Box as="span" pv="xxxsmall" {...props} />;
+export const TextBox = props => <Box as="span" pv="xxxsmall" {...props} />;
 
 const FontWeights = ({ theme }) => (
   <Wrapper>
