@@ -1,21 +1,16 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { Box } from '@gympass/yoga';
-import { media } from '@gympass/yoga-helpers';
 
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
-  ${media.max('md')`
-    justify-content: center;
-  `}
 `;
 
 const BorderBox = props => (
   <Box
-    w={200}
+    w={300}
     h={200}
     mv="xxsmall"
     mr="medium"
