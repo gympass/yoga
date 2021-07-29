@@ -7,9 +7,16 @@
       "args": ["${input:platform}"]
     },
     {
+      "group": "build",
       "label": "Build",
       "command": "yarn",
       "args": ["${input:build}"]
+    },
+    {
+      "group": "test",
+      "label": "Test",
+      "command": "yarn",
+      "args": ["${input:test}"]
     }
   ],
   "inputs": [
@@ -35,6 +42,17 @@
         { "label": "Doc", "value": "build:doc" },
         { "label": "Packages", "value": "build:packages" },
         { "label": "System", "value": "build:system" }
+      ]
+    },
+    {
+      "description": "Choose a package to test",
+      "id": "test",
+      "type": "pickString",
+      "options": [
+        { "label": "Native", "value": "test:native" },
+        { "label": "Helpers", "value": "test:helpers" },
+        { "label": "System", "value": "test:system" },
+        { "label": "Web", "value": "test:web" }
       ]
     }
   ]
