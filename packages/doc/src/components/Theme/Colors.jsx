@@ -1,176 +1,109 @@
 import React from 'react';
-import styled, { withTheme, css } from 'styled-components';
+import styled from 'styled-components';
+import { Box } from '@gympass/yoga';
+import { media } from '@gympass/yoga-helpers';
 
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 60px 10px;
+  grid-gap: 20px;
   margin: 30px 0;
 
-  @media (max-width: 564px) {
+  ${media.max('sm')`
     grid-template-columns: 1fr;
-  }
-`;
-
-const BackgroundColor = styled.div`
-  ${({ theme, color }) => css`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 300px;
-    height: 100px;
-    padding: 5px;
-    border-radius: 8px;
-    background-color: ${theme.yoga.colors[color]};
-    color: #f4f4f4;
-    font-size: 14px;
-
-    span {
-      width: fit-content;
-      height: fit-content;
-      background-color: rgba(255, 255, 255, 0.4);
-      color: #000;
-      padding: 5px;
-      border-radius: 4px;
-    }
   `}
 `;
 
-const FeedbackColors = styled.div`
-  ${({ theme, color, token }) => css`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 300px;
-    height: 100px;
-    padding: 5px;
-    border-radius: 8px;
-    background-color: ${theme.yoga.colors.feedback[color][token]};
-    color: #f4f4f4;
-    font-size: 14px;
+const ColorBox = props => (
+  <Box
+    display="flex"
+    flexDirection="column"
+    justifyContent="space-between"
+    h={100}
+    p="xxxsmall"
+    bRadius="small"
+    fs="small"
+    {...props}
+  />
+);
 
-    span {
-      width: fit-content;
-      height: fit-content;
-      background-color: rgba(255, 255, 255, 0.4);
-      color: #000;
-      padding: 5px;
-      border-radius: 4px;
-    }
-  `}
-`;
+const ColorProp = props => (
+  <Box
+    as="span"
+    width="fit-content"
+    bgColor="rgba(255, 255, 255, 0.4)"
+    p="xxxsmall"
+    bRadius="xsmall"
+    color="text.primary"
+    {...props}
+  />
+);
 
-const TextColors = styled.div`
-  ${({ theme, color }) => css`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 300px;
-    height: 100px;
-    padding: 5px;
-    border-radius: 8px;
-    background-color: ${theme.yoga.colors.text[color]};
-    color: #f4f4f4;
-    font-size: 14px;
+const Colors = () => (
+  <Wrapper>
+    <ColorBox bgColor="primary">
+      <ColorProp>primary</ColorProp>
+      <ColorProp>#D8385E</ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="secondary">
+      <ColorProp>secondary</ColorProp>
+      <ColorProp>#231B22</ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="feedback.success.light">
+      <ColorProp> feedback.success.light </ColorProp>
+      <ColorProp> feedback.success[0] </ColorProp>
+      <ColorProp> #C1EEDB </ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="feedback.success.dark">
+      <ColorProp> feedback.success.dark </ColorProp>
+      <ColorProp> feedback.success[1] </ColorProp>
+      <ColorProp> #1D856C </ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="feedback.informative.light">
+      <ColorProp> feedback.informative.light </ColorProp>
+      <ColorProp> feedback.informative[0] </ColorProp>
+      <ColorProp> #E0DFFF </ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="feedback.informative.dark">
+      <ColorProp> feedback.informative.dark </ColorProp>
+      <ColorProp> feedback.informative[1] </ColorProp>
+      <ColorProp> #7068D4 </ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="feedback.attention.light">
+      <ColorProp> feedback.attention.light </ColorProp>
+      <ColorProp> feedback.attention[0] </ColorProp>
+      <ColorProp> #FCD6C3 </ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="feedback.attention.dark">
+      <ColorProp> feedback.attention.dark </ColorProp>
+      <ColorProp> feedback.attention[1] </ColorProp>
+      <ColorProp> #FF874C </ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="text.primary">
+      <ColorProp>text.primary</ColorProp>
+      <ColorProp>#231B22</ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="text.secondary">
+      <ColorProp>text.secondary</ColorProp>
+      <ColorProp> #6B6B78 </ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="text.disabled">
+      <ColorProp>text.disabled</ColorProp>
+      <ColorProp> #D7D7E0 </ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="elements.selectionAndIcons">
+      <ColorProp>elements.selectionAndIcons</ColorProp>
+      <ColorProp> #9898A6 </ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="elements.lineAndBorders">
+      <ColorProp>elements.lineAndBorders</ColorProp>
+      <ColorProp> #D7D7E0 </ColorProp>
+    </ColorBox>
+    <ColorBox bgColor="elements.backgroundAndDisabled">
+      <ColorProp>elements.backgroundAndDisabled</ColorProp>
+      <ColorProp> #F5F5FA </ColorProp>
+    </ColorBox>
+  </Wrapper>
+);
 
-    span {
-      width: fit-content;
-      height: fit-content;
-      background-color: rgba(255, 255, 255, 0.4);
-      color: #000;
-      padding: 5px;
-      border-radius: 4px;
-    }
-  `}
-`;
-
-const ElementsColors = styled.div`
-  ${({ theme, color }) => css`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 300px;
-    height: 100px;
-    padding: 5px;
-    border-radius: 8px;
-    background-color: ${theme.yoga.colors.elements[color]};
-    color: #f4f4f4;
-    font-size: 14px;
-
-    span {
-      width: fit-content;
-      height: fit-content;
-      background-color: rgba(255, 255, 255, 0.4);
-      color: #000;
-      padding: 5px;
-      border-radius: 4px;
-    }
-  `}
-`;
-
-const Colors = ({ theme }) => {
-  return (
-    <Wrapper>
-      <BackgroundColor theme={theme} color="primary">
-        <span>primary</span>
-        <span>#D8385E</span>
-      </BackgroundColor>
-      <BackgroundColor theme={theme} color="secondary">
-        <span>secondary</span>
-        <span>#231B22</span>
-      </BackgroundColor>
-      <FeedbackColors theme={theme} color="success" token={0}>
-        <span> feedback.success.light </span>
-        <span> feedback.success[0] </span>
-        <span> #C1EEDB </span>
-      </FeedbackColors>
-      <FeedbackColors theme={theme} color="success" token={1}>
-        <span> feedback.success.dark </span>
-        <span> feedback.success[1] </span>
-        <span> #1D856C </span>
-      </FeedbackColors>
-      <FeedbackColors theme={theme} color="informative" token={0}>
-        <span> feedback.informative[0] </span>
-        <span> #E0DFFF </span>
-      </FeedbackColors>
-      <FeedbackColors theme={theme} color="informative" token={1}>
-        <span> feedback.informative[1] </span>
-        <span> #7068D4 </span>
-      </FeedbackColors>
-      <FeedbackColors theme={theme} color="attention" token={0}>
-        <span> feedback.attention[0] </span>
-        <span> #FCD6C3 </span>
-      </FeedbackColors>
-      <FeedbackColors theme={theme} color="attention" token={1}>
-        <span> feedback.attention[1] </span>
-        <span> #FF874C </span>
-      </FeedbackColors>
-      <TextColors theme={theme} color="primary">
-        <span>text.primary</span>
-        <span>#231B22</span>
-      </TextColors>
-      <TextColors theme={theme} color="secondary">
-        <span>text.secondary</span>
-        <span> #6B6B78 </span>
-      </TextColors>
-      <TextColors theme={theme} color="disabled">
-        <span>text.disabled</span>
-        <span> #D7D7E0 </span>
-      </TextColors>
-      <ElementsColors theme={theme} color="selectionAndIcons">
-        <span>elements.selectionAndIcons</span>
-        <span> #9898A6 </span>
-      </ElementsColors>
-      <ElementsColors theme={theme} color="lineAndBorders">
-        <span>elements.lineAndBorders</span>
-        <span> #D7D7E0 </span>
-      </ElementsColors>
-      <ElementsColors theme={theme} color="backgroundAndDisabled">
-        <span>elements.backgroundAndDisabled</span>
-        <span> #F5F5FA </span>
-      </ElementsColors>
-    </Wrapper>
-  );
-};
-
-export default withTheme(Colors);
+export default Colors;
