@@ -7,6 +7,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @gympass/yoga-tokens
 
+
+
+
+
 # [3.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@2.0.0...@gympass/yoga-tokens@3.0.0) (2021-06-02)
 
 ### Features

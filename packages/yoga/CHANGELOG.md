@@ -5,134 +5,204 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [7.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.5.1...@gympass/yoga@7.6.0) (2021-07-27)
 
+
 ### Bug Fixes
 
-- **event-card:** update snapshots ([d390053](https://github.com/Gympass/yoga/commit/d390053e22693252d43d0f33b2ca628a70056e45))
-- **snackbar:** adjust close button visibility ([057c827](https://github.com/Gympass/yoga/commit/057c8270db47d83f7f7ab8d7526809db4af891bc))
-- **snackbar:** fix icon for info variant ([1a59ad2](https://github.com/Gympass/yoga/commit/1a59ad205703de0ab85b2cd70409581d9efccdbd))
+* **event-card:** update snapshots ([d390053](https://github.com/Gympass/yoga/commit/d390053e22693252d43d0f33b2ca628a70056e45))
+* **snackbar:** adjust close button visibility ([057c827](https://github.com/Gympass/yoga/commit/057c8270db47d83f7f7ab8d7526809db4af891bc))
+* **snackbar:** fix icon for info variant ([1a59ad2](https://github.com/Gympass/yoga/commit/1a59ad205703de0ab85b2cd70409581d9efccdbd))
+
 
 ### Features
 
-- **snackbar:** add autoClose behavior ([c56712c](https://github.com/Gympass/yoga/commit/c56712c995a6a7561815c2c37c1f9a046ef6059c))
-- **snackbar:** add fadein animation ([f688179](https://github.com/Gympass/yoga/commit/f6881796fa1f869b8e324f5dc6755cd99848b6e8))
-- **snackbar:** add size behavior ([3835fef](https://github.com/Gympass/yoga/commit/3835fefbb61a1099d75dc0819e71889592c0955a))
-- **snackbar:** add snackbar component structure ([1df01d0](https://github.com/Gympass/yoga/commit/1df01d08e12cdacfec13af401b2c30340bb7a7c4))
-- **snackbar:** add styles with basic behavior ([3f5a23d](https://github.com/Gympass/yoga/commit/3f5a23dd5a75debe253d96baa7a43e7d63e775ad))
-- **snackbar:** add variant behavior ([7d9504c](https://github.com/Gympass/yoga/commit/7d9504c8dd18781730398e2d2335b2d739bfc5da))
-- **snackbar:** adjust fadein time ([b9c45ef](https://github.com/Gympass/yoga/commit/b9c45ef2d7593c6e478fdfe3e7af628f6d01631d))
-- **snackbar:** adjust the default variant ([08f953c](https://github.com/Gympass/yoga/commit/08f953cddffde6cf8ed24d2428965ce7e7d0d7bf))
-- **snackbar:** adjust width for desktop ([07798dd](https://github.com/Gympass/yoga/commit/07798dd081565bccdb646500a321ebb8bcedea0f))
+* **snackbar:** add autoClose behavior ([c56712c](https://github.com/Gympass/yoga/commit/c56712c995a6a7561815c2c37c1f9a046ef6059c))
+* **snackbar:** add fadein animation ([f688179](https://github.com/Gympass/yoga/commit/f6881796fa1f869b8e324f5dc6755cd99848b6e8))
+* **snackbar:** add size behavior ([3835fef](https://github.com/Gympass/yoga/commit/3835fefbb61a1099d75dc0819e71889592c0955a))
+* **snackbar:** add snackbar component structure ([1df01d0](https://github.com/Gympass/yoga/commit/1df01d08e12cdacfec13af401b2c30340bb7a7c4))
+* **snackbar:** add styles with basic behavior ([3f5a23d](https://github.com/Gympass/yoga/commit/3f5a23dd5a75debe253d96baa7a43e7d63e775ad))
+* **snackbar:** add variant behavior ([7d9504c](https://github.com/Gympass/yoga/commit/7d9504c8dd18781730398e2d2335b2d739bfc5da))
+* **snackbar:** adjust fadein time ([b9c45ef](https://github.com/Gympass/yoga/commit/b9c45ef2d7593c6e478fdfe3e7af628f6d01631d))
+* **snackbar:** adjust the default variant ([08f953c](https://github.com/Gympass/yoga/commit/08f953cddffde6cf8ed24d2428965ce7e7d0d7bf))
+* **snackbar:** adjust width for desktop ([07798dd](https://github.com/Gympass/yoga/commit/07798dd081565bccdb646500a321ebb8bcedea0f))
+
 
 ### Performance Improvements
 
-- **snackbar:** add memoization to snackbar component ([0781012](https://github.com/Gympass/yoga/commit/078101276b4153437a807d9a8e498c739f6b9d0f))
+* **snackbar:** add memoization to snackbar component ([0781012](https://github.com/Gympass/yoga/commit/078101276b4153437a807d9a8e498c739f6b9d0f))
+
+
+
+
 
 ## [7.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.5.0...@gympass/yoga@7.5.1) (2021-07-26)
 
+
 ### Bug Fixes
 
-- fixing chips margin right ([0531f6a](https://github.com/Gympass/yoga/commit/0531f6a783ddd9faf14763064468ec5ea7b1e211))
+* fixing chips margin right ([0531f6a](https://github.com/Gympass/yoga/commit/0531f6a783ddd9faf14763064468ec5ea7b1e211))
+
+
+
+
 
 # [7.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.4.0...@gympass/yoga@7.5.0) (2021-07-20)
 
+
 ### Features
 
-- add default values in defaultProps ([60a7d26](https://github.com/Gympass/yoga/commit/60a7d2642096fe4d3f420525626c2b0ebad31e88))
-- add more examples in doc ([bbab935](https://github.com/Gympass/yoga/commit/bbab935d1cc06cf3078aba09d3aa113612eb91e5))
-- add props defaultSource in avatar ([5f11020](https://github.com/Gympass/yoga/commit/5f11020919ee503ddb08e1d999bce2b64c44605c))
-- create component avatar ([58e8dd6](https://github.com/Gympass/yoga/commit/58e8dd6cdf1ac749cdcaa08a5dc1d93747e53aa2))
-- improvements in component avatar ([d58fd3f](https://github.com/Gympass/yoga/commit/d58fd3fafc44811273771c1deb8aa9b31c05a6ab))
-- improvements in doc of component avatar ([01e1020](https://github.com/Gympass/yoga/commit/01e1020935228db4a0c0f6c2358a1de5a35d434e))
-- remove component BoxAvatar ([070d987](https://github.com/Gympass/yoga/commit/070d987b1b6a83a9cd40e9daac00d6d7740c09eb))
+* add default values in defaultProps ([60a7d26](https://github.com/Gympass/yoga/commit/60a7d2642096fe4d3f420525626c2b0ebad31e88))
+* add more examples in doc ([bbab935](https://github.com/Gympass/yoga/commit/bbab935d1cc06cf3078aba09d3aa113612eb91e5))
+* add props defaultSource in avatar ([5f11020](https://github.com/Gympass/yoga/commit/5f11020919ee503ddb08e1d999bce2b64c44605c))
+* create component avatar ([58e8dd6](https://github.com/Gympass/yoga/commit/58e8dd6cdf1ac749cdcaa08a5dc1d93747e53aa2))
+* improvements in component avatar ([d58fd3f](https://github.com/Gympass/yoga/commit/d58fd3fafc44811273771c1deb8aa9b31c05a6ab))
+* improvements in doc of component avatar ([01e1020](https://github.com/Gympass/yoga/commit/01e1020935228db4a0c0f6c2358a1de5a35d434e))
+* remove component BoxAvatar ([070d987](https://github.com/Gympass/yoga/commit/070d987b1b6a83a9cd40e9daac00d6d7740c09eb))
+
+
+
+
 
 # [7.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.2...@gympass/yoga@7.4.0) (2021-07-08)
 
+
 ### Bug Fixes
 
-- **plan_card:** removing the fixed height on planCard.ListItem ([ef34523](https://github.com/Gympass/yoga/commit/ef34523e6c3920c3cb20d7bc2c8fbc8277f8c098)), closes [#281](https://github.com/Gympass/yoga/issues/281)
+* **plan_card:** removing the fixed height on planCard.ListItem ([ef34523](https://github.com/Gympass/yoga/commit/ef34523e6c3920c3cb20d7bc2c8fbc8277f8c098)), closes [#281](https://github.com/Gympass/yoga/issues/281)
+
 
 ### Features
 
-- **plan_card:** removing fixed list height on card theme ([075f0b0](https://github.com/Gympass/yoga/commit/075f0b00e74746bf2d93e1b381e711de5d264bfa))
+* **plan_card:** removing fixed list height on card theme ([075f0b0](https://github.com/Gympass/yoga/commit/075f0b00e74746bf2d93e1b381e711de5d264bfa))
+
+
+
+
 
 ## [7.3.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.1...@gympass/yoga@7.3.2) (2021-06-30)
 
 **Note:** Version bump only for package @gympass/yoga
 
+
+
+
+
 ## [7.3.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.0...@gympass/yoga@7.3.1) (2021-06-29)
+
 
 ### Bug Fixes
 
-- fix checkbox width when adding large label text ([3fc2138](https://github.com/Gympass/yoga/commit/3fc21382341efb507866443aeaea1f161db1a1c2)), closes [#279](https://github.com/Gympass/yoga/issues/279)
+* fix checkbox width when adding large label text ([3fc2138](https://github.com/Gympass/yoga/commit/3fc21382341efb507866443aeaea1f161db1a1c2)), closes [#279](https://github.com/Gympass/yoga/issues/279)
+
+
+
+
 
 # [7.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.2.2...@gympass/yoga@7.3.0) (2021-06-28)
 
+
 ### Features
 
-- **event card:** add link button ([3539421](https://github.com/Gympass/yoga/commit/3539421431eba3f458b25fb6261b99441d7fb7b8))
-- **event card:** add tests ([93277e6](https://github.com/Gympass/yoga/commit/93277e6b6b161379eca11a22a02d3009382f4b9e))
-- **event card:** code review fixes ([79161a4](https://github.com/Gympass/yoga/commit/79161a43ce74037dc7defec5e956ea6b0a175e8b))
-- **event card:** fix code review requests ([94b3888](https://github.com/Gympass/yoga/commit/94b38889e87d97ac2eb5457dfc88d42d032016cf))
-- **event card:** fix web component ([c718596](https://github.com/Gympass/yoga/commit/c7185961c1b95b3373e9c5d32336179ced8a618e))
-- **event card:** invert day of week and month ([c2b3a11](https://github.com/Gympass/yoga/commit/c2b3a112956d15a195a835752568d50ed2271523))
-- **event card:** link is not conditionally rendered ([01678e2](https://github.com/Gympass/yoga/commit/01678e2c0356fd7e27ad42c1b21e2cae5c710953))
-- **event card:** refactor to remove component theme ([234fbed](https://github.com/Gympass/yoga/commit/234fbed11acf90b1fb5076b3b316fbace896d528))
-- **event card:** refactor to use yoga api ([050e8c7](https://github.com/Gympass/yoga/commit/050e8c7ef6537ed4af6e678851b74460e6c5eaa7))
-- **event card:** refactor to use yoga apis ([4196168](https://github.com/Gympass/yoga/commit/419616814172c753b0145449d9ceeccba92c3b56))
-- **event card:** remove margin bottom ([c25a87f](https://github.com/Gympass/yoga/commit/c25a87f5492f40ede9333cc1350447c8e9bca438))
-- **event card:** remove unused code on theme ([f326da7](https://github.com/Gympass/yoga/commit/f326da7fda9438b56cf14caad1867fba762eee46))
-- **event card:** remove unused prop ([a0469b7](https://github.com/Gympass/yoga/commit/a0469b72491b5c97acddd889200ec42748898928))
-- **event card:** update and create small version ([f190597](https://github.com/Gympass/yoga/commit/f19059720f290d1d2b78e3fd053d1b70514f7d18))
-- **event card:** update button link size and margin ([878bed7](https://github.com/Gympass/yoga/commit/878bed72d2a337f1d20d36be17db6973b6a61115))
-- **event card:** update margins ([a5cf612](https://github.com/Gympass/yoga/commit/a5cf61226eefdb76f0837384576b813ef675f076))
-- **event card:** update snapshot ([58f5d37](https://github.com/Gympass/yoga/commit/58f5d3797cf8b4de64a75c50c8d06321bf146d5a))
-- **event card:** update snapshot ([c9acc21](https://github.com/Gympass/yoga/commit/c9acc21631f326abbbe0dce5e3a8a3208ef18794))
-- **event card:** use theme reader ([b42fdc4](https://github.com/Gympass/yoga/commit/b42fdc48717b7f5203bde67f51265e02220b2fb5))
+* **event card:** add link button ([3539421](https://github.com/Gympass/yoga/commit/3539421431eba3f458b25fb6261b99441d7fb7b8))
+* **event card:** add tests ([93277e6](https://github.com/Gympass/yoga/commit/93277e6b6b161379eca11a22a02d3009382f4b9e))
+* **event card:** code review fixes ([79161a4](https://github.com/Gympass/yoga/commit/79161a43ce74037dc7defec5e956ea6b0a175e8b))
+* **event card:** fix code review requests ([94b3888](https://github.com/Gympass/yoga/commit/94b38889e87d97ac2eb5457dfc88d42d032016cf))
+* **event card:** fix web component ([c718596](https://github.com/Gympass/yoga/commit/c7185961c1b95b3373e9c5d32336179ced8a618e))
+* **event card:** invert day of week and month ([c2b3a11](https://github.com/Gympass/yoga/commit/c2b3a112956d15a195a835752568d50ed2271523))
+* **event card:** link is not conditionally rendered ([01678e2](https://github.com/Gympass/yoga/commit/01678e2c0356fd7e27ad42c1b21e2cae5c710953))
+* **event card:** refactor to remove component theme ([234fbed](https://github.com/Gympass/yoga/commit/234fbed11acf90b1fb5076b3b316fbace896d528))
+* **event card:** refactor to use yoga api ([050e8c7](https://github.com/Gympass/yoga/commit/050e8c7ef6537ed4af6e678851b74460e6c5eaa7))
+* **event card:** refactor to use yoga apis ([4196168](https://github.com/Gympass/yoga/commit/419616814172c753b0145449d9ceeccba92c3b56))
+* **event card:** remove margin bottom ([c25a87f](https://github.com/Gympass/yoga/commit/c25a87f5492f40ede9333cc1350447c8e9bca438))
+* **event card:** remove unused code on theme ([f326da7](https://github.com/Gympass/yoga/commit/f326da7fda9438b56cf14caad1867fba762eee46))
+* **event card:** remove unused prop ([a0469b7](https://github.com/Gympass/yoga/commit/a0469b72491b5c97acddd889200ec42748898928))
+* **event card:** update and create small version ([f190597](https://github.com/Gympass/yoga/commit/f19059720f290d1d2b78e3fd053d1b70514f7d18))
+* **event card:** update button link size and margin ([878bed7](https://github.com/Gympass/yoga/commit/878bed72d2a337f1d20d36be17db6973b6a61115))
+* **event card:** update margins ([a5cf612](https://github.com/Gympass/yoga/commit/a5cf61226eefdb76f0837384576b813ef675f076))
+* **event card:** update snapshot ([58f5d37](https://github.com/Gympass/yoga/commit/58f5d3797cf8b4de64a75c50c8d06321bf146d5a))
+* **event card:** update snapshot ([c9acc21](https://github.com/Gympass/yoga/commit/c9acc21631f326abbbe0dce5e3a8a3208ef18794))
+* **event card:** use theme reader ([b42fdc4](https://github.com/Gympass/yoga/commit/b42fdc48717b7f5203bde67f51265e02220b2fb5))
+
+
+
+
 
 ## [7.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.2.1...@gympass/yoga@7.2.2) (2021-06-23)
 
+
 ### Bug Fixes
 
-- android font weight issue ([25b36c4](https://github.com/Gympass/yoga/commit/25b36c415120145737d1893baf4584327d33c70f))
-- refactor imports ([4211b03](https://github.com/Gympass/yoga/commit/4211b033b229913c0a9b7af7f85cef57efdbac7d))
-- remove fontweight compare ([15d2e85](https://github.com/Gympass/yoga/commit/15d2e8530b9e31180ad0240d80ef4c916eac703e))
-- update tests ([a7ce28b](https://github.com/Gympass/yoga/commit/a7ce28be8fdf622809dd31701e11d75d5e8d1e53))
+* android font weight issue ([25b36c4](https://github.com/Gympass/yoga/commit/25b36c415120145737d1893baf4584327d33c70f))
+* refactor imports ([4211b03](https://github.com/Gympass/yoga/commit/4211b033b229913c0a9b7af7f85cef57efdbac7d))
+* remove fontweight compare ([15d2e85](https://github.com/Gympass/yoga/commit/15d2e8530b9e31180ad0240d80ef4c916eac703e))
+* update tests ([a7ce28b](https://github.com/Gympass/yoga/commit/a7ce28be8fdf622809dd31701e11d75d5e8d1e53))
+
+
+
+
 
 ## [7.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.2.0...@gympass/yoga@7.2.1) (2021-06-16)
 
+
 ### Bug Fixes
 
-- add react as peer dependency ([ee55792](https://github.com/Gympass/yoga/commit/ee55792d38d4ebdfc11faa99173574405b30db99))
+* add react as peer dependency ([ee55792](https://github.com/Gympass/yoga/commit/ee55792d38d4ebdfc11faa99173574405b30db99))
+
+
+
+
 
 # [7.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.3...@gympass/yoga@7.2.0) (2021-06-16)
 
+
 ### Features
 
-- **yoga:** new component: Box ([15a2247](https://github.com/Gympass/yoga/commit/15a22472863c5ee1452ee2d2351c98b501fda1bf))
+* **yoga:** new component: Box ([15a2247](https://github.com/Gympass/yoga/commit/15a22472863c5ee1452ee2d2351c98b501fda1bf))
+
+
+
+
 
 ## [7.1.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.2...@gympass/yoga@7.1.3) (2021-06-16)
 
+
 ### Bug Fixes
 
-- **input:** adjust error helper color on input focus ([375c394](https://github.com/Gympass/yoga/commit/375c3946375244a97b70509224f3d4c3089336b8))
+* **input:** adjust error helper color on input focus ([375c394](https://github.com/Gympass/yoga/commit/375c3946375244a97b70509224f3d4c3089336b8))
+
+
+
+
 
 ## [7.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.1...@gympass/yoga@7.1.2) (2021-06-10)
 
 **Note:** Version bump only for package @gympass/yoga
 
+
+
+
+
 ## [7.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.1.0...@gympass/yoga@7.1.1) (2021-06-10)
 
 **Note:** Version bump only for package @gympass/yoga
 
+
+
+
+
 # [7.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.0.0...@gympass/yoga@7.1.0) (2021-06-04)
+
 
 ### Features
 
-- **chips:** add ellipsis support to native chips component ([d5c026e](https://github.com/Gympass/yoga/commit/d5c026e8b10b72091a809cb123033e1b455be3a7))
-- **chips:** add margin right (web) ([efd2baa](https://github.com/Gympass/yoga/commit/efd2baa5b6305042f22f51dce64c46220c65a229))
-- **chips:** create native version ([073246c](https://github.com/Gympass/yoga/commit/073246ca5891b7d5427d454764cc26c3c7a4214f))
-- **chips:** start development of new component Chips (native platform) ([5e84c4a](https://github.com/Gympass/yoga/commit/5e84c4a55a99f98f2231aee1c5d98516729cb34b))
-- **yoga:** start development of new component Chips (web platform) ([a0df8f3](https://github.com/Gympass/yoga/commit/a0df8f358a036a75602c808fad02e1508eb85eb7))
+* **chips:** add ellipsis support to native chips component ([d5c026e](https://github.com/Gympass/yoga/commit/d5c026e8b10b72091a809cb123033e1b455be3a7))
+* **chips:** add margin right (web) ([efd2baa](https://github.com/Gympass/yoga/commit/efd2baa5b6305042f22f51dce64c46220c65a229))
+* **chips:** create native version ([073246c](https://github.com/Gympass/yoga/commit/073246ca5891b7d5427d454764cc26c3c7a4214f))
+* **chips:** start development of new component Chips (native platform) ([5e84c4a](https://github.com/Gympass/yoga/commit/5e84c4a55a99f98f2231aee1c5d98516729cb34b))
+* **yoga:** start development of new component Chips (web platform) ([a0df8f3](https://github.com/Gympass/yoga/commit/a0df8f358a036a75602c808fad02e1508eb85eb7))
+
+
+
+
 
 # [7.0.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@6.3.0...@gympass/yoga@7.0.0) (2021-06-02)
 
