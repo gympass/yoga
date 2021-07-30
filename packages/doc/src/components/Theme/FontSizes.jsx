@@ -4,60 +4,64 @@ import { Box } from '@gympass/yoga';
 
 import { Table } from './Breakpoints';
 
-const Th = props => <Box as="th" {...props} />;
+const Td = props => <Box as="td" {...props} />;
 
 const FontSizes = ({ theme }) => (
   <Table>
-    <tr>
-      <th> Theme </th>
-      <th> Value </th>
-      <th> Example </th>
-    </tr>
-    <tr>
-      <th> fontSizes.xxsmall </th>
-      <th> {theme.yoga.fontSizes.xxsmall} </th>
-      <Th fs="xxsmall">live the missionss</Th>
-    </tr>
-    <tr>
-      <th> fontSizes.xsmall </th>
-      <th> {theme.yoga.fontSizes.xsmall} </th>
-      <Th fs="xsmall">live the missionss</Th>
-    </tr>
-    <tr>
-      <th> fontSizes.small </th>
-      <th> {theme.yoga.fontSizes.small} </th>
-      <Th fs="small">live the missionss</Th>
-    </tr>
-    <tr>
-      <th> fontSizes.medium </th>
-      <th> {theme.yoga.fontSizes.medium} </th>
-      <Th fs="medium">live the missionss</Th>
-    </tr>
-    <tr>
-      <th> fontSizes.large </th>
-      <th> {theme.yoga.fontSizes.large} </th>
-      <Th fs="large">live the missionss</Th>
-    </tr>
-    <tr>
-      <th> fontSizes.xlarge </th>
-      <th> {theme.yoga.fontSizes.xlarge} </th>
-      <Th fs="xlarge">live the missionss</Th>
-    </tr>
-    <tr>
-      <th> fontSizes.xxlarge </th>
-      <th> {theme.yoga.fontSizes.xxlarge} </th>
-      <Th fs="xxlarge">live the missionss</Th>
-    </tr>
-    <tr>
-      <th> fontSizes.xxxlarge </th>
-      <th> {theme.yoga.fontSizes.xxxlarge} </th>
-      <Th fs="xxxlarge">live the missionss</Th>
-    </tr>
-    <tr>
-      <th> fontSizes.huge </th>
-      <th> {theme.yoga.fontSizes.huge} </th>
-      <Th fs="huge">live the missionss</Th>
-    </tr>
+    <thead>
+      <tr>
+        <th> Theme </th>
+        <th> Value </th>
+        <th> Example </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> fontSizes.xxsmall </td>
+        <td> {theme.yoga.fontSizes.xxsmall} </td>
+        <Td fs="xxsmall">live the missionss</Td>
+      </tr>
+      <tr>
+        <td> fontSizes.xsmall </td>
+        <td> {theme.yoga.fontSizes.xsmall} </td>
+        <Td fs="xsmall">live the missionss</Td>
+      </tr>
+      <tr>
+        <td> fontSizes.small </td>
+        <td> {theme.yoga.fontSizes.small} </td>
+        <Td fs="small">live the missionss</Td>
+      </tr>
+      <tr>
+        <td> fontSizes.medium </td>
+        <td> {theme.yoga.fontSizes.medium} </td>
+        <Td fs="medium">live the missionss</Td>
+      </tr>
+      <tr>
+        <td> fontSizes.large </td>
+        <td> {theme.yoga.fontSizes.large} </td>
+        <Td fs="large">live the missionss</Td>
+      </tr>
+      <tr>
+        <td> fontSizes.xlarge </td>
+        <td> {theme.yoga.fontSizes.xlarge} </td>
+        <Td fs="xlarge">live the missionss</Td>
+      </tr>
+      <tr>
+        <td> fontSizes.xxlarge </td>
+        <td> {theme.yoga.fontSizes.xxlarge} </td>
+        <Td fs="xxlarge">live the missionss</Td>
+      </tr>
+      <tr>
+        <td> fontSizes.xxxlarge </td>
+        <td> {theme.yoga.fontSizes.xxxlarge} </td>
+        <Td fs="xxxlarge">live the missionss</Td>
+      </tr>
+      <tr>
+        <td> fontSizes.huge </td>
+        <td> {theme.yoga.fontSizes.huge} </td>
+        <Td fs="huge">live the missionss</Td>
+      </tr>
+    </tbody>
   </Table>
 );
 
