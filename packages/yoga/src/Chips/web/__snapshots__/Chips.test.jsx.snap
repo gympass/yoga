@@ -36,7 +36,7 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
 }
 
 .c0:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .c0[disabled] {
@@ -139,7 +139,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
 }
 
 .c0:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .c0[disabled] {
@@ -191,7 +191,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
 }
 
 .c2:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .c2[disabled] {
@@ -317,7 +317,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 }
 
 .c0:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .c0[disabled] {
@@ -369,7 +369,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 }
 
 .c2:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .c2[disabled] {
@@ -511,7 +511,7 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 }
 
 .c0:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .c0[disabled] {
@@ -580,7 +580,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 }
 
 .c0:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .c0[disabled] {
@@ -632,7 +632,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 }
 
 .c2:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .c2[disabled] {
@@ -719,7 +719,7 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
 }
 
 .c0:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .c0[disabled] {
@@ -793,7 +793,7 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
 }
 
 .c0:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .c0[disabled] {
@@ -868,7 +868,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
 }
 
 .c0:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .c0[disabled] {

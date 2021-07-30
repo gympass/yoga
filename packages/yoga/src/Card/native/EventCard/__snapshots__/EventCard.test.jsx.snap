@@ -261,6 +261,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                   },
                   "width": 320,
                 },
+                "avatar": Object {},
                 "button": Object {
                   "border": Object {
                     "radius": 9999,
@@ -478,7 +479,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                           "top": 12,
                         },
                       },
-                      "height": 92,
                       "item": Object {
                         "font": Object {
                           "color": "#231B22",
@@ -1024,6 +1024,51 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                     },
                     "border": Object {
                       "radius": 9999,
+                    },
+                  },
+                },
+                "snackbar": Object {
+                  "border": Object {
+                    "radius": 8,
+                  },
+                  "height": Object {
+                    "max": 72,
+                    "min": 56,
+                  },
+                  "maxWidth": Object {
+                    "default": 600,
+                  },
+                  "minWidth": Object {
+                    "desktop": 400,
+                    "mobile": 320,
+                  },
+                  "padding": Object {
+                    "default": 16,
+                  },
+                  "position": Object {
+                    "desktop": Object {
+                      "bottom": 40,
+                      "right": 40,
+                    },
+                    "mobile": Object {
+                      "bottom": 16,
+                      "left": 16,
+                      "right": 16,
+                    },
+                  },
+                  "shadow": Object {
+                    "default": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                  },
+                  "variant": Object {
+                    "color": Object {
+                      "failure": "#FCD6C3",
+                      "info": "#E0DFFF",
+                      "success": "#C1EEDB",
+                    },
+                    "icon": Object {
+                      "failure": [Function],
+                      "info": [Function],
+                      "success": [Function],
                     },
                   },
                 },
@@ -1641,6 +1686,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                   },
                   "width": 320,
                 },
+                "avatar": Object {},
                 "button": Object {
                   "border": Object {
                     "radius": 9999,
@@ -1858,7 +1904,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                           "top": 12,
                         },
                       },
-                      "height": 92,
                       "item": Object {
                         "font": Object {
                           "color": "#231B22",
@@ -2404,6 +2449,51 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                     },
                     "border": Object {
                       "radius": 9999,
+                    },
+                  },
+                },
+                "snackbar": Object {
+                  "border": Object {
+                    "radius": 8,
+                  },
+                  "height": Object {
+                    "max": 72,
+                    "min": 56,
+                  },
+                  "maxWidth": Object {
+                    "default": 600,
+                  },
+                  "minWidth": Object {
+                    "desktop": 400,
+                    "mobile": 320,
+                  },
+                  "padding": Object {
+                    "default": 16,
+                  },
+                  "position": Object {
+                    "desktop": Object {
+                      "bottom": 40,
+                      "right": 40,
+                    },
+                    "mobile": Object {
+                      "bottom": 16,
+                      "left": 16,
+                      "right": 16,
+                    },
+                  },
+                  "shadow": Object {
+                    "default": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                  },
+                  "variant": Object {
+                    "color": Object {
+                      "failure": "#FCD6C3",
+                      "info": "#E0DFFF",
+                      "success": "#C1EEDB",
+                    },
+                    "icon": Object {
+                      "failure": [Function],
+                      "info": [Function],
+                      "success": [Function],
                     },
                   },
                 },
@@ -3017,6 +3107,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   },
                   "width": 320,
                 },
+                "avatar": Object {},
                 "button": Object {
                   "border": Object {
                     "radius": 9999,
@@ -3234,7 +3325,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                           "top": 12,
                         },
                       },
-                      "height": 92,
                       "item": Object {
                         "font": Object {
                           "color": "#231B22",
@@ -3780,6 +3870,51 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     },
                     "border": Object {
                       "radius": 9999,
+                    },
+                  },
+                },
+                "snackbar": Object {
+                  "border": Object {
+                    "radius": 8,
+                  },
+                  "height": Object {
+                    "max": 72,
+                    "min": 56,
+                  },
+                  "maxWidth": Object {
+                    "default": 600,
+                  },
+                  "minWidth": Object {
+                    "desktop": 400,
+                    "mobile": 320,
+                  },
+                  "padding": Object {
+                    "default": 16,
+                  },
+                  "position": Object {
+                    "desktop": Object {
+                      "bottom": 40,
+                      "right": 40,
+                    },
+                    "mobile": Object {
+                      "bottom": 16,
+                      "left": 16,
+                      "right": 16,
+                    },
+                  },
+                  "shadow": Object {
+                    "default": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                  },
+                  "variant": Object {
+                    "color": Object {
+                      "failure": "#FCD6C3",
+                      "info": "#E0DFFF",
+                      "success": "#C1EEDB",
+                    },
+                    "icon": Object {
+                      "failure": [Function],
+                      "info": [Function],
+                      "success": [Function],
                     },
                   },
                 },
@@ -4397,6 +4532,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   },
                   "width": 320,
                 },
+                "avatar": Object {},
                 "button": Object {
                   "border": Object {
                     "radius": 9999,
@@ -4614,7 +4750,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                           "top": 12,
                         },
                       },
-                      "height": 92,
                       "item": Object {
                         "font": Object {
                           "color": "#231B22",
@@ -5160,6 +5295,51 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     },
                     "border": Object {
                       "radius": 9999,
+                    },
+                  },
+                },
+                "snackbar": Object {
+                  "border": Object {
+                    "radius": 8,
+                  },
+                  "height": Object {
+                    "max": 72,
+                    "min": 56,
+                  },
+                  "maxWidth": Object {
+                    "default": 600,
+                  },
+                  "minWidth": Object {
+                    "desktop": 400,
+                    "mobile": 320,
+                  },
+                  "padding": Object {
+                    "default": 16,
+                  },
+                  "position": Object {
+                    "desktop": Object {
+                      "bottom": 40,
+                      "right": 40,
+                    },
+                    "mobile": Object {
+                      "bottom": 16,
+                      "left": 16,
+                      "right": 16,
+                    },
+                  },
+                  "shadow": Object {
+                    "default": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                  },
+                  "variant": Object {
+                    "color": Object {
+                      "failure": "#FCD6C3",
+                      "info": "#E0DFFF",
+                      "success": "#C1EEDB",
+                    },
+                    "icon": Object {
+                      "failure": [Function],
+                      "info": [Function],
+                      "success": [Function],
                     },
                   },
                 },
@@ -5777,6 +5957,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                   },
                   "width": 320,
                 },
+                "avatar": Object {},
                 "button": Object {
                   "border": Object {
                     "radius": 9999,
@@ -5994,7 +6175,6 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                           "top": 12,
                         },
                       },
-                      "height": 92,
                       "item": Object {
                         "font": Object {
                           "color": "#231B22",
@@ -6540,6 +6720,51 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                     },
                     "border": Object {
                       "radius": 9999,
+                    },
+                  },
+                },
+                "snackbar": Object {
+                  "border": Object {
+                    "radius": 8,
+                  },
+                  "height": Object {
+                    "max": 72,
+                    "min": 56,
+                  },
+                  "maxWidth": Object {
+                    "default": 600,
+                  },
+                  "minWidth": Object {
+                    "desktop": 400,
+                    "mobile": 320,
+                  },
+                  "padding": Object {
+                    "default": 16,
+                  },
+                  "position": Object {
+                    "desktop": Object {
+                      "bottom": 40,
+                      "right": 40,
+                    },
+                    "mobile": Object {
+                      "bottom": 16,
+                      "left": 16,
+                      "right": 16,
+                    },
+                  },
+                  "shadow": Object {
+                    "default": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                  },
+                  "variant": Object {
+                    "color": Object {
+                      "failure": "#FCD6C3",
+                      "info": "#E0DFFF",
+                      "success": "#C1EEDB",
+                    },
+                    "icon": Object {
+                      "failure": [Function],
+                      "info": [Function],
+                      "success": [Function],
                     },
                   },
                 },
