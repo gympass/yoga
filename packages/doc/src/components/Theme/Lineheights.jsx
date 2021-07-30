@@ -8,7 +8,7 @@ const LHBox = props => (
 );
 
 const LineHeights = ({ theme }) => (
-  <Wrapper>
+  <Wrapper style={{ gridGap: theme.yoga.spacing.xsmall }}>
     <Content>
       <TextBox> xxsmall </TextBox>
       <LHBox lh="xxsmall">{theme.yoga.lineHeights.xxsmall}</LHBox>
