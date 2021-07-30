@@ -7,9 +7,9 @@ const Fonts = ({ theme }) => (
   <Table>
     <thead>
       <tr>
-        <td> Theme </td>
-        <td> Family </td>
-        <td> Weight </td>
+        <th> Theme </th>
+        <th> Family </th>
+        <th> Weight </th>
       </tr>
     </thead>
     <tbody>
