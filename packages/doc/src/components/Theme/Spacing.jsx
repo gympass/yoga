@@ -1,123 +1,109 @@
 import React from 'react';
-import styled, { withTheme, css } from 'styled-components';
+import { withTheme } from 'styled-components';
+import { Box } from '@gympass/yoga';
 
-const Table = styled.table`
-  tr {
-    border-bottom: 0.3px gray solid;
-    th {
-      padding: 20px 5px;
-      font-weight: normal;
+import { Table } from './Breakpoints';
 
-      :nth-child(1) {
-        font-weight: bolder;
-      }
-    }
-  }
-`;
+const SpaceBox = props => (
+  <Box display="inline-block" bgColor="rgba(215, 215, 224, 0.7)" {...props} />
+);
 
-const Span = styled.span`
-  ${({ theme, size }) => css`
-    display: inline-block;
-    background-color: rgba(215, 215, 224, 0.7);
-    width: ${theme.yoga.spacing[size]}px;
-    height: ${theme.yoga.spacing[size]}px;
-  `}
-`;
-
-const Spacing = ({ theme }) => {
-  return (
-    <Table>
+const Spacing = ({ theme }) => (
+  <Table>
+    <thead>
       <tr>
-        <th> theme </th>
+        <th> Theme </th>
         <th> Value </th>
         <th> Example </th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <th> spacing.zero </th>
-        <th> {theme.yoga.spacing.zero} </th>
-        <th>
-          <Span theme={theme} size={0} />
-        </th>
+        <td> spacing.zero </td>
+        <td> {theme.yoga.spacing.zero} </td>
+        <td>
+          <SpaceBox w="zero" h="zero" />
+        </td>
       </tr>
       <tr>
-        <th> spacing.xxxsmall </th>
-        <th> {theme.yoga.spacing.xxxsmall} </th>
-        <th>
-          <Span theme={theme} size={1} />
-        </th>
+        <td> spacing.xxxsmall </td>
+        <td> {theme.yoga.spacing.xxxsmall} </td>
+        <td>
+          <SpaceBox w="xxxsmall" h="xxxsmall" />
+        </td>
       </tr>
       <tr>
-        <th> spacing.xxsmall </th>
-        <th> {theme.yoga.spacing.xxsmall} </th>
-        <th>
-          <Span theme={theme} size={2} />
-        </th>
+        <td> spacing.xxsmall </td>
+        <td> {theme.yoga.spacing.xxsmall} </td>
+        <td>
+          <SpaceBox w="xxsmall" h="xxsmall" />
+        </td>
       </tr>
       <tr>
-        <th> spacing.xsmall </th>
-        <th> {theme.yoga.spacing.xsmall} </th>
-        <th>
-          <Span theme={theme} size={3} />
-        </th>
+        <td> spacing.xsmall </td>
+        <td> {theme.yoga.spacing.xsmall} </td>
+        <td>
+          <SpaceBox w="xsmall" h="xsmall" />
+        </td>
       </tr>
       <tr>
-        <th> spacing.small </th>
-        <th> {theme.yoga.spacing.small} </th>
-        <th>
-          <Span theme={theme} size={4} />
-        </th>
+        <td> spacing.small </td>
+        <td> {theme.yoga.spacing.small} </td>
+        <td>
+          <SpaceBox w="small" h="small" />
+        </td>
       </tr>
       <tr>
-        <th> spacing.medium </th>
-        <th> {theme.yoga.spacing.medium} </th>
-        <th>
-          <Span theme={theme} size={5} />
-        </th>
+        <td> spacing.medium </td>
+        <td> {theme.yoga.spacing.medium} </td>
+        <td>
+          <SpaceBox w="medium" h="medium" />
+        </td>
       </tr>
       <tr>
-        <th> spacing.large </th>
-        <th> {theme.yoga.spacing.large} </th>
-        <th>
-          <Span theme={theme} size={6} />
-        </th>
+        <td> spacing.large </td>
+        <td> {theme.yoga.spacing.large} </td>
+        <td>
+          <SpaceBox w="large" h="large" />
+        </td>
       </tr>
       <tr>
-        <th> spacing.xlarge </th>
-        <th> {theme.yoga.spacing.xlarge} </th>
-        <th>
-          <Span theme={theme} size={7} />
-        </th>
+        <td> spacing.xlarge </td>
+        <td> {theme.yoga.spacing.xlarge} </td>
+        <td>
+          <SpaceBox w="xlarge" h="xlarge" />
+        </td>
       </tr>
       <tr>
-        <th> spacing.xxlarge </th>
-        <th> {theme.yoga.spacing.xxlarge} </th>
-        <th>
-          <Span theme={theme} size={8} />
-        </th>
+        <td> spacing.xxlarge </td>
+        <td> {theme.yoga.spacing.xxlarge} </td>
+        <td>
+          <SpaceBox w="xxlarge" h="xxlarge" />
+        </td>
       </tr>
       <tr>
-        <th> spacing.xxxlarge </th>
-        <th> {theme.yoga.spacing.xxxlarge} </th>
-        <th>
-          <Span theme={theme} size={9} />
-        </th>
+        <td> spacing.xxxlarge </td>
+        <td> {theme.yoga.spacing.xxxlarge} </td>
+        <td>
+          <SpaceBox w="xxxlarge" h="xxxlarge" />
+        </td>
       </tr>
       <tr>
-        <th> spacing.huge </th>
-        <th> {theme.yoga.spacing.huge} </th>
-        <th>
-          <Span theme={theme} size={10} />
-        </th>
+        <td> spacing.huge </td>
+        <td> {theme.yoga.spacing.huge} </td>
+        <td>
+          <SpaceBox w="huge" h="huge" />
+        </td>
       </tr>
       <tr>
-        <th> spacing.xhuge </th>
-        <th> {theme.yoga.spacing.xhuge} </th>
-        <th>
-          <Span theme={theme} size={11} />
-        </th>
+        <td> spacing.xhuge </td>
+        <td> {theme.yoga.spacing.xhuge} </td>
+        <td>
+          <SpaceBox w="xhuge" h="xhuge" />
+        </td>
       </tr>
-    </Table>
-  );
-};
+    </tbody>
+  </Table>
+);
 
 export default withTheme(Spacing);
