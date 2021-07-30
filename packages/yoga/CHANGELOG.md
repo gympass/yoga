@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.5.1...@gympass/yoga@7.6.0) (2021-07-27)
+
+### Bug Fixes
+
+- **event-card:** update snapshots ([d390053](https://github.com/Gympass/yoga/commit/d390053e22693252d43d0f33b2ca628a70056e45))
+- **snackbar:** adjust close button visibility ([057c827](https://github.com/Gympass/yoga/commit/057c8270db47d83f7f7ab8d7526809db4af891bc))
+- **snackbar:** fix icon for info variant ([1a59ad2](https://github.com/Gympass/yoga/commit/1a59ad205703de0ab85b2cd70409581d9efccdbd))
+
+### Features
+
+- **snackbar:** add autoClose behavior ([c56712c](https://github.com/Gympass/yoga/commit/c56712c995a6a7561815c2c37c1f9a046ef6059c))
+- **snackbar:** add fadein animation ([f688179](https://github.com/Gympass/yoga/commit/f6881796fa1f869b8e324f5dc6755cd99848b6e8))
+- **snackbar:** add size behavior ([3835fef](https://github.com/Gympass/yoga/commit/3835fefbb61a1099d75dc0819e71889592c0955a))
+- **snackbar:** add snackbar component structure ([1df01d0](https://github.com/Gympass/yoga/commit/1df01d08e12cdacfec13af401b2c30340bb7a7c4))
+- **snackbar:** add styles with basic behavior ([3f5a23d](https://github.com/Gympass/yoga/commit/3f5a23dd5a75debe253d96baa7a43e7d63e775ad))
+- **snackbar:** add variant behavior ([7d9504c](https://github.com/Gympass/yoga/commit/7d9504c8dd18781730398e2d2335b2d739bfc5da))
+- **snackbar:** adjust fadein time ([b9c45ef](https://github.com/Gympass/yoga/commit/b9c45ef2d7593c6e478fdfe3e7af628f6d01631d))
+- **snackbar:** adjust the default variant ([08f953c](https://github.com/Gympass/yoga/commit/08f953cddffde6cf8ed24d2428965ce7e7d0d7bf))
+- **snackbar:** adjust width for desktop ([07798dd](https://github.com/Gympass/yoga/commit/07798dd081565bccdb646500a321ebb8bcedea0f))
+
+### Performance Improvements
+
+- **snackbar:** add memoization to snackbar component ([0781012](https://github.com/Gympass/yoga/commit/078101276b4153437a807d9a8e498c739f6b9d0f))
+
+## [7.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.5.0...@gympass/yoga@7.5.1) (2021-07-26)
+
+### Bug Fixes
+
+- fixing chips margin right ([0531f6a](https://github.com/Gympass/yoga/commit/0531f6a783ddd9faf14763064468ec5ea7b1e211))
+
+# [7.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.4.0...@gympass/yoga@7.5.0) (2021-07-20)
+
+### Features
+
+- add default values in defaultProps ([60a7d26](https://github.com/Gympass/yoga/commit/60a7d2642096fe4d3f420525626c2b0ebad31e88))
+- add more examples in doc ([bbab935](https://github.com/Gympass/yoga/commit/bbab935d1cc06cf3078aba09d3aa113612eb91e5))
+- add props defaultSource in avatar ([5f11020](https://github.com/Gympass/yoga/commit/5f11020919ee503ddb08e1d999bce2b64c44605c))
+- create component avatar ([58e8dd6](https://github.com/Gympass/yoga/commit/58e8dd6cdf1ac749cdcaa08a5dc1d93747e53aa2))
+- improvements in component avatar ([d58fd3f](https://github.com/Gympass/yoga/commit/d58fd3fafc44811273771c1deb8aa9b31c05a6ab))
+- improvements in doc of component avatar ([01e1020](https://github.com/Gympass/yoga/commit/01e1020935228db4a0c0f6c2358a1de5a35d434e))
+- remove component BoxAvatar ([070d987](https://github.com/Gympass/yoga/commit/070d987b1b6a83a9cd40e9daac00d6d7740c09eb))
+
+# [7.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.2...@gympass/yoga@7.4.0) (2021-07-08)
+
+### Bug Fixes
+
+- **plan_card:** removing the fixed height on planCard.ListItem ([ef34523](https://github.com/Gympass/yoga/commit/ef34523e6c3920c3cb20d7bc2c8fbc8277f8c098)), closes [#281](https://github.com/Gympass/yoga/issues/281)
+
+### Features
+
+- **plan_card:** removing fixed list height on card theme ([075f0b0](https://github.com/Gympass/yoga/commit/075f0b00e74746bf2d93e1b381e711de5d264bfa))
+
 ## [7.3.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.3.1...@gympass/yoga@7.3.2) (2021-06-30)
 
 **Note:** Version bump only for package @gympass/yoga
