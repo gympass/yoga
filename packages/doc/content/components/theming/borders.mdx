@@ -1,0 +1,26 @@
+---
+title: 'Borders'
+metaTitle: 'Theme Borders'
+metaDescription: 'How borders are used inside our theme'
+order: 3
+---
+
+## Borders
+
+A border is a visual attribute that you can apply to a shape. We use three kinds
+of borders to differentiate elements.
+
+### Usage
+
+This is a simple usage:
+
+```javascript type=highlight
+import styled from 'styled-components';
+import { theme } from '@gympass/yoga';
+
+const MyCoolComponent = styled.div`
+  border: ${theme.borders.medium}px solid rgba(215, 215, 224, 0.7);
+`;
+```
+
+<ThemeBorders />
