@@ -36,52 +36,52 @@ const Breakpoints = ({ theme }) => (
     </thead>
     <tbody>
       <tr>
-        <th>breakpoints.xxs</th>
-        <th>{theme.yoga.breakpoints.xxs.width}</th>
-        <th>{theme.yoga.breakpoints.xxs.margin}</th>
-        <th>{theme.yoga.breakpoints.xxs.gutter}</th>
+        <td>breakpoints.xxs</td>
+        <td>{theme.yoga.breakpoints.xxs.width}</td>
+        <td>{theme.yoga.breakpoints.xxs.margin}</td>
+        <td>{theme.yoga.breakpoints.xxs.gutter}</td>
       </tr>
       <tr>
-        <th>breakpoints.xs</th>
-        <th>{theme.yoga.breakpoints.xs.width}</th>
-        <th>{theme.yoga.breakpoints.xs.margin}</th>
-        <th>{theme.yoga.breakpoints.xs.gutter}</th>
+        <td>breakpoints.xs</td>
+        <td>{theme.yoga.breakpoints.xs.width}</td>
+        <td>{theme.yoga.breakpoints.xs.margin}</td>
+        <td>{theme.yoga.breakpoints.xs.gutter}</td>
       </tr>
       <tr>
-        <th>breakpoints.sm</th>
-        <th>{theme.yoga.breakpoints.sm.width}</th>
-        <th>{theme.yoga.breakpoints.sm.margin}</th>
-        <th>{theme.yoga.breakpoints.sm.gutter}</th>
+        <td>breakpoints.sm</td>
+        <td>{theme.yoga.breakpoints.sm.width}</td>
+        <td>{theme.yoga.breakpoints.sm.margin}</td>
+        <td>{theme.yoga.breakpoints.sm.gutter}</td>
       </tr>
       <tr>
-        <th>breakpoints.md</th>
-        <th>{theme.yoga.breakpoints.md.width}</th>
-        <th>{theme.yoga.breakpoints.md.margin}</th>
-        <th>{theme.yoga.breakpoints.md.gutter}</th>
+        <td>breakpoints.md</td>
+        <td>{theme.yoga.breakpoints.md.width}</td>
+        <td>{theme.yoga.breakpoints.md.margin}</td>
+        <td>{theme.yoga.breakpoints.md.gutter}</td>
       </tr>
       <tr>
-        <th>breakpoints.lg</th>
-        <th>{theme.yoga.breakpoints.lg.width}</th>
-        <th>{theme.yoga.breakpoints.lg.margin}</th>
-        <th>{theme.yoga.breakpoints.lg.gutter}</th>
+        <td>breakpoints.lg</td>
+        <td>{theme.yoga.breakpoints.lg.width}</td>
+        <td>{theme.yoga.breakpoints.lg.margin}</td>
+        <td>{theme.yoga.breakpoints.lg.gutter}</td>
       </tr>
       <tr>
-        <th>breakpoints.xl</th>
-        <th>{theme.yoga.breakpoints.xl.width}</th>
-        <th>{theme.yoga.breakpoints.xl.margin}</th>
-        <th>{theme.yoga.breakpoints.xl.gutter}</th>
+        <td>breakpoints.xl</td>
+        <td>{theme.yoga.breakpoints.xl.width}</td>
+        <td>{theme.yoga.breakpoints.xl.margin}</td>
+        <td>{theme.yoga.breakpoints.xl.gutter}</td>
       </tr>
       <tr>
-        <th>breakpoints.xxl</th>
-        <th>{theme.yoga.breakpoints.xxl.width}</th>
-        <th>{theme.yoga.breakpoints.xxl.margin}</th>
-        <th>{theme.yoga.breakpoints.xxl.gutter}</th>
+        <td>breakpoints.xxl</td>
+        <td>{theme.yoga.breakpoints.xxl.width}</td>
+        <td>{theme.yoga.breakpoints.xxl.margin}</td>
+        <td>{theme.yoga.breakpoints.xxl.gutter}</td>
       </tr>
       <tr>
-        <th>breakpoints.xxxl</th>
-        <th>{theme.yoga.breakpoints.xxxl.width}</th>
-        <th>{theme.yoga.breakpoints.xxxl.margin}</th>
-        <th>{theme.yoga.breakpoints.xxxl.gutter}</th>
+        <td>breakpoints.xxxl</td>
+        <td>{theme.yoga.breakpoints.xxxl.width}</td>
+        <td>{theme.yoga.breakpoints.xxxl.margin}</td>
+        <td>{theme.yoga.breakpoints.xxxl.gutter}</td>
       </tr>
     </tbody>
   </Table>
