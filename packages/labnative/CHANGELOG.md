@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.3.1...@gympass/yoga-labnative@1.3.2) (2021-07-27)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+## [1.3.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.3.0...@gympass/yoga-labnative@1.3.1) (2021-07-26)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+# [1.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.2.3...@gympass/yoga-labnative@1.3.0) (2021-07-20)
+
+### Features
+
+- add more examples in doc ([bbab935](https://github.com/Gympass/yoga/commit/bbab935d1cc06cf3078aba09d3aa113612eb91e5))
+- add props defaultSource in avatar ([5f11020](https://github.com/Gympass/yoga/commit/5f11020919ee503ddb08e1d999bce2b64c44605c))
+- change icon example in page of avatar ([b6739cf](https://github.com/Gympass/yoga/commit/b6739cff2d97931a7a3338e27d45f517a24b6443))
+- create component avatar ([58e8dd6](https://github.com/Gympass/yoga/commit/58e8dd6cdf1ac749cdcaa08a5dc1d93747e53aa2))
+- improvements in component avatar ([d58fd3f](https://github.com/Gympass/yoga/commit/d58fd3fafc44811273771c1deb8aa9b31c05a6ab))
+- separete css in blocks ([c3934b2](https://github.com/Gympass/yoga/commit/c3934b255d4e6e7e41ad572a91037084a0677c2c))
+
+## [1.2.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.2.2...@gympass/yoga-labnative@1.2.3) (2021-07-08)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
 ## [1.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.2.1...@gympass/yoga-labnative@1.2.2) (2021-06-30)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
