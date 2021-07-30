@@ -1,5 +1,7 @@
 import React from 'react';
-import styled, { withTheme, css } from 'styled-components';
+import styled, { withTheme } from 'styled-components';
+import { Box } from '@gympass/yoga';
+import { media } from '@gympass/yoga-helpers';
 
 const Wrapper = styled.div`
   display: flex;
@@ -7,83 +9,66 @@ const Wrapper = styled.div`
   align-items: center;
   margin: 30px 0;
 
-  @media (max-width: 425px) {
+  ${media.max('sm')`
     flex-direction: column;
-  }
-`;
-
-const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 20px 0;
-
-  span {
-    padding: 8px 0;
-
-    :nth-child(2) {
-      font-weight: bold;
-    }
-  }
-`;
-
-const Border = styled.div`
-  ${({ theme, value }) => css`
-    height: 20px;
-    width: 20px;
-    border-color: ${theme.yoga.colors.secondary};
-    border-top-left-radius: ${theme.yoga.radii[value]}px;
-    border: 2px;
-    border-style: solid;
-    border-right: none;
-    border-bottom: none;
   `}
 `;
 
-const Shape = ({ theme }) => {
-  return (
-    <Wrapper>
-      <Content>
-        <Border theme={theme} value={0} />
-        <span>Sharp</span>
-        <span>radii.sharp</span>
-        <span>
-          value: <strong> 0 </strong>
-        </span>
-      </Content>
-      <Content>
-        <Border theme={theme} value={1} valueWidth={90} />
-        <span>Xsmall</span>
-        <span>radii.xsmall</span>
-        <span>
-          value: <strong> 4 </strong>
-        </span>
-      </Content>
-      <Content>
-        <Border theme={theme} value={2} valueWidth={90} />
-        <span>Small</span>
-        <span>radii.small</span>
-        <span>
-          value: <strong> 8 </strong>
-        </span>
-      </Content>
-      <Content>
-        <Border theme={theme} value={3} valueWidth={90} />
-        <span>Regular</span>
-        <span>radii.regular</span>
-        <span>
-          value: <strong> 16 </strong>
-        </span>
-      </Content>
-      <Content>
-        <Border theme={theme} value={4} valueWidth={36} />
-        <span>Circle</span>
-        <span>radii.circle</span>
-        <span>
-          value: <strong> 9999 </strong>
-        </span>
-      </Content>
-    </Wrapper>
-  );
-};
+const Content = props => (
+  <Box display="flex" flexDirection="column" pv="xxsmall" {...props} />
+);
+
+const ThemeProp = props => (
+  <Box as="ThemeProp" fs="small" pv="xxsmall" {...props} />
+);
+
+const Border = props => (
+  <Box w={20} h={20} bColor="secondary" bt="medium" bl="medium" {...props} />
+);
+
+const Shape = ({ theme }) => (
+  <Wrapper>
+    <Content>
+      <Border btlr="sharp" />
+      <ThemeProp>Sharp</ThemeProp>
+      <ThemeProp fw="bold">radii.sharp</ThemeProp>
+      <ThemeProp>
+        value: <strong> {theme.yoga.radii.sharp} </strong>
+      </ThemeProp>
+    </Content>
+    <Content>
+      <Border btlr="xsmall" />
+      <ThemeProp>Xsmall</ThemeProp>
+      <ThemeProp fw="bold">radii.xsmall</ThemeProp>
+      <ThemeProp>
+        value: <strong> {theme.yoga.radii.xsmall} </strong>
+      </ThemeProp>
+    </Content>
+    <Content>
+      <Border btlr="small" />
+      <ThemeProp>Small</ThemeProp>
+      <ThemeProp fw="bold">radii.small</ThemeProp>
+      <ThemeProp>
+        value: <strong> {theme.yoga.radii.small} </strong>
+      </ThemeProp>
+    </Content>
+    <Content>
+      <Border btlr="regular" />
+      <ThemeProp>Regular</ThemeProp>
+      <ThemeProp fw="bold">radii.regular</ThemeProp>
+      <ThemeProp>
+        value: <strong> {theme.yoga.radii.regular} </strong>
+      </ThemeProp>
+    </Content>
+    <Content>
+      <Border btlr="circle" />
+      <ThemeProp>Circle</ThemeProp>
+      <ThemeProp fw="bold">radii.circle</ThemeProp>
+      <ThemeProp>
+        value: <strong> {theme.yoga.radii.circle} </strong>
+      </ThemeProp>
+    </Content>
+  </Wrapper>
+);
 
 export default withTheme(Shape);
