@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Result, Avatar } from '@gympass/yoga';
-import { BuildingFilled, Youtube } from '@gympass/yoga-icons';
+import { Result, Avatar, Text } from '@gympass/yoga';
+import { BuildingFilled, Youtube, PinFilled } from '@gympass/yoga-icons';
 import avatar from '../assets/images/avatarIcons/avatar.png';
 import { DocTitle } from '../components';
 
@@ -24,6 +24,53 @@ const attendanceList2 = [
   {
     description: 'Online',
     icon: Youtube,
+  },
+];
+
+const entranceList = [
+  {
+    children: 'Entrance01',
+    icon: PinFilled,
+    variant: 'stamina',
+  },
+  {
+    children: 'Entrance02',
+    variant: 'stamina',
+  },
+  {
+    children: 'Entrance03',
+    variant: 'stamina',
+  },
+];
+
+const activitiesList = [
+  {
+    children: 'Activities 01',
+    variant: 'deep',
+  },
+  {
+    children: '02',
+    variant: 'deep',
+  },
+  {
+    children: '03',
+    variant: 'deep',
+  },
+  {
+    children: '04',
+    variant: 'deep',
+  },
+  {
+    children: '05',
+    variant: 'deep',
+  },
+  {
+    children: '06',
+    variant: 'deep',
+  },
+  {
+    children: '07',
+    variant: 'deep',
   },
 ];
 
@@ -58,6 +105,13 @@ const ResultPage = () => (
         subTitle="Activity"
         divided
       >
+        <Result.Details items={entranceList} dots renderItem={Text.Small} />
+        <Result.Details
+          items={activitiesList}
+          dots
+          limit={3}
+          renderItem={Text.Small}
+        />
         <Result.Button>Link Button</Result.Button>
       </Result>
     </ResultWrapper>
@@ -70,6 +124,13 @@ const ResultPage = () => (
         title="Partner Name"
         divided
       >
+        <Result.Details items={entranceList} dots renderItem={Text.Small} />
+        <Result.Details
+          items={activitiesList}
+          dots
+          limit={3}
+          renderItem={Text.Small}
+        />
         <Result.Button>Upgrade</Result.Button>
       </Result>
     </ResultWrapper>
