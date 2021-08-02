@@ -1,9 +1,33 @@
 import React from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
 import { string, func, number } from 'prop-types';
+import styled from 'styled-components';
 import Box from '../../Box';
 import Image from './Image';
 import Placeholder from './Placeholder';
+
+const BoxWrapper = styled.View`
+  ${({
+    type,
+    width,
+    height,
+    theme: {
+      yoga: {
+        elevations: { large },
+        radii: { small, circle },
+      },
+    },
+  }) => `
+    box-shadow: ${large};
+    elevation: 4;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: ${height}px;
+    width: ${width}px;
+    border-radius: ${type === 'circle' ? circle : small}px;
+  `}
+`;
 
 const Avatar = ({
   src,
@@ -17,15 +41,15 @@ const Avatar = ({
   elevation,
   ...otherProps
 }) => (
-  <Box
-    bgColor="elements.selectionAndIcons"
-    display="flex"
+  <BoxWrapper
+    // bgColor="elements.selectionAndIcons"
+    // display="flex"
     width={width}
     height={height}
-    alignItems="center"
-    justifyContent="center"
-    elevation={elevation}
+    // alignItems="center"
+    // justifyContent="center"
     borderRadius={borderRadius}
+    type={type}
     {...otherProps}
   >
     {src ? (
@@ -33,7 +57,7 @@ const Avatar = ({
     ) : (
       <Placeholder fill={fill} icon={placeholder} />
     )}
-  </Box>
+  </BoxWrapper>
 );
 
 Avatar.propTypes = {
