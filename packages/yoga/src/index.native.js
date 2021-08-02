@@ -17,7 +17,7 @@ import Icon from './Icon';
 import Chips from './Chips';
 import Box from './Box';
 import Avatar from './Avatar';
-import SearchList from './SearchList';
+import Result from './Result';
 
 export {
   ThemeProvider,
@@ -44,5 +44,5 @@ export {
   Chips,
   Box,
   Avatar,
-  SearchList,
+  Result,
 };
