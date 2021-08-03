@@ -10,8 +10,18 @@ const Content = styled.View`
   right: 0;
   display: flex;
   flex-direction: row;
-  margin-left: 10px;
   align-items: center;
+  ${({
+    theme: {
+      yoga: {
+        spacing: { xxxsmall },
+      },
+    },
+  }) => {
+    return `
+      top: ${xxxsmall}
+    `;
+  }}
 `;
 
 const RateValue = styled(Text.Medium)`

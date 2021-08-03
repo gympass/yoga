@@ -6,11 +6,11 @@ import Attendances from './Attendances';
 import Box from '../../Box';
 
 const StyledBox = styled(Box)`
+  width: 100%;
   ${({
     divided,
     theme: {
       yoga: {
-        spacing: { medium },
         colors: { light },
       },
     },

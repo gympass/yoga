@@ -11,7 +11,7 @@ const attendanceList = [
     icon: BuildingFilled,
   },
   {
-    description: 'Attendance 02',
+    description: 'Attendance 02 leticia de souza soares',
     icon: BuildingFilled,
   },
 ];

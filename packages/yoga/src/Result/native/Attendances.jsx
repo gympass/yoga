@@ -1,32 +1,54 @@
 import React from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 import { arrayOf, func, shape, string } from 'prop-types';
 import Icon from '../../Icon';
 import Text from '../../Text';
 import Rate from './Rate';
 
-const List = styled.Text`
+const List = styled(Text.Regular)`
   max-width: 220px;
+  text-align-vertical: center;
 `;
 
-const IconBox = styled.View`
-  display: flex;
-  align-items: center;
-  padding-left: 4px;
-  padding-right: 4px;
-  position: relative;
-  margin-bottom: -1px;
+const ItemSeparator = styled.View`
+  background-color: #7bff66;
+  ${({
+    theme: {
+      yoga: {
+        spacing: { zero, xxxsmall },
+      },
+    },
+  }) => {
+    return `
+      width: ${xxxsmall};
+      height: ${zero};
+    `;
+  }}
 `;
+
+const IconWrapper = styled.View`
+  height: 16px;
+  width: 16px;
+`;
+
 const Attendances = ({ attendances, rate }) => (
   <>
     <List numberOfLines={1} size="xsmall">
       {attendances &&
         attendances.map(({ description, icon }) => (
           <>
-            <IconBox>
-              <Icon as={icon} fill="medium" />
-            </IconBox>
-            <Text.Regular size="xsmall">{description}</Text.Regular>
+            <IconWrapper>
+              <Icon
+                as={icon}
+                fill="medium"
+                width="16px"
+                height="16px"
+                style={{ marginTop: 2 }}
+              />
+            </IconWrapper>
+            <ItemSeparator />
+            {description}
+            <ItemSeparator />
           </>
         ))}
     </List>
@@ -48,4 +70,4 @@ Attendances.defaultProps = {
   rate: undefined,
 };
 
-export default withTheme(Attendances);
+export default Attendances;
