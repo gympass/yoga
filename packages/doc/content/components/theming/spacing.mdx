@@ -1,0 +1,26 @@
+---
+title: 'Spacing'
+metaTitle: 'Theme Spacing'
+metaDescription: 'How spacing are used inside our theme'
+order: 12
+---
+
+## Spacing
+
+Spacing system is vast and comprehensive. There are 10 predefined padding sizes.
+In specific cases, when a huge gap is needed those values can be summed up.
+
+### Usage
+
+This is a simple usage:
+
+```javascript type=highlight
+import styled from 'styled-components';
+import { theme } from '@gympass/yoga';
+
+const MyCoolComponent = styled.div`
+  padding: ${theme.spacing.medium}px;
+`;
+```
+
+<ThemeSpacing />

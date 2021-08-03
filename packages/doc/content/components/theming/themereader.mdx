@@ -1,10 +1,11 @@
 ---
-title: 'Theme Reader'
+title: 'ThemeReader'
 metaTitle: 'ThemeReader'
-metaDescription: 'ThemeReader Helper'
+metaDescription: 'The easiest way to use our theme'
+order: 2
 ---
 
-# Theme Reader
+## Theme Reader
 
 ### Reference
 
@@ -15,7 +16,7 @@ get confusing if you are using it multiple times.
 It has the following signature, exemplified:
 
 ```javascript type=highlight
-theme.spacing.large = (props) => props.theme.yoga.spacing.large
+theme.spacing.large = props => props.theme.yoga.spacing.large;
 ```
 
 ### Usage
@@ -35,14 +36,14 @@ const MyCoolComponent = styled.div`
 But since every selection returns a function, you could do some advanced things
 with it:
 
-> *This example is just to illustrate the capabilities of the helper*
+> _This example is just to illustrate the capabilities of the helper_
 
 ```javascript type=highlight
 import styled from 'styled-components';
 import { theme } from '@gympass/yoga';
 
 const MyCoolComponent = styled.div`
-  margin: ${(props) => {
+  margin: ${props => {
     // We explicitly called the helper.
     const spacings = theme.spacing(props);
 
@@ -51,14 +52,14 @@ const MyCoolComponent = styled.div`
     return spacings[index];
   }}px;
 
-  color: ${(props) => {
+  color: ${props => {
     // Just to exemplify how you can use the helper.
     const values = theme(props);
 
     const color = values.color.primary;
 
     return color;
-  }}
+  }};
 `;
 ```
 
@@ -71,8 +72,8 @@ Using this helper you can make changes like this:
 import styled from 'styled-components';
 
 const MyCoolComponent = styled.div`
-  padding: ${(props) => props.theme.yoga.spacing.large}px;
-  background-color: ${(props) => props.theme.yoga.colors.primary};
+  padding: ${props => props.theme.yoga.spacing.large}px;
+  background-color: ${props => props.theme.yoga.colors.primary};
 `;
 
 // After:

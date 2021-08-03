@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Result, Avatar, Text } from '@gympass/yoga';
-import { BuildingFilled, Youtube, PinFilled } from '@gympass/yoga-icons';
+import { Result, Avatar } from '@gympass/yoga';
+import { BuildingFilled, Youtube } from '@gympass/yoga-icons';
 import avatar from '../assets/images/avatarIcons/avatar.png';
 import { DocTitle } from '../components';
 
@@ -24,22 +24,6 @@ const attendanceList2 = [
   {
     description: 'Online',
     icon: Youtube,
-  },
-];
-
-const entranceList = [
-  {
-    children: 'Entrance01',
-    icon: PinFilled,
-    variant: 'stamina',
-  },
-  {
-    children: 'Entrance02',
-    variant: 'stamina',
-  },
-  {
-    children: 'Entrance03',
-    variant: 'stamina',
   },
 ];
 
@@ -71,6 +55,22 @@ const activitiesList = [
   {
     children: '07',
     variant: 'deep',
+  },
+];
+
+const entranceList = [
+  {
+    children: 'Entrance01',
+    icon: PinFilled,
+    variant: 'stamina',
+  },
+  {
+    children: 'Entrance02',
+    variant: 'stamina',
+  },
+  {
+    children: 'Entrance03',
+    variant: 'stamina',
   },
 ];
 

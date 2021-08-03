@@ -19,6 +19,7 @@ import Icon from './Icon';
 import Chips from './Chips';
 import Box from './Box';
 import Result from './Result';
+import Snackbar from './Snackbar';
 
 export {
   ThemeProvider,
@@ -49,5 +50,6 @@ export {
   Icon,
   Chips,
   Box,
+  Snackbar,
   Result,
 };

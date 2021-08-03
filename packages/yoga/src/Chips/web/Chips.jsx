@@ -53,7 +53,7 @@ const Wrapper = styled.button`
       line-height: ${lineHeights.xsmall}px;
 
       :not(:last-child) {
-        margin-right: ${spacing.small}px;
+        margin-right: ${spacing.xxsmall}px;
       }
 
       &[disabled] {
