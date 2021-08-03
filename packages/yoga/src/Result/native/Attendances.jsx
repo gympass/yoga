@@ -1,71 +1,37 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import { arrayOf, func, shape, string } from 'prop-types';
 import Icon from '../../Icon';
 import Text from '../../Text';
 import Rate from './Rate';
 
-const Content = styled.View`
-  width: 100%;
+const List = styled.Text`
+  max-width: 220px;
+`;
+
+const IconBox = styled.View`
   display: flex;
-  flex-direction: row;
   align-items: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  position: relative;
+  margin-bottom: -1px;
 `;
-
-const Description = styled(Text.Regular)`
-  ${({
-    theme: {
-      yoga: {
-        lineHeights: { xsmall },
-        spacing: { xxxsmall },
-      },
-    },
-  }) => {
-    return `
-      line-height:${xsmall};
-      margin-left:${xxxsmall};
-    `;
-  }}
-`;
-
-const Item = styled.View`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  ${({
-    theme: {
-      yoga: {
-        spacing: { xxxsmall },
-      },
-    },
-  }) => {
-    return `
-      margin-right:${xxxsmall};
-    `;
-  }}
-`;
-
-const List = styled.View`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-`;
-
 const Attendances = ({ attendances, rate }) => (
-  <Content>
-    <List>
+  <>
+    <List numberOfLines={1} size="xsmall">
       {attendances &&
         attendances.map(({ description, icon }) => (
-          <Item>
-            <Icon as={icon} width="xsmall" height="xsmall" fill="medium" />
-            <Description numberOfLines={1} number size="xsmall">
-              {description}
-            </Description>
-          </Item>
+          <>
+            <IconBox>
+              <Icon as={icon} fill="medium" />
+            </IconBox>
+            <Text.Regular size="xsmall">{description}</Text.Regular>
+          </>
         ))}
     </List>
     {rate && <Rate rate={rate} />}
-  </Content>
+  </>
 );
 
 Attendances.propTypes = {
@@ -82,4 +48,4 @@ Attendances.defaultProps = {
   rate: undefined,
 };
 
-export default Attendances;
+export default withTheme(Attendances);

@@ -16,7 +16,6 @@ const StyledBox = styled(Box)`
     },
   }) => {
     return `
-      margin-left:${medium};
        ${
          divided
            ? `
@@ -30,6 +29,7 @@ const StyledBox = styled(Box)`
 `;
 
 const Content = styled.View`
+  flex: 1;
   ${({
     theme: {
       yoga: {

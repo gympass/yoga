@@ -6,6 +6,8 @@ import Icon from '../../Icon';
 import Text from '../../Text';
 
 const Content = styled.View`
+  position: absolute;
+  right: 0;
   display: flex;
   flex-direction: row;
   margin-left: 10px;
