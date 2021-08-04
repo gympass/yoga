@@ -1,0 +1,77 @@
+---
+title: 'Overflow'
+metaTitle: 'System - Overflow'
+metaDescription: '@gympass/yoga-system overflow'
+---
+
+## overflow
+
+```javascript state
+const Square = styled.p`
+  width: 200px;
+  height: 50px;
+
+  ${overflow}
+`;
+
+render(() => {
+  return (
+  <Square of="scroll">
+     This is a description to show the example of using the overflow property 
+     with the scroll value     
+  </Square>
+  );
+});
+```
+
+_For React Native users, we strongly recommend the usage of shorthands due to
+[some](https://github.com/facebook/react-native/issues/12469) &nbsp;
+[conflicts](https://github.com/styled-components/styled-components/issues/403)
+&nbsp; [you could face](https://github.com/hyrwork/react-native-row/issues/6)_
+
+The `overflows` module has all the listed above
+
+<table>
+  <thead>
+    <tr>
+      <th>Module</th>
+      <th>Prop</th>
+      <th>CSS Property</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <inlineCode>overflow</inlineCode>
+      </td>
+      <td>
+        <inlineCode>overflow</inlineCode>, <inlineCode>of</inlineCode>
+      </td>
+      <td>
+        <inlineCode>overflow</inlineCode>
+      </td>
+    </tr>
+     <tr>
+      <td>
+        <inlineCode>overflowY</inlineCode>
+      </td>
+      <td>
+        <inlineCode>overflowY</inlineCode>, <inlineCode>oy</inlineCode>
+      </td>
+      <td>
+        <inlineCode>overflow-y</inlineCode>
+      </td>
+    </tr>
+     <tr>
+      <td>
+        <inlineCode>overflowX</inlineCode>
+      </td>
+      <td>
+        <inlineCode>overflowX</inlineCode>, <inlineCode>ox</inlineCode>
+      </td>
+      <td>
+        <inlineCode>overflow-x</inlineCode>
+      </td>
+    </tr>
+  </tbody>
+</table>
