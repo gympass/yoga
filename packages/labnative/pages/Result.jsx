@@ -7,12 +7,12 @@ import { DocTitle } from '../components';
 
 const attendanceList = [
   {
-    description: 'Attendance 01',
+    description: 'In-Person',
     icon: BuildingFilled,
   },
   {
-    description: 'Attendance 02',
-    icon: BuildingFilled,
+    description: 'Online',
+    icon: Youtube,
   },
 ];
 
@@ -27,33 +27,17 @@ const attendanceList2 = [
   },
 ];
 
-const entranceList = [
-  {
-    children: 'Entrance01',
-    icon: PinFilled,
-    variant: 'stamina',
-  },
-  {
-    children: 'Entrance02',
-    variant: 'stamina',
-  },
-  {
-    children: 'Entrance03',
-    variant: 'stamina',
-  },
-];
-
 const activitiesList = [
   {
-    children: 'Activities 01',
+    children: 'Yoga',
     variant: 'deep',
   },
   {
-    children: '02',
+    children: 'Meditation',
     variant: 'deep',
   },
   {
-    children: '03',
+    children: 'Pilates',
     variant: 'deep',
   },
   {
@@ -71,6 +55,25 @@ const activitiesList = [
   {
     children: '07',
     variant: 'deep',
+  },
+];
+
+const entranceList = [
+  {
+    children: 'From 7:30 am to 9:00 pm',
+    variant: 'stamina',
+  },
+];
+
+const entranceList2 = [
+  {
+    children: '300ft',
+    variant: 'stamina',
+    icon: PinFilled,
+  },
+  {
+    children: 'From 7:30 am to 9:00 pm',
+    variant: 'stamina',
   },
 ];
 
@@ -99,13 +102,12 @@ const ResultPage = () => (
       <DocTitle>Default Result</DocTitle>
       <Result
         rate="5.0"
-        avatar={<Avatar />}
+        avatar={<Avatar src={avatar} />}
         attendances={attendanceList}
-        title="Partner Name"
-        subTitle="Activity"
+        title="Ariel Malik"
         divided
       >
-        <Result.Details items={entranceList} dots renderItem={Text.Small} />
+        <Result.Details items={entranceList2} dots renderItem={Text.Small} />
         <Result.Details
           items={activitiesList}
           dots
@@ -121,7 +123,7 @@ const ResultPage = () => (
         rate="New"
         avatar={<Avatar.Circle src={avatar} />}
         attendances={attendanceList2}
-        title="Partner Name"
+        title="Ariel Malik"
         divided
       >
         <Result.Details items={entranceList} dots renderItem={Text.Small} />

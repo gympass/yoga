@@ -74,7 +74,9 @@ const Result = ({
     <Content>
       <Attendances attendances={attendances} rate={rate} />
       <Title>{title}</Title>
-      {subTitle && <Text.Small variant="stamina">{subTitle}</Text.Small>}
+      {subTitle && subTitle !== '' && (
+        <Text.Small variant="stamina">{subTitle}</Text.Small>
+      )}
       {children}
     </Content>
   </StyledBox>
