@@ -75,10 +75,6 @@ const entranceList2 = [
     children: 'From 7:30 am to 9:00 pm',
     variant: 'stamina',
   },
-  {
-    children: 'Entrance03',
-    variant: 'stamina',
-  },
 ];
 
 const tagsList = [
@@ -90,6 +86,13 @@ const tagsList = [
     children: 'Plan x Product availability',
     variant: 'informative',
   },
+  {
+    children: 'Restriction',
+    variant: 'attention',
+  },
+];
+
+const tagsList2 = [
   {
     children: 'Restriction',
     variant: 'attention',
@@ -144,7 +147,6 @@ const ResultPage = () => (
         avatar={<Avatar.Circle src={avatar} />}
         attendances={attendanceList2}
         title="Ariel Malik"
-        divided
       >
         <Result.Details items={entranceList} dots renderItem={Text.Small} />
         <Result.Details
@@ -153,7 +155,7 @@ const ResultPage = () => (
           limit={3}
           renderItem={Text.Small}
         />
-        <Result.Tags items={tagsList} />
+        <Result.Tags items={tagsList2} />
         <Result.Button>Upgrade</Result.Button>
       </Result>
     </ResultWrapper>
