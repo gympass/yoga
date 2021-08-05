@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { arrayOf, oneOfType, shape, number, string, any } from 'prop-types';
+import { arrayOf, oneOfType, shape, number, string } from 'prop-types';
 import withToken from './withToken';
 
 import Tag from './Tag';
@@ -60,7 +60,7 @@ Colors.propTypes = {
       id: oneOfType([string, number]),
       key: string,
       alias: string,
-      value: any,
+      value: oneOfType([string, number]),
     }),
   ).isRequired,
 };

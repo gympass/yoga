@@ -1,5 +1,5 @@
 import React from 'react';
-import { bool, string, objectOf, any } from 'prop-types';
+import { bool, string, shape } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Check } from '@gympass/yoga-icons';
@@ -72,8 +72,8 @@ const CheckMark = styled.div`
     height: ${checkbox.size}px;
 
     margin-right: ${checkbox.margin.right}px;
-    
-    background-color: ${bgColor}; 
+
+    background-color: ${bgColor};
 
     border-radius: ${checkbox.border.radius}px;
     border-width: ${checkbox.border.width}px;
@@ -167,7 +167,7 @@ const CheckboxStyled = styled.div`
         ${Shadow} {
           background-color: ${hexToRgb(shadowColor(), 0.25)};
 
-          box-shadow: 0 0 0 ${shadowSize}px 
+          box-shadow: 0 0 0 ${shadowSize}px
             ${hexToRgb(shadowColor(), 0.25)};
         }
       }
@@ -176,7 +176,7 @@ const CheckboxStyled = styled.div`
         ${Shadow} {
           background-color: ${hexToRgb(shadowColor(), 0.5)};
 
-          box-shadow: 0 0 0 ${shadowSize}px 
+          box-shadow: 0 0 0 ${shadowSize}px
             ${hexToRgb(shadowColor(), 0.5)};
         }
       }
@@ -185,7 +185,7 @@ const CheckboxStyled = styled.div`
         ${Shadow} {
           background-color: ${hexToRgb(shadowColor(), 0.75)};
 
-          box-shadow: 0 0 0 ${shadowSize}px 
+          box-shadow: 0 0 0 ${shadowSize}px
             ${hexToRgb(shadowColor(), 0.75)};
         }
       }
@@ -284,7 +284,7 @@ Checkbox.propTypes = {
   inverted: bool,
   error: string,
   /** set a style to the checkbox container */
-  style: objectOf(any),
+  style: shape({}),
   className: string,
 };
 
