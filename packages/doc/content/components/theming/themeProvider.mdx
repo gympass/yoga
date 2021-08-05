@@ -1,10 +1,11 @@
 ---
 title: 'ThemeProvider'
 metaTitle: 'ThemeProvider'
-metaDescription: 'ThemeProvider Component'
+metaDescription: 'Making our decisions available to all components'
+order: 1
 ---
 
-# ThemeProvider
+## ThemeProvider
 
 ### Reference
 
@@ -27,22 +28,6 @@ const App = () => (
   </ThemeProvider>
 );
 ```
-
-### Props
-
-In this component we have 2 props, both are very important. The first one is the
-very known `theme` prop from type `string`.
-
-In this prop you can pass one of our 3 available themes:
-
-- `EndUser`
-- `Corporate`
-- `Gyms`
-
-These themes apply all global branding rules merging them with culture rules of
-and specific locale like `zh-cn` (china) for instance, but for this to happen
-We have to combine `theme` prop with the optional `locale` prop, from type
-`string` as well.
 
 Although Yoga supports `locale`, we don't have any design definitions for
 specific locale design-tokens yet, so the `ThemeProvider` components only uses

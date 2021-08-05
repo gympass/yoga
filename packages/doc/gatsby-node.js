@@ -99,7 +99,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 };
 
-exports.onCreateWebpackConfig = ({ actions }) => {
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
@@ -109,4 +109,17 @@ exports.onCreateWebpackConfig = ({ actions }) => {
       },
     },
   });
+
+  if (stage === 'build-html') {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /react-inspector/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    });
+  }
 };

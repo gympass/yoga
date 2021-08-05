@@ -1,0 +1,25 @@
+---
+title: 'Breakpoints'
+metaTitle: 'Theme Breakpoints'
+metaDescription: 'How breakpoints are used inside our theme'
+order: 4
+---
+
+## Breakpoints
+
+A breakpoint maps the screen size with its layout requirements.
+
+### Usage
+
+This is a simple usage:
+
+```javascript type=highlight
+import styled from 'styled-components';
+import { theme } from '@gympass/yoga';
+
+const MyCoolComponent = styled.div`
+  width: ${theme.breakpoints.xxs}px;
+`;
+```
+
+<ThemeBreakpoints />

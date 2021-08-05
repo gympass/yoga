@@ -1,0 +1,26 @@
+---
+title: 'Line-heights'
+metaTitle: 'Theme LineHeights'
+metaDescription: 'How line heights are used inside our theme'
+order: 10
+---
+
+## Line-Heights
+
+Line heights refers to the height of a typography and it indicates how tall or
+short each glyph in a typeface will be.
+
+### Usage
+
+This is a simple usage:
+
+```javascript type=highlight
+import styled from 'styled-components';
+import { theme } from '@gympass/yoga';
+
+const MyCoolComponent = styled.div`
+  line-height: ${theme.lineHeights.small}px;
+`;
+```
+
+<ThemeLineHeights />
