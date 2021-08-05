@@ -42,10 +42,8 @@ const withTouchable = Component => {
   WithTouchable.defaultProps = {
     onPressIn: () => {},
     onPressOut: () => {},
-    onChange: () => {},
-    get onPress() {
-      return this.onChange;
-    },
+    onChange: undefined,
+    onPress: undefined,
   };
 
   return WithTouchable;

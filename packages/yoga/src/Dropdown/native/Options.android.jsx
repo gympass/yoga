@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { func, arrayOf, string, shape, number, oneOfType } from 'prop-types';
-import { ScrollView, TouchableWithoutFeedback } from 'react-native';
+import { TouchableWithoutFeedback } from 'react-native';
 import { Text, List } from '../..';
 
 const Option = styled(List.Item)`
@@ -46,31 +46,30 @@ const OptionText = styled.Text`
 `;
 
 const Options = ({ options, selectedOption, onSelect }) => (
-  <ScrollView contentContainerStyle={{ width: '100%', height: 60 * 3.6 }}>
-    <List
-      data={options.map(item => item)}
-      keyExtractor={(_, index) => index.toString()}
-      renderItem={({ item }) => (
-        <TouchableWithoutFeedback onPress={() => onSelect(item)}>
-          <Option
-            key={item.value}
+  <List
+    style={{ height: 60 * 3.6 }}
+    data={options.map(item => item)}
+    keyExtractor={(_, index) => index.toString()}
+    renderItem={({ item }) => (
+      <TouchableWithoutFeedback onPress={() => onSelect(item)}>
+        <Option
+          key={item.value}
+          isSelected={selectedOption && selectedOption.value === item.value}
+        >
+          <OptionText
             isSelected={selectedOption && selectedOption.value === item.value}
+            as={
+              selectedOption && selectedOption.value === item.value
+                ? Text.Bold
+                : Text.Regular
+            }
           >
-            <OptionText
-              isSelected={selectedOption && selectedOption.value === item.value}
-              as={
-                selectedOption && selectedOption.value === item.value
-                  ? Text.Bold
-                  : Text.Regular
-              }
-            >
-              {item.label}
-            </OptionText>
-          </Option>
-        </TouchableWithoutFeedback>
-      )}
-    />
-  </ScrollView>
+            {item.label}
+          </OptionText>
+        </Option>
+      </TouchableWithoutFeedback>
+    )}
+  />
 );
 
 const optionShape = {
