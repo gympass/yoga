@@ -9,6 +9,7 @@ export const StyledTag = styled.View`
 
   ${({
     variant,
+    small,
     theme: {
       yoga: {
         colors: {
@@ -22,15 +23,30 @@ export const StyledTag = styled.View`
     },
   }) => `
     width: auto;
-    padding:
-      ${tag.padding.top}px
-      ${tag.padding.right}px
-      ${tag.padding.bottom}px
-      ${tag.padding.left}px;
+     ${
+       small
+         ? `
+            padding:
+              0
+              ${tag.padding.small.right}px
+              0
+              ${tag.padding.small.left}px;
+          `
+         : `
+            padding:
+              ${tag.padding.default.top}px
+              ${tag.padding.default.right}px
+              ${tag.padding.default.bottom}px
+              ${tag.padding.default.left}px;
+          `
+     }
+    
 
     border-radius: ${tag.border.radius}px;
     border-width: ${tag.border.width}px;
     border-color: ${borderColor.dark};
+    
+    
   `}
 `;
 

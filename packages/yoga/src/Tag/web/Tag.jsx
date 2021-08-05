@@ -11,6 +11,7 @@ const StyledTag = styled.div`
 
   ${({
     variant,
+    small,
     theme: {
       yoga: {
         colors: {
@@ -25,12 +26,25 @@ const StyledTag = styled.div`
       },
     },
   }) => `
-    padding:
-      ${tag.padding.top}px
-      ${tag.padding.right}px
-      ${tag.padding.bottom}px
-      ${tag.padding.left}px;
+    ${
+      small
+        ? `
+               padding:
+                  0
+                  ${tag.padding.small.right}px
+                  0
+                  ${tag.padding.small.left}px;
+          `
+        : `
+                padding:
+                  ${tag.padding.default.top}px
+                  ${tag.padding.default.right}px
+                  ${tag.padding.default.bottom}px
+                  ${tag.padding.default.left}px;
 
+          `
+    }
+   
     color: ${color.dark};
     border-radius: ${tag.border.radius}px;
     border-width: ${tag.border.width}px;

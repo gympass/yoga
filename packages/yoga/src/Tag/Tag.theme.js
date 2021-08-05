@@ -11,10 +11,16 @@ const Tag = ({ spacing, fontSizes, fontWeights, radii, borders }) => ({
     weight: fontWeights.medium,
   },
   padding: {
-    top: spacing.xxxsmall,
-    right: spacing.xxsmall,
-    bottom: spacing.xxxsmall,
-    left: spacing.xxsmall,
+    default: {
+      top: spacing.xxxsmall,
+      right: spacing.xxsmall,
+      bottom: spacing.xxxsmall,
+      left: spacing.xxsmall,
+    },
+    small: {
+      right: spacing.xxxsmall,
+      left: spacing.xxxsmall,
+    },
   },
   border: {
     width: borders.small,
