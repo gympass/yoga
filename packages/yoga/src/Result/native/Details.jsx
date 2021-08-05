@@ -14,14 +14,25 @@ import Text from '../../Text';
 import Icon from '../../Icon';
 
 const Container = styled.Text`
-  max-width: 220px;
-  text-align-vertical: bottom;
+  max-width: 288px;
+  text-align-vertical: center;
 `;
 
 const Wrapper = styled.View`
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  ${({
+    theme: {
+      yoga: {
+        spacing: { xxxsmall },
+      },
+    },
+  }) => `
+    margin-top: ${xxxsmall}px;
+  `}
+
 `;
 const IconWrapper = styled.View`
   ${({
