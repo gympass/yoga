@@ -32,7 +32,6 @@ const Wrapper = styled.View`
   }) => `
     margin-top: ${xxxsmall}px;
   `}
-
 `;
 const IconWrapper = styled.View`
   ${({
