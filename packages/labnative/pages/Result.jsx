@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Result, Avatar, Text } from '@gympass/yoga';
-import { BuildingFilled, Youtube, PinFilled } from '@gympass/yoga-icons';
+import {
+  BuildingFilled,
+  Youtube,
+  PinFilled,
+  SmartphoneFilled,
+} from '@gympass/yoga-icons';
 import avatar from '../assets/images/avatarIcons/avatar.png';
 import { DocTitle } from '../components';
 
@@ -27,10 +32,24 @@ const attendanceList2 = [
   },
 ];
 
+const entranceListExampleApp = [
+  {
+    children: 'Android & IOS',
+    icon: SmartphoneFilled,
+  },
+];
+
+const activitieListExampleApp = [
+  {
+    children: 'Therapy',
+    variant: 'deep',
+  },
+];
 const activitiesList = [
   {
     children: 'Yoga',
     variant: 'deep',
+    icon: PinFilled,
   },
   {
     children: 'Meditation',
@@ -83,10 +102,6 @@ const tagsList = [
     variant: 'informative',
   },
   {
-    children: 'Plan x Product availability',
-    variant: 'informative',
-  },
-  {
     children: 'Restriction',
     variant: 'attention',
   },
@@ -127,17 +142,18 @@ const ResultPage = () => (
         avatar={<Avatar src={avatar} />}
         attendances={attendanceList}
         title="Ariel Malik"
+        subTitle="Personal"
         divided
       >
         <Result.Details items={entranceList2} dots renderItem={Text.Small} />
         <Result.Details
           items={activitiesList}
+          renderItem={Text.Small}
           dots
           limit={3}
-          renderItem={Text.Small}
         />
         <Result.Tags items={tagsList} />
-        <Result.Button>Link Button</Result.Button>
+        <Result.Button>Select</Result.Button>
       </Result>
     </ResultWrapper>
     <ResultWrapper>
@@ -157,6 +173,25 @@ const ResultPage = () => (
         />
         <Result.Tags items={tagsList2} />
         <Result.Button>Upgrade</Result.Button>
+      </Result>
+    </ResultWrapper>
+    <ResultWrapper>
+      <Result
+        rate="5.0"
+        avatar={<Avatar.Circle src={avatar} />}
+        attendances={attendanceList2}
+        title="Zenklub"
+      >
+        <Result.Details
+          items={entranceListExampleApp}
+          renderItem={Text.Small}
+          dots
+        />
+        <Result.Details
+          items={activitieListExampleApp}
+          renderItem={Text.Small}
+          dots
+        />
       </Result>
     </ResultWrapper>
   </ScrollView>

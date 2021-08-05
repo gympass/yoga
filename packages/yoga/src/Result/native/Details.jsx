@@ -135,9 +135,31 @@ const ResultDetails = ({ items, limit, dots, renderItem: Item }) => {
 ResultDetails.displayName = 'Result.Details';
 
 ResultDetails.propTypes = {
+  /** Items to render in the component.For example:
+   * items = {[
+            {
+              children : "Children here"
+              icon ={<Icon/>}
+            }
+        ]}
+   * */
   items: arrayOf(shape({})),
+  /** If has limit of itens to show in component,will show de + 4 for example.
+   * Not send the limit will be add the ellipsis(...) if exceed the max width of the component.
+   * */
   limit: number,
+  /** If shows the dot separator between the itens */
   dots: bool,
+  /** The component that is necessary to render the item of the list.
+   * Can send like this
+   * renderItem={({children,icon})=>(
+          <Text.Small>
+            {children}
+          </Text.Small>
+        )}
+   or
+   renderItem={Text.Small}
+   * */
   renderItem: oneOfType([node, func]),
 };
 

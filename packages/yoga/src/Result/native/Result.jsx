@@ -83,17 +83,24 @@ const Result = ({
 );
 
 Result.propTypes = {
+  /** The component Avatar */
   avatar: func.isRequired,
+  /** A list with the attendances */
   attendances: arrayOf(
     shape({
       description: string,
       icon: func,
     }),
   ).isRequired,
+  /** The evaluation of the partner */
   rate: string,
+  /** The main title */
   title: string.isRequired,
+  /** The text below the main title */
   subTitle: string,
+  /** If it is to show the divide in the bottom */
   divided: boolean,
+  /** The chidren necessary */
   children: node,
 };
 
