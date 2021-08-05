@@ -24,7 +24,7 @@ describe('overflow', () => {
 
   describe('overflow', () => {
     it('Should return values for overflow prop', () => {
-      const expectedDisplay = css({ overflow: 'scroll' });
+      const expectedOverflow = css({ overflow: 'scroll' });
 
       const ofProp = overflow({ of: 'scroll' });
       const overflowProp = overflow({ overflow: 'scroll' });
@@ -33,13 +33,13 @@ describe('overflow', () => {
 
       const ofOptions = [ofProp, overflowProp];
 
-      ofOptions.map(c => expect(c).toStrictEqual(expectedDisplay));
+      ofOptions.map(c => expect(c).toStrictEqual(expectedOverflow));
     });
   });
 
   describe('overflowX', () => {
     it('Should return values for overflow-x prop', () => {
-      const expectedDisplay = css({ overflowX: 'auto' });
+      const expectedOverflow = css({ overflowX: 'auto' });
 
       const oxProp = overflowX({ ox: 'auto' });
       const overflowXProp = overflowX({ overflowX: 'auto' });
@@ -48,13 +48,13 @@ describe('overflow', () => {
 
       const oxOptions = [oxProp, overflowXProp];
 
-      oxOptions.map(c => expect(c).toStrictEqual(expectedDisplay));
+      oxOptions.map(c => expect(c).toStrictEqual(expectedOverflow));
     });
   });
 
   describe('overflowY', () => {
     it('Should return values for overflow-y prop', () => {
-      const expectedDisplay = css({ overflowY: 'auto' });
+      const expectedOverflow = css({ overflowY: 'auto' });
 
       const oyProp = overflowY({ oy: 'auto' });
       const overflowYProp = overflowY({ overflowY: 'auto' });
@@ -63,7 +63,7 @@ describe('overflow', () => {
 
       const oyOptions = [oyProp, overflowYProp];
 
-      oyOptions.map(c => expect(c).toStrictEqual(expectedDisplay));
+      oyOptions.map(c => expect(c).toStrictEqual(expectedOverflow));
     });
   });
 });
