@@ -2,8 +2,10 @@ import React from 'react';
 import { render } from '@testing-library/react-native';
 
 import { BuildingFilled } from '@gympass/yoga-icons';
-import { ThemeProvider, Result } from '../../index.native';
+import { ThemeProvider, Result } from '../..';
+
 import Avatar from '../../Avatar';
+import Text from '../../Text';
 
 const attendanceList = [
   {
@@ -13,6 +15,43 @@ const attendanceList = [
   {
     description: 'Attendance 02',
     icon: BuildingFilled,
+  },
+];
+
+const entranceList = [
+  {
+    children: 'From 7:30 am to 9:00 pm',
+    variant: 'stamina',
+  },
+];
+
+const activitiesList = [
+  {
+    children: 'Yoga',
+    variant: 'deep',
+  },
+  {
+    children: 'Meditation',
+    variant: 'deep',
+  },
+  {
+    children: 'Pilates',
+    variant: 'deep',
+  },
+  {
+    children: '04',
+    variant: 'deep',
+  },
+];
+
+const tagsList = [
+  {
+    children: 'Plan x Product availability',
+    variant: 'informative',
+  },
+  {
+    children: 'Restriction',
+    variant: 'attention',
   },
 ];
 
@@ -28,6 +67,14 @@ describe('<Result />', () => {
           subTitle="Activity"
           divided
         >
+          <Result.Details items={entranceList} dots renderItem={Text.Small} />
+          <Result.Details
+            items={activitiesList}
+            dots
+            limit={3}
+            renderItem={Text.Small}
+          />
+          <Result.Tags items={tagsList} />
           <Result.Button>Link Button</Result.Button>
         </Result>
       </ThemeProvider>,

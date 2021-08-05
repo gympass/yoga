@@ -154,7 +154,7 @@ exports[`<Result /> should match snapshot 1`] = `
               "fontFamily": "Rubik",
               "fontSize": 12,
               "fontWeight": "400",
-              "maxWidth": 220,
+              "maxWidth": 288,
             },
           ]
         }
@@ -248,7 +248,6 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#7bff66",
                 "height": 0,
                 "width": 4,
               },
@@ -260,7 +259,6 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#7bff66",
                 "height": 0,
                 "width": 4,
               },
@@ -355,7 +353,6 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#7bff66",
                 "height": 0,
                 "width": 4,
               },
@@ -367,7 +364,6 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
-                "backgroundColor": "#7bff66",
                 "height": 0,
                 "width": 4,
               },
@@ -511,6 +507,371 @@ exports[`<Result /> should match snapshot 1`] = `
       >
         Activity
       </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "row",
+              "marginTop": 4,
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "maxWidth": 288,
+                "textAlignVertical": "center",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                },
+              ]
+            }
+            variant="stamina"
+          >
+            From 7:30 am to 9:00 pm
+          </Text>
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "row",
+              "marginTop": 4,
+            },
+          ]
+        }
+      >
+        <Text
+          numberOfLines={1}
+          style={
+            Array [
+              Object {
+                "maxWidth": 288,
+                "textAlignVertical": "center",
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#6B6B78",
+                  "fontFamily": "Rubik",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                },
+              ]
+            }
+            variant="deep"
+          >
+            Yoga
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 4,
+                  "width": 4,
+                },
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#6B6B78",
+                  "fontFamily": "Rubik",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "marginLeft": 4,
+                  "marginRight": 4,
+                },
+              ]
+            }
+            variant="deep"
+          >
+            •
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 4,
+                  "width": 4,
+                },
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#6B6B78",
+                  "fontFamily": "Rubik",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                },
+              ]
+            }
+            variant="deep"
+          >
+            Meditation
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 4,
+                  "width": 4,
+                },
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#6B6B78",
+                  "fontFamily": "Rubik",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "marginLeft": 4,
+                  "marginRight": 4,
+                },
+              ]
+            }
+            variant="deep"
+          >
+            •
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 4,
+                  "width": 4,
+                },
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#6B6B78",
+                  "fontFamily": "Rubik",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                },
+              ]
+            }
+            variant="deep"
+          >
+            Pilates
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 4,
+                  "width": 4,
+                },
+              ]
+            }
+          />
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#6B6B78",
+                  "fontFamily": "Rubik",
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 20,
+                  "marginLeft": 4,
+                  "marginRight": 4,
+                },
+              ]
+            }
+            variant="deep"
+          >
+            + 
+            01
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 4,
+                  "width": 4,
+                },
+              ]
+            }
+          />
+        </Text>
+      </View>
+      <ScrollView
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        style={
+          Array [
+            Object {
+              "display": "flex",
+              "flexDirection": "row",
+              "marginTop": 8,
+            },
+          ]
+        }
+      >
+        <View
+          small={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#E0DFFF",
+                "borderColor": "#E0DFFF",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "justifyContent": "center",
+                "paddingBottom": 0,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 0,
+                "width": "auto",
+              },
+              Object {
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="informative"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              inverted={false}
+              light={false}
+              size="medium"
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 16,
+                    "fontWeight": "400",
+                    "lineHeight": 24,
+                  },
+                  Object {
+                    "color": "#231B22",
+                    "fontSize": 12,
+                    "fontWeight": "500",
+                    "lineHeight": 16,
+                  },
+                ]
+              }
+            >
+              Plan x Product availability
+            </Text>
+          </View>
+        </View>
+        <View
+          small={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#FCD6C3",
+                "borderColor": "#FCD6C3",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "justifyContent": "center",
+                "paddingBottom": 0,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 0,
+                "width": "auto",
+              },
+              Object {
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="attention"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              inverted={false}
+              light={false}
+              size="medium"
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 16,
+                    "fontWeight": "400",
+                    "lineHeight": 24,
+                  },
+                  Object {
+                    "color": "#231B22",
+                    "fontSize": 12,
+                    "fontWeight": "500",
+                    "lineHeight": 16,
+                  },
+                ]
+              }
+            >
+              Restriction
+            </Text>
+          </View>
+        </View>
+      </ScrollView>
       <TouchableWithoutFeedback
         style={
           Array [
