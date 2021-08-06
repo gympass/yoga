@@ -37,6 +37,7 @@ module.exports = {
       plugins: [
         'import-glob',
         '@babel/plugin-transform-flow-strip-types',
+        ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
         ['@babel/plugin-proposal-private-methods', { loose: true }],
       ],
       presets: [
