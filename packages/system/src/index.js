@@ -6,3 +6,4 @@ export * from './layout';
 export * from './spacing';
 export * from './system';
 export * from './typography';
+export * from './overflow';
