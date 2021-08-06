@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.2.0...@gympass/yoga-system@0.3.0) (2021-08-06)
+
+
+### Features
+
+* **overflow:** create a new overflow prop to component box ([c7d2bb1](https://github.com/Gympass/yoga/commit/c7d2bb12d932e6d2079f6a3653fb00278aa39931))
+
+
+
+
+
 # [0.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.1.1...@gympass/yoga-system@0.2.0) (2021-06-30)
 
 
