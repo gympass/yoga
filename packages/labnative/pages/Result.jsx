@@ -134,7 +134,7 @@ const ResultWrapper = styled.View`
   justify-content: space-between;
   flex-direction: column;
 
-  padding: 0 50px;
+  padding: 0 10px;
   margin-bottom: 10px;
 
   width: 100%;
@@ -171,6 +171,7 @@ const ResultPage = () => (
         avatar={<Avatar.Circle src={avatar} />}
         attendances={attendanceList2}
         title="Ariel Malik"
+        divided
       >
         <Result.Details items={entranceList} dots renderItem={Text.Small} />
         <Result.Details
