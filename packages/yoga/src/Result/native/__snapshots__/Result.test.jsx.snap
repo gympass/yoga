@@ -144,338 +144,357 @@ exports[`<Result /> should match snapshot 1`] = `
         ]
       }
     >
-      <Text
-        numberOfLines={1}
-        size="xsmall"
-        style={
-          Array [
-            Object {
-              "color": "#231B22",
-              "fontFamily": "Rubik",
-              "fontSize": 12,
-              "fontWeight": "400",
-              "maxWidth": 288,
-            },
-          ]
-        }
-        textAlignVertical="bottom"
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "height": 16,
-                "width": 16,
-              },
-            ]
-          }
-        >
-          <RNSVGSvgView
-            bbHeight="100%"
-            bbWidth="100%"
-            fill="#9898A6"
-            focusable={false}
-            height="100%"
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "transparent",
-                  "borderWidth": 0,
-                },
-                Object {
-                  "marginTop": 3,
-                },
-                Object {
-                  "opacity": 1,
-                },
-                Object {
-                  "flex": 0,
-                  "height": "100%",
-                  "width": "100%",
-                },
-              ]
-            }
-            width="100%"
-          >
-            <RNSVGGroup
-              fill={
-                Array [
-                  0,
-                  4288190630,
-                ]
-              }
-              fillOpacity={1}
-              fillRule={1}
-              font={Object {}}
-              matrix={
-                Array [
-                  1,
-                  0,
-                  0,
-                  1,
-                  0,
-                  0,
-                ]
-              }
-              opacity={1}
-              originX={0}
-              originY={0}
-              propList={
-                Array [
-                  "fill",
-                ]
-              }
-              rotation={0}
-              scaleX={1}
-              scaleY={1}
-              skewX={0}
-              skewY={0}
-              stroke={null}
-              strokeDasharray={null}
-              strokeDashoffset={null}
-              strokeLinecap={0}
-              strokeLinejoin={0}
-              strokeMiterlimit={4}
-              strokeOpacity={1}
-              strokeWidth={1}
-              vectorEffect={0}
-              x={0}
-              y={0}
-            />
-          </RNSVGSvgView>
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "height": 0,
-                "width": 4,
-              },
-            ]
-          }
-        />
-        Attendance 01
-        <View
-          style={
-            Array [
-              Object {
-                "height": 0,
-                "width": 4,
-              },
-            ]
-          }
-        />
-        <View
-          style={
-            Array [
-              Object {
-                "height": 16,
-                "width": 16,
-              },
-            ]
-          }
-        >
-          <RNSVGSvgView
-            bbHeight="100%"
-            bbWidth="100%"
-            fill="#9898A6"
-            focusable={false}
-            height="100%"
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "transparent",
-                  "borderWidth": 0,
-                },
-                Object {
-                  "marginTop": 3,
-                },
-                Object {
-                  "opacity": 1,
-                },
-                Object {
-                  "flex": 0,
-                  "height": "100%",
-                  "width": "100%",
-                },
-              ]
-            }
-            width="100%"
-          >
-            <RNSVGGroup
-              fill={
-                Array [
-                  0,
-                  4288190630,
-                ]
-              }
-              fillOpacity={1}
-              fillRule={1}
-              font={Object {}}
-              matrix={
-                Array [
-                  1,
-                  0,
-                  0,
-                  1,
-                  0,
-                  0,
-                ]
-              }
-              opacity={1}
-              originX={0}
-              originY={0}
-              propList={
-                Array [
-                  "fill",
-                ]
-              }
-              rotation={0}
-              scaleX={1}
-              scaleY={1}
-              skewX={0}
-              skewY={0}
-              stroke={null}
-              strokeDasharray={null}
-              strokeDashoffset={null}
-              strokeLinecap={0}
-              strokeLinejoin={0}
-              strokeMiterlimit={4}
-              strokeOpacity={1}
-              strokeWidth={1}
-              vectorEffect={0}
-              x={0}
-              y={0}
-            />
-          </RNSVGSvgView>
-        </View>
-        <View
-          style={
-            Array [
-              Object {
-                "height": 0,
-                "width": 4,
-              },
-            ]
-          }
-        />
-        Attendance 02
-        <View
-          style={
-            Array [
-              Object {
-                "height": 0,
-                "width": 4,
-              },
-            ]
-          }
-        />
-      </Text>
       <View
+        alignItems="center"
+        display="flex"
+        flexDirection="row"
+        justifyContent="center"
         style={
           Array [
             Object {
               "alignItems": "center",
               "display": "flex",
               "flexDirection": "row",
-              "position": "absolute",
-              "right": 0,
-              "top": 4,
+              "justifyContent": "center",
+              "width": "100%",
             },
           ]
         }
+        width="100%"
       >
-        <RNSVGSvgView
-          bbHeight={12}
-          bbWidth={12}
-          fill="#6B6B78"
-          focusable={false}
-          height={12}
-          style={
-            Array [
-              Object {
-                "backgroundColor": "transparent",
-                "borderWidth": 0,
-              },
-              undefined,
-              Object {
-                "opacity": 1,
-              },
-              Object {
-                "flex": 0,
-                "height": 12,
-                "width": 12,
-              },
-            ]
-          }
-          width={12}
-        >
-          <RNSVGGroup
-            fill={
-              Array [
-                0,
-                4285229944,
-              ]
-            }
-            fillOpacity={1}
-            fillRule={1}
-            font={Object {}}
-            matrix={
-              Array [
-                1,
-                0,
-                0,
-                1,
-                0,
-                0,
-              ]
-            }
-            opacity={1}
-            originX={0}
-            originY={0}
-            propList={
-              Array [
-                "fill",
-              ]
-            }
-            rotation={0}
-            scaleX={1}
-            scaleY={1}
-            skewX={0}
-            skewY={0}
-            stroke={null}
-            strokeDasharray={null}
-            strokeDashoffset={null}
-            strokeLinecap={0}
-            strokeLinejoin={0}
-            strokeMiterlimit={4}
-            strokeOpacity={1}
-            strokeWidth={1}
-            vectorEffect={0}
-            x={0}
-            y={0}
-          />
-        </RNSVGSvgView>
         <Text
+          numberOfLines={1}
           size="xsmall"
           style={
             Array [
               Object {
-                "color": "#6B6B78",
+                "color": "#231B22",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "fontFamily": "Rubik",
                 "fontSize": 12,
-                "fontWeight": "500",
-                "lineHeight": 16,
-                "marginLeft": 4,
+                "fontWeight": "400",
               },
             ]
           }
-          variant="deep"
+          textAlignVertical="bottom"
         >
-          5.0
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 16,
+                  "width": 16,
+                },
+              ]
+            }
+          >
+            <RNSVGSvgView
+              bbHeight="100%"
+              bbWidth="100%"
+              fill="#9898A6"
+              focusable={false}
+              height="100%"
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  Object {
+                    "marginTop": 3,
+                  },
+                  Object {
+                    "opacity": 1,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <RNSVGGroup
+                fill={
+                  Array [
+                    0,
+                    4288190630,
+                  ]
+                }
+                fillOpacity={1}
+                fillRule={1}
+                font={Object {}}
+                matrix={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
+                opacity={1}
+                originX={0}
+                originY={0}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+                rotation={0}
+                scaleX={1}
+                scaleY={1}
+                skewX={0}
+                skewY={0}
+                stroke={null}
+                strokeDasharray={null}
+                strokeDashoffset={null}
+                strokeLinecap={0}
+                strokeLinejoin={0}
+                strokeMiterlimit={4}
+                strokeOpacity={1}
+                strokeWidth={1}
+                vectorEffect={0}
+                x={0}
+                y={0}
+              />
+            </RNSVGSvgView>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 0,
+                  "width": 4,
+                },
+              ]
+            }
+          />
+          Attendance 01
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 0,
+                  "width": 4,
+                },
+              ]
+            }
+          />
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 16,
+                  "width": 16,
+                },
+              ]
+            }
+          >
+            <RNSVGSvgView
+              bbHeight="100%"
+              bbWidth="100%"
+              fill="#9898A6"
+              focusable={false}
+              height="100%"
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  Object {
+                    "marginTop": 3,
+                  },
+                  Object {
+                    "opacity": 1,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": "100%",
+                    "width": "100%",
+                  },
+                ]
+              }
+              width="100%"
+            >
+              <RNSVGGroup
+                fill={
+                  Array [
+                    0,
+                    4288190630,
+                  ]
+                }
+                fillOpacity={1}
+                fillRule={1}
+                font={Object {}}
+                matrix={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
+                opacity={1}
+                originX={0}
+                originY={0}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+                rotation={0}
+                scaleX={1}
+                scaleY={1}
+                skewX={0}
+                skewY={0}
+                stroke={null}
+                strokeDasharray={null}
+                strokeDashoffset={null}
+                strokeLinecap={0}
+                strokeLinejoin={0}
+                strokeMiterlimit={4}
+                strokeOpacity={1}
+                strokeWidth={1}
+                vectorEffect={0}
+                x={0}
+                y={0}
+              />
+            </RNSVGSvgView>
+          </View>
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 0,
+                  "width": 4,
+                },
+              ]
+            }
+          />
+          Attendance 02
+          <View
+            style={
+              Array [
+                Object {
+                  "height": 0,
+                  "width": 4,
+                },
+              ]
+            }
+          />
         </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          <RNSVGSvgView
+            bbHeight={12}
+            bbWidth={12}
+            fill="#6B6B78"
+            focusable={false}
+            height={12}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                undefined,
+                Object {
+                  "opacity": 1,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 12,
+                  "width": 12,
+                },
+              ]
+            }
+            width={12}
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4285229944,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+          <Text
+            size="xsmall"
+            style={
+              Array [
+                Object {
+                  "color": "#6B6B78",
+                  "fontFamily": "Rubik",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "lineHeight": 16,
+                  "marginLeft": 4,
+                },
+              ]
+            }
+            variant="deep"
+          >
+            5.0
+          </Text>
+        </View>
       </View>
       <Text
+        numberOfLines={1}
         style={
           Array [
             Object {
@@ -492,6 +511,7 @@ exports[`<Result /> should match snapshot 1`] = `
         Partner Name
       </Text>
       <Text
+        numberOfLines={1}
         style={
           Array [
             Object {
@@ -876,6 +896,7 @@ exports[`<Result /> should match snapshot 1`] = `
         style={
           Array [
             Object {
+              "marginRight": 32,
               "marginTop": 8,
             },
           ]
@@ -902,6 +923,7 @@ exports[`<Result /> should match snapshot 1`] = `
                   "textAlign": "center",
                 },
                 Object {
+                  "marginRight": 32,
                   "marginTop": 8,
                 },
               ]

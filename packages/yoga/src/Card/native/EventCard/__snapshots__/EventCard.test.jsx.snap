@@ -963,6 +963,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                     "size": 12,
                   },
                 },
+                "result": Object {},
                 "slider": Object {
                   "marker": Object {
                     "backgroundColor": "#D8385E",
@@ -1118,10 +1119,16 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                     "size": 16,
                   },
                   "padding": Object {
-                    "bottom": 4,
-                    "left": 8,
-                    "right": 8,
-                    "top": 4,
+                    "default": Object {
+                      "bottom": 4,
+                      "left": 8,
+                      "right": 8,
+                      "top": 4,
+                    },
+                    "small": Object {
+                      "left": 4,
+                      "right": 4,
+                    },
                   },
                 },
                 "text": Object {
@@ -2388,6 +2395,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                     "size": 12,
                   },
                 },
+                "result": Object {},
                 "slider": Object {
                   "marker": Object {
                     "backgroundColor": "#D8385E",
@@ -2543,10 +2551,16 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                     "size": 16,
                   },
                   "padding": Object {
-                    "bottom": 4,
-                    "left": 8,
-                    "right": 8,
-                    "top": 4,
+                    "default": Object {
+                      "bottom": 4,
+                      "left": 8,
+                      "right": 8,
+                      "top": 4,
+                    },
+                    "small": Object {
+                      "left": 4,
+                      "right": 4,
+                    },
                   },
                 },
                 "text": Object {
@@ -3809,6 +3823,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     "size": 12,
                   },
                 },
+                "result": Object {},
                 "slider": Object {
                   "marker": Object {
                     "backgroundColor": "#D8385E",
@@ -3964,10 +3979,16 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     "size": 16,
                   },
                   "padding": Object {
-                    "bottom": 4,
-                    "left": 8,
-                    "right": 8,
-                    "top": 4,
+                    "default": Object {
+                      "bottom": 4,
+                      "left": 8,
+                      "right": 8,
+                      "top": 4,
+                    },
+                    "small": Object {
+                      "left": 4,
+                      "right": 4,
+                    },
                   },
                 },
                 "text": Object {
@@ -5234,6 +5255,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     "size": 12,
                   },
                 },
+                "result": Object {},
                 "slider": Object {
                   "marker": Object {
                     "backgroundColor": "#D8385E",
@@ -5389,10 +5411,16 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     "size": 16,
                   },
                   "padding": Object {
-                    "bottom": 4,
-                    "left": 8,
-                    "right": 8,
-                    "top": 4,
+                    "default": Object {
+                      "bottom": 4,
+                      "left": 8,
+                      "right": 8,
+                      "top": 4,
+                    },
+                    "small": Object {
+                      "left": 4,
+                      "right": 4,
+                    },
                   },
                 },
                 "text": Object {
@@ -6659,6 +6687,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                     "size": 12,
                   },
                 },
+                "result": Object {},
                 "slider": Object {
                   "marker": Object {
                     "backgroundColor": "#D8385E",
@@ -6814,10 +6843,16 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                     "size": 16,
                   },
                   "padding": Object {
-                    "bottom": 4,
-                    "left": 8,
-                    "right": 8,
-                    "top": 4,
+                    "default": Object {
+                      "bottom": 4,
+                      "left": 8,
+                      "right": 8,
+                      "top": 4,
+                    },
+                    "small": Object {
+                      "left": 4,
+                      "right": 4,
+                    },
                   },
                 },
                 "text": Object {
