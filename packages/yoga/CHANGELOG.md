@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.6.0...@gympass/yoga@7.7.0) (2021-08-06)
+
+
+### Features
+
+* **chips:** change native style to match the web ([9663634](https://github.com/Gympass/yoga/commit/9663634c4f84fca85aad2f21d493935dcd18f2d9))
+
+
+
+
+
 # [7.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.5.1...@gympass/yoga@7.6.0) (2021-07-27)
 
 
