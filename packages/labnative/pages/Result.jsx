@@ -94,6 +94,14 @@ const entranceList2 = [
     children: 'From 7:30 am to 9:00 pm',
     variant: 'stamina',
   },
+  {
+    children: 'From 7:30 am to 9:00 pm',
+    variant: 'stamina',
+  },
+  {
+    children: 'From 7:30 am to 9:00 pm',
+    variant: 'stamina',
+  },
 ];
 
 const tagsList = [
@@ -126,7 +134,7 @@ const ResultWrapper = styled.View`
   justify-content: space-between;
   flex-direction: column;
 
-  padding: 20px;
+  padding: 0 50px;
   margin-bottom: 10px;
 
   width: 100%;
@@ -141,7 +149,7 @@ const ResultPage = () => (
         rate="5.0"
         avatar={<Avatar src={avatar} />}
         attendances={attendanceList}
-        title="Ariel Malik"
+        title="Ariel Malik Soares da test etsets teste"
         subTitle="Personal"
         divided
       >

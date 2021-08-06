@@ -1,71 +1,74 @@
 import React from 'react';
 import styled from 'styled-components';
 import { arrayOf, func, shape, string } from 'prop-types';
+import Box from '../../Box';
 import Icon from '../../Icon';
 import Text from '../../Text';
 import Rate from './Rate';
 
-const Content = styled.View`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+const List = styled(Text.Regular)`
+  flex: 1;
 `;
 
-const Description = styled(Text.Regular)`
+const ItemSeparator = styled.View`
   ${({
     theme: {
       yoga: {
-        lineHeights: { xsmall },
-        spacing: { xxxsmall },
+        spacing: { zero, xxxsmall },
       },
     },
   }) => {
     return `
-      line-height:${xsmall};
-      margin-left:${xxxsmall};
+      width: ${xxxsmall};
+      height: ${zero};
     `;
   }}
 `;
 
-const Item = styled.View`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+const IconWrapper = styled.View`
   ${({
     theme: {
       yoga: {
-        spacing: { xxxsmall },
+        spacing: { small },
       },
     },
   }) => {
     return `
-      margin-right:${xxxsmall};
+      width: ${small};
+      height: ${small};
     `;
   }}
-`;
-
-const List = styled.View`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 `;
 
 const Attendances = ({ attendances, rate }) => (
-  <Content>
-    <List>
+  <Box
+    display="flex"
+    width="100%"
+    alignItems="center"
+    justifyContent="center"
+    flexDirection="row"
+  >
+    <List numberOfLines={1} size="xsmall" textAlignVertical="bottom">
       {attendances &&
         attendances.map(({ description, icon }) => (
-          <Item>
-            <Icon as={icon} width="xsmall" height="xsmall" fill="medium" />
-            <Description numberOfLines={1} number size="xsmall">
-              {description}
-            </Description>
-          </Item>
+          <>
+            <IconWrapper>
+              <Icon
+                as={icon}
+                fill="medium"
+                width="100%"
+                height="100%"
+                style={{ marginTop: 3 }}
+              />
+            </IconWrapper>
+            <ItemSeparator />
+            {description}
+            <ItemSeparator />
+          </>
         ))}
     </List>
     {rate && <Rate rate={rate} />}
-  </Content>
+  </Box>
 );
 
 Attendances.propTypes = {

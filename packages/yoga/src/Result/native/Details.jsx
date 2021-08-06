@@ -14,8 +14,8 @@ import Text from '../../Text';
 import Icon from '../../Icon';
 
 const Container = styled.Text`
-  max-width: 288px;
   text-align-vertical: center;
+  flex: 1;
 `;
 
 const Wrapper = styled.View`

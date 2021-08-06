@@ -73,9 +73,11 @@ const Result = ({
     {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
     <Content>
       <Attendances attendances={attendances} rate={rate} />
-      <Title>{title}</Title>
+      <Title numberOfLines={1}>{title}</Title>
       {subTitle && subTitle !== '' && (
-        <Text.Small variant="stamina">{subTitle}</Text.Small>
+        <Text.Small numberOfLines={1} variant="stamina">
+          {subTitle}
+        </Text.Small>
       )}
       {children}
     </Content>

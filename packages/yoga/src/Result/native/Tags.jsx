@@ -11,7 +11,6 @@ const TagStyled = styled(Tag.Informative)`
 const Wrapper = styled.ScrollView`
   display: flex;
   flex-direction: row;
-
   ${({
     theme: {
       yoga: {

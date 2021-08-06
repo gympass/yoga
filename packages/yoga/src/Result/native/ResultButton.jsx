@@ -5,12 +5,13 @@ const ResultButton = styled(Button.Link)`
   ${({
     theme: {
       yoga: {
-        spacing: { xxsmall },
+        spacing: { xxsmall, xlarge },
       },
     },
   }) => {
     return `
       margin-top: ${xxsmall};
+      margin-right:${xlarge}
     `;
   }}
 `;
