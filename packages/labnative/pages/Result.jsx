@@ -94,14 +94,6 @@ const entranceList2 = [
     children: 'From 7:30 am to 9:00 pm',
     variant: 'stamina',
   },
-  {
-    children: 'From 7:30 am to 9:00 pm',
-    variant: 'stamina',
-  },
-  {
-    children: 'From 7:30 am to 9:00 pm',
-    variant: 'stamina',
-  },
 ];
 
 const tagsList = [
@@ -149,7 +141,7 @@ const ResultPage = () => (
         rate="5.0"
         avatar={<Avatar src={avatar} />}
         attendances={attendanceList}
-        title="Ariel Malik Soares da test etsets teste"
+        title="Ariel Malik"
         subTitle="Personal"
         divided
       >
