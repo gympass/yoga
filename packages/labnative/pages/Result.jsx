@@ -194,7 +194,7 @@ const ResultPage = () => (
         <Result.Details
           items={entranceListExampleApp}
           renderItem={Text.Small}
-          dots
+          dots:
         />
         <Result.Details
           items={activitieListExampleApp}
