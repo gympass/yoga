@@ -8,44 +8,10 @@ import {
   SmartphoneFilled,
 } from '@gympass/yoga-icons';
 import avatar from '../assets/images/avatarIcons/avatar.png';
+import classAvatar from '../assets/images/avatarIcons/class.png';
 import { DocTitle } from '../components';
 
-const attendanceList = [
-  {
-    description: 'In-Person',
-    icon: BuildingFilled,
-  },
-  {
-    description: 'Online',
-    icon: Youtube,
-  },
-];
-
-const attendanceList2 = [
-  {
-    description: 'In person',
-    icon: BuildingFilled,
-  },
-  {
-    description: 'Online',
-    icon: Youtube,
-  },
-];
-
-const entranceListExampleApp = [
-  {
-    children: 'Android & IOS',
-    icon: SmartphoneFilled,
-  },
-];
-
-const activitieListExampleApp = [
-  {
-    children: 'Therapy',
-    variant: 'deep',
-  },
-];
-const activitiesList = [
+const activitiesExample1 = [
   {
     children: 'Yoga',
     variant: 'deep',
@@ -69,7 +35,7 @@ const activitiesList = [
   },
 ];
 
-const entranceList2 = [
+const entrancesExample1 = [
   {
     children: '300ft',
     variant: 'stamina',
@@ -78,6 +44,62 @@ const entranceList2 = [
   {
     children: 'From 7:30 am to 9:00 pm',
     variant: 'stamina',
+  },
+];
+
+const attendancesExample1 = [
+  {
+    description: 'In-Person',
+    icon: BuildingFilled,
+  },
+  {
+    description: 'Online',
+    icon: Youtube,
+  },
+];
+
+const entrancesExample2 = [
+  {
+    children: 'Android & IOS',
+    icon: SmartphoneFilled,
+  },
+];
+
+const attendancesExample2 = [
+  {
+    description: 'In person',
+    icon: BuildingFilled,
+  },
+  {
+    description: 'Online',
+    icon: Youtube,
+  },
+];
+
+const activitieExample2 = [
+  {
+    children: 'Therapy',
+    variant: 'deep',
+  },
+];
+
+const attendancesExample3 = [
+  {
+    description: 'Online',
+    icon: Youtube,
+  },
+];
+
+const entrancesExample3 = [
+  {
+    children: 'From 7:30 am to 9:00 pm',
+  },
+];
+
+const activitiesExample3 = [
+  {
+    children: 'Yoga',
+    variant: 'deep',
   },
 ];
 
@@ -118,14 +140,18 @@ const ResultPage = () => (
       <Result
         rate="5.0"
         avatar={<Avatar src={avatar} />}
-        attendances={attendanceList}
+        attendances={attendancesExample1}
         title="Ariel Malik"
         subTitle="Personal"
         divided
       >
-        <Result.Details items={entranceList2} dots renderItem={Text.Small} />
         <Result.Details
-          items={activitiesList}
+          items={entrancesExample1}
+          dots
+          renderItem={Text.Small}
+        />
+        <Result.Details
+          items={activitiesExample1}
           renderItem={Text.Small}
           dots
           limit={2}
@@ -141,16 +167,35 @@ const ResultPage = () => (
       <Result
         rate="5.0"
         avatar={<Avatar.Circle src={avatar} />}
-        attendances={attendanceList2}
+        attendances={attendancesExample2}
         title="Zenklub"
       >
         <Result.Details
-          items={entranceListExampleApp}
+          items={entrancesExample2}
           renderItem={Text.Small}
           dots
         />
         <Result.Details
-          items={activitieListExampleApp}
+          items={activitieExample2}
+          renderItem={Text.Small}
+          dots
+        />
+      </Result>
+    </ResultWrapper>
+    <ResultWrapper>
+      <Result
+        rate="5.0"
+        avatar={<Avatar.Circle src={classAvatar} />}
+        attendances={attendancesExample3}
+        title="John"
+      >
+        <Result.Details
+          items={entrancesExample3}
+          renderItem={Text.Small}
+          dots
+        />
+        <Result.Details
+          items={activitiesExample3}
           renderItem={Text.Small}
           dots
         />

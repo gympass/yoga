@@ -153,7 +153,7 @@ ResultDetails.propTypes = {
         ]}
    * */
   items: arrayOf(shape({})),
-  /** If has limit of items to show in component,will show de + 4 for example.
+  /** If has limit of items to show in component.Other with show with + 4 for example
    * */
   limit: number,
   /** If is necessary show a label after the limit.Example + 4 activities */
