@@ -398,6 +398,7 @@ exports[`<Result /> should match snapshot 1`] = `
                 "alignItems": "center",
                 "display": "flex",
                 "flexDirection": "row",
+                "marginLeft": 10,
               },
             ]
           }
@@ -544,7 +545,9 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
-                "maxWidth": 288,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "textAlignVertical": "center",
               },
             ]
@@ -585,7 +588,9 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
-                "maxWidth": 288,
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
                 "textAlignVertical": "center",
               },
             ]

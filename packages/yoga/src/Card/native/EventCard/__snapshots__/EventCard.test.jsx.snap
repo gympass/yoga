@@ -1116,7 +1116,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                     "margin": Object {
                       "right": 4,
                     },
-                    "size": 16,
+                    "size": Object {
+                      "default": 24,
+                      "small": 12,
+                    },
                   },
                   "padding": Object {
                     "default": Object {
@@ -2548,7 +2551,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                     "margin": Object {
                       "right": 4,
                     },
-                    "size": 16,
+                    "size": Object {
+                      "default": 24,
+                      "small": 12,
+                    },
                   },
                   "padding": Object {
                     "default": Object {
@@ -3976,7 +3982,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     "margin": Object {
                       "right": 4,
                     },
-                    "size": 16,
+                    "size": Object {
+                      "default": 24,
+                      "small": 12,
+                    },
                   },
                   "padding": Object {
                     "default": Object {
@@ -5408,7 +5417,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     "margin": Object {
                       "right": 4,
                     },
-                    "size": 16,
+                    "size": Object {
+                      "default": 24,
+                      "small": 12,
+                    },
                   },
                   "padding": Object {
                     "default": Object {
@@ -6840,7 +6852,10 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                     "margin": Object {
                       "right": 4,
                     },
-                    "size": 16,
+                    "size": Object {
+                      "default": 24,
+                      "small": 12,
+                    },
                   },
                   "padding": Object {
                     "default": Object {

@@ -99,11 +99,11 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
       }
     >
       <RNSVGSvgView
-        bbHeight={16}
-        bbWidth={16}
+        bbHeight={24}
+        bbWidth={24}
         fill="#231B22"
         focusable={false}
-        height={16}
+        height={24}
         style={
           Array [
             Object {
@@ -118,12 +118,12 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
             },
             Object {
               "flex": 0,
-              "height": 16,
-              "width": 16,
+              "height": 24,
+              "width": 24,
             },
           ]
         }
-        width={16}
+        width={24}
       >
         <RNSVGGroup
           fill={
