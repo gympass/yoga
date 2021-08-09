@@ -60,15 +60,12 @@ const activitiesList = [
     variant: 'deep',
   },
   {
-    children: 'Relax',
+    children: 'Spa',
     variant: 'deep',
   },
-];
-
-const entranceList = [
   {
-    children: 'From 7:30 am to 9:00 pm',
-    variant: 'stamina',
+    children: 'Well Being',
+    variant: 'deep',
   },
 ];
 
@@ -89,13 +86,6 @@ const tagsList = [
     children: 'Plan x Product availability',
     variant: 'informative',
   },
-  {
-    children: 'Restriction',
-    variant: 'attention',
-  },
-];
-
-const tagsList2 = [
   {
     children: 'Restriction',
     variant: 'attention',
@@ -139,32 +129,15 @@ const ResultPage = () => (
           renderItem={Text.Small}
           dots
           limit={2}
+          limitLabel="activities"
         />
         <Result.Tags items={tagsList} />
         <Result.Button>Select</Result.Button>
       </Result>
     </ResultWrapper>
+
     <ResultWrapper>
       <DocTitle>Default Result With Circle Avatar</DocTitle>
-      <Result
-        rate="New"
-        avatar={<Avatar.Circle src={avatar} />}
-        attendances={attendanceList2}
-        title="Ariel Malik"
-        divided
-      >
-        <Result.Details items={entranceList} dots renderItem={Text.Small} />
-        <Result.Details
-          items={activitiesList}
-          dots
-          limit={2}
-          renderItem={Text.Small}
-        />
-        <Result.Tags items={tagsList2} />
-        <Result.Button>Upgrade</Result.Button>
-      </Result>
-    </ResultWrapper>
-    <ResultWrapper>
       <Result
         rate="5.0"
         avatar={<Avatar.Circle src={avatar} />}

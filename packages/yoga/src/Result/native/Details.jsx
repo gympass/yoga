@@ -7,6 +7,7 @@ import {
   func,
   oneOfType,
   node,
+  string,
 } from 'prop-types';
 import styled from 'styled-components';
 
@@ -75,7 +76,13 @@ const StyledText = styled(Text.Small)`
   `}
 `;
 
-const ResultDetails = ({ items, limit, dots, renderItem: Item }) => {
+const ResultDetails = ({
+  items,
+  limit,
+  limitLabel,
+  dots,
+  renderItem: Item,
+}) => {
   const refinedList = limit !== 0 ? items.slice(0, limit) : items;
 
   return (
@@ -85,7 +92,8 @@ const ResultDetails = ({ items, limit, dots, renderItem: Item }) => {
           refinedList.map(
             ({ icon: IconComponent, variant, ...props }, index) => {
               const isLastItem = index === refinedList.length - 1;
-              const showNumbersOfItemsLeft = isLastItem && limit !== 0;
+              const showNumbersOfItemsLeft =
+                isLastItem && limit !== 0 && limit < items.length - 1;
               const numberOfItemsLeft = items.length - limit;
 
               return (
@@ -119,6 +127,7 @@ const ResultDetails = ({ items, limit, dots, renderItem: Item }) => {
                       <Separator />
                       <StyledText variant={variant}>
                         + {numberOfItemsLeft.toString().padStart(2, '0')}
+                        {limitLabel !== '' && ` ${limitLabel}`}
                       </StyledText>
                       <Separator />
                     </>
@@ -144,10 +153,11 @@ ResultDetails.propTypes = {
         ]}
    * */
   items: arrayOf(shape({})),
-  /** If has limit of itens to show in component,will show de + 4 for example.
-   * Not send the limit will be add the ellipsis(...) if exceed the max width of the component.
+  /** If has limit of items to show in component,will show de + 4 for example.
    * */
   limit: number,
+  /** If is necessary show a label after the limit.Example + 4 activities */
+  limitLabel: string,
   /** If shows the dot separator between the itens */
   dots: bool,
   /** The component that is necessary to render the item of the list.
@@ -166,6 +176,7 @@ ResultDetails.propTypes = {
 ResultDetails.defaultProps = {
   items: [],
   limit: 0,
+  limitLabel: '',
   dots: false,
   renderItem: Text.Small,
 };
