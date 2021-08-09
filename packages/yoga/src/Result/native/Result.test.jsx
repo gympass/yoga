@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react-native';
 
 import { BuildingFilled } from '@gympass/yoga-icons';
-import { ThemeProvider, Result } from '../..';
+import { ThemeProvider, Result } from '../../native';
 
 import Avatar from '../../Avatar';
 import Text from '../../Text';

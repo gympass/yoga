@@ -60,19 +60,7 @@ const activitiesList = [
     variant: 'deep',
   },
   {
-    children: '04',
-    variant: 'deep',
-  },
-  {
-    children: '05',
-    variant: 'deep',
-  },
-  {
-    children: '06',
-    variant: 'deep',
-  },
-  {
-    children: '07',
+    children: 'Relax',
     variant: 'deep',
   },
 ];
@@ -150,7 +138,7 @@ const ResultPage = () => (
           items={activitiesList}
           renderItem={Text.Small}
           dots
-          limit={3}
+          limit={2}
         />
         <Result.Tags items={tagsList} />
         <Result.Button>Select</Result.Button>
@@ -169,7 +157,7 @@ const ResultPage = () => (
         <Result.Details
           items={activitiesList}
           dots
-          limit={3}
+          limit={2}
           renderItem={Text.Small}
         />
         <Result.Tags items={tagsList2} />

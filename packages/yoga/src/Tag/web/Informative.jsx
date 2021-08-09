@@ -49,7 +49,11 @@ const TagInformative = ({
 }) => (
   <Informative small={small} {...props}>
     {Icon && (
-      <Icon width={tag.icon.size} height={tag.icon.size} fill={text.primary} />
+      <Icon
+        width={small ? tag.icon.size.small : tag.icon.size.default}
+        height={small ? tag.icon.size.small : tag.icon.size.default}
+        fill={text.primary}
+      />
     )}
     {children}
   </Informative>

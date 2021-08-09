@@ -65,8 +65,8 @@ const TagInformative = ({
     <Wrapper>
       {Icon && (
         <Icon
-          width={tag.icon.size}
-          height={tag.icon.size}
+          width={small ? tag.icon.size.small : tag.icon.size.default}
+          height={small ? tag.icon.size.small : tag.icon.size.default}
           fill={primary}
           style={{ marginRight: tag.icon.margin.right }}
         />
