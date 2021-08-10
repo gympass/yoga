@@ -736,7 +736,7 @@ exports[`<Result /> should match snapshot 1`] = `
         }
       >
         <View
-          small={true}
+          size="small"
           style={
             Array [
               Object {
@@ -746,10 +746,10 @@ exports[`<Result /> should match snapshot 1`] = `
                 "borderRadius": 4,
                 "borderWidth": 1,
                 "justifyContent": "center",
-                "paddingBottom": 4,
-                "paddingLeft": 8,
-                "paddingRight": 8,
-                "paddingTop": 4,
+                "paddingBottom": 0,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 0,
                 "width": "auto",
               },
               Object {
@@ -797,7 +797,7 @@ exports[`<Result /> should match snapshot 1`] = `
           </View>
         </View>
         <View
-          small={true}
+          size="small"
           style={
             Array [
               Object {
@@ -807,10 +807,10 @@ exports[`<Result /> should match snapshot 1`] = `
                 "borderRadius": 4,
                 "borderWidth": 1,
                 "justifyContent": "center",
-                "paddingBottom": 4,
-                "paddingLeft": 8,
-                "paddingRight": 8,
-                "paddingTop": 4,
+                "paddingBottom": 0,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 0,
                 "width": "auto",
               },
               Object {

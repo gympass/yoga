@@ -26,7 +26,7 @@ const ResultTags = ({ items }) => {
   return (
     <Wrapper horizontal showsHorizontalScrollIndicator={false}>
       {items.map(({ ...props }) => {
-        return <TagStyled small {...props} />;
+        return <TagStyled size="small" {...props} />;
       })}
     </Wrapper>
   );
