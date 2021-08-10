@@ -35,7 +35,7 @@ const ResultTags = ({ items }) => {
 ResultTags.displayName = 'Result.Tags';
 
 ResultTags.propTypes = {
-  /** Tags to render in the component.For example:
+  /** Tags to render in the component. For example:
    * items = {[
             {
             children: 'Plan x Product availability',

@@ -1,78 +1,93 @@
 ### Reference
 
-Gympass `<Result />` description
+Gympass `<Result />` component can be used to display content related to a single
+subject of on list of searched results for example. The content can consist of multiple elements of varying types and
+sizes.
 
-### Default Avatar
+As it could be seen in most components, the Result has its own compounds:
+
+- `<Result.Details />`
+- `<Result.Tags />`
+- `<Result.Button />`
+
+Each one of the compounds has its own props described on the example below.
+
+#### Usage
 
 ```javascript type=expo
-<>
-        <Result
-          rate="5.0"
-          avatar={<Avatar src={avatar} />}
-          attendances={
-              [
-                  {
-                    description: 'In-Person',
-                    icon: BuildingFilled,
-                  },
-                  {
-                    description: 'Online',
-                    icon: Youtube,
-                   },
-              ]
-          }
-          title="Ariel Malik"
-          subTitle="Personal"
-          divided
-        >
-          <Result.Details
-              items={
-                  [
-                      {
-                        children: '300ft',
-                        variant: 'stamina',
-                        icon: PinFilled,
-                      },
-                      {
-                        children: 'From 7:30 am to 9:00 pm',
-                        variant: 'stamina',
-                      },
-              ]
-              }
-          renderItem={Text.Small}
-          dots
-        />
-        <Result.Details
-            items={
-                [
-                    {
-                        children: 'Yoga',
-                        variant: 'deep',
-                        icon: PinFilled,
-                    },
-                    {
-                        children: 'Meditation',
-                        variant: 'deep',
-                    },
-                ]
-            }
-            renderItem={Text.Small}
-            limit={3}
-            dots
-        />
-        <Result.Tags
-            items={
-                [
-                    {
-                        children: 'Restriction',
-                        variant: 'attention',
-                    },
-                ]
-            }
-        />
-        <Result.Button>Select</Result.Button>
-      </Result>
-</>
+<Result
+  rate="5.0"
+  avatar={<Avatar src={'https://cdn1.vectorstock.com/i/1000x1000/51/05/male-profile-avatar-with-brown-hair-vector-12055105.jpg'} />}
+  attendances={[
+    {
+      description: 'In-Person',
+      icon: BuildingFilled,
+    },
+    {
+      description: 'Online',
+      icon: Youtube,
+    },
+  ]}
+  title="Ariel Malik"
+  subTitle="Personal"
+  divided
+>
+  <Result.Details
+    items={[
+      {
+        children: '300ft',
+        variant: 'stamina',
+        icon: PinFilled,
+      },
+      {
+        children: 'From 7:30 am to 9:00 pm',
+        variant: 'stamina',
+      },
+    ]}
+    renderItem={Text.Small}
+    dots
+  />
+  <Result.Details
+    items={[
+      {
+        children: 'Yoga',
+        variant: 'deep',
+      },
+      {
+        children: 'Meditation',
+        variant: 'deep',
+      },
+      {
+        children: 'Pilates',
+        variant: 'deep',
+      },
+      {
+        children: 'Spa',
+        variant: 'deep',
+      },
+      {
+        children: 'Therapy',
+        variant: 'deep',
+      },
+    ]}
+    renderItem={Text.Small}
+    limit={3}
+    dots
+  />
+  <Result.Tags
+    items={[
+      {
+        children: 'Plan x Product availability',
+        variant: 'informative',
+      },
+      {
+        children: 'Restriction',
+        variant: 'attention',
+      },
+    ]}
+  />
+  <Result.Button>Select</Result.Button>
+</Result>
 ```
 
 #### Props - Result
@@ -86,7 +101,6 @@ Gympass `<Result />` description
 #### Props - Result.Tags
 
 <PropsTable component="Result.Tags" platform="native" />
-
 
 #### Props - Result.Button
 
