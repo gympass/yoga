@@ -184,7 +184,6 @@ const ResultPage = () => (
     </ResultWrapper>
     <ResultWrapper>
       <Result
-        rate="5.0"
         avatar={<Avatar.Circle src={classAvatar} />}
         attendances={attendancesExample3}
         title="John"

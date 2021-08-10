@@ -39,27 +39,27 @@ const TagPage = () => (
     </TagWrapper>
 
     <TagWrapper>
-      <DocTitle>Informative Small Tags</DocTitle>
-      <Tag.Informative variant="success" small>
+      <DocTitle>Informative small Tags</DocTitle>
+      <Tag.Informative variant="success" size="small">
         success
       </Tag.Informative>
-      <Tag.Informative variant="informative" small>
+      <Tag.Informative variant="informative" size="small">
         informative
       </Tag.Informative>
-      <Tag.Informative variant="attention" small>
+      <Tag.Informative variant="attention" size="small">
         attention
       </Tag.Informative>
     </TagWrapper>
 
     <TagWrapper>
-      <DocTitle>Informative Small Tags with Icon</DocTitle>
-      <Tag.Informative variant="success" icon={Building} small>
+      <DocTitle>Informative small Tags with Icon</DocTitle>
+      <Tag.Informative variant="success" icon={Building} size="small">
         success with custom icon
       </Tag.Informative>
-      <Tag.Informative variant="informative" icon={Building} small>
+      <Tag.Informative variant="informative" icon={Building} size="small">
         informative with custom icon
       </Tag.Informative>
-      <Tag.Informative variant="attention" icon={Building} small>
+      <Tag.Informative variant="attention" icon={Building} size="small">
         attention with custom icon
       </Tag.Informative>
     </TagWrapper>

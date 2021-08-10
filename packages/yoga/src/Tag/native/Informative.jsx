@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { func, oneOf, node, boolean } from 'prop-types';
+import { func, oneOf, node, string } from 'prop-types';
 
 import { StyledTag, StyledText } from './Tag';
 
@@ -58,15 +58,17 @@ const TagInformative = ({
       components: { tag },
     },
   },
-  small,
+  size,
   ...props
 }) => (
-  <Informative small={small} {...props}>
+  <Informative size={size} {...props}>
     <Wrapper>
       {Icon && (
         <Icon
-          width={small ? tag.icon.size.small : tag.icon.size.default}
-          height={small ? tag.icon.size.small : tag.icon.size.default}
+          width={size === 'small' ? tag.icon.size.small : tag.icon.size.default}
+          height={
+            size === 'small' ? tag.icon.size.small : tag.icon.size.default
+          }
           fill={primary}
           style={{ marginRight: tag.icon.margin.right }}
         />
@@ -81,12 +83,13 @@ TagInformative.propTypes = {
   variant: oneOf(['success', 'informative', 'attention']).isRequired,
   icon: func,
   children: node.isRequired,
-  small: boolean,
+  /** Can send small to use this variant */
+  size: string,
 };
 
 TagInformative.defaultProps = {
   icon: undefined,
-  small: undefined,
+  size: undefined,
 };
 
 TagInformative.displayName = 'Tag.Informative';

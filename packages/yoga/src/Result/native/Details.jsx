@@ -89,7 +89,7 @@ const ResultDetails = ({
     <Wrapper>
       <Container numberOfLines={1}>
         {items &&
-          refinedList.map(
+          refinedList?.map(
             ({ icon: IconComponent, variant, ...props }, index) => {
               const isLastItem = index === refinedList.length - 1;
               const showNumbersOfItemsLeft =
