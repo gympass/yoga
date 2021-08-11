@@ -15,6 +15,17 @@ describe('<Avatar />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot in default avatar with src and alt', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Avatar src="https://github.com/Gympass.png" alt="Gympass brand logo" />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
   it('should match snapshot in default avatar with placeholder prop', () => {
     const { container } = render(
       <ThemeProvider>
@@ -24,6 +35,7 @@ describe('<Avatar />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
   it('should match snapshot in circle avatar', () => {
     const { container } = render(
       <ThemeProvider>
@@ -33,6 +45,7 @@ describe('<Avatar />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
   it('should match snapshot in circle avatar with placeholder prop', () => {
     const { container } = render(
       <ThemeProvider>

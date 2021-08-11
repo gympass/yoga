@@ -19,6 +19,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 <div>
@@ -27,6 +28,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
     display="flex"
     elevation="small"
     height="48"
+    overflow="hidden"
     width="48"
   >
     <svg
@@ -57,6 +59,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 <div>
@@ -65,6 +68,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
     display="flex"
     elevation="small"
     height="48"
+    overflow="hidden"
     width="48"
   >
     <svg
@@ -95,6 +99,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 <div>
@@ -103,6 +108,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
     display="flex"
     elevation="small"
     height="78"
+    overflow="hidden"
     width="78"
   >
     <svg
@@ -133,6 +139,7 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 <div>
@@ -141,12 +148,52 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
     display="flex"
     elevation="small"
     height="48"
+    overflow="hidden"
     width="48"
   >
     <svg
       fill="#FFFFFF"
       height="50%"
       width="50%"
+    />
+  </div>
+</div>
+`;
+
+exports[`<Avatar /> should match snapshot in default avatar with src and alt 1`] = `
+.c0 {
+  border-radius: 8px;
+  background-color: #9898A6;
+  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+<div>
+  <div
+    class="c0"
+    display="flex"
+    elevation="small"
+    height="48"
+    overflow="hidden"
+    width="48"
+  >
+    <img
+      alt="Gympass brand logo"
+      src="https://github.com/Gympass.png"
     />
   </div>
 </div>
