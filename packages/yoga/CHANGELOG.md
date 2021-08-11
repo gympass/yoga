@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.7.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.7.1...@gympass/yoga@7.7.2) (2021-08-11)
+
+
+### Reverts
+
+* **changelog:** reverting changes on CHANGELOGs ([4aab5a8](https://github.com/Gympass/yoga/commit/4aab5a8c845a4951d32f3a4aebe8c52f7143425d))
+* **changelog:** reverting changes on CHANGELOGs ([df3919b](https://github.com/Gympass/yoga/commit/df3919bc14757a3ce309f8e422b44dc750d7bf6f))
+
+
+
+
+
 ## [7.7.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.7.0...@gympass/yoga@7.7.1) (2021-08-06)
 
 **Note:** Version bump only for package @gympass/yoga
