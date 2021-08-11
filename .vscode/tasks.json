@@ -1,0 +1,59 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Development",
+      "command": "yarn",
+      "args": ["${input:platform}"]
+    },
+    {
+      "group": "build",
+      "label": "Build",
+      "command": "yarn",
+      "args": ["${input:build}"]
+    },
+    {
+      "group": "test",
+      "label": "Test",
+      "command": "yarn",
+      "args": ["${input:test}"]
+    }
+  ],
+  "inputs": [
+    {
+      "description": "Choose a platform to run",
+      "id": "platform",
+      "type": "pickString",
+      "options": [
+        { "label": "iOS", "value": "dev:native:ios" },
+        { "label": "Android", "value": "dev:native:android" },
+        { "label": "Web", "value": "dev:web" }
+      ]
+    },
+    {
+      "description": "Choose a package to build",
+      "id": "build",
+      "type": "pickString",
+      "options": [
+        { "label": "Yoga", "value": "build:yoga" },
+        { "label": "Helpers", "value": "build:helpers" },
+        { "label": "Common", "value": "build:common" },
+        { "label": "Tokens", "value": "build:tokens" },
+        { "label": "Doc", "value": "build:doc" },
+        { "label": "Packages", "value": "build:packages" },
+        { "label": "System", "value": "build:system" }
+      ]
+    },
+    {
+      "description": "Choose a package to test",
+      "id": "test",
+      "type": "pickString",
+      "options": [
+        { "label": "Native", "value": "test:native" },
+        { "label": "Helpers", "value": "test:helpers" },
+        { "label": "System", "value": "test:system" },
+        { "label": "Web", "value": "test:web" }
+      ]
+    }
+  ]
+}

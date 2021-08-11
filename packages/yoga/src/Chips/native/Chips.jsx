@@ -42,7 +42,7 @@ const Wrapper = styled.View`
     selected
       ? css`
           background-color: ${theme.colors.yoga};
-          border-color: ${theme.colors.primary};
+          border-color: transparent;
         `
       : ''}
 `;
@@ -91,7 +91,7 @@ const Chips = ({
           />
         )}
         <StyledChips
-          as={selected ? Text.Bold : Text}
+          as={selected ? Text.Medium : Text}
           selected={selected}
           numberOfLines={1}
         >

@@ -140,7 +140,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFEEF2",
-            "borderColor": "#D8385E",
+            "borderColor": "transparent",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -167,7 +167,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "700",
+              "fontWeight": "500",
             },
             Object {
               "color": "#D8385E",
@@ -217,7 +217,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFEEF2",
-            "borderColor": "#D8385E",
+            "borderColor": "transparent",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -244,7 +244,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "700",
+              "fontWeight": "500",
             },
             Object {
               "color": "#D8385E",
@@ -555,7 +555,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFEEF2",
-            "borderColor": "#D8385E",
+            "borderColor": "transparent",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -582,7 +582,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "700",
+              "fontWeight": "500",
             },
             Object {
               "color": "#D8385E",
@@ -639,7 +639,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFEEF2",
-            "borderColor": "#D8385E",
+            "borderColor": "transparent",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -666,7 +666,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "700",
+              "fontWeight": "500",
             },
             Object {
               "color": "#D8385E",
@@ -723,7 +723,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFEEF2",
-            "borderColor": "#D8385E",
+            "borderColor": "transparent",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -750,7 +750,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "700",
+              "fontWeight": "500",
             },
             Object {
               "color": "#D8385E",
@@ -780,7 +780,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFEEF2",
-            "borderColor": "#D8385E",
+            "borderColor": "transparent",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -807,7 +807,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "700",
+              "fontWeight": "500",
             },
             Object {
               "color": "#D8385E",
@@ -844,7 +844,7 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFEEF2",
-            "borderColor": "#D8385E",
+            "borderColor": "transparent",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -871,7 +871,7 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "700",
+              "fontWeight": "500",
             },
             Object {
               "color": "#D8385E",
@@ -962,7 +962,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFEEF2",
-            "borderColor": "#D8385E",
+            "borderColor": "transparent",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -989,7 +989,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "700",
+              "fontWeight": "500",
             },
             Object {
               "color": "#D8385E",
@@ -1013,7 +1013,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           Object {
             "alignItems": "center",
             "backgroundColor": "#FFEEF2",
-            "borderColor": "#D8385E",
+            "borderColor": "transparent",
             "borderRadius": 8,
             "borderStyle": "solid",
             "borderWidth": 1,
@@ -1040,7 +1040,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "700",
+              "fontWeight": "500",
             },
             Object {
               "color": "#D8385E",
