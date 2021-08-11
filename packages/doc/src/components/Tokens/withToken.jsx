@@ -1,5 +1,6 @@
 import React from 'react';
 import yogaTokensModule from '@gympass/yoga-tokens';
+import { element, string } from 'prop-types';
 
 const getKeys = (tokensModule, values) => {
   const tokens = Object.entries(tokensModule);
@@ -12,20 +13,32 @@ const getKeys = (tokensModule, values) => {
   });
 };
 
-const withToken = Component => ({ token, ...rest }) => {
-  const tokensModule = yogaTokensModule[token];
-  const tokensValues = [...new Set(Object.values(tokensModule))];
-  const tokensKeys = getKeys(tokensModule, tokensValues);
+const withToken = Component => {
+  const WithToken = ({ token, ...rest }) => {
+    const tokensModule = yogaTokensModule[token];
+    const tokensValues = [...new Set(Object.values(tokensModule))];
+    const tokensKeys = getKeys(tokensModule, tokensValues);
 
-  const data = tokensKeys.map(({ type, position, key }) => ({
-    token,
-    id: key,
-    key: `${token}[${position}]`,
-    alias: type === 'alias' ? `${token}.${key}` : '--',
-    value: tokensValues[position],
-  }));
+    const data = tokensKeys.map(({ type, position, key }) => ({
+      token,
+      id: key,
+      key: `${token}[${position}]`,
+      alias: type === 'alias' ? `${token}.${key}` : '--',
+      value: tokensValues[position],
+    }));
 
-  return <Component token={token} data={data} {...rest} />;
+    return <Component token={token} data={data} {...rest} />;
+  };
+
+  WithToken.propTypes = {
+    token: string.isRequired,
+  };
+
+  return WithToken;
+};
+
+withToken.propTypes = {
+  Component: element.isRequired,
 };
 
 export default withToken;

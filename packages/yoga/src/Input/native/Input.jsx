@@ -211,6 +211,7 @@ const Input = ({
       toValue,
       duration: transition.duration[1],
       easing: Easing.bezier(...transition.timing[0]),
+      useNativeDriver: false,
     }).start();
 
   useEffect(() => {

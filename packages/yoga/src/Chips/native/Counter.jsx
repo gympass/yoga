@@ -24,6 +24,8 @@ const Wrapper = styled(Text.Medium)`
 
   border-radius: ${theme.radii.small}px;
   background-color: ${theme.colors.primary};
+
+  overflow: hidden;
 `;
 
 const Counter = ({ value }) => (

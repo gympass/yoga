@@ -121,6 +121,7 @@ const CheckboxSwitch = ({
         fromValue: isChecked ? 0 : 1,
         toValue: isChecked ? 1 : 0,
         duration: 100,
+        useNativeDriver: false,
       };
       Animated.timing(position, animValue).start();
     };

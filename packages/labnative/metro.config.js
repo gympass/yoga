@@ -42,7 +42,7 @@ module.exports = (async () => {
         new RegExp(`${reactNativeLib}/node_modules/react/.*`),
       ]),
       assetExts: assetExts.filter(ext => ext !== 'svg'),
-      sourceExts: ['jsx', 'js', 'svg'],
+      sourceExts: ['jsx', 'js', 'svg', 'ts', 'tsx'],
     },
     transformer: {
       babelTransformerPath: require.resolve('./customTransformer.js'),

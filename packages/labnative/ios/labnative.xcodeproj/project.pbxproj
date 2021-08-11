@@ -14,21 +14,15 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		251778E40D712DF81EA0269A /* libPods-labnative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E995F919639A52C7310505 /* libPods-labnative.a */; };
-		28CA9359E8302D3719F980FF /* libPods-labnative-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6049714471A2CAA02B298B /* libPods-labnative-tvOSTests.a */; };
-		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
-		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* labnativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* labnativeTests.m */; };
 		34EC4FB4E57B464CBE4EDF51 /* Rubik-500.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6E734CA5226407583552C5F /* Rubik-500.ttf */; };
+		3B3BC1449C00272FE5555D78 /* libPods-labnative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3F248A17DA6F5A8F51D91EA /* libPods-labnative.a */; };
 		594404B398F141AD9BDE238F /* Rubik-300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D573036276504B7C8845D7CC /* Rubik-300.ttf */; };
 		615EDA9B065748049EEB7FB7 /* Rubik-700-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8C5C1F762A554EADBBCACBD1 /* Rubik-700-italic.ttf */; };
 		7BC0D0AFF0FE472CB8A751C3 /* Rubik-700.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BBC6064EAE64217AE323587 /* Rubik-700.ttf */; };
-		7CA4A4821B6C760F828B3EC6 /* libPods-labnativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 585E721B722C4648DA851B05 /* libPods-labnativeTests.a */; };
 		8F311E940D1D4116A4247B50 /* Rubik-500-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55DDE15917774C6AB5A11765 /* Rubik-500-italic.ttf */; };
 		9C3432F47B0348A8B355EFD9 /* Rubik-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C41A3A5FEDC7439BA430B6D7 /* Rubik-italic.ttf */; };
 		9E6F0E36A9004A42B8D6A267 /* Rubik-300-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6CA68BCC2D64A3EA119626B /* Rubik-300-italic.ttf */; };
-		DB02C6C59BA5634F99E5F654 /* libPods-labnative-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE5A9992E90D9E07FC03F22 /* libPods-labnative-tvOS.a */; };
+		BD0D3E5A2407B2895E1F8661 /* libPods-labnative-labnativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA843BE336E44886F15181E /* libPods-labnative-labnativeTests.a */; };
 		E7BF20989ECD4FB5BF3AF1DD /* Rubik.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33F58296D36345399CBC36B3 /* Rubik.ttf */; };
 /* End PBXBuildFile section */
 
@@ -40,21 +34,12 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = labnative;
 		};
-		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "labnative-tvOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* labnativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = labnativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* labnativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = labnativeTests.m; sourceTree = "<group>"; };
-		0F651AD2D0514B36BF0F7A26 /* Open Sans Extrabold Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Open Sans Extrabold Italic.ttf"; path = "../../yoga/src/Fonts/Open Sans Extrabold Italic.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* labnative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = labnative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = labnative/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = labnative/AppDelegate.m; sourceTree = "<group>"; };
@@ -63,50 +48,26 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = labnative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = labnative/main.m; sourceTree = "<group>"; };
 		16F35428F8D04A5EA853DF16 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Italic.ttf"; path = "../../yoga/src/Fonts/Rubik-Italic.ttf"; sourceTree = "<group>"; };
-		1A1D212C289D4C9C92B5B7C7 /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-MediumItalic.ttf"; path = "../../yoga/src/Fonts/Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
-		1AE2DE3B9A5C44AFA225C82D /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../../yoga/src/Fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
-		22567631AC15474481B4471A /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-LightItalic.ttf"; path = "../../yoga/src/Fonts/Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
-		27B9EEBABF30418D9C95215F /* Rubik-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BoldItalic.ttf"; path = "../../yoga/src/Fonts/Rubik-BoldItalic.ttf"; sourceTree = "<group>"; };
-		2A998E87BC074139860E73FD /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-BlackItalic.ttf"; path = "../../yoga/src/Fonts/Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* labnative-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "labnative-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* labnative-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "labnative-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F58296D36345399CBC36B3 /* Rubik.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Rubik.ttf; path = ../../yoga/src/Fonts/Rubik.ttf; sourceTree = "<group>"; };
-		3DE5A9992E90D9E07FC03F22 /* libPods-labnative-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-labnative-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B7F739796943F5AD63E19F /* Rubik-900.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-900.ttf"; path = "../../yoga/src/Fonts/Rubik-900.ttf"; sourceTree = "<group>"; };
 		55DDE15917774C6AB5A11765 /* Rubik-500-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-500-italic.ttf"; path = "../../yoga/src/Fonts/Rubik-500-italic.ttf"; sourceTree = "<group>"; };
-		585E721B722C4648DA851B05 /* libPods-labnativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-labnativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6335D9A3618A4A08AAEE1B65 /* Open Sans Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Open Sans Light.ttf"; path = "../../yoga/src/Fonts/Open Sans Light.ttf"; sourceTree = "<group>"; };
-		6B6049714471A2CAA02B298B /* libPods-labnative-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-labnative-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B8C3618C118450DA10C1669 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Bold.ttf"; path = "../../yoga/src/Fonts/Rubik-Bold.ttf"; sourceTree = "<group>"; };
-		75D4B6082CA84F52A774F286 /* Rubik-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.ttf"; path = "../../yoga/src/Fonts/Rubik-Light.ttf"; sourceTree = "<group>"; };
-		7CAF450DC4A34731BBC2A383 /* Open Sans.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Open Sans.ttf"; path = "../../yoga/src/Fonts/Open Sans.ttf"; sourceTree = "<group>"; };
-		7E1C96EC9B3AF689CC5BBD36 /* Pods-labnative-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnative-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-labnative-tvOSTests/Pods-labnative-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		81E995F919639A52C7310505 /* libPods-labnative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-labnative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		85F93B8CBE4F417DB7C2F250 /* Open Sans Extrabold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Open Sans Extrabold.ttf"; path = "../../yoga/src/Fonts/Open Sans Extrabold.ttf"; sourceTree = "<group>"; };
-		8AF51EF89BD48C55B46BF2BF /* Pods-labnative-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnative-tvOS.release.xcconfig"; path = "Target Support Files/Pods-labnative-tvOS/Pods-labnative-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		6AA843BE336E44886F15181E /* libPods-labnative-labnativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-labnative-labnativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C094E8AB30445E57B0BF26D /* Pods-labnative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnative.release.xcconfig"; path = "Target Support Files/Pods-labnative/Pods-labnative.release.xcconfig"; sourceTree = "<group>"; };
 		8C5C1F762A554EADBBCACBD1 /* Rubik-700-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-700-italic.ttf"; path = "../../yoga/src/Fonts/Rubik-700-italic.ttf"; sourceTree = "<group>"; };
-		8E52380E6B344244B4428FEB /* Open Sans Semibold Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Open Sans Semibold Italic.ttf"; path = "../../yoga/src/Fonts/Open Sans Semibold Italic.ttf"; sourceTree = "<group>"; };
-		907EBFD7B36940B2923CC84F /* Open Sans Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Open Sans Semibold.ttf"; path = "../../yoga/src/Fonts/Open Sans Semibold.ttf"; sourceTree = "<group>"; };
 		9BBC6064EAE64217AE323587 /* Rubik-700.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-700.ttf"; path = "../../yoga/src/Fonts/Rubik-700.ttf"; sourceTree = "<group>"; };
-		9D395EB894EBF65470CB5E1F /* Pods-labnative-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnative-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-labnative-tvOSTests/Pods-labnative-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B10030B232542A9019CAF1FD /* Pods-labnative-labnativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnative-labnativeTests.release.xcconfig"; path = "Target Support Files/Pods-labnative-labnativeTests/Pods-labnative-labnativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		B3F248A17DA6F5A8F51D91EA /* libPods-labnative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-labnative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E734CA5226407583552C5F /* Rubik-500.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-500.ttf"; path = "../../yoga/src/Fonts/Rubik-500.ttf"; sourceTree = "<group>"; };
-		C04EE658D24A4084AC8AC8BB /* Open Sans Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Open Sans Bold.ttf"; path = "../../yoga/src/Fonts/Open Sans Bold.ttf"; sourceTree = "<group>"; };
 		C41A3A5FEDC7439BA430B6D7 /* Rubik-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-italic.ttf"; path = "../../yoga/src/Fonts/Rubik-italic.ttf"; sourceTree = "<group>"; };
-		C74798DDD75DDE50D204E396 /* Pods-labnative-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnative-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-labnative-tvOS/Pods-labnative-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		C89C49C2D1D544088CACFC0C /* Open Sans Light Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Open Sans Light Italic.ttf"; path = "../../yoga/src/Fonts/Open Sans Light Italic.ttf"; sourceTree = "<group>"; };
 		CAC024244914682AB979E12F /* Pods-labnativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnativeTests.release.xcconfig"; path = "Target Support Files/Pods-labnativeTests/Pods-labnativeTests.release.xcconfig"; sourceTree = "<group>"; };
-		CCF217C5E13943EC8308ACE7 /* Open Sans Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Open Sans Italic.ttf"; path = "../../yoga/src/Fonts/Open Sans Italic.ttf"; sourceTree = "<group>"; };
+		CFBC752426BB260700BC28D1 /* labnative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "labnative-Bridging-Header.h"; sourceTree = "<group>"; };
 		D28BCB1007644299BE8E79A9 /* Rubik-900-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-900-italic.ttf"; path = "../../yoga/src/Fonts/Rubik-900-italic.ttf"; sourceTree = "<group>"; };
 		D573036276504B7C8845D7CC /* Rubik-300.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-300.ttf"; path = "../../yoga/src/Fonts/Rubik-300.ttf"; sourceTree = "<group>"; };
 		E65AD9D66DD8ABA4FD30AEAF /* Pods-labnative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnative.debug.xcconfig"; path = "Target Support Files/Pods-labnative/Pods-labnative.debug.xcconfig"; sourceTree = "<group>"; };
 		E6CA68BCC2D64A3EA119626B /* Rubik-300-italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-300-italic.ttf"; path = "../../yoga/src/Fonts/Rubik-300-italic.ttf"; sourceTree = "<group>"; };
-		EA390F3E55D84C7BA4A98D95 /* Open Sans Bold Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Open Sans Bold Italic.ttf"; path = "../../yoga/src/Fonts/Open Sans Bold Italic.ttf"; sourceTree = "<group>"; };
+		EB741C2FCFAC5D1D17A9D9C4 /* Pods-labnative-labnativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnative-labnativeTests.debug.xcconfig"; path = "Target Support Files/Pods-labnative-labnativeTests/Pods-labnative-labnativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FC49D91A65BA497A841FDB93 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../../yoga/src/Fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		FEA77756AD892BAB079640ED /* Pods-labnativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnativeTests.debug.xcconfig"; path = "Target Support Files/Pods-labnativeTests/Pods-labnativeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FF9973C04F904B3EBAD31F65 /* Rubik-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Black.ttf"; path = "../../yoga/src/Fonts/Rubik-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CA4A4821B6C760F828B3EC6 /* libPods-labnativeTests.a in Frameworks */,
+				BD0D3E5A2407B2895E1F8661 /* libPods-labnative-labnativeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,23 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				251778E40D712DF81EA0269A /* libPods-labnative.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E4781E0B4A5D006451C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DB02C6C59BA5634F99E5F654 /* libPods-labnative-tvOS.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E48D1E0B4A5D006451C7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28CA9359E8302D3719F980FF /* libPods-labnative-tvOSTests.a in Frameworks */,
+				3B3BC1449C00272FE5555D78 /* libPods-labnative.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,13 +110,13 @@
 		13B07FAE1A68108700A75B9A /* labnative */ = {
 			isa = PBXGroup;
 			children = (
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				CFBC752426BB260700BC28D1 /* labnative-Bridging-Header.h */,
 			);
 			name = labnative;
 			sourceTree = "<group>";
@@ -180,11 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				81E995F919639A52C7310505 /* libPods-labnative.a */,
-				3DE5A9992E90D9E07FC03F22 /* libPods-labnative-tvOS.a */,
-				6B6049714471A2CAA02B298B /* libPods-labnative-tvOSTests.a */,
-				585E721B722C4648DA851B05 /* libPods-labnativeTests.a */,
+				B3F248A17DA6F5A8F51D91EA /* libPods-labnative.a */,
+				6AA843BE336E44886F15181E /* libPods-labnative-labnativeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,26 +134,7 @@
 		80C5EAE58A6446C5AD74FDD5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EA390F3E55D84C7BA4A98D95 /* Open Sans Bold Italic.ttf */,
-				C04EE658D24A4084AC8AC8BB /* Open Sans Bold.ttf */,
-				0F651AD2D0514B36BF0F7A26 /* Open Sans Extrabold Italic.ttf */,
-				85F93B8CBE4F417DB7C2F250 /* Open Sans Extrabold.ttf */,
-				CCF217C5E13943EC8308ACE7 /* Open Sans Italic.ttf */,
-				C89C49C2D1D544088CACFC0C /* Open Sans Light Italic.ttf */,
-				6335D9A3618A4A08AAEE1B65 /* Open Sans Light.ttf */,
-				8E52380E6B344244B4428FEB /* Open Sans Semibold Italic.ttf */,
-				907EBFD7B36940B2923CC84F /* Open Sans Semibold.ttf */,
-				7CAF450DC4A34731BBC2A383 /* Open Sans.ttf */,
-				FF9973C04F904B3EBAD31F65 /* Rubik-Black.ttf */,
-				2A998E87BC074139860E73FD /* Rubik-BlackItalic.ttf */,
-				6B8C3618C118450DA10C1669 /* Rubik-Bold.ttf */,
-				27B9EEBABF30418D9C95215F /* Rubik-BoldItalic.ttf */,
 				16F35428F8D04A5EA853DF16 /* Rubik-Italic.ttf */,
-				75D4B6082CA84F52A774F286 /* Rubik-Light.ttf */,
-				22567631AC15474481B4471A /* Rubik-LightItalic.ttf */,
-				1AE2DE3B9A5C44AFA225C82D /* Rubik-Medium.ttf */,
-				1A1D212C289D4C9C92B5B7C7 /* Rubik-MediumItalic.ttf */,
-				FC49D91A65BA497A841FDB93 /* Rubik-Regular.ttf */,
 				E6CA68BCC2D64A3EA119626B /* Rubik-300-italic.ttf */,
 				D573036276504B7C8845D7CC /* Rubik-300.ttf */,
 				55DDE15917774C6AB5A11765 /* Rubik-500-italic.ttf */,
@@ -254,8 +177,6 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* labnative.app */,
 				00E356EE1AD99517003FC87E /* labnativeTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* labnative-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* labnative-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,12 +186,10 @@
 			children = (
 				E65AD9D66DD8ABA4FD30AEAF /* Pods-labnative.debug.xcconfig */,
 				8C094E8AB30445E57B0BF26D /* Pods-labnative.release.xcconfig */,
-				C74798DDD75DDE50D204E396 /* Pods-labnative-tvOS.debug.xcconfig */,
-				8AF51EF89BD48C55B46BF2BF /* Pods-labnative-tvOS.release.xcconfig */,
-				9D395EB894EBF65470CB5E1F /* Pods-labnative-tvOSTests.debug.xcconfig */,
-				7E1C96EC9B3AF689CC5BBD36 /* Pods-labnative-tvOSTests.release.xcconfig */,
 				FEA77756AD892BAB079640ED /* Pods-labnativeTests.debug.xcconfig */,
 				CAC024244914682AB979E12F /* Pods-labnativeTests.release.xcconfig */,
+				EB741C2FCFAC5D1D17A9D9C4 /* Pods-labnative-labnativeTests.debug.xcconfig */,
+				B10030B232542A9019CAF1FD /* Pods-labnative-labnativeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -286,6 +205,8 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				7FAB264A8461B933FD5DFD8F /* [CP] Embed Pods Frameworks */,
+				756361FD5F8CC726D4001D6D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,6 +228,8 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				6B9E89586AC6562BCDCC8B9D /* [CP] Embed Pods Frameworks */,
+				A039610062ACD1DA98B328D2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,53 +240,14 @@
 			productReference = 13B07F961A680F5B00A75B9A /* labnative.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* labnative-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "labnative-tvOS" */;
-			buildPhases = (
-				E711BFE8C1DCBA75989F768D /* [CP] Check Pods Manifest.lock */,
-				FD10A7F122414F3F0027D42C /* Start Packager */,
-				2D02E4771E0B4A5D006451C7 /* Sources */,
-				2D02E4781E0B4A5D006451C7 /* Frameworks */,
-				2D02E4791E0B4A5D006451C7 /* Resources */,
-				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "labnative-tvOS";
-			productName = "labnative-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* labnative-tvOS.app */;
-			productType = "com.apple.product-type.application";
-		};
-		2D02E48F1E0B4A5D006451C7 /* labnative-tvOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "labnative-tvOSTests" */;
-			buildPhases = (
-				B98EA269BF0AE845C0AECC9D /* [CP] Check Pods Manifest.lock */,
-				2D02E48C1E0B4A5D006451C7 /* Sources */,
-				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
-				2D02E48E1E0B4A5D006451C7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
-			);
-			name = "labnative-tvOSTests";
-			productName = "labnative-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* labnative-tvOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 940;
-				ORGANIZATIONNAME = Facebook;
+				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -371,24 +255,15 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = WSZS2VU62H;
-					};
-					2D02E47A1E0B4A5D006451C7 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-					};
-					2D02E48F1E0B4A5D006451C7 = {
-						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "labnative" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -399,8 +274,6 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* labnative */,
 				00E356ED1AD99517003FC87E /* labnativeTests */,
-				2D02E47A1E0B4A5D006451C7 /* labnative-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* labnative-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -432,21 +305,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D02E4791E0B4A5D006451C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E48E1E0B4A5D006451C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -464,19 +322,59 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+		6B9E89586AC6562BCDCC8B9D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-labnative/Pods-labnative-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
 			);
-			name = "Bundle React Native Code And Images";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-labnative/Pods-labnative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		756361FD5F8CC726D4001D6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-labnative-labnativeTests/Pods-labnative-labnativeTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-labnative-labnativeTests/Pods-labnative-labnativeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FAB264A8461B933FD5DFD8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-labnative-labnativeTests/Pods-labnative-labnativeTests-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-labnative-labnativeTests/Pods-labnative-labnativeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		95294D7EE22FA50B8A5458B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -493,33 +391,29 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-labnativeTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-labnative-labnativeTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B98EA269BF0AE845C0AECC9D /* [CP] Check Pods Manifest.lock */ = {
+		A039610062ACD1DA98B328D2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-labnative/Pods-labnative-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-labnative-tvOSTests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-labnative/Pods-labnative-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D547E0B850748D10EE044681 /* [CP] Check Pods Manifest.lock */ = {
@@ -544,48 +438,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E711BFE8C1DCBA75989F768D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-labnative-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Start Packager";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FD10A7F122414F3F0027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -624,23 +477,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D02E4771E0B4A5D006451C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
-				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2D02E48C1E0B4A5D006451C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2DCD954D1E0B4F2C00145EB5 /* labnativeTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -648,11 +484,6 @@
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* labnative */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
-		};
-		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* labnative-tvOS */;
-			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -671,8 +502,9 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEA77756AD892BAB079640ED /* Pods-labnativeTests.debug.xcconfig */;
+			baseConfigurationReference = EB741C2FCFAC5D1D17A9D9C4 /* Pods-labnative-labnativeTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -681,6 +513,10 @@
 				INFOPLIST_FILE = labnativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
+					"$(inherited)",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -694,13 +530,18 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CAC024244914682AB979E12F /* Pods-labnativeTests.release.xcconfig */;
+			baseConfigurationReference = B10030B232542A9019CAF1FD /* Pods-labnative-labnativeTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = labnativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
+					"$(inherited)",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -716,13 +557,19 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E65AD9D66DD8ABA4FD30AEAF /* Pods-labnative.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = WSZS2VU62H;
 				INFOPLIST_FILE = labnative/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
+					"$(inherited)",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -730,6 +577,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = labnative;
+				SWIFT_OBJC_BRIDGING_HEADER = "labnative-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -738,12 +588,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C094E8AB30445E57B0BF26D /* Pods-labnative.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WSZS2VU62H;
 				INFOPLIST_FILE = labnative/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
+					"$(inherited)",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -751,117 +607,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = labnative;
+				SWIFT_OBJC_BRIDGING_HEADER = "labnative-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
-			};
-			name = Release;
-		};
-		2D02E4971E0B4A5E006451C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C74798DDD75DDE50D204E396 /* Pods-labnative-tvOS.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "labnative-tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.labnative-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Debug;
-		};
-		2D02E4981E0B4A5E006451C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AF51EF89BD48C55B46BF2BF /* Pods-labnative-tvOS.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "labnative-tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.labnative-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Release;
-		};
-		2D02E4991E0B4A5E006451C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D395EB894EBF65470CB5E1F /* Pods-labnative-tvOSTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_TESTABILITY = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "labnative-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.labnative-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/labnative-tvOS.app/labnative-tvOS";
-				TVOS_DEPLOYMENT_TARGET = 10.1;
-			};
-			name = Debug;
-		};
-		2D02E49A1E0B4A5E006451C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E1C96EC9B3AF689CC5BBD36 /* Pods-labnative-tvOSTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "labnative-tvOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.labnative-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/labnative-tvOS.app/labnative-tvOS";
-				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
 		};
@@ -869,6 +617,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -887,6 +636,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -911,7 +661,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				"LD_RUNPATH_SEARCH_PATHS[sdk=iphonesimulator*]" = /usr/lib/swift;
+				LIBRARY_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+					"$(inherited)",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -922,6 +678,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -940,6 +697,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -957,7 +715,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+					"$(inherited)",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -981,24 +744,6 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "labnative-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2D02E4971E0B4A5E006451C7 /* Debug */,
-				2D02E4981E0B4A5E006451C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "labnative-tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2D02E4991E0B4A5E006451C7 /* Debug */,
-				2D02E49A1E0B4A5E006451C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
