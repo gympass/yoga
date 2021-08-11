@@ -1,65 +1,68 @@
 import React from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
-import { string, func, number } from 'prop-types';
-import Box from '../../Box';
-import Image from './Image';
-import Placeholder from './Placeholder';
+import { string, func, checkPropTypes } from 'prop-types';
 
-const Avatar = ({
-  src,
-  fill,
-  placeholder,
-  width,
-  height,
-  borderRadius,
-  type,
-  defaultSource,
-  elevation,
-  ...otherProps
-}) => (
+import Box from '../../Box';
+import Icon from '../../Icon';
+
+const Avatar = ({ src, alt, fill, stroke, placeholder, ...otherProps }) => (
   <Box
     bgColor="elements.selectionAndIcons"
     display="flex"
-    width={width}
-    height={height}
     alignItems="center"
     justifyContent="center"
-    elevation={elevation}
-    borderRadius={borderRadius}
+    width={48}
+    height={48}
+    borderRadius="small"
+    elevation="small"
+    overflow="hidden"
     {...otherProps}
   >
     {src ? (
-      <Image defaultSource={defaultSource} type={type} src={src} />
+      <img src={src} alt={alt} />
     ) : (
-      <Placeholder fill={fill} icon={placeholder} />
+      <Icon
+        as={placeholder}
+        width="50%"
+        height="50%"
+        fill={fill}
+        stroke={stroke}
+      />
     )}
   </Box>
 );
 
 Avatar.propTypes = {
   src: string,
+  /**  Required if src is true */
+  alt: (props, propName, componentName) => {
+    const { src } = props;
+
+    if (src) {
+      checkPropTypes(
+        { [propName]: string.isRequired },
+        props,
+        'prop',
+        componentName,
+      );
+    }
+
+    return null;
+  },
   placeholder: func,
   fill: string,
-  width: number,
-  height: number,
-  borderRadius: string,
-  type: string,
-  defaultSource: string,
-  elevation: string,
+  stroke: string,
+  ...Box.propTypes,
 };
 
 Avatar.defaultProps = {
   src: undefined,
+  alt: undefined,
   placeholder: BuildingFilled,
-  fill: undefined,
-  width: 48,
-  height: 48,
-  borderRadius: 'small',
-  type: 'default',
-  defaultSource: undefined,
-  elevation: 'small',
+  fill: 'white',
+  stroke: undefined,
+  ...Box.defaultProps,
 };
-
 Avatar.displayName = 'Avatar';
 
 export default Avatar;
