@@ -1,5 +1,5 @@
 import React from 'react';
-import { oneOf, elementType, string, instanceOf } from 'prop-types';
+import { oneOf, elementType, string, oneOfType, number } from 'prop-types';
 import { withTheme } from 'styled-components';
 
 const Icon = ({
@@ -45,10 +45,10 @@ Icon.propTypes = {
   stroke: string,
   /** Horizontal size of the SVG. Use it as one of
    * theme.spacing tokens (xxsmall, small, medium...) */
-  width: oneOf([...commonSizes, instanceOf(Number)]),
+  width: oneOfType([oneOf(commonSizes), string, number]),
   /** Vertical size of the SVG. Use it as one of
    * theme.spacing tokens (xxsmall, small, medium...) */
-  height: oneOf([...commonSizes, instanceOf(Number)]),
+  height: oneOfType([oneOf(commonSizes), string, number]),
 };
 
 Icon.defaultProps = {
