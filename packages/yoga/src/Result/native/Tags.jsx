@@ -25,9 +25,8 @@ const Wrapper = styled.ScrollView`
 const ResultTags = ({ items }) => {
   return (
     <Wrapper horizontal showsHorizontalScrollIndicator={false}>
-      {items.map(({ ...props }) => {
-        return <TagStyled size="small" {...props} />;
-      })}
+      {items &&
+        items.map(({ ...props }) => <TagStyled size="small" {...props} />)}
     </Wrapper>
   );
 };

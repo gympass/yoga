@@ -111,7 +111,7 @@ Result.defaultProps = {
   rate: undefined,
   divided: false,
   subTitle: undefined,
-  children: {},
+  children: undefined,
 };
 
 export default withTheme(Result);

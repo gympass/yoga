@@ -49,22 +49,23 @@ const Attendances = ({ attendances, rate }) => (
     flexDirection="row"
   >
     <List numberOfLines={1} size="xsmall" textAlignVertical="bottom">
-      {attendances.map(({ description, icon }) => (
-        <>
-          <IconWrapper>
-            <Icon
-              as={icon}
-              fill="medium"
-              width="100%"
-              height="100%"
-              style={{ marginTop: 3 }}
-            />
-          </IconWrapper>
-          <ItemSeparator />
-          {description}
-          <ItemSeparator />
-        </>
-      ))}
+      {attendances &&
+        attendances.map(({ description, icon }) => (
+          <>
+            <IconWrapper>
+              <Icon
+                as={icon}
+                fill="medium"
+                width="100%"
+                height="100%"
+                style={{ marginTop: 3 }}
+              />
+            </IconWrapper>
+            <ItemSeparator />
+            {description}
+            <ItemSeparator />
+          </>
+        ))}
     </List>
     {rate && <Rate rate={rate} />}
   </Box>

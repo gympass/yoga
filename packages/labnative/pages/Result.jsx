@@ -6,6 +6,8 @@ import {
   Youtube,
   PinFilled,
   SmartphoneFilled,
+  HomeFilled,
+  Accessibility,
 } from '@gympass/yoga-icons';
 import avatar from '../assets/images/avatarIcons/avatar.png';
 import classAvatar from '../assets/images/avatarIcons/class.png';
@@ -44,6 +46,7 @@ const entrancesExample1 = [
   {
     children: 'From 7:30 am to 9:00 pm',
     variant: 'stamina',
+    icon: PinFilled,
   },
 ];
 
@@ -85,8 +88,16 @@ const activitieExample2 = [
 
 const attendancesExample3 = [
   {
+    description: 'In-Person',
+    icon: Accessibility,
+  },
+  {
     description: 'Online',
-    icon: Youtube,
+    icon: HomeFilled,
+  },
+  {
+    description: 'Group',
+    icon: PinFilled,
   },
 ];
 
@@ -99,6 +110,11 @@ const entrancesExample3 = [
 const activitiesExample3 = [
   {
     children: 'Yoga',
+    variant: 'deep',
+    icon: BuildingFilled,
+  },
+  {
+    children: 'Pilates',
     variant: 'deep',
   },
 ];
@@ -154,7 +170,7 @@ const ResultPage = () => (
           items={activitiesExample1}
           renderItem={Text.Small}
           dots
-          limit={2}
+          limit={3}
           limitLabel="activities"
         />
         <Result.Tags items={tagsList} />
@@ -183,8 +199,9 @@ const ResultPage = () => (
       </Result>
     </ResultWrapper>
     <ResultWrapper>
+      <DocTitle />
       <Result
-        avatar={<Avatar.Circle src={classAvatar} />}
+        avatar={<Avatar.Circle />}
         attendances={attendancesExample3}
         title="John"
       >
@@ -198,6 +215,16 @@ const ResultPage = () => (
           renderItem={Text.Small}
           dots
         />
+      </Result>
+    </ResultWrapper>
+    <ResultWrapper>
+      <DocTitle />
+      <Result
+        avatar={<Avatar.Circle src={classAvatar} />}
+        attendances={attendancesExample3}
+        title="John"
+      >
+        <Result.Button>Upgrade</Result.Button>
       </Result>
     </ResultWrapper>
   </ScrollView>
