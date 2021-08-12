@@ -722,7 +722,7 @@ exports[`<Result /> should match snapshot 1`] = `
           </Text>
         </Text>
       </View>
-      <ScrollView
+      <RCTScrollView
         horizontal={true}
         showsHorizontalScrollIndicator={false}
         style={
@@ -735,129 +735,131 @@ exports[`<Result /> should match snapshot 1`] = `
           ]
         }
       >
-        <View
-          size="small"
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#E0DFFF",
-                "borderColor": "#E0DFFF",
-                "borderRadius": 4,
-                "borderWidth": 1,
-                "justifyContent": "center",
-                "paddingBottom": 0,
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 0,
-                "width": "auto",
-              },
-              Object {
-                "marginRight": 4,
-              },
-            ]
-          }
-          variant="informative"
-        >
+        <View>
           <View
+            size="small"
             style={
               Array [
                 Object {
                   "alignItems": "center",
-                  "flexDirection": "row",
+                  "backgroundColor": "#E0DFFF",
+                  "borderColor": "#E0DFFF",
+                  "borderRadius": 4,
+                  "borderWidth": 1,
                   "justifyContent": "center",
+                  "paddingBottom": 0,
+                  "paddingLeft": 4,
+                  "paddingRight": 4,
+                  "paddingTop": 0,
+                  "width": "auto",
+                },
+                Object {
+                  "marginRight": 4,
                 },
               ]
             }
+            variant="informative"
           >
-            <Text
-              inverted={false}
-              light={false}
-              size="medium"
+            <View
               style={
                 Array [
                   Object {
-                    "color": "#231B22",
-                    "fontFamily": "Rubik",
-                    "fontSize": 16,
-                    "fontWeight": "400",
-                    "lineHeight": 24,
-                  },
-                  Object {
-                    "color": "#231B22",
-                    "fontSize": 12,
-                    "fontWeight": "500",
-                    "lineHeight": 16,
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
                   },
                 ]
               }
             >
-              Plan x Product availability
-            </Text>
+              <Text
+                inverted={false}
+                light={false}
+                size="medium"
+                style={
+                  Array [
+                    Object {
+                      "color": "#231B22",
+                      "fontFamily": "Rubik",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                      "lineHeight": 24,
+                    },
+                    Object {
+                      "color": "#231B22",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                Plan x Product availability
+              </Text>
+            </View>
           </View>
-        </View>
-        <View
-          size="small"
-          style={
-            Array [
-              Object {
-                "alignItems": "center",
-                "backgroundColor": "#FCD6C3",
-                "borderColor": "#FCD6C3",
-                "borderRadius": 4,
-                "borderWidth": 1,
-                "justifyContent": "center",
-                "paddingBottom": 0,
-                "paddingLeft": 4,
-                "paddingRight": 4,
-                "paddingTop": 0,
-                "width": "auto",
-              },
-              Object {
-                "marginRight": 4,
-              },
-            ]
-          }
-          variant="attention"
-        >
           <View
+            size="small"
             style={
               Array [
                 Object {
                   "alignItems": "center",
-                  "flexDirection": "row",
+                  "backgroundColor": "#FCD6C3",
+                  "borderColor": "#FCD6C3",
+                  "borderRadius": 4,
+                  "borderWidth": 1,
                   "justifyContent": "center",
+                  "paddingBottom": 0,
+                  "paddingLeft": 4,
+                  "paddingRight": 4,
+                  "paddingTop": 0,
+                  "width": "auto",
+                },
+                Object {
+                  "marginRight": 4,
                 },
               ]
             }
+            variant="attention"
           >
-            <Text
-              inverted={false}
-              light={false}
-              size="medium"
+            <View
               style={
                 Array [
                   Object {
-                    "color": "#231B22",
-                    "fontFamily": "Rubik",
-                    "fontSize": 16,
-                    "fontWeight": "400",
-                    "lineHeight": 24,
-                  },
-                  Object {
-                    "color": "#231B22",
-                    "fontSize": 12,
-                    "fontWeight": "500",
-                    "lineHeight": 16,
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
                   },
                 ]
               }
             >
-              Restriction
-            </Text>
+              <Text
+                inverted={false}
+                light={false}
+                size="medium"
+                style={
+                  Array [
+                    Object {
+                      "color": "#231B22",
+                      "fontFamily": "Rubik",
+                      "fontSize": 16,
+                      "fontWeight": "400",
+                      "lineHeight": 24,
+                    },
+                    Object {
+                      "color": "#231B22",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "lineHeight": 16,
+                    },
+                  ]
+                }
+              >
+                Restriction
+              </Text>
+            </View>
           </View>
         </View>
-      </ScrollView>
+      </RCTScrollView>
       <TouchableWithoutFeedback
         style={
           Array [
