@@ -10,8 +10,8 @@ const ResultButton = styled(Button.Link)`
     },
   }) => {
     return `
-      margin-top: ${xxsmall};
-      margin-right:${xlarge}
+      margin-top: ${xxsmall}px;
+      margin-right: ${xlarge}px;
     `;
   }}
 `;

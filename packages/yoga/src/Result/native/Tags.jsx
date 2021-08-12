@@ -18,15 +18,16 @@ const Wrapper = styled.ScrollView`
       },
     },
   }) => `
-  margin-top: ${xxsmall}px;
+    margin-top: ${xxsmall}px;
   `}
 `;
 
 const ResultTags = ({ items }) => {
   return (
     <Wrapper horizontal showsHorizontalScrollIndicator={false}>
-      {items &&
-        items.map(({ ...props }) => <TagStyled size="small" {...props} />)}
+      {items.map(({ ...props }) => (
+        <TagStyled size="small" {...props} />
+      ))}
     </Wrapper>
   );
 };
@@ -34,19 +35,10 @@ const ResultTags = ({ items }) => {
 ResultTags.displayName = 'Result.Tags';
 
 ResultTags.propTypes = {
-  /** Tags to render in the component. For example:
-   * items = {[
-            {
-            children: 'Plan x Product availability',
-            variant: 'informative',
-          },
-        ]}
-   * */
-  items: arrayOf(shape({})),
-};
-
-ResultTags.defaultProps = {
-  items: [],
+  /** Props to generate each Tag. See
+   *  [Tag](https://gympass.github.io/yoga/components/tag/default) for details
+   */
+  items: arrayOf(shape({})).isRequired,
 };
 
 export default ResultTags;

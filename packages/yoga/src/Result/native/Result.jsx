@@ -1,5 +1,5 @@
 import React, { isValidElement } from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 import { arrayOf, string, shape, func, boolean, node } from 'prop-types';
 import Text from '../../Text';
 import Attendances from './Attendances';
@@ -38,8 +38,8 @@ const Content = styled.View`
     },
   }) => {
     return `
-      margin-left:${small};
-      margin-bottom:${large};
+      margin-left:${small}px;
+      margin-bottom:${large}px;
     `;
   }}
 `;
@@ -54,8 +54,8 @@ const Title = styled(Text.Medium)`
     },
   }) => {
     return `
-      line-height:${medium}
-      margin-top: ${xxxsmall};
+      line-height: ${medium}px;
+      margin-top: ${xxxsmall}px;
     `;
   }}
 `;
@@ -114,4 +114,4 @@ Result.defaultProps = {
   children: undefined,
 };
 
-export default withTheme(Result);
+export default Result;

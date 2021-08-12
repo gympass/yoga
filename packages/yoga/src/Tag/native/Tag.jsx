@@ -9,7 +9,7 @@ export const StyledTag = styled.View`
 
   ${({
     variant,
-    size,
+    small,
     theme: {
       yoga: {
         colors: {
@@ -24,7 +24,7 @@ export const StyledTag = styled.View`
   }) => `
     width: auto;
      ${
-       size === 'small'
+       small
          ? `
             padding:
               0

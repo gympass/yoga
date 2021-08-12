@@ -218,7 +218,6 @@ const ResultPage = () => (
       </Result>
     </ResultWrapper>
     <ResultWrapper>
-      <DocTitle />
       <Result
         avatar={<Avatar.Circle src={classAvatar} />}
         attendances={attendancesExample3}

@@ -11,7 +11,7 @@ const StyledTag = styled.div`
 
   ${({
     variant,
-    size,
+    small,
     theme: {
       yoga: {
         colors: {
@@ -27,7 +27,7 @@ const StyledTag = styled.div`
     },
   }) => `
     ${
-      size === 'small'
+      small
         ? `
                padding:
                   0
