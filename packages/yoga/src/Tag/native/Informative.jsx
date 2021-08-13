@@ -81,7 +81,6 @@ TagInformative.propTypes = {
   variant: oneOf(['success', 'informative', 'attention']).isRequired,
   icon: func,
   children: node.isRequired,
-  /** Can send small to use this variant */
   small: bool,
 };
 

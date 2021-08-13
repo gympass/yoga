@@ -1,7 +1,7 @@
 const Tag = ({ spacing, fontSizes, fontWeights, radii, borders }) => ({
   icon: {
     size: {
-      default: spacing.large,
+      default: spacing.small,
       small: spacing.xsmall,
     },
     margin: {

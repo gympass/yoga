@@ -29,19 +29,18 @@ const StyledTag = styled.div`
     ${
       small
         ? `
-               padding:
-                  0
-                  ${tag.padding.small.right}px
-                  0
-                  ${tag.padding.small.left}px;
+            padding:
+              0
+              ${tag.padding.small.right}px
+              0
+              ${tag.padding.small.left}px;
           `
         : `
-                padding:
-                  ${tag.padding.default.top}px
-                  ${tag.padding.default.right}px
-                  ${tag.padding.default.bottom}px
-                  ${tag.padding.default.left}px;
-
+            padding:
+              ${tag.padding.default.top}px
+              ${tag.padding.default.right}px
+              ${tag.padding.default.bottom}px
+              ${tag.padding.default.left}px;
           `
     }
    
