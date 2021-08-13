@@ -509,7 +509,7 @@ exports[`<Result /> should match snapshot 1`] = `
           ]
         }
       >
-        Partner Name
+        Jane Doe
       </Text>
       <Text
         numberOfLines={1}
@@ -772,17 +772,13 @@ exports[`<Result /> should match snapshot 1`] = `
               }
             >
               <Text
-                inverted={false}
-                light={false}
-                size="medium"
                 style={
                   Array [
                     Object {
                       "color": "#231B22",
                       "fontFamily": "Rubik",
                       "fontSize": 16,
-                      "fontWeight": "400",
-                      "lineHeight": 24,
+                      "fontWeight": "500",
                     },
                     Object {
                       "color": "#231B22",
@@ -833,17 +829,13 @@ exports[`<Result /> should match snapshot 1`] = `
               }
             >
               <Text
-                inverted={false}
-                light={false}
-                size="medium"
                 style={
                   Array [
                     Object {
                       "color": "#231B22",
                       "fontFamily": "Rubik",
                       "fontSize": 16,
-                      "fontWeight": "400",
-                      "lineHeight": 24,
+                      "fontWeight": "500",
                     },
                     Object {
                       "color": "#231B22",
@@ -897,7 +889,7 @@ exports[`<Result /> should match snapshot 1`] = `
               ]
             }
           >
-            Link Button
+            See Details
           </Text>
         </View>
       </TouchableWithoutFeedback>

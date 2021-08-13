@@ -1,10 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-
 import { BuildingFilled } from '@gympass/yoga-icons';
+
 import { ThemeProvider } from '../..';
 import Result from './Result';
-
 import Avatar from '../../Avatar';
 import Text from '../../Text';
 
@@ -64,7 +63,7 @@ describe('<Result />', () => {
           rate="5.0"
           avatar={<Avatar.Circle />}
           attendances={attendanceList}
-          title="Partner Name"
+          title="Jane Doe"
           subTitle="Activity"
           divided
         >
@@ -74,9 +73,10 @@ describe('<Result />', () => {
             dots
             limit={3}
             renderItem={Text.Small}
+            limitLabel="activities"
           />
           <Result.Tags items={tagsList} />
-          <Result.Button>Link Button</Result.Button>
+          <Result.Button>See Details</Result.Button>
         </Result>
       </ThemeProvider>,
     );

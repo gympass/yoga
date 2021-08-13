@@ -196,10 +196,12 @@ const ResultPage = () => (
           renderItem={Text.Small}
           dots
         />
+        <Result.Tags items={tagsList} />
+        <Result.Button>Select</Result.Button>
       </Result>
     </ResultWrapper>
     <ResultWrapper>
-      <DocTitle />
+      <DocTitle>Default Result With Circle Avatar Without button</DocTitle>
       <Result
         avatar={<Avatar.Circle />}
         attendances={attendancesExample3}
@@ -218,12 +220,13 @@ const ResultPage = () => (
       </Result>
     </ResultWrapper>
     <ResultWrapper>
+      <DocTitle>Result With Circle Avatar with button</DocTitle>
       <Result
         avatar={<Avatar.Circle src={classAvatar} />}
         attendances={attendancesExample3}
         title="John"
       >
-        <Result.Button>Upgrade</Result.Button>
+        <Result.Button>See Details</Result.Button>
       </Result>
     </ResultWrapper>
   </ScrollView>

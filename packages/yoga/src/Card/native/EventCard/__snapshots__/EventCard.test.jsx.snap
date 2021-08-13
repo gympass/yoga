@@ -1117,7 +1117,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                       "right": 4,
                     },
                     "size": Object {
-                      "default": 24,
+                      "default": 16,
                       "small": 12,
                     },
                   },
@@ -2552,7 +2552,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                       "right": 4,
                     },
                     "size": Object {
-                      "default": 24,
+                      "default": 16,
                       "small": 12,
                     },
                   },
@@ -3983,7 +3983,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                       "right": 4,
                     },
                     "size": Object {
-                      "default": 24,
+                      "default": 16,
                       "small": 12,
                     },
                   },
@@ -5418,7 +5418,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                       "right": 4,
                     },
                     "size": Object {
-                      "default": 24,
+                      "default": 16,
                       "small": 12,
                     },
                   },
@@ -6853,7 +6853,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                       "right": 4,
                     },
                     "size": Object {
-                      "default": 24,
+                      "default": 16,
                       "small": 12,
                     },
                   },
