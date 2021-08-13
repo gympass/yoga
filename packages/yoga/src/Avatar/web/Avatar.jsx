@@ -5,7 +5,7 @@ import { string, func, checkPropTypes } from 'prop-types';
 import Box from '../../Box';
 import Icon from '../../Icon';
 
-const Avatar = ({ src, alt, fill, stroke, placeholder, ...otherProps }) => (
+const Avatar = ({ src, alt, fill, stroke, icon, ...otherProps }) => (
   <Box
     bgColor="elements.selectionAndIcons"
     display="flex"
@@ -21,13 +21,7 @@ const Avatar = ({ src, alt, fill, stroke, placeholder, ...otherProps }) => (
     {src ? (
       <img src={src} alt={alt} />
     ) : (
-      <Icon
-        as={placeholder}
-        width="50%"
-        height="50%"
-        fill={fill}
-        stroke={stroke}
-      />
+      <Icon as={icon} width="50%" height="50%" fill={fill} stroke={stroke} />
     )}
   </Box>
 );
@@ -49,7 +43,19 @@ Avatar.propTypes = {
 
     return null;
   },
-  placeholder: func,
+  icon: (props, propName, componentName) => {
+    const { src } = props;
+
+    if (src) {
+      return new Error(
+        `Invalid prop ${propName} supplied to ${componentName}.`,
+      );
+    }
+
+    checkPropTypes({ [propName]: func }, props, 'prop', componentName);
+
+    return null;
+  },
   fill: string,
   stroke: string,
   ...Box.propTypes,
@@ -58,7 +64,7 @@ Avatar.propTypes = {
 Avatar.defaultProps = {
   src: undefined,
   alt: undefined,
-  placeholder: BuildingFilled,
+  icon: BuildingFilled,
   fill: 'white',
   stroke: undefined,
   ...Box.defaultProps,
