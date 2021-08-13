@@ -82,6 +82,7 @@ const ResultDetails = ({
 }) => {
   const refinedList = limit !== 0 ? items.slice(0, limit) : items;
   const numberOfItemsLeft = items.length - limit;
+
   return (
     <Wrapper>
       <Container numberOfLines={1}>
@@ -140,7 +141,8 @@ ResultDetails.displayName = 'Result.Details';
 ResultDetails.propTypes = {
   /** Props to be passed to each component at `renderItem` */
   items: arrayOf(shape({})).isRequired,
-  /** If has limit of items to show in component.Other with show with + 4 for example
+  /** If has limit of items to show in component.Other with show with + 4 for
+   * example
    * */
   limit: number,
   /** If is necessary show a label after the limit.Example + 4 activities */

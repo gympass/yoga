@@ -38,8 +38,8 @@ const Content = styled.View`
     },
   }) => {
     return `
-      margin-left:${small}px;
-      margin-bottom:${large}px;
+      margin-left: ${small}px;
+      margin-bottom: ${large}px;
     `;
   }}
 `;
@@ -60,7 +60,10 @@ const Title = styled(Text.Medium)`
   }}
 `;
 
-/** The Result component is used when you have a list to show. It is applied to the item individually, and has the option of being applied to different formats based on the applied context. */
+/**
+ * The Result component is used when you have a list to show. It is applied to
+ * the item individually, and has the option of being applied to different
+ * formats based on the applied context. */
 const Result = ({
   avatar: Avatar,
   attendances,

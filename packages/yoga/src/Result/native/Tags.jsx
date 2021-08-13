@@ -22,22 +22,18 @@ const Wrapper = styled.ScrollView`
   `}
 `;
 
-const ResultTags = ({ items }) => {
-  return (
-    <Wrapper horizontal showsHorizontalScrollIndicator={false}>
-      {items.map(({ ...props }) => (
-        <TagStyled size="small" {...props} />
-      ))}
-    </Wrapper>
-  );
-};
+const ResultTags = ({ items }) => (
+  <Wrapper horizontal showsHorizontalScrollIndicator={false}>
+    {items.map(({ ...props }) => (
+      <TagStyled size="small" {...props} />
+    ))}
+  </Wrapper>
+);
 
 ResultTags.displayName = 'Result.Tags';
 
 ResultTags.propTypes = {
-  /** Props to generate each Tag. See
-   *  [Tag](https://gympass.github.io/yoga/components/tag/default) for details
-   */
+  /** Props to generate each Tag. See Tag for details */
   items: arrayOf(shape({})).isRequired,
 };
 
