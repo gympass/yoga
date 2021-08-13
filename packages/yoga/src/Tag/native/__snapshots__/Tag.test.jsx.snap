@@ -11,6 +11,7 @@ exports[`<Tag /> should match snapshot 1`] = `
   }
 >
   <View
+    small={false}
     style={
       Array [
         Object {
@@ -63,6 +64,7 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
   }
 >
   <View
+    small={false}
     style={
       Array [
         Object {
@@ -329,6 +331,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
   }
 >
   <View
+    small={false}
     style={
       Array [
         Object {
@@ -368,6 +371,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     </Text>
   </View>
   <View
+    small={false}
     style={
       Array [
         Object {
@@ -407,6 +411,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     </Text>
   </View>
   <View
+    small={false}
     style={
       Array [
         Object {
@@ -499,6 +504,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
   }
 >
   <View
+    small={false}
     style={
       Array [
         Object {
@@ -552,6 +558,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
     </View>
   </View>
   <View
+    small={false}
     style={
       Array [
         Object {
@@ -605,6 +612,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
     </View>
   </View>
   <View
+    small={false}
     style={
       Array [
         Object {
@@ -725,6 +733,7 @@ exports[`<Tag /> should match snapshot with without icon and informative type 1`
   }
 >
   <View
+    small={false}
     style={
       Array [
         Object {

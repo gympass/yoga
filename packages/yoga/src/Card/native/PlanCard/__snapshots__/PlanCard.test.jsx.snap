@@ -78,6 +78,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         variant="deepPurple"
       />
       <View
+        small={false}
         style={
           Array [
             Object {
