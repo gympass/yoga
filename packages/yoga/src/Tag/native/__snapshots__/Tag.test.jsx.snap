@@ -30,22 +30,17 @@ exports[`<Tag /> should match snapshot 1`] = `
     variant=""
   >
     <Text
-      inverted={false}
-      light={false}
-      size="medium"
       style={
         Array [
           Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
-            "lineHeight": 24,
+            "fontWeight": "500",
           },
           Object {
             "color": "#6B6B78",
             "fontSize": 12,
-            "fontWeight": "500",
             "lineHeight": 16,
           },
         ]
@@ -99,11 +94,11 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
       }
     >
       <RNSVGSvgView
-        bbHeight={24}
-        bbWidth={24}
+        bbHeight={16}
+        bbWidth={16}
         fill="#231B22"
         focusable={false}
-        height={24}
+        height={16}
         style={
           Array [
             Object {
@@ -118,12 +113,12 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
             },
             Object {
               "flex": 0,
-              "height": 24,
-              "width": 24,
+              "height": 16,
+              "width": 16,
             },
           ]
         }
-        width={24}
+        width={16}
       >
         <RNSVGGroup
           fill={
@@ -172,17 +167,140 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
         />
       </RNSVGSvgView>
       <Text
-        inverted={false}
-        light={false}
-        size="medium"
         style={
           Array [
             Object {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "400",
-              "lineHeight": 24,
+              "fontWeight": "500",
+            },
+            Object {
+              "color": "#231B22",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        success with custom icon
+      </Text>
+    </View>
+  </View>
+  <View
+    small={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C1EEDB",
+          "borderColor": "#C1EEDB",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 0,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 0,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="success"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <RNSVGSvgView
+        bbHeight={12}
+        bbWidth={12}
+        fill="#231B22"
+        focusable={false}
+        height={12}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            Object {
+              "marginRight": 4,
+            },
+            Object {
+              "opacity": 1,
+            },
+            Object {
+              "flex": 0,
+              "height": 12,
+              "width": 12,
+            },
+          ]
+        }
+        width={12}
+      >
+        <RNSVGGroup
+          fill={
+            Array [
+              0,
+              4280490786,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={Object {}}
+          matrix={
+            Array [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            Array [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "500",
             },
             Object {
               "color": "#231B22",
@@ -230,22 +348,17 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     variant="success"
   >
     <Text
-      inverted={false}
-      light={false}
-      size="medium"
       style={
         Array [
           Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
-            "lineHeight": 24,
+            "fontWeight": "500",
           },
           Object {
             "color": "#1D856C",
             "fontSize": 12,
-            "fontWeight": "500",
             "lineHeight": 16,
           },
         ]
@@ -274,22 +387,17 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     variant="informative"
   >
     <Text
-      inverted={false}
-      light={false}
-      size="medium"
       style={
         Array [
           Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
-            "lineHeight": 24,
+            "fontWeight": "500",
           },
           Object {
             "color": "#7068D4",
             "fontSize": 12,
-            "fontWeight": "500",
             "lineHeight": 16,
           },
         ]
@@ -318,28 +426,63 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     variant="attention"
   >
     <Text
-      inverted={false}
-      light={false}
-      size="medium"
       style={
         Array [
           Object {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "400",
-            "lineHeight": 24,
+            "fontWeight": "500",
           },
           Object {
             "color": "#FF874C",
             "fontSize": 12,
-            "fontWeight": "500",
             "lineHeight": 16,
           },
         ]
       }
     >
       attention
+    </Text>
+  </View>
+  <View
+    small={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderColor": "#FF874C",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 0,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 0,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="attention"
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "500",
+          },
+          Object {
+            "color": "#FF874C",
+            "fontSize": 12,
+            "lineHeight": 16,
+          },
+        ]
+      }
+    >
+      attention small
     </Text>
   </View>
 </View>
@@ -387,17 +530,13 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
       }
     >
       <Text
-        inverted={false}
-        light={false}
-        size="medium"
         style={
           Array [
             Object {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "400",
-              "lineHeight": 24,
+              "fontWeight": "500",
             },
             Object {
               "color": "#231B22",
@@ -444,17 +583,13 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
       }
     >
       <Text
-        inverted={false}
-        light={false}
-        size="medium"
         style={
           Array [
             Object {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "400",
-              "lineHeight": 24,
+              "fontWeight": "500",
             },
             Object {
               "color": "#231B22",
@@ -501,17 +636,13 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
       }
     >
       <Text
-        inverted={false}
-        light={false}
-        size="medium"
         style={
           Array [
             Object {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "400",
-              "lineHeight": 24,
+              "fontWeight": "500",
             },
             Object {
               "color": "#231B22",
@@ -523,6 +654,60 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
         }
       >
         attention
+      </Text>
+    </View>
+  </View>
+  <View
+    small={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FCD6C3",
+          "borderColor": "#FCD6C3",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 0,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 0,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="attention"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "500",
+            },
+            Object {
+              "color": "#231B22",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        attention small
       </Text>
     </View>
   </View>
@@ -571,17 +756,67 @@ exports[`<Tag /> should match snapshot with without icon and informative type 1`
       }
     >
       <Text
-        inverted={false}
-        light={false}
-        size="medium"
         style={
           Array [
             Object {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
-              "fontWeight": "400",
-              "lineHeight": 24,
+              "fontWeight": "500",
+            },
+            Object {
+              "color": "#231B22",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        success without icon
+      </Text>
+    </View>
+  </View>
+  <View
+    small={true}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C1EEDB",
+          "borderColor": "#C1EEDB",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 0,
+          "paddingLeft": 4,
+          "paddingRight": 4,
+          "paddingTop": 0,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="success"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "500",
             },
             Object {
               "color": "#231B22",

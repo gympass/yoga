@@ -40,17 +40,16 @@ export const StyledTag = styled.View`
               ${tag.padding.default.left}px;
           `
      }
-    
 
     border-radius: ${tag.border.radius}px;
     border-width: ${tag.border.width}px;
     border-color: ${borderColor.dark};
-    
-    
   `}
 `;
 
-export const StyledText = styled(({ variant, ...rest }) => <Text {...rest} />)`
+export const StyledText = styled(({ variant, ...rest }) => (
+  <Text.Medium {...rest} />
+))`
   ${({
     variant,
     theme: {
@@ -67,7 +66,6 @@ export const StyledText = styled(({ variant, ...rest }) => <Text {...rest} />)`
 
     font-size: ${tag.font.size}px;
     line-height: ${tag.font.lineHeight}px;
-    font-weight: ${tag.font.weight};
   `}
 `;
 

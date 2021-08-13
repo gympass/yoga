@@ -116,17 +116,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           }
         >
           <Text
-            inverted={false}
-            light={false}
-            size="medium"
             style={
               Array [
                 Object {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
                   "fontSize": 16,
-                  "fontWeight": "400",
-                  "lineHeight": 24,
+                  "fontWeight": "500",
                 },
                 Object {
                   "color": "#231B22",
