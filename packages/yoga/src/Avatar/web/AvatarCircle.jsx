@@ -1,10 +1,7 @@
 import React from 'react';
-import { UserFilled } from '@gympass/yoga-icons';
 import Avatar from './Avatar';
 
-const AvatarCircle = props => (
-  <Avatar {...props} borderRadius="circle" placeholder={UserFilled} />
-);
+const AvatarCircle = props => <Avatar {...props} borderRadius="circle" />;
 
 AvatarCircle.propTypes = Avatar.propTypes;
 
