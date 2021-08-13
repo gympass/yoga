@@ -24,8 +24,9 @@ const Avatar = ({
     height={height}
     alignItems="center"
     justifyContent="center"
-    elevation={elevation}
     borderRadius={borderRadius}
+    boxShadow="small"
+    style={{ elevation: 4 }}
     {...otherProps}
   >
     {src ? (

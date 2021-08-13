@@ -14,8 +14,8 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
     alignItems="center"
     bgColor="elements.selectionAndIcons"
     borderRadius="circle"
+    boxShadow="small"
     display="flex"
-    elevation="small"
     height={48}
     justifyContent="center"
     style={
@@ -35,6 +35,9 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
           "shadowOpacity": 1,
           "shadowRadius": 6,
           "width": 48,
+        },
+        Object {
+          "elevation": 4,
         },
       ]
     }
@@ -129,8 +132,8 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
     alignItems="center"
     bgColor="elements.selectionAndIcons"
     borderRadius="circle"
+    boxShadow="small"
     display="flex"
-    elevation="small"
     height={48}
     justifyContent="center"
     style={
@@ -150,6 +153,9 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
           "shadowOpacity": 1,
           "shadowRadius": 6,
           "width": 48,
+        },
+        Object {
+          "elevation": 4,
         },
       ]
     }
@@ -244,8 +250,8 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
     alignItems="center"
     bgColor="elements.selectionAndIcons"
     borderRadius="small"
+    boxShadow="small"
     display="flex"
-    elevation="small"
     height={78}
     justifyContent="center"
     style={
@@ -265,6 +271,9 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
           "shadowOpacity": 1,
           "shadowRadius": 6,
           "width": 78,
+        },
+        Object {
+          "elevation": 4,
         },
       ]
     }
@@ -359,8 +368,8 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
     alignItems="center"
     bgColor="elements.selectionAndIcons"
     borderRadius="small"
+    boxShadow="small"
     display="flex"
-    elevation="small"
     height={48}
     justifyContent="center"
     style={
@@ -380,6 +389,9 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
           "shadowOpacity": 1,
           "shadowRadius": 6,
           "width": 48,
+        },
+        Object {
+          "elevation": 4,
         },
       ]
     }
