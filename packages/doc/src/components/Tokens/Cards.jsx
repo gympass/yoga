@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { arrayOf, oneOfType, shape, number, string, any } from 'prop-types';
+import { arrayOf, oneOfType, shape, number, string } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
 import withToken from './withToken';
 
@@ -67,7 +67,7 @@ Cards.propTypes = {
       id: oneOfType([string, number]),
       key: string,
       alias: string,
-      value: any,
+      value: oneOfType([string, number]),
     }),
   ).isRequired,
   example: shape({

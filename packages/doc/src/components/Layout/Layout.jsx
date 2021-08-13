@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { arrayOf, object, shape, bool } from 'prop-types';
+import { arrayOf, shape, bool } from 'prop-types';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 import { ThemeProvider } from '@gympass/yoga';
@@ -199,7 +199,7 @@ HeaderLink.defaultProps = {
 };
 
 Layout.propTypes = {
-  nav: arrayOf(object).isRequired,
+  nav: arrayOf(shape({})).isRequired,
   doc: shape({}).isRequired,
   data: shape({}).isRequired,
 };

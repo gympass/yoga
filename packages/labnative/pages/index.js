@@ -18,6 +18,7 @@ import Icon from './Icon';
 import Chips from './Chips';
 import Box from './Box';
 import Avatar from './Avatar';
+import Result from './Result';
 
 export {
   Button,
@@ -40,4 +41,5 @@ export {
   Chips,
   Box,
   Avatar,
+  Result,
 };

@@ -167,7 +167,8 @@
       "profile": "https://www.linkedin.com/in/alycecristines/",
       "contributions": [
         "code",
-        "doc"
+        "doc",
+        "bug"
       ]
     },
     {
@@ -232,6 +233,16 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/46993493?v=4",
       "profile": "https://mmartins.vercel.app/",
       "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "LeticiaSoares",
+      "name": "Leticia Soares ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11762938?v=4",
+      "profile": "https://www.linkedin.com/in/leticiasoaresfrontenddeveloper/",
+      "contributions": [
+        "code",
         "doc"
       ]
     }

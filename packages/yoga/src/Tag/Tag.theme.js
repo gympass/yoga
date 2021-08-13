@@ -1,6 +1,9 @@
 const Tag = ({ spacing, fontSizes, fontWeights, radii, borders }) => ({
   icon: {
-    size: spacing.small,
+    size: {
+      default: spacing.small,
+      small: spacing.xsmall,
+    },
     margin: {
       right: spacing.xxxsmall,
     },
@@ -11,10 +14,18 @@ const Tag = ({ spacing, fontSizes, fontWeights, radii, borders }) => ({
     weight: fontWeights.medium,
   },
   padding: {
-    top: spacing.xxxsmall,
-    right: spacing.xxsmall,
-    bottom: spacing.xxxsmall,
-    left: spacing.xxsmall,
+    default: {
+      top: spacing.xxxsmall,
+      right: spacing.xxsmall,
+      bottom: spacing.xxxsmall,
+      left: spacing.xxsmall,
+    },
+    small: {
+      top: spacing.zero,
+      right: spacing.xxxsmall,
+      bottom: spacing.zero,
+      left: spacing.xxxsmall,
+    },
   },
   border: {
     width: borders.small,

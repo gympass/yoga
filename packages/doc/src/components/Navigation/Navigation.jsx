@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Link, navigate } from 'gatsby';
-import { arrayOf, object, func, bool, shape, number, string } from 'prop-types';
+import { arrayOf, func, bool, shape, number, string } from 'prop-types';
 
 import Arrow from 'images/arrow-dropdown.svg';
 import createTree from './tree';
@@ -248,7 +248,7 @@ const Navigation = ({ items, toggleMenu, opened, prefix }) => {
 };
 
 Navigation.propTypes = {
-  items: arrayOf(object).isRequired,
+  items: arrayOf(shape({})).isRequired,
   toggleMenu: func.isRequired,
   opened: bool.isRequired,
   prefix: bool.isRequired,

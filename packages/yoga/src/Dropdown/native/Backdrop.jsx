@@ -93,6 +93,7 @@ const Backdrop = ({
       toValue,
       duration: transition.duration[0],
       easing: Easing.out(Easing.ease),
+      useNativeDriver: false,
     }).start(() => !visible && toggleIsOpen(false));
 
   useEffect(() => {

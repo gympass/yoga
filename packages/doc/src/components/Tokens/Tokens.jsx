@@ -1,14 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  arrayOf,
-  oneOfType,
-  shape,
-  number,
-  bool,
-  string,
-  any,
-} from 'prop-types';
+import { arrayOf, oneOfType, shape, number, bool, string } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
 
 import withToken from './withToken';
@@ -145,7 +137,7 @@ Tokens.propTypes = {
       id: oneOfType([string, number]),
       key: string,
       alias: string,
-      value: any,
+      value: oneOfType([string, number]),
     }),
   ).isRequired,
   example: shape({

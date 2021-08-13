@@ -78,17 +78,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 
 .c10:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c10:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c10 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c11 .c2:active .c4,
@@ -99,17 +99,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 
 .c11:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c11:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c11 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c1 {
@@ -132,17 +132,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 
 .c1:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c1:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c1 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c8 {
@@ -287,17 +287,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 
 .c1:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c1:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c1 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c8 {
@@ -425,17 +425,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 
 .c10:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c10:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c10 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c11 .c2:active .c4,
@@ -446,17 +446,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 
 .c11:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c11:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c11 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c12 .c2:active .c4,
@@ -467,17 +467,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 
 .c12:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c12:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c12 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c1 {
@@ -501,17 +501,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 
 .c1:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c1:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c1 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c8 {
@@ -649,17 +649,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 
 .c10:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c10:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c10 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c1 {
@@ -683,17 +683,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 
 .c1:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c1:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c1 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c8 {
@@ -824,17 +824,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 
 .c10:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c10:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c10 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c11 .c2:active .c4,
@@ -845,17 +845,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 
 .c11:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c11:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c11 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c1 {
@@ -878,17 +878,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 
 .c1:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c1:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c1 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c12 .c2:active .c4,
@@ -899,17 +899,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 
 .c12:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c12:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c12 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c8 {
@@ -1054,17 +1054,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 
 .c1:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c1:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c1 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c10 .c2:active .c4,
@@ -1075,17 +1075,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 
 .c10:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c10:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c10 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c11 .c2:active .c4,
@@ -1096,17 +1096,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 
 .c11:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c11:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c11 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c12 .c2:active .c4,
@@ -1117,17 +1117,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 
 .c12:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c12:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c12 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c8 {
@@ -1254,17 +1254,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
 
 .c10:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c10:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c10 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c11 .c2:active .c4,
@@ -1275,17 +1275,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
 
 .c11:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c11:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c11 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c12 .c2:active .c4,
@@ -1296,17 +1296,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
 
 .c12:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c12:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c12 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c13 .c2:active .c4,
@@ -1317,17 +1317,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
 
 .c13:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c13:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c13 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c1 {
@@ -1350,17 +1350,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
 
 .c1:hover .c4 {
   background-color: rgba(255,255,255,0.25);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.25);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.25);
 }
 
 .c1:focus-within .c4 {
   background-color: rgba(255,255,255,0.5);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.5);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.5);
 }
 
 .c1 .c2:active .c4 {
   background-color: rgba(255,255,255,0.75);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.75);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.75);
 }
 
 .c8 {
@@ -1487,17 +1487,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 
 .c10:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c10:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c10 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c11 .c2:active .c4,
@@ -1508,17 +1508,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 
 .c11:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c11:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c11 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c12 .c2:active .c4,
@@ -1529,17 +1529,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 
 .c12:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c12:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c12 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c13 .c2:active .c4,
@@ -1550,17 +1550,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 
 .c13:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c13:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c13 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c1 {
@@ -1583,17 +1583,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 
 .c1:hover .c4 {
   background-color: rgba(255,255,255,0.25);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.25);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.25);
 }
 
 .c1:focus-within .c4 {
   background-color: rgba(255,255,255,0.5);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.5);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.5);
 }
 
 .c1 .c2:active .c4 {
   background-color: rgba(255,255,255,0.75);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.75);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.75);
 }
 
 .c8 {
@@ -1727,17 +1727,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 
 .c10:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c10:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c10 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c11 .c2:active .c4,
@@ -1748,17 +1748,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 
 .c11:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c11:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c11 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 .c12 .c2:active .c4,
@@ -1769,17 +1769,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 
 .c12:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c12:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c12 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c13 .c2:active .c4,
@@ -1790,17 +1790,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 
 .c13:hover .c4 {
   background-color: rgba(216,56,94,0.25);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.25);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.25);
 }
 
 .c13:focus-within .c4 {
   background-color: rgba(216,56,94,0.5);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.5);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.5);
 }
 
 .c13 .c2:active .c4 {
   background-color: rgba(216,56,94,0.75);
-  box-shadow: 0 0 0 8px  rgba(216,56,94,0.75);
+  box-shadow: 0 0 0 8px rgba(216,56,94,0.75);
 }
 
 .c14 .c2:active .c4,
@@ -1811,17 +1811,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 
 .c14:hover .c4 {
   background-color: rgba(255,255,255,0.25);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.25);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.25);
 }
 
 .c14:focus-within .c4 {
   background-color: rgba(255,255,255,0.5);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.5);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.5);
 }
 
 .c14 .c2:active .c4 {
   background-color: rgba(255,255,255,0.75);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.75);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.75);
 }
 
 .c1 {
@@ -1845,17 +1845,17 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 
 .c1:hover .c4 {
   background-color: rgba(255,255,255,0.25);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.25);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.25);
 }
 
 .c1:focus-within .c4 {
   background-color: rgba(255,255,255,0.5);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.5);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.5);
 }
 
 .c1 .c2:active .c4 {
   background-color: rgba(255,255,255,0.75);
-  box-shadow: 0 0 0 8px  rgba(255,255,255,0.75);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.75);
 }
 
 .c8 {
@@ -2004,17 +2004,17 @@ exports[`<Checkbox /> Snapshots should match snapshot without props 1`] = `
 
 .c1:hover .c4 {
   background-color: rgba(245,245,250,0.25);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.25);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.25);
 }
 
 .c1:focus-within .c4 {
   background-color: rgba(245,245,250,0.5);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.5);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.5);
 }
 
 .c1 .c2:active .c4 {
   background-color: rgba(245,245,250,0.75);
-  box-shadow: 0 0 0 8px  rgba(245,245,250,0.75);
+  box-shadow: 0 0 0 8px rgba(245,245,250,0.75);
 }
 
 <div>

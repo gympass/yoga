@@ -10,7 +10,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
     }
   }
 >
-  <ScrollView
+  <RCTScrollView
     data={
       Array [
         Object {
@@ -49,7 +49,6 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
     horizontal={false}
     initialNumToRender={10}
     maxToRenderPerBatch={10}
-    numColumns={1}
     onEndReachedThreshold={2}
     removeClippedSubviews={false}
     scrollEventThrottle={50}
@@ -65,237 +64,239 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
     viewabilityConfigCallbackPairs={Array []}
     windowSize={21}
   >
-    <View
-      style={null}
-    >
+    <View>
       <View
-        divided={true}
-        style={
-          Array [
-            Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
-            },
-          ]
-        }
+        style={null}
       >
-        <Text>
-          Devin
-        </Text>
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Devin
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Dan
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Dominic
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jackson
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            James
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Joel
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            John
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jillian
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jimmy
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Julie
+          </Text>
+        </View>
       </View>
     </View>
-    <View
-      style={null}
-    >
-      <View
-        divided={true}
-        style={
-          Array [
-            Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
-            },
-          ]
-        }
-      >
-        <Text>
-          Dan
-        </Text>
-      </View>
-    </View>
-    <View
-      style={null}
-    >
-      <View
-        divided={true}
-        style={
-          Array [
-            Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
-            },
-          ]
-        }
-      >
-        <Text>
-          Dominic
-        </Text>
-      </View>
-    </View>
-    <View
-      style={null}
-    >
-      <View
-        divided={true}
-        style={
-          Array [
-            Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
-            },
-          ]
-        }
-      >
-        <Text>
-          Jackson
-        </Text>
-      </View>
-    </View>
-    <View
-      style={null}
-    >
-      <View
-        divided={true}
-        style={
-          Array [
-            Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
-            },
-          ]
-        }
-      >
-        <Text>
-          James
-        </Text>
-      </View>
-    </View>
-    <View
-      style={null}
-    >
-      <View
-        divided={true}
-        style={
-          Array [
-            Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
-            },
-          ]
-        }
-      >
-        <Text>
-          Joel
-        </Text>
-      </View>
-    </View>
-    <View
-      style={null}
-    >
-      <View
-        divided={true}
-        style={
-          Array [
-            Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
-            },
-          ]
-        }
-      >
-        <Text>
-          John
-        </Text>
-      </View>
-    </View>
-    <View
-      style={null}
-    >
-      <View
-        divided={true}
-        style={
-          Array [
-            Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
-            },
-          ]
-        }
-      >
-        <Text>
-          Jillian
-        </Text>
-      </View>
-    </View>
-    <View
-      style={null}
-    >
-      <View
-        divided={true}
-        style={
-          Array [
-            Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
-            },
-          ]
-        }
-      >
-        <Text>
-          Jimmy
-        </Text>
-      </View>
-    </View>
-    <View
-      style={null}
-    >
-      <View
-        divided={true}
-        style={
-          Array [
-            Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
-            },
-          ]
-        }
-      >
-        <Text>
-          Julie
-        </Text>
-      </View>
-    </View>
-  </ScrollView>
+  </RCTScrollView>
 </View>
 `;
 
@@ -309,7 +310,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     }
   }
 >
-  <ScrollView
+  <RCTScrollView
     data={
       Array [
         Object {
@@ -348,7 +349,6 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     horizontal={true}
     initialNumToRender={10}
     maxToRenderPerBatch={10}
-    numColumns={1}
     onEndReachedThreshold={2}
     removeClippedSubviews={false}
     scrollEventThrottle={50}
@@ -364,306 +364,308 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     viewabilityConfigCallbackPairs={Array []}
     windowSize={21}
   >
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-          null,
-        ]
-      }
-    >
+    <View>
       <View
-        divided={true}
         style={
           Array [
             Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
+              "flexDirection": "row",
             },
+            null,
           ]
         }
       >
-        <Text>
-          Devin
-        </Text>
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Devin
+          </Text>
+        </View>
       </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-          null,
-        ]
-      }
-    >
       <View
-        divided={true}
         style={
           Array [
             Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
+              "flexDirection": "row",
             },
+            null,
           ]
         }
       >
-        <Text>
-          Dan
-        </Text>
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Dan
+          </Text>
+        </View>
       </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-          null,
-        ]
-      }
-    >
       <View
-        divided={true}
         style={
           Array [
             Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
+              "flexDirection": "row",
             },
+            null,
           ]
         }
       >
-        <Text>
-          Dominic
-        </Text>
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Dominic
+          </Text>
+        </View>
       </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-          null,
-        ]
-      }
-    >
       <View
-        divided={true}
         style={
           Array [
             Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
+              "flexDirection": "row",
             },
+            null,
           ]
         }
       >
-        <Text>
-          Jackson
-        </Text>
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jackson
+          </Text>
+        </View>
       </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-          null,
-        ]
-      }
-    >
       <View
-        divided={true}
         style={
           Array [
             Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
+              "flexDirection": "row",
             },
+            null,
           ]
         }
       >
-        <Text>
-          James
-        </Text>
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            James
+          </Text>
+        </View>
       </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-          null,
-        ]
-      }
-    >
       <View
-        divided={true}
         style={
           Array [
             Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
+              "flexDirection": "row",
             },
+            null,
           ]
         }
       >
-        <Text>
-          Joel
-        </Text>
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Joel
+          </Text>
+        </View>
       </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-          null,
-        ]
-      }
-    >
       <View
-        divided={true}
         style={
           Array [
             Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
+              "flexDirection": "row",
             },
+            null,
           ]
         }
       >
-        <Text>
-          John
-        </Text>
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            John
+          </Text>
+        </View>
       </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-          null,
-        ]
-      }
-    >
       <View
-        divided={true}
         style={
           Array [
             Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
+              "flexDirection": "row",
             },
+            null,
           ]
         }
       >
-        <Text>
-          Jillian
-        </Text>
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jillian
+          </Text>
+        </View>
       </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-          null,
-        ]
-      }
-    >
       <View
-        divided={true}
         style={
           Array [
             Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
+              "flexDirection": "row",
             },
+            null,
           ]
         }
       >
-        <Text>
-          Jimmy
-        </Text>
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jimmy
+          </Text>
+        </View>
       </View>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-          },
-          null,
-        ]
-      }
-    >
       <View
-        divided={true}
         style={
           Array [
             Object {
-              "borderBottomColor": "#F5F5FA",
-              "borderBottomWidth": 1,
-              "paddingBottom": 20,
-              "paddingLeft": 24,
-              "paddingRight": 24,
-              "paddingTop": 20,
+              "flexDirection": "row",
             },
+            null,
           ]
         }
       >
-        <Text>
-          Julie
-        </Text>
+        <View
+          divided={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Julie
+          </Text>
+        </View>
       </View>
     </View>
-  </ScrollView>
+  </RCTScrollView>
 </View>
 `;

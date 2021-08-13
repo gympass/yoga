@@ -21,6 +21,9 @@ describe('<Tag />', () => {
         <Tag.Informative variant="success" icon={Building}>
           success with custom icon
         </Tag.Informative>
+        <Tag.Informative variant="success" icon={Building} small>
+          success with custom icon
+        </Tag.Informative>
       </ThemeProvider>,
     );
 
@@ -31,6 +34,9 @@ describe('<Tag />', () => {
     const { container } = render(
       <ThemeProvider>
         <Tag.Informative variant="success">
+          success without icon
+        </Tag.Informative>
+        <Tag.Informative variant="success" small>
           success without icon
         </Tag.Informative>
       </ThemeProvider>,
@@ -45,6 +51,9 @@ describe('<Tag />', () => {
         <Tag variant="success">success</Tag>
         <Tag variant="informative">informative</Tag>
         <Tag variant="attention">attention</Tag>
+        <Tag variant="attention" small>
+          attention small
+        </Tag>
       </ThemeProvider>,
     );
 
@@ -57,6 +66,9 @@ describe('<Tag />', () => {
         <Tag.Informative variant="success">success</Tag.Informative>
         <Tag.Informative variant="informative">informative</Tag.Informative>
         <Tag.Informative variant="attention">attention</Tag.Informative>
+        <Tag.Informative variant="attention" small>
+          attention small
+        </Tag.Informative>
       </ThemeProvider>,
     );
 
