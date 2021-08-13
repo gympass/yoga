@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.5.3...@gympass/yoga-doc@2.6.0) (2021-08-13)
+
+
+### Bug Fixes
+
+* align in android ([a6a00de](https://github.com/Gympass/yoga/commit/a6a00dea03a6083da7835135d01f690cecff7a00))
+* documentatio ([1a3181b](https://github.com/Gympass/yoga/commit/1a3181bb075fb547cd0bc5d91c64c37ba0cde03f))
+
+
+### Features
+
+* **tag:** adjusting default icon size and add small variation to the docs ([06e54e3](https://github.com/Gympass/yoga/commit/06e54e397948cd01cf820f049574a3a40385f47a))
+* add elipses in attendances ([c8f29fd](https://github.com/Gympass/yoga/commit/c8f29fd9ad037d17b4367cbd1f9930f531cb24f2))
+* add limitLabel example in doc ([e09befb](https://github.com/Gympass/yoga/commit/e09befb77accdb01079131fe7d842dca07a11f9c))
+* add variant small in component tag ([2006d7d](https://github.com/Gympass/yoga/commit/2006d7d4e0f94bb42cae7bcf9c46c3487ccf5176))
+* adjustment in components result and tag ([c4c72af](https://github.com/Gympass/yoga/commit/c4c72afcac044f8c390b1faac34691258f90c373))
+* change props name in component tag ([e85da16](https://github.com/Gympass/yoga/commit/e85da162abcc02e4c876acb7e8925a5e8f7b94cd))
+* improvements in documentation ([c1d0768](https://github.com/Gympass/yoga/commit/c1d0768285a417b2abdf141fd33effd9af00d6b1))
+* **result:** changing component name ([2b885c8](https://github.com/Gympass/yoga/commit/2b885c8ca0329a077600dc9be5f6979a50b64460))
+* **result:** changing component name ([1ac9752](https://github.com/Gympass/yoga/commit/1ac9752341360f909f88815a0f2546cd005ad874))
+* **search_list:** add new component to design system ([7d9cb5c](https://github.com/Gympass/yoga/commit/7d9cb5c67346fd0e3da5597a16cfb853ea06ea6c))
+* **search_list:** add new component to design system ([5c1b582](https://github.com/Gympass/yoga/commit/5c1b582c7a44c3e7b6b1eeff718e2919b4947b65))
+
+
+
+
+
 ## [2.5.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.5.2...@gympass/yoga-doc@2.5.3) (2021-08-11)
 
 

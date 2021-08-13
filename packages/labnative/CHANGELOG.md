@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.3.6...@gympass/yoga-labnative@1.4.0) (2021-08-13)
+
+
+### Bug Fixes
+
+* align in android ([a6a00de](https://github.com/Gympass/yoga/commit/a6a00dea03a6083da7835135d01f690cecff7a00))
+
+
+### Features
+
+* add icon size when is variant small ([cc2a2dd](https://github.com/Gympass/yoga/commit/cc2a2dd906738d7b62cac764ae5801ffdee1e37a))
+* add limitLabel in component result ([5231bba](https://github.com/Gympass/yoga/commit/5231bba8f16a4146082cd5f209c84fef585fb3f7))
+* add more variants in documentation ([ace935e](https://github.com/Gympass/yoga/commit/ace935eccaa1306ae305c1e1242c8f26104c6672))
+* add result button ([ebbcaae](https://github.com/Gympass/yoga/commit/ebbcaae6af979e04127182b183a38bf9a1ed5e7e))
+* add result button ([d13722d](https://github.com/Gympass/yoga/commit/d13722d93110807c2f9a1a5b1617a8342f621687))
+* add result button ([3adb34a](https://github.com/Gympass/yoga/commit/3adb34aa47032b7abaef23d6debc4726964543bd))
+* add result button ([79671dc](https://github.com/Gympass/yoga/commit/79671dc6e7ad8479d23110ccd8427a6c6e28105b))
+* add result details ([d16c071](https://github.com/Gympass/yoga/commit/d16c071362f67952aa1962a7035c3f6239aae673))
+* add snapshot test ([a035864](https://github.com/Gympass/yoga/commit/a03586440c08e1894e3ae0f271f89fb04dc23495))
+* add snapshot test ([631bb9e](https://github.com/Gympass/yoga/commit/631bb9e35d20c5589501e7705186c712fba39e7c))
+* add tags component ([df2cdc3](https://github.com/Gympass/yoga/commit/df2cdc3d238dcb8d3368424133e14316e91768f3))
+* add variant small in component tag ([2006d7d](https://github.com/Gympass/yoga/commit/2006d7d4e0f94bb42cae7bcf9c46c3487ccf5176))
+* adjustment in component result ([8e8ed3d](https://github.com/Gympass/yoga/commit/8e8ed3dda7fbfae729613fa4e630e3048a0e858f))
+* adjustment in component result ([13a65ee](https://github.com/Gympass/yoga/commit/13a65eed223e69274f1176072131f0ff0104f4f4))
+* adjustment in components result and tag ([c4c72af](https://github.com/Gympass/yoga/commit/c4c72afcac044f8c390b1faac34691258f90c373))
+* adjustment in result component ([28337f0](https://github.com/Gympass/yoga/commit/28337f09993e0e99dcd7570f1dbee49393aa9b54))
+* change props name in component tag ([e85da16](https://github.com/Gympass/yoga/commit/e85da162abcc02e4c876acb7e8925a5e8f7b94cd))
+* improvements in documentation ([7a225ac](https://github.com/Gympass/yoga/commit/7a225acf4f88ff786654886f39236756049a9e31))
+* improvements in documentation ([c1d0768](https://github.com/Gympass/yoga/commit/c1d0768285a417b2abdf141fd33effd9af00d6b1))
+* improvments in documentation lab native ([df52097](https://github.com/Gympass/yoga/commit/df52097aec4ee9608933ed1f80684136441a848a))
+* improvments in documentation lab native ([56ac7c9](https://github.com/Gympass/yoga/commit/56ac7c94e0eaec831c1ca121006ee22c9583dda1))
+* improvments in documentation lab native ([48340a9](https://github.com/Gympass/yoga/commit/48340a99bed28ae2868cc8a1e0ce36e525f9bf01))
+* improvments in documentation lab native ([d0dd1cf](https://github.com/Gympass/yoga/commit/d0dd1cf1c8ade4206ed793ff6b5cfea9217e6909))
+* revome max width and add flex ([99534f2](https://github.com/Gympass/yoga/commit/99534f2b5ddfd0c98adeaa29688b102323b8ef9e))
+* **result:** changing component name ([2b885c8](https://github.com/Gympass/yoga/commit/2b885c8ca0329a077600dc9be5f6979a50b64460))
+* **result:** changing component name ([1ac9752](https://github.com/Gympass/yoga/commit/1ac9752341360f909f88815a0f2546cd005ad874))
+* **search_list:** add new component to design system ([7d9cb5c](https://github.com/Gympass/yoga/commit/7d9cb5c67346fd0e3da5597a16cfb853ea06ea6c))
+* **search_list:** add new component to design system ([5c1b582](https://github.com/Gympass/yoga/commit/5c1b582c7a44c3e7b6b1eeff718e2919b4947b65))
+
+
+
+
+
 ## [1.3.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.3.5...@gympass/yoga-labnative@1.3.6) (2021-08-12)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
