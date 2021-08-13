@@ -4,8 +4,9 @@ import { withTheme } from 'styled-components';
 
 const Icon = ({
   as: Component,
-  width,
-  height,
+  size,
+  width = size,
+  height = size,
   fill,
   stroke,
   theme,
@@ -49,6 +50,9 @@ Icon.propTypes = {
   /** Vertical size of the SVG. Use it as one of
    * theme.spacing tokens (xxsmall, small, medium...) */
   height: oneOf([...commonSizes, instanceOf(Number)]),
+  /** Size for vertical and horizontal of the SVG.
+   * Use it as one of theme.spacing tokens (xxsmall, small, medium...) */
+  size: oneOf([...commonSizes, instanceOf(Number)]),
 };
 
 Icon.defaultProps = {
@@ -56,6 +60,7 @@ Icon.defaultProps = {
   stroke: undefined,
   width: undefined,
   height: undefined,
+  size: undefined,
 };
 
 export default withTheme(Icon);
