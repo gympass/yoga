@@ -16,7 +16,7 @@ describe('<Avatar />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should match snapshot in default avatar with src and alt', () => {
+  it('should match snapshot in default avatar with src and alt prop', () => {
     const { container } = render(
       <ThemeProvider>
         <Avatar src="https://github.com/Gympass.png" alt="Gympass brand logo" />
@@ -29,7 +29,7 @@ describe('<Avatar />', () => {
   it('should match snapshot in default avatar with placeholder prop', () => {
     const { container } = render(
       <ThemeProvider>
-        <Avatar placeholder={UserFilled} />
+        <Avatar icon={UserFilled} />
       </ThemeProvider>,
     );
 
@@ -49,7 +49,20 @@ describe('<Avatar />', () => {
   it('should match snapshot in circle avatar with placeholder prop', () => {
     const { container } = render(
       <ThemeProvider>
-        <Avatar.Circle placeholder={UserFilled} />
+        <Avatar.Circle icon={UserFilled} />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot in circle avatar with src and alt prop', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Avatar.Circle
+          src="https://github.com/Gympass.png"
+          alt="Gympass brand logo"
+        />
       </ThemeProvider>,
     );
 
