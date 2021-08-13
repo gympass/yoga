@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, node } from 'prop-types';
+import { oneOf, node, bool } from 'prop-types';
 import Text from '../../Text';
 
 export const StyledTag = styled.View`
@@ -27,9 +27,9 @@ export const StyledTag = styled.View`
        small
          ? `
             padding:
-              0
+              ${tag.padding.small.top}
               ${tag.padding.small.right}px
-              0
+              ${tag.padding.small.bottom}
               ${tag.padding.small.left}px;
           `
          : `
@@ -70,8 +70,8 @@ export const StyledText = styled(({ variant, ...rest }) => (
 `;
 
 /** Use Tag component when you want to categorize your content */
-const Tag = ({ children, variant, ...props }) => (
-  <StyledTag variant={variant} {...props}>
+const Tag = ({ children, variant, small, ...props }) => (
+  <StyledTag variant={variant} small={small} {...props}>
     <StyledText variant={variant}>{children}</StyledText>
   </StyledTag>
 );
@@ -79,11 +79,14 @@ const Tag = ({ children, variant, ...props }) => (
 Tag.propTypes = {
   /** style the tag following the theme (success, informative, attention) */
   variant: oneOf(['', 'success', 'informative', 'attention']),
+  /** Can send small to use this variant */
+  small: bool,
   children: node.isRequired,
 };
 
 Tag.defaultProps = {
   variant: '',
+  small: false,
 };
 
 export default Tag;

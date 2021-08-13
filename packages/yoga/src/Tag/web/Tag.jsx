@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, node } from 'prop-types';
+import { oneOf, node, bool } from 'prop-types';
 
 const StyledTag = styled.div`
   display: inline-flex;
@@ -30,9 +30,9 @@ const StyledTag = styled.div`
       small
         ? `
             padding:
-              0
+              ${tag.padding.small.top}
               ${tag.padding.small.right}px
-              0
+              ${tag.padding.small.bottom}
               ${tag.padding.small.left}px;
           `
         : `
@@ -62,10 +62,13 @@ Tag.propTypes = {
   /** style the tag following the theme (success, informative, attention) */
   variant: oneOf(['', 'success', 'informative', 'attention']),
   children: node.isRequired,
+  /** Can send small to use this variant */
+  small: bool,
 };
 
 Tag.defaultProps = {
   variant: '',
+  small: false,
 };
 
 export default Tag;

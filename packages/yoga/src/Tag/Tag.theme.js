@@ -21,7 +21,9 @@ const Tag = ({ spacing, fontSizes, fontWeights, radii, borders }) => ({
       left: spacing.xxsmall,
     },
     small: {
+      top: spacing.zero,
       right: spacing.xxxsmall,
+      bottom: spacing.zero,
       left: spacing.xxxsmall,
     },
   },
