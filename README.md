@@ -81,7 +81,8 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/dehmirandac2"><img src="https://avatars.githubusercontent.com/u/8313529?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Deborah Miranda</b></sub></a><br /><a href="https://github.com/Gympass/yoga/issues?q=author%3Adehmirandac2" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://matheusmartins.netlify.com/"><img src="https://avatars.githubusercontent.com/u/46993493?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Martins</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=mmartinsoliveira" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://mmartins.vercel.app/"><img src="https://avatars.githubusercontent.com/u/46993493?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Martins</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=mmartinsoliveira" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/leticiasoaresfrontenddeveloper/"><img src="https://avatars.githubusercontent.com/u/11762938?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Leticia Soares </b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=LeticiaSoares" title="Code">💻</a> <a href="https://github.com/Gympass/yoga/commits?author=LeticiaSoares" title="Documentation">📖</a></td>
   </tr>
 </table>
 
