@@ -5,6 +5,10 @@ import { string, func, checkPropTypes } from 'prop-types';
 import Box from '../../Box';
 import Icon from '../../Icon';
 
+/**
+ * The Avatar component is used to display the image.
+ * It has two shapes: default and circle
+ */
 const Avatar = ({ src, alt, fill, stroke, icon, ...otherProps }) => (
   <Box
     bgColor="elements.selectionAndIcons"
