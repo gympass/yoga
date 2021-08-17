@@ -6,10 +6,17 @@ metaDescription: 'Avatar Component'
 
 
 import AvatarNative from './avatar-native.mdx';
-
+import AvatarWeb from './avatar-web.mdx';
 
 # Avatar
 
-<AvatarNative />
+<TabbedView>
+  <Tab title="Web">
+    <AvatarWeb />
+  </Tab>
 
+  <Tab title="Native">
+    <AvatarNative />
+  </Tab>
+</TabbedView>
 

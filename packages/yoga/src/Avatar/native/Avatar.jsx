@@ -5,6 +5,10 @@ import Box from '../../Box';
 import Image from './Image';
 import Placeholder from './Placeholder';
 
+/**
+ * The Avatar component is used to display the image.
+ * It has two shapes: default and circle
+ */
 const Avatar = ({
   src,
   fill,
