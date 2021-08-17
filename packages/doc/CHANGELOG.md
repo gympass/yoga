@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.6.0...@gympass/yoga-doc@2.7.0) (2021-08-17)
+
+
+### Features
+
+* **avatar:** add web Avatar component ([e3cde89](https://github.com/Gympass/yoga/commit/e3cde8971969224c89b96ff4e633761be1aa1603))
+
+
+### Reverts
+
+* **changelog:** ignore changes ([6cd01d7](https://github.com/Gympass/yoga/commit/6cd01d7cc2cecdbef3635a93166dd3d83e6b5c31))
+
+
+
+
+
 # [2.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.5.3...@gympass/yoga-doc@2.6.0) (2021-08-13)
 
 

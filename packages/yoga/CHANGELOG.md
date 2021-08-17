@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.8.0...@gympass/yoga@7.9.0) (2021-08-17)
+
+
+### Bug Fixes
+
+* **icon:** add string support to Icon width and height ([a9bac99](https://github.com/Gympass/yoga/commit/a9bac99dfeb6183406c748baf2de5017e65b3ab2))
+
+
+### Features
+
+* **avatar:** add web Avatar component ([e3cde89](https://github.com/Gympass/yoga/commit/e3cde8971969224c89b96ff4e633761be1aa1603))
+
+
+### Reverts
+
+* **changelog:** ignore changes ([6cd01d7](https://github.com/Gympass/yoga/commit/6cd01d7cc2cecdbef3635a93166dd3d83e6b5c31))
+
+
+
+
+
 # [7.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.7.2...@gympass/yoga@7.8.0) (2021-08-13)
 
 
