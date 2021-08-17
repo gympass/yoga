@@ -9,7 +9,14 @@ import Icon from '../../Icon';
  * The Avatar component is used to display the image.
  * It has two shapes: default and circle
  */
-const Avatar = ({ src, alt, fill, stroke, icon, ...otherProps }) => (
+const Avatar = ({
+  src,
+  alt,
+  fill,
+  stroke,
+  icon = BuildingFilled,
+  ...otherProps
+}) => (
   <Box
     bgColor="elements.selectionAndIcons"
     display="flex"
@@ -47,12 +54,13 @@ Avatar.propTypes = {
 
     return null;
   },
+  /** Used when src is missing */
   icon: (props, propName, componentName) => {
-    const { src } = props;
+    const { src, [propName]: iconProp } = props;
 
-    if (src) {
+    if (src && iconProp) {
       return new Error(
-        `Invalid prop ${propName} supplied to ${componentName}.`,
+        `You should provide a src or ${propName} prop, not both, in '${componentName}'.`,
       );
     }
 
@@ -68,7 +76,7 @@ Avatar.propTypes = {
 Avatar.defaultProps = {
   src: undefined,
   alt: undefined,
-  icon: BuildingFilled,
+  icon: undefined,
   fill: 'white',
   stroke: undefined,
   ...Box.defaultProps,

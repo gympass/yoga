@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-
 import { UserFilled } from '@gympass/yoga-icons';
+
 import { ThemeProvider } from '../..';
 import Avatar from './Avatar';
 

@@ -1,7 +1,17 @@
 import React from 'react';
+import { UserFilled } from '@gympass/yoga-icons';
+
 import Avatar from './Avatar';
 
-const AvatarCircle = props => <Avatar {...props} borderRadius="circle" />;
+const AvatarCircle = ({ src, alt = '', ...props }) => (
+  <Avatar
+    {...props}
+    src={src}
+    alt={alt}
+    borderRadius="circle"
+    icon={!src ? UserFilled : undefined}
+  />
+);
 
 AvatarCircle.propTypes = Avatar.propTypes;
 
