@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.7.0...@gympass/yoga-doc@2.8.0) (2021-08-17)
+
+
+### Features
+
+* **result:** add result component to native components modules and update findComponent regex ([a0b1ce7](https://github.com/Gympass/yoga/commit/a0b1ce7efc5b9b90a551740c6c3dacc95e97ffe0))
+
+
+
+
+
 # [2.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.6.0...@gympass/yoga-doc@2.7.0) (2021-08-17)
 
 
