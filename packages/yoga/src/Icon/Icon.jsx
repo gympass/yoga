@@ -63,22 +63,20 @@ Icon.propTypes = {
   size: (props, propName, componentName) => {
     const { size, width, height } = props;
 
-    if (width || height) {
+    if (size && (width || height)) {
       return new Error(
         `you must use only ${propName}, alone, or width and/or height in ${componentName}`,
       );
     }
 
-    if (size) {
-      checkPropTypes(
-        {
-          [propName]: oneOfType([oneOf(commonSizes), string, number]),
-        },
-        { size },
-        'prop',
-        componentName,
-      );
-    }
+    checkPropTypes(
+      {
+        [propName]: oneOfType([oneOf(commonSizes), string, number]),
+      },
+      { size },
+      'prop',
+      componentName,
+    );
 
     return null;
   },
