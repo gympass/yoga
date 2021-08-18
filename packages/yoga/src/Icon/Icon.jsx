@@ -1,11 +1,19 @@
 import React from 'react';
-import { oneOf, elementType, string, oneOfType, number } from 'prop-types';
+import {
+  oneOf,
+  elementType,
+  string,
+  checkPropTypes,
+  oneOfType,
+  number,
+} from 'prop-types';
 import { withTheme } from 'styled-components';
 
 const Icon = ({
   as: Component,
-  width,
-  height,
+  size,
+  width = size,
+  height = size,
   fill,
   stroke,
   theme,
@@ -49,6 +57,28 @@ Icon.propTypes = {
   /** Vertical size of the SVG. Use it as one of
    * theme.spacing tokens (xxsmall, small, medium...) */
   height: oneOfType([oneOf(commonSizes), string, number]),
+  /** Size for vertical and horizontal of the SVG.
+   * Use it as one of theme.spacing tokens (xxsmall, small, medium...) */
+  size: (props, propName, componentName) => {
+    const { size, width, height } = props;
+
+    if (size && (width || height)) {
+      return new Error(
+        `you must use only ${propName}, alone, or width and/or height in ${componentName}`,
+      );
+    }
+
+    checkPropTypes(
+      {
+        [propName]: oneOfType([oneOf(commonSizes), string, number]),
+      },
+      { size },
+      'prop',
+      componentName,
+    );
+
+    return null;
+  },
 };
 
 Icon.defaultProps = {
@@ -56,6 +86,7 @@ Icon.defaultProps = {
   stroke: undefined,
   width: undefined,
   height: undefined,
+  size: undefined,
 };
 
 export default withTheme(Icon);
