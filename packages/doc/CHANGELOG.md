@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.8.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.0...@gympass/yoga-doc@2.8.1) (2021-08-18)
+
+
+### Bug Fixes
+
+* **doc:** update native modules mapper, used to construct the code to be sent to expo ([aa76d47](https://github.com/Gympass/yoga/commit/aa76d47c1e5ba06dc00ae66d51df67891dff52b4))
+
+
+### Reverts
+
+* **changelog:** reverting changelogs ([e2bc466](https://github.com/Gympass/yoga/commit/e2bc466957c2e2f08d60936e7381b9637c134b1a))
+
+
+
+
+
 # [2.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.7.0...@gympass/yoga-doc@2.8.0) (2021-08-17)
 
 

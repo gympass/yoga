@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.9.0...@gympass/yoga@7.10.0) (2021-08-18)
+
+
+### Features
+
+* **icon:** add proptype for size on component input ([ccaa43f](https://github.com/Gympass/yoga/commit/ccaa43fec366197312f831941f2b0b49f54b6120))
+* **input:** add props size to icon component ([0cf6935](https://github.com/Gympass/yoga/commit/0cf6935571066689532e329bb7b32b183417fed4))
+
+
+### Reverts
+
+* **changelog:** reverting changelogs ([e2bc466](https://github.com/Gympass/yoga/commit/e2bc466957c2e2f08d60936e7381b9637c134b1a))
+
+
+
+
+
 # [7.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.8.0...@gympass/yoga@7.9.0) (2021-08-17)
 
 
