@@ -5,7 +5,6 @@ import * as YogaHelpers from '@gympass/yoga-helpers';
 const YogaNativeComponents = {
   GymCard: undefined,
   Result: undefined,
-  Avatar: undefined,
 };
 Object.assign(YogaComponents, YogaNativeComponents);
 
