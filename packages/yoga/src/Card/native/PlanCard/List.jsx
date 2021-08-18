@@ -51,7 +51,7 @@ const ListItem = withTheme(
               <Icon
                 width={16}
                 height={16}
-                fill={yogaTheme.yoga.colors.elements.selectionAndIcons}
+                fill={yogaTheme.yoga.colors.secondary}
               />
             )}
           </IconWrapper>
