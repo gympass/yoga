@@ -7,131 +7,217 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+
+
+
+
 # [1.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.3.6...@gympass/yoga-labnative@1.4.0) (2021-08-13)
+
 
 ### Bug Fixes
 
-- align in android ([a6a00de](https://github.com/Gympass/yoga/commit/a6a00dea03a6083da7835135d01f690cecff7a00))
+* align in android ([a6a00de](https://github.com/Gympass/yoga/commit/a6a00dea03a6083da7835135d01f690cecff7a00))
+
 
 ### Features
 
-- add icon size when is variant small ([cc2a2dd](https://github.com/Gympass/yoga/commit/cc2a2dd906738d7b62cac764ae5801ffdee1e37a))
-- add limitLabel in component result ([5231bba](https://github.com/Gympass/yoga/commit/5231bba8f16a4146082cd5f209c84fef585fb3f7))
-- add more variants in documentation ([ace935e](https://github.com/Gympass/yoga/commit/ace935eccaa1306ae305c1e1242c8f26104c6672))
-- add result button ([ebbcaae](https://github.com/Gympass/yoga/commit/ebbcaae6af979e04127182b183a38bf9a1ed5e7e))
-- add result button ([d13722d](https://github.com/Gympass/yoga/commit/d13722d93110807c2f9a1a5b1617a8342f621687))
-- add result button ([3adb34a](https://github.com/Gympass/yoga/commit/3adb34aa47032b7abaef23d6debc4726964543bd))
-- add result button ([79671dc](https://github.com/Gympass/yoga/commit/79671dc6e7ad8479d23110ccd8427a6c6e28105b))
-- add result details ([d16c071](https://github.com/Gympass/yoga/commit/d16c071362f67952aa1962a7035c3f6239aae673))
-- add snapshot test ([a035864](https://github.com/Gympass/yoga/commit/a03586440c08e1894e3ae0f271f89fb04dc23495))
-- add snapshot test ([631bb9e](https://github.com/Gympass/yoga/commit/631bb9e35d20c5589501e7705186c712fba39e7c))
-- add tags component ([df2cdc3](https://github.com/Gympass/yoga/commit/df2cdc3d238dcb8d3368424133e14316e91768f3))
-- add variant small in component tag ([2006d7d](https://github.com/Gympass/yoga/commit/2006d7d4e0f94bb42cae7bcf9c46c3487ccf5176))
-- adjustment in component result ([8e8ed3d](https://github.com/Gympass/yoga/commit/8e8ed3dda7fbfae729613fa4e630e3048a0e858f))
-- adjustment in component result ([13a65ee](https://github.com/Gympass/yoga/commit/13a65eed223e69274f1176072131f0ff0104f4f4))
-- adjustment in components result and tag ([c4c72af](https://github.com/Gympass/yoga/commit/c4c72afcac044f8c390b1faac34691258f90c373))
-- adjustment in result component ([28337f0](https://github.com/Gympass/yoga/commit/28337f09993e0e99dcd7570f1dbee49393aa9b54))
-- change props name in component tag ([e85da16](https://github.com/Gympass/yoga/commit/e85da162abcc02e4c876acb7e8925a5e8f7b94cd))
-- improvements in documentation ([7a225ac](https://github.com/Gympass/yoga/commit/7a225acf4f88ff786654886f39236756049a9e31))
-- improvements in documentation ([c1d0768](https://github.com/Gympass/yoga/commit/c1d0768285a417b2abdf141fd33effd9af00d6b1))
-- improvments in documentation lab native ([df52097](https://github.com/Gympass/yoga/commit/df52097aec4ee9608933ed1f80684136441a848a))
-- improvments in documentation lab native ([56ac7c9](https://github.com/Gympass/yoga/commit/56ac7c94e0eaec831c1ca121006ee22c9583dda1))
-- improvments in documentation lab native ([48340a9](https://github.com/Gympass/yoga/commit/48340a99bed28ae2868cc8a1e0ce36e525f9bf01))
-- improvments in documentation lab native ([d0dd1cf](https://github.com/Gympass/yoga/commit/d0dd1cf1c8ade4206ed793ff6b5cfea9217e6909))
-- revome max width and add flex ([99534f2](https://github.com/Gympass/yoga/commit/99534f2b5ddfd0c98adeaa29688b102323b8ef9e))
-- **result:** changing component name ([2b885c8](https://github.com/Gympass/yoga/commit/2b885c8ca0329a077600dc9be5f6979a50b64460))
-- **result:** changing component name ([1ac9752](https://github.com/Gympass/yoga/commit/1ac9752341360f909f88815a0f2546cd005ad874))
-- **search_list:** add new component to design system ([7d9cb5c](https://github.com/Gympass/yoga/commit/7d9cb5c67346fd0e3da5597a16cfb853ea06ea6c))
-- **search_list:** add new component to design system ([5c1b582](https://github.com/Gympass/yoga/commit/5c1b582c7a44c3e7b6b1eeff718e2919b4947b65))
+* add icon size when is variant small ([cc2a2dd](https://github.com/Gympass/yoga/commit/cc2a2dd906738d7b62cac764ae5801ffdee1e37a))
+* add limitLabel in component result ([5231bba](https://github.com/Gympass/yoga/commit/5231bba8f16a4146082cd5f209c84fef585fb3f7))
+* add more variants in documentation ([ace935e](https://github.com/Gympass/yoga/commit/ace935eccaa1306ae305c1e1242c8f26104c6672))
+* add result button ([ebbcaae](https://github.com/Gympass/yoga/commit/ebbcaae6af979e04127182b183a38bf9a1ed5e7e))
+* add result button ([d13722d](https://github.com/Gympass/yoga/commit/d13722d93110807c2f9a1a5b1617a8342f621687))
+* add result button ([3adb34a](https://github.com/Gympass/yoga/commit/3adb34aa47032b7abaef23d6debc4726964543bd))
+* add result button ([79671dc](https://github.com/Gympass/yoga/commit/79671dc6e7ad8479d23110ccd8427a6c6e28105b))
+* add result details ([d16c071](https://github.com/Gympass/yoga/commit/d16c071362f67952aa1962a7035c3f6239aae673))
+* add snapshot test ([a035864](https://github.com/Gympass/yoga/commit/a03586440c08e1894e3ae0f271f89fb04dc23495))
+* add snapshot test ([631bb9e](https://github.com/Gympass/yoga/commit/631bb9e35d20c5589501e7705186c712fba39e7c))
+* add tags component ([df2cdc3](https://github.com/Gympass/yoga/commit/df2cdc3d238dcb8d3368424133e14316e91768f3))
+* add variant small in component tag ([2006d7d](https://github.com/Gympass/yoga/commit/2006d7d4e0f94bb42cae7bcf9c46c3487ccf5176))
+* adjustment in component result ([8e8ed3d](https://github.com/Gympass/yoga/commit/8e8ed3dda7fbfae729613fa4e630e3048a0e858f))
+* adjustment in component result ([13a65ee](https://github.com/Gympass/yoga/commit/13a65eed223e69274f1176072131f0ff0104f4f4))
+* adjustment in components result and tag ([c4c72af](https://github.com/Gympass/yoga/commit/c4c72afcac044f8c390b1faac34691258f90c373))
+* adjustment in result component ([28337f0](https://github.com/Gympass/yoga/commit/28337f09993e0e99dcd7570f1dbee49393aa9b54))
+* change props name in component tag ([e85da16](https://github.com/Gympass/yoga/commit/e85da162abcc02e4c876acb7e8925a5e8f7b94cd))
+* improvements in documentation ([7a225ac](https://github.com/Gympass/yoga/commit/7a225acf4f88ff786654886f39236756049a9e31))
+* improvements in documentation ([c1d0768](https://github.com/Gympass/yoga/commit/c1d0768285a417b2abdf141fd33effd9af00d6b1))
+* improvments in documentation lab native ([df52097](https://github.com/Gympass/yoga/commit/df52097aec4ee9608933ed1f80684136441a848a))
+* improvments in documentation lab native ([56ac7c9](https://github.com/Gympass/yoga/commit/56ac7c94e0eaec831c1ca121006ee22c9583dda1))
+* improvments in documentation lab native ([48340a9](https://github.com/Gympass/yoga/commit/48340a99bed28ae2868cc8a1e0ce36e525f9bf01))
+* improvments in documentation lab native ([d0dd1cf](https://github.com/Gympass/yoga/commit/d0dd1cf1c8ade4206ed793ff6b5cfea9217e6909))
+* revome max width and add flex ([99534f2](https://github.com/Gympass/yoga/commit/99534f2b5ddfd0c98adeaa29688b102323b8ef9e))
+* **result:** changing component name ([2b885c8](https://github.com/Gympass/yoga/commit/2b885c8ca0329a077600dc9be5f6979a50b64460))
+* **result:** changing component name ([1ac9752](https://github.com/Gympass/yoga/commit/1ac9752341360f909f88815a0f2546cd005ad874))
+* **search_list:** add new component to design system ([7d9cb5c](https://github.com/Gympass/yoga/commit/7d9cb5c67346fd0e3da5597a16cfb853ea06ea6c))
+* **search_list:** add new component to design system ([5c1b582](https://github.com/Gympass/yoga/commit/5c1b582c7a44c3e7b6b1eeff718e2919b4947b65))
+
+
+
+
 
 ## [1.3.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.3.5...@gympass/yoga-labnative@1.3.6) (2021-08-12)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+
+
+
+
 ## [1.3.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.3.4...@gympass/yoga-labnative@1.3.5) (2021-08-11)
+
 
 ### Reverts
 
-- **changelog:** reverting changes on CHANGELOGs ([4aab5a8](https://github.com/Gympass/yoga/commit/4aab5a8c845a4951d32f3a4aebe8c52f7143425d))
-- **changelog:** reverting changes on CHANGELOGs ([df3919b](https://github.com/Gympass/yoga/commit/df3919bc14757a3ce309f8e422b44dc750d7bf6f))
+* **changelog:** reverting changes on CHANGELOGs ([4aab5a8](https://github.com/Gympass/yoga/commit/4aab5a8c845a4951d32f3a4aebe8c52f7143425d))
+* **changelog:** reverting changes on CHANGELOGs ([df3919b](https://github.com/Gympass/yoga/commit/df3919bc14757a3ce309f8e422b44dc750d7bf6f))
+
+
+
+
 
 ## [1.3.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.3.3...@gympass/yoga-labnative@1.3.4) (2021-08-06)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+
+
+
+
 ## [1.3.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.3.2...@gympass/yoga-labnative@1.3.3) (2021-08-06)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
 
 ## [1.3.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.3.1...@gympass/yoga-labnative@1.3.2) (2021-07-27)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+
+
+
+
 ## [1.3.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.3.0...@gympass/yoga-labnative@1.3.1) (2021-07-26)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+
+
+
+
 # [1.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.2.3...@gympass/yoga-labnative@1.3.0) (2021-07-20)
+
 
 ### Features
 
-- add more examples in doc ([bbab935](https://github.com/Gympass/yoga/commit/bbab935d1cc06cf3078aba09d3aa113612eb91e5))
-- add props defaultSource in avatar ([5f11020](https://github.com/Gympass/yoga/commit/5f11020919ee503ddb08e1d999bce2b64c44605c))
-- change icon example in page of avatar ([b6739cf](https://github.com/Gympass/yoga/commit/b6739cff2d97931a7a3338e27d45f517a24b6443))
-- create component avatar ([58e8dd6](https://github.com/Gympass/yoga/commit/58e8dd6cdf1ac749cdcaa08a5dc1d93747e53aa2))
-- improvements in component avatar ([d58fd3f](https://github.com/Gympass/yoga/commit/d58fd3fafc44811273771c1deb8aa9b31c05a6ab))
-- separete css in blocks ([c3934b2](https://github.com/Gympass/yoga/commit/c3934b255d4e6e7e41ad572a91037084a0677c2c))
+* add more examples in doc ([bbab935](https://github.com/Gympass/yoga/commit/bbab935d1cc06cf3078aba09d3aa113612eb91e5))
+* add props defaultSource in avatar ([5f11020](https://github.com/Gympass/yoga/commit/5f11020919ee503ddb08e1d999bce2b64c44605c))
+* change icon example in page of avatar ([b6739cf](https://github.com/Gympass/yoga/commit/b6739cff2d97931a7a3338e27d45f517a24b6443))
+* create component avatar ([58e8dd6](https://github.com/Gympass/yoga/commit/58e8dd6cdf1ac749cdcaa08a5dc1d93747e53aa2))
+* improvements in component avatar ([d58fd3f](https://github.com/Gympass/yoga/commit/d58fd3fafc44811273771c1deb8aa9b31c05a6ab))
+* separete css in blocks ([c3934b2](https://github.com/Gympass/yoga/commit/c3934b255d4e6e7e41ad572a91037084a0677c2c))
+
+
+
+
 
 ## [1.2.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.2.2...@gympass/yoga-labnative@1.2.3) (2021-07-08)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+
+
+
+
 ## [1.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.2.1...@gympass/yoga-labnative@1.2.2) (2021-06-30)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
 
 ## [1.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.2.0...@gympass/yoga-labnative@1.2.1) (2021-06-29)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+
+
+
+
 # [1.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.1.6...@gympass/yoga-labnative@1.2.0) (2021-06-28)
+
 
 ### Features
 
-- **event card:** add link button ([3539421](https://github.com/Gympass/yoga/commit/3539421431eba3f458b25fb6261b99441d7fb7b8))
-- **event card:** fix code review requests ([94b3888](https://github.com/Gympass/yoga/commit/94b38889e87d97ac2eb5457dfc88d42d032016cf))
-- **event card:** refactor to use yoga apis ([4196168](https://github.com/Gympass/yoga/commit/419616814172c753b0145449d9ceeccba92c3b56))
-- **event card:** update and create small version ([f190597](https://github.com/Gympass/yoga/commit/f19059720f290d1d2b78e3fd053d1b70514f7d18))
+* **event card:** add link button ([3539421](https://github.com/Gympass/yoga/commit/3539421431eba3f458b25fb6261b99441d7fb7b8))
+* **event card:** fix code review requests ([94b3888](https://github.com/Gympass/yoga/commit/94b38889e87d97ac2eb5457dfc88d42d032016cf))
+* **event card:** refactor to use yoga apis ([4196168](https://github.com/Gympass/yoga/commit/419616814172c753b0145449d9ceeccba92c3b56))
+* **event card:** update and create small version ([f190597](https://github.com/Gympass/yoga/commit/f19059720f290d1d2b78e3fd053d1b70514f7d18))
+
+
+
+
 
 ## [1.1.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.1.5...@gympass/yoga-labnative@1.1.6) (2021-06-23)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+
+
+
+
 ## [1.1.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.1.4...@gympass/yoga-labnative@1.1.5) (2021-06-16)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
 
 ## [1.1.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.1.3...@gympass/yoga-labnative@1.1.4) (2021-06-16)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+
+
+
+
 ## [1.1.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.1.2...@gympass/yoga-labnative@1.1.3) (2021-06-16)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
 
 ## [1.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.1.1...@gympass/yoga-labnative@1.1.2) (2021-06-10)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+
+
+
+
 ## [1.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.1.0...@gympass/yoga-labnative@1.1.1) (2021-06-10)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
 
+
+
+
+
 # [1.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.0.9...@gympass/yoga-labnative@1.1.0) (2021-06-04)
+
 
 ### Features
 
-- **chips:** start development of new component Chips (native platform) ([5e84c4a](https://github.com/Gympass/yoga/commit/5e84c4a55a99f98f2231aee1c5d98516729cb34b))
+* **chips:** start development of new component Chips (native platform) ([5e84c4a](https://github.com/Gympass/yoga/commit/5e84c4a55a99f98f2231aee1c5d98516729cb34b))
+
+
+
+
 
 ## [1.0.9](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.0.8...@gympass/yoga-labnative@1.0.9) (2021-06-02)
 
