@@ -258,6 +258,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Falkaniere",
+      "name": "Jonatas Falkaniere",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39073602?v=4",
+      "profile": "https://github.com/Falkaniere",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
