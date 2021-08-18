@@ -86,9 +86,11 @@
       "login": "caioalexandrebr",
       "name": "Caio Alexandre",
       "avatar_url": "https://avatars1.githubusercontent.com/u/31045534?v=4",
-      "profile": "http://www.caioalexandre.com",
+      "profile": "https://www.linkedin.com/in/caioalexandrebr/",
       "contributions": [
-        "doc"
+        "doc",
+        "code",
+        "ideas"
       ]
     },
     {
@@ -167,7 +169,8 @@
       "profile": "https://www.linkedin.com/in/alycecristines/",
       "contributions": [
         "code",
-        "doc"
+        "doc",
+        "bug"
       ]
     },
     {
@@ -231,6 +234,27 @@
       "name": "Matheus Martins",
       "avatar_url": "https://avatars.githubusercontent.com/u/46993493?v=4",
       "profile": "https://mmartins.vercel.app/",
+      "contributions": [
+        "doc",
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "LeticiaSoares",
+      "name": "Leticia Soares ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11762938?v=4",
+      "profile": "https://www.linkedin.com/in/leticiasoaresfrontenddeveloper/",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "marcosricardo",
+      "name": "Marcos Ricardo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27781419?v=4",
+      "profile": "https://www.linkedin.com/in/marcosricardo0101/",
       "contributions": [
         "doc"
       ]

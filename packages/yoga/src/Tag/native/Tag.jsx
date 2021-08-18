@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, node } from 'prop-types';
+import { oneOf, node, bool } from 'prop-types';
 import Text from '../../Text';
 
 export const StyledTag = styled.View`
@@ -9,6 +9,7 @@ export const StyledTag = styled.View`
 
   ${({
     variant,
+    small,
     theme: {
       yoga: {
         colors: {
@@ -22,11 +23,23 @@ export const StyledTag = styled.View`
     },
   }) => `
     width: auto;
-    padding:
-      ${tag.padding.top}px
-      ${tag.padding.right}px
-      ${tag.padding.bottom}px
-      ${tag.padding.left}px;
+     ${
+       small
+         ? `
+            padding:
+              ${tag.padding.small.top}
+              ${tag.padding.small.right}px
+              ${tag.padding.small.bottom}
+              ${tag.padding.small.left}px;
+          `
+         : `
+            padding:
+              ${tag.padding.default.top}px
+              ${tag.padding.default.right}px
+              ${tag.padding.default.bottom}px
+              ${tag.padding.default.left}px;
+          `
+     }
 
     border-radius: ${tag.border.radius}px;
     border-width: ${tag.border.width}px;
@@ -34,7 +47,9 @@ export const StyledTag = styled.View`
   `}
 `;
 
-export const StyledText = styled(({ variant, ...rest }) => <Text {...rest} />)`
+export const StyledText = styled(({ variant, ...rest }) => (
+  <Text.Medium {...rest} />
+))`
   ${({
     variant,
     theme: {
@@ -51,13 +66,12 @@ export const StyledText = styled(({ variant, ...rest }) => <Text {...rest} />)`
 
     font-size: ${tag.font.size}px;
     line-height: ${tag.font.lineHeight}px;
-    font-weight: ${tag.font.weight};
   `}
 `;
 
 /** Use Tag component when you want to categorize your content */
-const Tag = ({ children, variant, ...props }) => (
-  <StyledTag variant={variant} {...props}>
+const Tag = ({ children, variant, small, ...props }) => (
+  <StyledTag variant={variant} small={small} {...props}>
     <StyledText variant={variant}>{children}</StyledText>
   </StyledTag>
 );
@@ -65,11 +79,14 @@ const Tag = ({ children, variant, ...props }) => (
 Tag.propTypes = {
   /** style the tag following the theme (success, informative, attention) */
   variant: oneOf(['', 'success', 'informative', 'attention']),
+  /** Can send small to use this variant */
+  small: bool,
   children: node.isRequired,
 };
 
 Tag.defaultProps = {
   variant: '',
+  small: false,
 };
 
 export default Tag;

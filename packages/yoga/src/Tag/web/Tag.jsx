@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, node } from 'prop-types';
+import { oneOf, node, bool } from 'prop-types';
 
 const StyledTag = styled.div`
   display: inline-flex;
@@ -11,6 +11,7 @@ const StyledTag = styled.div`
 
   ${({
     variant,
+    small,
     theme: {
       yoga: {
         colors: {
@@ -25,12 +26,24 @@ const StyledTag = styled.div`
       },
     },
   }) => `
-    padding:
-      ${tag.padding.top}px
-      ${tag.padding.right}px
-      ${tag.padding.bottom}px
-      ${tag.padding.left}px;
-
+    ${
+      small
+        ? `
+            padding:
+              ${tag.padding.small.top}
+              ${tag.padding.small.right}px
+              ${tag.padding.small.bottom}
+              ${tag.padding.small.left}px;
+          `
+        : `
+            padding:
+              ${tag.padding.default.top}px
+              ${tag.padding.default.right}px
+              ${tag.padding.default.bottom}px
+              ${tag.padding.default.left}px;
+          `
+    }
+   
     color: ${color.dark};
     border-radius: ${tag.border.radius}px;
     border-width: ${tag.border.width}px;
@@ -49,10 +62,13 @@ Tag.propTypes = {
   /** style the tag following the theme (success, informative, attention) */
   variant: oneOf(['', 'success', 'informative', 'attention']),
   children: node.isRequired,
+  /** Can send small to use this variant */
+  small: bool,
 };
 
 Tag.defaultProps = {
   variant: '',
+  small: false,
 };
 
 export default Tag;

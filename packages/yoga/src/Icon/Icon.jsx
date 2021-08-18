@@ -3,7 +3,6 @@ import {
   oneOf,
   elementType,
   string,
-  instanceOf,
   checkPropTypes,
   oneOfType,
   number,
@@ -54,10 +53,10 @@ Icon.propTypes = {
   stroke: string,
   /** Horizontal size of the SVG. Use it as one of
    * theme.spacing tokens (xxsmall, small, medium...) */
-  width: oneOf([...commonSizes, instanceOf(Number)]),
+  width: oneOfType([oneOf(commonSizes), string, number]),
   /** Vertical size of the SVG. Use it as one of
    * theme.spacing tokens (xxsmall, small, medium...) */
-  height: oneOf([...commonSizes, instanceOf(Number)]),
+  height: oneOfType([oneOf(commonSizes), string, number]),
   /** Size for vertical and horizontal of the SVG.
    * Use it as one of theme.spacing tokens (xxsmall, small, medium...) */
   size: (props, propName, componentName) => {

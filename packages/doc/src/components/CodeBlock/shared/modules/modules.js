@@ -2,7 +2,11 @@ import * as YogaComponents from '@gympass/yoga';
 import * as YogaIcons from '@gympass/yoga-icons';
 import * as YogaHelpers from '@gympass/yoga-helpers';
 
-const YogaNativeComponents = { GymCard: undefined };
+const YogaNativeComponents = {
+  GymCard: undefined,
+  Result: undefined,
+  Avatar: undefined,
+};
 Object.assign(YogaComponents, YogaNativeComponents);
 
 const NativeComponents = {

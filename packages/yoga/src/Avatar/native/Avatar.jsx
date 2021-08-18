@@ -5,6 +5,10 @@ import Box from '../../Box';
 import Image from './Image';
 import Placeholder from './Placeholder';
 
+/**
+ * The Avatar component is used to display the image.
+ * It has two shapes: default and circle
+ */
 const Avatar = ({
   src,
   fill,
@@ -24,8 +28,9 @@ const Avatar = ({
     height={height}
     alignItems="center"
     justifyContent="center"
-    elevation={elevation}
     borderRadius={borderRadius}
+    boxShadow="small"
+    style={{ elevation: 4 }}
     {...otherProps}
   >
     {src ? (
