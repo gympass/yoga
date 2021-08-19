@@ -387,7 +387,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               class="c14"
             >
               <svg
-                fill="#9898A6"
+                fill="#231B22"
                 height="16"
                 width="16"
               />

@@ -435,7 +435,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 <RNSVGSvgView
                   bbHeight={16}
                   bbWidth={16}
-                  fill="#9898A6"
+                  fill="#231B22"
                   focusable={false}
                   height={16}
                   style={
@@ -461,7 +461,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                     fill={
                       Array [
                         0,
-                        4288190630,
+                        4280490786,
                       ]
                     }
                     fillOpacity={1}
