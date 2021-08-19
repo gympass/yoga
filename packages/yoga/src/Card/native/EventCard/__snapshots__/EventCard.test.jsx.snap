@@ -16,13 +16,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
         Array [
           Object {
             "elevation": 4,
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
               "width": 0,
             },
             "shadowOpacity": 1,
-            "shadowRadius": 6,
+            "shadowRadius": 4,
           },
         ]
       }
@@ -383,7 +383,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                 },
                 "card": Object {
                   "backgroundColor": "#FFFFFF",
-                  "elevation": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                  "elevation": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   "event": Object {
                     "date": Object {
                       "backgroundColor": "#D8385E",
@@ -622,7 +623,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                     "height": 20,
                     "left": 2,
                     "radii": 9999,
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                     "shadowScale": 1.6,
                     "transition": Object {
                       "duration": 500,
@@ -971,7 +973,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                       "color": "#FFFFFF",
                       "radius": 9999,
                     },
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "step": Object {
                     "backgroundColor": Object {
@@ -1016,7 +1019,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                       },
                       "radius": 8,
                     },
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "track": Object {
                     "backgroundColor": Object {
@@ -1058,7 +1062,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                     },
                   },
                   "shadow": Object {
-                    "default": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "default": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "variant": Object {
                     "color": Object {
@@ -1262,10 +1267,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                 },
               },
               "elevations": Array [
-                "none",
-                "0 2px 6px rgba(152, 152, 166, 0.25)",
-                "0 4px 12px rgba(152, 152, 166, 0.25)",
-                "0 8px 20px rgba(152, 152, 166, 0.25)",
+                "0 0 0 rgba(0, 0, 0, 0)",
+                "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
+                "0 5px 5px
+     rgba(152, 152, 166, 0.2)",
+                "0 7px 8px
+     rgba(152, 152, 166, 0.2)",
               ],
               "fontSizes": Array [
                 10,
@@ -1453,13 +1461,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
         Array [
           Object {
             "elevation": 4,
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
               "width": 0,
             },
             "shadowOpacity": 1,
-            "shadowRadius": 6,
+            "shadowRadius": 4,
           },
         ]
       }
@@ -1820,7 +1828,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                 },
                 "card": Object {
                   "backgroundColor": "#FFFFFF",
-                  "elevation": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                  "elevation": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   "event": Object {
                     "date": Object {
                       "backgroundColor": "#D8385E",
@@ -2059,7 +2068,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                     "height": 20,
                     "left": 2,
                     "radii": 9999,
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                     "shadowScale": 1.6,
                     "transition": Object {
                       "duration": 500,
@@ -2408,7 +2418,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                       "color": "#FFFFFF",
                       "radius": 9999,
                     },
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "step": Object {
                     "backgroundColor": Object {
@@ -2453,7 +2464,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                       },
                       "radius": 8,
                     },
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "track": Object {
                     "backgroundColor": Object {
@@ -2495,7 +2507,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                     },
                   },
                   "shadow": Object {
-                    "default": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "default": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "variant": Object {
                     "color": Object {
@@ -2699,10 +2712,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                 },
               },
               "elevations": Array [
-                "none",
-                "0 2px 6px rgba(152, 152, 166, 0.25)",
-                "0 4px 12px rgba(152, 152, 166, 0.25)",
-                "0 8px 20px rgba(152, 152, 166, 0.25)",
+                "0 0 0 rgba(0, 0, 0, 0)",
+                "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
+                "0 5px 5px
+     rgba(152, 152, 166, 0.2)",
+                "0 7px 8px
+     rgba(152, 152, 166, 0.2)",
               ],
               "fontSizes": Array [
                 10,
@@ -2892,13 +2908,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
         Array [
           Object {
             "elevation": 4,
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
               "width": 0,
             },
             "shadowOpacity": 1,
-            "shadowRadius": 6,
+            "shadowRadius": 4,
           },
         ]
       }
@@ -3253,7 +3269,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                 },
                 "card": Object {
                   "backgroundColor": "#FFFFFF",
-                  "elevation": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                  "elevation": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   "event": Object {
                     "date": Object {
                       "backgroundColor": "#D8385E",
@@ -3492,7 +3509,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     "height": 20,
                     "left": 2,
                     "radii": 9999,
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                     "shadowScale": 1.6,
                     "transition": Object {
                       "duration": 500,
@@ -3841,7 +3859,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                       "color": "#FFFFFF",
                       "radius": 9999,
                     },
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "step": Object {
                     "backgroundColor": Object {
@@ -3886,7 +3905,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                       },
                       "radius": 8,
                     },
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "track": Object {
                     "backgroundColor": Object {
@@ -3928,7 +3948,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     },
                   },
                   "shadow": Object {
-                    "default": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "default": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "variant": Object {
                     "color": Object {
@@ -4132,10 +4153,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                 },
               },
               "elevations": Array [
-                "none",
-                "0 2px 6px rgba(152, 152, 166, 0.25)",
-                "0 4px 12px rgba(152, 152, 166, 0.25)",
-                "0 8px 20px rgba(152, 152, 166, 0.25)",
+                "0 0 0 rgba(0, 0, 0, 0)",
+                "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
+                "0 5px 5px
+     rgba(152, 152, 166, 0.2)",
+                "0 7px 8px
+     rgba(152, 152, 166, 0.2)",
               ],
               "fontSizes": Array [
                 10,
@@ -4323,13 +4347,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
         Array [
           Object {
             "elevation": 4,
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
               "width": 0,
             },
             "shadowOpacity": 1,
-            "shadowRadius": 6,
+            "shadowRadius": 4,
           },
         ]
       }
@@ -4690,7 +4714,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                 },
                 "card": Object {
                   "backgroundColor": "#FFFFFF",
-                  "elevation": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                  "elevation": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   "event": Object {
                     "date": Object {
                       "backgroundColor": "#D8385E",
@@ -4929,7 +4954,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     "height": 20,
                     "left": 2,
                     "radii": 9999,
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                     "shadowScale": 1.6,
                     "transition": Object {
                       "duration": 500,
@@ -5278,7 +5304,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                       "color": "#FFFFFF",
                       "radius": 9999,
                     },
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "step": Object {
                     "backgroundColor": Object {
@@ -5323,7 +5350,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                       },
                       "radius": 8,
                     },
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "track": Object {
                     "backgroundColor": Object {
@@ -5365,7 +5393,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                     },
                   },
                   "shadow": Object {
-                    "default": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "default": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "variant": Object {
                     "color": Object {
@@ -5569,10 +5598,13 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                 },
               },
               "elevations": Array [
-                "none",
-                "0 2px 6px rgba(152, 152, 166, 0.25)",
-                "0 4px 12px rgba(152, 152, 166, 0.25)",
-                "0 8px 20px rgba(152, 152, 166, 0.25)",
+                "0 0 0 rgba(0, 0, 0, 0)",
+                "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
+                "0 5px 5px
+     rgba(152, 152, 166, 0.2)",
+                "0 7px 8px
+     rgba(152, 152, 166, 0.2)",
               ],
               "fontSizes": Array [
                 10,
@@ -5760,13 +5792,13 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
         Array [
           Object {
             "elevation": 4,
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
               "width": 0,
             },
             "shadowOpacity": 1,
-            "shadowRadius": 6,
+            "shadowRadius": 4,
           },
         ]
       }
@@ -6127,7 +6159,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                 },
                 "card": Object {
                   "backgroundColor": "#FFFFFF",
-                  "elevation": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                  "elevation": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   "event": Object {
                     "date": Object {
                       "backgroundColor": "#D8385E",
@@ -6366,7 +6399,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                     "height": 20,
                     "left": 2,
                     "radii": 9999,
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                     "shadowScale": 1.6,
                     "transition": Object {
                       "duration": 500,
@@ -6715,7 +6749,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                       "color": "#FFFFFF",
                       "radius": 9999,
                     },
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "step": Object {
                     "backgroundColor": Object {
@@ -6760,7 +6795,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                       },
                       "radius": 8,
                     },
-                    "shadow": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "shadow": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "track": Object {
                     "backgroundColor": Object {
@@ -6802,7 +6838,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                     },
                   },
                   "shadow": Object {
-                    "default": "0 2px 6px rgba(152, 152, 166, 0.25)",
+                    "default": "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
                   },
                   "variant": Object {
                     "color": Object {
@@ -7006,10 +7043,13 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                 },
               },
               "elevations": Array [
-                "none",
-                "0 2px 6px rgba(152, 152, 166, 0.25)",
-                "0 4px 12px rgba(152, 152, 166, 0.25)",
-                "0 8px 20px rgba(152, 152, 166, 0.25)",
+                "0 0 0 rgba(0, 0, 0, 0)",
+                "0 2px 4px
+     rgba(152, 152, 166, 0.2)",
+                "0 5px 5px
+     rgba(152, 152, 166, 0.2)",
+                "0 7px 8px
+     rgba(152, 152, 166, 0.2)",
               ],
               "fontSizes": Array [
                 10,

@@ -30,8 +30,8 @@ exports[`<Result /> should match snapshot 1`] = `
       alignItems="center"
       bgColor="elements.selectionAndIcons"
       borderRadius="circle"
-      boxShadow="small"
       display="flex"
+      elevation="small"
       height={48}
       justifyContent="center"
       style={
@@ -43,17 +43,14 @@ exports[`<Result /> should match snapshot 1`] = `
             "display": "flex",
             "height": 48,
             "justifyContent": "center",
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
               "width": 0,
             },
             "shadowOpacity": 1,
-            "shadowRadius": 6,
+            "shadowRadius": 4,
             "width": 48,
-          },
-          Object {
-            "elevation": 4,
           },
         ]
       }

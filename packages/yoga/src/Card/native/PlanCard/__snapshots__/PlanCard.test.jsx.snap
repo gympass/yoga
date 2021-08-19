@@ -15,13 +15,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       Array [
         Object {
           "elevation": 4,
-          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
-          "shadowRadius": 6,
+          "shadowRadius": 4,
         },
       ]
     }
@@ -49,13 +49,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             "paddingRight": 20,
             "paddingTop": 64,
             "position": "relative",
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
               "width": 0,
             },
             "shadowOpacity": 1,
-            "shadowRadius": 6,
+            "shadowRadius": 4,
             "width": "100%",
           },
         ]
@@ -635,13 +635,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
       Array [
         Object {
           "elevation": 4,
-          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
-          "shadowRadius": 6,
+          "shadowRadius": 4,
         },
       ]
     }
@@ -669,13 +669,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
             "paddingRight": 20,
             "paddingTop": 64,
             "position": "relative",
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
               "width": 0,
             },
             "shadowOpacity": 1,
-            "shadowRadius": 6,
+            "shadowRadius": 4,
             "width": "100%",
           },
         ]
@@ -837,13 +837,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
       Array [
         Object {
           "elevation": 4,
-          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
-          "shadowRadius": 6,
+          "shadowRadius": 4,
         },
       ]
     }
@@ -871,13 +871,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
             "paddingRight": 20,
             "paddingTop": 64,
             "position": "relative",
-            "shadowColor": "rgba(152, 152, 166, 0.25)",
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
               "width": 0,
             },
             "shadowOpacity": 1,
-            "shadowRadius": 6,
+            "shadowRadius": 4,
             "width": "100%",
           },
         ]

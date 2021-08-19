@@ -4,7 +4,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
 .c0 {
   border-radius: 9999px;
   background-color: #9898A6;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
   width: 48px;
   height: 48px;
   display: -webkit-box;
@@ -44,7 +44,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
 .c0 {
   border-radius: 9999px;
   background-color: #9898A6;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
   width: 48px;
   height: 48px;
   display: -webkit-box;
@@ -84,7 +84,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with src and alt prop
 .c0 {
   border-radius: 9999px;
   background-color: #9898A6;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
   width: 48px;
   height: 48px;
   display: -webkit-box;
@@ -123,7 +123,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
 .c0 {
   border-radius: 8px;
   background-color: #9898A6;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
   width: 78px;
   height: 78px;
   display: -webkit-box;
@@ -163,7 +163,7 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
 .c0 {
   border-radius: 8px;
   background-color: #9898A6;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
   width: 48px;
   height: 48px;
   display: -webkit-box;
@@ -203,7 +203,7 @@ exports[`<Avatar /> should match snapshot in default avatar with src and alt pro
 .c0 {
   border-radius: 8px;
   background-color: #9898A6;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
   width: 48px;
   height: 48px;
   display: -webkit-box;

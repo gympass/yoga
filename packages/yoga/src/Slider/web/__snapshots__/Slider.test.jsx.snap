@@ -12,7 +12,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   background-color: #D8385E;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c0 {
@@ -115,7 +115,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   background-color: #D8385E;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c0 {
@@ -195,7 +195,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
   background-color: #D8385E;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c0 {
@@ -262,7 +262,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
   background-color: #D8385E;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c0 {
@@ -340,7 +340,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
   background-color: #D8385E;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c0 {
@@ -453,7 +453,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   transform: translateX(-50%);
   background-color: #D8385E;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c4 {
@@ -479,7 +479,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   -ms-transform-origin: left;
   transform-origin: left;
   background-color: #F5F5FA;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c3 {
@@ -538,7 +538,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   background-color: #D8385E;
   border: 6px solid #FFFFFF;
   border-radius: 9999px;
-  box-shadow: 0 2px 6px rgba(152,152,166,0.25), 0 0 0 8px rgba(216,56,94,0.2);
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12), 0 0 0 8px rgba(216,56,94,0.2);
 }
 
 .c0 {
