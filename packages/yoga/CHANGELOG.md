@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.10.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.10.0...@gympass/yoga@7.10.1) (2021-08-19)
+
+
+### Bug Fixes
+
+* **plancard:** change color on fill prop ([cb650db](https://github.com/Gympass/yoga/commit/cb650db7e46633832bb45d1678a5022ed875f113))
+* **plancard:** change secondary to text primary color ([1199864](https://github.com/Gympass/yoga/commit/1199864c204a1bbdde276543d20f2f2d119a436a))
+
+
+
+
+
 # [7.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.9.0...@gympass/yoga@7.10.0) (2021-08-18)
 
 
