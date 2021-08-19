@@ -6,33 +6,45 @@ const UMBRA_OPACITY = 0.2;
 const PEUMBRA_OPACITY = 0.14;
 const AMBIENT_OPACITY = 0.12;
 
-const umbra = ['0px 2px 4px -1px', '0px 5px 5px -3px', '0px 7px 8px -4px'];
-const penumbra = ['0px 4px 5px 0px', '0px 8px 10px 1px', '0px 12px 17px 2px'];
-const ambient = ['0px 1px 10px 0px', '0px 3px 14px 2px', '0px 5px 22px 4px'];
+const umbra = ['0 2px 4px -1px', '0 5px 5px -3px', '0 7px 8px -4px'];
+const penumbra = ['0 4px 5px 0px', '0 8px 10px 1px', '0 12px 17px 2px'];
+const ambient = ['0 1px 10px 0px', '0 3px 14px 2px', '0 5px 22px 4px'];
 
-function createShadow(level, color) {
-  const shadows = [
-    `${umbra[level]} ${hexToRgb(color, UMBRA_OPACITY)}`,
-    `${penumbra[level]} ${hexToRgb(color, PEUMBRA_OPACITY)}`,
-    `${ambient[level]} ${hexToRgb(color, AMBIENT_OPACITY)}`,
-  ];
+function sanitizeShadow({ shadow, spread }) {
+  if (!spread) {
+    const values = shadow.split(' ');
 
-  return shadows.join();
+    return [...values.slice(0, values.length - 1)].join(' ');
+  }
+
+  return shadow;
 }
 
-/**
- * Elevation function
- *
- * @param {String} color - Color to elevate
- * @param {Number} level - Elevation level. It must be between 0 and 4
- * @returns {String}
- */
-function elevate(color = '#000', level) {
+function createShadow({ level, color, depth, spread }) {
+  const shadows = [
+    `${sanitizeShadow({ shadow: umbra[level], spread })}
+     ${hexToRgb(color, UMBRA_OPACITY)}`,
+    `${sanitizeShadow({ shadow: penumbra[level], spread })}
+     ${hexToRgb(color, PEUMBRA_OPACITY)}`,
+    `${sanitizeShadow({ shadow: ambient[level], spread })}
+     ${hexToRgb(color, AMBIENT_OPACITY)}`,
+  ];
+
+  return shadows.slice(0, depth).join();
+}
+
+function elevate({
+  color = '#000',
+  level,
+  depth = 3,
+  spread = true,
+  fallback = true,
+}) {
   const all = [
-    'none',
-    createShadow(0, color),
-    createShadow(1, color),
-    createShadow(2, color),
+    fallback ? '0 0 0 rgba(0, 0, 0, 0)' : 'none',
+    createShadow({ level: 0, color, depth, spread }),
+    createShadow({ level: 1, color, depth, spread }),
+    createShadow({ level: 2, color, depth, spread }),
   ];
 
   return level ? all[level] : all;
