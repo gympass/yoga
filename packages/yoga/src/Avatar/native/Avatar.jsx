@@ -1,6 +1,8 @@
 import React from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
 import { string, func, number } from 'prop-types';
+import { Image as ImageNative } from 'react-native';
+
 import Box from '../../Box';
 import Image from './Image';
 import Placeholder from './Placeholder';
@@ -29,8 +31,7 @@ const Avatar = ({
     alignItems="center"
     justifyContent="center"
     borderRadius={borderRadius}
-    boxShadow="small"
-    style={{ elevation: 4 }}
+    elevation="small"
     {...otherProps}
   >
     {src ? (
@@ -42,14 +43,14 @@ const Avatar = ({
 );
 
 Avatar.propTypes = {
-  src: string,
+  src: ImageNative.propTypes.source,
   placeholder: func,
   fill: string,
   width: number,
   height: number,
   borderRadius: string,
   type: string,
-  defaultSource: string,
+  defaultSource: ImageNative.propTypes.defaultSource,
   elevation: string,
 };
 
