@@ -23,7 +23,12 @@ import colors from './colors';
  * @type Elevation
  * @default
  */
-const elevations = elevate({ color: colors.medium });
+const elevations = elevate({
+  color: colors.medium,
+  depth: 1,
+  spread: false,
+  fallback: true,
+});
 
 [
   elevations.zero,
