@@ -22,11 +22,11 @@ function sanitizeShadow({ shadow, spread }) {
 
 function createShadow({ level, color, depth, spread }) {
   const shadows = [
-    `${sanitizeShadow({ shadow: umbra[level], spread })}
+    `${sanitizeShadow({ shadow: umbra[level], spread })} \
      ${hexToRgb(color, UMBRA_OPACITY)}`,
-    `${sanitizeShadow({ shadow: penumbra[level], spread })}
+    `${sanitizeShadow({ shadow: penumbra[level], spread })} \
      ${hexToRgb(color, PEUMBRA_OPACITY)}`,
-    `${sanitizeShadow({ shadow: ambient[level], spread })}
+    `${sanitizeShadow({ shadow: ambient[level], spread })} \
      ${hexToRgb(color, AMBIENT_OPACITY)}`,
   ];
 
