@@ -3,7 +3,7 @@ import hexToRgb from './hexToRgb';
 // values from
 // https://github.com/material-components/material-components-web/blob/master/packages/mdc-elevation/_elevation-theme.scss
 const UMBRA_OPACITY = 0.2;
-const PEUMBRA_OPACITY = 0.14;
+const PENUMBRA_OPACITY = 0.14;
 const AMBIENT_OPACITY = 0.12;
 
 const umbra = ['0 2px 4px -1px', '0 5px 5px -3px', '0 7px 8px -4px'];
@@ -25,7 +25,7 @@ function createShadow({ level, color, depth, spread }) {
     `${sanitizeShadow({ shadow: umbra[level], spread })} \
      ${hexToRgb(color, UMBRA_OPACITY)}`,
     `${sanitizeShadow({ shadow: penumbra[level], spread })} \
-     ${hexToRgb(color, PEUMBRA_OPACITY)}`,
+     ${hexToRgb(color, PENUMBRA_OPACITY)}`,
     `${sanitizeShadow({ shadow: ambient[level], spread })} \
      ${hexToRgb(color, AMBIENT_OPACITY)}`,
   ];
@@ -47,7 +47,7 @@ function elevate({
     createShadow({ level: 2, color, depth, spread }),
   ];
 
-  return level ? all[level] : all;
+  return all[level] || all;
 }
 
 export default elevate;
