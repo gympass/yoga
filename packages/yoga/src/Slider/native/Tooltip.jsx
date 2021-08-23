@@ -3,24 +3,24 @@ import { string, node } from 'prop-types';
 import styled from 'styled-components';
 
 import Text from '../../Text';
+import Box from '../../Box';
 
-const Wrapper = styled.View(
+const Wrapper = styled(Box).attrs(
   ({
     theme: {
       yoga: {
         components: { slider },
       },
     },
-  }) => `
-    background-color: ${slider.tooltip.ribbon.backgroundColor};
-    bottom: 38px;
-    border-radius: ${slider.tooltip.radius}px;
-    box-shadow: ${slider.tooltip.shadow};
-    elevation: 8;
-    position: absolute;
-    width: 95px;
-  `,
-);
+  }) => ({
+    bgColor: slider.tooltip.ribbon.backgroundColor,
+    bottom: 38,
+    bRadius: slider.tooltip.radius,
+    elevation: slider.tooltip.shadow,
+    position: 'absolute',
+    width: 95,
+  }),
+)``;
 
 const Tip = styled.View(
   ({
@@ -65,27 +65,26 @@ const Description = styled(Text.Small)(
   `,
 );
 
-const Arrow = styled.View(
+const Arrow = styled(Box).attrs(
   ({
     theme: {
       yoga: {
         components: { slider },
       },
     },
-  }) => `
-    align-self: center;
-    background-color: ${slider.tooltip.backgroundColor};
-    border-radius: 3px;
-    bottom: 10px;
-    box-shadow: ${slider.tooltip.shadow};
-    height: 16px;
-    margin-bottom: -17px;
-    position: relative;
-    transform: rotate(45deg);
-    width: 16px;
-    z-index: -1;
-  `,
-);
+  }) => ({
+    alignSelf: 'center',
+    bgColor: slider.tooltip.backgroundColor,
+    bRadius: 3,
+    bottom: 10,
+    height: 16,
+    width: 16,
+    mb: -17,
+    position: 'absolute',
+  }),
+)`
+  transform: rotate(45deg);
+`;
 
 const RibbonWrapper = styled.View(
   ({
@@ -133,6 +132,7 @@ Ribbon.propTypes = {
 
 const Tooltip = ({ title, description, ribbon, ...props }) => (
   <Wrapper>
+    <Arrow />
     {ribbon && <Ribbon>{ribbon}</Ribbon>}
     {(title || description) && (
       <Tip {...props}>
@@ -140,7 +140,6 @@ const Tooltip = ({ title, description, ribbon, ...props }) => (
         {description && <Description>{description}</Description>}
       </Tip>
     )}
-    <Arrow />
   </Wrapper>
 );
 

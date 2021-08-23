@@ -1,29 +1,32 @@
 import React from 'react';
-import { View } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import { bool, number, shape, string } from 'prop-types';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import Tooltip from './Tooltip';
 
-const Circle = styled.TouchableOpacity(
+import Box from '../../Box';
+
+const Circle = styled(Box).attrs(
   ({
     theme: {
       yoga: {
         components: { slider },
       },
     },
-  }) => `
-    background-color: ${slider.marker.backgroundColor};
-    border: 6px solid ${slider.marker.border.color};
-    border-radius: ${slider.marker.border.radius}px;
-    box-shadow: ${slider.marker.shadow};
-    elevation: 4;
-    height: 24px;
-    width: 24px;
-    position: relative;
-    top: 2px;
-  `,
-);
+  }) => ({
+    bgColor: slider.marker.backgroundColor,
+    border: 6,
+    borderColor: slider.marker.border.color,
+    borderRadius: slider.marker.border.radius,
+    elevation: slider.marker.shadow,
+    height: 24,
+    width: 24,
+    position: 'relative',
+    top: 2,
+    as: TouchableOpacity,
+  }),
+)``;
 
 const CirclePressed = styled(Circle)(
   ({
