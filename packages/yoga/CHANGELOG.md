@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.10.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.10.2...@gympass/yoga@7.10.3) (2021-08-23)
+
+
+### Bug Fixes
+
+* **button:** adjust font size small value ([42e853e](https://github.com/Gympass/yoga/commit/42e853e793583905ba9dd5761bf4a55f3ea07418))
+* **event.card:** adjust link to use xsmall value ([020fde6](https://github.com/Gympass/yoga/commit/020fde6c0a8aee3ed52e388649dd1bdf4db57fad))
+
+
+
+
+
 ## [7.10.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.10.1...@gympass/yoga@7.10.2) (2021-08-19)
 
 **Note:** Version bump only for package @gympass/yoga
