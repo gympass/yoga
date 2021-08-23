@@ -12,6 +12,8 @@ const BoxPage = () => (
       display="flex"
       flexDirection="column"
       alignItems="center"
+      elevation="small"
+      bgColor="white"
     >
       <Text>Making</Text>
       <Text>wellbeing</Text>
