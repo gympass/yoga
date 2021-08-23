@@ -1298,7 +1298,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "500",
                 "textAlign": "center",
               },
@@ -1439,7 +1439,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "500",
                 "textAlign": "center",
               },
@@ -1501,7 +1501,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
               Object {
                 "color": "#D8385E",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "500",
                 "textAlign": "center",
               },
@@ -1634,7 +1634,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
               Object {
                 "color": "#D8385E",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "500",
                 "textAlign": "center",
               },
@@ -2944,7 +2944,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "500",
                 "textAlign": "center",
               },
@@ -3086,7 +3086,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
               Object {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "500",
                 "textAlign": "center",
               },
@@ -3150,7 +3150,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "500",
                 "textAlign": "center",
               },
@@ -3285,7 +3285,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 12,
+                "fontSize": 14,
                 "fontWeight": "500",
                 "textAlign": "center",
               },
