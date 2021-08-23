@@ -3,7 +3,9 @@ import { bool } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Animated } from 'react-native';
+
 import withTouchable from '../../Button/native/withTouchable';
+import Box from '../../Box';
 
 const SwitchTrack = styled.View`
   ${({
@@ -64,31 +66,24 @@ const ThumbShadow = styled.View(
   },
 );
 
-const SwitchThumb = styled.View`
-  ${({
+const SwitchThumb = styled(Box).attrs(
+  ({
     theme: {
       yoga: {
         components: { checkboxswitch },
       },
     },
     disabled,
-  }) =>
-    `
-  width: ${checkboxswitch.thumb.width}px;
-  height: ${checkboxswitch.thumb.height}px;
-  border-radius: ${checkboxswitch.thumb.radii};
-  background-color: ${checkboxswitch.thumb.backgroundColor};
-  box-shadow: ${checkboxswitch.thumb.shadow};
-  elevation: 4;
-
-  ${
-    disabled
-      ? `
-      background-color: ${checkboxswitch.thumb.disabled.backgroundColor};`
-      : ``
-  }
-`};
-`;
+  }) => ({
+    width: checkboxswitch.thumb.width,
+    height: checkboxswitch.thumb.height,
+    borderRadius: checkboxswitch.thumb.radii,
+    bgColor: disabled
+      ? checkboxswitch.thumb.disabled.backgroundColor
+      : checkboxswitch.thumb.backgroundColor,
+    elevation: checkboxswitch.thumb.shadow,
+  }),
+)``;
 
 const CheckboxSwitch = ({
   checked,
