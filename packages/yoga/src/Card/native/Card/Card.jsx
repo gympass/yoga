@@ -3,21 +3,23 @@ import styled from 'styled-components';
 import { string, shape, oneOf, node } from 'prop-types';
 
 import Text from '../../../Text';
+import Box from '../../../Box';
 
-const CardShadow = styled.View(
+const CardShadow = styled(Box).attrs(
   ({
     theme: {
       yoga: {
-        components: { card },
+        components: {
+          card: { elevation },
+        },
       },
     },
-  }) => `
-    box-shadow: ${card.elevation};
-    elevation: 4;
-`,
-);
+  }) => ({
+    elevation,
+  }),
+)``;
 
-const CardStyled = styled.View(
+const CardStyled = styled(Box).attrs(
   ({
     variant,
     theme: {
@@ -26,19 +28,17 @@ const CardStyled = styled.View(
         components: { card },
       },
     },
-  }) => `
-    padding:
-      ${card.padding.top}px 
-      ${card.padding.right}px 
-      ${card.padding.bottom}px 
-      ${card.padding.left}px;
-
-    border-radius: ${card.radii}px;
-    background-color: ${variant ? color : card.backgroundColor};
-    elevation: 4;
-    overflow: hidden;
-`,
-);
+  }) => ({
+    elevation: card.elevation,
+    pt: card.padding.top,
+    pr: card.padding.right,
+    pb: card.padding.bottom,
+    pl: card.padding.left,
+    bRadius: card.radii,
+    bgColor: variant ? color : card.backgroundColor,
+    overflow: 'hidden',
+  }),
+)``;
 
 const Ribbon = styled.View`
   ${({
@@ -56,12 +56,12 @@ const Ribbon = styled.View`
     margin-bottom: ${card.padding.bottom}px;
     margin-left: -${card.padding.left}px;
 
-    padding: 
+    padding:
       ${spacing.xxxsmall}px
       ${spacing.xsmall}px
       ${spacing.xxxsmall}px
       ${spacing.small}px;
-    
+
     border-top-right-radius: ${card.ribbon.radius}px;
     border-bottom-right-radius: ${card.ribbon.radius}px;
     background-color: ${variant ? color : elements.backgroundAndDisabled};

@@ -14,13 +14,11 @@ const Plan = styled(Card)`
 
   position: relative;
 
-  overflow: hidden;
-
   ${props => {
     const {
       colors,
       components: {
-        card: { plan, elevation },
+        card: { plan },
       },
     } = theme(props);
 
@@ -31,8 +29,6 @@ const Plan = styled(Card)`
       border-radius: ${plan.radius}px;
 
       background-color: ${colors.white};
-
-      box-shadow: ${elevation};
     `;
   }}
 `;
