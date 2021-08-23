@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@gympass/yoga": "^7.10.7",
+    "@react-native-picker/picker": "^1.16.6",
     "react": "16.13.1",
     "react-native": "0.63.4",
     "react-native-gesture-handler": "^1.4.1",
