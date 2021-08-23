@@ -9,7 +9,7 @@ import Text from '../../../Text';
 import Box from '../../../Box';
 import Button from '../../../Button';
 
-const { spacing, radii, lineHeights, fontSizes } = theme;
+const { spacing, radii, lineHeights } = theme;
 
 const Event = styled(Card)`
   flex-direction: row;
@@ -80,7 +80,6 @@ const EventTime = styled(Box)`
 
 const ButtonLink = styled(Button.Link)`
   align-self: flex-end;
-  font-size: ${fontSizes.xsmall};
 `;
 
 const SmallCard = ({
@@ -142,7 +141,11 @@ const FullCard = ({
           <Time fill={icon.fill} style={{ marginRight: 5 }} />
           <Text.Tiny>{event.time}</Text.Tiny>
         </EventTime>
-        {!!link && <ButtonLink onPress={onLinkPress}>{link}</ButtonLink>}
+        {!!link && (
+          <ButtonLink onPress={onLinkPress} small>
+            {link}
+          </ButtonLink>
+        )}
       </Row>
     </EventInfo>
   </>
