@@ -269,7 +269,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                   "font": Object {
                     "size": Object {
                       "default": 16,
-                      "small": 12,
+                      "small": 14,
+                      "xsmall": 12,
                     },
                     "weight": 500,
                   },
@@ -1706,7 +1707,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                   "font": Object {
                     "size": Object {
                       "default": 16,
-                      "small": 12,
+                      "small": 14,
+                      "xsmall": 12,
                     },
                     "weight": 500,
                   },
@@ -3139,7 +3141,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   "font": Object {
                     "size": Object {
                       "default": 16,
-                      "small": 12,
+                      "small": 14,
+                      "xsmall": 12,
                     },
                     "weight": 500,
                   },
@@ -4576,7 +4579,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                   "font": Object {
                     "size": Object {
                       "default": 16,
-                      "small": 12,
+                      "small": 14,
+                      "xsmall": 12,
                     },
                     "weight": 500,
                   },
@@ -6013,7 +6017,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                   "font": Object {
                     "size": Object {
                       "default": 16,
-                      "small": 12,
+                      "small": 14,
+                      "xsmall": 12,
                     },
                     "weight": 500,
                   },

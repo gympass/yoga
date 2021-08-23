@@ -26,7 +26,6 @@ const Button = ({
     size: {
       default: fontSizes.medium,
       small: fontSizes.small,
-      xsmall: fontSizes.xsmall,
     },
     weight: fontWeights.medium,
   },
