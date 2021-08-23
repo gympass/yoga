@@ -11,10 +11,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   }
 >
   <View
+    elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
     style={
       Array [
         Object {
-          "elevation": 4,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
@@ -27,28 +27,24 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
     }
   >
     <View
+      bRadius={8}
+      bgColor="#FFFFFF"
+      elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+      overflow="hidden"
+      pb={16}
+      pl={16}
+      pr={16}
+      pt={16}
       style={
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
-            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 16,
             "paddingTop": 16,
-          },
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 16,
-            "maxWidth": 288,
-            "overflow": "hidden",
-            "paddingBottom": 32,
-            "paddingLeft": 20,
-            "paddingRight": 20,
-            "paddingTop": 64,
-            "position": "relative",
             "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
@@ -56,6 +52,16 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             },
             "shadowOpacity": 1,
             "shadowRadius": 4,
+          },
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "maxWidth": 288,
+            "paddingBottom": 32,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 64,
+            "position": "relative",
             "width": "100%",
           },
         ]
@@ -631,10 +637,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   }
 >
   <View
+    elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
     style={
       Array [
         Object {
-          "elevation": 4,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
@@ -647,28 +653,24 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
     }
   >
     <View
+      bRadius={8}
+      bgColor="#FFFFFF"
+      elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+      overflow="hidden"
+      pb={16}
+      pl={16}
+      pr={16}
+      pt={16}
       style={
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
-            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 16,
             "paddingTop": 16,
-          },
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 16,
-            "maxWidth": 288,
-            "overflow": "hidden",
-            "paddingBottom": 32,
-            "paddingLeft": 20,
-            "paddingRight": 20,
-            "paddingTop": 64,
-            "position": "relative",
             "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
@@ -676,6 +678,16 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
             },
             "shadowOpacity": 1,
             "shadowRadius": 4,
+          },
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "maxWidth": 288,
+            "paddingBottom": 32,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 64,
+            "position": "relative",
             "width": "100%",
           },
         ]
@@ -833,10 +845,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   }
 >
   <View
+    elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
     style={
       Array [
         Object {
-          "elevation": 4,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
@@ -849,28 +861,24 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
     }
   >
     <View
+      bRadius={8}
+      bgColor="#FFFFFF"
+      elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+      overflow="hidden"
+      pb={16}
+      pl={16}
+      pr={16}
+      pt={16}
       style={
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
-            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 16,
             "paddingTop": 16,
-          },
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "borderRadius": 16,
-            "maxWidth": 288,
-            "overflow": "hidden",
-            "paddingBottom": 32,
-            "paddingLeft": 20,
-            "paddingRight": 20,
-            "paddingTop": 64,
-            "position": "relative",
             "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,
@@ -878,6 +886,16 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
             },
             "shadowOpacity": 1,
             "shadowRadius": 4,
+          },
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 16,
+            "maxWidth": 288,
+            "paddingBottom": 32,
+            "paddingLeft": 20,
+            "paddingRight": 20,
+            "paddingTop": 64,
+            "position": "relative",
             "width": "100%",
           },
         ]

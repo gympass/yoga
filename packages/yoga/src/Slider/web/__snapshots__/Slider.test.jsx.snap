@@ -453,7 +453,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   transform: translateX(-50%);
   background-color: #D8385E;
   border-radius: 8px;
-  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+  box-shadow: 0 5px 5px -3px rgba(152,152,166,0.2),0 8px 10px 1px rgba(152,152,166,0.14),0 3px 14px 2px rgba(152,152,166,0.12);
 }
 
 .c4 {
@@ -479,7 +479,7 @@ exports[`<Slider /> Tooltip should render tooltips 1`] = `
   -ms-transform-origin: left;
   transform-origin: left;
   background-color: #F5F5FA;
-  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+  box-shadow: 0 5px 5px -3px rgba(152,152,166,0.2),0 8px 10px 1px rgba(152,152,166,0.14),0 3px 14px 2px rgba(152,152,166,0.12);
 }
 
 .c3 {
