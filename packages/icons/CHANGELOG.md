@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.2.0...@gympass/yoga-icons@1.2.1) (2021-08-24)
+
+
+### Bug Fixes
+
+* **icons:** add UserFilledStar to native ([90b98cf](https://github.com/Gympass/yoga/commit/90b98cf8f0f02563c12c885eae883d04908e0574))
+
+
+
+
+
 # [1.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.1.2...@gympass/yoga-icons@1.2.0) (2021-07-20)
 
 
