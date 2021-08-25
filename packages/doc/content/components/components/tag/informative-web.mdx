@@ -9,35 +9,55 @@ const Wrapper = styled.div`
 `;
 
 render(
-  <Box>
+  <>
     <Wrapper>
-      <Tag.Informative mv="medium" variant="success">success</Tag.Informative>
-      <Tag.Informative variant="success" icon={Building}>
+      <Tag.Informative mb="xxxsmall" mr="medium" variant="success">
+        success
+      </Tag.Informative>
+      <Tag.Informative mr="medium" variant="success" icon={Building}>
         success with custom icon
       </Tag.Informative>
-
-      <Wrapper>
-        <Tag.Informative marginVertical="medium" variant="informative">informative</Tag.Informative>
-        <Tag.Informative variant="informative" icon={Building}>
-          informative with custom icon
-        </Tag.Informative>
-      </Wrapper>
-
-      <Wrapper>
-        <Tag.Informative mv="medium" variant="informative" small>
-          informative small
-        </Tag.Informative>
-        <Tag.Informative variant="informative" icon={Building} small>
-          informative small with custom icon
-        </Tag.Informative>
-      </Wrapper>
-
-      <Tag.Informative marginVertical="medium" variant="attention">attention</Tag.Informative>
-      <Tag.Informative variant="attention" icon={Building}>
-        attention with custom icon
+      <Tag.Informative
+        mt="xxxsmall"
+        mr="medium"
+        variant="success"
+        icon={Building}
+        small
+      >
+        success small with custom icon
       </Tag.Informative>
     </Wrapper>
-  </Box>,
+    <Wrapper>
+      <Tag.Informative variant="informative">informative</Tag.Informative>
+      <Tag.Informative mv="medium" variant="informative" icon={Building}>
+        informative with custom icon
+      </Tag.Informative>
+      <Tag.Informative variant="informative" icon={Building} small>
+        informative small with custom icon
+      </Tag.Informative>
+    </Wrapper>
+    <Wrapper>
+      <Tag.Informative marginLeft="medium" variant="attention">
+        attention
+      </Tag.Informative>
+      <Tag.Informative
+        marginLeft="medium"
+        marginVertical="xxxsmall"
+        variant="attention"
+        icon={Building}
+      >
+        attention with custom icon
+      </Tag.Informative>
+      <Tag.Informative
+        marginLeft="medium"
+        variant="attention"
+        icon={Building}
+        small
+      >
+        attention small with custom icon
+      </Tag.Informative>
+    </Wrapper>
+  </>,
 );
 ```
 
