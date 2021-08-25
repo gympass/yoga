@@ -92,7 +92,8 @@ const ResultDetails = ({
             const showNumbersOfItemsLeft =
               isLastItem && limit !== 0 && limit < items.length - 1;
             return (
-              <React.Fragment key={JSON.stringify(props)}>
+              // eslint-disable-next-line react/no-array-index-key
+              <React.Fragment key={index}>
                 {IconComponent && (
                   <IconWrapper>
                     <Icon
