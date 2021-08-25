@@ -4,7 +4,7 @@ import { func, arrayOf, string, shape, oneOfType, number } from 'prop-types';
 import { Picker } from '@react-native-picker/picker';
 import { Button } from '../..';
 
-const PickerStyled = styled.Picker`
+const PickerStyled = styled(Picker)`
   width: 100%;
   height: 190px;
 `;
