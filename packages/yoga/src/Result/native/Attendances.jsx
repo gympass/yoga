@@ -51,7 +51,7 @@ const Attendances = ({ attendances, rate }) => (
     <List numberOfLines={1} size="xsmall" textAlignVertical="bottom">
       {attendances &&
         attendances.map(({ description, icon }) => (
-          <>
+          <React.Fragment key={description}>
             <IconWrapper>
               <Icon
                 as={icon}
@@ -64,7 +64,7 @@ const Attendances = ({ attendances, rate }) => (
             <ItemSeparator />
             {description}
             <ItemSeparator />
-          </>
+          </React.Fragment>
         ))}
     </List>
     {rate && <Rate rate={rate} />}
