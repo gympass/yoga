@@ -33,7 +33,7 @@ const Slider = ({
     shadow: elevations.small,
   },
   tooltip: {
-    shadow: elevations.small,
+    shadow: elevations.medium,
     radius: radii.small,
     backgroundColor: colors.elements.backgroundAndDisabled,
     distance: spacing.large,

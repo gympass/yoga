@@ -273,6 +273,13 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
             }
           >
             <View
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               pressed={false}
               style={
                 Array [
@@ -283,24 +290,32 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     "borderStyle": "solid",
                     "borderWidth": 0,
                     "display": "none",
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
-            <TouchableOpacity
+            <View
               accessibilityRole="adjustable"
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               style={
                 Array [
                   Object {
@@ -309,21 +324,22 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     "borderRadius": 9999,
                     "borderStyle": "solid",
                     "borderWidth": 6,
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
           </View>
         </View>
@@ -452,6 +468,13 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
             }
           >
             <View
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               pressed={false}
               style={
                 Array [
@@ -462,24 +485,32 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     "borderStyle": "solid",
                     "borderWidth": 0,
                     "display": "none",
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
-            <TouchableOpacity
+            <View
               accessibilityRole="adjustable"
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               style={
                 Array [
                   Object {
@@ -488,21 +519,22 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     "borderRadius": 9999,
                     "borderStyle": "solid",
                     "borderWidth": 6,
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
           </View>
         </View>
@@ -660,6 +692,13 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
             }
           >
             <View
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               pressed={false}
               style={
                 Array [
@@ -670,24 +709,32 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
                     "borderStyle": "solid",
                     "borderWidth": 0,
                     "display": "none",
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
-            <TouchableOpacity
+            <View
               accessibilityRole="adjustable"
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               style={
                 Array [
                   Object {
@@ -696,21 +743,22 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
                     "borderRadius": 9999,
                     "borderStyle": "solid",
                     "borderWidth": 6,
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
           </View>
         </View>
@@ -859,6 +907,13 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
             }
           >
             <View
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               pressed={false}
               style={
                 Array [
@@ -869,24 +924,32 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     "borderStyle": "solid",
                     "borderWidth": 0,
                     "display": "none",
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
-            <TouchableOpacity
+            <View
               accessibilityRole="adjustable"
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               style={
                 Array [
                   Object {
@@ -895,21 +958,22 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     "borderRadius": 9999,
                     "borderStyle": "solid",
                     "borderWidth": 6,
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
           </View>
         </View>
@@ -948,6 +1012,13 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
             }
           >
             <View
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               pressed={false}
               style={
                 Array [
@@ -958,24 +1029,32 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     "borderStyle": "solid",
                     "borderWidth": 0,
                     "display": "none",
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
-            <TouchableOpacity
+            <View
               accessibilityRole="adjustable"
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               style={
                 Array [
                   Object {
@@ -984,21 +1063,22 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     "borderRadius": 9999,
                     "borderStyle": "solid",
                     "borderWidth": 6,
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
           </View>
         </View>
@@ -1301,6 +1381,13 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
             }
           >
             <View
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               pressed={false}
               style={
                 Array [
@@ -1311,24 +1398,32 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     "borderStyle": "solid",
                     "borderWidth": 0,
                     "display": "none",
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
-            <TouchableOpacity
+            <View
               accessibilityRole="adjustable"
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               style={
                 Array [
                   Object {
@@ -1337,21 +1432,22 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     "borderRadius": 9999,
                     "borderStyle": "solid",
                     "borderWidth": 6,
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
           </View>
         </View>
@@ -1390,6 +1486,13 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
             }
           >
             <View
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               pressed={false}
               style={
                 Array [
@@ -1400,24 +1503,32 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     "borderStyle": "solid",
                     "borderWidth": 0,
                     "display": "none",
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
-            <TouchableOpacity
+            <View
               accessibilityRole="adjustable"
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               style={
                 Array [
                   Object {
@@ -1426,21 +1537,22 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     "borderRadius": 9999,
                     "borderStyle": "solid",
                     "borderWidth": 6,
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
           </View>
         </View>
@@ -1569,26 +1681,60 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
             }
           >
             <View
+              bRadius={8}
+              bgColor="#D8385E"
+              bottom={38}
+              elevation="0 5px 5px      rgba(152, 152, 166, 0.2)"
+              position="absolute"
               style={
                 Array [
                   Object {
                     "backgroundColor": "#D8385E",
                     "borderRadius": 8,
                     "bottom": 38,
-                    "elevation": 8,
                     "position": "absolute",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
-                      "height": 2,
+                      "height": 5,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 5,
                     "width": 95,
                   },
                 ]
               }
+              width={95}
             >
+              <View
+                alignSelf="center"
+                bRadius={3}
+                bgColor="#F5F5FA"
+                bottom={10}
+                height={16}
+                mb={-17}
+                position="absolute"
+                style={
+                  Array [
+                    Object {
+                      "alignSelf": "center",
+                      "backgroundColor": "#F5F5FA",
+                      "borderRadius": 3,
+                      "bottom": 10,
+                      "height": 16,
+                      "marginBottom": -17,
+                      "position": "absolute",
+                      "transform": Array [
+                        Object {
+                          "rotate": "45deg",
+                        },
+                      ],
+                      "width": 16,
+                    },
+                  ]
+                }
+                width={16}
+              />
               <View
                 style={
                   Array [
@@ -1673,37 +1819,15 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                   description
                 </Text>
               </View>
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "center",
-                      "backgroundColor": "#F5F5FA",
-                      "borderRadius": 3,
-                      "bottom": 10,
-                      "height": 16,
-                      "marginBottom": -17,
-                      "position": "relative",
-                      "shadowColor": "rgba(152, 152, 166, 0.25)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 6,
-                      "transform": Array [
-                        Object {
-                          "rotate": "45deg",
-                        },
-                      ],
-                      "width": 16,
-                      "zIndex": -1,
-                    },
-                  ]
-                }
-              />
             </View>
             <View
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               pressed={true}
               style={
                 Array [
@@ -1716,21 +1840,30 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                     "elevation": 0,
                     "height": 40,
                     "position": "absolute",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": -6,
                     "width": 40,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
-            <TouchableOpacity
+            <View
               accessibilityRole="adjustable"
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               style={
                 Array [
                   Object {
@@ -1739,21 +1872,22 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                     "borderRadius": 9999,
                     "borderStyle": "solid",
                     "borderWidth": 6,
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
           </View>
         </View>
@@ -1882,26 +2016,60 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
             }
           >
             <View
+              bRadius={8}
+              bgColor="#D8385E"
+              bottom={38}
+              elevation="0 5px 5px      rgba(152, 152, 166, 0.2)"
+              position="absolute"
               style={
                 Array [
                   Object {
                     "backgroundColor": "#D8385E",
                     "borderRadius": 8,
                     "bottom": 38,
-                    "elevation": 8,
                     "position": "absolute",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
-                      "height": 2,
+                      "height": 5,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 5,
                     "width": 95,
                   },
                 ]
               }
+              width={95}
             >
+              <View
+                alignSelf="center"
+                bRadius={3}
+                bgColor="#F5F5FA"
+                bottom={10}
+                height={16}
+                mb={-17}
+                position="absolute"
+                style={
+                  Array [
+                    Object {
+                      "alignSelf": "center",
+                      "backgroundColor": "#F5F5FA",
+                      "borderRadius": 3,
+                      "bottom": 10,
+                      "height": 16,
+                      "marginBottom": -17,
+                      "position": "absolute",
+                      "transform": Array [
+                        Object {
+                          "rotate": "45deg",
+                        },
+                      ],
+                      "width": 16,
+                    },
+                  ]
+                }
+                width={16}
+              />
               <View
                 style={
                   Array [
@@ -1986,37 +2154,15 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                   description
                 </Text>
               </View>
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignSelf": "center",
-                      "backgroundColor": "#F5F5FA",
-                      "borderRadius": 3,
-                      "bottom": 10,
-                      "height": 16,
-                      "marginBottom": -17,
-                      "position": "relative",
-                      "shadowColor": "rgba(152, 152, 166, 0.25)",
-                      "shadowOffset": Object {
-                        "height": 2,
-                        "width": 0,
-                      },
-                      "shadowOpacity": 1,
-                      "shadowRadius": 6,
-                      "transform": Array [
-                        Object {
-                          "rotate": "45deg",
-                        },
-                      ],
-                      "width": 16,
-                      "zIndex": -1,
-                    },
-                  ]
-                }
-              />
             </View>
             <View
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               pressed={true}
               style={
                 Array [
@@ -2029,21 +2175,30 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                     "elevation": 0,
                     "height": 40,
                     "position": "absolute",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": -6,
                     "width": 40,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
-            <TouchableOpacity
+            <View
               accessibilityRole="adjustable"
+              bgColor="#D8385E"
+              border={6}
+              borderColor="#FFFFFF"
+              borderRadius={9999}
+              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+              height={24}
+              position="relative"
               style={
                 Array [
                   Object {
@@ -2052,21 +2207,22 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                     "borderRadius": 9999,
                     "borderStyle": "solid",
                     "borderWidth": 6,
-                    "elevation": 4,
                     "height": 24,
                     "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.25)",
+                    "shadowColor": "rgba(152, 152, 166, 0.2)",
                     "shadowOffset": Object {
                       "height": 2,
                       "width": 0,
                     },
                     "shadowOpacity": 1,
-                    "shadowRadius": 6,
+                    "shadowRadius": 4,
                     "top": 2,
                     "width": 24,
                   },
                 ]
               }
+              top={2}
+              width={24}
             />
           </View>
         </View>

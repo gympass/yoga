@@ -11,33 +11,47 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
   }
 >
   <View
+    elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
     style={
       Array [
         Object {
-          "elevation": 4,
-          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
-          "shadowRadius": 6,
+          "shadowRadius": 4,
         },
       ]
     }
   >
     <View
+      bRadius={8}
+      bgColor="#FFFFFF"
+      elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+      overflow="hidden"
+      pb={16}
+      pl={16}
+      pr={16}
+      pt={16}
       style={
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
-            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 16,
             "paddingTop": 16,
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 4,
           },
           Object {
             "minHeight": 204,
@@ -528,33 +542,47 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
   }
 >
   <View
+    elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
     style={
       Array [
         Object {
-          "elevation": 4,
-          "shadowColor": "rgba(152, 152, 166, 0.25)",
+          "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
-          "shadowRadius": 6,
+          "shadowRadius": 4,
         },
       ]
     }
   >
     <View
+      bRadius={8}
+      bgColor="#FFFFFF"
+      elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+      overflow="hidden"
+      pb={16}
+      pl={16}
+      pr={16}
+      pt={16}
       style={
         Array [
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 8,
-            "elevation": 4,
             "overflow": "hidden",
             "paddingBottom": 16,
             "paddingLeft": 16,
             "paddingRight": 16,
             "paddingTop": 16,
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 1,
+            "shadowRadius": 4,
           },
           Object {
             "minHeight": 204,

@@ -1,6 +1,3 @@
-import { elevate } from '@gympass/yoga-common';
-import colors from './colors';
-
 /**
  * @module elevation
  * @desc Elevation (z-index) tokens module.
@@ -23,7 +20,7 @@ import colors from './colors';
  * @type Elevation
  * @default
  */
-const elevations = elevate({ color: colors.medium });
+const elevations = [0, 4, 8, 12];
 
 [
   elevations.zero,

@@ -35,21 +35,24 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
         }
       >
         <View
+          bgColor="#FFFFFF"
+          borderRadius={9999}
           checked={true}
           disabled={false}
+          elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+          height={20}
           style={
             Object {
               "backgroundColor": "#FFFFFF",
               "borderRadius": 9999,
-              "elevation": 4,
               "height": 20,
-              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowColor": "rgba(152, 152, 166, 0.2)",
               "shadowOffset": Object {
                 "height": 2,
                 "width": 0,
               },
               "shadowOpacity": 1,
-              "shadowRadius": 6,
+              "shadowRadius": 4,
               "transform": Array [
                 Object {
                   "translateX": 2,
@@ -58,6 +61,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
               "width": 20,
             }
           }
+          width={20}
         />
       </View>
     </View>
@@ -98,21 +102,24 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         }
       >
         <View
+          bgColor="#FFFFFF"
+          borderRadius={9999}
           checked={false}
           disabled={false}
+          elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+          height={20}
           style={
             Object {
               "backgroundColor": "#FFFFFF",
               "borderRadius": 9999,
-              "elevation": 4,
               "height": 20,
-              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowColor": "rgba(152, 152, 166, 0.2)",
               "shadowOffset": Object {
                 "height": 2,
                 "width": 0,
               },
               "shadowOpacity": 1,
-              "shadowRadius": 6,
+              "shadowRadius": 4,
               "transform": Array [
                 Object {
                   "translateX": 26,
@@ -121,6 +128,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
               "width": 20,
             }
           }
+          width={20}
         />
       </View>
     </View>
@@ -164,21 +172,24 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         }
       >
         <View
+          bgColor="#FFFFFF"
+          borderRadius={9999}
           checked={true}
           disabled={true}
+          elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+          height={20}
           style={
             Object {
               "backgroundColor": "#FFFFFF",
               "borderRadius": 9999,
-              "elevation": 4,
               "height": 20,
-              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowColor": "rgba(152, 152, 166, 0.2)",
               "shadowOffset": Object {
                 "height": 2,
                 "width": 0,
               },
               "shadowOpacity": 1,
-              "shadowRadius": 6,
+              "shadowRadius": 4,
               "transform": Array [
                 Object {
                   "translateX": 2,
@@ -187,6 +198,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
               "width": 20,
             }
           }
+          width={20}
         />
       </View>
     </View>
@@ -229,21 +241,24 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
         }
       >
         <View
+          bgColor="#FFFFFF"
+          borderRadius={9999}
           checked={false}
           disabled={true}
+          elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+          height={20}
           style={
             Object {
               "backgroundColor": "#FFFFFF",
               "borderRadius": 9999,
-              "elevation": 4,
               "height": 20,
-              "shadowColor": "rgba(152, 152, 166, 0.25)",
+              "shadowColor": "rgba(152, 152, 166, 0.2)",
               "shadowOffset": Object {
                 "height": 2,
                 "width": 0,
               },
               "shadowOpacity": 1,
-              "shadowRadius": 6,
+              "shadowRadius": 4,
               "transform": Array [
                 Object {
                   "translateX": 26,
@@ -252,6 +267,7 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
               "width": 20,
             }
           }
+          width={20}
         />
       </View>
     </View>
