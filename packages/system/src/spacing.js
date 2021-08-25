@@ -164,6 +164,26 @@ const spacing = compose(
   height,
 );
 
+const margins = compose(
+  margin,
+  marginTop,
+  marginRight,
+  marginBottom,
+  marginLeft,
+  marginHorizontal,
+  marginVertical,
+);
+
+const paddings = compose(
+  padding,
+  paddingTop,
+  paddingRight,
+  paddingBottom,
+  paddingLeft,
+  paddingHorizontal,
+  paddingVertical,
+);
+
 export {
   margin,
   marginTop,
@@ -172,6 +192,7 @@ export {
   marginLeft,
   marginHorizontal,
   marginVertical,
+  margins,
   padding,
   paddingTop,
   paddingRight,
@@ -179,6 +200,7 @@ export {
   paddingLeft,
   paddingHorizontal,
   paddingVertical,
+  paddings,
   spacing,
   width,
   height,
