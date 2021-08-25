@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.0.1...@gympass/yoga-tokens@3.1.0) (2021-08-25)
+
+
+### Features
+
+* **tokens:** add elevation for iOS platform ([b69827c](https://github.com/Gympass/yoga/commit/b69827c93a4a3744e47cd21f088410a397edf6f8))
+* **tokens:** add elevation tokens for Android platform ([f60221b](https://github.com/Gympass/yoga/commit/f60221b87e6b447af299ff979e5715df7757ae65))
+
+
+
+
+
 ## [3.0.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.0.0...@gympass/yoga-tokens@3.0.1) (2021-06-10)
 
 **Note:** Version bump only for package @gympass/yoga-tokens
