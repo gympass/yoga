@@ -1,6 +1,6 @@
 import React, { isValidElement } from 'react';
 import styled from 'styled-components';
-import { arrayOf, string, shape, func, boolean, node } from 'prop-types';
+import { arrayOf, string, shape, func, bool, node } from 'prop-types';
 import Text from '../../Text';
 import Attendances from './Attendances';
 import Box from '../../Box';
@@ -90,7 +90,7 @@ const Result = ({
 
 Result.propTypes = {
   /** The component Avatar */
-  avatar: func.isRequired,
+  avatar: node.isRequired,
   /** A list with the attendances */
   attendances: arrayOf(
     shape({
@@ -105,7 +105,7 @@ Result.propTypes = {
   /** The text below the main title */
   subTitle: string,
   /** If it is to show the divide in the bottom */
-  divided: boolean,
+  divided: bool,
   /** The chidren necessary */
   children: node,
 };
