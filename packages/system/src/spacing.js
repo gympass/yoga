@@ -145,25 +145,6 @@ const height = props =>
     transform: toPx,
   });
 
-const spacing = compose(
-  margin,
-  marginTop,
-  marginRight,
-  marginBottom,
-  marginLeft,
-  marginHorizontal,
-  marginVertical,
-  padding,
-  paddingTop,
-  paddingRight,
-  paddingBottom,
-  paddingLeft,
-  paddingHorizontal,
-  paddingVertical,
-  width,
-  height,
-);
-
 const margins = compose(
   margin,
   marginTop,
@@ -182,6 +163,13 @@ const paddings = compose(
   paddingLeft,
   paddingHorizontal,
   paddingVertical,
+);
+
+const spacing = compose(
+  margins,
+  paddings,
+  width,
+  height,
 );
 
 export {
