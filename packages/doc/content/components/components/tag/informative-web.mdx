@@ -1,30 +1,30 @@
+import { Link as GatsbyLink } from 'gatsby';
+
 ### Usage
 
 ```javascript state
 const Wrapper = styled.div`
-  & > div {
-    margin: 5px;
-    vertical-align: top;
-  }
+  display: flex;
+  flex-direction: column;
 `;
 
 render(
   <Box>
     <Wrapper>
-      <Tag.Informative variant="success">success</Tag.Informative>
+      <Tag.Informative mv="medium" variant="success">success</Tag.Informative>
       <Tag.Informative variant="success" icon={Building}>
         success with custom icon
       </Tag.Informative>
 
       <Wrapper>
-        <Tag.Informative variant="informative">informative</Tag.Informative>
+        <Tag.Informative marginVertical="medium" variant="informative">informative</Tag.Informative>
         <Tag.Informative variant="informative" icon={Building}>
           informative with custom icon
         </Tag.Informative>
       </Wrapper>
 
       <Wrapper>
-        <Tag.Informative variant="informative" small>
+        <Tag.Informative mv="medium" variant="informative" small>
           informative small
         </Tag.Informative>
         <Tag.Informative variant="informative" icon={Building} small>
@@ -32,7 +32,7 @@ render(
         </Tag.Informative>
       </Wrapper>
 
-      <Tag.Informative variant="attention">attention</Tag.Informative>
+      <Tag.Informative marginVertical="medium" variant="attention">attention</Tag.Informative>
       <Tag.Informative variant="attention" icon={Building}>
         attention with custom icon
       </Tag.Informative>
@@ -42,5 +42,7 @@ render(
 ```
 
 ### Props
+
+The Tag component also has support for margins props as you can see more details <GatsbyLink to="/system/spacing">our system</GatsbyLink>
 
 <PropsTable component="Tag.Informative" platform="web" />
