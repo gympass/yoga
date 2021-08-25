@@ -18,6 +18,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
     elevation="small"
     height={48}
     justifyContent="center"
+    overflow="hidden"
     style={
       Array [
         Object {
@@ -27,6 +28,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
           "display": "flex",
           "height": 48,
           "justifyContent": "center",
+          "overflow": "hidden",
           "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
@@ -133,6 +135,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
     elevation="small"
     height={48}
     justifyContent="center"
+    overflow="hidden"
     style={
       Array [
         Object {
@@ -142,6 +145,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
           "display": "flex",
           "height": 48,
           "justifyContent": "center",
+          "overflow": "hidden",
           "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
@@ -248,6 +252,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
     elevation="small"
     height={78}
     justifyContent="center"
+    overflow="hidden"
     style={
       Array [
         Object {
@@ -257,6 +262,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
           "display": "flex",
           "height": 78,
           "justifyContent": "center",
+          "overflow": "hidden",
           "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
@@ -363,6 +369,7 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
     elevation="small"
     height={48}
     justifyContent="center"
+    overflow="hidden"
     style={
       Array [
         Object {
@@ -372,6 +379,7 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
           "display": "flex",
           "height": 48,
           "justifyContent": "center",
+          "overflow": "hidden",
           "shadowColor": "rgba(152, 152, 166, 0.2)",
           "shadowOffset": Object {
             "height": 2,
