@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.10.9...@gympass/yoga@7.11.0) (2021-08-26)
+
+
+### Features
+
+* **tag:** add margins ([205ccfd](https://github.com/Gympass/yoga/commit/205ccfd809842383bb892f080b8422a3e0c853b6))
+
+
+
+
+
 ## [7.10.9](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.10.8...@gympass/yoga@7.10.9) (2021-08-26)
 
 **Note:** Version bump only for package @gympass/yoga
