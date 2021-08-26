@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.12.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.11.0...@gympass/yoga@7.12.0) (2021-08-26)
+
+
+### Bug Fixes
+
+* **result:** attendance prop issues ([08f6fe5](https://github.com/Gympass/yoga/commit/08f6fe5d00c88812aa0ad2d5f478206f852ec947))
+* **result:** detail prop issues ([2691ad3](https://github.com/Gympass/yoga/commit/2691ad3f7851874d45046c5561c62c86735ab9dc))
+* **result:** result prop issues ([fa95485](https://github.com/Gympass/yoga/commit/fa954858b474ebc5683eaf012dfc456b55a6ad20))
+* **result:** tags prop issues ([6b3d59f](https://github.com/Gympass/yoga/commit/6b3d59f54e9b2c7470932be049b597fbf4d4bd45))
+
+
+### Features
+
+* **avatar:** updating Avatar (Native) to be closer as what we have on Web ([f2975a4](https://github.com/Gympass/yoga/commit/f2975a43155bdaf0e3da52033397371c44fe9e23))
+
+
+
+
+
 # [7.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.10.9...@gympass/yoga@7.11.0) (2021-08-26)
 
 
