@@ -117,6 +117,7 @@ import Star from './star.svg';
 import SystemStatus from './system_status.svg';
 import PriceTag from './price_tag.svg';
 import Time from './time.svg';
+import TimeFilled from './time_filled.svg';
 import Token from './token.svg';
 import Trash from './trash.svg';
 import TrendingUp from './trending_up.svg';
@@ -255,6 +256,7 @@ export {
   SystemStatus,
   PriceTag,
   Time,
+  TimeFilled,
   Token,
   Trash,
   TrendingUp,
