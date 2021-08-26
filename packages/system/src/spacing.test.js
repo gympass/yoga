@@ -7,6 +7,7 @@ import {
   marginLeft,
   marginHorizontal,
   marginVertical,
+  margins,
   padding,
   paddingTop,
   paddingRight,
@@ -14,6 +15,7 @@ import {
   paddingLeft,
   paddingHorizontal,
   paddingVertical,
+  paddings,
   width,
   height,
   spacing,
@@ -334,6 +336,25 @@ describe('spacings', () => {
     });
   });
 
+  describe('margins', () => {
+    it('should return all props for margins', () => {
+      const expectedMargins = css({
+        marginTop: spacings.small,
+        marginBottom: spacings.small,
+        marginLeft: spacings.medium,
+        marginRight: spacings.medium,
+      });
+      const m = margins({
+        mt: spacings.small,
+        marginHorizontal: spacings.medium,
+        marginBottom: spacings.small,
+        theme,
+      });
+
+      expect(m).toStrictEqual(expectedMargins);
+    });
+  });
+
   describe('padding', () => {
     it('Should return values for padding prop', () => {
       const expectedZeroSpacing = css({
@@ -597,6 +618,25 @@ describe('spacings', () => {
 
       const pv = paddingVertical({ theme, pv: 20 });
       expect(pv).toStrictEqual(expectedNoTheme);
+    });
+  });
+
+  describe('paddings', () => {
+    it('should return all props for paddings', () => {
+      const expectedPaddings = css({
+        paddingTop: spacings.small,
+        paddingBottom: spacings.small,
+        paddingLeft: spacings.medium,
+        paddingRight: spacings.medium,
+      });
+      const p = paddings({
+        pt: spacings.small,
+        paddingHorizontal: spacings.medium,
+        paddingBottom: spacings.small,
+        theme,
+      });
+
+      expect(p).toStrictEqual(expectedPaddings);
     });
   });
 

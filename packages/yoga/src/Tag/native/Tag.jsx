@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { oneOf, node, bool } from 'prop-types';
+import { margins } from '@gympass/yoga-system';
 import Text from '../../Text';
 
 export const StyledTag = styled.View`
@@ -45,6 +46,8 @@ export const StyledTag = styled.View`
     border-width: ${tag.border.width}px;
     border-color: ${borderColor.dark};
   `}
+
+  ${margins}
 `;
 
 export const StyledText = styled(({ variant, ...rest }) => (

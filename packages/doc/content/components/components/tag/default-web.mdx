@@ -1,18 +1,17 @@
+import { Link as GatsbyLink } from 'gatsby';
+
 ### Usage
 
 ```javascript state
 const Wrapper = styled.div`
-  & > div {
-    margin: 5px;
-    vertical-align: middle;
-  }
+  display: flex;
+  flex-direction: column;
 `;
 
 render(
   <Wrapper>
     <Tag>default</Tag>
-
-    <Tag variant="success">success</Tag>
+    <Tag mv="medium" variant="success">success</Tag>
     <Tag variant="informative">informative</Tag>
     <Tag variant="attention" small>attention</Tag>
   </Wrapper>,
@@ -20,5 +19,7 @@ render(
 ```
 
 ### Props
+
+The Tag component also has support for margins props as you can see more details <GatsbyLink to="/system/spacing">our system</GatsbyLink>
 
 <PropsTable component="Tag" platform="web" />

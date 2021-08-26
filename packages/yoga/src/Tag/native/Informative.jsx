@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, oneOf, node, bool } from 'prop-types';
+import { margins } from '@gympass/yoga-system';
 
 import { StyledTag, StyledText } from './Tag';
 
@@ -21,6 +22,8 @@ const Informative = styled(StyledTag)`
     border-color: ${color.light};
     border-radius: ${tag.border.radius}px;
   `}
+
+  ${margins}
 `;
 
 const Wrapper = styled.View`

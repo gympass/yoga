@@ -1,5 +1,9 @@
 import React from 'react';
 import { node, bool, oneOf } from 'prop-types';
+import yogaPkg from '@gympass/yoga/package.json';
+import iconsPkg from '@gympass/yoga-icons/package.json';
+import systemPkg from '@gympass/yoga-system/package.json';
+
 import CodeBlockContext from './CodeBlockContext';
 import { ReactLive, PrismHighlight, SnackEmbed } from '.';
 import { importStatement } from './shared/templates';
@@ -58,11 +62,12 @@ const packages = [
   { name: NativeComponents, path: 'react-native' },
 ];
 
-const peerDependencies = [
-  { path: 'styled-components' },
-  { path: 'react-native-svg' },
-  { path: 'react-is' },
-];
+const peerDependencies = Object.keys({
+  ...yogaPkg.peerDependencies,
+  ...iconsPkg.peerDependencies,
+  ...systemPkg.peerDependencies,
+  'react-is': '*',
+}).map(pkg => ({ path: pkg }));
 
 const CodeBlock = ({ children: sampleCode, center, state, type }) => {
   const code = sampleCode.trim();

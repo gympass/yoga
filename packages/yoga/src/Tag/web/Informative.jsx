@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, oneOf, node, bool } from 'prop-types';
+import { margins } from '@gympass/yoga-system';
 
 import Tag from './Tag';
 
@@ -32,6 +33,8 @@ const Informative = styled(Tag)`
       margin-right: ${tag.icon.margin.right}px;
     }
   `}
+
+  ${margins}
 `;
 
 /** Tags should be keywords to categorize or organize an item. */

@@ -1,46 +1,72 @@
+import { Link as GatsbyLink } from 'gatsby';
+
 ### Usage
 
 ```javascript state
-const Wrapper = styled.div`
-  & > div {
-    margin: 5px;
-    vertical-align: top;
-  }
-`;
+const Wrapper = props => (
+  <Box
+    display="inline-flex"
+    alignItems="center"
+    flexDirection="column"
+    {...props}
+  />
+);
 
 render(
-  <Box>
+  <>
     <Wrapper>
-      <Tag.Informative variant="success">success</Tag.Informative>
-      <Tag.Informative variant="success" icon={Building}>
+      <Tag.Informative mb="xxxsmall" mr="medium" variant="success">
+        success
+      </Tag.Informative>
+      <Tag.Informative mr="medium" variant="success" icon={Building}>
         success with custom icon
       </Tag.Informative>
-
-      <Wrapper>
-        <Tag.Informative variant="informative">informative</Tag.Informative>
-        <Tag.Informative variant="informative" icon={Building}>
-          informative with custom icon
-        </Tag.Informative>
-      </Wrapper>
-
-      <Wrapper>
-        <Tag.Informative variant="informative" small>
-          informative small
-        </Tag.Informative>
-        <Tag.Informative variant="informative" icon={Building} small>
-          informative small with custom icon
-        </Tag.Informative>
-      </Wrapper>
-
-      <Tag.Informative variant="attention">attention</Tag.Informative>
-      <Tag.Informative variant="attention" icon={Building}>
-        attention with custom icon
+      <Tag.Informative
+        mt="xxxsmall"
+        mr="medium"
+        variant="success"
+        icon={Building}
+        small
+      >
+        success small with custom icon
       </Tag.Informative>
     </Wrapper>
-  </Box>,
+    <Wrapper>
+      <Tag.Informative variant="informative">informative</Tag.Informative>
+      <Tag.Informative mv="medium" variant="informative" icon={Building}>
+        informative with custom icon
+      </Tag.Informative>
+      <Tag.Informative variant="informative" icon={Building} small>
+        informative small with custom icon
+      </Tag.Informative>
+    </Wrapper>
+    <Wrapper>
+      <Tag.Informative marginLeft="medium" variant="attention">
+        attention
+      </Tag.Informative>
+      <Tag.Informative
+        marginLeft="medium"
+        marginVertical="xxxsmall"
+        variant="attention"
+        icon={Building}
+      >
+        attention with custom icon
+      </Tag.Informative>
+      <Tag.Informative
+        marginLeft="medium"
+        variant="attention"
+        icon={Building}
+        small
+      >
+        attention small with custom icon
+      </Tag.Informative>
+    </Wrapper>
+  </>,
 );
 ```
 
 ### Props
+
+The Tag component also has support for margins props as you can see more details <GatsbyLink to="/system/spacing">our system</GatsbyLink>
 
 <PropsTable component="Tag.Informative" platform="web" />
