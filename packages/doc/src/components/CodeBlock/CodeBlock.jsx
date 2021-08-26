@@ -59,6 +59,7 @@ const packages = [
 ];
 
 const peerDependencies = [
+  { path: '@react-native-picker/picker' },
   { path: 'styled-components' },
   { path: 'react-native-svg' },
   { path: 'react-is' },
