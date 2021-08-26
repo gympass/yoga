@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga",
-  "version": "7.10.7",
+  "version": "7.10.8",
   "description": "Gympass component library",
   "main": "./src",
   "sideEffects": false,
@@ -53,8 +53,8 @@
     "styled-components": "^4.4.0"
   },
   "peerDependencies": {
+    "@react-native-picker/picker": "^1.16.6",
     "react": ">=16",
-    "styled-components": "^4.4.0",
-    "@react-native-picker/picker": "^1.16.6"
+    "styled-components": "^4.4.0"
   }
 }

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.4.9...@gympass/yoga-labnative@1.5.0) (2021-08-26)
+
+
+### Bug Fixes
+
+* **picker:** correct dependencies usage ([9b172c9](https://github.com/Gympass/yoga/commit/9b172c9a0e539b0ec88ca790358594e2b3ddacdf))
+* **picker:** correct styled usage ([f5afd97](https://github.com/Gympass/yoga/commit/f5afd97b2c539a9c1dc3ff5b880c1445348c8a6e))
+
+
+### Features
+
+* **labnative:** add react-native-picker as peer dependency ([331dba6](https://github.com/Gympass/yoga/commit/331dba6dc5e5d7e4a125eb75d052196035653f1a))
+
+
+### Reverts
+
+* **labnative:** xcode generated files ([cf8f154](https://github.com/Gympass/yoga/commit/cf8f1543a32bfe326d0e91241de21e1479ec05d5))
+
+
+
+
+
 ## [1.4.9](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.4.8...@gympass/yoga-labnative@1.4.9) (2021-08-25)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

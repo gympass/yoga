@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.10.8](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.10.7...@gympass/yoga@7.10.8) (2021-08-26)
+
+
+### Bug Fixes
+
+* **picker:** correct peerDependency usage ([7782a0b](https://github.com/Gympass/yoga/commit/7782a0b3d7aef0e1a553f39c64f34e9763b1b53c))
+* **picker:** correct styled usage ([f5afd97](https://github.com/Gympass/yoga/commit/f5afd97b2c539a9c1dc3ff5b880c1445348c8a6e))
+
+
+
+
+
 ## [7.10.7](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.10.6...@gympass/yoga@7.10.7) (2021-08-25)
 
 **Note:** Version bump only for package @gympass/yoga
