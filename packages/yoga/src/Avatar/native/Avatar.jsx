@@ -1,16 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
 import { BuildingFilled } from '@gympass/yoga-icons';
 import { string, func } from 'prop-types';
-import { Image as RNImage } from 'react-native';
+import { Image } from 'react-native';
 
 import Box from '../../Box';
 import Icon from '../../Icon';
-
-const Image = styled(RNImage)`
-  width: 100%;
-  height: 100%;
-`;
 
 /**
  * The Avatar component is used to display the image.
@@ -30,7 +24,7 @@ const Avatar = ({ src, icon = BuildingFilled, fill, stroke, ...props }) => (
     {...props}
   >
     {src ? (
-      <Image source={src} />
+      <Box as={Image} width="100%" height="100%" source={src} />
     ) : (
       <Icon as={icon} width="50%" height="50%" fill={fill} stroke={stroke} />
     )}
@@ -38,7 +32,7 @@ const Avatar = ({ src, icon = BuildingFilled, fill, stroke, ...props }) => (
 );
 
 Avatar.propTypes = {
-  src: RNImage.propTypes.source,
+  src: Image.propTypes.source,
   icon: func,
   fill: string,
   ...Box.propTypes,
