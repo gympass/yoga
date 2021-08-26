@@ -7,7 +7,7 @@ import { Image as RNImage } from 'react-native';
 import Box from '../../Box';
 import Icon from '../../Icon';
 
-const Image = styled.Image`
+const Image = styled(RNImage)`
   width: 100%;
   height: 100%;
 `;
