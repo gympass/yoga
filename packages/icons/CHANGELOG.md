@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.2.3...@gympass/yoga-icons@1.3.0) (2021-08-26)
+
+
+### Features
+
+* **icons:** add TimeFilled icon ([546196b](https://github.com/Gympass/yoga/commit/546196b26cb9a17c289d67db0df46e8a57747528))
+
+
+
+
+
 ## [1.2.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.2.2...@gympass/yoga-icons@1.2.3) (2021-08-25)
 
 
