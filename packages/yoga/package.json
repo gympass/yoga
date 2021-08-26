@@ -54,6 +54,7 @@
   },
   "peerDependencies": {
     "react": ">=16",
-    "styled-components": "^4.4.0"
+    "styled-components": "^4.4.0",
+    "@react-native-picker/picker": "^1.16.6"
   }
 }

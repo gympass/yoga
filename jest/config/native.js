@@ -15,7 +15,7 @@ module.exports = {
     '\\.svg$': '<rootDir>/jest/mock/svg.native.js',
   },
   transformIgnorePatterns: [
-    '/node_modules/(?!@ptomasroos/react-native-multi-slider|react-native).+\\.js$',
+    '/node_modules/(?!@react-native-picker/picker|@ptomasroos/react-native-multi-slider|react-native).+\\.js$',
   ],
   rootDir: '../../',
 };
