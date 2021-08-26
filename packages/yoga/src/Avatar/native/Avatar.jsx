@@ -1,69 +1,48 @@
 import React from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
-import { string, func, number } from 'prop-types';
-import { Image as ImageNative } from 'react-native';
+import { string, func } from 'prop-types';
+import { Image } from 'react-native';
 
 import Box from '../../Box';
-import Image from './Image';
-import Placeholder from './Placeholder';
+import Icon from '../../Icon';
 
 /**
  * The Avatar component is used to display the image.
  * It has two shapes: default and circle
  */
-const Avatar = ({
-  src,
-  fill,
-  placeholder,
-  width,
-  height,
-  borderRadius,
-  type,
-  defaultSource,
-  elevation,
-  ...otherProps
-}) => (
+const Avatar = ({ src, icon = BuildingFilled, fill, stroke, ...props }) => (
   <Box
     bgColor="elements.selectionAndIcons"
     display="flex"
-    width={width}
-    height={height}
     alignItems="center"
     justifyContent="center"
-    borderRadius={borderRadius}
+    width={48}
+    height={48}
+    borderRadius="small"
     elevation="small"
-    {...otherProps}
+    overflow="hidden"
+    {...props}
   >
     {src ? (
-      <Image defaultSource={defaultSource} type={type} source={src} />
+      <Box as={Image} width="100%" height="100%" source={src} />
     ) : (
-      <Placeholder fill={fill} icon={placeholder} />
+      <Icon as={icon} width="50%" height="50%" fill={fill} stroke={stroke} />
     )}
   </Box>
 );
 
 Avatar.propTypes = {
-  src: ImageNative.propTypes.source,
-  placeholder: func,
+  src: Image.propTypes.source,
+  icon: func,
   fill: string,
-  width: number,
-  height: number,
-  borderRadius: string,
-  type: string,
-  defaultSource: ImageNative.propTypes.defaultSource,
-  elevation: string,
+  ...Box.propTypes,
 };
 
 Avatar.defaultProps = {
   src: undefined,
-  placeholder: BuildingFilled,
-  fill: undefined,
-  width: 48,
-  height: 48,
-  borderRadius: 'small',
-  type: 'default',
-  defaultSource: undefined,
+  fill: 'white',
   elevation: 'small',
+  ...Box.defaultProps,
 };
 
 Avatar.displayName = 'Avatar';

@@ -92,7 +92,8 @@ const ResultDetails = ({
             const showNumbersOfItemsLeft =
               isLastItem && limit !== 0 && limit < items.length - 1;
             return (
-              <>
+              // eslint-disable-next-line react/no-array-index-key
+              <React.Fragment key={index}>
                 {IconComponent && (
                   <IconWrapper>
                     <Icon
@@ -127,7 +128,7 @@ const ResultDetails = ({
                     <Separator />
                   </>
                 )}
-              </>
+              </React.Fragment>
             );
           },
         )}
@@ -150,7 +151,7 @@ ResultDetails.propTypes = {
   /** If shows the dot separator between the itens */
   dots: bool,
   /** The component to render as the item of the list. */
-  renderItem: oneOfType([node, func]),
+  renderItem: oneOfType([node, func, shape({ render: func.isRequired })]),
 };
 
 ResultDetails.defaultProps = {

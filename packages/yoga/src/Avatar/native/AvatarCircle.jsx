@@ -1,40 +1,20 @@
 import React from 'react';
 import { UserFilled } from '@gympass/yoga-icons';
-import { func, string } from 'prop-types';
 import Avatar from './Avatar';
 
-const AvatarCircle = ({
-  src,
-  fill,
-  placeholder,
-  defaultSource,
-  ...otherProps
-}) => (
+const AvatarCircle = ({ src, ...props }) => (
   <Avatar
+    {...props}
     src={src}
-    fill={fill}
     borderRadius="circle"
-    placeholder={placeholder}
-    defaultSource={defaultSource}
-    type="circle"
-    {...otherProps}
+    icon={!src ? UserFilled : undefined}
   />
 );
 
-AvatarCircle.propTypes = {
-  src: string,
-  placeholder: func,
-  fill: string,
-  defaultSource: string,
-};
+AvatarCircle.propTypes = Avatar.propTypes;
 
-AvatarCircle.defaultProps = {
-  src: undefined,
-  placeholder: UserFilled,
-  fill: undefined,
-  defaultSource: undefined,
-};
+AvatarCircle.defaultProps = Avatar.defaultProps;
 
-AvatarCircle.displayName = 'AvatarCircle';
+AvatarCircle.displayName = 'Avatar.Circle';
 
 export default AvatarCircle;

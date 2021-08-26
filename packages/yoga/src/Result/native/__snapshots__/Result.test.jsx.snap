@@ -34,6 +34,7 @@ exports[`<Result /> should match snapshot 1`] = `
       elevation="small"
       height={48}
       justifyContent="center"
+      overflow="hidden"
       style={
         Array [
           Object {
@@ -43,6 +44,7 @@ exports[`<Result /> should match snapshot 1`] = `
             "display": "flex",
             "height": 48,
             "justifyContent": "center",
+            "overflow": "hidden",
             "shadowColor": "rgba(152, 152, 166, 0.2)",
             "shadowOffset": Object {
               "height": 2,

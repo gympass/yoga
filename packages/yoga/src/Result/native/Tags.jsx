@@ -24,8 +24,9 @@ const Wrapper = styled.ScrollView`
 
 const ResultTags = ({ items }) => (
   <Wrapper horizontal showsHorizontalScrollIndicator={false}>
-    {items.map(({ ...props }) => (
-      <TagStyled small {...props} />
+    {items.map(({ ...props }, index) => (
+      // eslint-disable-next-line react/no-array-index-key
+      <TagStyled small key={index} {...props} />
     ))}
   </Wrapper>
 );
