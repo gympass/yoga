@@ -3,10 +3,14 @@ import { Link as GatsbyLink } from 'gatsby';
 ### Usage
 
 ```javascript state
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+const Wrapper = props => (
+  <Box
+    display="inline-flex"
+    alignItems="center"
+    flexDirection="column"
+    {...props}
+  />
+);
 
 render(
   <>
