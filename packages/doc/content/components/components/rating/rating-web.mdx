@@ -1,10 +1,13 @@
 ### Usage
 
 ```javascript state
-const Center = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+const Center = props => (
+  <Box
+    display="flex"
+    flexDirection="column"
+    {...props}
+  />
+);
 
 render(
   <Center>
@@ -23,11 +26,6 @@ render(
 ### Working
 
 ```javascript state
-const Center = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 render(() => {
   const [rating, setRating] = useState(2);
 
@@ -38,10 +36,13 @@ render(() => {
 ### Custom Icons
 
 ```javascript state
-const Center = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+const Center = props => (
+  <Box
+    display="flex"
+    flexDirection="column"
+    {...props}
+  />
+);
 
 render(
   <Center>
