@@ -7,10 +7,13 @@ If you need to use an anchor, `<List.LinkItem/>` is also available.
 ### Usage
 
 ```javascript state
-const SwitchLine = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
+const Wrapper = props => (
+  <Box
+    display="flex"
+    justifyContent="space-between"
+    {...props}
+  />
+);
 
 render(() => {
   const [locker, toggleLocker] = useState(false);
@@ -20,30 +23,30 @@ render(() => {
   return (
     <List>
       <List.Item>
-        <SwitchLine>
+        <Wrapper>
           <span>Locker</span>
           <Checkbox.Switch
             checked={locker}
             onChange={() => toggleLocker(!locker)}
           />
-        </SwitchLine>
+        </Wrapper>
       </List.Item>
 
       <List.Item>
-        <SwitchLine>
+        <Wrapper>
           <span>Wi-fi</span>
           <Checkbox.Switch checked={wifi} onChange={() => toggleWifi(!wifi)} />
-        </SwitchLine>
+        </Wrapper>
       </List.Item>
 
       <List.Item>
-        <SwitchLine>
+        <Wrapper>
           <span>Parking</span>
           <Checkbox.Switch
             checked={parking}
             onChange={() => toggleParking(!parking)}
           />
-        </SwitchLine>
+        </Wrapper>
       </List.Item>
 
       <List.LinkItem
