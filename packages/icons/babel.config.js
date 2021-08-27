@@ -2,7 +2,7 @@ module.exports = {
   plugins: [
     [
       'transform-rename-import',
-      { original: '^(.+?)\\.svg$', replacement: '$1.js' },
+      { original: '^(.+?)\\.svg$', replacement: '$1' },
     ],
   ],
   env: {
@@ -19,7 +19,6 @@ module.exports = {
           },
         ],
       ],
-      ignore: ['**/*.native.js'],
     },
 
     esm: {
@@ -35,18 +34,10 @@ module.exports = {
           },
         ],
       ],
-      ignore: ['**/*.native.js'],
     },
 
     native: {
-      only: ['**/*.native.js'],
       presets: ['@babel/preset-env', '@babel/preset-react'],
-      plugins: [
-        [
-          'transform-rename-import',
-          { original: '^(.+?)\\.svg$', replacement: '$1.native.js' },
-        ],
-      ],
     },
 
     svg: {
