@@ -12,15 +12,21 @@ You can use it with or without children.
 render(() => {
   const [activeStep, setActiveStep] = useState(0);
 
-  const Section = styled.div`
-    text-align: center;
-    padding: 20px;
-  `;
+  const Section = props => (
+   <Box
+    textAlign="center"
+    padding={20}
+    {...props}
+   />
+  );
 
-  const Actions = styled.div`
-    display: flex;
-    justify-content: space-between;
-  `;
+  const Actions = props => (
+   <Box
+    display="flex"
+    justifyContent="space-between"
+    {...props}
+   />
+  );
 
   return (
     <Stepper activeStep={activeStep}>
