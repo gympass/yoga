@@ -70,7 +70,7 @@ render(() => {
 
   return (
     <>
-      <section style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+      <Box display="flex" flexDirection="column" justifyContent="space-between">
         <Button.Outline onClick={() => handleOpen('info')}>Open info snackbar</Button.Outline>
         
         <br/>
@@ -80,7 +80,7 @@ render(() => {
         <br/>
 
         <Button.Outline onClick={() => handleOpen('failure')}>Open failure snackbar</Button.Outline>
-      </section>
+      </Box>
       
       <Snackbar
         open={isOpen.info}
