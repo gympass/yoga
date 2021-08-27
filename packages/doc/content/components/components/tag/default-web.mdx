@@ -3,18 +3,13 @@ import { Link as GatsbyLink } from 'gatsby';
 ### Usage
 
 ```javascript state
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 render(
-  <Wrapper>
+  <Box display="flex" flexDirection="column">
     <Tag>default</Tag>
     <Tag mv="medium" variant="success">success</Tag>
     <Tag variant="informative">informative</Tag>
     <Tag variant="attention" small>attention</Tag>
-  </Wrapper>,
+  </Box>
 );
 ```
 
