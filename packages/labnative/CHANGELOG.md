@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.5.3...@gympass/yoga-labnative@1.5.4) (2021-08-30)
+
+
+### Bug Fixes
+
+* **android:** update minSdkVersion ([c1be74c](https://github.com/Gympass/yoga/commit/c1be74c8bd9fd8407a6b4468fb5ff7e9984dd70d))
+
+
+
+
+
 ## [1.5.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.5.2...@gympass/yoga-labnative@1.5.3) (2021-08-26)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
