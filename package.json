@@ -100,5 +100,8 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "resolutions": {
+    "sharp": "0.28.0"
   }
 }
