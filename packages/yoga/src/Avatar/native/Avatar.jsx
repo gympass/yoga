@@ -41,7 +41,6 @@ Avatar.propTypes = {
 Avatar.defaultProps = {
   src: undefined,
   fill: 'white',
-  elevation: 'small',
   ...Box.defaultProps,
 };
 
