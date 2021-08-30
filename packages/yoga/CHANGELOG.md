@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.12.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.12.1...@gympass/yoga@7.12.2) (2021-08-30)
+
+
+### Bug Fixes
+
+* **avatar:** remove duplicated elevation prop ([ccafd0c](https://github.com/Gympass/yoga/commit/ccafd0cb2d7314bb8ac91b357a19ae2a15c58c4e))
+
+
+
+
+
 ## [7.12.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.12.0...@gympass/yoga@7.12.1) (2021-08-30)
 
 **Note:** Version bump only for package @gympass/yoga
