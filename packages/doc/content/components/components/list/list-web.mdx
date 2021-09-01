@@ -7,10 +7,13 @@ If you need to use an anchor, `<List.LinkItem/>` is also available.
 ### Usage
 
 ```javascript state
-const SwitchLine = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
+const SwitchLine = props => (
+  <Box
+    display="flex"
+    justifyContent="space-between"
+    {...props}
+  />
+);
 
 render(() => {
   const [locker, toggleLocker] = useState(false);
