@@ -85,23 +85,23 @@ describe('<List />', () => {
         expect(container).toMatchSnapshot();
       });
 
-      it('should call onPress when touchable item is pressed', () => {
+      it('should call onPress when selectable item is pressed', () => {
         const a = { key: 'Devin', onPress: jest.fn() };
         const { getByText } = render(
           <ThemeProvider>
             <List
               data={[a]}
               renderItem={({ item }) => (
-                <List.TouchableItem onPress={item.onPress}>
+                <List.Item onPress={item.onPress}>
                   <Text>{item.key}</Text>
-                </List.TouchableItem>
+                </List.Item>
               )}
             />
           </ThemeProvider>,
         );
 
-        const listTouchableItem = getByText(a.key);
-        fireEvent.press(listTouchableItem);
+        const selectableItem = getByText(a.key);
+        fireEvent.press(selectableItem);
         expect(a.onPress).toHaveBeenCalled();
       });
     });
