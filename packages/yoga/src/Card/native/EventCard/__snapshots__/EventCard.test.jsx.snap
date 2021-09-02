@@ -909,6 +909,9 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                       "right": 24,
                       "top": 20,
                     },
+                    "selectable": Object {
+                      "color": "#F5F5FA",
+                    },
                     "small": Object {
                       "padding": Object {
                         "bottom": 8,
@@ -917,9 +920,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                         "top": 8,
                       },
                     },
-                  },
-                  "listTouchableItem": Object {
-                    "color": "#F5F5FA",
                   },
                 },
                 "progress": Object {
@@ -2371,6 +2371,9 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                       "right": 24,
                       "top": 20,
                     },
+                    "selectable": Object {
+                      "color": "#F5F5FA",
+                    },
                     "small": Object {
                       "padding": Object {
                         "bottom": 8,
@@ -2379,9 +2382,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                         "top": 8,
                       },
                     },
-                  },
-                  "listTouchableItem": Object {
-                    "color": "#F5F5FA",
                   },
                 },
                 "progress": Object {
@@ -3829,6 +3829,9 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                       "right": 24,
                       "top": 20,
                     },
+                    "selectable": Object {
+                      "color": "#F5F5FA",
+                    },
                     "small": Object {
                       "padding": Object {
                         "bottom": 8,
@@ -3837,9 +3840,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                         "top": 8,
                       },
                     },
-                  },
-                  "listTouchableItem": Object {
-                    "color": "#F5F5FA",
                   },
                 },
                 "progress": Object {
@@ -5291,6 +5291,9 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                       "right": 24,
                       "top": 20,
                     },
+                    "selectable": Object {
+                      "color": "#F5F5FA",
+                    },
                     "small": Object {
                       "padding": Object {
                         "bottom": 8,
@@ -5299,9 +5302,6 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                         "top": 8,
                       },
                     },
-                  },
-                  "listTouchableItem": Object {
-                    "color": "#F5F5FA",
                   },
                 },
                 "progress": Object {
@@ -6753,6 +6753,9 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                       "right": 24,
                       "top": 20,
                     },
+                    "selectable": Object {
+                      "color": "#F5F5FA",
+                    },
                     "small": Object {
                       "padding": Object {
                         "bottom": 8,
@@ -6761,9 +6764,6 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                         "top": 8,
                       },
                     },
-                  },
-                  "listTouchableItem": Object {
-                    "color": "#F5F5FA",
                   },
                 },
                 "progress": Object {
