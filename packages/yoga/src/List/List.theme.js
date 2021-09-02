@@ -14,9 +14,9 @@ const List = ({ spacing, borders, colors }) => ({
         left: spacing.medium,
       },
     },
-  },
-  listTouchableItem: {
-    color: colors.clear,
+    selectable: {
+      color: colors.clear,
+    },
   },
   border: {
     width: borders.small,

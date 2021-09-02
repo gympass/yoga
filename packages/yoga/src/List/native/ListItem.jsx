@@ -1,6 +1,7 @@
 import React from 'react';
+import { TouchableHighlight } from 'react-native';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 
 const StyledView = styled.View(
   ({
@@ -41,20 +42,35 @@ const StyledView = styled.View(
   `,
 );
 
-const ListItem = ({ small, divided, ...rest }) => (
-  <StyledView small={small} divided={divided} {...rest} />
-);
+const ListItem = ({ theme, small, divided, onPress, ...rest }) => {
+  const Component = <StyledView small={small} divided={divided} {...rest} />;
+
+  if (onPress) {
+    return (
+      <TouchableHighlight
+        onPress={onPress}
+        underlayColor={theme.yoga.components.list.listItem.selectable.color}
+      >
+        {Component}
+      </TouchableHighlight>
+    );
+  }
+
+  return Component;
+};
 
 ListItem.propTypes = {
   small: PropTypes.bool,
   divided: PropTypes.bool,
+  onPress: PropTypes.func,
 };
 
 ListItem.defaultProps = {
   small: false,
   divided: true,
+  onPress: null,
 };
 
 ListItem.displayName = 'List.Item';
 
-export default ListItem;
+export default withTheme(ListItem);

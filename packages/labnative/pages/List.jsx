@@ -10,7 +10,7 @@ const listItemData = [
   { key: 'James' },
 ];
 
-const listTouchableItemData = [
+const listSelectableItemData = [
   { key: 'Joel' },
   { key: 'John' },
   { key: 'Jillian' },
@@ -31,17 +31,14 @@ const ListPage = () => {
         )}
       />
 
-      <Text.SectionTitle>List Touchable Item</Text.SectionTitle>
+      <Text.SectionTitle>List Selectable Item</Text.SectionTitle>
       <List
         scrollEnabled={false}
-        data={listTouchableItemData}
+        data={listSelectableItemData}
         renderItem={({ item }) => (
-          <List.TouchableItem
-            small
-            onPress={() => Alert.alert('You pressed', item.key)}
-          >
+          <List.Item small onPress={() => Alert.alert('You pressed', item.key)}>
             <Text>{item.key}</Text>
-          </List.TouchableItem>
+          </List.Item>
         )}
       />
     </>
