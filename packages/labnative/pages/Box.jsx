@@ -15,7 +15,9 @@ const BoxPage = () => (
       elevation="small"
       bgColor="white"
     >
-      <Text>Making</Text>
+      <Box as={Text} fw="bold">
+        Making
+      </Box>
       <Text>wellbeing</Text>
       <Text>universal</Text>
     </Box>
