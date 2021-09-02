@@ -42,14 +42,26 @@ const StyledView = styled.View(
   `,
 );
 
-const ListItem = ({ theme, small, divided, onPress, ...rest }) => {
+const ListItem = ({
+  theme: {
+    yoga: {
+      components: {
+        list: { listItem },
+      },
+    },
+  },
+  small,
+  divided,
+  onPress,
+  ...rest
+}) => {
   const Component = <StyledView small={small} divided={divided} {...rest} />;
 
   if (onPress) {
     return (
       <TouchableHighlight
         onPress={onPress}
-        underlayColor={theme.yoga.components.list.listItem.selectable.color}
+        underlayColor={listItem.selectable.color}
       >
         {Component}
       </TouchableHighlight>
