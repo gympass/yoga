@@ -80,7 +80,7 @@ ListItem.propTypes = {
 ListItem.defaultProps = {
   small: false,
   divided: true,
-  onPress: null,
+  onPress: undefined,
 };
 
 ListItem.displayName = 'List.Item';
