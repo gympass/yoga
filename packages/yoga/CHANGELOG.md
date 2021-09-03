@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.12.2...@gympass/yoga@7.13.0) (2021-09-03)
+
+
+### Features
+
+* **list-touchable-item:** create touchable item to list component ([cb2eb1e](https://github.com/Gympass/yoga/commit/cb2eb1eb355e60288d7b52f43d4bc5d04aa04b52))
+
+
+
+
+
 ## [7.12.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.12.1...@gympass/yoga@7.12.2) (2021-08-30)
 
 

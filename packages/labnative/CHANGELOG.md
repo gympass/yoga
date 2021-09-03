@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.5.6...@gympass/yoga-labnative@1.6.0) (2021-09-03)
+
+
+### Features
+
+* **list-touchable-item:** create touchable item to list component ([cb2eb1e](https://github.com/Gympass/yoga/commit/cb2eb1eb355e60288d7b52f43d4bc5d04aa04b52))
+
+
+
+
+
 ## [1.5.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.5.5...@gympass/yoga-labnative@1.5.6) (2021-08-30)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
