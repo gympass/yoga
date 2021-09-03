@@ -106,49 +106,51 @@ const SmallCard = ({
   </DateInfo>
 );
 
-const FullCard = ({
-  event,
-  date: { month, day, dayOfWeek },
-  link,
-  onLinkPress,
-  theme: {
-    yoga: {
-      components: {
-        card: {
-          event: { icon },
+const FullCard = withTheme(
+  ({
+    event,
+    date: { month, day, dayOfWeek },
+    link,
+    onLinkPress,
+    theme: {
+      yoga: {
+        components: {
+          card: {
+            event: { icon },
+          },
         },
       },
     },
-  },
-}) => (
-  <>
-    <DateInfo bg="primary">
-      <Top>
-        <Text.Tiny inverted>{month}</Text.Tiny>
-      </Top>
-      <Day inverted>{day}</Day>
-      <Text.Tiny inverted>{String(dayOfWeek).toUpperCase()}</Text.Tiny>
-    </DateInfo>
-    <EventInfo p="small" pl="xsmall">
-      <Name numberOfLines={1} size="small">
-        {event.name}
-      </Name>
-      <Place variant="deep" numberOfLines={1}>
-        {event.place}
-      </Place>
-      <Row>
-        <EventTime>
-          <Time fill={icon.fill} style={{ marginRight: 5 }} />
-          <Text.Tiny>{event.time}</Text.Tiny>
-        </EventTime>
-        {!!link && (
-          <ButtonLink onPress={onLinkPress} small>
-            {link}
-          </ButtonLink>
-        )}
-      </Row>
-    </EventInfo>
-  </>
+  }) => (
+    <>
+      <DateInfo bg="primary">
+        <Top>
+          <Text.Tiny inverted>{month}</Text.Tiny>
+        </Top>
+        <Day inverted>{day}</Day>
+        <Text.Tiny inverted>{String(dayOfWeek).toUpperCase()}</Text.Tiny>
+      </DateInfo>
+      <EventInfo p="small" pl="xsmall">
+        <Name numberOfLines={1} size="small">
+          {event.name}
+        </Name>
+        <Place variant="deep" numberOfLines={1}>
+          {event.place}
+        </Place>
+        <Row>
+          <EventTime>
+            <Time fill={icon.fill} style={{ marginRight: 5 }} />
+            <Text.Tiny>{event.time}</Text.Tiny>
+          </EventTime>
+          {!!link && (
+            <ButtonLink onPress={onLinkPress} small>
+              {link}
+            </ButtonLink>
+          )}
+        </Row>
+      </EventInfo>
+    </>
+  ),
 );
 
 const EventCard = ({ onPress, small, ...rest }) => (
@@ -223,4 +225,4 @@ FullCard.propTypes = EventCard.propTypes;
 
 EventCard.displayName = 'EventCard';
 
-export default withTheme(EventCard);
+export default EventCard;
