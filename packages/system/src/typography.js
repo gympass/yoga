@@ -1,12 +1,13 @@
 import { toPx } from './unit';
 import {
   getFontSize,
-  getFontWeight,
   getColor,
   getLineHeight,
   generator,
   compose,
 } from './theme';
+
+import { fontWeight } from './fontWeight';
 
 const color = props =>
   generator({
@@ -23,15 +24,6 @@ const fontSize = props =>
     cssProperty: 'font-size',
     getter: getFontSize,
     transform: toPx,
-  });
-
-const fontWeight = props =>
-  generator({
-    props,
-    prop: ['fontWeight', 'fw'],
-    cssProperty: 'font-weight',
-    getter: getFontWeight,
-    transform: value => value && value.toString(),
   });
 
 const lineHeight = props =>
