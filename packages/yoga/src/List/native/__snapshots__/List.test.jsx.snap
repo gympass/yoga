@@ -70,6 +70,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -93,6 +94,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -116,6 +118,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -139,6 +142,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -162,6 +166,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -185,6 +190,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -208,6 +214,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -231,6 +238,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -254,6 +262,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -277,6 +286,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -377,6 +387,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -407,6 +418,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -437,6 +449,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -467,6 +480,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -497,6 +511,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -527,6 +542,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -557,6 +573,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -587,6 +604,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -617,6 +635,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -647,6 +666,7 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
       >
         <View
           divided={true}
+          small={false}
           style={
             Array [
               Object {
@@ -656,6 +676,606 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
                 "paddingLeft": 24,
                 "paddingRight": 24,
                 "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Julie
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`<List /> Snapshots Without props should match snapshot with a list without divisors 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "key": "Devin",
+        },
+        Object {
+          "key": "Dan",
+        },
+        Object {
+          "key": "Dominic",
+        },
+        Object {
+          "key": "Jackson",
+        },
+        Object {
+          "key": "James",
+        },
+        Object {
+          "key": "Joel",
+        },
+        Object {
+          "key": "John",
+        },
+        Object {
+          "key": "Jillian",
+        },
+        Object {
+          "key": "Jimmy",
+        },
+        Object {
+          "key": "Julie",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    onEndReachedThreshold={2}
+    removeClippedSubviews={false}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Array [
+        Object {
+          "width": "100%",
+        },
+      ]
+    }
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        style={null}
+      >
+        <View
+          divided={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Devin
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Dan
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Dominic
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jackson
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            James
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Joel
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            John
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jillian
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jimmy
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={false}
+          small={false}
+          style={
+            Array [
+              Object {
+                "paddingBottom": 20,
+                "paddingLeft": 24,
+                "paddingRight": 24,
+                "paddingTop": 20,
+              },
+            ]
+          }
+        >
+          <Text>
+            Julie
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`<List /> Snapshots Without props should match snapshot with a small list 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "key": "Devin",
+        },
+        Object {
+          "key": "Dan",
+        },
+        Object {
+          "key": "Dominic",
+        },
+        Object {
+          "key": "Jackson",
+        },
+        Object {
+          "key": "James",
+        },
+        Object {
+          "key": "Joel",
+        },
+        Object {
+          "key": "John",
+        },
+        Object {
+          "key": "Jillian",
+        },
+        Object {
+          "key": "Jimmy",
+        },
+        Object {
+          "key": "Julie",
+        },
+      ]
+    }
+    disableVirtualization={false}
+    horizontal={false}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    onEndReachedThreshold={2}
+    removeClippedSubviews={false}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Array [
+        Object {
+          "width": "100%",
+        },
+      ]
+    }
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          small={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 8,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 8,
+              },
+            ]
+          }
+        >
+          <Text>
+            Devin
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          small={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 8,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 8,
+              },
+            ]
+          }
+        >
+          <Text>
+            Dan
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          small={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 8,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 8,
+              },
+            ]
+          }
+        >
+          <Text>
+            Dominic
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          small={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 8,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 8,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jackson
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          small={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 8,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 8,
+              },
+            ]
+          }
+        >
+          <Text>
+            James
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          small={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 8,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 8,
+              },
+            ]
+          }
+        >
+          <Text>
+            Joel
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          small={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 8,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 8,
+              },
+            ]
+          }
+        >
+          <Text>
+            John
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          small={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 8,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 8,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jillian
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          small={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 8,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 8,
+              },
+            ]
+          }
+        >
+          <Text>
+            Jimmy
+          </Text>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          divided={true}
+          small={true}
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#F5F5FA",
+                "borderBottomWidth": 1,
+                "paddingBottom": 8,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 8,
               },
             ]
           }

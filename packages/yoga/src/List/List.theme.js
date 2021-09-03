@@ -6,6 +6,17 @@ const List = ({ spacing, borders, colors }) => ({
       bottom: spacing.medium,
       left: spacing.large,
     },
+    small: {
+      padding: {
+        top: spacing.xxsmall,
+        right: spacing.medium,
+        bottom: spacing.xxsmall,
+        left: spacing.medium,
+      },
+    },
+    selectable: {
+      color: colors.clear,
+    },
   },
   border: {
     width: borders.small,

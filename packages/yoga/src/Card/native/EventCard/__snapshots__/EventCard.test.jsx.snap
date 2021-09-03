@@ -909,6 +909,17 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
                       "right": 24,
                       "top": 20,
                     },
+                    "selectable": Object {
+                      "color": "#F5F5FA",
+                    },
+                    "small": Object {
+                      "padding": Object {
+                        "bottom": 8,
+                        "left": 20,
+                        "right": 20,
+                        "top": 8,
+                      },
+                    },
                   },
                 },
                 "progress": Object {
@@ -2360,6 +2371,17 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
                       "right": 24,
                       "top": 20,
                     },
+                    "selectable": Object {
+                      "color": "#F5F5FA",
+                    },
+                    "small": Object {
+                      "padding": Object {
+                        "bottom": 8,
+                        "left": 20,
+                        "right": 20,
+                        "top": 8,
+                      },
+                    },
                   },
                 },
                 "progress": Object {
@@ -3806,6 +3828,17 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                       "left": 24,
                       "right": 24,
                       "top": 20,
+                    },
+                    "selectable": Object {
+                      "color": "#F5F5FA",
+                    },
+                    "small": Object {
+                      "padding": Object {
+                        "bottom": 8,
+                        "left": 20,
+                        "right": 20,
+                        "top": 8,
+                      },
                     },
                   },
                 },
@@ -5258,6 +5291,17 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
                       "right": 24,
                       "top": 20,
                     },
+                    "selectable": Object {
+                      "color": "#F5F5FA",
+                    },
+                    "small": Object {
+                      "padding": Object {
+                        "bottom": 8,
+                        "left": 20,
+                        "right": 20,
+                        "top": 8,
+                      },
+                    },
                   },
                 },
                 "progress": Object {
@@ -6708,6 +6752,17 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
                       "left": 24,
                       "right": 24,
                       "top": 20,
+                    },
+                    "selectable": Object {
+                      "color": "#F5F5FA",
+                    },
+                    "small": Object {
+                      "padding": Object {
+                        "bottom": 8,
+                        "left": 20,
+                        "right": 20,
+                        "top": 8,
+                      },
                     },
                   },
                 },
