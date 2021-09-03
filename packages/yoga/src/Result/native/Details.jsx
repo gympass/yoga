@@ -158,7 +158,7 @@ ResultDetails.defaultProps = {
   limit: undefined,
   limitLabel: undefined,
   dots: false,
-  renderItem: Text.Small,
+  renderItem: Text.Tiny,
 };
 
 export default ResultDetails;
