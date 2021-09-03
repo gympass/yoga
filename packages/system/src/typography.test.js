@@ -173,7 +173,7 @@ describe('Web and iOS', () => {
 describe('Android', () => {
   describe('typography', () => {
     describe('fontWeight', () => {
-      it('should return the correspondent fontFamily', () => {
+      it('Should return the correspondent fontFamily', () => {
         const expectedFontFamily = css({
           fontFamily: `${baseFont.family}-${fontWeights.medium}`,
         });
