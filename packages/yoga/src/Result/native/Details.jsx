@@ -13,52 +13,17 @@ import styled from 'styled-components';
 
 import Text from '../../Text';
 import Icon from '../../Icon';
+import Box from '../../Box';
 
 const Container = styled.Text`
   text-align-vertical: center;
   flex: 1;
 `;
 
-const Wrapper = styled.View`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  ${({
-    theme: {
-      yoga: {
-        spacing: { xxxsmall },
-      },
-    },
-  }) => `
-    margin-top: ${xxxsmall}px;
-  `}
-`;
-const IconWrapper = styled.View`
-  ${({
-    theme: {
-      yoga: {
-        spacing: { small },
-      },
-    },
-  }) => `
-    width: ${small}px;
-    height: ${small}px;
-  `}
-`;
-
-const Separator = styled.View`
-  ${({
-    theme: {
-      yoga: {
-        spacing: { xxxsmall },
-      },
-    },
-  }) => `
-    width: ${xxxsmall}px;
-    height: ${xxxsmall}px;
-  `}
-`;
+const Separator = styled(Box).attrs({
+  width: 'xxxsmall',
+  height: 'xxxsmall',
+})``;
 
 const StyledText = styled(Text.Small)`
   ${({
@@ -84,7 +49,7 @@ const ResultDetails = ({
   const numberOfItemsLeft = items.length - limit;
 
   return (
-    <Wrapper>
+    <Box flexDirection="row" alignItems="center" mt="xxxsmall">
       <Container numberOfLines={1}>
         {refinedList?.map(
           ({ icon: IconComponent, variant, ...props }, index) => {
@@ -95,15 +60,9 @@ const ResultDetails = ({
               // eslint-disable-next-line react/no-array-index-key
               <React.Fragment key={index}>
                 {IconComponent && (
-                  <IconWrapper>
-                    <Icon
-                      as={IconComponent}
-                      fill={variant}
-                      width={14}
-                      height={14}
-                      style={{ marginTop: 3 }}
-                    />
-                  </IconWrapper>
+                  <Box mr="xxxsmall">
+                    <Icon as={IconComponent} fill={variant} size="xsmall" />
+                  </Box>
                 )}
                 <Item variant={variant} {...props} />
 
@@ -133,7 +92,7 @@ const ResultDetails = ({
           },
         )}
       </Container>
-    </Wrapper>
+    </Box>
   );
 };
 
