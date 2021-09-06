@@ -15,8 +15,7 @@ import Text from '../../Text';
 import Icon from '../../Icon';
 import Box from '../../Box';
 
-const Container = styled.Text`
-  text-align-vertical: center;
+const Container = styled(Text.Tiny)`
   flex: 1;
 `;
 
@@ -60,8 +59,13 @@ const ResultDetails = ({
               // eslint-disable-next-line react/no-array-index-key
               <React.Fragment key={index}>
                 {IconComponent && (
-                  <Box mr="xxxsmall">
-                    <Icon as={IconComponent} fill={variant} size="xsmall" />
+                  <Box mr="xxxsmall" height="xsmall" width="xsmall">
+                    <Icon
+                      as={IconComponent}
+                      fill={variant}
+                      size="xsmall"
+                      style={{ marginTop: 1 }}
+                    />
                   </Box>
                 )}
                 <Item variant={variant} {...props} />

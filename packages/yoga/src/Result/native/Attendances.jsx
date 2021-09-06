@@ -6,7 +6,9 @@ import Icon from '../../Icon';
 import Text from '../../Text';
 import Rate from './Rate';
 
-const List = styled(Text.Tiny)`
+const List = styled(Text.Tiny).attrs({
+  numberOfLines: 1,
+})`
   flex: 1;
 `;
 
@@ -23,23 +25,22 @@ const Attendances = ({ attendances, rate }) => (
     justifyContent="center"
     flexDirection="row"
   >
-    <List numberOfLines={1} textAlignVertical="center">
-      {attendances &&
-        attendances.map(({ description, icon }) => (
-          <React.Fragment key={description}>
-            <Box height="xsmall" width="xsmall">
-              <Icon
-                as={icon}
-                fill="deep"
-                size="100%"
-                style={{ marginTop: 2 }}
-              />
-            </Box>
-            <ItemSeparator />
-            {description}
-            <ItemSeparator />
-          </React.Fragment>
-        ))}
+    <List>
+      {attendances.map(({ description, icon }) => (
+        <React.Fragment key={description}>
+          <Box height="xsmall" width="xsmall">
+            <Icon
+              as={icon}
+              fill="deep"
+              size="xsmall"
+              style={{ marginTop: 2 }}
+            />
+          </Box>
+          <ItemSeparator />
+          {description}
+          <ItemSeparator />
+        </React.Fragment>
+      ))}
     </List>
     {rate && <Rate rate={rate} />}
   </Box>
