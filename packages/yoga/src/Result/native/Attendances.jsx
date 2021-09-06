@@ -6,39 +6,14 @@ import Icon from '../../Icon';
 import Text from '../../Text';
 import Rate from './Rate';
 
-const List = styled(Text.Regular)`
+const List = styled(Text.Tiny)`
   flex: 1;
 `;
 
-const ItemSeparator = styled.View`
-  ${({
-    theme: {
-      yoga: {
-        spacing: { zero, xxxsmall },
-      },
-    },
-  }) => {
-    return `
-      width: ${xxxsmall};
-      height: ${zero};
-    `;
-  }}
-`;
-
-const IconWrapper = styled.View`
-  ${({
-    theme: {
-      yoga: {
-        spacing: { small },
-      },
-    },
-  }) => {
-    return `
-      width: ${small};
-      height: ${small};
-    `;
-  }}
-`;
+const ItemSeparator = styled(Box).attrs({
+  width: 'xxxsmall',
+  height: 'zero',
+})``;
 
 const Attendances = ({ attendances, rate }) => (
   <Box
@@ -48,19 +23,18 @@ const Attendances = ({ attendances, rate }) => (
     justifyContent="center"
     flexDirection="row"
   >
-    <List numberOfLines={1} size="xsmall" textAlignVertical="bottom">
+    <List numberOfLines={1} textAlignVertical="center">
       {attendances &&
         attendances.map(({ description, icon }) => (
           <React.Fragment key={description}>
-            <IconWrapper>
+            <Box height="xsmall" width="xsmall">
               <Icon
                 as={icon}
                 fill="medium"
-                width="100%"
-                height="100%"
-                style={{ marginTop: 3 }}
+                size="100%"
+                style={{ marginTop: 2 }}
               />
-            </IconWrapper>
+            </Box>
             <ItemSeparator />
             {description}
             <ItemSeparator />
