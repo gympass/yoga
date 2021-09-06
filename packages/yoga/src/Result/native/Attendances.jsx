@@ -30,7 +30,7 @@ const Attendances = ({ attendances, rate }) => (
             <Box height="xsmall" width="xsmall">
               <Icon
                 as={icon}
-                fill="medium"
+                fill="deep"
                 size="100%"
                 style={{ marginTop: 2 }}
               />
