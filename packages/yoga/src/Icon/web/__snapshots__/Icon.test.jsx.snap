@@ -1,11 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshots should match snapshot 1`] = `
+.c0 {
+  width: 16px;
+  height: 16px;
+}
+
 <div>
   <svg
+    class="c0"
     fill="#231B22"
-    height="16"
-    width="16"
+    height="small"
+    width="small"
   >
     <circle
       cx="16"
@@ -17,11 +23,45 @@ exports[`Snapshots should match snapshot 1`] = `
 `;
 
 exports[`Snapshots should match snapshot with size prop 1`] = `
+.c0 {
+  width: 16px;
+  height: 16px;
+}
+
 <div>
   <svg
+    class="c0"
     fill="#231B22"
-    height="16"
-    width="16"
+    height="small"
+    width="small"
+  >
+    <circle
+      cx="16"
+      cy="16"
+      r="16"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Snapshots should match snapshot with system props 1`] = `
+.c0 {
+  margin: 20px;
+  width: 16px;
+  width: 50px;
+  height: 16px;
+  height: 50px;
+}
+
+<div>
+  <svg
+    class="c0"
+    fill="#231B22"
+    h="50"
+    height="small"
+    margin="medium"
+    w="50"
+    width="small"
   >
     <circle
       cx="16"

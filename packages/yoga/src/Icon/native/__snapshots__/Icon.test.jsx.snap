@@ -12,8 +12,16 @@ exports[`Snapshots should match snapshot 1`] = `
 >
   <svg
     fill="#231B22"
-    height={16}
-    width={16}
+    height="small"
+    style={
+      Array [
+        Object {
+          "height": 16,
+          "width": 16,
+        },
+      ]
+    }
+    width="small"
   >
     <circle
       cx="16"
@@ -36,8 +44,55 @@ exports[`Snapshots should match snapshot with size prop 1`] = `
 >
   <svg
     fill="#231B22"
-    height={16}
-    width={16}
+    height="small"
+    style={
+      Array [
+        Object {
+          "height": 16,
+          "width": 16,
+        },
+      ]
+    }
+    width="small"
+  >
+    <circle
+      cx="16"
+      cy="16"
+      r="16"
+    />
+  </svg>
+</View>
+`;
+
+exports[`Snapshots should match snapshot with system props 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <svg
+    fill="#231B22"
+    h={50}
+    height="small"
+    margin="medium"
+    style={
+      Array [
+        Object {
+          "height": 50,
+          "marginBottom": 20,
+          "marginLeft": 20,
+          "marginRight": 20,
+          "marginTop": 20,
+          "width": 50,
+        },
+      ]
+    }
+    w={50}
+    width="small"
   >
     <circle
       cx="16"
