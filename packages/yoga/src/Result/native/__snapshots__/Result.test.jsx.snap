@@ -194,11 +194,11 @@ exports[`<Result /> should match snapshot 1`] = `
             }
           >
             <RNSVGSvgView
-              bbHeight={12}
-              bbWidth={12}
+              bbHeight="xsmall"
+              bbWidth="xsmall"
               fill="#6B6B78"
               focusable={false}
-              height={12}
+              height="xsmall"
               style={
                 Array [
                   Object {
@@ -207,11 +207,8 @@ exports[`<Result /> should match snapshot 1`] = `
                   },
                   Array [
                     Object {
-                      "height": "100%",
-                      "width": "100%",
-                    },
-                    Object {
-                      "marginTop": 3,
+                      "height": 12,
+                      "width": 12,
                     },
                   ],
                   Object {
@@ -219,12 +216,12 @@ exports[`<Result /> should match snapshot 1`] = `
                   },
                   Object {
                     "flex": 0,
-                    "height": 12,
-                    "width": 12,
+                    "height": "xsmall",
+                    "width": "xsmall",
                   },
                 ]
               }
-              width={12}
+              width="xsmall"
             >
               <RNSVGGroup
                 fill={
@@ -309,11 +306,11 @@ exports[`<Result /> should match snapshot 1`] = `
             }
           >
             <RNSVGSvgView
-              bbHeight={12}
-              bbWidth={12}
+              bbHeight="xsmall"
+              bbWidth="xsmall"
               fill="#6B6B78"
               focusable={false}
-              height={12}
+              height="xsmall"
               style={
                 Array [
                   Object {
@@ -322,11 +319,8 @@ exports[`<Result /> should match snapshot 1`] = `
                   },
                   Array [
                     Object {
-                      "height": "100%",
-                      "width": "100%",
-                    },
-                    Object {
-                      "marginTop": 3,
+                      "height": 12,
+                      "width": 12,
                     },
                   ],
                   Object {
@@ -334,12 +328,12 @@ exports[`<Result /> should match snapshot 1`] = `
                   },
                   Object {
                     "flex": 0,
-                    "height": 12,
-                    "width": 12,
+                    "height": "xsmall",
+                    "width": "xsmall",
                   },
                 ]
               }
-              width={12}
+              width="xsmall"
             >
               <RNSVGGroup
                 fill={

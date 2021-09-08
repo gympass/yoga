@@ -38,8 +38,8 @@ describe('Snapshots', () => {
           size="small"
           fill="stamina"
           margin="medium"
-          w={50}
-          h={50}
+          elevation="medium"
+          borderRadius="medium"
         />
       </ThemeProvider>,
     );
