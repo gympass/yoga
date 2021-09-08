@@ -163,7 +163,6 @@ exports[`<Result /> should match snapshot 1`] = `
       >
         <Text
           numberOfLines={1}
-          size="xsmall"
           style={
             Array [
               Object {
@@ -174,53 +173,51 @@ exports[`<Result /> should match snapshot 1`] = `
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
+                "lineHeight": 16,
               },
             ]
           }
-          textAlignVertical="bottom"
         >
           <View
+            mt={-2}
             style={
               Array [
                 Object {
-                  "height": 16,
-                  "width": 16,
+                  "marginTop": -2,
                 },
               ]
             }
           >
             <RNSVGSvgView
-              bbHeight="100%"
-              bbWidth="100%"
-              fill="#9898A6"
+              bbHeight={12}
+              bbWidth={12}
+              fill="#6B6B78"
               focusable={false}
-              height="100%"
+              height={12}
               style={
                 Array [
                   Object {
                     "backgroundColor": "transparent",
                     "borderWidth": 0,
                   },
-                  Object {
-                    "marginTop": 3,
-                  },
+                  undefined,
                   Object {
                     "opacity": 1,
                   },
                   Object {
                     "flex": 0,
-                    "height": "100%",
-                    "width": "100%",
+                    "height": 12,
+                    "width": 12,
                   },
                 ]
               }
-              width="100%"
+              width={12}
             >
               <RNSVGGroup
                 fill={
                   Array [
                     0,
-                    4288190630,
+                    4285229944,
                   ]
                 }
                 fillOpacity={1}
@@ -264,6 +261,7 @@ exports[`<Result /> should match snapshot 1`] = `
             </RNSVGSvgView>
           </View>
           <View
+            height="zero"
             style={
               Array [
                 Object {
@@ -272,9 +270,11 @@ exports[`<Result /> should match snapshot 1`] = `
                 },
               ]
             }
+            width="xxxsmall"
           />
           Attendance 01
           <View
+            height="zero"
             style={
               Array [
                 Object {
@@ -283,49 +283,48 @@ exports[`<Result /> should match snapshot 1`] = `
                 },
               ]
             }
+            width="xxxsmall"
           />
           <View
+            mt={-2}
             style={
               Array [
                 Object {
-                  "height": 16,
-                  "width": 16,
+                  "marginTop": -2,
                 },
               ]
             }
           >
             <RNSVGSvgView
-              bbHeight="100%"
-              bbWidth="100%"
-              fill="#9898A6"
+              bbHeight={12}
+              bbWidth={12}
+              fill="#6B6B78"
               focusable={false}
-              height="100%"
+              height={12}
               style={
                 Array [
                   Object {
                     "backgroundColor": "transparent",
                     "borderWidth": 0,
                   },
-                  Object {
-                    "marginTop": 3,
-                  },
+                  undefined,
                   Object {
                     "opacity": 1,
                   },
                   Object {
                     "flex": 0,
-                    "height": "100%",
-                    "width": "100%",
+                    "height": 12,
+                    "width": 12,
                   },
                 ]
               }
-              width="100%"
+              width={12}
             >
               <RNSVGGroup
                 fill={
                   Array [
                     0,
-                    4288190630,
+                    4285229944,
                   ]
                 }
                 fillOpacity={1}
@@ -369,6 +368,7 @@ exports[`<Result /> should match snapshot 1`] = `
             </RNSVGSvgView>
           </View>
           <View
+            height="zero"
             style={
               Array [
                 Object {
@@ -377,9 +377,11 @@ exports[`<Result /> should match snapshot 1`] = `
                 },
               ]
             }
+            width="xxxsmall"
           />
           Attendance 02
           <View
+            height="zero"
             style={
               Array [
                 Object {
@@ -388,6 +390,7 @@ exports[`<Result /> should match snapshot 1`] = `
                 },
               ]
             }
+            width="xxxsmall"
           />
         </Text>
         <View
@@ -528,11 +531,13 @@ exports[`<Result /> should match snapshot 1`] = `
         Activity
       </Text>
       <View
+        alignItems="center"
+        flexDirection="row"
+        mt="xxxsmall"
         style={
           Array [
             Object {
               "alignItems": "center",
-              "display": "flex",
               "flexDirection": "row",
               "marginTop": 4,
             },
@@ -544,10 +549,15 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
+                "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "textAlignVertical": "center",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "height": 16,
+                "lineHeight": 16,
               },
             ]
           }
@@ -571,11 +581,13 @@ exports[`<Result /> should match snapshot 1`] = `
         </Text>
       </View>
       <View
+        alignItems="center"
+        flexDirection="row"
+        mt="xxxsmall"
         style={
           Array [
             Object {
               "alignItems": "center",
-              "display": "flex",
               "flexDirection": "row",
               "marginTop": 4,
             },
@@ -587,10 +599,15 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
+                "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "textAlignVertical": "center",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "height": 16,
+                "lineHeight": 16,
               },
             ]
           }
@@ -612,6 +629,7 @@ exports[`<Result /> should match snapshot 1`] = `
             Yoga
           </Text>
           <View
+            height="xxxsmall"
             style={
               Array [
                 Object {
@@ -620,6 +638,7 @@ exports[`<Result /> should match snapshot 1`] = `
                 },
               ]
             }
+            width="xxxsmall"
           />
           <Text
             style={
@@ -627,9 +646,9 @@ exports[`<Result /> should match snapshot 1`] = `
                 Object {
                   "color": "#6B6B78",
                   "fontFamily": "Rubik",
-                  "fontSize": 14,
+                  "fontSize": 12,
                   "fontWeight": "400",
-                  "lineHeight": 20,
+                  "lineHeight": 16,
                   "marginLeft": 4,
                   "marginRight": 4,
                 },
@@ -640,6 +659,7 @@ exports[`<Result /> should match snapshot 1`] = `
             •
           </Text>
           <View
+            height="xxxsmall"
             style={
               Array [
                 Object {
@@ -648,6 +668,7 @@ exports[`<Result /> should match snapshot 1`] = `
                 },
               ]
             }
+            width="xxxsmall"
           />
           <Text
             style={
@@ -666,6 +687,7 @@ exports[`<Result /> should match snapshot 1`] = `
             Meditation
           </Text>
           <View
+            height="xxxsmall"
             style={
               Array [
                 Object {
@@ -674,6 +696,7 @@ exports[`<Result /> should match snapshot 1`] = `
                 },
               ]
             }
+            width="xxxsmall"
           />
           <Text
             style={
@@ -681,9 +704,9 @@ exports[`<Result /> should match snapshot 1`] = `
                 Object {
                   "color": "#6B6B78",
                   "fontFamily": "Rubik",
-                  "fontSize": 14,
+                  "fontSize": 12,
                   "fontWeight": "400",
-                  "lineHeight": 20,
+                  "lineHeight": 16,
                   "marginLeft": 4,
                   "marginRight": 4,
                 },
@@ -694,6 +717,7 @@ exports[`<Result /> should match snapshot 1`] = `
             •
           </Text>
           <View
+            height="xxxsmall"
             style={
               Array [
                 Object {
@@ -702,6 +726,7 @@ exports[`<Result /> should match snapshot 1`] = `
                 },
               ]
             }
+            width="xxxsmall"
           />
           <Text
             style={
