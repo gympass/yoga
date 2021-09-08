@@ -70,7 +70,12 @@ exports[`<Result /> should match snapshot 1`] = `
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            undefined,
+            Array [
+              Object {
+                "height": "50%",
+                "width": "50%",
+              },
+            ],
             Object {
               "opacity": 1,
             },
@@ -201,9 +206,15 @@ exports[`<Result /> should match snapshot 1`] = `
                     "backgroundColor": "transparent",
                     "borderWidth": 0,
                   },
-                  Object {
-                    "marginTop": 3,
-                  },
+                  Array [
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    Object {
+                      "marginTop": 3,
+                    },
+                  ],
                   Object {
                     "opacity": 1,
                   },
@@ -306,9 +317,15 @@ exports[`<Result /> should match snapshot 1`] = `
                     "backgroundColor": "transparent",
                     "borderWidth": 0,
                   },
-                  Object {
-                    "marginTop": 3,
-                  },
+                  Array [
+                    Object {
+                      "height": "100%",
+                      "width": "100%",
+                    },
+                    Object {
+                      "marginTop": 3,
+                    },
+                  ],
                   Object {
                     "opacity": 1,
                   },
@@ -403,29 +420,34 @@ exports[`<Result /> should match snapshot 1`] = `
           }
         >
           <RNSVGSvgView
-            bbHeight={12}
-            bbWidth={12}
+            bbHeight="xsmall"
+            bbWidth="xsmall"
             fill="#6B6B78"
             focusable={false}
-            height={12}
+            height="xsmall"
             style={
               Array [
                 Object {
                   "backgroundColor": "transparent",
                   "borderWidth": 0,
                 },
-                undefined,
+                Array [
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  },
+                ],
                 Object {
                   "opacity": 1,
                 },
                 Object {
                   "flex": 0,
-                  "height": 12,
-                  "width": 12,
+                  "height": "xsmall",
+                  "width": "xsmall",
                 },
               ]
             }
-            width={12}
+            width="xsmall"
           >
             <RNSVGGroup
               fill={

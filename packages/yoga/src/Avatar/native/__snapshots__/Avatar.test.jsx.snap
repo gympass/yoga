@@ -54,7 +54,12 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Array [
+            Object {
+              "height": "50%",
+              "width": "50%",
+            },
+          ],
           Object {
             "opacity": 1,
           },
@@ -171,7 +176,12 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Array [
+            Object {
+              "height": "50%",
+              "width": "50%",
+            },
+          ],
           Object {
             "opacity": 1,
           },
@@ -288,7 +298,12 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Array [
+            Object {
+              "height": "50%",
+              "width": "50%",
+            },
+          ],
           Object {
             "opacity": 1,
           },
@@ -405,7 +420,12 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          undefined,
+          Array [
+            Object {
+              "height": "50%",
+              "width": "50%",
+            },
+          ],
           Object {
             "opacity": 1,
           },
