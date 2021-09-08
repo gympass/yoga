@@ -9,6 +9,8 @@ import {
 } from 'prop-types';
 import { withTheme } from 'styled-components';
 
+import Box from '../Box';
+
 const Icon = ({
   as: Component,
   size,
@@ -19,9 +21,10 @@ const Icon = ({
   theme,
   ...props
 }) => (
-  <Component
-    {...(width && { width: theme.yoga.spacing[width] || width })}
-    {...(height && { height: theme.yoga.spacing[height] || height })}
+  <Box
+    as={Component}
+    width={width}
+    height={height}
     {...(fill && { fill: theme.yoga.colors[fill] || fill })}
     {...(stroke && { stroke: theme.yoga.colors[stroke] || stroke })}
     {...props}
