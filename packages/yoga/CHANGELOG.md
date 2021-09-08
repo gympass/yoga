@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.13.2...@gympass/yoga@7.14.0) (2021-09-08)
+
+
+### Bug Fixes
+
+* **Details:** normalize height ([ad12fbd](https://github.com/Gympass/yoga/commit/ad12fbde7321b6a5430b923764772ebf8be52314))
+
+
+### Features
+
+* **Attendances:** change icon and text sizes ([a127afa](https://github.com/Gympass/yoga/commit/a127afadf2f98dd1f396b54ddabf0c1d1d6d0f44))
+* **Attendances:** change icon color ([78fc555](https://github.com/Gympass/yoga/commit/78fc555c53cd25e7961fa3be49048df0e46150b3))
+* **ResultDetails:** change default renderItem ([9a62e15](https://github.com/Gympass/yoga/commit/9a62e1595943436e738d531120855fdc7c928948))
+* **ResultDetails:** change icon size ([a4a4c7e](https://github.com/Gympass/yoga/commit/a4a4c7efad77ae06392887e3e788ea5ce7106c85))
+
+
+
+
+
+## [7.13.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.13.1...@gympass/yoga@7.13.2) (2021-09-03)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.13.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.13.0...@gympass/yoga@7.13.1) (2021-09-03)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+# [7.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.12.2...@gympass/yoga@7.13.0) (2021-09-03)
+
+
+### Features
+
+* **list-touchable-item:** create touchable item to list component ([cb2eb1e](https://github.com/Gympass/yoga/commit/cb2eb1eb355e60288d7b52f43d4bc5d04aa04b52))
+
+
+
+
+
 ## [7.12.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.12.1...@gympass/yoga@7.12.2) (2021-08-30)
 
 

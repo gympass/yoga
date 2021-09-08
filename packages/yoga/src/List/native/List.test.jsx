@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react-native';
+import { render, fireEvent } from '@testing-library/react-native';
 import { Text } from 'react-native';
 import ThemeProvider from '../../Theme';
 import List from '..';
@@ -36,6 +36,38 @@ describe('<List />', () => {
         expect(container).toMatchSnapshot();
       });
 
+      it('should match snapshot with a small list', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <List
+              data={data}
+              renderItem={({ item }) => (
+                <List.Item small>
+                  <Text>{item.key}</Text>
+                </List.Item>
+              )}
+            />
+          </ThemeProvider>,
+        );
+        expect(container).toMatchSnapshot();
+      });
+
+      it('should match snapshot with a list without divisors', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <List
+              data={data}
+              renderItem={({ item }) => (
+                <List.Item divided={false}>
+                  <Text>{item.key}</Text>
+                </List.Item>
+              )}
+            />
+          </ThemeProvider>,
+        );
+        expect(container).toMatchSnapshot();
+      });
+
       it('should match snapshot with a horizontal list', () => {
         const { container } = render(
           <ThemeProvider>
@@ -51,6 +83,26 @@ describe('<List />', () => {
           </ThemeProvider>,
         );
         expect(container).toMatchSnapshot();
+      });
+
+      it('should call onPress when selectable item is pressed', () => {
+        const a = { key: 'Devin', onPress: jest.fn() };
+        const { getByText } = render(
+          <ThemeProvider>
+            <List
+              data={[a]}
+              renderItem={({ item }) => (
+                <List.Item onPress={item.onPress}>
+                  <Text>{item.key}</Text>
+                </List.Item>
+              )}
+            />
+          </ThemeProvider>,
+        );
+
+        const selectableItem = getByText(a.key);
+        fireEvent.press(selectableItem);
+        expect(a.onPress).toHaveBeenCalled();
       });
     });
   });

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Result, Avatar, Text } from '@gympass/yoga';
+import { Result, Avatar } from '@gympass/yoga';
 import {
   BuildingFilled,
   Youtube,
@@ -161,14 +161,9 @@ const ResultPage = () => (
         subTitle="Personal"
         divided
       >
-        <Result.Details
-          items={entrancesExample1}
-          dots
-          renderItem={Text.Small}
-        />
+        <Result.Details items={entrancesExample1} dots />
         <Result.Details
           items={activitiesExample1}
-          renderItem={Text.Small}
           dots
           limit={3}
           limitLabel="activities"
@@ -186,16 +181,8 @@ const ResultPage = () => (
         attendances={attendancesExample2}
         title="Zenklub"
       >
-        <Result.Details
-          items={entrancesExample2}
-          renderItem={Text.Small}
-          dots
-        />
-        <Result.Details
-          items={activitieExample2}
-          renderItem={Text.Small}
-          dots
-        />
+        <Result.Details items={entrancesExample2} dots />
+        <Result.Details items={activitieExample2} dots />
         <Result.Tags items={tagsList} />
         <Result.Button>Select</Result.Button>
       </Result>
@@ -207,16 +194,8 @@ const ResultPage = () => (
         attendances={attendancesExample3}
         title="John"
       >
-        <Result.Details
-          items={entrancesExample3}
-          renderItem={Text.Small}
-          dots
-        />
-        <Result.Details
-          items={activitiesExample3}
-          renderItem={Text.Small}
-          dots
-        />
+        <Result.Details items={entrancesExample3} dots />
+        <Result.Details items={activitiesExample3} dots />
       </Result>
     </ResultWrapper>
     <ResultWrapper>

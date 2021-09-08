@@ -3,6 +3,7 @@ const https = require('https');
 const git = require('git-last-commit');
 
 const slackWebHook = process.env.SLACK_WEBHOOK_URL;
+const VIBIN = '#D8385E';
 
 const releaseNotification = {
   username: 'Yoga',
@@ -63,7 +64,7 @@ async function notify() {
     const { body: changedPackages } = await getChangedPackages();
 
     const changes = {
-      color: '#F46152',
+      color: VIBIN,
       text: changedPackages,
     };
 

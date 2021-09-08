@@ -40,6 +40,7 @@ module.exports = (async () => {
         ),
         new RegExp(`${reactNativeLib}/node_modules/react-native/.*`),
         new RegExp(`${reactNativeLib}/node_modules/react/.*`),
+        new RegExp(`${reactNativeLib}/packages/*.*/*.test.*`),
       ]),
       assetExts: assetExts.filter(ext => ext !== 'svg'),
       sourceExts: ['jsx', 'js', 'svg', 'ts', 'tsx'],

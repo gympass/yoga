@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.5.0...@gympass/yoga-system@0.6.0) (2021-09-03)
+
+
+### Features
+
+* **system:** creating font-weight Android system handler ([1235074](https://github.com/Gympass/yoga/commit/1235074507a8d0746fc85efa75799c70c95e6a5e))
+
+
+
+
+
 # [0.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.4.0...@gympass/yoga-system@0.5.0) (2021-08-26)
 
 
