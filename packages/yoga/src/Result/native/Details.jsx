@@ -17,6 +17,7 @@ import Box from '../../Box';
 
 const Container = styled(Text.Tiny)`
   flex: 1;
+  height: ${({ theme }) => theme.yoga.spacing.small}px;
 `;
 
 const Separator = styled(Box).attrs({
@@ -24,7 +25,7 @@ const Separator = styled(Box).attrs({
   height: 'xxxsmall',
 })``;
 
-const StyledText = styled(Text.Small)`
+const StyledText = styled(Text.Tiny)`
   ${({
     theme: {
       yoga: {
@@ -59,13 +60,8 @@ const ResultDetails = ({
               // eslint-disable-next-line react/no-array-index-key
               <React.Fragment key={index}>
                 {IconComponent && (
-                  <Box mr="xxxsmall" height="xsmall" width="xsmall">
-                    <Icon
-                      as={IconComponent}
-                      fill={variant}
-                      size="xsmall"
-                      style={{ marginTop: 1 }}
-                    />
+                  <Box mr="xxxsmall" mt={-2}>
+                    <Icon as={IconComponent} fill={variant} size="xsmall" />
                   </Box>
                 )}
                 <Item variant={variant} {...props} />

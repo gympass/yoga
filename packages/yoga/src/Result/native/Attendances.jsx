@@ -28,13 +28,8 @@ const Attendances = ({ attendances, rate }) => (
     <List>
       {attendances.map(({ description, icon }) => (
         <React.Fragment key={description}>
-          <Box height="xsmall" width="xsmall">
-            <Icon
-              as={icon}
-              fill="deep"
-              size="xsmall"
-              style={{ marginTop: 2 }}
-            />
+          <Box mt={-2}>
+            <Icon as={icon} fill="deep" size="xsmall" />
           </Box>
           <ItemSeparator />
           {description}

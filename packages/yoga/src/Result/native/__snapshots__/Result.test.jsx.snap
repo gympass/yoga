@@ -177,46 +177,41 @@ exports[`<Result /> should match snapshot 1`] = `
               },
             ]
           }
-          textAlignVertical="center"
         >
           <View
-            height="xsmall"
+            mt={-2}
             style={
               Array [
                 Object {
-                  "height": 12,
-                  "width": 12,
+                  "marginTop": -2,
                 },
               ]
             }
-            width="xsmall"
           >
             <RNSVGSvgView
-              bbHeight="100%"
-              bbWidth="100%"
+              bbHeight={12}
+              bbWidth={12}
               fill="#6B6B78"
               focusable={false}
-              height="100%"
+              height={12}
               style={
                 Array [
                   Object {
                     "backgroundColor": "transparent",
                     "borderWidth": 0,
                   },
-                  Object {
-                    "marginTop": 2,
-                  },
+                  undefined,
                   Object {
                     "opacity": 1,
                   },
                   Object {
                     "flex": 0,
-                    "height": "100%",
-                    "width": "100%",
+                    "height": 12,
+                    "width": 12,
                   },
                 ]
               }
-              width="100%"
+              width={12}
             >
               <RNSVGGroup
                 fill={
@@ -291,43 +286,39 @@ exports[`<Result /> should match snapshot 1`] = `
             width="xxxsmall"
           />
           <View
-            height="xsmall"
+            mt={-2}
             style={
               Array [
                 Object {
-                  "height": 12,
-                  "width": 12,
+                  "marginTop": -2,
                 },
               ]
             }
-            width="xsmall"
           >
             <RNSVGSvgView
-              bbHeight="100%"
-              bbWidth="100%"
+              bbHeight={12}
+              bbWidth={12}
               fill="#6B6B78"
               focusable={false}
-              height="100%"
+              height={12}
               style={
                 Array [
                   Object {
                     "backgroundColor": "transparent",
                     "borderWidth": 0,
                   },
-                  Object {
-                    "marginTop": 2,
-                  },
+                  undefined,
                   Object {
                     "opacity": 1,
                   },
                   Object {
                     "flex": 0,
-                    "height": "100%",
-                    "width": "100%",
+                    "height": 12,
+                    "width": 12,
                   },
                 ]
               }
-              width="100%"
+              width={12}
             >
               <RNSVGGroup
                 fill={
@@ -558,10 +549,15 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
+                "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "textAlignVertical": "center",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "height": 16,
+                "lineHeight": 16,
               },
             ]
           }
@@ -603,10 +599,15 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
+                "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
-                "textAlignVertical": "center",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "height": 16,
+                "lineHeight": 16,
               },
             ]
           }
@@ -645,9 +646,9 @@ exports[`<Result /> should match snapshot 1`] = `
                 Object {
                   "color": "#6B6B78",
                   "fontFamily": "Rubik",
-                  "fontSize": 14,
+                  "fontSize": 12,
                   "fontWeight": "400",
-                  "lineHeight": 20,
+                  "lineHeight": 16,
                   "marginLeft": 4,
                   "marginRight": 4,
                 },
@@ -703,9 +704,9 @@ exports[`<Result /> should match snapshot 1`] = `
                 Object {
                   "color": "#6B6B78",
                   "fontFamily": "Rubik",
-                  "fontSize": 14,
+                  "fontSize": 12,
                   "fontWeight": "400",
-                  "lineHeight": 20,
+                  "lineHeight": 16,
                   "marginLeft": 4,
                   "marginRight": 4,
                 },
