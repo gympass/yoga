@@ -124,6 +124,23 @@ const Button = ({
         bottom: spacing.xxsmall,
       },
     },
+    icon: {
+      font: {
+        primary: {
+          color: colors.primary,
+        },
+        secondary: {
+          color: colors.secondary,
+        },
+        disabled: {
+          color: colors.text.disabled,
+        },
+      },
+      margin: {
+        top: spacing.small,
+        bottom: spacing.xxsmall,
+      },
+    },
   },
 });
 
