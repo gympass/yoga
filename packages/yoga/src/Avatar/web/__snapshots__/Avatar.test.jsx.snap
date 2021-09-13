@@ -114,6 +114,10 @@ exports[`<Avatar /> should match snapshot in circle avatar with src and alt prop
   overflow: hidden;
 }
 
+.c1 {
+  max-width: 100%;
+}
+
 <div>
   <div
     class="c0"
@@ -125,6 +129,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with src and alt prop
   >
     <img
       alt="Gympass brand logo"
+      class="c1"
       src="https://github.com/Gympass.png"
     />
   </div>
@@ -245,6 +250,10 @@ exports[`<Avatar /> should match snapshot in default avatar with src and alt pro
   overflow: hidden;
 }
 
+.c1 {
+  max-width: 100%;
+}
+
 <div>
   <div
     class="c0"
@@ -256,6 +265,7 @@ exports[`<Avatar /> should match snapshot in default avatar with src and alt pro
   >
     <img
       alt="Gympass brand logo"
+      class="c1"
       src="https://github.com/Gympass.png"
     />
   </div>

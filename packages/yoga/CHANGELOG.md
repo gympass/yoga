@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.14.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.14.0...@gympass/yoga@7.14.1) (2021-09-13)
+
+
+### Bug Fixes
+
+* **avatar:** add image width property ([c7033fe](https://github.com/Gympass/yoga/commit/c7033fe51d22a6cd63d85761fe76f7244e174a2a))
+
+
+
+
+
 # [7.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.13.2...@gympass/yoga@7.14.0) (2021-09-08)
 
 
