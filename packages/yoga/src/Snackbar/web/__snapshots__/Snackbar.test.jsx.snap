@@ -108,8 +108,8 @@ exports[`<Snackbar /> should match snapshot 1`] = `
       <svg
         class="c2"
         fill="#231B22"
-        height="large"
-        width="large"
+        height="24"
+        width="24"
       />
     </div>
     <p

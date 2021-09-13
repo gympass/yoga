@@ -10,8 +10,8 @@ exports[`Snapshots should match snapshot 1`] = `
   <svg
     class="c0"
     fill="#231B22"
-    height="small"
-    width="small"
+    height="16"
+    width="16"
   >
     <circle
       cx="16"
@@ -32,8 +32,8 @@ exports[`Snapshots should match snapshot with size prop 1`] = `
   <svg
     class="c0"
     fill="#231B22"
-    height="small"
-    width="small"
+    height="16"
+    width="16"
   >
     <circle
       cx="16"
@@ -46,7 +46,6 @@ exports[`Snapshots should match snapshot with size prop 1`] = `
 
 exports[`Snapshots should match snapshot with system props 1`] = `
 .c0 {
-  border-radius: medium;
   box-shadow: 0 5px 5px -3px rgba(152,152,166,0.2),0 8px 10px 1px rgba(152,152,166,0.14),0 3px 14px 2px rgba(152,152,166,0.12);
   margin: 20px;
   width: 16px;
@@ -55,13 +54,12 @@ exports[`Snapshots should match snapshot with system props 1`] = `
 
 <div>
   <svg
-    borderRadius="medium"
     class="c0"
     elevation="medium"
     fill="#231B22"
-    height="small"
+    height="16"
     margin="medium"
-    width="small"
+    width="16"
   >
     <circle
       cx="16"

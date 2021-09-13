@@ -12,7 +12,7 @@ exports[`Snapshots should match snapshot 1`] = `
 >
   <svg
     fill="#231B22"
-    height="small"
+    height="16"
     style={
       Array [
         Object {
@@ -21,7 +21,7 @@ exports[`Snapshots should match snapshot 1`] = `
         },
       ]
     }
-    width="small"
+    width="16"
   >
     <circle
       cx="16"
@@ -44,7 +44,7 @@ exports[`Snapshots should match snapshot with size prop 1`] = `
 >
   <svg
     fill="#231B22"
-    height="small"
+    height="16"
     style={
       Array [
         Object {
@@ -53,7 +53,7 @@ exports[`Snapshots should match snapshot with size prop 1`] = `
         },
       ]
     }
-    width="small"
+    width="16"
   >
     <circle
       cx="16"
@@ -75,15 +75,13 @@ exports[`Snapshots should match snapshot with system props 1`] = `
   }
 >
   <svg
-    borderRadius={2}
     elevation="medium"
     fill="#231B22"
-    height="small"
+    height="16"
     margin="medium"
     style={
       Array [
         Object {
-          "borderRadius": 2,
           "height": 16,
           "marginBottom": 20,
           "marginLeft": 20,
@@ -100,7 +98,7 @@ exports[`Snapshots should match snapshot with system props 1`] = `
         },
       ]
     }
-    width="small"
+    width="16"
   >
     <circle
       cx="16"

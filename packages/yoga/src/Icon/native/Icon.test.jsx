@@ -39,7 +39,6 @@ describe('Snapshots', () => {
           fill="stamina"
           margin="medium"
           elevation="medium"
-          borderRadius={2}
         />
       </ThemeProvider>,
     );

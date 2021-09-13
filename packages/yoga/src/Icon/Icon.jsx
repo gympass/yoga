@@ -26,8 +26,8 @@ const Icon = ({
     as={Component}
     width={resolve(theme.yoga.spacing, width) || width}
     height={resolve(theme.yoga.spacing, height) || height}
-    fill={resolve(theme.yoga.colors, fill) || fill}
-    stroke={resolve(theme.yoga.colors, stroke) || stroke}
+    {...(fill && { fill: resolve(theme.yoga.colors, fill) || fill })}
+    {...(stroke && { stroke: resolve(theme.yoga.colors, stroke) || stroke })}
     {...props}
   />
 );
