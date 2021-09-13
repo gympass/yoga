@@ -317,10 +317,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 }
               >
                 <RNSVGSvgView
-                  bbHeight="small"
-                  bbWidth="small"
+                  bbHeight="16"
+                  bbWidth="16"
                   focusable={false}
-                  height="small"
+                  height="16"
                   stroke="#9898A6"
                   style={
                     Array [
@@ -339,12 +339,12 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                       },
                       Object {
                         "flex": 0,
-                        "height": "small",
-                        "width": "small",
+                        "height": 16,
+                        "width": 16,
                       },
                     ]
                   }
-                  width="small"
+                  width="16"
                 >
                   <RNSVGGroup
                     fill={
@@ -444,18 +444,23 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 }
               >
                 <RNSVGSvgView
-                  bbHeight={16}
-                  bbWidth={16}
+                  bbHeight="16"
+                  bbWidth="16"
                   fill="#231B22"
                   focusable={false}
-                  height={16}
+                  height="16"
                   style={
                     Array [
                       Object {
                         "backgroundColor": "transparent",
                         "borderWidth": 0,
                       },
-                      undefined,
+                      Array [
+                        Object {
+                          "height": 16,
+                          "width": 16,
+                        },
+                      ],
                       Object {
                         "opacity": 1,
                       },
@@ -466,7 +471,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                       },
                     ]
                   }
-                  width={16}
+                  width="16"
                 >
                   <RNSVGGroup
                     fill={
