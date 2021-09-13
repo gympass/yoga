@@ -1,9 +1,14 @@
 import React from 'react';
+import styled from 'styled-components';
 import { BuildingFilled } from '@gympass/yoga-icons';
 import { string, func, checkPropTypes } from 'prop-types';
 
 import Box from '../../Box';
 import Icon from '../../Icon';
+
+const Image = styled.img`
+  max-width: 100%;
+`;
 
 /**
  * The Avatar component is used to display the image.
@@ -30,7 +35,7 @@ const Avatar = ({
     {...otherProps}
   >
     {src ? (
-      <img src={src} alt={alt} />
+      <Image src={src} alt={alt} />
     ) : (
       <Icon as={icon} width="50%" height="50%" fill={fill} stroke={stroke} />
     )}
