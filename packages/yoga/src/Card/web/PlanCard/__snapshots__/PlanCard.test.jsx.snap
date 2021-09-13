@@ -371,9 +371,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             >
               <svg
                 class="c15"
-                height="small"
+                height="16"
                 stroke="#9898A6"
-                width="small"
+                width="16"
               />
             </div>
             <span
