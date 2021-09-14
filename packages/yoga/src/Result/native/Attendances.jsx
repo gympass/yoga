@@ -1,10 +1,10 @@
+import { arrayOf, func, shape, string } from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
-import { arrayOf, func, shape, string } from 'prop-types';
 import Box from '../../Box';
-import Icon from '../../Icon';
 import Text from '../../Text';
 import Rate from './Rate';
+import TinyTextIcon from './TinyTextIcon';
 
 const List = styled(Text.Tiny).attrs({
   numberOfLines: 1,
@@ -28,9 +28,7 @@ const Attendances = ({ attendances, rate }) => (
     <List>
       {attendances.map(({ description, icon }) => (
         <React.Fragment key={description}>
-          <Box mt={-2}>
-            <Icon as={icon} fill="deep" size="xsmall" />
-          </Box>
+          <TinyTextIcon as={icon} fill="deep" />
           <ItemSeparator />
           {description}
           <ItemSeparator />

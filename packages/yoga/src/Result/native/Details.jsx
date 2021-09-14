@@ -12,8 +12,8 @@ import {
 import styled from 'styled-components';
 
 import Text from '../../Text';
-import Icon from '../../Icon';
 import Box from '../../Box';
+import TinyTextIcon from './TinyTextIcon';
 
 const Container = styled(Text.Tiny)`
   flex: 1;
@@ -60,9 +60,10 @@ const ResultDetails = ({
               // eslint-disable-next-line react/no-array-index-key
               <React.Fragment key={index}>
                 {IconComponent && (
-                  <Box mr="xxxsmall" mt={-2}>
-                    <Icon as={IconComponent} fill={variant} size="xsmall" />
-                  </Box>
+                  <>
+                    <TinyTextIcon as={IconComponent} fill={variant} />
+                    <Separator />
+                  </>
                 )}
                 <Item variant={variant} {...props} />
 
