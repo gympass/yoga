@@ -30,8 +30,12 @@ const IconStyled = styled(Button)`
 
       svg {
         margin: 0;
-        width: ${large ? '24' : '12'}px;
-        height: ${large ? '24' : '12'}px;
+        width: ${
+          large ? button.types.icon.svg.large : button.types.icon.svg.default
+        }px;
+        height: ${
+          large ? button.types.icon.svg.large : button.types.icon.svg.default
+        }px;
         fill: ${button.types.contained.font.default.color};
  
         transition: fill 0.2s;
