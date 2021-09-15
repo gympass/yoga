@@ -7,250 +7,445 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.8.21](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.20...@gympass/yoga-doc@2.8.21) (2021-09-15)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.8.20](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.19...@gympass/yoga-doc@2.8.20) (2021-09-13)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.8.19](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.18...@gympass/yoga-doc@2.8.19) (2021-09-08)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.8.18](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.17...@gympass/yoga-doc@2.8.18) (2021-09-03)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.8.17](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.16...@gympass/yoga-doc@2.8.17) (2021-09-03)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.8.16](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.15...@gympass/yoga-doc@2.8.16) (2021-09-03)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.8.15](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.14...@gympass/yoga-doc@2.8.15) (2021-09-01)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.8.14](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.13...@gympass/yoga-doc@2.8.14) (2021-08-30)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.8.13](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.12...@gympass/yoga-doc@2.8.13) (2021-08-30)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.8.12](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.11...@gympass/yoga-doc@2.8.12) (2021-08-26)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.8.11](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.10...@gympass/yoga-doc@2.8.11) (2021-08-26)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.8.10](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.9...@gympass/yoga-doc@2.8.10) (2021-08-26)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.8.9](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.8...@gympass/yoga-doc@2.8.9) (2021-08-26)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.8.8](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.7...@gympass/yoga-doc@2.8.8) (2021-08-25)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.8.7](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.6...@gympass/yoga-doc@2.8.7) (2021-08-25)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.8.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.5...@gympass/yoga-doc@2.8.6) (2021-08-24)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.8.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.4...@gympass/yoga-doc@2.8.5) (2021-08-24)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.8.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.3...@gympass/yoga-doc@2.8.4) (2021-08-23)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.8.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.2...@gympass/yoga-doc@2.8.3) (2021-08-19)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.8.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.1...@gympass/yoga-doc@2.8.2) (2021-08-19)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.8.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.0...@gympass/yoga-doc@2.8.1) (2021-08-18)
+
 
 ### Bug Fixes
 
-- **doc:** update native modules mapper, used to construct the code to be sent to expo ([aa76d47](https://github.com/Gympass/yoga/commit/aa76d47c1e5ba06dc00ae66d51df67891dff52b4))
+* **doc:** update native modules mapper, used to construct the code to be sent to expo ([aa76d47](https://github.com/Gympass/yoga/commit/aa76d47c1e5ba06dc00ae66d51df67891dff52b4))
+
 
 ### Reverts
 
-- **changelog:** reverting changelogs ([e2bc466](https://github.com/Gympass/yoga/commit/e2bc466957c2e2f08d60936e7381b9637c134b1a))
+* **changelog:** reverting changelogs ([e2bc466](https://github.com/Gympass/yoga/commit/e2bc466957c2e2f08d60936e7381b9637c134b1a))
+
+
+
+
 
 # [2.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.7.0...@gympass/yoga-doc@2.8.0) (2021-08-17)
 
+
 ### Features
 
-- **result:** add result component to native components modules and update findComponent regex ([a0b1ce7](https://github.com/Gympass/yoga/commit/a0b1ce7efc5b9b90a551740c6c3dacc95e97ffe0))
+* **result:** add result component to native components modules and update findComponent regex ([a0b1ce7](https://github.com/Gympass/yoga/commit/a0b1ce7efc5b9b90a551740c6c3dacc95e97ffe0))
+
+
+
+
 
 # [2.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.6.0...@gympass/yoga-doc@2.7.0) (2021-08-17)
 
+
 ### Features
 
-- **avatar:** add web Avatar component ([e3cde89](https://github.com/Gympass/yoga/commit/e3cde8971969224c89b96ff4e633761be1aa1603))
+* **avatar:** add web Avatar component ([e3cde89](https://github.com/Gympass/yoga/commit/e3cde8971969224c89b96ff4e633761be1aa1603))
+
 
 ### Reverts
 
-- **changelog:** ignore changes ([6cd01d7](https://github.com/Gympass/yoga/commit/6cd01d7cc2cecdbef3635a93166dd3d83e6b5c31))
+* **changelog:** ignore changes ([6cd01d7](https://github.com/Gympass/yoga/commit/6cd01d7cc2cecdbef3635a93166dd3d83e6b5c31))
+
+
+
+
 
 # [2.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.5.3...@gympass/yoga-doc@2.6.0) (2021-08-13)
 
+
 ### Bug Fixes
 
-- align in android ([a6a00de](https://github.com/Gympass/yoga/commit/a6a00dea03a6083da7835135d01f690cecff7a00))
-- documentatio ([1a3181b](https://github.com/Gympass/yoga/commit/1a3181bb075fb547cd0bc5d91c64c37ba0cde03f))
+* align in android ([a6a00de](https://github.com/Gympass/yoga/commit/a6a00dea03a6083da7835135d01f690cecff7a00))
+* documentatio ([1a3181b](https://github.com/Gympass/yoga/commit/1a3181bb075fb547cd0bc5d91c64c37ba0cde03f))
+
 
 ### Features
 
-- **tag:** adjusting default icon size and add small variation to the docs ([06e54e3](https://github.com/Gympass/yoga/commit/06e54e397948cd01cf820f049574a3a40385f47a))
-- add elipses in attendances ([c8f29fd](https://github.com/Gympass/yoga/commit/c8f29fd9ad037d17b4367cbd1f9930f531cb24f2))
-- add limitLabel example in doc ([e09befb](https://github.com/Gympass/yoga/commit/e09befb77accdb01079131fe7d842dca07a11f9c))
-- add variant small in component tag ([2006d7d](https://github.com/Gympass/yoga/commit/2006d7d4e0f94bb42cae7bcf9c46c3487ccf5176))
-- adjustment in components result and tag ([c4c72af](https://github.com/Gympass/yoga/commit/c4c72afcac044f8c390b1faac34691258f90c373))
-- change props name in component tag ([e85da16](https://github.com/Gympass/yoga/commit/e85da162abcc02e4c876acb7e8925a5e8f7b94cd))
-- improvements in documentation ([c1d0768](https://github.com/Gympass/yoga/commit/c1d0768285a417b2abdf141fd33effd9af00d6b1))
-- **result:** changing component name ([2b885c8](https://github.com/Gympass/yoga/commit/2b885c8ca0329a077600dc9be5f6979a50b64460))
-- **result:** changing component name ([1ac9752](https://github.com/Gympass/yoga/commit/1ac9752341360f909f88815a0f2546cd005ad874))
-- **search_list:** add new component to design system ([7d9cb5c](https://github.com/Gympass/yoga/commit/7d9cb5c67346fd0e3da5597a16cfb853ea06ea6c))
-- **search_list:** add new component to design system ([5c1b582](https://github.com/Gympass/yoga/commit/5c1b582c7a44c3e7b6b1eeff718e2919b4947b65))
+* **tag:** adjusting default icon size and add small variation to the docs ([06e54e3](https://github.com/Gympass/yoga/commit/06e54e397948cd01cf820f049574a3a40385f47a))
+* add elipses in attendances ([c8f29fd](https://github.com/Gympass/yoga/commit/c8f29fd9ad037d17b4367cbd1f9930f531cb24f2))
+* add limitLabel example in doc ([e09befb](https://github.com/Gympass/yoga/commit/e09befb77accdb01079131fe7d842dca07a11f9c))
+* add variant small in component tag ([2006d7d](https://github.com/Gympass/yoga/commit/2006d7d4e0f94bb42cae7bcf9c46c3487ccf5176))
+* adjustment in components result and tag ([c4c72af](https://github.com/Gympass/yoga/commit/c4c72afcac044f8c390b1faac34691258f90c373))
+* change props name in component tag ([e85da16](https://github.com/Gympass/yoga/commit/e85da162abcc02e4c876acb7e8925a5e8f7b94cd))
+* improvements in documentation ([c1d0768](https://github.com/Gympass/yoga/commit/c1d0768285a417b2abdf141fd33effd9af00d6b1))
+* **result:** changing component name ([2b885c8](https://github.com/Gympass/yoga/commit/2b885c8ca0329a077600dc9be5f6979a50b64460))
+* **result:** changing component name ([1ac9752](https://github.com/Gympass/yoga/commit/1ac9752341360f909f88815a0f2546cd005ad874))
+* **search_list:** add new component to design system ([7d9cb5c](https://github.com/Gympass/yoga/commit/7d9cb5c67346fd0e3da5597a16cfb853ea06ea6c))
+* **search_list:** add new component to design system ([5c1b582](https://github.com/Gympass/yoga/commit/5c1b582c7a44c3e7b6b1eeff718e2919b4947b65))
+
+
+
+
 
 ## [2.5.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.5.2...@gympass/yoga-doc@2.5.3) (2021-08-11)
 
+
 ### Reverts
 
-- **changelog:** reverting changes on CHANGELOGs ([4aab5a8](https://github.com/Gympass/yoga/commit/4aab5a8c845a4951d32f3a4aebe8c52f7143425d))
-- **changelog:** reverting changes on CHANGELOGs ([df3919b](https://github.com/Gympass/yoga/commit/df3919bc14757a3ce309f8e422b44dc750d7bf6f))
+* **changelog:** reverting changes on CHANGELOGs ([4aab5a8](https://github.com/Gympass/yoga/commit/4aab5a8c845a4951d32f3a4aebe8c52f7143425d))
+* **changelog:** reverting changes on CHANGELOGs ([df3919b](https://github.com/Gympass/yoga/commit/df3919bc14757a3ce309f8e422b44dc750d7bf6f))
+
+
+
+
 
 ## [2.5.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.5.1...@gympass/yoga-doc@2.5.2) (2021-08-06)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.5.0...@gympass/yoga-doc@2.5.1) (2021-08-06)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 # [2.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.4.0...@gympass/yoga-doc@2.5.0) (2021-07-30)
+
 
 ### Features
 
-- **components/theme:** create ReactInspector component ([4e7640a](https://github.com/Gympass/yoga/commit/4e7640a2a80f107d6add3c9188c071e263500dcf))
-- **documentation:** create component theme to mdx ([013ac6a](https://github.com/Gympass/yoga/commit/013ac6a329f6fd262099f28c510fcd80045737cd))
-- **documentation:** create ThemeInspector ([1b2af47](https://github.com/Gympass/yoga/commit/1b2af47b134883593a84df7c0268db92313ce30f))
-- **theme:** add colors theme ([19484da](https://github.com/Gympass/yoga/commit/19484da2c9579878191a290540396d25bce67aa8))
-- **theme:** add nth-child on Lineheights ([a3e1180](https://github.com/Gympass/yoga/commit/a3e11800b5a008e2c3bffa7237d7db23bdf2f75d))
-- **theme:** add theme borders ([a1868cf](https://github.com/Gympass/yoga/commit/a1868cf5097c3ccb6a43312da9695d2acb17fd25))
-- **theme:** add theme breakpoints ([af7ed07](https://github.com/Gympass/yoga/commit/af7ed0773ac9ddcca4e2069a202a61b2bbd2f033))
-- **theme:** add theme elevations ([7f2a3c7](https://github.com/Gympass/yoga/commit/7f2a3c763e0295114ceba4133457af26d07a83a2))
-- **theme:** add theme font sizes ([b799b58](https://github.com/Gympass/yoga/commit/b799b5861643324c0db63ddefad042483f60e93d))
-- **theme:** add theme font weights ([b361c95](https://github.com/Gympass/yoga/commit/b361c95406e57f55b12e26190a4590657073c56e))
-- **theme:** add theme fonts ([b2c2a4b](https://github.com/Gympass/yoga/commit/b2c2a4b13d1de00d338f482c80a9dd34a0b32b5e))
-- **theme:** add theme line heights ([c49eab0](https://github.com/Gympass/yoga/commit/c49eab0e668cde54c2db7554d6eb7aab813175e7))
-- **theme:** add theme shape ([61f8d1d](https://github.com/Gympass/yoga/commit/61f8d1d871f5db8ffdf59d13b6570572190bbf50))
-- **theme:** add theme spacing ([b11f590](https://github.com/Gympass/yoga/commit/b11f59063182280912b4f5f3754b8388bed880b8))
-- **theme:** index to import and export theme components ([6e23ff3](https://github.com/Gympass/yoga/commit/6e23ff3836c2fa9cfbe635a3eaa460f04fe6d8f6))
-- **theming:** add docs theming ([526f914](https://github.com/Gympass/yoga/commit/526f91498863ed6a8bb3f8655fe6a38f307f3b9f))
-- **theming:** add theme on theming ([e2d36a4](https://github.com/Gympass/yoga/commit/e2d36a463fa072bf5c7a623b8518d50ad3823528))
-- **theming:** add ThemeProvider and Theme Reader on theming ([db07aaa](https://github.com/Gympass/yoga/commit/db07aaaa00eae83ec0b343d65f46ec6ca689e2bf))
+* **components/theme:** create ReactInspector component ([4e7640a](https://github.com/Gympass/yoga/commit/4e7640a2a80f107d6add3c9188c071e263500dcf))
+* **documentation:** create component theme to mdx ([013ac6a](https://github.com/Gympass/yoga/commit/013ac6a329f6fd262099f28c510fcd80045737cd))
+* **documentation:** create ThemeInspector ([1b2af47](https://github.com/Gympass/yoga/commit/1b2af47b134883593a84df7c0268db92313ce30f))
+* **theme:** add colors theme ([19484da](https://github.com/Gympass/yoga/commit/19484da2c9579878191a290540396d25bce67aa8))
+* **theme:** add nth-child on Lineheights ([a3e1180](https://github.com/Gympass/yoga/commit/a3e11800b5a008e2c3bffa7237d7db23bdf2f75d))
+* **theme:** add theme borders ([a1868cf](https://github.com/Gympass/yoga/commit/a1868cf5097c3ccb6a43312da9695d2acb17fd25))
+* **theme:** add theme breakpoints ([af7ed07](https://github.com/Gympass/yoga/commit/af7ed0773ac9ddcca4e2069a202a61b2bbd2f033))
+* **theme:** add theme elevations ([7f2a3c7](https://github.com/Gympass/yoga/commit/7f2a3c763e0295114ceba4133457af26d07a83a2))
+* **theme:** add theme font sizes ([b799b58](https://github.com/Gympass/yoga/commit/b799b5861643324c0db63ddefad042483f60e93d))
+* **theme:** add theme font weights ([b361c95](https://github.com/Gympass/yoga/commit/b361c95406e57f55b12e26190a4590657073c56e))
+* **theme:** add theme fonts ([b2c2a4b](https://github.com/Gympass/yoga/commit/b2c2a4b13d1de00d338f482c80a9dd34a0b32b5e))
+* **theme:** add theme line heights ([c49eab0](https://github.com/Gympass/yoga/commit/c49eab0e668cde54c2db7554d6eb7aab813175e7))
+* **theme:** add theme shape ([61f8d1d](https://github.com/Gympass/yoga/commit/61f8d1d871f5db8ffdf59d13b6570572190bbf50))
+* **theme:** add theme spacing ([b11f590](https://github.com/Gympass/yoga/commit/b11f59063182280912b4f5f3754b8388bed880b8))
+* **theme:** index to import and export theme components ([6e23ff3](https://github.com/Gympass/yoga/commit/6e23ff3836c2fa9cfbe635a3eaa460f04fe6d8f6))
+* **theming:** add docs theming ([526f914](https://github.com/Gympass/yoga/commit/526f91498863ed6a8bb3f8655fe6a38f307f3b9f))
+* **theming:** add theme on theming ([e2d36a4](https://github.com/Gympass/yoga/commit/e2d36a463fa072bf5c7a623b8518d50ad3823528))
+* **theming:** add ThemeProvider and Theme Reader on theming ([db07aaa](https://github.com/Gympass/yoga/commit/db07aaaa00eae83ec0b343d65f46ec6ca689e2bf))
+
+
+
+
 
 # [2.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.3.1...@gympass/yoga-doc@2.4.0) (2021-07-27)
 
+
 ### Bug Fixes
 
-- **snackbar:** remove native documentation ([f53f5e7](https://github.com/Gympass/yoga/commit/f53f5e7418f5633ecf3a63b783defdf8a975690d))
+* **snackbar:** remove native documentation ([f53f5e7](https://github.com/Gympass/yoga/commit/f53f5e7418f5633ecf3a63b783defdf8a975690d))
+
 
 ### Features
 
-- **snackbar:** add snackbar component structure ([1df01d0](https://github.com/Gympass/yoga/commit/1df01d08e12cdacfec13af401b2c30340bb7a7c4))
-- **snackbar:** add styles with basic behavior ([3f5a23d](https://github.com/Gympass/yoga/commit/3f5a23dd5a75debe253d96baa7a43e7d63e775ad))
-- **snackbar:** adjust the default variant ([08f953c](https://github.com/Gympass/yoga/commit/08f953cddffde6cf8ed24d2428965ce7e7d0d7bf))
+* **snackbar:** add snackbar component structure ([1df01d0](https://github.com/Gympass/yoga/commit/1df01d08e12cdacfec13af401b2c30340bb7a7c4))
+* **snackbar:** add styles with basic behavior ([3f5a23d](https://github.com/Gympass/yoga/commit/3f5a23dd5a75debe253d96baa7a43e7d63e775ad))
+* **snackbar:** adjust the default variant ([08f953c](https://github.com/Gympass/yoga/commit/08f953cddffde6cf8ed24d2428965ce7e7d0d7bf))
+
+
+
+
 
 ## [2.3.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.3.0...@gympass/yoga-doc@2.3.1) (2021-07-26)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 # [2.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.12...@gympass/yoga-doc@2.3.0) (2021-07-20)
+
 
 ### Features
 
-- improvements in doc of component avatar ([01e1020](https://github.com/Gympass/yoga/commit/01e1020935228db4a0c0f6c2358a1de5a35d434e))
+* improvements in doc of component avatar ([01e1020](https://github.com/Gympass/yoga/commit/01e1020935228db4a0c0f6c2358a1de5a35d434e))
+
+
+
+
 
 ## [2.2.12](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.11...@gympass/yoga-doc@2.2.12) (2021-07-08)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.2.11](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.10...@gympass/yoga-doc@2.2.11) (2021-06-30)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.2.10](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.9...@gympass/yoga-doc@2.2.10) (2021-06-29)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.2.9](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.8...@gympass/yoga-doc@2.2.9) (2021-06-28)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.2.8](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.7...@gympass/yoga-doc@2.2.8) (2021-06-23)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.2.7](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.6...@gympass/yoga-doc@2.2.7) (2021-06-16)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.2.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.5...@gympass/yoga-doc@2.2.6) (2021-06-16)
+
 
 ### Bug Fixes
 
-- **docs:** fix system link ([bf7b6a1](https://github.com/Gympass/yoga/commit/bf7b6a118f70fa9cadc4ef041835bb3b30f892b5))
+* **docs:** fix system link ([bf7b6a1](https://github.com/Gympass/yoga/commit/bf7b6a118f70fa9cadc4ef041835bb3b30f892b5))
+
+
+
+
 
 ## [2.2.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.4...@gympass/yoga-doc@2.2.5) (2021-06-16)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.2.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.3...@gympass/yoga-doc@2.2.4) (2021-06-10)
 
 **Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
 
 ## [2.2.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.2...@gympass/yoga-doc@2.2.3) (2021-06-10)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.1...@gympass/yoga-doc@2.2.2) (2021-06-10)
 
 **Note:** Version bump only for package @gympass/yoga-doc
 
+
+
+
+
 ## [2.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.2.0...@gympass/yoga-doc@2.2.1) (2021-06-10)
+
 
 ### Bug Fixes
 
-- **codeblock:** add 'react-scripts' as dependency ([af61cd1](https://github.com/Gympass/yoga/commit/af61cd1562bc42d66e5b350e63f5b68cf6cbb288))
+* **codeblock:** add 'react-scripts' as dependency ([af61cd1](https://github.com/Gympass/yoga/commit/af61cd1562bc42d66e5b350e63f5b68cf6cbb288))
+
+
+
+
 
 # [2.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.1.3...@gympass/yoga-doc@2.2.0) (2021-06-04)
 
+
 ### Features
 
-- **yoga:** start development of new component Chips (web platform) ([a0df8f3](https://github.com/Gympass/yoga/commit/a0df8f358a036a75602c808fad02e1508eb85eb7))
+* **yoga:** start development of new component Chips (web platform) ([a0df8f3](https://github.com/Gympass/yoga/commit/a0df8f358a036a75602c808fad02e1508eb85eb7))
+
+
+
+
 
 ## [2.1.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.1.2...@gympass/yoga-doc@2.1.3) (2021-06-02)
 
