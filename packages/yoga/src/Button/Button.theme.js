@@ -125,16 +125,9 @@ const Button = ({
       },
     },
     icon: {
-      font: {
-        primary: {
-          color: colors.primary,
-        },
-        secondary: {
-          color: colors.secondary,
-        },
-        disabled: {
-          color: colors.text.disabled,
-        },
+      size: {
+        default: 24,
+        large: 48,
       },
       margin: {
         top: spacing.small,
