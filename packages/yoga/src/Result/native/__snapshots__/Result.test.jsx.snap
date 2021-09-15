@@ -166,7 +166,7 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
-                "color": "#231B22",
+                "color": "#6B6B78",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -177,6 +177,7 @@ exports[`<Result /> should match snapshot 1`] = `
               },
             ]
           }
+          variant="deep"
         >
           <View
             height="xsmall"
