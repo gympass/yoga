@@ -1,3 +1,5 @@
+import { Link as GatsbyLink } from 'gatsby';
+
 ### Usage
 
 ```javascript
@@ -24,6 +26,14 @@
 
   <Box>
     <Progress
+      label={{ value: 'With margin prop', placement: 'left' }}
+      max={100}
+      value={70}
+      variant="secondary"
+      mv="medium"
+    />
+
+    <Progress
       label={{ value: 'With variant', placement: 'left' }}
       max={100}
       value={70}
@@ -34,5 +44,15 @@
 ```
 
 ### Props
+
+<p>
+  The Progress component also has support for {''}
+
+  <GatsbyLink to="/system/backgroundColor">backgroundColor</GatsbyLink>, {''} 
+  <GatsbyLink to="/system/border">border</GatsbyLink>, {''}
+  <GatsbyLink to="/system/elevation">elevation</GatsbyLink>, {''}
+  <GatsbyLink to="/system/layout">layout</GatsbyLink>, 
+  and <GatsbyLink to="/system/spacing">spacing</GatsbyLink> props 
+</p>
 
 <PropsTable component="Progress" platform="web" />
