@@ -8,6 +8,7 @@ import TinyTextIcon from './TinyTextIcon';
 
 const List = styled(Text.Tiny).attrs({
   numberOfLines: 1,
+  variant: 'deep',
 })`
   flex: 1;
 `;
