@@ -91,4 +91,54 @@ describe('<Progress />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot with positions prop system', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Progress position="absolute" top="small" left="small" />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with spacing prop system', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Progress m="small" padding="medium" />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with background color prop system', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Progress backgroundColor="primary" />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with border prop system', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Progress b="small" bRadius="small" />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with elevation prop system', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Progress elevation="small" />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });
