@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.14.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.14.2...@gympass/yoga@7.14.3) (2021-09-15)
+
+
+### Bug Fixes
+
+* **Result:** change attendances font color ([171b761](https://github.com/Gympass/yoga/commit/171b7611f9d4a84f5a78da2e49a6989123989d57))
+
+
+
+
+
 ## [7.14.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.14.1...@gympass/yoga@7.14.2) (2021-09-15)
 
 
