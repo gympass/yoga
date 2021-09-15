@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.14.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.14.1...@gympass/yoga@7.14.2) (2021-09-15)
+
+
+### Bug Fixes
+
+* **Result:** fix align on android devices ([8f2801c](https://github.com/Gympass/yoga/commit/8f2801c829a2c278ea9c0ab05d028fc76c28f669))
+
+
+
+
+
 ## [7.14.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.14.0...@gympass/yoga@7.14.1) (2021-09-13)
 
 
