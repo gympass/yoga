@@ -171,7 +171,7 @@ exports[`<Result /> should match snapshot 1`] = `
           style={
             Array [
               Object {
-                "color": "#231B22",
+                "color": "#6B6B78",
                 "flexBasis": 0,
                 "flexGrow": 1,
                 "flexShrink": 1,
@@ -182,16 +182,19 @@ exports[`<Result /> should match snapshot 1`] = `
               },
             ]
           }
+          variant="deep"
         >
           <View
-            mt={-2}
+            height="xsmall"
             style={
               Array [
                 Object {
-                  "marginTop": -2,
+                  "height": 12,
+                  "width": 12,
                 },
               ]
             }
+            width="xsmall"
           >
             <RNSVGSvgView
               bbHeight="12"
@@ -199,6 +202,7 @@ exports[`<Result /> should match snapshot 1`] = `
               fill="#6B6B78"
               focusable={false}
               height="12"
+              mt={2}
               style={
                 Array [
                   Object {
@@ -208,6 +212,7 @@ exports[`<Result /> should match snapshot 1`] = `
                   Array [
                     Object {
                       "height": 12,
+                      "marginTop": 2,
                       "width": 12,
                     },
                   ],
@@ -296,14 +301,16 @@ exports[`<Result /> should match snapshot 1`] = `
             width="xxxsmall"
           />
           <View
-            mt={-2}
+            height="xsmall"
             style={
               Array [
                 Object {
-                  "marginTop": -2,
+                  "height": 12,
+                  "width": 12,
                 },
               ]
             }
+            width="xsmall"
           >
             <RNSVGSvgView
               bbHeight="12"
@@ -311,6 +318,7 @@ exports[`<Result /> should match snapshot 1`] = `
               fill="#6B6B78"
               focusable={false}
               height="12"
+              mt={2}
               style={
                 Array [
                   Object {
@@ -320,6 +328,7 @@ exports[`<Result /> should match snapshot 1`] = `
                   Array [
                     Object {
                       "height": 12,
+                      "marginTop": 2,
                       "width": 12,
                     },
                   ],

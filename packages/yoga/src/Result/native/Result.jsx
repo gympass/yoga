@@ -1,6 +1,7 @@
 import React, { isValidElement } from 'react';
 import styled from 'styled-components';
 import { arrayOf, string, shape, func, bool, node } from 'prop-types';
+
 import Text from '../../Text';
 import Attendances from './Attendances';
 import Box from '../../Box';
@@ -14,18 +15,13 @@ const StyledBox = styled(Box)`
         colors: { light },
       },
     },
-  }) => {
-    return `
-       ${
-         divided
-           ? `
-             border-bottom-width: 1px;
-             border-bottom-color: ${light}
+  }) =>
+    divided
+      ? `
+          border-bottom-width: 1px;
+          border-bottom-color: ${light};
         `
-           : ''
-       }
-    `;
-  }}
+      : ''}
 `;
 
 const Content = styled.View`

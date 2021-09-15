@@ -22,8 +22,8 @@ const RateValue = styled(Text.Medium)`
     },
   }) => {
     return `
-      margin-left:${xxxsmall};
-      line-height:${xsmall}
+      margin-left: ${xxxsmall}px;
+      line-height: ${xsmall}px;
     `;
   }}
 `;
