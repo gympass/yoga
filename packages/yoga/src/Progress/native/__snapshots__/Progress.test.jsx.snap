@@ -1235,6 +1235,198 @@ exports[`<Progress /> should match snapshot with all variants 1`] = `
 </View>
 `;
 
+exports[`<Progress /> should match snapshot with background color prop system 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    align="left"
+    backgroundColor="primary"
+    isNumber={false}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#D8385E",
+          "flexDirection": "column",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FF874C",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "NaN%",
+            },
+          ]
+        }
+        variant="verve"
+        width={NaN}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Progress /> should match snapshot with border prop system 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    align="left"
+    b="small"
+    bRadius="small"
+    isNumber={false}
+    style={
+      Array [
+        Object {
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "flexDirection": "column",
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FF874C",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "NaN%",
+            },
+          ]
+        }
+        variant="verve"
+        width={NaN}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Progress /> should match snapshot with elevation prop system 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    align="left"
+    elevation="small"
+    isNumber={false}
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "shadowColor": "rgba(152, 152, 166, 0.2)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 4,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FF874C",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "NaN%",
+            },
+          ]
+        }
+        variant="verve"
+        width={NaN}
+      />
+    </View>
+  </View>
+</View>
+`;
+
 exports[`<Progress /> should match snapshot with label number 1`] = `
 <View
   collapsable={true}
@@ -1507,6 +1699,140 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
     >
       Some decription here
     </Text>
+  </View>
+</View>
+`;
+
+exports[`<Progress /> should match snapshot with positions prop system 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    align="left"
+    isNumber={false}
+    left="small"
+    position="absolute"
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "left": 16,
+          "position": "absolute",
+          "top": 16,
+          "width": "100%",
+        },
+      ]
+    }
+    top="small"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FF874C",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "NaN%",
+            },
+          ]
+        }
+        variant="verve"
+        width={NaN}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Progress /> should match snapshot with spacing prop system 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    align="left"
+    isNumber={false}
+    m="small"
+    padding="medium"
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+          "marginBottom": 16,
+          "marginLeft": 16,
+          "marginRight": 16,
+          "marginTop": 16,
+          "paddingBottom": 20,
+          "paddingLeft": 20,
+          "paddingRight": 20,
+          "paddingTop": 20,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#F5F5FA",
+            "borderRadius": 8,
+            "flexGrow": 1,
+            "height": 8,
+            "marginBottom": "auto",
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": "auto",
+            "position": "relative",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FF874C",
+              "borderRadius": 8,
+              "height": "100%",
+              "position": "absolute",
+              "width": "NaN%",
+            },
+          ]
+        }
+        variant="verve"
+        width={NaN}
+      />
+    </View>
   </View>
 </View>
 `;
