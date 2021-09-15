@@ -179,14 +179,16 @@ exports[`<Result /> should match snapshot 1`] = `
           }
         >
           <View
-            mt={-2}
+            height="xsmall"
             style={
               Array [
                 Object {
-                  "marginTop": -2,
+                  "height": 12,
+                  "width": 12,
                 },
               ]
             }
+            width="xsmall"
           >
             <RNSVGSvgView
               bbHeight={12}
@@ -200,7 +202,9 @@ exports[`<Result /> should match snapshot 1`] = `
                     "backgroundColor": "transparent",
                     "borderWidth": 0,
                   },
-                  undefined,
+                  Object {
+                    "marginTop": 2,
+                  },
                   Object {
                     "opacity": 1,
                   },
@@ -286,14 +290,16 @@ exports[`<Result /> should match snapshot 1`] = `
             width="xxxsmall"
           />
           <View
-            mt={-2}
+            height="xsmall"
             style={
               Array [
                 Object {
-                  "marginTop": -2,
+                  "height": 12,
+                  "width": 12,
                 },
               ]
             }
+            width="xsmall"
           >
             <RNSVGSvgView
               bbHeight={12}
@@ -307,7 +313,9 @@ exports[`<Result /> should match snapshot 1`] = `
                     "backgroundColor": "transparent",
                     "borderWidth": 0,
                   },
-                  undefined,
+                  Object {
+                    "marginTop": 2,
+                  },
                   Object {
                     "opacity": 1,
                   },
