@@ -75,14 +75,14 @@ const Arrow = styled(Box).attrs(
   }) => ({
     alignSelf: 'center',
     bgColor: slider.tooltip.backgroundColor,
-    bRadius: 3,
-    bottom: 10,
     height: 16,
     width: 16,
     mb: -17,
     position: 'absolute',
   }),
 )`
+  bottom: 10px;
+  border-radius: 3px;
   transform: rotate(45deg);
 `;
 

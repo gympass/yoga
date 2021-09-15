@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { resolve } from '@gympass/yoga-common';
+import { get } from 'lodash';
 
 const getFromTheme = props => spec => {
   const {
@@ -48,7 +48,7 @@ const generator = ({
   const propFromComponent = componentProps[prop];
 
   // Getting the value from the theme
-  const value = resolve(themeProp, propFromComponent) || propFromComponent;
+  const value = get(themeProp, propFromComponent, propFromComponent);
 
   const transformedValue = transform(value);
 

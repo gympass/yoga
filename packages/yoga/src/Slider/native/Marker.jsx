@@ -23,10 +23,11 @@ const Circle = styled(Box).attrs(
     height: 24,
     width: 24,
     position: 'relative',
-    top: 2,
     as: TouchableOpacity,
   }),
-)``;
+)`
+  top: 2px;
+`;
 
 const CirclePressed = styled(Circle)(
   ({

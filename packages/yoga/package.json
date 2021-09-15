@@ -41,6 +41,7 @@
     "@gympass/yoga-tokens": "^3.1.0",
     "@ptomasroos/react-native-multi-slider": "^1.0.0",
     "downshift": "^5.0.0",
+    "lodash.get": "^4.4.2",
     "prop-types": "^15.7.2",
     "proxy-polyfill": "^0.3.1",
     "rc-slider": "^8.7.1",

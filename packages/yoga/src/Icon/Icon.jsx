@@ -8,7 +8,7 @@ import {
   number,
 } from 'prop-types';
 import { withTheme } from 'styled-components';
-import { resolve } from '@gympass/yoga-common';
+import { get } from 'lodash';
 
 import Box from '../Box';
 
@@ -24,10 +24,10 @@ const Icon = ({
 }) => (
   <Box
     as={Component}
-    width={resolve(theme.yoga.spacing, width) || width}
-    height={resolve(theme.yoga.spacing, height) || height}
-    {...(fill && { fill: resolve(theme.yoga.colors, fill) || fill })}
-    {...(stroke && { stroke: resolve(theme.yoga.colors, stroke) || stroke })}
+    width={get(theme.yoga.spacing, width, width)}
+    height={get(theme.yoga.spacing, height, height)}
+    {...(fill && { fill: get(theme.yoga.colors, fill, fill) })}
+    {...(stroke && { stroke: get(theme.yoga.colors, stroke, stroke) })}
     {...props}
   />
 );

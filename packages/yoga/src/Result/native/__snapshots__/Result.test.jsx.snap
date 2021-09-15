@@ -197,12 +197,11 @@ exports[`<Result /> should match snapshot 1`] = `
             width="xsmall"
           >
             <RNSVGSvgView
-              bbHeight="12"
-              bbWidth="12"
+              bbHeight={12}
+              bbWidth={12}
               fill="#6B6B78"
               focusable={false}
-              height="12"
-              mt={2}
+              height={12}
               style={
                 Array [
                   Object {
@@ -212,8 +211,10 @@ exports[`<Result /> should match snapshot 1`] = `
                   Array [
                     Object {
                       "height": 12,
-                      "marginTop": 2,
                       "width": 12,
+                    },
+                    Object {
+                      "marginTop": 2,
                     },
                   ],
                   Object {
@@ -226,7 +227,7 @@ exports[`<Result /> should match snapshot 1`] = `
                   },
                 ]
               }
-              width="12"
+              width={12}
             >
               <RNSVGGroup
                 fill={
@@ -313,12 +314,11 @@ exports[`<Result /> should match snapshot 1`] = `
             width="xsmall"
           >
             <RNSVGSvgView
-              bbHeight="12"
-              bbWidth="12"
+              bbHeight={12}
+              bbWidth={12}
               fill="#6B6B78"
               focusable={false}
-              height="12"
-              mt={2}
+              height={12}
               style={
                 Array [
                   Object {
@@ -328,8 +328,10 @@ exports[`<Result /> should match snapshot 1`] = `
                   Array [
                     Object {
                       "height": 12,
-                      "marginTop": 2,
                       "width": 12,
+                    },
+                    Object {
+                      "marginTop": 2,
                     },
                   ],
                   Object {
@@ -342,7 +344,7 @@ exports[`<Result /> should match snapshot 1`] = `
                   },
                 ]
               }
-              width="12"
+              width={12}
             >
               <RNSVGGroup
                 fill={
@@ -430,11 +432,11 @@ exports[`<Result /> should match snapshot 1`] = `
           }
         >
           <RNSVGSvgView
-            bbHeight="12"
-            bbWidth="12"
+            bbHeight={12}
+            bbWidth={12}
             fill="#6B6B78"
             focusable={false}
-            height="12"
+            height={12}
             style={
               Array [
                 Object {
@@ -457,7 +459,7 @@ exports[`<Result /> should match snapshot 1`] = `
                 },
               ]
             }
-            width="12"
+            width={12}
           >
             <RNSVGGroup
               fill={
