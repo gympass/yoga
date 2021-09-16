@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.8.23](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.22...@gympass/yoga-doc@2.8.23) (2021-09-16)
+
+
+### Reverts
+
+* **changelog:** keeping the same as we have in master branch ([914c754](https://github.com/Gympass/yoga/commit/914c7540c26bd9998488b5fdbfc281b98cc6c223))
+
+
+
+
+
 ## [2.8.22](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.21...@gympass/yoga-doc@2.8.22) (2021-09-15)
 
 **Note:** Version bump only for package @gympass/yoga-doc
