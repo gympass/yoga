@@ -328,7 +328,12 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                         "backgroundColor": "transparent",
                         "borderWidth": 0,
                       },
-                      undefined,
+                      Array [
+                        Object {
+                          "height": 16,
+                          "width": 16,
+                        },
+                      ],
                       Object {
                         "opacity": 1,
                       },
@@ -450,7 +455,12 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                         "backgroundColor": "transparent",
                         "borderWidth": 0,
                       },
-                      undefined,
+                      Array [
+                        Object {
+                          "height": 16,
+                          "width": 16,
+                        },
+                      ],
                       Object {
                         "opacity": 1,
                       },

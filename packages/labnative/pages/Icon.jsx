@@ -7,7 +7,7 @@ import { DocTitle } from '../components';
 const IconPage = () => (
   <View>
     <DocTitle>Icon</DocTitle>
-    <Icon as={Close} fill="stamina" />
+    <Icon as={Close} size="huge" m="medium" fill="feedback.success.dark" />
   </View>
 );
 

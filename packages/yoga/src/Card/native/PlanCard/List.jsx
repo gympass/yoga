@@ -4,6 +4,7 @@ import { TouchableWithoutFeedback } from 'react-native';
 import { string, node, shape, oneOfType, func } from 'prop-types';
 
 import Text from '../../../Text';
+import Icon from '../../../Icon';
 import theme from '../../../Theme/helpers/themeReader';
 
 const { plan } = theme.components.card;
@@ -35,24 +36,15 @@ const ButtonText = styled(Text.Medium)`
 `;
 
 const ListItem = withTheme(
-  ({
-    text,
-    icon: Icon,
-    buttonProps: { children, ...buttonProps },
-    theme: yogaTheme,
-  }) => (
+  ({ text, icon, buttonProps: { children, ...buttonProps } }) => (
     <Item>
       <Wrapper>
-        {Icon && (
+        {icon && (
           <IconWrapper>
-            {isValidElement(Icon) ? (
-              Icon
+            {isValidElement(icon) ? (
+              icon
             ) : (
-              <Icon
-                width={16}
-                height={16}
-                fill={yogaTheme.yoga.colors.text.primary}
-              />
+              <Icon as={icon} size="small" fill="text.primary" />
             )}
           </IconWrapper>
         )}

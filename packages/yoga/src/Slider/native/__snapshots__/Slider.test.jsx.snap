@@ -304,7 +304,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
             <View
@@ -338,7 +338,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
           </View>
@@ -499,7 +499,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
             <View
@@ -533,7 +533,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
           </View>
@@ -723,7 +723,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
             <View
@@ -757,7 +757,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
           </View>
@@ -938,7 +938,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
             <View
@@ -972,7 +972,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
           </View>
@@ -1043,7 +1043,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
             <View
@@ -1077,7 +1077,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
           </View>
@@ -1412,7 +1412,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
             <View
@@ -1446,7 +1446,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
           </View>
@@ -1517,7 +1517,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
             <View
@@ -1551,7 +1551,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
           </View>
@@ -1708,9 +1708,9 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
             >
               <View
                 alignSelf="center"
-                bRadius={3}
+                bRadius="3px"
                 bgColor="#F5F5FA"
-                bottom={10}
+                bottom="10px"
                 height={16}
                 mb={-17}
                 position="absolute"
@@ -1852,7 +1852,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
             <View
@@ -1886,7 +1886,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
           </View>
@@ -2043,9 +2043,9 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
             >
               <View
                 alignSelf="center"
-                bRadius={3}
+                bRadius="3px"
                 bgColor="#F5F5FA"
-                bottom={10}
+                bottom="10px"
                 height={16}
                 mb={-17}
                 position="absolute"
@@ -2187,7 +2187,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
             <View
@@ -2221,7 +2221,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                   },
                 ]
               }
-              top={2}
+              top="2px"
               width={24}
             />
           </View>

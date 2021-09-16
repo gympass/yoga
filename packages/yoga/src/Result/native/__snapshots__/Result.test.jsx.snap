@@ -70,7 +70,12 @@ exports[`<Result /> should match snapshot 1`] = `
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            undefined,
+            Array [
+              Object {
+                "height": "50%",
+                "width": "50%",
+              },
+            ],
             Object {
               "opacity": 1,
             },
@@ -197,15 +202,20 @@ exports[`<Result /> should match snapshot 1`] = `
               fill="#6B6B78"
               focusable={false}
               height={12}
+              mt="2px"
               style={
                 Array [
                   Object {
                     "backgroundColor": "transparent",
                     "borderWidth": 0,
                   },
-                  Object {
-                    "marginTop": 2,
-                  },
+                  Array [
+                    Object {
+                      "height": 12,
+                      "marginTop": 2,
+                      "width": 12,
+                    },
+                  ],
                   Object {
                     "opacity": 1,
                   },
@@ -308,15 +318,20 @@ exports[`<Result /> should match snapshot 1`] = `
               fill="#6B6B78"
               focusable={false}
               height={12}
+              mt="2px"
               style={
                 Array [
                   Object {
                     "backgroundColor": "transparent",
                     "borderWidth": 0,
                   },
-                  Object {
-                    "marginTop": 2,
-                  },
+                  Array [
+                    Object {
+                      "height": 12,
+                      "marginTop": 2,
+                      "width": 12,
+                    },
+                  ],
                   Object {
                     "opacity": 1,
                   },
@@ -426,7 +441,12 @@ exports[`<Result /> should match snapshot 1`] = `
                   "backgroundColor": "transparent",
                   "borderWidth": 0,
                 },
-                undefined,
+                Array [
+                  Object {
+                    "height": 12,
+                    "width": 12,
+                  },
+                ],
                 Object {
                   "opacity": 1,
                 },

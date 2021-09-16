@@ -8,6 +8,9 @@ import {
   number,
 } from 'prop-types';
 import { withTheme } from 'styled-components';
+import get from 'lodash.get';
+
+import Box from '../Box';
 
 const Icon = ({
   as: Component,
@@ -19,11 +22,12 @@ const Icon = ({
   theme,
   ...props
 }) => (
-  <Component
-    {...(width && { width: theme.yoga.spacing[width] || width })}
-    {...(height && { height: theme.yoga.spacing[height] || height })}
-    {...(fill && { fill: theme.yoga.colors[fill] || fill })}
-    {...(stroke && { stroke: theme.yoga.colors[stroke] || stroke })}
+  <Box
+    as={Component}
+    width={get(theme.yoga.spacing, width, width)}
+    height={get(theme.yoga.spacing, height, height)}
+    {...(fill && { fill: get(theme.yoga.colors, fill, fill) })}
+    {...(stroke && { stroke: get(theme.yoga.colors, stroke, stroke) })}
     {...props}
   />
 );

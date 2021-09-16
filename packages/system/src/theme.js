@@ -1,15 +1,5 @@
 import { css } from 'styled-components';
-
-function resolve(obj, path) {
-  try {
-    return path
-      .split('.')
-      .reduce((prev, curr) => prev && prev[curr], obj)
-      .toString();
-  } catch {
-    return undefined;
-  }
-}
+import get from 'lodash.get';
 
 const getFromTheme = props => spec => {
   const {
@@ -58,7 +48,7 @@ const generator = ({
   const propFromComponent = componentProps[prop];
 
   // Getting the value from the theme
-  const value = resolve(themeProp, propFromComponent) || propFromComponent;
+  const value = get(themeProp, propFromComponent, propFromComponent);
 
   const transformedValue = transform(value);
 
