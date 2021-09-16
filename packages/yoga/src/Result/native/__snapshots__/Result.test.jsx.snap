@@ -202,6 +202,7 @@ exports[`<Result /> should match snapshot 1`] = `
               fill="#6B6B78"
               focusable={false}
               height={12}
+              mt="2px"
               style={
                 Array [
                   Object {
@@ -211,10 +212,8 @@ exports[`<Result /> should match snapshot 1`] = `
                   Array [
                     Object {
                       "height": 12,
-                      "width": 12,
-                    },
-                    Object {
                       "marginTop": 2,
+                      "width": 12,
                     },
                   ],
                   Object {
@@ -319,6 +318,7 @@ exports[`<Result /> should match snapshot 1`] = `
               fill="#6B6B78"
               focusable={false}
               height={12}
+              mt="2px"
               style={
                 Array [
                   Object {
@@ -328,10 +328,8 @@ exports[`<Result /> should match snapshot 1`] = `
                   Array [
                     Object {
                       "height": 12,
-                      "width": 12,
-                    },
-                    Object {
                       "marginTop": 2,
+                      "width": 12,
                     },
                   ],
                   Object {

@@ -8,7 +8,7 @@ import {
   number,
 } from 'prop-types';
 import { withTheme } from 'styled-components';
-import { get } from 'lodash';
+import get from 'lodash.get';
 
 import Box from '../Box';
 

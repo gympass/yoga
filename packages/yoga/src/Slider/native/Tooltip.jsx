@@ -74,6 +74,8 @@ const Arrow = styled(Box).attrs(
     },
   }) => ({
     alignSelf: 'center',
+    bottom: '10px',
+    bRadius: '3px',
     bgColor: slider.tooltip.backgroundColor,
     height: 16,
     width: 16,
@@ -81,8 +83,6 @@ const Arrow = styled(Box).attrs(
     position: 'absolute',
   }),
 )`
-  bottom: 10px;
-  border-radius: 3px;
   transform: rotate(45deg);
 `;
 

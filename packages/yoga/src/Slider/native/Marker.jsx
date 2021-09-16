@@ -22,12 +22,11 @@ const Circle = styled(Box).attrs(
     elevation: slider.marker.shadow,
     height: 24,
     width: 24,
+    top: '2px',
     position: 'relative',
     as: TouchableOpacity,
   }),
-)`
-  top: 2px;
-`;
+)``;
 
 const CirclePressed = styled(Circle)(
   ({

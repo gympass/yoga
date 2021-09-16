@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { get } from 'lodash';
+import get from 'lodash.get';
 
 const getFromTheme = props => spec => {
   const {

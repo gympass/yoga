@@ -4,7 +4,7 @@ import Icon from '../../Icon';
 
 const TinyTextIcon = props => (
   <Box height="xsmall" width="xsmall">
-    <Icon {...props} size="xsmall" style={{ marginTop: 2 }} />
+    <Icon {...props} size="xsmall" mt="2px" />
   </Box>
 );
 
