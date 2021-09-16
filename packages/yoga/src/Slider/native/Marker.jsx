@@ -22,8 +22,8 @@ const Circle = styled(Box).attrs(
     elevation: slider.marker.shadow,
     height: 24,
     width: 24,
+    top: '2px',
     position: 'relative',
-    top: 2,
     as: TouchableOpacity,
   }),
 )``;

@@ -110,14 +110,7 @@ const CardPage = () => {
               <PlanCard.ListItem icon={MapPin} text="2.900 gyms and studios" />
               <PlanCard.ListItem icon={Smartphone} text="24 wellness app" />
               <PlanCard.ListItem
-                icon={
-                  <Icon
-                    as={Star}
-                    height="small"
-                    width="small"
-                    stroke="medium"
-                  />
-                }
+                icon={<Icon as={Star} height="small" width="small" />}
                 text="1-on-1 training sessions"
               />
             </PlanCard.List>

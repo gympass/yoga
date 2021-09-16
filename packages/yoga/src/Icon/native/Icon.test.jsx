@@ -29,4 +29,20 @@ describe('Snapshots', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot with system props', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Icon
+          as={Circle}
+          size="small"
+          fill="stamina"
+          margin="medium"
+          elevation="medium"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });
