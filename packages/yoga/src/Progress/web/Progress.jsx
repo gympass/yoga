@@ -7,7 +7,7 @@ import {
   elevation,
   positions,
   display,
-  spacing as Spacing,
+  spacing as systemSpacing,
 } from '@gympass/yoga-system';
 
 import { charLength } from '../../shared';
@@ -121,7 +121,7 @@ const Wrapper = styled.div`
   ${elevation}
   ${positions}
   ${display}
-  ${Spacing}
+  ${systemSpacing}
 `;
 
 Wrapper.propTypes = {

@@ -7,7 +7,7 @@ import {
   elevation,
   positions,
   display,
-  spacing as Spacing,
+  spacing as systemSpacing,
 } from '@gympass/yoga-system';
 
 import { charLength } from '../../shared';
@@ -35,7 +35,7 @@ const ProgressWrapper = styled.View`
   ${elevation}
   ${positions}
   ${display}
-  ${Spacing}
+  ${systemSpacing}
 `;
 
 const ProgressBar = styled.View`
