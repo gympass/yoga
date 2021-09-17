@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { string, number, shape, oneOfType, oneOf } from 'prop-types';
 import {
   backgroundColor,
-  border,
+  borders,
   elevation,
   positions,
   display,
@@ -31,7 +31,7 @@ const ProgressWrapper = styled.View`
   `}
 
   ${backgroundColor}
-  ${border}
+  ${borders}
   ${elevation}
   ${positions}
   ${display}

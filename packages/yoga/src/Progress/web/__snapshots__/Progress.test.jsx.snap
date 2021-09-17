@@ -1039,6 +1039,7 @@ exports[`<Progress /> should match snapshot with border prop system 1`] = `
   -ms-flex-align: flex-start;
   align-items: flex-start;
   border: 1px solid;
+  border-radius: 8px;
 }
 
 .c0 .c5 {

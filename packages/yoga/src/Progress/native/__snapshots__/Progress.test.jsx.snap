@@ -1315,6 +1315,7 @@ exports[`<Progress /> should match snapshot with border prop system 1`] = `
       Array [
         Object {
           "borderColor": "black",
+          "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 1,
           "flexDirection": "column",

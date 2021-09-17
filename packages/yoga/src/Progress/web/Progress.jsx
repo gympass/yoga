@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { string, number, shape, oneOfType, oneOf, bool } from 'prop-types';
 import {
   backgroundColor,
-  border,
+  borders,
   elevation,
   positions,
   display,
@@ -117,7 +117,7 @@ const Wrapper = styled.div`
   `}
 
   ${backgroundColor}
-  ${border}
+  ${borders}
   ${elevation}
   ${positions}
   ${display}
