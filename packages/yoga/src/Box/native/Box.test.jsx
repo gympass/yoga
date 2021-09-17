@@ -12,9 +12,8 @@ describe('<Box />', () => {
           p="small"
           borderRadius="small"
           color="feedback.success.dark"
-          as={Text}
         >
-          Making wellbeing universal
+          <Text>Making wellbeing universal</Text>
         </Box>
       </ThemeProvider>,
     );

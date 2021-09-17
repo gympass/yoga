@@ -16,6 +16,7 @@ const HelperWrapper = styled.View(
     width: ${full ? '100%' : `${input.width}px`};
     max-width: ${input.width}px;
     flex-direction: row;
+    justify-content: space-between;
 
     margin-top: ${input.helper.margin.top}px;
   `,
@@ -26,7 +27,6 @@ const Info = styled(Text.Regular)(
     disabled,
     focused,
     error,
-    right,
     theme: {
       yoga: {
         colors,
@@ -34,7 +34,6 @@ const Info = styled(Text.Regular)(
       },
     },
   }) => `
-    flex-shrink: ${right ? '0' : '1'};
     flex-wrap: wrap;
 
     color: ${input.helper.color.default};
@@ -43,7 +42,6 @@ const Info = styled(Text.Regular)(
     ${disabled ? `color: ${colors.text.disabled};` : ''}
     ${focused ? `color: ${input.helper.color.focus};` : ''}
     ${error ? `color: ${colors.feedback.attention.dark};` : ''}
-    ${right ? 'margin-left: auto;' : ''}
   `,
 );
 
@@ -64,7 +62,7 @@ const Helper = ({
       </Info>
     )}
     {!hideMaxLength && maxLength && (
-      <Info disabled={disabled} focused={focused} error={error} right>
+      <Info disabled={disabled} focused={focused} error={error}>
         {length}/{maxLength}
       </Info>
     )}

@@ -13,6 +13,10 @@ exports[`<Snackbar /> should match snapshot 1`] = `
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+  margin-right: 16px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .c1 {
@@ -33,13 +37,6 @@ exports[`<Snackbar /> should match snapshot 1`] = `
 }
 
 .c4 {
-  margin-right: 16px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-}
-
-.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -50,7 +47,7 @@ exports[`<Snackbar /> should match snapshot 1`] = `
   align-items: center;
 }
 
-.c5 svg {
+.c4 svg {
   margin-left: 16px;
   margin-right: 0;
 }
@@ -113,12 +110,12 @@ exports[`<Snackbar /> should match snapshot 1`] = `
       />
     </div>
     <p
-      class="c3 c4"
+      class="c3"
     >
       Make wellbeing universal
     </p>
     <aside
-      class="c5"
+      class="c4"
     />
   </div>
 </div>

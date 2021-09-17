@@ -5,6 +5,8 @@ import { bool, string, number } from 'prop-types';
 import Text from '../../Text';
 
 export const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
   ${({
     disabled,
     error,
@@ -15,7 +17,6 @@ export const Wrapper = styled.div`
       },
     },
   }) => `
-    display: flex;
     margin-top: ${input.helper.margin.top}px;
 
     color: ${error ? colors.feedback.attention[1] : input.helper.color.default};
@@ -24,8 +25,8 @@ export const Wrapper = styled.div`
 `;
 
 const Info = styled(Text.Small)`
+  color: currentColor;
   ${({
-    right,
     hideMaxLength,
     theme: {
       yoga: {
@@ -33,12 +34,9 @@ const Info = styled(Text.Small)`
       },
     },
   }) => `
-    color: currentColor;
     font-size: ${input.helper.font.size}px;
 
-    ${right ? 'margin-left: auto;' : ''}
     ${hideMaxLength ? 'display: none;' : ''}
-
     `}
 `;
 
@@ -53,7 +51,7 @@ const Helper = ({
   <Wrapper disabled={disabled} error={error}>
     {(error || helper) && <Info as="span">{error || helper}</Info>}
     {maxLength && !hideMaxLength && (
-      <Info as="span" right>
+      <Info as="span">
         {length}/{maxLength}
       </Info>
     )}
