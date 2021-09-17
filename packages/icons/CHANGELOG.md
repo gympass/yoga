@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.3.1...@gympass/yoga-icons@1.3.2) (2021-09-17)
+
+
+### Bug Fixes
+
+* **icons:** remove fill on svg and path ([4880121](https://github.com/Gympass/yoga/commit/48801219332b9f8a1d7377f4d233fcc8fb23272c))
+* **icons:** update icon close ([5e91bff](https://github.com/Gympass/yoga/commit/5e91bff63b09aaa0eee264a01589ab34c62d2eaa))
+
+
+
+
+
 ## [1.3.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.3.0...@gympass/yoga-icons@1.3.1) (2021-08-30)
 
 **Note:** Version bump only for package @gympass/yoga-icons
