@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { oneOf, bool, number } from 'prop-types';
+import { system } from '@gympass/yoga-system';
 import textStyle from '../textStyle.web';
 
 const styledText = (type, element = false) => (element
@@ -10,6 +11,7 @@ const styledText = (type, element = false) => (element
   padding: 0;
 
   ${textStyle(type)}
+  ${system}
 `;
 
 const H1 = styledText('h1', true);

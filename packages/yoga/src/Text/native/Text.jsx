@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { oneOf, bool } from 'prop-types';
+import { system } from '@gympass/yoga-system';
 import textStyle from '../textStyle';
 
 const styledText = type => styled.Text`
   ${textStyle(type)}
+  ${system}
 `;
 
 const H1 = styledText('h1');
