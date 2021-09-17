@@ -82,5 +82,101 @@ describe('<Text />', () => {
       );
       expect(container).toMatchSnapshot();
     });
+
+    it('should match snapshot with border prop system', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text border="small" bRadius="small">
+            Live the mission
+          </Text>
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with background color prop system', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text backgroundColor="vibin">Live the mission</Text>
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with elevation prop system', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text elevation="medium">Live the mission</Text>
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with spacing prop system', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text m="medium" paddingVertical="large" paddingHorizontal="small">
+            Live the mission
+          </Text>
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with typography prop system', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text
+            color="text.primary"
+            fontSize="small"
+            fontWeight="medium"
+            lineHeight="small"
+          >
+            Live the mission
+          </Text>
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with display prop system', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text display="inline-flex">Live the mission</Text>
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with position prop system', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text position="fixed" top="small" left="small">
+            Live the mission
+          </Text>
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with flexes prop system', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text display="flex" flexGrow={1}>
+            Live the mission
+          </Text>
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with overflows prop system', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text overflow="scroll">Live the mission</Text>
+        </ThemeProvider>,
+      );
+      expect(container).toMatchSnapshot();
+    });
   });
 });
