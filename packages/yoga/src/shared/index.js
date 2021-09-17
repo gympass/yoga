@@ -1,4 +1,10 @@
 import HiddenInput from './HiddenInput';
-import { limitChildren, typeOf, charLength, max } from './propTypes';
+import {
+  limitChildren,
+  typeOf,
+  charLength,
+  max,
+  deprecated,
+} from './propTypes';
 
-export { HiddenInput, limitChildren, typeOf, charLength, max };
+export { HiddenInput, limitChildren, typeOf, charLength, max, deprecated };
