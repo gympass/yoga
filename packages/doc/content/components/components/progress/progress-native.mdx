@@ -1,3 +1,5 @@
+import { Link as GatsbyLink } from 'gatsby';
+
 ### Usage
 
 ```javascript type=expo
@@ -17,6 +19,14 @@
   <Progress
     max={100}
     value={70}
+    label={{ value: 'With margin prop', placement: 'left' }}
+    variant="secondary"
+    mv="medium"
+  />
+
+  <Progress
+    max={100}
+    value={70}
     label={{ value: 'With variant', placement: 'left' }}
     variant="secondary"
   />
@@ -24,5 +34,15 @@
 ```
 
 ### Props
+
+<p>
+  The Progress component also has support for {''}
+
+  <GatsbyLink to="/system/backgroundColor">backgroundColor</GatsbyLink>, {''} 
+  <GatsbyLink to="/system/border">border</GatsbyLink>, {''}
+  <GatsbyLink to="/system/elevation">elevation</GatsbyLink>, {''}
+  <GatsbyLink to="/system/layout">layout</GatsbyLink>, 
+  and <GatsbyLink to="/system/spacing">spacing</GatsbyLink> props 
+</p>
 
 <PropsTable component="Progress" platform="native" />

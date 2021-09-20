@@ -1,6 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { string, number, shape, oneOfType, oneOf, bool } from 'prop-types';
+import {
+  backgroundColor,
+  borders,
+  elevation,
+  positions,
+  display,
+  spacing as systemSpacing,
+} from '@gympass/yoga-system';
 
 import { charLength } from '../../shared';
 
@@ -107,6 +115,13 @@ const Wrapper = styled.div`
       }
       ${isNumber && align === 'left' ? 'flex-direction: row-reverse;' : ''}
   `}
+
+  ${backgroundColor}
+  ${borders}
+  ${elevation}
+  ${positions}
+  ${display}
+  ${systemSpacing}
 `;
 
 Wrapper.propTypes = {

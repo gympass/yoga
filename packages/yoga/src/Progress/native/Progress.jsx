@@ -1,6 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { string, number, shape, oneOfType, oneOf } from 'prop-types';
+import {
+  backgroundColor,
+  borders,
+  elevation,
+  positions,
+  display,
+  spacing as systemSpacing,
+} from '@gympass/yoga-system';
 
 import { charLength } from '../../shared';
 
@@ -21,7 +29,15 @@ const ProgressWrapper = styled.View`
 
   ${isNumber && align === 'left' ? 'flex-direction: row-reverse;' : ''}
   `}
+
+  ${backgroundColor}
+  ${borders}
+  ${elevation}
+  ${positions}
+  ${display}
+  ${systemSpacing}
 `;
+
 const ProgressBar = styled.View`
   position: relative;
   flex-grow: 1;
