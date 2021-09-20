@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.15.1...@gympass/yoga@7.16.0) (2021-09-20)
+
+
+### Features
+
+* **progress:** add system props to progress ([cd89c57](https://github.com/Gympass/yoga/commit/cd89c5753f332f716c0897fbce4654b59ba424e8))
+
+
+
+
+
 ## [7.15.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.15.0...@gympass/yoga@7.15.1) (2021-09-17)
 
 **Note:** Version bump only for package @gympass/yoga
