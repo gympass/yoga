@@ -596,6 +596,10 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 4px;
   color: #FF874C;
 }

@@ -466,6 +466,10 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 4px;
   color: #FF874C;
 }
@@ -871,6 +875,10 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 4px;
   color: #6B6B78;
 }
@@ -885,19 +893,6 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   color: #231B22;
   color: currentColor;
   font-size: 12px;
-}
-
-.c8 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  color: currentColor;
-  font-size: 12px;
-  margin-left: auto;
 }
 
 .c1 {
@@ -1011,7 +1006,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
         Helper text
       </span>
       <span
-        class="c8"
+        class="c7"
       >
         0
         /
@@ -1109,6 +1104,10 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 4px;
   color: #6B6B78;
 }

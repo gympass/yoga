@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { oneOf, bool, number } from 'prop-types';
+import { system } from '@gympass/yoga-system';
 import textStyle from '../textStyle.web';
+import { deprecated } from '../../shared';
 
 const styledText = (type, element = false) => (element
   ? styled[type]
@@ -10,6 +12,7 @@ const styledText = (type, element = false) => (element
   padding: 0;
 
   ${textStyle(type)}
+  ${system}
 `;
 
 const H1 = styledText('h1', true);
@@ -62,25 +65,28 @@ Text.displayName = 'Text';
 Text.propTypes = {
   inverted: bool,
   numberOfLines: number,
-  /** style the text following the theme */
-  variant: oneOf([
-    'primary',
-    'secondary',
-    'vibin',
-    'hope',
-    'energy',
-    'relax',
-    'peace',
-    'verve',
-    'uplift',
-    'deepPurple',
-    'stamina',
-    'deep',
-    'medium',
-    'light',
-    'clear',
-    'white',
-  ]),
+  /** (deprecated: use color instead) style the text following the theme */
+  variant: deprecated(
+    oneOf([
+      'primary',
+      'secondary',
+      'vibin',
+      'hope',
+      'energy',
+      'relax',
+      'peace',
+      'verve',
+      'uplift',
+      'deepPurple',
+      'stamina',
+      'deep',
+      'medium',
+      'light',
+      'clear',
+      'white',
+    ]),
+    'Use `color` system prop instead',
+  ),
   /** set the font-size following the theme */
   size: oneOf([
     'xxsmall',

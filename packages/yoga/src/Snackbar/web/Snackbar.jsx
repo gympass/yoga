@@ -142,9 +142,9 @@ const Snackbar = ({
           </Box>
         )}
 
-        <Box as={Text.Small} flex={1} mr="small" numberOfLines={2}>
+        <Text.Small flex={1} mr="small" numberOfLines={2}>
           {message}
-        </Box>
+        </Text.Small>
 
         <ActionsWrapper>
           {onAction && actionLabel && (
