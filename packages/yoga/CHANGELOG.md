@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.17.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.16.0...@gympass/yoga@7.17.0) (2021-09-21)
+
+
+### Features
+
+* **prop-types:** add deprecated prop type validation ([e5b157b](https://github.com/Gympass/yoga/commit/e5b157b491902ff5492dc94750c1e9d1ef54300e))
+* **text:** add system props to text component ([35c5cef](https://github.com/Gympass/yoga/commit/35c5cef98a2831028347609872dbfa47e90b30ac))
+
+
+
+
+
 # [7.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.15.1...@gympass/yoga@7.16.0) (2021-09-20)
 
 
