@@ -5,6 +5,8 @@ metaDescription: 'Making our decisions available to all components'
 order: 1
 ---
 
+import { Link as GatsbyLink } from 'gatsby';
+
 ## ThemeProvider
 
 ### Reference
@@ -13,6 +15,8 @@ ThemeProvider component extends from styled-component `ThemeProvider`, you can
 check it out [here.](https://www.styled-components.com/docs/advanced#theming)
 Our component adds some extra features to `ThemeProvider` like global and
 specific locale design-tokens merge.
+
+ThemeProvider accepts a property for theming with use of our <GatsbyLink to='/components/theming/themeGenerator'>theme generator</GatsbyLink>.
 
 ### Usage
 
