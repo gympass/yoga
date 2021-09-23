@@ -1,7 +1,26 @@
 /* eslint-disable prefer-destructuring */
+import { merge } from '@gympass/yoga-common';
 import * as componentThemes from '../../**/*.theme.js';
 
-const theme = tokens => {
+const getComponentThemes = tokens => {
+  const { colors, baseFont, baseFontSize } = tokens;
+  const components = {};
+
+  Object.entries(componentThemes).forEach(([names, themed]) => {
+    const [, name] = names.split('$');
+
+    components[name.toLowerCase()] = themed({
+      ...tokens,
+      colors,
+      baseFont,
+      baseFontSize,
+    });
+  });
+
+  return { components };
+};
+
+const theme = (tokens, includeComponents) => {
   const baseFont = tokens.fonts.rubik;
   const baseFontSize = tokens.fontSizes.medium;
 
@@ -39,26 +58,29 @@ const theme = tokens => {
     colors.feedback.attention.dark,
   ] = colors.feedback.attention;
 
-  const components = {};
-
-  Object.entries(componentThemes).forEach(([names, themed]) => {
-    const [, name] = names.split('$');
-
-    components[name.toLowerCase()] = themed({
-      ...tokens,
-      colors,
-      baseFont,
-      baseFontSize,
-    });
-  });
+  const components = includeComponents
+    ? getComponentThemes({ ...tokens, colors, baseFont, baseFontSize })
+    : null;
 
   return {
     ...tokens,
-    components,
+    ...(components && components),
     colors,
     baseFont,
     baseFontSize,
   };
 };
 
-export default theme;
+const composeTheme = (tokens, customTheming = null) => {
+  const includeComponents = !customTheming;
+  const baseTheme = theme(tokens, includeComponents);
+
+  if (includeComponents) return baseTheme;
+
+  const customTheme = merge(baseTheme, customTheming);
+  const componentTheming = getComponentThemes({ ...customTheme });
+
+  return merge(customTheme, componentTheming);
+};
+
+export default composeTheme;
