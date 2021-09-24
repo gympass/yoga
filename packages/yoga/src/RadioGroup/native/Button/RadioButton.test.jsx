@@ -14,6 +14,7 @@ describe('<RadioGroup />', () => {
             <RadioGroup.Button>Radio 1</RadioGroup.Button>
           </ThemeProvider>,
         );
+
         expect(toJSON(container)).toMatchSnapshot();
       });
 
@@ -25,6 +26,7 @@ describe('<RadioGroup />', () => {
             </ThemeProvider>
           </RadioGroupContext.Provider>,
         );
+
         expect(toJSON(container)).toMatchSnapshot();
       });
     });

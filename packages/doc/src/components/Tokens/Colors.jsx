@@ -33,6 +33,7 @@ const Color = styled.div`
 const SubColors = ({ token }) => {
   const valueType = typeof token.value === 'string';
   const values = valueType ? [token.value] : token.value;
+
   return values.map((subcolor, index) => (
     <Color key={subcolor} color={subcolor}>
       <Tag light>{valueType ? token.alias : `${token.alias}[${index}]`}</Tag>

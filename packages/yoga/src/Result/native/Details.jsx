@@ -56,6 +56,7 @@ const ResultDetails = ({
             const isLastItem = index === refinedList.length - 1;
             const showNumbersOfItemsLeft =
               isLastItem && limit !== 0 && limit < items.length - 1;
+
             return (
               // eslint-disable-next-line react/no-array-index-key
               <React.Fragment key={index}>

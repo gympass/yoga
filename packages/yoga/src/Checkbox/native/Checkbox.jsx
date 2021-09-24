@@ -176,6 +176,7 @@ const Checkbox = ({
   ...rest
 }) => {
   const [pressed, setPressed] = useState(false);
+
   return (
     <View>
       <TouchableWithoutFeedback

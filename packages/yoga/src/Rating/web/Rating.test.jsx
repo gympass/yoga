@@ -33,6 +33,7 @@ describe('<Rating />', () => {
           <Rating />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -61,6 +62,7 @@ describe('<Rating />', () => {
           <Rating value={4.5} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -76,6 +78,7 @@ describe('<Rating />', () => {
           <Rating max={3} value={3} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -93,6 +96,7 @@ describe('<Rating />', () => {
           <Rating icon={{ type: Circle }} value={2} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 

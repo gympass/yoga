@@ -9,6 +9,7 @@ describe('Web and iOS', () => {
       : 'none';
 
   const elevations = [0, 1, 2].map(shadow);
+
   [elevations.zero, elevations.small, elevations.medium] = elevations;
 
   const theme = {
@@ -37,9 +38,11 @@ describe('Web and iOS', () => {
       expect(small2).toStrictEqual(small3);
 
       const zeroOptions = [zero1, zero2, zero3];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroElevation));
 
       const smallOptions = [small1, small2, small3];
+
       smallOptions.map(s => expect(s).toStrictEqual(expectedSmallElevation));
     });
 
@@ -47,6 +50,7 @@ describe('Web and iOS', () => {
       const expectedNoTheme = css({ boxShadow: '0 2px 2px black' });
 
       const bs = elevation({ theme, boxShadow: '0 2px 2px black' });
+
       expect(bs).toStrictEqual(expectedNoTheme);
     });
   });
@@ -54,6 +58,7 @@ describe('Web and iOS', () => {
 
 describe('Android', () => {
   const elevations = ['0', '1', '2'];
+
   [elevations.zero, elevations.small, elevations.medium] = elevations;
 
   const theme = {
@@ -82,9 +87,11 @@ describe('Android', () => {
       expect(small2).toStrictEqual(small3);
 
       const zeroOptions = [zero1, zero2, zero3];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroElevation));
 
       const smallOptions = [small1, small2, small3];
+
       smallOptions.map(s => expect(s).toStrictEqual(expectedSmallElevation));
     });
 
@@ -92,6 +99,7 @@ describe('Android', () => {
       const expectedNoTheme = css({ elevation: '20' });
 
       const ae = androidElevation({ theme, boxShadow: '20' });
+
       expect(ae).toStrictEqual(expectedNoTheme);
     });
   });

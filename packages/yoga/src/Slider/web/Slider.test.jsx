@@ -12,6 +12,7 @@ describe('<Slider />', () => {
             <Slider />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -21,6 +22,7 @@ describe('<Slider />', () => {
             <Slider minLabel={0} maxLabel={10} />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -30,6 +32,7 @@ describe('<Slider />', () => {
             <Slider snapped />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
     });
@@ -40,6 +43,7 @@ describe('<Slider />', () => {
             <Slider values={[3, 7]} />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -49,6 +53,7 @@ describe('<Slider />', () => {
             <Slider values={[3, 7]} snapped />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
     });
@@ -61,6 +66,7 @@ describe('<Slider />', () => {
           <Slider maxLabel="max" minLabel="min" />
         </ThemeProvider>,
       );
+
       expect(getByText('max').textContent).toBe('max');
       expect(getByText('min').textContent).toBe('min');
     });

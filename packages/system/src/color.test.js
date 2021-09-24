@@ -30,6 +30,7 @@ describe('backgroundColor', () => {
     expect(bgColor).toStrictEqual(backGroundColor);
 
     const bgOptions = [bg, bgColor, backGroundColor];
+
     bgOptions.map(c => expect(c).toStrictEqual(expectedColor));
   });
 
@@ -48,6 +49,7 @@ describe('backgroundColor', () => {
     const expectedNoTheme = css({ backgroundColor: 'tomato' });
 
     const bg = backgroundColor({ theme, backgroundColor: 'tomato' });
+
     expect(bg).toStrictEqual(expectedNoTheme);
   });
 });

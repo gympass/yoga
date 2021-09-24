@@ -35,6 +35,7 @@ const createTree = items => {
       order,
       collapsed,
     });
+
     allRoutes = merge(routeObj, allRoutes);
   });
 

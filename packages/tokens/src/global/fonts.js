@@ -25,6 +25,7 @@ const fonts = [
     weight: [...weights, ...weights.map(weight => `${weight}i`)],
   },
 ];
+
 [fonts.rubik] = fonts;
 
 export default fonts;

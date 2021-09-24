@@ -22,6 +22,7 @@ import {
 } from './spacing';
 
 const spacings = [0, 4, 8, 12];
+
 [spacings.zero, spacings.small, spacings.medium, spacings.large] = spacings;
 
 const theme = {
@@ -53,9 +54,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -66,6 +69,7 @@ describe('spacings', () => {
       });
 
       const s = spacing({ theme, p: 20, m: 20 });
+
       expect(s).toStrictEqual(expectedNoTheme);
     });
   });
@@ -90,9 +94,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -102,6 +108,7 @@ describe('spacings', () => {
       });
 
       const m = margin({ theme, m: 20 });
+
       expect(m).toStrictEqual(expectedNoTheme);
     });
   });
@@ -126,9 +133,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -138,6 +147,7 @@ describe('spacings', () => {
       });
 
       const mt = marginTop({ theme, mt: 20 });
+
       expect(mt).toStrictEqual(expectedNoTheme);
     });
   });
@@ -162,9 +172,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -174,6 +186,7 @@ describe('spacings', () => {
       });
 
       const mr = marginRight({ theme, mr: 20 });
+
       expect(mr).toStrictEqual(expectedNoTheme);
     });
   });
@@ -198,9 +211,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -210,6 +225,7 @@ describe('spacings', () => {
       });
 
       const mb = marginBottom({ theme, mb: 20 });
+
       expect(mb).toStrictEqual(expectedNoTheme);
     });
   });
@@ -234,9 +250,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -246,6 +264,7 @@ describe('spacings', () => {
       });
 
       const ml = marginLeft({ theme, ml: 20 });
+
       expect(ml).toStrictEqual(expectedNoTheme);
     });
   });
@@ -276,9 +295,11 @@ describe('spacings', () => {
       expect(medium2).toStrictEqual(medium3);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -289,6 +310,7 @@ describe('spacings', () => {
       });
 
       const mh = marginHorizontal({ theme, mh: 20 });
+
       expect(mh).toStrictEqual(expectedNoTheme);
     });
   });
@@ -319,9 +341,11 @@ describe('spacings', () => {
       expect(medium2).toStrictEqual(medium3);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -332,6 +356,7 @@ describe('spacings', () => {
       });
 
       const mv = marginVertical({ theme, mv: 20 });
+
       expect(mv).toStrictEqual(expectedNoTheme);
     });
   });
@@ -375,9 +400,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -387,6 +414,7 @@ describe('spacings', () => {
       });
 
       const p = padding({ theme, p: 20 });
+
       expect(p).toStrictEqual(expectedNoTheme);
     });
   });
@@ -411,9 +439,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -423,6 +453,7 @@ describe('spacings', () => {
       });
 
       const pt = paddingTop({ theme, pt: 20 });
+
       expect(pt).toStrictEqual(expectedNoTheme);
     });
   });
@@ -447,9 +478,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -459,6 +492,7 @@ describe('spacings', () => {
       });
 
       const pr = paddingRight({ theme, pr: 20 });
+
       expect(pr).toStrictEqual(expectedNoTheme);
     });
   });
@@ -483,9 +517,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -495,6 +531,7 @@ describe('spacings', () => {
       });
 
       const pb = paddingBottom({ theme, pb: 20 });
+
       expect(pb).toStrictEqual(expectedNoTheme);
     });
   });
@@ -519,9 +556,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -531,6 +570,7 @@ describe('spacings', () => {
       });
 
       const pl = paddingLeft({ theme, pl: 20 });
+
       expect(pl).toStrictEqual(expectedNoTheme);
     });
   });
@@ -561,9 +601,11 @@ describe('spacings', () => {
       expect(medium2).toStrictEqual(medium3);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -574,6 +616,7 @@ describe('spacings', () => {
       });
 
       const ph = paddingHorizontal({ theme, ph: 20 });
+
       expect(ph).toStrictEqual(expectedNoTheme);
     });
   });
@@ -604,9 +647,11 @@ describe('spacings', () => {
       expect(medium2).toStrictEqual(medium3);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -617,6 +662,7 @@ describe('spacings', () => {
       });
 
       const pv = paddingVertical({ theme, pv: 20 });
+
       expect(pv).toStrictEqual(expectedNoTheme);
     });
   });
@@ -660,9 +706,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -672,6 +720,7 @@ describe('spacings', () => {
       });
 
       const pv = width({ theme, w: 20 });
+
       expect(pv).toStrictEqual(expectedNoTheme);
     });
   });
@@ -696,9 +745,11 @@ describe('spacings', () => {
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
@@ -708,6 +759,7 @@ describe('spacings', () => {
       });
 
       const pv = height({ theme, h: 20 });
+
       expect(pv).toStrictEqual(expectedNoTheme);
     });
   });

@@ -28,6 +28,7 @@ describe('<Checkbox />', () => {
           <Checkbox />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -37,6 +38,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -46,6 +48,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} disabled />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -55,6 +58,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} checked />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -64,6 +68,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} disabled checked />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -73,6 +78,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} error="Error msg" />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -82,6 +88,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} error="Error msg" checked />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -91,6 +98,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} inverted />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -100,6 +108,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} inverted checked />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -109,6 +118,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} inverted checked disabled />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
   });
@@ -121,6 +131,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} onChange={onChangeMock} />
         </ThemeProvider>,
       );
+
       fireEvent.click(getByRole('checkbox', { hidden: true }));
       expect(onChangeMock).toHaveBeenCalled();
     });

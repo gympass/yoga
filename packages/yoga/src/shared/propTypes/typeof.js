@@ -7,6 +7,7 @@ const typeOf = ({ displayName: childType }) => (
 ) => {
   let error;
   const prop = props[propName];
+
   React.Children.forEach(prop, child => {
     if (child.type.displayName !== childType) {
       error = new Error(

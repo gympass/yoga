@@ -40,6 +40,7 @@ const Options = ({
   },
 }) => {
   const [selected, setSelected] = useState(selectedOption);
+
   return (
     <>
       <PickerStyled

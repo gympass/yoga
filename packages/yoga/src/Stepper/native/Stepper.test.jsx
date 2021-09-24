@@ -22,6 +22,7 @@ describe('<Stepper />', () => {
           </Stepper>
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -41,6 +42,7 @@ describe('<Stepper />', () => {
           </Stepper>
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
   });

@@ -13,6 +13,7 @@ describe('<Hide />', () => {
           </Hide>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -24,6 +25,7 @@ describe('<Hide />', () => {
           </Hide>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
   });

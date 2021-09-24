@@ -9,6 +9,7 @@ const getKeys = (tokensModule, values) => {
     const keys = tokens.filter(([, v]) => v === value);
     const key = keys.length > 1 ? keys[1][0] : keys[0][0];
     const isAlias = key !== index.toString();
+
     return { type: isAlias ? 'alias' : 'position', position: index, key };
   });
 };

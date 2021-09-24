@@ -14,6 +14,7 @@ describe('<RadioGroup />', () => {
             <RadioGroup.Radio />
           </ThemeProvider>,
         );
+
         expect(toJSON(container)).toMatchSnapshot();
       });
 
@@ -23,6 +24,7 @@ describe('<RadioGroup />', () => {
             <RadioGroup.Radio disabled />
           </ThemeProvider>,
         );
+
         expect(toJSON(container)).toMatchSnapshot();
       });
 
@@ -32,6 +34,7 @@ describe('<RadioGroup />', () => {
             <RadioGroup.Radio />
           </ThemeProvider>,
         );
+
         expect(toJSON(container)).toMatchSnapshot();
       });
 

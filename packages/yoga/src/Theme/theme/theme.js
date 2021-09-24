@@ -40,8 +40,10 @@ const theme = tokens => {
   ] = colors.feedback.attention;
 
   const components = {};
+
   Object.entries(componentThemes).forEach(([names, themed]) => {
     const [, name] = names.split('$');
+
     components[name.toLowerCase()] = themed({
       ...tokens,
       colors,

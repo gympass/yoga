@@ -16,50 +16,65 @@ const styledText = (type, element = false) => (element
 `;
 
 const H1 = styledText('h1', true);
+
 H1.displayName = 'Text.H1';
 
 const H2 = styledText('h2', true);
+
 H2.displayName = 'Text.H2';
 
 const H3 = styledText('h3', true);
+
 H3.displayName = 'Text.H3';
 
 const H4 = styledText('h4', true);
+
 H4.displayName = 'Text.H4';
 
 const H5 = styledText('h5', true);
+
 H5.displayName = 'Text.H5';
 
 const Small = styledText('small');
+
 Small.displayName = 'Text.Small';
 
 const Tiny = styledText('tiny');
+
 Tiny.displayName = 'Text.Tiny';
 
 const Light = styledText('light');
+
 Light.displayName = 'Text.Light';
 
 const Regular = styledText('regular');
+
 Regular.displayName = 'Text.Regular';
 
 const Medium = styledText('medium');
+
 Medium.displayName = 'Text.Medium';
 
 const Bold = styledText('bold');
+
 Bold.displayName = 'Text.Bold';
 
 const Black = styledText('black');
+
 Black.displayName = 'Text.Black';
 
 const SectionTitle = styledText('sectionTitle');
+
 SectionTitle.displayName = 'Text.SectionTitle';
 
 const SmallestException = styledText('smallestException');
+
 SmallestException.displayName = 'Text.SmallestException';
 
 const TextRenderer = styledText('p');
 
 const Text = props => <TextRenderer {...props} />;
+
 Text.displayName = 'Text';
 
 Text.propTypes = {

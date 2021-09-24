@@ -16,6 +16,7 @@ describe('<RadioGroup />', () => {
           </RadioGroup>
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
       expect(getAllByText(/^Option/)).toHaveLength(3);
     });
@@ -30,6 +31,7 @@ describe('<RadioGroup />', () => {
           </RadioGroup>
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -43,6 +45,7 @@ describe('<RadioGroup />', () => {
           </RadioGroup>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
       expect(getByText('Option 2').props.checked).toBe(true);
     });

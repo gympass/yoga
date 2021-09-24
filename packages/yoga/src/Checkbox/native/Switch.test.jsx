@@ -15,6 +15,7 @@ describe('<Checkbox />', () => {
             <Checkbox.Switch />
           </ThemeProvider>,
         );
+
         expect(toJSON(container)).toMatchSnapshot();
       });
 
@@ -24,6 +25,7 @@ describe('<Checkbox />', () => {
             <Checkbox.Switch disabled />
           </ThemeProvider>,
         );
+
         expect(toJSON(container)).toMatchSnapshot();
       });
 
@@ -33,6 +35,7 @@ describe('<Checkbox />', () => {
             <Checkbox.Switch checked />
           </ThemeProvider>,
         );
+
         expect(toJSON(container)).toMatchSnapshot();
       });
 
@@ -42,6 +45,7 @@ describe('<Checkbox />', () => {
             <Checkbox.Switch disabled checked />
           </ThemeProvider>,
         );
+
         expect(toJSON(container)).toMatchSnapshot();
       });
 

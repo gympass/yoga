@@ -10,12 +10,15 @@ import {
 import { fontWeight as fontWeightAndroid } from './fontWeight.android';
 
 const fontSizes = [10, 20, 40];
+
 [fontSizes.small, fontSizes.medium, fontSizes.large] = fontSizes;
 
 const lineHeights = [12, 16, 20];
+
 [lineHeights.small, lineHeights.medium, lineHeights.large] = lineHeights;
 
 const fontWeights = [300, 500, 900];
+
 [fontWeights.light, fontWeights.medium, fontWeights.bold] = fontWeights;
 
 const baseFont = {
@@ -66,6 +69,7 @@ describe('Web and iOS', () => {
         const expectedNoTheme = css({ color: 'tomato' });
 
         const font = typography({ theme, color: 'tomato' });
+
         expect(font).toStrictEqual(expectedNoTheme);
       });
     });
@@ -80,6 +84,7 @@ describe('Web and iOS', () => {
         expect(fs1).toStrictEqual(fs2);
 
         const fontSizesOptions = [fs1, fs2];
+
         fontSizesOptions.map(c => expect(c).toStrictEqual(expectedFontSize));
       });
 
@@ -87,6 +92,7 @@ describe('Web and iOS', () => {
         const expectedNoTheme = css({ fontSize: 72 });
 
         const fs = fontSize({ theme, fs: 72 });
+
         expect(fs).toStrictEqual(expectedNoTheme);
       });
     });
@@ -101,6 +107,7 @@ describe('Web and iOS', () => {
         expect(fw1).toStrictEqual(fw2);
 
         const fontWeightsOptions = [fw1, fw2];
+
         fontWeightsOptions.map(c =>
           expect(c).toStrictEqual(expectedFontWeight),
         );
@@ -110,6 +117,7 @@ describe('Web and iOS', () => {
         const expectedNoTheme = css({ fontWeight: 600 });
 
         const fw = fontWeight({ theme, fw: 600 });
+
         expect(fw).toStrictEqual(expectedNoTheme);
       });
     });
@@ -126,6 +134,7 @@ describe('Web and iOS', () => {
         expect(lh1).toStrictEqual(lh2);
 
         const lineHeightsOptions = [lh1, lh2];
+
         lineHeightsOptions.map(c =>
           expect(c).toStrictEqual(expectedLineHeight),
         );
@@ -135,6 +144,7 @@ describe('Web and iOS', () => {
         const expectedNoTheme = css({ lineHeight: '5px' });
 
         const lh = lineHeight({ theme, lh: 5 });
+
         expect(lh).toStrictEqual(expectedNoTheme);
       });
     });
@@ -149,6 +159,7 @@ describe('Web and iOS', () => {
         expect(c1).toStrictEqual(c2);
 
         const colorOptions = [c1, c2];
+
         colorOptions.map(c => expect(c).toStrictEqual(expectedColor));
       });
 
@@ -164,6 +175,7 @@ describe('Web and iOS', () => {
         const expectedNoTheme = css({ color: 'tomato' });
 
         const c = color({ theme, color: 'tomato' });
+
         expect(c).toStrictEqual(expectedNoTheme);
       });
     });
@@ -194,6 +206,7 @@ describe('Android', () => {
         expect(fw1).toStrictEqual(fw2);
 
         const fontWeightsOptions = [fw1, fw2];
+
         fontWeightsOptions.map(c =>
           expect(c).toStrictEqual(expectedFontFamily),
         );
@@ -205,6 +218,7 @@ describe('Android', () => {
         });
 
         const fw = fontWeightAndroid({ theme, fw: 200 });
+
         expect(fw).toStrictEqual(expectedNoTheme);
       });
     });

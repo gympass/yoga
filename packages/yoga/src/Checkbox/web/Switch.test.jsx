@@ -13,6 +13,7 @@ describe('<Checkbox />', () => {
             <Checkbox.Switch />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -22,6 +23,7 @@ describe('<Checkbox />', () => {
             <Checkbox.Switch disabled />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -31,6 +33,7 @@ describe('<Checkbox />', () => {
             <Checkbox.Switch checked />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -40,6 +43,7 @@ describe('<Checkbox />', () => {
             <Checkbox.Switch disabled checked />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 

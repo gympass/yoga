@@ -6,6 +6,7 @@ import yogaTheme from '../theme';
 
 const getTheme = ({ locale }) => {
   const token = tokens[locale] || tokens.default;
+
   return yogaTheme(token);
 };
 

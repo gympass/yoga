@@ -15,6 +15,7 @@ describe('<Stepper />', () => {
           </Stepper>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -28,6 +29,7 @@ describe('<Stepper />', () => {
           </Stepper>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
   });
