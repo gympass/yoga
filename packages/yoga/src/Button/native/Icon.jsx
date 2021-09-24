@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { node, oneOfType, func, bool } from 'prop-types';
-import { Icon } from '@gympass/yoga';
+import Icon from '../../Icon';
 
 const ButtonContainer = styled.View`
   ${({
