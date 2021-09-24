@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.1.0...@gympass/yoga-tokens@3.1.1) (2021-09-24)
+
+**Note:** Version bump only for package @gympass/yoga-tokens
+
+
+
+
+
 # [3.1.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.0.1...@gympass/yoga-tokens@3.1.0) (2021-08-25)
 
 
