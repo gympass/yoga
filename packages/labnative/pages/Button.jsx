@@ -27,6 +27,18 @@ const ButtonPage = () => (
     }}
   >
     <Wrapper style={{ height: 360 }}>
+      <DocTitle>Icon Buttons</DocTitle>
+      <Button.Icon icon={Booking} />
+      <Button.Icon icon={Booking} large />
+
+      <Button.Icon icon={Booking} secondary />
+      <Button.Icon icon={Booking} secondary large />
+
+      <Button.Icon icon={Booking} inverted large />
+      <Button.Icon icon={Booking} disabled large />
+    </Wrapper>
+
+    <Wrapper style={{ height: 360 }}>
       <DocTitle>Small Buttons</DocTitle>
       <Button small>Primary contained</Button>
       <Button icon={Booking} small>
