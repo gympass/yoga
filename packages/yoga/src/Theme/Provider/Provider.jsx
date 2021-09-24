@@ -15,9 +15,8 @@ import yogaTheme from '../theme';
 const getTheme = ({ locale, theme }) => {
   const token = tokens[locale] || tokens.default;
   const defaultTheme = yogaTheme(token);
-  const customTheme = theme ? yogaTheme(defaultTheme, theme(token)) : null;
 
-  return customTheme || defaultTheme;
+  return theme ? yogaTheme(defaultTheme, theme(token)) : yogaTheme(token);
 };
 
 /** This component provides a theme to all React components underneath itself via the context API. */

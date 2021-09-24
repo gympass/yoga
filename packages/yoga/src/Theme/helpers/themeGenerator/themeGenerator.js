@@ -9,7 +9,9 @@ function createTheme(themeVars) {
       `Invalid param 'themeVars', expected 'string', received '${typeof themeVars}'.`,
     );
 
-  return themeVars;
+  const themeBuilder = { ...themeVars, isFromThemeGenerator: true };
+
+  return themeBuilder;
 }
 
 /**
