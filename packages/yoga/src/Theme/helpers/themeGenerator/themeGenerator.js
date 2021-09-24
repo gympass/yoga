@@ -8,6 +8,7 @@ function createTheme(themeVars) {
     throw new TypeError(
       `Invalid param 'themeVars', expected 'string', received '${typeof themeVars}'.`,
     );
+
   return themeVars;
 }
 
