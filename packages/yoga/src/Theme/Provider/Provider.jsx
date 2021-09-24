@@ -7,7 +7,7 @@ import yogaTheme from '../theme';
 /**
  * Gets resolved theme to inject in Yoga
  *
- * @param {{locale: string, theme: function}} themeParameters themeParameters information about the theme
+ * @param {{locale: string, theme: function}} themeParameters information about the theme
  * @param {string} themeParameters.locale custom locale to get colors from (if it has a different scheme)
  * @param {function} themeParameters.theme returns a custom theme object to replace existing tokens
  * @returns {Object.<string, string | number>} theme object with tokens sent to styled-components' <ThemeProvider />
