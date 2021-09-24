@@ -20,7 +20,7 @@ const getComponentThemes = tokens => {
   return { components };
 };
 
-const theme = (tokens, includeComponents) => {
+const theme = tokens => {
   const baseFont = tokens.fonts.rubik;
   const baseFontSize = tokens.fontSizes.medium;
 
@@ -58,27 +58,18 @@ const theme = (tokens, includeComponents) => {
     colors.feedback.attention.dark,
   ] = colors.feedback.attention;
 
-  const components = includeComponents
-    ? getComponentThemes({ ...tokens, colors, baseFont, baseFontSize })
-    : null;
-
   return {
     ...tokens,
-    ...(components && components),
     colors,
     baseFont,
     baseFontSize,
   };
 };
 
-const composeTheme = (tokens, customTheming = null) => {
-  const includeComponents = !customTheming;
-  const baseTheme = theme(tokens, includeComponents);
-
-  if (includeComponents) return baseTheme;
-
+const composeTheme = (tokens, customTheming = {}) => {
+  const baseTheme = theme(tokens);
   const customTheme = merge(baseTheme, customTheming);
-  const componentTheming = getComponentThemes({ ...customTheme });
+  const componentTheming = getComponentThemes(customTheme);
 
   return merge(customTheme, componentTheming);
 };
