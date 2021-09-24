@@ -49,9 +49,11 @@ describe('<PlanCard />', () => {
         </PlanCard>
       </ThemeProvider>,
     );
+
   describe('Events', () => {
     it('should call onClick when ListItem has a button', () => {
       const { getByText } = renderPlan();
+
       fireEvent.click(getByText('button'));
 
       expect(buttonOnClickMock).toHaveBeenCalled();
@@ -61,6 +63,7 @@ describe('<PlanCard />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with default PlanCard', () => {
       const { container: planCard } = renderPlan();
+
       expect(planCard).toMatchSnapshot();
     });
 

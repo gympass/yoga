@@ -11,6 +11,7 @@ describe('<Row />', () => {
           <Row />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
   });

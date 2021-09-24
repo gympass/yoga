@@ -10,6 +10,7 @@ import {
 } from './layout';
 
 const spacings = [0, 4, 8, 12];
+
 [spacings.zero, spacings.small, spacings.medium, spacings.large] = spacings;
 
 const theme = {
@@ -29,6 +30,7 @@ describe('layout', () => {
       expect(b).toStrictEqual(block);
 
       const bgOptions = [b, block];
+
       bgOptions.map(c => expect(c).toStrictEqual(expectedDisplay));
     });
   });
@@ -56,6 +58,7 @@ describe('layout', () => {
         const expectedPosition = css({ position: 'absolute' });
 
         const p = position({ position: 'absolute' });
+
         expect(p).toStrictEqual(expectedPosition);
       });
     });
@@ -83,6 +86,7 @@ describe('layout', () => {
         });
 
         const t = top({ theme, top: '50%' });
+
         expect(t).toStrictEqual(expectedNoTheme);
       });
     });
@@ -110,6 +114,7 @@ describe('layout', () => {
         });
 
         const r = right({ theme, right: '50%' });
+
         expect(r).toStrictEqual(expectedNoTheme);
       });
     });
@@ -137,6 +142,7 @@ describe('layout', () => {
         });
 
         const b = bottom({ theme, bottom: '50%' });
+
         expect(b).toStrictEqual(expectedNoTheme);
       });
     });
@@ -164,6 +170,7 @@ describe('layout', () => {
         });
 
         const l = left({ theme, left: '50%' });
+
         expect(l).toStrictEqual(expectedNoTheme);
       });
     });

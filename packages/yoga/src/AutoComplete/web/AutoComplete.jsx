@@ -160,6 +160,7 @@ const AutoComplete = ({
       selectedItem={userValue}
       onStateChange={changes => {
         const { selectedItem, inputValue } = changes;
+
         if (selectedItem) {
           setUserValue(selectedItem);
           onSelect(selectedItem);

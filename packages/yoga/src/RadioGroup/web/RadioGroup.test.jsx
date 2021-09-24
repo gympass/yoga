@@ -12,6 +12,7 @@ describe('<RadioGroup />', () => {
           <RadioGroup />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -21,6 +22,7 @@ describe('<RadioGroup />', () => {
           <RadioGroup full />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -34,6 +36,7 @@ describe('<RadioGroup />', () => {
           </RadioGroup>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
       expect(getAllByText(/^Option/)).toHaveLength(3);
     });
@@ -48,6 +51,7 @@ describe('<RadioGroup />', () => {
           </RadioGroup>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -61,6 +65,7 @@ describe('<RadioGroup />', () => {
           </RadioGroup>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
       expect(getByText('Option 2').checked).toBe(true);
     });
@@ -83,6 +88,7 @@ describe('<RadioGroup />', () => {
           </RadioGroup>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
 
       // use testid to get the input[type=radio] instead of label

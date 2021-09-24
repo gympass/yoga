@@ -13,6 +13,7 @@ const SwitchWrapper = styled.View`
 
 const SwitchPage = () => {
   const [checked, setChecked] = useState(true);
+
   return (
     <View
       style={{

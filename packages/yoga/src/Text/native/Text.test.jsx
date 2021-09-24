@@ -23,6 +23,7 @@ describe('<Text />', () => {
           <Text.SmallestException>Live the mission</Text.SmallestException>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -34,6 +35,7 @@ describe('<Text />', () => {
           <Text.H3 variant="tertiary">Live the mission</Text.H3>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -45,6 +47,7 @@ describe('<Text />', () => {
           <Text.H3 light>Live the mission</Text.H3>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -57,6 +60,7 @@ describe('<Text />', () => {
           <Text.Medium size="xxxlarge">Live the xxxlarge mission</Text.Medium>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -66,6 +70,7 @@ describe('<Text />', () => {
           <Text inverted>Live the mission</Text>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -79,6 +84,7 @@ describe('<Text />', () => {
           </Text>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -90,6 +96,7 @@ describe('<Text />', () => {
           </Text>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -99,6 +106,7 @@ describe('<Text />', () => {
           <Text backgroundColor="vibin">Live the mission</Text>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -108,6 +116,7 @@ describe('<Text />', () => {
           <Text elevation="medium">Live the mission</Text>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -119,6 +128,7 @@ describe('<Text />', () => {
           </Text>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -135,6 +145,7 @@ describe('<Text />', () => {
           </Text>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -144,6 +155,7 @@ describe('<Text />', () => {
           <Text display="flex">Live the mission</Text>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -155,6 +167,7 @@ describe('<Text />', () => {
           </Text>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -166,6 +179,7 @@ describe('<Text />', () => {
           </Text>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -175,6 +189,7 @@ describe('<Text />', () => {
           <Text overflow="scroll">Live the mission</Text>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
   });

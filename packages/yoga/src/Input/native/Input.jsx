@@ -229,6 +229,7 @@ const Input = ({
   const { height = input.height, ...styles } = Array.isArray(style)
     ? Object.assign({}, ...style)
     : style;
+
   return (
     <Wrapper full={full} style={styles}>
       <Field

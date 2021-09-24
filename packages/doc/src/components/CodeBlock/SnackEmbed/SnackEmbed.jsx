@@ -54,6 +54,7 @@ const SnackEmbed = ({ id, ...props }) => {
   useEffect(() => {
     if (typeof window !== 'undefined' && !window.ExpoSnack) {
       const script = document.createElement('script');
+
       script.addEventListener('load', () => window.ExpoSnack.initialize());
 
       addProperties(

@@ -23,6 +23,7 @@ describe('<GymCard.CheckIn />', () => {
           />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -41,6 +42,7 @@ describe('<GymCard.CheckIn />', () => {
           />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
   });

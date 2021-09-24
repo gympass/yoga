@@ -17,6 +17,7 @@ describe('<Card />', () => {
           </Card>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
   });

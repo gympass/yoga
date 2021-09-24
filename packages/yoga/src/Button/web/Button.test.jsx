@@ -15,6 +15,7 @@ describe('<Button />', () => {
               <Button />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -24,6 +25,7 @@ describe('<Button />', () => {
               <Button icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -33,6 +35,7 @@ describe('<Button />', () => {
               <Button.Outline />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -42,6 +45,7 @@ describe('<Button />', () => {
               <Button.Outline icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -51,6 +55,7 @@ describe('<Button />', () => {
               <Button.Text />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -60,6 +65,7 @@ describe('<Button />', () => {
               <Button.Text icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -69,6 +75,7 @@ describe('<Button />', () => {
               <Button.Link />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -80,6 +87,7 @@ describe('<Button />', () => {
               <Button inverted />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -89,6 +97,7 @@ describe('<Button />', () => {
               <Button inverted icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -98,6 +107,7 @@ describe('<Button />', () => {
               <Button.Outline inverted />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -107,6 +117,7 @@ describe('<Button />', () => {
               <Button.Outline inverted icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -116,6 +127,7 @@ describe('<Button />', () => {
               <Button.Text inverted />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -125,6 +137,7 @@ describe('<Button />', () => {
               <Button.Text inverted icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -136,6 +149,7 @@ describe('<Button />', () => {
               <Button small />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -145,6 +159,7 @@ describe('<Button />', () => {
               <Button.Outline small />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -154,6 +169,7 @@ describe('<Button />', () => {
               <Button.Text small />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -163,6 +179,7 @@ describe('<Button />', () => {
               <Button small icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -172,6 +189,7 @@ describe('<Button />', () => {
               <Button.Outline icon={Booking} small />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -181,6 +199,7 @@ describe('<Button />', () => {
               <Button.Text icon={Booking} small />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -192,6 +211,7 @@ describe('<Button />', () => {
               <Button full />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -201,6 +221,7 @@ describe('<Button />', () => {
               <Button.Outline full />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -210,6 +231,7 @@ describe('<Button />', () => {
               <Button.Text full />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -219,6 +241,7 @@ describe('<Button />', () => {
               <Button full icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -228,6 +251,7 @@ describe('<Button />', () => {
               <Button.Outline full icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -237,6 +261,7 @@ describe('<Button />', () => {
               <Button.Text full icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -248,6 +273,7 @@ describe('<Button />', () => {
               <Button disabled />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -257,6 +283,7 @@ describe('<Button />', () => {
               <Button.Outline disabled />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -266,6 +293,7 @@ describe('<Button />', () => {
               <Button.Text disabled />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -275,6 +303,7 @@ describe('<Button />', () => {
               <Button.Link disabled />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -284,6 +313,7 @@ describe('<Button />', () => {
               <Button disabled icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -293,6 +323,7 @@ describe('<Button />', () => {
               <Button.Outline disabled icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -302,6 +333,7 @@ describe('<Button />', () => {
               <Button.Text disabled icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -315,6 +347,7 @@ describe('<Button />', () => {
               <Button secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -324,6 +357,7 @@ describe('<Button />', () => {
               <Button secondary icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -333,6 +367,7 @@ describe('<Button />', () => {
               <Button.Outline secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -342,6 +377,7 @@ describe('<Button />', () => {
               <Button.Outline icon={Booking} secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -351,6 +387,7 @@ describe('<Button />', () => {
               <Button.Text secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -360,6 +397,7 @@ describe('<Button />', () => {
               <Button.Text secondary icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -369,6 +407,7 @@ describe('<Button />', () => {
               <Button.Link secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -380,6 +419,7 @@ describe('<Button />', () => {
               <Button inverted secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -389,6 +429,7 @@ describe('<Button />', () => {
               <Button inverted icon={Booking} secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -398,6 +439,7 @@ describe('<Button />', () => {
               <Button.Outline inverted secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -407,6 +449,7 @@ describe('<Button />', () => {
               <Button.Outline inverted icon={Booking} secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -416,6 +459,7 @@ describe('<Button />', () => {
               <Button.Text inverted secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -425,6 +469,7 @@ describe('<Button />', () => {
               <Button.Text inverted icon={Booking} secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -436,6 +481,7 @@ describe('<Button />', () => {
               <Button small secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -445,6 +491,7 @@ describe('<Button />', () => {
               <Button.Outline small secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -454,6 +501,7 @@ describe('<Button />', () => {
               <Button.Text small secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -463,6 +511,7 @@ describe('<Button />', () => {
               <Button small icon={Booking} secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -472,6 +521,7 @@ describe('<Button />', () => {
               <Button.Outline icon={Booking} small secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -481,6 +531,7 @@ describe('<Button />', () => {
               <Button.Text icon={Booking} small secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -492,6 +543,7 @@ describe('<Button />', () => {
               <Button full secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -501,6 +553,7 @@ describe('<Button />', () => {
               <Button.Outline full secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -510,6 +563,7 @@ describe('<Button />', () => {
               <Button.Text full secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -519,6 +573,7 @@ describe('<Button />', () => {
               <Button full icon={Booking} secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -528,6 +583,7 @@ describe('<Button />', () => {
               <Button.Outline full icon={Booking} secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -537,6 +593,7 @@ describe('<Button />', () => {
               <Button.Text full icon={Booking} secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -550,6 +607,7 @@ describe('<Button />', () => {
               <Button disabled />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -559,6 +617,7 @@ describe('<Button />', () => {
               <Button.Outline disabled />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -568,6 +627,7 @@ describe('<Button />', () => {
               <Button.Text disabled />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -577,6 +637,7 @@ describe('<Button />', () => {
               <Button.Link disabled />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -586,6 +647,7 @@ describe('<Button />', () => {
               <Button disabled icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -595,6 +657,7 @@ describe('<Button />', () => {
               <Button.Outline disabled icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
 
@@ -604,6 +667,7 @@ describe('<Button />', () => {
               <Button.Text disabled icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });

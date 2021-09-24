@@ -26,6 +26,7 @@ describe('<RadioGroup />', () => {
             <RadioGroup.Radio />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
     });
@@ -81,6 +82,7 @@ describe('<RadioGroup />', () => {
         );
 
         const radios = getAllByTestId('radio');
+
         radios.map(radio => expect(radio.name).toBe(name));
       });
     });

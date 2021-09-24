@@ -13,6 +13,7 @@ describe('<Backdrop />', () => {
           <Backdrop title="Find an Activity">Some Content</Backdrop>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -24,6 +25,7 @@ describe('<Backdrop />', () => {
           </Backdrop>
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
   });

@@ -79,6 +79,7 @@ describe('<Input />', () => {
   describe('Events', () => {
     it('should call onChange', () => {
       const onChangeMock = jest.fn();
+
       render(
         <ThemeProvider>
           <Input label="Input" onChange={onChangeMock} data-testid="input" />
@@ -94,6 +95,7 @@ describe('<Input />', () => {
 
     it('should call onFocus', () => {
       const onFocusMock = jest.fn();
+
       render(
         <ThemeProvider>
           <Input label="Input" data-testid="input" onFocus={onFocusMock} />

@@ -33,6 +33,7 @@ describe('<List />', () => {
             />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -49,6 +50,7 @@ describe('<List />', () => {
             />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -65,6 +67,7 @@ describe('<List />', () => {
             />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -82,6 +85,7 @@ describe('<List />', () => {
             />
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -101,6 +105,7 @@ describe('<List />', () => {
         );
 
         const selectableItem = getByText(a.key);
+
         fireEvent.press(selectableItem);
         expect(a.onPress).toHaveBeenCalled();
       });

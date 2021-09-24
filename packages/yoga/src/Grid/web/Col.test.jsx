@@ -11,6 +11,7 @@ describe('<Col />', () => {
           <Col />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -20,6 +21,7 @@ describe('<Col />', () => {
           <Col xxs={6} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -29,6 +31,7 @@ describe('<Col />', () => {
           <Col md={6} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 
@@ -38,6 +41,7 @@ describe('<Col />', () => {
           <Col md-start={3} md={6} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
 

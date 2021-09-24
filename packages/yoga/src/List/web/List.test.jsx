@@ -15,6 +15,7 @@ describe('<List />', () => {
             </List>
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -32,6 +33,7 @@ describe('<List />', () => {
             </List>
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -49,6 +51,7 @@ describe('<List />', () => {
             </List>
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -62,6 +65,7 @@ describe('<List />', () => {
             </List>
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -79,6 +83,7 @@ describe('<List />', () => {
             </List>
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -96,6 +101,7 @@ describe('<List />', () => {
             </List>
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
 
@@ -109,6 +115,7 @@ describe('<List />', () => {
             </List>
           </ThemeProvider>,
         );
+
         expect(container).toMatchSnapshot();
       });
     });

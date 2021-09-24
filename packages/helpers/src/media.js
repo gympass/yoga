@@ -31,6 +31,7 @@ const getRange = (width, range) => {
     const msg = `Make sure you've entered the right breakpoints. 
   Your input: ${Array.isArray(width) ? width.join(', ') : width}
   Available breakpoints: ${availableBreakpoints.join(', ')}`;
+
     throw new Error(msg);
   }
 };

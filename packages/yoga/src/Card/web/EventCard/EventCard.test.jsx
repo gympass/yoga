@@ -23,6 +23,7 @@ describe('<Card />', () => {
           <EventCard event={event} date={date} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
   });

@@ -17,6 +17,7 @@ describe('<Checkbox />', () => {
           <Checkbox />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -26,6 +27,7 @@ describe('<Checkbox />', () => {
           <Checkbox />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -35,6 +37,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -44,6 +47,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} disabled />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -53,6 +57,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} checked />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -62,6 +67,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} disabled checked />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -71,6 +77,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} error="Error text" />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -80,6 +87,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} error="Error text" checked />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -89,6 +97,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} inverted />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -98,6 +107,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} inverted checked />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
 
@@ -107,6 +117,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} inverted checked disabled />
         </ThemeProvider>,
       );
+
       expect(toJSON(container)).toMatchSnapshot();
     });
   });
@@ -119,6 +130,7 @@ describe('<Checkbox />', () => {
           <Checkbox {...data} onPress={onChangeMock} testID="checkbox" />
         </ThemeProvider>,
       );
+
       fireEvent.press(getByTestId('checkbox'));
       expect(onChangeMock).toHaveBeenCalled();
     });

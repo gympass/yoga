@@ -96,6 +96,7 @@ AnchorList.propTypes = {
 
 const Summary = () => {
   const [anchors, setAnchors] = useState([]);
+
   useEffect(
     () => {
       if (hasWindow) {

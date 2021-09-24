@@ -22,6 +22,7 @@ describe('<Dropdown />', () => {
         <Dropdown {...dropdownProps} />
       </ThemeProvider>,
     );
+
     expect(container).toMatchSnapshot();
   });
 
@@ -31,6 +32,7 @@ describe('<Dropdown />', () => {
         <Dropdown {...dropdownProps} disabled />
       </ThemeProvider>,
     );
+
     expect(container).toMatchSnapshot();
   });
 
@@ -40,6 +42,7 @@ describe('<Dropdown />', () => {
         <Dropdown {...dropdownProps} full />
       </ThemeProvider>,
     );
+
     expect(container).toMatchSnapshot();
   });
 
@@ -50,6 +53,7 @@ describe('<Dropdown />', () => {
       selected: true,
     };
     const props = dropdownProps;
+
     props.options.push(selectedOption);
 
     const { container } = render(
@@ -57,6 +61,7 @@ describe('<Dropdown />', () => {
         <Dropdown {...props} disabled />
       </ThemeProvider>,
     );
+
     expect(container).toMatchSnapshot();
   });
 

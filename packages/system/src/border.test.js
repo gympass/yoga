@@ -23,9 +23,11 @@ import {
 } from './border';
 
 const borders = [0, 1, 2];
+
 [borders.zero, borders.small, borders.medium] = borders;
 
 const radii = [0, 4, 8, 9999];
+
 [radii.sharp, radii.semiRounded, radii.rounded, radii.circle] = radii;
 
 const colors = {
@@ -49,16 +51,20 @@ describe('borders', () => {
 
       const zero1 = border({ theme, b: 'zero' });
       const zero2 = border({ theme, border: 'zero' });
+
       expect(zero1).toStrictEqual(zero2);
 
       const small1 = border({ theme, b: 'small' });
       const small2 = border({ theme, border: 'small' });
+
       expect(small1).toStrictEqual(small2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
 
       const smallOptions = [small1, small2];
+
       smallOptions.map(s => expect(s).toStrictEqual(expectedSmallStyle));
     });
 
@@ -66,6 +72,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ border: '10px solid' });
 
       const b = border({ theme, border: '10px solid' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -77,16 +84,20 @@ describe('borders', () => {
 
       const zero1 = borderTop({ theme, bt: 'zero' });
       const zero2 = borderTop({ theme, borderTop: 'zero' });
+
       expect(zero1).toStrictEqual(zero2);
 
       const small1 = borderTop({ theme, bt: 'small' });
       const small2 = borderTop({ theme, borderTop: 'small' });
+
       expect(small1).toStrictEqual(small2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
 
       const smallOptions = [small1, small2];
+
       smallOptions.map(s => expect(s).toStrictEqual(expectedSmallStyle));
     });
 
@@ -94,6 +105,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderTop: '10px solid' });
 
       const b = borderTop({ theme, borderTop: '10px solid' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -107,16 +119,20 @@ describe('borders', () => {
 
       const zero1 = borderRight({ theme, br: 'zero' });
       const zero2 = borderRight({ theme, borderRight: 'zero' });
+
       expect(zero1).toStrictEqual(zero2);
 
       const small1 = borderRight({ theme, br: 'small' });
       const small2 = borderRight({ theme, borderRight: 'small' });
+
       expect(small1).toStrictEqual(small2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
 
       const smallOptions = [small1, small2];
+
       smallOptions.map(s => expect(s).toStrictEqual(expectedSmallStyle));
     });
 
@@ -124,6 +140,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderRight: '10px solid' });
 
       const b = borderRight({ theme, borderRight: '10px solid' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -137,16 +154,20 @@ describe('borders', () => {
 
       const zero1 = borderBottom({ theme, bb: 'zero' });
       const zero2 = borderBottom({ theme, borderBottom: 'zero' });
+
       expect(zero1).toStrictEqual(zero2);
 
       const small1 = borderBottom({ theme, bb: 'small' });
       const small2 = borderBottom({ theme, borderBottom: 'small' });
+
       expect(small1).toStrictEqual(small2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
 
       const smallOptions = [small1, small2];
+
       smallOptions.map(s => expect(s).toStrictEqual(expectedSmallStyle));
     });
 
@@ -154,6 +175,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderBottom: '10px solid' });
 
       const b = borderBottom({ theme, borderBottom: '10px solid' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -167,16 +189,20 @@ describe('borders', () => {
 
       const zero1 = borderLeft({ theme, bl: 'zero' });
       const zero2 = borderLeft({ theme, borderLeft: 'zero' });
+
       expect(zero1).toStrictEqual(zero2);
 
       const small1 = borderLeft({ theme, bl: 'small' });
       const small2 = borderLeft({ theme, borderLeft: 'small' });
+
       expect(small1).toStrictEqual(small2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
 
       const smallOptions = [small1, small2];
+
       smallOptions.map(s => expect(s).toStrictEqual(expectedSmallStyle));
     });
 
@@ -184,6 +210,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderLeft: '10px solid' });
 
       const b = borderLeft({ theme, borderLeft: '10px solid' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -197,16 +224,20 @@ describe('borders', () => {
 
       const vibin1 = borderColor({ theme, bc: 'vibin' });
       const vibin2 = borderColor({ theme, borderColor: 'vibin' });
+
       expect(vibin1).toStrictEqual(vibin2);
 
       const hope1 = borderColor({ theme, bc: 'hope' });
       const hope2 = borderColor({ theme, borderColor: 'hope' });
+
       expect(hope1).toStrictEqual(hope2);
 
       const vibinOptions = [vibin1, vibin2];
+
       vibinOptions.map(z => expect(z).toStrictEqual(vibinStyle));
 
       const hopeOptions = [hope1, hope2];
+
       hopeOptions.map(s => expect(s).toStrictEqual(hopeStyle));
     });
 
@@ -214,6 +245,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderColor: 'red' });
 
       const b = borderColor({ theme, borderColor: 'red' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -227,16 +259,20 @@ describe('borders', () => {
 
       const vibin1 = borderTopColor({ theme, btc: 'vibin' });
       const vibin2 = borderTopColor({ theme, borderTopColor: 'vibin' });
+
       expect(vibin1).toStrictEqual(vibin2);
 
       const hope1 = borderTopColor({ theme, btc: 'hope' });
       const hope2 = borderTopColor({ theme, borderTopColor: 'hope' });
+
       expect(hope1).toStrictEqual(hope2);
 
       const vibinOptions = [vibin1, vibin2];
+
       vibinOptions.map(z => expect(z).toStrictEqual(vibinStyle));
 
       const hopeOptions = [hope1, hope2];
+
       hopeOptions.map(s => expect(s).toStrictEqual(hopeStyle));
     });
 
@@ -244,6 +280,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderTopColor: 'red' });
 
       const b = borderTopColor({ theme, borderTopColor: 'red' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -257,16 +294,20 @@ describe('borders', () => {
 
       const vibin1 = borderRightColor({ theme, brc: 'vibin' });
       const vibin2 = borderRightColor({ theme, borderRightColor: 'vibin' });
+
       expect(vibin1).toStrictEqual(vibin2);
 
       const hope1 = borderRightColor({ theme, brc: 'hope' });
       const hope2 = borderRightColor({ theme, borderRightColor: 'hope' });
+
       expect(hope1).toStrictEqual(hope2);
 
       const vibinOptions = [vibin1, vibin2];
+
       vibinOptions.map(z => expect(z).toStrictEqual(vibinStyle));
 
       const hopeOptions = [hope1, hope2];
+
       hopeOptions.map(s => expect(s).toStrictEqual(hopeStyle));
     });
 
@@ -274,6 +315,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderRightColor: 'red' });
 
       const b = borderRightColor({ theme, borderRightColor: 'red' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -287,16 +329,20 @@ describe('borders', () => {
 
       const vibin1 = borderBottomColor({ theme, bbc: 'vibin' });
       const vibin2 = borderBottomColor({ theme, borderBottomColor: 'vibin' });
+
       expect(vibin1).toStrictEqual(vibin2);
 
       const hope1 = borderBottomColor({ theme, bbc: 'hope' });
       const hope2 = borderBottomColor({ theme, borderBottomColor: 'hope' });
+
       expect(hope1).toStrictEqual(hope2);
 
       const vibinOptions = [vibin1, vibin2];
+
       vibinOptions.map(z => expect(z).toStrictEqual(vibinStyle));
 
       const hopeOptions = [hope1, hope2];
+
       hopeOptions.map(s => expect(s).toStrictEqual(hopeStyle));
     });
 
@@ -304,6 +350,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderBottomColor: 'red' });
 
       const b = borderBottomColor({ theme, borderBottomColor: 'red' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -317,16 +364,20 @@ describe('borders', () => {
 
       const vibin1 = borderLeftColor({ theme, blc: 'vibin' });
       const vibin2 = borderLeftColor({ theme, borderLeftColor: 'vibin' });
+
       expect(vibin1).toStrictEqual(vibin2);
 
       const hope1 = borderLeftColor({ theme, blc: 'hope' });
       const hope2 = borderLeftColor({ theme, borderLeftColor: 'hope' });
+
       expect(hope1).toStrictEqual(hope2);
 
       const vibinOptions = [vibin1, vibin2];
+
       vibinOptions.map(z => expect(z).toStrictEqual(vibinStyle));
 
       const hopeOptions = [hope1, hope2];
+
       hopeOptions.map(s => expect(s).toStrictEqual(hopeStyle));
     });
 
@@ -334,6 +385,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderLeftColor: 'red' });
 
       const b = borderLeftColor({ theme, borderLeftColor: 'red' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -347,16 +399,20 @@ describe('borders', () => {
 
       const zero1 = borderWidth({ theme, bw: 'zero' });
       const zero2 = borderWidth({ theme, borderWidth: 'zero' });
+
       expect(zero1).toStrictEqual(zero2);
 
       const medium1 = borderWidth({ theme, bw: 'medium' });
       const medium2 = borderWidth({ theme, borderWidth: 'medium' });
+
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumStyle));
     });
 
@@ -364,6 +420,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderWidth: '30%' });
 
       const b = borderWidth({ theme, borderWidth: '30%' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -377,16 +434,20 @@ describe('borders', () => {
 
       const zero1 = borderTopWidth({ theme, btw: 'zero' });
       const zero2 = borderTopWidth({ theme, borderTopWidth: 'zero' });
+
       expect(zero1).toStrictEqual(zero2);
 
       const medium1 = borderTopWidth({ theme, btw: 'medium' });
       const medium2 = borderTopWidth({ theme, borderTopWidth: 'medium' });
+
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumStyle));
     });
 
@@ -394,6 +455,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderTopWidth: '30%' });
 
       const b = borderTopWidth({ theme, borderTopWidth: '30%' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -407,16 +469,20 @@ describe('borders', () => {
 
       const zero1 = borderRightWidth({ theme, brw: 'zero' });
       const zero2 = borderRightWidth({ theme, borderRightWidth: 'zero' });
+
       expect(zero1).toStrictEqual(zero2);
 
       const medium1 = borderRightWidth({ theme, brw: 'medium' });
       const medium2 = borderRightWidth({ theme, borderRightWidth: 'medium' });
+
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumStyle));
     });
 
@@ -424,6 +490,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderRightWidth: '30%' });
 
       const b = borderRightWidth({ theme, borderRightWidth: '30%' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -437,16 +504,20 @@ describe('borders', () => {
 
       const zero1 = borderBottomWidth({ theme, bbw: 'zero' });
       const zero2 = borderBottomWidth({ theme, borderBottomWidth: 'zero' });
+
       expect(zero1).toStrictEqual(zero2);
 
       const medium1 = borderBottomWidth({ theme, bbw: 'medium' });
       const medium2 = borderBottomWidth({ theme, borderBottomWidth: 'medium' });
+
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumStyle));
     });
 
@@ -454,6 +525,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderBottomWidth: '30%' });
 
       const b = borderBottomWidth({ theme, borderBottomWidth: '30%' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -467,16 +539,20 @@ describe('borders', () => {
 
       const zero1 = borderLeftWidth({ theme, blw: 'zero' });
       const zero2 = borderLeftWidth({ theme, borderLeftWidth: 'zero' });
+
       expect(zero1).toStrictEqual(zero2);
 
       const medium1 = borderLeftWidth({ theme, blw: 'medium' });
       const medium2 = borderLeftWidth({ theme, borderLeftWidth: 'medium' });
+
       expect(medium1).toStrictEqual(medium2);
 
       const zeroOptions = [zero1, zero2];
+
       zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
 
       const mediumOptions = [medium1, medium2];
+
       mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumStyle));
     });
 
@@ -484,6 +560,7 @@ describe('borders', () => {
       const expectedNoTheme = css({ borderLeftWidth: '30%' });
 
       const b = borderLeftWidth({ theme, borderLeftWidth: '30%' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -497,16 +574,20 @@ describe('radius', () => {
 
       const sharp1 = borderRadius({ theme, bRadius: 'sharp' });
       const sharp2 = borderRadius({ theme, borderRadius: 'sharp' });
+
       expect(sharp1).toStrictEqual(sharp2);
 
       const rounded1 = borderRadius({ theme, bRadius: 'rounded' });
       const rounded2 = borderRadius({ theme, borderRadius: 'rounded' });
+
       expect(rounded1).toStrictEqual(rounded2);
 
       const sharpOptions = [sharp1, sharp2];
+
       sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
 
       const roundedOptions = [rounded1, rounded2];
+
       roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
     });
 
@@ -514,6 +595,7 @@ describe('radius', () => {
       const expectedNoTheme = css({ borderRadius: '50%' });
 
       const b = borderRadius({ theme, borderRadius: '50%' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -528,6 +610,7 @@ describe('radius', () => {
         theme,
         borderTopLeftRadius: 'sharp',
       });
+
       expect(sharp1).toStrictEqual(sharp2);
 
       const rounded1 = borderTopLeftRadius({ theme, btlr: 'rounded' });
@@ -535,12 +618,15 @@ describe('radius', () => {
         theme,
         borderTopLeftRadius: 'rounded',
       });
+
       expect(rounded1).toStrictEqual(rounded2);
 
       const sharpOptions = [sharp1, sharp2];
+
       sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
 
       const roundedOptions = [rounded1, rounded2];
+
       roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
     });
 
@@ -548,6 +634,7 @@ describe('radius', () => {
       const expectedNoTheme = css({ borderTopLeftRadius: '50%' });
 
       const b = borderTopLeftRadius({ theme, borderTopLeftRadius: '50%' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -562,6 +649,7 @@ describe('radius', () => {
         theme,
         borderTopRightRadius: 'sharp',
       });
+
       expect(sharp1).toStrictEqual(sharp2);
 
       const rounded1 = borderTopRightRadius({ theme, btrr: 'rounded' });
@@ -569,12 +657,15 @@ describe('radius', () => {
         theme,
         borderTopRightRadius: 'rounded',
       });
+
       expect(rounded1).toStrictEqual(rounded2);
 
       const sharpOptions = [sharp1, sharp2];
+
       sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
 
       const roundedOptions = [rounded1, rounded2];
+
       roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
     });
 
@@ -582,6 +673,7 @@ describe('radius', () => {
       const expectedNoTheme = css({ borderTopRightRadius: '50%' });
 
       const b = borderTopRightRadius({ theme, borderTopRightRadius: '50%' });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -598,6 +690,7 @@ describe('radius', () => {
         theme,
         borderBottomLeftRadius: 'sharp',
       });
+
       expect(sharp1).toStrictEqual(sharp2);
 
       const rounded1 = borderBottomLeftRadius({ theme, bblr: 'rounded' });
@@ -605,12 +698,15 @@ describe('radius', () => {
         theme,
         borderBottomLeftRadius: 'rounded',
       });
+
       expect(rounded1).toStrictEqual(rounded2);
 
       const sharpOptions = [sharp1, sharp2];
+
       sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
 
       const roundedOptions = [rounded1, rounded2];
+
       roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
     });
 
@@ -621,6 +717,7 @@ describe('radius', () => {
         theme,
         borderBottomLeftRadius: '50%',
       });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });
@@ -637,6 +734,7 @@ describe('radius', () => {
         theme,
         borderBottomRightRadius: 'sharp',
       });
+
       expect(sharp1).toStrictEqual(sharp2);
 
       const rounded1 = borderBottomRightRadius({ theme, bbrr: 'rounded' });
@@ -644,12 +742,15 @@ describe('radius', () => {
         theme,
         borderBottomRightRadius: 'rounded',
       });
+
       expect(rounded1).toStrictEqual(rounded2);
 
       const sharpOptions = [sharp1, sharp2];
+
       sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
 
       const roundedOptions = [rounded1, rounded2];
+
       roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
     });
 
@@ -660,6 +761,7 @@ describe('radius', () => {
         theme,
         borderBottomRightRadius: '50%',
       });
+
       expect(b).toStrictEqual(expectedNoTheme);
     });
   });

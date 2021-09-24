@@ -24,6 +24,7 @@ describe('<EventCard />', () => {
           <EventCard {...defaultProps} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
     it('should match snapshot of small EventCard with event indicator disabled', () => {
@@ -32,6 +33,7 @@ describe('<EventCard />', () => {
           <EventCard {...defaultProps} event={false} small onPress={() => {}} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
     it('should match snapshot of small EventCard with event indicator enabled', () => {
@@ -40,6 +42,7 @@ describe('<EventCard />', () => {
           <EventCard {...defaultProps} small onPress={() => {}} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
     it('should match snapshot of small EventCard active', () => {
@@ -48,6 +51,7 @@ describe('<EventCard />', () => {
           <EventCard {...defaultProps} small active onPress={() => {}} />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
     it('should match snapshot of small EventCard with day of week and without indicator', () => {
@@ -56,6 +60,7 @@ describe('<EventCard />', () => {
           <EventCard {...defaultProps} small />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
   });

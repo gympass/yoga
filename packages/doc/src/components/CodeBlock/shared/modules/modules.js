@@ -6,6 +6,7 @@ const YogaNativeComponents = {
   GymCard: undefined,
   Result: undefined,
 };
+
 Object.assign(YogaComponents, YogaNativeComponents);
 
 const NativeComponents = {

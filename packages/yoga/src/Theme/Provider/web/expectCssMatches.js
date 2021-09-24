@@ -18,6 +18,7 @@ const getCSS = scope =>
 const expectCSSMatches = expectation => {
   const _expectation = normalizeCSS(expectation.split('\n'));
   const css = getCSS(document);
+
   expect(css).toContain(_expectation);
   return css;
 };

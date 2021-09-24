@@ -11,6 +11,7 @@ describe('<Container />', () => {
           <Container />
         </ThemeProvider>,
       );
+
       expect(container).toMatchSnapshot();
     });
   });
