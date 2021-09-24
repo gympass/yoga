@@ -4,6 +4,10 @@
  * @returns {themeVars} themeVars - will return the same function which is injected to \<ThemeProvider>
  */
 function createTheme(themeVars) {
+  if (typeof themeVars !== 'function')
+    throw new TypeError(
+      `Invalid param 'themeVars', expected 'string', received '${typeof themeVars}'.`,
+    );
   return themeVars;
 }
 
