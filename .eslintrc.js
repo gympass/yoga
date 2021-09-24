@@ -21,6 +21,17 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'no-plusplus': 0,
     'no-restricted-globals': 0,
+    'padding-line-between-statements': [
+      2,
+      { blankLine: 'always', prev: ['const', 'var', 'let'], next: '*' },
+      {
+        blankLine: 'any',
+        prev: ['const', 'var', 'let'],
+        next: ['const', 'var', 'let'],
+      },
+      { blankLine: 'always', prev: 'directive', next: '*' },
+      { blankLine: 'any', prev: 'directive', next: 'directive' },
+    ],
   },
   globals: {
     window: true,
