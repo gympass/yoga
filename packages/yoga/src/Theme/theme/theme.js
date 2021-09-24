@@ -5,12 +5,12 @@ import * as componentThemes from '../../**/*.theme.js';
 const getComponentThemes = tokens => {
   const { colors, baseFont, baseFontSize } = tokens;
   const components = Object.entries(componentThemes).reduce(
-    (acc, [names, themed]) => {
-      const [, name] = names.split('$');
+    (componentsStyles, [names, themed]) => {
+      const [, name] = names.toLowerCase().split('$');
 
       return {
-        ...acc,
-        [name.toLowerCase()]: themed({
+        ...componentsStyles,
+        [name]: themed({
           ...tokens,
           colors,
           baseFont,
