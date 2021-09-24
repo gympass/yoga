@@ -4,6 +4,7 @@ import {
   fontWeight,
   color,
   lineHeight,
+  textAlign,
   typography,
 } from './typography';
 
@@ -165,6 +166,24 @@ describe('Web and iOS', () => {
 
         const c = color({ theme, color: 'tomato' });
         expect(c).toStrictEqual(expectedNoTheme);
+      });
+    });
+
+    describe('textAlign', () => {
+      it('Should return values for text align prop', () => {
+        const expectedTextAlign = css({ textAlign: 'center' });
+
+        const useSystemTextAlign = textAlign({ textAlign: 'center' });
+
+        expect(useSystemTextAlign).toStrictEqual(expectedTextAlign);
+      });
+
+      it('Should return values for text align prop when using the abbreviation version', () => {
+        const useSystemTextAlign = css({ textAlign: 'center' });
+
+        const textAlignProperty = textAlign({ ta: 'center' });
+
+        expect(textAlignProperty).toStrictEqual(useSystemTextAlign);
       });
     });
   });
