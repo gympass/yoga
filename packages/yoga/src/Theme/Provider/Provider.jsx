@@ -1,7 +1,7 @@
+import * as tokens from '@gympass/yoga-tokens';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import PropTypes from 'prop-types';
-import * as tokens from '@gympass/yoga-tokens';
 import yogaTheme from '../theme';
 
 /**
@@ -25,7 +25,21 @@ const getTheme = ({ locale, theme }) => {
   const token = tokens[locale] || tokens.default;
   const defaultTheme = yogaTheme(token);
 
-  return theme ? yogaTheme(defaultTheme, theme(token)) : yogaTheme(token);
+  if (theme) {
+    const customTheme = theme(token);
+
+    if (typeof customTheme !== 'object') {
+      throw TypeError(
+        `Invalid 'theme' return value. Expected 'object', got ${typeof theme(
+          token,
+        )}.`,
+      );
+    }
+
+    return yogaTheme(token, theme(token));
+  }
+
+  return defaultTheme;
 };
 
 /** This component provides a theme to all React components underneath itself via the context API. */
