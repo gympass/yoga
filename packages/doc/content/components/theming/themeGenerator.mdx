@@ -1,0 +1,32 @@
+---
+title: 'Theme Generator'
+metaTitle: 'Creating a custom theme'
+metaDescription: 'How you can create and inject custom themes'
+order: 3
+---
+
+import { Link as GatsbyLink } from 'gatsby';
+
+## Theme Generator 
+
+Yoga exposes a function that let you create your very own theme which can later be injected into <GatsbyLink to="/components/theming/themeProvider">`<ThemeProvider>`</GatsbyLink>.
+You can refer to <GatsbyLink to="/components/theming/theme">Theme</GatsbyLink> in order to see our theme object schema.
+
+### Usage
+
+This is a simple usage:
+
+```javascript type=highlight
+import styled from 'styled-components';
+import { createTheme, ThemeProvider, Button } from '@gympass/yoga';
+
+const theme = createTheme((tokens) => ({
+  colors: {
+    primary: tokens.colors.deepPurple,
+  }
+}));
+
+<ThemeProvider theme={theme}>
+  <Button>Hey! I'm themed!</Theme>
+</ThemeProvider>
+```

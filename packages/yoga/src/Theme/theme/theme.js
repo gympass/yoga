@@ -1,5 +1,28 @@
 /* eslint-disable prefer-destructuring */
+import { merge } from '@gympass/yoga-common';
 import * as componentThemes from '../../**/*.theme.js';
+
+const getComponentThemes = tokens => {
+  const { colors, baseFont, baseFontSize } = tokens;
+  const components = Object.entries(componentThemes).reduce(
+    (componentsStyles, [names, themed]) => {
+      const [, name] = names.toLowerCase().split('$');
+
+      return {
+        ...componentsStyles,
+        [name]: themed({
+          ...tokens,
+          colors,
+          baseFont,
+          baseFontSize,
+        }),
+      };
+    },
+    {},
+  );
+
+  return { components };
+};
 
 const theme = tokens => {
   const baseFont = tokens.fonts.rubik;
@@ -39,26 +62,20 @@ const theme = tokens => {
     colors.feedback.attention.dark,
   ] = colors.feedback.attention;
 
-  const components = {};
-
-  Object.entries(componentThemes).forEach(([names, themed]) => {
-    const [, name] = names.split('$');
-
-    components[name.toLowerCase()] = themed({
-      ...tokens,
-      colors,
-      baseFont,
-      baseFontSize,
-    });
-  });
-
   return {
     ...tokens,
-    components,
     colors,
     baseFont,
     baseFontSize,
   };
 };
 
-export default theme;
+const composeTheme = (tokens, customTheming = {}) => {
+  const baseTheme = theme(tokens);
+  const customTheme = merge(baseTheme, customTheming);
+  const componentTheming = getComponentThemes(customTheme);
+
+  return merge(customTheme, componentTheming);
+};
+
+export default composeTheme;

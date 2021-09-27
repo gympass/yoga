@@ -64,15 +64,14 @@ packages
         └─index.native.js
 ```
 
-### Theme
-
-Currently, we have 3 predefined themes `Corporate`, `EndUser` and `Gyms`, all
-of them follows the `BaseTheme` object.
+### Theming
 
 Every component has its own `theme` file. You can find it in its own folder.
 
 When building a new component, make sure to add values like paddings, colors,
 margins, to the component theme file.
+
+To create custom themes, Yoga exposes a `createTheme` function in order to generate new themes, you can refer to [Theme Generator](https://gympass.github.io/yoga/components/theming/themeGenerator) in order to see how to create custom themes.
 
 ### Web
 

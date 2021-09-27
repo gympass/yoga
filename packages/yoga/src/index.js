@@ -1,4 +1,9 @@
-import ThemeProvider, { FontLoader, yogaTheme, theme } from './Theme';
+import ThemeProvider, {
+  FontLoader,
+  yogaTheme,
+  theme,
+  createTheme,
+} from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -24,6 +29,7 @@ import Avatar from './Avatar';
 export {
   ThemeProvider,
   FontLoader,
+  createTheme,
   yogaTheme,
   theme,
   Button,
