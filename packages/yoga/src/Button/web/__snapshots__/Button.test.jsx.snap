@@ -3,6 +3,7 @@
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with default Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -85,6 +86,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -168,6 +170,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with link Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -275,6 +278,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with outline Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -400,6 +404,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with outline Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -526,6 +531,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with text Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -653,6 +659,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -781,6 +788,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 exports[`<Button /> Snapshots primary buttons With disabled prop should match snapshot with default Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -863,6 +871,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 exports[`<Button /> Snapshots primary buttons With disabled prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -946,6 +955,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 exports[`<Button /> Snapshots primary buttons With disabled prop should match snapshot with link Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1053,6 +1063,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 exports[`<Button /> Snapshots primary buttons With disabled prop should match snapshot with outline Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1178,6 +1189,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 exports[`<Button /> Snapshots primary buttons With disabled prop should match snapshot with outline Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1304,6 +1316,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 exports[`<Button /> Snapshots primary buttons With disabled prop should match snapshot with text Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1431,6 +1444,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 exports[`<Button /> Snapshots primary buttons With disabled prop should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1559,6 +1573,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with default Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1640,6 +1655,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1722,6 +1738,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with outline Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1846,6 +1863,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with outline Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -1971,6 +1989,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with text Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -2097,6 +2116,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -2224,6 +2244,7 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with default Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -2325,6 +2346,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -2427,6 +2449,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with outline Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -2607,6 +2630,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with outline Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -2788,6 +2812,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with text Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -2957,6 +2982,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -3127,6 +3153,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with default Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -3208,6 +3235,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -3290,6 +3318,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with outline Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -3414,6 +3443,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with outline Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -3539,6 +3569,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with text Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -3665,6 +3696,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -3792,6 +3824,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with default Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -3873,6 +3906,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -3955,6 +3989,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with link Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -4061,6 +4096,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with outline Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -4185,6 +4221,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with outline Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -4310,6 +4347,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with text Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -4436,6 +4474,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -4563,6 +4602,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with default Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -4644,6 +4684,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -4726,6 +4767,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with outline Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -4850,6 +4892,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with outline Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -4975,6 +5018,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with text Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -5101,6 +5145,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -5228,6 +5273,7 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with default Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -5329,6 +5375,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -5431,6 +5478,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with outline Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -5611,6 +5659,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with outline Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -5792,6 +5841,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with text Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -5961,6 +6011,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -6131,6 +6182,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with default Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -6212,6 +6264,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -6294,6 +6347,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with outline Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -6418,6 +6472,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with outline Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -6543,6 +6598,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with text Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -6669,6 +6725,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -6796,6 +6853,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with default Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -6877,6 +6935,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -6959,6 +7018,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with link Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -7065,6 +7125,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with outline Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -7189,6 +7250,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with outline Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -7314,6 +7376,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with text Button 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -7440,6 +7503,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with text Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
