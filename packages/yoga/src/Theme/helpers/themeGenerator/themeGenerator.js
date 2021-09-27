@@ -6,10 +6,10 @@
 function createTheme(themeVars) {
   if (typeof themeVars !== 'function')
     throw new TypeError(
-      `Invalid param 'themeVars', expected 'string', received '${typeof themeVars}'.`,
+      `Invalid param 'themeVars', expected 'function', received '${typeof themeVars}'.`,
     );
 
-  const themeBuilder = themeVars;
+  const themeBuilder = themeVars.bind({});
 
   themeBuilder.isFromThemeBuilder = true;
 
