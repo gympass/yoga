@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.18.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.17.1...@gympass/yoga@7.18.0) (2021-09-27)
+
+
+### Bug Fixes
+
+* **theme-generator:** stop mutating themeVars object ([9fe37a3](https://github.com/Gympass/yoga/commit/9fe37a3eff09e82b320d903e771aaa4de3d386b5))
+* correct typo in theme provider jsdoc ([01bd6f4](https://github.com/Gympass/yoga/commit/01bd6f4d9afe6ca7697bb6b3b545c5cf4a589746))
+* theme builder origin validation ([9b2adfe](https://github.com/Gympass/yoga/commit/9b2adfe44b58977366bb55070fdd7100db38639f))
+
+
+### Features
+
+* **theme-generator:** add type validation ([7b49d04](https://github.com/Gympass/yoga/commit/7b49d04899a5cd7de5ee747bc9a9e7ef92f86e99))
+* **theme-generator:** create base function ([7c85cf7](https://github.com/Gympass/yoga/commit/7c85cf7f836376de390c0f575284cd9e6784c64c))
+* **theme-generator:** expose create function and inject it from ThemeProvider ([c398123](https://github.com/Gympass/yoga/commit/c39812338d4f0e697d0feb2a8a243a09ec26a213))
+
+
+
+
+
 ## [7.17.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.17.0...@gympass/yoga@7.17.1) (2021-09-24)
 
 **Note:** Version bump only for package @gympass/yoga
