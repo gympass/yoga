@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.19.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.18.0...@gympass/yoga@7.19.0) (2021-09-28)
+
+
+### Features
+
+* **button:** adjust button content alignment ([a0811b1](https://github.com/Gympass/yoga/commit/a0811b13aa290c18f02cc14da1a9b13b626434c8))
+
+
+
+
+
 # [7.18.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.17.1...@gympass/yoga@7.18.0) (2021-09-27)
 
 
