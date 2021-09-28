@@ -3,6 +3,7 @@
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
 .c19 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;

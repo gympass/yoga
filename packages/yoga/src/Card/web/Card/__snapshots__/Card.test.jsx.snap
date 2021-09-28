@@ -3,6 +3,7 @@
 exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
 .c1 {
   box-sizing: border-box;
+  text-align: center;
   outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;

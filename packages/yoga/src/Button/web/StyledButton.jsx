@@ -3,7 +3,7 @@ import { hexToRgb } from '@gympass/yoga-common';
 
 const StyledButton = styled.button`
   box-sizing: border-box;
-
+  text-align: center;
   outline: none;
   transition: all 0.2s;
   cursor: pointer;
