@@ -3,7 +3,7 @@
 </p>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-29-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-30-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Github Actions](https://github.com/gympass/yoga/workflows/Yoga%20-%20Gympass%20Design%20System/badge.svg)
@@ -93,6 +93,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="http://ericcleao"><img src="https://avatars.githubusercontent.com/u/5889973?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Eric Cerqueira Leão</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=ericcleao" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/alinerigoni"><img src="https://avatars.githubusercontent.com/u/31771420?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aline Rigoni</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=alinerigoni" title="Code">💻</a></td>
   </tr>
 </table>
 
