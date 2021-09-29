@@ -25,7 +25,7 @@ const IconStyled = styled(Button)`
       height: ${
         large ? button.types.icon.size.large : button.types.icon.size.default
       }px;
-      padding: 4px;
+      padding: 0;
       border-radius: 50%;
 
       svg {
@@ -99,17 +99,23 @@ const IconStyled = styled(Button)`
 
 const ButtonIcon = forwardRef(({ icon: Icon, ...props }, ref) => (
   <IconStyled ref={ref} {...props}>
-    {Icon && <Icon />}
+    <Icon />
   </IconStyled>
 ));
 
 ButtonIcon.propTypes = {
   large: bool,
+  disabled: bool,
+  secondary: bool,
+  inverted: bool,
   icon: oneOfType([node, func]),
 };
 
 ButtonIcon.defaultProps = {
   large: undefined,
+  disabled: undefined,
+  secondary: undefined,
+  inverted: undefined,
   icon: undefined,
 };
 
