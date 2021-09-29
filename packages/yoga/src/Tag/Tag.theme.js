@@ -5,7 +5,7 @@ const Tag = ({ spacing, fontSizes, fontWeights, radii, borders }) => ({
       small: spacing.xsmall,
     },
     margin: {
-      right: spacing.xxxsmall,
+      right: 'xxxsmall',
     },
   },
   font: {
