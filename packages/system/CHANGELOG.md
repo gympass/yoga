@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.6.2...@gympass/yoga-system@0.7.0) (2021-09-29)
+
+
+### Bug Fixes
+
+* **typography-test:** fix padding-line rule usage ([c7fd93e](https://github.com/Gympass/yoga/commit/c7fd93e47ba3f3e3e5230d5123ea771de0449fdb))
+
+
+### Features
+
+* **textalign:** add text align in system typography ([83b7956](https://github.com/Gympass/yoga/commit/83b7956b15dc92f2d6a18caa43d7db9da13b167b))
+
+
+
+
+
 ## [0.6.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.6.1...@gympass/yoga-system@0.6.2) (2021-09-24)
 
 **Note:** Version bump only for package @gympass/yoga-system
