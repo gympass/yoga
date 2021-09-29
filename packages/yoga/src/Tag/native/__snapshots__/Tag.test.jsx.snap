@@ -320,6 +320,73 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
 </View>
 `;
 
+exports[`<Tag /> should match snapshot with informative type 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    small={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#F5F5FA",
+          "borderColor": "#F5F5FA",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "width": "auto",
+        },
+      ]
+    }
+    variant=""
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "500",
+            },
+            Object {
+              "color": "#231B22",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        default
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
 exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
 <View
   collapsable={true}

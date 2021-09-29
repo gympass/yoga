@@ -15,6 +15,16 @@ describe('<Tag />', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('should match snapshot with informative type', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Tag.Informative>default</Tag.Informative>
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
   it('should match snapshot with custom icon and informative type', () => {
     const { container } = render(
       <ThemeProvider>
