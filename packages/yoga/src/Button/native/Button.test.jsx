@@ -100,6 +100,15 @@ describe('<Button />', () => {
 
           expect(toJSON(container)).toMatchSnapshot();
         });
+
+        it('should match snapshot with icon Button', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Icon icon={Booking} inverted />
+            </ThemeProvider>,
+          );
+          expect(container).toMatchSnapshot();
+        });
       });
 
       describe('With small prop', () => {
@@ -185,6 +194,17 @@ describe('<Button />', () => {
           expect(toJSON(container)).toMatchSnapshot();
         });
       });
+
+      describe('With large prop', () => {
+        it('should match snapshot icon Button with large prop', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Icon icon={Booking} large />
+            </ThemeProvider>,
+          );
+          expect(container).toMatchSnapshot();
+        });
+      });
     });
 
     describe('secondary buttons', () => {
@@ -238,6 +258,15 @@ describe('<Button />', () => {
 
           expect(toJSON(container)).toMatchSnapshot();
         });
+
+        it('should match snapshot with icon Button with Icon', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Icon icon={Booking} secondary />
+            </ThemeProvider>,
+          );
+          expect(toJSON(container)).toMatchSnapshot();
+        });
       });
 
       describe('With inverted prop', () => {
@@ -278,6 +307,15 @@ describe('<Button />', () => {
             </ThemeProvider>,
           );
 
+          expect(toJSON(container)).toMatchSnapshot();
+        });
+
+        it('should match snapshot with icon Button with Icon', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Icon inverted icon={Booking} secondary />
+            </ThemeProvider>,
+          );
           expect(toJSON(container)).toMatchSnapshot();
         });
       });
@@ -365,6 +403,17 @@ describe('<Button />', () => {
           expect(toJSON(container)).toMatchSnapshot();
         });
       });
+
+      describe('With large prop', () => {
+        it('should match snapshot icon Button with large prop', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Icon large icon={Booking} secondary />
+            </ThemeProvider>,
+          );
+          expect(container).toMatchSnapshot();
+        });
+      });
     });
 
     describe('disabled buttons', () => {
@@ -418,6 +467,15 @@ describe('<Button />', () => {
 
           expect(toJSON(container)).toMatchSnapshot();
         });
+
+        it('should match snapshot with icon Button with Icon', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Icon disabled icon={Booking} />
+            </ThemeProvider>,
+          );
+          expect(toJSON(container)).toMatchSnapshot();
+        });
       });
     });
   });
@@ -445,6 +503,21 @@ describe('<Button />', () => {
       );
 
       fireEvent.press(getByText('Button.Text'));
+
+      expect(onPressMock).toHaveBeenCalled();
+    });
+
+    it.skip('should call onPress function when press on Button.Icon', () => {
+      const onPressMock = jest.fn();
+      const { getByText } = render(
+        <ThemeProvider>
+          <Button.Icon onPress={onPressMock} icon={Booking}>
+            Button.Icon
+          </Button.Icon>
+        </ThemeProvider>,
+      );
+
+      fireEvent.press(getByText('Button.Icon'));
 
       expect(onPressMock).toHaveBeenCalled();
     });
