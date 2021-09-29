@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { node, oneOfType, func, bool } from 'prop-types';
 import Icon from '../../Icon';
+import withTouchable from './withTouchable';
 
 const ButtonContainer = styled.View`
   ${({
@@ -100,6 +101,7 @@ const ButtonIcon = ({
       disabled={disabled}
       inverted={inverted}
       secondary={secondary}
+      accessibilityRole="button"
     >
       <Icon
         as={icon}
@@ -136,4 +138,4 @@ ButtonIcon.defaultProps = {
 
 ButtonIcon.displayName = 'Button.Icon';
 
-export default withTheme(ButtonIcon);
+export default withTouchable(withTheme(ButtonIcon));
