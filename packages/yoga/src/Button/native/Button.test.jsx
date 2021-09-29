@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { render, fireEvent, toJSON } from '@testing-library/react-native';
 import { Booking } from '@gympass/yoga-icons';
 
@@ -507,17 +508,15 @@ describe('<Button />', () => {
       expect(onPressMock).toHaveBeenCalled();
     });
 
-    it.skip('should call onPress function when press on Button.Icon', () => {
+    it('should call onPress function when press on Button.Icon', () => {
       const onPressMock = jest.fn();
-      const { getByText } = render(
+      const { getByRole } = render(
         <ThemeProvider>
-          <Button.Icon onPress={onPressMock} icon={Booking}>
-            Button.Icon
-          </Button.Icon>
+          <Button.Icon onPress={onPressMock} icon={Booking} />
         </ThemeProvider>,
       );
 
-      fireEvent.press(getByText('Button.Icon'));
+      fireEvent.press(getByRole('button'));
 
       expect(onPressMock).toHaveBeenCalled();
     });

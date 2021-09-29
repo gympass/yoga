@@ -799,11 +799,11 @@ describe('<Button />', () => {
       const onClickMock = jest.fn();
       const { getByRole } = render(
         <ThemeProvider>
-          <Button.Icon icon={Close} onClick={onClickMock} aria-pressed="true" />
+          <Button.Icon icon={Close} onClick={onClickMock} />
         </ThemeProvider>,
       );
 
-      fireEvent.click(getByRole('button', { pressed: true }));
+      fireEvent.click(getByRole('button'));
 
       expect(onClickMock).toHaveBeenCalled();
     });
