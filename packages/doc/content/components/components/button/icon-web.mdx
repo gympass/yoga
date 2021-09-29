@@ -1,14 +1,35 @@
-#### Web
+import { Link as GatsbyLink } from 'gatsby';
 
-Gympass `<Button />` component implements all our design guidelines such as default spacings, borders and color pallete tokens.
-You can use all differente compounds like `<Button />` and `<Button.Text />` combining with their props such as `small` or `inverted` so the button become the desired variation.
+### Reference
+
+Compounded `Button` used to display visual icon elements, supporting the same states as <GatsbyLink to="/components/button/default">`<Button />`</GatsbyLink>
 
 ### Usage
+
+#### Default
 
 ```javascript
 <Box display="flex" justifyContent="space-evenly" width="100%">
   <Button.Icon icon={Booking} />
   <Button.Icon icon={Booking} secondary />
+</Box>
+```
+
+#### With large
+
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
+  <Button.Icon icon={Booking} large/>
+  <Button.Icon icon={Booking} large secondary />
+</Box>
+```
+
+#### With inverted
+
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
+  <Button.Icon icon={Booking} inverted/>
+  <Button.Icon icon={Booking} inverted secondary />
 </Box>
 ```
 
