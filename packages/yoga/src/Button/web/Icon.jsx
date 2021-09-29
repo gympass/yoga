@@ -108,6 +108,7 @@ ButtonIcon.propTypes = {
   disabled: bool,
   secondary: bool,
   inverted: bool,
+  /** an Icon from yoga-icons package */
   icon: oneOfType([node, func]),
 };
 
