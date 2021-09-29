@@ -35,11 +35,19 @@ const lineHeight = props =>
     transform: toPx,
   });
 
+const textAlign = props =>
+  generator({
+    props,
+    prop: ['textAlign', 'ta'],
+    cssProperty: 'text-align',
+  });
+
 const typography = compose(
   color,
   fontSize,
   fontWeight,
   lineHeight,
+  textAlign,
 );
 
-export { fontSize, fontWeight, color, lineHeight, typography };
+export { fontSize, fontWeight, color, lineHeight, textAlign, typography };
