@@ -170,20 +170,16 @@ describe('Web and iOS', () => {
     });
 
     describe('textAlign', () => {
-      it('Should return values for text align prop', () => {
+      it('Should return values for textAlign prop', () => {
         const expectedTextAlign = css({ textAlign: 'center' });
 
-        const useSystemTextAlign = textAlign({ textAlign: 'center' });
+        const ta1 = textAlign({ textAlign: 'center' });
+        const ta2 = textAlign({ ta: 'center' });
 
-        expect(useSystemTextAlign).toStrictEqual(expectedTextAlign);
-      });
+        expect(ta1).toStrictEqual(ta2);
 
-      it('Should return values for text align prop when using the abbreviation version', () => {
-        const useSystemTextAlign = css({ textAlign: 'center' });
-
-        const textAlignProperty = textAlign({ ta: 'center' });
-
-        expect(textAlignProperty).toStrictEqual(useSystemTextAlign);
+        const textAlignOptions = [ta1, ta2];
+        textAlignOptions.map(ta => expect(ta).toStrictEqual(expectedTextAlign));
       });
     });
   });
