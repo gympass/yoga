@@ -191,6 +191,7 @@ describe('Web and iOS', () => {
         expect(ta1).toStrictEqual(ta2);
 
         const textAlignOptions = [ta1, ta2];
+
         textAlignOptions.map(ta => expect(ta).toStrictEqual(expectedTextAlign));
       });
     });
