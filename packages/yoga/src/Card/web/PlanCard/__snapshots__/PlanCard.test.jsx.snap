@@ -195,6 +195,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-weight: 500;
 }
 
+.c15 {
+  width: 16px;
+  height: 16px;
+}
+
 .c3 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -210,10 +215,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   border-color: #E0DFFF;
   font-size: 12px;
   font-weight: 500;
-}
-
-.c3 svg {
-  margin-right: 4px;
 }
 
 .c4 {
@@ -302,11 +303,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c15 {
-  width: 16px;
-  height: 16px;
 }
 
 <div>

@@ -4,6 +4,7 @@ import { func, oneOf, node, bool } from 'prop-types';
 import { margins } from '@gympass/yoga-system';
 
 import { StyledTag, StyledText } from './Tag';
+import Icon from '../../Icon';
 
 const Informative = styled(StyledTag)`
   ${({
@@ -54,12 +55,10 @@ const StyledTextInformative = styled(StyledText)`
 /** Tags should be keywords to categorize or organize an item. */
 const TagInformative = ({
   children,
-  icon: Icon,
+  icon,
   theme: {
     yoga: {
-      colors: {
-        text: { primary },
-      },
+      colors: { text },
       components: { tag },
     },
   },
@@ -68,12 +67,12 @@ const TagInformative = ({
 }) => (
   <Informative small={small} {...props}>
     <Wrapper>
-      {Icon && (
+      {icon && (
         <Icon
-          width={small ? tag.icon.size.small : tag.icon.size.default}
-          height={small ? tag.icon.size.small : tag.icon.size.default}
-          fill={primary}
-          style={{ marginRight: tag.icon.margin.right }}
+          as={icon}
+          size={small ? tag.icon.size.small : tag.icon.size.default}
+          fill={text.primary}
+          marginRight={tag.icon.margin.right}
         />
       )}
       <StyledTextInformative>{children}</StyledTextInformative>

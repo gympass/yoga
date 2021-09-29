@@ -101,15 +101,20 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
         fill="#231B22"
         focusable={false}
         height={16}
+        marginRight="xxxsmall"
         style={
           Array [
             Object {
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            Object {
-              "marginRight": 4,
-            },
+            Array [
+              Object {
+                "height": 16,
+                "marginRight": 4,
+                "width": 16,
+              },
+            ],
             Object {
               "opacity": 1,
             },
@@ -228,15 +233,20 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
         fill="#231B22"
         focusable={false}
         height={12}
+        marginRight="xxxsmall"
         style={
           Array [
             Object {
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            Object {
-              "marginRight": 4,
-            },
+            Array [
+              Object {
+                "height": 12,
+                "marginRight": 4,
+                "width": 12,
+              },
+            ],
             Object {
               "opacity": 1,
             },
