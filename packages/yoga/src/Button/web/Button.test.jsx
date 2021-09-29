@@ -795,19 +795,15 @@ describe('<Button />', () => {
       expect(onClickMock).toHaveBeenCalled();
     });
 
-    it.skip('should call onClick function when click on Button.Icon', () => {
+    it('should call onClick function when click on Button.Icon', () => {
       const onClickMock = jest.fn();
       const { getByRole } = render(
         <ThemeProvider>
-          <Button.Icon icon={Close} onClick={onClickMock} ariaLabel="Close" />
+          <Button.Icon icon={Close} onClick={onClickMock} aria-pressed="true" />
         </ThemeProvider>,
       );
 
-      fireEvent.click(
-        getByRole('button', {
-          name: /close/i,
-        }),
-      );
+      fireEvent.click(getByRole('button', { pressed: true }));
 
       expect(onClickMock).toHaveBeenCalled();
     });
