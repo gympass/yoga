@@ -108,6 +108,7 @@ describe('<Button />', () => {
               <Button.Icon icon={Booking} inverted />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -203,6 +204,7 @@ describe('<Button />', () => {
               <Button.Icon icon={Booking} large />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -266,6 +268,7 @@ describe('<Button />', () => {
               <Button.Icon icon={Booking} secondary />
             </ThemeProvider>,
           );
+
           expect(toJSON(container)).toMatchSnapshot();
         });
       });
@@ -317,6 +320,7 @@ describe('<Button />', () => {
               <Button.Icon inverted icon={Booking} secondary />
             </ThemeProvider>,
           );
+
           expect(toJSON(container)).toMatchSnapshot();
         });
       });
@@ -412,6 +416,7 @@ describe('<Button />', () => {
               <Button.Icon large icon={Booking} secondary />
             </ThemeProvider>,
           );
+
           expect(container).toMatchSnapshot();
         });
       });
@@ -475,6 +480,7 @@ describe('<Button />', () => {
               <Button.Icon disabled icon={Booking} />
             </ThemeProvider>,
           );
+
           expect(toJSON(container)).toMatchSnapshot();
         });
       });
