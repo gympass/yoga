@@ -6,6 +6,14 @@ import { hexToRgb } from '@gympass/yoga-common';
 import Button from './Button';
 
 const IconStyled = styled(Button)`
+  padding: 0;
+  border-radius: 50%;
+
+  svg {
+    margin: 0;
+    transition: fill 0.2s;
+  }
+
   ${({
     large,
     inverted,
@@ -25,11 +33,9 @@ const IconStyled = styled(Button)`
       height: ${
         large ? button.types.icon.size.large : button.types.icon.size.default
       }px;
-      padding: 0;
-      border-radius: 50%;
+     
 
       svg {
-        margin: 0;
         width: ${
           large ? button.types.icon.svg.large : button.types.icon.svg.default
         }px;
@@ -37,8 +43,6 @@ const IconStyled = styled(Button)`
           large ? button.types.icon.svg.large : button.types.icon.svg.default
         }px;
         fill: ${button.types.contained.font.default.color};
- 
-        transition: fill 0.2s;
       }
 
       &:disabled,
