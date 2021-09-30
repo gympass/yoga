@@ -106,10 +106,7 @@ const ButtonIcon = ({
       <Icon
         as={icon}
         fill={textColor}
-        width={
-          large ? button.types.icon.svg.large : button.types.icon.svg.default
-        }
-        height={
+        size={
           large ? button.types.icon.svg.large : button.types.icon.svg.default
         }
       />
