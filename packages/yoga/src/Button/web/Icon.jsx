@@ -7,7 +7,6 @@ import Button from './Button';
 
 const IconStyled = styled(Button)`
   padding: 0;
-  border-radius: 50%;
 
   svg {
     margin: 0;
@@ -34,7 +33,8 @@ const IconStyled = styled(Button)`
         large ? button.types.icon.size.large : button.types.icon.size.default
       }px;
      
-
+      border-radius: ${button.border.radius}px;
+      
       svg {
         width: ${
           large ? button.types.icon.svg.large : button.types.icon.svg.default
