@@ -5,6 +5,10 @@ import Icon from '../../Icon';
 import withTouchable from './withTouchable';
 
 const ButtonContainer = styled.View`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   ${({
     large,
     secondary,
@@ -20,10 +24,6 @@ const ButtonContainer = styled.View`
     const state = secondary ? 'secondary' : 'primary';
 
     return `
-      display:flex;
-      align-items: center;
-      justify-content: center;
-      
       border-radius: ${button.border.radius}px;
 
       background-color: ${
