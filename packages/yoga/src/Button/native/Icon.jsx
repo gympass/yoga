@@ -37,7 +37,6 @@ const ButtonContainer = styled.View`
         large ? button.types.icon.size.large : button.types.icon.size.default
       }px;
 
-
       ${
         !disabled && pressed
           ? `
