@@ -242,9 +242,9 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 
 .c1 {
   padding: 0;
-  border-radius: 50%;
   width: 24px;
   height: 24px;
+  border-radius: 9999px;
 }
 
 .c1 svg {
@@ -1149,9 +1149,9 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 
 .c1 {
   padding: 0;
-  border-radius: 50%;
   width: 24px;
   height: 24px;
+  border-radius: 9999px;
 }
 
 .c1 svg {
@@ -2785,9 +2785,9 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1 {
   padding: 0;
-  border-radius: 50%;
   width: 24px;
   height: 24px;
+  border-radius: 9999px;
   background-color: #FFFFFF;
   color: #D8385E;
 }
@@ -3806,9 +3806,9 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 
 .c1 {
   padding: 0;
-  border-radius: 50%;
   width: 24px;
   height: 24px;
+  border-radius: 9999px;
 }
 
 .c1 svg {
@@ -4598,9 +4598,9 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1 {
   padding: 0;
-  border-radius: 50%;
   width: 24px;
   height: 24px;
+  border-radius: 9999px;
 }
 
 .c1 svg {
@@ -6228,9 +6228,9 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 
 .c1 {
   padding: 0;
-  border-radius: 50%;
   width: 24px;
   height: 24px;
+  border-radius: 9999px;
   background-color: #FFFFFF;
   color: #231B22;
 }
@@ -7409,9 +7409,9 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 
 .c1 {
   padding: 0;
-  border-radius: 50%;
   width: 24px;
   height: 24px;
+  border-radius: 9999px;
 }
 
 .c1 svg {
@@ -8201,9 +8201,9 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 
 .c1 {
   padding: 0;
-  border-radius: 50%;
   width: 24px;
   height: 24px;
+  border-radius: 9999px;
 }
 
 .c1 svg {
