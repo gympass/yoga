@@ -240,7 +240,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
             Object {
               "alignItems": "center",
               "backgroundColor": "#F5F5FA",
-              "borderRadius": 12,
+              "borderRadius": 9999,
               "display": "flex",
               "height": 24,
               "justifyContent": "center",
@@ -1209,7 +1209,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             Object {
               "alignItems": "center",
               "backgroundColor": "#FFFFFF",
-              "borderRadius": 12,
+              "borderRadius": 9999,
               "display": "flex",
               "height": 24,
               "justifyContent": "center",
@@ -1521,7 +1521,7 @@ exports[`<Button /> Snapshots primary buttons With large prop should match snaps
             Object {
               "alignItems": "center",
               "backgroundColor": "#D8385E",
-              "borderRadius": 24,
+              "borderRadius": 9999,
               "display": "flex",
               "height": 48,
               "justifyContent": "center",
@@ -3096,7 +3096,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             Object {
               "alignItems": "center",
               "backgroundColor": "#FFFFFF",
-              "borderRadius": 12,
+              "borderRadius": 9999,
               "display": "flex",
               "height": 24,
               "justifyContent": "center",
@@ -3413,7 +3413,7 @@ exports[`<Button /> Snapshots secondary buttons With large prop should match sna
             Object {
               "alignItems": "center",
               "backgroundColor": "#231B22",
-              "borderRadius": 24,
+              "borderRadius": 9999,
               "display": "flex",
               "height": 48,
               "justifyContent": "center",
@@ -4152,7 +4152,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
             Object {
               "alignItems": "center",
               "backgroundColor": "#231B22",
-              "borderRadius": 12,
+              "borderRadius": 9999,
               "display": "flex",
               "height": 24,
               "justifyContent": "center",
