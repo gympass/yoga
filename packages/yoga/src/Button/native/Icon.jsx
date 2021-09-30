@@ -24,7 +24,7 @@ const ButtonContainer = styled.View`
       align-items: center;
       justify-content: center;
       
-      border-radius: ${large ? 24 : 12}px;
+      border-radius: ${button.border.radius}px;
 
       background-color: ${
         button.types.contained.backgroundColor[state].default
