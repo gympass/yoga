@@ -261,7 +261,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              undefined,
+              Array [
+                Object {
+                  "height": 12,
+                  "width": 12,
+                },
+              ],
               Object {
                 "opacity": 1,
               },
@@ -1225,7 +1230,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              undefined,
+              Array [
+                Object {
+                  "height": 12,
+                  "width": 12,
+                },
+              ],
               Object {
                 "opacity": 1,
               },
@@ -1532,7 +1542,12 @@ exports[`<Button /> Snapshots primary buttons With large prop should match snaps
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              undefined,
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ],
               Object {
                 "opacity": 1,
               },
@@ -3102,7 +3117,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              undefined,
+              Array [
+                Object {
+                  "height": 12,
+                  "width": 12,
+                },
+              ],
               Object {
                 "opacity": 1,
               },
@@ -3414,7 +3434,12 @@ exports[`<Button /> Snapshots secondary buttons With large prop should match sna
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              undefined,
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ],
               Object {
                 "opacity": 1,
               },
@@ -4148,7 +4173,12 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              undefined,
+              Array [
+                Object {
+                  "height": 12,
+                  "width": 12,
+                },
+              ],
               Object {
                 "opacity": 1,
               },
