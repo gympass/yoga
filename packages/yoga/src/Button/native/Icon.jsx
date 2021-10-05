@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { node, oneOfType, func, bool } from 'prop-types';
 import Icon from '../../Icon';
@@ -64,54 +64,60 @@ const ButtonContainer = styled.View`
   }}
 `;
 
-const ButtonIcon = ({
-  icon,
-  theme: {
-    yoga: {
-      components: { button },
+const ButtonIcon = forwardRef(
+  (
+    {
+      icon,
+      theme: {
+        yoga: {
+          components: { button },
+        },
+      },
+      large,
+      pressed,
+      disabled,
+      inverted,
+      secondary,
+      ...props
     },
-  },
-  large,
-  pressed,
-  disabled,
-  inverted,
-  secondary,
-  ...props
-}) => {
-  const state = secondary ? 'secondary' : 'primary';
-  let textColor = button.types.contained.font.default.color;
+    ref,
+  ) => {
+    const state = secondary ? 'secondary' : 'primary';
+    let textColor = button.types.contained.font.default.color;
 
-  if (disabled) {
-    textColor = button.types.contained.font.disabled.color;
-  } else if (inverted) {
-    textColor = button.types.contained.backgroundColor[state].default;
-    if (pressed) {
-      textColor = button.types.contained.backgroundColor[state].pressed;
+    if (disabled) {
+      textColor = button.types.contained.font.disabled.color;
+    } else if (inverted) {
+      textColor = button.types.contained.backgroundColor[state].default;
+      if (pressed) {
+        textColor = button.types.contained.backgroundColor[state].pressed;
+      }
+    } else if (pressed) {
+      textColor = button.types.contained.font.pressed.color;
     }
-  } else if (pressed) {
-    textColor = button.types.contained.font.pressed.color;
-  }
 
-  return (
-    <ButtonContainer
-      {...props}
-      large={large}
-      pressed={pressed}
-      disabled={disabled}
-      inverted={inverted}
-      secondary={secondary}
-      accessibilityRole="button"
-    >
-      <Icon
-        as={icon}
-        fill={textColor}
-        size={
-          large ? button.types.icon.svg.large : button.types.icon.svg.default
-        }
-      />
-    </ButtonContainer>
-  );
-};
+    return (
+      <ButtonContainer
+        {...props}
+        ref={ref}
+        large={large}
+        pressed={pressed}
+        disabled={disabled}
+        inverted={inverted}
+        secondary={secondary}
+        accessibilityRole="button"
+      >
+        <Icon
+          as={icon}
+          fill={textColor}
+          size={
+            large ? button.types.icon.svg.large : button.types.icon.svg.default
+          }
+        />
+      </ButtonContainer>
+    );
+  },
+);
 
 ButtonIcon.propTypes = {
   large: bool,
