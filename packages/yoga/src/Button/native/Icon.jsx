@@ -29,7 +29,7 @@ const ButtonContainer = styled.View`
       background-color: ${
         button.types.contained.backgroundColor[state].default
       };
-     
+
       width: ${
         large ? button.types.icon.size.large : button.types.icon.size.default
       }px;
@@ -119,12 +119,11 @@ ButtonIcon.propTypes = {
   pressed: bool,
   inverted: bool,
   secondary: bool,
-  /** an Icon from yoga-icons package */
   icon: oneOfType([node, func]),
 };
 
 ButtonIcon.defaultProps = {
-  large: undefined,
+  large: false,
   disabled: false,
   pressed: false,
   inverted: false,

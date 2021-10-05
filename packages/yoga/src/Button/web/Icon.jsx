@@ -32,9 +32,9 @@ const IconStyled = styled(Button)`
       height: ${
         large ? button.types.icon.size.large : button.types.icon.size.default
       }px;
-     
+
       border-radius: ${button.border.radius}px;
-      
+
       svg {
         width: ${
           large ? button.types.icon.svg.large : button.types.icon.svg.default
@@ -69,25 +69,25 @@ const IconStyled = styled(Button)`
           ? `
               background-color: ${button.types.contained.font.default.color};
               color: ${button.types.contained.backgroundColor[state].default};
-      
+
               svg {
                 fill: ${button.types.contained.backgroundColor[state].default};
               }
-      
+
               &:active {
                 background-color: ${hexToRgb(
                   button.types.contained.font.default.color,
                   0.75,
                 )};
                 color: ${button.types.contained.backgroundColor[state].pressed};
-      
+
                 svg {
                   fill: ${
                     button.types.contained.backgroundColor[state].pressed
                   };
                 }
               }
-      
+
               &:not([disabled]):hover, &:not([disabled]):focus {
                 box-shadow: 0 4px 8px ${hexToRgb(
                   button.types.contained.font.default.color,
@@ -112,15 +112,14 @@ ButtonIcon.propTypes = {
   disabled: bool,
   secondary: bool,
   inverted: bool,
-  /** an Icon from yoga-icons package */
   icon: oneOfType([node, func]),
 };
 
 ButtonIcon.defaultProps = {
-  large: undefined,
-  disabled: undefined,
-  secondary: undefined,
-  inverted: undefined,
+  large: false,
+  disabled: false,
+  secondary: false,
+  inverted: false,
   icon: undefined,
 };
 
