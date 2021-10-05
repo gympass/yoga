@@ -74,23 +74,6 @@ const ArrowIcon = styled(Arrow)`
 `;
 
 const NavigationLabel = styled.button`
-  ${({
-    active,
-    level,
-    theme: {
-      yoga: {
-        colors: { text, primary },
-      },
-    },
-  }) => `
-  color: ${active ? primary : hexToRgb(text.secondary, 0.75)};
-  text-indent: calc(15px * ${level});
-
-  :hover, :focus {
-    color: ${primary};
-  }
-`}
-
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
@@ -110,6 +93,23 @@ const NavigationLabel = styled.button`
   :hover {
     cursor: pointer;
   }
+
+  ${({
+    active,
+    level,
+    theme: {
+      yoga: {
+        colors: { text, primary },
+      },
+    },
+  }) => `
+  color: ${active ? primary : hexToRgb(text.secondary, 0.75)};
+  text-indent: calc(15px * ${level});
+
+  :hover, :focus {
+    color: ${primary};
+  }
+`}
 `;
 
 const Collapsible = styled(NavigationLabel)`
