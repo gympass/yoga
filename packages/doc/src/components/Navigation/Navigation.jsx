@@ -138,7 +138,7 @@ const ListItem = ({
 
   const { pathname } = window.location;
   const linkPath = prefix ? `/yoga${filteredUrl}` : filteredUrl;
-  const isActive = pathname === linkPath;
+  const isActive = window && pathname.replace(/\/$/, '') === linkPath;
 
   const onNavigate = () => {
     if (filteredUrl !== pathname) {
