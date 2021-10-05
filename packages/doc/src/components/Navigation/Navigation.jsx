@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Link, navigate } from 'gatsby';
+import { navigate } from 'gatsby';
 import { arrayOf, func, bool, shape, number, string } from 'prop-types';
 
 import Arrow from 'images/arrow-dropdown.svg';
@@ -65,39 +65,17 @@ const StyledList = styled(MDXElements.Ul)`
   width: 100%;
 `;
 
-const AnchorLink = styled(Link)``;
-
 const ArrowIcon = styled(Arrow)`
+  width: 0.6rem;
+  transition: all 200ms ease-out;
   ${({ isOpen }) => `
-    width: 0.6rem;
-    transition: all 200ms ease-out;
     transform: rotate(${isOpen ? 180 : 0}deg);
-  `}
-`;
-
-const StyledListItem = styled.li`
-  ${({
-    active,
-    theme: {
-      yoga: {
-        colors: { primary },
-      },
-    },
-  }) => `
-    & > ${AnchorLink} {
-      ${
-        active
-          ? `
-          color: ${primary};
-            `
-          : ''
-      }
-    }
   `}
 `;
 
 const NavigationLabel = styled.button`
   ${({
+    active,
     level,
     theme: {
       yoga: {
@@ -105,6 +83,14 @@ const NavigationLabel = styled.button`
       },
     },
   }) => `
+  color: ${active ? primary : hexToRgb(text.secondary, 0.75)};
+  text-indent: calc(15px * ${level});
+
+  :hover, :focus {
+    color: ${primary};
+  }
+`}
+
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
@@ -119,15 +105,11 @@ const NavigationLabel = styled.button`
   background: none;
   border: none;
   transition: all 200ms ease-out;
-  color: ${hexToRgb(text.secondary, 0.75)};
-  text-indent: calc(15px * ${level});
   outline-offset: 2px;
 
-  :hover, :focus {
-    color: ${primary};
+  :hover {
     cursor: pointer;
   }
-`};
 `;
 
 const Collapsible = styled(NavigationLabel)`
@@ -156,7 +138,7 @@ const ListItem = ({
 
   const { pathname } = window.location;
   const linkPath = prefix ? `/yoga${filteredUrl}` : filteredUrl;
-  const isActive = window ? pathname.replace(/\/%/, '') === linkPath : false;
+  const isActive = pathname === linkPath;
 
   const onNavigate = () => {
     if (filteredUrl !== pathname) {
@@ -167,21 +149,21 @@ const ListItem = ({
 
   if (linkable) {
     return (
-      <StyledListItem key={url} active={isActive}>
-        <AnchorLink
-          as={NavigationLabel}
+      <li key={url}>
+        <NavigationLabel
           level={level}
           tabindex="0"
+          active={isActive}
           onClick={onNavigate}
         >
           {title}
-        </AnchorLink>
-      </StyledListItem>
+        </NavigationLabel>
+      </li>
     );
   }
 
   return (
-    <StyledListItem key={url} active={isActive}>
+    <li key={url}>
       <Collapsible
         displayChildren={isCollapsed}
         onClick={() => setCollapsed(!isCollapsed)}
@@ -201,7 +183,7 @@ const ListItem = ({
           />
         </StyledList>
       )}
-    </StyledListItem>
+    </li>
   );
 };
 
