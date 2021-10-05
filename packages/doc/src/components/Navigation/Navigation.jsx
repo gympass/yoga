@@ -37,7 +37,7 @@ const Wrapper = styled.aside`
       left: 0;
 
       width: 100%;
-      height: calc(100vh - 70px);
+      height: calc(100% - 70px);
 
       overflow: auto;
       z-index: 3;
