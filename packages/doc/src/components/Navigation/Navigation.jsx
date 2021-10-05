@@ -9,7 +9,7 @@ import createTree from './tree';
 
 import MDXElements from '../MDXElements';
 
-const Wrapper = styled.div`
+const Wrapper = styled.aside`
   ${({
     opened,
     theme: {
@@ -45,7 +45,7 @@ const Wrapper = styled.div`
   `};
 `;
 
-const Nav = styled.div`
+const Nav = styled.nav`
   height: auto;
   padding: 30px;
   width: 100%;
@@ -185,6 +185,9 @@ const ListItem = ({
       <Collapsible
         displayChildren={isCollapsed}
         onClick={() => setCollapsed(!isCollapsed)}
+        aria-label={`Toggle ${title} collapsible section`}
+        role="switch"
+        aria-checked={isCollapsed.toString()}
       >
         {title} <ArrowIcon isOpen={isCollapsed} />
       </Collapsible>
@@ -254,7 +257,7 @@ const Navigation = ({ items, toggleMenu, opened, prefix }) => {
 
   return (
     <Wrapper opened={opened}>
-      <Nav>
+      <Nav aria-label="Contents navigation">
         <List tree={tree} toggleMenu={toggleMenu} prefix={prefix} />
       </Nav>
     </Wrapper>
