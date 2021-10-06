@@ -233,9 +233,9 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         accessibilityRole="button"
         disabled={true}
         inverted={false}
-        large={false}
         pressed={false}
         secondary={false}
+        small={false}
         style={
           Array [
             Object {
@@ -243,19 +243,19 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
               "backgroundColor": "#F5F5FA",
               "borderRadius": 9999,
               "display": "flex",
-              "height": 24,
+              "height": 48,
               "justifyContent": "center",
-              "width": 24,
+              "width": 48,
             },
           ]
         }
       >
         <RNSVGSvgView
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={24}
+          bbWidth={24}
           fill="#D7D7E0"
           focusable={false}
-          height={12}
+          height={24}
           style={
             Array [
               Object {
@@ -264,8 +264,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
               },
               Array [
                 Object {
-                  "height": 12,
-                  "width": 12,
+                  "height": 24,
+                  "width": 24,
                 },
               ],
               Object {
@@ -273,12 +273,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 24,
+                "width": 24,
               },
             ]
           }
-          width={12}
+          width={24}
         >
           <RNSVGGroup
             fill={
@@ -1203,9 +1203,9 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
         accessibilityRole="button"
         disabled={false}
         inverted={true}
-        large={false}
         pressed={false}
         secondary={false}
+        small={false}
         style={
           Array [
             Object {
@@ -1213,19 +1213,19 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
               "backgroundColor": "#FFFFFF",
               "borderRadius": 9999,
               "display": "flex",
-              "height": 24,
+              "height": 48,
               "justifyContent": "center",
-              "width": 24,
+              "width": 48,
             },
           ]
         }
       >
         <RNSVGSvgView
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={24}
+          bbWidth={24}
           fill="#D8385E"
           focusable={false}
-          height={12}
+          height={24}
           style={
             Array [
               Object {
@@ -1234,8 +1234,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
               },
               Array [
                 Object {
-                  "height": 12,
-                  "width": 12,
+                  "height": 24,
+                  "width": 24,
                 },
               ],
               Object {
@@ -1243,12 +1243,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 24,
+                "width": 24,
               },
             ]
           }
-          width={12}
+          width={24}
         >
           <RNSVGGroup
             fill={
@@ -1518,6 +1518,7 @@ exports[`<Button /> Snapshots primary buttons With large prop should match snaps
         large={true}
         pressed={false}
         secondary={false}
+        small={false}
         style={
           Array [
             Object {
@@ -3091,9 +3092,9 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
         accessibilityRole="button"
         disabled={false}
         inverted={true}
-        large={false}
         pressed={false}
         secondary={true}
+        small={false}
         style={
           Array [
             Object {
@@ -3101,19 +3102,19 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
               "backgroundColor": "#FFFFFF",
               "borderRadius": 9999,
               "display": "flex",
-              "height": 24,
+              "height": 48,
               "justifyContent": "center",
-              "width": 24,
+              "width": 48,
             },
           ]
         }
       >
         <RNSVGSvgView
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={24}
+          bbWidth={24}
           fill="#231B22"
           focusable={false}
-          height={12}
+          height={24}
           style={
             Array [
               Object {
@@ -3122,8 +3123,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
               },
               Array [
                 Object {
-                  "height": 12,
-                  "width": 12,
+                  "height": 24,
+                  "width": 24,
                 },
               ],
               Object {
@@ -3131,12 +3132,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 24,
+                "width": 24,
               },
             ]
           }
-          width={12}
+          width={24}
         >
           <RNSVGGroup
             fill={
@@ -3411,6 +3412,7 @@ exports[`<Button /> Snapshots secondary buttons With large prop should match sna
         large={true}
         pressed={false}
         secondary={true}
+        small={false}
         style={
           Array [
             Object {
@@ -4148,9 +4150,9 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
         accessibilityRole="button"
         disabled={false}
         inverted={false}
-        large={false}
         pressed={false}
         secondary={true}
+        small={false}
         style={
           Array [
             Object {
@@ -4158,19 +4160,19 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
               "backgroundColor": "#231B22",
               "borderRadius": 9999,
               "display": "flex",
-              "height": 24,
+              "height": 48,
               "justifyContent": "center",
-              "width": 24,
+              "width": 48,
             },
           ]
         }
       >
         <RNSVGSvgView
-          bbHeight={12}
-          bbWidth={12}
+          bbHeight={24}
+          bbWidth={24}
           fill="#FFFFFF"
           focusable={false}
-          height={12}
+          height={24}
           style={
             Array [
               Object {
@@ -4179,8 +4181,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
               },
               Array [
                 Object {
-                  "height": 12,
-                  "width": 12,
+                  "height": 24,
+                  "width": 24,
                 },
               ],
               Object {
@@ -4188,12 +4190,12 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
               },
               Object {
                 "flex": 0,
-                "height": 12,
-                "width": 12,
+                "height": 24,
+                "width": 24,
               },
             ]
           }
-          width={12}
+          width={24}
         >
           <RNSVGGroup
             fill={

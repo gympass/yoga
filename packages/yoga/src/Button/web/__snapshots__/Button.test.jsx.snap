@@ -169,8 +169,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with icon Button 1`] = `
 .c1 {
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 {
@@ -211,8 +211,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: 48px;
 }
 
 .c0 svg {
@@ -263,8 +262,8 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   >
     <svg
       class="c1"
-      height="12"
-      width="12"
+      height="24"
+      width="24"
     />
   </button>
 </div>
@@ -1057,8 +1056,8 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 
 exports[`<Button /> Snapshots primary buttons With disabled prop should match snapshot with icon Button 1`] = `
 .c1 {
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 {
@@ -1099,8 +1098,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: 48px;
 }
 
 .c0 svg {
@@ -1151,8 +1149,8 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   >
     <svg
       class="c1"
-      height="12"
-      width="12"
+      height="24"
+      width="24"
     />
   </button>
 </div>
@@ -2654,8 +2652,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with icon Button 1`] = `
 .c1 {
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 {
@@ -2698,8 +2696,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   background-color: #FFFFFF;
   color: #D8385E;
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: 48px;
 }
 
 .c0 svg {
@@ -2767,8 +2764,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   >
     <svg
       class="c1"
-      height="12"
-      width="12"
+      height="24"
+      width="24"
     />
   </button>
 </div>
@@ -3656,8 +3653,8 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with icon Button 1`] = `
 .c1 {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
 }
 
 .c0 {
@@ -3698,8 +3695,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: 32px;
 }
 
 .c0 svg {
@@ -3749,8 +3745,8 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
   >
     <svg
       class="c1"
-      height="12"
-      width="12"
+      height="16"
+      width="16"
     />
   </button>
 </div>
@@ -4429,8 +4425,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with icon Button 1`] = `
 .c1 {
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 {
@@ -4471,8 +4467,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: 48px;
 }
 
 .c0 svg {
@@ -4522,8 +4517,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   >
     <svg
       class="c1"
-      height="12"
-      width="12"
+      height="24"
+      width="24"
     />
   </button>
 </div>
@@ -6020,8 +6015,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with icon Button 1`] = `
 .c1 {
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 {
@@ -6064,8 +6059,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
   background-color: #FFFFFF;
   color: #231B22;
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: 48px;
 }
 
 .c0 svg {
@@ -6133,8 +6127,8 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
   >
     <svg
       class="c1"
-      height="12"
-      width="12"
+      height="24"
+      width="24"
     />
   </button>
 </div>
@@ -7182,8 +7176,8 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with icon Button 1`] = `
 .c1 {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
 }
 
 .c0 {
@@ -7224,8 +7218,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: 32px;
 }
 
 .c0 svg {
@@ -7275,8 +7268,8 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
   >
     <svg
       class="c1"
-      height="12"
-      width="12"
+      height="16"
+      width="16"
     />
   </button>
 </div>
@@ -7955,8 +7948,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with icon Button 1`] = `
 .c1 {
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 {
@@ -7997,8 +7990,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   -webkit-text-decoration: none;
   text-decoration: none;
   padding: 0;
-  width: 24px;
-  height: 24px;
+  width: 48px;
 }
 
 .c0 svg {
@@ -8048,8 +8040,8 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   >
     <svg
       class="c1"
-      height="12"
-      width="12"
+      height="24"
+      width="24"
     />
   </button>
 </div>
