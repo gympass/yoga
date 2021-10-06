@@ -73,6 +73,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   fill: #D7D7E0;
 }
 
+.c15 {
+  width: 16px;
+  height: 16px;
+}
+
 .c9 {
   margin: 0;
   padding: 0;
@@ -302,11 +307,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.c15 {
-  width: 16px;
-  height: 16px;
 }
 
 <div>

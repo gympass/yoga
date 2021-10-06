@@ -233,6 +233,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         accessibilityRole="button"
         disabled={true}
         inverted={false}
+        large={false}
         pressed={false}
         secondary={false}
         style={
@@ -1202,6 +1203,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
         accessibilityRole="button"
         disabled={false}
         inverted={true}
+        large={false}
         pressed={false}
         secondary={false}
         style={
@@ -3089,6 +3091,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
         accessibilityRole="button"
         disabled={false}
         inverted={true}
+        large={false}
         pressed={false}
         secondary={true}
         style={
@@ -4145,6 +4148,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
         accessibilityRole="button"
         disabled={false}
         inverted={false}
+        large={false}
         pressed={false}
         secondary={true}
         style={

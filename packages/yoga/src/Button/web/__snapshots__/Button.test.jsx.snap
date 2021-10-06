@@ -168,6 +168,11 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 `;
 
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with icon Button 1`] = `
+.c1 {
+  width: 12px;
+  height: 12px;
+}
+
 .c0 {
   box-sizing: border-box;
   text-align: center;
@@ -205,6 +210,9 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   line-height: 1;
   -webkit-text-decoration: none;
   text-decoration: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 svg {
@@ -240,51 +248,24 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   fill: #D7D7E0;
 }
 
-.c1 {
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-}
-
-.c1 svg {
-  margin: 0;
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
 }
 
-.c1 svg {
-  width: 12px;
-  height: 12px;
-  fill: #FFFFFF;
-}
-
-.c1:disabled,
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  box-shadow: unset;
-}
-
-.c1:not([disabled]):hover {
-  color: rgba(216,56,94,0.5);
-}
-
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  color: rgba(216,56,94,0.75);
-}
-
-.c1:disabled {
-  color: #D7D7E0;
-}
-
 <div>
   <button
-    class="c0 c1"
+    class="c0"
     disabled=""
   >
-    <svg />
+    <svg
+      class="c1"
+      height="12"
+      width="12"
+    />
   </button>
 </div>
 `;
@@ -1075,6 +1056,11 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 `;
 
 exports[`<Button /> Snapshots primary buttons With disabled prop should match snapshot with icon Button 1`] = `
+.c1 {
+  width: 12px;
+  height: 12px;
+}
+
 .c0 {
   box-sizing: border-box;
   text-align: center;
@@ -1112,6 +1098,9 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   line-height: 1;
   -webkit-text-decoration: none;
   text-decoration: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 svg {
@@ -1147,51 +1136,24 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   fill: #D7D7E0;
 }
 
-.c1 {
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-}
-
-.c1 svg {
-  margin: 0;
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
 }
 
-.c1 svg {
-  width: 12px;
-  height: 12px;
-  fill: #FFFFFF;
-}
-
-.c1:disabled,
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  box-shadow: unset;
-}
-
-.c1:not([disabled]):hover {
-  color: rgba(216,56,94,0.5);
-}
-
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  color: rgba(216,56,94,0.75);
-}
-
-.c1:disabled {
-  color: #D7D7E0;
-}
-
 <div>
   <button
-    class="c0 c1"
+    class="c0"
     disabled=""
   >
-    <svg />
+    <svg
+      class="c1"
+      height="12"
+      width="12"
+    />
   </button>
 </div>
 `;
@@ -2691,6 +2653,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 `;
 
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with icon Button 1`] = `
+.c1 {
+  width: 12px;
+  height: 12px;
+}
+
 .c0 {
   box-sizing: border-box;
   text-align: center;
@@ -2730,6 +2697,9 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   text-decoration: none;
   background-color: #FFFFFF;
   color: #D8385E;
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 svg {
@@ -2783,70 +2753,23 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c1 {
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-  background-color: #FFFFFF;
-  color: #D8385E;
-}
-
-.c1 svg {
-  margin: 0;
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
 }
 
-.c1 svg {
-  width: 12px;
-  height: 12px;
-  fill: #FFFFFF;
-}
-
-.c1:disabled,
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  box-shadow: unset;
-}
-
-.c1:not([disabled]):hover {
-  color: rgba(216,56,94,0.5);
-}
-
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  color: rgba(216,56,94,0.75);
-}
-
-.c1:disabled {
-  color: #D7D7E0;
-}
-
-.c1 svg {
-  fill: #D8385E;
-}
-
-.c1:active {
-  background-color: rgba(255,255,255,0.75);
-  color: rgba(216,56,94,0.75);
-}
-
-.c1:active svg {
-  fill: rgba(216,56,94,0.75);
-}
-
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
-}
-
 <div>
   <button
-    class="c0 c1"
+    class="c0"
   >
-    <svg />
+    <svg
+      class="c1"
+      height="12"
+      width="12"
+    />
   </button>
 </div>
 `;
@@ -3732,6 +3655,11 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 `;
 
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with icon Button 1`] = `
+.c1 {
+  width: 12px;
+  height: 12px;
+}
+
 .c0 {
   box-sizing: border-box;
   text-align: center;
@@ -3769,6 +3697,9 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
   line-height: 1;
   -webkit-text-decoration: none;
   text-decoration: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 svg {
@@ -3804,50 +3735,23 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
   fill: #D7D7E0;
 }
 
-.c1 {
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-}
-
-.c1 svg {
-  margin: 0;
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
 }
 
-.c1 svg {
-  width: 12px;
-  height: 12px;
-  fill: #FFFFFF;
-}
-
-.c1:disabled,
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  box-shadow: unset;
-}
-
-.c1:not([disabled]):hover {
-  color: rgba(216,56,94,0.5);
-}
-
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  color: rgba(216,56,94,0.75);
-}
-
-.c1:disabled {
-  color: #D7D7E0;
-}
-
 <div>
   <button
-    class="c0 c1"
+    class="c0"
   >
-    <svg />
+    <svg
+      class="c1"
+      height="12"
+      width="12"
+    />
   </button>
 </div>
 `;
@@ -4524,6 +4428,11 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 `;
 
 exports[`<Button /> Snapshots primary buttons Without props should match snapshot with icon Button 1`] = `
+.c1 {
+  width: 12px;
+  height: 12px;
+}
+
 .c0 {
   box-sizing: border-box;
   text-align: center;
@@ -4561,6 +4470,9 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   line-height: 1;
   -webkit-text-decoration: none;
   text-decoration: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 svg {
@@ -4596,50 +4508,23 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   fill: #D7D7E0;
 }
 
-.c1 {
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-}
-
-.c1 svg {
-  margin: 0;
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
 }
 
-.c1 svg {
-  width: 12px;
-  height: 12px;
-  fill: #FFFFFF;
-}
-
-.c1:disabled,
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  box-shadow: unset;
-}
-
-.c1:not([disabled]):hover {
-  color: rgba(216,56,94,0.5);
-}
-
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  color: rgba(216,56,94,0.75);
-}
-
-.c1:disabled {
-  color: #D7D7E0;
-}
-
 <div>
   <button
-    class="c0 c1"
+    class="c0"
   >
-    <svg />
+    <svg
+      class="c1"
+      height="12"
+      width="12"
+    />
   </button>
 </div>
 `;
@@ -6134,6 +6019,11 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 `;
 
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with icon Button 1`] = `
+.c1 {
+  width: 12px;
+  height: 12px;
+}
+
 .c0 {
   box-sizing: border-box;
   text-align: center;
@@ -6173,6 +6063,9 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
   text-decoration: none;
   background-color: #FFFFFF;
   color: #231B22;
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 svg {
@@ -6226,70 +6119,23 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c1 {
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-  background-color: #FFFFFF;
-  color: #231B22;
-}
-
-.c1 svg {
-  margin: 0;
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
 }
 
-.c1 svg {
-  width: 12px;
-  height: 12px;
-  fill: #FFFFFF;
-}
-
-.c1:disabled,
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  box-shadow: unset;
-}
-
-.c1:not([disabled]):hover {
-  color: rgba(35,27,34,0.5);
-}
-
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  color: rgba(35,27,34,0.75);
-}
-
-.c1:disabled {
-  color: #D7D7E0;
-}
-
-.c1 svg {
-  fill: #231B22;
-}
-
-.c1:active {
-  background-color: rgba(255,255,255,0.75);
-  color: rgba(35,27,34,0.75);
-}
-
-.c1:active svg {
-  fill: rgba(35,27,34,0.75);
-}
-
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
-}
-
 <div>
   <button
-    class="c0 c1"
+    class="c0"
   >
-    <svg />
+    <svg
+      class="c1"
+      height="12"
+      width="12"
+    />
   </button>
 </div>
 `;
@@ -7335,6 +7181,11 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 `;
 
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with icon Button 1`] = `
+.c1 {
+  width: 12px;
+  height: 12px;
+}
+
 .c0 {
   box-sizing: border-box;
   text-align: center;
@@ -7372,6 +7223,9 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
   line-height: 1;
   -webkit-text-decoration: none;
   text-decoration: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 svg {
@@ -7407,50 +7261,23 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
   fill: #D7D7E0;
 }
 
-.c1 {
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-}
-
-.c1 svg {
-  margin: 0;
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
 }
 
-.c1 svg {
-  width: 12px;
-  height: 12px;
-  fill: #FFFFFF;
-}
-
-.c1:disabled,
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  box-shadow: unset;
-}
-
-.c1:not([disabled]):hover {
-  color: rgba(35,27,34,0.5);
-}
-
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  color: rgba(35,27,34,0.75);
-}
-
-.c1:disabled {
-  color: #D7D7E0;
-}
-
 <div>
   <button
-    class="c0 c1"
+    class="c0"
   >
-    <svg />
+    <svg
+      class="c1"
+      height="12"
+      width="12"
+    />
   </button>
 </div>
 `;
@@ -8127,6 +7954,11 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 `;
 
 exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with icon Button 1`] = `
+.c1 {
+  width: 12px;
+  height: 12px;
+}
+
 .c0 {
   box-sizing: border-box;
   text-align: center;
@@ -8164,6 +7996,9 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   line-height: 1;
   -webkit-text-decoration: none;
   text-decoration: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .c0 svg {
@@ -8199,50 +8034,23 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   fill: #D7D7E0;
 }
 
-.c1 {
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  border-radius: 9999px;
-}
-
-.c1 svg {
-  margin: 0;
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
   -webkit-transition: fill 0.2s;
   transition: fill 0.2s;
 }
 
-.c1 svg {
-  width: 12px;
-  height: 12px;
-  fill: #FFFFFF;
-}
-
-.c1:disabled,
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  box-shadow: unset;
-}
-
-.c1:not([disabled]):hover {
-  color: rgba(35,27,34,0.5);
-}
-
-.c1:not([disabled]):focus,
-.c1:not([disabled]):active {
-  color: rgba(35,27,34,0.75);
-}
-
-.c1:disabled {
-  color: #D7D7E0;
-}
-
 <div>
   <button
-    class="c0 c1"
+    class="c0"
   >
-    <svg />
+    <svg
+      class="c1"
+      height="12"
+      width="12"
+    />
   </button>
 </div>
 `;
