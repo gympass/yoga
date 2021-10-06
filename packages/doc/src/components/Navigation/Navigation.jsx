@@ -239,7 +239,7 @@ const Navigation = ({ items, toggleMenu, opened, prefix }) => {
 
   return (
     <Wrapper opened={opened}>
-      <Nav aria-label="Contents navigation">
+      <Nav>
         <List tree={tree} toggleMenu={toggleMenu} prefix={prefix} />
       </Nav>
     </Wrapper>
