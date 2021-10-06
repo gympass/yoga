@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { node, oneOfType, func, bool } from 'prop-types';
+
 import Icon from '../../Icon';
 import withTouchable from './withTouchable';
 

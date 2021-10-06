@@ -1,111 +1,64 @@
 import React, { forwardRef } from 'react';
 import { oneOfType, func, node, bool } from 'prop-types';
-import styled from 'styled-components';
-import { hexToRgb } from '@gympass/yoga-common';
+import styled, { withTheme } from 'styled-components';
 
-import Button from './Button';
+import StyledButton from './StyledButton';
+import Icon from '../../Icon';
 
-const IconStyled = styled(Button)`
+const IconStyled = styled(StyledButton)`
   padding: 0;
 
   svg {
-    margin: 0;
+    width: unset;
+    height: unset;
+    margin-right: unset;
+
     transition: fill 0.2s;
   }
 
   ${({
     large,
-    inverted,
-    secondary,
     theme: {
       yoga: {
         components: { button },
       },
     },
-  }) => {
-    const state = secondary ? 'secondary' : 'primary';
-
-    return `
-      width: ${
-        large ? button.types.icon.size.large : button.types.icon.size.default
-      }px;
-      height: ${
-        large ? button.types.icon.size.large : button.types.icon.size.default
-      }px;
-
-      border-radius: ${button.border.radius}px;
-
-      svg {
-        width: ${
-          large ? button.types.icon.svg.large : button.types.icon.svg.default
-        }px;
-        height: ${
-          large ? button.types.icon.svg.large : button.types.icon.svg.default
-        }px;
-        fill: ${button.types.contained.font.default.color};
-      }
-
-      &:disabled,
-      &:not([disabled]):hover,
-      &:not([disabled]):focus,
-      &:not([disabled]):active {
-        box-shadow: unset;
-      }
-
-      &:not([disabled]):hover  {
-        color: ${hexToRgb(button.types.link.font[state].color, 0.5)};
-      }
-
-      &:not([disabled]):focus, &:not([disabled]):active {
-        color: ${hexToRgb(button.types.link.font[state].color, 0.75)};
-      }
-
-      &:disabled {
-        color: ${button.types.link.font.disabled.color};
-      }
-
-      ${
-        inverted
-          ? `
-              background-color: ${button.types.contained.font.default.color};
-              color: ${button.types.contained.backgroundColor[state].default};
-
-              svg {
-                fill: ${button.types.contained.backgroundColor[state].default};
-              }
-
-              &:active {
-                background-color: ${hexToRgb(
-                  button.types.contained.font.default.color,
-                  0.75,
-                )};
-                color: ${button.types.contained.backgroundColor[state].pressed};
-
-                svg {
-                  fill: ${
-                    button.types.contained.backgroundColor[state].pressed
-                  };
-                }
-              }
-
-              &:not([disabled]):hover, &:not([disabled]):focus {
-                box-shadow: 0 4px 8px ${hexToRgb(
-                  button.types.contained.font.default.color,
-                  0.45,
-                )};
-              }
-            `
-          : ''
-      }
-    `;
-  }}
+  }) => `
+    width: ${
+      large ? button.types.icon.size.large : button.types.icon.size.default
+    }px;
+    height: ${
+      large ? button.types.icon.size.large : button.types.icon.size.default
+    }px;
+  `}
 `;
 
-const ButtonIcon = forwardRef(({ icon: Icon, ...props }, ref) => (
-  <IconStyled ref={ref} {...props}>
-    <Icon />
-  </IconStyled>
-));
+const ButtonIcon = forwardRef(
+  (
+    {
+      icon,
+      theme: {
+        yoga: {
+          components: { button },
+        },
+      },
+      large,
+      ...props
+    },
+    ref,
+  ) => {
+    return (
+      <IconStyled {...props} ref={ref} large={large}>
+        <Icon
+          as={icon}
+          size={
+            large ? button.types.icon.svg.large : button.types.icon.svg.default
+          }
+        />
+      </IconStyled>
+    );
+  },
+);
 
 ButtonIcon.propTypes = {
   large: bool,
@@ -125,4 +78,4 @@ ButtonIcon.defaultProps = {
 
 ButtonIcon.displayName = 'Button.Icon';
 
-export default ButtonIcon;
+export default withTheme(ButtonIcon);
