@@ -169,6 +169,7 @@ const ListItem = ({
         onClick={() => setCollapsed(!isCollapsed)}
         aria-label={`Toggle ${title} collapsible section`}
         role="switch"
+        level={level}
         aria-checked={isCollapsed.toString()}
       >
         {title} <ArrowIcon isOpen={isCollapsed} />
