@@ -1,29 +1,25 @@
 ### Usage
 
-#### Default
-
 ```javascript
-<Box display="flex" justifyContent="space-evenly" width="100%">
+<Box
+  display="flex"
+  justifyContent="space-evenly"
+  alignItems="center"
+  width="100%"
+>
   <Button.Icon icon={Booking} />
-  <Button.Icon icon={Booking} secondary />
+  <Button.Icon icon={Edit} secondary />
+  <Button.Icon icon={Add} small />
+  <Button.Icon icon={Check} small secondary />
 </Box>
 ```
 
-#### With large
+#### Inverted
 
 ```javascript
 <Box display="flex" justifyContent="space-evenly" width="100%">
-  <Button.Icon icon={Booking} large/>
-  <Button.Icon icon={Booking} large secondary />
-</Box>
-```
-
-#### With inverted
-
-```javascript
-<Box display="flex" justifyContent="space-evenly" width="100%">
-  <Button.Icon icon={Booking} inverted/>
-  <Button.Icon icon={Booking} inverted secondary />
+  <Button.Icon icon={ChevronLeft} inverted />
+  <Button.Icon icon={Close} inverted secondary />
 </Box>
 ```
 

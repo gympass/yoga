@@ -124,20 +124,6 @@ const Button = ({
         bottom: spacing.xxsmall,
       },
     },
-    icon: {
-      size: {
-        default: 24,
-        large: 48,
-      },
-      svg: {
-        default: 12,
-        large: 24,
-      },
-      margin: {
-        top: spacing.small,
-        bottom: spacing.xxsmall,
-      },
-    },
   },
 });
 

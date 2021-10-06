@@ -17,19 +17,14 @@ const IconStyled = styled(StyledButton)`
   }
 
   ${({
-    large,
+    small,
     theme: {
       yoga: {
         components: { button },
       },
     },
   }) => `
-    width: ${
-      large ? button.types.icon.size.large : button.types.icon.size.default
-    }px;
-    height: ${
-      large ? button.types.icon.size.large : button.types.icon.size.default
-    }px;
+    width: ${small ? button.height.small : button.height.default}px;
   `}
 `;
 
@@ -42,18 +37,16 @@ const ButtonIcon = forwardRef(
           components: { button },
         },
       },
-      large,
+      small,
       ...props
     },
     ref,
   ) => {
     return (
-      <IconStyled {...props} ref={ref} large={large}>
+      <IconStyled {...props} ref={ref} small={small}>
         <Icon
           as={icon}
-          size={
-            large ? button.types.icon.svg.large : button.types.icon.svg.default
-          }
+          size={small ? button.icon.size.small : button.icon.size.default}
         />
       </IconStyled>
     );
@@ -61,7 +54,7 @@ const ButtonIcon = forwardRef(
 );
 
 ButtonIcon.propTypes = {
-  large: bool,
+  small: bool,
   disabled: bool,
   secondary: bool,
   inverted: bool,
@@ -69,7 +62,7 @@ ButtonIcon.propTypes = {
 };
 
 ButtonIcon.defaultProps = {
-  large: false,
+  small: false,
   disabled: false,
   secondary: false,
   inverted: false,

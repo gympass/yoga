@@ -11,7 +11,7 @@ const ButtonContainer = styled.View`
   justify-content: center;
 
   ${({
-    large,
+    small,
     secondary,
     theme: {
       yoga: {
@@ -31,12 +31,8 @@ const ButtonContainer = styled.View`
         button.types.contained.backgroundColor[state].default
       };
 
-      width: ${
-        large ? button.types.icon.size.large : button.types.icon.size.default
-      }px;
-      height: ${
-        large ? button.types.icon.size.large : button.types.icon.size.default
-      }px;
+      width: ${small ? button.height.small : button.height.default}px;
+      height: ${small ? button.height.small : button.height.default}px;
 
       ${
         !disabled && pressed
@@ -74,7 +70,7 @@ const ButtonIcon = forwardRef(
           components: { button },
         },
       },
-      large,
+      small,
       pressed,
       disabled,
       inverted,
@@ -101,7 +97,7 @@ const ButtonIcon = forwardRef(
       <ButtonContainer
         {...props}
         ref={ref}
-        large={large}
+        small={small}
         pressed={pressed}
         disabled={disabled}
         inverted={inverted}
@@ -111,9 +107,7 @@ const ButtonIcon = forwardRef(
         <Icon
           as={icon}
           fill={textColor}
-          size={
-            large ? button.types.icon.svg.large : button.types.icon.svg.default
-          }
+          size={small ? button.icon.size.small : button.icon.size.default}
         />
       </ButtonContainer>
     );
@@ -121,7 +115,7 @@ const ButtonIcon = forwardRef(
 );
 
 ButtonIcon.propTypes = {
-  large: bool,
+  small: bool,
   disabled: bool,
   pressed: bool,
   inverted: bool,
@@ -130,7 +124,7 @@ ButtonIcon.propTypes = {
 };
 
 ButtonIcon.defaultProps = {
-  large: false,
+  small: false,
   disabled: false,
   pressed: false,
   inverted: false,
