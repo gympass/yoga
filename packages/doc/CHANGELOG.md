@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.32...@gympass/yoga-doc@2.9.0) (2021-10-06)
+
+
+### Bug Fixes
+
+* **navigation:** remove uneeded aria attribute ([452e258](https://github.com/Gympass/yoga/commit/452e258ee233ceb1cf827d7a53fff3a8bc8c9f90))
+* add back conditional regexp ([1b88071](https://github.com/Gympass/yoga/commit/1b88071c39d26c138a8091590d9065a8cbb18b54))
+* **navigation:** fix aside height for mobile navigation ([f9ed20d](https://github.com/Gympass/yoga/commit/f9ed20da7c7908d137f3ab3976ba5c6849bda93d))
+
+
+### Features
+
+* **navigation:** minor semantics improvements ([4daa5b1](https://github.com/Gympass/yoga/commit/4daa5b15ddc9984a2850cad75dc441a7416af1d9))
+
+
+
+
+
 ## [2.8.32](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.31...@gympass/yoga-doc@2.8.32) (2021-10-04)
 
 **Note:** Version bump only for package @gympass/yoga-doc
