@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.9.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.9.0...@gympass/yoga-doc@2.9.1) (2021-10-06)
+
+
+### Bug Fixes
+
+* **navigation:** apply indentation to collapsibles ([c198bf5](https://github.com/Gympass/yoga/commit/c198bf51a549b518e0b2b2eb147fe2d33b397120))
+
+
+
+
+
 # [2.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.8.32...@gympass/yoga-doc@2.9.0) (2021-10-06)
 
 
