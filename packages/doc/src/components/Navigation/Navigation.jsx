@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Link, navigate } from 'gatsby';
+import { navigate } from 'gatsby';
 import { arrayOf, func, bool, shape, number, string } from 'prop-types';
 
 import Arrow from 'images/arrow-dropdown.svg';
@@ -9,7 +9,7 @@ import createTree from './tree';
 
 import MDXElements from '../MDXElements';
 
-const Wrapper = styled.div`
+const Wrapper = styled.aside`
   ${({
     opened,
     theme: {
@@ -37,7 +37,7 @@ const Wrapper = styled.div`
       left: 0;
 
       width: 100%;
-      height: calc(100vh - 70px);
+      height: calc(100% - 70px);
 
       overflow: auto;
       z-index: 3;
@@ -45,7 +45,7 @@ const Wrapper = styled.div`
   `};
 `;
 
-const Nav = styled.div`
+const Nav = styled.nav`
   height: auto;
   padding: 30px;
   width: 100%;
@@ -57,15 +57,45 @@ const Nav = styled.div`
 `;
 
 const StyledList = styled(MDXElements.Ul)`
-  font-size: 14px;
+  font-size: 2rem;
+  font-weight: 300;
   list-style-type: none;
   padding: 0;
   margin: 0;
   width: 100%;
 `;
 
-const AnchorLink = styled(Link)`
+const ArrowIcon = styled(Arrow)`
+  width: 0.6rem;
+  transition: all 200ms ease-out;
+  ${({ isOpen }) => `
+    transform: rotate(${isOpen ? 180 : 0}deg);
+  `}
+`;
+
+const NavigationLabel = styled.button`
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+  line-height: 2;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: 300;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  transition: all 200ms ease-out;
+  outline-offset: 2px;
+
+  :hover {
+    cursor: pointer;
+  }
+
   ${({
+    active,
     level,
     theme: {
       yoga: {
@@ -73,59 +103,19 @@ const AnchorLink = styled(Link)`
       },
     },
   }) => `
-    color: ${text.secondary};
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0px 10px 0px;
-    text-decoration: none;
-    text-indent: calc(15px * ${level});
-    transition: all 0.3s;
-    width: 100%;
+  color: ${active ? primary : hexToRgb(text.secondary, 0.75)};
+  text-indent: calc(15px * ${level});
 
-    :hover {
-      color: ${primary};
-    }
-  `};
+  :hover, :focus {
+    color: ${primary};
+  }
+`}
 `;
 
-const StyledListItem = styled.li`
-  ${({
-    active,
-    theme: {
-      yoga: {
-        colors: { primary },
-      },
-    },
-  }) => `
-    & > ${AnchorLink} {
-      ${
-        active
-          ? `
-          color: ${primary};
-            `
-          : ''
-      }
-    }
-  `}
-`;
-
-const Colapsible = styled.div`
-  ${({
-    theme: {
-      yoga: {
-        colors: { text },
-      },
-    },
-  }) => `
-    cursor: pointer;
-    color: ${hexToRgb(text.secondary, 0.75)};
-    svg {
-      width: 10px;
-      margin-left: 5px;
-    }
-  `};
+const Collapsible = styled(NavigationLabel)`
   + ul {
-    display: ${({ visible }) => (visible === 'true' ? 'block' : 'none')};
+    display: ${({ displayChildren }) =>
+      displayChildren === true ? 'block' : 'none'};
   }
 `;
 
@@ -139,7 +129,7 @@ const ListItem = ({
   prefix,
   collapsed,
 }) => {
-  const [collapse, toggleCollapse] = useState(collapsed);
+  const [isCollapsed, setCollapsed] = useState(collapsed);
   const hasChild = Boolean(Object.keys(childs).length);
 
   const filteredUrl = `/${[
@@ -147,33 +137,42 @@ const ListItem = ({
   ].join('/')}`;
 
   const { pathname } = window.location;
+  const linkPath = prefix ? `/yoga${filteredUrl}` : filteredUrl;
+  const isActive = window && pathname.replace(/\/$/, '') === linkPath;
+
+  const onNavigate = () => {
+    if (filteredUrl !== pathname) {
+      navigate(filteredUrl);
+      toggleMenu(false);
+    }
+  };
+
+  if (linkable) {
+    return (
+      <li key={url}>
+        <NavigationLabel
+          level={level}
+          tabindex="0"
+          active={isActive}
+          onClick={onNavigate}
+        >
+          {title}
+        </NavigationLabel>
+      </li>
+    );
+  }
 
   return (
-    <StyledListItem
-      key={url}
-      active={
-        typeof window !== 'undefined' &&
-        pathname.replace(/\/$/, '') ===
-          (prefix ? `/yoga${filteredUrl}` : filteredUrl)
-      }
-    >
-      <AnchorLink
-        level={level}
-        as={Colapsible}
-        visible={collapse.toString()}
-        onClick={() => {
-          if (hasChild) {
-            toggleCollapse(!collapse);
-          }
-          if (filteredUrl !== pathname && linkable) {
-            navigate(filteredUrl);
-            toggleMenu(false);
-          }
-        }}
+    <li key={url}>
+      <Collapsible
+        displayChildren={isCollapsed}
+        onClick={() => setCollapsed(!isCollapsed)}
+        aria-label={`Toggle ${title} collapsible section`}
+        role="switch"
+        aria-checked={isCollapsed.toString()}
       >
-        {title}{' '}
-        {hasChild ? <Arrow style={{ height: '100%', paddingTop: 10 }} /> : ''}
-      </AnchorLink>
+        {title} <ArrowIcon isOpen={isCollapsed} />
+      </Collapsible>
       {hasChild && (
         <StyledList level={level}>
           <List
@@ -184,7 +183,7 @@ const ListItem = ({
           />
         </StyledList>
       )}
-    </StyledListItem>
+    </li>
   );
 };
 
