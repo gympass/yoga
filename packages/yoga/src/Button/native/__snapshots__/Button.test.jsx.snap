@@ -209,6 +209,129 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 </View>
 `;
 
+exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with icon Button with Icon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    disabled={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityRole="button"
+        disabled={true}
+        inverted={false}
+        pressed={false}
+        secondary={false}
+        small={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#F5F5FA",
+              "borderRadius": 9999,
+              "display": "flex",
+              "height": 48,
+              "justifyContent": "center",
+              "width": 48,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#D7D7E0"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ],
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4292335584,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with link Button 1`] = `
 <View
   collapsable={true}
@@ -1056,6 +1179,129 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 </View>
 `;
 
+exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with icon Button 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    inverted={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityRole="button"
+        disabled={false}
+        inverted={true}
+        pressed={false}
+        secondary={false}
+        small={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "display": "flex",
+              "height": 48,
+              "justifyContent": "center",
+              "width": 48,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#D8385E"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ],
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4292360286,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
 exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with text Button 1`] = `
 <View
   collapsable={true}
@@ -1239,6 +1485,130 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             ]
           }
         />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Button /> Snapshots primary buttons With large prop should match snapshot icon Button with large prop 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    large={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityRole="button"
+        disabled={false}
+        inverted={false}
+        large={true}
+        pressed={false}
+        secondary={false}
+        small={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#D8385E",
+              "borderRadius": 9999,
+              "display": "flex",
+              "height": 48,
+              "justifyContent": "center",
+              "width": 48,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#FFFFFF"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ],
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4294967295,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
       </View>
     </View>
   </TouchableWithoutFeedback>
@@ -2697,6 +3067,130 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 </View>
 `;
 
+exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with icon Button with Icon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    inverted={true}
+    secondary={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityRole="button"
+        disabled={false}
+        inverted={true}
+        pressed={false}
+        secondary={true}
+        small={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#FFFFFF",
+              "borderRadius": 9999,
+              "display": "flex",
+              "height": 48,
+              "justifyContent": "center",
+              "width": 48,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#231B22"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ],
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4280490786,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
 exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with text Button 1`] = `
 <View
   collapsable={true}
@@ -2884,6 +3378,131 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             ]
           }
         />
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Button /> Snapshots secondary buttons With large prop should match snapshot icon Button with large prop 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    large={true}
+    secondary={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityRole="button"
+        disabled={false}
+        inverted={false}
+        large={true}
+        pressed={false}
+        secondary={true}
+        small={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#231B22",
+              "borderRadius": 9999,
+              "display": "flex",
+              "height": 48,
+              "justifyContent": "center",
+              "width": 48,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#FFFFFF"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ],
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4294967295,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
       </View>
     </View>
   </TouchableWithoutFeedback>
@@ -3501,6 +4120,129 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
         >
           Button
         </Text>
+      </View>
+    </View>
+  </TouchableWithoutFeedback>
+</View>
+`;
+
+exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with icon Button with Icon 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <TouchableWithoutFeedback
+    secondary={true}
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityRole="button"
+        disabled={false}
+        inverted={false}
+        pressed={false}
+        secondary={true}
+        small={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#231B22",
+              "borderRadius": 9999,
+              "display": "flex",
+              "height": 48,
+              "justifyContent": "center",
+              "width": 48,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#FFFFFF"
+          focusable={false}
+          height={24}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Array [
+                Object {
+                  "height": 24,
+                  "width": 24,
+                },
+              ],
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4294967295,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
       </View>
     </View>
   </TouchableWithoutFeedback>

@@ -1,7 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button, theme } from '@gympass/yoga';
-import { Booking } from '@gympass/yoga-icons';
+import {
+  Booking,
+  Edit,
+  Add,
+  Check,
+  ChevronLeft,
+  Close,
+} from '@gympass/yoga-icons';
 
 import { DocTitle } from '../components';
 
@@ -26,6 +33,18 @@ const ButtonPage = () => (
       alignItems: 'center',
     }}
   >
+    <Wrapper style={{ height: 360 }}>
+      <DocTitle>Icon Buttons</DocTitle>
+      <Button.Icon icon={Booking} />
+      <Button.Icon icon={Edit} small />
+
+      <Button.Icon icon={Add} secondary />
+      <Button.Icon icon={Check} secondary small />
+
+      <Button.Icon icon={ChevronLeft} inverted small />
+      <Button.Icon icon={Close} disabled small />
+    </Wrapper>
+
     <Wrapper style={{ height: 360 }}>
       <DocTitle>Small Buttons</DocTitle>
       <Button small>Primary contained</Button>
