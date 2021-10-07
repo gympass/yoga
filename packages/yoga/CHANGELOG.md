@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.20.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.19.2...@gympass/yoga@7.20.0) (2021-10-07)
+
+
+### Bug Fixes
+
+* **button:** change import to icon ([49b681d](https://github.com/Gympass/yoga/commit/49b681dd038b87cfd5d038a9fb2400c4834be4c1))
+
+
+### Features
+
+* **button:** add forwardRef and large prop ([62e01da](https://github.com/Gympass/yoga/commit/62e01da78da714780387b9bb9205db203d764983))
+* **button:** add new button icon component ([7b348d1](https://github.com/Gympass/yoga/commit/7b348d1c764d0a949ac32af92f33c8ca68e1e06e))
+* **button:** add new type to theme button ([36a95c3](https://github.com/Gympass/yoga/commit/36a95c3865e28a114f493b1c60d5a2b61ceb219b))
+* **button:** add withTouchable ([85eef5e](https://github.com/Gympass/yoga/commit/85eef5ee85a0b1e14958fc0ee6e684c1115f0d6a))
+* **button.icon:** add forwardRef on Native ([ad69b05](https://github.com/Gympass/yoga/commit/ad69b057a29cb0f38fb2db180b0e7a4a9da7cef8))
+* **component:** add button icon on native ([18eb240](https://github.com/Gympass/yoga/commit/18eb2405883af1a789cfd22f07d189e154099a34))
+
+
+
+
+
 ## [7.19.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.19.1...@gympass/yoga@7.19.2) (2021-10-06)
 
 **Note:** Version bump only for package @gympass/yoga

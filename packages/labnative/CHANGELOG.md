@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.6.15...@gympass/yoga-labnative@1.7.0) (2021-10-07)
+
+
+### Features
+
+* labnative add icon buttons in page of buttons ([0989551](https://github.com/Gympass/yoga/commit/098955146a5853e8d09889820cf513382609b35b))
+
+
+
+
+
 ## [1.6.15](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.6.14...@gympass/yoga-labnative@1.6.15) (2021-10-06)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
