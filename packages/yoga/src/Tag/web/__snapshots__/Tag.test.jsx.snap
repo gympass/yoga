@@ -35,6 +35,12 @@ exports[`<Tag /> should match snapshot 1`] = `
 `;
 
 exports[`<Tag /> should match snapshot with custom icon and informative type 1`] = `
+.c2 {
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+}
+
 .c0 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -57,12 +63,6 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
-}
-
-.c2 {
-  margin-right: 4px;
-  width: 16px;
-  height: 16px;
 }
 
 .c1 {
