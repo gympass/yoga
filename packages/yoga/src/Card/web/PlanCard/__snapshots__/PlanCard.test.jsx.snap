@@ -200,11 +200,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-weight: 500;
 }
 
-.c15 {
-  width: 16px;
-  height: 16px;
-}
-
 .c3 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
