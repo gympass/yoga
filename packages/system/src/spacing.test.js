@@ -17,7 +17,11 @@ import {
   paddingVertical,
   paddings,
   width,
+  maxWidth,
+  minWidth,
   height,
+  maxHeight,
+  minHeight,
   spacing,
 } from './spacing';
 
@@ -725,6 +729,84 @@ describe('spacings', () => {
     });
   });
 
+  describe('maxWidth', () => {
+    it('Should return values for maxWidth prop', () => {
+      const expectedZeroSpacing = css({
+        maxWidth: spacings.zero,
+      });
+      const expectedMediumSpacing = css({
+        maxWidth: spacings.medium,
+      });
+
+      const zero1 = maxWidth({ theme, maxW: 'zero' });
+      const zero2 = maxWidth({ theme, maxWidth: 'zero' });
+
+      expect(zero1).toStrictEqual(zero2);
+
+      const medium1 = maxWidth({ theme, maxW: 'medium' });
+      const medium2 = maxWidth({ theme, maxWidth: 'medium' });
+
+      expect(medium1).toStrictEqual(medium2);
+
+      const zeroOptions = [zero1, zero2];
+
+      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+
+      const mediumOptions = [medium1, medium2];
+
+      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({
+        maxWidth: 20,
+      });
+
+      const maxW = maxWidth({ theme, maxW: 20 });
+
+      expect(maxW).toStrictEqual(expectedNoTheme);
+    });
+  });
+
+  describe('minWidth', () => {
+    it('Should return values for minWidth prop', () => {
+      const expectedZeroSpacing = css({
+        minWidth: spacings.zero,
+      });
+      const expectedMediumSpacing = css({
+        minWidth: spacings.medium,
+      });
+
+      const zero1 = minWidth({ theme, minW: 'zero' });
+      const zero2 = minWidth({ theme, minWidth: 'zero' });
+
+      expect(zero1).toStrictEqual(zero2);
+
+      const medium1 = minWidth({ theme, minW: 'medium' });
+      const medium2 = minWidth({ theme, minWidth: 'medium' });
+
+      expect(medium1).toStrictEqual(medium2);
+
+      const zeroOptions = [zero1, zero2];
+
+      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+
+      const mediumOptions = [medium1, medium2];
+
+      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({
+        minWidth: 20,
+      });
+
+      const minW = minWidth({ theme, minW: 20 });
+
+      expect(minW).toStrictEqual(expectedNoTheme);
+    });
+  });
+
   describe('height', () => {
     it('Should return values for height prop', () => {
       const expectedZeroSpacing = css({
@@ -761,6 +843,84 @@ describe('spacings', () => {
       const pv = height({ theme, h: 20 });
 
       expect(pv).toStrictEqual(expectedNoTheme);
+    });
+  });
+
+  describe('maxHeight', () => {
+    it('Should return values for maxHeight prop', () => {
+      const expectedZeroSpacing = css({
+        maxHeight: spacings.zero,
+      });
+      const expectedMediumSpacing = css({
+        maxHeight: spacings.medium,
+      });
+
+      const zero1 = maxHeight({ theme, maxH: 'zero' });
+      const zero2 = maxHeight({ theme, maxHeight: 'zero' });
+
+      expect(zero1).toStrictEqual(zero2);
+
+      const medium1 = maxHeight({ theme, maxH: 'medium' });
+      const medium2 = maxHeight({ theme, maxHeight: 'medium' });
+
+      expect(medium1).toStrictEqual(medium2);
+
+      const zeroOptions = [zero1, zero2];
+
+      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+
+      const mediumOptions = [medium1, medium2];
+
+      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({
+        maxHeight: 20,
+      });
+
+      const maxH = maxHeight({ theme, maxHeight: 20 });
+
+      expect(maxH).toStrictEqual(expectedNoTheme);
+    });
+  });
+
+  describe('minHeight', () => {
+    it('Should return values for minHeight prop', () => {
+      const expectedZeroSpacing = css({
+        minHeight: spacings.zero,
+      });
+      const expectedMediumSpacing = css({
+        minHeight: spacings.medium,
+      });
+
+      const zero1 = minHeight({ theme, minH: 'zero' });
+      const zero2 = minHeight({ theme, minHeight: 'zero' });
+
+      expect(zero1).toStrictEqual(zero2);
+
+      const medium1 = minHeight({ theme, minH: 'medium' });
+      const medium2 = minHeight({ theme, minHeight: 'medium' });
+
+      expect(medium1).toStrictEqual(medium2);
+
+      const zeroOptions = [zero1, zero2];
+
+      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+
+      const mediumOptions = [medium1, medium2];
+
+      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({
+        minHeight: 20,
+      });
+
+      const minH = minHeight({ theme, minHeight: 20 });
+
+      expect(minH).toStrictEqual(expectedNoTheme);
     });
   });
 });
