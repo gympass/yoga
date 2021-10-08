@@ -1,4 +1,6 @@
-import { compose, generator } from './theme';
+import { compose, generator, getSpacing } from './theme';
+
+import { toPx } from './unit';
 
 const flexDirection = props =>
   generator({
@@ -91,6 +93,15 @@ const order = props =>
     cssProperty: 'order',
   });
 
+const gap = props =>
+  generator({
+    props,
+    prop: ['gap', 'g'],
+    cssProperty: 'gap',
+    getter: getSpacing,
+    transform: toPx,
+  });
+
 const flexes = compose(
   flex,
   flexBasis,
@@ -105,6 +116,7 @@ const flexes = compose(
   justifyContent,
   justifySelf,
   order,
+  gap,
 );
 
 export {
@@ -122,4 +134,5 @@ export {
   justifySelf,
   flexes,
   order,
+  gap,
 };

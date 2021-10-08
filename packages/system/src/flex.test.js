@@ -14,7 +14,18 @@ import {
   justifySelf,
   order,
   flexes,
+  gap,
 } from './flex';
+
+const spacings = [0, 4, 8, 12];
+
+[spacings.zero, spacings.small, spacings.medium, spacings.large] = spacings;
+
+const theme = {
+  yoga: {
+    spacing: spacings,
+  },
+};
 
 describe('flex', () => {
   describe('flexes', () => {
@@ -168,6 +179,45 @@ describe('flex', () => {
       const f = order({ order: 2 });
 
       expect(f).toStrictEqual(expectedFlex);
+    });
+  });
+
+  describe('gap', () => {
+    it('Should return values for gap prop', () => {
+      const expectedZeroSpacing = css({
+        gap: spacings.zero,
+      });
+      const expectedMediumSpacing = css({
+        gap: spacings.medium,
+      });
+
+      const zero1 = gap({ theme, g: 'zero' });
+      const zero2 = gap({ theme, gap: 'zero' });
+
+      expect(zero1).toStrictEqual(zero2);
+
+      const medium1 = gap({ theme, g: 'medium' });
+      const medium2 = gap({ theme, gap: 'medium' });
+
+      expect(medium1).toStrictEqual(medium2);
+
+      const zeroOptions = [zero1, zero2];
+
+      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+
+      const mediumOptions = [medium1, medium2];
+
+      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({
+        gap: 20,
+      });
+
+      const g = gap({ theme, g: 20 });
+
+      expect(g).toStrictEqual(expectedNoTheme);
     });
   });
 });
