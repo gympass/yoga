@@ -40,6 +40,7 @@ describe('flex', () => {
       });
 
       const f = flexes({
+        theme,
         flex: '1',
         flexDirection: 'column',
         flexWrap: 'wrap',
