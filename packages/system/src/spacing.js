@@ -136,11 +136,47 @@ const width = props =>
     transform: toPx,
   });
 
+const maxWidth = props =>
+  generator({
+    props,
+    prop: ['maxWidth', 'maxW'],
+    cssProperty: 'max-width',
+    getter: getSpacing,
+    transform: toPx,
+  });
+
+const minWidth = props =>
+  generator({
+    props,
+    prop: ['minWidth', 'minW'],
+    cssProperty: 'min-width',
+    getter: getSpacing,
+    transform: toPx,
+  });
+
 const height = props =>
   generator({
     props,
     prop: ['height', 'h'],
     cssProperty: 'height',
+    getter: getSpacing,
+    transform: toPx,
+  });
+
+const maxHeight = props =>
+  generator({
+    props,
+    prop: ['maxHeight', 'maxH'],
+    cssProperty: 'max-height',
+    getter: getSpacing,
+    transform: toPx,
+  });
+
+const minHeight = props =>
+  generator({
+    props,
+    prop: ['minHeight', 'minH'],
+    cssProperty: 'min-height',
     getter: getSpacing,
     transform: toPx,
   });
@@ -165,11 +201,23 @@ const paddings = compose(
   paddingVertical,
 );
 
+const widths = compose(
+  width,
+  maxWidth,
+  minWidth,
+);
+
+const heights = compose(
+  height,
+  maxHeight,
+  minHeight,
+);
+
 const spacing = compose(
   margins,
   paddings,
-  width,
-  height,
+  widths,
+  heights,
 );
 
 export {
@@ -191,5 +239,11 @@ export {
   paddings,
   spacing,
   width,
+  maxWidth,
+  minWidth,
+  widths,
   height,
+  maxHeight,
+  minHeight,
+  heights,
 };
