@@ -130,7 +130,8 @@
       "contributions": [
         "code",
         "ideas",
-        "doc"
+        "doc",
+        "review"
       ]
     },
     {
@@ -257,7 +258,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/27781419?v=4",
       "profile": "https://www.linkedin.com/in/marcosricardo0101/",
       "contributions": [
-        "doc"
+        "doc",
+        "code"
       ]
     },
     {
@@ -311,6 +313,15 @@
       "name": "Lucas Fernandes Souza",
       "avatar_url": "https://avatars.githubusercontent.com/u/54141141?v=4",
       "profile": "https://github.com/lucasfernandesbr",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "hesugiyama",
+      "name": "Henrique Sugiyama",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14081572?v=4",
+      "profile": "https://github.com/hesugiyama",
       "contributions": [
         "code"
       ]
