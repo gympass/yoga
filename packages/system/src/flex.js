@@ -96,7 +96,7 @@ const order = props =>
 const gap = props =>
   generator({
     props,
-    prop: ['gap', 'g'],
+    prop: ['gap'],
     cssProperty: 'gap',
     getter: getSpacing,
     transform: toPx,

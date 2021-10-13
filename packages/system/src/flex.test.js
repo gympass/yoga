@@ -192,31 +192,20 @@ describe('flex', () => {
         gap: spacings.medium,
       });
 
-      const zero1 = gap({ theme, g: 'zero' });
-      const zero2 = gap({ theme, gap: 'zero' });
+      const zero = gap({ theme, gap: 'zero' });
+      const medium = gap({ theme, gap: 'medium' });
 
-      expect(zero1).toStrictEqual(zero2);
+      expect(zero).toStrictEqual(expectedZeroSpacing);
 
-      const medium1 = gap({ theme, g: 'medium' });
-      const medium2 = gap({ theme, gap: 'medium' });
-
-      expect(medium1).toStrictEqual(medium2);
-
-      const zeroOptions = [zero1, zero2];
-
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
-
-      const mediumOptions = [medium1, medium2];
-
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      expect(medium).toStrictEqual(expectedMediumSpacing);
     });
 
     it('Should return the value if there is no theme match', () => {
       const expectedNoTheme = css({
-        gap: 20,
+        gap: '50%',
       });
 
-      const g = gap({ theme, g: 20 });
+      const g = gap({ theme, gap: '50%' });
 
       expect(g).toStrictEqual(expectedNoTheme);
     });
