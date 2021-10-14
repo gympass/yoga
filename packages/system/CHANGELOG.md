@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.7.0...@gympass/yoga-system@0.8.0) (2021-10-14)
+
+
+### Features
+
+* **system:** add gap support ([42dfa61](https://github.com/Gympass/yoga/commit/42dfa6109c2c96bc3a4f6e900f8d225bdafaead5))
+
+
+
+
+
 # [0.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.6.2...@gympass/yoga-system@0.7.0) (2021-09-29)
 
 
