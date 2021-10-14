@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.8.0...@gympass/yoga-system@0.9.0) (2021-10-14)
+
+
+### Features
+
+* **system:** add others props width and height ([39500d7](https://github.com/Gympass/yoga/commit/39500d7f6c26db8271634300eed02258db8ef9c0))
+
+
+
+
+
 # [0.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.7.0...@gympass/yoga-system@0.8.0) (2021-10-14)
 
 
