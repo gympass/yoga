@@ -14,7 +14,18 @@ import {
   justifySelf,
   order,
   flexes,
+  gap,
 } from './flex';
+
+const spacings = [0, 4, 8, 12];
+
+[spacings.zero, spacings.small, spacings.medium, spacings.large] = spacings;
+
+const theme = {
+  yoga: {
+    spacing: spacings,
+  },
+};
 
 describe('flex', () => {
   describe('flexes', () => {
@@ -29,6 +40,7 @@ describe('flex', () => {
       });
 
       const f = flexes({
+        theme,
         flex: '1',
         flexDirection: 'column',
         flexWrap: 'wrap',
@@ -168,6 +180,34 @@ describe('flex', () => {
       const f = order({ order: 2 });
 
       expect(f).toStrictEqual(expectedFlex);
+    });
+  });
+
+  describe('gap', () => {
+    it('Should return values for gap prop', () => {
+      const expectedZeroSpacing = css({
+        gap: spacings.zero,
+      });
+      const expectedMediumSpacing = css({
+        gap: spacings.medium,
+      });
+
+      const zero = gap({ theme, gap: 'zero' });
+      const medium = gap({ theme, gap: 'medium' });
+
+      expect(zero).toStrictEqual(expectedZeroSpacing);
+
+      expect(medium).toStrictEqual(expectedMediumSpacing);
+    });
+
+    it('Should return the value if there is no theme match', () => {
+      const expectedNoTheme = css({
+        gap: '50%',
+      });
+
+      const g = gap({ theme, gap: '50%' });
+
+      expect(g).toStrictEqual(expectedNoTheme);
     });
   });
 });
