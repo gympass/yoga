@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, waitFor } from '@testing-library/react';
 import { ThemeProvider, Dropdown } from '../..';
 
 const dropdownProps = {
@@ -96,6 +96,10 @@ describe('<Dropdown />', () => {
       expect(wrapper.queryAllByRole('option')).toHaveLength(7);
     });
 
+    it('select correct option', () => {
+      expect(wrapper.getByRole('textbox').value).toStrictEqual('Tenis');
+    });
+
     describe('then select the same option selected', () => {
       beforeEach(() => {
         fireEvent.click(wrapper.queryByRole('option', { name: /tenis/i }));
@@ -103,6 +107,12 @@ describe('<Dropdown />', () => {
 
       it('do not show options', () => {
         expect(wrapper.queryAllByRole('option')).toHaveLength(0);
+      });
+
+      it('remove selected option', () => {
+        waitFor(() =>
+          expect(wrapper.getByRole('textbox').value).toStrictEqual(''),
+        );
       });
     });
   });
