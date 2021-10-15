@@ -1,6 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-
+import { render, fireEvent } from '@testing-library/react';
 import { ThemeProvider, Dropdown } from '../..';
 
 const dropdownProps = {
@@ -73,5 +72,38 @@ describe('<Dropdown />', () => {
     );
 
     expect(container).toMatchSnapshot();
+  });
+
+  describe('when receive a click', () => {
+    let wrapper;
+
+    beforeEach(() => {
+      const options = dropdownProps.options.map(option => ({
+        ...option,
+        selected: option.value === 'tenis',
+      }));
+
+      wrapper = render(
+        <ThemeProvider>
+          <Dropdown {...dropdownProps} options={options} />
+        </ThemeProvider>,
+      );
+
+      fireEvent.click(wrapper.getByRole('button'));
+    });
+
+    it('shows all options', () => {
+      expect(wrapper.queryAllByRole('option')).toHaveLength(7);
+    });
+
+    describe('then select the same option selected', () => {
+      beforeEach(() => {
+        fireEvent.click(wrapper.queryByRole('option', { name: /tenis/i }));
+      });
+
+      it('do not show options', () => {
+        expect(wrapper.queryAllByRole('option')).toHaveLength(0);
+      });
+    });
   });
 });

@@ -48,7 +48,7 @@
     "react-google-font-loader": "^1.1.0"
   },
   "devDependencies": {
-    "@testing-library/react": "^9.1.4",
+    "@testing-library/react": "^12.1.2",
     "@testing-library/react-native": "^4.1.0",
     "babel-plugin-inline-react-svg": "^1.1.1",
     "styled-components": "^4.4.0"
