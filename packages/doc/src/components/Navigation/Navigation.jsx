@@ -12,7 +12,7 @@ import MDXElements from '../MDXElements';
 /**
  * Gets the sorting function for the given sorting type.
  * 'alphabetic' stands for ascendent alphabetical order.
- * 'order'      stands for elemento.order ascendent order.
+ * 'order'      stands for element.order ascendent order.
  *
  * @param {string} kind - 'alphabetic' or 'order', default to 'order'
  * @returns {function} - sorting function
