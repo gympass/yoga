@@ -158,9 +158,6 @@ const ListItem = ({
   const { pathname } = window.location;
   const linkPath = prefix ? `/yoga${filteredUrl}` : filteredUrl;
   const isActive = window && pathname.replace(/\/$/, '') === linkPath;
-  const innerSorting = sectionsSortedByName.includes(title.toLowerCase())
-    ? 'alphabetic'
-    : 'order';
 
   const onNavigate = () => {
     if (filteredUrl !== pathname) {
@@ -203,7 +200,6 @@ const ListItem = ({
             level={level + 1}
             toggleMenu={toggleMenu}
             prefix={prefix}
-            sorting={innerSorting}
           />
         </StyledList>
       )}
