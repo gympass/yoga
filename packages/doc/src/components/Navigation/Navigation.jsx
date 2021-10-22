@@ -2,12 +2,31 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { navigate } from 'gatsby';
-import { arrayOf, func, bool, shape, number, string } from 'prop-types';
+import { arrayOf, func, oneOf, bool, shape, number, string } from 'prop-types';
 
 import Arrow from 'images/arrow-dropdown.svg';
 import createTree from './tree';
 
 import MDXElements from '../MDXElements';
+
+/**
+ * Gets the sorting function for the given sorting type.
+ * 'alphabetic' stands for ascendent alphabetical order.
+ * 'order'      stands for element.order ascendent order.
+ *
+ * @param {string} kind - 'alphabetic' or 'order', default to 'order'
+ * @returns {function} - sorting function
+ */
+const getSorting = kind =>
+  ({
+    order: (a, b) => (a.order > b.order ? 1 : -1),
+    alphabetic: (a, b) => (a > b ? -1 : 1),
+  }[kind ?? 'order']);
+
+/**
+ * Specify here collapsible sections which should sort its children by name
+ */
+const sectionsSortedByName = ['components'];
 
 const Wrapper = styled.aside`
   ${({
@@ -139,6 +158,9 @@ const ListItem = ({
   const { pathname } = window.location;
   const linkPath = prefix ? `/yoga${filteredUrl}` : filteredUrl;
   const isActive = window && pathname.replace(/\/$/, '') === linkPath;
+  const innerSorting = sectionsSortedByName.includes(title.toLowerCase())
+    ? 'alphabetic'
+    : 'order';
 
   const onNavigate = () => {
     if (filteredUrl !== pathname) {
@@ -181,6 +203,7 @@ const ListItem = ({
             level={level + 1}
             toggleMenu={toggleMenu}
             prefix={prefix}
+            sorting={innerSorting}
           />
         </StyledList>
       )}
@@ -199,10 +222,10 @@ ListItem.propTypes = {
   collapsed: bool.isRequired,
 };
 
-const List = ({ tree, level, toggleMenu, prefix }) => (
+const List = ({ tree, level, toggleMenu, prefix, sorting }) => (
   <StyledList>
     {Object.values(tree)
-      .sort((t1, t2) => (t1.order > t2.order ? 1 : -1))
+      .sort(getSorting(sorting))
       .map(({ title, url, linkable, order, collapsed, ...childs }) => (
         <ListItem
           key={title}
@@ -224,10 +247,12 @@ List.propTypes = {
   level: number,
   toggleMenu: func.isRequired,
   prefix: bool.isRequired,
+  sorting: oneOf(['alphabetic', 'order']),
 };
 
 List.defaultProps = {
   level: 0,
+  sorting: 'order',
 };
 
 const Navigation = ({ items, toggleMenu, opened, prefix }) => {
