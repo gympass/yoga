@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.20.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.20.3...@gympass/yoga@7.20.4) (2021-10-22)
+
+
+### Bug Fixes
+
+* **snackbar:** use proper box-sizing: border-box inside its container ([48b73a5](https://github.com/Gympass/yoga/commit/48b73a5079ff76692e1f1cdda6ffd30de7ae2761))
+
+
+
+
+
 ## [7.20.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.20.2...@gympass/yoga@7.20.3) (2021-10-22)
 
 
