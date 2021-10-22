@@ -48,6 +48,7 @@ const StyledSnackbar = styled.div`
       display: flex;
       align-items: center;
       justify-content: space-between;
+      box-sizing: border-box;
   
       position: fixed;
       bottom: ${snackbar.position.mobile.bottom}px;

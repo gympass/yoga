@@ -65,6 +65,7 @@ exports[`<Snackbar /> should match snapshot 1`] = `
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  box-sizing: border-box;
   position: fixed;
   bottom: 16px;
   right: 16px;
