@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.10.1...@gympass/yoga-doc@2.10.2) (2021-10-22)
+
+
+### Bug Fixes
+
+* **navigation:** components sorting across browsers ([7e7d0ed](https://github.com/Gympass/yoga/commit/7e7d0ed4a6c912e2cfe3b6d2d69a7b8e53eef902))
+* **navigation:** typo inside getSorting's documentation ([dcb0406](https://github.com/Gympass/yoga/commit/dcb040668228feab1f7f7753f592804f91bf3422))
+
+
+
+
+
 ## [2.10.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.10.0...@gympass/yoga-doc@2.10.1) (2021-10-14)
 
 **Note:** Version bump only for package @gympass/yoga-doc

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.20.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.20.2...@gympass/yoga@7.20.3) (2021-10-22)
+
+
+### Bug Fixes
+
+* **snackbar:** fix: adjust snackbar position ([ac08605](https://github.com/Gympass/yoga/commit/ac0860528cf9b605ac897a69aeb24241412d07b3)), closes [#372](https://github.com/Gympass/yoga/issues/372)
+
+
+
+
+
 ## [7.20.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.20.1...@gympass/yoga@7.20.2) (2021-10-14)
 
 **Note:** Version bump only for package @gympass/yoga
