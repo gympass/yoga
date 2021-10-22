@@ -48,6 +48,24 @@ describe('<Chips />', () => {
       expect(toJSON(container)).toMatchSnapshot();
     });
 
+    it('should match snapshot with system props', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Chips
+            fs="16"
+            bg="#D8385E"
+            color="#ffffff"
+            width={150}
+            elevation="small"
+          >
+            Classes
+          </Chips>
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
     describe('selected', () => {
       it('should match snapshot', () => {
         const { container } = render(

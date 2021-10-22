@@ -923,3 +923,85 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
   </button>
 </div>
 `;
+
+exports[`<Chips /> Snapshots should match snapshot with system props 1`] = `
+.c1 {
+  display: inline-block;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c0 {
+  height: 32px;
+  max-width: 216px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-style: solid;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  border-width: 1px;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 16px;
+  border-color: #D7D7E0;
+  background-color: #FFFFFF;
+  color: #231B22;
+  font-weight: 400;
+  background-color: #D8385E;
+  width: 150px;
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.c0:not(:last-child) {
+  margin-right: 8px;
+}
+
+.c0[disabled] {
+  background-color: #F5F5FA;
+  color: #9898A6;
+  border-color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0:hover:enabled {
+  border-color: #231B22;
+}
+
+.c0:focus:enabled,
+.c0:active:enabled {
+  border-color: rgba(215,215,224,0.75);
+}
+
+<div>
+  <button
+    class="c0"
+    color="#ffffff"
+    elevation="small"
+    width="150"
+  >
+    <span
+      class="c1"
+    >
+      Classes
+    </span>
+  </button>
+</div>
+`;
