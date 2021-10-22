@@ -4,6 +4,7 @@ import { render } from '@testing-library/react-native';
 import { UserFilled } from '@gympass/yoga-icons';
 import { ThemeProvider } from '../..';
 import Avatar from './Avatar';
+import Text from '../../Text';
 
 describe('<Avatar />', () => {
   it('should match snapshot in default avatar', () => {
@@ -37,6 +38,17 @@ describe('<Avatar />', () => {
     const { container } = render(
       <ThemeProvider>
         <Avatar.Circle placeholder={UserFilled} />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+  it('should match snapshot in avatar with children prop', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Avatar>
+          <Text>AL</Text>
+        </Avatar>
       </ThemeProvider>,
     );
 
