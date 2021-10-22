@@ -2,6 +2,15 @@ import React from 'react';
 import { number, arrayOf, bool, func, node } from 'prop-types';
 import styled, { css, withTheme } from 'styled-components';
 import { TouchableWithoutFeedback } from 'react-native';
+import {
+  backgroundColor,
+  borders as systemBorders,
+  elevation,
+  positions,
+  display,
+  spacing as systenSpacing,
+  typography,
+} from '@gympass/yoga-system';
 
 import Counter from './Counter';
 import { theme } from '../../Theme';
@@ -45,6 +54,14 @@ const Wrapper = styled.View`
           border-color: transparent;
         `
       : ''}
+
+  ${backgroundColor}
+  ${systemBorders}
+  ${systenSpacing}
+  ${elevation}
+  ${positions}
+  ${display}
+  ${typography}
 `;
 
 const StyledChips = styled(Text)`

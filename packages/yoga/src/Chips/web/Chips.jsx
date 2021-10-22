@@ -2,7 +2,15 @@ import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { node, number, arrayOf, bool, func } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
-
+import {
+  backgroundColor,
+  borders as systemBorders,
+  elevation,
+  positions,
+  display,
+  spacing as systenSpacing,
+  typography,
+} from '@gympass/yoga-system';
 import { theme } from '../../Theme';
 import Icon from '../../Icon';
 
@@ -107,6 +115,14 @@ const Wrapper = styled.button`
       }
     `;
   }}
+
+  ${backgroundColor}
+  ${systemBorders}
+  ${systenSpacing}
+  ${elevation}
+  ${positions}
+  ${display}
+  ${typography}
 `;
 
 const Chips = ({
