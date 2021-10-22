@@ -1,3 +1,5 @@
+import { Link as GatsbyLink } from 'gatsby';
+
 ### Reference
 
 Gympass `<Chips />` description
@@ -55,6 +57,50 @@ render(() => {
 });
 ```
 
+With system props:
+
+```javascript state
+render(() => {
+  const [first, toggleFirst] = useState(true);
+  const [second, toggleSecond] = useState(false);
+  const onToggleFirst = () => toggleFirst(!first);
+  const onToggleSecond = () => toggleSecond(!second);
+
+  return (
+    <>
+      <Chips
+        selected={first}
+        onToggle={onToggleFirst}
+        elevation="small"
+        width={150}
+        >
+        Open now
+      </Chips>
+      <Chips
+        selected={second}
+        onToggle={onToggleSecond}
+        fs="14"
+        ml="medium"
+        >
+        Activities
+      </Chips>
+    </>
+  );
+});
+```
+
 ### Props
+
+<p>
+  The Chips component also has support for {''}
+
+  <GatsbyLink to="/system/backgroundColor">backgroundColor</GatsbyLink>, {''} 
+  <GatsbyLink to="/system/border">border</GatsbyLink>, {''}
+  <GatsbyLink to="/system/elevation">elevation</GatsbyLink>, {''}
+  <GatsbyLink to="/system/layout">layout</GatsbyLink>, {''}
+  <GatsbyLink to="/system/spacing">spacing</GatsbyLink>, 
+  and <GatsbyLink to="/system/typography">typography</GatsbyLink> props 
+
+</p>
 
 <PropsTable component="Chips" platform="web" />
