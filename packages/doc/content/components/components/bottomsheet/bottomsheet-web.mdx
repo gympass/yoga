@@ -1,0 +1,38 @@
+### Usage
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleCancel = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('This is your custom action');
+  };
+
+  return (
+    <>
+      <Button.Outline onClick={handleOpen}>Open BottomSheet</Button.Outline>
+
+      <BottomSheet 
+        open={isOpen} 
+        title="We couldn't confirm your account" 
+        subTitle="Double check your info" 
+        actionLabel="Ok, I understand" 
+        onAction={handleOnAction}  
+        onCancel={handleCancel}
+      />
+    </>
+  );
+});
+```
+
+### Props
+
+<PropsTable component="BottomSheet" platform="web" />

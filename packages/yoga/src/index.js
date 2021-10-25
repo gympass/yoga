@@ -25,6 +25,7 @@ import Chips from './Chips';
 import Box from './Box';
 import Snackbar from './Snackbar';
 import Avatar from './Avatar';
+import BottomSheet from './BottomSheet';
 
 export {
   ThemeProvider,
@@ -58,4 +59,5 @@ export {
   Box,
   Snackbar,
   Avatar,
+  BottomSheet,
 };
