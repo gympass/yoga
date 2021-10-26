@@ -5,19 +5,31 @@ import Box from '../../Box';
 import Text from '../../Text';
 import Button from '../../Button';
 
+export const Wrapper = styled.div`
+  display: ${props => (props.isOpen ? 'flex' : 'none')};
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+`;
+
 export const BackDrop = styled.div`
-  display: ${props => (props.isOpen ? 'block' : 'none')};
-  height: 100vh;
-  width: 100vw;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 99999;
-  position: absolute;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 `;
 
 export const Container = styled.aside`
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
+  right: 0;
+  left: 0;
   bottom: 0;
   width: 100%;
   background-color: #eff0f2;
@@ -93,19 +105,18 @@ const BottomSheet = ({
   onCancel,
 }) => {
   return (
-    <>
-      <BackDrop isOpen={open}>
-        <Container isOpen={open}>
-          <Title>{title}</Title>
-          {subTitle && <SubTitle>{subTitle}</SubTitle>}
-          <ButtonStyled onClick={onAction}>{actionLabel}</ButtonStyled>
-          {onCancel && (
-            <ButtonTextStyled onClick={onCancel}>Cancel</ButtonTextStyled>
-          )}
-          <Box height="24" width="100%" />
-        </Container>
-      </BackDrop>
-    </>
+    <Wrapper isOpen={open}>
+      <BackDrop />
+      <Container>
+        <Title>{title}</Title>
+        {subTitle && <SubTitle>{subTitle}</SubTitle>}
+        <ButtonStyled onClick={onAction}>{actionLabel}</ButtonStyled>
+        {onCancel && (
+          <ButtonTextStyled onClick={onCancel}>Cancel</ButtonTextStyled>
+        )}
+        <Box height="24" width="100%" />
+      </Container>
+    </Wrapper>
   );
 };
 

@@ -4,7 +4,7 @@ import { render } from '@testing-library/react-native';
 import { ThemeProvider, BottomSheet } from '../..';
 
 describe('<BottomSheet />', () => {
-  it('should match snapshot', () => {
+  it.skip('should match snapshot', () => {
     const { container } = render(
       <ThemeProvider>
         <BottomSheet />
