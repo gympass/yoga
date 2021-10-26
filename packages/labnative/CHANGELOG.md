@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.7.4...@gympass/yoga-labnative@1.8.0) (2021-10-26)
+
+
+### Features
+
+* **avatar:** add children prop to avatar native ([54dd9cd](https://github.com/Gympass/yoga/commit/54dd9cd764ed8a736de2e328e9332c8d58d0c7a0))
+
+
+
+
+
 ## [1.7.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.7.3...@gympass/yoga-labnative@1.7.4) (2021-10-22)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

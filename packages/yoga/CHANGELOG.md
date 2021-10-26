@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.21.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.20.4...@gympass/yoga@7.21.0) (2021-10-26)
+
+
+### Features
+
+* **avatar:** add children prop to avatar native ([54dd9cd](https://github.com/Gympass/yoga/commit/54dd9cd764ed8a736de2e328e9332c8d58d0c7a0))
+* **avatar:** add snapshot test ([4768ad6](https://github.com/Gympass/yoga/commit/4768ad6d4d40f7b3e6dd37393bf14e42eb0417df))
+* **avatar:** minor improvements ([559ea14](https://github.com/Gympass/yoga/commit/559ea14db52fd7ee33aa2557544104f4c14ac431))
+* **avatar-web:** add new specification as in mobile ([8c808ce](https://github.com/Gympass/yoga/commit/8c808ce2f04605126dd647c111e5f039c4f932bc))
+
+
+
+
+
 ## [7.20.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.20.3...@gympass/yoga@7.20.4) (2021-10-22)
 
 
