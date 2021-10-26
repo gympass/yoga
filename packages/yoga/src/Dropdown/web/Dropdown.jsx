@@ -106,7 +106,6 @@ const Input = styled.input`
 
     background-color: transparent;
     border: none;
-
     font-family: ${baseFont.family};
     font-size: ${dropdown.input.font.size}px;
     line-height: ${dropdown.input.font.lineHeight}px;
