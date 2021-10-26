@@ -20,27 +20,39 @@ const Avatar = ({
   fill,
   stroke,
   icon = BuildingFilled,
+  children,
   ...otherProps
-}) => (
-  <Box
-    bgColor="elements.selectionAndIcons"
-    display="flex"
-    alignItems="center"
-    justifyContent="center"
-    width={48}
-    height={48}
-    borderRadius="small"
-    elevation="small"
-    overflow="hidden"
-    {...otherProps}
-  >
-    {src ? (
-      <Image src={src} alt={alt} />
-    ) : (
-      <Icon as={icon} width="50%" height="50%" fill={fill} stroke={stroke} />
-    )}
-  </Box>
-);
+}) => {
+  function Content() {
+    if (src) {
+      return <Image src={src} alt={alt} />;
+    }
+
+    if (children) {
+      return children;
+    }
+
+    return (
+      <Icon as={icon} width="50%" heiht="50%" fill={fill} stroke={stroke} />
+    );
+  }
+  return (
+    <Box
+      bgColor="elements.selectionAndIcons"
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      width={48}
+      height={48}
+      borderRadius="small"
+      elevation="small"
+      overflow="hidden"
+      {...otherProps}
+    >
+      <Content />
+    </Box>
+  );
+};
 
 Avatar.propTypes = {
   src: string,
