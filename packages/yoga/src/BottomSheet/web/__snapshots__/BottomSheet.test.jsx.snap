@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BottomSheet /> should match snapshot 1`] = `
-.c4 {
+.c6 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -40,7 +40,7 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   text-decoration: none;
 }
 
-.c4 svg {
+.c6 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -49,36 +49,36 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   transition: fill 0.2s;
 }
 
-.c4:not([disabled]):hover,
-.c4:not([disabled]):focus {
+.c6:not([disabled]):hover,
+.c6:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(216,56,94,0.45);
 }
 
-.c4:active {
+.c6:active {
   background-color: rgba(216,56,94,0.75);
   color: #FFFFFF;
 }
 
-.c4:active svg {
+.c6:active svg {
   fill: #FFFFFF;
 }
 
-.c4:disabled {
+.c6:disabled {
   background-color: #F5F5FA;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
-.c4:disabled svg {
+.c6:disabled svg {
   fill: #D7D7E0;
 }
 
-.c6 {
+.c8 {
   width: 100%;
   height: 24px;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -89,15 +89,28 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
 }
 
 .c0 {
-  display: none;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0,0,0,0.3);
-  z-index: 99999;
-  position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
 }
 
 .c1 {
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -105,7 +118,9 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
+  right: 0;
+  left: 0;
   bottom: 0;
   width: 100%;
   background-color: #eff0f2;
@@ -119,7 +134,7 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   border-radius: 16px 16px 0px 0px;
 }
 
-.c3 {
+.c4 {
   font-weight: 500;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -128,6 +143,19 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
 }
 
 .c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-weight: 400;
+  color: #6B6B78;
+  line-height: 20px;
+}
+
+.c7 {
   margin-top: 20px;
 }
 
@@ -135,19 +163,32 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   <div
     class="c0"
   >
-    <aside
+    <div
       class="c1"
+    />
+    <aside
+      class="c2"
     >
       <p
-        class="c2 c3"
-      />
-      <button
-        class="c4 c5"
+        class="c3 c4"
+        data-testid="title"
       >
-        Button
+        We couldn't confirm your account
+      </p>
+      <p
+        class="c5"
+        data-testid="subtitle"
+      >
+        Double check your info
+      </p>
+      <button
+        class="c6 c7"
+        data-testid="button-action"
+      >
+        Ok, I understand
       </button>
       <div
-        class="c6"
+        class="c8"
         height="24"
         width="100%"
       />

@@ -108,11 +108,15 @@ const BottomSheet = ({
     <Wrapper isOpen={open}>
       <BackDrop />
       <Container>
-        <Title>{title}</Title>
-        {subTitle && <SubTitle>{subTitle}</SubTitle>}
-        <ButtonStyled onClick={onAction}>{actionLabel}</ButtonStyled>
+        <Title data-testid="title">{title}</Title>
+        {subTitle && <SubTitle data-testid="subtitle">{subTitle}</SubTitle>}
+        <ButtonStyled data-testid="button-action" onClick={onAction}>
+          {actionLabel}
+        </ButtonStyled>
         {onCancel && (
-          <ButtonTextStyled onClick={onCancel}>Cancel</ButtonTextStyled>
+          <ButtonTextStyled data-testid="button-cancel" onClick={onCancel}>
+            Cancel
+          </ButtonTextStyled>
         )}
         <Box height="24" width="100%" />
       </Container>
