@@ -18,10 +18,14 @@ const Avatar = ({
   stroke,
   ...props
 }) => {
-  function renderContent() {
-    if (src) return <Box as={Image} width="100%" height="100%" source={src} />;
+  function Content() {
+    if (src) {
+      return <Box as={Image} width="100%" height="100%" source={src} />;
+    }
 
-    if (children) return children;
+    if (children) {
+      return children;
+    }
 
     return (
       <Icon as={icon} width="50%" height="50%" fill={fill} stroke={stroke} />
@@ -41,7 +45,7 @@ const Avatar = ({
       overflow="hidden"
       {...props}
     >
-      {renderContent()}
+      <Content />
     </Box>
   );
 };
