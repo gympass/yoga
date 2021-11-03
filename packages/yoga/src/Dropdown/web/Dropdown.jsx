@@ -112,7 +112,11 @@ const labelTransition = css`
 
     font-size: ${input.label.font.size.typed}px;
     color: ${dropdown.input.label.color};
+<<<<<<< HEAD
     margin-left: ${dropdown.input.label.margin.left}px;
+=======
+    margin-left: ${dropdown.input.label.margin.left}
+>>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
   `}
 `;
 
@@ -120,7 +124,10 @@ const Input = styled.input`
   ${({
     disabled,
     value,
+<<<<<<< HEAD
     isOpen,
+=======
+>>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
     theme: {
       yoga: {
         transition,
@@ -151,6 +158,7 @@ const Input = styled.input`
       }
     }
 
+<<<<<<< HEAD
     ${value || isOpen
       ? css`
           & ~ legend {
@@ -164,6 +172,9 @@ const Input = styled.input`
       : ''}
 
     ${isOpen &&
+=======
+    ${value &&
+>>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
       css`
         & ~ legend {
           max-width: 1000px;
@@ -356,7 +367,11 @@ const Dropdown = ({
             {...getInputProps()}
             isOpen={isOpen}
           />
+<<<<<<< HEAD
           <Label error={error} disabled={disabled} data-testid="label">
+=======
+          <Label error={error} disabled={disabled}>
+>>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
             {label}
           </Label>
 
