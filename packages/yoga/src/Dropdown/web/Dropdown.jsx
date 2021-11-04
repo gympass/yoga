@@ -112,15 +112,7 @@ const labelTransition = css`
 
     font-size: ${input.label.font.size.typed}px;
     color: ${dropdown.input.label.color};
-<<<<<<< HEAD
-<<<<<<< HEAD
     margin-left: ${dropdown.input.label.margin.left}px;
-=======
-    margin-left: ${dropdown.input.label.margin.left}
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
-    margin-left: ${dropdown.input.label.margin.left}px;
->>>>>>> 23df53c1c... :art: feat: add legend behavior to another scenery
   `}
 `;
 
@@ -128,14 +120,7 @@ const Input = styled.input`
   ${({
     disabled,
     value,
-<<<<<<< HEAD
-<<<<<<< HEAD
     isOpen,
-=======
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
-    isOpen,
->>>>>>> 23df53c1c... :art: feat: add legend behavior to another scenery
     theme: {
       yoga: {
         transition,
@@ -166,10 +151,6 @@ const Input = styled.input`
       }
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 23df53c1c... :art: feat: add legend behavior to another scenery
     ${value || isOpen
       ? css`
           & ~ legend {
@@ -183,12 +164,6 @@ const Input = styled.input`
       : ''}
 
     ${isOpen &&
-<<<<<<< HEAD
-=======
-    ${value &&
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
->>>>>>> 23df53c1c... :art: feat: add legend behavior to another scenery
       css`
         & ~ legend {
           max-width: 1000px;
@@ -381,15 +356,7 @@ const Dropdown = ({
             {...getInputProps()}
             isOpen={isOpen}
           />
-<<<<<<< HEAD
-<<<<<<< HEAD
           <Label error={error} disabled={disabled} data-testid="label">
-=======
-          <Label error={error} disabled={disabled}>
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
-          <Label error={error} disabled={disabled} data-testid="label">
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
             {label}
           </Label>
 
