@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.21.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.21.0...@gympass/yoga@7.21.1) (2021-11-04)
+
+
+### Bug Fixes
+
+* **avatar:** separate the content component from the avatar component ([dbc1778](https://github.com/Gympass/yoga/commit/dbc17788b8edd471662d644d3b3c1b840f40186d)), closes [#379](https://github.com/Gympass/yoga/issues/379)
+
+
+
+
+
 # [7.21.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.20.4...@gympass/yoga@7.21.0) (2021-10-26)
 
 
