@@ -41,6 +41,7 @@ exports[`<Avatar /> should match snapshot in avatar with children prop 1`] = `
 exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
 .c1 {
   width: 50%;
+  height: 50%;
 }
 
 .c0 {
@@ -76,7 +77,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
     <svg
       class="c1"
       fill="#FFFFFF"
-      heiht="50%"
+      height="50%"
       width="50%"
     />
   </div>
@@ -86,6 +87,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
 exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop 1`] = `
 .c1 {
   width: 50%;
+  height: 50%;
 }
 
 .c0 {
@@ -121,7 +123,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
     <svg
       class="c1"
       fill="#FFFFFF"
-      heiht="50%"
+      height="50%"
       width="50%"
     />
   </div>
@@ -196,6 +198,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
 
 .c1 {
   width: 50%;
+  height: 50%;
 }
 
 <div>
@@ -210,7 +213,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
     <svg
       class="c1"
       fill="black"
-      heiht="50%"
+      height="50%"
       width="50%"
     />
   </div>
@@ -220,6 +223,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
 exports[`<Avatar /> should match snapshot in default avatar with placeholder prop 1`] = `
 .c1 {
   width: 50%;
+  height: 50%;
 }
 
 .c0 {
@@ -255,7 +259,7 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
     <svg
       class="c1"
       fill="#FFFFFF"
-      heiht="50%"
+      height="50%"
       width="50%"
     />
   </div>
