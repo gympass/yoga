@@ -33,6 +33,12 @@ const Dropdown = ({
       size: fontSizes.small,
       lineHeight: lineHeights.small,
     },
+    label: {
+      color: colors.text.primary,
+      margin: {
+        left: spacing.xxxsmall,
+      },
+    },
   },
   button: {
     padding: {
@@ -49,7 +55,7 @@ const Dropdown = ({
         bottomLeft: radii.small,
       },
       width: borders.small,
-      color: colors.text.secondary,
+      color: colors.text.primary,
     },
   },
   option: {
@@ -121,7 +127,7 @@ const Dropdown = ({
   hover: {
     selector: {
       border: {
-        color: colors.text.secondary,
+        color: colors.text.primary,
       },
     },
     option: {
@@ -150,7 +156,7 @@ const Dropdown = ({
       },
     },
     arrow: {
-      fill: colors.primary,
+      fill: colors.text.primary,
     },
     input: {
       font: {

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Downshift from 'downshift';
 import {
   arrayOf,
@@ -13,6 +13,9 @@ import {
 import { ChevronDown } from '@gympass/yoga-icons';
 
 import Helper from '../../Input/web/Helper';
+
+import Legend from '../../Input/web/Legend';
+import Label from '../../Input/web/Label';
 
 const Wrapper = styled.div`
   ${({
@@ -31,7 +34,7 @@ const Wrapper = styled.div`
   `}
 `;
 
-const Selector = styled.div`
+const Selector = styled.fieldset`
   ${({
     disabled,
     selected,
@@ -49,6 +52,7 @@ const Selector = styled.div`
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    margin: 0;
 
     height: ${input.height}px;
     width: 100%;
@@ -59,6 +63,7 @@ const Selector = styled.div`
 
     background-color: ${dropdown.selector.background};
     border-radius: ${dropdown.selector.border.radius}px;
+
     border-width: ${dropdown.selector.border.width}px;
     border-style: solid;
     border-color: ${
@@ -84,23 +89,46 @@ const Selector = styled.div`
     };
     ${
       isOpen && !disabled
-        ? `border-color: ${dropdown.hover.selector.border.color};`
+        ? `border-color: ${dropdown.hover.selector.border.color};
+           border-radius: ${dropdown.selector.border.radius}px ${dropdown.selector.border.radius}px 0px 0px;
+        `
         : ''
     }
+  `}
+`;
+const labelTransition = css`
+  ${({
+    theme: {
+      yoga: {
+        transition,
+        components: { input, dropdown },
+      },
+    },
+  }) => `
+    transform: translateY(-${input.height / 2 - 2}px);
+    transition-property: transform, font-size, color;
+    transition-duration: ${transition.duration[1]}ms;
+    transition-timing-function: cubic-bezier(${transition.timing[0].join()});
+
+    font-size: ${input.label.font.size.typed}px;
+    color: ${dropdown.input.label.color};
+    margin-left: ${dropdown.input.label.margin.left}px;
   `}
 `;
 
 const Input = styled.input`
   ${({
     disabled,
-    selected,
+    value,
+    isOpen,
     theme: {
       yoga: {
+        transition,
         baseFont,
         components: { dropdown },
       },
     },
-  }) => `
+  }) => css`
     width: 100%;
     padding: 0;
 
@@ -111,11 +139,40 @@ const Input = styled.input`
     line-height: ${dropdown.input.font.lineHeight}px;
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
 
-    &, &::placeholder {
-      color: ${dropdown.input.font.color};
-      ${selected ? `color: ${dropdown.selected.input.font.color};` : ''}
-      ${disabled ? `color: ${dropdown.disabled.input.font.color};` : ''}
+    &:focus {
+      & ~ legend {
+        max-width: 1000px;
+        transition-property: max-width;
+        transition-duration: ${transition.duration[1]}ms;
+      }
+
+      & ~ label {
+        ${labelTransition}
+      }
     }
+
+    ${value || isOpen
+      ? css`
+          & ~ legend {
+            max-width: 1000px;
+          }
+
+          & ~ label {
+            ${labelTransition};
+          }
+        `
+      : ''}
+
+    ${isOpen &&
+      css`
+        & ~ legend {
+          max-width: 1000px;
+        }
+
+        & ~ label {
+          ${labelTransition};
+        }
+      `}
   `}
 `;
 
@@ -149,7 +206,6 @@ const Button = styled.button`
 
 const OptionsList = styled.ul`
   ${({
-    selected,
     theme: {
       yoga: {
         components: { dropdown },
@@ -174,12 +230,6 @@ const OptionsList = styled.ul`
     border-color: ${dropdown.optionsList.border.color};
     border-top: none;
 
-    ${
-      selected
-        ? `border-color: ${dropdown.selected.optionsList.border.color};`
-        : ''
-    };
-
     border-radius:
         ${dropdown.option.border.radius.topLeft}px
         ${dropdown.option.border.radius.topRight}px
@@ -191,7 +241,6 @@ const OptionsList = styled.ul`
 const Option = styled.li`
   ${({
     isSelected,
-    highlighted,
     theme: {
       yoga: {
         baseFont,
@@ -228,12 +277,6 @@ const Option = styled.li`
         ? dropdown.selected.option.font.color
         : dropdown.option.font.color
     };
-
-    ${
-      highlighted
-        ? `background-color: ${dropdown.hover.option.backgroundColor};`
-        : ''
-    }
 
     &:hover {
       background-color: ${dropdown.hover.option.backgroundColor};
@@ -294,6 +337,7 @@ const Dropdown = ({
       getRootProps,
       getMenuProps,
       getToggleButtonProps,
+      selectItem,
       selectedItem,
       highlightedIndex,
       isOpen,
@@ -307,11 +351,16 @@ const Dropdown = ({
         >
           <Input
             readOnly
-            placeholder={label}
             disabled={disabled}
             selected={selectedItem !== null}
             {...getInputProps()}
+            isOpen={isOpen}
           />
+          <Label error={error} disabled={disabled} data-testid="label">
+            {label}
+          </Label>
+
+          {label && <Legend>{label}</Legend>}
           <Button
             isOpen={isOpen}
             disabled={disabled}
@@ -324,9 +373,9 @@ const Dropdown = ({
             />
           </Button>
         </Selector>
-
         {isOpen && (
           <OptionsList selected={selectedItem !== null} {...getMenuProps()}>
+            <Option onClick={() => selectItem(null)} />
             {options.map((item, index) => (
               <Option
                 {...getItemProps({

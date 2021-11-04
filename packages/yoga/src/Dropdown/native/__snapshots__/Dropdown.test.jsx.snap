@@ -640,7 +640,7 @@ exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
         <RNSVGSvgView
           bbHeight={20}
           bbWidth={20}
-          fill="#D8385E"
+          fill="#231B22"
           focusable={false}
           height={20}
           style={
@@ -666,7 +666,7 @@ exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
             fill={
               Array [
                 0,
-                4292360286,
+                4280490786,
               ]
             }
             fillOpacity={1}
