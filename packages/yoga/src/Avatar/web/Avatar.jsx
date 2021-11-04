@@ -10,6 +10,20 @@ const Image = styled.img`
   max-width: 100%;
 `;
 
+const Content = ({ icon, alt, src, fill, content, stroke }) => {
+  if (src) {
+    return <Image src={src} alt={alt} />;
+  }
+
+  if (content) {
+    return content;
+  }
+
+  return (
+    <Icon as={icon} width="50%" height="50%" fill={fill} stroke={stroke} />
+  );
+};
+
 /**
  * The Avatar component is used to display the image.
  * It has two shapes: default and circle
@@ -23,19 +37,6 @@ const Avatar = ({
   children,
   ...otherProps
 }) => {
-  function Content() {
-    if (src) {
-      return <Image src={src} alt={alt} />;
-    }
-
-    if (children) {
-      return children;
-    }
-
-    return (
-      <Icon as={icon} width="50%" heiht="50%" fill={fill} stroke={stroke} />
-    );
-  }
   return (
     <Box
       bgColor="elements.selectionAndIcons"
@@ -49,9 +50,31 @@ const Avatar = ({
       overflow="hidden"
       {...otherProps}
     >
-      <Content />
+      <Content
+        icon={icon}
+        src={src}
+        fill={fill}
+        stroke={stroke}
+        content={children}
+        alt={alt}
+      />
     </Box>
   );
+};
+
+Content.propTypes = {
+  src: string,
+  icon: func,
+  fill: string,
+  alt: string,
+  ...Box.propTypes,
+};
+
+Content.defaultProps = {
+  src: undefined,
+  fill: 'white',
+  alt: undefined,
+  icon: undefined,
 };
 
 Avatar.propTypes = {
