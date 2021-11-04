@@ -382,10 +382,14 @@ const Dropdown = ({
             isOpen={isOpen}
           />
 <<<<<<< HEAD
+<<<<<<< HEAD
           <Label error={error} disabled={disabled} data-testid="label">
 =======
           <Label error={error} disabled={disabled}>
 >>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
+=======
+          <Label error={error} disabled={disabled} data-testid="label">
+>>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
             {label}
           </Label>
 
