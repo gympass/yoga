@@ -6,32 +6,32 @@ import { Image } from 'react-native';
 import Box from '../../Box';
 import Icon from '../../Icon';
 
+const Content = ({ icon, src, fill, content, stroke }) => {
+  if (src) {
+    return <Box as={Image} width="100%" height="100%" source={src} />;
+  }
+
+  if (content) {
+    return content;
+  }
+
+  return (
+    <Icon as={icon} width="50%" height="50%" fill={fill} stroke={stroke} />
+  );
+};
+
 /**
  * The Avatar component is used to display the image.
  * It has two shapes: default and circle
  */
 const Avatar = ({
+  icon = BuildingFilled,
   src,
   children,
-  icon = BuildingFilled,
   fill,
   stroke,
   ...props
 }) => {
-  function Content() {
-    if (src) {
-      return <Box as={Image} width="100%" height="100%" source={src} />;
-    }
-
-    if (children) {
-      return children;
-    }
-
-    return (
-      <Icon as={icon} width="50%" height="50%" fill={fill} stroke={stroke} />
-    );
-  }
-
   return (
     <Box
       bgColor="elements.selectionAndIcons"
@@ -45,9 +45,28 @@ const Avatar = ({
       overflow="hidden"
       {...props}
     >
-      <Content />
+      <Content
+        icon={icon}
+        src={src}
+        fill={fill}
+        stroke={stroke}
+        content={children}
+      />
     </Box>
   );
+};
+
+Content.propTypes = {
+  src: Image.propTypes.source,
+  icon: func,
+  fill: string,
+  ...Box.propTypes,
+};
+
+Content.defaultProps = {
+  src: undefined,
+  fill: 'white',
+  icon: BuildingFilled,
 };
 
 Avatar.propTypes = {
