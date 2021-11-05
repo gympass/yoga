@@ -1,0 +1,142 @@
+---
+title: 'Dialog'
+metaTitle: 'Dialog'
+metaDescription: 'Dialog Component'
+---
+
+# Dialog
+
+### Reference
+
+Gympass `<Dialog />` is the proper component to show alert messages.
+
+The `Dialog` may have an icon, a custom action and a close button.
+
+### Usage
+
+### Dialog with one action
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <>
+      <Button onClick={handleOpen} secondary>Dialog with one action</Button>
+
+      <Dialog
+        isOpen={isOpen}
+        onClose={handleOnClose}
+      >       
+       <Dialog.Header>
+         <Text.H4 ta="center"> Title </Text.H4> 
+       </Dialog.Header>
+       <Dialog.Content>
+         <Text color="deep"> Subtitle</Text>
+       </Dialog.Content>
+       <Dialog.Actions>
+          <Button onClick={handleOnClose} secondary>Ok, got it</Button>
+       </Dialog.Actions>
+      </Dialog>
+    </>
+  );
+});
+```
+
+### Dialog with two actions
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <>
+      <Button onClick={handleOpen}>Dialog with two actions </Button>
+
+      <Dialog
+        isOpen={isOpen}
+        onClose={handleOnClose}
+      >       
+       <Dialog.Header>
+         <Text.H4 ta="center"> Title </Text.H4> 
+       </Dialog.Header>
+       <Dialog.Content>
+         <Text color="deep"> Subtitle</Text>
+       </Dialog.Content>
+       <Dialog.Actions>
+        <Box mr={24}>
+          <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
+        </Box>
+        <Box>
+          <Button onClick={handleOnClose}>Yes, downgrade</Button>
+        </Box>
+       </Dialog.Actions>
+      </Dialog>
+    </>
+  );
+});
+```
+
+### Dialog with close button
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <>
+      <Button onClick={handleOpen}>Dialog with close button </Button>
+
+      <Dialog
+        isOpen={isOpen}
+        onClose={handleOnClose}
+      >       
+       <Dialog.Header>
+        <Text.H4 ta="center"> Title </Text.H4> 
+       </Dialog.Header>
+       <Dialog.Content>
+         <Text color="deep"> Subtitle</Text>
+       </Dialog.Content>
+       <Dialog.Actions>
+        <Box mr={24}>
+          <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
+        </Box>
+        <Box>
+          <Button onClick={handleOnClose}>Yes, downgrade</Button>
+        </Box>
+       </Dialog.Actions>
+      </Dialog>
+    </>
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Dialog" platform="web" />
+<PropsTable component="Dialog.Title" platform="web" />
+<PropsTable component="Card" platform="web" />
