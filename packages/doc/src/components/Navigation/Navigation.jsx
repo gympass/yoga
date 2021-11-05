@@ -19,9 +19,9 @@ import MDXElements from '../MDXElements';
  */
 const getSorting = kind =>
   ({
-    order: (a, b) => (a.order > b.order ? 1 : -1),
-    alphabetic: (a, b) => (a > b ? -1 : 1),
-  }[kind ?? 'order']);
+    alphabeticDescending: (a, b) => (a.title > b.title ? -1 : 1),
+    alphabeticAscending: (a, b) => (a.title > b.title ? 1 : -1),
+  }[kind ?? 'alphabeticDescending']);
 
 /**
  * Specify here collapsible sections which should sort its children by name
@@ -159,8 +159,8 @@ const ListItem = ({
   const linkPath = prefix ? `/yoga${filteredUrl}` : filteredUrl;
   const isActive = window && pathname.replace(/\/$/, '') === linkPath;
   const innerSorting = sectionsSortedByName.includes(title.toLowerCase())
-    ? 'alphabetic'
-    : 'order';
+    ? 'alphabeticAscending'
+    : 'alphabeticDescending';
 
   const onNavigate = () => {
     if (filteredUrl !== pathname) {
@@ -247,7 +247,7 @@ List.propTypes = {
   level: number,
   toggleMenu: func.isRequired,
   prefix: bool.isRequired,
-  sorting: oneOf(['alphabetic', 'order']),
+  sorting: oneOf(['alphabeticDescending', 'alphabeticAscending']),
 };
 
 List.defaultProps = {
