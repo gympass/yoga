@@ -12,7 +12,6 @@ import MDXElements from '../MDXElements';
 const SORTING = {
   orderAscending: 'orderAscending',
   alphabeticAscending: 'alphabeticAscending',
-  alphabeticDescending: 'alphabeticDescending',
 };
 
 /**
@@ -25,19 +24,8 @@ const SORTING = {
 const getSorting = kind =>
   ({
     orderAscending: (a, b) => (a.order > b.order ? 1 : -1),
-    alphabeticDescending: (a, b) => (a.title > b.title ? -1 : 1),
     alphabeticAscending: (a, b) => (a.title > b.title ? 1 : -1),
   }[kind ?? SORTING.orderAscending]);
-
-/**
- * Specify here collapsible sections which should sort its children by name
- */
-const sectionsOrdering = {
-  components: SORTING.alphabeticAscending,
-  system: SORTING.orderAscending,
-  design_tokens: SORTING.alphabeticAscending,
-  product_content_guide: SORTING.orderAscending,
-};
 
 const Wrapper = styled.aside`
   ${({
@@ -162,8 +150,6 @@ const ListItem = ({
   const [isCollapsed, setCollapsed] = useState(collapsed);
   const hasChild = Boolean(Object.keys(childrenContent).length);
 
-  console.log(childrenContent);
-
   const filteredUrl = `/${[
     ...new Set(url.split('/').filter(item => item)),
   ].join('/')}`;
@@ -171,11 +157,6 @@ const ListItem = ({
   const { pathname } = window.location;
   const linkPath = prefix ? `/yoga${filteredUrl}` : filteredUrl;
   const isActive = window && pathname.replace(/\/$/, '') === linkPath;
-  const resolvedTitle = title.toLowerCase().replace(' ', '_');
-  const innerSorting =
-    resolvedTitle in sectionsOrdering
-      ? sectionsOrdering[resolvedTitle]
-      : SORTING.orderAscending;
 
   const onNavigate = () => {
     if (filteredUrl !== pathname) {
@@ -218,7 +199,6 @@ const ListItem = ({
             level={level + 1}
             toggleMenu={toggleMenu}
             prefix={prefix}
-            sorting={innerSorting}
           />
         </StyledList>
       )}
@@ -237,34 +217,43 @@ ListItem.propTypes = {
   collapsed: bool.isRequired,
 };
 
-const List = ({ tree, level, toggleMenu, prefix, sorting }) => (
-  <StyledList>
-    {Object.values(tree)
-      .sort(getSorting(sorting))
-      .map(({ title, url, linkable, order, collapsed, ...childrenContent }) => {
-        return (
-          <ListItem
-            key={title}
-            title={title}
-            url={url}
-            linkable={linkable}
-            childrenContent={childrenContent}
-            level={level}
-            toggleMenu={toggleMenu}
-            prefix={prefix}
-            collapsed={collapsed}
-          />
-        );
-      })}
-  </StyledList>
-);
+const List = ({ tree, level, toggleMenu, prefix, sorting }) => {
+  const sortingFunction =
+    sorting || Object.keys(tree).some(child => child?.order)
+      ? SORTING.orderAscending
+      : SORTING.alphabeticAscending;
+
+  return (
+    <StyledList>
+      {Object.values(tree)
+        .sort(getSorting(sortingFunction))
+        .map(
+          ({ title, url, linkable, order, collapsed, ...childrenContent }) => {
+            return (
+              <ListItem
+                key={title}
+                title={title}
+                url={url}
+                linkable={linkable}
+                childrenContent={childrenContent}
+                level={level}
+                toggleMenu={toggleMenu}
+                prefix={prefix}
+                collapsed={collapsed}
+              />
+            );
+          },
+        )}
+    </StyledList>
+  );
+};
 
 List.propTypes = {
   tree: shape({}).isRequired,
   level: number,
   toggleMenu: func.isRequired,
   prefix: bool.isRequired,
-  sorting: oneOf(['alphabeticDescending', 'alphabeticAscending']),
+  sorting: oneOf(Object.values(SORTING)),
 };
 
 List.defaultProps = {
@@ -280,8 +269,6 @@ const Navigation = ({ items, toggleMenu, opened, prefix }) => {
     return url.includes(prefix ? secondPath : firstPath);
   });
   const tree = createTree(filteredItems);
-
-  // console.log(`First tree: ${JSON.stringify(tree)}`);
 
   return (
     <Wrapper opened={opened}>
