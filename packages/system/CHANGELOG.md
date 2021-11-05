@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.9.0...@gympass/yoga-system@0.10.0) (2021-11-05)
+
+
+### Features
+
+* added zIndex prop to system ([7c6ce47](https://github.com/Gympass/yoga/commit/7c6ce47efb3fcbb974dc5a335b0c0c5d1528878d))
+
+
+
+
+
 # [0.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.8.0...@gympass/yoga-system@0.9.0) (2021-10-14)
 
 
