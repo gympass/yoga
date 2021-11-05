@@ -23,8 +23,8 @@ const SORTING = {
  */
 const getSorting = kind =>
   ({
-    orderAscending: (a, b) => (a.order > b.order ? 1 : -1),
-    alphabeticAscending: (a, b) => (a.title > b.title ? 1 : -1),
+    [SORTING.orderAscending]: (a, b) => (a.order > b.order ? 1 : -1),
+    [SORTING.alphabeticAscending]: (a, b) => (a.title > b.title ? 1 : -1),
   }[kind ?? SORTING.orderAscending]);
 
 const Wrapper = styled.aside`
