@@ -35,7 +35,7 @@ const getSorting = kind =>
 const sectionsOrdering = {
   components: SORTING.alphabeticAscending,
   system: SORTING.orderAscending,
-  design_tokens: SORTING.orderAscending,
+  design_tokens: SORTING.alphabeticAscending,
   product_content_guide: SORTING.orderAscending,
 };
 
