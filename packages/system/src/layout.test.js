@@ -188,9 +188,9 @@ describe('layout', () => {
           zIndex: -1,
         });
 
-        const zero = zIndex({ theme, zIndex: 0 });
-        const oneHundred = zIndex({ theme, zIndex: 100 });
-        const negative = zIndex({ theme, zIndex: -1 });
+        const zero = zIndex({ zIndex: 0 });
+        const oneHundred = zIndex({ zIndex: 100 });
+        const negative = zIndex({ zIndex: -1 });
 
         expect(zero).toStrictEqual(expectedZIndex0);
 
