@@ -29,7 +29,9 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -216,7 +218,9 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -408,7 +412,9 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -630,7 +636,9 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -817,7 +825,9 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -1046,7 +1056,9 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -1268,7 +1280,9 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
