@@ -7,6 +7,7 @@ import {
   right,
   bottom,
   left,
+  zIndex,
 } from './layout';
 
 const spacings = [0, 4, 8, 12];
@@ -172,6 +173,30 @@ describe('layout', () => {
         const l = left({ theme, left: '50%' });
 
         expect(l).toStrictEqual(expectedNoTheme);
+      });
+    });
+
+    describe('zIndex', () => {
+      it('Should return values for z-index prop', () => {
+        const expectedZIndex0 = css({
+          zIndex: 0,
+        });
+        const expectedZIndex100 = css({
+          zIndex: 100,
+        });
+        const expectedZIndexNegative = css({
+          zIndex: -1,
+        });
+
+        const zero = zIndex({ theme, zIndex: 0 });
+        const oneHundred = zIndex({ theme, zIndex: 100 });
+        const negative = zIndex({ theme, zIndex: -1 });
+
+        expect(zero).toStrictEqual(expectedZIndex0);
+
+        expect(oneHundred).toStrictEqual(expectedZIndex100);
+
+        expect(negative).toStrictEqual(expectedZIndexNegative);
       });
     });
   });
