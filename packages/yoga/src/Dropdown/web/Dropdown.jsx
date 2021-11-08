@@ -14,8 +14,7 @@ import { ChevronDown } from '@gympass/yoga-icons';
 
 import Helper from '../../Input/web/Helper';
 
-import Legend from '../../Input/web/Legend';
-import Label from '../../Input/web/Label';
+import Input from '../../Input/web/Input';
 
 const Wrapper = styled.div`
   ${({
@@ -34,68 +33,6 @@ const Wrapper = styled.div`
   `}
 `;
 
-const Selector = styled.fieldset`
-  ${({
-    disabled,
-    selected,
-    isOpen,
-    error,
-    theme: {
-      yoga: {
-        colors,
-        components: { dropdown, input },
-      },
-    },
-  }) => `
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    margin: 0;
-
-    height: ${input.height}px;
-    width: 100%;
-    padding: ${dropdown.selector.padding.top}px
-      ${dropdown.selector.padding.right}px
-      ${dropdown.selector.padding.bottom}px
-      ${dropdown.selector.padding.left}px;
-
-    background-color: ${dropdown.selector.background};
-    border-radius: ${dropdown.selector.border.radius}px;
-
-    border-width: ${dropdown.selector.border.width}px;
-    border-style: solid;
-    border-color: ${
-      error ? colors.feedback.attention[1] : dropdown.selector.border.color
-    };
-
-    &:hover{
-      ${
-        !disabled
-          ? `border-color: ${dropdown.hover.selector.border.color};`
-          : ''
-      };
-    }
-    ${
-      disabled
-        ? `border-color: ${dropdown.disabled.selector.border.color};`
-        : ''
-    };
-    ${
-      selected
-        ? `border-color: ${dropdown.selected.selector.border.color};`
-        : ''
-    };
-    ${
-      isOpen && !disabled
-        ? `border-color: ${dropdown.hover.selector.border.color};
-           border-radius: ${dropdown.selector.border.radius}px ${dropdown.selector.border.radius}px 0px 0px;
-        `
-        : ''
-    }
-  `}
-`;
 const labelTransition = css`
   ${({
     theme: {
@@ -116,15 +53,15 @@ const labelTransition = css`
   `}
 `;
 
-const Input = styled.input`
+const Selector = styled.div`
   ${({
-    disabled,
-    value,
     isOpen,
+    disabled,
+    selected,
+    error,
     theme: {
       yoga: {
-        transition,
-        baseFont,
+        colors,
         components: { dropdown },
       },
     },
@@ -138,7 +75,45 @@ const Input = styled.input`
     font-size: ${dropdown.input.font.size}px;
     line-height: ${dropdown.input.font.lineHeight}px;
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
+    ${!disabled
+      ? `
+          &:hover {
+            fieldset {
+              border-color: ${dropdown.hover.selector.border.color};
+            }
+          }
+          ${
+            isOpen || selected
+              ? `
+                fieldset {
+                  border-color: ${dropdown.hover.selector.border.color};
+                }
+              `
+              : ''
+          }
+          ${
+            error
+              ? `
+              fieldset {
+                border-color: ${colors.feedback.attention[1]};
+              }
+            `
+              : ''
+          }
+        `
+      : ''}
+  `}
+`;
 
+const Field = styled(Input)`
+  ${({
+    value,
+    isOpen,
+    disabled,
+    theme: {
+      yoga: { transition },
+    },
+  }) => css`
     &:focus {
       & ~ legend {
         max-width: max-content;
@@ -151,7 +126,7 @@ const Input = styled.input`
       }
     }
 
-    ${value || isOpen
+    ${(value || isOpen) && !disabled
       ? css`
           & ~ legend {
             max-width: max-content;
@@ -337,7 +312,6 @@ const Dropdown = ({
       getRootProps,
       getMenuProps,
       getToggleButtonProps,
-      selectItem,
       selectedItem,
       highlightedIndex,
       isOpen,
@@ -349,18 +323,14 @@ const Dropdown = ({
           error={error}
           selected={selectedItem !== null}
         >
-          <Input
+          <Field
             readOnly
             disabled={disabled}
             selected={selectedItem !== null}
             {...getInputProps()}
             isOpen={isOpen}
+            label={label}
           />
-          <Label error={error} disabled={disabled} data-testid="label">
-            {label}
-          </Label>
-
-          {label && <Legend>{label}</Legend>}
           <Button
             isOpen={isOpen}
             disabled={disabled}
@@ -375,7 +345,6 @@ const Dropdown = ({
         </Selector>
         {isOpen && (
           <OptionsList selected={selectedItem !== null} {...getMenuProps()}>
-            <Option onClick={() => selectItem(null)} />
             {options.map((item, index) => (
               <Option
                 {...getItemProps({

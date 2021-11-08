@@ -2,6 +2,106 @@
 
 exports[`<Dropdown /> should match snapshot 1`] = `
 .c4 {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  box-sizing: border-box;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 52px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  color: #231B22;
+  font-family: Rubik,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c4:focus {
+  color: #231B22;
+}
+
+.c4:focus ~ legend {
+  max-width: 1000px;
+  -webkit-transition-property: max-width;
+  transition-property: max-width;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.c4:focus ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size,color;
+  -webkit-transition-property: transform,font-size,color;
+  transition-property: transform,font-size,color;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
+  font-weight: 400;
+  color: #231B22;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+  color: #D7D7E0;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c4::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c4:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c4::placeholder {
+  color: #6B6B78;
+}
+
+.c4[type="number"]::-webkit-outer-spin-button,
+.c4[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c4:invalid {
+  box-shadow: none;
+}
+
+.c3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 320px;
+  height: 52px;
+  padding-left: 12px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D7D7E0;
+}
+
+.c3:hover,
+.c3:focus-within {
+  border-color: #231B22;
+}
+
+.c7 {
   position: relative;
   padding: 0;
   max-width: 0;
@@ -20,12 +120,12 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   transition-duration: 100ms;
 }
 
-.c5 {
+.c8 {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c3 {
+.c6 {
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -50,6 +150,11 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
 }
 
+.c2 {
+  box-sizing: border-box;
+  width: 320px;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -57,48 +162,11 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   width: 320px;
 }
 
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  margin: 0;
-  height: 52px;
-  width: 100%;
-  padding: 16px 16px 16px 16px;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #D7D7E0;
-}
-
-.c1:hover {
+.c1:hover fieldset {
   border-color: #231B22;
 }
 
-.c2 {
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  font-family: Rubik;
-  font-size: 14px;
-  line-height: 20px;
-  cursor: pointer;
-}
-
-.c2:focus ~ legend {
+.c5:focus ~ legend {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
@@ -108,7 +176,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   transition-duration: 500ms;
 }
 
-.c2:focus ~ label {
+.c5:focus ~ label {
   -webkit-transform: translateY(-24px);
   -ms-transform: translateY(-24px);
   transform: translateY(-24px);
@@ -121,11 +189,9 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-  margin-left: 4px;
-  margin-left: 4px;
 }
 
-.c6 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -153,7 +219,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   cursor: pointer;
 }
 
-.c7 {
+.c10 {
   fill: #6B6B78;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
@@ -168,54 +234,163 @@ exports[`<Dropdown /> should match snapshot 1`] = `
     class="c0"
     role="combobox"
   >
-    <fieldset
+    <div
       class="c1"
     >
-      <input
-        aria-autocomplete="list"
-        aria-labelledby="downshift-0-label"
-        autocomplete="off"
+      <div
         class="c2"
-        id="downshift-0-input"
-        readonly=""
-        value=""
-      />
-      <label
-        class="c3"
-        data-testid="label"
       >
-        Find an activity to love
-      </label>
-      <legend
-        class="c4"
-      >
-        <span
-          class="c5"
+        <fieldset
+          class="c3"
+          label="Find an activity to love"
         >
-          Find an activity to love
-        </span>
-      </legend>
+          <input
+            aria-autocomplete="list"
+            aria-labelledby="downshift-0-label"
+            autocomplete="off"
+            class="c4 c5"
+            id="downshift-0-input"
+            readonly=""
+            value=""
+          />
+          <label
+            class="c6"
+          >
+            Find an activity to love
+          </label>
+          <legend
+            class="c7"
+          >
+            <span
+              class="c8"
+            >
+              Find an activity to love
+            </span>
+          </legend>
+        </fieldset>
+      </div>
       <button
         aria-haspopup="true"
         aria-label="open menu"
-        class="c6"
+        class="c9"
         data-toggle="true"
         role="button"
         type="button"
       >
         <svg
-          class="c7"
+          class="c10"
           height="20"
           width="20"
         />
       </button>
-    </fieldset>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Dropdown /> should match snapshot when disabled 1`] = `
-.c4 {
+.c3 {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  box-sizing: border-box;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 52px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  color: #231B22;
+  font-family: Rubik,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c3:focus {
+  color: #231B22;
+}
+
+.c3:focus ~ legend {
+  max-width: 1000px;
+  -webkit-transition-property: max-width;
+  transition-property: max-width;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.c3:focus ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size,color;
+  -webkit-transition-property: transform,font-size,color;
+  transition-property: transform,font-size,color;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
+  font-weight: 400;
+  color: #231B22;
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+  color: #D7D7E0;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c3:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3::placeholder {
+  color: #6B6B78;
+}
+
+.c3[type="number"]::-webkit-outer-spin-button,
+.c3[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c3:invalid {
+  box-shadow: none;
+}
+
+.c2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 320px;
+  height: 52px;
+  padding-left: 12px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D7D7E0;
+}
+
+.c2:hover,
+.c2:focus-within {
+  border-color: #231B22;
+  border-color: #D7D7E0;
+}
+
+.c6 {
   position: relative;
   padding: 0;
   max-width: 0;
@@ -234,12 +409,12 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   transition-duration: 100ms;
 }
 
-.c5 {
+.c7 {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c3 {
+.c5 {
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -265,6 +440,11 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   color: #D7D7E0;
 }
 
+.c1 {
+  box-sizing: border-box;
+  width: 320px;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -272,45 +452,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   width: 320px;
 }
 
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  margin: 0;
-  height: 52px;
-  width: 100%;
-  padding: 16px 16px 16px 16px;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #D7D7E0;
-  border-color: #F5F5FA;
-}
-
-.c2 {
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  font-family: Rubik;
-  font-size: 14px;
-  line-height: 20px;
-  cursor: not-allowed;
-}
-
-.c2:focus ~ legend {
+.c4:focus ~ legend {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
@@ -320,7 +462,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   transition-duration: 500ms;
 }
 
-.c2:focus ~ label {
+.c4:focus ~ label {
   -webkit-transform: translateY(-24px);
   -ms-transform: translateY(-24px);
   transform: translateY(-24px);
@@ -333,11 +475,9 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-  margin-left: 4px;
-  margin-left: 4px;
 }
 
-.c6 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -365,7 +505,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   cursor: not-allowed;
 }
 
-.c7 {
+.c9 {
   fill: #6B6B78;
   fill: #D7D7E0;
   -webkit-transform: rotate(0);
@@ -381,59 +521,168 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
     class="c0"
     role="combobox"
   >
-    <fieldset
-      class="c1"
+    <div
+      class=""
       disabled=""
     >
-      <input
-        aria-autocomplete="list"
-        aria-labelledby="downshift-1-label"
-        autocomplete="off"
-        class="c2"
-        disabled=""
-        id="downshift-1-input"
-        readonly=""
-        value=""
-      />
-      <label
-        class="c3"
-        data-testid="label"
-        disabled=""
+      <div
+        class="c1"
       >
-        Find an activity to love
-      </label>
-      <legend
-        class="c4"
-      >
-        <span
-          class="c5"
+        <fieldset
+          class="c2"
+          disabled=""
+          label="Find an activity to love"
         >
-          Find an activity to love
-        </span>
-      </legend>
+          <input
+            aria-autocomplete="list"
+            aria-labelledby="downshift-1-label"
+            autocomplete="off"
+            class="c3 c4"
+            disabled=""
+            id="downshift-1-input"
+            readonly=""
+            value=""
+          />
+          <label
+            class="c5"
+            disabled=""
+          >
+            Find an activity to love
+          </label>
+          <legend
+            class="c6"
+          >
+            <span
+              class="c7"
+            >
+              Find an activity to love
+            </span>
+          </legend>
+        </fieldset>
+      </div>
       <button
         aria-haspopup="true"
         aria-label="open menu"
-        class="c6"
+        class="c8"
         data-toggle="true"
         disabled=""
         role="button"
         type="button"
       >
         <svg
-          class="c7"
+          class="c9"
           disabled=""
           height="20"
           width="20"
         />
       </button>
-    </fieldset>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Dropdown /> should match snapshot when full 1`] = `
 .c4 {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  box-sizing: border-box;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 52px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  color: #231B22;
+  font-family: Rubik,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c4:focus {
+  color: #231B22;
+}
+
+.c4:focus ~ legend {
+  max-width: 1000px;
+  -webkit-transition-property: max-width;
+  transition-property: max-width;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.c4:focus ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size,color;
+  -webkit-transition-property: transform,font-size,color;
+  transition-property: transform,font-size,color;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
+  font-weight: 400;
+  color: #231B22;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+  color: #D7D7E0;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c4::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c4:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c4::placeholder {
+  color: #6B6B78;
+}
+
+.c4[type="number"]::-webkit-outer-spin-button,
+.c4[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c4:invalid {
+  box-shadow: none;
+}
+
+.c3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 320px;
+  height: 52px;
+  padding-left: 12px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D7D7E0;
+}
+
+.c3:hover,
+.c3:focus-within {
+  border-color: #231B22;
+}
+
+.c7 {
   position: relative;
   padding: 0;
   max-width: 0;
@@ -452,12 +701,12 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   transition-duration: 100ms;
 }
 
-.c5 {
+.c8 {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c3 {
+.c6 {
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -482,6 +731,11 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
 }
 
+.c2 {
+  box-sizing: border-box;
+  width: 320px;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -489,48 +743,11 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   width: 100%;
 }
 
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  margin: 0;
-  height: 52px;
-  width: 100%;
-  padding: 16px 16px 16px 16px;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #D7D7E0;
-}
-
-.c1:hover {
+.c1:hover fieldset {
   border-color: #231B22;
 }
 
-.c2 {
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  font-family: Rubik;
-  font-size: 14px;
-  line-height: 20px;
-  cursor: pointer;
-}
-
-.c2:focus ~ legend {
+.c5:focus ~ legend {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
@@ -540,7 +757,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   transition-duration: 500ms;
 }
 
-.c2:focus ~ label {
+.c5:focus ~ label {
   -webkit-transform: translateY(-24px);
   -ms-transform: translateY(-24px);
   transform: translateY(-24px);
@@ -553,11 +770,9 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-  margin-left: 4px;
-  margin-left: 4px;
 }
 
-.c6 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -585,7 +800,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   cursor: pointer;
 }
 
-.c7 {
+.c10 {
   fill: #6B6B78;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
@@ -600,54 +815,181 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
     class="c0"
     role="combobox"
   >
-    <fieldset
+    <div
       class="c1"
     >
-      <input
-        aria-autocomplete="list"
-        aria-labelledby="downshift-2-label"
-        autocomplete="off"
+      <div
         class="c2"
-        id="downshift-2-input"
-        readonly=""
-        value=""
-      />
-      <label
-        class="c3"
-        data-testid="label"
       >
-        Find an activity to love
-      </label>
-      <legend
-        class="c4"
-      >
-        <span
-          class="c5"
+        <fieldset
+          class="c3"
+          label="Find an activity to love"
         >
-          Find an activity to love
-        </span>
-      </legend>
+          <input
+            aria-autocomplete="list"
+            aria-labelledby="downshift-2-label"
+            autocomplete="off"
+            class="c4 c5"
+            id="downshift-2-input"
+            readonly=""
+            value=""
+          />
+          <label
+            class="c6"
+          >
+            Find an activity to love
+          </label>
+          <legend
+            class="c7"
+          >
+            <span
+              class="c8"
+            >
+              Find an activity to love
+            </span>
+          </legend>
+        </fieldset>
+      </div>
       <button
         aria-haspopup="true"
         aria-label="open menu"
-        class="c6"
+        class="c9"
         data-toggle="true"
         role="button"
         type="button"
       >
         <svg
-          class="c7"
+          class="c10"
           height="20"
           width="20"
         />
       </button>
-    </fieldset>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
-.c4 {
+.c3 {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  box-sizing: border-box;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 52px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  color: #231B22;
+  font-family: Rubik,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c3:focus {
+  color: #231B22;
+}
+
+.c3:focus ~ legend {
+  max-width: 1000px;
+  -webkit-transition-property: max-width;
+  transition-property: max-width;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.c3:focus ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size,color;
+  -webkit-transition-property: transform,font-size,color;
+  transition-property: transform,font-size,color;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
+  font-weight: 400;
+  color: #231B22;
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+  color: #D7D7E0;
+}
+
+.c3::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c3:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3::placeholder {
+  color: #6B6B78;
+}
+
+.c3 ~ legend {
+  max-width: 1000px;
+}
+
+.c3 ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size,color;
+  -webkit-transition-property: transform,font-size,color;
+  transition-property: transform,font-size,color;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
+}
+
+.c3[type="number"]::-webkit-outer-spin-button,
+.c3[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c3:invalid {
+  box-shadow: none;
+}
+
+.c2 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 320px;
+  height: 52px;
+  padding-left: 12px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D7D7E0;
+}
+
+.c2:hover,
+.c2:focus-within {
+  border-color: #231B22;
+  border-color: #D7D7E0;
+}
+
+.c6 {
   position: relative;
   padding: 0;
   max-width: 0;
@@ -666,12 +1008,12 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   transition-duration: 100ms;
 }
 
-.c5 {
+.c7 {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c3 {
+.c5 {
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -697,6 +1039,11 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   color: #D7D7E0;
 }
 
+.c1 {
+  box-sizing: border-box;
+  width: 320px;
+}
+
 .c0 {
   position: relative;
   display: inline-block;
@@ -704,46 +1051,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   width: 320px;
 }
 
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  margin: 0;
-  height: 52px;
-  width: 100%;
-  padding: 16px 16px 16px 16px;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #D7D7E0;
-  border-color: #F5F5FA;
-  border-color: #231B22;
-}
-
-.c2 {
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  font-family: Rubik;
-  font-size: 14px;
-  line-height: 20px;
-  cursor: not-allowed;
-}
-
-.c2:focus ~ legend {
+.c4:focus ~ legend {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
@@ -753,7 +1061,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   transition-duration: 500ms;
 }
 
-.c2:focus ~ label {
+.c4:focus ~ label {
   -webkit-transform: translateY(-24px);
   -ms-transform: translateY(-24px);
   transform: translateY(-24px);
@@ -766,34 +1074,9 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-  margin-left: 4px;
-  margin-left: 4px;
 }
 
-.c2 ~ legend {
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-}
-
-.c2 ~ label {
-  -webkit-transform: translateY(-24px);
-  -ms-transform: translateY(-24px);
-  transform: translateY(-24px);
-  -webkit-transition-property: -webkit-transform,font-size,color;
-  -webkit-transition-property: transform,font-size,color;
-  transition-property: transform,font-size,color;
-  -webkit-transition-duration: 500ms;
-  transition-duration: 500ms;
-  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  font-size: 12px;
-  color: #231B22;
-  margin-left: 4px;
-  margin-left: 4px;
-}
-
-.c6 {
+.c8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -821,7 +1104,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   cursor: not-allowed;
 }
 
-.c7 {
+.c9 {
   fill: #6B6B78;
   fill: #D7D7E0;
   fill: #231B22;
@@ -838,59 +1121,167 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
     class="c0"
     role="combobox"
   >
-    <fieldset
-      class="c1"
+    <div
+      class=""
       disabled=""
     >
-      <input
-        aria-autocomplete="list"
-        aria-labelledby="downshift-3-label"
-        autocomplete="off"
-        class="c2"
-        disabled=""
-        id="downshift-3-input"
-        readonly=""
-        value="Swimming"
-      />
-      <label
-        class="c3"
-        data-testid="label"
-        disabled=""
+      <div
+        class="c1"
       >
-        Find an activity to love
-      </label>
-      <legend
-        class="c4"
-      >
-        <span
-          class="c5"
+        <fieldset
+          class="c2"
+          disabled=""
+          label="Find an activity to love"
         >
-          Find an activity to love
-        </span>
-      </legend>
+          <input
+            aria-autocomplete="list"
+            aria-labelledby="downshift-3-label"
+            autocomplete="off"
+            class="c3 c4"
+            disabled=""
+            id="downshift-3-input"
+            readonly=""
+            value="Swimming"
+          />
+          <label
+            class="c5"
+            disabled=""
+          >
+            Find an activity to love
+          </label>
+          <legend
+            class="c6"
+          >
+            <span
+              class="c7"
+            >
+              Find an activity to love
+            </span>
+          </legend>
+        </fieldset>
+      </div>
       <button
         aria-haspopup="true"
         aria-label="open menu"
-        class="c6"
+        class="c8"
         data-toggle="true"
         disabled=""
         role="button"
         type="button"
       >
         <svg
-          class="c7"
+          class="c9"
           disabled=""
           height="20"
           width="20"
         />
       </button>
-    </fieldset>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Dropdown /> should match snapshot with error 1`] = `
-.c8 {
+.c4 {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  box-sizing: border-box;
+  height: 52px;
+  padding-top: 16px;
+  padding-right: 52px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  color: #231B22;
+  font-family: Rubik,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.c4:focus {
+  color: #231B22;
+}
+
+.c4:focus ~ legend {
+  max-width: 1000px;
+  -webkit-transition-property: max-width;
+  transition-property: max-width;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+.c4:focus ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size,color;
+  -webkit-transition-property: transform,font-size,color;
+  transition-property: transform,font-size,color;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
+  font-weight: 400;
+  color: #231B22;
+}
+
+.c4:disabled {
+  cursor: not-allowed;
+  color: #D7D7E0;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c4::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c4:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c4::placeholder {
+  color: #6B6B78;
+}
+
+.c4 ~ legend {
+  max-width: 1000px;
+}
+
+.c4 ~ label {
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  transform: translateY(-24px);
+  -webkit-transition-property: -webkit-transform,font-size,color;
+  -webkit-transition-property: transform,font-size,color;
+  transition-property: transform,font-size,color;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  transition-timing-function: cubic-bezier(0,0.75,0.1,1);
+  font-size: 12px;
+}
+
+.c4[type="number"]::-webkit-outer-spin-button,
+.c4[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.c4:invalid {
+  box-shadow: none;
+}
+
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -903,7 +1294,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   color: #FF874C;
 }
 
-.c9 {
+.c12 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -915,7 +1306,26 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   font-size: 12px;
 }
 
-.c4 {
+.c3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 320px;
+  height: 52px;
+  padding-left: 12px;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #D7D7E0;
+}
+
+.c3:hover,
+.c3:focus-within {
+  border-color: #231B22;
+}
+
+.c7 {
   position: relative;
   padding: 0;
   max-width: 0;
@@ -934,12 +1344,12 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   transition-duration: 100ms;
 }
 
-.c5 {
+.c8 {
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.c3 {
+.c6 {
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -962,7 +1372,11 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  color: #FF874C;
+}
+
+.c2 {
+  box-sizing: border-box;
+  width: 320px;
 }
 
 .c0 {
@@ -972,49 +1386,19 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   width: 320px;
 }
 
-.c1 {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  margin: 0;
-  height: 52px;
-  width: 100%;
-  padding: 16px 16px 16px 16px;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-  border-width: 1px;
-  border-style: solid;
+.c1:hover fieldset {
+  border-color: #231B22;
+}
+
+.c1 fieldset {
+  border-color: #231B22;
+}
+
+.c1 fieldset {
   border-color: #FF874C;
-  border-color: #231B22;
 }
 
-.c1:hover {
-  border-color: #231B22;
-}
-
-.c2 {
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  font-family: Rubik;
-  font-size: 14px;
-  line-height: 20px;
-  cursor: pointer;
-}
-
-.c2:focus ~ legend {
+.c5:focus ~ legend {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
@@ -1024,7 +1408,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   transition-duration: 500ms;
 }
 
-.c2:focus ~ label {
+.c5:focus ~ label {
   -webkit-transform: translateY(-24px);
   -ms-transform: translateY(-24px);
   transform: translateY(-24px);
@@ -1037,17 +1421,15 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-  margin-left: 4px;
-  margin-left: 4px;
 }
 
-.c2 ~ legend {
+.c5 ~ legend {
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
 }
 
-.c2 ~ label {
+.c5 ~ label {
   -webkit-transform: translateY(-24px);
   -ms-transform: translateY(-24px);
   transform: translateY(-24px);
@@ -1060,11 +1442,9 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-  margin-left: 4px;
-  margin-left: 4px;
 }
 
-.c6 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1092,7 +1472,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   cursor: pointer;
 }
 
-.c7 {
+.c10 {
   fill: #6B6B78;
   fill: #231B22;
   -webkit-transform: rotate(0);
@@ -1108,53 +1488,61 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
     class="c0"
     role="combobox"
   >
-    <fieldset
+    <div
       class="c1"
     >
-      <input
-        aria-autocomplete="list"
-        aria-labelledby="downshift-4-label"
-        autocomplete="off"
+      <div
         class="c2"
-        id="downshift-4-input"
-        readonly=""
-        value="Swimming"
-      />
-      <label
-        class="c3"
-        data-testid="label"
       >
-        Find an activity to love
-      </label>
-      <legend
-        class="c4"
-      >
-        <span
-          class="c5"
+        <fieldset
+          class="c3"
+          label="Find an activity to love"
         >
-          Find an activity to love
-        </span>
-      </legend>
+          <input
+            aria-autocomplete="list"
+            aria-labelledby="downshift-4-label"
+            autocomplete="off"
+            class="c4 c5"
+            id="downshift-4-input"
+            readonly=""
+            value="Swimming"
+          />
+          <label
+            class="c6"
+          >
+            Find an activity to love
+          </label>
+          <legend
+            class="c7"
+          >
+            <span
+              class="c8"
+            >
+              Find an activity to love
+            </span>
+          </legend>
+        </fieldset>
+      </div>
       <button
         aria-haspopup="true"
         aria-label="open menu"
-        class="c6"
+        class="c9"
         data-toggle="true"
         role="button"
         type="button"
       >
         <svg
-          class="c7"
+          class="c10"
           height="20"
           width="20"
         />
       </button>
-    </fieldset>
+    </div>
     <div
-      class="c8"
+      class="c11"
     >
       <span
-        class="c9"
+        class="c12"
       >
         Please, select one activity
       </span>

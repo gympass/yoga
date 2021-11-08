@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, within, fireEvent } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 
 import { ThemeProvider, Dropdown } from '../..';
 
@@ -84,9 +84,7 @@ describe('<Dropdown />', () => {
 
     fireEvent.click(getByRole('button'));
 
-    const testId = screen.getByTestId('label');
-
-    within(testId).getByText('Find an activity to love');
+    screen.getAllByText('Find an activity to love');
   });
 
   it('should make label visible when has a selected option', () => {
@@ -105,8 +103,6 @@ describe('<Dropdown />', () => {
       </ThemeProvider>,
     );
 
-    const testId = screen.getByTestId('label');
-
-    within(testId).getByText('Find an activity to love');
+    screen.getAllByText('Find an activity to love');
   });
 });
