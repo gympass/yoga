@@ -114,7 +114,6 @@ exports[`<Dialog /> should match snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 32px;
   padding: 40px  32px  32px;
   width: 580px;
   min-height: 184px;
@@ -426,7 +425,6 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 32px;
   padding: 72px  32px  32px;
   width: 580px;
   min-height: 184px;
