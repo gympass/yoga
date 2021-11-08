@@ -140,7 +140,7 @@ const Layout = ({
       <MainWrapper>
         <Grid>
           <Header showMenu={showMenu} toggleMenu={toggleMenu}>
-            <HeaderLink to="/guidelines/product-content/">
+            <HeaderLink to="/guidelines/product-content/introduction">
               Guidelines
             </HeaderLink>
             <HeaderLink to="/components">Components</HeaderLink>
