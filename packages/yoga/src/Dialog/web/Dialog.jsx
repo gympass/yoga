@@ -20,7 +20,6 @@ const StyledDialog = styled(Card)`
   align-items: center;
   flex-direction: column;
 
-  margin: 32px;
   padding: ${onClose ? dialog.padding.withIconClose : dialog.padding.top}px 
   ${dialog.padding.default}px 
   ${dialog.padding.default}px;
