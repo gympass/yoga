@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.8](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.10.7...@gympass/yoga-doc@2.10.8) (2021-11-08)
+
+
+### Bug Fixes
+
+* **design-tokens:** use correct ordering ([d14032c](https://github.com/Gympass/yoga/commit/d14032c4d5ebab4916811c1dbf50a9ce53c6d409))
+* **navigation:** correct ordering across browsers ([9bb6eaa](https://github.com/Gympass/yoga/commit/9bb6eaac2b691be079e00eab184f8682a6d7f741))
+* **navigation:** infer if it's a collapsible by having children instead of linkable property ([e60073d](https://github.com/Gympass/yoga/commit/e60073dc225e5f0f74f924cffe982f89e2f864b7))
+* **navigation:** infer which order to use instead of hardcoded array ([43eee80](https://github.com/Gympass/yoga/commit/43eee8093648d620d2f6cc79b5cbad0740030071))
+* **navigation:** respect ordering defined in markdown files ([d810a21](https://github.com/Gympass/yoga/commit/d810a21781995a09e10f523f1ead9b3b4dc11295))
+* **product-content:** improved metadata ([3f3398d](https://github.com/Gympass/yoga/commit/3f3398dd78be890123f622781ea7528d3897da78))
+* **product-content:** make explicit that its collapsible isn' linkable ([1815471](https://github.com/Gympass/yoga/commit/181547124ae6bfc5540e80d30b7acc07425bc4b5))
+
+
+
+
+
 ## [2.10.7](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.10.6...@gympass/yoga-doc@2.10.7) (2021-11-08)
 
 **Note:** Version bump only for package @gympass/yoga-doc
