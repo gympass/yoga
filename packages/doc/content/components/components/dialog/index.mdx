@@ -8,9 +8,13 @@ metaDescription: 'Dialog Component'
 
 ### Reference
 
-Gympass `<Dialog />` is the proper component to show alert messages.
+Gympass `<Dialog />` is a component has the objective o provide priority feedback for the user
 
-The `Dialog` may have an icon, a custom action and a close button.
+As it could be seen in most components, the Dialog has its own compounds:
+
+- `<Dialog.Header />`
+- `<Dialog.Content />`
+- `<Dialog.Actions />`
 
 ### Usage
 
@@ -30,11 +34,10 @@ render(() => {
 
   return (
     <>
-      <Button onClick={handleOpen} secondary>Dialog with one action</Button>
+      <Button onClick={handleOpen}>Dialog with one action</Button>
 
       <Dialog
         isOpen={isOpen}
-        onClose={handleOnClose}
       >       
        <Dialog.Header>
          <Text.H4 ta="center"> Title </Text.H4> 
@@ -67,11 +70,10 @@ render(() => {
 
   return (
     <>
-      <Button onClick={handleOpen}>Dialog with two actions </Button>
+      <Button onClick={handleOpen} secondary>Dialog with two actions </Button>
 
       <Dialog
         isOpen={isOpen}
-        onClose={handleOnClose}
       >       
        <Dialog.Header>
          <Text.H4 ta="center"> Title </Text.H4> 
@@ -84,7 +86,7 @@ render(() => {
           <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
         </Box>
         <Box>
-          <Button onClick={handleOnClose}>Yes, downgrade</Button>
+          <Button>Yes, downgrade</Button>
         </Box>
        </Dialog.Actions>
       </Dialog>
@@ -135,8 +137,44 @@ render(() => {
 });
 ```
 
+### Dialog with only title
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <>
+      <Button onClick={handleOpen} secondary>Dialog with only title </Button>
+
+      <Dialog
+        isOpen={isOpen}
+      >       
+       <Dialog.Header>
+        <Text.H4 ta="center" mb={32}> Title </Text.H4> 
+       </Dialog.Header>
+       <Dialog.Actions>
+        <Box mr={24}>
+          <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
+        </Box>
+        <Box>
+          <Button onClick={handleOnClose}>Yes, downgrade</Button>
+        </Box>
+       </Dialog.Actions>
+      </Dialog>
+    </>
+  );
+});
+```
+
 ### Props
 
 <PropsTable component="Dialog" platform="web" />
-<PropsTable component="Dialog.Title" platform="web" />
-<PropsTable component="Card" platform="web" />
