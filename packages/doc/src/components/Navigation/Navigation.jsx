@@ -144,9 +144,9 @@ const ListItem = ({
   level,
   toggleMenu,
   prefix,
-  collapsed,
+  open,
 }) => {
-  const [isCollapsed, setCollapsed] = useState(collapsed);
+  const [isOpen, setOpen] = useState(open);
   const hasChildren = Boolean(Object.keys(childrenContent).length);
 
   const isLink = !hasChildren;
@@ -184,14 +184,14 @@ const ListItem = ({
   return (
     <li key={url}>
       <Collapsible
-        displayChildren={isCollapsed}
-        onClick={() => setCollapsed(!isCollapsed)}
+        displayChildren={isOpen}
+        onClick={() => setOpen(!isOpen)}
         aria-label={`Toggle ${title} collapsible section`}
         role="switch"
         level={level}
-        aria-checked={isCollapsed.toString()}
+        aria-checked={isOpen.toString()}
       >
-        {title} <ArrowIcon isOpen={isCollapsed} />
+        {title} <ArrowIcon isOpen={isOpen} />
       </Collapsible>
       {hasChildren && (
         <StyledList level={level}>
@@ -214,7 +214,7 @@ ListItem.propTypes = {
   level: number.isRequired,
   toggleMenu: func.isRequired,
   prefix: bool.isRequired,
-  collapsed: bool.isRequired,
+  open: bool.isRequired,
 };
 
 const List = ({ tree, level, toggleMenu, prefix, sorting }) => {
@@ -227,23 +227,21 @@ const List = ({ tree, level, toggleMenu, prefix, sorting }) => {
     <StyledList>
       {Object.values(tree)
         .sort(getSorting(sortingFunction))
-        .map(
-          ({ title, url, linkable, order, collapsed, ...childrenContent }) => {
-            return (
-              <ListItem
-                key={title}
-                title={title}
-                url={url}
-                linkable={linkable}
-                childrenContent={childrenContent}
-                level={level}
-                toggleMenu={toggleMenu}
-                prefix={prefix}
-                collapsed={collapsed}
-              />
-            );
-          },
-        )}
+        .map(({ title, url, linkable, order, open, ...childrenContent }) => {
+          return (
+            <ListItem
+              key={title}
+              title={title}
+              url={url}
+              linkable={linkable}
+              childrenContent={childrenContent}
+              level={level}
+              toggleMenu={toggleMenu}
+              prefix={prefix}
+              open={open}
+            />
+          );
+        })}
     </StyledList>
   );
 };
