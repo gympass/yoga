@@ -104,8 +104,13 @@ const Dialog = ({ isOpen, children, onClose }) => {
 };
 
 Dialog.propTypes = {
+  /** Controls the dialog visibility. */
   isOpen: bool,
+
+  /** Function to close the dialog. */
   onClose: func,
+
+  /** The chidren necessary */
   children: node.isRequired,
 };
 
