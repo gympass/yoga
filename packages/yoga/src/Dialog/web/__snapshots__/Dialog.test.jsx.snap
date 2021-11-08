@@ -1,0 +1,521 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dialog /> should match snapshot 1`] = `
+.c7 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c7:not([disabled]):hover,
+.c7:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c7:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c7:active svg {
+  fill: #FFFFFF;
+}
+
+.c7:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c7:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  text-align: center;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c1 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 40px  32px  32px;
+  width: 580px;
+  min-height: 232px;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(35,27,34,0.48);
+}
+
+.c4 {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+<div
+  className="c0"
+  onClick={[Function]}
+>
+  <section
+    className="c1 c2"
+  >
+    <header
+      className=""
+    >
+      <h4
+        className="c3"
+      >
+         Title 
+      </h4>
+    </header>
+    <div
+      className="c4"
+    >
+      <p
+        className="c5"
+        color="deep"
+        size="medium"
+      >
+         Subtitle
+      </p>
+    </div>
+    <footer
+      className="c6"
+    >
+      <button
+        className="c7"
+        disabled={false}
+        onClick={[Function]}
+      >
+        Ok, got it
+      </button>
+    </footer>
+  </section>
+</div>
+`;
+
+exports[`<Dialog /> should match snapshot with close button 1`] = `
+.c10 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c10:not([disabled]):hover,
+.c10:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c10:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c10:active svg {
+  fill: #FFFFFF;
+}
+
+.c10:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c10:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c3 {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+}
+
+.c5 {
+  width: 24px;
+  height: 24px;
+}
+
+.c4 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #D8385E;
+  padding: 0;
+  width: 48px;
+}
+
+.c4 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c4:not([disabled]):hover,
+.c4:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c4:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c4:active svg {
+  fill: #FFFFFF;
+}
+
+.c4:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c4:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c4 svg {
+  fill: #D8385E;
+}
+
+.c4:active {
+  background-color: rgba(255,255,255,0.75);
+  color: rgba(216,56,94,0.75);
+}
+
+.c4:active svg {
+  fill: rgba(216,56,94,0.75);
+}
+
+.c4:not([disabled]):hover,
+.c4:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
+.c4 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  text-align: center;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c1 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 72px  32px  32px;
+  width: 580px;
+  min-height: 232px;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(35,27,34,0.48);
+}
+
+.c7 {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <section
+      class="c1 c2"
+    >
+      <div
+        class="c3"
+      >
+        <button
+          class="c4"
+        >
+          <svg
+            class="c5"
+            height="24"
+            width="24"
+          />
+        </button>
+      </div>
+      <header
+        class=""
+      >
+        <h4
+          class="c6"
+        >
+           Title 
+        </h4>
+      </header>
+      <div
+        class="c7"
+      >
+        <p
+          class="c8"
+          color="deep"
+        >
+           Subtitle
+        </p>
+      </div>
+      <footer
+        class="c9"
+      >
+        <button
+          class="c10"
+        >
+          Ok, got it
+        </button>
+      </footer>
+    </section>
+  </div>
+</div>
+`;
