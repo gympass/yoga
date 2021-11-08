@@ -29,7 +29,9 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 }
 
 .c3:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -233,7 +235,9 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 }
 
 .c3:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -437,7 +441,9 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c3:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -482,7 +488,9 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 }
 
 .c3 ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .c3 ~ label {
@@ -790,7 +798,9 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c3:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -835,7 +845,9 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 }
 
 .c3 ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .c3 ~ label {
