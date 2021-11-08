@@ -3,47 +3,62 @@ import { createPortal } from 'react-dom';
 import styled, { withTheme } from 'styled-components';
 import { func, bool, node } from 'prop-types';
 
-import usePortal from './usePortal';
+import { usePortal } from '../../hooks';
 import { Button, Card, Box } from '../..';
 import { Close } from '../../../../icons/src';
 
 const StyledDialog = styled(Card)`
+  ${({
+    onClose,
+    theme: {
+      yoga: {
+        components: { dialog },
+      },
+    },
+  }) => `
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
 
-  position: relative;
-  z-index: 10;
-  border-radius: 16px;
+  margin: 32px;
+  padding: ${onClose ? dialog.padding.withIconClose : dialog.padding.top}px 
+  ${dialog.padding.default}px 
+  ${dialog.padding.default}px;
 
-  padding: ${({ onClose }) => (onClose ? '64px' : '40px')} 32px 32px 32px;
+  width: ${dialog.width.default}px;
+  min-height: ${dialog.height.min}px;
+  border-radius: ${dialog.border.radius}px;
 
   backdrop-filter: blur(1px);
-  width: 580px;
-  min-height: 232px;
-  background-color: white;
-  color: black;
+  `}
 `;
 
 const Background = styled.div`
+  ${({
+    theme: {
+      yoga: {
+        components: { dialog },
+      },
+    },
+  }) => `
   display: flex;
   justify-content: center;
   align-items: center;
 
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  top: ${dialog.position.default};
+  right: ${dialog.position.default};
+  left: ${dialog.position.default};
+  bottom: ${dialog.position.default};
 
-  background: rgba(35, 27, 34, 0.48);
+  background-color: rgba(35, 27, 34, 0.48);
+  `}
 `;
 
 const Dialog = ({ isOpen, children, onClose }) => {
   const dialogRef = useRef(null);
 
-  const dialogRoot = usePortal('dialog');
+  const dialogElement = usePortal('dialog');
 
   const closeDialog = useCallback(
     e => {
@@ -67,6 +82,7 @@ const Dialog = ({ isOpen, children, onClose }) => {
 
   useEffect(() => {
     document.addEventListener('keydown', keyPress);
+
     return () => document.removeEventListener('keydown', keyPress);
   }, [keyPress]);
 
@@ -83,7 +99,7 @@ const Dialog = ({ isOpen, children, onClose }) => {
         </StyledDialog>
       </Background>
     ),
-    dialogRoot,
+    dialogElement,
   );
 };
 
@@ -97,5 +113,7 @@ Dialog.defaultProps = {
   isOpen: false,
   onClose: undefined,
 };
+
+Dialog.displayName = 'Dialog';
 
 export default withTheme(Dialog);

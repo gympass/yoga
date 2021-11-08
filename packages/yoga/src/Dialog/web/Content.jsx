@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 
-import { Card } from '../../Card';
+import { Card } from '../..';
+import { theme } from '../../Theme';
 
-export const Content = styled(Card.Content)`
-  margin: 0;
-  padding: 0;
+const Content = styled(Card.Content)`
+  margin-top: ${theme.spacing.large}px;
+  margin-bottom: ${theme.spacing.xlarge}px;
 `;
+
+Content.displayName = 'Dialog.Content';
+
+export default Content;

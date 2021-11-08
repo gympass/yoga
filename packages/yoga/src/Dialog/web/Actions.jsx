@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-import { margins, paddings } from '@gympass/yoga-system';
-import { Card } from '../../Card';
+import { Card } from '../..';
 
-export const Actions = styled(Card.Actions)`
+const Actions = styled(Card.Actions)`
   display: flex;
 
   margin-left: auto;
-
-  ${margins};
-  ${paddings};
 `;
+
+Actions.displayName = 'Dialog.Actions';
+
+export default Actions;
