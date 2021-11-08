@@ -139,7 +139,6 @@ const Collapsible = styled(NavigationLabel)`
 
 const ListItem = ({
   title,
-  linkable,
   url,
   childrenContent,
   level,
@@ -148,7 +147,9 @@ const ListItem = ({
   collapsed,
 }) => {
   const [isCollapsed, setCollapsed] = useState(collapsed);
-  const hasChild = Boolean(Object.keys(childrenContent).length);
+  const hasChildren = Boolean(Object.keys(childrenContent).length);
+
+  const isLink = !hasChildren;
 
   const filteredUrl = `/${[
     ...new Set(url.split('/').filter(item => item)),
@@ -165,7 +166,7 @@ const ListItem = ({
     }
   };
 
-  if (linkable) {
+  if (isLink) {
     return (
       <li key={url}>
         <NavigationLabel
@@ -192,7 +193,7 @@ const ListItem = ({
       >
         {title} <ArrowIcon isOpen={isCollapsed} />
       </Collapsible>
-      {hasChild && (
+      {hasChildren && (
         <StyledList level={level}>
           <List
             tree={childrenContent}
@@ -212,7 +213,6 @@ ListItem.propTypes = {
   childrenContent: shape({}).isRequired,
   level: number.isRequired,
   toggleMenu: func.isRequired,
-  linkable: bool.isRequired,
   prefix: bool.isRequired,
   collapsed: bool.isRequired,
 };
