@@ -1,19 +1,20 @@
 const Dialog = ({ radii, spacing }) => ({
   border: {
-    radius: radii.small,
+    radius: radii.regular,
   },
-  height: {
-    min: spacing.xxxlarge,
-    max: spacing.huge,
+  padding: {
+    default: spacing.xlarge,
+    top: spacing.xxlarge,
+    withIconClose: spacing.huge,
   },
   width: {
     default: 580,
   },
+  height: {
+    min: 184,
+  },
   position: {
-    top: 0,
-    right: 0,
-    bottom: 0,
-    left: 0,
+    default: spacing.zero,
   },
 });
 
