@@ -119,15 +119,8 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-left: 4px;
-=======
-  margin-left: 4;
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
   margin-left: 4px;
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
 }
 
 .c6 {
@@ -187,14 +180,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
       />
       <label
         class="c3"
-<<<<<<< HEAD
-<<<<<<< HEAD
         data-testid="label"
-=======
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
-        data-testid="label"
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
       >
         Find an activity to love
       </label>
@@ -343,15 +329,8 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-left: 4px;
-=======
-  margin-left: 4;
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
   margin-left: 4px;
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
 }
 
 .c6 {
@@ -414,14 +393,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
       />
       <label
         class="c3"
-<<<<<<< HEAD
-<<<<<<< HEAD
         data-testid="label"
-=======
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
-        data-testid="label"
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
         disabled=""
       >
         Find an activity to love
@@ -575,15 +547,8 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-left: 4px;
-=======
-  margin-left: 4;
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
   margin-left: 4px;
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
 }
 
 .c6 {
@@ -643,14 +608,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
       />
       <label
         class="c3"
-<<<<<<< HEAD
-<<<<<<< HEAD
         data-testid="label"
-=======
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
-        data-testid="label"
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
       >
         Find an activity to love
       </label>
@@ -800,15 +758,8 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-left: 4px;
-=======
-  margin-left: 4;
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
   margin-left: 4px;
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
 }
 
 .c2 ~ legend {
@@ -828,15 +779,8 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-left: 4px;
-=======
-  margin-left: 4;
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
   margin-left: 4px;
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
 }
 
 .c6 {
@@ -900,14 +844,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
       />
       <label
         class="c3"
-<<<<<<< HEAD
-<<<<<<< HEAD
         data-testid="label"
-=======
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
-        data-testid="label"
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
         disabled=""
       >
         Find an activity to love
@@ -1088,15 +1025,8 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-left: 4px;
-=======
-  margin-left: 4;
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
   margin-left: 4px;
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
 }
 
 .c2 ~ legend {
@@ -1116,15 +1046,8 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   color: #231B22;
-<<<<<<< HEAD
-<<<<<<< HEAD
   margin-left: 4px;
-=======
-  margin-left: 4;
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
   margin-left: 4px;
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
 }
 
 .c6 {
@@ -1185,14 +1108,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
       />
       <label
         class="c3"
-<<<<<<< HEAD
-<<<<<<< HEAD
         data-testid="label"
-=======
->>>>>>> 251d7d7cf... :sparkles: fix: change dropdown configs
-=======
-        data-testid="label"
->>>>>>> 4f299b8d3... :white_check_mark: test: add behavior tests
       >
         Find an activity to love
       </label>
