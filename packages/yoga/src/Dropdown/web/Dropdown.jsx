@@ -141,7 +141,7 @@ const Input = styled.input`
 
     &:focus {
       & ~ legend {
-        max-width: 1000px;
+        max-width: max-content;
         transition-property: max-width;
         transition-duration: ${transition.duration[1]}ms;
       }
@@ -154,7 +154,7 @@ const Input = styled.input`
     ${value || isOpen
       ? css`
           & ~ legend {
-            max-width: 1000px;
+            max-width: max-content;
           }
 
           & ~ label {

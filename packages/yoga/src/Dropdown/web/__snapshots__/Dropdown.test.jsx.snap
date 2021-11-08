@@ -99,7 +99,9 @@ exports[`<Dropdown /> should match snapshot 1`] = `
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -309,7 +311,9 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -527,7 +531,9 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -738,7 +744,9 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -763,7 +771,9 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 }
 
 .c2 ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .c2 ~ label {
@@ -1005,7 +1015,9 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
 }
 
 .c2:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -1030,7 +1042,9 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
 }
 
 .c2 ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .c2 ~ label {
