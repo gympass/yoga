@@ -1,6 +1,10 @@
 import Dialog from './Dialog';
-import { Actions } from './Actions';
-import { Header } from './Title';
-import { Content } from './Content';
+import Header from './Header';
+import Content from './Content';
+import Actions from './Actions';
 
-export { Dialog, Actions, Header, Content };
+Dialog.Header = Header;
+Dialog.Content = Content;
+Dialog.Actions = Actions;
+
+export default Dialog;
