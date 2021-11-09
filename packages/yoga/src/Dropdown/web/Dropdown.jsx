@@ -101,27 +101,8 @@ const Selector = styled.div`
 `;
 
 const Field = styled(Input)`
-  ${({
-    value,
-    isOpen,
-    disabled,
-    theme: {
-      yoga: { transition },
-    },
-  }) => css`
-    &:focus {
-      & ~ legend {
-        max-width: max-content;
-        transition-property: max-width;
-        transition-duration: ${transition.duration[1]}ms;
-      }
-
-      & ~ label {
-        ${labelTransition}
-      }
-    }
-
-    ${(value || isOpen) && !disabled
+  ${({ value, isOpen, disabled }) => css`
+    ${isOpen && !disabled
       ? css`
           & ~ legend {
             max-width: max-content;
@@ -133,6 +114,7 @@ const Field = styled(Input)`
         `
       : ''}
 
+<<<<<<< HEAD
     ${isOpen &&
       css`
         & ~ legend {
@@ -143,6 +125,15 @@ const Field = styled(Input)`
           ${labelTransition};
         }
       `}
+=======
+    ${value && !disabled
+      ? css`
+          & ~ label {
+            ${labelTransition};
+          }
+        `
+      : ''}
+>>>>>>> refactor: avoiding unnecessary overwrite
   `}
 `;
 
@@ -322,9 +313,9 @@ const Dropdown = ({
             readOnly
             disabled={disabled}
             selected={selectedItem !== null}
-            {...getInputProps()}
             isOpen={isOpen}
             label={label}
+            {...getInputProps()}
           />
           <Button
             isOpen={isOpen}
