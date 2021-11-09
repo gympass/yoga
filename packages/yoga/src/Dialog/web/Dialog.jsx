@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 import { func, bool, node } from 'prop-types';
 
 import { usePortal } from '../../hooks';
@@ -85,8 +85,8 @@ const Dialog = ({ isOpen, children, onClose }) => {
     return () => document.removeEventListener('keydown', keyPress);
   }, [keyPress]);
 
-  return createPortal(
-    isOpen && (
+  return isOpen ? (
+    createPortal(
       <Background onClick={closeDialog} onClose={onClose} ref={dialogRef}>
         <StyledDialog onClose={onClose}>
           {onClose && (
@@ -96,14 +96,16 @@ const Dialog = ({ isOpen, children, onClose }) => {
           )}
           {children}
         </StyledDialog>
-      </Background>
-    ),
-    dialogElement,
+      </Background>,
+      dialogElement,
+    )
+  ) : (
+    <> </>
   );
 };
 
 Dialog.propTypes = {
-  /** Controls the dialog visibility. */
+  /** Control the dialog visibility. */
   isOpen: bool,
 
   /** Function to close the dialog. */
@@ -120,4 +122,4 @@ Dialog.defaultProps = {
 
 Dialog.displayName = 'Dialog';
 
-export default withTheme(Dialog);
+export default Dialog;
