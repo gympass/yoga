@@ -77,28 +77,23 @@ const Selector = styled.div`
     cursor: ${disabled ? 'not-allowed' : 'pointer'};
     ${!disabled
       ? `
+          fieldset {
+            ${
+              isOpen || selected
+                ? `border-color: ${dropdown.hover.selector.border.color};`
+                : ''
+            }
+
+            ${
+              error && !isOpen
+                ? `border-color: ${colors.feedback.attention[1]};`
+                : ''
+            }
+          }
           &:hover {
             fieldset {
               border-color: ${dropdown.hover.selector.border.color};
             }
-          }
-          ${
-            isOpen || selected
-              ? `
-                fieldset {
-                  border-color: ${dropdown.hover.selector.border.color};
-                }
-              `
-              : ''
-          }
-          ${
-            error
-              ? `
-              fieldset {
-                border-color: ${colors.feedback.attention[1]};
-              }
-            `
-              : ''
           }
         `
       : ''}
@@ -169,7 +164,7 @@ const Button = styled.button`
     left: 0;
 
     width: 100%;
-    height: 100%;
+    padding-top: ${dropdown.button.padding.top}px;
     padding-right: ${dropdown.button.padding.right}px;
 
     border: none;
@@ -282,7 +277,7 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
   }) => `
     fill: ${dropdown.arrow.fill};
     ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
-    ${selected ? `fill: ${dropdown.selected.arrow.fill};` : ''};
+    ${selected && !disabled ? `fill: ${dropdown.selected.arrow.fill};` : ''};
     transform: rotate(${isOpen ? '180deg' : '0'});
   `}
 `;

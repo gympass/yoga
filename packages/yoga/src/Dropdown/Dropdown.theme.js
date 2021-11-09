@@ -43,6 +43,7 @@ const Dropdown = ({
   button: {
     padding: {
       right: spacing.small,
+      top: spacing.small,
     },
   },
   optionsList: {

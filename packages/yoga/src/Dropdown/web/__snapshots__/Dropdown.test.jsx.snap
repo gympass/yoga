@@ -29,7 +29,9 @@ exports[`<Dropdown /> should match snapshot 1`] = `
 }
 
 .c4:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -211,7 +213,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  padding-top: 16px;
   padding-right: 16px;
   border: none;
   outline: none;
@@ -317,7 +319,9 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
 }
 
 .c3:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -497,7 +501,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  padding-top: 16px;
   padding-right: 16px;
   border: none;
   outline: none;
@@ -610,7 +614,9 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
 }
 
 .c4:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -792,7 +798,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  padding-top: 16px;
   padding-right: 16px;
   border: none;
   outline: none;
@@ -898,7 +904,9 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 }
 
 .c3:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -943,7 +951,9 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 }
 
 .c3 ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .c3 ~ label {
@@ -1096,7 +1106,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  padding-top: 16px;
   padding-right: 16px;
   border: none;
   outline: none;
@@ -1107,7 +1117,6 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 .c9 {
   fill: #6B6B78;
   fill: #D7D7E0;
-  fill: #231B22;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
@@ -1210,7 +1219,9 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
 }
 
 .c4:focus ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   -webkit-transition-property: max-width;
   transition-property: max-width;
   -webkit-transition-duration: 500ms;
@@ -1255,7 +1266,9 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
 }
 
 .c4 ~ legend {
-  max-width: 1000px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .c4 ~ label {
@@ -1386,16 +1399,13 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   width: 320px;
 }
 
+.c1 fieldset {
+  border-color: #231B22;
+  border-color: #FF874C;
+}
+
 .c1:hover fieldset {
   border-color: #231B22;
-}
-
-.c1 fieldset {
-  border-color: #231B22;
-}
-
-.c1 fieldset {
-  border-color: #FF874C;
 }
 
 .c5:focus ~ legend {
@@ -1464,7 +1474,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  padding-top: 16px;
   padding-right: 16px;
   border: none;
   outline: none;
