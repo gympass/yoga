@@ -1,12 +1,16 @@
-import styled from 'styled-components';
-
+import React from 'react';
 import { Card } from '../..';
-import { theme } from '../../Theme';
 
-const Content = styled(Card.Content)`
-  margin-top: ${theme.spacing.large}px;
-  margin-bottom: ${theme.spacing.xlarge}px;
-`;
+const Content = props => (
+  <Card.Content
+    ta="center"
+    color="text.secondary"
+    fw="regular"
+    fs="medium"
+    mb="xlarge"
+    {...props}
+  />
+);
 
 Content.displayName = 'Dialog.Content';
 

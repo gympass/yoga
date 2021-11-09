@@ -1,12 +1,10 @@
-import styled from 'styled-components';
+import React from 'react';
 
 import { Card } from '../..';
 
-const Actions = styled(Card.Actions)`
-  display: flex;
-
-  margin-left: auto;
-`;
+const Actions = props => (
+  <Card.Actions d="flex" gap="large" ml="auto" {...props} />
+);
 
 Actions.displayName = 'Dialog.Actions';
 

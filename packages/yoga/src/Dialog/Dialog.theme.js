@@ -11,7 +11,7 @@ const Dialog = ({ radii, spacing }) => ({
     default: 580,
   },
   height: {
-    min: 184,
+    min: 160,
   },
   position: {
     default: spacing.zero,
