@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { screen, render, fireEvent } from '@testing-library/react';
 
-import { ThemeProvider, Button, Text } from '../..';
+import { ThemeProvider, Button } from '../..';
 
 import Dialog from '.';
 
@@ -24,12 +24,8 @@ describe('<Dialog />', () => {
     const container = renderer.create(
       <ThemeProvider>
         <Dialog isOpen>
-          <Dialog.Header>
-            <Text.H4 ta="center"> Title </Text.H4>
-          </Dialog.Header>
-          <Dialog.Content>
-            <Text color="deep"> Subtitle</Text>
-          </Dialog.Content>
+          <Dialog.Header>Title</Dialog.Header>
+          <Dialog.Content>Subtitle</Dialog.Content>
           <Dialog.Actions>
             <Button secondary>Ok, got it</Button>
           </Dialog.Actions>
@@ -44,12 +40,8 @@ describe('<Dialog />', () => {
     const { container } = render(
       <ThemeProvider>
         <Dialog isOpen onClose={jest.fn()}>
-          <Dialog.Header>
-            <Text.H4 ta="center"> Title </Text.H4>
-          </Dialog.Header>
-          <Dialog.Content>
-            <Text color="deep"> Subtitle</Text>
-          </Dialog.Content>
+          <Dialog.Header>Title</Dialog.Header>
+          <Dialog.Content>Subtitle</Dialog.Content>
           <Dialog.Actions>
             <Button secondary>Ok, got it</Button>
           </Dialog.Actions>
@@ -66,12 +58,8 @@ describe('<Dialog />', () => {
     render(
       <ThemeProvider>
         <Dialog isOpen>
-          <Dialog.Header>
-            <Text.H4 ta="center"> Title </Text.H4>
-          </Dialog.Header>
-          <Dialog.Content>
-            <Text color="deep"> Subtitle </Text>
-          </Dialog.Content>
+          <Dialog.Header>Title</Dialog.Header>
+          <Dialog.Content>Subtitle</Dialog.Content>
           <Dialog.Actions>
             <Button onClick={onActionMock} secondary>
               Ok, got it
@@ -81,7 +69,7 @@ describe('<Dialog />', () => {
       </ThemeProvider>,
     );
 
-    screen.getByRole('heading', { name: /Title/i });
+    screen.getByText('Title');
     screen.getByText('Subtitle');
 
     const button = screen.getByRole('button', { name: /Ok, got it/i });
@@ -97,9 +85,7 @@ describe('<Dialog />', () => {
     render(
       <ThemeProvider>
         <Dialog isOpen onClose={onCloseMock}>
-          <Dialog.Header>
-            <Text.H4 ta="center"> Title </Text.H4>
-          </Dialog.Header>
+          <Dialog.Header>Title</Dialog.Header>
         </Dialog>
       </ThemeProvider>,
     );
