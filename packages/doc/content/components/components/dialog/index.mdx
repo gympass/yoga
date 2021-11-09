@@ -40,13 +40,13 @@ render(() => {
         isOpen={isOpen}
       >       
        <Dialog.Header>
-         <Text.H4 ta="center"> Title </Text.H4> 
+        We couldn't confirm your eligibility
        </Dialog.Header>
        <Dialog.Content>
-         <Text color="deep"> Subtitle</Text>
+        Double check your info and company selection. If it still doesn’t work, contact your HR team.
        </Dialog.Content>
        <Dialog.Actions>
-          <Button onClick={handleOnClose} secondary>Ok, got it</Button>
+        <Button onClick={handleOnClose}>Ok, I understand</Button>
        </Dialog.Actions>
       </Dialog>
     </>
@@ -70,24 +70,20 @@ render(() => {
 
   return (
     <>
-      <Button onClick={handleOpen} secondary>Dialog with two actions </Button>
+      <Button onClick={handleOpen} secondary>Dialog with two actions</Button>
 
       <Dialog
         isOpen={isOpen}
       >       
        <Dialog.Header>
-         <Text.H4 ta="center"> Title </Text.H4> 
+        Are you sure you want to downgrade to a Platinum plan? 
        </Dialog.Header>
        <Dialog.Content>
-         <Text color="deep"> Subtitle</Text>
+        Double check your info and company selection. If it still doesn’t work, contact your HR team.
        </Dialog.Content>
        <Dialog.Actions>
-        <Box mr={24}>
-          <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
-        </Box>
-        <Box>
-          <Button>Yes, downgrade</Button>
-        </Box>
+        <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
+        <Button>Yes, downgrade</Button>
        </Dialog.Actions>
       </Dialog>
     </>
@@ -111,25 +107,21 @@ render(() => {
 
   return (
     <>
-      <Button onClick={handleOpen}>Dialog with close button </Button>
+      <Button onClick={handleOpen}>Dialog with close button</Button>
 
       <Dialog
         isOpen={isOpen}
         onClose={handleOnClose}
       >       
        <Dialog.Header>
-        <Text.H4 ta="center"> Title </Text.H4> 
+        Are you sure you want to downgrade to a Platinum plan?
        </Dialog.Header>
        <Dialog.Content>
-         <Text color="deep"> Subtitle</Text>
+         The change will happen at the end of your billing cycle on March, 28. Until then, enjoy your Black plan - you’ve already paid for it.
        </Dialog.Content>
        <Dialog.Actions>
-        <Box mr={24}>
           <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
-        </Box>
-        <Box>
-          <Button onClick={handleOnClose}>Yes, downgrade</Button>
-        </Box>
+          <Button>Yes, downgrade</Button>
        </Dialog.Actions>
       </Dialog>
     </>
@@ -153,21 +145,17 @@ render(() => {
 
   return (
     <>
-      <Button onClick={handleOpen} secondary>Dialog with only title </Button>
+      <Button onClick={handleOpen} secondary>Dialog with only title</Button>
 
       <Dialog
         isOpen={isOpen}
       >       
        <Dialog.Header>
-        <Text.H4 ta="center" mb={32}> Title </Text.H4> 
+        Are you sure you want to downgrade to a Platinum plan?
        </Dialog.Header>
        <Dialog.Actions>
-        <Box mr={24}>
           <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
-        </Box>
-        <Box>
-          <Button onClick={handleOnClose}>Yes, downgrade</Button>
-        </Box>
+          <Button>Yes, downgrade</Button>
        </Dialog.Actions>
       </Dialog>
     </>
