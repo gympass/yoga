@@ -12,7 +12,7 @@ Gympass `<Dialog />` is a component which has the purpose of providing prioritar
 
 - `<Dialog.Header />`
 - `<Dialog.Content />`
-- `<Dialog.Actions />`
+- `<Dialog.Footer />`
 
 ### Usage
 
@@ -43,9 +43,9 @@ render(() => {
        <Dialog.Content>
         Double check your info and company selection. If it still doesn’t work, contact your HR team.
        </Dialog.Content>
-       <Dialog.Actions>
+       <Dialog.Footer>
         <Button onClick={handleOnClose}>Ok, I understand</Button>
-       </Dialog.Actions>
+       </Dialog.Footer>
       </Dialog>
     </>
   );
@@ -79,10 +79,10 @@ render(() => {
        <Dialog.Content>
         Double check your info and company selection. If it still doesn’t work, contact your HR team.
        </Dialog.Content>
-       <Dialog.Actions>
+       <Dialog.Footer>
         <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
         <Button>Yes, downgrade</Button>
-       </Dialog.Actions>
+       </Dialog.Footer>
       </Dialog>
     </>
   );
@@ -117,10 +117,10 @@ render(() => {
        <Dialog.Content>
          The change will happen at the end of your billing cycle on March, 28. Until then, enjoy your Black plan - you’ve already paid for it.
        </Dialog.Content>
-       <Dialog.Actions>
+       <Dialog.Footer>
           <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
           <Button>Yes, downgrade</Button>
-       </Dialog.Actions>
+       </Dialog.Footer>
       </Dialog>
     </>
   );
@@ -151,10 +151,10 @@ render(() => {
        <Dialog.Header>
         Are you sure you want to downgrade to a Platinum plan?
        </Dialog.Header>
-       <Dialog.Actions>
+       <Dialog.Footer>
           <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
           <Button>Yes, downgrade</Button>
-       </Dialog.Actions>
+       </Dialog.Footer>
       </Dialog>
     </>
   );

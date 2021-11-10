@@ -26,9 +26,9 @@ describe('<Dialog />', () => {
         <Dialog isOpen>
           <Dialog.Header>Title</Dialog.Header>
           <Dialog.Content>Subtitle</Dialog.Content>
-          <Dialog.Actions>
+          <Dialog.Footer>
             <Button secondary>Ok, got it</Button>
-          </Dialog.Actions>
+          </Dialog.Footer>
         </Dialog>
       </ThemeProvider>,
     );
@@ -42,9 +42,9 @@ describe('<Dialog />', () => {
         <Dialog isOpen onClose={jest.fn()}>
           <Dialog.Header>Title</Dialog.Header>
           <Dialog.Content>Subtitle</Dialog.Content>
-          <Dialog.Actions>
+          <Dialog.Footer>
             <Button secondary>Ok, got it</Button>
-          </Dialog.Actions>
+          </Dialog.Footer>
         </Dialog>
       </ThemeProvider>,
     );
@@ -60,11 +60,11 @@ describe('<Dialog />', () => {
         <Dialog isOpen>
           <Dialog.Header>Title</Dialog.Header>
           <Dialog.Content>Subtitle</Dialog.Content>
-          <Dialog.Actions>
+          <Dialog.Footer>
             <Button onClick={onActionMock} secondary>
               Ok, got it
             </Button>
-          </Dialog.Actions>
+          </Dialog.Footer>
         </Dialog>
       </ThemeProvider>,
     );

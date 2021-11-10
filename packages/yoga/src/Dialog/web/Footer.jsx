@@ -2,10 +2,10 @@ import React from 'react';
 
 import Box from '../../Box';
 
-const Actions = props => (
+const Footer = props => (
   <Box as="footer" d="flex" gap="large" ml="auto" {...props} />
 );
 
-Actions.displayName = 'Dialog.Actions';
+Footer.displayName = 'Dialog.Footer';
 
-export default Actions;
+export default Footer;

@@ -1,10 +1,10 @@
 import Dialog from './Dialog';
 import Header from './Header';
 import Content from './Content';
-import Actions from './Actions';
+import Footer from './Footer';
 
 Dialog.Header = Header;
 Dialog.Content = Content;
-Dialog.Actions = Actions;
+Dialog.Footer = Footer;
 
 export default Dialog;
