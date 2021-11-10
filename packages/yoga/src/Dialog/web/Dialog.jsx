@@ -83,21 +83,23 @@ const Dialog = ({ isOpen, children, onClose }) => {
     return () => document.removeEventListener('keydown', keyPress);
   }, [keyPress]);
 
-  return isOpen
-    ? createPortal(
-        <Overlay onClick={closeDialog} onClose={onClose} ref={dialogRef}>
-          <StyledDialog onClose={onClose}>
-            {onClose && (
-              <Box d="flex" justifyContent="flex-end" w="100%">
-                <Button.Icon icon={Close} inverted onClick={onClose} />
-              </Box>
-            )}
-            {children}
-          </StyledDialog>
-        </Overlay>,
-        dialogElement,
-      )
-    : null;
+  return isOpen ? (
+    createPortal(
+      <Overlay onClick={closeDialog} onClose={onClose} ref={dialogRef}>
+        <StyledDialog onClose={onClose}>
+          {onClose && (
+            <Box d="flex" justifyContent="flex-end" w="100%">
+              <Button.Icon icon={Close} inverted onClick={onClose} />
+            </Box>
+          )}
+          {children}
+        </StyledDialog>
+      </Overlay>,
+      dialogElement,
+    )
+  ) : (
+    <> </>
+  );
 };
 
 Dialog.propTypes = {
