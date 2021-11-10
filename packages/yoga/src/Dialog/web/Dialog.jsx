@@ -20,19 +20,17 @@ const StyledDialog = styled(Card)`
   align-items: center;
   flex-direction: column;
 
-  padding: ${onClose ? dialog.padding.withIconClose : dialog.padding.top}px 
+  padding: ${onClose ? dialog.padding.withCloseButton : dialog.padding.top}px 
   ${dialog.padding.default}px 
   ${dialog.padding.default}px;
 
   width: ${dialog.width.default}px;
   min-height: ${dialog.height.min}px;
   border-radius: ${dialog.border.radius}px;
-
-  backdrop-filter: blur(1px);
   `}
 `;
 
-const Background = styled.div`
+const Overlay = styled.div`
   ${({
     theme: {
       yoga: {
@@ -87,16 +85,16 @@ const Dialog = ({ isOpen, children, onClose }) => {
 
   return isOpen ? (
     createPortal(
-      <Background onClick={closeDialog} onClose={onClose} ref={dialogRef}>
+      <Overlay onClick={closeDialog} onClose={onClose} ref={dialogRef}>
         <StyledDialog onClose={onClose}>
           {onClose && (
-            <Box position="absolute" right={32} top={24}>
+            <Box d="flex" justifyContent="flex-end" w="100%">
               <Button.Icon icon={Close} inverted onClick={onClose} />
             </Box>
           )}
           {children}
         </StyledDialog>
-      </Background>,
+      </Overlay>,
       dialogElement,
     )
   ) : (

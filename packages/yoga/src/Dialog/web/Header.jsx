@@ -1,8 +1,9 @@
 import React from 'react';
-import { Card } from '../..';
+import Box from '../../Box';
 
 const Header = props => (
-  <Card.Header
+  <Box
+    as="header"
     ta="center"
     color="text.primary"
     fw="medium"

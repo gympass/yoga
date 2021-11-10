@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Card } from '../..';
+import Box from '../../Box';
 
 const Actions = props => (
-  <Card.Actions d="flex" gap="large" ml="auto" {...props} />
+  <Box as="footer" d="flex" gap="large" ml="auto" {...props} />
 );
 
 Actions.displayName = 'Dialog.Actions';

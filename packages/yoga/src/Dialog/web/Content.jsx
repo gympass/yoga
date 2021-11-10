@@ -1,8 +1,8 @@
 import React from 'react';
-import { Card } from '../..';
+import Box from '../../Box';
 
 const Content = props => (
-  <Card.Content
+  <Box
     ta="center"
     color="text.secondary"
     fw="regular"
