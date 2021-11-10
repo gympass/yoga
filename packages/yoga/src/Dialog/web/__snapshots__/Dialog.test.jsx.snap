@@ -73,13 +73,6 @@ exports[`<Dialog /> should match snapshot 1`] = `
   fill: #D7D7E0;
 }
 
-.c1 {
-  padding: 16px  16px  16px  16px;
-  border-radius: 8px;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
-}
-
 .c3 {
   margin-bottom: 24px;
   color: #231B22;
@@ -105,6 +98,13 @@ exports[`<Dialog /> should match snapshot 1`] = `
   gap: 24px;
 }
 
+.c1 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -121,8 +121,6 @@ exports[`<Dialog /> should match snapshot 1`] = `
   width: 580px;
   min-height: 160px;
   border-radius: 16px;
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
 }
 
 .c0 {
@@ -254,10 +252,41 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   fill: #D7D7E0;
 }
 
+.c6 {
+  margin-bottom: 24px;
+  color: #231B22;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.c7 {
+  margin-bottom: 32px;
+  color: #6B6B78;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.c8 {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
 .c3 {
-  position: absolute;
-  top: 24px;
-  right: 32px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .c5 {
@@ -374,31 +403,6 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
-.c6 {
-  margin-bottom: 24px;
-  color: #231B22;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.c7 {
-  margin-bottom: 32px;
-  color: #6B6B78;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.c8 {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 24px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -411,12 +415,10 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 72px  32px  32px;
+  padding: 24px  32px  32px;
   width: 580px;
   min-height: 160px;
   border-radius: 16px;
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
 }
 
 .c0 {
@@ -449,6 +451,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
     >
       <div
         class="c3"
+        d="flex"
       >
         <button
           class="c4"
