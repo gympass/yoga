@@ -60,7 +60,7 @@ const Dialog = ({ isOpen, children, onClose }) => {
   const closeDialog = useCallback(
     e => {
       if (dialogRef.current === e.target && isOpen) {
-        onClose(false);
+        onClose(e);
       }
       return true;
     },
@@ -70,7 +70,7 @@ const Dialog = ({ isOpen, children, onClose }) => {
   const keyPress = useCallback(
     e => {
       if (e.key === 'Escape' && isOpen) {
-        onClose(false);
+        onClose(e);
       }
       return true;
     },
@@ -83,23 +83,21 @@ const Dialog = ({ isOpen, children, onClose }) => {
     return () => document.removeEventListener('keydown', keyPress);
   }, [keyPress]);
 
-  return isOpen ? (
-    createPortal(
-      <Overlay onClick={closeDialog} onClose={onClose} ref={dialogRef}>
-        <StyledDialog onClose={onClose}>
-          {onClose && (
-            <Box d="flex" justifyContent="flex-end" w="100%">
-              <Button.Icon icon={Close} inverted onClick={onClose} />
-            </Box>
-          )}
-          {children}
-        </StyledDialog>
-      </Overlay>,
-      dialogElement,
-    )
-  ) : (
-    <> </>
-  );
+  return isOpen
+    ? createPortal(
+        <Overlay onClick={closeDialog} onClose={onClose} ref={dialogRef}>
+          <StyledDialog onClose={onClose}>
+            {onClose && (
+              <Box d="flex" justifyContent="flex-end" w="100%">
+                <Button.Icon icon={Close} inverted onClick={onClose} />
+              </Box>
+            )}
+            {children}
+          </StyledDialog>
+        </Overlay>,
+        dialogElement,
+      )
+    : null;
 };
 
 Dialog.propTypes = {

@@ -22,7 +22,7 @@ const addRootElement = rootElement => {
   );
 };
 
-const usePortal = id => {
+export const usePortal = id => {
   const rootElementRef = useRef(null);
 
   useEffect(() => {
@@ -56,5 +56,3 @@ const usePortal = id => {
 
   return getRootElemement();
 };
-
-export default usePortal;

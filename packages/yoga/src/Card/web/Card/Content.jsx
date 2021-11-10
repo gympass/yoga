@@ -1,7 +1,6 @@
-import styled from 'styled-components';
 import Box from '../../../Box';
 
-const Content = styled(Box)``;
+const Content = Box;
 
 Content.displayName = 'Card.Content';
 

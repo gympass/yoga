@@ -1,3 +1,1 @@
-import usePortal from './usePortal';
-
-export { usePortal };
+export * from './usePortal';
