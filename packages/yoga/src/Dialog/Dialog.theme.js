@@ -5,7 +5,7 @@ const Dialog = ({ radii, spacing }) => ({
   padding: {
     default: spacing.xlarge,
     top: spacing.xxlarge,
-    withIconClose: spacing.huge,
+    withCloseButton: spacing.large,
   },
   width: {
     default: 580,
