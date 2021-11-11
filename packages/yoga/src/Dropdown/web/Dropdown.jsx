@@ -49,7 +49,6 @@ const labelTransition = css`
 
     font-size: ${input.label.font.size.typed}px;
     color: ${dropdown.input.label.color};
-    margin-left: ${dropdown.input.label.margin.left}px;
   `}
 `;
 
@@ -66,15 +65,6 @@ const Selector = styled.div`
       },
     },
   }) => css`
-    width: 100%;
-    padding: 0;
-
-    background-color: transparent;
-    border: none;
-    font-family: ${baseFont.family};
-    font-size: ${dropdown.input.font.size}px;
-    line-height: ${dropdown.input.font.lineHeight}px;
-    cursor: ${disabled ? 'not-allowed' : 'pointer'};
     ${!disabled
       ? `
           fieldset {
@@ -101,6 +91,8 @@ const Selector = styled.div`
 `;
 
 const Field = styled(Input)`
+  pointer-events: none;
+
   ${({ value, isOpen, disabled }) => css`
     ${isOpen && !disabled
       ? css`
@@ -114,18 +106,6 @@ const Field = styled(Input)`
         `
       : ''}
 
-<<<<<<< HEAD
-    ${isOpen &&
-      css`
-        & ~ legend {
-          max-width: 1000px;
-        }
-
-        & ~ label {
-          ${labelTransition};
-        }
-      `}
-=======
     ${value && !disabled
       ? css`
           & ~ label {
@@ -133,7 +113,6 @@ const Field = styled(Input)`
           }
         `
       : ''}
->>>>>>> refactor: avoiding unnecessary overwrite
   `}
 `;
 
@@ -155,6 +134,7 @@ const Button = styled.button`
     left: 0;
 
     width: 100%;
+    height: 100%;
     padding-top: ${dropdown.button.padding.top}px;
     padding-right: ${dropdown.button.padding.right}px;
 
