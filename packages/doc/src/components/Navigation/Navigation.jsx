@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { navigate } from 'gatsby';
-import { arrayOf, func, oneOf, bool, shape, number, string } from 'prop-types';
+import { arrayOf, func, bool, shape, number, string } from 'prop-types';
 
 import Arrow from 'images/arrow-dropdown.svg';
 import createTree from './tree';
@@ -217,11 +217,10 @@ ListItem.propTypes = {
   open: bool.isRequired,
 };
 
-const List = ({ tree, level, toggleMenu, prefix, sorting }) => {
-  const sortingFunction =
-    sorting || Object.keys(tree).some(child => child?.order)
-      ? SORTING.orderAscending
-      : SORTING.alphabeticAscending;
+const List = ({ tree, level, toggleMenu, prefix }) => {
+  const sortingFunction = Object.keys(tree).some(child => tree[child]?.order)
+    ? SORTING.orderAscending
+    : SORTING.alphabeticAscending;
 
   return (
     <StyledList>
@@ -251,12 +250,10 @@ List.propTypes = {
   level: number,
   toggleMenu: func.isRequired,
   prefix: bool.isRequired,
-  sorting: oneOf(Object.values(SORTING)),
 };
 
 List.defaultProps = {
   level: 0,
-  sorting: 'order',
 };
 
 const Navigation = ({ items, toggleMenu, opened, prefix }) => {
@@ -271,12 +268,7 @@ const Navigation = ({ items, toggleMenu, opened, prefix }) => {
   return (
     <Wrapper opened={opened}>
       <Nav>
-        <List
-          tree={tree}
-          toggleMenu={toggleMenu}
-          prefix={prefix}
-          sorting={SORTING.orderAscending}
-        />
+        <List tree={tree} toggleMenu={toggleMenu} prefix={prefix} />
       </Nav>
     </Wrapper>
   );
