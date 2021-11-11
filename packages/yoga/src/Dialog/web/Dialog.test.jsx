@@ -9,7 +9,7 @@ describe('<Dialog />', () => {
   afterEach(cleanup);
 
   it('should match snapshot', () => {
-    const { container } = render(
+    const { baseElement } = render(
       <ThemeProvider>
         <Dialog isOpen>
           <Dialog.Header>Title</Dialog.Header>
@@ -21,11 +21,11 @@ describe('<Dialog />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(baseElement).toMatchSnapshot();
   });
 
   it('should match snapshot with close button', () => {
-    const { container } = render(
+    const { baseElement } = render(
       <ThemeProvider>
         <Dialog isOpen onClose={jest.fn()}>
           <Dialog.Header>Title</Dialog.Header>
@@ -37,7 +37,7 @@ describe('<Dialog />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(baseElement).toMatchSnapshot();
   });
 
   it('should render a minimal dialog', () => {
