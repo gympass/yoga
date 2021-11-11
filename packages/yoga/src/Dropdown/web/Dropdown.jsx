@@ -202,6 +202,7 @@ const OptionsList = styled.ul`
 const Option = styled.li`
   ${({
     isSelected,
+    highlighted,
     theme: {
       yoga: {
         baseFont,
@@ -238,6 +239,12 @@ const Option = styled.li`
         ? dropdown.selected.option.font.color
         : dropdown.option.font.color
     };
+
+    ${
+      highlighted
+        ? `background-color: ${dropdown.hover.option.backgroundColor};`
+        : ''
+    }
 
     &:hover {
       background-color: ${dropdown.hover.option.backgroundColor};
