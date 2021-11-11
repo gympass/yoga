@@ -1,27 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import renderer from 'react-test-renderer';
-import { screen, render, fireEvent } from '@testing-library/react';
+import { screen, render, fireEvent, cleanup } from '@testing-library/react';
 
 import { ThemeProvider, Button } from '../..';
 
 import Dialog from '.';
 
 describe('<Dialog />', () => {
-  jest.useRealTimers();
-
-  beforeAll(() => {
-    ReactDOM.createPortal = jest.fn(element => {
-      return element;
-    });
-  });
-
-  afterEach(() => {
-    ReactDOM.createPortal.mockClear();
-  });
+  afterEach(cleanup);
 
   it('should match snapshot', () => {
-    const container = renderer.create(
+    const { baseElement } = render(
       <ThemeProvider>
         <Dialog isOpen>
           <Dialog.Header>Title</Dialog.Header>
@@ -33,11 +21,11 @@ describe('<Dialog />', () => {
       </ThemeProvider>,
     );
 
-    expect(container.toJSON()).toMatchSnapshot();
+    expect(baseElement).toMatchSnapshot();
   });
 
   it('should match snapshot with close button', () => {
-    const { container } = render(
+    const { baseElement } = render(
       <ThemeProvider>
         <Dialog isOpen onClose={jest.fn()}>
           <Dialog.Header>Title</Dialog.Header>
@@ -49,7 +37,7 @@ describe('<Dialog />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(baseElement).toMatchSnapshot();
   });
 
   it('should render a minimal dialog', () => {

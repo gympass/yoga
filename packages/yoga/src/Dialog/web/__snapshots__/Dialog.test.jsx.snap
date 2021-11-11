@@ -144,43 +144,51 @@ exports[`<Dialog /> should match snapshot 1`] = `
   background-color: rgba(35,27,34,0.48);
 }
 
-<div
-  className="c0"
-  onClick={[Function]}
->
-  <section
-    className="c1 c2"
+<body>
+  <div />
+  <div
+    id="dialog"
   >
-    <header
-      className="c3"
-      color="text.primary"
-    >
-      Title
-    </header>
-    <div
-      className="c4"
-      color="text.secondary"
-    >
-      Subtitle
-    </div>
-    <footer
-      className="c5"
-      d="flex"
-    >
-      <button
-        className="c6"
-        disabled={false}
-        onClick={[Function]}
+    <div>
+      <div
+        class="c0"
       >
-        Ok, got it
-      </button>
-    </footer>
-  </section>
-</div>
+        <section
+          class="c1 c2"
+        >
+          <header
+            class="c3"
+            color="text.primary"
+          >
+            Title
+          </header>
+          <div
+            class="c4"
+            color="text.secondary"
+          >
+            Subtitle
+          </div>
+          <footer
+            class="c5"
+            d="flex"
+          >
+            <button
+              class="c6"
+            >
+              Ok, got it
+            </button>
+          </footer>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
 `;
 
 exports[`<Dialog /> should match snapshot with close button 1`] = `
-.c9 {
+<body>
+  <div />
+  .c9 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -442,50 +450,55 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   background-color: rgba(35,27,34,0.48);
 }
 
-<div>
-  <div
-    class="c0"
+<div
+    id="dialog"
   >
-    <section
-      class="c1 c2"
-    >
+    <div>
       <div
-        class="c3"
-        d="flex"
+        class="c0"
       >
-        <button
-          class="c4"
+        <section
+          class="c1 c2"
         >
-          <svg
-            class="c5"
-            height="24"
-            width="24"
-          />
-        </button>
+          <div
+            class="c3"
+            d="flex"
+          >
+            <button
+              class="c4"
+            >
+              <svg
+                class="c5"
+                height="24"
+                width="24"
+              />
+            </button>
+          </div>
+          <header
+            class="c6"
+            color="text.primary"
+          >
+            Title
+          </header>
+          <div
+            class="c7"
+            color="text.secondary"
+          >
+            Subtitle
+          </div>
+          <footer
+            class="c8"
+            d="flex"
+          >
+            <button
+              class="c9"
+            >
+              Ok, got it
+            </button>
+          </footer>
+        </section>
       </div>
-      <header
-        class="c6"
-        color="text.primary"
-      >
-        Title
-      </header>
-      <div
-        class="c7"
-        color="text.secondary"
-      >
-        Subtitle
-      </div>
-      <footer
-        class="c8"
-        d="flex"
-      >
-        <button
-          class="c9"
-        >
-          Ok, got it
-        </button>
-      </footer>
-    </section>
+    </div>
   </div>
-</div>
+</body>
 `;
