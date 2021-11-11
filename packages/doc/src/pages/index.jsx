@@ -68,7 +68,7 @@ const boxes = [
     title: 'guidelines',
     description:
       'Design principles, practical patterns and high quality design resources to help people create their product prototypes beautifully and efficiently.',
-    href: '/guidelines/product-content/',
+    href: '/guidelines/product-content/introduction',
   },
   {
     title: 'components',

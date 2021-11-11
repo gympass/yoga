@@ -64,7 +64,7 @@ const Field = styled.input`
       color: ${input.font.color.focus};
 
       & ~ legend {
-        max-width: 1000px;
+        max-width: max-content;
         transition-property: max-width;
         transition-duration: ${transition.duration[1]}ms;
       }
@@ -91,7 +91,7 @@ const Field = styled.input`
     ${value &&
       css`
         & ~ legend {
-          max-width: 1000px;
+          max-width: max-content;
         }
 
         & ~ label {

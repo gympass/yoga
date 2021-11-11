@@ -29,7 +29,7 @@ const Dot = styled.div`
 render(() => {
   return (
     <Frame position="relative">
-      <Dot position="absolute" top="small" left="small" />
+      <Dot position="absolute" top="small" left="small" zIndex={1}/>
     </Frame>
   );
 });
@@ -127,6 +127,17 @@ The `positions` module has all the listed above
       </td>
       <td>
         <inlineCode>left</inlineCode>
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <inlineCode>zIndex</inlineCode>
+      </td>
+      <td>
+        <inlineCode>zIndex</inlineCode>
+      </td>
+      <td>
+        <inlineCode>z-index</inlineCode>
       </td>
     </tr>
   </tbody>

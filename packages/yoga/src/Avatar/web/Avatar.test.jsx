@@ -68,4 +68,15 @@ describe('<Avatar />', () => {
 
     expect(container).toMatchSnapshot();
   });
+  it('should match snapshot in avatar with children prop', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Avatar>
+          <p>LC</p>
+        </Avatar>
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });

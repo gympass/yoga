@@ -51,12 +51,20 @@ const left = props =>
     transform: toPx,
   });
 
+const zIndex = props =>
+  generator({
+    props,
+    prop: ['zIndex'],
+    cssProperty: 'zIndex',
+  });
+
 const positions = compose(
   position,
   top,
   right,
   bottom,
   left,
+  zIndex,
 );
 
-export { display, positions, position, top, right, bottom, left };
+export { display, positions, position, top, right, bottom, left, zIndex };
