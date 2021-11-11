@@ -83,12 +83,16 @@ const StyledList = styled(MDXElements.Ul)`
   width: 100%;
 `;
 
-const ArrowIcon = styled(Arrow)`
-  width: 0.6rem;
-  transition: all 200ms ease-out;
-  ${({ isOpen }) => `
-    transform: rotate(${isOpen ? 180 : 0}deg);
+const ChevronContainer = styled.div.attrs({
+  rotation: props => (props.isOpen ? 180 : 0),
+})`
+  > svg {
+    width: 0.6rem;
+    transition: all 200ms ease-out;
+    ${({ rotation }) => `
+    transform: rotate(${rotation}deg);
   `}
+  }
 `;
 
 const NavigationLabel = styled.button`
@@ -191,7 +195,10 @@ const ListItem = ({
         level={level}
         aria-checked={isOpen.toString()}
       >
-        {title} <ArrowIcon isOpen={isOpen} />
+        {title}{' '}
+        <ChevronContainer isOpen={isOpen}>
+          <Arrow />
+        </ChevronContainer>
       </Collapsible>
       {hasChildren && (
         <StyledList level={level}>
