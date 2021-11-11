@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.22.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.21.3...@gympass/yoga@7.22.0) (2021-11-11)
+
+
+### Bug Fixes
+
+* **dialog:** fix problem not read property 'nextElementSibling' of null ([cdd9882](https://github.com/Gympass/yoga/commit/cdd9882461db41a1d0283983204e32ea16d4ffff))
+* **dialog:** fix problem props table ([b700d65](https://github.com/Gympass/yoga/commit/b700d65729d821c047d717c8a45b2073fb13b95e))
+
+
+### Features
+
+* **dialog:** add dialog theme ([46fc73b](https://github.com/Gympass/yoga/commit/46fc73b51aad1e67bf0b374789c35283793cfcab))
+* **dialog:** add new props to dialog theme ([4195718](https://github.com/Gympass/yoga/commit/419571808057a752bfd8651987cb4b1559ca45e2))
+* **dialog:** create dialog, header, content and actions ([fb521bf](https://github.com/Gympass/yoga/commit/fb521bfb08836b0da5d8e8052ffa4075d07fa70e))
+* **dialog:** create portals to dialog ([0af9d73](https://github.com/Gympass/yoga/commit/0af9d73e407833edd04332563751d5f3ea45ecfe))
+
+
+
+
+
 ## [7.21.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.21.2...@gympass/yoga@7.21.3) (2021-11-08)
 
 **Note:** Version bump only for package @gympass/yoga
