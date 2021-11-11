@@ -1,6 +1,12 @@
 name: Yoga
 
-on: [push,pull_request]
+on:
+  push:
+    branches-ignore:
+      - master
+  pull_request:
+    branches-ignore:
+      - master
 
 jobs:
   linter_and_tests:
