@@ -2,10 +2,16 @@ import styled from 'styled-components';
 import Dialog from '../../Dialog';
 
 const Footer = styled(Dialog.Footer)`
-  flex-direction: column;
-  margin-left: 0;
-  width: 100%;
-  gap: 16px;
+  ${({
+    theme: {
+      yoga: { spacing },
+    },
+  }) => `
+    flex-direction: column;
+    margin-left: ${spacing.zero};
+    width: 100%;
+    gap: ${spacing.small}px;
+  `}
 `;
 
 Footer.displayName = 'BottomSheet.Footer';

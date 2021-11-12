@@ -4,10 +4,10 @@ import Dialog from '../../Dialog';
 const Header = styled(Dialog.Header)`
   ${({
     theme: {
-      yoga: { lineHeights, spacing, fontSizes },
+      yoga: { lineHeights, spacing, fontSizes, colors },
     },
   }) => `
-    color: #001027;
+    color:${colors.text.primary};
     line-height: ${lineHeights.medium}px;
     text-align: left;
     align-self: flex-start;

@@ -23,7 +23,7 @@ render(() => {
     <>
       <Button onClick={handleOpen}>BottomSheet with one actions</Button>
 
-      <BottomSheet isOpen={isOpen} onClose={handleOnClose}>
+      <BottomSheet isOpen={isOpen}>
         <BottomSheet.Header>We confirm your eligibility</BottomSheet.Header>
         
         <BottomSheet.Content>
@@ -61,7 +61,7 @@ render(() => {
     <>
       <Button onClick={handleOpen} secondary>BottomSheet with two actions</Button>
 
-      <BottomSheet isOpen={isOpen} onClose={handleOnClose}>
+      <BottomSheet isOpen={isOpen}>
         <BottomSheet.Header>We confirm your eligibility</BottomSheet.Header>
         
         <BottomSheet.Content>
@@ -103,7 +103,7 @@ render(() => {
     <>
       <Button onClick={handleOpen}>BottomSheet with only title</Button>
 
-      <BottomSheet isOpen={isOpen} onClose={handleOnClose}>
+      <BottomSheet isOpen={isOpen}>
         <BottomSheet.Header>We confirm your eligibility</BottomSheet.Header>
         
         <BottomSheet.Footer>
