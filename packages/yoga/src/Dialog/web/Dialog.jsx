@@ -7,7 +7,7 @@ import { usePortal } from '../../hooks';
 import { Button, Card, Box } from '../..';
 import { Close } from '../../../../icons/src';
 
-const StyledDialog = styled(Card)`
+export const StyledDialog = styled(Card)`
   ${({
     onClose,
     theme: {
@@ -52,7 +52,7 @@ const Overlay = styled.div`
   `}
 `;
 
-const Dialog = ({ isOpen, children, onClose }) => {
+const Dialog = ({ isOpen, children, onClose, ...props }) => {
   const dialogRef = useRef(null);
 
   const dialogElement = usePortal('dialog');
@@ -85,7 +85,12 @@ const Dialog = ({ isOpen, children, onClose }) => {
 
   return isOpen
     ? createPortal(
-        <Overlay onClick={closeDialog} onClose={onClose} ref={dialogRef}>
+        <Overlay
+          onClick={closeDialog}
+          onClose={onClose}
+          ref={dialogRef}
+          {...props}
+        >
           <StyledDialog onClose={onClose}>
             {onClose && (
               <Box d="flex" justifyContent="flex-end" w="100%">

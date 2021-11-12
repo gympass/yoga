@@ -1,124 +1,65 @@
 import React from 'react';
-import { fireEvent, render, screen } from '@testing-library/react';
+import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
+import { screen, render, fireEvent } from '@testing-library/react';
 
-import { ThemeProvider, BottomSheet } from '../..';
+import { ThemeProvider, Button } from '../..';
+
+import BottomSheet from '.';
 
 describe('<BottomSheet />', () => {
+  jest.useRealTimers();
+
+  beforeAll(() => {
+    ReactDOM.createPortal = jest.fn(element => {
+      return element;
+    });
+  });
+
+  afterEach(() => {
+    ReactDOM.createPortal.mockClear();
+  });
+
   it('should match snapshot', () => {
-    const onActionMock = jest.fn();
-
-    const { container } = render(
+    const container = renderer.create(
       <ThemeProvider>
-        <BottomSheet
-          open
-          title="We couldn't confirm your account"
-          subTitle="Double check your info"
-          actionLabel="Ok, I understand"
-          onAction={onActionMock}
-        />
+        <BottomSheet isOpen>
+          <BottomSheet.Header>Title</BottomSheet.Header>
+          <BottomSheet.Content>Subtitle</BottomSheet.Content>
+          <BottomSheet.Footer>
+            <Button secondary>Ok, got it</Button>
+          </BottomSheet.Footer>
+        </BottomSheet>
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(container.toJSON()).toMatchSnapshot();
   });
 
-  it('should render a minimal bottomSheet', () => {
+  it('should render a minimal bottom sheet', () => {
     const onActionMock = jest.fn();
 
     render(
       <ThemeProvider>
-        <BottomSheet
-          open
-          title="We couldn't confirm your account"
-          actionLabel="Ok, I understand"
-          onAction={onActionMock}
-        />
+        <BottomSheet isOpen>
+          <BottomSheet.Header>Title</BottomSheet.Header>
+          <BottomSheet.Content>Subtitle</BottomSheet.Content>
+          <BottomSheet.Footer>
+            <Button onClick={onActionMock} secondary>
+              Ok, got it
+            </Button>
+          </BottomSheet.Footer>
+        </BottomSheet>
       </ThemeProvider>,
     );
 
-    screen.getByTestId('title');
-    screen.getByTestId('button-action');
-    screen.getByText("We couldn't confirm your account");
-  });
+    screen.getByText('Title');
+    screen.getByText('Subtitle');
 
-  it('should render a custom action button', () => {
-    const onActionMock = jest.fn();
-
-    render(
-      <ThemeProvider>
-        <BottomSheet
-          open
-          title="We couldn't confirm your account"
-          subTitle="Double check your info"
-          actionLabel="Ok, I understand"
-          onAction={onActionMock}
-        />
-      </ThemeProvider>,
-    );
-
-    const button = screen.getByRole('button', { name: /Ok, I understand/i });
+    const button = screen.getByRole('button', { name: /Ok, got it/i });
 
     fireEvent.click(button);
 
     expect(onActionMock).toHaveBeenCalledTimes(1);
-  });
-
-  it('should render a cancel button', () => {
-    const onActionMock = jest.fn();
-    const onCancelMock = jest.fn();
-
-    render(
-      <ThemeProvider>
-        <BottomSheet
-          open
-          title="We couldn't confirm your account"
-          subTitle="Double check your info"
-          actionLabel="Ok, I understand"
-          onAction={onActionMock}
-          onCancel={onCancelMock}
-        />
-      </ThemeProvider>,
-    );
-
-    const button = screen.getByTestId('button-cancel');
-
-    fireEvent.click(button);
-
-    expect(onCancelMock).toHaveBeenCalledTimes(1);
-  });
-
-  it('should hide cancel button', () => {
-    const onActionMock = jest.fn();
-
-    render(
-      <ThemeProvider>
-        <BottomSheet
-          open
-          title="We couldn't confirm your account"
-          subTitle="Double check your info"
-          actionLabel="Ok, I understand"
-          onAction={onActionMock}
-        />
-      </ThemeProvider>,
-    );
-
-    expect(screen.queryByRole('button-cancel')).toBeNull();
-  });
-
-  it('should hide subtitle', () => {
-    const onActionMock = jest.fn();
-
-    render(
-      <ThemeProvider>
-        <BottomSheet
-          open
-          title="We couldn't confirm your account"
-          actionLabel="Ok, I understand"
-          onAction={onActionMock}
-        />
-      </ThemeProvider>,
-    );
-
-    expect(screen.queryByRole('subtitle')).toBeNull();
   });
 });
