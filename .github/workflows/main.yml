@@ -1,0 +1,20 @@
+name: Yoga
+
+on: pull_request
+
+jobs:
+  linter_and_tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 16
+        cache: 'yarn'
+        cache-dependency-path: yarn.lock
+    - name: Install dependencies
+      run: yarn
+    - name: Run linter
+      run: yarn lint:all
+    - name: Run tests
+      run: yarn test

@@ -3,9 +3,9 @@ import { createPortal } from 'react-dom';
 import styled from 'styled-components';
 import { func, bool, node } from 'prop-types';
 
+import { Close } from '@gympass/yoga-icons';
 import { usePortal } from '../../hooks';
 import { Button, Card, Box } from '../..';
-import { Close } from '../../../../icons/src';
 
 export const StyledDialog = styled(Card)`
   ${({

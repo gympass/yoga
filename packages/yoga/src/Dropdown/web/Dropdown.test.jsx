@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 
 import { ThemeProvider, Dropdown } from '../..';
 
@@ -73,5 +73,36 @@ describe('<Dropdown />', () => {
     );
 
     expect(container).toMatchSnapshot();
+  });
+
+  it('should make label visible when open dropdown', () => {
+    const { getByRole } = render(
+      <ThemeProvider>
+        <Dropdown {...dropdownProps} />
+      </ThemeProvider>,
+    );
+
+    fireEvent.click(getByRole('button'));
+
+    screen.getAllByText('Find an activity to love');
+  });
+
+  it('should make label visible when has a selected option', () => {
+    const selectedOption = {
+      label: 'Swimming',
+      value: 'swimming',
+      selected: true,
+    };
+    const props = dropdownProps;
+
+    props.options.push(selectedOption);
+
+    render(
+      <ThemeProvider>
+        <Dropdown {...props} />
+      </ThemeProvider>,
+    );
+
+    screen.getAllByText('Find an activity to love');
   });
 });

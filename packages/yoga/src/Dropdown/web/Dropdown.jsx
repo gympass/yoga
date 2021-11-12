@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Downshift from 'downshift';
 import {
   arrayOf,
@@ -13,6 +13,8 @@ import {
 import { ChevronDown } from '@gympass/yoga-icons';
 
 import Helper from '../../Input/web/Helper';
+
+import Input from '../../Input/web/Input';
 
 const Wrapper = styled.div`
   ${({
@@ -31,92 +33,86 @@ const Wrapper = styled.div`
   `}
 `;
 
+const labelTransition = css`
+  ${({
+    theme: {
+      yoga: {
+        transition,
+        components: { input, dropdown },
+      },
+    },
+  }) => `
+    transform: translateY(-${input.height / 2 - 2}px);
+    transition-property: transform, font-size, color;
+    transition-duration: ${transition.duration[1]}ms;
+    transition-timing-function: cubic-bezier(${transition.timing[0].join()});
+
+    font-size: ${input.label.font.size.typed}px;
+    color: ${dropdown.input.label.color};
+  `}
+`;
+
 const Selector = styled.div`
   ${({
+    isOpen,
     disabled,
     selected,
-    isOpen,
     error,
     theme: {
       yoga: {
         colors,
-        components: { dropdown, input },
-      },
-    },
-  }) => `
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-
-    height: ${input.height}px;
-    width: 100%;
-    padding: ${dropdown.selector.padding.top}px
-      ${dropdown.selector.padding.right}px
-      ${dropdown.selector.padding.bottom}px
-      ${dropdown.selector.padding.left}px;
-
-    background-color: ${dropdown.selector.background};
-    border-radius: ${dropdown.selector.border.radius}px;
-    border-width: ${dropdown.selector.border.width}px;
-    border-style: solid;
-    border-color: ${
-      error ? colors.feedback.attention[1] : dropdown.selector.border.color
-    };
-
-    &:hover{
-      ${
-        !disabled
-          ? `border-color: ${dropdown.hover.selector.border.color};`
-          : ''
-      };
-    }
-    ${
-      disabled
-        ? `border-color: ${dropdown.disabled.selector.border.color};`
-        : ''
-    };
-    ${
-      selected
-        ? `border-color: ${dropdown.selected.selector.border.color};`
-        : ''
-    };
-    ${
-      isOpen && !disabled
-        ? `border-color: ${dropdown.hover.selector.border.color};`
-        : ''
-    }
-  `}
-`;
-
-const Input = styled.input`
-  ${({
-    disabled,
-    selected,
-    theme: {
-      yoga: {
-        baseFont,
         components: { dropdown },
       },
     },
-  }) => `
-    width: 100%;
-    padding: 0;
+  }) => css`
+    ${!disabled
+      ? `
+          fieldset {
+            ${
+              isOpen || selected
+                ? `border-color: ${dropdown.hover.selector.border.color};`
+                : ''
+            }
 
-    background-color: transparent;
-    border: none;
+            ${
+              error && !isOpen
+                ? `border-color: ${colors.feedback.attention[1]};`
+                : ''
+            }
+          }
+          &:hover {
+            fieldset {
+              border-color: ${dropdown.hover.selector.border.color};
+            }
+          }
+        `
+      : ''}
+  `}
+`;
 
-    font-family: ${baseFont.family};
-    font-size: ${dropdown.input.font.size}px;
-    line-height: ${dropdown.input.font.lineHeight}px;
-    cursor: ${disabled ? 'not-allowed' : 'pointer'};
+const Field = styled(Input)`
+  pointer-events: none;
 
-    &, &::placeholder {
-      color: ${dropdown.input.font.color};
-      ${selected ? `color: ${dropdown.selected.input.font.color};` : ''}
-      ${disabled ? `color: ${dropdown.disabled.input.font.color};` : ''}
-    }
+  ${({ value, isOpen, disabled }) => css`
+    ${isOpen && !disabled
+      ? css`
+          & ~ legend {
+            max-width: max-content;
+          }
+
+          & ~ label {
+            ${labelTransition};
+          }
+        `
+      : ''}
+
+    ${value && !disabled
+      ? css`
+          & ~ label {
+            ${labelTransition};
+          }
+        `
+      : ''}
   `}
 `;
 
@@ -150,7 +146,6 @@ const Button = styled.button`
 
 const OptionsList = styled.ul`
   ${({
-    selected,
     theme: {
       yoga: {
         components: { dropdown },
@@ -174,12 +169,6 @@ const OptionsList = styled.ul`
     border-style: solid;
     border-color: ${dropdown.optionsList.border.color};
     border-top: none;
-
-    ${
-      selected
-        ? `border-color: ${dropdown.selected.optionsList.border.color};`
-        : ''
-    };
 
     border-radius:
         ${dropdown.option.border.radius.topLeft}px
@@ -265,7 +254,7 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
   }) => `
     fill: ${dropdown.arrow.fill};
     ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
-    ${selected ? `fill: ${dropdown.selected.arrow.fill};` : ''};
+    ${selected && !disabled ? `fill: ${dropdown.selected.arrow.fill};` : ''};
     transform: rotate(${isOpen ? '180deg' : '0'});
   `}
 `;
@@ -306,11 +295,12 @@ const Dropdown = ({
           error={error}
           selected={selectedItem !== null}
         >
-          <Input
+          <Field
             readOnly
-            placeholder={label}
             disabled={disabled}
             selected={selectedItem !== null}
+            isOpen={isOpen}
+            label={label}
             {...getInputProps()}
           />
           <Button
@@ -325,7 +315,6 @@ const Dropdown = ({
             />
           </Button>
         </Selector>
-
         {isOpen && (
           <OptionsList selected={selectedItem !== null} {...getMenuProps()}>
             {options.map((item, index) => (
