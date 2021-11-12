@@ -301,6 +301,7 @@ const Dropdown = ({
             selected={selectedItem !== null}
             isOpen={isOpen}
             label={label}
+            full={full}
             {...getInputProps()}
           />
           <Button
