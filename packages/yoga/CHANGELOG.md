@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.22.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.22.1...@gympass/yoga@7.22.2) (2021-11-12)
+
+
+### Bug Fixes
+
+* **dropdown-web:** remove uneeded padding ([c3b302e](https://github.com/Gympass/yoga/commit/c3b302eeaca693d277fa074af0848a8272ce0f9e))
+
+
+
+
+
 ## [7.22.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.22.0...@gympass/yoga@7.22.1) (2021-11-11)
 
 **Note:** Version bump only for package @gympass/yoga
