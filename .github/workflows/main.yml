@@ -15,6 +15,6 @@ jobs:
     - name: Install dependencies
       run: yarn
     - name: Run linter
-      run: yarn eslint
+      run: yarn lint:all
     - name: Run tests
       run: yarn test
