@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.22.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.22.2...@gympass/yoga@7.22.3) (2021-11-12)
+
+
+### Bug Fixes
+
+* **dialog:** replace relative import with package import ([65b4a84](https://github.com/Gympass/yoga/commit/65b4a846961324426fc6e98931ae1bf58fcb948c))
+
+
+
+
+
 ## [7.22.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.22.1...@gympass/yoga@7.22.2) (2021-11-12)
 
 
