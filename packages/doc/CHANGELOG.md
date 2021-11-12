@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.14](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.10.13...@gympass/yoga-doc@2.10.14) (2021-11-12)
+
+### Bug Fixes
+
+- **navigation:** unknown prop error ([5cbd614](https://github.com/Gympass/yoga/commit/5cbd614b92e918c6d75affc86d80e27dc01d3832))
+
 ## [2.10.13](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.10.12...@gympass/yoga-doc@2.10.13) (2021-11-12)
 
 **Note:** Version bump only for package @gympass/yoga-doc
