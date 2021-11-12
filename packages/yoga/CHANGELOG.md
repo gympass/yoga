@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.22.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.22.3...@gympass/yoga@7.22.4) (2021-11-12)
+
+
+### Bug Fixes
+
+* **dropdown:** pass the full prop to input component ([70e2bc1](https://github.com/Gympass/yoga/commit/70e2bc1e788007c6d475dfd3938c8c6e2206c550))
+
+
+
+
+
 ## [7.22.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.22.2...@gympass/yoga@7.22.3) (2021-11-12)
 
 
