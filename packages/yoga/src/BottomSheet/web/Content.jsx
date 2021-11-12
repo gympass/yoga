@@ -8,7 +8,7 @@ const Content = styled(Dialog.Content)`
     },
   }) => `
     font-weight: ${fontWeights.regular};
-    color: ${colors.deep};
+    color: ${colors.text.secondary};
     line-height: ${lineHeights.small}px;
     margin-bottom: ${spacing.medium}px;
     font-size: ${fontSizes.small}px;

@@ -18,7 +18,7 @@ const StyledBottomSheet = styled(Dialog)`
     ${StyledDialog} {
       padding: ${bottomsheet.padding.top}px ${bottomsheet.padding.right}px ${bottomsheet.padding.bottom}px ${bottomsheet.padding.left}px;
       width: ${bottomsheet.width.default}%;
-      border-radius: ${bottomsheet.border.radius}px ${bottomsheet.border.radius}px 0px 0px;
+      border-radius: ${bottomsheet.border.radius}px ${bottomsheet.border.radius}px 0 0;
     }
     
     animation: content;
