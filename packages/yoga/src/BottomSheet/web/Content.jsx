@@ -12,9 +12,9 @@ const Content = styled(Dialog.Content)`
     line-height: ${lineHeights.small}px;
     margin-bottom: ${spacing.medium}px;
     font-size: ${fontSizes.small}px;
-    align-self: flex-start;
-    text-align: left;
-  `}
+    `}
+  align-self: flex-start;
+  text-align: left;
 `;
 
 Content.displayName = 'BottomSheet.Content';

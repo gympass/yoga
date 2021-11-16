@@ -106,6 +106,10 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
 }
 
 .c2 {
+  padding: 40px  32px  32px;
+  width: 580px;
+  min-height: 160px;
+  border-radius: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -117,10 +121,6 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 40px  32px  32px;
-  width: 580px;
-  min-height: 160px;
-  border-radius: 16px;
 }
 
 .c0 {
@@ -163,12 +163,12 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
 .c5 {
   color: #231B22;
   line-height: 24px;
-  text-align: left;
+  font-size: 16px;
+  margin-bottom: 16px;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
-  font-size: 16px;
-  margin-bottom: 16px;
+  text-align: left;
 }
 
 .c7 {
@@ -184,12 +184,12 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
 }
 
 .c9 {
+  margin-left: 0;
+  gap: 16px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-left: 0;
   width: 100%;
-  gap: 16px;
 }
 
 <body>

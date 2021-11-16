@@ -16,10 +16,6 @@ export const StyledDialog = styled(Card)`
       },
     },
   }) => `
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
   padding: ${onClose ? dialog.padding.withCloseButton : dialog.padding.top}px 
   ${dialog.padding.default}px 
   ${dialog.padding.default}px;
@@ -28,6 +24,9 @@ export const StyledDialog = styled(Card)`
   min-height: ${dialog.height.min}px;
   border-radius: ${dialog.border.radius}px;
   `}
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const Overlay = styled.div`

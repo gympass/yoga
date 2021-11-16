@@ -7,11 +7,11 @@ const Footer = styled(Dialog.Footer)`
       yoga: { spacing },
     },
   }) => `
-    flex-direction: column;
-    margin-left: ${spacing.zero};
-    width: 100%;
-    gap: ${spacing.small}px;
+  margin-left: ${spacing.zero};
+  gap: ${spacing.small}px;
   `}
+  flex-direction: column;
+  width: 100%;
 `;
 
 Footer.displayName = 'BottomSheet.Footer';

@@ -106,6 +106,10 @@ exports[`<Dialog /> should match snapshot 1`] = `
 }
 
 .c2 {
+  padding: 40px  32px  32px;
+  width: 580px;
+  min-height: 160px;
+  border-radius: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -117,10 +121,6 @@ exports[`<Dialog /> should match snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 40px  32px  32px;
-  width: 580px;
-  min-height: 160px;
-  border-radius: 16px;
 }
 
 .c0 {
@@ -413,6 +413,10 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
 }
 
 .c2 {
+  padding: 24px  32px  32px;
+  width: 580px;
+  min-height: 160px;
+  border-radius: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -424,10 +428,6 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 24px  32px  32px;
-  width: 580px;
-  min-height: 160px;
-  border-radius: 16px;
 }
 
 .c0 {

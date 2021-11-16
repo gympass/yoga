@@ -9,11 +9,11 @@ const Header = styled(Dialog.Header)`
   }) => `
     color: ${colors.text.primary};
     line-height: ${lineHeights.medium}px;
-    text-align: left;
-    align-self: flex-start;
     font-size: ${fontSizes.medium}px;
     margin-bottom: ${spacing.small}px;
-  `}
+    `}
+  align-self: flex-start;
+  text-align: left;
 `;
 
 Header.displayName = 'BottomSheet.Header';
