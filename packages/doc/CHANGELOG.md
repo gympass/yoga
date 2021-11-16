@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.12.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.11.1...@gympass/yoga-doc@2.12.0) (2021-11-16)
+
+
+### Bug Fixes
+
+* **prettier:** make it ignore CHANGELOG files ([09aa56b](https://github.com/Gympass/yoga/commit/09aa56b6ca88caf81c5e327120ff4b9296ebc3c7))
+
+
+### Features
+
+* create component bottom sheet notification ([9497afc](https://github.com/Gympass/yoga/commit/9497afcedc4f2d95af1ae78f7268d1fa13362bc9))
+
+
+### Reverts
+
+* **doc-pkg:** sync changelog with master one ([a3296a7](https://github.com/Gympass/yoga/commit/a3296a7c45ed2c1fced8b57d39f6dd982dd11193))
+
+
+
+
+
 ## [2.11.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.11.0...@gympass/yoga-doc@2.11.1) (2021-11-16)
 
 **Note:** Version bump only for package @gympass/yoga-doc

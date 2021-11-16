@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.23.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.22.4...@gympass/yoga@7.23.0) (2021-11-16)
+
+
+### Features
+
+* add wrap to cover entire screen ([a09fa01](https://github.com/Gympass/yoga/commit/a09fa010196ca769d914ffd9ace536cbdeea6843))
+* create component bottom sheet notification ([9497afc](https://github.com/Gympass/yoga/commit/9497afcedc4f2d95af1ae78f7268d1fa13362bc9))
+
+
+
+
+
 ## [7.22.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.22.3...@gympass/yoga@7.22.4) (2021-11-12)
 
 
