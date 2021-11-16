@@ -13,6 +13,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 - **doc-native:** add peer dependencies section ([6b3449f](https://github.com/Gympass/yoga/commit/6b3449f2b23dd6eeec726fc002e2cab88c9e5e93))
 
+**Note:** Version bump only for package @gympass/yoga-doc
+
+# [2.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.10.14...@gympass/yoga-doc@2.11.0) (2021-11-12)
+
+### Features
+
+- **doc-native:** add peer dependencies section ([6b3449f](https://github.com/Gympass/yoga/commit/6b3449f2b23dd6eeec726fc002e2cab88c9e5e93))
+
 ## [2.10.14](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.10.13...@gympass/yoga-doc@2.10.14) (2021-11-12)
 
 ### Bug Fixes
