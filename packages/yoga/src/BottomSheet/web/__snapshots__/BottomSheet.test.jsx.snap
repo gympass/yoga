@@ -1,0 +1,234 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BottomSheet /> should match snapshot 1`] = `
+.c10 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c10:not([disabled]):hover,
+.c10:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c10:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c10:active svg {
+  fill: #FFFFFF;
+}
+
+.c10:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c10:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c4 {
+  margin-bottom: 24px;
+  color: #231B22;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.c6 {
+  margin-bottom: 32px;
+  color: #6B6B78;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.c8 {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+.c1 {
+  padding: 16px  16px  16px  16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+}
+
+.c2 {
+  padding: 40px  32px  32px;
+  width: 580px;
+  min-height: 160px;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(35,27,34,0.48);
+}
+
+.c3 {
+  padding: 24px 20px 24px 20px;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  -webkit-align-self: end;
+  -ms-flex-item-align: end;
+  align-self: end;
+  -webkit-animation: content;
+  animation: content;
+  -webkit-animation-duration: 400ms;
+  animation-duration: 400ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.c5 {
+  color: #231B22;
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.c7 {
+  font-weight: 400;
+  color: #6B6B78;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.c9 {
+  margin-left: 0;
+  gap: 16px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+
+<body>
+  <div />
+  <div
+    id="dialog"
+  >
+    <div>
+      <div
+        class="c0"
+      >
+        <section
+          class="c1 c2 c3"
+        >
+          <header
+            class="c4 c5"
+            color="text.primary"
+          >
+            Title
+          </header>
+          <div
+            class="c6 c7"
+            color="text.secondary"
+          >
+            Subtitle
+          </div>
+          <footer
+            class="c8 c9"
+            d="flex"
+          >
+            <button
+              class="c10"
+            >
+              Ok, got it
+            </button>
+          </footer>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+`;

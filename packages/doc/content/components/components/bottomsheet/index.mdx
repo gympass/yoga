@@ -1,0 +1,130 @@
+---
+title: 'BottomSheet'
+metaTitle: 'BottomSheet'
+metaDescription: 'BottomSheet Component'
+---
+
+# BottomSheet
+
+The Bottom sheet component is a variation with the objective of providing maximum priority information for the user.
+
+### Usage
+
+### BottomSheet with one action
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('This is your custom action');
+    handleOnClose();
+  };
+
+  return (
+    <>
+      <Button onClick={handleOpen}>BottomSheet with one action</Button>
+
+      <BottomSheet isOpen={isOpen}>
+        <BottomSheet.Header>We confirm your eligibility</BottomSheet.Header>
+        
+        <BottomSheet.Content>
+          Double check your info and company selection. If it still doesn’t work,
+          contact your HR team.
+        </BottomSheet.Content>
+        
+        <BottomSheet.Footer>
+          <Button onClick={handleOnAction}>Ok, I understand</Button>
+        </BottomSheet.Footer>
+      </BottomSheet>
+    </>
+  );
+});
+```
+### BottomSheet with two actions
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('This is your custom action');
+  };
+
+  return (
+    <>
+      <Button onClick={handleOpen} secondary>BottomSheet with two actions</Button>
+
+      <BottomSheet isOpen={isOpen}>
+        <BottomSheet.Header>We confirm your eligibility</BottomSheet.Header>
+        
+        <BottomSheet.Content>
+          Double check your info and company selection. If it still doesn’t work,
+          contact your HR team.
+        </BottomSheet.Content>
+        
+        <BottomSheet.Footer>
+          <Button onClick={handleOnAction}>Ok, I understand</Button>
+          <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
+        </BottomSheet.Footer>
+      </BottomSheet>
+    </>
+  );
+});
+```
+
+### BottomSheet with only title
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('This is your custom action');
+    handleOnClose();
+  };
+
+  return (
+    <>
+      <Button onClick={handleOpen}>BottomSheet with only title</Button>
+
+      <BottomSheet isOpen={isOpen}>
+        <BottomSheet.Header>We confirm your eligibility</BottomSheet.Header>
+        
+        <BottomSheet.Footer>
+          <Button onClick={handleOnAction}>Ok, I understand</Button>
+          <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
+        </BottomSheet.Footer>
+      </BottomSheet>
+    </>
+  );
+});
+```
+
+### Props
+
+<PropsTable component="BottomSheet" platform="web" />

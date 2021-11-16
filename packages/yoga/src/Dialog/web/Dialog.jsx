@@ -7,7 +7,7 @@ import { Close } from '@gympass/yoga-icons';
 import { usePortal } from '../../hooks';
 import { Button, Card, Box } from '../..';
 
-const StyledDialog = styled(Card)`
+export const StyledDialog = styled(Card)`
   ${({
     onClose,
     theme: {
@@ -16,10 +16,6 @@ const StyledDialog = styled(Card)`
       },
     },
   }) => `
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
   padding: ${onClose ? dialog.padding.withCloseButton : dialog.padding.top}px 
   ${dialog.padding.default}px 
   ${dialog.padding.default}px;
@@ -28,6 +24,9 @@ const StyledDialog = styled(Card)`
   min-height: ${dialog.height.min}px;
   border-radius: ${dialog.border.radius}px;
   `}
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const Overlay = styled.div`
@@ -39,6 +38,7 @@ const Overlay = styled.div`
     },
   }) => `
   display: flex;
+  z-index: 1;
   justify-content: center;
   align-items: center;
 
@@ -52,7 +52,7 @@ const Overlay = styled.div`
   `}
 `;
 
-const Dialog = ({ isOpen, children, onClose }) => {
+const Dialog = ({ isOpen, children, onClose, ...props }) => {
   const dialogRef = useRef(null);
 
   const dialogElement = usePortal('dialog');
@@ -86,7 +86,7 @@ const Dialog = ({ isOpen, children, onClose }) => {
   return isOpen ? (
     createPortal(
       <Overlay onClick={closeDialog} onClose={onClose} ref={dialogRef}>
-        <StyledDialog onClose={onClose}>
+        <StyledDialog onClose={onClose} {...props}>
           {onClose && (
             <Box d="flex" justifyContent="flex-end" w="100%">
               <Button.Icon icon={Close} inverted onClick={onClose} />
@@ -98,7 +98,7 @@ const Dialog = ({ isOpen, children, onClose }) => {
       dialogElement,
     )
   ) : (
-    <> </>
+    <></>
   );
 };
 
