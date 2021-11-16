@@ -13,7 +13,6 @@ const StyledBottomSheet = styled(Dialog)`
     },
   }) => `
     align-items: end;
-    z-index: 10;
 
     ${StyledDialog} {
       padding: ${bottomsheet.padding.top}px ${bottomsheet.padding.right}px ${bottomsheet.padding.bottom}px ${bottomsheet.padding.left}px;
