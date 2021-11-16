@@ -42,7 +42,6 @@ BottomSheet.propTypes = {
   /** Control the dialog visibility. */
   isOpen: bool,
 
-  /** The chidren necessary */
   children: node.isRequired,
 };
 
