@@ -7,7 +7,7 @@ const Header = styled(Dialog.Header)`
       yoga: { lineHeights, spacing, fontSizes, colors },
     },
   }) => `
-    color:${colors.text.primary};
+    color: ${colors.text.primary};
     line-height: ${lineHeights.medium}px;
     text-align: left;
     align-self: flex-start;
