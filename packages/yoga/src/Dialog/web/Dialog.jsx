@@ -39,6 +39,7 @@ const Overlay = styled.div`
     },
   }) => `
   display: flex;
+  z-index: 1;
   justify-content: center;
   align-items: center;
 
@@ -85,13 +86,8 @@ const Dialog = ({ isOpen, children, onClose, ...props }) => {
 
   return isOpen ? (
     createPortal(
-      <Overlay
-        onClick={closeDialog}
-        onClose={onClose}
-        ref={dialogRef}
-        {...props}
-      >
-        <StyledDialog onClose={onClose}>
+      <Overlay onClick={closeDialog} onClose={onClose} ref={dialogRef}>
+        <StyledDialog onClose={onClose} {...props}>
           {onClose && (
             <Box d="flex" justifyContent="flex-end" w="100%">
               <Button.Icon icon={Close} inverted onClick={onClose} />

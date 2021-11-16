@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<BottomSheet /> should match snapshot 1`] = `
-.c11 {
+.c10 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -40,7 +40,7 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   text-decoration: none;
 }
 
-.c11 svg {
+.c10 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -49,31 +49,31 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   transition: fill 0.2s;
 }
 
-.c11:not([disabled]):hover,
-.c11:not([disabled]):focus {
+.c10:not([disabled]):hover,
+.c10:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c11:active {
+.c10:active {
   background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c11:active svg {
+.c10:active svg {
   fill: #FFFFFF;
 }
 
-.c11:disabled {
+.c10:disabled {
   background-color: #F5F5FA;
   color: #D7D7E0;
   cursor: not-allowed;
 }
 
-.c11:disabled svg {
+.c10:disabled svg {
   fill: #D7D7E0;
 }
 
-.c5 {
+.c4 {
   margin-bottom: 24px;
   color: #231B22;
   font-size: 24px;
@@ -81,7 +81,7 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   text-align: center;
 }
 
-.c7 {
+.c6 {
   margin-bottom: 32px;
   color: #6B6B78;
   font-size: 16px;
@@ -89,7 +89,7 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   text-align: center;
 }
 
-.c9 {
+.c8 {
   margin-left: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -98,14 +98,14 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   gap: 24px;
 }
 
-.c2 {
+.c1 {
   padding: 16px  16px  16px  16px;
   border-radius: 8px;
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
-.c4 {
+.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -128,6 +128,7 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  z-index: 1;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -144,26 +145,22 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   background-color: rgba(35,27,34,0.48);
 }
 
-.c1 {
-  -webkit-align-items: end;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: end;
+.c3 {
+  padding: 24px 20px 24px 20px;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  -webkit-align-self: end;
+  -ms-flex-item-align: end;
+  align-self: end;
   -webkit-animation: content;
   animation: content;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 400ms;
+  animation-duration: 400ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
-.c1 .c3 {
-  padding: 24px 20px 24px 20px;
-  width: 100%;
-  border-radius: 16px 16px 0 0;
-}
-
-.c6 {
+.c5 {
   color: #231B22;
   line-height: 24px;
   text-align: left;
@@ -174,7 +171,7 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   margin-bottom: 16px;
 }
 
-.c8 {
+.c7 {
   font-weight: 400;
   color: #6B6B78;
   line-height: 20px;
@@ -186,7 +183,7 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   text-align: left;
 }
 
-.c10 {
+.c9 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -202,29 +199,29 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   >
     <div>
       <div
-        class="c0 c1"
+        class="c0"
       >
         <section
-          class="c2 c3 c4"
+          class="c1 c2 c3"
         >
           <header
-            class="c5 c6"
+            class="c4 c5"
             color="text.primary"
           >
             Title
           </header>
           <div
-            class="c7 c8"
+            class="c6 c7"
             color="text.secondary"
           >
             Subtitle
           </div>
           <footer
-            class="c9 c10"
+            class="c8 c9"
             d="flex"
           >
             <button
-              class="c11"
+              class="c10"
             >
               Ok, got it
             </button>
