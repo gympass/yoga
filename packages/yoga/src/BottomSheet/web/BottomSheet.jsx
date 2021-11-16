@@ -39,7 +39,7 @@ const StyledBottomSheet = styled(Dialog)`
 const BottomSheet = props => <StyledBottomSheet {...props} />;
 
 BottomSheet.propTypes = {
-  /** Control the dialog visibility. */
+  /** Control bottom sheet's visibility. */
   isOpen: bool,
 
   children: node.isRequired,
