@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.23.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.23.0...@gympass/yoga@7.23.1) (2021-11-17)
+
+
+### Bug Fixes
+
+* adjust bottom sheet positioning for safari ([d85d286](https://github.com/Gympass/yoga/commit/d85d286bfd102a996cc1a42a97cd2f25e877f6ff))
+
+
+
+
+
 # [7.23.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.22.4...@gympass/yoga@7.23.0) (2021-11-16)
 
 
