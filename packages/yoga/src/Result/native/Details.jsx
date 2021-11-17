@@ -83,7 +83,7 @@ const ResultDetails = ({
                   <>
                     <Separator />
                     <StyledText variant={variant}>
-                      + {numberOfItemsLeft.toString().padStart(2, '0')}
+                      + {numberOfItemsLeft.toString()}
                       {limitLabel !== '' && ` ${limitLabel}`}
                     </StyledText>
                     <Separator />
@@ -117,7 +117,7 @@ ResultDetails.propTypes = {
 
 ResultDetails.defaultProps = {
   limit: undefined,
-  limitLabel: undefined,
+  limitLabel: '',
   dots: false,
   renderItem: Text.Tiny,
 };
