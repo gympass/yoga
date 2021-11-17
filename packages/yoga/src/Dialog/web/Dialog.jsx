@@ -59,7 +59,7 @@ const Dialog = ({ isOpen, children, onClose, ...props }) => {
 
   const closeDialog = useCallback(
     e => {
-      if (dialogRef.current === e.target && isOpen) {
+      if (dialogRef.current === e.target && isOpen && onClose) {
         onClose(e);
       }
       return true;
@@ -69,7 +69,7 @@ const Dialog = ({ isOpen, children, onClose, ...props }) => {
 
   const keyPress = useCallback(
     e => {
-      if (e.key === 'Escape' && isOpen) {
+      if (e.key === 'Escape' && isOpen && onClose) {
         onClose(e);
       }
       return true;
@@ -109,7 +109,7 @@ Dialog.propTypes = {
   /** Function to close the dialog. */
   onClose: func,
 
-  /** The chidren necessary */
+  /** The children necessary */
   children: node.isRequired,
 };
 
