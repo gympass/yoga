@@ -149,9 +149,9 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   padding: 24px 20px 24px 20px;
   width: 100%;
   border-radius: 16px 16px 0 0;
-  -webkit-align-self: end;
+  -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
-  align-self: end;
+  align-self: flex-end;
   -webkit-animation: content;
   animation: content;
   -webkit-animation-duration: 400ms;
