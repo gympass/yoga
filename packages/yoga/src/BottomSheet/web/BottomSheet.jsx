@@ -15,7 +15,7 @@ const StyledBottomSheet = styled(Dialog)`
   width: ${bottomsheet.width.default}%;
   border-radius: ${bottomsheet.border.radius}px ${bottomsheet.border.radius}px 0 0;
   `}
-  align-self: end;
+  align-self: flex-end;
   animation: content;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
