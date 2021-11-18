@@ -83,8 +83,8 @@ const ResultDetails = ({
                   <>
                     <Separator />
                     <StyledText variant={variant}>
-                      + {numberOfItemsLeft.toString()}
-                      {limitLabel !== '' && ` ${limitLabel}`}
+                      + {numberOfItemsLeft}
+                      {!!limitLabel && ` ${limitLabel}`}
                     </StyledText>
                     <Separator />
                   </>
