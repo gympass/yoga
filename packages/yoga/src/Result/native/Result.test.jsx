@@ -39,7 +39,11 @@ const activitiesList = [
     variant: 'deep',
   },
   {
-    children: '04',
+    children: 'Activity4',
+    variant: 'deep',
+  },
+  {
+    children: 'Activity5',
     variant: 'deep',
   },
 ];
@@ -74,6 +78,33 @@ describe('<Result />', () => {
             limit={3}
             renderItem={Text.Small}
             limitLabel="activities"
+          />
+          <Result.Tags items={tagsList} />
+          <Result.Button>See Details</Result.Button>
+        </Result>
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot without limitLabel prop', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Result
+          rate="5.0"
+          avatar={<Avatar.Circle />}
+          attendances={attendanceList}
+          title="John Doe"
+          subTitle="Activity"
+          divided
+        >
+          <Result.Details items={entranceList} dots renderItem={Text.Small} />
+          <Result.Details
+            items={activitiesList}
+            dots
+            limit={2}
+            renderItem={Text.Small}
           />
           <Result.Tags items={tagsList} />
           <Result.Button>See Details</Result.Button>
