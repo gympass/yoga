@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.23.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.23.1...@gympass/yoga@7.23.2) (2021-11-19)
+
+
+### Bug Fixes
+
+* **result:** changing the limitLabel default props and remove the 0 from numberOfItemsLeft ([e74d197](https://github.com/Gympass/yoga/commit/e74d19766444d3766313cfddc8dfb62f964e6e6f))
+
+
+
+
+
 ## [7.23.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.23.0...@gympass/yoga@7.23.1) (2021-11-17)
 
 
