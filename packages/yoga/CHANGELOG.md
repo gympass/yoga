@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.23.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.23.2...@gympass/yoga@7.23.3) (2021-11-23)
+
+
+### Bug Fixes
+
+* **result:** fix conditional to show additional items in the activities list ([e17a661](https://github.com/Gympass/yoga/commit/e17a66199c7511c938d8bcf4b1245a9b18b10a85))
+
+
+
+
+
 ## [7.23.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.23.1...@gympass/yoga@7.23.2) (2021-11-19)
 
 
