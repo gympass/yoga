@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.23.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.23.3...@gympass/yoga@7.23.4) (2021-11-24)
+
+
+### Bug Fixes
+
+* **yoga-native:** update imports in order to avoid dependency cycle ([ec2947a](https://github.com/Gympass/yoga/commit/ec2947a0af13d5fb76b15b2c265e37d8b1d9ad5b))
+
+
+
+
+
 ## [7.23.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.23.2...@gympass/yoga@7.23.3) (2021-11-23)
 
 
