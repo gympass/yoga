@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { func, arrayOf, string, shape, oneOfType, number } from 'prop-types';
 import { Picker } from '@react-native-picker/picker';
-import { Button } from '../..';
+import Button from '../../Button';
 
 const PickerStyled = styled(Picker)`
   width: 100%;

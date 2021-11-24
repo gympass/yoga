@@ -8,7 +8,7 @@ import {
   Modal,
 } from 'react-native';
 
-import { Text } from '../..';
+import Text from '../../Text';
 
 const ClosableArea = styled(Animated.View)`
   ${({
