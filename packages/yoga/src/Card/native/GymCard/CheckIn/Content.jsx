@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Card } from '../..';
+import Card from '../../Card';
 
 const Content = styled(Card.Content)`
   ${({
