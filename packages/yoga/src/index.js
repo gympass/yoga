@@ -27,6 +27,7 @@ import Snackbar from './Snackbar';
 import Avatar from './Avatar';
 import BottomSheet from './BottomSheet';
 import Dialog from './Dialog';
+import Divider from './Divider';
 
 export {
   ThemeProvider,
@@ -62,4 +63,5 @@ export {
   Avatar,
   BottomSheet,
   Dialog,
+  Divider,
 };

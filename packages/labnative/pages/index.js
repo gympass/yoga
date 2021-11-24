@@ -19,6 +19,7 @@ import Chips from './Chips';
 import Box from './Box';
 import Avatar from './Avatar';
 import Result from './Result';
+import Divider from './Divider';
 
 export {
   Button,
@@ -42,4 +43,5 @@ export {
   Box,
   Avatar,
   Result,
+  Divider,
 };
