@@ -58,7 +58,7 @@ const ListItem = withTheme(
               {isValidElement(icon) ? (
                 icon
               ) : (
-                <Icon as={icon} size="small" fill={variant} />
+                <Icon as={icon} size="small" fill={variant || 'text.primary'} />
               )}
             </IconWrapper>
           )}
