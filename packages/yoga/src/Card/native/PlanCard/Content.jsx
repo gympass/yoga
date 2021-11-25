@@ -7,7 +7,7 @@ import Text from '../../../Text';
 import theme from '../../../Theme/helpers/themeReader';
 import Subtitle from './Subtitle';
 
-const Title = styled(Text.H5)`
+const Title = styled(Text.H4)`
   ${props => {
     const {
       components: {
@@ -76,7 +76,7 @@ const PlanCardContent = ({
           <Text.Small>{currency}</Text.Small>
         </Currency>
       )}
-      {price && <Text.H3>{price}</Text.H3>}
+      {price && <Text.H4>{price}</Text.H4>}
       {period && (
         <EnhancePrice align="flex-end">
           <Text.Small>{`${suffix || ''}${period}`}</Text.Small>

@@ -35,8 +35,12 @@ const ButtonText = styled(Text.Medium)`
   color: ${plan.list.button.font.color};
 `;
 
+const ItemText = styled(Text.Small)`
+  color: ${({ color }) => color || plan.list.item.font.color};
+`;
+
 const ListItem = withTheme(
-  ({ text, icon, buttonProps: { children, ...buttonProps } }) => (
+  ({ text, color, icon, buttonProps: { children, ...buttonProps } }) => (
     <Item>
       <Wrapper>
         {icon && (
@@ -44,11 +48,11 @@ const ListItem = withTheme(
             {isValidElement(icon) ? (
               icon
             ) : (
-              <Icon as={icon} size="small" fill="text.primary" />
+              <Icon as={icon} size="small" fill={color} />
             )}
           </IconWrapper>
         )}
-        <Text.Small>{text}</Text.Small>
+        <ItemText color={color}>{text}</ItemText>
       </Wrapper>
       {Boolean(Object.keys(buttonProps).length) && (
         <TouchableWithoutFeedback {...buttonProps}>
@@ -72,11 +76,13 @@ ListItem.propTypes = {
   /** if provided displays a button below the item text. It accepts all button
    * element props */
   buttonProps: shape({}),
+  color: string,
 };
 
 ListItem.defaultProps = {
   icon: undefined,
   buttonProps: {},
+  color: undefined,
 };
 
 export { List, ListItem };

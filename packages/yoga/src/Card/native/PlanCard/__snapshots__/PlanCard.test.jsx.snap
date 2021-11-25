@@ -173,9 +173,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 20,
+                "fontSize": 24,
                 "fontWeight": "500",
-                "lineHeight": 28,
+                "lineHeight": 32,
                 "marginBottom": 4,
               },
             ]
@@ -227,9 +227,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 Object {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
-                  "fontSize": 32,
+                  "fontSize": 24,
                   "fontWeight": "500",
-                  "lineHeight": 40,
+                  "lineHeight": 32,
                 },
               ]
             }
@@ -446,7 +446,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 <RNSVGSvgView
                   bbHeight={16}
                   bbWidth={16}
-                  fill="#231B22"
                   focusable={false}
                   height={16}
                   style={
@@ -477,7 +476,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                     fill={
                       Array [
                         0,
-                        4280490786,
+                        4278190080,
                       ]
                     }
                     fillOpacity={1}
@@ -496,11 +495,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                     opacity={1}
                     originX={0}
                     originY={0}
-                    propList={
-                      Array [
-                        "fill",
-                      ]
-                    }
+                    propList={Array []}
                     rotation={0}
                     scaleX={1}
                     scaleY={1}
@@ -748,9 +743,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 20,
+                "fontSize": 24,
                 "fontWeight": "500",
-                "lineHeight": 28,
+                "lineHeight": 32,
                 "marginBottom": 4,
               },
             ]
@@ -802,9 +797,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
                 Object {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
-                  "fontSize": 32,
+                  "fontSize": 24,
                   "fontWeight": "500",
-                  "lineHeight": 40,
+                  "lineHeight": 32,
                 },
               ]
             }
@@ -956,9 +951,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 20,
+                "fontSize": 24,
                 "fontWeight": "500",
-                "lineHeight": 28,
+                "lineHeight": 32,
                 "marginBottom": 4,
               },
             ]
@@ -1010,9 +1005,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
                 Object {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
-                  "fontSize": 32,
+                  "fontSize": 24,
                   "fontWeight": "500",
-                  "lineHeight": 40,
+                  "lineHeight": 32,
                 },
               ]
             }
