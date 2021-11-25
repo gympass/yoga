@@ -2,6 +2,7 @@ import React, { isValidElement } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { TouchableWithoutFeedback } from 'react-native';
 import { string, node, shape, oneOfType, func } from 'prop-types';
+import get from 'lodash.get';
 
 import Text from '../../../Text';
 import Icon from '../../../Icon';
@@ -40,29 +41,39 @@ const ItemText = styled(Text.Small)`
 `;
 
 const ListItem = withTheme(
-  ({ text, color, icon, buttonProps: { children, ...buttonProps } }) => (
-    <Item>
-      <Wrapper>
-        {icon && (
-          <IconWrapper>
-            {isValidElement(icon) ? (
-              icon
-            ) : (
-              <Icon as={icon} size="small" fill={color} />
-            )}
-          </IconWrapper>
+  ({
+    text,
+    variant,
+    theme: yogaTheme,
+    icon,
+    buttonProps: { children, ...buttonProps },
+  }) => {
+    const itemColor = get(yogaTheme.yoga.colors, variant);
+
+    return (
+      <Item>
+        <Wrapper>
+          {icon && (
+            <IconWrapper>
+              {isValidElement(icon) ? (
+                icon
+              ) : (
+                <Icon as={icon} size="small" fill={variant} />
+              )}
+            </IconWrapper>
+          )}
+          <ItemText color={itemColor}>{text}</ItemText>
+        </Wrapper>
+        {Boolean(Object.keys(buttonProps).length) && (
+          <TouchableWithoutFeedback {...buttonProps}>
+            <Button>
+              <ButtonText>{children}</ButtonText>
+            </Button>
+          </TouchableWithoutFeedback>
         )}
-        <ItemText color={color}>{text}</ItemText>
-      </Wrapper>
-      {Boolean(Object.keys(buttonProps).length) && (
-        <TouchableWithoutFeedback {...buttonProps}>
-          <Button>
-            <ButtonText>{children}</ButtonText>
-          </Button>
-        </TouchableWithoutFeedback>
-      )}
-    </Item>
-  ),
+      </Item>
+    );
+  },
 );
 
 List.displayName = 'PlanCard.List';
@@ -76,13 +87,13 @@ ListItem.propTypes = {
   /** if provided displays a button below the item text. It accepts all button
    * element props */
   buttonProps: shape({}),
-  color: string,
+  variant: string,
 };
 
 ListItem.defaultProps = {
   icon: undefined,
   buttonProps: {},
-  color: undefined,
+  variant: undefined,
 };
 
 export { List, ListItem };

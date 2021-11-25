@@ -108,7 +108,7 @@ const CardPage = () => {
             <PlanCard.Subtitle>Get access to</PlanCard.Subtitle>
             <PlanCard.List>
               <PlanCard.ListItem
-                color="#6B6B78"
+                variant="light"
                 icon={MapPin}
                 text="2.900 gyms and studios"
               />
