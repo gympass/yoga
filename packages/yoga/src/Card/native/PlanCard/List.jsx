@@ -87,6 +87,9 @@ ListItem.propTypes = {
   /** if provided displays a button below the item text. It accepts all button
    * element props */
   buttonProps: shape({}),
+  /** if provided a color variant, like "vibin", "hope", "energy" the icon and
+   * the item text will be rendered on this color.
+   */
   variant: string,
 };
 
