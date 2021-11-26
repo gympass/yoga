@@ -5,7 +5,11 @@ The Divider component is used to divide two parts.
 ### Usage
 
 ```javascript
-  <Divider />
+  <Box flex={1} display="flex" flexDirection="column" minHeight={50}>
+    <Text.Regular>First Content</Text.Regular>
+    <Divider />
+    <Text.Regular>Second Content</Text.Regular>
+  </Box>
 ```
 
 ### Props

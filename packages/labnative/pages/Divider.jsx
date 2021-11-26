@@ -1,11 +1,17 @@
 import React from 'react';
-import { View } from 'react-native';
-import { Divider } from '@gympass/yoga';
+import { Divider, Text, Box } from '@gympass/yoga';
 
 const DividerPage = () => (
-  <View style={{ marginTop: 100 }}>
+  <Box
+    display="flex"
+    flexDirection="column"
+    minWidth={300}
+    justifyContent="space-between"
+  >
+    <Text.H4>First Content</Text.H4>
     <Divider />
-  </View>
+    <Text.H4>Second Content</Text.H4>
+  </Box>
 );
 
 export default DividerPage;

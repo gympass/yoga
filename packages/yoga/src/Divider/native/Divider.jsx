@@ -1,33 +1,37 @@
+import { bool } from 'prop-types';
 import React from 'react';
-import styled, { css } from 'styled-components';
-import theme from '../../Theme/helpers/themeReader';
+import styled, { css, withTheme } from 'styled-components';
+// ${vertical ? 'height: 100%' : 'width: 100%'};
 
 const StyledDivider = styled.View`
-  ${props => {
-    const { borders, colors } = theme(props);
-
+  ${({
+    theme: {
+      yoga: { borders, colors },
+    },
+    vertical,
+  }) => {
     return css`
-      height: ${borders.small};
-      width: 100%;
-      background-color: ${colors.light};
+      ${vertical ? 'height: auto' : 'width: auto'};
+      ${vertical
+        ? `border-left-width: ${borders.small}`
+        : `border-bottom-width: ${borders.small}`};
+
+      border-color: ${colors.text.disabled};
     `;
   }}
 `;
 
-const DividerContainer = styled.View`
-  flex-direction: row;
-`;
-
 const Divider = props => {
-  return (
-    <DividerContainer>
-      <StyledDivider {...props} />
-    </DividerContainer>
-  );
+  return <StyledDivider {...props} />;
 };
 
-Divider.propTypes = {};
+Divider.propTypes = {
+  /** If this value is defined, the divider will be in vertical when the flexDirection is row type */
+  vertical: bool,
+};
 
-Divider.defaultProps = {};
+Divider.defaultProps = {
+  vertical: false,
+};
 
-export default Divider;
+export default withTheme(Divider);

@@ -1,15 +1,20 @@
+import { bool } from 'prop-types';
 import React from 'react';
-import styled, { css } from 'styled-components';
-import theme from '../../Theme/helpers/themeReader';
+import styled, { css, withTheme } from 'styled-components';
 
-const StyledDivider = styled.div`
-  ${props => {
-    const { borders, colors } = theme(props);
-
+const StyledDivider = styled.hr`
+  ${({
+    vertical,
+    theme: {
+      yoga: { borders, colors },
+    },
+  }) => {
     return css`
-      flex: 1;
-      height: ${borders.small}px;
-      background-color: ${colors.light};
+      ${vertical ? 'height: auto' : 'width: 100%'};
+      border-width: 0px;
+      border-left-width: ${vertical ? borders.small : 0}px;
+      border-bottom-width: ${vertical ? 0 : borders.small}px;
+      border-color: ${colors.text.disabled};
     `;
   }}
 `;
@@ -18,8 +23,13 @@ const Divider = props => {
   return <StyledDivider {...props} />;
 };
 
-Divider.propTypes = {};
+Divider.propTypes = {
+  /** If this value is defined, the divider will be in vertical if the flexDirection is row type */
+  vertical: bool,
+};
 
-Divider.defaultProps = {};
+Divider.defaultProps = {
+  vertical: false,
+};
 
-export default Divider;
+export default withTheme(Divider);
