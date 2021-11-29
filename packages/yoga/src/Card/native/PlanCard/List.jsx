@@ -50,6 +50,14 @@ const ListItem = withTheme(
   }) => {
     const itemColor = get(yogaTheme.yoga.colors, variant);
 
+    if (variant && !itemColor)
+      // eslint-disable-next-line no-console
+      console.warn(
+        `Invalid token ${variant}, you can use ${JSON.stringify(
+          Object.keys(yogaTheme.yoga.colors),
+        )}`,
+      );
+
     return (
       <Item>
         <Wrapper>
