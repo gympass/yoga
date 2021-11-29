@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.23.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.23.4...@gympass/yoga@7.23.5) (2021-11-29)
+
+
+### Bug Fixes
+
+* **dropdown-native:** options require cycle in android ([fbdcf60](https://github.com/Gympass/yoga/commit/fbdcf608d3152f4d098bcec5f45492fd28183123))
+
+
+
+
+
 ## [7.23.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.23.3...@gympass/yoga@7.23.4) (2021-11-24)
 
 
