@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { func, arrayOf, string, shape, number, oneOfType } from 'prop-types';
 import { TouchableWithoutFeedback } from 'react-native';
-import { Text, List } from '../..';
+import Text from '../../Text';
+import List from '../../List';
 
 const Option = styled(List.Item)`
   ${({
