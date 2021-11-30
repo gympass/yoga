@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.9.1...@gympass/yoga-labnative@1.10.0) (2021-11-30)
+
+
+### Features
+
+* **component:** a Divider component to separate two parts of another component ([dc810e7](https://github.com/Gympass/yoga/commit/dc810e72386033e15ea3578c7327c2cf1ab1368d))
+* **component:** adjusted some troubles and create the vertical variant to divider ([ad3a473](https://github.com/Gympass/yoga/commit/ad3a473d1fb9ef9a3bd24cef7f124d69a1b2d5ee))
+
+
+
+
+
 ## [1.9.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.9.0...@gympass/yoga-labnative@1.9.1) (2021-11-29)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
