@@ -2,6 +2,7 @@ import React, { isValidElement } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { TouchableWithoutFeedback } from 'react-native';
 import { string, node, shape, oneOfType, func } from 'prop-types';
+import get from 'lodash.get';
 
 import Text from '../../../Text';
 import Icon from '../../../Icon';
@@ -35,30 +36,52 @@ const ButtonText = styled(Text.Medium)`
   color: ${plan.list.button.font.color};
 `;
 
+const ItemText = styled(Text.Small)`
+  color: ${({ color }) => color || plan.list.item.font.color};
+`;
+
 const ListItem = withTheme(
-  ({ text, icon, buttonProps: { children, ...buttonProps } }) => (
-    <Item>
-      <Wrapper>
-        {icon && (
-          <IconWrapper>
-            {isValidElement(icon) ? (
-              icon
-            ) : (
-              <Icon as={icon} size="small" fill="text.primary" />
-            )}
-          </IconWrapper>
+  ({
+    text,
+    variant,
+    theme: yogaTheme,
+    icon,
+    buttonProps: { children, ...buttonProps },
+  }) => {
+    const itemColor = get(yogaTheme.yoga.colors, variant);
+
+    if (variant && !itemColor)
+      // eslint-disable-next-line no-console
+      console.warn(
+        `Invalid token ${variant}, you can use ${JSON.stringify(
+          Object.keys(yogaTheme.yoga.colors),
+        )}`,
+      );
+
+    return (
+      <Item>
+        <Wrapper>
+          {icon && (
+            <IconWrapper>
+              {isValidElement(icon) ? (
+                icon
+              ) : (
+                <Icon as={icon} size="small" fill={variant || 'text.primary'} />
+              )}
+            </IconWrapper>
+          )}
+          <ItemText color={itemColor}>{text}</ItemText>
+        </Wrapper>
+        {Boolean(Object.keys(buttonProps).length) && (
+          <TouchableWithoutFeedback {...buttonProps}>
+            <Button>
+              <ButtonText>{children}</ButtonText>
+            </Button>
+          </TouchableWithoutFeedback>
         )}
-        <Text.Small>{text}</Text.Small>
-      </Wrapper>
-      {Boolean(Object.keys(buttonProps).length) && (
-        <TouchableWithoutFeedback {...buttonProps}>
-          <Button>
-            <ButtonText>{children}</ButtonText>
-          </Button>
-        </TouchableWithoutFeedback>
-      )}
-    </Item>
-  ),
+      </Item>
+    );
+  },
 );
 
 List.displayName = 'PlanCard.List';
@@ -72,11 +95,16 @@ ListItem.propTypes = {
   /** if provided displays a button below the item text. It accepts all button
    * element props */
   buttonProps: shape({}),
+  /** if provided a color variant, like "vibin", "hope", "energy" the icon and
+   * the item text will be rendered on this color.
+   */
+  variant: string,
 };
 
 ListItem.defaultProps = {
   icon: undefined,
   buttonProps: {},
+  variant: undefined,
 };
 
 export { List, ListItem };

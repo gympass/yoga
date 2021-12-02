@@ -173,9 +173,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 20,
+                "fontSize": 24,
                 "fontWeight": "500",
-                "lineHeight": 28,
+                "lineHeight": 32,
                 "marginBottom": 4,
               },
             ]
@@ -227,9 +227,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 Object {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
-                  "fontSize": 32,
+                  "fontSize": 24,
                   "fontWeight": "500",
-                  "lineHeight": 40,
+                  "lineHeight": 32,
                 },
               ]
             }
@@ -748,9 +748,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 20,
+                "fontSize": 24,
                 "fontWeight": "500",
-                "lineHeight": 28,
+                "lineHeight": 32,
                 "marginBottom": 4,
               },
             ]
@@ -802,9 +802,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
                 Object {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
-                  "fontSize": 32,
+                  "fontSize": 24,
                   "fontWeight": "500",
-                  "lineHeight": 40,
+                  "lineHeight": 32,
                 },
               ]
             }
@@ -956,9 +956,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 20,
+                "fontSize": 24,
                 "fontWeight": "500",
-                "lineHeight": 28,
+                "lineHeight": 32,
                 "marginBottom": 4,
               },
             ]
@@ -1010,9 +1010,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
                 Object {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
-                  "fontSize": 32,
+                  "fontSize": 24,
                   "fontWeight": "500",
-                  "lineHeight": 40,
+                  "lineHeight": 32,
                 },
               ]
             }
