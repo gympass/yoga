@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.25.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.24.0...@gympass/yoga@7.25.0) (2021-12-02)
+
+
+### Features
+
+* **component:** changed the design of App PlanCard to new layout ([05479a0](https://github.com/Gympass/yoga/commit/05479a001907cfbbb133e27272aba3837587704e))
+
+
+
+
+
 # [7.24.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.23.5...@gympass/yoga@7.24.0) (2021-11-30)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.10.0...@gympass/yoga-labnative@1.11.0) (2021-12-02)
+
+
+### Features
+
+* **component:** changed the design of App PlanCard to new layout ([05479a0](https://github.com/Gympass/yoga/commit/05479a001907cfbbb133e27272aba3837587704e))
+
+
+
+
+
 # [1.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-labnative@1.9.1...@gympass/yoga-labnative@1.10.0) (2021-11-30)
 
 
