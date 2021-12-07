@@ -116,7 +116,7 @@ const Label = styled.Text`
  * of quantity.  The use of labels numeric or alphabetic can increase the user
  * understanding. */
 const Progress = ({ label, max, value, variant, ...props }) => {
-  const isNumber = !isNaN(label.value);
+  const isNumber = !/[a-zA-Z]/g.test(label.value);
   const align = label.placement || 'left';
 
   return (
