@@ -45,9 +45,6 @@ const Card = ({
     },
     title: {
       color: colors.text.primary,
-      margin: {
-        bottom: spacing.xxxsmall,
-      },
     },
     description: {
       color: colors.text.secondary,
@@ -60,24 +57,15 @@ const Card = ({
       },
       margin: {
         top: spacing.small,
-        bottom: spacing.xlarge,
       },
     },
     list: {
-      margin: {
-        top: spacing.small,
-      },
       item: {
         margin: {
           bottom: spacing.small,
         },
         font: {
           color: colors.text.primary,
-        },
-        icon: {
-          margin: {
-            right: spacing.xsmall,
-          },
         },
       },
       button: {
@@ -94,12 +82,8 @@ const Card = ({
     actions: {
       buttonText: {
         margin: {
-          top: spacing.xsmall,
           bottom: spacing.zero,
         },
-      },
-      margin: {
-        top: spacing.xlarge,
       },
     },
   },

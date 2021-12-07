@@ -10,14 +10,13 @@ import Subtitle from './Subtitle';
 const Title = styled(Text.H4)`
   ${props => {
     const {
-      components: {
-        card: { plan },
-      },
+      components: { cardnative, card },
     } = theme(props);
 
     return css`
-      color: ${plan.title.color};
-      margin-bottom: ${plan.title.margin.bottom}px;
+      color: ${card.plan.title.color};
+      margin-top: ${cardnative.plan.title.margin.top}px;
+      margin-bottom: ${cardnative.plan.title.margin.bottom}px;
     `;
   }}
 `;
@@ -34,12 +33,11 @@ const Price = styled.View`
   ${props => {
     const {
       components: {
-        card: { plan },
+        cardnative: { plan },
       },
     } = theme(props);
 
     return css`
-      margin-top: ${plan.price.margin.top}px;
       margin-bottom: ${plan.price.margin.bottom}px;
     `;
   }}
