@@ -8,14 +8,14 @@ import Text from '../../../Text';
 import Icon from '../../../Icon';
 import theme from '../../../Theme/helpers/themeReader';
 
-const { plan } = theme.components.card;
+const { card, cardnative } = theme.components;
 
 const List = styled.View`
-  margin-top: ${plan.list.margin.top}px;
+  margin-top: ${cardnative.plan.list.margin.top}px;
 `;
 
 const Item = styled.View`
-  margin-bottom: ${plan.list.item.margin.bottom}px;
+  margin-bottom: ${card.plan.list.item.margin.bottom}px;
 `;
 
 const Wrapper = styled.View`
@@ -24,20 +24,20 @@ const Wrapper = styled.View`
 `;
 
 const IconWrapper = styled.View`
-  margin-right: ${plan.list.item.icon.margin.right}px;
+  margin-right: ${cardnative.plan.list.item.icon.margin.right}px;
 `;
 
 const Button = styled.View`
-  margin-top: ${plan.list.button.margin.top}px;
+  margin-top: ${card.plan.list.button.margin.top}px;
 `;
 
 const ButtonText = styled(Text.Medium)`
-  font-size: ${plan.list.button.font.size}px;
-  color: ${plan.list.button.font.color};
+  font-size: ${card.plan.list.button.font.size}px;
+  color: ${card.plan.list.button.font.color};
 `;
 
 const ItemText = styled(Text.Small)`
-  color: ${({ color }) => color || plan.list.item.font.color};
+  color: ${({ color }) => color || card.plan.list.item.font.color};
 `;
 
 const ListItem = withTheme(

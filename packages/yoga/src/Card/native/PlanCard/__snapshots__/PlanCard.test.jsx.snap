@@ -60,7 +60,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             "paddingBottom": 32,
             "paddingLeft": 20,
             "paddingRight": 20,
-            "paddingTop": 64,
+            "paddingTop": 56,
             "position": "relative",
             "width": "100%",
           },
@@ -176,7 +176,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 "fontSize": 24,
                 "fontWeight": "500",
                 "lineHeight": 32,
-                "marginBottom": 4,
+                "marginBottom": 12,
+                "marginTop": 12,
               },
             ]
           }
@@ -188,8 +189,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             Array [
               Object {
                 "flexDirection": "row",
-                "marginBottom": 32,
-                "marginTop": 16,
+                "marginBottom": 12,
               },
             ]
           }
@@ -283,7 +283,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           style={
             Array [
               Object {
-                "marginTop": 16,
+                "marginTop": 0,
               },
             ]
           }
@@ -311,7 +311,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 style={
                   Array [
                     Object {
-                      "marginRight": 12,
+                      "marginRight": 8,
                     },
                   ]
                 }
@@ -438,7 +438,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 style={
                   Array [
                     Object {
-                      "marginRight": 12,
+                      "marginRight": 8,
                     },
                   ]
                 }
@@ -569,7 +569,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         style={
           Array [
             Object {
-              "marginTop": 32,
+              "marginTop": 16,
             },
           ]
         }
@@ -696,7 +696,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
             "paddingBottom": 32,
             "paddingLeft": 20,
             "paddingRight": 20,
-            "paddingTop": 64,
+            "paddingTop": 56,
             "position": "relative",
             "width": "100%",
           },
@@ -751,7 +751,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
                 "fontSize": 24,
                 "fontWeight": "500",
                 "lineHeight": 32,
-                "marginBottom": 4,
+                "marginBottom": 12,
+                "marginTop": 12,
               },
             ]
           }
@@ -763,8 +764,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
             Array [
               Object {
                 "flexDirection": "row",
-                "marginBottom": 32,
-                "marginTop": 16,
+                "marginBottom": 12,
               },
             ]
           }
@@ -904,7 +904,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
             "paddingBottom": 32,
             "paddingLeft": 20,
             "paddingRight": 20,
-            "paddingTop": 64,
+            "paddingTop": 56,
             "position": "relative",
             "width": "100%",
           },
@@ -959,7 +959,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
                 "fontSize": 24,
                 "fontWeight": "500",
                 "lineHeight": 32,
-                "marginBottom": 4,
+                "marginBottom": 12,
+                "marginTop": 12,
               },
             ]
           }
@@ -971,8 +972,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
             Array [
               Object {
                 "flexDirection": "row",
-                "marginBottom": 32,
-                "marginTop": 16,
+                "marginBottom": 12,
               },
             ]
           }

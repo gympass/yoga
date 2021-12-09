@@ -459,11 +459,7 @@ exports[`<Divider /> should create a divider component 1`] = `
                     "buttonText": Object {
                       "margin": Object {
                         "bottom": 0,
-                        "top": 12,
                       },
-                    },
-                    "margin": Object {
-                      "top": 32,
                     },
                   },
                   "description": Object {
@@ -484,17 +480,9 @@ exports[`<Divider /> should create a divider component 1`] = `
                       "font": Object {
                         "color": "#231B22",
                       },
-                      "icon": Object {
-                        "margin": Object {
-                          "right": 12,
-                        },
-                      },
                       "margin": Object {
                         "bottom": 16,
                       },
-                    },
-                    "margin": Object {
-                      "top": 16,
                     },
                   },
                   "padding": Object {
@@ -510,7 +498,6 @@ exports[`<Divider /> should create a divider component 1`] = `
                       },
                     },
                     "margin": Object {
-                      "bottom": 32,
                       "top": 16,
                     },
                   },
@@ -533,14 +520,87 @@ exports[`<Divider /> should create a divider component 1`] = `
                   },
                   "title": Object {
                     "color": "#231B22",
-                    "margin": Object {
-                      "bottom": 4,
-                    },
                   },
                 },
                 "radii": 8,
                 "ribbon": Object {
                   "radius": 9999,
+                },
+              },
+              "cardnative": Object {
+                "plan": Object {
+                  "actions": Object {
+                    "buttonText": Object {
+                      "margin": Object {
+                        "top": 20,
+                      },
+                    },
+                    "margin": Object {
+                      "top": 16,
+                    },
+                  },
+                  "description": Object {
+                    "color": "#6B6B78",
+                  },
+                  "list": Object {
+                    "item": Object {
+                      "icon": Object {
+                        "margin": Object {
+                          "right": 8,
+                        },
+                      },
+                    },
+                    "margin": Object {
+                      "top": 0,
+                    },
+                  },
+                  "price": Object {
+                    "margin": Object {
+                      "bottom": 12,
+                    },
+                  },
+                  "title": Object {
+                    "margin": Object {
+                      "bottom": 12,
+                      "top": 12,
+                    },
+                  },
+                },
+              },
+              "cardweb": Object {
+                "plan": Object {
+                  "actions": Object {
+                    "buttonText": Object {
+                      "margin": Object {
+                        "top": 12,
+                      },
+                    },
+                    "margin": Object {
+                      "top": 32,
+                    },
+                  },
+                  "list": Object {
+                    "item": Object {
+                      "icon": Object {
+                        "margin": Object {
+                          "right": 12,
+                        },
+                      },
+                    },
+                    "margin": Object {
+                      "top": 16,
+                    },
+                  },
+                  "price": Object {
+                    "margin": Object {
+                      "bottom": 32,
+                    },
+                  },
+                  "title": Object {
+                    "margin": Object {
+                      "bottom": 4,
+                    },
+                  },
                 },
               },
               "checkbox": Object {
@@ -1870,11 +1930,7 @@ exports[`<Divider /> should create vertical divider component 1`] = `
                     "buttonText": Object {
                       "margin": Object {
                         "bottom": 0,
-                        "top": 12,
                       },
-                    },
-                    "margin": Object {
-                      "top": 32,
                     },
                   },
                   "description": Object {
@@ -1895,17 +1951,9 @@ exports[`<Divider /> should create vertical divider component 1`] = `
                       "font": Object {
                         "color": "#231B22",
                       },
-                      "icon": Object {
-                        "margin": Object {
-                          "right": 12,
-                        },
-                      },
                       "margin": Object {
                         "bottom": 16,
                       },
-                    },
-                    "margin": Object {
-                      "top": 16,
                     },
                   },
                   "padding": Object {
@@ -1921,7 +1969,6 @@ exports[`<Divider /> should create vertical divider component 1`] = `
                       },
                     },
                     "margin": Object {
-                      "bottom": 32,
                       "top": 16,
                     },
                   },
@@ -1944,14 +1991,87 @@ exports[`<Divider /> should create vertical divider component 1`] = `
                   },
                   "title": Object {
                     "color": "#231B22",
-                    "margin": Object {
-                      "bottom": 4,
-                    },
                   },
                 },
                 "radii": 8,
                 "ribbon": Object {
                   "radius": 9999,
+                },
+              },
+              "cardnative": Object {
+                "plan": Object {
+                  "actions": Object {
+                    "buttonText": Object {
+                      "margin": Object {
+                        "top": 20,
+                      },
+                    },
+                    "margin": Object {
+                      "top": 16,
+                    },
+                  },
+                  "description": Object {
+                    "color": "#6B6B78",
+                  },
+                  "list": Object {
+                    "item": Object {
+                      "icon": Object {
+                        "margin": Object {
+                          "right": 8,
+                        },
+                      },
+                    },
+                    "margin": Object {
+                      "top": 0,
+                    },
+                  },
+                  "price": Object {
+                    "margin": Object {
+                      "bottom": 12,
+                    },
+                  },
+                  "title": Object {
+                    "margin": Object {
+                      "bottom": 12,
+                      "top": 12,
+                    },
+                  },
+                },
+              },
+              "cardweb": Object {
+                "plan": Object {
+                  "actions": Object {
+                    "buttonText": Object {
+                      "margin": Object {
+                        "top": 12,
+                      },
+                    },
+                    "margin": Object {
+                      "top": 32,
+                    },
+                  },
+                  "list": Object {
+                    "item": Object {
+                      "icon": Object {
+                        "margin": Object {
+                          "right": 12,
+                        },
+                      },
+                    },
+                    "margin": Object {
+                      "top": 16,
+                    },
+                  },
+                  "price": Object {
+                    "margin": Object {
+                      "bottom": 32,
+                    },
+                  },
+                  "title": Object {
+                    "margin": Object {
+                      "bottom": 4,
+                    },
+                  },
                 },
               },
               "checkbox": Object {

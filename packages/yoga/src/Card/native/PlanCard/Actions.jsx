@@ -5,11 +5,7 @@ import Button from '../../../Button';
 import theme from '../../../Theme/helpers/themeReader';
 
 const {
-  components: {
-    card: {
-      plan: { actions },
-    },
-  },
+  components: { cardnative, card },
 } = theme;
 
 const PlanCardButton = styled(Button).attrs({
@@ -21,12 +17,12 @@ const PlanCardButtonText = styled(Button.Text).attrs({
   small: true,
   full: true,
 })`
-  margin-top: ${actions.buttonText.margin.top}px;
-  margin-bottom: ${actions.buttonText.margin.bottom}px;
+  margin-top: ${cardnative.plan.actions.buttonText.margin.top}px;
+  margin-bottom: ${card.plan.actions.buttonText.margin.bottom}px;
 `;
 
 const PlanCardActions = styled(Actions)`
-  margin-top: ${actions.margin.top}px;
+  margin-top: ${cardnative.plan.actions.margin.top}px;
 `;
 
 PlanCardActions.displayName = 'PlanCard.Actions';
