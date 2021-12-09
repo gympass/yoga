@@ -138,7 +138,7 @@ Wrapper.defaultProps = {
  * of quantity. The use of labels numeric or alphabetic can increase the user
  * understanding. */
 const Progress = ({ label, max, value, variant, ...props }) => {
-  const isNumber = !isNaN(label.value);
+  const isNumber = !/[a-zA-Z]/g.test(label.value);
 
   return (
     <Wrapper isNumber={isNumber} align={label.placement} {...props}>
