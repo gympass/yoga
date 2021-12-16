@@ -77,9 +77,6 @@ const Selector = styled.div`
             ${
               error && !isOpen
                 ? `border-color: ${colors.feedback.attention[1]};
-                label {
-                  color:${colors.feedback.attention[1]}; 
-                };
                 `
                 : ''
             }

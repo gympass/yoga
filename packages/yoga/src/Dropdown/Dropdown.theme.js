@@ -26,7 +26,6 @@ const Dropdown = ({
   },
   arrow: {
     fill: colors.text.secondary,
-    error: colors.verve,
   },
   input: {
     font: {

@@ -728,7 +728,6 @@ exports[`<Divider /> should create a divider component 1`] = `
               "divider": Object {},
               "dropdown": Object {
                 "arrow": Object {
-                  "error": "#FF874C",
                   "fill": "#6B6B78",
                 },
                 "backdrop": Object {
@@ -2201,7 +2200,6 @@ exports[`<Divider /> should create vertical divider component 1`] = `
               "divider": Object {},
               "dropdown": Object {
                 "arrow": Object {
-                  "error": "#FF874C",
                   "fill": "#6B6B78",
                 },
                 "backdrop": Object {
