@@ -251,7 +251,6 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
     isOpen,
     selected,
     disabled,
-    error,
     theme: {
       yoga: {
         components: { dropdown },
@@ -261,7 +260,6 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
     fill: ${dropdown.arrow.fill};
     ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
     ${selected && !disabled ? `fill: ${dropdown.selected.arrow.fill};` : ''};
-    ${error && !disabled && !isOpen ? `fill: ${dropdown.arrow.error} ;` : ''};
     transform: rotate(${isOpen ? '180deg' : '0'});
   `}
 `;
@@ -320,7 +318,6 @@ const Dropdown = ({
               isOpen={isOpen}
               selected={selectedItem !== null}
               disabled={disabled}
-              error={error}
             />
           </Button>
         </Selector>

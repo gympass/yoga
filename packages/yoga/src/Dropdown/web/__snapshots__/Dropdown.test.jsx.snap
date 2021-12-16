@@ -1374,7 +1374,6 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
 .c10 {
   fill: #6B6B78;
   fill: #231B22;
-  fill: undefined;
   -webkit-transform: rotate(0);
   -ms-transform: rotate(0);
   transform: rotate(0);
@@ -1433,7 +1432,6 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
       >
         <svg
           class="c10"
-          error="Please, select one activity"
           height="20"
           width="20"
         />
