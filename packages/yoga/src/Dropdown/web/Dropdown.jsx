@@ -76,13 +76,18 @@ const Selector = styled.div`
 
             ${
               error && !isOpen
-                ? `border-color: ${colors.feedback.attention[1]};`
+                ? `border-color: ${colors.feedback.attention[1]};
+                `
                 : ''
             }
           }
           &:hover {
             fieldset {
-              border-color: ${dropdown.hover.selector.border.color};
+              border-color: ${
+                error && !isOpen
+                  ? dropdown.hover.selector.border.error
+                  : dropdown.hover.selector.border.color
+              };
             }
           }
         `
@@ -134,8 +139,8 @@ const Button = styled.button`
     left: 0;
 
     width: 100%;
-    height: 100%;
     padding-right: ${dropdown.button.padding.right}px;
+    padding-top: ${dropdown.button.padding.top}px;
 
     border: none;
     outline: none;

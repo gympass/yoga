@@ -798,6 +798,7 @@ exports[`<Divider /> should create a divider component 1`] = `
                   "selector": Object {
                     "border": Object {
                       "color": "#231B22",
+                      "error": "#FF874C",
                     },
                   },
                 },
@@ -2269,6 +2270,7 @@ exports[`<Divider /> should create vertical divider component 1`] = `
                   "selector": Object {
                     "border": Object {
                       "color": "#231B22",
+                      "error": "#FF874C",
                     },
                   },
                 },
