@@ -84,20 +84,14 @@ const Selector = styled.div`
                 : ''
             }
           }
-          ${
-            error && !isOpen
-              ? `
-              &:hover {
-              fieldset {
-                border-color: ${dropdown.hover.selector.border.error};
-              }
-            }`
-              : ` 
-              &:hover {
-              fieldset {
-                border-color: ${dropdown.hover.selector.border.color};
-              }
-            }`
+          &:hover {
+            fieldset {
+              border-color: ${
+                error && !isOpen
+                  ? dropdown.hover.selector.border.error
+                  : dropdown.hover.selector.border.color
+              };
+            }
           }
         `
       : ''}
