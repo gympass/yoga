@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.25.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.25.2...@gympass/yoga@7.25.3) (2021-12-16)
+
+
+### Bug Fixes
+
+* **dropdown:** fix dropdown error behavior ([6296a3f](https://github.com/Gympass/yoga/commit/6296a3fa6d6c31c0c731fe079a74384a9448b53d))
+
+
+
+
+
 ## [7.25.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.25.1...@gympass/yoga@7.25.2) (2021-12-09)
 
 **Note:** Version bump only for package @gympass/yoga
