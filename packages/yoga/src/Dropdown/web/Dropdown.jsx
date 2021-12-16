@@ -76,14 +76,28 @@ const Selector = styled.div`
 
             ${
               error && !isOpen
-                ? `border-color: ${colors.feedback.attention[1]};`
+                ? `border-color: ${colors.feedback.attention[1]};
+                label {
+                  color:${colors.feedback.attention[1]}; 
+                };
+                `
                 : ''
             }
           }
-          &:hover {
-            fieldset {
-              border-color: ${dropdown.hover.selector.border.color};
-            }
+          ${
+            error && !isOpen
+              ? `
+              &:hover {
+              fieldset {
+                border-color: ${dropdown.hover.selector.border.error};
+              }
+            }`
+              : ` 
+              &:hover {
+              fieldset {
+                border-color: ${dropdown.hover.selector.border.color};
+              }
+            }`
           }
         `
       : ''}
@@ -134,8 +148,8 @@ const Button = styled.button`
     left: 0;
 
     width: 100%;
-    height: 100%;
     padding-right: ${dropdown.button.padding.right}px;
+    padding-top: ${dropdown.button.padding.top}px;
 
     border: none;
     outline: none;
@@ -246,6 +260,7 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
     isOpen,
     selected,
     disabled,
+    error,
     theme: {
       yoga: {
         components: { dropdown },
@@ -255,6 +270,7 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
     fill: ${dropdown.arrow.fill};
     ${disabled ? `fill: ${dropdown.disabled.arrow.fill};` : ''};
     ${selected && !disabled ? `fill: ${dropdown.selected.arrow.fill};` : ''};
+    ${error && !disabled && !isOpen ? `fill: ${dropdown.arrow.error} ;` : ''};
     transform: rotate(${isOpen ? '180deg' : '0'});
   `}
 `;
@@ -313,6 +329,7 @@ const Dropdown = ({
               isOpen={isOpen}
               selected={selectedItem !== null}
               disabled={disabled}
+              error={error}
             />
           </Button>
         </Selector>
