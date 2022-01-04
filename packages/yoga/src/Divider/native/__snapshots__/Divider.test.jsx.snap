@@ -916,6 +916,22 @@ exports[`<Divider /> should create a divider component 1`] = `
                   "mobile": 16,
                 },
               },
+              "heading": Object {
+                "paddingBottom": 24,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
+                "rightIcons": Object {
+                  "paddingLeft": 24,
+                },
+                "titleContainer": Object {
+                  "avatar": Object {
+                    "largeSize": 72,
+                    "smallSize": 40,
+                  },
+                  "marginTop": 20,
+                },
+              },
               "icon": Object {},
               "input": Object {
                 "border": Object {
@@ -2386,6 +2402,22 @@ exports[`<Divider /> should create vertical divider component 1`] = `
                 "gutter": Object {
                   "desktop": 24,
                   "mobile": 16,
+                },
+              },
+              "heading": Object {
+                "paddingBottom": 24,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
+                "rightIcons": Object {
+                  "paddingLeft": 24,
+                },
+                "titleContainer": Object {
+                  "avatar": Object {
+                    "largeSize": 72,
+                    "smallSize": 40,
+                  },
+                  "marginTop": 20,
                 },
               },
               "icon": Object {},
