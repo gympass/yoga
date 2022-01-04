@@ -20,7 +20,9 @@ const StyledDivider = styled.hr`
 `;
 
 const Divider = props => {
-  return <StyledDivider {...props} />;
+  const { vertical } = props;
+
+  return <StyledDivider vertical={vertical} />;
 };
 
 Divider.propTypes = {

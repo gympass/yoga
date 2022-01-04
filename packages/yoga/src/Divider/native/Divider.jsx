@@ -1,7 +1,6 @@
 import { bool } from 'prop-types';
 import React from 'react';
 import styled, { css, withTheme } from 'styled-components';
-// ${vertical ? 'height: 100%' : 'width: 100%'};
 
 const StyledDivider = styled.View`
   ${({
@@ -22,7 +21,9 @@ const StyledDivider = styled.View`
 `;
 
 const Divider = props => {
-  return <StyledDivider {...props} />;
+  const { vertical } = props;
+
+  return <StyledDivider vertical={vertical} />;
 };
 
 Divider.propTypes = {
