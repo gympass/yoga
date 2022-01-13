@@ -164,6 +164,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
     <fieldset
       class="c1"
       label="Label"
+      value=""
     >
       <input
         class="c2"
@@ -356,6 +357,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
       class="c1"
       disabled=""
       label="Label"
+      value=""
     >
       <input
         class="c2"
@@ -558,7 +560,6 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   transition-duration: 500ms;
   -webkit-transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
-  color: #FF874C;
 }
 
 .c0 {
@@ -573,6 +574,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
     <fieldset
       class="c1"
       label="Label"
+      value=""
     >
       <input
         class="c2"
@@ -771,6 +773,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
     <fieldset
       class="c1"
       label="Label"
+      value=""
     >
       <input
         class="c2"
@@ -985,6 +988,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
     <fieldset
       class="c1"
       label="Label"
+      value=""
     >
       <input
         class="c2"
@@ -1216,6 +1220,7 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
     <fieldset
       class="c1"
       label="Label"
+      value=""
     >
       <input
         class="c2"
@@ -1415,6 +1420,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
     <fieldset
       class="c1"
       label="Input"
+      value=""
     >
       <input
         class="c2"

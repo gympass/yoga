@@ -109,6 +109,7 @@ const Input = React.forwardRef(
           full={full}
           label={label}
           style={style}
+          value={value}
         >
           <Field
             {...props}
