@@ -176,6 +176,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
       <fieldset
         class="c2"
         label="Label"
+        value=""
       >
         <input
           aria-autocomplete="list"
@@ -382,6 +383,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
       <fieldset
         class="c2"
         label="Label"
+        value=""
       >
         <input
           aria-autocomplete="list"
@@ -528,6 +530,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
+  border-color: #231B22;
 }
 
 .c2:hover,
@@ -695,6 +698,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
       <fieldset
         class="c2"
         label="Label"
+        value="s"
       >
         <input
           aria-autocomplete="list"
@@ -885,6 +889,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
+  border-color: #231B22;
 }
 
 .c2:hover,
@@ -1052,6 +1057,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
       <fieldset
         class="c2"
         label="Label"
+        value="s"
       >
         <input
           aria-autocomplete="list"

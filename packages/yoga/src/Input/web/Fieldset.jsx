@@ -11,6 +11,7 @@ const Fieldset = styled.fieldset`
     error,
     disabled,
     full,
+    value,
     theme: {
       yoga: {
         colors,
@@ -29,6 +30,8 @@ const Fieldset = styled.fieldset`
     border-color: ${
       error ? colors.feedback.attention[1] : input.border.color.default
     };
+
+    ${value && !error ? `border-color: ${input.border.color.typed};` : ''}
 
     &:hover, &:focus-within {
       border-color: ${

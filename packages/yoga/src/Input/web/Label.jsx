@@ -7,7 +7,6 @@ const Label = styled.label`
   user-select: none;
 
   ${({
-    error,
     disabled,
     theme: {
       yoga: {
@@ -28,7 +27,6 @@ const Label = styled.label`
     transition-duration: ${transition.duration[1]}ms;
     transition-timing-function: cubic-bezier(${transition.timing[0].join()});
 
-    ${error ? `color: ${colors.feedback.attention[1]};` : ''}
     ${disabled ? `color: ${colors.text.disabled};` : ''}
   `}
 `;

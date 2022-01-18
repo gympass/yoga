@@ -164,6 +164,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
     <fieldset
       class="c1"
       label="Label"
+      value=""
     >
       <input
         class="c2"

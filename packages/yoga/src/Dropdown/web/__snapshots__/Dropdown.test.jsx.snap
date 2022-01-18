@@ -224,6 +224,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
         <fieldset
           class="c3"
           label="Find an activity to love"
+          value=""
         >
           <input
             aria-autocomplete="list"
@@ -494,6 +495,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
           class="c2"
           disabled=""
           label="Find an activity to love"
+          value=""
         >
           <input
             aria-autocomplete="list"
@@ -767,6 +769,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
         <fieldset
           class="c3"
           label="Find an activity to love"
+          value=""
         >
           <input
             aria-autocomplete="list"
@@ -928,6 +931,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
+  border-color: #231B22;
 }
 
 .c2:hover,
@@ -1057,6 +1061,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
           class="c2"
           disabled=""
           label="Find an activity to love"
+          value="Swimming"
         >
           <input
             aria-autocomplete="list"
@@ -1247,6 +1252,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
+  border-color: #231B22;
 }
 
 .c3:hover,
@@ -1396,6 +1402,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
         <fieldset
           class="c3"
           label="Find an activity to love"
+          value="Swimming"
         >
           <input
             aria-autocomplete="list"

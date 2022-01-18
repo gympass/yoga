@@ -76,6 +76,7 @@ const Field = styled.input`
         color: ${
           error ? `${colors.feedback.attention[1]}` : `${colors.text.primary}`
         };
+
       }
     }
 
@@ -95,6 +96,7 @@ const Field = styled.input`
         }
 
         & ~ label {
+          color: ${error ? `${colors.feedback.attention[1]}` : ''};
           ${labelTransition}
         }
       `}
