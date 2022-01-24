@@ -61,7 +61,9 @@ const Header = ({ link, children }) => {
 };
 
 Header.propTypes = {
+  /** Use link to redirect clicking on the Gympass' logo */
   link: string,
+  /** Use children to add whatever you want inside the header */
   children: node,
 };
 

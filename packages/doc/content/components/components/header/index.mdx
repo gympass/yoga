@@ -9,4 +9,33 @@ metaDescription: 'Header Component'
 # Header
 
 
-  
+### Default
+
+```javascript
+<Box display="flex" width="100%">
+  <Header />
+</Box>
+```
+
+### Logo with link
+
+```javascript
+<Box display="flex" width="100%">
+  <Header link='/'/>
+</Box>
+```
+
+### Receiving children
+
+```javascript
+<Box width="100%">
+  <Header>
+    <Button.Text>First step</Button.Text>
+    <Button.Text>Second step</Button.Text>
+  </Header>
+</Box>
+```
+
+### Props
+
+<PropsTable component="Header" platform="web" />
