@@ -14,6 +14,18 @@ describe('<Header />', () => {
     expect(container).toMatchSnapshot();
   });
 
+  it('should have link', () => {
+    const gympassLink = 'https://site.gympass.com/br';
+
+    render(
+      <ThemeProvider>
+        <Header link={gympassLink} />
+      </ThemeProvider>,
+    );
+
+    screen.getByRole('link', { href: gympassLink });
+  });
+
   it('should show children', () => {
     render(
       <ThemeProvider>
