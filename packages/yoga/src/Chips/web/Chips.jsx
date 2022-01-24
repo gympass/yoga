@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { node, number, arrayOf, bool, func } from 'prop-types';
+import { node, number, arrayOf, bool, func, oneOfType } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
 
 import { theme } from '../../Theme';
@@ -170,7 +170,7 @@ Chips.propTypes = {
   /** disable chip */
   disabled: bool,
   /** a list of max two icons from @gympass/yoga-icons package */
-  icons: arrayOf(node),
+  icons: arrayOf(oneOfType([node, func])),
   /** click event */
   onToggle: func,
   onClick: func,
