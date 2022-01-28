@@ -30,7 +30,7 @@ native, web, and so on. To make it easy, there is a script at the root:
 $ yarn new NewComponent
 ```
 
-This will create/edit all files for the NewComponent:
+This will create/edit all files for the NewComponent in web and native versions:
 
 ```
 packages
@@ -63,6 +63,17 @@ packages
         ├─index.js
         └─index.native.js
 ```
+
+If you want to create a new component for only web or native version, you can add the respective flag:
+
+```
+$ yarn new NewComponent --web
+```
+
+```
+$ yarn new NewComponent --native
+```
+
 
 ### Theming
 
