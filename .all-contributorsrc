@@ -343,6 +343,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "andersonsts",
+      "name": "Anderson Santos",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59117215?v=4",
+      "profile": "http://andersonst.dev@gmail.com",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
