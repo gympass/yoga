@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.25.6](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.25.5...@gympass/yoga@7.25.6) (2022-01-28)
+
+
+### Bug Fixes
+
+* **chips:** add 'function' option in prop types of icon prop ([1a9e70f](https://github.com/Gympass/yoga/commit/1a9e70fa896b3b7a0422a3446198d1c5a4228068))
+
+
+
+
+
 ## [7.25.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.25.4...@gympass/yoga@7.25.5) (2022-01-18)
 
 **Note:** Version bump only for package @gympass/yoga
