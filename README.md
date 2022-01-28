@@ -3,7 +3,7 @@
 </p>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-34-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-35-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Github Actions](https://github.com/gympass/yoga/workflows/Yoga%20-%20Gympass%20Design%20System/badge.svg)
@@ -98,6 +98,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/hesugiyama"><img src="https://avatars.githubusercontent.com/u/14081572?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Henrique Sugiyama</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=hesugiyama" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/frgiovanna"><img src="https://avatars.githubusercontent.com/u/54802614?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Giovanna Freitas</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=frgiovanna" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/salomaoluiz"><img src="https://avatars.githubusercontent.com/u/35156345?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Salomão Luiz de Araújo Neto</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=salomaoluiz" title="Code">💻</a></td>
+    <td align="center"><a href="http://andersonst.dev@gmail.com"><img src="https://avatars.githubusercontent.com/u/59117215?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anderson Santos</b></sub></a><br /><a href="https://github.com/Gympass/yoga/issues?q=author%3Aandersonsts" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
