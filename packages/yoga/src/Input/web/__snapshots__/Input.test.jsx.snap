@@ -54,6 +54,22 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   color: #231B22;
 }
 
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -168,6 +184,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
     >
       <input
         class="c2"
+        label="Label"
         value=""
       />
       <label
@@ -242,6 +259,22 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   font-size: 12px;
   font-weight: 400;
   color: #231B22;
+}
+
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
 }
 
 .c2:disabled {
@@ -362,6 +395,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
       <input
         class="c2"
         disabled=""
+        label="Label"
         value=""
       />
       <label
@@ -437,6 +471,22 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   font-size: 12px;
   font-weight: 400;
   color: #FF874C;
+}
+
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
 }
 
 .c2:disabled {
@@ -578,6 +628,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
     >
       <input
         class="c2"
+        label="Label"
         value=""
       />
       <label
@@ -663,6 +714,22 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   color: #231B22;
 }
 
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -777,6 +844,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
     >
       <input
         class="c2"
+        label="Label"
         value=""
       />
       <label
@@ -851,6 +919,22 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   font-size: 12px;
   font-weight: 400;
   color: #231B22;
+}
+
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
 }
 
 .c2:disabled {
@@ -992,6 +1076,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
     >
       <input
         class="c2"
+        label="Label"
         maxlength="20"
         value=""
       />
@@ -1085,6 +1170,22 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
   color: #231B22;
 }
 
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -1224,6 +1325,7 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
     >
       <input
         class="c2"
+        label="Label"
         maxlength="20"
         value=""
       />
@@ -1308,6 +1410,22 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   font-size: 12px;
   font-weight: 400;
   color: #231B22;
+}
+
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
 }
 
 .c2:disabled {
@@ -1424,6 +1542,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
     >
       <input
         class="c2"
+        label="Input"
         value=""
       />
       <label

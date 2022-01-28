@@ -54,6 +54,22 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   color: #231B22;
 }
 
+.c3:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -184,6 +200,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
           autocomplete="off"
           class="c3"
           id="downshift-1-input"
+          label="Label"
           value=""
         />
         <label
@@ -259,6 +276,22 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   font-size: 12px;
   font-weight: 400;
   color: #231B22;
+}
+
+.c3:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::placeholder {
+  color: #6B6B78;
 }
 
 .c3:disabled {
@@ -391,6 +424,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
           autocomplete="off"
           class="c3"
           id="downshift-0-input"
+          label="Label"
           value=""
         />
         <label
@@ -466,6 +500,22 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   font-size: 12px;
   font-weight: 400;
   color: #231B22;
+}
+
+.c3:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::placeholder {
+  color: #6B6B78;
 }
 
 .c3:disabled {
@@ -707,6 +757,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
           autocomplete="off"
           class="c3"
           id="downshift-3-input"
+          label="Label"
           value="s"
         />
         <label
@@ -825,6 +876,22 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   font-size: 12px;
   font-weight: 400;
   color: #231B22;
+}
+
+.c3:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::placeholder {
+  color: #6B6B78;
 }
 
 .c3:disabled {
@@ -1066,6 +1133,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
           autocomplete="off"
           class="c3"
           id="downshift-2-input"
+          label="Label"
           value="s"
         />
         <label
