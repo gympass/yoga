@@ -7,6 +7,9 @@ exports[`<Header /> should match snapshot 1`] = `
 }
 
 .c0 {
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 5px -3px rgba(152,152,166,0.2),0 8px 10px 1px rgba(152,152,166,0.14),0 3px 14px 2px rgba(152,152,166,0.12);
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15,9 +18,6 @@ exports[`<Header /> should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #FFFFFF;
-  box-shadow: 0 5px 5px -3px rgba(152,152,166,0.2),0 8px 10px 1px rgba(152,152,166,0.14),0 3px 14px 2px rgba(152,152,166,0.12);
-  width: 100%;
   padding: 0 20px;
   height: 56px;
 }
@@ -39,6 +39,8 @@ exports[`<Header /> should match snapshot 1`] = `
 <div>
   <header
     class="c0"
+    d="flex"
+    elevation="medium"
   >
     <svg
       class="c1"

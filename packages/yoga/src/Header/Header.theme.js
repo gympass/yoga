@@ -1,4 +1,4 @@
-const Header = ({ colors, elevations, spacing }) => ({
+const Header = ({ spacing }) => ({
   logo: {
     width: {
       xxs: 80,
@@ -9,8 +9,6 @@ const Header = ({ colors, elevations, spacing }) => ({
       lg: 48,
     },
   },
-  shadow: elevations.medium,
-  background: colors.white,
   padding: {
     xxs: spacing.medium,
     lg: spacing.huge,

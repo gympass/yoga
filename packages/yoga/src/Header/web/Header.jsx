@@ -3,7 +3,9 @@ import styled, { css } from 'styled-components';
 import { string, node } from 'prop-types';
 
 import { media } from '@gympass/yoga-helpers';
+
 import Gympass from 'images/gympass-logo.svg';
+import Box from '../../Box';
 
 const GympassLogo = styled(Gympass)`
   ${({
@@ -22,7 +24,7 @@ const GympassLogo = styled(Gympass)`
   `}
 `;
 
-const Heading = styled.header`
+const Heading = styled(Box)`
   ${({
     theme: {
       yoga: {
@@ -30,11 +32,6 @@ const Heading = styled.header`
       },
     },
   }) => css`
-    display: flex;
-    align-items: center;
-    background: ${header.background};
-    box-shadow: ${header.shadow};
-    width: 100%;
     padding: 0 ${header.padding.xxs}px;
     height: ${header.height.xxs}px;
 
@@ -47,7 +44,14 @@ const Heading = styled.header`
 
 const Header = ({ link, children }) => {
   return (
-    <Heading>
+    <Heading
+      as="header"
+      d="flex"
+      elevation="medium"
+      bgColor="white"
+      alignItems="center"
+      w="100%"
+    >
       {link ? (
         <a href={link}>
           <GympassLogo />
