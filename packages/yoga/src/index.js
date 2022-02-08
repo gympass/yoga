@@ -28,6 +28,7 @@ import Avatar from './Avatar';
 import BottomSheet from './BottomSheet';
 import Dialog from './Dialog';
 import Divider from './Divider';
+import Header from './Header';
 
 export {
   ThemeProvider,
@@ -64,4 +65,5 @@ export {
   BottomSheet,
   Dialog,
   Divider,
+  Header,
 };

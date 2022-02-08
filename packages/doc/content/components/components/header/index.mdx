@@ -1,0 +1,95 @@
+---
+title: 'Header'
+metaTitle: 'Header'
+metaDescription: 'Header Component'
+---
+
+import styled from 'styled-components';
+import { media } from '@gympass/yoga-helpers';
+
+# Header
+
+### Reference
+
+The Header defines the top of a page, and displays information and actions relating to the current page. 
+
+### Usage
+### Default
+
+```javascript
+<Box width="100%">
+  <Header />
+</Box>
+```
+
+### Logo with link
+
+The header is prepared to have a link to redirect the user clicking on the Gympass' logo.
+
+```javascript
+<Box width="100%">
+  <Header link="/" />
+</Box>
+```
+
+### Receiving children
+
+The header can have a children with components that you want to put inside.
+
+```javascript state
+const LeftContent = styled.div`
+  display: flex;
+  flex-grow: 3;
+`;
+
+const RightContent = styled.div`
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+`;
+
+const LinkButton = styled(Button.Link)`
+  margin-right: 32px;
+`;
+
+const SmallButton = styled(Button)`
+  margin-left: 8px;
+  ${media.lg`
+    margin-left: 20px;
+  `}
+`;
+
+render(() => {
+  return (
+    <Box width="100%">
+      <Header>
+        <>
+          <Hide xxs xs sm md>
+            <LeftContent>
+              <LinkButton>Link button</LinkButton>
+              <LinkButton>Link button</LinkButton>
+            </LeftContent>
+          </Hide>
+          <RightContent>
+            <Button.Outline small />
+            <SmallButton small />
+            <Hide lg-start>
+              <Icon
+                size="medium"
+                fill="vibin"
+                as={MenuList}
+                style={{ marginLeft: '20px' }}
+              />
+            </Hide>
+          </RightContent>
+        </>
+      </Header>
+    </Box>
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Header" platform="web" />
