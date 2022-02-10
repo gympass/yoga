@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.26.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.25.6...@gympass/yoga@7.26.0) (2022-02-10)
+
+
+### Bug Fixes
+
+* **header:** fix gympass logo on header ([7a4de71](https://github.com/Gympass/yoga/commit/7a4de7152d7230716610a380a262718ad982789f))
+* **header:** fix image path ([48f256d](https://github.com/Gympass/yoga/commit/48f256de522684b2119302c49512196395293d81))
+
+
+### Features
+
+* **header:** create header component ([82aabf4](https://github.com/Gympass/yoga/commit/82aabf45862554895d65e30286ded83379534595))
+
+
+
+
+
 ## [7.25.6](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.25.5...@gympass/yoga@7.25.6) (2022-01-28)
 
 

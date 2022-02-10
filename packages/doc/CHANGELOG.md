@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.15.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.14.6...@gympass/yoga-doc@2.15.0) (2022-02-10)
+
+
+### Features
+
+* **header:** create header component ([82aabf4](https://github.com/Gympass/yoga/commit/82aabf45862554895d65e30286ded83379534595))
+
+
+
+
+
 ## [2.14.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.14.5...@gympass/yoga-doc@2.14.6) (2022-01-28)
 
 **Note:** Version bump only for package @gympass/yoga-doc
