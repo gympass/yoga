@@ -4,7 +4,7 @@ import { string, node } from 'prop-types';
 
 import { media } from '@gympass/yoga-helpers';
 
-import Gympass from 'images/gympass-logo.svg';
+import Gympass from './static/images/gympass-logo.svg';
 import Box from '../../Box';
 
 const GympassLogo = styled(Gympass)`
