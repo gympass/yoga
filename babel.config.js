@@ -11,7 +11,7 @@ module.exports = {
         ['@babel/preset-env', { loose: true, modules: false }],
         '@babel/preset-react',
       ],
-      plugins: ['import-glob'],
+      plugins: ['inline-react-svg', 'import-glob'],
     },
     native: {
       ignore: ['**/*.test.jsx'],
