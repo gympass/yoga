@@ -40,6 +40,7 @@ The header can have a children with components that you want to put inside.
 const LeftContent = styled.div`
   display: flex;
   flex-grow: 3;
+  padding-left: 48px;
 `;
 
 const RightContent = styled.div`
@@ -50,7 +51,7 @@ const RightContent = styled.div`
 `;
 
 const LinkButton = styled(Button.Link)`
-  margin-right: 32px;
+  padding-right: 32px;
 `;
 
 const SmallButton = styled(Button)`
@@ -64,7 +65,6 @@ render(() => {
   return (
     <Box width="100%">
       <Header>
-        <>
           <Hide xxs xs sm md>
             <LeftContent>
               <LinkButton>Link button</LinkButton>
@@ -83,7 +83,6 @@ render(() => {
               />
             </Hide>
           </RightContent>
-        </>
       </Header>
     </Box>
   );
