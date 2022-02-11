@@ -3,11 +3,7 @@ import React, { useState } from 'react';
 import { Button, Box } from '@gympass/yoga';
 import { string } from 'prop-types';
 
-import styled from 'styled-components';
-
-const ButtonCopy = styled(Button.Link)`
-  height: 100%;
-`;
+import { CheckedFull, Copy } from '@gympass/yoga-icons/src';
 
 const Clipboard = ({ copyText }) => {
   const [isCopied, setIsCopied] = useState(false);
@@ -18,7 +14,7 @@ const Clipboard = ({ copyText }) => {
     return textToCopy;
   }
 
-  const hnadleCopyClick = () => {
+  const handleCopyClick = () => {
     CopyTextToClipboard(copyText)
       .then(() => {
         setIsCopied(true);
@@ -32,10 +28,12 @@ const Clipboard = ({ copyText }) => {
   };
 
   return (
-    <Box position="absolute" top="20px" right="25px">
-      <ButtonCopy onClick={hnadleCopyClick}>
-        {isCopied ? 'Copied!' : 'Copy'}
-      </ButtonCopy>
+    <Box position="absolute" top="5px" right="5px">
+      {isCopied ? (
+        <Button.Icon icon={CheckedFull} small />
+      ) : (
+        <Button.Icon icon={Copy} small onClick={handleCopyClick} />
+      )}
     </Box>
   );
 };
