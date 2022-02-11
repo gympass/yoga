@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { useContext } from 'react';
 import { string, bool } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';
@@ -6,6 +7,7 @@ import styled from 'styled-components';
 import { LiveEditor } from 'react-live';
 
 import CodeBlockContext from '../CodeBlockContext';
+import Clipboard from '../../Clipboard';
 
 const defaultPropsWithTheme = {
   ...defaultProps,
@@ -47,6 +49,7 @@ const PrismHighlight = ({ code, liveEditor }) => {
       {({ className, style, tokens, getLineProps, getTokenProps }) =>
         liveEditor ? (
           <Pre className={className} style={style}>
+            <Clipboard copyText={className + highlightCode} />
             <LiveEditor />
           </Pre>
         ) : (
