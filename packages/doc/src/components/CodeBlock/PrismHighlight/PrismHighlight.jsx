@@ -7,7 +7,6 @@ import styled from 'styled-components';
 import { LiveEditor } from 'react-live';
 
 import CodeBlockContext from '../CodeBlockContext';
-import Clipboard from '../../Clipboard';
 
 const defaultPropsWithTheme = {
   ...defaultProps,
@@ -49,7 +48,6 @@ const PrismHighlight = ({ code, liveEditor }) => {
       {({ className, style, tokens, getLineProps, getTokenProps }) =>
         liveEditor ? (
           <Pre className={className} style={style}>
-            <Clipboard copyText={className + highlightCode} />
             <LiveEditor />
           </Pre>
         ) : (

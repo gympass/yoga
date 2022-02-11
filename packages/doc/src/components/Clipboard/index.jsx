@@ -1,11 +1,11 @@
 /* eslint-disable no-undef */
 import React, { useState } from 'react';
-import * as YogaComponents from '@gympass/yoga';
+import { Button, Box } from '@gympass/yoga';
 import { string } from 'prop-types';
 
 import styled from 'styled-components';
 
-const ButtonCopy = styled(YogaComponents.Button)`
+const ButtonCopy = styled(Button.Link)`
   height: 100%;
 `;
 
@@ -32,11 +32,11 @@ const Clipboard = ({ copyText }) => {
   };
 
   return (
-    <YogaComponents.Box>
+    <Box position="absolute" top="20px" right="25px">
       <ButtonCopy onClick={hnadleCopyClick}>
         {isCopied ? 'Copied!' : 'Copy'}
       </ButtonCopy>
-    </YogaComponents.Box>
+    </Box>
   );
 };
 
