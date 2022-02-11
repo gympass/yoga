@@ -4,27 +4,10 @@ import { string, node } from 'prop-types';
 
 import { media } from '@gympass/yoga-helpers';
 
-import Gympass from '../static/images/gympass-logo.svg';
+import GympassLogo from './GympassLogo';
 import Box from '../../Box';
 
-const GympassLogo = styled(Gympass)`
-  ${({
-    theme: {
-      yoga: {
-        components: { header },
-      },
-    },
-  }) => css`
-    margin-right: ${header.logo.margin.xxs}px;
-    width: ${header.logo.width.xxs}px;
-    ${media.lg`
-    width: ${header.logo.width.lg}px;
-    margin-right: ${header.logo.margin.lg}px;
-  `}
-  `}
-`;
-
-const Heading = styled(Box)`
+const StyledHeader = styled(Box)`
   ${({
     theme: {
       yoga: {
@@ -36,15 +19,15 @@ const Heading = styled(Box)`
     height: ${header.height.xxs}px;
 
     ${media.lg`
-    padding: 0 ${header.padding.lg}px;
-    height: ${header.height.lg}px;
-  `}
+      padding: 0 ${header.padding.lg}px;
+      height: ${header.height.lg}px;
+    `}
   `}
 `;
 
 const Header = ({ link, children }) => {
   return (
-    <Heading
+    <StyledHeader
       as="header"
       d="flex"
       elevation="medium"
@@ -60,7 +43,7 @@ const Header = ({ link, children }) => {
         <GympassLogo />
       )}
       {children}
-    </Heading>
+    </StyledHeader>
   );
 };
 
