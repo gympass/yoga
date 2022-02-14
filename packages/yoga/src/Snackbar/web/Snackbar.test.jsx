@@ -92,6 +92,7 @@ describe('<Snackbar />', () => {
           duration={1000}
           message="Make wellbeing universal"
           onClose={onCloseMock}
+          hideCloseButton
         />
       </ThemeProvider>,
     );
@@ -99,6 +100,27 @@ describe('<Snackbar />', () => {
     expect(screen.queryByRole('button')).toBeNull();
 
     jest.runAllTimers();
+
+    expect(onCloseMock).toHaveBeenCalledTimes(1);
+  });
+
+  it('should close with timeout set up', async () => {
+    const onCloseMock = jest.fn();
+
+    render(
+      <ThemeProvider>
+        <Snackbar
+          open
+          duration={1000}
+          message="Make wellbeing universal"
+          onClose={onCloseMock}
+        />
+      </ThemeProvider>,
+    );
+
+    const button = screen.getByRole('button');
+
+    fireEvent.click(button);
 
     expect(onCloseMock).toHaveBeenCalledTimes(1);
   });
