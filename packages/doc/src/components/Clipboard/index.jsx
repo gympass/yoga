@@ -14,17 +14,12 @@ const Clipboard = ({ copyText }) => {
     return textToCopy;
   }
 
-  const handleCopyClick = () => {
-    CopyTextToClipboard(copyText)
-      .then(() => {
-        setIsCopied(true);
-        setTimeout(() => {
-          setIsCopied(false);
-        }, 1500);
-      })
-      .catch(error => {
-        throw new Error(error);
-      });
+  const handleCopyClick = async () => {
+    await copyTextToClipboard(copyText);
+    setIsCopied(true);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 1500);
   };
 
   return (
