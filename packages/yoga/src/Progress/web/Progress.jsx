@@ -10,6 +10,7 @@ import {
   spacing as systemSpacing,
 } from '@gympass/yoga-system';
 
+import Text from '../../Text';
 import { charLength } from '../../shared';
 
 const ProgressBar = styled.progress`
@@ -59,14 +60,16 @@ const ProgressBar = styled.progress`
 `}
 `;
 
-const Label = styled.label`
+const Label = styled(Text.Tiny)`
   ${({
     theme: {
       yoga: {
         components: { progress },
+        colors: { text },
       },
     },
   }) => `
+  color: ${text.secondary};
   font-size: ${progress.label.font.size}px;
   letter-spacing: normal;
 `}
