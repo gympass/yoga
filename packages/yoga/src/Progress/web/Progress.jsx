@@ -106,7 +106,7 @@ const Wrapper = styled.div`
         ${Label} {
           max-width: 280px;
 
-          margin-top: ${spacing.xxxsmall}px;
+          margin-top: ${spacing.xxsmall}px;
         }
       `
     }
