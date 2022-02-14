@@ -8,7 +8,7 @@ import { CheckedFull, Copy } from '@gympass/yoga-icons/src';
 const Clipboard = ({ copyText }) => {
   const [isCopied, setIsCopied] = useState(false);
 
-  async function CopyTextToClipboard(text) {
+  async function copyTextToClipboard(text) {
     const textToCopy = await navigator.clipboard.writeText(text);
 
     return textToCopy;
