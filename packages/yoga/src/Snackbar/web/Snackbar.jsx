@@ -103,6 +103,7 @@ const Snackbar = ({
   actionLabel,
   onAction,
   onClose,
+  hideCloseButton,
   theme: {
     yoga: {
       components: { snackbar },
@@ -154,9 +155,9 @@ const Snackbar = ({
             </Button.Link>
           )}
 
-          {!duration && onClose && (
+          {!hideCloseButton && onClose && (
             <IconButtonWrapper role="button" onClick={onClose}>
-              <Icon as={Close} fill="secondary" width="large" height="large" />
+              <Icon as={Close} fill="secondary" size="medium" />
             </IconButtonWrapper>
           )}
         </ActionsWrapper>
@@ -169,7 +170,13 @@ Snackbar.propTypes = {
   /** Controls the snackbar visibility. */
   open: bool,
 
-  /** A number in milliseconds to close snackbar automaticaly. The `onClose` function becomes required when passing this function. */
+  /** The message shown when snackbar is opened. */
+  message: string.isRequired,
+
+  /** Function to close the snackbar. */
+  onClose: func.isRequired,
+
+  /** A number in milliseconds to close snackbar automaticaly. */
   duration: number,
 
   /** Label for a custom action. */
@@ -178,17 +185,14 @@ Snackbar.propTypes = {
   /** Controls the snackbar icon visibility. */
   hideIcon: bool,
 
-  /** The message shown when snackbar is opened. */
-  message: string.isRequired,
-
   /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
   onAction: func,
 
-  /** Function to close the snackbar. */
-  onClose: func,
-
   /** The style variant, it may be "success", "failure" or "info". */
   variant: oneOf(['success', 'failure', 'info']),
+
+  /** Hides the close button. */
+  hideCloseButton: bool,
 };
 
 Snackbar.defaultProps = {
@@ -197,8 +201,8 @@ Snackbar.defaultProps = {
   actionLabel: undefined,
   hideIcon: false,
   onAction: undefined,
-  onClose: undefined,
   variant: 'success',
+  hideCloseButton: false,
 };
 
 export default memo(withTheme(Snackbar));
