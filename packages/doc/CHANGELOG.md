@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.15.1...@gympass/yoga-doc@2.15.2) (2022-02-15)
+
+
+### Bug Fixes
+
+* **snackbar:** fix autoclose behavior with the close button ([11ec13e](https://github.com/Gympass/yoga/commit/11ec13e64fd8e562390cec62ba14250ad37483dd))
+
+
+
+
+
 ## [2.15.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.15.0...@gympass/yoga-doc@2.15.1) (2022-02-11)
 
 **Note:** Version bump only for package @gympass/yoga-doc
