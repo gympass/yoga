@@ -10,7 +10,6 @@ import {
   spacing as systemSpacing,
 } from '@gympass/yoga-system';
 
-import Text from '../../Text';
 import { charLength } from '../../shared';
 
 const ProgressBar = styled.progress`
@@ -60,7 +59,7 @@ const ProgressBar = styled.progress`
 `}
 `;
 
-const Label = styled(Text.Tiny)`
+const Label = styled.label`
   ${({
     theme: {
       yoga: {
