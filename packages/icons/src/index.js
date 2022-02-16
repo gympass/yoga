@@ -46,6 +46,7 @@ import Dumbbell from './svg/dumbbell.svg';
 import DumbbellFilled from './svg/dumbbell_filled.svg';
 import Edit from './svg/edit.svg';
 import Exit from './svg/exit.svg';
+import ExternalLink from './svg/external_link.svg';
 import Facebook from './svg/facebook.svg';
 import FamilyMember from './svg/family_member.svg';
 import FavoriteFilled from './svg/favorite_filled.svg';
@@ -185,6 +186,7 @@ export {
   DumbbellFilled,
   Edit,
   Exit,
+  ExternalLink,
   Facebook,
   FamilyMember,
   FavoriteFilled,
