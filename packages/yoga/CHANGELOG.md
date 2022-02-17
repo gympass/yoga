@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.26.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.26.3...@gympass/yoga@7.26.4) (2022-02-17)
+
+
+### Bug Fixes
+
+* **progress:** adjust label component from 'text.tiny'to 'label' ([303589a](https://github.com/Gympass/yoga/commit/303589aeddd213617f3e7d64a7abf8e36e3076bb))
+* **progress:** adjust spacing on progress bar label ([4c933a0](https://github.com/Gympass/yoga/commit/4c933a0b3a669e8df17214958f32183a92a81bbe))
+
+
+
+
+
 ## [7.26.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.26.2...@gympass/yoga@7.26.3) (2022-02-16)
 
 **Note:** Version bump only for package @gympass/yoga
