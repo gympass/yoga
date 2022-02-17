@@ -53,7 +53,7 @@ exports[`<Progress /> should match snapshot 1`] = `
 
 .c0 .c2 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 <div>
@@ -612,6 +612,7 @@ exports[`<Progress /> should match snapshot with all variants 1`] = `
 }
 
 .c4 {
+  color: #6B6B78;
   font-size: 12px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -621,12 +622,12 @@ exports[`<Progress /> should match snapshot with all variants 1`] = `
 
 .c19 .c3 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .c20 .c3 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .c0 {
@@ -966,7 +967,7 @@ exports[`<Progress /> should match snapshot with background color prop system 1`
 
 .c0 .c5 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 <div>
@@ -1044,7 +1045,7 @@ exports[`<Progress /> should match snapshot with border prop system 1`] = `
 
 .c0 .c5 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 <div>
@@ -1121,7 +1122,7 @@ exports[`<Progress /> should match snapshot with elevation prop system 1`] = `
 
 .c0 .c5 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 <div>
@@ -1174,6 +1175,7 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
 }
 
 .c4 {
+  color: #6B6B78;
   font-size: 12px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -1183,12 +1185,12 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
 
 .c6 .c3 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .c7 .c3 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .c0 {
@@ -1306,6 +1308,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
 }
 
 .c3 {
+  color: #6B6B78;
   font-size: 12px;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
@@ -1330,7 +1333,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
 
 .c0 .c2 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .c4 {
@@ -1351,7 +1354,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
 
 .c4 .c2 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 <div>
@@ -1449,7 +1452,7 @@ exports[`<Progress /> should match snapshot with positions prop system 1`] = `
 
 .c0 .c5 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 <div>
@@ -1527,7 +1530,7 @@ exports[`<Progress /> should match snapshot with spacing prop system 1`] = `
 
 .c0 .c5 {
   max-width: 280px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 <div>

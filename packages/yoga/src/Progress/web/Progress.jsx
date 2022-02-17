@@ -64,9 +64,11 @@ const Label = styled.label`
     theme: {
       yoga: {
         components: { progress },
+        colors: { text },
       },
     },
   }) => `
+  color: ${text.secondary};
   font-size: ${progress.label.font.size}px;
   letter-spacing: normal;
 `}
@@ -103,7 +105,7 @@ const Wrapper = styled.div`
         ${Label} {
           max-width: 280px;
 
-          margin-top: ${spacing.xxxsmall}px;
+          margin-top: ${spacing.xxsmall}px;
         }
       `
     }
