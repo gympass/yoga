@@ -377,6 +377,18 @@ describe('<Button />', () => {
           expect(container).toMatchSnapshot();
         });
       });
+
+      it('Link Button with href prop', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Link href="http://www.gympass.com" target="blank">
+              Link as an anchor
+            </Button.Link>
+          </ThemeProvider>,
+        );
+
+        expect(container).toMatchSnapshot();
+      });
     });
 
     describe('secondary buttons', () => {
