@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Button, Box } from '@gympass/yoga';
 import { string } from 'prop-types';
 
@@ -7,6 +7,7 @@ import { CheckedFull, Copy } from '@gympass/yoga-icons/src';
 
 const Clipboard = ({ copyText }) => {
   const [isCopied, setIsCopied] = useState(false);
+  const timeoutRef = useRef();
 
   async function copyTextToClipboard(text) {
     const textToCopy = await navigator.clipboard.writeText(text);
@@ -17,9 +18,11 @@ const Clipboard = ({ copyText }) => {
   const handleCopyClick = async () => {
     await copyTextToClipboard(copyText);
     setIsCopied(true);
-    setTimeout(() => {
+    timeoutRef.current = setTimeout(() => {
       setIsCopied(false);
     }, 1500);
+
+    return () => clearTimeout(timeoutRef.current);
   };
 
   return (
