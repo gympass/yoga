@@ -14,10 +14,20 @@ You can use all differente compounds like `<Button.Outline />` and `<Button.Text
 </Box>
 ```
 
+#### As an anchor
+
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
+  <Button href="http://www.gympass.com" target="blank">
+    Find an activity (external link)
+  </Button>
+</Box>
+```
+
 #### With icon
 
 ```javascript
-<Box display="flex" justifyContent="space-evenly" width="100%">  
+<Box display="flex" justifyContent="space-evenly" width="100%">
   <Button icon={Booking}>Find an activity</Button>
   <Button icon={Booking} secondary>
     Find an activity

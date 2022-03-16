@@ -63,16 +63,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   fill: #FFFFFF;
 }
 
-.c19:disabled {
-  background-color: #F5F5FA;
-  color: #D7D7E0;
-  cursor: not-allowed;
-}
-
-.c19:disabled svg {
-  fill: #D7D7E0;
-}
-
 .c15 {
   width: 16px;
   height: 16px;
