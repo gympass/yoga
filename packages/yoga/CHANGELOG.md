@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.27.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.26.4...@gympass/yoga@7.27.0) (2022-04-04)
+
+
+### Features
+
+* **result:** adjusting attendance compound to be optional ([a50a77c](https://github.com/Gympass/yoga/commit/a50a77ce2cba88544cf968f19af6bb92f6568526))
+
+
+
+
+
 ## [7.26.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.26.3...@gympass/yoga@7.26.4) (2022-02-17)
 
 
