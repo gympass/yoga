@@ -70,7 +70,9 @@ const Result = ({
   <StyledBox divided={divided} display="flex" flexDirection="row">
     {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
     <Content>
-      {attendances && <Attendances attendances={attendances} rate={rate} />}
+      {!!attendances?.length && (
+        <Attendances attendances={attendances} rate={rate} />
+      )}
       <Title numberOfLines={1}>{title}</Title>
       {subTitle && subTitle !== '' && (
         <Text.Small numberOfLines={1} variant="stamina">
