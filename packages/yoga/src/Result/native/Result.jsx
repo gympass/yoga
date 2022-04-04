@@ -44,14 +44,12 @@ const Title = styled(Text.Medium)`
   ${({
     theme: {
       yoga: {
-        spacing: { xxxsmall },
         lineHeights: { medium },
       },
     },
   }) => {
     return `
       line-height: ${medium}px;
-      margin-top: ${xxxsmall}px;
     `;
   }}
 `;
@@ -72,7 +70,7 @@ const Result = ({
   <StyledBox divided={divided} display="flex" flexDirection="row">
     {Avatar && <>{isValidElement(Avatar) ? Avatar : <Avatar />}</>}
     <Content>
-      <Attendances attendances={attendances} rate={rate} />
+      {attendances && <Attendances attendances={attendances} rate={rate} />}
       <Title numberOfLines={1}>{title}</Title>
       {subTitle && subTitle !== '' && (
         <Text.Small numberOfLines={1} variant="stamina">
@@ -93,7 +91,7 @@ Result.propTypes = {
       description: string,
       icon: func,
     }),
-  ).isRequired,
+  ),
   /** The evaluation of the partner */
   rate: string,
   /** The main title */
@@ -111,6 +109,7 @@ Result.defaultProps = {
   divided: false,
   subTitle: undefined,
   children: undefined,
+  attendances: undefined,
 };
 
 export default Result;
