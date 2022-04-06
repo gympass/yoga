@@ -378,10 +378,22 @@ describe('<Button />', () => {
         });
       });
 
-      it('Link Button with href prop', () => {
+      it('Link Button rendering as an anchor (default)', () => {
         const { container } = render(
           <ThemeProvider>
             <Button.Link href="http://www.gympass.com" target="blank">
+              Link as an anchor
+            </Button.Link>
+          </ThemeProvider>,
+        );
+
+        expect(container).toMatchSnapshot();
+      });
+
+      it('Link Button rendering as an button (as=button)', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Link as="button" target="blank">
               Link as an anchor
             </Button.Link>
           </ThemeProvider>,

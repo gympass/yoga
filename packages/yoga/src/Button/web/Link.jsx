@@ -50,29 +50,18 @@ const Link = styled(StyledButton)`
   }}
 `;
 
-const ButtonLink = props => {
-  const { href } = props;
-  const finalProps = {
-    ...props,
-  };
-
-  if (href) {
-    finalProps.as = 'a';
-  }
-
-  return <Link {...finalProps} />;
-};
+const ButtonLink = props => <Link {...props} />;
 
 ButtonLink.propTypes = {
   disabled: bool,
   secondary: bool,
-  href: string,
+  as: string,
 };
 
 ButtonLink.defaultProps = {
   disabled: false,
   secondary: false,
-  href: undefined,
+  as: 'a',
 };
 
 ButtonLink.displayName = 'Button.Link';

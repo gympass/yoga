@@ -370,7 +370,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 }
 
 <div>
-  <button
+  <a
     class="c0"
     disabled=""
   />
@@ -887,7 +887,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 </div>
 `;
 
-exports[`<Button /> Snapshots primary buttons Link Button with href prop 1`] = `
+exports[`<Button /> Snapshots primary buttons Link Button rendering as an anchor (default) 1`] = `
 .c0 {
   box-sizing: border-box;
   text-align: center;
@@ -995,6 +995,116 @@ exports[`<Button /> Snapshots primary buttons Link Button with href prop 1`] = `
   >
     Link as an anchor
   </a>
+</div>
+`;
+
+exports[`<Button /> Snapshots primary buttons Link Button rendering as an button (as=button) 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  height: unset;
+  padding: 0;
+  background-color: unset;
+  border: none;
+  border-radius: 0;
+  color: #D8385E;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0:disabled {
+  background-color: #F5F5FA;
+  color: #D7D7E0;
+  cursor: not-allowed;
+}
+
+.c0:disabled svg {
+  fill: #D7D7E0;
+}
+
+.c0:disabled,
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus,
+.c0:not([disabled]):active {
+  box-shadow: unset;
+  background-color: unset;
+}
+
+.c0:not([disabled]):hover {
+  color: rgba(216,56,94,0.5);
+}
+
+.c0:not([disabled]):focus,
+.c0:not([disabled]):active {
+  color: rgba(216,56,94,0.75);
+}
+
+.c0:disabled {
+  color: #D7D7E0;
+}
+
+<div>
+  <button
+    class="c0"
+    target="blank"
+  >
+    Link as an anchor
+  </button>
 </div>
 `;
 
@@ -1368,7 +1478,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 }
 
 <div>
-  <button
+  <a
     class="c0"
     disabled=""
   />
@@ -4736,7 +4846,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 <div>
-  <button
+  <a
     class="c0"
   />
 </div>
@@ -8259,7 +8369,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 }
 
 <div>
-  <button
+  <a
     class="c0"
   />
 </div>

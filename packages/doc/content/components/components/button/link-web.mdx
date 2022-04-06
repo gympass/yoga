@@ -1,18 +1,20 @@
-### Usage default
-
-```javascript
-<Box display="flex" justifyContent="space-evenly" width="100%">
-  <Button.Link>Find an activity</Button.Link>
-  <Button.Link secondary>Find an activity</Button.Link>
-</Box>
-```
-
-#### Using as an anchor
+### Usage default (as an anchor)
 
 ```javascript
 <Box display="flex" justifyContent="space-evenly" width="100%">
   <Button.Link href="http://www.gympass.com" target="blank">
     Find an activity (external link)
+  </Button.Link>
+</Box>
+```
+
+#### Using as a button
+
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
+  <Button.Link as="button">Find an activity</Button.Link>
+  <Button.Link as="button" secondary>
+    Find an activity
   </Button.Link>
 </Box>
 ```
