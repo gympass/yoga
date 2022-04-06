@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.15.6...@gympass/yoga-doc@2.16.0) (2022-04-06)
+
+
+### Features
+
+* **add render as anchor to all buttons:** all buttons can be rendered as an achor tag ([c5664cd](https://github.com/Gympass/yoga/commit/c5664cded585eb0a88db1b8c85a463456767f233)), closes [#360](https://github.com/Gympass/yoga/issues/360)
+
+
+
+
+
 ## [2.15.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.15.5...@gympass/yoga-doc@2.15.6) (2022-04-04)
 
 **Note:** Version bump only for package @gympass/yoga-doc
