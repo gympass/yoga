@@ -150,7 +150,7 @@ const Snackbar = ({
 
         <ActionsWrapper>
           {onAction && actionLabel && (
-            <Button.Link onClick={onAction} secondary small>
+            <Button.Link as="button" onClick={onAction} secondary small>
               {actionLabel}
             </Button.Link>
           )}
