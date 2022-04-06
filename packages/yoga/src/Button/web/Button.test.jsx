@@ -379,6 +379,56 @@ describe('<Button />', () => {
       });
     });
 
+    describe('buttons rendering as an anchor', () => {
+      it('Default Button with href prop', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button href="http://www.gympass.com" target="blank">
+              Default Button as an anchor
+            </Button>
+          </ThemeProvider>,
+        );
+
+        expect(container).toMatchSnapshot();
+      });
+
+      it('Link Button with href prop', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Link href="http://www.gympass.com" target="blank">
+              Link as an anchor
+            </Button.Link>
+          </ThemeProvider>,
+        );
+
+        expect(container).toMatchSnapshot();
+      });
+
+      it('Outline Button with href prop', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Outline href="http://www.gympass.com" target="blank">
+              Outline as an anchor
+            </Button.Outline>
+          </ThemeProvider>,
+        );
+
+        expect(container).toMatchSnapshot();
+      });
+
+      it('Text Button with href prop', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Text href="http://www.gympass.com" target="blank">
+              Text as an anchor
+            </Button.Text>
+          </ThemeProvider>,
+        );
+
+        expect(container).toMatchSnapshot();
+      });
+    });
+
     describe('secondary buttons', () => {
       describe('Without props', () => {
         it('should match snapshot with default Button', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { func, node, oneOfType, bool } from 'prop-types';
+import { func, node, oneOfType, bool, string } from 'prop-types';
 import StyledButton from './StyledButton';
 
 /** Buttons make common actions more obvious and help users more easily perform them. Buttons use labels and sometimes icons to communicate the action that will occur when the user touches them. */
@@ -13,20 +13,30 @@ const Button = ({
   secondary,
   icon: Icon,
   ...props
-}) => (
-  <StyledButton
-    disabled={disabled}
-    full={full}
-    inverted={inverted}
-    onClick={onClick}
-    small={small}
-    secondary={secondary}
-    {...props}
-  >
-    {Icon && <Icon />}
-    {children}
-  </StyledButton>
-);
+}) => {
+  const finalProps = {
+    ...props,
+  };
+
+  if (props.href) {
+    finalProps.as = 'a';
+  }
+
+  return (
+    <StyledButton
+      disabled={disabled}
+      full={full}
+      inverted={inverted}
+      onClick={onClick}
+      small={small}
+      secondary={secondary}
+      {...finalProps}
+    >
+      {Icon && <Icon />}
+      {children}
+    </StyledButton>
+  );
+};
 
 Button.propTypes = {
   children: node,
@@ -38,6 +48,7 @@ Button.propTypes = {
   secondary: bool,
   /** an Icon from yoga-icons package */
   icon: oneOfType([node, func]),
+  href: string,
 };
 
 Button.defaultProps = {
@@ -49,6 +60,7 @@ Button.defaultProps = {
   small: false,
   secondary: false,
   icon: undefined,
+  href: undefined,
 };
 
 Button.displayName = 'Button';
