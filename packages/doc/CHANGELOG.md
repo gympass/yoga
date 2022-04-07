@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.16.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.16.0...@gympass/yoga-doc@2.16.1) (2022-04-07)
+
+
+### Bug Fixes
+
+* **doc:** fix system doc in codeSandBox ([844002e](https://github.com/Gympass/yoga/commit/844002e8bd82c317415c9edb00491293e5e67955)), closes [#450](https://github.com/Gympass/yoga/issues/450)
+
+
+
+
+
 # [2.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.15.6...@gympass/yoga-doc@2.16.0) (2022-04-06)
 
 
