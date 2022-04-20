@@ -98,9 +98,8 @@ const ButtonWrapper = styled.div`
 /** Radio group allows user to select one option from a set of options. Use
 value on group to set the selected option. */
 const RadioGroupButton = ({ children, value, ...rest }) => {
-  const { name, onChange, small, selectedValue, ...context } = useContext(
-    RadioGroupContext,
-  );
+  const { name, onChange, small, selectedValue, ...context } =
+    useContext(RadioGroupContext);
 
   const inputValue = value || children;
   const checked = inputValue === selectedValue;

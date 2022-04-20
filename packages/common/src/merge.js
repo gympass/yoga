@@ -1,7 +1,7 @@
 const merge = (target, source) => {
   const newTarget = { ...target };
 
-  Object.keys(source).forEach(key => {
+  Object.keys(source).forEach((key) => {
     newTarget[key] = source[key];
 
     if (source[key] !== null && typeof source[key] === 'object') {

@@ -6,7 +6,7 @@ const Wrapper = styled.View`
   width: 100%;
 `;
 
-const Step = props => <Wrapper {...props} />;
+const Step = (props) => <Wrapper {...props} />;
 
 Step.displayName = 'Stepper.Step';
 

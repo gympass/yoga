@@ -5,20 +5,20 @@ import { media } from '@gympass/yoga-helpers';
 
 const { breakpoints } = tokens;
 
-const columnPosition = props => {
+const columnPosition = (props) => {
   const breakpointKeys = Object.keys(breakpoints);
   const position = breakpointKeys
-    .filter(breakpoint => props[breakpoint])
+    .filter((breakpoint) => props[breakpoint])
     .map(
-      filteredBreakpoint => media[filteredBreakpoint]`
+      (filteredBreakpoint) => media[filteredBreakpoint]`
         grid-column-end: span ${props[filteredBreakpoint] || 12};
       `,
     );
 
   const starts = breakpointKeys
-    .filter(breakpoint => props[`${breakpoint}-start`])
+    .filter((breakpoint) => props[`${breakpoint}-start`])
     .map(
-      start => media[start]`
+      (start) => media[start]`
         grid-column-start: ${props[`${start}-start`]};
       `,
     );
@@ -26,8 +26,8 @@ const columnPosition = props => {
   return [...position, ...starts];
 };
 
-const hideColumn = hideProp =>
-  hideProp.map(breakpoint => media.hide[breakpoint]);
+const hideColumn = (hideProp) =>
+  hideProp.map((breakpoint) => media.hide[breakpoint]);
 
 const Col = styled.div`
   box-sizing: border-box;
@@ -35,7 +35,7 @@ const Col = styled.div`
   min-width: 0;
   min-height: 0;
 
-  ${props => columnPosition(props)}
+  ${(props) => columnPosition(props)}
 
   ${({ hide }) => (hide ? hideColumn(hide) : '')}
 `;

@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const Step = props => <Wrapper {...props} />;
+const Step = (props) => <Wrapper {...props} />;
 
 Step.propTypes = {
   /** Label to be displayed below the stepper dot. */

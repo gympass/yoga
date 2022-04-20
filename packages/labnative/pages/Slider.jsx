@@ -32,7 +32,7 @@ const SliderPage = () => {
           sliderLength={300}
           values={simple}
           step={1}
-          onValuesChange={e => setSimple(e)}
+          onValuesChange={(e) => setSimple(e)}
         />
       </StyledView>
       <StyledView>
@@ -43,7 +43,7 @@ const SliderPage = () => {
           sliderLength={300}
           values={withTooltip}
           step={1}
-          onValuesChange={e => setWithTooltip(e)}
+          onValuesChange={(e) => setWithTooltip(e)}
           tooltip={[
             {
               ribbon: 'Ribbon',
@@ -63,7 +63,7 @@ const SliderPage = () => {
           values={overlapMultiLabel}
           step={1}
           allowOverlap
-          onValuesChange={e => setOverlapMultiLabel(e)}
+          onValuesChange={(e) => setOverlapMultiLabel(e)}
           minLabel={`${overlapMultiLabel[0]} h`}
           maxLabel={`${overlapMultiLabel[1]} h`}
         />
@@ -75,7 +75,7 @@ const SliderPage = () => {
           max={10}
           sliderLength={300}
           values={singleSnapped}
-          onValuesChange={e => setSingleSnapped(e)}
+          onValuesChange={(e) => setSingleSnapped(e)}
           step={1}
           snapped
         />
@@ -85,7 +85,7 @@ const SliderPage = () => {
         <Slider
           max={7}
           min={0}
-          onValuesChange={e => setMultiValues(e)}
+          onValuesChange={(e) => setMultiValues(e)}
           sliderLength={300}
           snapped
           step={1}

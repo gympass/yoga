@@ -13,7 +13,7 @@ const Plan = styled(Card)`
   width: 100%;
   position: relative;
 
-  ${props => {
+  ${(props) => {
     const {
       colors,
       components: {

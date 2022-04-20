@@ -73,7 +73,7 @@ SmallestException.displayName = 'Text.SmallestException';
 
 const TextRenderer = styledText('p');
 
-const Text = props => <TextRenderer {...props} />;
+const Text = (props) => <TextRenderer {...props} />;
 
 Text.displayName = 'Text';
 

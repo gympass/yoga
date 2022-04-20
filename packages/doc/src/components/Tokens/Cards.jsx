@@ -36,7 +36,7 @@ const Card = styled.div`
 const Cards = ({ data, example }) => (
   <Wrapper>
     {data &&
-      data.map(token => (
+      data.map((token) => (
         <Card
           key={token.id}
           property={example.property}

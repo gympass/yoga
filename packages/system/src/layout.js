@@ -1,21 +1,21 @@
 import { toPx } from './unit';
 import { compose, generator, getSpacing } from './theme';
 
-const display = props =>
+const display = (props) =>
   generator({
     props,
     prop: ['display', 'd'],
     cssProperty: 'display',
   });
 
-const position = props =>
+const position = (props) =>
   generator({
     props,
     prop: ['position'],
     cssProperty: 'position',
   });
 
-const top = props =>
+const top = (props) =>
   generator({
     props,
     prop: ['top'],
@@ -24,7 +24,7 @@ const top = props =>
     transform: toPx,
   });
 
-const right = props =>
+const right = (props) =>
   generator({
     props,
     prop: ['right'],
@@ -33,7 +33,7 @@ const right = props =>
     transform: toPx,
   });
 
-const bottom = props =>
+const bottom = (props) =>
   generator({
     props,
     prop: ['bottom'],
@@ -42,7 +42,7 @@ const bottom = props =>
     transform: toPx,
   });
 
-const left = props =>
+const left = (props) =>
   generator({
     props,
     prop: ['left'],
@@ -51,20 +51,13 @@ const left = props =>
     transform: toPx,
   });
 
-const zIndex = props =>
+const zIndex = (props) =>
   generator({
     props,
     prop: ['zIndex'],
     cssProperty: 'zIndex',
   });
 
-const positions = compose(
-  position,
-  top,
-  right,
-  bottom,
-  left,
-  zIndex,
-);
+const positions = compose(position, top, right, bottom, left, zIndex);
 
 export { display, positions, position, top, right, bottom, left, zIndex };

@@ -91,7 +91,7 @@ const Input = React.forwardRef(
   ) => {
     const inputRef = ref || useRef(null);
 
-    const cleanField = e => {
+    const cleanField = (e) => {
       if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
 

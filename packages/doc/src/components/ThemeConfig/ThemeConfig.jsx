@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `;
 
 const ThemeConfig = ({ theme, setTheme }) => {
-  const spacesInPascalCase = word => {
+  const spacesInPascalCase = (word) => {
     const spacedWord = word
       .match(/($[a-z])|[A-Z][^A-Z]+/g)
       .map((item, index) => (index >= 1 ? item.toLowerCase() : item));
@@ -20,10 +20,10 @@ const ThemeConfig = ({ theme, setTheme }) => {
   };
 
   const options = Object.keys(themes)
-    .filter(item => item !== 'default')
-    .map(item => ({ value: item, label: spacesInPascalCase(item) }));
+    .filter((item) => item !== 'default')
+    .map((item) => ({ value: item, label: spacesInPascalCase(item) }));
 
-  const selectedItem = options.filter(item => theme === item.value)[0];
+  const selectedItem = options.filter((item) => theme === item.value)[0];
 
   return (
     <Wrapper>

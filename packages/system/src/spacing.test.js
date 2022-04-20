@@ -59,11 +59,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((s) => expect(s).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -99,11 +99,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -138,11 +138,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -177,11 +177,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -216,11 +216,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -255,11 +255,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -300,11 +300,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -346,11 +346,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -405,11 +405,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -444,11 +444,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -483,11 +483,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -522,11 +522,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -561,11 +561,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -606,11 +606,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -652,11 +652,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -711,11 +711,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -750,11 +750,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -789,11 +789,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -828,11 +828,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -867,11 +867,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -906,11 +906,11 @@ describe('spacings', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroSpacing));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroSpacing));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(m => expect(m).toStrictEqual(expectedMediumSpacing));
+      mediumOptions.map((m) => expect(m).toStrictEqual(expectedMediumSpacing));
     });
 
     it('Should return the value if there is no theme match', () => {

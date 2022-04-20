@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import get from 'lodash.get';
 
-const getFromTheme = props => spec => {
+const getFromTheme = (props) => (spec) => {
   const {
     theme: {
       yoga: { [spec]: matchedSpec },
@@ -11,28 +11,28 @@ const getFromTheme = props => spec => {
   return matchedSpec;
 };
 
-const getSpacing = props => getFromTheme(props)('spacing');
-const getBorder = props => getFromTheme(props)('borders');
-const getBorderRadius = props => getFromTheme(props)('radii');
-const getColor = props => getFromTheme(props)('colors');
-const getFontSize = props => getFromTheme(props)('fontSizes');
-const getFontWeight = props => getFromTheme(props)('fontWeights');
-const getLineHeight = props => getFromTheme(props)('lineHeights');
-const getElevation = props => getFromTheme(props)('elevations');
+const getSpacing = (props) => getFromTheme(props)('spacing');
+const getBorder = (props) => getFromTheme(props)('borders');
+const getBorderRadius = (props) => getFromTheme(props)('radii');
+const getColor = (props) => getFromTheme(props)('colors');
+const getFontSize = (props) => getFromTheme(props)('fontSizes');
+const getFontWeight = (props) => getFromTheme(props)('fontWeights');
+const getLineHeight = (props) => getFromTheme(props)('lineHeights');
+const getElevation = (props) => getFromTheme(props)('elevations');
 
 const generator = ({
   props: componentProps,
   prop,
   cssProperty,
   getter = () => ({}),
-  transform = value => value,
+  transform = (value) => value,
 }) => {
   const themeProp = getter(componentProps);
 
   // If prop is an array, ex: ['border', 'b'], we run the generator for each one
   if (Array.isArray(prop)) {
     return prop
-      .map(p =>
+      .map((p) =>
         generator({
           props: componentProps,
           prop: p,
@@ -66,11 +66,13 @@ const generator = ({
   return css({ [cssProperty]: transformedValue });
 };
 
-const compose = (...functions) => args =>
-  functions
-    .map(fn => fn(args))
-    .flat()
-    .filter(Boolean);
+const compose =
+  (...functions) =>
+  (args) =>
+    functions
+      .map((fn) => fn(args))
+      .flat()
+      .filter(Boolean);
 
 export {
   getFromTheme,

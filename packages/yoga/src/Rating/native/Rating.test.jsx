@@ -73,7 +73,7 @@ describe('<Rating />', () => {
     });
 
     it('should match snapshot with different icon', () => {
-      const CircleIcon = props => (
+      const CircleIcon = (props) => (
         <Svg {...props}>
           <Circle cx={12} cy={12} r={12} />
         </Svg>

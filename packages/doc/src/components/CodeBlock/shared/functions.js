@@ -8,7 +8,7 @@ const injectImport = (imports, componentList, paths, destruct) => {
     const stringPosition = injectedString.indexOf(` } from '${path}'`);
 
     if (stringPosition > -1) {
-      components.forEach(component => {
+      components.forEach((component) => {
         const findComponent = new RegExp(`\\b${component}\\b`, 'gm');
 
         if (!injectedString.match(findComponent)) {
@@ -29,7 +29,7 @@ const injectImport = (imports, componentList, paths, destruct) => {
   return injectedString;
 };
 
-const getCodeFragments = code => {
+const getCodeFragments = (code) => {
   const [codeThatIsntComponent] = code.match(/([.*\s*\S*]*)return/gi) || [];
   const codeBetweenRenderAndReturn = codeThatIsntComponent
     ? codeThatIsntComponent.replace(/\s*render.*/, '').replace(/\s*return/, '')

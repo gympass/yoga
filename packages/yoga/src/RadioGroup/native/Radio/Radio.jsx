@@ -119,9 +119,8 @@ const Shadow = styled.View(
 /** The Radio is a type of selection control that allows the user to select a
  * single option from a list.  */
 const RadioGroupRadio = ({ value, disabled, ...rest }) => {
-  const { onChange, small, selectedValue, ...context } = useContext(
-    RadioGroupContext,
-  );
+  const { onChange, small, selectedValue, ...context } =
+    useContext(RadioGroupContext);
 
   const [pressing, togglePressing] = useState(false);
 

@@ -3,7 +3,7 @@ import { withTheme } from 'styled-components';
 
 import { Wrapper, Content, TextBox } from './FontWeights';
 
-const LHBox = props => (
+const LHBox = (props) => (
   <TextBox bgColor="rgba(215, 215, 224, 0.4)" {...props} />
 );
 

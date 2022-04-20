@@ -10,7 +10,7 @@ const StyledTag = styled(Tag.Informative)`
   align-items: center;
   justify-content: center;
 
-  ${props => {
+  ${(props) => {
     const {
       components: {
         card: { plan },

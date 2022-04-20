@@ -13,8 +13,8 @@ const CodeSandboxButton = () => {
   const createSandbox = () => {
     setLoading(true);
     fetch(URL, setOptions(sandbox))
-      .then(x => x.json())
-      .then(data =>
+      .then((x) => x.json())
+      .then((data) =>
         window.open(
           `https://codesandbox.io/embed/${data.sandbox_id}?fontsize=14&hidenavigation=1`,
           '_blank',

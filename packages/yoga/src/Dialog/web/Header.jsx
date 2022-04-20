@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from '../../Box';
 
-const Header = props => (
+const Header = (props) => (
   <Box
     as="header"
     ta="center"

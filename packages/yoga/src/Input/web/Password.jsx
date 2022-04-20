@@ -92,7 +92,7 @@ const Password = ({ disabled, style, className, full, ...props }) => {
     }
   }, [showPassword]);
 
-  const togglePassword = e => {
+  const togglePassword = (e) => {
     if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
       e.preventDefault();
       toggleShowPassword(!showPassword);

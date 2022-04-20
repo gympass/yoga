@@ -14,15 +14,15 @@ const Wrapper = styled.div`
   `}
 `;
 
-const Content = props => (
+const Content = (props) => (
   <Box display="flex" flexDirection="column" pv="xxsmall" {...props} />
 );
 
-const ThemeProp = props => (
+const ThemeProp = (props) => (
   <Box as="ThemeProp" fs="small" pv="xxsmall" {...props} />
 );
 
-const Border = props => (
+const Border = (props) => (
   <Box w={20} h={20} bColor="secondary" bt="medium" bl="medium" {...props} />
 );
 

@@ -99,7 +99,7 @@ const getMetaData = (isComponent, prefix) => {
 
   const [, component, compound = ''] = window.location.pathname
     .split('/')
-    .filter(path => (prefix ? path && path !== 'yoga' : path));
+    .filter((path) => (prefix ? path && path !== 'yoga' : path));
 
   const filteredEdges = edges.filter(({ node: { displayName } }) => {
     const componentName = `${component}${

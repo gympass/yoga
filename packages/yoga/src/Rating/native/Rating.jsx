@@ -163,7 +163,7 @@ Rating.defaultProps = {
   },
   max: 5,
   readOnly: true,
-  onRate: rating => {}, // eslint-disable-line no-unused-vars
+  onRate: (rating) => {}, // eslint-disable-line no-unused-vars
 };
 
 export default withTheme(Rating);

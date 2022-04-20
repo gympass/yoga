@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   flex-wrap: wrap;
 `;
 
-export const BorderBox = props => (
+export const BorderBox = (props) => (
   <Box
     w={300}
     h={200}
@@ -23,7 +23,7 @@ export const BorderBox = props => (
     {...props}
   />
 );
-export const ThemeBox = props => (
+export const ThemeBox = (props) => (
   <Box
     p="xxxsmall"
     mb="xxxsmall"

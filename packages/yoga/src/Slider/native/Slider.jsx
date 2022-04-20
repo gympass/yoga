@@ -41,7 +41,7 @@ const Slider = ({
     return items;
   };
 
-  const renderTooltip = side => {
+  const renderTooltip = (side) => {
     const tooltipSide = side === 'left' ? 0 : 1;
 
     return tooltip.filter(({ step, visible }) => {

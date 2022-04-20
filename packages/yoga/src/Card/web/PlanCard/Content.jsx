@@ -8,7 +8,7 @@ import Content from '../Card/Content';
 import Subtitle from './Subtitle';
 
 const Title = styled(Text.H5)`
-  ${props => {
+  ${(props) => {
     const {
       components: { card, cardweb },
     } = theme(props);
@@ -36,7 +36,7 @@ const Description = styled(Text.Small)`
 const Price = styled.div`
   display: flex;
 
-  ${props => {
+  ${(props) => {
     const {
       components: { card, cardweb },
     } = theme(props);

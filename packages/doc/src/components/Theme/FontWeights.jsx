@@ -14,11 +14,11 @@ export const Wrapper = styled.div`
   `}
 `;
 
-export const Content = props => (
+export const Content = (props) => (
   <Box display="flex" flexDirection="column" pv="medium" {...props} />
 );
 
-export const TextBox = props => <Box as="span" pv="xxxsmall" {...props} />;
+export const TextBox = (props) => <Box as="span" pv="xxxsmall" {...props} />;
 
 const FontWeights = ({ theme }) => (
   <Wrapper>

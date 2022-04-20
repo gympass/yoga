@@ -24,24 +24,27 @@ const buildImportString = (code, modules) => {
   const foundStyledComponents = code.match(findStyledComponents) || [];
 
   modules
-    .sort(a => (a.path.match(sortModules) ? -1 : 0))
+    .sort((a) => (a.path.match(sortModules) ? -1 : 0))
     .forEach(({ name, path }) => {
       const moduleComponents = {
         components: [
           ...new Set(
-            foundComponents.map(c => c.replace(/<|: |{/, '')).filter(c => c),
+            foundComponents
+              .map((c) => c.replace(/<|: |{/, ''))
+              .filter((c) => c),
           ),
           ...new Set(
             foundStyledComponents
-              .map(c => c.replace(/styled\(/, ''))
-              .filter(c => c),
+              .map((c) => c.replace(/styled\(/, ''))
+              .filter((c) => c),
           ),
         ]
-          .filter(importedComponent =>
+          .filter((importedComponent) =>
             Object.keys(name).includes(importedComponent),
           )
           .filter(
-            item => !imports.filter(c => c.components.includes(item)).length,
+            (item) =>
+              !imports.filter((c) => c.components.includes(item)).length,
           ),
         path,
       };
@@ -69,7 +72,7 @@ const peerDependencies = Object.keys({
   ...iconsPkg.peerDependencies,
   ...systemPkg.peerDependencies,
   'react-is': '*',
-}).map(pkg => ({ path: pkg }));
+}).map((pkg) => ({ path: pkg }));
 
 const CodeBlock = ({ children: sampleCode, center, state, type }) => {
   const code = sampleCode.trim();

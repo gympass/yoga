@@ -9,7 +9,7 @@ import {
 
 import { fontWeight } from './fontWeight';
 
-const color = props =>
+const color = (props) =>
   generator({
     props,
     prop: ['color', 'c'],
@@ -17,7 +17,7 @@ const color = props =>
     getter: getColor,
   });
 
-const fontSize = props =>
+const fontSize = (props) =>
   generator({
     props,
     prop: ['fontSize', 'fs'],
@@ -26,7 +26,7 @@ const fontSize = props =>
     transform: toPx,
   });
 
-const lineHeight = props =>
+const lineHeight = (props) =>
   generator({
     props,
     prop: ['lineHeight', 'lh'],
@@ -35,19 +35,13 @@ const lineHeight = props =>
     transform: toPx,
   });
 
-const textAlign = props =>
+const textAlign = (props) =>
   generator({
     props,
     prop: ['textAlign', 'ta'],
     cssProperty: 'text-align',
   });
 
-const typography = compose(
-  color,
-  fontSize,
-  fontWeight,
-  lineHeight,
-  textAlign,
-);
+const typography = compose(color, fontSize, fontWeight, lineHeight, textAlign);
 
 export { fontSize, fontWeight, color, lineHeight, textAlign, typography };

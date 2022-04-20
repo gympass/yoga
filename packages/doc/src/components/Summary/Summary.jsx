@@ -78,7 +78,7 @@ Anchor.propTypes = {
 
 const AnchorList = ({ anchors }) => (
   <StyledList>
-    {anchors.map(anchor => (
+    {anchors.map((anchor) => (
       <Anchor key={anchor.id} {...anchor} />
     ))}
   </StyledList>
@@ -103,7 +103,7 @@ const Summary = () => {
         const headings = Array.from(
           document.querySelectorAll('h2, h3, h4, h5, h6'),
         )
-          .filter(item => item.id)
+          .filter((item) => item.id)
           .map(({ tagName: [, level], textContent: value, id }) => ({
             depth: Number(level),
             value,

@@ -92,16 +92,16 @@ const TabbedView = ({ children }) => {
     const childrenArray = React.Children.toArray(children);
     const [, href] = hasWindow ? window.location.href.split('#') : [];
 
-    childrenArray.find(a => a.props.title === href);
+    childrenArray.find((a) => a.props.title === href);
 
     const activeTab = childrenArray.find(
-      child => child.props.title.toLowerCase() === href,
+      (child) => child.props.title.toLowerCase() === href,
     );
 
     setCurrentTab(childrenArray.indexOf(activeTab) <= 0 ? 0 : 1);
   });
 
-  const onTabClick = tab => {
+  const onTabClick = (tab) => {
     setCurrentTab(children.indexOf(tab));
 
     if (hasWindow) {
@@ -116,7 +116,7 @@ const TabbedView = ({ children }) => {
       <Navbar>
         {React.Children.map(
           children,
-          tab =>
+          (tab) =>
             tab && (
               <NavItem
                 key={tab.props.title}
@@ -129,7 +129,7 @@ const TabbedView = ({ children }) => {
         )}
       </Navbar>
 
-      {React.Children.map(children, child =>
+      {React.Children.map(children, (child) =>
         renderIf(children.indexOf(child) === currentTab, () => child),
       )}
     </>

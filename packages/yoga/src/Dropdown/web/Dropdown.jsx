@@ -264,8 +264,8 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
   `}
 `;
 
-const getSelectedOption = options =>
-  options.find(item => item.selected === true);
+const getSelectedOption = (options) =>
+  options.find((item) => item.selected === true);
 
 /** Gympass Dropdown is a multiple choice type of menu. */
 const Dropdown = ({
@@ -280,7 +280,7 @@ const Dropdown = ({
   <Downshift
     initialSelectedItem={getSelectedOption(options)}
     selectedItemChanged={(prevItem, item) => prevItem !== item}
-    itemToString={item => (item ? item.label : '')}
+    itemToString={(item) => (item ? item.label : '')}
     onChange={onChange}
   >
     {({

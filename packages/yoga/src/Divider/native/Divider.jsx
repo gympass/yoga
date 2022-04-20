@@ -20,7 +20,7 @@ const StyledDivider = styled.View`
   }}
 `;
 
-const Divider = props => {
+const Divider = (props) => {
   const { vertical } = props;
 
   return <StyledDivider vertical={vertical} />;

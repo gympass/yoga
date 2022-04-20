@@ -78,11 +78,11 @@ const Password = ({
         secureTextEntry={!showPassword}
         textContentType="password"
         onSubmitEditing={() => Keyboard.dismiss()}
-        onBlur={e => {
+        onBlur={(e) => {
           setFocused(false);
           onBlur(e);
         }}
-        onFocus={e => {
+        onFocus={(e) => {
           setFocused(true);
           onFocus(e);
         }}

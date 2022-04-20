@@ -86,7 +86,7 @@ const TextArea = React.forwardRef(
             typed={typed}
             error={error}
             value={textAreaValue}
-            onChange={e => {
+            onChange={(e) => {
               setTextAreaValue(e.target.value);
               setTyped(Boolean(e.target.value));
               onChange(e);

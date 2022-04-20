@@ -33,8 +33,8 @@ const GrayLine = styled.View(
 const RadioGroup = ({ onChange, selectedValue, small, children, ...rest }) => {
   const [groupSize, setGroupSize] = useState(0);
 
-  const isButton = React.Children.map(children, child => child.type).every(
-    child => child === RadioButton,
+  const isButton = React.Children.map(children, (child) => child.type).every(
+    (child) => child === RadioButton,
   );
 
   return (

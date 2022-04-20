@@ -22,7 +22,7 @@ import weights from './font-weights';
 const fonts = [
   {
     family: 'Rubik',
-    weight: [...weights, ...weights.map(weight => `${weight}i`)],
+    weight: [...weights, ...weights.map((weight) => `${weight}i`)],
   },
 ];
 

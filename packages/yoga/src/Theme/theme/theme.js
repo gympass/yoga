@@ -2,7 +2,7 @@
 import { merge } from '@gympass/yoga-common';
 import * as componentThemes from '../../**/*.theme.js';
 
-const getComponentThemes = tokens => {
+const getComponentThemes = (tokens) => {
   const { colors, baseFont, baseFontSize } = tokens;
   const components = Object.entries(componentThemes).reduce(
     (componentsStyles, [names, themed]) => {
@@ -24,7 +24,7 @@ const getComponentThemes = tokens => {
   return { components };
 };
 
-const theme = tokens => {
+const theme = (tokens) => {
   const baseFont = tokens.fonts.rubik;
   const baseFontSize = tokens.fontSizes.medium;
 
@@ -49,18 +49,12 @@ const theme = tokens => {
     },
   };
 
-  [
-    colors.feedback.success.light,
-    colors.feedback.success.dark,
-  ] = colors.feedback.success;
-  [
-    colors.feedback.informative.light,
-    colors.feedback.informative.dark,
-  ] = colors.feedback.informative;
-  [
-    colors.feedback.attention.light,
-    colors.feedback.attention.dark,
-  ] = colors.feedback.attention;
+  [colors.feedback.success.light, colors.feedback.success.dark] =
+    colors.feedback.success;
+  [colors.feedback.informative.light, colors.feedback.informative.dark] =
+    colors.feedback.informative;
+  [colors.feedback.attention.light, colors.feedback.attention.dark] =
+    colors.feedback.attention;
 
   return {
     ...tokens,

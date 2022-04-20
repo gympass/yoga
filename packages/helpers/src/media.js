@@ -9,7 +9,7 @@ const media = {
   not: {},
 };
 
-export const not = isNot => (isNot ? 'not all and ' : '');
+export const not = (isNot) => (isNot ? 'not all and ' : '');
 
 const availableBreakpoints = Object.keys(breakpoints);
 
@@ -36,21 +36,22 @@ const getRange = (width, range) => {
   }
 };
 
-export const matcher = (width, isNot = false, range = 'min') => (
-  ...style
-) => css`
-  @media ${not(isNot)}${getRange(width, range)} {
-    ${css(...style)}
-  }
-`;
+export const matcher =
+  (width, isNot = false, range = 'min') =>
+  (...style) =>
+    css`
+      @media ${not(isNot)}${getRange(width, range)} {
+        ${css(...style)}
+      }
+    `;
 
-availableBreakpoints.forEach(breakpoint => {
+availableBreakpoints.forEach((breakpoint) => {
   media[breakpoint] = matcher(breakpoint);
   media.not[breakpoint] = matcher(breakpoint, true);
 });
 
-media.max = width => matcher(width, false, 'max');
-media.not.max = width => matcher(width, true, 'max');
+media.max = (width) => matcher(width, false, 'max');
+media.not.max = (width) => matcher(width, true, 'max');
 
 media.between = (min, max) => matcher([min, max], false, 'max');
 media.not.between = (min, max) => matcher([min, max], true, 'max');

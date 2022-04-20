@@ -5,7 +5,7 @@ import { handleItems, handleNavigation } from './nav';
 
 import { Layout } from '../components';
 
-const MDXRuntimeTest = props => {
+const MDXRuntimeTest = (props) => {
   const { data, children } = props;
 
   if (!data) {
@@ -24,7 +24,7 @@ const MDXRuntimeTest = props => {
 };
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     site {
       siteMetadata {
         title

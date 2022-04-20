@@ -21,7 +21,7 @@ const SORTING = {
  * @param {string} kind - 'alphabetic' or 'order', default to 'order'
  * @returns {function} - sorting function
  */
-const getSorting = kind =>
+const getSorting = (kind) =>
   ({
     [SORTING.orderAscending]: (a, b) => (a.order > b.order ? 1 : -1),
     [SORTING.alphabeticAscending]: (a, b) => (a.title > b.title ? 1 : -1),
@@ -84,7 +84,7 @@ const StyledList = styled(MDXElements.Ul)`
 `;
 
 const ChevronContainer = styled.div.attrs({
-  rotation: props => (props.isOpen ? 180 : 0),
+  rotation: (props) => (props.isOpen ? 180 : 0),
 })`
   > svg {
     width: 0.6rem;
@@ -156,7 +156,7 @@ const ListItem = ({
   const isLink = !hasChildren;
 
   const filteredUrl = `/${[
-    ...new Set(url.split('/').filter(item => item)),
+    ...new Set(url.split('/').filter((item) => item)),
   ].join('/')}`;
 
   const { pathname } = window.location;
@@ -225,7 +225,7 @@ ListItem.propTypes = {
 };
 
 const List = ({ tree, level, toggleMenu, prefix }) => {
-  const sortingFunction = Object.keys(tree).some(child => tree[child]?.order)
+  const sortingFunction = Object.keys(tree).some((child) => tree[child]?.order)
     ? SORTING.orderAscending
     : SORTING.alphabeticAscending;
 

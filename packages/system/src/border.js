@@ -7,7 +7,7 @@ import {
   compose,
 } from './theme';
 
-const transform = value => {
+const transform = (value) => {
   if (Number(value) && value !== 0) {
     return `${toPx(value)} solid`;
   }
@@ -19,7 +19,7 @@ const transform = value => {
   return value;
 };
 
-const border = props =>
+const border = (props) =>
   generator({
     props,
     prop: ['border', 'b'],
@@ -28,7 +28,7 @@ const border = props =>
     transform,
   });
 
-const borderTop = props =>
+const borderTop = (props) =>
   generator({
     props,
     prop: ['borderTop', 'bt'],
@@ -37,7 +37,7 @@ const borderTop = props =>
     transform,
   });
 
-const borderRight = props =>
+const borderRight = (props) =>
   generator({
     props,
     prop: ['borderRight', 'br'],
@@ -46,7 +46,7 @@ const borderRight = props =>
     transform,
   });
 
-const borderBottom = props =>
+const borderBottom = (props) =>
   generator({
     props,
     prop: ['borderBottom', 'bb'],
@@ -55,7 +55,7 @@ const borderBottom = props =>
     transform,
   });
 
-const borderLeft = props =>
+const borderLeft = (props) =>
   generator({
     props,
     prop: ['borderLeft', 'bl'],
@@ -64,7 +64,7 @@ const borderLeft = props =>
     transform,
   });
 
-const borderColor = props =>
+const borderColor = (props) =>
   generator({
     props,
     prop: ['borderColor', 'bc'],
@@ -72,7 +72,7 @@ const borderColor = props =>
     getter: getColor,
   });
 
-const borderTopColor = props =>
+const borderTopColor = (props) =>
   generator({
     props,
     prop: ['borderTopColor', 'btc'],
@@ -80,7 +80,7 @@ const borderTopColor = props =>
     getter: getColor,
   });
 
-const borderRightColor = props =>
+const borderRightColor = (props) =>
   generator({
     props,
     prop: ['borderRightColor', 'brc'],
@@ -88,7 +88,7 @@ const borderRightColor = props =>
     getter: getColor,
   });
 
-const borderBottomColor = props =>
+const borderBottomColor = (props) =>
   generator({
     props,
     prop: ['borderBottomColor', 'bbc'],
@@ -96,7 +96,7 @@ const borderBottomColor = props =>
     getter: getColor,
   });
 
-const borderLeftColor = props =>
+const borderLeftColor = (props) =>
   generator({
     props,
     prop: ['borderLeftColor', 'blc'],
@@ -104,7 +104,7 @@ const borderLeftColor = props =>
     getter: getColor,
   });
 
-const borderWidth = props =>
+const borderWidth = (props) =>
   generator({
     props,
     prop: ['borderWidth', 'bw'],
@@ -113,7 +113,7 @@ const borderWidth = props =>
     transform: toPx,
   });
 
-const borderTopWidth = props =>
+const borderTopWidth = (props) =>
   generator({
     props,
     prop: ['borderTopWidth', 'btw'],
@@ -122,7 +122,7 @@ const borderTopWidth = props =>
     transform: toPx,
   });
 
-const borderRightWidth = props =>
+const borderRightWidth = (props) =>
   generator({
     props,
     prop: ['borderRightWidth', 'brw'],
@@ -131,7 +131,7 @@ const borderRightWidth = props =>
     transform: toPx,
   });
 
-const borderBottomWidth = props =>
+const borderBottomWidth = (props) =>
   generator({
     props,
     prop: ['borderBottomWidth', 'bbw'],
@@ -140,7 +140,7 @@ const borderBottomWidth = props =>
     transform: toPx,
   });
 
-const borderLeftWidth = props =>
+const borderLeftWidth = (props) =>
   generator({
     props,
     prop: ['borderLeftWidth', 'blw'],
@@ -149,7 +149,7 @@ const borderLeftWidth = props =>
     transform: toPx,
   });
 
-const borderRadius = props =>
+const borderRadius = (props) =>
   generator({
     props,
     prop: ['borderRadius', 'bRadius'],
@@ -158,7 +158,7 @@ const borderRadius = props =>
     transform: toPx,
   });
 
-const borderTopLeftRadius = props =>
+const borderTopLeftRadius = (props) =>
   generator({
     props,
     prop: ['borderTopLeftRadius', 'btlr'],
@@ -167,7 +167,7 @@ const borderTopLeftRadius = props =>
     transform: toPx,
   });
 
-const borderTopRightRadius = props =>
+const borderTopRightRadius = (props) =>
   generator({
     props,
     prop: ['borderTopRightRadius', 'btrr'],
@@ -176,7 +176,7 @@ const borderTopRightRadius = props =>
     transform: toPx,
   });
 
-const borderBottomLeftRadius = props =>
+const borderBottomLeftRadius = (props) =>
   generator({
     props,
     prop: ['borderBottomLeftRadius', 'bblr'],
@@ -185,7 +185,7 @@ const borderBottomLeftRadius = props =>
     transform: toPx,
   });
 
-const borderBottomRightRadius = props =>
+const borderBottomRightRadius = (props) =>
   generator({
     props,
     prop: ['borderBottomRightRadius', 'bbrr'],

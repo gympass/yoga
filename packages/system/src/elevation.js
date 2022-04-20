@@ -1,6 +1,6 @@
 import { getElevation, generator } from './theme';
 
-const elevation = props =>
+const elevation = (props) =>
   generator({
     props,
     prop: ['boxShadow', 'bs', 'elevation'],

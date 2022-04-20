@@ -2,98 +2,98 @@ import { compose, generator, getSpacing } from './theme';
 
 import { toPx } from './unit';
 
-const flexDirection = props =>
+const flexDirection = (props) =>
   generator({
     props,
     prop: ['flexDirection'],
     cssProperty: 'flexDirection',
   });
 
-const alignItems = props =>
+const alignItems = (props) =>
   generator({
     props,
     prop: ['alignItems'],
     cssProperty: 'alignItems',
   });
 
-const alignContent = props =>
+const alignContent = (props) =>
   generator({
     props,
     prop: ['alignContent'],
     cssProperty: 'alignContent',
   });
 
-const alignSelf = props =>
+const alignSelf = (props) =>
   generator({
     props,
     prop: ['alignSelf'],
     cssProperty: 'alignSelf',
   });
 
-const justifyContent = props =>
+const justifyContent = (props) =>
   generator({
     props,
     prop: ['justifyContent'],
     cssProperty: 'justifyContent',
   });
 
-const justifySelf = props =>
+const justifySelf = (props) =>
   generator({
     props,
     prop: ['justifySelf'],
     cssProperty: 'justifySelf',
   });
 
-const flex = props =>
+const flex = (props) =>
   generator({
     props,
     prop: ['flex'],
     cssProperty: 'flex',
   });
 
-const flexBasis = props =>
+const flexBasis = (props) =>
   generator({
     props,
     prop: ['flexBasis'],
     cssProperty: 'flexBasis',
   });
 
-const flexFlow = props =>
+const flexFlow = (props) =>
   generator({
     props,
     prop: ['flexFlow'],
     cssProperty: 'flexFlow',
   });
 
-const flexGrow = props =>
+const flexGrow = (props) =>
   generator({
     props,
     prop: ['flexGrow'],
     cssProperty: 'flexGrow',
   });
 
-const flexShrink = props =>
+const flexShrink = (props) =>
   generator({
     props,
     prop: ['flexShrink'],
     cssProperty: 'flexShrink',
   });
 
-const flexWrap = props =>
+const flexWrap = (props) =>
   generator({
     props,
     prop: ['flexWrap'],
     cssProperty: 'flexWrap',
   });
 
-const order = props =>
+const order = (props) =>
   generator({
     props,
     prop: ['order'],
     cssProperty: 'order',
   });
 
-const gap = props =>
+const gap = (props) =>
   generator({
     props,
     prop: ['gap'],

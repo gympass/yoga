@@ -3,7 +3,7 @@ import { elevation } from './elevation';
 import { elevation as androidElevation } from './elevation.android';
 
 describe('Web and iOS', () => {
-  const shadow = umbra =>
+  const shadow = (umbra) =>
     Number(umbra) && umbra > 0
       ? `0 ${umbra}px ${umbra * 2}px rgb(0, 0, 0, 0.25)`
       : 'none';
@@ -39,11 +39,11 @@ describe('Web and iOS', () => {
 
       const zeroOptions = [zero1, zero2, zero3];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroElevation));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroElevation));
 
       const smallOptions = [small1, small2, small3];
 
-      smallOptions.map(s => expect(s).toStrictEqual(expectedSmallElevation));
+      smallOptions.map((s) => expect(s).toStrictEqual(expectedSmallElevation));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -88,11 +88,11 @@ describe('Android', () => {
 
       const zeroOptions = [zero1, zero2, zero3];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroElevation));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroElevation));
 
       const smallOptions = [small1, small2, small3];
 
-      smallOptions.map(s => expect(s).toStrictEqual(expectedSmallElevation));
+      smallOptions.map((s) => expect(s).toStrictEqual(expectedSmallElevation));
     });
 
     it('Should return the value if there is no theme match', () => {

@@ -5,7 +5,7 @@ import { not } from './media';
 const { breakpoints } = tokens;
 const availableBreakpoints = Object.entries(breakpoints);
 
-const hide = isNot =>
+const hide = (isNot) =>
   availableBreakpoints.reduce((acc, [key, breakpoint], index) => {
     if (index === 0) {
       const [, secondBreakpoint] = availableBreakpoints[index + 1];
@@ -40,7 +40,7 @@ const hide = isNot =>
       @media ${not(
           isNot,
         )} (min-width: ${breakpoint.width}px) and (max-width: ${nextBreakpoint.width -
-          1}px) {
+        1}px) {
         display: none !important;
       }
     `;

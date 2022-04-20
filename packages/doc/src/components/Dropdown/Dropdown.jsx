@@ -100,7 +100,7 @@ const Dropdown = ({ width, options, onChange, selectedItem }) => (
     <Downshift
       selectedItem={selectedItem}
       onChange={onChange}
-      itemToString={item => {
+      itemToString={(item) => {
         return item ? item.label : '';
       }}
     >

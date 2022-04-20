@@ -58,7 +58,7 @@ const Dialog = ({ isOpen, children, onClose, ...props }) => {
   const dialogElement = usePortal('dialog');
 
   const closeDialog = useCallback(
-    e => {
+    (e) => {
       if (dialogRef.current === e.target && isOpen && onClose) {
         onClose(e);
       }
@@ -68,7 +68,7 @@ const Dialog = ({ isOpen, children, onClose, ...props }) => {
   );
 
   const keyPress = useCallback(
-    e => {
+    (e) => {
       if (e.key === 'Escape' && isOpen && onClose) {
         onClose(e);
       }

@@ -78,8 +78,8 @@ const Label = styled(Text)`
   `}
 `;
 
-const getSelectedOption = options =>
-  options.find(item => item.selected === true);
+const getSelectedOption = (options) =>
+  options.find((item) => item.selected === true);
 
 /** Gympass Dropdown is a multiple choice type of menu. */
 const Dropdown = ({
@@ -141,7 +141,7 @@ const Dropdown = ({
           cancelActionLabel={cancelActionLabel}
           confirmActionLabel={confirmActionLabel}
           onClose={() => toggleIsOpen(false)}
-          onSelect={item => {
+          onSelect={(item) => {
             toggleIsSelected(item);
             onChange(item);
             toggleIsOpen(false);

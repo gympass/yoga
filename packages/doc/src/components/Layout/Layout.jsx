@@ -94,7 +94,7 @@ const Layout = ({
 
   const prefix =
     typeof window !== 'undefined'
-      ? window.location.pathname.split('/').filter(item => item)[0] === 'yoga'
+      ? window.location.pathname.split('/').filter((item) => item)[0] === 'yoga'
       : false;
 
   return (

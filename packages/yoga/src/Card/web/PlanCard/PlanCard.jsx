@@ -14,7 +14,7 @@ const Plan = styled.article`
 
   overflow: hidden;
 
-  ${props => {
+  ${(props) => {
     const {
       colors,
       components: {

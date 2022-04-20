@@ -4,7 +4,7 @@ import { Box } from '@gympass/yoga';
 
 import { Table } from './Breakpoints';
 
-const Td = props => <Box as="td" {...props} />;
+const Td = (props) => <Box as="td" {...props} />;
 
 const FontSizes = ({ theme }) => (
   <Table>

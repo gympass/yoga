@@ -1,6 +1,6 @@
 import Input from '../Input/Input.theme';
 
-const AutoComplete = tokens => ({
+const AutoComplete = (tokens) => ({
   ...Input(tokens),
   field: {
     backgroundColor: tokens.colors.white,

@@ -3,7 +3,7 @@ import createTheme from './index';
 
 describe('given theme generator:createTheme()', () => {
   it('should generate a callable theme which overrides only received tokens', () => {
-    const generatedTheme = createTheme(yogaTokens => ({
+    const generatedTheme = createTheme((yogaTokens) => ({
       colors: {
         primary: yogaTokens.colors.stamina,
       },

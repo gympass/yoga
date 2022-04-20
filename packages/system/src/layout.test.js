@@ -32,7 +32,7 @@ describe('layout', () => {
 
       const bgOptions = [b, block];
 
-      bgOptions.map(c => expect(c).toStrictEqual(expectedDisplay));
+      bgOptions.map((c) => expect(c).toStrictEqual(expectedDisplay));
     });
   });
 

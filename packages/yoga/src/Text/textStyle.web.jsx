@@ -1,9 +1,10 @@
 import { css } from 'styled-components';
 import defaultStyle from './sharedTextStyle';
 
-const textStyle = type => () => css`
-  ${defaultStyle(type)};
-  ${({ numberOfLines }) => `
+const textStyle = (type) => () =>
+  css`
+    ${defaultStyle(type)};
+    ${({ numberOfLines }) => `
     ${
       numberOfLines
         ? `
@@ -15,6 +16,6 @@ const textStyle = type => () => css`
         : ''
     }
   `}
-`;
+  `;
 
 export default textStyle;

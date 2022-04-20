@@ -14,7 +14,7 @@ const getKeys = (tokensModule, values) => {
   });
 };
 
-const withToken = Component => {
+const withToken = (Component) => {
   const WithToken = ({ token, ...rest }) => {
     const tokensModule = yogaTokensModule[token];
     const tokensValues = [...new Set(Object.values(tokensModule))];

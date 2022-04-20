@@ -5,7 +5,7 @@ import { system } from '@gympass/yoga-system';
 import textStyle from '../textStyle';
 import { deprecated } from '../../shared';
 
-const styledText = type => styled.Text`
+const styledText = (type) => styled.Text`
   ${textStyle(type)}
   ${system}
 `;
@@ -68,7 +68,7 @@ SmallestException.displayName = 'Text.SmallestException';
 
 const TextRenderer = styledText('p');
 
-const Text = props => <TextRenderer {...props} />;
+const Text = (props) => <TextRenderer {...props} />;
 
 Text.displayName = 'Text';
 

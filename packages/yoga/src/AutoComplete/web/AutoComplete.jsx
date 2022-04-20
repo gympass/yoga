@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 import Input from '../../Input/web/Input';
 
-const escapeRegExp = str => str.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
+const escapeRegExp = (str) => str.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
 
 const Wrapper = styled.div`
   position: relative;
@@ -158,7 +158,7 @@ const AutoComplete = ({
   return (
     <Downshift
       selectedItem={userValue}
-      onStateChange={changes => {
+      onStateChange={(changes) => {
         const { selectedItem, inputValue } = changes;
 
         if (selectedItem) {
@@ -190,7 +190,7 @@ const AutoComplete = ({
         );
 
         const suggestionList = options
-          .filter(option => option.match(reg))
+          .filter((option) => option.match(reg))
           .sort((first, second) =>
             first.toLowerCase().indexOf(inputValue) <
             second.toLowerCase().indexOf(inputValue)
@@ -212,7 +212,7 @@ const AutoComplete = ({
             <Input
               {...props}
               full={full}
-              onClean={cleanable => {
+              onClean={(cleanable) => {
                 onClean(cleanable);
                 clearSelection();
               }}

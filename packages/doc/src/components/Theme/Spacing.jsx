@@ -4,7 +4,7 @@ import { Box } from '@gympass/yoga';
 
 import { Table } from './Breakpoints';
 
-const SpaceBox = props => (
+const SpaceBox = (props) => (
   <Box display="inline-block" bgColor="rgba(215, 215, 224, 0.7)" {...props} />
 );
 

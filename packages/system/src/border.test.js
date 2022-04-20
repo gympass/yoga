@@ -61,11 +61,11 @@ describe('borders', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroStyle));
 
       const smallOptions = [small1, small2];
 
-      smallOptions.map(s => expect(s).toStrictEqual(expectedSmallStyle));
+      smallOptions.map((s) => expect(s).toStrictEqual(expectedSmallStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -94,11 +94,11 @@ describe('borders', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroStyle));
 
       const smallOptions = [small1, small2];
 
-      smallOptions.map(s => expect(s).toStrictEqual(expectedSmallStyle));
+      smallOptions.map((s) => expect(s).toStrictEqual(expectedSmallStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -129,11 +129,11 @@ describe('borders', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroStyle));
 
       const smallOptions = [small1, small2];
 
-      smallOptions.map(s => expect(s).toStrictEqual(expectedSmallStyle));
+      smallOptions.map((s) => expect(s).toStrictEqual(expectedSmallStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -164,11 +164,11 @@ describe('borders', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroStyle));
 
       const smallOptions = [small1, small2];
 
-      smallOptions.map(s => expect(s).toStrictEqual(expectedSmallStyle));
+      smallOptions.map((s) => expect(s).toStrictEqual(expectedSmallStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -199,11 +199,11 @@ describe('borders', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroStyle));
 
       const smallOptions = [small1, small2];
 
-      smallOptions.map(s => expect(s).toStrictEqual(expectedSmallStyle));
+      smallOptions.map((s) => expect(s).toStrictEqual(expectedSmallStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -234,11 +234,11 @@ describe('borders', () => {
 
       const vibinOptions = [vibin1, vibin2];
 
-      vibinOptions.map(z => expect(z).toStrictEqual(vibinStyle));
+      vibinOptions.map((z) => expect(z).toStrictEqual(vibinStyle));
 
       const hopeOptions = [hope1, hope2];
 
-      hopeOptions.map(s => expect(s).toStrictEqual(hopeStyle));
+      hopeOptions.map((s) => expect(s).toStrictEqual(hopeStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -269,11 +269,11 @@ describe('borders', () => {
 
       const vibinOptions = [vibin1, vibin2];
 
-      vibinOptions.map(z => expect(z).toStrictEqual(vibinStyle));
+      vibinOptions.map((z) => expect(z).toStrictEqual(vibinStyle));
 
       const hopeOptions = [hope1, hope2];
 
-      hopeOptions.map(s => expect(s).toStrictEqual(hopeStyle));
+      hopeOptions.map((s) => expect(s).toStrictEqual(hopeStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -304,11 +304,11 @@ describe('borders', () => {
 
       const vibinOptions = [vibin1, vibin2];
 
-      vibinOptions.map(z => expect(z).toStrictEqual(vibinStyle));
+      vibinOptions.map((z) => expect(z).toStrictEqual(vibinStyle));
 
       const hopeOptions = [hope1, hope2];
 
-      hopeOptions.map(s => expect(s).toStrictEqual(hopeStyle));
+      hopeOptions.map((s) => expect(s).toStrictEqual(hopeStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -339,11 +339,11 @@ describe('borders', () => {
 
       const vibinOptions = [vibin1, vibin2];
 
-      vibinOptions.map(z => expect(z).toStrictEqual(vibinStyle));
+      vibinOptions.map((z) => expect(z).toStrictEqual(vibinStyle));
 
       const hopeOptions = [hope1, hope2];
 
-      hopeOptions.map(s => expect(s).toStrictEqual(hopeStyle));
+      hopeOptions.map((s) => expect(s).toStrictEqual(hopeStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -374,11 +374,11 @@ describe('borders', () => {
 
       const vibinOptions = [vibin1, vibin2];
 
-      vibinOptions.map(z => expect(z).toStrictEqual(vibinStyle));
+      vibinOptions.map((z) => expect(z).toStrictEqual(vibinStyle));
 
       const hopeOptions = [hope1, hope2];
 
-      hopeOptions.map(s => expect(s).toStrictEqual(hopeStyle));
+      hopeOptions.map((s) => expect(s).toStrictEqual(hopeStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -409,11 +409,11 @@ describe('borders', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroStyle));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumStyle));
+      mediumOptions.map((s) => expect(s).toStrictEqual(expectedMediumStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -444,11 +444,11 @@ describe('borders', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroStyle));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumStyle));
+      mediumOptions.map((s) => expect(s).toStrictEqual(expectedMediumStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -479,11 +479,11 @@ describe('borders', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroStyle));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumStyle));
+      mediumOptions.map((s) => expect(s).toStrictEqual(expectedMediumStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -514,11 +514,11 @@ describe('borders', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroStyle));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumStyle));
+      mediumOptions.map((s) => expect(s).toStrictEqual(expectedMediumStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -549,11 +549,11 @@ describe('borders', () => {
 
       const zeroOptions = [zero1, zero2];
 
-      zeroOptions.map(z => expect(z).toStrictEqual(expectedZeroStyle));
+      zeroOptions.map((z) => expect(z).toStrictEqual(expectedZeroStyle));
 
       const mediumOptions = [medium1, medium2];
 
-      mediumOptions.map(s => expect(s).toStrictEqual(expectedMediumStyle));
+      mediumOptions.map((s) => expect(s).toStrictEqual(expectedMediumStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -584,11 +584,11 @@ describe('radius', () => {
 
       const sharpOptions = [sharp1, sharp2];
 
-      sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
+      sharpOptions.map((s) => expect(s).toStrictEqual(expectedSharpStyle));
 
       const roundedOptions = [rounded1, rounded2];
 
-      roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
+      roundedOptions.map((r) => expect(r).toStrictEqual(expectedRoundedStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -623,11 +623,11 @@ describe('radius', () => {
 
       const sharpOptions = [sharp1, sharp2];
 
-      sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
+      sharpOptions.map((s) => expect(s).toStrictEqual(expectedSharpStyle));
 
       const roundedOptions = [rounded1, rounded2];
 
-      roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
+      roundedOptions.map((r) => expect(r).toStrictEqual(expectedRoundedStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -662,11 +662,11 @@ describe('radius', () => {
 
       const sharpOptions = [sharp1, sharp2];
 
-      sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
+      sharpOptions.map((s) => expect(s).toStrictEqual(expectedSharpStyle));
 
       const roundedOptions = [rounded1, rounded2];
 
-      roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
+      roundedOptions.map((r) => expect(r).toStrictEqual(expectedRoundedStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -703,11 +703,11 @@ describe('radius', () => {
 
       const sharpOptions = [sharp1, sharp2];
 
-      sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
+      sharpOptions.map((s) => expect(s).toStrictEqual(expectedSharpStyle));
 
       const roundedOptions = [rounded1, rounded2];
 
-      roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
+      roundedOptions.map((r) => expect(r).toStrictEqual(expectedRoundedStyle));
     });
 
     it('Should return the value if there is no theme match', () => {
@@ -747,11 +747,11 @@ describe('radius', () => {
 
       const sharpOptions = [sharp1, sharp2];
 
-      sharpOptions.map(s => expect(s).toStrictEqual(expectedSharpStyle));
+      sharpOptions.map((s) => expect(s).toStrictEqual(expectedSharpStyle));
 
       const roundedOptions = [rounded1, rounded2];
 
-      roundedOptions.map(r => expect(r).toStrictEqual(expectedRoundedStyle));
+      roundedOptions.map((r) => expect(r).toStrictEqual(expectedRoundedStyle));
     });
 
     it('Should return the value if there is no theme match', () => {

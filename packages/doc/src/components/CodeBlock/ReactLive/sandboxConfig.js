@@ -26,7 +26,7 @@ const getPackage = ([imports, component]) =>
     },
   });
 
-const setOptions = options => ({
+const setOptions = (options) => ({
   method: 'POST',
   headers: {
     'Content-Type': 'application/json',

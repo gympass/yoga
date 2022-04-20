@@ -6,7 +6,7 @@ import Text from '../../../Text';
 const Subtitle = styled(Text.Medium)`
   text-transform: uppercase;
 
-  ${props => {
+  ${(props) => {
     const {
       components: {
         card: { plan },

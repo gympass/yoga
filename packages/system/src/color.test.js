@@ -31,7 +31,7 @@ describe('backgroundColor', () => {
 
     const bgOptions = [bg, bgColor, backGroundColor];
 
-    bgOptions.map(c => expect(c).toStrictEqual(expectedColor));
+    bgOptions.map((c) => expect(c).toStrictEqual(expectedColor));
   });
 
   it('Should return the value based on its path', () => {

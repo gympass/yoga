@@ -1,5 +1,5 @@
 /* eslint-disable no-underscore-dangle */
-const normalizeCSS = rule =>
+const normalizeCSS = (rule) =>
   rule
     .join('\n')
     .replace(/(?:\r\n|\r|\n)/g, '')
@@ -10,12 +10,12 @@ const normalizeCSS = rule =>
     .replace(/:\s+/g, ':')
     .replace(/:\s+;/g, ':;');
 
-const getCSS = scope =>
+const getCSS = (scope) =>
   normalizeCSS(
-    Array.from(scope.querySelectorAll('style')).map(tag => tag.innerHTML),
+    Array.from(scope.querySelectorAll('style')).map((tag) => tag.innerHTML),
   );
 
-const expectCSSMatches = expectation => {
+const expectCSSMatches = (expectation) => {
   const _expectation = normalizeCSS(expectation.split('\n'));
   const css = getCSS(document);
 

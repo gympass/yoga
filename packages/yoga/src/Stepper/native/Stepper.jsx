@@ -34,7 +34,7 @@ const Stepper = ({ children, activeStep, ...rest }) => (
       />
       <Dots
         activeStep={activeStep}
-        labels={React.Children.map(children, child => child.props.label)}
+        labels={React.Children.map(children, (child) => child.props.label)}
       />
     </LineWrapper>
     {React.Children.toArray(children)[activeStep]}

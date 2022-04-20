@@ -110,7 +110,7 @@ describe('<RadioGroup />', () => {
 
         const radios = getAllByTestId('radio');
 
-        radios.map(radio => expect(radio.name).toBe(name));
+        radios.map((radio) => expect(radio.name).toBe(name));
       });
     });
 

@@ -49,7 +49,7 @@ const OptionText = styled.Text`
 const Options = ({ options, selectedOption, onSelect }) => (
   <List
     style={{ height: 60 * 3.6 }}
-    data={options.map(item => item)}
+    data={options.map((item) => item)}
     keyExtractor={(_, index) => index.toString()}
     renderItem={({ item }) => (
       <TouchableWithoutFeedback onPress={() => onSelect(item)}>

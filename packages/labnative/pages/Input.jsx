@@ -27,38 +27,38 @@ const InputPage = () => {
         helper="Helper Text"
         maxLength={20}
         value={defaultValue}
-        onChangeText={text => setDefaultValue(text)}
-        onClean={cleaned => setDefaultValue(cleaned)}
+        onChangeText={(text) => setDefaultValue(text)}
+        onClean={(cleaned) => setDefaultValue(cleaned)}
       />
       <Input
         label="With error"
         error="Please, don't let this field empy"
         value={withErrorValue}
-        onChangeText={text => setWithErrorValue(text)}
-        onClean={cleaned => setWithErrorValue(cleaned)}
+        onChangeText={(text) => setWithErrorValue(text)}
+        onClean={(cleaned) => setWithErrorValue(cleaned)}
       />
       <Input.Email
         label="Email"
         value={emailValue}
-        onChangeText={text => setEmailValue(text)}
-        onClean={cleaned => setEmailValue(cleaned)}
+        onChangeText={(text) => setEmailValue(text)}
+        onClean={(cleaned) => setEmailValue(cleaned)}
       />
       <Input.Number
         label="Number"
         value={numberValue}
-        onChangeText={text => setNumberValue(text)}
-        onClean={cleaned => setNumberValue(cleaned)}
+        onChangeText={(text) => setNumberValue(text)}
+        onClean={(cleaned) => setNumberValue(cleaned)}
       />
       <Input.Password
         label="Password"
         value={passwordValue}
-        onChangeText={text => setPasswordValue(text)}
+        onChangeText={(text) => setPasswordValue(text)}
       />
       <Input.Tel
         label="Telephone"
         value={telValue}
-        onChangeText={text => setTelValue(text)}
-        onClean={cleaned => setTelValue(cleaned)}
+        onChangeText={(text) => setTelValue(text)}
+        onClean={(cleaned) => setTelValue(cleaned)}
       />
       <Input disabled label="Disabled" />
     </ScrollView>

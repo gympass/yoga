@@ -182,11 +182,11 @@ const Checkbox = ({
       <TouchableWithoutFeedback
         {...rest}
         disabled={disabled}
-        onPressIn={e => {
+        onPressIn={(e) => {
           setPressed(true);
           onPressIn(e);
         }}
-        onPressOut={e => {
+        onPressOut={(e) => {
           setPressed(false);
           onPressOut(e);
         }}

@@ -1,6 +1,6 @@
 import { getColor, generator } from './theme';
 
-const backgroundColor = props =>
+const backgroundColor = (props) =>
   generator({
     props,
     prop: ['backgroundColor', 'bg', 'bgColor'],

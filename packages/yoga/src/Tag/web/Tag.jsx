@@ -59,7 +59,7 @@ const StyledTag = styled.div`
 `;
 
 /** Tags should be keywords to categorize or organize an item. */
-const Tag = props => <StyledTag {...props} />;
+const Tag = (props) => <StyledTag {...props} />;
 
 Tag.propTypes = {
   /** style the tag following the theme (success, informative, attention) */

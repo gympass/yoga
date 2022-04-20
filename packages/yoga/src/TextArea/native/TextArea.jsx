@@ -14,7 +14,7 @@ const StyledInput = styled(Input)`
  * lines are increased when the input reaches the limit of lines established for
  * the field. This action creates a vertical scroll inside the component.
  */
-const TextArea = props => (
+const TextArea = (props) => (
   <StyledInput {...props} textAlignVertical="top" multiline cleanable={false} />
 );
 

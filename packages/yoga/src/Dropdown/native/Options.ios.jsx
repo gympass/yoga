@@ -45,14 +45,14 @@ const Options = ({
     <>
       <PickerStyled
         selectedValue={selected && selected.value}
-        onValueChange={itemValue =>
-          setSelected(options.find(option => option.value === itemValue))
+        onValueChange={(itemValue) =>
+          setSelected(options.find((option) => option.value === itemValue))
         }
         itemStyle={{
           fontFamily: baseFont.family,
         }}
       >
-        {options.map(item => (
+        {options.map((item) => (
           <Picker.Item key={item} {...item} />
         ))}
       </PickerStyled>

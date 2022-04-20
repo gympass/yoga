@@ -4,7 +4,7 @@ import { useRef, useEffect } from 'react';
  * Creates DOM element to be used as React root.
  * @returns {HTMLElement}
  */
-const createRootElement = id => {
+const createRootElement = (id) => {
   const rootContainer = document.createElement('div');
 
   rootContainer.setAttribute('id', id);
@@ -15,14 +15,14 @@ const createRootElement = id => {
  * Appends element as last child of body.
  * @param {HTMLElement} rootElement
  */
-const addRootElement = rootElement => {
+const addRootElement = (rootElement) => {
   document.body.insertBefore(
     rootElement,
     document.body.lastElementChild.nextElementSibling,
   );
 };
 
-export const usePortal = id => {
+export const usePortal = (id) => {
   const rootElementRef = useRef(null);
 
   useEffect(() => {

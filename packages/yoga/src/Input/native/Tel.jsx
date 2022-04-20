@@ -1,7 +1,7 @@
 import React from 'react';
 import Input from './Input';
 
-const Tel = props => (
+const Tel = (props) => (
   <Input
     {...props}
     keyboardType="phone-pad"

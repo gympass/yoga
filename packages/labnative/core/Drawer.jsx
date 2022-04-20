@@ -10,7 +10,7 @@ const drawerOptions = {};
 Object.entries(Pages).forEach(([name, Page]) => {
   const navigator = createStackNavigator({
     [name]: {
-      screen: props => (
+      screen: (props) => (
         <CenteredView {...props}>
           <Page />
         </CenteredView>

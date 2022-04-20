@@ -29,7 +29,7 @@ const StyledBottomSheet = styled(Dialog)`
   }
 `;
 
-const BottomSheet = props => <StyledBottomSheet {...props} />;
+const BottomSheet = (props) => <StyledBottomSheet {...props} />;
 
 BottomSheet.propTypes = {
   children: node.isRequired,

@@ -114,7 +114,7 @@ const ReactLive = () => {
 
   return (
     <MDXContext.Consumer>
-      {scope => (
+      {(scope) => (
         <LiveProvider
           code={code}
           scope={{ ...scope, useState, styled }}

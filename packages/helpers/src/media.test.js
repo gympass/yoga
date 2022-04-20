@@ -5,7 +5,7 @@ import media, { matcher, not } from './media';
 
 const { breakpoints } = tokens;
 
-const formatCss = style =>
+const formatCss = (style) =>
   Array.isArray(style)
     ? style.join().replace(/,|\s*/g, '')
     : style.replace(/,|\s*/g, '');
@@ -15,13 +15,13 @@ const expectedStyle = (...args) =>
 padding: 10px;
 `);
 
-const expectedHideStyle = breakpoint =>
+const expectedHideStyle = (breakpoint) =>
   formatCss(`@media (min-width: ${breakpoints[breakpoint].width}px) {
   display: none !important;
 }`);
 
 describe('media', () => {
-  it.each(Object.keys(breakpoints))('.%s', breakpoint => {
+  it.each(Object.keys(breakpoints))('.%s', (breakpoint) => {
     const style = media[breakpoint]`
       padding: 10px;
       `;
@@ -29,7 +29,7 @@ describe('media', () => {
     expect(formatCss(style)).toBe(expectedStyle(breakpoint));
   });
 
-  it.each(Object.keys(breakpoints))('.not.%s', breakpoint => {
+  it.each(Object.keys(breakpoints))('.not.%s', (breakpoint) => {
     const notStyle = media.not[breakpoint]`
         padding: 10px;
       `;
@@ -38,7 +38,7 @@ describe('media', () => {
   });
 
   describe('max', () => {
-    it.each(Object.keys(breakpoints))(".max('%s')", breakpoint => {
+    it.each(Object.keys(breakpoints))(".max('%s')", (breakpoint) => {
       const style = media.max(breakpoint)`
         padding: 10px;
         `;
@@ -46,7 +46,7 @@ describe('media', () => {
       expect(formatCss(style)).toBe(expectedStyle(breakpoint, false, 'max'));
     });
 
-    it.each(Object.keys(breakpoints))(".not.max('%s')", breakpoint => {
+    it.each(Object.keys(breakpoints))(".not.max('%s')", (breakpoint) => {
       const style = media.not.max(breakpoint)`
         padding: 10px;
         `;
@@ -88,7 +88,7 @@ describe('media', () => {
 });
 
 describe('hide', () => {
-  const hideMatchers = isNot => ({
+  const hideMatchers = (isNot) => ({
     xxs: `@media ${not(isNot)} (max-width: ${breakpoints.xs.width}px) {
       display: none !important;
     }`,
@@ -138,7 +138,7 @@ describe('hide', () => {
     },
   );
 
-  it.each(Object.keys(breakpoints))('%s-start', breakpoint => {
+  it.each(Object.keys(breakpoints))('%s-start', (breakpoint) => {
     const style = media.hide[`${breakpoint}-start`];
 
     // skip for xxxl

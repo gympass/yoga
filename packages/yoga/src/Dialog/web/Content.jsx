@@ -1,7 +1,7 @@
 import React from 'react';
 import Box from '../../Box';
 
-const Content = props => (
+const Content = (props) => (
   <Box
     ta="center"
     color="text.secondary"

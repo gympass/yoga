@@ -14,7 +14,7 @@ const Wrapper = styled.div`
   `}
 `;
 
-const ColorBox = props => (
+const ColorBox = (props) => (
   <Box
     display="flex"
     flexDirection="column"
@@ -27,7 +27,7 @@ const ColorBox = props => (
   />
 );
 
-const ColorProp = props => (
+const ColorProp = (props) => (
   <Box
     as="span"
     width="fit-content"

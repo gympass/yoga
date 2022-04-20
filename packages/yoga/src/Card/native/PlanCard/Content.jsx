@@ -8,7 +8,7 @@ import theme from '../../../Theme/helpers/themeReader';
 import Subtitle from './Subtitle';
 
 const Title = styled(Text.H4)`
-  ${props => {
+  ${(props) => {
     const {
       components: { cardnative, card },
     } = theme(props);
@@ -30,7 +30,7 @@ const Description = styled(Text.Small)`
 const Price = styled.View`
   flex-direction: row;
 
-  ${props => {
+  ${(props) => {
     const {
       components: {
         cardnative: { plan },

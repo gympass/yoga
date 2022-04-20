@@ -11,10 +11,10 @@ const withoutKey = (fn, key) =>
   !{}.hasOwnProperty.call(fn, key) || key === 'prototype';
 
 const createFakeObj = (paths, object) => {
-  const fn = props => paths.reduce((acc, path) => acc[path], props);
+  const fn = (props) => paths.reduce((acc, path) => acc[path], props);
 
   // We only need the key to be present, the value does not matter.
-  Object.keys(object).forEach(key => {
+  Object.keys(object).forEach((key) => {
     fn[key] = CACHE_PLACEHOLDER;
   });
 

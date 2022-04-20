@@ -82,7 +82,7 @@ const Tokens = ({ data, example, columns }) => (
         <th>Token</th>
         <th>Alias</th>
         {columns ? (
-          columns.map(column => (
+          columns.map((column) => (
             <th key={column}>{capitalizeFirstLetter(column)}</th>
           ))
         ) : (
@@ -94,12 +94,12 @@ const Tokens = ({ data, example, columns }) => (
     </thead>
     <tbody>
       {data &&
-        data.map(token => (
+        data.map((token) => (
           <tr key={token.id}>
             <td>{token.key}</td>
             <td>{token.alias}</td>
             {columns ? (
-              columns.map(column => {
+              columns.map((column) => {
                 const prop = token.value[column];
 
                 return <td key={prop}>{prop}</td>;

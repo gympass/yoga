@@ -18,7 +18,7 @@ describe('overflow', () => {
 
       const ofOptions = [ofProp, overflowsProp];
 
-      ofOptions.map(c => expect(c).toStrictEqual(expectedOverflow));
+      ofOptions.map((c) => expect(c).toStrictEqual(expectedOverflow));
     });
   });
 
@@ -33,7 +33,7 @@ describe('overflow', () => {
 
       const ofOptions = [ofProp, overflowProp];
 
-      ofOptions.map(c => expect(c).toStrictEqual(expectedOverflow));
+      ofOptions.map((c) => expect(c).toStrictEqual(expectedOverflow));
     });
   });
 
@@ -48,7 +48,7 @@ describe('overflow', () => {
 
       const oxOptions = [oxProp, overflowXProp];
 
-      oxOptions.map(c => expect(c).toStrictEqual(expectedOverflow));
+      oxOptions.map((c) => expect(c).toStrictEqual(expectedOverflow));
     });
   });
 
@@ -63,7 +63,7 @@ describe('overflow', () => {
 
       const oyOptions = [oyProp, overflowYProp];
 
-      oyOptions.map(c => expect(c).toStrictEqual(expectedOverflow));
+      oyOptions.map((c) => expect(c).toStrictEqual(expectedOverflow));
     });
   });
 });

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, TouchableWithoutFeedback } from 'react-native';
 import { element, func } from 'prop-types';
 
-const withTouchable = Component => {
+const withTouchable = (Component) => {
   const WithTouchable = ({
     onPressIn,
     onPressOut,
@@ -14,11 +14,11 @@ const withTouchable = Component => {
 
     return (
       <TouchableWithoutFeedback
-        onPressIn={e => {
+        onPressIn={(e) => {
           setPressed(true);
           onPressIn(e);
         }}
-        onPressOut={e => {
+        onPressOut={(e) => {
           setPressed(false);
           onPressOut(e);
         }}

@@ -1,4 +1,4 @@
-const handleItems = edges =>
+const handleItems = (edges) =>
   edges
     .map(
       ({
@@ -7,14 +7,14 @@ const handleItems = edges =>
         },
       }) => slug,
     )
-    .filter(slug => slug !== '/')
+    .filter((slug) => slug !== '/')
     .sort()
     .reduce((acc, cur) => ({ ...acc, items: [...acc.items, cur] }), {
       items: [],
     });
 
 const handleNavigation = (edges, items) =>
-  items.map(slug => {
+  items.map((slug) => {
     if (slug) {
       const {
         node: {

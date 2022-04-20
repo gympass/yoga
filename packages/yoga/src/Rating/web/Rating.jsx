@@ -56,11 +56,11 @@ const Rating = ({
       mouseOver={hover}
       readOnly={readOnly}
       {...rest}
-      onMouseOver={e => {
+      onMouseOver={(e) => {
         setHover(true);
         onMouseOver(e);
       }}
-      onMouseMove={e => {
+      onMouseMove={(e) => {
         setCurrentRating(
           Math.ceil(
             (e.clientX - e.target.offsetLeft) /
@@ -70,7 +70,7 @@ const Rating = ({
 
         onMouseMove(e);
       }}
-      onMouseLeave={e => {
+      onMouseLeave={(e) => {
         setHover(false);
         setCurrentRating(0);
         onMouseLeave(e);
@@ -161,7 +161,7 @@ Rating.defaultProps = {
   },
   max: 5,
   readOnly: true,
-  onRate: rating => {}, // eslint-disable-line no-unused-vars
+  onRate: (rating) => {}, // eslint-disable-line no-unused-vars
   onMouseOver: () => {},
   onMouseMove: () => {},
   onMouseLeave: () => {},

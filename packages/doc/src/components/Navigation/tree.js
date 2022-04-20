@@ -4,7 +4,7 @@ const createObjectNesting = (routes, { title, url, linkable, order, open }) => {
   const newObj = {};
   let temp = newObj;
 
-  routes.forEach(item => {
+  routes.forEach((item) => {
     /* eslint-disable-next-line */
     temp = temp[item] = {
       title,
@@ -18,13 +18,13 @@ const createObjectNesting = (routes, { title, url, linkable, order, open }) => {
   return newObj;
 };
 
-const createTree = items => {
-  const filteredItems = items.filter(item => item);
+const createTree = (items) => {
+  const filteredItems = items.filter((item) => item);
 
   let allRoutes = {};
 
   filteredItems.forEach(({ title, url, linkable, order, open }) => {
-    const explodedUrl = url.split('/').filter(item => item);
+    const explodedUrl = url.split('/').filter((item) => item);
     const routeObj = createObjectNesting(explodedUrl, {
       title,
       url,

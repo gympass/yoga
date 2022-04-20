@@ -247,11 +247,11 @@ const Input = ({
         textContentType={textContentType}
         typed={typed}
         value={value}
-        onFocus={e => {
+        onFocus={(e) => {
           setFocused(true);
           onFocus(e);
         }}
-        onBlur={e => {
+        onBlur={(e) => {
           setFocused(false);
           onBlur(e);
         }}

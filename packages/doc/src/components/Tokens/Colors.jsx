@@ -45,7 +45,7 @@ const SubColors = ({ token }) => {
 const Colors = ({ data, ...rest }) => (
   <Wrapper {...rest}>
     {data &&
-      data.map(color => (
+      data.map((color) => (
         <ColorPallete key={color.id}>
           <Title>{color.id}</Title>
           <SubColors token={color} />

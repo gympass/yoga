@@ -1,12 +1,12 @@
 import { getFontWeight, generator } from './theme';
 
-export const fontWeight = props =>
+export const fontWeight = (props) =>
   generator({
     props,
     prop: ['fontWeight', 'fw'],
     cssProperty: 'font-family',
     getter: getFontWeight,
-    transform: value => {
+    transform: (value) => {
       if (!value) {
         return undefined;
       }

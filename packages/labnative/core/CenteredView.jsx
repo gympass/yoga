@@ -3,7 +3,7 @@ import { View, Text, Switch } from 'react-native';
 import { ThemeProvider } from '@gympass/yoga';
 import { ThemeConsumer } from 'styled-components';
 
-const CenteredView = props => {
+const CenteredView = (props) => {
   const [darkMode, setDarkMode] = useState('#FFF');
 
   return (
@@ -20,7 +20,7 @@ const CenteredView = props => {
           }}
         >
           <ThemeConsumer>
-            {theme => (
+            {(theme) => (
               <View
                 style={{
                   alignItems: 'center',

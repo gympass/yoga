@@ -51,7 +51,7 @@ const Link = styled(Button)`
   }}
 `;
 
-const ButtonLink = props => <Link {...props} />;
+const ButtonLink = (props) => <Link {...props} />;
 
 ButtonLink.propTypes = {
   disabled: bool,

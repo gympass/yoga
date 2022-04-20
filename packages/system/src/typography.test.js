@@ -24,7 +24,7 @@ const fontWeights = [300, 500, 900];
 
 const baseFont = {
   family: 'Rubik',
-  weight: [...fontWeights, ...fontWeights.map(weight => `${weight}i`)],
+  weight: [...fontWeights, ...fontWeights.map((weight) => `${weight}i`)],
 };
 
 const colors = {
@@ -86,7 +86,7 @@ describe('Web and iOS', () => {
 
         const fontSizesOptions = [fs1, fs2];
 
-        fontSizesOptions.map(c => expect(c).toStrictEqual(expectedFontSize));
+        fontSizesOptions.map((c) => expect(c).toStrictEqual(expectedFontSize));
       });
 
       it('Should return the value if there is no theme match', () => {
@@ -109,7 +109,7 @@ describe('Web and iOS', () => {
 
         const fontWeightsOptions = [fw1, fw2];
 
-        fontWeightsOptions.map(c =>
+        fontWeightsOptions.map((c) =>
           expect(c).toStrictEqual(expectedFontWeight),
         );
       });
@@ -136,7 +136,7 @@ describe('Web and iOS', () => {
 
         const lineHeightsOptions = [lh1, lh2];
 
-        lineHeightsOptions.map(c =>
+        lineHeightsOptions.map((c) =>
           expect(c).toStrictEqual(expectedLineHeight),
         );
       });
@@ -161,7 +161,7 @@ describe('Web and iOS', () => {
 
         const colorOptions = [c1, c2];
 
-        colorOptions.map(c => expect(c).toStrictEqual(expectedColor));
+        colorOptions.map((c) => expect(c).toStrictEqual(expectedColor));
       });
 
       it('Should return the color based on its path', () => {
@@ -192,7 +192,9 @@ describe('Web and iOS', () => {
 
         const textAlignOptions = [ta1, ta2];
 
-        textAlignOptions.map(ta => expect(ta).toStrictEqual(expectedTextAlign));
+        textAlignOptions.map((ta) =>
+          expect(ta).toStrictEqual(expectedTextAlign),
+        );
       });
     });
   });
@@ -223,7 +225,7 @@ describe('Android', () => {
 
         const fontWeightsOptions = [fw1, fw2];
 
-        fontWeightsOptions.map(c =>
+        fontWeightsOptions.map((c) =>
           expect(c).toStrictEqual(expectedFontFamily),
         );
       });

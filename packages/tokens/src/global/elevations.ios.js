@@ -30,11 +30,7 @@ const elevations = elevate({
   fallback: true,
 });
 
-[
-  elevations.zero,
-  elevations.small,
-  elevations.medium,
-  elevations.large,
-] = elevations;
+[elevations.zero, elevations.small, elevations.medium, elevations.large] =
+  elevations;
 
 export default elevations;

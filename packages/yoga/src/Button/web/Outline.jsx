@@ -105,7 +105,7 @@ const Outline = styled(Button)`
   }}
 `;
 
-const ButtonOutline = props => <Outline {...props} />;
+const ButtonOutline = (props) => <Outline {...props} />;
 
 ButtonOutline.propTypes = {
   disabled: bool,
