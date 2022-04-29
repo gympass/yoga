@@ -12,7 +12,6 @@ const StyledBanner = styled.View`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   ${({
     variant,
     theme: {
@@ -39,8 +38,8 @@ const StyledBanner = styled.View`
 `;
 
 /** A banner is a component that displays a prominent message. It can have a related actions button on it or not. */
-const Banner = ({ variant, message, button }) => (
-  <StyledBanner variant={variant}>
+const Banner = ({ variant, message, button, ...props }) => (
+  <StyledBanner variant={variant} {...props}>
     <Text.Small flex={1} marginVertical="xxxsmall">
       {message}
     </Text.Small>
