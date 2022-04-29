@@ -6,6 +6,7 @@ import { func, oneOf, shape, string } from 'prop-types';
 
 import Text from '../../Text';
 import Button from '../../Button';
+import Box from '../../Box';
 
 const StyledBanner = styled.View`
   display: flex;
@@ -17,6 +18,7 @@ const StyledBanner = styled.View`
     theme: {
       yoga: {
         components: { banner },
+        spacing,
         colors: {
           feedback: {
             [variant]: backgroundColor = {
@@ -28,10 +30,8 @@ const StyledBanner = styled.View`
     },
   }) => `
     background-color: ${backgroundColor.light};
-    padding: ${banner.padding.top}px
-      ${banner.padding.right}px
-      ${banner.padding.bottom}px
-      ${banner.padding.left}px;
+    padding: ${spacing.xsmall}px
+      ${spacing.small}px;
     border-radius: ${banner.border.radius}px;
   `}
 
@@ -40,11 +40,19 @@ const StyledBanner = styled.View`
 
 const Banner = ({ variant, message, button }) => (
   <StyledBanner variant={variant}>
-    <Text.Small flex={1}>{message}</Text.Small>
+    <Text.Small flex={1} marginVertical="xxxsmall">
+      {message}
+    </Text.Small>
     {!!button && (
-      <Button.Link marginLeft="small" secondary onPress={button.action}>
+      <Box
+        as={Button.Text}
+        marginLeft="xxsmall"
+        small
+        secondary
+        onPress={button.action}
+      >
         {button.label}
-      </Button.Link>
+      </Box>
     )}
   </StyledBanner>
 );

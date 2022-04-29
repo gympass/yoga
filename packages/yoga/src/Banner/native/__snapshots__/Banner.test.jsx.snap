@@ -20,10 +20,10 @@ exports[`<Banner /> should match snapshot 1`] = `
           "display": "flex",
           "flexDirection": "row",
           "justifyContent": "center",
-          "paddingBottom": 16,
+          "paddingBottom": 12,
           "paddingLeft": 16,
           "paddingRight": 16,
-          "paddingTop": 16,
+          "paddingTop": 12,
         },
       ]
     }
@@ -31,6 +31,7 @@ exports[`<Banner /> should match snapshot 1`] = `
   >
     <Text
       flex={1}
+      marginVertical="xxxsmall"
       style={
         Array [
           Object {
@@ -42,6 +43,8 @@ exports[`<Banner /> should match snapshot 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "lineHeight": 20,
+            "marginBottom": 4,
+            "marginTop": 4,
           },
         ]
       }
@@ -72,10 +75,10 @@ exports[`<Banner /> should match snapshot with button 1`] = `
           "display": "flex",
           "flexDirection": "row",
           "justifyContent": "center",
-          "paddingBottom": 16,
+          "paddingBottom": 12,
           "paddingLeft": 16,
           "paddingRight": 16,
-          "paddingTop": 16,
+          "paddingTop": 12,
         },
       ]
     }
@@ -83,6 +86,7 @@ exports[`<Banner /> should match snapshot with button 1`] = `
   >
     <Text
       flex={1}
+      marginVertical="xxxsmall"
       style={
         Array [
           Object {
@@ -94,6 +98,8 @@ exports[`<Banner /> should match snapshot with button 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "lineHeight": 20,
+            "marginBottom": 4,
+            "marginTop": 4,
           },
         ]
       }
@@ -101,8 +107,16 @@ exports[`<Banner /> should match snapshot with button 1`] = `
       Banner with button
     </Text>
     <TouchableWithoutFeedback
-      marginLeft="small"
+      marginLeft="xxsmall"
       secondary={true}
+      small={true}
+      style={
+        Array [
+          Object {
+            "marginLeft": 8,
+          },
+        ]
+      }
     >
       <View
         style={
@@ -111,26 +125,48 @@ exports[`<Banner /> should match snapshot with button 1`] = `
           }
         }
       >
-        <Text
-          disabled={false}
-          marginLeft="small"
+        <View
+          marginLeft="xxsmall"
           pressed={false}
-          secondary={true}
+          small={true}
           style={
             Array [
               Object {
-                "color": "#231B22",
-                "fontFamily": "Rubik",
-                "fontSize": 16,
-                "fontWeight": "500",
-                "marginLeft": 16,
-                "textAlign": "center",
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderRadius": 9999,
+                "flexDirection": "row",
+                "height": 32,
+                "justifyContent": "center",
+                "paddingLeft": 16,
+                "paddingRight": 16,
+              },
+              Object {
+                "marginLeft": 8,
               },
             ]
           }
         >
-          Action
-        </Text>
+          <Text
+            color="#231B22"
+            pressed={false}
+            secondary={true}
+            small={true}
+            style={
+              Array [
+                Object {
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 14,
+                  "fontWeight": "500",
+                  "textAlign": "center",
+                },
+              ]
+            }
+          >
+            Action
+          </Text>
+        </View>
       </View>
     </TouchableWithoutFeedback>
   </View>
@@ -157,10 +193,10 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
           "display": "flex",
           "flexDirection": "row",
           "justifyContent": "center",
-          "paddingBottom": 16,
+          "paddingBottom": 12,
           "paddingLeft": 16,
           "paddingRight": 16,
-          "paddingTop": 16,
+          "paddingTop": 12,
         },
       ]
     }
@@ -168,6 +204,7 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
   >
     <Text
       flex={1}
+      marginVertical="xxxsmall"
       style={
         Array [
           Object {
@@ -179,6 +216,8 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "lineHeight": 20,
+            "marginBottom": 4,
+            "marginTop": 4,
           },
         ]
       }
@@ -196,10 +235,10 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
           "display": "flex",
           "flexDirection": "row",
           "justifyContent": "center",
-          "paddingBottom": 16,
+          "paddingBottom": 12,
           "paddingLeft": 16,
           "paddingRight": 16,
-          "paddingTop": 16,
+          "paddingTop": 12,
         },
       ]
     }
@@ -207,6 +246,7 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
   >
     <Text
       flex={1}
+      marginVertical="xxxsmall"
       style={
         Array [
           Object {
@@ -218,6 +258,8 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "lineHeight": 20,
+            "marginBottom": 4,
+            "marginTop": 4,
           },
         ]
       }
@@ -235,10 +277,10 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
           "display": "flex",
           "flexDirection": "row",
           "justifyContent": "center",
-          "paddingBottom": 16,
+          "paddingBottom": 12,
           "paddingLeft": 16,
           "paddingRight": 16,
-          "paddingTop": 16,
+          "paddingTop": 12,
         },
       ]
     }
@@ -246,6 +288,7 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
   >
     <Text
       flex={1}
+      marginVertical="xxxsmall"
       style={
         Array [
           Object {
@@ -257,6 +300,8 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "lineHeight": 20,
+            "marginBottom": 4,
+            "marginTop": 4,
           },
         ]
       }
