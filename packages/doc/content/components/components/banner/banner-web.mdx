@@ -1,0 +1,92 @@
+import { Link as GatsbyLink } from 'gatsby';
+
+## Usage
+
+### Banner default
+
+```javascript
+  <Box
+    display="flex"
+    display="column"
+    flex={1}
+    justifyContent="space-between">
+
+    <Banner
+      margin="small"
+      variant='success'
+      message='Success Banner'/>
+
+    <Banner
+      margin="small"
+      variant='informative'
+      message='Informative Banner' />
+    
+    <Banner
+      margin="small"
+      variant='attention'
+      message='Attention Banner' />
+  </Box>
+```
+
+### Banner with action button
+
+
+```javascript state
+render(() => {
+  const handleClick = ({ message }) => {
+    alert(`onAction function from ${message}`);
+  };
+
+  const successBannerProps = {
+    variant: 'success',
+    message: 'Success Banner',
+  };
+
+  const informativeBannerProps = {
+    variant: 'informative',
+    message: 'Informative Banner',
+  };
+
+  const attentionBannerProps = {
+    variant: 'attention',
+    message: 'Attention Banner',
+  };
+
+  return (
+    <Box
+      display="flex"
+      display="column"
+      flex={1}
+      justifyContent="space-between">
+      
+      <Banner
+        margin="small"
+        variant={successBannerProps.variant}
+        message={successBannerProps.message}
+        button={{ label: 'action', action: () => {handleClick(successBannerProps);} }}
+      />
+
+      <Banner
+        margin="small"
+        variant={informativeBannerProps.variant}
+        message={informativeBannerProps.message}
+        button={{ label: 'action', action: () => {handleClick(informativeBannerProps);} }}
+      />
+
+      <Banner
+        margin="small"
+        variant={attentionBannerProps.variant}
+        message={attentionBannerProps.message}
+        button={{ label: 'action', action: () => {handleClick(attentionBannerProps);} }}
+      />
+    </Box>
+  );
+});
+```
+
+
+### Props
+
+The Banner component also has support for margins and paddings props as you can see more details <GatsbyLink to="/system/spacing">our system</GatsbyLink>
+
+<PropsTable component="Banner" platform="web" />
