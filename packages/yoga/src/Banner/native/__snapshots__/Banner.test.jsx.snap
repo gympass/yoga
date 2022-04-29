@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Banner /> should match snapshot 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#E0DFFF",
+          "borderRadius": 8,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+      ]
+    }
+    variant="informative"
+  >
+    <Text
+      flex={1}
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontFamily": "Rubik",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 20,
+          },
+        ]
+      }
+    >
+      Feedback message.
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`<Banner /> should match snapshot with button 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#E0DFFF",
+          "borderRadius": 8,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+      ]
+    }
+    variant="informative"
+  >
+    <Text
+      flex={1}
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontFamily": "Rubik",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 20,
+          },
+        ]
+      }
+    >
+      Banner with button
+    </Text>
+    <TouchableWithoutFeedback
+      marginLeft="small"
+      secondary={true}
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text
+          disabled={false}
+          marginLeft="small"
+          pressed={false}
+          secondary={true}
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 16,
+                "fontWeight": "500",
+                "marginLeft": 16,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Action
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+  </View>
+</View>
+`;
+
+exports[`<Banner /> should match snapshot with custom variant 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#C1EEDB",
+          "borderRadius": 8,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+      ]
+    }
+    variant="success"
+  >
+    <Text
+      flex={1}
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontFamily": "Rubik",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 20,
+          },
+        ]
+      }
+    >
+      Success banner without button
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#E0DFFF",
+          "borderRadius": 8,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+      ]
+    }
+    variant="informative"
+  >
+    <Text
+      flex={1}
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontFamily": "Rubik",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 20,
+          },
+        ]
+      }
+    >
+      Informative banner without button
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FCD6C3",
+          "borderRadius": 8,
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 16,
+        },
+      ]
+    }
+    variant="attention"
+  >
+    <Text
+      flex={1}
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "flexBasis": 0,
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "fontFamily": "Rubik",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 20,
+          },
+        ]
+      }
+    >
+      Attention banner without button
+    </Text>
+  </View>
+</View>
+`;
