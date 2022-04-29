@@ -1,0 +1,47 @@
+import { Link as GatsbyLink } from 'gatsby';
+
+### Usage
+
+```javascript type=expo
+        <Banner
+          marginVertical="xxsmall"
+          variant="success"
+          message="Success banner"/>
+  
+      <Banner
+        marginVertical="xxsmall"
+        variant="informative"
+        message="Informative banner" />
+      
+      <Banner
+        marginVertical="xxsmall"
+        variant="attention"
+        message="Attention banner" />
+
+      <Banner
+        marginVertical="xxsmall"
+        variant="success"
+        message="Success Banner"
+        button={{ label: 'action', action: () => {} }}
+      />
+
+      <Banner
+        marginVertical="xxsmall"
+        variant="informative"
+        message="Informative banner"
+        button={{ label: 'action', action: () => {} }}
+      />
+
+      <Banner
+        marginVertical="xxsmall"
+        variant="attention"
+        message="Attention banner"
+        button={{ label: 'action', action: () => {} }}
+      />
+```
+
+### Props
+
+The Banner component also has support for margins props as you can see more details <GatsbyLink to="/system/spacing">our system</GatsbyLink>
+
+<PropsTable component="Banner" platform="native" />
