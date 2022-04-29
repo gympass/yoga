@@ -38,6 +38,7 @@ const StyledBanner = styled.View`
   ${margins}
 `;
 
+/** A banner is a component that displays a prominent message. It can have a related actions button on it or not. */
 const Banner = ({ variant, message, button }) => (
   <StyledBanner variant={variant}>
     <Text.Small flex={1} marginVertical="xxxsmall">
@@ -58,8 +59,10 @@ const Banner = ({ variant, message, button }) => (
 );
 
 Banner.propTypes = {
+  /** style the banner following the theme (success, informative, attention) */
   variant: oneOf(['success', 'informative', 'attention']),
   message: string.isRequired,
+  /** the banner button must have a label and action defined (e.g `{ label: 'Action', action: () => {} }`) */
   button: shape({
     label: string.isRequired,
     action: func.isRequired,
