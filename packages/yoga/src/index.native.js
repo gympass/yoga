@@ -19,6 +19,7 @@ import Box from './Box';
 import Avatar from './Avatar';
 import Result from './Result';
 import Divider from './Divider';
+import Snackbar from './Snackbar';
 
 export {
   ThemeProvider,
@@ -47,4 +48,5 @@ export {
   Avatar,
   Result,
   Divider,
+  Snackbar,
 };
