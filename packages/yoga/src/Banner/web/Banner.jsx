@@ -66,6 +66,7 @@ const Banner = ({ variant, message, actionLabel, onAction, ...props }) => (
 Banner.propTypes = {
   /** style the banner following the theme (success, informative, attention) */
   variant: oneOf(['success', 'informative', 'attention']),
+  /** the message to display */
   message: string.isRequired,
   /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
   onAction: (props, propName, componentName) => {
