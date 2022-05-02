@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 import { margins } from '@gympass/yoga-system';
-import { func, oneOf, shape, string } from 'prop-types';
+import { func, oneOf, string, checkPropTypes } from 'prop-types';
 
 import Text from '../../Text';
 import Button from '../../Button';
@@ -38,20 +38,20 @@ const StyledBanner = styled.View`
 `;
 
 /** A banner is a component that displays a prominent message. It can have a related actions button on it or not. */
-const Banner = ({ variant, message, button, ...props }) => (
+const Banner = ({ variant, message, onAction, actionLabel, ...props }) => (
   <StyledBanner variant={variant} {...props}>
     <Text.Small flex={1} marginVertical="xxxsmall">
       {message}
     </Text.Small>
-    {!!button && (
+    {!!onAction && actionLabel && (
       <Box
         as={Button.Text}
         marginLeft="xxsmall"
         small
         secondary
-        onPress={button.action}
+        onPress={onAction}
       >
-        {button.label}
+        {actionLabel}
       </Box>
     )}
   </StyledBanner>
@@ -60,17 +60,44 @@ const Banner = ({ variant, message, button, ...props }) => (
 Banner.propTypes = {
   /** style the banner following the theme (success, informative, attention) */
   variant: oneOf(['success', 'informative', 'attention']),
+  /** the message to display */
   message: string.isRequired,
-  /** the banner button must have a label and action defined (e.g `{ label: 'Action', action: () => {} }`) */
-  button: shape({
-    label: string.isRequired,
-    action: func.isRequired,
-  }),
+  /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
+  onAction: (props, propName, componentName) => {
+    const { actionLabel } = props;
+
+    if (actionLabel) {
+      checkPropTypes(
+        { [propName]: func.isRequired },
+        props,
+        'prop',
+        componentName,
+      );
+    }
+
+    return null;
+  },
+  /** Label for a custom action. */
+  actionLabel: (props, propName, componentName) => {
+    const { onAction } = props;
+
+    if (onAction) {
+      checkPropTypes(
+        { [propName]: string.isRequired },
+        props,
+        'prop',
+        componentName,
+      );
+    }
+
+    return null;
+  },
 };
 
 Banner.defaultProps = {
   variant: 'informative',
-  button: null,
+  onAction: null,
+  actionLabel: null,
 };
 
 export default Banner;
