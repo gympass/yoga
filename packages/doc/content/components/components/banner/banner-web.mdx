@@ -7,36 +7,34 @@ import { Link as GatsbyLink } from 'gatsby';
 ```javascript
   <Box
     display="flex"
-    display="column"
     flex={1}
-    justifyContent="space-between">
+    justifyContent="space-between"
+  >
 
     <Banner
       margin="small"
       variant='success'
-      message='Success Banner'/>
+      message='Success Banner'
+    />
 
     <Banner
       margin="small"
       variant='informative'
-      message='Informative Banner' />
-    
+      message='Informative Banner' 
+    />
+
     <Banner
       margin="small"
       variant='attention'
-      message='Attention Banner' />
+      message='Attention Banner' 
+    />
   </Box>
 ```
 
 ### Banner with action button
 
-
 ```javascript state
 render(() => {
-  const handleClick = ({ message }) => {
-    alert(`onAction function from ${message}`);
-  };
-
   const successBannerProps = {
     variant: 'success',
     message: 'Success Banner',
@@ -52,38 +50,45 @@ render(() => {
     message: 'Attention Banner',
   };
 
+  const handleOnAction = (message) => {
+    alert(`This is your custom action ${message}`);
+  };
+
   return (
     <Box
       display="flex"
-      display="column"
+      flexDirection="column"
       flex={1}
-      justifyContent="space-between">
+      justifyContent="space-between"
+    >
       
       <Banner
         margin="small"
         variant={successBannerProps.variant}
         message={successBannerProps.message}
-        button={{ label: 'action', action: () => {handleClick(successBannerProps);} }}
+        actionLabel='Custom Action'
+        onAction={() => handleOnAction(successBannerProps.message)}
       />
 
       <Banner
         margin="small"
         variant={informativeBannerProps.variant}
         message={informativeBannerProps.message}
-        button={{ label: 'action', action: () => {handleClick(informativeBannerProps);} }}
+        actionLabel='Custom Action'
+        onAction={() => handleOnAction(informativeBannerProps.message)}
       />
 
       <Banner
         margin="small"
         variant={attentionBannerProps.variant}
         message={attentionBannerProps.message}
-        button={{ label: 'action', action: () => {handleClick(attentionBannerProps);} }}
+        actionLabel='Custom Action'
+        onAction={() => handleOnAction(attentionBannerProps.message)}
       />
     </Box>
   );
 });
 ```
-
 
 ### Props
 
