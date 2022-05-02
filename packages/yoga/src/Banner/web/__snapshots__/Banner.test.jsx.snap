@@ -37,6 +37,7 @@ exports[`<Banner /> should match snapshot 1`] = `
 <div>
   <div
     class="c0"
+    display="flex"
   >
     <p
       class="c1"
@@ -195,6 +196,7 @@ exports[`<Banner /> should match snapshot with button 1`] = `
 <div>
   <div
     class="c0"
+    display="flex"
   >
     <p
       class="c1"
@@ -283,6 +285,7 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
 <div>
   <div
     class="c0"
+    display="flex"
   >
     <p
       class="c1"
@@ -292,6 +295,7 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
   </div>
   <div
     class="c2"
+    display="flex"
   >
     <p
       class="c1"
@@ -301,6 +305,7 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
   </div>
   <div
     class="c3"
+    display="flex"
   >
     <p
       class="c1"
