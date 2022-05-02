@@ -45,7 +45,7 @@ describe('<Banner />', () => {
 
   it('should call button action function when the banner button is clicked', () => {
     const onButtonClickMock = jest.fn();
-    const { getByText } = render(
+    const { getByRole } = render(
       <ThemeProvider>
         <Banner
           message="Banner with button"
@@ -55,7 +55,7 @@ describe('<Banner />', () => {
       </ThemeProvider>,
     );
 
-    fireEvent.click(getByText('Action'));
+    fireEvent.click(getByRole('button', { name: 'Action' }));
 
     expect(onButtonClickMock).toHaveBeenCalled();
   });
