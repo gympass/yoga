@@ -28,19 +28,22 @@ const BannerPage = () => (
         m="xsmall"
         variant="success"
         message="Success Banner"
-        button={{ label: 'action', action: () => {} }}
+        actionLabel="Custom Action"
+        onAction={() => {}}
       />
       <Banner
         m="xsmall"
         variant="informative"
         message="Informative banner"
-        button={{ label: 'action', action: () => {} }}
+        actionLabel="Custom Action"
+        onAction={() => {}}
       />
       <Banner
         m="xsmall"
         variant="attention"
         message="Attention banner"
-        button={{ label: 'action', action: () => {} }}
+        actionLabel="Custom Action"
+        onAction={() => {}}
       />
     </BannerWrapper>
 
