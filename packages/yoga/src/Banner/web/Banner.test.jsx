@@ -34,7 +34,8 @@ describe('<Banner />', () => {
       <ThemeProvider>
         <Banner
           message="Banner with button"
-          button={{ label: 'Action', action: () => {} }}
+          actionLabel="Action"
+          onAction={() => {}}
         />
       </ThemeProvider>,
     );
@@ -42,19 +43,20 @@ describe('<Banner />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should call button action function when the banner button is pressed', () => {
-    const onButtonPressMock = jest.fn();
+  it('should call button action function when the banner button is clicked', () => {
+    const onButtonClickMock = jest.fn();
     const { getByText } = render(
       <ThemeProvider>
         <Banner
           message="Banner with button"
-          button={{ label: 'Action', action: onButtonPressMock }}
+          actionLabel="Action"
+          onAction={onButtonClickMock}
         />
       </ThemeProvider>,
     );
 
     fireEvent.click(getByText('Action'));
 
-    expect(onButtonPressMock).toHaveBeenCalled();
+    expect(onButtonClickMock).toHaveBeenCalled();
   });
 });
