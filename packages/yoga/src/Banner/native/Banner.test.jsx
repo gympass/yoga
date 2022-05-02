@@ -34,7 +34,8 @@ describe('<Banner />', () => {
       <ThemeProvider>
         <Banner
           message="Banner with button"
-          button={{ label: 'Action', action: () => {} }}
+          actionLabel="Action"
+          onAction={() => {}}
         />
       </ThemeProvider>,
     );
@@ -48,7 +49,8 @@ describe('<Banner />', () => {
       <ThemeProvider>
         <Banner
           message="Banner with button"
-          button={{ label: 'Action', action: onButtonPressMock }}
+          actionLabel="Action"
+          onAction={onButtonPressMock}
         />
       </ThemeProvider>,
     );
