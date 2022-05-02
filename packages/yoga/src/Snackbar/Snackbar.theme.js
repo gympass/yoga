@@ -44,6 +44,12 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
   maxWidth: {
     default: 600,
   },
+  margin: {
+    top: spacing.zero,
+    right: spacing.medium,
+    bottom: spacing.medium,
+    left: spacing.medium,
+  },
 });
 
 export default Snackbar;
