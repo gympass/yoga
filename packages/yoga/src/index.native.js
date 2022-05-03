@@ -1,4 +1,4 @@
-import ThemeProvider, { yogaTheme, theme } from './Theme';
+import ThemeProvider, { yogaTheme, theme, createTheme } from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -23,6 +23,7 @@ import Divider from './Divider';
 export {
   ThemeProvider,
   yogaTheme,
+  createTheme,
   theme,
   Button,
   List,
