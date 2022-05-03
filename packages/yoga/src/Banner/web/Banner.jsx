@@ -2,11 +2,9 @@ import React from 'react';
 
 import styled from 'styled-components';
 import { margins, paddings } from '@gympass/yoga-system';
-import { checkPropTypes, func, oneOf, string } from 'prop-types';
+import { checkPropTypes, elementType, func, oneOf, string } from 'prop-types';
 
-import Text from '../../Text';
-import Button from '../../Button';
-import Box from '../../Box';
+import { Box, Button, Icon, Text } from '../..';
 
 const StyledBanner = styled(Box)`
   ${({
@@ -26,7 +24,7 @@ const StyledBanner = styled(Box)`
     },
   }) => `
     background-color: ${backgroundColor.light};
-    padding: ${spacing.xsmall}px
+    padding: ${spacing.xxsmall}px
       ${spacing.small}px;
     border-radius: ${banner.border.radius}px;
   `}
@@ -37,7 +35,14 @@ const StyledBanner = styled(Box)`
 `;
 
 /** A banner is a component that displays a prominent message. It can have a related actions button on it or not. */
-const Banner = ({ variant, message, actionLabel, onAction, ...props }) => (
+const Banner = ({
+  icon,
+  variant,
+  message,
+  actionLabel,
+  onAction,
+  ...props
+}) => (
   <StyledBanner
     display="flex"
     flex={1}
@@ -46,7 +51,10 @@ const Banner = ({ variant, message, actionLabel, onAction, ...props }) => (
     variant={variant}
     {...props}
   >
-    <Text.Small flex={1} marginVertical="xxxsmall">
+    {icon && (
+      <Icon as={icon} size="medium" fill="secondary" marginRight="xxsmall" />
+    )}
+    <Text.Small flex={1} marginVertical="xxsmall">
       {message}
     </Text.Small>
     {!!onAction && actionLabel && (
@@ -64,6 +72,8 @@ const Banner = ({ variant, message, actionLabel, onAction, ...props }) => (
 );
 
 Banner.propTypes = {
+  /** SVG to be rendered. */
+  icon: elementType,
   /** style the banner following the theme (success, informative, attention) */
   variant: oneOf(['success', 'informative', 'attention']),
   /** the message to display */
@@ -101,6 +111,7 @@ Banner.propTypes = {
 };
 
 Banner.defaultProps = {
+  icon: null,
   variant: 'informative',
   actionLabel: null,
   onAction: null,

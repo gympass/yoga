@@ -2,11 +2,9 @@ import React from 'react';
 
 import styled from 'styled-components';
 import { margins } from '@gympass/yoga-system';
-import { func, oneOf, string, checkPropTypes } from 'prop-types';
+import { func, oneOf, string, checkPropTypes, elementType } from 'prop-types';
 
-import Text from '../../Text';
-import Button from '../../Button';
-import Box from '../../Box';
+import { Box, Button, Icon, Text } from '../..';
 
 const StyledBanner = styled.View`
   display: flex;
@@ -29,7 +27,7 @@ const StyledBanner = styled.View`
     },
   }) => `
     background-color: ${backgroundColor.light};
-    padding: ${spacing.xsmall}px
+    padding: ${spacing.xxsmall}px
       ${spacing.small}px;
     border-radius: ${banner.border.radius}px;
   `}
@@ -38,9 +36,19 @@ const StyledBanner = styled.View`
 `;
 
 /** A banner is a component that displays a prominent message. It can have a related actions button on it or not. */
-const Banner = ({ variant, message, onAction, actionLabel, ...props }) => (
+const Banner = ({
+  icon,
+  variant,
+  message,
+  onAction,
+  actionLabel,
+  ...props
+}) => (
   <StyledBanner variant={variant} {...props}>
-    <Text.Small flex={1} marginVertical="xxxsmall">
+    {icon && (
+      <Icon as={icon} size="medium" fill="secondary" marginRight="xxsmall" />
+    )}
+    <Text.Small flex={1} marginVertical="xxsmall">
       {message}
     </Text.Small>
     {!!onAction && actionLabel && (
@@ -58,6 +66,8 @@ const Banner = ({ variant, message, onAction, actionLabel, ...props }) => (
 );
 
 Banner.propTypes = {
+  /** SVG to be rendered. */
+  icon: elementType,
   /** style the banner following the theme (success, informative, attention) */
   variant: oneOf(['success', 'informative', 'attention']),
   /** the message to display */
@@ -95,6 +105,7 @@ Banner.propTypes = {
 };
 
 Banner.defaultProps = {
+  icon: null,
   variant: 'informative',
   onAction: null,
   actionLabel: null,
