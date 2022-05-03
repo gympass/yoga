@@ -5,24 +5,33 @@ import { string, oneOf, node, func, elementType } from 'prop-types';
 import { Box, Button, Icon, Text } from '../..';
 
 const SnackbarContainer = styled.View`
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 10px;
   ${({
     variant,
     theme: {
       yoga: {
-        components: { snackbar },
+        colors: { feedback },
+        components: {
+          snackbar: {
+            padding,
+            margin,
+            shadow,
+            variant: { [variant]: backgroundColor = feedback.success.light },
+            border,
+          },
+        },
       },
     },
   }) => `
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    z-index: 10px;
-    padding: ${snackbar.padding.default}px;
-    margin: ${snackbar.margin.top}px ${snackbar.margin.right}px ${snackbar.margin.bottom}px ${snackbar.margin.left}px;
-    box-shadow: ${snackbar.shadow.default};
-    background-color: ${snackbar.variant.color[variant]};
-    border-radius: ${snackbar.border.radius}px;
+    padding: ${padding.default}px;
+    margin: ${margin.top}px ${margin.right}px ${margin.bottom}px ${margin.left}px;
+    box-shadow: ${shadow.default};
+    background-color: ${backgroundColor};
+    border-radius: ${border.radius}px;
   `}
 `;
 

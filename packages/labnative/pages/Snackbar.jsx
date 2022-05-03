@@ -9,6 +9,7 @@ const SnackbarPage = () => (
       variant="success"
       icon={CheckedFull}
       actionLabel="Action"
+      onAction={() => {}}
       onClose={() => {}}
     >
       Success
