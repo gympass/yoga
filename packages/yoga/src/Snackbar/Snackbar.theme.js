@@ -30,6 +30,8 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
       success: colors.feedback.success.light,
       failure: colors.feedback.attention.light,
       info: colors.feedback.informative.light,
+      attention: colors.feedback.attention.light,
+      informative: colors.feedback.informative.light,
     },
     icon: {
       success: CheckedFull,
@@ -49,16 +51,6 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
     right: spacing.medium,
     bottom: spacing.medium,
     left: spacing.medium,
-  },
-  icon: {
-    CheckedFull,
-    AlertTriangle,
-    Info,
-  },
-  variantColor: {
-    success: colors.feedback.success.light,
-    attention: colors.feedback.attention.light,
-    informative: colors.feedback.informative.light,
   },
 });
 
