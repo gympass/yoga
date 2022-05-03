@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
 
+import { CheckedFull } from '@gympass/yoga-icons';
 import { ThemeProvider, Banner } from '../..';
 
 describe('<Banner />', () => {
@@ -23,6 +24,16 @@ describe('<Banner />', () => {
           message="Informative banner without button"
         />
         <Banner variant="attention" message="Attention banner without button" />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with icon', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Banner icon={CheckedFull} message="Banner with icon" />
       </ThemeProvider>,
     );
 
