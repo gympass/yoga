@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import { Banner } from '@gympass/yoga';
 
+import { AlertCircle, AlertTriangle, CheckedFull } from '@gympass/yoga-icons';
 import { DocTitle } from '../components';
 
 const ScrollView = styled.ScrollView`
@@ -23,7 +24,38 @@ const BannerWrapper = styled.View`
 const BannerPage = () => (
   <ScrollView>
     <BannerWrapper>
-      <DocTitle>Banner</DocTitle>
+      <DocTitle>Banner default</DocTitle>
+
+      <Banner m="xsmall" variant="success" message="Success banner" />
+      <Banner m="xsmall" variant="informative" message="Informative banner" />
+      <Banner m="xsmall" variant="attention" message="Attention banner" />
+    </BannerWrapper>
+
+    <BannerWrapper>
+      <DocTitle>Banner with icon</DocTitle>
+
+      <Banner
+        m="xsmall"
+        icon={CheckedFull}
+        variant="success"
+        message="Success banner"
+      />
+      <Banner
+        m="xsmall"
+        icon={AlertCircle}
+        variant="informative"
+        message="Informative banner"
+      />
+      <Banner
+        m="xsmall"
+        icon={AlertTriangle}
+        variant="attention"
+        message="Attention banner"
+      />
+    </BannerWrapper>
+
+    <BannerWrapper>
+      <DocTitle>Banner with action button</DocTitle>
       <Banner
         m="xsmall"
         variant="success"
@@ -45,13 +77,6 @@ const BannerPage = () => (
         actionLabel="Custom Action"
         onAction={() => {}}
       />
-    </BannerWrapper>
-
-    <BannerWrapper>
-      <DocTitle>Banner without button</DocTitle>
-      <Banner m="xsmall" variant="success" message="Success banner" />
-      <Banner m="xsmall" variant="informative" message="Informative banner" />
-      <Banner m="xsmall" variant="attention" message="Attention banner" />
     </BannerWrapper>
   </ScrollView>
 );

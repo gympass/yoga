@@ -5,11 +5,12 @@ import { Link as GatsbyLink } from 'gatsby';
 ### Banner default
 
 ```javascript
-  <Box
-    display="flex"
-    flex={1}
-    justifyContent="space-between"
-  >
+    <Box
+      display="flex"
+      flexDirection="column"
+      flex={1}
+      justifyContent="space-between"
+    >
 
     <Banner
       margin="small"
@@ -24,6 +25,39 @@ import { Link as GatsbyLink } from 'gatsby';
     />
 
     <Banner
+      margin="small"
+      variant='attention'
+      message='Attention Banner' 
+    />
+  </Box>
+```
+
+### Banner with icon
+
+```javascript
+    <Box
+      display="flex"
+      flexDirection="column"
+      flex={1}
+      justifyContent="space-between"
+    >
+
+    <Banner
+      icon={CheckedFull}
+      margin="small"
+      variant='success'
+      message='Success Banner'
+    />
+
+    <Banner
+      icon={AlertCircle}
+      margin="small"
+      variant='informative'
+      message='Informative Banner' 
+    />
+
+    <Banner
+      icon={AlertTriangle}
       margin="small"
       variant='attention'
       message='Attention Banner' 
