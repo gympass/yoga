@@ -3,7 +3,7 @@
 </p>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-36-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-37-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Github Actions](https://github.com/gympass/yoga/workflows/Yoga%20-%20Gympass%20Design%20System/badge.svg)
@@ -102,6 +102,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/leonardo-gomes-7187a919b/"><img src="https://avatars.githubusercontent.com/u/61520601?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Leonardo Gomes</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=LeoSilvaGomes" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/rafaelcoleta"><img src="https://avatars.githubusercontent.com/u/58981205?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rafaelcoleta</b></sub></a><br /><a href="https://github.com/Gympass/yoga/commits?author=rafaelcoleta" title="Code">💻</a></td>
   </tr>
 </table>
 
