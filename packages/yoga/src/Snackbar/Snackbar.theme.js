@@ -50,6 +50,16 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
     bottom: spacing.medium,
     left: spacing.medium,
   },
+  icon: {
+    CheckedFull,
+    AlertTriangle,
+    Info,
+  },
+  variantColor: {
+    success: colors.feedback.success.light,
+    attention: colors.feedback.attention.light,
+    informative: colors.feedback.informative.light,
+  },
 });
 
 export default Snackbar;
