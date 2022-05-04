@@ -2,6 +2,23 @@
 
 exports[`<Banner /> should match snapshot 1`] = `
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -24,11 +41,9 @@ exports[`<Banner /> should match snapshot 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #E0DFFF;
   padding: 8px 16px;
   border-radius: 8px;
@@ -37,19 +52,23 @@ exports[`<Banner /> should match snapshot 1`] = `
 <div>
   <div
     class="c0"
-    display="flex"
   >
-    <p
+    <div
       class="c1"
+      display="flex"
     >
-      Feedback message.
-    </p>
+      <p
+        class="c2"
+      >
+        Feedback message.
+      </p>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Banner /> should match snapshot with button 1`] = `
-.c2 {
+.c3 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -88,7 +107,7 @@ exports[`<Banner /> should match snapshot with button 1`] = `
   text-decoration: none;
 }
 
-.c2 svg {
+.c3 svg {
   width: 16px;
   height: 16px;
   fill: #FFFFFF;
@@ -97,70 +116,87 @@ exports[`<Banner /> should match snapshot with button 1`] = `
   transition: fill 0.2s;
 }
 
-.c2:not([disabled]):hover,
-.c2:not([disabled]):focus {
+.c3:not([disabled]):hover,
+.c3:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c2:active {
+.c3:active {
   background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c2:active svg {
+.c3:active svg {
   fill: #FFFFFF;
 }
 
-.c3 {
+.c4 {
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
 }
 
-.c3 svg {
+.c4 svg {
   fill: #231B22;
 }
 
-.c3:not([disabled]):hover,
-.c3:not([disabled]):focus,
-.c3:not([disabled]):active {
+.c4:not([disabled]):hover,
+.c4:not([disabled]):focus,
+.c4:not([disabled]):active {
   background-color: transparent;
   box-shadow: none;
 }
 
-.c3:not([disabled]):hover {
+.c4:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
 }
 
-.c3:not([disabled]):hover svg {
+.c4:not([disabled]):hover svg {
   fill: rgba(35,27,34,0.5);
 }
 
-.c3:not([disabled]):focus,
-.c3:not([disabled]):active {
+.c4:not([disabled]):focus,
+.c4:not([disabled]):active {
   color: rgba(35,27,34,0.75);
 }
 
-.c3:not([disabled]):focus svg,
-.c3:not([disabled]):active svg {
+.c4:not([disabled]):focus svg,
+.c4:not([disabled]):active svg {
   fill: rgba(35,27,34,0.75);
 }
 
-.c3:disabled {
+.c4:disabled {
   background-color: transparent;
   border-color: transparent;
   color: #D7D7E0;
 }
 
-.c3:disabled svg {
+.c4:disabled svg {
   fill: #D7D7E0;
 }
 
-.c4 {
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c5 {
   margin-left: 8px;
 }
 
-.c1 {
+.c2 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -183,11 +219,9 @@ exports[`<Banner /> should match snapshot with button 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #E0DFFF;
   padding: 8px 16px;
   border-radius: 8px;
@@ -196,24 +230,45 @@ exports[`<Banner /> should match snapshot with button 1`] = `
 <div>
   <div
     class="c0"
-    display="flex"
   >
-    <p
+    <div
       class="c1"
+      display="flex"
     >
-      Banner with button
-    </p>
-    <button
-      class="c2 c3 c4"
-    >
-      Action
-    </button>
+      <p
+        class="c2"
+      >
+        Banner with button
+      </p>
+      <button
+        class="c3 c4 c5"
+      >
+        Action
+      </button>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Banner /> should match snapshot with custom variant 1`] = `
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -228,7 +283,7 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
   flex: 1;
 }
 
-.c2 {
+.c3 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -236,11 +291,9 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #E0DFFF;
   padding: 8px 16px;
   border-radius: 8px;
@@ -254,17 +307,15 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #C1EEDB;
   padding: 8px 16px;
   border-radius: 8px;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -272,11 +323,9 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #FCD6C3;
   padding: 8px 16px;
   border-radius: 8px;
@@ -285,45 +334,74 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
 <div>
   <div
     class="c0"
-    display="flex"
   >
-    <p
+    <div
       class="c1"
+      display="flex"
     >
-      Success banner without button
-    </p>
-  </div>
-  <div
-    class="c2"
-    display="flex"
-  >
-    <p
-      class="c1"
-    >
-      Informative banner without button
-    </p>
+      <p
+        class="c2"
+      >
+        Success banner without button
+      </p>
+    </div>
   </div>
   <div
     class="c3"
-    display="flex"
   >
-    <p
+    <div
       class="c1"
+      display="flex"
     >
-      Attention banner without button
-    </p>
+      <p
+        class="c2"
+      >
+        Informative banner without button
+      </p>
+    </div>
+  </div>
+  <div
+    class="c4"
+  >
+    <div
+      class="c1"
+      display="flex"
+    >
+      <p
+        class="c2"
+      >
+        Attention banner without button
+      </p>
+    </div>
   </div>
 </div>
 `;
 
 exports[`<Banner /> should match snapshot with icon 1`] = `
 .c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 {
   margin-right: 8px;
   width: 20px;
   height: 20px;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -346,11 +424,9 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: #E0DFFF;
   padding: 8px 16px;
   border-radius: 8px;
@@ -359,20 +435,24 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
 <div>
   <div
     class="c0"
-    display="flex"
   >
-    <svg
+    <div
       class="c1"
-      fill="#231B22"
-      height="20"
-      marginRight="xxsmall"
-      width="20"
-    />
-    <p
-      class="c2"
+      display="flex"
     >
-      Banner with icon
-    </p>
+      <svg
+        class="c2"
+        fill="#231B22"
+        height="20"
+        marginRight="xxsmall"
+        width="20"
+      />
+      <p
+        class="c3"
+      >
+        Banner with icon
+      </p>
+    </div>
   </div>
 </div>
 `;
