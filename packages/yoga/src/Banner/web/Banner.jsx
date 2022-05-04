@@ -2,11 +2,21 @@ import React from 'react';
 
 import styled from 'styled-components';
 import { margins, paddings } from '@gympass/yoga-system';
-import { checkPropTypes, elementType, func, oneOf, string } from 'prop-types';
+import {
+  checkPropTypes,
+  elementType,
+  func,
+  oneOf,
+  shape,
+  string,
+} from 'prop-types';
 
-import { Box, Button, Icon, Text } from '../..';
+import Box from '../../Box';
+import Button from '../../Button';
+import Icon from '../../Icon';
+import Text from '../../Text';
 
-const StyledBanner = styled(Box)`
+const StyledBanner = styled.div`
   ${({
     variant,
     theme: {
@@ -34,42 +44,70 @@ const StyledBanner = styled(Box)`
   ${paddings}
 `;
 
-/** A banner is a component that displays a prominent message. It can have a related actions button on it or not. */
+/** A banner is a component that displays a prominent message. It can have related action buttons on it or not. */
 const Banner = ({
   icon,
   variant,
   message,
-  actionLabel,
-  onAction,
+  primaryButton,
+  secondaryButton,
   ...props
 }) => (
   <StyledBanner
     display="flex"
     flex={1}
-    alignItems="center"
-    of="hidden"
+    flexDirection="column"
     variant={variant}
     {...props}
   >
-    {icon && (
-      <Icon as={icon} size="medium" fill="secondary" marginRight="xxsmall" />
-    )}
-    <Text.Small flex={1} marginVertical="xxsmall">
-      {message}
-    </Text.Small>
-    {!!onAction && actionLabel && (
+    <Box display="flex" flex={1} flexDirection="row" alignItems="center">
+      {icon && (
+        <Icon as={icon} size="medium" fill="secondary" marginRight="xxsmall" />
+      )}
+      <Text.Small flex={1} marginVertical="xxsmall">
+        {message}
+      </Text.Small>
+      {!!primaryButton && !secondaryButton && (
+        <Box
+          as={Button.Text}
+          marginLeft="xxsmall"
+          small
+          secondary
+          onClick={primaryButton.action}
+        >
+          {primaryButton.label}
+        </Box>
+      )}
+    </Box>
+    {primaryButton && secondaryButton && (
       <Box
-        as={Button.Text}
-        marginLeft="xxsmall"
-        small
-        secondary
-        onClick={onAction}
+        display="flex"
+        flex={1}
+        justifyContent="flex-end"
+        flexDirection="row"
+        marginBottom="xxsmall"
       >
-        {actionLabel}
+        <Box
+          as={Button.Text}
+          marginRight="xxxsmall"
+          small
+          secondary
+          onClick={primaryButton.action}
+        >
+          {primaryButton.label}
+        </Box>
+        <Box as={Button.Text} small secondary onClick={secondaryButton.action}>
+          {secondaryButton.label}
+        </Box>
       </Box>
     )}
   </StyledBanner>
 );
+
+const BannerActionButtonType = shape({
+  label: string.isRequired,
+  action: func.isRequired,
+});
 
 Banner.propTypes = {
   /** SVG to be rendered. */
@@ -78,43 +116,32 @@ Banner.propTypes = {
   variant: oneOf(['success', 'informative', 'attention']),
   /** the message to display */
   message: string.isRequired,
-  /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
-  onAction: (props, propName, componentName) => {
-    const { actionLabel } = props;
+  /** the label and action fuction are required for banner action buttons  */
+  primaryButton: BannerActionButtonType,
+  /** the secondary button should only be used assemble the primary button (the label and action fuction are required for banner action buttons).  */
+  secondaryButton: (props, propName, componentName) => {
+    const { primaryButton } = props;
 
-    if (actionLabel) {
-      checkPropTypes(
-        { [propName]: func.isRequired },
-        props,
-        'prop',
-        componentName,
+    if (!primaryButton && !!props[propName]) {
+      return new Error(
+        `The ${propName} must only be used ensemble with the primaryButton.`,
       );
     }
 
-    return null;
-  },
-  /** Label for a custom action. */
-  actionLabel: (props, propName, componentName) => {
-    const { onAction } = props;
-
-    if (onAction) {
-      checkPropTypes(
-        { [propName]: string.isRequired },
-        props,
-        'prop',
-        componentName,
-      );
-    }
-
-    return null;
+    return checkPropTypes(
+      { [propName]: BannerActionButtonType },
+      props,
+      'prop',
+      componentName,
+    );
   },
 };
 
 Banner.defaultProps = {
-  icon: null,
+  icon: undefined,
   variant: 'informative',
-  actionLabel: null,
-  onAction: null,
+  primaryButton: undefined,
+  secondaryButton: undefined,
 };
 
 export default Banner;
