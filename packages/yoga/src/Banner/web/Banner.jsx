@@ -47,6 +47,19 @@ const StyledBanner = styled.div`
   ${paddings}
 `;
 
+const BannerActionButton = ({ button: { label, action }, ...props }) => (
+  <Box as={Button.Text} small secondary onClick={action} {...props}>
+    {label}
+  </Box>
+);
+
+BannerActionButton.propTypes = {
+  button: shape({
+    label: string.isRequired,
+    action: func.isRequired,
+  }).isRequired,
+};
+
 /** A banner is a component that displays a prominent message. It can have related action buttons on it or not. */
 const Banner = ({
   icon,
@@ -64,16 +77,8 @@ const Banner = ({
       <Text.Small flex={1} marginVertical="xxsmall">
         {message}
       </Text.Small>
-      {!!primaryButton && !secondaryButton && (
-        <Box
-          as={Button.Text}
-          marginLeft="xxsmall"
-          small
-          secondary
-          onClick={primaryButton.action}
-        >
-          {primaryButton.label}
-        </Box>
+      {primaryButton && !secondaryButton && (
+        <BannerActionButton button={primaryButton} marginLeft="xxsmall" />
       )}
     </Box>
     {primaryButton && secondaryButton && (
@@ -84,18 +89,8 @@ const Banner = ({
         flexDirection="row"
         marginBottom="xxsmall"
       >
-        <Box
-          as={Button.Text}
-          marginRight="xxxsmall"
-          small
-          secondary
-          onClick={primaryButton.action}
-        >
-          {primaryButton.label}
-        </Box>
-        <Box as={Button.Text} small secondary onClick={secondaryButton.action}>
-          {secondaryButton.label}
-        </Box>
+        <BannerActionButton button={primaryButton} marginRight="xxxsmall" />
+        <BannerActionButton button={secondaryButton} />
       </Box>
     )}
   </StyledBanner>
