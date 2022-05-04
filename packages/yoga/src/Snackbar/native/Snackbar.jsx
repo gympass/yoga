@@ -26,7 +26,7 @@ const SnackbarContainer = styled.View`
       },
     },
   }) => `
-    padding: ${padding.default}px;
+    padding: ${padding.vertical}px ${padding.horizontal}px;
     margin: ${margin.top}px ${margin.right}px ${margin.bottom}px ${margin.left}px;
     box-shadow: ${shadow.default};
     background-color: ${backgroundColor};
@@ -37,13 +37,13 @@ const SnackbarContainer = styled.View`
 const Snackbar = ({ icon, children, actionLabel, onAction, ...props }) => (
   <SnackbarContainer {...props}>
     {icon && (
-      <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
+      <Icon as={icon} fill="secondary" size="large" marginRight="xxxsmall" />
     )}
-    <Text flex={1} fontSize="small">
+    <Text flex={1} fontSize="small" marginVertical="xsmall">
       {children}
     </Text>
     {actionLabel && onAction && (
-      <Box as={Button.Text} small secondary marginLeft="xxsmall">
+      <Box as={Button.Text} small secondary>
         {actionLabel}
       </Box>
     )}

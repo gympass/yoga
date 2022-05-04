@@ -10,6 +10,8 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
   },
   padding: {
     default: spacing.small,
+    vertical: spacing.xsmall,
+    horizontal: spacing.small,
   },
   position: {
     desktop: {
