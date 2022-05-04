@@ -17,6 +17,9 @@ import Icon from '../../Icon';
 import Text from '../../Text';
 
 const StyledBanner = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   ${({
     variant,
     theme: {
@@ -53,13 +56,7 @@ const Banner = ({
   secondaryButton,
   ...props
 }) => (
-  <StyledBanner
-    display="flex"
-    flex={1}
-    flexDirection="column"
-    variant={variant}
-    {...props}
-  >
+  <StyledBanner variant={variant} {...props}>
     <Box display="flex" flex={1} flexDirection="row" alignItems="center">
       {icon && (
         <Icon as={icon} size="medium" fill="secondary" marginRight="xxsmall" />
