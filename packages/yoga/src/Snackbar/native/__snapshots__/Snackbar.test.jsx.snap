@@ -12,32 +12,39 @@ exports[`<Snackbar /> should match snapshot 1`] = `
 >
   <View
     style={
-      Array [
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#C1EEDB",
-          "borderRadius": 8,
-          "bottom": 0,
-          "flexDirection": "row",
-          "marginBottom": 20,
-          "marginLeft": 20,
-          "marginRight": 20,
-          "marginTop": 0,
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
-          "position": "absolute",
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 4,
-          "zIndex": 10,
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#C1EEDB",
+        "borderRadius": 8,
+        "bottom": 0,
+        "flexDirection": "row",
+        "marginBottom": 20,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 0,
+        "paddingBottom": 12,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 12,
+        "position": "absolute",
+        "shadowColor": "rgba(152, 152, 166, 0.2)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
         },
-      ]
+        "shadowOpacity": 1,
+        "shadowRadius": 4,
+        "zIndex": 10,
+      }
+    }
+    styles={
+      Object {
+        "transform": Array [
+          Object {
+            "translateY": -10,
+          },
+        ],
+      }
     }
     theme={
       Object {
@@ -1149,6 +1156,8 @@ exports[`<Snackbar /> should match snapshot 1`] = `
               },
               "padding": Object {
                 "default": 16,
+                "horizontal": 16,
+                "vertical": 12,
               },
               "position": Object {
                 "desktop": Object {
@@ -1464,6 +1473,8 @@ exports[`<Snackbar /> should match snapshot 1`] = `
       fontSize="small"
       inverted={false}
       light={false}
+      marginVertical="xxxsmall"
+      numberOfLines={2}
       size="medium"
       style={
         Array [
@@ -1476,6 +1487,8 @@ exports[`<Snackbar /> should match snapshot 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "lineHeight": 24,
+            "marginBottom": 4,
+            "marginTop": 4,
           },
         ]
       }
