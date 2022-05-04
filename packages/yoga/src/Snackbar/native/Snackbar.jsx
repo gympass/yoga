@@ -34,21 +34,28 @@ const SnackbarContainer = styled.View`
   `}
 `;
 
-const Snackbar = ({ icon, children, actionLabel, onAction, ...props }) => (
-  <SnackbarContainer {...props}>
-    {icon && (
-      <Icon as={icon} fill="secondary" size="large" marginRight="xxxsmall" />
-    )}
-    <Text flex={1} fontSize="small" marginVertical="xsmall">
-      {children}
-    </Text>
-    {actionLabel && onAction && (
-      <Box as={Button.Text} small secondary>
-        {actionLabel}
-      </Box>
-    )}
-  </SnackbarContainer>
-);
+const Snackbar = ({ icon, children, actionLabel, onAction, ...props }) => {
+  return (
+    <SnackbarContainer {...props}>
+      {icon && (
+        <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
+      )}
+      <Text
+        flex={1}
+        fontSize="small"
+        marginVertical="xxxsmall"
+        numberOfLines={2}
+      >
+        {children}
+      </Text>
+      {actionLabel && onAction && (
+        <Box as={Button.Text} small secondary marginLeft="xxsmall">
+          {actionLabel}
+        </Box>
+      )}
+    </SnackbarContainer>
+  );
+};
 
 Snackbar.propTypes = {
   icon: elementType,

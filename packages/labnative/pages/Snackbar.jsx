@@ -8,10 +8,10 @@ const SnackbarPage = () => (
     <Snackbar
       variant="success"
       icon={CheckedFull}
-      actionLabel="Action"
+      actionLabel="See details"
       onAction={() => {}}
     >
-      Success
+      Lorem Ipsum is simply dummy text of the printing
     </Snackbar>
   </View>
 );
