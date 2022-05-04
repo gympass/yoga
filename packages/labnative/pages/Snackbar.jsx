@@ -10,7 +10,6 @@ const SnackbarPage = () => (
       icon={CheckedFull}
       actionLabel="Action"
       onAction={() => {}}
-      onClose={() => {}}
     >
       Success
     </Snackbar>

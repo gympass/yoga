@@ -1,4 +1,3 @@
-import { Close } from '@gympass/yoga-icons';
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
 import { string, oneOf, node, func, elementType } from 'prop-types';
@@ -35,14 +34,7 @@ const SnackbarContainer = styled.View`
   `}
 `;
 
-const Snackbar = ({
-  icon,
-  children,
-  actionLabel,
-  onAction,
-  onClose,
-  ...props
-}) => (
+const Snackbar = ({ icon, children, actionLabel, onAction, ...props }) => (
   <SnackbarContainer {...props}>
     {icon && (
       <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
@@ -55,10 +47,6 @@ const Snackbar = ({
         {actionLabel}
       </Box>
     )}
-
-    {onClose && (
-      <Icon as={Close} fill="secondary" size="large" marginLeft="xxsmall" />
-    )}
   </SnackbarContainer>
 );
 
@@ -68,7 +56,6 @@ Snackbar.propTypes = {
   children: node.isRequired,
   actionLabel: string,
   onAction: func,
-  onClose: func,
 };
 
 Snackbar.defaultProps = {
@@ -76,7 +63,6 @@ Snackbar.defaultProps = {
   variant: 'success',
   actionLabel: undefined,
   onAction: undefined,
-  onClose: undefined,
 };
 
 export default withTheme(Snackbar);
