@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { string, oneOf, node, func, elementType } from 'prop-types';
+import { Animated, Easing } from 'react-native';
 import { Box, Button, Icon, Text } from '../..';
 
-const SnackbarContainer = styled.View`
+const SnackbarContainer = styled(Animated.View)`
   flex-direction: row;
   align-items: center;
   position: absolute;
@@ -35,8 +36,31 @@ const SnackbarContainer = styled.View`
 `;
 
 const Snackbar = ({ icon, children, actionLabel, onAction, ...props }) => {
+  const translateY = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    Animated.timing(translateY, {
+      toValue: 1,
+      duration: 1200,
+      easing: Easing.bezier(0.41, 0.09, 0.2, 1),
+      useNativeDriver: true,
+    }).start();
+  }, [translateY]);
+  const translateValue = translateY.interpolate({
+    inputRange: [0, 1],
+    outputRange: [-10, 1000],
+  });
+
+  const animatedStyles = {
+    transform: [
+      {
+        translateY: translateValue,
+      },
+    ],
+  };
+
   return (
-    <SnackbarContainer {...props}>
+    <SnackbarContainer styles={animatedStyles} {...props}>
       {icon && (
         <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
       )}
