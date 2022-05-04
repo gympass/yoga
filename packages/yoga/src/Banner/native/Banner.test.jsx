@@ -74,4 +74,51 @@ describe('<Banner />', () => {
 
     expect(onButtonPressMock).toHaveBeenCalled();
   });
+
+  it('should match snapshot with two action buttons', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Banner
+          message="Banner with two action buttons"
+          primaryButton={{
+            label: 'Primary Action',
+            action: () => {},
+          }}
+          secondaryButton={{
+            label: 'Secondary Action',
+            action: () => {},
+          }}
+        />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should call both buttons action function when each banner action button are pressed', () => {
+    const onPrimaryButtonPressMock = jest.fn();
+    const onSecondaryButtonPressMock = jest.fn();
+
+    const { getByText } = render(
+      <ThemeProvider>
+        <Banner
+          message="Banner with button"
+          primaryButton={{
+            label: 'Primary Action',
+            action: onPrimaryButtonPressMock,
+          }}
+          secondaryButton={{
+            label: 'Secondary Action',
+            action: onSecondaryButtonPressMock,
+          }}
+        />
+      </ThemeProvider>,
+    );
+
+    fireEvent.press(getByText('Primary Action'));
+    expect(onPrimaryButtonPressMock).toHaveBeenCalled();
+
+    fireEvent.press(getByText('Secondary Action'));
+    expect(onSecondaryButtonPressMock).toHaveBeenCalled();
+  });
 });

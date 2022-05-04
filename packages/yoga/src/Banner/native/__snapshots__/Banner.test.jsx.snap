@@ -552,3 +552,217 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
   </View>
 </View>
 `;
+
+exports[`<Banner /> should match snapshot with two action buttons 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#E0DFFF",
+          "borderRadius": 8,
+          "display": "flex",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "paddingBottom": 8,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 8,
+        },
+      ]
+    }
+    variant="informative"
+  >
+    <View
+      alignItems="center"
+      flex={1}
+      flexDirection="row"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexBasis": 0,
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+          },
+        ]
+      }
+    >
+      <Text
+        flex={1}
+        marginVertical="xxsmall"
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 20,
+              "marginBottom": 8,
+              "marginTop": 8,
+            },
+          ]
+        }
+      >
+        Banner with two action buttons
+      </Text>
+    </View>
+    <View
+      display="flex"
+      flex={1}
+      flexDirection="row"
+      justifyContent="flex-end"
+      marginBottom="xxsmall"
+      style={
+        Array [
+          Object {
+            "display": "flex",
+            "flexBasis": 0,
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "flex-end",
+            "marginBottom": 8,
+          },
+        ]
+      }
+    >
+      <TouchableWithoutFeedback
+        marginRight="xxxsmall"
+        secondary={true}
+        small={true}
+        style={
+          Array [
+            Object {
+              "marginRight": 4,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            marginRight="xxxsmall"
+            pressed={false}
+            small={true}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderRadius": 9999,
+                  "flexDirection": "row",
+                  "height": 32,
+                  "justifyContent": "center",
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                },
+                Object {
+                  "marginRight": 4,
+                },
+              ]
+            }
+          >
+            <Text
+              color="#231B22"
+              pressed={false}
+              secondary={true}
+              small={true}
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              Primary Action
+            </Text>
+          </View>
+        </View>
+      </TouchableWithoutFeedback>
+      <TouchableWithoutFeedback
+        secondary={true}
+        small={true}
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            pressed={false}
+            small={true}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderRadius": 9999,
+                  "flexDirection": "row",
+                  "height": 32,
+                  "justifyContent": "center",
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                },
+                Object {},
+              ]
+            }
+          >
+            <Text
+              color="#231B22"
+              pressed={false}
+              secondary={true}
+              small={true}
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              Secondary Action
+            </Text>
+          </View>
+        </View>
+      </TouchableWithoutFeedback>
+    </View>
+  </View>
+</View>
+`;
