@@ -60,22 +60,71 @@ const BannerPage = () => (
         m="xsmall"
         variant="success"
         message="Success Banner"
-        actionLabel="Custom Action"
-        onAction={() => {}}
+        primaryButton={{
+          label: 'Custom Action',
+          action: () => {},
+        }}
       />
       <Banner
         m="xsmall"
         variant="informative"
         message="Informative banner"
-        actionLabel="Custom Action"
-        onAction={() => {}}
+        primaryButton={{
+          label: 'Custom Action',
+          action: () => {},
+        }}
       />
       <Banner
         m="xsmall"
         variant="attention"
         message="Attention banner"
-        actionLabel="Custom Action"
-        onAction={() => {}}
+        primaryButton={{
+          label: 'Custom Action',
+          action: () => {},
+        }}
+      />
+    </BannerWrapper>
+
+    <BannerWrapper>
+      <DocTitle>Banner with two action buttons</DocTitle>
+      <Banner
+        m="xsmall"
+        variant="success"
+        message="Success Banner"
+        primaryButton={{
+          label: 'Primary Action',
+          action: () => {},
+        }}
+        secondaryButton={{
+          label: 'Secondary Action',
+          action: () => {},
+        }}
+      />
+      <Banner
+        m="xsmall"
+        variant="informative"
+        message="Informative banner"
+        primaryButton={{
+          label: 'Primary Action',
+          action: () => {},
+        }}
+        secondaryButton={{
+          label: 'Secondary Action',
+          action: () => {},
+        }}
+      />
+      <Banner
+        m="xsmall"
+        variant="attention"
+        message="Attention banner"
+        primaryButton={{
+          label: 'Primary Action',
+          action: () => {},
+        }}
+        secondaryButton={{
+          label: 'Secondary Action',
+          action: () => {},
+        }}
       />
     </BannerWrapper>
   </ScrollView>

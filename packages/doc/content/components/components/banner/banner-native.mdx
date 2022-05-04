@@ -84,22 +84,84 @@ import { Link as GatsbyLink } from 'gatsby';
             m="xsmall"
             variant="success"
             message="Success Banner"
-            actionLabel="Custom Action"
-            onAction={() => {}}
+            primaryButton={{
+              label: 'Custom Action',
+              action: () => {},
+            }}
           />
           <Banner
             m="xsmall"
             variant="informative"
             message="Informative banner"
-            actionLabel="Custom Action"
-            onAction={() => {}}
+            primaryButton={{
+              label: 'Custom Action',
+              action: () => {},
+            }}
           />
           <Banner
             m="xsmall"
             variant="attention"
             message="Attention banner"
-            actionLabel="Custom Action"
-            onAction={() => {}}
+            primaryButton={{
+              label: 'Custom Action',
+              action: () => {},
+            }}
+          />
+        </View>
+        
+        <View style={{
+          flex: '1',
+          padding: '20px',
+          marginBottom: '10px',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}>
+          <Text style={{
+            marginTop: '20px',
+            marginBottom: '10px',
+            fontSize: '20px',
+            textAlign: 'center',
+          }}>
+            Banner with two action buttons
+          </Text>
+          <Banner
+            m="xsmall"
+            variant="success"
+            message="Success Banner"
+            primaryButton={{
+              label: 'Primary Action',
+              action: () => {},
+            }}
+            secondaryButton={{
+              label: 'Secondary Action',
+              action: () => {},
+            }}
+          />
+          <Banner
+            m="xsmall"
+            variant="informative"
+            message="Informative banner"
+            primaryButton={{
+              label: 'Primary Action',
+              action: () => {},
+            }}
+            secondaryButton={{
+              label: 'Secondary Action',
+              action: () => {},
+            }}
+          />
+          <Banner
+            m="xsmall"
+            variant="attention"
+            message="Attention banner"
+            primaryButton={{
+              label: 'Primary Action',
+              action: () => {},
+            }}
+            secondaryButton={{
+              label: 'Secondary Action',
+              action: () => {},
+            }}
           />
         </View>
       </ScrollView>

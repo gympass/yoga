@@ -100,24 +100,107 @@ render(() => {
         margin="small"
         variant={successBannerProps.variant}
         message={successBannerProps.message}
-        actionLabel='Custom Action'
-        onAction={() => handleOnAction(successBannerProps.message)}
+        primaryButton={{
+          label: 'Custom Action',
+          action: () => handleOnAction(successBannerProps.message),
+        }}
       />
 
       <Banner
         margin="small"
         variant={informativeBannerProps.variant}
         message={informativeBannerProps.message}
-        actionLabel='Custom Action'
-        onAction={() => handleOnAction(informativeBannerProps.message)}
+        primaryButton={{
+          label: 'Custom Action',
+          action: () => handleOnAction(informativeBannerProps.message),
+        }}
       />
 
       <Banner
         margin="small"
         variant={attentionBannerProps.variant}
         message={attentionBannerProps.message}
-        actionLabel='Custom Action'
-        onAction={() => handleOnAction(attentionBannerProps.message)}
+        primaryButton={{
+          label: 'Custom Action',
+          action: () => handleOnAction(attentionBannerProps.message),
+        }}
+      />
+    </Box>
+  );
+});
+```
+
+### Banner with two buttons
+
+```javascript state
+render(() => {
+  const successBannerProps = {
+    variant: 'success',
+    message: 'Success Banner',
+  };
+
+  const informativeBannerProps = {
+    variant: 'informative',
+    message: 'Informative Banner',
+  };
+
+  const attentionBannerProps = {
+    variant: 'attention',
+    message: 'Attention Banner',
+  };
+
+  const handleOnAction = (message) => {
+    alert(`This is your custom action ${message}`);
+  };
+
+  return (
+    <Box
+      display="flex"
+      flexDirection="column"
+      flex={1}
+      justifyContent="space-between"
+    >
+      
+      <Banner
+        margin="small"
+        variant={successBannerProps.variant}
+        message={successBannerProps.message}
+        primaryButton={{
+          label: 'Primary Action',
+          action: () => handleOnAction(successBannerProps.message),
+        }}
+        secondaryButton={{
+          label: 'Secondary Action',
+          action: () => handleOnAction(successBannerProps.message),
+        }}
+      />
+
+      <Banner
+        margin="small"
+        variant={informativeBannerProps.variant}
+        message={informativeBannerProps.message}
+        primaryButton={{
+          label: 'Primary Action',
+          action: () => handleOnAction(informativeBannerProps.message),
+        }}
+        secondaryButton={{
+          label: 'Secondary Action',
+          action: () => handleOnAction(informativeBannerProps.message),
+        }}
+      />
+
+      <Banner
+        margin="small"
+        variant={attentionBannerProps.variant}
+        message={attentionBannerProps.message}
+        primaryButton={{
+          label: 'Primary Action',
+          action: () => handleOnAction(attentionBannerProps.message),
+        }}
+        secondaryButton={{
+          label: 'Secondary Action',
+          action: () => handleOnAction(attentionBannerProps.message),
+        }}
       />
     </Box>
   );
