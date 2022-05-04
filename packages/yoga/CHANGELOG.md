@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.29.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.28.0...@gympass/yoga@7.29.0) (2022-05-04)
+
+
+### Features
+
+* **native:** added createTheme to native context ([94d913d](https://github.com/Gympass/yoga/commit/94d913d74027c544e809e3617032f480a1199e90))
+
+
+
+
+
 # [7.28.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.27.0...@gympass/yoga@7.28.0) (2022-04-06)
 
 
