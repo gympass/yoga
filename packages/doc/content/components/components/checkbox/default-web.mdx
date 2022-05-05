@@ -1,5 +1,7 @@
 ### Usage
 
+#### Default
+
 ```javascript state
 render(() => {
   const [checked, toggleChecked] = useState(false);
@@ -15,6 +17,89 @@ render(() => {
     />
   );
 });
+```
+
+#### Basic checkboxes
+
+```javascript
+<Box d="flex" justifyContent="space-evenly" alignItems="center">
+  <Checkbox />
+  <Checkbox disabled />
+  <Checkbox checked />
+  <Checkbox checked disabled />
+</Box>
+```
+
+#### Basic checkboxes with inverted (use dark mode, please)
+
+```javascript
+<Box d="flex" justifyContent="space-evenly" alignItems="center">
+  <Checkbox inverted />
+  <Checkbox disabled inverted />
+  <Checkbox checked inverted />
+  <Checkbox checked disabled inverted />
+</Box>
+```
+
+#### Indeterminate 
+
+A checkbox input can only have two states in a form: checked or unchecked. It either submits its value or doesn't. Visually, there are three states a checkbox can be in: checked, unchecked, or indeterminate.
+
+```javascript state
+render(() => {
+  const [checkedItems, setCheckedItems] = React.useState([false, true])
+
+  const allChecked = checkedItems.every(Boolean)
+  const isIndeterminate = checkedItems.some(Boolean) && !allChecked
+
+  return (
+    <Box d="flex" flexDirection="column">
+      <Checkbox
+        checked={allChecked}
+        onChange={(e) => setCheckedItems([e.target.checked, e.target.checked])}
+        indeterminate={isIndeterminate}
+        label="Parent"
+      />
+
+      <Divider vertical />
+
+      <Checkbox
+        checked={checkedItems[0]}
+        onChange={(e) => setCheckedItems([e.target.checked, checkedItems[1]])}
+        label="Child"
+      />
+
+      <Divider vertical />
+
+      <Checkbox
+        checked={checkedItems[1]}
+        onChange={(e) => setCheckedItems([checkedItems[0], e.target.checked])}
+        label="Child"
+      />
+    </Box>
+  );
+});
+```
+
+#### Basic checkboxes with indeterminate
+
+```javascript
+<Box d="flex" justifyContent="space-evenly" alignItems="center">
+  <Checkbox indeterminate />
+  <Checkbox indeterminate disabled />
+  <Checkbox indeterminate checked />
+  <Checkbox indeterminate inverted />
+</Box>
+```
+
+#### Error
+
+```javascript
+<Box d="flex" flexDirection="column" justifyContent="space-evenly">
+  <Checkbox error />
+  <Checkbox checked error />
+  <Checkbox indeterminate error />
+</Box>
 ```
 
 ### Props
