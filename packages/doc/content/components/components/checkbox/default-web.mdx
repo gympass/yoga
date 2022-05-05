@@ -81,13 +81,32 @@ render(() => {
 });
 ```
 
+#### With value, label, helper, and disabled
+
+```javascript state
+render(() => {
+  const [checked, toggleChecked] = useState(true);
+  const onChange = () => toggleChecked(!checked);
+
+  return (
+    <Checkbox
+      indeterminate={checked}
+      onChange={onChange}
+      value="checkbox-value"
+      label="Checkbox"
+      helper="Checkbox Helper"
+      disabled
+    />
+  );
+});
+```
+
 #### Basic checkboxes with indeterminate
 
 ```javascript
 <Box d="flex" justifyContent="space-evenly" alignItems="center">
   <Checkbox indeterminate />
   <Checkbox indeterminate disabled />
-  <Checkbox indeterminate checked />
   <Checkbox indeterminate inverted />
 </Box>
 ```
