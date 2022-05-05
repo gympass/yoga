@@ -2,7 +2,7 @@ import React from 'react';
 import { bool, string, shape } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
-import { Check } from '@gympass/yoga-icons';
+import { Check, Rectangle } from '@gympass/yoga-icons';
 
 import { HiddenInput } from '../../shared';
 
@@ -28,6 +28,7 @@ const CheckMark = styled.div`
     disabled,
     inverted,
     error,
+    indeterminate,
     theme: {
       yoga: {
         colors: { primary, feedback, elements, white },
@@ -42,17 +43,17 @@ const CheckMark = styled.div`
     if (error) {
       [, borderColor] = feedback.attention;
 
-      if (checked) {
+      if (checked || indeterminate) {
         [, bgColor] = feedback.attention;
       }
     } else if (disabled) {
       borderColor = checkbox.disabled.border.color;
 
-      if (checked) {
+      if (checked || indeterminate) {
         bgColor = checkbox.disabled.backgroundColor;
         borderColor = elements.lineAndBorders;
       }
-    } else if (checked) {
+    } else if (checked || indeterminate) {
       borderColor = primary;
       bgColor = primary;
       checkColor = checkbox.checked.icon.color;
@@ -136,6 +137,7 @@ const CheckboxStyled = styled.div`
     checked,
     inverted,
     disabled,
+    indeterminate,
     theme: {
       yoga: {
         colors: { primary, elements, white },
@@ -149,7 +151,9 @@ const CheckboxStyled = styled.div`
         return white;
       }
 
-      return checked ? primary : elements.backgroundAndDisabled;
+      return checked || indeterminate
+        ? primary
+        : elements.backgroundAndDisabled;
     };
 
     return `
@@ -236,6 +240,7 @@ const Checkbox = ({
   style,
   className,
   inverted,
+  indeterminate,
   theme: {
     yoga: {
       components: { checkbox },
@@ -244,7 +249,12 @@ const Checkbox = ({
   ...rest
 }) => (
   <CheckboxWrapper style={style} className={className} disabled={disabled}>
-    <CheckboxStyled checked={checked} inverted={inverted} disabled={disabled}>
+    <CheckboxStyled
+      checked={checked}
+      indeterminate={indeterminate}
+      inverted={inverted}
+      disabled={disabled}
+    >
       <Label>
         <Shadow />
         <CheckMark
@@ -253,9 +263,15 @@ const Checkbox = ({
             checked,
             error,
             inverted,
+            indeterminate,
           }}
         >
-          {checked && <Check width={checkbox.size} height={checkbox.size} />}
+          {checked && !indeterminate && (
+            <Check width={checkbox.size} height={checkbox.size} />
+          )}
+          {indeterminate && (
+            <Rectangle width={checkbox.size} height={checkbox.size} />
+          )}
         </CheckMark>
         <HiddenInput
           type="checkbox"
@@ -283,6 +299,8 @@ Checkbox.propTypes = {
   disabled: bool,
   inverted: bool,
   error: string,
+  /** if true, the component appears indeterminate */
+  indeterminate: bool,
   /** set a style to the checkbox container */
   style: shape({}),
   className: string,
@@ -295,6 +313,7 @@ Checkbox.defaultProps = {
   checked: false,
   disabled: false,
   inverted: false,
+  indeterminate: false,
   error: undefined,
   style: undefined,
   className: undefined,
