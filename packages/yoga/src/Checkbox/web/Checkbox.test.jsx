@@ -121,6 +121,46 @@ describe('<Checkbox />', () => {
 
       expect(container).toMatchSnapshot();
     });
+
+    it('should match snapshot with indeterminate', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox indeterminate />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with indeterminate and disabled checkbox', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox indeterminate disabled />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with error and indeterminate checkbox', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox {...data} error="Error msg" indeterminate />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot with inverted and indeterminate', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox {...data} inverted indeterminate />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
   });
 
   describe('Events', () => {
