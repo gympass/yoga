@@ -29,6 +29,7 @@ import BottomSheet from './BottomSheet';
 import Dialog from './Dialog';
 import Divider from './Divider';
 import Header from './Header';
+import Menu from './Menu';
 
 export {
   ThemeProvider,
@@ -66,4 +67,5 @@ export {
   Dialog,
   Divider,
   Header,
+  Menu,
 };
