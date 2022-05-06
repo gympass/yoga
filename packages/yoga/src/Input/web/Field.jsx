@@ -35,6 +35,8 @@ const Field = styled.input`
   box-sizing: border-box;
 
   ${({
+    label,
+    placeholder,
     cleanable,
     error,
     value,
@@ -78,6 +80,10 @@ const Field = styled.input`
         };
 
       }
+
+      &::placeholder {
+        color: ${input.label.color.default};
+      }
     }
 
     &:disabled {
@@ -85,8 +91,18 @@ const Field = styled.input`
       color: ${colors.text.disabled};
     }
 
-    &::placeholder {
-      color: ${input.label.color.default};
+    ${
+      placeholder && label
+        ? css`
+            &::placeholder {
+              color: transparent;
+            }
+          `
+        : css`
+            &::placeholder {
+              color: ${input.label.color.default};
+            }
+          `
     }
 
     ${value &&
