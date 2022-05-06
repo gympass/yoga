@@ -10,10 +10,8 @@ const Menu = ({ spacing, radii }) => ({
     default: spacing.xxsmall,
   },
   padding: {
-    top: spacing.xxsmall,
-    right: spacing.small,
-    bottom: spacing.xxsmall,
-    left: spacing.small,
+    horizontal: spacing.small,
+    vertical: spacing.xxsmall,
   },
 });
 
