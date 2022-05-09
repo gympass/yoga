@@ -14,7 +14,7 @@ const durationDictionary = {
 const SnackbarAnimationWrapper = ({ onSnackbarClose, children, duration }) => {
   const timeoutRef = useRef();
 
-  const translateY = useRef(new Animated.Value(100)).current; // Initial value for opacity: 0
+  const translateY = useRef(new Animated.Value(100)).current;
 
   useEffect(() => {
     Animated.timing(translateY, {
@@ -74,8 +74,9 @@ const SnackbarAnimationWrapper = ({ onSnackbarClose, children, duration }) => {
       onPanResponderRelease: handlePanResponderRelease,
       onPanResponderTerminate: handlePanResponderRelease,
       onStartShouldSetPanResponder: () => true,
-      onStartShouldSetPanResponderCapture: () => true,
-      onMoveShouldSetPanResponder: () => true,
+      onMoveShouldSetPanResponder: (_, gestureState) => {
+        return !(gestureState.dy <= 2 && gestureState.dy >= -2);
+      },
       onMoveShouldSetPanResponderCapture: () => true,
       onPanResponderTerminationRequest: () => true,
       onShouldBlockNativeResponder: () => true,
