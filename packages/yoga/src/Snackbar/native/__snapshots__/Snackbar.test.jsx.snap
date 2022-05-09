@@ -26,6 +26,15 @@ exports[`<Snackbar /> should match snapshot 1`] = `
     }
   >
     <View
+      bRadius={8}
+      bgColor="#C1EEDB"
+      elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+      mb={20}
+      ml={20}
+      mr={20}
+      mt={0}
+      paddingHorizontal={16}
+      paddingVertical={12}
       style={
         Array [
           Object {
