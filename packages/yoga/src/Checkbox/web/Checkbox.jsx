@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { bool, string, shape } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
@@ -247,48 +247,57 @@ const Checkbox = ({
     },
   },
   ...rest
-}) => (
-  <CheckboxWrapper style={style} className={className} disabled={disabled}>
-    <CheckboxStyled
-      checked={checked}
-      indeterminate={indeterminate}
-      inverted={inverted}
-      disabled={disabled}
-    >
-      <Label>
-        <Shadow />
-        <CheckMark
-          {...{
-            disabled,
-            checked,
-            error,
-            inverted,
-            indeterminate,
-          }}
-        >
-          {checked && !indeterminate && (
-            <Check width={checkbox.size} height={checkbox.size} />
-          )}
-          {indeterminate && (
-            <Rectangle width={checkbox.size} height={checkbox.size} />
-          )}
-        </CheckMark>
-        <HiddenInput
-          type="checkbox"
-          checked={checked}
-          disabled={disabled}
-          {...rest}
-        />
-        {label}
-      </Label>
-    </CheckboxStyled>
-    {(helper || error) && (
-      <HelperWrapper>
-        <Helper error={error}>{error || helper}</Helper>
-      </HelperWrapper>
-    )}
-  </CheckboxWrapper>
-);
+}) => {
+  const inputRef = useRef(null);
+
+  if (inputRef.current) {
+    inputRef.current.indeterminate = indeterminate;
+  }
+
+  return (
+    <CheckboxWrapper style={style} className={className} disabled={disabled}>
+      <CheckboxStyled
+        checked={checked}
+        indeterminate={indeterminate}
+        inverted={inverted}
+        disabled={disabled}
+      >
+        <Label>
+          <Shadow />
+          <CheckMark
+            {...{
+              disabled,
+              checked,
+              error,
+              inverted,
+              indeterminate,
+            }}
+          >
+            {checked && !indeterminate && (
+              <Check width={checkbox.size} height={checkbox.size} />
+            )}
+            {indeterminate && (
+              <Rectangle width={checkbox.size} height={checkbox.size} />
+            )}
+          </CheckMark>
+          <HiddenInput
+            type="checkbox"
+            ref={inputRef}
+            checked={checked}
+            disabled={disabled}
+            {...rest}
+          />
+          {label}
+        </Label>
+      </CheckboxStyled>
+      {(helper || error) && (
+        <HelperWrapper>
+          <Helper error={error}>{error || helper}</Helper>
+        </HelperWrapper>
+      )}
+    </CheckboxWrapper>
+  );
+};
 
 Checkbox.propTypes = {
   label: string,
