@@ -5,7 +5,7 @@ import { func, node } from 'prop-types';
 const SWIPE_THRESHOLD = 36;
 
 const SnackbarAnimationWrapper = ({ onClose, children }) => {
-  const translateY = useRef(new Animated.Value(100)).current; // Initial value for opacity: 0
+  const translateY = useRef(new Animated.Value(100)).current;
 
   useEffect(() => {
     Animated.timing(translateY, {
@@ -40,8 +40,9 @@ const SnackbarAnimationWrapper = ({ onClose, children }) => {
       onPanResponderRelease: handlePanResponderRelease,
       onPanResponderTerminate: handlePanResponderRelease,
       onStartShouldSetPanResponder: () => true,
-      onStartShouldSetPanResponderCapture: () => true,
-      onMoveShouldSetPanResponder: () => true,
+      onMoveShouldSetPanResponder: (_, gestureState) => {
+        return !(gestureState.dy <= 2 && gestureState.dy >= -2);
+      },
       onMoveShouldSetPanResponderCapture: () => true,
       onPanResponderTerminationRequest: () => true,
       onShouldBlockNativeResponder: () => true,
