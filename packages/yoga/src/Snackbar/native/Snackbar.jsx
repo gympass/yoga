@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { string, oneOf, func, elementType } from 'prop-types';
 
@@ -51,10 +51,18 @@ const Snackbar = ({
   onSnackbarClose,
   duration,
 }) => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  const handleOnAction = () => {
+    setIsOpen(false);
+    onAction();
+  };
+
   return (
     <SnackbarAnimationWrapper
       onSnackbarClose={onSnackbarClose}
       duration={duration}
+      isOpen={isOpen}
     >
       <SnackbarContainer variant={variant} theme={theme}>
         {icon && (
@@ -74,7 +82,7 @@ const Snackbar = ({
             small
             secondary
             marginLeft="xxsmall"
-            onPress={onAction}
+            onPress={handleOnAction}
           >
             {actionLabel}
           </Box>

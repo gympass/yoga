@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Animated, Easing, PanResponder } from 'react-native';
-import { func, node, oneOf } from 'prop-types';
+import { bool, func, node, oneOf } from 'prop-types';
 
 const SWIPE_THRESHOLD = 36;
 
@@ -11,19 +11,26 @@ const durationDictionary = {
   indefinite: -1,
 };
 
-const SnackbarAnimationWrapper = ({ onSnackbarClose, children, duration }) => {
+const SnackbarAnimationWrapper = ({
+  onSnackbarClose,
+  children,
+  duration,
+  isOpen,
+}) => {
   const timeoutRef = useRef();
 
   const translateY = useRef(new Animated.Value(100)).current;
 
   useEffect(() => {
-    Animated.timing(translateY, {
-      toValue: 0,
-      duration: 200,
-      easing: Easing.bezier(0.41, 0.09, 0.2, 1),
-      useNativeDriver: true,
-    }).start();
-  }, [translateY]);
+    if (isOpen) {
+      Animated.timing(translateY, {
+        toValue: 0,
+        duration: 200,
+        easing: Easing.bezier(0.41, 0.09, 0.2, 1),
+        useNativeDriver: true,
+      }).start();
+    }
+  }, [translateY, isOpen]);
 
   const openAnimation = () => {
     Animated.spring(translateY, {
@@ -37,12 +44,14 @@ const SnackbarAnimationWrapper = ({ onSnackbarClose, children, duration }) => {
       toValue: 100,
       useNativeDriver: true,
     }).start();
+    if (onSnackbarClose) {
+      onSnackbarClose();
+    }
   };
 
   function handlePanResponderRelease(_evt, gestureState) {
     if (gestureState.dy > SWIPE_THRESHOLD) {
       closeAnimation();
-      onSnackbarClose();
     } else {
       openAnimation();
     }
@@ -55,14 +64,17 @@ const SnackbarAnimationWrapper = ({ onSnackbarClose, children, duration }) => {
     if (shouldCloseOnTimer) {
       timeoutRef.current = setTimeout(() => {
         closeAnimation();
-        if (onSnackbarClose) {
-          onSnackbarClose();
-        }
       }, timoutDuration);
     }
 
     return () => clearTimeout(timeoutRef.current);
   }, [duration]);
+
+  useEffect(() => {
+    if (!isOpen) {
+      closeAnimation();
+    }
+  }, [isOpen]);
 
   const panResponder = useRef(
     PanResponder.create({
@@ -107,6 +119,7 @@ SnackbarAnimationWrapper.propTypes = {
   onSnackbarClose: func,
   children: node.isRequired,
   duration: oneOf(['fast', 'default', 'slow', 'indefinite']).isRequired,
+  isOpen: bool.isRequired,
 };
 
 SnackbarAnimationWrapper.defaultProps = {
