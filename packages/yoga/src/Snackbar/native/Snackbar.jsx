@@ -41,9 +41,21 @@ const SnackbarContainer = styled(Box).attrs(
   align-items: center;
 `;
 
-const Snackbar = ({ icon, message, actionLabel, onAction, variant, theme }) => {
+const Snackbar = ({
+  icon,
+  message,
+  actionLabel,
+  onAction,
+  variant,
+  theme,
+  onSnackbarClose,
+  duration,
+}) => {
   return (
-    <SnackbarAnimationWrapper>
+    <SnackbarAnimationWrapper
+      onSnackbarClose={onSnackbarClose}
+      duration={duration}
+    >
       <SnackbarContainer variant={variant} theme={theme}>
         {icon && (
           <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
@@ -78,6 +90,8 @@ Snackbar.propTypes = {
   message: string.isRequired,
   actionLabel: string,
   onAction: func,
+  onSnackbarClose: func,
+  duration: oneOf(['fast', 'default', 'slow', 'indefinite']),
 };
 
 Snackbar.defaultProps = {
@@ -85,6 +99,8 @@ Snackbar.defaultProps = {
   icon: undefined,
   actionLabel: undefined,
   onAction: undefined,
+  onSnackbarClose: undefined,
+  duration: 'default',
 };
 
 export default withTheme(Snackbar);
