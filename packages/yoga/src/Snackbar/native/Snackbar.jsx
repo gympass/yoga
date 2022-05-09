@@ -8,10 +8,8 @@ import Icon from '../../Icon';
 import Text from '../../Text';
 import SnackbarAnimationWrapper from './SnackbarAnimationWrapper';
 
-const SnackbarContainer = styled.View`
-  flex-direction: row;
-  align-items: center;
-  ${({
+const SnackbarContainer = styled(Box).attrs(
+  ({
     variant,
     theme: {
       yoga: {
@@ -27,19 +25,26 @@ const SnackbarContainer = styled.View`
         },
       },
     },
-  }) => `
-    padding: ${padding.vertical}px ${padding.horizontal}px;
-    margin: ${margin.top}px ${margin.right}px ${margin.bottom}px ${margin.left}px;
-    box-shadow: ${shadow.default};
-    background-color: ${backgroundColor};
-    border-radius: ${border.radius}px;
-  `}
+  }) => ({
+    paddingVertical: padding.vertical,
+    paddingHorizontal: padding.horizontal,
+    mt: margin.top,
+    mr: margin.right,
+    mb: margin.bottom,
+    ml: margin.left,
+    elevation: shadow.default,
+    bgColor: backgroundColor,
+    bRadius: border.radius,
+  }),
+)`
+  flex-direction: row;
+  align-items: center;
 `;
 
-const Snackbar = ({ icon, message, actionLabel, onAction, ...props }) => {
+const Snackbar = ({ icon, message, actionLabel, onAction, variant, theme }) => {
   return (
     <SnackbarAnimationWrapper>
-      <SnackbarContainer {...props}>
+      <SnackbarContainer variant={variant} theme={theme}>
         {icon && (
           <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
         )}
