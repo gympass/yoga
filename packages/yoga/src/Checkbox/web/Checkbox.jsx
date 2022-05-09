@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { bool, string, shape } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
@@ -250,9 +250,11 @@ const Checkbox = ({
 }) => {
   const inputRef = useRef(null);
 
-  if (inputRef.current) {
-    inputRef.current.indeterminate = indeterminate;
-  }
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.indeterminate = indeterminate;
+    }
+  }, [indeterminate]);
 
   return (
     <CheckboxWrapper style={style} className={className} disabled={disabled}>
