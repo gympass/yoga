@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.30.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.29.2...@gympass/yoga@7.30.0) (2022-05-09)
+
+
+### Bug Fixes
+
+* **checkbox:** fix review ([f691891](https://github.com/Gympass/yoga/commit/f691891fb80a0b4581f86392f1b9d5baf58ba31f))
+
+
+### Features
+
+* **checkbox:** add indeterminate prop ([449a186](https://github.com/Gympass/yoga/commit/449a1862453733bee8a6067f65c126808cdc5f83))
+* **checkbox:** add ref to checkbox ([74a8e29](https://github.com/Gympass/yoga/commit/74a8e29cd78f02a014f3448e7dffaabb4c7fea8f))
+* **checkbox:** add useEffect to inputRef ([ede51b5](https://github.com/Gympass/yoga/commit/ede51b5b854720eb7c9d824b08fbd6634a51ab72))
+
+
+
+
+
 ## [7.29.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.29.1...@gympass/yoga@7.29.2) (2022-05-06)
 
 **Note:** Version bump only for package @gympass/yoga
