@@ -254,7 +254,7 @@ const Checkbox = ({
     if (inputRef.current) {
       inputRef.current.indeterminate = indeterminate;
     }
-  }, [indeterminate]);
+  });
 
   return (
     <CheckboxWrapper style={style} className={className} disabled={disabled}>
