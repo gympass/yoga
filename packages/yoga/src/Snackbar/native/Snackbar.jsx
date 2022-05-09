@@ -1,15 +1,16 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { string, oneOf, node, func, elementType } from 'prop-types';
-import { Animated, Easing } from 'react-native';
-import { Box, Button, Icon, Text } from '../..';
+import { string, oneOf, func, elementType } from 'prop-types';
 
-const SnackbarContainer = styled(Animated.View)`
+import Box from '../../Box';
+import Button from '../../Button';
+import Icon from '../../Icon';
+import Text from '../../Text';
+import SnackbarAnimationWrapper from './SnackbarAnimationWrapper';
+
+const SnackbarContainer = styled.View`
   flex-direction: row;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  z-index: 10px;
   ${({
     variant,
     theme: {
@@ -35,63 +36,48 @@ const SnackbarContainer = styled(Animated.View)`
   `}
 `;
 
-const Snackbar = ({ icon, children, actionLabel, onAction, ...props }) => {
-  const translateY = useRef(new Animated.Value(0)).current;
-
-  useEffect(() => {
-    Animated.timing(translateY, {
-      toValue: 1,
-      duration: 1200,
-      easing: Easing.bezier(0.41, 0.09, 0.2, 1),
-      useNativeDriver: true,
-    }).start();
-  }, [translateY]);
-  const translateValue = translateY.interpolate({
-    inputRange: [0, 1],
-    outputRange: [-10, 1000],
-  });
-
-  const animatedStyles = {
-    transform: [
-      {
-        translateY: translateValue,
-      },
-    ],
-  };
-
+const Snackbar = ({ icon, message, actionLabel, onAction, ...props }) => {
   return (
-    <SnackbarContainer styles={animatedStyles} {...props}>
-      {icon && (
-        <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
-      )}
-      <Text
-        flex={1}
-        fontSize="small"
-        marginVertical="xxxsmall"
-        numberOfLines={2}
-      >
-        {children}
-      </Text>
-      {actionLabel && onAction && (
-        <Box as={Button.Text} small secondary marginLeft="xxsmall">
-          {actionLabel}
-        </Box>
-      )}
-    </SnackbarContainer>
+    <SnackbarAnimationWrapper>
+      <SnackbarContainer {...props}>
+        {icon && (
+          <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
+        )}
+        <Text
+          flex={1}
+          fontSize="small"
+          marginVertical="xxxsmall"
+          numberOfLines={2}
+        >
+          {message}
+        </Text>
+        {actionLabel && onAction && (
+          <Box
+            as={Button.Text}
+            small
+            secondary
+            marginLeft="xxsmall"
+            onPress={onAction}
+          >
+            {actionLabel}
+          </Box>
+        )}
+      </SnackbarContainer>
+    </SnackbarAnimationWrapper>
   );
 };
 
 Snackbar.propTypes = {
-  icon: elementType,
   variant: oneOf(['success', 'informative', 'attention', 'failure', 'info']),
-  children: node.isRequired,
+  icon: elementType,
+  message: string.isRequired,
   actionLabel: string,
   onAction: func,
 };
 
 Snackbar.defaultProps = {
-  icon: undefined,
   variant: 'success',
+  icon: undefined,
   actionLabel: undefined,
   onAction: undefined,
 };
