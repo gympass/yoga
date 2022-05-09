@@ -13,1395 +13,48 @@ exports[`<Snackbar /> should match snapshot 1`] = `
   <View
     style={
       Object {
-        "alignItems": "center",
-        "backgroundColor": "#C1EEDB",
-        "borderRadius": 8,
         "bottom": 0,
-        "flexDirection": "row",
-        "marginBottom": 20,
-        "marginLeft": 20,
-        "marginRight": 20,
-        "marginTop": 0,
-        "paddingBottom": 12,
-        "paddingLeft": 16,
-        "paddingRight": 16,
-        "paddingTop": 12,
         "position": "absolute",
-        "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": Object {
-          "height": 2,
-          "width": 0,
-        },
-        "shadowOpacity": 1,
-        "shadowRadius": 4,
+        "transform": Array [
+          Object {
+            "translateY": 100,
+          },
+        ],
+        "width": "100%",
         "zIndex": 10,
       }
     }
-    styles={
-      Object {
-        "transform": Array [
+  >
+    <View
+      style={
+        Array [
           Object {
-            "translateY": -10,
-          },
-        ],
-      }
-    }
-    theme={
-      Object {
-        "yoga": Object {
-          "baseFont": Object {
-            "family": "Rubik",
-            "weight": Array [
-              300,
-              400,
-              500,
-              700,
-              900,
-              "300i",
-              "400i",
-              "500i",
-              "700i",
-              "900i",
-            ],
-          },
-          "baseFontSize": 16,
-          "borders": Array [
-            0,
-            1,
-            2,
-          ],
-          "breakpoints": Object {
-            "lg": Object {
-              "gutter": 24,
-              "margin": 71,
-              "width": 1024,
-            },
-            "md": Object {
-              "gutter": 16,
-              "margin": 20,
-              "width": 768,
-            },
-            "sm": Object {
-              "gutter": 16,
-              "margin": 20,
-              "width": 480,
-            },
-            "xl": Object {
-              "gutter": 24,
-              "margin": 71,
-              "width": 1200,
-            },
-            "xs": Object {
-              "gutter": 16,
-              "margin": 20,
-              "width": 360,
-            },
-            "xxl": Object {
-              "gutter": 24,
-              "margin": 71,
-              "width": 1366,
-            },
-            "xxs": Object {
-              "gutter": 16,
-              "margin": 20,
+            "alignItems": "center",
+            "backgroundColor": "#C1EEDB",
+            "borderRadius": 8,
+            "flexDirection": "row",
+            "marginBottom": 20,
+            "marginLeft": 20,
+            "marginRight": 20,
+            "marginTop": 0,
+            "paddingBottom": 12,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 12,
+            "shadowColor": "rgba(152, 152, 166, 0.2)",
+            "shadowOffset": Object {
+              "height": 2,
               "width": 0,
             },
-            "xxxl": Object {
-              "gutter": 24,
-              "margin": 71,
-              "width": 1600,
-            },
+            "shadowOpacity": 1,
+            "shadowRadius": 4,
           },
-          "colors": Object {
-            "attention": "#FCD6C3",
-            "clear": "#F5F5FA",
-            "deep": "#6B6B78",
-            "deepPurple": "#710252",
-            "elements": Object {
-              "backgroundAndDisabled": "#F5F5FA",
-              "lineAndBorders": "#D7D7E0",
-              "selectionAndIcons": "#9898A6",
-            },
-            "energy": "#FFC24C",
-            "feedback": Object {
-              "attention": Array [
-                "#FCD6C3",
-                "#FF874C",
-              ],
-              "informative": Array [
-                "#E0DFFF",
-                "#7068D4",
-              ],
-              "success": Array [
-                "#C1EEDB",
-                "#1D856C",
-              ],
-            },
-            "hope": "#1D856C",
-            "light": "#D7D7E0",
-            "medium": "#9898A6",
-            "neutral": "#E0DFFF",
-            "peace": "#FFB0A7",
-            "primary": "#D8385E",
-            "relax": "#7068D4",
-            "secondary": "#231B22",
-            "stamina": "#231B22",
-            "success": "#C1EEDB",
-            "text": Object {
-              "disabled": "#D7D7E0",
-              "primary": "#231B22",
-              "secondary": "#6B6B78",
-            },
-            "uplift": "#FF4438",
-            "verve": "#FF874C",
-            "vibin": "#D8385E",
-            "white": "#FFFFFF",
-            "yoga": "#FFEEF2",
-          },
-          "components": Object {
-            "autocomplete": Object {
-              "border": Object {
-                "color": Object {
-                  "default": "#D7D7E0",
-                  "typed": "#231B22",
-                },
-                "radius": 8,
-                "width": 1,
-              },
-              "field": Object {
-                "backgroundColor": "#FFFFFF",
-              },
-              "font": Object {
-                "color": Object {
-                  "default": "#6B6B78",
-                  "focus": "#231B22",
-                },
-                "size": 14,
-                "weight": 400,
-              },
-              "height": 52,
-              "helper": Object {
-                "color": Object {
-                  "default": "#6B6B78",
-                  "focus": "#231B22",
-                },
-                "font": Object {
-                  "size": 12,
-                },
-                "margin": Object {
-                  "top": 4,
-                },
-              },
-              "label": Object {
-                "color": Object {
-                  "default": "#6B6B78",
-                  "focus": "#231B22",
-                },
-                "font": Object {
-                  "size": Object {
-                    "default": 14,
-                    "typed": 12,
-                  },
-                  "weight": 400,
-                },
-                "padding": Object {
-                  "left": 4,
-                  "right": 4,
-                },
-              },
-              "list": Object {
-                "backgroundColor": Object {
-                  "default": "#FFFFFF",
-                  "hover": "#F5F5FA",
-                },
-                "font": Object {
-                  "lineHeight": 20,
-                  "size": 14,
-                  "weight": Object {
-                    "default": 400,
-                    "matched": 700,
-                  },
-                },
-                "padding": Object {
-                  "bottom": 16,
-                  "left": 16,
-                  "right": 16,
-                  "top": 16,
-                },
-              },
-              "padding": Object {
-                "bottom": 16,
-                "left": 16,
-                "right": 16,
-                "top": 16,
-              },
-              "width": 320,
-            },
-            "avatar": Object {},
-            "bottomsheet": Object {
-              "border": Object {
-                "radius": 16,
-              },
-              "height": Object {
-                "min": 160,
-              },
-              "padding": Object {
-                "bottom": 24,
-                "left": 20,
-                "right": 20,
-                "top": 24,
-              },
-              "position": Object {
-                "default": 0,
-              },
-              "width": Object {
-                "default": 100,
-              },
-            },
-            "button": Object {
-              "border": Object {
-                "radius": 9999,
-              },
-              "font": Object {
-                "size": Object {
-                  "default": 16,
-                  "small": 14,
-                },
-                "weight": 500,
-              },
-              "height": Object {
-                "default": 48,
-                "small": 32,
-              },
-              "icon": Object {
-                "margin": Object {
-                  "right": 8,
-                },
-                "size": Object {
-                  "default": 24,
-                  "small": 16,
-                },
-              },
-              "padding": Object {
-                "default": Object {
-                  "left": 24,
-                  "right": 24,
-                },
-                "small": Object {
-                  "left": 16,
-                  "right": 16,
-                },
-              },
-              "types": Object {
-                "contained": Object {
-                  "backgroundColor": Object {
-                    "disabled": "#F5F5FA",
-                    "primary": Object {
-                      "default": "#D8385E",
-                      "pressed": "rgba(216, 56, 94, 0.75)",
-                    },
-                    "secondary": Object {
-                      "default": "#231B22",
-                      "pressed": "rgba(35, 27, 34, 0.75)",
-                    },
-                  },
-                  "font": Object {
-                    "default": Object {
-                      "color": "#FFFFFF",
-                    },
-                    "disabled": Object {
-                      "color": "#D7D7E0",
-                    },
-                    "pressed": Object {
-                      "color": "#FFFFFF",
-                    },
-                  },
-                },
-                "link": Object {
-                  "font": Object {
-                    "disabled": Object {
-                      "color": "#D7D7E0",
-                    },
-                    "primary": Object {
-                      "color": "#D8385E",
-                    },
-                    "secondary": Object {
-                      "color": "#231B22",
-                    },
-                  },
-                  "margin": Object {
-                    "bottom": 8,
-                    "top": 16,
-                  },
-                },
-                "outline": Object {
-                  "backgroundColor": Object {
-                    "default": "transparent",
-                    "primary": Object {
-                      "hover": "#D8385E",
-                    },
-                    "secondary": Object {
-                      "hover": "#231B22",
-                    },
-                  },
-                  "border": Object {
-                    "width": 1,
-                  },
-                  "font": Object {
-                    "default": Object {
-                      "primary": Object {
-                        "color": "#D8385E",
-                      },
-                      "secondary": Object {
-                        "color": "#231B22",
-                      },
-                    },
-                    "disabled": Object {
-                      "color": "#D7D7E0",
-                    },
-                    "hover": Object {
-                      "color": "#FFFFFF",
-                    },
-                    "pressed": Object {
-                      "primary": Object {
-                        "color": "rgba(216, 56, 94, 0.75)",
-                      },
-                      "secondary": Object {
-                        "color": "rgba(35, 27, 34, 0.75)",
-                      },
-                    },
-                  },
-                },
-                "text": Object {
-                  "backgroundColor": "transparent",
-                },
-              },
-            },
-            "card": Object {
-              "backgroundColor": "#FFFFFF",
-              "elevation": "0 2px 4px      rgba(152, 152, 166, 0.2)",
-              "event": Object {
-                "date": Object {
-                  "backgroundColor": "#D8385E",
-                  "dayOfWeek": Object {
-                    "fontWeight": 400,
-                    "marginBottom": 8,
-                  },
-                  "month": Object {
-                    "fontWeight": 500,
-                  },
-                  "radius": 8,
-                },
-                "icon": Object {
-                  "fill": "#231B22",
-                },
-                "info": Object {
-                  "name": Object {
-                    "fontSize": 16,
-                    "fontWeight": 500,
-                    "height": 20,
-                    "marginBottom": 8,
-                  },
-                  "padding": Object {
-                    "bottom": 16,
-                    "left": 16,
-                    "right": 16,
-                    "top": 16,
-                  },
-                  "place": Object {
-                    "color": "#6B6B78",
-                    "height": 20,
-                    "marginBottom": 8,
-                  },
-                },
-              },
-              "gym": Object {
-                "checkIn": Object {
-                  "avatar": Object {
-                    "border": Object {
-                      "radius": 8,
-                      "width": 1,
-                    },
-                  },
-                  "content": Object {
-                    "margin": Object {
-                      "top": 16,
-                    },
-                  },
-                  "header": Object {
-                    "margin": Object {
-                      "bottom": 16,
-                    },
-                  },
-                  "title": Object {
-                    "font": Object {
-                      "weight": 400,
-                    },
-                    "margin": Object {
-                      "bottom": 8,
-                    },
-                  },
-                },
-              },
-              "padding": Object {
-                "bottom": 16,
-                "left": 16,
-                "right": 16,
-                "top": 16,
-              },
-              "plan": Object {
-                "actions": Object {
-                  "buttonText": Object {
-                    "margin": Object {
-                      "bottom": 0,
-                    },
-                  },
-                },
-                "description": Object {
-                  "color": "#6B6B78",
-                },
-                "list": Object {
-                  "button": Object {
-                    "font": Object {
-                      "color": "#231B22",
-                      "size": 12,
-                      "weight": 500,
-                    },
-                    "margin": Object {
-                      "top": 12,
-                    },
-                  },
-                  "item": Object {
-                    "font": Object {
-                      "color": "#231B22",
-                    },
-                    "margin": Object {
-                      "bottom": 16,
-                    },
-                  },
-                },
-                "padding": Object {
-                  "bottom": 32,
-                  "left": 20,
-                  "right": 20,
-                  "top": 56,
-                },
-                "price": Object {
-                  "currency": Object {
-                    "margin": Object {
-                      "right": 4,
-                    },
-                  },
-                  "margin": Object {
-                    "top": 16,
-                  },
-                },
-                "radius": 16,
-                "subtitle": Object {
-                  "font": Object {
-                    "color": "#6B6B78",
-                    "size": 12,
-                    "weight": 500,
-                  },
-                  "margin": Object {
-                    "bottom": 8,
-                  },
-                },
-                "tag": Object {
-                  "position": Object {
-                    "left": 20,
-                    "top": 20,
-                  },
-                },
-                "title": Object {
-                  "color": "#231B22",
-                },
-              },
-              "radii": 8,
-              "ribbon": Object {
-                "radius": 9999,
-              },
-            },
-            "cardnative": Object {
-              "plan": Object {
-                "actions": Object {
-                  "buttonText": Object {
-                    "margin": Object {
-                      "top": 20,
-                    },
-                  },
-                  "margin": Object {
-                    "top": 16,
-                  },
-                },
-                "description": Object {
-                  "color": "#6B6B78",
-                },
-                "list": Object {
-                  "item": Object {
-                    "icon": Object {
-                      "margin": Object {
-                        "right": 8,
-                      },
-                    },
-                  },
-                  "margin": Object {
-                    "top": 0,
-                  },
-                },
-                "price": Object {
-                  "margin": Object {
-                    "bottom": 12,
-                  },
-                },
-                "title": Object {
-                  "margin": Object {
-                    "bottom": 12,
-                    "top": 12,
-                  },
-                },
-              },
-            },
-            "cardweb": Object {
-              "plan": Object {
-                "actions": Object {
-                  "buttonText": Object {
-                    "margin": Object {
-                      "top": 12,
-                    },
-                  },
-                  "margin": Object {
-                    "top": 32,
-                  },
-                },
-                "list": Object {
-                  "item": Object {
-                    "icon": Object {
-                      "margin": Object {
-                        "right": 12,
-                      },
-                    },
-                  },
-                  "margin": Object {
-                    "top": 16,
-                  },
-                },
-                "price": Object {
-                  "margin": Object {
-                    "bottom": 32,
-                  },
-                },
-                "title": Object {
-                  "margin": Object {
-                    "bottom": 4,
-                  },
-                },
-              },
-            },
-            "checkbox": Object {
-              "border": Object {
-                "radius": 4,
-                "width": 2,
-              },
-              "checked": Object {
-                "icon": Object {
-                  "color": "#FFFFFF",
-                },
-              },
-              "disabled": Object {
-                "backgroundColor": "#D7D7E0",
-                "border": Object {
-                  "color": "#D7D7E0",
-                },
-              },
-              "helper": Object {
-                "font": Object {
-                  "color": "#6B6B78",
-                  "size": 14,
-                },
-                "margin": Object {
-                  "top": 4,
-                },
-              },
-              "hover": Object {
-                "border": Object {
-                  "radius": 9999,
-                },
-              },
-              "label": Object {
-                "font": Object {
-                  "color": "#231B22",
-                  "size": 16,
-                },
-                "padding": Object {
-                  "left": 8,
-                },
-              },
-              "margin": Object {
-                "right": 8,
-              },
-              "size": 24,
-            },
-            "checkboxswitch": Object {
-              "focus": Object {
-                "checked": Object {
-                  "backgroundColor": "rgba(216, 56, 94, 0.5)",
-                },
-                "disabled": Object {
-                  "backgroundColor": "rgba(245, 245, 250, 0.5)",
-                },
-              },
-              "hover": Object {
-                "checked": Object {
-                  "backgroundColor": "rgba(216, 56, 94, 0.25)",
-                },
-                "disabled": Object {
-                  "backgroundColor": "rgba(245, 245, 250, 0.25)",
-                },
-              },
-              "pressed": Object {
-                "checked": Object {
-                  "backgroundColor": "rgba(216, 56, 94, 0.75)",
-                },
-                "disabled": Object {
-                  "backgroundColor": "rgba(215, 215, 224, 0.75)",
-                },
-              },
-              "thumb": Object {
-                "backgroundColor": "#FFFFFF",
-                "checked": Object {
-                  "backgroundColor": "#D8385E",
-                },
-                "disabled": Object {
-                  "backgroundColor": "#FFFFFF",
-                },
-                "height": 20,
-                "left": 2,
-                "radii": 9999,
-                "shadow": "0 2px 4px      rgba(152, 152, 166, 0.2)",
-                "shadowScale": 1.6,
-                "transition": Object {
-                  "duration": 500,
-                },
-                "width": 20,
-              },
-              "track": Object {
-                "backgroundColor": "#9898A6",
-                "checked": Object {
-                  "backgroundColor": "#D8385E",
-                },
-                "disabled": Object {
-                  "backgroundColor": "#F5F5FA",
-                },
-                "height": 24,
-                "radii": 9999,
-                "transition": Object {
-                  "duration": 500,
-                },
-                "width": 48,
-              },
-            },
-            "dialog": Object {
-              "border": Object {
-                "radius": 16,
-              },
-              "height": Object {
-                "min": 160,
-              },
-              "padding": Object {
-                "default": 32,
-                "top": 40,
-                "withCloseButton": 24,
-              },
-              "position": Object {
-                "default": 0,
-              },
-              "width": Object {
-                "default": 580,
-              },
-            },
-            "divider": Object {},
-            "dropdown": Object {
-              "arrow": Object {
-                "fill": "#6B6B78",
-              },
-              "backdrop": Object {
-                "content": Object {
-                  "actions": Object {
-                    "padding": Object {
-                      "bottom": 24,
-                      "left": 24,
-                      "right": 24,
-                      "top": 0,
-                    },
-                  },
-                  "backgroundColor": "#FFFFFF",
-                  "border": Object {
-                    "radius": Object {
-                      "topLeft": 8,
-                      "topRight": 8,
-                    },
-                  },
-                  "height": 320,
-                  "option": Object {
-                    "padding": Object {
-                      "bottom": 24,
-                      "left": 24,
-                      "right": 24,
-                      "top": 24,
-                    },
-                  },
-                  "title": Object {
-                    "font": Object {
-                      "size": 16,
-                      "weight": 700,
-                    },
-                    "padding": Object {
-                      "bottom": 20,
-                      "left": 0,
-                      "right": 0,
-                      "top": 20,
-                    },
-                  },
-                },
-              },
-              "button": Object {
-                "padding": Object {
-                  "right": 16,
-                  "top": 16,
-                },
-              },
-              "disabled": Object {
-                "arrow": Object {
-                  "fill": "#D7D7E0",
-                },
-                "input": Object {
-                  "font": Object {
-                    "color": "#D7D7E0",
-                  },
-                },
-                "selector": Object {
-                  "border": Object {
-                    "color": "#F5F5FA",
-                  },
-                },
-              },
-              "hover": Object {
-                "option": Object {
-                  "backgroundColor": "rgba(245, 245, 250, 0.5)",
-                },
-                "selector": Object {
-                  "border": Object {
-                    "color": "#231B22",
-                    "error": "#FF874C",
-                  },
-                },
-              },
-              "input": Object {
-                "font": Object {
-                  "color": "#6B6B78",
-                  "lineHeight": 20,
-                  "size": 14,
-                },
-                "label": Object {
-                  "color": "#231B22",
-                  "margin": Object {
-                    "left": 4,
-                  },
-                },
-              },
-              "option": Object {
-                "backgroundColor": "#FFFFFF",
-                "border": Object {
-                  "color": "#F5F5FA",
-                  "radius": Object {
-                    "bottomLeft": 8,
-                    "bottomRight": 8,
-                    "topLeft": 0,
-                    "topRight": 0,
-                  },
-                  "width": 1,
-                },
-                "font": Object {
-                  "color": "#231B22",
-                  "lineHeight": 20,
-                  "size": 14,
-                  "weight": 400,
-                },
-                "height": 40,
-                "padding": Object {
-                  "bottom": 0,
-                  "left": 16,
-                  "right": 16,
-                  "top": 0,
-                },
-              },
-              "optionsList": Object {
-                "backgroundColor": "#FFFFFF",
-                "border": Object {
-                  "color": "#231B22",
-                  "radius": Object {
-                    "bottomLeft": 8,
-                    "bottomRight": 8,
-                    "topLeft": 0,
-                    "topRight": 0,
-                  },
-                  "width": 1,
-                },
-              },
-              "selected": Object {
-                "arrow": Object {
-                  "fill": "#231B22",
-                },
-                "input": Object {
-                  "font": Object {
-                    "color": "#231B22",
-                  },
-                },
-                "option": Object {
-                  "font": Object {
-                    "color": "#231B22",
-                    "size": 16,
-                    "weight": 500,
-                  },
-                },
-                "optionsList": Object {
-                  "border": Object {
-                    "color": "#231B22",
-                  },
-                },
-                "selector": Object {
-                  "border": Object {
-                    "color": "#231B22",
-                  },
-                },
-              },
-              "selector": Object {
-                "background": "#FFFFFF",
-                "border": Object {
-                  "color": "#D7D7E0",
-                  "radius": 8,
-                  "width": 1,
-                },
-                "padding": Object {
-                  "bottom": 16,
-                  "left": 16,
-                  "right": 16,
-                  "top": 16,
-                },
-              },
-              "width": 320,
-            },
-            "grid": Object {
-              "container": Object {
-                "margin": Object {
-                  "desktop": Object {
-                    "left": 71,
-                    "right": 71,
-                  },
-                  "mobile": Object {
-                    "left": 20,
-                    "right": 20,
-                  },
-                },
-                "width": 1600,
-              },
-              "gutter": Object {
-                "desktop": 24,
-                "mobile": 16,
-              },
-            },
-            "header": Object {
-              "height": Object {
-                "lg": 72,
-                "xxs": 56,
-              },
-              "padding": Object {
-                "lg": 72,
-                "xxs": 20,
-              },
-            },
-            "icon": Object {},
-            "input": Object {
-              "border": Object {
-                "color": Object {
-                  "default": "#D7D7E0",
-                  "typed": "#231B22",
-                },
-                "radius": 8,
-                "width": 1,
-              },
-              "font": Object {
-                "color": Object {
-                  "default": "#6B6B78",
-                  "focus": "#231B22",
-                },
-                "size": 14,
-                "weight": 400,
-              },
-              "height": 52,
-              "helper": Object {
-                "color": Object {
-                  "default": "#6B6B78",
-                  "focus": "#231B22",
-                },
-                "font": Object {
-                  "size": 12,
-                },
-                "margin": Object {
-                  "top": 4,
-                },
-              },
-              "label": Object {
-                "color": Object {
-                  "default": "#6B6B78",
-                  "focus": "#231B22",
-                },
-                "font": Object {
-                  "size": Object {
-                    "default": 14,
-                    "typed": 12,
-                  },
-                  "weight": 400,
-                },
-                "padding": Object {
-                  "left": 4,
-                  "right": 4,
-                },
-              },
-              "padding": Object {
-                "bottom": 16,
-                "left": 16,
-                "right": 16,
-                "top": 16,
-              },
-              "width": 320,
-            },
-            "list": Object {
-              "border": Object {
-                "color": "#F5F5FA",
-                "width": 1,
-              },
-              "listItem": Object {
-                "padding": Object {
-                  "bottom": 20,
-                  "left": 24,
-                  "right": 24,
-                  "top": 20,
-                },
-                "selectable": Object {
-                  "color": "#F5F5FA",
-                },
-                "small": Object {
-                  "padding": Object {
-                    "bottom": 8,
-                    "left": 20,
-                    "right": 20,
-                    "top": 8,
-                  },
-                },
-              },
-            },
-            "progress": Object {
-              "backgroundColor": Object {
-                "bar": "#F5F5FA",
-              },
-              "border": Object {
-                "radius": 8,
-              },
-              "height": 8,
-              "label": Object {
-                "font": Object {
-                  "size": 12,
-                },
-              },
-            },
-            "radiogroup": Object {
-              "button": Object {
-                "backgroundColor": "transparent",
-                "border": Object {
-                  "color": "#F5F5FA",
-                  "radius": 9999,
-                  "width": 1,
-                },
-                "height": Object {
-                  "normal": 40,
-                  "small": 32,
-                },
-                "padding": Object {
-                  "left": 24,
-                  "right": 24,
-                },
-              },
-              "checked": Object {
-                "backgroundColor": "#D8385E",
-                "font": Object {
-                  "color": "#FFFFFF",
-                  "weight": 700,
-                },
-                "hover": Object {
-                  "backgroundColor": "#D8385E",
-                },
-              },
-              "disabled": Object {
-                "backgroundColor": "#F5F5FA",
-              },
-              "font": Object {
-                "color": "#231B22",
-                "size": 14,
-              },
-              "hover": Object {
-                "backgroundColor": "#F5F5FA",
-              },
-              "radio": Object {
-                "backgroundColor": "#9898A6",
-                "border": Object {
-                  "radius": 9999,
-                },
-                "size": 20,
-              },
-            },
-            "rating": Object {
-              "backgroundColor": "#FFC24C",
-              "gutter": 4,
-              "icon": Object {
-                "size": 12,
-              },
-            },
-            "result": Object {},
-            "slider": Object {
-              "marker": Object {
-                "backgroundColor": "#D8385E",
-                "border": Object {
-                  "color": "#FFFFFF",
-                  "radius": 9999,
-                },
-                "shadow": "0 2px 4px      rgba(152, 152, 166, 0.2)",
-              },
-              "step": Object {
-                "backgroundColor": Object {
-                  "active": "#D8385E",
-                  "inactive": "#D7D7E0",
-                },
-                "border": Object {
-                  "radius": 9999,
-                },
-              },
-              "tooltip": Object {
-                "backgroundColor": "#F5F5FA",
-                "distance": 24,
-                "font": Object {
-                  "color": "#6B6B78",
-                  "description": Object {
-                    "weight": 400,
-                  },
-                  "title": Object {
-                    "weight": 400,
-                  },
-                },
-                "padding": Object {
-                  "bottom": 4,
-                  "left": 8,
-                  "right": 8,
-                  "top": 4,
-                },
-                "radius": 8,
-                "ribbon": Object {
-                  "backgroundColor": "#D8385E",
-                  "font": Object {
-                    "color": "#FFFFFF",
-                    "size": 12,
-                    "weight": 700,
-                  },
-                  "padding": Object {
-                    "bottom": 4,
-                    "left": 8,
-                    "right": 8,
-                    "top": 4,
-                  },
-                  "radius": 8,
-                },
-                "shadow": "0 5px 5px      rgba(152, 152, 166, 0.2)",
-              },
-              "track": Object {
-                "backgroundColor": Object {
-                  "active": "#D8385E",
-                  "inactive": "#D7D7E0",
-                },
-                "border": Object {
-                  "radius": 9999,
-                },
-              },
-            },
-            "snackbar": Object {
-              "border": Object {
-                "radius": 8,
-              },
-              "height": Object {
-                "max": 72,
-                "min": 56,
-              },
-              "margin": Object {
-                "bottom": 20,
-                "left": 20,
-                "right": 20,
-                "top": 0,
-              },
-              "maxWidth": Object {
-                "default": 600,
-              },
-              "minWidth": Object {
-                "desktop": 400,
-                "mobile": 320,
-              },
-              "padding": Object {
-                "default": 16,
-                "horizontal": 16,
-                "vertical": 12,
-              },
-              "position": Object {
-                "desktop": Object {
-                  "bottom": 40,
-                  "right": 40,
-                },
-                "mobile": Object {
-                  "bottom": 16,
-                  "left": 16,
-                  "right": 16,
-                },
-              },
-              "shadow": Object {
-                "default": "0 2px 4px      rgba(152, 152, 166, 0.2)",
-              },
-              "variant": Object {
-                "color": Object {
-                  "attention": "#FCD6C3",
-                  "failure": "#FCD6C3",
-                  "info": "#E0DFFF",
-                  "informative": "#E0DFFF",
-                  "success": "#C1EEDB",
-                },
-                "icon": Object {
-                  "failure": [Function],
-                  "info": [Function],
-                  "success": [Function],
-                },
-              },
-            },
-            "stepper": Object {
-              "dot": Object {
-                "backgroundColor": Object {
-                  "active": "#D8385E",
-                  "inactive": "#F5F5FA",
-                },
-                "radius": 9999,
-              },
-              "label": Object {
-                "color": Object {
-                  "active": "#D8385E",
-                  "inactive": "#9898A6",
-                },
-                "font": Object {
-                  "size": 12,
-                  "weight": 700,
-                },
-              },
-              "line": Object {
-                "backgroundColor": Object {
-                  "active": "#D8385E",
-                  "inactive": "#F5F5FA",
-                },
-              },
-              "padding": Object {
-                "left": 40,
-                "right": 40,
-              },
-            },
-            "tag": Object {
-              "border": Object {
-                "radius": 4,
-                "width": 1,
-              },
-              "font": Object {
-                "lineHeight": 16,
-                "size": 12,
-                "weight": 500,
-              },
-              "icon": Object {
-                "margin": Object {
-                  "right": "xxxsmall",
-                },
-                "size": Object {
-                  "default": 16,
-                  "small": 12,
-                },
-              },
-              "padding": Object {
-                "default": Object {
-                  "bottom": 4,
-                  "left": 8,
-                  "right": 8,
-                  "top": 4,
-                },
-                "small": Object {
-                  "bottom": 0,
-                  "left": 4,
-                  "right": 4,
-                  "top": 0,
-                },
-              },
-            },
-            "text": Object {
-              "black": Object {
-                "fontWeight": 900,
-              },
-              "bold": Object {
-                "fontWeight": 700,
-              },
-              "h1": Object {
-                "fontWeight": 500,
-                "fontsize": 48,
-                "lineHeight": 56,
-              },
-              "h2": Object {
-                "fontWeight": 500,
-                "fontsize": 40,
-                "lineHeight": 48,
-              },
-              "h3": Object {
-                "fontWeight": 500,
-                "fontsize": 32,
-                "lineHeight": 40,
-              },
-              "h4": Object {
-                "fontWeight": 500,
-                "fontsize": 24,
-                "lineHeight": 32,
-              },
-              "h5": Object {
-                "fontWeight": 500,
-                "fontsize": 20,
-                "lineHeight": 28,
-              },
-              "light": Object {
-                "fontWeight": 300,
-              },
-              "medium": Object {
-                "fontWeight": 500,
-              },
-              "p": Object {
-                "fontWeight": 400,
-                "fontsize": 16,
-                "lineHeight": 24,
-              },
-              "regular": Object {
-                "fontWeight": 400,
-              },
-              "sectionTitle": Object {
-                "fontWeight": 500,
-                "fontsize": 12,
-                "letterSpacing": 1,
-                "lineHeight": 16,
-                "textTransform": "uppercase",
-              },
-              "small": Object {
-                "fontWeight": 400,
-                "fontsize": 14,
-                "lineHeight": 20,
-              },
-              "smallestException": Object {
-                "fontWeight": 400,
-                "fontsize": 10,
-                "lineHeight": 12,
-              },
-              "tiny": Object {
-                "fontWeight": 400,
-                "fontsize": 12,
-                "lineHeight": 16,
-              },
-            },
-            "textarea": Object {
-              "border": Object {
-                "color": Object {
-                  "default": "#D7D7E0",
-                  "typed": "#231B22",
-                },
-                "radius": 8,
-                "width": 1,
-              },
-              "font": Object {
-                "color": Object {
-                  "default": "#6B6B78",
-                  "focus": "#231B22",
-                },
-                "size": 14,
-                "weight": 400,
-              },
-              "height": 52,
-              "helper": Object {
-                "color": Object {
-                  "default": "#6B6B78",
-                  "focus": "#231B22",
-                },
-                "font": Object {
-                  "size": 12,
-                },
-                "margin": Object {
-                  "top": 4,
-                },
-              },
-              "label": Object {
-                "color": Object {
-                  "default": "#6B6B78",
-                  "focus": "#231B22",
-                },
-                "font": Object {
-                  "size": Object {
-                    "default": 14,
-                    "typed": 12,
-                  },
-                  "weight": 400,
-                },
-                "padding": Object {
-                  "left": 4,
-                  "right": 4,
-                },
-              },
-              "padding": Object {
-                "bottom": 16,
-                "left": 16,
-                "right": 16,
-                "top": 16,
-              },
-              "width": 320,
-            },
-          },
-          "elevations": Array [
-            "0 0 0 rgba(0, 0, 0, 0)",
-            "0 2px 4px      rgba(152, 152, 166, 0.2)",
-            "0 5px 5px      rgba(152, 152, 166, 0.2)",
-            "0 7px 8px      rgba(152, 152, 166, 0.2)",
-          ],
-          "fontSizes": Array [
-            10,
-            12,
-            14,
-            16,
-            20,
-            24,
-            32,
-            40,
-            48,
-          ],
-          "fontWeights": Array [
-            300,
-            400,
-            500,
-            700,
-            900,
-          ],
-          "fonts": Array [
-            Object {
+        ]
+      }
+      theme={
+        Object {
+          "yoga": Object {
+            "baseFont": Object {
               "family": "Rubik",
               "weight": Array [
                 300,
@@ -1416,83 +69,1438 @@ exports[`<Snackbar /> should match snapshot 1`] = `
                 "900i",
               ],
             },
-          ],
-          "lineHeights": Array [
-            12,
-            16,
-            20,
-            24,
-            28,
-            32,
-            40,
-            48,
-            56,
-          ],
-          "radii": Array [
-            0,
-            4,
-            8,
-            16,
-            9999,
-          ],
-          "spacing": Array [
-            0,
-            4,
-            8,
-            12,
-            16,
-            20,
-            24,
-            32,
-            40,
-            56,
-            72,
-            80,
-          ],
-          "transition": Object {
-            "duration": Array [
-              200,
+            "baseFontSize": 16,
+            "borders": Array [
+              0,
+              1,
+              2,
+            ],
+            "breakpoints": Object {
+              "lg": Object {
+                "gutter": 24,
+                "margin": 71,
+                "width": 1024,
+              },
+              "md": Object {
+                "gutter": 16,
+                "margin": 20,
+                "width": 768,
+              },
+              "sm": Object {
+                "gutter": 16,
+                "margin": 20,
+                "width": 480,
+              },
+              "xl": Object {
+                "gutter": 24,
+                "margin": 71,
+                "width": 1200,
+              },
+              "xs": Object {
+                "gutter": 16,
+                "margin": 20,
+                "width": 360,
+              },
+              "xxl": Object {
+                "gutter": 24,
+                "margin": 71,
+                "width": 1366,
+              },
+              "xxs": Object {
+                "gutter": 16,
+                "margin": 20,
+                "width": 0,
+              },
+              "xxxl": Object {
+                "gutter": 24,
+                "margin": 71,
+                "width": 1600,
+              },
+            },
+            "colors": Object {
+              "attention": "#FCD6C3",
+              "clear": "#F5F5FA",
+              "deep": "#6B6B78",
+              "deepPurple": "#710252",
+              "elements": Object {
+                "backgroundAndDisabled": "#F5F5FA",
+                "lineAndBorders": "#D7D7E0",
+                "selectionAndIcons": "#9898A6",
+              },
+              "energy": "#FFC24C",
+              "feedback": Object {
+                "attention": Array [
+                  "#FCD6C3",
+                  "#FF874C",
+                ],
+                "informative": Array [
+                  "#E0DFFF",
+                  "#7068D4",
+                ],
+                "success": Array [
+                  "#C1EEDB",
+                  "#1D856C",
+                ],
+              },
+              "hope": "#1D856C",
+              "light": "#D7D7E0",
+              "medium": "#9898A6",
+              "neutral": "#E0DFFF",
+              "peace": "#FFB0A7",
+              "primary": "#D8385E",
+              "relax": "#7068D4",
+              "secondary": "#231B22",
+              "stamina": "#231B22",
+              "success": "#C1EEDB",
+              "text": Object {
+                "disabled": "#D7D7E0",
+                "primary": "#231B22",
+                "secondary": "#6B6B78",
+              },
+              "uplift": "#FF4438",
+              "verve": "#FF874C",
+              "vibin": "#D8385E",
+              "white": "#FFFFFF",
+              "yoga": "#FFEEF2",
+            },
+            "components": Object {
+              "autocomplete": Object {
+                "border": Object {
+                  "color": Object {
+                    "default": "#D7D7E0",
+                    "typed": "#231B22",
+                  },
+                  "radius": 8,
+                  "width": 1,
+                },
+                "field": Object {
+                  "backgroundColor": "#FFFFFF",
+                },
+                "font": Object {
+                  "color": Object {
+                    "default": "#6B6B78",
+                    "focus": "#231B22",
+                  },
+                  "size": 14,
+                  "weight": 400,
+                },
+                "height": 52,
+                "helper": Object {
+                  "color": Object {
+                    "default": "#6B6B78",
+                    "focus": "#231B22",
+                  },
+                  "font": Object {
+                    "size": 12,
+                  },
+                  "margin": Object {
+                    "top": 4,
+                  },
+                },
+                "label": Object {
+                  "color": Object {
+                    "default": "#6B6B78",
+                    "focus": "#231B22",
+                  },
+                  "font": Object {
+                    "size": Object {
+                      "default": 14,
+                      "typed": 12,
+                    },
+                    "weight": 400,
+                  },
+                  "padding": Object {
+                    "left": 4,
+                    "right": 4,
+                  },
+                },
+                "list": Object {
+                  "backgroundColor": Object {
+                    "default": "#FFFFFF",
+                    "hover": "#F5F5FA",
+                  },
+                  "font": Object {
+                    "lineHeight": 20,
+                    "size": 14,
+                    "weight": Object {
+                      "default": 400,
+                      "matched": 700,
+                    },
+                  },
+                  "padding": Object {
+                    "bottom": 16,
+                    "left": 16,
+                    "right": 16,
+                    "top": 16,
+                  },
+                },
+                "padding": Object {
+                  "bottom": 16,
+                  "left": 16,
+                  "right": 16,
+                  "top": 16,
+                },
+                "width": 320,
+              },
+              "avatar": Object {},
+              "bottomsheet": Object {
+                "border": Object {
+                  "radius": 16,
+                },
+                "height": Object {
+                  "min": 160,
+                },
+                "padding": Object {
+                  "bottom": 24,
+                  "left": 20,
+                  "right": 20,
+                  "top": 24,
+                },
+                "position": Object {
+                  "default": 0,
+                },
+                "width": Object {
+                  "default": 100,
+                },
+              },
+              "button": Object {
+                "border": Object {
+                  "radius": 9999,
+                },
+                "font": Object {
+                  "size": Object {
+                    "default": 16,
+                    "small": 14,
+                  },
+                  "weight": 500,
+                },
+                "height": Object {
+                  "default": 48,
+                  "small": 32,
+                },
+                "icon": Object {
+                  "margin": Object {
+                    "right": 8,
+                  },
+                  "size": Object {
+                    "default": 24,
+                    "small": 16,
+                  },
+                },
+                "padding": Object {
+                  "default": Object {
+                    "left": 24,
+                    "right": 24,
+                  },
+                  "small": Object {
+                    "left": 16,
+                    "right": 16,
+                  },
+                },
+                "types": Object {
+                  "contained": Object {
+                    "backgroundColor": Object {
+                      "disabled": "#F5F5FA",
+                      "primary": Object {
+                        "default": "#D8385E",
+                        "pressed": "rgba(216, 56, 94, 0.75)",
+                      },
+                      "secondary": Object {
+                        "default": "#231B22",
+                        "pressed": "rgba(35, 27, 34, 0.75)",
+                      },
+                    },
+                    "font": Object {
+                      "default": Object {
+                        "color": "#FFFFFF",
+                      },
+                      "disabled": Object {
+                        "color": "#D7D7E0",
+                      },
+                      "pressed": Object {
+                        "color": "#FFFFFF",
+                      },
+                    },
+                  },
+                  "link": Object {
+                    "font": Object {
+                      "disabled": Object {
+                        "color": "#D7D7E0",
+                      },
+                      "primary": Object {
+                        "color": "#D8385E",
+                      },
+                      "secondary": Object {
+                        "color": "#231B22",
+                      },
+                    },
+                    "margin": Object {
+                      "bottom": 8,
+                      "top": 16,
+                    },
+                  },
+                  "outline": Object {
+                    "backgroundColor": Object {
+                      "default": "transparent",
+                      "primary": Object {
+                        "hover": "#D8385E",
+                      },
+                      "secondary": Object {
+                        "hover": "#231B22",
+                      },
+                    },
+                    "border": Object {
+                      "width": 1,
+                    },
+                    "font": Object {
+                      "default": Object {
+                        "primary": Object {
+                          "color": "#D8385E",
+                        },
+                        "secondary": Object {
+                          "color": "#231B22",
+                        },
+                      },
+                      "disabled": Object {
+                        "color": "#D7D7E0",
+                      },
+                      "hover": Object {
+                        "color": "#FFFFFF",
+                      },
+                      "pressed": Object {
+                        "primary": Object {
+                          "color": "rgba(216, 56, 94, 0.75)",
+                        },
+                        "secondary": Object {
+                          "color": "rgba(35, 27, 34, 0.75)",
+                        },
+                      },
+                    },
+                  },
+                  "text": Object {
+                    "backgroundColor": "transparent",
+                  },
+                },
+              },
+              "card": Object {
+                "backgroundColor": "#FFFFFF",
+                "elevation": "0 2px 4px      rgba(152, 152, 166, 0.2)",
+                "event": Object {
+                  "date": Object {
+                    "backgroundColor": "#D8385E",
+                    "dayOfWeek": Object {
+                      "fontWeight": 400,
+                      "marginBottom": 8,
+                    },
+                    "month": Object {
+                      "fontWeight": 500,
+                    },
+                    "radius": 8,
+                  },
+                  "icon": Object {
+                    "fill": "#231B22",
+                  },
+                  "info": Object {
+                    "name": Object {
+                      "fontSize": 16,
+                      "fontWeight": 500,
+                      "height": 20,
+                      "marginBottom": 8,
+                    },
+                    "padding": Object {
+                      "bottom": 16,
+                      "left": 16,
+                      "right": 16,
+                      "top": 16,
+                    },
+                    "place": Object {
+                      "color": "#6B6B78",
+                      "height": 20,
+                      "marginBottom": 8,
+                    },
+                  },
+                },
+                "gym": Object {
+                  "checkIn": Object {
+                    "avatar": Object {
+                      "border": Object {
+                        "radius": 8,
+                        "width": 1,
+                      },
+                    },
+                    "content": Object {
+                      "margin": Object {
+                        "top": 16,
+                      },
+                    },
+                    "header": Object {
+                      "margin": Object {
+                        "bottom": 16,
+                      },
+                    },
+                    "title": Object {
+                      "font": Object {
+                        "weight": 400,
+                      },
+                      "margin": Object {
+                        "bottom": 8,
+                      },
+                    },
+                  },
+                },
+                "padding": Object {
+                  "bottom": 16,
+                  "left": 16,
+                  "right": 16,
+                  "top": 16,
+                },
+                "plan": Object {
+                  "actions": Object {
+                    "buttonText": Object {
+                      "margin": Object {
+                        "bottom": 0,
+                      },
+                    },
+                  },
+                  "description": Object {
+                    "color": "#6B6B78",
+                  },
+                  "list": Object {
+                    "button": Object {
+                      "font": Object {
+                        "color": "#231B22",
+                        "size": 12,
+                        "weight": 500,
+                      },
+                      "margin": Object {
+                        "top": 12,
+                      },
+                    },
+                    "item": Object {
+                      "font": Object {
+                        "color": "#231B22",
+                      },
+                      "margin": Object {
+                        "bottom": 16,
+                      },
+                    },
+                  },
+                  "padding": Object {
+                    "bottom": 32,
+                    "left": 20,
+                    "right": 20,
+                    "top": 56,
+                  },
+                  "price": Object {
+                    "currency": Object {
+                      "margin": Object {
+                        "right": 4,
+                      },
+                    },
+                    "margin": Object {
+                      "top": 16,
+                    },
+                  },
+                  "radius": 16,
+                  "subtitle": Object {
+                    "font": Object {
+                      "color": "#6B6B78",
+                      "size": 12,
+                      "weight": 500,
+                    },
+                    "margin": Object {
+                      "bottom": 8,
+                    },
+                  },
+                  "tag": Object {
+                    "position": Object {
+                      "left": 20,
+                      "top": 20,
+                    },
+                  },
+                  "title": Object {
+                    "color": "#231B22",
+                  },
+                },
+                "radii": 8,
+                "ribbon": Object {
+                  "radius": 9999,
+                },
+              },
+              "cardnative": Object {
+                "plan": Object {
+                  "actions": Object {
+                    "buttonText": Object {
+                      "margin": Object {
+                        "top": 20,
+                      },
+                    },
+                    "margin": Object {
+                      "top": 16,
+                    },
+                  },
+                  "description": Object {
+                    "color": "#6B6B78",
+                  },
+                  "list": Object {
+                    "item": Object {
+                      "icon": Object {
+                        "margin": Object {
+                          "right": 8,
+                        },
+                      },
+                    },
+                    "margin": Object {
+                      "top": 0,
+                    },
+                  },
+                  "price": Object {
+                    "margin": Object {
+                      "bottom": 12,
+                    },
+                  },
+                  "title": Object {
+                    "margin": Object {
+                      "bottom": 12,
+                      "top": 12,
+                    },
+                  },
+                },
+              },
+              "cardweb": Object {
+                "plan": Object {
+                  "actions": Object {
+                    "buttonText": Object {
+                      "margin": Object {
+                        "top": 12,
+                      },
+                    },
+                    "margin": Object {
+                      "top": 32,
+                    },
+                  },
+                  "list": Object {
+                    "item": Object {
+                      "icon": Object {
+                        "margin": Object {
+                          "right": 12,
+                        },
+                      },
+                    },
+                    "margin": Object {
+                      "top": 16,
+                    },
+                  },
+                  "price": Object {
+                    "margin": Object {
+                      "bottom": 32,
+                    },
+                  },
+                  "title": Object {
+                    "margin": Object {
+                      "bottom": 4,
+                    },
+                  },
+                },
+              },
+              "checkbox": Object {
+                "border": Object {
+                  "radius": 4,
+                  "width": 2,
+                },
+                "checked": Object {
+                  "icon": Object {
+                    "color": "#FFFFFF",
+                  },
+                },
+                "disabled": Object {
+                  "backgroundColor": "#D7D7E0",
+                  "border": Object {
+                    "color": "#D7D7E0",
+                  },
+                },
+                "helper": Object {
+                  "font": Object {
+                    "color": "#6B6B78",
+                    "size": 14,
+                  },
+                  "margin": Object {
+                    "top": 4,
+                  },
+                },
+                "hover": Object {
+                  "border": Object {
+                    "radius": 9999,
+                  },
+                },
+                "label": Object {
+                  "font": Object {
+                    "color": "#231B22",
+                    "size": 16,
+                  },
+                  "padding": Object {
+                    "left": 8,
+                  },
+                },
+                "margin": Object {
+                  "right": 8,
+                },
+                "size": 24,
+              },
+              "checkboxswitch": Object {
+                "focus": Object {
+                  "checked": Object {
+                    "backgroundColor": "rgba(216, 56, 94, 0.5)",
+                  },
+                  "disabled": Object {
+                    "backgroundColor": "rgba(245, 245, 250, 0.5)",
+                  },
+                },
+                "hover": Object {
+                  "checked": Object {
+                    "backgroundColor": "rgba(216, 56, 94, 0.25)",
+                  },
+                  "disabled": Object {
+                    "backgroundColor": "rgba(245, 245, 250, 0.25)",
+                  },
+                },
+                "pressed": Object {
+                  "checked": Object {
+                    "backgroundColor": "rgba(216, 56, 94, 0.75)",
+                  },
+                  "disabled": Object {
+                    "backgroundColor": "rgba(215, 215, 224, 0.75)",
+                  },
+                },
+                "thumb": Object {
+                  "backgroundColor": "#FFFFFF",
+                  "checked": Object {
+                    "backgroundColor": "#D8385E",
+                  },
+                  "disabled": Object {
+                    "backgroundColor": "#FFFFFF",
+                  },
+                  "height": 20,
+                  "left": 2,
+                  "radii": 9999,
+                  "shadow": "0 2px 4px      rgba(152, 152, 166, 0.2)",
+                  "shadowScale": 1.6,
+                  "transition": Object {
+                    "duration": 500,
+                  },
+                  "width": 20,
+                },
+                "track": Object {
+                  "backgroundColor": "#9898A6",
+                  "checked": Object {
+                    "backgroundColor": "#D8385E",
+                  },
+                  "disabled": Object {
+                    "backgroundColor": "#F5F5FA",
+                  },
+                  "height": 24,
+                  "radii": 9999,
+                  "transition": Object {
+                    "duration": 500,
+                  },
+                  "width": 48,
+                },
+              },
+              "dialog": Object {
+                "border": Object {
+                  "radius": 16,
+                },
+                "height": Object {
+                  "min": 160,
+                },
+                "padding": Object {
+                  "default": 32,
+                  "top": 40,
+                  "withCloseButton": 24,
+                },
+                "position": Object {
+                  "default": 0,
+                },
+                "width": Object {
+                  "default": 580,
+                },
+              },
+              "divider": Object {},
+              "dropdown": Object {
+                "arrow": Object {
+                  "fill": "#6B6B78",
+                },
+                "backdrop": Object {
+                  "content": Object {
+                    "actions": Object {
+                      "padding": Object {
+                        "bottom": 24,
+                        "left": 24,
+                        "right": 24,
+                        "top": 0,
+                      },
+                    },
+                    "backgroundColor": "#FFFFFF",
+                    "border": Object {
+                      "radius": Object {
+                        "topLeft": 8,
+                        "topRight": 8,
+                      },
+                    },
+                    "height": 320,
+                    "option": Object {
+                      "padding": Object {
+                        "bottom": 24,
+                        "left": 24,
+                        "right": 24,
+                        "top": 24,
+                      },
+                    },
+                    "title": Object {
+                      "font": Object {
+                        "size": 16,
+                        "weight": 700,
+                      },
+                      "padding": Object {
+                        "bottom": 20,
+                        "left": 0,
+                        "right": 0,
+                        "top": 20,
+                      },
+                    },
+                  },
+                },
+                "button": Object {
+                  "padding": Object {
+                    "right": 16,
+                    "top": 16,
+                  },
+                },
+                "disabled": Object {
+                  "arrow": Object {
+                    "fill": "#D7D7E0",
+                  },
+                  "input": Object {
+                    "font": Object {
+                      "color": "#D7D7E0",
+                    },
+                  },
+                  "selector": Object {
+                    "border": Object {
+                      "color": "#F5F5FA",
+                    },
+                  },
+                },
+                "hover": Object {
+                  "option": Object {
+                    "backgroundColor": "rgba(245, 245, 250, 0.5)",
+                  },
+                  "selector": Object {
+                    "border": Object {
+                      "color": "#231B22",
+                      "error": "#FF874C",
+                    },
+                  },
+                },
+                "input": Object {
+                  "font": Object {
+                    "color": "#6B6B78",
+                    "lineHeight": 20,
+                    "size": 14,
+                  },
+                  "label": Object {
+                    "color": "#231B22",
+                    "margin": Object {
+                      "left": 4,
+                    },
+                  },
+                },
+                "option": Object {
+                  "backgroundColor": "#FFFFFF",
+                  "border": Object {
+                    "color": "#F5F5FA",
+                    "radius": Object {
+                      "bottomLeft": 8,
+                      "bottomRight": 8,
+                      "topLeft": 0,
+                      "topRight": 0,
+                    },
+                    "width": 1,
+                  },
+                  "font": Object {
+                    "color": "#231B22",
+                    "lineHeight": 20,
+                    "size": 14,
+                    "weight": 400,
+                  },
+                  "height": 40,
+                  "padding": Object {
+                    "bottom": 0,
+                    "left": 16,
+                    "right": 16,
+                    "top": 0,
+                  },
+                },
+                "optionsList": Object {
+                  "backgroundColor": "#FFFFFF",
+                  "border": Object {
+                    "color": "#231B22",
+                    "radius": Object {
+                      "bottomLeft": 8,
+                      "bottomRight": 8,
+                      "topLeft": 0,
+                      "topRight": 0,
+                    },
+                    "width": 1,
+                  },
+                },
+                "selected": Object {
+                  "arrow": Object {
+                    "fill": "#231B22",
+                  },
+                  "input": Object {
+                    "font": Object {
+                      "color": "#231B22",
+                    },
+                  },
+                  "option": Object {
+                    "font": Object {
+                      "color": "#231B22",
+                      "size": 16,
+                      "weight": 500,
+                    },
+                  },
+                  "optionsList": Object {
+                    "border": Object {
+                      "color": "#231B22",
+                    },
+                  },
+                  "selector": Object {
+                    "border": Object {
+                      "color": "#231B22",
+                    },
+                  },
+                },
+                "selector": Object {
+                  "background": "#FFFFFF",
+                  "border": Object {
+                    "color": "#D7D7E0",
+                    "radius": 8,
+                    "width": 1,
+                  },
+                  "padding": Object {
+                    "bottom": 16,
+                    "left": 16,
+                    "right": 16,
+                    "top": 16,
+                  },
+                },
+                "width": 320,
+              },
+              "grid": Object {
+                "container": Object {
+                  "margin": Object {
+                    "desktop": Object {
+                      "left": 71,
+                      "right": 71,
+                    },
+                    "mobile": Object {
+                      "left": 20,
+                      "right": 20,
+                    },
+                  },
+                  "width": 1600,
+                },
+                "gutter": Object {
+                  "desktop": 24,
+                  "mobile": 16,
+                },
+              },
+              "header": Object {
+                "height": Object {
+                  "lg": 72,
+                  "xxs": 56,
+                },
+                "padding": Object {
+                  "lg": 72,
+                  "xxs": 20,
+                },
+              },
+              "icon": Object {},
+              "input": Object {
+                "border": Object {
+                  "color": Object {
+                    "default": "#D7D7E0",
+                    "typed": "#231B22",
+                  },
+                  "radius": 8,
+                  "width": 1,
+                },
+                "font": Object {
+                  "color": Object {
+                    "default": "#6B6B78",
+                    "focus": "#231B22",
+                  },
+                  "size": 14,
+                  "weight": 400,
+                },
+                "height": 52,
+                "helper": Object {
+                  "color": Object {
+                    "default": "#6B6B78",
+                    "focus": "#231B22",
+                  },
+                  "font": Object {
+                    "size": 12,
+                  },
+                  "margin": Object {
+                    "top": 4,
+                  },
+                },
+                "label": Object {
+                  "color": Object {
+                    "default": "#6B6B78",
+                    "focus": "#231B22",
+                  },
+                  "font": Object {
+                    "size": Object {
+                      "default": 14,
+                      "typed": 12,
+                    },
+                    "weight": 400,
+                  },
+                  "padding": Object {
+                    "left": 4,
+                    "right": 4,
+                  },
+                },
+                "padding": Object {
+                  "bottom": 16,
+                  "left": 16,
+                  "right": 16,
+                  "top": 16,
+                },
+                "width": 320,
+              },
+              "list": Object {
+                "border": Object {
+                  "color": "#F5F5FA",
+                  "width": 1,
+                },
+                "listItem": Object {
+                  "padding": Object {
+                    "bottom": 20,
+                    "left": 24,
+                    "right": 24,
+                    "top": 20,
+                  },
+                  "selectable": Object {
+                    "color": "#F5F5FA",
+                  },
+                  "small": Object {
+                    "padding": Object {
+                      "bottom": 8,
+                      "left": 20,
+                      "right": 20,
+                      "top": 8,
+                    },
+                  },
+                },
+              },
+              "progress": Object {
+                "backgroundColor": Object {
+                  "bar": "#F5F5FA",
+                },
+                "border": Object {
+                  "radius": 8,
+                },
+                "height": 8,
+                "label": Object {
+                  "font": Object {
+                    "size": 12,
+                  },
+                },
+              },
+              "radiogroup": Object {
+                "button": Object {
+                  "backgroundColor": "transparent",
+                  "border": Object {
+                    "color": "#F5F5FA",
+                    "radius": 9999,
+                    "width": 1,
+                  },
+                  "height": Object {
+                    "normal": 40,
+                    "small": 32,
+                  },
+                  "padding": Object {
+                    "left": 24,
+                    "right": 24,
+                  },
+                },
+                "checked": Object {
+                  "backgroundColor": "#D8385E",
+                  "font": Object {
+                    "color": "#FFFFFF",
+                    "weight": 700,
+                  },
+                  "hover": Object {
+                    "backgroundColor": "#D8385E",
+                  },
+                },
+                "disabled": Object {
+                  "backgroundColor": "#F5F5FA",
+                },
+                "font": Object {
+                  "color": "#231B22",
+                  "size": 14,
+                },
+                "hover": Object {
+                  "backgroundColor": "#F5F5FA",
+                },
+                "radio": Object {
+                  "backgroundColor": "#9898A6",
+                  "border": Object {
+                    "radius": 9999,
+                  },
+                  "size": 20,
+                },
+              },
+              "rating": Object {
+                "backgroundColor": "#FFC24C",
+                "gutter": 4,
+                "icon": Object {
+                  "size": 12,
+                },
+              },
+              "result": Object {},
+              "slider": Object {
+                "marker": Object {
+                  "backgroundColor": "#D8385E",
+                  "border": Object {
+                    "color": "#FFFFFF",
+                    "radius": 9999,
+                  },
+                  "shadow": "0 2px 4px      rgba(152, 152, 166, 0.2)",
+                },
+                "step": Object {
+                  "backgroundColor": Object {
+                    "active": "#D8385E",
+                    "inactive": "#D7D7E0",
+                  },
+                  "border": Object {
+                    "radius": 9999,
+                  },
+                },
+                "tooltip": Object {
+                  "backgroundColor": "#F5F5FA",
+                  "distance": 24,
+                  "font": Object {
+                    "color": "#6B6B78",
+                    "description": Object {
+                      "weight": 400,
+                    },
+                    "title": Object {
+                      "weight": 400,
+                    },
+                  },
+                  "padding": Object {
+                    "bottom": 4,
+                    "left": 8,
+                    "right": 8,
+                    "top": 4,
+                  },
+                  "radius": 8,
+                  "ribbon": Object {
+                    "backgroundColor": "#D8385E",
+                    "font": Object {
+                      "color": "#FFFFFF",
+                      "size": 12,
+                      "weight": 700,
+                    },
+                    "padding": Object {
+                      "bottom": 4,
+                      "left": 8,
+                      "right": 8,
+                      "top": 4,
+                    },
+                    "radius": 8,
+                  },
+                  "shadow": "0 5px 5px      rgba(152, 152, 166, 0.2)",
+                },
+                "track": Object {
+                  "backgroundColor": Object {
+                    "active": "#D8385E",
+                    "inactive": "#D7D7E0",
+                  },
+                  "border": Object {
+                    "radius": 9999,
+                  },
+                },
+              },
+              "snackbar": Object {
+                "border": Object {
+                  "radius": 8,
+                },
+                "height": Object {
+                  "max": 72,
+                  "min": 56,
+                },
+                "margin": Object {
+                  "bottom": 20,
+                  "left": 20,
+                  "right": 20,
+                  "top": 0,
+                },
+                "maxWidth": Object {
+                  "default": 600,
+                },
+                "minWidth": Object {
+                  "desktop": 400,
+                  "mobile": 320,
+                },
+                "padding": Object {
+                  "default": 16,
+                  "horizontal": 16,
+                  "vertical": 12,
+                },
+                "position": Object {
+                  "desktop": Object {
+                    "bottom": 40,
+                    "right": 40,
+                  },
+                  "mobile": Object {
+                    "bottom": 16,
+                    "left": 16,
+                    "right": 16,
+                  },
+                },
+                "shadow": Object {
+                  "default": "0 2px 4px      rgba(152, 152, 166, 0.2)",
+                },
+                "variant": Object {
+                  "color": Object {
+                    "attention": "#FCD6C3",
+                    "failure": "#FCD6C3",
+                    "info": "#E0DFFF",
+                    "informative": "#E0DFFF",
+                    "success": "#C1EEDB",
+                  },
+                  "icon": Object {
+                    "failure": [Function],
+                    "info": [Function],
+                    "success": [Function],
+                  },
+                },
+              },
+              "stepper": Object {
+                "dot": Object {
+                  "backgroundColor": Object {
+                    "active": "#D8385E",
+                    "inactive": "#F5F5FA",
+                  },
+                  "radius": 9999,
+                },
+                "label": Object {
+                  "color": Object {
+                    "active": "#D8385E",
+                    "inactive": "#9898A6",
+                  },
+                  "font": Object {
+                    "size": 12,
+                    "weight": 700,
+                  },
+                },
+                "line": Object {
+                  "backgroundColor": Object {
+                    "active": "#D8385E",
+                    "inactive": "#F5F5FA",
+                  },
+                },
+                "padding": Object {
+                  "left": 40,
+                  "right": 40,
+                },
+              },
+              "tag": Object {
+                "border": Object {
+                  "radius": 4,
+                  "width": 1,
+                },
+                "font": Object {
+                  "lineHeight": 16,
+                  "size": 12,
+                  "weight": 500,
+                },
+                "icon": Object {
+                  "margin": Object {
+                    "right": "xxxsmall",
+                  },
+                  "size": Object {
+                    "default": 16,
+                    "small": 12,
+                  },
+                },
+                "padding": Object {
+                  "default": Object {
+                    "bottom": 4,
+                    "left": 8,
+                    "right": 8,
+                    "top": 4,
+                  },
+                  "small": Object {
+                    "bottom": 0,
+                    "left": 4,
+                    "right": 4,
+                    "top": 0,
+                  },
+                },
+              },
+              "text": Object {
+                "black": Object {
+                  "fontWeight": 900,
+                },
+                "bold": Object {
+                  "fontWeight": 700,
+                },
+                "h1": Object {
+                  "fontWeight": 500,
+                  "fontsize": 48,
+                  "lineHeight": 56,
+                },
+                "h2": Object {
+                  "fontWeight": 500,
+                  "fontsize": 40,
+                  "lineHeight": 48,
+                },
+                "h3": Object {
+                  "fontWeight": 500,
+                  "fontsize": 32,
+                  "lineHeight": 40,
+                },
+                "h4": Object {
+                  "fontWeight": 500,
+                  "fontsize": 24,
+                  "lineHeight": 32,
+                },
+                "h5": Object {
+                  "fontWeight": 500,
+                  "fontsize": 20,
+                  "lineHeight": 28,
+                },
+                "light": Object {
+                  "fontWeight": 300,
+                },
+                "medium": Object {
+                  "fontWeight": 500,
+                },
+                "p": Object {
+                  "fontWeight": 400,
+                  "fontsize": 16,
+                  "lineHeight": 24,
+                },
+                "regular": Object {
+                  "fontWeight": 400,
+                },
+                "sectionTitle": Object {
+                  "fontWeight": 500,
+                  "fontsize": 12,
+                  "letterSpacing": 1,
+                  "lineHeight": 16,
+                  "textTransform": "uppercase",
+                },
+                "small": Object {
+                  "fontWeight": 400,
+                  "fontsize": 14,
+                  "lineHeight": 20,
+                },
+                "smallestException": Object {
+                  "fontWeight": 400,
+                  "fontsize": 10,
+                  "lineHeight": 12,
+                },
+                "tiny": Object {
+                  "fontWeight": 400,
+                  "fontsize": 12,
+                  "lineHeight": 16,
+                },
+              },
+              "textarea": Object {
+                "border": Object {
+                  "color": Object {
+                    "default": "#D7D7E0",
+                    "typed": "#231B22",
+                  },
+                  "radius": 8,
+                  "width": 1,
+                },
+                "font": Object {
+                  "color": Object {
+                    "default": "#6B6B78",
+                    "focus": "#231B22",
+                  },
+                  "size": 14,
+                  "weight": 400,
+                },
+                "height": 52,
+                "helper": Object {
+                  "color": Object {
+                    "default": "#6B6B78",
+                    "focus": "#231B22",
+                  },
+                  "font": Object {
+                    "size": 12,
+                  },
+                  "margin": Object {
+                    "top": 4,
+                  },
+                },
+                "label": Object {
+                  "color": Object {
+                    "default": "#6B6B78",
+                    "focus": "#231B22",
+                  },
+                  "font": Object {
+                    "size": Object {
+                      "default": 14,
+                      "typed": 12,
+                    },
+                    "weight": 400,
+                  },
+                  "padding": Object {
+                    "left": 4,
+                    "right": 4,
+                  },
+                },
+                "padding": Object {
+                  "bottom": 16,
+                  "left": 16,
+                  "right": 16,
+                  "top": 16,
+                },
+                "width": 320,
+              },
+            },
+            "elevations": Array [
+              "0 0 0 rgba(0, 0, 0, 0)",
+              "0 2px 4px      rgba(152, 152, 166, 0.2)",
+              "0 5px 5px      rgba(152, 152, 166, 0.2)",
+              "0 7px 8px      rgba(152, 152, 166, 0.2)",
+            ],
+            "fontSizes": Array [
+              10,
+              12,
+              14,
+              16,
+              20,
+              24,
+              32,
+              40,
+              48,
+            ],
+            "fontWeights": Array [
+              300,
+              400,
               500,
+              700,
+              900,
             ],
-            "timing": Array [
-              Array [
-                0,
-                0.75,
-                0.1,
-                1,
+            "fonts": Array [
+              Object {
+                "family": "Rubik",
+                "weight": Array [
+                  300,
+                  400,
+                  500,
+                  700,
+                  900,
+                  "300i",
+                  "400i",
+                  "500i",
+                  "700i",
+                  "900i",
+                ],
+              },
+            ],
+            "lineHeights": Array [
+              12,
+              16,
+              20,
+              24,
+              28,
+              32,
+              40,
+              48,
+              56,
+            ],
+            "radii": Array [
+              0,
+              4,
+              8,
+              16,
+              9999,
+            ],
+            "spacing": Array [
+              0,
+              4,
+              8,
+              12,
+              16,
+              20,
+              24,
+              32,
+              40,
+              56,
+              72,
+              80,
+            ],
+            "transition": Object {
+              "duration": Array [
+                200,
+                500,
               ],
-            ],
+              "timing": Array [
+                Array [
+                  0,
+                  0.75,
+                  0.1,
+                  1,
+                ],
+              ],
+            },
           },
-        },
+        }
       }
-    }
-    variant="success"
-  >
-    <Text
-      flex={1}
-      fontSize="small"
-      inverted={false}
-      light={false}
-      marginVertical="xxxsmall"
-      numberOfLines={2}
-      size="medium"
-      style={
-        Array [
-          Object {
-            "color": "#231B22",
-            "flexBasis": 0,
-            "flexGrow": 1,
-            "flexShrink": 1,
-            "fontFamily": "Rubik",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "lineHeight": 24,
-            "marginBottom": 4,
-            "marginTop": 4,
-          },
-        ]
-      }
-    />
+      variant="success"
+    >
+      <Text
+        flex={1}
+        fontSize="small"
+        inverted={false}
+        light={false}
+        marginVertical="xxxsmall"
+        numberOfLines={2}
+        size="medium"
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "400",
+              "lineHeight": 24,
+              "marginBottom": 4,
+              "marginTop": 4,
+            },
+          ]
+        }
+      >
+        Default snackbar
+      </Text>
+    </View>
   </View>
 </View>
 `;
