@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import { Animated, Easing, PanResponder } from 'react-native';
+import React, { useEffect, useRef, useState } from 'react';
+import { Animated, Easing, PanResponder, View } from 'react-native';
 import { bool, func, node, oneOf } from 'prop-types';
 
 const SWIPE_THRESHOLD = 36;
@@ -17,12 +17,14 @@ const SnackbarAnimationWrapper = ({
   duration,
   isOpen,
 }) => {
+  const [childrenHeight, setChildrenHeight] = useState();
+
+  const translateY = useRef(new Animated.Value(1000)).current;
+
   const timeoutRef = useRef();
 
-  const translateY = useRef(new Animated.Value(100)).current;
-
   useEffect(() => {
-    if (isOpen) {
+    if (childrenHeight && isOpen) {
       Animated.timing(translateY, {
         toValue: 0,
         duration: 200,
@@ -30,7 +32,7 @@ const SnackbarAnimationWrapper = ({
         useNativeDriver: true,
       }).start();
     }
-  }, [translateY, isOpen]);
+  }, [translateY, childrenHeight, isOpen]);
 
   const openAnimation = () => {
     Animated.spring(translateY, {
@@ -41,7 +43,7 @@ const SnackbarAnimationWrapper = ({
 
   const closeAnimation = () => {
     Animated.spring(translateY, {
-      toValue: 100,
+      toValue: childrenHeight,
       useNativeDriver: true,
     }).start();
     if (onSnackbarClose) {
@@ -110,7 +112,18 @@ const SnackbarAnimationWrapper = ({
       ]}
       {...panResponder.panHandlers}
     >
-      {children}
+      <View
+        onLayout={({
+          nativeEvent: {
+            layout: { height },
+          },
+        }) => {
+          setChildrenHeight(height);
+          translateY.setValue(height);
+        }}
+      >
+        {children}
+      </View>
     </Animated.View>
   );
 };
