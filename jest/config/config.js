@@ -2,6 +2,7 @@ module.exports = {
   projects: [
     '<rootDir>/jest/config/native.js',
     '<rootDir>/jest/config/helpers.js',
+    '<rootDir>/jest/config/hooks.js',
     '<rootDir>/jest/config/system.js',
     '<rootDir>/jest/config/web.js',
   ],

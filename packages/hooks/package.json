@@ -1,0 +1,35 @@
+{
+  "name": "@gympass/yoga-hooks",
+  "version": "0.0.1",
+  "description": "A package to help make UI components, libraries, and tools as interoperable as possible.",
+  "keywords": [
+    "design-system",
+    "react",
+    "gympass",
+    "hooks"
+  ],
+  "homepage": "https://gympass.github.io/yoga/",
+  "license": "MIT",
+  "main": "src",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gympass/yoga.git"
+  },
+  "scripts": {
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "NODE_ENV=cjs babel ./src --out-dir dist/cjs",
+    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "prebuild": "rm -rf ./dist",
+    "prepublishOnly": "node ../../scripts/prepublish.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Gympass/yoga/issues"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  }
+}

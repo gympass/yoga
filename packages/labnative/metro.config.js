@@ -24,6 +24,7 @@ module.exports = (async () => {
       `${reactNativeLib}/packages/tokens`,
       `${reactNativeLib}/packages/common`,
       `${reactNativeLib}/packages/system`,
+      `${reactNativeLib}/packages/hooks`,
     ],
     resolver: {
       extraNodeModules: {

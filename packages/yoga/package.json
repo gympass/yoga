@@ -36,6 +36,7 @@
   "dependencies": {
     "@gympass/yoga-common": "^1.1.0",
     "@gympass/yoga-helpers": "^1.0.1",
+    "@gympass/yoga-hooks": "^0.0.1",
     "@gympass/yoga-icons": "^1.4.2",
     "@gympass/yoga-system": "^0.10.0",
     "@gympass/yoga-tokens": "^3.1.1",
