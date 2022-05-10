@@ -7,6 +7,7 @@ import { MDXProvider } from '@mdx-js/react';
 import * as components from '@gympass/yoga';
 import * as icons from '@gympass/yoga-icons';
 import * as helpers from '@gympass/yoga-helpers';
+import * as hooks from '@gympass/yoga-hooks';
 import * as system from '@gympass/yoga-system';
 
 import {
@@ -77,6 +78,7 @@ const customComponents = prefix => ({
   ...icons,
   ...helpers,
   ...system,
+  ...hooks,
 });
 
 const Wrapper = styled.div`

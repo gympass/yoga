@@ -3,6 +3,7 @@ import { node, bool, oneOf } from 'prop-types';
 import yogaPkg from '@gympass/yoga/package.json';
 import iconsPkg from '@gympass/yoga-icons/package.json';
 import systemPkg from '@gympass/yoga-system/package.json';
+import hooksPkg from '@gympass/yoga-hooks/package.json';
 
 import CodeBlockContext from './CodeBlockContext';
 import { ReactLive, PrismHighlight, SnackEmbed } from '.';
@@ -12,6 +13,7 @@ import {
   YogaSystem,
   YogaIcons,
   YogaHelpers,
+  YogaHooks,
   NativeComponents,
 } from './shared/modules';
 
@@ -59,6 +61,7 @@ const buildImportString = (code, modules) => {
 const packages = [
   { name: YogaIcons, path: '@gympass/yoga-icons' },
   { name: YogaHelpers, path: '@gympass/yoga-helpers' },
+  { name: YogaHooks, path: '@gympass/yoga-hooks' },
   { name: YogaComponents, path: '@gympass/yoga' },
   { name: YogaSystem, path: '@gympass/yoga-system' },
   { name: NativeComponents, path: 'react-native' },
@@ -68,6 +71,7 @@ const peerDependencies = Object.keys({
   ...yogaPkg.peerDependencies,
   ...iconsPkg.peerDependencies,
   ...systemPkg.peerDependencies,
+  ...hooksPkg.peerDependencies,
   'react-is': '*',
 }).map(pkg => ({ path: pkg }));
 

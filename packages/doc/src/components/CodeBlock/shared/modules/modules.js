@@ -2,6 +2,7 @@ import * as YogaComponents from '@gympass/yoga';
 import * as YogaSystem from '@gympass/yoga-system';
 import * as YogaIcons from '@gympass/yoga-icons';
 import * as YogaHelpers from '@gympass/yoga-helpers';
+import * as YogaHooks from '@gympass/yoga-hooks';
 
 const YogaNativeComponents = {
   GymCard: undefined,
@@ -43,4 +44,11 @@ const NativeComponents = {
   VirtualizedList: undefined,
 };
 
-export { YogaComponents, YogaSystem, YogaIcons, YogaHelpers, NativeComponents };
+export {
+  YogaComponents,
+  YogaSystem,
+  YogaIcons,
+  YogaHelpers,
+  YogaHooks,
+  NativeComponents,
+};
