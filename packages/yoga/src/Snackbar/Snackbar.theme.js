@@ -53,6 +53,7 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
     right: spacing.medium,
     bottom: spacing.medium,
     left: spacing.medium,
+    horizontal: spacing.medium,
   },
 });
 

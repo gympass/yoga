@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import styled, { withTheme } from 'styled-components';
-import { string, oneOf, func, elementType } from 'prop-types';
+import { string, oneOf, func, elementType, number } from 'prop-types';
 
+import { elevation } from '@gympass/yoga-system';
 import Box from '../../Box';
 import Button from '../../Button';
 import Icon from '../../Icon';
 import Text from '../../Text';
 import SnackbarAnimationWrapper from './SnackbarAnimationWrapper';
 
-const SnackbarContainer = styled(Box).attrs(
-  ({
+const SnackbarContainer = styled.View`
+  ${({
+    bottomOffset,
     variant,
     theme: {
       yoga: {
@@ -18,27 +20,22 @@ const SnackbarContainer = styled(Box).attrs(
           snackbar: {
             padding,
             margin,
-            shadow,
             variant: { [variant]: backgroundColor = feedback.success.light },
             border,
           },
         },
       },
     },
-  }) => ({
-    paddingVertical: padding.vertical,
-    paddingHorizontal: padding.horizontal,
-    mt: margin.top,
-    mr: margin.right,
-    mb: margin.bottom,
-    ml: margin.left,
-    elevation: shadow.default,
-    bgColor: backgroundColor,
-    bRadius: border.radius,
-  }),
-)`
-  flex-direction: row;
-  align-items: center;
+  }) => `
+    padding: ${padding.vertical}px ${padding.horizontal}px;
+    margin-horizontal: ${margin.horizontal}px
+    margin-bottom: ${margin.bottom + bottomOffset}px;
+    background-color: ${backgroundColor};
+    border-radius: ${border.radius}px;
+    flex-direction: row;
+    align-items: center;
+  `}
+  ${elevation}
 `;
 
 const Snackbar = ({
@@ -47,9 +44,10 @@ const Snackbar = ({
   actionLabel,
   onAction,
   variant,
-  theme,
   onSnackbarClose,
   duration,
+  bottomOffset,
+  ...props
 }) => {
   const [isOpen, setIsOpen] = useState(true);
 
@@ -64,7 +62,12 @@ const Snackbar = ({
       duration={duration}
       isOpen={isOpen}
     >
-      <SnackbarContainer variant={variant} theme={theme}>
+      <SnackbarContainer
+        variant={variant}
+        bottomOffset={bottomOffset}
+        {...props}
+        elevation="small"
+      >
         {icon && (
           <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
         )}
@@ -100,6 +103,7 @@ Snackbar.propTypes = {
   onAction: func,
   onSnackbarClose: func,
   duration: oneOf(['fast', 'default', 'slow', 'indefinite']),
+  bottomOffset: number,
 };
 
 Snackbar.defaultProps = {
@@ -109,6 +113,7 @@ Snackbar.defaultProps = {
   onAction: undefined,
   onSnackbarClose: undefined,
   duration: 'default',
+  bottomOffset: 0,
 };
 
 export default withTheme(Snackbar);

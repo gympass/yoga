@@ -11,7 +11,8 @@ const SnackbarPage = () => (
       message="Lorem Ipsum is simply dummy text of the printing"
       actionLabel="See details"
       onAction={() => {}}
-      duration="default"
+      duration="indefinite"
+      bottomOffset={0}
     />
   </View>
 );
