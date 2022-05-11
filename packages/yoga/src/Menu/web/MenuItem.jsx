@@ -1,8 +1,9 @@
 import React from 'react';
+import { Item as MenuItemRoot } from '@radix-ui/react-dropdown-menu';
 import { oneOfType, func, node } from 'prop-types';
 import styled from 'styled-components';
 
-const StyledMenuItem = styled.div`
+const StyledMenuItem = styled(MenuItemRoot)`
   ${({
     theme: {
       yoga: {
@@ -18,8 +19,14 @@ const StyledMenuItem = styled.div`
     align-items: center;
     margin-right: auto;
     padding: ${menu.padding.vertical}px ${menu.padding.horizontal}px;
+
     svg {
       margin-right: ${spacing.xsmall}px;
+    }
+
+    &:focus {
+      outline: none;
+      background: ${colors.clear};
     }
 
     &:hover {
