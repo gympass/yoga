@@ -65,10 +65,10 @@
     "jest-styled-components": "^6.3.3",
     "lerna": "^5.0.0",
     "lint-staged": "9.2.5",
-    "metro-react-native-babel-preset": "^0.59.0",
     "nx": "14.1.9",
     "prettier": "2.6.2",
-    "react-native": "0.63.4",
+    "metro-react-native-babel-preset": "^0.67.0",
+    "react-native": "0.68.1",
     "yargs": "^15.1.0"
   },
   "workspaces": {
