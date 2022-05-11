@@ -1,13 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Menu /> should match snapshot 1`] = `
-.c0 {
-  min-width: 176px;
-}
-
-<div>
-  <div
-    class="c0"
-  />
-</div>
-`;
+exports[`<Menu /> should match snapshot 1`] = `<div />`;
