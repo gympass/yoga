@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { string, oneOf, func, elementType, number } from 'prop-types';
 
-import { elevation } from '@gympass/yoga-system';
 import Box from '../../Box';
 import Button from '../../Button';
 import Icon from '../../Icon';
@@ -35,7 +34,6 @@ const SnackbarContainer = styled.View`
     flex-direction: row;
     align-items: center;
   `}
-  ${elevation}
 `;
 
 const Snackbar = ({
@@ -66,7 +64,6 @@ const Snackbar = ({
         variant={variant}
         bottomOffset={bottomOffset}
         {...props}
-        elevation="small"
       >
         {icon && (
           <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
