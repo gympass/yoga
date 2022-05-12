@@ -101,24 +101,26 @@ const SnackbarAnimationWrapper = ({
     }
   }, [isOpen]);
 
-  const panResponder = useRef(
-    PanResponder.create({
-      onPanResponderMove: (_, gestureState) => {
-        if (gestureState.dy > 0) {
-          translateY.setValue(gestureState.dy);
-        }
-      },
-      onPanResponderRelease: handlePanResponderRelease,
-      onPanResponderTerminate: handlePanResponderRelease,
-      onStartShouldSetPanResponder: () => true,
-      onMoveShouldSetPanResponder: (_, gestureState) => {
-        return !(gestureState.dy <= 2 && gestureState.dy >= -2);
-      },
-      onMoveShouldSetPanResponderCapture: () => true,
-      onPanResponderTerminationRequest: () => true,
-      onShouldBlockNativeResponder: () => true,
-    }),
-  ).current;
+  const panResponder = React.useMemo(
+    () =>
+      PanResponder.create({
+        onPanResponderMove: (_, gestureState) => {
+          if (gestureState.dy > 0) {
+            translateY.setValue(gestureState.dy);
+          }
+        },
+        onPanResponderRelease: handlePanResponderRelease,
+        onPanResponderTerminate: handlePanResponderRelease,
+        onStartShouldSetPanResponder: () => true,
+        onMoveShouldSetPanResponder: (_, gestureState) => {
+          return !(gestureState.dy <= 2 && gestureState.dy >= -2);
+        },
+        onMoveShouldSetPanResponderCapture: () => true,
+        onPanResponderTerminationRequest: () => true,
+        onShouldBlockNativeResponder: () => true,
+      }),
+    [childrenHeight],
+  );
 
   return (
     <Animated.View
