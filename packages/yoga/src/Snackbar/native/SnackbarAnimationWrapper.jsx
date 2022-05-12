@@ -40,10 +40,15 @@ const SnackbarAnimationWrapper = ({
   const childrenRef = createRef();
 
   useEffect(() => {
-    childrenRef.current.measure((_, __, ___, height) => {
-      setChildrenHeight(height);
-      translateY.setValue(height);
-    });
+    if (childrenRef.current) {
+      childrenRef.current.measureLayout(
+        childrenRef.current,
+        (_, __, ___, height) => {
+          setChildrenHeight(height);
+          translateY.setValue(height);
+        },
+      );
+    }
   }, [childrenRef.current]);
 
   useEffect(() => {
