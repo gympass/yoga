@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { margins } from '@gympass/yoga-system';
+import { borders, margins } from '@gympass/yoga-system';
 import {
   func,
   oneOf,
@@ -43,6 +43,8 @@ const StyledBanner = styled.View`
   `}
 
   ${margins}
+  
+  ${borders}
 `;
 
 const BannerActionButton = ({ button: { label, action }, ...props }) => (

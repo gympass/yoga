@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { margins, paddings } from '@gympass/yoga-system';
+import { borders, margins, paddings } from '@gympass/yoga-system';
 import {
   checkPropTypes,
   elementType,
@@ -45,6 +45,8 @@ const StyledBanner = styled.div`
   ${margins}
 
   ${paddings}
+
+  ${borders}
 `;
 
 const BannerActionButton = ({ button: { label, action }, ...props }) => (
