@@ -17,7 +17,7 @@ exports[`<Snackbar /> should match snapshot 1`] = `
         "position": "absolute",
         "transform": Array [
           Object {
-            "translateY": 1000,
+            "translateY": 1334,
           },
         ],
         "width": "100%",
@@ -28,7 +28,6 @@ exports[`<Snackbar /> should match snapshot 1`] = `
     <View>
       <View
         bottomOffset={0}
-        elevation="small"
         style={
           Array [
             Object {
@@ -42,13 +41,6 @@ exports[`<Snackbar /> should match snapshot 1`] = `
               "paddingLeft": 16,
               "paddingRight": 16,
               "paddingTop": 12,
-              "shadowColor": "rgba(152, 152, 166, 0.2)",
-              "shadowOffset": Object {
-                "height": 2,
-                "width": 0,
-              },
-              "shadowOpacity": 1,
-              "shadowRadius": 4,
             },
           ]
         }
