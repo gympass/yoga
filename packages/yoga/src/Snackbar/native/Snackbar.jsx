@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { createRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { string, oneOf, func, elementType, number } from 'prop-types';
 
@@ -47,10 +47,10 @@ const Snackbar = ({
   bottomOffset,
   ...props
 }) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const wrapperRef = createRef();
 
   const handleOnAction = () => {
-    setIsOpen(false);
+    wrapperRef.current.close();
     onAction();
   };
 
@@ -58,7 +58,7 @@ const Snackbar = ({
     <SnackbarAnimationWrapper
       onSnackbarClose={onSnackbarClose}
       duration={duration}
-      isOpen={isOpen}
+      ref={wrapperRef}
     >
       <SnackbarContainer
         variant={variant}
