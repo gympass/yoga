@@ -1,3 +1,571 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Menu /> should match snapshot 1`] = `<div />`;
+exports[`<Menu /> should match snapshot Menu.Item with active 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0;
+  width: 48px;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+<div>
+  <button
+    aria-haspopup="menu"
+    class="c0"
+    data-state="closed"
+    id="radix-6"
+    type="button"
+  >
+    <svg
+      class="c1"
+      height="24"
+      width="24"
+    />
+  </button>
+</div>
+`;
+
+exports[`<Menu /> should match snapshot Menu.Item with disabled 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0;
+  width: 48px;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+<div>
+  <button
+    aria-haspopup="menu"
+    class="c0"
+    data-state="closed"
+    id="radix-8"
+    type="button"
+  >
+    <svg
+      class="c1"
+      height="24"
+      width="24"
+    />
+  </button>
+</div>
+`;
+
+exports[`<Menu /> should match snapshot Menu.Item with disabled and icon 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0;
+  width: 48px;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+<div>
+  <button
+    aria-haspopup="menu"
+    class="c0"
+    data-state="closed"
+    id="radix-10"
+    type="button"
+  >
+    <svg
+      class="c1"
+      height="24"
+      width="24"
+    />
+  </button>
+</div>
+`;
+
+exports[`<Menu /> should match snapshot Menu.Item with icon 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0;
+  width: 48px;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+<div>
+  <button
+    aria-haspopup="menu"
+    class="c0"
+    data-state="closed"
+    id="radix-2"
+    type="button"
+  >
+    <svg
+      class="c1"
+      height="24"
+      width="24"
+    />
+  </button>
+</div>
+`;
+
+exports[`<Menu /> should match snapshot Menu.Item with link 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0;
+  width: 48px;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+<div>
+  <button
+    aria-haspopup="menu"
+    class="c0"
+    data-state="closed"
+    id="radix-4"
+    type="button"
+  >
+    <svg
+      class="c1"
+      height="24"
+      width="24"
+    />
+  </button>
+</div>
+`;
+
+exports[`<Menu /> should match snapshot in default Menu 1`] = `
+.c1 {
+  width: 24px;
+  height: 24px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 0;
+  width: 48px;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  width: unset;
+  height: unset;
+  margin-right: unset;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+<div>
+  <button
+    aria-haspopup="menu"
+    class="c0"
+    data-state="closed"
+    id="radix-0"
+    type="button"
+  >
+    <svg
+      class="c1"
+      height="24"
+      width="24"
+    />
+  </button>
+</div>
+`;
