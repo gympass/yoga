@@ -1,32 +1,41 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { Content as MenuListRoot } from '@radix-ui/react-dropdown-menu';
 import { node } from 'prop-types';
 
-const StyledMenu = styled(MenuListRoot)`
+import Box from '../../Box';
+
+const StyledMenuList = styled(MenuListRoot)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   ${({
     theme: {
       yoga: {
-        colors,
         components: { menu },
       },
     },
   }) => `
-    background: ${colors.white};
-    border-radius: ${menu.border.radius}px;
-    margin: ${menu.margin.default}px 0; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: ${menu.margin.default}px 0;
+    padding: 0;
     min-width: ${menu.width.min}px;
     max-width: ${menu.width.max}px;
+    border-radius: ${menu.border.radius}px;
+
+    background-color: ${menu.backgroundColor.white}; 
     box-shadow: 0px 2px 6px rgba(152, 152, 166, 0.25);
   `}
 `;
 
-const MenuList = ({ children }) => {
-  return <StyledMenu>{children}</StyledMenu>;
-};
+const MenuList = forwardRef(({ children }, ref) => {
+  return (
+    <StyledMenuList asChild>
+      <Box as="ul" ref={ref}>
+        {children}
+      </Box>
+    </StyledMenuList>
+  );
+});
 
 MenuList.propTypes = {
   /** The children necessary */
