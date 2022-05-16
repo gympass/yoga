@@ -2,11 +2,14 @@ import React, { createRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { string, oneOf, func, elementType, number } from 'prop-types';
 
+import { PanResponder } from 'react-native';
 import Box from '../../Box';
 import Button from '../../Button';
 import Icon from '../../Icon';
 import Text from '../../Text';
 import SnackbarAnimationWrapper from './SnackbarAnimationWrapper';
+
+const SWIPE_THRESHOLD = 32;
 
 const SnackbarContainer = styled.View`
   ${({
@@ -49,6 +52,31 @@ const Snackbar = ({
 }) => {
   const wrapperRef = createRef();
 
+  const handlePanResponderRelease = (_evt, gestureState) => {
+    if (gestureState.dy > SWIPE_THRESHOLD) {
+      wrapperRef.current.close();
+    } else {
+      wrapperRef.current.open();
+    }
+  };
+
+  const panResponder = PanResponder.create({
+    onPanResponderMove: (_, gestureState) => {
+      if (gestureState.dy > 0) {
+        wrapperRef.current.translateY(gestureState.dy);
+      }
+    },
+    onPanResponderRelease: handlePanResponderRelease,
+    onPanResponderTerminate: handlePanResponderRelease,
+    onStartShouldSetPanResponder: () => true,
+    onMoveShouldSetPanResponder: (_, gestureState) => {
+      return !(gestureState.dy <= 2 && gestureState.dy >= -2);
+    },
+    onMoveShouldSetPanResponderCapture: () => true,
+    onPanResponderTerminationRequest: () => true,
+    onShouldBlockNativeResponder: () => true,
+  });
+
   const handleOnAction = () => {
     wrapperRef.current.close();
     onAction();
@@ -64,6 +92,7 @@ const Snackbar = ({
         variant={variant}
         bottomOffset={bottomOffset}
         {...props}
+        {...panResponder.panHandlers}
       >
         {icon && (
           <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />

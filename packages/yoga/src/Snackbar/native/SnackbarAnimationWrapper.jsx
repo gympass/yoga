@@ -7,16 +7,8 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import {
-  Animated,
-  useWindowDimensions,
-  Easing,
-  PanResponder,
-  View,
-} from 'react-native';
+import { Animated, useWindowDimensions, Easing, View } from 'react-native';
 import { func, node, oneOf } from 'prop-types';
-
-const SWIPE_THRESHOLD = 32;
 
 const durationDictionary = {
   fast: 4000,
@@ -84,18 +76,10 @@ const SnackbarAnimationWrapper = forwardRef(
       close: () => {
         closeAnimation();
       },
-    }));
-
-    const handlePanResponderRelease = useCallback(
-      (_evt, gestureState) => {
-        if (gestureState.dy > SWIPE_THRESHOLD) {
-          closeAnimation();
-        } else {
-          openAnimation();
-        }
+      translateY: dy => {
+        translateY.setValue(dy);
       },
-      [childrenHeight],
-    );
+    }));
 
     useEffect(() => {
       const timeoutDuration = durationDictionary[duration];
@@ -110,27 +94,6 @@ const SnackbarAnimationWrapper = forwardRef(
       return () => clearTimeout(timeoutRef.current);
     }, [duration, childrenHeight]);
 
-    const panResponder = React.useMemo(
-      () =>
-        PanResponder.create({
-          onPanResponderMove: (_, gestureState) => {
-            if (gestureState.dy > 0) {
-              translateY.setValue(gestureState.dy);
-            }
-          },
-          onPanResponderRelease: handlePanResponderRelease,
-          onPanResponderTerminate: handlePanResponderRelease,
-          onStartShouldSetPanResponder: () => true,
-          onMoveShouldSetPanResponder: (_, gestureState) => {
-            return !(gestureState.dy <= 2 && gestureState.dy >= -2);
-          },
-          onMoveShouldSetPanResponderCapture: () => true,
-          onPanResponderTerminationRequest: () => true,
-          onShouldBlockNativeResponder: () => true,
-        }),
-      [childrenHeight],
-    );
-
     return (
       <Animated.View
         style={[
@@ -144,7 +107,6 @@ const SnackbarAnimationWrapper = forwardRef(
             transform: [{ translateY }],
           },
         ]}
-        {...panResponder.panHandlers}
       >
         <View ref={childrenRef}>{children}</View>
       </Animated.View>
