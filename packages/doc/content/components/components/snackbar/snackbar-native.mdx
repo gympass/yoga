@@ -1,11 +1,9 @@
-import React, { createRef } from 'react';
-import { View } from 'react-native';
-import { Button, Snackbar } from '@gympass/yoga';
-import { CheckedFull } from '@gympass/yoga-icons/src';
+### Usage
 
-import { DocTitle } from '../components';
+```javascript type=expo state=true
+const { createRef } = React;
 
-const SnackbarPage = () => {
+const App = () => {
   const snackbarRef = createRef();
 
   const handleOpenSnackbar = () => {
@@ -14,8 +12,6 @@ const SnackbarPage = () => {
 
   return (
     <View flex={1} width="100%" alignItems="center">
-      <DocTitle>Default Snackbar</DocTitle>
-
       <Button onPress={handleOpenSnackbar}>Tap to open snackbar</Button>
 
       <Snackbar
@@ -24,12 +20,19 @@ const SnackbarPage = () => {
         message="Lorem Ipsum is simply dummy text of the printing"
         actionLabel="See details"
         onAction={() => {}}
-        duration="indefinite"
+        duration="default"
         bottomOffset={0}
         ref={snackbarRef}
       />
     </View>
   );
+  
 };
+export default App;
+```
 
-export default SnackbarPage;
+### Props
+
+#### Snackbar
+
+<PropsTable component="Snackbar" platform="native" />
