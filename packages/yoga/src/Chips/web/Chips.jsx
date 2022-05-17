@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { node, number, arrayOf, bool, func, oneOfType } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
@@ -109,55 +109,61 @@ const Wrapper = styled.button`
   }}
 `;
 
-const Chips = ({
-  children,
-  selected,
-  counter,
-  icons,
-  disabled,
-  onToggle,
-  onClick = onToggle,
-  theme: {
-    yoga: { spacing },
-  },
-  ...props
-}) => {
-  const [FirstIcon, SecondIcon] = icons;
+const Chips = forwardRef(
+  (
+    {
+      children,
+      selected,
+      counter,
+      icons,
+      disabled,
+      onToggle,
+      onClick = onToggle,
+      theme: {
+        yoga: { spacing },
+      },
+      ...props
+    },
+    ref,
+  ) => {
+    const [FirstIcon, SecondIcon] = icons;
 
-  return (
-    <Wrapper
-      selected={selected}
-      disabled={disabled}
-      onClick={onClick}
-      {...props}
-    >
-      {SecondIcon && (
-        <Icon
-          as={SecondIcon}
-          fill={selected ? 'primary' : 'secondary'}
-          width="small"
-          height="small"
-          style={{
-            marginRight: children ? spacing.xxxsmall : undefined,
-          }}
-        />
-      )}
-      {children && <Text>{children}</Text>}
-      {selected && counter && !disabled && <Counter value={counter} />}
-      {FirstIcon && (
-        <Icon
-          as={FirstIcon}
-          fill={selected ? 'primary' : 'secondary'}
-          width="small"
-          height="small"
-          style={{
-            marginLeft: children ? spacing.xxxsmall : undefined,
-          }}
-        />
-      )}
-    </Wrapper>
-  );
-};
+    return (
+      <Wrapper
+        selected={selected}
+        disabled={disabled}
+        onClick={onClick}
+        ref={ref}
+        {...props}
+      >
+        {SecondIcon && (
+          <Icon
+            as={SecondIcon}
+            fill={selected ? 'primary' : 'secondary'}
+            width="small"
+            height="small"
+            style={{
+              marginRight: children ? spacing.xxxsmall : undefined,
+            }}
+          />
+        )}
+        {children && <Text>{children}</Text>}
+        {selected && counter && !disabled && <Counter value={counter} />}
+        {FirstIcon && (
+          <Icon
+            as={FirstIcon}
+            fill={selected ? 'primary' : 'secondary'}
+            width="small"
+            height="small"
+            style={{
+              marginLeft: children ? spacing.xxxsmall : undefined,
+            }}
+          />
+        )}
+      </Wrapper>
+    );
+  },
+);
 
 Chips.propTypes = {
   /** text to be displayed */
