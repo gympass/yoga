@@ -1,4 +1,4 @@
-import React, { memo, useEffect, useRef } from 'react';
+import React, { forwardRef, memo, useEffect, useRef } from 'react';
 import styled, { keyframes, withTheme } from 'styled-components';
 import { func, string, bool, number, oneOf } from 'prop-types';
 
@@ -94,77 +94,83 @@ const AnimatedSnackbar = styled(StyledSnackbar)`
   animation: ${fadeIn} 0.2s ease-in-out;
 `;
 
-const Snackbar = ({
-  open,
-  duration,
-  variant,
-  hideIcon,
-  message,
-  actionLabel,
-  onAction,
-  onClose,
-  hideCloseButton,
-  theme: {
-    yoga: {
-      components: { snackbar },
+const Snackbar = forwardRef(
+  (
+    {
+      open,
+      duration,
+      variant,
+      hideIcon,
+      message,
+      actionLabel,
+      onAction,
+      onClose,
+      hideCloseButton,
+      theme: {
+        yoga: {
+          components: { snackbar },
+        },
+      },
+      ...props
     },
+    ref,
+  ) => {
+    const timeoutRef = useRef();
+
+    useEffect(() => {
+      const shouldCloseOnTimer = open && duration && onClose;
+
+      if (shouldCloseOnTimer) {
+        timeoutRef.current = setTimeout(() => {
+          onClose();
+        }, duration);
+      }
+
+      return () => clearTimeout(timeoutRef.current);
+    }, [open, duration]);
+
+    return (
+      open && (
+        <AnimatedSnackbar
+          role="alert"
+          aria-label={variant}
+          variant={variant}
+          ref={ref}
+          {...props}
+        >
+          {!hideIcon && (
+            <Box display="flex" alignItems="center" mr="small" role="img">
+              <Icon
+                as={snackbar.variant.icon[variant]}
+                fill="secondary"
+                width="large"
+                height="large"
+              />
+            </Box>
+          )}
+
+          <Text.Small flex={1} mr="small" numberOfLines={2}>
+            {message}
+          </Text.Small>
+
+          <ActionsWrapper>
+            {onAction && actionLabel && (
+              <Button.Link onClick={onAction} secondary small>
+                {actionLabel}
+              </Button.Link>
+            )}
+
+            {!hideCloseButton && onClose && (
+              <IconButtonWrapper role="button" onClick={onClose}>
+                <Icon as={Close} fill="secondary" size="medium" />
+              </IconButtonWrapper>
+            )}
+          </ActionsWrapper>
+        </AnimatedSnackbar>
+      )
+    );
   },
-  ...props
-}) => {
-  const timeoutRef = useRef();
-
-  useEffect(() => {
-    const shouldCloseOnTimer = open && duration && onClose;
-
-    if (shouldCloseOnTimer) {
-      timeoutRef.current = setTimeout(() => {
-        onClose();
-      }, duration);
-    }
-
-    return () => clearTimeout(timeoutRef.current);
-  }, [open, duration]);
-
-  return (
-    open && (
-      <AnimatedSnackbar
-        role="alert"
-        aria-label={variant}
-        variant={variant}
-        {...props}
-      >
-        {!hideIcon && (
-          <Box display="flex" alignItems="center" mr="small" role="img">
-            <Icon
-              as={snackbar.variant.icon[variant]}
-              fill="secondary"
-              width="large"
-              height="large"
-            />
-          </Box>
-        )}
-
-        <Text.Small flex={1} mr="small" numberOfLines={2}>
-          {message}
-        </Text.Small>
-
-        <ActionsWrapper>
-          {onAction && actionLabel && (
-            <Button.Link onClick={onAction} secondary small>
-              {actionLabel}
-            </Button.Link>
-          )}
-
-          {!hideCloseButton && onClose && (
-            <IconButtonWrapper role="button" onClick={onClose}>
-              <Icon as={Close} fill="secondary" size="medium" />
-            </IconButtonWrapper>
-          )}
-        </ActionsWrapper>
-      </AnimatedSnackbar>
-    )
-  );
-};
+);
 
 Snackbar.propTypes = {
   /** Controls the snackbar visibility. */
