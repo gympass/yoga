@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { number, oneOfType, string } from 'prop-types';
 
@@ -26,9 +26,9 @@ const Wrapper = styled.span`
   background-color: ${theme.colors.primary};
 `;
 
-const Counter = ({ value }) => (
-  <Wrapper>{Number(value) > 999 ? '+999' : value}</Wrapper>
-);
+const Counter = forwardRef(({ value }, ref) => (
+  <Wrapper ref={ref}>{Number(value) > 999 ? '+999' : value}</Wrapper>
+));
 
 Counter.propTypes = {
   value: oneOfType([number, string]).isRequired,
