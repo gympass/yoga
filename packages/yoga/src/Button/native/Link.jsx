@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { bool } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
@@ -36,7 +36,7 @@ const Link = styled(Label)`
   }}
 `;
 
-const ButtonLink = props => <Link {...props} />;
+const ButtonLink = forwardRef((props, ref) => <Link {...props} ref={ref} />);
 
 ButtonLink.propTypes = {
   disabled: bool,
