@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, forwardRef } from 'react';
 import { TouchableWithoutFeedback, Animated, Easing } from 'react-native';
 import {
   func,
@@ -155,153 +155,158 @@ const CloseIcon = styled.View(
   `,
 );
 
-const Input = ({
-  cleanable,
-  disabled,
-  error,
-  full,
-  helper,
-  label,
-  maxLength,
-  readOnly,
-  style,
-  textContentType,
-  value,
-  onBlur,
-  onClean,
-  onFocus,
-  hideMaxLength,
-  theme: {
-    yoga: {
-      colors,
-      transition,
-      components: { input },
+const Input = forwardRef(
+  (
+    {
+      cleanable,
+      disabled,
+      error,
+      full,
+      helper,
+      label,
+      maxLength,
+      readOnly,
+      style,
+      textContentType,
+      value,
+      onBlur,
+      onClean,
+      onFocus,
+      hideMaxLength,
+      theme: {
+        yoga: {
+          colors,
+          transition,
+          components: { input },
+        },
+      },
+      ...props
     },
-  },
-  ...props
-}) => {
-  const [focused, setFocused] = useState(false);
-  const [typed, setTyped] = useState(Boolean(value));
+    ref,
+  ) => {
+    const [focused, setFocused] = useState(false);
+    const [typed, setTyped] = useState(Boolean(value));
 
-  useEffect(() => {
-    setTyped(Boolean(value));
-  }, [value]);
+    useEffect(() => {
+      setTyped(Boolean(value));
+    }, [value]);
 
-  const iconColor = () => {
-    if (disabled) {
-      return colors.elements.backgroundAndDisabled;
-    }
+    const iconColor = () => {
+      if (disabled) {
+        return colors.elements.backgroundAndDisabled;
+      }
 
-    if (focused) {
-      return input.font.color.focus;
-    }
+      if (focused) {
+        return input.font.color.focus;
+      }
 
-    return input.font.color.default;
-  };
+      return input.font.color.default;
+    };
 
-  const [labelTopAnimation] = useState(
-    new Animated.Value(input.padding.top * 1.5),
-  );
-  const [fontSizeAnimation] = useState(
-    new Animated.Value(input.label.font.size.default),
-  );
-
-  const animate = (animation, toValue) =>
-    Animated.timing(animation, {
-      toValue,
-      duration: transition.duration[1],
-      easing: Easing.bezier(...transition.timing[0]),
-      useNativeDriver: false,
-    }).start();
-
-  useEffect(() => {
-    const shouldAnimate = typed || focused;
-
-    animate(labelTopAnimation, shouldAnimate ? 1 : input.padding.top * 1.5);
-    animate(
-      fontSizeAnimation,
-      shouldAnimate
-        ? input.label.font.size.typed
-        : input.label.font.size.default,
+    const [labelTopAnimation] = useState(
+      new Animated.Value(input.padding.top * 1.5),
     );
-  }, [focused, typed]);
+    const [fontSizeAnimation] = useState(
+      new Animated.Value(input.label.font.size.default),
+    );
 
-  const { height = input.height, ...styles } = Array.isArray(style)
-    ? Object.assign({}, ...style)
-    : style;
+    const animate = (animation, toValue) =>
+      Animated.timing(animation, {
+        toValue,
+        duration: transition.duration[1],
+        easing: Easing.bezier(...transition.timing[0]),
+        useNativeDriver: false,
+      }).start();
 
-  return (
-    <Wrapper full={full} style={styles}>
-      <Field
-        {...props}
-        cleanable={cleanable}
-        disabled={disabled}
-        editable={!(readOnly || disabled)}
-        error={error}
-        focus={focused}
-        full={full}
-        maxLength={maxLength}
-        style={{
-          height,
-        }}
-        textContentType={textContentType}
-        typed={typed}
-        value={value}
-        onFocus={e => {
-          setFocused(true);
-          onFocus(e);
-        }}
-        onBlur={e => {
-          setFocused(false);
-          onBlur(e);
-        }}
-      />
-      {Boolean(label) && (
-        <LabelWrapper
-          focus={focused}
-          pointerEvents="none"
-          typed={typed}
-          style={{ top: labelTopAnimation }}
-        >
-          <Label
-            disabled={disabled}
-            error={error}
-            focus={focused}
-            typed={typed}
-            style={{ fontSize: fontSizeAnimation }}
-          >
-            {label}
-          </Label>
-        </LabelWrapper>
-      )}
-      {cleanable && typed && (
-        <TouchableWithoutFeedback
-          accessibilityRole="button"
-          onPress={() => {
-            if (disabled) return;
-            onClean('');
-          }}
-        >
-          <CloseIcon>
-            <Close height={input.height} width={20} fill={iconColor()} />
-          </CloseIcon>
-        </TouchableWithoutFeedback>
-      )}
-      {(helper || maxLength || error) && (
-        <Helper
-          full={full}
-          error={error}
-          helper={helper}
-          focused={focused}
+    useEffect(() => {
+      const shouldAnimate = typed || focused;
+
+      animate(labelTopAnimation, shouldAnimate ? 1 : input.padding.top * 1.5);
+      animate(
+        fontSizeAnimation,
+        shouldAnimate
+          ? input.label.font.size.typed
+          : input.label.font.size.default,
+      );
+    }, [focused, typed]);
+
+    const { height = input.height, ...styles } = Array.isArray(style)
+      ? Object.assign({}, ...style)
+      : style;
+
+    return (
+      <Wrapper ref={ref} full={full} style={styles}>
+        <Field
+          {...props}
+          cleanable={cleanable}
           disabled={disabled}
+          editable={!(readOnly || disabled)}
+          error={error}
+          focus={focused}
+          full={full}
           maxLength={maxLength}
-          length={value.length}
-          hideMaxLength={hideMaxLength}
+          style={{
+            height,
+          }}
+          textContentType={textContentType}
+          typed={typed}
+          value={value}
+          onFocus={e => {
+            setFocused(true);
+            onFocus(e);
+          }}
+          onBlur={e => {
+            setFocused(false);
+            onBlur(e);
+          }}
         />
-      )}
-    </Wrapper>
-  );
-};
+        {Boolean(label) && (
+          <LabelWrapper
+            focus={focused}
+            pointerEvents="none"
+            typed={typed}
+            style={{ top: labelTopAnimation }}
+          >
+            <Label
+              disabled={disabled}
+              error={error}
+              focus={focused}
+              typed={typed}
+              style={{ fontSize: fontSizeAnimation }}
+            >
+              {label}
+            </Label>
+          </LabelWrapper>
+        )}
+        {cleanable && typed && (
+          <TouchableWithoutFeedback
+            accessibilityRole="button"
+            onPress={() => {
+              if (disabled) return;
+              onClean('');
+            }}
+          >
+            <CloseIcon>
+              <Close height={input.height} width={20} fill={iconColor()} />
+            </CloseIcon>
+          </TouchableWithoutFeedback>
+        )}
+        {(helper || maxLength || error) && (
+          <Helper
+            full={full}
+            error={error}
+            helper={helper}
+            focused={focused}
+            disabled={disabled}
+            maxLength={maxLength}
+            length={value.length}
+            hideMaxLength={hideMaxLength}
+          />
+        )}
+      </Wrapper>
+    );
+  },
+);
 
 Input.propTypes = {
   /** display a close icon to clean the field */
