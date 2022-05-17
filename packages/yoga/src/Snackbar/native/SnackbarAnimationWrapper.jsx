@@ -66,6 +66,7 @@ const SnackbarAnimationWrapper = forwardRef(
       if (shouldCloseOnTimer) {
         timeoutRef.current = setTimeout(() => {
           closeAnimation();
+          clearTimeout(timeoutRef.current);
         }, timeoutDuration);
       }
     };
