@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { forwardRef, useEffect, useState } from 'react';
 import { bool } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
@@ -85,97 +85,103 @@ const SwitchThumb = styled(Box).attrs(
   }),
 )``;
 
-const CheckboxSwitch = ({
-  checked,
-  pressed,
-  disabled,
-  theme: {
-    yoga: {
-      components: { checkboxswitch },
+const CheckboxSwitch = forwardRef(
+  (
+    {
+      checked,
+      pressed,
+      disabled,
+      theme: {
+        yoga: {
+          components: { checkboxswitch },
+        },
+      },
     },
-  },
-}) => {
-  const [thumbPosition] = useState(new Animated.Value(Number(checked)));
-  const thumbTo =
-    checkboxswitch.track.width -
-    checkboxswitch.thumb.width -
-    checkboxswitch.thumb.left;
-  const thumbFrom = checkboxswitch.thumb.left;
+    ref,
+  ) => {
+    const [thumbPosition] = useState(new Animated.Value(Number(checked)));
+    const thumbTo =
+      checkboxswitch.track.width -
+      checkboxswitch.thumb.width -
+      checkboxswitch.thumb.left;
+    const thumbFrom = checkboxswitch.thumb.left;
 
-  const shadowDiameter =
-    checkboxswitch.thumb.width * checkboxswitch.thumb.shadowScale;
-  const shadowAndThumbDiff = shadowDiameter - checkboxswitch.thumb.width;
-  const halfDiff = shadowAndThumbDiff / 2;
+    const shadowDiameter =
+      checkboxswitch.thumb.width * checkboxswitch.thumb.shadowScale;
+    const shadowAndThumbDiff = shadowDiameter - checkboxswitch.thumb.width;
+    const halfDiff = shadowAndThumbDiff / 2;
 
-  const thumbShadowFrom = (halfDiff - checkboxswitch.thumb.left) * -1;
-  const thumbShadowTo = thumbTo - halfDiff;
+    const thumbShadowFrom = (halfDiff - checkboxswitch.thumb.left) * -1;
+    const thumbShadowTo = thumbTo - halfDiff;
 
-  useEffect(() => {
-    const toggle = (isChecked, position) => {
-      const animValue = {
-        fromValue: isChecked ? 0 : 1,
-        toValue: isChecked ? 1 : 0,
-        duration: 100,
-        useNativeDriver: false,
+    useEffect(() => {
+      const toggle = (isChecked, position) => {
+        const animValue = {
+          fromValue: isChecked ? 0 : 1,
+          toValue: isChecked ? 1 : 0,
+          duration: 100,
+          useNativeDriver: false,
+        };
+
+        Animated.timing(position, animValue).start();
       };
 
-      Animated.timing(position, animValue).start();
-    };
+      toggle(!checked, thumbPosition);
+    }, [checked]);
 
-    toggle(!checked, thumbPosition);
-  }, [checked]);
-
-  return (
-    <SwitchTrack
-      checked={checked}
-      disabled={disabled}
-      as={Animated.View}
-      style={
-        !disabled && {
-          backgroundColor: thumbPosition.interpolate({
-            inputRange: [0, 1],
-            outputRange: [
-              checkboxswitch.track.checked.backgroundColor,
-              checkboxswitch.track.backgroundColor,
-            ],
-          }),
+    return (
+      <SwitchTrack
+        ref={ref}
+        checked={checked}
+        disabled={disabled}
+        as={Animated.View}
+        style={
+          !disabled && {
+            backgroundColor: thumbPosition.interpolate({
+              inputRange: [0, 1],
+              outputRange: [
+                checkboxswitch.track.checked.backgroundColor,
+                checkboxswitch.track.backgroundColor,
+              ],
+            }),
+          }
         }
-      }
-    >
-      {pressed && !disabled && (
-        <ThumbShadow
+      >
+        {pressed && !disabled && (
+          <ThumbShadow
+            checked={checked}
+            as={Animated.View}
+            style={{
+              transform: [
+                {
+                  translateX: thumbPosition.interpolate({
+                    inputRange: [0, 1],
+                    outputRange: [thumbShadowTo, thumbShadowFrom],
+                  }),
+                },
+              ],
+            }}
+          />
+        )}
+        <SwitchThumb
           checked={checked}
+          disabled={disabled}
           as={Animated.View}
           style={{
             transform: [
               {
                 translateX: thumbPosition.interpolate({
                   inputRange: [0, 1],
-                  outputRange: [thumbShadowTo, thumbShadowFrom],
+                  outputRange: [thumbTo, thumbFrom],
                 }),
               },
             ],
           }}
         />
-      )}
-      <SwitchThumb
-        checked={checked}
-        disabled={disabled}
-        as={Animated.View}
-        style={{
-          transform: [
-            {
-              translateX: thumbPosition.interpolate({
-                inputRange: [0, 1],
-                outputRange: [thumbTo, thumbFrom],
-              }),
-            },
-          ],
-        }}
-      />
-    </SwitchTrack>
-  );
-};
+      </SwitchTrack>
+    );
+  },
+);
 
 CheckboxSwitch.propTypes = {
   checked: bool,

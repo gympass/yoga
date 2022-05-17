@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { forwardRef, useState } from 'react';
 import { bool, func, string, shape } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { TouchableWithoutFeedback, View } from 'react-native';
@@ -157,75 +157,85 @@ const CheckArea = styled.View(
 /** The checkbox component is used when the user needs to select one or more
  * items on a task. This component can also allow the user to turn an option on
  * or off.  */
-const Checkbox = ({
-  label,
-  helper,
-  disabled,
-  checked,
-  error,
-  style,
-  onPressIn,
-  onPressOut,
-  inverted,
-  theme: {
-    yoga: {
-      components: { checkbox },
-      colors,
+const Checkbox = forwardRef(
+  (
+    {
+      label,
+      helper,
+      disabled,
+      checked,
+      error,
+      style,
+      onPressIn,
+      onPressOut,
+      inverted,
+      theme: {
+        yoga: {
+          components: { checkbox },
+          colors,
+        },
+      },
+      ...rest
     },
-  },
-  ...rest
-}) => {
-  const [pressed, setPressed] = useState(false);
+    ref,
+  ) => {
+    const [pressed, setPressed] = useState(false);
 
-  return (
-    <View>
-      <TouchableWithoutFeedback
-        {...rest}
-        disabled={disabled}
-        onPressIn={e => {
-          setPressed(true);
-          onPressIn(e);
-        }}
-        onPressOut={e => {
-          setPressed(false);
-          onPressOut(e);
-        }}
-      >
-        <CheckboxWrapper style={style}>
-          <CheckArea>
-            {pressed && !disabled && (
-              <Shadow pressed={pressed} checked={checked} inverted={inverted} />
-            )}
-            <CheckBackground
-              {...{
-                disabled,
-                checked,
-                error,
-                pressed,
-                inverted,
-              }}
-            />
-            {checked && (
-              <Check
-                fill={inverted ? colors.primary : checkbox.checked.icon.color}
-                style={{ position: 'absolute' }}
-                width={24}
-                height={24}
+    return (
+      <View>
+        <TouchableWithoutFeedback
+          {...rest}
+          ref={ref}
+          disabled={disabled}
+          onPressIn={e => {
+            setPressed(true);
+            onPressIn(e);
+          }}
+          onPressOut={e => {
+            setPressed(false);
+            onPressOut(e);
+          }}
+        >
+          <CheckboxWrapper style={style}>
+            <CheckArea>
+              {pressed && !disabled && (
+                <Shadow
+                  pressed={pressed}
+                  checked={checked}
+                  inverted={inverted}
+                />
+              )}
+              <CheckBackground
+                {...{
+                  disabled,
+                  checked,
+                  error,
+                  pressed,
+                  inverted,
+                }}
               />
-            )}
-          </CheckArea>
+              {checked && (
+                <Check
+                  fill={inverted ? colors.primary : checkbox.checked.icon.color}
+                  style={{ position: 'absolute' }}
+                  width={24}
+                  height={24}
+                />
+              )}
+            </CheckArea>
 
-          {label && <Label>{label}</Label>}
-        </CheckboxWrapper>
-      </TouchableWithoutFeedback>
-      {(helper || error) && (
-        <HelperWrapper>
-          <Helper error={error}>{error || helper}</Helper>
-        </HelperWrapper>
-      )}
-    </View>
-  );
-};
+            {label && <Label>{label}</Label>}
+          </CheckboxWrapper>
+        </TouchableWithoutFeedback>
+        {(helper || error) && (
+          <HelperWrapper>
+            <Helper error={error}>{error || helper}</Helper>
+          </HelperWrapper>
+        )}
+      </View>
+    );
+  },
+);
 
 Checkbox.propTypes = {
   label: string,

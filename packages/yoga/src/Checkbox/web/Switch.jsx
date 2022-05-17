@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { bool, func } from 'prop-types';
 import styled, { css } from 'styled-components';
 
@@ -124,19 +124,22 @@ const SwitchThumb = styled.span`
 `;
 
 /** Switches allow users to turn an individual option on or off. They are usually used to activate or deactivate a specific setting. */
-const CheckboxSwitch = ({ checked, disabled, onChange, ...rest }) => (
-  <SwitchTrack checked={checked} disabled={disabled} {...rest}>
-    <SwitchInput
-      type="checkbox"
-      role="switch"
-      disabled={disabled}
-      aria-hidden
-      aria-checked={checked}
-      aria-readonly={disabled}
-      onChange={onChange}
-    />
-    <SwitchThumb role="button" checked={checked} disabled={disabled} />
-  </SwitchTrack>
+const CheckboxSwitch = forwardRef(
+  ({ checked, disabled, onChange, ...rest }, ref) => (
+    <SwitchTrack checked={checked} disabled={disabled} {...rest}>
+      <SwitchInput
+        type="checkbox"
+        role="switch"
+        ref={ref}
+        disabled={disabled}
+        aria-hidden
+        aria-checked={checked}
+        aria-readonly={disabled}
+        onChange={onChange}
+      />
+      <SwitchThumb role="button" checked={checked} disabled={disabled} />
+    </SwitchTrack>
+  ),
 );
 
 CheckboxSwitch.propTypes = {
