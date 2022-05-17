@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { forwardRef, useContext } from 'react';
 import { string, oneOfType, number, node } from 'prop-types';
 import { TouchableWithoutFeedback } from 'react-native';
 import styled from 'styled-components';
@@ -65,7 +65,7 @@ const Text = styled.Text(
 
 /** Radio group allows user to select one option from a set of options. Use
 value on group to set the selected option. */
-const RadioGroupButton = ({ value, children, ...rest }) => {
+const RadioGroupButton = forwardRef(({ value, children, ...rest }, ref) => {
   const { onChange, small, selectedValue, ...context } = useContext(
     RadioGroupContext,
   );
@@ -75,6 +75,7 @@ const RadioGroupButton = ({ value, children, ...rest }) => {
 
   return (
     <TouchableWithoutFeedback
+      ref={ref}
       onPress={() => {
         onChange({ value: inputValue });
       }}
@@ -85,7 +86,7 @@ const RadioGroupButton = ({ value, children, ...rest }) => {
       </RadioMark>
     </TouchableWithoutFeedback>
   );
-};
+});
 
 RadioGroupButton.displayName = 'RadioGroup.Button';
 

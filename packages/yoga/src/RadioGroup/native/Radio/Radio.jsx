@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { forwardRef, useContext, useState } from 'react';
 import styled from 'styled-components';
 import { string, oneOfType, number, bool } from 'prop-types';
 import { TouchableWithoutFeedback } from 'react-native';
@@ -118,7 +118,7 @@ const Shadow = styled.View(
 
 /** The Radio is a type of selection control that allows the user to select a
  * single option from a list.  */
-const RadioGroupRadio = ({ value, disabled, ...rest }) => {
+const RadioGroupRadio = forwardRef(({ value, disabled, ...rest }, ref) => {
   const { onChange, small, selectedValue, ...context } = useContext(
     RadioGroupContext,
   );
@@ -130,6 +130,7 @@ const RadioGroupRadio = ({ value, disabled, ...rest }) => {
 
   return (
     <TouchableWithoutFeedback
+      ref={ref}
       onPressIn={() => {
         togglePressing(true);
       }}
@@ -153,7 +154,7 @@ const RadioGroupRadio = ({ value, disabled, ...rest }) => {
       </RadioMark>
     </TouchableWithoutFeedback>
   );
-};
+});
 
 RadioGroupRadio.displayName = 'RadioGroup.Radio';
 

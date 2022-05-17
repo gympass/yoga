@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { forwardRef, useContext } from 'react';
 import { string, oneOfType, number } from 'prop-types';
 import styled from 'styled-components';
 
@@ -97,7 +97,7 @@ const ButtonWrapper = styled.div`
 
 /** Radio group allows user to select one option from a set of options. Use
 value on group to set the selected option. */
-const RadioGroupButton = ({ children, value, ...rest }) => {
+const RadioGroupButton = forwardRef(({ children, value, ...rest }, ref) => {
   const { name, onChange, small, selectedValue, ...context } = useContext(
     RadioGroupContext,
   );
@@ -106,7 +106,7 @@ const RadioGroupButton = ({ children, value, ...rest }) => {
   const checked = inputValue === selectedValue;
 
   return (
-    <ButtonWrapper>
+    <ButtonWrapper ref={ref}>
       <Button {...{ small, checked }}>
         <HiddenInput
           type="radio"
@@ -121,7 +121,7 @@ const RadioGroupButton = ({ children, value, ...rest }) => {
       </Button>
     </ButtonWrapper>
   );
-};
+});
 
 RadioGroupButton.displayName = 'RadioGroup.Button';
 
