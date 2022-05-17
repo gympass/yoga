@@ -3,11 +3,16 @@ title: 'Menu'
 metaTitle: 'Menu'
 metaDescription: 'Menu Component'
 ---
+
+import { Link as GatsbyLink } from 'gatsby';
+
 # Menu
 
 ## Reference
 
-Gympass `<Menu />` displays a menu to the user—such as a set of actions or functions—triggered by a button.
+Gympass `<Menu />` displays a menu to the user—such as a set of actions or functions—triggered by a <GatsbyLink to="/components/button/default">Button</GatsbyLink> 
+ or <GatsbyLink to="/components/avatar">Avatar</GatsbyLink> 
+ component.
 
 - `<Menu.Action />`
 - `<Menu.List />`
@@ -25,94 +30,105 @@ Gympass `<Menu />` displays a menu to the user—such as a set of actions or fun
 ### Menu basic usage
 
 ```javascript
-    <Box display="flex" flexDirection="column" alignItems="center">
-      <Menu>
-        <Menu.Action>
-          <Button.Icon icon={MenuList} />
-        </Menu.Action>
-      <Menu.List>
-        <Menu.Item>
-          one
-        </Menu.Item>
-        <Menu.Item>
-          two
-        </Menu.Item>
-        <Menu.Item>
-          three
-        </Menu.Item>
-      </Menu.List>  
-      </Menu>  
-    </Box>
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu>
+    <Menu.Action>
+      <Avatar>
+        <Text color="white">YG</Text>
+      </Avatar>    
+    </Menu.Action>
+    <Menu.List>
+      <Menu.Item>
+        My Account
+      </Menu.Item>
+      <Menu.Item>
+        Logout
+      </Menu.Item>
+    </Menu.List>  
+  </Menu>  
+</Box>
 ```
-### Menu with a icon on Menu.Item
+### Menu with icon and active prop
 
 ```javascript
-    <Box display="flex" flexDirection="column" alignItems="center">
-      <Menu>
-        <Menu.Action>
-          <Button.Icon icon={MenuList} />
-        </Menu.Action>
-      <Menu.List>
-        <Menu.Item icon={FlagBrazil}>
-          Brazil
-        </Menu.Item>
-        <Menu.Item icon={FlagUS}>
-          USA
-        </Menu.Item>
-        <Menu.Item icon={FlagPortugal}>
-          Portugal
-        </Menu.Item>
-      </Menu.List>  
-      </Menu>  
-    </Box>
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu>
+    <Menu.Action>
+      <Button.Icon icon={FlagUS} inverted />
+    </Menu.Action>
+    <Menu.List>
+      <Menu.Item icon={FlagBrazil}>
+        Brazil
+      </Menu.Item>
+      <Menu.Item icon={FlagUS} active>
+        USA
+      </Menu.Item>
+      <Menu.Item icon={FlagPortugal}>
+        Portugal
+      </Menu.Item>
+    </Menu.List>  
+  </Menu>  
+</Box>
 ```
-### Menu on active item and disabled
+### Menu with disabled prop
 
 ```javascript
-    <Box display="flex" flexDirection="column" alignItems="center">
-      <Menu>
-        <Menu.Action>
-          <Button>Open menu</Button>
-        </Menu.Action>
-      <Menu.List>
-        <Menu.Item active>
-          one
-        </Menu.Item>
-        <Menu.Item>
-          two
-        </Menu.Item>
-        <Menu.Item disabled>
-          three
-        </Menu.Item>
-      </Menu.List>  
-      </Menu>  
-    </Box>
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu>
+    <Menu.Action>
+        <Button.Text>Open menu</Button.Text>
+    </Menu.Action>
+    <Menu.List>
+      <Menu.Item>
+        one
+      </Menu.Item>
+      <Menu.Item>
+        two
+      </Menu.Item>
+      <Menu.Item disabled>
+        three
+      </Menu.Item>
+    </Menu.List>  
+  </Menu>  
+</Box>
 ```
 ### Menu with href prop
 
 ```javascript
-    <Box display="flex" flexDirection="column" alignItems="center">
-      <Menu>
-        <Menu.Action>
-          <Button.Icon icon={MenuList} />
-        </Menu.Action>
-      <Menu.List>
-        <Menu.Item href="https://www.google.com" target="blank">
-          Google
-        </Menu.Item>
-        <Menu.Item href="https://www.gympass.com" target="blank">
-          Gympass
-        </Menu.Item>
-        <Menu.Item href="https://gympass.github.io/yoga/" target="blank">
-          Yoga
-        </Menu.Item>
-      </Menu.List>  
-      </Menu>  
-    </Box>
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu>
+    <Menu.Action>
+      <Button.Icon icon={Home} />
+    </Menu.Action>
+  <Menu.List>
+    <Menu.Item href="https://www.google.com" target="blank">
+      Google
+    </Menu.Item>
+    <Menu.Item href="https://www.gympass.com" target="blank">
+      Gympass
+    </Menu.Item>
+    <Menu.Item href="https://gympass.github.io/yoga/" target="blank">
+      Yoga
+    </Menu.Item>
+  </Menu.List>  
+  </Menu>  
+</Box>
 ```
 
 ### Props
 
+#### Menu
+
 <PropsTable component="Menu" platform="web" />
 
-  
+#### Menu.Action
+
+<PropsTable component="Menu.Action" platform="web" />
+
+#### Menu.List
+
+<PropsTable component="Menu.List" platform="web" />
+
+#### Menu.Item
+
+<PropsTable component="Menu.Item" platform="web" />
