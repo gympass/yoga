@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { css } from 'styled-components';
 import { string, node } from 'prop-types';
 
@@ -25,7 +25,7 @@ const StyledHeader = styled(Box)`
   `}
 `;
 
-const Header = ({ link, children }) => {
+const Header = forwardRef(({ link, children }, ref) => {
   return (
     <StyledHeader
       as="header"
@@ -34,6 +34,7 @@ const Header = ({ link, children }) => {
       bgColor="white"
       alignItems="center"
       w="100%"
+      ref={ref}
     >
       {link ? (
         <a href={link}>
@@ -45,7 +46,7 @@ const Header = ({ link, children }) => {
       {children}
     </StyledHeader>
   );
-};
+});
 
 Header.propTypes = {
   /** Use link to redirect clicking on the Gympass' logo */
