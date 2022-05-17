@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.31.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.30.0...@gympass/yoga@7.31.0) (2022-05-17)
+
+
+### Features
+
+* **avatar:** add forwardRef to avatar component ([04ad158](https://github.com/Gympass/yoga/commit/04ad1583fd1ed263c60c24fb266576d19eef0484))
+* **avatar:** add forwardRef to avatar component ([f0ba89b](https://github.com/Gympass/yoga/commit/f0ba89b60c32d14af9dd3b9fba85ccc16e3c6cac))
+* **button:** add forwardRef to button component ([e1895db](https://github.com/Gympass/yoga/commit/e1895db1fdf6abda965759949eeba728453d3a88))
+* **button:** add forwardRef to button component ([a5bebfd](https://github.com/Gympass/yoga/commit/a5bebfd82bcb5b584088dc17fe0f4dbc7defe69d))
+
+
+
+
+
 # [7.30.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.29.2...@gympass/yoga@7.30.0) (2022-05-09)
 
 
