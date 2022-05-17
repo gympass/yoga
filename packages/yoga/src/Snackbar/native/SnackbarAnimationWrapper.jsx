@@ -41,20 +41,10 @@ const SnackbarAnimationWrapper = forwardRef(
       }
     }, [childrenRef.current]);
 
-    useEffect(() => {
-      if (childrenHeight) {
-        Animated.timing(translateY, {
-          toValue: 0,
-          duration: 200,
-          easing: Easing.bezier(0.41, 0.09, 0.2, 1),
-          useNativeDriver: true,
-        }).start();
-      }
-    }, [translateY, childrenHeight]);
-
     const openAnimation = () => {
       Animated.spring(translateY, {
         toValue: 0,
+        easing: Easing.bezier(0.41, 0.09, 0.2, 1),
         useNativeDriver: true,
       }).start();
     };
@@ -69,19 +59,7 @@ const SnackbarAnimationWrapper = forwardRef(
       }
     }, [childrenHeight]);
 
-    useImperativeHandle(ref, () => ({
-      open: () => {
-        openAnimation();
-      },
-      close: () => {
-        closeAnimation();
-      },
-      translateY: dy => {
-        translateY.setValue(dy);
-      },
-    }));
-
-    useEffect(() => {
+    const setSnackbarTimeout = () => {
       const timeoutDuration = durationDictionary[duration];
       const shouldCloseOnTimer = childrenHeight && timeoutDuration > 0;
 
@@ -90,9 +68,25 @@ const SnackbarAnimationWrapper = forwardRef(
           closeAnimation();
         }, timeoutDuration);
       }
+    };
 
+    useImperativeHandle(ref, () => ({
+      open: () => {
+        openAnimation();
+        setSnackbarTimeout();
+      },
+      close: () => {
+        closeAnimation();
+        clearTimeout(timeoutRef.current);
+      },
+      translateY: dy => {
+        translateY.setValue(dy);
+      },
+    }));
+
+    useEffect(() => {
       return () => clearTimeout(timeoutRef.current);
-    }, [duration, childrenHeight]);
+    }, []);
 
     return (
       <Animated.View
