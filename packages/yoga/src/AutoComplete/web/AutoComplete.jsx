@@ -1,5 +1,5 @@
 /* eslint react/no-array-index-key: 0 */
-import React, { useState } from 'react';
+import React, { forwardRef, useState } from 'react';
 import Downshift from 'downshift';
 import { arrayOf, string, func, bool, shape } from 'prop-types';
 import styled from 'styled-components';
@@ -142,116 +142,122 @@ const Match = styled.mark`
 `;
 
 /** The autocomplete is a normal input field enhanced by a panel of suggested options. */
-const AutoComplete = ({
-  className,
-  style,
-  full,
-  options,
-  onChange,
-  onClean,
-  onSelect,
-  value,
-  ...props
-}) => {
-  const [userValue, setUserValue] = useState(value);
+const AutoComplete = forwardRef(
+  (
+    {
+      className,
+      style,
+      full,
+      options,
+      onChange,
+      onClean,
+      onSelect,
+      value,
+      ...props
+    },
+    ref,
+  ) => {
+    const [userValue, setUserValue] = useState(value);
 
-  return (
-    <Downshift
-      selectedItem={userValue}
-      onStateChange={changes => {
-        const { selectedItem, inputValue } = changes;
+    return (
+      <Downshift
+        selectedItem={userValue}
+        onStateChange={changes => {
+          const { selectedItem, inputValue } = changes;
 
-        if (selectedItem) {
-          setUserValue(selectedItem);
-          onSelect(selectedItem);
-          onChange(selectedItem);
-        } else if (
-          Object.prototype.hasOwnProperty.call(changes, 'inputValue')
-        ) {
-          setUserValue(inputValue);
-          onChange(inputValue);
-        }
-      }}
-    >
-      {({
-        getInputProps,
-        getItemProps,
-        clearSelection,
-        getMenuProps,
-        getRootProps,
-        highlightedIndex,
-        isOpen,
-        openMenu,
-        inputValue,
-      }) => {
-        const reg = new RegExp(
-          `(${escapeRegExp(inputValue || '').trim() || null})`,
-          'gi',
-        );
+          if (selectedItem) {
+            setUserValue(selectedItem);
+            onSelect(selectedItem);
+            onChange(selectedItem);
+          } else if (
+            Object.prototype.hasOwnProperty.call(changes, 'inputValue')
+          ) {
+            setUserValue(inputValue);
+            onChange(inputValue);
+          }
+        }}
+      >
+        {({
+          getInputProps,
+          getItemProps,
+          clearSelection,
+          getMenuProps,
+          getRootProps,
+          highlightedIndex,
+          isOpen,
+          openMenu,
+          inputValue,
+        }) => {
+          const reg = new RegExp(
+            `(${escapeRegExp(inputValue || '').trim() || null})`,
+            'gi',
+          );
 
-        const suggestionList = options
-          .filter(option => option.match(reg))
-          .sort((first, second) =>
-            first.toLowerCase().indexOf(inputValue) <
-            second.toLowerCase().indexOf(inputValue)
-              ? -1
-              : 1,
-          )
-          .slice(0, 6);
+          const suggestionList = options
+            .filter(option => option.match(reg))
+            .sort((first, second) =>
+              first.toLowerCase().indexOf(inputValue) <
+              second.toLowerCase().indexOf(inputValue)
+                ? -1
+                : 1,
+            )
+            .slice(0, 6);
 
-        const hasSuggestion = isOpen && Boolean(suggestionList.length);
+          const hasSuggestion = isOpen && Boolean(suggestionList.length);
 
-        return (
-          <Wrapper
-            className={className}
-            style={style}
-            full={full}
-            isOpen={hasSuggestion}
-            {...getRootProps()}
-          >
-            <Input
-              {...props}
+          return (
+            <Wrapper
+              className={className}
+              style={style}
               full={full}
-              onClean={cleanable => {
-                onClean(cleanable);
-                clearSelection();
-              }}
-              {...getInputProps({
-                onFocus: () => (inputValue.length ? openMenu() : null),
-              })}
-            />
-            {hasSuggestion && (
-              <List {...getMenuProps()} full={full}>
-                {suggestionList.map((option, optionIndex) => (
-                  <Item
-                    {...getItemProps({
-                      key: `${option}${optionIndex}`,
-                      index: optionIndex,
-                      item: option,
-                      selected: highlightedIndex === optionIndex,
-                    })}
-                  >
-                    {option
-                      .split(reg)
-                      .map((part, index) =>
-                        part.match(reg) ? (
-                          <Match key={index}>{part}</Match>
-                        ) : (
-                          <React.Fragment key={`unmatch-${index}`}>
-                            {part}
-                          </React.Fragment>
-                        ),
-                      )}
-                  </Item>
-                ))}
-              </List>
-            )}
-          </Wrapper>
-        );
-      }}
-    </Downshift>
-  );
-};
+              isOpen={hasSuggestion}
+              {...getRootProps()}
+            >
+              <Input
+                {...props}
+                ref={ref}
+                full={full}
+                onClean={cleanable => {
+                  onClean(cleanable);
+                  clearSelection();
+                }}
+                {...getInputProps({
+                  onFocus: () => (inputValue.length ? openMenu() : null),
+                })}
+              />
+              {hasSuggestion && (
+                <List {...getMenuProps()} full={full}>
+                  {suggestionList.map((option, optionIndex) => (
+                    <Item
+                      {...getItemProps({
+                        key: `${option}${optionIndex}`,
+                        index: optionIndex,
+                        item: option,
+                        selected: highlightedIndex === optionIndex,
+                      })}
+                    >
+                      {option
+                        .split(reg)
+                        .map((part, index) =>
+                          part.match(reg) ? (
+                            <Match key={index}>{part}</Match>
+                          ) : (
+                            <React.Fragment key={`unmatch-${index}`}>
+                              {part}
+                            </React.Fragment>
+                          ),
+                        )}
+                    </Item>
+                  ))}
+                </List>
+              )}
+            </Wrapper>
+          );
+        }}
+      </Downshift>
+    );
+  },
+);
 
 AutoComplete.propTypes = {
   className: string,
