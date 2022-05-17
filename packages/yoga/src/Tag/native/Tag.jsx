@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { oneOf, node, bool } from 'prop-types';
 import { margins } from '@gympass/yoga-system';
@@ -73,11 +73,11 @@ export const StyledText = styled(({ variant, ...rest }) => (
 `;
 
 /** Use Tag component when you want to categorize your content */
-const Tag = ({ children, variant, small, ...props }) => (
-  <StyledTag variant={variant} small={small} {...props}>
+const Tag = forwardRef(({ children, variant, small, ...props }, ref) => (
+  <StyledTag ref={ref} variant={variant} small={small} {...props}>
     <StyledText variant={variant}>{children}</StyledText>
   </StyledTag>
-);
+));
 
 Tag.propTypes = {
   /** style the tag following the theme (success, informative, attention) */

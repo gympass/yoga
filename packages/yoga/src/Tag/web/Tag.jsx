@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { oneOf, node, bool } from 'prop-types';
 import { margins } from '@gympass/yoga-system';
@@ -59,7 +59,7 @@ const StyledTag = styled.div`
 `;
 
 /** Tags should be keywords to categorize or organize an item. */
-const Tag = props => <StyledTag {...props} />;
+const Tag = forwardRef((props, ref) => <StyledTag ref={ref} {...props} />);
 
 Tag.propTypes = {
   /** style the tag following the theme (success, informative, attention) */
