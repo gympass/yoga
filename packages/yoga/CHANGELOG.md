@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.31.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.30.0...@gympass/yoga@7.31.0) (2022-05-17)
+
+
+### Features
+
+* **avatar:** add forwardRef to avatar component ([04ad158](https://github.com/Gympass/yoga/commit/04ad1583fd1ed263c60c24fb266576d19eef0484))
+* **avatar:** add forwardRef to avatar component ([f0ba89b](https://github.com/Gympass/yoga/commit/f0ba89b60c32d14af9dd3b9fba85ccc16e3c6cac))
+* **button:** add forwardRef to button component ([e1895db](https://github.com/Gympass/yoga/commit/e1895db1fdf6abda965759949eeba728453d3a88))
+* **button:** add forwardRef to button component ([a5bebfd](https://github.com/Gympass/yoga/commit/a5bebfd82bcb5b584088dc17fe0f4dbc7defe69d))
+
+
+
+
+
+# [7.30.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.29.2...@gympass/yoga@7.30.0) (2022-05-09)
+
+
+### Bug Fixes
+
+* **checkbox:** fix review ([f691891](https://github.com/Gympass/yoga/commit/f691891fb80a0b4581f86392f1b9d5baf58ba31f))
+
+
+### Features
+
+* **checkbox:** add indeterminate prop ([449a186](https://github.com/Gympass/yoga/commit/449a1862453733bee8a6067f65c126808cdc5f83))
+* **checkbox:** add ref to checkbox ([74a8e29](https://github.com/Gympass/yoga/commit/74a8e29cd78f02a014f3448e7dffaabb4c7fea8f))
+* **checkbox:** add useEffect to inputRef ([ede51b5](https://github.com/Gympass/yoga/commit/ede51b5b854720eb7c9d824b08fbd6634a51ab72))
+
+
+
+
+
 ## [7.29.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.29.1...@gympass/yoga@7.29.2) (2022-05-06)
 
 **Note:** Version bump only for package @gympass/yoga

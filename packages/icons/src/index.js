@@ -52,6 +52,17 @@ import FamilyMember from './svg/family_member.svg';
 import FavoriteFilled from './svg/favorite_filled.svg';
 import Favorite from './svg/favorite.svg';
 import Filter from './svg/filter.svg';
+import FlagArgentina from './svg/flag_argentina.svg';
+import FlagBrazil from './svg/flag_brazil.svg';
+import FlagChile from './svg/flag_chile.svg';
+import FlagGermany from './svg/flag_germany.svg';
+import FlagIreland from './svg/flag_ireland.svg';
+import FlagItaly from './svg/flag_italy.svg';
+import FlagMexico from './svg/flag_mexico.svg';
+import FlagPortugal from './svg/flag_portugal.svg';
+import FlagSpain from './svg/flag_spain.svg';
+import FlagUK from './svg/flag_uk.svg';
+import FlagUS from './svg/flag_us.svg';
 import Google from './svg/google.svg';
 import Headphone from './svg/headphone.svg';
 import Heartbeat from './svg/heartbeat.svg';
@@ -100,6 +111,7 @@ import PlusCircle from './svg/plus_circle.svg';
 import Printer from './svg/printer.svg';
 import QRCodeReader from './svg/qr_code_reader.svg';
 import QRCode from './svg/qr_code.svg';
+import Rectangle from './svg/rectangle.svg';
 import Refresh from './svg/refresh.svg';
 import SearchFilled from './svg/search_filled.svg';
 import Search from './svg/search.svg';
@@ -136,17 +148,6 @@ import Visibility from './svg/visibility.svg';
 import Wallet from './svg/wallet.svg';
 import Whatsapp from './svg/whatsapp.svg';
 import Youtube from './svg/youtube.svg';
-import FlagArgentina from './svg/flag_argentina.svg';
-import FlagBrazil from './svg/flag_brazil.svg';
-import FlagChile from './svg/flag_chile.svg';
-import FlagGermany from './svg/flag_germany.svg';
-import FlagIreland from './svg/flag_ireland.svg';
-import FlagItaly from './svg/flag_italy.svg';
-import FlagMexico from './svg/flag_mexico.svg';
-import FlagPortugal from './svg/flag_portugal.svg';
-import FlagSpain from './svg/flag_spain.svg';
-import FlagUK from './svg/flag_uk.svg';
-import FlagUS from './svg/flag_us.svg';
 
 export {
   Accessibility,
@@ -203,6 +204,17 @@ export {
   FavoriteFilled,
   Favorite,
   Filter,
+  FlagArgentina,
+  FlagBrazil,
+  FlagChile,
+  FlagGermany,
+  FlagIreland,
+  FlagItaly,
+  FlagMexico,
+  FlagPortugal,
+  FlagSpain,
+  FlagUK,
+  FlagUS,
   Google,
   Headphone,
   Heartbeat,
@@ -251,6 +263,7 @@ export {
   Printer,
   QRCodeReader,
   QRCode,
+  Rectangle,
   Refresh,
   SearchFilled,
   Search,
@@ -287,15 +300,4 @@ export {
   Wallet,
   Whatsapp,
   Youtube,
-  FlagArgentina,
-  FlagBrazil,
-  FlagChile,
-  FlagGermany,
-  FlagIreland,
-  FlagItaly,
-  FlagMexico,
-  FlagPortugal,
-  FlagSpain,
-  FlagUK,
-  FlagUS,
 };
