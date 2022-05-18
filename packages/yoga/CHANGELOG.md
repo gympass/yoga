@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.32.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.31.0...@gympass/yoga@7.32.0) (2022-05-18)
+
+
+### Features
+
+* **banner:** add and implement web component ([5653102](https://github.com/Gympass/yoga/commit/565310267fbd8ea1387df50e023f505db2abb516))
+* **banner:** add foraward ref for both native and web components ([f2a44f6](https://github.com/Gympass/yoga/commit/f2a44f6c39ae2454556963d69392772bf8016f4a))
+* **banner:** add icon to the component ([96ad1c1](https://github.com/Gympass/yoga/commit/96ad1c11ef4cf1507f0d6c8d8eedf4c5a15c4b2b))
+* **banner:** add primary and secondary action buttons to native component ([b4194b1](https://github.com/Gympass/yoga/commit/b4194b191f9c640f6216f5f2e7ea7151b4cb1e69))
+* **banner:** add primary and secondary action buttons to web component ([244c19f](https://github.com/Gympass/yoga/commit/244c19f26db4cef65d5e237c5faa5964d566ef82))
+* **banner:** add yoga system borders support ([8351dca](https://github.com/Gympass/yoga/commit/8351dcae321e92f30b8e807cbe4b98ccbccf63ea))
+* **banner:** create and implement the component ([104313b](https://github.com/Gympass/yoga/commit/104313b53270ad1ba53311e4b2b43cc0334867e2))
+
+
+
+
+
 # [7.31.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.30.0...@gympass/yoga@7.31.0) (2022-05-17)
 
 
