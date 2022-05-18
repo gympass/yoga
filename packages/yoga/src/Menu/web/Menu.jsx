@@ -2,7 +2,11 @@ import React from 'react';
 import { Root as MenuRoot } from '@radix-ui/react-dropdown-menu';
 import { node } from 'prop-types';
 
-const Menu = ({ children }) => <MenuRoot modal={false}>{children}</MenuRoot>;
+const Menu = ({ children }) => (
+  <MenuRoot sideOffset={5} modal={false}>
+    {children}
+  </MenuRoot>
+);
 
 Menu.propTypes = {
   /** The children necessary */

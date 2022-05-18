@@ -22,14 +22,14 @@ const StyledMenuList = styled(MenuListRoot)`
     max-width: ${menu.width.max}px;
     border-radius: ${menu.border.radius}px;
 
-    background-color: ${menu.backgroundColor.white}; 
+    background-color: ${menu.backgroundColor.white};
     box-shadow: 0px 2px 6px rgba(152, 152, 166, 0.25);
   `}
 `;
 
 const MenuList = forwardRef(({ children }, ref) => {
   return (
-    <StyledMenuList asChild>
+    <StyledMenuList asChild sideOffset={2} alignOffset={-5}>
       <Box as="ul" ref={ref}>
         {children}
       </Box>

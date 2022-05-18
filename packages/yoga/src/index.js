@@ -30,6 +30,7 @@ import Dialog from './Dialog';
 import Divider from './Divider';
 import Header from './Header';
 import Menu from './Menu';
+import Banner from './Banner';
 
 export {
   ThemeProvider,
@@ -68,4 +69,5 @@ export {
   Divider,
   Header,
   Menu,
+  Banner,
 };
