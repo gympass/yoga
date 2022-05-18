@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { func, arrayOf, string, shape, oneOfType, number } from 'prop-types';
-import { Picker } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
 import { Button } from '@gympass/yoga';
 
-const PickerStyled = styled.Picker`
+const PickerStyled = styled(Picker)`
   width: 100%;
   height: 190px;
 `;
@@ -21,9 +21,9 @@ const PickerActions = styled.View`
     justify-content: space-between;
 
     padding:
-      ${dropdown.backdrop.content.actions.padding.top}px 
-      ${dropdown.backdrop.content.actions.padding.right}px 
-      ${dropdown.backdrop.content.actions.padding.bottom}px 
+      ${dropdown.backdrop.content.actions.padding.top}px
+      ${dropdown.backdrop.content.actions.padding.right}px
+      ${dropdown.backdrop.content.actions.padding.bottom}px
       ${dropdown.backdrop.content.actions.padding.left}px;
   `}
 `;
