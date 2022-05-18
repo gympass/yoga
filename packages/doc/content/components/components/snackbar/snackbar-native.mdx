@@ -1,5 +1,7 @@
 ### Usage
 
+#### Snackbar
+
 ```javascript type=expo state=true
 const { createRef } = React;
 
@@ -17,8 +19,8 @@ const App = () => {
       <Snackbar
         variant="success"
         icon={CheckedFull}
-        message="Lorem Ipsum is simply dummy text of the printing"
-        actionLabel="See details"
+        message="Feedback message."
+        actionLabel="Action"
         onAction={() => {}}
         duration="default"
         bottomOffset={0}
@@ -32,7 +34,5 @@ export default App;
 ```
 
 ### Props
-
-#### Snackbar
 
 <PropsTable component="Snackbar" platform="native" />

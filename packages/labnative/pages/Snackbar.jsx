@@ -21,10 +21,10 @@ const SnackbarPage = () => {
       <Snackbar
         variant="success"
         icon={CheckedFull}
-        message="Lorem Ipsum is simply dummy text of the printing"
+        message="Lorem Ipsum is simply dummy text of the printing and types."
         actionLabel="See details"
         onAction={() => {}}
-        duration="indefinite"
+        duration="default"
         bottomOffset={0}
         ref={snackbarRef}
       />
