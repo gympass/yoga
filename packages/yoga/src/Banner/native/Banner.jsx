@@ -77,7 +77,7 @@ const Banner = ({
       <Text.Small flex={1} marginVertical="xxsmall">
         {message}
       </Text.Small>
-      {!!primaryButton && !secondaryButton && (
+      {primaryButton && !secondaryButton && (
         <BannerActionButton button={primaryButton} marginLeft="xxsmall" />
       )}
     </Box>
