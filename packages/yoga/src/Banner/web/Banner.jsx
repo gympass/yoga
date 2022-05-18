@@ -75,7 +75,7 @@ const Banner = forwardRef((props, ref) => {
 
   return (
     <StyledBanner ref={ref} variant={variant} {...rest}>
-      <Box display="flex" flex={1} flexDirection="row" alignItems="center">
+      <Box display="flex" flex={1} alignItems="center">
         {icon && (
           <Icon
             as={icon}
@@ -96,7 +96,6 @@ const Banner = forwardRef((props, ref) => {
           display="flex"
           flex={1}
           justifyContent="flex-end"
-          flexDirection="row"
           marginBottom="xxsmall"
         >
           <BannerActionButton button={primaryButton} marginRight="xxxsmall" />

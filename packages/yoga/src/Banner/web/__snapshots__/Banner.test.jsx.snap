@@ -9,9 +9,6 @@ exports[`<Banner /> should match snapshot 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -183,9 +180,6 @@ exports[`<Banner /> should match snapshot with button 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -259,9 +253,6 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -386,9 +377,6 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -573,9 +561,6 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -591,9 +576,6 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
