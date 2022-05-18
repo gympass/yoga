@@ -1,4 +1,4 @@
-import React, { createRef, forwardRef, useImperativeHandle } from 'react';
+import React, { forwardRef, useImperativeHandle, useRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { string, oneOf, func, elementType, number } from 'prop-types';
 
@@ -63,7 +63,7 @@ const Snackbar = forwardRef(
     },
     ref,
   ) => {
-    const wrapperRef = createRef();
+    const wrapperRef = useRef();
 
     useImperativeHandle(ref, () => ({
       open: () => {
