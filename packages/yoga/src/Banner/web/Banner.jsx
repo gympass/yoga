@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import styled from 'styled-components';
 import { borders, margins, paddings } from '@gympass/yoga-system';
@@ -63,40 +63,49 @@ BannerActionButton.propTypes = {
 };
 
 /** A banner is a component that displays a prominent message. It can have related action buttons on it or not. */
-const Banner = ({
-  icon,
-  variant,
-  message,
-  primaryButton,
-  secondaryButton,
-  ...props
-}) => (
-  <StyledBanner variant={variant} {...props}>
-    <Box display="flex" flex={1} flexDirection="row" alignItems="center">
-      {icon && (
-        <Icon as={icon} size="medium" fill="secondary" marginRight="xxsmall" />
-      )}
-      <Text.Small flex={1} marginVertical="xxsmall">
-        {message}
-      </Text.Small>
-      {primaryButton && !secondaryButton && (
-        <BannerActionButton button={primaryButton} marginLeft="xxsmall" />
-      )}
-    </Box>
-    {primaryButton && secondaryButton && (
-      <Box
-        display="flex"
-        flex={1}
-        justifyContent="flex-end"
-        flexDirection="row"
-        marginBottom="xxsmall"
-      >
-        <BannerActionButton button={primaryButton} marginRight="xxxsmall" />
-        <BannerActionButton button={secondaryButton} />
+const Banner = forwardRef((props, ref) => {
+  const {
+    icon,
+    variant,
+    message,
+    primaryButton,
+    secondaryButton,
+    ...rest
+  } = props;
+
+  return (
+    <StyledBanner ref={ref} variant={variant} {...rest}>
+      <Box display="flex" flex={1} flexDirection="row" alignItems="center">
+        {icon && (
+          <Icon
+            as={icon}
+            size="medium"
+            fill="secondary"
+            marginRight="xxsmall"
+          />
+        )}
+        <Text.Small flex={1} marginVertical="xxsmall">
+          {message}
+        </Text.Small>
+        {primaryButton && !secondaryButton && (
+          <BannerActionButton button={primaryButton} marginLeft="xxsmall" />
+        )}
       </Box>
-    )}
-  </StyledBanner>
-);
+      {primaryButton && secondaryButton && (
+        <Box
+          display="flex"
+          flex={1}
+          justifyContent="flex-end"
+          flexDirection="row"
+          marginBottom="xxsmall"
+        >
+          <BannerActionButton button={primaryButton} marginRight="xxxsmall" />
+          <BannerActionButton button={secondaryButton} />
+        </Box>
+      )}
+    </StyledBanner>
+  );
+});
 
 const BannerActionButtonType = shape({
   label: string.isRequired,
