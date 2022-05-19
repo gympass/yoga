@@ -21,6 +21,8 @@ Gympass `<Menu />` displays a menu to the user—such as a set of actions or fun
 ## Features
 
 - Full keyboard navigation.
+- Support on MouseHouver
+- Support to align Menu.List
 - Can be active or disabled Menu.Item.
 - Active is managed.
 - Icon support on Menu.Item
@@ -48,6 +50,27 @@ Gympass `<Menu />` displays a menu to the user—such as a set of actions or fun
   </Menu>  
 </Box>
 ```
+
+### Menu basic usage with a click option
+
+```javascript
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu onMouseHover={false}>
+    <Menu.Action>
+      <Button.Text>Click to open menu</Button.Text>
+    </Menu.Action>
+    <Menu.List>
+      <Menu.Item>
+        My Account
+      </Menu.Item>
+      <Menu.Item>
+        Logout
+      </Menu.Item>
+    </Menu.List>  
+  </Menu>  
+</Box>
+```
+
 ### Menu with icon and active prop
 
 ```javascript
@@ -70,13 +93,37 @@ Gympass `<Menu />` displays a menu to the user—such as a set of actions or fun
   </Menu>  
 </Box>
 ```
+
+### Menu with align align: 'start | center | end'
+
+```javascript
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu>
+    <Menu.Action>
+      <Button.Icon icon={Home} />
+    </Menu.Action>
+  <Menu.List align="end">
+    <Menu.Item>
+      Item 1
+    </Menu.Item>
+    <Menu.Item>
+      Item 2
+    </Menu.Item>
+    <Menu.Item>
+      Item 3
+    </Menu.Item>
+  </Menu.List>  
+  </Menu>  
+</Box>
+```
+
 ### Menu with disabled prop
 
 ```javascript
 <Box display="flex" flexDirection="column" alignItems="center">
   <Menu>
     <Menu.Action>
-        <Button.Text>Open menu</Button.Text>
+        <Button.Text>Hover to open menu</Button.Text>
     </Menu.Action>
     <Menu.List>
       <Menu.Item>

@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { Content as MenuListRoot } from '@radix-ui/react-dropdown-menu';
-import { node } from 'prop-types';
+import { node, string } from 'prop-types';
 
 import Box from '../../Box';
 
@@ -27,9 +27,9 @@ const StyledMenuList = styled(MenuListRoot)`
   `}
 `;
 
-const MenuList = forwardRef(({ children }, ref) => {
+const MenuList = forwardRef(({ children, align }, ref) => {
   return (
-    <StyledMenuList asChild sideOffset={2} alignOffset={-5}>
+    <StyledMenuList asChild sideOffset={2} alignOffset={-5} align={align}>
       <Box as="ul" ref={ref}>
         {children}
       </Box>
@@ -40,6 +40,12 @@ const MenuList = forwardRef(({ children }, ref) => {
 MenuList.propTypes = {
   /** The children necessary */
   children: node.isRequired,
+  /** Align Menu is a alignement that menu will appear on the screen | start | center | end   */
+  align: string,
+};
+
+MenuList.defaultProps = {
+  align: 'start',
 };
 
 MenuList.displayName = 'Menu.List';
