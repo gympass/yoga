@@ -49,15 +49,22 @@ const SnackbarAnimationWrapper = forwardRef(
       }).start();
     };
 
-    const closeAnimation = useCallback(() => {
-      Animated.spring(translateY, {
-        toValue: childrenHeight,
-        useNativeDriver: true,
-      }).start();
-      if (onSnackbarClose) {
-        onSnackbarClose();
-      }
-    }, [childrenHeight]);
+    const closeAnimation = useCallback(
+      (callback = () => {}) => {
+        Animated.spring(translateY, {
+          toValue: childrenHeight,
+          useNativeDriver: true,
+        }).start(({ finished }) => {
+          if (finished) {
+            callback();
+          }
+        });
+        if (onSnackbarClose) {
+          onSnackbarClose();
+        }
+      },
+      [childrenHeight],
+    );
 
     const setSnackbarTimeout = () => {
       const timeoutDuration = durationDictionary[duration];
@@ -76,8 +83,8 @@ const SnackbarAnimationWrapper = forwardRef(
         openAnimation();
         setSnackbarTimeout();
       },
-      close: () => {
-        closeAnimation();
+      close: (callback = () => {}) => {
+        closeAnimation(callback);
         clearTimeout(timeoutRef.current);
       },
       translateY: dy => {

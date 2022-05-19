@@ -1,4 +1,10 @@
-import React, { forwardRef, useImperativeHandle, useRef } from 'react';
+import React, {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useRef,
+  useState,
+} from 'react';
 import styled, { withTheme } from 'styled-components';
 import { string, oneOf, func, elementType, number } from 'prop-types';
 
@@ -65,6 +71,8 @@ const Snackbar = forwardRef(
   ) => {
     const wrapperRef = useRef();
 
+    const [currentMessage, setCurrentMessage] = useState(message);
+
     useImperativeHandle(ref, () => ({
       open: () => {
         wrapperRef.current.open();
@@ -73,6 +81,15 @@ const Snackbar = forwardRef(
         wrapperRef.current.close();
       },
     }));
+
+    useEffect(() => {
+      if (currentMessage !== message) {
+        wrapperRef.current.close(() => {
+          setCurrentMessage(currentMessage);
+          wrapperRef.current.open();
+        });
+      }
+    }, [message]);
 
     const handlePanResponderRelease = (_evt, gestureState) => {
       if (gestureState.dy > SWIPE_THRESHOLD) {
