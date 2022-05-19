@@ -85,7 +85,7 @@ const Snackbar = forwardRef(
     useEffect(() => {
       if (currentMessage !== message) {
         wrapperRef.current.close(() => {
-          setCurrentMessage(currentMessage);
+          setCurrentMessage(message);
           wrapperRef.current.open();
         });
       }
@@ -147,7 +147,7 @@ const Snackbar = forwardRef(
             marginVertical="xxxsmall"
             numberOfLines={2}
           >
-            {message}
+            {currentMessage}
           </Text>
           {actionLabel && onAction && (
             <Box
