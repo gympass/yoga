@@ -1,13 +1,12 @@
 import React, {
   createRef,
   forwardRef,
-  useCallback,
   useEffect,
   useImperativeHandle,
   useRef,
   useState,
 } from 'react';
-import { Animated, useWindowDimensions, Easing, View } from 'react-native';
+import { Animated, useWindowDimensions, View } from 'react-native';
 import { func, node, oneOf } from 'prop-types';
 
 const durationDictionary = {
@@ -29,44 +28,33 @@ const SnackbarAnimationWrapper = forwardRef(
 
     const childrenRef = createRef();
 
-    useEffect(() => {
-      if (childrenRef.current) {
-        childrenRef.current.measureLayout(
-          childrenRef.current,
-          (_, __, ___, height) => {
-            setChildrenHeight(height);
-            translateY.setValue(height);
-          },
-        );
-      }
-    }, [childrenRef.current]);
-
     const openAnimation = () => {
       Animated.spring(translateY, {
         toValue: 0,
-        easing: Easing.bezier(0.41, 0.09, 0.2, 1),
+        bounciness: 0,
         useNativeDriver: true,
       }).start();
     };
 
-    const closeAnimation = useCallback(
-      (callback = () => {}) => {
+    const closeAnimation = callback => {
+      if (childrenHeight) {
         Animated.spring(translateY, {
           toValue: childrenHeight,
+          bounciness: 0,
           useNativeDriver: true,
         }).start(({ finished }) => {
-          if (finished) {
+          if (finished && callback) {
             callback();
           }
         });
+
         if (onSnackbarClose) {
           onSnackbarClose();
         }
-      },
-      [childrenHeight],
-    );
+      }
+    };
 
-    const setSnackbarTimeout = () => {
+    const setupSnackbarTimeout = () => {
       const timeoutDuration = durationDictionary[duration];
       const shouldCloseOnTimer = childrenHeight && timeoutDuration > 0;
 
@@ -78,23 +66,29 @@ const SnackbarAnimationWrapper = forwardRef(
       }
     };
 
+    const openSnackbar = () => {
+      openAnimation();
+      setupSnackbarTimeout();
+    };
+
+    const closeSnackbar = callback => {
+      closeAnimation(callback);
+      clearTimeout(timeoutRef.current);
+    };
+
     useImperativeHandle(ref, () => ({
       open: () => {
-        openAnimation();
-        setSnackbarTimeout();
+        openSnackbar();
       },
-      close: (callback = () => {}) => {
-        closeAnimation(callback);
-        clearTimeout(timeoutRef.current);
+      close: callback => {
+        closeSnackbar(callback);
       },
       translateY: dy => {
         translateY.setValue(dy);
       },
     }));
 
-    useEffect(() => {
-      return () => clearTimeout(timeoutRef.current);
-    }, []);
+    useEffect(() => clearTimeout(timeoutRef.current));
 
     return (
       <Animated.View
@@ -110,7 +104,19 @@ const SnackbarAnimationWrapper = forwardRef(
           },
         ]}
       >
-        <View ref={childrenRef}>{children}</View>
+        <View
+          ref={childrenRef}
+          onLayout={({
+            nativeEvent: {
+              layout: { height },
+            },
+          }) => {
+            setChildrenHeight(height);
+            translateY.setValue(height);
+          }}
+        >
+          {children}
+        </View>
       </Animated.View>
     );
   },

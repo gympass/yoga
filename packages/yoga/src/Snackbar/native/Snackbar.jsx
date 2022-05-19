@@ -54,117 +54,112 @@ const SnackbarContainer = styled.View`
  *
  * For native, the `Snackbar` may have an icon and a custom action.
  */
-const Snackbar = forwardRef(
-  (
-    {
-      icon,
-      message,
-      actionLabel,
-      onAction,
-      variant,
-      onSnackbarClose,
-      duration,
-      bottomOffset,
-      ...props
+const Snackbar = forwardRef((props, ref) => {
+  const {
+    icon,
+    message,
+    actionLabel,
+    onAction,
+    variant,
+    onSnackbarClose,
+    duration,
+    bottomOffset,
+    ...rest
+  } = props;
+  const wrapperRef = useRef();
+
+  const [currentMessage, setCurrentMessage] = useState();
+
+  useImperativeHandle(ref, () => ({
+    open: () => {
+      wrapperRef.current.open();
     },
-    ref,
-  ) => {
-    const wrapperRef = useRef();
-
-    const [currentMessage, setCurrentMessage] = useState(message);
-
-    useImperativeHandle(ref, () => ({
-      open: () => {
-        wrapperRef.current.open();
-      },
-      close: () => {
-        wrapperRef.current.close();
-      },
-    }));
-
-    useEffect(() => {
-      if (currentMessage !== message) {
-        wrapperRef.current.close(() => {
-          setCurrentMessage(message);
-          wrapperRef.current.open();
-        });
-      }
-    }, [message]);
-
-    const handlePanResponderRelease = (_evt, gestureState) => {
-      if (gestureState.dy > SWIPE_THRESHOLD) {
-        wrapperRef.current.close();
-      } else {
-        wrapperRef.current.open();
-      }
-    };
-
-    const panResponder = PanResponder.create({
-      onPanResponderMove: (_, gestureState) => {
-        if (gestureState.dy > 0) {
-          wrapperRef.current.translateY(gestureState.dy);
-        }
-      },
-      onPanResponderRelease: handlePanResponderRelease,
-      onPanResponderTerminate: handlePanResponderRelease,
-      onStartShouldSetPanResponder: () => true,
-      onMoveShouldSetPanResponder: (_, gestureState) => {
-        return !(gestureState.dy <= 2 && gestureState.dy >= -2);
-      },
-      onMoveShouldSetPanResponderCapture: () => true,
-      onPanResponderTerminationRequest: () => true,
-      onShouldBlockNativeResponder: () => true,
-    });
-
-    const handleOnAction = () => {
+    close: () => {
       wrapperRef.current.close();
-      onAction();
-    };
+    },
+  }));
 
-    return (
-      <SnackbarAnimationWrapper
-        onSnackbarClose={onSnackbarClose}
-        duration={duration}
-        ref={wrapperRef}
+  useEffect(() => {
+    if (currentMessage && currentMessage !== message) {
+      wrapperRef.current.close(() => {
+        setCurrentMessage(message);
+        wrapperRef.current.open();
+      });
+    } else {
+      setCurrentMessage(message);
+    }
+  }, [message]);
+
+  const handlePanResponderRelease = (_evt, gestureState) => {
+    if (gestureState.dy > SWIPE_THRESHOLD) {
+      wrapperRef.current.close();
+    } else {
+      wrapperRef.current.open();
+    }
+  };
+
+  const panResponder = PanResponder.create({
+    onPanResponderMove: (_, gestureState) => {
+      if (gestureState.dy > 0) {
+        wrapperRef.current.translateY(gestureState.dy);
+      }
+    },
+    onPanResponderRelease: handlePanResponderRelease,
+    onPanResponderTerminate: handlePanResponderRelease,
+    onStartShouldSetPanResponder: () => true,
+    onMoveShouldSetPanResponder: (_, gestureState) => {
+      return !(gestureState.dy <= 2 && gestureState.dy >= -2);
+    },
+    onMoveShouldSetPanResponderCapture: () => true,
+    onPanResponderTerminationRequest: () => true,
+    onShouldBlockNativeResponder: () => true,
+  });
+
+  const handleOnAction = () => {
+    wrapperRef.current.close();
+    onAction();
+  };
+
+  if (!message) return null;
+
+  return (
+    <SnackbarAnimationWrapper
+      onSnackbarClose={onSnackbarClose}
+      duration={duration}
+      ref={wrapperRef}
+    >
+      <SnackbarContainer
+        variant={variant}
+        bottomOffset={bottomOffset}
+        {...rest}
+        {...panResponder.panHandlers}
       >
-        <SnackbarContainer
-          variant={variant}
-          bottomOffset={bottomOffset}
-          {...props}
-          {...panResponder.panHandlers}
+        {icon && (
+          <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
+        )}
+        <Text
+          flex={1}
+          fontSize="small"
+          marginVertical="xxxsmall"
+          numberOfLines={2}
         >
-          {icon && (
-            <Icon
-              as={icon}
-              fill="secondary"
-              size="large"
-              marginRight="xxsmall"
-            />
-          )}
-          <Text
-            flex={1}
-            fontSize="small"
-            marginVertical="xxxsmall"
-            numberOfLines={2}
+          {currentMessage}
+        </Text>
+        {actionLabel && onAction && (
+          <Box
+            as={Button.Text}
+            small
+            secondary
+            marginLeft="xxsmall"
+            onPress={handleOnAction}
           >
-            {currentMessage}
-          </Text>
-          {actionLabel && onAction && (
-            <Box
-              as={Button.Text}
-              small
-              secondary
-              marginLeft="xxsmall"
-              onPress={handleOnAction}
-            >
-              {actionLabel}
-            </Box>
-          )}
-        </SnackbarContainer>
-      </SnackbarAnimationWrapper>
-    );
-  },
-);
+            {actionLabel}
+          </Box>
+        )}
+      </SnackbarContainer>
+    </SnackbarAnimationWrapper>
+  );
+});
 
 Snackbar.propTypes = {
   /** The style variant change the color of the component, it may be "success", "informative" or "attention". */
@@ -172,7 +167,7 @@ Snackbar.propTypes = {
   /** Can be any icon of yoga-icons. */
   icon: elementType,
   /** The message shown when snackbar is opened. The maximum number of lines is two. */
-  message: string.isRequired,
+  message: string,
   /** Label for a custom action. */
   actionLabel: string,
   /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
@@ -188,6 +183,7 @@ Snackbar.propTypes = {
 Snackbar.defaultProps = {
   variant: 'success',
   icon: undefined,
+  message: '',
   actionLabel: undefined,
   onAction: undefined,
   onSnackbarClose: undefined,
