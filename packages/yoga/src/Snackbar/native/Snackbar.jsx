@@ -117,7 +117,9 @@ const Snackbar = forwardRef((props, ref) => {
 
   const handleOnAction = () => {
     wrapperRef.current.close();
-    onAction();
+    if (onAction) {
+      onAction();
+    }
   };
 
   if (!message) return null;
@@ -145,7 +147,7 @@ const Snackbar = forwardRef((props, ref) => {
         >
           {currentMessage}
         </Text>
-        {actionLabel && onAction && (
+        {actionLabel && (
           <Box
             as={Button.Text}
             small
