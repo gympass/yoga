@@ -219,11 +219,7 @@ describe('<Snackbar />', () => {
       );
     };
 
-    const { container, getByText, getByTestId } = render(<Component />);
-
-    fireEvent.layout(getByTestId('snackbar-children-view'), {
-      nativeEvent: { layout: { height: '400' } },
-    });
+    const { container, getByText } = render(<Component />);
 
     fireEvent.press(getByText('Tap to open snackbar'));
 
