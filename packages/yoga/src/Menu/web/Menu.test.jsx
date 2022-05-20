@@ -127,4 +127,64 @@ describe('<Menu />', () => {
 
     expect(container).toMatchSnapshot();
   });
+  it('should match snapshot Menu with a onMouseHover props false', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Menu onMouseHover={false}>
+          <Menu.Action>
+            <Button.Icon icon={MenuList} />
+          </Menu.Action>
+          <Menu.List>
+            <Menu.Item icon={HomeFilled} disabled>
+              Item 1
+            </Menu.Item>
+            <Menu.Item>Item 2</Menu.Item>
+            <Menu.Item>Item 3</Menu.Item>
+          </Menu.List>
+        </Menu>
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+  it('should match snapshot Menu with an align props start', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Menu>
+          <Menu.Action>
+            <Button.Icon icon={MenuList} />
+          </Menu.Action>
+          <Menu.List align="start">
+            <Menu.Item icon={HomeFilled} disabled>
+              Item 1
+            </Menu.Item>
+            <Menu.Item>Item 2</Menu.Item>
+            <Menu.Item>Item 3</Menu.Item>
+          </Menu.List>
+        </Menu>
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+  it('should match snapshot Menu with an align props end', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Menu>
+          <Menu.Action>
+            <Button.Icon icon={MenuList} />
+          </Menu.Action>
+          <Menu.List align="end">
+            <Menu.Item icon={HomeFilled} disabled>
+              Item 1
+            </Menu.Item>
+            <Menu.Item>Item 2</Menu.Item>
+            <Menu.Item>Item 3</Menu.Item>
+          </Menu.List>
+        </Menu>
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });

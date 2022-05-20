@@ -15,7 +15,8 @@ const StyledMenuList = styled(MenuListRoot)`
         components: { menu },
       },
     },
-  }) => `
+  }) => {
+    return `
     margin: ${menu.margin.default}px 0;
     padding: 0;
     min-width: ${menu.width.min}px;
@@ -24,7 +25,8 @@ const StyledMenuList = styled(MenuListRoot)`
 
     background-color: ${menu.backgroundColor.white};
     box-shadow: 0px 2px 6px rgba(152, 152, 166, 0.25);
-  `}
+  `;
+  }}
 `;
 
 const MenuList = forwardRef(({ children, align }, ref) => {
