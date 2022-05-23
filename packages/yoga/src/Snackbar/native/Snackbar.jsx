@@ -68,7 +68,13 @@ const Snackbar = forwardRef((props, ref) => {
   } = props;
   const wrapperRef = useRef();
 
-  const [currentMessage, setCurrentMessage] = useState();
+  const [currentProps, setCurrentProps] = useState({
+    icon,
+    message,
+    actionLabel,
+    onAction,
+    variant,
+  });
 
   useImperativeHandle(ref, () => ({
     open: () => {
@@ -80,15 +86,27 @@ const Snackbar = forwardRef((props, ref) => {
   }));
 
   useEffect(() => {
-    if (currentMessage && currentMessage !== message) {
+    if (wrapperRef.current && currentProps.message) {
       wrapperRef.current.close(() => {
-        setCurrentMessage(message);
+        setCurrentProps({
+          icon,
+          message,
+          actionLabel,
+          onAction,
+          variant,
+        });
         wrapperRef.current.open();
       });
     } else {
-      setCurrentMessage(message);
+      setCurrentProps({
+        icon,
+        message,
+        actionLabel,
+        onAction,
+        variant,
+      });
     }
-  }, [message]);
+  }, [icon, message, actionLabel, onAction, variant]);
 
   const handlePanResponderRelease = (_evt, gestureState) => {
     if (gestureState.dy > SWIPE_THRESHOLD) {
@@ -117,12 +135,10 @@ const Snackbar = forwardRef((props, ref) => {
 
   const handleOnAction = () => {
     wrapperRef.current.close();
-    if (onAction) {
-      onAction();
+    if (currentProps.onAction) {
+      currentProps.onAction();
     }
   };
-
-  if (!message) return null;
 
   return (
     <SnackbarAnimationWrapper
@@ -131,13 +147,18 @@ const Snackbar = forwardRef((props, ref) => {
       ref={wrapperRef}
     >
       <SnackbarContainer
-        variant={variant}
+        variant={currentProps.variant}
         bottomOffset={bottomOffset}
         {...rest}
         {...panResponder.panHandlers}
       >
-        {icon && (
-          <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
+        {currentProps.icon && (
+          <Icon
+            as={currentProps.icon}
+            fill="secondary"
+            size="large"
+            marginRight="xxsmall"
+          />
         )}
         <Text
           flex={1}
@@ -145,9 +166,9 @@ const Snackbar = forwardRef((props, ref) => {
           marginVertical="xxxsmall"
           numberOfLines={2}
         >
-          {currentMessage}
+          {currentProps.message}
         </Text>
-        {actionLabel && (
+        {currentProps.actionLabel && (
           <Box
             as={Button.Text}
             small
@@ -155,7 +176,7 @@ const Snackbar = forwardRef((props, ref) => {
             marginLeft="xxsmall"
             onPress={handleOnAction}
           >
-            {actionLabel}
+            {currentProps.actionLabel}
           </Box>
         )}
       </SnackbarContainer>
