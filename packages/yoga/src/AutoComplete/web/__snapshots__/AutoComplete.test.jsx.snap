@@ -114,8 +114,8 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   border-color: #D7D7E0;
 }
 
-.c2:hover,
-.c2:focus-within {
+false .c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -338,8 +338,8 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   border-color: #D7D7E0;
 }
 
-.c2:hover,
-.c2:focus-within {
+false .c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -583,8 +583,8 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   border-color: #231B22;
 }
 
-.c2:hover,
-.c2:focus-within {
+false .c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -959,8 +959,8 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   border-color: #231B22;
 }
 
-.c2:hover,
-.c2:focus-within {
+false .c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 

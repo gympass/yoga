@@ -114,8 +114,8 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   border-color: #D7D7E0;
 }
 
-.c3:hover,
-.c3:focus-within {
+false .c3:hover:not(:disabled),
+.c3:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -399,12 +399,12 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
+  border-color: #D7D7E0;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
-  border-color: #D7D7E0;
 }
 
 .c6 {
@@ -693,8 +693,8 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   border-color: #D7D7E0;
 }
 
-.c3:hover,
-.c3:focus-within {
+false .c3:hover:not(:disabled),
+.c3:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -999,12 +999,12 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   border-style: solid;
   border-color: #D7D7E0;
   border-color: #231B22;
+  border-color: #D7D7E0;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
-  border-color: #D7D7E0;
 }
 
 .c6 {
@@ -1339,8 +1339,8 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   border-color: #231B22;
 }
 
-.c3:hover,
-.c3:focus-within {
+false .c3:hover:not(:disabled),
+.c3:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
