@@ -1,5 +1,4 @@
 import React, {
-  createRef,
   forwardRef,
   useEffect,
   useImperativeHandle,
@@ -26,7 +25,7 @@ const SnackbarAnimationWrapper = forwardRef(
 
     const timeoutRef = useRef();
 
-    const childrenRef = createRef();
+    const childrenRef = useRef();
 
     const openAnimation = () => {
       Animated.spring(translateY, {
@@ -60,8 +59,8 @@ const SnackbarAnimationWrapper = forwardRef(
 
       if (shouldCloseOnTimer) {
         timeoutRef.current = setTimeout(() => {
-          closeAnimation();
           clearTimeout(timeoutRef.current);
+          closeAnimation();
         }, timeoutDuration);
       }
     };
@@ -72,8 +71,8 @@ const SnackbarAnimationWrapper = forwardRef(
     };
 
     const closeSnackbar = callback => {
-      closeAnimation(callback);
       clearTimeout(timeoutRef.current);
+      closeAnimation(callback);
     };
 
     useImperativeHandle(ref, () => ({
@@ -88,7 +87,7 @@ const SnackbarAnimationWrapper = forwardRef(
       },
     }));
 
-    useEffect(() => clearTimeout(timeoutRef.current));
+    useEffect(() => () => clearTimeout(timeoutRef.current), []);
 
     return (
       <Animated.View
