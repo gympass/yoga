@@ -61,7 +61,7 @@ exports[`<TextArea /> should match snapshot 1`] = `
   box-sizing: border-box;
 }
 
-false .c1:hover:not(:disabled),
+.c1:hover:not(:disabled),
 .c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }

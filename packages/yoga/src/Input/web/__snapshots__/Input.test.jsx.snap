@@ -114,7 +114,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   border-color: #D7D7E0;
 }
 
-false .c1:hover:not(:disabled),
+.c1:hover:not(:disabled),
 .c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
@@ -558,7 +558,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   border-color: #FF874C;
 }
 
-false .c1:hover:not(:disabled),
+.c1:hover:not(:disabled),
 .c1:focus-within:not(:disabled) {
   border-color: #FF874C;
 }
@@ -774,7 +774,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   border-color: #D7D7E0;
 }
 
-false .c1:hover:not(:disabled),
+.c1:hover:not(:disabled),
 .c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
@@ -1006,7 +1006,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   border-color: #D7D7E0;
 }
 
-false .c1:hover:not(:disabled),
+.c1:hover:not(:disabled),
 .c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
@@ -1255,7 +1255,7 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
   border-color: #D7D7E0;
 }
 
-false .c1:hover:not(:disabled),
+.c1:hover:not(:disabled),
 .c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
@@ -1472,7 +1472,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   border-color: #D7D7E0;
 }
 
-false .c1:hover:not(:disabled),
+.c1:hover:not(:disabled),
 .c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }

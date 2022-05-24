@@ -114,7 +114,7 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
   border-color: #D7D7E0;
 }
 
-false .c1:hover:not(:disabled),
+.c1:hover:not(:disabled),
 .c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }

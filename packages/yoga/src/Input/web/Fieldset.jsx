@@ -33,7 +33,7 @@ const Fieldset = styled.fieldset`
 
     ${value && !error ? `border-color: ${input.border.color.typed};` : ''}
 
-    ${disabled && `border-color: ${colors.elements.lineAndBorders};`}
+    ${disabled ? `border-color: ${colors.elements.lineAndBorders};` : ''}
 
     &:hover, &:focus-within { 
       &:not(:disabled) {
