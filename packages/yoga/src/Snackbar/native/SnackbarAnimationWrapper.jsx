@@ -104,6 +104,7 @@ const SnackbarAnimationWrapper = forwardRef(
         ]}
       >
         <View
+          testID="wrapper"
           ref={childrenRef}
           onLayout={({
             nativeEvent: {
