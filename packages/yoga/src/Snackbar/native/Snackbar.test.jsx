@@ -91,10 +91,18 @@ describe('<Snackbar />', () => {
 
     fireEvent.press(getByText('Tap to open snackbar'));
 
-    expect(RN.Animated.spring).toBeCalled();
+    expect(RN.Animated.spring.mock.calls[0][1]).toEqual({
+      toValue: 0,
+      bounciness: 0,
+      useNativeDriver: true,
+    });
 
     fireEvent.press(getByText('Action'));
 
-    expect(RN.Animated.spring).toBeCalled();
+    expect(RN.Animated.spring.mock.calls[1][1]).toEqual({
+      toValue: 200,
+      bounciness: 0,
+      useNativeDriver: true,
+    });
   });
 });
