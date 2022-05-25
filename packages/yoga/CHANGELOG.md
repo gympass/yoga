@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.32.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.32.0...@gympass/yoga@7.32.1) (2022-05-25)
+
+
+### Bug Fixes
+
+* fieldset disabled state border-color ([398ad55](https://github.com/Gympass/yoga/commit/398ad5514bafbbefd08c9c447a438214aacd74a4))
+
+
+
+
+
 # [7.32.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.31.0...@gympass/yoga@7.32.0) (2022-05-18)
 
 
