@@ -21,6 +21,8 @@ import Avatar from './Avatar';
 import Result from './Result';
 import Divider from './Divider';
 import Snackbar from './Snackbar';
+import Banner from './Banner';
+
 
 export {
   Button,
@@ -46,4 +48,5 @@ export {
   Result,
   Divider,
   Snackbar,
+  Banner,
 };

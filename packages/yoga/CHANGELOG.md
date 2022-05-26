@@ -3,6 +3,93 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.32.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.32.0...@gympass/yoga@7.32.1) (2022-05-25)
+
+
+### Bug Fixes
+
+* fieldset disabled state border-color ([398ad55](https://github.com/Gympass/yoga/commit/398ad5514bafbbefd08c9c447a438214aacd74a4))
+
+
+
+
+
+# [7.32.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.31.0...@gympass/yoga@7.32.0) (2022-05-18)
+
+
+### Features
+
+* **banner:** add and implement web component ([5653102](https://github.com/Gympass/yoga/commit/565310267fbd8ea1387df50e023f505db2abb516))
+* **banner:** add foraward ref for both native and web components ([f2a44f6](https://github.com/Gympass/yoga/commit/f2a44f6c39ae2454556963d69392772bf8016f4a))
+* **banner:** add icon to the component ([96ad1c1](https://github.com/Gympass/yoga/commit/96ad1c11ef4cf1507f0d6c8d8eedf4c5a15c4b2b))
+* **banner:** add primary and secondary action buttons to native component ([b4194b1](https://github.com/Gympass/yoga/commit/b4194b191f9c640f6216f5f2e7ea7151b4cb1e69))
+* **banner:** add primary and secondary action buttons to web component ([244c19f](https://github.com/Gympass/yoga/commit/244c19f26db4cef65d5e237c5faa5964d566ef82))
+* **banner:** add yoga system borders support ([8351dca](https://github.com/Gympass/yoga/commit/8351dcae321e92f30b8e807cbe4b98ccbccf63ea))
+* **banner:** create and implement the component ([104313b](https://github.com/Gympass/yoga/commit/104313b53270ad1ba53311e4b2b43cc0334867e2))
+
+
+
+
+
+# [7.31.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.30.0...@gympass/yoga@7.31.0) (2022-05-17)
+
+
+### Features
+
+* **avatar:** add forwardRef to avatar component ([04ad158](https://github.com/Gympass/yoga/commit/04ad1583fd1ed263c60c24fb266576d19eef0484))
+* **avatar:** add forwardRef to avatar component ([f0ba89b](https://github.com/Gympass/yoga/commit/f0ba89b60c32d14af9dd3b9fba85ccc16e3c6cac))
+* **button:** add forwardRef to button component ([e1895db](https://github.com/Gympass/yoga/commit/e1895db1fdf6abda965759949eeba728453d3a88))
+* **button:** add forwardRef to button component ([a5bebfd](https://github.com/Gympass/yoga/commit/a5bebfd82bcb5b584088dc17fe0f4dbc7defe69d))
+
+
+
+
+
+# [7.30.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.29.2...@gympass/yoga@7.30.0) (2022-05-09)
+
+
+### Bug Fixes
+
+* **checkbox:** fix review ([f691891](https://github.com/Gympass/yoga/commit/f691891fb80a0b4581f86392f1b9d5baf58ba31f))
+
+
+### Features
+
+* **checkbox:** add indeterminate prop ([449a186](https://github.com/Gympass/yoga/commit/449a1862453733bee8a6067f65c126808cdc5f83))
+* **checkbox:** add ref to checkbox ([74a8e29](https://github.com/Gympass/yoga/commit/74a8e29cd78f02a014f3448e7dffaabb4c7fea8f))
+* **checkbox:** add useEffect to inputRef ([ede51b5](https://github.com/Gympass/yoga/commit/ede51b5b854720eb7c9d824b08fbd6634a51ab72))
+
+
+
+
+
+## [7.29.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.29.1...@gympass/yoga@7.29.2) (2022-05-06)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.29.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.29.0...@gympass/yoga@7.29.1) (2022-05-04)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+# [7.29.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.28.0...@gympass/yoga@7.29.0) (2022-05-04)
+
+
+### Features
+
+* **native:** added createTheme to native context ([94d913d](https://github.com/Gympass/yoga/commit/94d913d74027c544e809e3617032f480a1199e90))
+
+
+
+
+
 # [7.28.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.27.0...@gympass/yoga@7.28.0) (2022-04-06)
 
 

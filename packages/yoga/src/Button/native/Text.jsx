@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 
@@ -21,65 +21,71 @@ const ButtonContainerText = styled(ButtonContainer)`
   `}
 `;
 
-const ButtonText = ({
-  children,
-  disabled,
-  pressed,
-  small,
-  secondary,
-  inverted,
-  icon: Icon,
-  theme: {
-    yoga: {
-      colors,
-      components: { button },
+const ButtonText = forwardRef(
+  (
+    {
+      children,
+      disabled,
+      pressed,
+      small,
+      secondary,
+      inverted,
+      icon: Icon,
+      theme: {
+        yoga: {
+          colors,
+          components: { button },
+        },
+      },
+      ...rest
     },
-  },
-  ...rest
-}) => {
-  const state = secondary ? 'secondary' : 'primary';
-  let textColor = colors[state];
+    ref,
+  ) => {
+    const state = secondary ? 'secondary' : 'primary';
+    let textColor = colors[state];
 
-  if (disabled) {
-    textColor = colors.text.disabled;
-  } else if (inverted) {
-    textColor = colors.white;
-    if (pressed) {
-      textColor = hexToRgb(colors.white, 0.75);
+    if (disabled) {
+      textColor = colors.text.disabled;
+    } else if (inverted) {
+      textColor = colors.white;
+      if (pressed) {
+        textColor = hexToRgb(colors.white, 0.75);
+      }
+    } else if (pressed) {
+      textColor = hexToRgb(colors[state], 0.75);
     }
-  } else if (pressed) {
-    textColor = hexToRgb(colors[state], 0.75);
-  }
 
-  return (
-    <ButtonContainerText
-      {...rest}
-      disabled={disabled}
-      pressed={pressed}
-      small={small}
-    >
-      {Icon && (
-        <Icon
-          width={small ? button.icon.size.small : button.icon.size.default}
-          height={small ? button.icon.size.small : button.icon.size.default}
-          fill={textColor}
-          style={{
-            marginRight: button.icon.margin.right,
-          }}
-        />
-      )}
-      <LabelText
+    return (
+      <ButtonContainerText
+        {...rest}
         disabled={disabled}
         pressed={pressed}
         small={small}
-        secondary={secondary}
-        color={textColor}
+        ref={ref}
       >
-        {children}
-      </LabelText>
-    </ButtonContainerText>
-  );
-};
+        {Icon && (
+          <Icon
+            width={small ? button.icon.size.small : button.icon.size.default}
+            height={small ? button.icon.size.small : button.icon.size.default}
+            fill={textColor}
+            style={{
+              marginRight: button.icon.margin.right,
+            }}
+          />
+        )}
+        <LabelText
+          disabled={disabled}
+          pressed={pressed}
+          small={small}
+          secondary={secondary}
+          color={textColor}
+        >
+          {children}
+        </LabelText>
+      </ButtonContainerText>
+    );
+  },
+);
 
 ButtonText.propTypes = ButtonContainer.propTypes;
 ButtonText.defaultProps = ButtonContainer.defaultProps;

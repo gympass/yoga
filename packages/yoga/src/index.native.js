@@ -1,4 +1,4 @@
-import ThemeProvider, { yogaTheme, theme } from './Theme';
+import ThemeProvider, { yogaTheme, theme, createTheme } from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -20,10 +20,12 @@ import Avatar from './Avatar';
 import Result from './Result';
 import Divider from './Divider';
 import Snackbar from './Snackbar';
+import Banner from './Banner';
 
 export {
   ThemeProvider,
   yogaTheme,
+  createTheme,
   theme,
   Button,
   List,
@@ -49,4 +51,5 @@ export {
   Result,
   Divider,
   Snackbar,
+  Banner,
 };
