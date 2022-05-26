@@ -7,6 +7,8 @@ import Title from './Title';
 import BackButton from './BackButton';
 import RightButton from './RightButton';
 
+const onClick = () => {};
+
 describe('<Heading />', () => {
   it('should match snapshot with title', () => {
     const { container } = render(
@@ -25,7 +27,7 @@ describe('<Heading />', () => {
       <ThemeProvider>
         <Heading>
           <Title>Gympass</Title>
-          <BackButton />
+          <BackButton onClick={onClick} />
         </Heading>
       </ThemeProvider>,
     );
@@ -38,8 +40,8 @@ describe('<Heading />', () => {
       <ThemeProvider>
         <Heading>
           <Title>Gympass</Title>
-          <BackButton />
-          <RightButton icon={Upload2} />
+          <BackButton onClick={onClick} />
+          <RightButton icon={Upload2} onClick={onClick} />
         </Heading>
       </ThemeProvider>,
     );
@@ -51,7 +53,7 @@ describe('<Heading />', () => {
     const { container } = render(
       <ThemeProvider>
         <Heading>
-          <BackButton />
+          <BackButton onClick={onClick} />
         </Heading>
       </ThemeProvider>,
     );
