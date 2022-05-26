@@ -7,6 +7,7 @@ import React, {
 } from 'react';
 import { Animated, useWindowDimensions, View } from 'react-native';
 import { func, node, oneOf } from 'prop-types';
+import styled from 'styled-components';
 
 const durationDictionary = {
   fast: 4000,
@@ -14,6 +15,14 @@ const durationDictionary = {
   slow: 10000,
   indefinite: -1,
 };
+
+const Wrapper = styled(Animated.View)(
+  () => `
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+  `,
+);
 
 const SnackbarAnimationWrapper = forwardRef(
   ({ onSnackbarClose, children, duration }, ref) => {
@@ -90,19 +99,7 @@ const SnackbarAnimationWrapper = forwardRef(
     useEffect(() => () => clearTimeout(timeoutRef.current), []);
 
     return (
-      <Animated.View
-        style={[
-          {
-            width: '100%',
-            position: 'absolute',
-            bottom: 0,
-            zIndex: 10,
-          },
-          {
-            transform: [{ translateY }],
-          },
-        ]}
-      >
+      <Wrapper style={{ zIndex: 10, transform: [{ translateY }] }}>
         <View
           testID="wrapper"
           ref={childrenRef}
@@ -117,7 +114,7 @@ const SnackbarAnimationWrapper = forwardRef(
         >
           {children}
         </View>
-      </Animated.View>
+      </Wrapper>
     );
   },
 );
