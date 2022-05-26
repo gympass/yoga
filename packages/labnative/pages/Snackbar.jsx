@@ -1,4 +1,4 @@
-import React, { createRef } from 'react';
+import React, { useRef } from 'react';
 import { View } from 'react-native';
 import { Button, Snackbar } from '@gympass/yoga';
 import { CheckedFull } from '@gympass/yoga-icons/src';
@@ -6,7 +6,7 @@ import { CheckedFull } from '@gympass/yoga-icons/src';
 import { DocTitle } from '../components';
 
 const SnackbarPage = () => {
-  const snackbarRef = createRef();
+  const snackbarRef = useRef();
 
   const handleOpenSnackbar = () => {
     snackbarRef.current.open();
@@ -21,8 +21,8 @@ const SnackbarPage = () => {
       <Snackbar
         variant="success"
         icon={CheckedFull}
-        message="Lorem Ipsum is simply dummy text of the printing and types."
-        actionLabel="See details"
+        message="Feedback message"
+        actionLabel="Action"
         onAction={() => {}}
         duration="default"
         bottomOffset={0}
