@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '../../Button';
 
-const RightButton = ({ onClick, icon }) => (
-  <Button.Icon icon={icon} inverted onClick={onClick} />
+const RightButton = ({ onClick, icon, ...props }) => (
+  <Button.Icon {...props} icon={icon} inverted onClick={onClick} />
 );
 
 RightButton.propTypes = {
