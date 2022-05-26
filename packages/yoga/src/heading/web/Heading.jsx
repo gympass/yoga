@@ -34,7 +34,10 @@ const Heading = ({ children }) => {
 };
 
 Heading.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
 };
 
 Heading.defaultProps = {};
