@@ -172,39 +172,42 @@ const Wrapper = styled.div`
 
 /** The Radio is a type of selection control that allows the user to select a
  * single option from a list. */
-const RadioGroupRadio = ({ value, disabled, style, className, ...rest }) => {
-  const { name, onChange, selectedValue, ...context } = useContext(
-    RadioGroupContext,
-  );
+const RadioGroupRadio = React.forwardRef(
+  ({ value, disabled, style, className, ...rest }, ref) => {
+    const { name, onChange, selectedValue, ...context } = useContext(
+      RadioGroupContext,
+    );
 
-  const inputValue = value;
-  const checked = inputValue === selectedValue;
+    const inputValue = value;
+    const checked = inputValue === selectedValue;
 
-  return (
-    <Wrapper
-      {...{
-        checked,
-        disabled,
-        style,
-        className,
-      }}
-    >
-      <Radio checked={checked} />
-      <Input
-        type="radio"
+    return (
+      <Wrapper
         {...{
-          value,
           checked,
-          name,
-          onChange,
           disabled,
+          style,
+          className,
         }}
-        {...rest}
-        {...context}
-      />
-    </Wrapper>
-  );
-};
+      >
+        <Radio checked={checked} />
+        <Input
+          type="radio"
+          {...{
+            value,
+            checked,
+            name,
+            onChange,
+            disabled,
+          }}
+          ref={ref}
+          {...rest}
+          {...context}
+        />
+      </Wrapper>
+    );
+  },
+);
 
 RadioGroupRadio.displayName = 'RadioGroup.Radio';
 

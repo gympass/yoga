@@ -118,42 +118,45 @@ const Shadow = styled.View(
 
 /** The Radio is a type of selection control that allows the user to select a
  * single option from a list.  */
-const RadioGroupRadio = ({ value, disabled, ...rest }) => {
-  const { onChange, small, selectedValue, ...context } = useContext(
-    RadioGroupContext,
-  );
+const RadioGroupRadio = React.forwardRef(
+  ({ value, disabled, ...rest }, ref) => {
+    const { onChange, small, selectedValue, ...context } = useContext(
+      RadioGroupContext,
+    );
 
-  const [pressing, togglePressing] = useState(false);
+    const [pressing, togglePressing] = useState(false);
 
-  const inputValue = value;
-  const checked = inputValue === selectedValue;
+    const inputValue = value;
+    const checked = inputValue === selectedValue;
 
-  return (
-    <TouchableWithoutFeedback
-      onPressIn={() => {
-        togglePressing(true);
-      }}
-      onPress={() => {
-        onChange({ value: inputValue });
-      }}
-      onPressOut={() => {
-        togglePressing(false);
-      }}
-      disabled={disabled}
-      {...context}
-    >
-      <RadioMark
-        checked={checked}
+    return (
+      <TouchableWithoutFeedback
+        onPressIn={() => {
+          togglePressing(true);
+        }}
+        onPress={() => {
+          onChange({ value: inputValue });
+        }}
+        onPressOut={() => {
+          togglePressing(false);
+        }}
         disabled={disabled}
-        pressed={pressing}
-        {...rest}
+        {...context}
       >
-        {checked && <Dot checked={checked} disabled={disabled} />}
-        {pressing && <Shadow checked={checked} />}
-      </RadioMark>
-    </TouchableWithoutFeedback>
-  );
-};
+        <RadioMark
+          checked={checked}
+          disabled={disabled}
+          pressed={pressing}
+          ref={ref}
+          {...rest}
+        >
+          {checked && <Dot checked={checked} disabled={disabled} />}
+          {pressing && <Shadow checked={checked} />}
+        </RadioMark>
+      </TouchableWithoutFeedback>
+    );
+  },
+);
 
 RadioGroupRadio.displayName = 'RadioGroup.Radio';
 
