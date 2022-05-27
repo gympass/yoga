@@ -5,7 +5,7 @@ import React, {
   useRef,
   useState,
 } from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled from 'styled-components';
 import { string, oneOf, func, elementType, number } from 'prop-types';
 
 import { PanResponder } from 'react-native';
@@ -214,4 +214,4 @@ Snackbar.defaultProps = {
   bottomOffset: 0,
 };
 
-export default withTheme(Snackbar);
+export default Snackbar;

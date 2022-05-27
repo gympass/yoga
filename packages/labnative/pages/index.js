@@ -23,7 +23,6 @@ import Divider from './Divider';
 import Snackbar from './Snackbar';
 import Banner from './Banner';
 
-
 export {
   Button,
   Switch,
