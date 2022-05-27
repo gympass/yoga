@@ -164,11 +164,11 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
     <div
       class="c3"
     >
-      <p
+      <h1
         class="c4"
       >
         Gympass
-      </p>
+      </h1>
     </div>
     <div
       class="c5"
@@ -425,11 +425,11 @@ exports[`<Heading /> should match snapshot with title 1`] = `
     <div
       class="c2"
     >
-      <p
+      <h1
         class="c3"
       >
         Gympass
-      </p>
+      </h1>
     </div>
     <div
       class="c4"
@@ -612,11 +612,11 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
     <div
       class="c3"
     >
-      <p
+      <h1
         class="c4"
       >
         Gympass
-      </p>
+      </h1>
     </div>
     <div
       class="c5"
