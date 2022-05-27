@@ -21,6 +21,7 @@ import Avatar from './Avatar';
 import Result from './Result';
 import Divider from './Divider';
 import Banner from './Banner';
+import Heading from './Heading';
 
 export {
   Button,
@@ -46,4 +47,5 @@ export {
   Result,
   Divider,
   Banner,
+  Heading,
 };
