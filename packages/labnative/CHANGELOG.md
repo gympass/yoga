@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@1.11.20...@gympass/yoga-labnative@1.12.0) (2022-05-27)
+
+
+### Features
+
+* **heading:** create heading component ([d8b4ad1](https://github.com/gympass/yoga/commit/d8b4ad12ce3d3306480efbab4843eec1ba33a18f))
+
+
+
+
+
 ## [1.11.20](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@1.11.19...@gympass/yoga-labnative@1.11.20) (2022-05-25)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.33.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.32.1...@gympass/yoga@7.33.0) (2022-05-27)
+
+
+### Features
+
+* add extra props ([6b8500a](https://github.com/Gympass/yoga/commit/6b8500a8e24820068a142014b7ee91a375b070a0))
+* **heading:** adjust name ([01f3706](https://github.com/Gympass/yoga/commit/01f3706a2abd6df0578a1fcb5ddb69f80ff0e442))
+* **heading:** adjust name ([7518ac9](https://github.com/Gympass/yoga/commit/7518ac94cdf23764b50d163ecd5371cb5eaf5b59))
+* **heading:** create heading component ([d8b4ad1](https://github.com/Gympass/yoga/commit/d8b4ad12ce3d3306480efbab4843eec1ba33a18f))
+* **heading:** create tests ([e7d03fd](https://github.com/Gympass/yoga/commit/e7d03fda0cfb3799f8f359b9327304812d3ef047))
+* **heading:** improve tests ([a5bb198](https://github.com/Gympass/yoga/commit/a5bb198cd7363ad51c003784ff83a5876f393aab))
+* **heading:** update prop types ([730377b](https://github.com/Gympass/yoga/commit/730377be3c14fa1e4fc806417c6ccbc0d4b5cc9d))
+
+
+
+
+
 ## [7.32.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.32.0...@gympass/yoga@7.32.1) (2022-05-25)
 
 
