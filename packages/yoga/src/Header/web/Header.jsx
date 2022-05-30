@@ -1,11 +1,12 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { string, node } from 'prop-types';
+import { string, node, func } from 'prop-types';
 
 import { media } from '@gympass/yoga-helpers';
 
-import GympassLogo from './GympassLogo';
 import Box from '../../Box';
+
+import Logo from './Logo';
 
 const StyledHeader = styled(Box)`
   ${({
@@ -25,7 +26,7 @@ const StyledHeader = styled(Box)`
   `}
 `;
 
-const Header = ({ link, children }) => {
+const Header = ({ link, children, logo }) => {
   return (
     <StyledHeader
       as="header"
@@ -37,10 +38,10 @@ const Header = ({ link, children }) => {
     >
       {link ? (
         <a href={link}>
-          <GympassLogo />
+          <Logo customLogo={logo} />
         </a>
       ) : (
-        <GympassLogo />
+        <Logo customLogo={logo} />
       )}
       {children}
     </StyledHeader>
@@ -52,11 +53,14 @@ Header.propTypes = {
   link: string,
   /** Use children to add whatever you want inside the header */
   children: node,
+  /** Use logo to change headers image */
+  logo: func,
 };
 
 Header.defaultProps = {
   link: null,
   children: null,
+  logo: null,
 };
 
 export default Header;
