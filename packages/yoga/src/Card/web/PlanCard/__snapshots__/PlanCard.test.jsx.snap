@@ -181,10 +181,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   align-items: center;
   border-style: solid;
   padding: 4px 8px 4px 8px;
-  color: #7068D4;
+  color: #5340C9;
   border-radius: 4px;
   border-width: 1px;
-  border-color: #7068D4;
+  border-color: #5340C9;
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;
