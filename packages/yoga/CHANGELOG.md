@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.35.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.34.0...@gympass/yoga@7.35.0) (2022-05-30)
+
+
+### Features
+
+* **header:** add a prop in headers to change the logo to a custom ([f266685](https://github.com/Gympass/yoga/commit/f2666858946c069a1f4e0910ae79b7afc76d9364))
+
+
+
+
+
 # [7.34.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.33.1...@gympass/yoga@7.34.0) (2022-05-30)
 
 

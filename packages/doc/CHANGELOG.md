@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.18.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.17.2...@gympass/yoga-doc@2.18.0) (2022-05-30)
+
+
+### Features
+
+* **header:** add a prop in headers to change the logo to a custom ([f266685](https://github.com/gympass/yoga/commit/f2666858946c069a1f4e0910ae79b7afc76d9364))
+
+
+
+
+
 ## [2.17.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.17.1...@gympass/yoga-doc@2.17.2) (2022-05-30)
 
 **Note:** Version bump only for package @gympass/yoga-doc
