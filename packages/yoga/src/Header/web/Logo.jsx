@@ -4,7 +4,7 @@ import { elementType } from 'prop-types';
 import GympassLogo from './GympassLogo';
 
 const Logo = ({ customLogo: CustomLogo }) =>
-  !CustomLogo ? <GympassLogo /> : <CustomLogo />;
+  CustomLogo ? <CustomLogo /> : <GympassLogo />;
 
 Logo.propTypes = {
   customLogo: elementType,
