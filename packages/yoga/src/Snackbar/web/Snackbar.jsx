@@ -94,6 +94,13 @@ const AnimatedSnackbar = styled(StyledSnackbar)`
   animation: ${fadeIn} 0.2s ease-in-out;
 `;
 
+/**
+ * Gympass `<Snackbar />` is the proper component to show alert messages.
+ *
+ * For web components, the `Snackbar` may have an icon, a custom action and a close button.
+ *
+ * For native, the `Snackbar` may have an icon and a custom action.
+ */
 const Snackbar = ({
   open,
   duration,

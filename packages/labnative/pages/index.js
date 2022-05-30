@@ -20,6 +20,7 @@ import Box from './Box';
 import Avatar from './Avatar';
 import Result from './Result';
 import Divider from './Divider';
+import Snackbar from './Snackbar';
 import Banner from './Banner';
 import Heading from './Heading';
 
@@ -46,6 +47,7 @@ export {
   Avatar,
   Result,
   Divider,
+  Snackbar,
   Banner,
   Heading,
 };
