@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { string, node, func } from 'prop-types';
+import { string, node, elementType } from 'prop-types';
 
 import { media } from '@gympass/yoga-helpers';
 
@@ -54,7 +54,7 @@ Header.propTypes = {
   /** Use children to add whatever you want inside the header */
   children: node,
   /** Use logo to change headers image */
-  logo: func,
+  logo: elementType,
 };
 
 Header.defaultProps = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { func } from 'prop-types';
+import { elementType } from 'prop-types';
 
 import GympassLogo from './GympassLogo';
 
@@ -7,7 +7,7 @@ const Logo = ({ customLogo: CustomLogo }) =>
   !CustomLogo ? <GympassLogo /> : <CustomLogo />;
 
 Logo.propTypes = {
-  customLogo: func,
+  customLogo: elementType,
 };
 
 Logo.defaultProps = {
