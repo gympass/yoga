@@ -24,7 +24,7 @@ exports[`<Progress /> should match snapshot 1`] = `
 }
 
 .c1::-webkit-progress-value {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c1.c1,
@@ -33,7 +33,7 @@ exports[`<Progress /> should match snapshot 1`] = `
 }
 
 .c1[value]::-moz-progress-bar {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c0 {
@@ -109,7 +109,7 @@ exports[`<Progress /> should match snapshot with all variants 1`] = `
 }
 
 .c10::-webkit-progress-value {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c10.c10,
@@ -118,7 +118,7 @@ exports[`<Progress /> should match snapshot with all variants 1`] = `
 }
 
 .c10[value]::-moz-progress-bar {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c2 {
@@ -284,7 +284,7 @@ exports[`<Progress /> should match snapshot with all variants 1`] = `
 }
 
 .c8::-webkit-progress-value {
-  background-color: #7068D4;
+  background-color: #5340C9;
 }
 
 .c8.c8,
@@ -293,7 +293,7 @@ exports[`<Progress /> should match snapshot with all variants 1`] = `
 }
 
 .c8[value]::-moz-progress-bar {
-  background-color: #7068D4;
+  background-color: #5340C9;
 }
 
 .c9 {
@@ -929,7 +929,7 @@ exports[`<Progress /> should match snapshot with background color prop system 1`
 }
 
 .c2::-webkit-progress-value {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c2.c2,
@@ -938,7 +938,7 @@ exports[`<Progress /> should match snapshot with background color prop system 1`
 }
 
 .c2[value]::-moz-progress-bar {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c3 .c1 {
@@ -1006,7 +1006,7 @@ exports[`<Progress /> should match snapshot with border prop system 1`] = `
 }
 
 .c2::-webkit-progress-value {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c2.c2,
@@ -1015,7 +1015,7 @@ exports[`<Progress /> should match snapshot with border prop system 1`] = `
 }
 
 .c2[value]::-moz-progress-bar {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c3 .c1 {
@@ -1084,7 +1084,7 @@ exports[`<Progress /> should match snapshot with elevation prop system 1`] = `
 }
 
 .c2::-webkit-progress-value {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c2.c2,
@@ -1093,7 +1093,7 @@ exports[`<Progress /> should match snapshot with elevation prop system 1`] = `
 }
 
 .c2[value]::-moz-progress-bar {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c3 .c1 {
@@ -1162,7 +1162,7 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
 }
 
 .c2::-webkit-progress-value {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c2.c2,
@@ -1171,7 +1171,7 @@ exports[`<Progress /> should match snapshot with label number 1`] = `
 }
 
 .c2[value]::-moz-progress-bar {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c4 {
@@ -1295,7 +1295,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
 }
 
 .c1::-webkit-progress-value {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c1.c1,
@@ -1304,7 +1304,7 @@ exports[`<Progress /> should match snapshot with label string 1`] = `
 }
 
 .c1[value]::-moz-progress-bar {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c3 {
@@ -1412,7 +1412,7 @@ exports[`<Progress /> should match snapshot with positions prop system 1`] = `
 }
 
 .c2::-webkit-progress-value {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c2.c2,
@@ -1421,7 +1421,7 @@ exports[`<Progress /> should match snapshot with positions prop system 1`] = `
 }
 
 .c2[value]::-moz-progress-bar {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c3 .c1 {
@@ -1491,7 +1491,7 @@ exports[`<Progress /> should match snapshot with spacing prop system 1`] = `
 }
 
 .c2::-webkit-progress-value {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c2.c2,
@@ -1500,7 +1500,7 @@ exports[`<Progress /> should match snapshot with spacing prop system 1`] = `
 }
 
 .c2[value]::-moz-progress-bar {
-  background-color: #FF874C;
+  background-color: #CA4808;
 }
 
 .c3 .c1 {

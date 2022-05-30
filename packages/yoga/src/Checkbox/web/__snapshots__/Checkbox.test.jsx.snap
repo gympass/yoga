@@ -775,10 +775,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   width: 24px;
   height: 24px;
   margin-right: 8px;
-  background-color: #FF874C;
+  background-color: #CA4808;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #FF874C;
+  border-color: #CA4808;
 }
 
 .c6 svg {
@@ -918,7 +918,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 }
 
 .c9 {
-  color: #FF874C;
+  color: #CA4808;
   font-size: 14px;
 }
 
@@ -993,10 +993,10 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and indetermina
   width: 24px;
   height: 24px;
   margin-right: 8px;
-  background-color: #FF874C;
+  background-color: #CA4808;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #FF874C;
+  border-color: #CA4808;
 }
 
 .c6 svg {
@@ -1178,7 +1178,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and indetermina
 }
 
 .c9 {
-  color: #FF874C;
+  color: #CA4808;
   font-size: 14px;
 }
 
@@ -1255,7 +1255,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   background-color: transparent;
   border-radius: 4px;
   border-width: 2px;
-  border-color: #FF874C;
+  border-color: #CA4808;
 }
 
 .c6 svg {
@@ -1395,7 +1395,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 }
 
 .c9 {
-  color: #FF874C;
+  color: #CA4808;
   font-size: 14px;
 }
 
