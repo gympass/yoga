@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Feedback /> should render the icon for attention variant 1`] = `
+.c0 {
+  margin-bottom: 24px;
+  width: 64px;
+  height: 64px;
+}
+
+<svg
+  class="c0"
+  data-testid="feedback-icon"
+  fill="#FF874C"
+  height="64"
+  mb="large"
+  width="64"
+/>
+`;
+
+exports[`<Feedback /> should render the icon for informative variant 1`] = `
+.c0 {
+  margin-bottom: 24px;
+  width: 64px;
+  height: 64px;
+}
+
+<svg
+  class="c0"
+  data-testid="feedback-icon"
+  fill="#7068D4"
+  height="64"
+  mb="large"
+  width="64"
+/>
+`;
+
+exports[`<Feedback /> should render the icon for success variant 1`] = `
+.c0 {
+  margin-bottom: 24px;
+  width: 64px;
+  height: 64px;
+}
+
+<svg
+  class="c0"
+  data-testid="feedback-icon"
+  fill="#1D856C"
+  height="64"
+  mb="large"
+  width="64"
+/>
+`;

@@ -31,6 +31,7 @@ import Divider from './Divider';
 import Header from './Header';
 import Banner from './Banner';
 import Heading from './Heading';
+import Feedback from './Feedback';
 
 export {
   ThemeProvider,
@@ -70,4 +71,5 @@ export {
   Header,
   Banner,
   Heading,
+  Feedback,
 };
