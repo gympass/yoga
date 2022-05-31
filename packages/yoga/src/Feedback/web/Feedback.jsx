@@ -26,7 +26,7 @@ const VARIANT_ICONS = {
   },
   attention: {
     as: AlertTriangle,
-    fill: 'verve',
+    fill: 'brandingVerve',
   },
 };
 

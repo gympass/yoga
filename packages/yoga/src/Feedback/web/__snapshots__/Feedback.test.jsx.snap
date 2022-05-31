@@ -27,7 +27,7 @@ exports[`<Feedback /> should render the icon for informative variant 1`] = `
 <svg
   class="c0"
   data-testid="feedback-icon"
-  fill="#7068D4"
+  fill="#5340C9"
   height="64"
   mb="large"
   width="64"
