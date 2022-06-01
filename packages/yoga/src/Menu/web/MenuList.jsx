@@ -13,6 +13,7 @@ const StyledMenuList = styled(MenuListRoot)`
     theme: {
       yoga: {
         components: { menu },
+        elevations,
       },
     },
   }) => {
@@ -24,7 +25,7 @@ const StyledMenuList = styled(MenuListRoot)`
     border-radius: ${menu.border.radius}px;
 
     background-color: ${menu.backgroundColor.white};
-    box-shadow: 0px 2px 6px rgba(152, 152, 166, 0.25);
+    box-shadow: ${elevations.small}
   `;
   }}
 `;
