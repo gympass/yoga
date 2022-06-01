@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import Input from './Input';
 
-const InputNumber = props => <Input {...props} type="number" />;
+const InputNumber = forwardRef((props, ref) => (
+  <Input ref={ref} {...props} type="number" />
+));
 
 export default InputNumber;

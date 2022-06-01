@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import Input from './Input';
 
-const Email = props => <Input {...props} type="email" />;
+const Email = forwardRef((props, ref) => (
+  <Input ref={ref} {...props} type="email" />
+));
 
 export default Email;
