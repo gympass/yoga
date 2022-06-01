@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.19.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.18.1...@gympass/yoga-doc@2.19.0) (2022-06-01)
+
+
+### Features
+
+* add feedback component ([8257008](https://github.com/gympass/yoga/commit/82570083c6295380627e86bd47bdc8f627495ca2))
+
+
+
+
+
 ## [2.18.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.18.0...@gympass/yoga-doc@2.18.1) (2022-06-01)
 
 **Note:** Version bump only for package @gympass/yoga-doc

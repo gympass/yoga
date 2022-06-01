@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.36.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.35.1...@gympass/yoga@7.36.0) (2022-06-01)
+
+
+### Features
+
+* **feedback:** update color tokens ([0b1e201](https://github.com/Gympass/yoga/commit/0b1e201ccfad0e88b88f586acda584aeb92135e8))
+* add feedback component ([8257008](https://github.com/Gympass/yoga/commit/82570083c6295380627e86bd47bdc8f627495ca2))
+
+
+
+
+
 ## [7.35.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.35.0...@gympass/yoga@7.35.1) (2022-06-01)
 
 **Note:** Version bump only for package @gympass/yoga
