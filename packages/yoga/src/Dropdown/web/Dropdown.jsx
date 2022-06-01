@@ -275,7 +275,6 @@ const Dropdown = React.forwardRef(
       selectedItemChanged={(prevItem, item) => prevItem !== item}
       itemToString={item => (item ? item.label : '')}
       onChange={onChange}
-      ref={ref}
     >
       {({
         getInputProps,
@@ -301,6 +300,7 @@ const Dropdown = React.forwardRef(
               isOpen={isOpen}
               label={label}
               full={full}
+              ref={ref}
               {...getInputProps()}
             />
             <Button
