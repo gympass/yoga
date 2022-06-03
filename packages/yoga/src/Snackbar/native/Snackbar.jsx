@@ -8,14 +8,23 @@ import React, {
 import styled from 'styled-components';
 import { string, oneOf, func, elementType, number } from 'prop-types';
 
-import { PanResponder } from 'react-native';
+import { PanResponder, TouchableOpacity } from 'react-native';
 import Box from '../../Box';
 import Button from '../../Button';
 import Icon from '../../Icon';
 import Text from '../../Text';
 import SnackbarAnimationWrapper from './SnackbarAnimationWrapper';
+import { Close } from '@gympass/yoga-icons';
 
 const SWIPE_THRESHOLD = 32;
+
+const IconButtonWrapper = styled(TouchableOpacity)`
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4px;
+  padding-right: 4px;
+`;
 
 const SnackbarContainer = styled.View`
   ${({
@@ -64,6 +73,7 @@ const Snackbar = forwardRef((props, ref) => {
     onSnackbarClose,
     duration,
     bottomOffset,
+    onClose,
     ...rest
   } = props;
   const wrapperRef = useRef();
@@ -73,6 +83,7 @@ const Snackbar = forwardRef((props, ref) => {
     message,
     actionLabel,
     onAction,
+    onClose,
     variant,
   });
 
@@ -93,6 +104,7 @@ const Snackbar = forwardRef((props, ref) => {
           message,
           actionLabel,
           onAction,
+          onClose,
           variant,
         });
         wrapperRef.current.open();
@@ -103,6 +115,7 @@ const Snackbar = forwardRef((props, ref) => {
         message,
         actionLabel,
         onAction,
+        onClose,
         variant,
       });
     }
@@ -179,6 +192,11 @@ const Snackbar = forwardRef((props, ref) => {
             {currentProps.actionLabel}
           </Box>
         )}
+        {onClose && (
+          <IconButtonWrapper onPress={currentProps.onClose}>
+            <Icon as={Close} fill="secondary" size="large" />
+          </IconButtonWrapper>
+        )}
       </SnackbarContainer>
     </SnackbarAnimationWrapper>
   );
@@ -195,6 +213,8 @@ Snackbar.propTypes = {
   actionLabel: string,
   /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
   onAction: func,
+  /**   Function for the action to close the snackbar */
+  onClose: func,
   /** Callback function triggered by the Snackbar close action. Can be used for events, for example. */
   onSnackbarClose: func,
   /** The duration sets how long it will take to close snackbar automatically, it may be "fast" (4 seconds), "default" (8 seconds), "slow" (10 seconds) or "indefinite" (it doesn't close automatically). */
@@ -209,6 +229,7 @@ Snackbar.defaultProps = {
   message: '',
   actionLabel: undefined,
   onAction: undefined,
+  onClose: undefined,
   onSnackbarClose: undefined,
   duration: 'default',
   bottomOffset: 0,

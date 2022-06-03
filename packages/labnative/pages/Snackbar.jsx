@@ -11,6 +11,9 @@ const SnackbarPage = () => {
   const handleOpenSnackbar = () => {
     snackbarRef.current.open();
   };
+  const closeSnackbar = () => {
+    snackbarRef.current.close();
+  };
 
   return (
     <View flex={1} width="100%" alignItems="center">
@@ -23,6 +26,7 @@ const SnackbarPage = () => {
         icon={CheckedFull}
         message="Feedback message"
         actionLabel="Action"
+        onClose={closeSnackbar}
         onAction={() => {}}
         duration="default"
         bottomOffset={0}
