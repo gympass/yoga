@@ -12,6 +12,10 @@ const App = () => {
     snackbarRef.current.open();
   };
 
+  const closeSnackbar = () => {
+    snackbarRef.current.close();
+  };
+
   return (
     <View flex={1} width="100%" alignItems="center">
       <Button onPress={handleOpenSnackbar}>Tap to open snackbar</Button>
@@ -22,13 +26,13 @@ const App = () => {
         message="Feedback message."
         actionLabel="Action"
         onAction={() => {}}
+        onClose={closeSnackbar}
         duration="default"
         bottomOffset={0}
         ref={snackbarRef}
       />
     </View>
   );
-  
 };
 export default App;
 ```
