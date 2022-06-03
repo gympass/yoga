@@ -9,12 +9,12 @@ import styled from 'styled-components';
 import { string, oneOf, func, elementType, number } from 'prop-types';
 
 import { PanResponder, TouchableOpacity } from 'react-native';
+import { Close } from '@gympass/yoga-icons';
 import Box from '../../Box';
 import Button from '../../Button';
 import Icon from '../../Icon';
 import Text from '../../Text';
 import SnackbarAnimationWrapper from './SnackbarAnimationWrapper';
-import { Close } from '@gympass/yoga-icons';
 
 const SWIPE_THRESHOLD = 32;
 
