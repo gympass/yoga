@@ -279,6 +279,97 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
             </View>
           </View>
         </TouchableWithoutFeedback>
+        <TouchableOpacity
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 32,
+                "justifyContent": "center",
+                "paddingLeft": 4,
+                "paddingRight": 4,
+              },
+            ]
+          }
+          testID="closeSnackbar"
+        >
+          <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
+            fill="#231B22"
+            focusable={false}
+            height={24}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Array [
+                  Object {
+                    "height": 24,
+                    "width": 24,
+                  },
+                ],
+                Object {
+                  "opacity": 1,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+            width={24}
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4280490786,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+        </TouchableOpacity>
       </View>
     </View>
   </View>
@@ -423,6 +514,97 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
         >
           Feedback Message
         </Text>
+        <TouchableOpacity
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 32,
+                "justifyContent": "center",
+                "paddingLeft": 4,
+                "paddingRight": 4,
+              },
+            ]
+          }
+          testID="closeSnackbar"
+        >
+          <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
+            fill="#231B22"
+            focusable={false}
+            height={24}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Array [
+                  Object {
+                    "height": 24,
+                    "width": 24,
+                  },
+                ],
+                Object {
+                  "opacity": 1,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+            width={24}
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4280490786,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+        </TouchableOpacity>
       </View>
     </View>
   </View>
@@ -708,6 +890,97 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
             </View>
           </View>
         </TouchableWithoutFeedback>
+        <TouchableOpacity
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 32,
+                "justifyContent": "center",
+                "paddingLeft": 4,
+                "paddingRight": 4,
+              },
+            ]
+          }
+          testID="closeSnackbar"
+        >
+          <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
+            fill="#231B22"
+            focusable={false}
+            height={24}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Array [
+                  Object {
+                    "height": 24,
+                    "width": 24,
+                  },
+                ],
+                Object {
+                  "opacity": 1,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+            width={24}
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4280490786,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+        </TouchableOpacity>
       </View>
     </View>
   </View>
@@ -852,6 +1125,97 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
         >
           Feedback Message
         </Text>
+        <TouchableOpacity
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "height": 32,
+                "justifyContent": "center",
+                "paddingLeft": 4,
+                "paddingRight": 4,
+              },
+            ]
+          }
+          testID="closeSnackbar"
+        >
+          <RNSVGSvgView
+            bbHeight={24}
+            bbWidth={24}
+            fill="#231B22"
+            focusable={false}
+            height={24}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Array [
+                  Object {
+                    "height": 24,
+                    "width": 24,
+                  },
+                ],
+                Object {
+                  "opacity": 1,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 24,
+                  "width": 24,
+                },
+              ]
+            }
+            width={24}
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4280490786,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
+        </TouchableOpacity>
       </View>
     </View>
   </View>

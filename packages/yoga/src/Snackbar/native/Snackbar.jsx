@@ -193,7 +193,7 @@ const Snackbar = forwardRef((props, ref) => {
           </Box>
         )}
         {onClose && (
-          <IconButtonWrapper onPress={currentProps.onClose}>
+          <IconButtonWrapper testID="closeSnackbar" onPress={currentProps.onClose}>
             <Icon as={Close} fill="secondary" size="large" />
           </IconButtonWrapper>
         )}

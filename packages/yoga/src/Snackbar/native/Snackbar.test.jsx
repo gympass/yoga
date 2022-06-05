@@ -26,6 +26,7 @@ const Component = overrideProps => {
       <Snackbar
         ref={snackbarRef}
         message="Feedback Message"
+        onClose={() => snackbarRef.current.close()}
         {...overrideProps}
       />
     </ThemeProvider>
@@ -98,6 +99,23 @@ describe('<Snackbar />', () => {
     });
 
     fireEvent.press(getByText('Action'));
+
+    expect(RN.Animated.spring.mock.calls[1][1]).toEqual({
+      toValue: 200,
+      bounciness: 0,
+      useNativeDriver: true,
+    });
+  });
+
+  it('should match snapshot when snackbar with onClose', () => {
+    const overrideProps = {
+      icon: CheckedFull,
+      actionLabel: 'Action',
+      onAction: () => {},
+    };
+    const { getByTestId } = render(<Component {...overrideProps} />);
+
+    fireEvent.press(getByTestId('closeSnackbar'));
 
     expect(RN.Animated.spring.mock.calls[1][1]).toEqual({
       toValue: 200,
