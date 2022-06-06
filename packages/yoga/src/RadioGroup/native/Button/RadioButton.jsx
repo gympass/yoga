@@ -65,27 +65,29 @@ const Text = styled.Text(
 
 /** Radio group allows user to select one option from a set of options. Use
 value on group to set the selected option. */
-const RadioGroupButton = ({ value, children, ...rest }) => {
-  const { onChange, small, selectedValue, ...context } = useContext(
-    RadioGroupContext,
-  );
+const RadioGroupButton = React.forwardRef(
+  ({ value, children, ...rest }, ref) => {
+    const { onChange, small, selectedValue, ...context } = useContext(
+      RadioGroupContext,
+    );
 
-  const inputValue = value || children;
-  const checked = inputValue === selectedValue;
+    const inputValue = value || children;
+    const checked = inputValue === selectedValue;
 
-  return (
-    <TouchableWithoutFeedback
-      onPress={() => {
-        onChange({ value: inputValue });
-      }}
-      {...context}
-    >
-      <RadioMark small={small} checked={checked} {...rest}>
-        <Text checked={checked}>{children}</Text>
-      </RadioMark>
-    </TouchableWithoutFeedback>
-  );
-};
+    return (
+      <TouchableWithoutFeedback
+        onPress={() => {
+          onChange({ value: inputValue });
+        }}
+        {...context}
+      >
+        <RadioMark small={small} checked={checked} ref={ref} {...rest}>
+          <Text checked={checked}>{children}</Text>
+        </RadioMark>
+      </TouchableWithoutFeedback>
+    );
+  },
+);
 
 RadioGroupButton.displayName = 'RadioGroup.Button';
 

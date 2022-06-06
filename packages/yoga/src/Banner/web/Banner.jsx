@@ -49,10 +49,12 @@ const StyledBanner = styled.div`
   ${borders}
 `;
 
-const BannerActionButton = ({ button: { label, action }, ...props }) => (
-  <Box as={Button.Text} small secondary onClick={action} {...props}>
-    {label}
-  </Box>
+const BannerActionButton = React.forwardRef(
+  ({ button: { label, action }, ...props }, ref) => (
+    <Box as={Button.Text} small secondary onClick={action} ref={ref} {...props}>
+      {label}
+    </Box>
+  ),
 );
 
 BannerActionButton.propTypes = {

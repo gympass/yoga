@@ -94,84 +94,83 @@ const AnimatedSnackbar = styled(StyledSnackbar)`
   animation: ${fadeIn} 0.2s ease-in-out;
 `;
 
-/**
- * Gympass `<Snackbar />` is the proper component to show alert messages.
- *
- * For web components, the `Snackbar` may have an icon, a custom action and a close button.
- *
- * For native, the `Snackbar` may have an icon and a custom action.
- */
-const Snackbar = ({
-  open,
-  duration,
-  variant,
-  hideIcon,
-  message,
-  actionLabel,
-  onAction,
-  onClose,
-  hideCloseButton,
-  theme: {
-    yoga: {
-      components: { snackbar },
+const Snackbar = React.forwardRef(
+  (
+    {
+      open,
+      duration,
+      variant,
+      hideIcon,
+      message,
+      actionLabel,
+      onAction,
+      onClose,
+      hideCloseButton,
+      theme: {
+        yoga: {
+          components: { snackbar },
+        },
+      },
+      ...props
     },
+    ref,
+  ) => {
+    const timeoutRef = useRef();
+
+    useEffect(() => {
+      const shouldCloseOnTimer = open && duration && onClose;
+
+      if (shouldCloseOnTimer) {
+        timeoutRef.current = setTimeout(() => {
+          onClose();
+        }, duration);
+      }
+
+      return () => clearTimeout(timeoutRef.current);
+    }, [open, duration]);
+
+    return (
+      open && (
+        <AnimatedSnackbar
+          role="alert"
+          aria-label={variant}
+          variant={variant}
+          ref={ref}
+          {...props}
+        >
+          {!hideIcon && (
+            <Box display="flex" alignItems="center" mr="small" role="img">
+              <Icon
+                as={snackbar.variant.icon[variant]}
+                fill="secondary"
+                width="large"
+                height="large"
+              />
+            </Box>
+          )}
+
+          <Text.Small flex={1} mr="small" numberOfLines={2}>
+            {message}
+          </Text.Small>
+
+          <ActionsWrapper>
+            {onAction && actionLabel && (
+              <Button.Link onClick={onAction} secondary small>
+                {actionLabel}
+              </Button.Link>
+            )}
+
+            {!hideCloseButton && onClose && (
+              <IconButtonWrapper role="button" onClick={onClose}>
+                <Icon as={Close} fill="secondary" size="medium" />
+              </IconButtonWrapper>
+            )}
+          </ActionsWrapper>
+        </AnimatedSnackbar>
+      )
+    );
   },
-  ...props
-}) => {
-  const timeoutRef = useRef();
-
-  useEffect(() => {
-    const shouldCloseOnTimer = open && duration && onClose;
-
-    if (shouldCloseOnTimer) {
-      timeoutRef.current = setTimeout(() => {
-        onClose();
-      }, duration);
-    }
-
-    return () => clearTimeout(timeoutRef.current);
-  }, [open, duration]);
-
-  return (
-    open && (
-      <AnimatedSnackbar
-        role="alert"
-        aria-label={variant}
-        variant={variant}
-        {...props}
-      >
-        {!hideIcon && (
-          <Box display="flex" alignItems="center" mr="small" role="img">
-            <Icon
-              as={snackbar.variant.icon[variant]}
-              fill="secondary"
-              width="large"
-              height="large"
-            />
-          </Box>
-        )}
-
-        <Text.Small flex={1} mr="small" numberOfLines={2}>
-          {message}
-        </Text.Small>
-
-        <ActionsWrapper>
-          {onAction && actionLabel && (
-            <Button.Link onClick={onAction} secondary small>
-              {actionLabel}
-            </Button.Link>
-          )}
-
-          {!hideCloseButton && onClose && (
-            <IconButtonWrapper role="button" onClick={onClose}>
-              <Icon as={Close} fill="secondary" size="medium" />
-            </IconButtonWrapper>
-          )}
-        </ActionsWrapper>
-      </AnimatedSnackbar>
-    )
-  );
-};
+);
 
 Snackbar.propTypes = {
   /** Controls the snackbar visibility. */
