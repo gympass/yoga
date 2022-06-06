@@ -3,6 +3,106 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.36.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.35.1...@gympass/yoga@7.36.0) (2022-06-01)
+
+
+### Features
+
+* **feedback:** update color tokens ([0b1e201](https://github.com/Gympass/yoga/commit/0b1e201ccfad0e88b88f586acda584aeb92135e8))
+* add feedback component ([8257008](https://github.com/Gympass/yoga/commit/82570083c6295380627e86bd47bdc8f627495ca2))
+
+
+
+
+
+## [7.35.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.35.0...@gympass/yoga@7.35.1) (2022-06-01)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+# [7.35.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.34.0...@gympass/yoga@7.35.0) (2022-05-30)
+
+
+### Features
+
+* **header:** add a prop in headers to change the logo to a custom ([f266685](https://github.com/Gympass/yoga/commit/f2666858946c069a1f4e0910ae79b7afc76d9364))
+
+
+
+
+
+# [7.34.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.33.1...@gympass/yoga@7.34.0) (2022-05-30)
+
+
+### Bug Fixes
+
+* **snackbar:** apply use memo at pan responder to check children height ([3304c2d](https://github.com/Gympass/yoga/commit/3304c2dc5f60c5eeb659868fe88783172a2f469e))
+* **snackbar:** button on press handler at native component ([ad5613f](https://github.com/Gympass/yoga/commit/ad5613fd6a3f7ed741ece29b9259916b40ab636b))
+
+
+### Features
+
+* **snackbar:** add callback function to close animation ([c7a281c](https://github.com/Gympass/yoga/commit/c7a281c37d9f993a8885dd814d6b011efef884a2))
+* **snackbar:** add duration props ([9fea1a4](https://github.com/Gympass/yoga/commit/9fea1a4ac97508f10cc240fdf37d524ce0b834a6))
+* **snackbar:** add elevation ([82e337f](https://github.com/Gympass/yoga/commit/82e337f6343b5b17fedea9accbefdf7674dbf4d5))
+* **snackbar:** add elevation and bottomOffset ([7235480](https://github.com/Gympass/yoga/commit/7235480c2e0be3621fe8cd48d129deecf60f149e))
+* **snackbar:** add forwardRef and remove isOpen prop ([7d0d10c](https://github.com/Gympass/yoga/commit/7d0d10c6fe0a4270458561acf461663f17683789))
+* **snackbar:** add handle onAction behavior ([07ce0b7](https://github.com/Gympass/yoga/commit/07ce0b7e084e2cb615a48d5fdf7cb8ccd8a92d81))
+* **snackbar:** add native animation and pan gesture handler ([d91f926](https://github.com/Gympass/yoga/commit/d91f9264a091026a68a6844ab1dbab397291d3aa))
+* **snackbar:** add number of lines ([670e728](https://github.com/Gympass/yoga/commit/670e728f7c55ddf8bbef78838674ed34da1ee142))
+* **snackbar:** add some custom props ([3ec8588](https://github.com/Gympass/yoga/commit/3ec8588939c65c58b3be6ebedf4fb230b0fcc662))
+* **snackbar:** create component without custom props ([5765833](https://github.com/Gympass/yoga/commit/57658339e191436db4ff9b49e8ede4690632e007))
+* **snackbar:** create mobile component ([5d21faa](https://github.com/Gympass/yoga/commit/5d21faa051f9bfbe2e95097b2d5f8032ea8a8b78))
+* **snackbar:** get children height ([e198465](https://github.com/Gympass/yoga/commit/e198465290eb2c707b72557fe5a5498de6f57361))
+* **snackbar:** get window height and change swipe threshold ([490db9c](https://github.com/Gympass/yoga/commit/490db9ced9d64caef54ebfc3da9e2d0ad66f0649))
+* **snackbar:** hide and show snackbar when props update ([59f653e](https://github.com/Gympass/yoga/commit/59f653e5aac2202dc8288a6465d9859854c90774))
+* **snackbar:** open snackbar when call a function ([d6ec419](https://github.com/Gympass/yoga/commit/d6ec41959a4b72059bf2770e55f655fb10e05f5c))
+* **snackbar:** set on action as optional even if the action label exists ([f04f5ab](https://github.com/Gympass/yoga/commit/f04f5ab5c57d2e6b864b88c9df4206afae74f910))
+* **snackbar:** try inout animation ([eec3e59](https://github.com/Gympass/yoga/commit/eec3e59b3f32afb95e84f6bb0c71f17c8b118a71))
+
+
+
+
+
+## [7.33.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.33.0...@gympass/yoga@7.33.1) (2022-05-30)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+# [7.33.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.32.1...@gympass/yoga@7.33.0) (2022-05-27)
+
+
+### Features
+
+* add extra props ([6b8500a](https://github.com/Gympass/yoga/commit/6b8500a8e24820068a142014b7ee91a375b070a0))
+* **heading:** adjust name ([01f3706](https://github.com/Gympass/yoga/commit/01f3706a2abd6df0578a1fcb5ddb69f80ff0e442))
+* **heading:** adjust name ([7518ac9](https://github.com/Gympass/yoga/commit/7518ac94cdf23764b50d163ecd5371cb5eaf5b59))
+* **heading:** create heading component ([d8b4ad1](https://github.com/Gympass/yoga/commit/d8b4ad12ce3d3306480efbab4843eec1ba33a18f))
+* **heading:** create tests ([e7d03fd](https://github.com/Gympass/yoga/commit/e7d03fda0cfb3799f8f359b9327304812d3ef047))
+* **heading:** improve tests ([a5bb198](https://github.com/Gympass/yoga/commit/a5bb198cd7363ad51c003784ff83a5876f393aab))
+* **heading:** update prop types ([730377b](https://github.com/Gympass/yoga/commit/730377be3c14fa1e4fc806417c6ccbc0d4b5cc9d))
+
+
+
+
+
+## [7.32.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.32.0...@gympass/yoga@7.32.1) (2022-05-25)
+
+
+### Bug Fixes
+
+* fieldset disabled state border-color ([398ad55](https://github.com/Gympass/yoga/commit/398ad5514bafbbefd08c9c447a438214aacd74a4))
+
+
+
+
+
 # [7.32.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.31.0...@gympass/yoga@7.32.0) (2022-05-18)
 
 

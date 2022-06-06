@@ -387,7 +387,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#7068D4",
+          "borderColor": "#5340C9",
           "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -413,7 +413,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
             "fontWeight": "500",
           },
           Object {
-            "color": "#7068D4",
+            "color": "#5340C9",
             "fontSize": 12,
             "lineHeight": 16,
           },
@@ -429,7 +429,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#FF874C",
+          "borderColor": "#CA4808",
           "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -453,7 +453,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
             "fontWeight": "500",
           },
           Object {
-            "color": "#FF874C",
+            "color": "#CA4808",
             "fontSize": 12,
             "lineHeight": 16,
           },
@@ -522,7 +522,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#7068D4",
+          "borderColor": "#5340C9",
           "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -546,7 +546,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
             "fontWeight": "500",
           },
           Object {
-            "color": "#7068D4",
+            "color": "#5340C9",
             "fontSize": 12,
             "lineHeight": 16,
           },
@@ -562,7 +562,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#FF874C",
+          "borderColor": "#CA4808",
           "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -586,7 +586,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
             "fontWeight": "500",
           },
           Object {
-            "color": "#FF874C",
+            "color": "#CA4808",
             "fontSize": 12,
             "lineHeight": 16,
           },
@@ -602,7 +602,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#FF874C",
+          "borderColor": "#CA4808",
           "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -626,7 +626,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
             "fontWeight": "500",
           },
           Object {
-            "color": "#FF874C",
+            "color": "#CA4808",
             "fontSize": 12,
             "lineHeight": 16,
           },
