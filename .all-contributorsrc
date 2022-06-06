@@ -370,11 +370,20 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "diegomarcuz",
+      "name": "Diego Marcuz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37422384?v=4",
+      "profile": "https://github.com/diegomarcuz",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "yoga",
-  "projectOwner": "Gympass",
+  "projectOwner": "gympass",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true
