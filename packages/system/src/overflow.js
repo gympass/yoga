@@ -21,10 +21,6 @@ const overflowY = props =>
     cssProperty: 'overflow-y',
   });
 
-const overflows = compose(
-  overflow,
-  overflowX,
-  overflowY,
-);
+const overflows = compose(overflow, overflowX, overflowY);
 
 export { overflows, overflow, overflowX, overflowY };

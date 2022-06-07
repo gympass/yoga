@@ -36,13 +36,14 @@ const getRange = (width, range) => {
   }
 };
 
-export const matcher = (width, isNot = false, range = 'min') => (
-  ...style
-) => css`
-  @media ${not(isNot)}${getRange(width, range)} {
-    ${css(...style)}
-  }
-`;
+export const matcher =
+  (width, isNot = false, range = 'min') =>
+  (...style) =>
+    css`
+      @media ${not(isNot)}${getRange(width, range)} {
+        ${css(...style)}
+      }
+    `;
 
 availableBreakpoints.forEach(breakpoint => {
   media[breakpoint] = matcher(breakpoint);

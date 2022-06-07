@@ -66,11 +66,13 @@ const generator = ({
   return css({ [cssProperty]: transformedValue });
 };
 
-const compose = (...functions) => args =>
-  functions
-    .map(fn => fn(args))
-    .flat()
-    .filter(Boolean);
+const compose =
+  (...functions) =>
+  args =>
+    functions
+      .map(fn => fn(args))
+      .flat()
+      .filter(Boolean);
 
 export {
   getFromTheme,

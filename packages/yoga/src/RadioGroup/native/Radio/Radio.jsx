@@ -120,9 +120,8 @@ const Shadow = styled.View(
  * single option from a list.  */
 const RadioGroupRadio = React.forwardRef(
   ({ value, disabled, ...rest }, ref) => {
-    const { onChange, small, selectedValue, ...context } = useContext(
-      RadioGroupContext,
-    );
+    const { onChange, small, selectedValue, ...context } =
+      useContext(RadioGroupContext);
 
     const [pressing, togglePressing] = useState(false);
 
