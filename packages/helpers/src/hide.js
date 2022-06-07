@@ -40,7 +40,7 @@ const hide = isNot =>
       @media ${not(
           isNot,
         )} (min-width: ${breakpoint.width}px) and (max-width: ${nextBreakpoint.width -
-          1}px) {
+        1}px) {
         display: none !important;
       }
     `;

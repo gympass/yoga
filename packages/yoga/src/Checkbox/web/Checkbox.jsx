@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { bool, string, shape } from 'prop-types';
+import { bool, string, shape, oneOfType, node } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { Check, Rectangle } from '@gympass/yoga-icons';
@@ -302,7 +302,7 @@ const Checkbox = ({
 };
 
 Checkbox.propTypes = {
-  label: string,
+  label: oneOfType([string, node]),
   /** short helper text under checkbox */
   helper: string,
   value: string,

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
 import { string, func } from 'prop-types';
 import { Image } from 'react-native';
@@ -24,37 +24,33 @@ const Content = ({ icon, src, fill, content, stroke }) => {
  * The Avatar component is used to display the image.
  * It has two shapes: default and circle
  */
-const Avatar = ({
-  icon = BuildingFilled,
-  src,
-  children,
-  fill,
-  stroke,
-  ...props
-}) => {
-  return (
-    <Box
-      bgColor="elements.selectionAndIcons"
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-      width={48}
-      height={48}
-      borderRadius="small"
-      elevation="small"
-      overflow="hidden"
-      {...props}
-    >
-      <Content
-        icon={icon}
-        src={src}
-        fill={fill}
-        stroke={stroke}
-        content={children}
-      />
-    </Box>
-  );
-};
+const Avatar = forwardRef(
+  ({ icon = BuildingFilled, src, children, fill, stroke, ...props }, ref) => {
+    return (
+      <Box
+        ref={ref}
+        bgColor="elements.selectionAndIcons"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        width={48}
+        height={48}
+        borderRadius="small"
+        elevation="small"
+        overflow="hidden"
+        {...props}
+      >
+        <Content
+          icon={icon}
+          src={src}
+          fill={fill}
+          stroke={stroke}
+          content={children}
+        />
+      </Box>
+    );
+  },
+);
 
 Content.propTypes = {
   src: Image.propTypes.source,

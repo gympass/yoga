@@ -114,8 +114,8 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   border-color: #D7D7E0;
 }
 
-.c1:hover,
-.c1:focus-within {
+.c1:hover:not(:disabled),
+.c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -185,7 +185,6 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
       <input
         class="c2"
         label="Label"
-        type="number"
         value=""
       />
       <label
