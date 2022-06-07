@@ -7,7 +7,7 @@ import { CheckedFull } from '@gympass/yoga-icons';
 import { ThemeProvider, Snackbar } from '../..';
 import { Button } from '../../Card/web/PlanCard/Actions';
 
-RN.Animated.spring = jest.fn().mockReturnValue({
+RN.Animated.timing = jest.fn().mockReturnValue({
   start: jest.fn(),
 });
 
@@ -81,27 +81,21 @@ describe('<Snackbar />', () => {
       onAction: jest.fn(),
     };
 
-    const { getByText, getByTestId } = render(<Component {...overrideProps} />);
-
-    fireEvent.layout(getByTestId('wrapper'), {
-      nativeEvent: {
-        layout: { height: 200 },
-      },
-    });
+    const { getByText } = render(<Component {...overrideProps} />);
 
     fireEvent.press(getByText('Tap to open snackbar'));
 
-    expect(RN.Animated.spring.mock.calls[0][1]).toEqual({
-      toValue: 0,
-      bounciness: 0,
+    expect(RN.Animated.timing.mock.calls[0][1]).toMatchObject({
+      toValue: 1,
+      duration: 225,
       useNativeDriver: true,
     });
 
     fireEvent.press(getByText('Action'));
 
-    expect(RN.Animated.spring.mock.calls[1][1]).toEqual({
-      toValue: 200,
-      bounciness: 0,
+    expect(RN.Animated.timing.mock.calls[1][1]).toMatchObject({
+      toValue: 0,
+      duration: 195,
       useNativeDriver: true,
     });
   });
