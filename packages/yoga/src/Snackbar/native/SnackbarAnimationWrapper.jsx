@@ -1,5 +1,6 @@
 import React, {
   forwardRef,
+  useState,
   useEffect,
   useImperativeHandle,
   useRef,
@@ -9,11 +10,6 @@ import { Animated, Easing } from 'react-native';
 import { func, node, oneOf } from 'prop-types';
 import styled from 'styled-components';
 
-const easingValues = {
-  entry: Easing.bezier(0.0, 0.0, 0.2, 1),
-  exit: Easing.bezier(0.4, 0.0, 1, 1),
-};
-
 const durationDictionary = {
   fast: 4000,
   default: 8000,
@@ -22,6 +18,7 @@ const durationDictionary = {
 };
 
 const timingDuration = 200;
+const easing = Easing.inOut(Easing.bezier(0.41, 0.09, 0.2, 1));
 
 const Wrapper = styled(Animated.View)`
   position: absolute;
@@ -31,24 +28,27 @@ const Wrapper = styled(Animated.View)`
 
 const SnackbarAnimationWrapper = forwardRef(
   ({ onSnackbarClose, children, duration }, ref) => {
-    const translateY = useRef(new Animated.Value(0)).current;
+    const [childrenHeight, setChildrenHeight] = useState(0);
 
     const timeoutRef = useRef();
+    const translateY = useRef(new Animated.Value(0)).current;
 
-    const openAnimation = () => {
+    const openAnimation = callback => {
       Animated.timing(translateY, {
         toValue: 1,
         duration: timingDuration,
-        easing: easingValues.entry,
+        easing,
         useNativeDriver: true,
-      }).start();
+      }).start(({ finished }) => {
+        if (finished && callback) callback();
+      });
     };
 
     const closeAnimation = callback => {
       Animated.timing(translateY, {
         toValue: 0,
         duration: timingDuration,
-        easing: easingValues.exit,
+        easing,
         useNativeDriver: true,
       }).start(({ finished }) => {
         if (finished && callback) callback();
@@ -82,20 +82,26 @@ const SnackbarAnimationWrapper = forwardRef(
     useImperativeHandle(ref, () => ({
       open: openSnackbar,
       close: closeSnackbar,
-      translateY: dy => translateY.setValue(dy),
     }));
 
     useEffect(() => () => clearTimeout(timeoutRef.current), []);
 
     return (
       <Wrapper
+        onLayout={({
+          nativeEvent: {
+            layout: { height },
+          },
+        }) => {
+          setChildrenHeight(height);
+        }}
         style={[
           {
             transform: [
               {
                 translateY: translateY.interpolate({
                   inputRange: [0, 1],
-                  outputRange: [100, 0],
+                  outputRange: [childrenHeight, 0],
                 }),
               },
             ],

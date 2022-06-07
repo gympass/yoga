@@ -77,19 +77,13 @@ const Snackbar = forwardRef((props, ref) => {
     close: wrapperRef.current.close,
   }));
 
-  const handlePanResponderRelease = (_evt, gestureState) => {
-    const action =
-      gestureState.dy > SWIPE_THRESHOLD
-        ? wrapperRef.current.close
-        : wrapperRef.current.open;
-
-    action();
-  };
+  const handlePanResponderRelease = (_evt, gestureState) =>
+    (gestureState.dy > SWIPE_THRESHOLD
+      ? wrapperRef.current.close
+      : wrapperRef.current.open)();
 
   const panResponder = PanResponder.create({
-    onPanResponderMove: () => {
-      wrapperRef.current.translateY(0);
-    },
+    onPanResponderMove: wrapperRef.current?.close,
     onPanResponderRelease: handlePanResponderRelease,
     onPanResponderTerminate: handlePanResponderRelease,
     onStartShouldSetPanResponder: () => true,
