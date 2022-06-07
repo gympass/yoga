@@ -87,7 +87,7 @@ describe('<Snackbar />', () => {
 
     expect(RN.Animated.timing.mock.calls[0][1]).toMatchObject({
       toValue: 1,
-      duration: 225,
+      duration: 200,
       useNativeDriver: true,
     });
 
@@ -95,7 +95,7 @@ describe('<Snackbar />', () => {
 
     expect(RN.Animated.timing.mock.calls[1][1]).toMatchObject({
       toValue: 0,
-      duration: 195,
+      duration: 200,
       useNativeDriver: true,
     });
   });
