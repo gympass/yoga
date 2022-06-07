@@ -66,9 +66,8 @@ const Moon = styled(MoonVector)`
 `;
 
 const CodeToolbar = () => {
-  const { codeVisible, setCodeVisible, darkMode, setDarkMode } = useContext(
-    CodeBlockContext,
-  );
+  const { codeVisible, setCodeVisible, darkMode, setDarkMode } =
+    useContext(CodeBlockContext);
 
   return (
     <Toolbar>

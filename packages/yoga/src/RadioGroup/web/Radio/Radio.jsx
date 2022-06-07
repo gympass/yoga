@@ -174,9 +174,8 @@ const Wrapper = styled.div`
  * single option from a list. */
 const RadioGroupRadio = React.forwardRef(
   ({ value, disabled, style, className, ...rest }, ref) => {
-    const { name, onChange, selectedValue, ...context } = useContext(
-      RadioGroupContext,
-    );
+    const { name, onChange, selectedValue, ...context } =
+      useContext(RadioGroupContext);
 
     const inputValue = value;
     const checked = inputValue === selectedValue;

@@ -67,9 +67,8 @@ const Text = styled.Text(
 value on group to set the selected option. */
 const RadioGroupButton = React.forwardRef(
   ({ value, children, ...rest }, ref) => {
-    const { onChange, small, selectedValue, ...context } = useContext(
-      RadioGroupContext,
-    );
+    const { onChange, small, selectedValue, ...context } =
+      useContext(RadioGroupContext);
 
     const inputValue = value || children;
     const checked = inputValue === selectedValue;

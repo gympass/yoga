@@ -66,14 +66,8 @@ BannerActionButton.propTypes = {
 
 /** A banner is a component that displays a prominent message. It can have related action buttons on it or not. */
 const Banner = forwardRef((props, ref) => {
-  const {
-    icon,
-    variant,
-    message,
-    primaryButton,
-    secondaryButton,
-    ...rest
-  } = props;
+  const { icon, variant, message, primaryButton, secondaryButton, ...rest } =
+    props;
 
   return (
     <StyledBanner ref={ref} variant={variant} {...rest}>
