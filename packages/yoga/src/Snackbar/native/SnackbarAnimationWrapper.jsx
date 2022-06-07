@@ -9,11 +9,6 @@ import { Animated, Easing } from 'react-native';
 import { func, node, oneOf } from 'prop-types';
 import styled from 'styled-components';
 
-const durationValues = {
-  entry: 225,
-  exit: 195,
-};
-
 const easingValues = {
   entry: Easing.bezier(0.0, 0.0, 0.2, 1),
   exit: Easing.bezier(0.4, 0.0, 1, 1),
@@ -25,6 +20,8 @@ const durationDictionary = {
   slow: 10000,
   indefinite: -1,
 };
+
+const timingDuration = 200;
 
 const Wrapper = styled(Animated.View)`
   position: absolute;
@@ -41,7 +38,7 @@ const SnackbarAnimationWrapper = forwardRef(
     const openAnimation = () => {
       Animated.timing(translateY, {
         toValue: 1,
-        duration: durationValues.entry,
+        duration: timingDuration,
         easing: easingValues.entry,
         useNativeDriver: true,
       }).start();
@@ -50,7 +47,7 @@ const SnackbarAnimationWrapper = forwardRef(
     const closeAnimation = callback => {
       Animated.timing(translateY, {
         toValue: 0,
-        duration: durationValues.exit,
+        duration: timingDuration,
         easing: easingValues.exit,
         useNativeDriver: true,
       }).start(({ finished }) => {
