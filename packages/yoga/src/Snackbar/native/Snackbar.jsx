@@ -3,11 +3,12 @@ import React, {
   useEffect,
   useImperativeHandle,
   useRef,
+  useState,
 } from 'react';
-import { PanResponder } from 'react-native';
 import styled from 'styled-components';
 import { string, oneOf, func, elementType, number } from 'prop-types';
 
+import { PanResponder } from 'react-native';
 import Box from '../../Box';
 import Button from '../../Button';
 import Icon from '../../Icon';
@@ -65,30 +66,61 @@ const Snackbar = forwardRef((props, ref) => {
     bottomOffset,
     ...rest
   } = props;
-
   const wrapperRef = useRef();
 
-  useEffect(() => {
-    if (!message) wrapperRef.current.close();
-  }, [message]);
+  const [currentProps, setCurrentProps] = useState({
+    icon,
+    message,
+    actionLabel,
+    onAction,
+    variant,
+  });
 
   useImperativeHandle(ref, () => ({
-    open: wrapperRef.current.open,
-    close: wrapperRef.current.close,
+    open: () => {
+      wrapperRef.current.open();
+    },
+    close: () => {
+      wrapperRef.current.close();
+    },
   }));
 
-  const handlePanResponderRelease = (_evt, gestureState) => {
-    const action =
-      gestureState.dy > SWIPE_THRESHOLD
-        ? wrapperRef.current.close
-        : wrapperRef.current.open;
+  useEffect(() => {
+    if (wrapperRef.current && currentProps.message) {
+      wrapperRef.current.close(() => {
+        setCurrentProps({
+          icon,
+          message,
+          actionLabel,
+          onAction,
+          variant,
+        });
+        wrapperRef.current.open();
+      });
+    } else {
+      setCurrentProps({
+        icon,
+        message,
+        actionLabel,
+        onAction,
+        variant,
+      });
+    }
+  }, [icon, message, actionLabel, onAction, variant]);
 
-    action();
+  const handlePanResponderRelease = (_evt, gestureState) => {
+    if (gestureState.dy > SWIPE_THRESHOLD) {
+      wrapperRef.current.close();
+    } else {
+      wrapperRef.current.open();
+    }
   };
 
   const panResponder = PanResponder.create({
-    onPanResponderMove: () => {
-      wrapperRef.current.translateY(0);
+    onPanResponderMove: (_, gestureState) => {
+      if (gestureState.dy > 0) {
+        wrapperRef.current.translateY(gestureState.dy);
+      }
     },
     onPanResponderRelease: handlePanResponderRelease,
     onPanResponderTerminate: handlePanResponderRelease,
@@ -103,7 +135,9 @@ const Snackbar = forwardRef((props, ref) => {
 
   const handleOnAction = () => {
     wrapperRef.current.close();
-    if (onAction) onAction();
+    if (currentProps.onAction) {
+      currentProps.onAction();
+    }
   };
 
   return (
@@ -113,13 +147,18 @@ const Snackbar = forwardRef((props, ref) => {
       ref={wrapperRef}
     >
       <SnackbarContainer
-        variant={variant}
+        variant={currentProps.variant}
         bottomOffset={bottomOffset}
         {...rest}
         {...panResponder.panHandlers}
       >
-        {icon && (
-          <Icon as={icon} fill="secondary" size="large" marginRight="xxsmall" />
+        {currentProps.icon && (
+          <Icon
+            as={currentProps.icon}
+            fill="secondary"
+            size="large"
+            marginRight="xxsmall"
+          />
         )}
         <Text
           flex={1}
@@ -127,9 +166,9 @@ const Snackbar = forwardRef((props, ref) => {
           marginVertical="xxxsmall"
           numberOfLines={2}
         >
-          {message}
+          {currentProps.message}
         </Text>
-        {actionLabel && (
+        {currentProps.actionLabel && (
           <Box
             as={Button.Text}
             small
@@ -137,7 +176,7 @@ const Snackbar = forwardRef((props, ref) => {
             marginLeft="xxsmall"
             onPress={handleOnAction}
           >
-            {actionLabel}
+            {currentProps.actionLabel}
           </Box>
         )}
       </SnackbarContainer>
@@ -151,7 +190,7 @@ Snackbar.propTypes = {
   /** Can be any icon of yoga-icons. */
   icon: elementType,
   /** The message shown when snackbar is opened. The maximum number of lines is two. */
-  message: string.isRequired,
+  message: string,
   /** Label for a custom action. */
   actionLabel: string,
   /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
@@ -167,6 +206,7 @@ Snackbar.propTypes = {
 Snackbar.defaultProps = {
   variant: 'success',
   icon: undefined,
+  message: '',
   actionLabel: undefined,
   onAction: undefined,
   onSnackbarClose: undefined,
