@@ -20,7 +20,7 @@
     "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
     "prebuild": "rm -rf ./dist",
     "prepublishOnly": "node ../../scripts/prepublish.js",
-    "lint": "NODE_ENV=test eslint ./src",
+    "lint": "eslint ./src",
     "test": "NODE_ENV=test jest --config=../../jest/config/system.js"
   },
   "bugs": {
