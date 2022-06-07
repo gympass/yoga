@@ -80,7 +80,7 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
         "position": "absolute",
         "transform": Array [
           Object {
-            "translateY": 100,
+            "translateY": 0,
           },
         ],
         "width": "100%",
@@ -360,7 +360,7 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
         "position": "absolute",
         "transform": Array [
           Object {
-            "translateY": 100,
+            "translateY": 0,
           },
         ],
         "width": "100%",
@@ -499,7 +499,7 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
         "position": "absolute",
         "transform": Array [
           Object {
-            "translateY": 100,
+            "translateY": 0,
           },
         ],
         "width": "100%",
@@ -779,7 +779,7 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
         "position": "absolute",
         "transform": Array [
           Object {
-            "translateY": 100,
+            "translateY": 0,
           },
         ],
         "width": "100%",
