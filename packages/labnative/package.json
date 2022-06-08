@@ -11,6 +11,10 @@
   "dependencies": {
     "@gympass/yoga": "^7.37.2",
     "@react-native-picker/picker": "^1.16.6",
+    "@react-navigation/drawer": "^6.4.1",
+    "@react-navigation/native": "^6.0.4",
+    "@react-navigation/stack": "^6.0.9",
+    "@react-native-masked-view/masked-view": "^0.2.6",
     "react": "17.0.2",
     "react-native": "0.68.1",
     "react-native-gesture-handler": "^1.4.1",
@@ -18,9 +22,7 @@
     "react-native-screens": "^2.0.0-beta.2",
     "react-native-svg": "^10.0.0",
     "react-native-svg-transformer": "^0.14.3",
-    "react-navigation": "^4.0.10",
-    "react-navigation-drawer": "^2.2.2",
-    "react-navigation-stack": "^1.9.4",
+    "react-native-safe-area-context": "^3.3.2",
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
