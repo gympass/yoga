@@ -30,7 +30,7 @@ jobs:
         run: yarn --pure-lockfile --non-interactive
       - name: Build
         run: |
-          yarn build:packages
+          yarn build
       - name: Publish
         run: |
             export GH_TOKEN="${{ github.token }}"
