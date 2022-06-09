@@ -26,8 +26,8 @@
     "build:common": "yarn nx build @gympass/yoga-common",
     "build:tokens": "yarn nx build @gympass/yoga-tokens",
     "build:doc": "yarn nx build @gympass/yoga-doc",
-    "build:packages": "yarn nx build --ignore=@gympass/yoga-doc",
     "build:system": "yarn nx build @gympass/yoga-system",
+    "build:packages": "yarn nx run-many --target=build --exclude=@gympass/yoga-doc --all --parallel",
     "build": "yarn nx run-many --target=build --all --parallel",
     "new": "node ./scripts/cli/index.js"
   },
