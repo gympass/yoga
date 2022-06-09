@@ -54,6 +54,7 @@
     "prebuild": "gatsby clean",
     "build": "gatsby build --prefix-paths",
     "dev": "gatsby develop -o",
+    "lint": "NODE_ENV=test eslint ./src",
     "serve": "gatsby serve",
     "deploy": "gh-pages -d public"
   },

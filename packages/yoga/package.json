@@ -11,7 +11,11 @@
     "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
     "prebuild": "rm -rf ./dist",
     "postbuild": "cp -r ./src/Fonts ./dist/fonts",
-    "prepublishOnly": "node ../../scripts/prepublish.js --rn"
+    "prepublishOnly": "node ../../scripts/prepublish.js --rn",
+    "lint": "eslint ./src",
+    "test": "NODE_ENV=test jest --config=../../jest/config/web.js && jest --config=../../jest/config/native.js",
+    "test:web": "NODE_ENV=test jest --config=../../jest/config/web.js",
+    "test:native": "NODE_ENV=test jest --config=../../jest/config/native.js"
   },
   "keywords": [
     "Gympass",
