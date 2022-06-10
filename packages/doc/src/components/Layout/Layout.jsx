@@ -20,19 +20,10 @@ import WrenchIcon from 'images/wrench.svg';
 import Footer from './Footer';
 
 const MainWrapper = styled.div`
-  ${({
-    theme: {
-      yoga: {
-        colors: { primary },
-      },
-    },
-  }) => `
-    height: 100%;
-    a[target] {
-      color: ${primary};
-      text-decoration: none;
-    }
-  `}
+  height: 100%;
+  a[target] {
+    text-decoration: none;
+  }
 `;
 
 const Grid = styled.div`
@@ -140,9 +131,7 @@ const Layout = ({
       <MainWrapper>
         <Grid>
           <Header showMenu={showMenu} toggleMenu={toggleMenu}>
-            <HeaderLink to="/guidelines/product-content/introduction">
-              Guidelines
-            </HeaderLink>
+            <HeaderLink to="/guidelines/tokens/borders">Guidelines</HeaderLink>
             <HeaderLink to="/components">Components</HeaderLink>
             <HeaderLink to="/system/getting-started">System</HeaderLink>
           </Header>

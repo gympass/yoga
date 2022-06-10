@@ -54,6 +54,22 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   color: #231B22;
 }
 
+.c3:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -98,8 +114,8 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   border-color: #D7D7E0;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -176,6 +192,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
       <fieldset
         class="c2"
         label="Label"
+        value=""
       >
         <input
           aria-autocomplete="list"
@@ -183,6 +200,7 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
           autocomplete="off"
           class="c3"
           id="downshift-1-input"
+          label="Label"
           value=""
         />
         <label
@@ -260,6 +278,22 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   color: #231B22;
 }
 
+.c3:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -304,8 +338,8 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   border-color: #D7D7E0;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -382,6 +416,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
       <fieldset
         class="c2"
         label="Label"
+        value=""
       >
         <input
           aria-autocomplete="list"
@@ -389,6 +424,7 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
           autocomplete="off"
           class="c3"
           id="downshift-0-input"
+          label="Label"
           value=""
         />
         <label
@@ -466,6 +502,22 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   color: #231B22;
 }
 
+.c3:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -528,10 +580,11 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
+  border-color: #231B22;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -695,6 +748,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
       <fieldset
         class="c2"
         label="Label"
+        value="s"
       >
         <input
           aria-autocomplete="list"
@@ -703,6 +757,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
           autocomplete="off"
           class="c3"
           id="downshift-3-input"
+          label="Label"
           value="s"
         />
         <label
@@ -823,6 +878,22 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   color: #231B22;
 }
 
+.c3:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c3:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -885,10 +956,11 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
+  border-color: #231B22;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -1052,6 +1124,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
       <fieldset
         class="c2"
         label="Label"
+        value="s"
       >
         <input
           aria-autocomplete="list"
@@ -1060,6 +1133,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
           autocomplete="off"
           class="c3"
           id="downshift-2-input"
+          label="Label"
           value="s"
         />
         <label

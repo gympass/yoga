@@ -13,6 +13,7 @@ const StyledButton = styled.button`
     small,
     inverted,
     secondary,
+    disabled,
     theme: {
       yoga: {
         baseFont,
@@ -77,16 +78,24 @@ const StyledButton = styled.button`
         }
       }
 
-      &:disabled {
+      ${
+        disabled
+          ? `
+      
         background-color ${button.types.contained.backgroundColor.disabled};
         color: ${button.types.contained.font.disabled.color};
+        pointer-events: none;
 
         svg {
           fill: ${button.types.contained.font.disabled.color};
         }
 
         cursor: not-allowed;
+      
+      `
+          : ''
       }
+      
 
       ${
         inverted

@@ -63,16 +63,6 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
   fill: #FFFFFF;
 }
 
-.c1:disabled {
-  background-color: #F5F5FA;
-  color: #D7D7E0;
-  cursor: not-allowed;
-}
-
-.c1:disabled svg {
-  fill: #D7D7E0;
-}
-
 .c0 {
   padding: 16px  16px  16px  16px;
   border-radius: 8px;

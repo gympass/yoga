@@ -11,6 +11,7 @@ const Fieldset = styled.fieldset`
     error,
     disabled,
     full,
+    value,
     theme: {
       yoga: {
         colors,
@@ -30,12 +31,16 @@ const Fieldset = styled.fieldset`
       error ? colors.feedback.attention[1] : input.border.color.default
     };
 
-    &:hover, &:focus-within {
-      border-color: ${
-        error ? colors.feedback.attention[1] : input.border.color.typed
-      };
+    ${value && !error ? `border-color: ${input.border.color.typed};` : ''}
 
-      ${disabled ? `border-color: ${colors.elements.lineAndBorders};` : ''}
+    ${disabled ? `border-color: ${colors.elements.lineAndBorders};` : ''}
+
+    &:hover, &:focus-within { 
+      &:not(:disabled) {
+        border-color: ${
+          error ? colors.feedback.attention[1] : input.border.color.typed
+        };
+      } 
     }
 
     

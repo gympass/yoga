@@ -94,82 +94,95 @@ const AnimatedSnackbar = styled(StyledSnackbar)`
   animation: ${fadeIn} 0.2s ease-in-out;
 `;
 
-const Snackbar = ({
-  open,
-  duration,
-  variant,
-  hideIcon,
-  message,
-  actionLabel,
-  onAction,
-  onClose,
-  theme: {
-    yoga: {
-      components: { snackbar },
+const Snackbar = React.forwardRef(
+  (
+    {
+      open,
+      duration,
+      variant,
+      hideIcon,
+      message,
+      actionLabel,
+      onAction,
+      onClose,
+      hideCloseButton,
+      theme: {
+        yoga: {
+          components: { snackbar },
+        },
+      },
+      ...props
     },
+    ref,
+  ) => {
+    const timeoutRef = useRef();
+
+    useEffect(() => {
+      const shouldCloseOnTimer = open && duration && onClose;
+
+      if (shouldCloseOnTimer) {
+        timeoutRef.current = setTimeout(() => {
+          onClose();
+        }, duration);
+      }
+
+      return () => clearTimeout(timeoutRef.current);
+    }, [open, duration]);
+
+    return (
+      open && (
+        <AnimatedSnackbar
+          role="alert"
+          aria-label={variant}
+          variant={variant}
+          ref={ref}
+          {...props}
+        >
+          {!hideIcon && (
+            <Box display="flex" alignItems="center" mr="small" role="img">
+              <Icon
+                as={snackbar.variant.icon[variant]}
+                fill="secondary"
+                width="large"
+                height="large"
+              />
+            </Box>
+          )}
+
+          <Text.Small flex={1} mr="small" numberOfLines={2}>
+            {message}
+          </Text.Small>
+
+          <ActionsWrapper>
+            {onAction && actionLabel && (
+              <Button.Link onClick={onAction} secondary small>
+                {actionLabel}
+              </Button.Link>
+            )}
+
+            {!hideCloseButton && onClose && (
+              <IconButtonWrapper role="button" onClick={onClose}>
+                <Icon as={Close} fill="secondary" size="medium" />
+              </IconButtonWrapper>
+            )}
+          </ActionsWrapper>
+        </AnimatedSnackbar>
+      )
+    );
   },
-  ...props
-}) => {
-  const timeoutRef = useRef();
-
-  useEffect(() => {
-    const shouldCloseOnTimer = open && duration && onClose;
-
-    if (shouldCloseOnTimer) {
-      timeoutRef.current = setTimeout(() => {
-        onClose();
-      }, duration);
-    }
-
-    return () => clearTimeout(timeoutRef.current);
-  }, [open, duration]);
-
-  return (
-    open && (
-      <AnimatedSnackbar
-        role="alert"
-        aria-label={variant}
-        variant={variant}
-        {...props}
-      >
-        {!hideIcon && (
-          <Box display="flex" alignItems="center" mr="small" role="img">
-            <Icon
-              as={snackbar.variant.icon[variant]}
-              fill="secondary"
-              width="large"
-              height="large"
-            />
-          </Box>
-        )}
-
-        <Text.Small flex={1} mr="small" numberOfLines={2}>
-          {message}
-        </Text.Small>
-
-        <ActionsWrapper>
-          {onAction && actionLabel && (
-            <Button.Link onClick={onAction} secondary small>
-              {actionLabel}
-            </Button.Link>
-          )}
-
-          {!duration && onClose && (
-            <IconButtonWrapper role="button" onClick={onClose}>
-              <Icon as={Close} fill="secondary" width="large" height="large" />
-            </IconButtonWrapper>
-          )}
-        </ActionsWrapper>
-      </AnimatedSnackbar>
-    )
-  );
-};
+);
 
 Snackbar.propTypes = {
   /** Controls the snackbar visibility. */
   open: bool,
 
-  /** A number in milliseconds to close snackbar automaticaly. The `onClose` function becomes required when passing this function. */
+  /** The message shown when snackbar is opened. */
+  message: string.isRequired,
+
+  /** Function to close the snackbar. */
+  onClose: func.isRequired,
+
+  /** A number in milliseconds to close snackbar automaticaly. */
   duration: number,
 
   /** Label for a custom action. */
@@ -178,17 +191,14 @@ Snackbar.propTypes = {
   /** Controls the snackbar icon visibility. */
   hideIcon: bool,
 
-  /** The message shown when snackbar is opened. */
-  message: string.isRequired,
-
   /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
   onAction: func,
 
-  /** Function to close the snackbar. */
-  onClose: func,
-
   /** The style variant, it may be "success", "failure" or "info". */
   variant: oneOf(['success', 'failure', 'info']),
+
+  /** Hides the close button. */
+  hideCloseButton: bool,
 };
 
 Snackbar.defaultProps = {
@@ -197,8 +207,8 @@ Snackbar.defaultProps = {
   actionLabel: undefined,
   hideIcon: false,
   onAction: undefined,
-  onClose: undefined,
   variant: 'success',
+  hideCloseButton: false,
 };
 
 export default memo(withTheme(Snackbar));

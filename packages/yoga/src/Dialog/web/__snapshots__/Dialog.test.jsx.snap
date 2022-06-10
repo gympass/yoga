@@ -63,16 +63,6 @@ exports[`<Dialog /> should match snapshot 1`] = `
   fill: #FFFFFF;
 }
 
-.c6:disabled {
-  background-color: #F5F5FA;
-  color: #D7D7E0;
-  cursor: not-allowed;
-}
-
-.c6:disabled svg {
-  fill: #D7D7E0;
-}
-
 .c3 {
   margin-bottom: 24px;
   color: #231B22;
@@ -90,11 +80,14 @@ exports[`<Dialog /> should match snapshot 1`] = `
 }
 
 .c5 {
-  margin-left: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -251,16 +244,6 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   fill: #FFFFFF;
 }
 
-.c9:disabled {
-  background-color: #F5F5FA;
-  color: #D7D7E0;
-  cursor: not-allowed;
-}
-
-.c9:disabled svg {
-  fill: #D7D7E0;
-}
-
 .c6 {
   margin-bottom: 24px;
   color: #231B22;
@@ -278,11 +261,14 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
 }
 
 .c8 {
-  margin-left: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -367,16 +353,6 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
 
 .c4:active svg {
   fill: #FFFFFF;
-}
-
-.c4:disabled {
-  background-color: #F5F5FA;
-  color: #D7D7E0;
-  cursor: not-allowed;
-}
-
-.c4:disabled svg {
-  fill: #D7D7E0;
 }
 
 .c4 svg {

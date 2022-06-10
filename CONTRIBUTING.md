@@ -30,7 +30,7 @@ native, web, and so on. To make it easy, there is a script at the root:
 $ yarn new NewComponent
 ```
 
-This will create/edit all files for the NewComponent:
+This will create/edit all files for the NewComponent in web and native versions:
 
 ```
 packages
@@ -62,6 +62,16 @@ packages
         │   └─index.native.js
         ├─index.js
         └─index.native.js
+```
+
+If you want to create a new component for only web or native version, you can add the respective flag:
+
+```
+$ yarn new NewComponent --web
+```
+
+```
+$ yarn new NewComponent --native
 ```
 
 ### Theming
@@ -144,7 +154,7 @@ $ yarn test:web
 ## New Doc
 
 If you want to add a documentation that isn't of a component, like
-[this one](https://gympass.github.io/yoga/guidelines/product-content), you can
+[this one](https://gympass.github.io/yoga/guidelines/tokens), you can
 create an `.md` file under `./docs/content/guidelines` and it will be automagically added.
 
 ## New Icon

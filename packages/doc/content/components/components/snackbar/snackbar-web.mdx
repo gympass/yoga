@@ -1,0 +1,170 @@
+### Usage
+
+#### Simple
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('onAction function');
+  };
+
+  return (
+    <>
+      <Button onClick={handleOpen}>Open snackbar</Button>
+
+      <Snackbar
+        open={isOpen}
+        message="Wellbeing is now universal."
+        actionLabel="Action"
+        onAction={handleOnAction}
+        onClose={handleOnClose}
+      />
+    </>
+  );
+});
+```
+
+#### Variants
+
+The `Snackbar` has styles variants. Their are `success`, `failure` and `info`.
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = variant => {
+    setIsOpen(state => ({ ...state, [variant]: true }));
+  };
+
+  const handleOnClose = variant => {
+    setIsOpen(state => ({ ...state, [variant]: false }));
+  };
+
+  const handleOnAction = () => {
+    alert('onAction function');
+  };
+
+  return (
+    <>
+      <Box display="flex" flexDirection="column" justifyContent="space-between">
+        <Button.Outline onClick={() => handleOpen('info')}>Open info snackbar</Button.Outline>
+        
+        <br/>
+        
+        <Button.Outline onClick={() => handleOpen('success')}>Open success snackbar</Button.Outline>
+        
+        <br/>
+
+        <Button.Outline onClick={() => handleOpen('failure')}>Open failure snackbar</Button.Outline>
+      </Box>
+      
+      <Snackbar
+        open={isOpen.info}
+        variant="info"
+        message="We are making wellbeing universal."
+        onClose={() => handleOnClose('info')}
+      />
+
+      <Snackbar
+        open={isOpen.success}
+        message="Wellbeing is now universal."
+        onClose={() => handleOnClose('success')}
+      />
+
+      <Snackbar
+        open={isOpen.failure}
+        variant="failure"
+        message="Something went wrong."
+        actionLabel="Retry"
+        onAction={handleOnAction}
+        onClose={() => handleOnClose('failure')}
+      />
+    </>
+  );
+});
+```
+
+#### Close automaticaly
+
+The `Snackbar` has the ability to close itself automaticaly. To do it, you must provide `onClose` and `duration` props.
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = variant => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = variant => {
+    setIsOpen(false);
+  };
+
+  return (
+    <>
+      <Button.Outline onClick={handleOpen}>Open snackbar</Button.Outline>
+
+      <Snackbar
+        open={isOpen}
+        variant="info"
+        message="We are making wellbeing universal."
+        duration={4000}
+        onClose={handleOnClose}
+        hideCloseButton
+      />
+    </>
+  );
+});
+```
+
+#### Action
+
+The `Snackbar` may have an action to do anything you need. To do it, you must provide `onAction` and `actionLabel` props.
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = variant => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = variant => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('This is your custom action');
+  };
+
+  return (
+    <>
+      <Button.Outline onClick={handleOpen}>Open snackbar</Button.Outline>
+
+      <Snackbar
+        open={isOpen}
+        variant="info"
+        message="We are making wellbeing universal."
+        duration={4000}
+        onAction={handleOnAction}
+        actionLabel="Custom Action"
+        onClose={handleOnClose}
+      />
+    </>
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Snackbar" platform="web" />

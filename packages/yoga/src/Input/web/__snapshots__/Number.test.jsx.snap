@@ -54,6 +54,22 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   color: #231B22;
 }
 
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -98,8 +114,8 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
   border-color: #D7D7E0;
 }
 
-.c1:hover,
-.c1:focus-within {
+.c1:hover:not(:disabled),
+.c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -164,10 +180,11 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
     <fieldset
       class="c1"
       label="Label"
+      value=""
     >
       <input
         class="c2"
-        type="number"
+        label="Label"
         value=""
       />
       <label

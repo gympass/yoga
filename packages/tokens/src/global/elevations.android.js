@@ -22,11 +22,7 @@
  */
 const elevations = [0, 4, 8, 12];
 
-[
-  elevations.zero,
-  elevations.small,
-  elevations.medium,
-  elevations.large,
-] = elevations;
+[elevations.zero, elevations.small, elevations.medium, elevations.large] =
+  elevations;
 
 export default elevations;
