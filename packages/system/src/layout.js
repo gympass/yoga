@@ -58,13 +58,6 @@ const zIndex = props =>
     cssProperty: 'zIndex',
   });
 
-const positions = compose(
-  position,
-  top,
-  right,
-  bottom,
-  left,
-  zIndex,
-);
+const positions = compose(position, top, right, bottom, left, zIndex);
 
 export { display, positions, position, top, right, bottom, left, zIndex };

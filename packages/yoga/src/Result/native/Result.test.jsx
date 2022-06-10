@@ -114,4 +114,17 @@ describe('<Result />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot without attendence', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Result avatar={<Avatar />} title="Gym">
+          <Result.Details items={entranceList} dots />
+          <Result.Details items={activitiesList} dots />
+        </Result>
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });

@@ -35,6 +35,8 @@ const Field = styled.input`
   box-sizing: border-box;
 
   ${({
+    label,
+    placeholder,
     cleanable,
     error,
     value,
@@ -49,9 +51,9 @@ const Field = styled.input`
   }) => css`
     height: ${input.height}px;
     padding-top: ${input.padding.top}px;
-    padding-right: ${
-      cleanable ? ICON_SIZE + input.padding.right * 2 : input.padding.right
-    }px;
+    padding-right: ${cleanable
+      ? ICON_SIZE + input.padding.right * 2
+      : input.padding.right}px;
     padding-bottom: ${input.padding.bottom}px;
     padding-left: ${input.padding.left}px;
 
@@ -73,10 +75,13 @@ const Field = styled.input`
         ${labelTransition}
 
         font-weight: ${input.label.font.weight};
-        color: ${
-          error ? `${colors.feedback.attention[1]}` : `${colors.text.primary}`
-        };
+        color: ${error
+          ? `${colors.feedback.attention[1]}`
+          : `${colors.text.primary}`};
+      }
 
+      &::placeholder {
+        color: ${input.label.color.default};
       }
     }
 
@@ -85,21 +90,29 @@ const Field = styled.input`
       color: ${colors.text.disabled};
     }
 
-    &::placeholder {
-      color: ${input.label.color.default};
-    }
+    ${placeholder && label
+      ? css`
+          &::placeholder {
+            color: transparent;
+          }
+        `
+      : css`
+          &::placeholder {
+            color: ${input.label.color.default};
+          }
+        `}
 
     ${value &&
-      css`
-        & ~ legend {
-          max-width: max-content;
-        }
+    css`
+      & ~ legend {
+        max-width: max-content;
+      }
 
-        & ~ label {
-          color: ${error ? `${colors.feedback.attention[1]}` : ''};
-          ${labelTransition}
-        }
-      `}
+      & ~ label {
+        color: ${error ? `${colors.feedback.attention[1]}` : ''};
+        ${labelTransition}
+      }
+    `}
   `}
 
   &[type="number"]::-webkit-outer-spin-button,

@@ -25,6 +25,7 @@ const Attendances = ({ attendances, rate }) => (
     alignItems="center"
     justifyContent="center"
     flexDirection="row"
+    mb="xxxsmall"
   >
     <List>
       {attendances.map(({ description, icon }) => (

@@ -9,7 +9,7 @@ describe('<Snackbar />', () => {
   it('should match snapshot', () => {
     const { container } = render(
       <ThemeProvider>
-        <Snackbar open message="Make wellbeing universal" />
+        <Snackbar open message="Make wellbeing universal" onClose={jest.fn()} />
       </ThemeProvider>,
     );
 
@@ -19,7 +19,7 @@ describe('<Snackbar />', () => {
   it('should render a minimal snackbar', () => {
     render(
       <ThemeProvider>
-        <Snackbar open message="Make wellbeing universal" />
+        <Snackbar open message="Make wellbeing universal" onClose={jest.fn()} />
       </ThemeProvider>,
     );
 
@@ -32,7 +32,12 @@ describe('<Snackbar />', () => {
   it('should not render an icon', () => {
     render(
       <ThemeProvider>
-        <Snackbar open message="Make wellbeing universal" hideIcon />
+        <Snackbar
+          open
+          message="Make wellbeing universal"
+          onClose={jest.fn()}
+          hideIcon
+        />
       </ThemeProvider>,
     );
 
@@ -48,6 +53,7 @@ describe('<Snackbar />', () => {
           open
           message="Make wellbeing universal"
           onAction={onActionMock}
+          onClose={jest.fn()}
           actionLabel="Let's go"
         />
       </ThemeProvider>,
@@ -92,6 +98,7 @@ describe('<Snackbar />', () => {
           duration={1000}
           message="Make wellbeing universal"
           onClose={onCloseMock}
+          hideCloseButton
         />
       </ThemeProvider>,
     );
@@ -99,6 +106,27 @@ describe('<Snackbar />', () => {
     expect(screen.queryByRole('button')).toBeNull();
 
     jest.runAllTimers();
+
+    expect(onCloseMock).toHaveBeenCalledTimes(1);
+  });
+
+  it('should close with timeout set up', async () => {
+    const onCloseMock = jest.fn();
+
+    render(
+      <ThemeProvider>
+        <Snackbar
+          open
+          duration={1000}
+          message="Make wellbeing universal"
+          onClose={onCloseMock}
+        />
+      </ThemeProvider>,
+    );
+
+    const button = screen.getByRole('button');
+
+    fireEvent.click(button);
 
     expect(onCloseMock).toHaveBeenCalledTimes(1);
   });

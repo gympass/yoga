@@ -74,7 +74,6 @@ $ yarn new NewComponent --web
 $ yarn new NewComponent --native
 ```
 
-
 ### Theming
 
 Every component has its own `theme` file. You can find it in its own folder.
@@ -155,7 +154,7 @@ $ yarn test:web
 ## New Doc
 
 If you want to add a documentation that isn't of a component, like
-[this one](https://gympass.github.io/yoga/guidelines/product-content), you can
+[this one](https://gympass.github.io/yoga/guidelines/tokens), you can
 create an `.md` file under `./docs/content/guidelines` and it will be automagically added.
 
 ## New Icon

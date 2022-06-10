@@ -4,12 +4,13 @@ const native = (imports, code) => `import React from 'react';
 import styled from 'styled-components';
 ${injectImport(
   imports,
-  ['ThemeProvider', 'View, StyleSheet'],
+  ['ThemeProvider, FontLoader', 'View, StyleSheet'],
   ['@gympass/yoga', 'react-native'],
 )}
 
 const App = () => (
   <ThemeProvider>
+    <FontLoader />
     <View style={styles.container}>
       ${code}
     </View>

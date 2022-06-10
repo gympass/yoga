@@ -64,9 +64,11 @@ const Label = styled.label`
     theme: {
       yoga: {
         components: { progress },
+        colors: { text },
       },
     },
   }) => `
+  color: ${text.secondary};
   font-size: ${progress.label.font.size}px;
   letter-spacing: normal;
 `}
@@ -103,7 +105,7 @@ const Wrapper = styled.div`
         ${Label} {
           max-width: 280px;
 
-          margin-top: ${spacing.xxxsmall}px;
+          margin-top: ${spacing.xxsmall}px;
         }
       `
     }
@@ -137,18 +139,20 @@ Wrapper.defaultProps = {
 /** The Progress is a component used to indicate a progress of an indicator
  * of quantity. The use of labels numeric or alphabetic can increase the user
  * understanding. */
-const Progress = ({ label, max, value, variant, ...props }) => {
-  const isNumber = !/[a-zA-Z]/g.test(label.value);
+const Progress = React.forwardRef(
+  ({ label, max, value, variant, ...props }, ref) => {
+    const isNumber = !/[a-zA-Z]/g.test(label.value);
 
-  return (
-    <Wrapper isNumber={isNumber} align={label.placement} {...props}>
-      <ProgressBar max={max} value={value} variant={variant} />
-      {Object.keys(label).length > 0 && (isNumber || label.value) && (
-        <Label>{label.value}</Label>
-      )}
-    </Wrapper>
-  );
-};
+    return (
+      <Wrapper isNumber={isNumber} align={label.placement} ref={ref} {...props}>
+        <ProgressBar max={max} value={value} variant={variant} />
+        {Object.keys(label).length > 0 && (isNumber || label.value) && (
+          <Label>{label.value}</Label>
+        )}
+      </Wrapper>
+    );
+  },
+);
 
 Progress.propTypes = {
   /** Use labels to increase users understanding. If the value is numeric, make

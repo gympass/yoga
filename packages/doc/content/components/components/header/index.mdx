@@ -6,6 +6,8 @@ metaDescription: 'Header Component'
 
 import styled from 'styled-components';
 import { media } from '@gympass/yoga-helpers';
+import { Icon } from '@gympass/yoga';
+import { FlagBrazil } from '@gympass/yoga-icons';
 
 # Header
 
@@ -30,6 +32,23 @@ The header is prepared to have a link to redirect the user clicking on the Gympa
 <Box width="100%">
   <Header link="/" />
 </Box>
+```
+
+### Custom logo
+
+The header changes the logo by passing a component to the logo prop. If nothing is passed, the default Gympass logo will be shown.
+
+```javascript state
+
+const CustomLogo = () => <Icon as={FlagBrazil} size="large" />;
+
+render(() => {
+  return (
+    <Box width="100%">
+      <Header logo={CustomLogo} />
+    </Box>
+  );
+});
 ```
 
 ### Receiving children

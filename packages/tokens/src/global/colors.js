@@ -30,7 +30,7 @@ const energy = '#FFC24C';
 /**
  * @type {Color}
  */
-const relax = '#7068D4';
+const relax = '#5340C9';
 
 // Brand colors ↓
 
@@ -42,7 +42,12 @@ const peace = '#FFB0A7';
 /**
  * @type {Color}
  */
-const verve = '#FF874C';
+const verve = '#CA4808';
+
+/**
+ * @type {Color}
+ */
+const brandingVerve = '#FF874C';
 
 /**
  * @type {Color}
@@ -114,6 +119,7 @@ const colors = {
   energy,
   relax,
   peace,
+  brandingVerve,
   verve,
   uplift,
   deepPurple,

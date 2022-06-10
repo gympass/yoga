@@ -25,11 +25,7 @@ import colors from './colors';
  */
 const elevations = elevate({ color: colors.medium });
 
-[
-  elevations.zero,
-  elevations.small,
-  elevations.medium,
-  elevations.large,
-] = elevations;
+[elevations.zero, elevations.small, elevations.medium, elevations.large] =
+  elevations;
 
 export default elevations;
