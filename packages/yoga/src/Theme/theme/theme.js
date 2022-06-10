@@ -49,18 +49,12 @@ const theme = tokens => {
     },
   };
 
-  [
-    colors.feedback.success.light,
-    colors.feedback.success.dark,
-  ] = colors.feedback.success;
-  [
-    colors.feedback.informative.light,
-    colors.feedback.informative.dark,
-  ] = colors.feedback.informative;
-  [
-    colors.feedback.attention.light,
-    colors.feedback.attention.dark,
-  ] = colors.feedback.attention;
+  [colors.feedback.success.light, colors.feedback.success.dark] =
+    colors.feedback.success;
+  [colors.feedback.informative.light, colors.feedback.informative.dark] =
+    colors.feedback.informative;
+  [colors.feedback.attention.light, colors.feedback.attention.dark] =
+    colors.feedback.attention;
 
   return {
     ...tokens,

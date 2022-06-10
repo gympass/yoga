@@ -61,58 +61,63 @@ const StyledChips = styled(Text)`
       : ''}
 `;
 
-const Chips = ({
-  children,
-  selected,
-  counter,
-  icons,
-  disabled,
-  onToggle,
-  onPress = onToggle,
-  theme: {
-    yoga: { spacing },
-  },
-  ...props
-}) => {
-  const [FirstIcon, SecondIcon] = icons;
+const Chips = React.forwardRef(
+  (
+    {
+      children,
+      selected,
+      counter,
+      icons,
+      disabled,
+      onToggle,
+      onPress = onToggle,
+      theme: {
+        yoga: { spacing },
+      },
+      ...props
+    },
+    ref,
+  ) => {
+    const [FirstIcon, SecondIcon] = icons;
 
-  return (
-    <TouchableWithoutFeedback onPress={onPress} {...props}>
-      <Wrapper disabled={disabled} selected={selected}>
-        {SecondIcon && (
-          <Icon
-            as={SecondIcon}
-            fill={selected ? 'primary' : 'secondary'}
-            width="small"
-            height="small"
-            style={{
-              marginRight: children ? spacing.xxxsmall : undefined,
-            }}
-          />
-        )}
-        <StyledChips
-          as={selected ? Text.Medium : Text}
-          selected={selected}
-          numberOfLines={1}
-        >
-          {children}
-        </StyledChips>
-        {selected && counter && !disabled && <Counter value={counter} />}
-        {FirstIcon && (
-          <Icon
-            as={FirstIcon}
-            fill={selected ? 'primary' : 'secondary'}
-            width="small"
-            height="small"
-            style={{
-              marginLeft: children ? spacing.xxxsmall : undefined,
-            }}
-          />
-        )}
-      </Wrapper>
-    </TouchableWithoutFeedback>
-  );
-};
+    return (
+      <TouchableWithoutFeedback onPress={onPress} ref={ref} {...props}>
+        <Wrapper disabled={disabled} selected={selected}>
+          {SecondIcon && (
+            <Icon
+              as={SecondIcon}
+              fill={selected ? 'primary' : 'secondary'}
+              width="small"
+              height="small"
+              style={{
+                marginRight: children ? spacing.xxxsmall : undefined,
+              }}
+            />
+          )}
+          <StyledChips
+            as={selected ? Text.Medium : Text}
+            selected={selected}
+            numberOfLines={1}
+          >
+            {children}
+          </StyledChips>
+          {selected && counter && !disabled && <Counter value={counter} />}
+          {FirstIcon && (
+            <Icon
+              as={FirstIcon}
+              fill={selected ? 'primary' : 'secondary'}
+              width="small"
+              height="small"
+              style={{
+                marginLeft: children ? spacing.xxxsmall : undefined,
+              }}
+            />
+          )}
+        </Wrapper>
+      </TouchableWithoutFeedback>
+    );
+  },
+);
 
 Chips.propTypes = {
   /** text to be displayed */

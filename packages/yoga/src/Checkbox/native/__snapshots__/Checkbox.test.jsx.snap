@@ -604,8 +604,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
             style={
               Array [
                 Object {
-                  "backgroundColor": "#FF874C",
-                  "borderColor": "#FF874C",
+                  "backgroundColor": "#CA4808",
+                  "borderColor": "#CA4808",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -721,7 +721,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
         style={
           Array [
             Object {
-              "color": "#FF874C",
+              "color": "#CA4808",
               "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "400",
@@ -783,7 +783,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
               Array [
                 Object {
                   "backgroundColor": "transparent",
-                  "borderColor": "#FF874C",
+                  "borderColor": "#CA4808",
                   "borderRadius": 4,
                   "borderStyle": "solid",
                   "borderWidth": 2,
@@ -826,7 +826,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
         style={
           Array [
             Object {
-              "color": "#FF874C",
+              "color": "#CA4808",
               "fontFamily": "Rubik",
               "fontSize": 14,
               "fontWeight": "400",

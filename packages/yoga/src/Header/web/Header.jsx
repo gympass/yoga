@@ -1,30 +1,14 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { string, node } from 'prop-types';
+import { string, node, elementType } from 'prop-types';
 
 import { media } from '@gympass/yoga-helpers';
 
-import Gympass from '../static/images/gympass-logo.svg';
 import Box from '../../Box';
 
-const GympassLogo = styled(Gympass)`
-  ${({
-    theme: {
-      yoga: {
-        components: { header },
-      },
-    },
-  }) => css`
-    margin-right: ${header.logo.margin.xxs}px;
-    width: ${header.logo.width.xxs}px;
-    ${media.lg`
-    width: ${header.logo.width.lg}px;
-    margin-right: ${header.logo.margin.lg}px;
-  `}
-  `}
-`;
+import Logo from './Logo';
 
-const Heading = styled(Box)`
+const StyledHeader = styled(Box)`
   ${({
     theme: {
       yoga: {
@@ -36,15 +20,15 @@ const Heading = styled(Box)`
     height: ${header.height.xxs}px;
 
     ${media.lg`
-    padding: 0 ${header.padding.lg}px;
-    height: ${header.height.lg}px;
-  `}
+      padding: 0 ${header.padding.lg}px;
+      height: ${header.height.lg}px;
+    `}
   `}
 `;
 
-const Header = ({ link, children }) => {
+const Header = ({ link, children, logo }) => {
   return (
-    <Heading
+    <StyledHeader
       as="header"
       d="flex"
       elevation="medium"
@@ -54,13 +38,13 @@ const Header = ({ link, children }) => {
     >
       {link ? (
         <a href={link}>
-          <GympassLogo />
+          <Logo customLogo={logo} />
         </a>
       ) : (
-        <GympassLogo />
+        <Logo customLogo={logo} />
       )}
       {children}
-    </Heading>
+    </StyledHeader>
   );
 };
 
@@ -69,11 +53,14 @@ Header.propTypes = {
   link: string,
   /** Use children to add whatever you want inside the header */
   children: node,
+  /** Use logo to change headers image */
+  logo: elementType,
 };
 
 Header.defaultProps = {
   link: null,
   children: null,
+  logo: null,
 };
 
 export default Header;

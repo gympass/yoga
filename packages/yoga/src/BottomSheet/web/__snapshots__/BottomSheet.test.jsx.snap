@@ -63,16 +63,6 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   fill: #FFFFFF;
 }
 
-.c10:disabled {
-  background-color: #F5F5FA;
-  color: #D7D7E0;
-  cursor: not-allowed;
-}
-
-.c10:disabled svg {
-  fill: #D7D7E0;
-}
-
 .c4 {
   margin-bottom: 24px;
   color: #231B22;
@@ -90,11 +80,14 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
 }
 
 .c8 {
-  margin-left: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 24px;
 }
 

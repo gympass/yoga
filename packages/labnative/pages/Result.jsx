@@ -208,6 +208,13 @@ const ResultPage = () => (
         <Result.Button>See Details</Result.Button>
       </Result>
     </ResultWrapper>
+    <ResultWrapper>
+      <DocTitle>Result without attendances</DocTitle>
+      <Result avatar={<Avatar src={classAvatar} />} title="Gym">
+        <Result.Details items={entrancesExample3} dots />
+        <Result.Details items={activitiesExample3} dots />
+      </Result>
+    </ResultWrapper>
   </ScrollView>
 );
 

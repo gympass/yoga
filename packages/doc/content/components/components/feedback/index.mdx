@@ -1,0 +1,103 @@
+---
+title: 'Feedback'
+metaTitle: 'Feedback'
+metaDescription: 'Feedback Component'
+---
+
+# Feedback
+
+## Reference
+
+This screen can be used to give feedback to the user of success, information, or attention.
+
+## Usage
+
+### Success variant
+
+```javascript
+<Box h={611}>
+  <Feedback
+    variant="success"
+    title="Welcome to Yoga, Feedback."
+    description="Enjoy your membership! Access thousands of gyms, studios and wellness  app."
+  >
+    <Feedback.PrimaryButton>Ok</Feedback.PrimaryButton>
+    <Feedback.SecondaryButton>Cancel</Feedback.SecondaryButton>
+  </Feedback>
+</Box>
+```
+
+### Informative variant
+
+```javascript
+<Box h={611}>
+  <Feedback
+    variant="informative"
+    title="Welcome to Yoga, Feedback."
+    description="Enjoy your membership! Access thousands of gyms, studios and wellness  app."
+  >
+    <Feedback.PrimaryButton>Ok</Feedback.PrimaryButton>
+    <Feedback.SecondaryButton>Cancel</Feedback.SecondaryButton>
+  </Feedback>
+</Box>
+```
+
+### Attention variant
+
+```javascript
+<Box h={611}>
+  <Feedback
+    variant="attention"
+    title="Welcome to Yoga, Feedback."
+    description="Enjoy your membership! Access thousands of gyms, studios and wellness  app."
+  >
+    <Feedback.PrimaryButton>Ok</Feedback.PrimaryButton>
+    <Feedback.SecondaryButton>Cancel</Feedback.SecondaryButton>
+  </Feedback>
+</Box>
+```
+
+### Only with primary button
+
+```javascript
+<Box h={611}>
+  <Feedback
+    variant="success"
+    title="Welcome to Yoga, Feedback."
+    description="Enjoy your membership! Access thousands of gyms, studios and wellness  app."
+  >
+    <Feedback.PrimaryButton>Ok</Feedback.PrimaryButton>
+  </Feedback>
+</Box>
+```
+
+### Without buttons
+
+```javascript
+<Box h={611}>
+  <Feedback
+    variant="success"
+    title="Welcome to Yoga, Feedback."
+    description="Enjoy your membership! Access thousands of gyms, studios and wellness  app."
+  />
+</Box>
+```
+
+### Overriding title props
+
+```javascript
+<Box h={611}>
+  <Feedback
+    variant="success"
+    description="Enjoy your membership! Access thousands of gyms, studios and wellness  app."
+  >
+    <Feedback.Title as="h1">Welcome to Yoga, Feedback.</Feedback.Title>
+    <Feedback.PrimaryButton>Ok</Feedback.PrimaryButton>
+    <Feedback.SecondaryButton>Cancel</Feedback.SecondaryButton>
+  </Feedback>
+</Box>
+```
+
+## Props
+
+<PropsTable component="Feedback" platform="web" />

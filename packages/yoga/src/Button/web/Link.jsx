@@ -1,11 +1,12 @@
 import React from 'react';
-import { bool } from 'prop-types';
+import { bool, string } from 'prop-types';
+
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 
-import StyledButton from './StyledButton';
+import Button from './Button';
 
-const Link = styled(StyledButton)`
+const Link = styled(Button)`
   ${({
     full,
     secondary,
@@ -55,11 +56,13 @@ const ButtonLink = props => <Link {...props} />;
 ButtonLink.propTypes = {
   disabled: bool,
   secondary: bool,
+  href: string,
 };
 
 ButtonLink.defaultProps = {
   disabled: false,
   secondary: false,
+  href: undefined,
 };
 
 ButtonLink.displayName = 'Button.Link';

@@ -8,7 +8,9 @@ const StyledFlatList = styled.FlatList`
 /** Lists are a continuous group of text or images. They are composed of items
 containing primary and supplemental actions, which are represented by icons and
 text. */
-const List = ({ ...rest }) => <StyledFlatList {...rest} />;
+const List = React.forwardRef(({ ...rest }, ref) => (
+  <StyledFlatList ref={ref} {...rest} />
+));
 
 List.displayName = 'List';
 

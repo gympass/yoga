@@ -63,16 +63,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   fill: #FFFFFF;
 }
 
-.c19:disabled {
-  background-color: #F5F5FA;
-  color: #D7D7E0;
-  cursor: not-allowed;
-}
-
-.c19:disabled svg {
-  fill: #D7D7E0;
-}
-
 .c15 {
   width: 16px;
   height: 16px;
@@ -191,10 +181,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   align-items: center;
   border-style: solid;
   padding: 4px 8px 4px 8px;
-  color: #7068D4;
+  color: #5340C9;
   border-radius: 4px;
   border-width: 1px;
-  border-color: #7068D4;
+  border-color: #5340C9;
   font-size: 12px;
   line-height: 16px;
   font-weight: 500;

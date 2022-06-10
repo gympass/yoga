@@ -45,28 +45,33 @@ const Info = styled(Text.Regular)(
   `,
 );
 
-const Helper = ({
-  full,
-  error,
-  helper,
-  disabled,
-  focused,
-  maxLength,
-  length,
-  hideMaxLength,
-}) => (
-  <HelperWrapper full={full} disabled={disabled}>
-    {(error || helper) && (
-      <Info disabled={disabled} focused={focused} error={error}>
-        {error || helper}
-      </Info>
-    )}
-    {!hideMaxLength && maxLength && (
-      <Info disabled={disabled} focused={focused} error={error}>
-        {length}/{maxLength}
-      </Info>
-    )}
-  </HelperWrapper>
+const Helper = React.forwardRef(
+  (
+    {
+      full,
+      error,
+      helper,
+      disabled,
+      focused,
+      maxLength,
+      length,
+      hideMaxLength,
+    },
+    ref,
+  ) => (
+    <HelperWrapper ref={ref} full={full} disabled={disabled}>
+      {(error || helper) && (
+        <Info disabled={disabled} focused={focused} error={error}>
+          {error || helper}
+        </Info>
+      )}
+      {!hideMaxLength && maxLength && (
+        <Info disabled={disabled} focused={focused} error={error}>
+          {length}/{maxLength}
+        </Info>
+      )}
+    </HelperWrapper>
+  ),
 );
 
 Helper.propTypes = {

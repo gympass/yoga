@@ -3,7 +3,8 @@ import { injectImport, getCodeFragments } from '..';
 const web = (imports, code) => {
   const isState = code.search('render') !== -1;
 
-  const buildCode = component => `import React, { useState, useEffect } from 'react';
+  const buildCode =
+    component => `import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 ${injectImport(imports, ['ThemeProvider, FontLoader'], ['@gympass/yoga'])}
@@ -17,11 +18,8 @@ ReactDOM.render(
 `;
 
   if (isState) {
-    const {
-      styledComponents,
-      codeBetweenRenderAndReturn,
-      componentCode,
-    } = getCodeFragments(code);
+    const { styledComponents, codeBetweenRenderAndReturn, componentCode } =
+      getCodeFragments(code);
 
     return buildCode(`${styledComponents || ''}
 const App = () => {
