@@ -13,20 +13,12 @@ module.exports = {
     },
     native: {
       only: ['**/native', '**/*.native.js'],
-      presets: [
-        ['@babel/preset-env', { loose: true }],
-        '@babel/preset-react',
-        'module:metro-react-native-babel-preset',
-      ],
+      presets: [['@babel/preset-env', { loose: true }], '@babel/preset-react'],
       plugins: ['import-glob'],
     },
     test: {
       plugins: ['import-glob', '@babel/plugin-transform-flow-strip-types'],
-      presets: [
-        ['@babel/preset-env', { loose: true }],
-        '@babel/preset-react',
-        'module:metro-react-native-babel-preset',
-      ],
+      presets: [['@babel/preset-env', { loose: true }], '@babel/preset-react'],
     },
   },
 };
