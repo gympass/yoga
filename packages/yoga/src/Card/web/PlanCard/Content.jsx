@@ -6,8 +6,9 @@ import theme from '../../../Theme/helpers/themeReader';
 import Text from '../../../Text';
 import Content from '../Card/Content';
 import Subtitle from './Subtitle';
+import Divider from '../../../Divider';
 
-const Title = styled(Text.H5)`
+const Title = styled(Text.Medium)`
   ${props => {
     const {
       components: { card, cardweb },
@@ -16,6 +17,7 @@ const Title = styled(Text.H5)`
     return css`
       color: ${card.plan.title.color};
       margin-bottom: ${cardweb.plan.title.margin.bottom}px;
+      line-height: ${cardweb.plan.title.lineHeight}px;
     `;
   }}
 `;
@@ -38,24 +40,17 @@ const Price = styled.div`
 
   ${props => {
     const {
-      components: { card, cardweb },
+      components: { cardweb },
     } = theme(props);
 
     return css`
-      margin-top: ${card.plan.price.margin.top}px;
       margin-bottom: ${cardweb.plan.price.margin.bottom}px;
     `;
   }}
 `;
 
-const EnhancePrice = styled(Text.Small)`
-  ${({ align }) => `
-    align-self: ${align};
-  `}
-`;
-
-const Currency = styled(EnhancePrice)`
-  margin-right: ${theme.components.card.plan.price.currency.margin.right}px;
+const EnhancePrice = styled(Text.Medium)`
+  align-self: center;
 `;
 
 const PlanCardContent = ({
@@ -74,18 +69,13 @@ const PlanCardContent = ({
     {title && <Title>{title}</Title>}
     {description && <Description>{description}</Description>}
     <Price>
-      {currency && (
-        <Currency as="sup" align="flex-start">
-          {currency}
-        </Currency>
-      )}
-      {price && <Text.H1 as="strong">{price}</Text.H1>}
+      {currency && <Text.H4 as="sup">{currency}</Text.H4>}
+      {price && <Text.H4 as="strong">{price}</Text.H4>}
       {period && (
-        <EnhancePrice as="sub" align="flex-end">
-          {`${suffix || ''} ${period}`}
-        </EnhancePrice>
+        <EnhancePrice as="sub">{`${suffix || ''} ${period}`}</EnhancePrice>
       )}
     </Price>
+    <Divider />
     {children}
   </Content>
 );

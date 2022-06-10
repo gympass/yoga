@@ -5,7 +5,7 @@ import * as RN from 'react-native';
 
 import { CheckedFull } from '@gympass/yoga-icons';
 import { ThemeProvider, Snackbar } from '../..';
-import { Button } from '../../Card/web/PlanCard/Actions';
+import Button from '../../Button';
 
 RN.Animated.spring = jest.fn().mockReturnValue({
   start: jest.fn(),
@@ -17,6 +17,8 @@ const Component = overrideProps => {
   return (
     <ThemeProvider>
       <Button
+        full
+        small
         onPress={() => {
           snackbarRef.current.open();
         }}

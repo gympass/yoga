@@ -56,7 +56,7 @@ const Card = ({
         },
       },
       margin: {
-        top: spacing.small,
+        top: spacing.xxsmall,
       },
     },
     list: {
