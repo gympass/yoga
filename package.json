@@ -42,7 +42,7 @@
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "latest",
     "@babel/eslint-parser": "^7.16.3",
-    "@react-native-community/eslint-config": "^3.0.1",
+    "@react-native-community/eslint-config": "^1.1.0",
     "@testing-library/jest-native": "^4.0.2",
     "@testing-library/react-native": "^6.0.0",
     "babel-jest": "^25.1.0",
@@ -75,7 +75,16 @@
     "packages": [
       "packages/*"
     ],
-    "nohoist": []
+    "nohoist": [
+      "@gympass/yoga-labnative/react-native*",
+      "@gympass/yoga-labnative/react-native*/**",
+      "@gympass/yoga-labnative/@react-navigation*",
+      "@gympass/yoga-labnative/@react-navigation/**",
+      "**/@react-navigation",
+      "**/@react-navigation/**",
+      "**/@react-navigation/core/",
+      "**/@react-navigation/core/**"
+    ]
   },
   "config": {
     "commitizen": {
