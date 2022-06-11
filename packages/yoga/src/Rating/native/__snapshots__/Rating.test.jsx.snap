@@ -2,786 +2,797 @@
 
 exports[`<Rating /> Snapshots should match snapshot when it is not readOnly 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  height={24}
+  onLayout={[Function]}
+  onMoveShouldSetResponder={[Function]}
+  onMoveShouldSetResponderCapture={[Function]}
+  onResponderEnd={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderReject={[Function]}
+  onResponderRelease={[Function]}
+  onResponderStart={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onStartShouldSetResponderCapture={[Function]}
+  pointerEvents="auto"
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": 24,
+        "justifyContent": "center",
+        "width": 120,
+      },
+    ]
   }
+  width={120}
 >
-  <View
+  <RNSVGSvgView
+    bbHeight={24}
+    bbWidth={24}
+    fill="#D7D7E0"
+    focusable={false}
     height={24}
-    pointerEvents="auto"
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        undefined,
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
           "height": 24,
-          "justifyContent": "center",
-          "width": 120,
+          "width": 24,
         },
       ]
     }
-    width={120}
+    width={24}
   >
-    <RNSVGSvgView
-      bbHeight={24}
-      bbWidth={24}
-      fill="#D7D7E0"
-      focusable={false}
-      height={24}
-      style={
+    <RNSVGGroup
+      fill={
         Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
+          0,
+          4292335584,
         ]
       }
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4292335584,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      bbHeight={24}
-      bbWidth={24}
-      fill="#D7D7E0"
-      focusable={false}
-      height={24}
-      style={
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
         Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
         ]
       }
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4292335584,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      bbHeight={24}
-      bbWidth={24}
-      fill="#D7D7E0"
-      focusable={false}
-      height={24}
-      style={
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
         Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
+          "fill",
         ]
       }
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4292335584,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      bbHeight={24}
-      bbWidth={24}
-      fill="#D7D7E0"
-      focusable={false}
-      height={24}
-      style={
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
+  <RNSVGSvgView
+    bbHeight={24}
+    bbWidth={24}
+    fill="#D7D7E0"
+    focusable={false}
+    height={24}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        undefined,
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": 24,
+          "width": 24,
+        },
+      ]
+    }
+    width={24}
+  >
+    <RNSVGGroup
+      fill={
         Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
+          0,
+          4292335584,
         ]
       }
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4292335584,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      bbHeight={24}
-      bbWidth={24}
-      fill="#D7D7E0"
-      focusable={false}
-      height={24}
-      style={
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
         Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
         ]
       }
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4292335584,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-  </View>
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
+  <RNSVGSvgView
+    bbHeight={24}
+    bbWidth={24}
+    fill="#D7D7E0"
+    focusable={false}
+    height={24}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        undefined,
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": 24,
+          "width": 24,
+        },
+      ]
+    }
+    width={24}
+  >
+    <RNSVGGroup
+      fill={
+        Array [
+          0,
+          4292335584,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
+  <RNSVGSvgView
+    bbHeight={24}
+    bbWidth={24}
+    fill="#D7D7E0"
+    focusable={false}
+    height={24}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        undefined,
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": 24,
+          "width": 24,
+        },
+      ]
+    }
+    width={24}
+  >
+    <RNSVGGroup
+      fill={
+        Array [
+          0,
+          4292335584,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
+  <RNSVGSvgView
+    bbHeight={24}
+    bbWidth={24}
+    fill="#D7D7E0"
+    focusable={false}
+    height={24}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        undefined,
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": 24,
+          "width": 24,
+        },
+      ]
+    }
+    width={24}
+  >
+    <RNSVGGroup
+      fill={
+        Array [
+          0,
+          4292335584,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
 </View>
 `;
 
 exports[`<Rating /> Snapshots should match snapshot with Rating 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  height={24}
+  onLayout={[Function]}
+  onMoveShouldSetResponder={[Function]}
+  onMoveShouldSetResponderCapture={[Function]}
+  onResponderEnd={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderReject={[Function]}
+  onResponderRelease={[Function]}
+  onResponderStart={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onStartShouldSetResponderCapture={[Function]}
+  pointerEvents="none"
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": 24,
+        "justifyContent": "center",
+        "width": 120,
+      },
+    ]
   }
+  width={120}
 >
-  <View
+  <RNSVGSvgView
+    bbHeight={24}
+    bbWidth={24}
+    fill="#D7D7E0"
+    focusable={false}
     height={24}
-    pointerEvents="none"
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        undefined,
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
           "height": 24,
-          "justifyContent": "center",
-          "width": 120,
+          "width": 24,
         },
       ]
     }
-    width={120}
+    width={24}
   >
-    <RNSVGSvgView
-      bbHeight={24}
-      bbWidth={24}
-      fill="#D7D7E0"
-      focusable={false}
-      height={24}
-      style={
+    <RNSVGGroup
+      fill={
         Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
+          0,
+          4292335584,
         ]
       }
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4292335584,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      bbHeight={24}
-      bbWidth={24}
-      fill="#D7D7E0"
-      focusable={false}
-      height={24}
-      style={
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
         Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
         ]
       }
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4292335584,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      bbHeight={24}
-      bbWidth={24}
-      fill="#D7D7E0"
-      focusable={false}
-      height={24}
-      style={
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
         Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
+          "fill",
         ]
       }
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4292335584,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      bbHeight={24}
-      bbWidth={24}
-      fill="#D7D7E0"
-      focusable={false}
-      height={24}
-      style={
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
+  <RNSVGSvgView
+    bbHeight={24}
+    bbWidth={24}
+    fill="#D7D7E0"
+    focusable={false}
+    height={24}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        undefined,
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": 24,
+          "width": 24,
+        },
+      ]
+    }
+    width={24}
+  >
+    <RNSVGGroup
+      fill={
         Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
+          0,
+          4292335584,
         ]
       }
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4292335584,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-    <RNSVGSvgView
-      bbHeight={24}
-      bbWidth={24}
-      fill="#D7D7E0"
-      focusable={false}
-      height={24}
-      style={
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
         Array [
-          Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          undefined,
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
-            "height": 24,
-            "width": 24,
-          },
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
         ]
       }
-      width={24}
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4292335584,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-  </View>
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
+  <RNSVGSvgView
+    bbHeight={24}
+    bbWidth={24}
+    fill="#D7D7E0"
+    focusable={false}
+    height={24}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        undefined,
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": 24,
+          "width": 24,
+        },
+      ]
+    }
+    width={24}
+  >
+    <RNSVGGroup
+      fill={
+        Array [
+          0,
+          4292335584,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
+  <RNSVGSvgView
+    bbHeight={24}
+    bbWidth={24}
+    fill="#D7D7E0"
+    focusable={false}
+    height={24}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        undefined,
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": 24,
+          "width": 24,
+        },
+      ]
+    }
+    width={24}
+  >
+    <RNSVGGroup
+      fill={
+        Array [
+          0,
+          4292335584,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
+  <RNSVGSvgView
+    bbHeight={24}
+    bbWidth={24}
+    fill="#D7D7E0"
+    focusable={false}
+    height={24}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        undefined,
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": 24,
+          "width": 24,
+        },
+      ]
+    }
+    width={24}
+  >
+    <RNSVGGroup
+      fill={
+        Array [
+          0,
+          4292335584,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
 </View>
 `;
 
 exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -1371,9 +1382,22 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
         />
       </RNSVGGroup>
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -1963,9 +1987,22 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
         />
       </RNSVGGroup>
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -2555,22 +2592,27 @@ exports[`<Rating /> Snapshots should match snapshot with different icon 1`] = `
         />
       </RNSVGGroup>
     </RNSVGSvgView>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`<Rating /> Snapshots should match snapshot with different icon quantity 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -2798,9 +2840,22 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -3111,9 +3166,22 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -3341,9 +3409,22 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -3654,9 +3735,22 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -3884,9 +3978,22 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -4197,9 +4304,22 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -4427,22 +4547,27 @@ exports[`<Rating /> Snapshots should match snapshot with different icon quantity
         y={0}
       />
     </RNSVGSvgView>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`<Rating /> Snapshots should match snapshot with different values 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -4812,9 +4937,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -5267,9 +5405,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -5639,9 +5790,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -6094,9 +6258,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -6549,9 +6726,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -7004,9 +7194,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -7459,9 +7662,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -7914,9 +8130,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -8369,9 +8598,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -8824,9 +9066,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -9279,9 +9534,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -9734,9 +10002,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -10106,9 +10387,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -10561,9 +10855,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -10933,9 +11240,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -11388,9 +11708,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -11760,9 +12093,22 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
+  </View>,
   <View
     height={24}
+    onLayout={[Function]}
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
     pointerEvents="none"
     style={
       Array [
@@ -12215,6 +12561,6 @@ exports[`<Rating /> Snapshots should match snapshot with different values 1`] = 
         y={0}
       />
     </RNSVGSvgView>
-  </View>
-</View>
+  </View>,
+]
 `;

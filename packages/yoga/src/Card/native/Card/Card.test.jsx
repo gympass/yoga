@@ -7,7 +7,7 @@ import Card from '.';
 describe('<Card />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with default Card', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Card>
             <Card.Header>
@@ -23,7 +23,7 @@ describe('<Card />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 });

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, toJSON, fireEvent } from '@testing-library/react-native';
+import { render, fireEvent } from '@testing-library/react-native';
 import { MapPin, ChevronDown } from '@gympass/yoga-icons';
 
 import { ThemeProvider, Chips } from '../..';
@@ -7,7 +7,7 @@ import { ThemeProvider, Chips } from '../..';
 describe('<Chips />', () => {
   describe('Snapshots', () => {
     it('should match snapshot', () => {
-      const { container } = render(
+      const { container, toJSON } = render(
         <ThemeProvider>
           <Chips>Classes</Chips>
         </ThemeProvider>,
@@ -17,7 +17,7 @@ describe('<Chips />', () => {
     });
 
     it('should match snapshot with disabled prop', () => {
-      const { container } = render(
+      const { container, toJSON } = render(
         <ThemeProvider>
           <Chips disabled>Classes</Chips>
         </ThemeProvider>,
@@ -27,7 +27,7 @@ describe('<Chips />', () => {
     });
 
     it('should match snapshot with more than one Chip', () => {
-      const { container } = render(
+      const { container, toJSON } = render(
         <ThemeProvider>
           <Chips>Classes</Chips>
           <Chips>Gyms and studios</Chips>
@@ -39,7 +39,7 @@ describe('<Chips />', () => {
     });
 
     it('should match snapshot with a long text', () => {
-      const { container } = render(
+      const { container, toJSON } = render(
         <ThemeProvider>
           <Chips>Classes with a very long text</Chips>
         </ThemeProvider>,
@@ -50,7 +50,7 @@ describe('<Chips />', () => {
 
     describe('selected', () => {
       it('should match snapshot', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <Chips selected>Classes</Chips>
           </ThemeProvider>,
@@ -60,7 +60,7 @@ describe('<Chips />', () => {
       });
 
       it('should match snapshot with more than one Chip', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <Chips>Classes</Chips>
             <Chips selected>Gyms and studios</Chips>
@@ -74,7 +74,7 @@ describe('<Chips />', () => {
 
     describe('counter', () => {
       it('should match snapshot', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <Chips counter={8}>Classes</Chips>
           </ThemeProvider>,
@@ -84,7 +84,7 @@ describe('<Chips />', () => {
       });
 
       it('should match snapshot with more than one Chip', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <Chips counter={8}>Classes</Chips>
             <Chips counter={52} selected>
@@ -102,7 +102,7 @@ describe('<Chips />', () => {
 
     describe('icon', () => {
       it('should match selected snapshot', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <Chips counter={8} icon={[MapPin]}>
               Location

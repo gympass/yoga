@@ -21,7 +21,7 @@ describe('<List />', () => {
   describe('Snapshots', () => {
     describe('Without props', () => {
       it('should match snapshot with a default list', () => {
-        const { container } = render(
+        const { toJSON } = render(
           <ThemeProvider>
             <List
               data={data}
@@ -34,11 +34,11 @@ describe('<List />', () => {
           </ThemeProvider>,
         );
 
-        expect(container).toMatchSnapshot();
+        expect(toJSON()).toMatchSnapshot();
       });
 
       it('should match snapshot with a small list', () => {
-        const { container } = render(
+        const { toJSON } = render(
           <ThemeProvider>
             <List
               data={data}
@@ -51,11 +51,11 @@ describe('<List />', () => {
           </ThemeProvider>,
         );
 
-        expect(container).toMatchSnapshot();
+        expect(toJSON()).toMatchSnapshot();
       });
 
       it('should match snapshot with a list without divisors', () => {
-        const { container } = render(
+        const { toJSON } = render(
           <ThemeProvider>
             <List
               data={data}
@@ -68,11 +68,11 @@ describe('<List />', () => {
           </ThemeProvider>,
         );
 
-        expect(container).toMatchSnapshot();
+        expect(toJSON()).toMatchSnapshot();
       });
 
       it('should match snapshot with a horizontal list', () => {
-        const { container } = render(
+        const { toJSON } = render(
           <ThemeProvider>
             <List
               horizontal
@@ -86,7 +86,7 @@ describe('<List />', () => {
           </ThemeProvider>,
         );
 
-        expect(container).toMatchSnapshot();
+        expect(toJSON()).toMatchSnapshot();
       });
 
       it('should call onPress when selectable item is pressed', () => {

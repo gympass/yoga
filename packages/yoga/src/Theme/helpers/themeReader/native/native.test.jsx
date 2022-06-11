@@ -13,13 +13,13 @@ describe('themeReader - web specs', () => {
       border: ${theme.borders.small}px solid;
     `;
 
-    const { asJSON } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Component testID="component">Teste</Component>
       </ThemeProvider>,
     );
 
-    expect(asJSON().children[0].props.style).toEqual([
+    expect(toJSON().props.style).toEqual([
       { borderWidth: 1, borderColor: 'black', borderStyle: 'solid' },
     ]);
   });
@@ -34,7 +34,7 @@ describe('themeReader - web specs', () => {
           : 'none'};
     `;
 
-    const { asJSON, rerender } = render(
+    const { toJSON, rerender } = render(
       <ThemeProvider>
         <Component borders={false} testID="component">
           Teste
@@ -42,7 +42,7 @@ describe('themeReader - web specs', () => {
       </ThemeProvider>,
     );
 
-    expect(asJSON().children[0].props.style).toEqual([
+    expect(toJSON().props.style).toEqual([
       { borderWidth: 0, borderColor: 'black', borderStyle: 'solid' },
     ]);
 
@@ -52,7 +52,7 @@ describe('themeReader - web specs', () => {
       </ThemeProvider>,
     );
 
-    expect(asJSON().children[0].props.style).toEqual([
+    expect(toJSON().props.style).toEqual([
       { borderWidth: 1, borderColor: 'black', borderStyle: 'solid' },
     ]);
   });

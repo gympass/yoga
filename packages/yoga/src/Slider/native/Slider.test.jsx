@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, toJSON, fireEvent } from '@testing-library/react-native';
+import { render, fireEvent } from '@testing-library/react-native';
 import ThemeProvider from '../../Theme';
 import Slider from './Slider';
 
@@ -7,7 +7,7 @@ describe('<Slider />', () => {
   describe('Snapshots', () => {
     describe('With one marker', () => {
       it('should match snapshot with default Slider', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <Slider />
           </ThemeProvider>,
@@ -17,7 +17,7 @@ describe('<Slider />', () => {
       });
 
       it('should match snapshot with Slider with labels', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <Slider minLabel={0} maxLabel={10} />
           </ThemeProvider>,
@@ -27,7 +27,7 @@ describe('<Slider />', () => {
       });
 
       it('should match snapshot with Slider snapped', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <Slider snapped />
           </ThemeProvider>,
@@ -38,7 +38,7 @@ describe('<Slider />', () => {
     });
     describe('With two markers', () => {
       it('should match snapshot', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <Slider values={[3, 7]} />
           </ThemeProvider>,
@@ -48,7 +48,7 @@ describe('<Slider />', () => {
       });
 
       it('should match snapshot with Slider snapped', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <Slider values={[3, 7]} snapped />
           </ThemeProvider>,
@@ -74,7 +74,7 @@ describe('<Slider />', () => {
 
   describe('Tooltip', () => {
     it('should render tooltip', () => {
-      const { container, getByText, getByRole } = render(
+      const { container, getByText, getByRole, toJSON } = render(
         <ThemeProvider>
           <Slider
             values={[0]}
@@ -90,7 +90,7 @@ describe('<Slider />', () => {
         </ThemeProvider>,
       );
 
-      fireEvent.responderGrant(getByRole('adjustable'), {
+      fireEvent(getByRole('adjustable'), 'responderGrant', {
         touchHistory: { touchBank: {} },
       });
 
@@ -102,7 +102,7 @@ describe('<Slider />', () => {
     });
 
     it('should render tooltip on a specific step', () => {
-      const { container, getByText, getByRole } = render(
+      const { container, getByText, getByRole, toJSON } = render(
         <ThemeProvider>
           <Slider
             values={[2]}
@@ -119,7 +119,7 @@ describe('<Slider />', () => {
         </ThemeProvider>,
       );
 
-      fireEvent.responderGrant(getByRole('adjustable'), {
+      fireEvent(getByRole('adjustable'), 'responderGrant', {
         touchHistory: { touchBank: {} },
       });
 

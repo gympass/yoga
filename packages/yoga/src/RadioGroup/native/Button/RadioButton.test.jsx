@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, toJSON } from '@testing-library/react-native';
+import { render, fireEvent } from '@testing-library/react-native';
 
 import RadioGroup from '../..';
 import ThemeProvider from '../../../Theme';
@@ -9,7 +9,7 @@ describe('<RadioGroup />', () => {
   describe('<RadioGroup.Button />', () => {
     describe('Snapshots', () => {
       it('should match snapshot with default radio button', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <RadioGroup.Button>Radio 1</RadioGroup.Button>
           </ThemeProvider>,
@@ -19,7 +19,7 @@ describe('<RadioGroup />', () => {
       });
 
       it('should match snapshot with small radio button', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <RadioGroupContext.Provider value={{ small: true }}>
             <ThemeProvider>
               <RadioGroup.Button>Radio 1</RadioGroup.Button>
