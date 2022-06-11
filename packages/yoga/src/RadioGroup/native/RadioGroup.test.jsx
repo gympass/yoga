@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, toJSON } from '@testing-library/react-native';
+import { render, fireEvent } from '@testing-library/react-native';
 
 import RadioGroup from '..';
 import ThemeProvider from '../../Theme';
@@ -7,7 +7,7 @@ import ThemeProvider from '../../Theme';
 describe('<RadioGroup />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with radio button as children', () => {
-      const { container, getAllByText } = render(
+      const { container, getAllByText, toJSON } = render(
         <ThemeProvider>
           <RadioGroup>
             <RadioGroup.Button>Option 1</RadioGroup.Button>
@@ -22,7 +22,7 @@ describe('<RadioGroup />', () => {
     });
 
     it('should match snapshot with small radios', () => {
-      const { container } = render(
+      const { container, toJSON } = render(
         <ThemeProvider>
           <RadioGroup small>
             <RadioGroup.Button>Option 1</RadioGroup.Button>
@@ -36,7 +36,7 @@ describe('<RadioGroup />', () => {
     });
 
     it('should has setted the selected value', () => {
-      const { container, getByText } = render(
+      const { toJSON, getByText } = render(
         <ThemeProvider>
           <RadioGroup selectedValue="Option 2">
             <RadioGroup.Button>Option 1</RadioGroup.Button>
@@ -46,7 +46,7 @@ describe('<RadioGroup />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
       expect(getByText('Option 2').props.checked).toBe(true);
     });
   });

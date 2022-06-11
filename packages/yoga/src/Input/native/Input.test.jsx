@@ -6,85 +6,85 @@ import { ThemeProvider, Input } from '../..';
 describe('<Input />', () => {
   describe('Snapshots', () => {
     it('should match with default input', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Input />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match with label', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Input label="Input" />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match when input is focused', () => {
-      const { container, getByTestId } = render(
+      const { toJSON, getByTestId } = render(
         <ThemeProvider>
           <Input label="Input" testID="input" />
         </ThemeProvider>,
       );
 
-      fireEvent.focus(getByTestId('input'));
+      fireEvent(getByTestId('input'), 'focus');
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match with disabled input', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Input disabled />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match with error', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Input error="Error message" />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match with helper text and max length', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Input helper="Helper text" maxLength={20} />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match with helper text, max length and hideMaxLength', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Input helper="Helper text" maxLength={20} hideMaxLength />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match with full width', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Input label="Label" full />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 
@@ -115,7 +115,7 @@ describe('<Input />', () => {
         </ThemeProvider>,
       );
 
-      fireEvent.changeText(getByTestId('input'), 'foo');
+      fireEvent(getByTestId('input'), 'focus');
 
       expect(onChangeTextMock).not.toHaveBeenCalled();
     });
@@ -128,7 +128,7 @@ describe('<Input />', () => {
         </ThemeProvider>,
       );
 
-      fireEvent.focus(getByTestId('input'));
+      fireEvent(getByTestId('input'), 'focus');
 
       expect(onFocusMock).toHaveBeenCalled();
     });
@@ -142,8 +142,8 @@ describe('<Input />', () => {
         </ThemeProvider>,
       );
 
-      fireEvent.focus(getByTestId('input'));
-      fireEvent.blur(getByTestId('input'));
+      fireEvent(getByTestId('input'), 'focus');
+      fireEvent(getByTestId('input'), 'blur');
 
       expect(onBlurMock).toHaveBeenCalled();
     });
@@ -157,7 +157,7 @@ describe('<Input />', () => {
         </ThemeProvider>,
       );
 
-      expect(getByText('0/10').children.join('')).toBe('0/10');
+      expect(getByText('0/10')).toBeTruthy();
 
       rerender(
         <ThemeProvider>
@@ -165,7 +165,7 @@ describe('<Input />', () => {
         </ThemeProvider>,
       );
 
-      expect(getByText('3/10').children.join('')).toBe('3/10');
+      expect(getByText('3/10')).toBeTruthy();
     });
   });
 

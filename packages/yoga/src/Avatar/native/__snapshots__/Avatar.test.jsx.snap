@@ -2,552 +2,504 @@
 
 exports[`<Avatar /> should match snapshot in avatar with children prop 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  alignItems="center"
+  bgColor="elements.selectionAndIcons"
+  borderRadius="small"
+  display="flex"
+  elevation="small"
+  height={48}
+  justifyContent="center"
+  overflow="hidden"
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#9898A6",
+        "borderRadius": 8,
+        "display": "flex",
+        "height": 48,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "shadowColor": "rgba(152, 152, 166, 0.2)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 4,
+        "width": 48,
+      },
+    ]
   }
+  width={48}
 >
-  <View
-    alignItems="center"
-    bgColor="elements.selectionAndIcons"
-    borderRadius="small"
-    display="flex"
-    elevation="small"
-    height={48}
-    justifyContent="center"
-    overflow="hidden"
+  <Text
+    inverted={false}
+    light={false}
+    size="medium"
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "backgroundColor": "#9898A6",
-          "borderRadius": 8,
-          "display": "flex",
-          "height": 48,
-          "justifyContent": "center",
-          "overflow": "hidden",
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 4,
-          "width": 48,
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 24,
         },
       ]
     }
-    width={48}
   >
-    <Text
-      inverted={false}
-      light={false}
-      size="medium"
-      style={
-        Array [
-          Object {
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "lineHeight": 24,
-          },
-        ]
-      }
-    >
-      AL
-    </Text>
-  </View>
+    AL
+  </Text>
 </View>
 `;
 
 exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  alignItems="center"
+  bgColor="elements.selectionAndIcons"
+  borderRadius="circle"
+  display="flex"
+  elevation="small"
+  height={48}
+  justifyContent="center"
+  overflow="hidden"
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#9898A6",
+        "borderRadius": 9999,
+        "display": "flex",
+        "height": 48,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "shadowColor": "rgba(152, 152, 166, 0.2)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 4,
+        "width": 48,
+      },
+    ]
   }
+  width={48}
 >
-  <View
-    alignItems="center"
-    bgColor="elements.selectionAndIcons"
-    borderRadius="circle"
-    display="flex"
-    elevation="small"
-    height={48}
-    justifyContent="center"
-    overflow="hidden"
+  <RNSVGSvgView
+    bbHeight="50%"
+    bbWidth="50%"
+    fill="#FFFFFF"
+    focusable={false}
+    height="50%"
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "backgroundColor": "#9898A6",
-          "borderRadius": 9999,
-          "display": "flex",
-          "height": 48,
-          "justifyContent": "center",
-          "overflow": "hidden",
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 4,
-          "width": 48,
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
         },
-      ]
-    }
-    width={48}
-  >
-    <RNSVGSvgView
-      bbHeight="50%"
-      bbWidth="50%"
-      fill="#FFFFFF"
-      focusable={false}
-      height="50%"
-      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Array [
-            Object {
-              "height": "50%",
-              "width": "50%",
-            },
-          ],
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
             "height": "50%",
             "width": "50%",
           },
+        ],
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": "50%",
+          "width": "50%",
+        },
+      ]
+    }
+    width="50%"
+  >
+    <RNSVGGroup
+      fill={
+        Array [
+          0,
+          4294967295,
         ]
       }
-      width="50%"
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294967295,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-  </View>
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
 </View>
 `;
 
 exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  alignItems="center"
+  bgColor="elements.selectionAndIcons"
+  borderRadius="circle"
+  display="flex"
+  elevation="small"
+  height={48}
+  justifyContent="center"
+  overflow="hidden"
+  placeholder={[Function]}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#9898A6",
+        "borderRadius": 9999,
+        "display": "flex",
+        "height": 48,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "shadowColor": "rgba(152, 152, 166, 0.2)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 4,
+        "width": 48,
+      },
+    ]
   }
+  width={48}
 >
-  <View
-    alignItems="center"
-    bgColor="elements.selectionAndIcons"
-    borderRadius="circle"
-    display="flex"
-    elevation="small"
-    height={48}
-    justifyContent="center"
-    overflow="hidden"
+  <RNSVGSvgView
+    bbHeight="50%"
+    bbWidth="50%"
+    fill="#FFFFFF"
+    focusable={false}
+    height="50%"
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "backgroundColor": "#9898A6",
-          "borderRadius": 9999,
-          "display": "flex",
-          "height": 48,
-          "justifyContent": "center",
-          "overflow": "hidden",
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 4,
-          "width": 48,
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
         },
-      ]
-    }
-    width={48}
-  >
-    <RNSVGSvgView
-      bbHeight="50%"
-      bbWidth="50%"
-      fill="#FFFFFF"
-      focusable={false}
-      height="50%"
-      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Array [
-            Object {
-              "height": "50%",
-              "width": "50%",
-            },
-          ],
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
             "height": "50%",
             "width": "50%",
           },
+        ],
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": "50%",
+          "width": "50%",
+        },
+      ]
+    }
+    width="50%"
+  >
+    <RNSVGGroup
+      fill={
+        Array [
+          0,
+          4294967295,
         ]
       }
-      width="50%"
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294967295,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-  </View>
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
 </View>
 `;
 
 exports[`<Avatar /> should match snapshot in default avatar 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  alignItems="center"
+  bgColor="elements.selectionAndIcons"
+  borderRadius="small"
+  display="flex"
+  elevation="small"
+  height={78}
+  justifyContent="center"
+  overflow="hidden"
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#9898A6",
+        "borderRadius": 8,
+        "display": "flex",
+        "height": 78,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "shadowColor": "rgba(152, 152, 166, 0.2)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 4,
+        "width": 78,
+      },
+    ]
   }
+  width={78}
 >
-  <View
-    alignItems="center"
-    bgColor="elements.selectionAndIcons"
-    borderRadius="small"
-    display="flex"
-    elevation="small"
-    height={78}
-    justifyContent="center"
-    overflow="hidden"
+  <RNSVGSvgView
+    bbHeight="50%"
+    bbWidth="50%"
+    fill="black"
+    focusable={false}
+    height="50%"
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "backgroundColor": "#9898A6",
-          "borderRadius": 8,
-          "display": "flex",
-          "height": 78,
-          "justifyContent": "center",
-          "overflow": "hidden",
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 4,
-          "width": 78,
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
         },
-      ]
-    }
-    width={78}
-  >
-    <RNSVGSvgView
-      bbHeight="50%"
-      bbWidth="50%"
-      fill="black"
-      focusable={false}
-      height="50%"
-      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Array [
-            Object {
-              "height": "50%",
-              "width": "50%",
-            },
-          ],
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
             "height": "50%",
             "width": "50%",
           },
+        ],
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": "50%",
+          "width": "50%",
+        },
+      ]
+    }
+    width="50%"
+  >
+    <RNSVGGroup
+      fill={
+        Array [
+          0,
+          4278190080,
         ]
       }
-      width="50%"
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4278190080,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-  </View>
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
 </View>
 `;
 
 exports[`<Avatar /> should match snapshot in default avatar with placeholder prop 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  alignItems="center"
+  bgColor="elements.selectionAndIcons"
+  borderRadius="small"
+  display="flex"
+  elevation="small"
+  height={48}
+  justifyContent="center"
+  overflow="hidden"
+  placeholder={[Function]}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#9898A6",
+        "borderRadius": 8,
+        "display": "flex",
+        "height": 48,
+        "justifyContent": "center",
+        "overflow": "hidden",
+        "shadowColor": "rgba(152, 152, 166, 0.2)",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 4,
+        "width": 48,
+      },
+    ]
   }
+  width={48}
 >
-  <View
-    alignItems="center"
-    bgColor="elements.selectionAndIcons"
-    borderRadius="small"
-    display="flex"
-    elevation="small"
-    height={48}
-    justifyContent="center"
-    overflow="hidden"
+  <RNSVGSvgView
+    bbHeight="50%"
+    bbWidth="50%"
+    fill="#FFFFFF"
+    focusable={false}
+    height="50%"
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "backgroundColor": "#9898A6",
-          "borderRadius": 8,
-          "display": "flex",
-          "height": 48,
-          "justifyContent": "center",
-          "overflow": "hidden",
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 4,
-          "width": 48,
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
         },
-      ]
-    }
-    width={48}
-  >
-    <RNSVGSvgView
-      bbHeight="50%"
-      bbWidth="50%"
-      fill="#FFFFFF"
-      focusable={false}
-      height="50%"
-      style={
         Array [
           Object {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          Array [
-            Object {
-              "height": "50%",
-              "width": "50%",
-            },
-          ],
-          Object {
-            "opacity": 1,
-          },
-          Object {
-            "flex": 0,
             "height": "50%",
             "width": "50%",
           },
+        ],
+        Object {
+          "opacity": 1,
+        },
+        Object {
+          "flex": 0,
+          "height": "50%",
+          "width": "50%",
+        },
+      ]
+    }
+    width="50%"
+  >
+    <RNSVGGroup
+      fill={
+        Array [
+          0,
+          4294967295,
         ]
       }
-      width="50%"
-    >
-      <RNSVGGroup
-        fill={
-          Array [
-            0,
-            4294967295,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        font={Object {}}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          Array [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
-  </View>
+      fillOpacity={1}
+      fillRule={1}
+      font={Object {}}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+      opacity={1}
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      stroke={null}
+      strokeDasharray={null}
+      strokeDashoffset={null}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth={1}
+      vectorEffect={0}
+      x={0}
+      y={0}
+    />
+  </RNSVGSvgView>
 </View>
 `;

@@ -2,696 +2,614 @@
 
 exports[`<Input /> Snapshots should match when input is focused 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  full={false}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "position": "relative",
+        "width": 320,
+      },
+      Object {},
+    ]
   }
 >
-  <View
+  <TextInput
+    cleanable={true}
+    disabled={false}
+    editable={true}
+    focus={true}
     full={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
     style={
       Array [
         Object {
-          "position": "relative",
+          "borderColor": "#231B22",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 52,
+          "paddingTop": 16,
           "width": 320,
         },
-        Object {},
+        Object {
+          "height": 52,
+        },
       ]
     }
-  >
-    <TextInput
-      allowFontScaling={true}
-      cleanable={true}
-      disabled={false}
-      editable={true}
-      focus={true}
-      full={false}
-      rejectResponderTermination={true}
-      style={
-        Array [
+    testID="input"
+    typed={false}
+    value=""
+  />
+  <View
+    collapsable={false}
+    focus={true}
+    pointerEvents="none"
+    style={
+      Object {
+        "left": 14,
+        "position": "absolute",
+        "top": 24,
+        "transform": Array [
           Object {
-            "borderColor": "#231B22",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 14,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 52,
-            "paddingTop": 16,
-            "width": 320,
+            "translateY": -8,
           },
-          Object {
-            "height": 52,
-          },
-        ]
+        ],
       }
-      testID="input"
-      typed={false}
-      underlineColorAndroid="transparent"
-      value=""
-    />
-    <View
+    }
+    typed={false}
+  >
+    <Text
+      collapsable={false}
+      disabled={false}
       focus={true}
-      pointerEvents="none"
       style={
         Object {
-          "left": 14,
-          "position": "absolute",
-          "top": 24,
-          "transform": Array [
-            Object {
-              "translateY": -8,
-            },
-          ],
+          "backgroundColor": "#FFFFFF",
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "paddingLeft": 4,
+          "paddingRight": 4,
         }
       }
       typed={false}
     >
-      <Text
-        disabled={false}
-        focus={true}
-        style={
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 14,
-            "paddingLeft": 4,
-            "paddingRight": 4,
-          }
-        }
-        typed={false}
-      >
-        Input
-      </Text>
-    </View>
+      Input
+    </Text>
   </View>
 </View>
 `;
 
 exports[`<Input /> Snapshots should match with default input 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  full={false}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "position": "relative",
+        "width": 320,
+      },
+      Object {},
+    ]
   }
 >
-  <View
+  <TextInput
+    cleanable={true}
+    disabled={false}
+    editable={true}
+    focus={false}
     full={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
     style={
       Array [
         Object {
-          "position": "relative",
+          "borderColor": "#D7D7E0",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "color": "#6B6B78",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 52,
+          "paddingTop": 16,
           "width": 320,
         },
-        Object {},
+        Object {
+          "height": 52,
+        },
       ]
     }
-  >
-    <TextInput
-      allowFontScaling={true}
-      cleanable={true}
-      disabled={false}
-      editable={true}
-      focus={false}
-      full={false}
-      rejectResponderTermination={true}
-      style={
-        Array [
-          Object {
-            "borderColor": "#D7D7E0",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "color": "#6B6B78",
-            "fontFamily": "Rubik",
-            "fontSize": 14,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 52,
-            "paddingTop": 16,
-            "width": 320,
-          },
-          Object {
-            "height": 52,
-          },
-        ]
-      }
-      typed={false}
-      underlineColorAndroid="transparent"
-      value=""
-    />
-  </View>
+    typed={false}
+    value=""
+  />
 </View>
 `;
 
 exports[`<Input /> Snapshots should match with disabled input 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  full={false}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "position": "relative",
+        "width": 320,
+      },
+      Object {},
+    ]
   }
 >
-  <View
+  <TextInput
+    cleanable={true}
+    disabled={true}
+    editable={false}
+    focus={false}
     full={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
     style={
       Array [
         Object {
-          "position": "relative",
+          "borderColor": "#D7D7E0",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "color": "#D7D7E0",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 52,
+          "paddingTop": 16,
           "width": 320,
         },
-        Object {},
+        Object {
+          "height": 52,
+        },
       ]
     }
-  >
-    <TextInput
-      allowFontScaling={true}
-      cleanable={true}
-      disabled={true}
-      editable={false}
-      focus={false}
-      full={false}
-      rejectResponderTermination={true}
-      style={
-        Array [
-          Object {
-            "borderColor": "#D7D7E0",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "color": "#D7D7E0",
-            "fontFamily": "Rubik",
-            "fontSize": 14,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 52,
-            "paddingTop": 16,
-            "width": 320,
-          },
-          Object {
-            "height": 52,
-          },
-        ]
-      }
-      typed={false}
-      underlineColorAndroid="transparent"
-      value=""
-    />
-  </View>
+    typed={false}
+    value=""
+  />
 </View>
 `;
 
 exports[`<Input /> Snapshots should match with error 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  full={false}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "position": "relative",
+        "width": 320,
+      },
+      Object {},
+    ]
   }
 >
+  <TextInput
+    cleanable={true}
+    disabled={false}
+    editable={true}
+    error="Error message"
+    focus={false}
+    full={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    style={
+      Array [
+        Object {
+          "borderColor": "#CA4808",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "color": "#6B6B78",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 52,
+          "paddingTop": 16,
+          "width": 320,
+        },
+        Object {
+          "height": 52,
+        },
+      ]
+    }
+    typed={false}
+    value=""
+  />
   <View
+    disabled={false}
     full={false}
     style={
       Array [
         Object {
-          "position": "relative",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginTop": 4,
+          "maxWidth": 320,
           "width": 320,
         },
-        Object {},
       ]
     }
   >
-    <TextInput
-      allowFontScaling={true}
-      cleanable={true}
+    <Text
       disabled={false}
-      editable={true}
       error="Error message"
-      focus={false}
-      full={false}
-      rejectResponderTermination={true}
+      focused={false}
       style={
         Array [
           Object {
-            "borderColor": "#CA4808",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "color": "#6B6B78",
+            "color": "#CA4808",
+            "flexWrap": "wrap",
             "fontFamily": "Rubik",
-            "fontSize": 14,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 52,
-            "paddingTop": 16,
-            "width": 320,
-          },
-          Object {
-            "height": 52,
-          },
-        ]
-      }
-      typed={false}
-      underlineColorAndroid="transparent"
-      value=""
-    />
-    <View
-      disabled={false}
-      full={false}
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "marginTop": 4,
-            "maxWidth": 320,
-            "width": 320,
+            "fontSize": 12,
+            "fontWeight": "400",
           },
         ]
       }
     >
-      <Text
-        disabled={false}
-        error="Error message"
-        focused={false}
-        style={
-          Array [
-            Object {
-              "color": "#CA4808",
-              "flexWrap": "wrap",
-              "fontFamily": "Rubik",
-              "fontSize": 12,
-              "fontWeight": "400",
-            },
-          ]
-        }
-      >
-        Error message
-      </Text>
-    </View>
+      Error message
+    </Text>
   </View>
 </View>
 `;
 
 exports[`<Input /> Snapshots should match with full width 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  full={true}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "position": "relative",
+        "width": "100%",
+      },
+      Object {},
+    ]
   }
 >
-  <View
+  <TextInput
+    cleanable={true}
+    disabled={false}
+    editable={true}
+    focus={false}
     full={true}
+    onBlur={[Function]}
+    onFocus={[Function]}
     style={
       Array [
         Object {
-          "position": "relative",
+          "borderColor": "#D7D7E0",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "color": "#6B6B78",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 52,
+          "paddingTop": 16,
           "width": "100%",
         },
-        Object {},
+        Object {
+          "height": 52,
+        },
       ]
     }
-  >
-    <TextInput
-      allowFontScaling={true}
-      cleanable={true}
-      disabled={false}
-      editable={true}
-      focus={false}
-      full={true}
-      rejectResponderTermination={true}
-      style={
-        Array [
+    typed={false}
+    value=""
+  />
+  <View
+    collapsable={false}
+    focus={false}
+    pointerEvents="none"
+    style={
+      Object {
+        "left": 16,
+        "position": "absolute",
+        "top": 24,
+        "transform": Array [
           Object {
-            "borderColor": "#D7D7E0",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "color": "#6B6B78",
-            "fontFamily": "Rubik",
-            "fontSize": 14,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 52,
-            "paddingTop": 16,
-            "width": "100%",
+            "translateY": -8,
           },
-          Object {
-            "height": 52,
-          },
-        ]
+        ],
       }
-      typed={false}
-      underlineColorAndroid="transparent"
-      value=""
-    />
-    <View
+    }
+    typed={false}
+  >
+    <Text
+      collapsable={false}
+      disabled={false}
       focus={false}
-      pointerEvents="none"
       style={
         Object {
-          "left": 16,
-          "position": "absolute",
-          "top": 24,
-          "transform": Array [
-            Object {
-              "translateY": -8,
-            },
-          ],
+          "backgroundColor": "#FFFFFF",
+          "color": "#6B6B78",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
         }
       }
       typed={false}
     >
-      <Text
-        disabled={false}
-        focus={false}
-        style={
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "color": "#6B6B78",
-            "fontFamily": "Rubik",
-            "fontSize": 14,
-          }
-        }
-        typed={false}
-      >
-        Label
-      </Text>
-    </View>
+      Label
+    </Text>
   </View>
 </View>
 `;
 
 exports[`<Input /> Snapshots should match with helper text and max length 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  full={false}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "position": "relative",
+        "width": 320,
+      },
+      Object {},
+    ]
   }
 >
+  <TextInput
+    cleanable={true}
+    disabled={false}
+    editable={true}
+    focus={false}
+    full={false}
+    maxLength={20}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    style={
+      Array [
+        Object {
+          "borderColor": "#D7D7E0",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "color": "#6B6B78",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 52,
+          "paddingTop": 16,
+          "width": 320,
+        },
+        Object {
+          "height": 52,
+        },
+      ]
+    }
+    typed={false}
+    value=""
+  />
   <View
+    disabled={false}
     full={false}
     style={
       Array [
         Object {
-          "position": "relative",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginTop": 4,
+          "maxWidth": 320,
           "width": 320,
         },
-        Object {},
       ]
     }
   >
-    <TextInput
-      allowFontScaling={true}
-      cleanable={true}
+    <Text
       disabled={false}
-      editable={true}
-      focus={false}
-      full={false}
-      maxLength={20}
-      rejectResponderTermination={true}
+      focused={false}
       style={
         Array [
           Object {
-            "borderColor": "#D7D7E0",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
             "color": "#6B6B78",
+            "flexWrap": "wrap",
             "fontFamily": "Rubik",
-            "fontSize": 14,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 52,
-            "paddingTop": 16,
-            "width": 320,
-          },
-          Object {
-            "height": 52,
-          },
-        ]
-      }
-      typed={false}
-      underlineColorAndroid="transparent"
-      value=""
-    />
-    <View
-      disabled={false}
-      full={false}
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "marginTop": 4,
-            "maxWidth": 320,
-            "width": 320,
+            "fontSize": 12,
+            "fontWeight": "400",
           },
         ]
       }
     >
-      <Text
-        disabled={false}
-        focused={false}
-        style={
-          Array [
-            Object {
-              "color": "#6B6B78",
-              "flexWrap": "wrap",
-              "fontFamily": "Rubik",
-              "fontSize": 12,
-              "fontWeight": "400",
-            },
-          ]
-        }
-      >
-        Helper text
-      </Text>
-      <Text
-        disabled={false}
-        focused={false}
-        style={
-          Array [
-            Object {
-              "color": "#6B6B78",
-              "flexWrap": "wrap",
-              "fontFamily": "Rubik",
-              "fontSize": 12,
-              "fontWeight": "400",
-            },
-          ]
-        }
-      >
-        0
-        /
-        20
-      </Text>
-    </View>
+      Helper text
+    </Text>
+    <Text
+      disabled={false}
+      focused={false}
+      style={
+        Array [
+          Object {
+            "color": "#6B6B78",
+            "flexWrap": "wrap",
+            "fontFamily": "Rubik",
+            "fontSize": 12,
+            "fontWeight": "400",
+          },
+        ]
+      }
+    >
+      0
+      /
+      20
+    </Text>
   </View>
 </View>
 `;
 
 exports[`<Input /> Snapshots should match with helper text, max length and hideMaxLength 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  full={false}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "position": "relative",
+        "width": 320,
+      },
+      Object {},
+    ]
   }
 >
+  <TextInput
+    cleanable={true}
+    disabled={false}
+    editable={true}
+    focus={false}
+    full={false}
+    maxLength={20}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    style={
+      Array [
+        Object {
+          "borderColor": "#D7D7E0",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "color": "#6B6B78",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 52,
+          "paddingTop": 16,
+          "width": 320,
+        },
+        Object {
+          "height": 52,
+        },
+      ]
+    }
+    typed={false}
+    value=""
+  />
   <View
+    disabled={false}
     full={false}
     style={
       Array [
         Object {
-          "position": "relative",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginTop": 4,
+          "maxWidth": 320,
           "width": 320,
         },
-        Object {},
       ]
     }
   >
-    <TextInput
-      allowFontScaling={true}
-      cleanable={true}
+    <Text
       disabled={false}
-      editable={true}
-      focus={false}
-      full={false}
-      maxLength={20}
-      rejectResponderTermination={true}
+      focused={false}
       style={
         Array [
           Object {
-            "borderColor": "#D7D7E0",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
             "color": "#6B6B78",
+            "flexWrap": "wrap",
             "fontFamily": "Rubik",
-            "fontSize": 14,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 52,
-            "paddingTop": 16,
-            "width": 320,
-          },
-          Object {
-            "height": 52,
-          },
-        ]
-      }
-      typed={false}
-      underlineColorAndroid="transparent"
-      value=""
-    />
-    <View
-      disabled={false}
-      full={false}
-      style={
-        Array [
-          Object {
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "marginTop": 4,
-            "maxWidth": 320,
-            "width": 320,
+            "fontSize": 12,
+            "fontWeight": "400",
           },
         ]
       }
     >
-      <Text
-        disabled={false}
-        focused={false}
-        style={
-          Array [
-            Object {
-              "color": "#6B6B78",
-              "flexWrap": "wrap",
-              "fontFamily": "Rubik",
-              "fontSize": 12,
-              "fontWeight": "400",
-            },
-          ]
-        }
-      >
-        Helper text
-      </Text>
-    </View>
+      Helper text
+    </Text>
   </View>
 </View>
 `;
 
 exports[`<Input /> Snapshots should match with label 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  full={false}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "position": "relative",
+        "width": 320,
+      },
+      Object {},
+    ]
   }
 >
-  <View
+  <TextInput
+    cleanable={true}
+    disabled={false}
+    editable={true}
+    focus={false}
     full={false}
+    onBlur={[Function]}
+    onFocus={[Function]}
     style={
       Array [
         Object {
-          "position": "relative",
+          "borderColor": "#D7D7E0",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "color": "#6B6B78",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 52,
+          "paddingTop": 16,
           "width": 320,
         },
-        Object {},
+        Object {
+          "height": 52,
+        },
       ]
     }
-  >
-    <TextInput
-      allowFontScaling={true}
-      cleanable={true}
-      disabled={false}
-      editable={true}
-      focus={false}
-      full={false}
-      rejectResponderTermination={true}
-      style={
-        Array [
+    typed={false}
+    value=""
+  />
+  <View
+    collapsable={false}
+    focus={false}
+    pointerEvents="none"
+    style={
+      Object {
+        "left": 16,
+        "position": "absolute",
+        "top": 24,
+        "transform": Array [
           Object {
-            "borderColor": "#D7D7E0",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "color": "#6B6B78",
-            "fontFamily": "Rubik",
-            "fontSize": 14,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 52,
-            "paddingTop": 16,
-            "width": 320,
+            "translateY": -8,
           },
-          Object {
-            "height": 52,
-          },
-        ]
+        ],
       }
-      typed={false}
-      underlineColorAndroid="transparent"
-      value=""
-    />
-    <View
+    }
+    typed={false}
+  >
+    <Text
+      collapsable={false}
+      disabled={false}
       focus={false}
-      pointerEvents="none"
       style={
         Object {
-          "left": 16,
-          "position": "absolute",
-          "top": 24,
-          "transform": Array [
-            Object {
-              "translateY": -8,
-            },
-          ],
+          "backgroundColor": "#FFFFFF",
+          "color": "#6B6B78",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
         }
       }
       typed={false}
     >
-      <Text
-        disabled={false}
-        focus={false}
-        style={
-          Object {
-            "backgroundColor": "#FFFFFF",
-            "color": "#6B6B78",
-            "fontFamily": "Rubik",
-            "fontSize": 14,
-          }
-        }
-        typed={false}
-      >
-        Input
-      </Text>
-    </View>
+      Input
+    </Text>
   </View>
 </View>
 `;

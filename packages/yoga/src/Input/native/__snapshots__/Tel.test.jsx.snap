@@ -2,62 +2,51 @@
 
 exports[`<Input.Tel /> Snapshots should match with default input 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  full={false}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "position": "relative",
+        "width": 320,
+      },
+      Object {},
+    ]
   }
 >
-  <View
+  <TextInput
+    autoCompleteType="tel"
+    cleanable={true}
+    disabled={false}
+    editable={true}
+    focus={false}
     full={false}
+    keyboardType="phone-pad"
+    onBlur={[Function]}
+    onFocus={[Function]}
     style={
       Array [
         Object {
-          "position": "relative",
+          "borderColor": "#D7D7E0",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "color": "#6B6B78",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 52,
+          "paddingTop": 16,
           "width": 320,
         },
-        Object {},
+        Object {
+          "height": 52,
+        },
       ]
     }
-  >
-    <TextInput
-      allowFontScaling={true}
-      autoCompleteType="tel"
-      cleanable={true}
-      disabled={false}
-      editable={true}
-      focus={false}
-      full={false}
-      keyboardType="phone-pad"
-      rejectResponderTermination={true}
-      style={
-        Array [
-          Object {
-            "borderColor": "#D7D7E0",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "color": "#6B6B78",
-            "fontFamily": "Rubik",
-            "fontSize": 14,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 52,
-            "paddingTop": 16,
-            "width": 320,
-          },
-          Object {
-            "height": 52,
-          },
-        ]
-      }
-      textContentType="telephoneNumber"
-      typed={false}
-      underlineColorAndroid="transparent"
-      value=""
-    />
-  </View>
+    textContentType="telephoneNumber"
+    typed={false}
+    value=""
+  />
 </View>
 `;

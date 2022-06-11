@@ -34,9 +34,9 @@ const Component = overrideProps => {
 
 describe('<Snackbar />', () => {
   it('should match snapshot when snackbar is default', () => {
-    const { container } = render(<Component />);
+    const { toJSON } = render(<Component />);
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot when have an icon and action', () => {
@@ -46,9 +46,9 @@ describe('<Snackbar />', () => {
       onAction: () => {},
     };
 
-    const { container } = render(<Component {...overrideProps} />);
+    const { toJSON } = render(<Component {...overrideProps} />);
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot when have a long text', () => {
@@ -59,9 +59,9 @@ describe('<Snackbar />', () => {
       onAction: () => {},
     };
 
-    const { container } = render(<Component {...overrideProps} />);
+    const { toJSON } = render(<Component {...overrideProps} />);
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot when have a variant informative or attention prop', () => {
@@ -69,9 +69,9 @@ describe('<Snackbar />', () => {
       variant: 'informative',
     };
 
-    const { container } = render(<Component {...overrideProps} />);
+    const { toJSON } = render(<Component {...overrideProps} />);
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should show and hide snackbar when the open and close Animation function is called', () => {
@@ -83,7 +83,7 @@ describe('<Snackbar />', () => {
 
     const { getByText, getByTestId } = render(<Component {...overrideProps} />);
 
-    fireEvent.layout(getByTestId('wrapper'), {
+    fireEvent(getByTestId('wrapper'), 'layout', {
       nativeEvent: {
         layout: { height: 200 },
       },

@@ -2,144 +2,124 @@
 
 exports[`<Divider /> should create a divider component 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  display="flex"
+  flexDirection="column"
+  justifyContent="space-between"
+  minWidth={300}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "space-between",
+        "minWidth": 300,
+      },
+    ]
   }
 >
-  <View
-    display="flex"
-    flexDirection="column"
-    justifyContent="space-between"
-    minWidth={300}
+  <Text
     style={
       Array [
         Object {
-          "display": "flex",
-          "flexDirection": "column",
-          "justifyContent": "space-between",
-          "minWidth": 300,
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 24,
+          "fontWeight": "500",
+          "lineHeight": 32,
         },
       ]
     }
   >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 24,
-            "fontWeight": "500",
-            "lineHeight": 32,
-          },
-        ]
-      }
-    >
-      First Content
-    </Text>
-    <View
-      style={
-        Array [
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#D7D7E0",
-            "width": "auto",
-          },
-        ]
-      }
-      vertical={false}
-    />
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 24,
-            "fontWeight": "500",
-            "lineHeight": 32,
-          },
-        ]
-      }
-    >
-      Second Content
-    </Text>
-  </View>
+    First Content
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#D7D7E0",
+          "width": "auto",
+        },
+      ]
+    }
+    vertical={false}
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 24,
+          "fontWeight": "500",
+          "lineHeight": 32,
+        },
+      ]
+    }
+  >
+    Second Content
+  </Text>
 </View>
 `;
 
 exports[`<Divider /> should create vertical divider component 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  display="flex"
+  flexDirection="row"
+  justifyContent="space-between"
+  minWidth={300}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "minWidth": 300,
+      },
+    ]
   }
 >
-  <View
-    display="flex"
-    flexDirection="row"
-    justifyContent="space-between"
-    minWidth={300}
+  <Text
     style={
       Array [
         Object {
-          "display": "flex",
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-          "minWidth": 300,
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 24,
+          "fontWeight": "500",
+          "lineHeight": 32,
         },
       ]
     }
   >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 24,
-            "fontWeight": "500",
-            "lineHeight": 32,
-          },
-        ]
-      }
-    >
-      First Content
-    </Text>
-    <View
-      style={
-        Array [
-          Object {
-            "borderColor": "#D7D7E0",
-            "borderLeftWidth": 1,
-            "height": "auto",
-          },
-        ]
-      }
-      vertical={true}
-    />
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 24,
-            "fontWeight": "500",
-            "lineHeight": 32,
-          },
-        ]
-      }
-    >
-      Second Content
-    </Text>
-  </View>
+    First Content
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "borderColor": "#D7D7E0",
+          "borderLeftWidth": 1,
+          "height": "auto",
+        },
+      ]
+    }
+    vertical={true}
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 24,
+          "fontWeight": "500",
+          "lineHeight": 32,
+        },
+      ]
+    }
+  >
+    Second Content
+  </Text>
 </View>
 `;

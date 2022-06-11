@@ -6,13 +6,13 @@ import { ThemeProvider, Input } from '../..';
 describe('<Input.Number />', () => {
   describe('Snapshots', () => {
     it('should match with default input', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Input.Number />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 });

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Text } from 'react-native';
-import { render, toJSON } from '@testing-library/react-native';
+import { render } from '@testing-library/react-native';
 import ThemeProvider from '../../Theme';
 import Stepper from '..';
 
 describe('<Stepper />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with first step active', () => {
-      const { container } = render(
+      const { container, toJSON } = render(
         <ThemeProvider>
           <Stepper activeStep={0}>
             <Stepper.Step label="step one">
@@ -27,7 +27,7 @@ describe('<Stepper />', () => {
     });
 
     it('should match snapshot with second step active', () => {
-      const { container } = render(
+      const { container, toJSON } = render(
         <ThemeProvider>
           <Stepper activeStep={1}>
             <Stepper.Step label="step one">

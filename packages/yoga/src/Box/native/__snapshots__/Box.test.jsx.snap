@@ -2,53 +2,43 @@
 
 exports[`<Box /> should match snapshot 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  b="small"
+  borderRadius="small"
+  color="feedback.success.dark"
+  p="small"
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "borderColor": "black",
+        "borderRadius": 8,
+        "borderStyle": "solid",
+        "borderWidth": 1,
+        "color": "#1D856C",
+        "paddingBottom": 16,
+        "paddingLeft": 16,
+        "paddingRight": 16,
+        "paddingTop": 16,
+      },
+    ]
   }
 >
-  <View
-    b="small"
-    borderRadius="small"
-    color="feedback.success.dark"
-    p="small"
+  <Text
+    inverted={false}
+    light={false}
+    size="medium"
     style={
       Array [
         Object {
-          "borderColor": "black",
-          "borderRadius": 8,
-          "borderStyle": "solid",
-          "borderWidth": 1,
-          "color": "#1D856C",
-          "paddingBottom": 16,
-          "paddingLeft": 16,
-          "paddingRight": 16,
-          "paddingTop": 16,
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 24,
         },
       ]
     }
   >
-    <Text
-      inverted={false}
-      light={false}
-      size="medium"
-      style={
-        Array [
-          Object {
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "400",
-            "lineHeight": 24,
-          },
-        ]
-      }
-    >
-      Making wellbeing universal
-    </Text>
-  </View>
+    Making wellbeing universal
+  </Text>
 </View>
 `;

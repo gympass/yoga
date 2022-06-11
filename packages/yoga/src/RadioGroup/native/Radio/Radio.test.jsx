@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, toJSON } from '@testing-library/react-native';
+import { render, fireEvent } from '@testing-library/react-native';
 
 import RadioGroup from '../..';
 import ThemeProvider from '../../../Theme';
@@ -9,7 +9,7 @@ describe('<RadioGroup />', () => {
   describe('<RadioGroup.Radio />', () => {
     describe('Snapshots', () => {
       it('should match snapshot with default radio', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <RadioGroup.Radio />
           </ThemeProvider>,
@@ -19,7 +19,7 @@ describe('<RadioGroup />', () => {
       });
 
       it('should match snapshot with disabled radio', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <RadioGroup.Radio disabled />
           </ThemeProvider>,
@@ -29,7 +29,7 @@ describe('<RadioGroup />', () => {
       });
 
       it('should match snapshot with default radio', () => {
-        const { container } = render(
+        const { container, toJSON } = render(
           <ThemeProvider>
             <RadioGroup.Radio />
           </ThemeProvider>,
@@ -39,15 +39,18 @@ describe('<RadioGroup />', () => {
       });
 
       it('should match snapshot with default radio pressed', () => {
-        const { container, getByTestId } = render(
-          <ThemeProvider>
-            <RadioGroup.Radio testID="radio" />
-          </ThemeProvider>,
+        const onChangeMock = jest.fn();
+        const { container, getByTestId, toJSON } = render(
+          <RadioGroupContext.Provider value={{ onChange: onChangeMock }}>
+            <ThemeProvider>
+              <RadioGroup.Radio testID="radio" />
+            </ThemeProvider>
+          </RadioGroupContext.Provider>,
         );
 
         const radio = getByTestId(/^radio/);
 
-        fireEvent.pressIn(radio);
+        fireEvent.press(radio);
 
         expect(toJSON(container)).toMatchSnapshot();
       });
