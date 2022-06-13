@@ -328,7 +328,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         <sub
           class="c9"
         >
-           /month
+          /month
         </sub>
       </div>
       <hr
@@ -527,10 +527,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
         >
           99.90
         </strong>
+        <sup
+          class="c5"
+        >
+          MXN
+        </sup>
         <sub
           class="c6"
         >
-          MXN /month
+          /month
         </sub>
       </div>
       <hr
@@ -664,7 +669,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
         <sub
           class="c6"
         >
-           /month
+          /month
         </sub>
       </div>
       <hr

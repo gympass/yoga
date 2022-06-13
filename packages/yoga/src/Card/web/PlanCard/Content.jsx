@@ -71,9 +71,8 @@ const PlanCardContent = ({
     <Price>
       {currency && <Text.H4 as="sup">{currency}</Text.H4>}
       {price && <Text.H4 as="strong">{price}</Text.H4>}
-      {period && (
-        <EnhancePrice as="sub">{`${suffix || ''} ${period}`}</EnhancePrice>
-      )}
+      {suffix && <Text.H4 as="sup">{suffix}</Text.H4>}
+      {period && <EnhancePrice as="sub">{period}</EnhancePrice>}
     </Price>
     <Divider />
     {children}

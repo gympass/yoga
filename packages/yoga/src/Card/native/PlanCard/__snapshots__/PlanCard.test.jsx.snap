@@ -797,6 +797,21 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
           >
             99.90
           </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 24,
+                  "fontWeight": "500",
+                  "lineHeight": 32,
+                },
+              ]
+            }
+          >
+            MXN
+          </Text>
           <View
             style={
               Array [
@@ -818,7 +833,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
                 ]
               }
             >
-              MXN/month
+              /month
             </Text>
           </View>
         </View>
