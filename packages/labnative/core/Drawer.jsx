@@ -7,6 +7,10 @@ import CenteredView from './CenteredView';
 
 const Drawer = createDrawerNavigator();
 
+function DrawerHeader(toggleDrawer) {
+  return <NavigationDrawer toggleDrawer={toggleDrawer} />;
+}
+
 function DrawerComponent() {
   return (
     <Drawer.Navigator>
@@ -16,7 +20,7 @@ function DrawerComponent() {
           name={key}
           options={({ navigation: { toggleDrawer } }) => ({
             title: key,
-            headerLeft: () => <NavigationDrawer toggleDrawer={toggleDrawer} />,
+            headerLeft: () => DrawerHeader(toggleDrawer),
           })}
         >
           {() => {
