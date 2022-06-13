@@ -3,6 +3,7 @@ module.exports = {
     '<rootDir>/packages/**/web/**/*.test.js',
     '<rootDir>/packages/**/web/**/*.test.jsx',
   ],
+  testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest/setup/web.js'],
   displayName: 'web',
   moduleNameMapper: {
