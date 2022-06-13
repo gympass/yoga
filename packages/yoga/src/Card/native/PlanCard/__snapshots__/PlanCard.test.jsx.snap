@@ -189,7 +189,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             Array [
               Object {
                 "flexDirection": "row",
-                "paddingBottom": 24,
+                "marginBottom": 24,
               },
             ]
           }
@@ -762,7 +762,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
             Array [
               Object {
                 "flexDirection": "row",
-                "paddingBottom": 24,
+                "marginBottom": 24,
               },
             ]
           }
@@ -983,7 +983,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
             Array [
               Object {
                 "flexDirection": "row",
-                "paddingBottom": 24,
+                "marginBottom": 24,
               },
             ]
           }

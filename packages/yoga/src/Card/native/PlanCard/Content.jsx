@@ -40,7 +40,7 @@ const Price = styled.View`
     } = theme(props);
 
     return css`
-      padding-bottom: ${plan.price.margin.bottom}px;
+      margin-bottom: ${plan.price.margin.bottom}px;
     `;
   }}
 `;
