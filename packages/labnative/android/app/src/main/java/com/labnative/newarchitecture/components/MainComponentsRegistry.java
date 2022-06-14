@@ -17,12 +17,12 @@ public class MainComponentsRegistry {
     static {
         SoLoader.loadLibrary("fabricjni");
     }
-    @DoNotStrip private final HybridData mHybridData;
+
     @DoNotStrip
     private native HybridData initHybrid(ComponentFactory componentFactory);
     @DoNotStrip
     private MainComponentsRegistry(ComponentFactory componentFactory) {
-        mHybridData = initHybrid(componentFactory);
+        initHybrid(componentFactory);
     }
     @DoNotStrip
     public static MainComponentsRegistry register(ComponentFactory componentFactory) {
