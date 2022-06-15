@@ -9,7 +9,7 @@ const {
 } = theme;
 
 const PlanCardButton = styled(Button).attrs({
-  small: true,
+  small: false,
   full: true,
 })``;
 
