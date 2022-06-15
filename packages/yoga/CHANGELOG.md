@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.38.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.37.2...@gympass/yoga@7.38.0) (2022-06-15)
+
+
+### Bug Fixes
+
+* changing the type of the heading icon ([049b989](https://github.com/Gympass/yoga/commit/049b9891f7a104636611aed45751001a05104007))
+
+
+### Features
+
+* update plan card ([b0ba235](https://github.com/Gympass/yoga/commit/b0ba2351a93c7d6d98ae253dad33a57558ecfffa))
+
+
+
+
+
 ## [7.37.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.37.1...@gympass/yoga@7.37.2) (2022-06-09)
 
 **Note:** Version bump only for package @gympass/yoga
