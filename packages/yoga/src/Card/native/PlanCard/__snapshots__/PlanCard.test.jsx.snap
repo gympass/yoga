@@ -56,7 +56,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 16,
-            "maxWidth": 288,
+            "maxWidth": 312,
             "paddingBottom": 32,
             "paddingLeft": 20,
             "paddingRight": 20,
@@ -690,7 +690,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 16,
-            "maxWidth": 288,
+            "maxWidth": 312,
             "paddingBottom": 32,
             "paddingLeft": 20,
             "paddingRight": 20,
@@ -911,7 +911,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
           Object {
             "backgroundColor": "#FFFFFF",
             "borderRadius": 16,
-            "maxWidth": 288,
+            "maxWidth": 312,
             "paddingBottom": 32,
             "paddingLeft": 20,
             "paddingRight": 20,

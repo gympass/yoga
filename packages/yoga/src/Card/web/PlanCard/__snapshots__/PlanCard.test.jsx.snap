@@ -140,7 +140,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   width: 100%;
   display: inline-block;
   position: relative;
-  max-width: 288px;
+  max-width: 312px;
   overflow: hidden;
   padding: 64px 20px 32px 20px;
   border-radius: 16px;
@@ -476,7 +476,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   width: 100%;
   display: inline-block;
   position: relative;
-  max-width: 288px;
+  max-width: 312px;
   overflow: hidden;
   padding: 64px 20px 32px 20px;
   border-radius: 16px;
@@ -615,7 +615,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   width: 100%;
   display: inline-block;
   position: relative;
-  max-width: 288px;
+  max-width: 312px;
   overflow: hidden;
   padding: 64px 20px 32px 20px;
   border-radius: 16px;
