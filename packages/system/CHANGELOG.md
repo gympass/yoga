@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.10.1...@gympass/yoga-system@0.10.2) (2022-06-09)
+
+**Note:** Version bump only for package @gympass/yoga-system
+
+
+
+
+
+## [0.10.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.10.0...@gympass/yoga-system@0.10.1) (2022-06-07)
+
+**Note:** Version bump only for package @gympass/yoga-system
+
+
+
+
+
 # [0.10.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.9.0...@gympass/yoga-system@0.10.0) (2021-11-05)
 
 

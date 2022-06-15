@@ -13,11 +13,6 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
   <TouchableWithoutFeedback
     full={true}
     small={true}
-    style={
-      Array [
-        Object {},
-      ]
-    }
   >
     <View
       style={
@@ -46,7 +41,6 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
               "paddingRight": 16,
               "width": "100%",
             },
-            Object {},
           ]
         }
       >
@@ -298,11 +292,6 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
   <TouchableWithoutFeedback
     full={true}
     small={true}
-    style={
-      Array [
-        Object {},
-      ]
-    }
   >
     <View
       style={
@@ -331,7 +320,6 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
               "paddingRight": 16,
               "width": "100%",
             },
-            Object {},
           ]
         }
       >
@@ -442,11 +430,6 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
   <TouchableWithoutFeedback
     full={true}
     small={true}
-    style={
-      Array [
-        Object {},
-      ]
-    }
   >
     <View
       style={
@@ -475,7 +458,6 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
               "paddingRight": 16,
               "width": "100%",
             },
-            Object {},
           ]
         }
       >
@@ -727,11 +709,6 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
   <TouchableWithoutFeedback
     full={true}
     small={true}
-    style={
-      Array [
-        Object {},
-      ]
-    }
   >
     <View
       style={
@@ -760,7 +737,6 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
               "paddingRight": 16,
               "width": "100%",
             },
-            Object {},
           ]
         }
       >

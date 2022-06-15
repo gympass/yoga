@@ -3,6 +3,56 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.38.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.37.2...@gympass/yoga@7.38.0) (2022-06-15)
+
+
+### Bug Fixes
+
+* changing the type of the heading icon ([049b989](https://github.com/Gympass/yoga/commit/049b9891f7a104636611aed45751001a05104007))
+
+
+### Features
+
+* update plan card ([b0ba235](https://github.com/Gympass/yoga/commit/b0ba2351a93c7d6d98ae253dad33a57558ecfffa))
+
+
+
+
+
+## [7.37.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.37.1...@gympass/yoga@7.37.2) (2022-06-09)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.37.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.37.0...@gympass/yoga@7.37.1) (2022-06-07)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+# [7.37.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.36.0...@gympass/yoga@7.37.0) (2022-06-06)
+
+
+### Bug Fixes
+
+* add forwardRef on all components Input ([0b729e4](https://github.com/Gympass/yoga/commit/0b729e4a35f3424355ddbdffd274199fe649cdcc))
+* correctly test ([8e833c8](https://github.com/Gympass/yoga/commit/8e833c81b44cd6d0387562c2720e1f4ad32ceaa2))
+* merge master ([6a398ba](https://github.com/Gympass/yoga/commit/6a398baa91f72acd3da4c6564f2ee20cd41a7f7c))
+
+
+### Features
+
+* **number and dropdown:** fix pr comments ([2351315](https://github.com/Gympass/yoga/commit/2351315e601d4a54368f22b1c191ae5ac4c430e7))
+
+
+
+
+
 # [7.36.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.35.1...@gympass/yoga@7.36.0) (2022-06-01)
 
 

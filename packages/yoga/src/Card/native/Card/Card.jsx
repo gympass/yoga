@@ -83,9 +83,9 @@ const RibbonText = styled(Text.Tiny)`
   `}
 `;
 
-const Card = ({ ribbon, children, ...rest }) => (
+const Card = React.forwardRef(({ ribbon, children, ...rest }, ref) => (
   <CardShadow>
-    <CardStyled {...rest}>
+    <CardStyled ref={ref} {...rest}>
       {Object.keys(ribbon).length > 0 && (
         <Ribbon variant={ribbon.variant}>
           <RibbonText variant={ribbon.variant}>{ribbon.text}</RibbonText>
@@ -94,7 +94,7 @@ const Card = ({ ribbon, children, ...rest }) => (
       {children}
     </CardStyled>
   </CardShadow>
-);
+));
 
 Card.propTypes = {
   /** text: the content inside the Card Ribbon

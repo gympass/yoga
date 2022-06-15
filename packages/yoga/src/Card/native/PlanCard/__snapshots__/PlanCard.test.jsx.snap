@@ -173,11 +173,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 24,
+                "fontSize": 16,
                 "fontWeight": "500",
-                "lineHeight": 32,
-                "marginBottom": 12,
-                "marginTop": 12,
+                "lineHeight": 24,
+                "marginBottom": 8,
+                "marginTop": 8,
               },
             ]
           }
@@ -189,38 +189,26 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             Array [
               Object {
                 "flexDirection": "row",
-                "marginBottom": 12,
+                "marginBottom": 24,
               },
             ]
           }
         >
-          <View
-            align="flex-start"
+          <Text
             style={
               Array [
                 Object {
-                  "alignSelf": "flex-start",
-                  "marginRight": 4,
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 24,
+                  "fontWeight": "500",
+                  "lineHeight": 32,
                 },
               ]
             }
           >
-            <Text
-              style={
-                Array [
-                  Object {
-                    "color": "#231B22",
-                    "fontFamily": "Rubik",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 20,
-                  },
-                ]
-              }
-            >
-              $
-            </Text>
-          </View>
+            $
+          </Text>
           <Text
             style={
               Array [
@@ -237,11 +225,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             99.90
           </Text>
           <View
-            align="flex-end"
             style={
               Array [
                 Object {
-                  "alignSelf": "flex-end",
+                  "alignSelf": "center",
                 },
               ]
             }
@@ -252,9 +239,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                   Object {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 20,
+                    "fontSize": 16,
+                    "fontWeight": "500",
                   },
                 ]
               }
@@ -263,6 +249,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             </Text>
           </View>
         </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderColor": "#D7D7E0",
+                "width": "auto",
+              },
+            ]
+          }
+          vertical={false}
+        />
         <Text
           style={
             Array [
@@ -283,7 +281,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           style={
             Array [
               Object {
-                "marginTop": 0,
+                "marginTop": 24,
               },
             ]
           }
@@ -569,7 +567,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         style={
           Array [
             Object {
-              "marginTop": 16,
+              "marginTop": 8,
             },
           ]
         }
@@ -748,11 +746,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 24,
+                "fontSize": 16,
                 "fontWeight": "500",
-                "lineHeight": 32,
-                "marginBottom": 12,
-                "marginTop": 12,
+                "lineHeight": 24,
+                "marginBottom": 8,
+                "marginTop": 8,
               },
             ]
           }
@@ -764,38 +762,26 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
             Array [
               Object {
                 "flexDirection": "row",
-                "marginBottom": 12,
+                "marginBottom": 24,
               },
             ]
           }
         >
-          <View
-            align="flex-start"
+          <Text
             style={
               Array [
                 Object {
-                  "alignSelf": "flex-start",
-                  "marginRight": 4,
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 24,
+                  "fontWeight": "500",
+                  "lineHeight": 32,
                 },
               ]
             }
           >
-            <Text
-              style={
-                Array [
-                  Object {
-                    "color": "#231B22",
-                    "fontFamily": "Rubik",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 20,
-                  },
-                ]
-              }
-            >
-              $
-            </Text>
-          </View>
+            $
+          </Text>
           <Text
             style={
               Array [
@@ -811,12 +797,26 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
           >
             99.90
           </Text>
-          <View
-            align="flex-end"
+          <Text
             style={
               Array [
                 Object {
-                  "alignSelf": "flex-end",
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 24,
+                  "fontWeight": "500",
+                  "lineHeight": 32,
+                },
+              ]
+            }
+          >
+            MXN
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignSelf": "center",
                 },
               ]
             }
@@ -827,17 +827,28 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
                   Object {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 20,
+                    "fontSize": 16,
+                    "fontWeight": "500",
                   },
                 ]
               }
             >
-              MXN/month
+              /month
             </Text>
           </View>
         </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderColor": "#D7D7E0",
+                "width": "auto",
+              },
+            ]
+          }
+          vertical={false}
+        />
       </View>
     </View>
   </View>
@@ -956,11 +967,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
               Object {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
-                "fontSize": 24,
+                "fontSize": 16,
                 "fontWeight": "500",
-                "lineHeight": 32,
-                "marginBottom": 12,
-                "marginTop": 12,
+                "lineHeight": 24,
+                "marginBottom": 8,
+                "marginTop": 8,
               },
             ]
           }
@@ -972,38 +983,26 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
             Array [
               Object {
                 "flexDirection": "row",
-                "marginBottom": 12,
+                "marginBottom": 24,
               },
             ]
           }
         >
-          <View
-            align="flex-start"
+          <Text
             style={
               Array [
                 Object {
-                  "alignSelf": "flex-start",
-                  "marginRight": 4,
+                  "color": "#231B22",
+                  "fontFamily": "Rubik",
+                  "fontSize": 24,
+                  "fontWeight": "500",
+                  "lineHeight": 32,
                 },
               ]
             }
           >
-            <Text
-              style={
-                Array [
-                  Object {
-                    "color": "#231B22",
-                    "fontFamily": "Rubik",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 20,
-                  },
-                ]
-              }
-            >
-              $
-            </Text>
-          </View>
+            $
+          </Text>
           <Text
             style={
               Array [
@@ -1020,11 +1019,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
             99.90
           </Text>
           <View
-            align="flex-end"
             style={
               Array [
                 Object {
-                  "alignSelf": "flex-end",
+                  "alignSelf": "center",
                 },
               ]
             }
@@ -1035,9 +1033,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
                   Object {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
-                    "fontSize": 14,
-                    "fontWeight": "400",
-                    "lineHeight": 20,
+                    "fontSize": 16,
+                    "fontWeight": "500",
                   },
                 ]
               }
@@ -1046,6 +1043,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
             </Text>
           </View>
         </View>
+        <View
+          style={
+            Array [
+              Object {
+                "borderBottomWidth": 1,
+                "borderColor": "#D7D7E0",
+                "width": "auto",
+              },
+            ]
+          }
+          vertical={false}
+        />
       </View>
     </View>
   </View>

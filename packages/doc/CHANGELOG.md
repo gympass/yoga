@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.20.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.19.3...@gympass/yoga-doc@2.20.0) (2022-06-15)
+
+
+### Features
+
+* update plan card ([b0ba235](https://github.com/gympass/yoga/commit/b0ba2351a93c7d6d98ae253dad33a57558ecfffa))
+
+
+
+
+
+## [2.19.3](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.19.2...@gympass/yoga-doc@2.19.3) (2022-06-09)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.19.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.19.1...@gympass/yoga-doc@2.19.2) (2022-06-07)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.19.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.19.0...@gympass/yoga-doc@2.19.1) (2022-06-06)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
 # [2.19.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.18.1...@gympass/yoga-doc@2.19.0) (2022-06-01)
 
 

@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@1.13.6...@gympass/yoga-labnative@1.14.0) (2022-06-15)
+
+
+### Features
+
+* update plan card ([b0ba235](https://github.com/gympass/yoga/commit/b0ba2351a93c7d6d98ae253dad33a57558ecfffa))
+
+
+
+
+
+## [1.13.6](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@1.13.5...@gympass/yoga-labnative@1.13.6) (2022-06-09)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [1.13.5](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@1.13.4...@gympass/yoga-labnative@1.13.5) (2022-06-07)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [1.13.4](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@1.13.3...@gympass/yoga-labnative@1.13.4) (2022-06-06)
+
+
+### Bug Fixes
+
+* merge master ([6a398ba](https://github.com/gympass/yoga/commit/6a398baa91f72acd3da4c6564f2ee20cd41a7f7c))
+
+
+
+
+
 ## [1.13.3](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@1.13.2...@gympass/yoga-labnative@1.13.3) (2022-06-01)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

@@ -47,10 +47,12 @@ const StyledBanner = styled.View`
   ${borders}
 `;
 
-const BannerActionButton = ({ button: { label, action }, ...props }) => (
-  <Box as={Button.Text} small secondary onPress={action} {...props}>
-    {label}
-  </Box>
+const BannerActionButton = React.forwardRef(
+  ({ button: { label, action }, ...props }, ref) => (
+    <Box as={Button.Text} small secondary onPress={action} ref={ref} {...props}>
+      {label}
+    </Box>
+  ),
 );
 
 BannerActionButton.propTypes = {
@@ -62,14 +64,8 @@ BannerActionButton.propTypes = {
 
 /** A banner is a component that displays a prominent message. It can have related action buttons on it or not. */
 const Banner = forwardRef((props, ref) => {
-  const {
-    icon,
-    variant,
-    message,
-    primaryButton,
-    secondaryButton,
-    ...rest
-  } = props;
+  const { icon, variant, message, primaryButton, secondaryButton, ...rest } =
+    props;
 
   return (
     <StyledBanner ref={ref} variant={variant} {...rest}>

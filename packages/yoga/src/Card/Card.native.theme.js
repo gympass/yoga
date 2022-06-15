@@ -1,22 +1,23 @@
-const CardNative = ({ colors, spacing }) => ({
+const CardNative = ({ colors, spacing, lineHeights }) => ({
   plan: {
     title: {
       margin: {
-        top: spacing.xsmall,
-        bottom: spacing.xsmall,
+        top: spacing.xxsmall,
+        bottom: spacing.xxsmall,
       },
+      lineHeight: lineHeights.medium,
     },
     description: {
       color: colors.text.secondary,
     },
     price: {
       margin: {
-        bottom: spacing.xsmall,
+        bottom: spacing.large,
       },
     },
     list: {
       margin: {
-        top: spacing.zero,
+        top: spacing.large,
       },
       item: {
         icon: {
@@ -33,7 +34,7 @@ const CardNative = ({ colors, spacing }) => ({
         },
       },
       margin: {
-        top: spacing.small,
+        top: spacing.xxsmall,
       },
     },
   },
