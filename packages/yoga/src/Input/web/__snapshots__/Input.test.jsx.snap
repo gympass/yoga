@@ -54,6 +54,22 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   color: #231B22;
 }
 
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -98,8 +114,8 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
   border-color: #D7D7E0;
 }
 
-.c1:hover,
-.c1:focus-within {
+.c1:hover:not(:disabled),
+.c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -168,6 +184,7 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
     >
       <input
         class="c2"
+        label="Label"
         value=""
       />
       <label
@@ -244,6 +261,22 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   color: #231B22;
 }
 
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -286,12 +319,12 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
+  border-color: #D7D7E0;
 }
 
-.c1:hover,
-.c1:focus-within {
+.c1:hover:not(:disabled),
+.c1:focus-within:not(:disabled) {
   border-color: #231B22;
-  border-color: #D7D7E0;
 }
 
 .c4 {
@@ -362,6 +395,7 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
       <input
         class="c2"
         disabled=""
+        label="Label"
         value=""
       />
       <label
@@ -436,7 +470,23 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   font-weight: 400;
-  color: #FF874C;
+  color: #CA4808;
+}
+
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
 }
 
 .c2:disabled {
@@ -479,7 +529,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 4px;
-  color: #FF874C;
+  color: #CA4808;
 }
 
 .c7 {
@@ -505,12 +555,12 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #FF874C;
+  border-color: #CA4808;
 }
 
-.c1:hover,
-.c1:focus-within {
-  border-color: #FF874C;
+.c1:hover:not(:disabled),
+.c1:focus-within:not(:disabled) {
+  border-color: #CA4808;
 }
 
 .c4 {
@@ -578,6 +628,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
     >
       <input
         class="c2"
+        label="Label"
         value=""
       />
       <label
@@ -663,6 +714,22 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   color: #231B22;
 }
 
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -707,8 +774,8 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
   border-color: #D7D7E0;
 }
 
-.c1:hover,
-.c1:focus-within {
+.c1:hover:not(:disabled),
+.c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -777,6 +844,7 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
     >
       <input
         class="c2"
+        label="Label"
         value=""
       />
       <label
@@ -853,6 +921,22 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   color: #231B22;
 }
 
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -922,8 +1006,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
   border-color: #D7D7E0;
 }
 
-.c1:hover,
-.c1:focus-within {
+.c1:hover:not(:disabled),
+.c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -992,6 +1076,7 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
     >
       <input
         class="c2"
+        label="Label"
         maxlength="20"
         value=""
       />
@@ -1085,6 +1170,22 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
   color: #231B22;
 }
 
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -1154,8 +1255,8 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
   border-color: #D7D7E0;
 }
 
-.c1:hover,
-.c1:focus-within {
+.c1:hover:not(:disabled),
+.c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -1224,6 +1325,7 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
     >
       <input
         class="c2"
+        label="Label"
         maxlength="20"
         value=""
       />
@@ -1310,6 +1412,22 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   color: #231B22;
 }
 
+.c2:focus::-webkit-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::-moz-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus:-ms-input-placeholder {
+  color: #6B6B78;
+}
+
+.c2:focus::placeholder {
+  color: #6B6B78;
+}
+
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
@@ -1354,8 +1472,8 @@ exports[`<Input /> Snapshots should match with label 1`] = `
   border-color: #D7D7E0;
 }
 
-.c1:hover,
-.c1:focus-within {
+.c1:hover:not(:disabled),
+.c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -1424,6 +1542,7 @@ exports[`<Input /> Snapshots should match with label 1`] = `
     >
       <input
         class="c2"
+        label="Input"
         value=""
       />
       <label

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { useContext } from 'react';
 import { string, bool } from 'prop-types';
 import Highlight, { defaultProps } from 'prism-react-renderer';

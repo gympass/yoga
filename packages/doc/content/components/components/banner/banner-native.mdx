@@ -1,0 +1,174 @@
+import { Link as GatsbyLink } from 'gatsby';
+
+### Usage
+
+```javascript type=expo
+      <ScrollView style={{
+        marginBottom, '50px',
+        padding: '10px',
+        width: '100%',
+      }}>
+        <View style={{
+          flex: '1',
+          padding: '20px',
+          marginBottom: '10px',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}>
+          <Text style={{
+            marginTop: '20px',
+            marginBottom: '10px',
+            fontSize: '20px',
+            textAlign: 'center',
+          }}>
+            Banner default
+          </Text>
+
+          <Banner m="xsmall" variant="success" message="Success banner" />
+          <Banner m="xsmall" variant="informative" message="Informative banner" />
+          <Banner m="xsmall" variant="attention" message="Attention banner" />
+        </View>
+
+        <View style={{
+          flex: '1',
+          padding: '20px',
+          marginBottom: '10px',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}>
+          <Text style={{
+            marginTop: '20px',
+            marginBottom: '10px',
+            fontSize: '20px',
+            textAlign: 'center',
+          }}>
+            Banner with icon
+          </Text>
+
+          <Banner
+            m="xsmall"
+            icon={CheckedFull}
+            variant="success"
+            message="Success banner"
+          />
+          <Banner
+            m="xsmall"
+            icon={AlertCircle}
+            variant="informative"
+            message="Informative banner"
+          />
+          <Banner
+            m="xsmall"
+            icon={AlertTriangle}
+            variant="attention"
+            message="Attention banner"
+          />
+        </View>
+
+        <View style={{
+          flex: '1',
+          padding: '20px',
+          marginBottom: '10px',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}>
+          <Text style={{
+            marginTop: '20px',
+            marginBottom: '10px',
+            fontSize: '20px',
+            textAlign: 'center',
+          }}>
+            Banner with action button
+          </Text>
+          <Banner
+            m="xsmall"
+            variant="success"
+            message="Success Banner"
+            primaryButton={{
+              label: 'Custom Action',
+              action: () => {},
+            }}
+          />
+          <Banner
+            m="xsmall"
+            variant="informative"
+            message="Informative banner"
+            primaryButton={{
+              label: 'Custom Action',
+              action: () => {},
+            }}
+          />
+          <Banner
+            m="xsmall"
+            variant="attention"
+            message="Attention banner"
+            primaryButton={{
+              label: 'Custom Action',
+              action: () => {},
+            }}
+          />
+        </View>
+        
+        <View style={{
+          flex: '1',
+          padding: '20px',
+          marginBottom: '10px',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}>
+          <Text style={{
+            marginTop: '20px',
+            marginBottom: '10px',
+            fontSize: '20px',
+            textAlign: 'center',
+          }}>
+            Banner with two action buttons
+          </Text>
+          <Banner
+            m="xsmall"
+            variant="success"
+            message="Success Banner"
+            primaryButton={{
+              label: 'Primary Action',
+              action: () => {},
+            }}
+            secondaryButton={{
+              label: 'Secondary Action',
+              action: () => {},
+            }}
+          />
+          <Banner
+            m="xsmall"
+            variant="informative"
+            message="Informative banner"
+            primaryButton={{
+              label: 'Primary Action',
+              action: () => {},
+            }}
+            secondaryButton={{
+              label: 'Secondary Action',
+              action: () => {},
+            }}
+          />
+          <Banner
+            m="xsmall"
+            variant="attention"
+            message="Attention banner"
+            primaryButton={{
+              label: 'Primary Action',
+              action: () => {},
+            }}
+            secondaryButton={{
+              label: 'Secondary Action',
+              action: () => {},
+            }}
+          />
+        </View>
+      </ScrollView>
+```
+
+### Props
+
+The Banner component also has support for margins props as you can see more details <GatsbyLink to="/system/spacing">our system</GatsbyLink>
+
+<PropsTable component="Banner" platform="native" />

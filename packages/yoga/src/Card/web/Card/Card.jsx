@@ -59,8 +59,8 @@ const Ribbon = styled(Text.Tiny)`
   `}
 `;
 
-const Card = ({ ribbon, children, ...rest }) => (
-  <CardStyled {...rest}>
+const Card = React.forwardRef(({ ribbon, children, ...rest }, ref) => (
+  <CardStyled ref={ref} {...rest}>
     {Object.keys(ribbon).length > 0 && (
       <Ribbon variant={ribbon.variant} as="span">
         {ribbon.text}
@@ -68,7 +68,7 @@ const Card = ({ ribbon, children, ...rest }) => (
     )}
     {children}
   </CardStyled>
-);
+));
 
 Card.propTypes = {
   /** text: the content inside the Card Ribbon.

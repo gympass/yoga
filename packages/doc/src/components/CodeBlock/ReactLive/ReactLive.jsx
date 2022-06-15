@@ -10,6 +10,7 @@ import PrismHighlight from '../PrismHighlight';
 
 import CodeToolbar from './CodeToolbar';
 import CodeBlockContext from '../CodeBlockContext';
+import Clipboard from '../../Clipboard';
 
 const CodeError = styled(LiveError)`
   background-color: #fff0f0;
@@ -128,7 +129,12 @@ const ReactLive = () => {
             </Component>
 
             <Usage visible={codeVisible}>
-              {imports && <PrismHighlight code={imports} liveEditor={false} />}
+              {imports && (
+                <YogaComponents.Box position="relative">
+                  <Clipboard copyText={imports + code} />
+                  <PrismHighlight code={imports} liveEditor={false} />
+                </YogaComponents.Box>
+              )}
               <PrismHighlight code={code} liveEditor />
               <CodeError />
             </Usage>

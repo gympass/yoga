@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled, { withTheme } from 'styled-components';
 import { node, oneOfType, func, bool } from 'prop-types';
 
@@ -87,68 +87,74 @@ const ButtonContainer = styled.View`
 /** Buttons make common actions more obvious and help users more easily perform
 them. Buttons use labels and sometimes icons to communicate the action that will
 occur when the user touches them. */
-const Button = ({
-  children,
-  full,
-  disabled,
-  small,
-  pressed,
-  inverted,
-  secondary,
-  icon: Icon,
-  theme: {
-    yoga: {
-      components: { button },
+const Button = forwardRef(
+  (
+    {
+      children,
+      full,
+      disabled,
+      small,
+      pressed,
+      inverted,
+      secondary,
+      icon: Icon,
+      theme: {
+        yoga: {
+          components: { button },
+        },
+      },
+      ...rest
     },
-  },
-  ...rest
-}) => {
-  const state = secondary ? 'secondary' : 'primary';
-  let textColor = button.types.contained.font.default.color;
+    ref,
+  ) => {
+    const state = secondary ? 'secondary' : 'primary';
+    let textColor = button.types.contained.font.default.color;
 
-  if (disabled) {
-    textColor = button.types.contained.font.disabled.color;
-  } else if (inverted) {
-    textColor = button.types.contained.backgroundColor[state].default;
-    if (pressed) {
-      textColor = button.types.contained.backgroundColor[state].pressed;
+    if (disabled) {
+      textColor = button.types.contained.font.disabled.color;
+    } else if (inverted) {
+      textColor = button.types.contained.backgroundColor[state].default;
+      if (pressed) {
+        textColor = button.types.contained.backgroundColor[state].pressed;
+      }
+    } else if (pressed) {
+      textColor = button.types.contained.font.pressed.color;
     }
-  } else if (pressed) {
-    textColor = button.types.contained.font.pressed.color;
-  }
 
-  return (
-    <ButtonContainer
-      {...rest}
-      full={full}
-      pressed={pressed}
-      disabled={disabled}
-      small={small}
-      inverted={inverted}
-      secondary={secondary}
-    >
-      {Icon && (
-        <Icon
-          width={small ? button.icon.size.small : button.icon.size.default}
-          height={small ? button.icon.size.small : button.icon.size.default}
-          fill={textColor}
-          style={{
-            marginRight: button.icon.margin.right,
-          }}
-        />
-      )}
-      <Label
-        disabled={disabled}
+    return (
+      <ButtonContainer
+        {...rest}
+        full={full}
         pressed={pressed}
-        inverted={inverted}
+        disabled={disabled}
         small={small}
-        color={textColor}
+        inverted={inverted}
+        secondary={secondary}
+        ref={ref}
       >
-        {children}
-      </Label>
-    </ButtonContainer>
-  );
-};
+        {Icon && (
+          <Icon
+            width={small ? button.icon.size.small : button.icon.size.default}
+            height={small ? button.icon.size.small : button.icon.size.default}
+            fill={textColor}
+            style={{
+              marginRight: button.icon.margin.right,
+            }}
+          />
+        )}
+        <Label
+          disabled={disabled}
+          pressed={pressed}
+          inverted={inverted}
+          small={small}
+          color={textColor}
+        >
+          {children}
+        </Label>
+      </ButtonContainer>
+    );
+  },
+);
 
 Button.propTypes = {
   children: node,

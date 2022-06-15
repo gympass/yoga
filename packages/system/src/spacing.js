@@ -201,24 +201,11 @@ const paddings = compose(
   paddingVertical,
 );
 
-const widths = compose(
-  width,
-  maxWidth,
-  minWidth,
-);
+const widths = compose(width, maxWidth, minWidth);
 
-const heights = compose(
-  height,
-  maxHeight,
-  minHeight,
-);
+const heights = compose(height, maxHeight, minHeight);
 
-const spacing = compose(
-  margins,
-  paddings,
-  widths,
-  heights,
-);
+const spacing = compose(margins, paddings, widths, heights);
 
 export {
   margin,

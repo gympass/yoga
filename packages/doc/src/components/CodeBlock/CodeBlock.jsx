@@ -9,6 +9,7 @@ import { ReactLive, PrismHighlight, SnackEmbed } from '.';
 import { importStatement } from './shared/templates';
 import {
   YogaComponents,
+  YogaSystem,
   YogaIcons,
   YogaHelpers,
   NativeComponents,
@@ -59,6 +60,7 @@ const packages = [
   { name: YogaIcons, path: '@gympass/yoga-icons' },
   { name: YogaHelpers, path: '@gympass/yoga-helpers' },
   { name: YogaComponents, path: '@gympass/yoga' },
+  { name: YogaSystem, path: '@gympass/yoga-system' },
   { name: NativeComponents, path: 'react-native' },
 ];
 

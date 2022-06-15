@@ -2,14 +2,14 @@ module.exports = {
   env: {
     jest: true,
   },
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
+  },
   plugins: ['react', 'prettier'],
-  extends: [
-    'airbnb',
-    'prettier',
-    'prettier/react',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['airbnb', 'prettier', 'plugin:prettier/recommended'],
   rules: {
     'prettier/prettier': 'error',
     'import/no-cycle': 0,
