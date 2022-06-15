@@ -1,14 +1,7 @@
 /* eslint-disable no-undef, no-alert */
 import React from 'react';
-import {
-  Card,
-  PlanCard,
-  EventCard,
-  GymCard,
-  Icon,
-  Divider,
-} from '@gympass/yoga';
-import { Add, Dumbbell, Star, User } from '@gympass/yoga-icons';
+import { Card, PlanCard, EventCard, GymCard, Icon } from '@gympass/yoga';
+import { Dumbbell, Star, User, Checkin } from '@gympass/yoga-icons';
 import { Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
@@ -104,7 +97,7 @@ const CardPage = () => {
 
       <DocTitle>Plan Card</DocTitle>
       <ScrollView horizontal style={{ height: 700 }}>
-        <PlanCard style={{ marginLeft: 10 }}>
+        <PlanCard style={{ marginLeft: 10, marginRight: 10 }}>
           <PlanCard.Tag variant="informative">Recommended for you</PlanCard.Tag>
           <PlanCard.Content
             title="Basic"
@@ -113,15 +106,7 @@ const CardPage = () => {
             period="/month"
           >
             <PlanCard.List>
-              <PlanCard.ListItem
-                variant="light"
-                icon={Add}
-                text="2.900 gyms and studios"
-              />
-              <View style={{ marginBottom: 8 }} />
-              <Divider />
-              <View style={{ marginBottom: 24 }} />
-
+              <PlanCard.ListItem icon={Checkin} text="2.900 gyms and studios" />
               <PlanCard.ListItem
                 icon={Dumbbell}
                 text="1x/day standard access"

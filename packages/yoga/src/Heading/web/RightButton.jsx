@@ -8,7 +8,7 @@ const RightButton = ({ onClick, icon, ...props }) => (
 
 RightButton.propTypes = {
   onClick: PropTypes.func.isRequired,
-  icon: PropTypes.node.isRequired,
+  icon: PropTypes.elementType.isRequired,
 };
 
 export default RightButton;

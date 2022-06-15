@@ -68,18 +68,18 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   height: 16px;
 }
 
-.c9 {
+.c8 {
   margin: 0;
   padding: 0;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: 500;
   font-family: Rubik;
   color: #231B22;
 }
 
 .c18 {
-  margin-top: 32px;
+  margin-top: 8px;
 }
 
 .c5 {
@@ -96,16 +96,24 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   font-weight: 500;
 }
 
+.c10 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
 .c6 {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
   font-weight: 500;
   font-family: Rubik;
   color: #231B22;
   color: #231B22;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+  line-height: 24px;
 }
 
 .c7 {
@@ -113,35 +121,19 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
-.c10 {
+.c9 {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   color: #231B22;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-}
-
-.c8 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  margin-right: 4px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c0 {
@@ -226,7 +218,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 }
 
 .c11 {
-  margin: 16px 0 0;
+  margin: 24px 0 0;
   padding: 0;
   list-style: none;
 }
@@ -315,11 +307,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       >
         plan
       </p>
-      <h5
+      <p
         class="c6"
       >
         Basic
-      </h5>
+      </p>
       <div
         class="c7"
       >
@@ -329,16 +321,19 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           $
         </sup>
         <strong
-          class="c9"
+          class="c8"
         >
           99.90
         </strong>
         <sub
-          class="c10"
+          class="c9"
         >
-           /month
+          /month
         </sub>
       </div>
+      <hr
+        class="c10"
+      />
       <p
         class="c5"
       >
@@ -413,11 +408,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 `;
 
 exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
-.c6 {
+.c5 {
   margin: 0;
   padding: 0;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: 500;
   font-family: Rubik;
   color: #231B22;
@@ -437,16 +432,24 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   font-weight: 500;
 }
 
+.c7 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
 .c3 {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
   font-weight: 500;
   font-family: Rubik;
   color: #231B22;
   color: #231B22;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+  line-height: 24px;
 }
 
 .c4 {
@@ -454,35 +457,19 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
-.c7 {
+.c6 {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   color: #231B22;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-}
-
-.c5 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  margin-right: 4px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c0 {
@@ -522,11 +509,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
       >
         plan
       </p>
-      <h5
+      <p
         class="c3"
       >
         Basic
-      </h5>
+      </p>
       <div
         class="c4"
       >
@@ -536,27 +523,35 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
           $
         </sup>
         <strong
-          class="c6"
+          class="c5"
         >
           99.90
         </strong>
-        <sub
-          class="c7"
+        <sup
+          class="c5"
         >
-          MXN /month
+          MXN
+        </sup>
+        <sub
+          class="c6"
+        >
+          /month
         </sub>
       </div>
+      <hr
+        class="c7"
+      />
     </div>
   </article>
 </div>
 `;
 
 exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
-.c6 {
+.c5 {
   margin: 0;
   padding: 0;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 24px;
+  line-height: 32px;
   font-weight: 500;
   font-family: Rubik;
   color: #231B22;
@@ -576,16 +571,24 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   font-weight: 500;
 }
 
+.c7 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
 .c3 {
   margin: 0;
   padding: 0;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
   font-weight: 500;
   font-family: Rubik;
   color: #231B22;
   color: #231B22;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+  line-height: 24px;
 }
 
 .c4 {
@@ -593,35 +596,19 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
-.c7 {
+.c6 {
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   font-family: Rubik;
   color: #231B22;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-}
-
-.c5 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  margin-right: 4px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c0 {
@@ -661,11 +648,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
       >
         plan
       </p>
-      <h5
+      <p
         class="c3"
       >
         Basic
-      </h5>
+      </p>
       <div
         class="c4"
       >
@@ -675,16 +662,19 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
           $
         </sup>
         <strong
-          class="c6"
+          class="c5"
         >
           99.90
         </strong>
         <sub
-          class="c7"
+          class="c6"
         >
-           /month
+          /month
         </sub>
       </div>
+      <hr
+        class="c7"
+      />
     </div>
   </article>
 </div>
