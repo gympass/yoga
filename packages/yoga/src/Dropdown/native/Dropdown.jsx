@@ -82,75 +82,81 @@ const getSelectedOption = options =>
   options.find(item => item.selected === true);
 
 /** Gympass Dropdown is a multiple choice type of menu. */
-const Dropdown = ({
-  error,
-  label,
-  disabled,
-  full,
-  options,
-  cancelActionLabel,
-  confirmActionLabel,
-  onChange,
-  theme: {
-    yoga: {
-      components: { dropdown },
+const Dropdown = React.forwardRef(
+  (
+    {
+      error,
+      label,
+      disabled,
+      full,
+      options,
+      cancelActionLabel,
+      confirmActionLabel,
+      onChange,
+      theme: {
+        yoga: {
+          components: { dropdown },
+        },
+      },
+      ...rest
     },
-  },
-  ...rest
-}) => {
-  const [selected, toggleIsSelected] = useState(getSelectedOption(options));
-  const [isOpen, toggleIsOpen] = useState(false);
+    ref,
+  ) => {
+    const [selected, toggleIsSelected] = useState(getSelectedOption(options));
+    const [isOpen, toggleIsOpen] = useState(false);
 
-  const iconColor = () => {
-    if (disabled) return dropdown.disabled.arrow.fill;
-    if (selected) return dropdown.selected.arrow.fill;
-    return dropdown.arrow.fill;
-  };
+    const iconColor = () => {
+      if (disabled) return dropdown.disabled.arrow.fill;
+      if (selected) return dropdown.selected.arrow.fill;
+      return dropdown.arrow.fill;
+    };
 
-  return (
-    <>
-      <TouchableWithoutFeedback
-        accessibilityRole="button"
-        onPress={() => !disabled && toggleIsOpen(true)}
-      >
-        <View>
-          <Selector
-            full={full}
-            disabled={disabled}
-            selected={selected}
-            error={error}
-            {...rest}
-          >
-            <Label disabled={disabled} selected={selected}>
-              {(selected && selected.label) || label}
-            </Label>
-            <ChevronDown width={20} height={20} fill={iconColor()} />
-          </Selector>
-          {error && !selected && <Helper error={error} />}
-        </View>
-      </TouchableWithoutFeedback>
+    return (
+      <>
+        <TouchableWithoutFeedback
+          accessibilityRole="button"
+          onPress={() => !disabled && toggleIsOpen(true)}
+        >
+          <View>
+            <Selector
+              full={full}
+              disabled={disabled}
+              selected={selected}
+              error={error}
+              {...rest}
+              ref={ref}
+            >
+              <Label disabled={disabled} selected={selected}>
+                {(selected && selected.label) || label}
+              </Label>
+              <ChevronDown width={20} height={20} fill={iconColor()} />
+            </Selector>
+            {error && !selected && <Helper error={error} />}
+          </View>
+        </TouchableWithoutFeedback>
 
-      <Backdrop
-        visible={isOpen}
-        title={label}
-        onClose={() => toggleIsOpen(false)}
-      >
-        <Options
-          options={options}
-          selectedOption={selected}
-          cancelActionLabel={cancelActionLabel}
-          confirmActionLabel={confirmActionLabel}
+        <Backdrop
+          visible={isOpen}
+          title={label}
           onClose={() => toggleIsOpen(false)}
-          onSelect={item => {
-            toggleIsSelected(item);
-            onChange(item);
-            toggleIsOpen(false);
-          }}
-        />
-      </Backdrop>
-    </>
-  );
-};
+        >
+          <Options
+            options={options}
+            selectedOption={selected}
+            cancelActionLabel={cancelActionLabel}
+            confirmActionLabel={confirmActionLabel}
+            onClose={() => toggleIsOpen(false)}
+            onSelect={item => {
+              toggleIsSelected(item);
+              onChange(item);
+              toggleIsOpen(false);
+            }}
+          />
+        </Backdrop>
+      </>
+    );
+  },
+);
 
 Dropdown.propTypes = {
   label: string,

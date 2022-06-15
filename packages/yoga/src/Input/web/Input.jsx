@@ -114,6 +114,7 @@ const Input = React.forwardRef(
           <Field
             {...props}
             {...{
+              label,
               cleanable,
               disabled,
               error,
@@ -180,6 +181,7 @@ Input.propTypes = {
   onClean: func,
   /** when max length helper is unnecessary to appear */
   hideMaxLength: bool,
+  placeholder: string,
 };
 
 Input.defaultProps = {
@@ -197,6 +199,7 @@ Input.defaultProps = {
   onChange: () => {},
   onClean: () => {},
   hideMaxLength: false,
+  placeholder: undefined,
 };
 
 export default Input;

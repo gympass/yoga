@@ -97,31 +97,33 @@ const ButtonWrapper = styled.div`
 
 /** Radio group allows user to select one option from a set of options. Use
 value on group to set the selected option. */
-const RadioGroupButton = ({ children, value, ...rest }) => {
-  const { name, onChange, small, selectedValue, ...context } = useContext(
-    RadioGroupContext,
-  );
+const RadioGroupButton = React.forwardRef(
+  ({ children, value, ...rest }, ref) => {
+    const { name, onChange, small, selectedValue, ...context } =
+      useContext(RadioGroupContext);
 
-  const inputValue = value || children;
-  const checked = inputValue === selectedValue;
+    const inputValue = value || children;
+    const checked = inputValue === selectedValue;
 
-  return (
-    <ButtonWrapper>
-      <Button {...{ small, checked }}>
-        <HiddenInput
-          type="radio"
-          value={inputValue}
-          checked={checked}
-          name={name}
-          onChange={onChange}
-          {...rest}
-          {...context}
-        />
-        {children}
-      </Button>
-    </ButtonWrapper>
-  );
-};
+    return (
+      <ButtonWrapper>
+        <Button {...{ small, checked }}>
+          <HiddenInput
+            type="radio"
+            value={inputValue}
+            checked={checked}
+            name={name}
+            onChange={onChange}
+            ref={ref}
+            {...rest}
+            {...context}
+          />
+          {children}
+        </Button>
+      </ButtonWrapper>
+    );
+  },
+);
 
 RadioGroupButton.displayName = 'RadioGroup.Button';
 

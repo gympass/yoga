@@ -160,6 +160,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/43884476?v=4",
       "profile": "https://github.com/tjamancio",
       "contributions": [
+        "code",
         "design",
         "bug"
       ]
@@ -232,14 +233,15 @@
       ]
     },
     {
-      "login": "mmartinsoliveira",
+      "login": "mmartinsoliv",
       "name": "Matheus Martins",
       "avatar_url": "https://avatars.githubusercontent.com/u/46993493?v=4",
       "profile": "https://mmartins.vercel.app/",
       "contributions": [
-        "doc",
         "code",
-        "ideas"
+        "ideas",
+        "doc",
+        "review"
       ]
     },
     {
@@ -296,7 +298,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/5889973?v=4",
       "profile": "http://ericcleao",
       "contributions": [
-        "code"
+        "code",
+        "doc"
       ]
     },
     {
@@ -332,7 +335,8 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/54802614?v=4",
       "profile": "https://github.com/frgiovanna",
       "contributions": [
-        "code"
+        "code",
+        "doc"
       ]
     },
     {
@@ -360,6 +364,24 @@
       "profile": "https://www.linkedin.com/in/leonardo-gomes-7187a919b/",
       "contributions": [
         "code"
+      ]
+    },
+    {
+      "login": "rafaelcoletagympass",
+      "name": "Rafael Pizzaia Coleta",
+      "avatar_url": "https://avatars.githubusercontent.com/u/100871379?v=4",
+      "profile": "https://github.com/rafaelcoletagympass",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "diegomarcuz",
+      "name": "Diego Marcuz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/37422384?v=4",
+      "profile": "https://github.com/diegomarcuz",
+      "contributions": [
+        "bug"
       ]
     }
   ],

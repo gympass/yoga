@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-common",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Shared resources between packages",
   "homepage": "https://github.com/Gympass/yoga",
   "license": "MIT",
@@ -9,6 +9,7 @@
     "build": "yarn build:cjs && yarn build:esm",
     "build:cjs": "NODE_ENV=cjs babel ./src --out-dir dist/cjs",
     "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "lint": "eslint ./src",
     "prebuild": "rm -rf ./dist",
     "prepublishOnly": "node ../../scripts/prepublish.js"
   },
