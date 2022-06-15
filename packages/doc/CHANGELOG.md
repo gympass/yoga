@@ -3,6 +3,172 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.20.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.19.3...@gympass/yoga-doc@2.20.0) (2022-06-15)
+
+
+### Features
+
+* update plan card ([b0ba235](https://github.com/gympass/yoga/commit/b0ba2351a93c7d6d98ae253dad33a57558ecfffa))
+
+
+
+
+
+## [2.19.3](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.19.2...@gympass/yoga-doc@2.19.3) (2022-06-09)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.19.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.19.1...@gympass/yoga-doc@2.19.2) (2022-06-07)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.19.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.19.0...@gympass/yoga-doc@2.19.1) (2022-06-06)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+# [2.19.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.18.1...@gympass/yoga-doc@2.19.0) (2022-06-01)
+
+
+### Features
+
+* add feedback component ([8257008](https://github.com/gympass/yoga/commit/82570083c6295380627e86bd47bdc8f627495ca2))
+
+
+
+
+
+## [2.18.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.18.0...@gympass/yoga-doc@2.18.1) (2022-06-01)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+# [2.18.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.17.2...@gympass/yoga-doc@2.18.0) (2022-05-30)
+
+
+### Features
+
+* **header:** add a prop in headers to change the logo to a custom ([f266685](https://github.com/gympass/yoga/commit/f2666858946c069a1f4e0910ae79b7afc76d9364))
+
+
+
+
+
+## [2.17.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.17.1...@gympass/yoga-doc@2.17.2) (2022-05-30)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.17.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.17.0...@gympass/yoga-doc@2.17.1) (2022-05-30)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+# [2.17.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.16.10...@gympass/yoga-doc@2.17.0) (2022-05-27)
+
+
+### Features
+
+* add extra props ([6b8500a](https://github.com/gympass/yoga/commit/6b8500a8e24820068a142014b7ee91a375b070a0))
+* **heading:** create heading component ([d8b4ad1](https://github.com/gympass/yoga/commit/d8b4ad12ce3d3306480efbab4843eec1ba33a18f))
+* **heading:** improve tests ([a5bb198](https://github.com/gympass/yoga/commit/a5bb198cd7363ad51c003784ff83a5876f393aab))
+
+
+
+
+
+## [2.16.10](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.16.9...@gympass/yoga-doc@2.16.10) (2022-05-25)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.16.9](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.16.8...@gympass/yoga-doc@2.16.9) (2022-05-18)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.16.8](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.16.7...@gympass/yoga-doc@2.16.8) (2022-05-17)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.16.7](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.16.6...@gympass/yoga-doc@2.16.7) (2022-05-09)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.16.6](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.16.5...@gympass/yoga-doc@2.16.6) (2022-05-06)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.16.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.16.4...@gympass/yoga-doc@2.16.5) (2022-05-04)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.16.4](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.16.3...@gympass/yoga-doc@2.16.4) (2022-05-04)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.16.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.16.2...@gympass/yoga-doc@2.16.3) (2022-04-29)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.16.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.16.1...@gympass/yoga-doc@2.16.2) (2022-04-26)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
 ## [2.16.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-doc@2.16.0...@gympass/yoga-doc@2.16.1) (2022-04-07)
 
 

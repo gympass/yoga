@@ -1,0 +1,208 @@
+import { Link as GatsbyLink } from 'gatsby';
+
+## Usage
+
+### Banner default
+
+```javascript
+<Box
+  display="flex"
+  flexDirection="column"
+  flex={1}
+  justifyContent="space-between"
+>
+  <Banner
+    margin="small"
+    variant='success'
+    message='Success Banner'
+  />
+  <Banner
+    margin="small"
+    variant='informative'
+    message='Informative Banner' 
+  />
+  <Banner
+    margin="small"
+    variant='attention'
+    message='Attention Banner' 
+  />
+</Box>
+```
+
+### Banner with icon
+
+```javascript
+<Box
+  display="flex"
+  flexDirection="column"
+  flex={1}
+  justifyContent="space-between"
+>
+  <Banner
+    icon={CheckedFull}
+    margin="small"
+    variant='success'
+    message='Success Banner'
+  />
+  <Banner
+    icon={AlertCircle}
+    margin="small"
+    variant='informative'
+    message='Informative Banner' 
+  />
+  <Banner
+    icon={AlertTriangle}
+    margin="small"
+    variant='attention'
+    message='Attention Banner' 
+  />
+</Box>
+```
+
+### Banner with action button
+
+```javascript state
+render(() => {
+  const successBannerProps = {
+    variant: 'success',
+    message: 'Success Banner',
+  };
+
+  const informativeBannerProps = {
+    variant: 'informative',
+    message: 'Informative Banner',
+  };
+
+  const attentionBannerProps = {
+    variant: 'attention',
+    message: 'Attention Banner',
+  };
+
+  const handleOnAction = (message) => {
+    alert(`This is your custom action ${message}`);
+  };
+
+  return (
+    <Box
+      display="flex"
+      flexDirection="column"
+      flex={1}
+      justifyContent="space-between"
+    >
+      
+      <Banner
+        margin="small"
+        variant={successBannerProps.variant}
+        message={successBannerProps.message}
+        primaryButton={{
+          label: 'Custom Action',
+          action: () => handleOnAction(successBannerProps.message),
+        }}
+      />
+
+      <Banner
+        margin="small"
+        variant={informativeBannerProps.variant}
+        message={informativeBannerProps.message}
+        primaryButton={{
+          label: 'Custom Action',
+          action: () => handleOnAction(informativeBannerProps.message),
+        }}
+      />
+
+      <Banner
+        margin="small"
+        variant={attentionBannerProps.variant}
+        message={attentionBannerProps.message}
+        primaryButton={{
+          label: 'Custom Action',
+          action: () => handleOnAction(attentionBannerProps.message),
+        }}
+      />
+    </Box>
+  );
+});
+```
+
+### Banner with two buttons
+
+```javascript state
+render(() => {
+  const successBannerProps = {
+    variant: 'success',
+    message: 'Success Banner',
+  };
+
+  const informativeBannerProps = {
+    variant: 'informative',
+    message: 'Informative Banner',
+  };
+
+  const attentionBannerProps = {
+    variant: 'attention',
+    message: 'Attention Banner',
+  };
+
+  const handleOnAction = (message) => {
+    alert(`This is your custom action ${message}`);
+  };
+
+  return (
+    <Box
+      display="flex"
+      flexDirection="column"
+      flex={1}
+      justifyContent="space-between"
+    >
+      
+      <Banner
+        margin="small"
+        variant={successBannerProps.variant}
+        message={successBannerProps.message}
+        primaryButton={{
+          label: 'Primary Action',
+          action: () => handleOnAction(successBannerProps.message),
+        }}
+        secondaryButton={{
+          label: 'Secondary Action',
+          action: () => handleOnAction(successBannerProps.message),
+        }}
+      />
+
+      <Banner
+        margin="small"
+        variant={informativeBannerProps.variant}
+        message={informativeBannerProps.message}
+        primaryButton={{
+          label: 'Primary Action',
+          action: () => handleOnAction(informativeBannerProps.message),
+        }}
+        secondaryButton={{
+          label: 'Secondary Action',
+          action: () => handleOnAction(informativeBannerProps.message),
+        }}
+      />
+
+      <Banner
+        margin="small"
+        variant={attentionBannerProps.variant}
+        message={attentionBannerProps.message}
+        primaryButton={{
+          label: 'Primary Action',
+          action: () => handleOnAction(attentionBannerProps.message),
+        }}
+        secondaryButton={{
+          label: 'Secondary Action',
+          action: () => handleOnAction(attentionBannerProps.message),
+        }}
+      />
+    </Box>
+  );
+});
+```
+
+### Props
+
+The Banner component also has support for margins and paddings props as you can see more details <GatsbyLink to="/system/spacing">our system</GatsbyLink>
+
+<PropsTable component="Banner" platform="web" />

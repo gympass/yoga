@@ -10,6 +10,8 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
   },
   padding: {
     default: spacing.small,
+    vertical: spacing.xsmall,
+    horizontal: spacing.small,
   },
   position: {
     desktop: {
@@ -30,6 +32,8 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
       success: colors.feedback.success.light,
       failure: colors.feedback.attention.light,
       info: colors.feedback.informative.light,
+      attention: colors.feedback.attention.light,
+      informative: colors.feedback.informative.light,
     },
     icon: {
       success: CheckedFull,
@@ -43,6 +47,13 @@ const Snackbar = ({ colors, elevations, radii, spacing }) => ({
   },
   maxWidth: {
     default: 600,
+  },
+  margin: {
+    top: spacing.zero,
+    right: spacing.medium,
+    bottom: spacing.medium,
+    left: spacing.medium,
+    horizontal: spacing.medium,
   },
 });
 

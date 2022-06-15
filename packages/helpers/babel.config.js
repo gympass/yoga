@@ -6,5 +6,8 @@ module.exports = {
     cjs: {
       presets: ['@babel/preset-env'],
     },
+    test: {
+      presets: [['@babel/preset-env'], '@babel/preset-react'],
+    },
   },
 };

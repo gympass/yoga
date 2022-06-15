@@ -20,11 +20,9 @@ const StyledDivider = styled.View`
   }}
 `;
 
-const Divider = props => {
-  const { vertical } = props;
-
-  return <StyledDivider vertical={vertical} />;
-};
+const Divider = React.forwardRef(({ vertical }, ref) => {
+  return <StyledDivider vertical={vertical} ref={ref} />;
+});
 
 Divider.propTypes = {
   /** If this value is defined, the divider will be in vertical when the flexDirection is row type */
