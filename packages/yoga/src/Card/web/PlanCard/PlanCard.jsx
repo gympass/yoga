@@ -10,7 +10,7 @@ const Plan = styled.article`
   width: 100%;
   display: inline-block;
   position: relative;
-  max-width: 288px;
+  max-width: 312px;
 
   overflow: hidden;
 
