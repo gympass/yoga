@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.39.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.38.0...@gympass/yoga@7.39.0) (2022-06-15)
+
+
+### Features
+
+* update width plan card ([91090f8](https://github.com/Gympass/yoga/commit/91090f81fc6da15c9b8d545b4e0871e9e7f8e11e))
+
+
+
+
+
 # [7.38.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.37.2...@gympass/yoga@7.38.0) (2022-06-15)
 
 
