@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.40.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.39.1...@gympass/yoga@7.40.0) (2022-06-17)
+
+
+### Features
+
+* **PlanCard:** use default size for buttons ([0cadddd](https://github.com/Gympass/yoga/commit/0cadddd397e633ef47de88a6c412f3f14596f629))
+
+
+
+
+
 ## [7.39.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.39.0...@gympass/yoga@7.39.1) (2022-06-17)
 
 **Note:** Version bump only for package @gympass/yoga
