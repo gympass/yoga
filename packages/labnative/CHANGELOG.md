@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@1.14.1...@gympass/yoga-labnative@2.0.0) (2022-06-17)
+
+
+### Bug Fixes
+
+* **labnative:** adjust codacy errors ([88836e5](https://github.com/gympass/yoga/commit/88836e558934c649d0a8a66c7ddccfc6696f0035))
+* **labnative:** packages adjustment ([6203246](https://github.com/gympass/yoga/commit/620324604c4db926ec844bdd75caff848383ae6d))
+
+
+### chore
+
+* **lib:** upgrade to react native 0.68.1 ([7cfea56](https://github.com/gympass/yoga/commit/7cfea5661f7da5d4be3cb1b00c7c60aa758a77cf))
+
+
+### BREAKING CHANGES
+
+* **lib:** upgrade app core lib
+
+
+
+
+
 ## [1.14.1](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@1.14.0...@gympass/yoga-labnative@1.14.1) (2022-06-15)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
