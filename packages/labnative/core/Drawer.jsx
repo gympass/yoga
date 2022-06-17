@@ -1,40 +1,41 @@
-import React from 'react';
-import { createDrawerNavigator } from 'react-navigation-drawer';
-import { createStackNavigator } from 'react-navigation-stack';
+import * as React from 'react';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+
+import * as Pages from '../pages';
 import NavigationDrawer from './NavigationDrawer';
 import CenteredView from './CenteredView';
-import * as Pages from '../pages';
 
-const drawerOptions = {};
+const Drawer = createDrawerNavigator();
 
-Object.entries(Pages).forEach(([name, Page]) => {
-  const navigator = createStackNavigator({
-    [name]: {
-      screen: props => (
-        <CenteredView {...props}>
-          <Page />
-        </CenteredView>
-      ),
-      navigationOptions: ({ navigation: { toggleDrawer } }) => ({
-        title: name,
-        headerLeft: <NavigationDrawer toggleDrawer={toggleDrawer} />,
-      }),
-    },
-  });
+function DrawerHeader(toggleDrawer) {
+  return <NavigationDrawer toggleDrawer={toggleDrawer} />;
+}
 
-  drawerOptions[name] = {
-    screen: navigator,
-    navigationOptions: {
-      drawerLabel: name,
-    },
-  };
-});
+function DrawerComponent() {
+  return (
+    <Drawer.Navigator>
+      {Object.keys(Pages).map(key => (
+        <Drawer.Screen
+          key={key}
+          name={key}
+          options={({ navigation: { toggleDrawer } }) => ({
+            title: key,
+            headerLeft: () => DrawerHeader(toggleDrawer),
+          })}
+        >
+          {() => {
+            const Page = Pages[key];
 
-const Drawer = createDrawerNavigator(drawerOptions, {
-  initialRouteName: '', // add your working component here
-  contentOptions: {
-    activeTintColor: 'black',
-  },
-});
+            return (
+              <CenteredView>
+                <Page />
+              </CenteredView>
+            );
+          }}
+        </Drawer.Screen>
+      ))}
+    </Drawer.Navigator>
+  );
+}
 
-export default Drawer;
+export default DrawerComponent;

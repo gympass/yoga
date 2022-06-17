@@ -6,7 +6,7 @@ import { Text } from '.';
 describe('<Text />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with Text', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text.H1>Live the mission</Text.H1>
           <Text.H2>Live the mission</Text.H2>
@@ -24,11 +24,11 @@ describe('<Text />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with Text variant', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text.H1 variant="primary">Live the mission</Text.H1>
           <Text.H2 variant="secondary">Live the mission</Text.H2>
@@ -36,11 +36,11 @@ describe('<Text />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with Text light', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text.H1 light>Live the mission</Text.H1>
           <Text.H2 light>Live the mission</Text.H2>
@@ -48,11 +48,11 @@ describe('<Text />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with Text size', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text.Small size="xsmall">Live the small mission</Text.Small>
           <Text.Tiny size="medium">Live the medium mission</Text.Tiny>
@@ -61,21 +61,21 @@ describe('<Text />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with inverted Text', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text inverted>Live the mission</Text>
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with truncated lines Text', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text numberOfLines={1}>
             Live the mission
@@ -85,11 +85,11 @@ describe('<Text />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with border prop system', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text border="small" bRadius="small">
             Live the mission
@@ -97,31 +97,31 @@ describe('<Text />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with background color prop system', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text backgroundColor="vibin">Live the mission</Text>
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with elevation prop system', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text elevation="medium">Live the mission</Text>
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with spacing prop system', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text m="medium" paddingVertical="large" paddingHorizontal="small">
             Live the mission
@@ -129,11 +129,11 @@ describe('<Text />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with typography prop system', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text
             color="text.primary"
@@ -146,21 +146,21 @@ describe('<Text />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with display prop system', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text display="flex">Live the mission</Text>
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with position prop system', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text position="absolute" top="small" left="small">
             Live the mission
@@ -168,11 +168,11 @@ describe('<Text />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with flexes prop system', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text display="flex" flexGrow={1}>
             Live the mission
@@ -180,17 +180,17 @@ describe('<Text />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with overflows prop system', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Text overflow="scroll">Live the mission</Text>
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 });

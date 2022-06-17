@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, toJSON } from '@testing-library/react-native';
+import { render } from '@testing-library/react-native';
 import ThemeProvider from '../../../../Theme';
 import GymCard from '..';
 
@@ -13,7 +13,7 @@ describe('<GymCard.CheckIn />', () => {
     };
 
     it('should match snapshot without avatar', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <GymCard.CheckIn
             name={data.name}
@@ -24,11 +24,11 @@ describe('<GymCard.CheckIn />', () => {
         </ThemeProvider>,
       );
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with avatar', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <GymCard.CheckIn
             avatar={{
@@ -42,7 +42,7 @@ describe('<GymCard.CheckIn />', () => {
         </ThemeProvider>,
       );
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 });

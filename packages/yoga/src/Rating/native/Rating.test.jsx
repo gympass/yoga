@@ -8,27 +8,27 @@ import Rating from '.';
 describe('<Rating />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with Rating', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Rating />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot when it is not readOnly', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Rating readOnly={false} />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with different values', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Rating value={0} />
           <Rating value={0.5} />
@@ -53,11 +53,11 @@ describe('<Rating />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with different icon quantity', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Rating max={3} value={0} />
           <Rating max={3} value={0.5} />
@@ -69,7 +69,7 @@ describe('<Rating />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with different icon', () => {
@@ -79,7 +79,7 @@ describe('<Rating />', () => {
         </Svg>
       );
 
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Rating icon={{ type: CircleIcon }} value={0} />
           <Rating icon={{ type: CircleIcon }} value={1} />
@@ -87,7 +87,7 @@ describe('<Rating />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 });

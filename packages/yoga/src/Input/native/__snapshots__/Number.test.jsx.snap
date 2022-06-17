@@ -2,60 +2,49 @@
 
 exports[`<Input.Number /> Snapshots should match with default input 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  full={false}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "position": "relative",
+        "width": 320,
+      },
+      Object {},
+    ]
   }
 >
-  <View
+  <TextInput
+    cleanable={true}
+    disabled={false}
+    editable={true}
+    focus={false}
     full={false}
+    keyboardType="numeric"
+    onBlur={[Function]}
+    onFocus={[Function]}
     style={
       Array [
         Object {
-          "position": "relative",
+          "borderColor": "#D7D7E0",
+          "borderRadius": 8,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "color": "#6B6B78",
+          "fontFamily": "Rubik",
+          "fontSize": 14,
+          "paddingBottom": 16,
+          "paddingLeft": 16,
+          "paddingRight": 52,
+          "paddingTop": 16,
           "width": 320,
         },
-        Object {},
+        Object {
+          "height": 52,
+        },
       ]
     }
-  >
-    <TextInput
-      allowFontScaling={true}
-      cleanable={true}
-      disabled={false}
-      editable={true}
-      focus={false}
-      full={false}
-      keyboardType="numeric"
-      rejectResponderTermination={true}
-      style={
-        Array [
-          Object {
-            "borderColor": "#D7D7E0",
-            "borderRadius": 8,
-            "borderStyle": "solid",
-            "borderWidth": 1,
-            "color": "#6B6B78",
-            "fontFamily": "Rubik",
-            "fontSize": 14,
-            "paddingBottom": 16,
-            "paddingLeft": 16,
-            "paddingRight": 52,
-            "paddingTop": 16,
-            "width": 320,
-          },
-          Object {
-            "height": 52,
-          },
-        ]
-      }
-      typed={false}
-      underlineColorAndroid="transparent"
-      value=""
-    />
-  </View>
+    typed={false}
+    value=""
+  />
 </View>
 `;

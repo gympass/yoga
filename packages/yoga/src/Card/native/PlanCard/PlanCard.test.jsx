@@ -61,13 +61,13 @@ describe('<PlanCard />', () => {
 
   describe('Snapshots', () => {
     it('should match snapshot with default PlanCard', () => {
-      const { container: planCard } = renderPlan();
+      const { toJSON } = renderPlan();
 
-      expect(planCard).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with variant', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <PlanCard variant="hope">
             <PlanCard.Content
@@ -81,11 +81,11 @@ describe('<PlanCard />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with suffix', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <PlanCard variant="hope">
             <PlanCard.Content
@@ -100,7 +100,7 @@ describe('<PlanCard />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 });

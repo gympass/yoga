@@ -7,7 +7,7 @@
 
 const path = require('path');
 const { getDefaultConfig } = require('metro-config');
-const blacklist = require('metro-config/src/defaults/blacklist');
+const exclusionList = require('metro-config/src/defaults/exclusionList');
 
 const reactNativeLib = path.resolve(__dirname, '../', '../');
 
@@ -34,7 +34,7 @@ module.exports = (async () => {
         ),
         react: path.resolve(__dirname, 'node_modules/react'),
       },
-      blacklistRE: blacklist([
+      exclusionListRE: exclusionList([
         new RegExp(
           `${reactNativeLib}/node_modules/(.*)/node_modules/react-native/.*`,
         ),
@@ -50,7 +50,7 @@ module.exports = (async () => {
       getTransformOptions: async () => ({
         transform: {
           experimentalImportSupport: false,
-          inlineRequires: false,
+          inlineRequires: true,
         },
       }),
     },

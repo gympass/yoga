@@ -5,7 +5,7 @@ import { ThemeProvider, Divider, Box, Text } from '../..';
 
 describe('<Divider />', () => {
   it('should create a divider component', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Box
           display="flex"
@@ -20,11 +20,11 @@ describe('<Divider />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should create vertical divider component', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Box
           display="flex"
@@ -39,6 +39,6 @@ describe('<Divider />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 });

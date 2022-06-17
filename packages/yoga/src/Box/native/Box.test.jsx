@@ -5,7 +5,7 @@ import { ThemeProvider, Box, Text } from '../..';
 
 describe('<Box />', () => {
   it('should match snapshot', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Box
           b="small"
@@ -18,6 +18,6 @@ describe('<Box />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 });

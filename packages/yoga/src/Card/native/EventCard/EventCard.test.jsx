@@ -19,49 +19,49 @@ const defaultProps = {
 describe('<EventCard />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with full EventCard', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <EventCard {...defaultProps} />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
     it('should match snapshot of small EventCard with event indicator disabled', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <EventCard {...defaultProps} event={false} small onPress={() => {}} />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
     it('should match snapshot of small EventCard with event indicator enabled', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <EventCard {...defaultProps} small onPress={() => {}} />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
     it('should match snapshot of small EventCard active', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <EventCard {...defaultProps} small active onPress={() => {}} />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
     it('should match snapshot of small EventCard with day of week and without indicator', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <EventCard {...defaultProps} small />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 });

@@ -2,93 +2,87 @@
 
 exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot with default radio button 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  accessible={true}
+  checked={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+        "borderRadius": 9999,
+        "fontSize": 14,
+        "height": 40,
+        "justifyContent": "center",
+        "paddingLeft": 24,
+        "paddingRight": 24,
+      },
+    ]
   }
 >
-  <TouchableWithoutFeedback>
-    <View
-      checked={false}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "transparent",
-            "borderRadius": 9999,
-            "fontSize": 14,
-            "height": 40,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
-      }
-    >
-      <Text
-        checked={false}
-        style={
-          Array [
-            Object {
-              "color": "#231B22",
-              "fontFamily": "Rubik",
-            },
-          ]
-        }
-      >
-        Radio 1
-      </Text>
-    </View>
-  </TouchableWithoutFeedback>
+  <Text
+    checked={false}
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+        },
+      ]
+    }
+  >
+    Radio 1
+  </Text>
 </View>
 `;
 
 exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot with small radio button 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  accessible={true}
+  checked={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  small={true}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+        "borderRadius": 9999,
+        "fontSize": 14,
+        "height": 32,
+        "justifyContent": "center",
+        "paddingLeft": 24,
+        "paddingRight": 24,
+      },
+    ]
   }
 >
-  <TouchableWithoutFeedback>
-    <View
-      checked={false}
-      small={true}
-      style={
-        Array [
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "transparent",
-            "borderRadius": 9999,
-            "fontSize": 14,
-            "height": 32,
-            "justifyContent": "center",
-            "paddingLeft": 24,
-            "paddingRight": 24,
-          },
-        ]
-      }
-    >
-      <Text
-        checked={false}
-        style={
-          Array [
-            Object {
-              "color": "#231B22",
-              "fontFamily": "Rubik",
-            },
-          ]
-        }
-      >
-        Radio 1
-      </Text>
-    </View>
-  </TouchableWithoutFeedback>
+  <Text
+    checked={false}
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+        },
+      ]
+    }
+  >
+    Radio 1
+  </Text>
 </View>
 `;

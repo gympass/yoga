@@ -5,7 +5,7 @@ import { ThemeProvider, Progress } from '../..';
 
 describe('<Progress />', () => {
   it('should match snapshot', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Progress />
         <Progress max={100} />
@@ -13,11 +13,11 @@ describe('<Progress />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with label string', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Progress max={100} label={{ value: 'Some decription here' }} />
         <Progress
@@ -28,11 +28,11 @@ describe('<Progress />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with label number', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Progress max={100} value={20} label={{ value: 20 }} />
         <Progress
@@ -43,11 +43,11 @@ describe('<Progress />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with all variants', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Progress
           max={100}
@@ -89,56 +89,56 @@ describe('<Progress />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with positions prop system', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Progress position="absolute" top="small" left="small" />
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with spacing prop system', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Progress m="small" padding="medium" />
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with background color prop system', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Progress backgroundColor="primary" />
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with border prop system', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Progress b="small" bRadius="small" />
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with elevation prop system', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Progress elevation="small" />
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 });
