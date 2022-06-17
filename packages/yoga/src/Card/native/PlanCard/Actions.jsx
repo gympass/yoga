@@ -9,12 +9,10 @@ const {
 } = theme;
 
 const PlanCardButton = styled(Button).attrs({
-  small: false,
   full: true,
 })``;
 
 const PlanCardButtonText = styled(Button.Text).attrs({
-  small: true,
   full: true,
 })`
   margin-top: ${cardnative.plan.actions.buttonText.margin.top}px;
