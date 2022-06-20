@@ -15,4 +15,6 @@ Title.propTypes = {
   children: PropTypes.string.isRequired,
 };
 
+Title.displayName = 'Heading.Title';
+
 export default Title;
