@@ -11,4 +11,6 @@ BackButton.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
 
+BackButton.displayName = 'Heading.BackButton';
+
 export default BackButton;
