@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.40.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.40.0...@gympass/yoga@7.40.1) (2022-06-20)
+
+
+### Bug Fixes
+
+* **Heading:** add displayName to compound components ([f59ed8c](https://github.com/Gympass/yoga/commit/f59ed8cbd5b14b2e845cd164e11ea6566c370f4c))
+
+
+
+
+
 # [7.40.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.39.1...@gympass/yoga@7.40.0) (2022-06-17)
 
 
