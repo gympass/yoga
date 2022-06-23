@@ -185,6 +185,7 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
       <input
         class="c2"
         label="Label"
+        type="number"
         value=""
       />
       <label
