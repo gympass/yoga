@@ -11,4 +11,6 @@ RightButton.propTypes = {
   icon: PropTypes.elementType.isRequired,
 };
 
+RightButton.displayName = 'Heading.RightButton';
+
 export default RightButton;

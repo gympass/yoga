@@ -1,73 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
+Array [
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexDirection": "row",
+      }
     }
-  }
->
-  <TouchableWithoutFeedback
-    full={true}
-    small={true}
   >
     <View
+      disabled={false}
+      full={true}
+      inverted={false}
+      pressed={false}
+      secondary={false}
+      small={true}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#D8385E",
+            "borderRadius": 9999,
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "width": "100%",
+          },
+        ]
       }
     >
-      <View
+      <Text
+        color="#FFFFFF"
         disabled={false}
-        full={true}
         inverted={false}
         pressed={false}
-        secondary={false}
         small={true}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#D8385E",
-              "borderRadius": 9999,
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "width": "100%",
+              "color": "#FFFFFF",
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "textAlign": "center",
             },
           ]
         }
       >
-        <Text
-          color="#FFFFFF"
-          disabled={false}
-          inverted={false}
-          pressed={false}
-          small={true}
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "textAlign": "center",
-              },
-            ]
-          }
-        >
-          Tap to open snackbar
-        </Text>
-      </View>
+        Tap to open snackbar
+      </Text>
     </View>
-  </TouchableWithoutFeedback>
+  </View>,
   <View
+    collapsable={false}
     style={
       Object {
         "bottom": 0,
@@ -83,10 +80,23 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
     }
   >
     <View
+      onLayout={[Function]}
       testID="wrapper"
     >
       <View
         bottomOffset={0}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Array [
             Object {
@@ -210,143 +220,136 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
         >
           Lorem Ipsum is simply dummy text of the printing and types.
         </Text>
-        <TouchableWithoutFeedback
-          marginLeft="xxsmall"
-          secondary={true}
-          small={true}
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Array [
-              Object {
-                "marginLeft": 8,
-              },
-            ]
+            Object {
+              "flexDirection": "row",
+            }
           }
         >
           <View
+            marginLeft="xxsmall"
+            pressed={false}
+            small={true}
             style={
-              Object {
-                "flexDirection": "row",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderRadius": 9999,
+                  "flexDirection": "row",
+                  "height": 32,
+                  "justifyContent": "center",
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                },
+                Object {
+                  "marginLeft": 8,
+                },
+              ]
             }
           >
-            <View
-              marginLeft="xxsmall"
+            <Text
+              color="#231B22"
               pressed={false}
+              secondary={true}
               small={true}
               style={
                 Array [
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "transparent",
-                    "borderRadius": 9999,
-                    "flexDirection": "row",
-                    "height": 32,
-                    "justifyContent": "center",
-                    "paddingLeft": 16,
-                    "paddingRight": 16,
-                  },
-                  Object {
-                    "marginLeft": 8,
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "textAlign": "center",
                   },
                 ]
               }
             >
-              <Text
-                color="#231B22"
-                pressed={false}
-                secondary={true}
-                small={true}
-                style={
-                  Array [
-                    Object {
-                      "color": "#231B22",
-                      "fontFamily": "Rubik",
-                      "fontSize": 14,
-                      "fontWeight": "500",
-                      "textAlign": "center",
-                    },
-                  ]
-                }
-              >
-                Action
-              </Text>
-            </View>
+              Action
+            </Text>
           </View>
-        </TouchableWithoutFeedback>
+        </View>
       </View>
     </View>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`<Snackbar /> should match snapshot when have a variant informative or attention prop 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
+Array [
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexDirection": "row",
+      }
     }
-  }
->
-  <TouchableWithoutFeedback
-    full={true}
-    small={true}
   >
     <View
+      disabled={false}
+      full={true}
+      inverted={false}
+      pressed={false}
+      secondary={false}
+      small={true}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#D8385E",
+            "borderRadius": 9999,
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "width": "100%",
+          },
+        ]
       }
     >
-      <View
+      <Text
+        color="#FFFFFF"
         disabled={false}
-        full={true}
         inverted={false}
         pressed={false}
-        secondary={false}
         small={true}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#D8385E",
-              "borderRadius": 9999,
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "width": "100%",
+              "color": "#FFFFFF",
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "textAlign": "center",
             },
           ]
         }
       >
-        <Text
-          color="#FFFFFF"
-          disabled={false}
-          inverted={false}
-          pressed={false}
-          small={true}
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "textAlign": "center",
-              },
-            ]
-          }
-        >
-          Tap to open snackbar
-        </Text>
-      </View>
+        Tap to open snackbar
+      </Text>
     </View>
-  </TouchableWithoutFeedback>
+  </View>,
   <View
+    collapsable={false}
     style={
       Object {
         "bottom": 0,
@@ -362,10 +365,23 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
     }
   >
     <View
+      onLayout={[Function]}
       testID="wrapper"
     >
       <View
         bottomOffset={0}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Array [
             Object {
@@ -413,78 +429,75 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
         </Text>
       </View>
     </View>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
+Array [
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexDirection": "row",
+      }
     }
-  }
->
-  <TouchableWithoutFeedback
-    full={true}
-    small={true}
   >
     <View
+      disabled={false}
+      full={true}
+      inverted={false}
+      pressed={false}
+      secondary={false}
+      small={true}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#D8385E",
+            "borderRadius": 9999,
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "width": "100%",
+          },
+        ]
       }
     >
-      <View
+      <Text
+        color="#FFFFFF"
         disabled={false}
-        full={true}
         inverted={false}
         pressed={false}
-        secondary={false}
         small={true}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#D8385E",
-              "borderRadius": 9999,
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "width": "100%",
+              "color": "#FFFFFF",
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "textAlign": "center",
             },
           ]
         }
       >
-        <Text
-          color="#FFFFFF"
-          disabled={false}
-          inverted={false}
-          pressed={false}
-          small={true}
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "textAlign": "center",
-              },
-            ]
-          }
-        >
-          Tap to open snackbar
-        </Text>
-      </View>
+        Tap to open snackbar
+      </Text>
     </View>
-  </TouchableWithoutFeedback>
+  </View>,
   <View
+    collapsable={false}
     style={
       Object {
         "bottom": 0,
@@ -500,10 +513,23 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
     }
   >
     <View
+      onLayout={[Function]}
       testID="wrapper"
     >
       <View
         bottomOffset={0}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Array [
             Object {
@@ -627,143 +653,136 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
         >
           Feedback Message
         </Text>
-        <TouchableWithoutFeedback
-          marginLeft="xxsmall"
-          secondary={true}
-          small={true}
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
           style={
-            Array [
-              Object {
-                "marginLeft": 8,
-              },
-            ]
+            Object {
+              "flexDirection": "row",
+            }
           }
         >
           <View
+            marginLeft="xxsmall"
+            pressed={false}
+            small={true}
             style={
-              Object {
-                "flexDirection": "row",
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderRadius": 9999,
+                  "flexDirection": "row",
+                  "height": 32,
+                  "justifyContent": "center",
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                },
+                Object {
+                  "marginLeft": 8,
+                },
+              ]
             }
           >
-            <View
-              marginLeft="xxsmall"
+            <Text
+              color="#231B22"
               pressed={false}
+              secondary={true}
               small={true}
               style={
                 Array [
                   Object {
-                    "alignItems": "center",
-                    "backgroundColor": "transparent",
-                    "borderRadius": 9999,
-                    "flexDirection": "row",
-                    "height": 32,
-                    "justifyContent": "center",
-                    "paddingLeft": 16,
-                    "paddingRight": 16,
-                  },
-                  Object {
-                    "marginLeft": 8,
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "textAlign": "center",
                   },
                 ]
               }
             >
-              <Text
-                color="#231B22"
-                pressed={false}
-                secondary={true}
-                small={true}
-                style={
-                  Array [
-                    Object {
-                      "color": "#231B22",
-                      "fontFamily": "Rubik",
-                      "fontSize": 14,
-                      "fontWeight": "500",
-                      "textAlign": "center",
-                    },
-                  ]
-                }
-              >
-                Action
-              </Text>
-            </View>
+              Action
+            </Text>
           </View>
-        </TouchableWithoutFeedback>
+        </View>
       </View>
     </View>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
+Array [
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexDirection": "row",
+      }
     }
-  }
->
-  <TouchableWithoutFeedback
-    full={true}
-    small={true}
   >
     <View
+      disabled={false}
+      full={true}
+      inverted={false}
+      pressed={false}
+      secondary={false}
+      small={true}
       style={
-        Object {
-          "flexDirection": "row",
-        }
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#D8385E",
+            "borderRadius": 9999,
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "width": "100%",
+          },
+        ]
       }
     >
-      <View
+      <Text
+        color="#FFFFFF"
         disabled={false}
-        full={true}
         inverted={false}
         pressed={false}
-        secondary={false}
         small={true}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#D8385E",
-              "borderRadius": 9999,
-              "flexDirection": "row",
-              "height": 32,
-              "justifyContent": "center",
-              "paddingLeft": 16,
-              "paddingRight": 16,
-              "width": "100%",
+              "color": "#FFFFFF",
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "textAlign": "center",
             },
           ]
         }
       >
-        <Text
-          color="#FFFFFF"
-          disabled={false}
-          inverted={false}
-          pressed={false}
-          small={true}
-          style={
-            Array [
-              Object {
-                "color": "#FFFFFF",
-                "fontFamily": "Rubik",
-                "fontSize": 14,
-                "fontWeight": "500",
-                "textAlign": "center",
-              },
-            ]
-          }
-        >
-          Tap to open snackbar
-        </Text>
-      </View>
+        Tap to open snackbar
+      </Text>
     </View>
-  </TouchableWithoutFeedback>
+  </View>,
   <View
+    collapsable={false}
     style={
       Object {
         "bottom": 0,
@@ -779,10 +798,23 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
     }
   >
     <View
+      onLayout={[Function]}
       testID="wrapper"
     >
       <View
         bottomOffset={0}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
         style={
           Array [
             Object {
@@ -830,6 +862,6 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
         </Text>
       </View>
     </View>
-  </View>
-</View>
+  </View>,
+]
 `;

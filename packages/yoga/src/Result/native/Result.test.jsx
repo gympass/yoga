@@ -61,7 +61,7 @@ const tagsList = [
 
 describe('<Result />', () => {
   it('should match snapshot', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Result
           rate="5.0"
@@ -85,11 +85,11 @@ describe('<Result />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot without limitLabel prop', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Result
           rate="5.0"
@@ -112,11 +112,11 @@ describe('<Result />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot without attendence', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Result avatar={<Avatar />} title="Gym">
           <Result.Details items={entranceList} dots />
@@ -125,6 +125,6 @@ describe('<Result />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 });

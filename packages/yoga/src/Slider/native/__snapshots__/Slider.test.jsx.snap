@@ -2,184 +2,187 @@
 
 exports[`<Slider /> Snapshots With one marker should match snapshot with Slider snapped 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
   style={
     Object {
-      "flex": 1,
+      "width": 280,
     }
   }
 >
   <View
     style={
       Object {
-        "width": 280,
+        "alignItems": "center",
+        "bottom": -30,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
       }
     }
   >
     <View
+      active={false}
       style={
-        Object {
-          "alignItems": "center",
-          "bottom": -30,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-        }
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
       }
-    >
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-    </View>
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "height": 50,
+          "justifyContent": "center",
+          "position": "relative",
+        },
+        undefined,
+      ]
+    }
+  >
     <View
       style={
         Array [
           Object {
-            "height": 50,
-            "justifyContent": "center",
-            "position": "relative",
+            "flexDirection": "row",
           },
-          undefined,
+          Object {
+            "width": 280,
+          },
         ]
       }
     >
@@ -187,161 +190,172 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
         style={
           Array [
             Object {
-              "flexDirection": "row",
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
             },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            Object {
+              "backgroundColor": "#D8385E",
+            },
+            Object {
+              "width": 0,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
+            },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            undefined,
             Object {
               "width": 280,
             },
           ]
         }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "height": 48,
+              "justifyContent": "center",
+              "position": "absolute",
+              "width": 48,
+            },
+            Object {
+              "left": -24,
+              "top": -24,
+            },
+            undefined,
+            false,
+          ]
+        }
       >
         <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              Object {
-                "backgroundColor": "#D8385E",
-              },
-              Object {
-                "width": 0,
-              },
-            ]
-          }
-        />
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              undefined,
-              Object {
-                "width": 280,
-              },
-            ]
-          }
-        />
-        <View
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Array [
               Object {
                 "alignItems": "center",
+                "alignSelf": "stretch",
                 "backgroundColor": "transparent",
-                "height": 48,
                 "justifyContent": "center",
-                "position": "absolute",
-                "width": 48,
               },
               Object {
-                "left": -24,
-                "top": -24,
+                "borderRadius": 0,
               },
-              undefined,
-              false,
             ]
           }
         >
           <View
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              }
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            pressed={false}
             style={
               Array [
                 Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "backgroundColor": "transparent",
-                  "justifyContent": "center",
-                },
-                Object {
-                  "borderRadius": 0,
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "black",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "display": "none",
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
                 },
               ]
             }
-          >
-            <View
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              pressed={false}
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "black",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 0,
-                    "display": "none",
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
-                  },
-                ]
+            top="2px"
+            width={24}
+          />
+          <View
+            accessibilityRole="adjustable"
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
               }
-              top="2px"
-              width={24}
-            />
-            <View
-              accessibilityRole="adjustable"
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "#FFFFFF",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 6,
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 6,
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
                   },
-                ]
-              }
-              top="2px"
-              width={24}
-            />
-          </View>
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
+                },
+              ]
+            }
+            top="2px"
+            width={24}
+          />
         </View>
       </View>
     </View>
@@ -351,30 +365,33 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
 
 exports[`<Slider /> Snapshots With one marker should match snapshot with Slider with labels 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
   style={
     Object {
-      "flex": 1,
+      "width": 280,
     }
   }
 >
   <View
     style={
-      Object {
-        "width": 280,
-      }
+      Array [
+        Object {
+          "height": 50,
+          "justifyContent": "center",
+          "position": "relative",
+        },
+        undefined,
+      ]
     }
   >
     <View
       style={
         Array [
           Object {
-            "height": 50,
-            "justifyContent": "center",
-            "position": "relative",
+            "flexDirection": "row",
           },
-          undefined,
+          Object {
+            "width": 280,
+          },
         ]
       }
     >
@@ -382,223 +399,237 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
         style={
           Array [
             Object {
-              "flexDirection": "row",
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
             },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            Object {
+              "backgroundColor": "#D8385E",
+            },
+            Object {
+              "width": 0,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
+            },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            undefined,
             Object {
               "width": 280,
             },
           ]
         }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "height": 48,
+              "justifyContent": "center",
+              "position": "absolute",
+              "width": 48,
+            },
+            Object {
+              "left": -24,
+              "top": -24,
+            },
+            undefined,
+            false,
+          ]
+        }
       >
         <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              Object {
-                "backgroundColor": "#D8385E",
-              },
-              Object {
-                "width": 0,
-              },
-            ]
-          }
-        />
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              undefined,
-              Object {
-                "width": 280,
-              },
-            ]
-          }
-        />
-        <View
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Array [
               Object {
                 "alignItems": "center",
+                "alignSelf": "stretch",
                 "backgroundColor": "transparent",
-                "height": 48,
                 "justifyContent": "center",
-                "position": "absolute",
-                "width": 48,
               },
               Object {
-                "left": -24,
-                "top": -24,
+                "borderRadius": 0,
               },
-              undefined,
-              false,
             ]
           }
         >
           <View
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              }
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            pressed={false}
             style={
               Array [
                 Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "backgroundColor": "transparent",
-                  "justifyContent": "center",
-                },
-                Object {
-                  "borderRadius": 0,
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "black",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "display": "none",
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
                 },
               ]
             }
-          >
-            <View
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              pressed={false}
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "black",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 0,
-                    "display": "none",
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
-                  },
-                ]
+            top="2px"
+            width={24}
+          />
+          <View
+            accessibilityRole="adjustable"
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
               }
-              top="2px"
-              width={24}
-            />
-            <View
-              accessibilityRole="adjustable"
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "#FFFFFF",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 6,
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 6,
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
                   },
-                ]
-              }
-              top="2px"
-              width={24}
-            />
-          </View>
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
+                },
+              ]
+            }
+            top="2px"
+            width={24}
+          />
         </View>
       </View>
     </View>
-    <View
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        },
+      ]
+    }
+  >
+    0
+    <Text
+      placement="right"
       style={
         Array [
           Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "justifyContent": "space-between",
+            "bottom": 5,
+            "fontFamily": "Rubik",
+            "left": 0,
+            "position": "relative",
+            "textAlign": "right",
           },
         ]
       }
     >
-      0
-      <Text
-        placement="right"
-        style={
-          Array [
-            Object {
-              "bottom": 5,
-              "fontFamily": "Rubik",
-              "left": 0,
-              "position": "relative",
-              "textAlign": "right",
-            },
-          ]
-        }
-      >
-        10
-      </Text>
-    </View>
+      10
+    </Text>
   </View>
 </View>
 `;
 
 exports[`<Slider /> Snapshots With one marker should match snapshot with default Slider 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
   style={
     Object {
-      "flex": 1,
+      "width": 280,
     }
   }
 >
   <View
     style={
-      Object {
-        "width": 280,
-      }
+      Array [
+        Object {
+          "height": 50,
+          "justifyContent": "center",
+          "position": "relative",
+        },
+        undefined,
+      ]
     }
   >
     <View
       style={
         Array [
           Object {
-            "height": 50,
-            "justifyContent": "center",
-            "position": "relative",
+            "flexDirection": "row",
           },
-          undefined,
+          Object {
+            "width": 280,
+          },
         ]
       }
     >
@@ -606,161 +637,172 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
         style={
           Array [
             Object {
-              "flexDirection": "row",
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
             },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            Object {
+              "backgroundColor": "#D8385E",
+            },
+            Object {
+              "width": 0,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
+            },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            undefined,
             Object {
               "width": 280,
             },
           ]
         }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "height": 48,
+              "justifyContent": "center",
+              "position": "absolute",
+              "width": 48,
+            },
+            Object {
+              "left": -24,
+              "top": -24,
+            },
+            undefined,
+            false,
+          ]
+        }
       >
         <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              Object {
-                "backgroundColor": "#D8385E",
-              },
-              Object {
-                "width": 0,
-              },
-            ]
-          }
-        />
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              undefined,
-              Object {
-                "width": 280,
-              },
-            ]
-          }
-        />
-        <View
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Array [
               Object {
                 "alignItems": "center",
+                "alignSelf": "stretch",
                 "backgroundColor": "transparent",
-                "height": 48,
                 "justifyContent": "center",
-                "position": "absolute",
-                "width": 48,
               },
               Object {
-                "left": -24,
-                "top": -24,
+                "borderRadius": 0,
               },
-              undefined,
-              false,
             ]
           }
         >
           <View
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              }
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            pressed={false}
             style={
               Array [
                 Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "backgroundColor": "transparent",
-                  "justifyContent": "center",
-                },
-                Object {
-                  "borderRadius": 0,
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "black",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "display": "none",
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
                 },
               ]
             }
-          >
-            <View
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              pressed={false}
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "black",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 0,
-                    "display": "none",
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
-                  },
-                ]
+            top="2px"
+            width={24}
+          />
+          <View
+            accessibilityRole="adjustable"
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
               }
-              top="2px"
-              width={24}
-            />
-            <View
-              accessibilityRole="adjustable"
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "#FFFFFF",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 6,
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 6,
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
                   },
-                ]
-              }
-              top="2px"
-              width={24}
-            />
-          </View>
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
+                },
+              ]
+            }
+            top="2px"
+            width={24}
+          />
         </View>
       </View>
     </View>
@@ -770,30 +812,33 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
 
 exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
   style={
     Object {
-      "flex": 1,
+      "width": 280,
     }
   }
 >
   <View
     style={
-      Object {
-        "width": 280,
-      }
+      Array [
+        Object {
+          "height": 50,
+          "justifyContent": "center",
+          "position": "relative",
+        },
+        undefined,
+      ]
     }
   >
     <View
       style={
         Array [
           Object {
-            "height": 50,
-            "justifyContent": "center",
-            "position": "relative",
+            "flexDirection": "row",
           },
-          undefined,
+          Object {
+            "width": 280,
+          },
         ]
       }
     >
@@ -801,286 +846,321 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
         style={
           Array [
             Object {
-              "flexDirection": "row",
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
             },
             Object {
-              "width": 280,
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
             },
+            undefined,
+            Object {
+              "width": 84,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
+            },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            Object {
+              "backgroundColor": "#D8385E",
+            },
+            Object {
+              "width": 112,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
+            },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            undefined,
+            Object {
+              "width": 84,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "height": 48,
+              "justifyContent": "center",
+              "position": "absolute",
+              "width": 48,
+            },
+            Object {
+              "left": 60,
+              "top": -24,
+            },
+            undefined,
+            false,
           ]
         }
       >
         <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              undefined,
-              Object {
-                "width": 84,
-              },
-            ]
-          }
-        />
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              Object {
-                "backgroundColor": "#D8385E",
-              },
-              Object {
-                "width": 112,
-              },
-            ]
-          }
-        />
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              undefined,
-              Object {
-                "width": 84,
-              },
-            ]
-          }
-        />
-        <View
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Array [
               Object {
                 "alignItems": "center",
+                "alignSelf": "stretch",
                 "backgroundColor": "transparent",
-                "height": 48,
                 "justifyContent": "center",
-                "position": "absolute",
-                "width": 48,
               },
               Object {
-                "left": 60,
-                "top": -24,
+                "borderRadius": 0,
               },
-              undefined,
-              false,
             ]
           }
         >
           <View
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              }
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            pressed={false}
             style={
               Array [
                 Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "backgroundColor": "transparent",
-                  "justifyContent": "center",
-                },
-                Object {
-                  "borderRadius": 0,
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "black",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "display": "none",
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
                 },
               ]
             }
-          >
-            <View
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              pressed={false}
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "black",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 0,
-                    "display": "none",
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
-                  },
-                ]
+            top="2px"
+            width={24}
+          />
+          <View
+            accessibilityRole="adjustable"
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
               }
-              top="2px"
-              width={24}
-            />
-            <View
-              accessibilityRole="adjustable"
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "#FFFFFF",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 6,
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 6,
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
                   },
-                ]
-              }
-              top="2px"
-              width={24}
-            />
-          </View>
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
+                },
+              ]
+            }
+            top="2px"
+            width={24}
+          />
         </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "height": 48,
+              "justifyContent": "center",
+              "position": "absolute",
+              "width": 48,
+            },
+            Object {
+              "right": 60,
+              "top": -24,
+            },
+            undefined,
+          ]
+        }
+      >
         <View
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Array [
               Object {
                 "alignItems": "center",
+                "alignSelf": "stretch",
                 "backgroundColor": "transparent",
-                "height": 48,
                 "justifyContent": "center",
-                "position": "absolute",
-                "width": 48,
               },
               Object {
-                "right": 60,
-                "top": -24,
+                "borderRadius": 0,
               },
-              undefined,
             ]
           }
         >
           <View
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              }
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            pressed={false}
             style={
               Array [
                 Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "backgroundColor": "transparent",
-                  "justifyContent": "center",
-                },
-                Object {
-                  "borderRadius": 0,
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "black",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "display": "none",
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
                 },
               ]
             }
-          >
-            <View
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              pressed={false}
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "black",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 0,
-                    "display": "none",
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
-                  },
-                ]
+            top="2px"
+            width={24}
+          />
+          <View
+            accessibilityRole="adjustable"
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
               }
-              top="2px"
-              width={24}
-            />
-            <View
-              accessibilityRole="adjustable"
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "#FFFFFF",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 6,
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 6,
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
                   },
-                ]
-              }
-              top="2px"
-              width={24}
-            />
-          </View>
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
+                },
+              ]
+            }
+            top="2px"
+            width={24}
+          />
         </View>
       </View>
     </View>
@@ -1090,184 +1170,187 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
 
 exports[`<Slider /> Snapshots With two markers should match snapshot with Slider snapped 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
   style={
     Object {
-      "flex": 1,
+      "width": 280,
     }
   }
 >
   <View
     style={
       Object {
-        "width": 280,
+        "alignItems": "center",
+        "bottom": -30,
+        "flexDirection": "row",
+        "justifyContent": "space-between",
       }
     }
   >
     <View
+      active={false}
       style={
-        Object {
-          "alignItems": "center",
-          "bottom": -30,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-        }
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
       }
-    >
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={true}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D8385E",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={true}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D8385E",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={true}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D8385E",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-      <View
-        active={false}
-        style={
-          Array [
-            Object {
-              "backgroundColor": "#D7D7E0",
-              "borderRadius": 9999,
-              "height": 10,
-              "width": 10,
-            },
-          ]
-        }
-      />
-    </View>
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D8385E",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D8385E",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={true}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D8385E",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+    <View
+      active={false}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#D7D7E0",
+            "borderRadius": 9999,
+            "height": 10,
+            "width": 10,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "height": 50,
+          "justifyContent": "center",
+          "position": "relative",
+        },
+        undefined,
+      ]
+    }
+  >
     <View
       style={
         Array [
           Object {
-            "height": 50,
-            "justifyContent": "center",
-            "position": "relative",
+            "flexDirection": "row",
           },
-          undefined,
+          Object {
+            "width": 280,
+          },
         ]
       }
     >
@@ -1275,286 +1358,321 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
         style={
           Array [
             Object {
-              "flexDirection": "row",
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
             },
             Object {
-              "width": 280,
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
             },
+            undefined,
+            Object {
+              "width": 84,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
+            },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            Object {
+              "backgroundColor": "#D8385E",
+            },
+            Object {
+              "width": 112,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
+            },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            undefined,
+            Object {
+              "width": 84,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "height": 48,
+              "justifyContent": "center",
+              "position": "absolute",
+              "width": 48,
+            },
+            Object {
+              "left": 60,
+              "top": -24,
+            },
+            undefined,
+            false,
           ]
         }
       >
         <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              undefined,
-              Object {
-                "width": 84,
-              },
-            ]
-          }
-        />
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              Object {
-                "backgroundColor": "#D8385E",
-              },
-              Object {
-                "width": 112,
-              },
-            ]
-          }
-        />
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              undefined,
-              Object {
-                "width": 84,
-              },
-            ]
-          }
-        />
-        <View
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Array [
               Object {
                 "alignItems": "center",
+                "alignSelf": "stretch",
                 "backgroundColor": "transparent",
-                "height": 48,
                 "justifyContent": "center",
-                "position": "absolute",
-                "width": 48,
               },
               Object {
-                "left": 60,
-                "top": -24,
+                "borderRadius": 0,
               },
-              undefined,
-              false,
             ]
           }
         >
           <View
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              }
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            pressed={false}
             style={
               Array [
                 Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "backgroundColor": "transparent",
-                  "justifyContent": "center",
-                },
-                Object {
-                  "borderRadius": 0,
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "black",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "display": "none",
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
                 },
               ]
             }
-          >
-            <View
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              pressed={false}
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "black",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 0,
-                    "display": "none",
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
-                  },
-                ]
+            top="2px"
+            width={24}
+          />
+          <View
+            accessibilityRole="adjustable"
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
               }
-              top="2px"
-              width={24}
-            />
-            <View
-              accessibilityRole="adjustable"
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "#FFFFFF",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 6,
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 6,
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
                   },
-                ]
-              }
-              top="2px"
-              width={24}
-            />
-          </View>
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
+                },
+              ]
+            }
+            top="2px"
+            width={24}
+          />
         </View>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "height": 48,
+              "justifyContent": "center",
+              "position": "absolute",
+              "width": 48,
+            },
+            Object {
+              "right": 60,
+              "top": -24,
+            },
+            undefined,
+          ]
+        }
+      >
         <View
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Array [
               Object {
                 "alignItems": "center",
+                "alignSelf": "stretch",
                 "backgroundColor": "transparent",
-                "height": 48,
                 "justifyContent": "center",
-                "position": "absolute",
-                "width": 48,
               },
               Object {
-                "right": 60,
-                "top": -24,
+                "borderRadius": 0,
               },
-              undefined,
             ]
           }
         >
           <View
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              }
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            pressed={false}
             style={
               Array [
                 Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "backgroundColor": "transparent",
-                  "justifyContent": "center",
-                },
-                Object {
-                  "borderRadius": 0,
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "black",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "display": "none",
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
                 },
               ]
             }
-          >
-            <View
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              pressed={false}
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "black",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 0,
-                    "display": "none",
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
-                  },
-                ]
+            top="2px"
+            width={24}
+          />
+          <View
+            accessibilityRole="adjustable"
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
               }
-              top="2px"
-              width={24}
-            />
-            <View
-              accessibilityRole="adjustable"
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "#FFFFFF",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 6,
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 6,
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
                   },
-                ]
-              }
-              top="2px"
-              width={24}
-            />
-          </View>
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
+                },
+              ]
+            }
+            top="2px"
+            width={24}
+          />
         </View>
       </View>
     </View>
@@ -1564,30 +1682,33 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
 
 exports[`<Slider /> Tooltip should render tooltip 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
   style={
     Object {
-      "flex": 1,
+      "width": 280,
     }
   }
 >
   <View
     style={
-      Object {
-        "width": 280,
-      }
+      Array [
+        Object {
+          "height": 50,
+          "justifyContent": "center",
+          "position": "relative",
+        },
+        undefined,
+      ]
     }
   >
     <View
       style={
         Array [
           Object {
-            "height": 50,
-            "justifyContent": "center",
-            "position": "relative",
+            "flexDirection": "row",
           },
-          undefined,
+          Object {
+            "width": 280,
+          },
         ]
       }
     >
@@ -1595,301 +1716,312 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
         style={
           Array [
             Object {
-              "flexDirection": "row",
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
             },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            Object {
+              "backgroundColor": "#D8385E",
+            },
+            Object {
+              "width": 0,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
+            },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            undefined,
             Object {
               "width": 280,
             },
           ]
         }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "height": 48,
+              "justifyContent": "center",
+              "position": "absolute",
+              "width": 48,
+            },
+            Object {
+              "left": -24,
+              "top": -24,
+            },
+            undefined,
+            false,
+          ]
+        }
       >
         <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              Object {
-                "backgroundColor": "#D8385E",
-              },
-              Object {
-                "width": 0,
-              },
-            ]
-          }
-        />
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              undefined,
-              Object {
-                "width": 280,
-              },
-            ]
-          }
-        />
-        <View
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Array [
               Object {
                 "alignItems": "center",
+                "alignSelf": "stretch",
                 "backgroundColor": "transparent",
-                "height": 48,
                 "justifyContent": "center",
-                "position": "absolute",
-                "width": 48,
               },
               Object {
-                "left": -24,
-                "top": -24,
+                "borderRadius": 0,
               },
-              undefined,
-              false,
             ]
           }
         >
           <View
+            bRadius={8}
+            bgColor="#D8385E"
+            bottom={38}
+            elevation="0 5px 5px      rgba(152, 152, 166, 0.2)"
+            position="absolute"
             style={
               Array [
                 Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "backgroundColor": "transparent",
-                  "justifyContent": "center",
-                },
-                Object {
-                  "borderRadius": 0,
+                  "backgroundColor": "#D8385E",
+                  "borderRadius": 8,
+                  "bottom": 38,
+                  "position": "absolute",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 5,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 5,
+                  "width": 95,
                 },
               ]
             }
+            width={95}
           >
             <View
-              bRadius={8}
-              bgColor="#D8385E"
-              bottom={38}
-              elevation="0 5px 5px      rgba(152, 152, 166, 0.2)"
+              alignSelf="center"
+              bRadius="3px"
+              bgColor="#F5F5FA"
+              bottom="10px"
+              height={16}
+              mb={-17}
               position="absolute"
               style={
                 Array [
                   Object {
-                    "backgroundColor": "#D8385E",
-                    "borderRadius": 8,
-                    "bottom": 38,
+                    "alignSelf": "center",
+                    "backgroundColor": "#F5F5FA",
+                    "borderRadius": 3,
+                    "bottom": 10,
+                    "height": 16,
+                    "marginBottom": -17,
                     "position": "absolute",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 5,
-                      "width": 0,
+                    "transform": Array [
+                      Object {
+                        "rotate": "45deg",
+                      },
+                    ],
+                    "width": 16,
+                  },
+                ]
+              }
+              width={16}
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#D8385E",
+                    "borderTopLeftRadius": 8,
+                    "borderTopRightRadius": 8,
+                    "justifyContent": "center",
+                    "paddingBottom": 4,
+                    "paddingLeft": 8,
+                    "paddingRight": 8,
+                    "paddingTop": 4,
+                    "position": "relative",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#FFFFFF",
+                      "fontFamily": "Rubik",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "textAlign": "center",
                     },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 5,
+                  ]
+                }
+              >
+                ribbon
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "#F5F5FA",
+                    "borderRadius": 8,
+                    "justifyContent": "center",
+                    "paddingBottom": 4,
+                    "paddingLeft": 8,
+                    "paddingRight": 8,
+                    "paddingTop": 4,
                     "width": 95,
                   },
                 ]
               }
-              width={95}
             >
-              <View
-                alignSelf="center"
-                bRadius="3px"
-                bgColor="#F5F5FA"
-                bottom="10px"
-                height={16}
-                mb={-17}
-                position="absolute"
+              <Text
                 style={
                   Array [
                     Object {
-                      "alignSelf": "center",
-                      "backgroundColor": "#F5F5FA",
-                      "borderRadius": 3,
-                      "bottom": 10,
-                      "height": 16,
-                      "marginBottom": -17,
-                      "position": "absolute",
-                      "transform": Array [
-                        Object {
-                          "rotate": "45deg",
-                        },
-                      ],
-                      "width": 16,
-                    },
-                  ]
-                }
-                width={16}
-              />
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "backgroundColor": "#D8385E",
-                      "borderTopLeftRadius": 8,
-                      "borderTopRightRadius": 8,
-                      "justifyContent": "center",
-                      "paddingBottom": 4,
-                      "paddingLeft": 8,
-                      "paddingRight": 8,
-                      "paddingTop": 4,
-                      "position": "relative",
+                      "color": "#6B6B78",
+                      "fontFamily": "Rubik",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "lineHeight": 20,
+                      "marginBottom": 5,
+                      "textAlign": "center",
                     },
                   ]
                 }
               >
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "#FFFFFF",
-                        "fontFamily": "Rubik",
-                        "fontSize": 12,
-                        "fontWeight": "700",
-                        "textAlign": "center",
-                      },
-                    ]
-                  }
-                >
-                  ribbon
-                </Text>
-              </View>
-              <View
+                title
+              </Text>
+              <Text
                 style={
                   Array [
                     Object {
-                      "backgroundColor": "#F5F5FA",
-                      "borderRadius": 8,
-                      "justifyContent": "center",
-                      "paddingBottom": 4,
-                      "paddingLeft": 8,
-                      "paddingRight": 8,
-                      "paddingTop": 4,
-                      "width": 95,
+                      "color": "#6B6B78",
+                      "fontFamily": "Rubik",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "lineHeight": 20,
+                      "textAlign": "center",
                     },
                   ]
                 }
               >
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "#6B6B78",
-                        "fontFamily": "Rubik",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "lineHeight": 20,
-                        "marginBottom": 5,
-                        "textAlign": "center",
-                      },
-                    ]
-                  }
-                >
-                  title
-                </Text>
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "#6B6B78",
-                        "fontFamily": "Rubik",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "lineHeight": 20,
-                        "textAlign": "center",
-                      },
-                    ]
-                  }
-                >
-                  description
-                </Text>
-              </View>
+                description
+              </Text>
             </View>
-            <View
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              pressed={true}
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "rgba(216, 56, 94, 0.2)",
-                    "borderColor": "black",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 0,
-                    "elevation": 0,
-                    "height": 40,
-                    "position": "absolute",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": -6,
-                    "width": 40,
-                  },
-                ]
-              }
-              top="2px"
-              width={24}
-            />
-            <View
-              accessibilityRole="adjustable"
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "#FFFFFF",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 6,
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
-                  },
-                ]
-              }
-              top="2px"
-              width={24}
-            />
           </View>
+          <View
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              }
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            pressed={true}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "rgba(216, 56, 94, 0.2)",
+                  "borderColor": "black",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "elevation": 0,
+                  "height": 40,
+                  "position": "absolute",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": -6,
+                  "width": 40,
+                },
+              ]
+            }
+            top="2px"
+            width={24}
+          />
+          <View
+            accessibilityRole="adjustable"
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              }
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 6,
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
+                },
+              ]
+            }
+            top="2px"
+            width={24}
+          />
         </View>
       </View>
     </View>
@@ -1899,30 +2031,33 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
 
 exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
   style={
     Object {
-      "flex": 1,
+      "width": 280,
     }
   }
 >
   <View
     style={
-      Object {
-        "width": 280,
-      }
+      Array [
+        Object {
+          "height": 50,
+          "justifyContent": "center",
+          "position": "relative",
+        },
+        undefined,
+      ]
     }
   >
     <View
       style={
         Array [
           Object {
-            "height": 50,
-            "justifyContent": "center",
-            "position": "relative",
+            "flexDirection": "row",
           },
-          undefined,
+          Object {
+            "width": 280,
+          },
         ]
       }
     >
@@ -1930,301 +2065,312 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
         style={
           Array [
             Object {
-              "flexDirection": "row",
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
             },
             Object {
-              "width": 280,
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
             },
+            Object {
+              "backgroundColor": "#D8385E",
+            },
+            Object {
+              "width": 56,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#A7A7A7",
+              "borderRadius": 2,
+              "height": 2,
+            },
+            Object {
+              "backgroundColor": "#D7D7E0",
+              "borderRadius": 9999,
+              "height": 4,
+            },
+            undefined,
+            Object {
+              "width": 224,
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "height": 48,
+              "justifyContent": "center",
+              "position": "absolute",
+              "width": 48,
+            },
+            Object {
+              "left": 32,
+              "top": -24,
+            },
+            undefined,
+            false,
           ]
         }
       >
         <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              Object {
-                "backgroundColor": "#D8385E",
-              },
-              Object {
-                "width": 56,
-              },
-            ]
-          }
-        />
-        <View
-          style={
-            Array [
-              Object {
-                "backgroundColor": "#A7A7A7",
-                "borderRadius": 2,
-                "height": 2,
-              },
-              Object {
-                "backgroundColor": "#D7D7E0",
-                "borderRadius": 9999,
-                "height": 4,
-              },
-              undefined,
-              Object {
-                "width": 224,
-              },
-            ]
-          }
-        />
-        <View
+          onMoveShouldSetResponder={[Function]}
+          onMoveShouldSetResponderCapture={[Function]}
+          onResponderEnd={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderReject={[Function]}
+          onResponderRelease={[Function]}
+          onResponderStart={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          onStartShouldSetResponderCapture={[Function]}
           style={
             Array [
               Object {
                 "alignItems": "center",
+                "alignSelf": "stretch",
                 "backgroundColor": "transparent",
-                "height": 48,
                 "justifyContent": "center",
-                "position": "absolute",
-                "width": 48,
               },
               Object {
-                "left": 32,
-                "top": -24,
+                "borderRadius": 0,
               },
-              undefined,
-              false,
             ]
           }
         >
           <View
+            bRadius={8}
+            bgColor="#D8385E"
+            bottom={38}
+            elevation="0 5px 5px      rgba(152, 152, 166, 0.2)"
+            position="absolute"
             style={
               Array [
                 Object {
-                  "alignItems": "center",
-                  "alignSelf": "stretch",
-                  "backgroundColor": "transparent",
-                  "justifyContent": "center",
-                },
-                Object {
-                  "borderRadius": 0,
+                  "backgroundColor": "#D8385E",
+                  "borderRadius": 8,
+                  "bottom": 38,
+                  "position": "absolute",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 5,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 5,
+                  "width": 95,
                 },
               ]
             }
+            width={95}
           >
             <View
-              bRadius={8}
-              bgColor="#D8385E"
-              bottom={38}
-              elevation="0 5px 5px      rgba(152, 152, 166, 0.2)"
+              alignSelf="center"
+              bRadius="3px"
+              bgColor="#F5F5FA"
+              bottom="10px"
+              height={16}
+              mb={-17}
               position="absolute"
               style={
                 Array [
                   Object {
-                    "backgroundColor": "#D8385E",
-                    "borderRadius": 8,
-                    "bottom": 38,
+                    "alignSelf": "center",
+                    "backgroundColor": "#F5F5FA",
+                    "borderRadius": 3,
+                    "bottom": 10,
+                    "height": 16,
+                    "marginBottom": -17,
                     "position": "absolute",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 5,
-                      "width": 0,
+                    "transform": Array [
+                      Object {
+                        "rotate": "45deg",
+                      },
+                    ],
+                    "width": 16,
+                  },
+                ]
+              }
+              width={16}
+            />
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "backgroundColor": "#D8385E",
+                    "borderTopLeftRadius": 8,
+                    "borderTopRightRadius": 8,
+                    "justifyContent": "center",
+                    "paddingBottom": 4,
+                    "paddingLeft": 8,
+                    "paddingRight": 8,
+                    "paddingTop": 4,
+                    "position": "relative",
+                  },
+                ]
+              }
+            >
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "color": "#FFFFFF",
+                      "fontFamily": "Rubik",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "textAlign": "center",
                     },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 5,
+                  ]
+                }
+              >
+                ribbon
+              </Text>
+            </View>
+            <View
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "#F5F5FA",
+                    "borderRadius": 8,
+                    "justifyContent": "center",
+                    "paddingBottom": 4,
+                    "paddingLeft": 8,
+                    "paddingRight": 8,
+                    "paddingTop": 4,
                     "width": 95,
                   },
                 ]
               }
-              width={95}
             >
-              <View
-                alignSelf="center"
-                bRadius="3px"
-                bgColor="#F5F5FA"
-                bottom="10px"
-                height={16}
-                mb={-17}
-                position="absolute"
+              <Text
                 style={
                   Array [
                     Object {
-                      "alignSelf": "center",
-                      "backgroundColor": "#F5F5FA",
-                      "borderRadius": 3,
-                      "bottom": 10,
-                      "height": 16,
-                      "marginBottom": -17,
-                      "position": "absolute",
-                      "transform": Array [
-                        Object {
-                          "rotate": "45deg",
-                        },
-                      ],
-                      "width": 16,
-                    },
-                  ]
-                }
-                width={16}
-              />
-              <View
-                style={
-                  Array [
-                    Object {
-                      "alignItems": "center",
-                      "backgroundColor": "#D8385E",
-                      "borderTopLeftRadius": 8,
-                      "borderTopRightRadius": 8,
-                      "justifyContent": "center",
-                      "paddingBottom": 4,
-                      "paddingLeft": 8,
-                      "paddingRight": 8,
-                      "paddingTop": 4,
-                      "position": "relative",
+                      "color": "#6B6B78",
+                      "fontFamily": "Rubik",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "lineHeight": 20,
+                      "marginBottom": 5,
+                      "textAlign": "center",
                     },
                   ]
                 }
               >
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "#FFFFFF",
-                        "fontFamily": "Rubik",
-                        "fontSize": 12,
-                        "fontWeight": "700",
-                        "textAlign": "center",
-                      },
-                    ]
-                  }
-                >
-                  ribbon
-                </Text>
-              </View>
-              <View
+                title
+              </Text>
+              <Text
                 style={
                   Array [
                     Object {
-                      "backgroundColor": "#F5F5FA",
-                      "borderRadius": 8,
-                      "justifyContent": "center",
-                      "paddingBottom": 4,
-                      "paddingLeft": 8,
-                      "paddingRight": 8,
-                      "paddingTop": 4,
-                      "width": 95,
+                      "color": "#6B6B78",
+                      "fontFamily": "Rubik",
+                      "fontSize": 14,
+                      "fontWeight": "400",
+                      "lineHeight": 20,
+                      "textAlign": "center",
                     },
                   ]
                 }
               >
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "#6B6B78",
-                        "fontFamily": "Rubik",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "lineHeight": 20,
-                        "marginBottom": 5,
-                        "textAlign": "center",
-                      },
-                    ]
-                  }
-                >
-                  title
-                </Text>
-                <Text
-                  style={
-                    Array [
-                      Object {
-                        "color": "#6B6B78",
-                        "fontFamily": "Rubik",
-                        "fontSize": 14,
-                        "fontWeight": "400",
-                        "lineHeight": 20,
-                        "textAlign": "center",
-                      },
-                    ]
-                  }
-                >
-                  description
-                </Text>
-              </View>
+                description
+              </Text>
             </View>
-            <View
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              pressed={true}
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "rgba(216, 56, 94, 0.2)",
-                    "borderColor": "black",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 0,
-                    "elevation": 0,
-                    "height": 40,
-                    "position": "absolute",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": -6,
-                    "width": 40,
-                  },
-                ]
-              }
-              top="2px"
-              width={24}
-            />
-            <View
-              accessibilityRole="adjustable"
-              bgColor="#D8385E"
-              border={6}
-              borderColor="#FFFFFF"
-              borderRadius={9999}
-              elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
-              height={24}
-              position="relative"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "#D8385E",
-                    "borderColor": "#FFFFFF",
-                    "borderRadius": 9999,
-                    "borderStyle": "solid",
-                    "borderWidth": 6,
-                    "height": 24,
-                    "position": "relative",
-                    "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
-                      "height": 2,
-                      "width": 0,
-                    },
-                    "shadowOpacity": 1,
-                    "shadowRadius": 4,
-                    "top": 2,
-                    "width": 24,
-                  },
-                ]
-              }
-              top="2px"
-              width={24}
-            />
           </View>
+          <View
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              }
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            pressed={true}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "rgba(216, 56, 94, 0.2)",
+                  "borderColor": "black",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 0,
+                  "elevation": 0,
+                  "height": 40,
+                  "position": "absolute",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": -6,
+                  "width": 40,
+                },
+              ]
+            }
+            top="2px"
+            width={24}
+          />
+          <View
+            accessibilityRole="adjustable"
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              }
+            }
+            bgColor="#D8385E"
+            border={6}
+            borderColor="#FFFFFF"
+            borderRadius={9999}
+            elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
+            height={24}
+            position="relative"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#D8385E",
+                  "borderColor": "#FFFFFF",
+                  "borderRadius": 9999,
+                  "borderStyle": "solid",
+                  "borderWidth": 6,
+                  "height": 24,
+                  "position": "relative",
+                  "shadowColor": "rgba(152, 152, 166, 0.2)",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 1,
+                  "shadowRadius": 4,
+                  "top": 2,
+                  "width": 24,
+                },
+              ]
+            }
+            top="2px"
+            width={24}
+          />
         </View>
       </View>
     </View>

@@ -8,17 +8,17 @@ jest.useFakeTimers();
 describe('<Backdrop />', () => {
   describe('Snapshots', () => {
     it('should match snapshot', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Backdrop title="Find an Activity">Some Content</Backdrop>
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot when visible', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Backdrop visible title="Find an Activity">
             Some Content
@@ -26,7 +26,7 @@ describe('<Backdrop />', () => {
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 });

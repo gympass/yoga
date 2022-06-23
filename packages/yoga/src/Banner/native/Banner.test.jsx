@@ -6,17 +6,17 @@ import { ThemeProvider, Banner } from '../..';
 
 describe('<Banner />', () => {
   it('should match snapshot', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Banner message="Feedback message." />
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with custom variant', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Banner variant="success" message="Success banner without button" />
         <Banner
@@ -27,21 +27,21 @@ describe('<Banner />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with icon', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Banner icon={CheckedFull} message="Banner with icon" />
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with button', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Banner
           message="Banner with button"
@@ -53,7 +53,7 @@ describe('<Banner />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should call button action function when the banner button is pressed', () => {
@@ -76,7 +76,7 @@ describe('<Banner />', () => {
   });
 
   it('should match snapshot with two action buttons', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Banner
           message="Banner with two action buttons"
@@ -92,7 +92,7 @@ describe('<Banner />', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should call both buttons action function when each banner action button are pressed', () => {

@@ -6,45 +6,45 @@ import { ThemeProvider, Input } from '../..';
 describe('<Input.Password />', () => {
   describe('Snapshots', () => {
     it('should match with default input', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Input.Password />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match when input is focused', () => {
-      const { container, getByTestId } = render(
+      const { toJSON, getByTestId } = render(
         <ThemeProvider>
           <Input.Password label="Input" testID="input" />
         </ThemeProvider>,
       );
 
-      fireEvent.focus(getByTestId('input'));
+      fireEvent(getByTestId('input'), 'focus');
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match with disabled input', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Input.Password disabled />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match with full width', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Input.Password label="Label" full />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 
@@ -79,7 +79,7 @@ describe('<Input.Password />', () => {
         </ThemeProvider>,
       );
 
-      fireEvent.focus(getByTestId('input'));
+      fireEvent(getByTestId('input'), 'focus');
 
       expect(onChangeTextMock).not.toHaveBeenCalled();
     });
@@ -97,7 +97,7 @@ describe('<Input.Password />', () => {
         </ThemeProvider>,
       );
 
-      fireEvent.changeText(getByTestId('input'), 'foo');
+      fireEvent(getByTestId('input'), 'focus');
 
       expect(onChangeTextMock).not.toHaveBeenCalled();
     });
@@ -110,7 +110,7 @@ describe('<Input.Password />', () => {
         </ThemeProvider>,
       );
 
-      fireEvent.focus(getByTestId('input'));
+      fireEvent(getByTestId('input'), 'focus');
 
       expect(onFocusMock).toHaveBeenCalled();
     });
@@ -124,8 +124,8 @@ describe('<Input.Password />', () => {
         </ThemeProvider>,
       );
 
-      fireEvent.focus(getByTestId('input'));
-      fireEvent.blur(getByTestId('input'));
+      fireEvent(getByTestId('input'), 'focus');
+      fireEvent(getByTestId('input'), 'blur');
 
       expect(onBlurMock).toHaveBeenCalled();
     });

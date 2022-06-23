@@ -11,27 +11,27 @@ const Circle = props => (
 
 describe('Snapshots', () => {
   it('should match snapshot', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Icon as={Circle} width="small" height="small" fill="stamina" />
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with size prop', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Icon as={Circle} size="small" fill="stamina" />
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 
   it('should match snapshot with system props', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <Icon
           as={Circle}
@@ -43,6 +43,6 @@ describe('Snapshots', () => {
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 });

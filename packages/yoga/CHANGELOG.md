@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.40.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.40.0...@gympass/yoga@7.40.1) (2022-06-20)
+
+
+### Bug Fixes
+
+* **Heading:** add displayName to compound components ([f59ed8c](https://github.com/Gympass/yoga/commit/f59ed8cbd5b14b2e845cd164e11ea6566c370f4c))
+
+
+
+
+
+# [7.40.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.39.1...@gympass/yoga@7.40.0) (2022-06-17)
+
+
+### Features
+
+* **PlanCard:** use default size for buttons ([0cadddd](https://github.com/Gympass/yoga/commit/0cadddd397e633ef47de88a6c412f3f14596f629))
+
+
+
+
+
+## [7.39.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.39.0...@gympass/yoga@7.39.1) (2022-06-17)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
 # [7.39.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.38.0...@gympass/yoga@7.39.0) (2022-06-15)
 
 

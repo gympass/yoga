@@ -1,110 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Snapshots should match snapshot 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
+<svg
+  fill="#231B22"
+  height={16}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "height": 16,
+        "width": 16,
+      },
+    ]
   }
+  width={16}
 >
-  <svg
-    fill="#231B22"
-    height={16}
-    style={
-      Array [
-        Object {
-          "height": 16,
-          "width": 16,
-        },
-      ]
-    }
-    width={16}
-  >
-    <circle
-      cx="16"
-      cy="16"
-      r="16"
-    />
-  </svg>
-</View>
+  <circle
+    cx="16"
+    cy="16"
+    r="16"
+  />
+</svg>
 `;
 
 exports[`Snapshots should match snapshot with size prop 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
+<svg
+  fill="#231B22"
+  height={16}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "height": 16,
+        "width": 16,
+      },
+    ]
   }
+  width={16}
 >
-  <svg
-    fill="#231B22"
-    height={16}
-    style={
-      Array [
-        Object {
-          "height": 16,
-          "width": 16,
-        },
-      ]
-    }
-    width={16}
-  >
-    <circle
-      cx="16"
-      cy="16"
-      r="16"
-    />
-  </svg>
-</View>
+  <circle
+    cx="16"
+    cy="16"
+    r="16"
+  />
+</svg>
 `;
 
 exports[`Snapshots should match snapshot with system props 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
+<svg
+  elevation="medium"
+  fill="#231B22"
+  height={16}
+  margin="medium"
   style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <svg
-    elevation="medium"
-    fill="#231B22"
-    height={16}
-    margin="medium"
-    style={
-      Array [
-        Object {
-          "height": 16,
-          "marginBottom": 20,
-          "marginLeft": 20,
-          "marginRight": 20,
-          "marginTop": 20,
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
-            "height": 5,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 5,
-          "width": 16,
+    Array [
+      Object {
+        "height": 16,
+        "marginBottom": 20,
+        "marginLeft": 20,
+        "marginRight": 20,
+        "marginTop": 20,
+        "shadowColor": "rgba(152, 152, 166, 0.2)",
+        "shadowOffset": Object {
+          "height": 5,
+          "width": 0,
         },
-      ]
-    }
-    width={16}
-  >
-    <circle
-      cx="16"
-      cy="16"
-      r="16"
-    />
-  </svg>
-</View>
+        "shadowOpacity": 1,
+        "shadowRadius": 5,
+        "width": 16,
+      },
+    ]
+  }
+  width={16}
+>
+  <circle
+    cx="16"
+    cy="16"
+    r="16"
+  />
+</svg>
 `;
