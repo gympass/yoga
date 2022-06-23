@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.40.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.40.1...@gympass/yoga@7.40.2) (2022-06-23)
+
+
+### Bug Fixes
+
+* **number:** change api input number ([63b4665](https://github.com/Gympass/yoga/commit/63b466549392864d56434c830a50695b8af2cbdf))
+
+
+
+
+
 ## [7.40.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.40.0...@gympass/yoga@7.40.1) (2022-06-20)
 
 
