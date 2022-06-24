@@ -72,7 +72,8 @@ exports[`<Dropdown /> should match snapshot 1`] = `
 
 .c4:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c4::-webkit-input-placeholder {
@@ -359,7 +360,8 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
 
 .c3:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -651,7 +653,8 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
 
 .c4:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c4::-webkit-input-placeholder {
@@ -938,7 +941,8 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 
 .c3:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -1251,7 +1255,8 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
 
 .c4:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c4::-webkit-input-placeholder {

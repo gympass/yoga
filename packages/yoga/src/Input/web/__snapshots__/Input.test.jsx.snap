@@ -72,7 +72,8 @@ exports[`<Input /> Snapshots should match with default input 1`] = `
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c2::-webkit-input-placeholder {
@@ -279,7 +280,8 @@ exports[`<Input /> Snapshots should match with disabled input 1`] = `
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c2::-webkit-input-placeholder {
@@ -491,7 +493,8 @@ exports[`<Input /> Snapshots should match with error 1`] = `
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c2::-webkit-input-placeholder {
@@ -732,7 +735,8 @@ exports[`<Input /> Snapshots should match with full width 1`] = `
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c2::-webkit-input-placeholder {
@@ -939,7 +943,8 @@ exports[`<Input /> Snapshots should match with helper text and max length 1`] = 
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c2::-webkit-input-placeholder {
@@ -1188,7 +1193,8 @@ exports[`<Input /> Snapshots should match with helper text, max length and hideM
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c2::-webkit-input-placeholder {
@@ -1430,7 +1436,8 @@ exports[`<Input /> Snapshots should match with label 1`] = `
 
 .c2:disabled {
   cursor: not-allowed;
-  color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c2::-webkit-input-placeholder {
