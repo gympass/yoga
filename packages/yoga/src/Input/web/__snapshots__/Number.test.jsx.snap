@@ -73,6 +73,8 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c2::-webkit-input-placeholder {

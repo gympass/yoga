@@ -73,6 +73,8 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -297,6 +299,8 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -521,6 +525,8 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -897,6 +903,8 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
