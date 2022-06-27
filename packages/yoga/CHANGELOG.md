@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.40.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.40.2...@gympass/yoga@7.40.3) (2022-06-27)
+
+
+### Bug Fixes
+
+* add color and opacity to fix on ios ([cfdc682](https://github.com/Gympass/yoga/commit/cfdc682ebe2c61baa975085560b9c571eadebad0))
+
+
+
+
+
 ## [7.40.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.40.1...@gympass/yoga@7.40.2) (2022-06-23)
 
 
