@@ -73,6 +73,8 @@ exports[`<Dropdown /> should match snapshot 1`] = `
 .c4:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c4::-webkit-input-placeholder {
@@ -114,8 +116,8 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   border-color: #D7D7E0;
 }
 
-.c3:hover,
-.c3:focus-within {
+.c3:hover:not(:disabled),
+.c3:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -360,6 +362,8 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -399,12 +403,12 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
+  border-color: #D7D7E0;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
-  border-color: #D7D7E0;
 }
 
 .c6 {
@@ -652,6 +656,8 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
 .c4:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c4::-webkit-input-placeholder {
@@ -693,8 +699,8 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   border-color: #D7D7E0;
 }
 
-.c3:hover,
-.c3:focus-within {
+.c3:hover:not(:disabled),
+.c3:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -939,6 +945,8 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -999,12 +1007,12 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   border-style: solid;
   border-color: #D7D7E0;
   border-color: #231B22;
+  border-color: #D7D7E0;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
-  border-color: #D7D7E0;
 }
 
 .c6 {
@@ -1252,6 +1260,8 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
 .c4:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c4::-webkit-input-placeholder {
@@ -1309,7 +1319,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 4px;
-  color: #FF874C;
+  color: #CA4808;
 }
 
 .c12 {
@@ -1339,8 +1349,8 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   border-color: #231B22;
 }
 
-.c3:hover,
-.c3:focus-within {
+.c3:hover:not(:disabled),
+.c3:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -1407,11 +1417,11 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
 
 .c1 fieldset {
   border-color: #231B22;
-  border-color: #FF874C;
+  border-color: #CA4808;
 }
 
 .c1:hover fieldset {
-  border-color: #FF874C;
+  border-color: #CA4808;
 }
 
 .c5 {

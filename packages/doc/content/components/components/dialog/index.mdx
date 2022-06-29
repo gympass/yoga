@@ -14,6 +14,9 @@ Gympass `<Dialog />` is a component which has the purpose of providing prioritar
 - `<Dialog.Content />`
 - `<Dialog.Footer />`
 
+### Recommendations of use Buttons
+The right positioning of the buttons starting with the primary followed by the secondary
+
 ### Usage
 
 ### Dialog with one action
@@ -80,8 +83,8 @@ render(() => {
         Double check your info and company selection. If it still doesn’t work, contact your HR team.
        </Dialog.Content>
        <Dialog.Footer>
+         <Button>Yes, downgrade</Button>
         <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
-        <Button>Yes, downgrade</Button>
        </Dialog.Footer>
       </Dialog>
     </>
@@ -118,8 +121,8 @@ render(() => {
          The change will happen at the end of your billing cycle on March, 28. Until then, enjoy your Black plan - you’ve already paid for it.
        </Dialog.Content>
        <Dialog.Footer>
-          <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
           <Button>Yes, downgrade</Button>
+          <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
        </Dialog.Footer>
       </Dialog>
     </>
@@ -152,8 +155,8 @@ render(() => {
         Are you sure you want to downgrade to a Platinum plan?
        </Dialog.Header>
        <Dialog.Footer>
-          <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
           <Button>Yes, downgrade</Button>
+          <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
        </Dialog.Footer>
       </Dialog>
     </>

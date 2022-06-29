@@ -5,12 +5,12 @@ import { ThemeProvider, TextArea } from '../..';
 
 describe('<TextArea />', () => {
   it('should match snapshot', () => {
-    const { container } = render(
+    const { toJSON } = render(
       <ThemeProvider>
         <TextArea />
       </ThemeProvider>,
     );
 
-    expect(container).toMatchSnapshot();
+    expect(toJSON()).toMatchSnapshot();
   });
 });

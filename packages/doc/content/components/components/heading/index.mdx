@@ -1,0 +1,55 @@
+---
+title: 'Heading'
+metaTitle: 'Heading'
+metaDescription: 'Heading Component'
+---
+
+
+# Heading
+
+### Reference
+
+The Heading defines the top of a page, and displays information and actions relating to the current page.
+
+### Usage
+
+#### Default
+
+```javascript
+  <Heading>
+    <Heading.Title>Gympass</Heading.Title>
+  </Heading>
+```
+
+#### With back button
+
+```javascript
+  <Heading>
+    <Heading.BackButton onClick={() => alert('back button')} />
+    <Heading.Title>Gympass</Heading.Title>
+  </Heading>
+```
+
+
+#### Just back button
+
+```javascript
+  <Heading>
+    <Heading.BackButton onClick={() => alert('back button')} />
+  </Heading>
+```
+
+#### With all components
+
+```javascript
+  <Heading>
+    <Heading.BackButton onClick={() => alert('back button')} />
+    <Heading.Title>Gympass</Heading.Title>
+    <Heading.RightButton onClick={() => alert('right button 1')} icon={Upload2} />
+    <Heading.RightButton onClick={() => alert('right button 2')} icon={Whatsapp} />
+  </Heading>
+```
+
+### Props
+
+<PropsTable component="Heading" platform="web" />

@@ -1,18 +1,19 @@
-const CardWeb = ({ spacing }) => ({
+const CardWeb = ({ spacing, lineHeights }) => ({
   plan: {
     title: {
       margin: {
-        bottom: spacing.xxxsmall,
+        bottom: spacing.xxsmall,
       },
+      lineHeight: lineHeights.medium,
     },
     price: {
       margin: {
-        bottom: spacing.xlarge,
+        bottom: spacing.large,
       },
     },
     list: {
       margin: {
-        top: spacing.small,
+        top: spacing.large,
       },
       item: {
         icon: {
@@ -29,7 +30,7 @@ const CardWeb = ({ spacing }) => ({
         },
       },
       margin: {
-        top: spacing.xlarge,
+        top: spacing.xxsmall,
       },
     },
   },

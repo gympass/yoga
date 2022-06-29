@@ -19,33 +19,33 @@ const dropdownProps = {
 describe('<Dropdown />', () => {
   describe('Snapshots', () => {
     it('should match snapshot', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Dropdown {...dropdownProps} />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot when disabled', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Dropdown disabled {...dropdownProps} />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot when full', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Dropdown full {...dropdownProps} />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot when has a selected value', () => {
@@ -58,23 +58,23 @@ describe('<Dropdown />', () => {
 
       props.options.push(selectedOption);
 
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Dropdown disabled {...props} />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
 
     it('should match snapshot with error', () => {
-      const { container } = render(
+      const { toJSON } = render(
         <ThemeProvider>
           <Dropdown {...dropdownProps} error="Please, select one activity" />
         </ThemeProvider>,
       );
 
-      expect(container).toMatchSnapshot();
+      expect(toJSON()).toMatchSnapshot();
     });
   });
 });

@@ -61,8 +61,8 @@ exports[`<TextArea /> should match snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c1:hover,
-.c1:focus-within {
+.c1:hover:not(:disabled),
+.c1:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -140,6 +140,8 @@ exports[`<TextArea /> should match snapshot 1`] = `
 .c2:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c2::-webkit-input-placeholder {

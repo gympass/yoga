@@ -268,79 +268,78 @@ const getSelectedOption = options =>
   options.find(item => item.selected === true);
 
 /** Gympass Dropdown is a multiple choice type of menu. */
-const Dropdown = ({
-  error,
-  label,
-  disabled,
-  full,
-  options,
-  onChange,
-  ...rest
-}) => (
-  <Downshift
-    initialSelectedItem={getSelectedOption(options)}
-    selectedItemChanged={(prevItem, item) => prevItem !== item}
-    itemToString={item => (item ? item.label : '')}
-    onChange={onChange}
-  >
-    {({
-      getInputProps,
-      getItemProps,
-      getRootProps,
-      getMenuProps,
-      getToggleButtonProps,
-      selectedItem,
-      highlightedIndex,
-      isOpen,
-    }) => (
-      <Wrapper full={full} {...getRootProps()} {...rest}>
-        <Selector
-          isOpen={isOpen}
-          disabled={disabled}
-          error={error}
-          selected={selectedItem !== null}
-        >
-          <Field
-            readOnly
-            disabled={disabled}
-            selected={selectedItem !== null}
-            isOpen={isOpen}
-            label={label}
-            full={full}
-            {...getInputProps()}
-          />
-          <Button
-            isOpen={isOpen}
-            disabled={disabled}
-            {...getToggleButtonProps()}
-          >
-            <ArrowIcon
+const Dropdown = React.forwardRef(
+  ({ error, label, disabled, full, options, onChange, ...rest }, ref) => {
+    const inputRef = ref || React.useRef(null);
+
+    return (
+      <Downshift
+        initialSelectedItem={getSelectedOption(options)}
+        selectedItemChanged={(prevItem, item) => prevItem !== item}
+        itemToString={item => (item ? item.label : '')}
+        onChange={onChange}
+      >
+        {({
+          getInputProps,
+          getItemProps,
+          getRootProps,
+          getMenuProps,
+          getToggleButtonProps,
+          selectedItem,
+          highlightedIndex,
+          isOpen,
+        }) => (
+          <Wrapper full={full} {...getRootProps()} {...rest}>
+            <Selector
               isOpen={isOpen}
-              selected={selectedItem !== null}
               disabled={disabled}
-            />
-          </Button>
-        </Selector>
-        {isOpen && (
-          <OptionsList selected={selectedItem !== null} {...getMenuProps()}>
-            {options.map((item, index) => (
-              <Option
-                {...getItemProps({
-                  key: item.value,
-                  item,
-                  isSelected: selectedItem === item,
-                  highlighted: highlightedIndex === index,
-                })}
+              error={error}
+              selected={selectedItem !== null}
+            >
+              <Field
+                readOnly
+                disabled={disabled}
+                selected={selectedItem !== null}
+                isOpen={isOpen}
+                label={label}
+                full={full}
+                ref={inputRef}
+                {...getInputProps()}
+              />
+              <Button
+                isOpen={isOpen}
+                disabled={disabled}
+                {...getToggleButtonProps()}
               >
-                {item.label}
-              </Option>
-            ))}
-          </OptionsList>
+                <ArrowIcon
+                  isOpen={isOpen}
+                  selected={selectedItem !== null}
+                  disabled={disabled}
+                />
+              </Button>
+            </Selector>
+            {isOpen && (
+              <OptionsList selected={selectedItem !== null} {...getMenuProps()}>
+                {options.map((item, index) => (
+                  <Option
+                    {...getItemProps({
+                      key: item.value,
+                      item,
+                      isSelected: selectedItem === item,
+                      highlighted: highlightedIndex === index,
+                    })}
+                  >
+                    {item.label}
+                  </Option>
+                ))}
+              </OptionsList>
+            )}
+            {error && <Helper error={error} />}
+          </Wrapper>
         )}
-        {error && <Helper error={error} />}
-      </Wrapper>
-    )}
-  </Downshift>
+      </Downshift>
+    );
+  },
 );
 
 Dropdown.propTypes = {

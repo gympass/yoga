@@ -2,67 +2,49 @@
 
 exports[`<Tag /> should match snapshot 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  small={false}
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderColor": "#9898A6",
+        "borderRadius": 4,
+        "borderWidth": 1,
+        "justifyContent": "center",
+        "paddingBottom": 4,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 4,
+        "width": "auto",
+      },
+    ]
   }
+  variant=""
 >
-  <View
-    small={false}
+  <Text
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "borderColor": "#9898A6",
-          "borderRadius": 4,
-          "borderWidth": 1,
-          "justifyContent": "center",
-          "paddingBottom": 4,
-          "paddingLeft": 8,
-          "paddingRight": 8,
-          "paddingTop": 4,
-          "width": "auto",
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "500",
+        },
+        Object {
+          "color": "#6B6B78",
+          "fontSize": 12,
+          "lineHeight": 16,
         },
       ]
     }
-    variant=""
   >
-    <Text
-      style={
-        Array [
-          Object {
-            "color": "#231B22",
-            "fontFamily": "Rubik",
-            "fontSize": 16,
-            "fontWeight": "500",
-          },
-          Object {
-            "color": "#6B6B78",
-            "fontSize": 12,
-            "lineHeight": 16,
-          },
-        ]
-      }
-    >
-      default
-    </Text>
-  </View>
+    default
+  </Text>
 </View>
 `;
 
 exports[`<Tag /> should match snapshot with custom icon and informative type 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     small={false}
     style={
@@ -194,7 +176,7 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
         success with custom icon
       </Text>
     </View>
-  </View>
+  </View>,
   <View
     small={true}
     style={
@@ -326,20 +308,12 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
         success with custom icon
       </Text>
     </View>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     small={false}
     style={
@@ -379,7 +353,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
     >
       success
     </Text>
-  </View>
+  </View>,
   <View
     mv="medium"
     small={false}
@@ -387,7 +361,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#7068D4",
+          "borderColor": "#5340C9",
           "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -413,7 +387,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
             "fontWeight": "500",
           },
           Object {
-            "color": "#7068D4",
+            "color": "#5340C9",
             "fontSize": 12,
             "lineHeight": 16,
           },
@@ -422,14 +396,14 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
     >
       informative
     </Text>
-  </View>
+  </View>,
   <View
     small={false}
     style={
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#FF874C",
+          "borderColor": "#CA4808",
           "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -453,7 +427,7 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
             "fontWeight": "500",
           },
           Object {
-            "color": "#FF874C",
+            "color": "#CA4808",
             "fontSize": 12,
             "lineHeight": 16,
           },
@@ -462,20 +436,12 @@ exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
     >
       attention
     </Text>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`<Tag /> should match snapshot with variant prop 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     small={false}
     style={
@@ -515,14 +481,14 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     >
       success
     </Text>
-  </View>
+  </View>,
   <View
     small={false}
     style={
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#7068D4",
+          "borderColor": "#5340C9",
           "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -546,7 +512,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
             "fontWeight": "500",
           },
           Object {
-            "color": "#7068D4",
+            "color": "#5340C9",
             "fontSize": 12,
             "lineHeight": 16,
           },
@@ -555,14 +521,14 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     >
       informative
     </Text>
-  </View>
+  </View>,
   <View
     small={false}
     style={
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#FF874C",
+          "borderColor": "#CA4808",
           "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -586,7 +552,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
             "fontWeight": "500",
           },
           Object {
-            "color": "#FF874C",
+            "color": "#CA4808",
             "fontSize": 12,
             "lineHeight": 16,
           },
@@ -595,14 +561,14 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     >
       attention
     </Text>
-  </View>
+  </View>,
   <View
     small={true}
     style={
       Array [
         Object {
           "alignItems": "center",
-          "borderColor": "#FF874C",
+          "borderColor": "#CA4808",
           "borderRadius": 4,
           "borderWidth": 1,
           "justifyContent": "center",
@@ -626,7 +592,7 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
             "fontWeight": "500",
           },
           Object {
-            "color": "#FF874C",
+            "color": "#CA4808",
             "fontSize": 12,
             "lineHeight": 16,
           },
@@ -635,20 +601,12 @@ exports[`<Tag /> should match snapshot with variant prop 1`] = `
     >
       attention small
     </Text>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`<Tag /> should match snapshot with variant prop and informative type 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     small={false}
     style={
@@ -702,7 +660,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
         success
       </Text>
     </View>
-  </View>
+  </View>,
   <View
     small={false}
     style={
@@ -756,7 +714,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
         informative
       </Text>
     </View>
-  </View>
+  </View>,
   <View
     small={false}
     style={
@@ -810,7 +768,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
         attention
       </Text>
     </View>
-  </View>
+  </View>,
   <View
     small={true}
     style={
@@ -864,20 +822,12 @@ exports[`<Tag /> should match snapshot with variant prop and informative type 1`
         attention small
       </Text>
     </View>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`<Tag /> should match snapshot with variant prop and informative type with margin prop 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     small={false}
     style={
@@ -931,7 +881,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type wi
         success
       </Text>
     </View>
-  </View>
+  </View>,
   <View
     mv="medium"
     small={false}
@@ -988,7 +938,7 @@ exports[`<Tag /> should match snapshot with variant prop and informative type wi
         informative
       </Text>
     </View>
-  </View>
+  </View>,
   <View
     small={false}
     style={
@@ -1042,20 +992,12 @@ exports[`<Tag /> should match snapshot with variant prop and informative type wi
         attention
       </Text>
     </View>
-  </View>
-</View>
+  </View>,
+]
 `;
 
 exports[`<Tag /> should match snapshot with without icon and informative type 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
+Array [
   <View
     small={false}
     style={
@@ -1109,7 +1051,7 @@ exports[`<Tag /> should match snapshot with without icon and informative type 1`
         success without icon
       </Text>
     </View>
-  </View>
+  </View>,
   <View
     small={true}
     style={
@@ -1163,6 +1105,6 @@ exports[`<Tag /> should match snapshot with without icon and informative type 1`
         success without icon
       </Text>
     </View>
-  </View>
-</View>
+  </View>,
+]
 `;

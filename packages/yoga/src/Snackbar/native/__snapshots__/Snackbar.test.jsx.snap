@@ -1,0 +1,867 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
+Array [
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      disabled={false}
+      full={true}
+      inverted={false}
+      pressed={false}
+      secondary={false}
+      small={true}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#D8385E",
+            "borderRadius": 9999,
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <Text
+        color="#FFFFFF"
+        disabled={false}
+        inverted={false}
+        pressed={false}
+        small={true}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Tap to open snackbar
+      </Text>
+    </View>
+  </View>,
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "bottom": 0,
+        "position": "absolute",
+        "transform": Array [
+          Object {
+            "translateY": 1334,
+          },
+        ],
+        "width": "100%",
+        "zIndex": 10,
+      }
+    }
+  >
+    <View
+      onLayout={[Function]}
+      testID="wrapper"
+    >
+      <View
+        bottomOffset={0}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#C1EEDB",
+              "borderRadius": 8,
+              "flexDirection": "row",
+              "marginBottom": 20,
+              "marginHorizontal": 20,
+              "paddingBottom": 12,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 12,
+            },
+          ]
+        }
+        variant="success"
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#231B22"
+          focusable={false}
+          height={24}
+          marginRight="xxsmall"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Array [
+                Object {
+                  "height": 24,
+                  "marginRight": 8,
+                  "width": 24,
+                },
+              ],
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4280490786,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          flex={1}
+          fontSize="small"
+          inverted={false}
+          light={false}
+          marginVertical="xxxsmall"
+          numberOfLines={2}
+          size="medium"
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 24,
+                "marginBottom": 4,
+                "marginTop": 4,
+              },
+            ]
+          }
+        >
+          Lorem Ipsum is simply dummy text of the printing and types.
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            marginLeft="xxsmall"
+            pressed={false}
+            small={true}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderRadius": 9999,
+                  "flexDirection": "row",
+                  "height": 32,
+                  "justifyContent": "center",
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                },
+                Object {
+                  "marginLeft": 8,
+                },
+              ]
+            }
+          >
+            <Text
+              color="#231B22"
+              pressed={false}
+              secondary={true}
+              small={true}
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              Action
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>,
+]
+`;
+
+exports[`<Snackbar /> should match snapshot when have a variant informative or attention prop 1`] = `
+Array [
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      disabled={false}
+      full={true}
+      inverted={false}
+      pressed={false}
+      secondary={false}
+      small={true}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#D8385E",
+            "borderRadius": 9999,
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <Text
+        color="#FFFFFF"
+        disabled={false}
+        inverted={false}
+        pressed={false}
+        small={true}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Tap to open snackbar
+      </Text>
+    </View>
+  </View>,
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "bottom": 0,
+        "position": "absolute",
+        "transform": Array [
+          Object {
+            "translateY": 1334,
+          },
+        ],
+        "width": "100%",
+        "zIndex": 10,
+      }
+    }
+  >
+    <View
+      onLayout={[Function]}
+      testID="wrapper"
+    >
+      <View
+        bottomOffset={0}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#E0DFFF",
+              "borderRadius": 8,
+              "flexDirection": "row",
+              "marginBottom": 20,
+              "marginHorizontal": 20,
+              "paddingBottom": 12,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 12,
+            },
+          ]
+        }
+        variant="informative"
+      >
+        <Text
+          flex={1}
+          fontSize="small"
+          inverted={false}
+          light={false}
+          marginVertical="xxxsmall"
+          numberOfLines={2}
+          size="medium"
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 24,
+                "marginBottom": 4,
+                "marginTop": 4,
+              },
+            ]
+          }
+        >
+          Feedback Message
+        </Text>
+      </View>
+    </View>
+  </View>,
+]
+`;
+
+exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
+Array [
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      disabled={false}
+      full={true}
+      inverted={false}
+      pressed={false}
+      secondary={false}
+      small={true}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#D8385E",
+            "borderRadius": 9999,
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <Text
+        color="#FFFFFF"
+        disabled={false}
+        inverted={false}
+        pressed={false}
+        small={true}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Tap to open snackbar
+      </Text>
+    </View>
+  </View>,
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "bottom": 0,
+        "position": "absolute",
+        "transform": Array [
+          Object {
+            "translateY": 1334,
+          },
+        ],
+        "width": "100%",
+        "zIndex": 10,
+      }
+    }
+  >
+    <View
+      onLayout={[Function]}
+      testID="wrapper"
+    >
+      <View
+        bottomOffset={0}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#C1EEDB",
+              "borderRadius": 8,
+              "flexDirection": "row",
+              "marginBottom": 20,
+              "marginHorizontal": 20,
+              "paddingBottom": 12,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 12,
+            },
+          ]
+        }
+        variant="success"
+      >
+        <RNSVGSvgView
+          bbHeight={24}
+          bbWidth={24}
+          fill="#231B22"
+          focusable={false}
+          height={24}
+          marginRight="xxsmall"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Array [
+                Object {
+                  "height": 24,
+                  "marginRight": 8,
+                  "width": 24,
+                },
+              ],
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          width={24}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4280490786,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          flex={1}
+          fontSize="small"
+          inverted={false}
+          light={false}
+          marginVertical="xxxsmall"
+          numberOfLines={2}
+          size="medium"
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 24,
+                "marginBottom": 4,
+                "marginTop": 4,
+              },
+            ]
+          }
+        >
+          Feedback Message
+        </Text>
+        <View
+          accessible={true}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            marginLeft="xxsmall"
+            pressed={false}
+            small={true}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderRadius": 9999,
+                  "flexDirection": "row",
+                  "height": 32,
+                  "justifyContent": "center",
+                  "paddingLeft": 16,
+                  "paddingRight": 16,
+                },
+                Object {
+                  "marginLeft": 8,
+                },
+              ]
+            }
+          >
+            <Text
+              color="#231B22"
+              pressed={false}
+              secondary={true}
+              small={true}
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 14,
+                    "fontWeight": "500",
+                    "textAlign": "center",
+                  },
+                ]
+              }
+            >
+              Action
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>,
+]
+`;
+
+exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
+Array [
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      disabled={false}
+      full={true}
+      inverted={false}
+      pressed={false}
+      secondary={false}
+      small={true}
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#D8385E",
+            "borderRadius": 9999,
+            "flexDirection": "row",
+            "height": 32,
+            "justifyContent": "center",
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "width": "100%",
+          },
+        ]
+      }
+    >
+      <Text
+        color="#FFFFFF"
+        disabled={false}
+        inverted={false}
+        pressed={false}
+        small={true}
+        style={
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontFamily": "Rubik",
+              "fontSize": 14,
+              "fontWeight": "500",
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Tap to open snackbar
+      </Text>
+    </View>
+  </View>,
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "bottom": 0,
+        "position": "absolute",
+        "transform": Array [
+          Object {
+            "translateY": 1334,
+          },
+        ],
+        "width": "100%",
+        "zIndex": 10,
+      }
+    }
+  >
+    <View
+      onLayout={[Function]}
+      testID="wrapper"
+    >
+      <View
+        bottomOffset={0}
+        onMoveShouldSetResponder={[Function]}
+        onMoveShouldSetResponderCapture={[Function]}
+        onResponderEnd={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderReject={[Function]}
+        onResponderRelease={[Function]}
+        onResponderStart={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        onStartShouldSetResponderCapture={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#C1EEDB",
+              "borderRadius": 8,
+              "flexDirection": "row",
+              "marginBottom": 20,
+              "marginHorizontal": 20,
+              "paddingBottom": 12,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 12,
+            },
+          ]
+        }
+        variant="success"
+      >
+        <Text
+          flex={1}
+          fontSize="small"
+          inverted={false}
+          light={false}
+          marginVertical="xxxsmall"
+          numberOfLines={2}
+          size="medium"
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 24,
+                "marginBottom": 4,
+                "marginTop": 4,
+              },
+            ]
+          }
+        >
+          Feedback Message
+        </Text>
+      </View>
+    </View>
+  </View>,
+]
+`;

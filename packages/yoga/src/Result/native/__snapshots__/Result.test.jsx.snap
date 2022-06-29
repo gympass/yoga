@@ -2,434 +2,192 @@
 
 exports[`<Result /> should match snapshot 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  display="flex"
+  divided={true}
+  flexDirection="row"
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "borderBottomColor": "#D7D7E0",
+        "borderBottomWidth": 1,
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "100%",
+      },
+    ]
   }
 >
   <View
+    alignItems="center"
+    bgColor="elements.selectionAndIcons"
+    borderRadius="circle"
     display="flex"
-    divided={true}
-    flexDirection="row"
+    elevation="small"
+    height={48}
+    justifyContent="center"
+    overflow="hidden"
     style={
       Array [
         Object {
-          "borderBottomColor": "#D7D7E0",
-          "borderBottomWidth": 1,
+          "alignItems": "center",
+          "backgroundColor": "#9898A6",
+          "borderRadius": 9999,
           "display": "flex",
-          "flexDirection": "row",
-          "width": "100%",
+          "height": 48,
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "shadowColor": "rgba(152, 152, 166, 0.2)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 4,
+          "width": 48,
+        },
+      ]
+    }
+    width={48}
+  >
+    <RNSVGSvgView
+      bbHeight="50%"
+      bbWidth="50%"
+      fill="#FFFFFF"
+      focusable={false}
+      height="50%"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Array [
+            Object {
+              "height": "50%",
+              "width": "50%",
+            },
+          ],
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": "50%",
+            "width": "50%",
+          },
+        ]
+      }
+      width="50%"
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294967295,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "marginBottom": 24,
+          "marginLeft": 16,
         },
       ]
     }
   >
     <View
       alignItems="center"
-      bgColor="elements.selectionAndIcons"
-      borderRadius="circle"
       display="flex"
-      elevation="small"
-      height={48}
+      flexDirection="row"
       justifyContent="center"
-      overflow="hidden"
+      mb="xxxsmall"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#9898A6",
-            "borderRadius": 9999,
             "display": "flex",
-            "height": 48,
+            "flexDirection": "row",
             "justifyContent": "center",
-            "overflow": "hidden",
-            "shadowColor": "rgba(152, 152, 166, 0.2)",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 0,
-            },
-            "shadowOpacity": 1,
-            "shadowRadius": 4,
-            "width": 48,
+            "marginBottom": 4,
+            "width": "100%",
           },
         ]
       }
-      width={48}
+      width="100%"
     >
-      <RNSVGSvgView
-        bbHeight="50%"
-        bbWidth="50%"
-        fill="#FFFFFF"
-        focusable={false}
-        height="50%"
+      <Text
+        numberOfLines={1}
         style={
           Array [
             Object {
-              "backgroundColor": "transparent",
-              "borderWidth": 0,
-            },
-            Array [
-              Object {
-                "height": "50%",
-                "width": "50%",
-              },
-            ],
-            Object {
-              "opacity": 1,
-            },
-            Object {
-              "flex": 0,
-              "height": "50%",
-              "width": "50%",
+              "color": "#6B6B78",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "lineHeight": 16,
             },
           ]
         }
-        width="50%"
+        variant="deep"
       >
-        <RNSVGGroup
-          fill={
-            Array [
-              0,
-              4294967295,
-            ]
-          }
-          fillOpacity={1}
-          fillRule={1}
-          font={Object {}}
-          matrix={
-            Array [
-              1,
-              0,
-              0,
-              1,
-              0,
-              0,
-            ]
-          }
-          opacity={1}
-          originX={0}
-          originY={0}
-          propList={
-            Array [
-              "fill",
-            ]
-          }
-          rotation={0}
-          scaleX={1}
-          scaleY={1}
-          skewX={0}
-          skewY={0}
-          stroke={null}
-          strokeDasharray={null}
-          strokeDashoffset={null}
-          strokeLinecap={0}
-          strokeLinejoin={0}
-          strokeMiterlimit={4}
-          strokeOpacity={1}
-          strokeWidth={1}
-          vectorEffect={0}
-          x={0}
-          y={0}
-        />
-      </RNSVGSvgView>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexBasis": 0,
-            "flexGrow": 1,
-            "flexShrink": 1,
-            "marginBottom": 24,
-            "marginLeft": 16,
-          },
-        ]
-      }
-    >
-      <View
-        alignItems="center"
-        display="flex"
-        flexDirection="row"
-        justifyContent="center"
-        mb="xxxsmall"
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "marginBottom": 4,
-              "width": "100%",
-            },
-          ]
-        }
-        width="100%"
-      >
-        <Text
-          numberOfLines={1}
-          style={
-            Array [
-              Object {
-                "color": "#6B6B78",
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "lineHeight": 16,
-              },
-            ]
-          }
-          variant="deep"
-        >
-          <View
-            height="xsmall"
-            style={
-              Array [
-                Object {
-                  "height": 12,
-                  "width": 12,
-                },
-              ]
-            }
-            width="xsmall"
-          >
-            <RNSVGSvgView
-              bbHeight={12}
-              bbWidth={12}
-              fill="#6B6B78"
-              focusable={false}
-              height={12}
-              mt="2px"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                    "borderWidth": 0,
-                  },
-                  Array [
-                    Object {
-                      "height": 12,
-                      "marginTop": 2,
-                      "width": 12,
-                    },
-                  ],
-                  Object {
-                    "opacity": 1,
-                  },
-                  Object {
-                    "flex": 0,
-                    "height": 12,
-                    "width": 12,
-                  },
-                ]
-              }
-              width={12}
-            >
-              <RNSVGGroup
-                fill={
-                  Array [
-                    0,
-                    4285229944,
-                  ]
-                }
-                fillOpacity={1}
-                fillRule={1}
-                font={Object {}}
-                matrix={
-                  Array [
-                    1,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                  ]
-                }
-                opacity={1}
-                originX={0}
-                originY={0}
-                propList={
-                  Array [
-                    "fill",
-                  ]
-                }
-                rotation={0}
-                scaleX={1}
-                scaleY={1}
-                skewX={0}
-                skewY={0}
-                stroke={null}
-                strokeDasharray={null}
-                strokeDashoffset={null}
-                strokeLinecap={0}
-                strokeLinejoin={0}
-                strokeMiterlimit={4}
-                strokeOpacity={1}
-                strokeWidth={1}
-                vectorEffect={0}
-                x={0}
-                y={0}
-              />
-            </RNSVGSvgView>
-          </View>
-          <View
-            height="zero"
-            style={
-              Array [
-                Object {
-                  "height": 0,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          Attendance 01
-          <View
-            height="zero"
-            style={
-              Array [
-                Object {
-                  "height": 0,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <View
-            height="xsmall"
-            style={
-              Array [
-                Object {
-                  "height": 12,
-                  "width": 12,
-                },
-              ]
-            }
-            width="xsmall"
-          >
-            <RNSVGSvgView
-              bbHeight={12}
-              bbWidth={12}
-              fill="#6B6B78"
-              focusable={false}
-              height={12}
-              mt="2px"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                    "borderWidth": 0,
-                  },
-                  Array [
-                    Object {
-                      "height": 12,
-                      "marginTop": 2,
-                      "width": 12,
-                    },
-                  ],
-                  Object {
-                    "opacity": 1,
-                  },
-                  Object {
-                    "flex": 0,
-                    "height": 12,
-                    "width": 12,
-                  },
-                ]
-              }
-              width={12}
-            >
-              <RNSVGGroup
-                fill={
-                  Array [
-                    0,
-                    4285229944,
-                  ]
-                }
-                fillOpacity={1}
-                fillRule={1}
-                font={Object {}}
-                matrix={
-                  Array [
-                    1,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                  ]
-                }
-                opacity={1}
-                originX={0}
-                originY={0}
-                propList={
-                  Array [
-                    "fill",
-                  ]
-                }
-                rotation={0}
-                scaleX={1}
-                scaleY={1}
-                skewX={0}
-                skewY={0}
-                stroke={null}
-                strokeDasharray={null}
-                strokeDashoffset={null}
-                strokeLinecap={0}
-                strokeLinejoin={0}
-                strokeMiterlimit={4}
-                strokeOpacity={1}
-                strokeWidth={1}
-                vectorEffect={0}
-                x={0}
-                y={0}
-              />
-            </RNSVGSvgView>
-          </View>
-          <View
-            height="zero"
-            style={
-              Array [
-                Object {
-                  "height": 0,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          Attendance 02
-          <View
-            height="zero"
-            style={
-              Array [
-                Object {
-                  "height": 0,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-        </Text>
         <View
+          height="xsmall"
           style={
             Array [
               Object {
-                "alignItems": "center",
-                "display": "flex",
-                "flexDirection": "row",
-                "marginLeft": 10,
+                "height": 12,
+                "width": 12,
               },
             ]
           }
+          width="xsmall"
         >
           <RNSVGSvgView
             bbHeight={12}
@@ -437,6 +195,7 @@ exports[`<Result /> should match snapshot 1`] = `
             fill="#6B6B78"
             focusable={false}
             height={12}
+            mt="2px"
             style={
               Array [
                 Object {
@@ -446,6 +205,7 @@ exports[`<Result /> should match snapshot 1`] = `
                 Array [
                   Object {
                     "height": 12,
+                    "marginTop": 2,
                     "width": 12,
                   },
                 ],
@@ -507,452 +267,709 @@ exports[`<Result /> should match snapshot 1`] = `
               y={0}
             />
           </RNSVGSvgView>
-          <Text
-            size="xsmall"
+        </View>
+        <View
+          height="zero"
+          style={
+            Array [
+              Object {
+                "height": 0,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        Attendance 01
+        <View
+          height="zero"
+          style={
+            Array [
+              Object {
+                "height": 0,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <View
+          height="xsmall"
+          style={
+            Array [
+              Object {
+                "height": 12,
+                "width": 12,
+              },
+            ]
+          }
+          width="xsmall"
+        >
+          <RNSVGSvgView
+            bbHeight={12}
+            bbWidth={12}
+            fill="#6B6B78"
+            focusable={false}
+            height={12}
+            mt="2px"
             style={
               Array [
                 Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "500",
-                  "lineHeight": 16,
-                  "marginLeft": 4,
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Array [
+                  Object {
+                    "height": 12,
+                    "marginTop": 2,
+                    "width": 12,
+                  },
+                ],
+                Object {
+                  "opacity": 1,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 12,
+                  "width": 12,
                 },
               ]
             }
-            variant="deep"
+            width={12}
           >
-            5.0
-          </Text>
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4285229944,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
         </View>
+        <View
+          height="zero"
+          style={
+            Array [
+              Object {
+                "height": 0,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        Attendance 02
+        <View
+          height="zero"
+          style={
+            Array [
+              Object {
+                "height": 0,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "row",
+              "marginLeft": 10,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={12}
+          bbWidth={12}
+          fill="#6B6B78"
+          focusable={false}
+          height={12}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Array [
+                Object {
+                  "height": 12,
+                  "width": 12,
+                },
+              ],
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 12,
+                "width": 12,
+              },
+            ]
+          }
+          width={12}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4285229944,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          size="xsmall"
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "lineHeight": 16,
+                "marginLeft": 4,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          5.0
+        </Text>
       </View>
+    </View>
+    <Text
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+          },
+        ]
+      }
+    >
+      Jane Doe
+    </Text>
+    <Text
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 20,
+          },
+        ]
+      }
+      variant="stamina"
+    >
+      Activity
+    </Text>
+    <View
+      alignItems="center"
+      flexDirection="row"
+      mt="xxxsmall"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
       <Text
         numberOfLines={1}
         style={
           Array [
             Object {
               "color": "#231B22",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "height": 16,
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+              },
+            ]
+          }
+          variant="stamina"
+        >
+          From 7:30 am to 9:00 pm
+        </Text>
+      </Text>
+    </View>
+    <View
+      alignItems="center"
+      flexDirection="row"
+      mt="xxxsmall"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "height": 16,
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          Yoga
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginLeft": 4,
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          •
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          Meditation
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginLeft": 4,
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          •
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          Pilates
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginLeft": 4,
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          + 
+          2
+           activities
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+      </Text>
+    </View>
+    <RCTScrollView
+      horizontal={true}
+      showsHorizontalScrollIndicator={false}
+      style={
+        Array [
+          Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      <View>
+        <View
+          small={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#E0DFFF",
+                "borderColor": "#E0DFFF",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "justifyContent": "center",
+                "paddingBottom": 0,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 0,
+                "width": "auto",
+              },
+              Object {
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="informative"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 16,
+                    "fontWeight": "500",
+                  },
+                  Object {
+                    "color": "#231B22",
+                    "fontSize": 12,
+                    "fontWeight": "500",
+                    "lineHeight": 16,
+                  },
+                ]
+              }
+            >
+              Plan x Product availability
+            </Text>
+          </View>
+        </View>
+        <View
+          small={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#FCD6C3",
+                "borderColor": "#FCD6C3",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "justifyContent": "center",
+                "paddingBottom": 0,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 0,
+                "width": "auto",
+              },
+              Object {
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="attention"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 16,
+                    "fontWeight": "500",
+                  },
+                  Object {
+                    "color": "#231B22",
+                    "fontSize": 12,
+                    "fontWeight": "500",
+                    "lineHeight": 16,
+                  },
+                ]
+              }
+            >
+              Restriction
+            </Text>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        disabled={false}
+        pressed={false}
+        secondary={false}
+        style={
+          Array [
+            Object {
+              "color": "#D8385E",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
-              "lineHeight": 24,
+              "textAlign": "center",
             },
-          ]
-        }
-      >
-        Jane Doe
-      </Text>
-      <Text
-        numberOfLines={1}
-        style={
-          Array [
-            Object {
-              "color": "#231B22",
-              "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-            },
-          ]
-        }
-        variant="stamina"
-      >
-        Activity
-      </Text>
-      <View
-        alignItems="center"
-        flexDirection="row"
-        mt="xxxsmall"
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginTop": 4,
-            },
-          ]
-        }
-      >
-        <Text
-          numberOfLines={1}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "height": 16,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#231B22",
-                  "fontFamily": "Rubik",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                },
-              ]
-            }
-            variant="stamina"
-          >
-            From 7:30 am to 9:00 pm
-          </Text>
-        </Text>
-      </View>
-      <View
-        alignItems="center"
-        flexDirection="row"
-        mt="xxxsmall"
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginTop": 4,
-            },
-          ]
-        }
-      >
-        <Text
-          numberOfLines={1}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "height": 16,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            Yoga
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                  "marginLeft": 4,
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            •
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            Meditation
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                  "marginLeft": 4,
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            •
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            Pilates
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                  "marginLeft": 4,
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            + 
-            2
-             activities
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-        </Text>
-      </View>
-      <RCTScrollView
-        horizontal={true}
-        showsHorizontalScrollIndicator={false}
-        style={
-          Array [
-            Object {
-              "display": "flex",
-              "flexDirection": "row",
-              "marginTop": 8,
-            },
-          ]
-        }
-      >
-        <View>
-          <View
-            small={true}
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#E0DFFF",
-                  "borderColor": "#E0DFFF",
-                  "borderRadius": 4,
-                  "borderWidth": 1,
-                  "justifyContent": "center",
-                  "paddingBottom": 0,
-                  "paddingLeft": 4,
-                  "paddingRight": 4,
-                  "paddingTop": 0,
-                  "width": "auto",
-                },
-                Object {
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="informative"
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "justifyContent": "center",
-                  },
-                ]
-              }
-            >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "#231B22",
-                      "fontFamily": "Rubik",
-                      "fontSize": 16,
-                      "fontWeight": "500",
-                    },
-                    Object {
-                      "color": "#231B22",
-                      "fontSize": 12,
-                      "fontWeight": "500",
-                      "lineHeight": 16,
-                    },
-                  ]
-                }
-              >
-                Plan x Product availability
-              </Text>
-            </View>
-          </View>
-          <View
-            small={true}
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#FCD6C3",
-                  "borderColor": "#FCD6C3",
-                  "borderRadius": 4,
-                  "borderWidth": 1,
-                  "justifyContent": "center",
-                  "paddingBottom": 0,
-                  "paddingLeft": 4,
-                  "paddingRight": 4,
-                  "paddingTop": 0,
-                  "width": "auto",
-                },
-                Object {
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="attention"
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "justifyContent": "center",
-                  },
-                ]
-              }
-            >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "#231B22",
-                      "fontFamily": "Rubik",
-                      "fontSize": 16,
-                      "fontWeight": "500",
-                    },
-                    Object {
-                      "color": "#231B22",
-                      "fontSize": 12,
-                      "fontWeight": "500",
-                      "lineHeight": 16,
-                    },
-                  ]
-                }
-              >
-                Restriction
-              </Text>
-            </View>
-          </View>
-        </View>
-      </RCTScrollView>
-      <TouchableWithoutFeedback
-        style={
-          Array [
             Object {
               "marginRight": 32,
               "marginTop": 8,
@@ -960,37 +977,8 @@ exports[`<Result /> should match snapshot 1`] = `
           ]
         }
       >
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-            }
-          }
-        >
-          <Text
-            disabled={false}
-            pressed={false}
-            secondary={false}
-            style={
-              Array [
-                Object {
-                  "color": "#D8385E",
-                  "fontFamily": "Rubik",
-                  "fontSize": 16,
-                  "fontWeight": "500",
-                  "textAlign": "center",
-                },
-                Object {
-                  "marginRight": 32,
-                  "marginTop": 8,
-                },
-              ]
-            }
-          >
-            See Details
-          </Text>
-        </View>
-      </TouchableWithoutFeedback>
+        See Details
+      </Text>
     </View>
   </View>
 </View>
@@ -998,146 +986,167 @@ exports[`<Result /> should match snapshot 1`] = `
 
 exports[`<Result /> should match snapshot without attendence 1`] = `
 <View
-  collapsable={true}
-  pointerEvents="box-none"
+  display="flex"
+  divided={false}
+  flexDirection="row"
   style={
-    Object {
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "100%",
+      },
+    ]
   }
 >
   <View
+    alignItems="center"
+    bgColor="elements.selectionAndIcons"
+    borderRadius="small"
     display="flex"
-    divided={false}
-    flexDirection="row"
+    elevation="small"
+    height={48}
+    justifyContent="center"
+    overflow="hidden"
     style={
       Array [
         Object {
+          "alignItems": "center",
+          "backgroundColor": "#9898A6",
+          "borderRadius": 8,
           "display": "flex",
-          "flexDirection": "row",
-          "width": "100%",
+          "height": 48,
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "shadowColor": "rgba(152, 152, 166, 0.2)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 4,
+          "width": 48,
+        },
+      ]
+    }
+    width={48}
+  >
+    <RNSVGSvgView
+      bbHeight="50%"
+      bbWidth="50%"
+      fill="#FFFFFF"
+      focusable={false}
+      height="50%"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Array [
+            Object {
+              "height": "50%",
+              "width": "50%",
+            },
+          ],
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": "50%",
+            "width": "50%",
+          },
+        ]
+      }
+      width="50%"
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294967295,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "marginBottom": 24,
+          "marginLeft": 16,
         },
       ]
     }
   >
+    <Text
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+          },
+        ]
+      }
+    >
+      Gym
+    </Text>
     <View
       alignItems="center"
-      bgColor="elements.selectionAndIcons"
-      borderRadius="small"
-      display="flex"
-      elevation="small"
-      height={48}
-      justifyContent="center"
-      overflow="hidden"
+      flexDirection="row"
+      mt="xxxsmall"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#9898A6",
-            "borderRadius": 8,
-            "display": "flex",
-            "height": 48,
-            "justifyContent": "center",
-            "overflow": "hidden",
-            "shadowColor": "rgba(152, 152, 166, 0.2)",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 0,
-            },
-            "shadowOpacity": 1,
-            "shadowRadius": 4,
-            "width": 48,
-          },
-        ]
-      }
-      width={48}
-    >
-      <RNSVGSvgView
-        bbHeight="50%"
-        bbWidth="50%"
-        fill="#FFFFFF"
-        focusable={false}
-        height="50%"
-        style={
-          Array [
-            Object {
-              "backgroundColor": "transparent",
-              "borderWidth": 0,
-            },
-            Array [
-              Object {
-                "height": "50%",
-                "width": "50%",
-              },
-            ],
-            Object {
-              "opacity": 1,
-            },
-            Object {
-              "flex": 0,
-              "height": "50%",
-              "width": "50%",
-            },
-          ]
-        }
-        width="50%"
-      >
-        <RNSVGGroup
-          fill={
-            Array [
-              0,
-              4294967295,
-            ]
-          }
-          fillOpacity={1}
-          fillRule={1}
-          font={Object {}}
-          matrix={
-            Array [
-              1,
-              0,
-              0,
-              1,
-              0,
-              0,
-            ]
-          }
-          opacity={1}
-          originX={0}
-          originY={0}
-          propList={
-            Array [
-              "fill",
-            ]
-          }
-          rotation={0}
-          scaleX={1}
-          scaleY={1}
-          skewX={0}
-          skewY={0}
-          stroke={null}
-          strokeDasharray={null}
-          strokeDashoffset={null}
-          strokeLinecap={0}
-          strokeLinejoin={0}
-          strokeMiterlimit={4}
-          strokeOpacity={1}
-          strokeWidth={1}
-          vectorEffect={0}
-          x={0}
-          y={0}
-        />
-      </RNSVGSvgView>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexBasis": 0,
-            "flexGrow": 1,
-            "flexShrink": 1,
-            "marginBottom": 24,
-            "marginLeft": 16,
+            "flexDirection": "row",
+            "marginTop": 4,
           },
         ]
       }
@@ -1148,530 +1157,73 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
           Array [
             Object {
               "color": "#231B22",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
               "fontFamily": "Rubik",
-              "fontSize": 16,
-              "fontWeight": "500",
-              "lineHeight": 24,
+              "fontSize": 12,
+              "fontWeight": "400",
+              "height": 16,
+              "lineHeight": 16,
             },
           ]
         }
       >
-        Gym
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+          variant="stamina"
+        >
+          From 7:30 am to 9:00 pm
+        </Text>
       </Text>
-      <View
-        alignItems="center"
-        flexDirection="row"
-        mt="xxxsmall"
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginTop": 4,
-            },
-          ]
-        }
-      >
-        <Text
-          numberOfLines={1}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "height": 16,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#231B22",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                },
-              ]
-            }
-            variant="stamina"
-          >
-            From 7:30 am to 9:00 pm
-          </Text>
-        </Text>
-      </View>
-      <View
-        alignItems="center"
-        flexDirection="row"
-        mt="xxxsmall"
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginTop": 4,
-            },
-          ]
-        }
-      >
-        <Text
-          numberOfLines={1}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "height": 16,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            Yoga
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                  "marginLeft": 4,
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            •
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            Meditation
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                  "marginLeft": 4,
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            •
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            Pilates
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                  "marginLeft": 4,
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            •
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            Activity4
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                  "marginLeft": 4,
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            •
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            Activity5
-          </Text>
-        </Text>
-      </View>
     </View>
-  </View>
-</View>
-`;
-
-exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
-<View
-  collapsable={true}
-  pointerEvents="box-none"
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    display="flex"
-    divided={true}
-    flexDirection="row"
-    style={
-      Array [
-        Object {
-          "borderBottomColor": "#D7D7E0",
-          "borderBottomWidth": 1,
-          "display": "flex",
-          "flexDirection": "row",
-          "width": "100%",
-        },
-      ]
-    }
-  >
     <View
       alignItems="center"
-      bgColor="elements.selectionAndIcons"
-      borderRadius="circle"
-      display="flex"
-      elevation="small"
-      height={48}
-      justifyContent="center"
-      overflow="hidden"
+      flexDirection="row"
+      mt="xxxsmall"
       style={
         Array [
           Object {
             "alignItems": "center",
-            "backgroundColor": "#9898A6",
-            "borderRadius": 9999,
-            "display": "flex",
-            "height": 48,
-            "justifyContent": "center",
-            "overflow": "hidden",
-            "shadowColor": "rgba(152, 152, 166, 0.2)",
-            "shadowOffset": Object {
-              "height": 2,
-              "width": 0,
-            },
-            "shadowOpacity": 1,
-            "shadowRadius": 4,
-            "width": 48,
-          },
-        ]
-      }
-      width={48}
-    >
-      <RNSVGSvgView
-        bbHeight="50%"
-        bbWidth="50%"
-        fill="#FFFFFF"
-        focusable={false}
-        height="50%"
-        style={
-          Array [
-            Object {
-              "backgroundColor": "transparent",
-              "borderWidth": 0,
-            },
-            Array [
-              Object {
-                "height": "50%",
-                "width": "50%",
-              },
-            ],
-            Object {
-              "opacity": 1,
-            },
-            Object {
-              "flex": 0,
-              "height": "50%",
-              "width": "50%",
-            },
-          ]
-        }
-        width="50%"
-      >
-        <RNSVGGroup
-          fill={
-            Array [
-              0,
-              4294967295,
-            ]
-          }
-          fillOpacity={1}
-          fillRule={1}
-          font={Object {}}
-          matrix={
-            Array [
-              1,
-              0,
-              0,
-              1,
-              0,
-              0,
-            ]
-          }
-          opacity={1}
-          originX={0}
-          originY={0}
-          propList={
-            Array [
-              "fill",
-            ]
-          }
-          rotation={0}
-          scaleX={1}
-          scaleY={1}
-          skewX={0}
-          skewY={0}
-          stroke={null}
-          strokeDasharray={null}
-          strokeDashoffset={null}
-          strokeLinecap={0}
-          strokeLinejoin={0}
-          strokeMiterlimit={4}
-          strokeOpacity={1}
-          strokeWidth={1}
-          vectorEffect={0}
-          x={0}
-          y={0}
-        />
-      </RNSVGSvgView>
-    </View>
-    <View
-      style={
-        Array [
-          Object {
-            "flexBasis": 0,
-            "flexGrow": 1,
-            "flexShrink": 1,
-            "marginBottom": 24,
-            "marginLeft": 16,
+            "flexDirection": "row",
+            "marginTop": 4,
           },
         ]
       }
     >
-      <View
-        alignItems="center"
-        display="flex"
-        flexDirection="row"
-        justifyContent="center"
-        mb="xxxsmall"
+      <Text
+        numberOfLines={1}
         style={
           Array [
             Object {
-              "alignItems": "center",
-              "display": "flex",
-              "flexDirection": "row",
-              "justifyContent": "center",
-              "marginBottom": 4,
-              "width": "100%",
+              "color": "#231B22",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "height": 16,
+              "lineHeight": 16,
             },
           ]
         }
-        width="100%"
       >
         <Text
-          numberOfLines={1}
           style={
             Array [
               Object {
                 "color": "#6B6B78",
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
                 "fontFamily": "Rubik",
                 "fontSize": 12,
                 "fontWeight": "400",
@@ -1681,250 +1233,434 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
           }
           variant="deep"
         >
-          <View
-            height="xsmall"
-            style={
-              Array [
-                Object {
-                  "height": 12,
-                  "width": 12,
-                },
-              ]
-            }
-            width="xsmall"
-          >
-            <RNSVGSvgView
-              bbHeight={12}
-              bbWidth={12}
-              fill="#6B6B78"
-              focusable={false}
-              height={12}
-              mt="2px"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                    "borderWidth": 0,
-                  },
-                  Array [
-                    Object {
-                      "height": 12,
-                      "marginTop": 2,
-                      "width": 12,
-                    },
-                  ],
-                  Object {
-                    "opacity": 1,
-                  },
-                  Object {
-                    "flex": 0,
-                    "height": 12,
-                    "width": 12,
-                  },
-                ]
-              }
-              width={12}
-            >
-              <RNSVGGroup
-                fill={
-                  Array [
-                    0,
-                    4285229944,
-                  ]
-                }
-                fillOpacity={1}
-                fillRule={1}
-                font={Object {}}
-                matrix={
-                  Array [
-                    1,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                  ]
-                }
-                opacity={1}
-                originX={0}
-                originY={0}
-                propList={
-                  Array [
-                    "fill",
-                  ]
-                }
-                rotation={0}
-                scaleX={1}
-                scaleY={1}
-                skewX={0}
-                skewY={0}
-                stroke={null}
-                strokeDasharray={null}
-                strokeDashoffset={null}
-                strokeLinecap={0}
-                strokeLinejoin={0}
-                strokeMiterlimit={4}
-                strokeOpacity={1}
-                strokeWidth={1}
-                vectorEffect={0}
-                x={0}
-                y={0}
-              />
-            </RNSVGSvgView>
-          </View>
-          <View
-            height="zero"
-            style={
-              Array [
-                Object {
-                  "height": 0,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          Attendance 01
-          <View
-            height="zero"
-            style={
-              Array [
-                Object {
-                  "height": 0,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <View
-            height="xsmall"
-            style={
-              Array [
-                Object {
-                  "height": 12,
-                  "width": 12,
-                },
-              ]
-            }
-            width="xsmall"
-          >
-            <RNSVGSvgView
-              bbHeight={12}
-              bbWidth={12}
-              fill="#6B6B78"
-              focusable={false}
-              height={12}
-              mt="2px"
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                    "borderWidth": 0,
-                  },
-                  Array [
-                    Object {
-                      "height": 12,
-                      "marginTop": 2,
-                      "width": 12,
-                    },
-                  ],
-                  Object {
-                    "opacity": 1,
-                  },
-                  Object {
-                    "flex": 0,
-                    "height": 12,
-                    "width": 12,
-                  },
-                ]
-              }
-              width={12}
-            >
-              <RNSVGGroup
-                fill={
-                  Array [
-                    0,
-                    4285229944,
-                  ]
-                }
-                fillOpacity={1}
-                fillRule={1}
-                font={Object {}}
-                matrix={
-                  Array [
-                    1,
-                    0,
-                    0,
-                    1,
-                    0,
-                    0,
-                  ]
-                }
-                opacity={1}
-                originX={0}
-                originY={0}
-                propList={
-                  Array [
-                    "fill",
-                  ]
-                }
-                rotation={0}
-                scaleX={1}
-                scaleY={1}
-                skewX={0}
-                skewY={0}
-                stroke={null}
-                strokeDasharray={null}
-                strokeDashoffset={null}
-                strokeLinecap={0}
-                strokeLinejoin={0}
-                strokeMiterlimit={4}
-                strokeOpacity={1}
-                strokeWidth={1}
-                vectorEffect={0}
-                x={0}
-                y={0}
-              />
-            </RNSVGSvgView>
-          </View>
-          <View
-            height="zero"
-            style={
-              Array [
-                Object {
-                  "height": 0,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          Attendance 02
-          <View
-            height="zero"
-            style={
-              Array [
-                Object {
-                  "height": 0,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
+          Yoga
         </Text>
         <View
+          height="xxxsmall"
           style={
             Array [
               Object {
-                "alignItems": "center",
-                "display": "flex",
-                "flexDirection": "row",
-                "marginLeft": 10,
+                "height": 4,
+                "width": 4,
               },
             ]
           }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginLeft": 4,
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          •
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          Meditation
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginLeft": 4,
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          •
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          Pilates
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginLeft": 4,
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          •
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          Activity4
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginLeft": 4,
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          •
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          Activity5
+        </Text>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
+<View
+  display="flex"
+  divided={true}
+  flexDirection="row"
+  style={
+    Array [
+      Object {
+        "borderBottomColor": "#D7D7E0",
+        "borderBottomWidth": 1,
+        "display": "flex",
+        "flexDirection": "row",
+        "width": "100%",
+      },
+    ]
+  }
+>
+  <View
+    alignItems="center"
+    bgColor="elements.selectionAndIcons"
+    borderRadius="circle"
+    display="flex"
+    elevation="small"
+    height={48}
+    justifyContent="center"
+    overflow="hidden"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#9898A6",
+          "borderRadius": 9999,
+          "display": "flex",
+          "height": 48,
+          "justifyContent": "center",
+          "overflow": "hidden",
+          "shadowColor": "rgba(152, 152, 166, 0.2)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 4,
+          "width": 48,
+        },
+      ]
+    }
+    width={48}
+  >
+    <RNSVGSvgView
+      bbHeight="50%"
+      bbWidth="50%"
+      fill="#FFFFFF"
+      focusable={false}
+      height="50%"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Array [
+            Object {
+              "height": "50%",
+              "width": "50%",
+            },
+          ],
+          Object {
+            "opacity": 1,
+          },
+          Object {
+            "flex": 0,
+            "height": "50%",
+            "width": "50%",
+          },
+        ]
+      }
+      width="50%"
+    >
+      <RNSVGGroup
+        fill={
+          Array [
+            0,
+            4294967295,
+          ]
+        }
+        fillOpacity={1}
+        fillRule={1}
+        font={Object {}}
+        matrix={
+          Array [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+          ]
+        }
+        opacity={1}
+        originX={0}
+        originY={0}
+        propList={
+          Array [
+            "fill",
+          ]
+        }
+        rotation={0}
+        scaleX={1}
+        scaleY={1}
+        skewX={0}
+        skewY={0}
+        stroke={null}
+        strokeDasharray={null}
+        strokeDashoffset={null}
+        strokeLinecap={0}
+        strokeLinejoin={0}
+        strokeMiterlimit={4}
+        strokeOpacity={1}
+        strokeWidth={1}
+        vectorEffect={0}
+        x={0}
+        y={0}
+      />
+    </RNSVGSvgView>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "marginBottom": 24,
+          "marginLeft": 16,
+        },
+      ]
+    }
+  >
+    <View
+      alignItems="center"
+      display="flex"
+      flexDirection="row"
+      justifyContent="center"
+      mb="xxxsmall"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginBottom": 4,
+            "width": "100%",
+          },
+        ]
+      }
+      width="100%"
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "color": "#6B6B78",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "lineHeight": 16,
+            },
+          ]
+        }
+        variant="deep"
+      >
+        <View
+          height="xsmall"
+          style={
+            Array [
+              Object {
+                "height": 12,
+                "width": 12,
+              },
+            ]
+          }
+          width="xsmall"
         >
           <RNSVGSvgView
             bbHeight={12}
@@ -1932,6 +1668,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
             fill="#6B6B78"
             focusable={false}
             height={12}
+            mt="2px"
             style={
               Array [
                 Object {
@@ -1941,6 +1678,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
                 Array [
                   Object {
                     "height": 12,
+                    "marginTop": 2,
                     "width": 12,
                   },
                 ],
@@ -2002,393 +1740,650 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               y={0}
             />
           </RNSVGSvgView>
-          <Text
-            size="xsmall"
+        </View>
+        <View
+          height="zero"
+          style={
+            Array [
+              Object {
+                "height": 0,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        Attendance 01
+        <View
+          height="zero"
+          style={
+            Array [
+              Object {
+                "height": 0,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <View
+          height="xsmall"
+          style={
+            Array [
+              Object {
+                "height": 12,
+                "width": 12,
+              },
+            ]
+          }
+          width="xsmall"
+        >
+          <RNSVGSvgView
+            bbHeight={12}
+            bbWidth={12}
+            fill="#6B6B78"
+            focusable={false}
+            height={12}
+            mt="2px"
             style={
               Array [
                 Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "500",
-                  "lineHeight": 16,
-                  "marginLeft": 4,
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Array [
+                  Object {
+                    "height": 12,
+                    "marginTop": 2,
+                    "width": 12,
+                  },
+                ],
+                Object {
+                  "opacity": 1,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 12,
+                  "width": 12,
                 },
               ]
             }
-            variant="deep"
+            width={12}
           >
-            5.0
-          </Text>
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  4285229944,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            />
+          </RNSVGSvgView>
         </View>
+        <View
+          height="zero"
+          style={
+            Array [
+              Object {
+                "height": 0,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        Attendance 02
+        <View
+          height="zero"
+          style={
+            Array [
+              Object {
+                "height": 0,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "row",
+              "marginLeft": 10,
+            },
+          ]
+        }
+      >
+        <RNSVGSvgView
+          bbHeight={12}
+          bbWidth={12}
+          fill="#6B6B78"
+          focusable={false}
+          height={12}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Array [
+                Object {
+                  "height": 12,
+                  "width": 12,
+                },
+              ],
+              Object {
+                "opacity": 1,
+              },
+              Object {
+                "flex": 0,
+                "height": 12,
+                "width": 12,
+              },
+            ]
+          }
+          width={12}
+        >
+          <RNSVGGroup
+            fill={
+              Array [
+                0,
+                4285229944,
+              ]
+            }
+            fillOpacity={1}
+            fillRule={1}
+            font={Object {}}
+            matrix={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+            opacity={1}
+            originX={0}
+            originY={0}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+            rotation={0}
+            scaleX={1}
+            scaleY={1}
+            skewX={0}
+            skewY={0}
+            stroke={null}
+            strokeDasharray={null}
+            strokeDashoffset={null}
+            strokeLinecap={0}
+            strokeLinejoin={0}
+            strokeMiterlimit={4}
+            strokeOpacity={1}
+            strokeWidth={1}
+            vectorEffect={0}
+            x={0}
+            y={0}
+          />
+        </RNSVGSvgView>
+        <Text
+          size="xsmall"
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "500",
+                "lineHeight": 16,
+                "marginLeft": 4,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          5.0
+        </Text>
       </View>
+    </View>
+    <Text
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 16,
+            "fontWeight": "500",
+            "lineHeight": 24,
+          },
+        ]
+      }
+    >
+      John Doe
+    </Text>
+    <Text
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "color": "#231B22",
+            "fontFamily": "Rubik",
+            "fontSize": 14,
+            "fontWeight": "400",
+            "lineHeight": 20,
+          },
+        ]
+      }
+      variant="stamina"
+    >
+      Activity
+    </Text>
+    <View
+      alignItems="center"
+      flexDirection="row"
+      mt="xxxsmall"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
       <Text
         numberOfLines={1}
         style={
           Array [
             Object {
               "color": "#231B22",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "height": 16,
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#231B22",
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+              },
+            ]
+          }
+          variant="stamina"
+        >
+          From 7:30 am to 9:00 pm
+        </Text>
+      </Text>
+    </View>
+    <View
+      alignItems="center"
+      flexDirection="row"
+      mt="xxxsmall"
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "marginTop": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "flexBasis": 0,
+              "flexGrow": 1,
+              "flexShrink": 1,
+              "fontFamily": "Rubik",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "height": 16,
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          Yoga
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginLeft": 4,
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          •
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 20,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          Meditation
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#6B6B78",
+                "fontFamily": "Rubik",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 16,
+                "marginLeft": 4,
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="deep"
+        >
+          + 
+          3
+        </Text>
+        <View
+          height="xxxsmall"
+          style={
+            Array [
+              Object {
+                "height": 4,
+                "width": 4,
+              },
+            ]
+          }
+          width="xxxsmall"
+        />
+      </Text>
+    </View>
+    <RCTScrollView
+      horizontal={true}
+      showsHorizontalScrollIndicator={false}
+      style={
+        Array [
+          Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      <View>
+        <View
+          small={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#E0DFFF",
+                "borderColor": "#E0DFFF",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "justifyContent": "center",
+                "paddingBottom": 0,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 0,
+                "width": "auto",
+              },
+              Object {
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="informative"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 16,
+                    "fontWeight": "500",
+                  },
+                  Object {
+                    "color": "#231B22",
+                    "fontSize": 12,
+                    "fontWeight": "500",
+                    "lineHeight": 16,
+                  },
+                ]
+              }
+            >
+              Plan x Product availability
+            </Text>
+          </View>
+        </View>
+        <View
+          small={true}
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#FCD6C3",
+                "borderColor": "#FCD6C3",
+                "borderRadius": 4,
+                "borderWidth": 1,
+                "justifyContent": "center",
+                "paddingBottom": 0,
+                "paddingLeft": 4,
+                "paddingRight": 4,
+                "paddingTop": 0,
+                "width": "auto",
+              },
+              Object {
+                "marginRight": 4,
+              },
+            ]
+          }
+          variant="attention"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                },
+              ]
+            }
+          >
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "#231B22",
+                    "fontFamily": "Rubik",
+                    "fontSize": 16,
+                    "fontWeight": "500",
+                  },
+                  Object {
+                    "color": "#231B22",
+                    "fontSize": 12,
+                    "fontWeight": "500",
+                    "lineHeight": 16,
+                  },
+                ]
+              }
+            >
+              Restriction
+            </Text>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        disabled={false}
+        pressed={false}
+        secondary={false}
+        style={
+          Array [
+            Object {
+              "color": "#D8385E",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
-              "lineHeight": 24,
+              "textAlign": "center",
             },
-          ]
-        }
-      >
-        John Doe
-      </Text>
-      <Text
-        numberOfLines={1}
-        style={
-          Array [
-            Object {
-              "color": "#231B22",
-              "fontFamily": "Rubik",
-              "fontSize": 14,
-              "fontWeight": "400",
-              "lineHeight": 20,
-            },
-          ]
-        }
-        variant="stamina"
-      >
-        Activity
-      </Text>
-      <View
-        alignItems="center"
-        flexDirection="row"
-        mt="xxxsmall"
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginTop": 4,
-            },
-          ]
-        }
-      >
-        <Text
-          numberOfLines={1}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "height": 16,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#231B22",
-                  "fontFamily": "Rubik",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                },
-              ]
-            }
-            variant="stamina"
-          >
-            From 7:30 am to 9:00 pm
-          </Text>
-        </Text>
-      </View>
-      <View
-        alignItems="center"
-        flexDirection="row"
-        mt="xxxsmall"
-        style={
-          Array [
-            Object {
-              "alignItems": "center",
-              "flexDirection": "row",
-              "marginTop": 4,
-            },
-          ]
-        }
-      >
-        <Text
-          numberOfLines={1}
-          style={
-            Array [
-              Object {
-                "color": "#231B22",
-                "flexBasis": 0,
-                "flexGrow": 1,
-                "flexShrink": 1,
-                "fontFamily": "Rubik",
-                "fontSize": 12,
-                "fontWeight": "400",
-                "height": 16,
-                "lineHeight": 16,
-              },
-            ]
-          }
-        >
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            Yoga
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                  "marginLeft": 4,
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            •
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 14,
-                  "fontWeight": "400",
-                  "lineHeight": 20,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            Meditation
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-          <Text
-            style={
-              Array [
-                Object {
-                  "color": "#6B6B78",
-                  "fontFamily": "Rubik",
-                  "fontSize": 12,
-                  "fontWeight": "400",
-                  "lineHeight": 16,
-                  "marginLeft": 4,
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="deep"
-          >
-            + 
-            3
-          </Text>
-          <View
-            height="xxxsmall"
-            style={
-              Array [
-                Object {
-                  "height": 4,
-                  "width": 4,
-                },
-              ]
-            }
-            width="xxxsmall"
-          />
-        </Text>
-      </View>
-      <RCTScrollView
-        horizontal={true}
-        showsHorizontalScrollIndicator={false}
-        style={
-          Array [
-            Object {
-              "display": "flex",
-              "flexDirection": "row",
-              "marginTop": 8,
-            },
-          ]
-        }
-      >
-        <View>
-          <View
-            small={true}
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#E0DFFF",
-                  "borderColor": "#E0DFFF",
-                  "borderRadius": 4,
-                  "borderWidth": 1,
-                  "justifyContent": "center",
-                  "paddingBottom": 0,
-                  "paddingLeft": 4,
-                  "paddingRight": 4,
-                  "paddingTop": 0,
-                  "width": "auto",
-                },
-                Object {
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="informative"
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "justifyContent": "center",
-                  },
-                ]
-              }
-            >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "#231B22",
-                      "fontFamily": "Rubik",
-                      "fontSize": 16,
-                      "fontWeight": "500",
-                    },
-                    Object {
-                      "color": "#231B22",
-                      "fontSize": 12,
-                      "fontWeight": "500",
-                      "lineHeight": 16,
-                    },
-                  ]
-                }
-              >
-                Plan x Product availability
-              </Text>
-            </View>
-          </View>
-          <View
-            small={true}
-            style={
-              Array [
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#FCD6C3",
-                  "borderColor": "#FCD6C3",
-                  "borderRadius": 4,
-                  "borderWidth": 1,
-                  "justifyContent": "center",
-                  "paddingBottom": 0,
-                  "paddingLeft": 4,
-                  "paddingRight": 4,
-                  "paddingTop": 0,
-                  "width": "auto",
-                },
-                Object {
-                  "marginRight": 4,
-                },
-              ]
-            }
-            variant="attention"
-          >
-            <View
-              style={
-                Array [
-                  Object {
-                    "alignItems": "center",
-                    "flexDirection": "row",
-                    "justifyContent": "center",
-                  },
-                ]
-              }
-            >
-              <Text
-                style={
-                  Array [
-                    Object {
-                      "color": "#231B22",
-                      "fontFamily": "Rubik",
-                      "fontSize": 16,
-                      "fontWeight": "500",
-                    },
-                    Object {
-                      "color": "#231B22",
-                      "fontSize": 12,
-                      "fontWeight": "500",
-                      "lineHeight": 16,
-                    },
-                  ]
-                }
-              >
-                Restriction
-              </Text>
-            </View>
-          </View>
-        </View>
-      </RCTScrollView>
-      <TouchableWithoutFeedback
-        style={
-          Array [
             Object {
               "marginRight": 32,
               "marginTop": 8,
@@ -2396,37 +2391,8 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
           ]
         }
       >
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-            }
-          }
-        >
-          <Text
-            disabled={false}
-            pressed={false}
-            secondary={false}
-            style={
-              Array [
-                Object {
-                  "color": "#D8385E",
-                  "fontFamily": "Rubik",
-                  "fontSize": 16,
-                  "fontWeight": "500",
-                  "textAlign": "center",
-                },
-                Object {
-                  "marginRight": 32,
-                  "marginTop": 8,
-                },
-              ]
-            }
-          >
-            See Details
-          </Text>
-        </View>
-      </TouchableWithoutFeedback>
+        See Details
+      </Text>
     </View>
   </View>
 </View>

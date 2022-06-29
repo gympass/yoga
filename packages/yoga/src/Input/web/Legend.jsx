@@ -39,11 +39,11 @@ const HiddenSpan = styled.span`
   `}
 `;
 
-const Legend = ({ children, ...props }) => (
-  <StyledLegend {...props}>
+const Legend = React.forwardRef(({ children, ...props }, ref) => (
+  <StyledLegend ref={ref} {...props}>
     <HiddenSpan>{children}</HiddenSpan>
   </StyledLegend>
-);
+));
 
 Legend.propTypes = {
   children: node.isRequired,

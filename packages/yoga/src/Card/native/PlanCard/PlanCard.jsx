@@ -9,7 +9,7 @@ import Card from '../Card';
 export const PLAN_LINE_HEIGHT = 8;
 
 const Plan = styled(Card)`
-  max-width: 288px;
+  max-width: 312px;
   width: 100%;
   position: relative;
 

@@ -73,6 +73,8 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -114,8 +116,8 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   border-color: #D7D7E0;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -297,6 +299,8 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -338,8 +342,8 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   border-color: #D7D7E0;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -521,6 +525,8 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -583,8 +589,8 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   border-color: #231B22;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
@@ -897,6 +903,8 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
 .c3:disabled {
   cursor: not-allowed;
   color: #D7D7E0;
+  -webkit-text-fill-color: #D7D7E0;
+  opacity: 1;
 }
 
 .c3::-webkit-input-placeholder {
@@ -959,8 +967,8 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   border-color: #231B22;
 }
 
-.c2:hover,
-.c2:focus-within {
+.c2:hover:not(:disabled),
+.c2:focus-within:not(:disabled) {
   border-color: #231B22;
 }
 
