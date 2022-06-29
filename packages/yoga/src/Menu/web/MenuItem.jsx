@@ -102,8 +102,6 @@ const MenuItem = forwardRef(
 MenuItem.propTypes = {
   /** The icon of menu item */
   icon: oneOfType([node, func]),
-
-  /** The children necessary */
   children: node.isRequired,
   href: string,
   disabled: bool,

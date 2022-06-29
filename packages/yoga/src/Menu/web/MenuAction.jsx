@@ -7,7 +7,6 @@ const MenuAction = ({ children }) => (
 );
 
 MenuAction.propTypes = {
-  /** The children necessary */
   children: node.isRequired,
 };
 
