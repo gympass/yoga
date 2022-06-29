@@ -383,6 +383,18 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "lguilhermecardoso",
+      "name": "Guilherme Cardoso",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15979107?v=4",
+      "profile": "https://www.linkedin.com/in/lguilhermecardoso/",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
