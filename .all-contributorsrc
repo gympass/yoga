@@ -383,11 +383,20 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "lguilhermecardoso",
+      "name": "Luis Guilherme Cardoso Rosa",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15979107?v=4",
+      "profile": "http://guilhermecardoso.dev.br",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
   "projectName": "yoga",
-  "projectOwner": "Gympass",
+  "projectOwner": "gympass",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true
