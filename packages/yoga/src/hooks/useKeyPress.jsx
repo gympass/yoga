@@ -18,8 +18,8 @@ export const useKeyPress = targetKey => {
     window.addEventListener('keyup', upHandler);
 
     return () => {
-      window.removeEventListener('keydown');
-      window.removeEventListener('keyup');
+      window.removeEventListener('keydown', downHandler);
+      window.removeEventListener('keyup', upHandler);
     };
   }, [targetKey]);
 

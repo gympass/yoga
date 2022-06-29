@@ -41,7 +41,6 @@ const MenuList = forwardRef(({ children, align }, ref) => {
 });
 
 MenuList.propTypes = {
-  /** The children necessary */
   children: node.isRequired,
   /** Align Menu is a alignement that menu will appear on the screen | start | center | end   */
   align: string,
