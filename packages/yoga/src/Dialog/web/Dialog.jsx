@@ -109,7 +109,6 @@ Dialog.propTypes = {
   /** Function to close the dialog. */
   onClose: func,
 
-  /** The children necessary */
   children: node.isRequired,
 };
 

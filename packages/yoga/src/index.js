@@ -29,6 +29,7 @@ import BottomSheet from './BottomSheet';
 import Dialog from './Dialog';
 import Divider from './Divider';
 import Header from './Header';
+import Menu from './Menu';
 import Banner from './Banner';
 import Heading from './Heading';
 import Feedback from './Feedback';
@@ -69,6 +70,7 @@ export {
   Dialog,
   Divider,
   Header,
+  Menu,
   Banner,
   Heading,
   Feedback,

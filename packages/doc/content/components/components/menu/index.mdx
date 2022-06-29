@@ -1,0 +1,181 @@
+---
+title: 'Menu'
+metaTitle: 'Menu'
+metaDescription: 'Menu Component'
+---
+
+import { Link as GatsbyLink } from 'gatsby';
+
+# Menu
+
+## Reference
+
+Gympass `<Menu />` displays a menu to the user—such as a set of actions or functions—triggered by a <GatsbyLink to="/components/button/default">Button</GatsbyLink> 
+ or <GatsbyLink to="/components/avatar">Avatar</GatsbyLink> 
+ component.
+
+- `<Menu.Action />`
+- `<Menu.List />`
+- `<Menu.Item />`
+
+## Features
+
+- Full keyboard navigation.
+- Support on MouseHouver
+- Support to align Menu.List
+- Can be active or disabled Menu.Item.
+- Active is managed.
+- Icon support on Menu.Item
+
+## Usage
+
+### Menu basic usage
+
+```javascript
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu>
+    <Menu.Action>
+      <Avatar>
+        <Text color="white">YG</Text>
+      </Avatar>    
+    </Menu.Action>
+    <Menu.List>
+      <Menu.Item>
+        My Account
+      </Menu.Item>
+      <Menu.Item>
+        Logout
+      </Menu.Item>
+    </Menu.List>  
+  </Menu>  
+</Box>
+```
+
+### Menu basic usage with a click option
+
+```javascript
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu onMouseHover={false}>
+    <Menu.Action>
+      <Button.Text>Click to open menu</Button.Text>
+    </Menu.Action>
+    <Menu.List>
+      <Menu.Item>
+        My Account
+      </Menu.Item>
+      <Menu.Item>
+        Logout
+      </Menu.Item>
+    </Menu.List>  
+  </Menu>  
+</Box>
+```
+
+### Menu with icon and active prop
+
+```javascript
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu>
+    <Menu.Action>
+      <Button.Icon icon={FlagUS} inverted />
+    </Menu.Action>
+    <Menu.List>
+      <Menu.Item icon={FlagBrazil}>
+        Brazil
+      </Menu.Item>
+      <Menu.Item icon={FlagUS} active>
+        USA
+      </Menu.Item>
+      <Menu.Item icon={FlagPortugal}>
+        Portugal
+      </Menu.Item>
+    </Menu.List>  
+  </Menu>  
+</Box>
+```
+
+### Menu with align align: 'start | center | end'
+
+```javascript
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu>
+    <Menu.Action>
+      <Button.Icon icon={Home} />
+    </Menu.Action>
+  <Menu.List align="end">
+    <Menu.Item>
+      Item 1
+    </Menu.Item>
+    <Menu.Item>
+      Item 2
+    </Menu.Item>
+    <Menu.Item>
+      Item 3
+    </Menu.Item>
+  </Menu.List>  
+  </Menu>  
+</Box>
+```
+
+### Menu with disabled prop
+
+```javascript
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu>
+    <Menu.Action>
+        <Button.Text>Hover to open menu</Button.Text>
+    </Menu.Action>
+    <Menu.List>
+      <Menu.Item>
+        one
+      </Menu.Item>
+      <Menu.Item>
+        two
+      </Menu.Item>
+      <Menu.Item disabled>
+        three
+      </Menu.Item>
+    </Menu.List>  
+  </Menu>  
+</Box>
+```
+### Menu with href prop
+
+```javascript
+<Box display="flex" flexDirection="column" alignItems="center">
+  <Menu>
+    <Menu.Action>
+      <Button.Icon icon={Home} />
+    </Menu.Action>
+  <Menu.List>
+    <Menu.Item href="https://www.google.com" target="blank">
+      Google
+    </Menu.Item>
+    <Menu.Item href="https://www.gympass.com" target="blank">
+      Gympass
+    </Menu.Item>
+    <Menu.Item href="https://gympass.github.io/yoga/" target="blank">
+      Yoga
+    </Menu.Item>
+  </Menu.List>  
+  </Menu>  
+</Box>
+```
+
+### Props
+
+#### Menu
+
+<PropsTable component="Menu" platform="web" />
+
+#### Menu.Action
+
+<PropsTable component="Menu.Action" platform="web" />
+
+#### Menu.List
+
+<PropsTable component="Menu.List" platform="web" />
+
+#### Menu.Item
+
+<PropsTable component="Menu.Item" platform="web" />
