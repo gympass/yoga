@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.41.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.40.4...@gympass/yoga@7.41.0) (2022-06-29)
+
+
+### Bug Fixes
+
+* comments on PR ([11ac6e5](https://github.com/Gympass/yoga/commit/11ac6e5cac4a55f51d236936ef9f944f5c7acdcf))
+* **dropdownmenu:** pr comments ([f88e2e6](https://github.com/Gympass/yoga/commit/f88e2e6d0c277ef89b6a3ae7b73ecd949e3fe33c))
+
+
+### Features
+
+* **menu:** develop a Menu and MenuItem component ([749401b](https://github.com/Gympass/yoga/commit/749401bc1d8acbafa04b1a8ec3c7a712775147e7))
+* **menu:** start develop a menu component ([22ee5ec](https://github.com/Gympass/yoga/commit/22ee5eccb9de1fd61c95062c4180127f329b7536))
+* **menu:** start implement custom hook on key press menu ([4fb72f0](https://github.com/Gympass/yoga/commit/4fb72f03aa8ea60dfeb17add18fd14111183f632))
+
+
+
+
+
 ## [7.40.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.40.3...@gympass/yoga@7.40.4) (2022-06-28)
 
 **Note:** Version bump only for package @gympass/yoga

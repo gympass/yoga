@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.21.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.20.7...@gympass/yoga-doc@2.21.0) (2022-06-29)
+
+
+### Features
+
+* **menu:** develop a Menu and MenuItem component ([749401b](https://github.com/gympass/yoga/commit/749401bc1d8acbafa04b1a8ec3c7a712775147e7))
+* **menu:** start develop a menu component ([22ee5ec](https://github.com/gympass/yoga/commit/22ee5eccb9de1fd61c95062c4180127f329b7536))
+
+
+
+
+
 ## [2.20.7](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.20.6...@gympass/yoga-doc@2.20.7) (2022-06-28)
 
 **Note:** Version bump only for package @gympass/yoga-doc
