@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Heading /> should match snapshot with all components 1`] = `
-.c3 {
+.c4 {
   width: 100%;
   text-align: center;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,7 +17,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c3 {
   width: 24px;
   height: 24px;
 }
@@ -114,7 +114,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   transition: fill 0.2s;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -125,9 +125,9 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 16px;
+  padding: 16px 20px;
   width: 100%;
-  min-height: 48px;
+  min-height: 56px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -142,6 +142,20 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   align-items: center;
 }
 
+.c2 {
+  width: 24px;
+  height: 24px;
+}
+
+.c7 {
+  width: 24px;
+  height: 24px;
+}
+
+.c7:not(:last-of-type) {
+  margin-right: 20px;
+}
+
 @media (min-width:769px) {
   .c0 {
     padding: 16px 72px;
@@ -153,32 +167,32 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
     class="c0"
   >
     <button
-      class="c1"
+      class="c1 c2"
     >
       <svg
-        class="c2"
+        class="c3"
         height="24"
         width="24"
       />
     </button>
     <div
-      class="c3"
+      class="c4"
     >
       <h1
-        class="c4"
+        class="c5"
       >
         Gympass
       </h1>
     </div>
     <div
-      class="c5"
+      class="c6"
       display="flex"
     >
       <button
-        class="c1"
+        class="c1 c7"
       >
         <svg
-          class="c2"
+          class="c3"
           height="24"
           width="24"
         />
@@ -189,7 +203,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
 `;
 
 exports[`<Heading /> should match snapshot with back button 1`] = `
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -200,12 +214,12 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c3 {
   width: 24px;
   height: 24px;
 }
 
-.c3 {
+.c4 {
   width: 100%;
 }
 
@@ -303,9 +317,9 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 16px;
+  padding: 16px 20px;
   width: 100%;
-  min-height: 48px;
+  min-height: 56px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -320,9 +334,14 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
   align-items: center;
 }
 
-.c5 {
-  width: 48px;
-  height: 40px;
+.c6 {
+  width: 24px;
+  height: 24px;
+}
+
+.c2 {
+  width: 24px;
+  height: 24px;
 }
 
 @media (min-width:769px) {
@@ -336,23 +355,23 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
     class="c0"
   >
     <button
-      class="c1"
+      class="c1 c2"
     >
       <svg
-        class="c2"
+        class="c3"
         height="24"
         width="24"
       />
     </button>
     <div
-      class="c3"
+      class="c4"
     />
     <div
-      class="c4"
+      class="c5"
       display="flex"
     >
       <div
-        class="c5"
+        class="c6"
       />
     </div>
   </header>
@@ -387,9 +406,9 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 16px;
+  padding: 16px 20px;
   width: 100%;
-  min-height: 48px;
+  min-height: 56px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -405,8 +424,8 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 }
 
 .c1 {
-  width: 48px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
 }
 
 @media (min-width:769px) {
@@ -444,12 +463,12 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 `;
 
 exports[`<Heading /> should match snapshot with title and back button 1`] = `
-.c3 {
+.c4 {
   width: 100%;
   text-align: center;
 }
 
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -460,7 +479,7 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   align-items: center;
 }
 
-.c2 {
+.c3 {
   width: 24px;
   height: 24px;
 }
@@ -557,7 +576,7 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   transition: fill 0.2s;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -568,9 +587,9 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 16px;
+  padding: 16px 20px;
   width: 100%;
-  min-height: 48px;
+  min-height: 56px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -585,9 +604,14 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   align-items: center;
 }
 
-.c6 {
-  width: 48px;
-  height: 40px;
+.c7 {
+  width: 24px;
+  height: 24px;
+}
+
+.c2 {
+  width: 24px;
+  height: 24px;
 }
 
 @media (min-width:769px) {
@@ -601,29 +625,29 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
     class="c0"
   >
     <button
-      class="c1"
+      class="c1 c2"
     >
       <svg
-        class="c2"
+        class="c3"
         height="24"
         width="24"
       />
     </button>
     <div
-      class="c3"
+      class="c4"
     >
       <h1
-        class="c4"
+        class="c5"
       >
         Gympass
       </h1>
     </div>
     <div
-      class="c5"
+      class="c6"
       display="flex"
     >
       <div
-        class="c6"
+        class="c7"
       />
     </div>
   </header>
