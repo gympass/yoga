@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.41.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.41.0...@gympass/yoga@7.41.1) (2022-07-04)
+
+
+### Bug Fixes
+
+* **heading:** adjust children as optional and component to match figma ([b55fc19](https://github.com/Gympass/yoga/commit/b55fc1989aa601916575312ed2cd7bec7db1dd08))
+
+
+
+
+
 # [7.41.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.40.4...@gympass/yoga@7.41.0) (2022-06-29)
 
 
