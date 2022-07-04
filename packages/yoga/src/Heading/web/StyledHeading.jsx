@@ -10,7 +10,7 @@ const StyledHeading = styled.header`
   }) => {
     return `
     background: ${heading.background};
-    padding: ${heading.padding.vertical}px;
+    padding: ${heading.padding.vertical}px ${heading.padding.horizontalMobile}px;
     width: 100%;
     min-height: ${heading.height}px;
     display: flex;

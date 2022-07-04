@@ -3,11 +3,13 @@ const Heading = ({ spacing, colors }) => ({
   padding: {
     vertical: spacing.small,
     horizontal: spacing.huge,
+    horizontalMobile: spacing.medium,
   },
-  height: 48,
+  height: spacing.xxxlarge,
   button: {
-    width: 48,
-    height: spacing.xxlarge,
+    width: spacing.large,
+    height: spacing.large,
+    marginRight: spacing.medium,
   },
 });
 

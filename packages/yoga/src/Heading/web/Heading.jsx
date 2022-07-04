@@ -11,9 +11,9 @@ const Heading = ({ children }) => {
   let title = null;
   const rightButtons = [];
 
-  if (!children) throw new Error('Heading needs at least one child');
-
   const defineComponent = child => {
+    if (!child) return;
+
     if (child.type.displayName === Title.displayName) title = child;
     if (child.type.displayName === BackButton.displayName) backButton = child;
     if (child.type.displayName === RightButton.displayName)
@@ -41,9 +41,9 @@ Heading.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
-  ]).isRequired,
+  ]),
 };
 
-Heading.defaultProps = {};
+Heading.defaultProps = { children: undefined };
 
 export default Heading;
