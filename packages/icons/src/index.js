@@ -81,6 +81,7 @@ import Link from './svg/link.svg';
 import Linkedin from './svg/linkedin.svg';
 import Location from './svg/location.svg';
 import LockOff from './svg/lock_off.svg';
+import LockOnFilled from './svg/lock_on_filled.svg';
 import Lock from './svg/lock.svg';
 import LockerRoom from './svg/locker_room.svg';
 import LogOut from './svg/log_out.svg';
@@ -233,6 +234,7 @@ export {
   Linkedin,
   Location,
   LockOff,
+  LockOnFilled,
   Lock,
   LockerRoom,
   LogOut,
