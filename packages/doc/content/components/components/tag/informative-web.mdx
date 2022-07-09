@@ -1,72 +1,61 @@
 import { Link as GatsbyLink } from 'gatsby';
 
-### Usage
+### Basic Tag
 
-```javascript state
-const Wrapper = props => (
-  <Box
-    display="inline-flex"
-    alignItems="center"
-    flexDirection="column"
-    {...props}
-  />
-);
+```
+<Tag.Informative>tag</Tag.Informative>
 
-render(
-  <>
-    <Wrapper>
-      <Tag.Informative mb="xxxsmall" mr="medium" variant="success">
-        success
-      </Tag.Informative>
-      <Tag.Informative mr="medium" variant="success" icon={Building}>
-        success with custom icon
-      </Tag.Informative>
-      <Tag.Informative
-        mt="xxxsmall"
-        mr="medium"
-        variant="success"
-        icon={Building}
-        small
-      >
-        success small with custom icon
-      </Tag.Informative>
-    </Wrapper>
-    <Wrapper>
-      <Tag.Informative variant="informative">informative</Tag.Informative>
-      <Tag.Informative mv="medium" variant="informative" icon={Building}>
-        informative with custom icon
-      </Tag.Informative>
-      <Tag.Informative variant="informative" icon={Building} small>
-        informative small with custom icon
-      </Tag.Informative>
-    </Wrapper>
-    <Wrapper>
-      <Tag.Informative marginLeft="medium" variant="attention">
-        attention
-      </Tag.Informative>
-      <Tag.Informative
-        marginLeft="medium"
-        marginVertical="xxxsmall"
-        variant="attention"
-        icon={Building}
-      >
-        attention with custom icon
-      </Tag.Informative>
-      <Tag.Informative
-        marginLeft="medium"
-        variant="attention"
-        icon={Building}
-        small
-      >
-        attention small with custom icon
-      </Tag.Informative>
-    </Wrapper>
-  </>,
-);
+```
+
+### Colors
+The tag component has following variants: `neutral`, `success`, `informative` and `attention`
+
+```
+<Box d="flex">
+  <Tag.Informative variant="neutral" mr="small">
+    neutral
+  </Tag.Informative>
+
+  <Tag.Informative variant="success" mr="small">
+    success
+  </Tag.Informative>
+
+  <Tag.Informative variant="informative" mr="small">
+    informative
+  </Tag.Informative>
+
+  <Tag.Informative variant="attention">
+    attention
+  </Tag.Informative>
+</Box>
+```
+
+### Sizes
+Use the prop `small` to control its size
+
+```
+<Box d="flex" flexDirection="column" alignItems="center">
+  <Tag.Informative variant="informative" small mb="small">
+    I'm a small tag
+  </Tag.Informative>
+
+  <Tag.Informative variant="informative">
+    I'm a regular tag
+  </Tag.Informative>
+</Box>
+```
+
+### Adornments
+Use the prop `icon` to add an icon. Refer to <GatsbyLink to="/components/icons">icons</GatsbyLink> to check the library.
+
+```
+<Tag.Informative variant="attention" icon={AlertTriangle}>
+  You have pending actions
+</Tag.Informative>
 ```
 
 ### Props
 
-The Tag component also has support for margins props as you can see more details <GatsbyLink to="/system/spacing">our system</GatsbyLink>
-
 <PropsTable component="Tag.Informative" platform="web" />
+
+The Tag component also has support for margins props as you can see more details <GatsbyLink to="/system/spacing">our system</GatsbyLink>

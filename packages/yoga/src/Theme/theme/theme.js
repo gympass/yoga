@@ -36,6 +36,7 @@ const theme = tokens => {
       success: [tokens.colors.success, tokens.colors.hope],
       informative: [tokens.colors.neutral, tokens.colors.relax],
       attention: [tokens.colors.attention, tokens.colors.verve],
+      neutral: [tokens.colors.light, tokens.colors.medium],
     },
     text: {
       primary: tokens.colors.stamina,
@@ -51,10 +52,15 @@ const theme = tokens => {
 
   [colors.feedback.success.light, colors.feedback.success.dark] =
     colors.feedback.success;
+
   [colors.feedback.informative.light, colors.feedback.informative.dark] =
     colors.feedback.informative;
+
   [colors.feedback.attention.light, colors.feedback.attention.dark] =
     colors.feedback.attention;
+
+  [colors.feedback.neutral.light, colors.feedback.neutral.dark] =
+    colors.feedback.neutral;
 
   return {
     ...tokens,
