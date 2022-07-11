@@ -74,7 +74,7 @@ TagInformative.propTypes = {
 TagInformative.defaultProps = {
   icon: undefined,
   small: false,
-  variant: 'neutral'
+  variant: 'neutral',
 };
 
 TagInformative.displayName = 'Tag.Informative';
