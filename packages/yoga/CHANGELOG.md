@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.42.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.41.2...@gympass/yoga@7.42.0) (2022-07-12)
+
+
+### Features
+
+* **tag.informative:** feat: add new variant color to tag.informative component ([3016ee1](https://github.com/Gympass/yoga/commit/3016ee1b74c9dec718d56a201e2cdd0c690261e5))
+
+
+
+
+
 ## [7.41.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.41.1...@gympass/yoga@7.41.2) (2022-07-06)
 
 **Note:** Version bump only for package @gympass/yoga
