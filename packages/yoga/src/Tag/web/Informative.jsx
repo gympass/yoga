@@ -61,17 +61,20 @@ const TagInformative = ({
 );
 
 TagInformative.propTypes = {
-  /** style the tag following the theme (success, informative, attention) */
-  variant: oneOf(['success', 'informative', 'attention']).isRequired,
+  /** Values: neutral, success, informative, attention */
+  variant: oneOf(['neutral', 'success', 'informative', 'attention']),
+  /** Icon reference from our library */
   icon: func,
+  /** The tag's content */
   children: node.isRequired,
-  /** Can send small to use this variant */
+  /** The tag's size */
   small: bool,
 };
 
 TagInformative.defaultProps = {
   icon: undefined,
   small: false,
+  variant: 'neutral',
 };
 
 TagInformative.displayName = 'Tag.Informative';
