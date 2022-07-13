@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.23.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.22.1...@gympass/yoga-doc@2.23.0) (2022-07-13)
+
+
+### Features
+
+* **yoga-illustrations:** add 2D illustrations ([0f4c095](https://github.com/gympass/yoga/commit/0f4c09583c6aeb442f6f4509296f8c57f6b43075))
+* **yoga-illustrations:** add 2D illustrations ([c845adb](https://github.com/gympass/yoga/commit/c845adb9bc5087fc494fe3a336ab72030b5a6d78))
+
+
+
+
+
 ## [2.22.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.22.0...@gympass/yoga-doc@2.22.1) (2022-07-13)
 
 **Note:** Version bump only for package @gympass/yoga-doc
