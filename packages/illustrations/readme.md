@@ -2,7 +2,7 @@
 
 ## Instalation
 
-```
+```sh
 yarn add @gympass/yoga-illustrations
 ```
 
