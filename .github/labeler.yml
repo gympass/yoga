@@ -7,6 +7,9 @@
 '@gympass/yoga-icons':
   - packages/icons/**/*
 
+'@gympass/yoga-illustrations':
+  - packages/illustrations/**/*
+
 '@gympass/yoga-tokens':
   - packages/tokens/**/*
 

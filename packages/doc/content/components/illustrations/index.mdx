@@ -1,0 +1,67 @@
+---
+title: 'Illustrations'
+metaTitle: 'Illustrations'
+metaDescription: 'Illustrations Component'
+order: 2
+---
+
+import * as YogaIllustrations from '@gympass/yoga-illustrations';
+import styled from 'styled-components';
+
+import IllustrationsWeb from './illustrations-web.mdx';
+import IllustrationsNative from './illustrations-native.mdx';
+
+export const IllustrationsWrapper = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  font-size: 14px;
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`
+
+export const AllIllustrations = () => {
+  return (
+  <Wrapper>
+    {Object.entries(YogaIllustrations).map(([name, Component]) => (
+      <IllustrationsWrapper key={name}>
+        <Component width={200} height={200} />
+        {name}
+      </IllustrationsWrapper>
+    ))}
+  </Wrapper>
+)
+};
+
+# Illustrations
+
+Yoga provide a package called `@gympass/yoga-illustrations` that contains illustrations to be
+used at your application.
+
+## Installation
+
+```bash type=highlight
+yarn add @gympass/yoga-illustrations
+```
+
+<TabbedView>
+  <Tab title="Web">
+    <IllustrationsWeb />
+  </Tab>
+
+  <Tab title="Native">
+    <IllustrationsNative />
+  </Tab>
+</TabbedView>
+
+### All Illustrations
+
+<AllIllustrations />
