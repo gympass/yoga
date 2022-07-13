@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.4.3...@gympass/yoga-icons@1.5.0) (2022-07-13)
+
+
+### Features
+
+* **icons:** add code icon ([c4bd433](https://github.com/Gympass/yoga/commit/c4bd4332fcdf25ce215eb93e9b877764fdf890cf))
+* **icons:** change sizes of the svg ([d85250d](https://github.com/Gympass/yoga/commit/d85250de93db702a0641b10f82c5b1fbeb0ff5c5))
+* **icons:** remove fill property from the svg ([a7251c1](https://github.com/Gympass/yoga/commit/a7251c1e17f7bbca449bd2f7283fa74988dc51c4))
+
+
+
+
+
 ## [1.4.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.4.2...@gympass/yoga-icons@1.4.3) (2022-07-06)
 
 

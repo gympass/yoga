@@ -30,6 +30,7 @@ import ChevronRight from './svg/chevron_right.svg';
 import ChevronUp from './svg/chevron_up.svg';
 import CloseFilled from './svg/close_filled.svg';
 import Close from './svg/close.svg';
+import Code from './svg/code.svg';
 import CompassFilled from './svg/compass_filled.svg';
 import Compass from './svg/compass.svg';
 import Copy from './svg/copy.svg';
@@ -183,6 +184,7 @@ export {
   ChevronUp,
   CloseFilled,
   Close,
+  Code,
   CompassFilled,
   Compass,
   Copy,
