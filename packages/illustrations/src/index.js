@@ -1,27 +1,27 @@
-import One from './svg/one.svg';
-import Two from './svg/two.svg';
-import Three from './svg/three.svg';
-import Four from './svg/four.svg';
-import Five from './svg/five.svg';
-import Six from './svg/six.svg';
-import Seven from './svg/seven.svg';
-import Eight from './svg/eight.svg';
-import Nine from './svg/nine.svg';
-import Ten from './svg/ten.svg';
-import Eleven from './svg/eleven.svg';
-import Twelve from './svg/twelve.svg';
+import img2d01 from './svg/img2d01.svg';
+import img2d02 from './svg/img2d02.svg';
+import img2d03 from './svg/img2d03.svg';
+import img2d04 from './svg/img2d04.svg';
+import img2d05 from './svg/img2d05.svg';
+import img2d06 from './svg/img2d06.svg';
+import img2d07 from './svg/img2d07.svg';
+import img2d08 from './svg/img2d08.svg';
+import img2d09 from './svg/img2d09.svg';
+import img2d10 from './svg/img2d10.svg';
+import img2d11 from './svg/img2d11.svg';
+import img2d12 from './svg/img2d12.svg';
 
 export {
-  One,
-  Two,
-  Three,
-  Four,
-  Five,
-  Six,
-  Seven,
-  Eight,
-  Nine,
-  Ten,
-  Eleven,
-  Twelve,
+  img2d01,
+  img2d02,
+  img2d03,
+  img2d04,
+  img2d05,
+  img2d06,
+  img2d07,
+  img2d08,
+  img2d09,
+  img2d10,
+  img2d11,
+  img2d12,
 };
