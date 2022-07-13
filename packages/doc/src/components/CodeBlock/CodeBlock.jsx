@@ -2,6 +2,7 @@ import React from 'react';
 import { node, bool, oneOf } from 'prop-types';
 import yogaPkg from '@gympass/yoga/package.json';
 import iconsPkg from '@gympass/yoga-icons/package.json';
+import illustrationsPkg from '@gympass/yoga-illustrations/package.json';
 import systemPkg from '@gympass/yoga-system/package.json';
 
 import CodeBlockContext from './CodeBlockContext';
@@ -11,6 +12,7 @@ import {
   YogaComponents,
   YogaSystem,
   YogaIcons,
+  YogaIllustrations,
   YogaHelpers,
   NativeComponents,
 } from './shared/modules';
@@ -62,11 +64,13 @@ const packages = [
   { name: YogaComponents, path: '@gympass/yoga' },
   { name: YogaSystem, path: '@gympass/yoga-system' },
   { name: NativeComponents, path: 'react-native' },
+  { name: YogaIllustrations, path: '@gympass/yoga-illustrations' },
 ];
 
 const peerDependencies = Object.keys({
   ...yogaPkg.peerDependencies,
   ...iconsPkg.peerDependencies,
+  ...illustrationsPkg.peerDependencies,
   ...systemPkg.peerDependencies,
   'react-is': '*',
 }).map(pkg => ({ path: pkg }));
