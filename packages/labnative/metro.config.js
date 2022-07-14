@@ -21,6 +21,7 @@ module.exports = (async () => {
       path.resolve(__dirname, '../../', 'node_modules'),
       `${reactNativeLib}/packages/yoga`,
       `${reactNativeLib}/packages/icons`,
+      `${reactNativeLib}/packages/illustrations`,
       `${reactNativeLib}/packages/tokens`,
       `${reactNativeLib}/packages/common`,
       `${reactNativeLib}/packages/system`,
