@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.23.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.23.0...@gympass/yoga-doc@2.23.1) (2022-07-14)
+
+
+### Bug Fixes
+
+* **yoga-illustrations:** fix missing readme and broken components ([c0f06f6](https://github.com/gympass/yoga/commit/c0f06f666e928fca86419860ef5b008f48a3c4a5))
+
+
+
+
+
 # [2.23.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.22.1...@gympass/yoga-doc@2.23.0) (2022-07-13)
 
 
