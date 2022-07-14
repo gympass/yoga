@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.11](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.0.10...@gympass/yoga-labnative@2.0.11) (2022-07-14)
+
+
+### Bug Fixes
+
+* **libnative:** add illustrations to metro configuration ([ef3d557](https://github.com/gympass/yoga/commit/ef3d55795230c36177344e93ebd033bbb088bc4c))
+
+
+
+
+
 ## [2.0.10](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.0.9...@gympass/yoga-labnative@2.0.10) (2022-07-13)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
