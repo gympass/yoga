@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.42.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.42.1...@gympass/yoga@7.42.2) (2022-07-18)
+
+
+### Bug Fixes
+
+* add illustrations as yoga dependency ([22a3387](https://github.com/Gympass/yoga/commit/22a3387575c50600fa8688d6fbd704974a41a15d))
+
+
+
+
+
 ## [7.42.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.42.0...@gympass/yoga@7.42.1) (2022-07-13)
 
 **Note:** Version bump only for package @gympass/yoga
