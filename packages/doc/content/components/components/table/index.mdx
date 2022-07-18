@@ -1,0 +1,193 @@
+---
+title: 'Table'
+metaTitle: 'Table'
+metaDescription: 'Table Component'
+---
+import { Link as GatsbyLink } from 'gatsby';
+
+# Table
+
+## Reference
+
+Gympass `<Table />` displays a table based on Material-ui Table <GatsbyLink to="#">Material Table</GatsbyLink>
+ component.
+
+- `<Table />`
+- `<Table.Head />`
+- `<Table.Cell />`
+- `<Table.Row />`
+- `<Table.Body />`
+- `<Table.Pagination />`
+- `<Table.SortLabel />`
+- `<Table.Container />`
+- `<Table.Footer />`
+
+### Table basic usage
+```javascript state
+
+function createData(id, name, email, birth, area, sizeShirt) {
+  return { id, name, email, birth, area, sizeShirt };
+}
+
+const rows = [
+  createData('john1', 'John Doe', 'john.doe@gympass.com', '1990-10-10', 'Development', 'L' ),
+  createData('john2', 'John Doe Second', 'john.doe2@gympass.com', '1990-10-10', 'Development', 'XL'),
+  createData('john3', 'John Doe Third', 'john.doe3@gympass.com', '1990-10-10', 'Development', 'M'),
+  createData('john4', 'John Doe Fourth', 'john.doe4@gympass.com', '1990-10-10', 'Development', 'XXL'),
+  createData('john5', 'John Doe Fifth', 'john.doe5@gympass.com', '1990-10-10', 'Development', 'X'),
+  createData('john6', 'John Doe Sixth', 'john.doe6@gympass.com', '1990-10-10', 'Development', 'S'),
+  createData('john7', 'John Doe Seventh', 'john.doe7@gympass.com', '1990-10-10', 'Development', 'M'),
+];
+
+render(() => {
+  const [rowsPerPage, setRowsPerPage] = React.useState(5);
+  const [order, setOrder] = React.useState('asc');
+  const [orderBy, setOrderBy] = React.useState('employes');
+  const [page, setPage] = React.useState(0);
+
+  const handleRequestSort = (event, property) => {
+    const isAsc = orderBy === property && order === 'asc';
+    setOrder(isAsc ? 'desc' : 'asc');
+    setOrderBy(property);
+    // Create your request for order Data
+  };
+
+  const createSortHandler = (property) => (event) => {
+    handleRequestSort(event, property);
+  };
+
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = (event) => {
+    setRowsPerPage(parseInt(event.target.value, 10));
+    setPage(0);
+  };
+
+  const handleActions = (id) => {
+    return <MenuMore 
+      onClick={() => console.log(`Editing: ${id}`)}
+    />
+  };
+
+  return(
+    <div>
+      <Table>
+        <Table.Head>
+          <Table.Row>
+           <Table.Cell padding="checkbox">
+            <Checkbox
+                checked={true}
+                onChange={() => console.log('change')}
+                value="checkbox-value"
+              />
+            </Table.Cell>
+            <Table.Cell
+              sortDirection={'asc'}
+            >
+              <Table.SortLabel
+                active={orderBy === rows[0].id}
+                direction={orderBy === rows[0].id ? order : 'asc'}
+                onClick={createSortHandler(rows[0].id)}
+              >
+                Employees
+              </Table.SortLabel>
+            </Table.Cell>
+            <Table.Cell align="right">
+              <Table.SortLabel>
+                Email
+              </Table.SortLabel>
+            </Table.Cell>
+            <Table.Cell align="right">
+              <Table.SortLabel>
+                Birth
+              </Table.SortLabel>
+            </Table.Cell>
+            <Table.Cell align="right">
+              <Table.SortLabel>
+                Area
+              </Table.SortLabel>
+            </Table.Cell>
+            <Table.Cell align="right">
+              <Table.SortLabel>
+                Size of Shirt
+              </Table.SortLabel>
+            </Table.Cell>
+            <Table.Cell align="right">
+              <Table.SortLabel>
+                Actions
+              </Table.SortLabel>
+            </Table.Cell>
+          </Table.Row>
+        </Table.Head>
+        <Table.Body>
+          {(rowsPerPage > 0
+            ? rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+            : rows
+          ).map((row, index) => {
+            const labelId = `enhanced-table-checkbox-${index}`;
+
+            return (
+              <Table.Row key={row.name}>
+                <Table.Cell padding="checkbox">
+                  <Checkbox
+                    checked={false}
+                    inputProps={{ 'aria-labelledby': labelId }}
+                  />
+                </Table.Cell>
+                <Table.Cell component="th" scope="row">
+                  {row.name}
+                </Table.Cell>
+                <Table.Cell align="right">{row.email}</Table.Cell>
+                <Table.Cell align="right">{row.birth}</Table.Cell>
+                <Table.Cell align="right">{row.area}</Table.Cell>
+                <Table.Cell align="right">{row.sizeShirt}</Table.Cell>
+                <Table.Cell align="right">{ handleActions(row.id) }</Table.Cell>
+              </Table.Row>
+            )
+          })}
+        </Table.Body>
+      </Table>
+      <Table.Pagination
+        rowsPerPageOptions={[5, 10, 25]}
+        component="div"
+        count={rows.length}
+        rowsPerPage={rowsPerPage}
+        page={page}
+        onPageChange={handleChangePage}
+        onRowsPerPageChange={handleChangeRowsPerPage}
+      />
+    </div>
+  )
+});
+```
+
+### Props
+
+#### Table
+<PropsTable component="Table" platform="web" />
+
+#### Table.Head
+<PropsTable component="Table.Head" platform="web" />
+
+#### Table.Cell
+<PropsTable component="Table.Cell" platform="web" />
+
+#### Table.Row
+<PropsTable component="Table.Row" platform="web" />
+
+#### Table.Body
+<PropsTable component="Table.Body" platform="web" />
+
+#### Table.Pagination
+<PropsTable component="Table.Pagination" platform="web" />
+
+#### Table.SortLabel
+<PropsTable component="Table.SortLabel" platform="web" />
+
+#### Table.Container
+<PropsTable component="Table.Container" platform="web" />
+
+#### Table.Footer 
+<PropsTable component="Table.Footer" platform="web" />
