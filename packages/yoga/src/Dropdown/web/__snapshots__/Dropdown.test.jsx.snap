@@ -1319,7 +1319,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 4px;
-  color: #CA4808;
+  color: #FF874C;
 }
 
 .c12 {
@@ -1417,11 +1417,11 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
 
 .c1 fieldset {
   border-color: #231B22;
-  border-color: #CA4808;
+  border-color: #FF874C;
 }
 
 .c1:hover fieldset {
-  border-color: #CA4808;
+  border-color: #FF874C;
 }
 
 .c5 {

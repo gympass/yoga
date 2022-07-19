@@ -474,7 +474,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   transition-timing-function: cubic-bezier(0,0.75,0.1,1);
   font-size: 12px;
   font-weight: 400;
-  color: #CA4808;
+  color: #FF874C;
 }
 
 .c2:focus::-webkit-input-placeholder {
@@ -535,7 +535,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 4px;
-  color: #CA4808;
+  color: #FF874C;
 }
 
 .c7 {
@@ -561,12 +561,12 @@ exports[`<Input /> Snapshots should match with error 1`] = `
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #CA4808;
+  border-color: #FF874C;
 }
 
 .c1:hover:not(:disabled),
 .c1:focus-within:not(:disabled) {
-  border-color: #CA4808;
+  border-color: #FF874C;
 }
 
 .c4 {
