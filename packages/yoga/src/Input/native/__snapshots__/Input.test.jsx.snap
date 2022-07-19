@@ -207,7 +207,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
     style={
       Array [
         Object {
-          "borderColor": "#CA4808",
+          "borderColor": "#FF874C",
           "borderRadius": 8,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -250,7 +250,7 @@ exports[`<Input /> Snapshots should match with error 1`] = `
       style={
         Array [
           Object {
-            "color": "#CA4808",
+            "color": "#FF874C",
             "flexWrap": "wrap",
             "fontFamily": "Rubik",
             "fontSize": 12,

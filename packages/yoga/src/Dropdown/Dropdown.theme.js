@@ -129,7 +129,7 @@ const Dropdown = ({
     selector: {
       border: {
         color: colors.text.primary,
-        error: colors.verve,
+        error: colors.feedback.attention[1],
       },
     },
     option: {
