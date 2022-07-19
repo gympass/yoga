@@ -35,7 +35,7 @@ const theme = tokens => {
     feedback: {
       success: [tokens.colors.success, tokens.colors.hope],
       informative: [tokens.colors.neutral, tokens.colors.relax],
-      attention: [tokens.colors.attention, tokens.colors.verve],
+      attention: [tokens.colors.attention, tokens.colors.brandingVerve],
       neutral: [tokens.colors.light, tokens.colors.medium],
     },
     text: {
