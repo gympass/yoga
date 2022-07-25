@@ -6,7 +6,8 @@ export const PLAN_LINE_HEIGHT = 8;
 
 const Plan = styled.article`
   width: 100%;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   max-width: 312px;
 
