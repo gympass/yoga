@@ -79,7 +79,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 }
 
 .c18 {
-  margin-top: 8px;
+  margin-top: 24px;
 }
 
 .c5 {
@@ -142,10 +142,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   position: relative;
   max-width: 312px;
   overflow: hidden;
-  padding: 64px 20px 32px 20px;
+  padding: 56px 24px 24px 24px;
+  border: 1px solid #D7D7E0;
   border-radius: 16px;
   background-color: #FFFFFF;
-  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c1 {
@@ -172,7 +172,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   -ms-flex-align: center;
   align-items: center;
   border-style: solid;
-  padding: 4px 8px 4px 8px;
+  padding: 0 4px 0 4px;
   color: #5340C9;
   border-radius: 4px;
   border-width: 1px;
@@ -213,8 +213,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  top: 28px;
-  left: 20px;
+  top: 32px;
+  left: 24px;
 }
 
 .c11 {
@@ -224,7 +224,11 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 }
 
 .c14 {
-  margin-right: 12px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8px;
 }
 
 .c12 {
@@ -237,6 +241,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   display: -ms-flexbox;
   display: flex;
   min-width: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .c13 svg {
@@ -478,10 +486,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   position: relative;
   max-width: 312px;
   overflow: hidden;
-  padding: 64px 20px 32px 20px;
+  padding: 56px 24px 24px 24px;
+  border: 1px solid #D7D7E0;
   border-radius: 16px;
   background-color: #FFFFFF;
-  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c1 {
@@ -617,10 +625,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   position: relative;
   max-width: 312px;
   overflow: hidden;
-  padding: 64px 20px 32px 20px;
+  padding: 56px 24px 24px 24px;
+  border: 1px solid #D7D7E0;
   border-radius: 16px;
   background-color: #FFFFFF;
-  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
 .c1 {

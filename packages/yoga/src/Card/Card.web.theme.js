@@ -18,7 +18,7 @@ const CardWeb = ({ spacing, lineHeights }) => ({
       item: {
         icon: {
           margin: {
-            right: spacing.xsmall,
+            right: spacing.xxsmall,
           },
         },
       },
@@ -30,7 +30,7 @@ const CardWeb = ({ spacing, lineHeights }) => ({
         },
       },
       margin: {
-        top: spacing.xxsmall,
+        top: spacing.large,
       },
     },
   },

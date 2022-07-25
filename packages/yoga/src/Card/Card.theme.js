@@ -22,15 +22,15 @@ const Card = ({
   plan: {
     padding: {
       top: spacing.xxxlarge,
-      right: spacing.medium,
-      bottom: spacing.xlarge,
-      left: spacing.medium,
+      right: spacing.large,
+      bottom: spacing.large,
+      left: spacing.large,
     },
     radius: 16,
     tag: {
       position: {
-        top: spacing.medium,
-        left: spacing.medium,
+        top: spacing.large,
+        left: spacing.large,
       },
     },
     subtitle: {
