@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.24.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.23.2...@gympass/yoga-doc@2.24.0) (2022-07-27)
+
+
+### Features
+
+* **PlanCard:** keep actions at card bottom ([6bb1c3c](https://github.com/gympass/yoga/commit/6bb1c3c4c9f7af29480ce3f686555915bace53fc))
+
+
+
+
+
 ## [2.23.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.23.1...@gympass/yoga-doc@2.23.2) (2022-07-18)
 
 **Note:** Version bump only for package @gympass/yoga-doc

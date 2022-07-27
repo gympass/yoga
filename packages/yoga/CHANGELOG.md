@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.43.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.42.2...@gympass/yoga@7.43.0) (2022-07-27)
+
+
+### Features
+
+* **PlanCard:** adjust spacings ([be8e04c](https://github.com/Gympass/yoga/commit/be8e04c23de70ae47a673430fcffc478ce2b4f39))
+* **PlanCard:** keep actions at card bottom ([6bb1c3c](https://github.com/Gympass/yoga/commit/6bb1c3c4c9f7af29480ce3f686555915bace53fc))
+
+
+
+
+
 ## [7.42.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.42.1...@gympass/yoga@7.42.2) (2022-07-18)
 
 
