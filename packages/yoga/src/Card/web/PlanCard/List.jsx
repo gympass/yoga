@@ -26,7 +26,9 @@ const IconWrapper = styled.div`
 `;
 
 const Item = styled.li`
-  margin-bottom: ${card.plan.list.item.margin.bottom}px;
+  :not(:last-child) {
+    margin-bottom: ${card.plan.list.item.margin.bottom}px;
+  }
 `;
 
 const Wrapper = styled.div`
