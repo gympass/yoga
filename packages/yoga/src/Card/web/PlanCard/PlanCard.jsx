@@ -2,35 +2,28 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { node, oneOf } from 'prop-types';
 
-import theme from '../../../Theme/helpers/themeReader';
-
 export const PLAN_LINE_HEIGHT = 8;
 
 const Plan = styled.article`
   width: 100%;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   max-width: 312px;
 
   overflow: hidden;
 
   ${props => {
-    const {
-      colors,
-      components: {
-        card: { plan, elevation },
-      },
-    } = theme(props);
+    const theme = props.theme.yoga;
+    const { plan } = theme.components.card;
 
     return css`
-      padding: ${plan.padding.top + PLAN_LINE_HEIGHT}px ${plan.padding.right}px
+      padding: ${plan.padding.top}px ${plan.padding.right}px
         ${plan.padding.bottom}px ${plan.padding.left}px;
-
+      border: ${theme.borders.small}px solid ${theme.colors.light};
       border-radius: ${plan.radius}px;
 
-      background-color: ${colors.white};
-
-      box-shadow: ${elevation};
+      background-color: ${theme.colors.white};
     `;
   }}
 `;

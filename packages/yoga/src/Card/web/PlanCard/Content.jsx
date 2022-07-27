@@ -8,6 +8,10 @@ import Content from '../Card/Content';
 import Subtitle from './Subtitle';
 import Divider from '../../../Divider';
 
+const Wrapper = styled(Content)`
+  flex: 1;
+`;
+
 const Title = styled(Text.Medium)`
   ${props => {
     const {
@@ -64,7 +68,7 @@ const PlanCardContent = ({
   children,
   ...rest
 }) => (
-  <Content {...rest}>
+  <Wrapper {...rest}>
     {subtitle && <Subtitle>{subtitle}</Subtitle>}
     {title && <Title>{title}</Title>}
     {description && <Description>{description}</Description>}
@@ -76,7 +80,7 @@ const PlanCardContent = ({
     </Price>
     <Divider />
     {children}
-  </Content>
+  </Wrapper>
 );
 
 PlanCardContent.propTypes = {
