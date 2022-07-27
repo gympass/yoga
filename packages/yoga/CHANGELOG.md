@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.44.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.43.0...@gympass/yoga@7.44.0) (2022-07-27)
+
+
+### Features
+
+* **PlanCard:** decrease height ([4155950](https://github.com/Gympass/yoga/commit/4155950f176a1e655e47b7ae6338cda9b23853cc))
+
+
+
+
+
 # [7.43.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.42.2...@gympass/yoga@7.43.0) (2022-07-27)
 
 
