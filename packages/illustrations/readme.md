@@ -17,9 +17,9 @@ To use in `react-native` make sure you have installed [react-native-svg](https:/
 Icon works out of the box for both platforms.
 
 ```jsx
-import { Img2d01 } from '@gympass/yoga-illustrations';
+import { Img2d11 } from '@gympass/yoga-illustrations';
 
-export default () => <img2d01 />;
+export default () => <Img2d11 />;
 ```
 
 Here you can check an example in [web](https://gympass.github.io/yoga/components/illustrations#web) and [native](https://gympass.github.io/yoga/components/illustrations#native) platforms.
