@@ -243,7 +243,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   margin-right: 8px;
 }
 
-.c13 {
+.c13:not(:last-child) {
   margin-bottom: 16px;
 }
 
