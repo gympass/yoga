@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-illustrations@0.4.0...@gympass/yoga-illustrations@0.5.0) (2022-07-28)
+
+
+### Features
+
+* add log ([ec1608e](https://github.com/Gympass/yoga/commit/ec1608e8087c03a0ff400d0264c4515051b5217f))
+
+
+
+
+
 # [0.4.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-illustrations@0.3.0...@gympass/yoga-illustrations@0.4.0) (2022-07-28)
 
 
