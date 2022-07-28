@@ -37,13 +37,17 @@ const createPackageJson = () => {
 };
 
 const run = () => {
-  const distFiles = [...['README.md'].map(copyFile), createPackageJson()];
+  try {
+    const distFiles = [...['README.md'].map(copyFile), createPackageJson()];
 
-  console.log(
-    `Created ${distFiles.map(file => file).join(', ')} in ${
-      pkg.name
-    }${outDir.replace('.', '')}`,
-  );
+    console.log(
+      `Created ${distFiles.map(file => file).join(', ')} in ${
+        pkg.name
+      }${outDir.replace('.', '')}`,
+    );
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 run();
