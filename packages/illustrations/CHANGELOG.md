@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-illustrations@0.1.2...@gympass/yoga-illustrations@0.2.0) (2022-07-28)
+
+
+### Features
+
+* test cicd ([139d409](https://github.com/Gympass/yoga/commit/139d40950b0bac03b823dba8c1d8fa85dcec9481))
+
+
+
+
+
 ## [0.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-illustrations@0.1.1...@gympass/yoga-illustrations@0.1.2) (2022-07-27)
 
 **Note:** Version bump only for package @gympass/yoga-illustrations
