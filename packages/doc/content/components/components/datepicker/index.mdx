@@ -1,0 +1,55 @@
+---
+title: 'Datepicker'
+metaTitle: 'Datepicker'
+metaDescription: 'Datepicker Component'
+---
+
+# Datepicker
+
+### Reference
+
+The `<Datepicker />` component is a date picker that allows the user to select a single date or a range of dates.
+
+### Usage
+
+### Single date Datepicker
+
+```javascript state
+render(() => {
+  const [selectedDate, setSelectedDate] = useState();
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelect={setSelectedDate}
+    />
+  );
+});
+```
+
+### Range date Datepicker
+
+```javascript state
+render(() => {
+  const [startDate, setStartDate] = useState();
+  const [endDate, setEndDate] = useState();
+
+  const onSelectRange = (startDate, endDate) => {
+    console.log({ startDate, endDate });
+  };
+
+  return (
+    <Datepicker
+      type="range"
+      startDate={startDate}
+      endDate={endDate}
+      onSelectRange={onSelectRange}
+    />
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Datepicker" platform="web" />
