@@ -33,7 +33,8 @@ render(() => {
     <>
       <Button onClick={handleOpen}>Open Drawer with one action</Button>
         <Drawer isOpen={isOpen}>
-          <Button onClick={handleOnClose}>Fechar (TEMPORARIO)</Button>
+          <Drawer.Header showBackButton handleOnClose={handleOnClose} sectionTitle="Section title" />
+          
         </Drawer>
       {/* <Drawer isOpen={isOpen}>
         <Drawer.Header>We confirm your eligibility</Drawer.Header>
