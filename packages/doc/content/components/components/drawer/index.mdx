@@ -1,0 +1,57 @@
+---
+title: 'Drawer'
+metaTitle: 'Drawer'
+metaDescription: 'Drawer Component'
+---
+
+# Drawer
+
+The Drawer component is a variation with the objective of providing maximum priority information for the user.
+
+### Usage
+
+### Drawer simple usage
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('This is your custom action');
+    handleOnClose();
+  };
+
+  return (
+    <>
+      <Button onClick={handleOpen}>Open Drawer with one action</Button>
+        <Drawer isOpen={isOpen}>
+          <Button onClick={handleOnClose}>Fechar (TEMPORARIO)</Button>
+        </Drawer>
+      {/* <Drawer isOpen={isOpen}>
+        <Drawer.Header>We confirm your eligibility</Drawer.Header>
+        
+        <Drawer.Content>
+          Double check your info and company selection. If it still doesn’t work,
+          contact your HR team.
+        </Drawer.Content>
+        
+        <Drawer.Footer>
+          <Button onClick={handleOnAction}>Ok, I understand</Button>
+        </Drawer.Footer>
+      </Drawer> */}
+    </>
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Drawer" platform="web" />
