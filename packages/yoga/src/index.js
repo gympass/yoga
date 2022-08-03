@@ -33,6 +33,7 @@ import Menu from './Menu';
 import Banner from './Banner';
 import Heading from './Heading';
 import Feedback from './Feedback';
+import Skeleton from './Skeleton';
 
 export {
   ThemeProvider,
@@ -74,4 +75,5 @@ export {
   Banner,
   Heading,
   Feedback,
+  Skeleton,
 };
