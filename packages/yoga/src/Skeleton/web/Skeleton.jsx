@@ -43,7 +43,14 @@ const skeletonTypesModifier = {
 };
 
 const StyledSkeleton = styled.div`
-  ${({ theme: { yoga }, type, width, height, variant }) => css`
+  ${({
+    theme: { yoga },
+    type,
+    width,
+    height,
+    variant,
+    animation = 'pulse',
+  }) => css`
     display: flex;
     align-items: center;
 
@@ -51,7 +58,11 @@ const StyledSkeleton = styled.div`
     height: ${height}px;
 
     background: ${yoga.colors.clear};
-    animation: placeholderShimmer 1s linear infinite;
+
+    ${animation &&
+    css`
+      animation: placeholderShimmer 1s linear infinite;
+    `}
 
     @keyframes placeholderShimmer {
       0% {
@@ -87,8 +98,15 @@ Skeleton.propTypes = {
    * Applicable only to circular and rectangular variants.
    */
   height: number.isRequired,
+
+  /**
+   * Determine if the animation will 'pulse' or false;
+   */
+  animation: oneOf(['pulse', false]),
 };
 
-Skeleton.defaultProps = {};
+Skeleton.defaultProps = {
+  animation: 'pulse',
+};
 
 export default Skeleton;

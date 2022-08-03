@@ -57,27 +57,27 @@ const StyledSkeleton = styled.View`
   `}
 `;
 
-const Skeleton = props => {
+const Skeleton = ({ animation = 'pulse', ...props }) => {
   const [opacity] = useState(new Animated.Value(0.1));
 
   useEffect(() => {
-    Animated.loop(
-      Animated.sequence([
-        Animated.timing(opacity, {
-          toValue: 0.3,
-          duration: 1000,
-          useNativeDriver: true,
-        }),
-        Animated.timing(opacity, {
-          toValue: 0.1,
-          duration: 1000,
-          useNativeDriver: true,
-        }),
-      ]),
-    ).start();
+    if (animation) {
+      Animated.loop(
+        Animated.sequence([
+          Animated.timing(opacity, {
+            toValue: 0.3,
+            duration: 1000,
+            useNativeDriver: true,
+          }),
+          Animated.timing(opacity, {
+            toValue: 0.1,
+            duration: 1000,
+            useNativeDriver: true,
+          }),
+        ]),
+      ).start();
+    }
   }, [opacity]);
-
-  console.log(opacity);
 
   return (
     <Animated.View style={{ opacity }}>
@@ -102,8 +102,15 @@ Skeleton.propTypes = {
    * Applicable only to circular and rectangular variants.
    */
   height: number.isRequired,
+
+  /**
+   * Determine if the animation will 'pulse' or false;
+   */
+  animation: oneOf(['pulse', false]),
 };
 
-Skeleton.defaultProps = {};
+Skeleton.defaultProps = {
+  animation: 'pulse',
+};
 
 export default Skeleton;
