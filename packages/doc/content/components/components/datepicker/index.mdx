@@ -10,6 +10,8 @@ metaDescription: 'Datepicker Component'
 
 The `<Datepicker />` component is a date picker that allows the user to select a single date or a range of dates.
 
+Both `startDate` and `endDate` are expected to be in the [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) format.
+
 ### Usage
 
 ### Single date Datepicker
@@ -45,6 +47,135 @@ render(() => {
       startDate={startDate}
       endDate={endDate}
       onSelectRange={onSelectRange}
+    />
+  );
+});
+```
+
+### Single Datepicker with default selected date
+
+```javascript state
+render(() => {
+  const d = new Date();
+  d.setDate(d.getDate() + 2);
+  const [selectedDate, setSelectedDate] = useState(d);
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelect={setSelectedDate}
+    />
+  );
+});
+```
+
+### Range Datepicker with default start date and end date
+
+```javascript state
+render(() => {
+  const start = new Date();
+  const end = new Date();
+
+  end.setDate(start.getDate() + 15);
+  const [startDate, setStartDate] = useState(start);
+  const [endDate, setEndDate] = useState(end);
+
+  const onSelectRange = (startDate, endDate) => {
+    console.log({ startDate, endDate });
+  };
+
+  return (
+    <Datepicker
+      type="range"
+      startDate={startDate}
+      endDate={endDate}
+      onSelectRange={onSelectRange}
+    />
+  );
+});
+```
+
+### Single Datepicker with custom placeholder
+
+```javascript state
+render(() => {
+  const [selectedDate, setSelectedDate] = useState();
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelect={setSelectedDate}
+      placeholder="This is a custom placeholder :)"
+    />
+  );
+});
+```
+
+### Datepicker with past dates disabled
+
+```javascript state
+render(() => {
+  const [selectedDate, setSelectedDate] = useState();
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelect={setSelectedDate}
+      disablePastDates
+    />
+  );
+});
+```
+
+### Datepicker with future dates disabled
+
+```javascript state
+render(() => {
+  const [selectedDate, setSelectedDate] = useState();
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelect={setSelectedDate}
+      disableFutureDates
+    />
+  );
+});
+```
+
+### Datepicker disabled
+
+```javascript state
+render(() => {
+  const [selectedDate, setSelectedDate] = useState(new Date());
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelect={setSelectedDate}
+      disabled
+    />
+  );
+});
+```
+
+### Datepicker with error
+
+```javascript state
+render(() => {
+  const [selectedDate, setSelectedDate] = useState();
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelect={setSelectedDate}
+      error="This is an error!"
     />
   );
 });
