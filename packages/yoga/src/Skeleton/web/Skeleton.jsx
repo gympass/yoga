@@ -80,7 +80,9 @@ const StyledSkeleton = styled.div`
   `}
 `;
 
-const Skeleton = props => <StyledSkeleton {...props} />;
+function Skeleton(props) {
+  return <StyledSkeleton {...props} />;
+}
 
 Skeleton.propTypes = {
   /**

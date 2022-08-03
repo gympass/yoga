@@ -57,7 +57,7 @@ const StyledSkeleton = styled.View`
   `}
 `;
 
-const Skeleton = ({ animation = 'pulse', ...props }) => {
+function Skeleton({ animation = 'pulse', ...props }) {
   const [opacity] = useState(new Animated.Value(0.1));
 
   useEffect(() => {
@@ -84,7 +84,7 @@ const Skeleton = ({ animation = 'pulse', ...props }) => {
       <StyledSkeleton {...props} />
     </Animated.View>
   );
-};
+}
 
 Skeleton.propTypes = {
   /**
