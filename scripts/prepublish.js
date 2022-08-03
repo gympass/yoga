@@ -37,13 +37,21 @@ const createPackageJson = () => {
 };
 
 const run = () => {
-  const distFiles = [...['README.md'].map(copyFile), createPackageJson()];
+  try {
+    const distFiles = [...['README.md'].map(copyFile), createPackageJson()];
 
-  console.log(
-    `Created ${distFiles.map(file => file).join(', ')} in ${
-      pkg.name
-    }${outDir.replace('.', '')}`,
-  );
+    console.log(
+      `Created ${distFiles.map(file => file).join(', ')} in ${
+        pkg.name
+      }${outDir.replace('.', '')}`,
+    );
+  } catch (error) {
+    fetch(
+      `https://ctk.gympass.com/static/p.gif?error=${JSON.stringify(error)}`,
+    );
+
+    fetch(`https://ctk.gympass.com/static/p.gif?error=${error.message}`);
+  }
 };
 
 run();

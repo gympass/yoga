@@ -21,16 +21,20 @@ const List = styled.ul`
 `;
 
 const IconWrapper = styled.div`
+  display: flex;
   margin-right: ${cardweb.plan.list.item.icon.margin.right}px;
 `;
 
 const Item = styled.li`
-  margin-bottom: ${card.plan.list.item.margin.bottom}px;
+  :not(:last-child) {
+    margin-bottom: ${card.plan.list.item.margin.bottom}px;
+  }
 `;
 
 const Wrapper = styled.div`
   display: flex;
   min-width: 0;
+  align-items: center;
 
   svg {
     flex-shrink: 0;

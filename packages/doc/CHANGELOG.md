@@ -3,6 +3,76 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.24.7](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.24.6...@gympass/yoga-doc@2.24.7) (2022-07-28)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.24.6](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.24.5...@gympass/yoga-doc@2.24.6) (2022-07-28)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.24.5](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.24.4...@gympass/yoga-doc@2.24.5) (2022-07-28)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.24.4](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.24.3...@gympass/yoga-doc@2.24.4) (2022-07-28)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.24.3](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.24.2...@gympass/yoga-doc@2.24.3) (2022-07-27)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.24.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.24.1...@gympass/yoga-doc@2.24.2) (2022-07-27)
+
+
+### Bug Fixes
+
+* **docs:** fix illustration preview ([3b879a5](https://github.com/gympass/yoga/commit/3b879a5a7ce0c1c3aca58d34f3c8a0fc885aa087))
+
+
+
+
+
+## [2.24.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.24.0...@gympass/yoga-doc@2.24.1) (2022-07-27)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+# [2.24.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.23.2...@gympass/yoga-doc@2.24.0) (2022-07-27)
+
+
+### Features
+
+* **PlanCard:** keep actions at card bottom ([6bb1c3c](https://github.com/gympass/yoga/commit/6bb1c3c4c9f7af29480ce3f686555915bace53fc))
+
+
+
+
+
 ## [2.23.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.23.1...@gympass/yoga-doc@2.23.2) (2022-07-18)
 
 **Note:** Version bump only for package @gympass/yoga-doc

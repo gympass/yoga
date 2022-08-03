@@ -16,7 +16,6 @@ const Title = styled(Text.Medium)`
 
     return css`
       color: ${card.plan.title.color};
-      margin-top: ${cardnative.plan.title.margin.top}px;
       margin-bottom: ${cardnative.plan.title.margin.bottom}px;
       line-height: ${cardnative.plan.title.lineHeight}px;
     `;

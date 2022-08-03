@@ -6,6 +6,7 @@ import { MDXProvider } from '@mdx-js/react';
 
 import * as components from '@gympass/yoga';
 import * as icons from '@gympass/yoga-icons';
+import * as illustrations from '@gympass/yoga-illustrations';
 import * as helpers from '@gympass/yoga-helpers';
 import * as system from '@gympass/yoga-system';
 
@@ -75,6 +76,7 @@ const customComponents = prefix => ({
   ThemeInspector: props => <ReactInspector {...props} />,
   ...components,
   ...icons,
+  ...illustrations,
   ...helpers,
   ...system,
 });

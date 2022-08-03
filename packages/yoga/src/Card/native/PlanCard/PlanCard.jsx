@@ -2,32 +2,27 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { node, oneOf } from 'prop-types';
 
-import theme from '../../../Theme/helpers/themeReader';
-
-import Card from '../Card';
+import Box from '../../../Box';
 
 export const PLAN_LINE_HEIGHT = 8;
 
-const Plan = styled(Card)`
+const Plan = styled(Box)`
   max-width: 312px;
   width: 100%;
   position: relative;
+  overflow: hidden;
 
   ${props => {
-    const {
-      colors,
-      components: {
-        card: { plan },
-      },
-    } = theme(props);
+    const theme = props.theme.yoga;
+    const { plan } = theme.components.card;
 
     return css`
       padding: ${plan.padding.top}px ${plan.padding.right}px
         ${plan.padding.bottom}px ${plan.padding.left}px;
-
+      border: ${theme.borders.small}px solid ${theme.colors.light};
       border-radius: ${plan.radius}px;
 
-      background-color: ${colors.white};
+      background-color: ${theme.colors.white};
     `;
   }}
 `;
@@ -50,10 +45,12 @@ const Border = styled.View`
 `;
 
 const PlanCard = ({ children, variant, ...rest }) => (
-  <Plan {...rest}>
-    <Border variant={variant} />
-    {children}
-  </Plan>
+  <Box>
+    <Plan {...rest}>
+      <Border variant={variant} />
+      {children}
+    </Plan>
+  </Box>
 );
 
 PlanCard.propTypes = {

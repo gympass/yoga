@@ -2,7 +2,6 @@ const CardNative = ({ colors, spacing, lineHeights }) => ({
   plan: {
     title: {
       margin: {
-        top: spacing.xxsmall,
         bottom: spacing.xxsmall,
       },
       lineHeight: lineHeights.medium,
@@ -30,7 +29,7 @@ const CardNative = ({ colors, spacing, lineHeights }) => ({
     actions: {
       buttonText: {
         margin: {
-          top: spacing.medium,
+          top: spacing.xsmall,
         },
       },
       margin: {
