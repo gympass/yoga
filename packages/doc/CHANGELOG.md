@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.25.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.24.7...@gympass/yoga-doc@2.25.0) (2022-08-05)
+
+
+### Features
+
+* **BottomSheet:** hide close button ([c1d4c23](https://github.com/gympass/yoga/commit/c1d4c23f2e166289bb3887b91e2bb8a2b646c9ae))
+
+
+
+
+
 ## [2.24.7](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.24.6...@gympass/yoga-doc@2.24.7) (2022-07-28)
 
 **Note:** Version bump only for package @gympass/yoga-doc
