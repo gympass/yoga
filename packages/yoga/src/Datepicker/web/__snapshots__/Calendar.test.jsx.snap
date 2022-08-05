@@ -2,11 +2,25 @@
 
 exports[`<Calendar /> Snapshots should match with default selected date single Calendar 1`] = `
 .c1 {
-  width: 28px;
-  height: 28px;
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c7 {
+.c2 {
+  width: 24px;
+  height: 24px;
+}
+
+.c8 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -16,7 +30,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
   color: #231B22;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -27,18 +41,22 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
 }
 
 .c0 {
-  padding: 24px;
+  padding: 12px 12px 16px 12px;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 16px 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -56,10 +74,10 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
   text-align: center;
 }
 
-.c6 {
+.c7 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -77,41 +95,15 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
   cursor: pointer;
 }
 
-.c6 p {
+.c7 p {
   color: #D7D7E0;
-  z-index: 1;
-}
-
-.c8 {
-  width: 32px;
-  height: 32px;
-  padding: 0px 19.35px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background: #FFFFFF;
-  position: relative;
-  cursor: pointer;
-}
-
-.c8 p {
-  color: #231B22;
   z-index: 1;
 }
 
 .c9 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -130,11 +122,81 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
 }
 
 .c9 p {
+  color: #231B22;
+  z-index: 1;
+}
+
+.c9:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c11 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c11 p {
+  color: #D8385E;
+  z-index: 1;
+}
+
+.c11:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c10 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c10 p {
   color: #FFFFFF;
   z-index: 1;
 }
 
-.c9:before {
+.c10:before {
   content: '';
   position: absolute;
   background: #D8385E;
@@ -143,7 +205,16 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
   border-radius: 9999px;
 }
 
-.c5 {
+.c10:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,11 +222,11 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
   padding: 4px 0px;
 }
 
-.c5 div:first-child {
+.c6 div:first-child {
   border-radius: 16px 0 0 16px;
 }
 
-.c5 div:last-child {
+.c6 div:last-child {
   border-radius: 0 16px 16px 0;
 }
 
@@ -164,403 +235,443 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
     class="c0"
   >
     <div
-      style="display: flex; justify-content: space-between;"
+      class="c1"
+      display="flex"
     >
       <svg
-        class="c1"
+        class="c2"
+        data-testid="previous-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
       <p
-        class="c2"
+        class="c3"
         style="align-self: center;"
       >
         August 2022
       </p>
       <svg
-        class="c1"
+        class="c2"
+        data-testid="next-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
     </div>
     <div
-      class="c3"
+      class="c4"
     >
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         M
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         W
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         F
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
     </div>
-    <div>
+    <div
+      class=""
+    >
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-31"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-1"
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c8"
+          class="c10"
+          data-testid="day-field-2"
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
           class="c9"
+          data-testid="day-field-3"
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-4"
         >
           <p
-            class="c7"
+            class="c8"
           >
             4
           </p>
         </div>
         <div
-          class="c8"
+          class="c11"
+          data-testid="day-field-5"
         >
           <p
-            class="c7"
+            class="c8"
           >
             5
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-6"
         >
           <p
-            class="c7"
+            class="c8"
           >
             6
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-7"
         >
           <p
-            class="c7"
+            class="c8"
           >
             7
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-8"
         >
           <p
-            class="c7"
+            class="c8"
           >
             8
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-9"
         >
           <p
-            class="c7"
+            class="c8"
           >
             9
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-10"
         >
           <p
-            class="c7"
+            class="c8"
           >
             10
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-11"
         >
           <p
-            class="c7"
+            class="c8"
           >
             11
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-12"
         >
           <p
-            class="c7"
+            class="c8"
           >
             12
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-13"
         >
           <p
-            class="c7"
+            class="c8"
           >
             13
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-14"
         >
           <p
-            class="c7"
+            class="c8"
           >
             14
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-15"
         >
           <p
-            class="c7"
+            class="c8"
           >
             15
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-16"
         >
           <p
-            class="c7"
+            class="c8"
           >
             16
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-17"
         >
           <p
-            class="c7"
+            class="c8"
           >
             17
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-18"
         >
           <p
-            class="c7"
+            class="c8"
           >
             18
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-19"
         >
           <p
-            class="c7"
+            class="c8"
           >
             19
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-20"
         >
           <p
-            class="c7"
+            class="c8"
           >
             20
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-21"
         >
           <p
-            class="c7"
+            class="c8"
           >
             21
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-22"
         >
           <p
-            class="c7"
+            class="c8"
           >
             22
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-23"
         >
           <p
-            class="c7"
+            class="c8"
           >
             23
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-24"
         >
           <p
-            class="c7"
+            class="c8"
           >
             24
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-25"
         >
           <p
-            class="c7"
+            class="c8"
           >
             25
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-26"
         >
           <p
-            class="c7"
+            class="c8"
           >
             26
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-27"
         >
           <p
-            class="c7"
+            class="c8"
           >
             27
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-28"
         >
           <p
-            class="c7"
+            class="c8"
           >
             28
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-29"
         >
           <p
-            class="c7"
+            class="c8"
           >
             29
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-30"
         >
           <p
-            class="c7"
+            class="c8"
           >
             30
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-31"
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-1"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-2"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-3"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>
@@ -573,11 +684,25 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
 
 exports[`<Calendar /> Snapshots should match with default selected dates range Calendar 1`] = `
 .c1 {
-  width: 28px;
-  height: 28px;
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c7 {
+.c2 {
+  width: 24px;
+  height: 24px;
+}
+
+.c8 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -587,7 +712,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
   color: #231B22;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -598,18 +723,22 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
 }
 
 .c0 {
-  padding: 24px;
+  padding: 12px 12px 16px 12px;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 16px 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -627,10 +756,10 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
   text-align: center;
 }
 
-.c6 {
+.c7 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -648,41 +777,50 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
   cursor: pointer;
 }
 
-.c6 p {
+.c7 p {
   color: #D7D7E0;
-  z-index: 1;
-}
-
-.c8 {
-  width: 32px;
-  height: 32px;
-  padding: 0px 19.35px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background: #FFFFFF;
-  position: relative;
-  cursor: pointer;
-}
-
-.c8 p {
-  color: #231B22;
   z-index: 1;
 }
 
 .c9 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c9 p {
+  color: #231B22;
+  z-index: 1;
+}
+
+.c9:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c10 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -701,12 +839,12 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
   border-radius: 9999px 0px 0px 9999px;
 }
 
-.c9 p {
+.c10 p {
   color: #FFFFFF;
   z-index: 1;
 }
 
-.c9:before {
+.c10:before {
   content: '';
   position: absolute;
   background: #D8385E;
@@ -715,10 +853,19 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
   border-radius: 9999px;
 }
 
-.c10 {
+.c10:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  border-radius: 9999px;
+}
+
+.c11 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -736,15 +883,59 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
   cursor: pointer;
 }
 
-.c10 p {
+.c11 p {
   color: #231B22;
   z-index: 1;
 }
 
-.c11 {
+.c11:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  border-radius: 9999px;
+}
+
+.c12 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #F5F5FA;
+  position: relative;
+  cursor: pointer;
+}
+
+.c12 p {
+  color: #D8385E;
+  z-index: 1;
+}
+
+.c12:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c13 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -763,12 +954,12 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
   border-radius: 0px 9999px 9999px 0px;
 }
 
-.c11 p {
+.c13 p {
   color: #FFFFFF;
   z-index: 1;
 }
 
-.c11:before {
+.c13:before {
   content: '';
   position: absolute;
   background: #D8385E;
@@ -777,7 +968,16 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
   border-radius: 9999px;
 }
 
-.c5 {
+.c13:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -785,11 +985,11 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
   padding: 4px 0px;
 }
 
-.c5 div:first-child {
+.c6 div:first-child {
   border-radius: 16px 0 0 16px;
 }
 
-.c5 div:last-child {
+.c6 div:last-child {
   border-radius: 0 16px 16px 0;
 }
 
@@ -798,403 +998,443 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
     class="c0"
   >
     <div
-      style="display: flex; justify-content: space-between;"
+      class="c1"
+      display="flex"
     >
       <svg
-        class="c1"
+        class="c2"
+        data-testid="previous-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
       <p
-        class="c2"
+        class="c3"
         style="align-self: center;"
       >
         August 2022
       </p>
       <svg
-        class="c1"
+        class="c2"
+        data-testid="next-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
     </div>
     <div
-      class="c3"
+      class="c4"
     >
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         M
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         W
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         F
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
     </div>
-    <div>
+    <div
+      class=""
+    >
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-31"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-1"
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c8"
+          class="c10"
+          data-testid="day-field-2"
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
+          data-testid="day-field-3"
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>
         </div>
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-4"
         >
           <p
-            class="c7"
+            class="c8"
           >
             4
           </p>
         </div>
         <div
-          class="c10"
+          class="c12"
+          data-testid="day-field-5"
         >
           <p
-            class="c7"
+            class="c8"
           >
             5
           </p>
         </div>
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-6"
         >
           <p
-            class="c7"
+            class="c8"
           >
             6
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-7"
         >
           <p
-            class="c7"
+            class="c8"
           >
             7
           </p>
         </div>
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-8"
         >
           <p
-            class="c7"
+            class="c8"
           >
             8
           </p>
         </div>
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-9"
         >
           <p
-            class="c7"
+            class="c8"
           >
             9
           </p>
         </div>
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-10"
         >
           <p
-            class="c7"
+            class="c8"
           >
             10
           </p>
         </div>
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-11"
         >
           <p
-            class="c7"
+            class="c8"
           >
             11
           </p>
         </div>
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-12"
         >
           <p
-            class="c7"
+            class="c8"
           >
             12
           </p>
         </div>
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-13"
         >
           <p
-            class="c7"
+            class="c8"
           >
             13
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-14"
         >
           <p
-            class="c7"
+            class="c8"
           >
             14
           </p>
         </div>
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-15"
         >
           <p
-            class="c7"
+            class="c8"
           >
             15
           </p>
         </div>
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-16"
         >
           <p
-            class="c7"
+            class="c8"
           >
             16
           </p>
         </div>
         <div
-          class="c10"
+          class="c11"
+          data-testid="day-field-17"
         >
           <p
-            class="c7"
+            class="c8"
           >
             17
           </p>
         </div>
         <div
-          class="c11"
+          class="c13"
+          data-testid="day-field-18"
         >
           <p
-            class="c7"
+            class="c8"
           >
             18
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-19"
         >
           <p
-            class="c7"
+            class="c8"
           >
             19
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-20"
         >
           <p
-            class="c7"
+            class="c8"
           >
             20
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-21"
         >
           <p
-            class="c7"
+            class="c8"
           >
             21
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-22"
         >
           <p
-            class="c7"
+            class="c8"
           >
             22
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-23"
         >
           <p
-            class="c7"
+            class="c8"
           >
             23
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-24"
         >
           <p
-            class="c7"
+            class="c8"
           >
             24
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-25"
         >
           <p
-            class="c7"
+            class="c8"
           >
             25
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-26"
         >
           <p
-            class="c7"
+            class="c8"
           >
             26
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-27"
         >
           <p
-            class="c7"
+            class="c8"
           >
             27
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-28"
         >
           <p
-            class="c7"
+            class="c8"
           >
             28
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-29"
         >
           <p
-            class="c7"
+            class="c8"
           >
             29
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-30"
         >
           <p
-            class="c7"
+            class="c8"
           >
             30
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-31"
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-1"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-2"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-3"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>
@@ -1207,11 +1447,25 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
 
 exports[`<Calendar /> Snapshots should match with disabled future dates Calendar 1`] = `
 .c1 {
-  width: 28px;
-  height: 28px;
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c7 {
+.c2 {
+  width: 24px;
+  height: 24px;
+}
+
+.c8 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -1221,7 +1475,7 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
   color: #231B22;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -1232,18 +1486,22 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
 }
 
 .c0 {
-  padding: 24px;
+  padding: 12px 12px 16px 12px;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 16px 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -1261,10 +1519,10 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
   text-align: center;
 }
 
-.c6 {
+.c7 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1282,41 +1540,15 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
   cursor: pointer;
 }
 
-.c6 p {
+.c7 p {
   color: #D7D7E0;
-  z-index: 1;
-}
-
-.c8 {
-  width: 32px;
-  height: 32px;
-  padding: 0px 19.35px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background: #FFFFFF;
-  position: relative;
-  cursor: pointer;
-}
-
-.c8 p {
-  color: #231B22;
   z-index: 1;
 }
 
 .c9 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1335,11 +1567,55 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
 }
 
 .c9 p {
+  color: #231B22;
+  z-index: 1;
+}
+
+.c9:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c10 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c10 p {
   color: #D8385E;
   z-index: 1;
 }
 
-.c5 {
+.c10:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1347,11 +1623,11 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
   padding: 4px 0px;
 }
 
-.c5 div:first-child {
+.c6 div:first-child {
   border-radius: 16px 0 0 16px;
 }
 
-.c5 div:last-child {
+.c6 div:last-child {
   border-radius: 0 16px 16px 0;
 }
 
@@ -1360,431 +1636,469 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
     class="c0"
   >
     <div
-      style="display: flex; justify-content: space-between;"
+      class="c1"
+      display="flex"
     >
       <svg
-        class="c1"
+        class="c2"
+        data-testid="previous-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
       <p
-        class="c2"
+        class="c3"
         style="align-self: center;"
       >
         August 2022
       </p>
       <svg
-        class="c1"
+        class="c2"
+        data-testid="next-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
     </div>
     <div
-      class="c3"
+      class="c4"
     >
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         M
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         W
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         F
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
     </div>
-    <div>
+    <div
+      class=""
+    >
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-31"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-1"
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-2"
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
           class="c9"
+          data-testid="day-field-3"
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>
         </div>
         <div
-          class="c6"
-          disabled=""
+          class="c9"
+          data-testid="day-field-4"
         >
           <p
-            class="c7"
+            class="c8"
           >
             4
           </p>
         </div>
         <div
-          class="c6"
-          disabled=""
+          class="c10"
+          data-testid="day-field-5"
         >
           <p
-            class="c7"
+            class="c8"
           >
             5
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-6"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             6
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-7"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             7
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-8"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             8
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-9"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             9
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-10"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             10
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-11"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             11
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-12"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             12
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-13"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             13
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-14"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             14
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-15"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             15
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-16"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             16
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-17"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             17
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-18"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             18
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-19"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             19
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-20"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             20
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-21"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             21
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-22"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             22
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-23"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             23
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-24"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             24
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-25"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             25
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-26"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             26
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-27"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             27
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-28"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             28
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-29"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             29
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-30"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             30
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-31"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-1"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-2"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-3"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>
@@ -1797,11 +2111,25 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
 
 exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1`] = `
 .c1 {
-  width: 28px;
-  height: 28px;
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c7 {
+.c2 {
+  width: 24px;
+  height: 24px;
+}
+
+.c8 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -1811,7 +2139,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
   color: #231B22;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -1822,18 +2150,22 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
 }
 
 .c0 {
-  padding: 24px;
+  padding: 12px 12px 16px 12px;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 16px 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -1851,10 +2183,10 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
   text-align: center;
 }
 
-.c6 {
+.c7 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1872,15 +2204,50 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
   cursor: pointer;
 }
 
-.c6 p {
+.c7 p {
   color: #D7D7E0;
   z-index: 1;
+}
+
+.c10 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c10 p {
+  color: #231B22;
+  z-index: 1;
+}
+
+.c10:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
 }
 
 .c9 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1899,37 +2266,20 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
 }
 
 .c9 p {
-  color: #231B22;
-  z-index: 1;
-}
-
-.c8 {
-  width: 32px;
-  height: 32px;
-  padding: 0px 19.35px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background: #FFFFFF;
-  position: relative;
-  cursor: pointer;
-}
-
-.c8 p {
   color: #D8385E;
   z-index: 1;
 }
 
-.c5 {
+.c9:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1937,11 +2287,11 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
   padding: 4px 0px;
 }
 
-.c5 div:first-child {
+.c6 div:first-child {
   border-radius: 16px 0 0 16px;
 }
 
-.c5 div:last-child {
+.c6 div:last-child {
   border-radius: 0 16px 16px 0;
 }
 
@@ -1950,405 +2300,447 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
     class="c0"
   >
     <div
-      style="display: flex; justify-content: space-between;"
+      class="c1"
+      display="flex"
     >
       <svg
-        class="c1"
+        class="c2"
+        data-testid="previous-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
       <p
-        class="c2"
+        class="c3"
         style="align-self: center;"
       >
         August 2022
       </p>
       <svg
-        class="c1"
+        class="c2"
+        data-testid="next-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
     </div>
     <div
-      class="c3"
+      class="c4"
     >
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         M
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         W
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         F
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
     </div>
-    <div>
+    <div
+      class=""
+    >
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-31"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-1"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-2"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
-          class="c8"
+          class="c7"
+          data-testid="day-field-3"
+          disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>
         </div>
         <div
-          class="c9"
+          class="c7"
+          data-testid="day-field-4"
+          disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             4
           </p>
         </div>
         <div
           class="c9"
+          data-testid="day-field-5"
         >
           <p
-            class="c7"
+            class="c8"
           >
             5
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-6"
         >
           <p
-            class="c7"
+            class="c8"
           >
             6
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-7"
         >
           <p
-            class="c7"
+            class="c8"
           >
             7
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-8"
         >
           <p
-            class="c7"
+            class="c8"
           >
             8
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-9"
         >
           <p
-            class="c7"
+            class="c8"
           >
             9
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-10"
         >
           <p
-            class="c7"
+            class="c8"
           >
             10
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-11"
         >
           <p
-            class="c7"
+            class="c8"
           >
             11
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-12"
         >
           <p
-            class="c7"
+            class="c8"
           >
             12
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-13"
         >
           <p
-            class="c7"
+            class="c8"
           >
             13
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-14"
         >
           <p
-            class="c7"
+            class="c8"
           >
             14
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-15"
         >
           <p
-            class="c7"
+            class="c8"
           >
             15
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-16"
         >
           <p
-            class="c7"
+            class="c8"
           >
             16
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-17"
         >
           <p
-            class="c7"
+            class="c8"
           >
             17
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-18"
         >
           <p
-            class="c7"
+            class="c8"
           >
             18
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-19"
         >
           <p
-            class="c7"
+            class="c8"
           >
             19
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-20"
         >
           <p
-            class="c7"
+            class="c8"
           >
             20
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-21"
         >
           <p
-            class="c7"
+            class="c8"
           >
             21
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-22"
         >
           <p
-            class="c7"
+            class="c8"
           >
             22
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-23"
         >
           <p
-            class="c7"
+            class="c8"
           >
             23
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-24"
         >
           <p
-            class="c7"
+            class="c8"
           >
             24
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-25"
         >
           <p
-            class="c7"
+            class="c8"
           >
             25
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-26"
         >
           <p
-            class="c7"
+            class="c8"
           >
             26
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-27"
         >
           <p
-            class="c7"
+            class="c8"
           >
             27
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-28"
         >
           <p
-            class="c7"
+            class="c8"
           >
             28
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-29"
         >
           <p
-            class="c7"
+            class="c8"
           >
             29
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-30"
         >
           <p
-            class="c7"
+            class="c8"
           >
             30
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
+          data-testid="day-field-31"
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-1"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-2"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-3"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>
@@ -2361,11 +2753,25 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
 
 exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
 .c1 {
-  width: 28px;
-  height: 28px;
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c7 {
+.c2 {
+  width: 24px;
+  height: 24px;
+}
+
+.c8 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -2375,7 +2781,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
   color: #231B22;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -2386,18 +2792,22 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
 }
 
 .c0 {
-  padding: 24px;
+  padding: 12px 12px 16px 12px;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 16px 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -2415,10 +2825,10 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
   text-align: center;
 }
 
-.c6 {
+.c7 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2436,41 +2846,15 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
   cursor: pointer;
 }
 
-.c6 p {
+.c7 p {
   color: #D7D7E0;
-  z-index: 1;
-}
-
-.c8 {
-  width: 32px;
-  height: 32px;
-  padding: 0px 19.35px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background: #FFFFFF;
-  position: relative;
-  cursor: pointer;
-}
-
-.c8 p {
-  color: #231B22;
   z-index: 1;
 }
 
 .c9 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2489,11 +2873,55 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
 }
 
 .c9 p {
+  color: #231B22;
+  z-index: 1;
+}
+
+.c9:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c10 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c10 p {
   color: #D8385E;
   z-index: 1;
 }
 
-.c5 {
+.c10:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2501,11 +2929,11 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
   padding: 4px 0px;
 }
 
-.c5 div:first-child {
+.c6 div:first-child {
   border-radius: 16px 0 0 16px;
 }
 
-.c5 div:last-child {
+.c6 div:last-child {
   border-radius: 0 16px 16px 0;
 }
 
@@ -2514,403 +2942,443 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
     class="c0"
   >
     <div
-      style="display: flex; justify-content: space-between;"
+      class="c1"
+      display="flex"
     >
       <svg
-        class="c1"
+        class="c2"
+        data-testid="previous-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
       <p
-        class="c2"
+        class="c3"
         style="align-self: center;"
       >
         August 2022
       </p>
       <svg
-        class="c1"
+        class="c2"
+        data-testid="next-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
     </div>
     <div
-      class="c3"
+      class="c4"
     >
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         M
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         W
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         F
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
     </div>
-    <div>
+    <div
+      class=""
+    >
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-31"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-1"
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-2"
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
           class="c9"
+          data-testid="day-field-3"
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-4"
         >
           <p
-            class="c7"
+            class="c8"
           >
             4
           </p>
         </div>
         <div
-          class="c8"
+          class="c10"
+          data-testid="day-field-5"
         >
           <p
-            class="c7"
+            class="c8"
           >
             5
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-6"
         >
           <p
-            class="c7"
+            class="c8"
           >
             6
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-7"
         >
           <p
-            class="c7"
+            class="c8"
           >
             7
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-8"
         >
           <p
-            class="c7"
+            class="c8"
           >
             8
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-9"
         >
           <p
-            class="c7"
+            class="c8"
           >
             9
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-10"
         >
           <p
-            class="c7"
+            class="c8"
           >
             10
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-11"
         >
           <p
-            class="c7"
+            class="c8"
           >
             11
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-12"
         >
           <p
-            class="c7"
+            class="c8"
           >
             12
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-13"
         >
           <p
-            class="c7"
+            class="c8"
           >
             13
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-14"
         >
           <p
-            class="c7"
+            class="c8"
           >
             14
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-15"
         >
           <p
-            class="c7"
+            class="c8"
           >
             15
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-16"
         >
           <p
-            class="c7"
+            class="c8"
           >
             16
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-17"
         >
           <p
-            class="c7"
+            class="c8"
           >
             17
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-18"
         >
           <p
-            class="c7"
+            class="c8"
           >
             18
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-19"
         >
           <p
-            class="c7"
+            class="c8"
           >
             19
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-20"
         >
           <p
-            class="c7"
+            class="c8"
           >
             20
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-21"
         >
           <p
-            class="c7"
+            class="c8"
           >
             21
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-22"
         >
           <p
-            class="c7"
+            class="c8"
           >
             22
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-23"
         >
           <p
-            class="c7"
+            class="c8"
           >
             23
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-24"
         >
           <p
-            class="c7"
+            class="c8"
           >
             24
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-25"
         >
           <p
-            class="c7"
+            class="c8"
           >
             25
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-26"
         >
           <p
-            class="c7"
+            class="c8"
           >
             26
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-27"
         >
           <p
-            class="c7"
+            class="c8"
           >
             27
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-28"
         >
           <p
-            class="c7"
+            class="c8"
           >
             28
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-29"
         >
           <p
-            class="c7"
+            class="c8"
           >
             29
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-30"
         >
           <p
-            class="c7"
+            class="c8"
           >
             30
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-31"
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-1"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-2"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-3"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>
@@ -2923,11 +3391,25 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
 
 exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
 .c1 {
-  width: 28px;
-  height: 28px;
+  margin: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c7 {
+.c2 {
+  width: 24px;
+  height: 24px;
+}
+
+.c8 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -2937,7 +3419,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
   color: #231B22;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -2948,18 +3430,22 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
 }
 
 .c0 {
-  padding: 24px;
+  padding: 12px 12px 16px 12px;
 }
 
-.c3 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 16px 0px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 8px 0px 12px 0px;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -2977,10 +3463,10 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
   text-align: center;
 }
 
-.c6 {
+.c7 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2998,41 +3484,15 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
   cursor: pointer;
 }
 
-.c6 p {
+.c7 p {
   color: #D7D7E0;
-  z-index: 1;
-}
-
-.c8 {
-  width: 32px;
-  height: 32px;
-  padding: 0px 19.35px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background: #FFFFFF;
-  position: relative;
-  cursor: pointer;
-}
-
-.c8 p {
-  color: #231B22;
   z-index: 1;
 }
 
 .c9 {
   width: 32px;
   height: 32px;
-  padding: 0px 19.35px;
+  padding: 0px 21.3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3051,11 +3511,55 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
 }
 
 .c9 p {
+  color: #231B22;
+  z-index: 1;
+}
+
+.c9:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c10 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c10 p {
   color: #D8385E;
   z-index: 1;
 }
 
-.c5 {
+.c10:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3063,11 +3567,11 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
   padding: 4px 0px;
 }
 
-.c5 div:first-child {
+.c6 div:first-child {
   border-radius: 16px 0 0 16px;
 }
 
-.c5 div:last-child {
+.c6 div:last-child {
   border-radius: 0 16px 16px 0;
 }
 
@@ -3076,403 +3580,443 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
     class="c0"
   >
     <div
-      style="display: flex; justify-content: space-between;"
+      class="c1"
+      display="flex"
     >
       <svg
-        class="c1"
+        class="c2"
+        data-testid="previous-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
       <p
-        class="c2"
+        class="c3"
         style="align-self: center;"
       >
         August 2022
       </p>
       <svg
-        class="c1"
+        class="c2"
+        data-testid="next-month-arrow"
         fill="#D8385E"
-        height="28"
+        height="24"
         style="cursor: pointer;"
-        width="28"
+        width="24"
       />
     </div>
     <div
-      class="c3"
+      class="c4"
     >
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         M
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         W
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         T
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         F
       </p>
       <p
-        class="c4"
+        class="c5"
       >
         S
       </p>
     </div>
-    <div>
+    <div
+      class=""
+    >
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-31"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-1"
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-2"
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
           class="c9"
+          data-testid="day-field-3"
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-4"
         >
           <p
-            class="c7"
+            class="c8"
           >
             4
           </p>
         </div>
         <div
-          class="c8"
+          class="c10"
+          data-testid="day-field-5"
         >
           <p
-            class="c7"
+            class="c8"
           >
             5
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-6"
         >
           <p
-            class="c7"
+            class="c8"
           >
             6
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-7"
         >
           <p
-            class="c7"
+            class="c8"
           >
             7
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-8"
         >
           <p
-            class="c7"
+            class="c8"
           >
             8
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-9"
         >
           <p
-            class="c7"
+            class="c8"
           >
             9
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-10"
         >
           <p
-            class="c7"
+            class="c8"
           >
             10
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-11"
         >
           <p
-            class="c7"
+            class="c8"
           >
             11
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-12"
         >
           <p
-            class="c7"
+            class="c8"
           >
             12
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-13"
         >
           <p
-            class="c7"
+            class="c8"
           >
             13
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-14"
         >
           <p
-            class="c7"
+            class="c8"
           >
             14
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-15"
         >
           <p
-            class="c7"
+            class="c8"
           >
             15
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-16"
         >
           <p
-            class="c7"
+            class="c8"
           >
             16
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-17"
         >
           <p
-            class="c7"
+            class="c8"
           >
             17
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-18"
         >
           <p
-            class="c7"
+            class="c8"
           >
             18
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-19"
         >
           <p
-            class="c7"
+            class="c8"
           >
             19
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-20"
         >
           <p
-            class="c7"
+            class="c8"
           >
             20
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-21"
         >
           <p
-            class="c7"
+            class="c8"
           >
             21
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-22"
         >
           <p
-            class="c7"
+            class="c8"
           >
             22
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-23"
         >
           <p
-            class="c7"
+            class="c8"
           >
             23
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-24"
         >
           <p
-            class="c7"
+            class="c8"
           >
             24
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-25"
         >
           <p
-            class="c7"
+            class="c8"
           >
             25
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-26"
         >
           <p
-            class="c7"
+            class="c8"
           >
             26
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-27"
         >
           <p
-            class="c7"
+            class="c8"
           >
             27
           </p>
         </div>
       </div>
       <div
-        class="c5"
+        class="c6"
       >
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-28"
         >
           <p
-            class="c7"
+            class="c8"
           >
             28
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-29"
         >
           <p
-            class="c7"
+            class="c8"
           >
             29
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-30"
         >
           <p
-            class="c7"
+            class="c8"
           >
             30
           </p>
         </div>
         <div
-          class="c8"
+          class="c9"
+          data-testid="day-field-31"
         >
           <p
-            class="c7"
+            class="c8"
           >
             31
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-1"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             1
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-2"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             2
           </p>
         </div>
         <div
-          class="c6"
+          class="c7"
+          data-testid="day-field-3"
           disabled=""
         >
           <p
-            class="c7"
+            class="c8"
           >
             3
           </p>

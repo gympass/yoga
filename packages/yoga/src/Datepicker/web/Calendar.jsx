@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Icon, Text } from '@gympass/yoga';
+import { Icon, Text, Box } from '@gympass/yoga';
 import { ChevronLeft, ChevronRight } from '@gympass/yoga-icons';
 import { oneOf, func, instanceOf, bool } from 'prop-types';
 import _ from 'lodash';
@@ -11,7 +11,7 @@ const CalendarWrapper = styled.div`
       yoga: { spacing },
     },
   }) => `
-    padding: ${spacing.large}px;
+    padding: ${spacing.xsmall}px ${spacing.xsmall}px ${spacing.small}px ${spacing.xsmall}px;
   `}
 `;
 
@@ -22,7 +22,8 @@ const DaysWrapper = styled.div`
     },
   }) => `
     display: flex;
-    margin: ${spacing.small}px ${spacing.zero}px
+    justify-content: space-between;
+    margin: ${spacing.xxsmall}px ${spacing.zero}px ${spacing.xsmall}px ${spacing.zero}px;
   `}
 `;
 
@@ -82,7 +83,7 @@ const getDayFieldRadius = (aux, radii) => {
     return `${radii.sharp}px ${radii.circle}px ${radii.circle}px ${radii.sharp}px`;
   }
 
-  return radii.circle;
+  return `${radii.sharp}px`;
 };
 
 const DayField = styled.div`
@@ -104,9 +105,9 @@ const DayField = styled.div`
         color: ${getDayFieldColor(selected, disabled, colors, aux)};
         z-index: 1;
     }
-    width: ${datepicker.width.dayField}px;
-    height: ${datepicker.width.dayField}px;
-    padding: ${spacing.zero}px 19.35px;
+    width: ${datepicker.width.day}px;
+    height: ${datepicker.width.day}px;
+    padding: ${spacing.zero}px 21.3px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,10 +125,24 @@ const DayField = styled.div`
             content: '';
             position: absolute;
             background: ${colors.vibin};
-            width: ${datepicker.width.dayField}px;
-            height: ${datepicker.width.dayField}px;
+            width: ${datepicker.width.day}px;
+            height: ${datepicker.width.day}px;
             border-radius: ${radii.circle}px;
         }`
+        : ``
+    }
+    ${
+      !disabled
+        ? `&:hover {
+            &:before {
+              content: '';
+              position: absolute;
+              border: 1px solid ${colors.secondary};
+              width: ${datepicker.width.day}px;
+              height: ${datepicker.width.day}px;
+              border-radius: ${radii.circle}px;
+            }
+          }`
         : ``
     }
 `}
@@ -247,6 +262,7 @@ const Calendar = ({
           onClick={() => val <= 7 && onClick(val)}
           inRange={type === 'range' && val <= 7 && inRange(val)}
           aux={{ val, startDate, endDate, year, month }}
+          data-testid={`day-field-${val}`}
         >
           <Text.Small>{val}</Text.Small>
         </DayField>
@@ -273,6 +289,7 @@ const Calendar = ({
             key={val}
             disabled={isDisabled(val)}
             aux={{ val, startDate, endDate, year, month }}
+            data-testid={`day-field-${val}`}
           >
             <Text.Small>{val}</Text.Small>
           </DayField>
@@ -299,6 +316,7 @@ const Calendar = ({
           onClick={() => val > 7 && onClick(val)}
           inRange={type === 'range' && val > 7 && inRange(val)}
           aux={{ val, startDate, endDate, year, month }}
+          data-testid={`day-field-${val}`}
         >
           <Text.Small>{val}</Text.Small>
         </DayField>
@@ -338,19 +356,21 @@ const Calendar = ({
 
   return (
     <CalendarWrapper>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-        }}
+      <Box
+        display="flex"
+        justifyContent="space-between"
+        m="xxsmall"
+        mb="zero"
+        pb="small"
       >
         <Icon
           style={{ cursor: 'pointer' }}
           as={ChevronLeft}
-          width="28"
-          height="28"
+          width="large"
+          height="large"
           onClick={prior}
           fill="primary"
+          data-testid="previous-month-arrow"
         />
         <Text style={{ alignSelf: 'center' }}>
           {new Intl.DateTimeFormat('en-US', {
@@ -361,12 +381,13 @@ const Calendar = ({
         <Icon
           style={{ cursor: 'pointer' }}
           as={ChevronRight}
-          width="28"
-          height="28"
+          width="large"
+          height="large"
           onClick={next}
           fill="primary"
+          data-testid="next-month-arrow"
         />
-      </div>
+      </Box>
       <DaysWrapper>
         <Day>S</Day>
         <Day>M</Day>
@@ -376,7 +397,7 @@ const Calendar = ({
         <Day>F</Day>
         <Day>S</Day>
       </DaysWrapper>
-      <div>{getDays()}</div>
+      <Box>{getDays()}</Box>
     </CalendarWrapper>
   );
 };

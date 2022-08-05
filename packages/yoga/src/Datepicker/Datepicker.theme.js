@@ -1,9 +1,9 @@
 const Datepicker = () => ({
   width: {
-    dayField: 32,
+    day: 32,
   },
   height: {
-    dayField: 20,
+    day: 20,
   },
 });
 

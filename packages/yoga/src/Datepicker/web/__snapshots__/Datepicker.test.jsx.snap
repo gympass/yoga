@@ -86,6 +86,7 @@ exports[`<Datepicker /> Snapshots should match with custom placeholder single Da
   >
     <div
       class="c1"
+      data-testid="datepicker"
     >
       <p
         class="c2"
@@ -200,11 +201,13 @@ exports[`<Datepicker /> Snapshots should match with default selected date single
   >
     <div
       class="c1"
+      data-testid="datepicker"
     >
       <p
         class="c2"
+        data-testid="datepicker-input"
       >
-        8/3/2022
+        8/2/2022
       </p>
       <button
         class="c3"
@@ -314,11 +317,13 @@ exports[`<Datepicker /> Snapshots should match with default selected dates range
   >
     <div
       class="c1"
+      data-testid="datepicker"
     >
       <p
         class="c2"
+        data-testid="datepicker-input"
       >
-        8/3/2022
+        8/2/2022
          - 8/18/2022
       </p>
       <button
@@ -422,6 +427,7 @@ exports[`<Datepicker /> Snapshots should match with disabled Datepicker 1`] = `
   >
     <div
       class="c1"
+      data-testid="datepicker"
       disabled=""
     >
       <p
@@ -532,6 +538,7 @@ exports[`<Datepicker /> Snapshots should match with disabled future dates Datepi
   >
     <div
       class="c1"
+      data-testid="datepicker"
     >
       <p
         class="c2"
@@ -639,6 +646,7 @@ exports[`<Datepicker /> Snapshots should match with disabled past dates Datepick
   >
     <div
       class="c1"
+      data-testid="datepicker"
     >
       <p
         class="c2"
@@ -759,6 +767,7 @@ exports[`<Datepicker /> Snapshots should match with error Datepicker 1`] = `
   >
     <div
       class="c1"
+      data-testid="datepicker"
     >
       <p
         class="c2"
@@ -871,6 +880,7 @@ exports[`<Datepicker /> Snapshots should match with range Datepicker 1`] = `
   >
     <div
       class="c1"
+      data-testid="datepicker"
     >
       <p
         class="c2"
@@ -978,6 +988,7 @@ exports[`<Datepicker /> Snapshots should match with single Datepicker 1`] = `
   >
     <div
       class="c1"
+      data-testid="datepicker"
     >
       <p
         class="c2"

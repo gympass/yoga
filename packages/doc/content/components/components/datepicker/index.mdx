@@ -24,7 +24,7 @@ render(() => {
     <Datepicker
       type="single"
       startDate={selectedDate}
-      onSelect={setSelectedDate}
+      onSelectSingle={setSelectedDate}
     />
   );
 });
@@ -64,7 +64,7 @@ render(() => {
     <Datepicker
       type="single"
       startDate={selectedDate}
-      onSelect={setSelectedDate}
+      onSelectSingle={setSelectedDate}
     />
   );
 });
@@ -106,7 +106,7 @@ render(() => {
     <Datepicker
       type="single"
       startDate={selectedDate}
-      onSelect={setSelectedDate}
+      onSelectSingle={setSelectedDate}
       placeholder="This is a custom placeholder :)"
     />
   );
@@ -123,7 +123,7 @@ render(() => {
     <Datepicker
       type="single"
       startDate={selectedDate}
-      onSelect={setSelectedDate}
+      onSelectSingle={setSelectedDate}
       disablePastDates
     />
   );
@@ -140,7 +140,7 @@ render(() => {
     <Datepicker
       type="single"
       startDate={selectedDate}
-      onSelect={setSelectedDate}
+      onSelectSingle={setSelectedDate}
       disableFutureDates
     />
   );
@@ -157,7 +157,7 @@ render(() => {
     <Datepicker
       type="single"
       startDate={selectedDate}
-      onSelect={setSelectedDate}
+      onSelectSingle={setSelectedDate}
       disabled
     />
   );
@@ -174,8 +174,28 @@ render(() => {
     <Datepicker
       type="single"
       startDate={selectedDate}
-      onSelect={setSelectedDate}
+      onSelectSingle={setSelectedDate}
       error="This is an error!"
+    />
+  );
+});
+```
+
+### Datepicker custom onOpen action
+
+```javascript state
+render(() => {
+  const [selectedDate, setSelectedDate] = useState();
+  const onOpen = isOpen => {
+    alert(`onOpen custom action. isOpen -> ${isOpen}`);
+  };
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelectSingle={setSelectedDate}
+      onOpen={onOpen}
     />
   );
 });

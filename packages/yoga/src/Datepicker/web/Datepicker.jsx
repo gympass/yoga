@@ -113,16 +113,17 @@ const TButton = styled.button`
 const Panel = styled.div`
   ${({
     theme: {
-      yoga: { components, colors, radii, elevations },
+      yoga: { components, colors, radii, borders, spacing },
     },
   }) => `
-  position: absolute;
-  background-color: ${colors.white};
-  box-shadow: ${elevations.large};
-  z-index: 1;
-  width: ${components.input.width}px;
-  left: 0;
-  border-radius: ${radii.small}px;
+    position: absolute;
+    background-color: ${colors.white};
+    border: ${borders.small}px solid ${colors.elements.lineAndBorders};
+    z-index: 1;
+    width: ${components.input.width}px;
+    left: 0;
+    border-radius: ${radii.regular}px;
+    margin-top: ${spacing.xxsmall}px;
   `}
 `;
 
@@ -150,7 +151,8 @@ const ErrorWrapper = styled(Text.Small)`
   }) => `
     margin-top: ${components.input.helper.margin.top}px;
     font-size: ${components.input.helper.font.size}px;
-    color: ${colors.feedback.attention[1]}
+    color: ${colors.feedback.attention[1]};
+    position: absolute;
   `}
 `;
 
@@ -177,6 +179,7 @@ const Datepicker = ({
   disablePastDates,
   disableFutureDates,
   error,
+  onOpen,
 }) => {
   const [open, setOpen] = useState(false.toString());
   const [startD, setStartDate] = useState(startDate);
@@ -201,6 +204,7 @@ const Datepicker = ({
   useEffect(() => {
     if (type === 'single' && onSelectSingle) {
       onSelectSingle(startD);
+      setOpen(false.toString());
     } else if (type === 'range' && onSelectRange) {
       onSelectRange(startD, endD);
     }
@@ -235,7 +239,7 @@ const Datepicker = ({
 
     return (
       startD && (
-        <Input disabled={disabled}>
+        <Input disabled={disabled} data-testid="datepicker-input">
           {new Intl.DateTimeFormat('en-US', {
             year: 'numeric',
             month: 'numeric',
@@ -254,20 +258,26 @@ const Datepicker = ({
 
   return (
     <Wrapper fullWidth={fullWidth} ref={ref}>
-      <Selector open={open === 'true'} disabled={disabled} error={error}>
+      <Selector
+        open={open === 'true'}
+        disabled={disabled}
+        error={error}
+        data-testid="datepicker"
+      >
         {renderInput()}
         <TButton
           onClick={() => {
             if (!disabled) {
               setOpen((open !== 'true').toString());
             }
+            onOpen(open === 'true');
           }}
         >
           {/* svg only recognizes lowercase isopen */}
           <ArrowIcon isopen={open.toString()} disabled={disabled} />
         </TButton>
       </Selector>
-      {error && <ErrorWrapper>{error}</ErrorWrapper>}
+      {error && <ErrorWrapper>{open !== 'true' && error}</ErrorWrapper>}
       {open === 'true' && (
         <Panel tabIndex={-1}>
           <Calendar
@@ -297,6 +307,7 @@ Datepicker.propTypes = {
   disablePastDates: bool,
   disableFutureDates: bool,
   error: string,
+  onOpen: func,
 };
 
 Datepicker.defaultProps = {
@@ -305,11 +316,12 @@ Datepicker.defaultProps = {
   startDate: undefined,
   endDate: undefined,
   disabled: false,
-  onSelectSingle: null,
-  onSelectRange: null,
+  onSelectSingle: undefined,
+  onSelectRange: undefined,
   disablePastDates: false,
   disableFutureDates: false,
   error: undefined,
+  onOpen: null,
 };
 
 export default Datepicker;
