@@ -52,10 +52,10 @@ const Overlay = styled.div`
   `}
 `;
 
-const Dialog = ({ isOpen, children, onClose, ...props }) => {
+const Dialog = ({ isOpen, hideCloseButton, children, onClose, ...props }) => {
   const dialogRef = useRef(null);
-
   const dialogElement = usePortal('dialog');
+  const isCloseButtonVisible = onClose && !hideCloseButton;
 
   const closeDialog = useCallback(
     e => {
@@ -87,7 +87,7 @@ const Dialog = ({ isOpen, children, onClose, ...props }) => {
     createPortal(
       <Overlay onClick={closeDialog} onClose={onClose} ref={dialogRef}>
         <StyledDialog onClose={onClose} {...props}>
-          {onClose && (
+          {isCloseButtonVisible && (
             <Box d="flex" justifyContent="flex-end" w="100%">
               <Button.Icon icon={Close} inverted onClick={onClose} />
             </Box>
@@ -106,6 +106,9 @@ Dialog.propTypes = {
   /** Control the dialog visibility. */
   isOpen: bool,
 
+  /** Hide the close button when onClose prop is defined. */
+  hideCloseButton: bool,
+
   /** Function to close the dialog. */
   onClose: func,
 
@@ -114,6 +117,7 @@ Dialog.propTypes = {
 
 Dialog.defaultProps = {
   isOpen: false,
+  hideCloseButton: false,
   onClose: undefined,
 };
 
