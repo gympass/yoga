@@ -45,7 +45,7 @@ const ButtonText = forwardRef(
     let textColor = colors[state];
 
     if (disabled) {
-      textColor = colors.text.disabled;
+      textColor = button.types.text.disabled;
     } else if (inverted) {
       textColor = colors.white;
       if (pressed) {
