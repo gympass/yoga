@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.45.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.44.5...@gympass/yoga@7.45.0) (2022-08-05)
+
+
+### Features
+
+* **BottomSheet:** hide close button ([c1d4c23](https://github.com/Gympass/yoga/commit/c1d4c23f2e166289bb3887b91e2bb8a2b646c9ae))
+* **Dialog:** add prop to hide the close button ([4833bb5](https://github.com/Gympass/yoga/commit/4833bb5e83ebed3075b3307b22a74401bc4402a2))
+
+
+
+
+
 ## [7.44.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.44.4...@gympass/yoga@7.44.5) (2022-07-28)
 
 **Note:** Version bump only for package @gympass/yoga

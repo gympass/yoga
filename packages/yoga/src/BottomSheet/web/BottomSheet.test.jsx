@@ -50,4 +50,28 @@ describe('<BottomSheet />', () => {
 
     expect(onActionMock).toHaveBeenCalledTimes(1);
   });
+
+  it('should hide the close button', () => {
+    render(
+      <ThemeProvider>
+        <BottomSheet isOpen onClose={() => {}}>
+          <BottomSheet.Header>Title</BottomSheet.Header>
+        </BottomSheet>
+      </ThemeProvider>,
+    );
+
+    expect(screen.queryByRole('button')).toBeNull();
+  });
+
+  it('should show the close button', () => {
+    render(
+      <ThemeProvider>
+        <BottomSheet isOpen hideCloseButton={false} onClose={() => {}}>
+          <BottomSheet.Header>Title</BottomSheet.Header>
+        </BottomSheet>
+      </ThemeProvider>,
+    );
+
+    expect(screen.getByRole('button')).not.toBeNull();
+  });
 });
