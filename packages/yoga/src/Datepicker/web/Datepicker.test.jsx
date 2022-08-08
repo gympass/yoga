@@ -1,5 +1,6 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
+import moment from 'moment';
 
 import { ThemeProvider, Datepicker } from '../..';
 import { toUTC } from './Datepicker';
@@ -97,6 +98,8 @@ describe('<Datepicker />', () => {
     });
   });
   describe('Unit', () => {
+    const dateFormat = 'MMM D, YYYY';
+
     it('should call onSelectSingle function on single Datepicker', () => {
       const onSelectSingle = jest.fn();
 
@@ -141,11 +144,7 @@ describe('<Datepicker />', () => {
           <Datepicker type="single" startDate={currentDate} />
         </ThemeProvider>,
       );
-      const formattedDate = new Intl.DateTimeFormat('en-US', {
-        year: 'numeric',
-        month: 'numeric',
-        day: 'numeric',
-      }).format(toUTC(currentDate));
+      const formattedDate = moment(currentDate).format(dateFormat);
 
       expect(screen.getByTestId('datepicker-input').textContent).toBe(
         formattedDate,
@@ -157,16 +156,8 @@ describe('<Datepicker />', () => {
 
       end.setDate(currentDate.getDate() + 15);
 
-      const formattedStartDate = new Intl.DateTimeFormat('en-US', {
-        year: 'numeric',
-        month: 'numeric',
-        day: 'numeric',
-      }).format(toUTC(currentDate));
-      const formattedEndDate = new Intl.DateTimeFormat('en-US', {
-        year: 'numeric',
-        month: 'numeric',
-        day: 'numeric',
-      }).format(toUTC(end));
+      const formattedStartDate = moment(currentDate).format(dateFormat);
+      const formattedEndDate = moment(end).format(dateFormat);
 
       render(
         <ThemeProvider>
