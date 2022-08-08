@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.48.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.47.0...@gympass/yoga@7.48.0) (2022-08-08)
+
+
+### Features
+
+* **button:** updating disabled color for component and compounds ([af8b5a4](https://github.com/Gympass/yoga/commit/af8b5a40ea327e99c2e11564ea35c0adb256b5bf))
+
+
+
+
+
 # [7.47.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.46.0...@gympass/yoga@7.47.0) (2022-08-08)
 
 
