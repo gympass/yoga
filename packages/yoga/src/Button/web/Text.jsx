@@ -72,9 +72,9 @@ const ButtonText = styled(Button)`
       &:disabled {
         background-color: ${button.types.text.backgroundColor};
         border-color: ${button.types.text.backgroundColor};
-        color: ${colors.text.disabled};
+        color: ${button.types.text.disabled};
         svg {
-          fill: ${colors.text.disabled};
+          fill: ${button.types.text.disabled};
         }
       }
     `;
