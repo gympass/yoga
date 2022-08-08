@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.46.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.45.0...@gympass/yoga@7.46.0) (2022-08-08)
+
+
+### Features
+
+* **menu:** add menu placement options ([13173c1](https://github.com/Gympass/yoga/commit/13173c1f082d8dc188e25c5c1242c027ef7e6f9c))
+
+
+
+
+
 # [7.45.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.44.5...@gympass/yoga@7.45.0) (2022-08-05)
 
 
