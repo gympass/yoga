@@ -1,0 +1,39 @@
+### Reference
+
+The `Skeleton` component display´s a preview of a content right before the data is loaded. Using this component you can reducing the user perception of slow loading since your component data may not be immediately available. With it the data is shown incrementally on the screen.
+
+With this resourse available we sugest that you avoit the use of Progress components (spiners).
+
+#### Circular
+
+```javascript
+  <Skeleton type="circular" width={48} height={48} />
+```
+
+#### Rectangular
+
+```javascript
+  <Skeleton type="rectangular" width={400} height={200} />
+```
+
+#### Text
+
+```javascript
+  <Skeleton type="text" variant="h1" width={500} />
+```
+
+The text type can receive a prop called `variant`, that can be one of the following values:
+
+- `h1` - 56px height;
+- `h2` - 48px height;
+- `h3` - 40px height;
+- `h4` - 32px height;
+- `h5` - 28px height;
+- `body1` - 24px height;
+- `body2` - 20px height;
+- `overline` - 16px height;
+- `exception` - 12px height;
+
+### Props
+
+<PropsTable component="Skeleton" platform="web" />

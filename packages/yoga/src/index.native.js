@@ -21,6 +21,7 @@ import Result from './Result';
 import Divider from './Divider';
 import Snackbar from './Snackbar';
 import Banner from './Banner';
+import Skeleton from './Skeleton';
 
 export {
   ThemeProvider,
@@ -52,4 +53,5 @@ export {
   Divider,
   Snackbar,
   Banner,
+  Skeleton,
 };
