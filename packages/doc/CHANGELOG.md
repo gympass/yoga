@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.27.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.26.0...@gympass/yoga-doc@2.27.0) (2022-08-08)
+
+
+### Features
+
+* **components:** add Skeleton ([eb1863d](https://github.com/gympass/yoga/commit/eb1863dcac981dd6f7334206332bfec143c238ae))
+
+
+
+
+
 # [2.26.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.25.0...@gympass/yoga-doc@2.26.0) (2022-08-08)
 
 

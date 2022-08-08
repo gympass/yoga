@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.47.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.46.0...@gympass/yoga@7.47.0) (2022-08-08)
+
+
+### Features
+
+* **components:** add Skeleton ([eb1863d](https://github.com/Gympass/yoga/commit/eb1863dcac981dd6f7334206332bfec143c238ae))
+* **skeleton:** add prop to turn animation off ([af92649](https://github.com/Gympass/yoga/commit/af92649dd7dd9c2a2a700c7a83ce91f7ab1c26e0))
+
+
+
+
+
 # [7.46.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.45.0...@gympass/yoga@7.46.0) (2022-08-08)
 
 
