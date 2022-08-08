@@ -99,7 +99,6 @@ exports[`<Datepicker /> Snapshots should match with custom placeholder single Da
         <svg
           class="c4"
           height="20"
-          isopen="false"
           width="20"
         />
       </button>
@@ -215,7 +214,6 @@ exports[`<Datepicker /> Snapshots should match with default selected date single
         <svg
           class="c4"
           height="20"
-          isopen="false"
           width="20"
         />
       </button>
@@ -332,7 +330,6 @@ exports[`<Datepicker /> Snapshots should match with default selected dates range
         <svg
           class="c4"
           height="20"
-          isopen="false"
           width="20"
         />
       </button>
@@ -443,7 +440,6 @@ exports[`<Datepicker /> Snapshots should match with disabled Datepicker 1`] = `
           class="c4"
           disabled=""
           height="20"
-          isopen="false"
           width="20"
         />
       </button>
@@ -551,7 +547,6 @@ exports[`<Datepicker /> Snapshots should match with disabled future dates Datepi
         <svg
           class="c4"
           height="20"
-          isopen="false"
           width="20"
         />
       </button>
@@ -659,7 +654,6 @@ exports[`<Datepicker /> Snapshots should match with disabled past dates Datepick
         <svg
           class="c4"
           height="20"
-          isopen="false"
           width="20"
         />
       </button>
@@ -759,6 +753,7 @@ exports[`<Datepicker /> Snapshots should match with error Datepicker 1`] = `
   margin-top: 4px;
   font-size: 12px;
   color: #CA4808;
+  position: absolute;
 }
 
 <div>
@@ -780,7 +775,6 @@ exports[`<Datepicker /> Snapshots should match with error Datepicker 1`] = `
         <svg
           class="c4"
           height="20"
-          isopen="false"
           width="20"
         />
       </button>
@@ -893,7 +887,6 @@ exports[`<Datepicker /> Snapshots should match with range Datepicker 1`] = `
         <svg
           class="c4"
           height="20"
-          isopen="false"
           width="20"
         />
       </button>
@@ -1001,7 +994,6 @@ exports[`<Datepicker /> Snapshots should match with single Datepicker 1`] = `
         <svg
           class="c4"
           height="20"
-          isopen="false"
           width="20"
         />
       </button>

@@ -1,9 +1,10 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { ChevronDown } from '@gympass/yoga-icons';
 import { Text } from '@gympass/yoga';
 import styled, { css } from 'styled-components';
 import { bool, oneOf, func, instanceOf, string } from 'prop-types';
+import moment from 'moment';
 import { theme } from '../../Theme';
 import Calendar from './Calendar';
 
@@ -181,25 +182,19 @@ const Datepicker = ({
   error,
   onOpen,
 }) => {
-  const [open, setOpen] = useState(false.toString());
+  const [open, setOpen] = useState();
   const [startD, setStartDate] = useState(startDate);
   const [endD, setEndDate] = useState(endDate);
   const ref = useRef(null);
 
-  const onDocClick = event => {
-    const clickedDatepicker = ref.current.contains(event.target);
+  const triggerOnOpen = useCallback(() => {
+    if (onOpen) onOpen(open === 'true');
+  }, [open]);
 
-    if (!clickedDatepicker) {
-      setOpen(false.toString());
-    }
+  const onBlur = () => {
+    setOpen(false.toString());
+    triggerOnOpen();
   };
-
-  useEffect(() => {
-    document.addEventListener('click', onDocClick);
-    return () => {
-      document.removeEventListener('click', onDocClick);
-    };
-  }, []);
 
   useEffect(() => {
     if (type === 'single' && onSelectSingle) {
@@ -213,6 +208,10 @@ const Datepicker = ({
   const onDateSingleSelect = startLocal => {
     setStartDate(startLocal);
   };
+
+  useEffect(() => {
+    if (open === 'true') ref.current.focus();
+  }, [open]);
 
   const onDateRangeSelect = selectedDate => {
     if (!endD) {
@@ -237,27 +236,20 @@ const Datepicker = ({
       );
     }
 
+    const dateFormat = 'MMM D, YYYY';
+
     return (
       startD && (
         <Input disabled={disabled} data-testid="datepicker-input">
-          {new Intl.DateTimeFormat('en-US', {
-            year: 'numeric',
-            month: 'numeric',
-            day: 'numeric',
-          }).format(toUTC(startD))}
-          {endD &&
-            ` - ${new Intl.DateTimeFormat('en-US', {
-              year: 'numeric',
-              month: 'numeric',
-              day: 'numeric',
-            }).format(toUTC(endD))}`}
+          {moment(startD).format(dateFormat)}
+          {endD && ` - ${moment(endD).format(dateFormat)}`}
         </Input>
       )
     );
   };
 
   return (
-    <Wrapper fullWidth={fullWidth} ref={ref}>
+    <Wrapper fullWidth={fullWidth} tabIndex="0">
       <Selector
         open={open === 'true'}
         disabled={disabled}
@@ -270,16 +262,16 @@ const Datepicker = ({
             if (!disabled) {
               setOpen((open !== 'true').toString());
             }
-            onOpen(open === 'true');
+            triggerOnOpen();
           }}
         >
           {/* svg only recognizes lowercase isopen */}
-          <ArrowIcon isopen={open.toString()} disabled={disabled} />
+          <ArrowIcon isopen={open && open.toString()} disabled={disabled} />
         </TButton>
       </Selector>
-      {error && <ErrorWrapper>{open !== 'true' && error}</ErrorWrapper>}
+      {error && <ErrorWrapper>{error}</ErrorWrapper>}
       {open === 'true' && (
-        <Panel tabIndex={-1}>
+        <Panel tabIndex={-1} ref={ref} onBlur={onBlur}>
           <Calendar
             type={type}
             startDate={startD}
@@ -321,7 +313,7 @@ Datepicker.defaultProps = {
   disablePastDates: false,
   disableFutureDates: false,
   error: undefined,
-  onOpen: null,
+  onOpen: undefined,
 };
 
 export default Datepicker;

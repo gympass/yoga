@@ -122,7 +122,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
 }
 
 .c9 p {
-  color: #231B22;
+  color: #D8385E;
   z-index: 1;
 }
 
@@ -157,7 +157,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
 }
 
 .c11 p {
-  color: #D8385E;
+  color: #231B22;
   z-index: 1;
 }
 
@@ -338,7 +338,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-3"
         >
           <p
@@ -348,7 +348,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-4"
         >
           <p
@@ -368,7 +368,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-6"
         >
           <p
@@ -382,7 +382,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
         class="c6"
       >
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-7"
         >
           <p
@@ -392,7 +392,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-8"
         >
           <p
@@ -402,7 +402,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-9"
         >
           <p
@@ -412,7 +412,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-10"
         >
           <p
@@ -422,7 +422,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-11"
         >
           <p
@@ -432,7 +432,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-12"
         >
           <p
@@ -442,7 +442,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-13"
         >
           <p
@@ -456,7 +456,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
         class="c6"
       >
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-14"
         >
           <p
@@ -466,7 +466,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-15"
         >
           <p
@@ -476,7 +476,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-16"
         >
           <p
@@ -486,7 +486,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-17"
         >
           <p
@@ -496,7 +496,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-18"
         >
           <p
@@ -506,7 +506,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-19"
         >
           <p
@@ -516,7 +516,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-20"
         >
           <p
@@ -530,7 +530,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
         class="c6"
       >
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-21"
         >
           <p
@@ -540,7 +540,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-22"
         >
           <p
@@ -550,7 +550,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-23"
         >
           <p
@@ -560,7 +560,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-24"
         >
           <p
@@ -570,7 +570,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-25"
         >
           <p
@@ -580,7 +580,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-26"
         >
           <p
@@ -590,7 +590,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-27"
         >
           <p
@@ -604,7 +604,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
         class="c6"
       >
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-28"
         >
           <p
@@ -614,7 +614,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-29"
         >
           <p
@@ -624,7 +624,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-30"
         >
           <p
@@ -634,7 +634,7 @@ exports[`<Calendar /> Snapshots should match with default selected date single C
           </p>
         </div>
         <div
-          class="c9"
+          class="c11"
           data-testid="day-field-31"
         >
           <p
@@ -804,11 +804,46 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
 }
 
 .c9 p {
-  color: #231B22;
+  color: #D8385E;
   z-index: 1;
 }
 
 .c9:hover:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #231B22;
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+}
+
+.c13 {
+  width: 32px;
+  height: 32px;
+  padding: 0px 21.3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+}
+
+.c13 p {
+  color: #231B22;
+  z-index: 1;
+}
+
+.c13:hover:before {
   content: '';
   position: absolute;
   border: 1px solid #231B22;
@@ -916,50 +951,15 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
   background: #F5F5FA;
   position: relative;
   cursor: pointer;
-}
-
-.c12 p {
-  color: #D8385E;
-  z-index: 1;
-}
-
-.c12:hover:before {
-  content: '';
-  position: absolute;
-  border: 1px solid #231B22;
-  width: 32px;
-  height: 32px;
-  border-radius: 9999px;
-}
-
-.c13 {
-  width: 32px;
-  height: 32px;
-  padding: 0px 21.3px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background: #F5F5FA;
-  position: relative;
-  cursor: pointer;
   border-radius: 0px 9999px 9999px 0px;
 }
 
-.c13 p {
+.c12 p {
   color: #FFFFFF;
   z-index: 1;
 }
 
-.c13:before {
+.c12:before {
   content: '';
   position: absolute;
   background: #D8385E;
@@ -968,7 +968,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
   border-radius: 9999px;
 }
 
-.c13:hover:before {
+.c12:hover:before {
   content: '';
   position: absolute;
   border: 1px solid #231B22;
@@ -1121,7 +1121,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c12"
+          class="c11"
           data-testid="day-field-5"
         >
           <p
@@ -1259,7 +1259,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c13"
+          class="c12"
           data-testid="day-field-18"
         >
           <p
@@ -1269,7 +1269,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-19"
         >
           <p
@@ -1279,7 +1279,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-20"
         >
           <p
@@ -1293,7 +1293,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
         class="c6"
       >
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-21"
         >
           <p
@@ -1303,7 +1303,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-22"
         >
           <p
@@ -1313,7 +1313,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-23"
         >
           <p
@@ -1323,7 +1323,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-24"
         >
           <p
@@ -1333,7 +1333,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-25"
         >
           <p
@@ -1343,7 +1343,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-26"
         >
           <p
@@ -1353,7 +1353,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-27"
         >
           <p
@@ -1367,7 +1367,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
         class="c6"
       >
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-28"
         >
           <p
@@ -1377,7 +1377,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-29"
         >
           <p
@@ -1387,7 +1387,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-30"
         >
           <p
@@ -1397,7 +1397,7 @@ exports[`<Calendar /> Snapshots should match with default selected dates range C
           </p>
         </div>
         <div
-          class="c9"
+          class="c13"
           data-testid="day-field-31"
         >
           <p
@@ -1567,7 +1567,7 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
 }
 
 .c9 p {
-  color: #231B22;
+  color: #D8385E;
   z-index: 1;
 }
 
@@ -1602,7 +1602,7 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
 }
 
 .c10 p {
-  color: #D8385E;
+  color: #231B22;
   z-index: 1;
 }
 
@@ -1729,7 +1729,7 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-2"
         >
           <p
@@ -1739,7 +1739,7 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-3"
         >
           <p
@@ -1749,7 +1749,7 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-4"
         >
           <p
@@ -1769,9 +1769,8 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
           </p>
         </div>
         <div
-          class="c7"
+          class="c10"
           data-testid="day-field-6"
-          disabled=""
         >
           <p
             class="c8"
@@ -1784,9 +1783,8 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
         class="c6"
       >
         <div
-          class="c7"
+          class="c10"
           data-testid="day-field-7"
-          disabled=""
         >
           <p
             class="c8"
@@ -1795,9 +1793,8 @@ exports[`<Calendar /> Snapshots should match with disabled future dates Calendar
           </p>
         </div>
         <div
-          class="c7"
+          class="c10"
           data-testid="day-field-8"
-          disabled=""
         >
           <p
             class="c8"
@@ -2209,41 +2206,6 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
   z-index: 1;
 }
 
-.c10 {
-  width: 32px;
-  height: 32px;
-  padding: 0px 21.3px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background: #FFFFFF;
-  position: relative;
-  cursor: pointer;
-}
-
-.c10 p {
-  color: #231B22;
-  z-index: 1;
-}
-
-.c10:hover:before {
-  content: '';
-  position: absolute;
-  border: 1px solid #231B22;
-  width: 32px;
-  height: 32px;
-  border-radius: 9999px;
-}
-
 .c9 {
   width: 32px;
   height: 32px;
@@ -2266,7 +2228,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
 }
 
 .c9 p {
-  color: #D8385E;
+  color: #231B22;
   z-index: 1;
 }
 
@@ -2427,8 +2389,9 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c9"
+          class="c7"
           data-testid="day-field-5"
+          disabled=""
         >
           <p
             class="c8"
@@ -2437,8 +2400,9 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c7"
           data-testid="day-field-6"
+          disabled=""
         >
           <p
             class="c8"
@@ -2451,8 +2415,9 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
         class="c6"
       >
         <div
-          class="c10"
+          class="c7"
           data-testid="day-field-7"
+          disabled=""
         >
           <p
             class="c8"
@@ -2461,7 +2426,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-8"
         >
           <p
@@ -2471,7 +2436,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-9"
         >
           <p
@@ -2481,7 +2446,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-10"
         >
           <p
@@ -2491,7 +2456,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-11"
         >
           <p
@@ -2501,7 +2466,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-12"
         >
           <p
@@ -2511,7 +2476,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-13"
         >
           <p
@@ -2525,7 +2490,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
         class="c6"
       >
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-14"
         >
           <p
@@ -2535,7 +2500,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-15"
         >
           <p
@@ -2545,7 +2510,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-16"
         >
           <p
@@ -2555,7 +2520,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-17"
         >
           <p
@@ -2565,7 +2530,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-18"
         >
           <p
@@ -2575,7 +2540,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-19"
         >
           <p
@@ -2585,7 +2550,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-20"
         >
           <p
@@ -2599,7 +2564,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
         class="c6"
       >
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-21"
         >
           <p
@@ -2609,7 +2574,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-22"
         >
           <p
@@ -2619,7 +2584,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-23"
         >
           <p
@@ -2629,7 +2594,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-24"
         >
           <p
@@ -2639,7 +2604,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-25"
         >
           <p
@@ -2649,7 +2614,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-26"
         >
           <p
@@ -2659,7 +2624,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-27"
         >
           <p
@@ -2673,7 +2638,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
         class="c6"
       >
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-28"
         >
           <p
@@ -2683,7 +2648,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-29"
         >
           <p
@@ -2693,7 +2658,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-30"
         >
           <p
@@ -2703,7 +2668,7 @@ exports[`<Calendar /> Snapshots should match with disabled past dates Calendar 1
           </p>
         </div>
         <div
-          class="c10"
+          class="c9"
           data-testid="day-field-31"
         >
           <p
@@ -2873,7 +2838,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
 }
 
 .c9 p {
-  color: #231B22;
+  color: #D8385E;
   z-index: 1;
 }
 
@@ -2908,7 +2873,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
 }
 
 .c10 p {
-  color: #D8385E;
+  color: #231B22;
   z-index: 1;
 }
 
@@ -3035,7 +3000,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-2"
         >
           <p
@@ -3045,7 +3010,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-3"
         >
           <p
@@ -3055,7 +3020,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-4"
         >
           <p
@@ -3075,7 +3040,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-6"
         >
           <p
@@ -3089,7 +3054,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
         class="c6"
       >
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-7"
         >
           <p
@@ -3099,7 +3064,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-8"
         >
           <p
@@ -3109,7 +3074,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-9"
         >
           <p
@@ -3119,7 +3084,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-10"
         >
           <p
@@ -3129,7 +3094,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-11"
         >
           <p
@@ -3139,7 +3104,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-12"
         >
           <p
@@ -3149,7 +3114,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-13"
         >
           <p
@@ -3163,7 +3128,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
         class="c6"
       >
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-14"
         >
           <p
@@ -3173,7 +3138,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-15"
         >
           <p
@@ -3183,7 +3148,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-16"
         >
           <p
@@ -3193,7 +3158,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-17"
         >
           <p
@@ -3203,7 +3168,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-18"
         >
           <p
@@ -3213,7 +3178,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-19"
         >
           <p
@@ -3223,7 +3188,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-20"
         >
           <p
@@ -3237,7 +3202,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
         class="c6"
       >
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-21"
         >
           <p
@@ -3247,7 +3212,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-22"
         >
           <p
@@ -3257,7 +3222,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-23"
         >
           <p
@@ -3267,7 +3232,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-24"
         >
           <p
@@ -3277,7 +3242,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-25"
         >
           <p
@@ -3287,7 +3252,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-26"
         >
           <p
@@ -3297,7 +3262,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-27"
         >
           <p
@@ -3311,7 +3276,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
         class="c6"
       >
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-28"
         >
           <p
@@ -3321,7 +3286,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-29"
         >
           <p
@@ -3331,7 +3296,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-30"
         >
           <p
@@ -3341,7 +3306,7 @@ exports[`<Calendar /> Snapshots should match with range Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-31"
         >
           <p
@@ -3511,7 +3476,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
 }
 
 .c9 p {
-  color: #231B22;
+  color: #D8385E;
   z-index: 1;
 }
 
@@ -3546,7 +3511,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
 }
 
 .c10 p {
-  color: #D8385E;
+  color: #231B22;
   z-index: 1;
 }
 
@@ -3673,7 +3638,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-2"
         >
           <p
@@ -3683,7 +3648,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-3"
         >
           <p
@@ -3693,7 +3658,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-4"
         >
           <p
@@ -3713,7 +3678,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-6"
         >
           <p
@@ -3727,7 +3692,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
         class="c6"
       >
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-7"
         >
           <p
@@ -3737,7 +3702,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-8"
         >
           <p
@@ -3747,7 +3712,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-9"
         >
           <p
@@ -3757,7 +3722,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-10"
         >
           <p
@@ -3767,7 +3732,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-11"
         >
           <p
@@ -3777,7 +3742,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-12"
         >
           <p
@@ -3787,7 +3752,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-13"
         >
           <p
@@ -3801,7 +3766,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
         class="c6"
       >
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-14"
         >
           <p
@@ -3811,7 +3776,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-15"
         >
           <p
@@ -3821,7 +3786,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-16"
         >
           <p
@@ -3831,7 +3796,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-17"
         >
           <p
@@ -3841,7 +3806,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-18"
         >
           <p
@@ -3851,7 +3816,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-19"
         >
           <p
@@ -3861,7 +3826,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-20"
         >
           <p
@@ -3875,7 +3840,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
         class="c6"
       >
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-21"
         >
           <p
@@ -3885,7 +3850,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-22"
         >
           <p
@@ -3895,7 +3860,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-23"
         >
           <p
@@ -3905,7 +3870,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-24"
         >
           <p
@@ -3915,7 +3880,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-25"
         >
           <p
@@ -3925,7 +3890,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-26"
         >
           <p
@@ -3935,7 +3900,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-27"
         >
           <p
@@ -3949,7 +3914,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
         class="c6"
       >
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-28"
         >
           <p
@@ -3959,7 +3924,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-29"
         >
           <p
@@ -3969,7 +3934,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-30"
         >
           <p
@@ -3979,7 +3944,7 @@ exports[`<Calendar /> Snapshots should match with single Calendar 1`] = `
           </p>
         </div>
         <div
-          class="c9"
+          class="c10"
           data-testid="day-field-31"
         >
           <p
