@@ -33,11 +33,11 @@ jobs:
           yarn build:packages
       - name: Publish
         run: |
-          export GH_TOKEN="${{ github.token }}"
-          export NPM_TOKEN="${{ secrets.YOGA_NPM_TOKEN }}"
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
-          chmod +x ./scripts/publish
-          ./scripts/publish
+            export GH_TOKEN="${{ github.token }}"
+            export NPM_TOKEN="${{ secrets.YOGA_NPM_TOKEN }}"
+            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
+            chmod +x ./scripts/publish
+            ./scripts/publish
 
   doc:
     runs-on: ubuntu-latest
