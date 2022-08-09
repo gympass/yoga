@@ -2,18 +2,13 @@
 const https = require('https');
 const git = require('git-last-commit');
 
-const slackWebHook = process.env.SLACK_WEBHOOK_URL;
-const VIBIN = '#D8385E';
+const googleChatsWebHook = process.env.GOOGLE_CHATS_WEBHOOK_URL;
 
 const releaseNotification = {
-  username: 'Yoga',
-  icon_emoji: ':yoga-ds:',
-  text:
-    'A new <https://github.com/Gympass/yoga/releases|version> has been released! <https://gympass.github.io/yoga|Check it out!> :tada:',
-  attachments: [],
+  text: 'A new <https://github.com/Gympass/yoga/releases|version> has been released! <https://gympass.github.io/yoga|Check it out!> 🎉 \n\n',
 };
 
-function sendSlackMessage(webhookURL, messageBody) {
+function sendGoogleChatMessage(webhookURL, messageBody) {
   return new Promise((resolve, reject) => {
     const requestOptions = {
       method: 'POST',
@@ -54,28 +49,27 @@ function getChangedPackages() {
 }
 
 async function notify() {
-  if (!slackWebHook) {
-    console.log('Missing Slack Webhook URL');
+  if (!googleChatsWebHook) {
+    console.log('Missing Google Chat Webhook URL');
     return;
   }
 
-  console.log('Sending slack message...');
+  console.log('Sending Google Chat message...');
   try {
     const { body: changedPackages } = await getChangedPackages();
 
-    const changes = {
-      color: VIBIN,
-      text: changedPackages,
-    };
+    const changes = changedPackages.text.split('\n');
 
-    releaseNotification.attachments.push(changes);
+    releaseNotification.text = releaseNotification.text.concat(
+      changes.join('\n'),
+    );
 
     const notification = JSON.stringify(releaseNotification);
 
-    await sendSlackMessage(slackWebHook, notification);
+    await sendGoogleChatMessage(googleChatsWebHook, notification);
     console.log('Notification sent');
   } catch (e) {
-    console.error('There was an error sending Slack notification', e);
+    console.error('There was an error sending Google Chat notification', e);
   }
 }
 
