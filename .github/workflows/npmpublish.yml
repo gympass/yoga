@@ -33,11 +33,11 @@ jobs:
           yarn build:packages
       - name: Publish
         run: |
-            export GH_TOKEN="${{ github.token }}"
-            export NPM_TOKEN="${{ secrets.YOGA_NPM_TOKEN }}"
-            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
-            chmod +x ./scripts/publish
-            ./scripts/publish
+          export GH_TOKEN="${{ github.token }}"
+          export NPM_TOKEN="${{ secrets.YOGA_NPM_TOKEN }}"
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
+          chmod +x ./scripts/publish
+          ./scripts/publish
 
   doc:
     runs-on: ubuntu-latest
@@ -65,9 +65,9 @@ jobs:
       - name: Deploy
         run: |
           yarn deploy:doc
-      - name: Slack Notify
+      - name: Google Chat Notify
         run: |
-          SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
+          GOOGLE_CHATS_WEBHOOK_URL=${GOOGLE_CHATS_WEBHOOK_URL}
           node ./scripts/notify.js
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          GOOGLE_CHATS_WEBHOOK_URL: ${{ secrets.GOOGLE_CHATS_WEBHOOK_URL }}
