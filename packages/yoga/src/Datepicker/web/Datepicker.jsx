@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { ChevronDown } from '@gympass/yoga-icons';
+import { Booking, BookingFilled } from '@gympass/yoga-icons';
 import { Text } from '@gympass/yoga';
 import styled, { css } from 'styled-components';
 import { bool, oneOf, func, instanceOf, string } from 'prop-types';
@@ -128,18 +128,20 @@ const Panel = styled.div`
   `}
 `;
 
-const ArrowIcon = styled(({ _isopen, _disabled, ...props }) => (
-  <ChevronDown width={20} height={20} {...props} />
-))`
+const CalendarIcon = styled(({ _disabled, inputFilled, ...props }) =>
+  !inputFilled ? (
+    <Booking width={20} height={20} {...props} />
+  ) : (
+    <BookingFilled width={20} height={20} {...props} />
+  ),
+)`
   ${({
-    isopen,
     disabled,
     theme: {
       yoga: { colors, spacing },
     },
   }) => `
-    fill: ${disabled ? colors.text.disabled : colors.primary};
-    transform: rotate(${isopen === 'true' ? '180deg' : '0'});
+    fill: ${disabled ? colors.text.disabled : colors.text.primary};
     margin-right: ${spacing.xxsmall}px;
   `}
 `;
@@ -186,6 +188,7 @@ const Datepicker = ({
   const [startD, setStartDate] = useState(startDate);
   const [endD, setEndDate] = useState(endDate);
   const ref = useRef(null);
+  const [inputFilled, setInputFilled] = useState(false);
 
   const triggerOnOpen = useCallback(() => {
     if (onOpen) onOpen(open === 'true');
@@ -203,6 +206,7 @@ const Datepicker = ({
     } else if (type === 'range' && onSelectRange) {
       onSelectRange(startD, endD);
     }
+    setInputFilled(!!startD);
   }, [startD, endD]);
 
   const onDateSingleSelect = startLocal => {
@@ -266,7 +270,7 @@ const Datepicker = ({
           }}
         >
           {/* svg only recognizes lowercase isopen */}
-          <ArrowIcon isopen={open && open.toString()} disabled={disabled} />
+          <CalendarIcon disabled={disabled} inputFilled={inputFilled} />
         </TButton>
       </Selector>
       {error && <ErrorWrapper>{error}</ErrorWrapper>}

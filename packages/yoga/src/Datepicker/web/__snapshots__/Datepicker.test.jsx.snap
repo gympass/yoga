@@ -73,10 +73,7 @@ exports[`<Datepicker /> Snapshots should match with custom placeholder single Da
 }
 
 .c4 {
-  fill: #D8385E;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
+  fill: #231B22;
   margin-right: 8px;
 }
 
@@ -188,10 +185,7 @@ exports[`<Datepicker /> Snapshots should match with default selected date single
 }
 
 .c4 {
-  fill: #D8385E;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
+  fill: #231B22;
   margin-right: 8px;
 }
 
@@ -304,10 +298,7 @@ exports[`<Datepicker /> Snapshots should match with default selected dates range
 }
 
 .c4 {
-  fill: #D8385E;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
+  fill: #231B22;
   margin-right: 8px;
 }
 
@@ -415,9 +406,6 @@ exports[`<Datepicker /> Snapshots should match with disabled Datepicker 1`] = `
 
 .c4 {
   fill: #D7D7E0;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
   margin-right: 8px;
 }
 
@@ -525,10 +513,7 @@ exports[`<Datepicker /> Snapshots should match with disabled future dates Datepi
 }
 
 .c4 {
-  fill: #D8385E;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
+  fill: #231B22;
   margin-right: 8px;
 }
 
@@ -633,10 +618,7 @@ exports[`<Datepicker /> Snapshots should match with disabled past dates Datepick
 }
 
 .c4 {
-  fill: #D8385E;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
+  fill: #231B22;
   margin-right: 8px;
 }
 
@@ -741,10 +723,7 @@ exports[`<Datepicker /> Snapshots should match with error Datepicker 1`] = `
 }
 
 .c4 {
-  fill: #D8385E;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
+  fill: #231B22;
   margin-right: 8px;
 }
 
@@ -868,10 +847,7 @@ exports[`<Datepicker /> Snapshots should match with range Datepicker 1`] = `
 }
 
 .c4 {
-  fill: #D8385E;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
+  fill: #231B22;
   margin-right: 8px;
 }
 
@@ -976,10 +952,7 @@ exports[`<Datepicker /> Snapshots should match with single Datepicker 1`] = `
 }
 
 .c4 {
-  fill: #D8385E;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
+  fill: #231B22;
   margin-right: 8px;
 }
 

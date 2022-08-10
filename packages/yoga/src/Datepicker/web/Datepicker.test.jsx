@@ -3,7 +3,6 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import moment from 'moment';
 
 import { ThemeProvider, Datepicker } from '../..';
-import { toUTC } from './Datepicker';
 
 describe('<Datepicker />', () => {
   const testDate = new Date(2022, 7, 3);
