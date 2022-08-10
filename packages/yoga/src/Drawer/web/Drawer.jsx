@@ -14,7 +14,7 @@ const StyledDrawer = styled(Dialog)`
   padding: ${drawer.padding.top}px ${drawer.padding.right}px ${drawer.padding.bottom}px ${drawer.padding.left}px;
   width: ${drawer.width.default}px;
   `}
-  border-radius: 0;
+  border-radius: 0!important;
   height: 100%;
   align-self: flex-end;
   position: absolute;

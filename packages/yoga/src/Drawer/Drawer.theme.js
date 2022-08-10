@@ -1,19 +1,13 @@
 const Drawer = ({ spacing }) => ({
   padding: {
-    top: spacing.xxxlarge,
+    top: spacing.small,
     right: spacing.xxxlarge,
-    bottom: spacing.xhuge,
+    bottom: spacing.xxlarge,
     left: spacing.xxxlarge,
   },
   width: {
     default: 600,
   },
-  // height: {
-  //   min: 160,
-  // },
-  // position: {
-  //   default: spacing.zero,
-  // },
 });
 
 export default Drawer;
