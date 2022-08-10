@@ -23,6 +23,7 @@ import Divider from './Divider';
 import Snackbar from './Snackbar';
 import Banner from './Banner';
 import Heading from './Heading';
+import Skeleton from './Skeleton';
 
 export {
   Button,
@@ -50,4 +51,5 @@ export {
   Snackbar,
   Banner,
   Heading,
+  Skeleton,
 };

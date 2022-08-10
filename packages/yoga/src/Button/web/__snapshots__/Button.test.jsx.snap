@@ -164,7 +164,7 @@ exports[`<Button /> Snapshots buttons rendering as an anchor Link Button with hr
 }
 
 .c1:disabled {
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 <div>
@@ -276,12 +276,12 @@ exports[`<Button /> Snapshots buttons rendering as an anchor Outline Button with
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -396,11 +396,11 @@ exports[`<Button /> Snapshots buttons rendering as an anchor Text Button with hr
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -453,7 +453,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -482,7 +482,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -534,7 +534,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -563,7 +563,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -621,7 +621,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
   padding: 0;
@@ -652,7 +652,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c0 svg {
@@ -716,7 +716,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -745,7 +745,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 {
@@ -775,7 +775,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 }
 
 .c1:disabled {
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 <div>
@@ -827,7 +827,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -856,7 +856,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 {
@@ -894,12 +894,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -951,7 +951,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -980,7 +980,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 {
@@ -1018,12 +1018,12 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -1076,7 +1076,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -1105,7 +1105,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 {
@@ -1146,11 +1146,11 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -1202,7 +1202,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -1231,7 +1231,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 {
@@ -1272,11 +1272,11 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -1329,7 +1329,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -1358,7 +1358,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -1410,7 +1410,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -1439,7 +1439,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -1497,7 +1497,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
   padding: 0;
@@ -1528,7 +1528,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c0 svg {
@@ -1592,7 +1592,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -1621,7 +1621,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 {
@@ -1651,7 +1651,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 }
 
 .c1:disabled {
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 <div>
@@ -1703,7 +1703,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -1732,7 +1732,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 {
@@ -1770,12 +1770,12 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -1827,7 +1827,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -1856,7 +1856,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 {
@@ -1894,12 +1894,12 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -1952,7 +1952,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -1981,7 +1981,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 {
@@ -2022,11 +2022,11 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -2078,7 +2078,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #D7D7E0;
+  color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -2107,7 +2107,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 }
 
 .c0 svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 {
@@ -2148,11 +2148,11 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -2409,12 +2409,12 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -2524,12 +2524,12 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -2643,11 +2643,11 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -2760,11 +2760,11 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -3193,12 +3193,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 svg {
@@ -3227,12 +3227,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled {
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -3364,12 +3364,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 svg {
@@ -3398,12 +3398,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled {
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -3536,12 +3536,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 svg {
@@ -3570,12 +3570,12 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled {
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -3732,11 +3732,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -4082,12 +4082,12 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -4197,12 +4197,12 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -4316,11 +4316,11 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -4433,11 +4433,11 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -4776,7 +4776,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1:disabled {
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 <div>
@@ -4886,12 +4886,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -5001,12 +5001,12 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -5120,11 +5120,11 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -5237,11 +5237,11 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -5497,12 +5497,12 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -5612,12 +5612,12 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -5731,11 +5731,11 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -5848,11 +5848,11 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -6281,12 +6281,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 svg {
@@ -6315,12 +6315,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 }
 
 .c1:disabled {
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -6452,12 +6452,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 .c1 svg {
@@ -6486,12 +6486,12 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 }
 
 .c1:disabled {
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -6648,11 +6648,11 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -6808,11 +6808,11 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -6969,11 +6969,11 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -7320,12 +7320,12 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -7435,12 +7435,12 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -7554,11 +7554,11 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -7671,11 +7671,11 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -8014,7 +8014,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 }
 
 .c1:disabled {
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 <div>
@@ -8124,12 +8124,12 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -8239,12 +8239,12 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 
 .c1:disabled {
   background-color: transparent;
-  border-color: #D7D7E0;
-  color: #D7D7E0;
+  border-color: #6B6B78;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -8358,11 +8358,11 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>
@@ -8475,11 +8475,11 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 .c1:disabled {
   background-color: transparent;
   border-color: transparent;
-  color: #D7D7E0;
+  color: #6B6B78;
 }
 
 .c1:disabled svg {
-  fill: #D7D7E0;
+  fill: #6B6B78;
 }
 
 <div>

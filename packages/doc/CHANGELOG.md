@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.27.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.27.1...@gympass/yoga-doc@2.27.2) (2022-08-08)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.27.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.27.0...@gympass/yoga-doc@2.27.1) (2022-08-08)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+# [2.27.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.26.0...@gympass/yoga-doc@2.27.0) (2022-08-08)
+
+
+### Features
+
+* **components:** add Skeleton ([eb1863d](https://github.com/gympass/yoga/commit/eb1863dcac981dd6f7334206332bfec143c238ae))
+
+
+
+
+
+# [2.26.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.25.0...@gympass/yoga-doc@2.26.0) (2022-08-08)
+
+
+### Features
+
+* **menu:** add menu placement options ([13173c1](https://github.com/gympass/yoga/commit/13173c1f082d8dc188e25c5c1242c027ef7e6f9c))
+
+
+
+
+
+# [2.25.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.24.7...@gympass/yoga-doc@2.25.0) (2022-08-05)
+
+
+### Features
+
+* **BottomSheet:** hide close button ([c1d4c23](https://github.com/gympass/yoga/commit/c1d4c23f2e166289bb3887b91e2bb8a2b646c9ae))
+
+
+
+
+
 ## [2.24.7](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.24.6...@gympass/yoga-doc@2.24.7) (2022-07-28)
 
 **Note:** Version bump only for package @gympass/yoga-doc

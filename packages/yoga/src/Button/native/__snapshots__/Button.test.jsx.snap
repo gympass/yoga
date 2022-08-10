@@ -45,7 +45,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     }
   >
     <Text
-      color="#D7D7E0"
+      color="#6B6B78"
       disabled={true}
       inverted={false}
       pressed={false}
@@ -53,7 +53,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       style={
         Array [
           Object {
-            "color": "#D7D7E0",
+            "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
@@ -115,7 +115,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     <RNSVGSvgView
       bbHeight={24}
       bbWidth={24}
-      fill="#D7D7E0"
+      fill="#6B6B78"
       focusable={false}
       height={24}
       style={
@@ -143,7 +143,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         fill={
           Array [
             0,
-            4292335584,
+            4285229944,
           ]
         }
         fillOpacity={1}
@@ -186,7 +186,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       />
     </RNSVGSvgView>
     <Text
-      color="#D7D7E0"
+      color="#6B6B78"
       disabled={true}
       inverted={false}
       pressed={false}
@@ -194,7 +194,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       style={
         Array [
           Object {
-            "color": "#D7D7E0",
+            "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
@@ -255,7 +255,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     <RNSVGSvgView
       bbHeight={24}
       bbWidth={24}
-      fill="#D7D7E0"
+      fill="#6B6B78"
       focusable={false}
       height={24}
       style={
@@ -286,7 +286,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         fill={
           Array [
             0,
-            4292335584,
+            4285229944,
           ]
         }
         fillOpacity={1}
@@ -361,7 +361,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     style={
       Array [
         Object {
-          "color": "#D7D7E0",
+          "color": "#6B6B78",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "500",
@@ -414,13 +414,13 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     }
   >
     <Text
-      color="#D7D7E0"
+      color="#6B6B78"
       disabled={true}
       pressed={false}
       style={
         Array [
           Object {
-            "color": "#D7D7E0",
+            "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
@@ -476,7 +476,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     <RNSVGSvgView
       bbHeight={24}
       bbWidth={24}
-      fill="#D7D7E0"
+      fill="#6B6B78"
       focusable={false}
       height={24}
       style={
@@ -504,7 +504,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
         fill={
           Array [
             0,
-            4292335584,
+            4285229944,
           ]
         }
         fillOpacity={1}
@@ -547,13 +547,13 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
       />
     </RNSVGSvgView>
     <Text
-      color="#D7D7E0"
+      color="#6B6B78"
       disabled={true}
       pressed={false}
       style={
         Array [
           Object {
-            "color": "#D7D7E0",
+            "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",

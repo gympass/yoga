@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Skeleton /> should render the circular skeleton 1`] = `
+<View
+  collapsable={false}
+  style={
+    Object {
+      "opacity": 0.1,
+    }
+  }
+>
+  <View
+    height={64}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#D7D7E0",
+          "borderRadius": 1000,
+          "display": "flex",
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    type="circular"
+    width={64}
+  />
+</View>
+`;
+
+exports[`<Skeleton /> should render the rectangular skeleton 1`] = `
+<View
+  collapsable={false}
+  style={
+    Object {
+      "opacity": 0.1,
+    }
+  }
+>
+  <View
+    height={200}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#D7D7E0",
+          "display": "flex",
+          "height": 200,
+          "width": 400,
+        },
+      ]
+    }
+    type="rectangular"
+    width={400}
+  />
+</View>
+`;
+
+exports[`<Skeleton /> should render the text skeleton 1`] = `
+<View
+  collapsable={false}
+  style={
+    Object {
+      "opacity": 0.1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#D7D7E0",
+          "display": "flex",
+          "height": 24,
+          "width": 61,
+        },
+      ]
+    }
+    type="text"
+    variant="body1"
+    width={61}
+  />
+</View>
+`;

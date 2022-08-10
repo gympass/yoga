@@ -83,4 +83,15 @@ describe('<Dialog />', () => {
 
     expect(onCloseMock).toHaveBeenCalledTimes(1);
   });
+
+  it('should hide the close button when hideCloseButton prop is true', () => {
+    render(
+      <ThemeProvider>
+        <Dialog isOpen hideCloseButton onClose={() => {}}>
+          <Dialog.Header>Title</Dialog.Header>
+        </Dialog>
+      </ThemeProvider>,
+    );
+    expect(screen.queryByRole('button')).toBeNull();
+  });
 });
