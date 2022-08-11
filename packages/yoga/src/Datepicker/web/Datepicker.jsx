@@ -170,7 +170,7 @@ export const toUTC = date => {
   );
 };
 
-const Datepicker = ({
+function Datepicker({
   fullWidth,
   type,
   placeholder,
@@ -183,7 +183,7 @@ const Datepicker = ({
   disableFutureDates,
   error,
   onOpen,
-}) => {
+}) {
   const [open, setOpen] = useState();
   const [startD, setStartDate] = useState(startDate);
   const [endD, setEndDate] = useState(endDate);
@@ -289,7 +289,7 @@ const Datepicker = ({
       )}
     </Wrapper>
   );
-};
+}
 
 Datepicker.propTypes = {
   fullWidth: bool,

@@ -165,7 +165,7 @@ const Row = styled.div`
 `}
 `;
 
-const Calendar = ({
+function Calendar({
   type,
   startDate,
   endDate,
@@ -173,7 +173,7 @@ const Calendar = ({
   onSelectRange,
   disablePastDates,
   disableFutureDates,
-}) => {
+}) {
   const [month, setMonth] = useState(new Date().getUTCMonth());
   const [year, setYear] = useState(new Date().getUTCFullYear());
 
@@ -400,7 +400,7 @@ const Calendar = ({
       <Box>{getDays()}</Box>
     </CalendarWrapper>
   );
-};
+}
 
 Calendar.propTypes = {
   type: oneOf(['single', 'range']).isRequired,
