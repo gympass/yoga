@@ -65,9 +65,9 @@ jobs:
       - name: Deploy
         run: |
           yarn deploy:doc
-      - name: Slack Notify
+      - name: Google Chat Notify
         run: |
-          SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
+          GOOGLE_CHATS_WEBHOOK_URL=${GOOGLE_CHATS_WEBHOOK_URL}
           node ./scripts/notify.js
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          GOOGLE_CHATS_WEBHOOK_URL: ${{ secrets.GOOGLE_CHATS_WEBHOOK_URL }}

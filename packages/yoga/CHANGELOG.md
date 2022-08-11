@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.48.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.48.0...@gympass/yoga@7.48.1) (2022-08-08)
+
+
+### Bug Fixes
+
+* **illustration:** change version of package ([c535499](https://github.com/Gympass/yoga/commit/c535499aba823bb6aacd967f7479d3d88400905a))
+
+
+
+
+
+# [7.48.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.47.0...@gympass/yoga@7.48.0) (2022-08-08)
+
+
+### Features
+
+* **button:** updating disabled color for component and compounds ([af8b5a4](https://github.com/Gympass/yoga/commit/af8b5a40ea327e99c2e11564ea35c0adb256b5bf))
+
+
+
+
+
+# [7.47.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.46.0...@gympass/yoga@7.47.0) (2022-08-08)
+
+
+### Features
+
+* **components:** add Skeleton ([eb1863d](https://github.com/Gympass/yoga/commit/eb1863dcac981dd6f7334206332bfec143c238ae))
+* **skeleton:** add prop to turn animation off ([af92649](https://github.com/Gympass/yoga/commit/af92649dd7dd9c2a2a700c7a83ce91f7ab1c26e0))
+
+
+
+
+
+# [7.46.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.45.0...@gympass/yoga@7.46.0) (2022-08-08)
+
+
+### Features
+
+* **menu:** add menu placement options ([13173c1](https://github.com/Gympass/yoga/commit/13173c1f082d8dc188e25c5c1242c027ef7e6f9c))
+
+
+
+
+
 # [7.45.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.44.5...@gympass/yoga@7.45.0) (2022-08-05)
 
 

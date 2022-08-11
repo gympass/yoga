@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { Content as MenuListRoot } from '@radix-ui/react-dropdown-menu';
-import { node, string } from 'prop-types';
+import { node, number, oneOf } from 'prop-types';
 
 import Box from '../../Box';
 
@@ -30,24 +30,46 @@ const StyledMenuList = styled(MenuListRoot)`
   }}
 `;
 
-const MenuList = forwardRef(({ children, align }, ref) => {
-  return (
-    <StyledMenuList asChild sideOffset={2} alignOffset={-5} align={align}>
-      <Box as="ul" ref={ref}>
-        {children}
-      </Box>
-    </StyledMenuList>
-  );
-});
+const MenuList = forwardRef(
+  ({ children, align, alignOffset, side, sideOffset }, ref) => {
+    return (
+      <StyledMenuList
+        asChild
+        side={side}
+        sideOffset={sideOffset}
+        align={align}
+        alignOffset={alignOffset}
+      >
+        <Box as="ul" m="zero" ref={ref}>
+          {children}
+        </Box>
+      </StyledMenuList>
+    );
+  },
+);
 
 MenuList.propTypes = {
+  /** Component to be rendered inside the Menu.List container */
   children: node.isRequired,
-  /** Align Menu is a alignement that menu will appear on the screen | start | center | end   */
-  align: string,
+
+  /** Setup the vertical placement relative to Menu.Action component */
+  align: oneOf(['start', 'center', 'end']),
+
+  /** Add vertical space between the Menu.Action and the Menu.List */
+  alignOffset: number,
+
+  /** Setup the horizontal placement relative to Menu.Action component */
+  side: oneOf(['top', 'right', 'bottom', 'left']),
+
+  /** Add horizontal space between the Menu.Action and the Menu.List */
+  sideOffset: number,
 };
 
 MenuList.defaultProps = {
   align: 'start',
+  alignOffset: 0,
+  side: 'bottom',
+  sideOffset: 4,
 };
 
 MenuList.displayName = 'Menu.List';
