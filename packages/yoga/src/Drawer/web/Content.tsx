@@ -6,7 +6,7 @@ const Content = styled(Dialog.Content)`
     theme: {
       yoga: {
         components: { drawer },
-       },
+      },
     },
   }) => `
     `}

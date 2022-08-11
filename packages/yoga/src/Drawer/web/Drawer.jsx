@@ -30,7 +30,9 @@ const StyledDrawer = styled(Dialog)`
   }
 `;
 
-const Drawer = props => <StyledDrawer {...props} />;
+function Drawer(props) {
+  return <StyledDrawer {...props} />;
+}
 
 Drawer.propTypes = {
   children: node.isRequired,
