@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.28.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.27.2...@gympass/yoga-doc@2.28.0) (2022-08-11)
+
+
+### Features
+
+* **drawer:** complete base development ([91086d9](https://github.com/gympass/yoga/commit/91086d9cbd64b78ab7f46856c2ed747d74585356))
+* **drawer:** create a drawer header component ([e2e13d6](https://github.com/gympass/yoga/commit/e2e13d63dee8902a965d9e070e213b786f907885))
+* **drawer:** create a intial develop of drawer ([7fe54a0](https://github.com/gympass/yoga/commit/7fe54a02b7fcdc3586443d0368f63d774e542978))
+
+
+
+
+
 ## [2.27.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.27.1...@gympass/yoga-doc@2.27.2) (2022-08-08)
 
 **Note:** Version bump only for package @gympass/yoga-doc
