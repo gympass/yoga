@@ -33,6 +33,7 @@ import Menu from './Menu';
 import Banner from './Banner';
 import Heading from './Heading';
 import Feedback from './Feedback';
+import Drawer from './Drawer';
 import Skeleton from './Skeleton';
 
 export {
@@ -75,5 +76,6 @@ export {
   Banner,
   Heading,
   Feedback,
+  Drawer,
   Skeleton,
 };

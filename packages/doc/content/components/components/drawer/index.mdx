@@ -1,0 +1,74 @@
+---
+title: 'Drawer'
+metaTitle: 'Drawer'
+metaDescription: 'Drawer Component'
+---
+
+# Drawer
+
+The Drawer component is a variation with the objective of providing maximum priority information for the user.
+
+### Usage
+
+### Drawer simple usage
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('This is your custom action');
+  };
+
+  return (
+    <>
+      <Button onClick={handleOpen}>Open Drawer</Button>
+        <Drawer isOpen={isOpen}>
+          <Drawer.Header>
+            <Box display="flex" justifyContent="flex-end" alignItems="center" width="100%">
+              <Box
+                style={{
+                  textAlign: 'center'
+                }}
+                width="100%"
+              >Drawer title</Box>
+               <Button.Icon onClick={handleOnClose} icon={Close} inverted />
+            </Box>
+          </Drawer.Header>
+          <Drawer.Content>
+            <Box
+              display="flex"
+              flexDirection="column"
+              justifyContent="center"
+              style={{
+                paddingTop: 10,
+                height: '100%'
+              }}
+            >
+              <Video width="40" height="40" fill="#D8385E" />
+              <Text.Medium  mt="large" size="xxlarge">Learn how to edit this area</Text.Medium>
+              <Text mt="xxssmall" color="light">Live the mission</Text>
+              <Text mt="xxsmall" color="uplift">Watch de video</Text>
+            </Box>
+          </Drawer.Content>
+          <Drawer.Footer>
+            <Button onClick={handleOnAction}>large button</Button>
+            <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
+          </Drawer.Footer>
+        </Drawer>
+    </>
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Drawer" platform="web" />

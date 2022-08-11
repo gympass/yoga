@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BottomSheet /> should match snapshot 1`] = `
-.c10 {
+exports[`<Drawer /> should match snapshot 1`] = `
+.c8 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -40,7 +40,7 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   text-decoration: none;
 }
 
-.c10 svg {
+.c8 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -49,29 +49,26 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   transition: fill 0.2s;
 }
 
-.c10:not([disabled]):hover,
-.c10:not([disabled]):focus {
+.c8:not([disabled]):hover,
+.c8:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c10:active {
+.c8:active {
   background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c10:active svg {
+.c8:active svg {
   fill: #FFFFFF;
 }
 
 .c4 {
-  margin-bottom: 24px;
+  width: 100%;
   color: #231B22;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
 }
 
-.c6 {
+.c5 {
   margin-bottom: 32px;
   color: #6B6B78;
   font-size: 16px;
@@ -79,16 +76,12 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   text-align: center;
 }
 
-.c8 {
+.c7 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 24px;
 }
 
 .c1 {
@@ -139,50 +132,33 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
 }
 
 .c3 {
-  padding: 24px 20px 24px 20px;
-  width: 100%;
-  border-radius: 16px 16px 0 0;
+  padding: 16px 56px 40px 56px;
+  width: 600px;
+  border-radius: 0!important;
+  height: 100%;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
+  position: absolute;
+  right: 0;
   -webkit-animation: content;
   animation: content;
   -webkit-animation-duration: 400ms;
   animation-duration: 400ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
-.c5 {
-  color: #231B22;
-  line-height: 24px;
-  font-size: 16px;
-  margin-bottom: 16px;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  text-align: left;
-}
-
-.c7 {
-  font-weight: 400;
-  color: #6B6B78;
-  line-height: 20px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  text-align: left;
-}
-
-.c9 {
-  margin-left: 0;
-  gap: 16px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.c6 {
+  margin: 0;
+  height: 100%;
   width: 100%;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  text-align: left;
 }
 
 <body>
@@ -198,23 +174,25 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
           class="c1 c2 c3"
         >
           <header
-            class="c4 c5"
+            class="c4"
             color="text.primary"
+            width="100%"
           >
             Title
           </header>
           <div
-            class="c6 c7"
+            class="c5 c6"
             color="text.secondary"
           >
             Subtitle
           </div>
           <footer
-            class="c8 c9"
+            class="c7"
             d="flex"
+            width="100%"
           >
             <button
-              class="c10"
+              class="c8"
             >
               Ok, got it
             </button>
