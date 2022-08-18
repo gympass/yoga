@@ -110,7 +110,7 @@ describe('<Datepicker />', () => {
       expect(onSelectSingle).toHaveBeenCalledTimes(1);
       fireEvent.click(screen.getByRole('button'));
 
-      const day10 = screen.queryAllByTestId('day-field-10')[0];
+      const day10 = screen.queryAllByText('10')[0];
 
       fireEvent.click(day10);
       expect(onSelectSingle).toHaveBeenCalledTimes(2);
@@ -126,8 +126,8 @@ describe('<Datepicker />', () => {
       expect(onSelectRange).toHaveBeenCalledTimes(1);
       fireEvent.click(screen.getByRole('button'));
 
-      const day10 = screen.queryAllByTestId('day-field-10')[0];
-      const day20 = screen.queryAllByTestId('day-field-20')[0];
+      const day10 = screen.queryAllByText('10')[0];
+      const day20 = screen.queryAllByText('20')[0];
 
       fireEvent.click(day10);
       expect(onSelectRange).toHaveBeenCalledTimes(2);
@@ -145,9 +145,7 @@ describe('<Datepicker />', () => {
       );
       const formattedDate = moment(currentDate).format(dateFormat);
 
-      expect(screen.getByTestId('datepicker-input').textContent).toBe(
-        formattedDate,
-      );
+      expect(screen.getByText(formattedDate)).toBeVisible();
     });
     it('should display default date range on range Datepicker', () => {
       const currentDate = new Date();
@@ -164,9 +162,9 @@ describe('<Datepicker />', () => {
         </ThemeProvider>,
       );
 
-      expect(screen.getByTestId('datepicker-input').textContent).toBe(
-        `${formattedStartDate} - ${formattedEndDate}`,
-      );
+      expect(
+        screen.getByText(`${formattedStartDate} - ${formattedEndDate}`),
+      ).toBeVisible();
     });
     it('should display custom placeholder and "Select Date" if none is provided', () => {
       const { rerender } = render(
@@ -198,9 +196,9 @@ describe('<Datepicker />', () => {
 
       fireEvent.click(previousMonthArrow);
       [...Array(25)].forEach((_e, i) =>
-        expect(screen.getAllByTestId(`day-field-${i + 1}`)[0]).toHaveAttribute(
-          'disabled',
-        ),
+        expect(
+          screen.getAllByText(`${i + 1}`)[0].closest('div'),
+        ).toHaveAttribute('disabled'),
       );
     });
     it('should disable future dates', () => {
@@ -215,9 +213,9 @@ describe('<Datepicker />', () => {
 
       fireEvent.click(nextMonthArrow);
       [...Array(25)].forEach((_e, i) =>
-        expect(screen.getAllByTestId(`day-field-${i + 1}`)[0]).toHaveAttribute(
-          'disabled',
-        ),
+        expect(
+          screen.getAllByText(`${i + 1}`)[0].closest('div'),
+        ).toHaveAttribute('disabled'),
       );
     });
     it('should be disabled', () => {
@@ -226,10 +224,11 @@ describe('<Datepicker />', () => {
           <Datepicker type="single" startDate={testDate} disabled />
         </ThemeProvider>,
       );
-      expect(screen.getByTestId('datepicker')).toHaveAttribute('disabled');
-      expect(screen.getByTestId('datepicker-input')).toHaveAttribute(
-        'disabled',
-      );
+      const formattedDate = moment(testDate).format(dateFormat);
+      const datepickerInput = screen.getByText(formattedDate);
+
+      expect(datepickerInput).toHaveAttribute('disabled');
+      expect(datepickerInput.closest('div')).toHaveAttribute('disabled');
     });
     it('should display an error', () => {
       render(

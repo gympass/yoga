@@ -56,7 +56,7 @@ const getDayFieldColor = (selected, disabled, colors, aux) => {
       Date.UTC(
         currentDate.getFullYear(),
         currentDate.getMonth(),
-        currentDate.getDay(),
+        currentDate.getDate(),
       ),
     ).getTime()
   ) {
@@ -262,7 +262,6 @@ function Calendar({
           onClick={() => val <= 7 && onClick(val)}
           inRange={type === 'range' && val <= 7 && inRange(val)}
           aux={{ val, startDate, endDate, year, month }}
-          data-testid={`day-field-${val}`}
         >
           <Text.Small>{val}</Text.Small>
         </DayField>
@@ -289,7 +288,6 @@ function Calendar({
             key={val}
             disabled={isDisabled(val)}
             aux={{ val, startDate, endDate, year, month }}
-            data-testid={`day-field-${val}`}
           >
             <Text.Small>{val}</Text.Small>
           </DayField>
@@ -316,7 +314,6 @@ function Calendar({
           onClick={() => val > 7 && onClick(val)}
           inRange={type === 'range' && val > 7 && inRange(val)}
           aux={{ val, startDate, endDate, year, month }}
-          data-testid={`day-field-${val}`}
         >
           <Text.Small>{val}</Text.Small>
         </DayField>

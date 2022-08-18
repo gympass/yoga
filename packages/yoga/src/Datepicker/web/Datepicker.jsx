@@ -244,7 +244,7 @@ function Datepicker({
 
     return (
       startD && (
-        <Input disabled={disabled} data-testid="datepicker-input">
+        <Input disabled={disabled}>
           {moment(startD).format(dateFormat)}
           {endD && ` - ${moment(endD).format(dateFormat)}`}
         </Input>
@@ -254,12 +254,7 @@ function Datepicker({
 
   return (
     <Wrapper fullWidth={fullWidth} tabIndex="0">
-      <Selector
-        open={open === 'true'}
-        disabled={disabled}
-        error={error}
-        data-testid="datepicker"
-      >
+      <Selector open={open === 'true'} disabled={disabled} error={error}>
         {renderInput()}
         <TButton
           onClick={() => {

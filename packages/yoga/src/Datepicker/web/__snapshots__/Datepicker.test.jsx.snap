@@ -84,7 +84,6 @@ exports[`<Datepicker /> Snapshots should match with custom placeholder single Da
   >
     <div
       class="c1"
-      data-testid="datepicker"
     >
       <p
         class="c2"
@@ -196,11 +195,9 @@ exports[`<Datepicker /> Snapshots should match with default selected date single
   >
     <div
       class="c1"
-      data-testid="datepicker"
     >
       <p
         class="c2"
-        data-testid="datepicker-input"
       >
         Aug 3, 2022
       </p>
@@ -309,11 +306,9 @@ exports[`<Datepicker /> Snapshots should match with default selected dates range
   >
     <div
       class="c1"
-      data-testid="datepicker"
     >
       <p
         class="c2"
-        data-testid="datepicker-input"
       >
         Aug 3, 2022
          - Aug 18, 2022
@@ -416,7 +411,6 @@ exports[`<Datepicker /> Snapshots should match with disabled Datepicker 1`] = `
   >
     <div
       class="c1"
-      data-testid="datepicker"
       disabled=""
     >
       <p
@@ -524,7 +518,6 @@ exports[`<Datepicker /> Snapshots should match with disabled future dates Datepi
   >
     <div
       class="c1"
-      data-testid="datepicker"
     >
       <p
         class="c2"
@@ -629,7 +622,6 @@ exports[`<Datepicker /> Snapshots should match with disabled past dates Datepick
   >
     <div
       class="c1"
-      data-testid="datepicker"
     >
       <p
         class="c2"
@@ -748,7 +740,6 @@ exports[`<Datepicker /> Snapshots should match with error Datepicker 1`] = `
   >
     <div
       class="c1"
-      data-testid="datepicker"
     >
       <p
         class="c2"
@@ -858,7 +849,6 @@ exports[`<Datepicker /> Snapshots should match with range Datepicker 1`] = `
   >
     <div
       class="c1"
-      data-testid="datepicker"
     >
       <p
         class="c2"
@@ -963,7 +953,6 @@ exports[`<Datepicker /> Snapshots should match with single Datepicker 1`] = `
   >
     <div
       class="c1"
-      data-testid="datepicker"
     >
       <p
         class="c2"
