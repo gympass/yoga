@@ -35,14 +35,15 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
+    "@babel/eslint-parser": "^7.16.3",
     "@babel/node": "^7.8.4",
     "@babel/preset-env": "^7.8.4",
     "@babel/preset-react": "^7.8.4",
     "@babel/runtime": "^7.8.4",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "latest",
-    "@babel/eslint-parser": "^7.16.3",
     "@react-native-community/eslint-config": "^3.0.1",
+    "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/jest-native": "^4.0.2",
     "@testing-library/react-native": "^9.1.0",
     "babel-plugin-import-glob": "^2.0.0",
@@ -64,9 +65,9 @@
     "jest-styled-components": "^6.3.3",
     "lerna": "^5.0.0",
     "lint-staged": "9.2.5",
+    "metro-react-native-babel-preset": "^0.67.0",
     "nx": "14.3.1",
     "prettier": "2.6.2",
-    "metro-react-native-babel-preset": "^0.67.0",
     "react-native": "0.68.1",
     "yargs": "^15.1.0"
   },
@@ -106,5 +107,7 @@
   "resolutions": {
     "sharp": "0.28.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
 }
