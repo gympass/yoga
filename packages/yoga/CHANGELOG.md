@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.50.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.49.0...@gympass/yoga@7.50.0) (2022-08-18)
+
+
+### Bug Fixes
+
+* codacy fix, replace const with function ([05b9878](https://github.com/Gympass/yoga/commit/05b9878b43d0b588b3bebc4ab7c0d03f2a87b37d))
+
+
+### Features
+
+* change datepicker icon ([7931949](https://github.com/Gympass/yoga/commit/7931949966e121788634b89df5902e391d9b930b))
+* custom onOpen event; changed input date format ([b02cf5a](https://github.com/Gympass/yoga/commit/b02cf5a7fb2ebf363778d244738a8147978ac5e9))
+* datepicker v1 ([a322f2a](https://github.com/Gympass/yoga/commit/a322f2a591bfca583dd8e657ee439912fc70f69c))
+
+
+
+
+
 # [7.49.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.48.1...@gympass/yoga@7.49.0) (2022-08-11)
 
 
