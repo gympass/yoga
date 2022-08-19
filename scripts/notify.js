@@ -58,11 +58,13 @@ async function notify() {
   try {
     const { body: changedPackages } = await getChangedPackages();
 
-    const changes = changedPackages.text.split('\n');
+    if (changedPackages.text) {
+      const changes = changedPackages.text.split('\n');
 
-    releaseNotification.text = releaseNotification.text.concat(
-      changes.join('\n'),
-    );
+      releaseNotification.text = releaseNotification.text.concat(
+        changes.join('\n'),
+      );
+    }
 
     const notification = JSON.stringify(releaseNotification);
 
