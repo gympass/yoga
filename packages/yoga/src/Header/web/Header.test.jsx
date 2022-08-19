@@ -26,6 +26,16 @@ describe('<Header />', () => {
     screen.getByRole('link', { href: gympassLink });
   });
 
+  it('should show gympass logo', () => {
+    render(
+      <ThemeProvider>
+        <Header />
+      </ThemeProvider>,
+    );
+
+    screen.getByTitle('Gympass Logo');
+  });
+
   it('should show custom logo', () => {
     const CustomLogo = () => <div>Custom logo</div>;
 
