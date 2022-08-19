@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.50.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.50.2...@gympass/yoga@7.50.3) (2022-08-19)
+
+
+### Bug Fixes
+
+* fix a drawer file ([fa18b03](https://github.com/Gympass/yoga/commit/fa18b0309a028dcc32006148bb6bcc5cb1a3b522))
+
+
+
+
+
 ## [7.50.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.50.1...@gympass/yoga@7.50.2) (2022-08-19)
 
 
