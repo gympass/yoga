@@ -106,8 +106,5 @@
   },
   "resolutions": {
     "sharp": "0.28.0"
-  },
-  "dependencies": {
-    "moment": "^2.29.4"
   }
 }
