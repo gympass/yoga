@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.50.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.50.0...@gympass/yoga@7.50.1) (2022-08-19)
+
+
+### Bug Fixes
+
+* **header:** add title on gympass logo ([a8b3426](https://github.com/Gympass/yoga/commit/a8b342615e056c5220b5002b8eace7ac5d7c47f7))
+
+
+
+
+
 # [7.50.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.49.0...@gympass/yoga@7.50.0) (2022-08-18)
 
 
