@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.29.4](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.29.3...@gympass/yoga-doc@2.29.4) (2022-08-23)
+
+
+### Bug Fixes
+
+* added a new prop to remove heading's padding when needed ([a959509](https://github.com/gympass/yoga/commit/a9595099c77e2bd7cee98c6e497cf8cb1dfb4c15))
+
+
+
+
+
 ## [2.29.3](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.29.2...@gympass/yoga-doc@2.29.3) (2022-08-19)
 
 **Note:** Version bump only for package @gympass/yoga-doc
