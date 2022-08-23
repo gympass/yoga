@@ -1,26 +1,29 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const StyledHeading = styled.header`
   ${({
+    noPadding,
     theme: {
       yoga: {
         components: { heading },
       },
     },
   }) => {
-    return `
-    background: ${heading.background};
-    padding: ${heading.padding.vertical}px ${heading.padding.horizontalMobile}px;
-    width: 100%;
-    min-height: ${heading.height}px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @media(min-width: 769px) {
+    return css`
+      background: ${heading.background};
+      padding: ${heading.padding.vertical}px
+        ${heading.padding.horizontalMobile}px;
+      width: 100%;
+      min-height: ${heading.height}px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      ${noPadding
+        ? 'padding: 0'
+        : `@media (min-width: 769px) {
         padding: ${heading.padding.vertical}px ${heading.padding.horizontal}px;
-    }
-  `;
+      }`};
+    `;
   }}
 `;
 
