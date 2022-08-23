@@ -1,12 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { bool } from 'prop-types';
 import StyledHeading, { Button } from './StyledHeading';
 import Box from '../../Box';
 import Title from './Title';
 import BackButton from './BackButton';
 import RightButton from './RightButton';
 
-const Heading = ({ children }) => {
+const Heading = ({ children, noPadding }) => {
   let backButton = null;
   let title = null;
   const rightButtons = [];
@@ -27,7 +27,7 @@ const Heading = ({ children }) => {
   }
 
   return (
-    <StyledHeading>
+    <StyledHeading noPadding={noPadding}>
       {backButton || <Button />}
       {title || <Box w="100%" />}
       <Box display="flex" justify-content="space-between" alignItems="center">
@@ -42,8 +42,9 @@ Heading.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]),
+  noPadding: bool,
 };
 
-Heading.defaultProps = { children: undefined };
+Heading.defaultProps = { children: undefined, noPadding: false };
 
 export default Heading;

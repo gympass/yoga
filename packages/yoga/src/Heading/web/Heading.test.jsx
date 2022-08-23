@@ -60,4 +60,18 @@ describe('<Heading />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot no padding', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Heading noPadding>
+          <Title>Gympass</Title>
+          <BackButton onClick={onClick} />
+          <RightButton icon={Upload2} onClick={onClick} />
+        </Heading>
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });
