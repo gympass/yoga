@@ -10,21 +10,19 @@ Icon components receive all the available svg tag attributes.
 
 ### Group
 
-You can use the icon group of `FlagsIcons` or `UIIcons`.
+You can use icon groups: `FlagsIcons` and `UIIcons`. You can also use an icon specific of these groups.
 
 Remembering that icon groups are `objects` you can work with.
 
 ```javascript
-<Box d="flex" gap="small">
-  {Object.entries(FlagsIcons).map(([_, Component]) => (
-    <Component width={26} height={26} />
-  ))}
+<Box d="flex" flexDirection="column" alignItems="center" gap="small">
+  <UIIcons.Favorite fill="#d8385e" width={26} height={26} />
+  <FlagsIcons.FlagBrazil width={26} height={26} />
+
+  <Box d="flex" gap="small">
+    {Object.entries(FlagsIcons).map(([_, Component]) => (
+      <Component width={26} height={26} />
+    ))}
+  </Box>
 </Box>
-```
-
-You also can use a specific icon from a group.
-
-
-```javascript
-<UIIcons.Favorite fill="#d8385e" width={26} height={26} />
 ```
