@@ -1,9 +1,10 @@
 /* eslint react/no-array-index-key: 0 */
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Downshift from 'downshift';
 import { arrayOf, string, func, bool, shape } from 'prop-types';
 import styled from 'styled-components';
 
+import { ChevronDown, ChevronUp } from '@gympass/yoga-icons/src';
 import Input from '../../Input/web/Input';
 
 const escapeRegExp = str => str.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
@@ -158,6 +159,15 @@ const AutoComplete = React.forwardRef(
     ref,
   ) => {
     const [userValue, setUserValue] = useState(value);
+    const [isSuggestionsOpen, setIsSuggestionsOpen] = useState(false);
+
+    const handleOpenSuggestions = useCallback(() => {
+      setIsSuggestionsOpen(true);
+    }, []);
+
+    const handleCloseSuggestions = useCallback(() => {
+      setIsSuggestionsOpen(false);
+    }, []);
 
     return (
       <Downshift
@@ -189,7 +199,7 @@ const AutoComplete = React.forwardRef(
           inputValue,
         }) => {
           const reg = new RegExp(
-            `(${escapeRegExp(inputValue || '').trim() || null})`,
+            `(${escapeRegExp(inputValue || '').trim()})`,
             'gi',
           );
 
@@ -203,14 +213,16 @@ const AutoComplete = React.forwardRef(
             )
             .slice(0, 6);
 
-          const hasSuggestion = isOpen && Boolean(suggestionList.length);
+          if (isOpen && Boolean(suggestionList.length)) {
+            setIsSuggestionsOpen(true);
+          }
 
           return (
             <Wrapper
               className={className}
               style={style}
               full={full}
-              isOpen={hasSuggestion}
+              isOpen={isSuggestionsOpen}
               {...getRootProps()}
               ref={ref}
             >
@@ -224,8 +236,15 @@ const AutoComplete = React.forwardRef(
                 {...getInputProps({
                   onFocus: () => (inputValue.length ? openMenu() : null),
                 })}
+                rightIcon={
+                  isSuggestionsOpen ? (
+                    <ChevronUp onClick={handleCloseSuggestions} />
+                  ) : (
+                    <ChevronDown onClick={handleOpenSuggestions} />
+                  )
+                }
               />
-              {hasSuggestion && (
+              {isSuggestionsOpen && (
                 <List {...getMenuProps()} full={full}>
                   {suggestionList.map((option, optionIndex) => (
                     <Item
@@ -239,7 +258,7 @@ const AutoComplete = React.forwardRef(
                       {option
                         .split(reg)
                         .map((part, index) =>
-                          part.match(reg) ? (
+                          !!inputValue && part.match(reg) ? (
                             <Match key={index}>{part}</Match>
                           ) : (
                             <React.Fragment key={`unmatch-${index}`}>

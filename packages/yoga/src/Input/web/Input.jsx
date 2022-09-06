@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import styled, { css } from 'styled-components';
-import { func, string, bool, number, shape, oneOfType } from 'prop-types';
+import { func, string, bool, number, shape, oneOfType, node } from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
 import { theme } from '../../Theme';
@@ -25,6 +25,7 @@ const Control = styled.div`
 const IconWrapper = styled.div`
   ${({
     disabled,
+    hasIconRight = false,
     theme: {
       yoga: {
         colors,
@@ -32,10 +33,10 @@ const IconWrapper = styled.div`
         components: { input },
       },
     },
-  }) => `
+  }) => css`
     position: absolute;
     top: 0;
-    right: 0;
+    right: ${hasIconRight ? spacing.large : 0}px;
 
     padding-right: ${spacing.small}px;
     padding-left: ${spacing.xxsmall}px;
@@ -45,7 +46,8 @@ const IconWrapper = styled.div`
 
     outline: none;
 
-    &:hover svg, &:focus svg {
+    &:hover svg,
+    &:focus svg {
       fill: ${input.font.color.focus};
     }
 
@@ -55,17 +57,15 @@ const IconWrapper = styled.div`
       fill: ${input.font.color.default};
     }
 
-    ${
-      disabled
-        ? `
+    ${disabled
+      ? `
       cursor: not-allowed;
       pointer-events: none;
       svg {
         fill: ${colors.text.disabled};
       }
     `
-        : ''
-    }
+      : ''}
   `}
 `;
 
@@ -85,6 +85,7 @@ const Input = React.forwardRef(
       onChange,
       onClean,
       hideMaxLength,
+      rightIcon,
       ...props
     },
     ref,
@@ -141,8 +142,22 @@ const Input = React.forwardRef(
               width={20}
               height={20}
               role="button"
+              hasIconRight={!!rightIcon}
             >
               <Close />
+            </IconWrapper>
+          )}
+
+          {!!rightIcon && !readOnly && (
+            <IconWrapper
+              tabIndex={0}
+              disabled={disabled}
+              onKeyDown={cleanField}
+              width={20}
+              height={20}
+              role="button"
+            >
+              {rightIcon}
             </IconWrapper>
           )}
         </Fieldset>
@@ -182,6 +197,7 @@ Input.propTypes = {
   /** when max length helper is unnecessary to appear */
   hideMaxLength: bool,
   placeholder: string,
+  rightIcon: node,
 };
 
 Input.defaultProps = {
@@ -200,6 +216,7 @@ Input.defaultProps = {
   onClean: () => {},
   hideMaxLength: false,
   placeholder: undefined,
+  rightIcon: undefined,
 };
 
 export default Input;
