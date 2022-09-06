@@ -67,6 +67,7 @@ exports[`<Skeleton /> should render the text skeleton 1`] = `
   }
 >
   <View
+    height={32}
     style={
       Array [
         Object {
