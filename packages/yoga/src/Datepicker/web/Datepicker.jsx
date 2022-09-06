@@ -4,7 +4,7 @@ import { Booking, BookingFilled } from '@gympass/yoga-icons';
 import { Text } from '@gympass/yoga';
 import styled, { css } from 'styled-components';
 import { bool, oneOf, func, instanceOf, string } from 'prop-types';
-import moment from 'moment';
+import { format } from 'date-fns';
 import { theme } from '../../Theme';
 import Calendar from './Calendar';
 
@@ -175,7 +175,7 @@ function Datepicker({
   type,
   placeholder,
   startDate: initialDate,
-  endDate,
+  endDate: finishDate,
   onSelectSingle,
   disabled,
   onSelectRange,
@@ -186,7 +186,7 @@ function Datepicker({
 }) {
   const [open, setOpen] = useState();
   const [startDate, setStartDate] = useState(initialDate);
-  const [endD, setEndDate] = useState(endDate);
+  const [endDate, setEndDate] = useState(finishDate);
   const ref = useRef(null);
   const [inputFilled, setInputFilled] = useState(false);
 
@@ -204,10 +204,10 @@ function Datepicker({
       onSelectSingle(startDate);
       setOpen(false.toString());
     } else if (type === 'range' && onSelectRange) {
-      onSelectRange(startDate, endD);
+      onSelectRange(startDate, endDate);
     }
     setInputFilled(!!startDate);
-  }, [startDate, endD]);
+  }, [startDate, endDate]);
 
   const onDateSingleSelect = startLocal => {
     setStartDate(startLocal);
@@ -218,7 +218,7 @@ function Datepicker({
   }, [open]);
 
   const onDateRangeSelect = selectedDate => {
-    if (!endD) {
+    if (!endDate) {
       if (!startDate) {
         setStartDate(selectedDate);
       } else if (selectedDate < startDate) {
@@ -232,7 +232,7 @@ function Datepicker({
   };
 
   const renderInput = () => {
-    if (!startDate && !endD) {
+    if (!startDate && !endDate) {
       return (
         <InputPlaceholder disabled={disabled}>
           {placeholder ?? `Select Date`}
@@ -240,13 +240,13 @@ function Datepicker({
       );
     }
 
-    const dateFormat = 'MMM D, YYYY';
+    const dateFormat = 'MMM d, yyyy';
 
     return (
       startDate && (
         <Input disabled={disabled}>
-          {moment(startDate).format(dateFormat)}
-          {endD && ` - ${moment(endD).format(dateFormat)}`}
+          {format(startDate, dateFormat)}
+          {endDate && ` - ${format(endDate, dateFormat)}`}
         </Input>
       )
     );
@@ -274,7 +274,7 @@ function Datepicker({
           <Calendar
             type={type}
             startDate={startDate}
-            endDate={endD}
+            endDate={endDate}
             onSelectSingle={onDateSingleSelect}
             onSelectRange={onDateRangeSelect}
             disablePastDates={disablePastDates}
