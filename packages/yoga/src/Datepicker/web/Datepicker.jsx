@@ -174,7 +174,7 @@ function Datepicker({
   fullWidth,
   type,
   placeholder,
-  startDate,
+  startDate: initialDate,
   endDate,
   onSelectSingle,
   disabled,
@@ -185,7 +185,7 @@ function Datepicker({
   onOpen,
 }) {
   const [open, setOpen] = useState();
-  const [startD, setStartDate] = useState(startDate);
+  const [startDate, setStartDate] = useState(initialDate);
   const [endD, setEndDate] = useState(endDate);
   const ref = useRef(null);
   const [inputFilled, setInputFilled] = useState(false);
@@ -201,13 +201,13 @@ function Datepicker({
 
   useEffect(() => {
     if (type === 'single' && onSelectSingle) {
-      onSelectSingle(startD);
+      onSelectSingle(startDate);
       setOpen(false.toString());
     } else if (type === 'range' && onSelectRange) {
-      onSelectRange(startD, endD);
+      onSelectRange(startDate, endD);
     }
-    setInputFilled(!!startD);
-  }, [startD, endD]);
+    setInputFilled(!!startDate);
+  }, [startDate, endD]);
 
   const onDateSingleSelect = startLocal => {
     setStartDate(startLocal);
@@ -219,9 +219,9 @@ function Datepicker({
 
   const onDateRangeSelect = selectedDate => {
     if (!endD) {
-      if (!startD) {
+      if (!startDate) {
         setStartDate(selectedDate);
-      } else if (selectedDate < startD) {
+      } else if (selectedDate < startDate) {
         setStartDate(selectedDate);
         setEndDate(undefined);
       } else setEndDate(selectedDate);
@@ -232,7 +232,7 @@ function Datepicker({
   };
 
   const renderInput = () => {
-    if (!startD && !endD) {
+    if (!startDate && !endD) {
       return (
         <InputPlaceholder disabled={disabled}>
           {placeholder ?? `Select Date`}
@@ -243,9 +243,9 @@ function Datepicker({
     const dateFormat = 'MMM D, YYYY';
 
     return (
-      startD && (
+      startDate && (
         <Input disabled={disabled}>
-          {moment(startD).format(dateFormat)}
+          {moment(startDate).format(dateFormat)}
           {endD && ` - ${moment(endD).format(dateFormat)}`}
         </Input>
       )
@@ -273,7 +273,7 @@ function Datepicker({
         <Panel tabIndex={-1} ref={ref} onBlur={onBlur}>
           <Calendar
             type={type}
-            startDate={startD}
+            startDate={startDate}
             endDate={endD}
             onSelectSingle={onDateSingleSelect}
             onSelectRange={onDateRangeSelect}
