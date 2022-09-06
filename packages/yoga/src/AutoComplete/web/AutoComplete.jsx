@@ -179,6 +179,7 @@ const AutoComplete = React.forwardRef(
             setUserValue(selectedItem);
             onSelect(selectedItem);
             onChange(selectedItem);
+            handleCloseSuggestions();
           } else if (
             Object.prototype.hasOwnProperty.call(changes, 'inputValue')
           ) {
@@ -213,7 +214,7 @@ const AutoComplete = React.forwardRef(
             )
             .slice(0, 6);
 
-          if (isOpen && Boolean(suggestionList.length)) {
+          if (!!inputValue && isOpen) {
             setIsSuggestionsOpen(true);
           }
 
@@ -232,6 +233,7 @@ const AutoComplete = React.forwardRef(
                 onClean={cleanable => {
                   onClean(cleanable);
                   clearSelection();
+                  handleCloseSuggestions();
                 }}
                 {...getInputProps({
                   onFocus: () => (inputValue.length ? openMenu() : null),

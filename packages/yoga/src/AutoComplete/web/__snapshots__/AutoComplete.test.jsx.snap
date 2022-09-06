@@ -175,6 +175,28 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
   width: 100%;
 }
 
+.c7 {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  padding-right: 16px;
+  padding-left: 8px;
+  height: 52px;
+  cursor: pointer;
+  outline: none;
+}
+
+.c7:hover svg,
+.c7:focus svg {
+  fill: #231B22;
+}
+
+.c7 svg {
+  height: 52px;
+  width: 20px;
+  fill: #6B6B78;
+}
+
 .c0 {
   position: relative;
   width: 100%;
@@ -220,6 +242,15 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
           </span>
         </legend>
         
+        <div
+          class="c7"
+          height="20"
+          role="button"
+          tabindex="0"
+          width="20"
+        >
+          <svg />
+        </div>
       </fieldset>
     </div>
   </div>
@@ -401,6 +432,28 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
   width: 320px;
 }
 
+.c7 {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  padding-right: 16px;
+  padding-left: 8px;
+  height: 52px;
+  cursor: pointer;
+  outline: none;
+}
+
+.c7:hover svg,
+.c7:focus svg {
+  fill: #231B22;
+}
+
+.c7 svg {
+  height: 52px;
+  width: 20px;
+  fill: #6B6B78;
+}
+
 .c0 {
   position: relative;
   width: auto;
@@ -446,6 +499,15 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
           </span>
         </legend>
         
+        <div
+          class="c7"
+          height="20"
+          role="button"
+          tabindex="0"
+          width="20"
+        >
+          <svg />
+        </div>
       </fieldset>
     </div>
   </div>
@@ -648,10 +710,32 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   width: 100%;
 }
 
+.c8 {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  padding-right: 16px;
+  padding-left: 8px;
+  height: 52px;
+  cursor: pointer;
+  outline: none;
+}
+
+.c8:hover svg,
+.c8:focus svg {
+  fill: #231B22;
+}
+
+.c8 svg {
+  height: 52px;
+  width: 20px;
+  fill: #6B6B78;
+}
+
 .c7 {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 24px;
   padding-right: 16px;
   padding-left: 8px;
   height: 52px;
@@ -698,7 +782,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   font-weight: 400;
 }
 
-.c8 {
+.c9 {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -717,7 +801,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   overflow: hidden;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   list-style: none;
   cursor: pointer;
@@ -729,11 +813,11 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   line-height: 20px;
 }
 
-.c9:hover {
+.c10:hover {
   background-color: #F5F5FA;
 }
 
-.c10 {
+.c11 {
   background: transparent;
   color: inherit;
   font-weight: 700;
@@ -787,25 +871,36 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
           tabindex="0"
           width="20"
         >
+          <svg
+            aria-label="Clear"
+          />
+        </div>
+        <div
+          class="c8"
+          height="20"
+          role="button"
+          tabindex="0"
+          width="20"
+        >
           <svg />
         </div>
       </fieldset>
     </div>
     <ul
       aria-labelledby="downshift-3-label"
-      class="c8"
+      class="c9"
       id="downshift-3-menu"
       role="listbox"
     >
       <li
         aria-selected="false"
-        class="c9"
+        class="c10"
         id="downshift-3-item-0"
         role="option"
       >
         
         <mark
-          class="c10"
+          class="c11"
         >
           s
         </mark>
@@ -813,13 +908,13 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
       </li>
       <li
         aria-selected="false"
-        class="c9"
+        class="c10"
         id="downshift-3-item-1"
         role="option"
       >
         fir
         <mark
-          class="c10"
+          class="c11"
         >
           s
         </mark>
@@ -1026,10 +1121,32 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   width: 320px;
 }
 
+.c8 {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  padding-right: 16px;
+  padding-left: 8px;
+  height: 52px;
+  cursor: pointer;
+  outline: none;
+}
+
+.c8:hover svg,
+.c8:focus svg {
+  fill: #231B22;
+}
+
+.c8 svg {
+  height: 52px;
+  width: 20px;
+  fill: #6B6B78;
+}
+
 .c7 {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 24px;
   padding-right: 16px;
   padding-left: 8px;
   height: 52px;
@@ -1076,7 +1193,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   font-weight: 400;
 }
 
-.c8 {
+.c9 {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -1095,7 +1212,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   overflow: hidden;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   list-style: none;
   cursor: pointer;
@@ -1107,11 +1224,11 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   line-height: 20px;
 }
 
-.c9:hover {
+.c10:hover {
   background-color: #F5F5FA;
 }
 
-.c10 {
+.c11 {
   background: transparent;
   color: inherit;
   font-weight: 700;
@@ -1165,25 +1282,36 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
           tabindex="0"
           width="20"
         >
+          <svg
+            aria-label="Clear"
+          />
+        </div>
+        <div
+          class="c8"
+          height="20"
+          role="button"
+          tabindex="0"
+          width="20"
+        >
           <svg />
         </div>
       </fieldset>
     </div>
     <ul
       aria-labelledby="downshift-2-label"
-      class="c8"
+      class="c9"
       id="downshift-2-menu"
       role="listbox"
     >
       <li
         aria-selected="false"
-        class="c9"
+        class="c10"
         id="downshift-2-item-0"
         role="option"
       >
         
         <mark
-          class="c10"
+          class="c11"
         >
           s
         </mark>
@@ -1191,13 +1319,13 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
       </li>
       <li
         aria-selected="false"
-        class="c9"
+        class="c10"
         id="downshift-2-item-1"
         role="option"
       >
         fir
         <mark
-          class="c10"
+          class="c11"
         >
           s
         </mark>

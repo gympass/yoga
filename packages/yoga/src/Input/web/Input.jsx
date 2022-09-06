@@ -144,7 +144,7 @@ const Input = React.forwardRef(
               role="button"
               hasIconRight={!!rightIcon}
             >
-              <Close />
+              <Close aria-label="Clear" />
             </IconWrapper>
           )}
 
@@ -152,7 +152,6 @@ const Input = React.forwardRef(
             <IconWrapper
               tabIndex={0}
               disabled={disabled}
-              onKeyDown={cleanField}
               width={20}
               height={20}
               role="button"
