@@ -27,7 +27,7 @@ describe('<Skeleton />', () => {
   it('should render the text skeleton', () => {
     const { toJSON } = render(
       <ThemeProvider>
-        <Skeleton type="text" variant="body1" width={61} />
+        <Skeleton type="text" variant="body1" width={61} height={32} />
       </ThemeProvider>,
     );
 

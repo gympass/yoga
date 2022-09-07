@@ -36,6 +36,10 @@ describe('<Datepicker />', () => {
       expect(container).toMatchSnapshot();
     });
     it('should match with default selected dates range Datepicker', () => {
+      const mockedDate = new Date(2022, 7, 3);
+
+      jest.useFakeTimers('modern').setSystemTime(mockedDate);
+
       const endDate = new Date();
 
       endDate.setDate(testDate.getDate() + 15);
