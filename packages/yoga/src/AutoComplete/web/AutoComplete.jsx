@@ -259,9 +259,15 @@ const AutoComplete = React.forwardRef(
                 })}
                 rightIcon={
                   isSuggestionsOpen ? (
-                    <ChevronUp onClick={handleCloseSuggestions} />
+                    <ChevronUp
+                      onClick={handleCloseSuggestions}
+                      aria-label="Close suggestions"
+                    />
                   ) : (
-                    <ChevronDown onClick={handleOpenSuggestions} />
+                    <ChevronDown
+                      onClick={handleOpenSuggestions}
+                      aria-label="Open suggestions"
+                    />
                   )
                 }
                 ref={inputRef}

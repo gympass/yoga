@@ -249,7 +249,9 @@ exports[`<AutoComplete /> Snapshots should match with a full width component 1`]
           tabindex="0"
           width="20"
         >
-          <svg />
+          <svg
+            aria-label="Open suggestions"
+          />
         </div>
       </fieldset>
     </div>
@@ -506,7 +508,9 @@ exports[`<AutoComplete /> Snapshots should match with default component 1`] = `
           tabindex="0"
           width="20"
         >
-          <svg />
+          <svg
+            aria-label="Open suggestions"
+          />
         </div>
       </fieldset>
     </div>
@@ -883,7 +887,9 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
           tabindex="0"
           width="20"
         >
-          <svg />
+          <svg
+            aria-label="Close suggestions"
+          />
         </div>
       </fieldset>
     </div>
@@ -1295,7 +1301,9 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
           tabindex="0"
           width="20"
         >
-          <svg />
+          <svg
+            aria-label="Close suggestions"
+          />
         </div>
       </fieldset>
     </div>
