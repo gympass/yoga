@@ -790,6 +790,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   top: 52px;
   width: 100%;
   max-height: 312px;
+  overflow-y: auto;
   box-sizing: border-box;
   background-color: #FFFFFF;
   border-width: 1px;
@@ -798,7 +799,6 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   border-top-width: 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  overflow: hidden;
 }
 
 .c10 {
@@ -1201,6 +1201,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   top: 52px;
   width: 320px;
   max-height: 312px;
+  overflow-y: auto;
   box-sizing: border-box;
   background-color: #FFFFFF;
   border-width: 1px;
@@ -1209,7 +1210,6 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   border-top-width: 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  overflow: hidden;
 }
 
 .c10 {

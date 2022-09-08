@@ -2,7 +2,7 @@
 import React, { useState, useCallback } from 'react';
 import Downshift from 'downshift';
 import { arrayOf, string, func, bool, shape } from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { ChevronDown, ChevronUp } from '@gympass/yoga-icons/src';
 import Input from '../../Input/web/Input';
@@ -66,11 +66,12 @@ const List = styled.ul`
         components: { autocomplete },
       },
     },
-  }) => `
+  }) => css`
     top: ${autocomplete.height}px;
 
     width: ${full ? '100%' : `${autocomplete.width}px`};
     max-height: ${autocomplete.height * 6}px;
+    overflow-y: auto;
     box-sizing: border-box;
 
     background-color: ${autocomplete.field.backgroundColor};
@@ -82,8 +83,6 @@ const List = styled.ul`
     border-top-width: 0;
     border-bottom-left-radius: ${autocomplete.border.radius}px;
     border-bottom-right-radius: ${autocomplete.border.radius}px;
-
-    overflow: hidden;
   `}
 `;
 
@@ -211,8 +210,7 @@ const AutoComplete = React.forwardRef(
               second.toLowerCase().indexOf(inputValue)
                 ? -1
                 : 1,
-            )
-            .slice(0, 6);
+            );
 
           if (!!inputValue && isOpen) {
             setIsSuggestionsOpen(true);
