@@ -796,6 +796,7 @@ exports[`<AutoComplete /> Snapshots should match with full width options list 1`
   border-width: 1px;
   border-style: solid;
   border-color: #231B22;
+  border-color: #231B22;
   border-top-width: 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -1206,6 +1207,7 @@ exports[`<AutoComplete /> Snapshots should match with options list 1`] = `
   background-color: #FFFFFF;
   border-width: 1px;
   border-style: solid;
+  border-color: #231B22;
   border-color: #231B22;
   border-top-width: 0;
   border-bottom-left-radius: 8px;

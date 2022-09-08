@@ -61,8 +61,10 @@ const List = styled.ul`
 
   ${({
     full,
+    error,
     theme: {
       yoga: {
+        colors,
         components: { autocomplete },
       },
     },
@@ -79,6 +81,10 @@ const List = styled.ul`
     border-width: ${autocomplete.border.width}px;
     border-style: solid;
     border-color: ${autocomplete.border.color.typed};
+
+    border-color: ${error
+      ? colors.feedback.attention[1]
+      : autocomplete.border.color.typed};
 
     border-top-width: 0;
     border-bottom-left-radius: ${autocomplete.border.radius}px;
@@ -153,6 +159,7 @@ const AutoComplete = React.forwardRef(
       onClean,
       onSelect,
       value,
+      error,
       ...props
     },
     ref,
@@ -240,6 +247,7 @@ const AutoComplete = React.forwardRef(
             >
               <Input
                 {...props}
+                error={error}
                 full={full}
                 onClean={cleanable => {
                   onClean(cleanable);
@@ -259,7 +267,7 @@ const AutoComplete = React.forwardRef(
                 ref={inputRef}
               />
               {isSuggestionsOpen && (
-                <List {...getMenuProps()} full={full}>
+                <List {...getMenuProps()} full={full} error={!!error}>
                   {suggestionList.map((option, optionIndex) => (
                     <Item
                       {...getItemProps({
@@ -304,6 +312,7 @@ AutoComplete.propTypes = {
   /** a callback to know when the user cleaned the field */
   onClean: func,
   value: string,
+  error: string,
 };
 
 AutoComplete.defaultProps = {
@@ -315,6 +324,7 @@ AutoComplete.defaultProps = {
   onChange: () => {},
   onClean: () => {},
   value: undefined,
+  error: undefined,
 };
 
 export default AutoComplete;
