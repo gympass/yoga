@@ -224,6 +224,7 @@ const AutoComplete = React.forwardRef(
               isOpen={isSuggestionsOpen}
               {...getRootProps()}
               ref={ref}
+              onBlur={handleCloseSuggestions}
             >
               <Input
                 {...props}
