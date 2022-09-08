@@ -4,7 +4,7 @@ import Downshift from 'downshift';
 import { arrayOf, string, func, bool, shape } from 'prop-types';
 import styled, { css } from 'styled-components';
 
-import { ChevronDown, ChevronUp } from '@gympass/yoga-icons/src';
+import { ChevronDown, ChevronUp } from '@gympass/yoga-icons';
 import Input from '../../Input/web/Input';
 
 const escapeRegExp = str => str.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
