@@ -1,5 +1,5 @@
 /* eslint react/no-array-index-key: 0 */
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import Downshift from 'downshift';
 import { arrayOf, string, func, bool, shape } from 'prop-types';
 import styled, { css } from 'styled-components';
@@ -160,12 +160,24 @@ const AutoComplete = React.forwardRef(
     const [userValue, setUserValue] = useState(value);
     const [isSuggestionsOpen, setIsSuggestionsOpen] = useState(false);
 
+    const inputRef = useRef();
+
     const handleOpenSuggestions = useCallback(() => {
+      inputRef.current?.focus();
       setIsSuggestionsOpen(true);
     }, []);
 
     const handleCloseSuggestions = useCallback(() => {
       setIsSuggestionsOpen(false);
+    }, []);
+
+    useEffect(() => {
+      const handleKeyUp = ({ key }) => {
+        return key === 'Escape' && handleCloseSuggestions();
+      };
+
+      window.addEventListener('keyup', handleKeyUp);
+      return () => window.removeEventListener('keyup', handleKeyUp);
     }, []);
 
     return (
@@ -244,6 +256,7 @@ const AutoComplete = React.forwardRef(
                     <ChevronDown onClick={handleOpenSuggestions} />
                   )
                 }
+                ref={inputRef}
               />
               {isSuggestionsOpen && (
                 <List {...getMenuProps()} full={full}>
