@@ -3,8 +3,8 @@ import React, { useState, useCallback, useRef, useEffect } from 'react';
 import Downshift from 'downshift';
 import { arrayOf, string, func, bool, shape } from 'prop-types';
 import styled, { css } from 'styled-components';
-
 import { ChevronDown, ChevronUp } from '@gympass/yoga-icons';
+
 import Input from '../../Input/web/Input';
 
 const escapeRegExp = str => str.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
@@ -160,6 +160,8 @@ const AutoComplete = React.forwardRef(
       onSelect,
       value,
       error,
+      openSuggestionsAriaLabel,
+      closeSuggestionsAriaLabel,
       ...props
     },
     ref,
@@ -261,12 +263,12 @@ const AutoComplete = React.forwardRef(
                   isSuggestionsOpen ? (
                     <ChevronUp
                       onClick={handleCloseSuggestions}
-                      aria-label="Close suggestions"
+                      aria-label={closeSuggestionsAriaLabel}
                     />
                   ) : (
                     <ChevronDown
                       onClick={handleOpenSuggestions}
-                      aria-label="Open suggestions"
+                      aria-label={openSuggestionsAriaLabel}
                     />
                   )
                 }
@@ -319,6 +321,10 @@ AutoComplete.propTypes = {
   onClean: func,
   value: string,
   error: string,
+  /** an aria label for the open suggestions icon */
+  openSuggestionsAriaLabel: string,
+  /** an aria label for the close suggestions icon */
+  closeSuggestionsAriaLabel: string,
 };
 
 AutoComplete.defaultProps = {
@@ -331,6 +337,8 @@ AutoComplete.defaultProps = {
   onClean: () => {},
   value: undefined,
   error: undefined,
+  openSuggestionsAriaLabel: 'Open suggestions',
+  closeSuggestionsAriaLabel: 'Close suggestions',
 };
 
 export default AutoComplete;
