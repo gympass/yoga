@@ -7,12 +7,7 @@ import { ChevronDown, ChevronUp } from '@gympass/yoga-icons';
 
 import Input from '../../Input/web/Input';
 
-const escapeRegExp = str => {
-  return str
-    .replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&')
-    .replace(/[ÀÁÂÃÄÅ]/, 'A')
-    .replace(/[àáâãäå]/, 'a');
-};
+const escapeRegExp = str => str.replace(/[.*+\-?^${}()|[\]\\]/g, '\\$&');
 
 const Wrapper = styled.div`
   position: relative;
@@ -224,10 +219,13 @@ const AutoComplete = React.forwardRef(
           openMenu,
           inputValue,
         }) => {
-          const reg = new RegExp(`(${(inputValue || '').trim()})`, 'gi');
+          const reg = new RegExp(
+            `(${escapeRegExp(inputValue || '').trim()})`,
+            'gi',
+          );
 
           const suggestionList = options
-            .filter(option => escapeRegExp(option).match(reg))
+            .filter(option => option.match(reg))
             .sort((first, second) =>
               first.toLowerCase().indexOf(inputValue) <
               second.toLowerCase().indexOf(inputValue)
