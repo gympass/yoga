@@ -74,7 +74,7 @@ describe('<AutoComplete />', () => {
 
       fireEvent.focus(getByDisplayValue('secon'));
 
-      fireEvent.click(getByRole('button'));
+      fireEvent.click(getByRole('button', { name: /clear/i }));
 
       expect(container.querySelector('ul')).toBe(null);
     });
@@ -121,7 +121,7 @@ describe('<AutoComplete />', () => {
       );
 
       fireEvent.focus(getByDisplayValue('New'));
-      fireEvent.click(getByRole('button'));
+      fireEvent.click(getByRole('button', { name: /clear/i }));
 
       expect(onCleanMock).toHaveBeenCalledWith('');
       expect(onSelectMock).not.toHaveBeenCalled();

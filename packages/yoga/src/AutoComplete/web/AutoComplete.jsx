@@ -1,8 +1,9 @@
 /* eslint react/no-array-index-key: 0 */
-import React, { useState } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import Downshift from 'downshift';
 import { arrayOf, string, func, bool, shape } from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { ChevronDown, ChevronUp } from '@gympass/yoga-icons';
 
 import Input from '../../Input/web/Input';
 
@@ -60,16 +61,19 @@ const List = styled.ul`
 
   ${({
     full,
+    error,
     theme: {
       yoga: {
+        colors,
         components: { autocomplete },
       },
     },
-  }) => `
+  }) => css`
     top: ${autocomplete.height}px;
 
     width: ${full ? '100%' : `${autocomplete.width}px`};
     max-height: ${autocomplete.height * 6}px;
+    overflow-y: auto;
     box-sizing: border-box;
 
     background-color: ${autocomplete.field.backgroundColor};
@@ -78,11 +82,13 @@ const List = styled.ul`
     border-style: solid;
     border-color: ${autocomplete.border.color.typed};
 
+    border-color: ${error
+      ? colors.feedback.attention[1]
+      : autocomplete.border.color.typed};
+
     border-top-width: 0;
     border-bottom-left-radius: ${autocomplete.border.radius}px;
     border-bottom-right-radius: ${autocomplete.border.radius}px;
-
-    overflow: hidden;
   `}
 `;
 
@@ -153,11 +159,35 @@ const AutoComplete = React.forwardRef(
       onClean,
       onSelect,
       value,
+      error,
+      openSuggestionsAriaLabel,
+      closeSuggestionsAriaLabel,
       ...props
     },
     ref,
   ) => {
     const [userValue, setUserValue] = useState(value);
+    const [isSuggestionsOpen, setIsSuggestionsOpen] = useState(false);
+
+    const inputRef = useRef();
+
+    const handleOpenSuggestions = useCallback(() => {
+      inputRef.current?.focus();
+      setIsSuggestionsOpen(true);
+    }, []);
+
+    const handleCloseSuggestions = useCallback(() => {
+      setIsSuggestionsOpen(false);
+    }, []);
+
+    useEffect(() => {
+      const handleKeyUp = ({ key }) => {
+        return key === 'Escape' && handleCloseSuggestions();
+      };
+
+      window.addEventListener('keyup', handleKeyUp);
+      return () => window.removeEventListener('keyup', handleKeyUp);
+    }, []);
 
     return (
       <Downshift
@@ -169,6 +199,7 @@ const AutoComplete = React.forwardRef(
             setUserValue(selectedItem);
             onSelect(selectedItem);
             onChange(selectedItem);
+            handleCloseSuggestions();
           } else if (
             Object.prototype.hasOwnProperty.call(changes, 'inputValue')
           ) {
@@ -189,7 +220,7 @@ const AutoComplete = React.forwardRef(
           inputValue,
         }) => {
           const reg = new RegExp(
-            `(${escapeRegExp(inputValue || '').trim() || null})`,
+            `(${escapeRegExp(inputValue || '').trim()})`,
             'gi',
           );
 
@@ -200,33 +231,51 @@ const AutoComplete = React.forwardRef(
               second.toLowerCase().indexOf(inputValue)
                 ? -1
                 : 1,
-            )
-            .slice(0, 6);
+            );
 
-          const hasSuggestion = isOpen && Boolean(suggestionList.length);
+          if (!!inputValue && isOpen) {
+            setIsSuggestionsOpen(true);
+          }
 
           return (
             <Wrapper
               className={className}
               style={style}
               full={full}
-              isOpen={hasSuggestion}
+              isOpen={isSuggestionsOpen}
               {...getRootProps()}
               ref={ref}
+              onBlur={handleCloseSuggestions}
             >
               <Input
                 {...props}
+                error={error}
                 full={full}
                 onClean={cleanable => {
                   onClean(cleanable);
                   clearSelection();
+                  handleCloseSuggestions();
                 }}
                 {...getInputProps({
                   onFocus: () => (inputValue.length ? openMenu() : null),
                 })}
+                rightIcon={
+                  isSuggestionsOpen ? (
+                    <ChevronUp
+                      onClick={handleCloseSuggestions}
+                      aria-label={closeSuggestionsAriaLabel}
+                    />
+                  ) : (
+                    <ChevronDown
+                      onClick={handleOpenSuggestions}
+                      aria-label={openSuggestionsAriaLabel}
+                    />
+                  )
+                }
+                ref={inputRef}
               />
-              {hasSuggestion && (
-                <List {...getMenuProps()} full={full}>
+              {isSuggestionsOpen && (
+                <List {...getMenuProps()} full={full} error={!!error}>
                   {suggestionList.map((option, optionIndex) => (
                     <Item
                       {...getItemProps({
@@ -239,7 +288,7 @@ const AutoComplete = React.forwardRef(
                       {option
                         .split(reg)
                         .map((part, index) =>
-                          part.match(reg) ? (
+                          !!inputValue && part.match(reg) ? (
                             <Match key={index}>{part}</Match>
                           ) : (
                             <React.Fragment key={`unmatch-${index}`}>
@@ -271,6 +320,11 @@ AutoComplete.propTypes = {
   /** a callback to know when the user cleaned the field */
   onClean: func,
   value: string,
+  error: string,
+  /** an aria label for the open suggestions icon */
+  openSuggestionsAriaLabel: string,
+  /** an aria label for the close suggestions icon */
+  closeSuggestionsAriaLabel: string,
 };
 
 AutoComplete.defaultProps = {
@@ -282,6 +336,9 @@ AutoComplete.defaultProps = {
   onChange: () => {},
   onClean: () => {},
   value: undefined,
+  error: undefined,
+  openSuggestionsAriaLabel: 'Open suggestions',
+  closeSuggestionsAriaLabel: 'Close suggestions',
 };
 
 export default AutoComplete;
