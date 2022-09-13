@@ -4,7 +4,7 @@ import { Booking, BookingFilled } from '@gympass/yoga-icons';
 import { Text } from '@gympass/yoga';
 import styled, { css } from 'styled-components';
 import { bool, oneOf, func, instanceOf, string } from 'prop-types';
-import moment from 'moment';
+import { format } from 'date-fns';
 import { theme } from '../../Theme';
 import Calendar from './Calendar';
 
@@ -174,8 +174,8 @@ function Datepicker({
   fullWidth,
   type,
   placeholder,
-  startDate,
-  endDate,
+  startDate: initialDate,
+  endDate: finishDate,
   onSelectSingle,
   disabled,
   onSelectRange,
@@ -185,8 +185,8 @@ function Datepicker({
   onOpen,
 }) {
   const [open, setOpen] = useState();
-  const [startD, setStartDate] = useState(startDate);
-  const [endD, setEndDate] = useState(endDate);
+  const [startDate, setStartDate] = useState(initialDate);
+  const [endDate, setEndDate] = useState(finishDate);
   const ref = useRef(null);
   const [inputFilled, setInputFilled] = useState(false);
 
@@ -201,13 +201,13 @@ function Datepicker({
 
   useEffect(() => {
     if (type === 'single' && onSelectSingle) {
-      onSelectSingle(startD);
+      onSelectSingle(startDate);
       setOpen(false.toString());
     } else if (type === 'range' && onSelectRange) {
-      onSelectRange(startD, endD);
+      onSelectRange(startDate, endDate);
     }
-    setInputFilled(!!startD);
-  }, [startD, endD]);
+    setInputFilled(!!startDate);
+  }, [startDate, endDate]);
 
   const onDateSingleSelect = startLocal => {
     setStartDate(startLocal);
@@ -218,10 +218,10 @@ function Datepicker({
   }, [open]);
 
   const onDateRangeSelect = selectedDate => {
-    if (!endD) {
-      if (!startD) {
+    if (!endDate) {
+      if (!startDate) {
         setStartDate(selectedDate);
-      } else if (selectedDate < startD) {
+      } else if (selectedDate < startDate) {
         setStartDate(selectedDate);
         setEndDate(undefined);
       } else setEndDate(selectedDate);
@@ -232,7 +232,7 @@ function Datepicker({
   };
 
   const renderInput = () => {
-    if (!startD && !endD) {
+    if (!startDate && !endDate) {
       return (
         <InputPlaceholder disabled={disabled}>
           {placeholder ?? `Select Date`}
@@ -240,13 +240,13 @@ function Datepicker({
       );
     }
 
-    const dateFormat = 'MMM D, YYYY';
+    const dateFormat = 'MMM d, yyyy';
 
     return (
-      startD && (
+      startDate && (
         <Input disabled={disabled}>
-          {moment(startD).format(dateFormat)}
-          {endD && ` - ${moment(endD).format(dateFormat)}`}
+          {format(startDate, dateFormat)}
+          {endDate && ` - ${format(endDate, dateFormat)}`}
         </Input>
       )
     );
@@ -273,8 +273,8 @@ function Datepicker({
         <Panel tabIndex={-1} ref={ref} onBlur={onBlur}>
           <Calendar
             type={type}
-            startDate={startD}
-            endDate={endD}
+            startDate={startDate}
+            endDate={endDate}
             onSelectSingle={onDateSingleSelect}
             onSelectRange={onDateRangeSelect}
             disablePastDates={disablePastDates}

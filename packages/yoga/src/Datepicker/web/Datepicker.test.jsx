@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
-import moment from 'moment';
+import { format } from 'date-fns';
 
 import { ThemeProvider, Datepicker } from '../..';
 
@@ -27,6 +27,10 @@ describe('<Datepicker />', () => {
       expect(container).toMatchSnapshot();
     });
     it('should match with default selected date single Datepicker', () => {
+      const mockedDate = new Date(2022, 7, 3);
+
+      jest.useFakeTimers('modern').setSystemTime(mockedDate);
+
       const { container } = render(
         <ThemeProvider>
           <Datepicker type="single" startDate={testDate} />
@@ -101,7 +105,7 @@ describe('<Datepicker />', () => {
     });
   });
   describe('Unit', () => {
-    const dateFormat = 'MMM D, YYYY';
+    const dateFormat = 'MMM d, yyyy';
 
     it('should call onSelectSingle function on single Datepicker', () => {
       const onSelectSingle = jest.fn();
@@ -147,7 +151,7 @@ describe('<Datepicker />', () => {
           <Datepicker type="single" startDate={currentDate} />
         </ThemeProvider>,
       );
-      const formattedDate = moment(currentDate).format(dateFormat);
+      const formattedDate = format(currentDate, dateFormat);
 
       expect(screen.getByText(formattedDate)).toBeVisible();
     });
@@ -157,8 +161,8 @@ describe('<Datepicker />', () => {
 
       end.setDate(currentDate.getDate() + 15);
 
-      const formattedStartDate = moment(currentDate).format(dateFormat);
-      const formattedEndDate = moment(end).format(dateFormat);
+      const formattedStartDate = format(currentDate, dateFormat);
+      const formattedEndDate = format(end, dateFormat);
 
       render(
         <ThemeProvider>
@@ -228,7 +232,7 @@ describe('<Datepicker />', () => {
           <Datepicker type="single" startDate={testDate} disabled />
         </ThemeProvider>,
       );
-      const formattedDate = moment(testDate).format(dateFormat);
+      const formattedDate = format(testDate, dateFormat);
       const datepickerInput = screen.getByText(formattedDate);
 
       expect(datepickerInput).toHaveAttribute('disabled');
