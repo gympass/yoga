@@ -8,7 +8,7 @@ import Text from '../../Text';
 
 const StyledActionRequirement = styled.View``;
 
-const ActionRequirement = props => {
+function ActionRequirement(props) {
   const { title, description, children, checkable, illustration, list } = props;
 
   return (
@@ -25,7 +25,7 @@ const ActionRequirement = props => {
       <View>{children}</View>
     </StyledActionRequirement>
   );
-};
+}
 
 ActionRequirement.propTypes = {
   title: string.isRequired,

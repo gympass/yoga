@@ -16,7 +16,7 @@ function isChildFromComponent(child, component) {
   return child.type.displayName === component.displayName;
 }
 
-const ActionRequirement = props => {
+function ActionRequirement(props) {
   const { title, description, children, checkable, illustration, list } = props;
 
   let primaryButton;
@@ -47,7 +47,7 @@ const ActionRequirement = props => {
       </Actions>
     </StyledActionRequirement>
   );
-};
+}
 
 ActionRequirement.propTypes = {
   title: string.isRequired,
