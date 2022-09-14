@@ -33,16 +33,18 @@ function handleGetList() {
   );
 }
 
-const ActionRequirementPage = () => (
-  <View>
-    <ActionRequirement
-      title="Welcome to the world of feeling good!"
-      description="Let’s make it a good day!"
-      illustration={handleGetIllustration()}
-      checkable={handleGetCheckableContent()}
-      list={handleGetList()}
-    />
-  </View>
-);
+function ActionRequirementPage() {
+  return (
+    <View>
+      <ActionRequirement
+        title="Welcome to the world of feeling good!"
+        description="Let’s make it a good day!"
+        illustration={handleGetIllustration()}
+        checkable={handleGetCheckableContent()}
+        list={handleGetList()}
+      />
+    </View>
+  );
+}
 
 export default ActionRequirementPage;
