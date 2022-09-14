@@ -3,21 +3,20 @@ import Text from '../../Text';
 import Box from '../../Box';
 import Button from '../../Button';
 
-export const Title = styled(Text.H4).attrs(() => ({
+export const Title = styled(Text.H4).attrs({
   as: 'p',
-}))`
+})`
   ${({
     theme: {
       yoga: { fontSizes },
     },
-  }) =>
-    css`
-      @media (min-width: 769px) {
-        max-width: 700px;
-        font-size: ${fontSizes.huge}px;
-        line-height: ${fontSizes.huge}px;
-      }
-    `}}
+  }) => css`
+    @media (min-width: 769px) {
+      max-width: 700px;
+      font-size: ${fontSizes.huge}px;
+      line-height: ${fontSizes.huge}px;
+    }
+  `}
 `;
 
 export const Actions = styled(Box)`
@@ -25,16 +24,15 @@ export const Actions = styled(Box)`
     theme: {
       yoga: { spacing },
     },
-  }) =>
-    css`
-      display: flex;
-      flex-direction: column;
+  }) => css`
+    display: flex;
+    flex-direction: column;
 
-      @media (min-width: 769px) {
-        flex-direction: row;
-        margin-top: ${spacing.xlarge}px;
-      }
-    `}}
+    @media (min-width: 769px) {
+      flex-direction: row;
+      margin-top: ${spacing.xlarge}px;
+    }
+  `}
 `;
 
 const buttonsStyles = css`
@@ -42,23 +40,22 @@ const buttonsStyles = css`
     theme: {
       yoga: { spacing },
     },
-  }) =>
-    css`
-      width: 100%;
+  }) => css`
+    width: 100%;
+
+    :last-child(:not(:first-child)) {
+      margin-top: ${spacing.small}px;
+    }
+
+    @media (min-width: 769px) {
+      width: auto;
 
       :last-child(:not(:first-child)) {
-        margin-top: ${spacing.small}px;
+        margin-top: 0;
+        margin-left: ${spacing.large}px;
       }
-
-      @media (min-width: 769px) {
-        width: auto;
-
-        :last-child(:not(:first-child)) {
-          margin-top: 0;
-          margin-left: ${spacing.large}px;
-        }
-      }
-    `}}
+    }
+  `}
 `;
 
 export const PrimaryButton = styled(Button)`
