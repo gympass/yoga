@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Popover /> should match snapshot 1`] = `
+.c0 {
+  position: relative;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div>
+      <svg
+        height="26"
+        width="26"
+      />
+    </div>
+  </div>
+</div>
+`;
