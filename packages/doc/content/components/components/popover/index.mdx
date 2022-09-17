@@ -4,22 +4,24 @@ metaTitle: 'Popover'
 metaDescription: 'Popover Component'
 ---
 
-
-import PopoverWeb from './popover-web.mdx';
-import PopoverNative from './popover-native.mdx';
-
-
 # Popover
 
+### Reference
 
-<TabbedView>
-  <Tab title="Web">
-    <PopoverWeb />
-  </Tab>
+Gympass `<Popover />` description
 
-  <Tab title="Native">
-    <PopoverNative />
-  </Tab>
-</TabbedView>
+### Usage
 
-  
+```javascript
+<Popover
+  title="Making wellbeing universal"
+  description="Try moving to another spot. Your new favorite activity could be arround the corner."
+  width={265}
+>
+  <Info width={26} height={26} />
+</Popover>
+```
+
+### Props
+
+<PropsTable component="Popover" platform="web" />
