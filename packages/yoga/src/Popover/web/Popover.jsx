@@ -25,7 +25,12 @@ function Popover({
   return (
     <Wrapper {...props}>
       {isPopoverOpen && (
-        <PopoverContainer position={position} width={width} height={height}>
+        <PopoverContainer
+          position={position}
+          width={width}
+          height={height}
+          role="tooltip"
+        >
           {!!title && <Title color="white">{title}</Title>}
           <Description color="white">{description}</Description>
         </PopoverContainer>
