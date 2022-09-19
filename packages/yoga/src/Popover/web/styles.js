@@ -96,11 +96,15 @@ export const PopoverContainer = styled.div`
 export const Title = styled(Text.Medium)`
   ${({
     theme: {
-      yoga: { spacing },
+      yoga: {
+        spacing,
+        components: { text },
+      },
     },
   }) => css`
     margin: 0;
     margin-bottom: ${spacing.xxxsmall}px;
+    line-height: ${text.small.lineHeight}px;
   `}
 `;
 
