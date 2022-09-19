@@ -22,6 +22,7 @@ import Divider from './Divider';
 import Snackbar from './Snackbar';
 import Banner from './Banner';
 import Skeleton from './Skeleton';
+import ActionRequirement from './ActionRequirement';
 
 export {
   ThemeProvider,
@@ -54,4 +55,5 @@ export {
   Snackbar,
   Banner,
   Skeleton,
+  ActionRequirement,
 };
