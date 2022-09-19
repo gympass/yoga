@@ -104,12 +104,6 @@ export const Title = styled(Text.Medium)`
   `}
 `;
 
-export const Description = styled(Text.Regular)`
-  ${({
-    theme: {
-      yoga: { colors, fontSizes, fontWeights, spacing },
-    },
-  }) => css`
-    margin: 0;
-  `}
+export const Description = styled(Text.Small)`
+  margin: 0;
 `;
