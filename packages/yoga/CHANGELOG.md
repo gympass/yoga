@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.51.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.51.0...@gympass/yoga@7.51.1) (2022-09-13)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+# [7.51.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.50.5...@gympass/yoga@7.51.0) (2022-09-12)
+
+
+### Bug Fixes
+
+* **autocomplete:** closes dropdown when click outside ([08b5100](https://github.com/Gympass/yoga/commit/08b5100477c587f7bafc57591c2646bd8bd4442f))
+
+
+### Features
+
+* **autocomplete:** add aria-label to icons ([887a635](https://github.com/Gympass/yoga/commit/887a6356867899e6c4e503a8ad1b9ee7e1256b93))
+* **autocomplete:** add arrow to show all the autocomplete options ([f195d8a](https://github.com/Gympass/yoga/commit/f195d8ada4f5964e811c50861ca617c9ce2af05b))
+* **autocomplete:** add dropdown with suggestions to autocomplete ([1c853fe](https://github.com/Gympass/yoga/commit/1c853fe779bdfd5d9e2337b91bfc197a4b373244))
+* **autocomplete:** add error state ([8690047](https://github.com/Gympass/yoga/commit/86900470377e9e086d930c33b7eea6817a3a5797))
+* **autocomplete:** add focus when open dropdown and esc to close dropdown ([49a0907](https://github.com/Gympass/yoga/commit/49a09077db1067da0fccdc091d08dbbd3fa4bd67))
+* **autocomplete:** add scroll to dropdown ([062520e](https://github.com/Gympass/yoga/commit/062520e61fba359f3a91786d68415479196ef403))
+* **autocomplete:** add support for accent ([6110672](https://github.com/Gympass/yoga/commit/61106725ae8d79ef501d1a6ae052fdee0eca9094))
+
+
+### Reverts
+
+* revert support for accent ([d28bc2c](https://github.com/Gympass/yoga/commit/d28bc2c7e587d75f8ad9b89fce41a19b0cf8ddc2))
+
+
+
+
+
 ## [7.50.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.50.4...@gympass/yoga@7.50.5) (2022-09-06)
 
 **Note:** Version bump only for package @gympass/yoga

@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga",
-  "version": "7.50.5",
+  "version": "7.51.1",
   "description": "Gympass component library",
   "main": "./src",
   "sideEffects": false,
@@ -46,9 +46,9 @@
     "@gympass/yoga-tokens": "^3.1.4",
     "@ptomasroos/react-native-multi-slider": "^1.0.0",
     "@radix-ui/react-dropdown-menu": "^0.1.6",
+    "date-fns": "^2.29.2",
     "downshift": "^5.0.0",
     "lodash.get": "^4.4.2",
-    "moment": "^2.29.4",
     "prop-types": "^15.7.2",
     "proxy-polyfill": "^0.3.1",
     "rc-slider": "^8.7.1",
