@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components';
 
-import { Text } from '@gympass/yoga';
-
 export const Wrapper = styled.div`
   position: relative;
 `;
@@ -90,20 +88,5 @@ export const PopoverContainer = styled.div`
     padding: ${spacing.small}px;
 
     ${popoverContainerPositionModifier[position]};
-  `}
-`;
-
-export const Title = styled(Text.Medium)`
-  ${({
-    theme: {
-      yoga: {
-        spacing,
-        components: { text },
-      },
-    },
-  }) => css`
-    margin: 0;
-    margin-bottom: ${spacing.xxxsmall}px;
-    line-height: ${text.small.lineHeight}px;
   `}
 `;
