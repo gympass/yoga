@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { node, number, oneOf, string } from 'prop-types';
+import { Text } from '@gympass/yoga';
 
-import { Description, PopoverContainer, Title, Wrapper } from './styles';
+import { PopoverContainer, Title, Wrapper } from './styles';
 
 function Popover({
   children,
@@ -32,7 +33,9 @@ function Popover({
           role="tooltip"
         >
           {!!title && <Title color="white">{title}</Title>}
-          <Description color="white">{description}</Description>
+          <Text.Small m="zero" color="white">
+            {description}
+          </Text.Small>
         </PopoverContainer>
       )}
 

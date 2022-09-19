@@ -107,7 +107,3 @@ export const Title = styled(Text.Medium)`
     line-height: ${text.small.lineHeight}px;
   `}
 `;
-
-export const Description = styled(Text.Small)`
-  margin: 0;
-`;
