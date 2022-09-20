@@ -37,6 +37,7 @@ import Datepicker from './Datepicker';
 import Drawer from './Drawer';
 import Skeleton from './Skeleton';
 import ActionRequirement from './ActionRequirement';
+import Popover from './Popover';
 
 export {
   ThemeProvider,
@@ -82,4 +83,5 @@ export {
   Drawer,
   Skeleton,
   ActionRequirement,
+  Popover,
 };

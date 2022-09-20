@@ -64,6 +64,9 @@ typings/
 # next.js build output
 .next
 
+# Jetbrains IDEA
+.idea
+
 
 dist
 build
