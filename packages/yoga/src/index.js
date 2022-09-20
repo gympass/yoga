@@ -36,6 +36,7 @@ import Feedback from './Feedback';
 import Datepicker from './Datepicker';
 import Drawer from './Drawer';
 import Skeleton from './Skeleton';
+import ActionRequirement from './ActionRequirement';
 import Popover from './Popover';
 
 export {
@@ -81,5 +82,6 @@ export {
   Datepicker,
   Drawer,
   Skeleton,
+  ActionRequirement,
   Popover,
 };

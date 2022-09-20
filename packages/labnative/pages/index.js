@@ -24,6 +24,7 @@ import Snackbar from './Snackbar';
 import Banner from './Banner';
 import Heading from './Heading';
 import Skeleton from './Skeleton';
+import ActionRequirement from './ActionRequirement';
 
 export {
   Button,
@@ -52,4 +53,5 @@ export {
   Banner,
   Heading,
   Skeleton,
+  ActionRequirement,
 };
