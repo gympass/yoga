@@ -12,115 +12,136 @@ Gympass `<Popover />` description
 
 ### Usage
 
+#### Default
+
 ```javascript
-<div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', flexDirection: 'column', margin: '0 15rem 0', gap: '2rem'}}>
-    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%'}}>
-        <Popover
-          title="Position: top-start"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="top-start"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-        <Popover
-          title="Position: top-center"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="top-center"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-        <Popover
-          title="Position: top-end"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="top-end"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-    </div>
-    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%'}}>
-        <Popover
-          title="Position: left-start"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="left-start"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-        <Popover
-          title="Position: right-start"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="right-start"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-    </div>
-    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%'}}>
-        <Popover
-         title="Position: left-center"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="left-center"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-        <Popover
-          title="Position: right-center"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="right-center"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-    </div>
-    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%'}}>
-        <Popover
-          title="Position: left-end"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="left-end"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-        <Popover
-          title="Position: right-end"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="right-end"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-    </div>
-    <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%'}}>
-        <Popover
-          title="Position: bottom-start"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="bottom-start"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-        <Popover
-          title="Position: bottom-center"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="bottom-center"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-        <Popover
-          title="Position: bottom-end"
-          description="Try moving to another spot. Your new favorite activity could be arround the corner."
-          width={265}
-          position="bottom-end"
-        >
-          <Icon as={Info} size="large" />
-        </Popover>
-    </div>
-</div>
+<Popover
+  title="Make wellbeing universal!"
+  description="Try moving to another spot. Your new favorite activity could be arround the corner."
+>
+  <Icon as={Info} size="large" />
+</Popover>
+```
+
+#### Variations
+
+```javascript
+<Box
+  d="flex"
+  alignItems="center"
+  justifyContent="space-between"
+  width="100%"
+  flexDirection="column"
+  margin="0 15rem 0"
+  gap="2rem"
+>
+  <Box d="flex" alignItems="center" justifyContent="space-between" width="100%">
+    <Popover
+      title="Position: top-start"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="top-start"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+    <Popover
+      title="Position: top-center"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="top-center"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+    <Popover
+      title="Position: top-end"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="top-end"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+  </Box>
+  <Box d="flex" alignItems="center" justifyContent="space-between" width="100%">
+    <Popover
+      title="Position: left-start"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="left-start"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+    <Popover
+      title="Position: right-start"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="right-start"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+  </Box>
+  <Box d="flex" alignItems="center" justifyContent="space-between" width="100%">
+    <Popover
+      title="position: left-center"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="left-center"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+    <Popover
+      title="Position: right-center"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="right-center"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+  </Box>
+  <Box d="flex" alignItems="center" justifyContent="space-between" width="100%">
+    <Popover
+      title="Position: left-end"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="left-end"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+    <Popover
+      title="Position: right-end"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="right-end"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+  </Box>
+  <Box d="flex" alignItems="center" justifyContent="space-between" width="100%">
+    <Popover
+      title="Position: bottom-start"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="bottom-start"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+    <Popover
+      title="Position: bottom-center"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="bottom-center"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+    <Popover
+      title="Position: bottom-end"
+      description="Try moving to another spot. Your new favorite activity could be arround the corner."
+      width={265}
+      position="bottom-end"
+    >
+      <Icon as={Info} size="large" />
+    </Popover>
+  </Box>
+</Box>
 ```
 
 ### Props
