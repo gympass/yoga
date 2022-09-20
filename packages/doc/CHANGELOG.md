@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.31.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.30.1...@gympass/yoga-doc@2.31.0) (2022-09-20)
+
+
+### Features
+
+* **component:** add Popover ([d89ac6c](https://github.com/gympass/yoga/commit/d89ac6c88c2f91b3b4ef57f26ffb7110bb35066b))
+
+
+
+
+
 ## [2.30.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.30.0...@gympass/yoga-doc@2.30.1) (2022-09-20)
 
 **Note:** Version bump only for package @gympass/yoga-doc
