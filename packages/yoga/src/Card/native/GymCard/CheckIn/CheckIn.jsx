@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import {ImagePropTypes} from 'deprecated-react-native-prop-types';
+import { ImagePropTypes } from 'deprecated-react-native-prop-types';
 import { string, number } from 'prop-types';
 import { Building } from '@gympass/yoga-icons';
 
