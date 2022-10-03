@@ -1,6 +1,7 @@
 import React from 'react';
 import { arrayOf, node, oneOfType, string } from 'prop-types';
 import styled from 'styled-components';
+import { media } from '@gympass/yoga-helpers';
 import {
   Actions,
   Title,
@@ -10,7 +11,21 @@ import {
 import Text from '../../Text';
 import Box from '../../Box';
 
-const StyledActionRequirement = styled.div``;
+const StyledActionRequirement = styled.div`
+  display: flex;
+  ${media.xxs`
+    flex-direction: column;
+  `}
+  ${media.lg`
+    flex-direction: row-reverse;
+  `}
+`;
+
+const Content = styled.div``;
+
+const BoxIllustration = styled(Box)`
+  text-align: center;
+`;
 
 function isChildFromComponent(child, component) {
   return child.type.displayName === component.displayName;
@@ -32,19 +47,22 @@ function ActionRequirement(props) {
   defineCompoundComponents();
   return (
     <StyledActionRequirement {...props}>
-      {illustration && <Box>{illustration}</Box>}
-      <Title>{title}</Title>
-      <Text mt="small" color="deep">
-        {description}
-      </Text>
-      <Text mt="small" color="deep">
-        {list && <Box mt="xxxlarge">{list}</Box>}
-      </Text>
-      {checkable && <Box mt="xxxlarge">{checkable}</Box>}
-      <Actions mt="xlarge">
-        {primaryButton}
-        {secondaryButton}
-      </Actions>
+      {illustration && <BoxIllustration>{illustration}</BoxIllustration>}
+
+      <Content>
+        <Title>{title}</Title>
+        <Text mt="small" color="deep">
+          {description}
+        </Text>
+        <Text mt="small" color="deep">
+          {list && <Box mt="xxxlarge">{list}</Box>}
+        </Text>
+        {checkable && <Box mt="xxxlarge">{checkable}</Box>}
+        <Actions mt="xlarge">
+          {primaryButton}
+          {secondaryButton}
+        </Actions>
+      </Content>
     </StyledActionRequirement>
   );
 }
