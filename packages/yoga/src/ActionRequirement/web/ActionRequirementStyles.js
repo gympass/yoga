@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { media } from '@gympass/yoga-helpers';
 import Text from '../../Text';
 import Box from '../../Box';
 import Button from '../../Button';
@@ -11,6 +12,7 @@ export const Title = styled(Text.H4).attrs({
       yoga: { fontSizes },
     },
   }) => css`
+    margin-bottom: 6px;
     @media (min-width: 769px) {
       max-width: 700px;
       font-size: ${fontSizes.huge}px;
@@ -36,25 +38,10 @@ export const Actions = styled(Box)`
 `;
 
 const buttonsStyles = css`
-  ${({
-    theme: {
-      yoga: { spacing },
-    },
-  }) => css`
-    width: 100%;
+  width: 100%;
 
-    :last-child(:not(:first-child)) {
-      margin-top: ${spacing.small}px;
-    }
-
-    @media (min-width: 769px) {
-      width: auto;
-
-      :last-child(:not(:first-child)) {
-        margin-top: 0;
-        margin-left: ${spacing.large}px;
-      }
-    }
+  ${media.lg`
+    width: auto;
   `}
 `;
 
@@ -63,7 +50,20 @@ export const PrimaryButton = styled(Button)`
 `;
 
 export const SecondaryButton = styled(Button.Text)`
-  ${buttonsStyles}
+  ${({
+    theme: {
+      yoga: { spacing },
+    },
+  }) => css`
+    ${buttonsStyles}
+    ${media.xxs`
+      margin-top: ${spacing.small}px;
+    `}
+    ${media.lg`
+      margin-top: 0;
+      margin-left: ${spacing.large}px;
+    `}
+  `}
 `;
 
 Title.displayName = 'ActionRequirement.Title';

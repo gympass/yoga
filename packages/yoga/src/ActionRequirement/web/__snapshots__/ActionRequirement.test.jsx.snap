@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ActionRequirement /> should match snapshot 1`] = `
-.c1 {
+.c2 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -13,7 +13,19 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   color: #6B6B78;
 }
 
-.c0 {
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  margin-top: 24px;
+  color: #6B6B78;
+}
+
+.c1 {
   margin: 0;
   padding: 0;
   font-size: 24px;
@@ -21,9 +33,10 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   font-weight: 500;
   font-family: Rubik;
   color: #231B22;
+  margin-bottom: 6px;
 }
 
-.c2 {
+.c4 {
   margin-top: 32px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -34,8 +47,15 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   flex-direction: column;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (min-width:769px) {
-  .c0 {
+  .c1 {
     max-width: 700px;
     font-size: 48px;
     line-height: 48px;
@@ -43,7 +63,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
 }
 
 @media (min-width:769px) {
-  .c2 {
+  .c4 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -51,24 +71,44 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   }
 }
 
+@media (min-width:0px) {
+  .c0 {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
 <div>
   <div
-    class=""
+    class="c0"
   >
-    <p
-      class="c0"
-    />
-    <p
-      class="c1"
-      color="deep"
-    />
-    <p
-      class="c1"
-      color="deep"
-    />
     <div
-      class="c2"
-    />
+      class=""
+    >
+      <p
+        class="c1"
+      />
+      <p
+        class="c2"
+        color="deep"
+      />
+      <p
+        class="c3"
+        color="deep"
+      />
+      <div
+        class="c4"
+      />
+    </div>
   </div>
 </div>
 `;
