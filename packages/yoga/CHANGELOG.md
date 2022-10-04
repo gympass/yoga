@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.53.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.53.3...@gympass/yoga@7.53.4) (2022-10-04)
+
+
+### Bug Fixes
+
+* set width content ([8e55900](https://github.com/Gympass/yoga/commit/8e559003f3619ac46e0150d22dd16aad6b182e64))
+
+
+
+
+
 ## [7.53.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.53.2...@gympass/yoga@7.53.3) (2022-10-04)
 
 
