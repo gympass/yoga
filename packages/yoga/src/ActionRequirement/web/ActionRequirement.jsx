@@ -21,7 +21,13 @@ const StyledActionRequirement = styled.div`
   `}
 `;
 
-const Content = styled.div``;
+const Content = styled.div`
+  width: 520px;
+  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
 
 const BoxIllustration = styled(Box)`
   text-align: center;

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ActionRequirement /> should match snapshot 1`] = `
-.c2 {
+.c3 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -13,7 +13,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   color: #6B6B78;
 }
 
-.c3 {
+.c4 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -25,7 +25,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   color: #6B6B78;
 }
 
-.c1 {
+.c2 {
   margin: 0;
   padding: 0;
   font-size: 24px;
@@ -36,7 +36,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   margin-bottom: 6px;
 }
 
-.c4 {
+.c5 {
   margin-top: 32px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -54,8 +54,24 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   display: flex;
 }
 
+.c1 {
+  width: 520px;
+  margin-right: 120px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 @media (min-width:769px) {
-  .c1 {
+  .c2 {
     max-width: 700px;
     font-size: 48px;
     line-height: 48px;
@@ -63,7 +79,7 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
 }
 
 @media (min-width:769px) {
-  .c4 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -92,21 +108,21 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     class="c0"
   >
     <div
-      class=""
+      class="c1"
     >
       <p
-        class="c1"
-      />
-      <p
         class="c2"
-        color="deep"
       />
       <p
         class="c3"
         color="deep"
       />
-      <div
+      <p
         class="c4"
+        color="deep"
+      />
+      <div
+        class="c5"
       />
     </div>
   </div>
