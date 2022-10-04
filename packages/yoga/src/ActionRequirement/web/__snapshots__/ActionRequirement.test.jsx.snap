@@ -55,8 +55,6 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
 }
 
 .c1 {
-  width: 520px;
-  margin-right: 120px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -107,6 +105,13 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   .c1 {
     width: auto;
     margin-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    width: 520px;
+    margin-right: 120px;
   }
 }
 

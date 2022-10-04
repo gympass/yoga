@@ -22,8 +22,6 @@ const StyledActionRequirement = styled.div`
 `;
 
 const Content = styled.div`
-  width: 520px;
-  margin-right: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,6 +29,11 @@ const Content = styled.div`
   ${media.xxs`
     width: auto;
     margin-right: 0;
+  `}
+
+  ${media.lg`
+    width: 520px;
+    margin-right: 120px;
   `}
 `;
 
