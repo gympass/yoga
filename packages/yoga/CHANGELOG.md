@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.53.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.53.2...@gympass/yoga@7.53.3) (2022-10-04)
+
+
+### Bug Fixes
+
+* **ActionRequirement:** adjust position illustration ([cf51ee6](https://github.com/Gympass/yoga/commit/cf51ee6412543a92a4cfdfa1002f0f572bc1aaf2))
+
+
+
+
+
 ## [7.53.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.53.1...@gympass/yoga@7.53.2) (2022-09-30)
 
 **Note:** Version bump only for package @gympass/yoga
