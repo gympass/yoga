@@ -62,7 +62,7 @@ const Selector = styled.div`
       disabled,
       inputFilled,
       colors,
-    )}
+    )};
     &:hover {
       border-color: ${colors.secondary};
     }
