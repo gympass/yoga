@@ -147,6 +147,44 @@ render(() => {
 });
 ```
 
+### Datepicker with past dates disabled from a specific date
+
+```javascript state
+render(() => {
+  const [selectedDate, setSelectedDate] = useState();
+  const d = new Date();
+  d.setDate(d.getDate() + 4);
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelectSingle={setSelectedDate}
+      disablePastFrom={d}
+    />
+  );
+});
+```
+
+### Datepicker with future dates disabled from a specific date
+
+```javascript state
+render(() => {
+  const [selectedDate, setSelectedDate] = useState();
+  const d = new Date();
+  d.setDate(d.getDate() - 4);
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelectSingle={setSelectedDate}
+      disableFutureFrom={d}
+    />
+  );
+});
+```
+
 ### Datepicker disabled
 
 ```javascript state

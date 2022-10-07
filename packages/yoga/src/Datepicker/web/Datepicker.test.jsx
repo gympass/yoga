@@ -27,9 +27,7 @@ describe('<Datepicker />', () => {
       expect(container).toMatchSnapshot();
     });
     it('should match with default selected date single Datepicker', () => {
-      const mockedDate = new Date(2022, 7, 3);
-
-      jest.useFakeTimers('modern').setSystemTime(mockedDate);
+      jest.useFakeTimers('modern').setSystemTime(testDate);
 
       const { container } = render(
         <ThemeProvider>
@@ -40,9 +38,7 @@ describe('<Datepicker />', () => {
       expect(container).toMatchSnapshot();
     });
     it('should match with default selected dates range Datepicker', () => {
-      const mockedDate = new Date(2022, 7, 3);
-
-      jest.useFakeTimers('modern').setSystemTime(mockedDate);
+      jest.useFakeTimers('modern').setSystemTime(testDate);
 
       const endDate = new Date();
 
@@ -115,13 +111,13 @@ describe('<Datepicker />', () => {
           <Datepicker type="single" onSelectSingle={onSelectSingle} />
         </ThemeProvider>,
       );
-      expect(onSelectSingle).toHaveBeenCalledTimes(1);
+      expect(onSelectSingle).not.toHaveBeenCalled();
       fireEvent.click(screen.getByRole('button'));
 
       const day10 = screen.queryAllByText('10')[0];
 
       fireEvent.click(day10);
-      expect(onSelectSingle).toHaveBeenCalledTimes(2);
+      expect(onSelectSingle).toHaveBeenCalledTimes(1);
     });
     it('should call onSelectRange function on range Datepicker', () => {
       const onSelectRange = jest.fn();
@@ -131,17 +127,17 @@ describe('<Datepicker />', () => {
           <Datepicker type="range" onSelectRange={onSelectRange} />
         </ThemeProvider>,
       );
-      expect(onSelectRange).toHaveBeenCalledTimes(1);
+      expect(onSelectRange).not.toHaveBeenCalled();
       fireEvent.click(screen.getByRole('button'));
 
       const day10 = screen.queryAllByText('10')[0];
       const day20 = screen.queryAllByText('20')[0];
 
       fireEvent.click(day10);
-      expect(onSelectRange).toHaveBeenCalledTimes(2);
+      expect(onSelectRange).toHaveBeenCalledTimes(1);
 
       fireEvent.click(day20);
-      expect(onSelectRange).toHaveBeenCalledTimes(3);
+      expect(onSelectRange).toHaveBeenCalledTimes(2);
     });
     it('should display default date on single Datepicker', () => {
       const currentDate = new Date();
@@ -225,6 +221,42 @@ describe('<Datepicker />', () => {
           screen.getAllByText(`${i + 1}`)[0].closest('div'),
         ).toHaveAttribute('disabled'),
       );
+    });
+    it('should disable past dates from specific date', () => {
+      jest.useFakeTimers('modern').setSystemTime(testDate);
+      const date = new Date();
+
+      date.setDate(testDate.getDate() + 15);
+      render(
+        <ThemeProvider>
+          <Datepicker type="single" disablePastFrom={date} />
+        </ThemeProvider>,
+      );
+      fireEvent.click(screen.getByRole('button'));
+
+      for (let i = 1; i <= 17; i++) {
+        expect(screen.getAllByText(`${i}`)[0].closest('div')).toHaveAttribute(
+          'disabled',
+        );
+      }
+    });
+    it('should disable future dates from specific date', () => {
+      jest.useFakeTimers('modern').setSystemTime(testDate);
+      const date = new Date();
+
+      date.setDate(testDate.getDate() + 15);
+      render(
+        <ThemeProvider>
+          <Datepicker type="single" disableFutureFrom={date} />
+        </ThemeProvider>,
+      );
+      fireEvent.click(screen.getByRole('button'));
+
+      for (let i = 19; i <= 31; i++) {
+        expect(screen.getAllByText(`${i}`)[0].closest('div')).toHaveAttribute(
+          'disabled',
+        );
+      }
     });
     it('should be disabled', () => {
       render(

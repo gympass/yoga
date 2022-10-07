@@ -20,18 +20,18 @@ const Wrapper = styled.div`
         `};
 `;
 
-const getSelectorBorderColor = (open, error, disabled, colors, input) => {
+const getSelectorBorderColor = (open, error, disabled, inputFilled, colors) => {
   if (error) {
     return colors.feedback.attention[1];
   }
   if (disabled) {
     return colors.elements.backgroundAndDisabled;
   }
-  if (open) {
-    return colors.deep;
+  if (open || inputFilled) {
+    return colors.secondary;
   }
 
-  return input.border.color.default;
+  return colors.elements.lineAndBorders;
 };
 
 const Selector = styled.div`
@@ -39,6 +39,7 @@ const Selector = styled.div`
     open,
     error,
     disabled,
+    inputFilled,
     theme: {
       yoga: { components, colors, spacing },
     },
@@ -59,10 +60,12 @@ const Selector = styled.div`
       open,
       error,
       disabled,
+      inputFilled,
       colors,
-      components.input,
     )}
-    color: ${components.input.font.color.focus};
+    &:hover {
+      border-color: ${colors.secondary};
+    }
   `}
 `;
 
@@ -174,19 +177,21 @@ function Datepicker({
   fullWidth,
   type,
   placeholder,
-  startDate: initialDate,
-  endDate: finishDate,
+  startDate,
+  endDate,
   onSelectSingle,
   disabled,
   onSelectRange,
   disablePastDates,
   disableFutureDates,
+  disablePastFrom,
+  disableFutureFrom,
   error,
   onOpen,
 }) {
   const [open, setOpen] = useState();
-  const [startDate, setStartDate] = useState(initialDate);
-  const [endDate, setEndDate] = useState(finishDate);
+  const [startDateLocal, setStartDateLocal] = useState(startDate);
+  const [endDateLocal, setEndDateLocal] = useState(endDate);
   const ref = useRef(null);
   const [inputFilled, setInputFilled] = useState(false);
 
@@ -200,17 +205,21 @@ function Datepicker({
   };
 
   useEffect(() => {
-    if (type === 'single' && onSelectSingle) {
-      onSelectSingle(startDate);
+    if (type === 'single' && onSelectSingle && startDateLocal) {
+      onSelectSingle(startDateLocal);
       setOpen(false.toString());
-    } else if (type === 'range' && onSelectRange) {
-      onSelectRange(startDate, endDate);
+    } else if (
+      type === 'range' &&
+      onSelectRange &&
+      (startDateLocal || endDateLocal)
+    ) {
+      onSelectRange(startDateLocal, endDateLocal);
     }
-    setInputFilled(!!startDate);
-  }, [startDate, endDate]);
+    setInputFilled(!!startDateLocal);
+  }, [startDateLocal, endDateLocal]);
 
   const onDateSingleSelect = startLocal => {
-    setStartDate(startLocal);
+    setStartDateLocal(startLocal);
   };
 
   useEffect(() => {
@@ -220,14 +229,14 @@ function Datepicker({
   const onDateRangeSelect = selectedDate => {
     if (!endDate) {
       if (!startDate) {
-        setStartDate(selectedDate);
+        setStartDateLocal(selectedDate);
       } else if (selectedDate < startDate) {
-        setStartDate(selectedDate);
-        setEndDate(undefined);
-      } else setEndDate(selectedDate);
+        setStartDateLocal(selectedDate);
+        setEndDateLocal(undefined);
+      } else setEndDateLocal(selectedDate);
     } else {
-      setStartDate(selectedDate);
-      setEndDate(undefined);
+      setStartDateLocal(selectedDate);
+      setEndDateLocal(undefined);
     }
   };
 
@@ -254,7 +263,12 @@ function Datepicker({
 
   return (
     <Wrapper fullWidth={fullWidth} tabIndex="0">
-      <Selector open={open === 'true'} disabled={disabled} error={error}>
+      <Selector
+        open={open === 'true'}
+        disabled={disabled}
+        error={error}
+        inputFilled={inputFilled}
+      >
         {renderInput()}
         <TButton
           onClick={() => {
@@ -264,7 +278,6 @@ function Datepicker({
             triggerOnOpen();
           }}
         >
-          {/* svg only recognizes lowercase isopen */}
           <CalendarIcon disabled={disabled} inputFilled={inputFilled} />
         </TButton>
       </Selector>
@@ -279,6 +292,8 @@ function Datepicker({
             onSelectRange={onDateRangeSelect}
             disablePastDates={disablePastDates}
             disableFutureDates={disableFutureDates}
+            disablePastFrom={disablePastFrom}
+            disableFutureFrom={disableFutureFrom}
           />
         </Panel>
       )}
@@ -297,6 +312,8 @@ Datepicker.propTypes = {
   onSelectRange: func,
   disablePastDates: bool,
   disableFutureDates: bool,
+  disablePastFrom: instanceOf(Date),
+  disableFutureFrom: instanceOf(Date),
   error: string,
   onOpen: func,
 };
@@ -311,6 +328,8 @@ Datepicker.defaultProps = {
   onSelectRange: undefined,
   disablePastDates: false,
   disableFutureDates: false,
+  disablePastFrom: undefined,
+  disableFutureFrom: undefined,
   error: undefined,
   onOpen: undefined,
 };

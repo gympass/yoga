@@ -173,6 +173,8 @@ function Calendar({
   onSelectRange,
   disablePastDates,
   disableFutureDates,
+  disablePastFrom,
+  disableFutureFrom,
 }) {
   const [month, setMonth] = useState(new Date().getUTCMonth());
   const [year, setYear] = useState(new Date().getUTCFullYear());
@@ -221,8 +223,29 @@ function Calendar({
     const now = new Date();
     const nowUTC = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
 
-    const pastDatesDisabled = disablePastDates && local.getTime() < nowUTC;
-    const futureDateDisabled = disableFutureDates && local.getTime() > nowUTC;
+    const pastDatesDisabled =
+      (disablePastDates && local.getTime() < nowUTC) ||
+      (disablePastFrom &&
+        local.getTime() <
+          new Date(
+            Date.UTC(
+              disablePastFrom.getFullYear(),
+              disablePastFrom.getMonth(),
+              disablePastFrom.getDate(),
+            ),
+          ));
+
+    const futureDateDisabled =
+      (disableFutureDates && local.getTime() > nowUTC) ||
+      (disableFutureFrom &&
+        local.getTime() >
+          new Date(
+            Date.UTC(
+              disableFutureFrom.getFullYear(),
+              disableFutureFrom.getMonth(),
+              disableFutureFrom.getDate(),
+            ),
+          ));
 
     return pastDatesDisabled || futureDateDisabled;
   };
@@ -407,6 +430,8 @@ Calendar.propTypes = {
   onSelectRange: func,
   disablePastDates: bool,
   disableFutureDates: bool,
+  disablePastFrom: instanceOf(Date),
+  disableFutureFrom: instanceOf(Date),
 };
 
 Calendar.defaultProps = {
@@ -416,6 +441,8 @@ Calendar.defaultProps = {
   onSelectRange: null,
   disablePastDates: false,
   disableFutureDates: false,
+  disablePastFrom: undefined,
+  disableFutureFrom: undefined,
 };
 
 export default Calendar;
