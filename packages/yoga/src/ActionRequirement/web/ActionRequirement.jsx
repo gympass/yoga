@@ -13,6 +13,7 @@ import Box from '../../Box';
 
 const StyledActionRequirement = styled.div`
   display: flex;
+  height: 100%;
   ${media.xxs`
     flex-direction: column;
   `}
@@ -38,7 +39,10 @@ const Content = styled.div`
 `;
 
 const BoxIllustration = styled(Box)`
-  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 function isChildFromComponent(child, component) {
