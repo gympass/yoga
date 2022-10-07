@@ -227,10 +227,10 @@ function Datepicker({
   }, [open]);
 
   const onDateRangeSelect = selectedDate => {
-    if (!endDate) {
-      if (!startDate) {
+    if (!endDateLocal) {
+      if (!startDateLocal) {
         setStartDateLocal(selectedDate);
-      } else if (selectedDate < startDate) {
+      } else if (selectedDate < startDateLocal) {
         setStartDateLocal(selectedDate);
         setEndDateLocal(undefined);
       } else setEndDateLocal(selectedDate);
@@ -241,7 +241,7 @@ function Datepicker({
   };
 
   const renderInput = () => {
-    if (!startDate && !endDate) {
+    if (!startDateLocal && !endDateLocal) {
       return (
         <InputPlaceholder disabled={disabled}>
           {placeholder ?? `Select Date`}
@@ -252,10 +252,10 @@ function Datepicker({
     const dateFormat = 'MMM d, yyyy';
 
     return (
-      startDate && (
+      startDateLocal && (
         <Input disabled={disabled}>
-          {format(startDate, dateFormat)}
-          {endDate && ` - ${format(endDate, dateFormat)}`}
+          {format(startDateLocal, dateFormat)}
+          {endDateLocal && ` - ${format(endDateLocal, dateFormat)}`}
         </Input>
       )
     );
@@ -286,8 +286,8 @@ function Datepicker({
         <Panel tabIndex={-1} ref={ref} onBlur={onBlur}>
           <Calendar
             type={type}
-            startDate={startDate}
-            endDate={endDate}
+            startDate={startDateLocal}
+            endDate={endDateLocal}
             onSelectSingle={onDateSingleSelect}
             onSelectRange={onDateRangeSelect}
             disablePastDates={disablePastDates}
