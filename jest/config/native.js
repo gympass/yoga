@@ -21,4 +21,5 @@ module.exports = {
     '/node_modules/(?!@react-native-picker/picker|@ptomasroos/react-native-multi-slider|react-native|@react-native).+\\.js$',
   ],
   rootDir: '../../',
+  modulePathIgnorePatterns: ['dist'],
 };

@@ -10,4 +10,5 @@ module.exports = {
     '\\.svg$': '<rootDir>/jest/mock/svg.js',
   },
   rootDir: '../../',
+  modulePathIgnorePatterns: ['dist'],
 };
