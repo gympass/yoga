@@ -16,14 +16,16 @@ const copyFile = file => {
 };
 
 const createPackageJson = () => {
-  const { scripts, ...packageDataOther } = pkg;
+  const { scripts, types, ...packageDataOther } = pkg;
 
   const newPackageData = {
     ...packageDataOther,
     main: './cjs',
     module: './esm',
     private: false,
-    types: './index.d.ts',
+    ...(types && {
+      types: './index.d.ts',
+    }),
   };
 
   if (hasRNPackage) {
