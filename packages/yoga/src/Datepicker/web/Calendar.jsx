@@ -116,7 +116,7 @@ const DayField = styled.div`
     cursor: pointer;
     ${
       selected && inRange
-        ? `border-radius: ${getDayFieldRadius(aux, radii)}`
+        ? `border-radius: ${getDayFieldRadius(aux, radii)};`
         : ``
     }
     ${
@@ -128,7 +128,7 @@ const DayField = styled.div`
             width: ${datepicker.width.day}px;
             height: ${datepicker.width.day}px;
             border-radius: ${radii.circle}px;
-        }`
+        };`
         : ``
     }
     ${
@@ -142,7 +142,7 @@ const DayField = styled.div`
               height: ${datepicker.width.day}px;
               border-radius: ${radii.circle}px;
             }
-          }`
+          };`
         : ``
     }
 `}

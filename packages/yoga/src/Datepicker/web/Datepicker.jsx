@@ -182,6 +182,7 @@ function Datepicker({
   onSelectSingle,
   disabled,
   onSelectRange,
+  customOnRangeSelect,
   disablePastDates,
   disableFutureDates,
   disablePastFrom,
@@ -205,21 +206,24 @@ function Datepicker({
   };
 
   useEffect(() => {
-    if (type === 'single' && onSelectSingle && startDateLocal) {
-      onSelectSingle(startDateLocal);
+    setInputFilled(startDate || endDate);
+  }, [startDate, endDate]);
+
+  useEffect(() => {
+    setInputFilled(startDate || endDate);
+    setStartDateLocal(startDate);
+    setEndDateLocal(endDate);
+
+    if (type === 'single' && startDate) {
       setOpen(false.toString());
-    } else if (
-      type === 'range' &&
-      onSelectRange &&
-      (startDateLocal || endDateLocal)
-    ) {
-      onSelectRange(startDateLocal, endDateLocal);
     }
-    setInputFilled(!!startDateLocal);
-  }, [startDateLocal, endDateLocal]);
+    if (type === 'range' && (startDate || endDate) && onSelectRange) {
+      onSelectRange(startDate, endDate);
+    }
+  }, [startDate, endDate, type]);
 
   const onDateSingleSelect = startLocal => {
-    setStartDateLocal(startLocal);
+    onSelectSingle(startLocal);
   };
 
   useEffect(() => {
@@ -227,6 +231,11 @@ function Datepicker({
   }, [open]);
 
   const onDateRangeSelect = selectedDate => {
+    if (customOnRangeSelect) {
+      customOnRangeSelect(selectedDate);
+      return;
+    }
+
     if (!endDateLocal) {
       if (!startDateLocal) {
         setStartDateLocal(selectedDate);
@@ -241,7 +250,7 @@ function Datepicker({
   };
 
   const renderInput = () => {
-    if (!startDateLocal && !endDateLocal) {
+    if (!startDate && !endDate) {
       return (
         <InputPlaceholder disabled={disabled}>
           {placeholder ?? `Select Date`}
@@ -252,10 +261,10 @@ function Datepicker({
     const dateFormat = 'MMM d, yyyy';
 
     return (
-      startDateLocal && (
+      startDate && (
         <Input disabled={disabled}>
-          {format(startDateLocal, dateFormat)}
-          {endDateLocal && ` - ${format(endDateLocal, dateFormat)}`}
+          {format(startDate, dateFormat)}
+          {endDate && ` - ${format(endDate, dateFormat)}`}
         </Input>
       )
     );
@@ -310,6 +319,7 @@ Datepicker.propTypes = {
   disabled: bool,
   onSelectSingle: func,
   onSelectRange: func,
+  customOnRangeSelect: func,
   disablePastDates: bool,
   disableFutureDates: bool,
   disablePastFrom: instanceOf(Date),
@@ -326,6 +336,7 @@ Datepicker.defaultProps = {
   disabled: false,
   onSelectSingle: undefined,
   onSelectRange: undefined,
+  customOnRangeSelect: undefined,
   disablePastDates: false,
   disableFutureDates: false,
   disablePastFrom: undefined,
