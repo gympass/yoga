@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.53.8](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.53.7...@gympass/yoga@7.53.8) (2022-10-10)
+
+
+### Bug Fixes
+
+* remove empty paragraph if is not needed ([a16448f](https://github.com/Gympass/yoga/commit/a16448f825d40380a197764af63c0e71a8e10c5c))
+* remove empty paragraph if is not needed ([46b0cd0](https://github.com/Gympass/yoga/commit/46b0cd05b3039e9183af371604db02bda2b929f2))
+* the illustration should occupy all the upper space ([7ee03c0](https://github.com/Gympass/yoga/commit/7ee03c03fb27dce6231078d7213c2c713c609f81))
+
+
+
+
+
 ## [7.53.7](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.53.6...@gympass/yoga@7.53.7) (2022-10-07)
 
 **Note:** Version bump only for package @gympass/yoga
