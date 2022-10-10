@@ -4,8 +4,8 @@ export const fonts = {
   rubik: {
     family: 'Rubik',
     weight: [
-      ...Object.entries(fontWeights),
-      ...Object.entries(fontWeights).map(weight => `${weight}i`),
+      ...Object.values(fontWeights),
+      ...Object.values(fontWeights).map(weight => `${weight}i`),
     ],
   },
 } as const;

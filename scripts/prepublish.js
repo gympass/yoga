@@ -23,6 +23,7 @@ const createPackageJson = () => {
     main: './cjs',
     module: './esm',
     private: false,
+    types: './index.d.ts',
   };
 
   if (hasRNPackage) {

@@ -20,6 +20,9 @@
     "type": "git",
     "url": "git+https://github.com/Gympass/yoga.git"
   },
+  "devDependencies": {
+    "@babel/preset-typescript": "7.18.6"
+  },
   "scripts": {
     "build": "yarn build:cjs && yarn build:esm",
     "build:cjs": "NODE_ENV=cjs babel ./src --out-dir dist/cjs",
