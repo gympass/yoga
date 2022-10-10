@@ -18,9 +18,11 @@ function ActionRequirement(props) {
       <Text mt="small" color="deep">
         {description}
       </Text>
-      <Text mt="small" color="deep">
-        {list && <Box mt="xxxlarge">{list}</Box>}
-      </Text>
+      {list && (
+        <Text mt="small" color="deep">
+          <Box mt="xxxlarge">{list}</Box>
+        </Text>
+      )}
       {checkable && <Box mt="xxxlarge">{checkable}</Box>}
       <View>{children}</View>
     </StyledActionRequirement>

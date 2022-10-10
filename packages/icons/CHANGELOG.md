@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.5.1...@gympass/yoga-icons@1.6.0) (2022-10-07)
+
+
+### Features
+
+* **component:** add the family member icon filled ([5cbe8c0](https://github.com/Gympass/yoga/commit/5cbe8c0edf2a88afc9059cf54cba158f4b92032a))
+
+
+
+
+
 ## [1.5.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.5.0...@gympass/yoga-icons@1.5.1) (2022-09-20)
 
 **Note:** Version bump only for package @gympass/yoga-icons

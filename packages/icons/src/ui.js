@@ -50,6 +50,7 @@ import Exit from './svg/exit.svg';
 import ExternalLink from './svg/external_link.svg';
 import Facebook from './svg/facebook.svg';
 import FamilyMember from './svg/family_member.svg';
+import FamilyMemberFilled from './svg/family_member_filled.svg';
 import FavoriteFilled from './svg/favorite_filled.svg';
 import Favorite from './svg/favorite.svg';
 import Filter from './svg/filter.svg';
@@ -193,6 +194,7 @@ export {
   ExternalLink,
   Facebook,
   FamilyMember,
+  FamilyMemberFilled,
   FavoriteFilled,
   Favorite,
   Filter,
