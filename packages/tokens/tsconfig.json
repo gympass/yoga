@@ -1,0 +1,7 @@
+{
+  "extends": "@gympass/ts-config/base.json",
+  "compilerOptions": {
+    "allowJs": true
+  },
+  "include": ["src"]
+}
