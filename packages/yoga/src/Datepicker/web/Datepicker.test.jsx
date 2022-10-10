@@ -139,6 +139,26 @@ describe('<Datepicker />', () => {
       fireEvent.click(day20);
       expect(onSelectRange).toHaveBeenCalledTimes(2);
     });
+    it('should call onCustomSelectRange function on range Datepicker', () => {
+      const onCustomSelectRange = jest.fn();
+
+      render(
+        <ThemeProvider>
+          <Datepicker type="range" onSelectRange={onCustomSelectRange} />
+        </ThemeProvider>,
+      );
+      expect(onCustomSelectRange).not.toHaveBeenCalled();
+      fireEvent.click(screen.getByRole('button'));
+
+      const day10 = screen.queryAllByText('10')[0];
+      const day20 = screen.queryAllByText('20')[0];
+
+      fireEvent.click(day10);
+      expect(onCustomSelectRange).toHaveBeenCalledTimes(1);
+
+      fireEvent.click(day20);
+      expect(onCustomSelectRange).toHaveBeenCalledTimes(2);
+    });
     it('should display default date on single Datepicker', () => {
       const currentDate = new Date();
 

@@ -182,7 +182,7 @@ function Datepicker({
   onSelectSingle,
   disabled,
   onSelectRange,
-  customOnRangeSelect,
+  customOnSelectRange,
   disablePastDates,
   disableFutureDates,
   disablePastFrom,
@@ -217,9 +217,6 @@ function Datepicker({
     if (type === 'single' && startDate) {
       setOpen(false.toString());
     }
-    if (type === 'range' && (startDate || endDate) && onSelectRange) {
-      onSelectRange(startDate, endDate);
-    }
   }, [startDate, endDate, type]);
 
   const onDateSingleSelect = startLocal => {
@@ -231,21 +228,28 @@ function Datepicker({
   }, [open]);
 
   const onDateRangeSelect = selectedDate => {
-    if (customOnRangeSelect) {
-      customOnRangeSelect(selectedDate);
+    if (customOnSelectRange) {
+      customOnSelectRange(selectedDate);
       return;
     }
 
-    if (!endDateLocal) {
-      if (!startDateLocal) {
-        setStartDateLocal(selectedDate);
-      } else if (selectedDate < startDateLocal) {
-        setStartDateLocal(selectedDate);
-        setEndDateLocal(undefined);
-      } else setEndDateLocal(selectedDate);
-    } else {
+    const onSelectRangeCallback = (start, end) => {
+      if (onSelectRange) {
+        onSelectRange(start, end);
+      }
+    };
+
+    if (
+      !startDateLocal ||
+      (startDateLocal > selectedDate && !endDateLocal) ||
+      endDateLocal
+    ) {
       setStartDateLocal(selectedDate);
-      setEndDateLocal(undefined);
+      if (endDateLocal) setEndDateLocal(undefined);
+      onSelectRangeCallback(selectedDate, undefined);
+    } else {
+      setEndDateLocal(selectedDate);
+      onSelectRangeCallback(startDateLocal, selectedDate);
     }
   };
 
@@ -319,7 +323,7 @@ Datepicker.propTypes = {
   disabled: bool,
   onSelectSingle: func,
   onSelectRange: func,
-  customOnRangeSelect: func,
+  customOnSelectRange: func,
   disablePastDates: bool,
   disableFutureDates: bool,
   disablePastFrom: instanceOf(Date),
@@ -336,7 +340,7 @@ Datepicker.defaultProps = {
   disabled: false,
   onSelectSingle: undefined,
   onSelectRange: undefined,
-  customOnRangeSelect: undefined,
+  customOnSelectRange: undefined,
   disablePastDates: false,
   disableFutureDates: false,
   disablePastFrom: undefined,
