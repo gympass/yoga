@@ -180,11 +180,14 @@ function Calendar({
   const [year, setYear] = useState(new Date().getUTCFullYear());
 
   useEffect(() => {
-    if (startDate) {
+    if (endDate) {
+      setMonth(endDate.getUTCMonth());
+      setYear(endDate.getUTCFullYear());
+    } else if (startDate) {
       setMonth(startDate.getUTCMonth());
       setYear(startDate.getUTCFullYear());
     }
-  }, [startDate]);
+  }, [startDate, endDate]);
 
   const getDayOfWeek = day => {
     return new Date(Date.UTC(year, month, day)).getUTCDay();

@@ -189,6 +189,7 @@ function Datepicker({
   disableFutureFrom,
   error,
   onOpen,
+  displayEndDateOnly,
 }) {
   const [open, setOpen] = useState();
   const [startDateLocal, setStartDateLocal] = useState(startDate);
@@ -217,6 +218,9 @@ function Datepicker({
     if (type === 'single' && startDate) {
       setOpen(false.toString());
     }
+    if ((startDate || endDate) && onSelectRange)
+      onSelectRange(startDate, endDate);
+    if (displayEndDateOnly && !endDate) setInputFilled(false);
   }, [startDate, endDate, type]);
 
   const onDateSingleSelect = startLocal => {
@@ -254,7 +258,7 @@ function Datepicker({
   };
 
   const renderInput = () => {
-    if (!startDate && !endDate) {
+    if ((!startDate && !endDate) || (displayEndDateOnly && !endDate)) {
       return (
         <InputPlaceholder disabled={disabled}>
           {placeholder ?? `Select Date`}
@@ -263,6 +267,13 @@ function Datepicker({
     }
 
     const dateFormat = 'MMM d, yyyy';
+
+    if (displayEndDateOnly)
+      return (
+        <Input disabled={disabled}>
+          {endDate && format(endDate, dateFormat)}
+        </Input>
+      );
 
     return (
       startDate && (
@@ -330,6 +341,7 @@ Datepicker.propTypes = {
   disableFutureFrom: instanceOf(Date),
   error: string,
   onOpen: func,
+  displayEndDateOnly: bool,
 };
 
 Datepicker.defaultProps = {
@@ -347,6 +359,7 @@ Datepicker.defaultProps = {
   disableFutureFrom: undefined,
   error: undefined,
   onOpen: undefined,
+  displayEndDateOnly: false,
 };
 
 export default Datepicker;
