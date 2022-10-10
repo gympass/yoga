@@ -4,14 +4,19 @@
   "description": "Shared resources between packages",
   "homepage": "https://github.com/Gympass/yoga",
   "license": "MIT",
-  "main": "src/index.js",
+  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
   "scripts": {
-    "build": "yarn build:cjs && yarn build:esm",
-    "build:cjs": "NODE_ENV=cjs babel ./src --out-dir dist/cjs",
-    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "build": "tsup src/index.ts --format esm,cjs --dts --legacy-output",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
     "lint": "eslint ./src",
     "prebuild": "rm -rf ./dist",
     "prepublishOnly": "node ../../scripts/prepublish.js"
+  },
+  "devDependencies": {
+    "@gympass/ts-config": "*",
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.4"
   },
   "publishConfig": {
     "access": "public",

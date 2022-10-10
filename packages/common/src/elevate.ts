@@ -1,7 +1,5 @@
-import hexToRgb from './hexToRgb';
+import { hexToRgb } from './hexToRgb';
 
-// values from
-// https://github.com/material-components/material-components-web/blob/master/packages/mdc-elevation/_elevation-theme.scss
 const UMBRA_OPACITY = 0.2;
 const PENUMBRA_OPACITY = 0.14;
 const AMBIENT_OPACITY = 0.12;
@@ -33,13 +31,21 @@ function createShadow({ level, color, depth, spread }) {
   return shadows.slice(0, depth).join();
 }
 
-function elevate({
+type ElevateProps = {
+  color?: string;
+  level?: number;
+  depth?: number;
+  spread?: boolean;
+  fallback?: boolean;
+};
+
+export function elevate({
   color = '#000',
   level,
   depth = 3,
   spread = true,
   fallback = true,
-}) {
+}: ElevateProps) {
   const all = [
     fallback ? '0 0 0 rgba(0, 0, 0, 0)' : 'none',
     createShadow({ level: 0, color, depth, spread }),
@@ -49,5 +55,3 @@ function elevate({
 
   return all[level] || all;
 }
-
-export default elevate;

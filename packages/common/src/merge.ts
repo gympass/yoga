@@ -1,4 +1,4 @@
-const merge = (target, source) => {
+export const merge = (target, source) => {
   const newTarget = { ...target };
 
   Object.keys(source).forEach(key => {
@@ -11,5 +11,3 @@ const merge = (target, source) => {
 
   return newTarget;
 };
-
-export default merge;
