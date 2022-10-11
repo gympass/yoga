@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.32.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.31.8...@gympass/yoga-doc@2.32.0) (2022-10-11)
+
+
+### Features
+
+* add disabled past and future dates from a specific date ([3043f9f](https://github.com/gympass/yoga/commit/3043f9f349c5a46e79cc2581702d0da7be9a77ed))
+
+
+
+
+
 ## [2.31.8](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.31.7...@gympass/yoga-doc@2.31.8) (2022-10-10)
 
 **Note:** Version bump only for package @gympass/yoga-doc

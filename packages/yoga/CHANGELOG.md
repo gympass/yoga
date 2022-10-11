@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.54.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.53.8...@gympass/yoga@7.54.0) (2022-10-11)
+
+
+### Bug Fixes
+
+* actionrequirement snapshot ([fcefc2c](https://github.com/Gympass/yoga/commit/fcefc2c68136d07e19548d837f67adb79b6fce39))
+* css syntax ([866acba](https://github.com/Gympass/yoga/commit/866acba467e8ef47a7f75a2d6ee8ed3802c86684))
+* start and end date local names ([7b62d47](https://github.com/Gympass/yoga/commit/7b62d478081ebf85bcd01f1ea70a20082d8e4144))
+
+
+### Features
+
+* add customOnRangeSelect ([aa88836](https://github.com/Gympass/yoga/commit/aa888363559be92ad688e4b8109bf7960869245a))
+* add disabled past and future dates from a specific date ([3043f9f](https://github.com/Gympass/yoga/commit/3043f9f349c5a46e79cc2581702d0da7be9a77ed))
+* add displayEndDateOnly prop ([50868fd](https://github.com/Gympass/yoga/commit/50868fd0b3fcc0c5d13c29415b861a63761f6451))
+
+
+
+
+
 ## [7.53.8](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.53.7...@gympass/yoga@7.53.8) (2022-10-10)
 
 
