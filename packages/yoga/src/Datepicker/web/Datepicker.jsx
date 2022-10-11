@@ -20,18 +20,18 @@ const Wrapper = styled.div`
         `};
 `;
 
-const getSelectorBorderColor = (open, error, disabled, colors, input) => {
+const getSelectorBorderColor = (open, error, disabled, inputFilled, colors) => {
   if (error) {
     return colors.feedback.attention[1];
   }
   if (disabled) {
     return colors.elements.backgroundAndDisabled;
   }
-  if (open) {
-    return colors.deep;
+  if (open || inputFilled) {
+    return colors.secondary;
   }
 
-  return input.border.color.default;
+  return colors.elements.lineAndBorders;
 };
 
 const Selector = styled.div`
@@ -39,6 +39,7 @@ const Selector = styled.div`
     open,
     error,
     disabled,
+    inputFilled,
     theme: {
       yoga: { components, colors, spacing },
     },
@@ -59,10 +60,12 @@ const Selector = styled.div`
       open,
       error,
       disabled,
+      inputFilled,
       colors,
-      components.input,
-    )}
-    color: ${components.input.font.color.focus};
+    )};
+    &:hover {
+      border-color: ${colors.secondary};
+    }
   `}
 `;
 
@@ -174,19 +177,23 @@ function Datepicker({
   fullWidth,
   type,
   placeholder,
-  startDate: initialDate,
-  endDate: finishDate,
+  startDate,
+  endDate,
   onSelectSingle,
   disabled,
   onSelectRange,
+  customOnSelectRange,
   disablePastDates,
   disableFutureDates,
+  disablePastFrom,
+  disableFutureFrom,
   error,
   onOpen,
+  displayEndDateOnly,
 }) {
   const [open, setOpen] = useState();
-  const [startDate, setStartDate] = useState(initialDate);
-  const [endDate, setEndDate] = useState(finishDate);
+  const [startDateLocal, setStartDateLocal] = useState(startDate);
+  const [endDateLocal, setEndDateLocal] = useState(endDate);
   const ref = useRef(null);
   const [inputFilled, setInputFilled] = useState(false);
 
@@ -200,17 +207,24 @@ function Datepicker({
   };
 
   useEffect(() => {
-    if (type === 'single' && onSelectSingle) {
-      onSelectSingle(startDate);
-      setOpen(false.toString());
-    } else if (type === 'range' && onSelectRange) {
-      onSelectRange(startDate, endDate);
-    }
-    setInputFilled(!!startDate);
+    setInputFilled(startDate || endDate);
   }, [startDate, endDate]);
 
+  useEffect(() => {
+    setInputFilled(startDate || endDate);
+    setStartDateLocal(startDate);
+    setEndDateLocal(endDate);
+
+    if (type === 'single' && startDate) {
+      setOpen(false.toString());
+    }
+    if ((startDate || endDate) && onSelectRange)
+      onSelectRange(startDate, endDate);
+    if (displayEndDateOnly && !endDate) setInputFilled(false);
+  }, [startDate, endDate, type]);
+
   const onDateSingleSelect = startLocal => {
-    setStartDate(startLocal);
+    onSelectSingle(startLocal);
   };
 
   useEffect(() => {
@@ -218,21 +232,33 @@ function Datepicker({
   }, [open]);
 
   const onDateRangeSelect = selectedDate => {
-    if (!endDate) {
-      if (!startDate) {
-        setStartDate(selectedDate);
-      } else if (selectedDate < startDate) {
-        setStartDate(selectedDate);
-        setEndDate(undefined);
-      } else setEndDate(selectedDate);
+    if (customOnSelectRange) {
+      customOnSelectRange(selectedDate);
+      return;
+    }
+
+    const onSelectRangeCallback = (start, end) => {
+      if (onSelectRange) {
+        onSelectRange(start, end);
+      }
+    };
+
+    if (
+      !startDateLocal ||
+      (startDateLocal > selectedDate && !endDateLocal) ||
+      endDateLocal
+    ) {
+      setStartDateLocal(selectedDate);
+      if (endDateLocal) setEndDateLocal(undefined);
+      onSelectRangeCallback(selectedDate, undefined);
     } else {
-      setStartDate(selectedDate);
-      setEndDate(undefined);
+      setEndDateLocal(selectedDate);
+      onSelectRangeCallback(startDateLocal, selectedDate);
     }
   };
 
   const renderInput = () => {
-    if (!startDate && !endDate) {
+    if ((!startDate && !endDate) || (displayEndDateOnly && !endDate)) {
       return (
         <InputPlaceholder disabled={disabled}>
           {placeholder ?? `Select Date`}
@@ -241,6 +267,13 @@ function Datepicker({
     }
 
     const dateFormat = 'MMM d, yyyy';
+
+    if (displayEndDateOnly)
+      return (
+        <Input disabled={disabled}>
+          {endDate && format(endDate, dateFormat)}
+        </Input>
+      );
 
     return (
       startDate && (
@@ -254,7 +287,12 @@ function Datepicker({
 
   return (
     <Wrapper fullWidth={fullWidth} tabIndex="0">
-      <Selector open={open === 'true'} disabled={disabled} error={error}>
+      <Selector
+        open={open === 'true'}
+        disabled={disabled}
+        error={error}
+        inputFilled={inputFilled}
+      >
         {renderInput()}
         <TButton
           onClick={() => {
@@ -264,7 +302,6 @@ function Datepicker({
             triggerOnOpen();
           }}
         >
-          {/* svg only recognizes lowercase isopen */}
           <CalendarIcon disabled={disabled} inputFilled={inputFilled} />
         </TButton>
       </Selector>
@@ -273,12 +310,14 @@ function Datepicker({
         <Panel tabIndex={-1} ref={ref} onBlur={onBlur}>
           <Calendar
             type={type}
-            startDate={startDate}
-            endDate={endDate}
+            startDate={startDateLocal}
+            endDate={endDateLocal}
             onSelectSingle={onDateSingleSelect}
             onSelectRange={onDateRangeSelect}
             disablePastDates={disablePastDates}
             disableFutureDates={disableFutureDates}
+            disablePastFrom={disablePastFrom}
+            disableFutureFrom={disableFutureFrom}
           />
         </Panel>
       )}
@@ -295,10 +334,14 @@ Datepicker.propTypes = {
   disabled: bool,
   onSelectSingle: func,
   onSelectRange: func,
+  customOnSelectRange: func,
   disablePastDates: bool,
   disableFutureDates: bool,
+  disablePastFrom: instanceOf(Date),
+  disableFutureFrom: instanceOf(Date),
   error: string,
   onOpen: func,
+  displayEndDateOnly: bool,
 };
 
 Datepicker.defaultProps = {
@@ -309,10 +352,14 @@ Datepicker.defaultProps = {
   disabled: false,
   onSelectSingle: undefined,
   onSelectRange: undefined,
+  customOnSelectRange: undefined,
   disablePastDates: false,
   disableFutureDates: false,
+  disablePastFrom: undefined,
+  disableFutureFrom: undefined,
   error: undefined,
   onOpen: undefined,
+  displayEndDateOnly: false,
 };
 
 export default Datepicker;

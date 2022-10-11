@@ -52,6 +52,34 @@ render(() => {
 });
 ```
 
+### Range date Datepicker with custom onSelectRange
+
+```javascript state
+render(() => {
+  const [startDate, setStartDate] = useState();
+  const [endDate, setEndDate] = useState();
+
+  const onCustomSelectRange = selectedDate => {
+    console.log({ selectedDate });
+    if (!startDate || (startDate > selectedDate && !endDate) || endDate) {
+      setStartDate(selectedDate);
+      if (endDate) setEndDate(undefined);
+    } else {
+      setEndDate(selectedDate);
+    }
+  };
+
+  return (
+    <Datepicker
+      type="range"
+      startDate={startDate}
+      endDate={endDate}
+      customOnSelectRange={onCustomSelectRange}
+    />
+  );
+});
+```
+
 ### Single Datepicker with default selected date
 
 ```javascript state
@@ -142,6 +170,44 @@ render(() => {
       startDate={selectedDate}
       onSelectSingle={setSelectedDate}
       disableFutureDates
+    />
+  );
+});
+```
+
+### Datepicker with past dates disabled from a specific date
+
+```javascript state
+render(() => {
+  const [selectedDate, setSelectedDate] = useState();
+  const d = new Date();
+  d.setDate(d.getDate() + 4);
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelectSingle={setSelectedDate}
+      disablePastFrom={d}
+    />
+  );
+});
+```
+
+### Datepicker with future dates disabled from a specific date
+
+```javascript state
+render(() => {
+  const [selectedDate, setSelectedDate] = useState();
+  const d = new Date();
+  d.setDate(d.getDate() - 4);
+
+  return (
+    <Datepicker
+      type="single"
+      startDate={selectedDate}
+      onSelectSingle={setSelectedDate}
+      disableFutureFrom={d}
     />
   );
 });

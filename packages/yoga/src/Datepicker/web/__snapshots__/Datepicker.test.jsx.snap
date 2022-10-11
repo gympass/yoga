@@ -31,7 +31,10 @@ exports[`<Datepicker /> Snapshots should match with custom placeholder single Da
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
-  color: #231B22;
+}
+
+.c1:hover {
+  border-color: #231B22;
 }
 
 .c2 {
@@ -134,8 +137,11 @@ exports[`<Datepicker /> Snapshots should match with default selected date single
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D7D7E0;
-  color: #231B22;
+  border-color: #231B22;
+}
+
+.c1:hover {
+  border-color: #231B22;
 }
 
 .c2 {
@@ -245,8 +251,11 @@ exports[`<Datepicker /> Snapshots should match with default selected dates range
   border-radius: 8px;
   border-width: 1px;
   border-style: solid;
-  border-color: #D7D7E0;
-  color: #231B22;
+  border-color: #231B22;
+}
+
+.c1:hover {
+  border-color: #231B22;
 }
 
 .c2 {
@@ -358,7 +367,10 @@ exports[`<Datepicker /> Snapshots should match with disabled Datepicker 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #F5F5FA;
-  color: #231B22;
+}
+
+.c1:hover {
+  border-color: #231B22;
 }
 
 .c2 {
@@ -465,7 +477,10 @@ exports[`<Datepicker /> Snapshots should match with disabled future dates Datepi
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
-  color: #231B22;
+}
+
+.c1:hover {
+  border-color: #231B22;
 }
 
 .c2 {
@@ -569,7 +584,10 @@ exports[`<Datepicker /> Snapshots should match with disabled past dates Datepick
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
-  color: #231B22;
+}
+
+.c1:hover {
+  border-color: #231B22;
 }
 
 .c2 {
@@ -673,7 +691,10 @@ exports[`<Datepicker /> Snapshots should match with error Datepicker 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #CA4808;
-  color: #231B22;
+}
+
+.c1:hover {
+  border-color: #231B22;
 }
 
 .c2 {
@@ -796,7 +817,10 @@ exports[`<Datepicker /> Snapshots should match with range Datepicker 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
-  color: #231B22;
+}
+
+.c1:hover {
+  border-color: #231B22;
 }
 
 .c2 {
@@ -900,7 +924,10 @@ exports[`<Datepicker /> Snapshots should match with single Datepicker 1`] = `
   border-width: 1px;
   border-style: solid;
   border-color: #D7D7E0;
-  color: #231B22;
+}
+
+.c1:hover {
+  border-color: #231B22;
 }
 
 .c2 {
