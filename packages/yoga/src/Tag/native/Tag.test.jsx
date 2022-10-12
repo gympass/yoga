@@ -63,6 +63,7 @@ describe('<Tag />', () => {
   it('should match snapshot with variant prop and informative type', () => {
     const { toJSON } = render(
       <ThemeProvider>
+        <Tag.Informative variant="neutral">neutral</Tag.Informative>
         <Tag.Informative variant="success">success</Tag.Informative>
         <Tag.Informative variant="informative">informative</Tag.Informative>
         <Tag.Informative variant="attention">attention</Tag.Informative>
