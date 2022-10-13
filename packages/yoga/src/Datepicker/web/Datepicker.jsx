@@ -162,17 +162,6 @@ const ErrorWrapper = styled(Text.Small)`
   `}
 `;
 
-export const toUTC = date => {
-  return new Date(
-    date.getUTCFullYear(),
-    date.getUTCMonth(),
-    date.getUTCDate(),
-    date.getUTCHours(),
-    date.getUTCMinutes(),
-    date.getUTCSeconds(),
-  );
-};
-
 function Datepicker({
   fullWidth,
   type,
@@ -257,8 +246,16 @@ function Datepicker({
     }
   };
 
-  const renderInput = () => {
-    if ((!startDate && !endDate) || (displayEndDateOnly && !endDate)) {
+  const toUTC = date => {
+    return new Date(
+      date.getUTCFullYear(),
+      date.getUTCMonth(),
+      date.getUTCDate(),
+    );
+  };
+
+  const renderInput = (start, end) => {
+    if ((!start && !end) || (displayEndDateOnly && !end)) {
       return (
         <InputPlaceholder disabled={disabled}>
           {placeholder ?? `Select Date`}
@@ -271,15 +268,15 @@ function Datepicker({
     if (displayEndDateOnly)
       return (
         <Input disabled={disabled}>
-          {endDate && format(endDate, dateFormat)}
+          {end && format(toUTC(end), dateFormat)}
         </Input>
       );
 
     return (
-      startDate && (
+      start && (
         <Input disabled={disabled}>
-          {format(startDate, dateFormat)}
-          {endDate && ` - ${format(endDate, dateFormat)}`}
+          {format(toUTC(start), dateFormat)}
+          {end && ` - ${format(toUTC(end), dateFormat)}`}
         </Input>
       )
     );
@@ -293,7 +290,10 @@ function Datepicker({
         error={error}
         inputFilled={inputFilled}
       >
-        {renderInput()}
+        {renderInput(
+          type === 'range' && !customOnSelectRange ? startDateLocal : startDate,
+          type === 'range' && !customOnSelectRange ? endDateLocal : endDate,
+        )}
         <TButton
           onClick={() => {
             if (!disabled) {

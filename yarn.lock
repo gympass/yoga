@@ -1515,11 +1515,6 @@
     tslib "~2.2.0"
     value-or-promise "1.0.6"
 
-"@gympass/yoga-illustrations@^0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@gympass/yoga-illustrations/-/yoga-illustrations-0.5.1.tgz#c0c401075a6907581113c35e5e19a2cb2dc3d1b0"
-  integrity sha512-4ivshZtxky9I5csYiV1v/gCjafJmMpziD1JqJ05//0VpfHw2nOeTm7N3BzelqzMrKZjdcu5uOMCGokOpQ+A+aA==
-
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
