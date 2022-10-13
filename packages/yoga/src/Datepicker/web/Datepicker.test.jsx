@@ -3,9 +3,10 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import { format } from 'date-fns';
 
 import { ThemeProvider, Datepicker } from '../..';
+import { toUTC } from './Datepicker';
 
 describe('<Datepicker />', () => {
-  const testDate = new Date(2022, 7, 3);
+  const testDate = new Date(2022, 7, 3, 14, 0, 0);
 
   describe('Snapshots', () => {
     it('should match with single Datepicker', () => {
@@ -167,7 +168,7 @@ describe('<Datepicker />', () => {
           <Datepicker type="single" startDate={currentDate} />
         </ThemeProvider>,
       );
-      const formattedDate = format(currentDate, dateFormat);
+      const formattedDate = format(toUTC(currentDate), dateFormat);
 
       expect(screen.getByText(formattedDate)).toBeVisible();
     });
@@ -177,8 +178,8 @@ describe('<Datepicker />', () => {
 
       end.setDate(currentDate.getDate() + 15);
 
-      const formattedStartDate = format(currentDate, dateFormat);
-      const formattedEndDate = format(end, dateFormat);
+      const formattedStartDate = format(toUTC(currentDate), dateFormat);
+      const formattedEndDate = format(toUTC(end), dateFormat);
 
       render(
         <ThemeProvider>
@@ -284,7 +285,7 @@ describe('<Datepicker />', () => {
           <Datepicker type="single" startDate={testDate} disabled />
         </ThemeProvider>,
       );
-      const formattedDate = format(testDate, dateFormat);
+      const formattedDate = format(toUTC(testDate), dateFormat);
       const datepickerInput = screen.getByText(formattedDate);
 
       expect(datepickerInput).toHaveAttribute('disabled');
