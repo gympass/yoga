@@ -613,6 +613,60 @@ Array [
       Array [
         Object {
           "alignItems": "center",
+          "backgroundColor": "#D7D7E0",
+          "borderColor": "#D7D7E0",
+          "borderRadius": 4,
+          "borderWidth": 1,
+          "justifyContent": "center",
+          "paddingBottom": 4,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 4,
+          "width": "auto",
+        },
+      ]
+    }
+    variant="neutral"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#231B22",
+              "fontFamily": "Rubik",
+              "fontSize": 16,
+              "fontWeight": "500",
+            },
+            Object {
+              "color": "#231B22",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "lineHeight": 16,
+            },
+          ]
+        }
+      >
+        neutral
+      </Text>
+    </View>
+  </View>,
+  <View
+    small={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
           "backgroundColor": "#C1EEDB",
           "borderColor": "#C1EEDB",
           "borderRadius": 4,
