@@ -205,7 +205,7 @@ exports[`<Datepicker /> Snapshots should match with default selected date single
       <p
         class="c2"
       >
-        Aug 3, 2022
+        Aug 2, 2022
       </p>
       <button
         class="c3"
@@ -319,8 +319,8 @@ exports[`<Datepicker /> Snapshots should match with default selected dates range
       <p
         class="c2"
       >
-        Aug 3, 2022
-         - Aug 18, 2022
+        Aug 2, 2022
+         - Aug 17, 2022
       </p>
       <button
         class="c3"

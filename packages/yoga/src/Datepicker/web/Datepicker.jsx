@@ -162,6 +162,9 @@ const ErrorWrapper = styled(Text.Small)`
   `}
 `;
 
+export const toUTC = date => {
+  return new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
+};
 function Datepicker({
   fullWidth,
   type,
@@ -244,14 +247,6 @@ function Datepicker({
       setEndDateLocal(selectedDate);
       onSelectRangeCallback(startDateLocal, selectedDate);
     }
-  };
-
-  const toUTC = date => {
-    return new Date(
-      date.getUTCFullYear(),
-      date.getUTCMonth(),
-      date.getUTCDate(),
-    );
   };
 
   const renderInput = (start, end) => {
