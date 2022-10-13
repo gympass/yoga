@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.54.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.54.1...@gympass/yoga@7.54.2) (2022-10-13)
+
+
+### Bug Fixes
+
+* datepicker tests ([6ce90a7](https://github.com/Gympass/yoga/commit/6ce90a78b8abcb4d1e6e0d636e1d6f8bb3ee658f))
+* datepicker UTC date ([f8d0b74](https://github.com/Gympass/yoga/commit/f8d0b7427ed90d4f30d6054ac5104833a3188259))
+* tests ([7c6612f](https://github.com/Gympass/yoga/commit/7c6612f7c37e603c0fcb496247d533d6990e6d5d))
+
+
+
+
+
 ## [7.54.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.54.0...@gympass/yoga@7.54.1) (2022-10-13)
 
 **Note:** Version bump only for package @gympass/yoga
