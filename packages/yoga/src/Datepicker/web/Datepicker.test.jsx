@@ -6,7 +6,7 @@ import { ThemeProvider, Datepicker } from '../..';
 import { toUTC } from './Datepicker';
 
 describe('<Datepicker />', () => {
-  const testDate = new Date(2022, 7, 3);
+  const testDate = new Date(2022, 7, 3, 14, 0, 0);
 
   describe('Snapshots', () => {
     it('should match with single Datepicker', () => {
