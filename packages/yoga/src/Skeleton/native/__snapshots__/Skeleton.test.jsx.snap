@@ -14,10 +14,8 @@ exports[`<Skeleton /> should render the circular skeleton 1`] = `
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "backgroundColor": "#D7D7E0",
-          "borderRadius": 1000,
-          "display": "flex",
+          "backgroundColor": "#F5F5FA",
+          "borderRadius": 9999,
           "height": 64,
           "width": 64,
         },
@@ -43,9 +41,7 @@ exports[`<Skeleton /> should render the rectangular skeleton 1`] = `
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "backgroundColor": "#D7D7E0",
-          "display": "flex",
+          "backgroundColor": "#F5F5FA",
           "height": 200,
           "width": 400,
         },
@@ -71,9 +67,7 @@ exports[`<Skeleton /> should render the text skeleton 1`] = `
     style={
       Array [
         Object {
-          "alignItems": "center",
-          "backgroundColor": "#D7D7E0",
-          "display": "flex",
+          "backgroundColor": "#F5F5FA",
           "height": 24,
           "width": 61,
         },
