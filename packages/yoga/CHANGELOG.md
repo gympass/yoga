@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.56.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.55.0...@gympass/yoga@7.56.0) (2022-10-19)
+
+
+### Features
+
+* **skeleton:** add delay to the native animation and fix initial value ([52ade46](https://github.com/Gympass/yoga/commit/52ade46281024794a95c0f6932b7fdae6b03b334))
+
+
+
+
+
 # [7.55.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.54.2...@gympass/yoga@7.55.0) (2022-10-19)
 
 
