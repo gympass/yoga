@@ -1,59 +1,37 @@
-import { number, oneOf } from 'prop-types';
+import { checkPropTypes, oneOf } from 'prop-types';
 import React, { useEffect, useState } from 'react';
 import { Animated } from 'react-native';
-import styled, { css } from 'styled-components';
-
-const textVariantsModifier = {
-  h1: theme => css`
-    height: ${theme.spacing.xxxlarge}px;
-  `,
-  h2: theme => css`
-    height: ${theme.fontSizes.huge}px;
-  `,
-  h3: theme => css`
-    height: ${theme.fontSizes.xxxlarge}px;
-  `,
-  h4: theme => css`
-    height: ${theme.fontSizes.xxlarge}px;
-  `,
-  h5: () => css`
-    height: 28px;
-  `,
-  body1: theme => css`
-    height: ${theme.fontSizes.xlarge}px;
-  `,
-  body2: theme => css`
-    height: ${theme.fontSizes.large}px;
-  `,
-  overline: theme => css`
-    height: ${theme.fontSizes.medium}px;
-  `,
-  exception: theme => css`
-    height: ${theme.fontSizes.xsmall}px;
-  `,
-};
-
-const skeletonTypesModifier = {
-  circular: () => css`
-    border-radius: 1000;
-  `,
-  rectangular: () => css``,
-  text: (theme, variant) => css`
-    ${textVariantsModifier[variant](theme)};
-  `,
-};
+import styled from 'styled-components';
+import { margins, widths, heights } from '@gympass/yoga-system';
 
 const StyledSkeleton = styled.View`
-  ${({ theme: { yoga }, type, width, height, variant }) => css`
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    width: ${width}px;
-    height: ${height}px;
+  ${margins}
 
-    background: ${yoga.colors.light};
+  ${widths}
 
-    ${skeletonTypesModifier[type](yoga, variant)};
+  ${heights}
+
+   ${({
+    type,
+    variant,
+    theme: {
+      yoga: {
+        colors,
+        components: {
+          skeleton: {
+            border: { [type]: borderRadius },
+            height: { [type]: { [variant]: height } = {} },
+          },
+        },
+      },
+    },
+  }) => `
+    background-color: ${colors.elements.backgroundAndDisabled};
+    ${borderRadius ? `border-radius: ${borderRadius}px;` : ''}
+    ${height ? `height: ${height}px;` : ''}
   `}
 `;
 
@@ -93,16 +71,40 @@ Skeleton.propTypes = {
    */
   type: oneOf(['circular', 'rectangular', 'text']).isRequired,
   /**
-   * Determine the width of the skeleton.
-   * Applicable to all variants.
+   * style the skeleton following the theme (the variant prop can only be used assemble to type "text").
+   * It can be 'h1', 'h2', 'h3', 'h4', 'h5', 'body1', 'body2', 'overline', or 'exception'
    */
-  width: number.isRequired,
-  /**
-   * Determine the height of the skeleton.
-   * Applicable only to circular and rectangular variants.
-   */
-  height: number.isRequired,
+  variant: (props, propName, componentName) => {
+    const { type } = props;
 
+    if (type !== 'text' && !!props[propName]) {
+      return new Error(
+        `The ${propName} prop must only be used when the type is equal to "text".`,
+      );
+    }
+
+    if (type === 'text') {
+      return checkPropTypes(
+        {
+          [propName]: oneOf([
+            'h1',
+            'h2',
+            'h3',
+            'h4',
+            'h5',
+            'body1',
+            'body2',
+            'overline',
+            'exception',
+          ]).isRequired,
+        },
+        props,
+        'prop',
+        componentName,
+      );
+    }
+    return null;
+  },
   /**
    * Determine if the animation will 'pulse' or false;
    */
@@ -110,6 +112,7 @@ Skeleton.propTypes = {
 };
 
 Skeleton.defaultProps = {
+  variant: undefined,
   animation: 'pulse',
 };
 
