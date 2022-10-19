@@ -74,30 +74,33 @@ Skeleton.propTypes = {
   variant: (props, propName, componentName) => {
     const { type } = props;
 
-    if (!type !== 'text' && !!props[propName]) {
+    if (type !== 'text' && !!props[propName]) {
       return new Error(
         `The ${propName} prop must only be used when the type is equal to "text".`,
       );
     }
 
-    return checkPropTypes(
-      {
-        [propName]: oneOf([
-          'h1',
-          'h2',
-          'h3',
-          'h4',
-          'h5',
-          'body1',
-          'body2',
-          'overline',
-          'exception',
-        ]),
-      },
-      props,
-      'prop',
-      componentName,
-    );
+    if (type === 'text') {
+      return checkPropTypes(
+        {
+          [propName]: oneOf([
+            'h1',
+            'h2',
+            'h3',
+            'h4',
+            'h5',
+            'body1',
+            'body2',
+            'overline',
+            'exception',
+          ]).isRequired,
+        },
+        props,
+        'prop',
+        componentName,
+      );
+    }
+    return null;
   },
   /**
    * Determine if the animation will 'pulse' or false;

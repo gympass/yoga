@@ -1,5 +1,127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
+.c0 {
+  width: 100px;
+  background-color: #F5F5FA;
+  height: 56px;
+  -webkit-animation: placeholderShimmer 1s linear infinite;
+  animation: placeholderShimmer 1s linear infinite;
+}
+
+.c1 {
+  width: 100px;
+  background-color: #F5F5FA;
+  height: 48px;
+  -webkit-animation: placeholderShimmer 1s linear infinite;
+  animation: placeholderShimmer 1s linear infinite;
+}
+
+.c2 {
+  width: 100px;
+  background-color: #F5F5FA;
+  height: 40px;
+  -webkit-animation: placeholderShimmer 1s linear infinite;
+  animation: placeholderShimmer 1s linear infinite;
+}
+
+.c3 {
+  width: 100px;
+  background-color: #F5F5FA;
+  height: 32px;
+  -webkit-animation: placeholderShimmer 1s linear infinite;
+  animation: placeholderShimmer 1s linear infinite;
+}
+
+.c4 {
+  width: 100px;
+  background-color: #F5F5FA;
+  height: 28px;
+  -webkit-animation: placeholderShimmer 1s linear infinite;
+  animation: placeholderShimmer 1s linear infinite;
+}
+
+.c5 {
+  width: 100px;
+  background-color: #F5F5FA;
+  height: 24px;
+  -webkit-animation: placeholderShimmer 1s linear infinite;
+  animation: placeholderShimmer 1s linear infinite;
+}
+
+.c6 {
+  width: 100px;
+  background-color: #F5F5FA;
+  height: 20px;
+  -webkit-animation: placeholderShimmer 1s linear infinite;
+  animation: placeholderShimmer 1s linear infinite;
+}
+
+.c7 {
+  width: 100px;
+  background-color: #F5F5FA;
+  height: 16px;
+  -webkit-animation: placeholderShimmer 1s linear infinite;
+  animation: placeholderShimmer 1s linear infinite;
+}
+
+.c8 {
+  width: 100px;
+  background-color: #F5F5FA;
+  height: 12px;
+  -webkit-animation: placeholderShimmer 1s linear infinite;
+  animation: placeholderShimmer 1s linear infinite;
+}
+
+<div>
+  <div
+    class="c0"
+    type="text"
+    width="100"
+  />
+  <div
+    class="c1"
+    type="text"
+    width="100"
+  />
+  <div
+    class="c2"
+    type="text"
+    width="100"
+  />
+  <div
+    class="c3"
+    type="text"
+    width="100"
+  />
+  <div
+    class="c4"
+    type="text"
+    width="100"
+  />
+  <div
+    class="c5"
+    type="text"
+    width="100"
+  />
+  <div
+    class="c6"
+    type="text"
+    width="100"
+  />
+  <div
+    class="c7"
+    type="text"
+    width="100"
+  />
+  <div
+    class="c8"
+    type="text"
+    width="100"
+  />
+</div>
+`;
+
 exports[`<Skeleton /> should render the circular skeleton 1`] = `
 .c0 {
   width: 64px;

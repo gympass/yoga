@@ -33,4 +33,22 @@ describe('<Skeleton />', () => {
 
     expect(toJSON()).toMatchSnapshot();
   });
+
+  it('should render all text skeleton variants correctly', () => {
+    const { toJSON } = render(
+      <ThemeProvider>
+        <Skeleton type="text" variant="h1" width="100" />
+        <Skeleton type="text" variant="h2" width="100" />
+        <Skeleton type="text" variant="h3" width="100" />
+        <Skeleton type="text" variant="h4" width="100" />
+        <Skeleton type="text" variant="h5" width="100" />
+        <Skeleton type="text" variant="body1" width="100" />
+        <Skeleton type="text" variant="body2" width="100" />
+        <Skeleton type="text" variant="overline" width="100" />
+        <Skeleton type="text" variant="exception" width="100" />
+      </ThemeProvider>,
+    );
+
+    expect(toJSON()).toMatchSnapshot();
+  });
 });
