@@ -37,18 +37,16 @@ const StyledSkeleton = styled.div`
 
     ${animation &&
     css`
-      animation: placeholderShimmer 1s linear infinite;
+      animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
     `}
 
     @keyframes placeholderShimmer {
-      0% {
-        opacity: 0;
-      }
-      50% {
+      0%,
+      100% {
         opacity: 1;
       }
-      100% {
-        opacity: 0;
+      50% {
+        opacity: 0.4;
       }
     }
   `}
