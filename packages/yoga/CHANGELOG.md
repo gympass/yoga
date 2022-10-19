@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.55.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.54.2...@gympass/yoga@7.55.0) (2022-10-19)
+
+
+### Features
+
+* **skeleton:** add display flex and align-items to avoid backward incompatibilities ([7ed929e](https://github.com/Gympass/yoga/commit/7ed929ecd7765600e6da54153383d628490f75b6))
+* **skeleton:** update component theme file adding border and height theme values ([fe4216e](https://github.com/Gympass/yoga/commit/fe4216e305ece1abd1ed5d7636c7d0da2375f9f2))
+
+
+
+
+
 ## [7.54.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.54.1...@gympass/yoga@7.54.2) (2022-10-13)
 
 
