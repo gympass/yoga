@@ -1,6 +1,6 @@
 import { checkPropTypes, oneOf } from 'prop-types';
 import React, { useEffect, useState } from 'react';
-import { Animated } from 'react-native';
+import { Animated, Easing } from 'react-native';
 import styled from 'styled-components';
 import { margins, widths, heights } from '@gympass/yoga-system';
 
@@ -36,20 +36,23 @@ const StyledSkeleton = styled.View`
 `;
 
 function Skeleton({ animation = 'pulse', ...props }) {
-  const [opacity] = useState(new Animated.Value(0.1));
+  const [opacity] = useState(new Animated.Value(0.4));
 
   useEffect(() => {
     if (animation) {
       Animated.loop(
         Animated.sequence([
           Animated.timing(opacity, {
-            toValue: 0.3,
+            toValue: 1,
+            delay: 500,
             duration: 1000,
+            easing: Easing.inOut(Easing.linear),
             useNativeDriver: true,
           }),
           Animated.timing(opacity, {
-            toValue: 0.1,
-            duration: 1000,
+            toValue: 0.4,
+            duration: 500,
+            easing: Easing.inOut(Easing.linear),
             useNativeDriver: true,
           }),
         ]),

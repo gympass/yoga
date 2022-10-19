@@ -6,7 +6,7 @@ Array [
     collapsable={false}
     style={
       Object {
-        "opacity": 0.1,
+        "opacity": 0.4,
       }
     }
   >
@@ -31,7 +31,7 @@ Array [
     collapsable={false}
     style={
       Object {
-        "opacity": 0.1,
+        "opacity": 0.4,
       }
     }
   >
@@ -56,7 +56,7 @@ Array [
     collapsable={false}
     style={
       Object {
-        "opacity": 0.1,
+        "opacity": 0.4,
       }
     }
   >
@@ -81,7 +81,7 @@ Array [
     collapsable={false}
     style={
       Object {
-        "opacity": 0.1,
+        "opacity": 0.4,
       }
     }
   >
@@ -106,7 +106,7 @@ Array [
     collapsable={false}
     style={
       Object {
-        "opacity": 0.1,
+        "opacity": 0.4,
       }
     }
   >
@@ -131,7 +131,7 @@ Array [
     collapsable={false}
     style={
       Object {
-        "opacity": 0.1,
+        "opacity": 0.4,
       }
     }
   >
@@ -156,7 +156,7 @@ Array [
     collapsable={false}
     style={
       Object {
-        "opacity": 0.1,
+        "opacity": 0.4,
       }
     }
   >
@@ -181,7 +181,7 @@ Array [
     collapsable={false}
     style={
       Object {
-        "opacity": 0.1,
+        "opacity": 0.4,
       }
     }
   >
@@ -206,7 +206,7 @@ Array [
     collapsable={false}
     style={
       Object {
-        "opacity": 0.1,
+        "opacity": 0.4,
       }
     }
   >
@@ -235,7 +235,7 @@ exports[`<Skeleton /> should render the circular skeleton 1`] = `
   collapsable={false}
   style={
     Object {
-      "opacity": 0.1,
+      "opacity": 0.4,
     }
   }
 >
@@ -264,7 +264,7 @@ exports[`<Skeleton /> should render the rectangular skeleton 1`] = `
   collapsable={false}
   style={
     Object {
-      "opacity": 0.1,
+      "opacity": 0.4,
     }
   }
 >
@@ -292,7 +292,7 @@ exports[`<Skeleton /> should render the text skeleton 1`] = `
   collapsable={false}
   style={
     Object {
-      "opacity": 0.1,
+      "opacity": 0.4,
     }
   }
 >

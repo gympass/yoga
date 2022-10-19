@@ -13,8 +13,8 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
   width: 100px;
   background-color: #F5F5FA;
   height: 56px;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 .c1 {
@@ -29,8 +29,8 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
   width: 100px;
   background-color: #F5F5FA;
   height: 48px;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 .c2 {
@@ -45,8 +45,8 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
   width: 100px;
   background-color: #F5F5FA;
   height: 40px;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 .c3 {
@@ -61,8 +61,8 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
   width: 100px;
   background-color: #F5F5FA;
   height: 32px;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 .c4 {
@@ -77,8 +77,8 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
   width: 100px;
   background-color: #F5F5FA;
   height: 28px;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 .c5 {
@@ -93,8 +93,8 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
   width: 100px;
   background-color: #F5F5FA;
   height: 24px;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 .c6 {
@@ -109,8 +109,8 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
   width: 100px;
   background-color: #F5F5FA;
   height: 20px;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 .c7 {
@@ -125,8 +125,8 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
   width: 100px;
   background-color: #F5F5FA;
   height: 16px;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 .c8 {
@@ -141,8 +141,8 @@ exports[`<Skeleton /> should render all text skeleton variants correctly 1`] = `
   width: 100px;
   background-color: #F5F5FA;
   height: 12px;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 <div>
@@ -208,8 +208,8 @@ exports[`<Skeleton /> should render the circular skeleton 1`] = `
   height: 64px;
   background-color: #F5F5FA;
   border-radius: 9999px;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 <div>
@@ -235,8 +235,8 @@ exports[`<Skeleton /> should render the rectangular skeleton 1`] = `
   width: 400px;
   height: 200px;
   background-color: #F5F5FA;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 <div>
@@ -262,8 +262,8 @@ exports[`<Skeleton /> should render the text skeleton 1`] = `
   width: 61px;
   background-color: #F5F5FA;
   height: 24px;
-  -webkit-animation: placeholderShimmer 1s linear infinite;
-  animation: placeholderShimmer 1s linear infinite;
+  -webkit-animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
+  animation: placeholderShimmer 1.5s ease-in-out 0.5s infinite;
 }
 
 <div>
