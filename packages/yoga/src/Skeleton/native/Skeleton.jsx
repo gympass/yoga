@@ -5,6 +5,9 @@ import styled from 'styled-components';
 import { margins, widths, heights } from '@gympass/yoga-system';
 
 const StyledSkeleton = styled.View`
+  display: flex;
+  align-items: center;
+
   ${margins}
 
   ${widths}
