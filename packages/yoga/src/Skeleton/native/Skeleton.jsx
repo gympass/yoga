@@ -36,7 +36,7 @@ const StyledSkeleton = styled.View`
 `;
 
 function Skeleton({ animation = 'pulse', ...props }) {
-  const [opacity] = useState(new Animated.Value(0.1));
+  const [opacity] = useState(new Animated.Value(0.4));
 
   useEffect(() => {
     if (animation) {
@@ -44,7 +44,8 @@ function Skeleton({ animation = 'pulse', ...props }) {
         Animated.sequence([
           Animated.timing(opacity, {
             toValue: 1,
-            duration: 1500,
+            delay: 500,
+            duration: 1000,
             easing: Easing.inOut(Easing.linear),
             useNativeDriver: true,
           }),
