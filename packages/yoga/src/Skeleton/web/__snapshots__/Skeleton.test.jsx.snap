@@ -2,20 +2,12 @@
 
 exports[`<Skeleton /> should render the circular skeleton 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 64px;
   height: 64px;
-  background: #F5F5FA;
+  background-color: #F5F5FA;
+  border-radius: 9999px;
   -webkit-animation: placeholderShimmer 1s linear infinite;
   animation: placeholderShimmer 1s linear infinite;
-  border-radius: 50%;
 }
 
 <div>
@@ -30,17 +22,9 @@ exports[`<Skeleton /> should render the circular skeleton 1`] = `
 
 exports[`<Skeleton /> should render the rectangular skeleton 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 400px;
   height: 200px;
-  background: #F5F5FA;
+  background-color: #F5F5FA;
   -webkit-animation: placeholderShimmer 1s linear infinite;
   animation: placeholderShimmer 1s linear infinite;
 }
@@ -57,20 +41,11 @@ exports[`<Skeleton /> should render the rectangular skeleton 1`] = `
 
 exports[`<Skeleton /> should render the text skeleton 1`] = `
 .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 61px;
-  height: px;
-  background: #F5F5FA;
+  background-color: #F5F5FA;
+  height: 24px;
   -webkit-animation: placeholderShimmer 1s linear infinite;
   animation: placeholderShimmer 1s linear infinite;
-  height: 24px;
 }
 
 <div>
