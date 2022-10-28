@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
-import { Content as MenuListRoot } from '@radix-ui/react-dropdown-menu';
+import { Content as MenuListRoot, Portal } from '@radix-ui/react-dropdown-menu';
 import { node, number, oneOf } from 'prop-types';
 
 import Box from '../../Box';
@@ -33,17 +33,19 @@ const StyledMenuList = styled(MenuListRoot)`
 const MenuList = forwardRef(
   ({ children, align, alignOffset, side, sideOffset }, ref) => {
     return (
-      <StyledMenuList
-        asChild
-        side={side}
-        sideOffset={sideOffset}
-        align={align}
-        alignOffset={alignOffset}
-      >
-        <Box as="ul" m="zero" ref={ref}>
-          {children}
-        </Box>
-      </StyledMenuList>
+      <Portal>
+        <StyledMenuList
+          asChild
+          side={side}
+          sideOffset={sideOffset}
+          align={align}
+          alignOffset={alignOffset}
+        >
+          <Box as="ul" m="zero" ref={ref}>
+            {children}
+          </Box>
+        </StyledMenuList>
+      </Portal>
     );
   },
 );
