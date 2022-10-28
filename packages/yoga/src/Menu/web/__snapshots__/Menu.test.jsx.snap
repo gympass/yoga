@@ -80,6 +80,7 @@ exports[`<Menu /> should match snapshot Menu with a onMouseHover props false 1`]
 
 <div>
   <button
+    aria-expanded="false"
     aria-haspopup="menu"
     class="c0"
     data-state="closed"
@@ -176,6 +177,7 @@ exports[`<Menu /> should match snapshot Menu with an align props end 1`] = `
 <div>
   <div>
     <button
+      aria-expanded="false"
       aria-haspopup="menu"
       class="c0"
       data-state="closed"
@@ -273,6 +275,7 @@ exports[`<Menu /> should match snapshot Menu with an align props start 1`] = `
 <div>
   <div>
     <button
+      aria-expanded="false"
       aria-haspopup="menu"
       class="c0"
       data-state="closed"
@@ -370,6 +373,7 @@ exports[`<Menu /> should match snapshot Menu.Item with active 1`] = `
 <div>
   <div>
     <button
+      aria-expanded="false"
       aria-haspopup="menu"
       class="c0"
       data-state="closed"
@@ -467,6 +471,7 @@ exports[`<Menu /> should match snapshot Menu.Item with disabled 1`] = `
 <div>
   <div>
     <button
+      aria-expanded="false"
       aria-haspopup="menu"
       class="c0"
       data-state="closed"
@@ -564,6 +569,7 @@ exports[`<Menu /> should match snapshot Menu.Item with disabled and icon 1`] = `
 <div>
   <div>
     <button
+      aria-expanded="false"
       aria-haspopup="menu"
       class="c0"
       data-state="closed"
@@ -661,6 +667,7 @@ exports[`<Menu /> should match snapshot Menu.Item with icon 1`] = `
 <div>
   <div>
     <button
+      aria-expanded="false"
       aria-haspopup="menu"
       class="c0"
       data-state="closed"
@@ -758,6 +765,7 @@ exports[`<Menu /> should match snapshot Menu.Item with link 1`] = `
 <div>
   <div>
     <button
+      aria-expanded="false"
       aria-haspopup="menu"
       class="c0"
       data-state="closed"
@@ -855,6 +863,7 @@ exports[`<Menu /> should match snapshot in default Menu 1`] = `
 <div>
   <div>
     <button
+      aria-expanded="false"
       aria-haspopup="menu"
       class="c0"
       data-state="closed"
