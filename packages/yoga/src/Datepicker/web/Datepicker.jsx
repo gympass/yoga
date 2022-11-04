@@ -198,12 +198,23 @@ function Datepicker({
     triggerOnOpen();
   };
 
-  useEffect(() => {
-    setInputFilled(startDate || endDate);
-  }, [startDate, endDate]);
+  const checkInputFilled = () => {
+    if (type === 'range') {
+      if (!customOnSelectRange)
+        setInputFilled(!!(startDateLocal && endDateLocal));
+      else {
+        setInputFilled(startDateLocal && endDateLocal);
+      }
+    } else {
+      setInputFilled(startDate);
+    }
+  };
 
   useEffect(() => {
-    setInputFilled(startDate || endDate);
+    checkInputFilled();
+  }, [startDate, startDateLocal, endDateLocal]);
+
+  useEffect(() => {
     setStartDateLocal(startDate);
     setEndDateLocal(endDate);
 

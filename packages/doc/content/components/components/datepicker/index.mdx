@@ -267,6 +267,24 @@ render(() => {
 });
 ```
 
+### Range datepicker with display end date only
+
+```javascript state
+render(() => {
+  const [startDate, setStartDate] = useState();
+  const [endDate, setEndDate] = useState();
+
+  return (
+    <Datepicker
+      type="range"
+      startDate={startDate}
+      endDate={endDate}
+      displayEndDateOnly
+    />
+  );
+});
+```
+
 ### Props
 
 <PropsTable component="Datepicker" platform="web" />
