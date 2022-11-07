@@ -98,7 +98,7 @@ const MenuItem = forwardRef(
       finalProps.href = href;
     }
 
-    const size = get(theme.yoga.spacing, iconSize, iconSize);
+    const size = get(theme.yoga.spacing, iconSize, iconSize) || 20;
 
     return (
       <MenuItemRoot disabled={disabled} asChild>
@@ -134,7 +134,7 @@ MenuItem.defaultProps = {
   disabled: false,
   active: false,
   iconColor: '',
-  iconSize: '',
+  iconSize: 20,
 };
 
 MenuItem.displayName = 'Menu.Item';
