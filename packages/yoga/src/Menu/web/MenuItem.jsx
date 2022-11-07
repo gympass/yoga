@@ -1,7 +1,8 @@
 import React, { forwardRef } from 'react';
 import { Item as MenuItemRoot } from '@radix-ui/react-dropdown-menu';
 import { oneOfType, func, node, string, bool } from 'prop-types';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
+import get from 'lodash.get';
 
 const StyledMenuItem = styled.li`
   display: flex;
@@ -75,7 +76,17 @@ const StyledMenuItem = styled.li`
 
 const MenuItem = forwardRef(
   (
-    { icon: Icon, href, active, disabled, iconColor, children, ...rest },
+    {
+      icon: Icon,
+      href,
+      active,
+      disabled,
+      iconColor,
+      iconSize,
+      children,
+      theme,
+      ...rest
+    },
     ref,
   ) => {
     const finalProps = {
@@ -87,6 +98,8 @@ const MenuItem = forwardRef(
       finalProps.href = href;
     }
 
+    const size = get(theme.yoga.spacing, iconSize, iconSize);
+
     return (
       <MenuItemRoot disabled={disabled} asChild>
         <StyledMenuItem
@@ -96,7 +109,7 @@ const MenuItem = forwardRef(
           ref={ref}
           {...finalProps}
         >
-          {Icon && <Icon width={20} height={20} />}
+          {Icon && <Icon width={size} height={size} />}
           {children}
         </StyledMenuItem>
       </MenuItemRoot>
@@ -112,6 +125,7 @@ MenuItem.propTypes = {
   disabled: bool,
   active: bool,
   iconColor: string,
+  iconSize: string,
 };
 
 MenuItem.defaultProps = {
@@ -120,8 +134,9 @@ MenuItem.defaultProps = {
   disabled: false,
   active: false,
   iconColor: '',
+  iconSize: '',
 };
 
 MenuItem.displayName = 'Menu.Item';
 
-export default MenuItem;
+export default withTheme(MenuItem);
