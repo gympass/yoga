@@ -105,7 +105,6 @@
     ]
   },
   "resolutions": {
-    "sharp": "0.28.0",
-    "remark-mdx": "1.6.22"
+    "sharp": "0.28.0"
   }
 }
