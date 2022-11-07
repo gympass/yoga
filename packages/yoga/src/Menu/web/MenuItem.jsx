@@ -9,6 +9,7 @@ const StyledMenuItem = styled.li`
   ${({
     active,
     disabled,
+    iconColor,
     theme: {
       yoga: {
         components: { menu },
@@ -50,7 +51,7 @@ const StyledMenuItem = styled.li`
 
     svg {
       margin-right: ${menu.margin.default}px;
-      fill: ${menu.icon.disabled};
+      fill: ${iconColor};
     }
 
     &:focus {
@@ -73,7 +74,10 @@ const StyledMenuItem = styled.li`
 `;
 
 const MenuItem = forwardRef(
-  ({ icon: Icon, href, active, disabled, children, ...rest }, ref) => {
+  (
+    { icon: Icon, href, active, disabled, iconColor, children, ...rest },
+    ref,
+  ) => {
     const finalProps = {
       ...rest,
     };
@@ -88,6 +92,7 @@ const MenuItem = forwardRef(
         <StyledMenuItem
           active={active}
           disabled={disabled}
+          iconColor={iconColor}
           ref={ref}
           {...finalProps}
         >
@@ -106,6 +111,7 @@ MenuItem.propTypes = {
   href: string,
   disabled: bool,
   active: bool,
+  iconColor: string,
 };
 
 MenuItem.defaultProps = {
@@ -113,6 +119,7 @@ MenuItem.defaultProps = {
   href: undefined,
   disabled: false,
   active: false,
+  iconColor: '',
 };
 
 MenuItem.displayName = 'Menu.Item';
