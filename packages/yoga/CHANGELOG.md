@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.58.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.57.1...@gympass/yoga@7.58.0) (2022-11-08)
+
+
+### Features
+
+* **menuitem:** added default value for icon size ([5d2063b](https://github.com/Gympass/yoga/commit/5d2063b46350d7b948581c1b38e7c14d229ecd2f))
+
+
+
+
+
 ## [7.57.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.57.0...@gympass/yoga@7.57.1) (2022-11-07)
 
 **Note:** Version bump only for package @gympass/yoga
