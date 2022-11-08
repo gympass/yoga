@@ -7,16 +7,13 @@ import get from 'lodash.get';
 const StyledMenuItem = styled.li`
   display: flex;
   align-items: center;
-  ${({
-    active,
-    disabled,
-    iconColor,
-    theme: {
-      yoga: {
-        components: { menu },
-      },
-    },
-  }) => `
+  ${({ active, disabled, iconColor, theme: { yoga } }) => {
+    const {
+      components: { menu },
+      colors,
+    } = yoga;
+
+    return `
     margin-right: auto;
     padding: ${menu.padding.vertical}px ${menu.padding.horizontal}px;
 
@@ -52,7 +49,7 @@ const StyledMenuItem = styled.li`
 
     svg {
       margin-right: ${menu.margin.default}px;
-      fill: ${iconColor};
+      fill: ${get(colors, iconColor, iconColor)};
     }
 
     &:focus {
@@ -71,7 +68,8 @@ const StyledMenuItem = styled.li`
     &:last-child {
       margin-bottom: ${menu.margin.xxsmall}px;
     }
-  `}
+  `;
+  }}
 `;
 
 const MenuItem = forwardRef(
@@ -98,7 +96,7 @@ const MenuItem = forwardRef(
       finalProps.href = href;
     }
 
-    const size = get(theme.yoga.spacing, iconSize, iconSize) || 20;
+    const size = get(theme.yoga.spacing, iconSize, 20);
 
     return (
       <MenuItemRoot disabled={disabled} asChild>
@@ -133,8 +131,8 @@ MenuItem.defaultProps = {
   href: undefined,
   disabled: false,
   active: false,
-  iconColor: '',
-  iconSize: 20,
+  iconColor: undefined,
+  iconSize: undefined,
 };
 
 MenuItem.displayName = 'Menu.Item';
