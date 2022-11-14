@@ -1,4 +1,4 @@
-import { bool } from 'prop-types';
+import { bool, shape } from 'prop-types';
 import React from 'react';
 import styled, { css, withTheme } from 'styled-components';
 
@@ -19,17 +19,19 @@ const StyledDivider = styled.hr`
   }}
 `;
 
-const Divider = React.forwardRef(({ vertical }, ref) => {
-  return <StyledDivider vertical={vertical} ref={ref} />;
+const Divider = React.forwardRef(({ vertical, style }, ref) => {
+  return <StyledDivider vertical={vertical} ref={ref} style={style} />;
 });
 
 Divider.propTypes = {
   /** If this value is defined, the divider will be in vertical if the flexDirection is row type */
   vertical: bool,
+  style: shape({}),
 };
 
 Divider.defaultProps = {
   vertical: false,
+  style: undefined,
 };
 
 export default withTheme(Divider);
