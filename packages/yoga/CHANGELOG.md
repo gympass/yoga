@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.59.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.58.0...@gympass/yoga@7.59.0) (2022-11-14)
+
+
+### Features
+
+* add custom css to divider component ([8bac3e7](https://github.com/Gympass/yoga/commit/8bac3e7bad03da048269dcf8ee010c934d78fa5b))
+
+
+
+
+
 # [7.58.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.57.1...@gympass/yoga@7.58.0) (2022-11-08)
 
 
