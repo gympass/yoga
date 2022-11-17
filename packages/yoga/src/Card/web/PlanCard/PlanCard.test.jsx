@@ -103,5 +103,17 @@ describe('<PlanCard />', () => {
 
       expect(container).toMatchSnapshot();
     });
+
+    it('should render the extra content', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <PlanCard>
+            <PlanCard.Content title="Basic" extra={<p>Hello</p>} />
+          </PlanCard>
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
   });
 });
