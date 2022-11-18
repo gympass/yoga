@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.60.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.59.0...@gympass/yoga@7.60.0) (2022-11-18)
+
+
+### Features
+
+* **PlanCard:** add "extra" prop to PlanCard.Content ([4aeb66f](https://github.com/Gympass/yoga/commit/4aeb66f8d91e652c55d6d3da576e4dfeb012906e))
+
+
+
+
+
 # [7.59.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.58.0...@gympass/yoga@7.59.0) (2022-11-14)
 
 
