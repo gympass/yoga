@@ -73,6 +73,38 @@
 </Box>
 ```
 
+
+#### Extra content
+
+Display an extra content before the divider.
+
+```javascript
+<PlanCard>
+  <PlanCard.Content
+    title="Basic"
+    extra={(
+      <Text
+        color="hope"
+        lineHeight="xlarge"
+        fontSize="xlarge"
+        fontWeight="medium"
+      >
+        Free
+      </Text>
+    )}>
+    <PlanCard.List>
+      <PlanCard.ListItem icon={Checkin} text="2.900 gyms and studios" />
+      <PlanCard.ListItem icon={Dumbbell} text="1x/day standard access" />
+      <PlanCard.ListItem icon={User} text="4x/month 1-on-1 sessions" />
+    </PlanCard.List>
+  </PlanCard.Content>
+  <PlanCard.Actions>
+    <PlanCard.Button>Select this plan</PlanCard.Button>
+    <PlanCard.ButtonText>See what's included</PlanCard.ButtonText>
+  </PlanCard.Actions>
+</PlanCard>
+```
+
 ### Props
 
 #### PlanCard
