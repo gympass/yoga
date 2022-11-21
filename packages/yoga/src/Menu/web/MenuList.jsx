@@ -10,6 +10,7 @@ const StyledMenuList = styled(MenuListRoot)`
   flex-direction: column;
   align-items: center;
   ${({
+    zIndex,
     theme: {
       yoga: {
         components: { menu },
@@ -26,20 +27,23 @@ const StyledMenuList = styled(MenuListRoot)`
 
     background-color: ${menu.backgroundColor.white};
     box-shadow: ${elevations.small}
+    z-index: ${zIndex};
+
   `;
   }}
 `;
 
 const MenuList = forwardRef(
-  ({ children, align, alignOffset, side, sideOffset }, ref) => {
+  ({ children, align, alignOffset, side, sideOffset, zIndex }, ref) => {
     return (
       <Portal>
         <StyledMenuList
+          align={align}
+          alignOffset={alignOffset}
           asChild
           side={side}
           sideOffset={sideOffset}
-          align={align}
-          alignOffset={alignOffset}
+          zIndex={zIndex}
         >
           <Box as="ul" m="zero" ref={ref}>
             {children}
@@ -65,6 +69,9 @@ MenuList.propTypes = {
 
   /** Add horizontal space between the Menu.Action and the Menu.List */
   sideOffset: number,
+
+  /** Add z-index value to Menu.List. Set to 'auto' by default */
+  zIndex: number,
 };
 
 MenuList.defaultProps = {
@@ -72,6 +79,7 @@ MenuList.defaultProps = {
   alignOffset: 0,
   side: 'bottom',
   sideOffset: 4,
+  zIndex: 'auto',
 };
 
 MenuList.displayName = 'Menu.List';
