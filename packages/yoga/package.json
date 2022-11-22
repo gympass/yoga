@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga",
-  "version": "7.60.0",
+  "version": "7.60.1",
   "description": "Gympass component library",
   "main": "./src",
   "sideEffects": false,
@@ -34,12 +34,12 @@
     "url": "https://github.com/Gympass/yoga/issues"
   },
   "dependencies": {
-    "@gympass/yoga-common": "^1.1.1",
+    "@gympass/yoga-common": "^1.1.2",
     "@gympass/yoga-helpers": "^1.0.3",
     "@gympass/yoga-icons": "^1.7.0",
     "@gympass/yoga-illustrations": "^0.5.1",
-    "@gympass/yoga-system": "^0.10.2",
-    "@gympass/yoga-tokens": "^3.1.4",
+    "@gympass/yoga-system": "^0.10.3",
+    "@gympass/yoga-tokens": "^3.1.5",
     "@ptomasroos/react-native-multi-slider": "^1.0.0",
     "@radix-ui/react-dropdown-menu": "^2.0.1",
     "date-fns": "^2.29.2",
