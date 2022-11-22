@@ -38,6 +38,7 @@ import Drawer from './Drawer';
 import Skeleton from './Skeleton';
 import ActionRequirement from './ActionRequirement';
 import Popover from './Popover';
+import TimePicker from './TimePicker';
 
 export {
   ThemeProvider,
@@ -84,4 +85,5 @@ export {
   Skeleton,
   ActionRequirement,
   Popover,
+  TimePicker,
 };
