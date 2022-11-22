@@ -2,14 +2,6 @@ import styled from 'styled-components';
 import Dialog from '../../Dialog';
 
 const Content = styled(Dialog.Content)`
-  ${({
-    theme: {
-      yoga: {
-        components: { drawer },
-      },
-    },
-  }) => `
-    `}
   margin: 0;
   height: 100%;
   width: 100%;
