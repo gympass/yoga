@@ -28,7 +28,7 @@ const Menu = ({ children, onMouseHover }) => {
 
 Menu.propTypes = {
   children: node.isRequired,
-  /** when mouse hover menu open as deafault is true */
+  /** when mouse hover menu open as default is true */
   onMouseHover: bool,
 };
 
