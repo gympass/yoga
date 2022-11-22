@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.61.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.60.1...@gympass/yoga@7.61.0) (2022-11-22)
+
+
+### Features
+
+* add new property zIndex to deal with Menu elevation ([3304431](https://github.com/Gympass/yoga/commit/3304431bbbdeb173200ef33dd6f9eb23b5054e01))
+
+
+
+
+
 ## [7.60.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.60.0...@gympass/yoga@7.60.1) (2022-11-22)
 
 **Note:** Version bump only for package @gympass/yoga
