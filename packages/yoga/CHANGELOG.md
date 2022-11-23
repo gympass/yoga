@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.61.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.61.1...@gympass/yoga@7.61.2) (2022-11-23)
+
+
+### Bug Fixes
+
+* menu list css bug fix ([b987684](https://github.com/Gympass/yoga/commit/b987684a33420f6b7516c4457bacb9ce22b389e4))
+
+
+
+
+
 ## [7.61.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.61.0...@gympass/yoga@7.61.1) (2022-11-23)
 
 **Note:** Version bump only for package @gympass/yoga
