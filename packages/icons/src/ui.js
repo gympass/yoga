@@ -105,6 +105,7 @@ import QRCodeReader from './svg/qr_code_reader.svg';
 import QRCode from './svg/qr_code.svg';
 import Rectangle from './svg/rectangle.svg';
 import Refresh from './svg/refresh.svg';
+import Restaurant from './svg/restaurant.svg';
 import SearchFilled from './svg/search_filled.svg';
 import Search from './svg/search.svg';
 import Settings from './svg/settings.svg';
@@ -117,6 +118,7 @@ import SmartphoneFilled from './svg/smartphone_filled.svg';
 import Smartphone from './svg/smartphone.svg';
 import SortAscending from './svg/sort_ascending.svg';
 import SortDescending from './svg/sort_descending.svg';
+import Spa from './svg/spa.svg';
 import StarFilled from './svg/star_filled.svg';
 import Star from './svg/star.svg';
 import SystemStatus from './svg/system_status.svg';
@@ -249,6 +251,7 @@ export {
   QRCode,
   Rectangle,
   Refresh,
+  Restaurant,
   SearchFilled,
   Search,
   Settings,
@@ -261,6 +264,7 @@ export {
   Smartphone,
   SortAscending,
   SortDescending,
+  Spa,
   StarFilled,
   Star,
   SystemStatus,
