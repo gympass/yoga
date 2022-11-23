@@ -24,11 +24,9 @@ const StyledMenuList = styled(MenuListRoot)`
     min-width: ${menu.width.min}px;
     max-width: ${menu.width.max}px;
     border-radius: ${menu.border.radius}px;
-
     background-color: ${menu.backgroundColor.white};
-    box-shadow: ${elevations.small}
+    box-shadow: ${elevations.small};
     z-index: ${zIndex};
-
   `;
   }}
 `;
