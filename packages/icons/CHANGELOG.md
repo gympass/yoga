@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.7.0...@gympass/yoga-icons@1.8.0) (2022-11-23)
+
+
+### Features
+
+* add the restaurant and spa icon ([fa3da70](https://github.com/Gympass/yoga/commit/fa3da7044338fb273ae1c799d0c05c99359edcae))
+
+
+
+
+
 # [1.7.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.6.0...@gympass/yoga-icons@1.7.0) (2022-11-07)
 
 
