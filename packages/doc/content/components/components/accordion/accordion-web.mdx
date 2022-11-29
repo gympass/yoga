@@ -4,14 +4,56 @@
 
 ```javascript state
 render(() => {
+  const list = {
+    paddingLeft: "20px",
+    margin: "0 0 4px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+  };
+
+  const item = {
+    fontSize: "10px",
+  }
+
   return (
     <>
-      <Accordion title="Affordable, flexible plans">
-        <ul>
-          <li>I</li>
-          <li>Love</li>
-          <li>Jesus!</li>
-        </ul>
+      <Accordion title="What info do I need?">
+        <Accordion.Content>
+          <Box d="flex" flexDirection="column" gap="32px">
+            <Text color="deep">Basic information of your facility or unit such as:</Text>
+
+            <ul style={list}>
+              <li style={item}>
+                <Text color="deep">Your logo</Text>
+              </li>
+
+              <li style={item}>
+                <Text color="deep">Photos of the faciItemty</Text>
+              </li>
+
+              <li style={item}>
+                <Text color="deep">General Description</Text>
+              </li>
+
+              <li style={item}>
+                <Text color="deep">FaciItemty contact information</Text>
+              </li>
+
+              <li style={item}>
+                <Text color="deep">Amenities</Text>
+              </li>
+
+              <li style={item}>
+                <Text color="deep">Opening hours</Text>
+              </li>
+          </ul>
+          </Box>
+
+          <Button small inverted>
+            Small button
+          </Button>
+        </Accordion.Content>
       </Accordion>
     </>
   );
@@ -22,15 +64,153 @@ render(() => {
 
 ```javascript state
 render(() => {
+  const list = {
+    paddingLeft: "20px",
+    margin: "0 0 4px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+  };
+
+  const item = {
+    fontSize: "10px",
+  }
+
   return (
     <>
       <Accordion title="Affordable, flexible plans" subtitle="Basic information of your facility or unit such as:">
-        <ul>
-          <li>I</li>
-          <li>Love</li>
-          <li>Jesus!</li>
-        </ul>
+        <Accordion.Content>
+          <Box d="flex" flexDirection="column" gap="32px">
+            <ul style={list}>
+              <li style={item}>
+                <Text color="deep">Your logo</Text>
+              </li>
+
+              <li style={item}>
+                <Text color="deep">Photos of the faciItemty</Text>
+              </li>
+
+              <li style={item}>
+                <Text color="deep">General Description</Text>
+              </li>
+
+              <li style={item}>
+                <Text color="deep">FaciItemty contact information</Text>
+              </li>
+
+              <li style={item}>
+                <Text color="deep">Amenities</Text>
+              </li>
+
+              <li style={item}>
+                <Text color="deep">Opening hours</Text>
+              </li>
+            </ul>
+          </Box>
+
+          <Button small inverted>
+            Small button
+          </Button>
+        </Accordion.Content>
       </Accordion>
+    </>
+  );
+});
+```
+
+#### Disabled
+
+```javascript state
+render(() => {
+  const list = {
+    paddingLeft: "20px",
+    margin: "0 0 4px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+  };
+
+  const item = {
+    fontSize: "10px",
+  }
+
+  return (
+    <>
+      <Box display="flex" flexDirection="column" width={"100%"}>
+        <Accordion title="What info do I need?" disabled>
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <Text color="deep">Basic information of your facility or unit such as:</Text>
+
+              <ul style={list}>
+                <li style={item}>
+                  <Text color="deep">Your logo</Text>
+                </li>
+
+                <li style={item}>
+                  <Text color="deep">Photos of the faciItemty</Text>
+                </li>
+
+                <li style={item}>
+                  <Text color="deep">General Description</Text>
+                </li>
+
+                <li style={item}>
+                  <Text color="deep">FaciItemty contact information</Text>
+                </li>
+
+                <li style={item}>
+                  <Text color="deep">Amenities</Text>
+                </li>
+
+                <li style={item}>
+                  <Text color="deep">Opening hours</Text>
+                </li>
+              </ul>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+
+        <Accordion title="Affordable, flexible plans" subtitle="Basic information of your facility or unit such as:" disabled>
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <ul style={list}>
+                <li style={item}>
+                  <Text color="deep">Your logo</Text>
+                </li>
+
+                <li style={item}>
+                  <Text color="deep">Photos of the faciItemty</Text>
+                </li>
+
+                <li style={item}>
+                  <Text color="deep">General Description</Text>
+                </li>
+
+                <li style={item}>
+                  <Text color="deep">FaciItemty contact information</Text>
+                </li>
+
+                <li style={item}>
+                  <Text color="deep">Amenities</Text>
+                </li>
+
+                <li style={item}>
+                  <Text color="deep">Opening hours</Text>
+                </li>
+              </ul>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+      </Box>
     </>
   );
 });
