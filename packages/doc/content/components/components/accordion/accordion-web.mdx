@@ -1,53 +1,52 @@
+import styled from 'styled-components';
+
 ### Usage
 
-#### Default
+#### Simple
 
 ```javascript state
+const List = styled.ul`
+  padding-left: 20px;
+  margin: 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const Item = styled.li`
+  font-size: 10px;
+`;
+
+
 render(() => {
-  const list = {
-    paddingLeft: "20px",
-    margin: "0 0 4px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-  };
-
-  const item = {
-    fontSize: "10px",
-  }
-
   return (
     <>
-      <Accordion title="What info do I need?">
+      <Accordion title="Title">
         <Accordion.Content>
           <Box d="flex" flexDirection="column" gap="32px">
-            <Text color="deep">Basic information of your facility or unit such as:</Text>
+            <Text color="deep">Subtitle with a list of some items:</Text>
 
-            <ul style={list}>
-              <li style={item}>
-                <Text color="deep">Your logo</Text>
-              </li>
+            <List>
+              <Item>
+                <Text color="deep">Item 1</Text>
+              </Item>
 
-              <li style={item}>
-                <Text color="deep">Photos of the faciItemty</Text>
-              </li>
+              <Item>
+                <Text color="deep">Item 2</Text>
+              </Item>
 
-              <li style={item}>
-                <Text color="deep">General Description</Text>
-              </li>
+              <Item>
+                <Text color="deep">Item 3</Text>
+              </Item>
 
-              <li style={item}>
-                <Text color="deep">FaciItemty contact information</Text>
-              </li>
+              <Item>
+                <Text color="deep">Item 4</Text>
+              </Item>
 
-              <li style={item}>
-                <Text color="deep">Amenities</Text>
-              </li>
-
-              <li style={item}>
-                <Text color="deep">Opening hours</Text>
-              </li>
-          </ul>
+              <Item>
+                <Text color="deep">Item 5</Text>
+              </Item>
+            </List>
           </Box>
 
           <Button small inverted>
@@ -60,113 +59,52 @@ render(() => {
 });
 ```
 
-#### Subtitle
+### Simple - Multi
 
 ```javascript state
+const List = styled.ul`
+  padding-left: 20px;
+  margin: 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const Item = styled.li`
+  font-size: 10px;
+`;
+
+
 render(() => {
-  const list = {
-    paddingLeft: "20px",
-    margin: "0 0 4px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-  };
-
-  const item = {
-    fontSize: "10px",
-  }
-
   return (
     <>
-      <Accordion title="Affordable, flexible plans" subtitle="Basic information of your facility or unit such as:">
-        <Accordion.Content>
-          <Box d="flex" flexDirection="column" gap="32px">
-            <ul style={list}>
-              <li style={item}>
-                <Text color="deep">Your logo</Text>
-              </li>
-
-              <li style={item}>
-                <Text color="deep">Photos of the faciItemty</Text>
-              </li>
-
-              <li style={item}>
-                <Text color="deep">General Description</Text>
-              </li>
-
-              <li style={item}>
-                <Text color="deep">FaciItemty contact information</Text>
-              </li>
-
-              <li style={item}>
-                <Text color="deep">Amenities</Text>
-              </li>
-
-              <li style={item}>
-                <Text color="deep">Opening hours</Text>
-              </li>
-            </ul>
-          </Box>
-
-          <Button small inverted>
-            Small button
-          </Button>
-        </Accordion.Content>
-      </Accordion>
-    </>
-  );
-});
-```
-
-#### Disabled
-
-```javascript state
-render(() => {
-  const list = {
-    paddingLeft: "20px",
-    margin: "0 0 4px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "flex-start",
-  };
-
-  const item = {
-    fontSize: "10px",
-  }
-
-  return (
-    <>
-      <Box display="flex" flexDirection="column" width={"100%"}>
-        <Accordion title="What info do I need?" disabled>
+     <Box display="flex" flexDirection="column" width={"100%"}>
+        <Accordion title="Title">
           <Accordion.Content>
             <Box d="flex" flexDirection="column" gap="32px">
-              <Text color="deep">Basic information of your facility or unit such as:</Text>
+              <Text color="deep">Subtitle with a list of some items:</Text>
 
-              <ul style={list}>
-                <li style={item}>
-                  <Text color="deep">Your logo</Text>
-                </li>
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
 
-                <li style={item}>
-                  <Text color="deep">Photos of the faciItemty</Text>
-                </li>
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
 
-                <li style={item}>
-                  <Text color="deep">General Description</Text>
-                </li>
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
 
-                <li style={item}>
-                  <Text color="deep">FaciItemty contact information</Text>
-                </li>
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
 
-                <li style={item}>
-                  <Text color="deep">Amenities</Text>
-                </li>
-
-                <li style={item}>
-                  <Text color="deep">Opening hours</Text>
-                </li>
-              </ul>
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
             </Box>
 
             <Button small inverted>
@@ -175,34 +113,486 @@ render(() => {
           </Accordion.Content>
         </Accordion>
 
-        <Accordion title="Affordable, flexible plans" subtitle="Basic information of your facility or unit such as:" disabled>
+        <Accordion title="Title">
           <Accordion.Content>
             <Box d="flex" flexDirection="column" gap="32px">
-              <ul style={list}>
-                <li style={item}>
-                  <Text color="deep">Your logo</Text>
-                </li>
+              <Text color="deep">Subtitle with a list of some items:</Text>
 
-                <li style={item}>
-                  <Text color="deep">Photos of the faciItemty</Text>
-                </li>
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
 
-                <li style={item}>
-                  <Text color="deep">General Description</Text>
-                </li>
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
 
-                <li style={item}>
-                  <Text color="deep">FaciItemty contact information</Text>
-                </li>
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
 
-                <li style={item}>
-                  <Text color="deep">Amenities</Text>
-                </li>
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
 
-                <li style={item}>
-                  <Text color="deep">Opening hours</Text>
-                </li>
-              </ul>
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+
+        <Accordion title="Title">
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <Text color="deep">Subtitle with a list of some items:</Text>
+
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+     </Box>
+    </>
+  );
+});
+```
+
+#### Subtitle
+
+```javascript state
+const List = styled.ul`
+  padding-left: 20px;
+  margin: 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const Item = styled.li`
+  font-size: 10px;
+`;
+
+render(() => {
+  return (
+    <>
+      <Accordion title="Title" subtitle="Subtitle with a list of some items:">
+        <Accordion.Content>
+          <Box d="flex" flexDirection="column" gap="32px">
+            <List>
+              <Item>
+                <Text color="deep">Item 1</Text>
+              </Item>
+
+              <Item>
+                <Text color="deep">Item 2</Text>
+              </Item>
+
+              <Item>
+                <Text color="deep">Item 3</Text>
+              </Item>
+
+              <Item>
+                <Text color="deep">Item 4</Text>
+              </Item>
+
+              <Item>
+                <Text color="deep">Item 5</Text>
+              </Item>
+            </List>
+          </Box>
+
+          <Button small inverted>
+            Small button
+          </Button>
+        </Accordion.Content>
+      </Accordion>
+    </>
+  );
+});
+```
+
+#### Subtitle - Multi
+
+```javascript state
+const List = styled.ul`
+  padding-left: 20px;
+  margin: 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const Item = styled.li`
+  font-size: 10px;
+`;
+
+render(() => {
+  return (
+    <>
+      <Box display="flex" flexDirection="column" width={"100%"}>
+        <Accordion title="Title" subtitle="Subtitle with a list of some items:">
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+
+        <Accordion title="Title" subtitle="Subtitle with a list of some items:">
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+
+        <Accordion title="Title" subtitle="Subtitle with a list of some items:">
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+      </Box>
+    </>
+  );
+});
+```
+
+#### Disabled - Simple
+
+```javascript state
+const List = styled.ul`
+  padding-left: 20px;
+  margin: 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const Item = styled.li`
+  font-size: 10px;
+`;
+
+render(() => {
+  return (
+    <>
+      <Box display="flex" flexDirection="column" width={"100%"}>
+        <Accordion title="Title" disabled>
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <Text color="deep">Subtitle with a list of some items:</Text>
+
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+
+        <Accordion title="Title" disabled>
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <Text color="deep">Subtitle with a list of some items:</Text>
+
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+
+        <Accordion title="Title" disabled>
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <Text color="deep">Subtitle with a list of some items:</Text>
+
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+      </Box>
+    </>
+  );
+});
+```
+
+#### Disabled - Subtitle
+
+```javascript state
+const List = styled.ul`
+  padding-left: 20px;
+  margin: 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const Item = styled.li`
+  font-size: 10px;
+`;
+
+render(() => {
+  return (
+    <>
+      <Box display="flex" flexDirection="column" width={"100%"}>
+        <Accordion title="Title" subtitle="Subtitle with a list of some items:" disabled>
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+
+         <Accordion title="Title" subtitle="Subtitle with a list of some items:" disabled>
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
+            </Box>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+
+         <Accordion title="Title" subtitle="Subtitle with a list of some items:" disabled>
+          <Accordion.Content>
+            <Box d="flex" flexDirection="column" gap="32px">
+              <List>
+                <Item>
+                  <Text color="deep">Item 1</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 2</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 3</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 4</Text>
+                </Item>
+
+                <Item>
+                  <Text color="deep">Item 5</Text>
+                </Item>
+              </List>
             </Box>
 
             <Button small inverted>
