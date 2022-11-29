@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import { string, node, bool } from 'prop-types';
 import { ChevronDown } from '@gympass/yoga-icons';
 import { Text } from '@gympass/yoga';
+import Divider from '../../Divider';
 
 const Accordion = ({ title, subtitle, children, disabled }) => {
   const [open, setOpen] = useState(false);
@@ -12,19 +13,26 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
     border: none;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     ${({
       theme: {
         yoga: {
-          colors: { white, elements },
+          colors: { white },
         },
       },
     }) => {
       return `
       background: ${white}
-      border-bottom: 1px solid ${elements.lineAndBorders};
     `;
     }}
+
+    hr {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin: 0;
+    }
   `;
 
   const Header = styled.button`
@@ -130,8 +138,12 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    transform: ${({ isOpen }) => (isOpen ? 'rotate(180deg)' : 'rotate(0deg)')};
+
+    svg {
+      transition: all 200ms ease-out 0s;
+      transform: ${({ isOpen }) =>
+        isOpen ? 'rotate(180deg)' : 'rotate(0deg)'};
+    }
 
     ${({
       theme: {
@@ -144,10 +156,6 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
       padding: ${accordion.paddingArrow.total}px;
     `;
     }}
-
-    &:hover {
-      box-shadow: rgb(216 56 94 / 45%) 0px 4px 8px;
-    }
   `;
 
   return (
@@ -166,14 +174,15 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
 
         <ArrowWrapper isOpen={open}>
           <ChevronDown
-            stroke={disabled ? '#6B6B78' : '#D8385E'}
-            width={20}
-            height={20}
+            fill={disabled ? '#6B6B78' : '#D8385E'}
+            width={24}
+            height={24}
           />
         </ArrowWrapper>
       </Header>
 
       <AccordionContent isOpen={open}>{children}</AccordionContent>
+      <Divider />
     </AccordionWrapper>
   );
 };
