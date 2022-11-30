@@ -1,4 +1,4 @@
-const Accordion = ({ spacing, fontSizes, colors }) => ({
+const Accordion = ({ spacing }) => ({
   padding: {
     standard: spacing.medium,
     large: spacing.large,
@@ -8,19 +8,6 @@ const Accordion = ({ spacing, fontSizes, colors }) => ({
   },
   gap: {
     header: spacing.xxxsmall,
-  },
-  margin: {
-    top: spacing.xxxsmall,
-  },
-  fontSize: {
-    itemList: fontSizes.small,
-    marker: fontSizes.xxsmall,
-  },
-  lineHeight: {
-    itemList: fontSizes.large,
-  },
-  colors: {
-    content: colors.text.secundary,
   },
 });
 

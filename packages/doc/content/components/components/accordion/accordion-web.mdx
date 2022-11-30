@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { theme } from '@gympass/yoga';
 
 ### Usage
 
@@ -6,15 +7,15 @@ import styled from 'styled-components';
 
 ```javascript state
 const List = styled.ul`
-  padding-left: 20px;
-  margin: 0 0 4px;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin: 0 0 ${theme.spacing.xxxsmall}px;
+  padding-left: ${theme.spacing.medium}px;
 `;
 
 const Item = styled.li`
-  font-size: 10px;
+  font-size: ${theme.spacing.xsmall}px;
 `;
 
 
@@ -23,28 +24,28 @@ render(() => {
     <>
       <Accordion title="Title">
         <Accordion.Content>
-          <Box d="flex" flexDirection="column" gap="32px">
-            <Text color="deep">Subtitle with a list of some items:</Text>
+          <Box d="flex" flexDirection="column" gap="small">
+            <Text.Small color="deep">Subtitle with a list of some items:</Text.Small>
 
             <List>
               <Item>
-                <Text color="deep">Item 1</Text>
+                <Text.Small color="deep">Item 1</Text.Small>
               </Item>
 
               <Item>
-                <Text color="deep">Item 2</Text>
+                <Text.Small color="deep">Item 2</Text.Small>
               </Item>
 
               <Item>
-                <Text color="deep">Item 3</Text>
+                <Text.Small color="deep">Item 3</Text.Small>
               </Item>
 
               <Item>
-                <Text color="deep">Item 4</Text>
+                <Text.Small color="deep">Item 4</Text.Small>
               </Item>
 
               <Item>
-                <Text color="deep">Item 5</Text>
+                <Text.Small color="deep">Item 5</Text.Small>
               </Item>
             </List>
           </Box>
@@ -63,15 +64,15 @@ render(() => {
 
 ```javascript state
 const List = styled.ul`
-  padding-left: 20px;
-  margin: 0 0 4px;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin: 0 0 ${theme.spacing.xxxsmall}px;
+  padding-left: ${theme.spacing.medium}px;
 `;
 
 const Item = styled.li`
-  font-size: 10px;
+  font-size: ${theme.spacing.xsmall}px;
 `;
 
 
@@ -81,28 +82,28 @@ render(() => {
      <Box display="flex" flexDirection="column" width={"100%"}>
         <Accordion title="Title">
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
-              <Text color="deep">Subtitle with a list of some items:</Text>
+            <Box d="flex" flexDirection="column" gap="small">
+              <Text.Small color="deep">Subtitle with a list of some items:</Text.Small>
 
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>
@@ -115,28 +116,28 @@ render(() => {
 
         <Accordion title="Title">
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
-              <Text color="deep">Subtitle with a list of some items:</Text>
+            <Box d="flex" flexDirection="column" gap="small">
+              <Text.Small color="deep">Subtitle with a list of some items:</Text.Small>
 
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>
@@ -149,28 +150,28 @@ render(() => {
 
         <Accordion title="Title">
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
-              <Text color="deep">Subtitle with a list of some items:</Text>
+            <Box d="flex" flexDirection="column" gap="small">
+              <Text.Small color="deep">Subtitle with a list of some items:</Text.Small>
 
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>
@@ -190,15 +191,15 @@ render(() => {
 
 ```javascript state
 const List = styled.ul`
-  padding-left: 20px;
-  margin: 0 0 4px;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin: 0 0 ${theme.spacing.xxxsmall}px;
+  padding-left: ${theme.spacing.medium}px;
 `;
 
 const Item = styled.li`
-  font-size: 10px;
+  font-size: ${theme.spacing.xsmall}px;
 `;
 
 render(() => {
@@ -206,26 +207,26 @@ render(() => {
     <>
       <Accordion title="Title" subtitle="Subtitle with a list of some items:">
         <Accordion.Content>
-          <Box d="flex" flexDirection="column" gap="32px">
+          <Box d="flex" flexDirection="column" gap="small">
             <List>
               <Item>
-                <Text color="deep">Item 1</Text>
+                <Text.Small color="deep">Item 1</Text.Small>
               </Item>
 
               <Item>
-                <Text color="deep">Item 2</Text>
+                <Text.Small color="deep">Item 2</Text.Small>
               </Item>
 
               <Item>
-                <Text color="deep">Item 3</Text>
+                <Text.Small color="deep">Item 3</Text.Small>
               </Item>
 
               <Item>
-                <Text color="deep">Item 4</Text>
+                <Text.Small color="deep">Item 4</Text.Small>
               </Item>
 
               <Item>
-                <Text color="deep">Item 5</Text>
+                <Text.Small color="deep">Item 5</Text.Small>
               </Item>
             </List>
           </Box>
@@ -244,15 +245,15 @@ render(() => {
 
 ```javascript state
 const List = styled.ul`
-  padding-left: 20px;
-  margin: 0 0 4px;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin: 0 0 ${theme.spacing.xxxsmall}px;
+  padding-left: ${theme.spacing.medium}px;
 `;
 
 const Item = styled.li`
-  font-size: 10px;
+  font-size: ${theme.spacing.xsmall}px;
 `;
 
 render(() => {
@@ -261,26 +262,26 @@ render(() => {
       <Box display="flex" flexDirection="column" width={"100%"}>
         <Accordion title="Title" subtitle="Subtitle with a list of some items:">
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
+            <Box d="flex" flexDirection="column" gap="small">
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>
@@ -293,26 +294,26 @@ render(() => {
 
         <Accordion title="Title" subtitle="Subtitle with a list of some items:">
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
+            <Box d="flex" flexDirection="column" gap="small">
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>
@@ -325,26 +326,26 @@ render(() => {
 
         <Accordion title="Title" subtitle="Subtitle with a list of some items:">
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
+            <Box d="flex" flexDirection="column" gap="small">
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>
@@ -364,15 +365,15 @@ render(() => {
 
 ```javascript state
 const List = styled.ul`
-  padding-left: 20px;
-  margin: 0 0 4px;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin: 0 0 ${theme.spacing.xxxsmall}px;
+  padding-left: ${theme.spacing.medium}px;
 `;
 
 const Item = styled.li`
-  font-size: 10px;
+  font-size: ${theme.spacing.xsmall}px;
 `;
 
 render(() => {
@@ -381,28 +382,28 @@ render(() => {
       <Box display="flex" flexDirection="column" width={"100%"}>
         <Accordion title="Title" disabled>
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
-              <Text color="deep">Subtitle with a list of some items:</Text>
+            <Box d="flex" flexDirection="column" gap="small">
+              <Text.Small color="deep">Subtitle with a list of some items:</Text.Small>
 
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>
@@ -415,28 +416,28 @@ render(() => {
 
         <Accordion title="Title" disabled>
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
-              <Text color="deep">Subtitle with a list of some items:</Text>
+            <Box d="flex" flexDirection="column" gap="large">
+              <Text.Small color="deep">Subtitle with a list of some items:</Text.Small>
 
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>
@@ -449,28 +450,28 @@ render(() => {
 
         <Accordion title="Title" disabled>
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
-              <Text color="deep">Subtitle with a list of some items:</Text>
+            <Box d="flex" flexDirection="column" gap="large">
+              <Text.Small color="deep">Subtitle with a list of some items:</Text.Small>
 
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>
@@ -490,15 +491,15 @@ render(() => {
 
 ```javascript state
 const List = styled.ul`
-  padding-left: 20px;
-  margin: 0 0 4px;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  margin: 0 0 ${theme.spacing.xxxsmall}px;
+  padding-left: ${theme.spacing.medium}px;
 `;
 
 const Item = styled.li`
-  font-size: 10px;
+  font-size: ${theme.spacing.xsmall}px;
 `;
 
 render(() => {
@@ -507,26 +508,26 @@ render(() => {
       <Box display="flex" flexDirection="column" width={"100%"}>
         <Accordion title="Title" subtitle="Subtitle with a list of some items:" disabled>
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
+            <Box d="flex" flexDirection="column" gap="large">
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>
@@ -539,26 +540,26 @@ render(() => {
 
          <Accordion title="Title" subtitle="Subtitle with a list of some items:" disabled>
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
+            <Box d="flex" flexDirection="column" gap="large">
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>
@@ -571,26 +572,26 @@ render(() => {
 
          <Accordion title="Title" subtitle="Subtitle with a list of some items:" disabled>
           <Accordion.Content>
-            <Box d="flex" flexDirection="column" gap="32px">
+            <Box d="flex" flexDirection="column" gap="large">
               <List>
                 <Item>
-                  <Text color="deep">Item 1</Text>
+                  <Text.Small color="deep">Item 1</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 2</Text>
+                  <Text.Small color="deep">Item 2</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 3</Text>
+                  <Text.Small color="deep">Item 3</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 4</Text>
+                  <Text.Small color="deep">Item 4</Text.Small>
                 </Item>
 
                 <Item>
-                  <Text color="deep">Item 5</Text>
+                  <Text.Small color="deep">Item 5</Text.Small>
                 </Item>
               </List>
             </Box>

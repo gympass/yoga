@@ -9,40 +9,42 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
   const [open, setOpen] = useState(false);
 
   const AccordionWrapper = styled.div`
-    width: 100%;
     border: none;
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
+    z-index: 1;
 
     ${({
       theme: {
         yoga: {
-          colors: { white },
+          colors: { white, elements },
         },
       },
     }) => {
       return `
-      background: ${white}
+      background: ${disabled ? elements.backgroundAndDisabled : white}
     `;
     }}
 
     hr {
-      position: absolute;
-      left: 0;
       bottom: 0;
+      left: 0;
       margin: 0;
+      position: absolute;
+      z-index: -1;
     }
   `;
 
   const Header = styled.button`
-    width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    border: none;
     background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 
     ${({
       theme: {
@@ -60,7 +62,7 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
     `;
     }}
 
-    &:focus {
+    &:focus-visible {
       ${({
         theme: {
           yoga: {
@@ -78,25 +80,13 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
     ${disabled &&
     css`
       cursor: not-allowed;
-
-      ${({
-        theme: {
-          yoga: {
-            colors: { elements },
-          },
-        },
-      }) => {
-        return `
-        background: ${elements.backgroundAndDisabled};
-      `;
-      }}
     `}
   `;
 
   const Title = styled.div`
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 
     ${({
       theme: {
@@ -106,8 +96,8 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
       },
     }) => {
       return `
-      margin: ${accordion.paddingArrow.total}px 0;
       gap: ${subtitle ? accordion.gap.header : 0}px;
+      margin: ${subtitle ? 0 : `${accordion.paddingArrow.total}px 0`};
     `;
     }}
 
@@ -128,21 +118,21 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
   `;
 
   const AccordionContent = styled.div`
-    overflow: hidden;
     height: auto;
-    transition: max-height 200ms ease-in-out;
     max-height: ${({ isOpen }) => (isOpen ? '9999px' : '0')};
+    overflow: hidden;
+    transition: max-height 200ms ease-in-out;
   `;
 
   const ArrowWrapper = styled.div`
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 
     svg {
-      transition: all 200ms ease-out 0s;
       transform: ${({ isOpen }) =>
         isOpen ? 'rotate(180deg)' : 'rotate(0deg)'};
+      transition: all 200ms ease-out 0s;
     }
 
     ${({
@@ -169,7 +159,7 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
         <Title>
           <Text color={disabled && 'deep'}>{title}</Text>
 
-          <Text color="deep">{subtitle}</Text>
+          <Text.Small color="deep">{subtitle}</Text.Small>
         </Title>
 
         <ArrowWrapper isOpen={open}>
