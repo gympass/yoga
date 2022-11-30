@@ -157,7 +157,7 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
         }}
       >
         <Title>
-          <Text color={disabled && 'deep'}>{title}</Text>
+          <Text color={disabled ? 'deep' : undefined}>{title}</Text>
 
           <Text.Small color="deep">{subtitle}</Text.Small>
         </Title>
