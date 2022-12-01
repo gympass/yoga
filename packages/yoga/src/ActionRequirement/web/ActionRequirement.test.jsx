@@ -25,7 +25,7 @@ describe('<ActionRequirement />', () => {
   it('should default match snapshot', () => {
     const { container } = render(
       <ThemeProvider>
-        <ActionRequirement />
+        <ActionRequirement title="title" description="description" />
       </ThemeProvider>,
     );
 
@@ -35,7 +35,11 @@ describe('<ActionRequirement />', () => {
   it('should match snapshot with list', () => {
     const { container } = render(
       <ThemeProvider>
-        <ActionRequirement list={handleGetList()} />
+        <ActionRequirement
+          title="title"
+          description="description"
+          list={handleGetList()}
+        />
       </ThemeProvider>,
     );
 

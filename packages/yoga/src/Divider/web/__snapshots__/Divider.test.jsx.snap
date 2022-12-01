@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Divider /> should create a divider component 1`] = `
+.c2 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
 .c0 {
   min-height: 50px;
   display: -webkit-box;
@@ -22,14 +30,6 @@ exports[`<Divider /> should create a divider component 1`] = `
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
-}
-
-.c2 {
-  width: 100%;
-  border-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  border-color: #D7D7E0;
 }
 
 <div>
@@ -55,6 +55,14 @@ exports[`<Divider /> should create a divider component 1`] = `
 `;
 
 exports[`<Divider /> should create a vertical divider component 1`] = `
+.c2 {
+  height: auto;
+  border-width: 0px;
+  border-left-width: 1px;
+  border-bottom-width: 0px;
+  border-color: #D7D7E0;
+}
+
 .c0 {
   min-height: 50px;
   display: -webkit-box;
@@ -76,14 +84,6 @@ exports[`<Divider /> should create a vertical divider component 1`] = `
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
-}
-
-.c2 {
-  height: auto;
-  border-width: 0px;
-  border-left-width: 1px;
-  border-bottom-width: 0px;
-  border-color: #D7D7E0;
 }
 
 <div>

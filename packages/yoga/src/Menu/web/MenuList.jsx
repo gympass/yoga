@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { Content as MenuListRoot, Portal } from '@radix-ui/react-dropdown-menu';
-import { node, number, oneOf } from 'prop-types';
+import { node, number, oneOf, string } from 'prop-types';
 
 import Box from '../../Box';
 
@@ -69,7 +69,7 @@ MenuList.propTypes = {
   sideOffset: number,
 
   /** Add z-index value to Menu.List. Set to 'auto' by default */
-  zIndex: number,
+  zIndex: string || number,
 };
 
 MenuList.defaultProps = {

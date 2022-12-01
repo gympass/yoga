@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
+.c11 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
 .c20 {
   box-sizing: border-box;
   text-align: center;
@@ -94,14 +102,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   margin-bottom: 8px;
   color: #6B6B78;
   font-weight: 500;
-}
-
-.c11 {
-  width: 100%;
-  border-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  border-color: #D7D7E0;
 }
 
 .c5 {
@@ -428,6 +428,14 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 `;
 
 exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
+.c8 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
 .c6 {
   margin: 0;
   padding: 0;
@@ -450,14 +458,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   margin-bottom: 8px;
   color: #6B6B78;
   font-weight: 500;
-}
-
-.c8 {
-  width: 100%;
-  border-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  border-color: #D7D7E0;
 }
 
 .c2 {
@@ -579,6 +579,14 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
 `;
 
 exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
+.c8 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
 .c6 {
   margin: 0;
   padding: 0;
@@ -601,14 +609,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   margin-bottom: 8px;
   color: #6B6B78;
   font-weight: 500;
-}
-
-.c8 {
-  width: 100%;
-  border-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  border-color: #D7D7E0;
 }
 
 .c2 {
