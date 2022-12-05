@@ -1,14 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Accordion /> should match snapshot 1`] = `
-.c9 {
-  width: 100%;
-  border-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  border-color: #D7D7E0;
-}
-
 .c8 {
   box-sizing: border-box;
   text-align: center;
@@ -112,6 +104,14 @@ exports[`<Accordion /> should match snapshot 1`] = `
   color: #231B22;
 }
 
+.c9 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
 .c0 {
   border: none;
   display: -webkit-box;
@@ -205,6 +205,7 @@ exports[`<Accordion /> should match snapshot 1`] = `
   transform: rotate(0deg);
   -webkit-transition: all 200ms ease-out 0s;
   transition: all 200ms ease-out 0s;
+  fill: #D8385E;
 }
 
 .c7 {
@@ -236,7 +237,6 @@ exports[`<Accordion /> should match snapshot 1`] = `
           class="c5"
         >
           <svg
-            fill="#D8385E"
             height="24"
             width="24"
           />
