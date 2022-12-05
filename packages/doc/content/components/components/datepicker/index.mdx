@@ -18,6 +18,35 @@ Both `startDate` and `endDate` are expected to be in the [`Date`](https://develo
 
 ```javascript state
 render(() => {
+  const [startDate, setStartDate] = useState();
+  const [endDate, setEndDate] = useState();
+  const [selectedDate, setSelectedDate] = useState();
+
+  const onSelFunc = date => {
+    setSelectedDate(date);
+    console.log('some Data =>', date);
+  };
+
+  const onSelectRange = (startDate, endDate) => {
+    console.log({ startDate, endDate });
+  };
+
+  return (
+    <Datepicker
+      startDate={startDate}
+      endDate={endDate}
+      isMonthDisplay
+      type="range"
+      onSelectRange={onSelectRange}
+    />
+  );
+});
+```
+
+### Single date Datepicker
+
+```javascript state
+render(() => {
   const [selectedDate, setSelectedDate] = useState();
 
   return (

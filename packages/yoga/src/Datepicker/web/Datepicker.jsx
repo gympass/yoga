@@ -7,6 +7,7 @@ import { bool, oneOf, func, instanceOf, string } from 'prop-types';
 import { format } from 'date-fns';
 import { theme } from '../../Theme';
 import Calendar from './Calendar';
+import MonthCalendar from './MonthCalendar';
 
 const Wrapper = styled.div`
   position: relative;
@@ -182,6 +183,7 @@ function Datepicker({
   error,
   onOpen,
   displayEndDateOnly,
+  isMonthDisplay,
 }) {
   const [open, setOpen] = useState();
   const [startDateLocal, setStartDateLocal] = useState(startDate);
@@ -260,6 +262,8 @@ function Datepicker({
     }
   };
 
+  const onApplyDate = () => {};
+
   const renderInput = (start, end) => {
     if ((!start && !end) || (displayEndDateOnly && !end)) {
       return (
@@ -314,17 +318,28 @@ function Datepicker({
       {error && <ErrorWrapper>{error}</ErrorWrapper>}
       {open === 'true' && (
         <Panel tabIndex={-1} ref={ref} onBlur={onBlur}>
-          <Calendar
-            type={type}
-            startDate={startDateLocal}
-            endDate={endDateLocal}
-            onSelectSingle={onDateSingleSelect}
-            onSelectRange={onDateRangeSelect}
-            disablePastDates={disablePastDates}
-            disableFutureDates={disableFutureDates}
-            disablePastFrom={disablePastFrom}
-            disableFutureFrom={disableFutureFrom}
-          />
+          {isMonthDisplay ? (
+            <MonthCalendar
+              type={type}
+              onSelectSingle={onDateSingleSelect}
+              onSelectRange={onDateRangeSelect}
+              startDate={startDateLocal}
+              endDate={endDateLocal}
+              onApply={onApplyDate}
+            />
+          ) : (
+            <Calendar
+              type={type}
+              startDate={startDateLocal}
+              endDate={endDateLocal}
+              onSelectSingle={onDateSingleSelect}
+              onSelectRange={onDateRangeSelect}
+              disablePastDates={disablePastDates}
+              disableFutureDates={disableFutureDates}
+              disablePastFrom={disablePastFrom}
+              disableFutureFrom={disableFutureFrom}
+            />
+          )}
         </Panel>
       )}
     </Wrapper>
@@ -348,6 +363,7 @@ Datepicker.propTypes = {
   error: string,
   onOpen: func,
   displayEndDateOnly: bool,
+  isMonthDisplay: bool,
 };
 
 Datepicker.defaultProps = {
@@ -366,6 +382,7 @@ Datepicker.defaultProps = {
   error: undefined,
   onOpen: undefined,
   displayEndDateOnly: false,
+  isMonthDisplay: false,
 };
 
 export default Datepicker;
