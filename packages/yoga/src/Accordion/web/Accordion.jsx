@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { string, node, bool } from 'prop-types';
 import { ChevronDown } from '@gympass/yoga-icons';
-import { Text } from '@gympass/yoga';
-import Divider from '../../Divider';
+import { Text, Divider } from '@gympass/yoga';
 
 const Accordion = ({ title, subtitle, children, disabled }) => {
   const [open, setOpen] = useState(false);
@@ -133,6 +132,18 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
       transform: ${({ isOpen }) =>
         isOpen ? 'rotate(180deg)' : 'rotate(0deg)'};
       transition: all 200ms ease-out 0s;
+
+      ${({
+        theme: {
+          yoga: {
+            colors: { primary, text },
+          },
+        },
+      }) => {
+        return `
+          fill: ${disabled ? text.secondary : primary};
+        `;
+      }}
     }
 
     ${({
@@ -163,11 +174,7 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
         </Title>
 
         <ArrowWrapper isOpen={open}>
-          <ChevronDown
-            fill={disabled ? '#6B6B78' : '#D8385E'}
-            width={24}
-            height={24}
-          />
+          <ChevronDown width={24} height={24} />
         </ArrowWrapper>
       </Header>
 
