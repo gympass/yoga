@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.34.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.33.4...@gympass/yoga-doc@2.34.0) (2022-12-06)
+
+
+### Features
+
+* **components:** add content and styles to accordion ([3f68bbd](https://github.com/gympass/yoga/commit/3f68bbd76e1e6fe04ec1cfbb8cced4537eb5ce84))
+* **components:** add focus-visible and refactor ([1d01993](https://github.com/gympass/yoga/commit/1d0199362a26ae530195f5912fdbe74111414598))
+* **components:** add styled-components and replace texts ([76762ab](https://github.com/gympass/yoga/commit/76762abb10b406e6b403b19fdd373809a6d5dc26))
+* **components:** create accordion files ([a63d52b](https://github.com/gympass/yoga/commit/a63d52b858a0cda5f4baeb23770201c660a83de6))
+
+
+
+
+
 ## [2.33.4](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.33.3...@gympass/yoga-doc@2.33.4) (2022-11-23)
 
 **Note:** Version bump only for package @gympass/yoga-doc

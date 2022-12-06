@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.62.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.61.2...@gympass/yoga@7.62.0) (2022-12-06)
+
+
+### Features
+
+* **components:** add content and styles to accordion ([3f68bbd](https://github.com/Gympass/yoga/commit/3f68bbd76e1e6fe04ec1cfbb8cced4537eb5ce84))
+* **components:** add divider to accordion border ([ff55d70](https://github.com/Gympass/yoga/commit/ff55d70e9667e5077bbbba08395c295bcae6a1c9))
+* **components:** add focus-visible and refactor ([1d01993](https://github.com/Gympass/yoga/commit/1d0199362a26ae530195f5912fdbe74111414598))
+* **components:** create accordion files ([a63d52b](https://github.com/Gympass/yoga/commit/a63d52b858a0cda5f4baeb23770201c660a83de6))
+* **components:** create accordion theme ([2465253](https://github.com/Gympass/yoga/commit/2465253e9163137e71fbff9f0d55260cece7edd1))
+
+
+
+
+
 ## [7.61.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.61.1...@gympass/yoga@7.61.2) (2022-11-23)
 
 
