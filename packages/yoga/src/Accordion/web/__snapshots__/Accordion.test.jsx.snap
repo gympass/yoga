@@ -171,6 +171,7 @@ exports[`<Accordion /> should match snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  text-align: start;
   gap: 0px;
   margin: 8px 0;
 }
