@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> should match snapshot 1`] = `
+.c8 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #D8385E;
+}
+
+.c8 svg {
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c8:not([disabled]):hover,
+.c8:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c8:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c8:active svg {
+  fill: #FFFFFF;
+}
+
+.c8 svg {
+  fill: #D8385E;
+}
+
+.c8:active {
+  background-color: rgba(255,255,255,0.75);
+  color: rgba(216,56,94,0.75);
+}
+
+.c8:active svg {
+  fill: rgba(216,56,94,0.75);
+}
+
+.c8:not([disabled]):hover,
+.c8:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c9 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
+.c0 {
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  background: #FFFFFF;
+}
+
+.c0 hr {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 20px;
+}
+
+.c1:focus-visible {
+  background: #F5F5FA;
+}
+
+.c2 {
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 0px;
+  margin: 8px 0;
+}
+
+.c6 {
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 200ms ease-in-out;
+  transition: max-height 200ms ease-in-out;
+}
+
+.c5 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.c5 svg {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 200ms ease-out 0s;
+  transition: all 200ms ease-out 0s;
+  fill: #D8385E;
+}
+
+.c7 {
+  padding: 0 20px 20px;
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <button
+        class="c1"
+      >
+        <div
+          class="c2"
+        >
+          <p
+            class="c3"
+          >
+            Title
+          </p>
+          <p
+            class="c4"
+            color="deep"
+          />
+        </div>
+        <div
+          class="c5"
+        >
+          <svg
+            height="24"
+            width="24"
+          />
+        </div>
+      </button>
+      <div
+        class="c6"
+      >
+        <div
+          class="c7"
+        >
+          <p
+            class="c3"
+          >
+            Content
+          </p>
+          <button
+            class="c8"
+          >
+            Small button
+          </button>
+        </div>
+      </div>
+      <hr
+        class="c9"
+      />
+    </div>
+  </div>
+</body>
+`;

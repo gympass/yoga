@@ -4,6 +4,7 @@ import ThemeProvider, {
   theme,
   createTheme,
 } from './Theme';
+import Accordion from './Accordion';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -40,6 +41,7 @@ import ActionRequirement from './ActionRequirement';
 import Popover from './Popover';
 
 export {
+  Accordion,
   ThemeProvider,
   FontLoader,
   createTheme,
