@@ -86,6 +86,7 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    text-align: start;
 
     ${({
       theme: {
