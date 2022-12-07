@@ -176,6 +176,10 @@ exports[`<Accordion /> should match snapshot 1`] = `
   margin: 8px 0;
 }
 
+.c2 p {
+  font-weight: 500;
+}
+
 .c6 {
   height: auto;
   max-height: 0;
