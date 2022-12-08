@@ -1,0 +1,65 @@
+---
+title: 'Dropdown Input'
+metaTitle: 'Dropdown Input'
+metaDescription: 'Dropdown Input Component'
+---
+
+import { FlagsIcons } from '@gympass/yoga-icons';
+
+# Dropdown Input
+
+Allows the user to choose a country and add secondary information. (Company name for example)
+
+### Usage
+
+```javascript state
+
+render(() => {
+  const [value, setValue] = useState('');
+  const [selectedCountry, setSelectedCountry] = useState({ icon: FlagsIcons.FlagBrazil, name: 'Brazil', id: 'BR' });
+  
+  function onClear() {
+    setValue('');
+  }
+  
+  function onChange(event) {
+    const { value } = event.target;
+    setValue(value);
+  }
+
+  function onChangeSelectedCountry(selected) {
+    setValue('');
+    setSelectedCountry(selected);
+  }
+
+  return (
+      <DropdownInput
+        placeholder="Company Name"
+        value={value}
+        onChange={onChange}
+        onClear={onClear}
+        selectedCountry={selectedCountry}
+        onChangeSelectedCountry={onChangeSelectedCountry}
+        countries={[
+          { icon: FlagsIcons.FlagBrazil, name: 'Brazil', id: 'BR' },
+          { icon: FlagsIcons.FlagUS, name: 'United States', id: 'US' },
+          { icon: FlagsIcons.FlagGermany, name: 'Germany', id: 'DE' },
+          { icon: FlagsIcons.FlagMexico, name: 'Mexico', id: 'MX' },
+          { icon: FlagsIcons.FlagItaly, name: 'Italy', id: 'IT' },
+          { icon: FlagsIcons.FlagUK, name: 'United Kingdom', id: 'UK' },
+          { icon: FlagsIcons.FlagSpain, name: 'Spain', id: 'ES' },
+          { icon: FlagsIcons.FlagArgentina, name: 'Argentina', id: 'AR' },
+          { icon: FlagsIcons.FlagChile, name: 'Chile', id: 'CL' },
+          { icon: FlagsIcons.FlagNetherlands, name: 'Netherlands', id: 'NL' },
+          { icon: FlagsIcons.FlagPortugal, name: 'Portugal', id: 'PT' },
+          { icon: FlagsIcons.FlagIreland, name: 'Ireland', id: 'IE' },
+          { icon: FlagsIcons.FlagUruguay, name: 'Uruguay', id: 'UY' },
+        ]}
+      />
+  );
+});
+```
+
+### Props
+
+<PropsTable component="DropdownInput" platform="web" />

@@ -39,6 +39,7 @@ import Drawer from './Drawer';
 import Skeleton from './Skeleton';
 import ActionRequirement from './ActionRequirement';
 import Popover from './Popover';
+import DropdownInput from './DropdownInput';
 
 export {
   Accordion,
@@ -86,4 +87,5 @@ export {
   Skeleton,
   ActionRequirement,
   Popover,
+  DropdownInput,
 };
