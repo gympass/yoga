@@ -1,13 +1,21 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
+import { FlagsIcons } from '@gympass/yoga-icons';
 import { ThemeProvider, DropdownInput } from '../..';
 
 describe('<DropdownInput />', () => {
-  it('should match snapshot', () => {
+  it.only('should match snapshot', () => {
     const { container } = render(
       <ThemeProvider>
-        <DropdownInput />
+        <DropdownInput
+          placeholder="Company Name"
+          selectedCountry={{
+            icon: FlagsIcons.FlagBrazil,
+            name: 'Brazil',
+            id: 'BR',
+          }}
+        />
       </ThemeProvider>,
     );
 
