@@ -118,7 +118,6 @@ const ItemDropDown = styled.li`
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  border-bottom: 1px solid ${theme.colors.elements.lineAndBorders};
 
   div {
     display: flex;
