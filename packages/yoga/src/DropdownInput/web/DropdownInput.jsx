@@ -2,13 +2,7 @@ import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { theme, Box, Icon } from '@gympass/yoga';
 import styled, { css } from 'styled-components';
-import {
-  FlagsIcons,
-  Check,
-  ChevronUp,
-  ChevronDown,
-  Close,
-} from '@gympass/yoga-icons';
+import { Check, ChevronUp, ChevronDown, Close } from '@gympass/yoga-icons';
 import { useOnClickOutside } from '../../hooks';
 
 const Wrapper = styled.div`
@@ -141,7 +135,7 @@ const NameCountry = styled.div`
     props.selectedCountry ? theme.colors.vibin : theme.colors.stamina};
 `;
 
-function DropdownInput({
+const DropdownInput = ({
   placeholder,
   onClear,
   value,
@@ -149,32 +143,15 @@ function DropdownInput({
   onChangeSelectedCountry,
   countries,
   ...other
-}) {
+}) => {
   const [showDropDown, setShowDropDown] = useState(false);
   const inputRef = useRef(null);
   const DropDownRef = useRef(null);
   const containerRef = useRef(null);
 
-  const CountryFlag = {
-    AR: FlagsIcons.FlagArgentina,
-    BR: FlagsIcons.FlagBrazil,
-    CL: FlagsIcons.FlagChile,
-    DE: FlagsIcons.FlagGermany,
-    IR: FlagsIcons.FlagIreland,
-    IT: FlagsIcons.FlagItaly,
-    MX: FlagsIcons.FlagMexico,
-    ES: FlagsIcons.FlagSpain,
-    UK: FlagsIcons.FlagUK,
-    US: FlagsIcons.FlagUS,
-    PT: FlagsIcons.FlagPortugal,
-    UY: FlagsIcons.FlagUruguay,
-    NL: FlagsIcons.FlagNetherlands,
-    IE: FlagsIcons.FlagIreland,
-  }[selectedCountry.id];
-
-  function toggleShowDropDown() {
+  const toggleShowDropDown = () => {
     setShowDropDown(!showDropDown);
-  }
+  };
 
   useOnClickOutside(DropDownRef, e => {
     if (e.target.id !== 'button-drop-down') {
@@ -182,37 +159,36 @@ function DropdownInput({
     }
   });
 
-  function changeSelectedCountry(selected) {
+  const changeSelectedCountry = selected => () => {
     onChangeSelectedCountry(selected);
     toggleShowDropDown();
     inputRef.current.focus();
-  }
+  };
 
-  function renderListCountries() {
-    return countries.map(country => (
-      <ItemDropDown
-        key={Math.round(1, 9999)}
-        onClick={() => {
-          changeSelectedCountry(country);
-        }}
-      >
-        <NameCountry selectedCountry={selectedCountry.id === country.id}>
-          <Box>
-            <Icon
-              as={country.icon}
-              width="medium"
-              height="medium"
-              marginRight={4}
-            />
-          </Box>
-          {country.name}
-        </NameCountry>
-        {selectedCountry.id === country.id && (
-          <Icon as={Check} width="medium" height="medium" fill="vibin" />
-        )}
-      </ItemDropDown>
-    ));
-  }
+  const renderListCountries = () => {
+    return countries.map(country => {
+      const isCountrySelected = selectedCountry.id === country.id;
+
+      return (
+        <ItemDropDown key={country.id} onClick={changeSelectedCountry(country)}>
+          <NameCountry selectedCountry={isCountrySelected}>
+            <Box>
+              <Icon
+                as={country.icon}
+                width="medium"
+                height="medium"
+                marginRight={4}
+              />
+            </Box>
+            {country.name}
+          </NameCountry>
+          {isCountrySelected && (
+            <Icon as={Check} width="medium" height="medium" fill="vibin" />
+          )}
+        </ItemDropDown>
+      );
+    });
+  };
 
   return (
     <Wrapper>
@@ -220,37 +196,24 @@ function DropdownInput({
         <ButtonDropDown
           id="button-drop-down"
           type="button"
-          onClick={() => {
-            toggleShowDropDown();
-          }}
+          onClick={toggleShowDropDown}
         >
           <Box>
             <Icon
               marginRight={2}
               marginLeft={4}
-              as={CountryFlag}
+              as={selectedCountry.icon}
               width="medium"
               height="medium"
             />
           </Box>
-          {!showDropDown && (
-            <Icon
-              as={ChevronDown}
-              size="small"
-              cursor="pointer"
-              mr="xsmall"
-              stroke="deep"
-            />
-          )}
-          {showDropDown && (
-            <Icon
-              as={ChevronUp}
-              size="small"
-              cursor="pointer"
-              mr="xsmall"
-              stroke="deep"
-            />
-          )}
+          <Icon
+            as={showDropDown ? ChevronUp : ChevronDown}
+            size="small"
+            cursor="pointer"
+            mr="xsmall"
+            stroke="deep"
+          />
           <Divisor />
         </ButtonDropDown>
 
@@ -258,8 +221,8 @@ function DropdownInput({
           data-testid="input"
           ref={inputRef}
           value={value}
-          {...other}
           placeholder={placeholder}
+          {...other}
         />
 
         <Clear onClick={onClear} type="button">
@@ -279,11 +242,17 @@ function DropdownInput({
       )}
     </Wrapper>
   );
-}
+};
 
 DropdownInput.propTypes = {
   placeholder: PropTypes.string.isRequired,
-  countries: PropTypes.arrayOf.isRequired,
+  countries: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      icon: PropTypes.elementType.isRequired,
+    }),
+  ).isRequired,
   onClear: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
   selectedCountry: PropTypes.string.isRequired,

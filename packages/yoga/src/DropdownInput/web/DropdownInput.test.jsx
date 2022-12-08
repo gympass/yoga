@@ -7,16 +7,15 @@ import { ThemeProvider, DropdownInput } from '../..';
 describe('<DropdownInput />', () => {
   it.only('should match snapshot', () => {
     const { container } = render(
-      <ThemeProvider>
-        <DropdownInput
-          placeholder="Company Name"
-          selectedCountry={{
-            icon: FlagsIcons.FlagBrazil,
-            name: 'Brazil',
-            id: 'BR',
-          }}
-        />
-      </ThemeProvider>,
+      <DropdownInput
+        placeholder="Company Name"
+        selectedCountry={{
+          icon: FlagsIcons.FlagBrazil,
+          name: 'Brazil',
+          id: 'BR',
+        }}
+      />,
+      { wrapper: ThemeProvider },
     );
 
     expect(container).toMatchSnapshot();
