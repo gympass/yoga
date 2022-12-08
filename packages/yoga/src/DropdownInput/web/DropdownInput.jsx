@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
-import { theme, Box, Icon } from '@gympass/yoga';
+import { theme, Box, Icon, Text } from '@gympass/yoga';
 import styled, { css } from 'styled-components';
 import { Check, ChevronUp, ChevronDown, Close } from '@gympass/yoga-icons';
 import { useOnClickOutside } from '../../hooks';
@@ -130,10 +130,7 @@ const ItemDropDown = styled.li`
   }
 `;
 
-const NameCountry = styled.div`
-  color: ${props =>
-    props.selectedCountry ? theme.colors.vibin : theme.colors.stamina};
-`;
+const ContainerName = styled.div``;
 
 const DropdownInput = ({
   placeholder,
@@ -171,7 +168,7 @@ const DropdownInput = ({
 
       return (
         <ItemDropDown key={country.id} onClick={changeSelectedCountry(country)}>
-          <NameCountry selectedCountry={isCountrySelected}>
+          <ContainerName>
             <Box>
               <Icon
                 as={country.icon}
@@ -180,8 +177,13 @@ const DropdownInput = ({
                 marginRight={4}
               />
             </Box>
-            {country.name}
-          </NameCountry>
+            <Text.Small
+              fw={isCountrySelected ? 'medium' : 'regular'}
+              color={isCountrySelected ? 'primary' : 'secondary'}
+            >
+              {country.name}
+            </Text.Small>
+          </ContainerName>
           {isCountrySelected && (
             <Icon as={Check} width="medium" height="medium" fill="vibin" />
           )}
