@@ -226,7 +226,7 @@ const DropdownInput = ({
         />
 
         <Clear onClick={onClear} type="button">
-          <Close fill="#d8385e" width={15} height={15} />
+          <Icon as={Close} size="small" fill="medium" />
         </Clear>
       </Container>
 
