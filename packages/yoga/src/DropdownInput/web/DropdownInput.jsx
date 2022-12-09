@@ -88,7 +88,6 @@ const ContainerDropDown = styled.ul`
   list-style: none;
   padding: 0 16px 0 16px;
   transition: all 0.1s ease-in-out;
-  box-shadow: 0px 4px 12px rgba(152, 152, 167, 0.25);
   border-radius: 0px 0px ${theme.radii.small}px ${theme.radii.small}px;
   background: #fff;
   position: absolute;
