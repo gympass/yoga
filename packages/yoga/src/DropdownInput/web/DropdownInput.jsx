@@ -3,6 +3,7 @@ import PropTypes, { bool } from 'prop-types';
 import { theme, Box, Icon, Text } from '@gympass/yoga';
 import styled, { css } from 'styled-components';
 import { Check, ChevronUp, ChevronDown, Close } from '@gympass/yoga-icons';
+import { display, flexes } from '@gympass/yoga-system';
 import { useOnClickOutside } from '../../hooks';
 
 const Wrapper = styled.div`
@@ -20,10 +21,9 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-  display: flex;
+  ${display}
+  ${flexes}
   border-radius: ${theme.radii.small}px;
-  justify-content: flex-start;
-  align-items: center;
   background: #fff;
   border: ${theme.borders.small}px solid #ccc;
   box-sizing: border-box;
@@ -202,7 +202,13 @@ const DropdownInput = ({
 
   return (
     <Wrapper full={full}>
-      <Container ref={containerRef} showDropDown={showDropDown}>
+      <Container
+        d="flex"
+        alignItems="center"
+        justifyContent="flex-start"
+        ref={containerRef}
+        showDropDown={showDropDown}
+      >
         <ButtonDropDown
           id="button-drop-down"
           type="button"
