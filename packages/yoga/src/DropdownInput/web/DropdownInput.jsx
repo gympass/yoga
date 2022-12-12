@@ -52,12 +52,20 @@ const Container = styled.div`
 `;
 
 const Clear = styled.button`
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: none;
-  outline: none;
-  padding: ${theme.spacing.medium}px;
+  ${({
+    theme: {
+      yoga: {
+        components: { dropdowninput },
+      },
+    },
+  }) => `
+    background: ${dropdowninput.clear.background};
+    border: ${dropdowninput.clear.border};
+    cursor: ${dropdowninput.clear.cursor};
+    display: ${dropdowninput.clear.display};
+    outline:  ${dropdowninput.clear.outline};
+    padding: ${dropdowninput.clear.padding}
+  `}
 `;
 
 const Input = styled.input`
@@ -96,21 +104,39 @@ const Divisor = styled.div`
 `;
 
 const ContainerDropDown = styled.ul`
-  margin: 0;
-  height: 272px;
-  width: ${props => `${props.width}px`};
-  overflow-y: scroll;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  list-style: none;
-  padding: 0 16px 0 16px;
-  transition: all 0.1s ease-in-out;
-  border-radius: 0px 0px ${theme.radii.small}px ${theme.radii.small}px;
-  background: #fff;
-  position: absolute;
-  top: ${props => `${props.position}px`};
-  z-index: 9999;
+  ${({
+    theme: {
+      yoga: {
+        components: { dropdowninput },
+      },
+    },
+  }) => `
+    margin: 0;
+    height: 272px;
+    width: ${props => `${props.width}px`};
+    top: ${props => `${props.position}px`};
+    overflow-y: scroll;
+    border-left: ${dropdowninput.containerDropDown.border.width} solid ${
+    dropdowninput.containerDropDown.border.color
+  };
+    border-right: ${dropdowninput.containerDropDown.border.width} solid ${
+    dropdowninput.containerDropDown.border.color
+  };
+    border-bottom: ${dropdowninput.containerDropDown.border.width} solid ${
+    dropdowninput.containerDropDown.border.color
+  };
+    list-style: none;
+    padding: 0 ${dropdowninput.containerDropDown.padding.right}px 0 ${
+    dropdowninput.containerDropDown.padding.left
+  }px;
+    transition: all 0.1s ease-in-out;
+    border-radius: 0 0 ${dropdowninput.containerDropDown.border.radius}px ${
+    dropdowninput.containerDropDown.border.radius
+  }px;
+    background: ${dropdowninput.containerDropDown.background};
+    position: absolute;
+    z-index: 9999;
+  `}
 `;
 
 const ButtonDropDown = styled.button`
@@ -126,23 +152,15 @@ const ButtonDropDown = styled.button`
 `;
 
 const ItemDropDown = styled.li`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-content: center;
+  ${display}
+  ${flexes}
   width: 100%;
   height: 72px;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
 
   div {
     display: flex;
     align-items: center;
-  }
-
-  &:last-child {
-    border: none;
   }
 `;
 
@@ -184,7 +202,14 @@ const DropdownInput = ({
       const isCountrySelected = selectedCountry.id === country.id;
 
       return (
-        <ItemDropDown key={country.id} onClick={changeSelectedCountry(country)}>
+        <ItemDropDown
+          d="flex"
+          alignItems="center"
+          justifyContent="flex-start"
+          alignContent="center"
+          key={country.id}
+          onClick={changeSelectedCountry(country)}
+        >
           <ContainerName>
             <Box>
               <Icon
