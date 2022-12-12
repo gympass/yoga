@@ -1,12 +1,22 @@
 import React, { useRef, useState } from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { bool } from 'prop-types';
 import { theme, Box, Icon, Text } from '@gympass/yoga';
 import styled, { css } from 'styled-components';
 import { Check, ChevronUp, ChevronDown, Close } from '@gympass/yoga-icons';
 import { useOnClickOutside } from '../../hooks';
 
 const Wrapper = styled.div`
-  position: relative;
+  ${({
+    full,
+    theme: {
+      yoga: {
+        components: { dropdowninput },
+      },
+    },
+  }) => `
+    position: relative;
+    width: ${full ? '100%' : `${dropdowninput.width}px`};
+  `}
 `;
 
 const Container = styled.div`
@@ -21,7 +31,6 @@ const Container = styled.div`
   height: 52px;
   margin: ${theme.spacing.xxsmall}px 0 0;
   transition: all 0.1s ease-in-out;
-  width: 320px;
   ${({ showDropDown }) =>
     showDropDown &&
     css`
@@ -131,6 +140,7 @@ const ItemDropDown = styled.li`
 const ContainerName = styled.div``;
 
 const DropdownInput = ({
+  full,
   placeholder,
   onClear,
   value,
@@ -191,7 +201,7 @@ const DropdownInput = ({
   };
 
   return (
-    <Wrapper>
+    <Wrapper full={full}>
       <Container ref={containerRef} showDropDown={showDropDown}>
         <ButtonDropDown
           id="button-drop-down"
@@ -245,6 +255,7 @@ const DropdownInput = ({
 };
 
 DropdownInput.propTypes = {
+  full: bool,
   placeholder: PropTypes.string.isRequired,
   countries: PropTypes.arrayOf(
     PropTypes.shape({
@@ -257,6 +268,10 @@ DropdownInput.propTypes = {
   value: PropTypes.string.isRequired,
   selectedCountry: PropTypes.string.isRequired,
   onChangeSelectedCountry: PropTypes.func.isRequired,
+};
+
+DropdownInput.defaultProps = {
+  full: false,
 };
 
 export default DropdownInput;
