@@ -21,25 +21,34 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-  ${display}
-  ${flexes}
-  border-radius: ${theme.radii.small}px;
-  background: #fff;
-  border: ${theme.borders.small}px solid #ccc;
-  box-sizing: border-box;
-  background: #fff;
-  height: 52px;
-  margin: ${theme.spacing.xxsmall}px 0 0;
-  transition: all 0.1s ease-in-out;
-  ${({ showDropDown }) =>
-    showDropDown &&
-    css`
-      border-top: ${theme.borders.small}px solid #ccc;
-      border-left: ${theme.borders.small}px solid #ccc;
-      border-right: ${theme.borders.small}px solid #ccc;
-      border-radius: ${theme.radii.small}px ${theme.radii.small}px 0px 0px;
-      border-bottom: 0;
-    `}
+  ${({
+    theme: {
+      yoga: {
+        components: { dropdowninput },
+      },
+    },
+  }) => `
+    ${display}
+    ${flexes}
+    height: 52px;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in-out;
+    border-style: solid;
+    border-radius: ${dropdowninput.container.border.radius}px;
+    border-width: ${dropdowninput.container.border.width}px;
+    border-color: ${dropdowninput.container.border.color};
+    background: ${dropdowninput.container.background};
+    margin-top: ${dropdowninput.container.margin.top}px;
+    ${({ showDropDown }) =>
+      showDropDown &&
+      css`
+        border-width: ${dropdowninput.container.border.width}px
+          ${dropdowninput.container.border.width}px 0
+          ${dropdowninput.container.border.width}px;
+        border-radius: ${dropdowninput.container.border.radius}px
+          ${dropdowninput.container.border.radius}px 0 0;
+      `}
+  `}
 `;
 
 const Clear = styled.button`
