@@ -146,6 +146,11 @@ exports[`<Button /> Snapshots buttons rendering as an anchor Link Button with hr
   color: #D8385E;
 }
 
+.c1 svg {
+  margin-right: 4px;
+  fill: #D8385E;
+}
+
 .c1:disabled,
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus,
@@ -158,13 +163,26 @@ exports[`<Button /> Snapshots buttons rendering as an anchor Link Button with hr
   color: rgba(216,56,94,0.5);
 }
 
+.c1:not([disabled]):hover svg {
+  fill: rgba(216,56,94,0.5);
+}
+
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
 }
 
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(216,56,94,0.75);
+}
+
 .c1:disabled {
   color: #6B6B78;
+}
+
+.c1:disabled svg {
+  fill: #6B6B78;
 }
 
 <div>
@@ -757,6 +775,11 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   color: #D8385E;
 }
 
+.c1 svg {
+  margin-right: 4px;
+  fill: #D8385E;
+}
+
 .c1:disabled,
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus,
@@ -769,13 +792,26 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
   color: rgba(216,56,94,0.5);
 }
 
+.c1:not([disabled]):hover svg {
+  fill: rgba(216,56,94,0.5);
+}
+
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
 }
 
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(216,56,94,0.75);
+}
+
 .c1:disabled {
   color: #6B6B78;
+}
+
+.c1:disabled svg {
+  fill: #6B6B78;
 }
 
 <div>
@@ -1633,6 +1669,11 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   color: #D8385E;
 }
 
+.c1 svg {
+  margin-right: 4px;
+  fill: #D8385E;
+}
+
 .c1:disabled,
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus,
@@ -1645,13 +1686,26 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
   color: rgba(216,56,94,0.5);
 }
 
+.c1:not([disabled]):hover svg {
+  fill: rgba(216,56,94,0.5);
+}
+
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
 }
 
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(216,56,94,0.75);
+}
+
 .c1:disabled {
   color: #6B6B78;
+}
+
+.c1:disabled svg {
+  fill: #6B6B78;
 }
 
 <div>
@@ -4758,6 +4812,11 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   color: #D8385E;
 }
 
+.c1 svg {
+  margin-right: 4px;
+  fill: #D8385E;
+}
+
 .c1:disabled,
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus,
@@ -4770,13 +4829,26 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   color: rgba(216,56,94,0.5);
 }
 
+.c1:not([disabled]):hover svg {
+  fill: rgba(216,56,94,0.5);
+}
+
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
 }
 
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(216,56,94,0.75);
+}
+
 .c1:disabled {
   color: #6B6B78;
+}
+
+.c1:disabled svg {
+  fill: #6B6B78;
 }
 
 <div>
@@ -7996,6 +8068,11 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   color: #231B22;
 }
 
+.c1 svg {
+  margin-right: 4px;
+  fill: #231B22;
+}
+
 .c1:disabled,
 .c1:not([disabled]):hover,
 .c1:not([disabled]):focus,
@@ -8008,19 +8085,153 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
   color: rgba(35,27,34,0.5);
 }
 
+.c1:not([disabled]):hover svg {
+  fill: rgba(35,27,34,0.5);
+}
+
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
 .c1:disabled {
   color: #6B6B78;
 }
 
+.c1:disabled svg {
+  fill: #6B6B78;
+}
+
 <div>
   <button
     class="c0 c1"
   >
+    Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with link Button with Icon 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c1 {
+  height: unset;
+  padding: 0;
+  background-color: unset;
+  border: none;
+  border-radius: 0;
+  color: #D8385E;
+}
+
+.c1 svg {
+  margin-right: 4px;
+  fill: #D8385E;
+}
+
+.c1:disabled,
+.c1:not([disabled]):hover,
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  box-shadow: unset;
+  background-color: unset;
+}
+
+.c1:not([disabled]):hover {
+  color: rgba(216,56,94,0.5);
+}
+
+.c1:not([disabled]):hover svg {
+  fill: rgba(216,56,94,0.5);
+}
+
+.c1:not([disabled]):focus,
+.c1:not([disabled]):active {
+  color: rgba(216,56,94,0.75);
+}
+
+.c1:not([disabled]):focus svg,
+.c1:not([disabled]):active svg {
+  fill: rgba(216,56,94,0.75);
+}
+
+.c1:disabled {
+  color: #6B6B78;
+}
+
+.c1:disabled svg {
+  fill: #6B6B78;
+}
+
+<div>
+  <button
+    class="c0 c1"
+  >
+    <svg />
     Button
   </button>
 </div>

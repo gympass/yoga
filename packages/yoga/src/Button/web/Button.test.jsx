@@ -501,6 +501,16 @@ describe('<Button />', () => {
           expect(container).toMatchSnapshot();
         });
 
+        it('should match snapshot with link Button with Icon', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Link icon={Booking} />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
         it('should match snapshot with icon Button', () => {
           const { container } = render(
             <ThemeProvider>
