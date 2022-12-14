@@ -124,6 +124,11 @@ const Button = ({
         top: spacing.small,
         bottom: spacing.xxsmall,
       },
+      icon: {
+        margin: {
+          right: spacing.xxxsmall,
+        },
+      },
     },
   },
 });
