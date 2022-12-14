@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.63.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.62.1...@gympass/yoga@7.63.0) (2022-12-14)
+
+
+### Bug Fixes
+
+* **components:** adjust font-weight title to 500 ([3cbd4d6](https://github.com/Gympass/yoga/commit/3cbd4d651ec16109e193a61c63eff4cb5cc8e31e))
+
+
+### Features
+
+* **link button icon:** add icon prop to link button ([aa9a62e](https://github.com/Gympass/yoga/commit/aa9a62e8218fd7c72d4578b5c09428e7ba5bd0c4))
+
+
+
+
+
 ## [7.62.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.62.0...@gympass/yoga@7.62.1) (2022-12-07)
 
 **Note:** Version bump only for package @gympass/yoga

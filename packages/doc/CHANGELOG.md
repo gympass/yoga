@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.35.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.34.1...@gympass/yoga-doc@2.35.0) (2022-12-14)
+
+
+### Features
+
+* **link button icon:** add icon prop to link button ([aa9a62e](https://github.com/gympass/yoga/commit/aa9a62e8218fd7c72d4578b5c09428e7ba5bd0c4))
+
+
+
+
+
 ## [2.34.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.34.0...@gympass/yoga-doc@2.34.1) (2022-12-07)
 
 **Note:** Version bump only for package @gympass/yoga-doc
