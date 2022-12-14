@@ -1,4 +1,4 @@
-const Accordion = ({ spacing }) => ({
+const Accordion = ({ spacing, fontWeights }) => ({
   padding: {
     standard: spacing.medium,
     large: spacing.large,
@@ -8,6 +8,9 @@ const Accordion = ({ spacing }) => ({
   },
   gap: {
     header: spacing.xxxsmall,
+  },
+  fontWeight: {
+    title: fontWeights.medium,
   },
 });
 

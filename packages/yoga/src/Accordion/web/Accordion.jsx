@@ -98,6 +98,10 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
       return `
       gap: ${subtitle ? accordion.gap.header : 0}px;
       margin: ${subtitle ? 0 : `${accordion.paddingArrow.total}px 0`};
+
+      p {
+        font-weight: ${accordion.fontWeight.title};
+      }
     `;
     }}
 
