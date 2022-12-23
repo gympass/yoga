@@ -1,8 +1,9 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { string, node, elementType } from 'prop-types';
+import { string, node, elementType, bool } from 'prop-types';
 
 import { media } from '@gympass/yoga-helpers';
+import { Container, Row, Col } from '@gympass/yoga';
 
 import Box from '../../Box';
 
@@ -20,31 +21,37 @@ const StyledHeader = styled(Box)`
     height: ${header.height.xxs}px;
 
     ${media.lg`
-      padding: 0 ${header.padding.lg}px;
-      height: ${header.height.lg}px;
+        padding: 0 ${header.padding.lg}px;
+        height: ${header.height.lg}px;
     `}
   `}
 `;
 
-const Header = ({ link, children, logo }) => {
+const Header = ({ link, children, logo, fluid }) => {
   return (
-    <StyledHeader
-      as="header"
-      d="flex"
-      elevation="medium"
-      bgColor="white"
-      alignItems="center"
-      w="100%"
-    >
-      {link ? (
-        <a href={link}>
-          <Logo customLogo={logo} />
-        </a>
-      ) : (
-        <Logo customLogo={logo} />
-      )}
-      {children}
-    </StyledHeader>
+    <Box as="header" elevation="medium" bgColor="white" w="100%">
+      <Container fluid={fluid}>
+        <Row>
+          <Col xs={12}>
+            <StyledHeader
+              d="flex"
+              bgColor="white"
+              alignItems="center"
+              fluid={fluid}
+            >
+              {link ? (
+                <a href={link}>
+                  <Logo customLogo={logo} />
+                </a>
+              ) : (
+                <Logo customLogo={logo} />
+              )}
+              {children}
+            </StyledHeader>
+          </Col>
+        </Row>
+      </Container>
+    </Box>
   );
 };
 
@@ -55,12 +62,15 @@ Header.propTypes = {
   children: node,
   /** Use logo to change headers image */
   logo: elementType,
+  /** Use to fill all container size */
+  fluid: bool,
 };
 
 Header.defaultProps = {
   link: null,
   children: null,
   logo: null,
+  fluid: false,
 };
 
 export default Header;
