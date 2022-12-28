@@ -17,11 +17,19 @@ const StyledHeader = styled(Box)`
       },
     },
   }) => css`
-    padding: 0 ${header.padding.xxs}px;
+    ${({ fluid }) =>
+      fluid &&
+      css`
+        padding: 0 ${header.padding.xxs}px;
+
+        ${media.lg`
+          padding: 0 ${header.padding.lg}px;
+        `}
+      `}
+
     height: ${header.height.xxs}px;
 
     ${media.lg`
-        padding: 0 ${header.padding.lg}px;
         height: ${header.height.lg}px;
     `}
   `}
