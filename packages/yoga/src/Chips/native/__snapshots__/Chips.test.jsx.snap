@@ -37,11 +37,11 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
   }
 >
   <Text
+    fontSize="medium"
     inverted={false}
     light={false}
     numberOfLines={1}
     selected={false}
-    size="medium"
     style={
       Array [
         Object {
@@ -102,11 +102,11 @@ Array [
     }
   >
     <Text
+      fontSize="medium"
       inverted={false}
       light={false}
       numberOfLines={1}
       selected={false}
-      size="medium"
       style={
         Array [
           Object {
@@ -338,11 +338,11 @@ Array [
     }
   >
     <Text
+      fontSize="medium"
       inverted={false}
       light={false}
       numberOfLines={1}
       selected={false}
-      size="medium"
       style={
         Array [
           Object {
@@ -399,11 +399,11 @@ Array [
     }
   >
     <Text
+      fontSize="medium"
       inverted={false}
       light={false}
       numberOfLines={1}
       selected={false}
-      size="medium"
       style={
         Array [
           Object {
@@ -460,11 +460,11 @@ Array [
     }
   >
     <Text
+      fontSize="medium"
       inverted={false}
       light={false}
       numberOfLines={1}
       selected={false}
-      size="medium"
       style={
         Array [
           Object {
@@ -521,11 +521,11 @@ Array [
     }
   >
     <Text
+      fontSize="medium"
       inverted={false}
       light={false}
       numberOfLines={1}
       selected={false}
-      size="medium"
       style={
         Array [
           Object {
@@ -934,11 +934,11 @@ Array [
     }
   >
     <Text
+      fontSize="medium"
       inverted={false}
       light={false}
       numberOfLines={1}
       selected={false}
-      size="medium"
       style={
         Array [
           Object {
@@ -1115,11 +1115,11 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
   }
 >
   <Text
+    fontSize="medium"
     inverted={false}
     light={false}
     numberOfLines={1}
     selected={false}
-    size="medium"
     style={
       Array [
         Object {
@@ -1179,11 +1179,11 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
   }
 >
   <Text
+    fontSize="medium"
     inverted={false}
     light={false}
     numberOfLines={1}
     selected={false}
-    size="medium"
     style={
       Array [
         Object {
@@ -1244,11 +1244,11 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
   }
 >
   <Text
+    fontSize="medium"
     inverted={false}
     light={false}
     numberOfLines={1}
     selected={false}
-    size="medium"
     style={
       Array [
         Object {
@@ -1309,11 +1309,11 @@ Array [
     }
   >
     <Text
+      fontSize="medium"
       inverted={false}
       light={false}
       numberOfLines={1}
       selected={false}
-      size="medium"
       style={
         Array [
           Object {
@@ -1370,11 +1370,11 @@ Array [
     }
   >
     <Text
+      fontSize="medium"
       inverted={false}
       light={false}
       numberOfLines={1}
       selected={false}
-      size="medium"
       style={
         Array [
           Object {
@@ -1431,11 +1431,11 @@ Array [
     }
   >
     <Text
+      fontSize="medium"
       inverted={false}
       light={false}
       numberOfLines={1}
       selected={false}
-      size="medium"
       style={
         Array [
           Object {

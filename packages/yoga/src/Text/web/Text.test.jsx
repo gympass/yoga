@@ -31,9 +31,9 @@ describe('<Text />', () => {
     it('should match snapshot with Text variant', () => {
       const { container } = render(
         <ThemeProvider>
-          <Text.H1 variant="primary">Live the mission</Text.H1>
-          <Text.H2 variant="secondary">Live the mission</Text.H2>
-          <Text.H3 variant="tertiary">Live the mission</Text.H3>
+          <Text.H1 color="primary">Live the mission</Text.H1>
+          <Text.H2 color="secondary">Live the mission</Text.H2>
+          <Text.H3 color="tertiary">Live the mission</Text.H3>
         </ThemeProvider>,
       );
 
@@ -55,10 +55,12 @@ describe('<Text />', () => {
     it('should match snapshot with Text size', () => {
       const { container } = render(
         <ThemeProvider>
-          <Text.Small size="xsmall">Live the small mission</Text.Small>
-          <Text.Tiny size="medium">Live the medium mission</Text.Tiny>
-          <Text.Regular size="xlarge">Live the xlarge mission</Text.Regular>
-          <Text.Medium size="xxxlarge">Live the xxxlarge mission</Text.Medium>
+          <Text.Small fontSize="xsmall">Live the small mission</Text.Small>
+          <Text.Tiny fontSize="medium">Live the medium mission</Text.Tiny>
+          <Text.Regular fontSize="xlarge">Live the xlarge mission</Text.Regular>
+          <Text.Medium fontSize="xxxlarge">
+            Live the xxxlarge mission
+          </Text.Medium>
         </ThemeProvider>,
       );
 

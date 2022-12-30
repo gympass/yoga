@@ -843,8 +843,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
       }
     >
       <Text
+        fontSize="small"
         numberOfLines={1}
-        size="small"
         style={
           Array [
             Object {
