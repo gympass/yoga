@@ -324,7 +324,6 @@ Array [
 exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
 Array [
   <Text
-    color="primary"
     style={
       Array [
         Object {
@@ -336,11 +335,11 @@ Array [
         },
       ]
     }
+    variant="primary"
   >
     Live the mission
   </Text>,
   <Text
-    color="secondary"
     style={
       Array [
         Object {
@@ -352,15 +351,15 @@ Array [
         },
       ]
     }
+    variant="secondary"
   >
     Live the mission
   </Text>,
   <Text
-    color="tertiary"
     style={
       Array [
         Object {
-          "color": "tertiary",
+          "color": undefined,
           "fontFamily": "Rubik",
           "fontSize": 32,
           "fontWeight": "500",
@@ -368,6 +367,7 @@ Array [
         },
       ]
     }
+    variant="tertiary"
   >
     Live the mission
   </Text>,

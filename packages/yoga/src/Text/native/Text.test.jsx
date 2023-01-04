@@ -30,9 +30,9 @@ describe('<Text />', () => {
     it('should match snapshot with Text variant', () => {
       const { toJSON } = render(
         <ThemeProvider>
-          <Text.H1 color="primary">Live the mission</Text.H1>
-          <Text.H2 color="secondary">Live the mission</Text.H2>
-          <Text.H3 color="tertiary">Live the mission</Text.H3>
+          <Text.H1 variant="primary">Live the mission</Text.H1>
+          <Text.H2 variant="secondary">Live the mission</Text.H2>
+          <Text.H3 variant="tertiary">Live the mission</Text.H3>
         </ThemeProvider>,
       );
 
