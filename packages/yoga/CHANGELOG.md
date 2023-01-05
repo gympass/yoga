@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.64.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.63.0...@gympass/yoga@7.64.0) (2023-01-05)
+
+
+### Features
+
+* **accordion:** creating a property to handle expansion by default ([414c7ac](https://github.com/Gympass/yoga/commit/414c7ac0aeb4164f7abb131558de7e412e9803b7))
+
+
+
+
+
 # [7.63.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.62.1...@gympass/yoga@7.63.0) (2022-12-14)
 
 
