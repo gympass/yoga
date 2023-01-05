@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { oneOf, oneOfType, string, bool, number } from 'prop-types';
+import { oneOf, bool, number } from 'prop-types';
 import { system } from '@gympass/yoga-system';
 import textStyle from '../textStyle.web';
 import { deprecated } from '../../shared';
@@ -80,7 +80,7 @@ Text.displayName = 'Text';
 Text.propTypes = {
   inverted: bool,
   numberOfLines: number,
-  fontSize: oneOfType([string, number]),
+
   /** (deprecated: use color instead) style the text following the theme */
   variant: deprecated(
     oneOf([
@@ -103,6 +103,17 @@ Text.propTypes = {
     ]),
     'Use `color` system prop instead',
   ),
+  fontSize: oneOf([
+    'xxsmall',
+    'xsmall',
+    'small',
+    'medium',
+    'large',
+    'xlarge',
+    'xxlarge',
+    'xxxlarge',
+    'huge',
+  ]),
   /** (deprecated: use fontSize instead) style the text following the theme */
   size: deprecated(
     oneOf([
