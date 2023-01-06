@@ -30,7 +30,7 @@ const StyledHeader = styled(Box)`
     height: ${header.height.xxs}px;
 
     ${media.lg`
-        height: ${header.height.lg}px;
+      height: ${header.height.lg}px;
     `}
   `}
 `;
