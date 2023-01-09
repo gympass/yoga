@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 import React, { useState, useRef } from 'react';
 import styled, { withTheme } from 'styled-components';
-import { number, func, shape, bool } from 'prop-types';
+import { number, func, shape, bool, string } from 'prop-types';
 import { StarFilled } from '@gympass/yoga-icons';
 
 import { max as maxPropType } from '../../shared';
@@ -41,6 +41,7 @@ const Rating = ({
     },
   },
   icon: { type: Icon = StarFilled, size: iconSize = rating.icon.size },
+  testId,
   ...rest
 }) => {
   const wrapperRef = useRef(null);
@@ -55,6 +56,7 @@ const Rating = ({
       height={iconSize}
       mouseOver={hover}
       readOnly={readOnly}
+      data-testid={testId}
       {...rest}
       onMouseOver={e => {
         setHover(true);
@@ -151,6 +153,7 @@ Rating.propTypes = {
   onMouseOver: func,
   onMouseMove: func,
   onMouseLeave: func,
+  testId: string,
 };
 
 Rating.defaultProps = {
@@ -165,6 +168,7 @@ Rating.defaultProps = {
   onMouseOver: () => {},
   onMouseMove: () => {},
   onMouseLeave: () => {},
+  testId: undefined,
 };
 
 export default withTheme(Rating);
