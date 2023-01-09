@@ -141,7 +141,7 @@ const Button = styled.button`
     width: 100%;
     padding-right: ${dropdown.button.padding.right}px;
     padding-top: ${dropdown.button.padding.top}px;
-    padding-bottom: ${dropdown.button.padding.top}px;
+    padding-bottom: ${dropdown.button.padding.bottom}px;
 
     border: none;
     outline: none;

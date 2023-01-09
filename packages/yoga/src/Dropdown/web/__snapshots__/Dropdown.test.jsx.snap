@@ -212,6 +212,7 @@ exports[`<Dropdown /> should match snapshot 1`] = `
   width: 100%;
   padding-right: 16px;
   padding-top: 16px;
+  padding-bottom: 16px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -499,6 +500,7 @@ exports[`<Dropdown /> should match snapshot when disabled 1`] = `
   width: 100%;
   padding-right: 16px;
   padding-top: 16px;
+  padding-bottom: 16px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -795,6 +797,7 @@ exports[`<Dropdown /> should match snapshot when full 1`] = `
   width: 100%;
   padding-right: 16px;
   padding-top: 16px;
+  padding-bottom: 16px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -1103,6 +1106,7 @@ exports[`<Dropdown /> should match snapshot when has a selected value 1`] = `
   width: 100%;
   padding-right: 16px;
   padding-top: 16px;
+  padding-bottom: 16px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -1465,6 +1469,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   width: 100%;
   padding-right: 16px;
   padding-top: 16px;
+  padding-bottom: 16px;
   border: none;
   outline: none;
   background-color: transparent;
