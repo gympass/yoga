@@ -187,12 +187,13 @@
       ]
     },
     {
-      "login": "matheushenrique1",
+      "login": "matheushdsbr",
       "name": "Matheus Henrique",
       "avatar_url": "https://avatars.githubusercontent.com/u/32910717?v=4",
-      "profile": "https://github.com/matheushenrique1",
+      "profile": "https://github.com/matheushdsbr",
       "contributions": [
-        "doc"
+        "doc",
+        "code"
       ]
     },
     {
@@ -390,15 +391,6 @@
       "name": "Luis Guilherme Cardoso Rosa",
       "avatar_url": "https://avatars.githubusercontent.com/u/15979107?v=4",
       "profile": "http://guilhermecardoso.dev.br",
-      "contributions": [
-        "code"
-      ]
-    },
-    {
-      "login": "matheushdsbr",
-      "name": "Matheus Henrique",
-      "avatar_url": "https://avatars.githubusercontent.com/u/32910717?v=4",
-      "profile": "https://github.com/matheushdsbr",
       "contributions": [
         "code"
       ]
