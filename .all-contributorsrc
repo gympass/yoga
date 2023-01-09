@@ -394,6 +394,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "RuanRamalho",
+      "name": "Ruan Ramalho",
+      "avatar_url": "https://avatars.githubusercontent.com/u/58890915?v=4",
+      "profile": "https://github.com/RuanRamalho",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -401,5 +410,6 @@
   "projectOwner": "gympass",
   "repoType": "github",
   "repoHost": "https://github.com",
-  "skipCi": true
+  "skipCi": true,
+  "commitConvention": "angular"
 }
