@@ -66,11 +66,18 @@ BannerActionButton.propTypes = {
 
 /** A banner is a component that displays a prominent message. It can have related action buttons on it or not. */
 const Banner = forwardRef((props, ref) => {
-  const { icon, variant, message, primaryButton, secondaryButton, ...rest } =
-    props;
+  const {
+    icon,
+    variant,
+    message,
+    primaryButton,
+    secondaryButton,
+    testId,
+    ...rest
+  } = props;
 
   return (
-    <StyledBanner ref={ref} variant={variant} {...rest}>
+    <StyledBanner ref={ref} variant={variant} data-testid={testId} {...rest}>
       <Box display="flex" flex={1} alignItems="center">
         {icon && (
           <Icon
@@ -133,6 +140,7 @@ Banner.propTypes = {
       componentName,
     );
   },
+  testId: string,
 };
 
 Banner.defaultProps = {
@@ -140,6 +148,7 @@ Banner.defaultProps = {
   variant: 'informative',
   primaryButton: undefined,
   secondaryButton: undefined,
+  testId: undefined,
 };
 
 export default Banner;
