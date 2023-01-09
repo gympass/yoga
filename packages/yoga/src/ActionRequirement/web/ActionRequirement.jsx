@@ -49,7 +49,7 @@ function isChildFromComponent(child, component) {
   return child.type.displayName === component.displayName;
 }
 
-function ActionRequirement(props) {
+function ActionRequirement({ testId, ...props }) {
   const { title, description, children, checkable, illustration, list } = props;
 
   let primaryButton;
@@ -64,7 +64,7 @@ function ActionRequirement(props) {
 
   defineCompoundComponents();
   return (
-    <StyledActionRequirement {...props}>
+    <StyledActionRequirement data-testid={testId} {...props}>
       {illustration && <BoxIllustration>{illustration}</BoxIllustration>}
 
       <Content>
@@ -94,6 +94,7 @@ ActionRequirement.propTypes = {
   checkable: oneOfType([arrayOf(node), node]),
   illustration: oneOfType([arrayOf(node), node]),
   list: oneOfType([arrayOf(node), node]),
+  testId: string,
 };
 
 ActionRequirement.defaultProps = {
@@ -101,6 +102,7 @@ ActionRequirement.defaultProps = {
   checkable: undefined,
   illustration: undefined,
   list: undefined,
+  testId: undefined,
 };
 
 export default ActionRequirement;
