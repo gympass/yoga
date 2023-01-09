@@ -34,7 +34,7 @@ function isChildFromComponent(child, component) {
   return child.type.displayName === component.displayName;
 }
 
-function Feedback({ variant, title, description, children }) {
+function Feedback({ variant, title, description, testId, children }) {
   const iconProps = VARIANT_ICONS[variant];
   let primaryButton;
   let secondaryButton;
@@ -60,7 +60,7 @@ function Feedback({ variant, title, description, children }) {
       alignItems="flex-end"
       bg="white"
     >
-      <Content>
+      <Content data-testid={testId}>
         <Icon
           {...iconProps}
           size={ICON_SIZE}
@@ -87,11 +87,13 @@ Feedback.propTypes = {
   title: string,
   description: string.isRequired,
   children: oneOfType([arrayOf(node), node]),
+  testId: string,
 };
 
 Feedback.defaultProps = {
   title: undefined,
   children: undefined,
+  testId: undefined,
 };
 
 export default Feedback;
