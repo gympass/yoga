@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { string } from 'prop-types';
 import styled from 'styled-components';
 
 const StyledList = styled.ul`
@@ -42,18 +42,28 @@ const StyledList = styled.ul`
 /** Lists are a continuous group of text or images. They are composed of items
 containing primary and supplemental actions, which are represented by icons and
 text. */
-const List = React.forwardRef(({ horizontal, divided, ...rest }, ref) => (
-  <StyledList horizontal={horizontal} divided={divided} ref={ref} {...rest} />
-));
+const List = React.forwardRef(
+  ({ horizontal, divided, testId, ...rest }, ref) => (
+    <StyledList
+      horizontal={horizontal}
+      divided={divided}
+      ref={ref}
+      data-testid={testId}
+      {...rest}
+    />
+  ),
+);
 
 List.propTypes = {
   horizontal: PropTypes.bool,
   divided: PropTypes.bool,
+  testId: string,
 };
 
 List.defaultProps = {
   horizontal: false,
   divided: true,
+  testId: undefined,
 };
 
 List.displayName = 'List';
