@@ -3,7 +3,9 @@
 </p>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-40-orange.svg?style=flat-square)](#contributors)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Github Actions](https://github.com/gympass/yoga/workflows/Yoga%20-%20Gympass%20Design%20System/badge.svg)
@@ -78,7 +80,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://github.com/tjamancio"><img src="https://avatars.githubusercontent.com/u/43884476?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Thiago Amâncio</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=tjamancio" title="Code">💻</a> <a href="#design-tjamancio" title="Design">🎨</a> <a href="https://github.com/gympass/yoga/issues?q=author%3Atjamancio" title="Bug reports">🐛</a></td>
       <td align="center"><a href="https://www.linkedin.com/in/alycecristines/"><img src="https://avatars.githubusercontent.com/u/44280864?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alyce Cristine</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=alycecristines" title="Code">💻</a> <a href="https://github.com/gympass/yoga/commits?author=alycecristines" title="Documentation">📖</a> <a href="https://github.com/gympass/yoga/issues?q=author%3Aalycecristines" title="Bug reports">🐛</a></td>
       <td align="center"><a href="https://github.com/nypacheco"><img src="https://avatars.githubusercontent.com/u/12848917?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nathália Pacheco</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=nypacheco" title="Code">💻</a> <a href="https://github.com/gympass/yoga/commits?author=nypacheco" title="Documentation">📖</a></td>
-      <td align="center"><a href="https://github.com/matheushenrique1"><img src="https://avatars.githubusercontent.com/u/32910717?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Henrique</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=matheushenrique1" title="Documentation">📖</a></td>
+      <td align="center"><a href="https://github.com/matheushdsbr"><img src="https://avatars.githubusercontent.com/u/32910717?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Henrique</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=matheushdsbr" title="Documentation">📖</a> <a href="https://github.com/gympass/yoga/commits?author=matheushdsbr" title="Code">💻</a></td>
       <td align="center"><a href="http://www.linkedin.com/in/dariofelipe"><img src="https://avatars.githubusercontent.com/u/59899974?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Dário Felipe</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=Dario-Felipe" title="Documentation">📖</a></td>
       <td align="center"><a href="https://joaovicdsantos.github.io/"><img src="https://avatars.githubusercontent.com/u/24553367?v=4?s=100" width="100px;" alt=""/><br /><sub><b>João Victor</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=joaovicdsantos" title="Documentation">📖</a></td>
       <td align="center"><a href="http://wendler.dev"><img src="https://avatars.githubusercontent.com/u/6570553?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Wendler Eis</b></sub></a><br /><a href="https://github.com/gympass/yoga/issues?q=author%3AWendlereis" title="Bug reports">🐛</a> <a href="https://github.com/gympass/yoga/commits?author=Wendlereis" title="Code">💻</a></td>
@@ -106,7 +108,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center"><a href="https://github.com/rafaelcoletagympass"><img src="https://avatars.githubusercontent.com/u/100871379?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rafael Pizzaia Coleta</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=rafaelcoletagympass" title="Code">💻</a></td>
       <td align="center"><a href="https://github.com/diegomarcuz"><img src="https://avatars.githubusercontent.com/u/37422384?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Diego Marcuz</b></sub></a><br /><a href="https://github.com/gympass/yoga/issues?q=author%3Adiegomarcuz" title="Bug reports">🐛</a></td>
       <td align="center"><a href="http://guilhermecardoso.dev.br"><img src="https://avatars.githubusercontent.com/u/15979107?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Luis Guilherme Cardoso Rosa</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=lguilhermecardoso" title="Code">💻</a></td>
-      <td align="center"><a href="https://github.com/matheushdsbr"><img src="https://avatars.githubusercontent.com/u/32910717?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matheus Henrique</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=matheushdsbr" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
