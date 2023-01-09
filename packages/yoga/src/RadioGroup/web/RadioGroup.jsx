@@ -24,6 +24,7 @@ const RadioGroup = ({
   full,
   children,
   style,
+  testId,
   ...rest
 }) => (
   <RadioGroupContext.Provider
@@ -35,7 +36,7 @@ const RadioGroup = ({
       ...rest,
     }}
   >
-    <Group full={full} style={style} {...rest}>
+    <Group full={full} style={style} data-testid={testId} {...rest}>
       {children}
     </Group>
   </RadioGroupContext.Provider>
@@ -49,6 +50,7 @@ RadioGroup.propTypes = {
   full: bool,
   children: node,
   style: shape({}),
+  testId: string,
 };
 
 RadioGroup.defaultProps = {
@@ -59,6 +61,7 @@ RadioGroup.defaultProps = {
   full: false,
   children: null,
   style: {},
+  testId: undefined,
 };
 
 export default RadioGroup;
