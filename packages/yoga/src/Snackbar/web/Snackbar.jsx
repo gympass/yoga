@@ -90,7 +90,9 @@ const fadeIn = keyframes`
   }
 `;
 
-const AnimatedSnackbar = styled(StyledSnackbar)`
+const AnimatedSnackbar = styled(StyledSnackbar).attrs(({ testId }) => ({
+  'data-testid': testId,
+}))`
   animation: ${fadeIn} 0.2s ease-in-out;
 `;
 
@@ -111,6 +113,7 @@ const Snackbar = React.forwardRef(
           components: { snackbar },
         },
       },
+      testId,
       ...props
     },
     ref,
@@ -136,6 +139,7 @@ const Snackbar = React.forwardRef(
           aria-label={variant}
           variant={variant}
           ref={ref}
+          testId={testId}
           {...props}
         >
           {!hideIcon && (
@@ -175,30 +179,23 @@ const Snackbar = React.forwardRef(
 Snackbar.propTypes = {
   /** Controls the snackbar visibility. */
   open: bool,
-
   /** The message shown when snackbar is opened. */
   message: string.isRequired,
-
   /** Function to close the snackbar. */
   onClose: func.isRequired,
-
   /** A number in milliseconds to close snackbar automaticaly. */
   duration: number,
-
   /** Label for a custom action. */
   actionLabel: string,
-
   /** Controls the snackbar icon visibility. */
   hideIcon: bool,
-
   /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
   onAction: func,
-
   /** The style variant, it may be "success", "failure" or "info". */
   variant: oneOf(['success', 'failure', 'info']),
-
   /** Hides the close button. */
   hideCloseButton: bool,
+  testId: string,
 };
 
 Snackbar.defaultProps = {
@@ -209,6 +206,7 @@ Snackbar.defaultProps = {
   onAction: undefined,
   variant: 'success',
   hideCloseButton: false,
+  testId: undefined,
 };
 
 export default memo(withTheme(Snackbar));
