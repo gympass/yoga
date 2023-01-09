@@ -182,6 +182,7 @@ function Datepicker({
   error,
   onOpen,
   displayEndDateOnly,
+  testId,
 }) {
   const [open, setOpen] = useState();
   const [startDateLocal, setStartDateLocal] = useState(startDate);
@@ -289,7 +290,7 @@ function Datepicker({
   };
 
   return (
-    <Wrapper fullWidth={fullWidth} tabIndex="0">
+    <Wrapper fullWidth={fullWidth} tabIndex="0" data-testid={testId}>
       <Selector
         open={open === 'true'}
         disabled={disabled}
@@ -348,6 +349,7 @@ Datepicker.propTypes = {
   error: string,
   onOpen: func,
   displayEndDateOnly: bool,
+  testId: string,
 };
 
 Datepicker.defaultProps = {
@@ -366,6 +368,7 @@ Datepicker.defaultProps = {
   error: undefined,
   onOpen: undefined,
   displayEndDateOnly: false,
+  testId: undefined,
 };
 
 export default Datepicker;
