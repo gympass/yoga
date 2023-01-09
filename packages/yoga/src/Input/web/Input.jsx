@@ -86,6 +86,7 @@ const Input = React.forwardRef(
       onClean,
       hideMaxLength,
       rightIcon,
+      testId,
       ...props
     },
     ref,
@@ -103,7 +104,7 @@ const Input = React.forwardRef(
     };
 
     return (
-      <Control full={full}>
+      <Control full={full} data-testid={testId}>
         <Fieldset
           disabled={disabled}
           error={error}
@@ -197,6 +198,7 @@ Input.propTypes = {
   hideMaxLength: bool,
   placeholder: string,
   rightIcon: node,
+  testId: string,
 };
 
 Input.defaultProps = {
@@ -216,6 +218,7 @@ Input.defaultProps = {
   hideMaxLength: false,
   placeholder: undefined,
   rightIcon: undefined,
+  testId: undefined,
 };
 
 export default Input;
