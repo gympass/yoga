@@ -30,7 +30,16 @@ const Content = ({ icon, alt, src, fill, content, stroke }) => {
  */
 const Avatar = forwardRef(
   (
-    { src, alt, fill, stroke, icon = BuildingFilled, children, ...otherProps },
+    {
+      src,
+      alt,
+      fill,
+      stroke,
+      icon = BuildingFilled,
+      children,
+      testId,
+      ...otherProps
+    },
     ref,
   ) => {
     return (
@@ -45,6 +54,7 @@ const Avatar = forwardRef(
         elevation="small"
         overflow="hidden"
         ref={ref}
+        testId={testId}
         {...otherProps}
       >
         <Content
@@ -108,6 +118,7 @@ Avatar.propTypes = {
   },
   fill: string,
   stroke: string,
+  testId: string,
   ...Box.propTypes,
 };
 
@@ -117,6 +128,7 @@ Avatar.defaultProps = {
   icon: undefined,
   fill: 'white',
   stroke: undefined,
+  testId: undefined,
   ...Box.defaultProps,
 };
 Avatar.displayName = 'Avatar';
