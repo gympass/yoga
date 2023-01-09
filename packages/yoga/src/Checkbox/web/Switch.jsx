@@ -1,5 +1,5 @@
 import React from 'react';
-import { bool, func } from 'prop-types';
+import { bool, func, string } from 'prop-types';
 import styled, { css } from 'styled-components';
 
 const SwitchInput = styled.input`
@@ -124,8 +124,13 @@ const SwitchThumb = styled.span`
 `;
 
 /** Switches allow users to turn an individual option on or off. They are usually used to activate or deactivate a specific setting. */
-const CheckboxSwitch = ({ checked, disabled, onChange, ...rest }) => (
-  <SwitchTrack checked={checked} disabled={disabled} {...rest}>
+const CheckboxSwitch = ({ checked, disabled, onChange, testId, ...rest }) => (
+  <SwitchTrack
+    checked={checked}
+    disabled={disabled}
+    data-testid={testId}
+    {...rest}
+  >
     <SwitchInput
       type="checkbox"
       role="switch"
@@ -143,12 +148,14 @@ CheckboxSwitch.propTypes = {
   checked: bool,
   disabled: bool,
   onChange: func,
+  testId: string,
 };
 
 CheckboxSwitch.defaultProps = {
   checked: false,
   disabled: false,
   onChange: () => {},
+  testId: undefined,
 };
 
 CheckboxSwitch.displayName = 'Checkbox.Switch';

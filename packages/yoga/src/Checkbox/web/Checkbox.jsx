@@ -241,6 +241,7 @@ const Checkbox = ({
   className,
   inverted,
   indeterminate,
+  testId,
   theme: {
     yoga: {
       components: { checkbox },
@@ -257,7 +258,12 @@ const Checkbox = ({
   });
 
   return (
-    <CheckboxWrapper style={style} className={className} disabled={disabled}>
+    <CheckboxWrapper
+      style={style}
+      className={className}
+      disabled={disabled}
+      data-testid={testId}
+    >
       <CheckboxStyled
         checked={checked}
         indeterminate={indeterminate}
@@ -315,6 +321,7 @@ Checkbox.propTypes = {
   /** set a style to the checkbox container */
   style: shape({}),
   className: string,
+  testId: string,
 };
 
 Checkbox.defaultProps = {
@@ -328,6 +335,7 @@ Checkbox.defaultProps = {
   error: undefined,
   style: undefined,
   className: undefined,
+  testId: undefined,
 };
 
 Checkbox.displayName = 'Checkbox';
