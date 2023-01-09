@@ -140,11 +140,17 @@ Wrapper.defaultProps = {
  * of quantity. The use of labels numeric or alphabetic can increase the user
  * understanding. */
 const Progress = React.forwardRef(
-  ({ label, max, value, variant, ...props }, ref) => {
+  ({ label, max, value, variant, testId, ...props }, ref) => {
     const isNumber = !/[a-zA-Z]/g.test(label.value);
 
     return (
-      <Wrapper isNumber={isNumber} align={label.placement} ref={ref} {...props}>
+      <Wrapper
+        isNumber={isNumber}
+        align={label.placement}
+        ref={ref}
+        data-testid={testId}
+        {...props}
+      >
         <ProgressBar max={max} value={value} variant={variant} />
         {Object.keys(label).length > 0 && (isNumber || label.value) && (
           <Label>{label.value}</Label>
@@ -193,6 +199,7 @@ Progress.propTypes = {
     'clear',
     'white',
   ]),
+  testId: string,
 };
 
 Progress.defaultProps = {
@@ -203,6 +210,7 @@ Progress.defaultProps = {
   max: 1,
   value: undefined,
   variant: 'verve',
+  testId: undefined,
 };
 
 export default Progress;
