@@ -14,6 +14,7 @@ const Button = forwardRef(
       small,
       secondary,
       icon: Icon,
+      testId,
       ...props
     },
     ref,
@@ -35,6 +36,7 @@ const Button = forwardRef(
         onClick={onClick}
         small={small}
         secondary={secondary}
+        data-testid={testId}
         {...finalProps}
       >
         {Icon && <Icon />}
@@ -55,6 +57,7 @@ Button.propTypes = {
   /** an Icon from yoga-icons package */
   icon: oneOfType([node, func]),
   href: string,
+  testId: string,
 };
 
 Button.defaultProps = {
@@ -67,6 +70,7 @@ Button.defaultProps = {
   secondary: false,
   icon: undefined,
   href: undefined,
+  testId: undefined,
 };
 
 Button.displayName = 'Button';
