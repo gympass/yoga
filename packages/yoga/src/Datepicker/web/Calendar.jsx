@@ -393,7 +393,7 @@ function Calendar({
           height="large"
           onClick={prior}
           fill="primary"
-          data-testid="previous-month-arrow"
+          testId="previous-month-arrow"
         />
         <Text style={{ alignSelf: 'center' }}>
           {new Intl.DateTimeFormat('en-US', {
@@ -408,7 +408,7 @@ function Calendar({
           height="large"
           onClick={next}
           fill="primary"
-          data-testid="next-month-arrow"
+          testId="next-month-arrow"
         />
       </Box>
       <DaysWrapper>

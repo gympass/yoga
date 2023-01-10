@@ -13,6 +13,7 @@ exports[`<Feedback /> should render the icon for attention variant 1`] = `
   fill="#FF874C"
   height="64"
   mb="large"
+  testId="feedback-icon"
   width="64"
 />
 `;
@@ -30,6 +31,7 @@ exports[`<Feedback /> should render the icon for informative variant 1`] = `
   fill="#5340C9"
   height="64"
   mb="large"
+  testId="feedback-icon"
   width="64"
 />
 `;
@@ -47,6 +49,7 @@ exports[`<Feedback /> should render the icon for success variant 1`] = `
   fill="#1D856C"
   height="64"
   mb="large"
+  testId="feedback-icon"
   width="64"
 />
 `;
