@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.64.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.64.1...@gympass/yoga@7.64.2) (2023-01-10)
+
+
+### Bug Fixes
+
+* **chips:** change value line height in chips text ([189e655](https://github.com/Gympass/yoga/commit/189e655f43265df8cef15a1807d501f84a4de358))
+
+
+
+
+
+## [7.64.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.64.0...@gympass/yoga@7.64.1) (2023-01-09)
+
+
+### Bug Fixes
+
+* **dropdown:** fix dropdown button click ([b62a0be](https://github.com/Gympass/yoga/commit/b62a0be9e88f0729c807ce65e0e30d9791de30d4))
+
+
+
+
+
+# [7.64.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.63.0...@gympass/yoga@7.64.0) (2023-01-05)
+
+
+### Features
+
+* **accordion:** creating a property to handle expansion by default ([414c7ac](https://github.com/Gympass/yoga/commit/414c7ac0aeb4164f7abb131558de7e412e9803b7))
+
+
+
+
+
 # [7.63.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.62.1...@gympass/yoga@7.63.0) (2022-12-14)
 
 
