@@ -403,6 +403,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "CaioAugustoR",
+      "name": "Caio Augusto",
+      "avatar_url": "https://avatars.githubusercontent.com/u/120468000?v=4",
+      "profile": "https://github.com/CaioAugustoR",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
