@@ -47,7 +47,6 @@ const TextArea = React.forwardRef(
       style,
       value,
       onChange,
-      testId,
       ...props
     },
     ref,
@@ -68,7 +67,6 @@ const TextArea = React.forwardRef(
         full={full}
         style={style}
         onClick={() => textAreaRef.current.focus()}
-        data-testid={testId}
       >
         <StyledFieldSet
           error={error}
@@ -129,7 +127,6 @@ TextArea.propTypes = {
   style: shape({}),
   value: string,
   onChange: func,
-  testId: string,
 };
 
 TextArea.defaultProps = {
@@ -145,7 +142,6 @@ TextArea.defaultProps = {
   style: undefined,
   value: '',
   onChange: () => {},
-  testId: undefined,
 };
 
 export default TextArea;

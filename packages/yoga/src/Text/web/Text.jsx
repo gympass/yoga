@@ -5,17 +5,14 @@ import { system } from '@gympass/yoga-system';
 import textStyle from '../textStyle.web';
 import { deprecated } from '../../shared';
 
-const styledText = (type, element = false) => {
-  return (element ? styled[type] : styled.p).attrs(({ testId }) => ({
-    'data-testid': testId,
-  }))`
+const styledText = (type, element = false) => (element
+  ? styled[type]
+  : styled.p)`
     margin: 0;
     padding: 0;
-  
     ${textStyle(type)}
     ${system}
-  `;
-};
+`;
 
 const H1 = styledText('h1', true);
 

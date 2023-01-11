@@ -1,14 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import {
-  node,
-  number,
-  arrayOf,
-  bool,
-  func,
-  oneOfType,
-  string,
-} from 'prop-types';
+import { node, number, arrayOf, bool, func, oneOfType } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
 
 import { theme } from '../../Theme';
@@ -127,7 +119,6 @@ const Chips = React.forwardRef(
       disabled,
       onToggle,
       onClick = onToggle,
-      testId,
       theme: {
         yoga: { spacing },
       },
@@ -143,7 +134,6 @@ const Chips = React.forwardRef(
         disabled={disabled}
         onClick={onClick}
         ref={ref}
-        data-testid={testId}
         {...props}
       >
         {SecondIcon && (
@@ -190,7 +180,6 @@ Chips.propTypes = {
   /** click event */
   onToggle: func,
   onClick: func,
-  testId: string,
 };
 
 Chips.defaultProps = {
@@ -201,7 +190,6 @@ Chips.defaultProps = {
   icons: [],
   onToggle: undefined,
   onClick: undefined,
-  testId: undefined,
 };
 
 export default withTheme(Chips);

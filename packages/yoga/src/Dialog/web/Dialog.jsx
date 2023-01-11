@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import styled from 'styled-components';
-import { func, bool, node, string } from 'prop-types';
+import { func, bool, node } from 'prop-types';
 
 import { Close } from '@gympass/yoga-icons';
 import { usePortal } from '../../hooks';
@@ -52,14 +52,7 @@ const Overlay = styled.div`
   `}
 `;
 
-const Dialog = ({
-  isOpen,
-  hideCloseButton,
-  children,
-  onClose,
-  testId,
-  ...props
-}) => {
+const Dialog = ({ isOpen, hideCloseButton, children, onClose, ...props }) => {
   const dialogRef = useRef(null);
   const dialogElement = usePortal('dialog');
   const isCloseButtonVisible = onClose && !hideCloseButton;
@@ -93,7 +86,7 @@ const Dialog = ({
   return isOpen ? (
     createPortal(
       <Overlay onClick={closeDialog} onClose={onClose} ref={dialogRef}>
-        <StyledDialog onClose={onClose} data-testid={testId} {...props}>
+        <StyledDialog onClose={onClose} {...props}>
           {isCloseButtonVisible && (
             <Box d="flex" justifyContent="flex-end" w="100%">
               <Button.Icon icon={Close} inverted onClick={onClose} />
@@ -117,14 +110,12 @@ Dialog.propTypes = {
   /** Function to close the dialog. */
   onClose: func,
   children: node.isRequired,
-  testId: string,
 };
 
 Dialog.defaultProps = {
   isOpen: false,
   hideCloseButton: false,
   onClose: undefined,
-  testId: undefined,
 };
 
 Dialog.displayName = 'Dialog';

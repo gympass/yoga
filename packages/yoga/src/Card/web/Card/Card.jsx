@@ -59,8 +59,8 @@ const Ribbon = styled(Text.Tiny)`
   `}
 `;
 
-const Card = React.forwardRef(({ ribbon, testId, children, ...rest }, ref) => (
-  <CardStyled ref={ref} data-testid={testId} {...rest}>
+const Card = React.forwardRef(({ ribbon, children, ...rest }, ref) => (
+  <CardStyled ref={ref} {...rest}>
     {Object.keys(ribbon).length > 0 && (
       <Ribbon variant={ribbon.variant} as="span">
         {ribbon.text}
@@ -99,13 +99,11 @@ Card.propTypes = {
     ]),
   }),
   children: node,
-  testId: string,
 };
 
 Card.defaultProps = {
   ribbon: {},
   children: null,
-  testId: undefined,
 };
 
 Card.displayName = 'Card';

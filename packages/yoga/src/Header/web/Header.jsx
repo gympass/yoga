@@ -8,9 +8,7 @@ import Box from '../../Box';
 
 import Logo from './Logo';
 
-const StyledHeader = styled(Box).attrs(({ testId }) => ({
-  'data-testid': testId,
-}))`
+const StyledHeader = styled(Box)`
   ${({
     theme: {
       yoga: {
@@ -28,7 +26,7 @@ const StyledHeader = styled(Box).attrs(({ testId }) => ({
   `}
 `;
 
-const Header = ({ link, testId, logo, children }) => {
+const Header = ({ link, logo, children, ...props }) => {
   return (
     <StyledHeader
       as="header"
@@ -37,7 +35,7 @@ const Header = ({ link, testId, logo, children }) => {
       bgColor="white"
       alignItems="center"
       w="100%"
-      testId={testId}
+      {...props}
     >
       {link ? (
         <a href={link}>
@@ -58,14 +56,12 @@ Header.propTypes = {
   children: node,
   /** Use logo to change headers image */
   logo: elementType,
-  testId: string,
 };
 
 Header.defaultProps = {
   link: null,
   children: null,
   logo: null,
-  testId: undefined,
 };
 
 export default Header;

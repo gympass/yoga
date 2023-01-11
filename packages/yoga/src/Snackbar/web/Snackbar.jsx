@@ -90,9 +90,7 @@ const fadeIn = keyframes`
   }
 `;
 
-const AnimatedSnackbar = styled(StyledSnackbar).attrs(({ testId }) => ({
-  'data-testid': testId,
-}))`
+const AnimatedSnackbar = styled(StyledSnackbar)`
   animation: ${fadeIn} 0.2s ease-in-out;
 `;
 
@@ -113,7 +111,6 @@ const Snackbar = React.forwardRef(
           components: { snackbar },
         },
       },
-      testId,
       ...props
     },
     ref,
@@ -139,7 +136,6 @@ const Snackbar = React.forwardRef(
           aria-label={variant}
           variant={variant}
           ref={ref}
-          testId={testId}
           {...props}
         >
           {!hideIcon && (
@@ -195,7 +191,6 @@ Snackbar.propTypes = {
   variant: oneOf(['success', 'failure', 'info']),
   /** Hides the close button. */
   hideCloseButton: bool,
-  testId: string,
 };
 
 Snackbar.defaultProps = {
@@ -206,7 +201,6 @@ Snackbar.defaultProps = {
   onAction: undefined,
   variant: 'success',
   hideCloseButton: false,
-  testId: undefined,
 };
 
 export default memo(withTheme(Snackbar));

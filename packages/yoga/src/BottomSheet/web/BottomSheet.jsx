@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { node, string } from 'prop-types';
+import { node } from 'prop-types';
 import Dialog from '../../Dialog';
 
-const StyledBottomSheet = styled(Dialog).attrs(({ testId }) => ({
-  'data-testid': testId,
-}))`
+const StyledBottomSheet = styled(Dialog)`
   ${({
     theme: {
       yoga: {
@@ -35,11 +33,6 @@ const BottomSheet = props => <StyledBottomSheet hideCloseButton {...props} />;
 
 BottomSheet.propTypes = {
   children: node.isRequired,
-  testId: string,
-};
-
-BottomSheet.defaultProps = {
-  testId: undefined,
 };
 
 export default BottomSheet;

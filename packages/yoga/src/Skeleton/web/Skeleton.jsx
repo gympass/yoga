@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { checkPropTypes, oneOf, string } from 'prop-types';
+import { checkPropTypes, oneOf } from 'prop-types';
 import styled, { css } from 'styled-components';
 
 import { margins, widths, heights } from '@gympass/yoga-system';
@@ -52,8 +52,8 @@ const StyledSkeleton = styled.div`
   `}
 `;
 
-function Skeleton({ testId, ...props }) {
-  return <StyledSkeleton data-testid={testId} {...props} />;
+function Skeleton(props) {
+  return <StyledSkeleton {...props} />;
 }
 
 Skeleton.propTypes = {
@@ -102,13 +102,11 @@ Skeleton.propTypes = {
    * Determine if the animation will 'pulse' or false;
    */
   animation: oneOf(['pulse', false]),
-  testId: string,
 };
 
 Skeleton.defaultProps = {
   variant: undefined,
   animation: 'pulse',
-  testId: undefined,
 };
 
 export default Skeleton;

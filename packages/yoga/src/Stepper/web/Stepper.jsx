@@ -1,4 +1,3 @@
-import { string } from 'prop-types';
 import React from 'react';
 import styled, { css } from 'styled-components';
 
@@ -32,8 +31,8 @@ const LineWrapper = styled.div`
 
 /** Stepper is responsible for the logic that drives a stepped workflow, it
 provides a wizard-like workflow by dividing content into logical steps. */
-const Stepper = ({ children, activeStep, testId, ...rest }) => (
-  <Root data-testid={testId} {...rest}>
+const Stepper = ({ children, activeStep, ...rest }) => (
+  <Root {...rest}>
     <LineWrapper>
       <Line
         width={
@@ -59,13 +58,11 @@ Stepper.propTypes = {
   /** Controls the active step, it receive the index value for showing some
    * step. Starting from 0. */
   activeStep: limitChildren,
-  testId: string,
 };
 
 Stepper.defaultProps = {
   children: undefined,
   activeStep: 0,
-  testId: undefined,
 };
 
 export default Stepper;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { node, string } from 'prop-types';
+import { node } from 'prop-types';
 import Dialog from '../../Dialog';
 
 const StyledDrawer = styled(Dialog)`
@@ -30,17 +30,12 @@ const StyledDrawer = styled(Dialog)`
   }
 `;
 
-function Drawer({ testId, ...props }) {
-  return <StyledDrawer data-testid={testId} {...props} />;
+function Drawer(props) {
+  return <StyledDrawer {...props} />;
 }
 
 Drawer.propTypes = {
   children: node.isRequired,
-  testId: string,
-};
-
-Drawer.defaultProps = {
-  testId: undefined,
 };
 
 export default Drawer;

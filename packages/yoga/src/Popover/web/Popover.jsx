@@ -11,7 +11,6 @@ function Popover({
   position,
   width,
   height,
-  testId,
   ...props
 }) {
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);
@@ -25,7 +24,7 @@ function Popover({
   }
 
   return (
-    <Wrapper data-testid={testId} {...props}>
+    <Wrapper {...props}>
       {isPopoverOpen && (
         <PopoverContainer
           position={position}
@@ -72,7 +71,6 @@ Popover.propTypes = {
   ]),
   width: number,
   height: number,
-  testId: string,
 };
 
 Popover.defaultProps = {
@@ -80,7 +78,6 @@ Popover.defaultProps = {
   position: 'bottom-center',
   width: 265,
   height: 116,
-  testId: undefined,
 };
 
 export default Popover;
