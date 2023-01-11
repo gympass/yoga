@@ -102,18 +102,21 @@ Text.propTypes = {
     ]),
     'Use `color` system prop instead',
   ),
-  /** set the font-size following the theme */
-  size: oneOf([
-    'xxsmall',
-    'xsmall',
-    'small',
-    'medium',
-    'large',
-    'xlarge',
-    'xxlarge',
-    'xxxlarge',
-    'huge',
-  ]),
+  /** (deprecated: use fontSize instead) style the text following the theme */
+  size: deprecated(
+    oneOf([
+      'xxsmall',
+      'xsmall',
+      'small',
+      'medium',
+      'large',
+      'xlarge',
+      'xxlarge',
+      'xxxlarge',
+      'huge',
+    ]),
+    'Use `fontSize` system prop instead',
+  ),
   /** set the font-weight to regular */
   light: bool,
 };
