@@ -65,7 +65,7 @@ function Feedback({ variant, title, description, children, ...props }) {
           {...iconProps}
           size={ICON_SIZE}
           mb="large"
-          testId="feedback-icon"
+          data-testid="feedback-icon"
         />
         <TextContainer>
           {titleElement}

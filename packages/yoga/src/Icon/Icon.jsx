@@ -20,12 +20,10 @@ const Icon = ({
   fill,
   stroke,
   theme,
-  testId,
   ...props
 }) => (
   <Box
     as={Component}
-    testId={testId}
     width={get(theme.yoga.spacing, width, width)}
     height={get(theme.yoga.spacing, height, height)}
     {...(fill && { fill: get(theme.yoga.colors, fill, fill) })}
@@ -85,7 +83,6 @@ Icon.propTypes = {
 
     return null;
   },
-  testId: string,
 };
 
 Icon.defaultProps = {
@@ -94,7 +91,6 @@ Icon.defaultProps = {
   width: undefined,
   height: undefined,
   size: undefined,
-  testId: undefined,
 };
 
 export default withTheme(Icon);
