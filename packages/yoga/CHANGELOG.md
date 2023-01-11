@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.64.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.64.2...@gympass/yoga@7.64.3) (2023-01-11)
+
+
+### Reverts
+
+* files with master ([e98cd76](https://github.com/Gympass/yoga/commit/e98cd76a74a1ec841af23b6816da10dc75f805be))
+* **text:** revert prop color changes with master ([fc471d2](https://github.com/Gympass/yoga/commit/fc471d2ea319cbca9a9449399427d81a7002d987))
+
+
+
+
+
 ## [7.64.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.64.1...@gympass/yoga@7.64.2) (2023-01-10)
 
 
