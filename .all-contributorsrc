@@ -412,6 +412,16 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "oharaju",
+      "name": "Júlia Ohara",
+      "avatar_url": "https://avatars.githubusercontent.com/u/93061504?v=4",
+      "profile": "https://www.linkedin.com/in/juliaoharabr/",
+      "contributions": [
+        "bug",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
