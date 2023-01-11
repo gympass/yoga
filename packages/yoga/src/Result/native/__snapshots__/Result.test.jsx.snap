@@ -499,7 +499,7 @@ exports[`<Result /> should match snapshot 1`] = `
           />
         </RNSVGSvgView>
         <Text
-          fontSize="xsmall"
+          size="xsmall"
           style={
             Array [
               Object {
@@ -1972,7 +1972,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
           />
         </RNSVGSvgView>
         <Text
-          fontSize="xsmall"
+          size="xsmall"
           style={
             Array [
               Object {

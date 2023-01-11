@@ -23,9 +23,9 @@ exports[`<Box /> should match snapshot 1`] = `
   }
 >
   <Text
-    fontSize="medium"
     inverted={false}
     light={false}
+    size="medium"
     style={
       Array [
         Object {

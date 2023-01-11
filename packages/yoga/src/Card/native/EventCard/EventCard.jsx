@@ -131,7 +131,7 @@ const FullCard = withTheme(
         <Text.Tiny inverted>{String(dayOfWeek).toUpperCase()}</Text.Tiny>
       </DateInfo>
       <EventInfo p="small" pl="xsmall">
-        <Name numberOfLines={1} fontSize="small">
+        <Name numberOfLines={1} size="small">
           {event.name}
         </Name>
         <Place variant="deep" numberOfLines={1}>

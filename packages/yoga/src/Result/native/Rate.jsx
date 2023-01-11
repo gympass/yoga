@@ -31,7 +31,7 @@ const RateValue = styled(Text.Medium)`
 const Rate = ({ rate }) => (
   <Content>
     <Icon as={StarFilled} fill="deep" width="xsmall" height="xsmall" />
-    <RateValue variant="deep" fontSize="xsmall">
+    <RateValue variant="deep" size="xsmall">
       {rate}
     </RateValue>
   </Content>

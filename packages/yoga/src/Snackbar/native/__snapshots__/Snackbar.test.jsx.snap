@@ -200,6 +200,7 @@ Array [
           light={false}
           marginVertical="xxxsmall"
           numberOfLines={2}
+          size="medium"
           style={
             Array [
               Object {
@@ -406,6 +407,7 @@ Array [
           light={false}
           marginVertical="xxxsmall"
           numberOfLines={2}
+          size="medium"
           style={
             Array [
               Object {
@@ -631,6 +633,7 @@ Array [
           light={false}
           marginVertical="xxxsmall"
           numberOfLines={2}
+          size="medium"
           style={
             Array [
               Object {
@@ -837,6 +840,7 @@ Array [
           light={false}
           marginVertical="xxxsmall"
           numberOfLines={2}
+          size="medium"
           style={
             Array [
               Object {

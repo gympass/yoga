@@ -102,7 +102,6 @@ exports[`<Accordion /> should match snapshot 1`] = `
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
-  font-size: 16px;
 }
 
 .c9 {
@@ -231,7 +230,6 @@ exports[`<Accordion /> should match snapshot 1`] = `
         >
           <p
             class="c3"
-            font-size="medium"
           >
             Title
           </p>
@@ -257,7 +255,6 @@ exports[`<Accordion /> should match snapshot 1`] = `
         >
           <p
             class="c3"
-            font-size="medium"
           >
             Content
           </p>

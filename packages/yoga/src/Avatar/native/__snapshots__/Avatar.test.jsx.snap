@@ -34,9 +34,9 @@ exports[`<Avatar /> should match snapshot in avatar with children prop 1`] = `
   width={48}
 >
   <Text
-    fontSize="medium"
     inverted={false}
     light={false}
+    size="medium"
     style={
       Array [
         Object {

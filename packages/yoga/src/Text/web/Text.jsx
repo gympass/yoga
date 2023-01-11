@@ -80,7 +80,6 @@ Text.displayName = 'Text';
 Text.propTypes = {
   inverted: bool,
   numberOfLines: number,
-
   /** (deprecated: use color instead) style the text following the theme */
   variant: deprecated(
     oneOf([
@@ -103,17 +102,6 @@ Text.propTypes = {
     ]),
     'Use `color` system prop instead',
   ),
-  fontSize: oneOf([
-    'xxsmall',
-    'xsmall',
-    'small',
-    'medium',
-    'large',
-    'xlarge',
-    'xxlarge',
-    'xxxlarge',
-    'huge',
-  ]),
   /** (deprecated: use fontSize instead) style the text following the theme */
   size: deprecated(
     oneOf([
@@ -136,8 +124,7 @@ Text.propTypes = {
 Text.defaultProps = {
   inverted: false,
   variant: undefined,
-  size: undefined,
-  fontSize: 'medium',
+  size: 'medium',
   numberOfLines: undefined,
   light: false,
 };

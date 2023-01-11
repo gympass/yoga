@@ -40,7 +40,6 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
-  font-size: 16px;
 }
 
 .c0 {
@@ -176,7 +175,6 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
     >
       <h3
         class="c8 c9"
-        font-size="medium"
         title="Yoga Class"
       >
         Yoga Class

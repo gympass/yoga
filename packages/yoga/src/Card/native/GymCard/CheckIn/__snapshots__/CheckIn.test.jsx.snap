@@ -490,10 +490,10 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
       }
     >
       <Text
-        fontSize="medium"
         inverted={false}
         light={false}
         numberOfLines={2}
+        size="medium"
         style={
           Array [
             Object {
@@ -1096,10 +1096,10 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
       }
     >
       <Text
-        fontSize="medium"
         inverted={false}
         light={false}
         numberOfLines={2}
+        size="medium"
         style={
           Array [
             Object {
