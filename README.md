@@ -3,7 +3,7 @@
 </p>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-41-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-42-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Github Actions](https://github.com/gympass/yoga/workflows/Yoga%20-%20Gympass%20Design%20System/badge.svg)
@@ -108,6 +108,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="http://guilhermecardoso.dev.br"><img src="https://avatars.githubusercontent.com/u/15979107?v=4?s=100" width="100px;" alt="Luis Guilherme Cardoso Rosa"/><br /><sub><b>Luis Guilherme Cardoso Rosa</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=lguilhermecardoso" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/RuanRamalho"><img src="https://avatars.githubusercontent.com/u/58890915?v=4?s=100" width="100px;" alt="Ruan Ramalho"/><br /><sub><b>Ruan Ramalho</b></sub></a><br /><a href="https://github.com/gympass/yoga/issues?q=author%3ARuanRamalho" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/CaioAugustoR"><img src="https://avatars.githubusercontent.com/u/120468000?v=4?s=100" width="100px;" alt="Caio Augusto"/><br /><sub><b>Caio Augusto</b></sub></a><br /><a href="https://github.com/gympass/yoga/issues?q=author%3ACaioAugustoR" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.linkedin.com/in/juliaoharabr/"><img src="https://avatars.githubusercontent.com/u/93061504?v=4?s=100" width="100px;" alt="Júlia Ohara"/><br /><sub><b>Júlia Ohara</b></sub></a><br /><a href="https://github.com/gympass/yoga/issues?q=author%3Aoharaju" title="Bug reports">🐛</a> <a href="https://github.com/gympass/yoga/commits?author=oharaju" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
