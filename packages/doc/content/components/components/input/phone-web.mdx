@@ -1,0 +1,24 @@
+### Usage
+
+```javascript state
+render(() => {
+  const [value, setValue] = useState('');
+
+  return (
+    <Input.Phone
+      defaultCountry='br'
+      label="Mobile number"
+      value={value}
+      onChange={(value = '') => {
+        const newValue = value.length > 0 ? `+${value}` : '';
+        setValue(newValue);
+      }}
+      helper={'This is an helper text'}
+    />
+  );
+});
+```
+
+### Props
+
+<PropsTable component="Input" platform="web" />
