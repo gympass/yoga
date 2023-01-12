@@ -18,7 +18,10 @@ export const TextContainer = styled.div`
     },
   }) =>
     css`
-      max-width: ${feedback.text.maxWidth}px;
+      max-width: 100%;
+      @media (min-width: 769px) {
+        max-width: ${feedback.text.maxWidth}px;
+      }
     `}}
 `;
 
