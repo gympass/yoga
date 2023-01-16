@@ -26,7 +26,7 @@ const StyledHeader = styled(Box)`
   `}
 `;
 
-const Header = ({ link, children, logo }) => {
+const Header = ({ link, logo, children, ...props }) => {
   return (
     <StyledHeader
       as="header"
@@ -35,6 +35,7 @@ const Header = ({ link, children, logo }) => {
       bgColor="white"
       alignItems="center"
       w="100%"
+      {...props}
     >
       {link ? (
         <a href={link}>

@@ -6,7 +6,7 @@ import Title from './Title';
 import BackButton from './BackButton';
 import RightButton from './RightButton';
 
-const Heading = ({ children, noPadding }) => {
+const Heading = ({ children, noPadding, ...props }) => {
   let backButton = null;
   let title = null;
   const rightButtons = [];
@@ -27,7 +27,7 @@ const Heading = ({ children, noPadding }) => {
   }
 
   return (
-    <StyledHeading noPadding={noPadding}>
+    <StyledHeading noPadding={noPadding} {...props}>
       {backButton || <Button />}
       {title || <Box w="100%" />}
       <Box display="flex" justify-content="space-between" alignItems="center">
@@ -45,6 +45,9 @@ Heading.propTypes = {
   noPadding: bool,
 };
 
-Heading.defaultProps = { children: undefined, noPadding: false };
+Heading.defaultProps = {
+  children: undefined,
+  noPadding: false,
+};
 
 export default Heading;

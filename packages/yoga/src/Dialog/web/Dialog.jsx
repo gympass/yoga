@@ -105,13 +105,10 @@ const Dialog = ({ isOpen, hideCloseButton, children, onClose, ...props }) => {
 Dialog.propTypes = {
   /** Control the dialog visibility. */
   isOpen: bool,
-
   /** Hide the close button when onClose prop is defined. */
   hideCloseButton: bool,
-
   /** Function to close the dialog. */
   onClose: func,
-
   children: node.isRequired,
 };
 

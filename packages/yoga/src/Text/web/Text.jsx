@@ -8,11 +8,10 @@ import { deprecated } from '../../shared';
 const styledText = (type, element = false) => (element
   ? styled[type]
   : styled.p)`
-  margin: 0;
-  padding: 0;
-
-  ${textStyle(type)}
-  ${system}
+    margin: 0;
+    padding: 0;
+    ${textStyle(type)}
+    ${system}
 `;
 
 const H1 = styledText('h1', true);

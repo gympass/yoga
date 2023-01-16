@@ -182,6 +182,7 @@ function Datepicker({
   error,
   onOpen,
   displayEndDateOnly,
+  ...props
 }) {
   const [open, setOpen] = useState();
   const [startDateLocal, setStartDateLocal] = useState(startDate);
@@ -289,7 +290,7 @@ function Datepicker({
   };
 
   return (
-    <Wrapper fullWidth={fullWidth} tabIndex="0">
+    <Wrapper fullWidth={fullWidth} tabIndex="0" {...props}>
       <Selector
         open={open === 'true'}
         disabled={disabled}

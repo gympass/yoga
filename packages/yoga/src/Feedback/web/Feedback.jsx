@@ -34,7 +34,7 @@ function isChildFromComponent(child, component) {
   return child.type.displayName === component.displayName;
 }
 
-function Feedback({ variant, title, description, children }) {
+function Feedback({ variant, title, description, children, ...props }) {
   const iconProps = VARIANT_ICONS[variant];
   let primaryButton;
   let secondaryButton;
@@ -60,7 +60,7 @@ function Feedback({ variant, title, description, children }) {
       alignItems="flex-end"
       bg="white"
     >
-      <Content>
+      <Content {...props}>
         <Icon
           {...iconProps}
           size={ICON_SIZE}
