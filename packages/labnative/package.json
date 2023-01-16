@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-labnative",
-  "version": "2.2.31",
+  "version": "2.2.32",
   "private": true,
   "scripts": {
     "start": "react-native start",
@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@gympass/yoga": "^7.64.3",
+    "@gympass/yoga": "^7.64.4",
     "@react-native-masked-view/masked-view": "^0.2.6",
     "@react-native-picker/picker": "^1.16.6",
     "@react-navigation/drawer": "^6.4.1",
