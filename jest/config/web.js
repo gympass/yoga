@@ -8,6 +8,7 @@ module.exports = {
   displayName: 'web',
   moduleNameMapper: {
     '\\.svg$': '<rootDir>/jest/mock/svg.js',
+    '\\.css$': '<rootDir>/jest/mock/file.js',
   },
   rootDir: '../../',
 };
