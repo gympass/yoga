@@ -38,7 +38,7 @@ const Overlay = styled.div`
     },
   }) => `
   display: flex;
-  z-index: 3;
+  z-index: 9;
   justify-content: center;
   align-items: center;
 
