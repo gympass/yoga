@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.66.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.65.0...@gympass/yoga@7.66.0) (2023-01-17)
+
+
+### Features
+
+* add PhoneInput component ([6a1cedc](https://github.com/Gympass/yoga/commit/6a1cedcb99a7011d14913330ff8bda396ba96104))
+* add useCombinedRefs hook ([50a8824](https://github.com/Gympass/yoga/commit/50a88247697ddcfd00bc7bd58fe6104ed74e4e5f))
+* include children prop on input ([cef33aa](https://github.com/Gympass/yoga/commit/cef33aae8aa8c128d0ea50974a87b33e88f99238))
+
+
+
+
+
 # [7.65.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.64.4...@gympass/yoga@7.65.0) (2023-01-16)
 
 
