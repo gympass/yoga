@@ -121,7 +121,7 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  z-index: 3;
+  z-index: 9;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
