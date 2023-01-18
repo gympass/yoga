@@ -4433,6 +4433,14 @@
     expect "^29.0.0"
     pretty-format "^29.0.0"
 
+"@types/jest@^29.2.5":
+  version "29.2.5"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.2.5.tgz#c27f41a9d6253f288d1910d3c5f09484a56b73c0"
+  integrity sha512-H2cSxkKgVmqNHXP7TC2L/WUorrZu8ZigyRywfVzv6EyBlxj39n4C00hjXYQWsbwqgElaj/CiAeSRmk5GoaKTgw==
+  dependencies:
+    expect "^29.0.0"
+    pretty-format "^29.0.0"
+
 "@types/json-buffer@~3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/json-buffer/-/json-buffer-3.0.0.tgz#85c1ff0f0948fc159810d4b5be35bf8c20875f64"
@@ -4522,6 +4530,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.17.tgz#5c009e1d9c38f4a2a9d45c0b0c493fe6cdb4bcb5"
   integrity sha512-HJSUJmni4BeDHhfzn6nF0sVmd1SMezP7/4F0Lq+aXzmp2xm9O7WXrUtHW/CHlYVtZUbByEvWidHqRtcJXGF2Ng==
 
+"@types/node@^18.11.18":
+  version "18.11.18"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.18.tgz#8dfb97f0da23c2293e554c5a50d61ef134d7697f"
+  integrity sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==
+
 "@types/node@^8.5.7":
   version "8.10.66"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.10.66.tgz#dd035d409df322acc83dff62a602f12a5783bbb3"
@@ -4570,6 +4583,13 @@
   integrity sha512-VjnqEmqGnasQKV0CWLevqMTXBYG9GbwuE6x3VetERLh0cq2LTptFE73MrQi2S7GkKXCf2GgwItB/melLnxfnsg==
   dependencies:
     "@types/react" "^17"
+
+"@types/react-dom@^18.0.10":
+  version "18.0.10"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.0.10.tgz#3b66dec56aa0f16a6cc26da9e9ca96c35c0b4352"
+  integrity sha512-E42GW/JA4Qv15wQdqJq8DL4JhNpB3prJgjgapN3qJT9K2zO5IIAQh4VXvCEDupoqAwnz0cY4RlXeC/ajX5SFHg==
+  dependencies:
+    "@types/react" "*"
 
 "@types/react-dom@^18.0.9":
   version "18.0.9"
