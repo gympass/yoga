@@ -25,7 +25,20 @@
  * @type {FontSize}
  * @default
  */
-const fontSizes = [10, 12, 14, 16, 20, 24, 32, 40, 48];
+
+interface fontSizesProps extends Array<number> {
+  xxsmall?: number;
+  xsmall?: number;
+  small?: number;
+  medium?: number,
+  large?: number,
+  xlarge?: number,
+  xxlarge?: number,
+  xxxlarge?: number,
+  huge?: number,
+}
+
+const fontSizes: fontSizesProps = [10, 12, 14, 16, 20, 24, 32, 40, 48];
 
 [
   fontSizes.xxsmall,
