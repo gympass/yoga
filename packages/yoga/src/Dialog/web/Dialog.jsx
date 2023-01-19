@@ -53,14 +53,14 @@ const Overlay = styled.div`
   `}
 `;
 
-const Dialog = ({
+function Dialog({
   isOpen,
   hideCloseButton,
   children,
   onClose,
   zIndex,
   ...props
-}) => {
+}) {
   const dialogRef = useRef(null);
   const dialogElement = usePortal('dialog');
   const isCloseButtonVisible = onClose && !hideCloseButton;
@@ -113,7 +113,7 @@ const Dialog = ({
   ) : (
     <></>
   );
-};
+}
 
 Dialog.propTypes = {
   /** Control the dialog visibility. */
