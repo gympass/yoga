@@ -1,14 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Feedback /> should render correctly when not centered vertically 1`] = `
+.c2 {
+  margin-bottom: 24px;
+  width: 64px;
+  height: 64px;
+}
+
 .c0 {
   background-color: #FFFFFF;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
   width: 100%;
-  min-height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,12 +18,6 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
   -webkit-box-align: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
-}
-
-.c2 {
-  margin-bottom: 24px;
-  width: 64px;
-  height: 64px;
 }
 
 .c5 {

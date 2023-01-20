@@ -48,7 +48,7 @@ describe('<Feedback />', () => {
         variant="success"
         title={title}
         description={description}
-        centered={false}
+        center={false}
       />,
     );
 
