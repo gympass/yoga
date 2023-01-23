@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { node } from 'prop-types';
+import { node, number } from 'prop-types';
 import Dialog from '../../Dialog';
 
 const StyledDrawer = styled(Dialog)`
@@ -36,6 +36,11 @@ function Drawer(props) {
 
 Drawer.propTypes = {
   children: node.isRequired,
+  zIndex: number,
+};
+
+Drawer.defaultProps = {
+  zIndex: 3,
 };
 
 export default Drawer;
