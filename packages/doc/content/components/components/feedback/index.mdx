@@ -98,6 +98,22 @@ This screen can be used to give feedback to the user of success, information, or
 </Box>
 ```
 
+### Not centered vertically
+
+```javascript
+<Box h={611} w="100%">
+  <Feedback
+    variant="success"
+    description="Enjoy your membership! Access thousands of gyms, studios and wellness  app."
+    center={false}
+  >
+    <Feedback.Title as="h1">Welcome to Yoga, Feedback.</Feedback.Title>
+    <Feedback.PrimaryButton>Ok</Feedback.PrimaryButton>
+    <Feedback.SecondaryButton>Cancel</Feedback.SecondaryButton>
+  </Feedback>
+</Box>
+```
+
 ## Props
 
 <PropsTable component="Feedback" platform="web" />
