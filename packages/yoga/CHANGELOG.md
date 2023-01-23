@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.66.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.66.0...@gympass/yoga@7.66.1) (2023-01-23)
+
+
+### Reverts
+
+* **bottomshet/dialog/drawer:** revert snapshots changes ([26214f5](https://github.com/Gympass/yoga/commit/26214f5476afc31d0b3d3c954fce72f3002bdf52))
+
+
+
+
+
 # [7.66.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.65.0...@gympass/yoga@7.66.0) (2023-01-17)
 
 
