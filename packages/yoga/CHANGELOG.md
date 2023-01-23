@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.67.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.66.1...@gympass/yoga@7.67.0) (2023-01-23)
+
+
+### Bug Fixes
+
+* props typo in the test case ([9393375](https://github.com/Gympass/yoga/commit/93933755877f9bbaa08334a544fe3855336273da))
+
+
+### Features
+
+* **components:** add center props to feedback component ([8bc0c11](https://github.com/Gympass/yoga/commit/8bc0c11619d20b533835043280ad5fe03d7f2d49))
+
+
+
+
+
 ## [7.66.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.66.0...@gympass/yoga@7.66.1) (2023-01-23)
 
 
