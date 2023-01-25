@@ -1,4 +1,5 @@
-import 'react-phone-input-2/lib/material.css';
+// eslint-disable-next-line no-unused-vars
+import phoneInputStyle from 'react-phone-input-2/lib/material.css';
 import styled, { css } from 'styled-components';
 import { flagsSprite, chevronSvg, checkSvg } from './data-images';
 
