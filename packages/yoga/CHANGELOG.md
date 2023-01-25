@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.67.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.67.0...@gympass/yoga@7.67.1) (2023-01-25)
+
+
+### Bug Fixes
+
+* add named import for phone input styles ([ddcd903](https://github.com/Gympass/yoga/commit/ddcd903de4a03e89bf563eaae02f7b9423d3dd7c))
+
+
+
+
+
 # [7.67.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.66.1...@gympass/yoga@7.67.0) (2023-01-23)
 
 
