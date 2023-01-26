@@ -9,6 +9,7 @@ import ArrowDropDown from './svg/arrow_drop_down.svg';
 import ArrowDropUp from './svg/arrow_drop_up.svg';
 import ArrowLeft from './svg/arrow_left.svg';
 import ArrowRight from './svg/arrow_right.svg';
+import Bank from './svg/bank.svg';
 import BankStatement from './svg/bank_statement.svg';
 import BarChart from './svg/bar_chart.svg';
 import BeautySalon from './svg/beauty-salon.svg';
@@ -171,6 +172,7 @@ export {
   ArrowDropUp,
   ArrowLeft,
   ArrowRight,
+  Bank,
   BankStatement,
   BarChart,
   BeautySalon,
