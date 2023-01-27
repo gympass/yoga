@@ -1,4 +1,3 @@
-import 'react-phone-input-2/lib/material.css';
 import styled, { css } from 'styled-components';
 import { flagsSprite, chevronSvg, checkSvg } from './data-images';
 
@@ -48,13 +47,6 @@ const flagsPositioning = css`
   }
 `;
 
-const flagReset = css`
-  position: relative;
-  top: initial;
-  left: initial;
-  margin-top: 0;
-`;
-
 const hiddenScrollBar = css`
   ::-webkit-scrollbar {
     display: none;
@@ -93,7 +85,9 @@ export const Container = styled.div`
     },
   }) => css`
     .react-tel-input {
-      width: inherit;
+      box-sizing: border-box;
+      position: relative;
+      width: 100%;
       height: inherit;
       font-family: ${baseFont.family}, sans-serif;
       font-size: ${input.font.size}px;
@@ -103,8 +97,12 @@ export const Container = styled.div`
       grid-template-columns: min-content 1fr;
 
       .special-label {
-        z-index: unset;
-        left: unset;
+        position: absolute;
+        top: -${spacing.xxsmall}px;
+        display: block;
+        background: white;
+        padding: 0 ${spacing.xxxsmall}px;
+        white-space: nowrap;
         font-size: ${input.label.font.size.typed}px;
         color: ${input.label.color.default};
         letter-spacing: normal;
@@ -119,14 +117,18 @@ export const Container = styled.div`
         }
       }
 
+      input[disabled] + .flag-dropdown:hover {
+        cursor: not-allowed;
+      }
+
       .form-control {
         background: transparent;
-        border: unset;
-        padding: unset;
-        box-sizing: border-box;
+        border: none;
         width: 100%;
+        outline: none;
         grid-area: input;
         color: ${disabled ? colors.text.disabled : input.font.color.focus};
+        font-family: ${baseFont.family}, sans-serif;
         font-size: ${input.font.size}px;
         padding-left: ${spacing.xsmall}px;
 
@@ -151,10 +153,6 @@ export const Container = styled.div`
       .flag-dropdown {
         border: none;
         width: inherit;
-        position: unset;
-        top: unset;
-        bottom: unset;
-        padding: unset;
         grid-area: dropdown;
 
         &.open {
@@ -166,15 +164,18 @@ export const Container = styled.div`
         &.open .selected-flag,
         &:hover,
         &:focus {
+          cursor: pointer;
           background: transparent;
         }
       }
 
       .selected-flag {
-        border: none;
+        display: flex;
+        position: relative;
+        width: 52px;
+        height: 100%;
         padding: 0;
         padding-left: ${spacing.xxxsmall}px;
-        display: flex;
         align-items: center;
         opacity: ${disabled ? 0.5 : 1};
 
@@ -190,19 +191,17 @@ export const Container = styled.div`
         }
 
         .flag {
-          ${flagReset};
           display: flex;
           align-items: center;
 
           .arrow {
             background-color: ${input.label.color.default};
             mask-image: url('data:image/svg+xml;utf8,${chevronSvg}');
-            border: none;
-            top: unset;
-            margin-top: unset;
             width: 16px;
             height: 16px;
             transition: 0.6s, color 0.1s;
+            position: relative;
+            left: ${spacing.large + spacing.xxxsmall}px;
 
             &.up {
               border: none;
@@ -222,13 +221,18 @@ export const Container = styled.div`
         width: 20px;
         height: 20px;
         background-image: url('data:image/png;base64,${flagsSprite}');
+        background-repeat: no-repeat;
       }
 
       ${flagsPositioning};
 
       .country-list {
-        box-shadow: none;
-        border-radius: unset;
+        background-color: white;
+        position: absolute;
+        padding: 0;
+        outline: none;
+        overflow-y: scroll;
+        list-style: none;
         max-height: 18rem;
         margin: -${spacing.xxsmall}px 0 0 calc(-1 * var(--fieldset-left-offset) -
               1px);
@@ -250,8 +254,11 @@ export const Container = styled.div`
           color: ${input.font.color.focus};
 
           .flag {
-            ${flagReset};
             margin-right: ${spacing.small}px;
+          }
+
+          .country-name {
+            margin-right: ${spacing.xxxsmall}px;
           }
 
           .dial-code {
