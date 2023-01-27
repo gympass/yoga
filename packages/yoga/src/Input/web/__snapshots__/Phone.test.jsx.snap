@@ -57,7 +57,9 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
 }
 
 .c2 .react-tel-input {
-  width: inherit;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
   height: inherit;
   font-family: Rubik,sans-serif;
   font-size: 14px;
@@ -68,8 +70,12 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
 }
 
 .c2 .react-tel-input .special-label {
-  z-index: unset;
-  left: unset;
+  position: absolute;
+  top: -8px;
+  display: block;
+  background: white;
+  padding: 0 4px;
+  white-space: nowrap;
   font-size: 12px;
   color: #6B6B78;
   -webkit-letter-spacing: normal;
@@ -82,14 +88,18 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
   color: #231B22;
 }
 
+.c2 .react-tel-input input[disabled] + .flag-dropdown:hover {
+  cursor: not-allowed;
+}
+
 .c2 .react-tel-input .form-control {
   background: transparent;
-  border: unset;
-  padding: unset;
-  box-sizing: border-box;
+  border: none;
   width: 100%;
+  outline: none;
   grid-area: input;
   color: #231B22;
+  font-family: Rubik,sans-serif;
   font-size: 14px;
   padding-left: 12px;
 }
@@ -126,10 +136,6 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
 .c2 .react-tel-input .flag-dropdown {
   border: none;
   width: inherit;
-  position: unset;
-  top: unset;
-  bottom: unset;
-  padding: unset;
   grid-area: dropdown;
 }
 
@@ -142,17 +148,20 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
 .c2 .react-tel-input .flag-dropdown.open .selected-flag,
 .c2 .react-tel-input .flag-dropdown:hover,
 .c2 .react-tel-input .flag-dropdown:focus {
+  cursor: pointer;
   background: transparent;
 }
 
 .c2 .react-tel-input .selected-flag {
-  border: none;
-  padding: 0;
-  padding-left: 4px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  width: 52px;
+  height: 100%;
+  padding: 0;
+  padding-left: 4px;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -174,10 +183,6 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
 }
 
 .c2 .react-tel-input .selected-flag .flag {
-  position: relative;
-  top: initial;
-  left: initial;
-  margin-top: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -192,13 +197,12 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
   background-color: #6B6B78;
   -webkit-mask-image: url('data:image/svg+xml;utf8,%0A%20%20%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2012%2012%22%3E%0A%20%20%20%20%3Cpath%20fill-rule=%22evenodd%22%20d=%22M3.146%204.146a.5.5%200%200%201%20.708%200L6%206.293l2.146-2.147a.5.5%200%200%201%20.708.708l-2.5%202.5a.5.5%200%200%201-.708%200l-2.5-2.5a.5.5%200%200%201%200-.708Z%22%20clip-rule=%22evenodd%22/%3E%0A%20%20%3C/svg%3E%0A');
   mask-image: url('data:image/svg+xml;utf8,%0A%20%20%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2012%2012%22%3E%0A%20%20%20%20%3Cpath%20fill-rule=%22evenodd%22%20d=%22M3.146%204.146a.5.5%200%200%201%20.708%200L6%206.293l2.146-2.147a.5.5%200%200%201%20.708.708l-2.5%202.5a.5.5%200%200%201-.708%200l-2.5-2.5a.5.5%200%200%201%200-.708Z%22%20clip-rule=%22evenodd%22/%3E%0A%20%20%3C/svg%3E%0A');
-  border: none;
-  top: unset;
-  margin-top: unset;
   width: 16px;
   height: 16px;
   -webkit-transition: 0.6s,color 0.1s;
   transition: 0.6s,color 0.1s;
+  position: relative;
+  left: 28px;
 }
 
 .c2 .react-tel-input .selected-flag .flag .arrow.up {
@@ -218,6 +222,7 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
   width: 20px;
   height: 20px;
   background-image: url('data:image/png;base64,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');
+  background-repeat: no-repeat;
 }
 
 .c2 .react-tel-input .ar {
@@ -265,8 +270,12 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
 }
 
 .c2 .react-tel-input .country-list {
-  box-shadow: none;
-  border-radius: unset;
+  background-color: white;
+  position: absolute;
+  padding: 0;
+  outline: none;
+  overflow-y: scroll;
+  list-style: none;
   max-height: 18rem;
   margin: -8px 0 0 calc(-1 * var(--fieldset-left-offset) - 1px);
   width: calc(100% + var(--fieldset-left-offset) + 2px);
@@ -301,11 +310,11 @@ exports[`<Input.Phone /> Snapshots should match with default input 1`] = `
 }
 
 .c2 .react-tel-input .country-list .country .flag {
-  position: relative;
-  top: initial;
-  left: initial;
-  margin-top: 0;
   margin-right: 16px;
+}
+
+.c2 .react-tel-input .country-list .country .country-name {
+  margin-right: 4px;
 }
 
 .c2 .react-tel-input .country-list .country .dial-code {
