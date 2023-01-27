@@ -11,6 +11,7 @@
     "lib": ["esnext"],
     "types": ["react", "jest"],
     "moduleResolution": "node",
+    "downlevelIteration": true,
     "strict": true
   },
   "include": ["src"],

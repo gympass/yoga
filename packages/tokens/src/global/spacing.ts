@@ -28,21 +28,7 @@
  * @type {Spacing}
  * @default
  */
-
- interface spacingProps extends Array<number> {
-  zero?: number;
-  xxxsmall?: number;
-  xxsmall?: number;
-  xsmall?: number;
-  small?: number;
-  medium?: number;
-  large?: number;
-  xlarge?: number;
-  xxlarge?: number;
-  xxxlarge?: number;
-  huge?: number;
-  xhuge?: number;
-}
+import { spacingProps } from '../types/spacing';
 
 const spacing: spacingProps = [0, 4, 8, 12, 16, 20, 24, 32, 40, 56, 72, 80];
 

@@ -23,7 +23,14 @@ import colors from './colors';
  * @type Elevation
  * @default
  */
-const elevations = elevate({ color: colors.medium });
+import { elevationsProps } from '../types/elevations';
+
+const elevations: elevationsProps = elevate({
+  color: colors.medium,
+  depth: 1,
+  spread: false,
+  fallback: true,
+});
 
 [elevations.zero, elevations.small, elevations.medium, elevations.large] =
   elevations;

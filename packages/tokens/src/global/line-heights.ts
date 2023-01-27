@@ -25,18 +25,7 @@
  * @type {LineHeight}
  * @default
  */
-
-interface lineHeightProps extends Array<number> {
-  xxsmall?: number;
-  xsmall?: number;
-  small?: number;
-  medium?: number;
-  large?: number;
-  xlarge?: number;
-  xxlarge?: number;
-  xxxlarge?: number;
-  huge?: number;
-}
+import { lineHeightProps } from '../types/line-heights';
 
 const lineHeight: lineHeightProps = [12, 16, 20, 24, 28, 32, 40, 48, 56];
 

@@ -20,12 +20,7 @@
  * @type Elevation
  * @default
  */
- interface elevationsProps extends Array<number> {
-  zero?: number;
-  small?: number;
-  medium?: number;
-  large?: number;
-}
+import { elevationsProps } from '../types/elevations';
 
 const elevations: elevationsProps = [0, 4, 8, 12];
 

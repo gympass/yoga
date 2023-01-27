@@ -21,14 +21,7 @@
  * @type {FontWeight}
  * @default
  */
-
-interface fontWeightsProps extends Array<number> {
-  light?: number;
-  regular?: number;
-  medium?: number;
-  bold?: number;
-  black?: number;
-}
+import { fontWeightsProps } from '../types/font-weights';
 
 const fontWeights: fontWeightsProps = [300, 400, 500, 700, 900];
 

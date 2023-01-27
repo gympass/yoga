@@ -25,18 +25,7 @@
  * @type {FontSize}
  * @default
  */
-
-interface fontSizesProps extends Array<number> {
-  xxsmall?: number;
-  xsmall?: number;
-  small?: number;
-  medium?: number,
-  large?: number,
-  xlarge?: number,
-  xxlarge?: number,
-  xxxlarge?: number,
-  huge?: number,
-}
+import { fontSizesProps } from '../types/font-sizes';
 
 const fontSizes: fontSizesProps = [10, 12, 14, 16, 20, 24, 32, 40, 48];
 

@@ -21,14 +21,7 @@
  * @type {Radii}
  * @default
  */
-
-interface radiiProps extends Array<number> {
-  sharp?: number;
-  xsmall?: number;
-  small?: number;
-  regular?: number;
-  circle?: number;
-}
+import { radiiProps } from '../types/radii';
 
 const radii: radiiProps = [0, 4, 8, 16, 9999];
 
