@@ -1,4 +1,4 @@
-export interface lineHeightProps extends Array<number> {
+export interface LineHeightProps extends Array<number> {
   xxsmall?: number;
   xsmall?: number;
   small?: number;

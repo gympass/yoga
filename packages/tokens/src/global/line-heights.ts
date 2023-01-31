@@ -25,9 +25,9 @@
  * @type {LineHeight}
  * @default
  */
-import { lineHeightProps } from '../types/line-heights';
+import { LineHeightProps } from '../types/line-heights';
 
-const lineHeight: lineHeightProps = [12, 16, 20, 24, 28, 32, 40, 48, 56];
+const lineHeight: LineHeightProps = [12, 16, 20, 24, 28, 32, 40, 48, 56];
 
 [
   lineHeight.xxsmall,

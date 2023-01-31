@@ -19,9 +19,9 @@
  * @type {Border}
  * @default
  */
-import { borderProps } from '../types/border';
+import { BorderProps } from '../types/border';
 
-const border: borderProps = [0, 1, 2];
+const border: BorderProps = [0, 1, 2];
 
 [border.zero, border.small, border.medium] = border;
 

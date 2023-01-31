@@ -1,4 +1,4 @@
-export interface radiiProps extends Array<number> {
+export interface RadiiProps extends Array<number> {
   sharp?: number;
   xsmall?: number;
   small?: number;

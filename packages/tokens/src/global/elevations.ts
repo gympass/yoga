@@ -23,9 +23,9 @@ import colors from './colors';
  * @type Elevation
  * @default
  */
-import { elevationsProps } from '../types/elevations';
+import { ElevationsProps } from '../types/elevations';
 
-const elevations: elevationsProps = elevate({ color: colors.medium });
+const elevations: ElevationsProps = elevate({ color: colors.medium });
 
 [elevations.zero, elevations.small, elevations.medium, elevations.large] =
   elevations;

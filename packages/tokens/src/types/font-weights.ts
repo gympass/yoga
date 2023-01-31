@@ -1,4 +1,4 @@
-export interface fontWeightsProps extends Array<number> {
+export interface FontWeightsProps extends Array<number> {
   light?: number;
   regular?: number;
   medium?: number;

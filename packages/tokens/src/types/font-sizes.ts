@@ -1,4 +1,4 @@
-export interface fontSizesProps extends Array<number> {
+export interface FontSizesProps extends Array<number> {
   xxsmall?: number;
   xsmall?: number;
   small?: number;

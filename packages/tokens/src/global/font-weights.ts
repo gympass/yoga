@@ -21,9 +21,9 @@
  * @type {FontWeight}
  * @default
  */
-import { fontWeightsProps } from '../types/font-weights';
+import { FontWeightsProps } from '../types/font-weights';
 
-const fontWeights: fontWeightsProps = [300, 400, 500, 700, 900];
+const fontWeights: FontWeightsProps = [300, 400, 500, 700, 900];
 
 [
   fontWeights.light,

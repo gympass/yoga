@@ -1,4 +1,4 @@
-export interface spacingProps extends Array<number> {
+export interface SpacingProps extends Array<number> {
   zero?: number;
   xxxsmall?: number;
   xxsmall?: number;
