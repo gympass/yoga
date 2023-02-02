@@ -20,7 +20,9 @@
  * @type Elevation
  * @default
  */
-const elevations = [0, 4, 8, 12];
+import { ElevationsProps } from '../types/elevations';
+
+const elevations: ElevationsProps = [0, 4, 8, 12];
 
 [elevations.zero, elevations.small, elevations.medium, elevations.large] =
   elevations;

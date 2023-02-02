@@ -19,7 +19,9 @@ import weights from './font-weights';
 /**
  * @type {Font[]}
  */
-const fonts = [
+import { FontsProps } from '../types/fonts';
+
+const fonts: FontsProps = [
   {
     family: 'Rubik',
     weight: [...weights, ...weights.map(weight => `${weight}i`)],

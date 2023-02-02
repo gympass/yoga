@@ -21,7 +21,9 @@
  * @type {Radii}
  * @default
  */
-const radii = [0, 4, 8, 16, 9999];
+import { RadiiProps } from '../types/radii';
+
+const radii: RadiiProps = [0, 4, 8, 16, 9999];
 
 [radii.sharp, radii.xsmall, radii.small, radii.regular, radii.circle] = radii;
 
