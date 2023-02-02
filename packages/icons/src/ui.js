@@ -140,7 +140,7 @@ import PriceTag from './svg/price_tag.svg';
 import Time from './svg/time.svg';
 import TimeFilled from './svg/time_filled.svg';
 import Token from './svg/token.svg';
-import Tolietries from './svg/tolietries.svg';
+import Toiletries from './svg/toiletries.svg';
 import TrainingTowels from './svg/training-towels.svg';
 import Trash from './svg/trash.svg';
 import TrendingUp from './svg/trending_up.svg';
@@ -303,7 +303,7 @@ export {
   Time,
   TimeFilled,
   Token,
-  Tolietries,
+  Toiletries,
   TrainingTowels,
   Trash,
   TrendingUp,
