@@ -49,7 +49,7 @@ const Wrapper = styled.View`
 
 const StyledChips = styled(Text)`
   font-size: ${theme.fontSizes.xsmall}px;
-  line-height: ${theme.lineHeights.xsmall}px;
+  line-height: ${theme.lineHeights.xxsmall}px;
 
   flex-shrink: 1;
 

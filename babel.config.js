@@ -6,7 +6,6 @@ module.exports = {
       plugins: ['inline-react-svg', 'import-glob'],
     },
     esm: {
-      ignore: ['**/native', '**/*.native.js', '**/*.test.jsx'],
       presets: [
         ['@babel/preset-env', { loose: true, modules: false }],
         '@babel/preset-react',

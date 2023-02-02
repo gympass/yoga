@@ -4,8 +4,15 @@ import { string, node, bool } from 'prop-types';
 import { ChevronDown } from '@gympass/yoga-icons';
 import { Text, Divider } from '@gympass/yoga';
 
-const Accordion = ({ title, subtitle, children, disabled }) => {
-  const [open, setOpen] = useState(false);
+const Accordion = ({
+  title,
+  subtitle,
+  children,
+  disabled,
+  expanded,
+  ...props
+}) => {
+  const [open, setOpen] = useState(expanded);
 
   const AccordionWrapper = styled.div`
     border: none;
@@ -165,7 +172,7 @@ const Accordion = ({ title, subtitle, children, disabled }) => {
   `;
 
   return (
-    <AccordionWrapper>
+    <AccordionWrapper {...props}>
       <Header
         disabled={disabled}
         onClick={() => {
@@ -194,11 +201,13 @@ Accordion.propTypes = {
   subtitle: string,
   children: node.isRequired,
   disabled: bool,
+  expanded: bool,
 };
 
 Accordion.defaultProps = {
   subtitle: undefined,
   disabled: false,
+  expanded: false,
 };
 
 export default Accordion;

@@ -19,8 +19,10 @@ const StyledDivider = styled.hr`
   }}
 `;
 
-const Divider = React.forwardRef(({ vertical, style }, ref) => {
-  return <StyledDivider vertical={vertical} ref={ref} style={style} />;
+const Divider = React.forwardRef(({ vertical, style, ...props }, ref) => {
+  return (
+    <StyledDivider vertical={vertical} ref={ref} style={style} {...props} />
+  );
 });
 
 Divider.propTypes = {

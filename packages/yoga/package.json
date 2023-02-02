@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga",
-  "version": "7.63.0",
+  "version": "7.67.4",
   "description": "Gympass component library",
   "main": "./src",
   "sideEffects": false,
@@ -37,7 +37,7 @@
     "@babel/types": "^7.20.7",
     "@gympass/yoga-common": "^1.1.2",
     "@gympass/yoga-helpers": "^1.0.3",
-    "@gympass/yoga-icons": "^1.8.0",
+    "@gympass/yoga-icons": "^1.9.0",
     "@gympass/yoga-illustrations": "^0.5.1",
     "@gympass/yoga-system": "^0.10.3",
     "@gympass/yoga-tokens": "^3.1.5",
@@ -54,7 +54,8 @@
     "proxy-polyfill": "^0.3.1",
     "rc-slider": "^8.7.1",
     "react-google-font-loader": "^1.1.0",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "react-phone-input-2": "^2.15.1"
   },
   "devDependencies": {
     "@testing-library/react": "^12.0.4",

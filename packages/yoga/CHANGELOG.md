@@ -3,6 +3,179 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.67.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.67.3...@gympass/yoga@7.67.4) (2023-01-27)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.67.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.67.2...@gympass/yoga@7.67.3) (2023-01-26)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.67.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.67.1...@gympass/yoga@7.67.2) (2023-01-26)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.67.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.67.0...@gympass/yoga@7.67.1) (2023-01-25)
+
+
+### Bug Fixes
+
+* add named import for phone input styles ([ddcd903](https://github.com/Gympass/yoga/commit/ddcd903de4a03e89bf563eaae02f7b9423d3dd7c))
+
+
+
+
+
+# [7.67.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.66.1...@gympass/yoga@7.67.0) (2023-01-23)
+
+
+### Bug Fixes
+
+* props typo in the test case ([9393375](https://github.com/Gympass/yoga/commit/93933755877f9bbaa08334a544fe3855336273da))
+
+
+### Features
+
+* **components:** add center props to feedback component ([8bc0c11](https://github.com/Gympass/yoga/commit/8bc0c11619d20b533835043280ad5fe03d7f2d49))
+
+
+
+
+
+## [7.66.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.66.0...@gympass/yoga@7.66.1) (2023-01-23)
+
+
+### Reverts
+
+* **bottomshet/dialog/drawer:** revert snapshots changes ([26214f5](https://github.com/Gympass/yoga/commit/26214f5476afc31d0b3d3c954fce72f3002bdf52))
+
+
+
+
+
+# [7.66.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.65.0...@gympass/yoga@7.66.0) (2023-01-17)
+
+
+### Features
+
+* add PhoneInput component ([6a1cedc](https://github.com/Gympass/yoga/commit/6a1cedcb99a7011d14913330ff8bda396ba96104))
+* add useCombinedRefs hook ([50a8824](https://github.com/Gympass/yoga/commit/50a88247697ddcfd00bc7bd58fe6104ed74e4e5f))
+* include children prop on input ([cef33aa](https://github.com/Gympass/yoga/commit/cef33aae8aa8c128d0ea50974a87b33e88f99238))
+
+
+
+
+
+# [7.65.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.64.4...@gympass/yoga@7.65.0) (2023-01-16)
+
+
+### Bug Fixes
+
+* **feedback:** fix feedback mobile position and update documentation ([3565cd9](https://github.com/Gympass/yoga/commit/3565cd9405c85078fcd327fc2910dcff1a83697c))
+
+
+### Features
+
+* **accordion:** add testId ([0eabff1](https://github.com/Gympass/yoga/commit/0eabff182c980b65d7c1e32f3912fa68ed0f28f1))
+* **ActionRequirement:** add testId ([2eef1ae](https://github.com/Gympass/yoga/commit/2eef1ae5e2bf6392e4ca02cad0fb5d5be66ad892))
+* **avatar:** add testId ([aa36608](https://github.com/Gympass/yoga/commit/aa3660812416d264f81f633e15f0b802028df6e2))
+* **banner:** add testId ([2220992](https://github.com/Gympass/yoga/commit/2220992b6348556c65d66f57f839fe3896067ec0))
+* **bottomsheet:** add testId ([ecad677](https://github.com/Gympass/yoga/commit/ecad677d06dec55356ab7197d89f741345cdcb88))
+* **box:** add testId ([f4bb620](https://github.com/Gympass/yoga/commit/f4bb620d03442f55bcfea0a60a4b77d9635b7e81))
+* **button:** add testId ([77f4cba](https://github.com/Gympass/yoga/commit/77f4cba802be7c93f074ca662a679f2046f08057))
+* **card:** add testId ([a14a605](https://github.com/Gympass/yoga/commit/a14a6054c0087166686d56a6fa0aec75174ef50d))
+* **checkbox:** add testId ([dfb827c](https://github.com/Gympass/yoga/commit/dfb827c213172d6716343c6a891b99785d91df75))
+* **chips:** add testId ([3bd2f6f](https://github.com/Gympass/yoga/commit/3bd2f6f3d35307808c7d5778315fca4759f52b33))
+* **components:** fix props testid ([01a73eb](https://github.com/Gympass/yoga/commit/01a73ebac1fd072b7850a9fce0438e2069dee9a5))
+* **datepicker:** add testId ([54ee7d9](https://github.com/Gympass/yoga/commit/54ee7d96ac52ac5be63bdb19466a9a9ea34b7452))
+* **dialog:** add testId ([9ddf24b](https://github.com/Gympass/yoga/commit/9ddf24b665b2e333b59127a9aa402c7d10484195))
+* **divider:** add testId ([f9e94ee](https://github.com/Gympass/yoga/commit/f9e94ee9450d0b631895b7367bfc6620f74d2df4))
+* **drawer:** add testId ([16db2c9](https://github.com/Gympass/yoga/commit/16db2c9aabb6ad1fe4a967d4617763cbbd92cf11))
+* **feedback:** add testId ([8a960ea](https://github.com/Gympass/yoga/commit/8a960eaf218d2ccf27fac50b14d62f7b793591fe))
+* **header:** add testId ([da26a98](https://github.com/Gympass/yoga/commit/da26a98bb4ab3aff3ea716f7a5991a23784623d9))
+* **heading:** add testId ([f396519](https://github.com/Gympass/yoga/commit/f396519d0a5d4e2f3a4de997830a56e556d7b449))
+* **input:** add testId ([1e3a749](https://github.com/Gympass/yoga/commit/1e3a7496fa27dfacb79e69cabae2e1e22a27bc8c))
+* **list:** add testId ([0179933](https://github.com/Gympass/yoga/commit/01799330d402b496cfa8b93079c7b73f1b33248c))
+* **popover:** add testId ([87daa82](https://github.com/Gympass/yoga/commit/87daa821dc6ee91cd66c78199f55feaf6ae021aa))
+* **progress:** add testId ([64c48db](https://github.com/Gympass/yoga/commit/64c48db8263c0b9620cab01f400087603302ff32))
+* **radiogroup:** add testId ([4717e08](https://github.com/Gympass/yoga/commit/4717e08e188978f467ed250ebf5e7e0f3a7228c0))
+* **rating:** add testId ([46b1e7f](https://github.com/Gympass/yoga/commit/46b1e7fdcf06c568c1840013000daa68fe8f6d28))
+* **skeleton:** add testId ([27ef185](https://github.com/Gympass/yoga/commit/27ef185df50878ad5ed23f8760987701db360160))
+* **snackbar:** add testId ([0b80ab8](https://github.com/Gympass/yoga/commit/0b80ab89503911fe2f0a1b6da13e4d3a0c432c25))
+* **stepper:** add testId ([3713152](https://github.com/Gympass/yoga/commit/3713152e9bc766d0e750b15c33263039e92c70ac))
+* **tests:** add testId in tests ([1214d3a](https://github.com/Gympass/yoga/commit/1214d3abb9f2fe035aa91879505d028fce466b14))
+* **text:** add testId ([d75fc94](https://github.com/Gympass/yoga/commit/d75fc948e9deaaaa383ed4b99674566270905e0f))
+* **textarea:** add testId ([389a741](https://github.com/Gympass/yoga/commit/389a741d97472d73c1654508eb9ac98f534dc033))
+
+
+
+
+
+## [7.64.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.64.3...@gympass/yoga@7.64.4) (2023-01-16)
+
+**Note:** Version bump only for package @gympass/yoga
+
+
+
+
+
+## [7.64.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.64.2...@gympass/yoga@7.64.3) (2023-01-11)
+
+
+### Reverts
+
+* files with master ([e98cd76](https://github.com/Gympass/yoga/commit/e98cd76a74a1ec841af23b6816da10dc75f805be))
+* **text:** revert prop color changes with master ([fc471d2](https://github.com/Gympass/yoga/commit/fc471d2ea319cbca9a9449399427d81a7002d987))
+
+
+
+
+
+## [7.64.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.64.1...@gympass/yoga@7.64.2) (2023-01-10)
+
+
+### Bug Fixes
+
+* **chips:** change value line height in chips text ([189e655](https://github.com/Gympass/yoga/commit/189e655f43265df8cef15a1807d501f84a4de358))
+
+
+
+
+
+## [7.64.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.64.0...@gympass/yoga@7.64.1) (2023-01-09)
+
+
+### Bug Fixes
+
+* **dropdown:** fix dropdown button click ([b62a0be](https://github.com/Gympass/yoga/commit/b62a0be9e88f0729c807ce65e0e30d9791de30d4))
+
+
+
+
+
+# [7.64.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.63.0...@gympass/yoga@7.64.0) (2023-01-05)
+
+
+### Features
+
+* **accordion:** creating a property to handle expansion by default ([414c7ac](https://github.com/Gympass/yoga/commit/414c7ac0aeb4164f7abb131558de7e412e9803b7))
+
+
+
+
+
 # [7.63.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.62.1...@gympass/yoga@7.63.0) (2022-12-14)
 
 

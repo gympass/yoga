@@ -3,6 +3,121 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.40](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.39...@gympass/yoga-labnative@2.2.40) (2023-01-27)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.39](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.38...@gympass/yoga-labnative@2.2.39) (2023-01-26)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.38](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.37...@gympass/yoga-labnative@2.2.38) (2023-01-26)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.37](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.36...@gympass/yoga-labnative@2.2.37) (2023-01-25)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.36](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.35...@gympass/yoga-labnative@2.2.36) (2023-01-23)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.35](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.34...@gympass/yoga-labnative@2.2.35) (2023-01-23)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.34](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.33...@gympass/yoga-labnative@2.2.34) (2023-01-17)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.33](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.32...@gympass/yoga-labnative@2.2.33) (2023-01-16)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.32](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.31...@gympass/yoga-labnative@2.2.32) (2023-01-16)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.31](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.30...@gympass/yoga-labnative@2.2.31) (2023-01-12)
+
+
+### Bug Fixes
+
+* **labnative:** error with named exports on start project ([1502f77](https://github.com/gympass/yoga/commit/1502f77a9a0596fba47e8d01eabcc2420a457f0e))
+
+
+
+
+
+## [2.2.30](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.29...@gympass/yoga-labnative@2.2.30) (2023-01-11)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.29](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.28...@gympass/yoga-labnative@2.2.29) (2023-01-10)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.28](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.27...@gympass/yoga-labnative@2.2.28) (2023-01-09)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
+## [2.2.27](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.26...@gympass/yoga-labnative@2.2.27) (2023-01-05)
+
+**Note:** Version bump only for package @gympass/yoga-labnative
+
+
+
+
+
 ## [2.2.26](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.25...@gympass/yoga-labnative@2.2.26) (2022-12-14)
 
 **Note:** Version bump only for package @gympass/yoga-labnative

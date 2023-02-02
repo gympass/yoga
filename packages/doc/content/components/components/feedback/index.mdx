@@ -15,7 +15,7 @@ This screen can be used to give feedback to the user of success, information, or
 ### Success variant
 
 ```javascript
-<Box h={611}>
+<Box h={611} w="100%">
   <Feedback
     variant="success"
     title="Welcome to Yoga, Feedback."
@@ -30,7 +30,7 @@ This screen can be used to give feedback to the user of success, information, or
 ### Informative variant
 
 ```javascript
-<Box h={611}>
+<Box h={611} w="100%">
   <Feedback
     variant="informative"
     title="Welcome to Yoga, Feedback."
@@ -45,7 +45,7 @@ This screen can be used to give feedback to the user of success, information, or
 ### Attention variant
 
 ```javascript
-<Box h={611}>
+<Box h={611} w="100%">
   <Feedback
     variant="attention"
     title="Welcome to Yoga, Feedback."
@@ -60,7 +60,7 @@ This screen can be used to give feedback to the user of success, information, or
 ### Only with primary button
 
 ```javascript
-<Box h={611}>
+<Box h={611} w="100%">
   <Feedback
     variant="success"
     title="Welcome to Yoga, Feedback."
@@ -74,7 +74,7 @@ This screen can be used to give feedback to the user of success, information, or
 ### Without buttons
 
 ```javascript
-<Box h={611}>
+<Box h={611} w="100%">
   <Feedback
     variant="success"
     title="Welcome to Yoga, Feedback."
@@ -86,10 +86,26 @@ This screen can be used to give feedback to the user of success, information, or
 ### Overriding title props
 
 ```javascript
-<Box h={611}>
+<Box h={611} w="100%">
   <Feedback
     variant="success"
     description="Enjoy your membership! Access thousands of gyms, studios and wellness  app."
+  >
+    <Feedback.Title as="h1">Welcome to Yoga, Feedback.</Feedback.Title>
+    <Feedback.PrimaryButton>Ok</Feedback.PrimaryButton>
+    <Feedback.SecondaryButton>Cancel</Feedback.SecondaryButton>
+  </Feedback>
+</Box>
+```
+
+### Not centered vertically
+
+```javascript
+<Box h={611} w="100%">
+  <Feedback
+    variant="success"
+    description="Enjoy your membership! Access thousands of gyms, studios and wellness  app."
+    center={false}
   >
     <Feedback.Title as="h1">Welcome to Yoga, Feedback.</Feedback.Title>
     <Feedback.PrimaryButton>Ok</Feedback.PrimaryButton>

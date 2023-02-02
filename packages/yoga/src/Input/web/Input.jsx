@@ -1,6 +1,15 @@
 import React, { useRef } from 'react';
 import styled, { css } from 'styled-components';
-import { func, string, bool, number, shape, oneOfType, node } from 'prop-types';
+import {
+  arrayOf,
+  func,
+  string,
+  bool,
+  number,
+  shape,
+  oneOfType,
+  node,
+} from 'prop-types';
 import { Close } from '@gympass/yoga-icons';
 
 import { theme } from '../../Theme';
@@ -73,6 +82,7 @@ const Input = React.forwardRef(
   (
     {
       cleanable,
+      children,
       disabled,
       error,
       full,
@@ -112,21 +122,25 @@ const Input = React.forwardRef(
           style={style}
           value={value}
         >
-          <Field
-            {...props}
-            {...{
-              label,
-              cleanable,
-              disabled,
-              error,
-              full,
-              readOnly,
-              maxLength,
-            }}
-            ref={inputRef}
-            value={value}
-            onChange={onChange}
-          />
+          {!children ? (
+            <Field
+              {...props}
+              {...{
+                label,
+                cleanable,
+                disabled,
+                error,
+                full,
+                readOnly,
+                maxLength,
+              }}
+              ref={inputRef}
+              value={value}
+              onChange={onChange}
+            />
+          ) : (
+            children
+          )}
 
           <Label error={error} disabled={disabled}>
             {label}
@@ -177,6 +191,8 @@ const Input = React.forwardRef(
 
 Input.propTypes = {
   className: string,
+  /** a children node to override default input component */
+  children: oneOfType([arrayOf(node), node]),
   /** display a close icon to clean the field */
   cleanable: bool,
   disabled: bool,
@@ -201,6 +217,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   className: undefined,
+  children: undefined,
   cleanable: true,
   disabled: false,
   error: undefined,

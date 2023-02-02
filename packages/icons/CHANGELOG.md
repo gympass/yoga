@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.8.0...@gympass/yoga-icons@1.9.0) (2023-01-26)
+
+
+### Features
+
+* new icon for bank asked by Geo ([494620d](https://github.com/Gympass/yoga/commit/494620dc74dcf45f55e5fb51709ad8936f8623aa))
+* new icons ([2ed3931](https://github.com/Gympass/yoga/commit/2ed39312e1072d99167c07a238490fba6ec2e743))
+
+
+
+
+
 # [1.8.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.7.0...@gympass/yoga-icons@1.8.0) (2022-11-23)
 
 

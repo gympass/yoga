@@ -175,28 +175,20 @@ const Snackbar = React.forwardRef(
 Snackbar.propTypes = {
   /** Controls the snackbar visibility. */
   open: bool,
-
   /** The message shown when snackbar is opened. */
   message: string.isRequired,
-
   /** Function to close the snackbar. */
   onClose: func.isRequired,
-
   /** A number in milliseconds to close snackbar automaticaly. */
   duration: number,
-
   /** Label for a custom action. */
   actionLabel: string,
-
   /** Controls the snackbar icon visibility. */
   hideIcon: bool,
-
   /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
   onAction: func,
-
   /** The style variant, it may be "success", "failure" or "info". */
   variant: oneOf(['success', 'failure', 'info']),
-
   /** Hides the close button. */
   hideCloseButton: bool,
 };

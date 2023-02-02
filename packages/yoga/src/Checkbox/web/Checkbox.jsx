@@ -257,7 +257,12 @@ const Checkbox = ({
   });
 
   return (
-    <CheckboxWrapper style={style} className={className} disabled={disabled}>
+    <CheckboxWrapper
+      style={style}
+      className={className}
+      disabled={disabled}
+      {...rest}
+    >
       <CheckboxStyled
         checked={checked}
         indeterminate={indeterminate}

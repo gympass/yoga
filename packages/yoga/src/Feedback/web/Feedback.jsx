@@ -1,4 +1,4 @@
-import { arrayOf, node, oneOf, oneOfType, string } from 'prop-types';
+import { arrayOf, node, oneOf, oneOfType, string, bool } from 'prop-types';
 import React from 'react';
 
 import { CheckedFull, AlertCircle, AlertTriangle } from '@gympass/yoga-icons';
@@ -34,7 +34,7 @@ function isChildFromComponent(child, component) {
   return child.type.displayName === component.displayName;
 }
 
-function Feedback({ variant, title, description, children }) {
+function Feedback({ variant, title, description, children, center, ...props }) {
   const iconProps = VARIANT_ICONS[variant];
   let primaryButton;
   let secondaryButton;
@@ -52,15 +52,17 @@ function Feedback({ variant, title, description, children }) {
 
   return (
     <Box
-      ph="medium"
-      pv="xxlarge"
-      minHeight="100%"
-      width="100%"
       display="flex"
       alignItems="flex-end"
       bg="white"
+      width="100%"
+      {...(center && {
+        ph: 'medium',
+        pv: 'xxlarge',
+        minHeight: '100%',
+      })}
     >
-      <Content>
+      <Content {...props}>
         <Icon
           {...iconProps}
           size={ICON_SIZE}
@@ -87,11 +89,14 @@ Feedback.propTypes = {
   title: string,
   description: string.isRequired,
   children: oneOfType([arrayOf(node), node]),
+  /** Center the component vertically */
+  center: bool,
 };
 
 Feedback.defaultProps = {
   title: undefined,
   children: undefined,
+  center: true,
 };
 
 export default Feedback;

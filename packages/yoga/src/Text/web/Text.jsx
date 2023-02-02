@@ -8,11 +8,10 @@ import { deprecated } from '../../shared';
 const styledText = (type, element = false) => (element
   ? styled[type]
   : styled.p)`
-  margin: 0;
-  padding: 0;
-
-  ${textStyle(type)}
-  ${system}
+    margin: 0;
+    padding: 0;
+    ${textStyle(type)}
+    ${system}
 `;
 
 const H1 = styledText('h1', true);
@@ -102,18 +101,21 @@ Text.propTypes = {
     ]),
     'Use `color` system prop instead',
   ),
-  /** set the font-size following the theme */
-  size: oneOf([
-    'xxsmall',
-    'xsmall',
-    'small',
-    'medium',
-    'large',
-    'xlarge',
-    'xxlarge',
-    'xxxlarge',
-    'huge',
-  ]),
+  /** (deprecated: use fontSize instead) style the text following the theme */
+  size: deprecated(
+    oneOf([
+      'xxsmall',
+      'xsmall',
+      'small',
+      'medium',
+      'large',
+      'xlarge',
+      'xxlarge',
+      'xxxlarge',
+      'huge',
+    ]),
+    'Use `fontSize` system prop instead',
+  ),
   /** set the font-weight to regular */
   light: bool,
 };

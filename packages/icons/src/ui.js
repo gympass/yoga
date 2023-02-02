@@ -2,14 +2,17 @@ import Accessibility from './svg/accessibility.svg';
 import Accessible from './svg/accessible.svg';
 import AddBooking from './svg/add_booking.svg';
 import Add from './svg/add.svg';
+import AirConditioning from './svg/air-conditioning.svg';
 import AlertCircle from './svg/alert_circle.svg';
 import AlertTriangle from './svg/alert_triangle.svg';
 import ArrowDropDown from './svg/arrow_drop_down.svg';
 import ArrowDropUp from './svg/arrow_drop_up.svg';
 import ArrowLeft from './svg/arrow_left.svg';
 import ArrowRight from './svg/arrow_right.svg';
+import Bank from './svg/bank.svg';
 import BankStatement from './svg/bank_statement.svg';
 import BarChart from './svg/bar_chart.svg';
+import BeautySalon from './svg/beauty-salon.svg';
 import BookingFilled from './svg/booking_filled.svg';
 import Booking from './svg/booking.svg';
 import BuildingFilled from './svg/building_filled.svg';
@@ -28,9 +31,11 @@ import ChevronDown from './svg/chevron_down.svg';
 import ChevronLeft from './svg/chevron_left.svg';
 import ChevronRight from './svg/chevron_right.svg';
 import ChevronUp from './svg/chevron_up.svg';
+import ChildrenArea from './svg/children-area.svg';
 import CloseFilled from './svg/close_filled.svg';
 import Close from './svg/close.svg';
 import Code from './svg/code.svg';
+import CoffeeShop from './svg/coffee-shop.svg';
 import CompassFilled from './svg/compass_filled.svg';
 import Compass from './svg/compass.svg';
 import Copy from './svg/copy.svg';
@@ -57,6 +62,7 @@ import Filter from './svg/filter.svg';
 import Google from './svg/google.svg';
 import Headphone from './svg/headphone.svg';
 import Heartbeat from './svg/heartbeat.svg';
+import Heater from './svg/heater.svg';
 import HelpCircle from './svg/help_circle.svg';
 import Help from './svg/help.svg';
 import History from './svg/history.svg';
@@ -75,6 +81,7 @@ import LockOff from './svg/lock_off.svg';
 import LockOnFilled from './svg/lock_on_filled.svg';
 import Lock from './svg/lock.svg';
 import LockerRoom from './svg/locker_room.svg';
+import Lockers from './svg/lockers.svg';
 import LogOut from './svg/log_out.svg';
 import Loop from './svg/loop.svg';
 import MailRead from './svg/mail_read.svg';
@@ -89,6 +96,7 @@ import NetworkOff from './svg/network_off.svg';
 import NetworkOn from './svg/network_on.svg';
 import NotificationFilled from './svg/notification_filled.svg';
 import NotificationOff from './svg/notification_off.svg';
+import Nutritionist from './svg/nutritionist.svg';
 import PaperPin from './svg/paper_pin.svg';
 import Paperclip from './svg/paperclip.svg';
 import Password from './svg/password.svg';
@@ -100,6 +108,7 @@ import PinFilled from './svg/pin_filled.svg';
 import Play from './svg/play.svg';
 import PlayFilled from './svg/play_filled.svg';
 import PlusCircle from './svg/plus_circle.svg';
+import Pool from './svg/pool.svg';
 import Printer from './svg/printer.svg';
 import QRCodeReader from './svg/qr_code_reader.svg';
 import QRCode from './svg/qr_code.svg';
@@ -113,19 +122,26 @@ import ShareAndroid from './svg/share_android.svg';
 import ShareIos from './svg/share_ios.svg';
 import ShieldCheck from './svg/shield_check.svg';
 import ShieldSecure from './svg/shield_secure.svg';
+import Shower from './svg/shower.svg';
+import ShowerTowels from './svg/shower-towels.svg';
 import Signal from './svg/signal.svg';
 import SmartphoneFilled from './svg/smartphone_filled.svg';
 import Smartphone from './svg/smartphone.svg';
+import SnackBar from './svg/snack-bar.svg';
 import SortAscending from './svg/sort_ascending.svg';
 import SortDescending from './svg/sort_descending.svg';
 import Spa from './svg/spa.svg';
+import SportsEquipment from './svg/sports-equipment-store.svg';
 import StarFilled from './svg/star_filled.svg';
 import Star from './svg/star.svg';
 import SystemStatus from './svg/system_status.svg';
+import ParkingLot from './svg/parking-lot.svg';
 import PriceTag from './svg/price_tag.svg';
 import Time from './svg/time.svg';
 import TimeFilled from './svg/time_filled.svg';
 import Token from './svg/token.svg';
+import Tolietries from './svg/tolietries.svg';
+import TrainingTowels from './svg/training-towels.svg';
 import Trash from './svg/trash.svg';
 import TrendingUp from './svg/trending_up.svg';
 import TriangleAlert from './svg/triangle_alert.svg';
@@ -141,6 +157,7 @@ import VisibilityOff from './svg/visibility_off.svg';
 import Visibility from './svg/visibility.svg';
 import Wallet from './svg/wallet.svg';
 import Whatsapp from './svg/whatsapp.svg';
+import WiFi from './svg/wi-fi.svg';
 import Youtube from './svg/youtube.svg';
 
 export {
@@ -148,14 +165,17 @@ export {
   Accessible,
   AddBooking,
   Add,
+  AirConditioning,
   AlertCircle,
   AlertTriangle,
   ArrowDropDown,
   ArrowDropUp,
   ArrowLeft,
   ArrowRight,
+  Bank,
   BankStatement,
   BarChart,
+  BeautySalon,
   BookingFilled,
   Booking,
   BuildingFilled,
@@ -174,9 +194,11 @@ export {
   ChevronLeft,
   ChevronRight,
   ChevronUp,
+  ChildrenArea,
   CloseFilled,
   Close,
   Code,
+  CoffeeShop,
   CompassFilled,
   Compass,
   Copy,
@@ -203,6 +225,7 @@ export {
   Google,
   Headphone,
   Heartbeat,
+  Heater,
   HelpCircle,
   Help,
   History,
@@ -221,6 +244,7 @@ export {
   LockOnFilled,
   Lock,
   LockerRoom,
+  Lockers,
   LogOut,
   Loop,
   MailRead,
@@ -235,6 +259,7 @@ export {
   NetworkOn,
   NotificationFilled,
   NotificationOff,
+  Nutritionist,
   PaperPin,
   Paperclip,
   Password,
@@ -246,6 +271,7 @@ export {
   Play,
   PlayFilled,
   PlusCircle,
+  Pool,
   Printer,
   QRCodeReader,
   QRCode,
@@ -259,19 +285,26 @@ export {
   ShareIos,
   ShieldCheck,
   ShieldSecure,
+  Shower,
+  ShowerTowels,
   Signal,
   SmartphoneFilled,
   Smartphone,
+  SnackBar,
   SortAscending,
   SortDescending,
   Spa,
+  SportsEquipment,
   StarFilled,
   Star,
   SystemStatus,
+  ParkingLot,
   PriceTag,
   Time,
   TimeFilled,
   Token,
+  Tolietries,
+  TrainingTowels,
   Trash,
   TrendingUp,
   TriangleAlert,
@@ -287,5 +320,6 @@ export {
   Visibility,
   Wallet,
   Whatsapp,
+  WiFi,
   Youtube,
 };

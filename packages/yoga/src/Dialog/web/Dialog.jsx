@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import styled from 'styled-components';
-import { func, bool, node } from 'prop-types';
+import { func, bool, node, number } from 'prop-types';
 
 import { Close } from '@gympass/yoga-icons';
 import { usePortal } from '../../hooks';
@@ -31,6 +31,7 @@ export const StyledDialog = styled(Card)`
 
 const Overlay = styled.div`
   ${({
+    zIndex,
     theme: {
       yoga: {
         components: { dialog },
@@ -38,7 +39,7 @@ const Overlay = styled.div`
     },
   }) => `
   display: flex;
-  z-index: 3;
+  z-index: ${zIndex};
   justify-content: center;
   align-items: center;
 
@@ -52,7 +53,14 @@ const Overlay = styled.div`
   `}
 `;
 
-const Dialog = ({ isOpen, hideCloseButton, children, onClose, ...props }) => {
+function Dialog({
+  isOpen,
+  hideCloseButton,
+  children,
+  onClose,
+  zIndex,
+  ...props
+}) {
   const dialogRef = useRef(null);
   const dialogElement = usePortal('dialog');
   const isCloseButtonVisible = onClose && !hideCloseButton;
@@ -85,7 +93,12 @@ const Dialog = ({ isOpen, hideCloseButton, children, onClose, ...props }) => {
 
   return isOpen ? (
     createPortal(
-      <Overlay onClick={closeDialog} onClose={onClose} ref={dialogRef}>
+      <Overlay
+        onClick={closeDialog}
+        onClose={onClose}
+        ref={dialogRef}
+        zIndex={zIndex}
+      >
         <StyledDialog onClose={onClose} {...props}>
           {isCloseButtonVisible && (
             <Box d="flex" justifyContent="flex-end" w="100%">
@@ -100,18 +113,16 @@ const Dialog = ({ isOpen, hideCloseButton, children, onClose, ...props }) => {
   ) : (
     <></>
   );
-};
+}
 
 Dialog.propTypes = {
   /** Control the dialog visibility. */
   isOpen: bool,
-
   /** Hide the close button when onClose prop is defined. */
   hideCloseButton: bool,
-
   /** Function to close the dialog. */
   onClose: func,
-
+  zIndex: number,
   children: node.isRequired,
 };
 
@@ -119,6 +130,7 @@ Dialog.defaultProps = {
   isOpen: false,
   hideCloseButton: false,
   onClose: undefined,
+  zIndex: 3,
 };
 
 Dialog.displayName = 'Dialog';

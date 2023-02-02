@@ -42,6 +42,19 @@ describe('<Feedback />', () => {
     expect(getByRole('button', { name: 'Cancel' })).toBeTruthy();
   });
 
+  it('should render correctly when not centered vertically', () => {
+    const { baseElement } = renderWithTheme(
+      <Feedback
+        variant="success"
+        title={title}
+        description={description}
+        center={false}
+      />,
+    );
+
+    expect(baseElement).toMatchSnapshot();
+  });
+
   it('should render the icon for success variant', () => {
     const { getByTestId } = renderWithTheme(
       <Feedback variant="success" title={title} description={description} />,

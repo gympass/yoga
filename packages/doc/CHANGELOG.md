@@ -3,6 +3,116 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.36.4](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.36.3...@gympass/yoga-doc@2.36.4) (2023-01-27)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.36.3](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.36.2...@gympass/yoga-doc@2.36.3) (2023-01-26)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.36.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.36.1...@gympass/yoga-doc@2.36.2) (2023-01-26)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.36.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.36.0...@gympass/yoga-doc@2.36.1) (2023-01-25)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+# [2.36.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.35.8...@gympass/yoga-doc@2.36.0) (2023-01-23)
+
+
+### Features
+
+* **components:** add center props to feedback component ([8bc0c11](https://github.com/gympass/yoga/commit/8bc0c11619d20b533835043280ad5fe03d7f2d49))
+
+
+
+
+
+## [2.35.8](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.35.7...@gympass/yoga-doc@2.35.8) (2023-01-23)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.35.7](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.35.6...@gympass/yoga-doc@2.35.7) (2023-01-17)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.35.6](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.35.5...@gympass/yoga-doc@2.35.6) (2023-01-16)
+
+
+### Bug Fixes
+
+* **feedback:** fix feedback mobile position and update documentation ([3565cd9](https://github.com/gympass/yoga/commit/3565cd9405c85078fcd327fc2910dcff1a83697c))
+
+
+
+
+
+## [2.35.5](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.35.4...@gympass/yoga-doc@2.35.5) (2023-01-16)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.35.4](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.35.3...@gympass/yoga-doc@2.35.4) (2023-01-11)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.35.3](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.35.2...@gympass/yoga-doc@2.35.3) (2023-01-10)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.35.2](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.35.1...@gympass/yoga-doc@2.35.2) (2023-01-09)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
+## [2.35.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.35.0...@gympass/yoga-doc@2.35.1) (2023-01-05)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
 # [2.35.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.34.1...@gympass/yoga-doc@2.35.0) (2022-12-14)
 
 
