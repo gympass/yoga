@@ -34,6 +34,7 @@
     "url": "https://github.com/Gympass/yoga/issues"
   },
   "dependencies": {
+    "@babel/types": "^7.20.7",
     "@gympass/yoga-common": "^1.1.2",
     "@gympass/yoga-helpers": "^1.0.3",
     "@gympass/yoga-icons": "^1.9.0",
@@ -42,6 +43,10 @@
     "@gympass/yoga-tokens": "^3.1.5",
     "@ptomasroos/react-native-multi-slider": "^1.0.0",
     "@radix-ui/react-dropdown-menu": "^2.0.1",
+    "@types/jest": "^29.2.4",
+    "@types/react": "^18.0.26",
+    "@types/react-native": "^0.70.8",
+    "@types/react-test-renderer": "^18.0.0",
     "date-fns": "^2.29.2",
     "downshift": "^5.0.0",
     "lodash.get": "^4.4.2",
@@ -49,13 +54,16 @@
     "proxy-polyfill": "^0.3.1",
     "rc-slider": "^8.7.1",
     "react-google-font-loader": "^1.1.0",
+    "typescript": "^4.9.4",
     "react-phone-input-2": "^2.15.1"
   },
   "devDependencies": {
     "@testing-library/react": "^12.0.4",
     "@testing-library/react-native": "^9.1.0",
+    "@types/react-dom": "^18.0.9",
     "babel-plugin-inline-react-svg": "^1.1.1",
-    "styled-components": "^4.4.0"
+    "styled-components": "^4.4.0",
+    "ts-loader": "^9.4.2"
   },
   "peerDependencies": {
     "@react-native-picker/picker": "^1.16.6",

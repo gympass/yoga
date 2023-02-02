@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "es6",
+    "target": "es5",
+    "rootDir": "src",
+    "outDir": "./dist/",
+    "declaration": true,
+    "noImplicitAny": true,
+    "jsx": "react",
+    "lib": ["esnext"],
+    "types": ["react", "jest"],
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "strict": false
+  },
+  "include": ["src"],
+  "files": ["index.d.ts"],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}

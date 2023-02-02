@@ -68,6 +68,7 @@ const plugins = [
       },
     },
   },
+  'gatsby-plugin-typescript',
 ];
 
 module.exports = {

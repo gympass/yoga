@@ -28,7 +28,9 @@
  * @type {Spacing}
  * @default
  */
-const spacing = [0, 4, 8, 12, 16, 20, 24, 32, 40, 56, 72, 80];
+import { SpacingProps } from '../types/spacing';
+
+const spacing: SpacingProps = [0, 4, 8, 12, 16, 20, 24, 32, 40, 56, 72, 80];
 
 [
   spacing.zero,

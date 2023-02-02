@@ -1,4 +1,4 @@
-const merge = (target, source) => {
+const merge = (target: object, source: object) => {
   const newTarget = { ...target };
 
   Object.keys(source).forEach(key => {

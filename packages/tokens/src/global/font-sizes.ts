@@ -25,7 +25,9 @@
  * @type {FontSize}
  * @default
  */
-const fontSizes = [10, 12, 14, 16, 20, 24, 32, 40, 48];
+import { FontSizesProps } from '../types/font-sizes';
+
+const fontSizes: FontSizesProps = [10, 12, 14, 16, 20, 24, 32, 40, 48];
 
 [
   fontSizes.xxsmall,
