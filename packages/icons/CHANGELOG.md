@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.9.0...@gympass/yoga-icons@1.9.1) (2023-02-02)
+
+
+### Bug Fixes
+
+* **Icon:** update toiletries name ([9e830ef](https://github.com/Gympass/yoga/commit/9e830ef6080a14f52bd5927c65756cec7ad01a5d))
+
+
+
+
+
 # [1.9.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.8.0...@gympass/yoga-icons@1.9.0) (2023-01-26)
 
 
