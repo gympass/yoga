@@ -3,7 +3,6 @@ import PropTypes, { bool } from 'prop-types';
 import { theme, Box, Icon, Text } from '@gympass/yoga';
 import styled, { css } from 'styled-components';
 import { Check, ChevronUp, ChevronDown, Close } from '@gympass/yoga-icons';
-import { display, flexes } from '@gympass/yoga-system';
 import { useOnClickOutside } from '../../hooks';
 
 const Wrapper = styled.div`
@@ -21,25 +20,39 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-  ${display}
-  ${flexes}
-  border-radius: ${theme.radii.small}px;
-  background: #fff;
-  border: ${theme.borders.small}px solid #ccc;
+  ${({
+    showDropDown,
+    theme: {
+      yoga: {
+        components: { dropdowninput },
+      },
+    },
+  }) => `
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: ${dropdowninput.container.border.radius}px;
+  background: ${dropdowninput.container.background};
+  border: ${dropdowninput.container.border.width}px solid ${
+    dropdowninput.container.border.color
+  };
   box-sizing: border-box;
-  background: #fff;
-  height: 52px;
-  margin: ${theme.spacing.xxsmall}px 0 0;
+  background: ${dropdowninput.container.background};
+  height: ${dropdowninput.container.height}px;
+  margin: ${dropdowninput.container.margin.top}px 0 0;
   transition: all 0.1s ease-in-out;
-  ${({ showDropDown }) =>
+
+  ${
     showDropDown &&
     css`
-      border-top: ${theme.borders.small}px solid #ccc;
-      border-left: ${theme.borders.small}px solid #ccc;
-      border-right: ${theme.borders.small}px solid #ccc;
-      border-radius: ${theme.radii.small}px ${theme.radii.small}px 0px 0px;
+      border-top: 1px solid ${dropdowninput.container.border.color};
+      border-left: 1px solid ${dropdowninput.container.border.color};
+      border-right: 1px solid ${dropdowninput.container.border.color};
+      border-radius: 8px 8px 0 0;
       border-bottom: 0;
-    `}
+    `
+  }
+  `}
 `;
 
 const Clear = styled.button`
@@ -58,10 +71,9 @@ const Input = styled.input`
   flex: 1;
   font-family: ${({ theme: { yoga } }) => yoga.baseFont.family};
   font-size: ${theme.fontSizes.small}px;
-  font-style: normal;
   font-weight: ${theme.fontWeights.regular};
   height: 100%;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   line-height: ${theme.lineHeights.small}px;
   outline: none;
   text-align: left;
@@ -87,21 +99,31 @@ const Divisor = styled.div`
 `;
 
 const ContainerDropDown = styled.ul`
-  margin: 0;
-  height: 272px;
-  width: ${props => `${props.width}px`};
-  overflow-y: scroll;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  list-style: none;
-  padding: 0 16px 0 16px;
-  transition: all 0.1s ease-in-out;
-  border-radius: 0px 0px ${theme.radii.small}px ${theme.radii.small}px;
-  background: #fff;
-  position: absolute;
-  top: ${props => `${props.position}px`};
-  z-index: 9999;
+  ${({
+    width,
+    position,
+    theme: {
+      yoga: {
+        components: { dropdowninput },
+      },
+    },
+  }) => `
+    margin: ${dropdowninput.containerDropDown.margin};
+    height: ${dropdowninput.containerDropDown.height}px;
+    width: ${width}px;
+    overflow-y: scroll;
+    border-left: ${dropdowninput.containerDropDown.border.width}px solid ${dropdowninput.containerDropDown.border.color};
+    border-right: ${dropdowninput.containerDropDown.border.width}px solid ${dropdowninput.containerDropDown.border.color};
+    border-bottom: ${dropdowninput.containerDropDown.border.width}px solid ${dropdowninput.containerDropDown.border.color};
+    list-style: none;
+    padding: 0 ${dropdowninput.containerDropDown.padding.right}px 0 ${dropdowninput.containerDropDown.padding.left}px;
+    transition: all 0.1s ease-in-out;
+    border-radius: 0px 0px ${dropdowninput.containerDropDown.border.radius}px ${dropdowninput.containerDropDown.border.radius}px;
+    background: ${dropdowninput.containerDropDown.background};
+    position: absolute;
+    top: ${position}px;
+    z-index: 9999;
+  `}
 `;
 
 const ButtonDropDown = styled.button`
@@ -117,27 +139,29 @@ const ButtonDropDown = styled.button`
 `;
 
 const ItemDropDown = styled.li`
+  ${({
+    theme: {
+      yoga: {
+        components: { dropdowninput },
+      },
+    },
+  }) => `
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-content: center;
   width: 100%;
-  height: 72px;
+  height: ${dropdowninput.itemDropDown.height}px;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: ${dropdowninput.itemDropDown.fontSize}px;
+  font-weight: ${dropdowninput.itemDropDown.fontWeight};
 
   div {
     display: flex;
     align-items: center;
   }
-
-  &:last-child {
-    border: none;
-  }
+  `}
 `;
-
-const ContainerName = styled.div``;
 
 const DropdownInput = ({
   full,
@@ -151,14 +175,14 @@ const DropdownInput = ({
 }) => {
   const [showDropDown, setShowDropDown] = useState(false);
   const inputRef = useRef(null);
-  const DropDownRef = useRef(null);
+  const dropDownRef = useRef(null);
   const containerRef = useRef(null);
 
   const toggleShowDropDown = () => {
     setShowDropDown(!showDropDown);
   };
 
-  useOnClickOutside(DropDownRef, e => {
+  useOnClickOutside(dropDownRef, e => {
     if (e.target.id !== 'button-drop-down') {
       toggleShowDropDown();
     }
@@ -168,36 +192,6 @@ const DropdownInput = ({
     onChangeSelectedCountry(selected);
     toggleShowDropDown();
     inputRef.current.focus();
-  };
-
-  const renderListCountries = () => {
-    return countries.map(country => {
-      const isCountrySelected = selectedCountry.id === country.id;
-
-      return (
-        <ItemDropDown key={country.id} onClick={changeSelectedCountry(country)}>
-          <ContainerName>
-            <Box>
-              <Icon
-                as={country.icon}
-                width="medium"
-                height="medium"
-                marginRight={4}
-              />
-            </Box>
-            <Text.Small
-              fw={isCountrySelected ? 'medium' : 'regular'}
-              color={isCountrySelected ? 'primary' : 'secondary'}
-            >
-              {country.name}
-            </Text.Small>
-          </ContainerName>
-          {isCountrySelected && (
-            <Icon as={Check} width="medium" height="medium" fill="vibin" />
-          )}
-        </ItemDropDown>
-      );
-    });
   };
 
   return (
@@ -248,12 +242,46 @@ const DropdownInput = ({
 
       {showDropDown && (
         <ContainerDropDown
-          ref={DropDownRef}
+          ref={dropDownRef}
           position={containerRef.current.offsetTop + 50}
           width={containerRef.current.offsetWidth}
           data-testid="dropdown"
         >
-          {renderListCountries()}
+          {countries.map(country => {
+            const isCountrySelected = selectedCountry.id === country.id;
+
+            return (
+              <ItemDropDown
+                key={country.id}
+                onClick={changeSelectedCountry(country)}
+              >
+                <div>
+                  <Box>
+                    <Icon
+                      as={country.icon}
+                      width="medium"
+                      height="medium"
+                      marginRight={4}
+                    />
+                  </Box>
+                  <Text.Small
+                    fw={isCountrySelected ? 'medium' : 'regular'}
+                    color={isCountrySelected ? 'primary' : 'secondary'}
+                  >
+                    {country.name}
+                  </Text.Small>
+                </div>
+                {isCountrySelected && (
+                  <Icon
+                    as={Check}
+                    width="medium"
+                    height="medium"
+                    fill="vibin"
+                  />
+                )}
+              </ItemDropDown>
+            );
+          })}
         </ContainerDropDown>
       )}
     </Wrapper>
