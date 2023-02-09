@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
 import {
   arrayOf,
@@ -96,19 +96,35 @@ const Input = React.forwardRef(
       onClean,
       hideMaxLength,
       rightIcon,
+      initialValue,
       ...props
     },
     ref,
   ) => {
+    const [inputValue, setInputValue] = useState(value || initialValue);
     const inputRef = ref || useRef(null);
 
     const cleanField = e => {
       if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
 
-        onClean('');
+        setInputValue('');
+        if (onClean) {
+          onClean('');
+        }
 
         inputRef.current.focus();
+      }
+    };
+
+    const onInputChange = event => {
+      const { value: newValue } = event.target;
+
+      if (maxLength && newValue.length > maxLength) return;
+
+      setInputValue(newValue);
+      if (onChange) {
+        onChange(event);
       }
     };
 
@@ -120,7 +136,7 @@ const Input = React.forwardRef(
           full={full}
           label={label}
           style={style}
-          value={value}
+          value={inputValue}
         >
           {!children ? (
             <Field
@@ -135,8 +151,8 @@ const Input = React.forwardRef(
                 maxLength,
               }}
               ref={inputRef}
-              value={value}
-              onChange={onChange}
+              value={inputValue}
+              onChange={onInputChange}
             />
           ) : (
             children
@@ -147,7 +163,7 @@ const Input = React.forwardRef(
           </Label>
 
           {label && <Legend>{label}</Legend>}
-          {cleanable && !readOnly && value && (
+          {cleanable && !readOnly && inputValue && (
             <IconWrapper
               tabIndex={0}
               disabled={disabled}
@@ -179,7 +195,7 @@ const Input = React.forwardRef(
             error={error}
             helper={helper}
             maxLength={maxLength}
-            length={value.length}
+            length={inputValue.length}
             disabled={disabled}
             hideMaxLength={hideMaxLength}
           />
@@ -213,6 +229,8 @@ Input.propTypes = {
   hideMaxLength: bool,
   placeholder: string,
   rightIcon: node,
+  /** initial value of the input */
+  initialValue: string,
 };
 
 Input.defaultProps = {
@@ -233,6 +251,7 @@ Input.defaultProps = {
   hideMaxLength: false,
   placeholder: undefined,
   rightIcon: undefined,
+  initialValue: '',
 };
 
 export default Input;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { render, fireEvent, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 import { ThemeProvider, Input } from '../..';
 
@@ -124,8 +125,10 @@ describe('<Input />', () => {
   });
 
   describe('maxLength', () => {
-    it('should update maxLength counter when add character', () => {
-      const { rerender } = render(
+    it('should update maxLength counter when add character', async () => {
+      const user = userEvent.setup();
+
+      render(
         <ThemeProvider>
           <Input label="Input" maxLength={10} />
         </ThemeProvider>,
@@ -133,11 +136,7 @@ describe('<Input />', () => {
 
       expect(screen.getByText('0/10').textContent).toBe('0/10');
 
-      rerender(
-        <ThemeProvider>
-          <Input label="Input" value="foo" maxLength={10} />
-        </ThemeProvider>,
-      );
+      await user.type(screen.getByRole('textbox'), 'foo');
 
       expect(screen.getByText('3/10').textContent).toBe('3/10');
     });
@@ -158,8 +157,10 @@ describe('<Input />', () => {
       expect(onClean).toHaveBeenCalled();
     });
 
-    it('should test if clean button is present', () => {
-      const { rerender } = render(
+    it('should test if clean button is present', async () => {
+      const user = userEvent.setup();
+
+      render(
         <ThemeProvider>
           <Input label="Input" />
         </ThemeProvider>,
@@ -168,11 +169,7 @@ describe('<Input />', () => {
       // closeButton
       expect(screen.queryByRole('button')).toBeNull();
 
-      rerender(
-        <ThemeProvider>
-          <Input label="Input" value="foo" />
-        </ThemeProvider>,
-      );
+      await user.type(screen.getByRole('textbox'), 'foo');
 
       expect(screen.queryByRole('button')).not.toBeNull();
     });
