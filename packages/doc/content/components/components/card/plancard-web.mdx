@@ -105,6 +105,45 @@ Display an extra content before the divider.
 </PlanCard>
 ```
 
+#### Title badge
+```javascript
+<PlanCard>
+  <PlanCard.Content
+    title="Gold"
+    currency="$"
+    price="99.90"
+    period="/mo"
+    badgeColor="energy"
+  >
+    <PlanCard.List>
+      <PlanCard.ListItem icon={Checkin} text="2.900 gyms and studios" />
+      <PlanCard.ListItem icon={Dumbbell} text="1x/day standard access" />
+      <PlanCard.ListItem icon={User} text="4x/month 1-on-1 sessions" />
+    </PlanCard.List>
+  </PlanCard.Content>
+</PlanCard>
+```
+
+#### Discount
+```javascript
+<PlanCard discount="SAVE 40%">
+  <PlanCard.Tag variant="informative">Active</PlanCard.Tag>
+  <PlanCard.Content
+    title="Gold"
+    currency="$"
+    price="99.90"
+    period="/mo"
+    badgeColor="energy"
+  >
+    <PlanCard.List>
+      <PlanCard.ListItem icon={Checkin} text="2.900 gyms and studios" />
+      <PlanCard.ListItem icon={Dumbbell} text="1x/day standard access" />
+      <PlanCard.ListItem icon={User} text="4x/month 1-on-1 sessions" />
+    </PlanCard.List>
+  </PlanCard.Content>
+</PlanCard>
+```
+
 ### Props
 
 #### PlanCard
