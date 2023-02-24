@@ -207,17 +207,17 @@ function Calendar({
 
   const isEqual = day => {
     return (
-      (startDate && toUTCDate(startDate) === toUTCDateDay(day)) ||
-      (endDate && toUTCDate(endDate) === toUTCDateDay(day))
+      (startDate && startDate.getTime() === toUTCDateDay(day)) ||
+      (endDate && endDate.getTime() === toUTCDateDay(day))
     );
   };
 
   const inRange = day => {
     return (
       startDate &&
-      toUTCDate(startDate) <= toUTCDateDay(day) &&
+      startDate.getTime() <= toUTCDateDay(day) &&
       endDate &&
-      toUTCDate(endDate) >= toUTCDateDay(day)
+      endDate.getTime() >= toUTCDateDay(day)
     );
   };
 
@@ -231,11 +231,9 @@ function Calendar({
       (disablePastFrom &&
         local.getTime() <
           new Date(
-            Date.UTC(
-              disablePastFrom.getFullYear(),
-              disablePastFrom.getMonth(),
-              disablePastFrom.getDate(),
-            ),
+            disablePastFrom.getFullYear(),
+            disablePastFrom.getMonth(),
+            disablePastFrom.getDate(),
           ));
 
     const futureDateDisabled =
@@ -243,11 +241,9 @@ function Calendar({
       (disableFutureFrom &&
         local.getTime() >
           new Date(
-            Date.UTC(
-              disableFutureFrom.getFullYear(),
-              disableFutureFrom.getMonth(),
-              disableFutureFrom.getDate(),
-            ),
+            disableFutureFrom.getFullYear(),
+            disableFutureFrom.getMonth(),
+            disableFutureFrom.getDate(),
           ));
 
     return pastDatesDisabled || futureDateDisabled;
