@@ -31,22 +31,38 @@ const Plan = styled.article`
 `;
 
 const Border = styled.span`
-  position: absolute;
-  top: 0;
-  left: 0;
+  ${({ variant, theme }) => {
+    const { spacing, colors } = theme.yoga;
+    const color = colors[variant];
 
-  display: inline-block;
-  width: 100%;
+    return css`
+      position: absolute;
+      top: 0;
+      left: 0;
 
-  height: ${PLAN_LINE_HEIGHT}px;
-  background-color: ${({
-    variant,
-    theme: {
-      yoga: {
-        colors: { deepPurple, [variant]: color = deepPurple },
-      },
-    },
-  }) => color};
+      display: inline-block;
+      width: 100%;
+
+      height: ${PLAN_LINE_HEIGHT}px;
+      background-color: ${color};
+
+      ::after {
+        position: absolute;
+        left: ${spacing.large}px;
+        width: 30%;
+        height: ${PLAN_LINE_HEIGHT}px;
+        content: '';
+        background: linear-gradient(
+          90deg,
+          ${color} 0%,
+          ${colors.white} 30%,
+          ${colors.white} 70%,
+          ${color} 100%
+        );
+        opacity: 0.4;
+      }
+    `;
+  }}
 `;
 
 const DiscountWrapper = styled(Box).attrs({

@@ -170,6 +170,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   background-color: #710252;
 }
 
+.c1::after {
+  position: absolute;
+  left: 24px;
+  width: 30%;
+  height: 4px;
+  content: '';
+  background: linear-gradient( 90deg, #710252 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.4) 70%, #710252 100% );
+}
+
 .c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -526,6 +535,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   background-color: #1D856C;
 }
 
+.c1::after {
+  position: absolute;
+  left: 24px;
+  width: 30%;
+  height: 4px;
+  content: '';
+  background: linear-gradient( 90deg, #1D856C 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.4) 70%, #1D856C 100% );
+}
+
 <div>
   <article
     class="c0"
@@ -677,6 +695,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   background-color: #1D856C;
 }
 
+.c1::after {
+  position: absolute;
+  left: 24px;
+  width: 30%;
+  height: 4px;
+  content: '';
+  background: linear-gradient( 90deg, #1D856C 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.4) 70%, #1D856C 100% );
+}
+
 <div>
   <article
     class="c0"
@@ -777,6 +804,15 @@ exports[`<PlanCard /> Snapshots should render the extra content 1`] = `
   width: 100%;
   height: 4px;
   background-color: #710252;
+}
+
+.c1::after {
+  position: absolute;
+  left: 24px;
+  width: 30%;
+  height: 4px;
+  content: '';
+  background: linear-gradient( 90deg, #710252 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.4) 70%, #710252 100% );
 }
 
 <div>
