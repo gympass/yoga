@@ -5,6 +5,7 @@ import Box from '../../../Box';
 import Text from '../../../Text';
 
 export const PLAN_LINE_HEIGHT = 4;
+const DISCOUNT_HEIGHT = 28;
 
 const Plan = styled.article`
   width: 100%;
@@ -31,9 +32,22 @@ const Plan = styled.article`
 `;
 
 const Border = styled.span`
-  ${({ variant, theme }) => {
+  ${({ variant, hasRightMask, theme }) => {
     const { spacing, colors } = theme.yoga;
     const color = colors[variant];
+    const MASK_SIZE = 112;
+    const baseMaskStyle = css`
+      position: absolute;
+      height: ${MASK_SIZE}px;
+      width: ${MASK_SIZE}px;
+      content: '';
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        ${colors.white} 0%,
+        transparent 100%
+      );
+      border-radius: 50%;
+    `;
 
     return css`
       position: absolute;
@@ -46,21 +60,22 @@ const Border = styled.span`
       height: ${PLAN_LINE_HEIGHT}px;
       background-color: ${color};
 
-      ::after {
-        position: absolute;
+      ::before {
+        ${baseMaskStyle}
         left: ${spacing.large}px;
-        width: 30%;
-        height: ${PLAN_LINE_HEIGHT}px;
-        content: '';
-        background: linear-gradient(
-          90deg,
-          ${color} 0%,
-          ${colors.white} 30%,
-          ${colors.white} 70%,
-          ${color} 100%
-        );
-        opacity: 0.4;
+        top: -${MASK_SIZE - DISCOUNT_HEIGHT}px;
+        opacity: 0.8;
       }
+
+      ${hasRightMask &&
+      css`
+        ::after {
+          ${baseMaskStyle}
+          top: -${MASK_SIZE - DISCOUNT_HEIGHT + PLAN_LINE_HEIGHT}px;
+          right: ${spacing.large}px;
+          opacity: 0.5;
+        }
+      `}
     `;
   }}
 `;
@@ -70,13 +85,12 @@ const DiscountWrapper = styled(Box).attrs({
   pv: 'xxxsmall',
 })`
   ${({ bg, theme }) => {
-    const MIN_WRAPPER_HEIGHT = 28;
     const baseCurveStyle = css`
       content: '';
       position: absolute;
-      left: -${MIN_WRAPPER_HEIGHT}px;
-      height: ${MIN_WRAPPER_HEIGHT}px;
-      width: ${MIN_WRAPPER_HEIGHT}px;
+      left: -${DISCOUNT_HEIGHT}px;
+      height: ${DISCOUNT_HEIGHT}px;
+      width: ${DISCOUNT_HEIGHT}px;
     `;
 
     return css`
@@ -85,7 +99,7 @@ const DiscountWrapper = styled(Box).attrs({
       right: 0;
       display: flex;
       align-items: center;
-      min-height: ${MIN_WRAPPER_HEIGHT}px;
+      min-height: ${DISCOUNT_HEIGHT}px;
       border-bottom-left-radius: 16px;
 
       ::before {
@@ -98,23 +112,25 @@ const DiscountWrapper = styled(Box).attrs({
         ${baseCurveStyle}
         top: ${PLAN_LINE_HEIGHT}px;
         background: ${theme.yoga.colors.white};
-        border-top-right-radius: ${MIN_WRAPPER_HEIGHT / 2 - PLAN_LINE_HEIGHT}px;
+        border-top-right-radius: ${DISCOUNT_HEIGHT / 2 - PLAN_LINE_HEIGHT}px;
       }
     `;
   }}
 `;
 
 function PlanCard({ children, discount, variant, ...rest }) {
+  const hasDiscount = !!discount;
+
   return (
     <Plan {...rest}>
-      {discount && (
+      {hasDiscount && (
         <DiscountWrapper bg={variant}>
           <Text.Tiny color="white" fontWeight="medium">
             {discount}
           </Text.Tiny>
         </DiscountWrapper>
       )}
-      <Border variant={variant} />
+      <Border variant={variant} hasRightMask={hasDiscount} />
       {children}
     </Plan>
   );

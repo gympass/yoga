@@ -170,13 +170,16 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   background-color: #710252;
 }
 
-.c1::after {
+.c1::before {
   position: absolute;
-  left: 24px;
-  width: 30%;
-  height: 4px;
+  height: 112px;
+  width: 112px;
   content: '';
-  background: linear-gradient( 90deg, #710252 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.4) 70%, #710252 100% );
+  background: radial-gradient( 50% 50% at 50% 50%, #FFFFFF 0%, transparent 100% );
+  border-radius: 50%;
+  left: 24px;
+  top: -84px;
+  opacity: 0.8;
 }
 
 .c2 {
@@ -535,13 +538,16 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   background-color: #1D856C;
 }
 
-.c1::after {
+.c1::before {
   position: absolute;
-  left: 24px;
-  width: 30%;
-  height: 4px;
+  height: 112px;
+  width: 112px;
   content: '';
-  background: linear-gradient( 90deg, #1D856C 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.4) 70%, #1D856C 100% );
+  background: radial-gradient( 50% 50% at 50% 50%, #FFFFFF 0%, transparent 100% );
+  border-radius: 50%;
+  left: 24px;
+  top: -84px;
+  opacity: 0.8;
 }
 
 <div>
@@ -695,13 +701,16 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   background-color: #1D856C;
 }
 
-.c1::after {
+.c1::before {
   position: absolute;
-  left: 24px;
-  width: 30%;
-  height: 4px;
+  height: 112px;
+  width: 112px;
   content: '';
-  background: linear-gradient( 90deg, #1D856C 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.4) 70%, #1D856C 100% );
+  background: radial-gradient( 50% 50% at 50% 50%, #FFFFFF 0%, transparent 100% );
+  border-radius: 50%;
+  left: 24px;
+  top: -84px;
+  opacity: 0.8;
 }
 
 <div>
@@ -806,13 +815,16 @@ exports[`<PlanCard /> Snapshots should render the extra content 1`] = `
   background-color: #710252;
 }
 
-.c1::after {
+.c1::before {
   position: absolute;
-  left: 24px;
-  width: 30%;
-  height: 4px;
+  height: 112px;
+  width: 112px;
   content: '';
-  background: linear-gradient( 90deg, #710252 0%, rgba(255,255,255,0.4) 30%, rgba(255,255,255,0.4) 70%, #710252 100% );
+  background: radial-gradient( 50% 50% at 50% 50%, #FFFFFF 0%, transparent 100% );
+  border-radius: 50%;
+  left: 24px;
+  top: -84px;
+  opacity: 0.8;
 }
 
 <div>
