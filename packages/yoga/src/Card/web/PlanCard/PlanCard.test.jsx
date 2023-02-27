@@ -115,5 +115,41 @@ describe('<PlanCard />', () => {
 
       expect(container).toMatchSnapshot();
     });
+
+    it('should render the title without a colored badge', () => {
+      const { getByText } = render(
+        <ThemeProvider>
+          <PlanCard>
+            <PlanCard.Content title="Basic" />
+          </PlanCard>
+        </ThemeProvider>,
+      );
+
+      expect(getByText('Basic')).toMatchSnapshot();
+    });
+
+    it('should render the title with a colored badge', () => {
+      const { getByText } = render(
+        <ThemeProvider>
+          <PlanCard>
+            <PlanCard.Content title="Basic" badgeColor="energy" />
+          </PlanCard>
+        </ThemeProvider>,
+      );
+
+      expect(getByText('Basic')).toMatchSnapshot();
+    });
+
+    it('should render the discount', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <PlanCard discount="SAVE 40%" variant="energy">
+            <PlanCard.Content title="Basic" />
+          </PlanCard>
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
   });
 });
