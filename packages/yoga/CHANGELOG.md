@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.68.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.67.5...@gympass/yoga@7.68.0) (2023-02-28)
+
+
+### Features
+
+* **PlanCard.Content:** add badgeColor prop ([35debe0](https://github.com/Gympass/yoga/commit/35debe086f1b6f8149825219aaed0bfd84e86ed9))
+* **PlanCard:** add discount ([a58e1c0](https://github.com/Gympass/yoga/commit/a58e1c0d5aefe07d18d9f80184c3f22b63a39e7c))
+* **PlanCard:** add light style to discount ([523dfc7](https://github.com/Gympass/yoga/commit/523dfc7545bc56c879ec626fd722cb9437829a09))
+* **PlanCard:** add metalic effect to top border ([b802987](https://github.com/Gympass/yoga/commit/b802987d0147c352600dd58c627cf361e917fa02))
+* **PlanCard:** decrease border height ([75002d0](https://github.com/Gympass/yoga/commit/75002d0ac3e8af012fc10b32a2841337518a77c8))
+
+
+
+
+
 ## [7.67.5](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.67.4...@gympass/yoga@7.67.5) (2023-02-02)
 
 **Note:** Version bump only for package @gympass/yoga
