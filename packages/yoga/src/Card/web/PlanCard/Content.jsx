@@ -16,12 +16,30 @@ const Title = styled(Text.Medium)`
   ${props => {
     const {
       components: { card, cardweb },
+      colors,
+      radii,
     } = theme(props);
+    const { badgeColor } = props;
+    const badgeStyle =
+      badgeColor &&
+      css`
+        ::before {
+          position: absolute;
+          left: 0;
+          content: '';
+          height: 24px;
+          width: 4px;
+          background-color: ${colors[props.badgeColor]};
+          border-top-right-radius: ${radii.xsmall}px;
+          border-bottom-right-radius: ${radii.xsmall}px;
+        }
+      `;
 
     return css`
       color: ${card.plan.title.color};
       margin-bottom: ${cardweb.plan.title.margin.bottom}px;
       line-height: ${cardweb.plan.title.lineHeight}px;
+      ${badgeStyle}
     `;
   }}
 `;
@@ -59,6 +77,7 @@ const EnhancePrice = styled(Text.Medium)`
 
 const PlanCardContent = ({
   title,
+  badgeColor,
   subtitle,
   description,
   currency,
@@ -71,7 +90,7 @@ const PlanCardContent = ({
 }) => (
   <Wrapper {...rest}>
     {subtitle && <Subtitle>{subtitle}</Subtitle>}
-    {title && <Title>{title}</Title>}
+    {title && <Title badgeColor={badgeColor}>{title}</Title>}
     {description && <Description>{description}</Description>}
     {!!price && (
       <Price>
@@ -101,6 +120,8 @@ PlanCardContent.propTypes = {
   subtitle: string,
   extra: node,
   children: node,
+  /** color of the badge attached to the title  */
+  badgeColor: string,
 };
 
 PlanCardContent.defaultProps = {
@@ -112,6 +133,7 @@ PlanCardContent.defaultProps = {
   price: null,
   period: null,
   extra: null,
+  badgeColor: null,
 };
 
 PlanCardContent.displayName = 'PlanCard.Content';

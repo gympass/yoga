@@ -166,8 +166,20 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   left: 0;
   display: inline-block;
   width: 100%;
-  height: 8px;
+  height: 4px;
   background-color: #710252;
+}
+
+.c1::before {
+  position: absolute;
+  height: 112px;
+  width: 112px;
+  content: '';
+  background: radial-gradient( 50% 50% at 50% 50%, #FFFFFF 0%, transparent 100% );
+  border-radius: 50%;
+  left: 24px;
+  top: -84px;
+  opacity: 0.8;
 }
 
 .c2 {
@@ -225,7 +237,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  top: 32px;
+  top: 28px;
   left: 24px;
 }
 
@@ -522,8 +534,20 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   left: 0;
   display: inline-block;
   width: 100%;
-  height: 8px;
+  height: 4px;
   background-color: #1D856C;
+}
+
+.c1::before {
+  position: absolute;
+  height: 112px;
+  width: 112px;
+  content: '';
+  background: radial-gradient( 50% 50% at 50% 50%, #FFFFFF 0%, transparent 100% );
+  border-radius: 50%;
+  left: 24px;
+  top: -84px;
+  opacity: 0.8;
 }
 
 <div>
@@ -673,8 +697,20 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   left: 0;
   display: inline-block;
   width: 100%;
-  height: 8px;
+  height: 4px;
   background-color: #1D856C;
+}
+
+.c1::before {
+  position: absolute;
+  height: 112px;
+  width: 112px;
+  content: '';
+  background: radial-gradient( 50% 50% at 50% 50%, #FFFFFF 0%, transparent 100% );
+  border-radius: 50%;
+  left: 24px;
+  top: -84px;
+  opacity: 0.8;
 }
 
 <div>
@@ -718,6 +754,173 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
       </div>
       <hr
         class="c8"
+      />
+    </div>
+  </article>
+</div>
+`;
+
+exports[`<PlanCard /> Snapshots should render the discount 1`] = `
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.c6 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
+.c4 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  color: #231B22;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  max-width: 312px;
+  overflow: hidden;
+  padding: 56px 24px 24px 24px;
+  border: 1px solid #D7D7E0;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+}
+
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #FFC24C;
+}
+
+.c3::before {
+  position: absolute;
+  height: 112px;
+  width: 112px;
+  content: '';
+  background: radial-gradient( 50% 50% at 50% 50%, #FFFFFF 0%, transparent 100% );
+  border-radius: 50%;
+  left: 24px;
+  top: -84px;
+  opacity: 0.8;
+}
+
+.c3::after {
+  position: absolute;
+  height: 112px;
+  width: 112px;
+  content: '';
+  background: radial-gradient( 50% 50% at 50% 50%, #FFFFFF 0%, transparent 100% );
+  border-radius: 50%;
+  top: -88px;
+  right: 24px;
+  opacity: 0.5;
+}
+
+.c1 {
+  background-color: #FFC24C;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 28px;
+  border-bottom-left-radius: 16px;
+}
+
+.c1::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  height: 28px;
+  width: 28px;
+  top: 0;
+  background: #FFC24C;
+}
+
+.c1::after {
+  content: '';
+  position: absolute;
+  left: -28px;
+  height: 28px;
+  width: 28px;
+  top: 4px;
+  background: #FFFFFF;
+  border-top-right-radius: 10px;
+}
+
+<div>
+  <article
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <p
+        class="c2"
+        color="white"
+        font-weight="medium"
+      >
+        SAVE 40%
+      </p>
+    </div>
+    <span
+      class="c3"
+    />
+    <div
+      class="c4"
+    >
+      <p
+        class="c5"
+      >
+        Basic
+      </p>
+      <hr
+        class="c6"
       />
     </div>
   </article>
@@ -775,8 +978,20 @@ exports[`<PlanCard /> Snapshots should render the extra content 1`] = `
   left: 0;
   display: inline-block;
   width: 100%;
-  height: 8px;
+  height: 4px;
   background-color: #710252;
+}
+
+.c1::before {
+  position: absolute;
+  height: 112px;
+  width: 112px;
+  content: '';
+  background: radial-gradient( 50% 50% at 50% 50%, #FFFFFF 0%, transparent 100% );
+  border-radius: 50%;
+  left: 24px;
+  top: -84px;
+  opacity: 0.8;
 }
 
 <div>
@@ -803,4 +1018,55 @@ exports[`<PlanCard /> Snapshots should render the extra content 1`] = `
     </div>
   </article>
 </div>
+`;
+
+exports[`<PlanCard /> Snapshots should render the title with a colored badge 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  color: #231B22;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+.c0::before {
+  position: absolute;
+  left: 0;
+  content: '';
+  height: 24px;
+  width: 4px;
+  background-color: #FFC24C;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+<p
+  class="c0"
+>
+  Basic
+</p>
+`;
+
+exports[`<PlanCard /> Snapshots should render the title without a colored badge 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  color: #231B22;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+<p
+  class="c0"
+>
+  Basic
+</p>
 `;
