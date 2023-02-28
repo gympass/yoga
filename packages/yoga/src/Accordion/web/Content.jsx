@@ -1,9 +1,9 @@
-import { node } from 'prop-types';
+import { node, string } from 'prop-types';
 import React from 'react';
 
 import styled from 'styled-components';
 
-const Content = ({ children }) => {
+const Content = ({ children, className }) => {
   const ContentWrapper = styled.div`
     ${({
       theme: {
@@ -18,11 +18,16 @@ const Content = ({ children }) => {
     }}
   `;
 
-  return <ContentWrapper>{children}</ContentWrapper>;
+  return <ContentWrapper className={className}>{children}</ContentWrapper>;
 };
 
 Content.propTypes = {
   children: node.isRequired,
+  className: string,
+};
+
+Content.defaultProps = {
+  className: '',
 };
 
 export default Content;
