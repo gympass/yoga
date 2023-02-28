@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Accordion /> should match snapshot 1`] = `
+.c7 {
+  padding: 0 20px 20px;
+}
+
 .c8 {
   box-sizing: border-box;
   text-align: center;
@@ -211,10 +215,6 @@ exports[`<Accordion /> should match snapshot 1`] = `
   -webkit-transition: all 200ms ease-out 0s;
   transition: all 200ms ease-out 0s;
   fill: #D8385E;
-}
-
-.c7 {
-  padding: 0 20px 20px;
 }
 
 <body>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { render, cleanup, screen } from '@testing-library/react';
 import { Text, Button } from '@gympass/yoga';
 import { ThemeProvider } from '../..';
 
@@ -24,5 +24,28 @@ describe('<Accordion />', () => {
     );
 
     expect(baseElement).toMatchSnapshot();
+  });
+
+  it('should have className when passed as props', () => {
+    render(
+      <ThemeProvider>
+        <Accordion title="Title">
+          <Accordion.Content
+            className="className-as-props"
+            data-testid="accordion-content"
+          >
+            <Text>Content</Text>
+
+            <Button small inverted>
+              Small button
+            </Button>
+          </Accordion.Content>
+        </Accordion>
+      </ThemeProvider>,
+    );
+
+    expect(screen.getByTestId('accordion-content')).toHaveClass(
+      'className-as-props',
+    );
   });
 });
