@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.69.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.68.0...@gympass/yoga@7.69.0) (2023-03-01)
+
+
+### Features
+
+* **accordion:** added className to enable edit styles ([24a9a48](https://github.com/Gympass/yoga/commit/24a9a48ed5cc4bdecbc6affaff5324c9ff4ca84e))
+
+
+
+
+
 # [7.68.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.67.5...@gympass/yoga@7.68.0) (2023-02-28)
 
 
