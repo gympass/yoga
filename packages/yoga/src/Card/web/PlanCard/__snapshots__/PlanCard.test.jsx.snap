@@ -876,21 +876,12 @@ exports[`<PlanCard /> Snapshots should render the discount 1`] = `
   content: '';
   position: absolute;
   left: -28px;
-  height: 28px;
-  width: 28px;
-  top: 0;
-  background: #FFC24C;
-}
-
-.c1::after {
-  content: '';
-  position: absolute;
-  left: -28px;
-  height: 28px;
+  height: 10px;
   width: 28px;
   top: 4px;
-  background: #FFFFFF;
-  border-top-right-radius: 10px;
+  background: transparent;
+  border-top-right-radius: 16px;
+  box-shadow: #FFC24C 12px -1px;
 }
 
 <div>
