@@ -205,10 +205,17 @@ function Calendar({
     return new Date(Date.UTC(year, month, day)).getTime();
   };
 
+  const isSameDate = (date1, date2) =>
+    date1.getDate() === date2.getDate() &&
+    date1.getMonth() === date2.getMonth() &&
+    date1.getFullYear() === date2.getFullYear();
+
   const isEqual = day => {
+    const utcDate = new Date(Date.UTC(year, month, day));
+
     return (
-      (startDate && startDate.getTime() === toUTCDateDay(day)) ||
-      (endDate && endDate.getTime() === toUTCDateDay(day))
+      (startDate && isSameDate(startDate, utcDate)) ||
+      (endDate && isSameDate(endDate, utcDate))
     );
   };
 
