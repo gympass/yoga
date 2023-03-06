@@ -85,13 +85,7 @@ const DiscountWrapper = styled(Box).attrs({
   pv: 'xxxsmall',
 })`
   ${({ bg, theme }) => {
-    const baseCurveStyle = css`
-      content: '';
-      position: absolute;
-      left: -${DISCOUNT_HEIGHT}px;
-      height: ${DISCOUNT_HEIGHT}px;
-      width: ${DISCOUNT_HEIGHT}px;
-    `;
+    const { spacing, colors } = theme.yoga;
 
     return css`
       position: absolute;
@@ -100,19 +94,18 @@ const DiscountWrapper = styled(Box).attrs({
       display: flex;
       align-items: center;
       min-height: ${DISCOUNT_HEIGHT}px;
-      border-bottom-left-radius: 16px;
+      border-bottom-left-radius: ${spacing.small}px;
 
       ::before {
-        ${baseCurveStyle}
-        top: 0;
-        background: ${theme.yoga.colors[bg]};
-      }
-
-      ::after {
-        ${baseCurveStyle}
+        content: '';
+        position: absolute;
+        left: -${DISCOUNT_HEIGHT}px;
+        height: ${DISCOUNT_HEIGHT / 2 - PLAN_LINE_HEIGHT}px;
+        width: ${DISCOUNT_HEIGHT}px;
         top: ${PLAN_LINE_HEIGHT}px;
-        background: ${theme.yoga.colors.white};
-        border-top-right-radius: ${DISCOUNT_HEIGHT / 2 - PLAN_LINE_HEIGHT}px;
+        background: transparent;
+        border-top-right-radius: ${spacing.small}px;
+        box-shadow: ${colors[bg]} ${spacing.xsmall}px -1px;
       }
     `;
   }}
