@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.69.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.69.0...@gympass/yoga@7.69.1) (2023-03-06)
+
+
+### Bug Fixes
+
+* **PlanCard:** fix glitch with discount decoration ([2c291ac](https://github.com/Gympass/yoga/commit/2c291ac51c67e48ffad70e9dd24b6e0aad1db326))
+
+
+
+
+
 # [7.69.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.68.0...@gympass/yoga@7.69.0) (2023-03-01)
 
 
