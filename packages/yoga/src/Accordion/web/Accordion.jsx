@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { string, node, bool } from 'prop-types';
+import { lineHeights } from '@gympass/yoga-tokens/src/global';
 import { ChevronDown } from '@gympass/yoga-icons';
 import { Text, Divider } from '@gympass/yoga';
 import Content from './Content';
@@ -214,7 +215,10 @@ const Accordion = ({
               {title}
             </Text.Small>
           ) : (
-            <Text.Medium color={disabled ? 'deep' : undefined}>
+            <Text.Medium
+              color={disabled ? 'deep' : undefined}
+              lineHeight={lineHeights.medium}
+            >
               {title}
             </Text.Medium>
           )}

@@ -23,6 +23,7 @@ exports[`<Accordion /> should correctly render the default version 1`] = `
   font-weight: 500;
   font-family: Rubik;
   color: #231B22;
+  line-height: 24px;
 }
 
 .c8 {
@@ -210,6 +211,7 @@ exports[`<Accordion /> should correctly render the default version with subtitle
   font-weight: 500;
   font-family: Rubik;
   color: #231B22;
+  line-height: 24px;
 }
 
 .c9 {
@@ -403,6 +405,7 @@ exports[`<Accordion /> should correctly render the default version without side 
   font-weight: 500;
   font-family: Rubik;
   color: #231B22;
+  line-height: 24px;
 }
 
 .c9 {
