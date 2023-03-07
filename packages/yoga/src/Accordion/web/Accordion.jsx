@@ -116,17 +116,6 @@ const Accordion = ({
       return `
       gap: ${subtitle ? accordion.gap.header : 0}px;
       margin: ${subtitle ? 0 : `${accordion.paddingArrow.total}px 0`};
-
-      p {
-        font-weight: ${
-          small ? accordion.fontWeight.small : accordion.fontWeight.medium
-        };
-        font-size: ${
-          small
-            ? `${accordion.fontSize.small}px`
-            : `${accordion.fontSize.medium}px`
-        }
-      }
     `;
     }}
 
@@ -220,7 +209,16 @@ const Accordion = ({
         }}
       >
         <Title>
-          <Text color={disabled ? 'deep' : undefined}>{title}</Text>
+          {small ? (
+            <Text.Small color={disabled ? 'deep' : undefined}>
+              {title}
+            </Text.Small>
+          ) : (
+            <Text.Medium color={disabled ? 'deep' : undefined}>
+              {title}
+            </Text.Medium>
+          )}
+
           <Text.Small color="deep">{subtitle}</Text.Small>
         </Title>
 
