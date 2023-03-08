@@ -31,7 +31,7 @@ render(() => {
   return (
     <>
       <Button onClick={handleOpen}>Open Drawer</Button>
-        <Drawer isOpen={isOpen}>
+        <Drawer isOpen={isOpen} onClose={handleOnClose}>
           <Drawer.Header>
             <Box display="flex" justifyContent="flex-end" alignItems="center" width="100%">
               <Box
@@ -40,7 +40,6 @@ render(() => {
                 }}
                 width="100%"
               >Drawer title</Box>
-               <Button.Icon onClick={handleOnClose} icon={Close} inverted />
             </Box>
           </Drawer.Header>
           <Drawer.Content>
