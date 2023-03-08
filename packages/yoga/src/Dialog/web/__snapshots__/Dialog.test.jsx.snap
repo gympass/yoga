@@ -99,7 +99,7 @@ exports[`<Dialog /> should match snapshot 1`] = `
 }
 
 .c2 {
-  padding: 40px  32px  32px;
+  padding: 40px 32px 32px;
   width: 580px;
   min-height: 160px;
   border-radius: 16px;
@@ -389,7 +389,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
 }
 
 .c2 {
-  padding: 24px  32px  32px;
+  padding: 24px 32px 32px;
   width: 580px;
   min-height: 160px;
   border-radius: 16px;

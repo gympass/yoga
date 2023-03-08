@@ -99,7 +99,7 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
 }
 
 .c2 {
-  padding: 40px  32px  32px;
+  padding: 40px 32px 32px;
   width: 580px;
   min-height: 160px;
   border-radius: 16px;
