@@ -16,8 +16,8 @@ export const StyledDialog = styled(Card)`
       },
     },
   }) => `
-  padding: ${onClose ? dialog.padding.withCloseButton : dialog.padding.top}px 
-  ${dialog.padding.default}px 
+  padding: ${onClose ? dialog.padding.withCloseButton : dialog.padding.top}px
+  ${dialog.padding.default}px
   ${dialog.padding.default}px;
 
   width: ${dialog.width.default}px;
@@ -72,7 +72,7 @@ function Dialog({
       }
       return true;
     },
-    [onClose],
+    [onClose, isOpen],
   );
 
   const keyPress = useCallback(
@@ -82,7 +82,7 @@ function Dialog({
       }
       return true;
     },
-    [onClose],
+    [onClose, isOpen],
   );
 
   useEffect(() => {
