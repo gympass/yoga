@@ -2,7 +2,9 @@ import React from 'react';
 
 import Accordion from './Accordion';
 
-const AccordionSmall = props => <Accordion {...props} small />;
+function AccordionSmall(props) {
+  return <Accordion {...props} small />;
+}
 
 AccordionSmall.propTypes = Accordion.propTypes;
 
