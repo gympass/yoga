@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import { string, node, bool } from 'prop-types';
 import { ChevronDown } from '@gympass/yoga-icons';
 import { Text, Divider } from '@gympass/yoga';
+import Content from './Content';
 
 const Accordion = ({
   title,
@@ -10,9 +11,21 @@ const Accordion = ({
   children,
   disabled,
   expanded,
+  small,
+  hasHorizontalPadding,
   ...props
 }) => {
   const [open, setOpen] = useState(expanded);
+
+  const getVerticalPadding = accordion => {
+    if (small) return accordion.padding.small;
+    return accordion.padding.large;
+  };
+
+  const getHorizontalPadding = accordion => {
+    if (hasHorizontalPadding) return accordion.padding.standard;
+    return accordion.padding.zero;
+  };
 
   const AccordionWrapper = styled.div`
     border: none;
@@ -60,11 +73,9 @@ const Accordion = ({
       },
     }) => {
       return `
-      padding: ${
-        subtitle
-          ? `${accordion.padding.standard}px`
-          : `${accordion.padding.large}px ${accordion.padding.standard}px`
-      };
+      padding:${getVerticalPadding(accordion)}px ${getHorizontalPadding(
+        accordion,
+      )}px;
     `;
     }}
 
@@ -105,10 +116,6 @@ const Accordion = ({
       return `
       gap: ${subtitle ? accordion.gap.header : 0}px;
       margin: ${subtitle ? 0 : `${accordion.paddingArrow.total}px 0`};
-
-      p {
-        font-weight: ${accordion.fontWeight.title};
-      }
     `;
     }}
 
@@ -133,6 +140,28 @@ const Accordion = ({
     max-height: ${({ isOpen }) => (isOpen ? '9999px' : '0')};
     overflow: hidden;
     transition: max-height 200ms ease-in-out;
+
+    ${({
+      theme: {
+        yoga: {
+          components: { accordion },
+        },
+      },
+    }) =>
+      small &&
+      css`
+        ${Content} {
+          padding-bottom: ${accordion.padding.small}px;
+        }
+      `}
+
+    ${!hasHorizontalPadding &&
+    css`
+      ${Content} {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    `}
   `;
 
   const ArrowWrapper = styled.div`
@@ -180,7 +209,18 @@ const Accordion = ({
         }}
       >
         <Title>
-          <Text color={disabled ? 'deep' : undefined}>{title}</Text>
+          {small ? (
+            <Text.Small color={disabled ? 'deep' : undefined}>
+              {title}
+            </Text.Small>
+          ) : (
+            <Text.Medium
+              color={disabled ? 'deep' : undefined}
+              lineHeight="medium"
+            >
+              {title}
+            </Text.Medium>
+          )}
 
           <Text.Small color="deep">{subtitle}</Text.Small>
         </Title>
@@ -202,12 +242,16 @@ Accordion.propTypes = {
   children: node.isRequired,
   disabled: bool,
   expanded: bool,
+  small: bool,
+  hasHorizontalPadding: bool,
 };
 
 Accordion.defaultProps = {
   subtitle: undefined,
   disabled: false,
   expanded: false,
+  small: false,
+  hasHorizontalPadding: true,
 };
 
 export default Accordion;
