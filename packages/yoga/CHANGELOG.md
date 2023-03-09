@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.70.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.69.2...@gympass/yoga@7.70.0) (2023-03-09)
+
+
+### Features
+
+* **accordion:** created Accordion.Small, the small version of accordion ([e8b1a6e](https://github.com/Gympass/yoga/commit/e8b1a6ea5d2b0e9054835027acfa4da1d4871622))
+
+
+
+
+
 ## [7.69.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.69.1...@gympass/yoga@7.69.2) (2023-03-09)
 
 
