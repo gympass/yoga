@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.69.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.69.1...@gympass/yoga@7.69.2) (2023-03-09)
+
+
+### Bug Fixes
+
+* close dialog stale closure ([d322a30](https://github.com/Gympass/yoga/commit/d322a301f23b056a4a412f8e230bfa04fb5ce39a))
+* drawer mobile view ([9040820](https://github.com/Gympass/yoga/commit/9040820b145e633b694520aaf77c91f2863214d1))
+
+
+
+
+
 ## [7.69.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.69.0...@gympass/yoga@7.69.1) (2023-03-06)
 
 
