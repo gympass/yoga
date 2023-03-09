@@ -92,7 +92,7 @@ exports[`<Drawer /> should match snapshot 1`] = `
 }
 
 .c2 {
-  padding: 40px  32px  32px;
+  padding: 40px 32px 32px;
   width: 580px;
   min-height: 160px;
   border-radius: 16px;
@@ -133,7 +133,7 @@ exports[`<Drawer /> should match snapshot 1`] = `
 
 .c3 {
   padding: 16px 56px 40px 56px;
-  width: 600px;
+  width: min(600px,100%);
   border-radius: 0!important;
   height: 100%;
   -webkit-align-self: flex-end;

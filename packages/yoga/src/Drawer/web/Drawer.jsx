@@ -12,7 +12,7 @@ const StyledDrawer = styled(Dialog)`
     },
   }) => `
   padding: ${drawer.padding.top}px ${drawer.padding.right}px ${drawer.padding.bottom}px ${drawer.padding.left}px;
-  width: ${drawer.width.default}px;
+  width: min(${drawer.width.default}px, 100%);
   `}
   border-radius: 0!important;
   height: 100%;
