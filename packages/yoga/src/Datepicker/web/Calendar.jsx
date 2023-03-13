@@ -72,6 +72,11 @@ const toUTCDate = date => {
   ).getTime();
 };
 
+const isSameDate = (firstDate, secondDate) =>
+  firstDate.getDate() === secondDate.getDate() &&
+  firstDate.getMonth() === secondDate.getMonth() &&
+  firstDate.getFullYear() === secondDate.getFullYear();
+
 const getDayFieldRadius = (aux, radii) => {
   const { val, startDate, endDate, year, month } = aux;
   const currentDate = new Date(Date.UTC(year, month, val))?.getTime();
@@ -204,11 +209,6 @@ function Calendar({
   const toUTCDateDay = day => {
     return new Date(Date.UTC(year, month, day)).getTime();
   };
-
-  const isSameDate = (date1, date2) =>
-    date1.getDate() === date2.getDate() &&
-    date1.getMonth() === date2.getMonth() &&
-    date1.getFullYear() === date2.getFullYear();
 
   const isEqual = day => {
     const utcDate = new Date(Date.UTC(year, month, day));
