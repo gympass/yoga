@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 import Downshift from 'downshift';
 import {
@@ -265,20 +265,32 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
   `}
 `;
 
-const getSelectedOption = options =>
-  options.find(item => item.selected === true);
-
 /** Gympass Dropdown is a multiple choice type of menu. */
 const Dropdown = React.forwardRef(
   ({ error, label, disabled, full, options, onChange, ...rest }, ref) => {
     const inputRef = ref || React.useRef(null);
+    const selectedOption = options.find(item => item.selected === true);
+    const [localSelectedItem, setLocalSelectedItem] = useState(selectedOption);
+
+    useEffect(() => {
+      setLocalSelectedItem(selectedOption);
+    }, [options]);
+
+    const onLocalChange = useCallback(
+      opt => {
+        setLocalSelectedItem(opt);
+        onChange(opt);
+      },
+      [onChange],
+    );
 
     return (
       <Downshift
-        initialSelectedItem={getSelectedOption(options)}
+        initialSelectedItem={selectedOption}
         selectedItemChanged={(prevItem, item) => prevItem !== item}
         itemToString={item => (item ? item.label : '')}
-        onChange={onChange}
+        onChange={onLocalChange}
+        selectedItem={localSelectedItem}
       >
         {({
           getInputProps,
