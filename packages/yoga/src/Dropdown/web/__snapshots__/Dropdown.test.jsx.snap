@@ -1548,6 +1548,7 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
       class="c11"
     >
       <span
+        aria-live="polite"
         class="c12"
       >
         Please, select one activity

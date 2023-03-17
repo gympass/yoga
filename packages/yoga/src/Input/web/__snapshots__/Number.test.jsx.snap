@@ -185,6 +185,8 @@ exports[`<Input.Number /> Snapshots should match with default input 1`] = `
       value=""
     >
       <input
+        aria-invalid="false"
+        aria-label="Label"
         class="c2"
         label="Label"
         type="number"
