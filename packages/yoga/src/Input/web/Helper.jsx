@@ -47,9 +47,14 @@ const Helper = ({
   maxLength,
   length,
   hideMaxLength,
+  a11yId,
 }) => (
   <Wrapper disabled={disabled} error={error}>
-    {(error || helper) && <Info as="span">{error || helper}</Info>}
+    {(error || helper) && (
+      <Info as="span" aria-live="polite" {...(a11yId && { id: a11yId })}>
+        {error || helper}
+      </Info>
+    )}
     {maxLength && !hideMaxLength && (
       <Info as="span">
         {length}/{maxLength}
@@ -65,6 +70,7 @@ Helper.propTypes = {
   maxLength: number,
   length: number,
   hideMaxLength: bool,
+  a11yId: string,
 };
 
 Helper.defaultProps = {
@@ -74,6 +80,7 @@ Helper.defaultProps = {
   maxLength: undefined,
   length: undefined,
   hideMaxLength: undefined,
+  a11yId: undefined,
 };
 
 export default Helper;
