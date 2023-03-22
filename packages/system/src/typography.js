@@ -42,6 +42,28 @@ const textAlign = props =>
     cssProperty: 'text-align',
   });
 
-const typography = compose(color, fontSize, fontWeight, lineHeight, textAlign);
+const textTransform = props =>
+  generator({
+    props,
+    prop: ['textTransform', 'tt'],
+    cssProperty: 'text-transform',
+  });
 
-export { fontSize, fontWeight, color, lineHeight, textAlign, typography };
+const typography = compose(
+  color,
+  fontSize,
+  fontWeight,
+  lineHeight,
+  textAlign,
+  textTransform,
+);
+
+export {
+  color,
+  fontSize,
+  fontWeight,
+  lineHeight,
+  textAlign,
+  textTransform,
+  typography,
+};

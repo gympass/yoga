@@ -6,6 +6,7 @@ import {
   lineHeight,
   textAlign,
   typography,
+  textTransform,
 } from './typography';
 
 import { fontWeight as fontWeightAndroid } from './fontWeight.android';
@@ -193,6 +194,23 @@ describe('Web and iOS', () => {
         const textAlignOptions = [ta1, ta2];
 
         textAlignOptions.map(ta => expect(ta).toStrictEqual(expectedTextAlign));
+      });
+    });
+
+    describe('textTransform', () => {
+      it('Should return values for textTransform prop', () => {
+        const expectedTextTransform = css({ textTransform: 'uppercase' });
+
+        const textTransform1 = textTransform({ textTransform: 'uppercase' });
+        const textTransform2 = textTransform({ tt: 'uppercase' });
+
+        expect(textTransform1).toStrictEqual(textTransform2);
+
+        const textTransformOptions = [textTransform1, textTransform2];
+
+        textTransformOptions.map(textTranform =>
+          expect(textTranform).toStrictEqual(expectedTextTransform),
+        );
       });
     });
   });
