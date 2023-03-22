@@ -122,6 +122,7 @@ Dialog.propTypes = {
   hideCloseButton: bool,
   /** Function to close the dialog. */
   onClose: func,
+  onBack: func,
   zIndex: number,
   children: node.isRequired,
 };
@@ -130,6 +131,7 @@ Dialog.defaultProps = {
   isOpen: false,
   hideCloseButton: false,
   onClose: undefined,
+  onBack: undefined,
   zIndex: 3,
   dialogId: undefined,
 };

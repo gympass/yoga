@@ -28,41 +28,100 @@ render(() => {
     alert('This is your custom action');
   };
 
+  const BoxContent = styled(Box)`
+    height: 100%;
+    max-width: 340px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 100px;
+  `;
+
   return (
     <>
       <Button onClick={handleOpen}>Open Drawer</Button>
-        <Drawer isOpen={isOpen} onClose={handleOnClose}>
-          <Drawer.Header>
-            <Box display="flex" justifyContent="flex-end" alignItems="center" width="100%">
-              <Box
-                style={{
-                  textAlign: 'center'
-                }}
-                width="100%"
-              >Drawer title</Box>
-            </Box>
-          </Drawer.Header>
+        <Drawer isOpen={isOpen} onClose={handleOnClose} title="section title">
           <Drawer.Content>
-            <Box
-              display="flex"
-              flexDirection="column"
-              justifyContent="center"
-              style={{
-                paddingTop: 10,
-                height: '100%'
-              }}
-            >
+            <BoxContent>
               <Video width="40" height="40" fill="#D8385E" />
-              <Text.Medium  mt="large" fontSize="xxlarge">Learn how to edit this area</Text.Medium>
-              <Text mt="xxssmall" color="light">Live the mission</Text>
-              <Text mt="xxsmall" color="uplift">Watch de video</Text>
-            </Box>
+              <Text.Medium marginTop="medium" size="xxlarge">Learn how to edit this area</Text.Medium>
+              <Text marginTop="xxsmall" color="deep">This section is dinamic and can be edit.</Text>
+              <Text marginTop="large" color="vibin">Watch de video</Text>
+            </BoxContent>
           </Drawer.Content>
+
           <Drawer.Footer>
-            <Button onClick={handleOnAction}>large button</Button>
-            <Button.Text onClick={handleOnClose}>Cancel</Button.Text>
+            <Box display="flex" width="100%" gap="large">
+              <Button onClick={handleOnAction}>Large button</Button>
+              <Button.Text onClick={handleOnClose}>Large button</Button.Text>
+            </Box>
           </Drawer.Footer>
         </Drawer>
+    </>
+  );
+});
+```
+
+### Drawer with back button usage
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('This is your custom action');
+  };
+
+  const BoxContent = styled(Box)`
+    height: 100%;
+    max-width: 340px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 100px;
+  `;
+
+  return (
+    <>
+      <Button onClick={handleOpen}>Open Drawer</Button>
+      <Drawer isOpen={isOpen} onClose={handleOnClose} onBack={handleOnClose} title="section title">
+        <Drawer.Header>
+          <Box display="flex" justifyContent="flex-end" alignItems="center" width="100%">
+            <Box
+              style={{
+                textAlign: 'center'
+              }}
+              width="100%"
+            >Drawer title</Box>
+          </Box>
+        </Drawer.Header>
+
+        <Drawer.Content>
+          <BoxContent>
+            <Video width="40" height="40" fill="#D8385E" />
+            <Text.Medium marginTop="medium" size="xxlarge">Learn how to edit this area</Text.Medium>
+            <Text marginTop="xxsmall" color="deep">This section is dinamic and can be edit.</Text>
+            <Text marginTop="large" color="vibin">Watch de video</Text>
+          </BoxContent>
+        </Drawer.Content>
+
+        <Drawer.Footer>
+          <Box display="flex" width="100%" gap="large">
+            <Button onClick={handleOnAction}>Large button</Button>
+            <Button.Text onClick={handleOnClose}>Large button</Button.Text>
+          </Box>
+        </Drawer.Footer>
+      </Drawer>
     </>
   );
 });
