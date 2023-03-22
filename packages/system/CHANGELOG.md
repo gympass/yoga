@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.10.3...@gympass/yoga-system@0.11.0) (2023-03-22)
+
+
+### Features
+
+* **typography:** add text-transform ([74433b4](https://github.com/Gympass/yoga/commit/74433b46032ec161b6cfd1e78a283d1788036107))
+
+
+
+
+
 ## [0.10.3](https://github.com/Gympass/yoga/compare/@gympass/yoga-system@0.10.2...@gympass/yoga-system@0.10.3) (2022-11-22)
 
 **Note:** Version bump only for package @gympass/yoga-system
