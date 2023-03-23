@@ -67,6 +67,19 @@ describe('<Text />', () => {
       expect(container).toMatchSnapshot();
     });
 
+    it('should match snapshot with Text size', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text.Small size="xsmall">Live the small mission</Text.Small>
+          <Text.Tiny size="medium">Live the medium mission</Text.Tiny>
+          <Text.Regular size="xlarge">Live the xlarge mission</Text.Regular>
+          <Text.Medium size="xxxlarge">Live the xxxlarge mission</Text.Medium>
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
     it('should match snapshot with inverted Text', () => {
       const { container } = render(
         <ThemeProvider>

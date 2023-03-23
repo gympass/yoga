@@ -342,6 +342,69 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
 </div>
 `;
 
+exports[`<Text /> Snapshots should match snapshot with Text size 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    Live the small mission
+  </p>
+  <p
+    class="c1"
+  >
+    Live the medium mission
+  </p>
+  <p
+    class="c2"
+  >
+    Live the xlarge mission
+  </p>
+  <p
+    class="c3"
+  >
+    Live the xxxlarge mission
+  </p>
+</div>
+`;
+
 exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
 .c0 {
   margin: 0;
