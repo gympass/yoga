@@ -140,6 +140,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
+  font-size: 16px;
 }
 
 <div>
@@ -170,6 +171,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   </h5>
   <p
     class="c5"
+    font-size="medium"
   >
     Live the mission
   </p>
@@ -212,6 +214,77 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
     class="c13"
   >
     Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text fontSize 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 12px;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 24px;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 40px;
+}
+
+<div>
+  <p
+    class="c0"
+    font-size="xsmall"
+  >
+    Live the small mission
+  </p>
+  <p
+    class="c1"
+    font-size="medium"
+  >
+    Live the medium mission
+  </p>
+  <p
+    class="c2"
+    font-size="xlarge"
+  >
+    Live the xlarge mission
+  </p>
+  <p
+    class="c3"
+    font-size="xxxlarge"
+  >
+    Live the xxxlarge mission
   </p>
 </div>
 `;
@@ -266,69 +339,6 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
   >
     Live the mission
   </h3>
-</div>
-`;
-
-exports[`<Text /> Snapshots should match snapshot with Text size 1`] = `
-.c0 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-}
-
-.c1 {
-  margin: 0;
-  padding: 0;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-}
-
-.c2 {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 40px;
-  font-weight: 500;
-  font-family: Rubik;
-  color: #231B22;
-}
-
-<div>
-  <p
-    class="c0"
-  >
-    Live the small mission
-  </p>
-  <p
-    class="c1"
-  >
-    Live the medium mission
-  </p>
-  <p
-    class="c2"
-  >
-    Live the xlarge mission
-  </p>
-  <p
-    class="c3"
-  >
-    Live the xxxlarge mission
-  </p>
 </div>
 `;
 
@@ -392,11 +402,13 @@ exports[`<Text /> Snapshots should match snapshot with background color prop sys
   font-family: Rubik;
   color: #231B22;
   background-color: #D8385E;
+  font-size: 16px;
 }
 
 <div>
   <p
     class="c0"
+    font-size="medium"
   >
     Live the mission
   </p>
@@ -414,11 +426,13 @@ exports[`<Text /> Snapshots should match snapshot with border prop system 1`] = 
   color: #231B22;
   border: 1px solid;
   border-radius: 8px;
+  font-size: 16px;
 }
 
 <div>
   <p
     class="c0"
+    font-size="medium"
   >
     Live the mission
   </p>
@@ -434,6 +448,7 @@ exports[`<Text /> Snapshots should match snapshot with display prop system 1`] =
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
+  font-size: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -444,6 +459,7 @@ exports[`<Text /> Snapshots should match snapshot with display prop system 1`] =
   <p
     class="c0"
     display="inline-flex"
+    font-size="medium"
   >
     Live the mission
   </p>
@@ -460,12 +476,14 @@ exports[`<Text /> Snapshots should match snapshot with elevation prop system 1`]
   font-family: Rubik;
   color: #231B22;
   box-shadow: 0 5px 5px -3px rgba(152,152,166,0.2),0 8px 10px 1px rgba(152,152,166,0.14),0 3px 14px 2px rgba(152,152,166,0.12);
+  font-size: 16px;
 }
 
 <div>
   <p
     class="c0"
     elevation="medium"
+    font-size="medium"
   >
     Live the mission
   </p>
@@ -481,6 +499,7 @@ exports[`<Text /> Snapshots should match snapshot with flexes prop system 1`] = 
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
+  font-size: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -495,6 +514,7 @@ exports[`<Text /> Snapshots should match snapshot with flexes prop system 1`] = 
   <p
     class="c0"
     display="flex"
+    font-size="medium"
   >
     Live the mission
   </p>
@@ -511,11 +531,13 @@ exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
   font-family: Rubik;
   color: #231B22;
   color: #FFFFFF;
+  font-size: 16px;
 }
 
 <div>
   <p
     class="c0"
+    font-size="medium"
   >
     Live the mission
   </p>
@@ -531,12 +553,14 @@ exports[`<Text /> Snapshots should match snapshot with overflows prop system 1`]
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
+  font-size: 16px;
   overflow: scroll;
 }
 
 <div>
   <p
     class="c0"
+    font-size="medium"
     overflow="scroll"
   >
     Live the mission
@@ -553,6 +577,7 @@ exports[`<Text /> Snapshots should match snapshot with position prop system 1`] 
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
+  font-size: 16px;
   position: fixed;
   top: 16px;
   left: 16px;
@@ -561,6 +586,7 @@ exports[`<Text /> Snapshots should match snapshot with position prop system 1`] 
 <div>
   <p
     class="c0"
+    font-size="medium"
   >
     Live the mission
   </p>
@@ -581,11 +607,13 @@ exports[`<Text /> Snapshots should match snapshot with spacing prop system 1`] =
   padding-right: 16px;
   padding-top: 24px;
   padding-bottom: 24px;
+  font-size: 16px;
 }
 
 <div>
   <p
     class="c0"
+    font-size="medium"
   >
     Live the mission
   </p>
@@ -605,11 +633,13 @@ exports[`<Text /> Snapshots should match snapshot with truncated lines Text 1`] 
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
+  font-size: 16px;
 }
 
 <div>
   <p
     class="c0"
+    font-size="medium"
   >
     Live the mission
     <br />

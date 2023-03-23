@@ -10,9 +10,9 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
     >
       <WithTheme(Checkbox) />
       <Text
+        fontSize="medium"
         inverted={false}
         light={false}
-        size="medium"
       >
         I have read and agree to the Terms of Use and Privacy Policy.
       </Text>
@@ -28,27 +28,27 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   list={
     <React.Fragment>
       <Text
+        fontSize="medium"
         inverted={false}
         light={false}
-        size="medium"
       >
         <Unknown />
          1x/day standard access
       </Text>
       <Text
+        fontSize="medium"
         inverted={false}
         light={false}
         mt="small"
-        size="medium"
       >
         <Unknown />
          4x/month 1-on-1 sessions
       </Text>
       <Text
+        fontSize="medium"
         inverted={false}
         light={false}
         mt="small"
-        size="medium"
       >
         <Unknown />
          2x/month premium classes
@@ -153,10 +153,10 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   </Text>
   <Text
     color="deep"
+    fontSize="medium"
     inverted={false}
     light={false}
     mt="small"
-    size="medium"
     style={
       Array [
         Object {
@@ -174,10 +174,10 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
   </Text>
   <Text
     color="deep"
+    fontSize="medium"
     inverted={false}
     light={false}
     mt="small"
-    size="medium"
     style={
       Array [
         Object {
@@ -202,9 +202,9 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
       }
     >
       <Text
+        fontSize="medium"
         inverted={false}
         light={false}
-        size="medium"
         style={
           Array [
             Object {
@@ -278,10 +278,10 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
          1x/day standard access
       </Text>
       <Text
+        fontSize="medium"
         inverted={false}
         light={false}
         mt="small"
-        size="medium"
         style={
           Array [
             Object {
@@ -356,10 +356,10 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
          4x/month 1-on-1 sessions
       </Text>
       <Text
+        fontSize="medium"
         inverted={false}
         light={false}
         mt="small"
-        size="medium"
         style={
           Array [
             Object {
@@ -521,9 +521,9 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         </View>
       </View>
       <Text
+        fontSize="medium"
         inverted={false}
         light={false}
-        size="medium"
         style={
           Array [
             Object {
