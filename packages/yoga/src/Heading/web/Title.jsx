@@ -5,7 +5,7 @@ import Box from '../../Box';
 
 const Title = ({ children, ...props }) => (
   <Box w="100%" textAlign="center">
-    <Text.Medium {...props} size="small" as="h1">
+    <Text.Medium {...props} fontSize="small" as="h1">
       {children}
     </Text.Medium>
   </Box>

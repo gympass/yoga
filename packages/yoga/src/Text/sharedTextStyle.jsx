@@ -6,12 +6,13 @@ const textStyle = type => () =>
       light,
       variant,
       inverted,
+      fontSize = 'medium',
       size = 'medium',
       theme: {
         yoga: {
           baseFont,
           fontWeights,
-          fontSizes: { [size]: pSize },
+          fontSizes: { [size || fontSize]: pSize },
           colors: { [variant]: color, text, white },
           components: {
             text: {

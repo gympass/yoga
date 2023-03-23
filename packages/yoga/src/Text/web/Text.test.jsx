@@ -52,13 +52,15 @@ describe('<Text />', () => {
       expect(container).toMatchSnapshot();
     });
 
-    it('should match snapshot with Text size', () => {
+    it('should match snapshot with Text fontSize', () => {
       const { container } = render(
         <ThemeProvider>
-          <Text.Small size="xsmall">Live the small mission</Text.Small>
-          <Text.Tiny size="medium">Live the medium mission</Text.Tiny>
-          <Text.Regular size="xlarge">Live the xlarge mission</Text.Regular>
-          <Text.Medium size="xxxlarge">Live the xxxlarge mission</Text.Medium>
+          <Text.Small fontSize="xsmall">Live the small mission</Text.Small>
+          <Text.Tiny fontSize="medium">Live the medium mission</Text.Tiny>
+          <Text.Regular fontSize="xlarge">Live the xlarge mission</Text.Regular>
+          <Text.Medium fontSize="xxxlarge">
+            Live the xxxlarge mission
+          </Text.Medium>
         </ThemeProvider>,
       );
 

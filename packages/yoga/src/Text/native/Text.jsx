@@ -113,12 +113,24 @@ Text.propTypes = {
   ),
   /** set the font-weight to regular */
   light: bool,
+  fontSize: oneOf([
+    'xxsmall',
+    'xsmall',
+    'small',
+    'medium',
+    'large',
+    'xlarge',
+    'xxlarge',
+    'xxxlarge',
+    'huge',
+  ]),
 };
 
 Text.defaultProps = {
   inverted: false,
   variant: undefined,
-  size: 'medium',
+  size: undefined,
+  fontSize: 'medium',
   light: false,
 };
 

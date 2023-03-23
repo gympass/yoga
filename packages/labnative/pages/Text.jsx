@@ -74,13 +74,13 @@ const TextPage = () => (
       <Text.SmallestException>Text SmallestException</Text.SmallestException>
     </TextWrapper>
     <TextWrapper>
-      <Text.Medium size="xsmall">XSmall Text.Medium</Text.Medium>
+      <Text.Medium fontSize="xsmall">XSmall Text.Medium</Text.Medium>
     </TextWrapper>
     <TextWrapper>
-      <Text.Medium size="medium">Medium Text.Medium</Text.Medium>
+      <Text.Medium fontSize="medium">Medium Text.Medium</Text.Medium>
     </TextWrapper>
     <TextWrapper>
-      <Text.Medium size="xlarge">XLarge Text.Medium</Text.Medium>
+      <Text.Medium fontSize="xlarge">XLarge Text.Medium</Text.Medium>
     </TextWrapper>
   </ScrollView>
 );
