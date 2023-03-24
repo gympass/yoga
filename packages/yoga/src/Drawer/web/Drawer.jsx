@@ -1,20 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 import { node, number } from 'prop-types';
+import { theme } from '@gympass/yoga';
 import Dialog from '../../Dialog';
 
 const StyledDrawer = styled(Dialog)`
-  border-radius: 0 !important;
-  height: 100%;
-  align-self: flex-end;
   position: absolute;
   right: 0;
+
+  align-self: flex-end;
+
+  height: 100%;
+  padding: ${theme.spacing.zero};
+  border-radius: ${theme.borders.zero};
+
+  transition: 0.25s ease-in-out;
+
   animation: content;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
-  transition: 0.25s ease-in-out;
-
-  padding: 0 !important;
 
   ${({
     theme: {
