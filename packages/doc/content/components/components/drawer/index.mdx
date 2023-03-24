@@ -41,29 +41,31 @@ render(() => {
   return (
     <>
       <Button onClick={handleOpen}>Open Drawer</Button>
-        <Drawer isOpen={isOpen} onClose={handleOnClose} title="section title">
-          <Drawer.Content>
-            <BoxContent>
-              <Video width="40" height="40" fill="#D8385E" />
-              <Text.Medium marginTop="medium" size="xxlarge">Learn how to edit this area</Text.Medium>
-              <Text marginTop="xxsmall" color="deep">This section is dinamic and can be edit.</Text>
-              <Text marginTop="large" color="vibin">Watch de video</Text>
-            </BoxContent>
-          </Drawer.Content>
+      <Drawer isOpen={isOpen} onClose={handleOnClose}>
+        <Drawer.Header onClose={handleOnClose} title="section title" />
 
-          <Drawer.Footer>
-            <Box display="flex" width="100%" gap="large">
-              <Button onClick={handleOnAction}>Large button</Button>
-              <Button.Text onClick={handleOnClose}>Large button</Button.Text>
-            </Box>
-          </Drawer.Footer>
-        </Drawer>
+        <Drawer.Content>
+          <BoxContent>
+            <Video width="40" height="40" fill="#D8385E" />
+            <Text.Medium marginTop="medium" size="xxlarge">Learn how to edit this area</Text.Medium>
+            <Text marginTop="xxsmall" color="deep">This section is dinamic and can be edit.</Text>
+            <Text marginTop="large" color="vibin">Watch de video</Text>
+          </BoxContent>
+        </Drawer.Content>
+
+        <Drawer.Footer>
+          <Box display="flex" width="100%" gap="large">
+            <Button onClick={handleOnAction}>Large button</Button>
+            <Button.Text onClick={handleOnClose}>Large button</Button.Text>
+          </Box>
+        </Drawer.Footer>
+      </Drawer>
     </>
   );
 });
 ```
 
-### Drawer with back button usage
+### Drawer with back button
 
 ```javascript state
 render(() => {
@@ -94,18 +96,172 @@ render(() => {
   return (
     <>
       <Button onClick={handleOpen}>Open Drawer</Button>
-      <Drawer isOpen={isOpen} onClose={handleOnClose} onBack={handleOnClose} title="section title">
-        <Drawer.Header>
-          <Box display="flex" justifyContent="flex-end" alignItems="center" width="100%">
-            <Box
-              style={{
-                textAlign: 'center'
-              }}
-              width="100%"
-            >Drawer title</Box>
-          </Box>
-        </Drawer.Header>
+      <Drawer isOpen={isOpen} onClose={handleOnClose}>
+        <Drawer.Header onClose={handleOnClose} onBack={handleOnClose} title="section title" />
 
+        <Drawer.Content>
+          <BoxContent>
+            <Video width="40" height="40" fill="#D8385E" />
+            <Text.Medium marginTop="medium" size="xxlarge">Learn how to edit this area</Text.Medium>
+            <Text marginTop="xxsmall" color="deep">This section is dinamic and can be edit.</Text>
+            <Text marginTop="large" color="vibin">Watch de video</Text>
+          </BoxContent>
+        </Drawer.Content>
+
+        <Drawer.Footer>
+          <Box display="flex" width="100%" gap="large">
+            <Button onClick={handleOnAction}>Large button</Button>
+            <Button.Text onClick={handleOnClose}>Large button</Button.Text>
+          </Box>
+        </Drawer.Footer>
+      </Drawer>
+    </>
+  );
+});
+```
+
+### Drawer with divider on header
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('This is your custom action');
+  };
+
+  const BoxContent = styled(Box)`
+    height: 100%;
+    max-width: 340px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 100px;
+  `;
+
+  return (
+    <>
+      <Button onClick={handleOpen}>Open Drawer</Button>
+      <Drawer isOpen={isOpen} onClose={handleOnClose}>
+        <Drawer.Header onClose={handleOnClose} onBack={handleOnClose} title="section title" divider />
+
+        <Drawer.Content>
+          <BoxContent>
+            <Video width="40" height="40" fill="#D8385E" />
+            <Text.Medium marginTop="medium" size="xxlarge">Learn how to edit this area</Text.Medium>
+            <Text marginTop="xxsmall" color="deep">This section is dinamic and can be edit.</Text>
+            <Text marginTop="large" color="vibin">Watch de video</Text>
+          </BoxContent>
+        </Drawer.Content>
+
+        <Drawer.Footer>
+          <Box display="flex" width="100%" gap="large">
+            <Button onClick={handleOnAction}>Large button</Button>
+            <Button.Text onClick={handleOnClose}>Large button</Button.Text>
+          </Box>
+        </Drawer.Footer>
+      </Drawer>
+    </>
+  );
+});
+```
+
+### Drawer with no close button
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('This is your custom action');
+  };
+
+  const BoxContent = styled(Box)`
+    height: 100%;
+    max-width: 340px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 100px;
+  `;
+
+  return (
+    <>
+      <Button onClick={handleOpen}>Open Drawer</Button>
+      <Drawer isOpen={isOpen} onClose={handleOnClose}>
+        <Drawer.Header onClose={handleOnClose} onBack={handleOnClose} title="section title" hideCloseButton />
+
+        <Drawer.Content>
+          <BoxContent>
+            <Video width="40" height="40" fill="#D8385E" />
+            <Text.Medium marginTop="medium" size="xxlarge">Learn how to edit this area</Text.Medium>
+            <Text marginTop="xxsmall" color="deep">This section is dinamic and can be edit.</Text>
+            <Text marginTop="large" color="vibin">Watch de video</Text>
+          </BoxContent>
+        </Drawer.Content>
+
+        <Drawer.Footer>
+          <Box display="flex" width="100%" gap="large">
+            <Button onClick={handleOnAction}>Large button</Button>
+            <Button.Text onClick={handleOnClose}>Large button</Button.Text>
+          </Box>
+        </Drawer.Footer>
+      </Drawer>
+    </>
+  );
+});
+```
+
+### Drawer with no header
+
+```javascript state
+render(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleOnClose = () => {
+    setIsOpen(false);
+  };
+
+  const handleOnAction = () => {
+    alert('This is your custom action');
+  };
+
+  const BoxContent = styled(Box)`
+    height: 100%;
+    max-width: 340px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 100px;
+  `;
+
+  return (
+    <>
+      <Button onClick={handleOpen}>Open Drawer</Button>
+      <Drawer isOpen={isOpen} onClose={handleOnClose}>
         <Drawer.Content>
           <BoxContent>
             <Video width="40" height="40" fill="#D8385E" />

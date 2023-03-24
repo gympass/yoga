@@ -3,9 +3,8 @@ import { createPortal } from 'react-dom';
 import styled from 'styled-components';
 import { func, bool, node, number, string } from 'prop-types';
 
-import { Close } from '@gympass/yoga-icons';
 import { usePortal, useCombinedRefs } from '../../hooks';
-import { Button, Card, Box } from '../..';
+import { Card } from '../..';
 
 export const StyledDialog = styled(Card)`
   ${({
@@ -54,13 +53,9 @@ const Overlay = styled.div`
 `;
 
 const Dialog = React.forwardRef(
-  (
-    { isOpen, hideCloseButton, children, dialogId, onClose, zIndex, ...props },
-    forwardedRef,
-  ) => {
+  ({ isOpen, children, dialogId, onClose, zIndex, ...props }, forwardedRef) => {
     const dialogRef = useCombinedRefs(forwardedRef);
     const dialogElement = usePortal(dialogId ?? 'dialog');
-    const isCloseButtonVisible = onClose && !hideCloseButton;
 
     const closeDialog = useCallback(
       e => {
@@ -97,11 +92,6 @@ const Dialog = React.forwardRef(
           zIndex={zIndex}
         >
           <StyledDialog onClose={onClose} {...props}>
-            {isCloseButtonVisible && (
-              <Box d="flex" justifyContent="flex-end" w="100%">
-                <Button.Icon icon={Close} inverted onClick={onClose} />
-              </Box>
-            )}
             {children}
           </StyledDialog>
         </Overlay>,
@@ -118,8 +108,6 @@ Dialog.propTypes = {
   dialogId: string,
   /** Control the dialog visibility. */
   isOpen: bool,
-  /** Hide the close button when onClose prop is defined. */
-  hideCloseButton: bool,
   /** Function to close the dialog. */
   onClose: func,
   onBack: func,
@@ -129,7 +117,6 @@ Dialog.propTypes = {
 
 Dialog.defaultProps = {
   isOpen: false,
-  hideCloseButton: false,
   onClose: undefined,
   onBack: undefined,
   zIndex: 3,

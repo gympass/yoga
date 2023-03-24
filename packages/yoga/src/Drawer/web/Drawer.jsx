@@ -14,7 +14,7 @@ const StyledDrawer = styled(Dialog)`
   animation-fill-mode: forwards;
   transition: 0.25s ease-in-out;
 
-  padding: 16px 16px 40px 40px;
+  padding: 0 !important;
 
   ${({
     theme: {
