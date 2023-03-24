@@ -76,6 +76,18 @@ const Text = props => <TextRenderer {...props} />;
 
 Text.displayName = 'Text';
 
+const fontSizes = oneOf([
+  'xxsmall',
+  'xsmall',
+  'small',
+  'medium',
+  'large',
+  'xlarge',
+  'xxlarge',
+  'xxxlarge',
+  'huge',
+]);
+
 Text.propTypes = {
   inverted: bool,
   numberOfLines: number,
@@ -102,28 +114,17 @@ Text.propTypes = {
     'Use `color` system prop instead',
   ),
   /** (deprecated: use fontSize instead) style the text following the theme */
-  size: deprecated(
-    oneOf([
-      'xxsmall',
-      'xsmall',
-      'small',
-      'medium',
-      'large',
-      'xlarge',
-      'xxlarge',
-      'xxxlarge',
-      'huge',
-    ]),
-    'Use `fontSize` system prop instead',
-  ),
+  size: deprecated(fontSizes, 'Use `fontSize` system prop instead'),
   /** set the font-weight to regular */
   light: bool,
+  fontSize: fontSizes,
 };
 
 Text.defaultProps = {
   inverted: false,
   variant: undefined,
-  size: 'medium',
+  size: undefined,
+  fontSize: 'medium',
   numberOfLines: undefined,
   light: false,
 };

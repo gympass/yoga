@@ -52,6 +52,21 @@ describe('<Text />', () => {
       expect(container).toMatchSnapshot();
     });
 
+    it('should match snapshot with Text fontSize', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Text.Small fontSize="xsmall">Live the small mission</Text.Small>
+          <Text.Tiny fontSize="medium">Live the medium mission</Text.Tiny>
+          <Text.Regular fontSize="xlarge">Live the xlarge mission</Text.Regular>
+          <Text.Medium fontSize="xxxlarge">
+            Live the xxxlarge mission
+          </Text.Medium>
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
     it('should match snapshot with Text size', () => {
       const { container } = render(
         <ThemeProvider>

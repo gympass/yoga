@@ -34,6 +34,7 @@ exports[`<Accordion /> should correctly render the default version 1`] = `
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
+  font-size: 16px;
 }
 
 .c9 {
@@ -177,6 +178,7 @@ exports[`<Accordion /> should correctly render the default version 1`] = `
     >
       <p
         class="c8"
+        font-size="medium"
       >
         Content
       </p>
@@ -222,6 +224,7 @@ exports[`<Accordion /> should correctly render the default version with subtitle
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
+  font-size: 16px;
 }
 
 .c10 {
@@ -371,6 +374,7 @@ exports[`<Accordion /> should correctly render the default version with subtitle
     >
       <p
         class="c9"
+        font-size="medium"
       >
         Content
       </p>
@@ -416,6 +420,7 @@ exports[`<Accordion /> should correctly render the default version without side 
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
+  font-size: 16px;
 }
 
 .c10 {
@@ -572,6 +577,7 @@ exports[`<Accordion /> should correctly render the default version without side 
     >
       <p
         class="c9"
+        font-size="medium"
       >
         Content
       </p>
@@ -617,6 +623,7 @@ exports[`<Accordion /> should correctly render the small version 1`] = `
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
+  font-size: 16px;
 }
 
 .c10 {
@@ -764,6 +771,7 @@ exports[`<Accordion /> should correctly render the small version 1`] = `
     >
       <p
         class="c9"
+        font-size="medium"
       >
         Content
       </p>
@@ -809,6 +817,7 @@ exports[`<Accordion /> should correctly render the small version with subtitle 1
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
+  font-size: 16px;
 }
 
 .c10 {
@@ -962,6 +971,7 @@ exports[`<Accordion /> should correctly render the small version with subtitle 1
     >
       <p
         class="c9"
+        font-size="medium"
       >
         Content
       </p>
@@ -1007,6 +1017,7 @@ exports[`<Accordion /> should correctly render the small version without side pa
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
+  font-size: 16px;
 }
 
 .c10 {
@@ -1172,6 +1183,7 @@ exports[`<Accordion /> should correctly render the small version without side pa
     >
       <p
         class="c9"
+        font-size="medium"
       >
         Content
       </p>

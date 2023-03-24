@@ -63,9 +63,9 @@ Array [
     Live the mission
   </Text>,
   <Text
+    fontSize="medium"
     inverted={false}
     light={false}
-    size="medium"
     style={
       Array [
         Object {
@@ -197,6 +197,73 @@ Array [
     }
   >
     Live the mission
+  </Text>,
+]
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text fontSize 1`] = `
+Array [
+  <Text
+    fontSize="xsmall"
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 12,
+          "fontWeight": "400",
+          "lineHeight": 20,
+        },
+      ]
+    }
+  >
+    Live the small mission
+  </Text>,
+  <Text
+    fontSize="medium"
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 16,
+          "fontWeight": "400",
+          "lineHeight": 16,
+        },
+      ]
+    }
+  >
+    Live the medium mission
+  </Text>,
+  <Text
+    fontSize="xlarge"
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 24,
+          "fontWeight": "400",
+        },
+      ]
+    }
+  >
+    Live the xlarge mission
+  </Text>,
+  <Text
+    fontSize="xxxlarge"
+    style={
+      Array [
+        Object {
+          "color": "#231B22",
+          "fontFamily": "Rubik",
+          "fontSize": 40,
+          "fontWeight": "500",
+        },
+      ]
+    }
+  >
+    Live the xxxlarge mission
   </Text>,
 ]
 `;
@@ -377,9 +444,9 @@ Array [
 exports[`<Text /> Snapshots should match snapshot with background color prop system 1`] = `
 <Text
   backgroundColor="vibin"
+  fontSize="medium"
   inverted={false}
   light={false}
-  size="medium"
   style={
     Array [
       Object {
@@ -401,9 +468,9 @@ exports[`<Text /> Snapshots should match snapshot with border prop system 1`] = 
 <Text
   bRadius="small"
   border="small"
+  fontSize="medium"
   inverted={false}
   light={false}
-  size="medium"
   style={
     Array [
       Object {
@@ -427,9 +494,9 @@ exports[`<Text /> Snapshots should match snapshot with border prop system 1`] = 
 exports[`<Text /> Snapshots should match snapshot with display prop system 1`] = `
 <Text
   display="flex"
+  fontSize="medium"
   inverted={false}
   light={false}
-  size="medium"
   style={
     Array [
       Object {
@@ -450,9 +517,9 @@ exports[`<Text /> Snapshots should match snapshot with display prop system 1`] =
 exports[`<Text /> Snapshots should match snapshot with elevation prop system 1`] = `
 <Text
   elevation="medium"
+  fontSize="medium"
   inverted={false}
   light={false}
-  size="medium"
   style={
     Array [
       Object {
@@ -480,9 +547,9 @@ exports[`<Text /> Snapshots should match snapshot with flexes prop system 1`] = 
 <Text
   display="flex"
   flexGrow={1}
+  fontSize="medium"
   inverted={false}
   light={false}
-  size="medium"
   style={
     Array [
       Object {
@@ -503,9 +570,9 @@ exports[`<Text /> Snapshots should match snapshot with flexes prop system 1`] = 
 
 exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
 <Text
+  fontSize="medium"
   inverted={true}
   light={false}
-  size="medium"
   style={
     Array [
       Object {
@@ -524,10 +591,10 @@ exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
 
 exports[`<Text /> Snapshots should match snapshot with overflows prop system 1`] = `
 <Text
+  fontSize="medium"
   inverted={false}
   light={false}
   overflow="scroll"
-  size="medium"
   style={
     Array [
       Object {
@@ -547,11 +614,11 @@ exports[`<Text /> Snapshots should match snapshot with overflows prop system 1`]
 
 exports[`<Text /> Snapshots should match snapshot with position prop system 1`] = `
 <Text
+  fontSize="medium"
   inverted={false}
   left="small"
   light={false}
   position="absolute"
-  size="medium"
   style={
     Array [
       Object {
@@ -574,12 +641,12 @@ exports[`<Text /> Snapshots should match snapshot with position prop system 1`] 
 
 exports[`<Text /> Snapshots should match snapshot with spacing prop system 1`] = `
 <Text
+  fontSize="medium"
   inverted={false}
   light={false}
   m="medium"
   paddingHorizontal="small"
   paddingVertical="large"
-  size="medium"
   style={
     Array [
       Object {
@@ -606,10 +673,10 @@ exports[`<Text /> Snapshots should match snapshot with spacing prop system 1`] =
 
 exports[`<Text /> Snapshots should match snapshot with truncated lines Text 1`] = `
 <Text
+  fontSize="medium"
   inverted={false}
   light={false}
   numberOfLines={1}
-  size="medium"
   style={
     Array [
       Object {
@@ -636,7 +703,6 @@ exports[`<Text /> Snapshots should match snapshot with typography prop system 1`
   inverted={false}
   light={false}
   lineHeight="small"
-  size="medium"
   style={
     Array [
       Object {

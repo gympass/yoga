@@ -39,9 +39,9 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
   >
     <Text
       disabled={false}
+      fontSize="medium"
       inverted={false}
       light={false}
-      size="medium"
       style={
         Array [
           Object {
@@ -173,9 +173,9 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
   >
     <Text
       disabled={true}
+      fontSize="medium"
       inverted={false}
       light={false}
-      size="medium"
       style={
         Array [
           Object {
@@ -307,9 +307,9 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
   >
     <Text
       disabled={false}
+      fontSize="medium"
       inverted={false}
       light={false}
-      size="medium"
       style={
         Array [
           Object {
@@ -448,6 +448,7 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
   >
     <Text
       disabled={true}
+      fontSize="medium"
       inverted={false}
       light={false}
       selected={
@@ -457,7 +458,6 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
           "value": "swimming",
         }
       }
-      size="medium"
       style={
         Array [
           Object {
@@ -597,6 +597,7 @@ exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
   >
     <Text
       disabled={false}
+      fontSize="medium"
       inverted={false}
       light={false}
       selected={
@@ -606,7 +607,6 @@ exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
           "value": "swimming",
         }
       }
-      size="medium"
       style={
         Array [
           Object {
