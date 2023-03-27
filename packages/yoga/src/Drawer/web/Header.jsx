@@ -4,7 +4,7 @@ import { Close, ArrowLeft } from '@gympass/yoga-icons';
 import Box from '../../Box';
 import { Button, Text, Divider, Row, Col } from '../..';
 
-function Header({ divider, title, onBack, onClose, hideCloseButton }) {
+function Header({ onClose, title, onBack, divider, hideCloseButton }) {
   const showCloseButton = onClose && !hideCloseButton;
 
   function showDivider() {
@@ -107,18 +107,18 @@ function Header({ divider, title, onBack, onClose, hideCloseButton }) {
 }
 
 Header.propTypes = {
-  divider: bool,
-  title: string,
   onClose: func,
+  title: string,
   onBack: func,
+  divider: bool,
   hideCloseButton: bool,
 };
 
 Header.defaultProps = {
-  divider: false,
-  title: undefined,
   onClose: undefined,
+  title: undefined,
   onBack: undefined,
+  divider: false,
   hideCloseButton: false,
 };
 Header.displayName = 'Drawer.Header';
