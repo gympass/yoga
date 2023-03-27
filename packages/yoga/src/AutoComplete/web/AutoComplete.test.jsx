@@ -65,6 +65,25 @@ describe('<AutoComplete />', () => {
       );
     });
 
+    it('should not filter the options', () => {
+      const { container, getByDisplayValue } = render(
+        <ThemeProvider>
+          <AutoComplete
+            value="secon"
+            options={['first', 'second', 'third']}
+            shouldfilterOptions={false}
+          />
+        </ThemeProvider>,
+      );
+
+      fireEvent.focus(getByDisplayValue('secon'));
+
+      expect(container.querySelector('ul').firstChild.textContent).toBe(
+        'first',
+      );
+      expect(container.querySelector('ul').childNodes.length).toBe(3);
+    });
+
     it('should close options list when clean button is clicked', () => {
       const { container, getByDisplayValue, getByRole } = render(
         <ThemeProvider>

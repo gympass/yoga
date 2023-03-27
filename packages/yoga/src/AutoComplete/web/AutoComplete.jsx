@@ -162,6 +162,7 @@ const AutoComplete = React.forwardRef(
       error,
       openSuggestionsAriaLabel,
       closeSuggestionsAriaLabel,
+      shouldfilterOptions,
       ...props
     },
     ref,
@@ -224,14 +225,16 @@ const AutoComplete = React.forwardRef(
             'gi',
           );
 
-          const suggestionList = options
-            .filter(option => option.match(reg))
-            .sort((first, second) =>
-              first.toLowerCase().indexOf(inputValue) <
-              second.toLowerCase().indexOf(inputValue)
-                ? -1
-                : 1,
-            );
+          const suggestionList = shouldfilterOptions
+            ? options
+                .filter(option => option.match(reg))
+                .sort((first, second) =>
+                  first.toLowerCase().indexOf(inputValue) <
+                  second.toLowerCase().indexOf(inputValue)
+                    ? -1
+                    : 1,
+                )
+            : options;
 
           if (!!inputValue && isOpen) {
             setIsSuggestionsOpen(true);
@@ -325,6 +328,8 @@ AutoComplete.propTypes = {
   openSuggestionsAriaLabel: string,
   /** an aria label for the close suggestions icon */
   closeSuggestionsAriaLabel: string,
+  /** flag to enable options filtering */
+  shouldfilterOptions: bool,
 };
 
 AutoComplete.defaultProps = {
@@ -339,6 +344,7 @@ AutoComplete.defaultProps = {
   error: undefined,
   openSuggestionsAriaLabel: 'Open suggestions',
   closeSuggestionsAriaLabel: 'Close suggestions',
+  shouldfilterOptions: true,
 };
 
 export default AutoComplete;
