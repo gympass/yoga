@@ -9,7 +9,11 @@ function Header({ onClose, title, onBack, divider, hideCloseButton }) {
 
   function showDivider() {
     if (divider) {
-      return <Divider />;
+      return (
+        <Box marginTop="small">
+          <Divider />
+        </Box>
+      );
     }
 
     return null;
