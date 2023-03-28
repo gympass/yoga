@@ -74,6 +74,36 @@ describe('<Input />', () => {
 
       expect(container).toMatchSnapshot();
     });
+
+    it('should match with a11yId', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Input label="Label" a11yId="id" />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match with a11yId and error', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Input label="Label" a11yId="id" error="Error message" />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should match with includeAriaAttributes set to false', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Input label="Label" includeAriaAttributes={false} />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
   });
 
   describe('Events', () => {

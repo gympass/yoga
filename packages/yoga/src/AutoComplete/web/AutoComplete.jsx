@@ -273,6 +273,7 @@ const AutoComplete = React.forwardRef(
                   )
                 }
                 ref={inputRef}
+                includeAriaAttributes={false}
               />
               {isSuggestionsOpen && (
                 <List {...getMenuProps()} full={full} error={!!error}>

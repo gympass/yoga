@@ -96,6 +96,8 @@ const Input = React.forwardRef(
       onClean,
       hideMaxLength,
       rightIcon,
+      a11yId,
+      includeAriaAttributes,
       ...props
     },
     ref,
@@ -111,6 +113,26 @@ const Input = React.forwardRef(
         inputRef.current.focus();
       }
     };
+
+    const hasHelper = helper || maxLength || error;
+
+    const helperA11yId = includeAriaAttributes && a11yId && `${a11yId}-helper`;
+    const labelA11yId = includeAriaAttributes && a11yId && `${a11yId}-label`;
+    let a11yFieldProps;
+
+    if (includeAriaAttributes) {
+      a11yFieldProps = a11yId
+        ? {
+            ...(hasHelper && { 'aria-describedby': helperA11yId }),
+            ...(label && { 'aria-labelledby': labelA11yId }),
+          }
+        : {
+            ...(label && { 'aria-label': label }),
+          };
+      a11yFieldProps['aria-invalid'] = !!error;
+    } else {
+      a11yFieldProps = {};
+    }
 
     return (
       <Control full={full}>
@@ -137,12 +159,17 @@ const Input = React.forwardRef(
               ref={inputRef}
               value={value}
               onChange={onChange}
+              {...a11yFieldProps}
             />
           ) : (
             children
           )}
 
-          <Label error={error} disabled={disabled}>
+          <Label
+            error={error}
+            disabled={disabled}
+            {...(labelA11yId && { id: labelA11yId })}
+          >
             {label}
           </Label>
 
@@ -174,7 +201,7 @@ const Input = React.forwardRef(
             </IconWrapper>
           )}
         </Fieldset>
-        {(helper || maxLength || error) && (
+        {hasHelper && (
           <Helper
             error={error}
             helper={helper}
@@ -182,6 +209,7 @@ const Input = React.forwardRef(
             length={value.length}
             disabled={disabled}
             hideMaxLength={hideMaxLength}
+            a11yId={helperA11yId}
           />
         )}
       </Control>
@@ -213,6 +241,10 @@ Input.propTypes = {
   hideMaxLength: bool,
   placeholder: string,
   rightIcon: node,
+  /** a unique prefix to generate HTML IDs to be used for aria-labelledby and aria-describedby */
+  a11yId: string,
+  /** useful for components that extend the Input component and have their own ARIA attributes implementation (e.g. Dropdown) */
+  includeAriaAttributes: bool,
 };
 
 Input.defaultProps = {
@@ -233,6 +265,8 @@ Input.defaultProps = {
   hideMaxLength: false,
   placeholder: undefined,
   rightIcon: undefined,
+  a11yId: undefined,
+  includeAriaAttributes: true,
 };
 
 export default Input;

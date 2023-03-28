@@ -305,6 +305,7 @@ const Dropdown = React.forwardRef(
                 label={label}
                 full={full}
                 ref={inputRef}
+                includeAriaAttributes={false}
                 {...getInputProps()}
               />
               <Button
