@@ -432,6 +432,15 @@
         "bug",
         "doc"
       ]
+    },
+    {
+      "login": "tomaskeong",
+      "name": "Tomás Keong",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47691990?v=4",
+      "profile": "https://tomaskeong.vercel.app/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
