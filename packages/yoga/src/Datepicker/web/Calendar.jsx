@@ -72,6 +72,11 @@ const toUTCDate = date => {
   ).getTime();
 };
 
+const isSameDate = (firstDate, secondDate) =>
+  firstDate.getDate() === secondDate.getDate() &&
+  firstDate.getMonth() === secondDate.getMonth() &&
+  firstDate.getFullYear() === secondDate.getFullYear();
+
 const getDayFieldRadius = (aux, radii) => {
   const { val, startDate, endDate, year, month } = aux;
   const currentDate = new Date(Date.UTC(year, month, val))?.getTime();
@@ -206,18 +211,20 @@ function Calendar({
   };
 
   const isEqual = day => {
+    const utcDate = new Date(Date.UTC(year, month, day));
+
     return (
-      (startDate && toUTCDate(startDate) === toUTCDateDay(day)) ||
-      (endDate && toUTCDate(endDate) === toUTCDateDay(day))
+      (startDate && isSameDate(startDate, utcDate)) ||
+      (endDate && isSameDate(endDate, utcDate))
     );
   };
 
   const inRange = day => {
     return (
       startDate &&
-      toUTCDate(startDate) <= toUTCDateDay(day) &&
+      startDate.getTime() <= toUTCDateDay(day) &&
       endDate &&
-      toUTCDate(endDate) >= toUTCDateDay(day)
+      endDate.getTime() >= toUTCDateDay(day)
     );
   };
 
@@ -231,11 +238,9 @@ function Calendar({
       (disablePastFrom &&
         local.getTime() <
           new Date(
-            Date.UTC(
-              disablePastFrom.getFullYear(),
-              disablePastFrom.getMonth(),
-              disablePastFrom.getDate(),
-            ),
+            disablePastFrom.getFullYear(),
+            disablePastFrom.getMonth(),
+            disablePastFrom.getDate(),
           ));
 
     const futureDateDisabled =
@@ -243,11 +248,9 @@ function Calendar({
       (disableFutureFrom &&
         local.getTime() >
           new Date(
-            Date.UTC(
-              disableFutureFrom.getFullYear(),
-              disableFutureFrom.getMonth(),
-              disableFutureFrom.getDate(),
-            ),
+            disableFutureFrom.getFullYear(),
+            disableFutureFrom.getMonth(),
+            disableFutureFrom.getDate(),
           ));
 
     return pastDatesDisabled || futureDateDisabled;

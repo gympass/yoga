@@ -10,7 +10,7 @@ metaDescription: 'Datepicker Component'
 
 The `<Datepicker />` component is a date picker that allows the user to select a single date or a range of dates.
 
-Both `startDate` and `endDate` are expected to be in the [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) format.
+`startDate`, `endDate`, `disablePastFrom` and `disableFutureFrom` are expected to be in the UTC [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) format.
 
 ### Usage
 
@@ -85,8 +85,9 @@ render(() => {
 ```javascript state
 render(() => {
   const d = new Date();
-  d.setDate(d.getDate() + 2);
-  const [selectedDate, setSelectedDate] = useState(d);
+  const dateUTC = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  d.setDate(dateUTC.getDate() + 2);
+  const [selectedDate, setSelectedDate] = useState(dateUTC);
 
   return (
     <Datepicker
@@ -104,10 +105,12 @@ render(() => {
 render(() => {
   const start = new Date();
   const end = new Date();
+  const startUTC = new Date(Date.UTC(start.getFullYear(), start.getMonth(), start.getDate()));
+  const endUTC = new Date(Date.UTC(end.getFullYear(), end.getMonth(), end.getDate()));
 
-  end.setDate(start.getDate() + 15);
-  const [startDate, setStartDate] = useState(start);
-  const [endDate, setEndDate] = useState(end);
+  endUTC.setDate(startUTC.getDate() + 15);
+  const [startDate, setStartDate] = useState(startUTC);
+  const [endDate, setEndDate] = useState(endUTC);
 
   const onSelectRange = (startDate, endDate) => {
     console.log({ startDate, endDate });
@@ -181,14 +184,15 @@ render(() => {
 render(() => {
   const [selectedDate, setSelectedDate] = useState();
   const d = new Date();
-  d.setDate(d.getDate() + 4);
+  const dateUTC = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  dateUTC.setDate(dateUTC.getDate() + 4);
 
   return (
     <Datepicker
       type="single"
       startDate={selectedDate}
       onSelectSingle={setSelectedDate}
-      disablePastFrom={d}
+      disablePastFrom={dateUTC}
     />
   );
 });
@@ -200,7 +204,8 @@ render(() => {
 render(() => {
   const [selectedDate, setSelectedDate] = useState();
   const d = new Date();
-  d.setDate(d.getDate() - 4);
+  const dateUTC = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  dateUTC.setDate(dateUTC.getDate() - 4);
 
   return (
     <Datepicker
