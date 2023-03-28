@@ -432,6 +432,16 @@
         "bug",
         "doc"
       ]
+    },
+    {
+      "login": "leonardokl",
+      "name": "Leonardo Luiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7108030?v=4",
+      "profile": "https://github.com/leonardokl",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
