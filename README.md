@@ -3,9 +3,7 @@
 </p>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-43-orange.svg?style=flat-square)](#contributors)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-44-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Github Actions](https://github.com/gympass/yoga/workflows/Yoga%20-%20Gympass%20Design%20System/badge.svg)
@@ -114,7 +112,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/MicaelRodrigues"><img src="https://avatars.githubusercontent.com/u/796443?v=4?s=100" width="100px;" alt="Micael Rodrigues"/><br /><sub><b>Micael Rodrigues</b></sub></a><br /><a href="https://github.com/gympass/yoga/issues?q=author%3AMicaelRodrigues" title="Bug reports">🐛</a> <a href="https://github.com/gympass/yoga/commits?author=MicaelRodrigues" title="Documentation">📖</a></td>
-       <td align="center" valign="top" width="14.28%"><a href="https://github.com/chadychaito"><img src="https://avatars.githubusercontent.com/u/38870046?v=4" width="100px;" alt="Chady Chaito"/><br /><sub><b>Chady Chaito</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=chady-chaito" title="Documentation">📖</a> <a href="https://github.com/gympass/yoga/commits?author=chady-chaito" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://tomaskeong.vercel.app/"><img src="https://avatars.githubusercontent.com/u/47691990?v=4?s=100" width="100px;" alt="Tomás Keong"/><br /><sub><b>Tomás Keong</b></sub></a><br /><a href="https://github.com/gympass/yoga/commits?author=tomaskeong" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
