@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.72.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.1...@gympass/yoga@7.72.2) (2023-03-28)
+
+
+### Bug Fixes
+
+* **Dropdown:** updating options dynamically ([58bbf19](https://github.com/Gympass/yoga/commit/58bbf1938c408ff01ff43eb5b144a3bd54a7aa10))
+
+
+
+
+
 ## [7.72.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.0...@gympass/yoga@7.72.1) (2023-03-28)
 
 
