@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.72.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.71.0...@gympass/yoga@7.72.0) (2023-03-28)
+
+
+### Features
+
+* **AutoComplete:** flag to bypass options filtering ([3c42a86](https://github.com/Gympass/yoga/commit/3c42a8600f0b002acbfa4db19898d429e813f40c))
+
+
+
+
+
 # [7.71.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.70.2...@gympass/yoga@7.71.0) (2023-03-28)
 
 
