@@ -432,6 +432,15 @@
         "bug",
         "doc"
       ]
+    },
+    {
+      "login": "marinamsou",
+      "name": "Marina Souza",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26771441?v=4",
+      "profile": "https://github.com/marinamsou",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
