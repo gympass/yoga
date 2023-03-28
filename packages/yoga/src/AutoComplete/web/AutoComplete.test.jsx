@@ -71,7 +71,7 @@ describe('<AutoComplete />', () => {
           <AutoComplete
             value="secon"
             options={['first', 'second', 'third']}
-            shouldfilterOptions={false}
+            shouldFilterOptions={false}
           />
         </ThemeProvider>,
       );

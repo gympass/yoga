@@ -162,7 +162,7 @@ const AutoComplete = React.forwardRef(
       error,
       openSuggestionsAriaLabel,
       closeSuggestionsAriaLabel,
-      shouldfilterOptions,
+      shouldFilterOptions,
       ...props
     },
     ref,
@@ -225,7 +225,7 @@ const AutoComplete = React.forwardRef(
             'gi',
           );
 
-          const suggestionList = shouldfilterOptions
+          const suggestionList = shouldFilterOptions
             ? options
                 .filter(option => option.match(reg))
                 .sort((first, second) =>
@@ -329,7 +329,7 @@ AutoComplete.propTypes = {
   /** an aria label for the close suggestions icon */
   closeSuggestionsAriaLabel: string,
   /** flag to enable options filtering */
-  shouldfilterOptions: bool,
+  shouldFilterOptions: bool,
 };
 
 AutoComplete.defaultProps = {
@@ -344,7 +344,7 @@ AutoComplete.defaultProps = {
   error: undefined,
   openSuggestionsAriaLabel: 'Open suggestions',
   closeSuggestionsAriaLabel: 'Close suggestions',
-  shouldfilterOptions: true,
+  shouldFilterOptions: true,
 };
 
 export default AutoComplete;
