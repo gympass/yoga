@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.72.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.0...@gympass/yoga@7.72.1) (2023-03-28)
+
+
+### Bug Fixes
+
+* **component:** fixed double conversion to utc when the inputs already is utc ([6016bd7](https://github.com/Gympass/yoga/commit/6016bd7317633e59884c254d96c85a2837727139))
+* **component:** fixed the no selection of a date in datepicker when the startdate input is local ([29748c7](https://github.com/Gympass/yoga/commit/29748c717fead3f43a23981083dfb5b57c043d96))
+* **component:** implemented pr recommendations on datepicker ([2b8594f](https://github.com/Gympass/yoga/commit/2b8594f4e0244a3934a5f08b4de23b82b44b771d))
+
+
+
+
+
 # [7.72.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.71.0...@gympass/yoga@7.72.0) (2023-03-28)
 
 
