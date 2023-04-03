@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.72.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.3...@gympass/yoga@7.72.4) (2023-04-03)
+
+
+### Bug Fixes
+
+* **Accordion:** move styled components outside the component render ([58c7f24](https://github.com/Gympass/yoga/commit/58c7f244fb8cf17f6fed976aaf4b4b0cb03f615b))
+* prevent bubbling of popover events to parents ([71607e7](https://github.com/Gympass/yoga/commit/71607e7b3e2cbed49343c5999083a0c7b027e260))
+
+
+
+
+
+## [7.72.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.2...@gympass/yoga@7.72.3) (2023-04-03)
+
+
+### Bug Fixes
+
+* changes info feedback icon from AlertCircle to Info ([82b03aa](https://github.com/Gympass/yoga/commit/82b03aad2788699675847af4c0635f0b52ce484b))
+
+
+
+
+
+## [7.72.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.1...@gympass/yoga@7.72.2) (2023-03-28)
+
+
+### Bug Fixes
+
+* **Dropdown:** updating options dynamically ([58bbf19](https://github.com/Gympass/yoga/commit/58bbf1938c408ff01ff43eb5b144a3bd54a7aa10))
+
+
+
+
+
 ## [7.72.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.0...@gympass/yoga@7.72.1) (2023-03-28)
 
 

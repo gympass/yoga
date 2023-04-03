@@ -434,6 +434,53 @@
       ]
     },
     {
+      "login": "marinamsou",
+      "name": "Marina Souza",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26771441?v=4",
+      "profile": "https://github.com/marinamsou",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "luanlorenzo",
+      "name": "Luan Lorenzo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18699514?v=4",
+      "profile": "https://github.com/luanlorenzo",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "tomaskeong",
+      "name": "Tomás Keong",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47691990?v=4",
+      "profile": "https://tomaskeong.vercel.app/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "leonardokl",
+      "name": "Leonardo Luiz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7108030?v=4",
+      "profile": "https://github.com/leonardokl",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "marcos-creuz",
+      "name": "Marcos Creuz Filho",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10004004?v=4",
+      "profile": "https://github.com/marcos-creuz",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
       "login": "gympassjagnezi",
       "name": "Jonas",
       "avatar_url": "https://avatars.githubusercontent.com/u/127952311?v=4",
@@ -442,7 +489,7 @@
         "doc",
         "code"
       ]
-    }
+    },
   ],
   "contributorsPerLine": 7,
   "projectName": "yoga",
