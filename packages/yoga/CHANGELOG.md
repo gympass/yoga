@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.72.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.2...@gympass/yoga@7.72.3) (2023-04-03)
+
+
+### Bug Fixes
+
+* changes info feedback icon from AlertCircle to Info ([82b03aa](https://github.com/Gympass/yoga/commit/82b03aad2788699675847af4c0635f0b52ce484b))
+
+
+
+
+
 ## [7.72.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.1...@gympass/yoga@7.72.2) (2023-03-28)
 
 
