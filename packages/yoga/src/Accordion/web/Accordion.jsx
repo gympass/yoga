@@ -214,7 +214,7 @@ const Accordion = ({
       <Header
         disabled={disabled}
         onClick={() => {
-          setOpen(!open);
+          setOpen(o => !o);
         }}
         small={small}
         hasHorizontalPadding={hasHorizontalPadding}
