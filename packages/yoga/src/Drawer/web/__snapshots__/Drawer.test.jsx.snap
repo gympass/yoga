@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Drawer /> should match snapshot 1`] = `
-.c8 {
+.c10 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -40,7 +40,7 @@ exports[`<Drawer /> should match snapshot 1`] = `
   text-decoration: none;
 }
 
-.c8 svg {
+.c10 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -49,26 +49,43 @@ exports[`<Drawer /> should match snapshot 1`] = `
   transition: fill 0.2s;
 }
 
-.c8:not([disabled]):hover,
-.c8:not([disabled]):focus {
+.c10:not([disabled]):hover,
+.c10:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c8:active {
+.c10:active {
   background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c8:active svg {
+.c10:active svg {
   fill: #FFFFFF;
 }
 
 .c4 {
   width: 100%;
-  color: #231B22;
 }
 
 .c5 {
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-left: 40px;
+}
+
+.c6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c7 {
   margin-bottom: 32px;
   color: #6B6B78;
   font-size: 16px;
@@ -76,7 +93,11 @@ exports[`<Drawer /> should match snapshot 1`] = `
   text-align: center;
 }
 
-.c7 {
+.c9 {
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+  padding-left: 40px;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -132,32 +153,33 @@ exports[`<Drawer /> should match snapshot 1`] = `
 }
 
 .c3 {
-  padding: 16px 56px 40px 56px;
-  width: min(600px,100%);
-  border-radius: 0!important;
-  height: 100%;
+  position: absolute;
+  right: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  position: absolute;
-  right: 0;
+  height: 100%;
+  padding: 0;
+  border-radius: 0;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
   -webkit-animation: content;
   animation: content;
   -webkit-animation-duration: 400ms;
   animation-duration: 400ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
+  width: min(600px,100%);
 }
 
-.c6 {
-  margin: 0;
-  height: 100%;
+.c8 {
   width: 100%;
+  height: 100%;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
+  margin: 0;
+  padding-left: 40px;
   text-align: left;
 }
 
@@ -175,24 +197,30 @@ exports[`<Drawer /> should match snapshot 1`] = `
         >
           <header
             class="c4"
-            color="text.primary"
             width="100%"
           >
-            Title
+            <div
+              class="c5"
+            >
+              <div
+                class="c6"
+                d="flex"
+              />
+            </div>
           </header>
           <div
-            class="c5 c6"
+            class="c7 c8"
             color="text.secondary"
           >
             Subtitle
           </div>
           <footer
-            class="c7"
+            class="c9"
             d="flex"
             width="100%"
           >
             <button
-              class="c8"
+              class="c10"
             >
               Ok, got it
             </button>

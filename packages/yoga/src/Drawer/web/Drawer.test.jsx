@@ -1,5 +1,6 @@
 import React from 'react';
-import { screen, render, fireEvent, cleanup } from '@testing-library/react';
+import { screen, render, cleanup } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 import { ThemeProvider, Button } from '../..';
 
@@ -24,13 +25,13 @@ describe('<Drawer />', () => {
     expect(baseElement).toMatchSnapshot();
   });
 
-  it('should render a minimal drawer', () => {
+  it('should render a minimal drawer', async () => {
     const onActionMock = jest.fn();
 
     render(
       <ThemeProvider>
         <Drawer isOpen>
-          <Drawer.Header>Title</Drawer.Header>
+          <Drawer.Header title="Title" />
           <Drawer.Content>Subtitle</Drawer.Content>
           <Drawer.Footer>
             <Button onClick={onActionMock} secondary>
@@ -44,9 +45,9 @@ describe('<Drawer />', () => {
     screen.getByText('Title');
     screen.getByText('Subtitle');
 
-    const button = screen.getByRole('button', { name: /Ok, got it/i });
-
-    fireEvent.click(button);
+    await userEvent
+      .setup()
+      .click(screen.getByRole('button', { name: /Ok, got it/i }));
 
     expect(onActionMock).toHaveBeenCalledTimes(1);
   });
