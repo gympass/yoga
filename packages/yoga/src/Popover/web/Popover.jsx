@@ -43,9 +43,17 @@ function Popover({
         </PopoverContainer>
       )}
 
-      <div onMouseEnter={handleShowPopover} onMouseLeave={handleHidePopover}>
+      <button
+        type="button"
+        style={{ all: 'unset' }}
+        onMouseEnter={handleShowPopover}
+        onMouseLeave={handleHidePopover}
+        onTouchStart={handleShowPopover}
+        onTouchEnd={handleHidePopover}
+        onClick={event => event.preventDefault()}
+      >
         {children}
-      </div>
+      </button>
     </Wrapper>
   );
 }
