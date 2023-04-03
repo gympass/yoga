@@ -434,6 +434,34 @@
       ]
     },
     {
+      "login": "marinamsou",
+      "name": "Marina Souza",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26771441?v=4",
+      "profile": "https://github.com/marinamsou",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "luanlorenzo",
+      "name": "Luan Lorenzo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18699514?v=4",
+      "profile": "https://github.com/luanlorenzo",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "tomaskeong",
+      "name": "Tomás Keong",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47691990?v=4",
+      "profile": "https://tomaskeong.vercel.app/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
       "login": "leonardokl",
       "name": "Leonardo Luiz",
       "avatar_url": "https://avatars.githubusercontent.com/u/7108030?v=4",
@@ -442,7 +470,7 @@
         "code",
         "doc"
       ]
-    }
+    },
   ],
   "contributorsPerLine": 7,
   "projectName": "yoga",

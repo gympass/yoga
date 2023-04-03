@@ -1,7 +1,7 @@
 import { arrayOf, node, oneOf, oneOfType, string, bool } from 'prop-types';
 import React from 'react';
 
-import { CheckedFull, AlertCircle, AlertTriangle } from '@gympass/yoga-icons';
+import { CheckedFull, Info, AlertTriangle } from '@gympass/yoga-icons';
 import Icon from '../../Icon';
 import Box from '../../Box';
 import Text from '../../Text';
@@ -21,7 +21,7 @@ const VARIANT_ICONS = {
     fill: 'hope',
   },
   informative: {
-    as: AlertCircle,
+    as: Info,
     fill: 'relax',
   },
   attention: {
