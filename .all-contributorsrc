@@ -441,7 +441,17 @@
       "contributions": [
         "code"
       ]
-    }
+    },
+    {
+      "login": "luanlorenzo",
+      "name": "Luan Lorenzo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18699514?v=4",
+      "profile": "https://github.com/luanlorenzo",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
   ],
   "contributorsPerLine": 7,
   "projectName": "yoga",
