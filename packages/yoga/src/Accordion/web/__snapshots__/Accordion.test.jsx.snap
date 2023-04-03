@@ -5,46 +5,6 @@ exports[`<Accordion /> should correctly render the default version 1`] = `
   padding: 0 20px 20px;
 }
 
-.c4 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  color: #6B6B78;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
-  color: #231B22;
-  line-height: 24px;
-}
-
-.c8 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  font-size: 16px;
-}
-
-.c9 {
-  width: 100%;
-  border-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  border-color: #D7D7E0;
-}
-
 .c0 {
   border: none;
   display: -webkit-box;
@@ -142,6 +102,46 @@ exports[`<Accordion /> should correctly render the default version 1`] = `
   fill: #D8385E;
 }
 
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  line-height: 24px;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+}
+
+.c9 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
 <div
   class="c0"
 >
@@ -193,50 +193,6 @@ exports[`<Accordion /> should correctly render the default version 1`] = `
 exports[`<Accordion /> should correctly render the default version with subtitle 1`] = `
 .c8 {
   padding: 0 20px 20px;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  color: #6B6B78;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
-  color: #231B22;
-  line-height: 24px;
-}
-
-.c9 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  font-size: 16px;
-}
-
-.c10 {
-  width: 100%;
-  border-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  border-color: #D7D7E0;
-}
-
-.c11 .c7 {
-  padding-bottom: 16px;
 }
 
 .c0 {
@@ -303,6 +259,10 @@ exports[`<Accordion /> should correctly render the default version with subtitle
   margin: 0;
 }
 
+.c11 .c7 {
+  padding-bottom: 16px;
+}
+
 .c6 {
   height: auto;
   max-height: 0;
@@ -334,6 +294,46 @@ exports[`<Accordion /> should correctly render the default version with subtitle
   -webkit-transition: all 200ms ease-out 0s;
   transition: all 200ms ease-out 0s;
   fill: #D8385E;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  line-height: 24px;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+}
+
+.c10 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
 }
 
 <div
@@ -389,54 +389,6 @@ exports[`<Accordion /> should correctly render the default version with subtitle
 exports[`<Accordion /> should correctly render the default version without side padding 1`] = `
 .c8 {
   padding: 0 20px 20px;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  color: #6B6B78;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
-  color: #231B22;
-  line-height: 24px;
-}
-
-.c9 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  font-size: 16px;
-}
-
-.c10 {
-  width: 100%;
-  border-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  border-color: #D7D7E0;
-}
-
-.c11 .c7 {
-  padding-bottom: 16px;
-}
-
-.c12 .c7 {
-  padding-bottom: 16px;
 }
 
 .c0 {
@@ -503,6 +455,10 @@ exports[`<Accordion /> should correctly render the default version without side 
   margin: 8px 0;
 }
 
+.c11 .c7 {
+  padding-bottom: 16px;
+}
+
 .c6 {
   height: auto;
   max-height: 9999px;
@@ -539,6 +495,46 @@ exports[`<Accordion /> should correctly render the default version without side 
   -webkit-transition: all 200ms ease-out 0s;
   transition: all 200ms ease-out 0s;
   fill: #D8385E;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  line-height: 24px;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+}
+
+.c10 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
 }
 
 <div
@@ -592,46 +588,6 @@ exports[`<Accordion /> should correctly render the default version without side 
 exports[`<Accordion /> should correctly render the small version 1`] = `
 .c8 {
   padding: 0 20px 20px;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  color: #6B6B78;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-}
-
-.c9 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  font-size: 16px;
-}
-
-.c10 {
-  width: 100%;
-  border-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  border-color: #D7D7E0;
 }
 
 .c0 {
@@ -735,6 +691,46 @@ exports[`<Accordion /> should correctly render the small version 1`] = `
   fill: #D8385E;
 }
 
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+}
+
+.c10 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
 <div
   class="c0"
 >
@@ -786,50 +782,6 @@ exports[`<Accordion /> should correctly render the small version 1`] = `
 exports[`<Accordion /> should correctly render the small version with subtitle 1`] = `
 .c8 {
   padding: 0 20px 20px;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  color: #6B6B78;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-}
-
-.c9 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  font-size: 16px;
-}
-
-.c10 {
-  width: 100%;
-  border-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  border-color: #D7D7E0;
-}
-
-.c11 .c7 {
-  padding-bottom: 16px;
 }
 
 .c0 {
@@ -933,6 +885,46 @@ exports[`<Accordion /> should correctly render the small version with subtitle 1
   fill: #D8385E;
 }
 
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+}
+
+.c10 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
 <div
   class="c0"
 >
@@ -986,59 +978,6 @@ exports[`<Accordion /> should correctly render the small version with subtitle 1
 exports[`<Accordion /> should correctly render the small version without side padding 1`] = `
 .c8 {
   padding: 0 20px 20px;
-}
-
-.c4 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  color: #6B6B78;
-}
-
-.c3 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-}
-
-.c9 {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
-  color: #231B22;
-  font-size: 16px;
-}
-
-.c10 {
-  width: 100%;
-  border-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  border-color: #D7D7E0;
-}
-
-.c11 .c7 {
-  padding-bottom: 16px;
-}
-
-.c12 .c7 {
-  padding-bottom: 16px;
-}
-
-.c13 .c7 {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .c0 {
@@ -1105,6 +1044,15 @@ exports[`<Accordion /> should correctly render the small version without side pa
   margin: 8px 0;
 }
 
+.c11 .c7 {
+  padding-bottom: 16px;
+}
+
+.c12 .c7 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .c6 {
   height: auto;
   max-height: 0;
@@ -1145,6 +1093,46 @@ exports[`<Accordion /> should correctly render the small version without side pa
   -webkit-transition: all 200ms ease-out 0s;
   transition: all 200ms ease-out 0s;
   fill: #D8385E;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+}
+
+.c10 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
 }
 
 <div
