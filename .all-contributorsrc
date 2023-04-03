@@ -480,6 +480,16 @@
         "code"
       ]
     },
+    {
+      "login": "gympassjagnezi",
+      "name": "Jonas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/127952311?v=4",
+      "profile": "https://github.com/gympassjagnezi",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
   ],
   "contributorsPerLine": 7,
   "projectName": "yoga",
