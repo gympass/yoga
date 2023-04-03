@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.72.4](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.3...@gympass/yoga@7.72.4) (2023-04-03)
+
+
+### Bug Fixes
+
+* **Accordion:** move styled components outside the component render ([58c7f24](https://github.com/Gympass/yoga/commit/58c7f244fb8cf17f6fed976aaf4b4b0cb03f615b))
+* prevent bubbling of popover events to parents ([71607e7](https://github.com/Gympass/yoga/commit/71607e7b3e2cbed49343c5999083a0c7b027e260))
+
+
+
+
+
 ## [7.72.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.2...@gympass/yoga@7.72.3) (2023-04-03)
 
 
