@@ -9,12 +9,15 @@ exports[`<Popover /> should match snapshot 1`] = `
   <div
     class="c0"
   >
-    <div>
+    <button
+      style="all: unset;"
+      type="button"
+    >
       <svg
         height="26"
         width="26"
       />
-    </div>
+    </button>
   </div>
 </div>
 `;
