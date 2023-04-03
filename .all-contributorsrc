@@ -434,6 +434,15 @@
       ]
     },
     {
+      "login": "marinamsou",
+      "name": "Marina Souza",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26771441?v=4",
+      "profile": "https://github.com/marinamsou",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
       "login": "luanlorenzo",
       "name": "Luan Lorenzo",
       "avatar_url": "https://avatars.githubusercontent.com/u/18699514?v=4",
@@ -442,7 +451,7 @@
         "code",
         "doc"
       ]
-    }
+    },
   ],
   "contributorsPerLine": 7,
   "projectName": "yoga",
