@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Drawer /> should match snapshot 1`] = `
-.c10 {
+.c11 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -40,7 +40,7 @@ exports[`<Drawer /> should match snapshot 1`] = `
   text-decoration: none;
 }
 
-.c10 svg {
+.c11 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -49,17 +49,17 @@ exports[`<Drawer /> should match snapshot 1`] = `
   transition: fill 0.2s;
 }
 
-.c10:not([disabled]):hover,
-.c10:not([disabled]):focus {
+.c11:not([disabled]):hover,
+.c11:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c10:active {
+.c11:active {
   background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c10:active svg {
+.c11:active svg {
   fill: #FFFFFF;
 }
 
@@ -79,13 +79,17 @@ exports[`<Drawer /> should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.c7 {
+.c8 {
   margin-bottom: 32px;
   color: #6B6B78;
   font-size: 16px;
@@ -93,7 +97,7 @@ exports[`<Drawer /> should match snapshot 1`] = `
   text-align: center;
 }
 
-.c9 {
+.c10 {
   padding-top: 16px;
   padding-right: 16px;
   padding-bottom: 40px;
@@ -103,6 +107,18 @@ exports[`<Drawer /> should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .c1 {
@@ -172,7 +188,7 @@ exports[`<Drawer /> should match snapshot 1`] = `
   width: min(600px,100%);
 }
 
-.c8 {
+.c9 {
   width: 100%;
   height: 100%;
   -webkit-align-self: flex-start;
@@ -204,23 +220,31 @@ exports[`<Drawer /> should match snapshot 1`] = `
             >
               <div
                 class="c6"
-                d="flex"
-              />
+                display="flex"
+                width="100%"
+              >
+                <p
+                  class="c7"
+                  font-size="xsmall"
+                >
+                  Title
+                </p>
+              </div>
             </div>
           </header>
           <div
-            class="c7 c8"
+            class="c8 c9"
             color="text.secondary"
           >
             Subtitle
           </div>
           <footer
-            class="c9"
+            class="c10"
             d="flex"
             width="100%"
           >
             <button
-              class="c10"
+              class="c11"
             >
               Ok, got it
             </button>

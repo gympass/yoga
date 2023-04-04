@@ -11,7 +11,7 @@ function Header({ onClose, title, onBack, divider, hideCloseButton }) {
     if (divider) {
       return (
         <Box marginTop="small">
-          <Divider />
+          <Divider data-testid="divider-drawer" />
         </Box>
       );
     }
@@ -21,7 +21,14 @@ function Header({ onClose, title, onBack, divider, hideCloseButton }) {
 
   function closeButton() {
     if (showCloseButton) {
-      return <Button.Icon icon={Close} inverted onClick={onClose} />;
+      return (
+        <Button.Icon
+          icon={Close}
+          inverted
+          onClick={onClose}
+          data-testid="close-button-drawer"
+        />
+      );
     }
 
     return null;
@@ -39,7 +46,12 @@ function Header({ onClose, title, onBack, divider, hideCloseButton }) {
               width="100%"
               height="100%"
             >
-              <Button.Icon icon={ArrowLeft} inverted onClick={onBack} />
+              <Button.Icon
+                icon={ArrowLeft}
+                inverted
+                onClick={onBack}
+                data-testid="back-button-drawer"
+              />
             </Box>
           </Col>
 
