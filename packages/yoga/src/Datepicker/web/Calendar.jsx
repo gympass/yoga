@@ -66,25 +66,22 @@ const getDayFieldColor = (selected, disabled, colors, aux) => {
   return colors.stamina;
 };
 
-const toUTCDate = date => {
-  return new Date(
-    Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()),
-  ).getTime();
-};
+const toUTCTime = date =>
+  Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
 
 const isSameDate = (firstDate, secondDate) =>
-  firstDate.getDate() === secondDate.getDate() &&
-  firstDate.getMonth() === secondDate.getMonth() &&
-  firstDate.getFullYear() === secondDate.getFullYear();
+  firstDate.getUTCDate() === secondDate.getUTCDate() &&
+  firstDate.getUTCMonth() === secondDate.getUTCMonth() &&
+  firstDate.getUTCFullYear() === secondDate.getUTCFullYear();
 
 const getDayFieldRadius = (aux, radii) => {
   const { val, startDate, endDate, year, month } = aux;
   const currentDate = new Date(Date.UTC(year, month, val))?.getTime();
 
-  if (currentDate === toUTCDate(startDate) && endDate) {
+  if (currentDate === toUTCTime(startDate) && endDate) {
     return `${radii.circle}px ${radii.sharp}px ${radii.sharp}px ${radii.circle}px`;
   }
-  if (currentDate === toUTCDate(endDate) && startDate) {
+  if (currentDate === toUTCTime(endDate) && startDate) {
     return `${radii.sharp}px ${radii.circle}px ${radii.circle}px ${radii.sharp}px`;
   }
 
@@ -206,12 +203,12 @@ function Calendar({
     return new Date(Date.UTC(year, month, 0)).getUTCDate();
   };
 
-  const toUTCDateDay = day => {
-    return new Date(Date.UTC(year, month, day)).getTime();
+  const toUTCTimeByDay = day => {
+    return Date.UTC(year, month, day);
   };
 
   const isEqual = day => {
-    const utcDate = new Date(Date.UTC(year, month, day));
+    const utcDate = new Date(toUTCTimeByDay(day));
 
     return (
       (startDate && isSameDate(startDate, utcDate)) ||
@@ -222,36 +219,24 @@ function Calendar({
   const inRange = day => {
     return (
       startDate &&
-      startDate.getTime() <= toUTCDateDay(day) &&
+      toUTCTime(startDate) <= toUTCTimeByDay(day) &&
       endDate &&
-      endDate.getTime() >= toUTCDateDay(day)
+      endDate.getTime() >= toUTCTimeByDay(day)
     );
   };
 
   const isDisabled = day => {
-    const local = new Date(Date.UTC(year, month, day));
+    const local = Date.UTC(year, month, day);
     const now = new Date();
     const nowUTC = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
 
     const pastDatesDisabled =
-      (disablePastDates && local.getTime() < nowUTC) ||
-      (disablePastFrom &&
-        local.getTime() <
-          new Date(
-            disablePastFrom.getFullYear(),
-            disablePastFrom.getMonth(),
-            disablePastFrom.getDate(),
-          ));
+      (disablePastDates && local < nowUTC) ||
+      (disablePastFrom && local < toUTCTime(disablePastFrom));
 
     const futureDateDisabled =
-      (disableFutureDates && local.getTime() > nowUTC) ||
-      (disableFutureFrom &&
-        local.getTime() >
-          new Date(
-            disableFutureFrom.getFullYear(),
-            disableFutureFrom.getMonth(),
-            disableFutureFrom.getDate(),
-          ));
+      (disableFutureDates && local > nowUTC) ||
+      (disableFutureFrom && local > toUTCTime(disableFutureFrom));
 
     return pastDatesDisabled || futureDateDisabled;
   };
@@ -261,9 +246,13 @@ function Calendar({
 
     if (
       isDisabled(day) ||
-      (startDate && selectedDate.getTime() === toUTCDate(startDate))
-    )
+      (type === 'range' &&
+        startDate &&
+        !endDate &&
+        selectedDate.getTime() < toUTCTime(startDate))
+    ) {
       return;
+    }
 
     if (type === 'single') {
       onSelectSingle(selectedDate);
