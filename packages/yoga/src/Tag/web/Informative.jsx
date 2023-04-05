@@ -45,9 +45,10 @@ const TagInformative = ({
     },
   },
   small,
+  ellipsis,
   ...props
 }) => (
-  <Informative small={small} {...props}>
+  <Informative small={small} ellipsis={ellipsis} {...props}>
     {icon && (
       <Icon
         as={icon}
@@ -69,12 +70,15 @@ TagInformative.propTypes = {
   children: node.isRequired,
   /** The tag's size */
   small: bool,
+  /** After set a max-width can put ellipses for large texts */
+  ellipsis: bool,
 };
 
 TagInformative.defaultProps = {
   icon: undefined,
   small: false,
   variant: 'neutral',
+  ellipsis: false,
 };
 
 TagInformative.displayName = 'Tag.Informative';

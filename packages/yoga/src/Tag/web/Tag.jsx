@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { oneOf, node, bool } from 'prop-types';
-import { margins } from '@gympass/yoga-system';
+import { margins, maxWidth } from '@gympass/yoga-system';
 
 const StyledTag = styled.div`
   display: inline-flex;
@@ -13,6 +13,7 @@ const StyledTag = styled.div`
   ${({
     variant,
     small,
+    ellipsis,
     theme: {
       yoga: {
         colors: {
@@ -44,7 +45,18 @@ const StyledTag = styled.div`
               ${tag.padding.default.left}px;
           `
     }
-   
+
+    ${
+      ellipsis
+        ? `
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    `
+        : ``
+    }
+
     color: ${color.dark};
     border-radius: ${tag.border.radius}px;
     border-width: ${tag.border.width}px;
@@ -56,6 +68,7 @@ const StyledTag = styled.div`
   `}
 
   ${margins}
+  ${maxWidth}
 `;
 
 /** Tags should be keywords to categorize or organize an item. */
@@ -67,11 +80,14 @@ Tag.propTypes = {
   children: node.isRequired,
   /** Can send small to use this variant */
   small: bool,
+  /** After set a max-width can put ellipses for large texts */
+  ellipsis: bool,
 };
 
 Tag.defaultProps = {
   variant: '',
   small: false,
+  ellipsis: false,
 };
 
 export default Tag;
