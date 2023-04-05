@@ -212,7 +212,9 @@ exports[`<Drawer /> should match snapshot 1`] = `
           class="c1 c2 c3"
         >
           <header
+            aria-label="header-drawer"
             class="c4"
+            role="heading"
             width="100%"
           >
             <div
@@ -246,7 +248,7 @@ exports[`<Drawer /> should match snapshot 1`] = `
             <button
               class="c11"
             >
-              Ok, got it
+              Ok, got it!
             </button>
           </footer>
         </section>

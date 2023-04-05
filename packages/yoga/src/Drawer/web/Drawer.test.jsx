@@ -8,7 +8,6 @@ import Drawer from '.';
 
 describe('<Drawer />', () => {
   afterEach(cleanup);
-  const onActionMock = jest.fn();
 
   it('should match snapshot', () => {
     const { baseElement } = render(
@@ -17,7 +16,7 @@ describe('<Drawer />', () => {
           <Drawer.Header title="Title" />
           <Drawer.Content>Subtitle</Drawer.Content>
           <Drawer.Footer>
-            <Button secondary>Ok, got it</Button>
+            <Button secondary>Ok, got it!</Button>
           </Drawer.Footer>
         </Drawer>
       </ThemeProvider>,
@@ -27,6 +26,8 @@ describe('<Drawer />', () => {
   });
 
   it('should render a minimal drawer', async () => {
+    const onActionMock = jest.fn();
+
     render(
       <ThemeProvider>
         <Drawer isOpen>
@@ -34,64 +35,89 @@ describe('<Drawer />', () => {
           <Drawer.Content>Subtitle</Drawer.Content>
           <Drawer.Footer>
             <Button onClick={onActionMock} secondary>
-              Ok, got it
+              Ok, got it!
             </Button>
           </Drawer.Footer>
         </Drawer>
       </ThemeProvider>,
     );
 
-    screen.getByText('Title');
-    screen.getByText('Subtitle');
+    const title = screen.getByText('Title');
+    const subtitle = screen.getByText('Subtitle');
 
-    await userEvent
-      .setup()
-      .click(screen.getByRole('button', { name: /Ok, got it/i }));
+    const button = screen.getByRole('button', { name: /Ok, got it!/i });
 
-    expect(onActionMock).toHaveBeenCalledTimes(1);
+    await userEvent.setup().click(button);
+
+    expect(title).toBeVisible();
+    expect(subtitle).toBeVisible();
+    expect(onActionMock).toBeCalledTimes(1);
   });
 
   describe('<Drawer.Header />', () => {
     afterEach(cleanup);
 
     it('should render close bottom', () => {
+      const onCloseActionMock = jest.fn();
+
       render(
         <ThemeProvider>
           <Drawer isOpen>
-            <Drawer.Header title="Title" onClose={onActionMock} />
+            <Drawer.Header title="Title" onClose={onCloseActionMock} />
           </Drawer>
         </ThemeProvider>,
       );
 
-      expect(screen.getByTestId('close-button-drawer')).toBeInTheDocument();
+      const closeButton = screen.getByRole('button', {
+        name: 'close-button-drawer',
+      });
+
+      expect(closeButton).toBeVisible();
     });
 
     it('should render back bottom', () => {
+      const backHandleActionMock = jest.fn();
+
       render(
         <ThemeProvider>
           <Drawer isOpen>
-            <Drawer.Header title="Title" onBack={onActionMock} />
+            <Drawer.Header title="Title" backHandler={backHandleActionMock} />
           </Drawer>
         </ThemeProvider>,
       );
 
-      expect(screen.getByTestId('back-button-drawer')).toBeInTheDocument();
+      const backButton = screen.getByRole('button', {
+        name: 'back-button-drawer',
+      });
+
+      expect(backButton).toBeVisible();
     });
 
     it('should render close and back bottons', () => {
+      const onCloseActionMock = jest.fn();
+      const backHandleActionMock = jest.fn();
+
       render(
         <ThemeProvider>
           <Drawer isOpen>
             <Drawer.Header
               title="Title"
-              onClose={onActionMock}
-              onBack={onActionMock}
+              onClose={onCloseActionMock}
+              backHandler={backHandleActionMock}
             />
           </Drawer>
         </ThemeProvider>,
       );
 
-      expect(screen.getByTestId('back-button-drawer')).toBeInTheDocument();
+      const backButton = screen.getByRole('button', {
+        name: 'back-button-drawer',
+      });
+      const closeButton = screen.getByRole('button', {
+        name: 'close-button-drawer',
+      });
+
+      expect(backButton).toBeVisible();
+      expect(closeButton).toBeVisible();
     });
 
     it('should render divider component', () => {
@@ -103,61 +129,108 @@ describe('<Drawer />', () => {
         </ThemeProvider>,
       );
 
-      expect(screen.getByTestId('divider-drawer')).toBeInTheDocument();
+      const divider = screen.getByRole('separator', { name: 'divider-drawer' });
+
+      expect(divider).toBeInTheDocument();
     });
 
     it('should render drawer without drawer.header', async () => {
+      const onButtonActionMock = jest.fn();
+
       render(
         <ThemeProvider>
           <Drawer isOpen>
             <Drawer.Content>Subtitle</Drawer.Content>
             <Drawer.Footer>
-              <Button onClick={onActionMock} secondary>
-                Ok, got it
+              <Button onClick={onButtonActionMock} secondary>
+                Ok, got it!
               </Button>
             </Drawer.Footer>
           </Drawer>
         </ThemeProvider>,
       );
 
+      const headerDrawer = screen.queryByRole('heading', {
+        name: 'header-drawer',
+      });
+
+      const subtitle = screen.getByText('Subtitle');
+
       await userEvent
         .setup()
-        .click(screen.getByRole('button', { name: /Ok, got it/i }));
+        .click(screen.getByRole('button', { name: /Ok, got it!/i }));
 
-      expect(screen.getByText('Subtitle')).toBeInTheDocument();
-      expect(onActionMock).toHaveBeenCalledTimes(2);
+      expect(onButtonActionMock).toBeCalledTimes(1);
+
+      expect(headerDrawer).not.toBeInTheDocument();
+      expect(subtitle).toBeVisible();
     });
 
-    it('should render all props', async () => {
+    it('should render onClose, backHandler and divider', async () => {
+      const onCloseActionMock = jest.fn();
+      const backHandleActionMock = jest.fn();
+
       render(
         <ThemeProvider>
           <Drawer isOpen>
             <Drawer.Header
               title="Title"
-              onClose={onActionMock}
-              onBack={onActionMock}
+              onClose={onCloseActionMock}
+              backHandler={backHandleActionMock}
               divider
             />
-            <Drawer.Content>Subtitle</Drawer.Content>
-            <Drawer.Footer>
-              <Button onClick={onActionMock} secondary>
-                Ok, got it
-              </Button>
-            </Drawer.Footer>
+          </Drawer>
+        </ThemeProvider>,
+      );
+
+      const closeButton = screen.getByRole('button', {
+        name: 'close-button-drawer',
+      });
+      const backButton = screen.getByRole('button', {
+        name: 'back-button-drawer',
+      });
+
+      const divider = screen.getByRole('separator', { name: 'divider-drawer' });
+
+      expect(closeButton).toBeVisible();
+      expect(backButton).toBeVisible();
+      expect(divider).toBeVisible();
+    });
+
+    it('should call onClose function', async () => {
+      const onCloseActionMock = jest.fn();
+
+      render(
+        <ThemeProvider>
+          <Drawer isOpen>
+            <Drawer.Header title="Title" onClose={onCloseActionMock} />
           </Drawer>
         </ThemeProvider>,
       );
 
       await userEvent
         .setup()
-        .click(screen.getByRole('button', { name: /Ok, got it/i }));
+        .click(screen.getByRole('button', { name: 'close-button-drawer' }));
 
-      expect(onActionMock).toHaveBeenCalledTimes(3);
-      expect(screen.getByText('Title')).toBeInTheDocument();
-      expect(screen.getByText('Subtitle')).toBeInTheDocument();
-      expect(screen.getByTestId('close-button-drawer')).toBeInTheDocument();
-      expect(screen.getByTestId('divider-drawer')).toBeInTheDocument();
-      expect(screen.getByTestId('back-button-drawer')).toBeInTheDocument();
+      expect(onCloseActionMock).toBeCalledTimes(1);
+    });
+
+    it('should call backHandler function', async () => {
+      const backHandleActionMock = jest.fn();
+
+      render(
+        <ThemeProvider>
+          <Drawer isOpen>
+            <Drawer.Header title="Title" backHandler={backHandleActionMock} />
+          </Drawer>
+        </ThemeProvider>,
+      );
+
+      await userEvent
+        .setup()
+        .click(screen.getByRole('button', { name: 'back-button-drawer' }));
+
+      expect(backHandleActionMock).toBeCalledTimes(1);
     });
   });
 });
