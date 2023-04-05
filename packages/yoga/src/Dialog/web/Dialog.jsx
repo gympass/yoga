@@ -110,7 +110,7 @@ Dialog.propTypes = {
   isOpen: bool,
   /** Function to close the dialog. */
   onClose: func,
-  onBack: func,
+  backHandler: func,
   zIndex: number,
   children: node.isRequired,
 };
@@ -118,7 +118,7 @@ Dialog.propTypes = {
 Dialog.defaultProps = {
   isOpen: false,
   onClose: undefined,
-  onBack: undefined,
+  backHandler: undefined,
   zIndex: 3,
   dialogId: undefined,
 };

@@ -97,7 +97,7 @@ render(() => {
     <>
       <Button onClick={handleOpen}>Open Drawer</Button>
       <Drawer isOpen={isOpen} onClose={handleOnClose}>
-        <Drawer.Header onClose={handleOnClose} onBack={handleOnClose} title="section title" />
+        <Drawer.Header onClose={handleOnClose} backHandler={handleOnClose} title="section title" />
 
         <Drawer.Content>
           <BoxContent>
@@ -152,7 +152,7 @@ render(() => {
     <>
       <Button onClick={handleOpen}>Open Drawer</Button>
       <Drawer isOpen={isOpen} onClose={handleOnClose}>
-        <Drawer.Header onClose={handleOnClose} onBack={handleOnClose} title="section title" divider />
+        <Drawer.Header onClose={handleOnClose} backHandler={handleOnClose} title="section title" divider />
 
         <Drawer.Content>
           <BoxContent>
@@ -207,7 +207,7 @@ render(() => {
     <>
       <Button onClick={handleOpen}>Open Drawer</Button>
       <Drawer isOpen={isOpen} onClose={handleOnClose}>
-        <Drawer.Header onClose={handleOnClose} onBack={handleOnClose} title="section title" hideCloseButton />
+        <Drawer.Header onClose={handleOnClose} backHandler={handleOnClose} title="section title" hideCloseButton />
 
         <Drawer.Content>
           <BoxContent>
