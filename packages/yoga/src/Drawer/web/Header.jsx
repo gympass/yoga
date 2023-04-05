@@ -137,6 +137,7 @@ Header.defaultProps = {
   divider: false,
   hideCloseButton: false,
 };
+
 Header.displayName = 'Drawer.Header';
 
 export default Header;

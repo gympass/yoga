@@ -11,8 +11,8 @@ const StyledDrawer = styled(Dialog)`
   align-self: flex-end;
 
   height: 100%;
-  padding: ${theme.spacing.zero};
-  border-radius: ${theme.borders.zero};
+  padding: ${theme.spacing.zero} !important;
+  border-radius: ${theme.borders.zero} !important;
 
   transition: 0.25s ease-in-out;
 
