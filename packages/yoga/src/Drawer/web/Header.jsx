@@ -4,14 +4,14 @@ import { Close, ArrowLeft } from '@gympass/yoga-icons';
 import Box from '../../Box';
 import { Button, Text, Divider, Row, Col } from '../..';
 
-function Header({ onClose, title, onBack, divider, hideCloseButton }) {
+function Header({ onClose, title, backHandler, divider, hideCloseButton }) {
   const showCloseButton = onClose && !hideCloseButton;
 
   function showDivider() {
     if (divider) {
       return (
         <Box marginTop="small">
-          <Divider data-testid="divider-drawer" />
+          <Divider aria-label="divider-drawer" />
         </Box>
       );
     }
@@ -26,7 +26,7 @@ function Header({ onClose, title, onBack, divider, hideCloseButton }) {
           icon={Close}
           inverted
           onClick={onClose}
-          data-testid="close-button-drawer"
+          aria-label="close-button-drawer"
         />
       );
     }
@@ -35,7 +35,7 @@ function Header({ onClose, title, onBack, divider, hideCloseButton }) {
   }
 
   function headerContent() {
-    if (title && onBack) {
+    if (title && backHandler) {
       return (
         <Row>
           <Col xxs={4}>
@@ -49,8 +49,8 @@ function Header({ onClose, title, onBack, divider, hideCloseButton }) {
               <Button.Icon
                 icon={ArrowLeft}
                 inverted
-                onClick={onBack}
-                data-testid="back-button-drawer"
+                onClick={backHandler}
+                aria-label="back-button-drawer"
               />
             </Box>
           </Col>
@@ -84,7 +84,7 @@ function Header({ onClose, title, onBack, divider, hideCloseButton }) {
       );
     }
 
-    if (title && !onBack) {
+    if (title && !backHandler) {
       return (
         <Box
           display="flex"
@@ -101,7 +101,7 @@ function Header({ onClose, title, onBack, divider, hideCloseButton }) {
       );
     }
 
-    if (!title && !onBack) {
+    if (!title && !backHandler) {
       return (
         <Box d="flex" justifyContent="flex-end" w="100%">
           {closeButton()}
@@ -112,7 +112,7 @@ function Header({ onClose, title, onBack, divider, hideCloseButton }) {
   }
 
   return (
-    <Box as="header" width="100%">
+    <Box as="header" role="heading" aria-label="header-drawer" width="100%">
       <Box paddingTop="small" paddingRight="small" paddingLeft="xxlarge">
         {headerContent()}
       </Box>
@@ -125,7 +125,7 @@ function Header({ onClose, title, onBack, divider, hideCloseButton }) {
 Header.propTypes = {
   onClose: func,
   title: string,
-  onBack: func,
+  backHandler: func,
   divider: bool,
   hideCloseButton: bool,
 };
@@ -133,7 +133,7 @@ Header.propTypes = {
 Header.defaultProps = {
   onClose: undefined,
   title: undefined,
-  onBack: undefined,
+  backHandler: undefined,
   divider: false,
   hideCloseButton: false,
 };
