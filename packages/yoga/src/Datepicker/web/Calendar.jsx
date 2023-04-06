@@ -244,15 +244,7 @@ function Calendar({
   const onClick = day => {
     const selectedDate = new Date(Date.UTC(year, month, day));
 
-    if (
-      isDisabled(day) ||
-      (type === 'range' &&
-        startDate &&
-        !endDate &&
-        selectedDate.getTime() < toUTCTime(startDate))
-    ) {
-      return;
-    }
+    if (isDisabled(day)) return;
 
     if (type === 'single') {
       onSelectSingle(selectedDate);
