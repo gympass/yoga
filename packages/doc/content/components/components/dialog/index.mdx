@@ -114,7 +114,7 @@ render(() => {
         isOpen={isOpen}
         onClose={handleOnClose}
       >
-       <Dialog.Header>
+       <Dialog.Header onClose={handleOnClose}>
         Are you sure you want to downgrade to a Platinum plan?
        </Dialog.Header>
        <Dialog.Content>
