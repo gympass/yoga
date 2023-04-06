@@ -66,8 +66,8 @@ describe('<BottomSheet />', () => {
   it('should show the close button', () => {
     render(
       <ThemeProvider>
-        <BottomSheet isOpen hideCloseButton={false} onClose={() => {}}>
-          <BottomSheet.Header>Title</BottomSheet.Header>
+        <BottomSheet isOpen onClose={() => {}}>
+          <BottomSheet.Header onClose={() => {}}>Title</BottomSheet.Header>
         </BottomSheet>
       </ThemeProvider>,
     );
