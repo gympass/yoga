@@ -11,7 +11,7 @@ const StyledDivider = styled.hr`
   }) => {
     return css`
       ${vertical ? 'height: auto' : 'width: 100%'};
-      border-width: 0px;
+      border-width: ${borders.zero};
       border-left-width: ${vertical ? borders.small : 0}px;
       border-bottom-width: ${vertical ? 0 : borders.small}px;
       border-color: ${colors.text.disabled};
