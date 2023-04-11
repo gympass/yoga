@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.39.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.38.7...@gympass/yoga-doc@2.39.0) (2023-04-11)
+
+
+### Features
+
+* **tag:** add new prop ellipsis for large texts on tag ([9008a31](https://github.com/gympass/yoga/commit/9008a3119f983c88eb62e95f32488730eca99974))
+
+
+
+
+
 ## [2.38.7](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.38.6...@gympass/yoga-doc@2.38.7) (2023-04-03)
 
 **Note:** Version bump only for package @gympass/yoga-doc
