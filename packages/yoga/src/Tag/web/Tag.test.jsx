@@ -90,4 +90,34 @@ describe('<Tag />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot with ellipsis prop', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Tag maxWidth="10px" ellipsis>
+          Default with ellipsis
+        </Tag>
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('should match snapshot with variant, informative type and ellipsis prop', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Tag.Informative variant="success" maxWidth="10px" ellipsis>
+          Success with ellipsis
+        </Tag.Informative>
+        <Tag.Informative variant="attention" maxWidth="10px" ellipsis>
+          Attention with ellipsis
+        </Tag.Informative>
+        <Tag.Informative variant="informative" maxWidth="10px" ellipsis>
+          Informative with ellipsis
+        </Tag.Informative>
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });
