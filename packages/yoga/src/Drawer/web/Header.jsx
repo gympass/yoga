@@ -7,7 +7,14 @@ import { Divider, Heading } from '../..';
 function Header({ onClose, title, backHandler, divider, hideCloseButton }) {
   function showCloseButton() {
     if (onClose && !hideCloseButton) {
-      return <Heading.RightButton onClick={onClose} icon={Close} large />;
+      return (
+        <Heading.RightButton
+          aria-label="close-button-drawer"
+          onClick={onClose}
+          icon={Close}
+          large
+        />
+      );
     }
 
     return null;
@@ -20,7 +27,7 @@ function Header({ onClose, title, backHandler, divider, hideCloseButton }) {
           style={{
             letterSpacing: '1px',
             textTransform: 'uppercase',
-            fontSize: '12px', // xsmall
+            fontSize: '12px',
           }}
         >
           {title}
@@ -33,7 +40,12 @@ function Header({ onClose, title, backHandler, divider, hideCloseButton }) {
 
   function showBackButton() {
     if (backHandler) {
-      return <Heading.BackButton onClick={backHandler} />;
+      return (
+        <Heading.BackButton
+          aria-label="back-button-drawer"
+          onClick={backHandler}
+        />
+      );
     }
 
     return null;
