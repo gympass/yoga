@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.73.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.73.0...@gympass/yoga@7.73.1) (2023-04-13)
+
+
+### Bug Fixes
+
+* **component:** allow select the same day in the datepicker range mode and fixed some utc bugs ([4753b79](https://github.com/Gympass/yoga/commit/4753b7952241ffd12e674bc5d3b041da6bd1887c))
+* **component:** allow the datepicker to reset the startdate if the selected is lesser ([2ab9499](https://github.com/Gympass/yoga/commit/2ab949986b532e3627d7cefca01e24cfc1e75351))
+
+
+
+
+
 # [7.73.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.72.4...@gympass/yoga@7.73.0) (2023-04-11)
 
 

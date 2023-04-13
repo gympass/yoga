@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.39.1](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.39.0...@gympass/yoga-doc@2.39.1) (2023-04-13)
+
+
+### Bug Fixes
+
+* **component:** allow select the same day in the datepicker range mode and fixed some utc bugs ([4753b79](https://github.com/gympass/yoga/commit/4753b7952241ffd12e674bc5d3b041da6bd1887c))
+
+
+
+
+
 # [2.39.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.38.7...@gympass/yoga-doc@2.39.0) (2023-04-11)
 
 
