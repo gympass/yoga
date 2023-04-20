@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useCallback } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import styled from 'styled-components';
-import { func, bool, node, number } from 'prop-types';
+import { func, bool, node, number, string } from 'prop-types';
 
 import { Close } from '@gympass/yoga-icons';
-import { usePortal } from '../../hooks';
+import { usePortal, useCombinedRefs } from '../../hooks';
 import { Button, Card, Box } from '../..';
 
 export const StyledDialog = styled(Card)`
@@ -53,69 +53,69 @@ const Overlay = styled.div`
   `}
 `;
 
-function Dialog({
-  isOpen,
-  hideCloseButton,
-  children,
-  onClose,
-  zIndex,
-  ...props
-}) {
-  const dialogRef = useRef(null);
-  const dialogElement = usePortal('dialog');
-  const isCloseButtonVisible = onClose && !hideCloseButton;
+const Dialog = React.forwardRef(
+  (
+    { isOpen, hideCloseButton, children, dialogId, onClose, zIndex, ...props },
+    forwardedRef,
+  ) => {
+    const dialogRef = useCombinedRefs(forwardedRef);
+    const dialogElement = usePortal(dialogId ?? 'dialog');
+    const isCloseButtonVisible = onClose && !hideCloseButton;
 
-  const closeDialog = useCallback(
-    e => {
-      if (dialogRef.current === e.target && isOpen && onClose) {
-        onClose(e);
-      }
-      return true;
-    },
-    [onClose, isOpen],
-  );
+    const closeDialog = useCallback(
+      e => {
+        if (dialogRef.current === e.target && isOpen && onClose) {
+          onClose(e);
+        }
+        return true;
+      },
+      [onClose, isOpen],
+    );
 
-  const keyPress = useCallback(
-    e => {
-      if (e.key === 'Escape' && isOpen && onClose) {
-        onClose(e);
-      }
-      return true;
-    },
-    [onClose, isOpen],
-  );
+    const keyPress = useCallback(
+      e => {
+        if (e.key === 'Escape' && isOpen && onClose) {
+          onClose(e);
+        }
+        return true;
+      },
+      [onClose, isOpen],
+    );
 
-  useEffect(() => {
-    document.addEventListener('keydown', keyPress);
+    useEffect(() => {
+      document.addEventListener('keydown', keyPress);
 
-    return () => document.removeEventListener('keydown', keyPress);
-  }, [keyPress]);
+      return () => document.removeEventListener('keydown', keyPress);
+    }, [keyPress]);
 
-  return isOpen ? (
-    createPortal(
-      <Overlay
-        onClick={closeDialog}
-        onClose={onClose}
-        ref={dialogRef}
-        zIndex={zIndex}
-      >
-        <StyledDialog onClose={onClose} {...props}>
-          {isCloseButtonVisible && (
-            <Box d="flex" justifyContent="flex-end" w="100%">
-              <Button.Icon icon={Close} inverted onClick={onClose} />
-            </Box>
-          )}
-          {children}
-        </StyledDialog>
-      </Overlay>,
-      dialogElement,
-    )
-  ) : (
-    <></>
-  );
-}
+    return isOpen ? (
+      createPortal(
+        <Overlay
+          onClick={closeDialog}
+          onClose={onClose}
+          ref={dialogRef}
+          zIndex={zIndex}
+        >
+          <StyledDialog onClose={onClose} {...props}>
+            {isCloseButtonVisible && (
+              <Box d="flex" justifyContent="flex-end" w="100%">
+                <Button.Icon icon={Close} inverted onClick={onClose} />
+              </Box>
+            )}
+            {children}
+          </StyledDialog>
+        </Overlay>,
+        dialogElement,
+      )
+    ) : (
+      <></>
+    );
+  },
+);
 
 Dialog.propTypes = {
+  /** Custom id to allow creating isolated portal nodes */
+  dialogId: string,
   /** Control the dialog visibility. */
   isOpen: bool,
   /** Hide the close button when onClose prop is defined. */
@@ -131,6 +131,7 @@ Dialog.defaultProps = {
   hideCloseButton: false,
   onClose: undefined,
   zIndex: 3,
+  dialogId: undefined,
 };
 
 Dialog.displayName = 'Dialog';
