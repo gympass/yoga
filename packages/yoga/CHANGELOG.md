@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.74.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.73.1...@gympass/yoga@7.74.0) (2023-04-20)
+
+
+### Features
+
+* add forwardRef and custom id options to dialog ([fc7d780](https://github.com/Gympass/yoga/commit/fc7d780db3f5875e11923aad96e50793fc0d8d65))
+
+
+
+
+
 ## [7.73.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.73.0...@gympass/yoga@7.73.1) (2023-04-13)
 
 
