@@ -94,4 +94,21 @@ describe('<Dialog />', () => {
     );
     expect(screen.queryByRole('button')).toBeNull();
   });
+
+  it('should render content isolated by dialog id', () => {
+    render(
+      <ThemeProvider>
+        <Dialog isOpen>
+          <Dialog.Header>Title</Dialog.Header>
+        </Dialog>
+
+        <Dialog isOpen dialogId="custom-id">
+          <Dialog.Header>Second Title</Dialog.Header>
+        </Dialog>
+      </ThemeProvider>,
+    );
+
+    expect(screen.getByText('Title')).toBeInTheDocument();
+    expect(screen.getByText('Second Title')).toBeInTheDocument();
+  });
 });
