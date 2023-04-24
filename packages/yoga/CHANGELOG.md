@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.75.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.74.0...@gympass/yoga@7.75.0) (2023-04-24)
+
+
+### Features
+
+* add forwardedRef to Drawer and BottomSheet ([d31048e](https://github.com/Gympass/yoga/commit/d31048eb2151d9d3c6795a02c70ac4781bc50196))
+
+
+
+
+
 # [7.74.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.73.1...@gympass/yoga@7.74.0) (2023-04-20)
 
 
