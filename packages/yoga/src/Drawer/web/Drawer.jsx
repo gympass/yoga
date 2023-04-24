@@ -30,9 +30,9 @@ const StyledDrawer = styled(Dialog)`
   }
 `;
 
-function Drawer(props) {
-  return <StyledDrawer {...props} />;
-}
+const Drawer = React.forwardRef((props, forwardedRef) => (
+  <StyledDrawer {...props} ref={forwardedRef} />
+));
 
 Drawer.propTypes = {
   children: node.isRequired,

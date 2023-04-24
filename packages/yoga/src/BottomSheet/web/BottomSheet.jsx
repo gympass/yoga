@@ -29,7 +29,9 @@ const StyledBottomSheet = styled(Dialog)`
   }
 `;
 
-const BottomSheet = props => <StyledBottomSheet hideCloseButton {...props} />;
+const BottomSheet = React.forwardRef((props, forwardedRef) => (
+  <StyledBottomSheet hideCloseButton {...props} ref={forwardedRef} />
+));
 
 BottomSheet.propTypes = {
   children: node.isRequired,
