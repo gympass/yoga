@@ -6,6 +6,7 @@ import { Text, Divider } from '@gympass/yoga';
 import Content from './Content';
 
 const AccordionWrapper = styled.div`
+  background: ${({ theme }) => theme.yoga.colors.white};
   border: none;
   display: flex;
   flex-direction: column;
@@ -14,17 +15,17 @@ const AccordionWrapper = styled.div`
   z-index: 1;
 
   ${({
+    disabled,
     theme: {
       yoga: {
-        colors: { white, elements },
+        colors: { elements },
       },
     },
-    disabled,
-  }) => {
-    return `
-  background: ${disabled ? elements.backgroundAndDisabled : white}
-`;
-  }}
+  }) =>
+    disabled &&
+    css`
+      background: ${elements.backgroundAndDisabled};
+    `}
 
   hr {
     bottom: 0;
