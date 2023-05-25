@@ -6,7 +6,7 @@ exports[`<Accordion /> should correctly render the default version 1`] = `
 }
 
 .c0 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -196,7 +196,7 @@ exports[`<Accordion /> should correctly render the default version with subtitle
 }
 
 .c0 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -392,7 +392,7 @@ exports[`<Accordion /> should correctly render the default version without side 
 }
 
 .c0 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -591,7 +591,7 @@ exports[`<Accordion /> should correctly render the small version 1`] = `
 }
 
 .c0 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -785,7 +785,7 @@ exports[`<Accordion /> should correctly render the small version with subtitle 1
 }
 
 .c0 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -981,7 +981,7 @@ exports[`<Accordion /> should correctly render the small version without side pa
 }
 
 .c0 {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border: none;
   display: -webkit-box;
   display: -webkit-flex;
