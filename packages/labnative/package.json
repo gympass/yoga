@@ -17,8 +17,8 @@
     "@react-navigation/native": "^6.0.4",
     "@react-navigation/stack": "^6.0.9",
     "deprecated-react-native-prop-types": "^2.3.0",
-    "react": "17.0.2",
-    "react-native": "0.68.1",
+    "react": "18.0.0",
+    "react-native": "0.69.10",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-reanimated": "^2.8.0",
     "react-native-safe-area-context": "^3.3.2",
@@ -29,8 +29,8 @@
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^1.1.0",
-    "metro-react-native-babel-preset": "^0.67.0",
-    "react-test-renderer": "17.0.2"
+    "metro-react-native-babel-preset": "^0.70.3",
+    "react-test-renderer": "18.0.0"
   },
   "jest": {
     "preset": "react-native"
