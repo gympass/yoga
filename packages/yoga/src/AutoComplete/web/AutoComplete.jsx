@@ -167,7 +167,6 @@ const AutoComplete = React.forwardRef(
     },
     ref,
   ) => {
-    const [userValue, setUserValue] = useState(value);
     const [isSuggestionsOpen, setIsSuggestionsOpen] = useState(false);
 
     const inputRef = useRef();
@@ -192,21 +191,13 @@ const AutoComplete = React.forwardRef(
 
     return (
       <Downshift
-        selectedItem={userValue}
-        onStateChange={changes => {
-          const { selectedItem, inputValue } = changes;
+        onSelect={(selected, selectedOptions) => {
+          const newSelected = onSelect(selected);
 
-          if (selectedItem) {
-            setUserValue(selectedItem);
-            onSelect(selectedItem);
-            onChange(selectedItem);
-            handleCloseSuggestions();
-          } else if (
-            Object.prototype.hasOwnProperty.call(changes, 'inputValue')
-          ) {
-            setUserValue(inputValue);
-            onChange(inputValue);
-          }
+          selectedOptions.setState({
+            inputValue: newSelected,
+          });
+          handleCloseSuggestions();
         }}
       >
         {({

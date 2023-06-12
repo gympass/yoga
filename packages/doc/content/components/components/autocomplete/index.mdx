@@ -21,11 +21,15 @@ It inherit all the [Input](/components/input/default) props.
 render(() => {
   const [value, setValue] = useState('');
 
+  const handleSelect = selected => {
+    const parsedValue = selected.charAt(0).toUpperCase();
+    onChange(parsedValue);
+    return parsedValue;
+  };
+
   return (
     <AutoComplete
-      value={value}
-      onChange={value => setValue(value)}
-      onSelect={selected => console.log(selected)}
+      onSelect={handleSelect}
       onClean={cleaned => console.log('cleaned', cleaned)}
       options={[
         'Madrid',
