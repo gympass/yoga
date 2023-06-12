@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
 import { string, func } from 'prop-types';
+import { ImagePropTypes } from 'deprecated-react-native-prop-types';
 import { Image } from 'react-native';
 
 import Box from '../../Box';
@@ -53,7 +54,7 @@ const Avatar = forwardRef(
 );
 
 Content.propTypes = {
-  src: Image.propTypes.source,
+  src: ImagePropTypes.source,
   icon: func,
   fill: string,
   ...Box.propTypes,
@@ -66,7 +67,7 @@ Content.defaultProps = {
 };
 
 Avatar.propTypes = {
-  src: Image.propTypes.source,
+  src: ImagePropTypes.source,
   icon: func,
   fill: string,
   ...Box.propTypes,
