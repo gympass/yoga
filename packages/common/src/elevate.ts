@@ -47,7 +47,7 @@ function createShadow({ level, color, depth, spread }: ICreateShadowProps) {
 
 interface IElevateProps {
   color?: string;
-  level?: 0 | 1 | 2;
+  level?: number;
   depth?: number;
   spread?: boolean;
   fallback?: boolean;
@@ -55,7 +55,7 @@ interface IElevateProps {
 
 function  elevate({
   color = '#000',
-  level = 0,
+  level,
   depth = 3,
   spread = true,
   fallback = true,
@@ -67,7 +67,11 @@ function  elevate({
     createShadow({ level: 2, color, depth, spread }),
   ];
 
-  return all[level] || all;
+  if (level) {
+    return all[level];
+  }
+
+  return all;
 }
 
 export default elevate;
