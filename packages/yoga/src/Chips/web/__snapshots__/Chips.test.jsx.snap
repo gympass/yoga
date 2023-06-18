@@ -64,6 +64,7 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
 <div>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
@@ -214,6 +215,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
 <div>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
@@ -223,6 +225,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   </button>
   <button
     class="c2"
+    type="button"
   >
     <span
       class="c1"
@@ -237,6 +240,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   </button>
   <button
     class="c2"
+    type="button"
   >
     <span
       class="c1"
@@ -392,6 +396,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 <div>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
@@ -401,6 +406,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </button>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
@@ -410,6 +416,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </button>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
@@ -419,6 +426,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </button>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
@@ -428,6 +436,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </button>
   <button
     class="c2"
+    type="button"
   >
     <span
       class="c1"
@@ -442,6 +451,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </button>
   <button
     class="c2"
+    type="button"
   >
     <span
       class="c1"
@@ -456,6 +466,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </button>
   <button
     class="c2"
+    type="button"
   >
     <span
       class="c1"
@@ -465,6 +476,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </button>
   <button
     class="c2"
+    type="button"
   >
     <span
       class="c1"
@@ -534,6 +546,7 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 <div>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
@@ -655,6 +668,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 <div>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
@@ -664,6 +678,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   </button>
   <button
     class="c2"
+    type="button"
   >
     <span
       class="c1"
@@ -673,6 +688,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   </button>
   <button
     class="c2"
+    type="button"
   >
     <span
       class="c1"
@@ -747,6 +763,7 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
 <div>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
@@ -822,6 +839,7 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
   <button
     class="c0"
     disabled=""
+    type="button"
   >
     <span
       class="c1"
@@ -896,6 +914,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
 <div>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
@@ -905,6 +924,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
   </button>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
@@ -914,6 +934,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
   </button>
   <button
     class="c0"
+    type="button"
   >
     <span
       class="c1"
