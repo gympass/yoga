@@ -81,7 +81,12 @@ const Chips = React.forwardRef(
     const [FirstIcon, SecondIcon] = icons;
 
     return (
-      <TouchableWithoutFeedback onPress={onPress} ref={ref} {...props}>
+      <TouchableWithoutFeedback
+        onPress={onPress}
+        ref={ref}
+        accessibilityRole="button"
+        {...props}
+      >
         <Wrapper disabled={disabled} selected={selected}>
           {SecondIcon && (
             <Icon

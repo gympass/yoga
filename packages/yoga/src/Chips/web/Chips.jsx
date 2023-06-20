@@ -134,6 +134,7 @@ const Chips = React.forwardRef(
         disabled={disabled}
         onClick={onClick}
         ref={ref}
+        type="button"
         {...props}
       >
         {SecondIcon && (

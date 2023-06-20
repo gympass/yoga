@@ -2,6 +2,7 @@
 
 exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
 <View
+  accessibilityRole="button"
   accessible={true}
   disabled={false}
   focusable={false}
@@ -67,6 +68,7 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
 exports[`<Chips /> Snapshots counter should match snapshot with more than one Chip 1`] = `
 Array [
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -128,6 +130,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -213,6 +216,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -303,6 +307,7 @@ Array [
 exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 Array [
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -364,6 +369,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -425,6 +431,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -486,6 +493,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -547,6 +555,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -632,6 +641,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -717,6 +727,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -775,6 +786,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -837,6 +849,7 @@ Array [
 
 exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 <View
+  accessibilityRole="button"
   accessible={true}
   disabled={false}
   focusable={false}
@@ -899,6 +912,7 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 exports[`<Chips /> Snapshots selected should match snapshot with more than one Chip 1`] = `
 Array [
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -960,6 +974,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1018,6 +1033,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1080,6 +1096,7 @@ Array [
 
 exports[`<Chips /> Snapshots should match snapshot 1`] = `
 <View
+  accessibilityRole="button"
   accessible={true}
   disabled={false}
   focusable={false}
@@ -1144,6 +1161,7 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
 
 exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
 <View
+  accessibilityRole="button"
   accessible={true}
   disabled={false}
   focusable={false}
@@ -1208,6 +1226,7 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
 
 exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
 <View
+  accessibilityRole="button"
   accessible={true}
   disabled={true}
   focusable={false}
@@ -1274,6 +1293,7 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
 exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] = `
 Array [
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1335,6 +1355,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1396,6 +1417,7 @@ Array [
     </Text>
   </View>,
   <View
+    accessibilityRole="button"
     accessible={true}
     disabled={false}
     focusable={false}
