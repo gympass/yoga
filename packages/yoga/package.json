@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga",
-  "version": "7.75.2",
+  "version": "7.75.3",
   "description": "Gympass component library",
   "main": "./src",
   "sideEffects": false,
@@ -36,7 +36,7 @@
   "dependencies": {
     "@gympass/yoga-common": "^1.1.2",
     "@gympass/yoga-helpers": "^1.0.3",
-    "@gympass/yoga-icons": "^1.10.0",
+    "@gympass/yoga-icons": "^1.10.1",
     "@gympass/yoga-illustrations": "^0.5.1",
     "@gympass/yoga-system": "^0.11.0",
     "@gympass/yoga-tokens": "^3.1.5",
