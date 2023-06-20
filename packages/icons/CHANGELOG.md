@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.10.1...@gympass/yoga-icons@1.11.0) (2023-06-20)
+
+
+### Features
+
+* **yoga-icons:** update svg star and starFilled icons ([1c40d14](https://github.com/Gympass/yoga/commit/1c40d140d0fafb92f33d81ba8ff17045f4b75459))
+
+
+
+
+
 ## [1.10.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.10.0...@gympass/yoga-icons@1.10.1) (2023-06-20)
 
 **Note:** Version bump only for package @gympass/yoga-icons
