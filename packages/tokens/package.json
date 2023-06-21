@@ -9,7 +9,8 @@
   ],
   "homepage": "https://github.com/Gympass/yoga",
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "scripts": {
     "build": "yarn build:cjs && yarn build:esm",
     "build:types": "tsc --emitDeclarationOnly",
