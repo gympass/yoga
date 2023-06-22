@@ -3,6 +3,12 @@ const path = require('path');
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
+    [
+      '@babel/plugin-transform-react-jsx',
+      {
+        runtime: 'classic',
+      },
+    ],
     'import-glob',
     '@babel/plugin-proposal-export-namespace-from',
     [
