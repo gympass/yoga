@@ -60,6 +60,7 @@ import FavoriteFilled from './svg/favorite_filled.svg';
 import Favorite from './svg/favorite.svg';
 import Filter from './svg/filter.svg';
 import Google from './svg/google.svg';
+import Gympass from './svg/gympass.svg';
 import Headphone from './svg/headphone.svg';
 import Heartbeat from './svg/heartbeat.svg';
 import Heater from './svg/heater.svg';
@@ -223,6 +224,7 @@ export {
   Favorite,
   Filter,
   Google,
+  Gympass,
   Headphone,
   Heartbeat,
   Heater,
