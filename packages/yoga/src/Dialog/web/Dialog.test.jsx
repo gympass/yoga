@@ -28,7 +28,7 @@ describe('<Dialog />', () => {
     const { baseElement } = render(
       <ThemeProvider>
         <Dialog isOpen onClose={jest.fn()}>
-          <Dialog.Header>Title</Dialog.Header>
+          <Dialog.Header onClose={jest.fn()}>Title</Dialog.Header>
           <Dialog.Content>Subtitle</Dialog.Content>
           <Dialog.Footer>
             <Button secondary>Ok, got it</Button>
@@ -73,7 +73,7 @@ describe('<Dialog />', () => {
     render(
       <ThemeProvider>
         <Dialog isOpen onClose={onCloseMock}>
-          <Dialog.Header>Title</Dialog.Header>
+          <Dialog.Header onClose={onCloseMock}>Title</Dialog.Header>
         </Dialog>
       </ThemeProvider>,
     );

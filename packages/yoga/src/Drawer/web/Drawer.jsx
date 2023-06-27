@@ -1,9 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 import { node, number } from 'prop-types';
+import { theme } from '@gympass/yoga';
 import Dialog from '../../Dialog';
 
 const StyledDrawer = styled(Dialog)`
+  position: absolute;
+  right: 0;
+
+  align-self: flex-end;
+
+  height: 100%;
+  padding: ${theme.spacing.zero} !important;
+  border-radius: ${theme.borders.zero} !important;
+
+  transition: 0.25s ease-in-out;
+
+  animation: content;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+
   ${({
     theme: {
       yoga: {
@@ -11,18 +27,9 @@ const StyledDrawer = styled(Dialog)`
       },
     },
   }) => `
-  padding: ${drawer.padding.top}px ${drawer.padding.right}px ${drawer.padding.bottom}px ${drawer.padding.left}px;
-  width: min(${drawer.width.default}px, 100%);
+    width: min(${drawer.width.default}px, 100%);
   `}
-  border-radius: 0!important;
-  height: 100%;
-  align-self: flex-end;
-  position: absolute;
-  right: 0;
-  animation: content;
-  animation-duration: 400ms;
-  animation-fill-mode: forwards;
-  transition: 0.25s ease-in-out;
+
   @keyframes content {
     0% {
       transform: translate3d(100%, 0, 0);

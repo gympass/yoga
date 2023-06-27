@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Drawer /> should match snapshot 1`] = `
-.c8 {
+.c14 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -40,7 +40,7 @@ exports[`<Drawer /> should match snapshot 1`] = `
   text-decoration: none;
 }
 
-.c8 svg {
+.c14 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -49,26 +49,47 @@ exports[`<Drawer /> should match snapshot 1`] = `
   transition: fill 0.2s;
 }
 
-.c8:not([disabled]):hover,
-.c8:not([disabled]):focus {
+.c14:not([disabled]):hover,
+.c14:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c8:active {
+.c14:active {
   background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c8:active svg {
+.c14:active svg {
   fill: #FFFFFF;
 }
 
 .c4 {
   width: 100%;
-  color: #231B22;
 }
 
 .c5 {
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-left: 40px;
+}
+
+.c8 {
+  width: 100%;
+  text-align: center;
+}
+
+.c10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 {
   margin-bottom: 32px;
   color: #6B6B78;
   font-size: 16px;
@@ -76,12 +97,26 @@ exports[`<Drawer /> should match snapshot 1`] = `
   text-align: center;
 }
 
-.c7 {
+.c13 {
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+  padding-left: 40px;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 14px;
 }
 
 .c1 {
@@ -131,33 +166,59 @@ exports[`<Drawer /> should match snapshot 1`] = `
   background-color: rgba(35,27,34,0.48);
 }
 
+.c6 {
+  background: #FFFFFF;
+  padding: 16px 20px;
+  width: 100%;
+  min-height: 56px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.c7 {
+  width: 24px;
+  height: 24px;
+}
+
 .c3 {
-  padding: 16px 56px 40px 56px;
-  width: min(600px,100%);
-  border-radius: 0!important;
-  height: 100%;
+  position: absolute;
+  right: 0;
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  position: absolute;
-  right: 0;
+  height: 100%;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
   -webkit-animation: content;
   animation: content;
   -webkit-animation-duration: 400ms;
   animation-duration: 400ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
+  width: min(600px,100%);
 }
 
-.c6 {
-  margin: 0;
-  height: 100%;
+.c12 {
   width: 100%;
+  height: 100%;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
+  margin: 0;
+  padding-left: 40px;
   text-align: left;
 }
 
@@ -173,28 +234,58 @@ exports[`<Drawer /> should match snapshot 1`] = `
         <section
           class="c1 c2 c3"
         >
-          <header
+          <div
             class="c4"
-            color="text.primary"
             width="100%"
           >
-            Title
-          </header>
+            <div
+              class="c5"
+            >
+              <header
+                aria-label="header-drawer"
+                class="c6"
+                role="heading"
+              >
+                <div
+                  class="c7"
+                />
+                <div
+                  class="c8"
+                >
+                  <h1
+                    class="c9"
+                    font-size="small"
+                    style="letter-spacing: 1px; text-transform: uppercase; font-size: 12px;"
+                  >
+                    Title
+                  </h1>
+                </div>
+                <div
+                  class="c10"
+                  display="flex"
+                >
+                  <div
+                    class="c7"
+                  />
+                </div>
+              </header>
+            </div>
+          </div>
           <div
-            class="c5 c6"
+            class="c11 c12"
             color="text.secondary"
           >
             Subtitle
           </div>
           <footer
-            class="c7"
+            class="c13"
             d="flex"
             width="100%"
           >
             <button
-              class="c8"
+              class="c14"
             >
-              Ok, got it
+              Ok, got it!
             </button>
           </footer>
         </section>
