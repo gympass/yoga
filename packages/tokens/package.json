@@ -9,15 +9,16 @@
   ],
   "homepage": "https://github.com/Gympass/yoga",
   "license": "MIT",
-  "main": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
+  "main": "src/index.ts",
+  "types": "dist/cjs/index.d.ts",
   "scripts": {
     "build": "yarn build:cjs && yarn build:esm",
     "build:types": "tsc --emitDeclarationOnly",
     "build:cjs": "yarn build:types --declarationDir dist/cjs && NODE_ENV=cjs babel ./src --out-dir dist/cjs --extensions '.ts,.js'",
     "build:esm": "yarn build:types --declarationDir dist/esm && NODE_ENV=esm babel ./src --out-dir dist/esm --extensions '.ts,.js'",
     "prebuild": "rm -rf ./dist",
-    "prepublishOnly": "node ../../scripts/prepublish.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js",
+    "postbuild": "node ../../scripts/prepublish.js"
   },
   "dependencies": {
     "@gympass/yoga-common": "^1.1.2"
