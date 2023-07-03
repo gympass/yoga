@@ -15,6 +15,7 @@ import BarChart from './svg/bar_chart.svg';
 import BeautySalon from './svg/beauty-salon.svg';
 import BookingFilled from './svg/booking_filled.svg';
 import Booking from './svg/booking.svg';
+import Boxing from './svg/boxing.svg';
 import BuildingFilled from './svg/building_filled.svg';
 import Building from './svg/building.svg';
 import BulletList from './svg/bullet_list.svg';
@@ -42,6 +43,8 @@ import Copy from './svg/copy.svg';
 import CornerUpLeft from './svg/corner_up_left.svg';
 import CornerUpRight from './svg/corner_up_right.svg';
 import CreditCard from './svg/credit_card.svg';
+import Cycling from './svg/cycling.svg';
+import Dance from './svg/dance.svg';
 import Disconnect from './svg/disconnect.svg';
 import DislikeFilled from './svg/dislike_filled.svg';
 import Dislike from './svg/dislike.svg';
@@ -66,6 +69,7 @@ import Heater from './svg/heater.svg';
 import HelpCircle from './svg/help_circle.svg';
 import Help from './svg/help.svg';
 import History from './svg/history.svg';
+import Hit from './svg/hit.svg';
 import HomeFilled from './svg/home_filled.svg';
 import Home from './svg/home.svg';
 import Image from './svg/image.svg';
@@ -88,6 +92,7 @@ import MailRead from './svg/mail_read.svg';
 import MailUnread from './svg/mail_unread.svg';
 import MapPin from './svg/map_pin.svg';
 import Map from './svg/map.svg';
+import MartialArts from './svg/martial-arts.svg';
 import MenuList from './svg/menu_list.svg';
 import MenuMore from './svg/menu_more.svg';
 import Money from './svg/money.svg';
@@ -104,6 +109,7 @@ import Pause from './svg/pause.svg';
 import PhoneFilled from './svg/phone_filled.svg';
 import Phone from './svg/phone.svg';
 import PieChart from './svg/pie_chart.svg';
+import Pilates from './svg/pilates.svg';
 import PinFilled from './svg/pin_filled.svg';
 import Play from './svg/play.svg';
 import PlayFilled from './svg/play_filled.svg';
@@ -178,6 +184,7 @@ export {
   BeautySalon,
   BookingFilled,
   Booking,
+  Boxing,
   BuildingFilled,
   Building,
   BulletList,
@@ -205,6 +212,8 @@ export {
   CornerUpLeft,
   CornerUpRight,
   CreditCard,
+  Cycling,
+  Dance,
   Disconnect,
   DislikeFilled,
   Dislike,
@@ -229,6 +238,7 @@ export {
   HelpCircle,
   Help,
   History,
+  Hit,
   HomeFilled,
   Home,
   Image,
@@ -251,6 +261,7 @@ export {
   MailUnread,
   MapPin,
   Map,
+  MartialArts,
   MenuList,
   MenuMore,
   Money,
@@ -267,6 +278,7 @@ export {
   PhoneFilled,
   Phone,
   PieChart,
+  Pilates,
   PinFilled,
   Play,
   PlayFilled,
