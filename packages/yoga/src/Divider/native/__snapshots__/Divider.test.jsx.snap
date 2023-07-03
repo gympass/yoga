@@ -7,8 +7,8 @@ exports[`<Divider /> should create a divider component 1`] = `
   justifyContent="space-between"
   minWidth={300}
   style={
-    Array [
-      Object {
+    [
+      {
         "display": "flex",
         "flexDirection": "column",
         "justifyContent": "space-between",
@@ -19,8 +19,8 @@ exports[`<Divider /> should create a divider component 1`] = `
 >
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 24,
@@ -34,8 +34,8 @@ exports[`<Divider /> should create a divider component 1`] = `
   </Text>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "borderBottomWidth": 1,
           "borderColor": "#D7D7E0",
           "width": "auto",
@@ -46,8 +46,8 @@ exports[`<Divider /> should create a divider component 1`] = `
   />
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 24,
@@ -69,8 +69,8 @@ exports[`<Divider /> should create vertical divider component 1`] = `
   justifyContent="space-between"
   minWidth={300}
   style={
-    Array [
-      Object {
+    [
+      {
         "display": "flex",
         "flexDirection": "row",
         "justifyContent": "space-between",
@@ -81,8 +81,8 @@ exports[`<Divider /> should create vertical divider component 1`] = `
 >
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 24,
@@ -96,8 +96,8 @@ exports[`<Divider /> should create vertical divider component 1`] = `
   </Text>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "borderColor": "#D7D7E0",
           "borderLeftWidth": 1,
           "height": "auto",
@@ -108,8 +108,8 @@ exports[`<Divider /> should create vertical divider component 1`] = `
   />
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 24,

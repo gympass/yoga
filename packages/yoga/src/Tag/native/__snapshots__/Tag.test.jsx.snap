@@ -4,8 +4,8 @@ exports[`<Tag /> should match snapshot 1`] = `
 <View
   small={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "borderColor": "#9898A6",
         "borderRadius": 4,
@@ -23,14 +23,14 @@ exports[`<Tag /> should match snapshot 1`] = `
 >
   <Text
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "500",
         },
-        Object {
+        {
           "color": "#6B6B78",
           "fontSize": 12,
           "lineHeight": 16,
@@ -44,12 +44,12 @@ exports[`<Tag /> should match snapshot 1`] = `
 `;
 
 exports[`<Tag /> should match snapshot with custom icon and informative type 1`] = `
-Array [
+[
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#C1EEDB",
           "borderColor": "#C1EEDB",
@@ -68,8 +68,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -85,22 +85,22 @@ Array [
         height={16}
         marginRight="xxxsmall"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            Array [
-              Object {
+            [
+              {
                 "height": 16,
                 "marginRight": 4,
                 "width": 16,
               },
             ],
-            Object {
+            {
               "opacity": 1,
             },
-            Object {
+            {
               "flex": 0,
               "height": 16,
               "width": 16,
@@ -111,16 +111,16 @@ Array [
       >
         <RNSVGGroup
           fill={
-            Array [
+            [
               0,
               4280490786,
             ]
           }
           fillOpacity={1}
           fillRule={1}
-          font={Object {}}
+          font={{}}
           matrix={
-            Array [
+            [
               1,
               0,
               0,
@@ -133,7 +133,7 @@ Array [
           originX={0}
           originY={0}
           propList={
-            Array [
+            [
               "fill",
             ]
           }
@@ -157,14 +157,14 @@ Array [
       </RNSVGSvgView>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",
@@ -180,8 +180,8 @@ Array [
   <View
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#C1EEDB",
           "borderColor": "#C1EEDB",
@@ -200,8 +200,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -217,22 +217,22 @@ Array [
         height={12}
         marginRight="xxxsmall"
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            Array [
-              Object {
+            [
+              {
                 "height": 12,
                 "marginRight": 4,
                 "width": 12,
               },
             ],
-            Object {
+            {
               "opacity": 1,
             },
-            Object {
+            {
               "flex": 0,
               "height": 12,
               "width": 12,
@@ -243,16 +243,16 @@ Array [
       >
         <RNSVGGroup
           fill={
-            Array [
+            [
               0,
               4280490786,
             ]
           }
           fillOpacity={1}
           fillRule={1}
-          font={Object {}}
+          font={{}}
           matrix={
-            Array [
+            [
               1,
               0,
               0,
@@ -265,7 +265,7 @@ Array [
           originX={0}
           originY={0}
           propList={
-            Array [
+            [
               "fill",
             ]
           }
@@ -289,14 +289,14 @@ Array [
       </RNSVGSvgView>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",
@@ -313,12 +313,12 @@ Array [
 `;
 
 exports[`<Tag /> should match snapshot with variant and margin prop  1`] = `
-Array [
+[
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "borderColor": "#1D856C",
           "borderRadius": 4,
@@ -336,14 +336,14 @@ Array [
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#1D856C",
             "fontSize": 12,
             "lineHeight": 16,
@@ -358,8 +358,8 @@ Array [
     mv="medium"
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "borderColor": "#5340C9",
           "borderRadius": 4,
@@ -379,14 +379,14 @@ Array [
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#5340C9",
             "fontSize": 12,
             "lineHeight": 16,
@@ -400,8 +400,8 @@ Array [
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "borderColor": "#CA4808",
           "borderRadius": 4,
@@ -419,14 +419,14 @@ Array [
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#CA4808",
             "fontSize": 12,
             "lineHeight": 16,
@@ -441,12 +441,12 @@ Array [
 `;
 
 exports[`<Tag /> should match snapshot with variant prop 1`] = `
-Array [
+[
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "borderColor": "#1D856C",
           "borderRadius": 4,
@@ -464,14 +464,14 @@ Array [
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#1D856C",
             "fontSize": 12,
             "lineHeight": 16,
@@ -485,8 +485,8 @@ Array [
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "borderColor": "#5340C9",
           "borderRadius": 4,
@@ -504,14 +504,14 @@ Array [
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#5340C9",
             "fontSize": 12,
             "lineHeight": 16,
@@ -525,8 +525,8 @@ Array [
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "borderColor": "#CA4808",
           "borderRadius": 4,
@@ -544,14 +544,14 @@ Array [
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#CA4808",
             "fontSize": 12,
             "lineHeight": 16,
@@ -565,8 +565,8 @@ Array [
   <View
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "borderColor": "#CA4808",
           "borderRadius": 4,
@@ -584,14 +584,14 @@ Array [
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#CA4808",
             "fontSize": 12,
             "lineHeight": 16,
@@ -606,12 +606,12 @@ Array [
 `;
 
 exports[`<Tag /> should match snapshot with variant prop and informative type 1`] = `
-Array [
+[
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#D7D7E0",
           "borderColor": "#D7D7E0",
@@ -630,8 +630,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -641,14 +641,14 @@ Array [
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",
@@ -664,8 +664,8 @@ Array [
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#C1EEDB",
           "borderColor": "#C1EEDB",
@@ -684,8 +684,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -695,14 +695,14 @@ Array [
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",
@@ -718,8 +718,8 @@ Array [
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#E0DFFF",
           "borderColor": "#E0DFFF",
@@ -738,8 +738,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -749,14 +749,14 @@ Array [
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",
@@ -772,8 +772,8 @@ Array [
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FCD6C3",
           "borderColor": "#FCD6C3",
@@ -792,8 +792,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -803,14 +803,14 @@ Array [
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",
@@ -826,8 +826,8 @@ Array [
   <View
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FCD6C3",
           "borderColor": "#FCD6C3",
@@ -846,8 +846,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -857,14 +857,14 @@ Array [
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",
@@ -881,12 +881,12 @@ Array [
 `;
 
 exports[`<Tag /> should match snapshot with variant prop and informative type with margin prop 1`] = `
-Array [
+[
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#C1EEDB",
           "borderColor": "#C1EEDB",
@@ -905,8 +905,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -916,14 +916,14 @@ Array [
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",
@@ -940,8 +940,8 @@ Array [
     mv="medium"
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#E0DFFF",
           "borderColor": "#E0DFFF",
@@ -962,8 +962,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -973,14 +973,14 @@ Array [
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",
@@ -996,8 +996,8 @@ Array [
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FCD6C3",
           "borderColor": "#FCD6C3",
@@ -1016,8 +1016,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -1027,14 +1027,14 @@ Array [
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",
@@ -1051,12 +1051,12 @@ Array [
 `;
 
 exports[`<Tag /> should match snapshot with without icon and informative type 1`] = `
-Array [
+[
   <View
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#C1EEDB",
           "borderColor": "#C1EEDB",
@@ -1075,8 +1075,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -1086,14 +1086,14 @@ Array [
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",
@@ -1109,8 +1109,8 @@ Array [
   <View
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#C1EEDB",
           "borderColor": "#C1EEDB",
@@ -1129,8 +1129,8 @@ Array [
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexDirection": "row",
             "justifyContent": "center",
@@ -1140,14 +1140,14 @@ Array [
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
               "fontWeight": "500",
             },
-            Object {
+            {
               "color": "#231B22",
               "fontSize": 12,
               "fontWeight": "500",

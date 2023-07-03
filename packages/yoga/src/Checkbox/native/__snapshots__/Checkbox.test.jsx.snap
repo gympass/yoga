@@ -4,7 +4,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
 <View>
   <View
     accessibilityState={
-      Object {
+      {
         "disabled": false,
       }
     }
@@ -18,19 +18,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "height": 24,
             "justifyContent": "center",
@@ -45,8 +45,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
         inverted={false}
         pressed={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "#D8385E",
               "borderColor": "#D8385E",
               "borderRadius": 4,
@@ -66,18 +66,18 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
         focusable={false}
         height={24}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            Object {
+            {
               "position": "absolute",
             },
-            Object {
+            {
               "opacity": 1,
             },
-            Object {
+            {
               "flex": 0,
               "height": 24,
               "width": 24,
@@ -88,16 +88,16 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
       >
         <RNSVGGroup
           fill={
-            Array [
+            [
               0,
               4294967295,
             ]
           }
           fillOpacity={1}
           fillRule={1}
-          font={Object {}}
+          font={{}}
           matrix={
-            Array [
+            [
               1,
               0,
               0,
@@ -110,7 +110,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
           originX={0}
           originY={0}
           propList={
-            Array [
+            [
               "fill",
             ]
           }
@@ -135,8 +135,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
     </View>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -151,8 +151,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "marginTop": 4,
         },
       ]
@@ -160,8 +160,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -180,7 +180,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
 <View>
   <View
     accessibilityState={
-      Object {
+      {
         "disabled": false,
       }
     }
@@ -194,19 +194,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "height": 24,
             "justifyContent": "center",
@@ -221,8 +221,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
         inverted={false}
         pressed={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderColor": "#D8385E",
               "borderRadius": 4,
@@ -238,8 +238,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
     </View>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -254,8 +254,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "marginTop": 4,
         },
       ]
@@ -263,8 +263,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -283,7 +283,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
 <View>
   <View
     accessibilityState={
-      Object {
+      {
         "disabled": true,
       }
     }
@@ -297,19 +297,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "height": 24,
             "justifyContent": "center",
@@ -324,8 +324,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
         inverted={false}
         pressed={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "#D7D7E0",
               "borderColor": "#D7D7E0",
               "borderRadius": 4,
@@ -345,18 +345,18 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
         focusable={false}
         height={24}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            Object {
+            {
               "position": "absolute",
             },
-            Object {
+            {
               "opacity": 1,
             },
-            Object {
+            {
               "flex": 0,
               "height": 24,
               "width": 24,
@@ -367,16 +367,16 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
       >
         <RNSVGGroup
           fill={
-            Array [
+            [
               0,
               4294967295,
             ]
           }
           fillOpacity={1}
           fillRule={1}
-          font={Object {}}
+          font={{}}
           matrix={
-            Array [
+            [
               1,
               0,
               0,
@@ -389,7 +389,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
           originX={0}
           originY={0}
           propList={
-            Array [
+            [
               "fill",
             ]
           }
@@ -414,8 +414,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
     </View>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -430,8 +430,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "marginTop": 4,
         },
       ]
@@ -439,8 +439,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -459,7 +459,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
 <View>
   <View
     accessibilityState={
-      Object {
+      {
         "disabled": true,
       }
     }
@@ -473,19 +473,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "height": 24,
             "justifyContent": "center",
@@ -500,8 +500,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
         inverted={false}
         pressed={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderColor": "#D7D7E0",
               "borderRadius": 4,
@@ -517,8 +517,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
     </View>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -533,8 +533,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "marginTop": 4,
         },
       ]
@@ -542,8 +542,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -562,7 +562,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
 <View>
   <View
     accessibilityState={
-      Object {
+      {
         "disabled": false,
       }
     }
@@ -576,19 +576,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "height": 24,
             "justifyContent": "center",
@@ -604,8 +604,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
         inverted={false}
         pressed={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "#CA4808",
               "borderColor": "#CA4808",
               "borderRadius": 4,
@@ -625,18 +625,18 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
         focusable={false}
         height={24}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            Object {
+            {
               "position": "absolute",
             },
-            Object {
+            {
               "opacity": 1,
             },
-            Object {
+            {
               "flex": 0,
               "height": 24,
               "width": 24,
@@ -647,16 +647,16 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
       >
         <RNSVGGroup
           fill={
-            Array [
+            [
               0,
               4294967295,
             ]
           }
           fillOpacity={1}
           fillRule={1}
-          font={Object {}}
+          font={{}}
           matrix={
-            Array [
+            [
               1,
               0,
               0,
@@ -669,7 +669,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
           originX={0}
           originY={0}
           propList={
-            Array [
+            [
               "fill",
             ]
           }
@@ -694,8 +694,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
     </View>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -710,8 +710,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "marginTop": 4,
         },
       ]
@@ -720,8 +720,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
     <Text
       error="Error text"
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#CA4808",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -740,7 +740,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
 <View>
   <View
     accessibilityState={
-      Object {
+      {
         "disabled": false,
       }
     }
@@ -754,19 +754,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "height": 24,
             "justifyContent": "center",
@@ -782,8 +782,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
         inverted={false}
         pressed={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderColor": "#CA4808",
               "borderRadius": 4,
@@ -799,8 +799,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
     </View>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -815,8 +815,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "marginTop": 4,
         },
       ]
@@ -825,8 +825,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
     <Text
       error="Error text"
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#CA4808",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -845,7 +845,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
 <View>
   <View
     accessibilityState={
-      Object {
+      {
         "disabled": false,
       }
     }
@@ -859,19 +859,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "height": 24,
             "justifyContent": "center",
@@ -886,8 +886,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
         inverted={true}
         pressed={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderColor": "#FFFFFF",
               "borderRadius": 4,
@@ -903,8 +903,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
     </View>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -919,8 +919,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "marginTop": 4,
         },
       ]
@@ -928,8 +928,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -948,7 +948,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 <View>
   <View
     accessibilityState={
-      Object {
+      {
         "disabled": false,
       }
     }
@@ -962,19 +962,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "height": 24,
             "justifyContent": "center",
@@ -989,8 +989,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
         inverted={true}
         pressed={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "#FFFFFF",
               "borderColor": "#FFFFFF",
               "borderRadius": 4,
@@ -1010,18 +1010,18 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
         focusable={false}
         height={24}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            Object {
+            {
               "position": "absolute",
             },
-            Object {
+            {
               "opacity": 1,
             },
-            Object {
+            {
               "flex": 0,
               "height": 24,
               "width": 24,
@@ -1032,16 +1032,16 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
       >
         <RNSVGGroup
           fill={
-            Array [
+            [
               0,
               4292360286,
             ]
           }
           fillOpacity={1}
           fillRule={1}
-          font={Object {}}
+          font={{}}
           matrix={
-            Array [
+            [
               1,
               0,
               0,
@@ -1054,7 +1054,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
           originX={0}
           originY={0}
           propList={
-            Array [
+            [
               "fill",
             ]
           }
@@ -1079,8 +1079,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
     </View>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -1095,8 +1095,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "marginTop": 4,
         },
       ]
@@ -1104,8 +1104,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -1124,7 +1124,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
 <View>
   <View
     accessibilityState={
-      Object {
+      {
         "disabled": true,
       }
     }
@@ -1138,19 +1138,19 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "height": 24,
             "justifyContent": "center",
@@ -1165,8 +1165,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
         inverted={true}
         pressed={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "#D7D7E0",
               "borderColor": "#D7D7E0",
               "borderRadius": 4,
@@ -1186,18 +1186,18 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
         focusable={false}
         height={24}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderWidth": 0,
             },
-            Object {
+            {
               "position": "absolute",
             },
-            Object {
+            {
               "opacity": 1,
             },
-            Object {
+            {
               "flex": 0,
               "height": 24,
               "width": 24,
@@ -1208,16 +1208,16 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
       >
         <RNSVGGroup
           fill={
-            Array [
+            [
               0,
               4292360286,
             ]
           }
           fillOpacity={1}
           fillRule={1}
-          font={Object {}}
+          font={{}}
           matrix={
-            Array [
+            [
               1,
               0,
               0,
@@ -1230,7 +1230,7 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
           originX={0}
           originY={0}
           propList={
-            Array [
+            [
               "fill",
             ]
           }
@@ -1255,8 +1255,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
     </View>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
@@ -1271,8 +1271,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "marginTop": 4,
         },
       ]
@@ -1280,8 +1280,8 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
   >
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 14,
@@ -1300,7 +1300,7 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 1`] = `
 <View>
   <View
     accessibilityState={
-      Object {
+      {
         "disabled": false,
       }
     }
@@ -1314,19 +1314,19 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "height": 24,
             "justifyContent": "center",
@@ -1341,8 +1341,8 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 1`] = `
         inverted={false}
         pressed={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderColor": "#D8385E",
               "borderRadius": 4,
@@ -1364,7 +1364,7 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 2`] = `
 <View>
   <View
     accessibilityState={
-      Object {
+      {
         "disabled": false,
       }
     }
@@ -1378,19 +1378,19 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 2`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
         },
-        Object {},
+        {},
       ]
     }
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "height": 24,
             "justifyContent": "center",
@@ -1405,8 +1405,8 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 2`] = `
         inverted={false}
         pressed={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "backgroundColor": "transparent",
               "borderColor": "#D8385E",
               "borderRadius": 4,

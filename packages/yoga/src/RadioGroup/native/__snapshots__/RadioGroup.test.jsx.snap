@@ -5,8 +5,8 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
   <View
     onLayout={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignSelf": "center",
           "flexDirection": "row",
           "position": "relative",
@@ -27,8 +27,8 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
       onStartShouldSetResponder={[Function]}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "borderRadius": 9999,
@@ -44,8 +44,8 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
       <Text
         checked={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
             },
@@ -68,8 +68,8 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
       onStartShouldSetResponder={[Function]}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
@@ -85,8 +85,8 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
       <Text
         checked={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontWeight": "700",
@@ -110,8 +110,8 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
       onStartShouldSetResponder={[Function]}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "borderRadius": 9999,
@@ -127,8 +127,8 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
       <Text
         checked={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
             },
@@ -147,8 +147,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
   <View
     onLayout={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignSelf": "center",
           "flexDirection": "row",
           "position": "relative",
@@ -169,8 +169,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
       onStartShouldSetResponder={[Function]}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "borderRadius": 9999,
@@ -186,8 +186,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
       <Text
         checked={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
             },
@@ -210,8 +210,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
       onStartShouldSetResponder={[Function]}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "borderRadius": 9999,
@@ -227,8 +227,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
       <Text
         checked={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
             },
@@ -251,8 +251,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
       onStartShouldSetResponder={[Function]}
       small={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "borderRadius": 9999,
@@ -268,8 +268,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
       <Text
         checked={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
             },
@@ -288,8 +288,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
   <View
     onLayout={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignSelf": "center",
           "flexDirection": "row",
           "position": "relative",
@@ -310,8 +310,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
       onStartShouldSetResponder={[Function]}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "borderRadius": 9999,
@@ -327,8 +327,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
       <Text
         checked={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
             },
@@ -351,8 +351,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
       onStartShouldSetResponder={[Function]}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "borderRadius": 9999,
@@ -368,8 +368,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
       <Text
         checked={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
             },
@@ -392,8 +392,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
       onStartShouldSetResponder={[Function]}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "transparent",
             "borderRadius": 9999,
@@ -409,8 +409,8 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
       <Text
         checked={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
             },

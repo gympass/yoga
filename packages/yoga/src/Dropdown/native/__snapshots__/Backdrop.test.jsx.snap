@@ -21,7 +21,7 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "backgroundColor": "#231B22",
         "height": "100%",
         "opacity": 0,
@@ -33,7 +33,7 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "bottom": -320,
         "justifyContent": "flex-end",
         "position": "absolute",
@@ -43,8 +43,8 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#FFFFFF",
             "borderTopLeftRadius": 8,
             "borderTopRightRadius": 8,
@@ -56,8 +56,8 @@ exports[`<Backdrop /> Snapshots should match snapshot when visible 1`] = `
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,

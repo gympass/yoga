@@ -3,14 +3,14 @@
 exports[`<Slider /> Snapshots With one marker should match snapshot with Slider snapped 1`] = `
 <View
   style={
-    Object {
+    {
       "width": 280,
     }
   }
 >
   <View
     style={
-      Object {
+      {
         "alignItems": "center",
         "bottom": -30,
         "flexDirection": "row",
@@ -21,8 +21,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -34,8 +34,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -47,8 +47,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -60,8 +60,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -73,8 +73,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -86,8 +86,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -99,8 +99,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -112,8 +112,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -125,8 +125,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -138,8 +138,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -151,8 +151,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -165,8 +165,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   <View>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "height": 50,
             "justifyContent": "center",
             "position": "relative",
@@ -177,11 +177,11 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "flexDirection": "row",
             },
-            Object {
+            {
               "width": 280,
             },
           ]
@@ -189,21 +189,21 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
       >
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
-              Object {
+              {
                 "backgroundColor": "#D8385E",
               },
-              Object {
+              {
                 "width": 0,
               },
             ]
@@ -211,19 +211,19 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
               undefined,
-              Object {
+              {
                 "width": 280,
               },
             ]
@@ -231,8 +231,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "transparent",
                 "height": 48,
@@ -240,7 +240,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                 "position": "absolute",
                 "width": 48,
               },
-              Object {
+              {
                 "left": -24,
                 "top": -24,
               },
@@ -263,14 +263,14 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
             onStartShouldSetResponder={[Function]}
             onStartShouldSetResponderCapture={[Function]}
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "alignSelf": "stretch",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
                 },
-                Object {
+                {
                   "borderRadius": 0,
                 },
               ]
@@ -278,7 +278,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
           >
             <View
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -292,8 +292,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
               position="relative"
               pressed={false}
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "black",
                     "borderRadius": 9999,
@@ -303,7 +303,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -320,7 +320,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
             <View
               accessibilityRole="adjustable"
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -333,8 +333,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
               height={24}
               position="relative"
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "#FFFFFF",
                     "borderRadius": 9999,
@@ -343,7 +343,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -368,7 +368,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
 exports[`<Slider /> Snapshots With one marker should match snapshot with Slider with labels 1`] = `
 <View
   style={
-    Object {
+    {
       "width": 280,
     }
   }
@@ -376,8 +376,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   <View>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "height": 50,
             "justifyContent": "center",
             "position": "relative",
@@ -388,11 +388,11 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "flexDirection": "row",
             },
-            Object {
+            {
               "width": 280,
             },
           ]
@@ -400,21 +400,21 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
       >
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
-              Object {
+              {
                 "backgroundColor": "#D8385E",
               },
-              Object {
+              {
                 "width": 0,
               },
             ]
@@ -422,19 +422,19 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
               undefined,
-              Object {
+              {
                 "width": 280,
               },
             ]
@@ -442,8 +442,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "transparent",
                 "height": 48,
@@ -451,7 +451,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                 "position": "absolute",
                 "width": 48,
               },
-              Object {
+              {
                 "left": -24,
                 "top": -24,
               },
@@ -474,14 +474,14 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
             onStartShouldSetResponder={[Function]}
             onStartShouldSetResponderCapture={[Function]}
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "alignSelf": "stretch",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
                 },
-                Object {
+                {
                   "borderRadius": 0,
                 },
               ]
@@ -489,7 +489,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
           >
             <View
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -503,8 +503,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
               position="relative"
               pressed={false}
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "black",
                     "borderRadius": 9999,
@@ -514,7 +514,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -531,7 +531,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
             <View
               accessibilityRole="adjustable"
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -544,8 +544,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
               height={24}
               position="relative"
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "#FFFFFF",
                     "borderRadius": 9999,
@@ -554,7 +554,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -575,8 +575,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
   </View>
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "space-between",
@@ -588,8 +588,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
     <Text
       placement="right"
       style={
-        Array [
-          Object {
+        [
+          {
             "bottom": 5,
             "fontFamily": "Rubik",
             "left": 0,
@@ -608,7 +608,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
 exports[`<Slider /> Snapshots With one marker should match snapshot with default Slider 1`] = `
 <View
   style={
-    Object {
+    {
       "width": 280,
     }
   }
@@ -616,8 +616,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
   <View>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "height": 50,
             "justifyContent": "center",
             "position": "relative",
@@ -628,11 +628,11 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "flexDirection": "row",
             },
-            Object {
+            {
               "width": 280,
             },
           ]
@@ -640,21 +640,21 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
       >
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
-              Object {
+              {
                 "backgroundColor": "#D8385E",
               },
-              Object {
+              {
                 "width": 0,
               },
             ]
@@ -662,19 +662,19 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
               undefined,
-              Object {
+              {
                 "width": 280,
               },
             ]
@@ -682,8 +682,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "transparent",
                 "height": 48,
@@ -691,7 +691,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
                 "position": "absolute",
                 "width": 48,
               },
-              Object {
+              {
                 "left": -24,
                 "top": -24,
               },
@@ -714,14 +714,14 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
             onStartShouldSetResponder={[Function]}
             onStartShouldSetResponderCapture={[Function]}
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "alignSelf": "stretch",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
                 },
-                Object {
+                {
                   "borderRadius": 0,
                 },
               ]
@@ -729,7 +729,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
           >
             <View
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -743,8 +743,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
               position="relative"
               pressed={false}
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "black",
                     "borderRadius": 9999,
@@ -754,7 +754,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -771,7 +771,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
             <View
               accessibilityRole="adjustable"
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -784,8 +784,8 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
               height={24}
               position="relative"
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "#FFFFFF",
                     "borderRadius": 9999,
@@ -794,7 +794,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -819,7 +819,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
 exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
 <View
   style={
-    Object {
+    {
       "width": 280,
     }
   }
@@ -827,8 +827,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
   <View>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "height": 50,
             "justifyContent": "center",
             "position": "relative",
@@ -839,11 +839,11 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "flexDirection": "row",
             },
-            Object {
+            {
               "width": 280,
             },
           ]
@@ -851,19 +851,19 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
       >
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
               undefined,
-              Object {
+              {
                 "width": 84,
               },
             ]
@@ -883,21 +883,21 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
           onStartShouldSetResponder={[Function]}
           onStartShouldSetResponderCapture={[Function]}
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
-              Object {
+              {
                 "backgroundColor": "#D8385E",
               },
-              Object {
+              {
                 "width": 112,
               },
             ]
@@ -905,19 +905,19 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
               undefined,
-              Object {
+              {
                 "width": 84,
               },
             ]
@@ -925,8 +925,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "transparent",
                 "height": 48,
@@ -934,7 +934,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                 "position": "absolute",
                 "width": 48,
               },
-              Object {
+              {
                 "left": 60,
                 "top": -24,
               },
@@ -957,14 +957,14 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
             onStartShouldSetResponder={[Function]}
             onStartShouldSetResponderCapture={[Function]}
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "alignSelf": "stretch",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
                 },
-                Object {
+                {
                   "borderRadius": 0,
                 },
               ]
@@ -972,7 +972,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
           >
             <View
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -986,8 +986,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
               position="relative"
               pressed={false}
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "black",
                     "borderRadius": 9999,
@@ -997,7 +997,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -1014,7 +1014,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
             <View
               accessibilityRole="adjustable"
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -1027,8 +1027,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
               height={24}
               position="relative"
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "#FFFFFF",
                     "borderRadius": 9999,
@@ -1037,7 +1037,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -1055,8 +1055,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
         </View>
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "transparent",
                 "height": 48,
@@ -1064,7 +1064,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                 "position": "absolute",
                 "width": 48,
               },
-              Object {
+              {
                 "right": 60,
                 "top": -24,
               },
@@ -1086,14 +1086,14 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
             onStartShouldSetResponder={[Function]}
             onStartShouldSetResponderCapture={[Function]}
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "alignSelf": "stretch",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
                 },
-                Object {
+                {
                   "borderRadius": 0,
                 },
               ]
@@ -1101,7 +1101,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
           >
             <View
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -1115,8 +1115,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
               position="relative"
               pressed={false}
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "black",
                     "borderRadius": 9999,
@@ -1126,7 +1126,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -1143,7 +1143,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
             <View
               accessibilityRole="adjustable"
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -1156,8 +1156,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
               height={24}
               position="relative"
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "#FFFFFF",
                     "borderRadius": 9999,
@@ -1166,7 +1166,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -1191,14 +1191,14 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
 exports[`<Slider /> Snapshots With two markers should match snapshot with Slider snapped 1`] = `
 <View
   style={
-    Object {
+    {
       "width": 280,
     }
   }
 >
   <View
     style={
-      Object {
+      {
         "alignItems": "center",
         "bottom": -30,
         "flexDirection": "row",
@@ -1209,8 +1209,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -1222,8 +1222,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -1235,8 +1235,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -1248,8 +1248,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -1261,8 +1261,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     <View
       active={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
             "height": 10,
@@ -1274,8 +1274,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     <View
       active={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
             "height": 10,
@@ -1287,8 +1287,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     <View
       active={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
             "height": 10,
@@ -1300,8 +1300,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -1313,8 +1313,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -1326,8 +1326,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -1339,8 +1339,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     <View
       active={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#D7D7E0",
             "borderRadius": 9999,
             "height": 10,
@@ -1353,8 +1353,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
   <View>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "height": 50,
             "justifyContent": "center",
             "position": "relative",
@@ -1365,11 +1365,11 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "flexDirection": "row",
             },
-            Object {
+            {
               "width": 280,
             },
           ]
@@ -1377,19 +1377,19 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
       >
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
               undefined,
-              Object {
+              {
                 "width": 84,
               },
             ]
@@ -1409,21 +1409,21 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
           onStartShouldSetResponder={[Function]}
           onStartShouldSetResponderCapture={[Function]}
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
-              Object {
+              {
                 "backgroundColor": "#D8385E",
               },
-              Object {
+              {
                 "width": 112,
               },
             ]
@@ -1431,19 +1431,19 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
               undefined,
-              Object {
+              {
                 "width": 84,
               },
             ]
@@ -1451,8 +1451,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "transparent",
                 "height": 48,
@@ -1460,7 +1460,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                 "position": "absolute",
                 "width": 48,
               },
-              Object {
+              {
                 "left": 60,
                 "top": -24,
               },
@@ -1483,14 +1483,14 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
             onStartShouldSetResponder={[Function]}
             onStartShouldSetResponderCapture={[Function]}
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "alignSelf": "stretch",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
                 },
-                Object {
+                {
                   "borderRadius": 0,
                 },
               ]
@@ -1498,7 +1498,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
           >
             <View
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -1512,8 +1512,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
               position="relative"
               pressed={false}
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "black",
                     "borderRadius": 9999,
@@ -1523,7 +1523,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -1540,7 +1540,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
             <View
               accessibilityRole="adjustable"
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -1553,8 +1553,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
               height={24}
               position="relative"
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "#FFFFFF",
                     "borderRadius": 9999,
@@ -1563,7 +1563,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -1581,8 +1581,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
         </View>
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "transparent",
                 "height": 48,
@@ -1590,7 +1590,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                 "position": "absolute",
                 "width": 48,
               },
-              Object {
+              {
                 "right": 60,
                 "top": -24,
               },
@@ -1612,14 +1612,14 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
             onStartShouldSetResponder={[Function]}
             onStartShouldSetResponderCapture={[Function]}
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "alignSelf": "stretch",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
                 },
-                Object {
+                {
                   "borderRadius": 0,
                 },
               ]
@@ -1627,7 +1627,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
           >
             <View
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -1641,8 +1641,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
               position="relative"
               pressed={false}
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "black",
                     "borderRadius": 9999,
@@ -1652,7 +1652,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -1669,7 +1669,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
             <View
               accessibilityRole="adjustable"
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -1682,8 +1682,8 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
               height={24}
               position="relative"
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "#FFFFFF",
                     "borderRadius": 9999,
@@ -1692,7 +1692,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -1717,7 +1717,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
 exports[`<Slider /> Tooltip should render tooltip 1`] = `
 <View
   style={
-    Object {
+    {
       "width": 280,
     }
   }
@@ -1725,8 +1725,8 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
   <View>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "height": 50,
             "justifyContent": "center",
             "position": "relative",
@@ -1737,11 +1737,11 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "flexDirection": "row",
             },
-            Object {
+            {
               "width": 280,
             },
           ]
@@ -1749,21 +1749,21 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
       >
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
-              Object {
+              {
                 "backgroundColor": "#D8385E",
               },
-              Object {
+              {
                 "width": 0,
               },
             ]
@@ -1771,19 +1771,19 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
               undefined,
-              Object {
+              {
                 "width": 280,
               },
             ]
@@ -1791,8 +1791,8 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "transparent",
                 "height": 48,
@@ -1800,7 +1800,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                 "position": "absolute",
                 "width": 48,
               },
-              Object {
+              {
                 "left": -24,
                 "top": -24,
               },
@@ -1823,14 +1823,14 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
             onStartShouldSetResponder={[Function]}
             onStartShouldSetResponderCapture={[Function]}
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "alignSelf": "stretch",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
                 },
-                Object {
+                {
                   "borderRadius": 0,
                 },
               ]
@@ -1843,14 +1843,14 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
               elevation="0 5px 5px      rgba(152, 152, 166, 0.2)"
               position="absolute"
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderRadius": 8,
                     "bottom": 38,
                     "position": "absolute",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 5,
                       "width": 0,
                     },
@@ -1871,8 +1871,8 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                 mb={-17}
                 position="absolute"
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "alignSelf": "center",
                       "backgroundColor": "#F5F5FA",
                       "borderRadius": 3,
@@ -1880,8 +1880,8 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                       "height": 16,
                       "marginBottom": -17,
                       "position": "absolute",
-                      "transform": Array [
-                        Object {
+                      "transform": [
+                        {
                           "rotate": "45deg",
                         },
                       ],
@@ -1893,8 +1893,8 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
               />
               <View
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "alignItems": "center",
                       "backgroundColor": "#D8385E",
                       "borderTopLeftRadius": 8,
@@ -1911,8 +1911,8 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
               >
                 <Text
                   style={
-                    Array [
-                      Object {
+                    [
+                      {
                         "color": "#FFFFFF",
                         "fontFamily": "Rubik",
                         "fontSize": 12,
@@ -1927,8 +1927,8 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
               </View>
               <View
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "backgroundColor": "#F5F5FA",
                       "borderRadius": 8,
                       "justifyContent": "center",
@@ -1943,8 +1943,8 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
               >
                 <Text
                   style={
-                    Array [
-                      Object {
+                    [
+                      {
                         "color": "#6B6B78",
                         "fontFamily": "Rubik",
                         "fontSize": 14,
@@ -1960,8 +1960,8 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                 </Text>
                 <Text
                   style={
-                    Array [
-                      Object {
+                    [
+                      {
                         "color": "#6B6B78",
                         "fontFamily": "Rubik",
                         "fontSize": 14,
@@ -1978,7 +1978,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
             </View>
             <View
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -1992,8 +1992,8 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
               position="relative"
               pressed={true}
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "rgba(216, 56, 94, 0.2)",
                     "borderColor": "black",
                     "borderRadius": 9999,
@@ -2003,7 +2003,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                     "height": 40,
                     "position": "absolute",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -2020,7 +2020,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
             <View
               accessibilityRole="adjustable"
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -2033,8 +2033,8 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
               height={24}
               position="relative"
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "#FFFFFF",
                     "borderRadius": 9999,
@@ -2043,7 +2043,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -2068,7 +2068,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
 exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
 <View
   style={
-    Object {
+    {
       "width": 280,
     }
   }
@@ -2076,8 +2076,8 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
   <View>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "height": 50,
             "justifyContent": "center",
             "position": "relative",
@@ -2088,11 +2088,11 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "flexDirection": "row",
             },
-            Object {
+            {
               "width": 280,
             },
           ]
@@ -2100,21 +2100,21 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
       >
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
-              Object {
+              {
                 "backgroundColor": "#D8385E",
               },
-              Object {
+              {
                 "width": 56,
               },
             ]
@@ -2122,19 +2122,19 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#A7A7A7",
                 "borderRadius": 2,
                 "height": 2,
               },
-              Object {
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 9999,
                 "height": 4,
               },
               undefined,
-              Object {
+              {
                 "width": 224,
               },
             ]
@@ -2142,8 +2142,8 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
         />
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "transparent",
                 "height": 48,
@@ -2151,7 +2151,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                 "position": "absolute",
                 "width": 48,
               },
-              Object {
+              {
                 "left": 32,
                 "top": -24,
               },
@@ -2174,14 +2174,14 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
             onStartShouldSetResponder={[Function]}
             onStartShouldSetResponderCapture={[Function]}
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "alignSelf": "stretch",
                   "backgroundColor": "transparent",
                   "justifyContent": "center",
                 },
-                Object {
+                {
                   "borderRadius": 0,
                 },
               ]
@@ -2194,14 +2194,14 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
               elevation="0 5px 5px      rgba(152, 152, 166, 0.2)"
               position="absolute"
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderRadius": 8,
                     "bottom": 38,
                     "position": "absolute",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 5,
                       "width": 0,
                     },
@@ -2222,8 +2222,8 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                 mb={-17}
                 position="absolute"
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "alignSelf": "center",
                       "backgroundColor": "#F5F5FA",
                       "borderRadius": 3,
@@ -2231,8 +2231,8 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                       "height": 16,
                       "marginBottom": -17,
                       "position": "absolute",
-                      "transform": Array [
-                        Object {
+                      "transform": [
+                        {
                           "rotate": "45deg",
                         },
                       ],
@@ -2244,8 +2244,8 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
               />
               <View
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "alignItems": "center",
                       "backgroundColor": "#D8385E",
                       "borderTopLeftRadius": 8,
@@ -2262,8 +2262,8 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
               >
                 <Text
                   style={
-                    Array [
-                      Object {
+                    [
+                      {
                         "color": "#FFFFFF",
                         "fontFamily": "Rubik",
                         "fontSize": 12,
@@ -2278,8 +2278,8 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
               </View>
               <View
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "backgroundColor": "#F5F5FA",
                       "borderRadius": 8,
                       "justifyContent": "center",
@@ -2294,8 +2294,8 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
               >
                 <Text
                   style={
-                    Array [
-                      Object {
+                    [
+                      {
                         "color": "#6B6B78",
                         "fontFamily": "Rubik",
                         "fontSize": 14,
@@ -2311,8 +2311,8 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                 </Text>
                 <Text
                   style={
-                    Array [
-                      Object {
+                    [
+                      {
                         "color": "#6B6B78",
                         "fontFamily": "Rubik",
                         "fontSize": 14,
@@ -2329,7 +2329,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
             </View>
             <View
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -2343,8 +2343,8 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
               position="relative"
               pressed={true}
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "rgba(216, 56, 94, 0.2)",
                     "borderColor": "black",
                     "borderRadius": 9999,
@@ -2354,7 +2354,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                     "height": 40,
                     "position": "absolute",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },
@@ -2371,7 +2371,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
             <View
               accessibilityRole="adjustable"
               as={
-                Object {
+                {
                   "$$typeof": Symbol(react.forward_ref),
                   "render": [Function],
                 }
@@ -2384,8 +2384,8 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
               height={24}
               position="relative"
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "backgroundColor": "#D8385E",
                     "borderColor": "#FFFFFF",
                     "borderRadius": 9999,
@@ -2394,7 +2394,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
                     "height": 24,
                     "position": "relative",
                     "shadowColor": "rgba(152, 152, 166, 0.2)",
-                    "shadowOffset": Object {
+                    "shadowOffset": {
                       "height": 2,
                       "width": 0,
                     },

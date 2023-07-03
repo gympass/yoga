@@ -3,35 +3,35 @@
 exports[`<List /> Snapshots Without props should match snapshot with a default list 1`] = `
 <RCTScrollView
   data={
-    Array [
-      Object {
+    [
+      {
         "key": "Devin",
       },
-      Object {
+      {
         "key": "Dan",
       },
-      Object {
+      {
         "key": "Dominic",
       },
-      Object {
+      {
         "key": "Jackson",
       },
-      Object {
+      {
         "key": "James",
       },
-      Object {
+      {
         "key": "Joel",
       },
-      Object {
+      {
         "key": "John",
       },
-      Object {
+      {
         "key": "Jillian",
       },
-      Object {
+      {
         "key": "Jimmy",
       },
-      Object {
+      {
         "key": "Julie",
       },
     ]
@@ -49,15 +49,15 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
   removeClippedSubviews={false}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
+  stickyHeaderIndices={[]}
   style={
-    Array [
-      Object {
+    [
+      {
         "width": "100%",
       },
     ]
   }
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfigCallbackPairs={[]}
 >
   <View>
     <View
@@ -68,8 +68,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -93,8 +93,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -118,8 +118,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -143,8 +143,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -168,8 +168,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -193,8 +193,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -218,8 +218,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -243,8 +243,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -268,8 +268,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -293,8 +293,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -317,35 +317,35 @@ exports[`<List /> Snapshots Without props should match snapshot with a default l
 exports[`<List /> Snapshots Without props should match snapshot with a horizontal list 1`] = `
 <RCTScrollView
   data={
-    Array [
-      Object {
+    [
+      {
         "key": "Devin",
       },
-      Object {
+      {
         "key": "Dan",
       },
-      Object {
+      {
         "key": "Dominic",
       },
-      Object {
+      {
         "key": "Jackson",
       },
-      Object {
+      {
         "key": "James",
       },
-      Object {
+      {
         "key": "Joel",
       },
-      Object {
+      {
         "key": "John",
       },
-      Object {
+      {
         "key": "Jillian",
       },
-      Object {
+      {
         "key": "Jimmy",
       },
-      Object {
+      {
         "key": "Julie",
       },
     ]
@@ -364,22 +364,22 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
   removeClippedSubviews={false}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
+  stickyHeaderIndices={[]}
   style={
-    Array [
-      Object {
+    [
+      {
         "width": "100%",
       },
     ]
   }
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfigCallbackPairs={[]}
 >
   <View>
     <View
       onLayout={[Function]}
       style={
-        Array [
-          Object {
+        [
+          {
             "flexDirection": "row",
           },
           null,
@@ -390,8 +390,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -410,8 +410,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     <View
       onLayout={[Function]}
       style={
-        Array [
-          Object {
+        [
+          {
             "flexDirection": "row",
           },
           null,
@@ -422,8 +422,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -442,8 +442,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     <View
       onLayout={[Function]}
       style={
-        Array [
-          Object {
+        [
+          {
             "flexDirection": "row",
           },
           null,
@@ -454,8 +454,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -474,8 +474,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     <View
       onLayout={[Function]}
       style={
-        Array [
-          Object {
+        [
+          {
             "flexDirection": "row",
           },
           null,
@@ -486,8 +486,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -506,8 +506,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     <View
       onLayout={[Function]}
       style={
-        Array [
-          Object {
+        [
+          {
             "flexDirection": "row",
           },
           null,
@@ -518,8 +518,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -538,8 +538,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     <View
       onLayout={[Function]}
       style={
-        Array [
-          Object {
+        [
+          {
             "flexDirection": "row",
           },
           null,
@@ -550,8 +550,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -570,8 +570,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     <View
       onLayout={[Function]}
       style={
-        Array [
-          Object {
+        [
+          {
             "flexDirection": "row",
           },
           null,
@@ -582,8 +582,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -602,8 +602,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     <View
       onLayout={[Function]}
       style={
-        Array [
-          Object {
+        [
+          {
             "flexDirection": "row",
           },
           null,
@@ -614,8 +614,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -634,8 +634,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     <View
       onLayout={[Function]}
       style={
-        Array [
-          Object {
+        [
+          {
             "flexDirection": "row",
           },
           null,
@@ -646,8 +646,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -666,8 +666,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
     <View
       onLayout={[Function]}
       style={
-        Array [
-          Object {
+        [
+          {
             "flexDirection": "row",
           },
           null,
@@ -678,8 +678,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
         divided={true}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 20,
@@ -702,35 +702,35 @@ exports[`<List /> Snapshots Without props should match snapshot with a horizonta
 exports[`<List /> Snapshots Without props should match snapshot with a list without divisors 1`] = `
 <RCTScrollView
   data={
-    Array [
-      Object {
+    [
+      {
         "key": "Devin",
       },
-      Object {
+      {
         "key": "Dan",
       },
-      Object {
+      {
         "key": "Dominic",
       },
-      Object {
+      {
         "key": "Jackson",
       },
-      Object {
+      {
         "key": "James",
       },
-      Object {
+      {
         "key": "Joel",
       },
-      Object {
+      {
         "key": "John",
       },
-      Object {
+      {
         "key": "Jillian",
       },
-      Object {
+      {
         "key": "Jimmy",
       },
-      Object {
+      {
         "key": "Julie",
       },
     ]
@@ -748,15 +748,15 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
   removeClippedSubviews={false}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
+  stickyHeaderIndices={[]}
   style={
-    Array [
-      Object {
+    [
+      {
         "width": "100%",
       },
     ]
   }
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfigCallbackPairs={[]}
 >
   <View>
     <View
@@ -767,8 +767,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
         divided={false}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "paddingBottom": 20,
               "paddingLeft": 24,
               "paddingRight": 24,
@@ -790,8 +790,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
         divided={false}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "paddingBottom": 20,
               "paddingLeft": 24,
               "paddingRight": 24,
@@ -813,8 +813,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
         divided={false}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "paddingBottom": 20,
               "paddingLeft": 24,
               "paddingRight": 24,
@@ -836,8 +836,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
         divided={false}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "paddingBottom": 20,
               "paddingLeft": 24,
               "paddingRight": 24,
@@ -859,8 +859,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
         divided={false}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "paddingBottom": 20,
               "paddingLeft": 24,
               "paddingRight": 24,
@@ -882,8 +882,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
         divided={false}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "paddingBottom": 20,
               "paddingLeft": 24,
               "paddingRight": 24,
@@ -905,8 +905,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
         divided={false}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "paddingBottom": 20,
               "paddingLeft": 24,
               "paddingRight": 24,
@@ -928,8 +928,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
         divided={false}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "paddingBottom": 20,
               "paddingLeft": 24,
               "paddingRight": 24,
@@ -951,8 +951,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
         divided={false}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "paddingBottom": 20,
               "paddingLeft": 24,
               "paddingRight": 24,
@@ -974,8 +974,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
         divided={false}
         small={false}
         style={
-          Array [
-            Object {
+          [
+            {
               "paddingBottom": 20,
               "paddingLeft": 24,
               "paddingRight": 24,
@@ -996,35 +996,35 @@ exports[`<List /> Snapshots Without props should match snapshot with a list with
 exports[`<List /> Snapshots Without props should match snapshot with a small list 1`] = `
 <RCTScrollView
   data={
-    Array [
-      Object {
+    [
+      {
         "key": "Devin",
       },
-      Object {
+      {
         "key": "Dan",
       },
-      Object {
+      {
         "key": "Dominic",
       },
-      Object {
+      {
         "key": "Jackson",
       },
-      Object {
+      {
         "key": "James",
       },
-      Object {
+      {
         "key": "Joel",
       },
-      Object {
+      {
         "key": "John",
       },
-      Object {
+      {
         "key": "Jillian",
       },
-      Object {
+      {
         "key": "Jimmy",
       },
-      Object {
+      {
         "key": "Julie",
       },
     ]
@@ -1042,15 +1042,15 @@ exports[`<List /> Snapshots Without props should match snapshot with a small lis
   removeClippedSubviews={false}
   renderItem={[Function]}
   scrollEventThrottle={50}
-  stickyHeaderIndices={Array []}
+  stickyHeaderIndices={[]}
   style={
-    Array [
-      Object {
+    [
+      {
         "width": "100%",
       },
     ]
   }
-  viewabilityConfigCallbackPairs={Array []}
+  viewabilityConfigCallbackPairs={[]}
 >
   <View>
     <View
@@ -1061,8 +1061,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a small lis
         divided={true}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 8,
@@ -1086,8 +1086,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a small lis
         divided={true}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 8,
@@ -1111,8 +1111,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a small lis
         divided={true}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 8,
@@ -1136,8 +1136,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a small lis
         divided={true}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 8,
@@ -1161,8 +1161,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a small lis
         divided={true}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 8,
@@ -1186,8 +1186,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a small lis
         divided={true}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 8,
@@ -1211,8 +1211,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a small lis
         divided={true}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 8,
@@ -1236,8 +1236,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a small lis
         divided={true}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 8,
@@ -1261,8 +1261,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a small lis
         divided={true}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 8,
@@ -1286,8 +1286,8 @@ exports[`<List /> Snapshots Without props should match snapshot with a small lis
         divided={true}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomColor": "#F5F5FA",
               "borderBottomWidth": 1,
               "paddingBottom": 8,

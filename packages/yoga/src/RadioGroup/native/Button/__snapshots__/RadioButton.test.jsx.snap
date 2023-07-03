@@ -13,8 +13,8 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "transparent",
         "borderRadius": 9999,
@@ -30,8 +30,8 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   <Text
     checked={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
         },
@@ -57,8 +57,8 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   onStartShouldSetResponder={[Function]}
   small={true}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "transparent",
         "borderRadius": 9999,
@@ -74,8 +74,8 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   <Text
     checked={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
         },

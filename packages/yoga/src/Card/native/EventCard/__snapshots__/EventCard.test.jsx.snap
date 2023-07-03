@@ -4,10 +4,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
 <View
   elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
   style={
-    Array [
-      Object {
+    [
+      {
         "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": Object {
+        "shadowOffset": {
           "height": 2,
           "width": 0,
         },
@@ -23,7 +23,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
     bRadius={8}
     bgColor="#FFFFFF"
     date={
-      Object {
+      {
         "day": "19",
         "dayOfWeek": "thu",
         "month": "dec",
@@ -31,7 +31,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
     }
     elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
     event={
-      Object {
+      {
         "name": "Yoga Class",
         "place": "Gympass",
         "time": "19 am",
@@ -53,8 +53,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
     pt={16}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 8,
           "overflow": "hidden",
@@ -63,14 +63,14 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
           "paddingRight": 16,
           "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
           "shadowRadius": 4,
         },
-        Object {
+        {
           "borderRadius": 16,
           "flexDirection": "row",
           "height": 104,
@@ -90,8 +90,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
       pv="medium"
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "justifyContent": "center",
@@ -104,8 +104,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "height": 16,
               "justifyContent": "center",
@@ -117,8 +117,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
           bgColor="white"
           borderRadius="small"
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#FFFFFF",
                 "borderRadius": 8,
                 "height": 8,
@@ -130,8 +130,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
       </View>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 20,
@@ -148,8 +148,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
       </Text>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 12,
@@ -171,10 +171,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
 <View
   elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
   style={
-    Array [
-      Object {
+    [
+      {
         "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": Object {
+        "shadowOffset": {
           "height": 2,
           "width": 0,
         },
@@ -190,7 +190,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
     bRadius={8}
     bgColor="#FFFFFF"
     date={
-      Object {
+      {
         "day": "19",
         "dayOfWeek": "thu",
         "month": "dec",
@@ -198,7 +198,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
     }
     elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
     event={
-      Object {
+      {
         "name": "Yoga Class",
         "place": "Gympass",
         "time": "19 am",
@@ -220,8 +220,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
     pt={16}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 8,
           "overflow": "hidden",
@@ -230,14 +230,14 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
           "paddingRight": 16,
           "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
           "shadowRadius": 4,
         },
-        Object {
+        {
           "borderRadius": 16,
           "flexDirection": "row",
           "height": 104,
@@ -257,8 +257,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
       pv="medium"
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
             "justifyContent": "center",
@@ -271,8 +271,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "height": 16,
               "justifyContent": "center",
@@ -282,8 +282,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#6B6B78",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -299,8 +299,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
       </View>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 20,
@@ -317,8 +317,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
       </Text>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
@@ -340,10 +340,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
 <View
   elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
   style={
-    Array [
-      Object {
+    [
+      {
         "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": Object {
+        "shadowOffset": {
           "height": 2,
           "width": 0,
         },
@@ -359,7 +359,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
     bRadius={8}
     bgColor="#FFFFFF"
     date={
-      Object {
+      {
         "day": "19",
         "dayOfWeek": "thu",
         "month": "dec",
@@ -383,8 +383,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
     pt={16}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 8,
           "overflow": "hidden",
@@ -393,14 +393,14 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
           "paddingRight": 16,
           "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
           "shadowRadius": 4,
         },
-        Object {
+        {
           "borderRadius": 16,
           "flexDirection": "row",
           "height": 104,
@@ -420,8 +420,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
       pv="medium"
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
             "justifyContent": "center",
@@ -434,8 +434,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "height": 16,
               "justifyContent": "center",
@@ -447,8 +447,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
           bgColor="light"
           borderRadius="small"
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#D7D7E0",
                 "borderRadius": 8,
                 "height": 8,
@@ -460,8 +460,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
       </View>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 20,
@@ -478,8 +478,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
       </Text>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
@@ -501,10 +501,10 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
 <View
   elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
   style={
-    Array [
-      Object {
+    [
+      {
         "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": Object {
+        "shadowOffset": {
           "height": 2,
           "width": 0,
         },
@@ -520,7 +520,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
     bRadius={8}
     bgColor="#FFFFFF"
     date={
-      Object {
+      {
         "day": "19",
         "dayOfWeek": "thu",
         "month": "dec",
@@ -528,7 +528,7 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
     }
     elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
     event={
-      Object {
+      {
         "name": "Yoga Class",
         "place": "Gympass",
         "time": "19 am",
@@ -550,8 +550,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
     pt={16}
     small={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 8,
           "overflow": "hidden",
@@ -560,14 +560,14 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
           "paddingRight": 16,
           "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
           "shadowRadius": 4,
         },
-        Object {
+        {
           "borderRadius": 16,
           "flexDirection": "row",
           "height": 104,
@@ -587,8 +587,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
       pv="medium"
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#FFFFFF",
             "justifyContent": "center",
@@ -601,8 +601,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "height": 16,
               "justifyContent": "center",
@@ -614,8 +614,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
           bgColor="primary"
           borderRadius="small"
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "#D8385E",
                 "borderRadius": 8,
                 "height": 8,
@@ -627,8 +627,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
       </View>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 20,
@@ -645,8 +645,8 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
       </Text>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
@@ -668,10 +668,10 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
 <View
   elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
   style={
-    Array [
-      Object {
+    [
+      {
         "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": Object {
+        "shadowOffset": {
           "height": 2,
           "width": 0,
         },
@@ -687,7 +687,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
     bRadius={8}
     bgColor="#FFFFFF"
     date={
-      Object {
+      {
         "day": "19",
         "dayOfWeek": "thu",
         "month": "dec",
@@ -695,7 +695,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
     }
     elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
     event={
-      Object {
+      {
         "name": "Yoga Class",
         "place": "Gympass",
         "time": "19 am",
@@ -717,8 +717,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
     pt={16}
     small={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 8,
           "overflow": "hidden",
@@ -727,14 +727,14 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
           "paddingRight": 16,
           "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 2,
             "width": 0,
           },
           "shadowOpacity": 1,
           "shadowRadius": 4,
         },
-        Object {
+        {
           "borderRadius": 16,
           "flexDirection": "row",
           "height": 104,
@@ -752,8 +752,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
     <View
       bg="primary"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "justifyContent": "center",
@@ -764,8 +764,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "height": 16,
               "justifyContent": "center",
@@ -776,8 +776,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
         <Text
           inverted={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#FFFFFF",
                 "fontFamily": "Rubik",
                 "fontSize": 12,
@@ -793,8 +793,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
       <Text
         inverted={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 20,
@@ -811,8 +811,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
       <Text
         inverted={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 12,
@@ -829,8 +829,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
       p="small"
       pl="xsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "flexBasis": 0,
             "flexGrow": 1,
             "flexShrink": 1,
@@ -846,8 +846,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
         numberOfLines={1}
         size="small"
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 14,
@@ -863,8 +863,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
       <Text
         numberOfLines={1}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
@@ -881,8 +881,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
       </Text>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "flexDirection": "row",
               "justifyContent": "space-between",
@@ -892,8 +892,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
       >
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "flexDirection": "row",
               },
@@ -904,15 +904,15 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
             fill="#231B22"
             focusable={false}
             style={
-              Array [
-                Object {
+              [
+                {
                   "backgroundColor": "transparent",
                   "borderWidth": 0,
                 },
-                Object {
+                {
                   "marginRight": 5,
                 },
-                Object {
+                {
                   "opacity": 1,
                 },
                 null,
@@ -921,16 +921,16 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
           >
             <RNSVGGroup
               fill={
-                Array [
+                [
                   0,
                   4280490786,
                 ]
               }
               fillOpacity={1}
               fillRule={1}
-              font={Object {}}
+              font={{}}
               matrix={
-                Array [
+                [
                   1,
                   0,
                   0,
@@ -943,7 +943,7 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
               originX={0}
               originY={0}
               propList={
-                Array [
+                [
                   "fill",
                 ]
               }
@@ -967,8 +967,8 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
           </RNSVGSvgView>
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
                   "fontSize": 12,

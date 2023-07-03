@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
-Array [
+[
   <View
     accessible={true}
     focusable={true}
@@ -13,7 +13,7 @@ Array [
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "flexDirection": "row",
       }
     }
@@ -26,8 +26,8 @@ Array [
       secondary={false}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
@@ -48,8 +48,8 @@ Array [
         pressed={false}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 14,
@@ -66,11 +66,11 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "bottom": 0,
         "position": "absolute",
-        "transform": Array [
-          Object {
+        "transform": [
+          {
             "translateY": 1334,
           },
         ],
@@ -98,8 +98,8 @@ Array [
         onStartShouldSetResponder={[Function]}
         onStartShouldSetResponderCapture={[Function]}
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "#C1EEDB",
               "borderRadius": 8,
@@ -123,22 +123,22 @@ Array [
           height={24}
           marginRight="xxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Array [
-                Object {
+              [
+                {
                   "height": 24,
                   "marginRight": 8,
                   "width": 24,
                 },
               ],
-              Object {
+              {
                 "opacity": 1,
               },
-              Object {
+              {
                 "flex": 0,
                 "height": 24,
                 "width": 24,
@@ -149,16 +149,16 @@ Array [
         >
           <RNSVGGroup
             fill={
-              Array [
+              [
                 0,
                 4280490786,
               ]
             }
             fillOpacity={1}
             fillRule={1}
-            font={Object {}}
+            font={{}}
             matrix={
-              Array [
+              [
                 1,
                 0,
                 0,
@@ -171,7 +171,7 @@ Array [
             originX={0}
             originY={0}
             propList={
-              Array [
+              [
                 "fill",
               ]
             }
@@ -201,8 +201,8 @@ Array [
           marginVertical="xxxsmall"
           numberOfLines={2}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,
@@ -230,7 +230,7 @@ Array [
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            Object {
+            {
               "flexDirection": "row",
             }
           }
@@ -240,8 +240,8 @@ Array [
             pressed={false}
             small={true}
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "borderRadius": 9999,
@@ -251,7 +251,7 @@ Array [
                   "paddingLeft": 16,
                   "paddingRight": 16,
                 },
-                Object {
+                {
                   "marginLeft": 8,
                 },
               ]
@@ -263,8 +263,8 @@ Array [
               secondary={true}
               small={true}
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 14,
@@ -285,7 +285,7 @@ Array [
 `;
 
 exports[`<Snackbar /> should match snapshot when have a variant informative or attention prop 1`] = `
-Array [
+[
   <View
     accessible={true}
     focusable={true}
@@ -297,7 +297,7 @@ Array [
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "flexDirection": "row",
       }
     }
@@ -310,8 +310,8 @@ Array [
       secondary={false}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
@@ -332,8 +332,8 @@ Array [
         pressed={false}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 14,
@@ -350,11 +350,11 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "bottom": 0,
         "position": "absolute",
-        "transform": Array [
-          Object {
+        "transform": [
+          {
             "translateY": 1334,
           },
         ],
@@ -382,8 +382,8 @@ Array [
         onStartShouldSetResponder={[Function]}
         onStartShouldSetResponderCapture={[Function]}
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "#E0DFFF",
               "borderRadius": 8,
@@ -407,8 +407,8 @@ Array [
           marginVertical="xxxsmall"
           numberOfLines={2}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,
@@ -432,7 +432,7 @@ Array [
 `;
 
 exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
-Array [
+[
   <View
     accessible={true}
     focusable={true}
@@ -444,7 +444,7 @@ Array [
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "flexDirection": "row",
       }
     }
@@ -457,8 +457,8 @@ Array [
       secondary={false}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
@@ -479,8 +479,8 @@ Array [
         pressed={false}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 14,
@@ -497,11 +497,11 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "bottom": 0,
         "position": "absolute",
-        "transform": Array [
-          Object {
+        "transform": [
+          {
             "translateY": 1334,
           },
         ],
@@ -529,8 +529,8 @@ Array [
         onStartShouldSetResponder={[Function]}
         onStartShouldSetResponderCapture={[Function]}
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "#C1EEDB",
               "borderRadius": 8,
@@ -554,22 +554,22 @@ Array [
           height={24}
           marginRight="xxsmall"
           style={
-            Array [
-              Object {
+            [
+              {
                 "backgroundColor": "transparent",
                 "borderWidth": 0,
               },
-              Array [
-                Object {
+              [
+                {
                   "height": 24,
                   "marginRight": 8,
                   "width": 24,
                 },
               ],
-              Object {
+              {
                 "opacity": 1,
               },
-              Object {
+              {
                 "flex": 0,
                 "height": 24,
                 "width": 24,
@@ -580,16 +580,16 @@ Array [
         >
           <RNSVGGroup
             fill={
-              Array [
+              [
                 0,
                 4280490786,
               ]
             }
             fillOpacity={1}
             fillRule={1}
-            font={Object {}}
+            font={{}}
             matrix={
-              Array [
+              [
                 1,
                 0,
                 0,
@@ -602,7 +602,7 @@ Array [
             originX={0}
             originY={0}
             propList={
-              Array [
+              [
                 "fill",
               ]
             }
@@ -632,8 +632,8 @@ Array [
           marginVertical="xxxsmall"
           numberOfLines={2}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,
@@ -661,7 +661,7 @@ Array [
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
           style={
-            Object {
+            {
               "flexDirection": "row",
             }
           }
@@ -671,8 +671,8 @@ Array [
             pressed={false}
             small={true}
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "backgroundColor": "transparent",
                   "borderRadius": 9999,
@@ -682,7 +682,7 @@ Array [
                   "paddingLeft": 16,
                   "paddingRight": 16,
                 },
-                Object {
+                {
                   "marginLeft": 8,
                 },
               ]
@@ -694,8 +694,8 @@ Array [
               secondary={true}
               small={true}
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 14,
@@ -716,7 +716,7 @@ Array [
 `;
 
 exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
-Array [
+[
   <View
     accessible={true}
     focusable={true}
@@ -728,7 +728,7 @@ Array [
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={
-      Object {
+      {
         "flexDirection": "row",
       }
     }
@@ -741,8 +741,8 @@ Array [
       secondary={false}
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 9999,
@@ -763,8 +763,8 @@ Array [
         pressed={false}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#FFFFFF",
               "fontFamily": "Rubik",
               "fontSize": 14,
@@ -781,11 +781,11 @@ Array [
   <View
     collapsable={false}
     style={
-      Object {
+      {
         "bottom": 0,
         "position": "absolute",
-        "transform": Array [
-          Object {
+        "transform": [
+          {
             "translateY": 1334,
           },
         ],
@@ -813,8 +813,8 @@ Array [
         onStartShouldSetResponder={[Function]}
         onStartShouldSetResponderCapture={[Function]}
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "#C1EEDB",
               "borderRadius": 8,
@@ -838,8 +838,8 @@ Array [
           marginVertical="xxxsmall"
           numberOfLines={2}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "flexBasis": 0,
                 "flexGrow": 1,
