@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
+.c16 {
+  width: 16px;
+  height: 16px;
+}
+
 .c20 {
   box-sizing: border-box;
   text-align: center;
@@ -61,11 +66,6 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 
 .c20:active svg {
   fill: #FFFFFF;
-}
-
-.c16 {
-  width: 16px;
-  height: 16px;
 }
 
 .c9 {
