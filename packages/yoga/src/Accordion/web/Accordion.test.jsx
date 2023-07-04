@@ -155,18 +155,14 @@ describe('<Accordion />', () => {
   it('should render the accordion summary', () => {
     render(
       <ThemeProvider>
-        <Accordion.Small
-          title="Title"
-          subtitle="Subtitle"
-          hasHorizontalPadding={false}
-        >
+        <Accordion title="Title" subtitle="Subtitle">
           <Accordion.Summary>
             <Text>Summary</Text>
           </Accordion.Summary>
           <Accordion.Content>
             <Text>Content</Text>
           </Accordion.Content>
-        </Accordion.Small>
+        </Accordion>
       </ThemeProvider>,
     );
 
