@@ -14,4 +14,6 @@ const Content = styled.div`
   }}
 `;
 
+Content.displayName = 'Accordion.Content';
+
 export default Content;
