@@ -1,6 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Dialog /> should match snapshot 1`] = `
+.c3 {
+  margin-bottom: 24px;
+  color: #231B22;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.c4 {
+  margin-bottom: 32px;
+  color: #6B6B78;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.c5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 24px;
+}
+
 .c6 {
   box-sizing: border-box;
   text-align: center;
@@ -61,34 +89,6 @@ exports[`<Dialog /> should match snapshot 1`] = `
 
 .c6:active svg {
   fill: #FFFFFF;
-}
-
-.c3 {
-  margin-bottom: 24px;
-  color: #231B22;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.c4 {
-  margin-bottom: 32px;
-  color: #6B6B78;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.c5 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 24px;
 }
 
 .c1 {
@@ -182,7 +182,52 @@ exports[`<Dialog /> should match snapshot 1`] = `
 exports[`<Dialog /> should match snapshot with close button 1`] = `
 <body>
   <div />
-  .c9 {
+  .c6 {
+  margin-bottom: 24px;
+  color: #231B22;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.c7 {
+  margin-bottom: 32px;
+  color: #6B6B78;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.c3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c5 {
+  width: 24px;
+  height: 24px;
+}
+
+.c9 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -242,51 +287,6 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
 
 .c9:active svg {
   fill: #FFFFFF;
-}
-
-.c6 {
-  margin-bottom: 24px;
-  color: #231B22;
-  font-size: 24px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.c7 {
-  margin-bottom: 32px;
-  color: #6B6B78;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.c8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 24px;
-}
-
-.c3 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.c5 {
-  width: 24px;
-  height: 24px;
 }
 
 .c4 {

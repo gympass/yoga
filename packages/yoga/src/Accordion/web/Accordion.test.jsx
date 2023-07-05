@@ -152,6 +152,25 @@ describe('<Accordion />', () => {
     });
   });
 
+  it('should render the accordion summary', () => {
+    render(
+      <ThemeProvider>
+        <Accordion title="Title" subtitle="Subtitle">
+          <Accordion.Summary>
+            <Text>Summary</Text>
+          </Accordion.Summary>
+          <Accordion.Content>
+            <Text>Content</Text>
+          </Accordion.Content>
+        </Accordion>
+      </ThemeProvider>,
+    );
+
+    expect(screen.getByText('Summary')).toBeInTheDocument();
+    expect(screen.queryByText('Title')).not.toBeInTheDocument();
+    expect(screen.queryByText('Subtitle')).not.toBeInTheDocument();
+  });
+
   it('should have className when passed as props', () => {
     render(
       <ThemeProvider>

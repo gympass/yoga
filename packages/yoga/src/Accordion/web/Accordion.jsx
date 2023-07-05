@@ -210,6 +210,10 @@ const Accordion = ({
 }) => {
   const [open, setOpen] = useState(expanded);
 
+  const [summary, ...contentChildren] = React.Children.toArray(children);
+
+  const hasSummary = summary.type.displayName === 'Accordion.Summary';
+
   return (
     <AccordionWrapper disabled={disabled} {...props}>
       <Header
@@ -220,22 +224,26 @@ const Accordion = ({
         small={small}
         hasHorizontalPadding={hasHorizontalPadding}
       >
-        <Title subtitle={subtitle}>
-          {small ? (
-            <Text.Small color={disabled ? 'deep' : undefined}>
-              {title}
-            </Text.Small>
-          ) : (
-            <Text.Medium
-              color={disabled ? 'deep' : undefined}
-              lineHeight="medium"
-            >
-              {title}
-            </Text.Medium>
-          )}
+        {hasSummary ? (
+          summary
+        ) : (
+          <Title subtitle={subtitle}>
+            {small ? (
+              <Text.Small color={disabled ? 'deep' : undefined}>
+                {title}
+              </Text.Small>
+            ) : (
+              <Text.Medium
+                color={disabled ? 'deep' : undefined}
+                lineHeight="medium"
+              >
+                {title}
+              </Text.Medium>
+            )}
 
-          <Text.Small color="deep">{subtitle}</Text.Small>
-        </Title>
+            <Text.Small color="deep">{subtitle}</Text.Small>
+          </Title>
+        )}
 
         <ArrowWrapper isOpen={open} disabled={disabled}>
           <ChevronDown width={24} height={24} />
@@ -247,7 +255,7 @@ const Accordion = ({
         small={small}
         hasHorizontalPadding={hasHorizontalPadding}
       >
-        {children}
+        {hasSummary ? contentChildren : children}
       </AccordionContent>
       <Divider />
     </AccordionWrapper>
@@ -255,7 +263,7 @@ const Accordion = ({
 };
 
 Accordion.propTypes = {
-  title: string.isRequired,
+  title: string,
   subtitle: string,
   children: node.isRequired,
   disabled: bool,
@@ -265,6 +273,7 @@ Accordion.propTypes = {
 };
 
 Accordion.defaultProps = {
+  title: undefined,
   subtitle: undefined,
   disabled: false,
   expanded: false,

@@ -1,6 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Drawer /> should match snapshot 1`] = `
+.c4 {
+  width: 100%;
+  color: #231B22;
+}
+
+.c5 {
+  margin-bottom: 32px;
+  color: #6B6B78;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.c7 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .c8 {
   box-sizing: border-box;
   text-align: center;
@@ -61,27 +82,6 @@ exports[`<Drawer /> should match snapshot 1`] = `
 
 .c8:active svg {
   fill: #FFFFFF;
-}
-
-.c4 {
-  width: 100%;
-  color: #231B22;
-}
-
-.c5 {
-  margin-bottom: 32px;
-  color: #6B6B78;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.c7 {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .c1 {

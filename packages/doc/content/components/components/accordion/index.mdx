@@ -472,6 +472,56 @@ render(() => {
 });
 ```
 
+#### With Summary
+
+```javascript state
+const List = styled.ul`
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 ${theme.spacing.xxxsmall}px;
+  padding-left: ${theme.spacing.medium}px;
+`;
+
+const Item = styled.li`
+  font-size: ${theme.spacing.xsmall}px;
+`;
+
+render(() => {
+  return (
+    <Box d="flex" flexDirection="column" width="100%">
+      <Accordion title="Default">
+        <Accordion.Summary d="flex" flexDirection="row" justifyContent="space-between">
+          <Text.Medium>Company</Text.Medium>
+          <Text.Medium>R$1000</Text.Medium>
+        </Accordion.Summary>
+        <Accordion.Content>
+          <Box d="flex" flexDirection="column" gap="small">
+            <Text.Small color="deep">
+              Subtitle with a list of some items:
+            </Text.Small>
+
+            <List>
+              <Item>
+                <Text.Small color="deep">Item 1</Text.Small>
+              </Item>
+
+              <Item>
+                <Text.Small color="deep">Item 2</Text.Small>
+              </Item>
+            </List>
+          </Box>
+
+          <Button small inverted>
+            Small button
+          </Button>
+        </Accordion.Content>
+      </Accordion>
+    </Box>
+  );
+});
+```
+
 ### Props
 
 <PropsTable component="Accordion" platform="web" />
