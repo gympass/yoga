@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.40.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.39.10...@gympass/yoga-doc@2.40.0) (2023-07-05)
+
+
+### Features
+
+* **accordion:** add accordion summary ([39a9510](https://github.com/gympass/yoga/commit/39a9510a5bc8b2655fca02ecbf1cdee7685c2ad4))
+
+
+
+
+
 ## [2.39.10](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.39.9...@gympass/yoga-doc@2.39.10) (2023-07-03)
 
 **Note:** Version bump only for package @gympass/yoga-doc
