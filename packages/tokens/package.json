@@ -10,15 +10,14 @@
   "homepage": "https://github.com/Gympass/yoga",
   "license": "MIT",
   "main": "src/index.ts",
-  "types": "dist/cjs/index.d.ts",
+  "types": "dist/typings/index.d.ts",
   "scripts": {
-    "build": "yarn build:cjs && yarn build:esm",
-    "build:types": "tsc --emitDeclarationOnly",
-    "build:cjs": "yarn build:types --declarationDir dist/cjs && NODE_ENV=cjs babel ./src --out-dir dist/cjs --extensions '.ts,.js'",
-    "build:esm": "yarn build:types --declarationDir dist/esm && NODE_ENV=esm babel ./src --out-dir dist/esm --extensions '.ts,.js'",
+    "build": "yarn build:types && yarn build:cjs && yarn build:esm",
+    "build:types": "tsup --outDir dist/typings --dts-only",
+    "build:cjs": "tsup --outDir dist/cjs --format=cjs",
+    "build:esm": "tsup --format=esm --legacy-output",
     "prebuild": "rm -rf ./dist",
-    "prepublishOnly": "node ../../scripts/prepublish.js",
-    "postbuild": "node ../../scripts/prepublish.js"
+    "prepublishOnly": "node ../../scripts/prepublish.js"
   },
   "dependencies": {
     "@gympass/yoga-common": "^1.1.2"
@@ -33,5 +32,13 @@
   },
   "bugs": {
     "url": "https://github.com/Gympass/yoga/issues"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts",
+      "src/**/*.ts"
+    ],
+    "splitting": false,
+    "bundle": false
   }
 }

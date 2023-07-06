@@ -20,9 +20,16 @@ const createPackageJson = () => {
 
   const newPackageData = {
     ...packageDataOther,
-    main: './cjs',
-    module: './esm',
+    main: './cjs/index.js',
+    module: './esm/index.js',
     private: false,
+    exports: {
+      '.': {
+        require: './cjs/index.js',
+        import: './esm/index.js',
+        types: './typings/index.d.ts',
+      },
+    },
   };
 
   if (hasRNPackage) {
