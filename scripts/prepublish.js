@@ -27,7 +27,6 @@ const createPackageJson = () => {
       '.': {
         require: './cjs/index.js',
         import: './esm/index.js',
-        types: './typings/index.d.ts',
       },
     },
   };
