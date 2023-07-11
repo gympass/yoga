@@ -1,4 +1,4 @@
-export interface ITransitionProps {
+export interface TransitionProps {
   duration: number [];
   timing: number[][];
 }
@@ -6,7 +6,7 @@ export interface ITransitionProps {
 const duration = [200, 500];
 const timing = [[0, 0.75, 0.1, 1]];
 
-const transition: ITransitionProps = {
+const transition: TransitionProps = {
   duration,
   timing,
 };

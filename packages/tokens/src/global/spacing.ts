@@ -1,4 +1,4 @@
-export interface ISpacingProps extends Array<number> {
+export interface SpacingProps extends Array<number> {
   zero?: number;
   xxxsmall?: number;
   xxsmall?: number;
@@ -13,7 +13,7 @@ export interface ISpacingProps extends Array<number> {
   xhuge?: number;
 }
 
-const spacing: ISpacingProps = [0, 4, 8, 12, 16, 20, 24, 32, 40, 56, 72, 80];
+const spacing: SpacingProps = [0, 4, 8, 12, 16, 20, 24, 32, 40, 56, 72, 80];
 
 [
   spacing.zero,

@@ -10,12 +10,12 @@ const umbra = ['0 2px 4px -1px', '0 5px 5px -3px', '0 7px 8px -4px'];
 const penumbra = ['0 4px 5px 0px', '0 8px 10px 1px', '0 12px 17px 2px'];
 const ambient = ['0 1px 10px 0px', '0 3px 14px 2px', '0 5px 22px 4px'];
 
-interface ISanitizeShadowProps {
+interface SanitizeShadowProps {
   shadow: string;
   spread: boolean;
 }
 
-function sanitizeShadow({ shadow, spread }: ISanitizeShadowProps) {
+function sanitizeShadow({ shadow, spread }: SanitizeShadowProps) {
   if (!spread) {
     const values = shadow.split(' ');
 
@@ -25,14 +25,14 @@ function sanitizeShadow({ shadow, spread }: ISanitizeShadowProps) {
   return shadow;
 }
 
-interface ICreateShadowProps {
+interface CreateShadowProps {
   level: 0 | 1 | 2;
   color: string;
   depth: number;
   spread: boolean;
 }
 
-function createShadow({ level, color, depth, spread }: ICreateShadowProps) {
+function createShadow({ level, color, depth, spread }: CreateShadowProps) {
   const shadows = [
     `${sanitizeShadow({ shadow: umbra[level], spread })} \
      ${hexToRgb(color, UMBRA_OPACITY)}`,
@@ -45,7 +45,7 @@ function createShadow({ level, color, depth, spread }: ICreateShadowProps) {
   return shadows.slice(0, depth).join();
 }
 
-interface IElevateProps {
+interface ElevateProps {
   color?: string;
   level?: number;
   depth?: number;
@@ -59,7 +59,7 @@ function  elevate({
   depth = 3,
   spread = true,
   fallback = true,
-}: IElevateProps) {
+}: ElevateProps) {
   const all = [
     fallback ? '0 0 0 rgba(0, 0, 0, 0)' : 'none',
     createShadow({ level: 0, color, depth, spread }),

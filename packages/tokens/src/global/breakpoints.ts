@@ -1,4 +1,4 @@
-export interface IBreakpointsProps {
+export interface BreakpointsProps {
   xxs: {
     width: number;
     margin: number;
@@ -48,7 +48,7 @@ export interface IBreakpointsProps {
   };
 }
 
-const breakpoints: IBreakpointsProps = {
+const breakpoints: BreakpointsProps = {
   xxs: {
     width: 0,
     margin: 20,
