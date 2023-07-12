@@ -21,6 +21,7 @@
     "noImplicitOverride": true,
     "noImplicitReturns": true,
     "skipLibCheck": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "sourceMap": false
   }
 }

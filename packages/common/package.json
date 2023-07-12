@@ -5,7 +5,7 @@
   "homepage": "https://github.com/Gympass/yoga",
   "license": "MIT",
   "main": "src/index.ts",
-  "types": "dist/typings/index.d.ts",
+  "types": "src/index.ts",
   "scripts": {
     "build": "yarn build:types && yarn build:cjs && yarn build:esm",
     "build:types": "tsup --outDir dist/typings --dts-only",

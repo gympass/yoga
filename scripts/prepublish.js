@@ -16,12 +16,13 @@ const copyFile = file => {
 };
 
 const createPackageJson = () => {
-  const { scripts, ...packageDataOther } = pkg;
+  const { scripts, tsup, ...packageDataOther } = pkg;
 
   const newPackageData = {
     ...packageDataOther,
     main: './cjs/index.js',
     module: './esm/index.js',
+    types: './typings/index.d.ts',
     private: false,
     exports: {
       '.': {
