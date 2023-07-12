@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { node, number, oneOf, string } from 'prop-types';
 import { Text } from '@gympass/yoga';
 
-import { PopoverContainer, Wrapper } from './styles';
+import { PopoverContainer, PopoverButton, Wrapper } from './styles';
 
 function Popover({
   children,
@@ -11,26 +11,30 @@ function Popover({
   position,
   width,
   height,
+  zIndex,
+  a11yId,
   ...props
 }) {
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
-  function handleShowPopover() {
+  const handleShowPopover = () => {
     setIsPopoverOpen(true);
-  }
+  };
 
-  function handleHidePopover() {
+  const handleHidePopover = () => {
     setIsPopoverOpen(false);
-  }
+  };
 
   return (
     <Wrapper {...props}>
       {isPopoverOpen && (
         <PopoverContainer
+          {...(a11yId && { id: a11yId })}
           position={position}
           width={width}
           height={height}
           role="tooltip"
+          $zIndex={zIndex}
         >
           {!!title && (
             <Text.Small mb="xxxsmall" fw="medium" color="white">
@@ -43,22 +47,27 @@ function Popover({
         </PopoverContainer>
       )}
 
-      <button
-        type="button"
-        style={{ all: 'unset' }}
+      <PopoverButton
+        {...(a11yId && { 'aria-describedby': a11yId })}
         onMouseEnter={handleShowPopover}
         onMouseLeave={handleHidePopover}
         onTouchStart={handleShowPopover}
         onTouchEnd={handleHidePopover}
         onClick={event => event.preventDefault()}
+        onKeyDown={event => {
+          if (event.key === 'Enter') {
+            setIsPopoverOpen(current => !current);
+          }
+        }}
       >
         {children}
-      </button>
+      </PopoverButton>
     </Wrapper>
   );
 }
 
 Popover.propTypes = {
+  a11yId: string,
   children: node.isRequired,
   title: string,
   description: string.isRequired,
@@ -79,13 +88,16 @@ Popover.propTypes = {
   ]),
   width: number,
   height: number,
+  zIndex: number,
 };
 
 Popover.defaultProps = {
+  a11yId: undefined,
   title: undefined,
   position: 'bottom-center',
   width: 265,
-  height: 116,
+  height: 200,
+  zIndex: 1,
 };
 
 export default Popover;

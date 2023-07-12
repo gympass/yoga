@@ -5,12 +5,24 @@ exports[`<Popover /> should match snapshot 1`] = `
   position: relative;
 }
 
+.c1 {
+  all: unset;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c1:focus {
+    box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+    -webkit-transition: box-shadow ease 0.5s;
+    transition: box-shadow ease 0.5s;
+  }
+}
+
 <div>
   <div
     class="c0"
   >
     <button
-      style="all: unset;"
+      class="c1"
       type="button"
     >
       <svg
