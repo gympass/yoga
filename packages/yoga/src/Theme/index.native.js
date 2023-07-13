@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-named-as-default
 import ThemeProvider from './Provider';
 import yogaTheme from './theme';
 import theme from './helpers/themeReader';
