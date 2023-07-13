@@ -75,9 +75,10 @@ export const PopoverContainer = styled.div`
     position,
     width,
     height,
+    $zIndex,
   }) => css`
     position: absolute;
-
+    overflow: auto;
     width: max-content;
     max-width: ${width}px;
     height: max-content;
@@ -86,7 +87,25 @@ export const PopoverContainer = styled.div`
     border-radius: ${radii.small}px;
     background-color: ${colors.stamina};
     padding: ${spacing.small}px;
+    z-index: ${$zIndex};
 
     ${popoverContainerPositionModifier[position]};
+  `}
+`;
+
+export const PopoverButton = styled.button.attrs({ type: 'button' })`
+  all: unset;
+
+  ${({
+    theme: {
+      yoga: { elevations },
+    },
+  }) => css`
+    @media (hover: hover) and (pointer: fine) {
+      &:focus {
+        box-shadow: ${elevations.small};
+        transition: box-shadow ease 0.5s;
+      }
+    }
   `}
 `;
