@@ -87,27 +87,35 @@ const Button = styled.button`
 `;
 
 const ListItem = withTheme(
-  ({ text, icon: Icon, buttonProps, theme: yogaTheme, onClick }) => (
-    <Item>
-      <Wrapper as={onClick ? 'button' : 'div'} onClick={onClick}>
-        {Icon && (
-          <IconWrapper>
-            {isValidElement(Icon) ? (
-              Icon
-            ) : (
-              <Icon
-                width={16}
-                height={16}
-                fill={yogaTheme.yoga.colors.text.primary}
-              />
-            )}
-          </IconWrapper>
+  ({ text, icon: Icon, buttonProps, theme: yogaTheme, onClick }) => {
+    const wrapperProps = onClick
+      ? { as: 'button', type: 'button', onClick }
+      : {};
+
+    return (
+      <Item>
+        <Wrapper {...wrapperProps}>
+          {Icon && (
+            <IconWrapper>
+              {isValidElement(Icon) ? (
+                Icon
+              ) : (
+                <Icon
+                  width={16}
+                  height={16}
+                  fill={yogaTheme.yoga.colors.text.primary}
+                />
+              )}
+            </IconWrapper>
+          )}
+          <ItemText as="span">{text}</ItemText>
+        </Wrapper>
+        {Boolean(Object.keys(buttonProps).length) && (
+          <Button {...buttonProps} />
         )}
-        <ItemText as="span">{text}</ItemText>
-      </Wrapper>
-      {Boolean(Object.keys(buttonProps).length) && <Button {...buttonProps} />}
-    </Item>
-  ),
+      </Item>
+    );
+  },
 );
 
 List.displayName = 'PlanCard.List';

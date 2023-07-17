@@ -1143,6 +1143,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
         >
           <button
             class="c14"
+            type="button"
           >
             <div
               class="c15"
@@ -1166,6 +1167,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
         >
           <button
             class="c14"
+            type="button"
           >
             <div
               class="c15"
