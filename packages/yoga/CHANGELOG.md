@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.77.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.76.1...@gympass/yoga@7.77.0) (2023-07-18)
+
+
+### Features
+
+* add type "button" ([5845523](https://github.com/Gympass/yoga/commit/5845523425325a78f71ac90ce709fe97d41866d7))
+* **card:** make list item clickable in plan card ([87d01a8](https://github.com/Gympass/yoga/commit/87d01a8ca6fb96ab67ce5c984b469da81cd83f3d))
+
+
+
+
+
 ## [7.76.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.76.0...@gympass/yoga@7.76.1) (2023-07-13)
 
 **Note:** Version bump only for package @gympass/yoga
