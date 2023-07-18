@@ -4,6 +4,7 @@ import { string, node, shape, oneOfType, func } from 'prop-types';
 
 import Text from '../../../Text';
 import theme from '../../../Theme/helpers/themeReader';
+import Box from '../../../Box';
 
 const { card, cardweb } = theme.components;
 
@@ -31,10 +32,19 @@ const Item = styled.li`
   }
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled(Box)`
   display: flex;
   min-width: 0;
   align-items: center;
+
+  ${props =>
+    props.as === 'button' &&
+    css`
+      border: none;
+      padding: 0;
+      background: transparent;
+      cursor: pointer;
+    `}
 
   svg {
     flex-shrink: 0;
@@ -77,27 +87,35 @@ const Button = styled.button`
 `;
 
 const ListItem = withTheme(
-  ({ text, icon: Icon, buttonProps, theme: yogaTheme }) => (
-    <Item>
-      <Wrapper>
-        {Icon && (
-          <IconWrapper>
-            {isValidElement(Icon) ? (
-              Icon
-            ) : (
-              <Icon
-                width={16}
-                height={16}
-                fill={yogaTheme.yoga.colors.text.primary}
-              />
-            )}
-          </IconWrapper>
+  ({ text, icon: Icon, buttonProps, theme: yogaTheme, onClick }) => {
+    const wrapperProps = onClick
+      ? { as: 'button', type: 'button', onClick }
+      : {};
+
+    return (
+      <Item>
+        <Wrapper {...wrapperProps}>
+          {Icon && (
+            <IconWrapper>
+              {isValidElement(Icon) ? (
+                Icon
+              ) : (
+                <Icon
+                  width={16}
+                  height={16}
+                  fill={yogaTheme.yoga.colors.text.primary}
+                />
+              )}
+            </IconWrapper>
+          )}
+          <ItemText as="span">{text}</ItemText>
+        </Wrapper>
+        {Boolean(Object.keys(buttonProps).length) && (
+          <Button {...buttonProps} />
         )}
-        <ItemText as="span">{text}</ItemText>
-      </Wrapper>
-      {Boolean(Object.keys(buttonProps).length) && <Button {...buttonProps} />}
-    </Item>
-  ),
+      </Item>
+    );
+  },
 );
 
 List.displayName = 'PlanCard.List';
@@ -105,17 +123,20 @@ ListItem.displayName = 'PlanCard.ListItem';
 Button.displayName = 'PlanCard.ListButton';
 
 ListItem.propTypes = {
-  text: string.isRequired,
+  text: oneOfType([string, node]).isRequired,
   /** an icon to be displayed on the begin of the item */
   icon: oneOfType([node, func]),
   /** if provided displays a button below the item text. It accepts all button
    * element props */
   buttonProps: shape({}),
+  /** if provided makes the item clickable */
+  onClick: func,
 };
 
 ListItem.defaultProps = {
   icon: undefined,
   buttonProps: {},
+  onClick: undefined,
 };
 
 export { List, ListItem };

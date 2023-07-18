@@ -7,7 +7,7 @@ import PlanCard from '.';
 describe('<PlanCard />', () => {
   const buttonOnClickMock = jest.fn();
 
-  const renderPlan = () =>
+  const renderPlan = ({ clickableItems } = {}) =>
     render(
       <ThemeProvider>
         <PlanCard>
@@ -31,6 +31,7 @@ describe('<PlanCard />', () => {
                   />
                 }
                 text="gyms and studios"
+                onClick={clickableItems && jest.fn()}
               />
               <PlanCard.ListItem
                 icon={Star}
@@ -40,6 +41,7 @@ describe('<PlanCard />', () => {
                   as: 'a',
                   onClick: buttonOnClickMock,
                 }}
+                onClick={clickableItems && jest.fn()}
               />
             </PlanCard.List>
           </PlanCard.Content>
@@ -57,6 +59,37 @@ describe('<PlanCard />', () => {
       fireEvent.click(getByText('button'));
 
       expect(buttonOnClickMock).toHaveBeenCalled();
+    });
+
+    it('should make list item clickable', () => {
+      const itemClickMock = jest.fn();
+
+      const { getByRole } = render(
+        <ThemeProvider>
+          <PlanCard variant="energy">
+            <PlanCard.Content title="Basic">
+              <PlanCard.List>
+                <PlanCard.ListItem
+                  icon={
+                    <Icon
+                      as={MapPin}
+                      height="small"
+                      width="small"
+                      stroke="medium"
+                    />
+                  }
+                  text="gyms and studios"
+                  onClick={itemClickMock}
+                />
+              </PlanCard.List>
+            </PlanCard.Content>
+          </PlanCard>
+        </ThemeProvider>,
+      );
+
+      fireEvent.click(getByRole('button', { label: 'gyms and studios' }));
+
+      expect(itemClickMock).toHaveBeenCalled();
     });
   });
 
@@ -148,6 +181,12 @@ describe('<PlanCard />', () => {
           </PlanCard>
         </ThemeProvider>,
       );
+
+      expect(container).toMatchSnapshot();
+    });
+
+    it('should render list item content as button', () => {
+      const { container } = renderPlan({ clickableItems: true });
 
       expect(container).toMatchSnapshot();
     });

@@ -760,6 +760,451 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
 </div>
 `;
 
+exports[`<PlanCard /> Snapshots should render list item content as button 1`] = `
+.c16 {
+  width: 16px;
+  height: 16px;
+}
+
+.c20 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c20 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c20:not([disabled]):hover,
+.c20:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c20:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c20:active svg {
+  fill: #FFFFFF;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c19 {
+  margin-top: 24px;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #6B6B78;
+  font-weight: 500;
+}
+
+.c11 {
+  width: 100%;
+  border-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 1px;
+  border-color: #D7D7E0;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  color: #231B22;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.c10 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  max-width: 312px;
+  overflow: hidden;
+  padding: 56px 24px 24px 24px;
+  border: 1px solid #D7D7E0;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+}
+
+.c1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #710252;
+}
+
+.c1::before {
+  position: absolute;
+  height: 112px;
+  width: 112px;
+  content: '';
+  background: radial-gradient( 50% 50% at 50% 50%, #FFFFFF 0%, transparent 100% );
+  border-radius: 50%;
+  left: 24px;
+  top: -84px;
+  opacity: 0.8;
+}
+
+.c2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  padding: 0 4px 0 4px;
+  color: #5340C9;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #5340C9;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.c3 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #E0DFFF;
+  color: #231B22;
+  border-radius: 4px;
+  border-color: #E0DFFF;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.c4 {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  top: 28px;
+  left: 24px;
+}
+
+.c12 {
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 8px;
+}
+
+.c13:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.c14 svg {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c17 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  color: #231B22;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c18 {
+  display: block;
+  padding: 0;
+  margin-top: 12px;
+  width: 100%;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  background-color: transparent;
+  border: none;
+  font-family: Rubik;
+  font-size: 12px;
+  font-weight: 500;
+  color: #231B22;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-align: left;
+  outline: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+<div>
+  <article
+    class="c0"
+  >
+    <span
+      class="c1"
+    />
+    <div
+      class="c2 c3 c4"
+    >
+      Recommended Plan
+    </div>
+    <div
+      class="c5"
+    >
+      <p
+        class="c6"
+      >
+        plan
+      </p>
+      <p
+        class="c7"
+      >
+        Basic
+      </p>
+      <div
+        class="c8"
+      >
+        <sup
+          class="c9"
+        >
+          $
+        </sup>
+        <strong
+          class="c9"
+        >
+          99.90
+        </strong>
+        <sub
+          class="c10"
+        >
+          /month
+        </sub>
+      </div>
+      <hr
+        class="c11"
+      />
+      <p
+        class="c6"
+      >
+        Get access to
+      </p>
+      <ul
+        class="c12"
+      >
+        <li
+          class="c13"
+        >
+          <button
+            class="c14"
+            type="button"
+          >
+            <div
+              class="c15"
+            >
+              <svg
+                class="c16"
+                height="16"
+                stroke="#9898A6"
+                width="16"
+              />
+            </div>
+            <span
+              class="c17"
+            >
+              gyms and studios
+            </span>
+          </button>
+        </li>
+        <li
+          class="c13"
+        >
+          <button
+            class="c14"
+            type="button"
+          >
+            <div
+              class="c15"
+            >
+              <svg
+                fill="#231B22"
+                height="16"
+                width="16"
+              />
+            </div>
+            <span
+              class="c17"
+            >
+              list item
+            </span>
+          </button>
+          <a
+            class="c18"
+          >
+            button
+          </a>
+        </li>
+      </ul>
+    </div>
+    <footer
+      class="c19"
+    >
+      <button
+        class="c20"
+      >
+        Select this plan
+      </button>
+    </footer>
+  </article>
+</div>
+`;
+
 exports[`<PlanCard /> Snapshots should render the discount 1`] = `
 .c2 {
   margin: 0;
