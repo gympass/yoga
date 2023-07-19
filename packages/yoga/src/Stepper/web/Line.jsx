@@ -4,8 +4,10 @@ import styled, { css } from 'styled-components';
 const Line = styled.div`
   ${({
     width,
+    color,
     theme: {
       yoga: {
+        colors: { [color]: customColor },
         components: { stepper },
       },
     },
@@ -22,7 +24,7 @@ const Line = styled.div`
       width: ${width}%;
       height: 4px;
 
-      background-color: ${stepper.line.backgroundColor.active};
+      background-color: ${customColor || stepper.line.backgroundColor.active};
     }
   `}
 `;

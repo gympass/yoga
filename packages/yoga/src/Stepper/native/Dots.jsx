@@ -2,8 +2,10 @@ import React from 'react';
 import { number, arrayOf, string } from 'prop-types';
 import styled from 'styled-components';
 
+import { colors } from '@gympass/yoga-tokens/src/global';
 import activeDot from '../activeDot';
 import Text from '../../Text';
+import { typeOf } from '../../shared';
 
 const Wrapper = styled.View`
   flex-direction: row;
@@ -17,8 +19,10 @@ const DotWrapper = styled.View`
 const Dot = styled.View(
   ({
     active,
+    color,
     theme: {
       yoga: {
+        colors: { [color]: customColor },
         components: { stepper },
       },
     },
@@ -31,7 +35,7 @@ const Dot = styled.View(
     border-radius: ${stepper.dot.radius}px;
     background-color: ${
       active
-        ? stepper.dot.backgroundColor.active
+        ? customColor || stepper.dot.backgroundColor.active
         : stepper.dot.backgroundColor.inactive
     };
   `,
@@ -40,8 +44,10 @@ const Dot = styled.View(
 const Label = styled(Text.Bold)(
   ({
     active,
+    color,
     theme: {
       yoga: {
+        colors: { [color]: customColor },
         components: { stepper },
       },
     },
@@ -51,7 +57,9 @@ const Label = styled(Text.Bold)(
     margin-left: -40px;
 
     color: ${
-      active ? stepper.label.color.active : stepper.label.color.inactive
+      active
+        ? customColor || stepper.label.color.active
+        : stepper.label.color.inactive
     };
 
     font-size: ${stepper.label.font.size}px;
@@ -59,12 +67,14 @@ const Label = styled(Text.Bold)(
   `,
 );
 
-const Dots = ({ activeStep, labels }) => (
+const Dots = ({ activeStep, labels, color }) => (
   <Wrapper>
     {labels.map((label, index) => (
       <DotWrapper key={label}>
-        <Dot active={activeDot(index, activeStep)} />
-        <Label active={activeDot(index, activeStep)}>{label}</Label>
+        <Dot active={activeDot(index, activeStep)} color={color} />
+        <Label active={activeDot(index, activeStep)} color={color}>
+          {label}
+        </Label>
       </DotWrapper>
     ))}
   </Wrapper>
@@ -73,11 +83,13 @@ const Dots = ({ activeStep, labels }) => (
 Dots.propTypes = {
   activeStep: number,
   labels: arrayOf(string),
+  color: typeOf(colors),
 };
 
 Dots.defaultProps = {
   activeStep: 0,
   labels: [],
+  color: undefined,
 };
 
 export default Dots;

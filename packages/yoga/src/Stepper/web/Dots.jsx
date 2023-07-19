@@ -2,8 +2,10 @@ import React from 'react';
 import { number, arrayOf, string } from 'prop-types';
 import styled, { css } from 'styled-components';
 
+import { colors } from '@gympass/yoga-tokens/src/global';
 import activeDot from '../activeDot';
 import Text from '../../Text';
+import { typeOf } from '../../shared';
 
 const Dot = styled.div`
   ${({
@@ -39,8 +41,10 @@ const Label = styled(Text.Bold)`
 const DotWrapper = styled.div`
   ${({
     active,
+    color,
     theme: {
       yoga: {
+        colors: { [color]: customColor },
         components: { stepper },
       },
     },
@@ -56,7 +60,7 @@ const DotWrapper = styled.div`
       top: 10px;
 
       color: ${active
-        ? stepper.label.color.active
+        ? customColor || stepper.label.color.active
         : stepper.label.color.inactive};
     }
 
@@ -65,7 +69,7 @@ const DotWrapper = styled.div`
       top: -10px;
 
       background-color: ${active
-        ? stepper.dot.backgroundColor.active
+        ? customColor || stepper.dot.backgroundColor.active
         : stepper.dot.backgroundColor.inactive};
     }
   `}
@@ -76,10 +80,14 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Dots = ({ activeStep, labels }) => (
+const Dots = ({ activeStep, labels, color }) => (
   <Wrapper>
     {labels.map((label, index) => (
-      <DotWrapper active={activeDot(index, activeStep)} key={label}>
+      <DotWrapper
+        active={activeDot(index, activeStep)}
+        color={color}
+        key={label}
+      >
         <Dot />
         <Label as="span">{label}</Label>
       </DotWrapper>
@@ -90,11 +98,13 @@ const Dots = ({ activeStep, labels }) => (
 Dots.propTypes = {
   activeStep: number,
   labels: arrayOf(string),
+  color: typeOf(colors),
 };
 
 Dots.defaultProps = {
   activeStep: 0,
   labels: [],
+  color: undefined,
 };
 
 export default Dots;
