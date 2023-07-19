@@ -1,27 +1,15 @@
-export interface LineHeightProps extends Array<number> {
-  xxsmall?: number;
-  xsmall?: number;
-  small?: number;
-  medium?: number;
-  large?: number;
-  xlarge?: number;
-  xxlarge?: number;
-  xxxlarge?: number;
-  huge?: number;
-}
+const lineHeight = {
+  xxsmall: 12,
+  xsmall: 16,
+  small: 20,
+  medium: 24,
+  large: 28,
+  xlarge: 32,
+  xxlarge: 40,
+  xxxlarge: 48,
+  huge: 56,
+} as const;
 
-const lineHeight: LineHeightProps = [12, 16, 20, 24, 28, 32, 40, 48, 56];
-
-[
-  lineHeight.xxsmall,
-  lineHeight.xsmall,
-  lineHeight.small,
-  lineHeight.medium,
-  lineHeight.large,
-  lineHeight.xlarge,
-  lineHeight.xxlarge,
-  lineHeight.xxxlarge,
-  lineHeight.huge,
-] = lineHeight;
+export type LineHeightSizes = Partial<typeof lineHeight>;
 
 export default lineHeight;

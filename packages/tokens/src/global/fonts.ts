@@ -1,18 +1,18 @@
 import weights from './font-weights';
 
-export interface FontProps {
+export interface Font {
   family: string;
   weight: (number | string)[];
 }
 
-export interface FontsProps {
-  rubik?: FontProps;
+export interface Fonts {
+  rubik?: Font;
 }
 
-const fonts: FontsProps = {
+const fonts: Fonts = {
   rubik: {
     family: 'Rubik',
-    weight: [...weights, ...weights.map(weight => `${weight}i`)],
+    weight: Object.entries(weights).flatMap(([weight, value]) => [value, `${weight}i`]),
   },
 };
 

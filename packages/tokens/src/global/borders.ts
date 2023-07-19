@@ -1,11 +1,9 @@
-export interface BorderProps extends Array<number> {
-  zero?: number;
-  small?: number;
-  medium?: number;
-}
+const border = {
+  zero: 0,
+  small: 1,
+  medium: 2,
+} as const;
 
-const border: BorderProps = [0, 1, 2];
-
-[border.zero, border.small, border.medium] = border;
+export type BorderSizes = Partial<typeof border>;
 
 export default border;
