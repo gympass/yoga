@@ -9,10 +9,12 @@ export interface Fonts {
   rubik?: Font;
 }
 
+const fontWeights = Object.values(weights);
+
 const fonts: Fonts = {
   rubik: {
     family: 'Rubik',
-    weight: Object.entries(weights).flatMap(([weight, value]) => [value, `${weight}i`]),
+    weight: [...fontWeights, ...fontWeights.map(value => `${value}i`)],
   },
 };
 
