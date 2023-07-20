@@ -67,18 +67,20 @@ const Label = styled(Text.Bold)(
   `,
 );
 
-const Dots = ({ activeStep, labels, color }) => (
-  <Wrapper>
-    {labels.map((label, index) => (
-      <DotWrapper key={label}>
-        <Dot active={activeDot(index, activeStep)} color={color} />
-        <Label active={activeDot(index, activeStep)} color={color}>
-          {label}
-        </Label>
-      </DotWrapper>
-    ))}
-  </Wrapper>
-);
+const Dots = ({ activeStep, labels, color }) => {
+  return (
+    <Wrapper>
+      {labels.map((label, index) => (
+        <DotWrapper key={label}>
+          <Dot active={activeDot(index, activeStep)} color={color} />
+          <Label active={activeDot(index, activeStep)} color={color}>
+            {label}
+          </Label>
+        </DotWrapper>
+      ))}
+    </Wrapper>
+  );
+};
 
 Dots.propTypes = {
   activeStep: number,

@@ -46,15 +46,17 @@ const ActiveLine = styled.View(
 `,
 );
 
-const Line = ({ activeStep, totalSteps, color }) => (
-  <Wrapper>
-    <InactiveLine />
-    <ActiveLine
-      width={activeStep <= 0 ? 0 : (activeStep / totalSteps) * 100}
-      color={color}
-    />
-  </Wrapper>
-);
+const Line = ({ activeStep, totalSteps, color }) => {
+  return (
+    <Wrapper>
+      <InactiveLine />
+      <ActiveLine
+        width={activeStep <= 0 ? 0 : (activeStep / totalSteps) * 100}
+        color={color}
+      />
+    </Wrapper>
+  );
+};
 
 Line.propTypes = {
   activeStep: number,

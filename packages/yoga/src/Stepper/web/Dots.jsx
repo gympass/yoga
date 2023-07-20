@@ -80,20 +80,22 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Dots = ({ activeStep, labels, color }) => (
-  <Wrapper>
-    {labels.map((label, index) => (
-      <DotWrapper
-        active={activeDot(index, activeStep)}
-        color={color}
-        key={label}
-      >
-        <Dot />
-        <Label as="span">{label}</Label>
-      </DotWrapper>
-    ))}
-  </Wrapper>
-);
+const Dots = ({ activeStep, labels, color }) => {
+  return (
+    <Wrapper>
+      {labels.map((label, index) => (
+        <DotWrapper
+          active={activeDot(index, activeStep)}
+          color={color}
+          key={label}
+        >
+          <Dot />
+          <Label as="span">{label}</Label>
+        </DotWrapper>
+      ))}
+    </Wrapper>
+  );
+};
 
 Dots.propTypes = {
   activeStep: number,

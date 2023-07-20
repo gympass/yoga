@@ -32,26 +32,28 @@ const LineWrapper = styled.div`
 
 /** Stepper is responsible for the logic that drives a stepped workflow, it
 provides a wizard-like workflow by dividing content into logical steps. */
-const Stepper = ({ children, activeStep, color, ...rest }) => (
-  <Root {...rest}>
-    <LineWrapper>
-      <Line
-        width={
-          activeStep <= 0
-            ? 0
-            : (activeStep / (React.Children.count(children) - 1)) * 100
-        }
-        color={color}
-      />
-      <Dots
-        activeStep={activeStep}
-        labels={React.Children.map(children, child => child.props.label)}
-        color={color}
-      />
-    </LineWrapper>
-    {React.Children.toArray(children)[activeStep]}
-  </Root>
-);
+const Stepper = ({ children, activeStep, color, ...rest }) => {
+  return (
+    <Root {...rest}>
+      <LineWrapper>
+        <Line
+          width={
+            activeStep <= 0
+              ? 0
+              : (activeStep / (React.Children.count(children) - 1)) * 100
+          }
+          color={color}
+        />
+        <Dots
+          activeStep={activeStep}
+          labels={React.Children.map(children, child => child.props.label)}
+          color={color}
+        />
+      </LineWrapper>
+      {React.Children.toArray(children)[activeStep]}
+    </Root>
+  );
+};
 
 Stepper.displayName = 'Stepper';
 
