@@ -1,15 +1,54 @@
-type BreakpointType = 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl';
+export interface BreakpointsProps {
+  xxs: {
+    width: number;
+    margin: number;
+    gutter: number;
+  };
 
-interface Breakpoint {
-  width: number;
-  margin: number;
-  gutter: number;
+  xs: {
+      width: number;
+      margin: number;
+      gutter: number;
+  };
+
+  sm: {
+      width: number;
+      margin: number;
+      gutter: number;
+  };
+
+  md: {
+      width: number;
+      margin: number;
+      gutter: number;
+  };
+
+  lg: {
+    width: number;
+    margin: number;
+    gutter: number;
+  };
+
+  xl: {
+    width: number;
+    margin: number;
+    gutter: number;
+  };
+
+  xxl: {
+    width: number;
+    margin: number;
+    gutter: number;
+  };
+
+  xxxl: {
+    width: number;
+    margin: number;
+    gutter: number;
+  };
 }
-export type Breakpoints = {
-  [key in BreakpointType]: Breakpoint;
-};
 
-const breakpoints: Breakpoints = {
+const breakpoints: BreakpointsProps = {
   xxs: {
     width: 0,
     margin: 20,
@@ -57,6 +96,6 @@ const breakpoints: Breakpoints = {
     margin: 71,
     gutter: 24,
   },
-} as const;
+};
 
 export default breakpoints;

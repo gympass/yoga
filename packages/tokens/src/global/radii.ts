@@ -1,11 +1,13 @@
-const radii = {
-  sharp: 0,
-  xsmall: 4,
-  small: 8,
-  regular: 16,
-  circle: 9999,
-} as const;
+export interface LineHeightProps extends Array<number> {
+  sharp?: number;
+  xsmall?: number;
+  small?: number;
+  regular?: number;
+  circle?: number;
+}
 
-export type Radii = Partial<typeof radii>;
+const radii: LineHeightProps = [0, 4, 8, 16, 9999];
+
+[radii.sharp, radii.xsmall, radii.small, radii.regular, radii.circle] = radii;
 
 export default radii;
