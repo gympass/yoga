@@ -10,7 +10,22 @@ import elevations from './elevations';
 import spacing from './spacing';
 import transition from './transition';
 
+const tokens = {
+  borders,
+  breakpoints,
+  colors,
+  fonts,
+  fontSizes,
+  fontWeights,
+  lineHeights,
+  radii,
+  elevations,
+  spacing,
+  transition,
+};
+
 export {
+  tokens as default,
   borders,
   breakpoints,
   colors,
