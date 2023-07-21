@@ -1,4 +1,4 @@
-export interface FontSizesProps extends Array<number> {
+export interface FontSizes extends Array<number> {
   xxsmall?: number;
   xsmall?: number;
   small?: number;
@@ -10,7 +10,7 @@ export interface FontSizesProps extends Array<number> {
   huge?: number;
 }
 
-const fontSizes: FontSizesProps  = [10, 12, 14, 16, 20, 24, 32, 40, 48];
+const fontSizes: FontSizes  = [10, 12, 14, 16, 20, 24, 32, 40, 48];
 
 [
   fontSizes.xxsmall,

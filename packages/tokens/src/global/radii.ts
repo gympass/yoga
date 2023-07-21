@@ -1,4 +1,4 @@
-export interface LineHeightProps extends Array<number> {
+export interface Radii extends Array<number> {
   sharp?: number;
   xsmall?: number;
   small?: number;
@@ -6,7 +6,7 @@ export interface LineHeightProps extends Array<number> {
   circle?: number;
 }
 
-const radii: LineHeightProps = [0, 4, 8, 16, 9999];
+const radii: Radii = [0, 4, 8, 16, 9999];
 
 [radii.sharp, radii.xsmall, radii.small, radii.regular, radii.circle] = radii;
 

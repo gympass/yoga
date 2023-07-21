@@ -1,4 +1,4 @@
-export interface LineHeightProps extends Array<number> {
+export interface LineHeightSizes extends Array<number> {
   xxsmall?: number;
   xsmall?: number;
   small?: number;
@@ -10,7 +10,7 @@ export interface LineHeightProps extends Array<number> {
   huge?: number;
 }
 
-const lineHeight: LineHeightProps = [12, 16, 20, 24, 28, 32, 40, 48, 56];
+const lineHeight: LineHeightSizes = [12, 16, 20, 24, 28, 32, 40, 48, 56];
 
 [
   lineHeight.xxsmall,

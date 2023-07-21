@@ -45,21 +45,24 @@ function createShadow({ level, color, depth, spread }: CreateShadowProps) {
   return shadows.slice(0, depth).join();
 }
 
-interface ElevateProps {
+type ElevateLevel = 0 | 1 | 2 | 3;
+
+interface ElevateWithoutLevel {
   color?: string;
-  level?: number;
   depth?: number;
   spread?: boolean;
   fallback?: boolean;
 }
 
-function  elevate({
-  color = '#000',
-  level,
-  depth = 3,
-  spread = true,
-  fallback = true,
-}: ElevateProps) {
+interface ElevateWithLevel extends ElevateWithoutLevel {
+  level: ElevateLevel;
+}
+
+function elevate(options: ElevateWithoutLevel): [string, string,string,string];
+function elevate(options: ElevateWithLevel): string;
+function elevate(options: ElevateWithLevel | ElevateWithoutLevel) {
+  const { color = '#000', depth = 3, spread = true, fallback = true } = options;
+
   const all = [
     fallback ? '0 0 0 rgba(0, 0, 0, 0)' : 'none',
     createShadow({ level: 0, color, depth, spread }),
@@ -67,8 +70,8 @@ function  elevate({
     createShadow({ level: 2, color, depth, spread }),
   ];
 
-  if (level) {
-    return all[level];
+  if ('level' in options) {
+    return all[options.level];
   }
 
   return all;

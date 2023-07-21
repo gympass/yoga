@@ -1,4 +1,4 @@
-export interface FontWeightsProps extends Array<number> {
+export interface FontWeights extends Array<number> {
   light?: number;
   regular?: number;
   medium?: number;
@@ -6,7 +6,7 @@ export interface FontWeightsProps extends Array<number> {
   black?: number;
 }
 
-const fontWeights: FontWeightsProps = [300, 400, 500, 700, 900];
+const fontWeights: FontWeights = [300, 400, 500, 700, 900];
 
 [
   fontWeights.light,

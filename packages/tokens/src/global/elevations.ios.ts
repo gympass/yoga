@@ -8,8 +8,7 @@ const elevateOptions = {
   fallback: true,
 };
 
-const [zero, small, medium, large] =
-  elevate(elevateOptions) as [string, string, string, string];
+const [zero, small, medium, large] = elevate(elevateOptions);
 
 const elevations = {
   zero,
