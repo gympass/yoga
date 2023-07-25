@@ -47,7 +47,7 @@ const ActiveLine = styled.View(
 `,
 );
 
-const Line = ({ activeStep, totalSteps, secondary }) => {
+function Line({ activeStep, totalSteps, secondary }) {
   return (
     <Wrapper>
       <InactiveLine />
@@ -57,7 +57,7 @@ const Line = ({ activeStep, totalSteps, secondary }) => {
       />
     </Wrapper>
   );
-};
+}
 
 Line.propTypes = {
   activeStep: number,

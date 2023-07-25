@@ -67,7 +67,7 @@ const Label = styled(Text.Bold)(
   },
 );
 
-const Dots = ({ activeStep, labels, secondary }) => {
+function Dots({ activeStep, labels, secondary }) {
   return (
     <Wrapper>
       {labels.map((label, index) => (
@@ -80,7 +80,7 @@ const Dots = ({ activeStep, labels, secondary }) => {
       ))}
     </Wrapper>
   );
-};
+}
 
 Dots.propTypes = {
   activeStep: number,
