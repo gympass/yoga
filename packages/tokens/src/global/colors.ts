@@ -49,6 +49,6 @@ const colors = {
   light,
   clear,
   white,
-};
+} as const;
 
 export default colors;

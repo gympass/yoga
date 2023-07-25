@@ -1,6 +1,6 @@
 type BreakpointType = 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl';
 
-export interface Breakpoint {
+interface Breakpoint {
   width: number;
   margin: number;
   gutter: number;
@@ -57,7 +57,7 @@ const breakpoints: Breakpoints = {
     margin: 71,
     gutter: 24,
   },
-};
+} as const;
 
 export default breakpoints;
 

@@ -58,7 +58,7 @@ interface ElevateWithLevel extends ElevateWithoutLevel {
   level: ElevateLevel;
 }
 
-function elevate(options: ElevateWithoutLevel): [string, string,string,string];
+function elevate(options: ElevateWithoutLevel): [string, string, string, string];
 function elevate(options: ElevateWithLevel): string;
 function elevate(options: ElevateWithLevel | ElevateWithoutLevel) {
   const { color = '#000', depth = 3, spread = true, fallback = true } = options;

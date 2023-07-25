@@ -1,13 +1,13 @@
-export interface Radii extends Array<number> {
-  sharp?: number;
-  xsmall?: number;
-  small?: number;
-  regular?: number;
-  circle?: number;
-}
+const radiiSizes = {
+  sharp: 0,
+  xsmall: 4,
+  small: 8,
+  regular: 16,
+  circle: 9999,
+} as const;
 
-const radii: Radii = [0, 4, 8, 16, 9999];
+const radii = {...Object.values(radiiSizes), ...radiiSizes};
 
-[radii.sharp, radii.xsmall, radii.small, radii.regular, radii.circle] = radii;
+export type Radii = Partial<typeof radii>;
 
 export default radii;

@@ -1,33 +1,20 @@
-export interface SpacingSizes extends Array<number> {
-  zero?: number;
-  xxxsmall?: number;
-  xxsmall?: number;
-  xsmall?: number;
-  small?: number;
-  medium?: number;
-  large?: number;
-  xlarge?: number;
-  xxlarge?: number;
-  xxxlarge?: number;
-  huge?: number;
-  xhuge?: number;
-}
+const spacingSizes = {
+  zero: 0,
+  xxxsmall: 4,
+  xxsmall: 8,
+  xsmall: 12,
+  small: 16,
+  medium: 20,
+  large: 24,
+  xlarge: 32,
+  xxlarge: 40,
+  xxxlarge: 56,
+  huge: 72,
+  xhuge: 80,
+} as const;
 
-const spacing: SpacingSizes = [0, 4, 8, 12, 16, 20, 24, 32, 40, 56, 72, 80];
+const spacing = {...Object.values(spacingSizes), ...spacingSizes};
 
-[
-  spacing.zero,
-  spacing.xxxsmall,
-  spacing.xxsmall,
-  spacing.xsmall,
-  spacing.small,
-  spacing.medium,
-  spacing.large,
-  spacing.xlarge,
-  spacing.xxlarge,
-  spacing.xxxlarge,
-  spacing.huge,
-  spacing.xhuge,
-] = spacing;
+export type SpacingSizes = Partial<typeof spacing>;
 
 export default spacing;

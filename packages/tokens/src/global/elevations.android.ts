@@ -1,13 +1,12 @@
-export interface ElevationsSizes extends Array<number> {
-  zero?: number;
-  small?: number;
-  medium?: number;
-  large?: number;
-}
+const elevationSizes = {
+  zero: 0,
+  small: 4,
+  medium: 8,
+  large: 12,
+} as const;
 
-const elevations: ElevationsSizes = [0, 4, 8, 12];
+const elevations = {...Object.values(elevationSizes), ...elevationSizes};
 
-[elevations.zero, elevations.small, elevations.medium, elevations.large] =
-  elevations;
+export type ElevationSizes = Partial<typeof elevations>;
 
 export default elevations;

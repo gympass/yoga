@@ -1,27 +1,17 @@
-export interface FontSizes extends Array<number> {
-  xxsmall?: number;
-  xsmall?: number;
-  small?: number;
-  medium?: number;
-  large?: number;
-  xlarge?: number;
-  xxlarge?: number;
-  xxxlarge?: number;
-  huge?: number;
-}
+const sizes = {
+  xxsmall: 10,
+  xsmall: 12,
+  small: 14,
+  medium: 16,
+  large: 20,
+  xlarge: 24,
+  xxlarge: 32,
+  xxxlarge: 40,
+  huge: 48,
+} as const;
 
-const fontSizes: FontSizes  = [10, 12, 14, 16, 20, 24, 32, 40, 48];
+const fontSizes = {...Object.values(sizes), ...sizes};
 
-[
-  fontSizes.xxsmall,
-  fontSizes.xsmall,
-  fontSizes.small,
-  fontSizes.medium,
-  fontSizes.large,
-  fontSizes.xlarge,
-  fontSizes.xxlarge,
-  fontSizes.xxxlarge,
-  fontSizes.huge,
-] = fontSizes;
+export type FontSizes = Partial<typeof fontSizes>;
 
 export default fontSizes;

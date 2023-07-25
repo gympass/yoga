@@ -1,19 +1,13 @@
-export interface FontWeights extends Array<number> {
-  light?: number;
-  regular?: number;
-  medium?: number;
-  bold?: number;
-  black?: number;
-}
+export const weights = {
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 700,
+  black: 900,
+} as const;
 
-const fontWeights: FontWeights = [300, 400, 500, 700, 900];
+const fontWeights = {...weights, ...Object.values(weights)};
 
-[
-  fontWeights.light,
-  fontWeights.regular,
-  fontWeights.medium,
-  fontWeights.bold,
-  fontWeights.black,
-] = fontWeights;
+export type FontWeights = Partial<typeof fontWeights>;
 
 export default fontWeights;
