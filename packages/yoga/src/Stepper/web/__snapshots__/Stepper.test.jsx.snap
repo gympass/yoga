@@ -400,6 +400,19 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
   background-color: #F5F5FA;
 }
 
+.c11 .c7 {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  color: #9898A6;
+}
+
+.c11 .c5 {
+  position: absolute;
+  top: -10px;
+  background-color: #9898A6;
+}
+
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;

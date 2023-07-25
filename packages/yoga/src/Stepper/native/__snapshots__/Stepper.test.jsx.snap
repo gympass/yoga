@@ -46,6 +46,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
         }
       />
       <View
+        secondary={false}
         style={
           Array [
             Object {
@@ -81,6 +82,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
       >
         <View
           active={true}
+          secondary={false}
           style={
             Array [
               Object {
@@ -95,6 +97,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
         />
         <Text
           active={true}
+          secondary={false}
           style={
             Array [
               Object {
@@ -124,6 +127,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
       >
         <View
           active={false}
+          secondary={false}
           style={
             Array [
               Object {
@@ -138,6 +142,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
         />
         <Text
           active={false}
+          secondary={false}
           style={
             Array [
               Object {
@@ -167,6 +172,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
       >
         <View
           active={false}
+          secondary={false}
           style={
             Array [
               Object {
@@ -181,6 +187,7 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
         />
         <Text
           active={false}
+          secondary={false}
           style={
             Array [
               Object {
@@ -489,6 +496,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
         }
       />
       <View
+        secondary={false}
         style={
           Array [
             Object {
@@ -524,6 +532,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
       >
         <View
           active={true}
+          secondary={false}
           style={
             Array [
               Object {
@@ -538,6 +547,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
         />
         <Text
           active={true}
+          secondary={false}
           style={
             Array [
               Object {
@@ -567,6 +577,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
       >
         <View
           active={true}
+          secondary={false}
           style={
             Array [
               Object {
@@ -581,6 +592,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
         />
         <Text
           active={true}
+          secondary={false}
           style={
             Array [
               Object {
@@ -610,6 +622,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
       >
         <View
           active={false}
+          secondary={false}
           style={
             Array [
               Object {
@@ -624,6 +637,7 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
         />
         <Text
           active={false}
+          secondary={false}
           style={
             Array [
               Object {
