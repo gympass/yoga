@@ -1,11 +1,9 @@
 import React from 'react';
-import { number, arrayOf, string } from 'prop-types';
-import styled from 'styled-components';
+import { number, arrayOf, string, bool } from 'prop-types';
+import styled, { css } from 'styled-components';
 
-import { colors } from '@gympass/yoga-tokens/src/global';
 import activeDot from '../activeDot';
 import Text from '../../Text';
-import { typeOf } from '../../shared';
 
 const Wrapper = styled.View`
   flex-direction: row;
@@ -19,61 +17,63 @@ const DotWrapper = styled.View`
 const Dot = styled.View(
   ({
     active,
-    color,
+    secondary,
     theme: {
       yoga: {
-        colors: { [color]: customColor },
         components: { stepper },
       },
     },
-  }) => `
-    width: 15px;
-    height: 15px;
+  }) => {
+    const state = secondary ? 'secondary' : 'active';
 
-    margin-top: -6px;
+    return css`
+      width: 15px;
+      height: 15px;
 
-    border-radius: ${stepper.dot.radius}px;
-    background-color: ${
-      active
-        ? customColor || stepper.dot.backgroundColor.active
-        : stepper.dot.backgroundColor.inactive
-    };
-  `,
+      margin-top: -6px;
+
+      border-radius: ${stepper.dot.radius}px;
+      background-color: ${active
+        ? stepper.dot.backgroundColor[state]
+        : stepper.dot.backgroundColor.inactive};
+    `;
+  },
 );
 
 const Label = styled(Text.Bold)(
   ({
     active,
-    color,
+    secondary,
     theme: {
       yoga: {
-        colors: { [color]: customColor },
         components: { stepper },
       },
     },
-  }) => `
-    width: 95px;
-    margin-top: 10px;
-    margin-left: -40px;
+  }) => {
+    const state = secondary ? 'secondary' : 'active';
 
-    color: ${
-      active
-        ? customColor || stepper.label.color.active
-        : stepper.label.color.inactive
-    };
+    return css`
+      width: 95px;
+      margin-top: 10px;
+      margin-left: -40px;
 
-    font-size: ${stepper.label.font.size}px;
-    text-align: center;
-  `,
+      color: ${active
+        ? stepper.label.color[state]
+        : stepper.label.color.inactive};
+
+      font-size: ${stepper.label.font.size}px;
+      text-align: center;
+    `;
+  },
 );
 
-const Dots = ({ activeStep, labels, color }) => {
+const Dots = ({ activeStep, labels, secondary }) => {
   return (
     <Wrapper>
       {labels.map((label, index) => (
         <DotWrapper key={label}>
-          <Dot active={activeDot(index, activeStep)} color={color} />
-          <Label active={activeDot(index, activeStep)} color={color}>
+          <Dot active={activeDot(index, activeStep)} secondary={secondary} />
+          <Label active={activeDot(index, activeStep)} secondary={secondary}>
             {label}
           </Label>
         </DotWrapper>
@@ -85,13 +85,13 @@ const Dots = ({ activeStep, labels, color }) => {
 Dots.propTypes = {
   activeStep: number,
   labels: arrayOf(string),
-  color: typeOf(colors),
+  secondary: bool,
 };
 
 Dots.defaultProps = {
   activeStep: 0,
   labels: [],
-  color: undefined,
+  secondary: false,
 };
 
 export default Dots;

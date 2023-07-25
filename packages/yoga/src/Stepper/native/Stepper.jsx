@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { colors } from '@gympass/yoga-tokens/src/global';
+import { bool } from 'prop-types';
 import { limitChildren, typeOf } from '../../shared';
 import Line from './Line';
 import Dots from './Dots';
@@ -26,19 +26,19 @@ const LineWrapper = styled.View(
 
 /** Stepper is responsible for the logic that drives a stepped workflow, it
 provides a wizard-like workflow by dividing content into logical steps. */
-const Stepper = ({ children, activeStep, color, ...rest }) => {
+const Stepper = ({ children, activeStep, secondary, ...rest }) => {
   return (
     <Wrapper {...rest}>
       <LineWrapper>
         <Line
           activeStep={activeStep}
           totalSteps={React.Children.count(children) - 1}
-          color={color}
+          secondary={secondary}
         />
         <Dots
           activeStep={activeStep}
           labels={React.Children.map(children, child => child.props.label)}
-          color={color}
+          secondary={secondary}
         />
       </LineWrapper>
       {React.Children.toArray(children)[activeStep]}
@@ -55,13 +55,13 @@ Stepper.propTypes = {
    * step. Starting from 0. */
   activeStep: limitChildren,
   /** Must be a color from yoga colors. */
-  color: typeOf(colors),
+  secondary: bool,
 };
 
 Stepper.defaultProps = {
   children: undefined,
   activeStep: 0,
-  color: undefined,
+  secondary: false,
 };
 
 export default Stepper;

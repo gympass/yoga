@@ -26,6 +26,26 @@ describe('<Stepper />', () => {
       expect(toJSON(container)).toMatchSnapshot();
     });
 
+    it('should match snapshot with first step active and secondary color', () => {
+      const { container, toJSON } = render(
+        <ThemeProvider>
+          <Stepper activeStep={0} secondary>
+            <Stepper.Step label="step one">
+              <Text>step one content</Text>
+            </Stepper.Step>
+            <Stepper.Step label="step two">
+              <Text>step two content</Text>
+            </Stepper.Step>
+            <Stepper.Step label="step three">
+              <Text>step three content</Text>
+            </Stepper.Step>
+          </Stepper>
+        </ThemeProvider>,
+      );
+
+      expect(toJSON(container)).toMatchSnapshot();
+    });
+
     it('should match snapshot with second step active', () => {
       const { container, toJSON } = render(
         <ThemeProvider>

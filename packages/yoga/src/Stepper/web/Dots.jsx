@@ -1,11 +1,9 @@
 import React from 'react';
-import { number, arrayOf, string } from 'prop-types';
+import { number, arrayOf, string, bool } from 'prop-types';
 import styled, { css } from 'styled-components';
 
-import { colors } from '@gympass/yoga-tokens/src/global';
 import activeDot from '../activeDot';
 import Text from '../../Text';
-import { typeOf } from '../../shared';
 
 const Dot = styled.div`
   ${({
@@ -41,38 +39,41 @@ const Label = styled(Text.Bold)`
 const DotWrapper = styled.div`
   ${({
     active,
-    color,
+    secondary,
     theme: {
       yoga: {
-        colors: { [color]: customColor },
         components: { stepper },
       },
     },
-  }) => css`
-    position: relative;
-    width: 15px;
+  }) => {
+    const state = secondary ? 'secondary' : 'active';
 
-    text-align: center;
+    return css`
+      position: relative;
+      width: 15px;
 
-    ${Label} {
-      position: absolute;
-      left: 50%;
-      top: 10px;
+      text-align: center;
 
-      color: ${active
-        ? customColor || stepper.label.color.active
-        : stepper.label.color.inactive};
-    }
+      ${Label} {
+        position: absolute;
+        left: 50%;
+        top: 10px;
 
-    ${Dot} {
-      position: absolute;
-      top: -10px;
+        color: ${active
+          ? stepper.label.color[state]
+          : stepper.label.color.inactive};
+      }
 
-      background-color: ${active
-        ? customColor || stepper.dot.backgroundColor.active
-        : stepper.dot.backgroundColor.inactive};
-    }
-  `}
+      ${Dot} {
+        position: absolute;
+        top: -10px;
+
+        background-color: ${active
+          ? stepper.dot.backgroundColor[state]
+          : stepper.dot.backgroundColor.inactive};
+      }
+    `;
+  }}
 `;
 
 const Wrapper = styled.div`
@@ -80,13 +81,13 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Dots = ({ activeStep, labels, color }) => {
+const Dots = ({ activeStep, labels, secondary }) => {
   return (
     <Wrapper>
       {labels.map((label, index) => (
         <DotWrapper
           active={activeDot(index, activeStep)}
-          color={color}
+          secondary={secondary}
           key={label}
         >
           <Dot />
@@ -100,13 +101,13 @@ const Dots = ({ activeStep, labels, color }) => {
 Dots.propTypes = {
   activeStep: number,
   labels: arrayOf(string),
-  color: typeOf(colors),
+  secondary: bool,
 };
 
 Dots.defaultProps = {
   activeStep: 0,
   labels: [],
-  color: undefined,
+  secondary: false,
 };
 
 export default Dots;
