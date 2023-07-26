@@ -43,7 +43,7 @@ const Dot = styled.View(
 const Label = styled(Text.Bold)(
   ({
     active,
-    secondary,
+  secondary,
     theme: {
       yoga: {
         components: { stepper },
