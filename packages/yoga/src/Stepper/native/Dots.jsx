@@ -49,7 +49,7 @@ const Label = styled(Text.Bold)(
         components: { stepper },
       },
     },
-  }) => {
+}) => {
     const state = secondary ? 'secondary' : 'active';
 
     return css`
