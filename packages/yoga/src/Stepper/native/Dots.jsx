@@ -52,7 +52,7 @@ const Label = styled(Text.Bold)(
 }) => {
   const state = secondary ? 'secondary' : 'active';
 
-    return css`
+  return css`
     width: 95px;
     margin-top: 10px;
       margin-left: -40px;
