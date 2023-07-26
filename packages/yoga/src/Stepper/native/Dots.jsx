@@ -58,7 +58,7 @@ const Label = styled(Text.Bold)(
       margin-left: -40px;
 
     color: ${active
-        ? stepper.label.color[state]
+      ? stepper.label.color[state]
       : stepper.label.color.inactive};
 
       font-size: ${stepper.label.font.size}px;
