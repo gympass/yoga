@@ -43,24 +43,23 @@ const Dot = styled.View(
 const Label = styled(Text.Bold)(
   ({
     active,
-  secondary,
+    secondary,
     theme: {
       yoga: {
         components: { stepper },
       },
     },
-}) => {
+  }) => {
+
   const state = secondary ? 'secondary' : 'active';
 
   return css`
     width: 95px;
     margin-top: 10px;
     margin-left: -40px;
-
-      color: ${active
+    color: ${active
       ? stepper.label.color[state]
       : stepper.label.color.inactive};
-
     font-size: ${stepper.label.font.size}px;
     text-align: center;
   `;
