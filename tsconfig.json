@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "@gympass/yoga-common/*": ["./packages/common/src/*"],
+      "@gympass/yoga-common": ["./packages/common/src"],
+      "@gympass/yoga-tokens/*": ["./packages/tokens/src/*"],
+      "@gympass/yoga-tokens": ["./packages/tokens/src"]
+    },
+    "declaration": true,
+    "outDir": "./dist/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "sourceMap": false
+  }
+}

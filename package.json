@@ -66,6 +66,7 @@
     "metro-react-native-babel-preset": "^0.67.0",
     "prettier": "2.6.2",
     "react-native": "0.68.1",
+    "tsup": "^7.1.0",
     "yargs": "^15.1.0"
   },
   "workspaces": {

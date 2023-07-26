@@ -24,9 +24,6 @@ const tokens = {
   transition,
 };
 
-/**
- * @namespace @gympass/yoga-tokens
- */
 export {
   tokens as default,
   borders,

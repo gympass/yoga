@@ -6,9 +6,9 @@ module.exports = {
     '<rootDir>/jest/config/web.js',
   ],
   collectCoverageFrom: [
-    '<rootDir>/packages/**/*.{js,jsx}',
-    '!<rootDir>/packages/**/index.{js,native.js}',
-    '!<rootDir>/packages/**/*.test.{js,jsx}',
+    '<rootDir>/packages/**/*.{js,jsx,ts,tsx}',
+    '!<rootDir>/packages/**/index.{js,native.js,ts}',
+    '!<rootDir>/packages/**/*.test.{js,jsx,ts,tsx}',
     '!<rootDir>/packages/**/babel.config.js',
     '!<rootDir>/**/node_modules/**',
     '!<rootDir>/packages/labnative/**',
