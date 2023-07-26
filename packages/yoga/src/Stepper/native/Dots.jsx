@@ -63,7 +63,7 @@ const Label = styled(Text.Bold)(
 
       font-size: ${stepper.label.font.size}px;
       text-align: center;
-    `;
+  `;
   },
 );
 
