@@ -59,7 +59,7 @@ const Label = styled(Text.Bold)(
 
     color: ${active
         ? stepper.label.color[state]
-        : stepper.label.color.inactive};
+      : stepper.label.color.inactive};
 
       font-size: ${stepper.label.font.size}px;
       text-align: center;
