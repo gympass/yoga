@@ -55,7 +55,7 @@ const Label = styled(Text.Bold)(
   return css`
     width: 95px;
     margin-top: 10px;
-      margin-left: -40px;
+    margin-left: -40px;
 
     color: ${active
       ? stepper.label.color[state]
