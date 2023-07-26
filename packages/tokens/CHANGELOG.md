@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.1.5...@gympass/yoga-tokens@3.2.0) (2023-07-26)
+
+
+### Features
+
+* **tokens:** add typescript ([95484bb](https://github.com/Gympass/yoga/commit/95484bb5feb028e8bbf506ec2420dfab7e31dda3))
+* **tokens:** add typings ([753f348](https://github.com/Gympass/yoga/commit/753f348bd87edc3a09d8da8f45dbeee1e9327c2e))
+
+
+### Reverts
+
+* Revert "refactor: improve tokens exports" ([8676516](https://github.com/Gympass/yoga/commit/8676516cf7c5debde86da8b78ea30b22efb6c7a4))
+* Revert "wip" ([549a0e1](https://github.com/Gympass/yoga/commit/549a0e18730932c97972d281d844556fee1e17ca))
+
+
+
+
+
 ## [3.1.5](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.1.4...@gympass/yoga-tokens@3.1.5) (2022-11-22)
 
 **Note:** Version bump only for package @gympass/yoga-tokens

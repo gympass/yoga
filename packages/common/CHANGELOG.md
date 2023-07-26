@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-common@1.1.2...@gympass/yoga-common@1.2.0) (2023-07-26)
+
+
+### Features
+
+* **common:** add typings ([0e87719](https://github.com/Gympass/yoga/commit/0e87719ea4ca23aa5974b12a5080188014a12697))
+
+
+
+
+
 ## [1.1.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-common@1.1.1...@gympass/yoga-common@1.1.2) (2022-11-22)
 
 **Note:** Version bump only for package @gympass/yoga-common
