@@ -42,14 +42,14 @@ const Dot = styled.View(
 
 const Label = styled(Text.Bold)(
   ({
-  active,
-  secondary,
-  theme: {
-    yoga: {
-      components: { stepper },
+    active,
+    secondary,
+    theme: {
+      yoga: {
+        components: { stepper },
+      },
     },
-  },
-}) => {
+  }) => {
 
     const state = secondary ? 'secondary' : 'active';
 
