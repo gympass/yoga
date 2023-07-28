@@ -1,5 +1,5 @@
 import React from 'react';
-import { number, arrayOf, string } from 'prop-types';
+import { number, arrayOf, string, bool } from 'prop-types';
 import styled, { css } from 'styled-components';
 
 import activeDot from '../activeDot';
@@ -39,36 +39,41 @@ const Label = styled(Text.Bold)`
 const DotWrapper = styled.div`
   ${({
     active,
+    secondary,
     theme: {
       yoga: {
         components: { stepper },
       },
     },
-  }) => css`
-    position: relative;
-    width: 15px;
+  }) => {
+    const state = secondary ? 'secondary' : 'active';
 
-    text-align: center;
+    return css`
+      position: relative;
+      width: 15px;
 
-    ${Label} {
-      position: absolute;
-      left: 50%;
-      top: 10px;
+      text-align: center;
 
-      color: ${active
-        ? stepper.label.color.active
-        : stepper.label.color.inactive};
-    }
+      ${Label} {
+        position: absolute;
+        left: 50%;
+        top: 10px;
 
-    ${Dot} {
-      position: absolute;
-      top: -10px;
+        color: ${active
+          ? stepper.label.color[state]
+          : stepper.label.color.inactive};
+      }
 
-      background-color: ${active
-        ? stepper.dot.backgroundColor.active
-        : stepper.dot.backgroundColor.inactive};
-    }
-  `}
+      ${Dot} {
+        position: absolute;
+        top: -10px;
+
+        background-color: ${active
+          ? stepper.dot.backgroundColor[state]
+          : stepper.dot.backgroundColor.inactive};
+      }
+    `;
+  }}
 `;
 
 const Wrapper = styled.div`
@@ -76,25 +81,33 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Dots = ({ activeStep, labels }) => (
-  <Wrapper>
-    {labels.map((label, index) => (
-      <DotWrapper active={activeDot(index, activeStep)} key={label}>
-        <Dot />
-        <Label as="span">{label}</Label>
-      </DotWrapper>
-    ))}
-  </Wrapper>
-);
+function Dots({ activeStep, labels, secondary }) {
+  return (
+    <Wrapper>
+      {labels.map((label, index) => (
+        <DotWrapper
+          active={activeDot(index, activeStep)}
+          secondary={secondary}
+          key={label}
+        >
+          <Dot />
+          <Label as="span">{label}</Label>
+        </DotWrapper>
+      ))}
+    </Wrapper>
+  );
+}
 
 Dots.propTypes = {
   activeStep: number,
   labels: arrayOf(string),
+  secondary: bool,
 };
 
 Dots.defaultProps = {
   activeStep: 0,
   labels: [],
+  secondary: false,
 };
 
 export default Dots;
