@@ -39,7 +39,8 @@ exports[`<Banner /> should match snapshot 1`] = `
   >
     <Text
       flex={1}
-      marginVertical="xxsmall"
+      marginBottom="xxsmall"
+      marginTop="xxsmall"
       style={
         [
           {
@@ -102,7 +103,8 @@ exports[`<Banner /> should match snapshot with button 1`] = `
   >
     <Text
       flex={1}
-      marginVertical="xxsmall"
+      marginBottom="xxsmall"
+      marginTop="xxsmall"
       style={
         [
           {
@@ -225,7 +227,8 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
     >
       <Text
         flex={1}
-        marginVertical="xxsmall"
+        marginBottom="xxsmall"
+        marginTop="xxsmall"
         style={
           [
             {
@@ -285,7 +288,8 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
     >
       <Text
         flex={1}
-        marginVertical="xxsmall"
+        marginBottom="xxsmall"
+        marginTop="xxsmall"
         style={
           [
             {
@@ -345,7 +349,8 @@ exports[`<Banner /> should match snapshot with custom variant 1`] = `
     >
       <Text
         flex={1}
-        marginVertical="xxsmall"
+        marginBottom="xxsmall"
+        marginTop="xxsmall"
         style={
           [
             {
@@ -487,7 +492,8 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
     </RNSVGSvgView>
     <Text
       flex={1}
-      marginVertical="xxsmall"
+      marginBottom="xxsmall"
+      marginTop="xxsmall"
       style={
         [
           {
@@ -550,7 +556,8 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
   >
     <Text
       flex={1}
-      marginVertical="xxsmall"
+      marginBottom="xxsmall"
+      marginTop="xxsmall"
       style={
         [
           {

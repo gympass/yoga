@@ -163,7 +163,8 @@ const Snackbar = forwardRef((props, ref) => {
         <Text
           flex={1}
           fontSize="small"
-          marginVertical="xxxsmall"
+          marginTop="xxxsmall"
+          marginBottom="xxxsmall"
           numberOfLines={2}
         >
           {currentProps.message}

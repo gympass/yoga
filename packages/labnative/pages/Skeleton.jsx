@@ -11,7 +11,7 @@ function SkeletonPage() {
         justifyContent: 'center',
         width: '100%',
         height: '100%',
-        gap: '16px',
+        gap: 16,
       }}
     >
       <Skeleton

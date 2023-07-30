@@ -198,7 +198,8 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
           fontSize="small"
           inverted={false}
           light={false}
-          marginVertical="xxxsmall"
+          marginBottom="xxxsmall"
+          marginTop="xxxsmall"
           numberOfLines={2}
           style={
             [
@@ -404,7 +405,8 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
           fontSize="small"
           inverted={false}
           light={false}
-          marginVertical="xxxsmall"
+          marginBottom="xxxsmall"
+          marginTop="xxxsmall"
           numberOfLines={2}
           style={
             [
@@ -629,7 +631,8 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
           fontSize="small"
           inverted={false}
           light={false}
-          marginVertical="xxxsmall"
+          marginBottom="xxxsmall"
+          marginTop="xxxsmall"
           numberOfLines={2}
           style={
             [
@@ -835,7 +838,8 @@ exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
           fontSize="small"
           inverted={false}
           light={false}
-          marginVertical="xxxsmall"
+          marginBottom="xxxsmall"
+          marginTop="xxxsmall"
           numberOfLines={2}
           style={
             [
