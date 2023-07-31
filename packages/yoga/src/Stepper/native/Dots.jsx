@@ -29,7 +29,6 @@ const Dot = styled.View(
     return css`
       width: 15px;
       height: 15px;
-
       margin-top: -6px;
 
       border-radius: ${stepper.dot.radius}px;
