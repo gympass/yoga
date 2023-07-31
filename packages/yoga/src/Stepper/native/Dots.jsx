@@ -1,9 +1,9 @@
+import { arrayOf, bool, number, string } from 'prop-types';
 import React from 'react';
-import { number, arrayOf, string, bool } from 'prop-types';
 import styled, { css } from 'styled-components';
 
-import activeDot from '../activeDot';
 import Text from '../../Text';
+import activeDot from '../activeDot';
 
 const Wrapper = styled.View`
   flex-direction: row;
