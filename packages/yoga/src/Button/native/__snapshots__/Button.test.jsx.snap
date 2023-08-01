@@ -233,6 +233,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
 >
   <View
     accessibilityRole="button"
+    accessible={true}
     disabled={true}
     inverted={false}
     pressed={false}
@@ -1168,6 +1169,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 >
   <View
     accessibilityRole="button"
+    accessible={true}
     disabled={false}
     inverted={true}
     pressed={false}
@@ -1465,6 +1467,7 @@ exports[`<Button /> Snapshots primary buttons With large prop should match snaps
 >
   <View
     accessibilityRole="button"
+    accessible={true}
     disabled={false}
     inverted={false}
     large={true}
@@ -2965,6 +2968,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
 >
   <View
     accessibilityRole="button"
+    accessible={true}
     disabled={false}
     inverted={true}
     pressed={false}
@@ -3264,6 +3268,7 @@ exports[`<Button /> Snapshots secondary buttons With large prop should match sna
 >
   <View
     accessibilityRole="button"
+    accessible={true}
     disabled={false}
     inverted={false}
     large={true}
@@ -3966,6 +3971,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
 >
   <View
     accessibilityRole="button"
+    accessible={true}
     disabled={false}
     inverted={false}
     pressed={false}

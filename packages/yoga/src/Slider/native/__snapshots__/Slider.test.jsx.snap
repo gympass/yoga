@@ -319,6 +319,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
             />
             <View
               accessibilityRole="adjustable"
+              accessible={true}
               as={
                 {
                   "$$typeof": Symbol(react.forward_ref),
@@ -530,6 +531,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with Slider 
             />
             <View
               accessibilityRole="adjustable"
+              accessible={true}
               as={
                 {
                   "$$typeof": Symbol(react.forward_ref),
@@ -770,6 +772,7 @@ exports[`<Slider /> Snapshots With one marker should match snapshot with default
             />
             <View
               accessibilityRole="adjustable"
+              accessible={true}
               as={
                 {
                   "$$typeof": Symbol(react.forward_ref),
@@ -1013,6 +1016,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
             />
             <View
               accessibilityRole="adjustable"
+              accessible={true}
               as={
                 {
                   "$$typeof": Symbol(react.forward_ref),
@@ -1142,6 +1146,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot 1`] = `
             />
             <View
               accessibilityRole="adjustable"
+              accessible={true}
               as={
                 {
                   "$$typeof": Symbol(react.forward_ref),
@@ -1539,6 +1544,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
             />
             <View
               accessibilityRole="adjustable"
+              accessible={true}
               as={
                 {
                   "$$typeof": Symbol(react.forward_ref),
@@ -1668,6 +1674,7 @@ exports[`<Slider /> Snapshots With two markers should match snapshot with Slider
             />
             <View
               accessibilityRole="adjustable"
+              accessible={true}
               as={
                 {
                   "$$typeof": Symbol(react.forward_ref),
@@ -2019,6 +2026,7 @@ exports[`<Slider /> Tooltip should render tooltip 1`] = `
             />
             <View
               accessibilityRole="adjustable"
+              accessible={true}
               as={
                 {
                   "$$typeof": Symbol(react.forward_ref),
@@ -2370,6 +2378,7 @@ exports[`<Slider /> Tooltip should render tooltip on a specific step 1`] = `
             />
             <View
               accessibilityRole="adjustable"
+              accessible={true}
               as={
                 {
                   "$$typeof": Symbol(react.forward_ref),
