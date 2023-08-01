@@ -9,38 +9,38 @@ describe('<RadioGroup />', () => {
   describe('<RadioGroup.Radio />', () => {
     describe('Snapshots', () => {
       it('should match snapshot with default radio', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <RadioGroup.Radio />
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
 
       it('should match snapshot with disabled radio', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <RadioGroup.Radio disabled />
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
 
       it('should match snapshot with default radio', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <RadioGroup.Radio />
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
 
       it('should match snapshot with default radio pressed', () => {
         const onChangeMock = jest.fn();
-        const { container, getByTestId, toJSON } = render(
+        const { root, getByTestId, toJSON } = render(
           <RadioGroupContext.Provider value={{ onChange: onChangeMock }}>
             <ThemeProvider>
               <RadioGroup.Radio testID="radio" />
@@ -52,7 +52,7 @@ describe('<RadioGroup />', () => {
 
         fireEvent.press(radio);
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
     });
 

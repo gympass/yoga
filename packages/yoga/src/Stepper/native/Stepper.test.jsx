@@ -7,7 +7,7 @@ import Stepper from '..';
 describe('<Stepper />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with first step active', () => {
-      const { container, toJSON } = render(
+      const { root, toJSON } = render(
         <ThemeProvider>
           <Stepper activeStep={0}>
             <Stepper.Step label="step one">
@@ -23,11 +23,11 @@ describe('<Stepper />', () => {
         </ThemeProvider>,
       );
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON(root)).toMatchSnapshot();
     });
 
     it('should match snapshot with second step active', () => {
-      const { container, toJSON } = render(
+      const { root, toJSON } = render(
         <ThemeProvider>
           <Stepper activeStep={1}>
             <Stepper.Step label="step one">
@@ -43,7 +43,7 @@ describe('<Stepper />', () => {
         </ThemeProvider>,
       );
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON(root)).toMatchSnapshot();
     });
   });
 

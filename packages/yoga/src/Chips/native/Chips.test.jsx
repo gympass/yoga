@@ -7,27 +7,27 @@ import { ThemeProvider, Chips } from '../..';
 describe('<Chips />', () => {
   describe('Snapshots', () => {
     it('should match snapshot', () => {
-      const { container, toJSON } = render(
+      const { root, toJSON } = render(
         <ThemeProvider>
           <Chips>Classes</Chips>
         </ThemeProvider>,
       );
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON(root)).toMatchSnapshot();
     });
 
     it('should match snapshot with disabled prop', () => {
-      const { container, toJSON } = render(
+      const { root, toJSON } = render(
         <ThemeProvider>
           <Chips disabled>Classes</Chips>
         </ThemeProvider>,
       );
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON(root)).toMatchSnapshot();
     });
 
     it('should match snapshot with more than one Chip', () => {
-      const { container, toJSON } = render(
+      const { root, toJSON } = render(
         <ThemeProvider>
           <Chips>Classes</Chips>
           <Chips>Gyms and studios</Chips>
@@ -35,32 +35,32 @@ describe('<Chips />', () => {
         </ThemeProvider>,
       );
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON(root)).toMatchSnapshot();
     });
 
     it('should match snapshot with a long text', () => {
-      const { container, toJSON } = render(
+      const { root, toJSON } = render(
         <ThemeProvider>
           <Chips>Classes with a very long text</Chips>
         </ThemeProvider>,
       );
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON(root)).toMatchSnapshot();
     });
 
     describe('selected', () => {
       it('should match snapshot', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <Chips selected>Classes</Chips>
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
 
       it('should match snapshot with more than one Chip', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <Chips>Classes</Chips>
             <Chips selected>Gyms and studios</Chips>
@@ -68,23 +68,23 @@ describe('<Chips />', () => {
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
     });
 
     describe('counter', () => {
       it('should match snapshot', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <Chips counter={8}>Classes</Chips>
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
 
       it('should match snapshot with more than one Chip', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <Chips counter={8}>Classes</Chips>
             <Chips counter={52} selected>
@@ -96,13 +96,13 @@ describe('<Chips />', () => {
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
     });
 
     describe('icon', () => {
       it('should match selected snapshot', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <Chips counter={8} icon={[MapPin]}>
               Location
@@ -127,7 +127,7 @@ describe('<Chips />', () => {
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
     });
   });

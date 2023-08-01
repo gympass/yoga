@@ -7,7 +7,7 @@ import ThemeProvider from '../../Theme';
 describe('<RadioGroup />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with radio button as children', () => {
-      const { container, getAllByText, toJSON } = render(
+      const { root, getAllByText, toJSON } = render(
         <ThemeProvider>
           <RadioGroup>
             <RadioGroup.Button>Option 1</RadioGroup.Button>
@@ -17,12 +17,12 @@ describe('<RadioGroup />', () => {
         </ThemeProvider>,
       );
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON(root)).toMatchSnapshot();
       expect(getAllByText(/^Option/)).toHaveLength(3);
     });
 
     it('should match snapshot with small radios', () => {
-      const { container, toJSON } = render(
+      const { root, toJSON } = render(
         <ThemeProvider>
           <RadioGroup small>
             <RadioGroup.Button>Option 1</RadioGroup.Button>
@@ -32,7 +32,7 @@ describe('<RadioGroup />', () => {
         </ThemeProvider>,
       );
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON(root)).toMatchSnapshot();
     });
 
     it('should has setted the selected value', () => {
