@@ -55,13 +55,13 @@
   "devDependencies": {
     "@react-native-community/eslint-config": "^3.0.1",
     "babel-plugin-inline-react-svg": "^1.1.1",
-    "react-native": "0.72.0",
+    "react-native": "0.72.3",
     "styled-components": "^4.4.0"
   },
   "peerDependencies": {
     "@react-native-picker/picker": "^2.4.9",
     "react": ">=16",
-    "react-native": "0.72.0",
+    "react-native": "0.72.3",
     "styled-components": "^4.4.0"
   }
 }
