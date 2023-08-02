@@ -3,6 +3,15 @@
 exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
 [
   <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -221,6 +230,15 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
           Lorem Ipsum is simply dummy text of the printing and types.
         </Text>
         <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
           accessible={true}
           focusable={true}
           onClick={[Function]}
@@ -288,6 +306,15 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
 exports[`<Snackbar /> should match snapshot when have a variant informative or attention prop 1`] = `
 [
   <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -436,6 +463,15 @@ exports[`<Snackbar /> should match snapshot when have a variant informative or a
 exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
 [
   <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}
@@ -654,6 +690,15 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
           Feedback Message
         </Text>
         <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
           accessible={true}
           focusable={true}
           onClick={[Function]}
@@ -721,6 +766,15 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
 exports[`<Snackbar /> should match snapshot when snackbar is default 1`] = `
 [
   <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     focusable={true}
     onClick={[Function]}

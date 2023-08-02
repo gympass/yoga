@@ -18,6 +18,15 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard active
   }
 >
   <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     active={true}
     bRadius={8}
@@ -185,6 +194,15 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with d
   }
 >
   <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     active={false}
     bRadius={8}
@@ -354,6 +372,15 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
   }
 >
   <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     active={false}
     bRadius={8}
@@ -515,6 +542,15 @@ exports[`<EventCard /> Snapshots should match snapshot of small EventCard with e
   }
 >
   <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     active={false}
     bRadius={8}
@@ -682,6 +718,15 @@ exports[`<EventCard /> Snapshots should match snapshot with full EventCard 1`] =
   }
 >
   <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     active={false}
     bRadius={8}

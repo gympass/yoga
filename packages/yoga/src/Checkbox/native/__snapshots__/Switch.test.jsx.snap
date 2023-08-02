@@ -2,6 +2,15 @@
 
 exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with checked switch 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -68,6 +77,15 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with c
 
 exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with default switch 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={false}
   onClick={[Function]}
@@ -136,7 +154,11 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 <View
   accessibilityState={
     {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
     }
   }
   accessible={true}
@@ -207,7 +229,11 @@ exports[`<Checkbox /> <Checkbox.Switch /> Snapshots should match snapshot with d
 <View
   accessibilityState={
     {
+      "busy": undefined,
+      "checked": undefined,
       "disabled": true,
+      "expanded": undefined,
+      "selected": undefined,
     }
   }
   accessible={true}

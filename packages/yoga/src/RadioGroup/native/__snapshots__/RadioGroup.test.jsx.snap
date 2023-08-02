@@ -15,6 +15,15 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
     }
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       checked={false}
       focusable={true}
@@ -56,6 +65,15 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
       </Text>
     </View>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       checked={true}
       focusable={true}
@@ -98,6 +116,15 @@ exports[`<RadioGroup /> Snapshots should has setted the selected value 1`] = `
       </Text>
     </View>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       checked={false}
       focusable={true}
@@ -157,6 +184,15 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
     }
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       checked={false}
       focusable={true}
@@ -198,6 +234,15 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
       </Text>
     </View>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       checked={false}
       focusable={true}
@@ -239,6 +284,15 @@ exports[`<RadioGroup /> Snapshots should match snapshot with radio button as chi
       </Text>
     </View>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       checked={false}
       focusable={true}
@@ -298,6 +352,15 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
     }
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       checked={false}
       focusable={true}
@@ -339,6 +402,15 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
       </Text>
     </View>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       checked={false}
       focusable={true}
@@ -380,6 +452,15 @@ exports[`<RadioGroup /> Snapshots should match snapshot with small radios 1`] = 
       </Text>
     </View>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       checked={false}
       focusable={true}

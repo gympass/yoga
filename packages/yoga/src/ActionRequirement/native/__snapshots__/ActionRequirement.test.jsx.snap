@@ -463,7 +463,11 @@ exports[`<ActionRequirement /> should match snapshot 1`] = `
         <View
           accessibilityState={
             {
+              "busy": undefined,
+              "checked": undefined,
               "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
             }
           }
           accessible={true}

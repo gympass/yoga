@@ -942,6 +942,15 @@ exports[`<Result /> should match snapshot 1`] = `
       </View>
     </RCTScrollView>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       focusable={false}
       onClick={[Function]}
@@ -2356,6 +2365,15 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       </View>
     </RCTScrollView>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       focusable={false}
       onClick={[Function]}

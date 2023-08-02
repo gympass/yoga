@@ -3,6 +3,15 @@
 exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -137,6 +146,15 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
 exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -271,6 +289,15 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
 exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -405,6 +432,15 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
 exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}
@@ -553,6 +589,15 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
 exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   focusable={true}
   onClick={[Function]}

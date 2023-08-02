@@ -2,6 +2,15 @@
 
 exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot with default radio button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   checked={false}
   focusable={true}
@@ -45,6 +54,15 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
 
 exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot with small radio button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   checked={false}
   focusable={true}

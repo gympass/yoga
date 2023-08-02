@@ -5,7 +5,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with checked checkbox 1`] 
   <View
     accessibilityState={
       {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
       }
     }
     accessible={true}
@@ -181,7 +185,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with default checkbox 1`] 
   <View
     accessibilityState={
       {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
       }
     }
     accessible={true}
@@ -284,7 +292,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled and checked 
   <View
     accessibilityState={
       {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": true,
+        "expanded": undefined,
+        "selected": undefined,
       }
     }
     accessible={true}
@@ -460,7 +472,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with disabled checkbox 1`]
   <View
     accessibilityState={
       {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": true,
+        "expanded": undefined,
+        "selected": undefined,
       }
     }
     accessible={true}
@@ -563,7 +579,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with error and checked che
   <View
     accessibilityState={
       {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
       }
     }
     accessible={true}
@@ -741,7 +761,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with error checkbox 1`] = 
   <View
     accessibilityState={
       {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
       }
     }
     accessible={true}
@@ -846,7 +870,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted 1`] = `
   <View
     accessibilityState={
       {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
       }
     }
     accessible={true}
@@ -949,7 +977,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
   <View
     accessibilityState={
       {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
       }
     }
     accessible={true}
@@ -1125,7 +1157,11 @@ exports[`<Checkbox /> Snapshots should match snapshot with inverted and checked 
   <View
     accessibilityState={
       {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": true,
+        "expanded": undefined,
+        "selected": undefined,
       }
     }
     accessible={true}
@@ -1301,7 +1337,11 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 1`] = `
   <View
     accessibilityState={
       {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
       }
     }
     accessible={true}
@@ -1365,7 +1405,11 @@ exports[`<Checkbox /> Snapshots should match snapshot without label 2`] = `
   <View
     accessibilityState={
       {
+        "busy": undefined,
+        "checked": undefined,
         "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
       }
     }
     accessible={true}

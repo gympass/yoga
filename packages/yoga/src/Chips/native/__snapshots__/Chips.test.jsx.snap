@@ -3,6 +3,15 @@
 exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   disabled={false}
   focusable={false}
@@ -69,6 +78,15 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
 [
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -131,6 +149,15 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -217,6 +244,15 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -308,6 +344,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 [
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -370,6 +415,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -432,6 +486,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -494,6 +557,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -556,6 +628,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -642,6 +723,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -728,6 +818,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -787,6 +886,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -850,6 +958,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   disabled={false}
   focusable={false}
@@ -913,6 +1030,15 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 [
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -975,6 +1101,15 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1034,6 +1169,15 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1097,6 +1241,15 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 exports[`<Chips /> Snapshots should match snapshot 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   disabled={false}
   focusable={false}
@@ -1162,6 +1315,15 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
 exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   disabled={false}
   focusable={false}
@@ -1227,6 +1389,15 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
 exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   disabled={true}
   focusable={false}
@@ -1294,6 +1465,15 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
 [
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1356,6 +1536,15 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1418,6 +1607,15 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}

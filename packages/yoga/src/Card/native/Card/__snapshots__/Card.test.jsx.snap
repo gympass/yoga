@@ -78,6 +78,15 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
       }
     >
       <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
         accessible={true}
         focusable={false}
         onClick={[Function]}
