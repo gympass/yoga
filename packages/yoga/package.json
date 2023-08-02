@@ -53,15 +53,15 @@
     "react-phone-input-2": "^2.15.1"
   },
   "devDependencies": {
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/react-native": "^12.1.3",
+    "@react-native-community/eslint-config": "^3.0.1",
     "babel-plugin-inline-react-svg": "^1.1.1",
-    "styled-components": "^4.4.0",
-    "react-dom": "^18.0.0"
+    "react-native": "0.72.0",
+    "styled-components": "^4.4.0"
   },
   "peerDependencies": {
     "@react-native-picker/picker": "^2.4.9",
     "react": ">=16",
+    "react-native": "0.72.0",
     "styled-components": "^4.4.0"
   }
 }
