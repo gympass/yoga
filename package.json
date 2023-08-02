@@ -56,7 +56,6 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "4.0.0",
-    "deprecated-react-native-prop-types": "^2.3.0",
     "fs-extra": "^8.1.0",
     "git-last-commit": "^1.0.0",
     "husky": "3.0.5",
