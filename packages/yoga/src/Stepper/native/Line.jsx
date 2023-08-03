@@ -1,5 +1,5 @@
 import React from 'react';
-import { number } from 'prop-types';
+import { bool, number } from 'prop-types';
 import styled from 'styled-components';
 
 const Wrapper = styled.View`
@@ -27,6 +27,7 @@ const InactiveLine = styled.View(
 const ActiveLine = styled.View(
   ({
     width,
+    secondary,
     theme: {
       yoga: {
         components: { stepper },
@@ -36,27 +37,38 @@ const ActiveLine = styled.View(
     position: absolute;
     top: 0;
 
-    background-color: ${stepper.line.backgroundColor.active};
+    background-color: ${
+      secondary
+        ? stepper.line.backgroundColor.secondary
+        : stepper.line.backgroundColor.active
+    };
     width: ${width}%;
     height: 4px;
 `,
 );
 
-const Line = ({ activeStep, totalSteps }) => (
-  <Wrapper>
-    <InactiveLine />
-    <ActiveLine width={activeStep <= 0 ? 0 : (activeStep / totalSteps) * 100} />
-  </Wrapper>
-);
+function Line({ activeStep, totalSteps, secondary }) {
+  return (
+    <Wrapper>
+      <InactiveLine />
+      <ActiveLine
+        width={activeStep <= 0 ? 0 : (activeStep / totalSteps) * 100}
+        secondary={secondary}
+      />
+    </Wrapper>
+  );
+}
 
 Line.propTypes = {
   activeStep: number,
   totalSteps: number,
+  secondary: bool,
 };
 
 Line.defaultProps = {
   activeStep: 0,
   totalSteps: 0,
+  secondary: false,
 };
 
 export default Line;

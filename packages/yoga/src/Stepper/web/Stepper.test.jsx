@@ -19,6 +19,20 @@ describe('<Stepper />', () => {
       expect(container).toMatchSnapshot();
     });
 
+    it('should match snapshot with first step active and color secondary', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Stepper activeStep={0} secondary>
+            <Stepper.Step label="step one">step one content</Stepper.Step>
+            <Stepper.Step label="step two">step two content</Stepper.Step>
+            <Stepper.Step label="step three">step three content</Stepper.Step>
+          </Stepper>
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
+
     it('should match snapshot with second step active', () => {
       const { container } = render(
         <ThemeProvider>
