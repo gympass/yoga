@@ -54,7 +54,7 @@ Stepper.propTypes = {
   /** Controls the active step, it receive the index value for showing some
    * step. Starting from 0. */
   activeStep: limitChildren,
-  /** Must be a color from yoga colors. */
+  /** Use secondary color */
   secondary: bool,
 };
 
