@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.78.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.77.1...@gympass/yoga@7.78.0) (2023-08-03)
+
+
+### Features
+
+* **stepper:** add prop for receive a secondary option color ([68f9039](https://github.com/Gympass/yoga/commit/68f90393eb7b026875808fe408bb495219734e80))
+* **stepper:** change color for stepper ([959c939](https://github.com/Gympass/yoga/commit/959c939e1a849661136838438ba5414982b7b033))
+
+
+
+
+
 ## [7.77.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.77.0...@gympass/yoga@7.77.1) (2023-07-26)
 
 **Note:** Version bump only for package @gympass/yoga
