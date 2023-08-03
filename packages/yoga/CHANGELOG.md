@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.78.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.78.0...@gympass/yoga@7.78.1) (2023-08-03)
+
+
+### Bug Fixes
+
+* **avatar.jsx:** updates the Image prop types consumption in the native component ([f69d6d4](https://github.com/Gympass/yoga/commit/f69d6d45e56b6b525b7790a190fc081ffa61a5d9))
+* fixes YGValue-related js errors ([33d7b77](https://github.com/Gympass/yoga/commit/33d7b77b3a37a5d19f58658e1752f6a6b721917a))
+
+
+
+
+
 # [7.78.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.77.1...@gympass/yoga@7.78.0) (2023-08-03)
 
 

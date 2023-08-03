@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.71](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.70...@gympass/yoga-labnative@2.2.71) (2023-08-03)
+
+
+### Bug Fixes
+
+* bumps the rn-reanimated version to match android build needs ([4bbde50](https://github.com/gympass/yoga/commit/4bbde500cc854067a0cbd65f09324a5ae9268cf7))
+* fixes YGValue-related js errors ([33d7b77](https://github.com/gympass/yoga/commit/33d7b77b3a37a5d19f58658e1752f6a6b721917a))
+
+
+
+
+
 ## [2.2.70](https://github.com/gympass/yoga/compare/@gympass/yoga-labnative@2.2.69...@gympass/yoga-labnative@2.2.70) (2023-08-03)
 
 **Note:** Version bump only for package @gympass/yoga-labnative
