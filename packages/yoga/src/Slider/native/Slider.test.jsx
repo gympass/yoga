@@ -7,54 +7,54 @@ describe('<Slider />', () => {
   describe('Snapshots', () => {
     describe('With one marker', () => {
       it('should match snapshot with default Slider', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <Slider />
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
 
       it('should match snapshot with Slider with labels', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <Slider minLabel={0} maxLabel={10} />
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
 
       it('should match snapshot with Slider snapped', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <Slider snapped />
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
     });
     describe('With two markers', () => {
       it('should match snapshot', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <Slider values={[3, 7]} />
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
 
       it('should match snapshot with Slider snapped', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <Slider values={[3, 7]} snapped />
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
     });
   });
@@ -74,7 +74,7 @@ describe('<Slider />', () => {
 
   describe('Tooltip', () => {
     it('should render tooltip', () => {
-      const { container, getByText, getByRole, toJSON } = render(
+      const { root, getByText, getByRole, toJSON } = render(
         <ThemeProvider>
           <Slider
             values={[0]}
@@ -98,11 +98,11 @@ describe('<Slider />', () => {
       expect(getByText('title')).toBeTruthy();
       expect(getByText('description')).toBeTruthy();
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON(root)).toMatchSnapshot();
     });
 
     it('should render tooltip on a specific step', () => {
-      const { container, getByText, getByRole, toJSON } = render(
+      const { root, getByText, getByRole, toJSON } = render(
         <ThemeProvider>
           <Slider
             values={[2]}
@@ -127,7 +127,7 @@ describe('<Slider />', () => {
       expect(getByText('title')).toBeTruthy();
       expect(getByText('description')).toBeTruthy();
 
-      expect(toJSON(container)).toMatchSnapshot();
+      expect(toJSON(root)).toMatchSnapshot();
     });
   });
 });

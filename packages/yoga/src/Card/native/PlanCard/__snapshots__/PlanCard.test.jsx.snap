@@ -3,15 +3,15 @@
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
 <View
   style={
-    Array [
-      Object {},
+    [
+      {},
     ]
   }
 >
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
           "borderRadius": 16,
@@ -31,8 +31,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#710252",
             "height": 8,
             "left": 0,
@@ -47,8 +47,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
     <View
       small={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#E0DFFF",
             "borderColor": "#E0DFFF",
@@ -61,7 +61,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             "paddingTop": 0,
             "width": "auto",
           },
-          Object {
+          {
             "alignItems": "center",
             "justifyContent": "center",
             "left": 24,
@@ -74,8 +74,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
     >
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "flexDirection": "row",
               "justifyContent": "center",
@@ -85,14 +85,14 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 16,
                 "fontWeight": "500",
               },
-              Object {
+              {
                 "color": "#231B22",
                 "fontSize": 12,
                 "fontWeight": "500",
@@ -107,15 +107,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
     </View>
     <View
       style={
-        Array [
-          Object {},
+        [
+          {},
         ]
       }
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
@@ -130,8 +130,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       </Text>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
@@ -146,8 +146,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       </Text>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "flexDirection": "row",
               "marginBottom": 24,
             },
@@ -156,8 +156,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 24,
@@ -171,8 +171,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         </Text>
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 24,
@@ -186,8 +186,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         </Text>
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignSelf": "center",
               },
             ]
@@ -195,8 +195,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
                   "fontSize": 16,
@@ -211,8 +211,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       </View>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomWidth": 1,
               "borderColor": "#D7D7E0",
               "width": "auto",
@@ -223,8 +223,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       />
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
@@ -239,8 +239,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       </Text>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "marginTop": 24,
             },
           ]
@@ -248,8 +248,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       >
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "marginBottom": 16,
               },
             ]
@@ -257,8 +257,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         >
           <View
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "flexDirection": "row",
                 },
@@ -267,8 +267,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           >
             <View
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "marginRight": 8,
                   },
                 ]
@@ -281,21 +281,21 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 height={16}
                 stroke="#9898A6"
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "backgroundColor": "transparent",
                       "borderWidth": 0,
                     },
-                    Array [
-                      Object {
+                    [
+                      {
                         "height": 16,
                         "width": 16,
                       },
                     ],
-                    Object {
+                    {
                       "opacity": 1,
                     },
-                    Object {
+                    {
                       "flex": 0,
                       "height": 16,
                       "width": 16,
@@ -306,16 +306,16 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               >
                 <RNSVGGroup
                   fill={
-                    Array [
+                    [
                       0,
                       4278190080,
                     ]
                   }
                   fillOpacity={1}
                   fillRule={1}
-                  font={Object {}}
+                  font={{}}
                   matrix={
-                    Array [
+                    [
                       1,
                       0,
                       0,
@@ -328,7 +328,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                   originX={0}
                   originY={0}
                   propList={
-                    Array [
+                    [
                       "stroke",
                     ]
                   }
@@ -338,7 +338,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                   skewX={0}
                   skewY={0}
                   stroke={
-                    Array [
+                    [
                       0,
                       4288190630,
                     ]
@@ -358,8 +358,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             </View>
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 14,
@@ -375,8 +375,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         </View>
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "marginBottom": 16,
               },
             ]
@@ -384,8 +384,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         >
           <View
             style={
-              Array [
-                Object {
+              [
+                {
                   "alignItems": "center",
                   "flexDirection": "row",
                 },
@@ -394,8 +394,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           >
             <View
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "marginRight": 8,
                   },
                 ]
@@ -408,21 +408,21 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                 focusable={false}
                 height={16}
                 style={
-                  Array [
-                    Object {
+                  [
+                    {
                       "backgroundColor": "transparent",
                       "borderWidth": 0,
                     },
-                    Array [
-                      Object {
+                    [
+                      {
                         "height": 16,
                         "width": 16,
                       },
                     ],
-                    Object {
+                    {
                       "opacity": 1,
                     },
-                    Object {
+                    {
                       "flex": 0,
                       "height": 16,
                       "width": 16,
@@ -433,16 +433,16 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               >
                 <RNSVGGroup
                   fill={
-                    Array [
+                    [
                       0,
                       4280490786,
                     ]
                   }
                   fillOpacity={1}
                   fillRule={1}
-                  font={Object {}}
+                  font={{}}
                   matrix={
-                    Array [
+                    [
                       1,
                       0,
                       0,
@@ -455,7 +455,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
                   originX={0}
                   originY={0}
                   propList={
-                    Array [
+                    [
                       "fill",
                     ]
                   }
@@ -480,8 +480,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             </View>
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 14,
@@ -495,6 +495,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             </Text>
           </View>
           <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
             accessible={true}
             focusable={true}
             onClick={[Function]}
@@ -505,8 +514,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             onResponderTerminationRequest={[Function]}
             onStartShouldSetResponder={[Function]}
             style={
-              Array [
-                Object {
+              [
+                {
                   "marginTop": 12,
                 },
               ]
@@ -514,8 +523,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           >
             <Text
               style={
-                Array [
-                  Object {
+                [
+                  {
                     "color": "#231B22",
                     "fontFamily": "Rubik",
                     "fontSize": 12,
@@ -532,14 +541,23 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
     </View>
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "marginTop": 8,
           },
         ]
       }
     >
       <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
         accessible={true}
         focusable={false}
         onClick={[Function]}
@@ -550,7 +568,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
           }
         }
@@ -563,8 +581,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           secondary={false}
           small={false}
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "#D8385E",
                 "borderRadius": 9999,
@@ -585,8 +603,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             pressed={false}
             small={false}
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#FFFFFF",
                   "fontFamily": "Rubik",
                   "fontSize": 16,
@@ -608,15 +626,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
 exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
 <View
   style={
-    Array [
-      Object {},
+    [
+      {},
     ]
   }
 >
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
           "borderRadius": 16,
@@ -636,8 +654,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#1D856C",
             "height": 8,
             "left": 0,
@@ -651,15 +669,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
     />
     <View
       style={
-        Array [
-          Object {},
+        [
+          {},
         ]
       }
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
@@ -674,8 +692,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
       </Text>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
@@ -690,8 +708,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
       </Text>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "flexDirection": "row",
               "marginBottom": 24,
             },
@@ -700,8 +718,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 24,
@@ -715,8 +733,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
         </Text>
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 24,
@@ -730,8 +748,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
         </Text>
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 24,
@@ -745,8 +763,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
         </Text>
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignSelf": "center",
               },
             ]
@@ -754,8 +772,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
                   "fontSize": 16,
@@ -770,8 +788,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
       </View>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomWidth": 1,
               "borderColor": "#D7D7E0",
               "width": "auto",
@@ -788,15 +806,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
 exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
 <View
   style={
-    Array [
-      Object {},
+    [
+      {},
     ]
   }
 >
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
           "borderRadius": 16,
@@ -816,8 +834,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   >
     <View
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "#1D856C",
             "height": 8,
             "left": 0,
@@ -831,15 +849,15 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
     />
     <View
       style={
-        Array [
-          Object {},
+        [
+          {},
         ]
       }
     >
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#6B6B78",
               "fontFamily": "Rubik",
               "fontSize": 12,
@@ -854,8 +872,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
       </Text>
       <Text
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "fontFamily": "Rubik",
               "fontSize": 16,
@@ -870,8 +888,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
       </Text>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "flexDirection": "row",
               "marginBottom": 24,
             },
@@ -880,8 +898,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
       >
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 24,
@@ -895,8 +913,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
         </Text>
         <Text
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 24,
@@ -910,8 +928,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
         </Text>
         <View
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignSelf": "center",
               },
             ]
@@ -919,8 +937,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
         >
           <Text
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#231B22",
                   "fontFamily": "Rubik",
                   "fontSize": 16,
@@ -935,8 +953,8 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
       </View>
       <View
         style={
-          Array [
-            Object {
+          [
+            {
               "borderBottomWidth": 1,
               "borderColor": "#D7D7E0",
               "width": "auto",

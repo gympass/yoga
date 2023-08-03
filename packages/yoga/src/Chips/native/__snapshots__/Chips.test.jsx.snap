@@ -3,6 +3,15 @@
 exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   disabled={false}
   focusable={false}
@@ -15,8 +24,8 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
   onStartShouldSetResponder={[Function]}
   selected={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
         "borderColor": "#D7D7E0",
@@ -44,15 +53,15 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
     numberOfLines={1}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 24,
         },
-        Object {
+        {
           "flexShrink": 1,
           "fontSize": 12,
           "lineHeight": 12,
@@ -66,9 +75,18 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
 `;
 
 exports[`<Chips /> Snapshots counter should match snapshot with more than one Chip 1`] = `
-Array [
+[
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -81,8 +99,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
@@ -110,15 +128,15 @@ Array [
       numberOfLines={1}
       selected={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 12,
@@ -131,6 +149,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -143,8 +170,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFEEF2",
           "borderColor": "transparent",
@@ -169,14 +196,14 @@ Array [
       numberOfLines={1}
       selected={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#D8385E",
             "flexShrink": 1,
             "fontSize": 12,
@@ -189,8 +216,8 @@ Array [
     </Text>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 8,
@@ -217,6 +244,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -229,8 +265,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFEEF2",
           "borderColor": "transparent",
@@ -255,14 +291,14 @@ Array [
       numberOfLines={1}
       selected={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#D8385E",
             "flexShrink": 1,
             "fontSize": 12,
@@ -275,8 +311,8 @@ Array [
     </Text>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 8,
@@ -305,9 +341,18 @@ Array [
 `;
 
 exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
-Array [
+[
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -320,8 +365,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
@@ -349,15 +394,15 @@ Array [
       numberOfLines={1}
       selected={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 12,
@@ -370,6 +415,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -382,8 +436,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
@@ -411,15 +465,15 @@ Array [
       numberOfLines={1}
       selected={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 12,
@@ -432,6 +486,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -444,8 +507,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
@@ -473,15 +536,15 @@ Array [
       numberOfLines={1}
       selected={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 12,
@@ -494,6 +557,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -506,8 +578,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
@@ -535,15 +607,15 @@ Array [
       numberOfLines={1}
       selected={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 12,
@@ -556,6 +628,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -568,8 +649,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFEEF2",
           "borderColor": "transparent",
@@ -594,14 +675,14 @@ Array [
       numberOfLines={1}
       selected={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#D8385E",
             "flexShrink": 1,
             "fontSize": 12,
@@ -614,8 +695,8 @@ Array [
     </Text>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 8,
@@ -642,6 +723,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -654,8 +744,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFEEF2",
           "borderColor": "transparent",
@@ -680,14 +770,14 @@ Array [
       numberOfLines={1}
       selected={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#D8385E",
             "flexShrink": 1,
             "fontSize": 12,
@@ -700,8 +790,8 @@ Array [
     </Text>
     <Text
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "backgroundColor": "#D8385E",
             "borderRadius": 8,
@@ -728,6 +818,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -740,8 +839,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFEEF2",
           "borderColor": "transparent",
@@ -766,14 +865,14 @@ Array [
       numberOfLines={1}
       selected={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#D8385E",
             "flexShrink": 1,
             "fontSize": 12,
@@ -787,6 +886,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -799,8 +907,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFEEF2",
           "borderColor": "transparent",
@@ -825,14 +933,14 @@ Array [
       numberOfLines={1}
       selected={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#D8385E",
             "flexShrink": 1,
             "fontSize": 12,
@@ -850,6 +958,15 @@ Array [
 exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   disabled={false}
   focusable={false}
@@ -862,8 +979,8 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
   onStartShouldSetResponder={[Function]}
   selected={true}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "#FFEEF2",
         "borderColor": "transparent",
@@ -888,14 +1005,14 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
     numberOfLines={1}
     selected={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "500",
         },
-        Object {
+        {
           "color": "#D8385E",
           "flexShrink": 1,
           "fontSize": 12,
@@ -910,9 +1027,18 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 `;
 
 exports[`<Chips /> Snapshots selected should match snapshot with more than one Chip 1`] = `
-Array [
+[
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -925,8 +1051,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
@@ -954,15 +1080,15 @@ Array [
       numberOfLines={1}
       selected={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 12,
@@ -975,6 +1101,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -987,8 +1122,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFEEF2",
           "borderColor": "transparent",
@@ -1013,14 +1148,14 @@ Array [
       numberOfLines={1}
       selected={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#D8385E",
             "flexShrink": 1,
             "fontSize": 12,
@@ -1034,6 +1169,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1046,8 +1190,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={true}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFEEF2",
           "borderColor": "transparent",
@@ -1072,14 +1216,14 @@ Array [
       numberOfLines={1}
       selected={true}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "500",
           },
-          Object {
+          {
             "color": "#D8385E",
             "flexShrink": 1,
             "fontSize": 12,
@@ -1097,6 +1241,15 @@ Array [
 exports[`<Chips /> Snapshots should match snapshot 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   disabled={false}
   focusable={false}
@@ -1109,8 +1262,8 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
   onStartShouldSetResponder={[Function]}
   selected={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
         "borderColor": "#D7D7E0",
@@ -1138,15 +1291,15 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
     numberOfLines={1}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 24,
         },
-        Object {
+        {
           "flexShrink": 1,
           "fontSize": 12,
           "lineHeight": 12,
@@ -1162,6 +1315,15 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
 exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   disabled={false}
   focusable={false}
@@ -1174,8 +1336,8 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
   onStartShouldSetResponder={[Function]}
   selected={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
         "borderColor": "#D7D7E0",
@@ -1203,15 +1365,15 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
     numberOfLines={1}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 24,
         },
-        Object {
+        {
           "flexShrink": 1,
           "fontSize": 12,
           "lineHeight": 12,
@@ -1227,6 +1389,15 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
 exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
 <View
   accessibilityRole="button"
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   disabled={true}
   focusable={false}
@@ -1239,8 +1410,8 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
   onStartShouldSetResponder={[Function]}
   selected={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "#F5F5FA",
         "borderColor": "#D7D7E0",
@@ -1269,15 +1440,15 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
     numberOfLines={1}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
           "fontWeight": "400",
           "lineHeight": 24,
         },
-        Object {
+        {
           "flexShrink": 1,
           "fontSize": 12,
           "lineHeight": 12,
@@ -1291,9 +1462,18 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
 `;
 
 exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] = `
-Array [
+[
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1306,8 +1486,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
@@ -1335,15 +1515,15 @@ Array [
       numberOfLines={1}
       selected={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 12,
@@ -1356,6 +1536,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1368,8 +1557,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
@@ -1397,15 +1586,15 @@ Array [
       numberOfLines={1}
       selected={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 12,
@@ -1418,6 +1607,15 @@ Array [
   </View>,
   <View
     accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
     accessible={true}
     disabled={false}
     focusable={false}
@@ -1430,8 +1628,8 @@ Array [
     onStartShouldSetResponder={[Function]}
     selected={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
           "borderColor": "#D7D7E0",
@@ -1459,15 +1657,15 @@ Array [
       numberOfLines={1}
       selected={false}
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          Object {
+          {
             "flexShrink": 1,
             "fontSize": 12,
             "lineHeight": 12,

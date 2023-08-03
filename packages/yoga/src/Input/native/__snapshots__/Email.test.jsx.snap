@@ -4,12 +4,12 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
 <View
   full={false}
   style={
-    Array [
-      Object {
+    [
+      {
         "position": "relative",
         "width": 320,
       },
-      Object {},
+      {},
     ]
   }
 >
@@ -25,8 +25,8 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
     onBlur={[Function]}
     onFocus={[Function]}
     style={
-      Array [
-        Object {
+      [
+        {
           "borderColor": "#D7D7E0",
           "borderRadius": 8,
           "borderStyle": "solid",
@@ -40,7 +40,7 @@ exports[`<Input.Email /> Snapshots should match with default input 1`] = `
           "paddingTop": 16,
           "width": 320,
         },
-        Object {
+        {
           "height": 52,
         },
       ]

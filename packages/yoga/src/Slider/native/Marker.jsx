@@ -71,7 +71,7 @@ const Marker = ({ pressed, tooltip }) => (
       />
     )}
     <CirclePressed as={View} pressed={pressed} />
-    <Circle accessibilityRole="adjustable" />
+    <Circle accessible accessibilityRole="adjustable" />
   </>
 );
 

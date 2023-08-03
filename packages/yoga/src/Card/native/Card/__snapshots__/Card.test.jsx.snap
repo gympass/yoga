@@ -4,10 +4,10 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
 <View
   elevation="0 2px 4px      rgba(152, 152, 166, 0.2)"
   style={
-    Array [
-      Object {
+    [
+      {
         "shadowColor": "rgba(152, 152, 166, 0.2)",
-        "shadowOffset": Object {
+        "shadowOffset": {
           "height": 2,
           "width": 0,
         },
@@ -27,8 +27,8 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
     pr={16}
     pt={16}
     style={
-      Array [
-        Object {
+      [
+        {
           "backgroundColor": "#FFFFFF",
           "borderRadius": 8,
           "overflow": "hidden",
@@ -37,7 +37,7 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
           "paddingRight": 16,
           "paddingTop": 16,
           "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": Object {
+          "shadowOffset": {
             "height": 2,
             "width": 0,
           },
@@ -50,8 +50,8 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
   >
     <View
       style={
-        Array [
-          Object {},
+        [
+          {},
         ]
       }
     >
@@ -61,8 +61,8 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
     </View>
     <View
       style={
-        Array [
-          Object {},
+        [
+          {},
         ]
       }
     >
@@ -72,12 +72,21 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
     </View>
     <View
       style={
-        Array [
-          Object {},
+        [
+          {},
         ]
       }
     >
       <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
         accessible={true}
         focusable={false}
         onClick={[Function]}
@@ -88,7 +97,7 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
         onResponderTerminationRequest={[Function]}
         onStartShouldSetResponder={[Function]}
         style={
-          Object {
+          {
             "flexDirection": "row",
           }
         }
@@ -101,8 +110,8 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
           secondary={false}
           small={false}
           style={
-            Array [
-              Object {
+            [
+              {
                 "alignItems": "center",
                 "backgroundColor": "#D8385E",
                 "borderRadius": 9999,
@@ -122,8 +131,8 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
             pressed={false}
             small={false}
             style={
-              Array [
-                Object {
+              [
+                {
                   "color": "#FFFFFF",
                   "fontFamily": "Rubik",
                   "fontSize": 16,

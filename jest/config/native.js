@@ -3,10 +3,7 @@ module.exports = {
   transform: { '^.+\\.jsx?$': 'babel-jest' },
   displayName: 'native',
   preset: 'react-native',
-  setupFilesAfterEnv: [
-    '<rootDir>/jest/setup/native.js',
-    '@testing-library/jest-native/extend-expect',
-  ],
+  setupFilesAfterEnv: ['<rootDir>/jest/setup/native.js'],
   moduleDirectories: [
     '<rootDir>/node_modules',
     '<rootDir>/packages/labnative/node_modules',

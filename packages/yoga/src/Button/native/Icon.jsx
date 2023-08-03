@@ -102,6 +102,7 @@ const ButtonIcon = forwardRef(
         disabled={disabled}
         inverted={inverted}
         secondary={secondary}
+        accessible
         accessibilityRole="button"
       >
         <Icon

@@ -7,8 +7,8 @@ exports[`<Box /> should match snapshot 1`] = `
   color="feedback.success.dark"
   p="small"
   style={
-    Array [
-      Object {
+    [
+      {
         "borderColor": "black",
         "borderRadius": 8,
         "borderStyle": "solid",
@@ -27,8 +27,8 @@ exports[`<Box /> should match snapshot 1`] = `
     inverted={false}
     light={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,

@@ -2,6 +2,15 @@
 
 exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot with default radio button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   checked={false}
   focusable={true}
@@ -13,8 +22,8 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "transparent",
         "borderRadius": 9999,
@@ -30,8 +39,8 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   <Text
     checked={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
         },
@@ -45,6 +54,15 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
 
 exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot with small radio button 1`] = `
 <View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
   accessible={true}
   checked={false}
   focusable={true}
@@ -57,8 +75,8 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   onStartShouldSetResponder={[Function]}
   small={true}
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "transparent",
         "borderRadius": 9999,
@@ -74,8 +92,8 @@ exports[`<RadioGroup /> <RadioGroup.Button /> Snapshots should match snapshot wi
   <Text
     checked={false}
     style={
-      Array [
-        Object {
+      [
+        {
           "color": "#231B22",
           "fontFamily": "Rubik",
         },

@@ -3,8 +3,8 @@
 exports[`<Banner /> should match snapshot 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "#E0DFFF",
         "borderRadius": 8,
@@ -26,8 +26,8 @@ exports[`<Banner /> should match snapshot 1`] = `
     flex={1}
     flexDirection="row"
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexBasis": 0,
           "flexDirection": "row",
@@ -39,10 +39,11 @@ exports[`<Banner /> should match snapshot 1`] = `
   >
     <Text
       flex={1}
-      marginVertical="xxsmall"
+      marginBottom="xxsmall"
+      marginTop="xxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "flexBasis": 0,
             "flexGrow": 1,
@@ -66,8 +67,8 @@ exports[`<Banner /> should match snapshot 1`] = `
 exports[`<Banner /> should match snapshot with button 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "#E0DFFF",
         "borderRadius": 8,
@@ -89,8 +90,8 @@ exports[`<Banner /> should match snapshot with button 1`] = `
     flex={1}
     flexDirection="row"
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexBasis": 0,
           "flexDirection": "row",
@@ -102,10 +103,11 @@ exports[`<Banner /> should match snapshot with button 1`] = `
   >
     <Text
       flex={1}
-      marginVertical="xxsmall"
+      marginBottom="xxsmall"
+      marginTop="xxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "flexBasis": 0,
             "flexGrow": 1,
@@ -123,6 +125,15 @@ exports[`<Banner /> should match snapshot with button 1`] = `
       Banner with button
     </Text>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -133,7 +144,7 @@ exports[`<Banner /> should match snapshot with button 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "flexDirection": "row",
         }
       }
@@ -143,8 +154,8 @@ exports[`<Banner /> should match snapshot with button 1`] = `
         pressed={false}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 9999,
@@ -154,7 +165,7 @@ exports[`<Banner /> should match snapshot with button 1`] = `
               "paddingLeft": 16,
               "paddingRight": 16,
             },
-            Object {
+            {
               "marginLeft": 8,
             },
           ]
@@ -166,8 +177,8 @@ exports[`<Banner /> should match snapshot with button 1`] = `
           secondary={true}
           small={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
@@ -186,11 +197,11 @@ exports[`<Banner /> should match snapshot with button 1`] = `
 `;
 
 exports[`<Banner /> should match snapshot with custom variant 1`] = `
-Array [
+[
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#C1EEDB",
           "borderRadius": 8,
@@ -212,8 +223,8 @@ Array [
       flex={1}
       flexDirection="row"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexBasis": 0,
             "flexDirection": "row",
@@ -225,10 +236,11 @@ Array [
     >
       <Text
         flex={1}
-        marginVertical="xxsmall"
+        marginBottom="xxsmall"
+        marginTop="xxsmall"
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -249,8 +261,8 @@ Array [
   </View>,
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#E0DFFF",
           "borderRadius": 8,
@@ -272,8 +284,8 @@ Array [
       flex={1}
       flexDirection="row"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexBasis": 0,
             "flexDirection": "row",
@@ -285,10 +297,11 @@ Array [
     >
       <Text
         flex={1}
-        marginVertical="xxsmall"
+        marginBottom="xxsmall"
+        marginTop="xxsmall"
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -309,8 +322,8 @@ Array [
   </View>,
   <View
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "backgroundColor": "#FCD6C3",
           "borderRadius": 8,
@@ -332,8 +345,8 @@ Array [
       flex={1}
       flexDirection="row"
       style={
-        Array [
-          Object {
+        [
+          {
             "alignItems": "center",
             "flexBasis": 0,
             "flexDirection": "row",
@@ -345,10 +358,11 @@ Array [
     >
       <Text
         flex={1}
-        marginVertical="xxsmall"
+        marginBottom="xxsmall"
+        marginTop="xxsmall"
         style={
-          Array [
-            Object {
+          [
+            {
               "color": "#231B22",
               "flexBasis": 0,
               "flexGrow": 1,
@@ -373,8 +387,8 @@ Array [
 exports[`<Banner /> should match snapshot with icon 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "#E0DFFF",
         "borderRadius": 8,
@@ -396,8 +410,8 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
     flex={1}
     flexDirection="row"
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexBasis": 0,
           "flexDirection": "row",
@@ -415,22 +429,22 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
       height={20}
       marginRight="xxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "backgroundColor": "transparent",
             "borderWidth": 0,
           },
-          Array [
-            Object {
+          [
+            {
               "height": 20,
               "marginRight": 8,
               "width": 20,
             },
           ],
-          Object {
+          {
             "opacity": 1,
           },
-          Object {
+          {
             "flex": 0,
             "height": 20,
             "width": 20,
@@ -441,16 +455,16 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
     >
       <RNSVGGroup
         fill={
-          Array [
+          [
             0,
             4280490786,
           ]
         }
         fillOpacity={1}
         fillRule={1}
-        font={Object {}}
+        font={{}}
         matrix={
-          Array [
+          [
             1,
             0,
             0,
@@ -463,7 +477,7 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
         originX={0}
         originY={0}
         propList={
-          Array [
+          [
             "fill",
           ]
         }
@@ -487,10 +501,11 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
     </RNSVGSvgView>
     <Text
       flex={1}
-      marginVertical="xxsmall"
+      marginBottom="xxsmall"
+      marginTop="xxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "flexBasis": 0,
             "flexGrow": 1,
@@ -514,8 +529,8 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
 exports[`<Banner /> should match snapshot with two action buttons 1`] = `
 <View
   style={
-    Array [
-      Object {
+    [
+      {
         "alignItems": "center",
         "backgroundColor": "#E0DFFF",
         "borderRadius": 8,
@@ -537,8 +552,8 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
     flex={1}
     flexDirection="row"
     style={
-      Array [
-        Object {
+      [
+        {
           "alignItems": "center",
           "flexBasis": 0,
           "flexDirection": "row",
@@ -550,10 +565,11 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
   >
     <Text
       flex={1}
-      marginVertical="xxsmall"
+      marginBottom="xxsmall"
+      marginTop="xxsmall"
       style={
-        Array [
-          Object {
+        [
+          {
             "color": "#231B22",
             "flexBasis": 0,
             "flexGrow": 1,
@@ -578,8 +594,8 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
     justifyContent="flex-end"
     marginBottom="xxsmall"
     style={
-      Array [
-        Object {
+      [
+        {
           "display": "flex",
           "flexBasis": 0,
           "flexDirection": "row",
@@ -592,6 +608,15 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
     }
   >
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -602,7 +627,7 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "flexDirection": "row",
         }
       }
@@ -612,8 +637,8 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
         pressed={false}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 9999,
@@ -623,7 +648,7 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
               "paddingLeft": 16,
               "paddingRight": 16,
             },
-            Object {
+            {
               "marginRight": 4,
             },
           ]
@@ -635,8 +660,8 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
           secondary={true}
           small={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 14,
@@ -651,6 +676,15 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
       </View>
     </View>
     <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
       accessible={true}
       focusable={true}
       onClick={[Function]}
@@ -661,7 +695,7 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
       onResponderTerminationRequest={[Function]}
       onStartShouldSetResponder={[Function]}
       style={
-        Object {
+        {
           "flexDirection": "row",
         }
       }
@@ -670,8 +704,8 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
         pressed={false}
         small={true}
         style={
-          Array [
-            Object {
+          [
+            {
               "alignItems": "center",
               "backgroundColor": "transparent",
               "borderRadius": 9999,
@@ -681,7 +715,7 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
               "paddingLeft": 16,
               "paddingRight": 16,
             },
-            Object {},
+            {},
           ]
         }
       >
@@ -691,8 +725,8 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
           secondary={true}
           small={true}
           style={
-            Array [
-              Object {
+            [
+              {
                 "color": "#231B22",
                 "fontFamily": "Rubik",
                 "fontSize": 14,

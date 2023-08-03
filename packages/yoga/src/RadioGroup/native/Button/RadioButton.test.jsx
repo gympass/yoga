@@ -9,17 +9,17 @@ describe('<RadioGroup />', () => {
   describe('<RadioGroup.Button />', () => {
     describe('Snapshots', () => {
       it('should match snapshot with default radio button', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <ThemeProvider>
             <RadioGroup.Button>Radio 1</RadioGroup.Button>
           </ThemeProvider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
 
       it('should match snapshot with small radio button', () => {
-        const { container, toJSON } = render(
+        const { root, toJSON } = render(
           <RadioGroupContext.Provider value={{ small: true }}>
             <ThemeProvider>
               <RadioGroup.Button>Radio 1</RadioGroup.Button>
@@ -27,7 +27,7 @@ describe('<RadioGroup />', () => {
           </RadioGroupContext.Provider>,
         );
 
-        expect(toJSON(container)).toMatchSnapshot();
+        expect(toJSON(root)).toMatchSnapshot();
       });
     });
 
