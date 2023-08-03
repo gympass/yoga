@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import { Image } from 'react-native';
+import { ImagePropTypes } from 'deprecated-react-native-prop-types';
 import { string, number } from 'prop-types';
 import { Building } from '@gympass/yoga-icons';
 
@@ -72,7 +72,7 @@ CheckIn.propTypes = {
   name: string.isRequired,
   address: string.isRequired,
   /** The same as in source prop of Image react-native component */
-  avatar: Image.propTypes.source,
+  avatar: ImagePropTypes.source,
   distance: string.isRequired,
   rating: number.isRequired,
 };
