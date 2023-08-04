@@ -20,14 +20,14 @@ const createPackageJson = () => {
 
   const newPackageData = {
     ...packageDataOther,
-    main: './cjs/index.js',
-    module: './esm/index.js',
+    main: './cjs',
+    module: './esm',
     types: './typings/index.d.ts',
     private: false,
     exports: {
       '.': {
-        require: './cjs/index.js',
-        import: './esm/index.js',
+        require: './cjs',
+        import: './esm',
       },
     },
   };
