@@ -5,8 +5,10 @@ import { borders, margins, paddings } from '@gympass/yoga-system';
 import {
   checkPropTypes,
   elementType,
+  element,
   func,
   oneOf,
+  oneOfType,
   shape,
   string,
 } from 'prop-types';
@@ -113,7 +115,7 @@ Banner.propTypes = {
   /** style the banner following the theme (success, informative, attention) */
   variant: oneOf(['success', 'informative', 'attention']),
   /** the message to display */
-  message: string.isRequired,
+  message: oneOfType([string, element]).isRequired,
   /** the label and action fuction are required for banner action buttons  */
   primaryButton: BannerActionButtonType,
   /** the secondary button should only be used assemble the primary button (the label and action fuction are required for banner action buttons).  */
