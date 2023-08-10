@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.79.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.78.2...@gympass/yoga@7.79.0) (2023-08-10)
+
+
+### Features
+
+* **banner/web:** message prop now accepts react element ([0020994](https://github.com/Gympass/yoga/commit/002099497b7efb8b3e20780d6a5bc753060e0aa2))
+
+
+
+
+
 ## [7.78.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.78.1...@gympass/yoga@7.78.2) (2023-08-04)
 
 **Note:** Version bump only for package @gympass/yoga
