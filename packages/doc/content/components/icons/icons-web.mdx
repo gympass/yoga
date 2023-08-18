@@ -20,8 +20,8 @@ Remembering that icon groups are `objects` you can work with.
   <FlagsIcons.FlagBrazil width={26} height={26} />
 
   <Box d="flex" gap="small">
-    {Object.entries(FlagsIcons).map(([_, Component]) => (
-      <Component width={26} height={26} />
+    {Object.entries(FlagsIcons).map(([name, Component]) => (
+      <Component width={26} height={26} key={name} />
     ))}
   </Box>
 </Box>
