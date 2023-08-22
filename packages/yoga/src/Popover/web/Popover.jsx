@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { node, number, oneOf, string } from 'prop-types';
+import React, { useState, useEffect, useRef } from 'react';
+import { bool, node, number, oneOf, string } from 'prop-types';
 import { Text } from '@gympass/yoga';
 
 import { PopoverContainer, PopoverButton, Wrapper } from './styles';
@@ -13,9 +13,25 @@ function Popover({
   height,
   zIndex,
   a11yId,
+  hover,
   ...props
 }) {
+  const ref = useRef(null);
   const [isPopoverOpen, setIsPopoverOpen] = useState(false);
+
+  useEffect(() => {
+    const handleClickOutside = event => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setIsPopoverOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside, true);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside, true);
+    };
+  }, [setIsPopoverOpen]);
 
   const handleShowPopover = () => {
     setIsPopoverOpen(true);
@@ -23,6 +39,10 @@ function Popover({
 
   const handleHidePopover = () => {
     setIsPopoverOpen(false);
+  };
+
+  const toggleOpenPopover = () => {
+    setIsPopoverOpen(!isPopoverOpen);
   };
 
   return (
@@ -49,16 +69,11 @@ function Popover({
 
       <PopoverButton
         {...(a11yId && { 'aria-describedby': a11yId })}
-        onMouseEnter={handleShowPopover}
-        onMouseLeave={handleHidePopover}
-        onTouchStart={handleShowPopover}
-        onTouchEnd={handleHidePopover}
-        onClick={event => event.preventDefault()}
-        onKeyDown={event => {
-          if (event.key === 'Enter') {
-            setIsPopoverOpen(current => !current);
-          }
-        }}
+        ref={ref}
+        onMouseEnter={hover ? handleShowPopover : undefined}
+        onMouseLeave={hover ? handleHidePopover : undefined}
+        onClick={!hover ? toggleOpenPopover : undefined}
+        onKeyDown={event => event.key === 'Enter' && toggleOpenPopover}
       >
         {children}
       </PopoverButton>
@@ -89,6 +104,7 @@ Popover.propTypes = {
   width: number,
   height: number,
   zIndex: number,
+  hover: bool,
 };
 
 Popover.defaultProps = {
@@ -98,6 +114,7 @@ Popover.defaultProps = {
   width: 265,
   height: 200,
   zIndex: 1,
+  hover: false,
 };
 
 export default Popover;
