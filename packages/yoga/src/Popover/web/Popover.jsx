@@ -1,85 +1,94 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { bool, node, number, oneOf, string } from 'prop-types';
+
 import { Text } from '@gympass/yoga';
+import { useCombinedRefs } from '../../hooks';
 
 import { PopoverContainer, PopoverButton, Wrapper } from './styles';
 
-function Popover({
-  children,
-  title,
-  description,
-  position,
-  width,
-  height,
-  zIndex,
-  a11yId,
-  hover,
-  ...props
-}) {
-  const ref = useRef(null);
-  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
+const Popover = React.forwardRef(
+  (
+    {
+      children,
+      title,
+      description,
+      position,
+      width,
+      height,
+      zIndex,
+      a11yId,
+      hover,
+      ...props
+    },
+    forwardedRef,
+  ) => {
+    const ref = useCombinedRefs(forwardedRef);
+    const [isPopoverOpen, setIsPopoverOpen] = useState(false);
 
-  useEffect(() => {
-    const handleClickOutside = event => {
-      if (ref.current && !ref.current.contains(event.target)) {
-        setIsPopoverOpen(false);
-      }
+    useEffect(() => {
+      const handleClickOutside = event => {
+        if (ref.current && !ref.current.contains(event.target)) {
+          setIsPopoverOpen(false);
+        }
+      };
+
+      document.addEventListener('click', handleClickOutside, true);
+
+      return () => {
+        document.removeEventListener('click', handleClickOutside, true);
+      };
+    }, [setIsPopoverOpen]);
+
+    const handleShowPopover = () => {
+      setIsPopoverOpen(true);
     };
 
-    document.addEventListener('click', handleClickOutside, true);
-
-    return () => {
-      document.removeEventListener('click', handleClickOutside, true);
+    const handleHidePopover = () => {
+      setIsPopoverOpen(false);
     };
-  }, [setIsPopoverOpen]);
 
-  const handleShowPopover = () => {
-    setIsPopoverOpen(true);
-  };
+    const toggleOpenPopover = () => {
+      setIsPopoverOpen(current => !current);
+    };
 
-  const handleHidePopover = () => {
-    setIsPopoverOpen(false);
-  };
-
-  const toggleOpenPopover = () => {
-    setIsPopoverOpen(!isPopoverOpen);
-  };
-
-  return (
-    <Wrapper {...props}>
-      {isPopoverOpen && (
-        <PopoverContainer
-          {...(a11yId && { id: a11yId })}
-          position={position}
-          width={width}
-          height={height}
-          role="tooltip"
-          $zIndex={zIndex}
-        >
-          {!!title && (
-            <Text.Small mb="xxxsmall" fw="medium" color="white">
-              {title}
+    return (
+      <Wrapper {...props}>
+        {isPopoverOpen && (
+          <PopoverContainer
+            {...(a11yId && { id: a11yId })}
+            position={position}
+            width={width}
+            height={height}
+            role="tooltip"
+            $zIndex={zIndex}
+          >
+            {!!title && (
+              <Text.Small mb="xxxsmall" fw="medium" color="white">
+                {title}
+              </Text.Small>
+            )}
+            <Text.Small m="zero" color="white">
+              {description}
             </Text.Small>
-          )}
-          <Text.Small m="zero" color="white">
-            {description}
-          </Text.Small>
-        </PopoverContainer>
-      )}
+          </PopoverContainer>
+        )}
 
-      <PopoverButton
-        {...(a11yId && { 'aria-describedby': a11yId })}
-        ref={ref}
-        onMouseEnter={hover ? handleShowPopover : undefined}
-        onMouseLeave={hover ? handleHidePopover : undefined}
-        onClick={!hover ? toggleOpenPopover : undefined}
-        onKeyDown={event => event.key === 'Enter' && toggleOpenPopover}
-      >
-        {children}
-      </PopoverButton>
-    </Wrapper>
-  );
-}
+        <PopoverButton
+          {...(a11yId && { 'aria-describedby': a11yId })}
+          ref={ref}
+          onMouseEnter={hover ? handleShowPopover : undefined}
+          onMouseLeave={hover ? handleHidePopover : undefined}
+          onClick={!hover ? toggleOpenPopover : event => event.preventDefault()}
+          onKeyDown={event =>
+            event.key === 'Enter' ? toggleOpenPopover : undefined
+          }
+        >
+          {children}
+        </PopoverButton>
+      </Wrapper>
+    );
+  },
+);
 
 Popover.propTypes = {
   a11yId: string,
