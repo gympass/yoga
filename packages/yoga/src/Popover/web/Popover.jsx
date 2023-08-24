@@ -47,7 +47,8 @@ const Popover = React.forwardRef(
       setIsPopoverOpen(false);
     };
 
-    const toggleOpenPopover = () => {
+    const toggleOpenPopover = event => {
+      event.preventDefault();
       setIsPopoverOpen(current => !current);
     };
 
@@ -79,9 +80,6 @@ const Popover = React.forwardRef(
           onMouseEnter={hover ? handleShowPopover : undefined}
           onMouseLeave={hover ? handleHidePopover : undefined}
           onClick={!hover ? toggleOpenPopover : event => event.preventDefault()}
-          onKeyDown={event =>
-            event.key === 'Enter' ? toggleOpenPopover : undefined
-          }
         >
           {children}
         </PopoverButton>
