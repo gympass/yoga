@@ -83,9 +83,9 @@ const StyledList = styled(MDXElements.Ul)`
   width: 100%;
 `;
 
-const ChevronContainer = styled.div.attrs({
-  rotation: props => (props.isOpen ? 180 : 0),
-})`
+const ChevronContainer = styled.div.attrs(props => ({
+  rotation: props.isOpen ? 180 : 0,
+}))`
   > svg {
     width: 0.6rem;
     transition: all 200ms ease-out;
