@@ -13,6 +13,15 @@ import Button from '../../Button';
 import Icon from '../../Icon';
 import Text from '../../Text';
 
+function getMaxZIndex() {
+  return Math.max(
+    ...Array.from(document.querySelectorAll('body *'), el =>
+      parseFloat(window.getComputedStyle(el).zIndex),
+    ).filter(zIndex => !Number.isNaN(zIndex)),
+    0,
+  );
+}
+
 const IconButtonWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -69,7 +78,7 @@ const StyledSnackbar = styled.div`
 
       background-color: ${snackbar.variant.color[variant]};
 
-      z-index: 100;
+      z-index: ${getMaxZIndex() + 1};
     `}
 
   ${media.md`
