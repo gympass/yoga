@@ -1,16 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Popover /> should match snapshot 1`] = `
+exports[`<Popover /> should match snapshot when hover is false 1`] = `
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  margin-bottom: 4px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  margin: 0;
+  color: #FFFFFF;
+}
+
 .c0 {
   position: relative;
 }
 
 .c1 {
+  position: absolute;
+  overflow: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 265px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: 200px;
+  border-radius: 8px;
+  background-color: #231B22;
+  padding: 16px;
+  z-index: 1;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translate(-50%,100%);
+  -ms-transform: translate(-50%,100%);
+  transform: translate(-50%,100%);
+}
+
+.c4 {
   all: unset;
 }
 
 @media (hover:hover) and (pointer:fine) {
-  .c1:focus {
+  .c4:focus {
     box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
     -webkit-transition: box-shadow ease 0.5s;
     transition: box-shadow ease 0.5s;
@@ -21,8 +68,127 @@ exports[`<Popover /> should match snapshot 1`] = `
   <div
     class="c0"
   >
-    <button
+    <div
       class="c1"
+      height="200"
+      role="tooltip"
+      width="265"
+    >
+      <p
+        class="c2"
+        color="white"
+      >
+        Making wellbeing universal
+      </p>
+      <p
+        class="c3"
+        color="white"
+      >
+        Try click on the button. Your new favorite activity could be arround the corner.
+      </p>
+    </div>
+    <button
+      class="c4"
+      type="button"
+    >
+      <svg
+        height="26"
+        width="26"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Popover /> should match snapshot when hover is true 1`] = `
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  margin-bottom: 4px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.c0 {
+  position: relative;
+}
+
+.c1 {
+  position: absolute;
+  overflow: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 265px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  max-height: 200px;
+  border-radius: 8px;
+  background-color: #231B22;
+  padding: 16px;
+  z-index: 1;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translate(-50%,100%);
+  -ms-transform: translate(-50%,100%);
+  transform: translate(-50%,100%);
+}
+
+.c4 {
+  all: unset;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .c4:focus {
+    box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+    -webkit-transition: box-shadow ease 0.5s;
+    transition: box-shadow ease 0.5s;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+      height="200"
+      role="tooltip"
+      width="265"
+    >
+      <p
+        class="c2"
+        color="white"
+      >
+        Making wellbeing universal
+      </p>
+      <p
+        class="c3"
+        color="white"
+      >
+        Try moving to another spot. Your new favorite activity could be arround the corner.
+      </p>
+    </div>
+    <button
+      class="c4"
       type="button"
     >
       <svg
