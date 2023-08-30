@@ -20,17 +20,43 @@ const Icon = ({
   fill,
   stroke,
   theme,
+  title,
+  description,
+  ariaLabel,
   ...props
-}) => (
-  <Box
-    as={Component}
-    width={get(theme.yoga.spacing, width, width)}
-    height={get(theme.yoga.spacing, height, height)}
-    {...(fill && { fill: get(theme.yoga.colors, fill, fill) })}
-    {...(stroke && { stroke: get(theme.yoga.colors, stroke, stroke) })}
-    {...props}
-  />
-);
+}) => {
+  const withTitle = propsTitle => {
+    const defaultProps = {
+      width: '12',
+      height: '12',
+      viewBox: '0 0 12 12',
+      role: 'img',
+    };
+    const titleElement = <title>{title}</title>;
+    const descElement = <desc>{description}</desc>;
+
+    const newSvg = React.createElement(
+      'svg',
+      { ...propsTitle, ...defaultProps },
+      titleElement,
+      descElement,
+      Component().props.children,
+    );
+
+    return newSvg;
+  };
+
+  return (
+    <Box
+      as={title ? withTitle : Component}
+      width={get(theme.yoga.spacing, width, width)}
+      height={get(theme.yoga.spacing, height, height)}
+      {...(fill && { fill: get(theme.yoga.colors, fill, fill) })}
+      {...(stroke && { stroke: get(theme.yoga.colors, stroke, stroke) })}
+      {...props}
+    />
+  );
+};
 
 const commonSizes = [
   'xxxsmall',
@@ -55,6 +81,14 @@ Icon.propTypes = {
   /** Stroke color. Use it as one of theme.colors
    * tokens (vibin, neutral, stamina...) */
   stroke: string,
+  /** Text that will be displayed in the title element, used for accessibility */
+  title: string,
+  /** Text used as element description, used for accessibility.
+   * A title must be given in order to use description corretly.
+   */
+  description: string,
+  /** Text used as identifier for aria-describedby, title and description */
+  ariaLabel: string,
   /** Horizontal size of the SVG. Use it as one of
    * theme.spacing tokens (xxsmall, small, medium...) */
   width: oneOfType([oneOf(commonSizes), string, number]),
@@ -88,7 +122,10 @@ Icon.propTypes = {
 Icon.defaultProps = {
   fill: undefined,
   stroke: undefined,
-  width: undefined,
+  title: 'teste',
+  description: 'teste description',
+  ariaLabel: 'label test',
+  width: 30,
   height: undefined,
   size: undefined,
 };
