@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.79.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.79.0...@gympass/yoga@7.79.1) (2023-08-30)
+
+
+### Bug Fixes
+
+* fix popover behavior to accept click (default) OR hover event ([3e327e2](https://github.com/Gympass/yoga/commit/3e327e281268ccf4ac927c9c6c0fc5fcc8d8ee33))
+* review adjustments ([8282239](https://github.com/Gympass/yoga/commit/82822396f9d41cd9250f626757f5dc707eb7df2e))
+* review adjustments ([332b4a5](https://github.com/Gympass/yoga/commit/332b4a56b40273d89d79a12d428a308f0e33d1f4))
+
+
+
+
+
 # [7.79.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.78.2...@gympass/yoga@7.79.0) (2023-08-10)
 
 
