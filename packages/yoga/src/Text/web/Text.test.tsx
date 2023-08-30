@@ -1,13 +1,14 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from '../..';
-import { Text } from '.';
+import Text from '.';
 
 describe('<Text />', () => {
   describe('Snapshots', () => {
     it('should match snapshot with Text', () => {
       const { container } = render(
         <ThemeProvider>
+          <Text>Live the mission</Text>
           <Text.H1>Live the mission</Text.H1>
           <Text.H2>Live the mission</Text.H2>
           <Text.H3>Live the mission</Text.H3>

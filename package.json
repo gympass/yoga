@@ -105,5 +105,8 @@
   },
   "resolutions": {
     "sharp": "0.28.0"
+  },
+  "dependencies": {
+    "@types/styled-components": "^5.1.26"
   }
 }
