@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.79.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.79.1...@gympass/yoga@7.79.2) (2023-08-30)
+
+
+### Bug Fixes
+
+* snackbar z-index ([ae539ef](https://github.com/Gympass/yoga/commit/ae539ef35ceb00690af83e23dc57ae89bb8665fc))
+* snackbar z-index snapshot ([676fa96](https://github.com/Gympass/yoga/commit/676fa96258780c7a12fb1e88f7a2e290408ed5ce))
+
+
+
+
+
 ## [7.79.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.79.0...@gympass/yoga@7.79.1) (2023-08-30)
 
 
