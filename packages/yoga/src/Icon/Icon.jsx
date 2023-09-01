@@ -26,20 +26,30 @@ const Icon = ({
   ...props
 }) => {
   const withTitle = propsTitle => {
+    const titleId = `${ariaLabel}-titleId`;
+    let ariaDescribedBy = titleId;
+    const titleElement = <title id={titleId}>{title}</title>;
+    let svgChildren = [titleElement];
+
+    if (description) {
+      const descId = `${ariaLabel}-descId`;
+      const descElement = <desc id={descId}>{description}</desc>;
+
+      ariaDescribedBy += ` ${descId}`;
+
+      svgChildren = [...svgChildren, descElement];
+    }
+
     const defaultProps = {
-      width: '12',
-      height: '12',
       viewBox: '0 0 12 12',
       role: 'img',
+      'aria-describedby': ariaDescribedBy,
     };
-    const titleElement = <title>{title}</title>;
-    const descElement = <desc>{description}</desc>;
 
     const newSvg = React.createElement(
       'svg',
       { ...propsTitle, ...defaultProps },
-      titleElement,
-      descElement,
+      svgChildren,
       Component().props.children,
     );
 
@@ -54,6 +64,7 @@ const Icon = ({
       {...(fill && { fill: get(theme.yoga.colors, fill, fill) })}
       {...(stroke && { stroke: get(theme.yoga.colors, stroke, stroke) })}
       {...props}
+      aria-hidden={title ? undefined : true}
     />
   );
 };
@@ -122,12 +133,12 @@ Icon.propTypes = {
 Icon.defaultProps = {
   fill: undefined,
   stroke: undefined,
-  title: 'teste',
-  description: 'teste description',
-  ariaLabel: 'label test',
-  width: 30,
+  title: undefined,
+  description: undefined,
+  ariaLabel: undefined,
+  width: undefined,
   height: undefined,
-  size: undefined,
+  size: 12,
 };
 
 export default withTheme(Icon);
