@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.80.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.79.2...@gympass/yoga@7.80.0) (2023-09-04)
+
+
+### Features
+
+* **dropdown:** added isMaxHeight property ([a7a299e](https://github.com/Gympass/yoga/commit/a7a299e6f5d6ddc526002cc052b9740f60ccd6da))
+
+
+
+
+
 ## [7.79.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.79.1...@gympass/yoga@7.79.2) (2023-08-30)
 
 
