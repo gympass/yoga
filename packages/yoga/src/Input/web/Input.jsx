@@ -199,7 +199,6 @@ const Input = React.forwardRef(
               height={20}
               role="button"
               hasIconRight={!!rightIcon}
-              prependElement={!!prependElement}
             >
               <Close aria-label="Clear" />
             </IconWrapper>
