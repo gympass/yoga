@@ -28,7 +28,7 @@ const Wrapper = styled.div`
     position: relative;
     display: inline-block;
     vertical-align: top;
-
+    
     width: ${full ? '100%' : `${dropdown.width}px`};
   `}
 `;
@@ -152,6 +152,7 @@ const Button = styled.button`
 
 const OptionsList = styled.ul`
   ${({
+    isMaxHeight,
     theme: {
       yoga: {
         components: { dropdown },
@@ -164,7 +165,6 @@ const OptionsList = styled.ul`
     box-sizing: border-box;
 
     width: 100%;
-    max-height: ${dropdown.option.height * 3.5}px;
     margin: 0;
     padding: 0;
     overflow-y: auto;
@@ -181,6 +181,8 @@ const OptionsList = styled.ul`
         ${dropdown.option.border.radius.topRight}px
         ${dropdown.option.border.radius.bottomRight}px
         ${dropdown.option.border.radius.bottomLeft}px;
+
+    ${isMaxHeight && `max-height: ${dropdown.option.height * 3.5}px;`}
   `}
 `;
 
@@ -267,7 +269,10 @@ const ArrowIcon = styled(({ isOpen, selected, ...props }) => (
 
 /** Gympass Dropdown is a multiple choice type of menu. */
 const Dropdown = React.forwardRef(
-  ({ error, label, disabled, full, options, onChange, ...rest }, ref) => {
+  (
+    { error, label, disabled, full, options, onChange, isMaxHeight, ...rest },
+    ref,
+  ) => {
     const inputRef = ref || React.useRef(null);
     const selectedOption = options.find(item => item.selected === true);
     const [localSelectedItem, setLocalSelectedItem] = useState(selectedOption);
@@ -333,7 +338,11 @@ const Dropdown = React.forwardRef(
               </Button>
             </Selector>
             {isOpen && (
-              <OptionsList selected={selectedItem !== null} {...getMenuProps()}>
+              <OptionsList
+                isMaxHeight={isMaxHeight}
+                selected={selectedItem !== null}
+                {...getMenuProps()}
+              >
                 {options.map((item, index) => (
                   <Option
                     {...getItemProps({
@@ -370,6 +379,7 @@ Dropdown.propTypes = {
     }),
   ).isRequired,
   onChange: func,
+  isMaxHeight: bool,
 };
 
 Dropdown.defaultProps = {
@@ -378,6 +388,7 @@ Dropdown.defaultProps = {
   full: false,
   disabled: false,
   onChange: () => {},
+  isMaxHeight: true,
 };
 
 export default Dropdown;
