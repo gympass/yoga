@@ -25,7 +25,7 @@ const Icon = ({
   ariaLabel,
   ...props
 }) => {
-  const withTitle = propsTitle => {
+  const componentWithTitle = propsTitle => {
     const titleId = `${ariaLabel}-titleId`;
     let ariaDescribedBy = titleId;
     const titleElement = <title id={titleId}>{title}</title>;
@@ -58,7 +58,7 @@ const Icon = ({
 
   return (
     <Box
-      as={title ? withTitle : Component}
+      as={title ? componentWithTitle : Component}
       width={get(theme.yoga.spacing, width, width)}
       height={get(theme.yoga.spacing, height, height)}
       {...(fill && { fill: get(theme.yoga.colors, fill, fill) })}

@@ -2,6 +2,7 @@
 
 exports[`Snapshots should match snapshot 1`] = `
 <svg
+  aria-hidden={true}
   fill="#231B22"
   height={16}
   style={
@@ -22,8 +23,44 @@ exports[`Snapshots should match snapshot 1`] = `
 </svg>
 `;
 
+exports[`Snapshots should match snapshot whit acessible props 1`] = `
+<svg
+  aria-describedby="circleIcon-titleId circleIcon-descId"
+  fill="#231B22"
+  height={16}
+  role="img"
+  style={
+    [
+      {
+        "height": 16,
+        "width": 16,
+      },
+    ]
+  }
+  viewBox="0 0 12 12"
+  width={16}
+>
+  <title
+    id="circleIcon-titleId"
+  >
+    Circle icon
+  </title>
+  <desc
+    id="circleIcon-descId"
+  >
+    This is a circular icon
+  </desc>
+  <circle
+    cx="16"
+    cy="16"
+    r="16"
+  />
+</svg>
+`;
+
 exports[`Snapshots should match snapshot with size prop 1`] = `
 <svg
+  aria-hidden={true}
   fill="#231B22"
   height={16}
   style={
@@ -46,6 +83,7 @@ exports[`Snapshots should match snapshot with size prop 1`] = `
 
 exports[`Snapshots should match snapshot with system props 1`] = `
 <svg
+  aria-hidden={true}
   elevation="medium"
   fill="#231B22"
   height={16}

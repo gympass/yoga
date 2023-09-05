@@ -45,4 +45,21 @@ describe('Snapshots', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('should match snapshot with acessible props', () => {
+    const { container } = render(
+      <ThemeProvider>
+        <Icon
+          as={Circle}
+          size="small"
+          fill="stamina"
+          title="Circle icon"
+          description="This is a circular icon"
+          ariaLabel="circleIcon"
+        />
+      </ThemeProvider>,
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });
