@@ -7,6 +7,8 @@
     "paths": {
       "@gympass/yoga-common/*": ["./packages/common/src/*"],
       "@gympass/yoga-common": ["./packages/common/src"],
+      "@gympass/yoga-system/*": ["./packages/system/src/*"],
+      "@gympass/yoga-system": ["./packages/system/src"],
       "@gympass/yoga-tokens/*": ["./packages/tokens/src/*"],
       "@gympass/yoga-tokens": ["./packages/tokens/src"]
     },
@@ -23,6 +25,7 @@
     "noImplicitReturns": true,
     "skipLibCheck": true,
     "moduleResolution": "node",
-    "sourceMap": false
+    "sourceMap": false,
+    "allowJs": true
   }
 }
