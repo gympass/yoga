@@ -429,6 +429,7 @@ exports[`<Banner /> should match snapshot with icon 1`] = `
       display="flex"
     >
       <svg
+        aria-hidden="true"
         class="c2"
         fill="#231B22"
         height="20"

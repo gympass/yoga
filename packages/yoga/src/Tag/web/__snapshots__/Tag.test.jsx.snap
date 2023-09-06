@@ -87,6 +87,7 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
     class="c0 c1"
   >
     <svg
+      aria-hidden="true"
       class="c2"
       fill="#231B22"
       height="16"

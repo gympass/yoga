@@ -687,6 +687,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     disabled=""
   >
     <svg
+      aria-hidden="true"
       class="c1"
       height="24"
       width="24"
@@ -1581,6 +1582,7 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
     disabled=""
   >
     <svg
+      aria-hidden="true"
       class="c1"
       height="24"
       width="24"
@@ -3119,6 +3121,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     class="c0"
   >
     <svg
+      aria-hidden="true"
       class="c1"
       height="24"
       width="24"
@@ -4030,6 +4033,7 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
     class="c0"
   >
     <svg
+      aria-hidden="true"
       class="c1"
       height="16"
       width="16"
@@ -4732,6 +4736,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     class="c0"
   >
     <svg
+      aria-hidden="true"
       class="c1"
       height="24"
       width="24"
@@ -6225,6 +6230,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
     class="c0"
   >
     <svg
+      aria-hidden="true"
       class="c1"
       height="24"
       width="24"
@@ -7286,6 +7292,7 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
     class="c0"
   >
     <svg
+      aria-hidden="true"
       class="c1"
       height="16"
       width="16"
@@ -7988,6 +7995,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     class="c0"
   >
     <svg
+      aria-hidden="true"
       class="c1"
       height="24"
       width="24"

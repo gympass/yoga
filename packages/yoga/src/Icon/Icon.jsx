@@ -28,12 +28,21 @@ const Icon = ({
   const componentWithTitle = propsTitle => {
     const titleId = `${ariaLabel}-titleId`;
     let ariaDescribedBy = titleId;
-    const titleElement = <title id={titleId}>{title}</title>;
+    const titleElement = (
+      <title id={titleId} key={titleId}>
+        {title}
+      </title>
+    );
+
     let svgChildren = [titleElement];
 
     if (description) {
       const descId = `${ariaLabel}-descId`;
-      const descElement = <desc id={descId}>{description}</desc>;
+      const descElement = (
+        <desc id={descId} key={descId}>
+          {description}
+        </desc>
+      );
 
       ariaDescribedBy += ` ${descId}`;
 
@@ -58,7 +67,7 @@ const Icon = ({
 
   return (
     <Box
-      as={title ? componentWithTitle : Component}
+      as={title && ariaLabel ? componentWithTitle : Component}
       width={get(theme.yoga.spacing, width, width)}
       height={get(theme.yoga.spacing, height, height)}
       {...(fill && { fill: get(theme.yoga.colors, fill, fill) })}
@@ -99,7 +108,26 @@ Icon.propTypes = {
    */
   description: string,
   /** Text used as identifier for aria-describedby, title and description */
-  ariaLabel: string,
+  ariaLabel: (props, propName, componentName) => {
+    const { title, ariaLabel } = props;
+
+    if (title && !ariaLabel) {
+      return new Error(
+        `accessible elements, such as title, must receive the ${propName} property as an identifier.`,
+      );
+    }
+
+    checkPropTypes(
+      {
+        [propName]: string,
+      },
+      { ariaLabel },
+      'prop',
+      componentName,
+    );
+
+    return null;
+  },
   /** Horizontal size of the SVG. Use it as one of
    * theme.spacing tokens (xxsmall, small, medium...) */
   width: oneOfType([oneOf(commonSizes), string, number]),
@@ -108,26 +136,7 @@ Icon.propTypes = {
   height: oneOfType([oneOf(commonSizes), string, number]),
   /** Size for vertical and horizontal of the SVG.
    * Use it as one of theme.spacing tokens (xxsmall, small, medium...) */
-  size: (props, propName, componentName) => {
-    const { size, width, height } = props;
-
-    if (size && (width || height)) {
-      return new Error(
-        `you must use only ${propName}, alone, or width and/or height in ${componentName}`,
-      );
-    }
-
-    checkPropTypes(
-      {
-        [propName]: oneOfType([oneOf(commonSizes), string, number]),
-      },
-      { size },
-      'prop',
-      componentName,
-    );
-
-    return null;
-  },
+  size: oneOfType([oneOf(commonSizes), string, number]),
 };
 
 Icon.defaultProps = {

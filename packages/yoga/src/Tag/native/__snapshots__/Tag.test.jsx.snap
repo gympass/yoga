@@ -78,6 +78,7 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
       }
     >
       <RNSVGSvgView
+        aria-hidden={true}
         bbHeight={16}
         bbWidth={16}
         fill="#231B22"
@@ -210,6 +211,7 @@ exports[`<Tag /> should match snapshot with custom icon and informative type 1`]
       }
     >
       <RNSVGSvgView
+        aria-hidden={true}
         bbHeight={12}
         bbWidth={12}
         fill="#231B22"

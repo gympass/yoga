@@ -266,6 +266,7 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     }
   >
     <RNSVGSvgView
+      aria-hidden={true}
       bbHeight={24}
       bbWidth={24}
       fill="#6B6B78"
@@ -1277,6 +1278,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     }
   >
     <RNSVGSvgView
+      aria-hidden={true}
       bbHeight={24}
       bbWidth={24}
       fill="#D8385E"
@@ -1603,6 +1605,7 @@ exports[`<Button /> Snapshots primary buttons With large prop should match snaps
     }
   >
     <RNSVGSvgView
+      aria-hidden={true}
       bbHeight={24}
       bbWidth={24}
       fill="#FFFFFF"
@@ -3247,6 +3250,7 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
     }
   >
     <RNSVGSvgView
+      aria-hidden={true}
       bbHeight={24}
       bbWidth={24}
       fill="#231B22"
@@ -3575,6 +3579,7 @@ exports[`<Button /> Snapshots secondary buttons With large prop should match sna
     }
   >
     <RNSVGSvgView
+      aria-hidden={true}
       bbHeight={24}
       bbWidth={24}
       fill="#FFFFFF"
@@ -4340,6 +4345,7 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     }
   >
     <RNSVGSvgView
+      aria-hidden={true}
       bbHeight={24}
       bbWidth={24}
       fill="#FFFFFF"

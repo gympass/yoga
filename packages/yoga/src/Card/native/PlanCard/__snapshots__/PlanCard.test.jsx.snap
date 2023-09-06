@@ -275,6 +275,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               }
             >
               <RNSVGSvgView
+                aria-hidden={true}
                 bbHeight={16}
                 bbWidth={16}
                 focusable={false}
@@ -402,6 +403,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               }
             >
               <RNSVGSvgView
+                aria-hidden={true}
                 bbHeight={16}
                 bbWidth={16}
                 fill="#231B22"

@@ -125,6 +125,7 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
         variant="success"
       >
         <RNSVGSvgView
+          aria-hidden={true}
           bbHeight={24}
           bbWidth={24}
           fill="#231B22"
@@ -585,6 +586,7 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
         variant="success"
       >
         <RNSVGSvgView
+          aria-hidden={true}
           bbHeight={24}
           bbWidth={24}
           fill="#231B22"

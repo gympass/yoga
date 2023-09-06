@@ -384,6 +384,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
               class="c15"
             >
               <svg
+                aria-hidden="true"
                 class="c16"
                 height="16"
                 stroke="#9898A6"
@@ -1149,6 +1150,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
               class="c15"
             >
               <svg
+                aria-hidden="true"
                 class="c16"
                 height="16"
                 stroke="#9898A6"

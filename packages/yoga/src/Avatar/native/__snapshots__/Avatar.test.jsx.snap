@@ -88,6 +88,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
   width={48}
 >
   <RNSVGSvgView
+    aria-hidden={true}
     bbHeight="50%"
     bbWidth="50%"
     fill="#FFFFFF"
@@ -201,6 +202,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
   width={48}
 >
   <RNSVGSvgView
+    aria-hidden={true}
     bbHeight="50%"
     bbWidth="50%"
     fill="#FFFFFF"
@@ -313,6 +315,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
   width={78}
 >
   <RNSVGSvgView
+    aria-hidden={true}
     bbHeight="50%"
     bbWidth="50%"
     fill="black"
@@ -426,6 +429,7 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
   width={48}
 >
   <RNSVGSvgView
+    aria-hidden={true}
     bbHeight="50%"
     bbWidth="50%"
     fill="#FFFFFF"
