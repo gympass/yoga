@@ -1,7 +1,5 @@
 name: Yoga
 
-on: pull_request
-
 jobs:
   linter_and_tests:
     runs-on: ubuntu-latest

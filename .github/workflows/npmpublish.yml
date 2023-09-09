@@ -1,12 +1,5 @@
 name: Yoga - Gympass Design System
 
-on:
-  push:
-    branches:
-      - master
-      - alpha
-      - beta
-
 jobs:
   packages:
     runs-on: ubuntu-latest

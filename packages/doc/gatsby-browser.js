@@ -1,1 +1,0 @@
-import './static/fonts.css';

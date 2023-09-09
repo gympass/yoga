@@ -1,0 +1,16 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "configMigration": false,
+  "extends": [
+    "config:recommended",
+    "docker:pinDigests",
+    "helpers:pinGitHubActionDigests",
+    ":pinDevDependencies"
+  ],
+  "semanticCommits": "enabled",
+  "minimumReleaseAge": "3 days",
+  "internalChecksFilter": "strict",
+  "prCreation": "not-pending",
+  "labels": ["type: dependencies"],
+  "forkProcessing": "enabled"
+}
