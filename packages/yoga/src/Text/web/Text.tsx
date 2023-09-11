@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import { system } from '@gympass/yoga-system';
+import { system, SystemProps } from '@gympass/yoga-system';
 import textStyle from '../textStyle.web';
 
 const typeOptions = [
@@ -20,43 +20,9 @@ const typeOptions = [
   'sectionTitle',
   'smallestException'
 ] as const;
-
 type Types = typeof typeOptions[number];
 
-const sizes = [
-  'xxsmall',
-  'xsmall',
-  'small',
-  'medium',
-  'large',
-  'xlarge',
-  'xxlarge',
-  'xxxlarge',
-  'huge',
-];
-type fontSizes = typeof sizes[number];
-
-const colors = [
-  'primary',
-  'secondary',
-  'vibin',
-  'hope',
-  'energy',
-  'relax',
-  'peace',
-  'verve',
-  'uplift',
-  'deepPurple',
-  'stamina',
-  'dark',
-  'medium',
-  'deep',
-  'light',
-  'clear',
-  'white'
-] as const;
-
-const styledText = (type: Types, element = false): React.FC<PropsWithChildren<TextProps>> => (element
+const styledText = (type: Types , element = false): React.FC<PropsWithChildren<TextProps>> => (element
   ? styled[type]
   : styled.p)`
     margin: 0;
@@ -93,8 +59,41 @@ const SectionTitle = styledText('sectionTitle');
 
 const SmallestException = styledText('smallestException');
 
+const colors = [
+  'primary',
+  'secondary',
+  'vibin',
+  'hope',
+  'energy',
+  'relax',
+  'peace',
+  'verve',
+  'uplift',
+  'deepPurple',
+  'stamina',
+  'dark',
+  'medium',
+  'deep',
+  'light',
+  'clear',
+  'white'
+] as const;
 type colorProps = typeof colors[number];
-interface TextProps {
+
+const sizes = [
+  'xxsmall',
+  'xsmall',
+  'small',
+  'medium',
+  'large',
+  'xlarge',
+  'xxlarge',
+  'xxxlarge',
+  'huge',
+] as const;
+type fontSizes = typeof sizes[number];
+
+interface TextProps extends SystemProps {
   inverted?: boolean;
   numberOfLines?: number;
   /** @deprecated use color instead */
@@ -109,7 +108,11 @@ interface TextProps {
 
 const TextRenderer = styledText('p');
 
-const Text = (props: PropsWithChildren<TextProps>) => <TextRenderer {...props} />;
+const Text = ({fontSize = 'medium', ...rest}: PropsWithChildren<TextProps>) => {
+  return (
+    <TextRenderer fontSize={fontSize} {...rest} />
+  );
+};
 
 Text.H1 = H1;
 Text.H2 = H2;
@@ -126,4 +129,4 @@ Text.Black = Black;
 Text.SectionTitle = SectionTitle;
 Text.SmallestException = SmallestException;
 
-export default Text;
+export { Text, TextRenderer };

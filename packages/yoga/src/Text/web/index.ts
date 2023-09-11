@@ -1,3 +1,3 @@
-import Text from './Text';
+import { Text, TextRenderer } from './Text';
 
-export default Text;
+export { Text, TextRenderer };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from '../..';
-import Text from '.';
+import { Text } from '.';
 
 describe('<Text />', () => {
   describe('Snapshots', () => {
@@ -34,7 +34,7 @@ describe('<Text />', () => {
         <ThemeProvider>
           <Text.H1 variant="primary">Live the mission</Text.H1>
           <Text.H2 variant="secondary">Live the mission</Text.H2>
-          <Text.H3 variant="tertiary">Live the mission</Text.H3>
+          <Text.H3 variant="energy">Live the mission</Text.H3>
         </ThemeProvider>,
       );
 
@@ -153,7 +153,7 @@ describe('<Text />', () => {
       const { container } = render(
         <ThemeProvider>
           <Text
-            color="text.primary"
+            color="primary"
             fontSize="small"
             fontWeight="medium"
             lineHeight="small"

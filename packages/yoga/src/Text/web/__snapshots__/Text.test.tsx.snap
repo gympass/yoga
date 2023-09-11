@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
-.c0 {
+.c1 {
   margin: 0;
   padding: 0;
   font-size: 48px;
@@ -11,7 +11,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   color: #231B22;
 }
 
-.c1 {
+.c2 {
   margin: 0;
   padding: 0;
   font-size: 40px;
@@ -21,7 +21,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   color: #231B22;
 }
 
-.c2 {
+.c3 {
   margin: 0;
   padding: 0;
   font-size: 32px;
@@ -31,7 +31,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   color: #231B22;
 }
 
-.c3 {
+.c4 {
   margin: 0;
   padding: 0;
   font-size: 24px;
@@ -41,7 +41,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   color: #231B22;
 }
 
-.c4 {
+.c5 {
   margin: 0;
   padding: 0;
   font-size: 20px;
@@ -132,7 +132,7 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   color: #231B22;
 }
 
-.c5 {
+.c0 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -144,33 +144,39 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
 }
 
 <div>
-  <h1
+  <p
     class="c0"
+    font-size="medium"
+  >
+    Live the mission
+  </p>
+  <h1
+    class="c1"
   >
     Live the mission
   </h1>
   <h2
-    class="c1"
+    class="c2"
   >
     Live the mission
   </h2>
   <h3
-    class="c2"
+    class="c3"
   >
     Live the mission
   </h3>
   <h4
-    class="c3"
+    class="c4"
   >
     Live the mission
   </h4>
   <h5
-    class="c4"
+    class="c5"
   >
     Live the mission
   </h5>
   <p
-    class="c5"
+    class="c0"
     font-size="medium"
   >
     Live the mission
@@ -433,7 +439,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   line-height: 40px;
   font-weight: 500;
   font-family: Rubik;
-  color: undefined;
+  color: #FFC24C;
 }
 
 <div>
@@ -720,7 +726,7 @@ exports[`<Text /> Snapshots should match snapshot with typography prop system 1`
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
-  color: #231B22;
+  color: #D8385E;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -729,7 +735,7 @@ exports[`<Text /> Snapshots should match snapshot with typography prop system 1`
 <div>
   <p
     class="c0"
-    color="text.primary"
+    color="primary"
     font-size="small"
     font-weight="medium"
   >

@@ -4,7 +4,7 @@ import { shape, string } from 'prop-types';
 import { Time } from '@gympass/yoga-icons';
 
 import Card from '../Card';
-import { TextRenderer, Text } from '../../../Text/web/Text';
+import { TextRenderer, Text } from '../../../Text';
 
 const Event = styled(Card)`
   display: flex;
