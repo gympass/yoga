@@ -166,6 +166,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
       class="c1 c2"
     >
       <svg
+        aria-hidden="true"
         class="c3"
         height="24"
         width="24"
@@ -189,6 +190,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
         class="c1 c7"
       >
         <svg
+          aria-hidden="true"
           class="c3"
           height="24"
           width="24"
@@ -370,6 +372,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
       class="c1 c2"
     >
       <svg
+        aria-hidden="true"
         class="c3"
         height="24"
         width="24"
@@ -393,6 +396,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
         class="c1 c7"
       >
         <svg
+          aria-hidden="true"
           class="c3"
           height="24"
           width="24"
@@ -559,6 +563,7 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
       class="c1 c2"
     >
       <svg
+        aria-hidden="true"
         class="c3"
         height="24"
         width="24"
@@ -832,6 +837,7 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
       class="c1 c2"
     >
       <svg
+        aria-hidden="true"
         class="c3"
         height="24"
         width="24"

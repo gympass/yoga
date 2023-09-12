@@ -88,6 +88,7 @@ exports[`<Menu /> should match snapshot Menu with a onMouseHover props false 1`]
     type="button"
   >
     <svg
+      aria-hidden="true"
       class="c1"
       height="24"
       width="24"
@@ -185,6 +186,7 @@ exports[`<Menu /> should match snapshot Menu with an align props end 1`] = `
       type="button"
     >
       <svg
+        aria-hidden="true"
         class="c1"
         height="24"
         width="24"
@@ -283,6 +285,7 @@ exports[`<Menu /> should match snapshot Menu with an align props start 1`] = `
       type="button"
     >
       <svg
+        aria-hidden="true"
         class="c1"
         height="24"
         width="24"
@@ -381,6 +384,7 @@ exports[`<Menu /> should match snapshot Menu.Item with active 1`] = `
       type="button"
     >
       <svg
+        aria-hidden="true"
         class="c1"
         height="24"
         width="24"
@@ -479,6 +483,7 @@ exports[`<Menu /> should match snapshot Menu.Item with disabled 1`] = `
       type="button"
     >
       <svg
+        aria-hidden="true"
         class="c1"
         height="24"
         width="24"
@@ -577,6 +582,7 @@ exports[`<Menu /> should match snapshot Menu.Item with disabled and icon 1`] = `
       type="button"
     >
       <svg
+        aria-hidden="true"
         class="c1"
         height="24"
         width="24"
@@ -675,6 +681,7 @@ exports[`<Menu /> should match snapshot Menu.Item with icon 1`] = `
       type="button"
     >
       <svg
+        aria-hidden="true"
         class="c1"
         height="24"
         width="24"
@@ -773,6 +780,7 @@ exports[`<Menu /> should match snapshot Menu.Item with link 1`] = `
       type="button"
     >
       <svg
+        aria-hidden="true"
         class="c1"
         height="24"
         width="24"
@@ -871,6 +879,7 @@ exports[`<Menu /> should match snapshot in default Menu 1`] = `
       type="button"
     >
       <svg
+        aria-hidden="true"
         class="c1"
         height="24"
         width="24"

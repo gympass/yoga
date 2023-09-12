@@ -125,6 +125,7 @@ exports[`<Snackbar /> should match snapshot 1`] = `
       role="img"
     >
       <svg
+        aria-hidden="true"
         class="c2"
         fill="#231B22"
         height="24"
@@ -144,6 +145,7 @@ exports[`<Snackbar /> should match snapshot 1`] = `
         role="button"
       >
         <svg
+          aria-hidden="true"
           class="c6"
           fill="#231B22"
           height="20"

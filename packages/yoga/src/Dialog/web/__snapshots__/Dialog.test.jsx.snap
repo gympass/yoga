@@ -446,6 +446,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
               class="c4"
             >
               <svg
+                aria-hidden="true"
                 class="c5"
                 height="24"
                 width="24"

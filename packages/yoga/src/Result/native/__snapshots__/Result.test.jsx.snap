@@ -50,6 +50,7 @@ exports[`<Result /> should match snapshot 1`] = `
     width={48}
   >
     <RNSVGSvgView
+      aria-hidden={true}
       bbHeight="50%"
       bbWidth="50%"
       fill="#FFFFFF"
@@ -190,6 +191,7 @@ exports[`<Result /> should match snapshot 1`] = `
           width="xsmall"
         >
           <RNSVGSvgView
+            aria-hidden={true}
             bbHeight={12}
             bbWidth={12}
             fill="#6B6B78"
@@ -306,6 +308,7 @@ exports[`<Result /> should match snapshot 1`] = `
           width="xsmall"
         >
           <RNSVGSvgView
+            aria-hidden={true}
             bbHeight={12}
             bbWidth={12}
             fill="#6B6B78"
@@ -423,6 +426,7 @@ exports[`<Result /> should match snapshot 1`] = `
         }
       >
         <RNSVGSvgView
+          aria-hidden={true}
           bbHeight={12}
           bbWidth={12}
           fill="#6B6B78"
@@ -1041,6 +1045,7 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
     width={48}
   >
     <RNSVGSvgView
+      aria-hidden={true}
       bbHeight="50%"
       bbWidth="50%"
       fill="#FFFFFF"
@@ -1532,6 +1537,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
     width={48}
   >
     <RNSVGSvgView
+      aria-hidden={true}
       bbHeight="50%"
       bbWidth="50%"
       fill="#FFFFFF"
@@ -1672,6 +1678,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
           width="xsmall"
         >
           <RNSVGSvgView
+            aria-hidden={true}
             bbHeight={12}
             bbWidth={12}
             fill="#6B6B78"
@@ -1788,6 +1795,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
           width="xsmall"
         >
           <RNSVGSvgView
+            aria-hidden={true}
             bbHeight={12}
             bbWidth={12}
             fill="#6B6B78"
@@ -1905,6 +1913,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         }
       >
         <RNSVGSvgView
+          aria-hidden={true}
           bbHeight={12}
           bbWidth={12}
           fill="#6B6B78"

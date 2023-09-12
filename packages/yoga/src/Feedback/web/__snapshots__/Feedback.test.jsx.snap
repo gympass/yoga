@@ -101,6 +101,7 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
         class="c1"
       >
         <svg
+          aria-hidden="true"
           class="c2"
           data-testid="feedback-icon"
           fill="#1D856C"
@@ -141,6 +142,7 @@ exports[`<Feedback /> should render the icon for attention variant 1`] = `
 }
 
 <svg
+  aria-hidden="true"
   class="c0"
   data-testid="feedback-icon"
   fill="#FF874C"
@@ -158,6 +160,7 @@ exports[`<Feedback /> should render the icon for informative variant 1`] = `
 }
 
 <svg
+  aria-hidden="true"
   class="c0"
   data-testid="feedback-icon"
   fill="#5340C9"
@@ -175,6 +178,7 @@ exports[`<Feedback /> should render the icon for success variant 1`] = `
 }
 
 <svg
+  aria-hidden="true"
   class="c0"
   data-testid="feedback-icon"
   fill="#1D856C"

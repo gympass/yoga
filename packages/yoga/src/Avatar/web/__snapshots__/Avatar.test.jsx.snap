@@ -75,6 +75,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
     width="48"
   >
     <svg
+      aria-hidden="true"
       class="c1"
       fill="#FFFFFF"
       height="50%"
@@ -121,6 +122,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
     width="48"
   >
     <svg
+      aria-hidden="true"
       class="c1"
       fill="#FFFFFF"
       height="50%"
@@ -211,6 +213,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
     width="78"
   >
     <svg
+      aria-hidden="true"
       class="c1"
       fill="black"
       height="50%"
@@ -257,6 +260,7 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
     width="48"
   >
     <svg
+      aria-hidden="true"
       class="c1"
       fill="#FFFFFF"
       height="50%"
