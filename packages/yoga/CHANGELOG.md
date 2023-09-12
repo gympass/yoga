@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.81.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.80.0...@gympass/yoga@7.81.0) (2023-09-12)
+
+
+### Features
+
+* add accessibility elements to icon ([4252e7f](https://github.com/Gympass/yoga/commit/4252e7feb2decf4f4757e160b0e0eb91b784363e))
+* description adjustments ([55ad2e5](https://github.com/Gympass/yoga/commit/55ad2e551349df616620df3f582c0fad2ad2c792))
+
+
+
+
+
 # [7.80.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.79.2...@gympass/yoga@7.80.0) (2023-09-04)
 
 
