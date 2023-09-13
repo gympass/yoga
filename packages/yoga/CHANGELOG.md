@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.81.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.81.0...@gympass/yoga@7.81.1) (2023-09-13)
+
+
+### Bug Fixes
+
+* **checkbox:** set the input value ([88e1edd](https://github.com/Gympass/yoga/commit/88e1edd16db3542ffe9b333b07a8ddf30ba3c2c6))
+
+
+
+
+
 # [7.81.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.80.0...@gympass/yoga@7.81.0) (2023-09-12)
 
 
