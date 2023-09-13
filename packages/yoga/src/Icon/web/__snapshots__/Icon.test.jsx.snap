@@ -36,7 +36,6 @@ exports[`Snapshots should match snapshot with acessible props 1`] = `
     fill="#231B22"
     height="16"
     role="img"
-    viewBox="0 0 12 12"
     width="16"
   >
     <title
