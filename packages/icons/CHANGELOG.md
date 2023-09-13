@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.13.0...@gympass/yoga-icons@1.14.0) (2023-09-13)
+
+
+### Bug Fixes
+
+* fix icon color and generic default props ([980636d](https://github.com/Gympass/yoga/commit/980636d2a1b714aa09bffe0a868e6c83e5334219))
+
+
+### Features
+
+* add new imports ([a5ecd5a](https://github.com/Gympass/yoga/commit/a5ecd5ab9d87e6402b775ec4c0365ac9c97f6731))
+* new svg icons ([bf5040e](https://github.com/Gympass/yoga/commit/bf5040e33e61d4da8105bbba3cf54d32c6bbd0ac))
+
+
+
+
+
 # [1.13.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.12.0...@gympass/yoga-icons@1.13.0) (2023-07-03)
 
 

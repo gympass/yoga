@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.81.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.81.1...@gympass/yoga@7.81.2) (2023-09-13)
+
+
+### Bug Fixes
+
+* fix icon color and generic default props ([980636d](https://github.com/Gympass/yoga/commit/980636d2a1b714aa09bffe0a868e6c83e5334219))
+
+
+
+
+
 ## [7.81.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.81.0...@gympass/yoga@7.81.1) (2023-09-13)
 
 
