@@ -9,6 +9,7 @@ import ArrowDropDown from './svg/arrow_drop_down.svg';
 import ArrowDropUp from './svg/arrow_drop_up.svg';
 import ArrowLeft from './svg/arrow_left.svg';
 import ArrowRight from './svg/arrow_right.svg';
+import AutomaticInvite from './svg/automatic_invite.svg';
 import Bank from './svg/bank.svg';
 import BankStatement from './svg/bank_statement.svg';
 import BarChart from './svg/bar_chart.svg';
@@ -91,6 +92,7 @@ import LogOut from './svg/log_out.svg';
 import Loop from './svg/loop.svg';
 import MailRead from './svg/mail_read.svg';
 import MailUnread from './svg/mail_unread.svg';
+import ManualInvite from './svg/manual_invite.svg';
 import MapPin from './svg/map_pin.svg';
 import Map from './svg/map.svg';
 import MartialArts from './svg/martial-arts.svg';
@@ -179,6 +181,7 @@ export {
   ArrowDropUp,
   ArrowLeft,
   ArrowRight,
+  AutomaticInvite,
   Bank,
   BankStatement,
   BarChart,
@@ -261,6 +264,7 @@ export {
   Loop,
   MailRead,
   MailUnread,
+  ManualInvite,
   MapPin,
   Map,
   MartialArts,
