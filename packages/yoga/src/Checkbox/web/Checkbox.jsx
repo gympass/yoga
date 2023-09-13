@@ -292,6 +292,7 @@ const Checkbox = ({
             ref={inputRef}
             checked={checked}
             disabled={disabled}
+            {...(value ? { value } : {})}
             {...rest}
           />
           {label}

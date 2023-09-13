@@ -161,6 +161,16 @@ describe('<Checkbox />', () => {
 
       expect(container).toMatchSnapshot();
     });
+
+    it('should match snapshot with a given value', () => {
+      const { container } = render(
+        <ThemeProvider>
+          <Checkbox {...data} value="test_value" />
+        </ThemeProvider>,
+      );
+
+      expect(container).toMatchSnapshot();
+    });
   });
 
   describe('Events', () => {
