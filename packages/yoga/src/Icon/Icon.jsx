@@ -50,7 +50,7 @@ const Icon = ({
     }
 
     const defaultProps = {
-      viewBox: '0 0 12 12',
+      ...Component.defaultProps,
       role: 'img',
       'aria-describedby': ariaDescribedBy,
     };
