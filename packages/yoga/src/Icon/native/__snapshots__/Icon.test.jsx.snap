@@ -37,7 +37,6 @@ exports[`Snapshots should match snapshot with accessible props 1`] = `
       },
     ]
   }
-  viewBox="0 0 12 12"
   width={16}
 >
   <title
