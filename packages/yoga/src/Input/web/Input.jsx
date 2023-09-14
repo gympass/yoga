@@ -105,8 +105,8 @@ const Input = React.forwardRef(
       rightIcon,
       a11yId,
       includeAriaAttributes,
-      prependElement,
-      prependElementWidth,
+      leftElement,
+      leftElementWidth,
       ...props
     },
     ref,
@@ -153,9 +153,7 @@ const Input = React.forwardRef(
           style={style}
           value={value}
         >
-          {prependElement && (
-            <PreprendElement>{prependElement}</PreprendElement>
-          )}
+          {leftElement && <PreprendElement>{leftElement}</PreprendElement>}
           {!children ? (
             <Field
               {...props}
@@ -172,9 +170,7 @@ const Input = React.forwardRef(
               value={value}
               onChange={onChange}
               {...a11yFieldProps}
-              style={
-                prependElementWidth ? { textIndent: prependElementWidth } : {}
-              }
+              style={leftElementWidth ? { textIndent: leftElementWidth } : {}}
             />
           ) : (
             children
@@ -261,10 +257,10 @@ Input.propTypes = {
   /** useful for components that extend the Input component and have their own ARIA attributes implementation (e.g. Dropdown) */
   includeAriaAttributes: bool,
 
-  /** prepend an element */
-  prependElement: node,
-  /** the width of the prepended element */
-  prependElementWidth: string,
+  /** element on the left */
+  leftElement: node,
+  /** the width of the element on the left */
+  leftElementWidth: string,
 };
 
 Input.defaultProps = {
@@ -287,8 +283,8 @@ Input.defaultProps = {
   rightIcon: undefined,
   a11yId: undefined,
   includeAriaAttributes: true,
-  prependElement: undefined,
-  prependElementWidth: undefined,
+  leftElement: undefined,
+  leftElementWidth: undefined,
 };
 
 export default Input;
