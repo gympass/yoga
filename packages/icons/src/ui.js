@@ -5,10 +5,12 @@ import Add from './svg/add.svg';
 import AirConditioning from './svg/air-conditioning.svg';
 import AlertCircle from './svg/alert_circle.svg';
 import AlertTriangle from './svg/alert_triangle.svg';
+import ArrowDown from './svg/arrow_down.svg';
 import ArrowDropDown from './svg/arrow_drop_down.svg';
 import ArrowDropUp from './svg/arrow_drop_up.svg';
 import ArrowLeft from './svg/arrow_left.svg';
 import ArrowRight from './svg/arrow_right.svg';
+import ArrowUp from './svg/arrow_up.svg';
 import AutomaticInvite from './svg/automatic_invite.svg';
 import Bank from './svg/bank.svg';
 import BankStatement from './svg/bank_statement.svg';
@@ -177,10 +179,12 @@ export {
   AirConditioning,
   AlertCircle,
   AlertTriangle,
+  ArrowDown,
   ArrowDropDown,
   ArrowDropUp,
   ArrowLeft,
   ArrowRight,
+  ArrowUp,
   AutomaticInvite,
   Bank,
   BankStatement,
