@@ -10,7 +10,9 @@
       "@gympass/yoga-system/*": ["./packages/system/src/*"],
       "@gympass/yoga-system": ["./packages/system/src"],
       "@gympass/yoga-tokens/*": ["./packages/tokens/src/*"],
-      "@gympass/yoga-tokens": ["./packages/tokens/src"]
+      "@gympass/yoga-tokens": ["./packages/tokens/src"],
+      "@gympass/yoga/*": ["./packages/yoga/src/*"],
+      "@gympass/yoga": ["./packages/yoga/src"]
     },
     "declaration": true,
     "outDir": "./dist/",
@@ -26,6 +28,7 @@
     "skipLibCheck": true,
     "moduleResolution": "node",
     "sourceMap": false,
-    "allowJs": true
+    "allowJs": true,
+    "checkJs": false
   }
 }
