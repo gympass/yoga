@@ -78,7 +78,7 @@ const IconWrapper = styled.div`
   `}
 `;
 
-const PreprendElement = styled.div`
+const LeftElementWrapper = styled.div`
   position: absolute;
   left: 8px;
   top: 50%;
@@ -153,7 +153,9 @@ const Input = React.forwardRef(
           style={style}
           value={value}
         >
-          {leftElement && <PreprendElement>{leftElement}</PreprendElement>}
+          {leftElement && (
+            <LeftElementWrapper>{leftElement}</LeftElementWrapper>
+          )}
           {!children ? (
             <Field
               {...props}
