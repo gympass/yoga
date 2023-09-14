@@ -1,7 +1,8 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
-import { system, SystemProps } from '@gympass/yoga-system';
+import { system } from '@gympass/yoga-system';
 import textStyle from '../textStyle.web';
+import { TextProps } from '../types';
 
 const typeOptions = [
   'p',
@@ -58,53 +59,6 @@ const Black = styledText('black');
 const SectionTitle = styledText('sectionTitle');
 
 const SmallestException = styledText('smallestException');
-
-const colors = [
-  'primary',
-  'secondary',
-  'vibin',
-  'hope',
-  'energy',
-  'relax',
-  'peace',
-  'verve',
-  'uplift',
-  'deepPurple',
-  'stamina',
-  'dark',
-  'medium',
-  'deep',
-  'light',
-  'clear',
-  'white'
-] as const;
-type colorProps = typeof colors[number];
-
-const sizes = [
-  'xxsmall',
-  'xsmall',
-  'small',
-  'medium',
-  'large',
-  'xlarge',
-  'xxlarge',
-  'xxxlarge',
-  'huge',
-] as const;
-type fontSizes = typeof sizes[number];
-
-interface TextProps extends SystemProps {
-  inverted?: boolean;
-  numberOfLines?: number;
-  /** @deprecated use color instead */
-  variant?: colorProps;
-  color?: colorProps;
-  /** @deprecated use fontSize instead */
-  size?: fontSizes;
-  fontSize?: fontSizes;
-  /** set the font-weight to regular */
-  light?: boolean;
-}
 
 const TextRenderer = styledText('p');
 
