@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.15.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.14.0...@gympass/yoga-icons@1.15.0) (2023-09-14)
+
+
+### Features
+
+* added arrow down icon ([90d0d7c](https://github.com/Gympass/yoga/commit/90d0d7c1f4d6463383882f46691f26f0152d8246))
+* added arrow up icon ([02d5655](https://github.com/Gympass/yoga/commit/02d5655630f53c77d3d22b6889425614e49e9b33))
+
+
+
+
+
 # [1.14.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.13.0...@gympass/yoga-icons@1.14.0) (2023-09-13)
 
 
