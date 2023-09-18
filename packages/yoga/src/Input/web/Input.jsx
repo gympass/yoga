@@ -79,10 +79,16 @@ const IconWrapper = styled.div`
 `;
 
 const LeftElementWrapper = styled.div`
-  position: absolute;
-  left: 8px;
-  top: 50%;
-  transform: translateY(-50%);
+  ${({
+    theme: {
+      yoga: { spacing },
+    },
+  }) => css`
+    position: absolute;
+    left: ${spacing.xxsmall}px;
+    top: 50%;
+    transform: translateY(-50%);
+  `}
 `;
 
 const Input = React.forwardRef(
