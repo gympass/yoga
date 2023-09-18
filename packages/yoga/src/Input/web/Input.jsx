@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useLayoutEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 import {
   arrayOf,
@@ -106,7 +106,6 @@ const Input = React.forwardRef(
       a11yId,
       includeAriaAttributes,
       leftElement,
-      leftElementWidth,
       ...props
     },
     ref,
@@ -143,6 +142,15 @@ const Input = React.forwardRef(
       a11yFieldProps = {};
     }
 
+    const leftElementRef = useRef(null);
+    const [leftElementTextIndent, setLeftElementTextIndent] = useState(0);
+
+    useLayoutEffect(() => {
+      if (leftElementRef.current) {
+        setLeftElementTextIndent(`${leftElementRef.current.offsetWidth}px`);
+      }
+    }, [leftElement]);
+
     return (
       <Control full={full}>
         <Fieldset
@@ -154,7 +162,9 @@ const Input = React.forwardRef(
           value={value}
         >
           {leftElement && (
-            <LeftElementWrapper>{leftElement}</LeftElementWrapper>
+            <LeftElementWrapper ref={leftElementRef}>
+              {leftElement}
+            </LeftElementWrapper>
           )}
           {!children ? (
             <Field
@@ -172,7 +182,7 @@ const Input = React.forwardRef(
               value={value}
               onChange={onChange}
               {...a11yFieldProps}
-              style={leftElementWidth ? { textIndent: leftElementWidth } : {}}
+              style={leftElement ? { textIndent: leftElementTextIndent } : {}}
             />
           ) : (
             children
@@ -261,8 +271,6 @@ Input.propTypes = {
 
   /** element on the left */
   leftElement: node,
-  /** the width of the element on the left */
-  leftElementWidth: string,
 };
 
 Input.defaultProps = {
@@ -286,7 +294,6 @@ Input.defaultProps = {
   a11yId: undefined,
   includeAriaAttributes: true,
   leftElement: undefined,
-  leftElementWidth: undefined,
 };
 
 export default Input;
