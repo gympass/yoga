@@ -2,12 +2,12 @@
   "name": "@gympass/yoga",
   "version": "7.87.1",
   "description": "Gympass component library",
-  "main": "./src",
+  "main": "src/index.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "yarn build:web && yarn build:native && yarn build:esm",
-    "build:web": "NODE_ENV=web babel ./src --out-dir dist/cjs",
-    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
+    "build": "yarn build:cjs && yarn build:esm",
+    "build:cjs": "tsup --outDir dist/cjs --format=cjs",
+    "build:esm": "tsup --format=esm --legacy-output",
     "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
     "prebuild": "rm -rf ./dist",
     "postbuild": "cp -r ./src/Fonts ./dist/fonts",
@@ -63,5 +63,15 @@
     "react": ">=16",
     "react-native": "0.72.3",
     "styled-components": "^4.4.0"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts",
+      "src/**/*.ts",
+      "src/**/*.js",
+      "!src/**/types"
+    ],
+    "splitting": false,
+    "bundle": false
   }
 }

@@ -2,6 +2,8 @@ module.exports = {
   testMatch: [
     '<rootDir>/packages/**/web/**/*.test.js',
     '<rootDir>/packages/**/web/**/*.test.jsx',
+    '<rootDir>/packages/**/web/**/*.test.ts',
+    '<rootDir>/packages/**/web/**/*.test.tsx',
   ],
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/jest/setup/web.js'],
