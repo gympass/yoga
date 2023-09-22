@@ -4,22 +4,157 @@ metaTitle: 'NavigationMenu'
 metaDescription: 'NavigationMenu Component'
 ---
 
-
-import NavigationMenuWeb from './navigationmenu-web.mdx';
-import NavigationMenuNative from './navigationmenu-native.mdx';
-
+import { ArrowRight, HHelp, Doc, Money } from '@gympass/yoga-icons';
+import { theme } from '@gympass/yoga';
 
 # NavigationMenu
 
+## Reference
 
-<TabbedView>
-  <Tab title="Web">
-    <NavigationMenuWeb />
-  </Tab>
+Gympass `<NavigationMenu />` displays a navigation menu with 3 optional main areas `<NavigationMenu.Header />`, `<NavigationMenu.Items />` and `<NavigationMenu.Footer />`.<br />
+`<NavigationMenu.Header />` and `<NavigationMenu.Footer />` can be used to display components like logos, `<NavigationMenu.Menu />` or `<NavigationMenu.Switcher />`.
 
-  <Tab title="Native">
-    <NavigationMenuNative />
-  </Tab>
-</TabbedView>
+Available components:
 
-  
+- `<NavigationMenu.Header />`
+- `<NavigationMenu.Items />`
+- `<NavigationMenu.Footer />`
+- `<NavigationMenu.ItemsGroup />`
+- `<NavigationMenu.Item />`
+- `<NavigationMenu.SubItem />`
+- `<NavigationMenu.Menu />`
+- `<NavigationMenu.Switcher />`
+
+### Usage
+
+#### Navigation menu
+
+```javascript state
+render(() => {
+  const renderWrapper = ({ children }) => (
+    <a href="https://www.gympass.com">{children}</a>
+  );
+
+  const IconComponent = ({ icon }) => <Icon as={icon} fill="deep" />;
+
+  return (
+    <NavigationMenu>
+      <NavigationMenu.Header>
+        <NavigationMenu.Menu
+          avatar={<Avatar.Circle />}
+          title="Company"
+          subTitle="Reseller"
+        />
+      </NavigationMenu.Header>
+
+      <NavigationMenu.Items>
+        <NavigationMenu.ItemsGroup>
+          <NavigationMenu.Item
+            expanded={true}
+            icon={<IconComponent icon={Doc} />}
+            label="Subscription"
+            wrapper={renderWrapper}
+            tag="new"
+          >
+            <NavigationMenu.SubItem label="Details" wrapper={renderWrapper} />
+          </NavigationMenu.Item>
+          <NavigationMenu.Item
+            icon={<IconComponent icon={Money} />}
+            label="Billing"
+            wrapper={renderWrapper}
+          />
+        </NavigationMenu.ItemsGroup>
+        <NavigationMenu.ItemsGroup>
+          <NavigationMenu.Item
+            icon={<IconComponent icon={Help} />}
+            label="Help"
+            wrapper={renderWrapper}
+          />
+        </NavigationMenu.ItemsGroup>
+      </NavigationMenu.Items>
+
+      <NavigationMenu.Footer>
+        <NavigationMenu.Switcher
+          avatar={<Avatar.Circle />}
+          title="User"
+          subTitle="Admin, Supervisor"
+        />
+      </NavigationMenu.Footer>
+    </NavigationMenu>
+  );
+});
+```
+
+#### Menu subcomponent with action
+
+```javascript state
+const StyledBox = styled(Box)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: ${theme.colors.vibin};
+`;
+
+render(() => {
+  return (
+    <NavigationMenu>
+      <NavigationMenu.Header>
+        <NavigationMenu.Menu
+          avatar={
+            <Avatar.Circle>
+              <StyledBox>
+                <Text color="white">C</Text>
+              </StyledBox>
+            </Avatar.Circle>
+          }
+          title="Company"
+          subTitle="Reseller"
+          onClick={() => alert('Menu clicked')}
+        />
+      </NavigationMenu.Header>
+    </NavigationMenu>
+  );
+});
+```
+
+#### Switcher subcomponent with actions
+
+```javascript state
+const StyledAvatar = styled(Avatar.Circle)`
+  background-color: ${theme.colors.white};
+  border: 1px solid ${theme.colors.light};
+`;
+
+const actions = [
+  {
+    id: 'Action 1',
+    label: 'Action 1',
+    onClick: () => alert('Action 1 clicked'),
+  },
+  {
+    id: 'Action 2',
+    label: 'Action 2',
+    onClick: () => alert('Action 2 clicked'),
+  },
+];
+
+render(() => {
+  return (
+    <NavigationMenu>
+      <NavigationMenu.Footer>
+        <NavigationMenu.Switcher
+          actions={actions}
+          avatar={<StyledAvatar fill="vibin" />}
+          title="User"
+          subTitle="Admin, Supervisor"
+        />
+      </NavigationMenu.Footer>
+    </NavigationMenu>
+  );
+});
+```
+
+### Props
+
