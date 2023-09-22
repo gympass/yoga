@@ -1,6 +1,5 @@
 import React from 'react';
-import { Text } from "@gympass/yoga";
-
+import { Text } from '@gympass/yoga';
 
 import * as Styles from './SubItem.styles';
 

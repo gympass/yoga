@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon } from "@gympass/yoga";
+import { Icon } from '@gympass/yoga';
 
 import * as Styles from './Item.styles';
 

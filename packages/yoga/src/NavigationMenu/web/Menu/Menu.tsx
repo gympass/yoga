@@ -1,6 +1,6 @@
 import React from 'react';
-import { ArrowRight } from "@gympass/yoga-icons";
-import { Icon, Box, Text, Skeleton, Avatar } from "@gympass/yoga";
+import { ArrowRight } from '@gympass/yoga-icons';
+import { Icon, Box, Text, Skeleton, Avatar } from '@gympass/yoga';
 
 import * as Styles from './Menu.styles';
 

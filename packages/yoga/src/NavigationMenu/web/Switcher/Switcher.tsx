@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, Skeleton, Icon, Avatar } from "@gympass/yoga";
+import { Box, Text, Skeleton, Icon, Avatar } from '@gympass/yoga';
 import Actions from './Actions';
 
 import * as Styles from './Switcher.styles';

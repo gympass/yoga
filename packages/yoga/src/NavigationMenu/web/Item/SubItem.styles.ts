@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme, Box } from "@gympass/yoga";
+import { theme, Box } from '@gympass/yoga';
 
 const { colors, spacing, radii, fontWeights } = theme as any;
 
@@ -8,6 +8,7 @@ export const SubItem = styled.li`
 
   background-color: transparent;
   border-radius: ${radii.small}px;
+  list-style-type: none;
 
   &:hover,
   &:focus {
@@ -19,6 +20,8 @@ export const SubItem = styled.li`
   }
 
   a {
+    text-decoration: none;
+    
     &.active {
       pointer-events: none;
 

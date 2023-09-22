@@ -1,6 +1,6 @@
 import React from 'react';
-import { Icon, Menu as YogaMenu } from "@gympass/yoga";
-import { MenuMore } from "@gympass/yoga-icons";
+import { Icon, Menu as YogaMenu } from '@gympass/yoga';
+import { MenuMore } from '@gympass/yoga-icons';
 import { SwitcherActionsProps } from './Switcher';
 
 import * as Styles from './Actions.styles';

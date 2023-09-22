@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme, Box, Text as YogaText, Tag as YogaTag } from "@gympass/yoga";
+import { theme, Box, Text as YogaText, Tag as YogaTag } from '@gympass/yoga';
 
 const { colors, spacing, radii, fontWeights } = theme as any;
 
@@ -30,6 +30,7 @@ export const Item = styled.li`
 
   background-color: transparent;
   border-radius: ${radii.small}px;
+  list-style-type: none;
 
   svg {
     height: ${spacing.medium}px;
@@ -50,6 +51,8 @@ export const Item = styled.li`
   }
 
   a {
+    text-decoration: none;
+
     &.active {
       pointer-events: none;
 

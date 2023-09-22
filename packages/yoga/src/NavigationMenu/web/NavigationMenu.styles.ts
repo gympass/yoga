@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme, Box } from "@gympass/yoga";
+import { theme, Box } from '@gympass/yoga';
 
 const { spacing, colors } = theme;
 
@@ -29,7 +29,8 @@ export const Items = styled.nav`
 export const ItemsGroup = styled.ul`
   display: flex;
   flex-direction: column;
-  padding-bottom: ${spacing.small}px;
+  margin: 0;
+  padding: 0 0 ${spacing.small}px 0;
   gap: ${spacing.xxxsmall}px;
 `;
 

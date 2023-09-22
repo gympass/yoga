@@ -23,7 +23,6 @@ import Snackbar from './Snackbar';
 import Banner from './Banner';
 import Skeleton from './Skeleton';
 import ActionRequirement from './ActionRequirement';
-import NavigationMenu from './NavigationMenu';
 
 export {
   ThemeProvider,
@@ -57,5 +56,4 @@ export {
   Banner,
   Skeleton,
   ActionRequirement,
-  NavigationMenu,
 };

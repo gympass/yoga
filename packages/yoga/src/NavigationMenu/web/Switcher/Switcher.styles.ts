@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme, Box } from "@gympass/yoga";
+import { theme, Box } from '@gympass/yoga';
 
 const { colors, spacing, radii } = theme;
 
