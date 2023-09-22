@@ -68,7 +68,9 @@ const Link = styled(Button)`
   }}
 `;
 
-const ButtonLink = props => <Link {...props} />;
+const ButtonLink = ({ disabled, ...props }) => (
+  <Link {...props} disabled={disabled} aria-disabled={disabled || undefined} />
+);
 
 ButtonLink.propTypes = {
   disabled: bool,
