@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from '@gympass/yoga';
 
-import * as Styles from './Subitem1.styles';
+import * as Styles from './Subitem.styles';
 
 export type SubitemProps = {
   label: string;
