@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, shape } from 'prop-types';
+import { string, arrayOf, shape, bool } from 'prop-types';
 import { hexToRgb } from '@gympass/yoga-common';
 import MetaDataQuery from './MetaDataQuery';
 
@@ -71,11 +71,7 @@ const StyledTable = styled.table`
   `};
 `;
 
-const Table = ({
-  data: {
-    node: { props: properties },
-  },
-}) => (
+export const Table = ({ properties }) => (
   <TableWrapper>
     <StyledTable>
       <thead>
@@ -115,15 +111,19 @@ const Table = ({
 );
 
 Table.propTypes = {
-  data: shape({}),
+  properties: arrayOf(
+    shape({
+      name: string,
+      description: shape({ text: string }),
+      type: shape({ name: string }),
+      required: bool,
+      defaultValue: shape({ value: string }),
+    }),
+  ),
 };
 
 Table.defaultProps = {
-  data: {
-    node: {
-      props: [],
-    },
-  },
+  properties: [],
 };
 
 const PropsTable = ({ component, platform = '' }) => {
@@ -131,13 +131,13 @@ const PropsTable = ({ component, platform = '' }) => {
     allComponentMetadata: { edges },
   } = MetaDataQuery();
 
-  const componentProps = edges.filter(
+  const { data } = edges.filter(
     ({ node }) =>
       node.parent.absolutePath.includes(platform) &&
       node.displayName === component,
   )[0];
 
-  return <Table data={componentProps} />;
+  return <Table properties={data?.node?.props} />;
 };
 
 PropsTable.propTypes = {

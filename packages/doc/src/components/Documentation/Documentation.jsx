@@ -13,6 +13,7 @@ import * as system from '@gympass/yoga-system';
 import {
   CodeBlock,
   PropsTable,
+  Table,
   InlineCode,
   TabbedView,
   Tab,
@@ -58,6 +59,7 @@ const customComponents = prefix => ({
   TabbedView: props => <TabbedView {...props} />,
   Tab: props => <Tab {...props} />,
   PropsTable,
+  Table,
   img: props => <Img {...props} prefix={prefix} />,
   Redirect: props => <Redirect {...props} />,
   Tokens: props => <Tokens {...props} />,
