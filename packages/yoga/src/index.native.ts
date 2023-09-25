@@ -17,6 +17,7 @@ import Icon from './Icon';
 import Chips from './Chips';
 import Box from './Box';
 import Avatar from './Avatar';
+// @ts-ignore
 import Result from './Result';
 import Divider from './Divider';
 import Snackbar from './Snackbar';
