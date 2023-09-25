@@ -1,7 +1,7 @@
 import Item from './Item';
-import SubItem from './SubItem';
+import Subitem from './Subitem1';
 
 export type { ItemProps } from './Item';
-export type { SubItemProps } from './SubItem';
+export type { SubitemProps } from './Subitem1';
 
-export { Item, SubItem };
+export { Item, Subitem };

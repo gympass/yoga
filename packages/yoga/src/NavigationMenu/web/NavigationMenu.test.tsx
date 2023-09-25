@@ -31,7 +31,7 @@ describe('<NavigationMenu />', () => {
                   wrapper={renderWrapper}
                   tag="new"
                 >
-                  <NavigationMenu.SubItem
+                  <NavigationMenu.Subitem
                     label="Details"
                     wrapper={renderWrapper}
                   />

@@ -1,16 +1,16 @@
 import React from 'react';
 import { Text } from '@gympass/yoga';
 
-import * as Styles from './SubItem.styles';
+import * as Styles from './Subitem1.styles';
 
-export type SubItemProps = {
+export type SubitemProps = {
   label: string;
   wrapper: React.FunctionComponent<any>;
 };
 
-const SubItem = ({ wrapper: Wrapper, label }: SubItemProps) => {
+const Subitem = ({ wrapper: Wrapper, label }: SubitemProps) => {
   return (
-    <Styles.SubItem>
+    <Styles.Subitem>
       <Wrapper>
         <Styles.Content>
           <Text.Small flex={1} numberOfLines={1} color="deep">
@@ -18,8 +18,8 @@ const SubItem = ({ wrapper: Wrapper, label }: SubItemProps) => {
           </Text.Small>
         </Styles.Content>
       </Wrapper>
-    </Styles.SubItem>
+    </Styles.Subitem>
   );
 };
 
-export default SubItem;
+export default Subitem;

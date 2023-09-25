@@ -1,7 +1,7 @@
 import React from 'react';
 import Menu from './Menu';
 import Switcher from './Switcher';
-import { Item, SubItem } from './Item';
+import { Item, Subitem } from './Item';
 
 import * as Styles from './NavigationMenu.styles';
 
@@ -19,7 +19,7 @@ NavigationMenu.Switcher = Switcher;
 NavigationMenu.Items = Styles.Items;
 NavigationMenu.ItemsGroup = Styles.ItemsGroup;
 NavigationMenu.Item = Item;
-NavigationMenu.SubItem = SubItem;
+NavigationMenu.Subitem = Subitem;
 NavigationMenu.Footer = Styles.Footer;
 
 export default NavigationMenu;

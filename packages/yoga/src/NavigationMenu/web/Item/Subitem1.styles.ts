@@ -3,7 +3,7 @@ import { theme, Box } from '@gympass/yoga';
 
 const { colors, spacing, radii, fontWeights } = theme;
 
-export const SubItem = styled.li`
+export const Subitem = styled.li`
   transition: background-color 0.28s ease-in-out;
 
   background-color: transparent;
