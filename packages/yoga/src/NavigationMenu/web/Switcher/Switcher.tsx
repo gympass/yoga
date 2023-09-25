@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, Skeleton, Icon, Avatar } from '@gympass/yoga';
+import { Box, Text, Skeleton } from '@gympass/yoga';
 import Actions from './Actions';
 
 import * as Styles from './Switcher.styles';
@@ -12,7 +12,7 @@ export type SwitcherActionsProps = {
 
 export type SwitcherProps = {
   actions?: SwitcherActionsProps[];
-  avatar: React.ReactElement<typeof Icon | typeof Avatar>;
+  avatar: React.ReactElement;
   fill?: string;
   sideOffset?: string;
   subTitle?: string;
