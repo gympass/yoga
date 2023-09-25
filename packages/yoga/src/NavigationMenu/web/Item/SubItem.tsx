@@ -4,8 +4,8 @@ import { Text } from '@gympass/yoga';
 import * as Styles from './SubItem.styles';
 
 export type SubItemProps = {
-  wrapper: React.FunctionComponent<any>;
   label: string;
+  wrapper: React.FunctionComponent<any>;
 };
 
 const SubItem = ({ wrapper: Wrapper, label }: SubItemProps) => {

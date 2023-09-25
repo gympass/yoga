@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { theme, Box } from '@gympass/yoga';
 
-const { colors, spacing, radii, fontWeights } = theme as any;
+const { colors, spacing, radii, fontWeights } = theme;
 
 export const SubItem = styled.li`
   transition: background-color 0.28s ease-in-out;
@@ -21,7 +21,7 @@ export const SubItem = styled.li`
 
   a {
     text-decoration: none;
-    
+
     &.active {
       pointer-events: none;
 

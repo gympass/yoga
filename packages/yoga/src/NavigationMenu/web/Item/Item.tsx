@@ -4,21 +4,21 @@ import { Icon } from '@gympass/yoga';
 import * as Styles from './Item.styles';
 
 export type ItemProps = {
+  children?: React.ReactNode;
   expanded?: boolean;
   icon?: React.ReactElement<typeof Icon>;
-  wrapper: React.FunctionComponent<any>;
   label: string;
   tag?: string;
-  children?: React.ReactNode;
+  wrapper: React.FunctionComponent<any>;
 };
 
 const Item = ({
+  children,
   expanded = false,
   icon: Icon,
-  wrapper: Wrapper,
   label,
   tag,
-  children,
+  wrapper: Wrapper,
 }: ItemProps) => {
   return (
     <>

@@ -18,7 +18,7 @@ describe('<NavigationMenu />', () => {
               <NavigationMenu.Menu
                 avatar={<Avatar.Circle />}
                 title="Company"
-                subTitle="Reseller"
+                subtitle="Reseller"
               />
             </NavigationMenu.Header>
 
@@ -55,7 +55,7 @@ describe('<NavigationMenu />', () => {
               <NavigationMenu.Switcher
                 avatar={<Avatar.Circle />}
                 title="User"
-                subTitle="Admin, Supervisor"
+                subtitle="Admin, Supervisor"
               />
             </NavigationMenu.Footer>
           </NavigationMenu>
@@ -74,8 +74,8 @@ describe('<NavigationMenu />', () => {
               <NavigationMenu.Menu
                 avatar={<Avatar.Circle />}
                 title="Company"
-                subTitle="Reseller"
-                onClick={() => alert('You clicked in the Menu component')}
+                subtitle="Reseller"
+                onClick={() => alert('Menu was clicked')}
               />
             </NavigationMenu.Header>
           </NavigationMenu>
@@ -90,12 +90,12 @@ describe('<NavigationMenu />', () => {
         {
           id: 'Action 1',
           label: 'Action 1',
-          onClick: () => alert('You selected Action 1'),
+          onClick: () => alert('Action 1 was selected'),
         },
         {
           id: 'Action 2',
           label: 'Action 2',
-          onClick: () => alert('You selected Action 2'),
+          onClick: () => alert('Action 2 was selected'),
         },
       ];
 
@@ -107,7 +107,7 @@ describe('<NavigationMenu />', () => {
                 actions={actions}
                 avatar={<Avatar.Circle />}
                 title="User"
-                subTitle="Admin, Supervisor"
+                subtitle="Admin, Supervisor"
               />
             </NavigationMenu.Footer>
           </NavigationMenu>

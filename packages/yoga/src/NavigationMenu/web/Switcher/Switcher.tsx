@@ -15,7 +15,7 @@ export type SwitcherProps = {
   avatar: React.ReactElement;
   fill?: string;
   sideOffset?: string;
-  subTitle?: string;
+  subtitle?: string;
   title: string;
 };
 
@@ -24,7 +24,7 @@ const Switcher = ({
   avatar: Avatar,
   fill = 'transparent',
   sideOffset = '4',
-  subTitle,
+  subtitle,
   title,
 }: SwitcherProps) => {
   const hasActions = actions?.length;
@@ -38,7 +38,7 @@ const Switcher = ({
           {title || <Skeleton type="text" variant="body2" width="100%" />}
         </Text.Small>
 
-        <Text.Tiny color="deep">{subTitle}</Text.Tiny>
+        <Text.Tiny color="deep">{subtitle}</Text.Tiny>
       </Box>
 
       {hasActions && <Actions actions={actions} sideOffset={sideOffset} />}

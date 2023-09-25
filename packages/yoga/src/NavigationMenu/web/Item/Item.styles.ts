@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { theme, Box, Text as YogaText, Tag as YogaTag } from '@gympass/yoga';
 
-const { colors, spacing, radii, fontWeights } = theme as any;
+const { colors, spacing, radii, fontWeights } = theme;
 
 export const Content = styled(Box)`
   display: flex;
