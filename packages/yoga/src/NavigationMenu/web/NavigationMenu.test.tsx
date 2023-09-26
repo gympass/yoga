@@ -25,7 +25,7 @@ describe('<NavigationMenu />', () => {
             <NavigationMenu.Items>
               <NavigationMenu.ItemsGroup>
                 <NavigationMenu.Item
-                  expanded={true}
+                  expanded
                   icon={<IconComponent />}
                   label="Subscription"
                   wrapper={renderWrapper}
