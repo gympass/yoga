@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Booking, BookingFilled } from '@gympass/yoga-icons';
-import { Text } from '@gympass/yoga';
 import styled, { css } from 'styled-components';
 import { bool, oneOf, func, instanceOf, string } from 'prop-types';
 import { format } from 'date-fns';
+import { Text } from '../..';
 import { theme } from '../../Theme';
 import Calendar from './Calendar';
 

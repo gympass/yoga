@@ -11,12 +11,15 @@
   },
   "dependencies": {
     "@gympass/yoga": "^7.87.1",
+    "@gympass/yoga-icons": "1.15.0",
+    "@gympass/yoga-illustrations": "0.5.1",
     "@react-native-masked-view/masked-view": "^0.2.6",
     "@react-native-picker/picker": "^2.4.9",
     "@react-navigation/drawer": "^6.4.1",
     "@react-navigation/native": "^6.0.4",
     "@react-navigation/stack": "^6.0.9",
     "deprecated-react-native-prop-types": "^2.3.0",
+    "prop-types": "^15.8.1",
     "react": "18.2.0",
     "react-native": "0.72.3",
     "react-native-gesture-handler": "^1.10.3",
@@ -25,6 +28,7 @@
     "react-native-screens": "^2.0.0-beta.2",
     "react-native-svg": "^10.0.0",
     "react-native-svg-transformer": "^0.14.3",
+    "react-test-renderer": "^18.2.0",
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
