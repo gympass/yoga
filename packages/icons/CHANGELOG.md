@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.15.0...@gympass/yoga-icons@1.16.0) (2023-09-27)
+
+
+### Features
+
+* **icons:** add shine icon ([0d6f5fe](https://github.com/Gympass/yoga/commit/0d6f5fe363085a4ca7bfa8fba287b1b0515f68ca))
+
+
+
+
+
 # [1.15.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.14.0...@gympass/yoga-icons@1.15.0) (2023-09-14)
 
 
