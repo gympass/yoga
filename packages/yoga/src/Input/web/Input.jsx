@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useLayoutEffect, useState } from 'react';
 import styled, { css } from 'styled-components';
 import {
   arrayOf,
@@ -78,6 +78,19 @@ const IconWrapper = styled.div`
   `}
 `;
 
+const LeftElementWrapper = styled.div`
+  ${({
+    theme: {
+      yoga: { spacing },
+    },
+  }) => css`
+    position: absolute;
+    left: ${spacing.xxsmall}px;
+    top: 50%;
+    transform: translateY(-50%);
+  `}
+`;
+
 const Input = React.forwardRef(
   (
     {
@@ -98,6 +111,7 @@ const Input = React.forwardRef(
       rightIcon,
       a11yId,
       includeAriaAttributes,
+      leftElement,
       ...props
     },
     ref,
@@ -134,6 +148,15 @@ const Input = React.forwardRef(
       a11yFieldProps = {};
     }
 
+    const leftElementRef = useRef(null);
+    const [leftElementTextIndent, setLeftElementTextIndent] = useState(0);
+
+    useLayoutEffect(() => {
+      if (leftElementRef.current) {
+        setLeftElementTextIndent(`${leftElementRef.current.offsetWidth}px`);
+      }
+    }, [leftElement]);
+
     return (
       <Control full={full}>
         <Fieldset
@@ -144,6 +167,11 @@ const Input = React.forwardRef(
           style={style}
           value={value}
         >
+          {leftElement && (
+            <LeftElementWrapper ref={leftElementRef}>
+              {leftElement}
+            </LeftElementWrapper>
+          )}
           {!children ? (
             <Field
               {...props}
@@ -160,6 +188,7 @@ const Input = React.forwardRef(
               value={value}
               onChange={onChange}
               {...a11yFieldProps}
+              style={leftElement ? { textIndent: leftElementTextIndent } : {}}
             />
           ) : (
             children
@@ -245,6 +274,9 @@ Input.propTypes = {
   a11yId: string,
   /** useful for components that extend the Input component and have their own ARIA attributes implementation (e.g. Dropdown) */
   includeAriaAttributes: bool,
+
+  /** element on the left */
+  leftElement: node,
 };
 
 Input.defaultProps = {
@@ -267,6 +299,7 @@ Input.defaultProps = {
   rightIcon: undefined,
   a11yId: undefined,
   includeAriaAttributes: true,
+  leftElement: undefined,
 };
 
 export default Input;
