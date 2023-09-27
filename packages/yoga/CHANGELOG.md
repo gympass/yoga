@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.82.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.81.3...@gympass/yoga@7.82.0) (2023-09-27)
+
+
+### Features
+
+* prepend element to Input ([d6dbb1b](https://github.com/Gympass/yoga/commit/d6dbb1be0d9947d173a4952a47a59cbc47cffc3c))
+
+
+
+
+
 ## [7.81.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.81.2...@gympass/yoga@7.81.3) (2023-09-14)
 
 **Note:** Version bump only for package @gympass/yoga

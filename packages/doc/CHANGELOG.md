@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.40.16](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.40.15...@gympass/yoga-doc@2.40.16) (2023-09-27)
+
+**Note:** Version bump only for package @gympass/yoga-doc
+
+
+
+
+
 ## [2.40.15](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.40.14...@gympass/yoga-doc@2.40.15) (2023-09-14)
 
 **Note:** Version bump only for package @gympass/yoga-doc
