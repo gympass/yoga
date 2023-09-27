@@ -133,7 +133,7 @@ import ShareAndroid from './svg/share_android.svg';
 import ShareIos from './svg/share_ios.svg';
 import ShieldCheck from './svg/shield_check.svg';
 import ShieldSecure from './svg/shield_secure.svg';
-import Shine from './svg/shine.svg';
+import ShineFilled from './svg/shine_filled.svg';
 import Shower from './svg/shower.svg';
 import ShowerTowels from './svg/shower-towels.svg';
 import Signal from './svg/signal.svg';
@@ -308,7 +308,7 @@ export {
   ShareIos,
   ShieldCheck,
   ShieldSecure,
-  Shine,
+  ShineFilled,
   Shower,
   ShowerTowels,
   Signal,
