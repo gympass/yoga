@@ -157,9 +157,37 @@ Display an extra content before the divider.
       </PlanCard.ListItem>
       <PlanCard.ListItem
         icon={Dumbbell}
-        text="This content should be truncated"
+        text="List item with a long text that should be truncated"
       />
       <PlanCard.ListItem icon={User} text="4x/month 1-on-1 sessions" />
+    </PlanCard.List>
+  </PlanCard.Content>
+</PlanCard>
+```
+
+#### List item with a clickable content
+
+```javascript
+<PlanCard>
+  <PlanCard.Content
+    title="Gold"
+    currency="$"
+    price="99.90"
+    period="/mo"
+    badgeColor="energy"
+  >
+    <PlanCard.List>
+      <PlanCard.ListItem
+        icon={Dumbbell}
+        text="List item with a long text that should not be truncated"
+        truncate={false}
+        onClick={() => alert('List item clicked!')}
+      />
+      <PlanCard.ListItem
+        icon={Dumbbell}
+        text="List item with a long text that should be truncated"
+        onClick={() => alert('List item clicked!')}
+      />
     </PlanCard.List>
   </PlanCard.Content>
 </PlanCard>

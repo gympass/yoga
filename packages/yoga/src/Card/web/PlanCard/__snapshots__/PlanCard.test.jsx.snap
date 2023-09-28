@@ -2,6 +2,7 @@
 
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
 .c15 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -283,7 +284,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-width: 0;
+  width: 100%;
 }
 
 .c14 svg {
@@ -398,6 +399,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             <div
               class="c15"
               display="flex"
+              width="100%"
             >
               <div
                 class="c16"
@@ -427,6 +429,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
             <div
               class="c15"
               display="flex"
+              width="100%"
             >
               <div
                 class="c16"
@@ -788,6 +791,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
 
 exports[`<PlanCard /> Snapshots should render list item content as button 1`] = `
 .c15 {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1069,11 +1073,12 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-width: 0;
+  width: 100%;
   border: none;
   padding: 0;
   background: transparent;
   cursor: pointer;
+  text-align: start;
 }
 
 .c14 svg {
@@ -1189,6 +1194,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
             <div
               class="c15"
               display="flex"
+              width="100%"
             >
               <div
                 class="c16"
@@ -1219,6 +1225,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
             <div
               class="c15"
               display="flex"
+              width="100%"
             >
               <div
                 class="c16"

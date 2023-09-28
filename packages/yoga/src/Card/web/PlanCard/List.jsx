@@ -37,7 +37,7 @@ const Item = styled.li`
 const Wrapper = styled(Box)`
   display: flex;
   flex-direction: column;
-  min-width: 0;
+  width: 100%;
 
   ${props =>
     props.as === 'button' &&
@@ -46,6 +46,7 @@ const Wrapper = styled(Box)`
       padding: 0;
       background: transparent;
       cursor: pointer;
+      text-align: start;
     `}
 
   svg {
@@ -103,7 +104,7 @@ const ListItem = withTheme(props => {
   return (
     <Item>
       <Wrapper {...wrapperProps}>
-        <Box display="flex" alignItems="flex-start">
+        <Box display="flex" alignItems="flex-start" width="100%">
           {Icon && (
             <IconWrapper>
               {isValidElement(Icon) ? (
