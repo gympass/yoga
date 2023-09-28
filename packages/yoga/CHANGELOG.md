@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.83.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.82.1...@gympass/yoga@7.83.0) (2023-09-28)
+
+
+### Features
+
+* **yoga:** add props to PlanCard.ListItem ([23b1494](https://github.com/Gympass/yoga/commit/23b14943305f1c75832338216477773566d47358))
+
+
+
+
+
 ## [7.82.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.82.0...@gympass/yoga@7.82.1) (2023-09-27)
 
 **Note:** Version bump only for package @gympass/yoga
