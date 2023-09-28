@@ -1,12 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] = `
-.c16 {
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c17 {
   width: 16px;
   height: 16px;
 }
 
-.c20 {
+.c21 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -45,7 +56,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   text-decoration: none;
 }
 
-.c20 svg {
+.c21 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -54,17 +65,17 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   transition: fill 0.2s;
 }
 
-.c20:not([disabled]):hover,
-.c20:not([disabled]):focus {
+.c21:not([disabled]):hover,
+.c21:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(216,56,94,0.45);
 }
 
-.c20:active {
+.c21:active {
   background-color: rgba(216,56,94,0.75);
   color: #FFFFFF;
 }
 
-.c20:active svg {
+.c21:active svg {
   fill: #FFFFFF;
 }
 
@@ -78,7 +89,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   color: #231B22;
 }
 
-.c19 {
+.c20 {
   margin-top: 24px;
 }
 
@@ -247,12 +258,17 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   list-style: none;
 }
 
-.c15 {
+.c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 8px;
+  min-height: 20px;
 }
 
 .c13:not(:last-child) {
@@ -264,11 +280,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-width: 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .c14 svg {
@@ -277,7 +292,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   flex-shrink: 0;
 }
 
-.c17 {
+.c18 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -294,7 +309,7 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   text-overflow: ellipsis;
 }
 
-.c18 {
+.c19 {
   display: block;
   padding: 0;
   margin-top: 12px;
@@ -382,20 +397,25 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           >
             <div
               class="c15"
+              display="flex"
             >
-              <svg
-                aria-hidden="true"
+              <div
                 class="c16"
-                height="16"
-                stroke="#9898A6"
-                width="16"
-              />
+              >
+                <svg
+                  aria-hidden="true"
+                  class="c17"
+                  height="16"
+                  stroke="#9898A6"
+                  width="16"
+                />
+              </div>
+              <span
+                class="c18"
+              >
+                gyms and studios
+              </span>
             </div>
-            <span
-              class="c17"
-            >
-              gyms and studios
-            </span>
           </div>
         </li>
         <li
@@ -406,21 +426,26 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
           >
             <div
               class="c15"
+              display="flex"
             >
-              <svg
-                fill="#231B22"
-                height="16"
-                width="16"
-              />
+              <div
+                class="c16"
+              >
+                <svg
+                  fill="#231B22"
+                  height="16"
+                  width="16"
+                />
+              </div>
+              <span
+                class="c18"
+              >
+                list item
+              </span>
             </div>
-            <span
-              class="c17"
-            >
-              list item
-            </span>
           </div>
           <a
-            class="c18"
+            class="c19"
           >
             button
           </a>
@@ -428,10 +453,10 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       </ul>
     </div>
     <footer
-      class="c19"
+      class="c20"
     >
       <button
-        class="c20"
+        class="c21"
       >
         Select this plan
       </button>
@@ -762,12 +787,23 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
 `;
 
 exports[`<PlanCard /> Snapshots should render list item content as button 1`] = `
-.c16 {
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c17 {
   width: 16px;
   height: 16px;
 }
 
-.c20 {
+.c21 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -806,7 +842,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   text-decoration: none;
 }
 
-.c20 svg {
+.c21 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -815,17 +851,17 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   transition: fill 0.2s;
 }
 
-.c20:not([disabled]):hover,
-.c20:not([disabled]):focus {
+.c21:not([disabled]):hover,
+.c21:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(216,56,94,0.45);
 }
 
-.c20:active {
+.c21:active {
   background-color: rgba(216,56,94,0.75);
   color: #FFFFFF;
 }
 
-.c20:active svg {
+.c21:active svg {
   fill: #FFFFFF;
 }
 
@@ -839,7 +875,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   color: #231B22;
 }
 
-.c19 {
+.c20 {
   margin-top: 24px;
 }
 
@@ -1008,12 +1044,17 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   list-style: none;
 }
 
-.c15 {
+.c16 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 8px;
+  min-height: 20px;
 }
 
 .c13:not(:last-child) {
@@ -1025,11 +1066,10 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-width: 0;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   border: none;
   padding: 0;
   background: transparent;
@@ -1042,7 +1082,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   flex-shrink: 0;
 }
 
-.c17 {
+.c18 {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -1059,7 +1099,7 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   text-overflow: ellipsis;
 }
 
-.c18 {
+.c19 {
   display: block;
   padding: 0;
   margin-top: 12px;
@@ -1148,20 +1188,25 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
           >
             <div
               class="c15"
+              display="flex"
             >
-              <svg
-                aria-hidden="true"
+              <div
                 class="c16"
-                height="16"
-                stroke="#9898A6"
-                width="16"
-              />
+              >
+                <svg
+                  aria-hidden="true"
+                  class="c17"
+                  height="16"
+                  stroke="#9898A6"
+                  width="16"
+                />
+              </div>
+              <span
+                class="c18"
+              >
+                gyms and studios
+              </span>
             </div>
-            <span
-              class="c17"
-            >
-              gyms and studios
-            </span>
           </button>
         </li>
         <li
@@ -1173,21 +1218,26 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
           >
             <div
               class="c15"
+              display="flex"
             >
-              <svg
-                fill="#231B22"
-                height="16"
-                width="16"
-              />
+              <div
+                class="c16"
+              >
+                <svg
+                  fill="#231B22"
+                  height="16"
+                  width="16"
+                />
+              </div>
+              <span
+                class="c18"
+              >
+                list item
+              </span>
             </div>
-            <span
-              class="c17"
-            >
-              list item
-            </span>
           </button>
           <a
-            class="c18"
+            class="c19"
           >
             button
           </a>
@@ -1195,10 +1245,10 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
       </ul>
     </div>
     <footer
-      class="c19"
+      class="c20"
     >
       <button
-        class="c20"
+        class="c21"
       >
         Select this plan
       </button>

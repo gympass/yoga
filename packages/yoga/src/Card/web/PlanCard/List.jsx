@@ -1,6 +1,6 @@
 import React, { isValidElement } from 'react';
 import styled, { css, withTheme } from 'styled-components';
-import { string, node, shape, oneOfType, func } from 'prop-types';
+import { string, node, shape, oneOfType, func, bool } from 'prop-types';
 
 import Text from '../../../Text';
 import theme from '../../../Theme/helpers/themeReader';
@@ -23,7 +23,9 @@ const List = styled.ul`
 
 const IconWrapper = styled.div`
   display: flex;
+  align-items: center;
   margin-right: ${cardweb.plan.list.item.icon.margin.right}px;
+  min-height: ${props => props.theme.yoga.spacing.medium}px;
 `;
 
 const Item = styled.li`
@@ -34,8 +36,8 @@ const Item = styled.li`
 
 const Wrapper = styled(Box)`
   display: flex;
+  flex-direction: column;
   min-width: 0;
-  align-items: center;
 
   ${props =>
     props.as === 'button' &&
@@ -58,7 +60,7 @@ const ItemText = styled(Text.Small)`
 
   color: ${card.plan.list.item.font.color};
 
-  ${truncateStyle}
+  ${props => props.truncate && truncateStyle}
 `;
 
 const Button = styled.button`
@@ -86,15 +88,22 @@ const Button = styled.button`
   ${truncateStyle}
 `;
 
-const ListItem = withTheme(
-  ({ text, icon: Icon, buttonProps, theme: yogaTheme, onClick }) => {
-    const wrapperProps = onClick
-      ? { as: 'button', type: 'button', onClick }
-      : {};
+const ListItem = withTheme(props => {
+  const {
+    text,
+    truncate,
+    icon: Icon,
+    buttonProps,
+    theme: yogaTheme,
+    children,
+    onClick,
+  } = props;
+  const wrapperProps = onClick ? { as: 'button', type: 'button', onClick } : {};
 
-    return (
-      <Item>
-        <Wrapper {...wrapperProps}>
+  return (
+    <Item>
+      <Wrapper {...wrapperProps}>
+        <Box display="flex" alignItems="flex-start">
           {Icon && (
             <IconWrapper>
               {isValidElement(Icon) ? (
@@ -108,15 +117,16 @@ const ListItem = withTheme(
               )}
             </IconWrapper>
           )}
-          <ItemText as="span">{text}</ItemText>
-        </Wrapper>
-        {Boolean(Object.keys(buttonProps).length) && (
-          <Button {...buttonProps} />
-        )}
-      </Item>
-    );
-  },
-);
+          <ItemText as="span" truncate={truncate}>
+            {text}
+          </ItemText>
+        </Box>
+        {children}
+      </Wrapper>
+      {Boolean(Object.keys(buttonProps).length) && <Button {...buttonProps} />}
+    </Item>
+  );
+});
 
 List.displayName = 'PlanCard.List';
 ListItem.displayName = 'PlanCard.ListItem';
@@ -131,12 +141,16 @@ ListItem.propTypes = {
   buttonProps: shape({}),
   /** if provided makes the item clickable */
   onClick: func,
+  children: node,
+  truncate: bool,
 };
 
 ListItem.defaultProps = {
+  truncate: true,
   icon: undefined,
   buttonProps: {},
   onClick: undefined,
+  children: undefined,
 };
 
 export { List, ListItem };
