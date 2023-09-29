@@ -31,7 +31,7 @@ Icon works out of the box for both platforms.
 ```
 import { Star } from '@gympass/yoga-icons';
 
-export default () => <Star fill="#f00 />;
+export default () => <Star fill="#f01 />;
 ```
 
 Here you can check an example in [web](https://gympass.github.io/yoga/components/icons#web) and [native](https://gympass.github.io/yoga/components/icons#native) platforms.

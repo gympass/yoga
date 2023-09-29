@@ -13,6 +13,7 @@ export const Title = styled(Text.H4).attrs({
     },
   }) => css`
     margin-bottom: 6px;
+
     @media (min-width: 769px) {
       max-width: 700px;
       font-size: ${fontSizes.huge}px;

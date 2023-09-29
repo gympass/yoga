@@ -61,7 +61,7 @@ interface ElevateWithLevel extends ElevateWithoutLevel {
 function elevate(options: ElevateWithoutLevel): [string, string, string, string];
 function elevate(options: ElevateWithLevel): string;
 function elevate(options: ElevateWithLevel | ElevateWithoutLevel) {
-  const { color = '#000', depth = 3, spread = true, fallback = true } = options;
+  const { color = '#000000', depth = 3, spread = true, fallback = true } = options;
 
   const all = [
     fallback ? '0 0 0 rgba(0, 0, 0, 0)' : 'none',
