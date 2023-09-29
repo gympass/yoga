@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.83.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.83.0...@gympass/yoga@7.83.1) (2023-09-29)
+
+
+### Bug Fixes
+
+* **yoga:** fix style from PlanCard.ListItem when it is clickable ([ecf6a88](https://github.com/Gympass/yoga/commit/ecf6a885ec4dce6e1d62631f0464614d5bc36630))
+
+
+
+
+
 # [7.83.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.82.1...@gympass/yoga@7.83.0) (2023-09-28)
 
 
