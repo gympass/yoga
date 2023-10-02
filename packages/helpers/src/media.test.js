@@ -10,10 +10,11 @@ const formatCss = style =>
     ? style.join().replace(/,|\s*/g, '')
     : style.replace(/,|\s*/g, '');
 
-const expectedStyle = (...args) =>
-  formatCss(matcher(...args)`
-padding: 10px;
-`);
+const expectedStyle = (...args) => {
+  return formatCss(matcher(...args)`
+    padding: 10px;
+  `);
+};
 
 const expectedHideStyle = breakpoint =>
   formatCss(`@media (min-width: ${breakpoints[breakpoint].width}px) {
