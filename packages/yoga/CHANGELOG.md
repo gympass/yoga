@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.84.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.83.2...@gympass/yoga@7.84.0) (2023-10-02)
+
+
+### Features
+
+* add aria label and aria disabled ([00e1edc](https://github.com/Gympass/yoga/commit/00e1edc3f12e63b8582475b38f5067ef63ece8a6))
+
+
+
+
+
 ## [7.83.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.83.1...@gympass/yoga@7.83.2) (2023-10-02)
 
 **Note:** Version bump only for package @gympass/yoga
