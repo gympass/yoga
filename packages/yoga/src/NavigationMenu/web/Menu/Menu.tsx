@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from '@gympass/yoga-icons';
-import { Icon, Box, Text, Skeleton } from '@gympass/yoga';
+import { Icon, Text, Skeleton } from '@gympass/yoga';
 
 import * as Styles from './Menu.styles';
 
@@ -18,13 +18,13 @@ const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
     <Styles.Menu hasAction={hasAction} onClick={onClick}>
       {Avatar}
 
-      <Box flex={1}>
-        <Text.Small fw="medium" title={title} numberOfLines={1}>
+      <Styles.TextContainer>
+        <Styles.Text>
           {title || <Skeleton type="text" variant="body2" width="100%" />}
-        </Text.Small>
+        </Styles.Text>
 
         <Text.Small color="deep">{subtitle}</Text.Small>
-      </Box>
+      </Styles.TextContainer>
 
       {hasAction && <Icon as={ArrowRight} size="large" fill="vibin" />}
     </Styles.Menu>

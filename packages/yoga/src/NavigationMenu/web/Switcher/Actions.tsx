@@ -19,7 +19,7 @@ const Actions = ({ actions, sideOffset }: ActionsProps) => {
         </Styles.Action>
       </YogaMenu.Action>
 
-      <YogaMenu.List side="right" sideOffset={sideOffset} zIndex="100">
+      <YogaMenu.List side="right" sideOffset={sideOffset} zIndex="10">
         {actions.map(({ id, label, onClick }) => (
           <YogaMenu.Item key={id} onClick={onClick}>
             {label}

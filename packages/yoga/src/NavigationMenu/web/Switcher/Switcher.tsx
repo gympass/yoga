@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, Skeleton } from '@gympass/yoga';
+import { Text, Skeleton } from '@gympass/yoga';
 import Actions from './Actions';
 
 import * as Styles from './Switcher.styles';
@@ -33,13 +33,13 @@ const Switcher = ({
     <Styles.Switcher fill={fill}>
       {Avatar}
 
-      <Box flex={1}>
-        <Text.Small fw="medium" numberOfLines={1} title={title}>
+      <Styles.TextContainer>
+        <Styles.Text>
           {title || <Skeleton type="text" variant="body2" width="100%" />}
-        </Text.Small>
+        </Styles.Text>
 
         <Text.Tiny color="deep">{subtitle}</Text.Tiny>
-      </Box>
+      </Styles.TextContainer>
 
       {hasActions && <Actions actions={actions} sideOffset={sideOffset} />}
     </Styles.Switcher>

@@ -1,16 +1,38 @@
 import styled from 'styled-components';
 import { theme, Box } from '@gympass/yoga';
+import { media } from '@gympass/yoga-helpers';
 
 const { spacing, colors } = theme;
 
-export const NavigationMenu = styled(Box)`
+type NavigationMenuProps = {
+  isOpenOnMobile: boolean;
+  isResponsive: boolean;
+};
+
+export const NavigationMenu = styled(Box)<NavigationMenuProps>`
   display: flex;
   flex-direction: column;
-  width: 280px;
-  height: 100%;
   gap: ${spacing.medium}px;
   padding: ${spacing.small}px ${spacing.xsmall}px;
   background-color: ${colors.clear};
+
+  width: 280px;
+  height: 100%;
+  right: 0;
+
+  transition: width 300ms ease-in-out;
+
+  ${({ isResponsive }) =>
+    isResponsive &&
+    media.max('lg')`
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 74px);
+    z-index: 10;
+    right: ${({ isOpenOnMobile }) => (isOpenOnMobile ? '0' : '-100%')};
+
+    transition: right 300ms ease-in-out;
+  `}
 `;
 
 export const Header = styled(Box)`

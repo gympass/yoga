@@ -1,14 +1,14 @@
 import styled, { css } from 'styled-components';
-import { theme, Box } from '@gympass/yoga';
+import { theme, Box, Text as YogaText } from '@gympass/yoga';
 
-const { spacing, colors, radii } = theme;
+const { spacing, colors, radii, fontWeights } = theme;
 
 type MenuProps = {
   hasAction: boolean;
 };
 
 export const Menu = styled(Box)<MenuProps>`
-  transition: background-color 0.28s ease-in-out;
+  transition: background-color 300ms ease-in-out;
 
   display: flex;
   align-items: center;
@@ -34,4 +34,17 @@ export const Menu = styled(Box)<MenuProps>`
         border: 1px solid ${colors.light};
       }
     `}
+`;
+
+export const TextContainer = styled(Box)`
+  flex: 1;
+  overflow: hidden;
+`;
+
+export const Text = styled(YogaText.Small)`
+  font-weight: ${fontWeights.medium};
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 `;

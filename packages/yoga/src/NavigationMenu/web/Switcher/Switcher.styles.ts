@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { theme, Box } from '@gympass/yoga';
+import { theme, Box, Text as YogaText } from '@gympass/yoga';
 
-const { colors, spacing, radii } = theme;
+const { colors, spacing, radii, fontWeights } = theme;
 
 type SwitcherProps = {
   fill: string;
@@ -21,4 +21,17 @@ export const Switcher = styled(Box)<SwitcherProps>`
     height: ${spacing.xlarge}px;
     width: ${spacing.xlarge}px;
   }
+`;
+
+export const TextContainer = styled(Box)`
+  flex: 1;
+  overflow: hidden;
+`;
+
+export const Text = styled(YogaText.Small)`
+  font-weight: ${fontWeights.medium};
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 `;

@@ -4,7 +4,7 @@ import { theme, Box } from '@gympass/yoga';
 const { spacing, colors, radii } = theme;
 
 export const Action = styled(Box)`
-  transition: background-color 0.28s ease-in-out;
+  transition: background-color 300ms ease-in-out;
 
   display: flex;
   align-items: center;
