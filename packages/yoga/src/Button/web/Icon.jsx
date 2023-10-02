@@ -50,7 +50,7 @@ const ButtonIcon = forwardRef(
         ref={ref}
         small={small}
         disabled={disabled}
-        aria-disabled={disabled || undefined}
+        aria-disabled={disabled}
         aria-label={ariaLabel}
       >
         <Icon
@@ -73,7 +73,7 @@ ButtonIcon.propTypes = {
 
 ButtonIcon.defaultProps = {
   small: false,
-  disabled: false,
+  disabled: undefined,
   secondary: false,
   inverted: false,
   icon: undefined,

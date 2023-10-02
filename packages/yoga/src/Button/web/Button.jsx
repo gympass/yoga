@@ -31,7 +31,7 @@ const Button = forwardRef(
       <StyledButton
         ref={ref}
         disabled={disabled}
-        aria-disabled={disabled || undefined}
+        aria-disabled={disabled}
         aria-label={ariaLabel}
         full={full}
         inverted={inverted}
@@ -64,7 +64,7 @@ Button.propTypes = {
 Button.defaultProps = {
   ariaLabel: undefined,
   children: 'Button',
-  disabled: false,
+  disabled: undefined,
   full: false,
   inverted: false,
   onClick: () => {},

@@ -69,7 +69,7 @@ const Link = styled(Button)`
 `;
 
 const ButtonLink = ({ disabled, ...props }) => (
-  <Link {...props} disabled={disabled} aria-disabled={disabled || undefined} />
+  <Link {...props} disabled={disabled} aria-disabled={disabled} />
 );
 
 ButtonLink.propTypes = {
@@ -81,7 +81,7 @@ ButtonLink.propTypes = {
 };
 
 ButtonLink.defaultProps = {
-  disabled: false,
+  disabled: undefined,
   secondary: false,
   href: undefined,
   icon: undefined,
