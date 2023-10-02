@@ -1,6 +1,6 @@
 {
   "name": "@gympass/yoga-tokens",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "description": "Gympass design tokens definitions",
   "keywords": [
     "gympass",
@@ -20,7 +20,7 @@
     "prepublishOnly": "node ../../scripts/prepublish.js"
   },
   "dependencies": {
-    "@gympass/yoga-common": "^1.2.0"
+    "@gympass/yoga-common": "^1.2.1"
   },
   "publishConfig": {
     "access": "public",
