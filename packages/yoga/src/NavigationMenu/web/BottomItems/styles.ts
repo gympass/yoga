@@ -8,7 +8,7 @@ type BottomItemProps = {
   isActive: boolean;
 };
 
-export const ItemsContainer = styled(Box)`
+export const ItemsContainer = styled.nav`
   ${media.lg`display: none`}
 `;
 
@@ -16,9 +16,11 @@ export const Items = styled.ul`
   display: grid;
   grid-auto-columns: minmax(0, 1fr);
   grid-auto-flow: column;
+  align-items: center;
   width: 100%;
   height: 74px;
   background-color: ${colors.clear};
+  margin: 0;
   padding: ${spacing.xxxsmall}px;
   border: 1px solid ${colors.light};
   gap: ${spacing.xxxsmall}px;

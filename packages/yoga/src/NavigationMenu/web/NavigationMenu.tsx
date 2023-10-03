@@ -9,15 +9,18 @@ import * as Styles from './NavigationMenu.styles';
 type NavigationMenuProps = {
   children: React.ReactNode;
   openOnMobile?: boolean;
+  responsive?: boolean;
 };
 
-const NavigationMenu = ({ children, openOnMobile }: NavigationMenuProps) => {
-  const isResponsive = openOnMobile !== undefined;
-
+const NavigationMenu = ({
+  children,
+  openOnMobile = false,
+  responsive = true,
+}: NavigationMenuProps) => {
   return (
     <Styles.NavigationMenu
       isOpenOnMobile={openOnMobile}
-      isResponsive={isResponsive}
+      isResponsive={responsive}
     >
       {children}
     </Styles.NavigationMenu>

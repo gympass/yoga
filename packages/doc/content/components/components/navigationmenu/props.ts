@@ -1,9 +1,21 @@
 export const NavigationMenuProps = [
   {
     name: 'children',
-    description: { text: '' },
+    description: { text: 'Menu sub components' },
     type: { name: 'node' },
     required: true,
+  },
+  {
+    name: 'openOnMobile',
+    description: { text: 'Indicates if the menu is open/close in mobile' },
+    type: { name: 'bool' },
+    required: false,
+  },
+  {
+    name: 'responsive',
+    description: { text: `Indicates if the menu should be responsive` },
+    type: { name: 'bool' },
+    required: false,
   },
 ];
 
@@ -114,6 +126,15 @@ export const SwitcherProps = [
 
 export const ItemProps = [
   {
+    name: 'active',
+    description: {
+      text:
+        'Indicates if the item is active/inactive. This prop is not required if the wrapper already handles this.',
+    },
+    type: { name: 'bool' },
+    required: false,
+  },
+  {
     name: 'children',
     description: { text: 'Subitems to be displayed under the item' },
     type: { name: 'node' },
@@ -139,6 +160,12 @@ export const ItemProps = [
     required: true,
   },
   {
+    name: 'responsive',
+    description: { text: `Indicates if the item should be responsive` },
+    type: { name: 'bool' },
+    required: false,
+  },
+  {
     name: 'tag',
     description: { text: 'Tag text' },
     type: { name: 'string' },
@@ -154,6 +181,15 @@ export const ItemProps = [
 
 export const SubitemProps = [
   {
+    name: 'active',
+    description: {
+      text:
+        'Indicates if the subitem is active/inactive. This prop is not required if the wrapper already handles this.',
+    },
+    type: { name: 'bool' },
+    required: false,
+  },
+  {
     name: 'label',
     description: { text: `Item's name` },
     type: { name: 'string' },
@@ -162,6 +198,45 @@ export const SubitemProps = [
   {
     name: 'wrapper',
     description: { text: 'Link that wraps the subitem' },
+    type: { name: 'node' },
+    required: true,
+  },
+];
+
+export const BottomItemsProps = [
+  {
+    name: 'children',
+    description: { text: 'Items to be displayed in the mobile bottom bar' },
+    type: { name: 'node' },
+    required: false,
+  },
+];
+
+export const BottomItemProps = [
+  {
+    name: 'active',
+    description: {
+      text:
+        'Indicates if the item is active/inactive. This prop is not required if the wrapper already handles this.',
+    },
+    type: { name: 'bool' },
+    required: false,
+  },
+  {
+    name: 'icon',
+    description: { text: `Item's icon` },
+    type: { name: 'node' },
+    required: false,
+  },
+  {
+    name: 'label',
+    description: { text: `Item's name` },
+    type: { name: 'string' },
+    required: true,
+  },
+  {
+    name: 'wrapper',
+    description: { text: 'Link that wraps the item' },
     type: { name: 'node' },
     required: true,
   },

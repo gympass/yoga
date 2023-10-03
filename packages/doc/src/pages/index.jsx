@@ -9,6 +9,8 @@ import { GlobalStyle, Home } from 'components';
 import Lotus from 'images/lotus.svg';
 import Gympass from 'images/gympass-logo.svg';
 
+import './styles.css';
+
 const YogaLogo = styled(Lotus)`
   width: 78px;
 

@@ -29,6 +29,7 @@ export const NavigationMenu = styled(Box)<NavigationMenuProps>`
     width: 100%;
     height: calc(100% - 74px);
     z-index: 10;
+    Top: 0;
     right: ${({ isOpenOnMobile }) => (isOpenOnMobile ? '0' : '-100%')};
 
     transition: right 300ms ease-in-out;

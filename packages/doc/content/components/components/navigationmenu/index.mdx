@@ -4,7 +4,7 @@ metaTitle: 'NavigationMenu'
 metaDescription: 'NavigationMenu Component'
 ---
 
-import { ArrowRight, Help, Doc, Money } from '@gympass/yoga-icons';
+import { ArrowRight, Help, Doc, Money, MenuMore } from '@gympass/yoga-icons';
 import { theme } from '@gympass/yoga';
 import {
   NavigationMenuProps,
@@ -13,15 +13,23 @@ import {
   SwitcherProps,
   ItemProps,
   SubitemProps,
+  BottomItemsProps,
+  BottomItemProps,
 } from './props';
 
 # NavigationMenu
 
 ## Reference
 
-Gympass `<NavigationMenu />` displays a navigation menu with 3 optional main areas `<NavigationMenu.Header />`, `<NavigationMenu.Items />` and `<NavigationMenu.Footer />`.<br /><br />
-`<NavigationMenu.Header />` and `<NavigationMenu.Footer />` are containers that can be used to display components like logos, `<NavigationMenu.Menu />` or `<NavigationMenu.Switcher />`.<br /><br />
+Gympass `<NavigationMenu />` displays a navigation menu with 3 optional main areas `<NavigationMenu.Header />`, `<NavigationMenu.Items />` and `<NavigationMenu.Footer />`.
+
+`<NavigationMenu.Header />` and `<NavigationMenu.Footer />` are containers that can be used to display components like logos, `<NavigationMenu.Menu />` or `<NavigationMenu.Switcher />`.
+
 `<NavigationMenu.Items />` should be used to display items and subitems.
+
+The menu is responsive by default. The items to be displayed in the bottom bar are handle by components `<NavigationMenu.BottomItems />` and `<NavigationMenu.BottomItem />`.
+
+The responsiveness is controled by props.<br /><br />
 
 Available components:
 
@@ -31,14 +39,31 @@ Available components:
 - `<NavigationMenu.ItemsGroup />`
 - `<NavigationMenu.Item />`
 - `<NavigationMenu.Subitem />`
+- `<NavigationMenu.BottomItems />`
+- `<NavigationMenu.BottomItem />`
 - `<NavigationMenu.Menu />`
 - `<NavigationMenu.Switcher />`
 
 ### Usage
 
-#### Navigation menu
+#### Not responsive navigation menu
 
 ```javascript state
+const Container = styled(Box)`
+  display: flex;
+  width: 400px;
+  height: 450px;
+  border: 1px solid ${theme.colors.light};
+`;
+
+const MainPage = styled.main`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+`;
+
 render(() => {
   const renderWrapper = ({ children }) => (
     <a href="https://www.gympass.com">{children}</a>
@@ -46,50 +71,216 @@ render(() => {
 
   const IconComponent = ({ icon }) => <Icon as={icon} fill="deep" />;
 
+  const itemGroups = [
+    [
+      {
+        expanded: true,
+        icon: Doc,
+        label: 'Subscription',
+        tag: 'new',
+        subitems: [{ label: 'Details' }],
+      },
+      {
+        active: true,
+        icon: Doc,
+        label: 'Billing',
+      },
+    ],
+    [
+      {
+        icon: Help,
+        label: 'Help',
+      },
+    ],
+  ];
+
   return (
-    <NavigationMenu>
-      <NavigationMenu.Header>
-        <NavigationMenu.Menu
-          avatar={<Avatar.Circle />}
-          title="Company"
-          subtitle="Reseller"
-        />
-      </NavigationMenu.Header>
-
-      <NavigationMenu.Items>
-        <NavigationMenu.ItemsGroup>
-          <NavigationMenu.Item
-            expanded={true}
-            icon={<IconComponent icon={Doc} />}
-            label="Subscription"
-            wrapper={renderWrapper}
-            tag="new"
-          >
-            <NavigationMenu.Subitem label="Details" wrapper={renderWrapper} />
-          </NavigationMenu.Item>
-          <NavigationMenu.Item
-            icon={<IconComponent icon={Money} />}
-            label="Billing"
-            wrapper={renderWrapper}
+    <Container>
+      <NavigationMenu responsive={false}>
+        <NavigationMenu.Header>
+          <NavigationMenu.Menu
+            avatar={<Avatar.Circle />}
+            title="Company"
+            subtitle="Reseller"
           />
-        </NavigationMenu.ItemsGroup>
-        <NavigationMenu.ItemsGroup>
-          <NavigationMenu.Item
-            icon={<IconComponent icon={Help} />}
-            label="Help"
-            wrapper={renderWrapper}
-          />
-        </NavigationMenu.ItemsGroup>
-      </NavigationMenu.Items>
+        </NavigationMenu.Header>
 
-      <NavigationMenu.Footer>
-        <NavigationMenu.Switcher
-          avatar={<Avatar.Circle />}
-          title="User"
-          subtitle="Admin, Supervisor"
-        />
-      </NavigationMenu.Footer>
-    </NavigationMenu>
+        <NavigationMenu.Items>
+          {itemGroups.map(group => (
+            <NavigationMenu.ItemsGroup>
+              {group.map(item => (
+                <NavigationMenu.Item
+                  active={item.active}
+                  expanded={item.expanded}
+                  icon={<IconComponent icon={item.icon} />}
+                  label={item.label}
+                  responsive={false}
+                  wrapper={renderWrapper}
+                  tag={item.tag}
+                >
+                  {item.subitems &&
+                    item.subitems.map(({ label }) => (
+                      <NavigationMenu.Subitem
+                        label={label}
+                        wrapper={renderWrapper}
+                      />
+                    ))}
+                </NavigationMenu.Item>
+              ))}
+            </NavigationMenu.ItemsGroup>
+          ))}
+        </NavigationMenu.Items>
+
+        <NavigationMenu.Footer>
+          <NavigationMenu.Switcher
+            avatar={<Avatar.Circle />}
+            title="User"
+            subtitle="Admin, Supervisor"
+          />
+        </NavigationMenu.Footer>
+      </NavigationMenu>
+
+      <MainPage>Main page</MainPage>
+    </Container>
+  );
+});
+```
+
+#### Responsive navigation menu
+
+```javascript state
+const Container = styled(Box)`
+  display: flex;
+  width: 400px;
+  height: 450px;
+  border: 1px solid ${theme.colors.light};
+
+  ${media.max('lg')`flex-direction: column;`}
+`;
+
+const MainPage = styled.main`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+`;
+
+render(() => {
+  const [isOpenOnMobile, setIsOpenOnMobile] = useState(false);
+
+  const renderWrapper = ({ children }) => (
+    <a
+      href="/components/navigationmenu"
+      onClick={() => setIsOpenOnMobile(false)}
+    >
+      {children}
+    </a>
+  );
+
+  const IconComponent = ({ icon }) => <Icon as={icon} fill="deep" />;
+
+  const itemMainGroup = [
+    {
+      expanded: true,
+      icon: Doc,
+      label: 'Subscription',
+      tag: 'new',
+      subitems: [{ label: 'Details' }],
+    },
+    {
+      active: true,
+      icon: Doc,
+      label: 'Billing',
+    },
+  ];
+
+  const itemGroups = [
+    [...itemMainGroup],
+    [
+      {
+        icon: Help,
+        label: 'Help',
+      },
+    ],
+  ];
+
+  const bottomItems = [
+    ...itemMainGroup
+      .slice(0, 2)
+      .map(({ active, icon, label }) => ({
+        active,
+        icon,
+        label,
+        wrapper: renderWrapper,
+      })),
+    {
+      icon: MenuMore,
+      label: 'More',
+      wrapper: ({ children }) => (
+        <div onClick={() => setIsOpenOnMobile(!isOpenOnMobile)}>{children}</div>
+      ),
+    },
+  ];
+
+  return (
+    <Container>
+      {/* Due to the structure of the yoga page it is not possible to demonstrate all responsive behavior */}
+      {/* To achieve this replace openOnMobile={false} by openOnMobile={isOpenOnMobile} */}
+      <NavigationMenu openOnMobile={false}>
+        <NavigationMenu.Header>
+          <NavigationMenu.Menu
+            avatar={<Avatar.Circle />}
+            title="Company"
+            subtitle="Reseller"
+          />
+        </NavigationMenu.Header>
+
+        <NavigationMenu.Items>
+          {itemGroups.map(group => (
+            <NavigationMenu.ItemsGroup>
+              {group.map(item => (
+                <NavigationMenu.Item
+                  active={item.active}
+                  expanded={item.expanded}
+                  icon={<IconComponent icon={item.icon} />}
+                  label={item.label}
+                  wrapper={renderWrapper}
+                  tag={item.tag}
+                >
+                  {item.subitems &&
+                    item.subitems.map(({ label }) => (
+                      <NavigationMenu.Subitem
+                        label={label}
+                        wrapper={renderWrapper}
+                      />
+                    ))}
+                </NavigationMenu.Item>
+              ))}
+            </NavigationMenu.ItemsGroup>
+          ))}
+        </NavigationMenu.Items>
+
+        <NavigationMenu.Footer>
+          <NavigationMenu.Switcher
+            avatar={<Avatar.Circle />}
+            title="User"
+            subtitle="Admin, Supervisor"
+          />
+        </NavigationMenu.Footer>
+      </NavigationMenu>
+      <MainPage>Main page</MainPage>
+      <NavigationMenu.BottomItems>
+        {bottomItems.map(({ active, icon, label, wrapper }) => (
+          <NavigationMenu.BottomItem
+            active={active}
+            icon={icon}
+            label={label}
+            wrapper={wrapper}
+          />
+        ))}
+      </NavigationMenu.BottomItems>
+    </Container>
   );
 });
 ```
@@ -110,7 +301,7 @@ const StyledBox = styled(Box)`
 
 render(() => {
   return (
-    <NavigationMenu>
+    <NavigationMenu responsive={false}>
       <NavigationMenu.Header>
         <NavigationMenu.Menu
           avatar={
@@ -155,7 +346,7 @@ const actions = [
 
 render(() => {
   return (
-    <NavigationMenu>
+    <NavigationMenu responsive={false}>
       <NavigationMenu.Footer>
         <NavigationMenu.Switcher
           actions={actions}
@@ -194,3 +385,11 @@ render(() => {
 #### NavigationMenu.Subitem
 
 <Table properties={SubitemProps} />
+
+#### NavigationMenu.BottomItems
+
+<Table properties={BottomItemsProps} />
+
+#### NavigationMenu.BottomItem
+
+<Table properties={BottomItemProps} />
