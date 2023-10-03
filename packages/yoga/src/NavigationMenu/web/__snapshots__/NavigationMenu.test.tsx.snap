@@ -434,6 +434,19 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   }
 }
 
+@media (max-width:1024px) {
+  .c0 {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 74px);
+    z-index: 10;
+    Top: 0;
+    right: -100%;
+    -webkit-transition: right 300ms ease-in-out;
+    transition: right 300ms ease-in-out;
+  }
+}
+
 <div>
   <div
     class="c0"
@@ -759,6 +772,19 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   gap: 4px;
 }
 
+@media (max-width:1024px) {
+  .c0 {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 74px);
+    z-index: 10;
+    Top: 0;
+    right: -100%;
+    -webkit-transition: right 300ms ease-in-out;
+    transition: right 300ms ease-in-out;
+  }
+}
+
 <div>
   <div
     class="c0"
@@ -957,6 +983,19 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 4px;
+}
+
+@media (max-width:1024px) {
+  .c0 {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 74px);
+    z-index: 10;
+    Top: 0;
+    right: -100%;
+    -webkit-transition: right 300ms ease-in-out;
+    transition: right 300ms ease-in-out;
+  }
 }
 
 <div>
