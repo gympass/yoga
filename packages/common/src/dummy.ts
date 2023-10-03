@@ -1,5 +1,5 @@
 const dummy = () => {
-  console.log('just a test');
+  return null;
 };
 
 export default dummy;
