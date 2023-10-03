@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-common@1.2.1...@gympass/yoga-common@1.3.0) (2023-10-03)
+
+
+### Features
+
+* **common:** export to index ([d915c46](https://github.com/Gympass/yoga/commit/d915c46444df3efc7d3b8adfa676385fede91ede))
+* **common:** just a test ([45798b9](https://github.com/Gympass/yoga/commit/45798b95f0db90fc020dce707fe0841b12a2179d))
+
+
+
+
+
 ## [1.2.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-common@1.2.0...@gympass/yoga-common@1.2.1) (2023-10-02)
 
 **Note:** Version bump only for package @gympass/yoga-common
