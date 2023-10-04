@@ -5,11 +5,20 @@ import { Help, Doc } from '@gympass/yoga-icons';
 
 import NavigationMenu from './NavigationMenu';
 
+type IconProps = {
+  icon: React.ReactElement<typeof Icon>;
+};
+
 describe('<NavigationMenu />', () => {
   describe('Snapshots', () => {
     it('should match  NavigationMenu', () => {
-      const renderWrapper = ({ children }) => <a href="#">{children}</a>;
-      const IconComponent = ({ icon }) => <Icon as={icon} />;
+      const renderWrapper = ({ children }) => {
+        return <a href="https://www.gympass.com">{children}</a>;
+      };
+
+      const IconComponent = ({ icon }: IconProps) => {
+        return <Icon as={icon} />;
+      };
 
       const itemGroups = [
         [
@@ -94,7 +103,7 @@ describe('<NavigationMenu />', () => {
                 avatar={<Avatar.Circle />}
                 title="Company"
                 subtitle="Reseller"
-                onClick={() => alert('Menu was clicked')}
+                onClick={() => null}
               />
             </NavigationMenu.Header>
           </NavigationMenu>
@@ -109,12 +118,12 @@ describe('<NavigationMenu />', () => {
         {
           id: 'Action 1',
           label: 'Action 1',
-          onClick: () => alert('Action 1 was selected'),
+          onClick: () => null,
         },
         {
           id: 'Action 2',
           label: 'Action 2',
-          onClick: () => alert('Action 2 was selected'),
+          onClick: () => null,
         },
       ];
 

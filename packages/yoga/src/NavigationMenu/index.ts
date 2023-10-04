@@ -1,1 +1,3 @@
-export { default } from './web';
+import WebNavigationMenu from './web';
+
+export default WebNavigationMenu;

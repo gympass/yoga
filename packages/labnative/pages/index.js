@@ -25,7 +25,6 @@ import Banner from './Banner';
 import Heading from './Heading';
 import Skeleton from './Skeleton';
 import ActionRequirement from './ActionRequirement';
-import NavigationMenu from './NavigationMenu';
 
 export {
   Button,
@@ -55,5 +54,4 @@ export {
   Heading,
   Skeleton,
   ActionRequirement,
-  NavigationMenu,
 };

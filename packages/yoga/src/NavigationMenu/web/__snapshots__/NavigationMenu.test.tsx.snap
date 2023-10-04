@@ -481,7 +481,7 @@ exports[`<NavigationMenu /> Snapshots should match  NavigationMenu 1`] = `
           class="c10"
         >
           <a
-            href="#"
+            href="https://www.gympass.com"
           >
             <div
               class="c11 c12"
@@ -510,7 +510,7 @@ exports[`<NavigationMenu /> Snapshots should match  NavigationMenu 1`] = `
           class="c10"
         >
           <a
-            href="#"
+            href="https://www.gympass.com"
           >
             <div
               class="c11 c20"
@@ -528,7 +528,7 @@ exports[`<NavigationMenu /> Snapshots should match  NavigationMenu 1`] = `
           class="c21"
         >
           <a
-            href="#"
+            href="https://www.gympass.com"
           >
             <div
               class="c11 c12"
@@ -556,7 +556,7 @@ exports[`<NavigationMenu /> Snapshots should match  NavigationMenu 1`] = `
           class="c10"
         >
           <a
-            href="#"
+            href="https://www.gympass.com"
           >
             <div
               class="c11 c12"
