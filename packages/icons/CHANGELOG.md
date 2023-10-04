@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.17.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.16.0...@gympass/yoga-icons@1.17.0) (2023-10-04)
+
+
+### Features
+
+* **icons:** add yoga-mat and zen icons export ([cc34b69](https://github.com/Gympass/yoga/commit/cc34b696bbfcaa2e80a41d4d6308e36919edf7a7))
+
+
+
+
+
 # [1.16.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.15.0...@gympass/yoga-icons@1.16.0) (2023-09-27)
 
 
