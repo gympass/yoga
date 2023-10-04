@@ -170,7 +170,9 @@ import Visibility from './svg/visibility.svg';
 import Wallet from './svg/wallet.svg';
 import Whatsapp from './svg/whatsapp.svg';
 import WiFi from './svg/wi-fi.svg';
+import YogaMat from './svg/yoga-mat.svg';
 import Youtube from './svg/youtube.svg';
+import Zen from './svg/zen.svg';
 
 export {
   Accessibility,
@@ -345,5 +347,7 @@ export {
   Wallet,
   Whatsapp,
   WiFi,
+  YogaMat,
   Youtube,
+  Zen,
 };
