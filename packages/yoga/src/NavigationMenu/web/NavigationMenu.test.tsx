@@ -55,10 +55,11 @@ describe('<NavigationMenu />', () => {
             </NavigationMenu.Header>
 
             <NavigationMenu.Items>
-              {itemGroups.map(group => (
-                <NavigationMenu.ItemsGroup>
+              {itemGroups.map((group, index) => (
+                <NavigationMenu.ItemsGroup key={index}>
                   {group.map(item => (
                     <NavigationMenu.Item
+                      key={item.label}
                       active={item.active}
                       expanded={item.expanded}
                       icon={<IconComponent icon={item.icon} />}
@@ -70,6 +71,7 @@ describe('<NavigationMenu />', () => {
                       {item.subitems &&
                         item.subitems.map(({ label }) => (
                           <NavigationMenu.Subitem
+                            key={label}
                             label={label}
                             wrapper={renderWrapper}
                           />
@@ -134,8 +136,9 @@ describe('<NavigationMenu />', () => {
               <NavigationMenu.Switcher
                 actions={actions}
                 avatar={<Avatar.Circle />}
-                title="User"
+                sideOffset={36}
                 subtitle="Admin, Supervisor"
+                title="User"
               />
             </NavigationMenu.Footer>
           </NavigationMenu>

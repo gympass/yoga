@@ -14,7 +14,7 @@ export type SwitcherProps = {
   actions?: SwitcherActionsProps[];
   avatar: React.ReactElement;
   fill?: string;
-  sideOffset?: string;
+  sideOffset?: number;
   subtitle?: string;
   title: string;
 };
@@ -23,7 +23,7 @@ const Switcher = ({
   actions,
   avatar: Avatar,
   fill = 'transparent',
-  sideOffset = '4',
+  sideOffset = 36,
   subtitle,
   title,
 }: SwitcherProps) => {

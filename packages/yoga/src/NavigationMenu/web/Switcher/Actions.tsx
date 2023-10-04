@@ -7,7 +7,7 @@ import * as Styles from './Actions.styles';
 
 type ActionsProps = {
   actions: SwitcherActionsProps[];
-  sideOffset: string;
+  sideOffset: number;
 };
 
 const Actions = ({ actions, sideOffset }: ActionsProps) => {
