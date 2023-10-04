@@ -7,15 +7,17 @@ export const NavigationMenuProps = [
   },
   {
     name: 'openOnMobile',
-    description: { text: 'Indicates if the menu is open/close in mobile' },
+    description: { text: 'Indicates whether the menu is open/close in mobile' },
     type: { name: 'bool' },
     required: false,
+    defaultValue: { value: 'false' },
   },
   {
     name: 'responsive',
-    description: { text: `Indicates if the menu should be responsive` },
+    description: { text: `Indicates whether the menu should be responsive` },
     type: { name: 'bool' },
     required: false,
+    defaultValue: { value: 'true' },
   },
 ];
 
@@ -36,14 +38,14 @@ export const MenuProps = [
   },
   {
     name: 'title',
-    description: { text: 'Text to be displayed displayed as title' },
+    description: { text: 'Text to be displayed as title' },
     type: { name: 'string' },
     required: true,
   },
   {
     name: 'onClick',
     description: {
-      text: 'Event triggered when clicking in the component',
+      text: 'Event triggered when clicking on the component',
     },
     type: { name: 'func' },
     required: false,
@@ -70,7 +72,7 @@ export const SwitcherActionProps = [
   {
     name: 'onClick',
     description: {
-      text: 'Event triggered when clicking in the action',
+      text: 'Event triggered when clicking on the action',
     },
     type: { name: 'func' },
     required: true,
@@ -129,10 +131,11 @@ export const ItemProps = [
     name: 'active',
     description: {
       text:
-        'Indicates if the item is active/inactive. This prop is not required if the wrapper already handles this.',
+        'Indicates whether the item is active/inactive. This prop is not necessary when the wrapper already handles this.',
     },
     type: { name: 'bool' },
     required: false,
+    defaultValue: { value: 'false' },
   },
   {
     name: 'children',
@@ -142,7 +145,7 @@ export const ItemProps = [
   },
   {
     name: 'expanded',
-    description: { text: 'Controls when hide/show the subitems' },
+    description: { text: 'Controls when to hide/show subitems' },
     type: { name: 'bool' },
     required: false,
     defaultValue: { value: 'false' },
@@ -161,9 +164,10 @@ export const ItemProps = [
   },
   {
     name: 'responsive',
-    description: { text: `Indicates if the item should be responsive` },
+    description: { text: `Indicates whether the item should be responsive` },
     type: { name: 'bool' },
     required: false,
+    defaultValue: { value: 'true' },
   },
   {
     name: 'tag',
@@ -184,10 +188,11 @@ export const SubitemProps = [
     name: 'active',
     description: {
       text:
-        'Indicates if the subitem is active/inactive. This prop is not required if the wrapper already handles this.',
+        'Indicates whether the item is active/inactive. This prop is not necessary when the wrapper already handles this.',
     },
     type: { name: 'bool' },
     required: false,
+    defaultValue: { value: 'false' },
   },
   {
     name: 'label',
@@ -208,7 +213,7 @@ export const BottomItemsProps = [
     name: 'children',
     description: { text: 'Items to be displayed in the mobile bottom bar' },
     type: { name: 'node' },
-    required: false,
+    required: true,
   },
 ];
 
@@ -217,10 +222,11 @@ export const BottomItemProps = [
     name: 'active',
     description: {
       text:
-        'Indicates if the item is active/inactive. This prop is not required if the wrapper already handles this.',
+        'Indicates whether the item is active/inactive. This prop is not necessary when the wrapper already handles this.',
     },
     type: { name: 'bool' },
     required: false,
+    defaultValue: { value: 'false' },
   },
   {
     name: 'icon',

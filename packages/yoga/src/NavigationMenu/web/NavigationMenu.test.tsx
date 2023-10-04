@@ -1,19 +1,42 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Home } from '@gympass/yoga-icons';
 import { ThemeProvider, Avatar, Icon } from '@gympass/yoga';
+import { Help, Doc } from '@gympass/yoga-icons';
 
 import NavigationMenu from './NavigationMenu';
 
 describe('<NavigationMenu />', () => {
   describe('Snapshots', () => {
-    it('should match NavigationMenu', () => {
+    it('should match  NavigationMenu', () => {
       const renderWrapper = ({ children }) => <a href="#">{children}</a>;
-      const IconComponent = () => <Icon as={Home} />;
+      const IconComponent = ({ icon }) => <Icon as={icon} />;
+
+      const itemGroups = [
+        [
+          {
+            expanded: true,
+            icon: Doc,
+            label: 'Subscription',
+            tag: 'new',
+            subitems: [{ label: 'Details' }],
+          },
+          {
+            active: true,
+            icon: Doc,
+            label: 'Billing',
+          },
+        ],
+        [
+          {
+            icon: Help,
+            label: 'Help',
+          },
+        ],
+      ];
 
       const { container } = render(
         <ThemeProvider>
-          <NavigationMenu>
+          <NavigationMenu responsive={false}>
             <NavigationMenu.Header>
               <NavigationMenu.Menu
                 avatar={<Avatar.Circle />}
@@ -23,32 +46,29 @@ describe('<NavigationMenu />', () => {
             </NavigationMenu.Header>
 
             <NavigationMenu.Items>
-              <NavigationMenu.ItemsGroup>
-                <NavigationMenu.Item
-                  expanded
-                  icon={<IconComponent />}
-                  label="Subscription"
-                  wrapper={renderWrapper}
-                  tag="new"
-                >
-                  <NavigationMenu.Subitem
-                    label="Details"
-                    wrapper={renderWrapper}
-                  />
-                </NavigationMenu.Item>
-                <NavigationMenu.Item
-                  icon={<IconComponent />}
-                  label="Billing"
-                  wrapper={renderWrapper}
-                />
-              </NavigationMenu.ItemsGroup>
-              <NavigationMenu.ItemsGroup>
-                <NavigationMenu.Item
-                  icon={<IconComponent />}
-                  label="Help"
-                  wrapper={renderWrapper}
-                />
-              </NavigationMenu.ItemsGroup>
+              {itemGroups.map(group => (
+                <NavigationMenu.ItemsGroup>
+                  {group.map(item => (
+                    <NavigationMenu.Item
+                      active={item.active}
+                      expanded={item.expanded}
+                      icon={<IconComponent icon={item.icon} />}
+                      label={item.label}
+                      responsive={false}
+                      wrapper={renderWrapper}
+                      tag={item.tag}
+                    >
+                      {item.subitems &&
+                        item.subitems.map(({ label }) => (
+                          <NavigationMenu.Subitem
+                            label={label}
+                            wrapper={renderWrapper}
+                          />
+                        ))}
+                    </NavigationMenu.Item>
+                  ))}
+                </NavigationMenu.ItemsGroup>
+              ))}
             </NavigationMenu.Items>
 
             <NavigationMenu.Footer>
@@ -59,7 +79,6 @@ describe('<NavigationMenu />', () => {
               />
             </NavigationMenu.Footer>
           </NavigationMenu>
-          );
         </ThemeProvider>,
       );
 
@@ -69,7 +88,7 @@ describe('<NavigationMenu />', () => {
     it('should match NavigationMenu.Menu with an action', () => {
       const { container } = render(
         <ThemeProvider>
-          <NavigationMenu>
+          <NavigationMenu responsive={false}>
             <NavigationMenu.Header>
               <NavigationMenu.Menu
                 avatar={<Avatar.Circle />}
@@ -101,7 +120,7 @@ describe('<NavigationMenu />', () => {
 
       const { container } = render(
         <ThemeProvider>
-          <NavigationMenu>
+          <NavigationMenu responsive={false}>
             <NavigationMenu.Footer>
               <NavigationMenu.Switcher
                 actions={actions}

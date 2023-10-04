@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
+exports[`<NavigationMenu /> Snapshots should match  NavigationMenu 1`] = `
 .c3 {
   border-radius: 9999px;
   background-color: #9898A6;
@@ -208,7 +208,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   border-radius: 8px;
 }
 
-.c21 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -284,10 +284,12 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 
 .c10 a.active > .c11 {
   background-color: #F5F5FA;
+  background-color: #FFEEF2;
 }
 
 .c10 a.active > .c11 .c15 {
   color: #D8385E;
+  font-weight: 500;
 }
 
 .c10 a.active > .c11 svg {
@@ -298,7 +300,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   background-color: #231B22;
 }
 
-.c20 {
+.c21 {
   -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
   background-color: transparent;
@@ -307,50 +309,54 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   cursor: pointer;
 }
 
-.c20 svg {
+.c21 svg {
   height: 20px;
   width: 20px;
 }
 
-.c20:hover,
-.c20:focus {
-  background-color: #D7D7E0;
-}
-
-.c20:hover .c15,
-.c20:focus .c15 {
-  color: #231B22;
-}
-
-.c20:hover svg,
-.c20:focus svg {
-  fill: #231B22;
-}
-
-.c20 a {
+.c21 a {
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-.c20 a.active {
   cursor: auto;
 }
 
-.c20 a.active > .c11 {
+.c21 a.active {
+  cursor: auto;
+}
+
+.c21 a.active > .c11 {
   background-color: #F5F5FA;
   background-color: #FFEEF2;
 }
 
-.c20 a.active > .c11 .c15 {
+.c21 a.active > .c11 .c15 {
   color: #D8385E;
   font-weight: 500;
 }
 
-.c20 a.active > .c11 svg {
+.c21 a.active > .c11 svg {
   fill: #D8385E;
 }
 
-.c20 a.active > .c11 > .c18 {
+.c21 a.active > .c11 > .c18 {
+  background-color: #231B22;
+}
+
+.c21 a > .c11 {
+  background-color: #F5F5FA;
+  background-color: #FFEEF2;
+}
+
+.c21 a > .c11 .c15 {
+  color: #D8385E;
+  font-weight: 500;
+}
+
+.c21 a > .c11 svg {
+  fill: #D8385E;
+}
+
+.c21 a > .c11 > .c18 {
   background-color: #231B22;
 }
 
@@ -420,31 +426,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 4px;
-}
-
-@media (min-width:1024px) {
-  .c10 a.active > .c11 {
-    background-color: #FFEEF2;
-  }
-}
-
-@media (min-width:1024px) {
-  .c10 a.active > .c11 .c15 {
-    font-weight: 500;
-  }
-}
-
-@media (max-width:1024px) {
-  .c0 {
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 74px);
-    z-index: 10;
-    Top: 0;
-    right: -100%;
-    -webkit-transition: right 300ms ease-in-out;
-    transition: right 300ms ease-in-out;
-  }
 }
 
 <div>
@@ -526,13 +507,13 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
           </a>
         </li>
         <li
-          class="c20"
+          class="c10"
         >
           <a
             href="#"
           >
             <div
-              class="c11 c21"
+              class="c11 c20"
             >
               <p
                 class="c14 c15 c16"
@@ -544,7 +525,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
           </a>
         </li>
         <li
-          class="c10"
+          class="c21"
         >
           <a
             href="#"
@@ -638,7 +619,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
       </div>
     </div>
   </div>
-  );
 </div>
 `;
 
@@ -770,19 +750,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 4px;
-}
-
-@media (max-width:1024px) {
-  .c0 {
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 74px);
-    z-index: 10;
-    Top: 0;
-    right: -100%;
-    -webkit-transition: right 300ms ease-in-out;
-    transition: right 300ms ease-in-out;
-  }
 }
 
 <div>
@@ -983,19 +950,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 4px;
-}
-
-@media (max-width:1024px) {
-  .c0 {
-    position: absolute;
-    width: 100%;
-    height: calc(100% - 74px);
-    z-index: 10;
-    Top: 0;
-    right: -100%;
-    -webkit-transition: right 300ms ease-in-out;
-    transition: right 300ms ease-in-out;
-  }
 }
 
 <div>

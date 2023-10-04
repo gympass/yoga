@@ -4,7 +4,7 @@ metaTitle: 'NavigationMenu'
 metaDescription: 'NavigationMenu Component'
 ---
 
-import { ArrowRight, Help, Doc, Money, MenuMore } from '@gympass/yoga-icons';
+import { ArrowRight, Help, Doc, MenuMore } from '@gympass/yoga-icons';
 import { theme } from '@gympass/yoga';
 import {
   NavigationMenuProps,
@@ -27,9 +27,7 @@ Gympass `<NavigationMenu />` displays a navigation menu with 3 optional main are
 
 `<NavigationMenu.Items />` should be used to display items and subitems.
 
-The menu is responsive by default. The items to be displayed in the bottom bar are handle by components `<NavigationMenu.BottomItems />` and `<NavigationMenu.BottomItem />`.
-
-The responsiveness is controled by props.<br /><br />
+The menu is responsive by default and controled by props. `<NavigationMenu.BottomItems />` and `<NavigationMenu.BottomItem />` should be used to display the items in the bottom bar.<br /><br />
 
 Available components:
 
@@ -64,36 +62,38 @@ const MainPage = styled.main`
   padding: 10px;
 `;
 
+const itemGroups = [
+  [
+    {
+      expanded: true,
+      icon: Doc,
+      label: 'Subscription',
+      tag: 'new',
+      subitems: [{ label: 'Details' }],
+    },
+    {
+      active: true,
+      icon: Doc,
+      label: 'Billing',
+    },
+  ],
+  [
+    {
+      icon: Help,
+      label: 'Help',
+    },
+  ],
+];
+
+// Whether the link handles the active attribute automatically (e.g., link from react-router-dom)
+// then the item's active prop is not needed
+const renderWrapper = ({ children }) => (
+  <a href="https://www.gympass.com">{children}</a>
+);
+
+const IconComponent = ({ icon }) => <Icon as={icon} fill="deep" />;
+
 render(() => {
-  const renderWrapper = ({ children }) => (
-    <a href="https://www.gympass.com">{children}</a>
-  );
-
-  const IconComponent = ({ icon }) => <Icon as={icon} fill="deep" />;
-
-  const itemGroups = [
-    [
-      {
-        expanded: true,
-        icon: Doc,
-        label: 'Subscription',
-        tag: 'new',
-        subitems: [{ label: 'Details' }],
-      },
-      {
-        active: true,
-        icon: Doc,
-        label: 'Billing',
-      },
-    ],
-    [
-      {
-        icon: Help,
-        label: 'Help',
-      },
-    ],
-  ];
-
   return (
     <Container>
       <NavigationMenu responsive={false}>
@@ -166,55 +166,54 @@ const MainPage = styled.main`
   padding: 10px;
 `;
 
+const itemMainGroup = [
+  {
+    expanded: true,
+    icon: Doc,
+    label: 'Subscription',
+    tag: 'new',
+    subitems: [{ label: 'Details' }],
+  },
+  {
+    active: true,
+    icon: Doc,
+    label: 'Billing',
+  },
+];
+
+const itemGroups = [
+  [...itemMainGroup],
+  [
+    {
+      icon: Help,
+      label: 'Help',
+    },
+  ],
+];
+
+const IconComponent = ({ icon }) => <Icon as={icon} fill="deep" />;
+
 render(() => {
   const [isOpenOnMobile, setIsOpenOnMobile] = useState(false);
 
+  // Whether the link handles the active attribute automatically (e.g., link from react-router-dom)
+  // then the item's active prop is not needed
   const renderWrapper = ({ children }) => (
-    <a
-      href="/components/navigationmenu"
-      onClick={() => setIsOpenOnMobile(false)}
-    >
+    <a href="https://www.gympass.com" onClick={() => setIsOpenOnMobile(false)}>
       {children}
     </a>
   );
 
-  const IconComponent = ({ icon }) => <Icon as={icon} fill="deep" />;
-
-  const itemMainGroup = [
-    {
-      expanded: true,
-      icon: Doc,
-      label: 'Subscription',
-      tag: 'new',
-      subitems: [{ label: 'Details' }],
-    },
-    {
-      active: true,
-      icon: Doc,
-      label: 'Billing',
-    },
-  ];
-
-  const itemGroups = [
-    [...itemMainGroup],
-    [
-      {
-        icon: Help,
-        label: 'Help',
-      },
-    ],
-  ];
-
   const bottomItems = [
-    ...itemMainGroup
-      .slice(0, 2)
-      .map(({ active, icon, label }) => ({
-        active,
-        icon,
-        label,
-        wrapper: renderWrapper,
-      })),
+    ...itemMainGroup.slice(0, 2).map(({ active, icon, label }) => ({
+      active,
+      icon,
+      label,
+      wrapper: renderWrapper,
+    })),
     {
+      // Missing the active logic here.
+      // It must be active when none of the other left items are active.
       icon: MenuMore,
       label: 'More',
       wrapper: ({ children }) => (
@@ -225,8 +224,9 @@ render(() => {
 
   return (
     <Container>
-      {/* Due to the structure of the yoga page it is not possible to demonstrate all responsive behavior */}
-      {/* To achieve this replace openOnMobile={false} by openOnMobile={isOpenOnMobile} */}
+      {/* It is not possible to demonstrate all the responsive behavior here. */}
+      {/* When clicking on the "More" item, the entire menu will be displayed above the bottom bar. */}
+      {/* To get the entire flow the openOnMobile={false} prop must be replaced by openOnMobile={isOpenOnMobile} */}
       <NavigationMenu openOnMobile={false}>
         <NavigationMenu.Header>
           <NavigationMenu.Menu
@@ -269,7 +269,9 @@ render(() => {
           />
         </NavigationMenu.Footer>
       </NavigationMenu>
+
       <MainPage>Main page</MainPage>
+
       <NavigationMenu.BottomItems>
         {bottomItems.map(({ active, icon, label, wrapper }) => (
           <NavigationMenu.BottomItem
@@ -287,15 +289,8 @@ render(() => {
 
 #### Menu subcomponent with an action
 
-When the Menu subcomponent has an action associated it exposes the onClick event.
-
 ```javascript state
-const StyledBox = styled(Box)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+const StyledAvatar = styled(Avatar.Circle)`
   background-color: ${theme.colors.vibin};
 `;
 
@@ -305,11 +300,9 @@ render(() => {
       <NavigationMenu.Header>
         <NavigationMenu.Menu
           avatar={
-            <Avatar.Circle>
-              <StyledBox>
-                <Text color="white">C</Text>
-              </StyledBox>
-            </Avatar.Circle>
+            <StyledAvatar>
+              <Text color="white">C</Text>
+            </StyledAvatar>
           }
           title="Company"
           subtitle="Reseller"
@@ -322,8 +315,6 @@ render(() => {
 ```
 
 #### Switcher subcomponent with actions
-
-When the Switcher subcomponent has associated actions, they are displayed so that the user can select one of them.
 
 ```javascript state
 const StyledAvatar = styled(Avatar.Circle)`
