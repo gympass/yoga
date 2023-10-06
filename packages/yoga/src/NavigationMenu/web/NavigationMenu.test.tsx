@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { ThemeProvider, Avatar, Icon } from '@gympass/yoga';
-import { Help, Doc } from '@gympass/yoga-icons';
+import { Help, Doc, MenuMore } from '@gympass/yoga-icons';
 
 import NavigationMenu from './NavigationMenu';
 
@@ -11,7 +11,7 @@ type IconProps = {
 
 describe('<NavigationMenu />', () => {
   describe('Snapshots', () => {
-    it('should match  NavigationMenu', () => {
+    it('should match NavigationMenu', () => {
       const renderWrapper = ({ children }) => {
         return <a href="https://www.gympass.com">{children}</a>;
       };
@@ -20,21 +20,23 @@ describe('<NavigationMenu />', () => {
         return <Icon as={icon} />;
       };
 
+      const itemMainGroup = [
+        {
+          expanded: true,
+          icon: Doc,
+          label: 'Subscription',
+          tag: 'new',
+          subitems: [{ label: 'Details' }],
+        },
+        {
+          active: true,
+          icon: Doc,
+          label: 'Billing',
+        },
+      ];
+
       const itemGroups = [
-        [
-          {
-            expanded: true,
-            icon: Doc,
-            label: 'Subscription',
-            tag: 'new',
-            subitems: [{ label: 'Details' }],
-          },
-          {
-            active: true,
-            icon: Doc,
-            label: 'Billing',
-          },
-        ],
+        [...itemMainGroup],
         [
           {
             icon: Help,
@@ -43,9 +45,25 @@ describe('<NavigationMenu />', () => {
         ],
       ];
 
+      const bottomItems = [
+        ...itemMainGroup.slice(0, 2).map(({ active, icon, label }) => ({
+          active,
+          icon,
+          label,
+          wrapper: renderWrapper,
+        })),
+        {
+          active: false,
+          icon: MenuMore,
+          label: 'More',
+          wrapper: ({ children }) => <div>{children}</div>,
+        },
+      ];
+
       const { container } = render(
         <ThemeProvider>
-          <NavigationMenu responsive={false}>
+          <NavigationMenu
+          >
             <NavigationMenu.Header>
               <NavigationMenu.Menu
                 avatar={<Avatar.Circle />}
@@ -64,7 +82,6 @@ describe('<NavigationMenu />', () => {
                       expanded={item.expanded}
                       icon={<IconComponent icon={item.icon} />}
                       label={item.label}
-                      responsive={false}
                       wrapper={renderWrapper}
                       tag={item.tag}
                     >
@@ -90,6 +107,18 @@ describe('<NavigationMenu />', () => {
               />
             </NavigationMenu.Footer>
           </NavigationMenu>
+
+          <NavigationMenu.BottomItems>
+            {bottomItems.map(({ active, icon, label, wrapper }) => (
+              <NavigationMenu.BottomItem
+                key={label}
+                active={active}
+                icon={icon}
+                label={label}
+                wrapper={wrapper}
+              />
+            ))}
+          </NavigationMenu.BottomItems>
         </ThemeProvider>,
       );
 
