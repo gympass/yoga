@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { oneOfType, func, node, bool, string } from 'prop-types';
+import { oneOfType, func, node, bool } from 'prop-types';
 import styled, { withTheme } from 'styled-components';
 
 import StyledButton from './StyledButton';
@@ -39,7 +39,6 @@ const ButtonIcon = forwardRef(
       },
       small,
       disabled,
-      ariaLabel,
       ...props
     },
     ref,
@@ -51,7 +50,6 @@ const ButtonIcon = forwardRef(
         small={small}
         disabled={disabled}
         aria-disabled={disabled}
-        aria-label={ariaLabel}
       >
         <Icon
           as={icon}
@@ -68,7 +66,6 @@ ButtonIcon.propTypes = {
   secondary: bool,
   inverted: bool,
   icon: oneOfType([node, func]),
-  ariaLabel: string,
 };
 
 ButtonIcon.defaultProps = {
@@ -77,7 +74,6 @@ ButtonIcon.defaultProps = {
   secondary: false,
   inverted: false,
   icon: undefined,
-  ariaLabel: undefined,
 };
 
 ButtonIcon.displayName = 'Button.Icon';

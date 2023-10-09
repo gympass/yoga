@@ -6,7 +6,6 @@ import StyledButton from './StyledButton';
 const Button = forwardRef(
   (
     {
-      ariaLabel,
       children,
       onClick,
       full,
@@ -32,7 +31,6 @@ const Button = forwardRef(
         ref={ref}
         disabled={disabled}
         aria-disabled={disabled}
-        aria-label={ariaLabel}
         full={full}
         inverted={inverted}
         onClick={onClick}
@@ -48,7 +46,6 @@ const Button = forwardRef(
 );
 
 Button.propTypes = {
-  ariaLabel: string,
   children: node,
   disabled: bool,
   full: bool,
@@ -62,7 +59,6 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  ariaLabel: undefined,
   children: 'Button',
   disabled: undefined,
   full: false,
