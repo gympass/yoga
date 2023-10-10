@@ -12,13 +12,11 @@ const StyledSpinner = styled.span`
       color: ${color};
       animation: 1.4s linear 0s infinite normal none running rotation;
     }
-
     .circular {
       display: block;
       height: 100%;
       width: 100%;
     }
-
     .path {
       stroke-dasharray: 80px, 200px;
       stroke-dashoffset: 0;
@@ -27,7 +25,6 @@ const StyledSpinner = styled.span`
       stroke-linecap: round;
       stroke: ${color};
     }
-
     @keyframes rotation {
       0% {
           transform: rotate(0deg);
@@ -36,7 +33,6 @@ const StyledSpinner = styled.span`
           transform: rotate(360deg);
       }
     }
-
     @keyframes dash {
       0% {
         stroke-dasharray: 1px, 200px;
