@@ -4,8 +4,21 @@ import { string, func } from 'prop-types';
 import { ImagePropTypes } from 'deprecated-react-native-prop-types';
 import { Image } from 'react-native';
 
+import styled from 'styled-components';
+import { hexToRgb } from '@gympass/yoga-common';
 import Box from '../../Box';
 import Icon from '../../Icon';
+
+const BORDER_WIDTH = 0.5;
+const BORDER_OPACITY = 0.25;
+
+const Contain = styled(Box).attrs(({ theme: { yoga }, borderRadius }) => {
+  return {
+    borderColor: hexToRgb(yoga.colors.secondary, BORDER_OPACITY),
+    borderWidth: BORDER_WIDTH,
+    borderRadius,
+  };
+})``;
 
 const Content = ({ icon, src, fill, content, stroke }) => {
   if (src) {
@@ -26,29 +39,50 @@ const Content = ({ icon, src, fill, content, stroke }) => {
  * It has two shapes: default and circle
  */
 const Avatar = forwardRef(
-  ({ icon = BuildingFilled, src, children, fill, stroke, ...props }, ref) => {
+  (
+    {
+      icon = BuildingFilled,
+      src,
+      children,
+      fill,
+      stroke,
+      borderRadius,
+      width,
+      height,
+      ...props
+    },
+    ref,
+  ) => {
     return (
-      <Box
-        ref={ref}
-        bgColor="elements.selectionAndIcons"
+      <Contain
+        borderRadius={borderRadius || 'small'}
+        width={width || 48}
+        height={height || 48}
         display="flex"
         alignItems="center"
         justifyContent="center"
-        width={48}
-        height={48}
-        borderRadius="small"
-        elevation="small"
-        overflow="hidden"
-        {...props}
       >
-        <Content
-          icon={icon}
-          src={src}
-          fill={fill}
-          stroke={stroke}
-          content={children}
-        />
-      </Box>
+        <Box
+          ref={ref}
+          bgColor="elements.selectionAndIcons"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          width={(width || 48) - BORDER_WIDTH * 2}
+          height={(height || 48) - BORDER_WIDTH * 2}
+          borderRadius={borderRadius || 'small'}
+          overflow="hidden"
+          {...props}
+        >
+          <Content
+            icon={icon}
+            src={src}
+            fill={fill}
+            stroke={stroke}
+            content={children}
+          />
+        </Box>
+      </Contain>
     );
   },
 );
