@@ -1,21 +1,34 @@
 import React from 'react';
-import styled from 'styled-components';
 import { bool, string, node } from 'prop-types';
 import Button from './Button';
-
-const StyledButton = styled(Button)``;
+import ButtonOutline from './Outline';
+import ButtonIcon from './Icon';
 
 const ButtonLoading = ({
   isLoading,
   loadingLabel,
   children,
   disabled,
+  variant,
   ...props
 }) => {
+  const commonProps = {
+    isLoading,
+    disabled: isLoading,
+    ...props,
+  };
+
+  const variantToComponent = {
+    outline: ButtonOutline,
+    icon: ButtonIcon,
+  };
+
+  const ButtonComponent = variantToComponent[variant] || Button;
+
   return (
-    <StyledButton isLoading={isLoading} disabled={isLoading} {...props}>
+    <ButtonComponent {...commonProps}>
       {isLoading ? loadingLabel : children}
-    </StyledButton>
+    </ButtonComponent>
   );
 };
 
@@ -24,6 +37,7 @@ ButtonLoading.propTypes = {
   disabled: bool,
   loadingLabel: string,
   children: node,
+  variant: string,
 };
 
 ButtonLoading.defaultProps = {
@@ -31,6 +45,7 @@ ButtonLoading.defaultProps = {
   disabled: false,
   loadingLabel: undefined,
   children: 'Button',
+  variant: 'default',
 };
 
 ButtonLoading.displayName = 'Button.Loading';
