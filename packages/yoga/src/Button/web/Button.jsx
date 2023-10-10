@@ -46,6 +46,7 @@ const Button = forwardRef(
 );
 
 Button.propTypes = {
+  ariaLabel: string,
   children: node,
   disabled: bool,
   full: bool,
@@ -59,6 +60,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  ariaLabel: undefined,
   children: 'Button',
   disabled: undefined,
   full: false,
