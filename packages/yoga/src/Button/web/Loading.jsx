@@ -3,6 +3,7 @@ import { bool, string, node } from 'prop-types';
 import Button from './Button';
 import ButtonOutline from './Outline';
 import ButtonIcon from './Icon';
+import Spinner from '../../Spinner';
 
 const ButtonLoading = ({
   isLoading,
@@ -27,7 +28,7 @@ const ButtonLoading = ({
 
   return (
     <ButtonComponent {...commonProps}>
-      {isLoading ? loadingLabel : children}
+      {isLoading ? <Spinner size="small" /> : children}
     </ButtonComponent>
   );
 };
