@@ -10,68 +10,68 @@ import get from 'lodash.get';
 
 const StyledSpinner = styled.div`
   ${({
+    color,
+    size,
     theme: {
       yoga: {
         components: { spinner },
       },
     },
   }) => `
-    .circular {
-      top:20%;
-      left:50%;
-      width:50px; 
-      height:50px;
-      -webkit-animation: rotate 2s linear infinite;
-      animation: rotate 2s linear infinite;
+    .spinner1 {
+      width: ${size}px;
+      padding: calc(${size}px * 0.1);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: ${color};
+      mask: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+      -webkit-mask-composite: source-out;
+      mask-composite: subtract;
+      animation: rotation 1s linear infinite ;
     }
 
-    @-webkit-keyframes rotate {
-      from {-webkit-transform: rotate(0deg);}
-      to {-webkit-transform: rotate(360deg);}
+    .spinner2 {
+      display: inline-block;
+      width: ${size}px;
+      height: ${size}px;
+      color: ${color};
+      animation: 1.4s linear 0s infinite normal none running rotation;
     }
-    
-    @keyframes rotate {
-      from {transform: rotate(0deg);}
-      to {transform: rotate(360deg);}
+
+    .circular {
+      display: block;
     }
-    
+
     .path {
-      stroke-dasharray: 1,200;
+      stroke-dasharray: 80px, 200px;
       stroke-dashoffset: 0;
-      -webkit-animation: dash 1.5s ease-in-out infinite,
-        color 6s ease-in-out infinite;
-      animation: dash 1.5s ease-in-out infinite,
-        color 6s ease-in-out infinite;
+      -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
+      animation: 1.4s ease-in-out 0s infinite normal none running dash;
       stroke-linecap: round;
+      stroke: ${color};
     }
-    
-    @-webkit-keyframes dash {
-      0%   {
-        stroke-dasharray: 1,200;
-        stroke-dashoffset: 0;
-      }
-      50%  { 
-        stroke-dasharray: 89,200;
-        stroke-dashoffset: -35;
+
+    @keyframes rotation {
+      0% {
+          transform: rotate(0deg);
       }
       100% {
-        stroke-dasharray: 89,200;
-        stroke-dashoffset: -124;
+          transform: rotate(360deg);
       }
     }
-    
+
     @keyframes dash {
-      0%   {
-        stroke-dasharray: 1,200;
+      0% {
+        stroke-dasharray: 1px, 200px;
         stroke-dashoffset: 0;
       }
-      50%  { 
-        stroke-dasharray: 89,200;
-        stroke-dashoffset: -35;
+      50% {
+        stroke-dasharray: 100px, 200px;
+        stroke-dashoffset: -15px;
       }
       100% {
-        stroke-dasharray: 89,200;
-        stroke-dashoffset: -124;
+        stroke-dasharray: 100px, 200px;
+        stroke-dashoffset: -125px;
       }
     }
   `}
@@ -79,10 +79,14 @@ const StyledSpinner = styled.div`
 
 const Spinner = ({size, color, theme}) => {
   return (
-    <StyledSpinner>
-      <svg class="circular" height={size} width={size}>
-      <circle class="path" cx="25" cy="25.2" r="19.9" fill="none" stroke-width='3' stroke-miterlimit="10" stroke={get(theme.yoga.colors, color, color)} />
-      </svg>
+    <StyledSpinner color={get(theme.yoga.colors, color, color)} size={get(theme.yoga.spacing, size, size)}>
+      {/*<div class='spinner1' />*/}
+
+      <span class='spinner2'>
+        <svg class="circular" viewBox="22 22 44 44">
+          <circle class="path" fill="none" stroke-width="3.6" cx="44" cy="44" r="20.2"></circle>
+        </svg>
+      </span>
     </StyledSpinner>
   )
 };
@@ -107,7 +111,7 @@ Spinner.propTypes = {
 };
 
 Spinner.defaultProps = {
-  size: 'medium',
+  size: 'xxlarge',
   color: 'light'
 };
 
