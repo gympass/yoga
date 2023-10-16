@@ -1,23 +1,10 @@
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
-import {
-  oneOf,
-  string,
-  oneOfType,
-  number,
-} from 'prop-types';
+import { oneOf, string, oneOfType, number } from 'prop-types';
 import get from 'lodash.get';
 
 const StyledSpinner = styled.span`
-  ${({
-    color,
-    size,
-    theme: {
-      yoga: {
-        components: { spinner },
-      },
-    },
-  }) => `
+  ${({ color, size }) => `
     .spinner {
       display: inline-block;
       width: ${size}px;
@@ -67,16 +54,26 @@ const StyledSpinner = styled.span`
   `}
 `;
 
-const Spinner = ({size, color, theme}) => {
+const Spinner = ({ size, color, theme }) => {
   return (
-    <StyledSpinner color={get(theme.yoga.colors, color, color)} size={get(theme.yoga.spacing, size, size)}>
-      <span className='spinner'>
+    <StyledSpinner
+      color={get(theme.yoga.colors, color, color)}
+      size={get(theme.yoga.spacing, size, size)}
+    >
+      <span className="spinner">
         <svg className="circular" viewBox="22 22 44 44">
-          <circle className="path" fill="none" stroke-width="3.6" cx="44" cy="44" r="20.2"></circle>
+          <circle
+            className="path"
+            fill="none"
+            strokeWidth="3.6"
+            cx="44"
+            cy="44"
+            r="20.2"
+          />
         </svg>
       </span>
     </StyledSpinner>
-  )
+  );
 };
 
 const commonSizes = [
@@ -100,7 +97,7 @@ Spinner.propTypes = {
 
 Spinner.defaultProps = {
   size: 'xxlarge',
-  color: 'light'
+  color: 'light',
 };
 
 export default withTheme(Spinner);
