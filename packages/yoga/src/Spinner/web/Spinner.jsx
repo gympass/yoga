@@ -8,7 +8,7 @@ import {
 } from 'prop-types';
 import get from 'lodash.get';
 
-const StyledSpinner = styled.div`
+const StyledSpinner = styled.span`
   ${({
     color,
     size,
@@ -18,19 +18,7 @@ const StyledSpinner = styled.div`
       },
     },
   }) => `
-    .spinner1 {
-      width: ${size}px;
-      padding: calc(${size}px * 0.1);
-      aspect-ratio: 1;
-      border-radius: 50%;
-      background: ${color};
-      mask: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
-      -webkit-mask-composite: source-out;
-      mask-composite: subtract;
-      animation: rotation 1s linear infinite ;
-    }
-
-    .spinner2 {
+    .spinner {
       display: inline-block;
       width: ${size}px;
       height: ${size}px;
@@ -40,6 +28,8 @@ const StyledSpinner = styled.div`
 
     .circular {
       display: block;
+      height: 100%;
+      width: 100%;
     }
 
     .path {
@@ -80,11 +70,9 @@ const StyledSpinner = styled.div`
 const Spinner = ({size, color, theme}) => {
   return (
     <StyledSpinner color={get(theme.yoga.colors, color, color)} size={get(theme.yoga.spacing, size, size)}>
-      {/*<div class='spinner1' />*/}
-
-      <span class='spinner2'>
-        <svg class="circular" viewBox="22 22 44 44">
-          <circle class="path" fill="none" stroke-width="3.6" cx="44" cy="44" r="20.2"></circle>
+      <span className='spinner'>
+        <svg className="circular" viewBox="22 22 44 44">
+          <circle className="path" fill="none" stroke-width="3.6" cx="44" cy="44" r="20.2"></circle>
         </svg>
       </span>
     </StyledSpinner>
