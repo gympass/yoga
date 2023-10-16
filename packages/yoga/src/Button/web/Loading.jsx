@@ -1,5 +1,6 @@
 import React from 'react';
 import { bool, string, node } from 'prop-types';
+import styled from 'styled-components';
 import Button from './Button';
 import ButtonOutline from './Outline';
 import ButtonIcon from './Icon';
@@ -7,7 +8,6 @@ import Spinner from '../../Spinner';
 
 const ButtonLoading = ({
   isLoading,
-  loadingLabel,
   children,
   disabled,
   variant,
@@ -15,7 +15,7 @@ const ButtonLoading = ({
 }) => {
   const commonProps = {
     isLoading,
-    disabled: isLoading,
+    disabled: isLoading || disabled,
     ...props,
   };
 
@@ -26,9 +26,39 @@ const ButtonLoading = ({
 
   const ButtonComponent = variantToComponent[variant] || Button;
 
+  const LoadingContainer = styled.div`
+    position: relative;
+
+    & > span {
+      color: transparent;
+    }
+  `;
+
+  const SpinnerContainer = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  `;
+
+  const renderLoading = () => {
+    return (
+      <LoadingContainer>
+        <span>{children}</span>
+        <SpinnerContainer>
+          <Spinner size="small" />
+        </SpinnerContainer>
+      </LoadingContainer>
+    );
+  };
+
+  const renderLoadingLabel = () => {
+    return <span>{children}</span>;
+  };
+
   return (
     <ButtonComponent {...commonProps}>
-      {isLoading ? <Spinner size="small" /> : children}
+      {isLoading ? renderLoading() : renderLoadingLabel()}
     </ButtonComponent>
   );
 };
@@ -36,7 +66,6 @@ const ButtonLoading = ({
 ButtonLoading.propTypes = {
   isLoading: bool,
   disabled: bool,
-  loadingLabel: string,
   children: node,
   variant: string,
 };
@@ -44,7 +73,6 @@ ButtonLoading.propTypes = {
 ButtonLoading.defaultProps = {
   isLoading: false,
   disabled: false,
-  loadingLabel: undefined,
   children: 'Button',
   variant: 'default',
 };
