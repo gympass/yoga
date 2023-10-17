@@ -432,6 +432,83 @@ exports[`<Button /> Snapshots buttons rendering as an anchor Text Button with hr
 </div>
 `;
 
+exports[`<Button /> Snapshots buttons rendering as an anchor should match snapshot with default Button Loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+<div>
+  <a
+    aria-disabled="false"
+    class="c0"
+    href="http://www.gympass.com"
+    target="blank"
+  >
+    <span>
+      Button
+    </span>
+  </a>
+</div>
+`;
+
 exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with default Button 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -510,6 +587,90 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
     disabled=""
   >
     Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots disabled buttons With disabled prop should match snapshot with default Button Loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #F5F5FA;
+  color: #6B6B78;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
+}
+
+<div>
+  <button
+    aria-disabled="true"
+    class="c0"
+    disabled=""
+  >
+    <span>
+      Button
+    </span>
   </button>
 </div>
 `;
@@ -1417,6 +1578,90 @@ exports[`<Button /> Snapshots primary buttons With disabled prop should match sn
 </div>
 `;
 
+exports[`<Button /> Snapshots primary buttons With disabled prop should match snapshot with default Button Loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #F5F5FA;
+  color: #6B6B78;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
+}
+
+<div>
+  <button
+    aria-disabled="true"
+    class="c0"
+    disabled=""
+  >
+    <span>
+      Button
+    </span>
+  </button>
+</div>
+`;
+
 exports[`<Button /> Snapshots primary buttons With disabled prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -2310,6 +2555,163 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
 </div>
 `;
 
+exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with default Button Loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #F5F5FA;
+  color: #6B6B78;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
+}
+
+.c3 .spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: #6B6B78;
+  -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
+  animation: 1.4s linear 0s infinite normal none running rotation;
+}
+
+.c3 .circular {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.c3 .path {
+  stroke-dasharray: 80px,200px;
+  stroke-dashoffset: 0;
+  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  stroke-linecap: round;
+  stroke: #6B6B78;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c1 > span {
+  color: transparent;
+}
+
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+<div>
+  <button
+    aria-disabled="true"
+    class="c0"
+    disabled=""
+  >
+    <div
+      class="c1"
+    >
+      <span>
+        Button
+      </span>
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+          color="#6B6B78"
+          size="16"
+        >
+          <span
+            class="spinner"
+          >
+            <svg
+              class="circular"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                class="path"
+                cx="44"
+                cy="44"
+                fill="none"
+                r="20.2"
+                stroke-width="3.6"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
+  </button>
+</div>
+`;
+
 exports[`<Button /> Snapshots primary buttons With full prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -2937,6 +3339,278 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     class="c0"
   >
     Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with default Button Loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #D8385E;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #D8385E;
+}
+
+.c0:active {
+  background-color: rgba(255,255,255,0.75);
+  color: rgba(216,56,94,0.75);
+}
+
+.c0:active svg {
+  fill: rgba(216,56,94,0.75);
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
+<div>
+  <button
+    aria-disabled="false"
+    class="c0"
+  >
+    <span>
+      Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots primary buttons With inverted prop should match snapshot with default Button Loading when is loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #F5F5FA;
+  color: #6B6B78;
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: #FFFFFF;
+  color: #D8385E;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
+  fill: #D8385E;
+}
+
+.c0:active {
+  background-color: rgba(255,255,255,0.75);
+  color: rgba(216,56,94,0.75);
+}
+
+.c0:active svg {
+  fill: rgba(216,56,94,0.75);
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
+.c3 .spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: #6B6B78;
+  -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
+  animation: 1.4s linear 0s infinite normal none running rotation;
+}
+
+.c3 .circular {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.c3 .path {
+  stroke-dasharray: 80px,200px;
+  stroke-dashoffset: 0;
+  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  stroke-linecap: round;
+  stroke: #6B6B78;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c1 > span {
+  color: transparent;
+}
+
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+<div>
+  <button
+    aria-disabled="true"
+    class="c0"
+    disabled=""
+  >
+    <div
+      class="c1"
+    >
+      <span>
+        Button
+      </span>
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+          color="#6B6B78"
+          size="16"
+        >
+          <span
+            class="spinner"
+          >
+            <svg
+              class="circular"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                class="path"
+                cx="44"
+                cy="44"
+                fill="none"
+                r="20.2"
+                stroke-width="3.6"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
   </button>
 </div>
 `;
@@ -3893,6 +4567,238 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
 </div>
 `;
 
+exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with default Button Loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+<div>
+  <button
+    aria-disabled="false"
+    class="c0"
+  >
+    <span>
+      Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with default Button Loading when is loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #F5F5FA;
+  color: #6B6B78;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
+}
+
+.c3 .spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: #6B6B78;
+  -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
+  animation: 1.4s linear 0s infinite normal none running rotation;
+}
+
+.c3 .circular {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.c3 .path {
+  stroke-dasharray: 80px,200px;
+  stroke-dashoffset: 0;
+  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  stroke-linecap: round;
+  stroke: #6B6B78;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c1 > span {
+  color: transparent;
+}
+
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+<div>
+  <button
+    aria-disabled="true"
+    class="c0"
+    disabled=""
+  >
+    <div
+      class="c1"
+    >
+      <span>
+        Button
+      </span>
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+          color="#6B6B78"
+          size="16"
+        >
+          <span
+            class="spinner"
+          >
+            <svg
+              class="circular"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                class="path"
+                cx="44"
+                cy="44"
+                fill="none"
+                r="20.2"
+                stroke-width="3.6"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
+  </button>
+</div>
+`;
+
 exports[`<Button /> Snapshots primary buttons With small prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -4592,6 +5498,238 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     class="c0"
   >
     Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots primary buttons Without props should match snapshot with default Button Loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+<div>
+  <button
+    aria-disabled="false"
+    class="c0"
+  >
+    <span>
+      Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots primary buttons Without props should match snapshot with default Button Loading when is loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #D8385E;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #F5F5FA;
+  color: #6B6B78;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+}
+
+.c0:active {
+  background-color: rgba(216,56,94,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
+}
+
+.c3 .spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  color: #6B6B78;
+  -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
+  animation: 1.4s linear 0s infinite normal none running rotation;
+}
+
+.c3 .circular {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.c3 .path {
+  stroke-dasharray: 80px,200px;
+  stroke-dashoffset: 0;
+  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  stroke-linecap: round;
+  stroke: #6B6B78;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c1 > span {
+  color: transparent;
+}
+
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+<div>
+  <button
+    aria-disabled="true"
+    class="c0"
+    disabled=""
+  >
+    <div
+      class="c1"
+    >
+      <span>
+        Button
+      </span>
+      <div
+        class="c2"
+      >
+        <span
+          class="c3"
+          color="#6B6B78"
+          size="16"
+        >
+          <span
+            class="spinner"
+          >
+            <svg
+              class="circular"
+              viewBox="22 22 44 44"
+            >
+              <circle
+                class="path"
+                cx="44"
+                cy="44"
+                fill="none"
+                r="20.2"
+                stroke-width="3.6"
+              />
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
   </button>
 </div>
 `;
@@ -5419,6 +6557,81 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
 </div>
 `;
 
+exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with default Button Loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+<div>
+  <button
+    aria-disabled="false"
+    class="c0"
+  >
+    <span>
+      Button
+    </span>
+  </button>
+</div>
+`;
+
 exports[`<Button /> Snapshots secondary buttons With full prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -6046,6 +7259,101 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
     class="c0"
   >
     Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots secondary buttons With inverted prop should match snapshot with default Button Loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #231B22;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #231B22;
+}
+
+.c0:active {
+  background-color: rgba(255,255,255,0.75);
+  color: rgba(35,27,34,0.75);
+}
+
+.c0:active svg {
+  fill: rgba(35,27,34,0.75);
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
+<div>
+  <button
+    aria-disabled="false"
+    class="c0"
+  >
+    <span>
+      Button
+    </span>
   </button>
 </div>
 `;
@@ -7152,6 +8460,81 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
 </div>
 `;
 
+exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with default Button Loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 16px;
+  height: 16px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+<div>
+  <button
+    aria-disabled="false"
+    class="c0"
+  >
+    <span>
+      Button
+    </span>
+  </button>
+</div>
+`;
+
 exports[`<Button /> Snapshots secondary buttons With small prop should match snapshot with default Button with Icon 1`] = `
 .c0 {
   box-sizing: border-box;
@@ -7851,6 +9234,81 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
     class="c0"
   >
     Button
+  </button>
+</div>
+`;
+
+exports[`<Button /> Snapshots secondary buttons Without props should match snapshot with default Button Loading 1`] = `
+.c0 {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #231B22;
+  border: none;
+  border-radius: 9999px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 svg {
+  width: 24px;
+  height: 24px;
+  fill: #FFFFFF;
+  margin-right: 8px;
+  -webkit-transition: fill 0.2s;
+  transition: fill 0.2s;
+}
+
+.c0:not([disabled]):hover,
+.c0:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
+}
+
+.c0:active {
+  background-color: rgba(35,27,34,0.75);
+  color: #FFFFFF;
+}
+
+.c0:active svg {
+  fill: #FFFFFF;
+}
+
+<div>
+  <button
+    aria-disabled="false"
+    class="c0"
+  >
+    <span>
+      Button
+    </span>
   </button>
 </div>
 `;

@@ -49,6 +49,26 @@ describe('<Button />', () => {
           expect(container).toMatchSnapshot();
         });
 
+        it('should match snapshot with default Button Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading isLoading={false} />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
+        it('should match snapshot with default Button Loading when is loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading isLoading />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
         it('should match snapshot with text Button', () => {
           const { container } = render(
             <ThemeProvider>
@@ -131,6 +151,26 @@ describe('<Button />', () => {
           expect(container).toMatchSnapshot();
         });
 
+        it('should match snapshot with default Button Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading inverted isLoading={false} />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
+        it('should match snapshot with default Button Loading when is loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading inverted isLoading />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
         it('should match snapshot with text Button', () => {
           const { container } = render(
             <ThemeProvider>
@@ -177,6 +217,26 @@ describe('<Button />', () => {
           const { container } = render(
             <ThemeProvider>
               <Button.Outline small />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
+        it('should match snapshot with default Button Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading small isLoading={false} />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
+        it('should match snapshot with default Button Loading when is loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading small isLoading />
             </ThemeProvider>,
           );
 
@@ -255,6 +315,16 @@ describe('<Button />', () => {
           expect(container).toMatchSnapshot();
         });
 
+        it('should match snapshot with default Button Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading full isLoading />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
         it('should match snapshot with text Button', () => {
           const { container } = render(
             <ThemeProvider>
@@ -311,6 +381,16 @@ describe('<Button />', () => {
           const { container } = render(
             <ThemeProvider>
               <Button.Outline disabled />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
+        it('should match snapshot with default Button Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading disabled isLoading={false} />
             </ThemeProvider>,
           );
 
@@ -416,6 +496,20 @@ describe('<Button />', () => {
         expect(container).toMatchSnapshot();
       });
 
+      it('should match snapshot with default Button Loading', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <Button.Loading
+              href="http://www.gympass.com"
+              target="blank"
+              isLoading={false}
+            />
+          </ThemeProvider>,
+        );
+
+        expect(container).toMatchSnapshot();
+      });
+
       it('Text Button with href prop', () => {
         const { container } = render(
           <ThemeProvider>
@@ -455,6 +549,16 @@ describe('<Button />', () => {
           const { container } = render(
             <ThemeProvider>
               <Button.Outline secondary />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
+        it('should match snapshot with default Button Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading secondary isLoading={false} />
             </ThemeProvider>,
           );
 
@@ -553,6 +657,16 @@ describe('<Button />', () => {
           expect(container).toMatchSnapshot();
         });
 
+        it('should match snapshot with default Button Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading inverted secondary isLoading={false} />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
         it('should match snapshot with outline Button with Icon', () => {
           const { container } = render(
             <ThemeProvider>
@@ -619,6 +733,16 @@ describe('<Button />', () => {
           const { container } = render(
             <ThemeProvider>
               <Button.Outline small secondary />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
+        it('should match snapshot with default Button Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading small secondary isLoading={false} />
             </ThemeProvider>,
           );
 
@@ -697,6 +821,16 @@ describe('<Button />', () => {
           expect(container).toMatchSnapshot();
         });
 
+        it('should match snapshot with default Button Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading full secondary isLoading={false} />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
         it('should match snapshot with text Button', () => {
           const { container } = render(
             <ThemeProvider>
@@ -755,6 +889,16 @@ describe('<Button />', () => {
           const { container } = render(
             <ThemeProvider>
               <Button.Outline disabled />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
+        it('should match snapshot with default Button Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Loading disabled isLoading={false} />
             </ThemeProvider>,
           );
 
@@ -847,6 +991,21 @@ describe('<Button />', () => {
       );
 
       fireEvent.click(getByText('Button.Outline'));
+
+      expect(onClickMock).toHaveBeenCalled();
+    });
+
+    it('should call onClick function when click on Button.Loading', () => {
+      const onClickMock = jest.fn();
+      const { getByText } = render(
+        <ThemeProvider>
+          <Button.Loading onClick={onClickMock} isLoading={false}>
+            Button.Loading
+          </Button.Loading>
+        </ThemeProvider>,
+      );
+
+      fireEvent.click(getByText('Button.Loading'));
 
       expect(onClickMock).toHaveBeenCalled();
     });
