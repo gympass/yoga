@@ -3,7 +3,6 @@ import { bool, string, node } from 'prop-types';
 import styled from 'styled-components';
 import Button from './Button';
 import ButtonOutline from './Outline';
-import ButtonIcon from './Icon';
 import Spinner from '../../Spinner';
 
 const ButtonLoading = ({
@@ -19,12 +18,7 @@ const ButtonLoading = ({
     ...props,
   };
 
-  const variantToComponent = {
-    outline: ButtonOutline,
-    icon: ButtonIcon,
-  };
-
-  const ButtonComponent = variantToComponent[variant] || Button;
+  const ButtonComponent = variant === 'outline' ? ButtonOutline : Button;
 
   const LoadingContainer = styled.div`
     position: relative;
@@ -46,7 +40,7 @@ const ButtonLoading = ({
       <LoadingContainer>
         <span>{children}</span>
         <SpinnerContainer>
-          <Spinner size="small" />
+          <Spinner color="deep" size="small" />
         </SpinnerContainer>
       </LoadingContainer>
     );
