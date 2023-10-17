@@ -31,7 +31,7 @@ exports[`<Avatar /> should match snapshot in avatar with children prop 1`] = `
 >
   <View
     alignItems="center"
-    bgColor="#000"
+    bgColor="elements.selectionAndIcons"
     borderRadius="small"
     display="flex"
     height="100%"
@@ -41,7 +41,7 @@ exports[`<Avatar /> should match snapshot in avatar with children prop 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#000",
+          "backgroundColor": "#9898A6",
           "borderRadius": 8,
           "display": "flex",
           "height": "100%",
@@ -106,7 +106,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
 >
   <View
     alignItems="center"
-    bgColor="#000"
+    bgColor="elements.selectionAndIcons"
     borderRadius="circle"
     display="flex"
     height="100%"
@@ -116,7 +116,7 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#000",
+          "backgroundColor": "#9898A6",
           "borderRadius": 9999,
           "display": "flex",
           "height": "100%",
@@ -240,7 +240,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
 >
   <View
     alignItems="center"
-    bgColor="#000"
+    bgColor="elements.selectionAndIcons"
     borderRadius="circle"
     display="flex"
     height="100%"
@@ -251,7 +251,7 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#000",
+          "backgroundColor": "#9898A6",
           "borderRadius": 9999,
           "display": "flex",
           "height": "100%",
@@ -375,7 +375,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
 >
   <View
     alignItems="center"
-    bgColor="#000"
+    bgColor="elements.selectionAndIcons"
     borderRadius="small"
     display="flex"
     height="100%"
@@ -385,7 +385,7 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#000",
+          "backgroundColor": "#9898A6",
           "borderRadius": 8,
           "display": "flex",
           "height": "100%",
@@ -509,7 +509,7 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
 >
   <View
     alignItems="center"
-    bgColor="#000"
+    bgColor="elements.selectionAndIcons"
     borderRadius="small"
     display="flex"
     height="100%"
@@ -520,7 +520,7 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#000",
+          "backgroundColor": "#9898A6",
           "borderRadius": 8,
           "display": "flex",
           "height": "100%",

@@ -65,7 +65,7 @@ const Avatar = forwardRef(
       >
         <Box
           ref={ref}
-          bgColor="#000"
+          bgColor="elements.selectionAndIcons"
           display="flex"
           alignItems="center"
           justifyContent="center"

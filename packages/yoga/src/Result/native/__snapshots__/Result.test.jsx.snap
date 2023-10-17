@@ -47,7 +47,7 @@ exports[`<Result /> should match snapshot 1`] = `
   >
     <View
       alignItems="center"
-      bgColor="#000"
+      bgColor="elements.selectionAndIcons"
       borderRadius="circle"
       display="flex"
       height="100%"
@@ -57,7 +57,7 @@ exports[`<Result /> should match snapshot 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "#000",
+            "backgroundColor": "#9898A6",
             "borderRadius": 9999,
             "display": "flex",
             "height": "100%",
@@ -1063,7 +1063,7 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
   >
     <View
       alignItems="center"
-      bgColor="#000"
+      bgColor="elements.selectionAndIcons"
       borderRadius="small"
       display="flex"
       height="100%"
@@ -1073,7 +1073,7 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "#000",
+            "backgroundColor": "#9898A6",
             "borderRadius": 8,
             "display": "flex",
             "height": "100%",
@@ -1576,7 +1576,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
   >
     <View
       alignItems="center"
-      bgColor="#000"
+      bgColor="elements.selectionAndIcons"
       borderRadius="circle"
       display="flex"
       height="100%"
@@ -1586,7 +1586,7 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
         [
           {
             "alignItems": "center",
-            "backgroundColor": "#000",
+            "backgroundColor": "#9898A6",
             "borderRadius": 9999,
             "display": "flex",
             "height": "100%",
