@@ -19,22 +19,26 @@ exports[`<Result /> should match snapshot 1`] = `
 >
   <View
     alignItems="center"
-    borderColor="rgba(35, 27, 34, 0.25)"
+    bgColor="rgba(35, 27, 34, 0.25)"
     borderRadius="circle"
-    borderWidth={0.5}
     display="flex"
     height={48}
     justifyContent="center"
+    overflow="hidden"
     style={
       [
         {
           "alignItems": "center",
-          "borderColor": "rgba(35, 27, 34, 0.25)",
+          "backgroundColor": "rgba(35, 27, 34, 0.25)",
           "borderRadius": 9999,
-          "borderWidth": 0.5,
           "display": "flex",
           "height": 48,
           "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingBottom": 0.5,
+          "paddingLeft": 0.5,
+          "paddingRight": 0.5,
+          "paddingTop": 0.5,
           "width": 48,
         },
       ]
@@ -43,27 +47,27 @@ exports[`<Result /> should match snapshot 1`] = `
   >
     <View
       alignItems="center"
-      bgColor="elements.selectionAndIcons"
+      bgColor="#000"
       borderRadius="circle"
       display="flex"
-      height={47}
+      height="100%"
       justifyContent="center"
       overflow="hidden"
       style={
         [
           {
             "alignItems": "center",
-            "backgroundColor": "#9898A6",
+            "backgroundColor": "#000",
             "borderRadius": 9999,
             "display": "flex",
-            "height": 47,
+            "height": "100%",
             "justifyContent": "center",
             "overflow": "hidden",
-            "width": 47,
+            "width": "100%",
           },
         ]
       }
-      width={47}
+      width="100%"
     >
       <RNSVGSvgView
         aria-hidden={true}
@@ -1031,22 +1035,26 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
 >
   <View
     alignItems="center"
-    borderColor="rgba(35, 27, 34, 0.25)"
+    bgColor="rgba(35, 27, 34, 0.25)"
     borderRadius="small"
-    borderWidth={0.5}
     display="flex"
     height={48}
     justifyContent="center"
+    overflow="hidden"
     style={
       [
         {
           "alignItems": "center",
-          "borderColor": "rgba(35, 27, 34, 0.25)",
+          "backgroundColor": "rgba(35, 27, 34, 0.25)",
           "borderRadius": 8,
-          "borderWidth": 0.5,
           "display": "flex",
           "height": 48,
           "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingBottom": 0.5,
+          "paddingLeft": 0.5,
+          "paddingRight": 0.5,
+          "paddingTop": 0.5,
           "width": 48,
         },
       ]
@@ -1055,27 +1063,27 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
   >
     <View
       alignItems="center"
-      bgColor="elements.selectionAndIcons"
+      bgColor="#000"
       borderRadius="small"
       display="flex"
-      height={47}
+      height="100%"
       justifyContent="center"
       overflow="hidden"
       style={
         [
           {
             "alignItems": "center",
-            "backgroundColor": "#9898A6",
+            "backgroundColor": "#000",
             "borderRadius": 8,
             "display": "flex",
-            "height": 47,
+            "height": "100%",
             "justifyContent": "center",
             "overflow": "hidden",
-            "width": 47,
+            "width": "100%",
           },
         ]
       }
-      width={47}
+      width="100%"
     >
       <RNSVGSvgView
         aria-hidden={true}
@@ -1540,22 +1548,26 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
 >
   <View
     alignItems="center"
-    borderColor="rgba(35, 27, 34, 0.25)"
+    bgColor="rgba(35, 27, 34, 0.25)"
     borderRadius="circle"
-    borderWidth={0.5}
     display="flex"
     height={48}
     justifyContent="center"
+    overflow="hidden"
     style={
       [
         {
           "alignItems": "center",
-          "borderColor": "rgba(35, 27, 34, 0.25)",
+          "backgroundColor": "rgba(35, 27, 34, 0.25)",
           "borderRadius": 9999,
-          "borderWidth": 0.5,
           "display": "flex",
           "height": 48,
           "justifyContent": "center",
+          "overflow": "hidden",
+          "paddingBottom": 0.5,
+          "paddingLeft": 0.5,
+          "paddingRight": 0.5,
+          "paddingTop": 0.5,
           "width": 48,
         },
       ]
@@ -1564,27 +1576,27 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
   >
     <View
       alignItems="center"
-      bgColor="elements.selectionAndIcons"
+      bgColor="#000"
       borderRadius="circle"
       display="flex"
-      height={47}
+      height="100%"
       justifyContent="center"
       overflow="hidden"
       style={
         [
           {
             "alignItems": "center",
-            "backgroundColor": "#9898A6",
+            "backgroundColor": "#000",
             "borderRadius": 9999,
             "display": "flex",
-            "height": 47,
+            "height": "100%",
             "justifyContent": "center",
             "overflow": "hidden",
-            "width": 47,
+            "width": "100%",
           },
         ]
       }
-      width={47}
+      width="100%"
     >
       <RNSVGSvgView
         aria-hidden={true}

@@ -2,23 +2,23 @@ import React, { forwardRef } from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
 import { string, func } from 'prop-types';
 import { ImagePropTypes } from 'deprecated-react-native-prop-types';
-import { Image } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import Box from '../../Box';
 import Icon from '../../Icon';
 
-const BORDER_WIDTH = 0.5;
+const BORDER_WIDTH = StyleSheet.hairlineWidth;
 const BORDER_OPACITY = 0.25;
 
-const Contain = styled(Box).attrs(({ theme: { yoga }, borderRadius }) => {
+const Contain = styled(Box).attrs(({ theme: { yoga } }) => {
   return {
-    borderColor: hexToRgb(yoga.colors.secondary, BORDER_OPACITY),
-    borderWidth: BORDER_WIDTH,
-    borderRadius,
+    bgColor: hexToRgb(yoga.colors.secondary, BORDER_OPACITY),
   };
-})``;
+})`
+  padding: ${BORDER_WIDTH}px;
+`;
 
 const Content = ({ icon, src, fill, content, stroke }) => {
   if (src) {
@@ -55,23 +55,24 @@ const Avatar = forwardRef(
   ) => {
     return (
       <Contain
-        borderRadius={borderRadius || 'small'}
         width={width || 48}
         height={height || 48}
+        borderRadius={borderRadius || 'small'}
         display="flex"
         alignItems="center"
         justifyContent="center"
+        overflow="hidden"
       >
         <Box
           ref={ref}
-          bgColor="elements.selectionAndIcons"
+          bgColor="#000"
           display="flex"
           alignItems="center"
           justifyContent="center"
-          width={(width || 48) - BORDER_WIDTH * 2}
-          height={(height || 48) - BORDER_WIDTH * 2}
-          borderRadius={borderRadius || 'small'}
+          width="100%"
+          height="100%"
           overflow="hidden"
+          borderRadius={borderRadius || 'small'}
           {...props}
         >
           <Content
