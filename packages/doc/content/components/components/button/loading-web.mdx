@@ -1,10 +1,32 @@
 #### Usage
 
-```javascript
-<Box display="flex" justifyContent="space-evenly" width="100%">
-  <Button.Loading isLoading>Find an activity</Button.Loading>
-  <Button.Loading>Find an activity</Button.Loading>
-</Box>
+#### Default
+
+```javascript state
+render(() => {
+  const [loading, setLoading] = useState(false);
+
+  return (
+    <Box display="flex" justifyContent="center" gap="large" width="100%">
+      <Button.Loading isLoading={loading} onClick={() => setLoading(true)}>Find an activity</Button.Loading>
+      <Button.Icon icon={Refresh} onClick={() => setLoading(false)} />
+    </Box>
+  );
+});
+```
+
+#### Outline
+```javascript state
+render(() => {
+  const [loading, setLoading] = useState(false);
+
+  return (
+    <Box display="flex" justifyContent="center" gap="large" width="100%">
+      <Button.Loading variant="outline" isLoading={loading} onClick={() => setLoading(true)}>Find an activity</Button.Loading>
+      <Button.Icon icon={Refresh} onClick={() => setLoading(false)} />
+    </Box>
+  );
+});
 ```
 
 ### Props
