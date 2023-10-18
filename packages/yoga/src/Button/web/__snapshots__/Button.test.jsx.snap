@@ -2645,8 +2645,8 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
-  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
-  animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
+  animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
   stroke: #6B6B78;
 }
@@ -3548,8 +3548,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
-  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
-  animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
+  animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
   stroke: #6B6B78;
 }
@@ -4732,8 +4732,8 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
-  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
-  animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
+  animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
   stroke: #6B6B78;
 }
@@ -5667,8 +5667,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
-  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
-  animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
+  animation: 1.6s ease-in-out 0s infinite normal none running dash;
   stroke-linecap: round;
   stroke: #6B6B78;
 }
