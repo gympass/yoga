@@ -5,57 +5,53 @@ import Button from './Button';
 import ButtonOutline from './Outline';
 import Spinner from '../../Spinner';
 
-const ButtonLoading = ({
-  isLoading,
-  children,
-  disabled,
-  variant,
-  ...props
-}) => {
-  const commonProps = {
-    isLoading,
-    disabled: isLoading || disabled,
-    ...props,
-  };
+const ButtonLoading = React.forwardRef(
+  ({ isLoading, children, disabled, variant, ...props }, ref) => {
+    const commonProps = {
+      isLoading,
+      disabled: isLoading || disabled,
+      ...props,
+    };
 
-  const ButtonComponent = variant === 'outline' ? ButtonOutline : Button;
+    const ButtonComponent = variant === 'outline' ? ButtonOutline : Button;
 
-  const LoadingContainer = styled.div`
-    position: relative;
+    const LoadingContainer = styled.div`
+      position: relative;
 
-    & > span {
-      color: transparent;
-    }
-  `;
+      & > span {
+        color: transparent;
+      }
+    `;
 
-  const SpinnerContainer = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  `;
+    const SpinnerContainer = styled.div`
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    `;
 
-  const renderLoading = () => {
+    const renderLoading = () => {
+      return (
+        <LoadingContainer>
+          <span>{children}</span>
+          <SpinnerContainer>
+            <Spinner color="deep" size="small" />
+          </SpinnerContainer>
+        </LoadingContainer>
+      );
+    };
+
+    const renderLoadingLabel = () => {
+      return <span>{children}</span>;
+    };
+
     return (
-      <LoadingContainer>
-        <span>{children}</span>
-        <SpinnerContainer>
-          <Spinner color="deep" size="small" />
-        </SpinnerContainer>
-      </LoadingContainer>
+      <ButtonComponent {...commonProps} ref={ref}>
+        {isLoading ? renderLoading() : renderLoadingLabel()}
+      </ButtonComponent>
     );
-  };
-
-  const renderLoadingLabel = () => {
-    return <span>{children}</span>;
-  };
-
-  return (
-    <ButtonComponent {...commonProps}>
-      {isLoading ? renderLoading() : renderLoadingLabel()}
-    </ButtonComponent>
-  );
-};
+  },
+);
 
 ButtonLoading.propTypes = {
   isLoading: bool,
