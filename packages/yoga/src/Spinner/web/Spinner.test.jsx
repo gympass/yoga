@@ -7,7 +7,7 @@ describe('<Spinner />', () => {
   it('should match snapshot', () => {
     const { container } = render(
       <ThemeProvider>
-        <Spinner />
+        <Spinner size="xxxlarge" color="light" />
       </ThemeProvider>,
     );
 

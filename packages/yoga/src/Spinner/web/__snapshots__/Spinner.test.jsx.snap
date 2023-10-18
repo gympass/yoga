@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spinner /> should match snapshot 1`] = `
+.c0 .spinner {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  color: #D7D7E0;
+  -webkit-animation: 1.4s linear 0s infinite normal none running rotation;
+  animation: 1.4s linear 0s infinite normal none running rotation;
+}
+
+.c0 .circular {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.c0 .path {
+  stroke-dasharray: 80px,200px;
+  stroke-dashoffset: 0;
+  -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
+  -webkit-animation: 1.6s ease-in-out 0s infinite normal none running dash;
+  animation: 1.6s ease-in-out 0s infinite normal none running dash;
+  stroke-linecap: round;
+  stroke: #D7D7E0;
+}
+
+<div>
+  <span
+    class="c0"
+    color="#D7D7E0"
+    size="56"
+  >
+    <span
+      class="spinner"
+    >
+      <svg
+        class="circular"
+        viewBox="22 22 44 44"
+      >
+        <circle
+          class="path"
+          cx="44"
+          cy="44"
+          fill="none"
+          r="20.2"
+          stroke-width="3.6"
+        />
+      </svg>
+    </span>
+  </span>
+</div>
+`;

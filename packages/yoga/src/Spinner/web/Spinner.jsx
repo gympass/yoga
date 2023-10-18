@@ -23,7 +23,7 @@ const StyledSpinner = styled.span`
       stroke-dasharray: 80px, 200px;
       stroke-dashoffset: 0;
       -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
-      animation: 1.4s ease-in-out 0s infinite normal none running dash;
+      animation: 1.6s ease-in-out 0s infinite normal none running dash;
       stroke-linecap: round;
       stroke: ${color};
     }
@@ -96,8 +96,8 @@ Spinner.propTypes = {
 };
 
 Spinner.defaultProps = {
-  size: 'xxlarge',
-  color: 'light',
+  size: 'medium',
+  color: 'primary',
 };
 
 export default withTheme(Spinner);
