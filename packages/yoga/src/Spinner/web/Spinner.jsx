@@ -54,11 +54,12 @@ const StyledSpinner = styled.span`
   `}
 `;
 
-const Spinner = ({ size, color, theme }) => {
+const Spinner = React.forwardRef(({ size, color, theme }, ref) => {
   return (
     <StyledSpinner
       color={get(theme.yoga.colors, color, color)}
       size={get(theme.yoga.spacing, size, size)}
+      ref={ref}
     >
       <span className="spinner">
         <svg className="circular" viewBox="22 22 44 44">
@@ -74,7 +75,7 @@ const Spinner = ({ size, color, theme }) => {
       </span>
     </StyledSpinner>
   );
-};
+});
 
 const commonSizes = [
   'xxxsmall',
