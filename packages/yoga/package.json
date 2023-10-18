@@ -3,12 +3,14 @@
   "version": "7.85.1",
   "description": "Gympass component library",
   "main": "src/index.ts",
+  "types": "src/index.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "yarn build:cjs && yarn build:esm",
-    "build:cjs": "tsup --outDir dist/cjs --format=cjs",
+    "build": "yarn build:types && yarn build:web && yarn build:esm && yarn build:native",
+    "build:types": "tsup --outDir dist/typings --dts-only",
+    "build:web": "tsup src/**/web !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
     "build:esm": "tsup --format=esm --legacy-output",
-    "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
+    "build:native": "tsup src/**/native !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
     "prebuild": "rm -rf ./dist",
     "postbuild": "cp -r ./src/Fonts ./dist/fonts",
     "prepublishOnly": "node ../../scripts/prepublish.js --rn"
@@ -71,9 +73,7 @@
   "tsup": {
     "entry": [
       "src/index.ts",
-      "src/**/*.ts",
-      "src/**/*.js",
-      "!src/**/types"
+      "src/**/*.ts"
     ],
     "splitting": false,
     "bundle": false
