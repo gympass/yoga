@@ -10,6 +10,7 @@ const Link = styled(Button)`
   ${({
     full,
     secondary,
+    isLoading,
     theme: {
       yoga: {
         components: { button },
@@ -59,7 +60,9 @@ const Link = styled(Button)`
         color: ${button.types.link.font.disabled.color};
 
         svg {
-          fill: ${button.types.link.font.disabled.color};
+          fill: ${
+            isLoading ? 'transparent' : button.types.link.font.disabled.color
+          };
         }
       }
 

@@ -7,6 +7,7 @@ const ButtonText = styled(Button)`
   ${({
     secondary,
     inverted,
+    isLoading,
     theme: {
       yoga: {
         colors,
@@ -74,7 +75,7 @@ const ButtonText = styled(Button)`
         border-color: ${button.types.text.backgroundColor};
         color: ${button.types.text.disabled};
         svg {
-          fill: ${button.types.text.disabled};
+          fill: ${isLoading ? 'transparent' : button.types.text.disabled};
         }
       }
     `;

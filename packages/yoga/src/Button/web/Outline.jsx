@@ -7,6 +7,7 @@ const ButtonOutline = styled(Button)`
   ${({
     inverted,
     secondary,
+    isLoading,
     theme: {
       yoga: {
         colors: { white },
@@ -55,8 +56,8 @@ const ButtonOutline = styled(Button)`
         border-color: ${outline.font.disabled.color};
         color: ${outline.font.disabled.color};
 
-        svg {
-          fill: ${outline.font.disabled.color};
+         svg {
+          fill: ${isLoading ? 'transparent' : outline.font.disabled.color};
         }
       }
 
