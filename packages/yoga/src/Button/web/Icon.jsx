@@ -4,6 +4,7 @@ import styled, { withTheme } from 'styled-components';
 
 import StyledButton from './StyledButton';
 import Icon from '../../Icon';
+import Spinner from '../../Spinner';
 
 const IconStyled = styled(StyledButton)`
   padding: 0;
@@ -39,6 +40,7 @@ const ButtonIcon = forwardRef(
       },
       small,
       disabled,
+      isLoading,
       ...props
     },
     ref,
@@ -48,13 +50,18 @@ const ButtonIcon = forwardRef(
         {...props}
         ref={ref}
         small={small}
-        disabled={disabled}
+        disabled={disabled || isLoading}
         aria-disabled={disabled}
+        isLoading={isLoading}
       >
-        <Icon
-          as={icon}
-          size={small ? button.icon.size.small : button.icon.size.default}
-        />
+        {isLoading ? (
+          <Spinner color="deep" size={small ? 'small' : 'medium'} />
+        ) : (
+          <Icon
+            as={icon}
+            size={small ? button.icon.size.small : button.icon.size.default}
+          />
+        )}
       </IconStyled>
     );
   },
@@ -66,6 +73,7 @@ ButtonIcon.propTypes = {
   secondary: bool,
   inverted: bool,
   icon: oneOfType([node, func]),
+  isLoading: bool,
 };
 
 ButtonIcon.defaultProps = {
@@ -74,6 +82,7 @@ ButtonIcon.defaultProps = {
   secondary: false,
   inverted: false,
   icon: undefined,
+  isLoading: false,
 };
 
 ButtonIcon.displayName = 'Button.Icon';

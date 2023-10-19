@@ -14,6 +14,7 @@ const StyledButton = styled.button`
     inverted,
     secondary,
     disabled,
+    isLoading,
     theme: {
       yoga: {
         baseFont,
@@ -87,7 +88,11 @@ const StyledButton = styled.button`
         pointer-events: none;
 
         svg {
-          fill: ${button.types.contained.font.disabled.color};
+          fill: ${
+            isLoading
+              ? 'transparent'
+              : button.types.contained.font.disabled.color
+          };
         }
 
         cursor: not-allowed;
@@ -95,7 +100,6 @@ const StyledButton = styled.button`
       `
           : ''
       }
-      
 
       ${
         inverted
