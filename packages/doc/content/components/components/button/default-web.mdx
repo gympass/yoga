@@ -35,6 +35,29 @@ You can use all differente compounds like `<Button.Outline />` and `<Button.Text
 </Box>
 ```
 
+#### With Loading
+
+```javascript state
+render(() => {
+  const [loading, setLoading] = useState(true);
+  const onChange = () => setLoading(!loading);
+
+  return (
+    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="start" width="auto" gap="medium">
+      <Box>
+        <Text>Loading</Text>
+        <Checkbox.Switch checked={loading} onChange={onChange} />
+      </Box>
+
+      <Box display="flex" gap="medium">
+        <Button isLoading={loading}>Find an activity</Button>
+        <Button icon={Booking} isLoading={loading}>Find an activity</Button>
+      </Box>
+    </Box>
+  );
+});
+```
+
 ### Props
 
 <PropsTable component="Button" platform="web" />
