@@ -194,7 +194,9 @@ exports[`<Drawer /> should match snapshot 1`] = `
             <button
               class="c8"
             >
-              Ok, got it
+              <span>
+                Ok, got it
+              </span>
             </button>
           </footer>
         </section>

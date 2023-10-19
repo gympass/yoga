@@ -29,6 +29,26 @@ describe('<Button />', () => {
           expect(container).toMatchSnapshot();
         });
 
+        it('should match snapshot with default Button and Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button isLoading />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
+        it('should match snapshot with default Button with Icon and Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button icon={Booking} isLoading />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
         it('should match snapshot with outline Button', () => {
           const { container } = render(
             <ThemeProvider>
@@ -49,20 +69,20 @@ describe('<Button />', () => {
           expect(container).toMatchSnapshot();
         });
 
-        it('should match snapshot with default Button Loading', () => {
+        it('should match snapshot with outline Button and Loading', () => {
           const { container } = render(
             <ThemeProvider>
-              <Button.Loading isLoading={false} />
+              <Button.Outline isLoading />
             </ThemeProvider>,
           );
 
           expect(container).toMatchSnapshot();
         });
 
-        it('should match snapshot with default Button Loading when is loading', () => {
+        it('should match snapshot with outline Button with Icon and Loading', () => {
           const { container } = render(
             <ThemeProvider>
-              <Button.Loading isLoading />
+              <Button icon={Booking} isLoading />
             </ThemeProvider>,
           );
 
@@ -89,6 +109,26 @@ describe('<Button />', () => {
           expect(container).toMatchSnapshot();
         });
 
+        it('should match snapshot with text Button and Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Text isLoading />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
+        it('should match snapshot with text Button with Icon and Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Text icon={Booking} isLoading />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
         it('should match snapshot with link Button', () => {
           const { container } = render(
             <ThemeProvider>
@@ -103,6 +143,16 @@ describe('<Button />', () => {
           const { container } = render(
             <ThemeProvider>
               <Button.Icon icon={Booking} />
+            </ThemeProvider>,
+          );
+
+          expect(container).toMatchSnapshot();
+        });
+
+        it('should match snapshot with text icon and Loading', () => {
+          const { container } = render(
+            <ThemeProvider>
+              <Button.Icon icon={Booking} isLoading />
             </ThemeProvider>,
           );
 
@@ -151,40 +201,10 @@ describe('<Button />', () => {
           expect(container).toMatchSnapshot();
         });
 
-        it('should match snapshot with default Button Loading', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Loading inverted isLoading={false} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with default Button Loading when is loading', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Loading inverted isLoading />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
         it('should match snapshot with text Button', () => {
           const { container } = render(
             <ThemeProvider>
               <Button.Text inverted />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline inverted icon={Booking} />
             </ThemeProvider>,
           );
 
@@ -200,93 +220,477 @@ describe('<Button />', () => {
 
           expect(container).toMatchSnapshot();
         });
+
+        describe('With small prop', () => {
+          it('should match snapshot with default Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button small />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button when is Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button small isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline small />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button when is Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline small isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text small />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button when is Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text small isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button small icon={Booking} />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button with Icon and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button small icon={Booking} isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline icon={Booking} small />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button with Icon and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline icon={Booking} small isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text icon={Booking} small />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button with Icon and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text icon={Booking} small isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with icon Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Icon icon={Booking} small />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with icon Button and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Icon icon={Booking} small isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+        });
+
+        describe('With full prop', () => {
+          it('should match snapshot with default Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button full />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button full isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline full />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline full isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text full />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text full isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button full icon={Booking} />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button with Icon and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button full icon={Booking} isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline full icon={Booking} />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button with Icon and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline full icon={Booking} isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text full icon={Booking} />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button with Icon and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text full icon={Booking} isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+        });
+
+        describe('With disabled prop', () => {
+          it('should match snapshot with default Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button disabled />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button disabled isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline disabled />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline disabled isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text disabled />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text disabled isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with link Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Link disabled />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with link Button and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Link disabled isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button disabled icon={Booking} />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button with Icon and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button disabled icon={Booking} isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline disabled icon={Booking} />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button with Icon and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline disabled icon={Booking} isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text disabled icon={Booking} />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button with Icon and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text disabled icon={Booking} isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with icon Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Icon disabled icon={Booking} />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with icon Button and Loading', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Icon disabled icon={Booking} isLoading />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+        });
       });
 
-      describe('With small prop', () => {
-        it('should match snapshot with default Button', () => {
+      describe('buttons rendering as an anchor', () => {
+        it('Default Button with href prop', () => {
           const { container } = render(
             <ThemeProvider>
-              <Button small />
+              <Button href="http://www.gympass.com" target="blank">
+                Default Button as an anchor
+              </Button>
             </ThemeProvider>,
           );
 
           expect(container).toMatchSnapshot();
         });
 
-        it('should match snapshot with outline Button', () => {
+        it('Link Button with href prop', () => {
           const { container } = render(
             <ThemeProvider>
-              <Button.Outline small />
+              <Button.Link href="http://www.gympass.com" target="blank">
+                Link as an anchor
+              </Button.Link>
             </ThemeProvider>,
           );
 
           expect(container).toMatchSnapshot();
         });
 
-        it('should match snapshot with default Button Loading', () => {
+        it('Outline Button with href prop', () => {
           const { container } = render(
             <ThemeProvider>
-              <Button.Loading small isLoading={false} />
+              <Button.Outline href="http://www.gympass.com" target="blank">
+                Outline as an anchor
+              </Button.Outline>
             </ThemeProvider>,
           );
 
           expect(container).toMatchSnapshot();
         });
 
-        it('should match snapshot with default Button Loading when is loading', () => {
+        it('Text Button with href prop', () => {
           const { container } = render(
             <ThemeProvider>
-              <Button.Loading small isLoading />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text small />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with default Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button small icon={Booking} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline icon={Booking} small />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text icon={Booking} small />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with icon Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Icon icon={Booking} small />
+              <Button.Text href="http://www.gympass.com" target="blank">
+                Text as an anchor
+              </Button.Text>
             </ThemeProvider>,
           );
 
@@ -294,761 +698,470 @@ describe('<Button />', () => {
         });
       });
 
-      describe('With full prop', () => {
-        it('should match snapshot with default Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button full />
-            </ThemeProvider>,
-          );
+      describe('secondary buttons', () => {
+        describe('Without props', () => {
+          it('should match snapshot with default Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button secondary />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button secondary icon={Booking} />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline icon={Booking} secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text secondary icon={Booking} />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with link Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Link secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with link Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Link icon={Booking} />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with icon Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Icon icon={Booking} secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
         });
 
-        it('should match snapshot with outline Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline full />
-            </ThemeProvider>,
-          );
+        describe('With inverted prop', () => {
+          it('should match snapshot with default Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button inverted secondary />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button inverted icon={Booking} secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline inverted secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline inverted icon={Booking} secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text inverted secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text inverted icon={Booking} secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text inverted icon={Booking} secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with icon Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Icon inverted icon={Booking} secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
         });
 
-        it('should match snapshot with default Button Loading', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Loading full isLoading />
-            </ThemeProvider>,
-          );
+        describe('With small prop', () => {
+          it('should match snapshot with default Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button small secondary />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline small secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text small secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with default Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button small icon={Booking} secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline icon={Booking} small secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text icon={Booking} small secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with icon Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Icon icon={Booking} small secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
         });
 
-        it('should match snapshot with text Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text full />
-            </ThemeProvider>,
-          );
+        describe('With full prop', () => {
+          it('should match snapshot with default Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button full secondary />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
-        });
+            expect(container).toMatchSnapshot();
+          });
 
-        it('should match snapshot with default Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button full icon={Booking} />
-            </ThemeProvider>,
-          );
+          it('should match snapshot with outline Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline full secondary />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
-        });
+            expect(container).toMatchSnapshot();
+          });
 
-        it('should match snapshot with outline Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline full icon={Booking} />
-            </ThemeProvider>,
-          );
+          it('should match snapshot with text Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text full secondary />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
-        });
+            expect(container).toMatchSnapshot();
+          });
 
-        it('should match snapshot with text Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text full icon={Booking} />
-            </ThemeProvider>,
-          );
+          it('should match snapshot with default Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button full icon={Booking} secondary />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with outline Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline full icon={Booking} secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
+
+          it('should match snapshot with text Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text full icon={Booking} secondary />
+              </ThemeProvider>,
+            );
+
+            expect(container).toMatchSnapshot();
+          });
         });
       });
 
-      describe('With disabled prop', () => {
-        it('should match snapshot with default Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button disabled />
-            </ThemeProvider>,
-          );
+      describe('disabled buttons', () => {
+        describe('With disabled prop', () => {
+          it('should match snapshot with default Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button disabled />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
-        });
+            expect(container).toMatchSnapshot();
+          });
 
-        it('should match snapshot with outline Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline disabled />
-            </ThemeProvider>,
-          );
+          it('should match snapshot with outline Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline disabled />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
-        });
+            expect(container).toMatchSnapshot();
+          });
 
-        it('should match snapshot with default Button Loading', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Loading disabled isLoading={false} />
-            </ThemeProvider>,
-          );
+          it('should match snapshot with text Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text disabled />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
-        });
+            expect(container).toMatchSnapshot();
+          });
 
-        it('should match snapshot with text Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text disabled />
-            </ThemeProvider>,
-          );
+          it('should match snapshot with link Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Link disabled />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
-        });
+            expect(container).toMatchSnapshot();
+          });
 
-        it('should match snapshot with link Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Link disabled />
-            </ThemeProvider>,
-          );
+          it('should match snapshot with default Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button disabled icon={Booking} />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
-        });
+            expect(container).toMatchSnapshot();
+          });
 
-        it('should match snapshot with default Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button disabled icon={Booking} />
-            </ThemeProvider>,
-          );
+          it('should match snapshot with outline Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Outline disabled icon={Booking} />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
-        });
+            expect(container).toMatchSnapshot();
+          });
 
-        it('should match snapshot with outline Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline disabled icon={Booking} />
-            </ThemeProvider>,
-          );
+          it('should match snapshot with text Button with Icon', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Text disabled icon={Booking} />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
-        });
+            expect(container).toMatchSnapshot();
+          });
 
-        it('should match snapshot with text Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text disabled icon={Booking} />
-            </ThemeProvider>,
-          );
+          it('should match snapshot with icon Button', () => {
+            const { container } = render(
+              <ThemeProvider>
+                <Button.Icon disabled icon={Booking} />
+              </ThemeProvider>,
+            );
 
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with icon Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Icon disabled icon={Booking} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
+            expect(container).toMatchSnapshot();
+          });
         });
       });
     });
 
-    describe('buttons rendering as an anchor', () => {
-      it('Default Button with href prop', () => {
-        const { container } = render(
+    describe('onClick prop', () => {
+      it('should call onClick function when click on Button', () => {
+        const onClickMock = jest.fn();
+        const { getByText } = render(
           <ThemeProvider>
-            <Button href="http://www.gympass.com" target="blank">
-              Default Button as an anchor
-            </Button>
+            <Button onClick={onClickMock}>Button</Button>
           </ThemeProvider>,
         );
 
-        expect(container).toMatchSnapshot();
+        fireEvent.click(getByText('Button'));
+
+        expect(onClickMock).toHaveBeenCalled();
       });
 
-      it('Link Button with href prop', () => {
-        const { container } = render(
+      it('should call onClick function when click on Button.Outline', () => {
+        const onClickMock = jest.fn();
+        const { getByText } = render(
           <ThemeProvider>
-            <Button.Link href="http://www.gympass.com" target="blank">
-              Link as an anchor
-            </Button.Link>
-          </ThemeProvider>,
-        );
-
-        expect(container).toMatchSnapshot();
-      });
-
-      it('Outline Button with href prop', () => {
-        const { container } = render(
-          <ThemeProvider>
-            <Button.Outline href="http://www.gympass.com" target="blank">
-              Outline as an anchor
+            <Button.Outline onClick={onClickMock}>
+              Button.Outline
             </Button.Outline>
           </ThemeProvider>,
         );
 
-        expect(container).toMatchSnapshot();
+        fireEvent.click(getByText('Button.Outline'));
+
+        expect(onClickMock).toHaveBeenCalled();
       });
 
-      it('should match snapshot with default Button Loading', () => {
-        const { container } = render(
+      it('should call onClick function when click on Button.Text', () => {
+        const onClickMock = jest.fn();
+        const { getByText } = render(
           <ThemeProvider>
-            <Button.Loading
-              href="http://www.gympass.com"
-              target="blank"
-              isLoading={false}
-            />
+            <Button.Text onClick={onClickMock}>Button.Text</Button.Text>
           </ThemeProvider>,
         );
 
-        expect(container).toMatchSnapshot();
+        fireEvent.click(getByText('Button.Text'));
+
+        expect(onClickMock).toHaveBeenCalled();
       });
 
-      it('Text Button with href prop', () => {
-        const { container } = render(
+      it('should call onClick function when click on Button.Icon', () => {
+        const onClickMock = jest.fn();
+        const { getByRole } = render(
           <ThemeProvider>
-            <Button.Text href="http://www.gympass.com" target="blank">
-              Text as an anchor
-            </Button.Text>
+            <Button.Icon icon={Close} onClick={onClickMock} />
           </ThemeProvider>,
         );
 
-        expect(container).toMatchSnapshot();
-      });
-    });
+        fireEvent.click(getByRole('button'));
 
-    describe('secondary buttons', () => {
-      describe('Without props', () => {
-        it('should match snapshot with default Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with default Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button secondary icon={Booking} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with default Button Loading', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Loading secondary isLoading={false} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline icon={Booking} secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text secondary icon={Booking} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with link Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Link secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with link Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Link icon={Booking} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with icon Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Icon icon={Booking} secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
+        expect(onClickMock).toHaveBeenCalled();
       });
 
-      describe('With inverted prop', () => {
-        it('should match snapshot with default Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button inverted secondary />
-            </ThemeProvider>,
-          );
+      it('should not call onClick function when click on Button disabled', () => {
+        const onClickMock = jest.fn();
+        const { getByText } = render(
+          <ThemeProvider>
+            <Button disabled onClick={onClickMock}>
+              Button
+            </Button>
+          </ThemeProvider>,
+        );
 
-          expect(container).toMatchSnapshot();
-        });
+        fireEvent.click(getByText('Button'));
 
-        it('should match snapshot with default Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button inverted icon={Booking} secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline inverted secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with default Button Loading', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Loading inverted secondary isLoading={false} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline inverted icon={Booking} secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text inverted secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text inverted icon={Booking} secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text inverted icon={Booking} secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with icon Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Icon inverted icon={Booking} secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
+        expect(onClickMock).not.toHaveBeenCalled();
       });
-
-      describe('With small prop', () => {
-        it('should match snapshot with default Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button small secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline small secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with default Button Loading', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Loading small secondary isLoading={false} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text small secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with default Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button small icon={Booking} secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline icon={Booking} small secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text icon={Booking} small secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with icon Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Icon icon={Booking} small secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-      });
-
-      describe('With full prop', () => {
-        it('should match snapshot with default Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button full secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline full secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with default Button Loading', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Loading full secondary isLoading={false} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text full secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with default Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button full icon={Booking} secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline full icon={Booking} secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text full icon={Booking} secondary />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-      });
-    });
-
-    describe('disabled buttons', () => {
-      describe('With disabled prop', () => {
-        it('should match snapshot with default Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button disabled />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline disabled />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with default Button Loading', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Loading disabled isLoading={false} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text disabled />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with link Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Link disabled />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with default Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button disabled icon={Booking} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with outline Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Outline disabled icon={Booking} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with text Button with Icon', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Text disabled icon={Booking} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-
-        it('should match snapshot with icon Button', () => {
-          const { container } = render(
-            <ThemeProvider>
-              <Button.Icon disabled icon={Booking} />
-            </ThemeProvider>,
-          );
-
-          expect(container).toMatchSnapshot();
-        });
-      });
-    });
-  });
-
-  describe('onClick prop', () => {
-    it('should call onClick function when click on Button', () => {
-      const onClickMock = jest.fn();
-      const { getByText } = render(
-        <ThemeProvider>
-          <Button onClick={onClickMock}>Button</Button>
-        </ThemeProvider>,
-      );
-
-      fireEvent.click(getByText('Button'));
-
-      expect(onClickMock).toHaveBeenCalled();
-    });
-
-    it('should call onClick function when click on Button.Outline', () => {
-      const onClickMock = jest.fn();
-      const { getByText } = render(
-        <ThemeProvider>
-          <Button.Outline onClick={onClickMock}>Button.Outline</Button.Outline>
-        </ThemeProvider>,
-      );
-
-      fireEvent.click(getByText('Button.Outline'));
-
-      expect(onClickMock).toHaveBeenCalled();
-    });
-
-    it('should call onClick function when click on Button.Loading', () => {
-      const onClickMock = jest.fn();
-      const { getByText } = render(
-        <ThemeProvider>
-          <Button.Loading onClick={onClickMock} isLoading={false}>
-            Button.Loading
-          </Button.Loading>
-        </ThemeProvider>,
-      );
-
-      fireEvent.click(getByText('Button.Loading'));
-
-      expect(onClickMock).toHaveBeenCalled();
-    });
-
-    it('should call onClick function when click on Button.Text', () => {
-      const onClickMock = jest.fn();
-      const { getByText } = render(
-        <ThemeProvider>
-          <Button.Text onClick={onClickMock}>Button.Text</Button.Text>
-        </ThemeProvider>,
-      );
-
-      fireEvent.click(getByText('Button.Text'));
-
-      expect(onClickMock).toHaveBeenCalled();
-    });
-
-    it('should call onClick function when click on Button.Icon', () => {
-      const onClickMock = jest.fn();
-      const { getByRole } = render(
-        <ThemeProvider>
-          <Button.Icon icon={Close} onClick={onClickMock} />
-        </ThemeProvider>,
-      );
-
-      fireEvent.click(getByRole('button'));
-
-      expect(onClickMock).toHaveBeenCalled();
-    });
-
-    it('should not call onClick function when click on Button disabled', () => {
-      const onClickMock = jest.fn();
-      const { getByText } = render(
-        <ThemeProvider>
-          <Button disabled onClick={onClickMock}>
-            Button
-          </Button>
-        </ThemeProvider>,
-      );
-
-      fireEvent.click(getByText('Button'));
-
-      expect(onClickMock).not.toHaveBeenCalled();
     });
   });
 });

@@ -169,7 +169,9 @@ exports[`<Dialog /> should match snapshot 1`] = `
             <button
               class="c6"
             >
-              Ok, got it
+              <span>
+                Ok, got it
+              </span>
             </button>
           </footer>
         </section>
@@ -472,7 +474,9 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
             <button
               class="c9"
             >
-              Ok, got it
+              <span>
+                Ok, got it
+              </span>
             </button>
           </footer>
         </section>

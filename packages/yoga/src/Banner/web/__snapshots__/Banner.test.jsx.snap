@@ -237,7 +237,9 @@ exports[`<Banner /> should match snapshot with button 1`] = `
       <button
         class="c3 c4 c5"
       >
-        Action
+        <span>
+          Action
+        </span>
       </button>
     </div>
   </div>
@@ -639,12 +641,16 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
       <button
         class="c4 c5 c6"
       >
-        Primary Action
+        <span>
+          Primary Action
+        </span>
       </button>
       <button
         class="c4 c5 "
       >
-        Secondary Action
+        <span>
+          Secondary Action
+        </span>
       </button>
     </div>
   </div>

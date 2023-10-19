@@ -90,7 +90,9 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
       <button
         class="c1"
       >
-        Action's children must be Button
+        <span>
+          Action's children must be Button
+        </span>
       </button>
     </footer>
   </section>

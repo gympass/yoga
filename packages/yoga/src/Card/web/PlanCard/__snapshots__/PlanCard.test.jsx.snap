@@ -461,7 +461,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       <button
         class="c21"
       >
-        Select this plan
+        <span>
+          Select this plan
+        </span>
       </button>
     </footer>
   </article>
@@ -1257,7 +1259,9 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
       <button
         class="c21"
       >
-        Select this plan
+        <span>
+          Select this plan
+        </span>
       </button>
     </footer>
   </article>

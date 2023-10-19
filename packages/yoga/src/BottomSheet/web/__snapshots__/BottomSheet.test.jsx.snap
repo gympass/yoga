@@ -216,7 +216,9 @@ exports[`<BottomSheet /> should match snapshot 1`] = `
             <button
               class="c10"
             >
-              Ok, got it
+              <span>
+                Ok, got it
+              </span>
             </button>
           </footer>
         </section>
