@@ -46,18 +46,18 @@ const Avatar = forwardRef(
       children,
       fill,
       stroke,
-      borderRadius,
-      width,
-      height,
+      borderRadius = 'small',
+      width = 48,
+      height = 48,
       ...props
     },
     ref,
   ) => {
     return (
       <Contain
-        width={width || 48}
-        height={height || 48}
-        borderRadius={borderRadius || 'small'}
+        width={width}
+        height={height}
+        borderRadius={borderRadius}
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -72,7 +72,7 @@ const Avatar = forwardRef(
           width="100%"
           height="100%"
           overflow="hidden"
-          borderRadius={borderRadius || 'small'}
+          borderRadius={borderRadius}
           {...props}
         >
           <Content
