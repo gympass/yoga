@@ -35,42 +35,6 @@ You can use all differente compounds like `<Button.Outline />` and `<Button />` 
 </Box>
 ```
 
-#### With Loading
-
-```javascript state
-render(() => {
-  const [loading, setLoading] = useState(true);
-  const onChange = () => setLoading(!loading);
-
-  return (
-    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="start" width="auto" gap="large">
-      <Box>
-        <Text>Loading</Text>
-        <Checkbox.Switch checked={loading} onChange={onChange} />
-      </Box>
-
-      <Box display="flex" justifyContent="center" alignItems="center" gap="xxlarge">
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" gap="xxlarge">
-          <Button.Text isLoading={loading}>Find an activity</Button.Text>
-          <Button.Text secondary isLoading={loading}>Find an activity</Button.Text>
-        </Box>
-
-        <Button.Text href="http://www.gympass.com" target="blank" isLoading={loading}>
-          Find an activity (external link)
-        </Button.Text>
-
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" gap="xxlarge">
-          <Button.Text icon={Booking} isLoading={loading}>Find an activity</Button.Text>
-          <Button.Text icon={Booking} secondary isLoading={loading}>
-            Find an activity
-          </Button.Text>
-        </Box>
-      </Box>
-    </Box>
-  );
-});
-```
-
 ### Props
 
 <PropsTable component="Button" platform="web" />

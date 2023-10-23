@@ -30,42 +30,6 @@
 </Box>
 ```
 
-### With Loading
-
-```javascript state
-render(() => {
-  const [loading, setLoading] = useState(true);
-  const onChange = () => setLoading(!loading);
-
-  return (
-    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="start" width="auto" gap="large">
-      <Box>
-        <Text>Loading</Text>
-        <Checkbox.Switch checked={loading} onChange={onChange} />
-      </Box>
-
-      <Box display="flex" justifyContent="center" alignItems="center" gap="xxlarge">
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" gap="xxlarge">
-          <Button.Link isLoading={loading}>Find an activity</Button.Link>
-          <Button.Link secondary isLoading={loading}>Find an activity</Button.Link>
-        </Box>
-
-        <Button.Link href="http://www.gympass.com" target="blank" isLoading={loading}>
-          Find an activity (external link)
-        </Button.Link>
-
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" gap="xxlarge">
-          <Button.Link icon={Booking} isLoading={loading}>Find an activity</Button.Link>
-          <Button.Link icon={Booking} secondary isLoading={loading}>
-            Find an activity
-          </Button.Link>
-        </Box>
-      </Box>
-    </Box>
-  );
-});
-```
-
 ### Props
 
 <PropsTable component="Button.Link" platform="web" />

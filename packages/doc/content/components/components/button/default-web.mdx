@@ -14,6 +14,14 @@ You can use all differente compounds like `<Button.Outline />` and `<Button.Text
 </Box>
 ```
 
+#### Inverted
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
+  <Button inverted>Find an activity</Button>
+  <Button secondary inverted>Find an activity</Button>
+</Box>
+```
+
 #### As an anchor
 
 ```javascript
@@ -51,7 +59,9 @@ render(() => {
 
       <Box display="flex" gap="medium">
         <Button isLoading={loading}>Find an activity</Button>
-        <Button icon={Booking} isLoading={loading}>Find an activity</Button>
+        <Button icon={Booking} inverted isLoading={loading}>Find an activity</Button>
+        <Button icon={Booking} secondary isLoading={loading}>Find an activity</Button>
+        <Button icon={Booking} secondary inverted isLoading={loading}>Find an activity</Button>
       </Box>
     </Box>
   );

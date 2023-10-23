@@ -60,21 +60,12 @@ render(() => {
       </Box>
 
       <Box display="flex" justifyContent="center" alignItems="center" gap="xxlarge">
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" gap="xxlarge">
           <Button.Outline isLoading={loading}>Find an activity</Button.Outline>
           <Button.Outline secondary isLoading={loading}>Find an activity</Button.Outline>
-        </Box>
-
-        <Button.Outline href="http://www.gympass.com" target="blank" isLoading={loading}>
-          Find an activity (external link)
-        </Button.Outline>
-
-        <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" gap="xxlarge">
           <Button.Outline icon={Booking} isLoading={loading}>Find an activity</Button.Outline>
           <Button.Outline icon={Booking} secondary isLoading={loading}>
             Find an activity
           </Button.Outline>
-        </Box>
       </Box>
     </Box>
   );
