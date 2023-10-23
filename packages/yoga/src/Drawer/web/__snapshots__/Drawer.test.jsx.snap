@@ -161,6 +161,17 @@ exports[`<Drawer /> should match snapshot 1`] = `
   text-align: left;
 }
 
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <body>
   <div />
   <div
@@ -194,9 +205,13 @@ exports[`<Drawer /> should match snapshot 1`] = `
             <button
               class="c8"
             >
-              <span>
-                Ok, got it
-              </span>
+              <div
+                class="c9"
+              >
+                <span>
+                  Ok, got it
+                </span>
+              </div>
             </button>
           </footer>
         </section>

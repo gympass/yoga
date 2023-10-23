@@ -169,6 +169,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
         aria-hidden="true"
         class="c3"
         height="24"
+        role="img"
         width="24"
       />
     </button>
@@ -193,6 +194,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
           aria-hidden="true"
           class="c3"
           height="24"
+          role="img"
           width="24"
         />
       </button>
@@ -375,6 +377,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
         aria-hidden="true"
         class="c3"
         height="24"
+        role="img"
         width="24"
       />
     </button>
@@ -399,6 +402,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
           aria-hidden="true"
           class="c3"
           height="24"
+          role="img"
           width="24"
         />
       </button>
@@ -566,6 +570,7 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
         aria-hidden="true"
         class="c3"
         height="24"
+        role="img"
         width="24"
       />
     </button>
@@ -840,6 +845,7 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
         aria-hidden="true"
         class="c3"
         height="24"
+        role="img"
         width="24"
       />
     </button>

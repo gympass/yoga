@@ -72,7 +72,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -197,7 +196,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -206,6 +204,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -338,7 +337,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -466,7 +464,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -475,6 +472,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -901,7 +899,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1044,7 +1041,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1212,7 +1208,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1221,6 +1216,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -1396,7 +1392,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1567,7 +1562,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1576,6 +1570,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -1756,7 +1751,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1901,7 +1895,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1996,7 +1989,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2119,7 +2111,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2128,6 +2119,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -2251,7 +2243,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2377,7 +2368,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2386,6 +2376,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -2555,7 +2546,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2721,7 +2711,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2730,6 +2719,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -2896,7 +2886,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3065,7 +3054,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3074,6 +3062,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -3245,7 +3234,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3380,7 +3368,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3473,7 +3460,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3596,7 +3582,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3605,6 +3590,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -3728,7 +3714,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3854,7 +3839,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3863,6 +3847,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -4264,7 +4249,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4430,7 +4414,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4439,6 +4422,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -4605,7 +4589,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4774,7 +4757,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4783,6 +4765,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -4954,7 +4937,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5089,7 +5071,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5202,7 +5183,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5345,7 +5325,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5354,6 +5333,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -5497,7 +5477,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5643,7 +5622,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5652,6 +5630,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -6149,7 +6128,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6371,7 +6349,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6380,6 +6357,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -6602,7 +6580,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6827,7 +6804,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6836,6 +6812,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -7050,7 +7027,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7140,7 +7116,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7263,7 +7238,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7272,6 +7246,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -7395,7 +7370,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7521,7 +7495,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7530,6 +7503,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -7797,7 +7771,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7930,7 +7903,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8096,7 +8068,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8105,6 +8076,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -8271,7 +8243,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8397,7 +8368,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8406,6 +8376,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -8577,7 +8548,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8712,7 +8682,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -8944,7 +8913,6 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9069,7 +9037,6 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9078,6 +9045,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -9251,7 +9219,6 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Lin
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9386,7 +9353,6 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9554,7 +9520,6 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9563,6 +9528,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -9733,7 +9699,6 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Tex
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9833,7 +9798,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9958,7 +9922,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9967,6 +9930,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -10099,7 +10063,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10227,7 +10190,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10236,6 +10198,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -10662,7 +10625,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10805,7 +10767,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10973,7 +10934,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -10982,6 +10942,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -11157,7 +11118,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11328,7 +11288,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11337,6 +11296,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -11517,7 +11477,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11662,7 +11621,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11757,7 +11715,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11880,7 +11837,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11889,6 +11845,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -12012,7 +11969,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12138,7 +12094,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12147,6 +12102,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -12316,7 +12272,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12482,7 +12437,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12491,6 +12445,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -12657,7 +12612,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12826,7 +12780,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12835,6 +12788,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -13006,7 +12960,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13141,7 +13094,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13254,7 +13206,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13397,7 +13348,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13406,6 +13356,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -13549,7 +13500,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13695,7 +13645,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -13704,6 +13653,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -14201,7 +14151,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14423,7 +14372,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14432,6 +14380,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -14654,7 +14603,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14879,7 +14827,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -14888,6 +14835,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -15102,7 +15050,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15280,7 +15227,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15461,7 +15407,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15554,7 +15499,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15677,7 +15621,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15686,6 +15629,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -15809,7 +15753,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15935,7 +15878,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -15944,6 +15886,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -16345,7 +16288,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16511,7 +16453,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16520,6 +16461,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -16686,7 +16628,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16855,7 +16796,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16864,6 +16804,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -17035,7 +16976,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17170,7 +17110,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17263,7 +17202,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17386,7 +17324,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17395,6 +17332,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -17518,7 +17456,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17644,7 +17581,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17653,6 +17589,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c1 > span {
@@ -18059,7 +17996,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18197,7 +18133,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18333,7 +18268,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18499,7 +18433,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18508,6 +18441,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -18674,7 +18608,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18843,7 +18776,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -18852,6 +18784,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .c2 > span {
@@ -19023,7 +18956,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19158,7 +19090,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c2 {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

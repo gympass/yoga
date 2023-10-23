@@ -335,6 +335,17 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   text-overflow: ellipsis;
 }
 
+.c22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <div>
   <article
     class="c0"
@@ -461,9 +472,13 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
       <button
         class="c21"
       >
-        <span>
-          Select this plan
-        </span>
+        <div
+          class="c22"
+        >
+          <span>
+            Select this plan
+          </span>
+        </div>
       </button>
     </footer>
   </article>
@@ -1131,6 +1146,17 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   text-overflow: ellipsis;
 }
 
+.c22 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 <div>
   <article
     class="c0"
@@ -1259,9 +1285,13 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
       <button
         class="c21"
       >
-        <span>
-          Select this plan
-        </span>
+        <div
+          class="c22"
+        >
+          <span>
+            Select this plan
+          </span>
+        </div>
       </button>
     </footer>
   </article>
