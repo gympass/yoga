@@ -108,7 +108,11 @@ const StyledButton = styled.button`
         color: ${button.types.contained.backgroundColor[state].default};
 
         svg {
-          fill: ${button.types.contained.backgroundColor[state].default};
+          fill: ${
+            isLoading
+              ? 'transparent'
+              : button.types.contained.backgroundColor[state].default
+          };
         }
 
         &:active {

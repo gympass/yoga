@@ -1,13 +1,14 @@
+import React from 'react';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
+import { bool } from 'prop-types';
 
 import Button from './Button';
 
-const ButtonText = styled(Button)`
+const StyledButton = styled(Button)`
   ${({
     secondary,
     inverted,
-    isLoading,
     theme: {
       yoga: {
         colors,
@@ -75,12 +76,29 @@ const ButtonText = styled(Button)`
         border-color: ${button.types.text.backgroundColor};
         color: ${button.types.text.disabled};
         svg {
-          fill: ${isLoading ? 'transparent' : button.types.text.disabled};
+          fill: ${button.types.text.disabled};
         }
       }
     `;
   }}
 `;
+
+// eslint-disable-next-line react/prop-types
+const ButtonText = ({ isLoading, ...rest }) => {
+  const { secondary, inverted } = rest;
+
+  return <StyledButton {...rest} secondary={secondary} inverted={inverted} />;
+};
+
+ButtonText.propTypes = {
+  inverted: bool,
+  secondary: bool,
+};
+
+ButtonText.defaultProps = {
+  inverted: false,
+  secondary: false,
+};
 
 ButtonText.displayName = 'Button.Text';
 

@@ -10,7 +10,6 @@ const Link = styled(Button)`
   ${({
     full,
     secondary,
-    isLoading,
     theme: {
       yoga: {
         components: { button },
@@ -60,9 +59,7 @@ const Link = styled(Button)`
         color: ${button.types.link.font.disabled.color};
 
         svg {
-          fill: ${
-            isLoading ? 'transparent' : button.types.link.font.disabled.color
-          };
+          fill: ${button.types.link.font.disabled.color};
         }
       }
 
@@ -71,9 +68,12 @@ const Link = styled(Button)`
   }}
 `;
 
-const ButtonLink = ({ disabled, ...props }) => (
-  <Link {...props} disabled={disabled} aria-disabled={disabled} />
-);
+// eslint-disable-next-line react/prop-types
+const ButtonLink = ({ isLoading, ...rest }) => {
+  const { disabled } = rest;
+
+  return <Link {...rest} disabled={disabled} aria-disabled={disabled} />;
+};
 
 ButtonLink.propTypes = {
   disabled: bool,

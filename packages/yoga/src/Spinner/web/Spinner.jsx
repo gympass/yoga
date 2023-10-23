@@ -56,6 +56,7 @@ const Spinner = React.forwardRef(({ size, color, theme }, ref) => {
       color={get(theme.yoga.colors, color, color)}
       size={get(theme.yoga.spacing, size, size)}
       ref={ref}
+      aria-label="loading-icon"
     >
       <span className="spinner">
         <svg className="circular" viewBox="22 22 44 44">

@@ -60,6 +60,7 @@ const ButtonIcon = forwardRef(
           <Icon
             as={icon}
             size={small ? button.icon.size.small : button.icon.size.default}
+            role="img"
           />
         )}
       </IconStyled>

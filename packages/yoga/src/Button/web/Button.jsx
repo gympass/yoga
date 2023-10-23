@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { func, node, oneOfType, bool, string } from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import StyledButton from './StyledButton';
 import Spinner from '../../Spinner';
 
@@ -23,34 +23,31 @@ const Button = forwardRef(
   ) => {
     const ContentContainer = styled.div`
       position: relative;
+      display: flex;
+      align-items: center;
 
-      & > span {
-        color: transparent;
-      }
+      ${() =>
+        isLoading &&
+        css`
+          & > span {
+            color: transparent;
+          }
+        `}
     `;
 
     const SpinnerContainer = styled.div`
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      ${() =>
+        isLoading &&
+        css`
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        `}
     `;
 
     const finalProps = {
       ...props,
-    };
-
-    const renderLoading = () => {
-      return (
-        <ContentContainer>
-          {Icon && <Icon />}
-          <span>{children}</span>
-
-          <SpinnerContainer>
-            <Spinner color="deep" size={small ? 'small' : 'medium'} />
-          </SpinnerContainer>
-        </ContentContainer>
-      );
     };
 
     if (props.href) {
@@ -70,14 +67,16 @@ const Button = forwardRef(
         isLoading={isLoading}
         {...finalProps}
       >
-        {isLoading ? (
-          renderLoading()
-        ) : (
-          <>
-            {Icon && <Icon />}
-            <span>{children}</span>
-          </>
-        )}
+        <ContentContainer>
+          {Icon && <Icon role="img" />}
+          <span>{children}</span>
+
+          {isLoading && (
+            <SpinnerContainer>
+              <Spinner color="deep" size={small ? 'small' : 'medium'} />
+            </SpinnerContainer>
+          )}
+        </ContentContainer>
       </StyledButton>
     );
   },
