@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { bool, string, oneOfType, node, func } from 'prop-types';
 
 import styled from 'styled-components';
@@ -69,11 +69,13 @@ const Link = styled(Button)`
 `;
 
 // eslint-disable-next-line react/prop-types
-const ButtonLink = ({ isLoading, ...rest }) => {
+const ButtonLink = forwardRef(({ isLoading, ...rest }, ref) => {
   const { disabled } = rest;
 
-  return <Link {...rest} disabled={disabled} aria-disabled={disabled} />;
-};
+  return (
+    <Link {...rest} disabled={disabled} aria-disabled={disabled} ref={ref} />
+  );
+});
 
 ButtonLink.propTypes = {
   disabled: bool,

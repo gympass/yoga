@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import { bool } from 'prop-types';
@@ -84,11 +84,18 @@ const StyledButton = styled(Button)`
 `;
 
 // eslint-disable-next-line react/prop-types
-const ButtonText = ({ isLoading, ...rest }) => {
+const ButtonText = forwardRef(({ isLoading, ...rest }, ref) => {
   const { secondary, inverted } = rest;
 
-  return <StyledButton {...rest} secondary={secondary} inverted={inverted} />;
-};
+  return (
+    <StyledButton
+      {...rest}
+      secondary={secondary}
+      inverted={inverted}
+      ref={ref}
+    />
+  );
+});
 
 ButtonText.propTypes = {
   inverted: bool,
