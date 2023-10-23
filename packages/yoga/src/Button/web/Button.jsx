@@ -22,13 +22,14 @@ const Button = forwardRef(
     ref,
   ) => {
     const ContentContainer = styled.div`
-      position: relative;
       display: flex;
       align-items: center;
 
       ${() =>
         isLoading &&
         css`
+          position: relative;
+
           & > span {
             color: transparent;
           }
