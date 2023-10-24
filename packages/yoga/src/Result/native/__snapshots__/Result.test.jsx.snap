@@ -19,10 +19,9 @@ exports[`<Result /> should match snapshot 1`] = `
 >
   <View
     alignItems="center"
-    bgColor="elements.selectionAndIcons"
+    bgColor="rgba(35, 27, 34, 0.25)"
     borderRadius="circle"
     display="flex"
-    elevation="small"
     height={48}
     justifyContent="center"
     overflow="hidden"
@@ -30,102 +29,124 @@ exports[`<Result /> should match snapshot 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#9898A6",
+          "backgroundColor": "rgba(35, 27, 34, 0.25)",
           "borderRadius": 9999,
           "display": "flex",
           "height": 48,
           "justifyContent": "center",
           "overflow": "hidden",
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 4,
+          "paddingBottom": 0.5,
+          "paddingLeft": 0.5,
+          "paddingRight": 0.5,
+          "paddingTop": 0.5,
           "width": 48,
         },
       ]
     }
     width={48}
   >
-    <RNSVGSvgView
-      aria-hidden={true}
-      bbHeight="50%"
-      bbWidth="50%"
-      fill="#FFFFFF"
-      focusable={false}
-      height="50%"
+    <View
+      alignItems="center"
+      bgColor="elements.selectionAndIcons"
+      borderRadius="circle"
+      display="flex"
+      height="100%"
+      justifyContent="center"
+      overflow="hidden"
       style={
         [
           {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          [
-            {
-              "height": "50%",
-              "width": "50%",
-            },
-          ],
-          {
-            "opacity": 1,
-          },
-          {
-            "flex": 0,
-            "height": "50%",
-            "width": "50%",
+            "alignItems": "center",
+            "backgroundColor": "#9898A6",
+            "borderRadius": 9999,
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "overflow": "hidden",
+            "width": "100%",
           },
         ]
       }
-      width="50%"
+      width="100%"
     >
-      <RNSVGGroup
-        fill={
+      <RNSVGSvgView
+        aria-hidden={true}
+        bbHeight="50%"
+        bbWidth="50%"
+        fill="#FFFFFF"
+        focusable={false}
+        height="50%"
+        style={
           [
-            0,
-            4294967295,
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            [
+              {
+                "height": "50%",
+                "width": "50%",
+              },
+            ],
+            {
+              "opacity": 1,
+            },
+            {
+              "flex": 0,
+              "height": "50%",
+              "width": "50%",
+            },
           ]
         }
-        fillOpacity={1}
-        fillRule={1}
-        font={{}}
-        matrix={
-          [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
+        width="50%"
+      >
+        <RNSVGGroup
+          fill={
+            [
+              0,
+              4294967295,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={{}}
+          matrix={
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+    </View>
   </View>
   <View
     style={
@@ -1014,10 +1035,9 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
 >
   <View
     alignItems="center"
-    bgColor="elements.selectionAndIcons"
+    bgColor="rgba(35, 27, 34, 0.25)"
     borderRadius="small"
     display="flex"
-    elevation="small"
     height={48}
     justifyContent="center"
     overflow="hidden"
@@ -1025,102 +1045,124 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#9898A6",
+          "backgroundColor": "rgba(35, 27, 34, 0.25)",
           "borderRadius": 8,
           "display": "flex",
           "height": 48,
           "justifyContent": "center",
           "overflow": "hidden",
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 4,
+          "paddingBottom": 0.5,
+          "paddingLeft": 0.5,
+          "paddingRight": 0.5,
+          "paddingTop": 0.5,
           "width": 48,
         },
       ]
     }
     width={48}
   >
-    <RNSVGSvgView
-      aria-hidden={true}
-      bbHeight="50%"
-      bbWidth="50%"
-      fill="#FFFFFF"
-      focusable={false}
-      height="50%"
+    <View
+      alignItems="center"
+      bgColor="elements.selectionAndIcons"
+      borderRadius="small"
+      display="flex"
+      height="100%"
+      justifyContent="center"
+      overflow="hidden"
       style={
         [
           {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          [
-            {
-              "height": "50%",
-              "width": "50%",
-            },
-          ],
-          {
-            "opacity": 1,
-          },
-          {
-            "flex": 0,
-            "height": "50%",
-            "width": "50%",
+            "alignItems": "center",
+            "backgroundColor": "#9898A6",
+            "borderRadius": 8,
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "overflow": "hidden",
+            "width": "100%",
           },
         ]
       }
-      width="50%"
+      width="100%"
     >
-      <RNSVGGroup
-        fill={
+      <RNSVGSvgView
+        aria-hidden={true}
+        bbHeight="50%"
+        bbWidth="50%"
+        fill="#FFFFFF"
+        focusable={false}
+        height="50%"
+        style={
           [
-            0,
-            4294967295,
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            [
+              {
+                "height": "50%",
+                "width": "50%",
+              },
+            ],
+            {
+              "opacity": 1,
+            },
+            {
+              "flex": 0,
+              "height": "50%",
+              "width": "50%",
+            },
           ]
         }
-        fillOpacity={1}
-        fillRule={1}
-        font={{}}
-        matrix={
-          [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
+        width="50%"
+      >
+        <RNSVGGroup
+          fill={
+            [
+              0,
+              4294967295,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={{}}
+          matrix={
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+    </View>
   </View>
   <View
     style={
@@ -1506,10 +1548,9 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
 >
   <View
     alignItems="center"
-    bgColor="elements.selectionAndIcons"
+    bgColor="rgba(35, 27, 34, 0.25)"
     borderRadius="circle"
     display="flex"
-    elevation="small"
     height={48}
     justifyContent="center"
     overflow="hidden"
@@ -1517,102 +1558,124 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#9898A6",
+          "backgroundColor": "rgba(35, 27, 34, 0.25)",
           "borderRadius": 9999,
           "display": "flex",
           "height": 48,
           "justifyContent": "center",
           "overflow": "hidden",
-          "shadowColor": "rgba(152, 152, 166, 0.2)",
-          "shadowOffset": {
-            "height": 2,
-            "width": 0,
-          },
-          "shadowOpacity": 1,
-          "shadowRadius": 4,
+          "paddingBottom": 0.5,
+          "paddingLeft": 0.5,
+          "paddingRight": 0.5,
+          "paddingTop": 0.5,
           "width": 48,
         },
       ]
     }
     width={48}
   >
-    <RNSVGSvgView
-      aria-hidden={true}
-      bbHeight="50%"
-      bbWidth="50%"
-      fill="#FFFFFF"
-      focusable={false}
-      height="50%"
+    <View
+      alignItems="center"
+      bgColor="elements.selectionAndIcons"
+      borderRadius="circle"
+      display="flex"
+      height="100%"
+      justifyContent="center"
+      overflow="hidden"
       style={
         [
           {
-            "backgroundColor": "transparent",
-            "borderWidth": 0,
-          },
-          [
-            {
-              "height": "50%",
-              "width": "50%",
-            },
-          ],
-          {
-            "opacity": 1,
-          },
-          {
-            "flex": 0,
-            "height": "50%",
-            "width": "50%",
+            "alignItems": "center",
+            "backgroundColor": "#9898A6",
+            "borderRadius": 9999,
+            "display": "flex",
+            "height": "100%",
+            "justifyContent": "center",
+            "overflow": "hidden",
+            "width": "100%",
           },
         ]
       }
-      width="50%"
+      width="100%"
     >
-      <RNSVGGroup
-        fill={
+      <RNSVGSvgView
+        aria-hidden={true}
+        bbHeight="50%"
+        bbWidth="50%"
+        fill="#FFFFFF"
+        focusable={false}
+        height="50%"
+        style={
           [
-            0,
-            4294967295,
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            [
+              {
+                "height": "50%",
+                "width": "50%",
+              },
+            ],
+            {
+              "opacity": 1,
+            },
+            {
+              "flex": 0,
+              "height": "50%",
+              "width": "50%",
+            },
           ]
         }
-        fillOpacity={1}
-        fillRule={1}
-        font={{}}
-        matrix={
-          [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        opacity={1}
-        originX={0}
-        originY={0}
-        propList={
-          [
-            "fill",
-          ]
-        }
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGSvgView>
+        width="50%"
+      >
+        <RNSVGGroup
+          fill={
+            [
+              0,
+              4294967295,
+            ]
+          }
+          fillOpacity={1}
+          fillRule={1}
+          font={{}}
+          matrix={
+            [
+              1,
+              0,
+              0,
+              1,
+              0,
+              0,
+            ]
+          }
+          opacity={1}
+          originX={0}
+          originY={0}
+          propList={
+            [
+              "fill",
+            ]
+          }
+          rotation={0}
+          scaleX={1}
+          scaleY={1}
+          skewX={0}
+          skewY={0}
+          stroke={null}
+          strokeDasharray={null}
+          strokeDashoffset={null}
+          strokeLinecap={0}
+          strokeLinejoin={0}
+          strokeMiterlimit={4}
+          strokeOpacity={1}
+          strokeWidth={1}
+          vectorEffect={0}
+          x={0}
+          y={0}
+        />
+      </RNSVGSvgView>
+    </View>
   </View>
   <View
     style={
