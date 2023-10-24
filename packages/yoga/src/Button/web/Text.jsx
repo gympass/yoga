@@ -83,13 +83,16 @@ const StyledButton = styled(Button)`
   }}
 `;
 
-// eslint-disable-next-line react/prop-types
-const ButtonText = forwardRef(({ isLoading, ...rest }, ref) => {
-  const { secondary, inverted } = rest;
+const ButtonText = forwardRef(({ ...rest }, ref) => {
+  const props = Object.fromEntries(
+    Object.entries(rest).filter(([key]) => key !== 'isLoading'),
+  );
+
+  const { secondary, inverted } = props;
 
   return (
     <StyledButton
-      {...rest}
+      {...props}
       secondary={secondary}
       inverted={inverted}
       ref={ref}

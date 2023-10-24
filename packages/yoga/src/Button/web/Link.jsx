@@ -68,12 +68,15 @@ const Link = styled(Button)`
   }}
 `;
 
-// eslint-disable-next-line react/prop-types
-const ButtonLink = forwardRef(({ isLoading, ...rest }, ref) => {
-  const { disabled } = rest;
+const ButtonLink = forwardRef(({ ...rest }, ref) => {
+  const props = Object.fromEntries(
+    Object.entries(rest).filter(([key]) => key !== 'isLoading'),
+  );
+
+  const { disabled } = props;
 
   return (
-    <Link {...rest} disabled={disabled} aria-disabled={disabled} ref={ref} />
+    <Link {...props} disabled={disabled} aria-disabled={disabled} ref={ref} />
   );
 });
 
