@@ -70,17 +70,6 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
   box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <section
     class="c0"
@@ -101,13 +90,7 @@ exports[`<Card /> Snapshots should match snapshot with default Card 1`] = `
       <button
         class="c1"
       >
-        <div
-          class="c2"
-        >
-          <span>
-            Action's children must be Button
-          </span>
-        </div>
+        Action's children must be Button
       </button>
     </footer>
   </section>

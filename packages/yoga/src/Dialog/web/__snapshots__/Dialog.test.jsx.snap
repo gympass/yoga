@@ -138,17 +138,6 @@ exports[`<Dialog /> should match snapshot 1`] = `
   background-color: rgba(35,27,34,0.48);
 }
 
-.c7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <body>
   <div />
   <div
@@ -180,13 +169,7 @@ exports[`<Dialog /> should match snapshot 1`] = `
             <button
               class="c6"
             >
-              <div
-                class="c7"
-              >
-                <span>
-                  Ok, got it
-                </span>
-              </div>
+              Ok, got it
             </button>
           </footer>
         </section>
@@ -445,17 +428,6 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   background-color: rgba(35,27,34,0.48);
 }
 
-.c10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div
     id="dialog"
   >
@@ -501,13 +473,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
             <button
               class="c9"
             >
-              <div
-                class="c10"
-              >
-                <span>
-                  Ok, got it
-                </span>
-              </div>
+              Ok, got it
             </button>
           </footer>
         </section>

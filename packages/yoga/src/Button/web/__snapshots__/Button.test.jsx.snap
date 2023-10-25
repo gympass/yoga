@@ -71,30 +71,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   fill: #6B6B78;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0"
     disabled=""
   >
-    <div
-      class="c1"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -141,6 +124,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -167,10 +152,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -179,13 +168,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -196,22 +185,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -226,40 +199,34 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
     class="c0"
     disabled=""
   >
+    Button
     <div
       class="c1"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -336,33 +303,16 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   fill: #6B6B78;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0"
     disabled=""
   >
-    <div
-      class="c1"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -409,6 +359,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -435,10 +387,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -447,13 +403,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -464,22 +420,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -494,43 +434,37 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
     class="c0"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c1"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -706,6 +640,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
   padding: 0;
   width: 48px;
 }
@@ -731,6 +667,10 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c0:active svg {
   fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
 }
 
 .c0 svg {
@@ -898,30 +838,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -1040,30 +963,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -1110,6 +1016,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -1136,10 +1044,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1148,13 +1060,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -1204,26 +1116,18 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1238,40 +1142,34 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
     class="c0 c1"
     disabled=""
   >
+    Button
     <div
       class="c2"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -1391,33 +1289,16 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -1464,6 +1345,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -1490,10 +1373,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1502,13 +1389,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -1558,26 +1445,18 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1592,43 +1471,37 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
     class="c0 c1"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c2"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -1750,30 +1623,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -1894,33 +1750,16 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -1988,28 +1827,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -2056,6 +1878,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -2082,10 +1906,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -2094,13 +1922,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -2111,22 +1939,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2140,40 +1952,34 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
     class="c0"
     disabled=""
   >
+    Button
     <div
       class="c1"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -2242,31 +2048,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -2313,6 +2102,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -2339,10 +2130,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -2351,13 +2146,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -2368,22 +2163,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2397,43 +2176,37 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
     class="c0"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c1"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -2545,28 +2318,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -2613,6 +2369,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -2639,10 +2397,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -2651,13 +2413,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -2707,26 +2469,18 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2740,40 +2494,34 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
     class="c0 c1"
     disabled=""
   >
+    Button
     <div
       class="c2"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -2885,31 +2633,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -2956,6 +2687,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -2982,10 +2715,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -2994,13 +2731,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -3050,26 +2787,18 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3083,43 +2812,37 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
     class="c0 c1"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c2"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -3233,28 +2956,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -3367,31 +3073,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -3459,28 +3148,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -3527,6 +3199,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -3553,10 +3227,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -3565,13 +3243,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -3582,22 +3260,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3611,40 +3273,34 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
     class="c0"
     disabled=""
   >
+    Button
     <div
       class="c1"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="16"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="16"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -3713,31 +3369,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -3784,6 +3423,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -3810,10 +3451,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -3822,13 +3467,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -3839,22 +3484,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3868,43 +3497,37 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
     class="c0"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c1"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="16"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="16"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -4070,6 +3693,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
   padding: 0;
   width: 32px;
 }
@@ -4095,6 +3720,10 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c0:active svg {
   fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
 }
 
 .c0 svg {
@@ -4248,28 +3877,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -4316,6 +3928,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -4342,10 +3956,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -4354,13 +3972,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -4410,26 +4028,18 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4443,40 +4053,34 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
     class="c0 c1"
     disabled=""
   >
+    Button
     <div
       class="c2"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="16"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="16"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -4588,31 +4192,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -4659,6 +4246,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -4685,10 +4274,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -4697,13 +4290,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -4753,26 +4346,18 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -4786,43 +4371,37 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
     class="c0 c1"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c2"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="16"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="16"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -4936,28 +4515,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -5070,31 +4632,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -5182,28 +4727,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -5252,6 +4780,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   cursor: not-allowed;
   background-color: #FFFFFF;
   color: #D8385E;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -5278,11 +4808,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #D8385E;
 }
 
 .c0:active {
@@ -5299,7 +4829,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c3 .spinner {
+.c0 svg {
+  fill: transparent;
+}
+
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -5308,13 +4842,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -5325,22 +4859,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5354,40 +4872,34 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     class="c0"
     disabled=""
   >
+    Button
     <div
       class="c1"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -5476,31 +4988,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -5549,6 +5044,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   cursor: not-allowed;
   background-color: #FFFFFF;
   color: #D8385E;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -5575,11 +5072,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #D8385E;
 }
 
 .c0:active {
@@ -5596,7 +5093,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c3 .spinner {
+.c0 svg {
+  fill: transparent;
+}
+
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -5605,13 +5106,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -5622,22 +5123,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -5651,43 +5136,37 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     class="c0"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c1"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -5875,6 +5354,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   cursor: not-allowed;
   background-color: #FFFFFF;
   color: #D8385E;
+  position: relative;
+  color: transparent;
   padding: 0;
   width: 48px;
 }
@@ -5903,11 +5384,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #D8385E;
 }
 
 .c0:active {
@@ -5922,6 +5403,10 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
+.c0 svg {
+  fill: transparent;
 }
 
 .c0 svg {
@@ -6127,28 +5612,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -6197,6 +5665,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   cursor: not-allowed;
   background-color: #FFFFFF;
   color: #D8385E;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -6223,11 +5693,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #D8385E;
 }
 
 .c0:active {
@@ -6244,7 +5714,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c4 .spinner {
+.c0 svg {
+  fill: transparent;
+}
+
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -6253,13 +5727,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -6311,7 +5785,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c1 svg {
@@ -6348,23 +5822,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
+.c1:disabled {
   color: transparent;
 }
 
-.c3 {
+.c1:disabled svg {
+  fill: transparent;
+}
+
+.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6378,40 +5844,34 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     class="c0 c1"
     disabled=""
   >
+    Button
     <div
       class="c2"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -6579,31 +6039,14 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -6652,6 +6095,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   cursor: not-allowed;
   background-color: #FFFFFF;
   color: #D8385E;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -6678,11 +6123,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #D8385E;
 }
 
 .c0:active {
@@ -6699,7 +6144,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c4 .spinner {
+.c0 svg {
+  fill: transparent;
+}
+
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -6708,13 +6157,13 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -6766,7 +6215,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c1:disabled svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c1 svg {
@@ -6803,23 +6252,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
+.c1:disabled {
   color: transparent;
 }
 
-.c3 {
+.c1:disabled svg {
+  fill: transparent;
+}
+
+.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -6833,43 +6274,37 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
     class="c0 c1"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c2"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -7026,28 +6461,11 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -7115,28 +6533,11 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -7183,6 +6584,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -7209,10 +6612,14 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -7221,13 +6628,13 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -7238,22 +6645,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7267,40 +6658,34 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     class="c0"
     disabled=""
   >
+    Button
     <div
       class="c1"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -7369,31 +6754,14 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -7440,6 +6808,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -7466,10 +6836,14 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -7478,13 +6852,13 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -7495,22 +6869,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -7524,43 +6882,37 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     class="c0"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c1"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -7770,28 +7122,11 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -7902,28 +7237,11 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -7970,6 +7288,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -7996,10 +7316,14 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -8008,13 +7332,13 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -8064,26 +7388,18 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8097,40 +7413,34 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     class="c0 c1"
     disabled=""
   >
+    Button
     <div
       class="c2"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -8242,31 +7552,14 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -8313,6 +7606,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -8339,10 +7634,14 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -8351,13 +7650,13 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -8368,22 +7667,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8397,43 +7680,37 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
     class="c0"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c1"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -8547,28 +7824,11 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -8681,31 +7941,14 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -8777,6 +8020,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
   padding: 0;
   width: 48px;
 }
@@ -8802,6 +8047,10 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c0:active svg {
   fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
 }
 
 .c0 svg {
@@ -8912,30 +8161,13 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <a
     class="c0"
     href="http://www.gympass.com"
     target="blank"
   >
-    <div
-      class="c1"
-    >
-      <span>
-        Default Button as an anchor
-      </span>
-    </div>
+    Default Button as an anchor
   </a>
 </div>
 `;
@@ -8982,6 +8214,8 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -9008,10 +8242,14 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -9020,13 +8258,13 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -9037,22 +8275,6 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9068,40 +8290,34 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
     href="http://www.gympass.com"
     target="blank"
   >
+    Default Button as an anchor
     <div
       class="c1"
     >
-      <span>
-        Default Button as an anchor
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </a>
 </div>
@@ -9218,30 +8434,13 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Lin
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <a
     class="c0 c1"
     href="http://www.gympass.com"
     target="blank"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Link as an anchor
-      </span>
-    </div>
+    Link as an anchor
   </a>
 </div>
 `;
@@ -9352,30 +8551,13 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <a
     class="c0 c1"
     href="http://www.gympass.com"
     target="blank"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Outline as an anchor
-      </span>
-    </div>
+    Outline as an anchor
   </a>
 </div>
 `;
@@ -9422,6 +8604,8 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -9448,10 +8632,14 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -9460,13 +8648,13 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -9516,26 +8704,18 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9551,40 +8731,34 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
     href="http://www.gympass.com"
     target="blank"
   >
+    Outline as an anchor
     <div
       class="c2"
     >
-      <span>
-        Outline as an anchor
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </a>
 </div>
@@ -9698,30 +8872,13 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Tex
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <a
     class="c0 c1"
     href="http://www.gympass.com"
     target="blank"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Text as an anchor
-      </span>
-    </div>
+    Text as an anchor
   </a>
 </div>
 `;
@@ -9797,30 +8954,13 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   fill: #6B6B78;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0"
     disabled=""
   >
-    <div
-      class="c1"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -9867,6 +9007,8 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -9893,10 +9035,14 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -9905,13 +9051,13 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -9922,22 +9068,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9952,40 +9082,34 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
     class="c0"
     disabled=""
   >
+    Button
     <div
       class="c1"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -10062,33 +9186,16 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   fill: #6B6B78;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0"
     disabled=""
   >
-    <div
-      class="c1"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -10135,6 +9242,8 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -10161,10 +9270,14 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -10173,13 +9286,13 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -10190,22 +9303,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10220,43 +9317,37 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
     class="c0"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c1"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -10432,6 +9523,8 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
   padding: 0;
   width: 48px;
 }
@@ -10457,6 +9550,10 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c0:active svg {
   fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
 }
 
 .c0 svg {
@@ -10624,30 +9721,13 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -10766,30 +9846,13 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -10836,6 +9899,8 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -10862,10 +9927,14 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -10874,13 +9943,13 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -10930,26 +9999,18 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10964,40 +10025,34 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
     class="c0 c1"
     disabled=""
   >
+    Button
     <div
       class="c2"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -11117,33 +10172,16 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -11190,6 +10228,8 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -11216,10 +10256,14 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -11228,13 +10272,13 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -11284,26 +10328,18 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11318,43 +10354,37 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
     class="c0 c1"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c2"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -11476,30 +10506,13 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -11620,33 +10633,16 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     aria-disabled="true"
     class="c0 c1"
     disabled=""
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -11714,28 +10710,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -11782,6 +10761,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -11808,10 +10789,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -11820,13 +10805,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -11837,22 +10822,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11866,40 +10835,34 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
     class="c0"
     disabled=""
   >
+    Button
     <div
       class="c1"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -11968,31 +10931,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -12039,6 +10985,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -12065,10 +11013,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -12077,13 +11029,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -12094,22 +11046,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12123,43 +11059,37 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
     class="c0"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c1"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -12271,28 +11201,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -12339,6 +11252,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -12365,10 +11280,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -12377,13 +11296,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -12433,26 +11352,18 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12466,40 +11377,34 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
     class="c0 c1"
     disabled=""
   >
+    Button
     <div
       class="c2"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -12611,31 +11516,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -12682,6 +11570,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -12708,10 +11598,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -12720,13 +11614,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -12776,26 +11670,18 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12809,43 +11695,37 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
     class="c0 c1"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c2"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -12959,28 +11839,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -13093,31 +11956,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -13205,28 +12051,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -13275,6 +12104,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   cursor: not-allowed;
   background-color: #FFFFFF;
   color: #231B22;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -13301,11 +12132,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #231B22;
 }
 
 .c0:active {
@@ -13322,7 +12153,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c3 .spinner {
+.c0 svg {
+  fill: transparent;
+}
+
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -13331,13 +12166,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -13348,22 +12183,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -13377,40 +12196,34 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
     class="c0"
     disabled=""
   >
+    Button
     <div
       class="c1"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -13499,31 +12312,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -13572,6 +12368,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   cursor: not-allowed;
   background-color: #FFFFFF;
   color: #231B22;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -13598,11 +12396,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #231B22;
 }
 
 .c0:active {
@@ -13619,7 +12417,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c3 .spinner {
+.c0 svg {
+  fill: transparent;
+}
+
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -13628,13 +12430,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -13645,22 +12447,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -13674,43 +12460,37 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
     class="c0"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c1"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -13898,6 +12678,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   cursor: not-allowed;
   background-color: #FFFFFF;
   color: #231B22;
+  position: relative;
+  color: transparent;
   padding: 0;
   width: 48px;
 }
@@ -13926,11 +12708,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #231B22;
 }
 
 .c0:active {
@@ -13945,6 +12727,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c0:not([disabled]):hover,
 .c0:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
+}
+
+.c0 svg {
+  fill: transparent;
 }
 
 .c0 svg {
@@ -14150,28 +12936,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -14220,6 +12989,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   cursor: not-allowed;
   background-color: #FFFFFF;
   color: #231B22;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -14246,11 +13017,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #231B22;
 }
 
 .c0:active {
@@ -14267,7 +13038,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c4 .spinner {
+.c0 svg {
+  fill: transparent;
+}
+
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -14276,13 +13051,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -14334,7 +13109,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1:disabled svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c1 svg {
@@ -14371,23 +13146,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
+.c1:disabled {
   color: transparent;
 }
 
-.c3 {
+.c1:disabled svg {
+  fill: transparent;
+}
+
+.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -14401,40 +13168,34 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
     class="c0 c1"
     disabled=""
   >
+    Button
     <div
       class="c2"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -14602,31 +13363,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -14675,6 +13419,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   cursor: not-allowed;
   background-color: #FFFFFF;
   color: #231B22;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -14701,11 +13447,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c0 svg {
-  fill: transparent;
+  fill: #231B22;
 }
 
 .c0:active {
@@ -14722,7 +13468,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c4 .spinner {
+.c0 svg {
+  fill: transparent;
+}
+
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -14731,13 +13481,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -14789,7 +13539,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c1:disabled svg {
-  fill: transparent;
+  fill: #6B6B78;
 }
 
 .c1 svg {
@@ -14826,23 +13576,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
+.c1:disabled {
   color: transparent;
 }
 
-.c3 {
+.c1:disabled svg {
+  fill: transparent;
+}
+
+.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -14856,43 +13598,37 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
     class="c0 c1"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c2"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -15049,28 +13785,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -15226,31 +13945,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -15406,31 +14108,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -15498,28 +14183,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -15566,6 +14234,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -15592,10 +14262,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -15604,13 +14278,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -15621,22 +14295,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15650,40 +14308,34 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
     class="c0"
     disabled=""
   >
+    Button
     <div
       class="c1"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="16"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="16"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -15752,31 +14404,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -15823,6 +14458,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -15849,10 +14486,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -15861,13 +14502,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -15878,22 +14519,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15907,43 +14532,37 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
     class="c0"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c1"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="16"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="16"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -16109,6 +14728,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
   padding: 0;
   width: 32px;
 }
@@ -16134,6 +14755,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c0:active svg {
   fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
 }
 
 .c0 svg {
@@ -16287,28 +14912,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -16355,6 +14963,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -16381,10 +14991,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -16393,13 +15007,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -16449,26 +15063,18 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16482,40 +15088,34 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
     class="c0 c1"
     disabled=""
   >
+    Button
     <div
       class="c2"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="16"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="16"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -16627,31 +15227,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -16698,6 +15281,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -16724,10 +15309,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -16736,13 +15325,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -16792,26 +15381,18 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16825,43 +15406,37 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
     class="c0 c1"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c2"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="16"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="16"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -16975,28 +15550,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -17109,31 +15667,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -17201,28 +15742,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -17269,6 +15793,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -17295,10 +15821,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -17307,13 +15837,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -17324,22 +15854,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17353,40 +15867,34 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
     class="c0"
     disabled=""
   >
+    Button
     <div
       class="c1"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -17455,31 +15963,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   fill: #FFFFFF;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0"
   >
-    <div
-      class="c1"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -17526,6 +16017,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -17552,10 +16045,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c3 .spinner {
+.c2 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -17564,13 +16061,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c3 .circular {
+.c2 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c3 .path {
+.c2 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -17581,22 +16078,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c1 > span {
-  color: transparent;
-}
-
-.c2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17610,43 +16091,37 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
     class="c0"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c1"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c2"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c3"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -17812,6 +16287,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
   padding: 0;
   width: 48px;
 }
@@ -17837,6 +16314,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c0:active svg {
   fill: #FFFFFF;
+}
+
+.c0 svg {
+  fill: #6B6B78;
 }
 
 .c0 svg {
@@ -17995,28 +16476,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -18132,31 +16596,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -18267,28 +16714,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -18335,6 +16765,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -18361,10 +16793,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -18373,13 +16809,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -18429,26 +16865,18 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -18462,40 +16890,34 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
     class="c0 c1"
     disabled=""
   >
+    Button
     <div
       class="c2"
     >
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -18607,31 +17029,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
@@ -18678,6 +17083,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   color: #6B6B78;
   pointer-events: none;
   cursor: not-allowed;
+  position: relative;
+  color: transparent;
 }
 
 .c0 svg {
@@ -18704,10 +17111,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c0 svg {
+  fill: #6B6B78;
+}
+
+.c0 svg {
   fill: transparent;
 }
 
-.c4 .spinner {
+.c3 .spinner {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -18716,13 +17127,13 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   animation: 1.4s linear 0s infinite normal none running rotation;
 }
 
-.c4 .circular {
+.c3 .circular {
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.c4 .path {
+.c3 .path {
   stroke-dasharray: 80px,200px;
   stroke-dashoffset: 0;
   -webkit-animation: 1.4s ease-in-out 0s infinite normal none running dash;
@@ -18772,26 +17183,18 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c1:disabled svg {
+  fill: #6B6B78;
+}
+
+.c1:disabled {
+  color: transparent;
+}
+
+.c1:disabled svg {
   fill: transparent;
 }
 
 .c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c2 > span {
-  color: transparent;
-}
-
-.c3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -18805,43 +17208,37 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
     class="c0 c1"
     disabled=""
   >
+    <svg
+      role="img"
+    />
+    Button
     <div
       class="c2"
     >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-      <div
+      <span
+        aria-label="loading-icon"
         class="c3"
+        color="#6B6B78"
+        size="20"
       >
         <span
-          aria-label="loading-icon"
-          class="c4"
-          color="#6B6B78"
-          size="20"
+          class="spinner"
         >
-          <span
-            class="spinner"
+          <svg
+            class="circular"
+            viewBox="22 22 44 44"
           >
-            <svg
-              class="circular"
-              viewBox="22 22 44 44"
-            >
-              <circle
-                class="path"
-                cx="44"
-                cy="44"
-                fill="none"
-                r="20.2"
-                stroke-width="3.6"
-              />
-            </svg>
-          </span>
+            <circle
+              class="path"
+              cx="44"
+              cy="44"
+              fill="none"
+              r="20.2"
+              stroke-width="3.6"
+            />
+          </svg>
         </span>
-      </div>
+      </span>
     </div>
   </button>
 </div>
@@ -18955,28 +17352,11 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <span>
-        Button
-      </span>
-    </div>
+    Button
   </button>
 </div>
 `;
@@ -19089,31 +17469,14 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   fill: #6B6B78;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 <div>
   <button
     class="c0 c1"
   >
-    <div
-      class="c2"
-    >
-      <svg
-        role="img"
-      />
-      <span>
-        Button
-      </span>
-    </div>
+    <svg
+      role="img"
+    />
+    Button
   </button>
 </div>
 `;
