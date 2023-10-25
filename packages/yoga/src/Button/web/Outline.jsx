@@ -57,7 +57,7 @@ const ButtonOutline = styled(Button)`
         color: ${outline.font.disabled.color};
 
          svg {
-          fill: ${isLoading ? 'transparent' : outline.font.disabled.color};
+          fill: ${outline.font.disabled.color};
         }
       }
 
@@ -98,6 +98,20 @@ const ButtonOutline = styled(Button)`
               }
             }
           `
+          : ''
+      }
+
+      ${
+        isLoading
+          ? `
+            &:disabled {
+              color: transparent;
+
+              svg {
+                fill: transparent;
+              }
+            }
+            `
           : ''
       }
     `;

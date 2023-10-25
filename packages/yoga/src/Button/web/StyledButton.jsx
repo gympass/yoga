@@ -88,11 +88,7 @@ const StyledButton = styled.button`
         pointer-events: none;
 
         svg {
-          fill: ${
-            isLoading
-              ? 'transparent'
-              : button.types.contained.font.disabled.color
-          };
+          fill: ${button.types.contained.font.disabled.color};
         }
 
         cursor: not-allowed;
@@ -108,11 +104,7 @@ const StyledButton = styled.button`
         color: ${button.types.contained.backgroundColor[state].default};
 
         svg {
-          fill: ${
-            isLoading
-              ? 'transparent'
-              : button.types.contained.backgroundColor[state].default
-          };
+          fill: ${button.types.contained.backgroundColor[state].default};
         }
 
         &:active {
@@ -134,6 +126,25 @@ const StyledButton = styled.button`
           )};
         }
       `
+          : ''
+      }
+
+      ${
+        isLoading
+          ? `
+            position: relative;
+            color: transparent;
+            `
+          : ''
+      }
+
+      ${
+        (isLoading && inverted) || (isLoading && disabled)
+          ? `
+          svg {
+            fill: transparent;
+          }
+            `
           : ''
       }
     `;

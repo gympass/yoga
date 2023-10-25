@@ -21,21 +21,6 @@ const Button = forwardRef(
     },
     ref,
   ) => {
-    const ContentContainer = styled.div`
-      display: flex;
-      align-items: center;
-
-      ${() =>
-        isLoading &&
-        css`
-          position: relative;
-
-          & > span {
-            color: transparent;
-          }
-        `}
-    `;
-
     const SpinnerContainer = styled.div`
       ${() =>
         isLoading &&
@@ -68,16 +53,14 @@ const Button = forwardRef(
         isLoading={isLoading}
         {...finalProps}
       >
-        <ContentContainer>
-          {Icon && <Icon role="img" />}
-          <span>{children}</span>
+        {Icon && <Icon role="img" />}
+        {children}
 
-          {isLoading && (
-            <SpinnerContainer>
-              <Spinner color="deep" size={small ? 'small' : 'medium'} />
-            </SpinnerContainer>
-          )}
-        </ContentContainer>
+        {isLoading && (
+          <SpinnerContainer>
+            <Spinner color="deep" size={small ? 'small' : 'medium'} />
+          </SpinnerContainer>
+        )}
       </StyledButton>
     );
   },
