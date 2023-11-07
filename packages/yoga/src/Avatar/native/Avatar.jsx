@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
-import { string, func } from 'prop-types';
+import { string, func, number } from 'prop-types';
 import { ImagePropTypes } from 'deprecated-react-native-prop-types';
 import { Image, StyleSheet } from 'react-native';
 
@@ -46,9 +46,9 @@ const Avatar = forwardRef(
       children,
       fill,
       stroke,
-      borderRadius = 'small',
-      width = 48,
-      height = 48,
+      borderRadius,
+      width,
+      height,
       ...props
     },
     ref,
@@ -105,12 +105,18 @@ Avatar.propTypes = {
   src: ImagePropTypes.source,
   icon: func,
   fill: string,
+  width: number,
+  height: number,
+  borderRadius: string,
   ...Box.propTypes,
 };
 
 Avatar.defaultProps = {
   src: undefined,
   fill: 'white',
+  width: 48,
+  height: 48,
+  borderRadius: 'small',
   ...Box.defaultProps,
 };
 
