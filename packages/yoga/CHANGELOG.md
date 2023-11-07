@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.85.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.85.0...@gympass/yoga@7.85.1) (2023-11-07)
+
+
+### Bug Fixes
+
+* **avatar-native:** add propTypes and defaultProps to avatar native ([be77d18](https://github.com/Gympass/yoga/commit/be77d18dca704a8b951f3eb6032d4bfc586b93bb))
+
+
+
+
+
 # [7.85.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.84.3...@gympass/yoga@7.85.0) (2023-10-24)
 
 
