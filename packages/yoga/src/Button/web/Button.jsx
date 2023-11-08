@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { func, node, oneOfType, bool, string } from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import StyledButton from './StyledButton';
 import Spinner from '../../Spinner';
 
@@ -22,14 +22,10 @@ const Button = forwardRef(
     ref,
   ) => {
     const SpinnerContainer = styled.div`
-      ${() =>
-        isLoading &&
-        css`
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        `}
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     `;
 
     const finalProps = {
