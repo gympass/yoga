@@ -2,13 +2,15 @@
   "name": "@gympass/yoga",
   "version": "7.85.1",
   "description": "Gympass component library",
-  "main": "./src",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
   "sideEffects": false,
   "scripts": {
-    "build": "yarn build:web && yarn build:native && yarn build:esm",
-    "build:web": "NODE_ENV=web babel ./src --out-dir dist/cjs",
-    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
-    "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
+    "build": "yarn build:types && yarn build:web && yarn build:esm && yarn build:native",
+    "build:types": "tsup --outDir dist/typings --dts-only",
+    "build:web": "tsup src/**/web !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
+    "build:esm": "tsup --format=esm --legacy-output",
+    "build:native": "tsup src/**/native !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
     "prebuild": "rm -rf ./dist",
     "postbuild": "cp -r ./src/Fonts ./dist/fonts",
     "prepublishOnly": "node ../../scripts/prepublish.js --rn"
@@ -42,13 +44,17 @@
     "@gympass/yoga-tokens": "^3.2.2",
     "@ptomasroos/react-native-multi-slider": "^2.1.1",
     "@radix-ui/react-dropdown-menu": "^2.0.1",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/react-native": "^12.3.0",
     "date-fns": "^2.29.2",
     "deprecated-react-native-prop-types": "^2.3.0",
     "downshift": "^5.0.0",
+    "lodash": "^4.17.21",
     "lodash.get": "^4.4.2",
     "prop-types": "^15.7.2",
     "proxy-polyfill": "^0.3.1",
     "rc-slider": "^8.7.1",
+    "react-dom": "^18.2.0",
     "react-google-font-loader": "^1.1.0",
     "react-phone-input-2": "^2.15.1"
   },
@@ -63,5 +69,13 @@
     "react": ">=16",
     "react-native": "0.72.3",
     "styled-components": "^4.4.0"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts",
+      "src/**/*.ts"
+    ],
+    "splitting": false,
+    "bundle": false
   }
 }
