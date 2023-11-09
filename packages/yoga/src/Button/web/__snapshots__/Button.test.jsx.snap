@@ -1076,6 +1076,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -1125,15 +1134,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -1405,6 +1405,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -1454,15 +1463,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -2429,6 +2429,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -2478,15 +2487,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -2747,6 +2747,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -2796,15 +2805,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -3988,6 +3988,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -4037,15 +4046,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -4306,6 +4306,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -4355,15 +4364,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -5743,6 +5743,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -5828,15 +5837,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -6173,6 +6173,15 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -6258,15 +6267,6 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -7348,6 +7348,15 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -7397,15 +7406,6 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -8664,6 +8664,15 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -8713,15 +8722,6 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -9959,6 +9959,15 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -10008,15 +10017,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -10288,6 +10288,15 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -10337,15 +10346,6 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -11312,6 +11312,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -11361,15 +11370,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -11630,6 +11630,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -11679,15 +11688,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -13067,6 +13067,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -13152,15 +13161,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -13497,6 +13497,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -13582,15 +13591,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -15023,6 +15023,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -15072,15 +15081,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -15341,6 +15341,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -15390,15 +15399,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -16825,6 +16825,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -16874,15 +16883,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
@@ -17143,6 +17143,15 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   stroke: #6B6B78;
 }
 
+.c2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
 .c1 {
   background-color: transparent;
   border: 1px solid;
@@ -17192,15 +17201,6 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled svg {
   fill: transparent;
-}
-
-.c2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
 }
 
 <div>
