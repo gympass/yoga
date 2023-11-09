@@ -1,10 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
-import { Box, Checkbox, Text } from '@gympass/yoga';
 import { Img2d01 } from '@gympass/yoga-illustrations';
 import { Dumbbell, User, Star } from '@gympass/yoga-icons';
+import { Box, Checkbox, Text, ThemeProvider } from '../..';
 
-import { ThemeProvider } from '../..';
 import ActionRequirement from './ActionRequirement';
 
 function handleGetCheckableContent() {

@@ -1,9 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { Text } from '@gympass/yoga';
 import { Dumbbell, User, Star } from '@gympass/yoga-icons';
+import { Text, ThemeProvider } from '../..';
 import ActionRequirement from './ActionRequirement';
-import { ThemeProvider } from '../..';
 
 function handleGetList() {
   return (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { bool, node, number, oneOf, string } from 'prop-types';
 
-import { Text } from '@gympass/yoga';
+import { Text } from '../..';
 import { useCombinedRefs } from '../../hooks';
 
 import { PopoverContainer, PopoverButton, Wrapper } from './styles';

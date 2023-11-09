@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { Icon, Text, Box } from '@gympass/yoga';
 import { ChevronLeft, ChevronRight } from '@gympass/yoga-icons';
 import { oneOf, func, instanceOf, bool } from 'prop-types';
 import _ from 'lodash';
+import { Icon, Text, Box } from '../..';
 
 const CalendarWrapper = styled.div`
   ${({

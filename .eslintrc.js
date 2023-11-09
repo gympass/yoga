@@ -18,7 +18,14 @@ module.exports = {
     'import/extensions': 0,
     'react/jsx-props-no-spreading': 'off',
     'react/prop-types': [2, { ignore: ['theme'] }],
-    'import/no-extraneous-dependencies': 0,
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: false,
+        optionalDependencies: false,
+        peerDependencies: true,
+      },
+    ],
     'no-plusplus': 0,
     'no-restricted-globals': 0,
     'padding-line-between-statements': [
