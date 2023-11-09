@@ -4,6 +4,13 @@ import styled from 'styled-components';
 import StyledButton from './StyledButton';
 import Spinner from '../../Spinner';
 
+const SpinnerContainer = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
 /** Buttons make common actions more obvious and help users more easily perform them. Buttons use labels and sometimes icons to communicate the action that will occur when the user touches them. */
 const Button = forwardRef(
   (
@@ -21,13 +28,6 @@ const Button = forwardRef(
     },
     ref,
   ) => {
-    const SpinnerContainer = styled.div`
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    `;
-
     const finalProps = {
       ...props,
     };
