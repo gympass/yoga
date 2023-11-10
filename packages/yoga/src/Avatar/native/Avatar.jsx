@@ -1,11 +1,24 @@
 import React, { forwardRef } from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
-import { string, func } from 'prop-types';
+import { string, func, number } from 'prop-types';
 import { ImagePropTypes } from 'deprecated-react-native-prop-types';
-import { Image } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 
+import styled from 'styled-components';
+import { hexToRgb } from '@gympass/yoga-common';
 import Box from '../../Box';
 import Icon from '../../Icon';
+
+const BORDER_WIDTH = StyleSheet.hairlineWidth;
+const BORDER_OPACITY = 0.25;
+
+const Contain = styled(Box).attrs(({ theme: { yoga } }) => {
+  return {
+    bgColor: hexToRgb(yoga.colors.secondary, BORDER_OPACITY),
+  };
+})`
+  padding: ${BORDER_WIDTH}px;
+`;
 
 const Content = ({ icon, src, fill, content, stroke }) => {
   if (src) {
@@ -26,29 +39,51 @@ const Content = ({ icon, src, fill, content, stroke }) => {
  * It has two shapes: default and circle
  */
 const Avatar = forwardRef(
-  ({ icon = BuildingFilled, src, children, fill, stroke, ...props }, ref) => {
+  (
+    {
+      icon = BuildingFilled,
+      src,
+      children,
+      fill,
+      stroke,
+      borderRadius,
+      width,
+      height,
+      ...props
+    },
+    ref,
+  ) => {
     return (
-      <Box
-        ref={ref}
-        bgColor="elements.selectionAndIcons"
+      <Contain
+        width={width}
+        height={height}
+        borderRadius={borderRadius}
         display="flex"
         alignItems="center"
         justifyContent="center"
-        width={48}
-        height={48}
-        borderRadius="small"
-        elevation="small"
         overflow="hidden"
-        {...props}
       >
-        <Content
-          icon={icon}
-          src={src}
-          fill={fill}
-          stroke={stroke}
-          content={children}
-        />
-      </Box>
+        <Box
+          ref={ref}
+          bgColor="elements.selectionAndIcons"
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          width="100%"
+          height="100%"
+          overflow="hidden"
+          borderRadius={borderRadius}
+          {...props}
+        >
+          <Content
+            icon={icon}
+            src={src}
+            fill={fill}
+            stroke={stroke}
+            content={children}
+          />
+        </Box>
+      </Contain>
     );
   },
 );
@@ -70,12 +105,18 @@ Avatar.propTypes = {
   src: ImagePropTypes.source,
   icon: func,
   fill: string,
+  width: number,
+  height: number,
+  borderRadius: string,
   ...Box.propTypes,
 };
 
 Avatar.defaultProps = {
   src: undefined,
   fill: 'white',
+  width: 48,
+  height: 48,
+  borderRadius: 'small',
   ...Box.defaultProps,
 };
 

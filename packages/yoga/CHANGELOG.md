@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.85.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.85.0...@gympass/yoga@7.85.1) (2023-11-07)
+
+
+### Bug Fixes
+
+* **avatar-native:** add propTypes and defaultProps to avatar native ([be77d18](https://github.com/Gympass/yoga/commit/be77d18dca704a8b951f3eb6032d4bfc586b93bb))
+
+
+
+
+
+# [7.85.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.84.3...@gympass/yoga@7.85.0) (2023-10-24)
+
+
+### Bug Fixes
+
+* **avatar:** border was not rendered correctly ([339656b](https://github.com/Gympass/yoga/commit/339656befe552173a2129431c8aa7bbe873a0404))
+* **avatar:** change default color bg ([d1d1091](https://github.com/Gympass/yoga/commit/d1d1091ba7faf8cc5c450299bf320b4b70fa8966))
+* **Avatar:** change position default values ([e2f58eb](https://github.com/Gympass/yoga/commit/e2f58eb89522f57a1245f6f78b83f89342371018))
+
+
+### Features
+
+* **avatar:** add border in avatar ([5c8e8a0](https://github.com/Gympass/yoga/commit/5c8e8a09ce0e76f6c76b21aaf25e83713923afd4))
+
+
+
+
+
 ## [7.84.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.84.2...@gympass/yoga@7.84.3) (2023-10-10)
 
 **Note:** Version bump only for package @gympass/yoga
