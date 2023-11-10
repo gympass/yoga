@@ -93,7 +93,7 @@ const commonSizes = [
 
 Spinner.propTypes = {
   size: oneOfType([oneOf(commonSizes), string, number]),
-  color: String,
+  color: string,
 };
 
 Spinner.defaultProps = {
