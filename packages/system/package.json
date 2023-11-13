@@ -41,8 +41,8 @@
   },
   "tsup": {
     "entry": [
-      "types/index.ts",
-      "types/**/*.ts"
+      "src/index.ts",
+      "src/**/*.ts"
     ],
     "splitting": false,
     "bundle": false
