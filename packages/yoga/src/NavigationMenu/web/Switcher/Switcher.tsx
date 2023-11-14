@@ -1,8 +1,62 @@
 import React from 'react';
+import styled, { css } from 'styled-components';
 import { Text, Skeleton } from '@gympass/yoga';
+import get from 'lodash.get';
 import Actions from './Actions';
+import Box from '../../../Box';
 
-import * as Styles from './Switcher.styles';
+const StyledSwitcher = styled(Box)`
+  ${({
+    fill,
+    theme: {
+      yoga: {
+        colors,
+        components: {
+          navigationmenu: { border, gap, height, padding, width },
+        },
+      },
+    },
+  }) =>
+    css`
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      gap: ${gap.xxsmall}px;
+      padding: ${padding.xsmall}px;
+      background-color: ${get(colors, fill, fill)}};
+      border-radius: ${border.radius.default}px;
+
+      > div:first-child {
+        height: ${height.xlarge}px;
+        width: ${width.xlarge}px;
+      }
+    `}
+`;
+
+const StyledTextContainer = styled(Box)`
+  flex: 1;
+  overflow: hidden;
+`;
+
+const StyledTitle = styled(Text.Small)`
+  ${({
+    theme: {
+      yoga: {
+        components: {
+          navigationmenu: { font },
+        },
+      },
+    },
+  }) =>
+    css`
+      font-weight: ${font.weight.medium};
+      flex: 1;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    `}
+`;
 
 export type SwitcherActionsProps = {
   id: string;
@@ -30,19 +84,19 @@ const Switcher = ({
   const hasActions = actions?.length;
 
   return (
-    <Styles.Switcher fill={fill}>
+    <StyledSwitcher fill={fill}>
       {Avatar}
 
-      <Styles.TextContainer>
-        <Styles.Text>
+      <StyledTextContainer>
+        <StyledTitle>
           {title || <Skeleton type="text" variant="body2" width="100%" />}
-        </Styles.Text>
+        </StyledTitle>
 
         <Text.Tiny color="deep">{subtitle}</Text.Tiny>
-      </Styles.TextContainer>
+      </StyledTextContainer>
 
       {hasActions && <Actions actions={actions} sideOffset={sideOffset} />}
-    </Styles.Switcher>
+    </StyledSwitcher>
   );
 };
 

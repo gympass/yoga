@@ -1,2 +1,5 @@
-declare module '@gympass/yoga';
-declare module '@gympass/yoga-icons';
+declare module '@gympass/yoga' {
+  const Text = { Small, Tiny };
+
+  export { Skeleton, Text, Menu };
+}

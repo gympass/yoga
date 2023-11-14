@@ -1,9 +1,38 @@
 import React from 'react';
-import { Icon, Menu as YogaMenu } from '@gympass/yoga';
+import styled, { css } from 'styled-components';
 import { MenuMore } from '@gympass/yoga-icons';
+import { Menu as YogaMenu } from '@gympass/yoga';
 import { SwitcherActionsProps } from './Switcher';
+import Icon from '../../../Icon';
+import Box from '../../../Box';
 
-import * as Styles from './Actions.styles';
+const StyledAction = styled(Box)`
+  ${({
+    theme: {
+      yoga: {
+        components: {
+          navigationmenu: { backgroundColor, border, height, width },
+        },
+      },
+    },
+  }) =>
+    css`
+      transition: background-color 300ms ease-in-out;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: ${width.xxlarge}px;
+      height: ${height.xxlarge}px;
+      border-radius: ${border.radius.circle}px;
+
+      :hover,
+      &:focus {
+        cursor: pointer;
+        background-color: ${backgroundColor.hover};
+      }
+    `}
+`;
 
 type ActionsProps = {
   actions: SwitcherActionsProps[];
@@ -14,9 +43,9 @@ const Actions = ({ actions, sideOffset }: ActionsProps) => {
   return (
     <YogaMenu onMouseHover={false}>
       <YogaMenu.Action>
-        <Styles.Action>
+        <StyledAction>
           <Icon as={MenuMore} size="medium" fill="vibin" />
-        </Styles.Action>
+        </StyledAction>
       </YogaMenu.Action>
 
       <YogaMenu.List side="right" sideOffset={sideOffset} zIndex="10">

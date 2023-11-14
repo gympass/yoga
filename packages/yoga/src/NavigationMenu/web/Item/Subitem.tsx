@@ -10,13 +10,13 @@ export type SubitemProps = {
 
 const Subitem = ({ active = false, label, wrapper: Wrapper }: SubitemProps) => {
   return (
-    <Styles.Item isActive={active}>
+    <Styles.StyledItem isActive={active}>
       <Wrapper>
-        <Styles.TextContainer isSubItem>
-          <Styles.Text>{label}</Styles.Text>
-        </Styles.TextContainer>
+        <Styles.StyledTextContainer isSubItem>
+          <Styles.StyledText>{label}</Styles.StyledText>
+        </Styles.StyledTextContainer>
       </Wrapper>
-    </Styles.Item>
+    </Styles.StyledItem>
   );
 };
 

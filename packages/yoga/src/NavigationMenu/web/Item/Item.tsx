@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon } from '@gympass/yoga';
+import Icon from '../../../Icon';
 
 import * as Styles from './styles';
 
@@ -26,17 +26,17 @@ const Item = ({
 }: ItemProps) => {
   return (
     <>
-      <Styles.Item isActive={active} isResponsive={responsive}>
+      <Styles.StyledItem isActive={active} isResponsive={responsive}>
         <Wrapper>
-          <Styles.TextContainer>
+          <Styles.StyledTextContainer>
             {Icon}
 
-            <Styles.Text>{label}</Styles.Text>
+            <Styles.StyledText>{label}</Styles.StyledText>
 
-            {tag && <Styles.Tag>{tag}</Styles.Tag>}
-          </Styles.TextContainer>
+            {tag && <Styles.StyledTag>{tag}</Styles.StyledTag>}
+          </Styles.StyledTextContainer>
         </Wrapper>
-      </Styles.Item>
+      </Styles.StyledItem>
       {expanded && children}
     </>
   );
