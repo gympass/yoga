@@ -2,8 +2,8 @@
   "name": "@gympass/yoga",
   "version": "7.87.1",
   "description": "Gympass component library",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "./src",
+  "types": "./src",
   "sideEffects": false,
   "scripts": {
     "build": "yarn build:types && yarn build:web && yarn build:esm && yarn build:native",
