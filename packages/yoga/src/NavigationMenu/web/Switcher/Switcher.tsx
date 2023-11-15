@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { Text, Skeleton } from '@gympass/yoga';
-import get from 'lodash.get';
 import Actions from './Actions';
 import Box from '../../../Box';
 

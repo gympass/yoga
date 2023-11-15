@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { Help, Doc, MenuMore } from '@gympass/yoga-icons';
 import ThemeProvider from '../../Theme';
-import Avatar from '../../Avatar';
+import AvatarCircle from '../../Avatar/web/AvatarCircle';
 import Icon from '../../Icon';
 
 import NavigationMenu from './NavigationMenu';
@@ -68,7 +68,7 @@ describe('<NavigationMenu />', () => {
           >
             <NavigationMenu.Header>
               <NavigationMenu.Menu
-                avatar={<Avatar.Circle />}
+                avatar={<AvatarCircle />}
                 title="Company"
                 subtitle="Reseller"
               />
@@ -103,7 +103,7 @@ describe('<NavigationMenu />', () => {
 
             <NavigationMenu.Footer>
               <NavigationMenu.Switcher
-                avatar={<Avatar.Circle />}
+                avatar={<AvatarCircle />}
                 title="User"
                 subtitle="Admin, Supervisor"
               />
@@ -133,7 +133,7 @@ describe('<NavigationMenu />', () => {
           <NavigationMenu responsive={false}>
             <NavigationMenu.Header>
               <NavigationMenu.Menu
-                avatar={<Avatar.Circle />}
+                avatar={<AvatarCircle />}
                 title="Company"
                 subtitle="Reseller"
                 onClick={() => null}
@@ -166,7 +166,7 @@ describe('<NavigationMenu />', () => {
             <NavigationMenu.Footer>
               <NavigationMenu.Switcher
                 actions={actions}
-                avatar={<Avatar.Circle />}
+                avatar={<AvatarCircle />}
                 sideOffset={36}
                 subtitle="Admin, Supervisor"
                 title="User"
