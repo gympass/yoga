@@ -1,7 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { ThemeProvider, Avatar, Icon } from '@gympass/yoga';
 import { Help, Doc, MenuMore } from '@gympass/yoga-icons';
+import ThemeProvider from '../../Theme';
+import Avatar from '../../Avatar';
+import Icon from '../../Icon';
 
 import NavigationMenu from './NavigationMenu';
 

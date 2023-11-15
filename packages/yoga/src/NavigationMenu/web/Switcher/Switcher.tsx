@@ -24,7 +24,7 @@ const StyledSwitcher = styled(Box)`
       width: 100%;
       gap: ${gap.xxsmall}px;
       padding: ${padding.xsmall}px;
-      background-color: ${get(colors, fill, fill)}};
+      background-color: ${colors[fill]};
       border-radius: ${border.radius.default}px;
 
       > div:first-child {
