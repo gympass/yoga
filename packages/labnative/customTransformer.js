@@ -1,5 +1,5 @@
 const reactNativeSvgTransformer = require('react-native-svg-transformer');
-// eslint-disable-next-line import/no-extraneous-dependencies
+
 const upstreamTransformer = require('metro-react-native-babel-transformer');
 
 module.exports.transform = function customSVGTransformer({
