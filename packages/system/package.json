@@ -9,8 +9,8 @@
   ],
   "homepage": "https://gympass.github.io/yoga/",
   "license": "MIT",
-  "main": "src/index.ts",
-  "types": "src/types/index.ts",
+  "main": "./src",
+  "types": "./src",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gympass/yoga.git"
@@ -42,7 +42,8 @@
   "tsup": {
     "entry": [
       "src/index.ts",
-      "src/**/*.ts"
+      "src/**/*.ts",
+      "src/**/*.js"
     ],
     "splitting": false,
     "bundle": false
