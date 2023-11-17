@@ -12,10 +12,6 @@
   "homepage": "https://gympass.github.io/yoga/",
   "license": "MIT",
   "main": "src/index.js",
-  "dependencies": {
-    "@gympass/yoga-tokens": "^3.2.0",
-    "styled-components": "^4.4.0"
-  },
   "publishConfig": {
     "access": "public",
     "directory": "dist"
