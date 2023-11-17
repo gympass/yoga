@@ -433,7 +433,7 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   line-height: 40px;
   font-weight: 500;
   font-family: Rubik;
-  color: undefined;
+  color: #FFC24C;
 }
 
 <div>
@@ -720,7 +720,7 @@ exports[`<Text /> Snapshots should match snapshot with typography prop system 1`
   font-weight: 400;
   font-family: Rubik;
   color: #231B22;
-  color: #231B22;
+  color: #D8385E;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -729,7 +729,7 @@ exports[`<Text /> Snapshots should match snapshot with typography prop system 1`
 <div>
   <p
     class="c0"
-    color="text.primary"
+    color="primary"
     font-size="small"
     font-weight="medium"
   >
