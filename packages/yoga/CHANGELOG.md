@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.86.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.85.1...@gympass/yoga@7.86.0) (2023-11-21)
+
+
+### Bug Fixes
+
+* add ref ([aefee2f](https://github.com/Gympass/yoga/commit/aefee2fe109897b97fab69bc8b1ba6a0da7a51ee))
+* fix prop type string ([a044c64](https://github.com/Gympass/yoga/commit/a044c6401868fe1feb8c40551b62e12a93ebb21c))
+
+
+### Features
+
+* new spinner type and fixes ([159309e](https://github.com/Gympass/yoga/commit/159309ed0db84b5db4955b141d58b1dd5b1e89d5))
+
+
+
+
+
 ## [7.85.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.85.0...@gympass/yoga@7.85.1) (2023-11-07)
 
 
