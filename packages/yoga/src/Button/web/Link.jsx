@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { bool, string, oneOfType, node, func } from 'prop-types';
 
 import styled from 'styled-components';
@@ -68,9 +68,17 @@ const Link = styled(Button)`
   }}
 `;
 
-const ButtonLink = ({ disabled, ...props }) => (
-  <Link {...props} disabled={disabled} aria-disabled={disabled} />
-);
+const ButtonLink = forwardRef(({ ...rest }, ref) => {
+  const props = Object.fromEntries(
+    Object.entries(rest).filter(([key]) => key !== 'isLoading'),
+  );
+
+  const { disabled } = props;
+
+  return (
+    <Link {...props} disabled={disabled} aria-disabled={disabled} ref={ref} />
+  );
+});
 
 ButtonLink.propTypes = {
   disabled: bool,

@@ -28,6 +28,7 @@ exports[`<Spinner /> should match snapshot 1`] = `
 
 <div>
   <span
+    aria-label="loading-icon"
     class="c0"
     color="#D7D7E0"
     size="56"

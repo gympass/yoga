@@ -14,6 +14,14 @@ You can use all differente compounds like `<Button.Outline />` and `<Button.Text
 </Box>
 ```
 
+#### Inverted
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
+  <Button inverted>Find an activity</Button>
+  <Button secondary inverted>Find an activity</Button>
+</Box>
+```
+
 #### As an anchor
 
 ```javascript
@@ -33,6 +41,31 @@ You can use all differente compounds like `<Button.Outline />` and `<Button.Text
     Find an activity
   </Button>
 </Box>
+```
+
+#### With Loading
+
+```javascript state
+render(() => {
+  const [loading, setLoading] = useState(true);
+  const onChange = () => setLoading(!loading);
+
+  return (
+    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="start" width="auto" gap="medium">
+      <Box>
+        <Text>Loading</Text>
+        <Checkbox.Switch checked={loading} onChange={onChange} />
+      </Box>
+
+      <Box display="flex" gap="medium">
+        <Button isLoading={loading}>Find an activity</Button>
+        <Button icon={Booking} inverted isLoading={loading}>Find an activity</Button>
+        <Button icon={Booking} secondary isLoading={loading}>Find an activity</Button>
+        <Button secondary inverted isLoading={loading}>Find an activity</Button>
+      </Box>
+    </Box>
+  );
+});
 ```
 
 ### Props

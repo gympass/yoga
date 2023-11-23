@@ -7,6 +7,7 @@ const ButtonOutline = styled(Button)`
   ${({
     inverted,
     secondary,
+    isLoading,
     theme: {
       yoga: {
         colors: { white },
@@ -55,7 +56,7 @@ const ButtonOutline = styled(Button)`
         border-color: ${outline.font.disabled.color};
         color: ${outline.font.disabled.color};
 
-        svg {
+         svg {
           fill: ${outline.font.disabled.color};
         }
       }
@@ -97,6 +98,20 @@ const ButtonOutline = styled(Button)`
               }
             }
           `
+          : ''
+      }
+
+      ${
+        isLoading
+          ? `
+            &:disabled {
+              color: transparent;
+
+              svg {
+                fill: transparent;
+              }
+            }
+            `
           : ''
       }
     `;

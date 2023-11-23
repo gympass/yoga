@@ -14,6 +14,7 @@ const StyledButton = styled.button`
     inverted,
     secondary,
     disabled,
+    isLoading,
     theme: {
       yoga: {
         baseFont,
@@ -95,7 +96,6 @@ const StyledButton = styled.button`
       `
           : ''
       }
-      
 
       ${
         inverted
@@ -126,6 +126,25 @@ const StyledButton = styled.button`
           )};
         }
       `
+          : ''
+      }
+
+      ${
+        isLoading
+          ? `
+            position: relative;
+            color: transparent;
+            `
+          : ''
+      }
+
+      ${
+        (isLoading && inverted) || (isLoading && disabled)
+          ? `
+          svg {
+            fill: transparent;
+          }
+            `
           : ''
       }
     `;

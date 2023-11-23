@@ -1,9 +1,11 @@
+import React, { forwardRef } from 'react';
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
+import { bool } from 'prop-types';
 
 import Button from './Button';
 
-const ButtonText = styled(Button)`
+const StyledButton = styled(Button)`
   ${({
     secondary,
     inverted,
@@ -80,6 +82,33 @@ const ButtonText = styled(Button)`
     `;
   }}
 `;
+
+const ButtonText = forwardRef(({ ...rest }, ref) => {
+  const props = Object.fromEntries(
+    Object.entries(rest).filter(([key]) => key !== 'isLoading'),
+  );
+
+  const { secondary, inverted } = props;
+
+  return (
+    <StyledButton
+      {...props}
+      secondary={secondary}
+      inverted={inverted}
+      ref={ref}
+    />
+  );
+});
+
+ButtonText.propTypes = {
+  inverted: bool,
+  secondary: bool,
+};
+
+ButtonText.defaultProps = {
+  inverted: false,
+  secondary: false,
+};
 
 ButtonText.displayName = 'Button.Text';
 

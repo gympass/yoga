@@ -23,6 +23,33 @@
 </Box>
 ```
 
+#### With Loading
+
+```javascript state
+render(() => {
+  const [loading, setLoading] = useState(true);
+  const onChange = () => setLoading(!loading);
+
+  return (
+    <Box display="flex" flexDirection="column" justifyContent="center" alignItems="start" width="auto" gap="large">
+      <Box>
+        <Text>Loading</Text>
+        <Checkbox.Switch checked={loading} onChange={onChange} />
+      </Box>
+
+      <Box display="flex" justifyContent="center" alignItems="center" gap="xxxlarge">
+        <Button.Icon icon={Booking} isLoading={loading} />
+        <Button.Icon icon={Edit} secondary isLoading={loading} />
+        <Button.Icon icon={Add} small isLoading={loading} />
+        <Button.Icon icon={Check} small secondary isLoading={loading} />
+        <Button.Icon icon={ChevronLeft} inverted isLoading={loading} />
+        <Button.Icon icon={Close} inverted secondary isLoading={loading} />
+      </Box>
+    </Box>
+  );
+});
+```
+
 ### Props
 
 <PropsTable component="Button.Icon" platform="web" />
