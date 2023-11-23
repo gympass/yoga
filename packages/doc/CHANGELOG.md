@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.42.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.41.9...@gympass/yoga-doc@2.42.0) (2023-11-23)
+
+
+### Features
+
+* **button-loading:** adjust spinner ([55911ce](https://github.com/gympass/yoga/commit/55911ce382e37b0579b35398666ff312960e3fe2))
+
+
+
+
+
 ## [2.41.9](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.41.8...@gympass/yoga-doc@2.41.9) (2023-11-21)
 
 **Note:** Version bump only for package @gympass/yoga-doc

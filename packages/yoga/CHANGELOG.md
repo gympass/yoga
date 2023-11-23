@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.87.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.86.0...@gympass/yoga@7.87.0) (2023-11-23)
+
+
+### Bug Fixes
+
+* **button-loading:** update snapshot ([a4f5cf6](https://github.com/Gympass/yoga/commit/a4f5cf6e8ade2d416331a18c36343fe919c0639c))
+
+
+### Features
+
+* **button-loading:** add ref ([270ed60](https://github.com/Gympass/yoga/commit/270ed60117380cd900d7f16e29b41ba08feb509a))
+* **button-loading:** adjust spinner ([55911ce](https://github.com/Gympass/yoga/commit/55911ce382e37b0579b35398666ff312960e3fe2))
+* **button:** add button loading component ([ca340ef](https://github.com/Gympass/yoga/commit/ca340ef54f502cd92ed4901102dab17c6dc66942))
+* **button:** add isLoading prop ([44ac7f8](https://github.com/Gympass/yoga/commit/44ac7f8e6cea467a900d1bb3a1dbfa4166c9944c))
+* **button:** add loading struture ([429b733](https://github.com/Gympass/yoga/commit/429b73354ea245a756078f86b3280230577d7860))
+* **button:** add outline and icon button ([a616010](https://github.com/Gympass/yoga/commit/a616010aa5b811250dae906fb7a098d6dcd66855))
+* **button:** add ref ([3449f6e](https://github.com/Gympass/yoga/commit/3449f6e1495783eb2d25a1fed1ac202aad648849))
+* **button:** add spinner ([8a74705](https://github.com/Gympass/yoga/commit/8a7470522b695700c34029ca9cd37273e93328c1))
+
+
+
+
+
 # [7.86.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.85.1...@gympass/yoga@7.86.0) (2023-11-21)
 
 
