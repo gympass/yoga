@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.87.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.87.0...@gympass/yoga@7.87.1) (2023-11-24)
+
+
+### Bug Fixes
+
+* **Avatar:** fix snapshots avatar ([064415a](https://github.com/Gympass/yoga/commit/064415a2508dc9eb61a6c7166c9b321bca03dee7))
+* **explore:** add border internal ([21fca8e](https://github.com/Gympass/yoga/commit/21fca8e35dc15815783f0c92057e3dce6aa5ba39))
+
+
+
+
+
 # [7.87.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.86.0...@gympass/yoga@7.87.0) (2023-11-23)
 
 
