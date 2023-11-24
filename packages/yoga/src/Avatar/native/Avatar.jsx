@@ -2,22 +2,23 @@ import React, { forwardRef } from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
 import { string, func, number } from 'prop-types';
 import { ImagePropTypes } from 'deprecated-react-native-prop-types';
-import { Image, StyleSheet } from 'react-native';
+import { Image } from 'react-native';
 
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
 import Box from '../../Box';
 import Icon from '../../Icon';
 
-const BORDER_WIDTH = StyleSheet.hairlineWidth;
+const BORDER_WIDTH = 1;
 const BORDER_OPACITY = 0.25;
 
-const Contain = styled(Box).attrs(({ theme: { yoga } }) => {
+const BorderImage = styled(Box).attrs(({ theme: { yoga } }) => {
   return {
-    bgColor: hexToRgb(yoga.colors.secondary, BORDER_OPACITY),
+    borderColor: hexToRgb(yoga.colors.secondary, BORDER_OPACITY),
+    borderWidth: BORDER_WIDTH,
   };
 })`
-  padding: ${BORDER_WIDTH}px;
+  position: absolute;
 `;
 
 const Content = ({ icon, src, fill, content, stroke }) => {
@@ -54,36 +55,27 @@ const Avatar = forwardRef(
     ref,
   ) => {
     return (
-      <Contain
-        width={width}
-        height={height}
-        borderRadius={borderRadius}
+      <Box
+        ref={ref}
+        bgColor="elements.selectionAndIcons"
         display="flex"
         alignItems="center"
         justifyContent="center"
+        width={width}
+        height={height}
         overflow="hidden"
+        borderRadius={borderRadius}
+        {...props}
       >
-        <Box
-          ref={ref}
-          bgColor="elements.selectionAndIcons"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          width="100%"
-          height="100%"
-          overflow="hidden"
-          borderRadius={borderRadius}
-          {...props}
-        >
-          <Content
-            icon={icon}
-            src={src}
-            fill={fill}
-            stroke={stroke}
-            content={children}
-          />
-        </Box>
-      </Contain>
+        <Content
+          icon={icon}
+          src={src}
+          fill={fill}
+          stroke={stroke}
+          content={children}
+        />
+        <BorderImage width="100%" height="100%" borderRadius={borderRadius} />
+      </Box>
     );
   },
 );
