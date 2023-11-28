@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import { string, node, bool } from 'prop-types';
 import { ChevronDown } from '@gympass/yoga-icons';
-import { Text, Divider } from '@gympass/yoga';
+import { Text, Divider } from '../..';
 import Content from './Content';
 
 const AccordionWrapper = styled.div`

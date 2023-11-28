@@ -1,4 +1,5 @@
 const reactNativeSvgTransformer = require('react-native-svg-transformer');
+
 const upstreamTransformer = require('metro-react-native-babel-transformer');
 
 module.exports.transform = function customSVGTransformer({

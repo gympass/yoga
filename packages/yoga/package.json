@@ -3,12 +3,14 @@
   "version": "7.87.1",
   "description": "Gympass component library",
   "main": "./src",
+  "types": "./src",
   "sideEffects": false,
   "scripts": {
-    "build": "yarn build:web && yarn build:native && yarn build:esm",
-    "build:web": "NODE_ENV=web babel ./src --out-dir dist/cjs",
-    "build:esm": "NODE_ENV=esm babel ./src --out-dir dist/esm",
-    "build:native": "NODE_ENV=native babel ./src --out-dir dist/cjs",
+    "build": "yarn build:types && yarn build:web && yarn build:esm && yarn build:native",
+    "build:types": "tsup --outDir dist/typings --dts-only",
+    "build:web": "tsup src/**/web !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
+    "build:esm": "tsup src/**/web !**/*.test.jsx.snap !**/*.test.tsx.snap --format=esm --legacy-output",
+    "build:native": "tsup src/**/native !**/*.test.jsx.snap !**/*.test.tsx.snap --outDir dist/cjs --format=cjs",
     "prebuild": "rm -rf ./dist",
     "postbuild": "cp -r ./src/Fonts ./dist/fonts",
     "prepublishOnly": "node ../../scripts/prepublish.js --rn"
@@ -63,5 +65,14 @@
     "react": ">=16",
     "react-native": "0.72.3",
     "styled-components": "^4.4.0"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts",
+      "src/**/*.ts",
+      "!src/**/*.d.ts"
+    ],
+    "splitting": false,
+    "bundle": false
   }
 }

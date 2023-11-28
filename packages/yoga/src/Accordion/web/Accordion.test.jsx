@@ -5,8 +5,7 @@ import {
   fontWeights,
   spacing,
 } from '@gympass/yoga-tokens/src/global';
-import { Text, Button } from '@gympass/yoga';
-import { ThemeProvider } from '../..';
+import { Text, Button, ThemeProvider } from '../..';
 
 import Accordion from '.';
 
