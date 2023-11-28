@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.88.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.87.1...@gympass/yoga@7.88.0) (2023-11-28)
+
+
+### Bug Fixes
+
+* **build:** adjust path to esm build and remove d.ts files on building ([7fae60a](https://github.com/Gympass/yoga/commit/7fae60a7c1ee784b4ff41037abec842fcf9fe3d6))
+
+
+### Features
+
+* add jsx:react-jsx and yoga.d.ts ([978020f](https://github.com/Gympass/yoga/commit/978020f570830172a4534f04d4535d6bc1cd3f81))
+* **yoga:** add config to add typescript environment ([ea2a251](https://github.com/Gympass/yoga/commit/ea2a251ab475fd61f4b6dda95606d71e42da5927))
+* **yoga:** add typescript envinroment to native ([ada7e10](https://github.com/Gympass/yoga/commit/ada7e1078048f1243a70bd3c674ce8941d11a562))
+
+
+
+
+
 ## [7.87.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.87.0...@gympass/yoga@7.87.1) (2023-11-24)
 
 
