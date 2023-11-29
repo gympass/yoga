@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.88.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.88.0...@gympass/yoga@7.88.1) (2023-11-29)
+
+
+### Bug Fixes
+
+* **build:** build index.ts and index.native.js ([acbcbab](https://github.com/Gympass/yoga/commit/acbcbab2f83c14f89c9be44a519933b4d42bd6cf))
+
+
+
+
+
 # [7.88.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.87.1...@gympass/yoga@7.88.0) (2023-11-28)
 
 
