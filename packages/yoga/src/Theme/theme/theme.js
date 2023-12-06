@@ -1,12 +1,12 @@
 /* eslint-disable prefer-destructuring */
 import { merge } from '@gympass/yoga-common';
-import * as componentThemes from '../../**/*.theme.js';
+import componentThemes from './componentThemes';
 
 const getComponentThemes = tokens => {
   const { colors, baseFont, baseFontSize } = tokens;
   const components = Object.entries(componentThemes).reduce(
     (componentsStyles, [names, themed]) => {
-      const [, name] = names.toLowerCase().split('$');
+      const name = names.toLowerCase();
 
       return {
         ...componentsStyles,
