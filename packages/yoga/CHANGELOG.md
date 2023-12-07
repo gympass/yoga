@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.88.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.88.1...@gympass/yoga@7.88.2) (2023-12-07)
+
+
+### Bug Fixes
+
+* **theme:** add all components theme.js path and adjust const name ([3869c0c](https://github.com/Gympass/yoga/commit/3869c0ce2e55c0dcaf90cc037e3c58cd33e25098))
+
+
+
+
+
 ## [7.88.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.88.0...@gympass/yoga@7.88.1) (2023-11-29)
 
 
