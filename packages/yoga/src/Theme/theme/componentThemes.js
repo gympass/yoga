@@ -36,6 +36,7 @@ import Stepper from '../../Stepper/Stepper.theme.js';
 import Tag from '../../Tag/Tag.theme.js';
 import Text from '../../Text/Text.theme.js';
 import TextArea from '../../TextArea/TextArea.theme.js';
+import NavigationMenu from '../../NavigationMenu/NavigationMenu.theme';
 
 const componentThemes = {
   Accordion,
@@ -76,6 +77,7 @@ const componentThemes = {
   Tag,
   Text,
   TextArea,
+  NavigationMenu,
 };
 
 export default componentThemes;

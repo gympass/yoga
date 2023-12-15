@@ -88,5 +88,6 @@ export {
   Skeleton,
   ActionRequirement,
   Popover,
+  Spinner,
   NavigationMenu,
 };
