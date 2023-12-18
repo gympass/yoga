@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as Styles from './styles';
 
-export type SubitemProps = {
+type SubitemProps = {
   active?: boolean;
   label: string;
   wrapper: React.FunctionComponent<any>;

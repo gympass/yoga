@@ -3,7 +3,7 @@ import Icon from '../../../Icon';
 
 import * as Styles from './styles';
 
-export type ItemProps = {
+type ItemProps = {
   active?: boolean;
   children?: React.ReactNode;
   expanded?: boolean;

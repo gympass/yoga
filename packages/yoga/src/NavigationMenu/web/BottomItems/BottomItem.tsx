@@ -128,7 +128,7 @@ const StyledTextContainer = styled(Box)`
     `}
 `;
 
-export type BottomItemProps = {
+type BottomItemProps = {
   active?: boolean;
   icon?: React.ReactNode;
   label: string;

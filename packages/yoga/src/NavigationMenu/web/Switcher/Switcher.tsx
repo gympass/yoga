@@ -57,13 +57,13 @@ const StyledTitle = styled(Text.Small)`
     `}
 `;
 
-export type SwitcherActionsProps = {
+type SwitcherActionsProps = {
   id: string;
   label: string;
   onClick: () => void;
 };
 
-export type SwitcherProps = {
+type SwitcherProps = {
   actions?: SwitcherActionsProps[];
   avatar: React.ReactElement;
   fill?: string;

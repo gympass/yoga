@@ -30,7 +30,7 @@ const StyledItems = styled.ul`
   `}
 `;
 
-export type BottomItemsProps = {
+type BottomItemsProps = {
   children: React.ReactNode;
 };
 

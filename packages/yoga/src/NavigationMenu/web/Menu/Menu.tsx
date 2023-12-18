@@ -70,7 +70,7 @@ const StyledText = styled(Text.Small)`
   }
 `;
 
-export type MenuProps = {
+type MenuProps = {
   avatar: React.ReactElement;
   subtitle?: string;
   title: string;
