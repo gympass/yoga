@@ -1,5 +1,5 @@
 import { CodeBlock } from './CodeBlock';
-import PropsTable from './PropsTable';
+import PropsTable, { Table } from './PropsTable';
 import Header from './Header';
 import * as Home from './Home';
 import InlineCode from './InlineCode';
@@ -24,6 +24,7 @@ export {
   Navigation,
   Summary,
   PropsTable,
+  Table,
   Documentation,
   Dropdown,
   TabbedView,

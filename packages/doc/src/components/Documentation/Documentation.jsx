@@ -13,6 +13,7 @@ import * as system from '@gympass/yoga-system';
 import {
   CodeBlock,
   PropsTable,
+  Table,
   InlineCode,
   TabbedView,
   Tab,
@@ -58,6 +59,7 @@ const customComponents = prefix => ({
   TabbedView: props => <TabbedView {...props} />,
   Tab: props => <Tab {...props} />,
   PropsTable,
+  Table,
   img: props => <Img {...props} prefix={prefix} />,
   Redirect: props => <Redirect {...props} />,
   Tokens: props => <Tokens {...props} />,
@@ -86,6 +88,8 @@ const Wrapper = styled.div`
   min-height: calc(100vh - 140px);
   grid-area: Documentation;
   padding: 30px 0 30px 100px;
+
+  background-color: ${components.theme.colors.clear};
 
   @media (max-width: 900px) {
     min-height: calc(100vh - 130px);

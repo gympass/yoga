@@ -40,6 +40,7 @@ import Skeleton from './Skeleton';
 import ActionRequirement from './ActionRequirement';
 import Popover from './Popover';
 import Spinner from './Spinner';
+import NavigationMenu from './NavigationMenu';
 
 export {
   Accordion,
@@ -88,4 +89,5 @@ export {
   ActionRequirement,
   Popover,
   Spinner,
+  NavigationMenu,
 };

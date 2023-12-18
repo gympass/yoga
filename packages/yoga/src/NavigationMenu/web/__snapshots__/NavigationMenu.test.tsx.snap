@@ -1,0 +1,1357 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
+.c3 {
+  border-radius: 9999px;
+  background-color: #9898A6;
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.c4 {
+  width: 50%;
+  height: 50%;
+}
+
+.c13 {
+  width: 12px;
+  height: 12px;
+}
+
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c27 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c14 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+}
+
+.c17 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  padding: 4px 8px 4px 8px;
+  color: #6B6B78;
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: #9898A6;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.c2 {
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border-radius: 9999px;
+  border: 1px solid #FFFFFF;
+}
+
+.c2 > div:first-child {
+  height: 32px;
+  width: 32px;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-weight: 500;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.c24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.c24 > div:first-child {
+  height: 32px;
+  width: 32px;
+}
+
+.c25 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+
+.c26 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-weight: 500;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.c12 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+  padding: 10px 8px 10px 16px;
+  border-radius: 8px;
+}
+
+.c21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+  padding: 10px 8px 10px 44px;
+  border-radius: 8px;
+}
+
+.c19 {
+  text-transform: uppercase;
+  background-color: #231B22;
+  color: #FFFFFF;
+  border-radius: 9999px;
+}
+
+.c16 {
+  color: #6B6B78;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.c10 {
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  background-color: transparent;
+  border-radius: 8px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.c10 svg {
+  height: 20px;
+  width: 20px;
+}
+
+.c10:hover,
+.c10:focus {
+  background-color: #D7D7E0;
+}
+
+.c10:hover .c15,
+.c10:focus .c15 {
+  color: #231B22;
+}
+
+.c10:hover svg,
+.c10:focus svg {
+  fill: #231B22;
+}
+
+.c10 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10 a.active {
+  cursor: auto;
+}
+
+.c10 a.active > .c11 {
+  background-color: #F5F5FA;
+}
+
+.c10 a.active > .c11 .c15 {
+  color: #D8385E;
+}
+
+.c10 a.active > .c11 svg {
+  fill: #D8385E;
+}
+
+.c10 a.active > .c11 > .c18 {
+  background-color: #231B22;
+}
+
+.c20 {
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  background-color: transparent;
+  border-radius: 8px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.c20 svg {
+  height: 20px;
+  width: 20px;
+}
+
+.c20:hover,
+.c20:focus {
+  background-color: #D7D7E0;
+}
+
+.c20:hover .c15,
+.c20:focus .c15 {
+  color: #231B22;
+}
+
+.c20:hover svg,
+.c20:focus svg {
+  fill: #231B22;
+}
+
+.c20 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c20 a.active {
+  cursor: auto;
+}
+
+.c20 a.active > .c11 {
+  background-color: #F5F5FA;
+  background-color: #FFEEF2;
+}
+
+.c20 a.active > .c11 .c15 {
+  color: #D8385E;
+  font-weight: 500;
+}
+
+.c20 a.active > .c11 svg {
+  fill: #D8385E;
+}
+
+.c20 a.active > .c11 > .c18 {
+  background-color: #231B22;
+}
+
+.c22 {
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  background-color: transparent;
+  border-radius: 8px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.c22 svg {
+  height: 20px;
+  width: 20px;
+}
+
+.c22 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  cursor: auto;
+}
+
+.c22 a.active {
+  cursor: auto;
+}
+
+.c22 a.active > .c11 {
+  background-color: #F5F5FA;
+}
+
+.c22 a.active > .c11 .c15 {
+  color: #D8385E;
+}
+
+.c22 a.active > .c11 svg {
+  fill: #D8385E;
+}
+
+.c22 a.active > .c11 > .c18 {
+  background-color: #231B22;
+}
+
+.c22 a > .c11 {
+  background-color: #F5F5FA;
+}
+
+.c22 a > .c11 .c15 {
+  color: #D8385E;
+}
+
+.c22 a > .c11 svg {
+  fill: #D8385E;
+}
+
+.c22 a > .c11 > .c18 {
+  background-color: #231B22;
+}
+
+.c29 {
+  display: grid;
+  grid-auto-columns: minmax(0,1fr);
+  grid-auto-flow: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 74px;
+  background-color: #F5F5FA;
+  margin: 0;
+  padding: 4px;
+  border: 1px solid #D7D7E0;
+  gap: 4px;
+}
+
+.c33 {
+  color: #6B6B78;
+  max-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.c30 {
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  background-color: transparent;
+  border-radius: 8px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.c30 svg {
+  height: 20px;
+  width: 20px;
+  fill: #6B6B78;
+}
+
+.c30:hover,
+.c30:focus {
+  background-color: #D7D7E0;
+}
+
+.c30:hover .c32,
+.c30:focus .c32 {
+  color: #231B22;
+}
+
+.c30:hover svg,
+.c30:focus svg {
+  fill: #231B22;
+}
+
+.c30 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c30 a.active {
+  cursor: auto;
+}
+
+.c30 a.active:not(:last-child) {
+  pointer-events: none;
+}
+
+.c30 a.active div {
+  background-color: #F5F5FA;
+}
+
+.c30 a.active div .c32 {
+  color: #D8385E;
+}
+
+.c30 a.active div svg {
+  fill: #D8385E;
+}
+
+.c34 {
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  background-color: transparent;
+  border-radius: 8px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.c34 svg {
+  height: 20px;
+  width: 20px;
+  fill: #6B6B78;
+}
+
+.c34 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c34 a.active {
+  cursor: auto;
+}
+
+.c34 a.active:not(:last-child) {
+  pointer-events: none;
+}
+
+.c34 a.active div {
+  background-color: #F5F5FA;
+}
+
+.c34 a.active div .c32 {
+  color: #D8385E;
+}
+
+.c34 a.active div svg {
+  fill: #D8385E;
+}
+
+.c34:not(:last-child) {
+  pointer-events: none;
+}
+
+.c34 div {
+  background-color: #F5F5FA;
+}
+
+.c34 div .c32 {
+  color: #D8385E;
+}
+
+.c34 div svg {
+  fill: #D8385E;
+}
+
+.c31 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 8px 4px;
+  border-radius: 8px;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 12px;
+  background-color: #F5F5FA;
+  width: 280px;
+  height: 100%;
+  right: 0;
+  -webkit-transition: width 300ms ease-in-out;
+  transition: width 300ms ease-in-out;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 0 16px 0;
+  gap: 4px;
+}
+
+.c23 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media (min-width:1024px) {
+  .c10 a.active > .c11 {
+    background-color: #FFEEF2;
+  }
+}
+
+@media (min-width:1024px) {
+  .c10 a.active > .c11 .c15 {
+    font-weight: 500;
+  }
+}
+
+@media (min-width:1024px) {
+  .c22 a.active > .c11 {
+    background-color: #FFEEF2;
+  }
+}
+
+@media (min-width:1024px) {
+  .c22 a.active > .c11 .c15 {
+    font-weight: 500;
+  }
+}
+
+@media (min-width:1024px) {
+  .c22 a > .c11 {
+    background-color: #FFEEF2;
+  }
+}
+
+@media (min-width:1024px) {
+  .c22 a > .c11 .c15 {
+    font-weight: 500;
+  }
+}
+
+@media (min-width:1024px) {
+  .c28 {
+    display: none;
+  }
+}
+
+@media (max-width:1024px) {
+  .c0 {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 74px);
+    z-index: 10;
+    Top: 0;
+    right: -100%;
+    -webkit-transition: right 300ms ease-in-out;
+    transition: right 300ms ease-in-out;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+          display="flex"
+          elevation="small"
+          height="48"
+          overflow="hidden"
+          width="48"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="#FFFFFF"
+            height="50%"
+            width="50%"
+          />
+        </div>
+        <div
+          class="c5"
+        >
+          <p
+            class="c6"
+          >
+            Company
+          </p>
+          <p
+            class="c7"
+            color="deep"
+          >
+            Reseller
+          </p>
+        </div>
+      </div>
+    </div>
+    <nav
+      class="c8"
+    >
+      <ul
+        class="c9"
+      >
+        <li
+          class="c10"
+        >
+          <a
+            href="https://www.gympass.com"
+          >
+            <div
+              class="c11 c12"
+            >
+              <svg
+                aria-hidden="true"
+                class="c13"
+                height="12"
+                width="12"
+              />
+              <p
+                class="c14 c15 c16"
+                font-size="medium"
+              >
+                Subscription
+              </p>
+              <div
+                class="c17 c18 c19"
+              >
+                new
+              </div>
+            </div>
+          </a>
+        </li>
+        <li
+          class="c20"
+        >
+          <a
+            href="https://www.gympass.com"
+          >
+            <div
+              class="c11 c21"
+            >
+              <p
+                class="c14 c15 c16"
+                font-size="medium"
+              >
+                Details
+              </p>
+            </div>
+          </a>
+        </li>
+        <li
+          class="c22"
+        >
+          <a
+            href="https://www.gympass.com"
+          >
+            <div
+              class="c11 c12"
+            >
+              <svg
+                aria-hidden="true"
+                class="c13"
+                height="12"
+                width="12"
+              />
+              <p
+                class="c14 c15 c16"
+                font-size="medium"
+              >
+                Billing
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul
+        class="c9"
+      >
+        <li
+          class="c10"
+        >
+          <a
+            href="https://www.gympass.com"
+          >
+            <div
+              class="c11 c12"
+            >
+              <svg
+                aria-hidden="true"
+                class="c13"
+                height="12"
+                width="12"
+              />
+              <p
+                class="c14 c15 c16"
+                font-size="medium"
+              >
+                Help
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="c23"
+    >
+      <div
+        class="c24"
+        fill="transparent"
+      >
+        <div
+          class="c3"
+          display="flex"
+          elevation="small"
+          height="48"
+          overflow="hidden"
+          width="48"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="#FFFFFF"
+            height="50%"
+            width="50%"
+          />
+        </div>
+        <div
+          class="c25"
+        >
+          <p
+            class="c26"
+          >
+            User
+          </p>
+          <p
+            class="c27"
+            color="deep"
+          >
+            Admin, Supervisor
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav
+    class="c28"
+  >
+    <ul
+      class="c29"
+    >
+      <li
+        class="c30"
+      >
+        <a
+          href="https://www.gympass.com"
+        >
+          <div
+            class="c31"
+          >
+            <svg
+              aria-hidden="true"
+              class="c13"
+              height="12"
+              width="12"
+            />
+            <p
+              class="c14 c32 c33"
+              font-size="medium"
+            >
+              Subscription
+            </p>
+          </div>
+        </a>
+      </li>
+      <li
+        class="c34"
+      >
+        <a
+          href="https://www.gympass.com"
+        >
+          <div
+            class="c31"
+          >
+            <svg
+              aria-hidden="true"
+              class="c13"
+              height="12"
+              width="12"
+            />
+            <p
+              class="c14 c32 c33"
+              font-size="medium"
+            >
+              Billing
+            </p>
+          </div>
+        </a>
+      </li>
+      <li
+        class="c30"
+      >
+        <div>
+          <div
+            class="c31"
+          >
+            <svg
+              aria-hidden="true"
+              class="c13"
+              height="12"
+              width="12"
+            />
+            <p
+              class="c14 c32 c33"
+              font-size="medium"
+            >
+              More
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an action 1`] = `
+.c3 {
+  border-radius: 9999px;
+  background-color: #9898A6;
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.c4 {
+  width: 50%;
+  height: 50%;
+}
+
+.c8 {
+  width: 24px;
+  height: 24px;
+}
+
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c2 {
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+  padding: 12px;
+  background-color: #FFFFFF;
+  border-radius: 9999px;
+  border: 1px solid #FFFFFF;
+}
+
+.c2 > div:first-child {
+  height: 32px;
+  width: 32px;
+}
+
+.c2:hover,
+.c2:focus {
+  cursor: pointer;
+  border: 1px solid #D7D7E0;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-weight: 500;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 12px;
+  background-color: #F5F5FA;
+  width: 280px;
+  height: 100%;
+  right: 0;
+  -webkit-transition: width 300ms ease-in-out;
+  transition: width 300ms ease-in-out;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+          display="flex"
+          elevation="small"
+          height="48"
+          overflow="hidden"
+          width="48"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="#FFFFFF"
+            height="50%"
+            width="50%"
+          />
+        </div>
+        <div
+          class="c5"
+        >
+          <p
+            class="c6"
+          >
+            Company
+          </p>
+          <p
+            class="c7"
+            color="deep"
+          >
+            Reseller
+          </p>
+        </div>
+        <svg
+          aria-hidden="true"
+          class="c8"
+          fill="#D8385E"
+          height="24"
+          width="24"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with actions 1`] = `
+.c3 {
+  border-radius: 9999px;
+  background-color: #9898A6;
+  box-shadow: 0 2px 4px -1px rgba(152,152,166,0.2),0 4px 5px 0px rgba(152,152,166,0.14),0 1px 10px 0px rgba(152,152,166,0.12);
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.c4 {
+  width: 50%;
+  height: 50%;
+}
+
+.c9 {
+  width: 20px;
+  height: 20px;
+}
+
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #6B6B78;
+}
+
+.c8 {
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+}
+
+.c8:hover,
+.c8:focus {
+  cursor: pointer;
+  background-color: #D7D7E0;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.c2 > div:first-child {
+  height: 32px;
+  width: 32px;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-weight: 500;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 12px;
+  background-color: #F5F5FA;
+  width: 280px;
+  height: 100%;
+  right: 0;
+  -webkit-transition: width 300ms ease-in-out;
+  transition: width 300ms ease-in-out;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+        fill="transparent"
+      >
+        <div
+          class="c3"
+          display="flex"
+          elevation="small"
+          height="48"
+          overflow="hidden"
+          width="48"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            fill="#FFFFFF"
+            height="50%"
+            width="50%"
+          />
+        </div>
+        <div
+          class="c5"
+        >
+          <p
+            class="c6"
+          >
+            User
+          </p>
+          <p
+            class="c7"
+            color="deep"
+          >
+            Admin, Supervisor
+          </p>
+        </div>
+        <div
+          aria-expanded="false"
+          aria-haspopup="menu"
+          class="c8"
+          data-state="closed"
+          id="radix-:r0:"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="c9"
+            fill="#D8385E"
+            height="20"
+            width="20"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
