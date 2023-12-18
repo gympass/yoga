@@ -1,6 +1,6 @@
 /* eslint-disable prefer-destructuring */
 import { merge } from '@gympass/yoga-common';
-import componentThemes from './componentThemes';
+import componentThemes from './themeImports';
 
 const getComponentThemes = tokens => {
   const { colors, baseFont, baseFontSize } = tokens;
