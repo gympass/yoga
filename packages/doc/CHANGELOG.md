@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.43.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.42.4...@gympass/yoga-doc@2.43.0) (2023-12-18)
+
+
+### Bug Fixes
+
+* codacy issues ([036f607](https://github.com/gympass/yoga/commit/036f607a221a0401b7bacc514a795b523ae744f6))
+* console warnings ([34ba032](https://github.com/gympass/yoga/commit/34ba0321068c1c209e55c90a689f4c8e0daca066))
+* rename SubItem to SubItem1 ([278aa14](https://github.com/gympass/yoga/commit/278aa1408389fb4e3268bd209d4b96c2bb4c2ad5))
+
+
+### Features
+
+* add responsive documentation and some improvements ([36316e8](https://github.com/gympass/yoga/commit/36316e86c41523072d1cc81e3b267469e2907d55))
+* add web component ([8a177cb](https://github.com/gympass/yoga/commit/8a177cb058e4724ee614053daa540408700e7914))
+
+
+
+
+
 ## [2.42.4](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.42.3...@gympass/yoga-doc@2.42.4) (2023-12-07)
 
 **Note:** Version bump only for package @gympass/yoga-doc

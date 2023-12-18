@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.89.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.88.2...@gympass/yoga@7.89.0) (2023-12-18)
+
+
+### Bug Fixes
+
+* codacy issues ([036f607](https://github.com/Gympass/yoga/commit/036f607a221a0401b7bacc514a795b523ae744f6))
+* console warnings ([34ba032](https://github.com/Gympass/yoga/commit/34ba0321068c1c209e55c90a689f4c8e0daca066))
+* lint ([9bf3724](https://github.com/Gympass/yoga/commit/9bf37248179eb08c904ff91161dba36d5d2ddc7b))
+* lint and css ([8f62b87](https://github.com/Gympass/yoga/commit/8f62b87f535fac07da26754950d85357d05626c3))
+* rename SubItem to SubItem1 ([278aa14](https://github.com/Gympass/yoga/commit/278aa1408389fb4e3268bd209d4b96c2bb4c2ad5))
+* rename Subitem1 to Subitem ([202f32e](https://github.com/Gympass/yoga/commit/202f32efe8ffea6617eff62a8cf6adb731d225d1))
+* revert wrong removed export ([55cd050](https://github.com/Gympass/yoga/commit/55cd050ffb32ae4646551f676a907032555541f9))
+* revert yoga version ([86575b7](https://github.com/Gympass/yoga/commit/86575b7bde97a780e2896f8afca55f172bb36868))
+
+
+### Features
+
+* add responsive documentation and some improvements ([36316e8](https://github.com/Gympass/yoga/commit/36316e86c41523072d1cc81e3b267469e2907d55))
+* add responsiveness ([34eeae8](https://github.com/Gympass/yoga/commit/34eeae85796647763dde8a5bed6147da699190f1))
+* add tests ([869e076](https://github.com/Gympass/yoga/commit/869e076c6f090935b2ebb4a0c9dc786e61fd43fc))
+* add web component ([8a177cb](https://github.com/Gympass/yoga/commit/8a177cb058e4724ee614053daa540408700e7914))
+* rebase from master ([ff292b2](https://github.com/Gympass/yoga/commit/ff292b2b8c76544f6c0b2c145f7de1d93f6f0567))
+* remove unnecessary export types ([6212297](https://github.com/Gympass/yoga/commit/621229713351ba8bc9517e8bd44b1dcfcf534303))
+
+
+
+
+
 ## [7.88.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.88.1...@gympass/yoga@7.88.2) (2023-12-07)
 
 
