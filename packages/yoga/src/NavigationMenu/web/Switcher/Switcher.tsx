@@ -57,7 +57,7 @@ const StyledTitle = styled(Text.Small)`
     `}
 `;
 
-type SwitcherActionsProps = {
+export type SwitcherActionsProps = {
   id: string;
   label: string;
   onClick: () => void;
