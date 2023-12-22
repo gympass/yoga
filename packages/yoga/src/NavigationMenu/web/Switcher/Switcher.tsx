@@ -87,9 +87,11 @@ const Switcher = ({
       {Avatar}
 
       <StyledTextContainer>
-        <StyledTitle>
-          {title || <Skeleton type="text" variant="body2" width="100%" />}
-        </StyledTitle>
+        {title ? (
+          <StyledTitle>{title}</StyledTitle>
+        ) : (
+          <Skeleton type="text" variant="body2" width="100%" />
+        )}
 
         <Text.Tiny color="deep">{subtitle}</Text.Tiny>
       </StyledTextContainer>

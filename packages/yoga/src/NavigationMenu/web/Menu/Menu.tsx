@@ -60,14 +60,13 @@ const StyledText = styled(Text.Small)`
       },
     },
   }) =>
-    css `
+    css`
       font-weight: ${font.weight.medium};
       flex: 1;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
-    `
-  }
+    `}
 `;
 
 type MenuProps = {
@@ -85,9 +84,11 @@ const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
       {Avatar}
 
       <StyledTextContainer>
-        <StyledText>
-          {title || <Skeleton type="text" variant="body2" width="100%" />}
-        </StyledText>
+        {title ? (
+          <StyledText>{title}</StyledText>
+        ) : (
+          <Skeleton type="text" variant="body2" width="100%" />
+        )}
 
         <Text.Small color="deep">{subtitle}</Text.Small>
       </StyledTextContainer>
