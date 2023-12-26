@@ -3,6 +3,8 @@ const fs = require('fs');
 const path = require('path');
 
 const themeFiles = [];
+const yogaPath = path.join(__dirname, '../packages/yoga/src');
+const removeExt = /\.theme\.(js|ts)$/;
 
 function findThemeFiles(directory) {
   const files = fs.readdirSync(directory);
@@ -15,33 +17,35 @@ function findThemeFiles(directory) {
       findThemeFiles(filePath);
     }
 
-    if (file.endsWith('.theme.js')) {
+    if (file.endsWith('.theme.js') || file.endsWith('.theme.ts')) {
       themeFiles.push(filePath);
     }
   });
 }
 
-const yogaPath = path.join(__dirname, '../packages/yoga/src');
-
-findThemeFiles(yogaPath);
-
 function toCamelCase(name) {
-  return name.replace(/[-_.](.)/g, (_, c) => c.toUpperCase());
+  return name.replace(/[-_.](.)/g, (_, afterDot) => afterDot.toUpperCase());
 }
 
 function adjustPath(name) {
   return name.replace('packages/yoga/src', '..');
 }
 
+findThemeFiles(yogaPath);
+
 const importStatements = themeFiles.map(filePath => {
-  const componentName = toCamelCase(path.basename(filePath, '.theme.js'));
+  const componentName = toCamelCase(
+    path.basename(filePath).replace(removeExt, ''),
+  );
   const componentPath = adjustPath(path.relative(__dirname, filePath));
 
   return `import ${componentName} from '${componentPath}';`;
 });
 
 const exportStatements = themeFiles.map(filePath => {
-  const componentName = toCamelCase(path.basename(filePath, '.theme.js'));
+  const componentName = toCamelCase(
+    path.basename(filePath).replace(removeExt, ''),
+  );
 
   return `  ${componentName},`;
 });
