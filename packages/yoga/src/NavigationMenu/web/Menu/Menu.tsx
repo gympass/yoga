@@ -72,8 +72,9 @@ const StyledText = styled(Text.Small)`
 type MenuProps = {
   avatar: React.ReactElement;
   subtitle?: string;
-  title: string;
+  title?: string;
   onClick?: () => void;
+  isLoading?: boolean;
 };
 
 const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
@@ -84,13 +85,8 @@ const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
       {Avatar}
 
       <StyledTextContainer>
-        {title ? (
-          <StyledText>{title}</StyledText>
-        ) : (
-          <Skeleton type="text" variant="body2" width="100%" />
-        )}
-
-        <Text.Small color="deep">{subtitle}</Text.Small>
+        {title &&  <StyledText>{title}</StyledText>}
+        {subtitle && <Text.Small color="deep">{subtitle}</Text.Small>}
       </StyledTextContainer>
 
       {hasAction && <Icon as={ArrowRight} size="large" fill="vibin" />}
