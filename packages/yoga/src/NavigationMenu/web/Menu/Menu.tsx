@@ -74,7 +74,6 @@ type MenuProps = {
   subtitle?: string;
   title?: string;
   onClick?: () => void;
-  isLoading?: boolean;
 };
 
 const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
@@ -86,6 +85,7 @@ const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
 
       <StyledTextContainer>
         {title &&  <StyledText>{title}</StyledText>}
+        
         {subtitle && <Text.Small color="deep">{subtitle}</Text.Small>}
       </StyledTextContainer>
 
