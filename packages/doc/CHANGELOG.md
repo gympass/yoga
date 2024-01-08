@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.44.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.43.0...@gympass/yoga-doc@2.44.0) (2024-01-08)
+
+
+### Features
+
+* add title loading prop ([9b06313](https://github.com/gympass/yoga/commit/9b063132a6b4bc2cf12538183bd282b7e0122241))
+* change prop name and skeleton ([d63751d](https://github.com/gympass/yoga/commit/d63751ddfc9b90f378d1e27f32163ab6b78d7d51))
+
+
+
+
+
 # [2.43.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.42.4...@gympass/yoga-doc@2.43.0) (2023-12-18)
 
 

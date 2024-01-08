@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.90.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.89.0...@gympass/yoga@7.90.0) (2024-01-08)
+
+
+### Bug Fixes
+
+* remove div inside p ([de5104d](https://github.com/Gympass/yoga/commit/de5104d4cd65d2da7a9c6417b87c57bc2a05db9e))
+* remove not used import ([0a52fd9](https://github.com/Gympass/yoga/commit/0a52fd9e23da39686bce443e7b9a34b42edf9cf5))
+* removed skeleton and put title as optional ([f31d901](https://github.com/Gympass/yoga/commit/f31d90134e8fca4b9fb7aa88a1a0576b164d536d))
+
+
+### Features
+
+* add title loading prop ([9b06313](https://github.com/Gympass/yoga/commit/9b063132a6b4bc2cf12538183bd282b7e0122241))
+* change prop name and skeleton ([d63751d](https://github.com/Gympass/yoga/commit/d63751ddfc9b90f378d1e27f32163ab6b78d7d51))
+
+
+
+
+
 # [7.89.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.88.2...@gympass/yoga@7.89.0) (2023-12-18)
 
 
