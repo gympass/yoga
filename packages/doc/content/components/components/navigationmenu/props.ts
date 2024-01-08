@@ -40,7 +40,7 @@ export const MenuProps = [
     name: 'title',
     description: { text: 'Text to be displayed as title' },
     type: { name: 'string' },
-    required: true,
+    required: false,
   },
   {
     name: 'onClick',
@@ -103,6 +103,16 @@ export const SwitcherProps = [
     required: false,
     defaultValue: { value: 'transparent' },
   },
+    {
+    name: 'isLoading',
+    description: {
+      text:
+        'Indicates whether the title and the subtitle are loading',
+    },
+    type: { name: 'bool' },
+    required: false,
+    defaultValue: { value: 'false' },
+  },
   {
     name: 'sideOffset',
     description: {
@@ -122,7 +132,7 @@ export const SwitcherProps = [
     name: 'title',
     description: { text: 'Text to be displayed as title' },
     type: { name: 'string' },
-    required: true,
+    required: false,
   },
 ];
 

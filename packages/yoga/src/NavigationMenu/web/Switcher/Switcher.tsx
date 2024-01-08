@@ -67,15 +67,17 @@ type SwitcherProps = {
   actions?: SwitcherActionsProps[];
   avatar: React.ReactElement;
   fill?: string;
+  isLoading?: boolean;
   sideOffset?: number;
   subtitle?: string;
-  title: string;
+  title?: string;
 };
 
 const Switcher = ({
   actions,
   avatar: Avatar,
   fill = 'transparent',
+  isLoading = false,
   sideOffset = 36,
   subtitle,
   title,
@@ -87,11 +89,22 @@ const Switcher = ({
       {Avatar}
 
       <StyledTextContainer>
-        <StyledTitle>
-          {title || <Skeleton type="text" variant="body2" width="100%" />}
-        </StyledTitle>
-
-        <Text.Tiny color="deep">{subtitle}</Text.Tiny>
+        {isLoading ? (
+          <>
+            <Skeleton
+              type="text"
+              variant="overline"
+              width="100%"
+              marginBottom="4px"
+            />
+            <Skeleton type="text" variant="overline" width="100%" />
+          </>
+        ) : (
+          <>
+            {title && <StyledTitle>{title}</StyledTitle>}
+            {subtitle && <Text.Tiny color="deep">{subtitle}</Text.Tiny>}
+          </>
+        )}
       </StyledTextContainer>
 
       {hasActions && <Actions actions={actions} sideOffset={sideOffset} />}
