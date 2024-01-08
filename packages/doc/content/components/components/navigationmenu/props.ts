@@ -104,10 +104,10 @@ export const SwitcherProps = [
     defaultValue: { value: 'transparent' },
   },
     {
-    name: 'loadingTitle',
+    name: 'isLoading',
     description: {
       text:
-        'Indicates whether the title is loading',
+        'Indicates whether the title and the subtitle are loading',
     },
     type: { name: 'bool' },
     required: false,
