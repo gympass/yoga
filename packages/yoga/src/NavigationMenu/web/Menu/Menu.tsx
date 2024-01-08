@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { ArrowRight } from '@gympass/yoga-icons';
-import { Text, Skeleton } from '@gympass/yoga';
+import { Text } from '@gympass/yoga';
 import Box from '../../../Box';
 import Icon from '../../../Icon';
 
@@ -85,7 +85,7 @@ const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
 
       <StyledTextContainer>
         {title &&  <StyledText>{title}</StyledText>}
-        
+
         {subtitle && <Text.Small color="deep">{subtitle}</Text.Small>}
       </StyledTextContainer>
 
