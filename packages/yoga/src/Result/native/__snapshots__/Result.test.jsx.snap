@@ -121,14 +121,14 @@ exports[`<Result /> should match snapshot 1`] = `
     <View
       borderColor="rgba(35, 27, 34, 0.1)"
       borderRadius="circle"
-      borderWidth={0.5}
+      borderWidth={1}
       height="100%"
       style={
         [
           {
             "borderColor": "rgba(35, 27, 34, 0.1)",
             "borderRadius": 9999,
-            "borderWidth": 0.5,
+            "borderWidth": 1,
             "height": "100%",
             "position": "absolute",
             "width": "100%",
@@ -1127,14 +1127,14 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
     <View
       borderColor="rgba(35, 27, 34, 0.1)"
       borderRadius="small"
-      borderWidth={0.5}
+      borderWidth={1}
       height="100%"
       style={
         [
           {
             "borderColor": "rgba(35, 27, 34, 0.1)",
             "borderRadius": 8,
-            "borderWidth": 0.5,
+            "borderWidth": 1,
             "height": "100%",
             "position": "absolute",
             "width": "100%",
@@ -1630,14 +1630,14 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
     <View
       borderColor="rgba(35, 27, 34, 0.1)"
       borderRadius="circle"
-      borderWidth={0.5}
+      borderWidth={1}
       height="100%"
       style={
         [
           {
             "borderColor": "rgba(35, 27, 34, 0.1)",
             "borderRadius": 9999,
-            "borderWidth": 0.5,
+            "borderWidth": 1,
             "height": "100%",
             "position": "absolute",
             "width": "100%",

@@ -9,7 +9,7 @@ import { hexToRgb } from '@gympass/yoga-common';
 import Box from '../../Box';
 import Icon from '../../Icon';
 
-const BORDER_WIDTH = 0.5;
+const BORDER_WIDTH = 1;
 const BORDER_OPACITY = 0.1;
 
 const BorderImage = styled(Box).attrs(({ theme: { yoga } }) => {
