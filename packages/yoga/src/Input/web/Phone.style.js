@@ -290,7 +290,7 @@ export const Container = styled.div`
 
           &.focus,
           &:hover {
-            background-color: ${colors.clear};
+            background-color: ${colors.elements.backgroundAndDisabled};
           }
         }
       }

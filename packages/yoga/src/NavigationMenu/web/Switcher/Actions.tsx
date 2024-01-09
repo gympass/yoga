@@ -44,7 +44,7 @@ const Actions = ({ actions, sideOffset }: ActionsProps) => {
     <YogaMenu onMouseHover={false}>
       <YogaMenu.Action>
         <StyledAction>
-          <Icon as={MenuMore} size="medium" fill="vibin" />
+          <Icon as={MenuMore} size="medium" fill="primary" />
         </StyledAction>
       </YogaMenu.Action>
 

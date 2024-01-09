@@ -85,7 +85,7 @@ export const PopoverContainer = styled.div`
     max-height: ${height}px;
 
     border-radius: ${radii.small}px;
-    background-color: ${colors.stamina};
+    background-color: ${colors.secondary};
     padding: ${spacing.small}px;
     z-index: ${$zIndex};
 

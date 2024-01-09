@@ -63,7 +63,7 @@ const getDayFieldColor = (selected, disabled, colors, aux) => {
     return colors.primary;
   }
 
-  return colors.stamina;
+  return colors.secondary;
 };
 
 const toUTCTime = date =>
@@ -113,7 +113,9 @@ const DayField = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: ${inRange ? colors.clear : colors.white};
+    background: ${
+      inRange ? colors.elements.backgroundAndDisabled : colors.white
+    };
     position: relative;
     cursor: pointer;
     ${
@@ -126,7 +128,7 @@ const DayField = styled.div`
         ? `&:before {
             content: '';
             position: absolute;
-            background: ${colors.vibin};
+            background: ${colors.primary};
             width: ${datepicker.width.day}px;
             height: ${datepicker.width.day}px;
             border-radius: ${radii.circle}px;

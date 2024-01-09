@@ -92,7 +92,7 @@ const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
         <Text.Small color="deep">{subtitle}</Text.Small>
       </StyledTextContainer>
 
-      {hasAction && <Icon as={ArrowRight} size="large" fill="vibin" />}
+      {hasAction && <Icon as={ArrowRight} size="large" fill="primary" />}
     </StyledMenu>
   );
 };

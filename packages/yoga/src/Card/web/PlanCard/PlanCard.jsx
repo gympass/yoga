@@ -23,7 +23,8 @@ const Plan = styled.article`
     return css`
       padding: ${plan.padding.top}px ${plan.padding.right}px
         ${plan.padding.bottom}px ${plan.padding.left}px;
-      border: ${theme.borders.small}px solid ${theme.colors.light};
+      border: ${theme.borders.small}px solid
+        ${theme.colors.elements.lineAndBorders};
       border-radius: ${plan.radius}px;
 
       background-color: ${theme.colors.white};

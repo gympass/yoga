@@ -22,7 +22,7 @@ const AutoComplete = tokens => ({
     },
     backgroundColor: {
       default: tokens.colors.white,
-      hover: tokens.colors.clear,
+      hover: tokens.colors.elements.backgroundAndDisabled,
     },
   },
 });

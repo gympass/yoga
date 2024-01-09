@@ -4,15 +4,15 @@ const NavigationMenu = ({ colors, fontWeights, radii, spacing }) => ({
     width: spacing.xlarge,
   },
   backgroundColor: {
-    default: colors.clear,
+    default: colors.elements.backgroundAndDisabled,
     hover: colors.light,
-    stamina: colors.stamina,
+    stamina: colors.secondary,
     yoga: colors.yoga,
     white: colors.white,
   },
   border: {
     color: {
-      default: colors.light,
+      default: colors.elements.lineAndBorders,
       white: colors.white,
     },
     radius: {
@@ -23,8 +23,8 @@ const NavigationMenu = ({ colors, fontWeights, radii, spacing }) => ({
   font: {
     color: {
       default: colors.deep,
-      active: colors.vibin,
-      hover: colors.stamina,
+      active: colors.primary,
+      hover: colors.secondary,
     },
     weight: { medium: fontWeights.medium },
   },
@@ -39,8 +39,8 @@ const NavigationMenu = ({ colors, fontWeights, radii, spacing }) => ({
     width: spacing.medium,
     fill: {
       default: colors.deep,
-      active: colors.vibin,
-      hover: colors.stamina,
+      active: colors.primary,
+      hover: colors.secondary,
     },
   },
   padding: {
