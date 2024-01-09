@@ -44,16 +44,16 @@ exports[`<Avatar /> should match snapshot in avatar with children prop 1`] = `
     AL
   </Text>
   <View
-    borderColor="rgba(35, 27, 34, 0.25)"
+    borderColor="rgba(35, 27, 34, 0.1)"
     borderRadius="small"
-    borderWidth={1}
+    borderWidth={0.5}
     height="100%"
     style={
       [
         {
-          "borderColor": "rgba(35, 27, 34, 0.25)",
+          "borderColor": "rgba(35, 27, 34, 0.1)",
           "borderRadius": 8,
-          "borderWidth": 1,
+          "borderWidth": 0.5,
           "height": "100%",
           "position": "absolute",
           "width": "100%",
@@ -168,16 +168,16 @@ exports[`<Avatar /> should match snapshot in circle avatar 1`] = `
     />
   </RNSVGSvgView>
   <View
-    borderColor="rgba(35, 27, 34, 0.25)"
+    borderColor="rgba(35, 27, 34, 0.1)"
     borderRadius="circle"
-    borderWidth={1}
+    borderWidth={0.5}
     height="100%"
     style={
       [
         {
-          "borderColor": "rgba(35, 27, 34, 0.25)",
+          "borderColor": "rgba(35, 27, 34, 0.1)",
           "borderRadius": 9999,
-          "borderWidth": 1,
+          "borderWidth": 0.5,
           "height": "100%",
           "position": "absolute",
           "width": "100%",
@@ -293,16 +293,16 @@ exports[`<Avatar /> should match snapshot in circle avatar with placeholder prop
     />
   </RNSVGSvgView>
   <View
-    borderColor="rgba(35, 27, 34, 0.25)"
+    borderColor="rgba(35, 27, 34, 0.1)"
     borderRadius="circle"
-    borderWidth={1}
+    borderWidth={0.5}
     height="100%"
     style={
       [
         {
-          "borderColor": "rgba(35, 27, 34, 0.25)",
+          "borderColor": "rgba(35, 27, 34, 0.1)",
           "borderRadius": 9999,
-          "borderWidth": 1,
+          "borderWidth": 0.5,
           "height": "100%",
           "position": "absolute",
           "width": "100%",
@@ -417,16 +417,16 @@ exports[`<Avatar /> should match snapshot in default avatar 1`] = `
     />
   </RNSVGSvgView>
   <View
-    borderColor="rgba(35, 27, 34, 0.25)"
+    borderColor="rgba(35, 27, 34, 0.1)"
     borderRadius="small"
-    borderWidth={1}
+    borderWidth={0.5}
     height="100%"
     style={
       [
         {
-          "borderColor": "rgba(35, 27, 34, 0.25)",
+          "borderColor": "rgba(35, 27, 34, 0.1)",
           "borderRadius": 8,
-          "borderWidth": 1,
+          "borderWidth": 0.5,
           "height": "100%",
           "position": "absolute",
           "width": "100%",
@@ -542,16 +542,16 @@ exports[`<Avatar /> should match snapshot in default avatar with placeholder pro
     />
   </RNSVGSvgView>
   <View
-    borderColor="rgba(35, 27, 34, 0.25)"
+    borderColor="rgba(35, 27, 34, 0.1)"
     borderRadius="small"
-    borderWidth={1}
+    borderWidth={0.5}
     height="100%"
     style={
       [
         {
-          "borderColor": "rgba(35, 27, 34, 0.25)",
+          "borderColor": "rgba(35, 27, 34, 0.1)",
           "borderRadius": 8,
-          "borderWidth": 1,
+          "borderWidth": 0.5,
           "height": "100%",
           "position": "absolute",
           "width": "100%",
