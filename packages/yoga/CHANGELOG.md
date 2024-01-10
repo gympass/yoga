@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.90.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.90.0...@gympass/yoga@7.90.1) (2024-01-10)
+
+
+### Bug Fixes
+
+* avatar width and opacity border ([dd2d46c](https://github.com/Gympass/yoga/commit/dd2d46c807fe9aa5d286114a47187b59fa7783b0))
+* change border width avatar ([1eb3b55](https://github.com/Gympass/yoga/commit/1eb3b559e6c343fabc7010624105523594a2c697))
+
+
+
+
+
 # [7.90.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.89.0...@gympass/yoga@7.90.0) (2024-01-08)
 
 
