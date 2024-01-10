@@ -10,7 +10,7 @@ import Box from '../../Box';
 import Icon from '../../Icon';
 
 const BORDER_WIDTH = 1;
-const BORDER_OPACITY = 0.25;
+const BORDER_OPACITY = 0.1;
 
 const BorderImage = styled(Box).attrs(({ theme: { yoga } }) => {
   return {

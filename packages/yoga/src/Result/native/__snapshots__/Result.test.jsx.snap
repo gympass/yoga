@@ -119,14 +119,14 @@ exports[`<Result /> should match snapshot 1`] = `
       />
     </RNSVGSvgView>
     <View
-      borderColor="rgba(35, 27, 34, 0.25)"
+      borderColor="rgba(35, 27, 34, 0.1)"
       borderRadius="circle"
       borderWidth={1}
       height="100%"
       style={
         [
           {
-            "borderColor": "rgba(35, 27, 34, 0.25)",
+            "borderColor": "rgba(35, 27, 34, 0.1)",
             "borderRadius": 9999,
             "borderWidth": 1,
             "height": "100%",
@@ -1125,14 +1125,14 @@ exports[`<Result /> should match snapshot without attendence 1`] = `
       />
     </RNSVGSvgView>
     <View
-      borderColor="rgba(35, 27, 34, 0.25)"
+      borderColor="rgba(35, 27, 34, 0.1)"
       borderRadius="small"
       borderWidth={1}
       height="100%"
       style={
         [
           {
-            "borderColor": "rgba(35, 27, 34, 0.25)",
+            "borderColor": "rgba(35, 27, 34, 0.1)",
             "borderRadius": 8,
             "borderWidth": 1,
             "height": "100%",
@@ -1628,14 +1628,14 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
       />
     </RNSVGSvgView>
     <View
-      borderColor="rgba(35, 27, 34, 0.25)"
+      borderColor="rgba(35, 27, 34, 0.1)"
       borderRadius="circle"
       borderWidth={1}
       height="100%"
       style={
         [
           {
-            "borderColor": "rgba(35, 27, 34, 0.25)",
+            "borderColor": "rgba(35, 27, 34, 0.1)",
             "borderRadius": 9999,
             "borderWidth": 1,
             "height": "100%",
