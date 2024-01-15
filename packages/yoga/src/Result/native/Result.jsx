@@ -75,7 +75,7 @@ const Result = ({
       )}
       <Title numberOfLines={1}>{title}</Title>
       {subTitle && subTitle !== '' && (
-        <Text.Small numberOfLines={1} variant="secondary">
+        <Text.Small numberOfLines={1} color="text.primary">
           {subTitle}
         </Text.Small>
       )}

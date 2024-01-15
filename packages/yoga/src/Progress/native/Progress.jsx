@@ -90,7 +90,7 @@ const Label = styled.Text`
       yoga: {
         baseFont,
         spacing,
-        text,
+        colors: { text },
         components: { progress },
       },
     },
@@ -98,7 +98,7 @@ const Label = styled.Text`
   font-family: ${baseFont.family};
   font-size: ${progress.label.font.size}px;
   text-align: ${align};
-  color: ${text.secondary};
+  color: ${text.primary};
 
   ${
     isNumber
