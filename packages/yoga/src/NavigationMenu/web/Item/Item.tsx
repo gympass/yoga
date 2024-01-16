@@ -5,6 +5,7 @@ import * as Styles from './styles';
 
 type ItemProps = {
   active?: boolean;
+  collapsed?: boolean;
   children?: React.ReactNode;
   expanded?: boolean;
   icon?: React.ReactElement<typeof Icon>;
@@ -16,6 +17,7 @@ type ItemProps = {
 
 const Item = ({
   active = false,
+  collapsed = false,
   children,
   expanded = false,
   icon: Icon,
@@ -26,7 +28,7 @@ const Item = ({
 }: ItemProps) => {
   return (
     <>
-      <Styles.StyledItem isActive={active} isResponsive={responsive}>
+      <Styles.StyledItem isActive={active} isCollapsed={collapsed} isResponsive={responsive}>
         <Wrapper>
           <Styles.StyledTextContainer>
             {Icon}
