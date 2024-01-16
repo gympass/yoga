@@ -7,14 +7,20 @@ export interface Font {
 
 export interface Fonts {
   rubik?: Font;
+  inter?: Font;
 }
 
 const fontWeights = Object.values(weights);
+const weight = [...fontWeights, ...fontWeights.map(value => `${value}i`)];
 
 const fonts: Fonts = {
   rubik: {
     family: 'Rubik',
-    weight: [...fontWeights, ...fontWeights.map(value => `${value}i`)],
+    weight,
+  },
+  inter: {
+    family: 'Inter',
+    weight,
   },
 };
 
