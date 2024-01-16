@@ -1,10 +1,10 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import { Text } from '@gympass/yoga';
 import Icon from '../../../Icon';
 import Box from '../../../Box';
-import Text from '../../../Text';
 
-const StyledText = styled(Text)`
+const StyledText = styled(Text.SmallestException)`
   ${({
     theme: {
       yoga: {
@@ -28,7 +28,7 @@ const Active = css`
     theme: {
       yoga: {
         components: {
-          navigationmenu: { backgroundColor, icon, font },
+          navigationmenu: { icon, font },
         },
       },
     },
@@ -39,8 +39,6 @@ const Active = css`
       }
 
       div {
-        background-color: ${backgroundColor.default};
-
         ${StyledText} {
           color: ${font.color.active};
         }
@@ -58,7 +56,7 @@ const StyledItem = styled.li`
     theme: {
       yoga: {
         components: {
-          navigationmenu: { backgroundColor, border, icon, font },
+          navigationmenu: { border, icon, font },
         },
       },
     },
@@ -66,7 +64,6 @@ const StyledItem = styled.li`
     css`
       transition: background-color 300ms ease-in-out;
 
-      background-color: transparent;
       border-radius: ${border.radius.default}px;
       list-style-type: none;
       cursor: pointer;
@@ -81,8 +78,6 @@ const StyledItem = styled.li`
       &:focus {
         ${!isActive &&
         css`
-          background-color: ${backgroundColor.hover};
-
           ${StyledText} {
             color: ${font.color.hover};
           }
@@ -123,7 +118,7 @@ const StyledTextContainer = styled(Box)`
       align-items: center;
       justify-content: center;
       gap: ${gap.xxxsmall}px;
-      padding: ${padding.xxsmall}px ${padding.xxxsmall}px;
+      padding: ${padding.xxxsmall}px;
       border-radius: ${border.radius.default}px;
     `}
 `;
