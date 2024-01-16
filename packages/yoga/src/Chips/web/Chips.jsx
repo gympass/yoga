@@ -45,7 +45,7 @@ const Wrapper = styled.button`
 
       padding: ${spacing.xxsmall}px;
 
-      border-radius: ${radii.small}px;
+      border-radius: ${radii.circle}px;
       border-width: ${borders.small}px;
 
       font-family: ${baseFont.family};
@@ -74,15 +74,15 @@ const Wrapper = styled.button`
       return `
         ${commonStyles}
 
-        background-color: ${colors.yoga};
-        color: ${colors.primary};
+        background-color: ${colors.secondary};
+        color: ${colors.white};
 
         border-color: transparent;
 
         font-weight: ${fontWeights.medium};
 
         &:hover:enabled {
-          border-color: ${colors.primary};
+          border-color: ${colors.secondary};
         }
       `;
     }
@@ -140,7 +140,7 @@ const Chips = React.forwardRef(
         {SecondIcon && (
           <Icon
             as={SecondIcon}
-            fill={selected ? 'primary' : 'secondary'}
+            fill={selected ? 'white' : 'secondary'}
             width="small"
             height="small"
             style={{
@@ -153,7 +153,7 @@ const Chips = React.forwardRef(
         {FirstIcon && (
           <Icon
             as={FirstIcon}
-            fill={selected ? 'primary' : 'secondary'}
+            fill={selected ? 'white' : 'secondary'}
             width="small"
             height="small"
             style={{
