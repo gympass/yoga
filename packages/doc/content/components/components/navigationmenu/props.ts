@@ -103,11 +103,10 @@ export const SwitcherProps = [
     required: false,
     defaultValue: { value: 'transparent' },
   },
-    {
+  {
     name: 'isLoading',
     description: {
-      text:
-        'Indicates whether the title and the subtitle are loading',
+      text: 'Indicates whether the title and the subtitle are loading',
     },
     type: { name: 'bool' },
     required: false,
@@ -224,6 +223,13 @@ export const BottomItemsProps = [
     description: { text: 'Items to be displayed in the mobile bottom bar' },
     type: { name: 'node' },
     required: true,
+  },
+  {
+    name: 'fill',
+    description: { text: 'Color used as background' },
+    type: { name: 'string' },
+    required: false,
+    defaultValue: { value: 'white' },
   },
 ];
 
