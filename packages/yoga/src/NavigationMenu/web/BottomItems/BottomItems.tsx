@@ -8,8 +8,10 @@ const StyledItemsContainer = styled.nav`
 
 const StyledItems = styled.ul`
   ${({
+    fill,
     theme: {
       yoga: {
+        colors,
         components: {
           navigationmenu: { border, gap },
         },
@@ -24,21 +26,24 @@ const StyledItems = styled.ul`
     align-items: center;
     width: 100%;
     height: 56px;
+    background-color: ${colors[fill]};;
     margin: 0;
     padding: 0;
     border: 1px solid ${border.color.default};
     gap: ${gap.xxxsmall}px;
+    z-index: 15;
   `}
 `;
 
 type BottomItemsProps = {
   children: React.ReactNode;
+  fill?: string;
 };
 
-const BottomItems = ({ children }: BottomItemsProps) => {
+const BottomItems = ({ children, fill = 'white' }: BottomItemsProps) => {
   return (
     <StyledItemsContainer>
-      <StyledItems>{children}</StyledItems>
+      <StyledItems fill={fill}>{children}</StyledItems>
     </StyledItemsContainer>
   );
 };
