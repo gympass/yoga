@@ -7,10 +7,11 @@ import { Item, Subitem } from './Item';
 import { BottomItems, BottomItem } from './BottomItems';
 import Box from '../../Box';
 
-const StyledNavigationMenu = styled(Box)`
+const StyledNavigationMenu = styled.aside`
   ${({
     isOpenOnMobile,
     isResponsive,
+    isCollapsed,
     theme: {
       yoga: {
         components: {
@@ -24,8 +25,9 @@ const StyledNavigationMenu = styled(Box)`
     gap: ${gap.medium}px;
     padding: ${padding.small}px ${padding.xsmall}px;
     background-color: ${backgroundColor.default};
+    overflow-y: auto;
 
-    width: 280px;
+    width: ${isCollapsed ? '98px' : '280px'};
     height: 100%;
     right: 0;
 
@@ -66,7 +68,6 @@ const StyledItems = styled.nav`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  overflow-y: auto;
 `;
 
 const StyledItemsGroup = styled.ul`
@@ -104,18 +105,21 @@ const StyledFooter = styled(Box)`
 `;
 
 type NavigationMenuProps = {
+  collapsed?: boolean;
   children: React.ReactNode;
   openOnMobile?: boolean;
   responsive?: boolean;
 };
 
 const NavigationMenu = ({
+  collapsed = false,
   children,
   openOnMobile = false,
   responsive = true,
 }: NavigationMenuProps) => {
   return (
     <StyledNavigationMenu
+      isCollapsed={collapsed}
       isOpenOnMobile={openOnMobile}
       isResponsive={responsive}
     >
