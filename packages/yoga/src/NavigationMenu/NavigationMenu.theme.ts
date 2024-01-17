@@ -9,6 +9,8 @@ const NavigationMenu = ({ colors, fontWeights, radii, spacing }) => ({
     stamina: colors.stamina,
     yoga: colors.yoga,
     white: colors.white,
+    medium: colors.medium,
+    deep: colors.deep,
   },
   border: {
     color: {

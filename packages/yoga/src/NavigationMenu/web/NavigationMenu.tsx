@@ -26,19 +26,41 @@ const StyledNavigationMenu = styled.aside`
     padding: ${padding.small}px ${padding.xsmall}px;
     background-color: ${backgroundColor.default};
     overflow-y: auto;
+    overflow-x: hidden;
+    flex-shrink: 0;
+    scrollbar-width: thin;
 
-    width: ${isCollapsed ? '98px' : '280px'};
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: ${backgroundColor.medium};
+      border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: ${backgroundColor.deep};
+    }
+
+    box-sizing: border-box;
+    position: relative;
+    width: ${isCollapsed ? '85px' : '280px'};
     height: 100%;
     right: 0;
 
+    z-index: 15;
     transition: width 300ms ease-in-out;
 
     ${isResponsive &&
     media.max('lg')`
-          position: absolute;
+          position: fixed;
           width: 100%;
-          height: calc(100% - 74px);
-          z-index: 10;
+          height: calc(100% - 58px);
           Top: 0;
           right: ${isOpenOnMobile ? '0' : '-100%'};
 
