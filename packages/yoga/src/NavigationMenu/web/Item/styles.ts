@@ -47,7 +47,6 @@ export const StyledTag = styled(Tag)`
 
 export const StyledText = styled(Text)`
   ${({
-    isCollapsed,
     theme: {
       yoga: {
         components: {
@@ -61,8 +60,6 @@ export const StyledText = styled(Text)`
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    
-    ${isCollapsed && "max-width: 0;"}
   `}
 `;
 
@@ -132,16 +129,11 @@ export const StyledItem = styled.li<{
     list-style-type: none;
     cursor: pointer;
 
-    ${isCollapsed && "max-width: 52px;"}
-
     svg {
       height: ${icon.height}px;
       width: ${icon.width}px;
 
-      ${isCollapsed && css`
-        flex-shrink: 0;
-        min-width: 20px;
-      `}
+      ${isCollapsed && `flex-shrink: 0;`}
     }
 
     &:hover,
@@ -170,7 +162,7 @@ export const StyledItem = styled.li<{
       ${isActive && Active};
 
       & > div {
-        ${props => props.isCollapsed && "overflow: hidden;"}
+        ${props => props.isCollapsed && 'overflow: hidden;'}
       }
     }
   `}

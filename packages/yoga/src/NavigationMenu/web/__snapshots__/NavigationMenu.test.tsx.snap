@@ -411,6 +411,8 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 }
 
 .c29 {
+  position: fixed;
+  bottom: 0;
   display: grid;
   grid-auto-columns: minmax(0,1fr);
   grid-auto-flow: column;
@@ -419,15 +421,23 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 74px;
-  background-color: #F5F5FA;
+  height: 56px;
+  background-color: #FFFFFF;
   margin: 0;
-  padding: 4px;
+  padding: 0;
   border: 1px solid #D7D7E0;
   gap: 4px;
+  z-index: 15;
 }
 
 .c33 {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
   color: #6B6B78;
   max-width: 100%;
   white-space: nowrap;
@@ -438,7 +448,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 .c30 {
   -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
-  background-color: transparent;
   border-radius: 8px;
   list-style-type: none;
   cursor: pointer;
@@ -448,11 +457,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   height: 20px;
   width: 20px;
   fill: #6B6B78;
-}
-
-.c30:hover,
-.c30:focus {
-  background-color: #D7D7E0;
 }
 
 .c30:hover .c32,
@@ -478,10 +482,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   pointer-events: none;
 }
 
-.c30 a.active div {
-  background-color: #F5F5FA;
-}
-
 .c30 a.active div .c32 {
   color: #D8385E;
 }
@@ -493,7 +493,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 .c34 {
   -webkit-transition: background-color 300ms ease-in-out;
   transition: background-color 300ms ease-in-out;
-  background-color: transparent;
   border-radius: 8px;
   list-style-type: none;
   cursor: pointer;
@@ -518,10 +517,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   pointer-events: none;
 }
 
-.c34 a.active div {
-  background-color: #F5F5FA;
-}
-
 .c34 a.active div .c32 {
   color: #D8385E;
 }
@@ -532,10 +527,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 
 .c34:not(:last-child) {
   pointer-events: none;
-}
-
-.c34 div {
-  background-color: #F5F5FA;
 }
 
 .c34 div .c32 {
@@ -563,7 +554,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   -ms-flex-pack: center;
   justify-content: center;
   gap: 4px;
-  padding: 8px 4px;
+  padding: 4px;
   border-radius: 8px;
 }
 
@@ -578,11 +569,40 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   gap: 20px;
   padding: 16px 12px;
   background-color: #F5F5FA;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-scrollbar-width: thin;
+  -moz-scrollbar-width: thin;
+  -ms-scrollbar-width: thin;
+  scrollbar-width: thin;
+  box-sizing: border-box;
+  position: relative;
   width: 280px;
   height: 100%;
   right: 0;
+  z-index: 15;
   -webkit-transition: width 300ms ease-in-out;
   transition: width 300ms ease-in-out;
+}
+
+.c0::-webkit-scrollbar {
+  width: 5px;
+}
+
+.c0::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.c0::-webkit-scrollbar-thumb {
+  background: #9898A6;
+  border-radius: 20px;
+}
+
+.c0::-webkit-scrollbar-thumb:hover {
+  background: #6B6B78;
 }
 
 .c1 {
@@ -608,7 +628,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  overflow-y: auto;
 }
 
 .c9 {
@@ -679,10 +698,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 
 @media (max-width:1024px) {
   .c0 {
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: calc(100% - 74px);
-    z-index: 10;
+    height: calc(100% - 58px);
     Top: 0;
     right: -100%;
     -webkit-transition: right 300ms ease-in-out;
@@ -691,7 +709,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 }
 
 <div>
-  <div
+  <aside
     class="c0"
   >
     <div
@@ -880,12 +898,13 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </aside>
   <nav
     class="c28"
   >
     <ul
       class="c29"
+      fill="white"
     >
       <li
         class="c30"
@@ -903,8 +922,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
               width="12"
             />
             <p
-              class="c14 c32 c33"
-              font-size="medium"
+              class="c32 c33"
             >
               Subscription
             </p>
@@ -927,8 +945,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
               width="12"
             />
             <p
-              class="c14 c32 c33"
-              font-size="medium"
+              class="c32 c33"
             >
               Billing
             </p>
@@ -949,8 +966,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
               width="12"
             />
             <p
-              class="c14 c32 c33"
-              font-size="medium"
+              class="c32 c33"
             >
               More
             </p>
@@ -1074,11 +1090,40 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   gap: 20px;
   padding: 16px 12px;
   background-color: #F5F5FA;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-scrollbar-width: thin;
+  -moz-scrollbar-width: thin;
+  -ms-scrollbar-width: thin;
+  scrollbar-width: thin;
+  box-sizing: border-box;
+  position: relative;
   width: 280px;
   height: 100%;
   right: 0;
+  z-index: 15;
   -webkit-transition: width 300ms ease-in-out;
   transition: width 300ms ease-in-out;
+}
+
+.c0::-webkit-scrollbar {
+  width: 5px;
+}
+
+.c0::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.c0::-webkit-scrollbar-thumb {
+  background: #9898A6;
+  border-radius: 20px;
+}
+
+.c0::-webkit-scrollbar-thumb:hover {
+  background: #6B6B78;
 }
 
 .c1 {
@@ -1093,7 +1138,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
 }
 
 <div>
-  <div
+  <aside
     class="c0"
   >
     <div
@@ -1142,7 +1187,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
         />
       </div>
     </div>
-  </div>
+  </aside>
 </div>
 `;
 
@@ -1274,11 +1319,40 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   gap: 20px;
   padding: 16px 12px;
   background-color: #F5F5FA;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-scrollbar-width: thin;
+  -moz-scrollbar-width: thin;
+  -ms-scrollbar-width: thin;
+  scrollbar-width: thin;
+  box-sizing: border-box;
+  position: relative;
   width: 280px;
   height: 100%;
   right: 0;
+  z-index: 15;
   -webkit-transition: width 300ms ease-in-out;
   transition: width 300ms ease-in-out;
+}
+
+.c0::-webkit-scrollbar {
+  width: 5px;
+}
+
+.c0::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.c0::-webkit-scrollbar-thumb {
+  background: #9898A6;
+  border-radius: 20px;
+}
+
+.c0::-webkit-scrollbar-thumb:hover {
+  background: #6B6B78;
 }
 
 .c1 {
@@ -1293,7 +1367,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
 }
 
 <div>
-  <div
+  <aside
     class="c0"
   >
     <div
@@ -1352,6 +1426,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
         </div>
       </div>
     </div>
-  </div>
+  </aside>
 </div>
 `;
