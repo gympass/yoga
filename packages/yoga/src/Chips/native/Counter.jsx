@@ -18,12 +18,12 @@ const Wrapper = styled(Text.Medium)`
   padding-left: 5px;
   margin-left: ${theme.spacing.xxxsmall}px;
 
-  color: ${theme.colors.white};
+  color: ${theme.colors.stamina};
   font-size: ${theme.fontSizes.xsmall}px;
   line-height: ${theme.lineHeights.xsmall}px;
 
   border-radius: ${theme.radii.small}px;
-  background-color: ${theme.colors.primary};
+  background-color: ${theme.colors.white};
 
   overflow: hidden;
 `;
