@@ -97,12 +97,12 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   padding-right: 5px;
   padding-left: 5px;
   margin-left: 4px;
-  color: #FFFFFF;
+  color: #231B22;
   font-size: 12px;
   line-height: 16px;
   font-weight: 500px;
   border-radius: 8px;
-  background-color: #D8385E;
+  background-color: #FFFFFF;
 }
 
 .c1 {
@@ -278,12 +278,12 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   padding-right: 5px;
   padding-left: 5px;
   margin-left: 4px;
-  color: #FFFFFF;
+  color: #231B22;
   font-size: 12px;
   line-height: 16px;
   font-weight: 500px;
   border-radius: 8px;
-  background-color: #D8385E;
+  background-color: #FFFFFF;
 }
 
 .c1 {
