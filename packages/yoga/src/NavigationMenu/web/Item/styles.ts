@@ -110,7 +110,7 @@ export const StyledItem = styled.li`
     theme: {
       yoga: {
         components: {
-          navigationmenu: { backgroundColor, border, icon, font },
+          navigationmenu: { backgroundColor, border, icon, font, padding },
         },
       },
     },
@@ -157,6 +157,13 @@ export const StyledItem = styled.li`
       & > div {
         ${props => props.isCollapsed && 'overflow: hidden;'}
       }
+    }
+
+    ${StyledTextContainer} {
+      ${isCollapsed && css`
+        padding: 10px ${padding.xsmall}px 10px ${padding.xsmall}px;
+        justify-content: center;
+      `}
     }
   `}
 `;

@@ -33,13 +33,16 @@ const Item = ({
           <Styles.StyledTextContainer>
             {Icon}
 
-            <Styles.StyledText>{label}</Styles.StyledText>
-
-            {tag && <Styles.StyledTag>{tag}</Styles.StyledTag>}
+            {!collapsed && (
+              <>
+                <Styles.StyledText>{label}</Styles.StyledText>
+                {tag && <Styles.StyledTag>{tag}</Styles.StyledTag>}
+              </>
+            )}
           </Styles.StyledTextContainer>
         </Wrapper>
       </Styles.StyledItem>
-      {expanded && children}
+      {!collapsed && expanded && children}
     </>
   );
 };

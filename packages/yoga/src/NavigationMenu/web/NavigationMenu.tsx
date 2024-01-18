@@ -25,7 +25,6 @@ const StyledNavigationMenu = styled.aside`
     gap: ${gap.medium}px;
     padding: ${padding.small}px ${padding.xsmall}px;
     background-color: ${backgroundColor.default};
-    overflow-y: auto;
     overflow-x: hidden;
     flex-shrink: 0;
     scrollbar-width: thin;
@@ -49,7 +48,7 @@ const StyledNavigationMenu = styled.aside`
 
     box-sizing: border-box;
     position: relative;
-    width: ${isCollapsed ? '85px' : '280px'};
+    width: ${isCollapsed ? '76px' : '280px'};
     height: 100%;
     right: 0;
 
@@ -57,15 +56,15 @@ const StyledNavigationMenu = styled.aside`
     transition: width 300ms ease-in-out;
 
     ${isResponsive &&
-    media.max('lg')`
-          position: fixed;
-          width: 100%;
-          height: calc(100% - 58px);
-          Top: 0;
-          right: ${isOpenOnMobile ? '0' : '-100%'};
+      media.max('lg')`
+        position: fixed;
+        width: 100%;
+        height: calc(100% - 58px);
+        Top: 0;
+        right: ${isOpenOnMobile ? '0' : '-100%'};
 
-          transition: right 300ms ease-in-out;
-        `}
+        transition: right 300ms ease-in-out;
+      `}
   `}
 `;
 
