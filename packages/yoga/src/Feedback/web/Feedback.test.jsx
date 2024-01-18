@@ -60,7 +60,7 @@ describe('<Feedback />', () => {
       <Feedback variant="success" title={title} description={description} />,
     );
 
-    expect(getByTestId('feedback-icon')).toMatchSnapshot();
+    expect(getByTestId('feedback-icon-success')).toMatchSnapshot();
   });
 
   it('should render the icon for informative variant', () => {
@@ -72,7 +72,7 @@ describe('<Feedback />', () => {
       />,
     );
 
-    expect(getByTestId('feedback-icon')).toMatchSnapshot();
+    expect(getByTestId('feedback-icon-informative')).toMatchSnapshot();
   });
 
   it('should render the icon for attention variant', () => {
@@ -80,6 +80,14 @@ describe('<Feedback />', () => {
       <Feedback variant="attention" title={title} description={description} />,
     );
 
-    expect(getByTestId('feedback-icon')).toMatchSnapshot();
+    expect(getByTestId('feedback-icon-attention')).toMatchSnapshot();
+  });
+
+  it('should render the icon for delayed variant', () => {
+    const { getByTestId } = renderWithTheme(
+      <Feedback variant="delayed" title={title} description={description} />,
+    );
+
+    expect(getByTestId('feedback-icon-delayed')).toMatchSnapshot();
   });
 });

@@ -11,6 +11,7 @@ import ArrowDropUp from './svg/arrow_drop_up.svg';
 import ArrowLeft from './svg/arrow_left.svg';
 import ArrowRight from './svg/arrow_right.svg';
 import ArrowUp from './svg/arrow_up.svg';
+import Attention from './svg/attention.svg';
 import AutomaticInvite from './svg/automatic_invite.svg';
 import Bank from './svg/bank.svg';
 import BankStatement from './svg/bank_statement.svg';
@@ -48,6 +49,7 @@ import CornerUpRight from './svg/corner_up_right.svg';
 import CreditCard from './svg/credit_card.svg';
 import Cycling from './svg/cycling.svg';
 import Dance from './svg/dance.svg';
+import Delayed from './svg/delayed.svg';
 import Disconnect from './svg/disconnect.svg';
 import DislikeFilled from './svg/dislike_filled.svg';
 import Dislike from './svg/dislike.svg';
@@ -78,6 +80,7 @@ import HomeFilled from './svg/home_filled.svg';
 import Home from './svg/home.svg';
 import Image from './svg/image.svg';
 import Info from './svg/info.svg';
+import Information from './svg/information.svg';
 import Instagram from './svg/instagram.svg';
 import JumpRope from './svg/jump_rope.svg';
 import LikeFilled from './svg/like_filled.svg';
@@ -146,6 +149,7 @@ import Spa from './svg/spa.svg';
 import SportsEquipment from './svg/sports-equipment-store.svg';
 import StarFilled from './svg/star_filled.svg';
 import Star from './svg/star.svg';
+import Success from './svg/success.svg';
 import SystemStatus from './svg/system_status.svg';
 import ParkingLot from './svg/parking-lot.svg';
 import PriceTag from './svg/price_tag.svg';
@@ -188,6 +192,7 @@ export {
   ArrowLeft,
   ArrowRight,
   ArrowUp,
+  Attention,
   AutomaticInvite,
   Bank,
   BankStatement,
@@ -225,6 +230,7 @@ export {
   CreditCard,
   Cycling,
   Dance,
+  Delayed,
   Disconnect,
   DislikeFilled,
   Dislike,
@@ -255,6 +261,7 @@ export {
   Home,
   Image,
   Info,
+  Information,
   Instagram,
   JumpRope,
   LikeFilled,
@@ -323,6 +330,7 @@ export {
   SportsEquipment,
   StarFilled,
   Star,
+  Success,
   SystemStatus,
   ParkingLot,
   PriceTag,
