@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import { media } from '@gympass/yoga-helpers';
 
 const StyledItemsContainer = styled.nav`
+  position: relative;
   ${media.lg`display: none`}
 `;
 
@@ -18,7 +19,7 @@ const StyledItems = styled.ul`
       },
     },
   }) => css`
-    position: fixed;
+    position: absolute;
     bottom: 0;
     display: grid;
     grid-auto-columns: minmax(0, 1fr);

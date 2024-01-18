@@ -115,6 +115,7 @@ export const StyledItem = styled.li<{
     isActive,
     theme: {
       yoga: {
+        spacing,
         components: {
           navigationmenu: { backgroundColor, border, icon, font },
         },
@@ -127,6 +128,7 @@ export const StyledItem = styled.li<{
     border-radius: ${border.radius.default}px;
     list-style-type: none;
     cursor: pointer;
+    margin-right: ${spacing.xxsmall}px;
 
     svg {
       height: ${icon.height}px;
