@@ -22,9 +22,15 @@ const StyledButton = styled(Button)`
       background-color: ${button.types.text.backgroundColor};
       border-color: ${button.types.text.backgroundColor};
       color: ${colors[state]};
+      text-decoration: underline;
+      text-decoration-color: ${button.types.link.font[state].color};
 
       svg {
         fill: ${colors[state]};
+      }
+
+      &:not([disabled]):link {
+        text-decoration: underline;
       }
 
       &:not([disabled]):hover, &:not([disabled]):focus, &:not([disabled]):active {
@@ -34,6 +40,9 @@ const StyledButton = styled(Button)`
 
       &:not([disabled]):hover {
         color: ${hexToRgb(colors[state], 0.5)};
+
+        text-decoration-color: ${hexToRgb(colors[state], 0.5)};
+
         svg {
           fill: ${hexToRgb(colors[state], 0.5)};
         }
@@ -41,6 +50,9 @@ const StyledButton = styled(Button)`
 
       &:not([disabled]):focus, &:not([disabled]):active {
         color: ${hexToRgb(colors[state], 0.75)};
+
+        text-decoration-color: ${hexToRgb(colors[state], 0.75)};
+
         svg {
           fill: ${hexToRgb(colors[state], 0.75)};
         }
@@ -50,12 +62,18 @@ const StyledButton = styled(Button)`
         inverted
           ? `
           color: ${colors.white};
+
+          text-decoration-color: ${colors.white};
+
           svg {
             fill: ${colors.white};
           }
 
           &:not([disabled]):hover {
             color: ${hexToRgb(colors.white, 0.5)};
+
+            text-decoration-color: ${hexToRgb(colors.white, 0.5)};
+
             svg {
               fill: ${hexToRgb(colors.white, 0.5)};
             }
@@ -63,6 +81,9 @@ const StyledButton = styled(Button)`
 
           &:not([disabled]):focus, &:not([disabled]):active {
             color: ${hexToRgb(colors.white, 0.75)};
+
+            text-decoration-color: ${hexToRgb(colors.white, 0.75)};
+
             svg {
               fill: ${hexToRgb(colors.white, 0.75)};
             }
@@ -75,6 +96,11 @@ const StyledButton = styled(Button)`
         background-color: ${button.types.text.backgroundColor};
         border-color: ${button.types.text.backgroundColor};
         color: ${button.types.text.disabled};
+
+        // text-decoration: none;
+        text-decoration: underline;
+        text-decoration-color: ${button.types.text.disabled};
+
         svg {
           fill: ${button.types.text.disabled};
         }
