@@ -25,11 +25,19 @@ const Link = styled(Label)`
 
     return `
       color: ${link.font[state].color};
+      text-decoration: underline;
+      text-decoration-color: ${link.font[state].color};
 
-      ${disabled ? `color: ${link.font.disabled.color};` : ''}
+      ${
+        disabled
+          ? `color: ${link.font.disabled.color};
+            text-decoration-color: ${link.font.disabled.color};`
+          : ''
+      }
       ${
         !disabled && pressed
-          ? `color: ${hexToRgb(link.font[state].color, 0.75)};`
+          ? `color: ${hexToRgb(link.font[state].color, 0.75)};
+            text-decoration-color: ${hexToRgb(link.font[state].color, 0.75)};`
           : ''
       }
     `;
