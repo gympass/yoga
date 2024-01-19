@@ -25,10 +25,16 @@ const Link = styled(Button)`
       border: none;
       border-radius: 0;
       color: ${button.types.link.font[state].color};
+      text-decoration: underline;
+      text-decoration-color: ${button.types.link.font[state].color};
 
       svg {
         margin-right: ${button.types.link.icon.margin.right}px;
         fill: ${button.types.link.font[state].color};
+      }
+
+      &:not([disabled]):link {
+        text-decoration: underline;
       }
 
       &:disabled,
@@ -42,6 +48,11 @@ const Link = styled(Button)`
       &:not([disabled]):hover  {
         color: ${hexToRgb(button.types.link.font[state].color, 0.5)};
 
+        text-decoration-color: ${hexToRgb(
+          button.types.link.font[state].color,
+          0.5,
+        )};
+
         svg {
           fill: ${hexToRgb(button.types.link.font[state].color, 0.5)};
         }
@@ -50,6 +61,11 @@ const Link = styled(Button)`
       &:not([disabled]):focus, &:not([disabled]):active {
         color: ${hexToRgb(button.types.link.font[state].color, 0.75)};
 
+        text-decoration-color: ${hexToRgb(
+          button.types.link.font[state].color,
+          0.75,
+        )};
+
         svg {
           fill: ${hexToRgb(button.types.link.font[state].color, 0.75)};
         }
@@ -57,6 +73,10 @@ const Link = styled(Button)`
 
       &:disabled {
         color: ${button.types.link.font.disabled.color};
+
+        // text-decoration: none;
+        text-decoration: underline;
+        text-decoration-color: ${button.types.link.font.disabled.color};
 
         svg {
           fill: ${button.types.link.font.disabled.color};
