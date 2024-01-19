@@ -6,7 +6,11 @@ import withTouchable from './withTouchable';
 import { Label, ButtonContainer } from './Button';
 
 const LabelText = styled(Label)`
-  ${({ color }) => `color: ${color};`}
+  ${({ color }) => `
+    color: ${color};
+    text-decoration: underline;
+    text-decoration-color: ${color};
+  `},
 `;
 
 const ButtonContainerText = styled(ButtonContainer)`
