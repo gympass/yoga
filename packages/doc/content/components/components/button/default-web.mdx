@@ -5,20 +5,27 @@ You can use all differente compounds like `<Button.Outline />` and `<Button.Text
 
 ### Usage
 
-#### Default
+#### Small
+
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
+  <Button small>Find an activity</Button>
+</Box>
+```
+
+#### Primary
 
 ```javascript
 <Box display="flex" justifyContent="space-evenly" width="100%">
   <Button>Find an activity</Button>
-  <Button secondary>Find an activity</Button>
 </Box>
 ```
 
-#### Inverted
+#### Full
+
 ```javascript
 <Box display="flex" justifyContent="space-evenly" width="100%">
-  <Button inverted>Find an activity</Button>
-  <Button secondary inverted>Find an activity</Button>
+  <Button full>Find an activity</Button>
 </Box>
 ```
 
@@ -37,9 +44,7 @@ You can use all differente compounds like `<Button.Outline />` and `<Button.Text
 ```javascript
 <Box display="flex" justifyContent="space-evenly" width="100%">
   <Button icon={Booking}>Find an activity</Button>
-  <Button icon={Booking} secondary>
-    Find an activity
-  </Button>
+  <Button icon={Booking} inverted>Find an activity</Button>
 </Box>
 ```
 
@@ -59,13 +64,25 @@ render(() => {
 
       <Box display="flex" gap="medium">
         <Button isLoading={loading}>Find an activity</Button>
-        <Button icon={Booking} inverted isLoading={loading}>Find an activity</Button>
-        <Button icon={Booking} secondary isLoading={loading}>Find an activity</Button>
-        <Button secondary inverted isLoading={loading}>Find an activity</Button>
+        <Button icon={Booking} isLoading={loading}>Find an activity</Button>
       </Box>
     </Box>
   );
 });
+```
+
+#### Inverted
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%" bg="stamina" padding="medium">
+  <Button inverted>Find an activity</Button>
+</Box>
+```
+
+#### Disabled
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
+  <Button disabled>Find an activity</Button>
+</Box>
 ```
 
 ### Props
