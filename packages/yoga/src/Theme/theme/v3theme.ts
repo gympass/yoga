@@ -1,0 +1,58 @@
+import createTheme from '../helpers/themeGenerator';
+
+export const v3theme = createTheme(tokens => ({
+  colors: {
+    secondary: tokens.colors.staminaNew,
+
+    deep: tokens.colors.deepNew,
+    hope: tokens.colors.hopeNew,
+    light: tokens.colors.lightNew,
+    clear: tokens.colors.clearNew,
+    peace: tokens.colors.peaceNew,
+    relax: tokens.colors.relaxNew,
+    medium: tokens.colors.mediumNew,
+    uplift: tokens.colors.upliftNew,
+    stamina: tokens.colors.staminaNew,
+    success: tokens.colors.successNew,
+    neutral: tokens.colors.neutralNew,
+    deepPurple: tokens.colors.deepPurpleNew,
+
+    feedback: {
+      success: {
+        ...[tokens.colors.successNew, tokens.colors.hopeNew],
+        light: tokens.colors.successNew,
+        dark: tokens.colors.hopeNew,
+      },
+      informative: {
+        ...[tokens.colors.neutralNew, tokens.colors.relaxNew],
+        light: tokens.colors.neutralNew,
+        dark: tokens.colors.relaxNew,
+      },
+      neutral: {
+        ...[tokens.colors.lightNew, tokens.colors.mediumNew],
+        light: tokens.colors.lightNew,
+        dark: tokens.colors.mediumNew,
+      },
+    },
+
+    text: {
+      primary: tokens.colors.staminaNew,
+      secondary: tokens.colors.deepNew,
+      disabled: tokens.colors.lightNew,
+    },
+
+    elements: {
+      selectionAndIcons: tokens.colors.mediumNew,
+      lineAndBorders: tokens.colors.lightest,
+      backgroundAndDisabled: tokens.colors.clearNew,
+    },
+  },
+
+  baseFont: tokens.fonts.inter,
+
+  fontWeights: {
+    regular: tokens.fontWeights.regularNew,
+    medium: tokens.fontWeights.mediumNew,
+    bold: tokens.fontWeights.boldNew,
+  },
+}));

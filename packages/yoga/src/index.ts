@@ -3,6 +3,7 @@ import ThemeProvider, {
   yogaTheme,
   theme,
   createTheme,
+  v3theme,
 } from './Theme';
 import Accordion from './Accordion';
 import Button from './Button';
@@ -49,6 +50,7 @@ export {
   createTheme,
   yogaTheme,
   theme,
+  v3theme,
   Button,
   List,
   Checkbox,
