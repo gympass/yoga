@@ -37,7 +37,7 @@ const StyledNavigationMenu = styled(Box)<{
 
     ${isResponsive &&
     media.max('lg')`
-          position: absolute;
+          position: fixed;
           width: 100%;
           height: calc(100% - 56px);
           z-index: 10;

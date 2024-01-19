@@ -677,7 +677,7 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 
 @media (max-width:1024px) {
   .c0 {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: calc(100% - 56px);
     z-index: 10;
