@@ -1,15 +1,15 @@
-### Reference
-
-Gympass `<Button />` component implements all our design guidelines such as default spacings, borders and color pallete tokens.
-You can use all differente compounds like `<Button.Outline />` and `<Button />` combining with their props such as `small` or `inverted` so the button become the desired variation.
-
-### Usage
-
-#### Default
+#### Primary
 
 ```javascript
 <Box display="flex" justifyContent="space-evenly" width="100%">
   <Button.Text>Find an activity</Button.Text>
+</Box>
+```
+
+#### Secondary
+
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
   <Button.Text secondary>Find an activity</Button.Text>
 </Box>
 ```
@@ -32,6 +32,22 @@ You can use all differente compounds like `<Button.Outline />` and `<Button />` 
   <Button.Text icon={Booking} secondary>
     Find an activity
   </Button.Text>
+</Box>
+```
+
+#### Inverted
+
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%" bg="stamina" padding="medium">
+  <Button.Text inverted>Find an activity</Button.Text>
+</Box>
+```
+
+#### Disabled
+
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
+  <Button.Text disabled>Find an activity</Button.Text>
 </Box>
 ```
 
