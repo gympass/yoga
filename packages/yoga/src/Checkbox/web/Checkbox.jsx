@@ -250,6 +250,8 @@ const Checkbox = ({
 }) => {
   const inputRef = useRef(null);
 
+  const { onChange, ...restWithoutOnChange } = rest;
+
   useEffect(() => {
     if (inputRef.current) {
       inputRef.current.indeterminate = indeterminate;
@@ -293,7 +295,7 @@ const Checkbox = ({
             checked={checked}
             disabled={disabled}
             {...(value ? { value } : {})}
-            {...rest}
+            {...restWithoutOnChange}
           />
           {label}
         </Label>
