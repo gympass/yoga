@@ -14,7 +14,6 @@ function createTheme(themeVars: ThemeVars) {
       `Invalid param 'themeVars', expected 'function', received '${typeof themeVars}'.`,
     );
 
-  console.log('themeVars', themeVars);
   const themeBuilder = themeVars.bind({});
 
   themeBuilder.isFromThemeBuilder = true;
