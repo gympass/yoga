@@ -8,17 +8,21 @@ const FontLoader = ({
       baseFont: { family, weight },
     },
   },
-}) => (
-  <>
-    {typeof window !== 'undefined' ? (
-      <GoogleFontLoader fonts={[{ font: family, weights: weight }]} />
-    ) : (
-      <link
-        rel="stylesheet"
-        href={`https://fonts.googleapis.com/css?family=${family}:${weight.join()}`}
-      />
-    )}
-  </>
-);
+}) => {
+  const uniqueWeights = [...new Set(weight)];
+
+  return (
+    <>
+      {typeof window !== 'undefined' ? (
+        <GoogleFontLoader fonts={[{ font: family, weights: uniqueWeights }]} />
+      ) : (
+        <link
+          rel="stylesheet"
+          href={`https://fonts.googleapis.com/css?family=${family}:${uniqueWeights.join()}`}
+        />
+      )}
+    </>
+  );
+};
 
 export default withTheme(FontLoader);
