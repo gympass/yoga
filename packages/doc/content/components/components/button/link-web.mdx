@@ -1,8 +1,15 @@
-### Usage
+### Primary
 
 ```javascript
 <Box display="flex" justifyContent="space-evenly" width="100%">
   <Button.Link>Find an activity</Button.Link>
+</Box>
+```
+
+### Secondary
+
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
   <Button.Link secondary>Find an activity</Button.Link>
 </Box>
 ```
@@ -21,12 +28,20 @@
 
 ```javascript
 <Box display="flex" justifyContent="space-evenly" width="100%">
-  <Button.Link href="http://www.gympass.com" icon={Booking} target="blank">
-    Find an activity (external link)
+  <Button.Link icon={Booking}>
+    Find an activity
   </Button.Link>
-  <Button.Link secondary href="http://www.gympass.com" icon={Booking} target="blank">
-    Find an activity (external link)
+  <Button.Link secondary icon={Booking}>
+    Find an activity
   </Button.Link>
+</Box>
+```
+
+### Disabled
+
+```javascript
+<Box display="flex" justifyContent="space-evenly" width="100%">
+  <Button.Link disabled>Find an activity</Button.Link>
 </Box>
 ```
 
