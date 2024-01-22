@@ -1,19 +1,14 @@
 import { weights } from './font-weights';
 
-export interface Font {
-  family: string;
-  weight: (number | string)[];
-}
-
-export interface Fonts {
-  rubik?: Font;
-  inter?: Font;
-}
-
 const fontWeights = Object.values(weights);
 const weight = [...fontWeights, ...fontWeights.map(value => `${value}i`)];
 
-const fonts: Fonts = {
+type Font = {
+  family: string;
+  weight: typeof weight;
+};
+
+const fonts: Record<string, Font> = {
   rubik: {
     family: 'Rubik',
     weight,
