@@ -74,7 +74,6 @@ const Link = styled(Button)`
       &:disabled {
         color: ${button.types.link.font.disabled.color};
 
-        // text-decoration: none;
         text-decoration: underline;
         text-decoration-color: ${button.types.link.font.disabled.color};
 

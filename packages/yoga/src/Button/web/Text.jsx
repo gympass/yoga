@@ -97,7 +97,6 @@ const StyledButton = styled(Button)`
         border-color: ${button.types.text.backgroundColor};
         color: ${button.types.text.disabled};
 
-        // text-decoration: none;
         text-decoration: underline;
         text-decoration-color: ${button.types.text.disabled};
 
