@@ -26,7 +26,12 @@ const StyledHeader = styled(Box)`
   `}
 `;
 
-const Header = ({ link, logo, children, ...props }) => {
+const Header = ({ link, logo, children, allowJavaScriptUrls = True, ...props }) => {
+  const isJavaScriptProtocol = /^[\u0000-\u001F ]*j[\r\n\t]*a[\r\n\t]*v[\r\n\t]*a[\r\n\t]*s[\r\n\t]*c[\r\n\t]*r[\r\n\t]*i[\r\n\t]*p[\r\n\t]*t[\r\n\t]*\:/i
+    if (isJavaScriptProtocol.test(link) && !allowJavaScriptUrls) {
+      console.warn(`Header has blocked a javascript: URL as a security precaution`);
+      return null;
+  }
   return (
     <StyledHeader
       as="header"
