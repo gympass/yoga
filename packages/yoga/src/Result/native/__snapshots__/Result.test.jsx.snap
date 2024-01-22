@@ -993,6 +993,9 @@ exports[`<Result /> should match snapshot 1`] = `
               "fontSize": 16,
               "fontWeight": "500",
               "textAlign": "center",
+              "textDecorationColor": "#D8385E",
+              "textDecorationLine": "underline",
+              "textDecorationStyle": "solid",
             },
             {
               "marginRight": 32,
@@ -2443,6 +2446,9 @@ exports[`<Result /> should match snapshot without limitLabel prop 1`] = `
               "fontSize": 16,
               "fontWeight": "500",
               "textAlign": "center",
+              "textDecorationColor": "#D8385E",
+              "textDecorationLine": "underline",
+              "textDecorationStyle": "solid",
             },
             {
               "marginRight": 32,

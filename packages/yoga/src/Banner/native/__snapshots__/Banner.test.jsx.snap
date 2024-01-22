@@ -184,6 +184,9 @@ exports[`<Banner /> should match snapshot with button 1`] = `
                 "fontSize": 14,
                 "fontWeight": "500",
                 "textAlign": "center",
+                "textDecorationColor": "#231B22",
+                "textDecorationLine": "underline",
+                "textDecorationStyle": "solid",
               },
             ]
           }
@@ -668,6 +671,9 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
                 "fontSize": 14,
                 "fontWeight": "500",
                 "textAlign": "center",
+                "textDecorationColor": "#231B22",
+                "textDecorationLine": "underline",
+                "textDecorationStyle": "solid",
               },
             ]
           }
@@ -733,6 +739,9 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
                 "fontSize": 14,
                 "fontWeight": "500",
                 "textAlign": "center",
+                "textDecorationColor": "#231B22",
+                "textDecorationLine": "underline",
+                "textDecorationStyle": "solid",
               },
             ]
           }
