@@ -1,7 +1,10 @@
 import { weights } from './font-weights';
 
 const fontWeights = Object.values(weights);
-const weight = [...fontWeights, ...fontWeights.map(value => `${value}i`)];
+const weight = [
+  ...fontWeights,
+  ...fontWeights.map(value => `${value}i` as const),
+];
 
 type Font = {
   family: string;
