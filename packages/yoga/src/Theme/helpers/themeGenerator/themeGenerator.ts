@@ -1,4 +1,4 @@
-import YogaTokens from '../../../../../tokens';
+import YogaTokens from '@gympass/yoga-tokens';
 
 type ThemeVars = {
   (tokens: typeof YogaTokens): {};
