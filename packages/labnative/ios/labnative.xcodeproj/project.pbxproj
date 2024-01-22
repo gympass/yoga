@@ -24,6 +24,12 @@
 		9E6F0E36A9004A42B8D6A267 /* Rubik-300-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6CA68BCC2D64A3EA119626B /* Rubik-300-italic.ttf */; };
 		BD0D3E5A2407B2895E1F8661 /* libPods-labnative-labnativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA843BE336E44886F15181E /* libPods-labnative-labnativeTests.a */; };
 		E7BF20989ECD4FB5BF3AF1DD /* Rubik.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33F58296D36345399CBC36B3 /* Rubik.ttf */; };
+		2994EDDF64974357A27EAAC3 /* Inter-300.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FEAAFA6597B941818987D1C6 /* Inter-300.ttf */; };
+		FF3E4C0FA85048EFA8EA16A6 /* Inter-500.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20E6F91CA99041E688FE02A2 /* Inter-500.ttf */; };
+		AA20D33B2EC244D7BB333672 /* Inter-700.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B29CEF0279549EE9C8C60C2 /* Inter-700.ttf */; };
+		7F730649CB494993969CCFCE /* Inter-800.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6C91200DE044F5695E3C07B /* Inter-800.ttf */; };
+		D66B574DAD2D485D9BB12FA5 /* Inter-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E96AA66128D242B09DD38E14 /* Inter-900.ttf */; };
+		748931469D5D48638537FBF5 /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEDB45AC00BA45BB9AF5B167 /* Inter.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,12 @@
 		EB741C2FCFAC5D1D17A9D9C4 /* Pods-labnative-labnativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnative-labnativeTests.debug.xcconfig"; path = "Target Support Files/Pods-labnative-labnativeTests/Pods-labnative-labnativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FEA77756AD892BAB079640ED /* Pods-labnativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-labnativeTests.debug.xcconfig"; path = "Target Support Files/Pods-labnativeTests/Pods-labnativeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEAAFA6597B941818987D1C6 /* Inter-300.ttf */ = {isa = PBXFileReference; name = "Inter-300.ttf"; path = "../../yoga/src/Fonts/Inter-300.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		20E6F91CA99041E688FE02A2 /* Inter-500.ttf */ = {isa = PBXFileReference; name = "Inter-500.ttf"; path = "../../yoga/src/Fonts/Inter-500.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2B29CEF0279549EE9C8C60C2 /* Inter-700.ttf */ = {isa = PBXFileReference; name = "Inter-700.ttf"; path = "../../yoga/src/Fonts/Inter-700.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C6C91200DE044F5695E3C07B /* Inter-800.ttf */ = {isa = PBXFileReference; name = "Inter-800.ttf"; path = "../../yoga/src/Fonts/Inter-800.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E96AA66128D242B09DD38E14 /* Inter-900.ttf */ = {isa = PBXFileReference; name = "Inter-900.ttf"; path = "../../yoga/src/Fonts/Inter-900.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DEDB45AC00BA45BB9AF5B167 /* Inter.ttf */ = {isa = PBXFileReference; name = "Inter.ttf"; path = "../../yoga/src/Fonts/Inter.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +157,12 @@
 				53B7F739796943F5AD63E19F /* Rubik-900.ttf */,
 				C41A3A5FEDC7439BA430B6D7 /* Rubik-italic.ttf */,
 				33F58296D36345399CBC36B3 /* Rubik.ttf */,
+				FEAAFA6597B941818987D1C6 /* Inter-300.ttf */,
+				20E6F91CA99041E688FE02A2 /* Inter-500.ttf */,
+				2B29CEF0279549EE9C8C60C2 /* Inter-700.ttf */,
+				C6C91200DE044F5695E3C07B /* Inter-800.ttf */,
+				E96AA66128D242B09DD38E14 /* Inter-900.ttf */,
+				DEDB45AC00BA45BB9AF5B167 /* Inter.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -302,6 +320,12 @@
 				1251CB04BB5F4A67A17BB04E /* Rubik-900.ttf in Resources */,
 				9C3432F47B0348A8B355EFD9 /* Rubik-italic.ttf in Resources */,
 				E7BF20989ECD4FB5BF3AF1DD /* Rubik.ttf in Resources */,
+				2994EDDF64974357A27EAAC3 /* Inter-300.ttf in Resources */,
+				FF3E4C0FA85048EFA8EA16A6 /* Inter-500.ttf in Resources */,
+				AA20D33B2EC244D7BB333672 /* Inter-700.ttf in Resources */,
+				7F730649CB494993969CCFCE /* Inter-800.ttf in Resources */,
+				D66B574DAD2D485D9BB12FA5 /* Inter-900.ttf in Resources */,
+				748931469D5D48638537FBF5 /* Inter.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
