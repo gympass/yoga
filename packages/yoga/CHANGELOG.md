@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.91.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.90.1...@gympass/yoga@7.91.0) (2024-01-23)
+
+
+### Bug Fixes
+
+* refactor text component to update infer values ([efe3329](https://github.com/Gympass/yoga/commit/efe332964fd7ebc345ed6f9b0ef6bbff97cd0225))
+* update typings for sc components ([3770306](https://github.com/Gympass/yoga/commit/377030639b5821afcd26c1ffd4d75bc69691fcb5))
+
+
+### Features
+
+* add sc typings ([fb967a9](https://github.com/Gympass/yoga/commit/fb967a900a8b35ad258a28c438648f22be1ecbf2))
+
+
+
+
+
 ## [7.90.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.90.0...@gympass/yoga@7.90.1) (2024-01-10)
 
 
