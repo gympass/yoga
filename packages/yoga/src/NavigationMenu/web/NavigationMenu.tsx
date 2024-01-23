@@ -7,7 +7,11 @@ import { Item, Subitem } from './Item';
 import { BottomItems, BottomItem } from './BottomItems';
 import Box from '../../Box';
 
-const StyledNavigationMenu = styled(Box)`
+const StyledNavigationMenu = styled(Box)<{
+  isOpenOnMobile: boolean;
+  isResponsive: boolean;
+  children: React.ReactNode;
+}>`
   ${({
     isOpenOnMobile,
     isResponsive,

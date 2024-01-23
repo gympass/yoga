@@ -5,7 +5,11 @@ import { Text } from '@gympass/yoga';
 import Box from '../../../Box';
 import Icon from '../../../Icon';
 
-const StyledMenu = styled(Box)`
+const StyledMenu = styled(Box)<{
+  hasAction: boolean;
+  children: React.ReactNode;
+  onClick?: (() => void) | undefined;
+}>`
   ${({
     hasAction,
     theme: {
@@ -84,7 +88,7 @@ const Menu = ({ avatar: Avatar, subtitle, title, onClick }: MenuProps) => {
       {Avatar}
 
       <StyledTextContainer>
-        {title &&  <StyledText>{title}</StyledText>}
+        {title && <StyledText>{title}</StyledText>}
 
         {subtitle && <Text.Small color="deep">{subtitle}</Text.Small>}
       </StyledTextContainer>

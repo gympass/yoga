@@ -4,7 +4,7 @@ import { Text, Skeleton } from '@gympass/yoga';
 import Actions from './Actions';
 import Box from '../../../Box';
 
-const StyledSwitcher = styled(Box)`
+const StyledSwitcher = styled(Box)<{ fill: string; children: React.ReactNode }>`
   ${({
     fill,
     theme: {
