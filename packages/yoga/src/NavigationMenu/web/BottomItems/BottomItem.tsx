@@ -52,7 +52,7 @@ const Active = css`
     `}
 `;
 
-const StyledItem = styled.li`
+const StyledItem = styled.li<{ isActive: boolean; children: React.ReactNode }>`
   ${({
     isActive,
     theme: {

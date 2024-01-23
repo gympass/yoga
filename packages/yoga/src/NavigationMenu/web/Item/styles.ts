@@ -4,7 +4,10 @@ import Box from '../../../Box';
 import Tag from '../../../Tag';
 import Text from '../../../Text';
 
-export const StyledTextContainer = styled(Box)`
+export const StyledTextContainer = styled(Box)<{
+  isSubItem?: boolean;
+  children: React.ReactNode;
+}>`
   ${({
     isSubItem,
     theme: {
@@ -60,7 +63,7 @@ export const StyledText = styled(Text)`
   `}
 `;
 
-const Active = css`
+const Active = css<{ isResponsive?: boolean }>`
   ${({
     isResponsive,
     theme: {
@@ -103,7 +106,11 @@ const Active = css`
   `}
 `;
 
-export const StyledItem = styled.li`
+export const StyledItem = styled.li<{
+  isActive: boolean;
+  isResponsive?: boolean;
+  children: React.ReactNode;
+}>`
   ${({
     isActive,
     theme: {
