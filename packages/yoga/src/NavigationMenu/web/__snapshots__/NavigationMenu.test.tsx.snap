@@ -884,7 +884,6 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   >
     <ul
       class="c29"
-      fill="white"
     >
       <li
         class="c30"
