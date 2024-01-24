@@ -48,5 +48,4 @@ type NestedObject<T> = {
 type ThemeReader = CallableFunction<typeof skeleton> &
   NestedObject<typeof skeleton>;
 
-// @ts-ignore TODO: Remove any
 export default createFakeObj(['theme', 'yoga'], skeleton) as ThemeReader;
