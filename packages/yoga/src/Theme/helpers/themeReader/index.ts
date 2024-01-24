@@ -31,4 +31,22 @@ const createFakeObj = (paths, object) => {
   });
 };
 
-export default createFakeObj(['theme', 'yoga'], skeleton);
+// TODO: Change this, maybe even using the custom theme from the declaration.
+// export type PropParameter = { theme: { yoga: typeof skeleton } };
+export type PropParameter = any;
+
+type CallableFunction<T> = {
+  (props: PropParameter): T;
+};
+
+type NestedObject<T> = {
+  [K in keyof T]: T[K] extends Record<string, any>
+    ? NestedObject<T[K]> & CallableFunction<T[K]>
+    : T[K] & CallableFunction<T[K]>;
+};
+
+type ThemeReader = CallableFunction<typeof skeleton> &
+  NestedObject<typeof skeleton>;
+
+// @ts-ignore TODO: Remove any
+export default createFakeObj(['theme', 'yoga'], skeleton) as ThemeReader;

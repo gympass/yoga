@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styled, { css } from 'styled-components';
 import { render } from '@testing-library/react';
 
@@ -23,7 +21,7 @@ describe('themeReader - web specs', () => {
   });
 
   it('should render with conditional', () => {
-    const Component = styled.div`
+    const Component = styled.div<{ borders: boolean }>`
       border: ${({ borders }) =>
         borders
           ? css`

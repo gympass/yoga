@@ -1,8 +1,10 @@
 import { Input, Password, Email, InputNumber, Tel } from './native';
 
-Input.Password = Password;
-Input.Email = Email;
-Input.Number = InputNumber;
-Input.Tel = Tel;
+const ExportInput = Object.assign(Input, {
+  Password,
+  Email,
+  Number: InputNumber,
+  Tel,
+});
 
-export default Input;
+export default ExportInput;

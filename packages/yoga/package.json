@@ -57,6 +57,7 @@
   "devDependencies": {
     "@react-native-community/eslint-config": "^3.0.1",
     "@types/styled-components": "^5.1.34",
+    "@types/styled-components-react-native": "^5.2.5",
     "babel-plugin-inline-react-svg": "^1.1.1",
     "react-native": "0.72.3",
     "styled-components": "^4.4.0"
@@ -70,6 +71,7 @@
   "tsup": {
     "entry": [
       "src/index.ts",
+      "src/index.native.ts",
       "src/**/*.ts",
       "!src/**/*.d.ts"
     ],

@@ -1,13 +1,13 @@
-import React from 'react';
 import styled from 'styled-components';
 import { oneOf, bool, number } from 'prop-types';
 import { system } from '@gympass/yoga-system';
 import textStyle from '../textStyle.web';
 import { deprecated } from '../../shared';
 
+// TODO: Use system typing
 const styledText = (type, element = false) => (element
   ? styled[type]
-  : styled.p)`
+  : styled.p)<{ [key: string]: any }>`
     margin: 0;
     padding: 0;
     ${textStyle(type)}
@@ -72,24 +72,24 @@ SmallestException.displayName = 'Text.SmallestException';
 
 const TextRenderer = styledText('p');
 
-const Text = props => <TextRenderer {...props} />;
+const Text = Object.assign(TextRenderer, {
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  Small,
+  Tiny,
+  Light,
+  Regular,
+  Medium,
+  Bold,
+  Black,
+  SectionTitle,
+  SmallestException,
+});
 
 Text.displayName = 'Text';
-
-Text.H1 = H1;
-Text.H2 = H2;
-Text.H3 = H3;
-Text.H4 = H4;
-Text.H5 = H5;
-Text.Small = Small;
-Text.Tiny = Tiny;
-Text.Light = Light;
-Text.Regular = Regular;
-Text.Medium = Medium;
-Text.Bold = Bold;
-Text.Black = Black;
-Text.SectionTitle = SectionTitle;
-Text.SmallestException = SmallestException;
 
 const fontSizes = oneOf([
   'xxsmall',

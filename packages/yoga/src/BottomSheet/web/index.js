@@ -3,8 +3,10 @@ import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
 
-BottomSheet.Header = Header;
-BottomSheet.Content = Content;
-BottomSheet.Footer = Footer;
+const ExportBottomSheet = Object.assign(BottomSheet, {
+  Header,
+  Content,
+  Footer,
+});
 
-export default BottomSheet;
+export default ExportBottomSheet;

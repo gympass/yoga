@@ -5,13 +5,15 @@ import Subtitle from './Subtitle';
 import Tag from './Tag';
 import { List, ListItem } from './List';
 
-PlanCard.Actions = Actions;
-PlanCard.Button = Button;
-PlanCard.ButtonText = ButtonText;
-PlanCard.Content = Content;
-PlanCard.List = List;
-PlanCard.ListItem = ListItem;
-PlanCard.Subtitle = Subtitle;
-PlanCard.Tag = Tag;
+const ExportPlanCard = Object.assign(PlanCard, {
+  Actions,
+  Button,
+  ButtonText,
+  Content,
+  List,
+  ListItem,
+  Subtitle,
+  Tag,
+});
 
-export default PlanCard;
+export default ExportPlanCard;

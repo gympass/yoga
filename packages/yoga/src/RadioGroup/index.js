@@ -1,6 +1,8 @@
 import { RadioGroup, RadioButton, Radio } from './web';
 
-RadioGroup.Button = RadioButton;
-RadioGroup.Radio = Radio;
+const ExportRadioGroup = Object.assign(RadioGroup, {
+  Button: RadioButton,
+  Radio,
+});
 
-export default RadioGroup;
+export default ExportRadioGroup;

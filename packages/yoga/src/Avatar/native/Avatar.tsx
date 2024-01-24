@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import { forwardRef } from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
 import { string, func, number } from 'prop-types';
 import { ImagePropTypes } from 'deprecated-react-native-prop-types';
@@ -51,7 +51,7 @@ const Avatar = forwardRef(
       width,
       height,
       ...props
-    },
+    }: { [key: string]: any },
     ref,
   ) => {
     return (

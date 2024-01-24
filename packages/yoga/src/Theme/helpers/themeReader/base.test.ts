@@ -1,6 +1,6 @@
 import ProxyPolyfillBuilder from 'proxy-polyfill/src/proxy';
 
-import theme from './index';
+import theme, { type PropParameter } from './index';
 
 describe('themeReader - base specs', () => {
   beforeAll(() => {
@@ -13,19 +13,21 @@ describe('themeReader - base specs', () => {
   });
 
   it('should return undefined if key does not exist on the theme', () => {
+    // @ts-ignore
     expect(typeof theme.colors.randomValue).toBe('undefined');
+    // @ts-ignore
     expect(typeof theme.randomValue).toBe('undefined');
   });
 
   it('should have theme.yoga as the base path', () => {
     const yoga = 'wow cool theme, such tokens';
-    const obj = { theme: { yoga } };
+    const obj = { theme: { yoga } } as unknown as PropParameter;
 
     expect(theme(obj)).toBe(yoga);
   });
 
   it('should be able to get fields with keys', () => {
-    const value = 'deep!';
+    const value = 123;
     const obj = {
       theme: {
         yoga: {
@@ -36,7 +38,7 @@ describe('themeReader - base specs', () => {
           },
         },
       },
-    };
+    } as unknown as PropParameter;
 
     expect(theme.breakpoints.xs.margin(obj)).toBe(value);
   });
@@ -73,7 +75,7 @@ describe('themeReader - base specs', () => {
           },
         },
       },
-    };
+    } as unknown as PropParameter;
 
     const {
       baseFontSize,

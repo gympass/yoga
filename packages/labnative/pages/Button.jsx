@@ -64,6 +64,7 @@ const ButtonPage = () => (
       <Button.Text small secondary>
         Secondary text
       </Button.Text>
+      x
       <Button.Text icon={Booking} small secondary>
         Secondary text with icon
       </Button.Text>

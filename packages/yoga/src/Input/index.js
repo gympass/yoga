@@ -1,9 +1,11 @@
 import { Input, Password, Email, InputNumber, Tel, Phone } from './web';
 
-Input.Password = Password;
-Input.Email = Email;
-Input.Number = InputNumber;
-Input.Tel = Tel;
-Input.Phone = Phone;
+const ExportInput = Object.assign(Input, {
+  Password,
+  Email,
+  Number: InputNumber,
+  Tel,
+  Phone,
+});
 
-export default Input;
+export default ExportInput;

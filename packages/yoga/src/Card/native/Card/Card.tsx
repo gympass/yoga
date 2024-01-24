@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { string, shape, oneOf, node } from 'prop-types';
+import { string, shape, oneOf, node, InferProps } from 'prop-types';
 
-import Text from '../../../Text';
-import Box from '../../../Box';
+import Text from '../../../Text/index.native';
+import Box from '../../../Box/index.native';
+import type { View } from 'react-native';
 
 const CardShadow = styled(Box).attrs(
   ({
@@ -19,7 +20,7 @@ const CardShadow = styled(Box).attrs(
   }),
 )``;
 
-const CardStyled = styled(Box).attrs(
+const CardStyled = styled(Box).attrs<{ variant: string }>(
   ({
     variant,
     theme: {
@@ -40,7 +41,7 @@ const CardStyled = styled(Box).attrs(
   }),
 )``;
 
-const Ribbon = styled.View`
+const Ribbon = styled.View<{ variant: string; children: React.ReactNode }>`
   ${({
     variant,
     theme: {
@@ -83,20 +84,7 @@ const RibbonText = styled(Text.Tiny)`
   `}
 `;
 
-const Card = React.forwardRef(({ ribbon, children, ...rest }, ref) => (
-  <CardShadow>
-    <CardStyled ref={ref} {...rest}>
-      {Object.keys(ribbon).length > 0 && (
-        <Ribbon variant={ribbon.variant}>
-          <RibbonText variant={ribbon.variant}>{ribbon.text}</RibbonText>
-        </Ribbon>
-      )}
-      {children}
-    </CardStyled>
-  </CardShadow>
-));
-
-Card.propTypes = {
+const propTypes = {
   /** text: the content inside the Card Ribbon
    * variant: style the card following the theme (primary, secondary, vibin,
    * hope, energy, relax, peace, verve, uplift, deepPurple, deep, stamina, dark,
@@ -149,6 +137,26 @@ Card.propTypes = {
     'white',
   ]),
 };
+
+// TODO: Use system typing
+type CardProps = InferProps<typeof propTypes> & { [key: string]: any };
+
+const Card = React.forwardRef<View, CardProps>(
+  ({ ribbon, children, ...rest }, ref) => (
+    <CardShadow>
+      <CardStyled ref={ref} {...rest}>
+        {Object.keys(ribbon as {}).length > 0 && (
+          <Ribbon variant={ribbon?.variant as string}>
+            <RibbonText variant={ribbon?.variant}>{ribbon?.text}</RibbonText>
+          </Ribbon>
+        )}
+        {children}
+      </CardStyled>
+    </CardShadow>
+  ),
+);
+
+Card.propTypes = propTypes;
 
 Card.defaultProps = {
   ribbon: {},

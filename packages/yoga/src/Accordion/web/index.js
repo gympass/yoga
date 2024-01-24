@@ -3,8 +3,10 @@ import Summary from './Summary';
 import Content from './Content';
 import AccordionSmall from './Small';
 
-Accordion.Content = Content;
-Accordion.Summary = Summary;
-Accordion.Small = AccordionSmall;
+const ExportAccordion = Object.assign(Accordion, {
+  Content,
+  Summary,
+  Small: AccordionSmall,
+});
 
-export default Accordion;
+export default ExportAccordion;

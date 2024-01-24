@@ -1,5 +1,5 @@
 import { Stepper, Step } from './native';
 
-Stepper.Step = Step;
+const ExportStepper = Object.assign(Stepper, { Step });
 
-export default Stepper;
+export default ExportStepper;

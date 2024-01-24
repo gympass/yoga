@@ -1,6 +1,6 @@
 import Avatar from './native/Avatar';
 import AvatarCircle from './native/AvatarCircle';
 
-Avatar.Circle = AvatarCircle;
+const ExportAvatar = Object.assign(Avatar, { Circle: AvatarCircle });
 
-export default Avatar;
+export default ExportAvatar;

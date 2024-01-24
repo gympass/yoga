@@ -1,0 +1,756 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c7 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c8 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c9 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c10 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c11 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c12 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  text-transform: uppercase;
+}
+
+.c13 {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c5 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Live the mission
+  </h1>
+  <h2
+    class="c1"
+  >
+    Live the mission
+  </h2>
+  <h3
+    class="c2"
+  >
+    Live the mission
+  </h3>
+  <h4
+    class="c3"
+  >
+    Live the mission
+  </h4>
+  <h5
+    class="c4"
+  >
+    Live the mission
+  </h5>
+  <p
+    class="c5"
+    font-size="medium"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c6"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c7"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c8"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c9"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c10"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c11"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c12"
+  >
+    Live the mission
+  </p>
+  <p
+    class="c13"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text fontSize 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 12px;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+}
+
+.c4 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #231B22;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 24px;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 40px;
+}
+
+<div>
+  <p
+    class="c0"
+    font-size="xsmall"
+  >
+    Live the small mission
+  </p>
+  <p
+    class="c1"
+    font-size="medium"
+  >
+    Live the medium mission
+  </p>
+  <p
+    class="c2"
+    font-size="xlarge"
+  >
+    Live the xlarge mission
+  </p>
+  <p
+    class="c3"
+    font-size="xxxlarge"
+  >
+    Live the xxxlarge mission
+  </p>
+  <p
+    class="c4"
+    color="stamina"
+  >
+    oie
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
+  font-weight: 300;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
+  font-weight: 300;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  font-weight: 300;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Live the mission
+  </h1>
+  <h2
+    class="c1"
+  >
+    Live the mission
+  </h2>
+  <h3
+    class="c2"
+  >
+    Live the mission
+  </h3>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text size 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c3 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+<div>
+  <p
+    class="c0"
+  >
+    Live the small mission
+  </p>
+  <p
+    class="c1"
+  >
+    Live the medium mission
+  </p>
+  <p
+    class="c2"
+  >
+    Live the xlarge mission
+  </p>
+  <p
+    class="c3"
+  >
+    Live the xxxlarge mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #D8385E;
+}
+
+.c1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: #231B22;
+}
+
+.c2 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: Rubik;
+  color: undefined;
+}
+
+<div>
+  <h1
+    class="c0"
+  >
+    Live the mission
+  </h1>
+  <h2
+    class="c1"
+  >
+    Live the mission
+  </h2>
+  <h3
+    class="c2"
+  >
+    Live the mission
+  </h3>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with background color prop system 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  background-color: #D8385E;
+  font-size: 16px;
+}
+
+<div>
+  <p
+    class="c0"
+    font-size="medium"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with border prop system 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  border: 1px solid;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+<div>
+  <p
+    class="c0"
+    font-size="medium"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with display prop system 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+<div>
+  <p
+    class="c0"
+    display="inline-flex"
+    font-size="medium"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with elevation prop system 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  box-shadow: 0 5px 5px -3px rgba(152,152,166,0.2),0 8px 10px 1px rgba(152,152,166,0.14),0 3px 14px 2px rgba(152,152,166,0.12);
+  font-size: 16px;
+}
+
+<div>
+  <p
+    class="c0"
+    elevation="medium"
+    font-size="medium"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with flexes prop system 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+<div>
+  <p
+    class="c0"
+    display="flex"
+    font-size="medium"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+<div>
+  <p
+    class="c0"
+    font-size="medium"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with overflows prop system 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+  overflow: scroll;
+}
+
+<div>
+  <p
+    class="c0"
+    font-size="medium"
+    overflow="scroll"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with position prop system 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  font-size: 16px;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+}
+
+<div>
+  <p
+    class="c0"
+    font-size="medium"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with spacing prop system 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  margin: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 16px;
+}
+
+<div>
+  <p
+    class="c0"
+    font-size="medium"
+  >
+    Live the mission
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with truncated lines Text 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+<div>
+  <p
+    class="c0"
+    font-size="medium"
+  >
+    Live the mission
+    <br />
+    even in one line
+  </p>
+</div>
+`;
+
+exports[`<Text /> Snapshots should match snapshot with typography prop system 1`] = `
+.c0 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Rubik;
+  color: #231B22;
+  color: #231B22;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+<div>
+  <p
+    class="c0"
+    color="text.primary"
+    font-size="small"
+    font-weight="medium"
+  >
+    Live the mission
+  </p>
+</div>
+`;

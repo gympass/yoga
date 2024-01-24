@@ -5,8 +5,10 @@ import {
   SecondaryButton,
 } from './ActionRequirementStyles';
 
-ActionRequirement.Title = Title;
-ActionRequirement.PrimaryButton = PrimaryButton;
-ActionRequirement.SecondaryButton = SecondaryButton;
+const ExportActionRequirement = Object.assign(ActionRequirement, {
+  Title,
+  PrimaryButton,
+  SecondaryButton,
+});
 
-export default ActionRequirement;
+export default ExportActionRequirement;

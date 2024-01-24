@@ -128,15 +128,17 @@ const NavigationMenu = ({
   );
 };
 
-NavigationMenu.Header = StyledHeader;
-NavigationMenu.Menu = Menu;
-NavigationMenu.Switcher = Switcher;
-NavigationMenu.Items = StyledItems;
-NavigationMenu.ItemsGroup = StyledItemsGroup;
-NavigationMenu.Item = Item;
-NavigationMenu.Subitem = Subitem;
-NavigationMenu.BottomItems = BottomItems;
-NavigationMenu.BottomItem = BottomItem;
-NavigationMenu.Footer = StyledFooter;
+const ExportNavigationMenu = Object.assign(NavigationMenu, {
+  Header: StyledHeader,
+  Menu,
+  Switcher,
+  Items: StyledItems,
+  ItemsGroup: StyledItemsGroup,
+  Item,
+  Subitem,
+  BottomItems,
+  BottomItem,
+  Footer: StyledFooter,
+});
 
-export default NavigationMenu;
+export default ExportNavigationMenu;

@@ -4,8 +4,10 @@ import Title from './Title';
 import BackButton from './BackButton';
 import RightButton from './RightButton';
 
-Heading.Title = Title;
-Heading.BackButton = BackButton;
-Heading.RightButton = RightButton;
+const ExportHeading = Object.assign(Heading, {
+  Title,
+  BackButton,
+  RightButton,
+});
 
-export default Heading;
+export default ExportHeading;

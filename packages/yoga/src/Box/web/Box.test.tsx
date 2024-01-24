@@ -1,11 +1,12 @@
 import React from 'react';
-import { render } from '@testing-library/react-native';
+import { render } from '@testing-library/react';
 
-import { ThemeProvider, Box, Text } from '../..';
+import { ThemeProvider } from '../..';
+import Box from '.';
 
 describe('<Box />', () => {
   it('should match snapshot', () => {
-    const { toJSON } = render(
+    const { container } = render(
       <ThemeProvider>
         <Box
           b="small"
@@ -13,11 +14,11 @@ describe('<Box />', () => {
           borderRadius="small"
           color="feedback.success.dark"
         >
-          <Text>Making wellbeing universal</Text>
+          Making wellbeing universal
         </Box>
       </ThemeProvider>,
     );
 
-    expect(toJSON()).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

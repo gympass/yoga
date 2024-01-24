@@ -7,9 +7,12 @@ import ThemeProvider, { theme } from '../../../index.native';
 
 import '../base.test';
 
-describe('themeReader - web specs', () => {
+describe('themeReader - native specs', () => {
   it('should render', () => {
-    const Component = styled.View`
+    const Component = styled.View<{
+      testID: string;
+      children: React.ReactNode;
+    }>`
       border: ${theme.borders.small}px solid;
     `;
 
@@ -19,13 +22,17 @@ describe('themeReader - web specs', () => {
       </ThemeProvider>,
     );
 
-    expect(toJSON().props.style).toEqual([
+    expect((toJSON() as unknown as { props: { style } }).props.style).toEqual([
       { borderWidth: 1, borderColor: 'black', borderStyle: 'solid' },
     ]);
   });
 
   it('should render with conditional', () => {
-    const Component = styled.View`
+    const Component = styled.View<{
+      borders: boolean;
+      testID: string;
+      children?: React.ReactNode;
+    }>`
       border: ${({ borders }) =>
         borders
           ? css`
@@ -42,17 +49,17 @@ describe('themeReader - web specs', () => {
       </ThemeProvider>,
     );
 
-    expect(toJSON().props.style).toEqual([
+    expect((toJSON() as unknown as { props: { style } }).props.style).toEqual([
       { borderWidth: 0, borderColor: 'black', borderStyle: 'solid' },
     ]);
 
     rerender(
       <ThemeProvider>
-        <Component borders data-testid="component" />
+        <Component borders testID="component" />
       </ThemeProvider>,
     );
 
-    expect(toJSON().props.style).toEqual([
+    expect((toJSON() as unknown as { props: { style } }).props.style).toEqual([
       { borderWidth: 1, borderColor: 'black', borderStyle: 'solid' },
     ]);
   });

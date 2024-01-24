@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import styled, { withTheme } from 'styled-components';
+import styled, { withTheme } from 'styled-components/native';
 import { node, oneOfType, func, bool } from 'prop-types';
 
 import withTouchable from './withTouchable';

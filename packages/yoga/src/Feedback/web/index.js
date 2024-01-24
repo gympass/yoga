@@ -1,8 +1,10 @@
 import Feedback from './Feedback';
 import { Title, PrimaryButton, SecondaryButton } from './StyledFeedback';
 
-Feedback.Title = Title;
-Feedback.PrimaryButton = PrimaryButton;
-Feedback.SecondaryButton = SecondaryButton;
+const ExportFeedback = Object.assign(Feedback, {
+  Title,
+  PrimaryButton,
+  SecondaryButton,
+});
 
-export default Feedback;
+export default ExportFeedback;

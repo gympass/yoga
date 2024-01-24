@@ -1,5 +1,5 @@
 import { List, ListItem } from './native';
 
-List.Item = ListItem;
+const ExportList = Object.assign(List, { Item: ListItem });
 
-export default List;
+export default ExportList;

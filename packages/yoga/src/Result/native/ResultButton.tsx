@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import Button from '../../Button';
+import styled from 'styled-components/native';
+import Button from '../../Button/index.native';
 
 const ResultButton = styled(Button.Link)`
   ${({

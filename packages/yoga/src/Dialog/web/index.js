@@ -3,8 +3,10 @@ import Header from './Header';
 import Content from './Content';
 import Footer from './Footer';
 
-Dialog.Header = Header;
-Dialog.Content = Content;
-Dialog.Footer = Footer;
+const ExportDialog = Object.assign(Dialog, {
+  Header,
+  Content,
+  Footer,
+});
 
-export default Dialog;
+export default ExportDialog;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Box /> should match snapshot 1`] = `
+.c0 {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 16px;
+  color: #1D856C;
+}
+
+<div>
+  <div
+    class="c0"
+    color="feedback.success.dark"
+  >
+    Making wellbeing universal
+  </div>
+</div>
+`;

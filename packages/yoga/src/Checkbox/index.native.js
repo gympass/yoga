@@ -1,5 +1,7 @@
 import { Checkbox, Switch } from './native';
 
-Checkbox.Switch = Switch;
+const ExportCheckbox = Object.assign(Checkbox, {
+  Switch,
+});
 
-export default Checkbox;
+export default ExportCheckbox;

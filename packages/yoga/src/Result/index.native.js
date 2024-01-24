@@ -3,8 +3,10 @@ import ResultDetails from './native/Details';
 import ResultButton from './native/ResultButton';
 import ResultTags from './native/Tags';
 
-Result.Details = ResultDetails;
-Result.Button = ResultButton;
-Result.Tags = ResultTags;
+const ExportResult = Object.assign(Result, {
+  Details: ResultDetails,
+  Button: ResultButton,
+  Tags: ResultTags,
+});
 
-export default Result;
+export default ExportResult;

@@ -3,8 +3,10 @@ import ButtonText from './native/Text';
 import ButtonLink from './native/Link';
 import ButtonIcon from './native/Icon';
 
-Button.Text = ButtonText;
-Button.Link = ButtonLink;
-Button.Icon = ButtonIcon;
+const ExportButton = Object.assign(Button, {
+  Text: ButtonText,
+  Link: ButtonLink,
+  Icon: ButtonIcon,
+});
 
-export default Button;
+export default ExportButton;

@@ -1,6 +1,6 @@
 import Avatar from './web/Avatar';
 import AvatarCircle from './web/AvatarCircle';
 
-Avatar.Circle = AvatarCircle;
+const ExportAvatar = Object.assign(Avatar, { Circle: AvatarCircle });
 
-export default Avatar;
+export default ExportAvatar;

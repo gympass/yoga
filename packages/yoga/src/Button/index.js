@@ -4,9 +4,11 @@ import ButtonText from './web/Text';
 import ButtonLink from './web/Link';
 import ButtonIcon from './web/Icon';
 
-Button.Outline = ButtonOutline;
-Button.Text = ButtonText;
-Button.Link = ButtonLink;
-Button.Icon = ButtonIcon;
+const ExportButton = Object.assign(Button, {
+  Outline: ButtonOutline,
+  Text: ButtonText,
+  Link: ButtonLink,
+  Icon: ButtonIcon,
+});
 
-export default Button;
+export default ExportButton;

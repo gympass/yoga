@@ -1,4 +1,4 @@
-import React, {
+import {
   forwardRef,
   useEffect,
   useImperativeHandle,
@@ -7,17 +7,22 @@ import React, {
 } from 'react';
 import styled from 'styled-components';
 import { string, oneOf, func, elementType, number } from 'prop-types';
+import type { InferProps } from 'prop-types';
 
 import { PanResponder } from 'react-native';
-import Box from '../../Box';
-import Button from '../../Button';
-import Icon from '../../Icon';
-import Text from '../../Text';
+import Box from '../../Box/index.native';
+import Button from '../../Button/index.native';
+import Icon from '../../Icon/index.native';
+import Text from '../../Text/index.native';
 import SnackbarAnimationWrapper from './SnackbarAnimationWrapper';
 
 const SWIPE_THRESHOLD = 32;
 
-const SnackbarContainer = styled.View`
+const SnackbarContainer = styled.View<{
+  bottomOffset?: number | null;
+  variant: string;
+  children: React.ReactNode;
+}>`
   ${({
     bottomOffset,
     variant,
@@ -47,6 +52,27 @@ const SnackbarContainer = styled.View`
   `}
 `;
 
+const propTypes = {
+  /** The style variant change the color of the component, it may be "success", "informative" or "attention". */
+  variant: oneOf(['success', 'informative', 'attention']),
+  /** Can be any icon of yoga-icons. */
+  icon: elementType,
+  /** The message shown when snackbar is opened. The maximum number of lines is two. */
+  message: string,
+  /** Label for a custom action. */
+  actionLabel: string,
+  /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
+  onAction: func,
+  /** Callback function triggered by the Snackbar close action. Can be used for events, for example. */
+  onSnackbarClose: func,
+  /** The duration sets how long it will take to close snackbar automatically, it may be "fast" (4 seconds), "default" (8 seconds), "slow" (10 seconds) or "indefinite" (it doesn't close automatically). */
+  duration: oneOf(['fast', 'default', 'slow', 'indefinite']),
+  /** Add extra margin to Snackbar. Can be useful for SafeAreaView or button cases. */
+  bottomOffset: number,
+};
+
+type SnackbarProps = InferProps<typeof propTypes>;
+
 /**
  * Gympass `<Snackbar />` is the proper component to show alert messages.
  *
@@ -54,7 +80,13 @@ const SnackbarContainer = styled.View`
  *
  * For native, the `Snackbar` may have an icon and a custom action.
  */
-const Snackbar = forwardRef((props, ref) => {
+const Snackbar = forwardRef<
+  {
+    open: () => void;
+    close: (callback?: () => void) => void;
+  },
+  SnackbarProps
+>((props, ref) => {
   const {
     icon,
     message,
@@ -66,7 +98,11 @@ const Snackbar = forwardRef((props, ref) => {
     bottomOffset,
     ...rest
   } = props;
-  const wrapperRef = useRef();
+  const wrapperRef = useRef<{
+    open: () => void;
+    close: (callback?: () => void) => void;
+    translateY: (dy: number) => void;
+  }>();
 
   const [currentProps, setCurrentProps] = useState({
     icon,
@@ -78,10 +114,10 @@ const Snackbar = forwardRef((props, ref) => {
 
   useImperativeHandle(ref, () => ({
     open: () => {
-      wrapperRef.current.open();
+      wrapperRef.current?.open();
     },
     close: () => {
-      wrapperRef.current.close();
+      wrapperRef.current?.close();
     },
   }));
 
@@ -95,7 +131,7 @@ const Snackbar = forwardRef((props, ref) => {
           onAction,
           variant,
         });
-        wrapperRef.current.open();
+        wrapperRef.current?.open();
       });
     } else {
       setCurrentProps({
@@ -110,16 +146,16 @@ const Snackbar = forwardRef((props, ref) => {
 
   const handlePanResponderRelease = (_evt, gestureState) => {
     if (gestureState.dy > SWIPE_THRESHOLD) {
-      wrapperRef.current.close();
+      wrapperRef.current?.close();
     } else {
-      wrapperRef.current.open();
+      wrapperRef.current?.open();
     }
   };
 
   const panResponder = PanResponder.create({
     onPanResponderMove: (_, gestureState) => {
       if (gestureState.dy > 0) {
-        wrapperRef.current.translateY(gestureState.dy);
+        wrapperRef.current?.translateY(gestureState.dy);
       }
     },
     onPanResponderRelease: handlePanResponderRelease,
@@ -134,7 +170,7 @@ const Snackbar = forwardRef((props, ref) => {
   });
 
   const handleOnAction = () => {
-    wrapperRef.current.close();
+    wrapperRef.current?.close();
     if (currentProps.onAction) {
       currentProps.onAction();
     }
@@ -143,11 +179,11 @@ const Snackbar = forwardRef((props, ref) => {
   return (
     <SnackbarAnimationWrapper
       onSnackbarClose={onSnackbarClose}
-      duration={duration}
+      duration={duration as string}
       ref={wrapperRef}
     >
       <SnackbarContainer
-        variant={currentProps.variant}
+        variant={currentProps.variant as string}
         bottomOffset={bottomOffset}
         {...rest}
         {...panResponder.panHandlers}
@@ -185,24 +221,7 @@ const Snackbar = forwardRef((props, ref) => {
   );
 });
 
-Snackbar.propTypes = {
-  /** The style variant change the color of the component, it may be "success", "informative" or "attention". */
-  variant: oneOf(['success', 'informative', 'attention']),
-  /** Can be any icon of yoga-icons. */
-  icon: elementType,
-  /** The message shown when snackbar is opened. The maximum number of lines is two. */
-  message: string,
-  /** Label for a custom action. */
-  actionLabel: string,
-  /** Function for the custom action. The `actionLabel` becomes required when passing this function. */
-  onAction: func,
-  /** Callback function triggered by the Snackbar close action. Can be used for events, for example. */
-  onSnackbarClose: func,
-  /** The duration sets how long it will take to close snackbar automatically, it may be "fast" (4 seconds), "default" (8 seconds), "slow" (10 seconds) or "indefinite" (it doesn't close automatically). */
-  duration: oneOf(['fast', 'default', 'slow', 'indefinite']),
-  /** Add extra margin to Snackbar. Can be useful for SafeAreaView or button cases. */
-  bottomOffset: number,
-};
+Snackbar.propTypes = propTypes;
 
 Snackbar.defaultProps = {
   variant: 'success',

@@ -1,4 +1,3 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 import { ThemeProvider } from '../..';
 import { Text } from '.';
@@ -61,6 +60,10 @@ describe('<Text />', () => {
           <Text.Medium fontSize="xxxlarge">
             Live the xxxlarge mission
           </Text.Medium>
+
+          <Text.Tiny color={'stamina'} testID={`Title`}>
+            {'oie'}
+          </Text.Tiny>
         </ThemeProvider>,
       );
 

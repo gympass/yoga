@@ -1,12 +1,12 @@
 import React from 'react';
 import { number, arrayOf, bool, func, node } from 'prop-types';
-import styled, { css, withTheme } from 'styled-components';
+import styled, { css, withTheme } from 'styled-components/native';
 import { TouchableWithoutFeedback } from 'react-native';
 
 import Counter from './Counter';
-import { theme } from '../../Theme';
-import Text from '../../Text';
-import Icon from '../../Icon';
+import { theme } from '../../Theme/index.native';
+import Text from '../../Text/index.native';
+import Icon from '../../Icon/index.native';
 
 const Wrapper = styled.View`
   height: 32px;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 import { string, number, shape, oneOfType, oneOf } from 'prop-types';
 import {
   backgroundColor,
@@ -11,8 +11,15 @@ import {
 } from '@gympass/yoga-system';
 
 import { charLength } from '../../shared';
+import type { View } from 'react-native';
+import type { InferProps } from 'prop-types';
 
-const ProgressWrapper = styled.View`
+const ProgressWrapper = styled.View<{
+  isNumber: boolean;
+  align: string;
+  // TODO: Better type children
+  children: any;
+}>`
   width: 100%;
 
   ${({ isNumber, align }) => `
@@ -38,7 +45,8 @@ const ProgressWrapper = styled.View`
   ${systemSpacing}
 `;
 
-const ProgressBar = styled.View`
+// TODO: Type theme
+const ProgressBar = styled.View<{ theme: any }>`
   position: relative;
   flex-grow: 1;
 
@@ -58,7 +66,13 @@ const ProgressBar = styled.View`
     border-radius: ${progress.border.radius}px;
   `};
 `;
-const ProgressValue = styled.View`
+
+// TODO: Type theme
+const ProgressValue = styled.View<{
+  width: number;
+  variant: string;
+  theme: any;
+}>`
   position: absolute;
 
   height: 100%;
@@ -82,7 +96,8 @@ const ProgressValue = styled.View`
   `}
 `;
 
-const Label = styled.Text`
+// TODO: Type theme
+const Label = styled.Text<{ isNumber: boolean; align: string; theme: any }>`
   ${({
     isNumber,
     align,
@@ -114,31 +129,7 @@ const Label = styled.Text`
 `}
 `;
 
-/** The Progress Bar is a component used to indicate a progress of an indicator
- * of quantity.  The use of labels numeric or alphabetic can increase the user
- * understanding. */
-const Progress = React.forwardRef(
-  ({ label, max, value, variant, ...props }, ref) => {
-    const isNumber = !/[a-zA-Z]/g.test(label.value);
-    const align = label.placement || 'left';
-
-    return (
-      <ProgressWrapper ref={ref} {...props} isNumber={isNumber} align={align}>
-        <ProgressBar>
-          <ProgressValue width={(value / max) * 100} variant={variant} />
-        </ProgressBar>
-
-        {Object.keys(label).length > 0 && (isNumber || label.value) && (
-          <Label isNumber={isNumber} align={align}>
-            {label.value}
-          </Label>
-        )}
-      </ProgressWrapper>
-    );
-  },
-);
-
-Progress.propTypes = {
+const propTypes = {
   /** Use labels to increase users understanding. If the value is numeric, make
    * sure it has a maximum of 3 characters */
   label: shape({
@@ -178,6 +169,39 @@ Progress.propTypes = {
     'white',
   ]),
 };
+
+// TODO: Use system typing
+type ProgressProps = InferProps<typeof propTypes> & { [key: string]: any };
+
+/** The Progress Bar is a component used to indicate a progress of an indicator
+ * of quantity.  The use of labels numeric or alphabetic can increase the user
+ * understanding. */
+const Progress = React.forwardRef<View, ProgressProps>(
+  ({ label, max, value, variant, ...props }, ref) => {
+    const isNumber = !/[a-zA-Z]/g.test(label?.value as string);
+    const align = label?.placement || 'left';
+
+    return (
+      <ProgressWrapper ref={ref} {...props} isNumber={isNumber} align={align}>
+        <ProgressBar>
+          {/* TODO: Fix as number cast */}
+          <ProgressValue
+            width={((value as number) / (max as number)) * 100}
+            variant={variant as string}
+          />
+        </ProgressBar>
+
+        {Object.keys(label as object).length > 0 && (isNumber || label?.value) && (
+          <Label isNumber={isNumber} align={align}>
+            {label?.value as string}
+          </Label>
+        )}
+      </ProgressWrapper>
+    );
+  },
+);
+
+Progress.propTypes = propTypes;
 
 Progress.defaultProps = {
   label: {

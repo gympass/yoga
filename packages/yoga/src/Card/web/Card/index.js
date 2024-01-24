@@ -3,8 +3,10 @@ import Header from './Header';
 import Content from './Content';
 import Actions from './Actions';
 
-Card.Header = Header;
-Card.Content = Content;
-Card.Actions = Actions;
+const ExportCard = Object.assign(Card, {
+  Header,
+  Content,
+  Actions,
+});
 
-export default Card;
+export default ExportCard;
