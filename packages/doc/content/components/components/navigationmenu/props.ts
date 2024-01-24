@@ -224,13 +224,6 @@ export const BottomItemsProps = [
     type: { name: 'node' },
     required: true,
   },
-  {
-    name: 'fill',
-    description: { text: 'Color used as background' },
-    type: { name: 'string' },
-    required: false,
-    defaultValue: { value: 'white' },
-  },
 ];
 
 export const BottomItemProps = [

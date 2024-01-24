@@ -9,12 +9,10 @@ const StyledItemsContainer = styled.nav`
 
 const StyledItems = styled.ul`
   ${({
-    fill,
     theme: {
       yoga: {
-        colors,
         components: {
-          navigationmenu: { border, gap },
+          navigationmenu: { backgroundColor, border, gap },
         },
       },
     },
@@ -27,7 +25,7 @@ const StyledItems = styled.ul`
     align-items: center;
     width: 100%;
     height: 56px;
-    background-color: ${colors[fill]};;
+    background-color: ${backgroundColor.white};;
     margin: 0;
     padding: 0;
     border: 1px solid ${border.color.default};
@@ -38,13 +36,12 @@ const StyledItems = styled.ul`
 
 type BottomItemsProps = {
   children: React.ReactNode;
-  fill?: string;
 };
 
-const BottomItems = ({ children, fill = 'white' }: BottomItemsProps) => {
+const BottomItems = ({ children }: BottomItemsProps) => {
   return (
     <StyledItemsContainer>
-      <StyledItems fill={fill}>{children}</StyledItems>
+      <StyledItems>{children}</StyledItems>
     </StyledItemsContainer>
   );
 };
