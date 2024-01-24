@@ -25,6 +25,7 @@ const StyledNavigationMenu = styled(Box)<{
   }) => css`
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     gap: ${gap.medium}px;
     padding: ${padding.small}px ${padding.xsmall}px;
     background-color: ${backgroundColor.default};
