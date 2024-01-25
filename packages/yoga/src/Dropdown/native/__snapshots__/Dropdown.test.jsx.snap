@@ -54,14 +54,11 @@ exports[`<Dropdown /> Snapshots should match snapshot 1`] = `
       style={
         [
           {
-            "color": "#231B22",
+            "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
-          },
-          {
-            "color": "#6B6B78",
           },
         ]
       }
@@ -197,14 +194,11 @@ exports[`<Dropdown /> Snapshots should match snapshot when disabled 1`] = `
       style={
         [
           {
-            "color": "#231B22",
+            "color": "#D7D7E0",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
-          },
-          {
-            "color": "#D7D7E0",
           },
         ]
       }
@@ -340,14 +334,11 @@ exports[`<Dropdown /> Snapshots should match snapshot when full 1`] = `
       style={
         [
           {
-            "color": "#231B22",
+            "color": "#6B6B78",
             "fontFamily": "Rubik",
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
-          },
-          {
-            "color": "#6B6B78",
           },
         ]
       }
@@ -503,9 +494,6 @@ exports[`<Dropdown /> Snapshots should match snapshot when has a selected value 
             "fontWeight": "400",
             "lineHeight": 24,
           },
-          {
-            "color": "#231B22",
-          },
         ]
       }
     >
@@ -660,9 +648,6 @@ exports[`<Dropdown /> Snapshots should match snapshot with error 1`] = `
             "fontSize": 16,
             "fontWeight": "400",
             "lineHeight": 24,
-          },
-          {
-            "color": "#231B22",
           },
         ]
       }

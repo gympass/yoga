@@ -1,6 +1,7 @@
+import React from 'react';
 import { render } from '@testing-library/react-native';
 
-import { ThemeProvider, Text } from '../..';
+import { ThemeProvider, Text } from '../../index.native';
 import Box from '.';
 
 describe('<Box />', () => {

@@ -13,26 +13,22 @@ const theme = (tokens: typeof yogaTokens) => {
     primary: tokens.colors.vibin,
     secondary: tokens.colors.stamina,
     feedback: {
-      success: {
-        ...[tokens.colors.success, tokens.colors.hope],
+      success: Object.assign([tokens.colors.success, tokens.colors.hope], {
         light: tokens.colors.success,
         dark: tokens.colors.hope,
-      },
-      informative: {
-        ...[tokens.colors.neutral, tokens.colors.relax],
+      }),
+      informative: Object.assign([tokens.colors.neutral, tokens.colors.relax], {
         light: tokens.colors.neutral,
         dark: tokens.colors.relax,
-      },
-      attention: {
-        ...[tokens.colors.attention, tokens.colors.verve],
+      }),
+      attention: Object.assign([tokens.colors.attention, tokens.colors.verve], {
         light: tokens.colors.attention,
         dark: tokens.colors.verve,
-      },
-      neutral: {
-        ...[tokens.colors.light, tokens.colors.medium],
+      }),
+      neutral: Object.assign([tokens.colors.light, tokens.colors.medium], {
         light: tokens.colors.light,
         dark: tokens.colors.medium,
-      },
+      }),
     },
     text: {
       primary: tokens.colors.stamina,

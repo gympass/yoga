@@ -1,4 +1,4 @@
-import { forwardRef } from 'react';
+import React, { forwardRef } from 'react';
 import { BuildingFilled } from '@gympass/yoga-icons';
 import { string, func, number } from 'prop-types';
 import { ImagePropTypes } from 'deprecated-react-native-prop-types';
@@ -6,8 +6,8 @@ import { Image } from 'react-native';
 
 import styled from 'styled-components';
 import { hexToRgb } from '@gympass/yoga-common';
-import Box from '../../Box';
-import Icon from '../../Icon';
+import Box from '../../Box/index.native';
+import Icon from '../../Icon/index.native';
 
 const BORDER_WIDTH = 1;
 const BORDER_OPACITY = 0.1;

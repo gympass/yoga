@@ -1,4 +1,4 @@
-import { forwardRef } from 'react';
+import React, { forwardRef } from 'react';
 import { UserFilled } from '@gympass/yoga-icons';
 import Avatar from './Avatar';
 

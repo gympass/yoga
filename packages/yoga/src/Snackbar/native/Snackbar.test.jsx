@@ -4,8 +4,8 @@ import { render, fireEvent } from '@testing-library/react-native';
 import * as RN from 'react-native';
 
 import { CheckedFull } from '@gympass/yoga-icons';
-import { ThemeProvider, Snackbar } from '../..';
-import Button from '../../Button';
+import { ThemeProvider, Snackbar } from '../../index.native';
+import Button from '../../Button/index.native';
 
 RN.Animated.spring = jest.fn().mockReturnValue({
   start: jest.fn(),

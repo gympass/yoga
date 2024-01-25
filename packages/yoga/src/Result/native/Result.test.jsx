@@ -4,8 +4,8 @@ import { BuildingFilled } from '@gympass/yoga-icons';
 
 import { ThemeProvider } from '../..';
 import Result from './Result';
-import Avatar from '../../Avatar';
-import Text from '../../Text';
+import Avatar from '../../Avatar/index.native';
+import Text from '../../Text/index.native';
 
 const attendanceList = [
   {

@@ -502,9 +502,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot with avatar 1`] = `
               "fontSize": 16,
               "fontWeight": "400",
               "lineHeight": 24,
-            },
-            {
-              "fontWeight": "400",
               "marginBottom": 8,
               "minHeight": 40,
             },
@@ -1108,9 +1105,6 @@ exports[`<GymCard.CheckIn /> Snapshots should match snapshot without avatar 1`] 
               "fontSize": 16,
               "fontWeight": "400",
               "lineHeight": 24,
-            },
-            {
-              "fontWeight": "400",
               "marginBottom": 8,
               "minHeight": 40,
             },
