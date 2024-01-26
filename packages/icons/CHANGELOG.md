@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.18.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.17.0...@gympass/yoga-icons@1.18.0) (2024-01-26)
+
+
+### Features
+
+* updates Feedback components icons and adds new state for 'delayed' ([600c512](https://github.com/Gympass/yoga/commit/600c51280c0847f187354489adb4054527b595c5))
+
+
+
+
+
 # [1.17.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-icons@1.16.0...@gympass/yoga-icons@1.17.0) (2023-10-04)
 
 
