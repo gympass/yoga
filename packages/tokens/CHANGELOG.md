@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.2.2...@gympass/yoga-tokens@3.3.0) (2024-01-26)
+
+
+### Features
+
+* create new fw tokens ([db6ae26](https://github.com/Gympass/yoga/commit/db6ae266dcc0a0024740fb5bfd4e8a19464d7b3b))
+* create new tokens ([e6f3cf7](https://github.com/Gympass/yoga/commit/e6f3cf7a22632e025cbf42bea823d60f4a8accfa))
+
+
+
+
+
 ## [3.2.2](https://github.com/Gympass/yoga/compare/@gympass/yoga-tokens@3.2.1...@gympass/yoga-tokens@3.2.2) (2023-10-03)
 
 **Note:** Version bump only for package @gympass/yoga-tokens

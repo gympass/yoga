@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.93.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.92.1...@gympass/yoga@7.93.0) (2024-01-26)
+
+
+### Bug Fixes
+
+* update fontloader logic ([3c9dd91](https://github.com/Gympass/yoga/commit/3c9dd918218db070836b7bc7e9b7b6839a4e2296))
+
+
+### Features
+
+* add font resources ([a6f2398](https://github.com/Gympass/yoga/commit/a6f2398a453e5a6d917c535d9ee59bdfdf57dd53))
+* create new fw tokens ([db6ae26](https://github.com/Gympass/yoga/commit/db6ae266dcc0a0024740fb5bfd4e8a19464d7b3b))
+* create yoga3 theme ([de2f0ff](https://github.com/Gympass/yoga/commit/de2f0ff3ef0d1985c245cef204e26b02b90cc2b8))
+
+
+
+
+
 ## [7.92.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.92.0...@gympass/yoga@7.92.1) (2024-01-26)
 
 **Note:** Version bump only for package @gympass/yoga
