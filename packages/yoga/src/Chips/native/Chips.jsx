@@ -21,7 +21,7 @@ const Wrapper = styled.View`
 
   border-style: solid;
   border-color: ${theme.colors.elements.lineAndBorders};
-  border-radius: ${theme.radii.small}px;
+  border-radius: ${theme.radii.circle}px;
   border-width: ${theme.borders.small}px;
 
   background-color: ${theme.colors.white};
@@ -41,7 +41,7 @@ const Wrapper = styled.View`
   ${({ selected }) =>
     selected
       ? css`
-          background-color: ${theme.colors.yoga};
+          background-color: ${theme.colors.secondary};
           border-color: transparent;
         `
       : ''}
@@ -56,7 +56,7 @@ const StyledChips = styled(Text)`
   ${({ selected }) =>
     selected
       ? css`
-          color: ${theme.colors.primary};
+          color: ${theme.colors.white};
         `
       : ''}
 `;
@@ -91,7 +91,7 @@ const Chips = React.forwardRef(
           {SecondIcon && (
             <Icon
               as={SecondIcon}
-              fill={selected ? 'primary' : 'secondary'}
+              fill={selected ? 'white' : 'secondary'}
               width="small"
               height="small"
               style={{
@@ -110,7 +110,7 @@ const Chips = React.forwardRef(
           {FirstIcon && (
             <Icon
               as={FirstIcon}
-              fill={selected ? 'primary' : 'secondary'}
+              fill={selected ? 'white' : 'secondary'}
               width="small"
               height="small"
               style={{

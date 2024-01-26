@@ -17,13 +17,13 @@ const Wrapper = styled.span`
   padding-left: 5px;
   margin-left: ${theme.spacing.xxxsmall}px;
 
-  color: ${theme.colors.white};
+  color: ${theme.colors.secondary};
   font-size: ${theme.fontSizes.xsmall}px;
   line-height: ${theme.lineHeights.xsmall}px;
   font-weight: ${theme.fontWeights.medium}px;
 
   border-radius: ${theme.radii.small}px;
-  background-color: ${theme.colors.primary};
+  background-color: ${theme.colors.white};
 `;
 
 const Counter = ({ value }) => (
