@@ -1,4 +1,4 @@
-import ThemeProvider, { yogaTheme, theme, createTheme } from './Theme';
+import ThemeProvider, { yogaTheme, theme, createTheme, v3theme } from './Theme';
 import Button from './Button';
 import List from './List';
 import Checkbox from './Checkbox';
@@ -29,6 +29,7 @@ export {
   yogaTheme,
   createTheme,
   theme,
+  v3theme,
   Button,
   List,
   Checkbox,

@@ -64,7 +64,10 @@ const plugins = [
     resolve: `gatsby-plugin-web-font-loader`,
     options: {
       google: {
-        families: ['Rubik:300,400,500,700,900,300i,400i,500i,700i,900i'],
+        families: [
+          'Rubik:300,400,500,700,900,300i,400i,500i,700i,900i',
+          'Inter:300,400,500,700,800,900,300i,400i,500i,700i,800i,900i',
+        ],
       },
     },
   },

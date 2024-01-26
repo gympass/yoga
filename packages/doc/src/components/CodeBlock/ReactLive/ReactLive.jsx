@@ -44,10 +44,11 @@ const Component = styled.div`
     theme: {
       yoga: {
         colors: { white, text, primary },
+        baseFont,
       },
     },
   }) => `
-    font-family: 'Rubik';
+    font-family: ${baseFont.family};
     padding: 50px;
     background-color: ${darkMode ? text.primary : white};
     transition: all 0.3s ease-in-out;

@@ -32,6 +32,7 @@ module.exports = {
       { blankLine: 'always', prev: 'directive', next: '*' },
       { blankLine: 'any', prev: 'directive', next: 'directive' },
     ],
+    'import/no-named-as-default': 0,
   },
   globals: {
     window: true,

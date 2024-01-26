@@ -1,0 +1,69 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "../yoga/src/Fonts/Inter-300.ttf",
+      "sha1": "cbb2506d8da21edbb2dc8cfa26e3b42a97d138f8"
+    },
+    {
+      "path": "../yoga/src/Fonts/Inter-500.ttf",
+      "sha1": "e76f580811e031813e7150131a0724811cdd737a"
+    },
+    {
+      "path": "../yoga/src/Fonts/Inter-700.ttf",
+      "sha1": "47ff07c75746682133b81e7ac0537ce50a4c9916"
+    },
+    {
+      "path": "../yoga/src/Fonts/Inter-800.ttf",
+      "sha1": "c9b3d2f2449ab2c67ff075f806973fa3d7e104b3"
+    },
+    {
+      "path": "../yoga/src/Fonts/Inter-900.ttf",
+      "sha1": "f79fa58ace5f55e338c99bf71e7e0702841df6f2"
+    },
+    {
+      "path": "../yoga/src/Fonts/Inter.ttf",
+      "sha1": "cfa780d0b50b2bb7eacb82984f1b18a95aaa40c5"
+    },
+    {
+      "path": "../yoga/src/Fonts/Rubik-300-italic.ttf",
+      "sha1": "7e6c1d6a4347713349c49846bb066aaddc825cec"
+    },
+    {
+      "path": "../yoga/src/Fonts/Rubik-300.ttf",
+      "sha1": "ab626c8a0e663e9daf5b5064783e06ebfef9c80b"
+    },
+    {
+      "path": "../yoga/src/Fonts/Rubik-500-italic.ttf",
+      "sha1": "61761978e3bfdd077f9799d2e491306ec205c869"
+    },
+    {
+      "path": "../yoga/src/Fonts/Rubik-500.ttf",
+      "sha1": "1c7160fa20ccc42db9a1fc9245cd8f9367a428ea"
+    },
+    {
+      "path": "../yoga/src/Fonts/Rubik-700-italic.ttf",
+      "sha1": "60119c0b523c3b0712e956fa53b99adce01a3c91"
+    },
+    {
+      "path": "../yoga/src/Fonts/Rubik-700.ttf",
+      "sha1": "37d3e9933d7ea3cd1ea9048a929a9392c506538f"
+    },
+    {
+      "path": "../yoga/src/Fonts/Rubik-900-italic.ttf",
+      "sha1": "313caf026d4cc607a0874e97c2c836ab7c296aba"
+    },
+    {
+      "path": "../yoga/src/Fonts/Rubik-900.ttf",
+      "sha1": "ac5408131f3693795f4e9049e78f1d18f1ed19fb"
+    },
+    {
+      "path": "../yoga/src/Fonts/Rubik-italic.ttf",
+      "sha1": "2c0bc181562295cba66d1e23da977237324ca5fc"
+    },
+    {
+      "path": "../yoga/src/Fonts/Rubik.ttf",
+      "sha1": "688c0cbc43d63c4f63cb997018fe889915a9dc7b"
+    }
+  ]
+}
