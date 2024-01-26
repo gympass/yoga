@@ -1,7 +1,7 @@
 import { arrayOf, node, oneOf, oneOfType, string, bool } from 'prop-types';
 import React from 'react';
 
-import { CheckedFull, Info, AlertTriangle } from '@gympass/yoga-icons';
+import { Attention, Delayed, Information, Success } from '@gympass/yoga-icons';
 import Icon from '../../Icon';
 import Box from '../../Box';
 import Text from '../../Text';
@@ -17,16 +17,16 @@ import {
 const ICON_SIZE = 64;
 const VARIANT_ICONS = {
   success: {
-    as: CheckedFull,
-    fill: 'hope',
+    as: Success,
   },
   informative: {
-    as: Info,
-    fill: 'relax',
+    as: Information,
   },
   attention: {
-    as: AlertTriangle,
-    fill: 'brandingVerve',
+    as: Attention,
+  },
+  delayed: {
+    as: Delayed,
   },
 };
 
@@ -67,7 +67,7 @@ function Feedback({ variant, title, description, children, center, ...props }) {
           {...iconProps}
           size={ICON_SIZE}
           mb="large"
-          data-testid="feedback-icon"
+          data-testid={`feedback-icon-${variant}`}
         />
         <TextContainer>
           {titleElement}
