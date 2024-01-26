@@ -33,86 +33,58 @@ const ButtonPage = () => (
       alignItems: 'center',
     }}
   >
-    <Wrapper style={{ height: 360 }}>
-      <DocTitle>Icon Buttons</DocTitle>
-      <Button.Icon icon={Booking} />
-      <Button.Icon icon={Edit} small />
-
-      <Button.Icon icon={Add} secondary />
-      <Button.Icon icon={Check} secondary small />
-
-      <Button.Icon icon={ChevronLeft} inverted small />
-      <Button.Icon icon={Close} disabled small />
-    </Wrapper>
-
-    <Wrapper style={{ height: 360 }}>
-      <DocTitle>Small Buttons</DocTitle>
-      <Button small>Primary contained</Button>
-      <Button icon={Booking} small>
-        Contained with Icon
+    <Wrapper style={{ height: 550 }}>
+      <DocTitle>Button</DocTitle>
+      <Button small>Small</Button>
+      <Button>Primary</Button>
+      <Button full>Full</Button>
+      <Button icon={Booking}>Primary with Icon</Button>
+      <Button inverted>Inverted</Button>
+      <Button inverted icon={Booking}>
+        Inverted With Icon
       </Button>
-      <Button.Text small>Text</Button.Text>
-      <Button.Text icon={Booking} small>
-        Text with icon
-      </Button.Text>
-      <Button small secondary>
-        Secondary contained
+      <Button disabled>Disabled</Button>
+      <Button disabled icon={Booking}>
+        Disabled With Icon
       </Button>
-      <Button icon={Booking} small secondary>
-        Secondary contained with Icon
-      </Button>
-      <Button.Text small secondary>
-        Secondary text
-      </Button.Text>
-      <Button.Text icon={Booking} small secondary>
-        Secondary text with icon
-      </Button.Text>
     </Wrapper>
 
     <Wrapper style={{ height: 550 }}>
-      <DocTitle>Contained Buttons</DocTitle>
-      <Button>Contained</Button>
-      <Button icon={Booking}>With Icon</Button>
-      <Button inverted>Inverted</Button>
-      <Button icon={Booking} inverted>
-        Inverted with Icon
-      </Button>
-      <Button disabled>Disabled</Button>
-      <Button secondary>Secondary contained</Button>
-      <Button icon={Booking} secondary>
-        Secondary with icon
-      </Button>
-      <Button inverted secondary>
-        Secondary inverted
-      </Button>
-      <Button icon={Booking} inverted secondary>
-        Secondary inverted with icon
-      </Button>
+      <DocTitle>Icon Buttons</DocTitle>
+      <Button.Icon icon={Booking} />
+      <Button.Icon icon={Edit} secondary />
+
+      <Button.Icon icon={Add} small />
+      <Button.Icon icon={Check} secondary small />
+
+      <Button.Icon icon={ChevronLeft} inverted />
+      <Button.Icon icon={Close} disabled />
     </Wrapper>
 
-    <Wrapper style={{ height: 180 }}>
+    <Wrapper style={{ height: 280 }}>
       <DocTitle>Link Buttons</DocTitle>
-      <Button.Link>Link</Button.Link>
+      <Button.Link>Primary Link</Button.Link>
       <Button.Link secondary>Secondary Link</Button.Link>
-      <Button.Link disabled>Disabled</Button.Link>
+      <Button.Link disabled>Disabled Link</Button.Link>
     </Wrapper>
 
     <Wrapper>
       <DocTitle>Text Buttons</DocTitle>
 
-      <Button.Text>Text</Button.Text>
-      <Button.Text icon={Booking}>With Icon</Button.Text>
+      <Button.Text small>Small</Button.Text>
+      <Button.Text>Primary</Button.Text>
+      <Button.Text icon={Booking}>Primary with Icon</Button.Text>
       <Button.Text secondary>Secondary</Button.Text>
       <Button.Text icon={Booking} secondary>
         Secondary with Icon
       </Button.Text>
-      <Button.Text inverted>Inverted</Button.Text>
-      <Button.Text icon={Booking} inverted>
-        Inverted with Icon
-      </Button.Text>
       <Button.Text disabled>Disabled</Button.Text>
       <Button.Text icon={Booking} disabled>
         Disabled with Icon
+      </Button.Text>
+      <Button.Text inverted>Inverted</Button.Text>
+      <Button.Text icon={Booking} inverted>
+        Inverted with Icon
       </Button.Text>
     </Wrapper>
   </ScrollView>

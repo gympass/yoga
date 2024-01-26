@@ -290,6 +290,9 @@ exports[`<Snackbar /> should match snapshot when have a long text 1`] = `
                     "fontSize": 14,
                     "fontWeight": "500",
                     "textAlign": "center",
+                    "textDecorationColor": "#231B22",
+                    "textDecorationLine": "underline",
+                    "textDecorationStyle": "solid",
                   },
                 ]
               }
@@ -751,6 +754,9 @@ exports[`<Snackbar /> should match snapshot when have an icon and action 1`] = `
                     "fontSize": 14,
                     "fontWeight": "500",
                     "textAlign": "center",
+                    "textDecorationColor": "#231B22",
+                    "textDecorationLine": "underline",
+                    "textDecorationStyle": "solid",
                   },
                 ]
               }

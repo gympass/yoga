@@ -797,11 +797,20 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   border: none;
   border-radius: 0;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   margin-right: 4px;
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:disabled,
@@ -814,6 +823,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -823,6 +834,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -832,6 +845,10 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:disabled {
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -1582,10 +1599,19 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -1597,6 +1623,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -1606,6 +1634,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -1617,6 +1647,10 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -1709,10 +1743,19 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -1724,6 +1767,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -1733,6 +1778,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -1744,6 +1791,10 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -2915,10 +2966,19 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -2930,6 +2990,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -2939,6 +3001,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -2950,6 +3014,10 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -3032,10 +3100,19 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -3047,6 +3124,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -3056,6 +3135,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -3067,6 +3148,10 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -4474,10 +4559,19 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -4489,6 +4583,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -4498,6 +4594,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -4509,6 +4607,10 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -4591,10 +4693,19 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -4606,6 +4717,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -4615,6 +4728,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -4626,6 +4741,10 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -6397,11 +6516,22 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
   color: #FFFFFF;
+  -webkit-text-decoration-color: #FFFFFF;
+  text-decoration-color: #FFFFFF;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -6413,6 +6543,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -6422,6 +6554,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -6435,6 +6569,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 
 .c1:not([disabled]):hover {
   color: rgba(255,255,255,0.5);
+  -webkit-text-decoration-color: rgba(255,255,255,0.5);
+  text-decoration-color: rgba(255,255,255,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -6444,6 +6580,8 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(255,255,255,0.75);
+  -webkit-text-decoration-color: rgba(255,255,255,0.75);
+  text-decoration-color: rgba(255,255,255,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -6455,6 +6593,10 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -7081,11 +7223,20 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   border: none;
   border-radius: 0;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   margin-right: 4px;
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:disabled,
@@ -7098,6 +7249,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -7107,6 +7260,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -7116,6 +7271,10 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:disabled {
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -7783,10 +7942,19 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -7798,6 +7966,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -7807,6 +7977,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -7818,6 +7990,10 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -7900,10 +8076,19 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -7915,6 +8100,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -7924,6 +8111,8 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -7935,6 +8124,10 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -8393,11 +8586,20 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Lin
   border: none;
   border-radius: 0;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   margin-right: 4px;
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:disabled,
@@ -8410,6 +8612,8 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Lin
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -8419,6 +8623,8 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Lin
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -8428,6 +8634,10 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Lin
 
 .c1:disabled {
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -8831,10 +9041,19 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Tex
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -8846,6 +9065,8 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Tex
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -8855,6 +9076,8 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Tex
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -8866,6 +9089,10 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Tex
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -9680,11 +9907,20 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   border: none;
   border-radius: 0;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   margin-right: 4px;
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:disabled,
@@ -9697,6 +9933,8 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -9706,6 +9944,8 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -9715,6 +9955,10 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:disabled {
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -10465,10 +10709,19 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -10480,6 +10733,8 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -10489,6 +10744,8 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -10500,6 +10757,10 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -10592,10 +10853,19 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   background-color: transparent;
   border-color: transparent;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -10607,6 +10877,8 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -10616,6 +10888,8 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -10627,6 +10901,10 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -11798,10 +12076,19 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
 }
 
 .c1 svg {
   fill: #231B22;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -11813,6 +12100,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -11822,6 +12111,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -11833,6 +12124,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -11915,10 +12210,19 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
 }
 
 .c1 svg {
   fill: #231B22;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -11930,6 +12234,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 
 .c1:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -11939,6 +12245,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -11950,6 +12258,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -13721,11 +14033,22 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
   color: #FFFFFF;
+  -webkit-text-decoration-color: #FFFFFF;
+  text-decoration-color: #FFFFFF;
 }
 
 .c1 svg {
   fill: #231B22;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -13737,6 +14060,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -13746,6 +14071,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -13759,6 +14086,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:not([disabled]):hover {
   color: rgba(255,255,255,0.5);
+  -webkit-text-decoration-color: rgba(255,255,255,0.5);
+  text-decoration-color: rgba(255,255,255,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -13768,6 +14097,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(255,255,255,0.75);
+  -webkit-text-decoration-color: rgba(255,255,255,0.75);
+  text-decoration-color: rgba(255,255,255,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -13779,6 +14110,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -13881,11 +14216,22 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
   color: #FFFFFF;
+  -webkit-text-decoration-color: #FFFFFF;
+  text-decoration-color: #FFFFFF;
 }
 
 .c1 svg {
   fill: #231B22;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -13897,6 +14243,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -13906,6 +14254,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -13919,6 +14269,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:not([disabled]):hover {
   color: rgba(255,255,255,0.5);
+  -webkit-text-decoration-color: rgba(255,255,255,0.5);
+  text-decoration-color: rgba(255,255,255,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -13928,6 +14280,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(255,255,255,0.75);
+  -webkit-text-decoration-color: rgba(255,255,255,0.75);
+  text-decoration-color: rgba(255,255,255,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -13939,6 +14293,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -14044,11 +14402,22 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
   color: #FFFFFF;
+  -webkit-text-decoration-color: #FFFFFF;
+  text-decoration-color: #FFFFFF;
 }
 
 .c1 svg {
   fill: #231B22;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -14060,6 +14429,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -14069,6 +14440,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -14082,6 +14455,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 
 .c1:not([disabled]):hover {
   color: rgba(255,255,255,0.5);
+  -webkit-text-decoration-color: rgba(255,255,255,0.5);
+  text-decoration-color: rgba(255,255,255,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -14091,6 +14466,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(255,255,255,0.75);
+  -webkit-text-decoration-color: rgba(255,255,255,0.75);
+  text-decoration-color: rgba(255,255,255,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -14102,6 +14479,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -15509,10 +15890,19 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
 }
 
 .c1 svg {
   fill: #231B22;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -15524,6 +15914,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -15533,6 +15925,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -15544,6 +15938,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -15626,10 +16024,19 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
 }
 
 .c1 svg {
   fill: #231B22;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -15641,6 +16048,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 
 .c1:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -15650,6 +16059,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -15661,6 +16072,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -16435,11 +16850,20 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   border: none;
   border-radius: 0;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
 }
 
 .c1 svg {
   margin-right: 4px;
   fill: #231B22;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:disabled,
@@ -16452,6 +16876,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -16461,6 +16887,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -16470,6 +16898,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled {
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -16555,11 +16987,20 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   border: none;
   border-radius: 0;
   color: #D8385E;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D8385E;
+  text-decoration-color: #D8385E;
 }
 
 .c1 svg {
   margin-right: 4px;
   fill: #D8385E;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:disabled,
@@ -16572,6 +17013,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:not([disabled]):hover {
   color: rgba(216,56,94,0.5);
+  -webkit-text-decoration-color: rgba(216,56,94,0.5);
+  text-decoration-color: rgba(216,56,94,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -16581,6 +17024,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(216,56,94,0.75);
+  -webkit-text-decoration-color: rgba(216,56,94,0.75);
+  text-decoration-color: rgba(216,56,94,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -16590,6 +17035,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:disabled {
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -17311,10 +17760,19 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
 }
 
 .c1 svg {
   fill: #231B22;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -17326,6 +17784,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -17335,6 +17795,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -17346,6 +17808,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {
@@ -17428,10 +17894,19 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
 }
 
 .c1 svg {
   fill: #231B22;
+}
+
+.c1:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c1:not([disabled]):hover,
@@ -17443,6 +17918,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 
 .c1:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c1:not([disabled]):hover svg {
@@ -17452,6 +17929,8 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 .c1:not([disabled]):focus,
 .c1:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c1:not([disabled]):focus svg,
@@ -17463,6 +17942,10 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c1:disabled svg {

@@ -149,10 +149,19 @@ exports[`<Banner /> should match snapshot with button 1`] = `
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
 }
 
 .c4 svg {
   fill: #231B22;
+}
+
+.c4:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c4:not([disabled]):hover,
@@ -164,6 +173,8 @@ exports[`<Banner /> should match snapshot with button 1`] = `
 
 .c4:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c4:not([disabled]):hover svg {
@@ -173,6 +184,8 @@ exports[`<Banner /> should match snapshot with button 1`] = `
 .c4:not([disabled]):focus,
 .c4:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c4:not([disabled]):focus svg,
@@ -184,6 +197,10 @@ exports[`<Banner /> should match snapshot with button 1`] = `
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c4:disabled svg {
@@ -546,10 +563,19 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
   background-color: transparent;
   border-color: transparent;
   color: #231B22;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #231B22;
+  text-decoration-color: #231B22;
 }
 
 .c5 svg {
   fill: #231B22;
+}
+
+.c5:not([disabled]):link {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c5:not([disabled]):hover,
@@ -561,6 +587,8 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
 
 .c5:not([disabled]):hover {
   color: rgba(35,27,34,0.5);
+  -webkit-text-decoration-color: rgba(35,27,34,0.5);
+  text-decoration-color: rgba(35,27,34,0.5);
 }
 
 .c5:not([disabled]):hover svg {
@@ -570,6 +598,8 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
 .c5:not([disabled]):focus,
 .c5:not([disabled]):active {
   color: rgba(35,27,34,0.75);
+  -webkit-text-decoration-color: rgba(35,27,34,0.75);
+  text-decoration-color: rgba(35,27,34,0.75);
 }
 
 .c5:not([disabled]):focus svg,
@@ -581,6 +611,10 @@ exports[`<Banner /> should match snapshot with two action buttons 1`] = `
   background-color: transparent;
   border-color: transparent;
   color: #6B6B78;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6B6B78;
+  text-decoration-color: #6B6B78;
 }
 
 .c5:disabled svg {

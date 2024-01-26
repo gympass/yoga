@@ -384,6 +384,9 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
           "fontSize": 16,
           "fontWeight": "500",
           "textAlign": "center",
+          "textDecorationColor": "#6B6B78",
+          "textDecorationLine": "underline",
+          "textDecorationStyle": "solid",
         },
       ]
     }
@@ -447,6 +450,9 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#6B6B78",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -584,6 +590,9 @@ exports[`<Button /> Snapshots disabled buttons With disabled prop should match s
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#6B6B78",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -867,6 +876,9 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#D8385E",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -1004,6 +1016,9 @@ exports[`<Button /> Snapshots primary buttons With full prop should match snapsh
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#D8385E",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -1412,6 +1427,9 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#FFFFFF",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -1547,6 +1565,9 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#FFFFFF",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -1958,6 +1979,9 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
             "fontSize": 14,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#D8385E",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -2095,6 +2119,9 @@ exports[`<Button /> Snapshots primary buttons With small prop should match snaps
             "fontSize": 14,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#D8385E",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -2358,6 +2385,9 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
           "fontSize": 16,
           "fontWeight": "500",
           "textAlign": "center",
+          "textDecorationColor": "#D8385E",
+          "textDecorationLine": "underline",
+          "textDecorationStyle": "solid",
         },
       ]
     }
@@ -2419,6 +2449,9 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#D8385E",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -2554,6 +2587,9 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#D8385E",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -2838,6 +2874,9 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#231B22",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -2976,6 +3015,9 @@ exports[`<Button /> Snapshots secondary buttons With full prop should match snap
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#231B22",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -3385,6 +3427,9 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#FFFFFF",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -3521,6 +3566,9 @@ exports[`<Button /> Snapshots secondary buttons With inverted prop should match 
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#FFFFFF",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -3933,6 +3981,9 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
             "fontSize": 14,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#231B22",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -4071,6 +4122,9 @@ exports[`<Button /> Snapshots secondary buttons With small prop should match sna
             "fontSize": 14,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#231B22",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -4463,6 +4517,9 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
           "fontSize": 16,
           "fontWeight": "500",
           "textAlign": "center",
+          "textDecorationColor": "#231B22",
+          "textDecorationLine": "underline",
+          "textDecorationStyle": "solid",
         },
       ]
     }
@@ -4525,6 +4582,9 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#231B22",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
@@ -4661,6 +4721,9 @@ exports[`<Button /> Snapshots secondary buttons Without props should match snaps
             "fontSize": 16,
             "fontWeight": "500",
             "textAlign": "center",
+            "textDecorationColor": "#231B22",
+            "textDecorationLine": "underline",
+            "textDecorationStyle": "solid",
           },
         ]
       }
