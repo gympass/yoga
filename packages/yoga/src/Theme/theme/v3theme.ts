@@ -18,21 +18,27 @@ export const v3theme = createTheme(tokens => ({
     deepPurple: tokens.colors.deepPurpleNew,
 
     feedback: {
-      success: {
-        ...[tokens.colors.successNew, tokens.colors.hopeNew],
-        light: tokens.colors.successNew,
-        dark: tokens.colors.hopeNew,
-      },
-      informative: {
-        ...[tokens.colors.neutralNew, tokens.colors.relaxNew],
-        light: tokens.colors.neutralNew,
-        dark: tokens.colors.relaxNew,
-      },
-      neutral: {
-        ...[tokens.colors.lightNew, tokens.colors.mediumNew],
-        light: tokens.colors.lightNew,
-        dark: tokens.colors.mediumNew,
-      },
+      success: Object.assign(
+        [tokens.colors.successNew, tokens.colors.hopeNew],
+        {
+          light: tokens.colors.successNew,
+          dark: tokens.colors.hopeNew,
+        },
+      ),
+      informative: Object.assign(
+        [tokens.colors.neutralNew, tokens.colors.relaxNew],
+        {
+          light: tokens.colors.neutralNew,
+          dark: tokens.colors.relaxNew,
+        },
+      ),
+      neutral: Object.assign(
+        [tokens.colors.lightNew, tokens.colors.mediumNew],
+        {
+          light: tokens.colors.lightNew,
+          dark: tokens.colors.mediumNew,
+        },
+      ),
     },
 
     text: {
