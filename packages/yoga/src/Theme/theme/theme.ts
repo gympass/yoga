@@ -4,6 +4,35 @@ import componentThemes from './componentThemes';
 
 import yogaTokens from '@gympass/yoga-tokens';
 
+const getComponentThemes = tokens => {
+  type ComponentThemesType = typeof componentThemes;
+  type OutputObject = {
+    [K in keyof ComponentThemesType as `${Lowercase<string & K>}`]: ReturnType<
+      ComponentThemesType[K]
+    >;
+  };
+
+  const { colors, baseFont, baseFontSize } = tokens;
+  const components = Object.entries(componentThemes).reduce(
+    (componentsStyles, [names, themed]) => {
+      const name = names.toLowerCase();
+
+      return {
+        ...componentsStyles,
+        [name]: themed({
+          ...tokens,
+          colors,
+          baseFont,
+          baseFontSize,
+        }),
+      };
+    },
+    {},
+  ) as OutputObject;
+
+  return { components };
+};
+
 const theme = (tokens: typeof yogaTokens) => {
   const baseFont = tokens.fonts.rubik;
   const baseFontSize = tokens.fontSizes.medium;
@@ -53,26 +82,9 @@ const theme = (tokens: typeof yogaTokens) => {
 const composeTheme = (tokens: typeof yogaTokens, customTheming = {}) => {
   const baseTheme = theme(tokens);
   const customTheme = merge(baseTheme, customTheming);
+  const componentTheming = getComponentThemes(customTheme);
 
-  const { colors, baseFont, baseFontSize } = customTheme;
-  const components = Object.entries(componentThemes).reduce(
-    (componentsStyles, [names, themed]) => {
-      const name = names.toLowerCase();
-
-      return {
-        ...componentsStyles,
-        [name]: themed({
-          ...tokens,
-          colors,
-          baseFont,
-          baseFontSize,
-        }),
-      };
-    },
-    {},
-  );
-
-  return merge(customTheme, { components });
+  return merge(customTheme, componentTheming);
 };
 
 export default composeTheme;
