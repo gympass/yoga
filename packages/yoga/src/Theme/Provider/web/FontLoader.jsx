@@ -9,7 +9,9 @@ const FontLoader = ({
     },
   },
 }) => {
-  const uniqueWeights = [...new Set(weight)];
+  const weightValues = Object.values(weight);
+
+  const uniqueWeights = [...new Set(weightValues)];
 
   return (
     <>
