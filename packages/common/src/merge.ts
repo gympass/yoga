@@ -4,7 +4,11 @@ const merge = (target, source) => {
   Object.keys(source).forEach(key => {
     newTarget[key] = source[key];
 
-    if (source[key] !== null && typeof source[key] === 'object') {
+    if (
+      source[key] !== null &&
+      typeof source[key] === 'object' &&
+      !Array.isArray(source[key])
+    ) {
       newTarget[key] = merge(target[key] || {}, newTarget[key]);
     }
   });
