@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/Gympass/yoga/compare/@gympass/yoga-common@1.3.0...@gympass/yoga-common@1.3.1) (2024-01-31)
+
+
+### Bug Fixes
+
+* **merge:** don't change the array type when merging ([e92ef7b](https://github.com/Gympass/yoga/commit/e92ef7b98c03922c851ad01257eafa4252be753a))
+
+
+
+
+
 # [1.3.0](https://github.com/Gympass/yoga/compare/@gympass/yoga-common@1.2.1...@gympass/yoga-common@1.3.0) (2023-10-03)
 
 
