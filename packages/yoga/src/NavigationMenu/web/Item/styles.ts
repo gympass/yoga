@@ -154,6 +154,16 @@ export const StyledItem = styled.li<{
     a {
       text-decoration: none;
 
+      &:hover,
+      &:focus {
+        outline: none;
+
+        ${StyledTextContainer} {
+          background-color: ${backgroundColor.hover};
+          color: ${font.color.hover};
+        }
+      }
+
       &.active {
         ${Active}
       }

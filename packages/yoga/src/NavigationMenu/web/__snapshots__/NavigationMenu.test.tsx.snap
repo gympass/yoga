@@ -279,6 +279,17 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   text-decoration: none;
 }
 
+.c10 a:hover,
+.c10 a:focus {
+  outline: none;
+}
+
+.c10 a:hover .c11,
+.c10 a:focus .c11 {
+  background-color: #D7D7E0;
+  color: #231B22;
+}
+
 .c10 a.active {
   cursor: auto;
 }
@@ -334,6 +345,17 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   text-decoration: none;
 }
 
+.c20 a:hover,
+.c20 a:focus {
+  outline: none;
+}
+
+.c20 a:hover .c11,
+.c20 a:focus .c11 {
+  background-color: #D7D7E0;
+  color: #231B22;
+}
+
 .c20 a.active {
   cursor: auto;
 }
@@ -375,6 +397,17 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   cursor: auto;
+}
+
+.c22 a:hover,
+.c22 a:focus {
+  outline: none;
+}
+
+.c22 a:hover .c11,
+.c22 a:focus .c11 {
+  background-color: #D7D7E0;
+  color: #231B22;
 }
 
 .c22 a.active {
