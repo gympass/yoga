@@ -162,6 +162,14 @@ export const StyledItem = styled.li<{
           background-color: ${backgroundColor.hover};
           color: ${font.color.hover};
         }
+
+        ${StyledText} {
+          color: ${font.color.hover};
+        }
+
+        svg {
+          fill: ${icon.fill.hover};
+        }
       }
 
       &.active {

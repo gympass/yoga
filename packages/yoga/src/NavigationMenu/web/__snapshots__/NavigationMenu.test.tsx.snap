@@ -290,6 +290,16 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   color: #231B22;
 }
 
+.c10 a:hover .c15,
+.c10 a:focus .c15 {
+  color: #231B22;
+}
+
+.c10 a:hover svg,
+.c10 a:focus svg {
+  fill: #231B22;
+}
+
 .c10 a.active {
   cursor: auto;
 }
@@ -356,6 +366,16 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   color: #231B22;
 }
 
+.c20 a:hover .c15,
+.c20 a:focus .c15 {
+  color: #231B22;
+}
+
+.c20 a:hover svg,
+.c20 a:focus svg {
+  fill: #231B22;
+}
+
 .c20 a.active {
   cursor: auto;
 }
@@ -408,6 +428,16 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
 .c22 a:focus .c11 {
   background-color: #D7D7E0;
   color: #231B22;
+}
+
+.c22 a:hover .c15,
+.c22 a:focus .c15 {
+  color: #231B22;
+}
+
+.c22 a:hover svg,
+.c22 a:focus svg {
+  fill: #231B22;
 }
 
 .c22 a.active {
