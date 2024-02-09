@@ -56,7 +56,7 @@ export const Actions = styled(Box)`
       @media (min-width: 769px) {
         flex-direction: row;
         margin-top: ${spacing.xxlarge}px;
-        gap: 0;
+      gap: 0;
       }
     `}}
 `;
