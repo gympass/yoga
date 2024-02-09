@@ -51,7 +51,7 @@ export const Actions = styled(Box)`
     css`
       display: flex;
       flex-direction: column;
-      gap: ${spacing.small}px;
+    gap: ${spacing.small}px;
 
       @media (min-width: 769px) {
         flex-direction: row;
