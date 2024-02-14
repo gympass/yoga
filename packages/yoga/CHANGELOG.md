@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.94.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.93.2...@gympass/yoga@7.94.0) (2024-02-14)
+
+
+### Bug Fixes
+
+* **feedback-buttons:** adds gap to button actions on mobile versions ([0753414](https://github.com/Gympass/yoga/commit/075341481aef21e88bd9c3026fef5454ea06c9b6))
+* solve lint errors ([df226de](https://github.com/Gympass/yoga/commit/df226de8f3d56aa7420a04ff451bd1446cc7311d))
+
+
+### Features
+
+* **feedback:** updates test snapshot ([04973f0](https://github.com/Gympass/yoga/commit/04973f03a7bb5db6fb3bc20f9e2d72b2a9e53ab4))
+
+
+
+
+
 ## [7.93.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.93.1...@gympass/yoga@7.93.2) (2024-02-14)
 
 **Note:** Version bump only for package @gympass/yoga
