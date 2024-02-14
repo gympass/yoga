@@ -60,6 +60,7 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  gap: 16px;
 }
 
 @media (min-width:769px) {
@@ -87,6 +88,7 @@ exports[`<Feedback /> should render correctly when not centered vertically 1`] =
     -ms-flex-direction: row;
     flex-direction: row;
     margin-top: 40px;
+    gap: 0;
   }
 }
 
