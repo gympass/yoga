@@ -26,7 +26,7 @@ const yoga = '#FFEEF2';
 const success = '#C1EEDB';
 const successNew = '#E3EFC3';
 const neutral = '#E0DFFF';
-const neutralNew = '#EAE0FF';
+const neutralNew = '#F0E0FF';
 const attention = '#FCD6C3';
 
 // Gray scale ↓
