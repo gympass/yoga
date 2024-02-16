@@ -5,6 +5,7 @@ import Button from '../../Button';
 
 const ButtonIcon = styled(Button.Icon)`
   ${({
+    secondary,
     theme: {
       yoga: {
         components: { heading },
@@ -14,6 +15,9 @@ const ButtonIcon = styled(Button.Icon)`
     css`
       width: ${heading.button.width}px;
       height: ${heading.button.height}px;
+      background-color: ${secondary
+        ? 'transparent'
+        : heading.button.background};
 
       :not(:last-of-type) {
         margin-right: ${heading.button.marginRight}px;
