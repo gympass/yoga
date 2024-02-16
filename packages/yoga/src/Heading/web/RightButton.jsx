@@ -22,7 +22,7 @@ const ButtonIcon = styled(Button.Icon)`
 `;
 
 const RightButton = ({ onClick, icon, ...props }) => (
-  <ButtonIcon {...props} icon={icon} inverted onClick={onClick} />
+  <ButtonIcon icon={icon} secondary inverted onClick={onClick} {...props} />
 );
 
 RightButton.propTypes = {
