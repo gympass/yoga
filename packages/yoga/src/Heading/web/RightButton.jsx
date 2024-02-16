@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import Button from '../../Button';
+import Box from '../../Box';
 
 const ButtonIcon = styled(Button.Icon)`
   ${({
@@ -26,7 +27,9 @@ const ButtonIcon = styled(Button.Icon)`
 `;
 
 const RightButton = ({ onClick, icon, ...props }) => (
-  <ButtonIcon icon={icon} secondary inverted onClick={onClick} {...props} />
+  <Box padding="xxxsmall" onClick={onClick} role="button" tabIndex={0}>
+    <ButtonIcon icon={icon} secondary inverted {...props} />
+  </Box>
 );
 
 RightButton.propTypes = {
