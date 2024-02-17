@@ -14,11 +14,15 @@ const ButtonIcon = styled(Button.Icon)`
     },
   }) =>
     css`
-      width: ${heading.button.width}px;
+      min-width: ${heading.button.width}px;
+      max-width: ${heading.button.width}px;
       height: ${heading.button.height}px;
       background-color: ${secondary
         ? 'transparent'
         : heading.button.background};
+      & > svg {
+        fill: ${heading.button.color};
+      }
 
       :not(:last-of-type) {
         margin-right: ${heading.button.marginRight}px;
