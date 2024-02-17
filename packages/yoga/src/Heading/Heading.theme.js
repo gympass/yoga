@@ -1,15 +1,16 @@
 const Heading = ({ spacing, colors }) => ({
   background: colors.white,
   padding: {
-    vertical: spacing.small,
-    horizontal: spacing.huge,
-    horizontalMobile: spacing.medium,
+    vertical: spacing.xxxsmall,
+    horizontal: spacing.medium,
   },
   height: spacing.xxxlarge,
   button: {
-    width: spacing.large,
-    height: spacing.large,
-    marginRight: spacing.medium,
+    color: colors.secondary,
+    width: spacing.xxlarge,
+    height: spacing.xxlarge,
+    marginRight: spacing.xxxsmall,
+    background: colors.elements.lineAndBorders,
   },
 });
 
