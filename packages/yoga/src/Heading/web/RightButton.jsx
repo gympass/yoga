@@ -12,8 +12,8 @@ const ButtonIcon = styled(Button.Icon)`
         components: { heading },
       },
     },
-  }) =>
-    css`
+  }) => {
+    return css`
       min-width: ${heading.button.width}px;
       max-width: ${heading.button.width}px;
       height: ${heading.button.height}px;
@@ -27,7 +27,8 @@ const ButtonIcon = styled(Button.Icon)`
       :not(:last-of-type) {
         margin-right: ${heading.button.marginRight}px;
       }
-    `};
+    `;
+  }};
 `;
 
 const RightButton = ({ onClick, icon, ...props }) => (
