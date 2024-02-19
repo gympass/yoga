@@ -32,7 +32,7 @@ const ButtonIcon = styled(Button.Icon)`
 
 const RightButton = ({ onClick, icon, ...props }) => (
   <Box padding="xxxsmall" onClick={onClick} role="button" tabIndex={0}>
-    <ButtonIcon icon={icon} secondary inverted {...props} />
+    <ButtonIcon tabIndex={-1} icon={icon} secondary inverted {...props} />
   </Box>
 );
 
