@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Heading /> should match snapshot no padding 1`] = `
-.c4 {
+.c5 {
   width: 100%;
   text-align: center;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -17,12 +17,16 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c1 {
+  padding: 4px;
+}
+
+.c4 {
   width: 24px;
   height: 24px;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -45,7 +49,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #D8385E;
+  background-color: #231B22;
   border: none;
   border-radius: 9999px;
   color: #FFFFFF;
@@ -60,12 +64,12 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
-  color: #D8385E;
+  color: #231B22;
   padding: 0;
   width: 48px;
 }
 
-.c1 svg {
+.c2 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -74,39 +78,39 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
   transition: fill 0.2s;
 }
 
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+.c2:not([disabled]):hover,
+.c2:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c1:active {
-  background-color: rgba(216,56,94,0.75);
+.c2:active {
+  background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c1:active svg {
+.c2:active svg {
   fill: #FFFFFF;
 }
 
-.c1 svg {
-  fill: #D8385E;
+.c2 svg {
+  fill: #231B22;
 }
 
-.c1:active {
+.c2:active {
   background-color: rgba(255,255,255,0.75);
-  color: rgba(216,56,94,0.75);
+  color: rgba(35,27,34,0.75);
 }
 
-.c1:active svg {
-  fill: rgba(216,56,94,0.75);
+.c2:active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
+.c2:not([disabled]):hover,
+.c2:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c1 svg {
+.c2 svg {
   width: unset;
   height: unset;
   margin-right: unset;
@@ -114,7 +118,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
   transition: fill 0.2s;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -126,9 +130,8 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 16px 20px;
+  padding: 4px 20px;
   width: 100%;
-  min-height: 56px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -144,72 +147,93 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
   padding: 0;
 }
 
-.c2 {
-  width: 24px;
-  height: 24px;
+.c3 {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  background-color: #D7D7E0;
 }
 
-.c7 {
-  width: 24px;
-  height: 24px;
+.c8 {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  background-color: transparent;
 }
 
-.c7:not(:last-of-type) {
-  margin-right: 20px;
+.c8 > svg {
+  fill: #231B22;
+}
+
+.c8:not(:last-of-type) {
+  margin-right: 4px;
 }
 
 <div>
   <header
     class="c0"
   >
-    <button
-      class="c1 c2"
-    >
-      <svg
-        aria-hidden="true"
-        class="c3"
-        height="24"
-        role="img"
-        width="24"
-      />
-    </button>
     <div
-      class="c4"
+      class="c1"
+      role="button"
+      tabindex="0"
+    >
+      <button
+        class="c2 c3"
+        tabindex="-1"
+      >
+        <svg
+          aria-hidden="true"
+          class="c4"
+          height="24"
+          role="img"
+          width="24"
+        />
+      </button>
+    </div>
+    <div
+      class="c5"
     >
       <h1
-        class="c5"
+        class="c6"
         font-size="small"
       >
         Gympass
       </h1>
     </div>
     <div
-      class="c6"
+      class="c7"
       display="flex"
     >
-      <button
-        class="c1 c7"
+      <div
+        class="c1"
+        role="button"
+        tabindex="0"
       >
-        <svg
-          aria-hidden="true"
-          class="c3"
-          height="24"
-          role="img"
-          width="24"
-        />
-      </button>
+        <button
+          class="c2 c8"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            height="24"
+            role="img"
+            width="24"
+          />
+        </button>
+      </div>
     </div>
   </header>
 </div>
 `;
 
 exports[`<Heading /> should match snapshot with all components 1`] = `
-.c4 {
+.c5 {
   width: 100%;
   text-align: center;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -220,12 +244,16 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c1 {
+  padding: 4px;
+}
+
+.c4 {
   width: 24px;
   height: 24px;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -248,7 +276,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #D8385E;
+  background-color: #231B22;
   border: none;
   border-radius: 9999px;
   color: #FFFFFF;
@@ -263,12 +291,12 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
-  color: #D8385E;
+  color: #231B22;
   padding: 0;
   width: 48px;
 }
 
-.c1 svg {
+.c2 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -277,39 +305,39 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   transition: fill 0.2s;
 }
 
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+.c2:not([disabled]):hover,
+.c2:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c1:active {
-  background-color: rgba(216,56,94,0.75);
+.c2:active {
+  background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c1:active svg {
+.c2:active svg {
   fill: #FFFFFF;
 }
 
-.c1 svg {
-  fill: #D8385E;
+.c2 svg {
+  fill: #231B22;
 }
 
-.c1:active {
+.c2:active {
   background-color: rgba(255,255,255,0.75);
-  color: rgba(216,56,94,0.75);
+  color: rgba(35,27,34,0.75);
 }
 
-.c1:active svg {
-  fill: rgba(216,56,94,0.75);
+.c2:active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
+.c2:not([disabled]):hover,
+.c2:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c1 svg {
+.c2 svg {
   width: unset;
   height: unset;
   margin-right: unset;
@@ -317,7 +345,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   transition: fill 0.2s;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -329,9 +357,8 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 16px 20px;
+  padding: 4px 20px;
   width: 100%;
-  min-height: 56px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -346,23 +373,31 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   align-items: center;
 }
 
-.c2 {
-  width: 24px;
-  height: 24px;
+.c3 {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  background-color: #D7D7E0;
 }
 
-.c7 {
-  width: 24px;
-  height: 24px;
+.c8 {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  background-color: transparent;
 }
 
-.c7:not(:last-of-type) {
-  margin-right: 20px;
+.c8 > svg {
+  fill: #231B22;
+}
+
+.c8:not(:last-of-type) {
+  margin-right: 4px;
 }
 
 @media (min-width:769px) {
   .c0 {
-    padding: 16px 72px;
+    padding: 4px 20px;
   }
 }
 
@@ -370,49 +405,62 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
   <header
     class="c0"
   >
-    <button
-      class="c1 c2"
-    >
-      <svg
-        aria-hidden="true"
-        class="c3"
-        height="24"
-        role="img"
-        width="24"
-      />
-    </button>
     <div
-      class="c4"
-    >
-      <h1
-        class="c5"
-        font-size="small"
-      >
-        Gympass
-      </h1>
-    </div>
-    <div
-      class="c6"
-      display="flex"
+      class="c1"
+      role="button"
+      tabindex="0"
     >
       <button
-        class="c1 c7"
+        class="c2 c3"
+        tabindex="-1"
       >
         <svg
           aria-hidden="true"
-          class="c3"
+          class="c4"
           height="24"
           role="img"
           width="24"
         />
       </button>
     </div>
+    <div
+      class="c5"
+    >
+      <h1
+        class="c6"
+        font-size="small"
+      >
+        Gympass
+      </h1>
+    </div>
+    <div
+      class="c7"
+      display="flex"
+    >
+      <div
+        class="c1"
+        role="button"
+        tabindex="0"
+      >
+        <button
+          class="c2 c8"
+        >
+          <svg
+            aria-hidden="true"
+            class="c4"
+            height="24"
+            role="img"
+            width="24"
+          />
+        </button>
+      </div>
+    </div>
   </header>
 </div>
 `;
 
 exports[`<Heading /> should match snapshot with back button 1`] = `
-.c5 {
+.c6 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -423,16 +471,20 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c1 {
+  padding: 4px;
+}
+
+.c4 {
   width: 24px;
   height: 24px;
 }
 
-.c4 {
+.c5 {
   width: 100%;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -455,7 +507,7 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #D8385E;
+  background-color: #231B22;
   border: none;
   border-radius: 9999px;
   color: #FFFFFF;
@@ -470,12 +522,12 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
-  color: #D8385E;
+  color: #231B22;
   padding: 0;
   width: 48px;
 }
 
-.c1 svg {
+.c2 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -484,39 +536,39 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
   transition: fill 0.2s;
 }
 
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+.c2:not([disabled]):hover,
+.c2:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c1:active {
-  background-color: rgba(216,56,94,0.75);
+.c2:active {
+  background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c1:active svg {
+.c2:active svg {
   fill: #FFFFFF;
 }
 
-.c1 svg {
-  fill: #D8385E;
+.c2 svg {
+  fill: #231B22;
 }
 
-.c1:active {
+.c2:active {
   background-color: rgba(255,255,255,0.75);
-  color: rgba(216,56,94,0.75);
+  color: rgba(35,27,34,0.75);
 }
 
-.c1:active svg {
-  fill: rgba(216,56,94,0.75);
+.c2:active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
+.c2:not([disabled]):hover,
+.c2:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c1 svg {
+.c2 svg {
   width: unset;
   height: unset;
   margin-right: unset;
@@ -526,9 +578,8 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 16px 20px;
+  padding: 4px 20px;
   width: 100%;
-  min-height: 56px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -543,19 +594,21 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
   align-items: center;
 }
 
-.c6 {
-  width: 24px;
-  height: 24px;
+.c7 {
+  width: 40px;
+  height: 40px;
 }
 
-.c2 {
-  width: 24px;
-  height: 24px;
+.c3 {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  background-color: #D7D7E0;
 }
 
 @media (min-width:769px) {
   .c0 {
-    padding: 16px 72px;
+    padding: 4px 20px;
   }
 }
 
@@ -563,26 +616,33 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
   <header
     class="c0"
   >
-    <button
-      class="c1 c2"
-    >
-      <svg
-        aria-hidden="true"
-        class="c3"
-        height="24"
-        role="img"
-        width="24"
-      />
-    </button>
     <div
-      class="c4"
-    />
+      class="c1"
+      role="button"
+      tabindex="0"
+    >
+      <button
+        class="c2 c3"
+        tabindex="-1"
+      >
+        <svg
+          aria-hidden="true"
+          class="c4"
+          height="24"
+          role="img"
+          width="24"
+        />
+      </button>
+    </div>
     <div
       class="c5"
+    />
+    <div
+      class="c6"
       display="flex"
     >
       <div
-        class="c6"
+        class="c7"
       />
     </div>
   </header>
@@ -618,9 +678,8 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 16px 20px;
+  padding: 4px 20px;
   width: 100%;
-  min-height: 56px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -636,13 +695,13 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 }
 
 .c1 {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 @media (min-width:769px) {
   .c0 {
-    padding: 16px 72px;
+    padding: 4px 20px;
   }
 }
 
@@ -676,12 +735,12 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 `;
 
 exports[`<Heading /> should match snapshot with title and back button 1`] = `
-.c4 {
+.c5 {
   width: 100%;
   text-align: center;
 }
 
-.c6 {
+.c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -692,12 +751,16 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   align-items: center;
 }
 
-.c3 {
+.c1 {
+  padding: 4px;
+}
+
+.c4 {
   width: 24px;
   height: 24px;
 }
 
-.c1 {
+.c2 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -720,7 +783,7 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #D8385E;
+  background-color: #231B22;
   border: none;
   border-radius: 9999px;
   color: #FFFFFF;
@@ -735,12 +798,12 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
-  color: #D8385E;
+  color: #231B22;
   padding: 0;
   width: 48px;
 }
 
-.c1 svg {
+.c2 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -749,39 +812,39 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   transition: fill 0.2s;
 }
 
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+.c2:not([disabled]):hover,
+.c2:not([disabled]):focus {
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c1:active {
-  background-color: rgba(216,56,94,0.75);
+.c2:active {
+  background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c1:active svg {
+.c2:active svg {
   fill: #FFFFFF;
 }
 
-.c1 svg {
-  fill: #D8385E;
+.c2 svg {
+  fill: #231B22;
 }
 
-.c1:active {
+.c2:active {
   background-color: rgba(255,255,255,0.75);
-  color: rgba(216,56,94,0.75);
+  color: rgba(35,27,34,0.75);
 }
 
-.c1:active svg {
-  fill: rgba(216,56,94,0.75);
+.c2:active svg {
+  fill: rgba(35,27,34,0.75);
 }
 
-.c1:not([disabled]):hover,
-.c1:not([disabled]):focus {
+.c2:not([disabled]):hover,
+.c2:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(255,255,255,0.45);
 }
 
-.c1 svg {
+.c2 svg {
   width: unset;
   height: unset;
   margin-right: unset;
@@ -789,7 +852,7 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   transition: fill 0.2s;
 }
 
-.c5 {
+.c6 {
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -801,9 +864,8 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 16px 20px;
+  padding: 4px 20px;
   width: 100%;
-  min-height: 56px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -818,19 +880,21 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   align-items: center;
 }
 
-.c7 {
-  width: 24px;
-  height: 24px;
+.c8 {
+  width: 40px;
+  height: 40px;
 }
 
-.c2 {
-  width: 24px;
-  height: 24px;
+.c3 {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  background-color: #D7D7E0;
 }
 
 @media (min-width:769px) {
   .c0 {
-    padding: 16px 72px;
+    padding: 4px 20px;
   }
 }
 
@@ -838,33 +902,40 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
   <header
     class="c0"
   >
-    <button
-      class="c1 c2"
-    >
-      <svg
-        aria-hidden="true"
-        class="c3"
-        height="24"
-        role="img"
-        width="24"
-      />
-    </button>
     <div
-      class="c4"
+      class="c1"
+      role="button"
+      tabindex="0"
+    >
+      <button
+        class="c2 c3"
+        tabindex="-1"
+      >
+        <svg
+          aria-hidden="true"
+          class="c4"
+          height="24"
+          role="img"
+          width="24"
+        />
+      </button>
+    </div>
+    <div
+      class="c5"
     >
       <h1
-        class="c5"
+        class="c6"
         font-size="small"
       >
         Gympass
       </h1>
     </div>
     <div
-      class="c6"
+      class="c7"
       display="flex"
     >
       <div
-        class="c7"
+        class="c8"
       />
     </div>
   </header>
