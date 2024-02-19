@@ -2,9 +2,10 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import Button from '../../Button';
+import Icon from '../../Icon';
 import Box from '../../Box';
 
-const ButtonIcon = styled(Button.Icon)`
+const ButtonIcon = styled(Button)`
   ${({
     secondary,
     theme: {
@@ -14,27 +15,63 @@ const ButtonIcon = styled(Button.Icon)`
     },
   }) => {
     return css`
-      min-width: ${heading.button.width}px;
+      background-color: transparent;
+      box-shadow: none;
       max-width: ${heading.button.width}px;
+      min-width: ${heading.button.width}px;
       height: ${heading.button.height}px;
-      background-color: ${secondary
-        ? 'transparent'
-        : heading.button.background};
-      & > svg {
-        fill: ${heading.button.color};
+
+      &:active {
+        background-color: transparent;
+        & svg {
+          fill: ${heading.button.color};
+        }
       }
 
-      :not(:last-of-type) {
-        margin-right: ${heading.button.marginRight}px;
+      &:not([disabled]):hover {
+        background-color: transparent;
+        box-shadow: none;
+      }
+
+      &:not([disabled]):hover {
+        background-color: transparent;
+        box-shadow: none;
+      }
+      :not([disabled]):focus {
+        box-shadow: none;
+      }
+
+      & div {
+        min-width: ${heading.button.backgroundWidth}px;
+        max-width: ${heading.button.backgroundWidth}px;
+        height: ${heading.button.backgroundHeight}px;
+        background-color: ${secondary
+          ? 'transparent'
+          : heading.button.background};
+      }
+
+      & svg {
+        fill: ${heading.button.color};
+        margin: 0;
       }
     `;
   }};
 `;
 
 const RightButton = ({ onClick, icon, ...props }) => (
-  <Box padding="xxxsmall" onClick={onClick} role="button" tabIndex={0}>
-    <ButtonIcon tabIndex={-1} icon={icon} secondary inverted {...props} />
-  </Box>
+  <ButtonIcon onClick={onClick} secondary padding="xxxsmall" {...props}>
+    <Box
+      flex={1}
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      borderRadius="50%"
+      width="xxlarge"
+      height="xxlarge"
+    >
+      <Icon as={icon} role="img" />
+    </Box>
+  </ButtonIcon>
 );
 
 RightButton.propTypes = {
