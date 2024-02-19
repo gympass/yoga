@@ -212,6 +212,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
       >
         <button
           class="c2 c8"
+          tabindex="-1"
         >
           <svg
             aria-hidden="true"
@@ -444,6 +445,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
       >
         <button
           class="c2 c8"
+          tabindex="-1"
         >
           <svg
             aria-hidden="true"
