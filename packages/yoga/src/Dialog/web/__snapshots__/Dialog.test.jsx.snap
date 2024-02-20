@@ -182,7 +182,7 @@ exports[`<Dialog /> should match snapshot 1`] = `
 exports[`<Dialog /> should match snapshot with close button 1`] = `
 <body>
   <div />
-  .c6 {
+  .c7 {
   margin-bottom: 24px;
   color: #231B22;
   font-size: 24px;
@@ -190,7 +190,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   text-align: center;
 }
 
-.c7 {
+.c8 {
   margin-bottom: 32px;
   color: #6B6B78;
   font-size: 16px;
@@ -198,7 +198,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   text-align: center;
 }
 
-.c8 {
+.c9 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -222,12 +222,12 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   justify-content: flex-end;
 }
 
-.c5 {
+.c6 {
   width: 24px;
   height: 24px;
 }
 
-.c9 {
+.c10 {
   box-sizing: border-box;
   text-align: center;
   outline: none;
@@ -266,7 +266,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   text-decoration: none;
 }
 
-.c9 svg {
+.c10 svg {
   width: 24px;
   height: 24px;
   fill: #FFFFFF;
@@ -275,17 +275,17 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   transition: fill 0.2s;
 }
 
-.c9:not([disabled]):hover,
-.c9:not([disabled]):focus {
+.c10:not([disabled]):hover,
+.c10:not([disabled]):focus {
   box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
-.c9:active {
+.c10:active {
   background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
-.c9:active svg {
+.c10:active svg {
   fill: #FFFFFF;
 }
 
@@ -312,7 +312,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   height: 48px;
   padding-left: 24px;
   padding-right: 24px;
-  background-color: #D8385E;
+  background-color: #231B22;
   border: none;
   border-radius: 9999px;
   color: #FFFFFF;
@@ -327,7 +327,7 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #FFFFFF;
-  color: #D8385E;
+  color: #231B22;
   padding: 0;
   width: 48px;
 }
@@ -343,11 +343,11 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
 
 .c4:not([disabled]):hover,
 .c4:not([disabled]):focus {
-  box-shadow: 0 4px 8px rgba(216,56,94,0.45);
+  box-shadow: 0 4px 8px rgba(35,27,34,0.45);
 }
 
 .c4:active {
-  background-color: rgba(216,56,94,0.75);
+  background-color: rgba(35,27,34,0.75);
   color: #FFFFFF;
 }
 
@@ -356,16 +356,16 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
 }
 
 .c4 svg {
-  fill: #D8385E;
+  fill: #231B22;
 }
 
 .c4:active {
   background-color: rgba(255,255,255,0.75);
-  color: rgba(216,56,94,0.75);
+  color: rgba(35,27,34,0.75);
 }
 
 .c4:active svg {
-  fill: rgba(216,56,94,0.75);
+  fill: rgba(35,27,34,0.75);
 }
 
 .c4:not([disabled]):hover,
@@ -428,6 +428,21 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
   background-color: rgba(35,27,34,0.48);
 }
 
+.c5 {
+  width: 40px;
+  height: 40px;
+  background-color: #D7D7E0;
+}
+
+.c5 svg {
+  width: 20px;
+  height: 20px;
+}
+
+.c5:active {
+  background-color: #D7D7E0;
+}
+
 <div
     id="dialog"
   >
@@ -443,11 +458,11 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
             d="flex"
           >
             <button
-              class="c4"
+              class="c4 c5"
             >
               <svg
                 aria-hidden="true"
-                class="c5"
+                class="c6"
                 height="24"
                 role="img"
                 width="24"
@@ -455,23 +470,23 @@ exports[`<Dialog /> should match snapshot with close button 1`] = `
             </button>
           </div>
           <header
-            class="c6"
+            class="c7"
             color="text.primary"
           >
             Title
           </header>
           <div
-            class="c7"
+            class="c8"
             color="text.secondary"
           >
             Subtitle
           </div>
           <footer
-            class="c8"
+            class="c9"
             d="flex"
           >
             <button
-              class="c9"
+              class="c10"
             >
               Ok, got it
             </button>

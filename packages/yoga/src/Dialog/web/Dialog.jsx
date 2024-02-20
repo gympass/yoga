@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback } from 'react';
 import { createPortal } from 'react-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { func, bool, node, number, string } from 'prop-types';
 
 import { Close } from '@gympass/yoga-icons';
@@ -53,6 +53,27 @@ const Overlay = styled.div`
   `}
 `;
 
+const CloseButton = styled(Button.Icon)`
+  ${({ theme }) => {
+    const background = theme.yoga.colors.elements.lineAndBorders;
+
+    return css`
+      width: 40px;
+      height: 40px;
+      background-color: ${background};
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      &:active {
+        background-color: ${background};
+      }
+    `;
+  }}
+`;
+
 const Dialog = React.forwardRef(
   (
     { isOpen, hideCloseButton, children, dialogId, onClose, zIndex, ...props },
@@ -99,7 +120,12 @@ const Dialog = React.forwardRef(
           <StyledDialog onClose={onClose} {...props}>
             {isCloseButtonVisible && (
               <Box d="flex" justifyContent="flex-end" w="100%">
-                <Button.Icon icon={Close} inverted onClick={onClose} />
+                <CloseButton
+                  icon={Close}
+                  inverted
+                  secondary
+                  onClick={onClose}
+                />
               </Box>
             )}
             {children}
