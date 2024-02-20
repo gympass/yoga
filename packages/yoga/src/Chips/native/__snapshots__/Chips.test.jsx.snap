@@ -13,6 +13,7 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
     }
   }
   accessible={true}
+  borderColor="rgba(35, 27, 34, 0.4)"
   disabled={false}
   focusable={false}
   onClick={[Function]}
@@ -28,7 +29,6 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
       {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
-        "borderColor": "#D7D7E0",
         "borderRadius": 9999,
         "borderStyle": "solid",
         "borderWidth": 1,
@@ -39,14 +39,15 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
         "maxWidth": 216,
         "overflow": "hidden",
         "paddingBottom": 8,
-        "paddingLeft": 8,
-        "paddingRight": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
         "paddingTop": 8,
       },
     ]
   }
 >
   <Text
+    disabled={false}
     fontSize="medium"
     inverted={false}
     light={false}
@@ -64,7 +65,7 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
         {
           "flexShrink": 1,
           "fontSize": 12,
-          "lineHeight": 12,
+          "lineHeight": "px",
         },
       ]
     }
@@ -88,6 +89,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -103,7 +105,6 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
         {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#D7D7E0",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -114,14 +115,15 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       fontSize="medium"
       inverted={false}
       light={false}
@@ -139,7 +141,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -159,6 +161,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -174,7 +177,6 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
         {
           "alignItems": "center",
           "backgroundColor": "#231B22",
-          "borderColor": "transparent",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -185,14 +187,15 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       numberOfLines={1}
       selected={true}
       style={
@@ -201,13 +204,13 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "500",
+            "fontWeight": "700",
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -254,6 +257,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -269,7 +273,6 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
         {
           "alignItems": "center",
           "backgroundColor": "#231B22",
-          "borderColor": "transparent",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -280,14 +283,15 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       numberOfLines={1}
       selected={true}
       style={
@@ -296,13 +300,13 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "500",
+            "fontWeight": "700",
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -354,6 +358,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -369,7 +374,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#D7D7E0",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -380,14 +384,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       fontSize="medium"
       inverted={false}
       light={false}
@@ -405,7 +410,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -425,6 +430,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -440,7 +446,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#D7D7E0",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -451,14 +456,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       fontSize="medium"
       inverted={false}
       light={false}
@@ -476,7 +482,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -496,6 +502,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -511,7 +518,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#D7D7E0",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -522,14 +528,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       fontSize="medium"
       inverted={false}
       light={false}
@@ -547,7 +554,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -567,6 +574,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -582,7 +590,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#D7D7E0",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -593,14 +600,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       fontSize="medium"
       inverted={false}
       light={false}
@@ -618,7 +626,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -638,6 +646,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -653,7 +662,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#231B22",
-          "borderColor": "transparent",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -664,14 +672,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       numberOfLines={1}
       selected={true}
       style={
@@ -680,13 +689,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "500",
+            "fontWeight": "700",
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -733,6 +742,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -748,7 +758,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#231B22",
-          "borderColor": "transparent",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -759,14 +768,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       numberOfLines={1}
       selected={true}
       style={
@@ -775,13 +785,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "500",
+            "fontWeight": "700",
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -828,6 +838,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -843,7 +854,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#231B22",
-          "borderColor": "transparent",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -854,14 +864,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       numberOfLines={1}
       selected={true}
       style={
@@ -870,13 +881,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "500",
+            "fontWeight": "700",
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -896,6 +907,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -911,7 +923,6 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
         {
           "alignItems": "center",
           "backgroundColor": "#231B22",
-          "borderColor": "transparent",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -922,14 +933,15 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       numberOfLines={1}
       selected={true}
       style={
@@ -938,13 +950,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "500",
+            "fontWeight": "700",
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -968,6 +980,7 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
     }
   }
   accessible={true}
+  borderColor="rgba(35, 27, 34, 0.4)"
   disabled={false}
   focusable={false}
   onClick={[Function]}
@@ -983,7 +996,6 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
       {
         "alignItems": "center",
         "backgroundColor": "#231B22",
-        "borderColor": "transparent",
         "borderRadius": 9999,
         "borderStyle": "solid",
         "borderWidth": 1,
@@ -994,14 +1006,15 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
         "maxWidth": 216,
         "overflow": "hidden",
         "paddingBottom": 8,
-        "paddingLeft": 8,
-        "paddingRight": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
         "paddingTop": 8,
       },
     ]
   }
 >
   <Text
+    disabled={false}
     numberOfLines={1}
     selected={true}
     style={
@@ -1010,13 +1023,13 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 16,
-          "fontWeight": "500",
+          "fontWeight": "700",
         },
         {
           "color": "#FFFFFF",
           "flexShrink": 1,
           "fontSize": 12,
-          "lineHeight": 12,
+          "lineHeight": "px",
         },
       ]
     }
@@ -1040,6 +1053,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -1055,7 +1069,6 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
         {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#D7D7E0",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -1066,14 +1079,15 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       fontSize="medium"
       inverted={false}
       light={false}
@@ -1091,7 +1105,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -1111,6 +1125,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -1126,7 +1141,6 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
         {
           "alignItems": "center",
           "backgroundColor": "#231B22",
-          "borderColor": "transparent",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -1137,14 +1151,15 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       numberOfLines={1}
       selected={true}
       style={
@@ -1153,13 +1168,13 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "500",
+            "fontWeight": "700",
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -1179,6 +1194,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -1194,7 +1210,6 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
         {
           "alignItems": "center",
           "backgroundColor": "#231B22",
-          "borderColor": "transparent",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -1205,14 +1220,15 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       numberOfLines={1}
       selected={true}
       style={
@@ -1221,13 +1237,13 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
             "color": "#231B22",
             "fontFamily": "Rubik",
             "fontSize": 16,
-            "fontWeight": "500",
+            "fontWeight": "700",
           },
           {
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -1251,6 +1267,7 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
     }
   }
   accessible={true}
+  borderColor="rgba(35, 27, 34, 0.4)"
   disabled={false}
   focusable={false}
   onClick={[Function]}
@@ -1266,7 +1283,6 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
       {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
-        "borderColor": "#D7D7E0",
         "borderRadius": 9999,
         "borderStyle": "solid",
         "borderWidth": 1,
@@ -1277,14 +1293,15 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
         "maxWidth": 216,
         "overflow": "hidden",
         "paddingBottom": 8,
-        "paddingLeft": 8,
-        "paddingRight": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
         "paddingTop": 8,
       },
     ]
   }
 >
   <Text
+    disabled={false}
     fontSize="medium"
     inverted={false}
     light={false}
@@ -1302,7 +1319,7 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
         {
           "flexShrink": 1,
           "fontSize": 12,
-          "lineHeight": 12,
+          "lineHeight": "px",
         },
       ]
     }
@@ -1325,6 +1342,7 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
     }
   }
   accessible={true}
+  borderColor="rgba(35, 27, 34, 0.4)"
   disabled={false}
   focusable={false}
   onClick={[Function]}
@@ -1340,7 +1358,6 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
       {
         "alignItems": "center",
         "backgroundColor": "#FFFFFF",
-        "borderColor": "#D7D7E0",
         "borderRadius": 9999,
         "borderStyle": "solid",
         "borderWidth": 1,
@@ -1351,14 +1368,15 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
         "maxWidth": 216,
         "overflow": "hidden",
         "paddingBottom": 8,
-        "paddingLeft": 8,
-        "paddingRight": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
         "paddingTop": 8,
       },
     ]
   }
 >
   <Text
+    disabled={false}
     fontSize="medium"
     inverted={false}
     light={false}
@@ -1376,7 +1394,7 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
         {
           "flexShrink": 1,
           "fontSize": 12,
-          "lineHeight": 12,
+          "lineHeight": "px",
         },
       ]
     }
@@ -1399,6 +1417,7 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
     }
   }
   accessible={true}
+  borderColor="rgba(35, 27, 34, 0.4)"
   disabled={true}
   focusable={false}
   onClick={[Function]}
@@ -1414,11 +1433,10 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
       {
         "alignItems": "center",
         "backgroundColor": "#F5F5FA",
-        "borderColor": "#D7D7E0",
+        "borderColor": "#F5F5FA",
         "borderRadius": 9999,
         "borderStyle": "solid",
         "borderWidth": 1,
-        "color": "#9898A6",
         "flexDirection": "row",
         "height": 32,
         "justifyContent": "flex-start",
@@ -1426,14 +1444,15 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
         "maxWidth": 216,
         "overflow": "hidden",
         "paddingBottom": 8,
-        "paddingLeft": 8,
-        "paddingRight": 8,
+        "paddingLeft": 12,
+        "paddingRight": 12,
         "paddingTop": 8,
       },
     ]
   }
 >
   <Text
+    disabled={true}
     fontSize="medium"
     inverted={false}
     light={false}
@@ -1449,9 +1468,10 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
           "lineHeight": 24,
         },
         {
+          "color": "#D7D7E0",
           "flexShrink": 1,
           "fontSize": 12,
-          "lineHeight": 12,
+          "lineHeight": "px",
         },
       ]
     }
@@ -1475,6 +1495,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -1490,7 +1511,6 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
         {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#D7D7E0",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -1501,14 +1521,15 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       fontSize="medium"
       inverted={false}
       light={false}
@@ -1526,7 +1547,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -1546,6 +1567,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -1561,7 +1583,6 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
         {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#D7D7E0",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -1572,14 +1593,15 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       fontSize="medium"
       inverted={false}
       light={false}
@@ -1597,7 +1619,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
@@ -1617,6 +1639,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
       }
     }
     accessible={true}
+    borderColor="rgba(35, 27, 34, 0.4)"
     disabled={false}
     focusable={false}
     onClick={[Function]}
@@ -1632,7 +1655,6 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
         {
           "alignItems": "center",
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#D7D7E0",
           "borderRadius": 9999,
           "borderStyle": "solid",
           "borderWidth": 1,
@@ -1643,14 +1665,15 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           "maxWidth": 216,
           "overflow": "hidden",
           "paddingBottom": 8,
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
           "paddingTop": 8,
         },
       ]
     }
   >
     <Text
+      disabled={false}
       fontSize="medium"
       inverted={false}
       light={false}
@@ -1668,7 +1691,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": 12,
+            "lineHeight": "px",
           },
         ]
       }
