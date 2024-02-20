@@ -8,6 +8,9 @@ import Icon from '../../Icon';
 
 import Counter from './Counter';
 
+const BORDER_OPACITY = 0.4;
+const BORDER_PRESSED_OPACITY = 0.6;
+
 const Text = styled.span`
   display: inline-block;
   box-sizing: border-box;
@@ -43,7 +46,7 @@ const Wrapper = styled.button`
 
     const commonStyles = `
 
-      padding: ${spacing.xxsmall}px;
+      padding: ${spacing.xxsmall}px ${spacing.xsmall}px;
 
       border-radius: ${radii.circle}px;
       border-width: ${borders.small}px;
@@ -58,11 +61,15 @@ const Wrapper = styled.button`
 
       &[disabled] {
         background-color: ${colors.elements.backgroundAndDisabled};
-        color: ${colors.elements.selectionAndIcons};
+        color: ${colors.text.disabled};
 
-        border-color: ${colors.elements.lineAndBorders};
+        border-color: ${colors.elements.backgroundAndDisabled};
 
         cursor: not-allowed;
+
+        svg {
+          fill: ${colors.text.disabled};
+        }
       }
 
       svg {
@@ -79,10 +86,18 @@ const Wrapper = styled.button`
 
         border-color: transparent;
 
-        font-weight: ${fontWeights.medium};
+        font-weight: ${fontWeights.bold};
 
         &:hover:enabled {
           border-color: ${colors.secondary};
+        }
+
+        &:active:enabled {
+          background-color: ${hexToRgb(
+            colors.secondary,
+            BORDER_PRESSED_OPACITY,
+          )};
+          border-color: transparent;
         }
       `;
     }
@@ -90,7 +105,7 @@ const Wrapper = styled.button`
     return `
       ${commonStyles}
 
-      border-color: ${colors.elements.lineAndBorders};
+      border-color: ${hexToRgb(colors.secondary, BORDER_OPACITY)};
 
       background-color: ${colors.white};
       color: ${colors.secondary};
@@ -101,9 +116,13 @@ const Wrapper = styled.button`
         border-color: ${colors.secondary};
       }
 
-      &:focus:enabled,
       &:active:enabled {
-        border-color: ${hexToRgb(colors.elements.lineAndBorders, 0.75)};
+        border-color: ${hexToRgb(colors.secondary, BORDER_PRESSED_OPACITY)};
+        color: ${hexToRgb(colors.secondary, BORDER_PRESSED_OPACITY)};
+
+        svg {
+          fill: ${hexToRgb(colors.secondary, BORDER_PRESSED_OPACITY)};
+        }
       }
     `;
   }}

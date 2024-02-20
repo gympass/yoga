@@ -2,13 +2,20 @@ import React from 'react';
 import { number, arrayOf, bool, func, node } from 'prop-types';
 import styled, { css, withTheme } from 'styled-components';
 import { TouchableWithoutFeedback } from 'react-native';
+import { hexToRgb } from '@gympass/yoga-common';
 
 import Counter from './Counter';
 import { theme } from '../../Theme';
 import Text from '../../Text';
 import Icon from '../../Icon';
 
-const Wrapper = styled.View`
+const BORDER_OPACITY = 0.4;
+
+const Wrapper = styled.View.attrs(({ theme: { yoga } }) => {
+  return {
+    borderColor: hexToRgb(yoga.colors.secondary, BORDER_OPACITY),
+  };
+})`
   height: 32px;
   max-width: 216px;
 
@@ -17,10 +24,9 @@ const Wrapper = styled.View`
   justify-content: flex-start;
 
   margin-right: ${theme.spacing.xxsmall}px;
-  padding: ${theme.spacing.xxsmall}px;
+  padding: ${theme.spacing.xxsmall}px ${theme.spacing.xsmall}px;
 
   border-style: solid;
-  border-color: ${theme.colors.elements.lineAndBorders};
   border-radius: ${theme.radii.circle}px;
   border-width: ${theme.borders.small}px;
 
@@ -32,9 +38,7 @@ const Wrapper = styled.View`
     disabled
       ? css`
           background-color: ${theme.colors.elements.backgroundAndDisabled};
-          color: ${theme.colors.elements.selectionAndIcons};
-
-          border-color: ${theme.colors.elements.lineAndBorders};
+          border-color: ${theme.colors.elements.backgroundAndDisabled};
         `
       : ''}
 
@@ -42,16 +46,22 @@ const Wrapper = styled.View`
     selected
       ? css`
           background-color: ${theme.colors.secondary};
-          border-color: transparent;
         `
       : ''}
 `;
 
 const StyledChips = styled(Text)`
   font-size: ${theme.fontSizes.xsmall}px;
-  line-height: ${theme.lineHeights.xxsmall}px;
+  line-height: ${theme.lineHeights.xxxsmall}px;
 
   flex-shrink: 1;
+
+  ${({ disabled }) =>
+    disabled
+      ? css`
+          color: ${theme.colors.text.disabled};
+        `
+      : ''}
 
   ${({ selected }) =>
     selected
@@ -72,7 +82,7 @@ const Chips = React.forwardRef(
       onToggle,
       onPress = onToggle,
       theme: {
-        yoga: { spacing },
+        yoga: { spacing, colors },
       },
       ...props
     },
@@ -91,7 +101,7 @@ const Chips = React.forwardRef(
           {SecondIcon && (
             <Icon
               as={SecondIcon}
-              fill={selected ? 'white' : 'secondary'}
+              fill={disabled ? colors.text.disabled : selected ? 'white' : 'secondary'}
               width="small"
               height="small"
               style={{
@@ -100,7 +110,8 @@ const Chips = React.forwardRef(
             />
           )}
           <StyledChips
-            as={selected ? Text.Medium : Text}
+            disabled={disabled}
+            as={selected ? Text.Bold : Text}
             selected={selected}
             numberOfLines={1}
           >
@@ -110,7 +121,7 @@ const Chips = React.forwardRef(
           {FirstIcon && (
             <Icon
               as={FirstIcon}
-              fill={selected ? 'white' : 'secondary'}
+              fill={disabled ? colors.text.disabled : selected ? 'white' : 'secondary'}
               width="small"
               height="small"
               style={{
