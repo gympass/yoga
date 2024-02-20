@@ -56,15 +56,17 @@ const Overlay = styled.div`
 const CloseButton = styled(Button.Icon)`
   ${({ theme }) => {
     const background = theme.yoga.colors.elements.lineAndBorders;
+    const containerSize = theme.yoga.spacing.xxlarge;
+    const svgSize = theme.yoga.spacing.medium;
 
     return css`
-      width: 40px;
-      height: 40px;
+      width: ${containerSize}px;
+      height: ${containerSize}px;
       background-color: ${background};
 
       svg {
-        width: 20px;
-        height: 20px;
+        width: ${svgSize}px;
+        height: ${svgSize}px;
       }
 
       &:active {
