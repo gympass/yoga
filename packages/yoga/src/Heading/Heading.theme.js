@@ -2,7 +2,7 @@ const Heading = ({ spacing, colors }) => ({
   background: colors.white,
   padding: {
     vertical: spacing.xxxsmall,
-    horizontal: spacing.medium,
+    horizontal: spacing.small,
   },
   height: spacing.xxxlarge,
   button: {
