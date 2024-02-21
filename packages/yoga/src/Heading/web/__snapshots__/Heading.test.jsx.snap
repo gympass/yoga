@@ -179,7 +179,7 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 4px 20px;
+  padding: 4px 16px;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -518,7 +518,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 4px 20px;
+  padding: 4px 16px;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -620,7 +620,7 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
 
 @media (min-width:769px) {
   .c0 {
-    padding: 4px 20px;
+    padding: 4px 16px;
   }
 }
 
@@ -789,7 +789,7 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 4px 20px;
+  padding: 4px 16px;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -854,7 +854,7 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
 
 @media (min-width:769px) {
   .c0 {
-    padding: 4px 20px;
+    padding: 4px 16px;
   }
 }
 
@@ -924,7 +924,7 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 4px 20px;
+  padding: 4px 16px;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -947,7 +947,7 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 
 @media (min-width:769px) {
   .c0 {
-    padding: 4px 20px;
+    padding: 4px 16px;
   }
 }
 
@@ -1097,7 +1097,7 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
 
 .c0 {
   background: #FFFFFF;
-  padding: 4px 20px;
+  padding: 4px 16px;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1162,7 +1162,7 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
 
 @media (min-width:769px) {
   .c0 {
-    padding: 4px 20px;
+    padding: 4px 16px;
   }
 }
 
