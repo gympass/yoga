@@ -39,6 +39,32 @@ The Heading defines the top of a page, and displays information and actions rela
   </Heading>
 ```
 
+#### Just right button
+
+```javascript
+  <Heading>
+    <Heading.RightButton onClick={() => alert('close button')} icon={Close} />
+  </Heading>
+```
+
+#### Just right button with background
+
+```javascript
+  <Heading>
+    <Heading.RightButton onClick={() => alert('close button')} icon={Close} secondary={false} />
+  </Heading>
+```
+
+#### With back and right button components
+
+```javascript
+  <Heading>
+    <Heading.BackButton onClick={() => alert('back button')} />
+    <Heading.Title>Gympass</Heading.Title>
+    <Heading.RightButton onClick={() => alert('right button 1')} icon={Upload2} />
+  </Heading>
+```
+
 #### With all components
 
 ```javascript
@@ -47,6 +73,17 @@ The Heading defines the top of a page, and displays information and actions rela
     <Heading.Title>Gympass</Heading.Title>
     <Heading.RightButton onClick={() => alert('right button 1')} icon={Upload2} />
     <Heading.RightButton onClick={() => alert('right button 2')} icon={Whatsapp} />
+  </Heading>
+```
+
+#### With all components with background
+
+```javascript
+  <Heading>
+    <Heading.BackButton onClick={() => alert('back button')} />
+    <Heading.Title>Gympass</Heading.Title>
+    <Heading.RightButton onClick={() => alert('right button 1')} icon={Upload2} secondary={false}/>
+    <Heading.RightButton onClick={() => alert('right button 2')} icon={Whatsapp} secondary={false}/>
   </Heading>
 ```
 
