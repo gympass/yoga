@@ -32,7 +32,7 @@ const Wrapper = styled.button`
 
   cursor: pointer;
 
-  ${({ selected, ...props }) => {
+  ${({ selected, justAnIcon, ...props }) => {
     const {
       spacing,
       borders,
@@ -46,7 +46,7 @@ const Wrapper = styled.button`
 
     const commonStyles = `
 
-      padding: ${spacing.xxsmall}px ${spacing.xsmall}px;
+      padding: ${justAnIcon ? `${spacing.xxsmall}px` : `${spacing.xxsmall}px ${spacing.xsmall}px`};
 
       border-radius: ${radii.circle}px;
       border-width: ${borders.small}px;
@@ -146,6 +146,7 @@ const Chips = React.forwardRef(
     ref,
   ) => {
     const [FirstIcon, SecondIcon] = icons;
+    const justAnIcon = (icons[0] || icons[1]) && !children;
 
     return (
       <Wrapper
@@ -153,6 +154,7 @@ const Chips = React.forwardRef(
         disabled={disabled}
         onClick={onClick}
         ref={ref}
+        justAnIcon={justAnIcon}
         type="button"
         {...props}
       >

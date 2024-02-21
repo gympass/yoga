@@ -49,8 +49,8 @@ const Wrapper = styled.View.attrs(({ theme: { yoga } }) => {
         `
       : ''}
 
-  ${({ Icons, Children }) =>
-    (Icons[0] || Icons[1]) && !Children
+  ${({ justAnIcon }) =>
+    justAnIcon
       ? css`
           padding: ${theme.spacing.xxsmall}px;
         `
@@ -96,6 +96,7 @@ const Chips = React.forwardRef(
     ref,
   ) => {
     const [FirstIcon, SecondIcon] = icons;
+    const justAnIcon = (icons[0] || icons[1]) && !children;
 
     return (
       <TouchableWithoutFeedback
@@ -104,7 +105,7 @@ const Chips = React.forwardRef(
         accessibilityRole="button"
         {...props}
       >
-        <Wrapper disabled={disabled} selected={selected} Icons={icons} Children={children}>
+        <Wrapper disabled={disabled} selected={selected} justAnIcon={justAnIcon}>
           {SecondIcon && (
             <Icon
               as={SecondIcon}
