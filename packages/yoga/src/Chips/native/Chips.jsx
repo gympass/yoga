@@ -48,6 +48,13 @@ const Wrapper = styled.View.attrs(({ theme: { yoga } }) => {
           background-color: ${theme.colors.secondary};
         `
       : ''}
+
+  ${({ Icons, Children }) =>
+    (Icons[0] || Icons[1]) && !Children
+      ? css`
+          padding: ${theme.spacing.xxsmall}px;
+        `
+      : ''}
 `;
 
 const StyledChips = styled(Text)`
@@ -97,7 +104,7 @@ const Chips = React.forwardRef(
         accessibilityRole="button"
         {...props}
       >
-        <Wrapper disabled={disabled} selected={selected}>
+        <Wrapper disabled={disabled} selected={selected} Icons={icons} Children={children}>
           {SecondIcon && (
             <Icon
               as={SecondIcon}
