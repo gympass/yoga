@@ -7,14 +7,8 @@ import { Item, Subitem } from './Item';
 import { BottomItems, BottomItem } from './BottomItems';
 import Box from '../../Box';
 
-const StyledNavigationMenu = styled(Box)<{
-  isOpenOnMobile: boolean;
-  isResponsive: boolean;
-  children: React.ReactNode;
-}>`
+const DeskTopContainer = css`
   ${({
-    isOpenOnMobile,
-    isResponsive,
     theme: {
       yoga: {
         components: {
@@ -23,8 +17,10 @@ const StyledNavigationMenu = styled(Box)<{
       },
     },
   }) => css`
+    position: relative;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     gap: ${gap.medium}px;
     padding: ${padding.small}px ${padding.xsmall}px;
     background-color: ${backgroundColor.default};
@@ -34,18 +30,30 @@ const StyledNavigationMenu = styled(Box)<{
     right: 0;
 
     transition: width 300ms ease-in-out;
+  `}
+`;
+
+const StyledNavigationMenu = styled(Box)<{
+  isOpenOnMobile: boolean;
+  isResponsive: boolean;
+  children: React.ReactNode;
+}>`
+  ${({ isOpenOnMobile, isResponsive }) => css`
+    ${DeskTopContainer};
 
     ${isResponsive &&
-    media.max('lg')`
-          position: absolute;
-          width: 100%;
-          height: calc(100% - 74px);
-          z-index: 10;
-          Top: 0;
-          right: ${isOpenOnMobile ? '0' : '-100%'};
+    css`
+      position: fixed;
+      width: 100%;
+      height: calc(100% - 56px);
+      z-index: 10;
+      top: 0;
+      right: ${isOpenOnMobile ? '0' : '-100%'};
 
-          transition: right 300ms ease-in-out;
-        `}
+      transition: right 300ms ease-in-out;
+
+      ${media.lg`${DeskTopContainer}`}
+    `}
   `}
 `;
 
