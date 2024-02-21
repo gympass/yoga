@@ -97,6 +97,8 @@ const Chips = React.forwardRef(
   ) => {
     const [FirstIcon, SecondIcon] = icons;
     const justAnIcon = (icons[0] || icons[1]) && !children;
+    const fillSelected = selected ? 'white' : 'secondary';
+    const fillIcon = disabled ? colors.text.disabled : fillSelected;
 
     return (
       <TouchableWithoutFeedback
@@ -105,11 +107,15 @@ const Chips = React.forwardRef(
         accessibilityRole="button"
         {...props}
       >
-        <Wrapper disabled={disabled} selected={selected} justAnIcon={justAnIcon}>
+        <Wrapper
+          disabled={disabled}
+          selected={selected}
+          justAnIcon={justAnIcon}
+        >
           {SecondIcon && (
             <Icon
               as={SecondIcon}
-              fill={disabled ? colors.text.disabled : selected ? 'white' : 'secondary'}
+              fill={fillIcon}
               width="small"
               height="small"
               style={{
@@ -129,7 +135,7 @@ const Chips = React.forwardRef(
           {FirstIcon && (
             <Icon
               as={FirstIcon}
-              fill={disabled ? colors.text.disabled : selected ? 'white' : 'secondary'}
+              fill={fillIcon}
               width="small"
               height="small"
               style={{

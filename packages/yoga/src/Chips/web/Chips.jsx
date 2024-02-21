@@ -46,7 +46,11 @@ const Wrapper = styled.button`
 
     const commonStyles = `
 
-      padding: ${justAnIcon ? `${spacing.xxsmall}px` : `${spacing.xxsmall}px ${spacing.xsmall}px`};
+      padding: ${
+        justAnIcon
+          ? `${spacing.xxsmall}px`
+          : `${spacing.xxsmall}px ${spacing.xsmall}px`
+      };
 
       border-radius: ${radii.circle}px;
       border-width: ${borders.small}px;
