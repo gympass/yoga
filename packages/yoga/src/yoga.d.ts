@@ -1,5 +1,5 @@
 declare module '@gympass/yoga' {
-  const Text = { Small, Tiny };
+  const Text = { SmallestException, Small, Tiny };
 
   export { Skeleton, Text, Menu };
 }

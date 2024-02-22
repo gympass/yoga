@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.96.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.95.0...@gympass/yoga@7.96.0) (2024-02-21)
+
+
+### Bug Fixes
+
+* codacy identation suggestions ([84e0daf](https://github.com/Gympass/yoga/commit/84e0dafb56508fad0a465df0026439abd0d6ef7b))
+
+
+### Features
+
+* add box wrapping the button to attend design needs ([7120847](https://github.com/Gympass/yoga/commit/71208473b68ee4d9fc463d2b77343295d09dfee3))
+* add secondary props ([1e652d8](https://github.com/Gympass/yoga/commit/1e652d892674feaf2997a035160f3739815a0126))
+* add secondary props ([7e1cd54](https://github.com/Gympass/yoga/commit/7e1cd5435f640acb86ba39dd6dd58ef847372dfb))
+
+
+
+
+
+# [7.95.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.94.0...@gympass/yoga@7.95.0) (2024-02-21)
+
+
+### Bug Fixes
+
+* add prop fill ([cd6faa2](https://github.com/Gympass/yoga/commit/cd6faa23305168b357d5c119b63966155907eb8a))
+* hidden menu on 1024 resolution ([5a16c3f](https://github.com/Gympass/yoga/commit/5a16c3f387da1254f4dd50a052857ccec6918ca2))
+* navigation menu container ([353ec78](https://github.com/Gympass/yoga/commit/353ec780a205d65ea176a1f5884ecc7d03f0e2a9))
+* update css ([5b7ee51](https://github.com/Gympass/yoga/commit/5b7ee51e74aa4d18f09cc8437cc42a33b22b9888))
+
+
+### Features
+
+* fix buttom items ([5d567c5](https://github.com/Gympass/yoga/commit/5d567c53ca79f7c72de805f61736b00f6511a3d8))
+* remove fill prop ([72d35f2](https://github.com/Gympass/yoga/commit/72d35f223036f828ce29ee37edcf540876a274d3))
+
+
+
+
+
 # [7.94.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.93.2...@gympass/yoga@7.94.0) (2024-02-14)
 
 

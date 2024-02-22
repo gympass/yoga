@@ -115,6 +115,7 @@ export const StyledItem = styled.li<{
     isActive,
     theme: {
       yoga: {
+        spacing,
         components: {
           navigationmenu: { backgroundColor, border, icon, font },
         },
@@ -127,6 +128,7 @@ export const StyledItem = styled.li<{
     border-radius: ${border.radius.default}px;
     list-style-type: none;
     cursor: pointer;
+    margin-right: ${spacing.xxsmall}px;
 
     svg {
       height: ${icon.height}px;
@@ -151,6 +153,24 @@ export const StyledItem = styled.li<{
 
     a {
       text-decoration: none;
+
+      &:hover,
+      &:focus {
+        outline: none;
+
+        ${StyledTextContainer} {
+          background-color: ${backgroundColor.hover};
+          color: ${font.color.hover};
+        }
+
+        ${StyledText} {
+          color: ${font.color.hover};
+        }
+
+        svg {
+          fill: ${icon.fill.hover};
+        }
+      }
 
       &.active {
         ${Active}
