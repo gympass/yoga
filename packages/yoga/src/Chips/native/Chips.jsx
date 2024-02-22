@@ -24,7 +24,7 @@ const Wrapper = styled.View.attrs(({ theme: { yoga } }) => {
   justify-content: flex-start;
 
   margin-right: ${theme.spacing.xxsmall}px;
-  padding: ${theme.spacing.xxsmall}px ${theme.spacing.xsmall}px;
+  padding: ${theme.spacing.xxxsmall}px ${theme.spacing.xsmall}px;
 
   border-style: solid;
   border-radius: ${theme.radii.circle}px;
@@ -59,7 +59,7 @@ const Wrapper = styled.View.attrs(({ theme: { yoga } }) => {
 
 const StyledChips = styled(Text)`
   font-size: ${theme.fontSizes.xsmall}px;
-  line-height: ${theme.lineHeights.xxsmall}px;
+  line-height: ${theme.lineHeights.xsmall}px;
 
   flex-shrink: 1;
 
