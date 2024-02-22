@@ -59,7 +59,7 @@ const Wrapper = styled.View.attrs(({ theme: { yoga } }) => {
 
 const StyledChips = styled(Text)`
   font-size: ${theme.fontSizes.xsmall}px;
-  line-height: ${theme.lineHeights.xxxsmall}px;
+  line-height: ${theme.lineHeights.xxsmall}px;
 
   flex-shrink: 1;
 
