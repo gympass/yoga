@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.96.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.0...@gympass/yoga@7.96.1) (2024-02-22)
+
+
+### Bug Fixes
+
+* back the min height header size ([b0882e2](https://github.com/Gympass/yoga/commit/b0882e2c46d7fb4a1e914de4a164c8bb51523999))
+
+
+
+
+
 # [7.96.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.95.0...@gympass/yoga@7.96.0) (2024-02-21)
 
 
