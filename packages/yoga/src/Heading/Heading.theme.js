@@ -7,8 +7,8 @@ const Heading = ({ spacing, colors }) => ({
   height: spacing.xxxlarge,
   button: {
     color: colors.secondary,
-    width: spacing.xxlarge + spacing.xxxsmall,
-    height: spacing.xxlarge + spacing.xxxsmall,
+    width: spacing.xxlarge + spacing.xxsmall,
+    height: spacing.xxlarge + spacing.xxsmall,
     backgroundWidth: spacing.xxlarge,
     backgroundHeight: spacing.xxlarge,
     background: colors.elements.lineAndBorders,
