@@ -38,10 +38,10 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
         "marginRight": 8,
         "maxWidth": 216,
         "overflow": "hidden",
-        "paddingBottom": 8,
+        "paddingBottom": 4,
         "paddingLeft": 12,
         "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingTop": 4,
       },
     ]
   }
@@ -65,7 +65,7 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
         {
           "flexShrink": 1,
           "fontSize": 12,
-          "lineHeight": "px",
+          "lineHeight": 16,
         },
       ]
     }
@@ -114,10 +114,10 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -141,7 +141,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -186,10 +186,10 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -210,7 +210,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -282,10 +282,10 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -306,7 +306,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -383,10 +383,10 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -410,7 +410,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -455,10 +455,10 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -482,7 +482,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -527,10 +527,10 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -554,7 +554,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -599,10 +599,10 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -626,7 +626,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -671,10 +671,10 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -695,7 +695,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -767,10 +767,10 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -791,7 +791,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -863,10 +863,10 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -887,7 +887,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -932,10 +932,10 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -956,7 +956,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -1005,10 +1005,10 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
         "marginRight": 8,
         "maxWidth": 216,
         "overflow": "hidden",
-        "paddingBottom": 8,
+        "paddingBottom": 4,
         "paddingLeft": 12,
         "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingTop": 4,
       },
     ]
   }
@@ -1029,7 +1029,7 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
           "color": "#FFFFFF",
           "flexShrink": 1,
           "fontSize": 12,
-          "lineHeight": "px",
+          "lineHeight": 16,
         },
       ]
     }
@@ -1078,10 +1078,10 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -1105,7 +1105,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -1150,10 +1150,10 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -1174,7 +1174,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -1219,10 +1219,10 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -1243,7 +1243,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
             "color": "#FFFFFF",
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -1292,10 +1292,10 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
         "marginRight": 8,
         "maxWidth": 216,
         "overflow": "hidden",
-        "paddingBottom": 8,
+        "paddingBottom": 4,
         "paddingLeft": 12,
         "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingTop": 4,
       },
     ]
   }
@@ -1319,7 +1319,7 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
         {
           "flexShrink": 1,
           "fontSize": 12,
-          "lineHeight": "px",
+          "lineHeight": 16,
         },
       ]
     }
@@ -1367,10 +1367,10 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
         "marginRight": 8,
         "maxWidth": 216,
         "overflow": "hidden",
-        "paddingBottom": 8,
+        "paddingBottom": 4,
         "paddingLeft": 12,
         "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingTop": 4,
       },
     ]
   }
@@ -1394,7 +1394,7 @@ exports[`<Chips /> Snapshots should match snapshot with a long text 1`] = `
         {
           "flexShrink": 1,
           "fontSize": 12,
-          "lineHeight": "px",
+          "lineHeight": 16,
         },
       ]
     }
@@ -1443,10 +1443,10 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
         "marginRight": 8,
         "maxWidth": 216,
         "overflow": "hidden",
-        "paddingBottom": 8,
+        "paddingBottom": 4,
         "paddingLeft": 12,
         "paddingRight": 12,
-        "paddingTop": 8,
+        "paddingTop": 4,
       },
     ]
   }
@@ -1471,7 +1471,7 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
           "color": "#D7D7E0",
           "flexShrink": 1,
           "fontSize": 12,
-          "lineHeight": "px",
+          "lineHeight": 16,
         },
       ]
     }
@@ -1520,10 +1520,10 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -1547,7 +1547,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -1592,10 +1592,10 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -1619,7 +1619,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
@@ -1664,10 +1664,10 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           "marginRight": 8,
           "maxWidth": 216,
           "overflow": "hidden",
-          "paddingBottom": 8,
+          "paddingBottom": 4,
           "paddingLeft": 12,
           "paddingRight": 12,
-          "paddingTop": 8,
+          "paddingTop": 4,
         },
       ]
     }
@@ -1691,7 +1691,7 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
           {
             "flexShrink": 1,
             "fontSize": 12,
-            "lineHeight": "px",
+            "lineHeight": 16,
           },
         ]
       }
