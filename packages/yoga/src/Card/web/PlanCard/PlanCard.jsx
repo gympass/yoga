@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import { node, oneOf, string } from 'prop-types';
+import { node, string } from 'prop-types';
 import Box from '../../../Box';
 import Text from '../../../Text';
 
@@ -34,7 +34,7 @@ const Plan = styled.article`
 const Border = styled.span`
   ${({ variant, hasRightMask, theme }) => {
     const { spacing, colors } = theme.yoga;
-    const color = colors[variant];
+    const color = colors[variant] || variant;
     const MASK_SIZE = 112;
     const baseMaskStyle = css`
       position: absolute;
@@ -105,7 +105,7 @@ const DiscountWrapper = styled(Box).attrs({
         top: ${PLAN_LINE_HEIGHT}px;
         background: transparent;
         border-top-right-radius: ${spacing.small}px;
-        box-shadow: ${colors[bg]} ${spacing.xsmall}px -1px;
+        box-shadow: ${colors[bg] || bg} ${spacing.xsmall}px -1px;
       }
     `;
   }}
@@ -132,28 +132,7 @@ function PlanCard({ children, discount, variant, ...rest }) {
 PlanCard.propTypes = {
   children: node,
   discount: string,
-  /** style the card border top color following the theme (primary, secondary,
-   * vibin, hope, energy, relax, peace, verve, uplift, deepPurple, deep,
-   * stamina, dark, medium, light, clear, white) */
-  variant: oneOf([
-    'primary',
-    'secondary',
-    'vibin',
-    'hope',
-    'energy',
-    'relax',
-    'peace',
-    'verve',
-    'uplift',
-    'deepPurple',
-    'stamina',
-    'dark',
-    'medium',
-    'deep',
-    'light',
-    'clear',
-    'white',
-  ]),
+  variant: string,
 };
 
 PlanCard.defaultProps = {
