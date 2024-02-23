@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.96.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.1...@gympass/yoga@7.96.2) (2024-02-23)
+
+
+### Bug Fixes
+
+* **chips:** adjust lineHeights ([3a9645e](https://github.com/Gympass/yoga/commit/3a9645e5ab280eeab01c532d40776ddee72f51ac))
+
+
+
+
+
 ## [7.96.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.0...@gympass/yoga@7.96.1) (2024-02-22)
 
 
