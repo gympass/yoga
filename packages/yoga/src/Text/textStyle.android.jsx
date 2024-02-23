@@ -12,18 +12,30 @@ const textStyle = type => () =>
           fontWeights,
           components: {
             text: {
-              [type]: { fontWeight },
+              [type]: { fontFamily, fontWeight },
             },
           },
         },
       },
-    }) => `
-  font-family: ${
-    fontWeight === 400 ? baseFont.family : `${baseFont.family}-${fontWeight}`
-  };
-    
-  ${light ? `font-family: ${baseFont.family}-${fontWeights.light};` : ''}
-  `}
+    }) => {
+      // Defaults to System Font if `fontFamily` is not loaded.
+      let finalFontFamily;
+
+      if (fontFamily) {
+        finalFontFamily = `${fontFamily}-${fontWeight}`;
+      } else {
+        finalFontFamily =
+          fontWeight === 400
+            ? baseFont.family
+            : `${baseFont.family}-${fontWeight}`;
+      }
+
+      return css`
+        font-family: '${finalFontFamily}';
+
+        ${light ? `font-family: ${baseFont.family}-${fontWeights.light};` : ''}
+      `;
+    }}
   `;
 
 export default textStyle;

@@ -8,9 +8,10 @@ const lineHeightSizes = {
   xxlarge: 40,
   xxxlarge: 48,
   huge: 56,
+  xhuge: 60,
 } as const;
 
-const lineHeight = {...Object.values(lineHeightSizes), ...lineHeightSizes};
+const lineHeight = { ...Object.values(lineHeightSizes), ...lineHeightSizes };
 
 export type LineHeightSizes = Partial<typeof lineHeight>;
 

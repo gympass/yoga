@@ -14,6 +14,11 @@ import {
   Black,
   SectionTitle,
   SmallestException,
+  Display1,
+  Display2,
+  Display3,
+  Display4,
+  DisplayNumber,
 } from './Text';
 
 export {
@@ -32,4 +37,9 @@ export {
   Black,
   SectionTitle,
   SmallestException,
+  Display1,
+  Display2,
+  Display3,
+  Display4,
+  DisplayNumber,
 };
