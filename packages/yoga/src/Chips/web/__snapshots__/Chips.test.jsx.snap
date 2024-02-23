@@ -23,13 +23,13 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
   box-sizing: border-box;
   border-style: solid;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 9999px;
   border-width: 1px;
   font-family: Rubik;
   font-size: 12px;
   line-height: 16px;
-  border-color: #D7D7E0;
+  border-color: rgba(35,27,34,0.4);
   background-color: #FFFFFF;
   color: #231B22;
   font-weight: 400;
@@ -41,9 +41,13 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
 
 .c0[disabled] {
   background-color: #F5F5FA;
-  color: #9898A6;
-  border-color: #D7D7E0;
+  color: #D7D7E0;
+  border-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c0[disabled] svg {
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -56,9 +60,13 @@ exports[`<Chips /> Snapshots counter should match snapshot 1`] = `
   border-color: #231B22;
 }
 
-.c0:focus:enabled,
 .c0:active:enabled {
-  border-color: rgba(215,215,224,0.75);
+  border-color: rgba(35,27,34,0.6);
+  color: rgba(35,27,34,0.6);
+}
+
+.c0:active:enabled svg {
+  fill: rgba(35,27,34,0.6);
 }
 
 <div>
@@ -127,13 +135,13 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   box-sizing: border-box;
   border-style: solid;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 9999px;
   border-width: 1px;
   font-family: Rubik;
   font-size: 12px;
   line-height: 16px;
-  border-color: #D7D7E0;
+  border-color: rgba(35,27,34,0.4);
   background-color: #FFFFFF;
   color: #231B22;
   font-weight: 400;
@@ -145,9 +153,13 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
 
 .c0[disabled] {
   background-color: #F5F5FA;
-  color: #9898A6;
-  border-color: #D7D7E0;
+  color: #D7D7E0;
+  border-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c0[disabled] svg {
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -160,9 +172,13 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   border-color: #231B22;
 }
 
-.c0:focus:enabled,
 .c0:active:enabled {
-  border-color: rgba(215,215,224,0.75);
+  border-color: rgba(35,27,34,0.6);
+  color: rgba(35,27,34,0.6);
+}
+
+.c0:active:enabled svg {
+  fill: rgba(35,27,34,0.6);
 }
 
 .c2 {
@@ -179,7 +195,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   box-sizing: border-box;
   border-style: solid;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 9999px;
   border-width: 1px;
   font-family: Rubik;
@@ -188,7 +204,7 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
   background-color: #231B22;
   color: #FFFFFF;
   border-color: transparent;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .c2:not(:last-child) {
@@ -197,9 +213,13 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
 
 .c2[disabled] {
   background-color: #F5F5FA;
-  color: #9898A6;
-  border-color: #D7D7E0;
+  color: #D7D7E0;
+  border-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c2[disabled] svg {
+  fill: #D7D7E0;
 }
 
 .c2 svg {
@@ -210,6 +230,11 @@ exports[`<Chips /> Snapshots counter should match snapshot with more than one Ch
 
 .c2:hover:enabled {
   border-color: #231B22;
+}
+
+.c2:active:enabled {
+  background-color: rgba(35,27,34,0.6);
+  border-color: transparent;
 }
 
 <div>
@@ -308,13 +333,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   box-sizing: border-box;
   border-style: solid;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 9999px;
   border-width: 1px;
   font-family: Rubik;
   font-size: 12px;
   line-height: 16px;
-  border-color: #D7D7E0;
+  border-color: rgba(35,27,34,0.4);
   background-color: #FFFFFF;
   color: #231B22;
   font-weight: 400;
@@ -326,9 +351,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 
 .c0[disabled] {
   background-color: #F5F5FA;
-  color: #9898A6;
-  border-color: #D7D7E0;
+  color: #D7D7E0;
+  border-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c0[disabled] svg {
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -341,9 +370,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   border-color: #231B22;
 }
 
-.c0:focus:enabled,
 .c0:active:enabled {
-  border-color: rgba(215,215,224,0.75);
+  border-color: rgba(35,27,34,0.6);
+  color: rgba(35,27,34,0.6);
+}
+
+.c0:active:enabled svg {
+  fill: rgba(35,27,34,0.6);
 }
 
 .c2 {
@@ -360,7 +393,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   box-sizing: border-box;
   border-style: solid;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 9999px;
   border-width: 1px;
   font-family: Rubik;
@@ -369,7 +402,7 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
   background-color: #231B22;
   color: #FFFFFF;
   border-color: transparent;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .c2:not(:last-child) {
@@ -378,9 +411,13 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 
 .c2[disabled] {
   background-color: #F5F5FA;
-  color: #9898A6;
-  border-color: #D7D7E0;
+  color: #D7D7E0;
+  border-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c2[disabled] svg {
+  fill: #D7D7E0;
 }
 
 .c2 svg {
@@ -391,6 +428,11 @@ exports[`<Chips /> Snapshots icon should match selected snapshot 1`] = `
 
 .c2:hover:enabled {
   border-color: #231B22;
+}
+
+.c2:active:enabled {
+  background-color: rgba(35,27,34,0.6);
+  border-color: transparent;
 }
 
 <div>
@@ -510,7 +552,7 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
   box-sizing: border-box;
   border-style: solid;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 9999px;
   border-width: 1px;
   font-family: Rubik;
@@ -519,7 +561,7 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
   background-color: #231B22;
   color: #FFFFFF;
   border-color: transparent;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .c0:not(:last-child) {
@@ -528,9 +570,13 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 
 .c0[disabled] {
   background-color: #F5F5FA;
-  color: #9898A6;
-  border-color: #D7D7E0;
+  color: #D7D7E0;
+  border-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c0[disabled] svg {
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -541,6 +587,11 @@ exports[`<Chips /> Snapshots selected should match snapshot 1`] = `
 
 .c0:hover:enabled {
   border-color: #231B22;
+}
+
+.c0:active:enabled {
+  background-color: rgba(35,27,34,0.6);
+  border-color: transparent;
 }
 
 <div>
@@ -580,13 +631,13 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   box-sizing: border-box;
   border-style: solid;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 9999px;
   border-width: 1px;
   font-family: Rubik;
   font-size: 12px;
   line-height: 16px;
-  border-color: #D7D7E0;
+  border-color: rgba(35,27,34,0.4);
   background-color: #FFFFFF;
   color: #231B22;
   font-weight: 400;
@@ -598,9 +649,13 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 
 .c0[disabled] {
   background-color: #F5F5FA;
-  color: #9898A6;
-  border-color: #D7D7E0;
+  color: #D7D7E0;
+  border-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c0[disabled] svg {
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -613,9 +668,13 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   border-color: #231B22;
 }
 
-.c0:focus:enabled,
 .c0:active:enabled {
-  border-color: rgba(215,215,224,0.75);
+  border-color: rgba(35,27,34,0.6);
+  color: rgba(35,27,34,0.6);
+}
+
+.c0:active:enabled svg {
+  fill: rgba(35,27,34,0.6);
 }
 
 .c2 {
@@ -632,7 +691,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   box-sizing: border-box;
   border-style: solid;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 9999px;
   border-width: 1px;
   font-family: Rubik;
@@ -641,7 +700,7 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
   background-color: #231B22;
   color: #FFFFFF;
   border-color: transparent;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .c2:not(:last-child) {
@@ -650,9 +709,13 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 
 .c2[disabled] {
   background-color: #F5F5FA;
-  color: #9898A6;
-  border-color: #D7D7E0;
+  color: #D7D7E0;
+  border-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c2[disabled] svg {
+  fill: #D7D7E0;
 }
 
 .c2 svg {
@@ -663,6 +726,11 @@ exports[`<Chips /> Snapshots selected should match snapshot with more than one C
 
 .c2:hover:enabled {
   border-color: #231B22;
+}
+
+.c2:active:enabled {
+  background-color: rgba(35,27,34,0.6);
+  border-color: transparent;
 }
 
 <div>
@@ -722,13 +790,13 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
   box-sizing: border-box;
   border-style: solid;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 9999px;
   border-width: 1px;
   font-family: Rubik;
   font-size: 12px;
   line-height: 16px;
-  border-color: #D7D7E0;
+  border-color: rgba(35,27,34,0.4);
   background-color: #FFFFFF;
   color: #231B22;
   font-weight: 400;
@@ -740,9 +808,13 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
 
 .c0[disabled] {
   background-color: #F5F5FA;
-  color: #9898A6;
-  border-color: #D7D7E0;
+  color: #D7D7E0;
+  border-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c0[disabled] svg {
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -755,9 +827,13 @@ exports[`<Chips /> Snapshots should match snapshot 1`] = `
   border-color: #231B22;
 }
 
-.c0:focus:enabled,
 .c0:active:enabled {
-  border-color: rgba(215,215,224,0.75);
+  border-color: rgba(35,27,34,0.6);
+  color: rgba(35,27,34,0.6);
+}
+
+.c0:active:enabled svg {
+  fill: rgba(35,27,34,0.6);
 }
 
 <div>
@@ -797,13 +873,13 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
   box-sizing: border-box;
   border-style: solid;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 9999px;
   border-width: 1px;
   font-family: Rubik;
   font-size: 12px;
   line-height: 16px;
-  border-color: #D7D7E0;
+  border-color: rgba(35,27,34,0.4);
   background-color: #FFFFFF;
   color: #231B22;
   font-weight: 400;
@@ -815,9 +891,13 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
 
 .c0[disabled] {
   background-color: #F5F5FA;
-  color: #9898A6;
-  border-color: #D7D7E0;
+  color: #D7D7E0;
+  border-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c0[disabled] svg {
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -830,9 +910,13 @@ exports[`<Chips /> Snapshots should match snapshot with disabled prop 1`] = `
   border-color: #231B22;
 }
 
-.c0:focus:enabled,
 .c0:active:enabled {
-  border-color: rgba(215,215,224,0.75);
+  border-color: rgba(35,27,34,0.6);
+  color: rgba(35,27,34,0.6);
+}
+
+.c0:active:enabled svg {
+  fill: rgba(35,27,34,0.6);
 }
 
 <div>
@@ -873,13 +957,13 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
   box-sizing: border-box;
   border-style: solid;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
   border-radius: 9999px;
   border-width: 1px;
   font-family: Rubik;
   font-size: 12px;
   line-height: 16px;
-  border-color: #D7D7E0;
+  border-color: rgba(35,27,34,0.4);
   background-color: #FFFFFF;
   color: #231B22;
   font-weight: 400;
@@ -891,9 +975,13 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
 
 .c0[disabled] {
   background-color: #F5F5FA;
-  color: #9898A6;
-  border-color: #D7D7E0;
+  color: #D7D7E0;
+  border-color: #F5F5FA;
   cursor: not-allowed;
+}
+
+.c0[disabled] svg {
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -906,9 +994,13 @@ exports[`<Chips /> Snapshots should match snapshot with more than one Chip 1`] =
   border-color: #231B22;
 }
 
-.c0:focus:enabled,
 .c0:active:enabled {
-  border-color: rgba(215,215,224,0.75);
+  border-color: rgba(35,27,34,0.6);
+  color: rgba(35,27,34,0.6);
+}
+
+.c0:active:enabled svg {
+  fill: rgba(35,27,34,0.6);
 }
 
 <div>
