@@ -278,7 +278,7 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 48,
-          "fontWeight": "300",
+          "fontWeight": "500",
           "lineHeight": 56,
         },
       ]
@@ -294,7 +294,7 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 40,
-          "fontWeight": "300",
+          "fontWeight": "500",
           "lineHeight": 48,
         },
       ]
@@ -310,7 +310,7 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
           "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 32,
-          "fontWeight": "300",
+          "fontWeight": "500",
           "lineHeight": 40,
         },
       ]

@@ -37,9 +37,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -48,9 +48,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -59,9 +59,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -129,9 +129,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-weight: 500;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -177,9 +177,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-weight: 500;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -505,9 +505,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu 1`] = `
   padding: 0;
   font-size: 10px;
   line-height: 12px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
   max-width: 100%;
   white-space: nowrap;
@@ -1080,9 +1080,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -1132,9 +1132,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Menu with an a
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-weight: 500;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1268,9 +1268,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -1336,9 +1336,9 @@ exports[`<NavigationMenu /> Snapshots should match NavigationMenu.Switcher with 
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-weight: 500;
   -webkit-flex: 1;
   -ms-flex: 1;

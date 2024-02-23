@@ -6,10 +6,10 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   padding: 0;
   font-size: 20px;
   line-height: 28px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
   color: #FFFFFF;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c10 {
@@ -17,9 +17,9 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c12 {
@@ -27,9 +27,9 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c9 {
@@ -37,9 +37,9 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -130,10 +130,10 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
   color: #FFFFFF;
+  font-family: Rubik;
+  font-weight: 400;
   margin-bottom: 8px;
   font-weight: 400;
 }
@@ -143,10 +143,10 @@ exports[`<Card /> Snapshots should match snapshot with default EventCard 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
   color: #FFFFFF;
+  font-family: Rubik;
+  font-weight: 400;
   font-weight: 500;
 }
 

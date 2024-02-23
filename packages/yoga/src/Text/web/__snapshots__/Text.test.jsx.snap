@@ -6,9 +6,9 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   padding: 0;
   font-size: 48px;
   line-height: 56px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c1 {
@@ -16,9 +16,9 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   padding: 0;
   font-size: 40px;
   line-height: 48px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c2 {
@@ -26,9 +26,9 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   padding: 0;
   font-size: 32px;
   line-height: 40px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c3 {
@@ -36,9 +36,9 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c4 {
@@ -46,9 +46,9 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   padding: 0;
   font-size: 20px;
   line-height: 28px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c6 {
@@ -56,9 +56,9 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c7 {
@@ -66,45 +66,45 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c8 {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c9 {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c10 {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 700;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 700;
 }
 
 .c11 {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 900;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 900;
 }
 
 .c12 {
@@ -116,10 +116,10 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   -ms-letter-spacing: 1px;
   letter-spacing: 1px;
   line-height: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
   text-transform: uppercase;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c13 {
@@ -127,9 +127,9 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   padding: 0;
   font-size: 10px;
   line-height: 12px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c5 {
@@ -137,9 +137,9 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -224,9 +224,9 @@ exports[`<Text /> Snapshots should match snapshot with Text fontSize 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 12px;
 }
 
@@ -235,9 +235,9 @@ exports[`<Text /> Snapshots should match snapshot with Text fontSize 1`] = `
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -245,9 +245,9 @@ exports[`<Text /> Snapshots should match snapshot with Text fontSize 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 24px;
 }
 
@@ -255,9 +255,9 @@ exports[`<Text /> Snapshots should match snapshot with Text fontSize 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   font-size: 40px;
 }
 
@@ -295,10 +295,10 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
   padding: 0;
   font-size: 48px;
   line-height: 56px;
-  font-weight: 500;
   font-weight: 300;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c1 {
@@ -306,10 +306,10 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
   padding: 0;
   font-size: 40px;
   line-height: 48px;
-  font-weight: 500;
   font-weight: 300;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c2 {
@@ -317,10 +317,10 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
   padding: 0;
   font-size: 32px;
   line-height: 40px;
-  font-weight: 500;
   font-weight: 300;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 <div>
@@ -348,9 +348,9 @@ exports[`<Text /> Snapshots should match snapshot with Text size 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c1 {
@@ -358,27 +358,27 @@ exports[`<Text /> Snapshots should match snapshot with Text size 1`] = `
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c2 {
   margin: 0;
   padding: 0;
   font-size: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c3 {
   margin: 0;
   padding: 0;
   font-size: 40px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 <div>
@@ -411,9 +411,9 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   padding: 0;
   font-size: 48px;
   line-height: 56px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #D8385E;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c1 {
@@ -421,9 +421,9 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   padding: 0;
   font-size: 40px;
   line-height: 48px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c2 {
@@ -431,9 +431,9 @@ exports[`<Text /> Snapshots should match snapshot with Text variant 1`] = `
   padding: 0;
   font-size: 32px;
   line-height: 40px;
-  font-weight: 500;
-  font-family: Rubik;
   color: undefined;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 <div>
@@ -461,9 +461,9 @@ exports[`<Text /> Snapshots should match snapshot with background color prop sys
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   background-color: #D8385E;
   font-size: 16px;
 }
@@ -484,9 +484,9 @@ exports[`<Text /> Snapshots should match snapshot with border prop system 1`] = 
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   border: 1px solid;
   border-radius: 8px;
   font-size: 16px;
@@ -508,9 +508,9 @@ exports[`<Text /> Snapshots should match snapshot with display prop system 1`] =
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -535,9 +535,9 @@ exports[`<Text /> Snapshots should match snapshot with elevation prop system 1`]
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   box-shadow: 0 5px 5px -3px rgba(152,152,166,0.2),0 8px 10px 1px rgba(152,152,166,0.14),0 3px 14px 2px rgba(152,152,166,0.12);
   font-size: 16px;
 }
@@ -559,9 +559,9 @@ exports[`<Text /> Snapshots should match snapshot with flexes prop system 1`] = 
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -590,10 +590,10 @@ exports[`<Text /> Snapshots should match snapshot with inverted Text 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
   color: #FFFFFF;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -613,9 +613,9 @@ exports[`<Text /> Snapshots should match snapshot with overflows prop system 1`]
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
   overflow: scroll;
 }
@@ -637,9 +637,9 @@ exports[`<Text /> Snapshots should match snapshot with position prop system 1`] 
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
   position: fixed;
   top: 16px;
@@ -662,9 +662,9 @@ exports[`<Text /> Snapshots should match snapshot with spacing prop system 1`] =
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   margin: 20px;
   padding-left: 16px;
   padding-right: 16px;
@@ -689,13 +689,13 @@ exports[`<Text /> Snapshots should match snapshot with truncated lines Text 1`] 
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -717,9 +717,9 @@ exports[`<Text /> Snapshots should match snapshot with typography prop system 1`
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #231B22;
   font-size: 14px;
   font-weight: 500;

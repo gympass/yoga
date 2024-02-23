@@ -107,9 +107,9 @@ exports[`<Accordion /> should correctly render the default version 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -117,9 +117,9 @@ exports[`<Accordion /> should correctly render the default version 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   line-height: 24px;
 }
 
@@ -128,9 +128,9 @@ exports[`<Accordion /> should correctly render the default version 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -301,9 +301,9 @@ exports[`<Accordion /> should correctly render the default version with subtitle
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -311,9 +311,9 @@ exports[`<Accordion /> should correctly render the default version with subtitle
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   line-height: 24px;
 }
 
@@ -322,9 +322,9 @@ exports[`<Accordion /> should correctly render the default version with subtitle
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -502,9 +502,9 @@ exports[`<Accordion /> should correctly render the default version without side 
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -512,9 +512,9 @@ exports[`<Accordion /> should correctly render the default version without side 
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   line-height: 24px;
 }
 
@@ -523,9 +523,9 @@ exports[`<Accordion /> should correctly render the default version without side 
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -696,9 +696,9 @@ exports[`<Accordion /> should correctly render the small version 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -707,9 +707,9 @@ exports[`<Accordion /> should correctly render the small version 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c9 {
@@ -717,9 +717,9 @@ exports[`<Accordion /> should correctly render the small version 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -890,9 +890,9 @@ exports[`<Accordion /> should correctly render the small version with subtitle 1
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -901,9 +901,9 @@ exports[`<Accordion /> should correctly render the small version with subtitle 1
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c9 {
@@ -911,9 +911,9 @@ exports[`<Accordion /> should correctly render the small version with subtitle 1
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -1100,9 +1100,9 @@ exports[`<Accordion /> should correctly render the small version without side pa
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #6B6B78;
 }
 
@@ -1111,9 +1111,9 @@ exports[`<Accordion /> should correctly render the small version without side pa
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
 }
 
 .c9 {
@@ -1121,9 +1121,9 @@ exports[`<Accordion /> should correctly render the small version without side pa
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 

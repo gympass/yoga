@@ -11,9 +11,9 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active 1`] 
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 700;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 700;
   width: 95px;
   font-size: 12px;
   -webkit-transform: translateX(-50%);
@@ -175,9 +175,9 @@ exports[`<Stepper /> Snapshots should match snapshot with first step active and 
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 700;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 700;
   width: 95px;
   font-size: 12px;
   -webkit-transform: translateX(-50%);
@@ -352,9 +352,9 @@ exports[`<Stepper /> Snapshots should match snapshot with second step active 1`]
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 700;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 700;
   width: 95px;
   font-size: 12px;
   -webkit-transform: translateX(-50%);

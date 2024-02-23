@@ -85,9 +85,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   padding: 0;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c20 {
@@ -99,9 +99,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 8px;
   color: #6B6B78;
@@ -126,9 +126,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   color: #231B22;
   margin-bottom: 8px;
   line-height: 24px;
@@ -146,9 +146,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -298,9 +298,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with default PlanCard 1`] 
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -474,9 +474,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c3 {
@@ -484,9 +484,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 8px;
   color: #6B6B78;
@@ -511,9 +511,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   color: #231B22;
   margin-bottom: 8px;
   line-height: 24px;
@@ -531,9 +531,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with suffix 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -637,9 +637,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c3 {
@@ -647,9 +647,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 8px;
   color: #6B6B78;
@@ -674,9 +674,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   color: #231B22;
   margin-bottom: 8px;
   line-height: 24px;
@@ -694,9 +694,9 @@ exports[`<PlanCard /> Snapshots should match snapshot with variant 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -874,9 +874,9 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   padding: 0;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
 }
 
 .c20 {
@@ -888,9 +888,9 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 8px;
   color: #6B6B78;
@@ -915,9 +915,9 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   color: #231B22;
   margin-bottom: 8px;
   line-height: 24px;
@@ -935,9 +935,9 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -1092,9 +1092,9 @@ exports[`<PlanCard /> Snapshots should render list item content as button 1`] = 
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -1270,9 +1270,9 @@ exports[`<PlanCard /> Snapshots should render the discount 1`] = `
   padding: 0;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: #FFFFFF;
   font-weight: 500;
 }
@@ -1295,9 +1295,9 @@ exports[`<PlanCard /> Snapshots should render the discount 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   color: #231B22;
   margin-bottom: 8px;
   line-height: 24px;
@@ -1441,9 +1441,9 @@ exports[`<PlanCard /> Snapshots should render the extra content 1`] = `
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   color: #231B22;
   margin-bottom: 8px;
   line-height: 24px;
@@ -1520,9 +1520,9 @@ exports[`<PlanCard /> Snapshots should render the title with a colored badge 1`]
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   color: #231B22;
   margin-bottom: 8px;
   line-height: 24px;
@@ -1551,9 +1551,9 @@ exports[`<PlanCard /> Snapshots should render the title without a colored badge 
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   color: #231B22;
   margin-bottom: 8px;
   line-height: 24px;
