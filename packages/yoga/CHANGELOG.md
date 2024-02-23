@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.97.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.3...@gympass/yoga@7.97.0) (2024-02-23)
+
+
+### Features
+
+* **Dialog:** update close button style ([7adea35](https://github.com/Gympass/yoga/commit/7adea355e46560fded4d63274ae8b5cd170e9053))
+
+
+
+
+
 ## [7.96.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.2...@gympass/yoga@7.96.3) (2024-02-23)
 
 
