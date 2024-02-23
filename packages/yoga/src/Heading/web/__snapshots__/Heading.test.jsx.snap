@@ -200,9 +200,9 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
 .c2 {
   background-color: transparent;
   box-shadow: none;
-  max-width: 44px;
-  min-width: 44px;
-  height: 44px;
+  max-width: 48px;
+  min-width: 48px;
+  height: 48px;
 }
 
 .c2:active {
@@ -242,9 +242,9 @@ exports[`<Heading /> should match snapshot no padding 1`] = `
 .c9 {
   background-color: transparent;
   box-shadow: none;
-  max-width: 44px;
-  min-width: 44px;
-  height: 44px;
+  max-width: 48px;
+  min-width: 48px;
+  height: 48px;
 }
 
 .c9:active {
@@ -539,9 +539,9 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
 .c2 {
   background-color: transparent;
   box-shadow: none;
-  max-width: 44px;
-  min-width: 44px;
-  height: 44px;
+  max-width: 48px;
+  min-width: 48px;
+  height: 48px;
 }
 
 .c2:active {
@@ -581,9 +581,9 @@ exports[`<Heading /> should match snapshot with all components 1`] = `
 .c9 {
   background-color: transparent;
   box-shadow: none;
-  max-width: 44px;
-  min-width: 44px;
-  height: 44px;
+  max-width: 48px;
+  min-width: 48px;
+  height: 48px;
 }
 
 .c9:active {
@@ -809,16 +809,16 @@ exports[`<Heading /> should match snapshot with back button 1`] = `
 }
 
 .c7 {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
 }
 
 .c2 {
   background-color: transparent;
   box-shadow: none;
-  max-width: 44px;
-  min-width: 44px;
-  height: 44px;
+  max-width: 48px;
+  min-width: 48px;
+  height: 48px;
 }
 
 .c2:active {
@@ -945,8 +945,8 @@ exports[`<Heading /> should match snapshot with title 1`] = `
 }
 
 .c1 {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
 }
 
 @media (min-width:769px) {
@@ -1119,16 +1119,16 @@ exports[`<Heading /> should match snapshot with title and back button 1`] = `
 }
 
 .c8 {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
 }
 
 .c2 {
   background-color: transparent;
   box-shadow: none;
-  max-width: 44px;
-  min-width: 44px;
-  height: 44px;
+  max-width: 48px;
+  min-width: 48px;
+  height: 48px;
 }
 
 .c2:active {

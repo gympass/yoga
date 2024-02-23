@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.97.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.3...@gympass/yoga@7.97.0) (2024-02-23)
+
+
+### Features
+
+* **Dialog:** update close button style ([7adea35](https://github.com/Gympass/yoga/commit/7adea355e46560fded4d63274ae8b5cd170e9053))
+
+
+
+
+
+## [7.96.3](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.2...@gympass/yoga@7.96.3) (2024-02-23)
+
+
+### Bug Fixes
+
+* update width and height ([99b5a1f](https://github.com/Gympass/yoga/commit/99b5a1f97f93833c38ea61a7a754b27aaf20dd4a))
+
+
+
+
+
+## [7.96.2](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.1...@gympass/yoga@7.96.2) (2024-02-23)
+
+
+### Bug Fixes
+
+* **chips:** adjust lineHeights ([3a9645e](https://github.com/Gympass/yoga/commit/3a9645e5ab280eeab01c532d40776ddee72f51ac))
+
+
+
+
+
 ## [7.96.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.0...@gympass/yoga@7.96.1) (2024-02-22)
 
 
