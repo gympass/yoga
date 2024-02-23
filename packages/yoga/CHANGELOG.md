@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.98.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.97.0...@gympass/yoga@7.98.0) (2024-02-23)
+
+
+### Features
+
+* **PlanCard:** allow usage of colors not included in theme ([73fb71d](https://github.com/Gympass/yoga/commit/73fb71d2672cb9a43cb7aa3d0a96c987cf06bac6))
+
+
+
+
+
 # [7.97.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.96.3...@gympass/yoga@7.97.0) (2024-02-23)
 
 
