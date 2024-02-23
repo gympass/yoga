@@ -7,6 +7,81 @@ exports[`<Text /> Snapshots should match snapshot with Text 1`] = `
       [
         {
           "color": "#231B22",
+          "fontFamily": "NaN Holo Condensed",
+          "fontSize": 60,
+          "fontWeight": "700",
+          "lineHeight": 60,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "NaN Holo Condensed",
+          "fontSize": 40,
+          "fontWeight": "700",
+          "lineHeight": 40,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "NaN Holo Condensed",
+          "fontSize": 32,
+          "fontWeight": "700",
+          "lineHeight": 32,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "NaN Holo Condensed",
+          "fontSize": 24,
+          "fontWeight": "700",
+          "lineHeight": 24,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
+          "fontFamily": "NaN Holo Condensed",
+          "fontSize": 40,
+          "fontWeight": "700",
+          "lineHeight": 40,
+        },
+      ]
+    }
+  >
+    Live the mission
+  </Text>,
+  <Text
+    style={
+      [
+        {
+          "color": "#231B22",
           "fontFamily": "Rubik",
           "fontSize": 48,
           "fontWeight": "500",
