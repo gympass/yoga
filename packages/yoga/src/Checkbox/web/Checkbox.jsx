@@ -251,7 +251,6 @@ const Checkbox = ({
   const inputRef = useRef(null);
 
   const { onChange, onClick, ...restWithoutEvents } = rest;
-  const events = { onChange, onClick };
 
   useEffect(() => {
     if (inputRef.current) {
@@ -296,7 +295,8 @@ const Checkbox = ({
             checked={checked}
             disabled={disabled}
             {...(value ? { value } : {})}
-            {...events}
+            onChange={onChange}
+            onClick={onClick}
           />
           {label}
         </Label>
