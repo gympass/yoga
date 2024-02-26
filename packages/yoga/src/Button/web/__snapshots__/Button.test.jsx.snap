@@ -39,7 +39,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -68,7 +68,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -121,7 +121,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -152,7 +152,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -271,7 +271,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -300,7 +300,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -356,7 +356,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -387,7 +387,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -514,7 +514,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   padding: 0;
@@ -545,7 +545,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -637,7 +637,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -670,7 +670,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -758,7 +758,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -787,7 +787,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -905,7 +905,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -934,7 +934,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -1030,7 +1030,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -1061,7 +1061,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -1231,7 +1231,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -1260,7 +1260,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -1359,7 +1359,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -1390,7 +1390,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -1563,7 +1563,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -1592,7 +1592,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -1707,7 +1707,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -1736,7 +1736,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With disabled p
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -1926,7 +1926,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -1957,7 +1957,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -2150,7 +2150,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -2181,7 +2181,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -2417,7 +2417,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -2448,7 +2448,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -2735,7 +2735,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -2766,7 +2766,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With full prop 
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -3281,7 +3281,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -3312,7 +3312,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -3505,7 +3505,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -3536,7 +3536,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -3775,7 +3775,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -3808,7 +3808,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -4010,7 +4010,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -4041,7 +4041,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -4328,7 +4328,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -4359,7 +4359,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop With small prop
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -4894,7 +4894,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   background-color: #FFFFFF;
@@ -4927,7 +4927,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -5158,7 +5158,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   background-color: #FFFFFF;
@@ -5191,7 +5191,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -5468,7 +5468,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   background-color: #FFFFFF;
@@ -5503,7 +5503,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -5779,7 +5779,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   background-color: #FFFFFF;
@@ -5812,7 +5812,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -6209,7 +6209,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   background-color: #FFFFFF;
@@ -6242,7 +6242,7 @@ exports[`<Button /> Snapshots primary buttons With inverted prop should match sn
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -6723,7 +6723,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -6754,7 +6754,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -6947,7 +6947,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -6978,7 +6978,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -7444,7 +7444,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -7475,7 +7475,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -7762,7 +7762,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -7793,7 +7793,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -8210,7 +8210,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -8243,7 +8243,7 @@ exports[`<Button /> Snapshots primary buttons Without props should match snapsho
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -8404,7 +8404,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -8435,7 +8435,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Def
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -8811,7 +8811,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -8842,7 +8842,7 @@ exports[`<Button /> Snapshots primary buttons buttons rendering as an anchor Out
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -9149,7 +9149,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -9178,7 +9178,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -9231,7 +9231,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -9262,7 +9262,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -9381,7 +9381,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -9410,7 +9410,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 <div>
@@ -9466,7 +9466,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -9497,7 +9497,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -9624,7 +9624,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   padding: 0;
@@ -9655,7 +9655,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -9747,7 +9747,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -9780,7 +9780,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -9868,7 +9868,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -9897,7 +9897,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -10015,7 +10015,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -10044,7 +10044,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -10140,7 +10140,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -10171,7 +10171,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -10341,7 +10341,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -10370,7 +10370,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -10469,7 +10469,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -10500,7 +10500,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -10673,7 +10673,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -10702,7 +10702,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -10817,7 +10817,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -10846,7 +10846,7 @@ exports[`<Button /> Snapshots primary buttons disabled buttons With disabled pro
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c1 {
@@ -11036,7 +11036,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -11067,7 +11067,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -11260,7 +11260,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -11291,7 +11291,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -11527,7 +11527,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -11558,7 +11558,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -11845,7 +11845,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -11876,7 +11876,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With full prop s
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -12411,7 +12411,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   background-color: #FFFFFF;
@@ -12444,7 +12444,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -12675,7 +12675,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   background-color: #FFFFFF;
@@ -12708,7 +12708,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -12985,7 +12985,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   background-color: #FFFFFF;
@@ -13020,7 +13020,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -13296,7 +13296,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   background-color: #FFFFFF;
@@ -13329,7 +13329,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -13726,7 +13726,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   background-color: #FFFFFF;
@@ -13759,7 +13759,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With inverted pr
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -14612,7 +14612,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -14643,7 +14643,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -14836,7 +14836,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -14867,7 +14867,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -15106,7 +15106,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -15139,7 +15139,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -15341,7 +15341,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -15372,7 +15372,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -15659,7 +15659,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -15690,7 +15690,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons With small prop 
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -16205,7 +16205,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -16236,7 +16236,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -16429,7 +16429,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -16460,7 +16460,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -16699,7 +16699,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -16732,7 +16732,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -17211,7 +17211,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -17242,7 +17242,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
@@ -17529,7 +17529,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: #F5F5FA;
-  color: #6B6B78;
+  color: #D7D7E0;
   pointer-events: none;
   cursor: not-allowed;
   position: relative;
@@ -17560,7 +17560,7 @@ exports[`<Button /> Snapshots primary buttons secondary buttons Without props sh
 }
 
 .c0 svg {
-  fill: #6B6B78;
+  fill: #D7D7E0;
 }
 
 .c0 svg {
