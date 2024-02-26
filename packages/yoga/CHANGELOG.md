@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.99.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.98.0...@gympass/yoga@7.99.0) (2024-02-26)
+
+
+### Features
+
+* **Button:** change disabled text color ([c30a154](https://github.com/Gympass/yoga/commit/c30a154ee08592b0c726653f2ea0379377adff7a))
+
+
+
+
+
 # [7.98.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.97.0...@gympass/yoga@7.98.0) (2024-02-23)
 
 
