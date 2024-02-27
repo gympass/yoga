@@ -3,14 +3,12 @@ import { css } from 'styled-components';
 const textStyle = type => () =>
   css`
     ${({
-      light,
       variant,
       inverted,
       fontSize = 'medium',
       size = 'medium',
       theme: {
         yoga: {
-          fontWeights,
           fontSizes: { [size || fontSize]: pSize },
           colors: { [variant]: color, text, white },
           components: {
@@ -24,8 +22,6 @@ const textStyle = type => () =>
     font-size: ${fontsize || pSize}px;
     ${letterSpacing ? `letter-spacing: ${letterSpacing}px;` : ''}
     ${lineHeight ? `line-height: ${lineHeight}px;` : ''}
-
-    ${light ? `font-weight: ${fontWeights.light};` : ''}
 
     color: ${variant ? color : text.primary};
     ${inverted ? `color: ${white};` : ''}

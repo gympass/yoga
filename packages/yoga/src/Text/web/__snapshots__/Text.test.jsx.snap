@@ -370,10 +370,10 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
   padding: 0;
   font-size: 48px;
   line-height: 56px;
-  font-weight: 300;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
+  font-weight: 300;
 }
 
 .c1 {
@@ -381,10 +381,10 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
   padding: 0;
   font-size: 40px;
   line-height: 48px;
-  font-weight: 300;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
+  font-weight: 300;
 }
 
 .c2 {
@@ -392,10 +392,10 @@ exports[`<Text /> Snapshots should match snapshot with Text light 1`] = `
   padding: 0;
   font-size: 32px;
   line-height: 40px;
-  font-weight: 300;
   color: #231B22;
   font-family: Rubik;
   font-weight: 500;
+  font-weight: 300;
 }
 
 <div>

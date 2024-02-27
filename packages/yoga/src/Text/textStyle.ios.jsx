@@ -1,18 +1,15 @@
 import { css } from 'styled-components';
-import { StyleSheet } from 'react-native';
 import defaultStyle from './sharedTextStyle';
-
-StyleSheet.create({
-  fontFamily: 'NaN Holo Condensed',
-});
 
 const textStyle = type => () =>
   css`
     ${defaultStyle(type)};
     ${({
+      light,
       theme: {
         yoga: {
           baseFont,
+          fontWeights,
 
           components: {
             text: {
@@ -28,6 +25,7 @@ const textStyle = type => () =>
       return css`
         font-family: ${finalFontFamily};
         ${fontWeight ? `font-weight: ${fontWeight};` : ''}
+        ${light ? `font-weight: ${fontWeights.light};` : ''}
       `;
     }}
   `;
