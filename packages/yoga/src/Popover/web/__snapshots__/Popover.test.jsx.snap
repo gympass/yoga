@@ -6,9 +6,9 @@ exports[`<Popover /> should match snapshot when hover is false 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   margin-bottom: 4px;
   color: #FFFFFF;
   font-weight: 500;
@@ -19,9 +19,9 @@ exports[`<Popover /> should match snapshot when hover is false 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   margin: 0;
   color: #FFFFFF;
 }
@@ -106,9 +106,9 @@ exports[`<Popover /> should match snapshot when hover is true 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   margin-bottom: 4px;
   color: #FFFFFF;
   font-weight: 500;
@@ -119,9 +119,9 @@ exports[`<Popover /> should match snapshot when hover is true 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   margin: 0;
   color: #FFFFFF;
 }

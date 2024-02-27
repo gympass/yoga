@@ -6,9 +6,9 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   margin-top: 16px;
   color: #6B6B78;
   font-size: 16px;
@@ -19,9 +19,9 @@ exports[`<ActionRequirement /> should default match snapshot 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   margin-bottom: 6px;
 }
 
@@ -139,9 +139,9 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   margin-top: 16px;
   color: #6B6B78;
   font-size: 16px;
@@ -152,9 +152,9 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   margin-top: 24px;
   color: #6B6B78;
   font-size: 16px;
@@ -165,9 +165,9 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -176,9 +176,9 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
   padding: 0;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   margin-top: 16px;
   font-size: 16px;
 }
@@ -188,9 +188,9 @@ exports[`<ActionRequirement /> should match snapshot with list 1`] = `
   padding: 0;
   font-size: 24px;
   line-height: 32px;
-  font-weight: 500;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 500;
   margin-bottom: 6px;
 }
 

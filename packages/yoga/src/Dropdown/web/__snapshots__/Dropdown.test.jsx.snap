@@ -1331,9 +1331,9 @@ exports[`<Dropdown /> should match snapshot with error 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   color: currentColor;
   font-size: 12px;
 }

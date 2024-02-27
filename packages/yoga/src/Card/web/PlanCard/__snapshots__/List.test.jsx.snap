@@ -6,9 +6,9 @@ exports[`<ListItem /> should display text truncated 1`] = `
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -31,9 +31,9 @@ exports[`<ListItem /> should not display text truncated when truncate prop is fa
   padding: 0;
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
-  font-family: Rubik;
   color: #231B22;
+  font-family: Rubik;
+  font-weight: 400;
   display: inline-block;
   height: 100%;
   vertical-align: middle;
