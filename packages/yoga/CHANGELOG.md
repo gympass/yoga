@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.100.0](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.99.1...@gympass/yoga@7.100.0) (2024-02-27)
+
+
+### Bug Fixes
+
+* apply the text light prop correctly ([217cb26](https://github.com/Gympass/yoga/commit/217cb2665ddd619fd948c23bcf5d5306eb812f6a))
+* remove test component ([b5c0e90](https://github.com/Gympass/yoga/commit/b5c0e907ff6c355300cb4a2d88193e8ab686a885))
+
+
+### Features
+
+* create new text components ([be94f27](https://github.com/Gympass/yoga/commit/be94f273e876925be6f7c18d5b26f613bce78a99))
+
+
+
+
+
 ## [7.99.1](https://github.com/Gympass/yoga/compare/@gympass/yoga@7.99.0...@gympass/yoga@7.99.1) (2024-02-27)
 
 **Note:** Version bump only for package @gympass/yoga
