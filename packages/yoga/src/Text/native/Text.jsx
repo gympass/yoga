@@ -66,10 +66,6 @@ const SmallestException = styledText('smallestException');
 
 SmallestException.displayName = 'Text.SmallestException';
 
-const Test1 = styledText('display1');
-
-Test1.displayName = 'Text.Test1';
-
 const Display1 = styledText('display1');
 
 Display1.displayName = 'Text.Display1';
@@ -110,7 +106,6 @@ Text.Bold = Bold;
 Text.Black = Black;
 Text.SectionTitle = SectionTitle;
 Text.SmallestException = SmallestException;
-Text.Test1 = Test1;
 Text.Display1 = Display1;
 Text.Display2 = Display2;
 Text.Display3 = Display3;
@@ -184,7 +179,6 @@ export {
   Black,
   SectionTitle,
   SmallestException,
-  Test1,
   Display1,
   Display2,
   Display3,
