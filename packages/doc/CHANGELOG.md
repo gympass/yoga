@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.47.0](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.46.7...@gympass/yoga-doc@2.47.0) (2024-02-27)
+
+
+### Features
+
+* update flag icons and add new ones ([a930ded](https://github.com/gympass/yoga/commit/a930ded2d76c6634d67faa982c26c00904009640))
+
+
+
+
+
 ## [2.46.7](https://github.com/gympass/yoga/compare/@gympass/yoga-doc@2.46.6...@gympass/yoga-doc@2.46.7) (2024-02-26)
 
 **Note:** Version bump only for package @gympass/yoga-doc
